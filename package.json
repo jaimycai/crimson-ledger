@@ -1,8 +1,8 @@
 {
-  "name": "crimson-ledger-web",
-  "version": "0.2.0",
+  "name": "crimson-ledger",
+  "version": "1.0.0",
   "private": true,
-  "description": "Crimson Ledger — moordmysterie logic-grid puzzel (webversie, Nederlands)",
+  "description": "Crimson Ledger — moordmysterie-puzzels op een plattegrond (Nederlands)",
   "scripts": {
     "start": "python3 -m http.server 8080",
     "test": "node tests/engine.test.js && node tests/floorplan.test.js && node tests/campaign.test.js && node tests/e2e.test.js && node tests/board.test.js",
@@ -10,9 +10,19 @@
     "test:e2e": "node tests/e2e.test.js",
     "test:floorplan": "node tests/floorplan.test.js",
     "test:board": "node tests/board.test.js",
-    "test:campaign": "node tests/campaign.test.js"
+    "test:campaign": "node tests/campaign.test.js",
+    "build": "node build-www.js",
+    "ios": "node build-www.js && npx cap sync ios && npx cap open ios"
   },
   "devDependencies": {
+    "@capacitor/cli": "^7.6.9",
     "jsdom": "^25.0.0"
+  },
+  "dependencies": {
+    "@capacitor/core": "^7.6.9",
+    "@capacitor/haptics": "^7.0.5",
+    "@capacitor/ios": "^7.6.9",
+    "@capacitor/splash-screen": "^7.0.5",
+    "@capacitor/status-bar": "^7.0.6"
   }
 }

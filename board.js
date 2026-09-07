@@ -84,7 +84,13 @@ const Board = {
     App.storageSet('crimson-board-tutorial-done', '1');
   },
 
-  buzz(ms) { try { if (navigator.vibrate) navigator.vibrate(ms); } catch (e) { /* niet ondersteund */ } },
+  buzz(ms) {
+    try {
+      const H = window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.Haptics;
+      if (H && H.impact) return H.impact({ style: ms > 20 ? 'MEDIUM' : 'LIGHT' }).catch(() => {});
+      if (navigator.vibrate) navigator.vibrate(ms);
+    } catch (e) { /* niet ondersteund */ }
+  },
 
   // ── Starten ───────────────────────────────────────────────
   start(difficultyId, seed, isDaily = false, themeId, campaignCase = null) {

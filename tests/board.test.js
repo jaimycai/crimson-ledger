@@ -170,6 +170,16 @@ const active = () => document.querySelector('.screen.active').id;
     check(/Geluid uit/.test(sb.textContent) && App.storageGet('crimson-sound') === '0', 'geluid uitzetten wordt onthouden');
     check(/rel="manifest" href="manifest.json"/.test(fs.readFileSync(path.join(DIR, 'index.html'), 'utf8')) && fs.existsSync(path.join(DIR, 'sw.js')) && fs.existsSync(path.join(DIR, 'icon-512.png')), 'manifest, service worker en iconen aanwezig');
 
+    // ── instellingen: voortgang wissen in twee tikken ──
+    document.getElementById('btn-settings').click();
+    check(document.getElementById('settings-modal').classList.contains('active'), 'instellingen openen');
+    const rb = document.getElementById('btn-reset-progress');
+    rb.click(); check(/Zeker/.test(rb.textContent) && (Board.loadStats().solved || 0) > 0, 'eerste tik vraagt bevestiging, wist nog niets');
+    rb.click(); check((Board.loadStats().solved || 0) === 0 && document.getElementById('streak-count').textContent === '0' && window.Campaign.doneCount() === 0, 'tweede tik wist alle voortgang');
+    check(document.querySelectorAll('.theme-card.locked').length === 3, 'thema-sloten weer dicht na wissen');
+    document.getElementById('btn-close-settings').click();
+    check(fs.existsSync(path.join(DIR, 'privacy.html')) && fs.existsSync(path.join(DIR, 'support.html')) && fs.existsSync(path.join(DIR, 'icon-1024.png')), 'privacy, support en 1024-icoon aanwezig');
+
     // ── klassiek raster blijft bereikbaar ──
     check(!!document.getElementById('btn-daily') && !!document.getElementById('btn-freeplay'), 'klassiek raster blijft bereikbaar');
     check(errors.length === 0, 'geen JS-fouten: ' + errors.join(' | '));

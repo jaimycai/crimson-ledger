@@ -42,6 +42,9 @@ De engine-tests bewijzen voor honderden gegenereerde puzzels én alle 32 campagn
 | `story.js`, `logic-engine.js` | inhoud en engine van het klassieke deductieraster |
 | `manifest.json`, `sw.js`, `icon-*.png` | PWA: installeerbaar, offline via netwerk-eerst cache |
 | `tests/` | `engine`, `floorplan`, `campaign`, `e2e`, `board` |
+| `privacy.html`, `support.html` | privacyverklaring en supportpagina (vereist voor de App Store) |
+| `ios/`, `capacitor.config.json`, `build-www.js` | native iOS-app via Capacitor: `npm run ios` (vereist Xcode) |
+| `store/` | App Store-metadata, indien-checklist en schermafbeeldingen (1290×2796) |
 
 ## Regels
 

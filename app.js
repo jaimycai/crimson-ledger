@@ -41,6 +41,7 @@ const App = {
     this.bindBoard();
     this.bindCampaign();
     this.bindSound();
+    this.bindSettings();
     this.registerServiceWorker();
     this.updateDailyDate();
     this.updateStreakDisplay();
@@ -122,8 +123,34 @@ const App = {
     btn.addEventListener('click', () => { Sound.toggle(); this.storageSet('crimson-sound', Sound.enabled ? '1' : '0'); label(); Sound.play('ui'); });
   },
 
+  bindSettings() {
+    const btn = document.getElementById('btn-settings');
+    if (!btn) return;
+    btn.addEventListener('click', () => { this.resetArmed = false; document.getElementById('btn-reset-progress').textContent = 'Wissen'; this.showModal('settings-modal'); });
+    document.getElementById('btn-close-settings').addEventListener('click', () => this.hideModal('settings-modal'));
+    // twee tikken: eerst bevestigen, dan wissen (geen confirm(): werkt niet in elke WebView)
+    document.getElementById('btn-reset-progress').addEventListener('click', e => {
+      if (!this.resetArmed) { this.resetArmed = true; e.target.textContent = 'Zeker? Tik nogmaals'; return; }
+      this.resetProgress();
+      e.target.textContent = 'Gewist';
+      this.resetArmed = false;
+    });
+  },
+
+  resetProgress() {
+    try {
+      Object.keys(localStorage).filter(k => k.startsWith('crimson-')).forEach(k => localStorage.removeItem(k));
+    } catch (e) { /* privémodus */ }
+    this.streak = { count: 0, lastDate: null };
+    this.selectedTheme = 'landhuis';
+    this.updateStreakDisplay();
+    this.updateBoardStats();
+    this.showToast('🧹', 'Alle voortgang is gewist.');
+  },
+
   registerServiceWorker() {
     try {
+      if (window.Capacitor && typeof window.Capacitor.isNativePlatform === 'function' && window.Capacitor.isNativePlatform()) return;
       const secure = location.protocol === 'https:' || location.hostname === 'localhost';
       if (secure && 'serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});
     } catch (e) { /* niet beschikbaar */ }

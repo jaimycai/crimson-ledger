@@ -1,0 +1,14 @@
+{
+  "appId": "com.jaimycai.crimsonledger",
+  "appName": "Crimson Ledger",
+  "webDir": "www",
+  "ios": {
+    "contentInset": "never",
+    "backgroundColor": "#FAF5EF",
+    "preferredContentMode": "mobile"
+  },
+  "plugins": {
+    "SplashScreen": { "launchShowDuration": 800, "launchAutoHide": true, "backgroundColor": "#FAF5EF" },
+    "StatusBar": { "style": "LIGHT", "backgroundColor": "#FAF5EF" }
+  }
+}
