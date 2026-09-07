@@ -1,0 +1,18 @@
+{
+  "name": "crimson-ledger-web",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Crimson Ledger — moordmysterie logic-grid puzzel (webversie, Nederlands)",
+  "scripts": {
+    "start": "python3 -m http.server 8080",
+    "test": "node tests/engine.test.js && node tests/floorplan.test.js && node tests/campaign.test.js && node tests/e2e.test.js && node tests/board.test.js",
+    "test:engine": "node tests/engine.test.js",
+    "test:e2e": "node tests/e2e.test.js",
+    "test:floorplan": "node tests/floorplan.test.js",
+    "test:board": "node tests/board.test.js",
+    "test:campaign": "node tests/campaign.test.js"
+  },
+  "devDependencies": {
+    "jsdom": "^25.0.0"
+  }
+}

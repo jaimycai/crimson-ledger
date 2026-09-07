@@ -1,0 +1,16 @@
+{
+  "name": "Crimson Ledger — Moordmysterie puzzels",
+  "short_name": "Crimson Ledger",
+  "description": "Plaats de verdachten op de plattegrond en ontmasker de moordenaar. Elke dag een nieuwe zaak.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#FAF5EF",
+  "theme_color": "#8B2E1C",
+  "lang": "nl",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

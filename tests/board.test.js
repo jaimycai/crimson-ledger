@@ -1,0 +1,179 @@
+// Interactietest v2: slachtoffer, plaatsen, lerende hints, moordenaarsvraag, resultaat, dagelijkse zaak.
+const fs = require('fs'), path = require('path');
+function loadJsdom() { try { return require('jsdom'); } catch (e) {} return require('/Users/jaimycai/Documents/Claude/CrimsonLedger/app/node_modules/jsdom'); }
+const { JSDOM, VirtualConsole } = loadJsdom();
+const DIR = path.join(__dirname, '..');
+let html = fs.readFileSync(path.join(DIR, 'index.html'), 'utf8');
+html = html.replace(/<script src="([^"]+)"><\/script>/g, (_, src) => `<script>${fs.readFileSync(path.join(DIR, src), 'utf8')}</script>`);
+html = html.replace(/<link[^>]+>/g, '').replace('</body>', '<script>window.App = App; window.Board = Board; window.FloorPlan = FloorPlan; window.Themes = Themes; window.Campaign = Campaign;</script></body>');
+const errors = [];
+const vc = new VirtualConsole(); vc.on('jsdomError', e => errors.push(String(e.message || e)));
+const dom = new JSDOM(html, { runScripts: 'dangerously', pretendToBeVisual: true, url: 'http://localhost:8080/', virtualConsole: vc });
+const { window } = dom, { document } = window;
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+let failures = 0;
+const check = (c, m) => { if (c) console.log('ok  ', m); else { failures++; console.log('FAIL', m); } };
+const cellAt = (x, y) => document.querySelector(`#board-grid .bcell[data-x="${x}"][data-y="${y}"]`);
+const active = () => document.querySelector('.screen.active').id;
+
+(async () => {
+  try {
+    await sleep(60);
+    const { Board, App, FloorPlan } = window;
+
+    // ── menu: plattegrondzaak is de hoofdknop ──
+    check(!!document.getElementById('btn-board-daily') && !!document.getElementById('btn-board-start'), 'menu heeft dagelijkse + vrije plattegrondzaak');
+    check(document.getElementById('board-stats').textContent.includes('Nog geen'), 'voortgang start leeg: ' + document.getElementById('board-stats').textContent);
+
+    // ── themakiezer + sloten ──
+    check(document.querySelectorAll('.theme-card').length === 4, 'vier thema\'s in het menu');
+    check(document.querySelector('.theme-card[data-theme="piraten"]').classList.contains('locked'), 'piratenschip is bij start vergrendeld');
+    document.querySelector('.theme-card[data-theme="piraten"]').click();
+    check(App.selectedTheme === 'landhuis', 'vergrendeld thema kan niet gekozen worden');
+    App.storageSet('crimson-board-stats', JSON.stringify({ solved: 9 })); App.renderThemePicker();
+    check(document.querySelectorAll('.theme-card.locked').length === 0, 'na 9 zaken is alles open');
+    document.querySelector('.theme-card[data-theme="piraten"]').click();
+    check(App.selectedTheme === 'piraten' && document.querySelector('.theme-card[data-theme="piraten"]').classList.contains('active'), 'thema kiezen werkt en wordt onthouden');
+    document.getElementById('btn-board-start').click(); await sleep(300);
+    check(Board.theme.id === 'piraten' && document.getElementById('board-grid').dataset.floor === 'planks', 'vrij spel gebruikt het gekozen thema + vloer');
+    check(document.getElementById('board-casetext').textContent.includes('Kapitein Zwartoog'), 'zaaktekst: ' + document.getElementById('board-casetext').textContent);
+    check(document.querySelectorAll('#board-grid .bfurn svg').length === Board.puzzle.furniture.size, 'piratenmeubels getekend');
+    check(!!document.querySelector('.sus-chip .av-suspect'), 'piratenportretten getekend');
+    Board.stopTimer(); App.navigateTo('menu'); await sleep(300);
+
+    check(Board.start('gemiddeld', 12345, false), 'plattegrondzaak start');
+    const p = Board.puzzle;
+    App.navigateTo('board'); await sleep(300);
+    check(active() === 'screen-board', 'bordscherm actief');
+    check(document.getElementById('board-casetext').textContent.includes(Board.theme.victimName), 'zaaktekst noemt het slachtoffer bij naam: ' + document.getElementById('board-casetext').textContent);
+    check(!!document.querySelector('#board-grid .bvictim'), 'slachtoffer staat op de kaart');
+    check(document.querySelectorAll('.bclue').length === p.clues.length && p.clues.length >= 4, `${p.clues.length} aanwijzingskaarten met nummer`);
+    check(document.querySelectorAll('.bclue-num').length === p.clues.length, 'kaarten genummerd');
+    check(!document.getElementById('board-tip').hidden, 'eerste keer: tip zichtbaar');
+    document.getElementById('btn-board-tip-close').click();
+    check(document.getElementById('board-tip').hidden, 'tip sluit en onthoudt dat');
+
+    // ── slachtoffervakje weigert ──
+    Board.active = 0;
+    cellAt(p.victim.x, p.victim.y).click();
+    check(!Board.placements[0], 'slachtoffervakje kan niet bezet worden');
+
+    // ── plaatsen ──
+    const t0 = p.solution[0];
+    cellAt(t0.x, t0.y).click();
+    check(!!cellAt(t0.x, t0.y).querySelector('.bsus') && Board.active === 1, 'tik plaatst verdachte en schuift door');
+    check(document.querySelector('.sus-chip[data-s="0"]').classList.contains('placed'), 'kiezer toont geplaatst');
+
+    // ── lerende hint: legt uit, plaatst niets ──
+    const placedBefore = Board.placements.filter(Boolean).length;
+    Board.hint();
+    check(document.getElementById('hint-modal').classList.contains('active'), 'hintvenster opent');
+    check(Board.placements.filter(Boolean).length === placedBefore, 'hint plaatst niemand');
+    check(document.getElementById('hint-text').textContent.length > 10, 'hinttekst: ' + document.getElementById('hint-text').textContent);
+    check(document.querySelectorAll('#board-grid .bcell.hinted').length >= 1, 'hint markeert kandidaatvakjes');
+    App.hideModal('hint-modal');
+
+    // ── foute plaatsing: hint meldt de fout ──
+    const wrongCell = p.rooms.flatMap(r => r.list).find(c => !p.furniture.has(FloorPlan.key(c.x, c.y)) &&
+      !(c.x === p.victim.x && c.y === p.victim.y) && !p.solution.some(s => s.x === c.x && s.y === c.y) &&
+      FloorPlan.roomOf(p.rooms, c.x, c.y).id !== FloorPlan.roomOf(p.rooms, p.solution[1].x, p.solution[1].y).id);
+    Board.active = 1; cellAt(wrongCell.x, wrongCell.y).click();
+    Board.hint();
+    check(/verkeerd|niet op de juiste plek|twee verdachten/.test(document.getElementById('hint-text').textContent), 'hint meldt foute plaatsing: ' + document.getElementById('hint-text').textContent);
+    App.hideModal('hint-modal');
+    const hintsSoFar = Board.hintsUsed;
+
+    // ── controleren met fout → poging geteld, geen modal ──
+    p.solution.forEach((c, i) => { Board.placements[i] = { x: c.x, y: c.y }; });
+    Board.placements[1] = wrongCell; Board.after();
+    document.getElementById('btn-board-check').click();
+    check(Board.attempts === 1 && !document.getElementById('murder-modal').classList.contains('active'), 'foute controle telt een poging');
+
+    // ── alles goed → moordenaarsvraag ──
+    Board.placements[1] = { x: p.solution[1].x, y: p.solution[1].y }; Board.after();
+    document.getElementById('btn-board-check').click();
+    check(document.getElementById('murder-modal').classList.contains('active'), 'moordenaarsvraag verschijnt');
+    check(document.querySelectorAll('.murder-opt').length === p.suspects.length, 'alle verdachten als optie');
+    const wrongOpt = document.querySelector(`.murder-opt[data-s="${(p.murderer + 1) % p.suspects.length}"]`);
+    wrongOpt.click();
+    check(Board.attempts === 2 && document.getElementById('murder-modal').classList.contains('active'), 'foute moordenaar: poging geteld, vraag blijft');
+    document.querySelector(`.murder-opt[data-s="${p.murderer}"]`).click();
+    await sleep(300);
+    check(Board.solved && active() === 'screen-results', 'juiste moordenaar → resultaatscherm');
+    check(document.getElementById('results-headline').textContent === 'Zaak Gesloten!', 'kop');
+    check(document.getElementById('results-verdict').textContent.includes(p.suspects[p.murderer].label), 'verdict noemt de moordenaar');
+    check(document.querySelectorAll('.results-solution-row').length === p.suspects.length, 'oplossing per verdachte');
+    check(document.getElementById('stat-hints').textContent === String(hintsSoFar), 'hints-stat klopt');
+    check(document.getElementById('stat-attempts').textContent === '3', 'pogingen-stat = 3');
+    const share = Board.shareText();
+    check(share.includes('Crimson Ledger · ' + Board.theme.title) && share.includes('🔪') && share.includes('🩸'), 'deeltekst met thema en kaart');
+    document.getElementById('btn-share').click(); await sleep(50);
+    check(errors.length === 0, 'delen vanuit plattegrondzaak zonder eerder rasterspel geeft geen fout');
+    check(document.getElementById('board-stats').textContent.includes('10 zaken opgelost'), 'voortgang bijgewerkt: ' + document.getElementById('board-stats').textContent);
+
+    // ── dagelijkse zaak → streak ──
+    document.getElementById('btn-play-again').click(); await sleep(300);
+    check(active() === 'screen-menu', 'terug naar menu');
+    document.getElementById('btn-board-daily').click(); await sleep(300);
+    check(active() === 'screen-board' && Board.isDaily, 'dagelijkse plattegrondzaak gestart');
+    check(Board.theme.id === window.Themes.forDay(App.getDayNumber()).id, 'dagelijkse zaak gebruikt het thema van vandaag: ' + Board.theme.title);
+    const d = Board.puzzle;
+    d.solution.forEach((c, i) => { Board.placements[i] = { x: c.x, y: c.y }; }); Board.after();
+    document.getElementById('btn-board-check').click();
+    document.querySelector(`.murder-opt[data-s="${d.murderer}"]`).click(); await sleep(300);
+    check(document.getElementById('streak-count').textContent === '1', 'streak = 1 na dagelijkse zaak');
+    check(document.getElementById('board-daily-date').textContent.includes('opgelost'), 'menu toont: vandaag opgelost');
+
+    // ── oefenzaak op het bord ──
+    document.getElementById('btn-tutorial').click(); await sleep(300);
+    check(active() === 'screen-board' && Board.isTutorial && !document.getElementById('board-coach').hidden, 'oefenzaak start met coach');
+    check(document.getElementById('board-coach-step').textContent === 'Stap 1 van 4', 'stap 1');
+    cellAt(1, 1).click();
+    check(!Board.placements[0] && Board.tutorialStep === 0, 'verkeerd vakje wordt genegeerd');
+    check(cellAt(0, 0).classList.contains('hinted'), 'doelvakje licht op');
+    cellAt(0, 0).click();
+    check(!!Board.placements[0] && Board.tutorialStep === 1 && Board.active === 1, 'stap 1 klaar, Marcus geselecteerd');
+    cellAt(3, 3).click();
+    check(Board.tutorialStep === 2 && /Controleer/.test(document.getElementById('board-coach-text').textContent), 'stap 2 klaar → controleer');
+    document.getElementById('btn-board-check').click();
+    check(document.getElementById('murder-modal').classList.contains('active') && /Marcus/.test(document.getElementById('murder-question').textContent), 'moordenaarsvraag met uitleg');
+    document.querySelector('.murder-opt[data-s="1"]').click(); await sleep(300);
+    check(active() === 'screen-results' && document.getElementById('results-headline').textContent === 'Goed gedaan!', 'oefenzaak afgerond');
+    check(App.storageGet('crimson-board-tutorial-done') === '1' && !Board.isTutorial, 'oefenzaak gemarkeerd als gedaan');
+    check(Board.loadStats().solved === 11, 'oefenzaak telt niet mee als opgeloste zaak (blijft 11: 9 voorgeladen + vrij spel + dagelijks)');
+
+    // ── campagne ──
+    document.getElementById('btn-campaign').click(); await sleep(300);
+    check(active() === 'screen-campaign', 'campagnescherm opent');
+    check(document.querySelectorAll('.chapter').length === 4 && document.querySelectorAll('.case-card').length === 32, '4 hoofdstukken, 32 zaken');
+    check(!document.querySelector('.case-card[data-theme="landhuis"][data-idx="0"]').classList.contains('locked') &&
+          document.querySelector('.case-card[data-theme="landhuis"][data-idx="1"]').classList.contains('locked'), 'zaak 1 open, zaak 2 nog dicht');
+    document.querySelector('.case-card[data-theme="landhuis"][data-idx="0"]').click(); await sleep(300);
+    check(active() === 'screen-board' && Board.campaignCase && Board.campaignCase.title === 'Het glas Bordeaux', 'campagnezaak 1 gestart');
+    check(document.getElementById('board-casetext').textContent.includes('toost'), 'verhaaltje in de zaaktekst');
+    const cp = Board.puzzle;
+    cp.solution.forEach((c, i) => { Board.placements[i] = { x: c.x, y: c.y }; }); Board.after();
+    document.getElementById('btn-board-check').click();
+    document.querySelector(`.murder-opt[data-s="${cp.murderer}"]`).click(); await sleep(300);
+    check(active() === 'screen-results' && !document.getElementById('results-stars').hidden && document.querySelector('.stars').textContent === '★★★', 'drie sterren zonder hint en in één keer');
+    check(!document.getElementById('btn-next-case').hidden && /De verdwenen sleutel/.test(document.getElementById('btn-next-case').textContent), 'volgende-zaak-knop');
+    check(window.Campaign.stars('landhuis', 0) === 3 && window.Campaign.isUnlocked('landhuis', 1), 'voortgang bewaard, zaak 2 open');
+    document.getElementById('btn-next-case').click(); await sleep(300);
+    check(active() === 'screen-board' && Board.campaignCase.idx === 1, 'volgende zaak start direct');
+    Board.stopTimer(); App.navigateTo('menu'); await sleep(300);
+    check(document.getElementById('campaign-progress').textContent.startsWith('1 van 32'), 'menu toont campagnevoortgang');
+
+    // ── geluid ──
+    const sb = document.getElementById('btn-sound');
+    check(/Geluid aan/.test(sb.textContent), 'geluid staat standaard aan');
+    sb.click();
+    check(/Geluid uit/.test(sb.textContent) && App.storageGet('crimson-sound') === '0', 'geluid uitzetten wordt onthouden');
+    check(/rel="manifest" href="manifest.json"/.test(fs.readFileSync(path.join(DIR, 'index.html'), 'utf8')) && fs.existsSync(path.join(DIR, 'sw.js')) && fs.existsSync(path.join(DIR, 'icon-512.png')), 'manifest, service worker en iconen aanwezig');
+
+    // ── klassiek raster blijft bereikbaar ──
+    check(!!document.getElementById('btn-daily') && !!document.getElementById('btn-freeplay'), 'klassiek raster blijft bereikbaar');
+    check(errors.length === 0, 'geen JS-fouten: ' + errors.join(' | '));
+    console.log(''); console.log(failures === 0 ? 'ALLE BOARD CHECKS PASSED' : `${failures} FAILURES`);
+  } catch (e) { console.log('EXCEPTIE:', e.message, (e.stack || '').split('\n')[1]); failures++; }
+  process.exit(failures === 0 ? 0 : 1);
+})();

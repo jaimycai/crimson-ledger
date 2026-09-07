@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Crimson Ledger — Los op. Elimineer. Ontmasker.</title>
+  <meta name="description" content="Crimson Ledger is een logic-grid moordmysterie puzzelgame. Los de puzzel op, ontdek aanwijzingen, elimineer verdachten en ontmasker de moordenaar.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta name="theme-color" content="#8B2E1C">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Crimson Ledger">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🩸</text></svg>">
+</head>
+<body>
+  <div id="app">
+
+    <!-- ═══════ SCHERM 1: SPLASH ═══════ -->
+    <section id="screen-splash" class="screen active">
+      <div class="splash-badge"><span class="splash-badge-icon">🔍</span></div>
+      <h1 class="splash-title">Crimson<br>Ledger</h1>
+      <p class="splash-tagline">Los op. Elimineer. Ontmasker.</p>
+      <p class="splash-subtitle">Een moordmysterie logic-puzzel</p>
+      <button id="btn-splash-start" class="btn btn-primary" style="max-width:260px;width:100%">Begin</button>
+      <span class="splash-footer">Elke puzzel ontmaskert een moordenaar</span>
+    </section>
+
+    <!-- ═══════ SCHERM 2: HOOFDMENU ═══════ -->
+    <section id="screen-menu" class="screen">
+      <div class="menu-brand">
+        <span class="menu-logo">🔍</span>
+        <h2 class="menu-title">Crimson Ledger</h2>
+      </div>
+
+      <div class="menu-section">
+        <button class="btn btn-primary btn-block menu-daily-btn" id="btn-board-daily">
+          <span class="menu-daily-icon">🏠</span>
+          <div class="menu-daily-text">
+            <span class="menu-daily-label">Dagelijkse Zaak</span>
+            <span class="menu-daily-sub" id="board-daily-date"></span>
+          </div>
+        </button>
+        <div class="menu-streak" id="menu-streak">
+          <span>🔥</span> <span id="streak-count">0</span> dagen streak
+        </div>
+        <div class="menu-stats" id="board-stats"></div>
+        <button class="btn btn-secondary btn-block menu-campaign-btn" id="btn-campaign">
+          <span class="menu-daily-icon">📖</span>
+          <div class="menu-daily-text">
+            <span class="menu-daily-label">Campagne</span>
+            <span class="menu-daily-sub" id="campaign-progress"></span>
+          </div>
+        </button>
+      </div>
+
+      <div class="menu-divider"><span>of kies vrij spel</span></div>
+
+      <div class="menu-section">
+        <span class="label">Thema</span>
+        <div class="theme-picker" id="theme-picker"></div>
+        <span class="label">Moeilijkheidsgraad</span>
+        <div class="difficulty-selector" id="difficulty-selector">
+          <button class="difficulty-btn" data-difficulty="makkelijk">
+            <span class="difficulty-icon">🟢</span>
+            <div class="difficulty-text">
+              <span class="difficulty-label">Makkelijk</span>
+              <span class="difficulty-desc">3 verdachten · klein huis</span>
+            </div>
+          </button>
+          <button class="difficulty-btn active" data-difficulty="gemiddeld">
+            <span class="difficulty-icon">🟡</span>
+            <div class="difficulty-text">
+              <span class="difficulty-label">Gemiddeld</span>
+              <span class="difficulty-desc">4 verdachten · indirecte aanwijzingen</span>
+            </div>
+          </button>
+          <button class="difficulty-btn" data-difficulty="moeilijk">
+            <span class="difficulty-icon">🔴</span>
+            <div class="difficulty-text">
+              <span class="difficulty-label">Moeilijk</span>
+              <span class="difficulty-desc">5 verdachten · groot huis</span>
+            </div>
+          </button>
+        </div>
+        <button class="btn btn-secondary btn-block" id="btn-board-start">Start Plattegrondzaak</button>
+      </div>
+
+      <details class="menu-classic">
+        <summary>Klassiek deductieraster</summary>
+        <div class="menu-classic-body">
+          <button class="btn btn-ghost btn-sm" id="btn-daily">📅 Dagelijkse rasterzaak · <span id="daily-date"></span></button>
+          <button class="btn btn-ghost btn-sm" id="btn-freeplay">Vrij spel (raster)</button>
+          <button class="btn btn-ghost btn-sm" id="btn-grid-tutorial">🎓 Raster-oefenzaak</button>
+        </div>
+      </details>
+
+      <div class="menu-footer">
+        <button class="btn btn-ghost btn-sm" id="btn-how">Hoe werkt het?</button>
+        <button class="btn btn-ghost btn-sm" id="btn-tutorial">🎓 Oefenzaak</button>
+        <button class="btn btn-ghost btn-sm" id="btn-sound">🔊 Geluid aan</button>
+      </div>
+    </section>
+
+    <!-- ═══════ SCHERM 3: ZAAK INTRO ═══════ -->
+    <section id="screen-intro" class="screen">
+      <button class="back-btn" id="btn-back-menu">←</button>
+      <div class="intro-content">
+        <span class="label" id="intro-label">Zaak — De Rode Kamer</span>
+        <h2 class="intro-title" id="intro-title">De Rode Kamer</h2>
+        <div class="intro-text" id="intro-text"></div>
+        <div class="intro-suspects" id="intro-suspects"></div>
+      </div>
+      <button class="btn btn-primary btn-block" id="btn-start-case">Begin Onderzoek</button>
+    </section>
+
+    <!-- ═══════ SCHERM 4: GAMEPLAY ═══════ -->
+    <section id="screen-game" class="screen">
+      <!-- Bovenbalk -->
+      <div class="game-topbar">
+        <button class="back-btn back-btn-sm" id="btn-back-menu2">←</button>
+        <span class="game-title" id="game-title">De Rode Kamer</span>
+        <div class="game-topbar-right">
+          <span class="game-diff-tag" id="game-diff-tag">Gemiddeld</span>
+          <span class="game-timer" id="game-timer">00:00</span>
+        </div>
+      </div>
+
+      <!-- Deductieraster -->
+      <div class="grid-scroll-wrapper">
+        <div class="grid-wrapper" id="grid-wrapper">
+          <!-- Gegenereerd door JS -->
+        </div>
+      </div>
+
+      <!-- Oefenzaak: begeleiding -->
+      <div class="tutorial-coach" id="tutorial-coach" hidden>
+        <span class="tutorial-coach-icon">🎓</span>
+        <div class="tutorial-coach-body">
+          <span class="tutorial-coach-step" id="tutorial-coach-step">Stap 1 van 5</span>
+          <p class="tutorial-coach-text" id="tutorial-coach-text"></p>
+        </div>
+        <button class="tutorial-coach-skip" id="btn-tutorial-skip" type="button">Overslaan</button>
+      </div>
+
+      <!-- Aanwijzingenpaneel -->
+      <div class="clue-panel" id="clue-panel">
+        <div class="clue-panel-header">
+          <span class="clue-panel-title">📋 Aanwijzingen</span>
+        </div>
+        <ol class="clue-list" id="clue-list">
+          <!-- Gegenereerd door JS -->
+        </ol>
+      </div>
+
+      <!-- Acties -->
+      <div class="game-actions">
+        <button class="btn btn-ghost btn-sm" id="btn-hint">💡 Hint</button>
+        <button class="btn btn-ghost btn-sm" id="btn-reset">↺ Reset</button>
+        <button class="btn btn-primary btn-sm" id="btn-check" disabled>✓ Controleer</button>
+      </div>
+    </section>
+
+
+    <!-- ═══════ SCHERM 7: CAMPAGNE ═══════ -->
+    <section id="screen-campaign" class="screen">
+      <div class="board-topbar">
+        <button class="back-btn back-btn-sm" id="btn-campaign-back">←</button>
+        <span class="campaign-title">📖 Campagne</span>
+        <span class="board-case" id="campaign-total"></span>
+      </div>
+      <div class="campaign-list" id="campaign-list"></div>
+    </section>
+
+    <!-- ═══════ SCHERM 6: PLATTEGRONDZAAK ═══════ -->
+    <section id="screen-board" class="screen">
+      <div class="board-topbar">
+        <button class="back-btn back-btn-sm" id="btn-board-back">←</button>
+        <span class="board-timer" id="board-timer">00:00</span>
+        <span class="board-case" id="board-diff-tag"></span>
+      </div>
+      <p class="board-casetext" id="board-casetext"></p>
+      <div class="board-tip" id="board-tip" hidden>
+        <span>Tik een verdachte, dan een vakje. Alleen de moordenaar was in de kamer van het slachtoffer.</span>
+        <button type="button" id="btn-board-tip-close" aria-label="Sluiten">✕</button>
+      </div>
+      <div class="tutorial-coach board-coach" id="board-coach" hidden>
+        <span class="tutorial-coach-icon">🎓</span>
+        <div class="tutorial-coach-body">
+          <span class="tutorial-coach-step" id="board-coach-step">Stap 1 van 4</span>
+          <p class="tutorial-coach-text" id="board-coach-text"></p>
+        </div>
+        <button class="tutorial-coach-skip" id="btn-board-tutorial-skip" type="button">Overslaan</button>
+      </div>
+
+      <div class="board-stage">
+        <div class="board-grid" id="board-grid"></div>
+      </div>
+
+      <div class="board-suspects" id="board-suspects"></div>
+
+      <div class="board-clues" id="board-clues"></div>
+
+      <div class="board-tools">
+        <button type="button" class="tool active" id="btn-board-place">
+          <span class="tool-icon">👤</span><span class="tool-label">Plaats</span>
+        </button>
+        <button type="button" class="tool" id="btn-board-mark">
+          <span class="tool-icon">✗</span><span class="tool-label">Markeer</span>
+        </button>
+        <button type="button" class="tool" id="btn-board-erase">
+          <span class="tool-icon">🧽</span><span class="tool-label">Gum</span>
+        </button>
+        <button type="button" class="tool" id="btn-board-undo">
+          <span class="tool-icon">↩</span><span class="tool-label">Terug</span>
+        </button>
+        <button type="button" class="tool" id="btn-board-hint">
+          <span class="tool-icon">💡</span><span class="tool-label">Hint</span>
+        </button>
+        <button type="button" class="btn btn-primary board-check" id="btn-board-check" disabled>Controleer</button>
+      </div>
+    </section>
+
+    <!-- ═══════ SCHERM 5: RESULTATEN ═══════ -->
+    <section id="screen-results" class="screen">
+      <div class="results-stamp" id="results-stamp">
+        <span class="results-stamp-icon" id="results-icon">🔒</span>
+        <span class="results-stamp-text">Zaak Gesloten</span>
+      </div>
+      <div class="results-header">
+        <h2 id="results-headline">Zaak Opgelost!</h2>
+        <p class="results-verdict" id="results-verdict"></p>
+      </div>
+      <p id="results-description" style="font-size:0.9rem"></p>
+
+      <!-- Oplossing -->
+      <div class="results-solution" id="results-solution"></div>
+
+      <!-- Statistieken -->
+      <div class="results-stats">
+        <div class="divider"></div>
+        <span class="label">Jouw Prestatie</span>
+        <div class="stat-row">
+          <span class="stat-label">Tijd</span>
+          <span class="stat-value" id="stat-time">--:--</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-label">Moeilijkheid</span>
+          <span class="stat-value" id="stat-difficulty">Gemiddeld</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-label">Hints Gebruikt</span>
+          <span class="stat-value" id="stat-hints">0</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-label">Pogingen</span>
+          <span class="stat-value" id="stat-attempts">1</span>
+        </div>
+      </div>
+
+      <!-- Deel & opnieuw -->
+      <div class="results-stars" id="results-stars" hidden></div>
+      <div class="results-footer">
+        <button class="btn btn-primary btn-block" id="btn-next-case" hidden>▶ Volgende zaak</button>
+        <button class="btn btn-secondary btn-block" id="btn-share">📤 Deel Resultaat</button>
+        <button class="btn btn-primary btn-block" id="btn-play-again">Opnieuw Spelen</button>
+      </div>
+    </section>
+  </div>
+
+  <!-- ═══════ HOE WERKT HET MODAL ═══════ -->
+  <div class="modal-overlay" id="how-modal">
+    <div class="modal-content">
+      <div class="modal-handle"></div>
+      <h3 class="text-center">Hoe Werkt Het?</h3>
+      <div class="how-steps">
+        <div class="how-step">
+          <span class="how-num">1</span>
+          <div><strong>Plaats de verdachten</strong><br>Tik een verdachte, dan een vakje op de plattegrond. Iedereen staat ergens.</div>
+        </div>
+        <div class="how-step">
+          <span class="how-num">2</span>
+          <div><strong>Gebruik de aanwijzingen</strong><br>"In een hoek" is een hoekvakje van de kamer, "tegen de muur" raakt een muur maar is geen hoek. "Links van" en "hoger" gaan over de plattegrond.</div>
+        </div>
+        <div class="how-step">
+          <span class="how-num">3</span>
+          <div><strong>De spelregel</strong><br>Alleen de moordenaar was in de kamer van het slachtoffer. Niemand anders.</div>
+        </div>
+        <div class="how-step">
+          <span class="how-num">4</span>
+          <div><strong>Wijs de moordenaar aan</strong><br>Staat iedereen goed? Dan kies je wie alleen was met het slachtoffer.</div>
+        </div>
+      </div>
+      <div class="how-steps how-steps-classic">
+        <span class="label">Klassiek raster</span>
+        <div class="how-step">
+          <span class="how-num">1</span>
+          <div><strong>Lees de aanwijzingen</strong><br>Elke aanwijzing vertelt je iets over wie, wat en waar.</div>
+        </div>
+        <div class="how-step">
+          <span class="how-num">2</span>
+          <div><strong>Vul het raster in</strong><br>Klik op een cel om te wisselen: leeg → ✗ (uitgesloten) → ✓ (bevestigd).</div>
+        </div>
+        <div class="how-step">
+          <span class="how-num">3</span>
+          <div><strong>Gebruik logica</strong><br>Als een rij maar één optie heeft, is dat de match. Kruis-verwijs tussen tabellen!</div>
+        </div>
+        <div class="how-step">
+          <span class="how-num">4</span>
+          <div><strong>Controleer je antwoord</strong><br>Als je denkt dat je alles hebt, klik op "Controleer".</div>
+        </div>
+      </div>
+      <button class="btn btn-primary btn-block" id="btn-close-how">Begrepen!</button>
+    </div>
+  </div>
+
+  <!-- ═══════ HINT MODAL ═══════ -->
+  <div class="modal-overlay" id="hint-modal">
+    <div class="modal-content">
+      <div class="modal-handle"></div>
+      <div class="clue-modal-icon">💡</div>
+      <h3 class="clue-modal-title">Hint</h3>
+      <p class="clue-modal-text" id="hint-text"></p>
+      <details class="hint-detail" id="hint-detail">
+        <summary>Meer uitleg tonen</summary>
+        <p id="hint-detail-text"></p>
+      </details>
+      <button class="btn btn-primary btn-block" id="btn-close-hint">Verder</button>
+    </div>
+  </div>
+
+  <!-- ═══════ MOORDENAAR MODAL ═══════ -->
+  <div class="modal-overlay" id="murder-modal">
+    <div class="modal-content">
+      <div class="modal-handle"></div>
+      <div class="clue-modal-icon">🔪</div>
+      <h3 class="clue-modal-title">Wie is de moordenaar?</h3>
+      <p class="clue-modal-text" id="murder-question"></p>
+      <div class="murder-options" id="murder-options"></div>
+    </div>
+  </div>
+
+  <!-- ═══════ TOAST ═══════ -->
+  <div class="clue-toast" id="toast">
+    <span class="clue-toast-icon" id="toast-icon">💡</span>
+    <span id="toast-text"></span>
+  </div>
+
+  <script src="avatars.js"></script>
+  <script src="story.js"></script>
+  <script src="themes.js"></script>
+  <script src="campaign.js"></script>
+  <script src="sound.js"></script>
+  <script src="floorplan.js"></script>
+  <script src="logic-engine.js"></script>
+  <script src="board.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
