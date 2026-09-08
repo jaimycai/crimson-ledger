@@ -24,6 +24,10 @@ const Board = {
   campaignCase: null,
   difficulty: 'gemiddeld',
   seed: 0,
+  focusClue: null,    // aangetikte aanwijzing (kamer/meubel licht op)
+  focusTimer: null,
+  peekTimer: null,
+  newRank: null,      // rang die met deze zaak is bereikt
 
   // ── Oefenzaak: vaste kleine plattegrond met begeleiding ────
   TUTORIAL: {
@@ -50,7 +54,7 @@ const Board = {
     Object.assign(this, {
       puzzle, theme, difficulty: 'tutorial', seed: 0, isDaily: false, isTutorial: true, tutorialStep: 0, campaignCase: null,
       placements: new Array(2).fill(null), marks: new Map(), clueDone: new Set(), history: [], hintRefs: null,
-      active: 0, mode: 'place', hintsUsed: 0, attempts: 0, solved: false, elapsed: 0
+      active: 0, mode: 'place', hintsUsed: 0, attempts: 0, solved: false, elapsed: 0, focusClue: null, newRank: null, okCount: 0
     });
     document.getElementById('board-diff-tag').textContent = '🎓 Oefenzaak';
     document.getElementById('board-casetext').textContent = `${theme.icon} ${puzzle.caseText}`;
@@ -104,13 +108,16 @@ const Board = {
       puzzle, theme, difficulty: difficultyId, seed: base, isDaily,
       placements: new Array(puzzle.suspects.length).fill(null),
       marks: new Map(), clueDone: new Set(), history: [], hintRefs: null,
-      active: 0, mode: 'place', hintsUsed: 0, attempts: 0, solved: false, elapsed: 0, isTutorial: false, tutorialStep: 0, campaignCase
+      active: 0, mode: 'place', hintsUsed: 0, attempts: 0, solved: false, elapsed: 0, isTutorial: false, tutorialStep: 0, campaignCase,
+      focusClue: null, newRank: null, okCount: 0
     });
     document.getElementById('board-coach').hidden = true;
     document.getElementById('btn-board-hint').disabled = false;
 
     const diff = DIFFICULTY[difficultyId] || DIFFICULTY.gemiddeld;
-    document.getElementById('board-diff-tag').textContent = campaignCase ? `📖 ${campaignCase.idx + 1}. ${campaignCase.title}` : (isDaily ? '📅 ' : '') + diff.label;
+    document.getElementById('board-diff-tag').textContent = campaignCase
+      ? (campaignCase.chapter === Campaign.ARCHIVE ? `📁 ${campaignCase.title}` : `📖 ${campaignCase.idx + 1}. ${campaignCase.title}`)
+      : (isDaily ? '📅 ' : '') + diff.label;
     document.getElementById('board-casetext').textContent = `${theme.icon} ${campaignCase ? campaignCase.story + ' ' : ''}${puzzle.caseText}`;
     const grid = document.getElementById('board-grid');
     grid.classList.remove('solved');
@@ -197,24 +204,101 @@ const Board = {
     if (clue.a !== undefined) return `<span class="bclue-pair">${ava(clue.a)}${ava(clue.b)}</span>`;
     return `<span class="bclue-ava bclue-house">🏠</span>`;
   },
+  // Elke kaart toont live of hij klopt met wat er staat: groen vinkje als alle
+  // genoemde verdachten staan en de aanwijzing klopt, rood kruis als hij
+  // geschonden wordt. Tikken op de kaart laat kamer/meubel oplichten; het rondje
+  // rechts is het eigen afvinkje van de speler.
+  clueState(clue) {
+    const h = FloorPlan.holds(clue, this.placements, this.puzzle);
+    return h === true ? 'ok' : h === false ? 'bad' : '';
+  },
+  clueHtml(clue, i) {
+    let t = this.puzzle.clueTexts[i];
+    if (clue.furniture) {
+      const nl = this.puzzle.furnitureNl[clue.furniture] || clue.furniture;
+      const icon = `<span class="bclue-furn">${Avatars.furniture(clue.furniture)}</span>`;
+      t = t.includes(nl) ? t.replace(nl, `${nl}${icon}`) : `${t} ${icon}`;
+    }
+    return t;
+  },
   renderClues() {
     const list = document.getElementById('board-clues');
     const refs = this.hintRefs ? new Set(this.hintRefs.clues) : new Set();
     list.innerHTML = this.puzzle.clues.map((clue, i) => {
       const color = clue.s !== undefined ? this.puzzle.suspects[clue.s].color
                   : clue.a !== undefined ? this.puzzle.suspects[clue.a].color : 'var(--border)';
-      return `<div class="bclue${this.clueDone.has(i) ? ' done' : ''}${refs.has(i) ? ' hint-ref' : ''}" data-clue="${i}">
+      const state = this.solved ? 'ok' : this.clueState(clue);
+      const done = this.clueDone.has(i);
+      const mark = state === 'ok' ? '✓' : state === 'bad' ? '✗' : done ? '✓' : '';
+      return `<div class="bclue${done ? ' done' : ''}${refs.has(i) ? ' hint-ref' : ''}${state ? ' ' + state : ''}${this.focusClue === i ? ' active' : ''}" data-clue="${i}">
         <span class="bclue-bar" style="background:${color}"></span>
         <span class="bclue-num">${i + 1}</span>
         ${this.clueAvatars(clue)}
-        <p class="bclue-text">${this.puzzle.clueTexts[i]}</p>
+        <p class="bclue-text">${this.clueHtml(clue, i)}</p>
+        <button type="button" class="bclue-check" data-clue="${i}" aria-label="Aanwijzing afvinken">${mark}</button>
       </div>`;
     }).join('');
-    list.querySelectorAll('.bclue').forEach(c => c.addEventListener('click', () => {
-      const i = +c.dataset.clue;                       // tikken = afvinken als "verwerkt"
+    list.querySelectorAll('.bclue').forEach(c => c.addEventListener('click', () => this.focusOnClue(+c.dataset.clue)));
+    list.querySelectorAll('.bclue-check').forEach(b => b.addEventListener('click', e => {
+      e.stopPropagation();
+      const i = +b.dataset.clue;
       this.clueDone.has(i) ? this.clueDone.delete(i) : this.clueDone.add(i);
-      c.classList.toggle('done', this.clueDone.has(i));
+      this.renderClues();
     }));
+  },
+
+  // ── Aanwijzing aantikken: laat zien waar het over gaat ────
+  clearFocus() {
+    clearTimeout(this.focusTimer);
+    this.focusClue = null;
+    document.querySelectorAll('#board-grid .bcell.lit, #board-grid .bcell.lit-furn').forEach(el => el.classList.remove('lit', 'lit-furn'));
+    document.querySelectorAll('.bclue.active, .sus-chip.lit').forEach(el => el.classList.remove('active', 'lit'));
+  },
+  focusOnClue(i) {
+    const p = this.puzzle, clue = p.clues[i];
+    const again = this.focusClue === i;
+    this.clearFocus();
+    if (again || !clue) return;
+    this.focusClue = i;
+    const card = document.querySelector(`.bclue[data-clue="${i}"]`);
+    if (card) card.classList.add('active');
+
+    const lit = new Set(), litFurn = new Set();
+    const room = clue.room !== undefined ? p.rooms.find(r => r.id === clue.room) : null;
+    const roomsToScan = room ? [room] : (clue.pos ? p.rooms : []);
+    roomsToScan.forEach(rm => rm.list.forEach(c => {
+      if (clue.pos && FloorPlan.posOf(rm, c) !== clue.pos) return;
+      lit.add(FloorPlan.key(c.x, c.y));
+    }));
+    if (clue.furniture) p.furniture.forEach((type, k) => { if (type === clue.furniture) litFurn.add(k); });
+    document.querySelectorAll('#board-grid .bcell').forEach(el => {
+      const k = FloorPlan.key(+el.dataset.x, +el.dataset.y);
+      if (lit.has(k)) el.classList.add('lit');
+      if (litFurn.has(k)) el.classList.add('lit-furn');
+    });
+    [clue.s, clue.a, clue.b].filter(v => v !== undefined).forEach(s => {
+      const chip = document.querySelector(`.sus-chip[data-s="${s}"]`);
+      if (chip) chip.classList.add('lit');
+    });
+    this.buzz(8);
+    this.focusTimer = setTimeout(() => this.clearFocus(), 2600);
+  },
+
+  // ── Tik op een meubel of het slachtoffer: wat is dit? ─────
+  peek(x, y) {
+    const p = this.puzzle, k = FloorPlan.key(x, y);
+    const el = document.querySelector(`#board-grid .bcell[data-x="${x}"][data-y="${y}"]`);
+    if (!el) return;
+    const furn = p.furniture.get(k);
+    const name = furn ? (p.furnitureNl[furn] || furn) : (p.theme.victimName || 'het slachtoffer');
+    document.querySelectorAll('.bpeek').forEach(b => b.remove());
+    const tag = document.createElement('span');
+    tag.className = 'bpeek' + (y === 0 ? ' below' : '') + (x === 0 ? ' l' : x === p.cols - 1 ? ' r' : '');
+    tag.textContent = name;
+    el.appendChild(tag);
+    this.buzz(8);
+    clearTimeout(this.peekTimer);
+    this.peekTimer = setTimeout(() => tag.remove(), 1600);
   },
 
   // ── Celinhoud ─────────────────────────────────────────────
@@ -223,6 +307,9 @@ const Board = {
     const byCell = new Map();
     this.placements.forEach((c, i) => { if (c) byCell.set(FloorPlan.key(c.x, c.y), i); });
     const hinted = new Set(this.hintRefs ? this.hintRefs.cells.map(c => FloorPlan.key(c.x, c.y)) : []);
+    // spelregel live: twee verdachten in de kamer van het slachtoffer = conflict
+    const inVictimRoom = this.placements.filter(c => c && FloorPlan.roomOf(p.rooms, c.x, c.y).id === p.victim.roomId);
+    const conflict = new Set(inVictimRoom.length > 1 ? inVictimRoom.map(c => FloorPlan.key(c.x, c.y)) : []);
 
     document.querySelectorAll('#board-grid .bcell').forEach(el => {
       const x = +el.dataset.x, y = +el.dataset.y, k = FloorPlan.key(x, y);
@@ -237,6 +324,7 @@ const Board = {
       el.classList.toggle('has-sus', who !== undefined);
       el.classList.toggle('occupied', !!furn || isVictim);
       el.classList.toggle('hinted', hinted.has(k));
+      el.classList.toggle('conflict', conflict.has(k));
     });
   },
 
@@ -258,7 +346,7 @@ const Board = {
       this.marks.delete(k);
       return this.after();
     }
-    if (p.furniture.has(k) || (p.victim.x === x && p.victim.y === y)) return this.flash(x, y);
+    if (p.furniture.has(k) || (p.victim.x === x && p.victim.y === y)) return this.peek(x, y);
 
     if (this.mode === 'mark') {
       this.history.push(snap());
@@ -290,6 +378,10 @@ const Board = {
 
   after(keepHint = false) {
     if (!keepHint) this.hintRefs = null;
+    // een aanwijzing die net groen wordt, mag je horen
+    const ok = this.puzzle.clues.filter(c => FloorPlan.holds(c, this.placements, this.puzzle) === true).length;
+    if (ok > (this.okCount || 0) && !this.solved) Sound.play('clue');
+    this.okCount = ok;
     this.renderCells();
     this.renderSuspects();
     this.renderClues();
@@ -330,11 +422,22 @@ const Board = {
 
   updateTools() {
     const all = this.placements.every(Boolean);
-    document.getElementById('btn-board-check').disabled = !all || this.solved;
+    const checkBtn = document.getElementById('btn-board-check');
+    checkBtn.disabled = !all || this.solved;
+    // alles staat en elke aanwijzing klopt: de knop trekt de aandacht
+    checkBtn.classList.toggle('ready', all && !this.solved && this.puzzle.clues.every(c => FloorPlan.holds(c, this.placements, this.puzzle) === true));
     document.getElementById('btn-board-undo').disabled = this.history.length === 0;
     ['place', 'mark', 'erase'].forEach(m => document.getElementById('btn-board-' + m).classList.toggle('active', this.mode === m));
   },
-  setMode(m) { if (this.isTutorial) m = 'place'; this.mode = m; this.updateTools(); },
+  setMode(m) {
+    if (this.isTutorial) m = 'place';
+    if (m === 'mark' && this.mode !== 'mark' && !App.storageGet('crimson-pencil-tip-seen')) {
+      App.storageSet('crimson-pencil-tip-seen', '1');
+      App.showToast('✏️', 'Potlood: zet een stipje op vakjes waar iemand zou kúnnen staan. Met Plaats zet je iemand echt neer, met Gum haal je het weer weg.');
+    }
+    this.mode = m;
+    this.updateTools();
+  },
 
   // ── Controleren → moordenaarsvraag → resultaat ────────────
   check() {
@@ -401,13 +504,17 @@ const Board = {
       return;
     }
     Sound.play('win');
+    const rankBefore = App.rankFor(this.loadStats().solved || 0).title;
     this.saveStats();
+    const rankAfter = App.rankFor(this.loadStats().solved || 0).title;
+    this.newRank = rankAfter !== rankBefore ? rankAfter : null;
     if (this.campaignCase) {
-      Campaign.save(this.campaignCase.theme, this.campaignCase.idx, Campaign.starsFor(this.hintsUsed, this.attempts));
+      Campaign.save(this.campaignCase.chapter, this.campaignCase.idx, Campaign.starsFor(this.hintsUsed, this.attempts));
     }
     if (this.isDaily) {
       App.updateStreak();
       App.storageSet('crimson-board-daily-done', new Date().toDateString());
+      App.scheduleReminder();
     }
     App.mode = 'board';
     this.showResults();
@@ -436,9 +543,14 @@ const Board = {
     document.getElementById('results-stamp').style.borderColor = 'var(--success)';
     document.getElementById('results-headline').textContent = this.isTutorial ? 'Goed gedaan!' : 'Zaak Gesloten!';
     document.getElementById('results-verdict').textContent = `${m.label} was alleen met het slachtoffer in ${q.article || 'de'} ${q.name}.`;
+    // laatste zaak van een deel: de afsluiting van dat deel in plaats van de thema-outro
+    const chap = this.campaignCase ? Campaign.chapter(this.campaignCase.chapter) : null;
+    const finale = chap && this.campaignCase.idx === chap.cases.length - 1 ? chap.outro : null;
     document.getElementById('results-description').textContent = this.isTutorial
       ? 'Zo werkt elke zaak: plaats iedereen met de aanwijzingen, en wijs dan aan wie alleen was met het slachtoffer. Tijd voor een echte zaak.'
-      : (this.hintsUsed === 0 ? 'Zonder één hint. ' : '') + (this.theme.outro || 'De moordenaar is gepakt.');
+      : (this.newRank ? `🎖 Nieuwe rang: ${this.newRank}! ` : '') + (this.hintsUsed === 0 ? 'Zonder één hint. ' : '') + (finale || this.theme.outro || 'De moordenaar is gepakt.');
+    const remindBtn = document.getElementById('btn-remind');
+    if (remindBtn) remindBtn.hidden = !(this.isDaily && !this.isTutorial && App.notif() && !App.reminderEnabled());
 
     const solEl = document.getElementById('results-solution');
     solEl.innerHTML = '<span class="label">Waar iedereen stond</span>';
@@ -456,10 +568,20 @@ const Board = {
       const st = Campaign.starsFor(this.hintsUsed, this.attempts);
       starsEl.hidden = false;
       starsEl.innerHTML = `<span class="stars">${'★'.repeat(st)}${'☆'.repeat(3 - st)}</span><span class="stars-label">${st === 3 ? 'Vlekkeloos: geen hint, in één keer.' : st === 2 ? 'Sterk. Zonder hint én in één keer is drie sterren.' : 'Opgelost. Probeer het nog eens zonder hint.'}</span>`;
-      const next = Campaign.next(this.campaignCase.theme, this.campaignCase.idx);
+      const next = Campaign.next(this.campaignCase.chapter, this.campaignCase.idx);
       nextBtn.hidden = !next;
       nextBtn.textContent = next ? `▶ Volgende zaak: ${next.title}` : '▶ Volgende zaak';
-      nextBtn.onclick = next ? () => App.startCampaignCase(next.theme, next.idx) : null;
+      nextBtn.onclick = next ? () => App.startCampaignCase(next.chapter, next.idx) : null;
+    } else if (!this.isTutorial) {
+      // vrij spel of dagelijkse zaak: meteen door kunnen
+      starsEl.hidden = true;
+      nextBtn.hidden = false;
+      nextBtn.textContent = `▶ Nog een zaak · ${this.theme.title}`;
+      const diff = this.isDaily ? 'gemiddeld' : this.difficulty, themeId = this.theme.id;
+      nextBtn.onclick = () => {
+        if (Board.start(diff, 0, false, themeId)) App.navigateTo('board');
+        else App.showToast('⚠️', 'Kon geen plattegrond genereren, probeer opnieuw.');
+      };
     } else { starsEl.hidden = true; nextBtn.hidden = true; }
     document.getElementById('stat-time').textContent = this.formatTime(this.elapsed);
     document.getElementById('stat-difficulty').textContent = (DIFFICULTY[this.difficulty] || DIFFICULTY.gemiddeld).label;
@@ -484,7 +606,7 @@ const Board = {
       rows.push(line);
     }
     return [
-      `${this.theme.icon} Crimson Ledger · ${this.theme.title}${this.isDaily ? ` · Dag #${App.getDayNumber()}` : ''}${this.campaignCase ? ` · ${this.campaignCase.idx + 1}. ${this.campaignCase.title}` : ''}`,
+      `${this.theme.icon} Crimson Ledger · ${this.theme.title}${this.isDaily ? ` · Dag #${App.getDayNumber()}` : ''}${this.campaignCase ? ` · ${this.campaignCase.chapter === Campaign.ARCHIVE ? '' : this.campaignCase.idx + 1 + '. '}${this.campaignCase.title}` : ''}`,
       `${diff.icon} ${diff.label} · ⏱ ${this.formatTime(this.elapsed)} · 💡 ${this.hintsUsed} · 🔁 ${this.attempts + 1}`,
       '', ...rows, '',
       this.isDaily && App.streak.count > 1 ? `🔥 ${App.streak.count} dagen streak!` : ''

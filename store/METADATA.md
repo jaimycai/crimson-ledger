@@ -41,7 +41,7 @@ ELKE DAG EEN ZAAK
 De dagelijkse zaak wisselt per dag van wereld. Bouw een streak op en deel je resultaat als emoji-kaart.
 
 CAMPAGNE
-32 zaken in vier hoofdstukken, oplopend van makkelijk naar moeilijk, met sterren voor wie het zonder hint en in één keer doet.
+96 zaken in twaalf delen (drie per wereld), oplopend van makkelijk naar moeilijk, met sterren voor wie het zonder hint en in één keer doet. Daarna een eindeloos archief van genummerde dossiers.
 
 VOLLEDIG OFFLINE, GEEN ACCOUNT, GEEN ADVERTENTIES
 Alles staat op je eigen toestel. We verzamelen niets.
@@ -50,7 +50,7 @@ Alles staat op je eigen toestel. We verzamelen niets.
 moordmysterie,logica,puzzel,deductie,detective,plattegrond,dagelijks,breinbreker,mysterie,nederlands
 
 ## Wat is er nieuw (1.0)
-Eerste versie: vier werelden, dagelijkse zaak, campagne van 32 zaken, lerende hints, begeleide oefenzaak.
+Eerste versie: vier werelden, dagelijkse zaak, campagne van 96 zaken met een eindeloos archief, lerende hints, begeleide oefenzaak.
 
 ## Notities voor App Review
 De app is een offline puzzelspel; er is geen account of login nodig. Bij de eerste start opent een korte begeleide oefenzaak (vier tikken). Daarna: Dagelijkse Zaak of Campagne › Het glas Bordeaux. De knop "Hint" legt de volgende logische stap uit. Er worden geen gegevens verzameld (zie privacyverklaring).

@@ -45,6 +45,7 @@ const App = {
     this.registerServiceWorker();
     this.updateDailyDate();
     this.updateStreakDisplay();
+    this.scheduleReminder();
   },
 
   // ══════════════════════════════════════════════════════════
@@ -85,30 +86,89 @@ const App = {
   renderCampaign() {
     const list = document.getElementById('campaign-list');
     document.getElementById('campaign-total').textContent = `${Campaign.doneCount()}/${Campaign.total()}`;
-    list.innerHTML = Campaign.list().map(ch => {
+    const card = (c, open, stars, num) => {
+      const d = DIFFICULTY[c.difficulty] || {};
+      return `<button type="button" class="case-card${open ? '' : ' locked'}${stars ? ' done' : ''}" data-chapter="${c.chapter}" data-theme="${c.theme}" data-idx="${c.idx}" ${open ? '' : 'disabled'}>
+        <span class="case-num">${open ? num : '🔒'}</span>
+        <span class="case-body"><span class="case-title">${c.title}</span><span class="case-meta">${d.icon || ''} ${d.label || ''}</span></span>
+        <span class="case-stars">${stars ? '★'.repeat(stars) + '☆'.repeat(3 - stars) : ''}</span>
+      </button>`;
+    };
+    const sections = Campaign.list().map(ch => {
       const th = Themes.get(ch.theme);
       const themeOpen = this.themeUnlocked(th);
-      const cases = ch.cases.map((c, idx) => {
-        const stars = Campaign.stars(ch.theme, idx);
-        const open = themeOpen && Campaign.isUnlocked(ch.theme, idx);
-        const d = DIFFICULTY[c.difficulty] || {};
-        return `<button type="button" class="case-card${open ? '' : ' locked'}${stars ? ' done' : ''}" data-theme="${ch.theme}" data-idx="${idx}" ${open ? '' : 'disabled'}>
-          <span class="case-num">${open ? idx + 1 : '🔒'}</span>
-          <span class="case-body"><span class="case-title">${c.title}</span><span class="case-meta">${d.icon || ''} ${d.label || ''}</span></span>
-          <span class="case-stars">${stars ? '★'.repeat(stars) + '☆'.repeat(3 - stars) : ''}</span>
-        </button>`;
-      }).join('');
-      const lockNote = themeOpen ? '' : `<p class="chapter-lock">🔒 Los eerst ${th.unlock} zaken op (vrij spel of dagelijks) om dit hoofdstuk te openen.</p>`;
-      return `<section class="chapter"><h3 class="chapter-title">${th.icon} ${th.title}</h3><p class="chapter-tag">${th.tagline}</p>${lockNote}<div class="case-grid">${cases}</div></section>`;
-    }).join('');
-    list.querySelectorAll('.case-card:not(.locked)').forEach(b => b.addEventListener('click', () => this.startCampaignCase(b.dataset.theme, +b.dataset.idx)));
+      const chapterOpen = Campaign.chapterOpen(ch.key, themeOpen);
+      const done = Campaign.chapterDone(ch.key);
+      const cases = ch.cases.map((c, idx) => card({ ...c, chapter: ch.key, theme: ch.theme, idx },
+        chapterOpen && Campaign.isUnlocked(ch.key, idx), Campaign.stars(ch.key, idx), idx + 1)).join('');
+      let note = '';
+      if (!themeOpen) note = `<p class="chapter-lock">🔒 Los eerst ${th.unlock} zaken op (vrij spel of dagelijks) om ${th.title} te openen.</p>`;
+      else if (!chapterOpen) {
+        const prev = Campaign.chaptersFor(ch.theme).find(c => c.part === ch.part - 1);
+        note = `<p class="chapter-lock">🔒 Maak ${prev.title.split(' · ')[0]} af om dit deel te openen.</p>`;
+      }
+      return `<section class="chapter${done ? ' chapter-done' : ''}">
+        <h3 class="chapter-title">${th.icon} ${th.title} <small>${ch.title}</small>${done ? '<span class="chapter-badge">✓ voltooid</span>' : ''}</h3>
+        <p class="chapter-tag">${ch.intro}</p>${note}<div class="case-grid">${cases}</div></section>`;
+    });
+    // eindeloos archief: laatste drie opgeloste dossiers + de volgende drie
+    const archOpen = Campaign.chapterOpen(Campaign.ARCHIVE);
+    const maxN = Campaign.archiveMax();
+    const archCards = [];
+    for (let n = Math.max(1, maxN - 2); n <= maxN + 3; n++) {
+      const c = Campaign.archive(n);
+      archCards.push(card(c, archOpen && Campaign.isUnlocked(Campaign.ARCHIVE, c.idx), Campaign.stars(Campaign.ARCHIVE, c.idx), n));
+    }
+    const solvedArch = Campaign.archiveCount();
+    const archNote = archOpen ? '' : `<p class="chapter-lock">🔒 Los ${Campaign.ARCHIVE_UNLOCK} campagnezaken op om het archief te openen.</p>`;
+    sections.push(`<section class="chapter"><h3 class="chapter-title">📁 Het archief <small>eindeloos</small></h3>
+      <p class="chapter-tag">Koude zaken zonder einde: het thema wisselt per dossier en elk dossier telt mee voor je rang.${solvedArch ? ` ${solvedArch} opgelost.` : ''}</p>${archNote}<div class="case-grid">${archCards.join('')}</div></section>`);
+    list.innerHTML = sections.join('');
+    list.querySelectorAll('.case-card:not(.locked)').forEach(b => b.addEventListener('click', () => this.startCampaignCase(b.dataset.chapter, +b.dataset.idx)));
   },
 
-  startCampaignCase(themeId, idx) {
-    const c = Campaign.chapter(themeId).cases[idx];
-    const cc = { theme: themeId, idx, ...c };
-    if (Board.start(c.difficulty, c.seed, false, themeId, cc)) this.navigateTo('board');
+  startCampaignCase(key, idx) {
+    const c = Campaign.caseAt(key, idx);
+    if (c && Board.start(c.difficulty, c.seed, false, c.theme, c)) this.navigateTo('board');
     else this.showToast('⚠️', 'Deze zaak kon niet geladen worden.');
+  },
+
+  // ══════════════════════════════════════════════════════════
+  //  DAGELIJKSE HERINNERING (alleen in de iOS-app, lokale melding)
+  // ══════════════════════════════════════════════════════════
+  notif() {
+    try { const P = window.Capacitor && window.Capacitor.Plugins; return (P && P.LocalNotifications) || null; } catch (e) { return null; }
+  },
+  reminderEnabled() { return this.storageGet('crimson-reminder') === '1'; },
+  async setReminder(on) {
+    const LN = this.notif();
+    if (!LN) return false;
+    if (!on) {
+      this.storageSet('crimson-reminder', '0');
+      try { await LN.cancel({ notifications: [{ id: 1 }] }); } catch (e) { /* niets gepland */ }
+      return false;
+    }
+    try {
+      const perm = await LN.requestPermissions();
+      if (perm.display !== 'granted') { this.showToast('🔕', 'Meldingen staan uit. Zet ze aan bij Instellingen › Crimson Ledger.'); return false; }
+    } catch (e) { return false; }
+    this.storageSet('crimson-reminder', '1');
+    await this.scheduleReminder();
+    return true;
+  },
+  // Eén melding, elke keer opnieuw gepland: vandaag 18:30 als de dagelijkse zaak nog open staat, anders morgen.
+  async scheduleReminder() {
+    const LN = this.notif();
+    if (!LN || !this.reminderEnabled()) return;
+    const doneToday = this.storageGet('crimson-board-daily-done') === new Date().toDateString();
+    const at = new Date(); at.setHours(18, 30, 0, 0);
+    if (doneToday || at <= new Date()) at.setDate(at.getDate() + 1);
+    const streak = this.streak.count || 0;
+    const body = streak > 1 ? `Je dagelijkse zaak wacht. Houd je streak van ${streak} dagen vast.` : 'Er ligt een nieuwe zaak op je bureau. Wie was alleen met het slachtoffer?';
+    try {
+      await LN.cancel({ notifications: [{ id: 1 }] }).catch(() => {});
+      await LN.schedule({ notifications: [{ id: 1, title: 'Crimson Ledger', body, schedule: { at, allowWhileIdle: true } }] });
+    } catch (e) { /* geen meldingen beschikbaar */ }
   },
 
   // ══════════════════════════════════════════════════════════
@@ -134,6 +194,17 @@ const App = {
       this.resetProgress();
       e.target.textContent = 'Gewist';
       this.resetArmed = false;
+    });
+    // dagelijkse herinnering: alleen tonen als de app lokale meldingen heeft (iOS)
+    const row = document.getElementById('settings-reminder'), chk = document.getElementById('chk-reminder');
+    if (row && chk) {
+      row.hidden = !this.notif();
+      chk.checked = this.reminderEnabled();
+      chk.addEventListener('change', async () => { chk.checked = await this.setReminder(chk.checked); });
+    }
+    const rb = document.getElementById('btn-remind');
+    if (rb) rb.addEventListener('click', async () => {
+      if (await this.setReminder(true)) { rb.hidden = true; this.showToast('🔔', 'Ingesteld: elke dag om 18:30 een herinnering.'); }
     });
   },
 
@@ -183,6 +254,68 @@ const App = {
       this.storageSet('crimson-theme', this.selectedTheme);
       this.renderThemePicker();
     }));
+    this.renderDifficultyPreviews();
+  },
+
+  // ── Moeilijkheidskiezer: mini-plattegrond in het gekozen thema ──
+  // Vaste seeds per niveau, zodat het voorbeeld rustig blijft; de echte
+  // zaak gebruikt een andere seed, dus het voorbeeld verklapt niets.
+  PREVIEW_SEEDS: { makkelijk: 1301, gemiddeld: 2402, moeilijk: 3503 },
+  previewCache: {},
+  renderDifficultyPreviews() {
+    if (typeof FloorPlan === 'undefined' || typeof Themes === 'undefined') return;
+    const theme = Themes.get(this.selectedTheme);
+    if (!theme) return;
+    Object.keys(this.PREVIEW_SEEDS).forEach(d => {
+      const prev = document.querySelector(`.difficulty-preview[data-preview="${d}"]`);
+      const meta = document.querySelector(`.difficulty-meta[data-meta="${d}"]`);
+      if (!prev || !meta) return;
+      const cacheKey = `${theme.id}:${d}`;
+      let puzzle = this.previewCache[cacheKey];
+      if (!puzzle) {
+        const base = this.PREVIEW_SEEDS[d];
+        for (let i = 0; i < 8 && !puzzle; i++) puzzle = FloorPlan.generate(base + i * 7919, d, theme);
+        if (puzzle) this.previewCache[cacheKey] = puzzle;
+      }
+      const cfg = FloorPlan.DIFF[d] || FloorPlan.DIFF.gemiddeld;
+      prev.innerHTML = puzzle ? this.previewSvg(puzzle) : '';
+      const dots = theme.suspects.slice(0, cfg.suspects).map(su => `<i style="background:${su.color}"></i>`).join('');
+      meta.innerHTML = `${dots}<span>${cfg.cols}×${cfg.rows}</span>`;
+      meta.title = `${cfg.suspects} verdachten · ${cfg.cols} bij ${cfg.rows} vakjes`;
+    });
+  },
+  previewSvg(p) {
+    const C = 10, W = p.cols * C, H = p.rows * C;
+    const roomAt = (x, y) => FloorPlan.roomOf(p.rooms, x, y);
+    let cells = '', walls = '';
+    for (let y = 0; y < p.rows; y++) for (let x = 0; x < p.cols; x++) {
+      const room = roomAt(x, y);
+      cells += `<rect x="${x * C}" y="${y * C}" width="${C}" height="${C}" fill="${room.color}"/>`;
+      cells += `<rect x="${x * C}" y="${y * C}" width="${C}" height="${C}" fill="${(x + y) % 2 === 0 ? 'rgba(0,0,0,0.07)' : 'rgba(255,255,255,0.3)'}"/>`;
+      const r = roomAt(x + 1, y), b = roomAt(x, y + 1);
+      if (r && r.id !== room.id) walls += `M${(x + 1) * C} ${y * C}v${C}`;
+      if (b && b.id !== room.id) walls += `M${x * C} ${(y + 1) * C}h${C}`;
+    }
+    let people = '';
+    p.suspects.forEach((su, i) => {
+      const c = p.solution[i];
+      people += `<circle cx="${c.x * C + C / 2}" cy="${c.y * C + C / 2}" r="${C * 0.33}" fill="${su.color}" stroke="#1A1108" stroke-width="0.9"/>`;
+    });
+    const v = p.victim;
+    people += `<path d="M${v.x * C + 3} ${v.y * C + 3}l4 4m0-4l-4 4" stroke="#B3261E" stroke-width="1.4" stroke-linecap="round" fill="none"/>`;
+    return `<svg viewBox="0 0 ${W} ${H}" aria-hidden="true">${cells}<path d="${walls}" stroke="#1A1108" stroke-width="1.1" fill="none"/>` +
+           `<rect x="0.7" y="0.7" width="${W - 1.4}" height="${H - 1.4}" fill="none" stroke="#1A1108" stroke-width="1.4"/>${people}</svg>`;
+  },
+
+  // ── Rang: zichtbare voortgang in het menu en op het resultaatscherm ──
+  RANKS: [[0, 'Rekruut'], [3, 'Speurder'], [8, 'Rechercheur'], [15, 'Inspecteur'], [25, 'Hoofdinspecteur'], [40, 'Meesterdetective']],
+  rankFor(solved) {
+    let idx = 0;
+    this.RANKS.forEach(([at], i) => { if (solved >= at) idx = i; });
+    const [at, title] = this.RANKS[idx];
+    const nx = this.RANKS[idx + 1];
+    const next = nx ? { at: nx[0], title: nx[1] } : null;
+    return { title, next, progress: next ? (solved - at) / (next.at - at) : 1 };
   },
 
   updateBoardStats() {
@@ -192,6 +325,14 @@ const App = {
     const dateEl = document.getElementById('board-daily-date');
     if (!el) return;
     const st = Board.loadStats();
+    const rankEl = document.getElementById('menu-rank');
+    if (rankEl) {
+      const solved = st.solved || 0, r = this.rankFor(solved);
+      const left = r.next ? r.next.at - solved : 0;
+      rankEl.innerHTML = `<span class="rank-title">🎖 ${r.title}</span>` + (r.next
+        ? `<span class="rank-bar"><i style="width:${Math.round(r.progress * 100)}%"></i></span><span class="rank-next">nog ${left} ${left === 1 ? 'zaak' : 'zaken'} tot ${r.next.title}</span>`
+        : '<span class="rank-next">hoogste rang bereikt</span>');
+    }
     const done = this.storageGet('crimson-board-daily-done') === new Date().toDateString();
     if (dateEl) dateEl.textContent = done ? 'Vandaag opgelost ✓' : `Vandaag: ${Themes.forDay(this.getDayNumber()).title}`;
     if (!st.solved) { el.textContent = 'Nog geen zaak opgelost. Vandaag de eerste?'; return; }
@@ -923,6 +1064,9 @@ const App = {
 
     document.getElementById('btn-play-again').textContent =
       this.isTutorial ? 'Naar het hoofdmenu' : 'Opnieuw Spelen';
+    document.getElementById('btn-next-case').hidden = true;
+    document.getElementById('results-stars').hidden = true;
+    document.getElementById('btn-remind').hidden = true;
 
     // Stats
     document.getElementById('stat-time').textContent = this.formatTime(this.timer.seconds);

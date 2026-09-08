@@ -2,9 +2,9 @@
 <html lang="nl">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-  <title>Crimson Ledger — Los op. Elimineer. Ontmasker.</title>
-  <meta name="description" content="Crimson Ledger is een logic-grid moordmysterie puzzelgame. Los de puzzel op, ontdek aanwijzingen, elimineer verdachten en ontmasker de moordenaar.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>Crimson Ledger — Speur. Redeneer. Ontmasker.</title>
+  <meta name="description" content="Crimson Ledger is een moordmysterie-puzzelgame op een plattegrond. Speur naar aanwijzingen, redeneer wie waar stond en ontmasker de moordenaar.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -23,7 +23,7 @@
     <section id="screen-splash" class="screen active">
       <div class="splash-badge"><span class="splash-badge-icon">🔍</span></div>
       <h1 class="splash-title">Crimson<br>Ledger</h1>
-      <p class="splash-tagline">Los op. Elimineer. Ontmasker.</p>
+      <p class="splash-tagline">Speur. Redeneer. Ontmasker.</p>
       <p class="splash-subtitle">Een moordmysterie logic-puzzel</p>
       <button id="btn-splash-start" class="btn btn-primary" style="max-width:260px;width:100%">Begin</button>
       <span class="splash-footer">Elke puzzel ontmaskert een moordenaar</span>
@@ -48,6 +48,7 @@
           <span>🔥</span> <span id="streak-count">0</span> dagen streak
         </div>
         <div class="menu-stats" id="board-stats"></div>
+        <div class="menu-rank" id="menu-rank"></div>
         <button class="btn btn-secondary btn-block menu-campaign-btn" id="btn-campaign">
           <span class="menu-daily-icon">📖</span>
           <div class="menu-daily-text">
@@ -65,25 +66,22 @@
         <span class="label">Moeilijkheidsgraad</span>
         <div class="difficulty-selector" id="difficulty-selector">
           <button class="difficulty-btn" data-difficulty="makkelijk">
-            <span class="difficulty-icon">🟢</span>
-            <div class="difficulty-text">
-              <span class="difficulty-label">Makkelijk</span>
-              <span class="difficulty-desc">3 verdachten · klein huis</span>
-            </div>
+            <span class="difficulty-preview" data-preview="makkelijk"></span>
+            <span class="difficulty-label">Makkelijk</span>
+            <span class="difficulty-desc">Opwarmer</span>
+            <span class="difficulty-meta" data-meta="makkelijk"></span>
           </button>
           <button class="difficulty-btn active" data-difficulty="gemiddeld">
-            <span class="difficulty-icon">🟡</span>
-            <div class="difficulty-text">
-              <span class="difficulty-label">Gemiddeld</span>
-              <span class="difficulty-desc">4 verdachten · indirecte aanwijzingen</span>
-            </div>
+            <span class="difficulty-preview" data-preview="gemiddeld"></span>
+            <span class="difficulty-label">Gemiddeld</span>
+            <span class="difficulty-desc">Echt puzzelen</span>
+            <span class="difficulty-meta" data-meta="gemiddeld"></span>
           </button>
           <button class="difficulty-btn" data-difficulty="moeilijk">
-            <span class="difficulty-icon">🔴</span>
-            <div class="difficulty-text">
-              <span class="difficulty-label">Moeilijk</span>
-              <span class="difficulty-desc">5 verdachten · groot huis</span>
-            </div>
+            <span class="difficulty-preview" data-preview="moeilijk"></span>
+            <span class="difficulty-label">Moeilijk</span>
+            <span class="difficulty-desc">Voor speurneuzen</span>
+            <span class="difficulty-meta" data-meta="moeilijk"></span>
           </button>
         </div>
         <button class="btn btn-secondary btn-block" id="btn-board-start">Start Plattegrondzaak</button>
@@ -210,7 +208,7 @@
           <span class="tool-icon">👤</span><span class="tool-label">Plaats</span>
         </button>
         <button type="button" class="tool" id="btn-board-mark">
-          <span class="tool-icon">✗</span><span class="tool-label">Markeer</span>
+          <span class="tool-icon">✏️</span><span class="tool-label">Potlood</span>
         </button>
         <button type="button" class="tool" id="btn-board-erase">
           <span class="tool-icon">🧽</span><span class="tool-label">Gum</span>
@@ -266,6 +264,7 @@
       <div class="results-stars" id="results-stars" hidden></div>
       <div class="results-footer">
         <button class="btn btn-primary btn-block" id="btn-next-case" hidden>▶ Volgende zaak</button>
+        <button class="btn btn-secondary btn-block" id="btn-remind" hidden>🔔 Herinner me morgen aan de dagelijkse zaak</button>
         <button class="btn btn-secondary btn-block" id="btn-share">📤 Deel Resultaat</button>
         <button class="btn btn-primary btn-block" id="btn-play-again">Opnieuw Spelen</button>
       </div>
@@ -280,11 +279,11 @@
       <div class="how-steps">
         <div class="how-step">
           <span class="how-num">1</span>
-          <div><strong>Plaats de verdachten</strong><br>Tik een verdachte, dan een vakje op de plattegrond. Iedereen staat ergens.</div>
+          <div><strong>Plaats de verdachten</strong><br>Tik een verdachte, dan een vakje op de plattegrond. Twijfel je? Met <em>Potlood</em> zet je een stipje op vakjes waar iemand zou kúnnen staan; <em>Gum</em> haalt stipjes en verdachten weer weg.</div>
         </div>
         <div class="how-step">
           <span class="how-num">2</span>
-          <div><strong>Gebruik de aanwijzingen</strong><br>"In een hoek" is een hoekvakje van de kamer, "tegen de muur" raakt een muur maar is geen hoek. "Links van" en "hoger" gaan over de plattegrond.</div>
+          <div><strong>Gebruik de aanwijzingen</strong><br>Tik op een aanwijzing: de kamer of het meubel licht op in de plattegrond. Tik op een meubel om te zien wat het is. Klopt een aanwijzing met wat je hebt neergezet, dan krijgt hij een groen vinkje; klopt hij niet, dan wordt hij rood. "In een hoek" is een hoekvakje, "tegen een muur" raakt een muur maar is geen hoek.</div>
         </div>
         <div class="how-step">
           <span class="how-num">3</span>
@@ -352,6 +351,7 @@
       <div class="settings-list">
         <div class="settings-row"><span>Privacy</span><a href="privacy.html" target="_blank" rel="noopener">Privacyverklaring ↗</a></div>
         <div class="settings-row"><span>Hulp</span><a href="support.html" target="_blank" rel="noopener">Support ↗</a></div>
+        <div class="settings-row" id="settings-reminder" hidden><span>🔔 Dagelijkse herinnering (18:30)</span><label class="switch"><input type="checkbox" id="chk-reminder"><i></i></label></div>
         <div class="settings-row"><span>Alle voortgang wissen</span><button type="button" class="settings-danger" id="btn-reset-progress">Wissen</button></div>
       </div>
       <p class="settings-version">Crimson Ledger <span id="app-version">1.0.0</span> · gemaakt in Nederland</p>

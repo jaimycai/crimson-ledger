@@ -63,9 +63,9 @@ const FloorPlan = (() => {
     };
   }
   const POS_NL = rw => ({
-    hoek:   { los: `in een hoek van een ${rw}`,               kamer: `in een hoek van de ${rw}` },
-    muur:   { los: 'tegen een muur, niet in een hoek',        kamer: 'tegen de muur, niet in een hoek' },
-    midden: { los: `midden in een ${rw}, niet tegen een muur`, kamer: `midden in de ${rw}` }
+    hoek:   { los: `in een hoek van een ${rw}`,               kamer: 'in een hoek' },
+    muur:   { los: 'tegen een muur, niet in een hoek',        kamer: 'tegen een muur, niet in een hoek' },
+    midden: { los: `midden in een ${rw}, niet tegen een muur`, kamer: 'in het midden, niet tegen een muur' }
   });
 
   const DIFF = {

@@ -86,10 +86,11 @@ body {
 }
 
 /* ── Scherm Systeem ─────────────────────────────────────────── */
+:root { --sat: env(safe-area-inset-top, 0px); --sab: env(safe-area-inset-bottom, 0px); }
 .screen {
   display: none;
   flex-direction: column;
-  padding: 24px 20px;
+  padding: calc(24px + var(--sat)) 20px calc(24px + var(--sab));
   min-height: 100dvh;
   animation: fadeIn var(--duration-mid) var(--ease-out);
 }
@@ -331,38 +332,43 @@ h3 { font-size: 1.15rem; }
 
 /* ── Moeilijkheidsselector ──────────────────────────────────── */
 .difficulty-selector {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 8px;
 }
 .difficulty-btn {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 14px;
-  width: 100%;
-  padding: 12px 14px;
-  border: 1.5px solid var(--border-light);
+  gap: 4px;
+  padding: 10px 6px 10px;
+  border: 2px solid var(--border-light);
   border-radius: var(--radius-md);
   background: var(--bg-card);
   cursor: pointer;
-  transition: all var(--duration-fast);
-  text-align: left;
+  transition: transform var(--duration-fast) var(--ease-spring), border-color var(--duration-fast), background var(--duration-fast);
+  text-align: center;
 }
-.difficulty-btn:hover { border-color: var(--accent-light); background: var(--accent-subtle); }
+.difficulty-btn:hover { border-color: var(--accent-light); }
 .difficulty-btn.active {
   border-color: var(--accent);
   background: var(--accent-subtle);
-  box-shadow: 0 0 0 1px var(--accent);
+  transform: scale(1.04);
+  box-shadow: var(--shadow-md);
 }
-.difficulty-icon { font-size: 1.2rem; flex-shrink: 0; }
-.difficulty-text { display: flex; flex-direction: column; gap: 1px; }
+.difficulty-preview { display: block; width: 100%; max-width: 92px; aspect-ratio: 1; }
+.difficulty-preview svg { width: 100%; height: 100%; display: block; border-radius: 6px; overflow: hidden; }
 .difficulty-label {
   font-family: var(--font-heading);
   font-size: 0.95rem;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--text-primary);
+  margin-top: 2px;
 }
-.difficulty-desc { font-size: 0.7rem; color: var(--text-light); }
+.difficulty-desc { font-size: 0.68rem; color: var(--text-secondary); font-style: italic; }
+.difficulty-meta { display: flex; align-items: center; gap: 3px; font-size: 0.62rem; color: var(--text-light); margin-top: 2px; }
+.difficulty-meta i { width: 9px; height: 9px; border-radius: 50%; border: 1px solid rgba(0,0,0,0.25); display: inline-block; }
+.difficulty-meta span { margin-left: 3px; font-variant-numeric: tabular-nums; }
 
 /* ============================================================
    ZAAK INTRO
@@ -1082,28 +1088,35 @@ body.tutorial-mode #btn-share { display: none; }
 }
 
 /* ── Toast ───────────────────────────────────────────────────── */
+/* Onder de veilige rand (Dynamic Island / notch), nooit breder dan het scherm,
+   en verborgen volledig boven het scherm — ook boven de veilige rand. */
 .clue-toast {
   position: fixed;
-  top: 16px;
+  top: calc(10px + var(--sat));
   left: 50%;
-  transform: translateX(-50%) translateY(-100px);
+  width: calc(100% - 28px);
+  max-width: 380px;
+  box-sizing: border-box;
+  transform: translateX(-50%) translateY(calc(-100% - 24px - var(--sat)));
   background: var(--bg-card);
   border: 1.5px solid var(--gold);
   border-radius: var(--radius-md);
-  padding: 12px 20px;
+  padding: 12px 16px;
   box-shadow: var(--shadow-lg), 0 0 20px rgba(184, 149, 92, 0.15);
-  z-index: 50;
+  z-index: 200;
   display: flex;
   align-items: center;
   gap: 10px;
   font-size: 0.85rem;
+  line-height: 1.35;
   font-weight: 600;
+  text-align: left;
   color: var(--text-primary);
   transition: transform 0.5s var(--ease-spring);
-  max-width: 340px;
+  pointer-events: none;
 }
 .clue-toast.show { transform: translateX(-50%) translateY(0); }
-.clue-toast-icon { font-size: 1.2rem; }
+.clue-toast-icon { font-size: 1.2rem; flex: none; }
 
 /* ============================================================
    ANIMATIES & UTILITIES
@@ -1155,7 +1168,9 @@ body.tutorial-mode #btn-share { display: none; }
 #screen-board.active {
   display: flex;
   flex-direction: column;
-  min-height: 100dvh;
+  height: 100dvh;
+  min-height: 0;
+  overflow: hidden;
 }
 
 /* ── Bovenbalk ─────────────────────────────────────────────── */
@@ -1185,15 +1200,15 @@ body.tutorial-mode #btn-share { display: none; }
 /* ── Het bord ──────────────────────────────────────────────── */
 .board-stage {
   flex: none;
-  padding: 12px;
+  padding: 8px 12px;
   background: var(--bg-secondary);
 }
 .board-grid {
   position: relative;
   display: grid;
   grid-template-columns: repeat(var(--cols, 7), 1fr);
-  width: 100%;
-  max-width: 460px;
+  width: min(100%, 460px, calc(100dvh - var(--sat) - var(--sab) - 400px));
+  min-width: 240px;
   margin: 0 auto;
   aspect-ratio: var(--cols, 7) / var(--rows, 7);
   border: 3px solid #1A1108;
@@ -1339,6 +1354,9 @@ body.tutorial-mode #btn-share { display: none; }
 /* ── Aanwijzingskaarten ────────────────────────────────────── */
 .board-clues {
   flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   padding: 10px 12px 16px;
   display: flex;
   flex-direction: column;
@@ -1366,19 +1384,16 @@ body.tutorial-mode #btn-share { display: none; }
 
 /* ── Gereedschapsbalk ──────────────────────────────────────── */
 .board-tools {
-  position: sticky;
-  bottom: 0;
-  z-index: 20;
   display: flex;
   align-items: center;
   gap: 4px;
-  padding: 8px 10px calc(8px + env(safe-area-inset-bottom));
+  padding: 8px 10px calc(8px + var(--sab));
   background: var(--bg-card);
   border-top: 1px solid var(--border-light);
   box-shadow: 0 -4px 14px rgba(44, 24, 16, 0.06);
   flex: none;
 }
-.board-topbar { padding-top: calc(10px + env(safe-area-inset-top)); }
+.board-topbar { padding-top: calc(10px + var(--sat)); }
 .tool {
   flex: 1;
   display: flex;
@@ -1545,9 +1560,9 @@ body.tutorial-mode #btn-share { display: none; }
 
 /* ── Campagne ──────────────────────────────────────────────── */
 #screen-campaign { display: none; padding: 0; }
-#screen-campaign.active { display: flex; flex-direction: column; min-height: 100dvh; }
+#screen-campaign.active { display: flex; flex-direction: column; height: 100dvh; min-height: 0; overflow: hidden; }
 .campaign-title { font-family: var(--font-heading); font-weight: 700; font-size: 1.05rem; }
-.campaign-list { flex: 1; padding: 12px 14px 24px; display: flex; flex-direction: column; gap: 18px; background: var(--bg-secondary); }
+.campaign-list { flex: 1; min-height: 0; overflow-y: auto; -webkit-overflow-scrolling: touch; padding: 12px 14px calc(24px + var(--sab)); display: flex; flex-direction: column; gap: 18px; background: var(--bg-secondary); }
 .chapter-title { font-family: var(--font-heading); font-size: 1.1rem; margin-bottom: 2px; }
 .chapter-tag { font-size: 0.75rem; color: var(--text-light); margin-bottom: 8px; font-style: italic; }
 .chapter-lock { font-size: 0.72rem; color: var(--text-light); background: var(--bg-card); border: 1px dashed var(--border); border-radius: var(--radius-sm); padding: 6px 8px; margin-bottom: 8px; }
@@ -1585,3 +1600,67 @@ input, textarea { -webkit-user-select: text; user-select: text; }
 .settings-row a { color: var(--accent); font-weight: 600; text-decoration: none; }
 .settings-danger { color: var(--error); font-weight: 700; background: none; border: 1.5px solid var(--error); border-radius: var(--radius-sm); padding: 6px 10px; font: inherit; font-size: 0.78rem; cursor: pointer; }
 .settings-version { text-align: center; font-size: 0.7rem; color: var(--text-light); margin-bottom: 10px; }
+
+.modal-content { padding-bottom: calc(24px + var(--sab)); }
+.board-casetext { font-size: 0.74rem; line-height: 1.3; padding: 6px 14px 5px; }
+
+/* ── Aanwijzingen: live-status, oplichten, meubel-icoon, afvinkje ── */
+.bclue { position: relative; transition: border-color var(--duration-fast), background var(--duration-fast); }
+.bclue.ok  { border-color: #7DAE7A; background: #F3F8F1; }
+.bclue.bad { border-color: #D9534F; background: #FCF1F0; }
+.bclue.bad .bclue-text { color: #9C2A24; }
+.bclue.active { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent-light); }
+.bclue-check {
+  flex: none; width: 26px; height: 26px; border-radius: 50%;
+  border: 1.5px solid var(--border); background: var(--bg-card);
+  font: inherit; font-size: 0.78rem; font-weight: 800; color: var(--text-light);
+  display: flex; align-items: center; justify-content: center; padding: 0; cursor: pointer;
+  transition: transform var(--duration-fast) var(--ease-spring), background var(--duration-fast);
+}
+.bclue.done .bclue-check { background: var(--text-light); border-color: var(--text-light); color: #fff; }
+.bclue.ok   .bclue-check { background: #4E8B4A; border-color: #4E8B4A; color: #fff; transform: scale(1.1); }
+.bclue.bad  .bclue-check { background: #D9534F; border-color: #D9534F; color: #fff; }
+.bclue-furn { display: inline-block; width: 24px; height: 24px; vertical-align: -7px; margin: 0 1px 0 5px; }
+.bclue-furn .av { width: 100%; height: 100%; }
+.bcell.lit { outline: 3px solid var(--accent); outline-offset: -3px; }
+.bcell.lit-furn { outline: 3px solid var(--gold); outline-offset: -3px; animation: hint-pulse 1s ease-in-out 2; }
+.bcell.conflict { box-shadow: inset 0 0 0 3px #D9534F; }
+.sus-chip.lit { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent-light); }
+
+/* naamkaartje bij een meubel of het slachtoffer */
+.bcell > .bpeek {
+  position: absolute; bottom: calc(100% + 4px); left: 50%; transform: translateX(-50%);
+  z-index: 6; white-space: nowrap; pointer-events: none;
+  background: #1A1108; color: #fff; font-size: 0.7rem; font-weight: 700;
+  padding: 4px 9px; border-radius: 6px; box-shadow: var(--shadow-md);
+  animation: fadeIn 0.18s ease-out;
+}
+.bcell > .bpeek.below { bottom: auto; top: calc(100% + 4px); }
+.bcell > .bpeek.l { left: 0; transform: none; }
+.bcell > .bpeek.r { left: auto; right: 0; transform: none; }
+
+/* alles staat en klopt: Controleer vraagt om aandacht */
+.board-check.ready { animation: ready-pulse 1.1s ease-in-out infinite; }
+@keyframes ready-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(184, 149, 92, 0); }
+  50% { box-shadow: 0 0 0 5px rgba(184, 149, 92, 0.45); }
+}
+
+/* rang in het menu */
+.menu-rank { display: flex; align-items: center; justify-content: center; gap: 8px; font-size: 0.74rem; color: var(--text-secondary); margin-top: 8px; }
+.rank-title { font-weight: 800; color: var(--text-primary); }
+.rank-bar { flex: 1; max-width: 110px; height: 6px; border-radius: 3px; background: var(--bg-secondary); border: 1px solid var(--border-light); overflow: hidden; }
+.rank-bar i { display: block; height: 100%; background: var(--accent); border-radius: 3px; transition: width 0.6s var(--ease-out); }
+
+/* ── Campagne in delen + archief ── */
+.chapter-title small { font-size: 0.78rem; font-weight: 600; color: var(--text-secondary); margin-left: 4px; }
+.chapter-badge { font-size: 0.68rem; font-weight: 700; color: var(--success); margin-left: 8px; white-space: nowrap; }
+.chapter-done .chapter-title { color: var(--success); }
+
+/* schakelaar in de instellingen */
+.switch { position: relative; width: 44px; height: 26px; flex: none; }
+.switch input { opacity: 0; width: 0; height: 0; position: absolute; }
+.switch i { position: absolute; inset: 0; background: var(--border); border-radius: 13px; transition: background var(--duration-fast); cursor: pointer; }
+.switch i::after { content: ''; position: absolute; top: 3px; left: 3px; width: 20px; height: 20px; border-radius: 50%; background: #fff; box-shadow: var(--shadow-sm); transition: transform var(--duration-fast) var(--ease-spring); }
+.switch input:checked + i { background: var(--accent); }
+.switch input:checked + i::after { transform: translateX(18px); }

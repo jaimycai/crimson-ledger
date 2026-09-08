@@ -40,6 +40,7 @@ const Sound = {
       else if (name === 'mark')  { this.tone(440, 0.05, 'square', 0.03); }
       else if (name === 'win')   { [523, 659, 784, 1047].forEach((f, i) => this.tone(f, 0.18, 'triangle', 0.07, i * 0.09)); }
       else if (name === 'ui')    { this.tone(520, 0.04, 'sine', 0.03); }
+      else if (name === 'clue')  { this.tone(784, 0.06, 'triangle', 0.05, 0.12); this.tone(1175, 0.1, 'triangle', 0.05, 0.19); }
     } catch (e) { /* audio niet beschikbaar */ }
   }
 };
