@@ -4,7 +4,7 @@ Alles wat vanaf de code kan is gedaan. Dit zijn de stappen die jouw account en X
 
 ## Vooraf (kan vandaag al)
 - [ ] **Apple Developer Program** actief (developer.apple.com, €99/jaar). Zonder dit kan niets worden geüpload. Nieuwe aanmelding: 1–2 dagen goedkeuring.
-- [ ] **Xcode** geïnstalleerd uit de Mac App Store (~15 GB) en één keer geopend (accepteer de licentie). Daarna in Terminal: `sudo xcode-select -s /Applications/Xcode.app`
+- [x] **Xcode** geïnstalleerd (26.6), licentie geaccepteerd, iOS 26.5-platform gedownload, `xcode-select` staat goed.
 - [ ] In Xcode: *Settings › Accounts* → je Apple ID toevoegen.
 
 ## Project openen
@@ -15,7 +15,8 @@ npm run ios          # kopieert www/, synct Capacitor en opent Xcode
 In Xcode, doel **App**:
 - [ ] *Signing & Capabilities* → Team kiezen → "Automatically manage signing" aan. Bundle ID staat op `com.jaimycai.crimsonledger`.
 - [ ] *General* → Version 1.0.0, Build 1 (staan al). Deployment target iOS 14+.
-- [ ] Kies een simulator (bijv. iPhone 16) en druk ▶ — controleer: oefenzaak start, tik werkt, haptiek, geluid, geen witte randen onder de notch.
+- [x] Project compileert voor simulator én toestel (arm64 Release, gecontroleerd op 8 sep). App draait in de iPhone 17 Pro-simulator.
+- [ ] Druk zelf ▶ op een simulator of je iPhone — controleer: oefenzaak start, tik werkt, haptiek, geluid.
 
 ## App Store Connect (appstoreconnect.apple.com)
 - [ ] *Mijn apps › +* → Nieuwe app: naam **Crimson Ledger**, taal Nederlands, Bundle ID kiezen, SKU `crimson-ledger-ios`.
