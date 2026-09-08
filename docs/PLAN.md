@@ -90,6 +90,36 @@ nog meer beter, en push het".
 - Tests: campagne-test bewijst alle 96 zaken + 12 dossiers uniek oplosbaar, unieke seeds,
   hoofdstuklogica; bordtest dekt de nieuwe campagnelijst (13 secties, 99 kaarten).
 
+## App Store-controle (8 sep, avond)
+
+Gecontroleerd en in orde: Info.plist (`ITSAppUsesNonExemptEncryption` = false, alleen portret,
+alleen iPhone → geen iPad-schermafbeeldingen), launch screen, app-icoon 1024×1024 zonder alpha,
+privacy- en supportpagina live op GitHub Pages (HTTP 200), meldingen opt-in, geen login/ads/IAP.
+Gefixt: de Privacy/Support-links in de instellingen deden in de iOS-app niets (Capacitor geeft
+`target=_blank` door aan iOS, dat een `capacitor://`-URL niet kan openen) → nu publieke https-URL's
+die Safari openen (richtlijn 5.1.1 eist een bereikbare privacyverklaring in de app). Gefixt:
+schermafbeeldingen waren van de oude UI (richtlijn 2.3.3) → acht nieuwe op 1290×2796.
+Resterend risico: richtlijn 4.2 (minimale functionaliteit) voor web-gebaseerde apps; antwoord
+staat in `store/CHECKLIST.md`.
+
+## Naar een episch spel (analyse 8 sep, nog niet gebouwd)
+
+Wat Candy Crush en Plants vs Zombies hebben en wij nog niet, in volgorde van effect:
+1. **Een zichtbare reis**: een levelkaart per wereld (kronkelpad met genummerde knopen, jouw
+   pion, sterren per knoop) in plaats van een lijst.
+2. **Steeds iets nieuws**: nieuwe aanwijzingstypen per deel met een "Nieuw!"-kaartje, en twee
+   nieuwe spelelementen: *de leugenaar* (één verklaring is vals: die van de moordenaar) en
+   *de getuige* (één extra aanwijzing op afroep). Vraagt generator-werk (uniciteit).
+3. **Juice**: Zaak Gesloten-ceremonie met stempel-klap, confetti, sterren die één voor één
+   binnenvliegen, scoreteller met bonussen (tijd, geen hint, in één keer), rangbalk die
+   oploopt; deeltjes bij elke plaatsing.
+4. **Personages die praten**: aanwijzingen als verklaringen in de ik-vorm met tekstballon,
+   reactie van de beschuldigde, een mentor (Inspecteur) tussen de zaken.
+5. **Score en XP** als basis voor rang en later Game Center-ranglijsten.
+6. **Muziek per wereld** (loop) plus stingers.
+7. **Onderscheidingen en verzamelingen** (bewijsstukken per opgeloste zaak in een vitrine).
+8. **Dagelijkse beloningskalender** en een wekelijkse zaak met deelbare uitslag.
+
 ## Openstaande punten (volgorde van voorstel)
 
 1. App Store: stappen in `store/CHECKLIST.md` (Apple-account, archiveren, uploaden).

@@ -56,5 +56,5 @@ Eerste versie: vier werelden, dagelijkse zaak, campagne van 96 zaken met een ein
 De app is een offline puzzelspel; er is geen account of login nodig. Bij de eerste start opent een korte begeleide oefenzaak (vier tikken). Daarna: Dagelijkse Zaak of Campagne › Het glas Bordeaux. De knop "Hint" legt de volgende logische stap uit. Er worden geen gegevens verzameld (zie privacyverklaring).
 
 ## Schermafbeeldingen (map `store/screenshots`, 1290×2796 = iPhone 6,7")
-Upload in deze volgorde: 07-board-landhuis, 08-hint, 11-board-piraten, 06-campaign, 09-results-stars, 05-menu, 11-board-ruimte, 11-board-hotel.
+Upload in deze volgorde: 03-bord-landhuis, 04-hint, 06-bord-piraten, 02-campagne, 05-resultaat, 01-menu, 08-bord-ruimte, 07-bord-hotel. (Vernieuwd op 8 sep met de huidige UI: live-feedback op aanwijzingen, mini-plattegronden, rang.)
 iPad wordt niet ondersteund (alleen iPhone), dus geen iPad-schermafbeeldingen nodig.
