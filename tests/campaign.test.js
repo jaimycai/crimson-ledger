@@ -40,7 +40,17 @@ check(Campaign.starsFor(0, 0) === 3 && Campaign.starsFor(0, 2) === 2 && Campaign
 check(Campaign.isUnlocked('landhuis', 0) && !Campaign.isUnlocked('landhuis', 1), 'zonder voortgang: alleen de eerste zaak open');
 check(Campaign.chapterOpen('landhuis') && !Campaign.chapterOpen('landhuis-2') && !Campaign.chapterOpen(Campaign.ARCHIVE), 'zonder voortgang: deel I open, deel II en archief dicht');
 const n1 = Campaign.next('landhuis', 7);
-check(n1 && n1.chapter === 'landhuis-2' && n1.idx === 0 && Campaign.next('landhuis-3', 7) === null && Campaign.next('landhuis', 0).title === 'De verdwenen sleutel' && Campaign.next(Campaign.ARCHIVE, 4).title === 'Dossier 6', 'volgende-zaak-logica: door naar het volgende deel, archief telt door');
+check(n1 && n1.chapter === 'landhuis-2' && n1.idx === 0 && Campaign.next('landhuis-3', 7) === null && Campaign.next('landhuis', 0).title === 'De verdwenen sleutel' && Campaign.next(Campaign.ARCHIVE, 4).title === 'Dossier 9', 'volgende-zaak-logica: door naar het volgende deel, archief telt per wereld door (5 → 9)');
+
+// bewijsstukken, briefings, archief per wereld, wereldhulpjes
+const items = CAMPAIGN.flatMap(ch => ch.cases.map(c => c.item));
+check(items.every(i => i && /^\S+ .+/.test(i)) && new Set(items).size >= 90, `elke zaak heeft een bewijsstuk (icoon + naam), ${new Set(items).size} verschillende`);
+check(CAMPAIGN.every(ch => ch.briefing && ch.briefing.length > 40), 'elk deel heeft een briefing van Van Dam');
+check(Campaign.isUnlocked(Campaign.ARCHIVE, 0) && Campaign.isUnlocked(Campaign.ARCHIVE, 3) && !Campaign.isUnlocked(Campaign.ARCHIVE, 4), 'archief: eerste dossier per wereld open, dossier 5 wacht op dossier 1');
+const af = Campaign.archiveFor('landhuis');
+check(af.length === 2 && af[0].title === 'Dossier 1' && af[1].title === 'Dossier 5' && af.every(c => c.state === 'locked') && af.every(c => c.theme === 'landhuis'), 'archiefpad per wereld: dossiers 1 en 5 voor het landhuis, dicht zolang het archief dicht is');
+check(Campaign.worldTotal('piraten') === 24 && Campaign.worldStars('piraten') === 0 && Campaign.worldDone('piraten') === 0, 'wereldtellers');
+check(Campaign.current('landhuis').title === 'Het glas Bordeaux' && Campaign.current('piraten', false) === null && Campaign.nextOverall(null, 'hotel').title === 'Middernacht', 'huidige zaak per wereld en over alle werelden');
 console.log(`\n(${((Date.now() - t0) / 1000).toFixed(1)}s)`);
 console.log(failures === 0 ? 'ALLE CAMPAGNE CHECKS PASSED' : `${failures} FAILURES`);
 process.exit(failures === 0 ? 0 : 1);

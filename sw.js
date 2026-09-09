@@ -1,8 +1,9 @@
 // Service worker: netwerk-eerst (je ziet altijd de nieuwste versie als je
 // online bent), cache als terugval zodat het spel offline blijft werken.
-const CACHE = 'crimson-ledger-v1';
+const CACHE = 'crimson-ledger-v2';
 const CORE = ['./', './index.html', './style.css', './app.js', './board.js', './floorplan.js', './logic-engine.js',
-              './story.js', './themes.js', './campaign.js', './sound.js', './avatars.js', './manifest.json',
+              './story.js', './themes.js', './campaign.js', './progress.js', './mentor.js', './sound.js', './avatars.js', './manifest.json',
+              './assets/map-landhuis.jpg', './assets/map-piraten.jpg', './assets/map-hotel.jpg', './assets/map-ruimte.jpg', './assets/vandam.jpg', './assets/vandam-sketch.jpg',
               './icon-192.png', './icon-512.png'];
 
 self.addEventListener('install', e => {

@@ -48,7 +48,7 @@ const check = (cond, msg) => { if (cond) console.log('ok  ', msg); else { failur
   check(window.Board.tutorialStep === 2 && !document.getElementById('btn-board-check').disabled, 'board step 2 done, check enabled');
   click('btn-board-check');
   check(document.getElementById('murder-modal').classList.contains('active') && window.Board.tutorialStep === 3, 'murder question in tutorial');
-  document.querySelector('.murder-opt[data-s="1"]').click(); await sleep(350);
+  document.querySelector('.murder-opt[data-s="1"]').click(); await sleep(1100);
   check(active() === 'screen-results', 'board tutorial results screen');
   check(document.getElementById('results-headline').textContent === 'Goed gedaan!', 'board tutorial headline');
   check(document.getElementById('btn-play-again').textContent === 'Naar het hoofdmenu', 'results button text for tutorial');
@@ -177,7 +177,7 @@ const check = (cond, msg) => { if (cond) console.log('ok  ', msg); else { failur
   check(document.getElementById('results-headline').textContent === 'Zaak Gesloten!', 'headline: ' + document.getElementById('results-headline').textContent);
   check(document.getElementById('results-solution').querySelectorAll('.results-solution-row').length === 4, 'solution rows rendered');
   check(document.getElementById('stat-attempts').textContent === '2', 'attempts stat = 2');
-  check(document.getElementById('btn-play-again').textContent === 'Opnieuw Spelen', 'results button text for normal case');
+  check(document.getElementById('btn-play-again').textContent === 'Naar het menu', 'results button text for normal case');
   check(document.getElementById('stat-hints').textContent === '1', 'hints stat = 1');
   check(document.getElementById('streak-count').textContent === '1', 'streak became 1');
   const share = App.generateEmojiGrid();

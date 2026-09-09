@@ -5,7 +5,7 @@ const { JSDOM, VirtualConsole } = loadJsdom();
 const DIR = path.join(__dirname, '..');
 let html = fs.readFileSync(path.join(DIR, 'index.html'), 'utf8');
 html = html.replace(/<script src="([^"]+)"><\/script>/g, (_, src) => `<script>${fs.readFileSync(path.join(DIR, src), 'utf8')}</script>`);
-html = html.replace(/<link[^>]+>/g, '').replace('</body>', '<script>window.App = App; window.Board = Board; window.FloorPlan = FloorPlan; window.Themes = Themes; window.Campaign = Campaign;</script></body>');
+html = html.replace(/<link[^>]+>/g, '').replace('</body>', '<script>window.App = App; window.Board = Board; window.FloorPlan = FloorPlan; window.Themes = Themes; window.Campaign = Campaign; window.Progress = Progress; window.Mentor = Mentor;</script></body>');
 const errors = [];
 const vc = new VirtualConsole(); vc.on('jsdomError', e => errors.push(String(e.message || e)));
 const dom = new JSDOM(html, { runScripts: 'dangerously', pretendToBeVisual: true, url: 'http://localhost:8080/', virtualConsole: vc });
@@ -21,8 +21,15 @@ const active = () => document.querySelector('.screen.active').id;
     await sleep(60);
     const { Board, App, FloorPlan } = window;
 
-    // ── menu: plattegrondzaak is de hoofdknop ──
+    // ── thuisscherm: dagelijkse zaak, weekstrook, zaak van de week, campagne, vrij spel ──
     check(!!document.getElementById('btn-board-daily') && !!document.getElementById('btn-board-start'), 'menu heeft dagelijkse + vrije plattegrondzaak');
+    check(/Zaak van vandaag: /.test(document.getElementById('daily-title').textContent) && /\+150 punten/.test(document.getElementById('daily-bonus').textContent), 'dagelijkse kaart met titel en bonus: ' + document.getElementById('daily-title').textContent);
+    check(document.querySelectorAll('#week-strip .wday').length === 7 && !!document.querySelector('#week-strip .wday.today') && document.querySelectorAll('#week-strip .wday.played').length === 0, 'weekstrook: zeven dagen, vandaag gemarkeerd, nog niets gespeeld');
+    check(document.getElementById('week-title').textContent.length > 5 && document.getElementById('btn-week').textContent === 'Start' && document.getElementById('btn-week-share').hidden, 'zaak van de week klaar om te starten: ' + document.getElementById('week-title').textContent);
+    check(document.getElementById('campaign-next').textContent === 'Deel I · Zaak 1' && document.getElementById('campaign-icon').textContent === '🏚️', 'campagnekaart wijst naar de eerste zaak');
+    document.getElementById('btn-free').click(); await sleep(300);
+    check(active() === 'screen-free', 'vrij spelen opent een eigen scherm');
+    document.getElementById('btn-free-back').click(); await sleep(300);
     check(document.getElementById('board-stats').textContent.includes('Nog geen'), 'voortgang start leeg: ' + document.getElementById('board-stats').textContent);
     check(document.getElementById('menu-rank').textContent.includes('Rekruut') && document.getElementById('menu-rank').textContent.includes('tot Speurder'), 'rang start als Rekruut: ' + document.getElementById('menu-rank').textContent);
 
@@ -67,6 +74,18 @@ const active = () => document.querySelector('.screen.active').id;
     check(!!document.querySelector('#board-grid .bvictim'), 'slachtoffer staat op de kaart');
     check(document.querySelectorAll('.bclue').length === p.clues.length && p.clues.length >= 4, `${p.clues.length} aanwijzingskaarten met nummer`);
     check(document.querySelectorAll('.bclue-num').length === p.clues.length, 'kaarten genummerd');
+    // verklaringen: naam + tekst in de ik-vorm, portret van de spreker, inspecteur bij een lege kamer
+    const firstClue = document.querySelector('.bclue[data-clue="0"]');
+    check(firstClue.querySelector('.bclue-name').textContent.length > 1 && /^(Ik |Volgens|.+ en ik )/.test(firstClue.querySelector('.bclue-text').textContent.trim()), 'verklaring in de ik-vorm: ' + firstClue.querySelector('.bclue-name').textContent + ': ' + firstClue.querySelector('.bclue-text').textContent.trim());
+    const ei = p.clues.findIndex(c => c.kind === 'empty-room');
+    check(ei === -1 || !!document.querySelector(`.bclue[data-clue="${ei}"] .bclue-mentor img`), 'lege kamer wordt door de inspecteur voorgelezen');
+    const pi = p.clues.findIndex(c => c.a !== undefined);
+    check(pi === -1 || document.querySelectorAll(`.bclue[data-clue="${pi}"] .bclue-pair .bclue-ava`).length === 2, 'verklaring over twee personen toont twee portretten');
+    // "Nieuw!"-uitleg: één kaart, verdwijnt na Begrepen en komt niet terug
+    check(!!document.getElementById('newclue') && !!Board.newIntro, 'eerste zaak: "Nieuw in dit deel"-kaart bij de verklaringen: ' + (Board.newIntro && Board.newIntro.title));
+    const introId = Board.newIntro.id;
+    document.getElementById('btn-newclue-ok').click();
+    check(!document.getElementById('newclue') && JSON.parse(App.storageGet('crimson-newclue-seen')).includes(introId), 'Begrepen sluit de uitleg en onthoudt dat');
     check(!document.getElementById('board-tip').hidden, 'eerste keer: tip zichtbaar');
     document.getElementById('btn-board-tip-close').click();
     check(document.getElementById('board-tip').hidden, 'tip sluit en onthoudt dat');
@@ -102,7 +121,7 @@ const active = () => document.querySelector('.screen.active').id;
     check(document.querySelector('.sus-chip[data-s="0"]').classList.contains('placed'), 'kiezer toont geplaatst');
     // live feedback: goed geplaatst = geen rode kaart, kloppende aanwijzingen krijgen een vinkje
     const okNow = p.clues.filter(c => FloorPlan.holds(c, Board.placements, p) === true).length;
-    check(document.querySelectorAll('.bclue.bad').length === 0 && document.querySelectorAll('.bclue.ok').length === okNow, `live-status: ${okNow} kloppende aanwijzing(en) groen, geen rode`);
+    check(document.querySelectorAll('.bclue.bad').length === 0 && document.querySelectorAll('.bclue.ok').length === okNow && document.querySelectorAll('.bclue-state.ok').length === okNow, `live-status: ${okNow} kloppende verklaring(en) groen met "Klopt", geen rode`);
 
     // ── lerende hint: legt uit, plaatst niets ──
     const placedBefore = Board.placements.filter(Boolean).length;
@@ -136,13 +155,29 @@ const active = () => document.querySelector('.screen.active').id;
     document.getElementById('btn-board-check').click();
     check(document.getElementById('murder-modal').classList.contains('active'), 'moordenaarsvraag verschijnt');
     check(document.querySelectorAll('.murder-opt').length === p.suspects.length, 'alle verdachten als optie');
-    const wrongOpt = document.querySelector(`.murder-opt[data-s="${(p.murderer + 1) % p.suspects.length}"]`);
+    check(document.querySelectorAll('.accuse-ava').length === p.suspects.length && document.getElementById('murder-reaction').hidden, 'beschuldiging: portretten op een rij, nog geen reactie');
+    const wrongS = (p.murderer + 1) % p.suspects.length;
+    const wrongOpt = document.querySelector(`.murder-opt[data-s="${wrongS}"]`);
     wrongOpt.click();
     check(Board.attempts === 2 && document.getElementById('murder-modal').classList.contains('active'), 'foute moordenaar: poging geteld, vraag blijft');
+    const react = document.getElementById('murder-reaction');
+    check(!react.hidden && react.classList.contains('wrong') && react.textContent.includes(p.suspects[wrongS].label), 'de verkeerde ontkent: ' + react.textContent.trim());
     document.querySelector(`.murder-opt[data-s="${p.murderer}"]`).click();
-    await sleep(300);
+    check(react.classList.contains('right') && react.textContent.includes(p.suspects[p.murderer].label) && !Board.solved, 'de dader bekent, resultaat volgt even later: ' + react.textContent.trim());
+    await sleep(1100);
     check(Board.solved && active() === 'screen-results', 'juiste moordenaar → resultaatscherm');
-    check(document.getElementById('results-headline').textContent === 'Zaak Gesloten!', 'kop');
+    check(document.getElementById('results-headline').textContent === 'Zaak Opgelost!', 'kop');
+    // ceremonie: stempel, sterren, score, rang, opmerking van Van Dam
+    check(!document.getElementById('results-panel').hidden && document.querySelectorAll('#score-rows .score-row').length === 4 && /Basis/.test(document.getElementById('score-rows').textContent), 'scorepaneel met vier regels');
+    check(Board.cerTimers.length > 0, 'ceremonie loopt');
+    document.getElementById('screen-results').click();
+    check(Board.cerTimers.length === 0 && document.querySelectorAll('#screen-results .pending').length === 0, 'tik slaat de ceremonie over: alles zichtbaar');
+    const tot = +document.getElementById('score-total').dataset.v;
+    check(tot === Board.score.total && tot >= 500 && document.getElementById('score-total').textContent === `${tot} punten` && window.Progress.points() === tot, `punten: ${tot}, opgeteld bij het totaal`);
+    check(/Van Dam merkt op/.test(document.getElementById('results-mentor').textContent) && /Rekruut|Speurder|Rechercheur/.test(document.getElementById('results-mentor').textContent), 'Van Dam merkt iets op: ' + document.getElementById('results-mentor').querySelector('p').textContent);
+    check(/Rechercheur/.test(document.getElementById('results-rank').textContent) && document.querySelector('#results-rank .rank-bar i').style.width === '29%', 'rangbalk op het resultaat: ' + document.getElementById('results-rank').textContent);
+    check(Board.medalsWon.some(m => m.id === 'eerste-zaak') && document.getElementById('medal-toast').classList.contains('show') && /Eerste zaak/.test(document.getElementById('medal-toast-text').textContent), 'onderscheiding "Eerste zaak" met toast');
+    check(document.querySelectorAll('.results-solution-ava').length === p.suspects.length, 'portretten bij "waar iedereen stond"');
     check(!document.getElementById('btn-next-case').hidden && document.getElementById('btn-next-case').textContent.includes('Nog een zaak'), 'vrij spel biedt meteen een volgende zaak aan');
     check(document.getElementById('results-verdict').textContent.includes(p.suspects[p.murderer].label), 'verdict noemt de moordenaar');
     check(document.querySelectorAll('.results-solution-row').length === p.suspects.length, 'oplossing per verdachte');
@@ -164,9 +199,23 @@ const active = () => document.querySelector('.screen.active').id;
     const d = Board.puzzle;
     d.solution.forEach((c, i) => { Board.placements[i] = { x: c.x, y: c.y }; }); Board.after();
     document.getElementById('btn-board-check').click();
-    document.querySelector(`.murder-opt[data-s="${d.murderer}"]`).click(); await sleep(300);
+    document.querySelector(`.murder-opt[data-s="${d.murderer}"]`).click(); await sleep(1100);
     check(document.getElementById('streak-count').textContent === '1', 'streak = 1 na dagelijkse zaak');
     check(document.getElementById('board-daily-date').textContent.includes('opgelost'), 'menu toont: vandaag opgelost');
+    check(document.querySelectorAll('#week-strip .wday.played').length === 1 && document.querySelector('#week-strip .wday.today').classList.contains('played'), 'weekstrook: vandaag afgevinkt');
+    check(/Dagelijkse zaak/.test(document.getElementById('score-rows').textContent) && document.getElementById('daily-bonus').textContent.includes('opgelost') && document.getElementById('btn-board-daily').textContent === 'Nog een zaak', 'dagelijkse bonus geteld, kaart toont opgelost');
+
+    // ── zaak van de week ──
+    document.getElementById('btn-play-again').click(); await sleep(300);
+    document.getElementById('btn-week').click(); await sleep(300);
+    check(active() === 'screen-board' && Board.isWeekly && Board.difficulty === 'moeilijk' && /Week \d+/.test(document.getElementById('board-diff-tag').textContent), 'zaak van de week gestart: ' + document.getElementById('board-diff-tag').textContent);
+    const wk = Board.puzzle;
+    wk.solution.forEach((c, i) => { Board.placements[i] = { x: c.x, y: c.y }; }); Board.after();
+    document.getElementById('btn-board-check').click();
+    document.querySelector(`.murder-opt[data-s="${wk.murderer}"]`).click(); await sleep(1100);
+    check(active() === 'screen-results' && /Zaak van de week/.test(document.getElementById('score-rows').textContent), 'weekzaak opgelost met bonus');
+    check(window.Progress.weekDone() && document.getElementById('btn-week').textContent === 'Nog eens' && !document.getElementById('btn-week-share').hidden, 'weekkaart toont opgelost + delen');
+    check(Board.medalsWon.some(m => m.id === 'weekzaak'), 'onderscheiding "Zaak van de week"');
 
     // ── oefenzaak op het bord ──
     document.getElementById('btn-tutorial').click(); await sleep(300);
@@ -181,32 +230,60 @@ const active = () => document.querySelector('.screen.active').id;
     check(Board.tutorialStep === 2 && /Controleer/.test(document.getElementById('board-coach-text').textContent), 'stap 2 klaar → controleer');
     document.getElementById('btn-board-check').click();
     check(document.getElementById('murder-modal').classList.contains('active') && /Marcus/.test(document.getElementById('murder-question').textContent), 'moordenaarsvraag met uitleg');
-    document.querySelector('.murder-opt[data-s="1"]').click(); await sleep(300);
-    check(active() === 'screen-results' && document.getElementById('results-headline').textContent === 'Goed gedaan!', 'oefenzaak afgerond');
+    document.querySelector('.murder-opt[data-s="1"]').click(); await sleep(1100);
+    check(active() === 'screen-results' && document.getElementById('results-headline').textContent === 'Goed gedaan!' && document.getElementById('results-panel').hidden, 'oefenzaak afgerond, zonder scorepaneel');
     check(App.storageGet('crimson-board-tutorial-done') === '1' && !Board.isTutorial, 'oefenzaak gemarkeerd als gedaan');
-    check(Board.loadStats().solved === 11, 'oefenzaak telt niet mee als opgeloste zaak (blijft 11: 9 voorgeladen + vrij spel + dagelijks)');
+    check(Board.loadStats().solved === 12, 'oefenzaak telt niet mee als opgeloste zaak (blijft 12: 9 voorgeladen + vrij spel + dagelijks + weekzaak)');
 
-    // ── campagne ──
+    // ── campagne: wereldkaart ──
     document.getElementById('btn-campaign').click(); await sleep(300);
-    check(active() === 'screen-campaign', 'campagnescherm opent');
-    check(document.querySelectorAll('.chapter').length === 13 && document.querySelectorAll('.case-card').length === 99, `12 delen + archief, 96 zaken + 3 dossiers (${document.querySelectorAll('.chapter').length} secties, ${document.querySelectorAll('.case-card').length} kaarten)`);
-    check(document.querySelector('.case-card[data-chapter="landhuis-2"][data-idx="0"]').classList.contains('locked') && document.querySelector('.case-card[data-chapter="archief"][data-idx="0"]').classList.contains('locked'), 'deel II en archief nog dicht');
-    check(!document.querySelector('.case-card[data-chapter="landhuis"][data-idx="0"]').classList.contains('locked') &&
-          document.querySelector('.case-card[data-chapter="landhuis"][data-idx="1"]').classList.contains('locked'), 'zaak 1 open, zaak 2 nog dicht');
-    document.querySelector('.case-card[data-chapter="landhuis"][data-idx="0"]').click(); await sleep(300);
+    check(active() === 'screen-campaign' && App.mapWorld === 'landhuis', 'wereldkaart opent bij het landhuis');
+    check(document.querySelectorAll('.world-tab').length === 4 && document.querySelector('.world-tab.active').dataset.theme === 'landhuis' && document.querySelectorAll('.world-tab small').length === 0, 'vier werelden in de kiezer, alles open na 12 zaken');
+    check(document.querySelectorAll('.mnode').length === 26 && document.querySelectorAll('.msign').length === 4, `24 knopen + 2 archiefdossiers, 4 wegwijzers (${document.querySelectorAll('.mnode').length} knopen)`);
+    check(document.getElementById('campaign-total').textContent === '★ 0/72' && /Het Landhuis/.test(document.getElementById('map-title').textContent), 'kop: wereld en sterren');
+    const node = (ch, i) => document.querySelector(`.mnode[data-chapter="${ch}"][data-idx="${i}"]`);
+    check(node('landhuis', 0).classList.contains('open') && !!node('landhuis', 0).querySelector('.mnode-pin') && node('landhuis', 1).classList.contains('locked') && node('landhuis-2', 0).classList.contains('locked') && node('archief', 0).classList.contains('locked'), 'zaak 1 open met pion, zaak 2, deel II en archief dicht');
+    check(/Speel zaak 1 · Het glas Bordeaux/.test(document.getElementById('btn-map-play').textContent) && !document.getElementById('btn-map-play').disabled, 'grote knop: ' + document.getElementById('btn-map-play').textContent);
+    check(!!document.querySelector('.map-path path') && document.getElementById('map-scroll').style.backgroundImage.includes('map-landhuis'), 'pad getekend op de achtergrond van de wereld');
+    node('landhuis', 1).click();
+    check(!document.getElementById('map-pop').hidden && /Los eerst zaak 1 op/.test(document.getElementById('map-pop').textContent) && !document.getElementById('btn-pop-play'), 'dichte knoop legt uit wat er eerst moet');
+    document.querySelector('.world-tab[data-theme="ruimte"]').click();
+    check(App.mapWorld === 'ruimte' && /Station Orion/.test(document.getElementById('map-title').textContent) && document.getElementById('map-scroll').style.backgroundImage.includes('map-ruimte'), 'wereld wisselen');
+    document.querySelector('.world-tab[data-theme="landhuis"]').click();
+    node('landhuis', 0).click();
+    check(/Zaak 1: Het glas Bordeaux/.test(document.getElementById('map-pop').textContent) && /Makkelijk/.test(document.getElementById('map-pop').textContent) && /☆☆☆/.test(document.getElementById('map-pop').textContent), 'open knoop: titel, niveau, beste score');
+    document.getElementById('btn-pop-play').click(); await sleep(300);
+    // eerste zaak van een deel: eerst "Nieuw deel", dan de briefing van Van Dam
+    check(document.getElementById('part-modal').classList.contains('active') && document.getElementById('part-title').textContent === 'Deel I · Het diner' && active() !== 'screen-board', '"Nieuw deel"-splash voor deel I');
+    document.getElementById('btn-part-go').click(); await sleep(300);
     check(active() === 'screen-board' && Board.campaignCase && Board.campaignCase.title === 'Het glas Bordeaux', 'campagnezaak 1 gestart');
+    check(document.getElementById('briefing-modal').classList.contains('active') && /Deel I · Zaak 1/.test(document.getElementById('briefing-sub').textContent) && /toost/.test(document.getElementById('briefing-text').textContent) && Board.timerId === null, 'briefing van Van Dam, klok staat stil');
+    document.getElementById('btn-briefing-go').click();
+    check(!document.getElementById('briefing-modal').classList.contains('active') && Board.timerId !== null, 'Aan de slag: klok loopt');
     check(document.getElementById('board-casetext').textContent.includes('toost'), 'verhaaltje in de zaaktekst');
     const cp = Board.puzzle;
     cp.solution.forEach((c, i) => { Board.placements[i] = { x: c.x, y: c.y }; }); Board.after();
     document.getElementById('btn-board-check').click();
-    document.querySelector(`.murder-opt[data-s="${cp.murderer}"]`).click(); await sleep(300);
-    check(active() === 'screen-results' && !document.getElementById('results-stars').hidden && document.querySelector('.stars').textContent === '★★★', 'drie sterren zonder hint en in één keer');
-    check(!document.getElementById('btn-next-case').hidden && /De verdwenen sleutel/.test(document.getElementById('btn-next-case').textContent), 'volgende-zaak-knop');
+    document.querySelector(`.murder-opt[data-s="${cp.murderer}"]`).click(); await sleep(1100);
+    Board.skipCeremony();
+    check(active() === 'screen-results' && [...document.querySelectorAll('.rstar')].map(s => s.textContent).join('') === '★★★', 'drie sterren zonder hint en in één keer');
+    check(!document.getElementById('btn-next-case').hidden && /De verdwenen sleutel/.test(document.getElementById('btn-next-case').textContent) && !document.getElementById('btn-map').hidden, 'volgende-zaak-knop en "Naar de kaart"');
     check(window.Campaign.stars('landhuis', 0) === 3 && window.Campaign.isUnlocked('landhuis', 1), 'voortgang bewaard, zaak 2 open');
-    document.getElementById('btn-next-case').click(); await sleep(300);
-    check(active() === 'screen-board' && Board.campaignCase.idx === 1, 'volgende zaak start direct');
+    document.getElementById('btn-map').click(); await sleep(300);
+    check(active() === 'screen-campaign' && node('landhuis', 0).classList.contains('done') && node('landhuis', 0).querySelector('.mnode-stars').textContent === '★★★' && node('landhuis', 1).classList.contains('open') && document.getElementById('campaign-total').textContent === '★ 3/72', 'kaart bijgewerkt: zaak 1 klaar met drie sterren, zaak 2 open');
+    document.getElementById('btn-map-play').click(); await sleep(300);
+    check(active() === 'screen-board' && Board.campaignCase.idx === 1 && !document.getElementById('part-modal').classList.contains('active') && document.getElementById('briefing-modal').classList.contains('active'), 'grote knop start zaak 2 met briefing, zonder deel-splash');
+    document.getElementById('btn-briefing-go').click();
     Board.stopTimer(); App.navigateTo('menu'); await sleep(300);
-    check(document.getElementById('campaign-progress').textContent.startsWith('1 van 96'), 'menu toont campagnevoortgang');
+    check(document.getElementById('campaign-progress').textContent.startsWith('1 van 96') && document.getElementById('campaign-next').textContent === 'Deel I · Zaak 2', 'menu toont campagnevoortgang en de volgende zaak');
+
+    // ── vitrine & bureau ──
+    document.getElementById('btn-awards').click(); await sleep(300);
+    check(active() === 'screen-awards' && document.querySelectorAll('.medal').length === window.Progress.MEDALS.length && document.querySelectorAll('.medal.got').length >= 2, `vitrine: ${document.querySelectorAll('.medal.got').length} van ${document.querySelectorAll('.medal').length} medailles behaald`);
+    check(/punten/.test(document.getElementById('awards-points').textContent) && document.getElementById('medal-count').textContent === String(document.querySelectorAll('.medal.got').length), 'punten en medailleteller in de kop');
+    document.querySelector('.awards-tab[data-tab="vitrine"]').click();
+    check(!document.getElementById('awards-vitrine').hidden && document.getElementById('awards-medals').hidden && document.querySelectorAll('.shelf').length === 4 && document.querySelectorAll('.ev').length === 96 && document.querySelectorAll('.ev:not(.miss)').length === 1 && /Wijnglas/.test(document.querySelector('.ev:not(.miss)').textContent), 'vitrine: vier planken, 96 plekken, het wijnglas staat erin');
+    document.getElementById('btn-awards-back').click(); await sleep(300);
 
     // ── geluid ──
     const sb = document.getElementById('btn-sound');
@@ -220,7 +297,7 @@ const active = () => document.querySelector('.screen.active').id;
     check(document.getElementById('settings-modal').classList.contains('active'), 'instellingen openen');
     const rb = document.getElementById('btn-reset-progress');
     rb.click(); check(/Zeker/.test(rb.textContent) && (Board.loadStats().solved || 0) > 0, 'eerste tik vraagt bevestiging, wist nog niets');
-    rb.click(); check((Board.loadStats().solved || 0) === 0 && document.getElementById('streak-count').textContent === '0' && window.Campaign.doneCount() === 0, 'tweede tik wist alle voortgang');
+    rb.click(); check((Board.loadStats().solved || 0) === 0 && document.getElementById('streak-count').textContent === '0' && window.Campaign.doneCount() === 0 && window.Progress.points() === 0 && window.Progress.medalCount() === 0, 'tweede tik wist alle voortgang, ook punten en medailles');
     check(document.querySelectorAll('.theme-card.locked').length === 3, 'thema-sloten weer dicht na wissen');
     document.getElementById('btn-close-settings').click();
     check(fs.existsSync(path.join(DIR, 'privacy.html')) && fs.existsSync(path.join(DIR, 'support.html')) && fs.existsSync(path.join(DIR, 'icon-1024.png')), 'privacy, support en 1024-icoon aanwezig');

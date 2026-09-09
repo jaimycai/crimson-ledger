@@ -5,7 +5,8 @@
   "description": "Crimson Ledger — moordmysterie-puzzels op een plattegrond (Nederlands)",
   "scripts": {
     "start": "python3 -m http.server 8080",
-    "test": "node tests/engine.test.js && node tests/floorplan.test.js && node tests/campaign.test.js && node tests/e2e.test.js && node tests/board.test.js",
+    "test": "node tests/engine.test.js && node tests/floorplan.test.js && node tests/campaign.test.js && node tests/progress.test.js && node tests/e2e.test.js && node tests/board.test.js",
+    "test:progress": "node tests/progress.test.js",
     "test:engine": "node tests/engine.test.js",
     "test:e2e": "node tests/e2e.test.js",
     "test:floorplan": "node tests/floorplan.test.js",

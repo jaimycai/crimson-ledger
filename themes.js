@@ -7,7 +7,8 @@
 
 const THEMES = [
   {
-    id: 'landhuis', unlock: 0, icon: '🏚️', title: 'Het Landhuis', tagline: 'Een diner, een glas Bordeaux, en een gastheer die niet meer opstaat.',
+    id: 'landhuis', unlock: 0, icon: '🏚️', title: 'Het Landhuis', short: 'Landhuis',
+    map: { accent: '#8B2E1C', ring: '#B8955C', file: 'assets/map-landhuis.jpg' }, tagline: 'Een diner, een glas Bordeaux, en een gastheer die niet meer opstaat.',
     intro: 'Landgoed Blackwood, 1927. Na het diner blijft de gastheer in zijn stoel zitten. Het glas is leeg, het huis vol geheimen.',
     victimName: 'Dr. Edward Blackwood', roomWord: 'kamer', roomWordPlural: 'kamers', floor: 'checker',
     rooms: [
@@ -35,7 +36,8 @@ const THEMES = [
     outro: 'De geheimen van Landgoed Blackwood liggen op tafel. De moordenaar is gepakt.'
   },
   {
-    id: 'piraten', unlock: 2, icon: '🏴‍☠️', title: 'Het Piratenschip', tagline: 'De kapitein is dood en niemand verlaat het schip.',
+    id: 'piraten', unlock: 2, icon: '🏴‍☠️', title: 'Het Piratenschip', short: 'Piratenschip',
+    map: { accent: '#B8762E', ring: '#D9A066', file: 'assets/map-piraten.jpg' }, tagline: 'De kapitein is dood en niemand verlaat het schip.',
     intro: 'De Zwarte Meeuw ligt stil op een spiegelgladde zee. Kapitein Zwartoog reageert niet meer op geroep. De bemanning kijkt elkaar aan.',
     victimName: 'Kapitein Zwartoog', roomWord: 'ruimte', roomWordPlural: 'ruimtes', floor: 'planks',
     rooms: [
@@ -62,7 +64,8 @@ const THEMES = [
     outro: 'De Zwarte Meeuw hijst de zeilen. De moordenaar zit in de brig.'
   },
   {
-    id: 'hotel', unlock: 5, icon: '🏨', title: 'Grand Hotel Aurora', tagline: 'Om middernacht viel het licht uit.',
+    id: 'hotel', unlock: 5, icon: '🏨', title: 'Grand Hotel Aurora', short: 'Grand Hotel',
+    map: { accent: '#B9707A', ring: '#E3B7B0', file: 'assets/map-hotel.jpg' }, tagline: 'Om middernacht viel het licht uit.',
     intro: 'Nieuwjaarsnacht in Grand Hotel Aurora. Om klokslag twaalf ging het licht uit. Toen het terugkwam, lag de eigenaar op de marmeren vloer.',
     victimName: 'Hoteleigenaar Valentijn Aurora', roomWord: 'ruimte', roomWordPlural: 'ruimtes', floor: 'marble',
     rooms: [
@@ -90,7 +93,8 @@ const THEMES = [
     outro: 'Het orkest speelt weer. De moordenaar wordt door de politie de lobby uit begeleid.'
   },
   {
-    id: 'ruimte', unlock: 9, icon: '🚀', title: 'Station Orion', tagline: 'De sluizen zijn dicht. Iedereen is nog aan boord.',
+    id: 'ruimte', unlock: 9, icon: '🚀', title: 'Station Orion', short: 'Station Orion',
+    map: { accent: '#4A6B8A', ring: '#5FC9C9', file: 'assets/map-ruimte.jpg' }, tagline: 'De sluizen zijn dicht. Iedereen is nog aan boord.',
     intro: 'Ruimtestation Orion, 2189. De commandant meldt zich niet voor haar dienst. Alle luchtsluizen zijn vergrendeld: de dader is nog aan boord.',
     victimName: 'Commandant Ilse Varga', roomWord: 'module', roomWordPlural: 'modules', floor: 'grid',
     rooms: [

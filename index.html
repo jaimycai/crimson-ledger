@@ -32,36 +32,85 @@
     <!-- ═══════ SCHERM 2: HOOFDMENU ═══════ -->
     <section id="screen-menu" class="screen">
       <div class="menu-brand">
-        <span class="menu-logo">🔍</span>
         <h2 class="menu-title">Crimson Ledger</h2>
+        <button type="button" class="icon-btn" id="btn-settings" aria-label="Instellingen">⚙️</button>
       </div>
+      <button type="button" class="menu-rank" id="menu-rank" aria-label="Rang en onderscheidingen"></button>
 
-      <div class="menu-section">
-        <button class="btn btn-primary btn-block menu-daily-btn" id="btn-board-daily">
-          <span class="menu-daily-icon">🏠</span>
-          <div class="menu-daily-text">
-            <span class="menu-daily-label">Dagelijkse Zaak</span>
-            <span class="menu-daily-sub" id="board-daily-date"></span>
-          </div>
-        </button>
-        <div class="menu-streak" id="menu-streak">
-          <span>🔥</span> <span id="streak-count">0</span> dagen streak
+      <div class="home-card daily-card">
+        <span class="ribbon">Dagelijkse zaak</span>
+        <h3 class="home-card-title" id="daily-title">Zaak van vandaag</h3>
+        <p class="home-card-text" id="daily-text"></p>
+        <div class="home-card-row">
+          <span class="bonus-pill" id="daily-bonus">🪙 +150 punten</span>
+          <span class="home-card-sub" id="board-daily-date"></span>
+          <button type="button" class="btn btn-primary btn-sm" id="btn-board-daily">Speel</button>
         </div>
-        <div class="menu-stats" id="board-stats"></div>
-        <div class="menu-rank" id="menu-rank"></div>
-        <button class="btn btn-secondary btn-block menu-campaign-btn" id="btn-campaign">
-          <span class="menu-daily-icon">📖</span>
-          <div class="menu-daily-text">
-            <span class="menu-daily-label">Campagne</span>
-            <span class="menu-daily-sub" id="campaign-progress"></span>
-          </div>
-        </button>
       </div>
 
-      <div class="menu-divider"><span>of kies vrij spel</span></div>
+      <div class="home-card streak-card" id="menu-streak">
+        <div class="streak-head">
+          <span class="streak-title">🔥 <span id="streak-count">0</span> dagen streak</span>
+          <span class="streak-note" id="streak-note">Speel vandaag om je streak te houden</span>
+        </div>
+        <div class="week-strip" id="week-strip"></div>
+      </div>
 
-      <div class="menu-section">
-        <span class="label">Thema</span>
+      <div class="home-card week-card">
+        <span class="ribbon ribbon-gold">Zaak van de week</span>
+        <h3 class="home-card-title" id="week-title"></h3>
+        <p class="home-card-text" id="week-text"></p>
+        <div class="home-card-row">
+          <span class="bonus-pill" id="week-bonus">🪙 +300 punten</span>
+          <button type="button" class="btn btn-ghost btn-sm" id="btn-week-share" hidden>📤 Deel resultaat</button>
+          <button type="button" class="btn btn-dark btn-sm" id="btn-week">Start</button>
+        </div>
+      </div>
+
+      <button type="button" class="home-card nav-card" id="btn-campaign">
+        <span class="nav-icon" id="campaign-icon">📖</span>
+        <span class="nav-body">
+          <span class="nav-label">Verder met de campagne:</span>
+          <span class="nav-title" id="campaign-next">Deel I · Zaak 1</span>
+          <span class="nav-sub" id="campaign-progress"></span>
+        </span>
+        <span class="nav-chev">›</span>
+      </button>
+      <button type="button" class="home-card nav-card" id="btn-free">
+        <span class="nav-icon">🎲</span>
+        <span class="nav-body">
+          <span class="nav-title">Vrij spelen</span>
+          <span class="nav-sub nav-sub-muted">Kies zelf de wereld en het niveau</span>
+        </span>
+        <span class="nav-chev">›</span>
+      </button>
+      <div class="menu-stats" id="board-stats"></div>
+
+      <details class="menu-classic">
+        <summary>Klassiek deductieraster</summary>
+        <div class="menu-classic-body">
+          <button class="btn btn-ghost btn-sm" id="btn-daily">📅 Dagelijkse rasterzaak · <span id="daily-date"></span></button>
+          <button class="btn btn-ghost btn-sm" id="btn-freeplay">Vrij spel (raster)</button>
+          <button class="btn btn-ghost btn-sm" id="btn-grid-tutorial">🎓 Raster-oefenzaak</button>
+        </div>
+      </details>
+
+      <div class="menu-footer">
+        <button class="btn btn-ghost btn-sm" id="btn-how">Hoe werkt het?</button>
+        <button class="btn btn-ghost btn-sm" id="btn-tutorial">🎓 Oefenzaak</button>
+        <button class="btn btn-ghost btn-sm" id="btn-awards">🏅 Vitrine</button>
+        <button class="btn btn-ghost btn-sm" id="btn-sound">🔊 Geluid aan</button>
+      </div>
+    </section>
+
+    <!-- ═══════ SCHERM 2b: VRIJ SPELEN ═══════ -->
+    <section id="screen-free" class="screen">
+      <div class="board-topbar">
+        <button class="back-btn back-btn-sm" id="btn-free-back">←</button>
+        <span class="campaign-title">🎲 Vrij spelen</span>
+      </div>
+      <div class="free-body">
+        <span class="label">Wereld</span>
         <div class="theme-picker" id="theme-picker"></div>
         <span class="label">Moeilijkheidsgraad</span>
         <div class="difficulty-selector" id="difficulty-selector">
@@ -84,23 +133,8 @@
             <span class="difficulty-meta" data-meta="moeilijk"></span>
           </button>
         </div>
-        <button class="btn btn-secondary btn-block" id="btn-board-start">Start Plattegrondzaak</button>
-      </div>
-
-      <details class="menu-classic">
-        <summary>Klassiek deductieraster</summary>
-        <div class="menu-classic-body">
-          <button class="btn btn-ghost btn-sm" id="btn-daily">📅 Dagelijkse rasterzaak · <span id="daily-date"></span></button>
-          <button class="btn btn-ghost btn-sm" id="btn-freeplay">Vrij spel (raster)</button>
-          <button class="btn btn-ghost btn-sm" id="btn-grid-tutorial">🎓 Raster-oefenzaak</button>
-        </div>
-      </details>
-
-      <div class="menu-footer">
-        <button class="btn btn-ghost btn-sm" id="btn-how">Hoe werkt het?</button>
-        <button class="btn btn-ghost btn-sm" id="btn-tutorial">🎓 Oefenzaak</button>
-        <button class="btn btn-ghost btn-sm" id="btn-sound">🔊 Geluid aan</button>
-        <button class="btn btn-ghost btn-sm" id="btn-settings">⚙️ Instellingen</button>
+        <button class="btn btn-primary btn-block" id="btn-board-start">Start zaak</button>
+        <p class="free-note">Vrij spel telt mee voor je rang en punten, niet voor de campagnesterren.</p>
       </div>
     </section>
 
@@ -164,14 +198,34 @@
     </section>
 
 
-    <!-- ═══════ SCHERM 7: CAMPAGNE ═══════ -->
+    <!-- ═══════ SCHERM 7: WERELDKAART (campagne) ═══════ -->
     <section id="screen-campaign" class="screen">
-      <div class="board-topbar">
+      <div class="map-topbar">
         <button class="back-btn back-btn-sm" id="btn-campaign-back">←</button>
-        <span class="campaign-title">📖 Campagne</span>
-        <span class="board-case" id="campaign-total"></span>
+        <span class="map-title" id="map-title"></span>
+        <span class="map-stars" id="campaign-total"></span>
       </div>
-      <div class="campaign-list" id="campaign-list"></div>
+      <div class="world-tabs" id="world-tabs"></div>
+      <div class="map-scroll" id="map-scroll">
+        <div class="map-canvas" id="map-canvas"></div>
+      </div>
+      <div class="map-pop" id="map-pop" hidden></div>
+      <div class="map-footer"><button type="button" class="btn btn-primary btn-block" id="btn-map-play"></button></div>
+    </section>
+
+    <!-- ═══════ SCHERM 8: VITRINE & BUREAU ═══════ -->
+    <section id="screen-awards" class="screen">
+      <div class="map-topbar">
+        <button class="back-btn back-btn-sm" id="btn-awards-back">←</button>
+        <span class="map-title">Vitrine &amp; Bureau</span>
+        <span class="map-stars" id="awards-points"></span>
+      </div>
+      <div class="awards-tabs">
+        <button type="button" class="awards-tab active" data-tab="medals">Onderscheidingen <b id="medal-count">0</b></button>
+        <button type="button" class="awards-tab" data-tab="vitrine">Vitrine</button>
+      </div>
+      <div class="awards-body" id="awards-medals"></div>
+      <div class="awards-body" id="awards-vitrine" hidden></div>
     </section>
 
     <!-- ═══════ SCHERM 6: PLATTEGRONDZAAK ═══════ -->
@@ -223,50 +277,47 @@
       </div>
     </section>
 
-    <!-- ═══════ SCHERM 5: RESULTATEN ═══════ -->
+    <!-- ═══════ SCHERM 5: ZAAK GESLOTEN ═══════ -->
     <section id="screen-results" class="screen">
-      <div class="results-stamp" id="results-stamp">
-        <span class="results-stamp-icon" id="results-icon">🔒</span>
-        <span class="results-stamp-text">Zaak Gesloten</span>
-      </div>
+      <div class="confetti" id="confetti" aria-hidden="true"></div>
       <div class="results-header">
         <h2 id="results-headline">Zaak Opgelost!</h2>
         <p class="results-verdict" id="results-verdict"></p>
       </div>
-      <p id="results-description" style="font-size:0.9rem"></p>
+
+      <div class="results-panel" id="results-panel">
+        <div class="results-panel-top">
+          <div class="results-stamp" id="results-stamp">
+            <span class="results-stamp-icon" id="results-icon" hidden>✓</span>
+            <span class="results-stamp-text">Zaak Gesloten</span>
+          </div>
+          <div class="results-stars" id="results-stars"></div>
+        </div>
+        <div class="score-rows" id="score-rows"></div>
+        <div class="score-total pending" id="score-total-row"><span>Totaal</span><b id="score-total">0 punten</b></div>
+        <div class="results-rank pending" id="results-rank"></div>
+      </div>
+
+      <div class="mentor-remark" id="results-mentor" hidden></div>
+      <p class="results-description" id="results-description"></p>
 
       <!-- Oplossing -->
       <div class="results-solution" id="results-solution"></div>
 
       <!-- Statistieken -->
-      <div class="results-stats">
-        <div class="divider"></div>
-        <span class="label">Jouw Prestatie</span>
-        <div class="stat-row">
-          <span class="stat-label">Tijd</span>
-          <span class="stat-value" id="stat-time">--:--</span>
-        </div>
-        <div class="stat-row">
-          <span class="stat-label">Moeilijkheid</span>
-          <span class="stat-value" id="stat-difficulty">Gemiddeld</span>
-        </div>
-        <div class="stat-row">
-          <span class="stat-label">Hints Gebruikt</span>
-          <span class="stat-value" id="stat-hints">0</span>
-        </div>
-        <div class="stat-row">
-          <span class="stat-label">Pogingen</span>
-          <span class="stat-value" id="stat-attempts">1</span>
-        </div>
+      <div class="results-stats" id="results-stats">
+        <div class="stat-row"><span class="stat-label">Tijd</span><span class="stat-value" id="stat-time">--:--</span></div>
+        <div class="stat-row"><span class="stat-label">Moeilijkheid</span><span class="stat-value" id="stat-difficulty">Gemiddeld</span></div>
+        <div class="stat-row"><span class="stat-label">Hints</span><span class="stat-value" id="stat-hints">0</span></div>
+        <div class="stat-row"><span class="stat-label">Pogingen</span><span class="stat-value" id="stat-attempts">1</span></div>
       </div>
 
-      <!-- Deel & opnieuw -->
-      <div class="results-stars" id="results-stars" hidden></div>
       <div class="results-footer">
         <button class="btn btn-primary btn-block" id="btn-next-case" hidden>▶ Volgende zaak</button>
         <button class="btn btn-secondary btn-block" id="btn-remind" hidden>🔔 Herinner me morgen aan de dagelijkse zaak</button>
-        <button class="btn btn-secondary btn-block" id="btn-share">📤 Deel Resultaat</button>
-        <button class="btn btn-primary btn-block" id="btn-play-again">Opnieuw Spelen</button>
+        <button class="btn btn-secondary btn-block" id="btn-share">📤 Deel resultaat</button>
+        <button class="btn btn-ghost btn-block" id="btn-map" hidden>🗺️ Naar de kaart</button>
+        <button class="btn btn-ghost btn-block" id="btn-play-again">Naar het menu</button>
       </div>
     </section>
   </div>
@@ -283,7 +334,7 @@
         </div>
         <div class="how-step">
           <span class="how-num">2</span>
-          <div><strong>Gebruik de aanwijzingen</strong><br>Tik op een aanwijzing: de kamer of het meubel licht op in de plattegrond. Tik op een meubel om te zien wat het is. Klopt een aanwijzing met wat je hebt neergezet, dan krijgt hij een groen vinkje; klopt hij niet, dan wordt hij rood. "In een hoek" is een hoekvakje, "tegen een muur" raakt een muur maar is geen hoek.</div>
+          <div><strong>Lees de verklaringen</strong><br>Elke verdachte vertelt waar hij stond. Tik op een verklaring: de kamer of het meubel licht op in de plattegrond. Tik op een meubel om te zien wat het is. Klopt een verklaring met wat je hebt neergezet, dan wordt de kaart groen; klopt hij niet, dan wordt hij rood. "In een hoek" is een hoekvakje, "tegen een muur" raakt een muur maar is geen hoek.</div>
         </div>
         <div class="how-step">
           <span class="how-num">3</span>
@@ -332,14 +383,37 @@
     </div>
   </div>
 
-  <!-- ═══════ MOORDENAAR MODAL ═══════ -->
+  <!-- ═══════ BESCHULDIGING ═══════ -->
   <div class="modal-overlay" id="murder-modal">
-    <div class="modal-content">
+    <div class="modal-content accuse">
       <div class="modal-handle"></div>
-      <div class="clue-modal-icon">🔪</div>
-      <h3 class="clue-modal-title">Wie is de moordenaar?</h3>
+      <h3 class="clue-modal-title accuse-title">Wie heeft de moord gepleegd?</h3>
       <p class="clue-modal-text" id="murder-question"></p>
       <div class="murder-options" id="murder-options"></div>
+      <div class="accuse-reaction" id="murder-reaction" hidden></div>
+    </div>
+  </div>
+
+  <!-- ═══════ BRIEFING VAN INSPECTEUR VAN DAM ═══════ -->
+  <div class="modal-overlay" id="briefing-modal">
+    <div class="modal-content briefing">
+      <div class="modal-handle"></div>
+      <div class="mentor-head">
+        <img class="mentor-img" src="assets/vandam.jpg" alt="">
+        <div><h3 class="mentor-name">Inspecteur Van Dam</h3><span class="mentor-sub" id="briefing-sub"></span></div>
+      </div>
+      <p class="mentor-quote" id="briefing-text"></p>
+      <button class="btn btn-primary btn-block" id="btn-briefing-go">Aan de slag</button>
+    </div>
+  </div>
+
+  <!-- ═══════ NIEUW DEEL ═══════ -->
+  <div class="modal-overlay part-overlay" id="part-modal">
+    <div class="part-card" id="part-card">
+      <span class="part-icon" id="part-icon">🏚️</span>
+      <h2 class="part-title" id="part-title"></h2>
+      <p class="part-intro" id="part-intro"></p>
+      <button class="btn btn-gold" id="btn-part-go">Begin</button>
     </div>
   </div>
 
@@ -364,11 +438,17 @@
     <span class="clue-toast-icon" id="toast-icon">💡</span>
     <span id="toast-text"></span>
   </div>
+  <div class="medal-toast" id="medal-toast">
+    <span class="medal-toast-icon" id="medal-toast-icon">🏅</span>
+    <div><b>Onderscheiding verdiend!</b><span id="medal-toast-text"></span></div>
+  </div>
 
   <script src="avatars.js"></script>
   <script src="story.js"></script>
   <script src="themes.js"></script>
   <script src="campaign.js"></script>
+  <script src="progress.js"></script>
+  <script src="mentor.js"></script>
   <script src="sound.js"></script>
   <script src="floorplan.js"></script>
   <script src="logic-engine.js"></script>

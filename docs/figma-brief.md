@@ -49,3 +49,12 @@ On the home screen, replace the plain "🔥 5 dagen streak" line with a seven-da
 - Illustrations (world backdrops, evidence items, the mentor) as vector so they can be exported as SVG.
 - For the celebration, a storyboard row of the four keyframes with timing notes (total under 2.5 seconds, skippable by tap).
 - A short "why" note per screen: what the player should feel and what they should tap next.
+
+---
+
+## Resultaat (9 sep)
+
+De mock-ups die Figma op basis van deze brief bouwde staan als JPG in `docs/mockups/` (de
+originele SVG's staan lokaal in `Murdoku (3)/`, niet in git). Ze zijn op 9 september gebouwd in
+de app; zie `docs/PLAN.md` › "De epische update". De wereld-achtergronden en het portret van
+Inspecteur Van Dam uit de mock-ups worden in de app gebruikt (`assets/`).

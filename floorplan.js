@@ -424,6 +424,38 @@ const FloorPlan = (() => {
       default: return '';
     }
   }
+  // Dezelfde aanwijzing als verklaring in de ik-vorm: wie spreekt (indexen van
+  // verdachten; leeg = de inspecteur leest het rapport voor) en wat hij zegt.
+  function statement(clue, base) {
+    const th = base.theme;
+    const rw = th.roomWord || 'kamer';
+    const POS = POS_NL(rw);
+    const N = i => base.suspects[i].label;
+    const R = id => { const q = base.rooms.find(x => x.id === id); return `${q.article || 'de'} ${q.name}`; };
+    const F = f => base.furnitureNl[f] || f;
+    const one = t => ({ who: [clue.s], text: t });
+    const two = t => ({ who: [clue.a, clue.b], text: t });
+    switch (clue.kind) {
+      case 'room':         return one(`Ik was in ${R(clue.room)}.`);
+      case 'not-room':     return one(`Ik was niet in ${R(clue.room)}.`);
+      case 'room-pos':     return one(`Ik was in ${R(clue.room)}, ${POS[clue.pos].kamer}.`);
+      case 'pos':          return one(`Ik stond ${POS[clue.pos].los}.`);
+      case 'room-with':    return one(`Ik was in een ${rw} met ${F(clue.furniture)}.`);
+      case 'next-to':      return one(`Ik stond direct naast ${F(clue.furniture)}.`);
+      case 'room-next':    return one(`Ik was in ${R(clue.room)}, direct naast ${F(clue.furniture)}.`);
+      case 'same-room':    return two(`Ik was in dezelfde ${rw} als ${N(clue.b)}.`);
+      case 'diff-room':    return two(`Ik was niet in dezelfde ${rw} als ${N(clue.b)}.`);
+      case 'adjacent':     return two(`Ik stond direct naast ${N(clue.b)}.`);
+      case 'not-adjacent': return two(`Ik stond niet direct naast ${N(clue.b)}.`);
+      case 'same-row':     return two(`${N(clue.b)} en ik stonden op dezelfde rij.`);
+      case 'same-col':     return two(`${N(clue.b)} en ik stonden in dezelfde kolom.`);
+      case 'left-of':      return two(`Ik stond links van ${N(clue.b)} op de plattegrond.`);
+      case 'above':        return two(`Ik stond hoger op de plattegrond dan ${N(clue.b)}.`);
+      case 'empty-room':   return { who: [], text: `Volgens het rapport was er niemand in ${R(clue.room)}.` };
+      case 'alone':        return one(`Ik was alleen in de ${rw}.`);
+      default: return { who: [], text: '' };
+    }
+  }
   const caseText = base => {
     const q = base.rooms.find(x => x.id === base.victim.roomId);
     return `${base.theme.victimName || 'Het slachtoffer'} werd gevonden in ${q.article || 'de'} ${q.name}. ` +
@@ -549,7 +581,7 @@ const FloorPlan = (() => {
              detail: related.length ? `Aanwijzing ${nrs} beperkt de opties. Streep vakjes weg die er niet aan voldoen.` : 'Gebruik de plaatsen van de anderen om verder te snoeien.' };
   }
 
-  return { generate, fromLayout, solve, candidates, check, holds, hint, formatClue, rng,
+  return { generate, fromLayout, solve, candidates, check, holds, hint, formatClue, statement, rng,
            DIFF, FURNITURE, FURNITURE_NL, roomOf, cellsOf, isCorner, isEdge, posOf, key };
 })();
 

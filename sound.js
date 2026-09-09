@@ -41,6 +41,11 @@ const Sound = {
       else if (name === 'win')   { [523, 659, 784, 1047].forEach((f, i) => this.tone(f, 0.18, 'triangle', 0.07, i * 0.09)); }
       else if (name === 'ui')    { this.tone(520, 0.04, 'sine', 0.03); }
       else if (name === 'clue')  { this.tone(784, 0.06, 'triangle', 0.05, 0.12); this.tone(1175, 0.1, 'triangle', 0.05, 0.19); }
+      else if (name === 'stamp') { this.tone(110, 0.16, 'sine', 0.14); this.tone(70, 0.22, 'triangle', 0.08, 0.02); }
+      else if (name === 'star')  { this.tone(1319, 0.09, 'triangle', 0.05); this.tone(1760, 0.12, 'sine', 0.04, 0.05); }
+      else if (name === 'score') { this.tone(880, 0.03, 'square', 0.015); }
+      else if (name === 'medal') { [659, 880, 1109, 1319].forEach((f, i) => this.tone(f, 0.16, 'triangle', 0.06, i * 0.08)); }
+      else if (name === 'rank')  { [523, 784, 1047].forEach((f, i) => this.tone(f, 0.22, 'sine', 0.07, i * 0.1)); }
     } catch (e) { /* audio niet beschikbaar */ }
   }
 };

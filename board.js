@@ -28,6 +28,14 @@ const Board = {
   focusTimer: null,
   peekTimer: null,
   newRank: null,      // rang die met deze zaak is bereikt
+  rankInfo: null,     // rang voor/na, voor de rangbalk op het resultaatscherm
+  isWeekly: false,    // zaak van de week
+  weekly: null,
+  newIntro: null,     // "Nieuw!"-uitleg bij een nog niet geziene soort verklaring
+  score: null,        // { rows, total } van de laatste zaak
+  medalsWon: [],
+  cerTimers: [],      // ceremonie: uitgestelde stappen
+  cuTimers: [],       // ceremonie: lopende tellers
 
   // ── Oefenzaak: vaste kleine plattegrond met begeleiding ────
   TUTORIAL: {
@@ -54,7 +62,8 @@ const Board = {
     Object.assign(this, {
       puzzle, theme, difficulty: 'tutorial', seed: 0, isDaily: false, isTutorial: true, tutorialStep: 0, campaignCase: null,
       placements: new Array(2).fill(null), marks: new Map(), clueDone: new Set(), history: [], hintRefs: null,
-      active: 0, mode: 'place', hintsUsed: 0, attempts: 0, solved: false, elapsed: 0, focusClue: null, newRank: null, okCount: 0
+      active: 0, mode: 'place', hintsUsed: 0, attempts: 0, solved: false, elapsed: 0, focusClue: null, newRank: null, okCount: 0,
+      isWeekly: false, weekly: null, newIntro: null, score: null, medalsWon: []
     });
     document.getElementById('board-diff-tag').textContent = '🎓 Oefenzaak';
     document.getElementById('board-casetext').textContent = `${theme.icon} ${puzzle.caseText}`;
@@ -97,7 +106,7 @@ const Board = {
   },
 
   // ── Starten ───────────────────────────────────────────────
-  start(difficultyId, seed, isDaily = false, themeId, campaignCase = null) {
+  start(difficultyId, seed, isDaily = false, themeId, campaignCase = null, opts = {}) {
     const theme = Themes.get(themeId);
     let puzzle = null;
     const base = seed || (Date.now() % 1000000);
@@ -109,16 +118,20 @@ const Board = {
       placements: new Array(puzzle.suspects.length).fill(null),
       marks: new Map(), clueDone: new Set(), history: [], hintRefs: null,
       active: 0, mode: 'place', hintsUsed: 0, attempts: 0, solved: false, elapsed: 0, isTutorial: false, tutorialStep: 0, campaignCase,
-      focusClue: null, newRank: null, okCount: 0
+      focusClue: null, newRank: null, okCount: 0, isWeekly: !!opts.weekly, weekly: opts.weekly || null, score: null, medalsWon: [],
+      dailyDoneBefore: App.storageGet('crimson-board-daily-done') === new Date().toDateString()
     });
+    // één "Nieuw!"-uitleg per zaak, voor de eerste soort verklaring die de speler nog niet kent
+    this.newIntro = typeof Mentor !== 'undefined' ? Mentor.introFor(puzzle.clues.map(c => c.kind), this.introsSeen()) : null;
     document.getElementById('board-coach').hidden = true;
     document.getElementById('btn-board-hint').disabled = false;
 
     const diff = DIFFICULTY[difficultyId] || DIFFICULTY.gemiddeld;
     document.getElementById('board-diff-tag').textContent = campaignCase
       ? (campaignCase.chapter === Campaign.ARCHIVE ? `📁 ${campaignCase.title}` : `📖 ${campaignCase.idx + 1}. ${campaignCase.title}`)
-      : (isDaily ? '📅 ' : '') + diff.label;
-    document.getElementById('board-casetext').textContent = `${theme.icon} ${campaignCase ? campaignCase.story + ' ' : ''}${puzzle.caseText}`;
+      : this.isWeekly ? `🗓️ Week ${this.weekly.week}` : (isDaily ? '📅 ' : '') + diff.label;
+    const lead = campaignCase ? campaignCase.story + ' ' : this.isWeekly ? this.weekly.title + '. ' : '';
+    document.getElementById('board-casetext').textContent = `${theme.icon} ${lead}${puzzle.caseText}`;
     const grid = document.getElementById('board-grid');
     grid.classList.remove('solved');
     grid.dataset.floor = theme.floor || 'checker';
@@ -196,24 +209,24 @@ const Board = {
     }));
   },
 
-  // ── Aanwijzingskaarten ────────────────────────────────────
+  // ── Verklaringen: elke aanwijzing als getuigenis in de ik-vorm ──
+  // Portret + naam van wie spreekt (twee portretten bij een verklaring over
+  // twee personen; het rapport van de inspecteur bij een lege kamer), de
+  // uitspraak in een tekstballon, en live of hij klopt (groen), geschonden
+  // wordt (rood) of nog open staat. Tikken laat kamer/meubel oplichten.
   clueAvatars(clue) {
-    const s = this.puzzle.suspects;
+    const s = this.puzzle.suspects, st = FloorPlan.statement(clue, this.puzzle);
     const ava = i => `<span class="bclue-ava">${Avatars.suspect(s[i], i)}</span>`;
-    if (clue.s !== undefined) return ava(clue.s);
-    if (clue.a !== undefined) return `<span class="bclue-pair">${ava(clue.a)}${ava(clue.b)}</span>`;
-    return `<span class="bclue-ava bclue-house">🏠</span>`;
+    if (!st.who.length) return `<span class="bclue-ava bclue-mentor"><img src="${Mentor.img}" alt=""></span>`;
+    if (st.who.length === 2) return `<span class="bclue-pair">${ava(st.who[0])}${ava(st.who[1])}</span>`;
+    return ava(st.who[0]);
   },
-  // Elke kaart toont live of hij klopt met wat er staat: groen vinkje als alle
-  // genoemde verdachten staan en de aanwijzing klopt, rood kruis als hij
-  // geschonden wordt. Tikken op de kaart laat kamer/meubel oplichten; het rondje
-  // rechts is het eigen afvinkje van de speler.
   clueState(clue) {
     const h = FloorPlan.holds(clue, this.placements, this.puzzle);
     return h === true ? 'ok' : h === false ? 'bad' : '';
   },
   clueHtml(clue, i) {
-    let t = this.puzzle.clueTexts[i];
+    let t = FloorPlan.statement(clue, this.puzzle).text || this.puzzle.clueTexts[i];
     if (clue.furniture) {
       const nl = this.puzzle.furnitureNl[clue.furniture] || clue.furniture;
       const icon = `<span class="bclue-furn">${Avatars.furniture(clue.furniture)}</span>`;
@@ -221,23 +234,42 @@ const Board = {
     }
     return t;
   },
+  introsSeen() { try { return JSON.parse(App.storageGet('crimson-newclue-seen') || '[]'); } catch (e) { return []; } },
+  dismissIntro() {
+    if (this.newIntro) {
+      const seen = this.introsSeen();
+      if (!seen.includes(this.newIntro.id)) seen.push(this.newIntro.id);
+      App.storageSet('crimson-newclue-seen', JSON.stringify(seen));
+    }
+    this.newIntro = null;
+    this.renderClues();
+  },
   renderClues() {
     const list = document.getElementById('board-clues');
     const refs = this.hintRefs ? new Set(this.hintRefs.clues) : new Set();
-    list.innerHTML = this.puzzle.clues.map((clue, i) => {
-      const color = clue.s !== undefined ? this.puzzle.suspects[clue.s].color
-                  : clue.a !== undefined ? this.puzzle.suspects[clue.a].color : 'var(--border)';
+    const p = this.puzzle;
+    let html = '';
+    if (this.newIntro && !this.isTutorial) {
+      const t = this.newIntro;
+      html += `<div class="newclue" id="newclue"><span class="ribbon ribbon-gold">Nieuw in dit deel</span>
+        <div class="newclue-body"><div><h3>${t.title}</h3><p>${t.text}</p></div><span class="newclue-pic">${t.svg}</span></div>
+        <button type="button" class="btn btn-dark btn-block" id="btn-newclue-ok">Begrepen</button></div>`;
+    }
+    html += p.clues.map((clue, i) => {
+      const st = FloorPlan.statement(clue, p);
       const state = this.solved ? 'ok' : this.clueState(clue);
       const done = this.clueDone.has(i);
-      const mark = state === 'ok' ? '✓' : state === 'bad' ? '✗' : done ? '✓' : '';
-      return `<div class="bclue${done ? ' done' : ''}${refs.has(i) ? ' hint-ref' : ''}${state ? ' ' + state : ''}${this.focusClue === i ? ' active' : ''}" data-clue="${i}">
-        <span class="bclue-bar" style="background:${color}"></span>
+      const color = st.who.length ? p.suspects[st.who[0]].color : 'var(--gold)';
+      const name = st.who.length ? p.suspects[st.who[0]].label : Mentor.name;
+      const label = state === 'ok' ? '<span class="bclue-state ok">✓ Klopt</span>' : state === 'bad' ? '<span class="bclue-state bad">✗ Klopt niet</span>' : '';
+      return `<div class="bclue${done ? ' done' : ''}${refs.has(i) ? ' hint-ref' : ''}${state ? ' ' + state : ''}${this.focusClue === i ? ' active' : ''}" data-clue="${i}" style="--sc:${color}">
         <span class="bclue-num">${i + 1}</span>
         ${this.clueAvatars(clue)}
-        <p class="bclue-text">${this.clueHtml(clue, i)}</p>
-        <button type="button" class="bclue-check" data-clue="${i}" aria-label="Aanwijzing afvinken">${mark}</button>
+        <div class="bclue-body"><div class="bclue-head"><span class="bclue-name">${name}</span>${label}</div><p class="bclue-text">${this.clueHtml(clue, i)}</p></div>
+        <button type="button" class="bclue-check" data-clue="${i}" aria-label="Verklaring afvinken">${done ? '✓' : ''}</button>
       </div>`;
     }).join('');
+    list.innerHTML = html;
     list.querySelectorAll('.bclue').forEach(c => c.addEventListener('click', () => this.focusOnClue(+c.dataset.clue)));
     list.querySelectorAll('.bclue-check').forEach(b => b.addEventListener('click', e => {
       e.stopPropagation();
@@ -245,6 +277,8 @@ const Board = {
       this.clueDone.has(i) ? this.clueDone.delete(i) : this.clueDone.add(i);
       this.renderClues();
     }));
+    const ok = document.getElementById('btn-newclue-ok');
+    if (ok) ok.addEventListener('click', () => this.dismissIntro());
   },
 
   // ── Aanwijzing aantikken: laat zien waar het over gaat ────
@@ -469,23 +503,52 @@ const Board = {
       : `Iedereen staat op zijn plek. Wie was alleen met het slachtoffer in ${q.article || 'de'} ${q.name}?`;
     const wrap = document.getElementById('murder-options');
     wrap.innerHTML = p.suspects.map((s, i) =>
-      `<button type="button" class="murder-opt" data-s="${i}">
-         <span class="sus-ava">${Avatars.suspect(s, i)}</span><span>${s.label}</span>
+      `<button type="button" class="murder-opt accuse-opt" data-s="${i}">
+         <span class="accuse-ava">${Avatars.suspect(s, i)}</span><span class="accuse-name">${s.label}</span>
        </button>`).join('');
     wrap.querySelectorAll('.murder-opt').forEach(b => b.addEventListener('click', () => this.answerMurderer(+b.dataset.s, b)));
+    const react = document.getElementById('murder-reaction');
+    react.hidden = true; react.innerHTML = '';
     App.showModal('murder-modal');
   },
 
+  // De beschuldigde reageert: ontkenning bij de verkeerde, bekentenis bij de juiste.
   answerMurderer(i, btn) {
+    const s = this.puzzle.suspects[i];
+    const react = document.getElementById('murder-reaction');
+    const bubble = (cls, text) => {
+      react.hidden = false;
+      react.className = `accuse-reaction ${cls}`;
+      react.innerHTML = `<span class="accuse-ava-sm">${Avatars.suspect(s, i)}</span><span><b>${s.label}:</b> “${text}”</span>`;
+    };
     if (i !== this.puzzle.murderer) {
       this.attempts++;
       btn.classList.add('shake');
       setTimeout(() => btn.classList.remove('shake'), 300);
-      App.showToast('🤔', 'Nee. Kijk op de plattegrond: wie staat er in de kamer van het slachtoffer?');
+      bubble('wrong', Mentor.reaction(false, this.attempts + i));
+      Sound.play('error');
+      this.buzz(30);
       return;
     }
-    App.hideModal('murder-modal');
-    this.finish();
+    document.querySelectorAll('.murder-opt').forEach(b => { b.disabled = true; });
+    btn.classList.add('guilty');
+    bubble('right', Mentor.reaction(true, this.attempts + i));
+    Sound.play('clue');
+    this.buzz(12);
+    clearTimeout(this.finishTimer);
+    this.finishTimer = setTimeout(() => { App.hideModal('murder-modal'); this.finish(); }, 700);
+  },
+
+  medalCtx() {
+    const st = this.loadStats();
+    const worldsDone = Themes.list().map(t => t.id).filter(id => Campaign.chaptersFor(id).every(ch => Campaign.chapterDone(ch.key)));
+    return {
+      solved: st.solved || 0, clean: st.clean || 0, streak: App.streak.count || 0, elapsed: this.elapsed,
+      partsDone: Campaign.list().filter(ch => Campaign.chapterDone(ch.key)).length, worldsDone,
+      threeStars: Campaign.threeStarCount(), archiveCount: Campaign.archiveCount(),
+      weekFull: Progress.weekFull(), weekDone: Progress.weekDone(), evidence: Progress.evidenceCount(),
+      points: Progress.points(), rankTitle: App.rankFor(st.solved || 0).title
+    };
   },
 
   finish() {
@@ -504,10 +567,13 @@ const Board = {
       return;
     }
     Sound.play('win');
-    const rankBefore = App.rankFor(this.loadStats().solved || 0).title;
+    const solvedBefore = this.loadStats().solved || 0;
+    const before = App.rankFor(solvedBefore);
     this.saveStats();
-    const rankAfter = App.rankFor(this.loadStats().solved || 0).title;
-    this.newRank = rankAfter !== rankBefore ? rankAfter : null;
+    const solvedAfter = this.loadStats().solved || 0;
+    const after = App.rankFor(solvedAfter);
+    this.newRank = after.title !== before.title ? after.title : null;
+    this.rankInfo = { before, after, solvedBefore, solvedAfter };
     if (this.campaignCase) {
       Campaign.save(this.campaignCase.chapter, this.campaignCase.idx, Campaign.starsFor(this.hintsUsed, this.attempts));
     }
@@ -516,10 +582,26 @@ const Board = {
       App.storageSet('crimson-board-daily-done', new Date().toDateString());
       App.scheduleReminder();
     }
+    // punten, zaak van de week, onderscheidingen
+    this.score = Progress.score({
+      difficulty: this.difficulty, elapsed: this.elapsed, hintsUsed: this.hintsUsed, attempts: this.attempts,
+      isDaily: this.isDaily && !this.dailyDoneBefore, isWeekly: this.isWeekly && !Progress.weekDone(),
+      isArchive: !!this.campaignCase && this.campaignCase.chapter === Campaign.ARCHIVE
+    });
+    Progress.addPoints(this.score.total);
+    if (this.isWeekly) Progress.markWeekDone(this.shareText());
+    this.medalsWon = Progress.checkMedals(this.medalCtx());
+    this.medalsShown = false;
     App.mode = 'board';
     this.showResults();
     App.updateBoardStats();
     App.navigateTo('results');
+  },
+  // medailles pas tonen als de ceremonie klaar is (of overgeslagen)
+  flushMedals() {
+    if (this.medalsShown) return;
+    this.medalsShown = true;
+    (this.medalsWon || []).forEach(m => App.showMedal(m));
   },
 
   // ── Voortgang ─────────────────────────────────────────────
@@ -539,54 +621,145 @@ const Board = {
     const p = this.puzzle;
     const m = p.suspects[p.murderer];
     const q = p.rooms.find(x => x.id === p.victim.roomId);
-    document.getElementById('results-icon').textContent = '✓';
-    document.getElementById('results-stamp').style.borderColor = 'var(--success)';
-    document.getElementById('results-headline').textContent = this.isTutorial ? 'Goed gedaan!' : 'Zaak Gesloten!';
-    document.getElementById('results-verdict').textContent = `${m.label} was alleen met het slachtoffer in ${q.article || 'de'} ${q.name}.`;
-    // laatste zaak van een deel: de afsluiting van dat deel in plaats van de thema-outro
+    const $ = id => document.getElementById(id);
+    this.skipCeremony(true);
+    $('results-icon').hidden = true;
+    $('results-stamp').style.borderColor = '';
+    $('results-headline').textContent = this.isTutorial ? 'Goed gedaan!' : 'Zaak Opgelost!';
+    $('results-verdict').textContent = `${m.label} was alleen met het slachtoffer in ${q.article || 'de'} ${q.name}.`;
+    // laatste zaak van een deel: de afsluiting van dat deel
     const chap = this.campaignCase ? Campaign.chapter(this.campaignCase.chapter) : null;
     const finale = chap && this.campaignCase.idx === chap.cases.length - 1 ? chap.outro : null;
-    document.getElementById('results-description').textContent = this.isTutorial
-      ? 'Zo werkt elke zaak: plaats iedereen met de aanwijzingen, en wijs dan aan wie alleen was met het slachtoffer. Tijd voor een echte zaak.'
-      : (this.newRank ? `🎖 Nieuwe rang: ${this.newRank}! ` : '') + (this.hintsUsed === 0 ? 'Zonder één hint. ' : '') + (finale || this.theme.outro || 'De moordenaar is gepakt.');
-    const remindBtn = document.getElementById('btn-remind');
+    $('results-description').textContent = this.isTutorial
+      ? 'Zo werkt elke zaak: plaats iedereen met de verklaringen, en wijs dan aan wie alleen was met het slachtoffer. Tijd voor een echte zaak.'
+      : (finale || '');
+    const remindBtn = $('btn-remind');
     if (remindBtn) remindBtn.hidden = !(this.isDaily && !this.isTutorial && App.notif() && !App.reminderEnabled());
 
-    const solEl = document.getElementById('results-solution');
+    // scorepaneel: stempel, sterren, punten, rang; en de opmerking van Van Dam
+    const panel = $('results-panel'), mentor = $('results-mentor');
+    panel.hidden = this.isTutorial;
+    mentor.hidden = this.isTutorial;
+    $('results-stars').hidden = false;
+    ['results-stamp', 'score-total-row', 'results-rank', 'results-mentor'].forEach(id => $(id).classList.add('pending'));
+    const st = Campaign.starsFor(this.hintsUsed, this.attempts);
+    $('results-stars').innerHTML = [0, 1, 2].map(i => `<span class="rstar pending${i < st ? '' : ' off'}">${i < st ? '★' : '☆'}</span>`).join('');
+    const sc = this.score || Progress.score({ difficulty: this.difficulty, elapsed: this.elapsed, hintsUsed: this.hintsUsed, attempts: this.attempts });
+    $('score-rows').innerHTML = sc.rows.map(([label, v], i) =>
+      `<div class="score-row pending"><span>${label}</span><b class="${i === 0 ? '' : v > 0 ? 'plus' : 'zero'}" data-v="${v}">${i === 0 ? v : '+' + v}</b></div>`).join('');
+    $('score-total').textContent = `${sc.total} punten`;
+    $('score-total').dataset.v = sc.total;
+    const ri = this.rankInfo || {};
+    const after = ri.after || App.rankFor(this.loadStats().solved || 0);
+    const before = ri.before || after;
+    const left = after.next ? after.next.at - (ri.solvedAfter || 0) : 0;
+    $('results-rank').innerHTML =
+      (this.newRank ? `<span class="rank-new">🎖 Nieuwe rang: ${this.newRank}</span>` : `<span class="rank-title">🎖 ${after.title}</span>`) +
+      `<span class="rank-next">${after.next ? `Volgende: ${after.next.title} · nog ${left} ${left === 1 ? 'zaak' : 'zaken'}` : 'Hoogste rang bereikt'}</span>` +
+      `<span class="rank-bar"><i style="width:${Math.round((this.newRank ? 0 : before.progress) * 100)}%" data-to="${Math.round(after.progress * 100)}"></i></span>`;
+    const remark = Mentor.remark({ hintsUsed: this.hintsUsed, attempts: this.attempts, elapsed: this.elapsed, newRank: this.newRank,
+                                   rank: before.title, isWeekly: this.isWeekly, stars: st });
+    mentor.innerHTML = `<img src="${Mentor.sketch}" alt=""><div><span class="mentor-label">Van Dam merkt op</span><p>“${remark}”</p></div>`;
+
+    // waar iedereen stond
+    const solEl = $('results-solution');
     solEl.innerHTML = '<span class="label">Waar iedereen stond</span>';
     p.suspects.forEach((s, i) => {
-      const r = FloorPlan.roomOf(p.rooms, p.solution[i].x, p.solution[i].y).name;
+      const r = FloorPlan.roomOf(p.rooms, p.solution[i].x, p.solution[i].y);
       const row = document.createElement('div');
       row.className = 'results-solution-row';
-      row.innerHTML = `<span class="results-solution-dot" style="background:${s.color}"></span>${s.label} — ${r}${i === p.murderer ? ' 🔪' : ''}`;
+      row.innerHTML = `<span class="results-solution-ava">${Avatars.suspect(s, i)}</span><b>${s.label}</b>` +
+                      `<span class="results-solution-room">${r.article || 'de'} ${r.name}${i === p.murderer ? ' 🔪' : ''}</span>`;
       solEl.appendChild(row);
     });
-    document.getElementById('btn-play-again').textContent = this.isTutorial ? 'Naar het hoofdmenu' : 'Opnieuw Spelen';
-    const starsEl = document.getElementById('results-stars');
-    const nextBtn = document.getElementById('btn-next-case');
+
+    // knoppen: volgende zaak, kaart, menu
+    $('btn-play-again').textContent = this.isTutorial ? 'Naar het hoofdmenu' : 'Naar het menu';
+    const nextBtn = $('btn-next-case'), mapBtn = $('btn-map');
+    mapBtn.hidden = !(this.campaignCase && !this.isTutorial);
     if (this.campaignCase && !this.isTutorial) {
-      const st = Campaign.starsFor(this.hintsUsed, this.attempts);
-      starsEl.hidden = false;
-      starsEl.innerHTML = `<span class="stars">${'★'.repeat(st)}${'☆'.repeat(3 - st)}</span><span class="stars-label">${st === 3 ? 'Vlekkeloos: geen hint, in één keer.' : st === 2 ? 'Sterk. Zonder hint én in één keer is drie sterren.' : 'Opgelost. Probeer het nog eens zonder hint.'}</span>`;
       const next = Campaign.next(this.campaignCase.chapter, this.campaignCase.idx);
       nextBtn.hidden = !next;
       nextBtn.textContent = next ? `▶ Volgende zaak: ${next.title}` : '▶ Volgende zaak';
       nextBtn.onclick = next ? () => App.startCampaignCase(next.chapter, next.idx) : null;
     } else if (!this.isTutorial) {
-      // vrij spel of dagelijkse zaak: meteen door kunnen
-      starsEl.hidden = true;
+      // vrij spel, dagelijkse zaak of zaak van de week: meteen door kunnen
       nextBtn.hidden = false;
       nextBtn.textContent = `▶ Nog een zaak · ${this.theme.title}`;
-      const diff = this.isDaily ? 'gemiddeld' : this.difficulty, themeId = this.theme.id;
+      const diff = this.isDaily ? 'gemiddeld' : this.isWeekly ? 'moeilijk' : this.difficulty, themeId = this.theme.id;
       nextBtn.onclick = () => {
         if (Board.start(diff, 0, false, themeId)) App.navigateTo('board');
         else App.showToast('⚠️', 'Kon geen plattegrond genereren, probeer opnieuw.');
       };
-    } else { starsEl.hidden = true; nextBtn.hidden = true; }
-    document.getElementById('stat-time').textContent = this.formatTime(this.elapsed);
-    document.getElementById('stat-difficulty').textContent = (DIFFICULTY[this.difficulty] || DIFFICULTY.gemiddeld).label;
-    document.getElementById('stat-hints').textContent = this.hintsUsed;
-    document.getElementById('stat-attempts').textContent = this.attempts + 1;
+    } else { nextBtn.hidden = true; }
+    $('stat-time').textContent = this.formatTime(this.elapsed);
+    $('stat-difficulty').textContent = (DIFFICULTY[this.difficulty] || DIFFICULTY.gemiddeld).label;
+    $('stat-hints').textContent = this.hintsUsed;
+    $('stat-attempts').textContent = this.attempts + 1;
+    if (this.isTutorial) this.revealAll(); else this.ceremony();
+  },
+
+  // ── Ceremonie: stempel → sterren → score telt op → rang. Tik = overslaan. ──
+  ceremony() {
+    const $ = id => document.getElementById(id);
+    const screen = $('screen-results');
+    const T = (fn, ms) => this.cerTimers.push(setTimeout(fn, ms));
+    const show = el => { if (el) el.classList.remove('pending'); };
+    T(() => {
+      show($('results-stamp')); screen.classList.add('shake-paper'); this.confetti();
+      Sound.play('stamp'); this.buzz(30);
+      T(() => screen.classList.remove('shake-paper'), 450);
+    }, 80);
+    document.querySelectorAll('#results-stars .rstar').forEach((el, i) => T(() => { show(el); if (!el.classList.contains('off')) Sound.play('star'); }, 520 + i * 190));
+    const rows = [...document.querySelectorAll('#score-rows .score-row')];
+    rows.forEach((r, i) => T(() => { show(r); const b = r.querySelector('b'); this.countUp(b, +b.dataset.v, 260, i === 0 ? '' : '+'); }, 1080 + i * 170));
+    const tRows = 1080 + rows.length * 170;
+    T(() => { show($('score-total-row')); this.countUp($('score-total'), +$('score-total').dataset.v, 520, '', ' punten'); }, tRows);
+    T(() => {
+      show($('results-rank'));
+      const bar = document.querySelector('#results-rank .rank-bar i');
+      if (bar) bar.style.width = bar.dataset.to + '%';
+      if (this.newRank) Sound.play('rank');
+    }, tRows + 320);
+    T(() => { show($('results-mentor')); this.cerTimers = []; this.flushMedals(); }, tRows + 640);
+  },
+  countUp(el, to, ms, prefix = '', suffix = '') {
+    if (!el) return;
+    const start = Date.now();
+    const id = setInterval(() => {
+      const k = Math.min(1, (Date.now() - start) / ms);
+      el.textContent = prefix + Math.round(to * k) + suffix;
+      if (k >= 1) clearInterval(id);
+    }, 30);
+    this.cuTimers.push(id);
+  },
+  skipCeremony(silent = false) {
+    this.cerTimers.forEach(t => clearTimeout(t)); this.cerTimers = [];
+    this.cuTimers.forEach(t => clearInterval(t)); this.cuTimers = [];
+    if (!silent) { this.revealAll(); this.flushMedals(); }
+  },
+  revealAll() {
+    const screen = document.getElementById('screen-results');
+    screen.classList.remove('shake-paper');
+    screen.querySelectorAll('.pending').forEach(el => el.classList.remove('pending'));
+    document.querySelectorAll('#score-rows .score-row b').forEach((b, i) => { b.textContent = (i === 0 ? '' : '+') + b.dataset.v; });
+    const tot = document.getElementById('score-total');
+    if (tot && tot.dataset.v) tot.textContent = `${tot.dataset.v} punten`;
+    const bar = document.querySelector('#results-rank .rank-bar i');
+    if (bar) bar.style.width = bar.dataset.to + '%';
+  },
+  confetti() {
+    const box = document.getElementById('confetti');
+    if (!box) return;
+    const colors = ['#B8955C', '#D4B074', '#8B2E1C', '#A8432E', '#2E7D32', '#FFFFFF'];
+    let html = '';
+    for (let i = 0; i < 44; i++) {
+      const x = (Math.random() * 100).toFixed(1), dx = Math.round((Math.random() - 0.5) * 160), r = Math.round(Math.random() * 720 - 360);
+      const d = (1.6 + Math.random() * 1.2).toFixed(2), dl = (Math.random() * 0.35).toFixed(2), sz = 6 + Math.round(Math.random() * 8);
+      html += `<i class="cf" style="--x:${x}%;--dx:${dx}px;--r:${r}deg;--d:${d}s;--dl:${dl}s;--s:${sz}px;--c:${colors[i % colors.length]}"></i>`;
+    }
+    box.innerHTML = html;
+    setTimeout(() => { if (box.innerHTML === html) box.innerHTML = ''; }, 3200);
   },
 
   shareText() {
@@ -605,9 +778,11 @@ const Board = {
       }
       rows.push(line);
     }
+    const what = this.isWeekly ? ` · Zaak van de week: ${this.weekly.title}`
+      : this.campaignCase ? ` · ${this.campaignCase.chapter === Campaign.ARCHIVE ? '' : this.campaignCase.idx + 1 + '. '}${this.campaignCase.title}` : '';
     return [
-      `${this.theme.icon} Crimson Ledger · ${this.theme.title}${this.isDaily ? ` · Dag #${App.getDayNumber()}` : ''}${this.campaignCase ? ` · ${this.campaignCase.chapter === Campaign.ARCHIVE ? '' : this.campaignCase.idx + 1 + '. '}${this.campaignCase.title}` : ''}`,
-      `${diff.icon} ${diff.label} · ⏱ ${this.formatTime(this.elapsed)} · 💡 ${this.hintsUsed} · 🔁 ${this.attempts + 1}`,
+      `${this.theme.icon} Crimson Ledger · ${this.theme.title}${this.isDaily ? ` · Dag #${App.getDayNumber()}` : ''}${what}`,
+      `${diff.icon} ${diff.label} · ⏱ ${this.formatTime(this.elapsed)} · 💡 ${this.hintsUsed} · 🔁 ${this.attempts + 1}${this.score ? ` · 🪙 ${this.score.total} punten` : ''}`,
       '', ...rows, '',
       this.isDaily && App.streak.count > 1 ? `🔥 ${App.streak.count} dagen streak!` : ''
     ].filter(Boolean).join('\n');
@@ -625,6 +800,8 @@ const Board = {
       App.storageSet('crimson-board-tip-seen', '1');
       document.getElementById('board-tip').hidden = true;
     });
+    // ceremonie overslaan met een tik
+    document.getElementById('screen-results').addEventListener('click', () => { if (this.cerTimers.length) this.skipCeremony(); });
   }
 };
 

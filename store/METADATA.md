@@ -37,11 +37,17 @@ VIER WERELDEN
 • Grand Hotel Aurora — om middernacht viel het licht uit
 • Station Orion — de sluizen zijn dicht, iedereen is nog aan boord
 
-ELKE DAG EEN ZAAK
-De dagelijkse zaak wisselt per dag van wereld. Bouw een streak op en deel je resultaat als emoji-kaart.
+DE VERDACHTEN PRATEN
+Elke aanwijzing is een verklaring: "Ik stond direct naast een plant." Klopt een verklaring met wat je hebt neergezet, dan kleurt hij groen; klopt hij niet, dan rood. Wijs je de verkeerde aan, dan ontkent hij. Wijs je de dader aan, dan bekent hij.
 
-CAMPAGNE
-96 zaken in twaalf delen (drie per wereld), oplopend van makkelijk naar moeilijk, met sterren voor wie het zonder hint en in één keer doet. Daarna een eindeloos archief van genummerde dossiers.
+ELKE DAG EEN ZAAK, ELKE WEEK EEN GROTE
+De dagelijkse zaak wisselt per dag van wereld; een weekstrook laat je streak zien. De zaak van de week is voor iedereen dezelfde en deelbaar als emoji-kaart.
+
+EEN WERELDKAART VOL ZAKEN
+96 zaken in twaalf delen (drie per wereld) op een kronkelpad door elke wereld, oplopend van makkelijk naar moeilijk, met sterren voor wie het zonder hint en in één keer doet. Daarna een eindeloos archief. Inspecteur Van Dam geeft je voor elke zaak een briefing.
+
+PUNTEN, RANGEN, ONDERSCHEIDINGEN
+Zaak gesloten: stempel, sterren, punten voor tijd en zuiver speurwerk, en een rangbalk van Rekruut tot Meesterdetective. Zeventien onderscheidingen en een vitrine met een bewijsstuk per opgeloste zaak.
 
 VOLLEDIG OFFLINE, GEEN ACCOUNT, GEEN ADVERTENTIES
 Alles staat op je eigen toestel. We verzamelen niets.
@@ -50,11 +56,11 @@ Alles staat op je eigen toestel. We verzamelen niets.
 moordmysterie,logica,puzzel,deductie,detective,plattegrond,dagelijks,breinbreker,mysterie,nederlands
 
 ## Wat is er nieuw (1.0)
-Eerste versie: vier werelden, dagelijkse zaak, campagne van 96 zaken met een eindeloos archief, lerende hints, begeleide oefenzaak.
+Eerste versie: vier werelden op een wereldkaart, dagelijkse zaak met weekstrook, zaak van de week, campagne van 96 zaken met een eindeloos archief, Inspecteur Van Dam, verklaringen die live groen of rood kleuren, punten, onderscheidingen en vitrine, lerende hints, begeleide oefenzaak.
 
 ## Notities voor App Review
-De app is een offline puzzelspel; er is geen account of login nodig. Bij de eerste start opent een korte begeleide oefenzaak (vier tikken). Daarna: Dagelijkse Zaak of Campagne › Het glas Bordeaux. De knop "Hint" legt de volgende logische stap uit. Er worden geen gegevens verzameld (zie privacyverklaring).
+De app is een offline puzzelspel; er is geen account of login nodig. Bij de eerste start opent een korte begeleide oefenzaak (vier tikken). Daarna: de kaart "Dagelijkse zaak" of "Verder met de campagne" (wereldkaart › zaak 1 "Het glas Bordeaux", eerst een korte briefing van Inspecteur Van Dam, dan "Aan de slag"). De knop "Hint" legt de volgende logische stap uit. Er worden geen gegevens verzameld (zie privacyverklaring).
 
 ## Schermafbeeldingen (map `store/screenshots`, 1290×2796 = iPhone 6,7")
-Upload in deze volgorde: 03-bord-landhuis, 04-hint, 06-bord-piraten, 02-campagne, 05-resultaat, 01-menu, 08-bord-ruimte, 07-bord-hotel. (Vernieuwd op 8 sep met de huidige UI: live-feedback op aanwijzingen, mini-plattegronden, rang.)
+Upload in deze volgorde: 04-verklaringen, 02-wereldkaart, 06-zaak-gesloten, 01-thuis, 05-beschuldiging, 03-briefing, 07-vitrine, 08-bord-orion. (Vernieuwd op 9 sep met de epische update: wereldkaart, verklaringen, Van Dam, ceremonie, vitrine.)
 iPad wordt niet ondersteund (alleen iPhone), dus geen iPad-schermafbeeldingen nodig.

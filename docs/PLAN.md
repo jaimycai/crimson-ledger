@@ -120,14 +120,58 @@ Wat Candy Crush en Plants vs Zombies hebben en wij nog niet, in volgorde van eff
 7. **Onderscheidingen en verzamelingen** (bewijsstukken per opgeloste zaak in een vitrine).
 8. **Dagelijkse beloningskalender** en een wekelijkse zaak met deelbare uitslag.
 
+## De epische update (9 sep, gebouwd naar de Figma-mock-ups in `Murdoku (3)/`)
+
+Alles uit "Naar een episch spel" behalve de nieuwe spelelementen (leugenaar/getuige) en muziek:
+
+- **Thuisscherm** (`index.html`, `App.renderHome`): kop met rang en rangbalk (tik → vitrine),
+  kaart "Dagelijkse zaak" met wisselende titel (`Progress.dailyTitle`, 30 titels) en +150 punten,
+  streakkaart met **weekstrook** ma–zo (`Progress.week`, logboek `crimson-daily-log`, zondag =
+  medaille "Volle week"), kaart **Zaak van de week** (`Progress.weekly`: ISO-week → vaste seed,
+  thema wisselt per week, titel per wereld, moeilijk, +300 punten, deelbare uitslag bewaard),
+  navigatiekaarten "Verder met de campagne: Deel II · Zaak 3" en "Vrij spelen" (eigen scherm
+  `#screen-free` met de wereld- en niveaukiezer).
+- **Wereldkaart** (`App.renderMap`, `#screen-campaign`): per wereld een slingerpad over een
+  achtergrondillustratie (`assets/map-*.jpg`, uit de mock-ups, 640px JPEG), wegwijzers per deel,
+  knopen dicht/open (pulserende ring + pion 🕵️)/klaar met sterren, popover per knoop (titel,
+  niveau, verhaaltje, beste score, Speel), wereldkiezer met "nog N zaken", sterrenteller
+  "★ 12/72", grote knop "▶ Speel zaak 6 · De tuinman zwijgt". Na deel III loopt het pad door in
+  het archief; archiefdossiers zijn nu **per wereld** (dossier 1, 5, 9 … voor het landhuis;
+  `Campaign.archiveFor`, `isUnlocked` en `next` per wereld).
+- **Inspecteur Van Dam** (`mentor.js`, portretten `assets/vandam*.jpg`): briefing vóór elke
+  campagnezaak (verhaaltje + één tip die bij de soorten verklaringen in die zaak past; de klok
+  loopt pas na "Aan de slag"), opmerking op het resultaatscherm die de speler met zijn rang
+  aanspreekt, **"Nieuw deel"-splash** (rood, één keer per deel; `crimson-parts-seen`).
+- **Verklaringen** (`FloorPlan.statement`, `Board.renderClues`): elke aanwijzing als getuigenis
+  in de ik-vorm met portret en naam van de spreker (twee portretten bij twee personen; lege
+  kamer = het rapport van Van Dam), tekstballon, live "✓ Klopt" / "✗ Klopt niet", afvinken =
+  doorgestreept. **"Nieuw in dit deel"-kaart** met plaatje, één per zaak voor de eerste nog
+  onbekende soort (`Mentor.INTROS`, 8 groepen, `crimson-newclue-seen`).
+- **Beschuldiging**: portretten op een rij; de verkeerde ontkent in een rode ballon ("Ik?
+  Nooit!"), de dader bekent in een groene ("… Hoe wist je dat?") en 0,7 s later volgt het resultaat.
+- **Zaak Gesloten-ceremonie** (`Board.showResults/ceremony`): stempel klapt neer met
+  papier-schudden en confetti, drie sterren vliegen één voor één binnen, score telt op (Basis
+  300/500/800 · Tijdbonus tot +250 · Zonder hint +200 · In één keer +150 · dagelijks +150 ·
+  week +300 · archief +100), totaal in Playfair, rangbalk loopt op met "🎖 Nieuwe rang", dan
+  Van Dam. Alles in ≈2,5 s, tik = overslaan. Daarna "Waar iedereen stond" met portretten,
+  "Volgende zaak", "Deel resultaat", "Naar de kaart". Sterren nu ook bij vrij spel en dagelijks.
+- **Punten** (`crimson-points`) en **onderscheidingen** (`Progress.MEDALS`, 17 stuks, met
+  datum; gouden toast na de ceremonie) en **vitrine** (`#screen-awards`: per wereld een plank met
+  24 bewijsstukken, één per opgeloste campagnezaak, `item` in `campaign.js`; dicht = silhouet).
+- Geluiden: stempel, ster, rang, medaille.
+- Tests: `tests/progress.test.js` (punten, week, weekzaak, medailles, vitrine, mentor,
+  verklaringen), bordtest dekt thuisscherm, kaart, splash, briefing, verklaringen, Nieuw!-kaart,
+  beschuldiging, ceremonie, punten, weekzaak, vitrine. Alle 6 suites groen.
+
 ## Openstaande punten (volgorde van voorstel)
 
 1. App Store: stappen in `store/CHECKLIST.md` (Apple-account, archiveren, uploaden).
-2. Onderscheidingen (eerste zaak, 7 dagen streak, 10× zonder hint) met een eigen scherm.
+2. Nieuwe spelelementen per deel: *de leugenaar* (één verklaring is vals) en *de getuige*
+   (extra aanwijzing op afroep). Vraagt generator-werk (uniciteit).
 3. Vierde moeilijkheid "Expert" (9×9, zes verdachten) als beloning vanaf rang Inspecteur.
-4. Sterren ook bij vrij spel en de dagelijkse zaak; weekoverzicht van de dagelijkse zaken.
-5. Verhaallijn met terugkerende personages tussen de delen (nu: intro/outro per deel).
-6. Engelse versie (i18n) voor een grotere markt; Game Center voor streaks en ranglijsten.
+4. Muziek per wereld (loop) plus stingers; nu alleen korte gesynthetiseerde geluiden.
+5. Engelse versie (i18n) voor een grotere markt; Game Center voor punten en ranglijsten.
+6. Weekzaak-ranglijst (vereist een server of Game Center).
 
 ## Beslissingen
 

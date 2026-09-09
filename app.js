@@ -40,11 +40,13 @@ const App = {
     this.bindDifficultySelector();
     this.bindBoard();
     this.bindCampaign();
+    this.bindHome();
     this.bindSound();
     this.bindSettings();
     this.registerServiceWorker();
     this.updateDailyDate();
     this.updateStreakDisplay();
+    this.renderHome();
     this.scheduleReminder();
   },
 
@@ -56,81 +58,272 @@ const App = {
     Board.bind();
     this.selectedTheme = this.storageGet('crimson-theme') || 'landhuis';
     this.renderThemePicker();
-    const launch = (seed, daily) => {
+    const launch = (seed, daily, themeId) => {
       const diff = daily ? 'gemiddeld' : (this.selectedDifficulty || 'gemiddeld');
-      const themeId = daily ? Themes.forDay(this.getDayNumber()).id : this.selectedTheme;
-      if (Board.start(diff, seed, daily, themeId)) this.navigateTo('board');
+      if (Board.start(diff, seed, daily, themeId || this.selectedTheme)) this.navigateTo('board');
       else this.showToast('⚠️', 'Kon geen plattegrond genereren, probeer opnieuw.');
     };
     document.getElementById('btn-board-start').addEventListener('click', () => launch(0, false));
-    document.getElementById('btn-board-daily').addEventListener('click', () => launch(this.getDailySeed() * 3 + 777, true));
+    document.getElementById('btn-board-daily').addEventListener('click', () => {
+      const done = this.storageGet('crimson-board-daily-done') === new Date().toDateString();
+      launch(done ? 0 : this.getDailySeed() * 3 + 777, !done, Themes.forDay(this.getDayNumber()).id);
+    });
     document.getElementById('btn-board-back').addEventListener('click', () => { Board.stopTimer(); this.navigateTo('menu'); });
     this.updateBoardStats();
   },
 
   // ══════════════════════════════════════════════════════════
-  //  CAMPAGNE
+  //  CAMPAGNE: WERELDKAART, BRIEFING VAN VAN DAM, NIEUW DEEL
   // ══════════════════════════════════════════════════════════
+  mapWorld: 'landhuis',
+  mapCurrent: null,
+  partThen: null,
   bindCampaign() {
     if (!document.getElementById('btn-campaign')) return;
-    document.getElementById('btn-campaign').addEventListener('click', () => { this.renderCampaign(); this.navigateTo('campaign'); });
-    document.getElementById('btn-campaign-back').addEventListener('click', () => this.navigateTo('menu'));
+    const on = (id, fn) => { const el = document.getElementById(id); if (el) el.addEventListener('click', fn); };
+    on('btn-campaign', () => { const c = this.nextCampaignCase(); this.openMap(c ? c.theme : (this.storageGet('crimson-last-world') || 'landhuis')); });
+    on('btn-campaign-back', () => this.navigateTo('menu'));
+    on('btn-map-play', () => this.playCurrent());
+    on('btn-briefing-go', () => { this.hideModal('briefing-modal'); Board.startTimer(); });
+    on('btn-part-go', () => { this.hideModal('part-modal'); const f = this.partThen; this.partThen = null; if (f) f(); });
+    document.getElementById('map-pop').addEventListener('click', e => { if (e.target.id === 'map-pop') this.closeNode(); });
     this.updateCampaignProgress();
   },
-
+  nextCampaignCase() { return Campaign.nextOverall(t => this.themeUnlocked(Themes.get(t)), this.storageGet('crimson-last-world')); },
+  caseLabel(c) {
+    if (!c) return 'Alles opgelost';
+    if (c.chapter === Campaign.ARCHIVE) return `Archief · ${c.title}`;
+    return `${Campaign.chapter(c.chapter).title.split(' · ')[0]} · Zaak ${c.idx + 1}`;
+  },
   updateCampaignProgress() {
     const el = document.getElementById('campaign-progress');
-    if (el) el.textContent = `${Campaign.doneCount()} van ${Campaign.total()} zaken opgelost`;
+    if (!el) return;
+    el.textContent = `${Campaign.doneCount()} van ${Campaign.total()} zaken opgelost`;
+    const c = this.nextCampaignCase();
+    const nx = document.getElementById('campaign-next'), ic = document.getElementById('campaign-icon');
+    if (nx) nx.textContent = this.caseLabel(c);
+    if (ic) ic.textContent = c ? Themes.get(c.theme).icon : '📖';
   },
 
-  renderCampaign() {
-    const list = document.getElementById('campaign-list');
-    document.getElementById('campaign-total').textContent = `${Campaign.doneCount()}/${Campaign.total()}`;
-    const card = (c, open, stars, num) => {
-      const d = DIFFICULTY[c.difficulty] || {};
-      return `<button type="button" class="case-card${open ? '' : ' locked'}${stars ? ' done' : ''}" data-chapter="${c.chapter}" data-theme="${c.theme}" data-idx="${c.idx}" ${open ? '' : 'disabled'}>
-        <span class="case-num">${open ? num : '🔒'}</span>
-        <span class="case-body"><span class="case-title">${c.title}</span><span class="case-meta">${d.icon || ''} ${d.label || ''}</span></span>
-        <span class="case-stars">${stars ? '★'.repeat(stars) + '☆'.repeat(3 - stars) : ''}</span>
-      </button>`;
-    };
-    const sections = Campaign.list().map(ch => {
-      const th = Themes.get(ch.theme);
-      const themeOpen = this.themeUnlocked(th);
-      const chapterOpen = Campaign.chapterOpen(ch.key, themeOpen);
-      const done = Campaign.chapterDone(ch.key);
-      const cases = ch.cases.map((c, idx) => card({ ...c, chapter: ch.key, theme: ch.theme, idx },
-        chapterOpen && Campaign.isUnlocked(ch.key, idx), Campaign.stars(ch.key, idx), idx + 1)).join('');
-      let note = '';
-      if (!themeOpen) note = `<p class="chapter-lock">🔒 Los eerst ${th.unlock} zaken op (vrij spel of dagelijks) om ${th.title} te openen.</p>`;
-      else if (!chapterOpen) {
-        const prev = Campaign.chaptersFor(ch.theme).find(c => c.part === ch.part - 1);
-        note = `<p class="chapter-lock">🔒 Maak ${prev.title.split(' · ')[0]} af om dit deel te openen.</p>`;
-      }
-      return `<section class="chapter${done ? ' chapter-done' : ''}">
-        <h3 class="chapter-title">${th.icon} ${th.title} <small>${ch.title}</small>${done ? '<span class="chapter-badge">✓ voltooid</span>' : ''}</h3>
-        <p class="chapter-tag">${ch.intro}</p>${note}<div class="case-grid">${cases}</div></section>`;
+  openMap(themeId) { this.mapWorld = Themes.get(themeId).id; this.renderMap(); this.navigateTo('campaign'); },
+  MAP_X: [50, 80, 50, 20],   // slingerpad: midden, rechts, midden, links
+  // Alles wat op de kaart van één wereld staat: wegwijzers per deel, 24 knopen, dan het archief.
+  mapItems(themeId) {
+    const th = Themes.get(themeId), themeOpen = this.themeUnlocked(th);
+    const items = [];
+    let num = 0;
+    Campaign.chaptersFor(themeId).forEach(ch => {
+      const open = Campaign.chapterOpen(ch.key, themeOpen);
+      items.push({ type: 'sign', title: ch.title, open, done: Campaign.chapterDone(ch.key), key: ch.key });
+      ch.cases.forEach((c, idx) => {
+        num++;
+        const stars = Campaign.stars(ch.key, idx);
+        const unlocked = open && Campaign.isUnlocked(ch.key, idx);
+        items.push({ type: 'node', chapter: ch.key, idx, num, title: c.title, story: c.story, difficulty: c.difficulty, stars,
+                     state: stars ? 'done' : unlocked ? 'open' : 'locked' });
+      });
     });
-    // eindeloos archief: laatste drie opgeloste dossiers + de volgende drie
-    const archOpen = Campaign.chapterOpen(Campaign.ARCHIVE);
-    const maxN = Campaign.archiveMax();
-    const archCards = [];
-    for (let n = Math.max(1, maxN - 2); n <= maxN + 3; n++) {
-      const c = Campaign.archive(n);
-      archCards.push(card(c, archOpen && Campaign.isUnlocked(Campaign.ARCHIVE, c.idx), Campaign.stars(Campaign.ARCHIVE, c.idx), n));
-    }
-    const solvedArch = Campaign.archiveCount();
-    const archNote = archOpen ? '' : `<p class="chapter-lock">🔒 Los ${Campaign.ARCHIVE_UNLOCK} campagnezaken op om het archief te openen.</p>`;
-    sections.push(`<section class="chapter"><h3 class="chapter-title">📁 Het archief <small>eindeloos</small></h3>
-      <p class="chapter-tag">Koude zaken zonder einde: het thema wisselt per dossier en elk dossier telt mee voor je rang.${solvedArch ? ` ${solvedArch} opgelost.` : ''}</p>${archNote}<div class="case-grid">${archCards.join('')}</div></section>`);
-    list.innerHTML = sections.join('');
-    list.querySelectorAll('.case-card:not(.locked)').forEach(b => b.addEventListener('click', () => this.startCampaignCase(b.dataset.chapter, +b.dataset.idx)));
+    const archOpen = themeOpen && Campaign.chapterOpen(Campaign.ARCHIVE);
+    items.push({ type: 'sign', title: '📁 Het archief · eindeloos', open: archOpen, done: false, key: Campaign.ARCHIVE });
+    Campaign.archiveFor(themeId).forEach(c => items.push({ type: 'node', chapter: Campaign.ARCHIVE, idx: c.idx, num: c.title, title: c.title, story: c.story,
+      difficulty: c.difficulty, stars: Campaign.stars(Campaign.ARCHIVE, c.idx), state: themeOpen ? c.state : 'locked', archive: true }));
+    return items;
   },
+  renderMap() {
+    const th = Themes.get(this.mapWorld), screen = document.getElementById('screen-campaign');
+    if (!screen) return;
+    screen.style.setProperty('--wa', th.map.accent);
+    screen.style.setProperty('--wr', th.map.ring);
+    document.getElementById('map-title').textContent = `${th.icon} ${th.title}`;
+    document.getElementById('campaign-total').textContent = `★ ${Campaign.worldStars(th.id)}/${Campaign.worldTotal(th.id) * 3}`;
+    // wereldkiezer
+    const solved = Board.loadStats().solved || 0;
+    document.getElementById('world-tabs').innerHTML = Themes.list().map(t => {
+      const need = (t.unlock || 0) - solved;
+      return `<button type="button" class="world-tab${t.id === th.id ? ' active' : ''}" data-theme="${t.id}">${t.icon} ${t.short}${need > 0 ? `<small>nog ${need} ${need === 1 ? 'zaak' : 'zaken'}</small>` : ''}</button>`;
+    }).join('');
+    document.querySelectorAll('.world-tab').forEach(b => b.addEventListener('click', () => { this.mapWorld = b.dataset.theme; this.renderMap(); }));
+    // pad en knopen
+    const scroll = document.getElementById('map-scroll'), canvas = document.getElementById('map-canvas');
+    scroll.style.backgroundImage = `url(${th.map.file})`;
+    const items = this.mapItems(th.id);
+    const W = canvas.clientWidth || 393;
+    let y = 46, k = 0;
+    const pts = [];
+    items.forEach(it => {
+      if (it.type === 'sign') { it.y = y + 10; y += 88; return; }   // ruimte voor de pion boven de eerste knoop
+      it.x = this.MAP_X[k % this.MAP_X.length]; it.y = y; k++; y += 96;
+      pts.push([it.x * W / 100, it.y]);
+    });
+    const H = y + 30;
+    canvas.style.height = `${H}px`;
+    const d = pts.map((p, i) => (i ? 'L' : 'M') + p[0].toFixed(1) + ' ' + p[1]).join(' ');
+    let html = `<svg class="map-path" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" aria-hidden="true"><path d="${d}"/></svg>`;
+    const current = items.find(it => it.type === 'node' && it.state === 'open') || null;
+    this.mapCurrent = current;
+    items.forEach(it => {
+      if (it.type === 'sign') { html += `<span class="msign${it.done ? ' done' : it.open ? '' : ' locked'}" style="top:${it.y}px">${it.open ? '' : '🔒 '}${it.title}</span>`; return; }
+      const stars = it.stars ? '★'.repeat(it.stars) + '☆'.repeat(3 - it.stars) : '';
+      html += `<button type="button" class="mnode ${it.state}" style="left:${it.x}%;top:${it.y}px" data-chapter="${it.chapter}" data-idx="${it.idx}" aria-label="${it.archive ? it.title : 'Zaak ' + it.num + ': ' + it.title}">` +
+              `${it.state === 'locked' ? '🔒' : it.archive ? '📁' : it.num}${stars ? `<span class="mnode-stars">${stars}</span>` : ''}${it === current ? '<span class="mnode-pin">🕵️</span>' : ''}</button>`;
+    });
+    canvas.innerHTML = html;
+    canvas.querySelectorAll('.mnode').forEach(b => b.addEventListener('click', () =>
+      this.openNode(items.find(it => it.type === 'node' && it.chapter === b.dataset.chapter && it.idx === +b.dataset.idx))));
+    this.closeNode();
+    // grote knop onderin
+    const play = document.getElementById('btn-map-play');
+    const need = (th.unlock || 0) - solved;
+    if (need > 0) { play.disabled = true; play.textContent = `🔒 Los nog ${need} ${need === 1 ? 'zaak' : 'zaken'} op om ${th.title} te openen`; }
+    else if (current) { play.disabled = false; play.textContent = `▶ Speel ${current.archive ? current.title : 'zaak ' + current.num + ' · ' + current.title}`; }
+    else { play.disabled = true; play.textContent = `🔒 Los ${Campaign.ARCHIVE_UNLOCK} campagnezaken op voor het archief`; }
+    // naar de huidige knoop scrollen
+    const target = current || items.filter(it => it.type === 'node').pop();
+    if (target) setTimeout(() => { scroll.scrollTop = Math.max(0, target.y - (scroll.clientHeight || 520) * 0.45); }, 0);
+  },
+  openNode(it) {
+    if (!it) return;
+    const pop = document.getElementById('map-pop');
+    const d = DIFFICULTY[it.difficulty] || {};
+    const stars = it.stars ? '★'.repeat(it.stars) + '☆'.repeat(3 - it.stars) : '☆☆☆';
+    const locked = it.state === 'locked';
+    const th = Themes.get(this.mapWorld);
+    const lockText = !this.themeUnlocked(th) ? `Los eerst ${th.unlock} zaken op (vrij spel of dagelijks) om ${th.title} te openen.`
+      : it.archive ? (Campaign.chapterOpen(Campaign.ARCHIVE) ? 'Los eerst het vorige dossier van deze wereld op.' : `Het archief opent na ${Campaign.ARCHIVE_UNLOCK} campagnezaken.`)
+      : it.idx === 0 ? 'Maak eerst het vorige deel af.' : `Los eerst zaak ${it.num - 1} op.`;
+    pop.innerHTML = `<div class="map-pop-card">
+      <div class="map-pop-head"><h3>${it.archive ? it.title : `Zaak ${it.num}: ${it.title}`}</h3><span class="diff-pill diff-${it.difficulty}">${d.icon || ''} ${d.label || it.difficulty}</span></div>
+      <p>${locked ? '🔒 ' + lockText : it.story}</p>
+      <div class="map-pop-row"><span class="map-pop-best">Beste score: <b>${stars}</b></span>${locked ? '' : `<button type="button" class="btn btn-primary btn-sm" id="btn-pop-play">${it.stars ? 'Speel opnieuw' : 'Speel'}</button>`}</div>
+    </div>`;
+    pop.hidden = false;
+    const b = document.getElementById('btn-pop-play');
+    if (b) b.addEventListener('click', () => { this.closeNode(); this.startCampaignCase(it.chapter, it.idx); });
+  },
+  closeNode() { const pop = document.getElementById('map-pop'); if (pop) { pop.hidden = true; pop.innerHTML = ''; } },
+  playCurrent() { if (this.mapCurrent) this.startCampaignCase(this.mapCurrent.chapter, this.mapCurrent.idx); },
 
+  partsSeen() { try { return JSON.parse(this.storageGet('crimson-parts-seen') || '[]'); } catch (e) { return []; } },
+  // Eerste zaak van een deel: eerst de "Nieuw deel"-splash, dan de briefing van Van Dam, dan het bord.
   startCampaignCase(key, idx) {
     const c = Campaign.caseAt(key, idx);
-    if (c && Board.start(c.difficulty, c.seed, false, c.theme, c)) this.navigateTo('board');
-    else this.showToast('⚠️', 'Deze zaak kon niet geladen worden.');
+    if (!c) return this.showToast('⚠️', 'Deze zaak kon niet geladen worden.');
+    const ch = Campaign.chapter(key);
+    const go = () => {
+      if (!Board.start(c.difficulty, c.seed, false, c.theme, c)) return this.showToast('⚠️', 'Deze zaak kon niet geladen worden.');
+      this.storageSet('crimson-last-world', c.theme);
+      this.navigateTo('board');
+      this.showBriefing(c, ch);
+    };
+    if (ch && idx === 0 && !this.partsSeen().includes(key)) this.showPartSplash(ch, go); else go();
+  },
+  showBriefing(c, ch) {
+    const b = Mentor.briefing(Board.puzzle, c, ch);
+    document.getElementById('briefing-sub').textContent = b.sub;
+    document.getElementById('briefing-text').textContent = `“${b.text}”`;
+    Board.stopTimer();   // de klok loopt pas na "Aan de slag"
+    this.showModal('briefing-modal');
+  },
+  showPartSplash(ch, then) {
+    const th = Themes.get(ch.theme);
+    document.getElementById('part-icon').textContent = th.icon;
+    document.getElementById('part-title').textContent = ch.title;
+    document.getElementById('part-intro').textContent = ch.intro;
+    document.getElementById('btn-part-go').textContent = `Begin ${ch.title.split(' · ')[0]}`;
+    const seen = this.partsSeen();
+    if (!seen.includes(ch.key)) { seen.push(ch.key); this.storageSet('crimson-parts-seen', JSON.stringify(seen)); }
+    this.partThen = then;
+    this.showModal('part-modal');
+  },
+
+  // ══════════════════════════════════════════════════════════
+  //  THUISSCHERM: dagelijkse zaak, weekstrook, zaak van de week
+  // ══════════════════════════════════════════════════════════
+  bindHome() {
+    const on = (id, fn) => { const el = document.getElementById(id); if (el) el.addEventListener('click', fn); };
+    on('btn-free', () => this.navigateTo('free'));
+    on('btn-free-back', () => this.navigateTo('menu'));
+    on('btn-awards', () => this.openAwards());
+    on('btn-awards-back', () => this.navigateTo('menu'));
+    on('menu-rank', () => this.openAwards());
+    on('btn-week', () => this.startWeekly());
+    on('btn-week-share', () => this.shareAny(Progress.weekShare()));
+    on('btn-map', () => { if (Board.campaignCase) this.openMap(Board.campaignCase.theme); else this.navigateTo('menu'); });
+    document.querySelectorAll('.awards-tab').forEach(t => t.addEventListener('click', () => this.showAwardsTab(t.dataset.tab)));
+  },
+  renderHome() {
+    const set = (id, t) => { const el = document.getElementById(id); if (el) el.textContent = t; };
+    if (!document.getElementById('daily-title')) return;
+    const dayNo = this.getDayNumber(), theme = Themes.forDay(dayNo);
+    const done = this.storageGet('crimson-board-daily-done') === new Date().toDateString();
+    set('daily-title', `Zaak van vandaag: ${Progress.dailyTitle(dayNo)}`);
+    set('daily-text', `${theme.icon} ${theme.title}. ${theme.tagline}`);
+    set('daily-bonus', done ? '✓ Vandaag opgelost' : `🪙 +${Progress.DAILY_BONUS} punten`);
+    set('btn-board-daily', done ? 'Nog een zaak' : 'Speel');
+    this.renderWeek();
+    const w = Progress.weekly(), wdone = Progress.weekDone(), wt = Themes.get(w.theme);
+    set('week-title', w.title);
+    set('week-text', wdone
+      ? `Opgelost! Week ${w.week} · ${wt.icon} ${wt.title}. Volgende week ligt er een nieuwe zaak.`
+      : `Week ${w.week} · ${wt.icon} ${wt.title} · moeilijk. Elke week één speciale zaak; iedereen speelt dezelfde. Deel je resultaat met andere speurders.`);
+    set('week-bonus', wdone ? '✓ Opgelost' : `🪙 +${Progress.WEEK_BONUS} punten`);
+    set('btn-week', wdone ? 'Nog eens' : 'Start');
+    const ws = document.getElementById('btn-week-share');
+    if (ws) ws.hidden = !wdone;
+    this.updateCampaignProgress();
+  },
+  renderWeek() {
+    const strip = document.getElementById('week-strip');
+    if (!strip) return;
+    const days = Progress.week();
+    strip.innerHTML = days.map(d => `<span class="wday${d.played ? ' played' : ''}${d.today ? ' today' : ''}${d.future ? ' future' : ''}${d.reward ? ' reward' : ''}"><i>${d.played ? '✓' : d.reward ? '🏅' : d.label[0]}</i>${d.label}</span>`).join('');
+    const note = document.getElementById('streak-note');
+    const today = days.find(d => d.today);
+    if (note) note.textContent = today && today.played ? 'Vandaag gespeeld. Tot morgen!' : 'Speel vandaag om je streak te houden';
+  },
+  startWeekly() {
+    const w = Progress.weekly();
+    if (Board.start(w.difficulty, w.seed, false, w.theme, null, { weekly: w })) this.navigateTo('board');
+    else this.showToast('⚠️', 'Kon geen plattegrond genereren, probeer opnieuw.');
+  },
+
+  // ══════════════════════════════════════════════════════════
+  //  VITRINE & BUREAU: onderscheidingen en bewijsstukken
+  // ══════════════════════════════════════════════════════════
+  openAwards() { this.renderAwards(); this.navigateTo('awards'); },
+  showAwardsTab(tab) {
+    document.querySelectorAll('.awards-tab').forEach(t => t.classList.toggle('active', t.dataset.tab === tab));
+    document.getElementById('awards-medals').hidden = tab !== 'medals';
+    document.getElementById('awards-vitrine').hidden = tab !== 'vitrine';
+  },
+  renderAwards() {
+    const have = Progress.medals(), n = Object.keys(have).length;
+    document.getElementById('awards-points').textContent = `🪙 ${Progress.points()} punten`;
+    document.getElementById('medal-count').textContent = n;
+    document.getElementById('awards-medals').innerHTML =
+      `<div class="medals-head"><h3>Medailleoverzicht</h3><span>${n} van de ${Progress.MEDALS.length} behaald</span></div>` +
+      Progress.MEDALS.map(m => `<div class="medal${have[m.id] ? ' got' : ''}"><span class="medal-icon">${m.icon}</span><span class="medal-body"><span class="medal-title">${m.title}</span><span class="medal-sub">${have[m.id] ? 'Behaald op ' + Progress.formatDate(have[m.id]) : m.hint}</span></span></div>`).join('');
+    const total = Progress.evidenceCount();
+    document.getElementById('awards-vitrine').innerHTML =
+      `<div class="medals-head"><h3>Bewijsstukken</h3><span>${total} van de ${Campaign.total()} verzameld</span></div>` +
+      Themes.list().map(t => {
+        const ev = Progress.evidence(t.id), got = ev.filter(e => e.got).length;
+        return `<div class="shelf-world"><h4>${t.icon} ${t.title} <small>${got}/${ev.length}</small></h4><div class="shelf">${ev.map(e =>
+          `<span class="ev${e.got ? '' : ' miss'}" title="${e.title}"><i>${e.icon}</i><b>${e.got ? e.name : 'Gesloten'}</b></span>`).join('')}</div><div class="shelf-bar"><i style="width:${Math.round(got / ev.length * 100)}%"></i></div></div>`;
+      }).join('');
+  },
+  medalQueue: [],
+  medalShowing: false,
+  showMedal(m) { this.medalQueue.push(m); if (!this.medalShowing) this.pumpMedals(); },
+  pumpMedals() {
+    const m = this.medalQueue.shift(), t = document.getElementById('medal-toast');
+    if (!m || !t) { this.medalShowing = false; return; }
+    this.medalShowing = true;
+    document.getElementById('medal-toast-icon').textContent = m.icon;
+    document.getElementById('medal-toast-text').textContent = `Nieuwe trofee: “${m.title}” ontgrendeld.`;
+    t.classList.add('show');
+    Sound.play('medal');
+    setTimeout(() => { t.classList.remove('show'); setTimeout(() => this.pumpMedals(), 400); }, 2800);
   },
 
   // ══════════════════════════════════════════════════════════
@@ -216,6 +409,7 @@ const App = {
     this.selectedTheme = 'landhuis';
     this.updateStreakDisplay();
     this.updateBoardStats();
+    this.renderHome();
     this.showToast('🧹', 'Alle voortgang is gewist.');
   },
 
@@ -320,7 +514,7 @@ const App = {
 
   updateBoardStats() {
     this.renderThemePicker();
-    this.updateCampaignProgress();
+    this.renderHome();
     const el = document.getElementById('board-stats');
     const dateEl = document.getElementById('board-daily-date');
     if (!el) return;
@@ -1063,10 +1257,13 @@ const App = {
     });
 
     document.getElementById('btn-play-again').textContent =
-      this.isTutorial ? 'Naar het hoofdmenu' : 'Opnieuw Spelen';
+      this.isTutorial ? 'Naar het hoofdmenu' : 'Naar het menu';
     document.getElementById('btn-next-case').hidden = true;
     document.getElementById('results-stars').hidden = true;
     document.getElementById('btn-remind').hidden = true;
+    ['results-panel', 'results-mentor', 'btn-map'].forEach(id => { document.getElementById(id).hidden = true; });
+    document.getElementById('confetti').innerHTML = '';
+    document.getElementById('results-stamp').classList.remove('pending');
 
     // Stats
     document.getElementById('stat-time').textContent = this.formatTime(this.timer.seconds);
@@ -1090,6 +1287,10 @@ const App = {
       this.isDaily && this.streak.count > 1 ? `🔥 ${this.streak.count} dagen streak!` : '',
     ].filter(Boolean).join('\n');
 
+    this.shareAny(text);
+  },
+  shareAny(text) {
+    if (!text) return;
     const viaShare = () => navigator.share
       ? navigator.share({ text }).catch(() => {})
       : Promise.reject(new Error('no share'));
@@ -1187,11 +1388,13 @@ const App = {
     this.streak.lastDate = today;
 
     this.storageSet('crimson-streak', JSON.stringify(this.streak));
+    Progress.logDaily();
     this.updateStreakDisplay();
   },
 
   updateStreakDisplay() {
     document.getElementById('streak-count').textContent = this.streak.count;
+    this.renderWeek();
   },
 
   // ══════════════════════════════════════════════════════════
