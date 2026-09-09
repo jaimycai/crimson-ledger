@@ -302,6 +302,9 @@ const active = () => document.querySelector('.screen.active').id;
     document.getElementById('btn-close-settings').click();
     check(fs.existsSync(path.join(DIR, 'privacy.html')) && fs.existsSync(path.join(DIR, 'support.html')) && fs.existsSync(path.join(DIR, 'icon-1024.png')), 'privacy, support en 1024-icoon aanwezig');
 
+    // ── startscherm: laadbalk vol, knop zichtbaar ──
+    check(document.getElementById('screen-splash').classList.contains('loaded') && document.querySelector('#splash-load i').style.width === '100%', 'startscherm: laadbalk vol en knop onthuld');
+
     // ── klassiek raster blijft bereikbaar ──
     check(!!document.getElementById('btn-daily') && !!document.getElementById('btn-freeplay'), 'klassiek raster blijft bereikbaar');
     check(errors.length === 0, 'geen JS-fouten: ' + errors.join(' | '));

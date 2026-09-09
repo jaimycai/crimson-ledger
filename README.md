@@ -12,6 +12,7 @@ Plaats de verdachten op de plattegrond met de aanwijzingen en wijs aan wie allee
 - **Inspecteur Van Dam** geeft een briefing voor elke campagnezaak en een opmerking erna.
 - **Zaak Gesloten**: stempel, confetti, sterren, punten (basis, tijd, zonder hint, in één keer), rang. Punten, 17 onderscheidingen en een vitrine met 96 bewijsstukken onder "Vitrine".
 - Hints leggen de logische stap uit en verklappen nooit de plek.
+- Voortgang staat op het toestel (localStorage, in de iOS-app ook in de native opslag die in de back-up zit); geen account nodig.
 - Het klassieke deductieraster (de eerdere versie) staat ingeklapt onder "Klassiek deductieraster".
 
 ## Lokaal starten
@@ -41,7 +42,7 @@ De engine-tests bewijzen voor honderden gegenereerde puzzels én alle 96 campagn
 | `campaign.js` | 96 vaste zaken in 12 delen (titel, verhaal, bewijsstuk, moeilijkheid, sterren, briefing) + eindeloos archief per wereld |
 | `progress.js` | punten, weekstrook, zaak van de week, onderscheidingen, vitrine |
 | `mentor.js` | Inspecteur Van Dam: briefing, opmerkingen, "Nieuw!"-uitleg, reacties bij de beschuldiging |
-| `assets/` | wereldkaart-achtergronden en de portretten van Van Dam (uit de Figma-mock-ups) |
+| `assets/` | wereldkaart-achtergronden, de portretten van Van Dam (uit de Figma-mock-ups) en de lettertypes (`fonts/`, lokaal, geen Google Fonts) |
 | `avatars.js` | SVG-portretten, meubels en slachtoffer, zonder externe assets |
 | `sound.js` | gesynthetiseerde geluiden (WebAudio) |
 | `app.js` | navigatie, thuisscherm, wereldkaart, vitrine, briefing/nieuw deel, dagelijkse zaak, streak, klassiek raster |

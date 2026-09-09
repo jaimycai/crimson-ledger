@@ -34,6 +34,7 @@ const App = {
   //  INITIALISATIE
   // ══════════════════════════════════════════════════════════
   init() {
+    this.bootSplash();
     this.loadStreak();
     this.bindNavigation();
     this.bindGameControls();
@@ -48,6 +49,38 @@ const App = {
     this.updateStreakDisplay();
     this.renderHome();
     this.scheduleReminder();
+  },
+
+  // ══════════════════════════════════════════════════════════
+  //  OPSTART: laadbalk op het startscherm, dan de knop; het native
+  //  laadscherm (zelfde beeld) gaat pas weg als de webversie er staat.
+  // ══════════════════════════════════════════════════════════
+  bootSplash() {
+    const screen = document.getElementById('screen-splash'), bar = document.querySelector('#splash-load i');
+    if (!screen || !bar) return;
+    const set = pct => { bar.style.width = pct + '%'; };
+    set(30);
+    const fonts = (document.fonts && document.fonts.ready) ? document.fonts.ready.catch(() => {}) : Promise.resolve();
+    const loaded = document.readyState === 'complete' ? Promise.resolve() : new Promise(r => window.addEventListener('load', r, { once: true }));
+    fonts.then(() => set(70));
+    loaded.then(() => set(85));
+    const done = () => {
+      if (screen.classList.contains('loaded')) return;
+      set(100);
+      const btn = document.getElementById('btn-splash-start');
+      if (btn && this.storageGet('crimson-board-tutorial-done')) btn.textContent = 'Verder';
+      screen.classList.add('loaded');
+      this.hideNativeSplash();
+    };
+    // minstens 0,9 s te zien, hooguit 2,5 s wachten (fonts of load die niet komen)
+    const minWait = new Promise(r => setTimeout(r, 900));
+    Promise.race([Promise.all([fonts, loaded, minWait]), new Promise(r => setTimeout(r, 2500))]).then(done, done);
+  },
+  hideNativeSplash() {
+    try {
+      const P = window.Capacitor && window.Capacitor.Plugins;
+      if (P && P.SplashScreen) P.SplashScreen.hide({ fadeOutDuration: 250 }).catch(() => {});
+    } catch (e) { /* web */ }
   },
 
   // ══════════════════════════════════════════════════════════
@@ -403,8 +436,10 @@ const App = {
 
   resetProgress() {
     try {
-      Object.keys(localStorage).filter(k => k.startsWith('crimson-')).forEach(k => localStorage.removeItem(k));
+      Object.keys(localStorage).filter(k => k.startsWith('crimson-')).forEach(k => this.storageRemove(k));
     } catch (e) { /* privémodus */ }
+    const P = this.prefs();
+    if (P) P.keys().then(({ keys }) => (keys || []).filter(k => k.startsWith('crimson-')).forEach(k => P.remove({ key: k }).catch(() => {}))).catch(() => {});
     this.streak = { count: 0, lastDate: null };
     this.selectedTheme = 'landhuis';
     this.updateStreakDisplay();
@@ -1360,11 +1395,39 @@ const App = {
       now.toLocaleDateString('nl-NL', options);
   },
 
+  // Voortgang staat in localStorage (web én app). In de iOS-app wordt elke
+  // crimson-sleutel ook in de native opslag (UserDefaults) gezet: die zit in
+  // de iCloud-/iTunes-back-up en overleeft het wissen van webview-data.
+  // Bij het opstarten wordt een lege webview daaruit hersteld.
+  prefs() {
+    try { const P = window.Capacitor && window.Capacitor.Plugins; return (P && P.Preferences) || null; } catch (e) { return null; }
+  },
   storageGet(key) {
     try { return localStorage.getItem(key); } catch (e) { return null; }
   },
   storageSet(key, value) {
     try { localStorage.setItem(key, value); } catch (e) { /* privémodus: negeren */ }
+    const P = this.prefs();
+    if (P && String(key).startsWith('crimson-')) P.set({ key, value: String(value) }).catch(() => {});
+  },
+  storageRemove(key) {
+    try { localStorage.removeItem(key); } catch (e) { /* negeren */ }
+    const P = this.prefs();
+    if (P) P.remove({ key }).catch(() => {});
+  },
+  async restoreFromNative() {
+    const P = this.prefs();
+    if (!P) return;
+    try {
+      let hasLocal = false;
+      try { for (let i = 0; i < localStorage.length; i++) if (String(localStorage.key(i)).startsWith('crimson-')) { hasLocal = true; break; } } catch (e) { /* geen localStorage */ }
+      if (hasLocal) return;
+      const { keys } = await P.keys();
+      for (const key of (keys || []).filter(k => k.startsWith('crimson-'))) {
+        const { value } = await P.get({ key });
+        if (value !== null && value !== undefined) { try { localStorage.setItem(key, value); } catch (e) { /* negeren */ } }
+      }
+    } catch (e) { /* geen native opslag */ }
   },
 
   loadStreak() {
@@ -1445,4 +1508,7 @@ const App = {
 
 
 // ── Opstarten ────────────────────────────────────────────────
-document.addEventListener('DOMContentLoaded', () => App.init());
+document.addEventListener('DOMContentLoaded', () => {
+  App.restoreFromNative().then(() => App.init(), () => App.init());
+  setTimeout(() => App.hideNativeSplash(), 5000);   // vangnet: nooit blijven hangen op het native laadscherm
+});

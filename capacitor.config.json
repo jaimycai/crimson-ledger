@@ -8,7 +8,7 @@
     "preferredContentMode": "mobile"
   },
   "plugins": {
-    "SplashScreen": { "launchShowDuration": 800, "launchAutoHide": true, "backgroundColor": "#FAF5EF" },
+    "SplashScreen": { "launchAutoHide": false, "launchShowDuration": 3000, "launchFadeOutDuration": 250, "backgroundColor": "#FAF5EF", "showSpinner": false },
     "StatusBar": { "style": "LIGHT", "backgroundColor": "#FAF5EF" }
   }
 }

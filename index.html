@@ -5,9 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
   <title>Crimson Ledger — Speur. Redeneer. Ontmasker.</title>
   <meta name="description" content="Crimson Ledger is een moordmysterie-puzzelgame op een plattegrond. Speur naar aanwijzingen, redeneer wie waar stond en ontmasker de moordenaar.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <meta name="theme-color" content="#8B2E1C">
   <link rel="manifest" href="manifest.json">
   <link rel="apple-touch-icon" href="icon-192.png">
@@ -25,8 +22,11 @@
       <h1 class="splash-title">Crimson<br>Ledger</h1>
       <p class="splash-tagline">Speur. Redeneer. Ontmasker.</p>
       <p class="splash-subtitle">Een moordmysterie logic-puzzel</p>
-      <button id="btn-splash-start" class="btn btn-primary" style="max-width:260px;width:100%">Begin</button>
-      <span class="splash-footer">Elke puzzel ontmaskert een moordenaar</span>
+      <div class="splash-action">
+        <div class="splash-load" id="splash-load" role="progressbar" aria-label="Laden"><i></i></div>
+        <button id="btn-splash-start" class="btn btn-primary btn-block splash-reveal">Begin</button>
+      </div>
+      <span class="splash-footer splash-reveal">Elke puzzel ontmaskert een moordenaar</span>
     </section>
 
     <!-- ═══════ SCHERM 2: HOOFDMENU ═══════ -->

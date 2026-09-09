@@ -4,6 +4,5 @@ const FILES = ['index.html', 'style.css', 'app.js', 'board.js', 'floorplan.js', 
   'campaign.js', 'progress.js', 'mentor.js', 'sound.js', 'avatars.js', 'manifest.json', 'sw.js', 'icon-192.png', 'icon-512.png', 'privacy.html', 'support.html'];
 fs.rmSync('www', { recursive: true, force: true }); fs.mkdirSync('www');
 for (const f of FILES) fs.copyFileSync(f, path.join('www', f));
-fs.mkdirSync('www/assets');
-for (const f of fs.readdirSync('assets')) fs.copyFileSync(path.join('assets', f), path.join('www/assets', f));
+fs.cpSync('assets', 'www/assets', { recursive: true });
 console.log(`www/: ${FILES.length} bestanden + assets/`);

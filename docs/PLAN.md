@@ -163,6 +163,22 @@ Alles uit "Naar een episch spel" behalve de nieuwe spelelementen (leugenaar/getu
   verklaringen), bordtest dekt thuisscherm, kaart, splash, briefing, verklaringen, Nieuw!-kaart,
   beschuldiging, ceremonie, punten, weekzaak, vitrine. Alle 6 suites groen.
 
+## Laadscherm, lettertypes en opslag (9 sep, avond)
+
+- Jaimy vond het native laadscherm (app-icoon in een vierkant) lelijk. Nu: het native
+  laadscherm is een render van het echte startscherm (`splash-2732.png`, gemaakt met puppeteer
+  op 393×852 met veilige randen, in het asset-catalog gezet), de Capacitor-splash blijft staan
+  tot de webversie er is (`launchAutoHide: false`, `App.hideNativeSplash`), en op het
+  startscherm loopt een laadbalk vol (`App.bootSplash`: fonts + load, minstens 0,9 s, hooguit
+  2,5 s) waarna "Begin" (of "Verder" voor wie al gespeeld heeft) verschijnt. De ring om de
+  badge pulseert pas na het laden, zodat de overgang onzichtbaar is.
+- Lettertypes (Playfair Display, Inter; latin, variabel, 126 KB) staan nu in `assets/fonts/` en
+  worden niet meer van Google geladen: offline en in de app ziet alles er hetzelfde uit.
+- Voortgang: alle `crimson-*`-sleutels staan in localStorage én (in de iOS-app) in de native
+  opslag via `@capacitor/preferences` (UserDefaults, zit in de iCloud-back-up). Bij het opstarten
+  wordt een lege webview daaruit hersteld (`App.restoreFromNative`); wissen wist beide.
+  Geen accounts: voortgang is per toestel.
+
 ## Openstaande punten (volgorde van voorstel)
 
 1. App Store: stappen in `store/CHECKLIST.md` (Apple-account, archiveren, uploaden).
