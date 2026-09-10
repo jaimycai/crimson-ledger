@@ -76,12 +76,13 @@ const App = {
     const minWait = new Promise(r => setTimeout(r, 900));
     Promise.race([Promise.all([fonts, loaded, minWait]), new Promise(r => setTimeout(r, 2500))]).then(done, done);
   },
-  // Eén keer vragen om een beoordeling (SKStoreReviewController), pas na vijf opgeloste zaken,
-  // en niet meteen: de speler is dan net klaar met de ceremonie.
+  // Eén keer vragen om een beoordeling (eigen ReviewPlugin in ios/App/App, SKStoreReviewController),
+  // pas na vijf opgeloste zaken en niet meteen: de speler is dan net klaar met de ceremonie.
   maybeAskReview() {
     try {
-      const P = window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.InAppReview;
-      if (!P || this.storageGet('crimson-review-asked')) return;
+      const C = window.Capacitor;
+      const P = C && ((C.Plugins && C.Plugins.InAppReview) || (typeof C.registerPlugin === 'function' && C.registerPlugin('InAppReview')));
+      if (!P || !C.isNativePlatform || !C.isNativePlatform() || this.storageGet('crimson-review-asked')) return;
       if ((Board.loadStats().solved || 0) < 5) return;
       this.storageSet('crimson-review-asked', '1');
       setTimeout(() => { P.requestReview().catch(() => {}); }, 3500);

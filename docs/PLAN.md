@@ -196,8 +196,10 @@ voor de App Store en later hoog in de rankings.
 - **Na de oefenzaak** meteen de kaart in ("🗺️ Naar de kaart") in plaats van het menu: de
   speler ziet zaak 1 pulseren en de grote speelknop.
 - **Vonkjes** bij het neerzetten van een verdachte (`Board.sparks`).
-- **Beoordeling vragen** (`@capacitor-community/in-app-review`, `App.maybeAskReview`): één
-  keer, na de vijfde opgeloste zaak, 3,5 s na het resultaat. Apple's SKStoreReviewController
+- **Beoordeling vragen** (eigen `ReviewPlugin.swift` in `ios/App/App`, aangemeld in
+  `MainViewController.swift`; `App.maybeAskReview`): één keer, na de vijfde opgeloste zaak, 3,5 s
+  na het resultaat. De community-plugin `@capacitor-community/in-app-review` linkte niet (zijn
+  iOS 17-pad trekt SwiftUI mee), vandaar tien regels Swift met `SKStoreReviewController`. Apple's SKStoreReviewController
   bepaalt zelf of het venster echt verschijnt (max. 3× per jaar). Beoordelingen zijn de
   belangrijkste rankingfactor die we vanuit de app kunnen beïnvloeden.
 
