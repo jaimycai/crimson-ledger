@@ -43,8 +43,8 @@ Elke aanwijzing is een verklaring: "Ik stond direct naast een plant." Klopt een 
 ELKE DAG EEN ZAAK, ELKE WEEK EEN GROTE
 De dagelijkse zaak wisselt per dag van wereld; een weekstrook laat je streak zien. De zaak van de week is voor iedereen dezelfde en deelbaar als emoji-kaart.
 
-EEN WERELDKAART VOL ZAKEN
-96 zaken in twaalf delen (drie per wereld) op een kronkelpad door elke wereld, oplopend van makkelijk naar moeilijk, met sterren voor wie het zonder hint en in één keer doet. Daarna een eindeloos archief. Inspecteur Van Dam geeft je voor elke zaak een briefing.
+EÉN PAD DOOR VIER WERELDEN
+96 zaken in twaalf delen (drie per wereld) op één doorlopend, getekend kronkelpad, oplopend van makkelijk naar moeilijk, met sterren voor wie het zonder hint en in één keer doet. Daarna een eindeloos archief. Inspecteur Van Dam geeft je voor elke zaak een briefing.
 
 PUNTEN, RANGEN, ONDERSCHEIDINGEN
 Zaak gesloten: stempel, sterren, punten voor tijd en zuiver speurwerk, en een rangbalk van Rekruut tot Meesterdetective. Zeventien onderscheidingen en een vitrine met een bewijsstuk per opgeloste zaak.

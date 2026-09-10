@@ -51,11 +51,13 @@ const check = (cond, msg) => { if (cond) console.log('ok  ', msg); else { failur
   document.querySelector('.murder-opt[data-s="1"]').click(); await sleep(1100);
   check(active() === 'screen-results', 'board tutorial results screen');
   check(document.getElementById('results-headline').textContent === 'Goed gedaan!', 'board tutorial headline');
-  check(document.getElementById('btn-play-again').textContent === 'Naar het hoofdmenu', 'results button text for tutorial');
+  check(/Naar de kaart/.test(document.getElementById('btn-play-again').textContent), 'results button text for tutorial: to the map');
   check(document.getElementById('streak-count').textContent === '0', 'tutorial does not count for the streak');
   check(window.localStorage.getItem('crimson-board-tutorial-done') === '1', 'board tutorial marked done');
   click('btn-play-again'); await sleep(350);
-  check(active() === 'screen-menu', 'menu after tutorial');
+  check(active() === 'screen-campaign', 'world map after the board tutorial');
+  click('btn-campaign-back'); await sleep(350);
+  check(active() === 'screen-menu', 'menu after the map');
   click('btn-tutorial'); await sleep(350);
   check(active() === 'screen-board' && window.Board.isTutorial, 'board tutorial replay from menu');
   click('btn-board-tutorial-skip'); await sleep(350);

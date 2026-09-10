@@ -6,7 +6,7 @@ Plaats de verdachten op de plattegrond met de aanwijzingen en wijs aan wie allee
 
 ## Spelen
 
-- **Oefenzaak** bij het eerste bezoek, daarna **Dagelijkse Zaak** (thema wisselt per dag, weekstrook met streak), **Zaak van de week** (iedereen dezelfde, deelbaar), **Campagne** op een **wereldkaart** (12 delen × 8 zaken met sterren, plus een eindeloos archief per wereld) en **Vrij spelen** per wereld en niveau.
+- **Oefenzaak** bij het eerste bezoek, daarna **Dagelijkse Zaak** (thema wisselt per dag, weekstrook met streak), **Zaak van de week** (iedereen dezelfde, deelbaar), **Campagne** op één doorlopende **wereldkaart** (vier werelden × 3 delen × 8 zaken met sterren, daarna een eindeloos archief) en **Vrij spelen** per wereld en niveau.
 - Vier werelden: Het Landhuis, Het Piratenschip, Grand Hotel Aurora, Station Orion — elk met eigen kamers, meubels, verdachten, vloer en kaart. Werelden gaan open naarmate je zaken oplost.
 - Aanwijzingen zijn **verklaringen** in de ik-vorm met portret; ze kleuren live groen of rood. Een "Nieuw in dit deel"-kaart legt elke nieuwe soort één keer uit.
 - **Inspecteur Van Dam** geeft een briefing voor elke campagnezaak en een opmerking erna.
@@ -42,7 +42,8 @@ De engine-tests bewijzen voor honderden gegenereerde puzzels én alle 96 campagn
 | `campaign.js` | 96 vaste zaken in 12 delen (titel, verhaal, bewijsstuk, moeilijkheid, sterren, briefing) + eindeloos archief per wereld |
 | `progress.js` | punten, weekstrook, zaak van de week, onderscheidingen, vitrine |
 | `mentor.js` | Inspecteur Van Dam: briefing, opmerkingen, "Nieuw!"-uitleg, reacties bij de beschuldiging |
-| `assets/` | wereldkaart-achtergronden, de portretten van Van Dam (uit de Figma-mock-ups) en de lettertypes (`fonts/`, lokaal, geen Google Fonts) |
+| `mapart.js` | getekende banners en decoraties voor de wereldkaart (platte vectorstijl) |
+| `assets/` | de portretten van Van Dam (uit de Figma-mock-ups) en de lettertypes (`fonts/`, lokaal, geen Google Fonts) |
 | `avatars.js` | SVG-portretten, meubels en slachtoffer, zonder externe assets |
 | `sound.js` | gesynthetiseerde geluiden (WebAudio) |
 | `app.js` | navigatie, thuisscherm, wereldkaart, vitrine, briefing/nieuw deel, dagelijkse zaak, streak, klassiek raster |

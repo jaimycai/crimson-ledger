@@ -76,6 +76,17 @@ const App = {
     const minWait = new Promise(r => setTimeout(r, 900));
     Promise.race([Promise.all([fonts, loaded, minWait]), new Promise(r => setTimeout(r, 2500))]).then(done, done);
   },
+  // Eén keer vragen om een beoordeling (SKStoreReviewController), pas na vijf opgeloste zaken,
+  // en niet meteen: de speler is dan net klaar met de ceremonie.
+  maybeAskReview() {
+    try {
+      const P = window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.InAppReview;
+      if (!P || this.storageGet('crimson-review-asked')) return;
+      if ((Board.loadStats().solved || 0) < 5) return;
+      this.storageSet('crimson-review-asked', '1');
+      setTimeout(() => { P.requestReview().catch(() => {}); }, 3500);
+    } catch (e) { /* niet beschikbaar */ }
+  },
   hideNativeSplash() {
     try {
       const P = window.Capacitor && window.Capacitor.Plugins;
@@ -120,6 +131,12 @@ const App = {
     on('btn-briefing-go', () => { this.hideModal('briefing-modal'); Board.startTimer(); });
     on('btn-part-go', () => { this.hideModal('part-modal'); const f = this.partThen; this.partThen = null; if (f) f(); });
     document.getElementById('map-pop').addEventListener('click', e => { if (e.target.id === 'map-pop') this.closeNode(); });
+    const scroll = document.getElementById('map-scroll');
+    scroll.addEventListener('scroll', () => {
+      if (this.spyPending) return;
+      this.spyPending = true;
+      (window.requestAnimationFrame || setTimeout)(() => { this.spyPending = false; this.mapSpy(); });
+    }, { passive: true });
     this.updateCampaignProgress();
   },
   nextCampaignCase() { return Campaign.nextOverall(t => this.themeUnlocked(Themes.get(t)), this.storageGet('crimson-last-world')); },
@@ -138,81 +155,141 @@ const App = {
     if (ic) ic.textContent = c ? Themes.get(c.theme).icon : '📖';
   },
 
-  openMap(themeId) { this.mapWorld = Themes.get(themeId).id; this.renderMap(); this.navigateTo('campaign'); },
+  openMap(themeId) {
+    if (themeId) this.mapWorld = Themes.get(themeId).id;
+    this.renderMap();
+    this.navigateTo('campaign');
+    setTimeout(() => this.scrollToCurrent(), 320);   // pas als het scherm zichtbaar is heeft de scrollbak een hoogte
+  },
   MAP_X: [50, 80, 50, 20],   // slingerpad: midden, rechts, midden, links
-  // Alles wat op de kaart van één wereld staat: wegwijzers per deel, 24 knopen, dan het archief.
-  mapItems(themeId) {
-    const th = Themes.get(themeId), themeOpen = this.themeUnlocked(th);
-    const items = [];
-    let num = 0;
-    Campaign.chaptersFor(themeId).forEach(ch => {
-      const open = Campaign.chapterOpen(ch.key, themeOpen);
-      items.push({ type: 'sign', title: ch.title, open, done: Campaign.chapterDone(ch.key), key: ch.key });
-      ch.cases.forEach((c, idx) => {
-        num++;
-        const stars = Campaign.stars(ch.key, idx);
-        const unlocked = open && Campaign.isUnlocked(ch.key, idx);
-        items.push({ type: 'node', chapter: ch.key, idx, num, title: c.title, story: c.story, difficulty: c.difficulty, stars,
-                     state: stars ? 'done' : unlocked ? 'open' : 'locked' });
+  // Alles op één doorlopend pad: per wereld een banner, wegwijzers per deel en 24 knopen; daarna het archief.
+  mapLayout(W = 393) {
+    const BH = Math.round(W * 200 / 393) + 16;   // banner schaalt mee met de breedte
+    const solved = Board.loadStats().solved || 0;
+    const sections = [], nodes = [];
+    let y = 0, k = 0;
+    Themes.list().forEach(th => {
+      const themeOpen = this.themeUnlocked(th);
+      const sec = { theme: th.id, th, open: themeOpen, need: Math.max(0, (th.unlock || 0) - solved), top: y, items: [],
+                    stars: Campaign.worldStars(th.id), total: Campaign.worldTotal(th.id), done: Campaign.worldDone(th.id) };
+      y += BH;   // banner
+      let num = 0;
+      Campaign.chaptersFor(th.id).forEach(ch => {
+        const open = Campaign.chapterOpen(ch.key, themeOpen);
+        sec.items.push({ type: 'sign', title: ch.title, open, done: Campaign.chapterDone(ch.key), y: y + 10 });
+        y += 88;
+        ch.cases.forEach((c, idx) => {
+          num++;
+          const stars = Campaign.stars(ch.key, idx);
+          const unlocked = open && Campaign.isUnlocked(ch.key, idx);
+          const it = { type: 'node', theme: th.id, chapter: ch.key, idx, num, title: c.title, story: c.story, difficulty: c.difficulty, stars,
+                       state: stars ? 'done' : unlocked ? 'open' : 'locked', x: this.MAP_X[k % this.MAP_X.length], y };
+          sec.items.push(it); nodes.push(it); k++; y += 96;
+        });
       });
+      y += 24;
+      sec.height = y - sec.top;
+      sections.push(sec);
     });
-    const archOpen = themeOpen && Campaign.chapterOpen(Campaign.ARCHIVE);
-    items.push({ type: 'sign', title: '📁 Het archief · eindeloos', open: archOpen, done: false, key: Campaign.ARCHIVE });
-    Campaign.archiveFor(themeId).forEach(c => items.push({ type: 'node', chapter: Campaign.ARCHIVE, idx: c.idx, num: c.title, title: c.title, story: c.story,
-      difficulty: c.difficulty, stars: Campaign.stars(Campaign.ARCHIVE, c.idx), state: themeOpen ? c.state : 'locked', archive: true }));
-    return items;
+    const archOpen = Campaign.chapterOpen(Campaign.ARCHIVE);
+    const arch = { theme: 'archief', th: null, open: archOpen, need: 0, top: y, items: [], archive: true };
+    y += 8;
+    arch.items.push({ type: 'sign', title: '📁 Het archief · eindeloos', open: archOpen, done: false, y: y + 10 });
+    y += 88;
+    Campaign.archiveList(2).forEach(c => {
+      const it = { type: 'node', theme: c.theme, chapter: Campaign.ARCHIVE, idx: c.idx, num: c.title, title: c.title, story: c.story, difficulty: c.difficulty,
+                   stars: Campaign.stars(Campaign.ARCHIVE, c.idx), state: c.state, archive: true, x: this.MAP_X[k % this.MAP_X.length], y };
+      arch.items.push(it); nodes.push(it); k++; y += 96;
+    });
+    y += 40;
+    arch.height = y - arch.top;
+    sections.push(arch);
+    return { sections, nodes, height: y };
   },
   renderMap() {
-    const th = Themes.get(this.mapWorld), screen = document.getElementById('screen-campaign');
+    const screen = document.getElementById('screen-campaign');
     if (!screen) return;
-    screen.style.setProperty('--wa', th.map.accent);
-    screen.style.setProperty('--wr', th.map.ring);
-    document.getElementById('map-title').textContent = `${th.icon} ${th.title}`;
-    document.getElementById('campaign-total').textContent = `★ ${Campaign.worldStars(th.id)}/${Campaign.worldTotal(th.id) * 3}`;
-    // wereldkiezer
-    const solved = Board.loadStats().solved || 0;
-    document.getElementById('world-tabs').innerHTML = Themes.list().map(t => {
-      const need = (t.unlock || 0) - solved;
-      return `<button type="button" class="world-tab${t.id === th.id ? ' active' : ''}" data-theme="${t.id}">${t.icon} ${t.short}${need > 0 ? `<small>nog ${need} ${need === 1 ? 'zaak' : 'zaken'}</small>` : ''}</button>`;
-    }).join('');
-    document.querySelectorAll('.world-tab').forEach(b => b.addEventListener('click', () => { this.mapWorld = b.dataset.theme; this.renderMap(); }));
-    // pad en knopen
     const scroll = document.getElementById('map-scroll'), canvas = document.getElementById('map-canvas');
-    scroll.style.backgroundImage = `url(${th.map.file})`;
-    const items = this.mapItems(th.id);
     const W = canvas.clientWidth || 393;
-    let y = 46, k = 0;
-    const pts = [];
-    items.forEach(it => {
-      if (it.type === 'sign') { it.y = y + 10; y += 88; return; }   // ruimte voor de pion boven de eerste knoop
-      it.x = this.MAP_X[k % this.MAP_X.length]; it.y = y; k++; y += 96;
-      pts.push([it.x * W / 100, it.y]);
-    });
-    const H = y + 30;
-    canvas.style.height = `${H}px`;
-    const d = pts.map((p, i) => (i ? 'L' : 'M') + p[0].toFixed(1) + ' ' + p[1]).join(' ');
-    let html = `<svg class="map-path" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" aria-hidden="true"><path d="${d}"/></svg>`;
-    const current = items.find(it => it.type === 'node' && it.state === 'open') || null;
+    const L = this.mapLayout(W);
+    this.mapSections = L.sections;
+    const current = L.nodes.find(n => n.state === 'open') || null;
     this.mapCurrent = current;
-    items.forEach(it => {
-      if (it.type === 'sign') { html += `<span class="msign${it.done ? ' done' : it.open ? '' : ' locked'}" style="top:${it.y}px">${it.open ? '' : '🔒 '}${it.title}</span>`; return; }
-      const stars = it.stars ? '★'.repeat(it.stars) + '☆'.repeat(3 - it.stars) : '';
-      html += `<button type="button" class="mnode ${it.state}" style="left:${it.x}%;top:${it.y}px" data-chapter="${it.chapter}" data-idx="${it.idx}" aria-label="${it.archive ? it.title : 'Zaak ' + it.num + ': ' + it.title}">` +
-              `${it.state === 'locked' ? '🔒' : it.archive ? '📁' : it.num}${stars ? `<span class="mnode-stars">${stars}</span>` : ''}${it === current ? '<span class="mnode-pin">🕵️</span>' : ''}</button>`;
-    });
-    canvas.innerHTML = html;
+    const allStars = Campaign.list().reduce((n, ch) => n + ch.cases.reduce((m, _, i) => m + Campaign.stars(ch.key, i), 0), 0);
+    document.getElementById('campaign-total').textContent = `★ ${allStars}/${Campaign.total() * 3}`;
+    // wereldkiezer: springt naar de banner van die wereld
+    document.getElementById('world-tabs').innerHTML = Themes.list().map(t => {
+      const sec = L.sections.find(s => s.theme === t.id);
+      return `<button type="button" class="world-tab" data-theme="${t.id}">${t.icon} ${t.short}${sec.need > 0 ? `<small>nog ${sec.need} ${sec.need === 1 ? 'zaak' : 'zaken'}</small>` : ''}</button>`;
+    }).join('');
+    document.querySelectorAll('.world-tab').forEach(b => b.addEventListener('click', () => this.scrollToWorld(b.dataset.theme)));
+    // secties: banner, pad, decoraties, wegwijzers, knopen
+    canvas.style.height = `${L.height}px`;
+    canvas.innerHTML = L.sections.map(sec => {
+      const th = sec.th, accent = th ? th.map.accent : '#5A3E2B', ring = th ? th.map.ring : '#B8955C';
+      const nodesIn = sec.items.filter(i => i.type === 'node');
+      const d = nodesIn.map((i, n) => (n ? 'L' : 'M') + (i.x * W / 100).toFixed(1) + ' ' + (i.y - sec.top)).join(' ');
+      let html = `<div class="map-world map-${sec.theme}${sec.open ? '' : ' locked'}" data-theme="${sec.theme}" style="top:${sec.top}px;height:${sec.height}px;--wa:${accent};--wr:${ring}">`;
+      if (th) {
+        const sub = sec.open ? `${sec.done} van ${sec.total} zaken · ★ ${sec.stars}/${sec.total * 3}`
+                             : `🔒 Los nog ${sec.need} ${sec.need === 1 ? 'zaak' : 'zaken'} op (vrij spel of dagelijks) om deze wereld te openen`;
+        html += `<div class="map-banner">${MapArt.banner(th.id)}<div class="map-banner-card"><b>${th.icon} ${th.title}</b><span>${sub}</span></div></div>`;
+      }
+      html += `<svg class="map-path" width="${W}" height="${sec.height}" viewBox="0 0 ${W} ${sec.height}" aria-hidden="true"><path d="${d}"/></svg>`;
+      if (th) nodesIn.forEach((it, i) => {
+        const px = it.x === 20 ? 64 : it.x === 80 ? 36 : (i % 2 ? 12 : 88);
+        html += `<span class="mapprop-wrap" style="left:${px}%;top:${it.y - sec.top + 46}px">${MapArt.prop(th.id, i)}</span>`;
+      });
+      sec.items.forEach(it => {
+        const yy = it.y - sec.top;
+        if (it.type === 'sign') { html += `<span class="msign${it.done ? ' done' : it.open ? '' : ' locked'}" style="top:${yy}px">${it.open ? '' : '🔒 '}${it.title}</span>`; return; }
+        const stars = it.stars ? '★'.repeat(it.stars) + '☆'.repeat(3 - it.stars) : '';
+        html += `<button type="button" class="mnode ${it.state}" style="left:${it.x}%;top:${yy}px" data-chapter="${it.chapter}" data-idx="${it.idx}" aria-label="${it.archive ? it.title : 'Zaak ' + it.num + ': ' + it.title}">` +
+                `${it.state === 'locked' ? '🔒' : it.archive ? '📁' : it.num}${stars ? `<span class="mnode-stars">${stars}</span>` : ''}${it === current ? '<span class="mnode-pin">🕵️</span>' : ''}</button>`;
+      });
+      return html + '</div>';
+    }).join('');
     canvas.querySelectorAll('.mnode').forEach(b => b.addEventListener('click', () =>
-      this.openNode(items.find(it => it.type === 'node' && it.chapter === b.dataset.chapter && it.idx === +b.dataset.idx))));
+      this.openNode(L.nodes.find(n => n.chapter === b.dataset.chapter && n.idx === +b.dataset.idx))));
     this.closeNode();
     // grote knop onderin
     const play = document.getElementById('btn-map-play');
-    const need = (th.unlock || 0) - solved;
-    if (need > 0) { play.disabled = true; play.textContent = `🔒 Los nog ${need} ${need === 1 ? 'zaak' : 'zaken'} op om ${th.title} te openen`; }
-    else if (current) { play.disabled = false; play.textContent = `▶ Speel ${current.archive ? current.title : 'zaak ' + current.num + ' · ' + current.title}`; }
-    else { play.disabled = true; play.textContent = `🔒 Los ${Campaign.ARCHIVE_UNLOCK} campagnezaken op voor het archief`; }
-    // naar de huidige knoop scrollen
-    const target = current || items.filter(it => it.type === 'node').pop();
-    if (target) setTimeout(() => { scroll.scrollTop = Math.max(0, target.y - (scroll.clientHeight || 520) * 0.45); }, 0);
+    if (current) { play.disabled = false; play.textContent = `▶ Speel ${current.archive ? current.title : 'zaak ' + current.num + ' · ' + current.title}`; }
+    else { play.disabled = true; play.textContent = '✓ Alles opgelost'; }
+    this.mapTarget = current || L.nodes[L.nodes.length - 1];
+    setTimeout(() => this.scrollToCurrent(), 0);
+  },
+  scrollToCurrent() {
+    const scroll = document.getElementById('map-scroll');
+    if (!scroll || !this.mapTarget || !scroll.clientHeight) return;
+    scroll.scrollTop = Math.max(0, this.mapTarget.y - scroll.clientHeight * 0.45);
+    this.mapSpy();
+  },
+  scrollToWorld(themeId) {
+    const sec = (this.mapSections || []).find(s => s.theme === themeId);
+    if (!sec) return;
+    const scroll = document.getElementById('map-scroll');
+    this.mapWorld = themeId;
+    this.markWorldTab(themeId);
+    if (typeof scroll.scrollTo === 'function') { try { scroll.scrollTo({ top: sec.top, behavior: 'smooth' }); return; } catch (e) { /* oudere webview */ } }
+    scroll.scrollTop = sec.top;
+  },
+  markWorldTab(themeId) {
+    document.querySelectorAll('.world-tab').forEach(b => {
+      const on = b.dataset.theme === themeId;
+      if (on && !b.classList.contains('active') && typeof b.scrollIntoView === 'function') { try { b.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' }); } catch (e) { /* oud */ } }
+      b.classList.toggle('active', on);
+    });
+  },
+  // welke wereld is in beeld? (kiezer volgt het scrollen)
+  mapSpy() {
+    const scroll = document.getElementById('map-scroll');
+    if (!scroll || !this.mapSections) return;
+    const pos = scroll.scrollTop + (scroll.clientHeight || 520) * 0.4;
+    let cur = this.mapSections[0];
+    this.mapSections.forEach(s => { if (!s.archive && s.top <= pos) cur = s; });
+    if (cur) this.mapWorld = cur.theme;
+    this.markWorldTab(this.mapWorld);
   },
   openNode(it) {
     if (!it) return;
@@ -220,12 +297,12 @@ const App = {
     const d = DIFFICULTY[it.difficulty] || {};
     const stars = it.stars ? '★'.repeat(it.stars) + '☆'.repeat(3 - it.stars) : '☆☆☆';
     const locked = it.state === 'locked';
-    const th = Themes.get(this.mapWorld);
-    const lockText = !this.themeUnlocked(th) ? `Los eerst ${th.unlock} zaken op (vrij spel of dagelijks) om ${th.title} te openen.`
-      : it.archive ? (Campaign.chapterOpen(Campaign.ARCHIVE) ? 'Los eerst het vorige dossier van deze wereld op.' : `Het archief opent na ${Campaign.ARCHIVE_UNLOCK} campagnezaken.`)
+    const th = Themes.get(it.theme);
+    const lockText = !this.themeUnlocked(th) && !it.archive ? `Los eerst ${th.unlock} zaken op (vrij spel of dagelijks) om ${th.title} te openen.`
+      : it.archive ? (Campaign.chapterOpen(Campaign.ARCHIVE) ? 'Los eerst het vorige dossier op.' : `Het archief opent na ${Campaign.ARCHIVE_UNLOCK} campagnezaken.`)
       : it.idx === 0 ? 'Maak eerst het vorige deel af.' : `Los eerst zaak ${it.num - 1} op.`;
-    pop.innerHTML = `<div class="map-pop-card">
-      <div class="map-pop-head"><h3>${it.archive ? it.title : `Zaak ${it.num}: ${it.title}`}</h3><span class="diff-pill diff-${it.difficulty}">${d.icon || ''} ${d.label || it.difficulty}</span></div>
+    pop.innerHTML = `<div class="map-pop-card" style="--wa:${th.map.accent};--wr:${th.map.ring}">
+      <div class="map-pop-head"><h3>${it.archive ? `${it.title} · ${th.icon}` : `Zaak ${it.num}: ${it.title}`}</h3><span class="diff-pill diff-${it.difficulty}">${d.icon || ''} ${d.label || it.difficulty}</span></div>
       <p>${locked ? '🔒 ' + lockText : it.story}</p>
       <div class="map-pop-row"><span class="map-pop-best">Beste score: <b>${stars}</b></span>${locked ? '' : `<button type="button" class="btn btn-primary btn-sm" id="btn-pop-play">${it.stars ? 'Speel opnieuw' : 'Speel'}</button>`}</div>
     </div>`;
@@ -655,10 +732,11 @@ const App = {
       this.hideModal('hint-modal');
     });
 
-    // Opnieuw spelen
+    // Terug: na de oefenzaak op het bord meteen de kaart in, anders het menu
     document.getElementById('btn-play-again').addEventListener('click', () => {
       if (this.isTutorial) this.endTutorial();
-      this.navigateTo('menu');
+      if (document.getElementById('btn-play-again').dataset.to === 'map') this.openMap('landhuis');
+      else this.navigateTo('menu');
     });
 
     // Deel resultaat
@@ -1293,6 +1371,7 @@ const App = {
 
     document.getElementById('btn-play-again').textContent =
       this.isTutorial ? 'Naar het hoofdmenu' : 'Naar het menu';
+    document.getElementById('btn-play-again').dataset.to = 'menu';
     document.getElementById('btn-next-case').hidden = true;
     document.getElementById('results-stars').hidden = true;
     document.getElementById('btn-remind').hidden = true;

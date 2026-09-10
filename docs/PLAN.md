@@ -179,15 +179,57 @@ Alles uit "Naar een episch spel" behalve de nieuwe spelelementen (leugenaar/getu
   wordt een lege webview daaruit hersteld (`App.restoreFromNative`); wissen wist beide.
   Geen accounts: voortgang is per toestel.
 
+## Eén doorlopende wereldkaart, eigen illustraties, App Store-voorbereiding (10 sep)
+
+Jaimy's feedback: de AI-achtergronden van de kaart pasten niet bij het ontwerp; per wereld
+een aparte pagina voelde niet als Candy Crush/Duolingo; de app moet "echt een stuk beter"
+voor de App Store en later hoog in de rankings.
+
+- **Eén pad** (`App.mapLayout/renderMap`): alle vier de werelden en het archief achter elkaar
+  in één scrollbare kaart; per wereld een sectie met eigen vloerpatroon (dambord, planken,
+  marmer, raster: dezelfde vloeren als op het bord), een **getekende banner** in de platte
+  stijl van de portretten (`mapart.js`: landhuis bij avond, de Zwarte Meeuw op zee, de gevel
+  van Aurora, Station Orion) en decoraties langs het pad (bomen, fontein, anker, palm,
+  planeet …, 7 per wereld). De wereldkiezer bovenin springt naar de banner en volgt het
+  scrollen. De AI-plaatjes zijn weg (380 KB kleiner). Archief weer één doorlopende reeks
+  dossiers aan het eind van het pad.
+- **Na de oefenzaak** meteen de kaart in ("🗺️ Naar de kaart") in plaats van het menu: de
+  speler ziet zaak 1 pulseren en de grote speelknop.
+- **Vonkjes** bij het neerzetten van een verdachte (`Board.sparks`).
+- **Beoordeling vragen** (`@capacitor-community/in-app-review`, `App.maybeAskReview`): één
+  keer, na de vijfde opgeloste zaak, 3,5 s na het resultaat. Apple's SKStoreReviewController
+  bepaalt zelf of het venster echt verschijnt (max. 3× per jaar). Beoordelingen zijn de
+  belangrijkste rankingfactor die we vanuit de app kunnen beïnvloeden.
+
+## Naar de top van de App Store (analyse 10 sep)
+
+Wat de ranking bepaalt: downloads (snelheid + volume), beoordelingen (aantal en cijfer),
+retentie/gebruik, en zoektermen. Wat daarvoor nog nodig is, op volgorde van effect:
+1. **Engelse versie** (i18n van UI, campagne, verklaringen, Van Dam). De Nederlandse markt is
+   klein; "murder mystery logic puzzle" is een grote Engelstalige niche. Grootste hefboom.
+2. **Productpagina**: 6–8 schermafbeeldingen met korte koppen ("De verdachten praten",
+   "Eén pad door vier werelden"), een App Preview-video van 15–20 s (kaart → verklaringen →
+   Zaak Gesloten), ondertitel en zoekwoorden getest via App Store Connect.
+3. **Game Center**: ranglijst voor de zaak van de week en prestaties gekoppeld aan de
+   onderscheidingen. Zichtbaar in de App Store en goed voor retentie.
+4. **Nieuwe mechanieken per deel** (de leugenaar, de getuige) zodat deel II en III echt
+   anders spelen; nu verschilt alleen de moeilijkheid.
+5. **Seizoensevents**: een themaweek (kerst op het landhuis) met eigen bewijsstukken.
+6. **Delen als afbeelding** (plattegrond + stempel) in plaats van alleen tekst: gratis
+   marketing via WhatsApp/Instagram.
+7. **Muziek per wereld** en meer geluid.
+8. **Meting**: zonder analytics (privacy) weten we niets over retentie; overweeg
+   privacyvriendelijke, anonieme telling van "dag 1/7/30 terug" via App Store Connect-
+   statistieken (die zijn er standaard) voordat er iets in de app komt.
+
 ## Openstaande punten (volgorde van voorstel)
 
 1. App Store: stappen in `store/CHECKLIST.md` (Apple-account, archiveren, uploaden).
-2. Nieuwe spelelementen per deel: *de leugenaar* (één verklaring is vals) en *de getuige*
-   (extra aanwijzing op afroep). Vraagt generator-werk (uniciteit).
-3. Vierde moeilijkheid "Expert" (9×9, zes verdachten) als beloning vanaf rang Inspecteur.
-4. Muziek per wereld (loop) plus stingers; nu alleen korte gesynthetiseerde geluiden.
-5. Engelse versie (i18n) voor een grotere markt; Game Center voor punten en ranglijsten.
-6. Weekzaak-ranglijst (vereist een server of Game Center).
+2. Engelse versie (i18n): zie "Naar de top van de App Store".
+3. Nieuwe spelelementen per deel: *de leugenaar* en *de getuige*. Vraagt generator-werk.
+4. Game Center (weekranglijst, prestaties); App Preview-video; delen als afbeelding.
+5. Vierde moeilijkheid "Expert" (9×9, zes verdachten) als beloning vanaf rang Inspecteur.
+6. Muziek per wereld (loop) plus stingers.
 
 ## Beslissingen
 

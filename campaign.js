@@ -249,14 +249,10 @@ const Campaign = {
     const prev = this.chaptersFor(ch.theme).find(c => c.part === ch.part - 1);
     return !!prev && this.chapterDone(prev.key);
   },
-  // zaak is speelbaar als de vorige in het deel gehaald is; in het archief telt
-  // per wereld: dossier n opent als het vorige dossier van dezelfde wereld af is
-  isUnlocked(key, idx) {
-    if (key === this.ARCHIVE) return idx < ARCHIVE_THEMES.length || this.stars(key, idx - ARCHIVE_THEMES.length) > 0;
-    return idx === 0 || this.stars(key, idx - 1) > 0;
-  },
+  // zaak is speelbaar als de vorige gehaald is (ook in het archief: dossier n na n-1)
+  isUnlocked(key, idx) { return idx === 0 || this.stars(key, idx - 1) > 0; },
   next(key, idx) {
-    if (key === this.ARCHIVE) return this.archive(idx + 1 + ARCHIVE_THEMES.length);   // volgende dossier van dezelfde wereld
+    if (key === this.ARCHIVE) return this.archive(idx + 2);
     const ch = this.chapter(key);
     if (!ch) return null;
     if (idx + 1 < ch.cases.length) return this.caseAt(key, idx + 1);
@@ -267,23 +263,22 @@ const Campaign = {
   worldStars(themeId) { return this.chaptersFor(themeId).reduce((n, ch) => n + ch.cases.reduce((m, _, i) => m + this.stars(ch.key, i), 0), 0); },
   worldTotal(themeId) { return this.chaptersFor(themeId).reduce((n, ch) => n + ch.cases.length, 0); },
   worldDone(themeId) { return this.chaptersFor(themeId).reduce((n, ch) => n + ch.cases.filter((_, i) => this.stars(ch.key, i) > 0).length, 0); },
-  // archiefdossiers van één wereld: alle opgeloste, het eerstvolgende open dossier en `extra` dichte
-  archiveFor(themeId, extra = 2) {
-    const t = ARCHIVE_THEMES.indexOf(themeId);
-    if (t === -1) return [];
+  // het archief op de kaart: alle opgeloste dossiers, het eerstvolgende open dossier en `extra` dichte
+  archiveList(extra = 2) {
     const out = [];
-    let n = t + 1, locked = 0;
-    while (locked < extra) {
+    const archOpen = this.chapterOpen(this.ARCHIVE);
+    let n = 1, locked = 0;
+    while (locked < extra && n < 10000) {
       const c = this.archive(n);
       const solved = this.stars(this.ARCHIVE, c.idx) > 0;
-      const open = !solved && this.chapterOpen(this.ARCHIVE) && this.isUnlocked(this.ARCHIVE, c.idx);
+      const open = !solved && archOpen && this.isUnlocked(this.ARCHIVE, c.idx);
       out.push({ ...c, state: solved ? 'done' : open ? 'open' : 'locked' });
       if (!solved && !open) locked++;
-      n += ARCHIVE_THEMES.length;
+      n++;
     }
     return out;
   },
-  // de eerstvolgende speelbare, nog niet opgeloste zaak in een wereld (na de campagne: het archief)
+  // de eerstvolgende speelbare, nog niet opgeloste campagnezaak in een wereld (null als alles af is of dicht)
   current(themeId, themeOpen = true) {
     for (const ch of this.chaptersFor(themeId)) {
       if (!this.chapterOpen(ch.key, themeOpen)) return null;
@@ -292,19 +287,18 @@ const Campaign = {
         return this.isUnlocked(ch.key, i) ? this.caseAt(ch.key, i) : null;
       }
     }
-    const arch = this.archiveFor(themeId).find(c => c.state === 'open');
-    return arch ? this.caseAt(this.ARCHIVE, arch.idx) : null;
+    return null;
   },
-  // eerstvolgende zaak over alle werelden heen (voor "Verder met de campagne")
+  // eerstvolgende zaak over alle werelden heen (voor "Verder met de campagne"); daarna het archief
   nextOverall(themeOpenFn, preferTheme) {
     const order = ARCHIVE_THEMES.slice();
     if (preferTheme && order.includes(preferTheme)) order.splice(order.indexOf(preferTheme), 1), order.unshift(preferTheme);
     for (const t of order) {
       const c = this.current(t, themeOpenFn ? themeOpenFn(t) : true);
-      if (c && c.chapter !== this.ARCHIVE) return c;
+      if (c) return c;
     }
-    for (const t of order) { const c = this.current(t, themeOpenFn ? themeOpenFn(t) : true); if (c) return c; }
-    return null;
+    const arch = this.archiveList(1).find(c => c.state === 'open');
+    return arch ? this.caseAt(this.ARCHIVE, arch.idx) : null;
   },
   threeStarCount() { return Object.entries(this.progress()).filter(([k, s]) => s === 3 && !k.startsWith(this.ARCHIVE + '-')).length; },
 

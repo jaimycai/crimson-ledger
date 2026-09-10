@@ -402,12 +402,27 @@ const Board = {
     this.placements[this.active] = { x, y };
     this.buzz(12);
     Sound.play('place');
+    this.sparks(x, y);
     const next = this.placements.findIndex(c => !c);
     if (next !== -1) this.active = next;                // door naar de volgende
     this.after();
     if (this.isTutorial) { this.tutorialStep++; this.showTutorialStep(); }
   },
 
+  // kleine vonkjes bij het neerzetten van een verdachte
+  sparks(x, y) {
+    const el = document.querySelector(`#board-grid .bcell[data-x="${x}"][data-y="${y}"]`);
+    if (!el) return;
+    for (let i = 0; i < 7; i++) {
+      const s = document.createElement('i');
+      s.className = 'spark';
+      const a = (i / 7) * Math.PI * 2 + Math.random() * 0.5, r = 16 + Math.random() * 14;
+      s.style.setProperty('--dx', `${Math.cos(a) * r}px`);
+      s.style.setProperty('--dy', `${Math.sin(a) * r}px`);
+      el.appendChild(s);
+      setTimeout(() => s.remove(), 600);
+    }
+  },
   cloneMarks() { const m = new Map(); this.marks.forEach((v, k) => m.set(k, new Set(v))); return m; },
 
   after(keepHint = false) {
@@ -596,6 +611,7 @@ const Board = {
     this.showResults();
     App.updateBoardStats();
     App.navigateTo('results');
+    App.maybeAskReview();
   },
   // medailles pas tonen als de ceremonie klaar is (of overgeslagen)
   flushMedals() {
@@ -674,7 +690,8 @@ const Board = {
     });
 
     // knoppen: volgende zaak, kaart, menu
-    $('btn-play-again').textContent = this.isTutorial ? 'Naar het hoofdmenu' : 'Naar het menu';
+    $('btn-play-again').textContent = this.isTutorial ? '🗺️ Naar de kaart' : 'Naar het menu';
+    $('btn-play-again').dataset.to = this.isTutorial ? 'map' : 'menu';
     const nextBtn = $('btn-next-case'), mapBtn = $('btn-map');
     mapBtn.hidden = !(this.campaignCase && !this.isTutorial);
     if (this.campaignCase && !this.isTutorial) {
