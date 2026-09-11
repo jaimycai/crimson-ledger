@@ -93,9 +93,16 @@ const active = () => document.querySelector('.screen.active').id;
     check(document.getElementById('screen-board').classList.contains('read') || document.getElementById('board-grid').getBoundingClientRect().width === 0, 'tik op de lijn: meer tekst (in jsdom zonder layout: geen fout)');
     Board.setBoardSize(1e4, true, 360);
     check(!document.getElementById('screen-board').classList.contains('read') && App.storageGet('crimson-board-read') === null, 'groot bord: geen onthouden voorkeur');
-    Board.setBoardSize(236, true, 360);
-    check(document.getElementById('board-grid').style.getPropertyValue('--board-px') === '236px' && App.storageGet('crimson-board-read') === '236' && document.getElementById('clue-handle-label').textContent === 'Groter bord', 'meer tekst: bord 236px, onthouden, knop zegt Groter bord');
+    Board.setBoardSize(240, true, 360);
+    check(document.getElementById('board-grid').style.getPropertyValue('--board-px') === '240px' && App.storageGet('crimson-board-read') === '240' && document.getElementById('clue-handle-label').textContent === 'Groter bord', 'meer tekst: bord 240px, onthouden, knop zegt Groter bord');
+    // een volgende zaak begint met dezelfde verdeling, ook al is het scherm dan
+    // nog verborgen en valt er dus niets te meten (Board.start roept applyRead aan)
+    document.getElementById('board-grid').style.removeProperty('--board-px');
+    Board.applyRead();
+    check(document.getElementById('board-grid').style.getPropertyValue('--board-px') === '240px' && document.getElementById('screen-board').classList.contains('read'), 'volgende zaak begint met dezelfde verdeling');
     Board.setBoardSize(1e4, true, 360);
+    Board.applyRead();
+    check(!document.getElementById('board-grid').style.getPropertyValue('--board-px') && !document.getElementById('screen-board').classList.contains('read'), 'groot bord blijft groot bij een nieuwe zaak');
     check(!document.getElementById('board-tip').hidden, 'eerste keer: tip zichtbaar');
     document.getElementById('btn-board-tip-close').click();
     check(document.getElementById('board-tip').hidden, 'tip sluit en onthoudt dat');

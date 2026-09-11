@@ -72,6 +72,7 @@ const Board = {
     grid.dataset.floor = theme.floor;
     document.getElementById('board-tip').hidden = true;
     this.endAccuse();
+    this.applyRead();
     this.renderIntro();
     document.getElementById('board-coach').hidden = false;
     document.getElementById('btn-board-hint').disabled = true;
@@ -853,7 +854,7 @@ const Board = {
   // ── Scheidingslijn tussen bord en verklaringen ────────────
   // Tik: groot bord ⇄ meer tekst. Slepen: zelf de verdeling kiezen. De keuze
   // wordt onthouden (crimson-board-read = bordbreedte in px).
-  READ_PX: 236,
+  READ_PX: 240,
   boardMax() {
     const grid = document.getElementById('board-grid');
     const saved = grid.style.getPropertyValue('--board-px');
@@ -863,6 +864,7 @@ const Board = {
     return max;
   },
   setBoardSize(px, save, max = this.boardMax()) {
+    if (max <= 0) return;
     const grid = document.getElementById('board-grid');
     const w = Math.max(200, Math.min(max, px));
     const read = max > 0 && w < max - 2;
@@ -872,12 +874,19 @@ const Board = {
     if (label) label.textContent = read ? 'Groter bord' : 'Meer tekst';
     if (save) { if (read) App.storageSet('crimson-board-read', String(Math.round(w))); else App.storageRemove('crimson-board-read'); }
   },
+  // bij het starten van een zaak is het bordscherm nog verborgen: niet meten,
+  // maar de onthouden breedte direct zetten (de CSS begrenst hem zelf)
   applyRead() {
     const v = +(App.storageGet('crimson-board-read') || 0);
-    this.setBoardSize(v > 0 ? v : 1e4, false);
+    const grid = document.getElementById('board-grid');
+    if (v > 0) grid.style.setProperty('--board-px', `${v}px`); else grid.style.removeProperty('--board-px');
+    document.getElementById('screen-board').classList.toggle('read', v > 0);
+    const label = document.getElementById('clue-handle-label');
+    if (label) label.textContent = v > 0 ? 'Groter bord' : 'Meer tekst';
   },
   toggleRead() {
     const max = this.boardMax();
+    if (max <= 0) return;   // bord nog niet in beeld: niets te meten
     const cur = document.getElementById('board-grid').getBoundingClientRect().width;
     this.setBoardSize(cur < max - 2 ? max : this.READ_PX, true, max);
   },
