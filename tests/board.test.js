@@ -73,7 +73,7 @@ const active = () => document.querySelector('.screen.active').id;
     check(document.getElementById('board-casetext').textContent.includes(Board.theme.victimName), 'zaaktekst noemt het slachtoffer bij naam: ' + document.getElementById('board-casetext').textContent);
     check(!!document.querySelector('#board-grid .bvictim'), 'slachtoffer staat op de kaart');
     check(document.querySelectorAll('.bclue').length === p.clues.length && p.clues.length >= 4, `${p.clues.length} aanwijzingskaarten met nummer`);
-    check(document.querySelectorAll('.bclue-num').length === p.clues.length, 'kaarten genummerd');
+    check(document.querySelectorAll('#board-clues .bclue-num').length === p.clues.length, 'kaarten genummerd');
     // verklaringen: naam + tekst in de ik-vorm, portret van de spreker, inspecteur bij een lege kamer
     const firstClue = document.querySelector('.bclue[data-clue="0"]');
     check(firstClue.querySelector('.bclue-name').textContent.length > 1 && /^(Ik |Volgens|.+ en ik )/.test(firstClue.querySelector('.bclue-text').textContent.trim()), 'verklaring in de ik-vorm: ' + firstClue.querySelector('.bclue-name').textContent + ': ' + firstClue.querySelector('.bclue-text').textContent.trim());
@@ -88,21 +88,31 @@ const active = () => document.querySelector('.screen.active').id;
     document.getElementById('btn-newclue-ok').click();
     check(!document.getElementById('newclue') && !document.getElementById('newclue-modal').classList.contains('active') && JSON.parse(App.storageGet('crimson-newclue-seen')).includes(introId), 'Begrepen sluit de uitleg en onthoudt dat');
     check(Board.timerId !== null, 'na Begrepen loopt de klok');
-    // scheidingslijn: tik = meer tekst (kleiner bord), nog een tik = groot bord
-    Board.toggleRead();
-    check(document.getElementById('screen-board').classList.contains('read') || document.getElementById('board-grid').getBoundingClientRect().width === 0, 'tik op de lijn: meer tekst (in jsdom zonder layout: geen fout)');
-    Board.setBoardSize(1e4, true, 360);
-    check(!document.getElementById('screen-board').classList.contains('read') && App.storageGet('crimson-board-read') === null, 'groot bord: geen onthouden voorkeur');
-    Board.setBoardSize(240, true, 360);
-    check(document.getElementById('board-grid').style.getPropertyValue('--board-px') === '240px' && App.storageGet('crimson-board-read') === '240' && document.getElementById('clue-handle-label').textContent === 'Groter bord', 'meer tekst: bord 240px, onthouden, knop zegt Groter bord');
-    // een volgende zaak begint met dezelfde verdeling, ook al is het scherm dan
-    // nog verborgen en valt er dus niets te meten (Board.start roept applyRead aan)
-    document.getElementById('board-grid').style.removeProperty('--board-px');
-    Board.applyRead();
-    check(document.getElementById('board-grid').style.getPropertyValue('--board-px') === '240px' && document.getElementById('screen-board').classList.contains('read'), 'volgende zaak begint met dezelfde verdeling');
-    Board.setBoardSize(1e4, true, 360);
-    Board.applyRead();
-    check(!document.getElementById('board-grid').style.getPropertyValue('--board-px') && !document.getElementById('screen-board').classList.contains('read'), 'groot bord blijft groot bij een nieuwe zaak');
+    // verklaringendek: één kaart tegelijk, pijltjes en stippen, en de hele lijst in een venster
+    check(document.querySelectorAll('#clue-track .dclue').length === 1 && document.querySelector('#clue-track .dclue').dataset.clue === '0', 'dek toont de eerste verklaring');
+    check(document.querySelectorAll('#clue-dots .cdot').length === p.clues.length && document.querySelector('#clue-dots .cdot.on').dataset.clue === '0', 'een stip per verklaring, de eerste staat aan');
+    check(document.getElementById('btn-clue-all').textContent === `Alle ${p.clues.length}`, 'knop noemt het aantal verklaringen');
+    document.getElementById('btn-clue-next').click();
+    check(Board.deckIdx === 1 && document.querySelector('#clue-track .dclue').dataset.clue === '1', 'volgende verklaring');
+    document.getElementById('btn-clue-prev').click();
+    check(Board.deckIdx === 0, 'vorige verklaring');
+    document.getElementById('btn-clue-prev').click();
+    check(Board.deckIdx === p.clues.length - 1, 'terug vanaf de eerste gaat naar de laatste');
+    Board.setDeck(0);
+    // afgevinkte verklaringen worden overgeslagen
+    Board.clueDone.add(1);
+    Board.renderClues();
+    document.getElementById('btn-clue-next').click();
+    check(Board.deckIdx === 2, 'volgende slaat een afgevinkte verklaring over');
+    Board.clueDone.delete(1);
+    Board.setDeck(0);
+    check(document.querySelector('#clue-track .bclue-text').textContent.length > 4, 'de verklaring staat voluit op de kaart');
+    document.getElementById('btn-clue-all').click();
+    check(document.getElementById('clue-modal').classList.contains('active') && document.querySelectorAll('#board-clues .bclue').length === p.clues.length, 'Alle verklaringen: het venster toont de hele lijst');
+    document.querySelector('#board-clues .bclue[data-clue="2"]').click();
+    check(!document.getElementById('clue-modal').classList.contains('active') && Board.deckIdx === 2, 'tik in de lijst zet het dek op die verklaring en sluit het venster');
+    Board.setDeck(0);
+    Board.renderClues();
     check(!document.getElementById('board-tip').hidden, 'eerste keer: tip zichtbaar');
     document.getElementById('btn-board-tip-close').click();
     check(document.getElementById('board-tip').hidden, 'tip sluit en onthoudt dat');
@@ -138,7 +148,7 @@ const active = () => document.querySelector('.screen.active').id;
     check(document.querySelector('.sus-chip[data-s="0"]').classList.contains('placed'), 'kiezer toont geplaatst');
     // live feedback: goed geplaatst = geen rode kaart, kloppende aanwijzingen krijgen een vinkje
     const okNow = p.clues.filter(c => FloorPlan.holds(c, Board.placements, p) === true).length;
-    check(document.querySelectorAll('.bclue.bad').length === 0 && document.querySelectorAll('.bclue.ok').length === okNow && document.querySelectorAll('.bclue-state.ok').length === okNow, `live-status: ${okNow} kloppende verklaring(en) groen met "Klopt", geen rode`);
+    check(document.querySelectorAll('.bclue.bad').length === 0 && document.querySelectorAll('.bclue.ok').length === okNow && document.querySelectorAll('#board-clues .bclue-state.ok').length === okNow, `live-status: ${okNow} kloppende verklaring(en) groen met "Klopt", geen rode`);
 
     // ── lerende hint: legt uit, plaatst niets ──
     const placedBefore = Board.placements.filter(Boolean).length;

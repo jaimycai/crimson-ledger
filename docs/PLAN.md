@@ -224,32 +224,47 @@ retentie/gebruik, en zoektermen. Wat daarvoor nog nodig is, op volgorde van effe
    privacyvriendelijke, anonieme telling van "dag 1/7/30 terug" via App Store Connect-
    statistieken (die zijn er standaard) voordat er iets in de app komt.
 
-## Leesbaar bord en een overzichtelijke beschuldiging (11 sep)
+## Leesbaar bord en een overzichtelijke beschuldiging (11-12 sep)
 
 Telefoontest van Jaimy: "De balk met opties kan iets naar beneden en ik kan zo de
 tekst niet meer lezen om de puzzel op te lossen. Dat is essentieel. De laatste stap
 om te kiezen wie de moordenaar is begrijp ik niet zo. Want je kan alleen kiezen
 tussen de personages en niet terug naar de kaart en daardoor niet overzichtelijk."
+Daarna, na de eerste poging: "Het is nog steeds niet opgelost."
 
-Wat er is veranderd:
+De eerste poging (kleinere balk, kleiner bord, sleepbare scheidingslijn) hielp te
+weinig: een lijst met vijf tot acht kaartjes past nooit fatsoenlijk onder een
+plattegrond op een telefoon. Daarom is de opzet zelf veranderd.
 
-- **Meer ruimte voor de verklaringen.** De gereedschapsbalk gebruikt de veilige
-  zone onderin zuiniger (93 → 67 px hoog) en het bord is standaard kleiner, zodat
-  de verklaringenlijst van 149 naar 240 px groeit: twee hele kaarten in beeld in
-  plaats van anderhalve.
-- **Zelf de verdeling kiezen.** Tussen de verdachtenbalk en de verklaringen zit
-  een lijn met het label "Meer tekst" / "Groter bord". Eén tik wisselt, slepen
-  zet de grens waar je hem hebben wilt. De keuze wordt onthouden in
-  `crimson-board-read`.
+- **Verklaringendek in plaats van een lijst.** Onder de verdachtenbalk staat nu
+  één verklaring tegelijk, groot (0,96 rem) en volledig zichtbaar, met portret,
+  naam, live status en een afvinkrondje. Swipen, de pijltjes of de stippen gaan
+  naar de volgende; de stippen laten in kleur zien welke verklaringen kloppen
+  (groen), geschonden worden (rood) of afgevinkt zijn. "Volgende" slaat
+  afgevinkte verklaringen over. Dit patroon komt uit kaart- en verhaalspellen op
+  mobiel: één ding tegelijk, groot genoeg om te lezen zonder te scrollen.
+- **"Alle N" opent de hele lijst** in een venster met vaste sluitknop. Tik een
+  verklaring en het dek springt erheen, het venster sluit en de kamer licht op
+  het bord op. Overzicht wanneer je het wilt, rust wanneer je het niet wilt.
+- **Het bord vult wat er overblijft.** De plattegrond wordt in JavaScript
+  gemeten en passend gemaakt (`Board.fitBoard`), met meeschalende rastercellen
+  in plaats van vaste vierkanten. Geen afgekapte rijen, geen gat boven de
+  gereedschapsbalk, op elk formaat. Op een iPhone 15 Pro groeide het bord van
+  299 naar 369 px; op een iPhone SE past alles nog steeds.
+- **De gereedschapsbalk staat tegen de onderrand**, met alleen de veilige zone
+  eronder (93 → 62 px hoog).
 - **"Nieuw in dit deel" is een eigen venster** geworden in plaats van een kaart
-  bovenaan de lijst — die at de halve leesruimte op. De klok staat stil zolang
-  het venster open staat, en het verschijnt pas na de briefing van Van Dam.
+  bovenaan de lijst. De klok staat stil zolang het venster open staat, en het
+  verschijnt pas na de briefing van Van Dam.
 - **De beschuldiging blijft op het bord.** Geen venster meer over de plattegrond:
   een paneel schuift onderin, de plattegrond blijft staan, de kamer van het
-  slachtoffer licht rood op en de rest vervaagt. Onder elke naam staat de kamer
-  waar die verdachte staat, zodat de conclusie één blik is. "← Terug naar het
-  bord" staat vast onderin en brengt je terug naar de verklaringen; Controleer
-  opent de vraag opnieuw.
+  slachtoffer licht op en de rest vervaagt. Onder elke naam staat de kamer waar
+  die verdachte staat, zodat de conclusie één blik is. "← Terug naar het bord"
+  staat vast onderin; Controleer opent de vraag opnieuw.
+
+Gecontroleerd op 375×667, 393×852 en 430×932 met echte veilige zones: vierkante
+vakjes, balk precies op de onderrand, en het beschuldigingspaneel volledig in
+beeld zonder te scrollen.
 
 ## Openstaande punten (volgorde van voorstel)
 

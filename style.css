@@ -1204,8 +1204,13 @@ body.tutorial-mode #btn-share { display: none; }
 }
 
 /* ── Het bord ──────────────────────────────────────────────── */
+/* Het bord vult wat er overblijft: de balk staat altijd precies op de onderrand */
 .board-stage {
-  flex: none;
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 8px 12px;
   background: var(--bg-secondary);
 }
@@ -1213,8 +1218,9 @@ body.tutorial-mode #btn-share { display: none; }
   position: relative;
   display: grid;
   grid-template-columns: repeat(var(--cols, 7), 1fr);
-  width: min(100%, 460px, var(--board-px, calc(100dvh - var(--sat) - var(--sab) - 460px)));
-  min-width: 240px;
+  grid-template-rows: repeat(var(--rows, 7), 1fr);
+  width: min(100%, 460px);
+  max-width: 100%;
   margin: 0 auto;
   aspect-ratio: var(--cols, 7) / var(--rows, 7);
   border: 3px solid #1A1108;
@@ -1227,7 +1233,8 @@ body.tutorial-mode #btn-share { display: none; }
 
 .bcell {
   position: relative;
-  aspect-ratio: 1;
+  min-width: 0;
+  min-height: 0;
   border: 0;
   padding: 0;
   margin: 0;
@@ -1393,7 +1400,7 @@ body.tutorial-mode #btn-share { display: none; }
   display: flex;
   align-items: center;
   gap: 4px;
-  padding: 6px 10px max(6px, calc(var(--sab) - 16px));
+  padding: 5px 8px max(4px, calc(var(--sab) - 20px));
   background: var(--bg-card);
   border-top: 1px solid var(--border-light);
   box-shadow: 0 -4px 14px rgba(44, 24, 16, 0.06);
@@ -2000,17 +2007,73 @@ input, textarea { -webkit-user-select: text; user-select: text; }
 .bcell .spark { position: absolute; left: 50%; top: 50%; width: 6px; height: 6px; margin: -3px 0 0 -3px; border-radius: 50%; background: var(--gold-light); pointer-events: none; z-index: 5; animation: spark 0.55s ease-out forwards; }
 @keyframes spark { 0% { transform: translate(0, 0) scale(1); opacity: 1; } 100% { transform: translate(var(--dx), var(--dy)) scale(0.2); opacity: 0; } }
 
-/* ── Bordscherm: scheidingslijn, uitleg-venster en beschuldiging op het bord ── */
-/* Tik op de lijn: groot bord ⇄ meer tekst. Slepen: zelf de verdeling kiezen. */
-.clue-handle {
-  display: flex; align-items: center; justify-content: center; gap: 8px;
-  flex: none; padding: 3px 12px 4px; border: 0; border-top: 1px solid var(--border-light);
-  background: var(--bg-card); color: var(--text-light); font: inherit; font-size: 0.66rem; font-weight: 700;
-  letter-spacing: 0.04em; text-transform: uppercase; cursor: ns-resize; touch-action: none; -webkit-tap-highlight-color: transparent;
+/* ── Bordscherm: verklaringendek, uitleg-venster en beschuldiging op het bord ── */
+/* Eén verklaring tegelijk, groot genoeg om te lezen zonder te scrollen. */
+.clue-deck {
+  flex: none;
+  display: flex; flex-direction: column; gap: 7px;
+  padding: 7px 12px 9px;
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border-light);
 }
-.clue-handle i { display: block; width: 34px; height: 4px; border-radius: 2px; background: var(--gold-light); }
-.clue-handle:active i, #screen-board.read .clue-handle i { background: var(--gold); }
-.board-clues { padding-top: 8px; }
+.deck-nav { display: flex; align-items: center; gap: 8px; }
+.deck-arrow {
+  flex: none; width: 32px; height: 32px; border-radius: 50%;
+  border: 1.5px solid var(--border); background: var(--bg-card);
+  color: var(--text-primary); font: inherit; font-size: 1.25rem; line-height: 1; padding: 0 0 3px;
+  cursor: pointer; -webkit-tap-highlight-color: transparent;
+}
+.deck-arrow:active { background: var(--accent-subtle); border-color: var(--accent); }
+.deck-arrow:disabled { opacity: 0.3; cursor: default; }
+.deck-dots { flex: 1; display: flex; align-items: center; justify-content: center; gap: 1px; flex-wrap: wrap; }
+/* de stip is klein, het aanraakvlak eromheen niet */
+.cdot {
+  width: 22px; height: 22px; padding: 0; flex: none;
+  border: 0; background: none; position: relative; cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.cdot::before {
+  content: ''; position: absolute; inset: 6px;
+  border-radius: 50%; border: 1.5px solid var(--border); background: var(--bg-card);
+  transition: transform var(--duration-fast) var(--ease-spring);
+}
+.cdot.ok::before  { background: #7DAE7A; border-color: #7DAE7A; }
+.cdot.bad::before { background: #D9534F; border-color: #D9534F; }
+.cdot.done::before { opacity: 0.4; }
+.cdot.on::before { transform: scale(1.6); border-color: var(--accent); border-width: 2px; }
+.deck-all {
+  flex: none; border: 1.5px solid var(--border); background: var(--bg-card);
+  border-radius: var(--radius-full); padding: 6px 11px;
+  font: inherit; font-size: 0.7rem; font-weight: 800; color: var(--text-secondary); cursor: pointer;
+}
+.deck-track { touch-action: pan-y; }
+.dclue {
+  display: flex; align-items: flex-start; gap: 10px;
+  min-height: 94px; padding: 11px 11px 11px 8px;
+  background: var(--bg-card); border: 2px solid var(--border-light);
+  border-radius: var(--radius-md); box-shadow: var(--shadow-sm);
+  -webkit-tap-highlight-color: transparent;
+}
+.dclue .bclue-ava { width: 46px; height: 46px; border: 2px solid var(--sc, var(--text-primary)); }
+.dclue .bclue-pair .bclue-ava { width: 34px; height: 34px; }
+.dclue .bclue-name { font-size: 0.98rem; }
+.dclue .bclue-text { font-size: 0.96rem; line-height: 1.45; color: var(--text-primary); }
+.dclue .bclue-num { margin-top: 14px; }
+.dclue.ok  { border-color: #7DAE7A; background: #F3F8F1; }
+.dclue.bad { border-color: #D9534F; background: #FCF1F0; }
+.dclue.bad .bclue-text { color: #9C2A24; }
+.dclue.done { opacity: 0.6; }
+.dclue.done .bclue-text { text-decoration: line-through; }
+.dclue.done .bclue-check { background: var(--text-light); border-color: var(--text-light); color: #fff; }
+.dclue.ok   .bclue-check { background: #4E8B4A; border-color: #4E8B4A; color: #fff; }
+.dclue.bad  .bclue-check { background: #D9534F; border-color: #D9534F; color: #fff; }
+/* alle verklaringen in één venster */
+.clue-sheet { padding-top: 16px; display: flex; flex-direction: column; max-height: 84dvh; overflow: hidden; }
+.clue-sheet-title { font-size: 1.15rem; text-align: center; margin-bottom: 2px; }
+.clue-sheet-hint { font-size: 0.74rem; color: var(--text-light); text-align: center; margin-bottom: 8px; }
+/* de lijst scrollt, de sluitknop blijft staan */
+.clue-sheet .board-clues { background: none; padding: 0 0 12px; flex: 1; min-height: 0; overflow-y: auto; }
+.clue-sheet .btn { flex: none; }
 .newclue-sheet { padding-top: 14px; }
 .newclue-sheet .newclue { border: 0; padding: 4px 0 0; box-shadow: none; animation: none; }
 .newclue-sheet .newclue-body { margin: 10px 0 16px; }
@@ -2018,7 +2081,7 @@ input, textarea { -webkit-user-select: text; user-select: text; }
 .newclue-sheet .newclue-pic { width: 76px; height: 76px; }
 /* beschuldiging: paneel onderin, de plattegrond blijft staan en de kamer van het slachtoffer licht op */
 .board-accuse {
-  flex: 1; min-height: 0;
+  flex: none; max-height: 64dvh; min-height: 0;
   display: flex; flex-direction: column; gap: 8px;
   padding: 12px 14px max(10px, calc(var(--sab) - 10px));
   background: var(--bg-card); border-top: 3px solid var(--accent);
@@ -2027,9 +2090,7 @@ input, textarea { -webkit-user-select: text; user-select: text; }
 /* de vraag en de portretten scrollen; "Terug naar het bord" blijft altijd staan */
 .accuse-scroll { flex: 1; min-height: 0; overflow-y: auto; -webkit-overflow-scrolling: touch; display: flex; flex-direction: column; gap: 10px; }
 /* tijdens de beschuldiging krimpt het bord, zodat vraag, portretten en knop passen */
-#screen-board.accusing .board-grid {
-  width: min(100%, 460px, var(--board-px, 100vw), max(168px, calc(100dvh - var(--sat) - var(--sab) - 430px)));
-}
+/* tijdens de beschuldiging houdt het paneel zijn eigen hoogte; het bord krijgt de rest */
 /* meer dan vier verdachten: compactere kaarten, zodat alle portretten in beeld passen */
 .board-accuse .murder-options { grid-template-columns: repeat(auto-fit, minmax(96px, 1fr)); gap: 8px; }
 .board-accuse .accuse-opt { padding: 7px 4px; gap: 4px; }
@@ -2052,8 +2113,8 @@ input, textarea { -webkit-user-select: text; user-select: text; }
 .accuse-back { align-self: center; margin-top: 2px; }
 .accuse-room { font-size: 0.66rem; font-weight: 700; color: var(--text-light); text-align: center; line-height: 1.1; }
 .accuse-opt.guilty .accuse-room { color: var(--success); }
-#screen-board.accusing .board-suspects, #screen-board.accusing .clue-handle,
-#screen-board.accusing .board-clues, #screen-board.accusing .board-tools,
+#screen-board.accusing .board-suspects, #screen-board.accusing .clue-deck,
+#screen-board.accusing .board-tools,
 #screen-board.accusing .board-coach, #screen-board.accusing .board-tip { display: none; }
 #screen-board.accusing .bcell:not(.murder-room)::before { background: rgba(250, 245, 239, 0.62); }
 #screen-board.accusing .bcell:not(.murder-room) .bsus { opacity: 0.55; }

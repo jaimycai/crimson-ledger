@@ -255,9 +255,16 @@
 
       <div class="board-suspects" id="board-suspects"></div>
 
-      <button type="button" class="clue-handle" id="btn-clue-handle" aria-label="Meer tekst of groter bord"><i></i><span id="clue-handle-label">Meer tekst</span></button>
-
-      <div class="board-clues" id="board-clues"></div>
+      <!-- Verklaringendek: één grote leesbare verklaring, swipen of tikken voor de volgende -->
+      <div class="clue-deck" id="clue-deck">
+        <div class="deck-nav">
+          <button type="button" class="deck-arrow" id="btn-clue-prev" aria-label="Vorige verklaring">‹</button>
+          <div class="deck-dots" id="clue-dots"></div>
+          <button type="button" class="deck-arrow" id="btn-clue-next" aria-label="Volgende verklaring">›</button>
+          <button type="button" class="deck-all" id="btn-clue-all">Alle</button>
+        </div>
+        <div class="deck-track" id="clue-track"></div>
+      </div>
 
       <div class="board-tools">
         <button type="button" class="tool active" id="btn-board-place">
@@ -397,6 +404,17 @@
   </div>
 
   <!-- ═══════ BESCHULDIGING ═══════ -->
+  <!-- ═══════ ALLE VERKLARINGEN ═══════ -->
+  <div class="modal-overlay" id="clue-modal">
+    <div class="modal-content clue-sheet">
+      <div class="modal-handle"></div>
+      <h3 class="clue-sheet-title">Alle verklaringen</h3>
+      <p class="clue-sheet-hint">Tik een verklaring om hem op het bord te bekijken.</p>
+      <div class="board-clues" id="board-clues"></div>
+      <button type="button" class="btn btn-secondary btn-block" id="btn-clue-close">Sluiten</button>
+    </div>
+  </div>
+
   <!-- ═══════ NIEUW IN DIT DEEL: uitleg van een nieuwe soort verklaring ═══════ -->
   <div class="modal-overlay" id="newclue-modal">
     <div class="modal-content newclue-sheet" id="newclue-host"></div>

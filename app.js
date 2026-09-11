@@ -660,6 +660,8 @@ const App = {
       current.classList.remove('active', 'fade-out');
       next.classList.add('active');
       this.currentScreen = screenId;
+      // het bord kan pas passend gemaakt worden als het scherm in beeld is
+      if (screenId === 'board' && typeof Board !== 'undefined') Board.fitBoard();
     }, 250);
   },
 
