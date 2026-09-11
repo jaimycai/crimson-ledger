@@ -71,6 +71,8 @@ const Board = {
     grid.classList.remove('solved');
     grid.dataset.floor = theme.floor;
     document.getElementById('board-tip').hidden = true;
+    this.endAccuse();
+    this.renderIntro();
     document.getElementById('board-coach').hidden = false;
     document.getElementById('btn-board-hint').disabled = true;
     this.renderBoard(); this.renderSuspects(); this.renderClues();
@@ -123,6 +125,7 @@ const Board = {
     });
     // één "Nieuw!"-uitleg per zaak, voor de eerste soort verklaring die de speler nog niet kent
     this.newIntro = typeof Mentor !== 'undefined' ? Mentor.introFor(puzzle.clues.map(c => c.kind), this.introsSeen()) : null;
+    this.endAccuse();
     document.getElementById('board-coach').hidden = true;
     document.getElementById('btn-board-hint').disabled = false;
 
@@ -144,7 +147,11 @@ const Board = {
     this.renderClues();
     this.renderCells();
     this.updateTools();
+    this.applyRead();
     this.startTimer();
+    // campagnezaak: eerst de briefing van Van Dam, de uitleg volgt na "Aan de slag"
+    this.renderIntro();
+    if (!campaignCase) this.showIntro();
     return true;
   },
 
@@ -235,6 +242,25 @@ const Board = {
     return t;
   },
   introsSeen() { try { return JSON.parse(App.storageGet('crimson-newclue-seen') || '[]'); } catch (e) { return []; } },
+  // "Nieuw in dit deel": één uitleg per zaak in een eigen venster, zodat de
+  // verklaringen zelf alle ruimte houden. De klok staat stil zolang je leest.
+  renderIntro() {
+    const host = document.getElementById('newclue-host');
+    if (!host) return;
+    const t = this.newIntro;
+    host.innerHTML = t && !this.isTutorial
+      ? `<div class="modal-handle"></div><div class="newclue" id="newclue"><span class="ribbon ribbon-gold">Nieuw in dit deel</span>
+        <div class="newclue-body"><div><h3>${t.title}</h3><p>${t.text}</p></div><span class="newclue-pic">${t.svg}</span></div>
+        <button type="button" class="btn btn-dark btn-block" id="btn-newclue-ok">Begrepen</button></div>`
+      : '';
+    const ok = document.getElementById('btn-newclue-ok');
+    if (ok) ok.addEventListener('click', () => this.dismissIntro());
+  },
+  showIntro() {
+    if (!this.newIntro || this.isTutorial || !document.getElementById('newclue')) return;
+    this.stopTimer();
+    App.showModal('newclue-modal');
+  },
   dismissIntro() {
     if (this.newIntro) {
       const seen = this.introsSeen();
@@ -242,20 +268,15 @@ const Board = {
       App.storageSet('crimson-newclue-seen', JSON.stringify(seen));
     }
     this.newIntro = null;
-    this.renderClues();
+    App.hideModal('newclue-modal');
+    this.renderIntro();
+    if (!this.solved && this.puzzle) this.startTimer();
   },
   renderClues() {
     const list = document.getElementById('board-clues');
     const refs = this.hintRefs ? new Set(this.hintRefs.clues) : new Set();
     const p = this.puzzle;
-    let html = '';
-    if (this.newIntro && !this.isTutorial) {
-      const t = this.newIntro;
-      html += `<div class="newclue" id="newclue"><span class="ribbon ribbon-gold">Nieuw in dit deel</span>
-        <div class="newclue-body"><div><h3>${t.title}</h3><p>${t.text}</p></div><span class="newclue-pic">${t.svg}</span></div>
-        <button type="button" class="btn btn-dark btn-block" id="btn-newclue-ok">Begrepen</button></div>`;
-    }
-    html += p.clues.map((clue, i) => {
+    let html = p.clues.map((clue, i) => {
       const st = FloorPlan.statement(clue, p);
       const state = this.solved ? 'ok' : this.clueState(clue);
       const done = this.clueDone.has(i);
@@ -277,8 +298,6 @@ const Board = {
       this.clueDone.has(i) ? this.clueDone.delete(i) : this.clueDone.add(i);
       this.renderClues();
     }));
-    const ok = document.getElementById('btn-newclue-ok');
-    if (ok) ok.addEventListener('click', () => this.dismissIntro());
   },
 
   // ── Aanwijzing aantikken: laat zien waar het over gaat ────
@@ -359,6 +378,7 @@ const Board = {
       el.classList.toggle('occupied', !!furn || isVictim);
       el.classList.toggle('hinted', hinted.has(k));
       el.classList.toggle('conflict', conflict.has(k));
+      el.classList.toggle('murder-room', !!this.accusing && FloorPlan.roomOf(p.rooms, x, y).id === p.victim.roomId);
     });
   },
 
@@ -517,14 +537,38 @@ const Board = {
       ? this.TUTORIAL_STEPS[3].text
       : `Iedereen staat op zijn plek. Wie was alleen met het slachtoffer in ${q.article || 'de'} ${q.name}?`;
     const wrap = document.getElementById('murder-options');
-    wrap.innerHTML = p.suspects.map((s, i) =>
-      `<button type="button" class="murder-opt accuse-opt" data-s="${i}">
+    // onder elke naam de kamer waar hij staat: de conclusie is dan één blik
+    wrap.innerHTML = p.suspects.map((s, i) => {
+      const c = this.placements[i];
+      const room = c ? FloorPlan.roomOf(p.rooms, c.x, c.y) : null;
+      return `<button type="button" class="murder-opt accuse-opt" data-s="${i}">
          <span class="accuse-ava">${Avatars.suspect(s, i)}</span><span class="accuse-name">${s.label}</span>
-       </button>`).join('');
+         <span class="accuse-room">${room ? room.name : ''}</span>
+       </button>`;
+    }).join('');
     wrap.querySelectorAll('.murder-opt').forEach(b => b.addEventListener('click', () => this.answerMurderer(+b.dataset.s, b)));
     const react = document.getElementById('murder-reaction');
     react.hidden = true; react.innerHTML = '';
-    App.showModal('murder-modal');
+    // geen venster over het bord: het paneel komt onderin, de plattegrond blijft
+    // zichtbaar en de kamer van het slachtoffer licht op
+    this.accusing = true;
+    document.getElementById('screen-board').classList.add('accusing');
+    const panel = document.getElementById('board-accuse');
+    panel.hidden = false; panel.scrollTop = 0;
+    this.renderCells();
+    Sound.play('clue');
+  },
+  endAccuse() {
+    this.accusing = false;
+    const screen = document.getElementById('screen-board'), panel = document.getElementById('board-accuse');
+    if (screen) screen.classList.remove('accusing');
+    if (panel) panel.hidden = true;
+  },
+  // "Terug naar het bord": even de verklaringen nalezen, daarna opnieuw Controleer
+  cancelAccuse() {
+    clearTimeout(this.finishTimer);
+    this.endAccuse();
+    if (this.puzzle) this.renderCells();
   },
 
   // De beschuldigde reageert: ontkenning bij de verkeerde, bekentenis bij de juiste.
@@ -535,6 +579,7 @@ const Board = {
       react.hidden = false;
       react.className = `accuse-reaction ${cls}`;
       react.innerHTML = `<span class="accuse-ava-sm">${Avatars.suspect(s, i)}</span><span><b>${s.label}:</b> “${text}”</span>`;
+      if (react.scrollIntoView) react.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
     };
     if (i !== this.puzzle.murderer) {
       this.attempts++;
@@ -551,7 +596,7 @@ const Board = {
     Sound.play('clue');
     this.buzz(12);
     clearTimeout(this.finishTimer);
-    this.finishTimer = setTimeout(() => { App.hideModal('murder-modal'); this.finish(); }, 700);
+    this.finishTimer = setTimeout(() => { this.endAccuse(); this.finish(); }, 700);
   },
 
   medalCtx() {
@@ -805,7 +850,68 @@ const Board = {
     ].filter(Boolean).join('\n');
   },
 
+  // ── Scheidingslijn tussen bord en verklaringen ────────────
+  // Tik: groot bord ⇄ meer tekst. Slepen: zelf de verdeling kiezen. De keuze
+  // wordt onthouden (crimson-board-read = bordbreedte in px).
+  READ_PX: 236,
+  boardMax() {
+    const grid = document.getElementById('board-grid');
+    const saved = grid.style.getPropertyValue('--board-px');
+    grid.style.removeProperty('--board-px');
+    const max = grid.getBoundingClientRect().width;
+    if (saved) grid.style.setProperty('--board-px', saved);
+    return max;
+  },
+  setBoardSize(px, save, max = this.boardMax()) {
+    const grid = document.getElementById('board-grid');
+    const w = Math.max(200, Math.min(max, px));
+    const read = max > 0 && w < max - 2;
+    if (read) grid.style.setProperty('--board-px', `${Math.round(w)}px`); else grid.style.removeProperty('--board-px');
+    document.getElementById('screen-board').classList.toggle('read', read);
+    const label = document.getElementById('clue-handle-label');
+    if (label) label.textContent = read ? 'Groter bord' : 'Meer tekst';
+    if (save) { if (read) App.storageSet('crimson-board-read', String(Math.round(w))); else App.storageRemove('crimson-board-read'); }
+  },
+  applyRead() {
+    const v = +(App.storageGet('crimson-board-read') || 0);
+    this.setBoardSize(v > 0 ? v : 1e4, false);
+  },
+  toggleRead() {
+    const max = this.boardMax();
+    const cur = document.getElementById('board-grid').getBoundingClientRect().width;
+    this.setBoardSize(cur < max - 2 ? max : this.READ_PX, true, max);
+  },
+  bindHandle() {
+    const h = document.getElementById('btn-clue-handle');
+    if (!h) return;
+    let startY = 0, startW = 0, max = 0, moved = false, active = false;
+    h.addEventListener('pointerdown', e => {
+      active = true; moved = false; startY = e.clientY;
+      max = this.boardMax(); startW = document.getElementById('board-grid').getBoundingClientRect().width;
+      try { h.setPointerCapture(e.pointerId); } catch (x) { /* jsdom */ }
+    });
+    h.addEventListener('pointermove', e => {
+      if (!active) return;
+      const dy = e.clientY - startY;
+      if (!moved && Math.abs(dy) < 6) return;
+      moved = true;
+      this.setBoardSize(startW + dy, false, max);
+    });
+    const end = () => {
+      if (!active) return;
+      active = false;
+      if (moved) this.setBoardSize(document.getElementById('board-grid').getBoundingClientRect().width, true, max);
+      else this.toggleRead();
+    };
+    h.addEventListener('pointerup', end);
+    h.addEventListener('pointercancel', () => { active = false; });
+    // zonder pointer events (oude browsers, tests): gewone tik
+    h.addEventListener('click', () => { if (!('PointerEvent' in window)) this.toggleRead(); });
+  },
+
   bind() {
+    this.bindHandle();
+    document.getElementById('btn-accuse-back').addEventListener('click', () => this.cancelAccuse());
     document.getElementById('btn-board-place').addEventListener('click', () => this.setMode('place'));
     document.getElementById('btn-board-mark').addEventListener('click',  () => this.setMode('mark'));
     document.getElementById('btn-board-erase').addEventListener('click', () => this.setMode('erase'));

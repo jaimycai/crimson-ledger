@@ -255,6 +255,8 @@
 
       <div class="board-suspects" id="board-suspects"></div>
 
+      <button type="button" class="clue-handle" id="btn-clue-handle" aria-label="Meer tekst of groter bord"><i></i><span id="clue-handle-label">Meer tekst</span></button>
+
       <div class="board-clues" id="board-clues"></div>
 
       <div class="board-tools">
@@ -274,6 +276,17 @@
           <span class="tool-icon">💡</span><span class="tool-label">Hint</span>
         </button>
         <button type="button" class="btn btn-primary board-check" id="btn-board-check" disabled>Controleer</button>
+      </div>
+
+      <!-- Beschuldiging: op het bordscherm zelf, zodat de plattegrond zichtbaar blijft -->
+      <div class="board-accuse" id="board-accuse" hidden>
+        <div class="accuse-scroll">
+          <h3 class="accuse-title">Wie heeft de moord gepleegd?</h3>
+          <p class="accuse-q" id="murder-question"></p>
+          <div class="murder-options" id="murder-options"></div>
+          <div class="accuse-reaction" id="murder-reaction" hidden></div>
+        </div>
+        <button type="button" class="btn btn-ghost btn-sm accuse-back" id="btn-accuse-back">← Terug naar het bord</button>
       </div>
     </section>
 
@@ -384,14 +397,9 @@
   </div>
 
   <!-- ═══════ BESCHULDIGING ═══════ -->
-  <div class="modal-overlay" id="murder-modal">
-    <div class="modal-content accuse">
-      <div class="modal-handle"></div>
-      <h3 class="clue-modal-title accuse-title">Wie heeft de moord gepleegd?</h3>
-      <p class="clue-modal-text" id="murder-question"></p>
-      <div class="murder-options" id="murder-options"></div>
-      <div class="accuse-reaction" id="murder-reaction" hidden></div>
-    </div>
+  <!-- ═══════ NIEUW IN DIT DEEL: uitleg van een nieuwe soort verklaring ═══════ -->
+  <div class="modal-overlay" id="newclue-modal">
+    <div class="modal-content newclue-sheet" id="newclue-host"></div>
   </div>
 
   <!-- ═══════ BRIEFING VAN INSPECTEUR VAN DAM ═══════ -->

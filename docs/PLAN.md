@@ -224,6 +224,33 @@ retentie/gebruik, en zoektermen. Wat daarvoor nog nodig is, op volgorde van effe
    privacyvriendelijke, anonieme telling van "dag 1/7/30 terug" via App Store Connect-
    statistieken (die zijn er standaard) voordat er iets in de app komt.
 
+## Leesbaar bord en een overzichtelijke beschuldiging (11 sep)
+
+Telefoontest van Jaimy: "De balk met opties kan iets naar beneden en ik kan zo de
+tekst niet meer lezen om de puzzel op te lossen. Dat is essentieel. De laatste stap
+om te kiezen wie de moordenaar is begrijp ik niet zo. Want je kan alleen kiezen
+tussen de personages en niet terug naar de kaart en daardoor niet overzichtelijk."
+
+Wat er is veranderd:
+
+- **Meer ruimte voor de verklaringen.** De gereedschapsbalk gebruikt de veilige
+  zone onderin zuiniger (93 → 67 px hoog) en het bord is standaard kleiner, zodat
+  de verklaringenlijst van 149 naar 240 px groeit: twee hele kaarten in beeld in
+  plaats van anderhalve.
+- **Zelf de verdeling kiezen.** Tussen de verdachtenbalk en de verklaringen zit
+  een lijn met het label "Meer tekst" / "Groter bord". Eén tik wisselt, slepen
+  zet de grens waar je hem hebben wilt. De keuze wordt onthouden in
+  `crimson-board-read`.
+- **"Nieuw in dit deel" is een eigen venster** geworden in plaats van een kaart
+  bovenaan de lijst — die at de halve leesruimte op. De klok staat stil zolang
+  het venster open staat, en het verschijnt pas na de briefing van Van Dam.
+- **De beschuldiging blijft op het bord.** Geen venster meer over de plattegrond:
+  een paneel schuift onderin, de plattegrond blijft staan, de kamer van het
+  slachtoffer licht rood op en de rest vervaagt. Onder elke naam staat de kamer
+  waar die verdachte staat, zodat de conclusie één blik is. "← Terug naar het
+  bord" staat vast onderin en brengt je terug naar de verklaringen; Controleer
+  opent de vraag opnieuw.
+
 ## Openstaande punten (volgorde van voorstel)
 
 1. App Store: stappen in `store/CHECKLIST.md` (Apple-account, archiveren, uploaden).

@@ -47,7 +47,7 @@ const check = (cond, msg) => { if (cond) console.log('ok  ', msg); else { failur
   bcell(3, 3).click();
   check(window.Board.tutorialStep === 2 && !document.getElementById('btn-board-check').disabled, 'board step 2 done, check enabled');
   click('btn-board-check');
-  check(document.getElementById('murder-modal').classList.contains('active') && window.Board.tutorialStep === 3, 'murder question in tutorial');
+  check(document.getElementById('screen-board').classList.contains('accusing') && window.Board.tutorialStep === 3, 'murder question in tutorial');
   document.querySelector('.murder-opt[data-s="1"]').click(); await sleep(1100);
   check(active() === 'screen-results', 'board tutorial results screen');
   check(document.getElementById('results-headline').textContent === 'Goed gedaan!', 'board tutorial headline');

@@ -1,6 +1,6 @@
 // Service worker: netwerk-eerst (je ziet altijd de nieuwste versie als je
 // online bent), cache als terugval zodat het spel offline blijft werken.
-const CACHE = 'crimson-ledger-v4';
+const CACHE = 'crimson-ledger-v5';
 const CORE = ['./', './index.html', './style.css', './app.js', './board.js', './floorplan.js', './logic-engine.js',
               './story.js', './themes.js', './campaign.js', './progress.js', './mentor.js', './sound.js', './avatars.js', './manifest.json',
               './mapart.js', './assets/vandam.jpg', './assets/vandam-sketch.jpg',

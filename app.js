@@ -129,7 +129,7 @@ const App = {
     on('btn-campaign', () => { const c = this.nextCampaignCase(); this.openMap(c ? c.theme : (this.storageGet('crimson-last-world') || 'landhuis')); });
     on('btn-campaign-back', () => this.navigateTo('menu'));
     on('btn-map-play', () => this.playCurrent());
-    on('btn-briefing-go', () => { this.hideModal('briefing-modal'); Board.startTimer(); });
+    on('btn-briefing-go', () => { this.hideModal('briefing-modal'); Board.startTimer(); Board.showIntro(); });
     on('btn-part-go', () => { this.hideModal('part-modal'); const f = this.partThen; this.partThen = null; if (f) f(); });
     document.getElementById('map-pop').addEventListener('click', e => { if (e.target.id === 'map-pop') this.closeNode(); });
     const scroll = document.getElementById('map-scroll');
