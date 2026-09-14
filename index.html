@@ -215,6 +215,7 @@
         <span class="map-stars" id="campaign-total"></span>
       </div>
       <div class="world-tabs" id="world-tabs"></div>
+      <p class="map-legend">Per zaak: <b>★★★</b> zonder hint én in één keer · <b>★★</b> één van de twee · <b>★</b> opgelost</p>
       <div class="map-scroll" id="map-scroll">
         <div class="map-canvas" id="map-canvas"></div>
       </div>
@@ -422,16 +423,17 @@
 
   <!-- ═══════ HINT MODAL ═══════ -->
   <div class="modal-overlay" id="hint-modal">
-    <div class="modal-content">
+    <div class="modal-content hint-sheet">
       <div class="modal-handle"></div>
-      <div class="clue-modal-icon">💡</div>
-      <h3 class="clue-modal-title">Hint</h3>
-      <p class="clue-modal-text" id="hint-text"></p>
-      <details class="hint-detail" id="hint-detail">
-        <summary>Meer uitleg tonen</summary>
-        <p id="hint-detail-text"></p>
-      </details>
-      <button class="btn btn-primary btn-block" id="btn-close-hint">Verder</button>
+      <div class="mentor-head">
+        <img class="mentor-img" src="assets/vandam.jpg" alt="">
+        <div><h3 class="mentor-name">Inspecteur Van Dam</h3><span class="mentor-sub" id="hint-sub">Hint</span></div>
+      </div>
+      <p class="hint-lead" id="hint-text"></p>
+      <div class="hint-step"><span class="hint-step-label">1 · Kijk naar</span><div class="hint-clues" id="hint-clues"></div></div>
+      <div class="hint-step" id="hint-detail"><span class="hint-step-label">2 · Dat betekent</span><p class="hint-meaning" id="hint-detail-text"></p></div>
+      <div class="hint-step"><span class="hint-step-label">3 · Doe dit</span><p class="hint-action" id="hint-action"></p></div>
+      <button class="btn btn-primary btn-block" id="btn-close-hint">Laat zien op het bord</button>
     </div>
   </div>
 

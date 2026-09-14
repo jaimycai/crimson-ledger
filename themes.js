@@ -178,6 +178,64 @@ const THEMES = [
       { label: 'Weduwe Duval',        color: '#7B5E3B', style: { hair: 1, glasses: true } }
     ],
     outro: 'Bij zonsopgang rijdt de trein het station binnen. Eén reiziger stapt uit in handboeien.'
+  },
+  {
+    id: 'circus', unlock: 20, icon: '🎪', title: 'Het Circus', short: 'Circus',
+    map: { accent: '#B3261E', ring: '#F5D67A' }, tagline: 'De voorstelling is voorbij, de tent gaat dicht, en de directeur ligt in de piste.',
+    intro: 'Circus Zano, de laatste voorstelling van het seizoen. Het publiek is naar huis, de tent gaat dicht, en directeur Zano ligt in het zaagsel van de piste. De artiesten zijn er nog allemaal.',
+    victimName: 'Directeur Ferdinand Zano', roomWord: 'ruimte', roomWordPlural: 'ruimtes', floor: 'zaagsel',
+    rooms: [
+      { name: 'Piste', article: 'de', color: '#E8A798' }, { name: 'Tribune', article: 'de', color: '#F0CE8E' },
+      { name: 'Kleedwagen', article: 'de', color: '#E3B7D6' }, { name: 'Dierentent', article: 'de', color: '#B8D9A1' },
+      { name: 'Kassa', article: 'de', color: '#9FC8C8' }, { name: 'Kantine', article: 'de', color: '#E3C58E' },
+      { name: 'Werkplaats', article: 'de', color: '#D9C7A6' }, { name: 'Directiewagen', article: 'de', color: '#C7BEE3' },
+      { name: 'Stalling', article: 'de', color: '#D6C3A5' }, { name: 'Kostuumwagen', article: 'de', color: '#B9AEDC' },
+      { name: 'Ingang', article: 'de', color: '#A8BEE0' }, { name: 'Opslagtent', article: 'de', color: '#D0C9BD' }
+    ],
+    furniture: [
+      { id: 'circuskanon', nl: 'een circuskanon' }, { id: 'trapeze', nl: 'een trapeze' }, { id: 'spiegelkast', nl: 'een spiegelkast' },
+      { id: 'popcornkar', nl: 'een popcornkar' }, { id: 'kooi', nl: 'een leeuwenkooi' }
+    ],
+    suspects: [
+      { label: 'Clown Pippo',          color: '#B3261E', style: { hair: 0 } },
+      { label: 'Trapezeartiest Mira',  color: '#C2185B', style: { hair: 2 } },
+      { label: 'Leeuwentemmer Kurt',   color: '#B8955C', style: { hair: 3, moustache: true } },
+      { label: 'Waarzegster Zora',     color: '#8B5CB8', style: { hair: 1, hat: 'bandana' } },
+      { label: 'Sterke Man Boris',     color: '#2C3E50', style: { hair: 0, beard: true, moustache: true } },
+      { label: 'Kaartverkoper Els',    color: '#5C8B5E', style: { hair: 4, glasses: true } },
+      { label: 'Jongleur Teo',         color: '#5C7AB8', style: { hair: 3, hat: 'cap' } },
+      { label: 'Dierenarts Nadia',     color: '#7B5E3B', style: { hair: 1, glasses: true } }
+    ],
+    outro: 'De tent wordt afgebroken. Het zaagsel wordt weggeveegd, en met het zaagsel het laatste spoor.'
+  },
+  {
+    id: 'skihut', unlock: 24, icon: '🏔️', title: 'De Skihut', short: 'Skihut',
+    map: { accent: '#3E5A6E', ring: '#DCEBF0' }, tagline: 'Een lawine sluit het dal af. Zeven gasten, één kachel, en een gastheer die niet meer opwarmt.',
+    intro: 'Berghut Edelweiss, hoog in de Alpen. Een lawine sluit de enige weg af. Binnen: zeven gasten, één kachel, en een gastheer die bij het vuur niet meer opwarmt.',
+    victimName: 'Gastheer Anton Berger', roomWord: 'ruimte', roomWordPlural: 'ruimtes', floor: 'balken',
+    rooms: [
+      { name: 'Gelagkamer', article: 'de', color: '#E3C58E' }, { name: 'Keuken', article: 'de', color: '#9FC8C8' },
+      { name: 'Slaapzaal', article: 'de', color: '#C7BEE3' }, { name: 'Skiberging', article: 'de', color: '#B0C4CC' },
+      { name: 'Sauna', article: 'de', color: '#E8A798' }, { name: 'Terras', article: 'het', color: '#DCEBF0' },
+      { name: 'Kelder', article: 'de', color: '#D6C3A5' }, { name: 'Zolder', article: 'de', color: '#D9C7A6' },
+      { name: 'Wasruimte', article: 'de', color: '#8FC5D8' }, { name: 'Voorraadkamer', article: 'de', color: '#D0C9BD' },
+      { name: 'Speelkamer', article: 'de', color: '#F0CE8E' }, { name: 'Hal', article: 'de', color: '#B9AEDC' }
+    ],
+    furniture: [
+      { id: 'kachel', nl: 'een kachel' }, { id: 'slee', nl: 'een slee' }, { id: 'skirek', nl: 'een skirek' },
+      { id: 'gewei', nl: 'een gewei' }, { id: 'fondue', nl: 'een fonduepan' }
+    ],
+    suspects: [
+      { label: 'Skilerares Mieke',     color: '#B85C5C', style: { hair: 1 } },
+      { label: 'Bergredder Tom',       color: '#5C8B5E', style: { hair: 3, beard: true } },
+      { label: 'Toeriste Hana',        color: '#C2185B', style: { hair: 2 } },
+      { label: 'Kok Luigi',            color: '#B8955C', style: { hair: 0, moustache: true } },
+      { label: 'Fotograaf Sven',       color: '#5C7AB8', style: { hair: 4, glasses: true } },
+      { label: 'Dokter Greet',         color: '#8B5CB8', style: { hair: 2, glasses: true } },
+      { label: 'Jongen Kai',           color: '#D9A441', style: { hair: 3, hat: 'cap' } },
+      { label: 'Berggids Ilse',        color: '#2C3E50', style: { hair: 1, hat: 'bandana' } }
+    ],
+    outro: 'De hut is dicht, de sneeuw ligt weer stil. Jij weet wat eronder lag.'
   }
 ];
 
@@ -185,14 +243,16 @@ const THEMES = [
 const TITLES = new Set(['dr.', 'majoor', 'tante', 'kok', 'bootsman', 'stuurman', 'juffrouw', 'kanonnier', 'dokter', 'scheepsjongen',
   'gravin', 'portier', 'pianist', 'mevrouw', 'journalist', 'chef', 'butler', 'danseres', 'piloot', 'ingenieur', 'botanist', 'kadet',
   'officier', 'bioloog', 'gids', 'curator', 'restaurateur', 'nachtwaker', 'professor', 'stagiair', 'schoonmaker', 'kunsthandelaar',
-  'barones', 'goochelaar', 'schaakmeester', 'verpleegster', 'reiziger', 'actrice', 'stoker', 'weduwe', 'conducteur']);
+  'barones', 'goochelaar', 'schaakmeester', 'verpleegster', 'reiziger', 'actrice', 'stoker', 'weduwe', 'conducteur',
+  'clown', 'trapezeartiest', 'leeuwentemmer', 'waarzegster', 'sterke', 'man', 'kaartverkoper', 'jongleur', 'dierenarts',
+  'skilerares', 'bergredder', 'toeriste', 'fotograaf', 'jongen', 'berggids', 'gastheer']);
 
 const Themes = {
   list: () => THEMES,
   get: id => THEMES.find(t => t.id === id) || THEMES[0],
   shortName(label) {
     const parts = String(label || '').trim().split(/\s+/);
-    if (parts.length > 1 && TITLES.has(parts[0].toLowerCase())) return parts.slice(1).join(' ');
+    while (parts.length > 1 && TITLES.has(parts[0].toLowerCase())) parts.shift();   // "Sterke Man Boris" → "Boris"
     return parts[0] || '';
   },
   forDay: dayNumber => THEMES[((dayNumber % THEMES.length) + THEMES.length) % THEMES.length]

@@ -583,9 +583,23 @@ const Board = {
     this.hintRefs = { cells: h.cells || [], clues: h.clues || [] };
     if (h.suspect !== undefined && h.suspect !== -1) this.active = h.suspect;
     this.after(true);
-    document.getElementById('hint-text').textContent = h.text;
-    document.getElementById('hint-detail-text').textContent = h.detail || '';
-    document.getElementById('hint-detail').hidden = !h.detail;
+    const p = this.puzzle, $ = id => document.getElementById(id);
+    $('hint-text').textContent = h.text;
+    $('hint-sub').textContent = `Hint ${this.hintsUsed} · deze zaak levert nu maximaal ★★ op`;
+    // 1. kijk naar: de verklaring(en) waar het om gaat, of de spelregel
+    const clues = (h.clues || []).slice(0, 2);
+    $('hint-clues').innerHTML = clues.length
+      ? clues.map(i => this.clueCard(i, 'dclue')).join('')
+      : `<div class="hint-rule">📜 De spelregel: alleen de moordenaar was in de ${p.theme.roomWord || 'kamer'} van het slachtoffer.</div>`;
+    $('hint-clues').querySelectorAll('.bclue-check').forEach(b => b.remove());
+    // 2. dat betekent: uitleg in gewone taal met de namen van deze zaak
+    const meaning = clues.length ? clues.map(i => Mentor.explain(p.clues[i], p)).filter(Boolean).join(' ') : (h.detail || '');
+    $('hint-detail-text').textContent = meaning;
+    $('hint-detail').hidden = !meaning;
+    // 3. doe dit
+    $('hint-action').textContent = Mentor.hintAction(h, p, this.placements);
+    // het dek springt naar die verklaring, zodat hij na het sluiten in beeld blijft
+    if (clues.length) { this.deckIdx = clues[0]; this.renderDeck(); }
     App.showModal('hint-modal');
   },
 

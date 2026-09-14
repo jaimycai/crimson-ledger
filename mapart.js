@@ -178,7 +178,60 @@ const MapArt = (() => {
         <g fill="#2C3E50">${[40, 70, 100, 130, 170, 200, 230, 260, 295, 335].map(x => `<circle cx="${x}" cy="164" r="7"/>`).join('')}</g>
         <g fill="#BFC9D4" stroke="none">${[40, 70, 100, 130, 170, 200, 230, 260, 295, 335].map(x => `<circle cx="${x}" cy="164" r="2.5"/>`).join('')}</g>
       </g>
-    `, 'banner-trein')
+    `, 'banner-trein'),
+
+    circus: () => svg('0 0 393 200', `
+      <rect width="393" height="200" fill="#2E2A4A"/>
+      ${stars([[30, 30, 1.6], [90, 18, 1.2], [150, 40, 1.4], [260, 22, 1.2], [340, 36, 1.6], [370, 90, 1.2]], '#F3EDE3')}
+      <!-- lichtsnoer -->
+      <path d="M0 40 q98 40 196 10 q98-30 197 30" fill="none" stroke="#1A1108" stroke-width="1.5"/>
+      <g fill="#F5D67A" stroke="${INK}" stroke-width="1">${[20, 60, 100, 140, 180, 220, 260, 300, 340, 380].map((x, i) => `<circle cx="${x}" cy="${[46, 58, 62, 58, 48, 38, 36, 40, 50, 62][i]}" r="4"/>`).join('')}</g>
+      <!-- grond -->
+      <rect x="0" y="160" width="393" height="40" fill="#5C8B5E"/><path d="M0 160 h393" stroke="${INK}" stroke-width="1.5"/>
+      <!-- tent -->
+      <g stroke="${INK}" stroke-width="1.5">
+        <path d="M70 160 L100 96 L292 96 L322 160 Z" fill="#B3261E"/>
+        <g fill="#F3EDE3" stroke="none">${[0, 1, 2, 3].map(i => `<path d="M${100 + 24 + i * 48} 96 h24 l ${6} 64 h-36 z"/>`).join('')}</g>
+        <path d="M100 96 L196 40 L292 96 Z" fill="#B3261E"/>
+        <g fill="#F3EDE3" stroke="none"><path d="M124 96 L196 40 L172 96 Z"/><path d="M220 96 L196 40 L268 96 Z"/></g>
+        <path d="M100 96 L196 40 L292 96" fill="none"/>
+        <rect x="194" y="22" width="4" height="20" fill="#3E2A1D"/>
+        <path d="M198 24 L222 30 L198 36 Z" fill="#F5D67A"/>
+        <path d="M100 96 q48 14 96 0 q48 14 96 0" fill="none" stroke-width="1.5"/>
+        <path d="M180 160 v-40 q16-14 32 0 v40 z" fill="#1A1108"/>
+        <g fill="#F5D67A" stroke="none"><path d="M100 96 l-6 10 M292 96 l6 10"/></g>
+      </g>
+      <!-- vlaggetjes -->
+      <path d="M60 80 q68 20 136 0 q68 20 137 0" fill="none" stroke="${INK}" stroke-width="1.2"/>
+      <g stroke="${INK}" stroke-width="0.8">${[70, 100, 130, 160, 190, 220, 250, 280, 310].map((x, i) => `<path d="M${x} ${82 + (i % 2) * 6} l5 10 l5-10 z" fill="${i % 2 ? '#F5D67A' : '#DCEBF0'}"/>`).join('')}</g>
+      <g stroke="${INK}" stroke-width="1.3"><rect x="20" y="130" width="28" height="30" rx="3" fill="#F0CE8E"/><rect x="26" y="126" width="16" height="6" rx="2" fill="#B3261E"/><rect x="28" y="138" width="12" height="10" fill="#DCEBF0"/></g>
+      <g stroke="${INK}" stroke-width="1.3"><circle cx="352" cy="128" r="10" fill="#E8A5D2"/><path d="M352 138 v22" stroke-width="1.2"/><circle cx="338" cy="140" r="8" fill="#5FC9C9"/><path d="M338 148 v12" stroke-width="1.2"/></g>
+    `, 'banner-circus'),
+
+    skihut: () => svg('0 0 393 200', `
+      <rect width="393" height="200" fill="#27364A"/>
+      ${stars([[20, 30, 1.4], [70, 14, 1.2], [130, 44, 1.6], [190, 20, 1], [250, 36, 1.4], [330, 18, 1.6], [372, 52, 1.2]], '#F3EDE3')}
+      <circle cx="320" cy="46" r="20" fill="#F5E6B8" stroke="${INK}" stroke-width="1.5"/>
+      <!-- bergen -->
+      <path d="M0 140 L70 60 L120 110 L180 50 L250 120 L300 70 L393 150 L393 200 L0 200 Z" fill="#3E5A6E" stroke="${INK}" stroke-width="1.3"/>
+      <path d="M70 60 l-14 18 h28 z M180 50 l-16 20 h32 z M300 70 l-12 16 h24 z" fill="#F3EDE3"/>
+      <!-- sneeuwvlakte -->
+      <path d="M0 150 q100-30 200 0 q100 30 193-10 v60 h-393 z" fill="#EEF3F7" stroke="${INK}" stroke-width="1.3"/>
+      <!-- hut -->
+      <g stroke="${INK}" stroke-width="1.5">
+        <rect x="140" y="112" width="112" height="56" fill="#7A5236"/>
+        <g stroke="#5C3D28" stroke-width="1"><path d="M140 124 h112 M140 136 h112 M140 148 h112 M140 160 h112"/></g>
+        <path d="M128 114 L196 68 L264 114 Z" fill="#F3EDE3"/>
+        <path d="M134 110 L196 70 L258 110" fill="none" stroke-width="2"/>
+        <rect x="218" y="78" width="10" height="20" fill="#5C3D28"/>
+        ${win(152, 124, 18, 16)}${win(222, 124, 18, 16)}${win(186, 136, 20, 32, false)}
+        <rect x="186" y="136" width="20" height="32" fill="#3E2A1D"/><circle cx="202" cy="153" r="1.6" fill="#F0CE8E"/>
+        <g fill="#F3EDE3" opacity="0.9" stroke="none"><circle cx="228" cy="70" r="5"/><circle cx="234" cy="62" r="6"/><circle cx="242" cy="55" r="5"/></g>
+      </g>
+      <!-- dennen en sneeuwpop -->
+      <g stroke="${INK}" stroke-width="1.3">${[40, 70, 330, 360].map((x, i) => `<path d="M${x} ${150 - (i % 2) * 8} l-14 30 h28 z" fill="#2F6F4E"/><path d="M${x} ${132 - (i % 2) * 8} l-10 22 h20 z" fill="#3E8A65"/><rect x="${x - 3}" y="${178 - (i % 2) * 8}" width="6" height="8" fill="#5C3D28"/>`).join('')}</g>
+      <g stroke="${INK}" stroke-width="1.3"><circle cx="100" cy="176" r="12" fill="#FBF6EC"/><circle cx="100" cy="158" r="8" fill="#FBF6EC"/><circle cx="98" cy="156" r="1" fill="${INK}"/><circle cx="103" cy="156" r="1" fill="${INK}"/><path d="M101 159 l5 1 l-5 1 z" fill="#F39C12"/><path d="M88 172 l-8-6 M112 172 l8-6" stroke-width="1.6"/></g>
+    `, 'banner-skihut')
   };
 
   // ── Decoraties langs het pad (40×40, zelfde stijl als de meubels) ──
@@ -236,6 +289,24 @@ const MapArt = (() => {
       `<g fill="#2C3E50" stroke="${INK}" stroke-width="1"><circle cx="14" cy="26" r="5"/><circle cx="22" cy="22" r="6"/><circle cx="28" cy="28" r="5"/><circle cx="20" cy="30" r="4"/></g>`,
       `<g stroke="${INK}" stroke-width="1.3"><rect x="8" y="14" width="24" height="12" rx="2" fill="#F0CE8E"/><path d="M14 14 v12 M26 14 v12" stroke-dasharray="2 2"/><circle cx="20" cy="20" r="2" fill="#8B2E1C" stroke="none"/></g>`,
       `<g stroke="${INK}" stroke-width="1.3"><path d="M20 6 L30 24 H10 Z" fill="#33475A"/><path d="M20 14 L27 30 H13 Z" fill="#3E5A6E"/><rect x="18" y="30" width="4" height="5" fill="#3E2A1D"/></g>`
+    ],
+    circus: [
+      `<g stroke="${INK}" stroke-width="1.3"><ellipse cx="20" cy="16" rx="9" ry="11" fill="#B3261E"/><path d="M20 27 q-2 4 0 8" fill="none"/><ellipse cx="17" cy="12" rx="2.5" ry="4" fill="rgba(255,255,255,0.35)" stroke="none"/></g>`,
+      `<g stroke="${INK}" stroke-width="1.2"><path d="M4 12 h32" stroke-width="1.6"/>${[6, 14, 22, 30].map((x, i) => `<path d="M${x} 12 l4 9 l4-9 z" fill="${i % 2 ? '#F5D67A' : '#B3261E'}"/>`).join('')}</g>`,
+      `<g stroke="${INK}" stroke-width="1.3"><rect x="12" y="16" width="16" height="16" rx="2" fill="#B3261E"/><path d="M15 16 v16 M20 16 v16 M25 16 v16" stroke="#F3EDE3"/><g fill="#F5D67A"><circle cx="15" cy="12" r="2.2"/><circle cx="20" cy="10" r="2.2"/><circle cx="25" cy="12" r="2.2"/></g></g>`,
+      `<g stroke="${INK}" stroke-width="1.3"><path d="M20 6 l4 8 9 1-7 6 2 9-8-5-8 5 2-9-7-6 9-1z" fill="#F5D67A"/></g>`,
+      `<g stroke="${INK}" stroke-width="1.3"><rect x="9" y="14" width="22" height="14" rx="3" fill="#B3261E"/><ellipse cx="20" cy="14" rx="11" ry="4" fill="#F3EDE3"/><ellipse cx="20" cy="28" rx="11" ry="4" fill="#8B1E17"/><path d="M12 12 l-4-6 M28 12 l4-6" stroke-width="1.6"/></g>`,
+      `<g stroke="${INK}" stroke-width="1.3"><rect x="8" y="12" width="24" height="14" rx="2" fill="#F0CE8E"/><path d="M14 12 v14 M26 12 v14" stroke-dasharray="2 2"/><circle cx="20" cy="19" r="2.2" fill="#B3261E" stroke="none"/></g>`,
+      `<g stroke="${INK}" stroke-width="1.3"><circle cx="20" cy="20" r="9" fill="#F39C12"/><circle cx="20" cy="20" r="4" fill="#F5D67A"/><path d="M20 11 v18 M11 20 h18" stroke="#B3261E" stroke-width="1.6"/></g>`
+    ],
+    skihut: [
+      `<g stroke="${INK}" stroke-width="1.3"><path d="M20 6 l-12 26 h24 z" fill="#2F6F4E"/><path d="M20 4 l-8 16 h16 z" fill="#3E8A65"/><rect x="18" y="32" width="4" height="5" fill="#5C3D28"/><path d="M14 20 q6 3 12 0" stroke="#F3EDE3" stroke-width="2"/></g>`,
+      `<g stroke="${INK}" stroke-width="1.3"><circle cx="20" cy="27" r="8" fill="#FBF6EC"/><circle cx="20" cy="15" r="6" fill="#FBF6EC"/><circle cx="18" cy="14" r="0.8" fill="${INK}"/><circle cx="22" cy="14" r="0.8" fill="${INK}"/><path d="M21 16 l4 1 l-4 1z" fill="#F39C12"/><rect x="15" y="7" width="10" height="3" fill="#2C3E50"/><rect x="17" y="3" width="6" height="5" fill="#2C3E50"/></g>`,
+      `<g stroke-width="2.6" stroke-linecap="round"><path d="M12 32 L16 6" stroke="#B3261E"/><path d="M24 32 L28 6" stroke="#2C3E50"/></g><g stroke="${INK}" stroke-width="1.2"><path d="M12 10 h4 M24 10 h4"/></g>`,
+      `<g stroke="${INK}" stroke-width="1.3"><rect x="8" y="16" width="24" height="8" rx="2" fill="#7A5236"/><path d="M6 30 q0-4 4-4 h20 q4 0 6-4" fill="none" stroke="#8A97A3" stroke-width="2.2" stroke-linecap="round"/></g>`,
+      `<g fill="none" stroke="#DCEBF0" stroke-width="2" stroke-linecap="round"><path d="M20 6 v28 M8 13 l24 14 M8 27 l24-14"/><path d="M20 6 l-3 4 M20 6 l3 4 M20 34 l-3-4 M20 34 l3-4"/></g><g fill="none" stroke="${INK}" stroke-width="0.6" stroke-linecap="round"><path d="M20 6 v28 M8 13 l24 14 M8 27 l24-14"/></g>`,
+      `<g stroke="${INK}" stroke-width="1.3"><rect x="14" y="12" width="12" height="16" rx="2" fill="#F5D67A"/><rect x="16" y="8" width="8" height="4" rx="1" fill="#4A4A4A"/><rect x="15" y="28" width="10" height="3" rx="1" fill="#4A4A4A"/><ellipse cx="20" cy="20" rx="2.4" ry="3.4" fill="#F39C12"/></g>`,
+      `<g stroke="${INK}" stroke-width="1.3"><rect x="18" y="10" width="4" height="26" fill="#5C3D28"/><path d="M22 12 h12 l3 4 l-3 4 h-12 z" fill="#F0CE8E"/><path d="M18 22 h-12 l-3 4 l3 4 h12 z" fill="#DCEBF0"/></g>`
     ]
   };
 

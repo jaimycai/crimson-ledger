@@ -39,7 +39,7 @@
 </head>
 <body>
 <h1>Crimson Ledger · Werelden</h1>
-<p class="sub">Zes gebouwde werelden (elk zes delen van acht zaken) en twee ideeën voor daarna. Papier-en-inkt-stijl, donkere omlijning, pastelvlakken.</p>
+<p class="sub">Acht gebouwde werelden (elk zes delen van acht zaken) en twee ideeën voor daarna. Papier-en-inkt-stijl, donkere omlijning, pastelvlakken.</p>
 <div class="grid" id="grid"></div>
 <script src="../avatars.js"></script>
 <script src="../themes.js"></script>
@@ -47,19 +47,19 @@
 <script src="../mapart.js"></script>
 <script>
   const concepts = [
-    { id: 'circus', icon: '🎪', title: 'Het Circus', tagline: 'De voorstelling is voorbij, de tent gaat dicht, en de directeur ligt in de piste.',
-      accent: '#B3261E', ring: '#F5D67A', rooms: ['Piste', 'Kleedwagen', 'Dierentent', 'Kassa', 'Kantine', 'Werkplaats', 'Tribune', 'Directiewagen'],
-      cast: ['Directeur Zano', 'Clown Pippo', 'Trapezeartiest Mira', 'Leeuwentemmer Kurt', 'Waarzegster Zora', 'Sterke Man Boris', 'Kaartverkoper Els', 'Jongleur Teo'],
-      furniture: ['een kanon', 'een trapeze', 'een spiegelkast', 'een popcornkar', 'een leeuwenkooi'], floor: 'zaagsel', parts: 'De laatste voorstelling · De verdwenen leeuw · Het spiegelpaleis · Op tournee · De nieuwe directeur · De tent gaat dicht' },
-    { id: 'skihut', icon: '🏔️', title: 'De Skihut', tagline: 'Een lawine sluit het dal af. Zeven gasten, één kachel, en een gastheer die niet meer opwarmt.',
-      accent: '#3E5A6E', ring: '#DCEBF0', rooms: ['Gelagkamer', 'Keuken', 'Slaapzaal', 'Skiberging', 'Sauna', 'Terras', 'Kelder', 'Zolder'],
-      cast: ['Gastheer Anton', 'Skilerares Mieke', 'Bergredder Tom', 'Toeriste Hana', 'Kok Luigi', 'Fotograaf Sven', 'Dokter Greet', 'Jongen Kai'],
-      furniture: ['een kachel', 'een slee', 'een skirek', 'een geweitak', 'een fondue'], floor: 'houten balken', parts: 'De lawine · Sneeuwblind · De nacht van de storm · Dooi · Het skifeest · De laatste afdaling' }
+    { id: 'kasteel', icon: '🏰', title: 'Het Kasteel', tagline: 'Een banket in de ridderzaal, een ophaalbrug die omhoog gaat, en een kasteelheer die niet meer proost.',
+      accent: '#5A3E6B', ring: '#D4A64A', rooms: ['Ridderzaal', 'Toren', 'Kerker', 'Kapel', 'Wapenkamer', 'Keuken', 'Binnenplaats', 'Bibliotheek'],
+      cast: ['Ridder Roderick', 'Hofnar Fimbel', 'Alchemist Ysolde', 'Kokkin Bertha', 'Schildknaap Pim', 'Abt Willem', 'Jonkvrouw Adelheid', 'Valkenier Gijs'],
+      furniture: ['een harnas', 'een troon', 'een wapenrek', 'een ketel', 'een boekenlessenaar'], floor: 'flagstones', parts: 'Het banket · De ophaalbrug · Het toernooi · De belegering · De kroning · De laatste toren' },
+    { id: 'onderzeeer', icon: '🫧', title: 'De Onderzeeër', tagline: 'Driehonderd meter diep, negen bemanningsleden, en een kapitein die het periscoop niet meer haalt.',
+      accent: '#1F3A4D', ring: '#5FC9C9', rooms: ['Commandocentrale', 'Torpedokamer', 'Machinekamer', 'Kombuis', 'Slaapverblijf', 'Sonarhoek', 'Batterijruimte', 'Luik'],
+      cast: ['Eerste Officier Vaas', 'Sonarist Lin', 'Machinist Okafor', 'Kok Pietro', 'Torpedist Brand', 'Dokter Amiri', 'Navigator Sol', 'Matroos Eef'],
+      furniture: ['een periscoop', 'een torpedo', 'een sonarscherm', 'een stapelbed', 'een drukmeter'], floor: 'roosters', parts: 'Duiken · Stilte onder water · De lekkage · Het signaal · De opstand · Boven water' }
   ];
   const el = document.getElementById('grid');
   let html = '';
   Themes.list().forEach(t => {
-    const isNew = t.id === 'museum' || t.id === 'trein';
+    const isNew = ['museum', 'trein', 'circus', 'skihut'].includes(t.id);
     const parts = Campaign.chaptersFor(t.id).map(ch => `${ch.icon} ${ch.title.split(' · ')[1]}`).join(' · ');
     html += `<section class="world" style="--wa:${t.map.accent};--wr:${t.map.ring}">
       <div class="banner">${MapArt.banner(t.id)}</div>

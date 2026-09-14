@@ -19,9 +19,11 @@ const WEEK_TITLES = {
   hotel:    ['De code van kamer 404', 'De laatste sleutel van Aurora', 'Het bal van de maskers', 'De gast die nooit uitcheckte'],
   ruimte:   ['Het signaal uit sector 7', 'De koepel van Orion', 'De sluis die vanzelf openging', 'Het logboek zonder laatste regel'],
   museum:   ['De nacht van de sarcofaag', 'Het schilderij dat terugkeek', 'De vitrine zonder glas', 'Het geheim van zaal 7'],
-  trein:    ['De tunnel van vier minuten', 'Het kaartje zonder naam', 'De coupé die op slot zat', 'De laatste halte voor Wenen']
+  trein:    ['De tunnel van vier minuten', 'Het kaartje zonder naam', 'De coupé die op slot zat', 'De laatste halte voor Wenen'],
+  circus:   ['De act zonder applaus', 'Het kanon dat te laat schoot', 'De clown met twee gezichten', 'De nacht dat de tent zweeg'],
+  skihut:   ['De kachel die uitging', 'Sporen die niet terugkwamen', 'De nacht van de tweede lawine', 'De laatste gast van Edelweiss']
 };
-const WEEK_THEMES = ['landhuis', 'piraten', 'hotel', 'ruimte', 'museum', 'trein'];
+const WEEK_THEMES = ['landhuis', 'piraten', 'hotel', 'ruimte', 'museum', 'trein', 'circus', 'skihut'];
 
 const Progress = {
   // ── opslag (via App, zodat privémodus nooit crasht) ──
@@ -181,6 +183,8 @@ const Progress = {
     { id: 'ruimte',        icon: '🚀', title: 'Orion gaat uit',        hint: 'Maak alle delen van Station Orion af',                       test: c => c.worldsDone.includes('ruimte') },
     { id: 'museum',        icon: '🏛️', title: 'Nachtwaker van Vlierbeek', hint: 'Maak alle delen van Het Museum af',                       test: c => c.worldsDone.includes('museum') },
     { id: 'trein',         icon: '🚂', title: 'Eindstation',            hint: 'Maak alle delen van De Nachttrein af',                      test: c => c.worldsDone.includes('trein') },
+    { id: 'circus',        icon: '🎪', title: 'De tent gaat dicht',     hint: 'Maak alle delen van Het Circus af',                         test: c => c.worldsDone.includes('circus') },
+    { id: 'skihut',        icon: '🏔️', title: 'De laatste afdaling',    hint: 'Maak alle delen van De Skihut af',                          test: c => c.worldsDone.includes('skihut') },
     { id: 'opdrachten',    icon: '🎁', title: 'Alle opdrachten',       hint: 'Maak alle drie de opdrachten van een dag af',                test: c => !!c.questsAll },
     { id: 'vrije-dag',     icon: '🧊', title: 'Gered door een vrije dag', hint: 'Laat een vrije dag je streak redden',                     test: c => !!c.freezeUsed },
     { id: 'vlekkeloos',    icon: '⭐', title: 'Vlekkeloos',            hint: 'Haal tien keer drie sterren in de campagne',                 test: c => c.threeStars >= 10 },

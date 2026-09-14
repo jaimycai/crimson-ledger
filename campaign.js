@@ -534,12 +534,184 @@ const CAMPAIGN = [
     { title: 'De bagagewagen',         story: 'Tussen de koffers lag meer dan bagage.', item: '🏷️ Bagagelabel',                            difficulty: 'moeilijk',  seed: 58586 },
     { title: 'Stoker Jules stookt niet meer', story: 'De ketel was koud. Iemand had het vuur gedoofd.', item: '🧯 Emmer water',             difficulty: 'moeilijk',  seed: 58683 },
     { title: 'Eindstation',            story: 'De trein stopt. De laatste vraag.', item: '🏁 Eindbord',                                     difficulty: 'moeilijk',  seed: 58780 }
+  ]},
+
+  // ── Het Circus ──────────────────────────────────────────────
+  { key: 'circus', theme: 'circus', part: 1, icon: '🎪', title: 'Deel I · De laatste voorstelling',
+    intro: 'De laatste voorstelling van het seizoen. Het publiek is weg, de tent gaat dicht, en directeur Zano ligt in de piste.',
+    outro: 'De tent blijft staan. De artiesten ook, tot de politie klaar is.',
+    briefing: 'Een circus is één grote tent met veel kleine hoekjes. Begin bij wie zegt waar hij was; "direct naast" telt alleen recht ernaast, ook bij een kanon.',
+    cases: [
+    { title: 'De laatste voorstelling', story: 'Het applaus was voorbij. Eén artiest boog niet meer.', item: '🎟️ Circuskaartje',           difficulty: 'makkelijk', seed: 2101 },
+    { title: 'Het lege kanon',         story: 'Het kanon was geladen. Niet met een mens.', item: '💥 Kanonskogel',                          difficulty: 'makkelijk', seed: 2198 },
+    { title: 'Clown Pippo lacht niet', story: 'Voor het eerst in twintig jaar. Het was geen act.', item: '🔴 Clownsneus',                    difficulty: 'makkelijk', seed: 2295 },
+    { title: 'De trapeze zwaait',      story: 'De trapeze bewoog nog. Niemand hing eraan.', item: '🪢 Trapezetouw',                         difficulty: 'gemiddeld', seed: 2392 },
+    { title: 'Popcorn in de piste',    story: 'Een spoor van popcorn, van de kassa tot de piste.', item: '🍿 Popcornzak',                    difficulty: 'gemiddeld', seed: 2489 },
+    { title: 'De leeuw brult',         story: 'De leeuw was rustig. Tot tien uur.', item: '🦁 Zweep',                                       difficulty: 'gemiddeld', seed: 2586 },
+    { title: 'Waarzegster Zora wist het', story: 'Ze had het voorspeld. Dat maakte haar verdacht.', item: '🔮 Glazen bol',                 difficulty: 'moeilijk',  seed: 2683 },
+    { title: 'Het licht in de nok',    story: 'Boven in de tent brandde een lamp. Daar hoorde niemand.', item: '💡 Noklamp',                difficulty: 'moeilijk',  seed: 2780 }
+  ]},
+  { key: 'circus-2', theme: 'circus', part: 2, icon: '🦁', title: 'Deel II · De verdwenen leeuw',
+    intro: 'De leeuw is weg uit zijn kooi. De hekken zijn dicht. Iemand heeft hem losgelaten, en iemand is er niet meer.',
+    outro: 'De leeuw ligt weer te slapen. Wie de kooi opende, niet.',
+    briefing: 'Een losse leeuw maakt iedereen zenuwachtig en de verklaringen kort. Verklaringen over twee mensen: zet eerst degene vast van wie je het meeste weet.',
+    cases: [
+    { title: 'De open kooi',           story: 'De grendel was los. Het slot was heel.', item: '🔓 Kooigrendel',                            difficulty: 'makkelijk', seed: 12101 },
+    { title: 'Sporen in het zaagsel',  story: 'Poten naar links, laarzen naar rechts.', item: '🐾 Pootafdruk',                              difficulty: 'makkelijk', seed: 12198 },
+    { title: 'Leeuwentemmer Kurt zoekt', story: 'Hij zocht overal. Behalve waar de leeuw was.', item: '🥩 Stuk vlees',                     difficulty: 'gemiddeld', seed: 12295 },
+    { title: 'De kostuumwagen',        story: 'Tussen de pakken hing één pak dat er niet hoorde.', item: '🎭 Glitterpak',                  difficulty: 'gemiddeld', seed: 12392 },
+    { title: 'Jongleur Teo laat vallen', story: 'Voor het eerst. Precies op dat moment.', item: '🎳 Kegel',                                difficulty: 'gemiddeld', seed: 12489 },
+    { title: 'De dierenarts komt',     story: 'Dierenarts Nadia was er sneller dan de melding.', item: '💉 Verdovingspijl',                 difficulty: 'moeilijk',  seed: 12586 },
+    { title: 'De kassa klopt niet',    story: 'Eén kaartje te veel verkocht. Eén stoel leeg.', item: '🧾 Kassabon',                        difficulty: 'moeilijk',  seed: 12683 },
+    { title: 'De leeuw slaapt',        story: 'Toen de leeuw sliep, was de dader al terug.', item: '😴 Leeuwendeken',                       difficulty: 'moeilijk',  seed: 12780 }
+  ]},
+  { key: 'circus-3', theme: 'circus', part: 3, icon: '🪞', title: 'Deel III · Het spiegelpaleis',
+    intro: 'De nieuwe attractie: een tent vol spiegels. Wie erin gaat, ziet zichzelf honderd keer. Eén iemand kwam er niet uit.',
+    outro: 'De spiegels worden ingepakt. Eén ervan is gebroken.',
+    briefing: 'In het spiegelpaleis lijkt alles dubbel. Verklaringen over rijen en kolommen lopen dwars door de muren: gebruik het potlood.',
+    cases: [
+    { title: 'Honderd spiegels',       story: 'Iedereen zag zichzelf. Niemand zag de dader.', item: '🪞 Spiegelscherf',                     difficulty: 'makkelijk', seed: 22101 },
+    { title: 'Sterke Man Boris tilt',  story: 'Hij tilde de spiegelkast alleen. Zei hij.', item: '🏋️ Halter',                              difficulty: 'gemiddeld', seed: 22198 },
+    { title: 'De verdwenen ingang',    story: 'De ingang was verplaatst. Sinds vanmiddag.', item: '🚪 Tentflap',                           difficulty: 'gemiddeld', seed: 22295 },
+    { title: 'Kaartverkoper Els telt', story: 'Zeven kaartjes, acht bezoekers.', item: '🎫 Achtste kaartje',                                difficulty: 'gemiddeld', seed: 22392 },
+    { title: 'Het spiegelbeeld liegt', story: 'In de spiegel stond iemand anders.', item: '🧿 Spiegelglas',                                 difficulty: 'moeilijk',  seed: 22489 },
+    { title: 'Trapezeartiest Mira valt', story: 'Ze viel nooit. Vanavond wel, met opzet.', item: '🎗️ Vangnet',                            difficulty: 'moeilijk',  seed: 22586 },
+    { title: 'De lachspiegel',         story: 'De lachspiegel lachte niet meer.', item: '😆 Lachspiegel',                                    difficulty: 'moeilijk',  seed: 22683 },
+    { title: 'Achter de laatste spiegel', story: 'Achter de laatste spiegel lag de laatste vraag.', item: '🔦 Spotlamp',                    difficulty: 'moeilijk',  seed: 22780 }
+  ]},
+  { key: 'circus-4', theme: 'circus', part: 4, icon: '🚚', title: 'Deel IV · Op tournee',
+    intro: 'Het circus trekt verder, stad na stad. Onderweg verandert de bemanning niet. De verdenking wel.',
+    outro: 'De wagens rijden verder. Eén wagen rijdt leeg.',
+    briefing: 'Dezelfde gezichten, een andere stad. Lees elke verklaring twee keer: wie zegt waar hij níét was, vertelt je ook iets.',
+    cases: [
+    { title: 'De eerste stad',         story: 'Nieuwe stad, oude problemen.', item: '🗺️ Reisroute',                                       difficulty: 'makkelijk', seed: 32101 },
+    { title: 'De wagen van Zora',      story: 'Haar wagen stond op slot. Van buiten.', item: '🔐 Wagenslot',                               difficulty: 'gemiddeld', seed: 32198 },
+    { title: 'Clown Pippo verkleedt zich', story: 'Twee clowns. Eén Pippo.', item: '🎈 Ballon',                                            difficulty: 'gemiddeld', seed: 32295 },
+    { title: 'Het drumstel',           story: 'De trommel klonk om middernacht. Niemand speelde.', item: '🥁 Trommel',                     difficulty: 'moeilijk',  seed: 32392 },
+    { title: 'Kok in de kantine',      story: 'Het eten stond klaar. Eén bord bleef vol.', item: '🍲 Soepkom',                              difficulty: 'gemiddeld', seed: 32489 },
+    { title: 'De lege stalling',       story: 'De paarden waren weg. De stalling niet.', item: '🐴 Hoefijzer',                              difficulty: 'moeilijk',  seed: 32586 },
+    { title: 'Nacht zonder sterren',   story: 'Bewolkt. Iemand kende de weg in het donker.', item: '🌑 Gedoofde lantaarn',                  difficulty: 'moeilijk',  seed: 32683 },
+    { title: 'Waarzegster Zora bekent', story: 'Ze bekende de voorspelling. Niet de daad.', item: '🃏 Tarotkaart',                          difficulty: 'moeilijk',  seed: 32780 }
+  ]},
+  { key: 'circus-5', theme: 'circus', part: 5, icon: '🎩', title: 'Deel V · De nieuwe directeur',
+    intro: 'Er is een nieuwe directeur. Niet iedereen is blij. Het openingsgala eindigt in stilte.',
+    outro: 'De directeursstoel is weer leeg. Voor de tweede keer dit seizoen.',
+    briefing: 'Een gala in een volle tent: veel mensen, weinig plek. Begin met wie zegt alleen te zijn geweest, dat ruimt meteen een hele ruimte op.',
+    cases: [
+    { title: 'Het gala',               story: 'Champagne in de piste. Eén glas bleef vol.', item: '🥂 Galaglas',                            difficulty: 'makkelijk', seed: 42101 },
+    { title: 'De hoge hoed',           story: 'De hoed van de directeur lag in de kantine.', item: '🎩 Directeurshoed',                     difficulty: 'gemiddeld', seed: 42198 },
+    { title: 'Jongleur Teo jongleert', story: 'Vijf ballen. Vier vielen.', item: '🟠 Jongleerbal',                                          difficulty: 'gemiddeld', seed: 42295 },
+    { title: 'Het vuurwerk',           story: 'Buiten vuurwerk. Binnen een knal.', item: '🎆 Vuurpijl',                                     difficulty: 'moeilijk',  seed: 42392 },
+    { title: 'Dierenarts Nadia waakt', story: 'Ze waakte bij de leeuw. Zei ze.', item: '🩺 Stethoscoop',                                    difficulty: 'gemiddeld', seed: 42489 },
+    { title: 'De speech',              story: 'De nieuwe directeur sprak. Niemand luisterde. Eén iemand wel.', item: '📝 Speech',           difficulty: 'moeilijk',  seed: 42586 },
+    { title: 'Sterke Man Boris zwijgt', story: 'Hij kon alles tillen. Behalve dit geheim.', item: '⛓️ Ketting',                            difficulty: 'moeilijk',  seed: 42683 },
+    { title: 'De laatste act',         story: 'Toen het licht aanging, stond er iemand te veel in de piste.', item: '🎪 Circusvlag',       difficulty: 'moeilijk',  seed: 42780 }
+  ]},
+  { key: 'circus-6', theme: 'circus', part: 6, icon: '🏁', title: 'Deel VI · De tent gaat dicht',
+    intro: 'Het circus stopt voorgoed. De laatste avond, de laatste act, de laatste kans om te verdwijnen.',
+    outro: 'De tent wordt afgebroken. Het zaagsel wordt weggeveegd, en met het zaagsel het laatste spoor.',
+    briefing: 'De allerlaatste zaken van het circus en de zwaarste. Wie alleen was in een ruimte sluit iedereen daar uit; begin daar.',
+    cases: [
+    { title: 'De laatste avond',       story: 'De laatste keer dat de tent vol zat.', item: '🎟️ Laatste kaartje',                          difficulty: 'makkelijk', seed: 52101 },
+    { title: 'Trapezeartiest Mira springt', story: 'Haar laatste sprong. Zonder net.', item: '🪂 Springkoord',                             difficulty: 'gemiddeld', seed: 52198 },
+    { title: 'De verdwenen kas',       story: 'De kas was leeg. De kassa niet.', item: '💰 Geldkist',                                       difficulty: 'moeilijk',  seed: 52295 },
+    { title: 'Leeuwentemmer Kurt neemt afscheid', story: 'Van de leeuw. Niet van iedereen.', item: '🦁 Leeuwenmanen',                       difficulty: 'moeilijk',  seed: 52392 },
+    { title: 'Het laatste kampvuur',   story: 'Iedereen zat om het vuur. Op één na.', item: '🔥 Kampvuur',                                 difficulty: 'gemiddeld', seed: 52489 },
+    { title: 'De masten vallen',       story: 'De tent zakte in. Niet vanzelf.', item: '🪝 Tentharing',                                     difficulty: 'moeilijk',  seed: 52586 },
+    { title: 'Kaartverkoper Els sluit af', story: 'Ze deed het licht uit. Iemand deed het weer aan.', item: '🔦 Kassalamp',                difficulty: 'moeilijk',  seed: 52683 },
+    { title: 'De tent gaat dicht',     story: 'De laatste vraag, onder het laatste doek.', item: '🎪 Tentdoek',                             difficulty: 'moeilijk',  seed: 52780 }
+  ]},
+
+  // ── De Skihut ───────────────────────────────────────────────
+  { key: 'skihut', theme: 'skihut', part: 1, icon: '🏔️', title: 'Deel I · De lawine',
+    intro: 'Een lawine sluit het dal af. Zeven gasten, één kachel, en een gastheer die bij het vuur niet meer opwarmt.',
+    outro: 'De weg is nog dicht. De gasten blijven, of ze willen of niet.',
+    briefing: 'Een skihut is klein en warm en iedereen zit op elkaars lip. Begin bij wie zegt in welke ruimte hij was; let op de kachel: "direct naast" telt alleen recht ernaast.',
+    cases: [
+    { title: 'De lawine',              story: 'De berg kwam naar beneden. De gastheer ook.', item: '❄️ Sneeuwvlok',                         difficulty: 'makkelijk', seed: 4101 },
+    { title: 'De koude kachel',        story: 'De kachel was uit. Het hout lag klaar.', item: '🪵 Houtblok',                                difficulty: 'makkelijk', seed: 4198 },
+    { title: 'Skilerares Mieke telt',  story: 'Zeven paar ski\'s. Acht gasten.', item: '🎿 Ski',                                            difficulty: 'makkelijk', seed: 4295 },
+    { title: 'De fondue',              story: 'De kaas was koud. De vorken niet allemaal terug.', item: '🫕 Fonduevork',                     difficulty: 'gemiddeld', seed: 4392 },
+    { title: 'Bergredder Tom graaft',  story: 'Hij groef de weg vrij. In de verkeerde richting.', item: '⛏️ Sneeuwschep',                   difficulty: 'gemiddeld', seed: 4489 },
+    { title: 'De sauna',               story: 'De sauna stond aan. Niemand zat erin. Toch was het er warm geweest.', item: '🧖 Saunahanddoek', difficulty: 'gemiddeld', seed: 4586 },
+    { title: 'Fotograaf Sven fotografeert', story: 'Op zijn foto stond iemand die er niet had moeten zijn.', item: '📷 Filmrolletje',      difficulty: 'moeilijk',  seed: 4683 },
+    { title: 'De nacht in de hut',     story: 'De eerste nacht. De laatste voor één gast.', item: '🕯️ Kaars',                              difficulty: 'moeilijk',  seed: 4780 }
+  ]},
+  { key: 'skihut-2', theme: 'skihut', part: 2, icon: '🌨️', title: 'Deel II · Sneeuwblind',
+    intro: 'Een sneeuwstorm neemt het zicht weg. Buiten zie je geen hand voor ogen. Binnen ziet iemand zijn kans.',
+    outro: 'De storm gaat liggen. De sneeuw bedekt alles, behalve de waarheid.',
+    briefing: 'Sneeuwblind: iedereen praat over wat hij niet zag. Streep eerst de lege ruimtes weg, dan wordt de rest vanzelf klein.',
+    cases: [
+    { title: 'Geen hand voor ogen',    story: 'De storm begon om drie uur. Om vier uur was er iemand weg.', item: '🌫️ Sneeuwbril',        difficulty: 'makkelijk', seed: 14101 },
+    { title: 'Kok Luigi kookt',        story: 'De soep stond klaar. Eén kom bleef vol.', item: '🍲 Soepkom',                                difficulty: 'makkelijk', seed: 14198 },
+    { title: 'De slee',                story: 'De slee stond buiten. Iemand had hem gebruikt.', item: '🛷 Slee',                            difficulty: 'gemiddeld', seed: 14295 },
+    { title: 'Toeriste Hana verdwaalt', story: 'Ze kende de hut niet. Toch vond ze de kelder.', item: '🗺️ Hutplattegrond',                difficulty: 'gemiddeld', seed: 14392 },
+    { title: 'Het gewei',              story: 'Het gewei hing scheef. Iemand had zich eraan vastgehouden.', item: '🦌 Gewei',              difficulty: 'gemiddeld', seed: 14489 },
+    { title: 'Dokter Greet onderzoekt', story: 'Ze onderzocht iedereen. Eén iemand te lang.', item: '🩹 Verband',                          difficulty: 'moeilijk',  seed: 14586 },
+    { title: 'De radio',               story: 'De radio ving één zin op. Daarna ruis.', item: '📻 Radio',                                   difficulty: 'moeilijk',  seed: 14683 },
+    { title: 'De storm gaat liggen',   story: 'Toen het stil werd, ontbrak er iemand.', item: '🧊 IJspegel',                                difficulty: 'moeilijk',  seed: 14780 }
+  ]},
+  { key: 'skihut-3', theme: 'skihut', part: 3, icon: '⛈️', title: 'Deel III · De nacht van de storm',
+    intro: 'De tweede storm is erger. De stroom valt uit, de hut wordt donker, en iemand gebruikt het donker.',
+    outro: 'Bij zonsopgang komt de stroom terug. De hut is een gast lichter.',
+    briefing: 'Stroom uit, kaarsen aan: verklaringen over rijen en kolommen lopen dwars door de muren heen. Gebruik het potlood.',
+    cases: [
+    { title: 'Stroom uit',             story: 'Het licht viel uit. Niemand had de zekering gezien.', item: '🔌 Zekering',                   difficulty: 'makkelijk', seed: 24101 },
+    { title: 'Kaarsen in de gelagkamer', story: 'Zeven kaarsen. Eén was uitgeblazen.', item: '🕯️ Kaarsstompje',                           difficulty: 'gemiddeld', seed: 24198 },
+    { title: 'Jongen Kai hoort iets',  story: 'Hij hoorde voetstappen op zolder. Volwassen voetstappen.', item: '👣 Voetstap',             difficulty: 'gemiddeld', seed: 24295 },
+    { title: 'De skiberging',          story: 'Eén paar ski\'s was nat. Het had binnen niet gesneeuwd.', item: '🎿 Natte ski',              difficulty: 'gemiddeld', seed: 24392 },
+    { title: 'Berggids Ilse kent de weg', story: 'Ze kende elk pad. Ook in het donker.', item: '🧭 Kompas',                                 difficulty: 'moeilijk',  seed: 24489 },
+    { title: 'De wasruimte',           story: 'Er hing één jas te drogen. Van niemand.', item: '🧥 Natte jas',                              difficulty: 'moeilijk',  seed: 24586 },
+    { title: 'Bergredder Tom slaapt niet', story: 'Hij hield de wacht. Bij de verkeerde deur.', item: '🔦 Hoofdlamp',                      difficulty: 'moeilijk',  seed: 24683 },
+    { title: 'Zonsopgang',             story: 'Toen het licht kwam, was de nacht voorbij. Voor bijna iedereen.', item: '🌅 Zonnebril',      difficulty: 'moeilijk',  seed: 24780 }
+  ]},
+  { key: 'skihut-4', theme: 'skihut', part: 4, icon: '☀️', title: 'Deel IV · Dooi',
+    intro: 'De zon komt terug en de sneeuw smelt. Wat onder de sneeuw lag, komt tevoorschijn.',
+    outro: 'De weg is weer open. Niet iedereen gaat naar huis.',
+    briefing: 'Met de dooi komen de sporen terug. Lees elke verklaring twee keer: wie zegt waar hij níét was, vertelt je ook iets.',
+    cases: [
+    { title: 'De eerste dooi',         story: 'Onder de sneeuw lag een handschoen. Van niemand.', item: '🧤 Handschoen',                    difficulty: 'makkelijk', seed: 34101 },
+    { title: 'Skilerares Mieke geeft les', story: 'Aan één leerling. Die kwam niet terug.', item: '🏂 Lespas',                              difficulty: 'gemiddeld', seed: 34198 },
+    { title: 'Het terras',             story: 'Het terras was weer open. De stoel bij het hek bleef leeg.', item: '🪑 Terrasstoel',        difficulty: 'gemiddeld', seed: 34295 },
+    { title: 'De voorraadkamer',       story: 'Eén blik te weinig. Eén bord te veel.', item: '🥫 Conservenblik',                            difficulty: 'moeilijk',  seed: 34392 },
+    { title: 'Kok Luigi mist een mes', story: 'Elf messen. Het hoorden er twaalf te zijn.', item: '🔪 Keukenmes',                          difficulty: 'gemiddeld', seed: 34489 },
+    { title: 'De speelkamer',          story: 'Het spel lag klaar. Twee spelers ontbraken.', item: '🎲 Dobbelsteen',                        difficulty: 'moeilijk',  seed: 34586 },
+    { title: 'Fotograaf Sven ontwikkelt', story: 'Op de laatste foto: de hut, en één raam met licht.', item: '🖼️ Foto',                    difficulty: 'moeilijk',  seed: 34683 },
+    { title: 'De weg gaat open',       story: 'De eerste auto vertrok. Met één stoel te weinig.', item: '🚗 Autosleutel',                   difficulty: 'moeilijk',  seed: 34780 }
+  ]},
+  { key: 'skihut-5', theme: 'skihut', part: 5, icon: '🎉', title: 'Deel V · Het skifeest',
+    intro: 'Het seizoen sluit af met een feest. Muziek, glühwein, en om middernacht een gil vanaf de zolder.',
+    outro: 'Het feest is voorbij. De glühwein is koud, de hut is stil.',
+    briefing: 'Een feest in een kleine hut: veel mensen, weinig plek. Begin met wie zegt alleen te zijn geweest, dat ruimt meteen een hele ruimte op.',
+    cases: [
+    { title: 'Glühwein',               story: 'Acht bekers. Zeven leeg.', item: '☕ Glühweinbeker',                                         difficulty: 'makkelijk', seed: 44101 },
+    { title: 'De band speelt',         story: 'Drie muzikanten, twee instrumenten.', item: '🪗 Accordeon',                                  difficulty: 'gemiddeld', seed: 44198 },
+    { title: 'Toeriste Hana danst',    story: 'Ze danste met iedereen. Behalve met één.', item: '💃 Dansschoen',                           difficulty: 'gemiddeld', seed: 44295 },
+    { title: 'Vuurwerk boven de berg', story: 'Buiten vuurwerk. Binnen een knal.', item: '🎆 Vuurpijl',                                     difficulty: 'moeilijk',  seed: 44392 },
+    { title: 'Dokter Greet telt',      story: 'Ze telde de gasten. Er ontbrak er een.', item: '📝 Gastenlijst',                            difficulty: 'gemiddeld', seed: 44489 },
+    { title: 'De zolder',              story: 'De gil kwam van zolder. Niemand was boven. Zei iedereen.', item: '🪜 Zoldertrap',           difficulty: 'moeilijk',  seed: 44586 },
+    { title: 'Jongen Kai ziet alles',  story: 'Hij mocht niet opblijven. Hij deed het toch.', item: '🧸 Knuffelbeer',                       difficulty: 'moeilijk',  seed: 44683 },
+    { title: 'Middernacht op de berg', story: 'Toen het licht aanging, stond er iemand te veel in de gelagkamer.', item: '🔔 Koebel',      difficulty: 'moeilijk',  seed: 44780 }
+  ]},
+  { key: 'skihut-6', theme: 'skihut', part: 6, icon: '🏁', title: 'Deel VI · De laatste afdaling',
+    intro: 'De hut sluit. Eén laatste afdaling voor iedereen naar het dal. Niet iedereen komt beneden aan.',
+    outro: 'De hut is dicht, de sneeuw ligt weer stil. Jij weet wat eronder lag.',
+    briefing: 'De allerlaatste zaken van de skihut en de zwaarste. Wie alleen was in een ruimte sluit iedereen daar uit; begin daar.',
+    cases: [
+    { title: 'De laatste ochtend',     story: 'De laatste keer dat de kachel brandde.', item: '🔥 Laatste vonk',                             difficulty: 'makkelijk', seed: 54101 },
+    { title: 'Berggids Ilse kiest de route', story: 'Twee routes naar beneden. Eén veilige.', item: '🪧 Wegwijzer',                        difficulty: 'gemiddeld', seed: 54198 },
+    { title: 'De kelder',              story: 'Niemand ging ooit naar de kelder. Iemand wel.', item: '🧱 Kelderdeur',                       difficulty: 'moeilijk',  seed: 54295 },
+    { title: 'Bergredder Tom pakt in', story: 'Twee rugzakken. Eén ervan niet van hem.', item: '🎒 Rugzak',                                difficulty: 'moeilijk',  seed: 54392 },
+    { title: 'Het laatste ontbijt',    story: 'Kok Luigi kookte voor acht. Zeven aten.', item: '🍽️ Ontbijtbord',                          difficulty: 'gemiddeld', seed: 54489 },
+    { title: 'De sneeuwman',           story: 'De sneeuwman stond er gisteren niet. Iemand had tijd gehad.', item: '⛄ Sneeuwman',         difficulty: 'moeilijk',  seed: 54586 },
+    { title: 'Skilerares Mieke wacht', story: 'Ze wachtte bij de lift. De lift kwam niet.', item: '🚡 Liftkaart',                           difficulty: 'moeilijk',  seed: 54683 },
+    { title: 'De laatste afdaling',    story: 'De berg af. De laatste vraag.', item: '🏁 Finishvlag',                                       difficulty: 'moeilijk',  seed: 54780 }
   ]}
 ];
 
 // Eindeloos archief: genummerde dossiers, thema wisselt per dossier,
 // moeilijkheid loopt mee. Nooit op.
-const ARCHIVE_THEMES = ['landhuis', 'piraten', 'hotel', 'ruimte', 'museum', 'trein'];
+const ARCHIVE_THEMES = ['landhuis', 'piraten', 'hotel', 'ruimte', 'museum', 'trein', 'circus', 'skihut'];
 const ARCHIVE_STORIES = [
   'Een oud dossier uit het archief. De feiten zijn koud, de vraag niet.',
   'Niemand heeft deze zaak ooit gesloten. Tot nu.',

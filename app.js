@@ -182,7 +182,8 @@ const App = {
         // elk deel is een eigen strook op de kaart, met eigen sfeer (dag, storm, feest, nacht …)
         const unit = { type: 'unit', chapter: ch.key, part: ch.part, open, top: y };
         sec.items.push(unit);
-        sec.items.push({ type: 'sign', title: `${ch.icon || ''} ${ch.title}`, count: `${solvedIn}/${ch.cases.length}`, open, done: chDone, y: y + 10 });
+        const starsIn = ch.cases.reduce((m, _, i) => m + Campaign.stars(ch.key, i), 0);
+        sec.items.push({ type: 'sign', title: `${ch.icon || ''} ${ch.title}`, count: `${solvedIn}/${ch.cases.length} · ★ ${starsIn}`, open, done: chDone, y: y + 10 });
         y += 88;
         ch.cases.forEach((c, idx) => {
           num++;
@@ -276,7 +277,7 @@ const App = {
                   `${this.chestSvg()}<span class="mnode-stars">${it.state === 'done' ? 'geopend' : it.state === 'open' ? 'Open mij!' : 'bewijskist'}</span></button>`;
           return;
         }
-        const stars = it.stars ? '★'.repeat(it.stars) + '☆'.repeat(3 - it.stars) : '';
+        const stars = it.stars ? '★'.repeat(it.stars) + (it.stars < 3 ? `<span class="miss">${'★'.repeat(3 - it.stars)}</span>` : '') : '';
         html += `<button type="button" class="mnode ${it.state}" style="left:${it.x}%;top:${yy}px" data-chapter="${it.chapter}" data-idx="${it.idx}" aria-label="${it.archive ? it.title : 'Zaak ' + it.num + ': ' + it.title}">` +
                 `${it.state === 'locked' ? '🔒' : it.archive ? '📁' : it.num}${stars ? `<span class="mnode-stars">${stars}</span>` : ''}${it === current ? '<span class="mnode-pin">🕵️</span>' : ''}</button>`;
       });
@@ -346,6 +347,7 @@ const App = {
     pop.innerHTML = `<div class="map-pop-card" style="--wa:${th.map.accent};--wr:${th.map.ring}">
       <div class="map-pop-head"><h3>${it.archive ? `${it.title} · ${th.icon}` : `Zaak ${it.num}: ${it.title}`}</h3><span class="diff-pill diff-${it.difficulty}">${d.icon || ''} ${d.label || it.difficulty}</span></div>
       <p>${locked ? '🔒 ' + lockText : it.story}</p>
+      <p class="map-pop-rule">★★★ = zonder hint én in één keer goed · ★★ = één van de twee · ★ = opgelost</p>
       <div class="map-pop-row"><span class="map-pop-best">Beste score: <b>${stars}</b></span>${locked ? '' : `<button type="button" class="btn btn-primary btn-sm" id="btn-pop-play">${it.stars ? 'Speel opnieuw' : 'Speel'}</button>`}</div>
     </div>`;
     pop.hidden = false;
@@ -1455,7 +1457,11 @@ const App = {
     // Toon hint modal
     document.getElementById('hint-text').textContent = hint.text;
     document.getElementById('hint-detail-text').textContent = hint.detail;
-    document.getElementById('hint-detail').open = hint.level === 0; // fout: uitleg direct open
+    document.getElementById('hint-detail').hidden = !hint.detail;
+    const hc = document.getElementById('hint-clues'), ha = document.getElementById('hint-action'), hs = document.getElementById('hint-sub');
+    if (hc) { hc.innerHTML = ''; hc.parentElement.hidden = true; }
+    if (ha) { ha.textContent = ''; ha.parentElement.hidden = true; }
+    if (hs) hs.textContent = 'Hint';
     this.showModal('hint-modal');
 
     // Markeer de aanwijzing waar de hint naar verwijst

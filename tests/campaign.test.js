@@ -25,7 +25,7 @@ for (const ch of CAMPAIGN) {
   check(!!(ch.title && ch.intro && ch.outro) && ch.cases.every(c => c.title && c.story), `${ch.key}: titel, intro, outro en verhaaltjes aanwezig`);
 }
 check(allSeeds.size === total, 'alle seeds uniek over de hele campagne');
-check(okCases === total && total === Campaign.total() && total === 288, `alle ${total} campagnezaken in orde`);
+check(okCases === total && total === Campaign.total() && total === 384, `alle ${total} campagnezaken in orde`);
 
 // eindeloos archief
 const N = 12; let okArch = 0;

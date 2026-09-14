@@ -97,6 +97,67 @@ const Mentor = {
     return this.INTROS.find(i => !seen.includes(i.id) && i.kinds.some(k => set.has(k))) || null;
   },
 
+  // ── Hint in drie stappen: kijk naar, dat betekent, doe dit ──
+  // Legt één verklaring uit in gewone taal, met de namen en kamers van deze
+  // zaak, en zegt precies wat de speler nu moet doen.
+  explain(clue, p) {
+    const N = i => p.suspects[i].label;
+    const R = id => { const q = p.rooms.find(x => x.id === id); return `${q.article || 'de'} ${q.name}`; };
+    const F = f => p.furnitureNl[f] || f;
+    const rw = p.theme.roomWord || 'kamer', rws = p.theme.roomWordPlural || 'kamers';
+    const POS = {
+      hoek:   { where: `in een hoek van ${'%R'}`, rule: 'Een hoek is een vakje dat twee muren van die ' + rw + ' raakt.' },
+      muur:   { where: `tegen een muur van ${'%R'}, niet in een hoek`, rule: 'Zo\'n vakje raakt precies één muur.' },
+      midden: { where: `in het midden van ${'%R'}`, rule: 'Zo\'n vakje raakt geen enkele muur.' }
+    };
+    const pos = (id, room) => { const q = POS[id] || POS.hoek; return `${q.where.replace('%R', room)}. ${q.rule}`; };
+    switch (clue.kind) {
+      case 'room':         return `${N(clue.s)} moet ergens in ${R(clue.room)} staan. Elk vrij vakje van die ${rw} kan.`;
+      case 'not-room':     return `${N(clue.s)} mag overal staan, behalve in ${R(clue.room)}.`;
+      case 'room-pos':     return `${N(clue.s)} staat ${pos(clue.pos, R(clue.room))}`;
+      case 'pos':          return `${N(clue.s)} staat ${pos(clue.pos, `een ${rw}`)} In welke ${rw} weet je nog niet.`;
+      case 'room-with':    return `${N(clue.s)} staat in een ${rw} waar ${F(clue.furniture)} staat. Zoek eerst dat meubel; elk vrij vakje in die ${rw} kan.`;
+      case 'next-to':      return `${N(clue.s)} staat op het vakje links, rechts, boven of onder ${F(clue.furniture)}. Schuin telt niet.`;
+      case 'room-next':    return `${N(clue.s)} staat in ${R(clue.room)}, recht naast ${F(clue.furniture)}: links, rechts, boven of onder, niet schuin.`;
+      case 'same-room':    return `${N(clue.a)} en ${N(clue.b)} staan in dezelfde ${rw}. Weet je waar één van de twee staat, dan weet je ook de ${rw} van de ander.`;
+      case 'diff-room':    return `${N(clue.a)} en ${N(clue.b)} staan in twee verschillende ${rws}.`;
+      case 'adjacent':     return `${N(clue.a)} en ${N(clue.b)} staan op vakjes die elkaar raken: links, rechts, boven of onder. Een muur ertussen mag.`;
+      case 'not-adjacent': return `${N(clue.a)} staat niet op een vakje dat ${N(clue.b)} raakt (links, rechts, boven of onder). Schuin ernaast mag wel.`;
+      case 'same-row':     return `${N(clue.a)} en ${N(clue.b)} staan op dezelfde rij: even hoog op de plattegrond, ook als dat in verschillende ${rws} is.`;
+      case 'same-col':     return `${N(clue.a)} en ${N(clue.b)} staan in dezelfde kolom: recht boven of onder elkaar. Muren tellen niet.`;
+      case 'left-of':      return `${N(clue.a)} staat in een kolom links van ${N(clue.b)}, in welke ${rw} dan ook.`;
+      case 'above':        return `${N(clue.a)} staat in een rij hoger dan ${N(clue.b)}, in welke ${rw} dan ook.`;
+      case 'empty-room':   return `In ${R(clue.room)} staat niemand. Die ${rw} kun je overslaan.`;
+      case 'alone':        return `${N(clue.s)} staat in een ${rw} waar verder niemand staat.`;
+      default: return '';
+    }
+  },
+  // Wat moet de speler nu doen? h = uitkomst van FloorPlan.hint.
+  hintAction(h, p, placements) {
+    const N = i => p.suspects[i].label;
+    const rw = p.theme.roomWord || 'kamer';
+    const roomOf = c => FloorPlan.roomOf(p.rooms, c.x, c.y);
+    const name = h.suspect !== undefined && h.suspect !== -1 ? N(h.suspect) : '';
+    const vroom = p.rooms.find(r => r.id === p.victim.roomId);
+    if (h.type === 'mistake') {
+      const cur = placements[h.suspect] ? roomOf(placements[h.suspect]) : null;
+      const where = cur ? ` Nu staat ${name} in ${cur.article || 'de'} ${cur.name}.` : '';
+      if (!h.clues.length && /twee verdachten/.test(h.text)) return `In ${vroom.article || 'de'} ${vroom.name} mag maar één persoon staan: de moordenaar. Sleep één van de twee naar een andere ${rw}.`;
+      const c = h.clues.length ? p.clues[h.clues[0]] : null;
+      const target = c && c.room !== undefined && c.kind !== 'not-room' && c.kind !== 'empty-room' ? p.rooms.find(r => r.id === c.room) : null;
+      return `Sleep ${name} van het bord af.${where}${target ? ` Zet ${name} daarna ergens in ${target.article || 'de'} ${target.name}.` : ` Lees de verklaring hierboven nog eens en probeer een vakje dat erbij past.`}`;
+    }
+    if (h.type === 'deduce') {
+      const q = h.cells[0] ? roomOf(h.cells[0]) : null;
+      return `Er is maar één vakje over: het oplichtende vakje${q ? ` in ${q.article || 'de'} ${q.name}` : ''}. Sleep ${name} daarheen.`;
+    }
+    if (h.type === 'narrow') {
+      const rooms = [...new Set(h.cells.map(c => roomOf(c).name))];
+      return `${name} kan nog op ${h.cells.length} vakjes staan; ze lichten goud op${rooms.length === 1 ? `, in de ${rooms[0]}` : ''}. Zet daar een stipje met het Potlood en probeer ze één voor één: bij elk vakje kijk je of de andere verklaringen nog kloppen.`;
+    }
+    return `Iedereen staat goed. Tik op Controleer en wijs daarna aan wie alleen in ${vroom.article || 'de'} ${vroom.name} staat.`;
+  },
+
   // Reacties bij de beschuldiging.
   REACT_WRONG: ['Ik? Nooit!', 'Dat meen je niet.', 'Ik was daar niet eens!', 'Vraag het de anderen maar.', 'Kijk nog eens op de plattegrond.'],
   REACT_RIGHT: ['… Hoe wist je dat?', '… Goed dan. Ik was het.', 'Ik had het bijna gered.', '… Je hebt me door.'],

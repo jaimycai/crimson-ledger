@@ -416,6 +416,93 @@ thema's komen, dit mag je bedenken en samen met Figma."
   om samen verder te tekenen; de pagina is via de capture-toolbar opnieuw te
   vangen na wijzigingen.
 
+## Hints in drie stappen, sterren op de kaart, Circus en Skihut (15 sep, avond)
+
+Jaimy: hints moeten makkelijker te begrijpen zijn; Circus en Skihut uit Figma
+moeten af en in het spel; de sterren op de kaart zijn "helemaal niet
+overzichtelijk"; en de vraag of levens zoals bij Duolingo inkomsten kunnen
+opleveren; als alles af is een Engelse versie met een taalkeuze in de
+instellingen.
+
+- **Hint van Van Dam in drie stappen.** Geen losse zin meer over "aanwijzing 2",
+  maar: **1 · Kijk naar** (de verklaring zelf als kaart, met portret), **2 · Dat
+  betekent** (uitleg in gewone taal met de namen en kamers van deze zaak:
+  "Clara staat op het vakje links, rechts, boven of onder een boekenkast. Schuin
+  telt niet."), **3 · Doe dit** ("Er is maar één vakje over: het oplichtende
+  vakje in de Kelder. Sleep Clara daarheen." / bij een fout: "Sleep Clara van
+  het bord af. Nu staat Clara in de Woonkamer. …"). De knop heet "Laat zien op
+  het bord", het dek springt naar die verklaring, en de kop zegt eerlijk dat een
+  hint de zaak op maximaal twee sterren zet. `Mentor.explain`, `Mentor.hintAction`.
+- **Sterren op de kaart.** Opgeloste zaken zijn nu gevuld in de wereldkleur met
+  een groen vinkje; eronder een wit pilletje met drie sterren waarvan de gemiste
+  grijs zijn. De wegwijzer van een deel telt "3/8 · ★ 7". Onder de wereldkiezer
+  staat de regel: ★★★ zonder hint én in één keer, ★★ één van de twee, ★
+  opgelost. Dezelfde uitleg staat in het venster van een zaak.
+- **Het Circus** (wereld 7, open na 20 zaken): directeur Ferdinand Zano in de
+  piste, zaagselvloer, ruimtes Piste, Tribune, Kleedwagen, Dierentent, Kassa …;
+  meubels circuskanon, trapeze, spiegelkast, popcornkar, leeuwenkooi; cast Clown
+  Pippo, Trapezeartiest Mira, Leeuwentemmer Kurt, Waarzegster Zora, Sterke Man
+  Boris, Kaartverkoper Els, Jongleur Teo, Dierenarts Nadia. Delen: De laatste
+  voorstelling · De verdwenen leeuw · Het spiegelpaleis · Op tournee · De nieuwe
+  directeur · De tent gaat dicht.
+- **De Skihut** (wereld 8, open na 24 zaken): gastheer Anton Berger bij een koude
+  kachel, houten balkenvloer, ruimtes Gelagkamer, Sauna, Skiberging, Terras,
+  Zolder …; meubels kachel, slee, skirek, gewei, fonduepan; cast Skilerares
+  Mieke, Bergredder Tom, Toeriste Hana, Kok Luigi, Fotograaf Sven, Dokter Greet,
+  Jongen Kai, Berggids Ilse. Delen: De lawine · Sneeuwblind · De nacht van de
+  storm · Dooi · Het skifeest · De laatste afdaling.
+- Totaal nu **acht werelden, 384 zaken, 1152 sterren, 48 minigames en 48
+  bewijskisten**. Het Figma-bord "Crimson Ledger · Werelden" is opnieuw gevangen
+  met de acht gebouwde werelden en twee nieuwe ideeën: Het Kasteel en De
+  Onderzeeër.
+
+### Levens en inkomsten: advies
+
+Levens zoals bij Duolingo raden we af voor dit spel. Bij een taal-app straffen
+hartjes fouten tijdens het oefenen; hier is een verkeerd geplaatste verdachte
+juist de manier waarop je leert redeneren, en een kind dat na drie fouten moet
+wachten stopt (dat is precies de "wachten of betalen"-muur die Apple in de
+categorie Kids ook streng bekijkt). De inkomstenkant van Duolingo zit bovendien
+niet in de hartjes zelf maar in het abonnement dat ze weghaalt.
+
+Wat wél past bij een logica-puzzel, in volgorde van kansrijkheid:
+
+1. **Crimson Pass** (eenmalige aankoop, bijvoorbeeld € 4,99, of € 1,99 per
+   maand): alle werelden vanaf 3, onbeperkte hints, twee extra vrije dagen per
+   week, en de exclusieve werelden die daarna komen (Kasteel, Onderzeeër).
+   Gratis blijven Het Landhuis en Het Piratenschip volledig speelbaar, plus de
+   dagelijkse zaak, de zaak van de week en het archief.
+2. **Hints als de zachte grens** (dit is de "energie" van puzzelgames): drie
+   hints per dag gratis, daarna een beloningsvideo kijken voor één hint, of de
+   Pass. Hints beperken raakt nooit de voortgang: je kunt altijd doorspelen
+   zonder hint.
+3. **Wereldpakketten** los te koop (€ 1,99 per wereld) voor wie geen abonnement
+   wil.
+4. **Cosmetica**: bordthema's (nacht, sepia), portretlijsten, een eigen
+   detectivenaam op het resultaatscherm.
+
+Bewust niet: levens, wachttijden, loot boxes, en advertenties in het spel zelf
+(alleen de vrijwillige beloningsvideo voor een hint). Dit is nog niet gebouwd;
+het vraagt StoreKit-producten in App Store Connect en een keuze voor prijzen.
+
+### Engels (en later meer talen): plan
+
+Alles is nu nog vaste Nederlandse tekst in de code. Volgorde van aanpak:
+
+1. Een `i18n.js` met een `t(key, vars)`-functie en per taal een woordenboek;
+   de taal in instellingen (Nederlands / English), onthouden in
+   `crimson-lang`, en bij de eerste start de taal van het toestel.
+2. Eerst de systeemteksten: alle knoppen, schermen, opdrachten, medailles,
+   hints, uitleg, verklaringen (de zinnen in `FloorPlan.statement` en
+   `formatClue`), Van Dam.
+3. Dan de inhoud: kamers, meubels, verdachtennamen (titels vertalen, namen
+   houden), 48 delen met intro/outro/briefing, 384 zaaktitels en verhaaltjes,
+   week- en dagtitels. Dat is het grootste stuk en vraagt een goede vertaler.
+4. App Store-teksten en schermafbeeldingen per taal.
+
+Later talen: Duits en Frans zijn logisch (markten met veel puzzelspelers en
+dezelfde speelstijl); daarvoor moet het woordenboek alleen worden uitgebreid.
+
 ## Openstaande punten (volgorde van voorstel)
 
 1. App Store: stappen in `store/CHECKLIST.md` (Apple-account, archiveren, uploaden).
