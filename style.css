@@ -2314,7 +2314,7 @@ input, textarea { -webkit-user-select: text; user-select: text; }
 
 /* ── Wie is wie: naamkaartje op het bord, kamer in de kiezer, spreker licht op ── */
 .bname {
-  position: absolute; left: 50%; bottom: 3%; transform: translateX(-50%);
+  position: absolute; left: 50%; top: 3%; transform: translateX(-50%);
   max-width: 96%; padding: 1px 5px; border-radius: 8px; z-index: 3;
   background: var(--sc, #1A1108); color: #fff; font-size: 0.5rem; font-weight: 800; line-height: 1.3;
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis; pointer-events: none;
@@ -2328,7 +2328,7 @@ input, textarea { -webkit-user-select: text; user-select: text; }
 .bcell.lit-sus { outline: 4px solid var(--accent); outline-offset: -4px; animation: hint-pulse 0.9s ease-in-out 2; z-index: 2; }
 
 /* ── Hint van Van Dam: kijk naar, dat betekent, doe dit ──────── */
-.hint-sheet { max-height: 62dvh; padding-top: 14px; }
+.hint-sheet { max-height: 74dvh; padding-top: 14px; }
 .hint-sheet .mentor-head { margin-bottom: 8px; }
 .hint-lead { font-family: var(--font-heading); font-size: 1.1rem; font-weight: 700; color: var(--accent); line-height: 1.3; margin: 0 0 10px; }
 .hint-step { display: flex; flex-direction: column; gap: 4px; margin-bottom: 10px; }

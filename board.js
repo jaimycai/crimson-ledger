@@ -587,7 +587,7 @@ const Board = {
     $('hint-text').textContent = h.text;
     $('hint-sub').textContent = `Hint ${this.hintsUsed} · deze zaak levert nu maximaal ★★ op`;
     // 1. kijk naar: de verklaring(en) waar het om gaat, of de spelregel
-    const clues = (h.clues || []).slice(0, 2);
+    const clues = (h.clues || []).slice(0, 1);   // één kaart: zo blijft "Doe dit" in beeld
     $('hint-clues').innerHTML = clues.length
       ? clues.map(i => this.clueCard(i, 'dclue')).join('')
       : `<div class="hint-rule">📜 De spelregel: alleen de moordenaar was in de ${p.theme.roomWord || 'kamer'} van het slachtoffer.</div>`;
