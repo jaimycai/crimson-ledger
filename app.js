@@ -131,6 +131,7 @@ const App = {
     on('btn-map-play', () => this.playCurrent());
     on('btn-briefing-go', () => { this.hideModal('briefing-modal'); Board.startTimer(); Board.showIntro(); });
     on('btn-part-go', () => { this.hideModal('part-modal'); const f = this.partThen; this.partThen = null; if (f) f(); });
+    if (typeof MiniGame !== 'undefined') MiniGame.bind();
     document.getElementById('map-pop').addEventListener('click', e => { if (e.target.id === 'map-pop') this.closeNode(); });
     const scroll = document.getElementById('map-scroll');
     scroll.addEventListener('scroll', () => {
@@ -176,8 +177,12 @@ const App = {
       y += BH;   // banner
       let num = 0;
       Campaign.chaptersFor(th.id).forEach(ch => {
-        const open = Campaign.chapterOpen(ch.key, themeOpen);
-        sec.items.push({ type: 'sign', title: ch.title, open, done: Campaign.chapterDone(ch.key), y: y + 10 });
+        const open = Campaign.chapterOpen(ch.key, themeOpen), chDone = Campaign.chapterDone(ch.key);
+        const solvedIn = ch.cases.filter((_, i) => Campaign.stars(ch.key, i) > 0).length;
+        // elk deel is een eigen strook op de kaart, met eigen sfeer (dag, storm, feest, nacht …)
+        const unit = { type: 'unit', chapter: ch.key, part: ch.part, open, top: y };
+        sec.items.push(unit);
+        sec.items.push({ type: 'sign', title: `${ch.icon || ''} ${ch.title}`, count: `${solvedIn}/${ch.cases.length}`, open, done: chDone, y: y + 10 });
         y += 88;
         ch.cases.forEach((c, idx) => {
           num++;
@@ -186,7 +191,19 @@ const App = {
           const it = { type: 'node', theme: th.id, chapter: ch.key, idx, num, title: c.title, story: c.story, difficulty: c.difficulty, stars,
                        state: stars ? 'done' : unlocked ? 'open' : 'locked', x: this.MAP_X[k % this.MAP_X.length], y };
           sec.items.push(it); nodes.push(it); k++; y += 96;
+          // halverwege: een minigame (open zodra zaak 4 van dit deel is opgelost)
+          if (idx === Campaign.MINI_AFTER - 1) {
+            const best = Campaign.miniBest(ch.key), mOpen = open && Campaign.miniOpen(ch.key);
+            sec.items.push({ type: 'mini', theme: th.id, chapter: ch.key, kind: Campaign.miniKind(ch.key), best, afterNum: num,
+                             state: best ? 'done' : mOpen ? 'open' : 'locked', x: this.MAP_X[k % this.MAP_X.length], y });
+            k++; y += 96;
+          }
         });
+        // aan het eind: de bewijskist (open zodra het deel af is)
+        const opened = Campaign.chestOpened(ch.key);
+        sec.items.push({ type: 'chest', theme: th.id, chapter: ch.key, state: opened ? 'done' : chDone ? 'open' : 'locked', x: this.MAP_X[k % this.MAP_X.length], y });
+        k++; y += 104;
+        unit.height = y - unit.top;
       });
       y += 24;
       sec.height = y - sec.top;
@@ -229,8 +246,10 @@ const App = {
     canvas.innerHTML = L.sections.map(sec => {
       const th = sec.th, accent = th ? th.map.accent : '#5A3E2B', ring = th ? th.map.ring : '#B8955C';
       const nodesIn = sec.items.filter(i => i.type === 'node');
-      const d = nodesIn.map((i, n) => (n ? 'L' : 'M') + (i.x * W / 100).toFixed(1) + ' ' + (i.y - sec.top)).join(' ');
+      const onPath = sec.items.filter(i => i.type === 'node' || i.type === 'mini' || i.type === 'chest');
+      const d = onPath.map((i, n) => (n ? 'L' : 'M') + (i.x * W / 100).toFixed(1) + ' ' + (i.y - sec.top)).join(' ');
       let html = `<div class="map-world map-${sec.theme}${sec.open ? '' : ' locked'}" data-theme="${sec.theme}" style="top:${sec.top}px;height:${sec.height}px;--wa:${accent};--wr:${ring}">`;
+      sec.items.filter(i => i.type === 'unit').forEach(u => { html += `<div class="map-unit part-${u.part}${u.open ? '' : ' locked'}" style="top:${u.top - sec.top}px;height:${u.height}px"></div>`; });
       if (th) {
         const sub = sec.open ? `${sec.done} van ${sec.total} zaken · ★ ${sec.stars}/${sec.total * 3}`
                              : `🔒 Los nog ${sec.need} ${sec.need === 1 ? 'zaak' : 'zaken'} op (vrij spel of dagelijks) om deze wereld te openen`;
@@ -243,7 +262,20 @@ const App = {
       });
       sec.items.forEach(it => {
         const yy = it.y - sec.top;
-        if (it.type === 'sign') { html += `<span class="msign${it.done ? ' done' : it.open ? '' : ' locked'}" style="top:${yy}px">${it.open ? '' : '🔒 '}${it.title}</span>`; return; }
+        if (it.type === 'unit') return;
+        if (it.type === 'sign') { html += `<span class="msign${it.done ? ' done' : it.open ? '' : ' locked'}" style="top:${yy}px">${it.open ? '' : '🔒 '}${it.title}${it.count ? `<small>${it.count}</small>` : ''}</span>`; return; }
+        if (it.type === 'mini') {
+          const name = it.kind === 'liar' ? 'Wie liegt?' : 'Vluchtige blik';
+          const sub = it.state === 'done' ? '★'.repeat(it.best) + '☆'.repeat(3 - it.best) : name;
+          html += `<button type="button" class="mmini ${it.state}" style="left:${it.x}%;top:${yy}px" data-chapter="${it.chapter}" data-after="${it.afterNum}" aria-label="Minigame ${name}">` +
+                  `${it.state === 'locked' ? '🔒' : it.kind === 'liar' ? '🎯' : '👁️'}<span class="mnode-stars">${sub}</span></button>`;
+          return;
+        }
+        if (it.type === 'chest') {
+          html += `<button type="button" class="mchest ${it.state}" style="left:${it.x}%;top:${yy}px" data-chapter="${it.chapter}" aria-label="Bewijskist">` +
+                  `${this.chestSvg()}<span class="mnode-stars">${it.state === 'done' ? 'geopend' : it.state === 'open' ? 'Open mij!' : 'bewijskist'}</span></button>`;
+          return;
+        }
         const stars = it.stars ? '★'.repeat(it.stars) + '☆'.repeat(3 - it.stars) : '';
         html += `<button type="button" class="mnode ${it.state}" style="left:${it.x}%;top:${yy}px" data-chapter="${it.chapter}" data-idx="${it.idx}" aria-label="${it.archive ? it.title : 'Zaak ' + it.num + ': ' + it.title}">` +
                 `${it.state === 'locked' ? '🔒' : it.archive ? '📁' : it.num}${stars ? `<span class="mnode-stars">${stars}</span>` : ''}${it === current ? '<span class="mnode-pin">🕵️</span>' : ''}</button>`;
@@ -252,6 +284,15 @@ const App = {
     }).join('');
     canvas.querySelectorAll('.mnode').forEach(b => b.addEventListener('click', () =>
       this.openNode(L.nodes.find(n => n.chapter === b.dataset.chapter && n.idx === +b.dataset.idx))));
+    canvas.querySelectorAll('.mmini').forEach(b => b.addEventListener('click', () => {
+      if (b.classList.contains('locked')) return this.showToast('🔒', `Los eerst zaak ${b.dataset.after} op, dan gaat deze minigame open.`);
+      if (typeof MiniGame !== 'undefined' && MiniGame.start(b.dataset.chapter)) this.navigateTo('mini');
+    }));
+    canvas.querySelectorAll('.mchest').forEach(b => b.addEventListener('click', () => {
+      if (b.classList.contains('locked')) return this.showToast('🔒', 'Maak eerst alle acht zaken van dit deel af, dan gaat de bewijskist open.');
+      if (b.classList.contains('done')) return this.showToast('🏅', 'Deze kist is al open. De stempel staat in de vitrine.');
+      this.showChest(b.dataset.chapter);
+    }));
     this.closeNode();
     // grote knop onderin
     const play = document.getElementById('btn-map-play');
@@ -320,6 +361,7 @@ const App = {
     const c = Campaign.caseAt(key, idx);
     if (!c) return this.showToast('⚠️', 'Deze zaak kon niet geladen worden.');
     const ch = Campaign.chapter(key);
+    this.hideModal('chest-modal');
     const go = () => {
       if (!Board.start(c.difficulty, c.seed, false, c.theme, c)) return this.showToast('⚠️', 'Deze zaak kon niet geladen worden.');
       this.storageSet('crimson-last-world', c.theme);
@@ -335,16 +377,89 @@ const App = {
     Board.stopTimer();   // de klok loopt pas na "Aan de slag"
     this.showModal('briefing-modal');
   },
+  // Nieuw deel: kaart in de kleur van de wereld met draaiende stralen. Nieuwe
+  // wereld (deel I): bovendien de banner van de kaart en de hele cast die één
+  // voor één tevoorschijn komt.
   showPartSplash(ch, then) {
-    const th = Themes.get(ch.theme);
-    document.getElementById('part-icon').textContent = th.icon;
-    document.getElementById('part-title').textContent = ch.title;
-    document.getElementById('part-intro').textContent = ch.intro;
-    document.getElementById('btn-part-go').textContent = `Begin ${ch.title.split(' · ')[0]}`;
+    const th = Themes.get(ch.theme), first = ch.part === 1, parts = Campaign.chaptersFor(th.id).length;
+    const $ = id => document.getElementById(id);
+    $('part-card').style.setProperty('--wa', th.map.accent);
+    $('part-ribbon').textContent = first ? '✨ Nieuwe wereld' : `Nieuw deel · ${ch.part} van ${parts}`;
+    const banner = $('part-banner');
+    banner.hidden = !first;
+    banner.innerHTML = first ? MapArt.banner(th.id) : '';
+    $('part-icon').textContent = first ? th.icon : (ch.icon || th.icon);
+    $('part-icon').hidden = first;
+    $('part-title').textContent = first ? th.title : ch.title;
+    $('part-intro').textContent = first ? `${ch.title}. ${ch.intro}` : ch.intro;
+    const cast = $('part-cast');
+    cast.hidden = !first;
+    cast.innerHTML = first ? th.suspects.map((sp, i) => `<span class="part-ava" style="--i:${i}">${Avatars.suspect(sp, i)}</span>`).join('') : '';
+    $('part-reward').textContent = first
+      ? `${th.suspects.length} verdachten, ${parts} delen, ${Campaign.worldTotal(th.id)} zaken. Halverwege elk deel een minigame, aan het eind een bewijskist.`
+      : `Halverwege wacht een minigame, aan het eind een bewijskist: punten, een vrije dag en een stempel.`;
+    $('btn-part-go').textContent = `Begin ${ch.title.split(' · ')[0]}`;
     const seen = this.partsSeen();
     if (!seen.includes(ch.key)) { seen.push(ch.key); this.storageSet('crimson-parts-seen', JSON.stringify(seen)); }
     this.partThen = then;
+    Sound.play('medal');
     this.showModal('part-modal');
+  },
+  chestSvg() {
+    return '<svg viewBox="0 0 60 52" class="chest-svg" aria-hidden="true"><ellipse cx="30" cy="48" rx="22" ry="2.5" fill="rgba(0,0,0,0.07)"/>' +
+      '<rect x="6" y="22" width="48" height="24" rx="4" fill="#8B5A2B" stroke="#1A1108" stroke-width="2"/><rect x="7" y="23" width="46" height="5" fill="#6B4423"/>' +
+      '<path d="M13 28v16M47 28v16" stroke="#B8955C" stroke-width="3"/><rect x="25" y="24" width="10" height="11" rx="2" fill="#F0CE8E" stroke="#1A1108" stroke-width="1.5"/>' +
+      '<g class="chest-lid"><rect x="4" y="9" width="52" height="16" rx="6" fill="#A9713A" stroke="#1A1108" stroke-width="2"/><rect x="4" y="19" width="52" height="4" fill="#B8955C"/><rect x="25" y="14" width="10" height="9" rx="2" fill="#F0CE8E" stroke="#1A1108" stroke-width="1.5"/></g></svg>';
+  },
+  // Bewijskist: verschijnt na de laatste zaak van een deel (en op de kaart voor wie
+  // het deel al af had). Tik = open: punten, een vrije dag, een stempel, en de
+  // knop naar het volgende deel.
+  showChest(key) {
+    const ch = Campaign.chapter(key);
+    if (!ch || !Campaign.chapterDone(key)) return;
+    const th = Themes.get(ch.theme), reward = Campaign.chestReward(key), opened = Campaign.chestOpened(key);
+    const $ = id => document.getElementById(id);
+    const card = $('chest-card');
+    card.style.setProperty('--wa', th.map.accent);
+    card.classList.remove('opened');
+    $('chest-ribbon').textContent = reward.world ? '🏆 Wereld voltooid!' : '✓ Deel voltooid';
+    $('chest-title').textContent = ch.title;
+    $('chest-sub').textContent = opened ? 'Deze kist is al open.' : reward.world ? `Alle ${Campaign.worldTotal(th.id)} zaken van ${th.title} opgelost. Tik op de kist.` : 'Alle acht zaken opgelost. Tik op de bewijskist.';
+    $('chest-btn').innerHTML = `<span class="chest-glow"></span>${this.chestSvg()}`;
+    $('chest-rewards').hidden = true;
+    $('chest-actions').hidden = true;
+    $('chest-btn').onclick = () => this.openChest(key);
+    this.showModal('chest-modal');
+    Sound.play('clue');
+  },
+  openChest(key) {
+    const r = Campaign.openChest(key);
+    const ch = Campaign.chapter(key), th = Themes.get(ch.theme);
+    const $ = id => document.getElementById(id);
+    const card = $('chest-card');
+    if (card.classList.contains('opened')) return;
+    card.classList.add('opened');
+    if (r) {
+      Progress.addPoints(r.points);
+      Progress.addFreeze();
+      $('chest-rewards').innerHTML = [`🪙 +${r.points} punten`, '🧊 Een vrije dag', `${ch.icon || '🏅'} Stempel: ${ch.title.split(' · ')[0]}`]
+        .map((t, i) => `<span class="reward" style="--i:${i}">${t}</span>`).join('');
+      $('chest-sub').textContent = r.world ? `${th.title} is helemaal opgelost. Wat een speurder.` : 'Goed werk, Rekruut. Dit is van jou.';
+      Sound.play('win');
+      if (typeof Board !== 'undefined' && Board.buzz) Board.buzz(30);
+      if (typeof Board !== 'undefined' && Board.confetti) { try { Board.confetti(); } catch (e) { /* alleen op het resultaatscherm */ } }
+    } else {
+      $('chest-rewards').innerHTML = '<span class="reward" style="--i:0">Al geopend</span>';
+    }
+    $('chest-rewards').hidden = false;
+    const next = Campaign.nextChapter(key);
+    const btnNext = $('btn-chest-next');
+    btnNext.hidden = !next;
+    if (next) { btnNext.textContent = `▶ ${next.title}`; btnNext.onclick = () => { this.hideModal('chest-modal'); this.startCampaignCase(next.key, 0); }; }
+    $('btn-chest-map').onclick = () => { this.hideModal('chest-modal'); this.openMap(ch.theme); };
+    $('chest-actions').hidden = false;
+    this.updateBoardStats();
+    this.renderHome();
   },
 
   // ══════════════════════════════════════════════════════════
@@ -455,7 +570,8 @@ const App = {
       `<div class="medals-head"><h3>Bewijsstukken</h3><span>${total} van de ${Campaign.total()} verzameld</span></div>` +
       Themes.list().map(t => {
         const ev = Progress.evidence(t.id), got = ev.filter(e => e.got).length;
-        return `<div class="shelf-world"><h4>${t.icon} ${t.title} <small>${got}/${ev.length}</small></h4><div class="shelf">${ev.map(e =>
+        const stamps = Campaign.chaptersFor(t.id).map(ch => `<span class="stamp${Campaign.chestOpened(ch.key) ? ' got' : ''}" title="${ch.title}">${ch.icon || '🏅'}</span>`).join('');
+        return `<div class="shelf-world"><h4>${t.icon} ${t.title} <small>${got}/${ev.length}</small></h4><div class="stamps" aria-label="Stempels">${stamps}</div><div class="shelf">${ev.map(e =>
           `<span class="ev${e.got ? '' : ' miss'}" title="${e.title}"><i>${e.icon}</i><b>${e.got ? e.name : 'Gesloten'}</b></span>`).join('')}</div><div class="shelf-bar"><i style="width:${Math.round(got / ev.length * 100)}%"></i></div></div>`;
       }).join('');
   },

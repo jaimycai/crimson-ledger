@@ -306,6 +306,22 @@
       </div>
     </section>
 
+    <!-- ═══════ SCHERM 9: MINIGAME (tussenstop op de kaart) ═══════ -->
+    <section id="screen-mini" class="screen">
+      <div class="map-topbar">
+        <button class="back-btn back-btn-sm" id="btn-mini-back">←</button>
+        <span class="map-title" id="mini-title">🎯 Wie liegt?</span>
+        <span class="map-stars" id="mini-dots"></span>
+      </div>
+      <p class="mini-sub" id="mini-sub"></p>
+      <div class="mini-body" id="mini-body">
+        <div class="mini-stage"><div class="board-grid mini-grid" id="mini-grid"></div></div>
+        <p class="mini-q" id="mini-q"></p>
+        <div class="mini-options" id="mini-options"></div>
+      </div>
+      <div class="mini-result" id="mini-result" hidden></div>
+    </section>
+
     <!-- ═══════ SCHERM 5: ZAAK GESLOTEN ═══════ -->
     <section id="screen-results" class="screen">
       <div class="confetti" id="confetti" aria-hidden="true"></div>
@@ -452,10 +468,31 @@
   <!-- ═══════ NIEUW DEEL ═══════ -->
   <div class="modal-overlay part-overlay" id="part-modal">
     <div class="part-card" id="part-card">
+      <div class="part-rays" aria-hidden="true"></div>
+      <div class="part-banner" id="part-banner" hidden></div>
+      <span class="ribbon ribbon-gold part-ribbon" id="part-ribbon">Nieuw deel</span>
       <span class="part-icon" id="part-icon">🏚️</span>
       <h2 class="part-title" id="part-title"></h2>
       <p class="part-intro" id="part-intro"></p>
+      <div class="part-cast" id="part-cast" hidden></div>
+      <p class="part-reward" id="part-reward"></p>
       <button class="btn btn-gold" id="btn-part-go">Begin</button>
+    </div>
+  </div>
+
+  <!-- ═══════ BEWIJSKIST: beloning na een afgerond deel ═══════ -->
+  <div class="modal-overlay part-overlay" id="chest-modal">
+    <div class="chest-card" id="chest-card">
+      <div class="part-rays" aria-hidden="true"></div>
+      <span class="ribbon ribbon-gold" id="chest-ribbon">Deel voltooid</span>
+      <h2 class="chest-title" id="chest-title"></h2>
+      <p class="chest-sub" id="chest-sub"></p>
+      <button type="button" class="chest" id="chest-btn" aria-label="Open de bewijskist"></button>
+      <div class="chest-rewards" id="chest-rewards" hidden></div>
+      <div class="chest-actions" id="chest-actions" hidden>
+        <button type="button" class="btn btn-gold btn-block" id="btn-chest-next"></button>
+        <button type="button" class="btn btn-ghost btn-block" id="btn-chest-map">🗺️ Naar de kaart</button>
+      </div>
     </div>
   </div>
 
@@ -492,6 +529,7 @@
   <script src="progress.js"></script>
   <script src="mentor.js"></script>
   <script src="mapart.js"></script>
+  <script src="minigame.js"></script>
   <script src="sound.js"></script>
   <script src="floorplan.js"></script>
   <script src="logic-engine.js"></script>

@@ -5,7 +5,7 @@ const { JSDOM, VirtualConsole } = loadJsdom();
 const DIR = path.join(__dirname, '..');
 let html = fs.readFileSync(path.join(DIR, 'index.html'), 'utf8');
 html = html.replace(/<script src="([^"]+)"><\/script>/g, (_, src) => `<script>${fs.readFileSync(path.join(DIR, src), 'utf8')}</script>`);
-html = html.replace(/<link[^>]+>/g, '').replace('</body>', '<script>window.App = App; window.Board = Board; window.FloorPlan = FloorPlan; window.Themes = Themes; window.Campaign = Campaign; window.Progress = Progress; window.Mentor = Mentor;</script></body>');
+html = html.replace(/<link[^>]+>/g, '').replace('</body>', '<script>window.App = App; window.Board = Board; window.FloorPlan = FloorPlan; window.Themes = Themes; window.Campaign = Campaign; window.Progress = Progress; window.Mentor = Mentor; window.MiniGame = MiniGame;</script></body>');
 const errors = [];
 const vc = new VirtualConsole(); vc.on('jsdomError', e => errors.push(String(e.message || e)));
 const dom = new JSDOM(html, { runScripts: 'dangerously', pretendToBeVisual: true, url: 'http://localhost:8080/', virtualConsole: vc });
@@ -19,7 +19,7 @@ const active = () => document.querySelector('.screen.active').id;
 (async () => {
   try {
     await sleep(60);
-    const { Board, App, FloorPlan } = window;
+    const { Board, App, FloorPlan, Campaign } = window;
 
     // ── thuisscherm: dagelijkse zaak, weekstrook, zaak van de week, campagne, vrij spel ──
     check(!!document.getElementById('btn-board-daily') && !!document.getElementById('btn-board-start'), 'menu heeft dagelijkse + vrije plattegrondzaak');
@@ -301,6 +301,12 @@ const active = () => document.querySelector('.screen.active').id;
     check(node('landhuis', 0).classList.contains('open') && !!node('landhuis', 0).querySelector('.mnode-pin') && node('landhuis', 1).classList.contains('locked') && node('landhuis-2', 0).classList.contains('locked') && node('archief', 0).classList.contains('locked') && node('piraten', 0).classList.contains('open') && !node('piraten', 0).querySelector('.mnode-pin'), 'zaak 1 open met pion; zaak 2, deel II en archief dicht; piraten zaak 1 open zonder pion');
     check(/Speel zaak 1 · Het glas Bordeaux/.test(document.getElementById('btn-map-play').textContent) && !document.getElementById('btn-map-play').disabled, 'grote knop: ' + document.getElementById('btn-map-play').textContent);
     check(document.querySelectorAll('.map-path path').length === 5 && document.querySelectorAll('.mapprop').length === 192, `pad per sectie en 192 decoraties langs het pad (${document.querySelectorAll('.mapprop').length})`);
+    // tussenstops: per deel een strook met eigen sfeer, een minigame en een bewijskist
+    check(document.querySelectorAll('.map-unit').length === 24 && document.querySelectorAll('.map-unit.part-3').length === 4 && document.querySelectorAll('.map-unit.part-6').length === 4, 'elk deel een eigen strook (24), met stormdelen en nachtdelen');
+    check(document.querySelectorAll('.mmini').length === 24 && document.querySelectorAll('.mmini.locked').length === 24 && document.querySelectorAll('.mchest').length === 24 && document.querySelectorAll('.mchest.locked').length === 24, '24 minigames en 24 bewijskisten, allemaal nog dicht');
+    check(/🍷/.test(document.querySelector('.msign').textContent) && /0\/8/.test(document.querySelector('.msign small').textContent), 'wegwijzer met icoon en teller: ' + document.querySelector('.msign').textContent);
+    document.querySelector('.mmini').click();
+    check(/Los eerst zaak 4 op/.test(document.getElementById('toast-text').textContent), 'dichte minigame legt uit wat er eerst moet');
     node('landhuis', 1).click();
     check(!document.getElementById('map-pop').hidden && /Los eerst zaak 1 op/.test(document.getElementById('map-pop').textContent) && !document.getElementById('btn-pop-play'), 'dichte knoop legt uit wat er eerst moet');
     document.querySelector('.world-tab[data-theme="ruimte"]').click();
@@ -310,7 +316,7 @@ const active = () => document.querySelector('.screen.active').id;
     check(/Zaak 1: Het glas Bordeaux/.test(document.getElementById('map-pop').textContent) && /Makkelijk/.test(document.getElementById('map-pop').textContent) && /☆☆☆/.test(document.getElementById('map-pop').textContent), 'open knoop: titel, niveau, beste score');
     document.getElementById('btn-pop-play').click(); await sleep(300);
     // eerste zaak van een deel: eerst "Nieuw deel", dan de briefing van Van Dam
-    check(document.getElementById('part-modal').classList.contains('active') && document.getElementById('part-title').textContent === 'Deel I · Het diner' && active() !== 'screen-board', '"Nieuw deel"-splash voor deel I');
+    check(document.getElementById('part-modal').classList.contains('active') && document.getElementById('part-title').textContent === 'Het Landhuis' && /Deel I · Het diner/.test(document.getElementById('part-intro').textContent) && /Nieuwe wereld/.test(document.getElementById('part-ribbon').textContent) && active() !== 'screen-board', '"Nieuwe wereld"-onthulling voor Het Landhuis, met deel I');
     document.getElementById('btn-part-go').click(); await sleep(300);
     check(active() === 'screen-board' && Board.campaignCase && Board.campaignCase.title === 'Het glas Bordeaux', 'campagnezaak 1 gestart');
     check(document.getElementById('briefing-modal').classList.contains('active') && /Deel I · Zaak 1/.test(document.getElementById('briefing-sub').textContent) && /toost/.test(document.getElementById('briefing-text').textContent) && Board.timerId === null, 'briefing van Van Dam, klok staat stil');
@@ -350,6 +356,36 @@ const active = () => document.querySelector('.screen.active').id;
 
     // ── geluid ──
     const sb = document.getElementById('btn-sound');
+    // deel I afmaken (zaken 2 t/m 8 als opgelost markeren): minigame open, kist open, kistceremonie
+    for (let i = 1; i < 8; i++) Campaign.save('landhuis', i, 2);
+    App.openMap('landhuis'); await sleep(350);
+    check(document.querySelector('.mmini[data-chapter="landhuis"]').classList.contains('open') && document.querySelector('.mchest[data-chapter="landhuis"]').classList.contains('open') && /1\/8|8\/8/.test(document.querySelector('.msign small').textContent), 'na zaak 4: minigame open; na zaak 8: kist open');
+    document.querySelector('.mchest[data-chapter="landhuis"]').click();
+    check(document.getElementById('chest-modal').classList.contains('active') && /Deel voltooid/.test(document.getElementById('chest-ribbon').textContent) && document.getElementById('chest-rewards').hidden, 'bewijskist verschijnt, nog dicht');
+    const ptsBefore = window.Progress.points(), frBefore = window.Progress.freezes();
+    document.getElementById('chest-btn').click();
+    check(document.getElementById('chest-card').classList.contains('opened') && window.Progress.points() === ptsBefore + Campaign.CHEST_POINTS && window.Progress.freezes() === Math.min(window.Progress.FREEZE_MAX, frBefore + 1) && Campaign.chestOpened('landhuis') && Campaign.stamps().includes('landhuis'), 'kist open: 300 punten, een vrije dag, een stempel');
+    check(!document.getElementById('btn-chest-next').hidden && /Deel II/.test(document.getElementById('btn-chest-next').textContent), 'knop naar Deel II');
+    document.getElementById('chest-btn').click();
+    check(window.Progress.points() === ptsBefore + Campaign.CHEST_POINTS, 'nog eens tikken geeft niets extra');
+    document.getElementById('btn-chest-map').click(); await sleep(350);
+    check(document.querySelector('.mchest[data-chapter="landhuis"]').classList.contains('done') && !document.getElementById('chest-modal').classList.contains('active'), 'kist op de kaart staat open');
+    // minigame spelen: Wie liegt?, drie rondes goed
+    document.querySelector('.mmini[data-chapter="landhuis"]').click(); await sleep(350);
+    check(active() === 'screen-mini' && /Wie liegt/.test(document.getElementById('mini-title').textContent) && document.querySelectorAll('.mini-card').length === 3, 'minigame Wie liegt? gestart met drie verklaringen');
+    const pm = window.Progress.points();
+    for (let rnd = 0; rnd < 3; rnd++) { document.querySelectorAll('.mini-card')[window.MiniGame.cur.answer].click(); await sleep(1150); }
+    check(!document.getElementById('mini-result').hidden && Campaign.miniBest('landhuis') === 3 && window.Progress.points() === pm + 300, 'drie keer goed: resultaat, beste score 3, +300 punten (eerste keer)');
+    document.getElementById('btn-mini-map').click(); await sleep(350);
+    check(active() === 'screen-campaign' && document.querySelector('.mmini[data-chapter="landhuis"]').classList.contains('done') && document.querySelector('.mmini[data-chapter="landhuis"] .mnode-stars').textContent === '★★★', 'terug op de kaart: minigame afgevinkt met drie sterren');
+    // nieuwe wereld: onthulling met banner en cast
+    App.startCampaignCase('piraten', 0); await sleep(350);
+    check(document.getElementById('part-modal').classList.contains('active') && /Nieuwe wereld/.test(document.getElementById('part-ribbon').textContent) && document.querySelectorAll('.part-ava').length === 8 && !document.getElementById('part-banner').hidden, 'nieuwe wereld: banner, cast van acht en lint');
+    document.getElementById('btn-part-go').click(); await sleep(350);
+    document.getElementById('btn-briefing-go').click();
+    const okIntro = document.getElementById('btn-newclue-ok'); if (okIntro) okIntro.click();
+    check(active() === 'screen-board' && Board.campaignCase.chapter === 'piraten', 'en dan het bord van de piraten');
+    App.navigateTo('menu'); await sleep(350);
     check(/Geluid aan/.test(sb.textContent), 'geluid staat standaard aan');
     sb.click();
     check(/Geluid uit/.test(sb.textContent) && App.storageGet('crimson-sound') === '0', 'geluid uitzetten wordt onthouden');

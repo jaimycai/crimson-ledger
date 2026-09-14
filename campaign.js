@@ -8,7 +8,7 @@
 
 const CAMPAIGN = [
   // ── Het Landhuis ────────────────────────────────────────────
-  { key: 'landhuis', theme: 'landhuis', part: 1, title: 'Deel I · Het diner',
+  { key: 'landhuis', theme: 'landhuis', part: 1, icon: '🍷', title: 'Deel I · Het diner',
     intro: 'Landgoed Blackwood, 1927. Na het diner blijft de gastheer in zijn stoel zitten.',
     outro: 'De geheimen van het diner liggen op tafel. Maar de familie komt terug.',
     briefing: 'Welkom op Blackwood. Begin bij wie zegt in welke kamer hij was: dat zijn de makkelijkste verklaringen. En onthoud: alleen de moordenaar was bij het slachtoffer.',
@@ -22,7 +22,7 @@ const CAMPAIGN = [
     { title: 'Het testament',         story: 'Iedereen wist wat erin stond. Eén iemand wist het beter.', item: '📜 Testament', difficulty: 'moeilijk',  seed: 5683 },
     { title: 'De Rode Kamer',         story: 'Alles kwam samen in de kamer waar het begon.', item: '🕯️ Rode kaars',             difficulty: 'moeilijk',  seed: 5780 }
   ]},
-  { key: 'landhuis-2', theme: 'landhuis', part: 2, title: 'Deel II · De erfgenamen',
+  { key: 'landhuis-2', theme: 'landhuis', part: 2, icon: '📜', title: 'Deel II · De erfgenamen',
     intro: 'Na de begrafenis komt de familie terug. Iedereen wil iets uit het huis.',
     outro: 'De erfenis is verdeeld. Maar het huis heeft nog meer te vertellen.',
     briefing: 'De familie is terug en iedereen praat over iedereen. Verklaringen over twee personen los je op door eerst één van de twee vast te zetten.',
@@ -36,7 +36,7 @@ const CAMPAIGN = [
     { title: 'Het geheim van de serre', story: 'Achter de planten stond een deur die niemand kende.', item: '🌿 Serrevaren',            difficulty: 'moeilijk',  seed: 15683 },
     { title: 'De laatste erfgenaam',   story: 'Toen het testament werd gelezen, ontbrak er één naam.', item: '🪶 Notarispen',            difficulty: 'moeilijk',  seed: 15780 }
   ]},
-  { key: 'landhuis-3', theme: 'landhuis', part: 3, title: 'Deel III · De nacht van de storm',
+  { key: 'landhuis-3', theme: 'landhuis', part: 3, icon: '⛈️', title: 'Deel III · De nacht van de storm',
     intro: 'Het onweer sluit het landgoed af van de wereld. Niemand komt erin, niemand gaat eruit.',
     outro: 'Bij zonsopgang trekt het onweer weg. Landgoed Blackwood heeft geen geheimen meer.',
     briefing: 'De storm sluit het huis af. Verwacht verklaringen over rijen en kolommen: die lopen dwars door de muren heen. Let goed op de plattegrond.',
@@ -52,7 +52,7 @@ const CAMPAIGN = [
   ]},
 
   // ── Het Piratenschip ────────────────────────────────────────
-  { key: 'piraten', theme: 'piraten', part: 1, title: 'Deel I · De stille zee',
+  { key: 'piraten', theme: 'piraten', part: 1, icon: '🧭', title: 'Deel I · De stille zee',
     intro: 'De Zwarte Meeuw ligt stil op een spiegelgladde zee. De kapitein reageert niet meer.',
     outro: 'De Zwarte Meeuw hijst de zeilen. Er ligt een eiland op de kaart.',
     briefing: 'Een schip is klein en iedereen heeft elkaar gezien. "Direct naast" betekent het vakje ernaast, nooit schuin. Begin bij de kombuis.',
@@ -66,7 +66,7 @@ const CAMPAIGN = [
     { title: 'Storm op komst',        story: 'De lucht werd zwart en de bemanning ook.', item: '🏮 Lantaarn',                  difficulty: 'moeilijk',  seed: 7683 },
     { title: 'De laatste zeilen',     story: 'Eén persoon zou nooit meer aan wal komen.', item: '⚓ Anker',                 difficulty: 'moeilijk',  seed: 7780 }
   ]},
-  { key: 'piraten-2', theme: 'piraten', part: 2, title: 'Deel II · Het eiland',
+  { key: 'piraten-2', theme: 'piraten', part: 2, icon: '🏝️', title: 'Deel II · Het eiland',
     intro: 'De Zwarte Meeuw gaat voor anker bij een naamloos eiland. De schat is dichtbij, en iedereen weet het.',
     outro: 'De schat ligt in het ruim. De rekening is vereffend. Nu nog naar huis.',
     briefing: 'Op het eiland liegt niemand, maar iedereen zwijgt over iets. Gebruik het potlood om vakjes te markeren waar iemand zou kúnnen staan.',
@@ -80,7 +80,7 @@ const CAMPAIGN = [
     { title: 'Kanonnier Bo telt',      story: 'Twaalf kogels, elf in de kist.', item: '📦 Kogelkist',                           difficulty: 'moeilijk',  seed: 17683 },
     { title: 'De vloek van Zwartoog',  story: 'Iedereen geloofde in de vloek. Behalve de dader.', item: '📿 Amulet',         difficulty: 'moeilijk',  seed: 17780 }
   ]},
-  { key: 'piraten-3', theme: 'piraten', part: 3, title: 'Deel III · De thuisvaart',
+  { key: 'piraten-3', theme: 'piraten', part: 3, icon: '💰', title: 'Deel III · De thuisvaart',
     intro: 'Met de schat aan boord begint de terugreis. Rijk worden maakt mensen niet eerlijker.',
     outro: 'De Zwarte Meeuw loopt de haven binnen. De bemanning is kleiner, de schat compleet.',
     briefing: 'Met de schat aan boord wordt de bemanning onrustig. Verklaringen als "links van" en "hoger dan" gelden voor de hele plattegrond, niet alleen voor de kamer.',
@@ -96,7 +96,7 @@ const CAMPAIGN = [
   ]},
 
   // ── Grand Hotel Aurora ──────────────────────────────────────
-  { key: 'hotel', theme: 'hotel', part: 1, title: 'Deel I · Nieuwjaarsnacht',
+  { key: 'hotel', theme: 'hotel', part: 1, icon: '🥂', title: 'Deel I · Nieuwjaarsnacht',
     intro: 'Om klokslag twaalf ging het licht uit. Toen het terugkwam, lag de eigenaar op de marmeren vloer.',
     outro: 'De eerste nacht van het jaar is voorbij. De gasten mogen nog niet naar huis.',
     briefing: 'Honderd gasten, één slachtoffer. Een hotel heeft veel ruimtes; streep eerst de ruimtes weg die volgens het rapport leeg waren.',
@@ -110,7 +110,7 @@ const CAMPAIGN = [
     { title: 'Sleutel 404',           story: 'Die kamer bestond niet. Die sleutel wel.', item: '🔑 Sleutel 404',                  difficulty: 'moeilijk',  seed: 9683 },
     { title: 'De laatste gast',       story: 'Bij het uitchecken ontbrak er iemand.', item: '📖 Gastenboek',                     difficulty: 'moeilijk',  seed: 9780 }
   ]},
-  { key: 'hotel-2', theme: 'hotel', part: 2, title: 'Deel II · De gasten',
+  { key: 'hotel-2', theme: 'hotel', part: 2, icon: '🧳', title: 'Deel II · De gasten',
     intro: 'De nieuwjaarsgasten mogen het hotel niet verlaten. Het personeel ook niet.',
     outro: 'De gasten vertrekken. Het gastenboek heeft een bladzijde minder.',
     briefing: 'De gasten mogen niet weg en dat merk je aan hun verklaringen: kort en scherp. Twee mensen in dezelfde ruimte: zet de duidelijkste eerst.',
@@ -124,7 +124,7 @@ const CAMPAIGN = [
     { title: 'De wijnkelder',          story: 'Het slot was heel. De fles niet.', item: '🍷 Wijnfles',                         difficulty: 'moeilijk',  seed: 19683 },
     { title: 'Uitchecken om twaalf',   story: 'Om twaalf uur waren ze weg. Op één na.', item: '🧾 Rekening',                   difficulty: 'moeilijk',  seed: 19780 }
   ]},
-  { key: 'hotel-3', theme: 'hotel', part: 3, title: 'Deel III · Het personeel',
+  { key: 'hotel-3', theme: 'hotel', part: 3, icon: '🛎️', title: 'Deel III · Het personeel',
     intro: 'Wie het hotel kent, kent de gangen achter de muren. Daar begint dit deel.',
     outro: 'Grand Hotel Aurora dooft de lichten. Deze keer voorgoed.',
     briefing: 'Het personeel kent de gangen achter de muren. Denk aan hoeken en muren: een hoek raakt twee muren, "tegen een muur" raakt er één.',
@@ -140,7 +140,7 @@ const CAMPAIGN = [
   ]},
 
   // ── Station Orion ───────────────────────────────────────────
-  { key: 'ruimte', theme: 'ruimte', part: 1, title: 'Deel I · Alarm',
+  { key: 'ruimte', theme: 'ruimte', part: 1, icon: '🚨', title: 'Deel I · Alarm',
     intro: 'De commandant meldt zich niet voor haar dienst. Alle luchtsluizen zijn vergrendeld.',
     outro: 'De sluizen blijven dicht. Dan vangt de antenne iets op.',
     briefing: 'Station Orion, alle sluizen dicht. De bemanning spreekt over modules, niet over kamers. Verder werkt het precies zoals thuis.',
@@ -154,7 +154,7 @@ const CAMPAIGN = [
     { title: 'Het observatorium',     story: 'De sterren waren de enige getuigen.', item: '🌌 Sterrenkaart',                       difficulty: 'moeilijk',  seed: 3683 },
     { title: 'Thuisreis',             story: 'De capsule had plek voor iedereen. Op één na.', item: '🎫 Capsulepas',             difficulty: 'moeilijk',  seed: 3780 }
   ]},
-  { key: 'ruimte-2', theme: 'ruimte', part: 2, title: 'Deel II · Het signaal',
+  { key: 'ruimte-2', theme: 'ruimte', part: 2, icon: '📡', title: 'Deel II · Het signaal',
     intro: 'Een signaal van buiten het station. De bemanning raakt verdeeld.',
     outro: 'Het signaal stopt. Aan boord blijft het onrustig.',
     briefing: 'Het signaal maakt iedereen zenuwachtig. Hoe minder verklaringen, hoe meer je elke verklaring moet uitknijpen. Lees ze twee keer.',
@@ -168,7 +168,7 @@ const CAMPAIGN = [
     { title: 'De robot liegt',         story: 'De logbestanden waren gewist. Bijna allemaal.', item: '💽 Logbestand',            difficulty: 'moeilijk',  seed: 13683 },
     { title: 'Stilte in de kas',       story: 'De planten groeiden. Verder bewoog er niets.', item: '🍃 Kasblad',             difficulty: 'moeilijk',  seed: 13780 }
   ]},
-  { key: 'ruimte-3', theme: 'ruimte', part: 3, title: 'Deel III · Terugkeer',
+  { key: 'ruimte-3', theme: 'ruimte', part: 3, icon: '🚀', title: 'Deel III · Terugkeer',
     intro: 'De capsule naar huis heeft plaats voor iedereen. Niet iedereen wil mee.',
     outro: 'De capsule koppelt los. Station Orion draait verder, leeg en stil.',
     briefing: 'De laatste reis. Verwacht de moeilijkste zaken van de campagne. Hint: wie alleen was in een module, sluit alle anderen daar uit.',
@@ -189,7 +189,7 @@ const CAMPAIGN = [
   // ══════════════════════════════════════════════════════════════
 
   // ── Het Landhuis, verder ────────────────────────────────────
-  { key: 'landhuis-4', theme: 'landhuis', part: 4, title: 'Deel IV · Een jaar later',
+  { key: 'landhuis-4', theme: 'landhuis', part: 4, icon: '🗝️', title: 'Deel IV · Een jaar later',
     intro: 'Een jaar na de storm wordt Blackwood verkocht. De nieuwe eigenaar nodigt de oude gasten uit. Niemand had moeten komen.',
     outro: 'De verkoop gaat niet door. Het huis houdt zijn bewoners vast.',
     briefing: 'Dezelfde gezichten, een jaar ouder en een stuk voorzichtiger. Lees elke verklaring twee keer: wie zegt waar hij níét was, vertelt je ook iets.',
@@ -203,7 +203,7 @@ const CAMPAIGN = [
     { title: 'Thomas telt het zilver', story: 'Zes lepels. Gisteren zeven.', item: '🥄 Zilveren lepel',                                  difficulty: 'moeilijk',  seed: 35683 },
     { title: 'De sleutel van de zolder', story: 'Niemand ging naar de zolder. Behalve wie de sleutel had.', item: '🔐 Zoldersleutel', difficulty: 'moeilijk',  seed: 35780 }
   ]},
-  { key: 'landhuis-5', theme: 'landhuis', part: 5, title: 'Deel V · De bruiloft',
+  { key: 'landhuis-5', theme: 'landhuis', part: 5, icon: '💍', title: 'Deel V · De bruiloft',
     intro: 'Rosalind trouwt op Blackwood. De hele familie komt, en met de familie komen de oude ruzies mee.',
     outro: 'De taart is aangesneden, het feest is voorbij. De gasten vertrekken, op één na.',
     briefing: 'Een bruiloft is druk: veel mensen, weinig kamers. Begin met wie zegt alleen te zijn geweest, dat ruimt meteen een hele kamer op.',
@@ -217,7 +217,7 @@ const CAMPAIGN = [
     { title: 'De champagnekoeler',     story: 'Het ijs was gesmolten. Het glas ernaast onaangeraakt.', item: '🧊 IJsemmer',            difficulty: 'moeilijk',  seed: 45683 },
     { title: 'De laatste dans',        story: 'Toen het licht aanging, stond er iemand te veel op de dansvloer.', item: '💃 Dansschoen', difficulty: 'moeilijk', seed: 45780 }
   ]},
-  { key: 'landhuis-6', theme: 'landhuis', part: 6, title: 'Deel VI · Het geheim van Blackwood',
+  { key: 'landhuis-6', theme: 'landhuis', part: 6, icon: '🚪', title: 'Deel VI · Het geheim van Blackwood',
     intro: 'Onder de trap zit een deur die op geen enkele plattegrond staat. Wat erachter ligt, verandert alles.',
     outro: 'De deur onder de trap is dichtgemetseld. Blackwood zwijgt, en dit keer echt.',
     briefing: 'Het laatste deel van het landhuis. Alles wat je hebt geleerd komt terug: hoeken, meubels, rijen. Zet niemand neer voordat je het zeker weet.',
@@ -233,7 +233,7 @@ const CAMPAIGN = [
   ]},
 
   // ── Het Piratenschip, verder ────────────────────────────────
-  { key: 'piraten-4', theme: 'piraten', part: 4, title: 'Deel IV · De nieuwe kapitein',
+  { key: 'piraten-4', theme: 'piraten', part: 4, icon: '🛞', title: 'Deel IV · De nieuwe kapitein',
     intro: 'Roodbaard neemt het roer. De bemanning is het er niet mee eens. Op zee blijft niets lang stil.',
     outro: 'De Meeuw heeft een kapitein. Voor hoelang, weet niemand.',
     briefing: 'Een nieuwe kapitein en een oude bemanning. Verklaringen met "direct naast" zijn goud waard op zo\'n klein schip: elk vakje telt.',
@@ -247,7 +247,7 @@ const CAMPAIGN = [
     { title: 'De nacht zonder maan',   story: 'Het was aardedonker. Iemand kende de weg.', item: '🌑 Gedoofde lantaarn',               difficulty: 'moeilijk',  seed: 37683 },
     { title: 'Roodbaard aan het roer', story: 'De kapitein stond aan het roer. Achter hem: niemand. Zei hij.', item: '🎖️ Kapiteinsknoop', difficulty: 'moeilijk', seed: 37780 }
   ]},
-  { key: 'piraten-5', theme: 'piraten', part: 5, title: 'Deel V · Het spookschip',
+  { key: 'piraten-5', theme: 'piraten', part: 5, icon: '🌫️', title: 'Deel V · Het spookschip',
     intro: 'In de mist ligt een schip zonder bemanning. De Meeuw gaat langszij. Iemand had beter thuis kunnen blijven.',
     outro: 'Het spookschip verdwijnt in de mist. De Meeuw vaart verder, één man lichter.',
     briefing: 'Mist en een leeg schip: iedereen is zenuwachtig en praat te veel. Streep eerst de lege ruimtes weg, dan wordt de rest vanzelf klein.',
@@ -261,7 +261,7 @@ const CAMPAIGN = [
     { title: 'Bo en het kruit',        story: 'Het kruit was droog. Op één vat na.', item: '🧨 Kruitvat',                              difficulty: 'moeilijk',  seed: 47683 },
     { title: 'De mist trekt op',       story: 'Toen de mist optrok, lag er iemand op het dek van de Meeuw.', item: '⚓ Roestig anker', difficulty: 'moeilijk', seed: 47780 }
   ]},
-  { key: 'piraten-6', theme: 'piraten', part: 6, title: 'Deel VI · Zwartoogs schat',
+  { key: 'piraten-6', theme: 'piraten', part: 6, icon: '🪙', title: 'Deel VI · Zwartoogs schat',
     intro: 'De echte schat van Zwartoog ligt niet op een eiland. Hij ligt aan boord. En iedereen weet nu waar.',
     outro: 'De schat is verdeeld. De Meeuw is van de bemanning, en de bemanning van de zee.',
     briefing: 'De laatste zaken op de Meeuw en de moeilijkste. Verklaringen over rijen en kolommen lopen dwars door het schip: gebruik het potlood.',
@@ -277,7 +277,7 @@ const CAMPAIGN = [
   ]},
 
   // ── Grand Hotel Aurora, verder ──────────────────────────────
-  { key: 'hotel-4', theme: 'hotel', part: 4, title: 'Deel IV · De heropening',
+  { key: 'hotel-4', theme: 'hotel', part: 4, icon: '✂️', title: 'Deel IV · De heropening',
     intro: 'Grand Hotel Aurora gaat weer open. Nieuwe eigenaar, oude gasten, dezelfde gangen.',
     outro: 'De heropening is een succes. Op één recensie na.',
     briefing: 'Het hotel is opnieuw ingericht, dus bekijk de plattegrond goed voordat je begint. Tik op meubels waar je niet zeker van bent.',
@@ -291,7 +291,7 @@ const CAMPAIGN = [
     { title: 'De spiegelzaal',         story: 'Honderd spiegels, honderd getuigen, één leugen.', item: '🪞 Spiegelscherf',              difficulty: 'moeilijk',  seed: 39683 },
     { title: 'De eerste recensie',     story: 'Vijf sterren. Geschreven door iemand die nooit had ingecheckt.', item: '⭐ Recensiekaart', difficulty: 'moeilijk', seed: 39780 }
   ]},
-  { key: 'hotel-5', theme: 'hotel', part: 5, title: 'Deel V · Het congres',
+  { key: 'hotel-5', theme: 'hotel', part: 5, icon: '🏷️', title: 'Deel V · Het congres',
     intro: 'Driehonderd congresgangers, één spreker die nooit het podium haalt.',
     outro: 'Het congres is afgelopen. De aanwezigheidslijst klopt niet meer.',
     briefing: 'Veel gasten betekent veel verklaringen over twee mensen tegelijk. Zet altijd eerst degene vast van wie je het meeste weet.',
@@ -305,7 +305,7 @@ const CAMPAIGN = [
     { title: 'De microfoon staat aan', story: 'Iedereen hoorde het. Niemand begreep het.', item: '🎙️ Microfoon',                      difficulty: 'moeilijk',  seed: 49683 },
     { title: 'De slotspeech',          story: 'De spreker kwam niet. De zaal wachtte.', item: '📣 Spreekgestoelte',                     difficulty: 'moeilijk',  seed: 49780 }
   ]},
-  { key: 'hotel-6', theme: 'hotel', part: 6, title: 'Deel VI · De laatste nacht van Aurora',
+  { key: 'hotel-6', theme: 'hotel', part: 6, icon: '💡', title: 'Deel VI · De laatste nacht van Aurora',
     intro: 'Het hotel sluit voorgoed. Het personeel blijft één nacht langer. Eén nacht te lang.',
     outro: 'De lichten gaan uit. Grand Hotel Aurora is geschiedenis, en jij kent elke bladzijde.',
     briefing: 'De laatste nacht en de moeilijkste zaken van het hotel. Hoeken, muren, rijen: alles telt. Neem de tijd, de sterren lopen niet weg.',
@@ -321,7 +321,7 @@ const CAMPAIGN = [
   ]},
 
   // ── Station Orion, verder ───────────────────────────────────
-  { key: 'ruimte-4', theme: 'ruimte', part: 4, title: 'Deel IV · Orion herstart',
+  { key: 'ruimte-4', theme: 'ruimte', part: 4, icon: '🔘', title: 'Deel IV · Orion herstart',
     intro: 'Een nieuwe bemanning neemt Station Orion in gebruik. De oude logboeken zijn gewist. Niet grondig genoeg.',
     outro: 'Het station draait weer. De logboeken blijven voortaan bewaard.',
     briefing: 'Orion is opnieuw in bedrijf en de modules zijn anders ingedeeld. Lege modules eerst wegstrepen, dat scheelt de helft van het werk.',
@@ -335,7 +335,7 @@ const CAMPAIGN = [
     { title: 'Kadet Yuki dubbelt',     story: 'Volgens het rooster was Yuki op twee plekken tegelijk.', item: '📅 Dienstrooster',      difficulty: 'moeilijk',  seed: 33683 },
     { title: 'Het nieuwe commando',    story: 'De nieuwe commandant hield het één week vol.', item: '🎖️ Commandantsspeld',             difficulty: 'moeilijk',  seed: 33780 }
   ]},
-  { key: 'ruimte-5', theme: 'ruimte', part: 5, title: 'Deel V · De vreemde capsule',
+  { key: 'ruimte-5', theme: 'ruimte', part: 5, icon: '📦', title: 'Deel V · De vreemde capsule',
     intro: 'Een capsule koppelt aan zonder toestemming. Binnen: niemand. Buiten: een bemanning die opeens veel te vertellen heeft.',
     outro: 'De capsule wordt losgekoppeld en weggeduwd. Wat erin zat, weet alleen de bemanning.',
     briefing: 'Een vreemde capsule en zenuwachtige mensen. Verklaringen met "links van" en "hoger dan" gelden voor het hele station, niet voor één module.',
@@ -349,7 +349,7 @@ const CAMPAIGN = [
     { title: 'Het pakket',             story: 'In de capsule lag een pakket. Aan één naam gericht.', item: '📦 Pakket',                 difficulty: 'moeilijk',  seed: 43683 },
     { title: 'Loskoppelen',            story: 'De capsule ging weg. Met iets erin dat er eerst niet was.', item: '🔗 Koppelstuk',      difficulty: 'moeilijk',  seed: 43780 }
   ]},
-  { key: 'ruimte-6', theme: 'ruimte', part: 6, title: 'Deel VI · De laatste omloop',
+  { key: 'ruimte-6', theme: 'ruimte', part: 6, icon: '🔥', title: 'Deel VI · De laatste omloop',
     intro: 'Orion wordt opgegeven. Nog één omloop om de aarde, dan de capsule naar huis. Iedereen wil mee. Niet iedereen kan.',
     outro: 'De capsule landt. Station Orion verbrandt in de dampkring, met al zijn geheimen. Behalve die van jou.',
     briefing: 'De allerlaatste zaken van de campagne en de zwaarste. Alles komt samen. Wie alleen was in een module sluit iedereen daar uit; begin daar.',
@@ -482,6 +482,42 @@ const Campaign = {
     return arch ? this.caseAt(this.ARCHIVE, arch.idx) : null;
   },
   threeStarCount() { return Object.entries(this.progress()).filter(([k, s]) => s === 3 && !k.startsWith(this.ARCHIVE + '-')).length; },
+  nextChapter(key) { const ch = this.chapter(key); return ch ? this.chaptersFor(ch.theme).find(c => c.part === ch.part + 1) || null : null; },
+  lastPart(key) { const ch = this.chapter(key); return !!ch && ch.part === this.chaptersFor(ch.theme).length; },
+
+  // ── Tussenstops op de kaart ────────────────────────────────
+  // Halverwege elk deel een minigame (open zodra zaak 4 is opgelost), aan het
+  // eind een bewijskist (open zodra het deel af is). Beide net als de
+  // oefenrondes en kisten op het pad van Duolingo: kort, en met beloning.
+  MINI_AFTER: 4,
+  CHEST_POINTS: 300, WORLD_CHEST_POINTS: 1000,
+  read(k, fb) { try { const v = JSON.parse((typeof App !== 'undefined' ? App.storageGet(k) : null) || 'null'); return v === null ? fb : v; } catch (e) { return fb; } },
+  write(k, v) { if (typeof App !== 'undefined') App.storageSet(k, JSON.stringify(v)); },
+  miniKind(key) { const ch = this.chapter(key); return ch && ch.part % 2 === 0 ? 'memory' : 'liar'; },
+  miniOpen(key) { return this.stars(key, this.MINI_AFTER - 1) > 0; },
+  miniBest(key) { return this.read('crimson-mini', {})[key] || 0; },
+  // geeft terug of dit de eerste keer was
+  saveMini(key, score) {
+    const st = this.read('crimson-mini', {});
+    const first = !st[key];
+    st[key] = Math.max(st[key] || 0, score);
+    this.write('crimson-mini', st);
+    return first;
+  },
+  chestOpened(key) { return this.read('crimson-chests', []).includes(key); },
+  stamps() { return this.read('crimson-chests', []); },
+  chestReward(key) {
+    const world = this.lastPart(key);
+    return { points: world ? this.WORLD_CHEST_POINTS : this.CHEST_POINTS, freeze: true, stamp: key, world };
+  },
+  // opent de kist (één keer); geeft de beloning terug, of null als hij al open was
+  openChest(key) {
+    if (!this.chapter(key) || !this.chapterDone(key) || this.chestOpened(key)) return null;
+    const list = this.read('crimson-chests', []);
+    list.push(key);
+    this.write('crimson-chests', list);
+    return this.chestReward(key);
+  },
 
   // Dezelfde herkansing als Board.start, zodat de test precies kan bewijzen wat de speler krijgt
   generateFor(key, idx, FP, Th) {

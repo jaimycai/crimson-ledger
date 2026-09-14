@@ -343,6 +343,42 @@ Nog niet gedaan, wel kansrijk: een weekcompetitie met vrienden via Game Center
 maandelijkse opdracht met een grote beloning, en een "welkom terug"-kaart na
 een paar dagen afwezigheid.
 
+## Kaart met tussenstops, minigames en bewijskisten (14 sep, avond)
+
+Jaimy: "de wereldkaart heeft nog steeds 4 thema's en dit moet uitgebreider nu
+we verdubbeld zijn. Net zoals bij Duolingo moeten hier minigames komen in de
+kaart, en als we naar een volgend deel of thema gaan moet er iets komen dat ik
+weer een wow heb en een reden om verder te spelen."
+
+Wat Duolingo op zijn pad doet: elke unit een eigen kleur en kop, tussendoor
+oefenrondes en kisten, en een trofee-moment aan het eind van een unit. Dat is
+vertaald naar de kaart:
+
+- **Elk deel is een eigen strook** met eigen sfeer: deel I helder, II schemer,
+  III storm (regenstrepen), IV daglicht, V feest (confetti), VI nacht met
+  sterren. De wegwijzer van elk deel draagt een icoon (🍷 📜 ⛈️ 🗝️ 💍 🚪 …) en
+  een teller "3/8". Zo zijn 24 delen 24 herkenbare plekken in plaats van één
+  lange rij.
+- **Minigame halverwege elk deel** (open na zaak 4), afwisselend per deel:
+  *Wie liegt?* (iedereen staat op zijn plek op een plattegrond van die wereld,
+  drie verklaringen, één is gelogen, tik de leugenaar) en *Vluchtige blik*
+  (vier tellen kijken, dan verdwijnt iedereen: waar stond …?). Drie rondes, 50
+  punten per goede ronde, 150 extra bij de eerste keer alles goed, altijd
+  opnieuw te spelen (de rondes wisselen per dag). `minigame.js`.
+- **Bewijskist aan het eind van elk deel** (open zodra alle acht zaken af
+  zijn): na de ceremonie van de laatste zaak schuift de kist in beeld, tik om
+  te openen: deksel klapt open, gloed, stralen, en de beloningen springen
+  tevoorschijn (+300 punten, een vrije dag, een stempel; +1000 bij het laatste
+  deel van een wereld). Daaronder meteen de knop "▶ Deel II · De erfgenamen".
+  Wie een deel al af had, vindt de kist op de kaart met "Open mij!". Stempels
+  staan per wereld in de vitrine. `App.showChest/openChest`,
+  `Campaign.openChest`, sleutels `crimson-chests` en `crimson-mini`.
+- **Nieuwe wereld = onthulling**: de kaart van het deel is nu in de kleur van de
+  wereld met langzaam draaiende stralen; bij deel I komt de banner van de
+  wereld erbovenop en verschijnen alle acht verdachten één voor één, met wat
+  je te wachten staat (aantal delen en zaken, minigames, kisten). Bij een
+  nieuw deel: icoon, titel, intro en de belofte van de kist.
+
 ## Openstaande punten (volgorde van voorstel)
 
 1. App Store: stappen in `store/CHECKLIST.md` (Apple-account, archiveren, uploaden).

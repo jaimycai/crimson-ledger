@@ -733,8 +733,12 @@ const Board = {
     const after = App.rankFor(solvedAfter);
     this.newRank = after.title !== before.title ? after.title : null;
     this.rankInfo = { before, after, solvedBefore, solvedAfter };
+    this.chestKey = null;
     if (this.campaignCase) {
-      Campaign.save(this.campaignCase.chapter, this.campaignCase.idx, Campaign.starsFor(this.hintsUsed, this.attempts));
+      const k = this.campaignCase.chapter;
+      Campaign.save(k, this.campaignCase.idx, Campaign.starsFor(this.hintsUsed, this.attempts));
+      // deel af en de bewijskist nog dicht: die komt na de ceremonie
+      if (k !== Campaign.ARCHIVE && Campaign.chapterDone(k) && !Campaign.chestOpened(k)) this.chestKey = k;
     }
     if (this.isDaily) {
       App.updateStreak();
@@ -773,6 +777,8 @@ const Board = {
     if (q.length && App.questToast) setTimeout(() => App.questToast(q), (this.medalsWon || []).length ? 1800 : 300);
     if (App.streakToasts) setTimeout(() => App.streakToasts(), q.length ? 3600 : 300);
     this.questsDone = [];
+    // laatste zaak van een deel: de bewijskist, het grote moment
+    if (this.chestKey && App.showChest) { const k = this.chestKey; this.chestKey = null; setTimeout(() => App.showChest(k), 900); }
   },
 
   // ── Voortgang ─────────────────────────────────────────────

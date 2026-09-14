@@ -53,5 +53,30 @@ check(al.length === 2 && al[0].title === 'Dossier 1' && al[1].title === 'Dossier
 check(Campaign.worldTotal('piraten') === 48 && Campaign.worldStars('piraten') === 0 && Campaign.worldDone('piraten') === 0, 'wereldtellers');
 check(Campaign.current('landhuis').title === 'Het glas Bordeaux' && Campaign.current('piraten', false) === null && Campaign.nextOverall(null, 'hotel').title === 'Middernacht', 'huidige zaak per wereld en over alle werelden');
 console.log(`\n(${((Date.now() - t0) / 1000).toFixed(1)}s)`);
+// ── Tussenstops: minigame en bewijskist ──
+const { Avatars } = require('../avatars.js');
+const { Mentor } = require('../mentor.js');
+Object.assign(global, { FloorPlan, Themes, Campaign, Avatars, Mentor });   // minigame.js gebruikt ze als globals, net als in de browser
+const { MiniGame } = require('../minigame.js');
+check(CAMPAIGN.every(ch => ch.icon) && Campaign.miniKind('landhuis') === 'liar' && Campaign.miniKind('landhuis-2') === 'memory', 'elk deel heeft een icoon; minigames wisselen af (oneven: Wie liegt?, even: Vluchtige blik)');
+check(!Campaign.miniOpen('landhuis') && !Campaign.chestOpened('landhuis') && Campaign.openChest('landhuis') === null, 'zonder voortgang: minigame dicht, kist dicht en niet te openen');
+check(Campaign.nextChapter('landhuis').key === 'landhuis-2' && Campaign.nextChapter('landhuis-6') === null && Campaign.lastPart('ruimte-6') && !Campaign.lastPart('ruimte-5'), 'volgend deel en laatste deel');
+check(Campaign.chestReward('landhuis').points === Campaign.CHEST_POINTS && Campaign.chestReward('landhuis-6').points === Campaign.WORLD_CHEST_POINTS && Campaign.chestReward('landhuis-6').world, 'kist: 300 punten per deel, 1000 bij het laatste deel van een wereld');
+// drie rondes van elke soort, deterministisch en met precies één leugen
+let okLiar = 0, okMem = 0;
+for (let round = 1; round <= 3; round++) {
+  const p = MiniGame.puzzleFor('landhuis', round, 5), r = MiniGame.rng(11 + round);
+  const L = MiniGame.liarRound(p, r);
+  const falseCount = L.cards.filter(c => FloorPlan.holds(c.clue, p.solution, p) === false).length;
+  if (L.cards.length === 3 && falseCount === 1 && L.cards[L.answer].lie && FloorPlan.holds(L.cards[L.answer].clue, p.solution, p) === false) okLiar++;
+  const M = MiniGame.memoryRound(p, MiniGame.rng(3 + round), []);
+  const real = FloorPlan.roomOf(p.rooms, p.solution[M.s].x, p.solution[M.s].y);
+  if (M.options.length === 3 && new Set(M.options.map(o => o.id)).size === 3 && M.options[M.answer].id === real.id) okMem++;
+}
+check(okLiar === 3, `Wie liegt?: drie kaarten, precies één gelogen, de leugen klopt niet met het bord (${okLiar}/3)`);
+check(okMem === 3, `Vluchtige blik: drie verschillende kamers, het juiste antwoord is de echte kamer (${okMem}/3)`);
+check(MiniGame.pointsFor(3, true) === 300 && MiniGame.pointsFor(3, false) === 150 && MiniGame.pointsFor(1, true) === 50, 'punten: 50 per ronde, 150 extra bij de eerste keer alles goed');
+check(MiniGame.gridHtml(MiniGame.puzzleFor('piraten', 1, 0), MiniGame.puzzleFor('piraten', 1, 0).solution).split('class="bcell').length - 1 === MiniGame.puzzleFor('piraten', 1, 0).cols * MiniGame.puzzleFor('piraten', 1, 0).rows, 'plattegrond van de minigame: een vakje per cel');
+
 console.log(failures === 0 ? 'ALLE CAMPAGNE CHECKS PASSED' : `${failures} FAILURES`);
 process.exit(failures === 0 ? 0 : 1);
