@@ -49,8 +49,8 @@ const Board = {
     clues: [{ kind: 'room-pos', s: 0, room: 0, pos: 'hoek' }, { kind: 'next-to', s: 1, furniture: 'plant' }]
   },
   TUTORIAL_STEPS: [
-    { suspect: 0, cell: { x: 0, y: 0 }, text: 'Aanwijzing 1: Clara was in de Woonkamer, in een hoek. Drie hoeken zijn bezet door meubels, dus blijft er één over. Tik op het oplichtende vakje.' },
-    { suspect: 1, cell: { x: 3, y: 3 }, text: 'Aanwijzing 2: Marcus stond direct naast een plant. Naast de plant is maar één vakje vrij. Tik erop.' },
+    { suspect: 0, cell: { x: 0, y: 0 }, text: 'Aanwijzing 1: Clara was in de Woonkamer, in een hoek. Drie hoeken zijn bezet door meubels, dus blijft er één over. Sleep Clara naar het oplichtende vakje, of tik erop.' },
+    { suspect: 1, cell: { x: 3, y: 3 }, text: 'Aanwijzing 2: Marcus stond direct naast een plant. Naast de plant is maar één vakje vrij. Sleep Marcus erheen, of tik erop.' },
     { action: 'check', text: 'Iedereen staat op zijn plek. Tik op Controleer.' },
     { action: 'murder', text: 'De spelregel: alleen de moordenaar was in de kamer van het slachtoffer. Marcus staat in de Keuken — kies Marcus.' }
   ],
@@ -203,7 +203,7 @@ const Board = {
       html += `<span class="room-label" style="left:${left}%;top:${top}%">${room.name}</span>`;
     });
     grid.innerHTML = html;
-    grid.querySelectorAll('.bcell').forEach(c => c.addEventListener('click', () => this.onCell(+c.dataset.x, +c.dataset.y)));
+    grid.querySelectorAll('.bcell').forEach(c => c.addEventListener('click', () => { if (!this.dragDone) this.onCell(+c.dataset.x, +c.dataset.y); }));
   },
 
   // ── Verdachtenkiezer ──────────────────────────────────────
@@ -215,6 +215,7 @@ const Board = {
          <span class="sus-name">${s.label}</span>
        </button>`).join('');
     wrap.querySelectorAll('.sus-chip').forEach(b => b.addEventListener('click', () => {
+      if (this.dragDone) return;
       this.active = +b.dataset.s;
       if (this.mode === 'erase') this.setMode('place');
       this.renderSuspects();
@@ -252,10 +253,21 @@ const Board = {
   renderIntro() {
     const host = document.getElementById('newclue-host');
     if (!host) return;
-    const t = this.newIntro;
+    const t = this.newIntro, p = this.puzzle;
+    // het voorbeeld komt uit deze zaak zelf: de eerste verklaring van deze soort
+    let example = '';
+    if (t && p) {
+      const ci = p.clues.findIndex(c => t.kinds.includes(c.kind));
+      const st = ci >= 0 ? FloorPlan.statement(p.clues[ci], p) : null;
+      if (st && st.text) {
+        const who = st.who.length ? p.suspects[st.who[0]].label : Mentor.name;
+        example = `<p class="newclue-ex">In deze zaak zegt <b>${who}</b>: “${st.text}”</p>`;
+      }
+    }
     host.innerHTML = t && !this.isTutorial
       ? `<div class="modal-handle"></div><div class="newclue" id="newclue"><span class="ribbon ribbon-gold">Nieuw in dit deel</span>
         <div class="newclue-body"><div><h3>${t.title}</h3><p>${t.text}</p></div><span class="newclue-pic">${t.svg}</span></div>
+        ${example}
         <button type="button" class="btn btn-dark btn-block" id="btn-newclue-ok">Begrepen</button></div>`
       : '';
     const ok = document.getElementById('btn-newclue-ok');
@@ -312,8 +324,14 @@ const Board = {
   // Eén verklaring tegelijk, groot en leesbaar. Swipen, pijltjes of de stippen
   // gaan naar de volgende; "Alle" opent de hele lijst in een venster.
   toggleDone(i) {
-    this.clueDone.has(i) ? this.clueDone.delete(i) : this.clueDone.add(i);
+    if (this.clueDone.has(i)) this.clueDone.delete(i); else { this.clueDone.add(i); this.questBump('ticked'); }
     this.renderClues();
+  },
+  // opdracht van vandaag bijwerken (stil; de melding komt op het resultaatscherm of het menu)
+  questBump(key, n = 1) {
+    if (this.isTutorial || typeof Progress === 'undefined' || !Progress.questBump) return;
+    const done = Progress.questBump(key, n);
+    if (done.length && typeof App !== 'undefined' && App.questToast) App.questToast(done);
   },
   clueCard(i, cls) {
     const p = this.puzzle, clue = p.clues[i];
@@ -497,6 +515,7 @@ const Board = {
     this.buzz(12);
     Sound.play('place');
     this.sparks(x, y);
+    this.questBump('placed');
     const next = this.placements.findIndex(c => !c);
     if (next !== -1) this.active = next;                // door naar de volgende
     this.after();
@@ -597,7 +616,10 @@ const Board = {
     });
     if (wrong > 0) {
       this.attempts++;
-      App.showToast('❌', `${wrong} ${wrong === 1 ? 'verdachte staat' : 'verdachten staan'} verkeerd. Gebruik een hint als je vastzit.`);
+      const total = this.placements.length;
+      App.showToast(wrong === 1 ? '🔥' : '❌', wrong === 1
+        ? `Bijna! Nog één verdachte staat verkeerd. ${total - 1} van de ${total} staan al goed.`
+        : `${wrong} verdachten staan verkeerd, ${total - wrong} staan goed. Gebruik een hint als je vastzit.`);
       return;
     }
     this.askMurderer();
@@ -683,7 +705,8 @@ const Board = {
       partsDone: Campaign.list().filter(ch => Campaign.chapterDone(ch.key)).length, worldsDone,
       threeStars: Campaign.threeStarCount(), archiveCount: Campaign.archiveCount(),
       weekFull: Progress.weekFull(), weekDone: Progress.weekDone(), evidence: Progress.evidenceCount(),
-      points: Progress.points(), rankTitle: App.rankFor(st.solved || 0).title
+      points: Progress.points(), rankTitle: App.rankFor(st.solved || 0).title,
+      questsAll: Progress.questsAllDone(), freezeUsed: App.storageGet('crimson-freeze-used') === '1'
     };
   },
 
@@ -726,6 +749,13 @@ const Board = {
     });
     Progress.addPoints(this.score.total);
     if (this.isWeekly) Progress.markWeekDone(this.shareText());
+    // opdrachten van vandaag
+    const stars = this.campaignCase ? Campaign.starsFor(this.hintsUsed, this.attempts) : 0;
+    this.questsDone = [];
+    const bump = (k, ok = true) => { if (ok) this.questsDone.push(...Progress.questBump(k)); };
+    bump('solved'); bump('clean', this.hintsUsed === 0); bump('fast', this.elapsed <= 180); bump('daily', this.isDaily);
+    bump('campaign', !!this.campaignCase && this.campaignCase.chapter !== Campaign.ARCHIVE); bump('firsttry', this.attempts === 0); bump('threestar', stars === 3);
+    Progress.logPlayHour();
     this.medalsWon = Progress.checkMedals(this.medalCtx());
     this.medalsShown = false;
     App.mode = 'board';
@@ -739,6 +769,10 @@ const Board = {
     if (this.medalsShown) return;
     this.medalsShown = true;
     (this.medalsWon || []).forEach(m => App.showMedal(m));
+    const q = this.questsDone || [];
+    if (q.length && App.questToast) setTimeout(() => App.questToast(q), (this.medalsWon || []).length ? 1800 : 300);
+    if (App.streakToasts) setTimeout(() => App.streakToasts(), q.length ? 3600 : 300);
+    this.questsDone = [];
   },
 
   // ── Voortgang ─────────────────────────────────────────────
@@ -813,13 +847,24 @@ const Board = {
     // knoppen: volgende zaak, kaart, menu
     $('btn-play-again').textContent = this.isTutorial ? '🗺️ Naar de kaart' : 'Naar het menu';
     $('btn-play-again').dataset.to = this.isTutorial ? 'map' : 'menu';
-    const nextBtn = $('btn-next-case'), mapBtn = $('btn-map');
+    const nextBtn = $('btn-next-case'), mapBtn = $('btn-map'), teaser = $('results-next');
     mapBtn.hidden = !(this.campaignCase && !this.isTutorial);
+    if (teaser) teaser.hidden = true;
     if (this.campaignCase && !this.isTutorial) {
       const next = Campaign.next(this.campaignCase.chapter, this.campaignCase.idx);
       nextBtn.hidden = !next;
       nextBtn.textContent = next ? `▶ Volgende zaak: ${next.title}` : '▶ Volgende zaak';
       nextBtn.onclick = next ? () => App.startCampaignCase(next.chapter, next.idx) : null;
+      // hierna: het verhaaltje van de volgende zaak en hoe ver je in dit deel bent
+      if (teaser && next && next.chapter !== Campaign.ARCHIVE) {
+        const ch = Campaign.chapter(next.chapter);
+        const done = ch.cases.filter((_, i) => Campaign.stars(ch.key, i) > 0).length;
+        const left = ch.cases.length - done;
+        $('results-next-title').textContent = `${next.idx + 1}. ${next.title}`;
+        $('results-next-story').textContent = next.story;
+        $('results-next-bar').innerHTML = `<span>${ch.title}</span><i><b style="width:${Math.round(done / ch.cases.length * 100)}%"></b></i><span>${left === 0 ? 'af!' : left === 1 ? 'nog 1 zaak' : `nog ${left} zaken`}</span>`;
+        teaser.hidden = false;
+      }
     } else if (!this.isTutorial) {
       // vrij spel, dagelijkse zaak of zaak van de week: meteen door kunnen
       nextBtn.hidden = false;
@@ -947,6 +992,113 @@ const Board = {
     window.addEventListener('orientationchange', fit);
   },
 
+  // ── Slepen: een verdachte van de balk of van het bord naar een vakje ──
+  // Tikken blijft werken (eerst de verdachte, dan het vakje); slepen is
+  // directer. Een geplaatste verdachte sleep je naar een ander vakje, op een
+  // ander persoon (dan wisselen ze) of van het bord af.
+  bindDrag() {
+    const grid = document.getElementById('board-grid'), strip = document.getElementById('board-suspects');
+    if (!grid || !strip) return;
+    let d = null;
+    const begin = (e, s, from, src) => {
+      if (this.solved || this.accusing || (e.button && e.button > 0)) return;
+      d = { s, from, src, id: e.pointerId, x0: e.clientX, y0: e.clientY, moved: false, ghost: null };
+    };
+    strip.addEventListener('pointerdown', e => {
+      const chip = e.target.closest('.sus-chip');
+      if (chip) begin(e, +chip.dataset.s, null, chip);
+    });
+    grid.addEventListener('pointerdown', e => {
+      const cell = e.target.closest('.bcell');
+      if (!cell || this.mode === 'erase') return;
+      const x = +cell.dataset.x, y = +cell.dataset.y;
+      const s = this.placements.findIndex(c => c && c.x === x && c.y === y);
+      if (s !== -1) begin(e, s, { x, y }, cell);
+    });
+    const cellAt = (cx, cy) => {
+      if (!document.elementFromPoint) return null;
+      const el = document.elementFromPoint(cx, cy);
+      return el ? el.closest('#board-grid .bcell') : null;
+    };
+    document.addEventListener('pointermove', e => {
+      if (!d || e.pointerId !== d.id) return;
+      if (!d.moved) {
+        if (Math.hypot(e.clientX - d.x0, e.clientY - d.y0) < 8) return;
+        d.moved = true;
+        d.ghost = this.makeGhost(d.s);
+        d.src.classList.add('dragging');
+        this.buzz(8);
+      }
+      d.ghost.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+      this.markDrop(cellAt(e.clientX, e.clientY), d);
+    }, { passive: true });
+    const end = e => {
+      if (!d || e.pointerId !== d.id) return;
+      const drag = d; d = null;
+      if (!drag.moved) return;                        // gewone tik: de click-handler doet de rest
+      this.markDrop(null);
+      drag.src.classList.remove('dragging');
+      if (drag.ghost) drag.ghost.remove();
+      this.dragDone = true; setTimeout(() => { this.dragDone = false; }, 0);
+      if (e.type === 'pointercancel') return;
+      const cell = cellAt(e.clientX, e.clientY);
+      if (cell) this.dropSuspect(drag.s, +cell.dataset.x, +cell.dataset.y, drag.from);
+      else if (drag.from) this.liftSuspect(drag.s);   // naast het bord losgelaten: weer van het bord af
+    };
+    document.addEventListener('pointerup', end);
+    document.addEventListener('pointercancel', end);
+  },
+  makeGhost(s) {
+    const g = document.createElement('div');
+    g.className = 'drag-ghost';
+    g.innerHTML = Avatars.suspect(this.puzzle.suspects[s], s);
+    document.body.appendChild(g);
+    return g;
+  },
+  markDrop(cell, d) {
+    document.querySelectorAll('#board-grid .bcell.drop-ok, #board-grid .bcell.drop-bad').forEach(el => el.classList.remove('drop-ok', 'drop-bad'));
+    if (!cell || !d) return;
+    cell.classList.add(this.canDrop(d.s, +cell.dataset.x, +cell.dataset.y, d.from) ? 'drop-ok' : 'drop-bad');
+  },
+  canDrop(s, x, y, from) {
+    const p = this.puzzle, k = FloorPlan.key(x, y);
+    if (this.isTutorial) {
+      const step = this.TUTORIAL_STEPS[this.tutorialStep];
+      if (!step || !step.cell || x !== step.cell.x || y !== step.cell.y || s !== step.suspect) return false;
+    }
+    if (p.furniture.has(k) || (p.victim.x === x && p.victim.y === y)) return false;
+    const occupant = this.placements.findIndex(c => c && c.x === x && c.y === y);
+    return occupant === -1 || occupant === s || !!from;   // op iemand anders: alleen wisselen vanaf het bord
+  },
+  dropSuspect(s, x, y, from = null) {
+    if (this.solved) return false;
+    if (from && from.x === x && from.y === y) return false;
+    if (!this.canDrop(s, x, y, from)) { this.flash(x, y); Sound.play('error'); return false; }
+    const occupant = this.placements.findIndex(c => c && c.x === x && c.y === y);
+    this.history.push({ placements: this.placements.slice(), marks: this.cloneMarks() });
+    if (occupant !== -1 && occupant !== s) this.placements[occupant] = from;   // van plek wisselen
+    this.placements[s] = { x, y };
+    this.buzz(12);
+    Sound.play('place');
+    this.sparks(x, y);
+    this.questBump('placed');
+    const next = this.placements.findIndex(c => !c);
+    this.active = next !== -1 ? next : s;
+    this.after();
+    if (this.isTutorial) { this.tutorialStep++; this.showTutorialStep(); }
+    return true;
+  },
+  liftSuspect(s) {
+    if (this.solved || !this.placements[s]) return false;
+    this.history.push({ placements: this.placements.slice(), marks: this.cloneMarks() });
+    this.placements[s] = null;
+    this.active = s;
+    this.buzz(8);
+    Sound.play('mark');
+    this.after();
+    return true;
+  },
+
   // ── Swipen tussen de verklaringen ─────────────────────────
   bindDeck() {
     const track = document.getElementById('clue-track');
@@ -971,6 +1123,7 @@ const Board = {
 
   bind() {
     this.bindDeck();
+    this.bindDrag();
     this.bindFit();
     document.getElementById('btn-accuse-back').addEventListener('click', () => this.cancelAccuse());
     document.getElementById('btn-board-place').addEventListener('click', () => this.setMode('place'));

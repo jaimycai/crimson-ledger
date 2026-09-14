@@ -25,7 +25,7 @@ for (const ch of CAMPAIGN) {
   check(!!(ch.title && ch.intro && ch.outro) && ch.cases.every(c => c.title && c.story), `${ch.key}: titel, intro, outro en verhaaltjes aanwezig`);
 }
 check(allSeeds.size === total, 'alle seeds uniek over de hele campagne');
-check(okCases === total && total === Campaign.total() && total >= 96, `alle ${total} campagnezaken in orde`);
+check(okCases === total && total === Campaign.total() && total === 192, `alle ${total} campagnezaken in orde`);
 
 // eindeloos archief
 const N = 12; let okArch = 0;
@@ -40,7 +40,8 @@ check(Campaign.starsFor(0, 0) === 3 && Campaign.starsFor(0, 2) === 2 && Campaign
 check(Campaign.isUnlocked('landhuis', 0) && !Campaign.isUnlocked('landhuis', 1), 'zonder voortgang: alleen de eerste zaak open');
 check(Campaign.chapterOpen('landhuis') && !Campaign.chapterOpen('landhuis-2') && !Campaign.chapterOpen(Campaign.ARCHIVE), 'zonder voortgang: deel I open, deel II en archief dicht');
 const n1 = Campaign.next('landhuis', 7);
-check(n1 && n1.chapter === 'landhuis-2' && n1.idx === 0 && Campaign.next('landhuis-3', 7) === null && Campaign.next('landhuis', 0).title === 'De verdwenen sleutel' && Campaign.next(Campaign.ARCHIVE, 4).title === 'Dossier 6', 'volgende-zaak-logica: door naar het volgende deel, archief telt door');
+check(n1 && n1.chapter === 'landhuis-2' && n1.idx === 0 && Campaign.next('landhuis-3', 7).chapter === 'landhuis-4' && Campaign.next('landhuis-6', 7) === null && Campaign.next('landhuis', 0).title === 'De verdwenen sleutel' && Campaign.next(Campaign.ARCHIVE, 4).title === 'Dossier 6', 'volgende-zaak-logica: door naar het volgende deel (ook IV t/m VI), archief telt door');
+check(Campaign.chaptersFor('landhuis').map(c => c.part).join('') === '123456' && Campaign.chaptersFor('ruimte').length === 6 && Campaign.chapter('hotel-6').title.startsWith('Deel VI') && !Campaign.chapterOpen('landhuis-4'), 'zes delen per wereld, op volgorde, deel IV pas open na deel III');
 
 // bewijsstukken, briefings, archief per wereld, wereldhulpjes
 const items = CAMPAIGN.flatMap(ch => ch.cases.map(c => c.item));
@@ -49,7 +50,7 @@ check(CAMPAIGN.every(ch => ch.briefing && ch.briefing.length > 40), 'elk deel he
 check(Campaign.isUnlocked(Campaign.ARCHIVE, 0) && !Campaign.isUnlocked(Campaign.ARCHIVE, 1), 'archief: dossier 1 open zodra het archief open is, dossier 2 wacht op dossier 1');
 const al = Campaign.archiveList();
 check(al.length === 2 && al[0].title === 'Dossier 1' && al[1].title === 'Dossier 2' && al.every(c => c.state === 'locked') && al[0].theme === 'landhuis' && al[1].theme === 'piraten', 'archief op de kaart: dossier 1 en 2 (thema wisselt), dicht zolang het archief dicht is');
-check(Campaign.worldTotal('piraten') === 24 && Campaign.worldStars('piraten') === 0 && Campaign.worldDone('piraten') === 0, 'wereldtellers');
+check(Campaign.worldTotal('piraten') === 48 && Campaign.worldStars('piraten') === 0 && Campaign.worldDone('piraten') === 0, 'wereldtellers');
 check(Campaign.current('landhuis').title === 'Het glas Bordeaux' && Campaign.current('piraten', false) === null && Campaign.nextOverall(null, 'hotel').title === 'Middernacht', 'huidige zaak per wereld en over alle werelden');
 console.log(`\n(${((Date.now() - t0) / 1000).toFixed(1)}s)`);
 console.log(failures === 0 ? 'ALLE CAMPAGNE CHECKS PASSED' : `${failures} FAILURES`);

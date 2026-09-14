@@ -266,6 +266,83 @@ Gecontroleerd op 375×667, 393×852 en 430×932 met echte veilige zones: vierkan
 vakjes, balk precies op de onderrand, en het beschuldigingspaneel volledig in
 beeld zonder te scrollen.
 
+## Slepen, begrijpelijke uitleg, 192 zaken en de retentie-ronde (14 sep)
+
+Telefoontest van Jaimy: verdachten willen slepen in plaats van eerst tikken;
+bij de moordenaarsvraag wil je de plattegrond kunnen zien; de tekst van "Nieuw
+in dit deel" was onbegrijpelijk; 96 zaken zijn te snel uitgespeeld; en: "doe
+onderzoek naar Duolingo en Candy Crush, hoe houd je iemand zo lang mogelijk in
+het spel".
+
+### Wat er is gebouwd
+
+- **Slepen.** Een verdachte sleep je van de balk naar een vakje (schaduwportret
+  volgt je vinger, het doelvakje krijgt een groene of rode stippellijn). Een
+  geplaatste verdachte sleep je naar een ander vakje, op iemand anders (dan
+  wisselen ze) of van het bord af (dan is hij weg). Tikken werkt nog precies zo
+  als eerst. `Board.bindDrag/dropSuspect/liftSuspect`.
+- **Uitleg in gewone taal.** De acht "Nieuw in dit deel"-teksten zijn herschreven
+  voor een kind van tien, en elk venster toont nu een voorbeeld uit de zaak zelf:
+  "In deze zaak zegt Tante Agnes: 'Ik was in de Garage, direct naast een
+  boekenkast.'"
+- **192 campagnezaken.** Elke wereld heeft nu zes delen van acht zaken (delen IV
+  t/m VI zijn nieuw: Een jaar later / De bruiloft / Het geheim van Blackwood;
+  De nieuwe kapitein / Het spookschip / Zwartoogs schat; De heropening / Het
+  congres / De laatste nacht van Aurora; Orion herstart / De vreemde capsule /
+  De laatste omloop). Elk deel begint met een makkelijke zaak om op adem te komen
+  en eindigt met de zwaarste. 576 sterren, 192 bewijsstukken in de vitrine.
+- **De beschuldiging op het bord** (al gebouwd op 11 sep): de plattegrond blijft
+  zichtbaar, de kamer van het slachtoffer licht op, onder elke naam staat zijn
+  kamer, en "Terug naar het bord" staat vast onderin.
+
+### Retentie-onderzoek: wat Duolingo en Candy Crush doen, en wat we overnemen
+
+Bronnen: Deconstructor of Fun over Duolingo's streaks (spelers met een streak van
+7+ dagen blijven 2,4× vaker terugkomen; streak freezes worden verdiend via
+kisten, dagelijkse opdrachten en mijlpalen, juist niet gekocht, zodat wie ze het
+hardst nodig heeft ze ook heeft), StriveCloud/Medium over Duolingo's Daily
+Quests (dagelijkse en maandelijkse opdrachten voor langere sessies) en leagues
+(+25% voltooide lessen), het NCBI-onderzoek naar "near-misses" in Candy Crush
+(een bijna-gehaald level geeft de sterkste drang om door te spelen; het spel
+zegt letterlijk "you only needed 2 more"), de Candy Crush Daily Bonus-kalender
+(inlogreeks met oplopende beloning, reset bij een gemiste dag), en de
+retentiebenchmarks voor puzzelgames (dag 1 ≈ 32%, dag 7 ≈ 12%, dag 30 ≈ 5%;
+dag 1 = begrijpt de speler het spel, dag 7 = houdt de economie het vol, dag 30
+= is er genoeg inhoud). Eén studie: de dagelijkse herinnering van 's ochtends
+naar lunchtijd verschuiven gaf +18% dag-7-retentie.
+
+Bewust niet overgenomen: levens, energie, wachttijden, koopbare boosts en
+leaderboards met vreemden. Wel overgenomen, klein en zonder betaalmuur:
+
+1. **Opdrachten van vandaag** (`Progress.questsFor/questBump`): drie kleine doelen
+   per dag, elke dag anders (los een zaak op, zonder hint, binnen drie minuten,
+   zet acht verdachten neer, vink drie verklaringen af, speel de dagelijkse zaak,
+   een campagnezaak, wijs de dader in één keer aan, drie sterren). Elk doel 100
+   punten, alle drie +200 punten en een vrije dag. Kaart op het startscherm met
+   voortgangsbalkjes; een toast op het resultaatscherm als er een klaar is.
+2. **Vrije dagen** (streak freeze, `Progress.freezes`): maximaal twee op voorraad,
+   verdiend bij elke vijf dagen streak en bij alle opdrachten van een dag. Mis
+   je één dag, dan vult een vrije dag het gat en blijft de streak staan. Nooit te
+   koop. Medaille "Gered door een vrije dag".
+3. **Streak loopt gevaar**: na 17:00 zonder gespeelde zaak wordt de streak-regel
+   op het startscherm rood ("Je streak van 6 dagen loopt vanavond af. Speel één
+   zaak."), en de herinnering zegt hetzelfde als er geen vrije dag is.
+4. **Herinnering op je eigen speeltijd**: de app onthoudt op welk uur je zaken
+   oplost en stuurt de herinnering een uur ná je gewone tijd (je bent kennelijk
+   niet geweest); zonder gegevens om 18:30.
+5. **Bijna-feedback** bij Controleer: "Bijna! Nog één verdachte staat verkeerd.
+   3 van de 4 staan al goed." in plaats van alleen "1 verdachte staat verkeerd".
+6. **Hierna** op het resultaatscherm: titel en verhaaltje van de volgende zaak,
+   plus een balkje "Deel I · Het diner, nog 7 zaken". Dat is de Candy
+   Crush-"volgend level ligt al klaar"-trek, en het Zeigarnik-effect van een
+   onaf deel.
+7. **Inhoud voor dag 30**: 192 zaken plus het eindeloze archief.
+
+Nog niet gedaan, wel kansrijk: een weekcompetitie met vrienden via Game Center
+(Duolingo's leagues zijn de sterkste sociale haak, maar vragen accounts), een
+maandelijkse opdracht met een grote beloning, en een "welkom terug"-kaart na
+een paar dagen afwezigheid.
+
 ## Openstaande punten (volgorde van voorstel)
 
 1. App Store: stappen in `store/CHECKLIST.md` (Apple-account, archiveren, uploaden).

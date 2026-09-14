@@ -390,7 +390,43 @@ const App = {
     strip.innerHTML = days.map(d => `<span class="wday${d.played ? ' played' : ''}${d.today ? ' today' : ''}${d.future ? ' future' : ''}${d.reward ? ' reward' : ''}"><i>${d.played ? '✓' : d.reward ? '🏅' : d.label[0]}</i>${d.label}</span>`).join('');
     const note = document.getElementById('streak-note');
     const today = days.find(d => d.today);
-    if (note) note.textContent = today && today.played ? 'Vandaag gespeeld. Tot morgen!' : 'Speel vandaag om je streak te houden';
+    const playedToday = !!(today && today.played);
+    const count = this.streak.count || 0, freezes = Progress.freezes();
+    // na vijf uur 's middags en nog niet gespeeld: de streak loopt gevaar
+    const risk = !playedToday && count >= 2 && new Date().getHours() >= 17;
+    if (note) {
+      note.textContent = playedToday ? 'Vandaag gespeeld. Tot morgen!'
+        : risk ? (freezes ? `Nog niet gespeeld. Een vrije dag vangt het op, maar liever niet.` : `Je streak van ${count} dagen loopt vanavond af. Speel één zaak.`)
+        : count >= 2 ? `Speel vandaag om je streak van ${count} dagen te houden` : 'Speel vandaag om je streak te houden';
+      note.classList.toggle('risk', risk);
+    }
+    const pill = document.getElementById('freeze-pill');
+    if (pill) {
+      pill.hidden = freezes === 0;
+      pill.textContent = `🧊 ${freezes} vrije ${freezes === 1 ? 'dag' : 'dagen'}`;
+      pill.title = 'Mis je een dag, dan vult een vrije dag het gat en blijft je streak staan.';
+    }
+    this.renderQuests();
+  },
+  // opdrachten van vandaag op het startscherm
+  renderQuests() {
+    const list = document.getElementById('quest-list');
+    if (!list || typeof Progress === 'undefined' || !Progress.questsFor) return;
+    const st = Progress.questState(), quests = Progress.questsFor();
+    list.innerHTML = quests.map(q => {
+      const n = Progress.questProgress(q, st), done = n >= q.goal;
+      return `<div class="quest${done ? ' done' : ''}" data-quest="${q.id}">
+        <span class="quest-icon">${done ? '✅' : q.icon}</span>
+        <span class="quest-text">${q.text}<span class="quest-bar"><i style="width:${Math.round(n / q.goal * 100)}%"></i></span></span>
+        <span class="quest-count">${done ? `+${Progress.QUEST_POINTS}` : `${n}/${q.goal}`}</span>
+      </div>`;
+    }).join('');
+    const reward = document.getElementById('quest-reward');
+    if (reward) {
+      const all = st.all || quests.every(q => Progress.questDone(q, st));
+      reward.textContent = all ? '🎁 Alles klaar! Tot morgen.' : `🎁 Alle drie: +${Progress.QUEST_ALL_POINTS} punten en een vrije dag`;
+      reward.classList.toggle('done', all);
+    }
   },
   startWeekly() {
     const w = Progress.weekly();
@@ -465,10 +501,15 @@ const App = {
     const LN = this.notif();
     if (!LN || !this.reminderEnabled()) return;
     const doneToday = this.storageGet('crimson-board-daily-done') === new Date().toDateString();
-    const at = new Date(); at.setHours(18, 30, 0, 0);
+    // een uur ná het tijdstip waarop je meestal speelt (dan ben je kennelijk niet geweest); anders 18:30
+    const usual = Progress.usualHour();
+    const at = new Date();
+    if (usual === null) at.setHours(18, 30, 0, 0); else at.setHours(Math.min(21, Math.max(9, usual + 1)), 0, 0, 0);
     if (doneToday || at <= new Date()) at.setDate(at.getDate() + 1);
-    const streak = this.streak.count || 0;
-    const body = streak > 1 ? `Je dagelijkse zaak wacht. Houd je streak van ${streak} dagen vast.` : 'Er ligt een nieuwe zaak op je bureau. Wie was alleen met het slachtoffer?';
+    const streak = this.streak.count || 0, freezes = Progress.freezes();
+    const body = streak > 1
+      ? (freezes ? `Je dagelijkse zaak wacht. Houd je streak van ${streak} dagen vast.` : `Je streak van ${streak} dagen loopt vanavond af. Eén zaak is genoeg.`)
+      : 'Er ligt een nieuwe zaak op je bureau. Wie was alleen met het slachtoffer?';
     try {
       await LN.cancel({ notifications: [{ id: 1 }] }).catch(() => {});
       await LN.schedule({ notifications: [{ id: 1, title: 'Crimson Ledger', body, schedule: { at, allowWhileIdle: true } }] });
@@ -1522,19 +1563,41 @@ const App = {
   updateStreak() {
     const today = new Date().toDateString();
     const yesterday = new Date(Date.now() - 86400000).toDateString();
+    const dayBefore = new Date(Date.now() - 2 * 86400000).toDateString();
 
     if (this.streak.lastDate === today) return; // Al gespeeld
 
+    this.freezeUsed = false;
     if (this.streak.lastDate === yesterday) {
       this.streak.count++;
+    } else if (this.streak.lastDate === dayBefore && this.streak.count > 0 && Progress.freezes() > 0) {
+      // één dag gemist: een vrije dag vult het gat en de streak blijft staan
+      Progress.setFreezes(Progress.freezes() - 1);
+      this.streak.count++;
+      this.freezeUsed = true;
+      this.storageSet('crimson-freeze-used', '1');
     } else {
       this.streak.count = 1;
     }
     this.streak.lastDate = today;
+    // elke vijf dagen op rij: een vrije dag erbij (maximaal twee op voorraad)
+    this.freezeEarned = this.streak.count > 0 && this.streak.count % 5 === 0 && Progress.addFreeze();
 
     this.storageSet('crimson-streak', JSON.stringify(this.streak));
     Progress.logDaily();
     this.updateStreakDisplay();
+  },
+  // meldingen over de streak, ná de ceremonie op het resultaatscherm
+  streakToasts() {
+    if (this.freezeUsed) { this.showToast('🧊', `Vrije dag gebruikt: je streak van ${this.streak.count} dagen is gered.`); this.freezeUsed = false; }
+    else if (this.freezeEarned) { this.showToast('🧊', `${this.streak.count} dagen op rij! Je hebt een vrije dag verdiend voor als je een dag mist.`); this.freezeEarned = false; }
+  },
+  // opdracht klaar: kort melden (de punten zijn al bijgeschreven)
+  questToast(done) {
+    const all = done.find(q => q.all), q = done.find(x => !x.all);
+    if (all) this.showToast('🎁', all.text);
+    else if (q) this.showToast(q.icon, `Opdracht klaar: ${q.text.toLowerCase()} (+${Progress.QUEST_POINTS} punten)`);
+    this.renderQuests();
   },
 
   updateStreakDisplay() {

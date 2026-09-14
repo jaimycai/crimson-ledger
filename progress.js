@@ -87,6 +87,83 @@ const Progress = {
   markWeekDone(shareText, d = new Date()) { this.set('crimson-week-done', this.weekKey(d)); if (shareText) this.set('crimson-week-share', shareText); },
   weekShare() { return this.get('crimson-week-share') || ''; },
 
+  // ── Vrije dagen (streak freeze) ───────────────────────────
+  // Nooit te koop: je verdient ze door te spelen (elke vijf dagen streak,
+  // of alle opdrachten van een dag). Mis je een dag, dan vult een vrije dag
+  // het gat en blijft je streak staan.
+  FREEZE_MAX: 2,
+  freezes() { return Math.max(0, +this.get('crimson-freezes') || 0); },
+  setFreezes(n) { const v = Math.max(0, Math.min(this.FREEZE_MAX, n)); this.set('crimson-freezes', String(v)); return v; },
+  addFreeze() { const before = this.freezes(); return this.setFreezes(before + 1) > before; },
+
+  // ── Opdrachten van vandaag ────────────────────────────────
+  // Drie kleine doelen per dag, elke dag anders. Elk doel is punten waard,
+  // alle drie samen extra punten en een vrije dag.
+  QUESTS: [
+    { id: 'zaak',      icon: '🔍', text: 'Los een zaak op',                    goal: 1, key: 'solved' },
+    { id: 'twee',      icon: '🕵️', text: 'Los twee zaken op',                  goal: 2, key: 'solved' },
+    { id: 'zonder',    icon: '💡', text: 'Los een zaak op zonder hint',        goal: 1, key: 'clean' },
+    { id: 'snel',      icon: '⚡', text: 'Los een zaak op binnen drie minuten', goal: 1, key: 'fast' },
+    { id: 'plaats',    icon: '👤', text: 'Zet acht verdachten neer',           goal: 8, key: 'placed' },
+    { id: 'vink',      icon: '✅', text: 'Vink drie verklaringen af',          goal: 3, key: 'ticked' },
+    { id: 'dagelijks', icon: '📅', text: 'Speel de dagelijkse zaak',           goal: 1, key: 'daily' },
+    { id: 'campagne',  icon: '📖', text: 'Speel een campagnezaak',             goal: 1, key: 'campaign' },
+    { id: 'eenkeer',   icon: '🎯', text: 'Wijs de dader in één keer aan',      goal: 1, key: 'firsttry' },
+    { id: 'sterren',   icon: '⭐', text: 'Haal drie sterren in een zaak',      goal: 1, key: 'threestar' }
+  ],
+  QUEST_POINTS: 100, QUEST_ALL_POINTS: 200,
+  dayNumber(d = new Date()) { return Math.floor(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()) / 86400000); },
+  // de drie opdrachten van een dag: altijd één makkelijke, plus twee die per dag wisselen
+  questsFor(d = new Date()) {
+    const n = this.dayNumber(d);
+    const first = this.QUESTS[n % 2 === 0 ? 0 : 6];           // "Los een zaak op" of "Speel de dagelijkse zaak"
+    const pool = this.QUESTS.filter(q => q.id !== first.id && q.id !== 'zaak' && q.id !== 'dagelijks' && q.id !== 'twee');
+    const a = pool[(n * 7 + 1) % pool.length];
+    let b = pool[(n * 11 + 3) % pool.length];
+    if (b.id === a.id) b = pool[(pool.indexOf(a) + 1) % pool.length];
+    return [first, a, b];
+  },
+  questState(d = new Date()) {
+    const k = this.dayKey(d), st = this.json('crimson-quests', null);
+    return st && st.day === k ? st : { day: k, prog: {}, paid: [], all: false };
+  },
+  questProgress(q, st = this.questState()) { return Math.min(q.goal, st.prog[q.key] || 0); },
+  questDone(q, st = this.questState()) { return this.questProgress(q, st) >= q.goal; },
+  // vooruitgang boeken; geeft de opdrachten terug die nu net klaar zijn
+  // (elk 100 punten; alle drie: 200 punten extra en een vrije dag, éénmalig)
+  questBump(key, n = 1, d = new Date()) {
+    const st = this.questState(d), quests = this.questsFor(d);
+    st.prog[key] = (st.prog[key] || 0) + n;
+    const done = [];
+    for (const q of quests) {
+      if (this.questDone(q, st) && !st.paid.includes(q.id)) { st.paid.push(q.id); this.addPoints(this.QUEST_POINTS); done.push(q); }
+    }
+    if (!st.all && quests.every(q => this.questDone(q, st))) {
+      st.all = true;
+      this.addPoints(this.QUEST_ALL_POINTS);
+      this.addFreeze();
+      done.push({ id: 'alle', icon: '🎁', text: `Alle opdrachten klaar: +${this.QUEST_ALL_POINTS} punten en een vrije dag`, all: true });
+    }
+    this.set('crimson-quests', JSON.stringify(st));
+    return done;
+  },
+  questsAllDone(d = new Date()) { const st = this.questState(d); return this.questsFor(d).every(q => this.questDone(q, st)); },
+
+  // ── Speeltijdstip: de herinnering volgt je gewoonte ───────
+  logPlayHour(d = new Date()) {
+    const hours = this.json('crimson-play-hours', []);
+    hours.push(d.getHours());
+    this.set('crimson-play-hours', JSON.stringify(hours.slice(-40)));
+  },
+  // het uur waarop je meestal speelt (of null als er nog weinig bekend is)
+  usualHour() {
+    const hours = this.json('crimson-play-hours', []);
+    if (hours.length < 3) return null;
+    const count = {};
+    hours.forEach(h => { count[h] = (count[h] || 0) + 1; });
+    return +Object.keys(count).sort((a, b) => count[b] - count[a] || a - b)[0];
+  },
+
   // ── Onderscheidingen ───────────────────────────────────────
   MEDALS: [
     { id: 'eerste-zaak',   icon: '🔍', title: 'Eerste zaak',           hint: 'Los je eerste zaak op',                                     test: c => c.solved >= 1 },
@@ -96,10 +173,12 @@ const Progress = {
     { id: 'zonder-hint',   icon: '💡', title: 'Tien keer zonder hint', hint: 'Los tien zaken op zonder één hint',                          test: c => c.clean >= 10 },
     { id: 'snel',          icon: '⚡', title: 'Snelle speurder',       hint: 'Los een zaak op binnen anderhalve minuut',                   test: c => c.elapsed > 0 && c.elapsed <= 90 },
     { id: 'deel',          icon: '📖', title: 'Eerste deel voltooid',  hint: 'Maak een deel van de campagne af',                           test: c => c.partsDone >= 1 },
-    { id: 'landhuis',      icon: '🏚️', title: 'Blackwood zwijgt',      hint: 'Maak alle drie de delen van Het Landhuis af',                test: c => c.worldsDone.includes('landhuis') },
-    { id: 'piraten',       icon: '🏴‍☠️', title: 'Kapitein van de Meeuw', hint: 'Maak alle drie de delen van Het Piratenschip af',           test: c => c.worldsDone.includes('piraten') },
-    { id: 'hotel',         icon: '🏨', title: 'Sleutel van Aurora',    hint: 'Maak alle drie de delen van Grand Hotel Aurora af',          test: c => c.worldsDone.includes('hotel') },
-    { id: 'ruimte',        icon: '🚀', title: 'Orion gaat uit',        hint: 'Maak alle drie de delen van Station Orion af',               test: c => c.worldsDone.includes('ruimte') },
+    { id: 'landhuis',      icon: '🏚️', title: 'Blackwood zwijgt',      hint: 'Maak alle delen van Het Landhuis af',                        test: c => c.worldsDone.includes('landhuis') },
+    { id: 'piraten',       icon: '🏴‍☠️', title: 'Kapitein van de Meeuw', hint: 'Maak alle delen van Het Piratenschip af',                   test: c => c.worldsDone.includes('piraten') },
+    { id: 'hotel',         icon: '🏨', title: 'Sleutel van Aurora',    hint: 'Maak alle delen van Grand Hotel Aurora af',                  test: c => c.worldsDone.includes('hotel') },
+    { id: 'ruimte',        icon: '🚀', title: 'Orion gaat uit',        hint: 'Maak alle delen van Station Orion af',                       test: c => c.worldsDone.includes('ruimte') },
+    { id: 'opdrachten',    icon: '🎁', title: 'Alle opdrachten',       hint: 'Maak alle drie de opdrachten van een dag af',                test: c => !!c.questsAll },
+    { id: 'vrije-dag',     icon: '🧊', title: 'Gered door een vrije dag', hint: 'Laat een vrije dag je streak redden',                     test: c => !!c.freezeUsed },
     { id: 'vlekkeloos',    icon: '⭐', title: 'Vlekkeloos',            hint: 'Haal tien keer drie sterren in de campagne',                 test: c => c.threeStars >= 10 },
     { id: 'archivaris',    icon: '📁', title: 'Archivaris',            hint: 'Los vijf archiefdossiers op',                                test: c => c.archiveCount >= 5 },
     { id: 'weekzaak',      icon: '🗓️', title: 'Zaak van de week',      hint: 'Los een zaak van de week op',                                test: c => !!c.weekDone },

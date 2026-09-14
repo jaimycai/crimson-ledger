@@ -1,5 +1,5 @@
 // ============================================================
-// CAMPAIGN — vaste reeks zaken per thema, in delen van acht, met
+// CAMPAIGN — vaste reeks zaken per thema, zes delen van acht per wereld, met
 // titel, verhaaltje, bewijsstuk (voor de vitrine) en oplopende moeilijkheid. Zaken zijn
 // deterministisch gegenereerd (vaste seed), dus iedereen speelt
 // dezelfde puzzel. Daarnaast een eindeloos archief: genummerde
@@ -181,6 +181,187 @@ const CAMPAIGN = [
     { title: 'Het lab is verzegeld',   story: 'De deur zat op slot. Aan beide kanten.', item: '🔏 Labzegel',                   difficulty: 'moeilijk',  seed: 23586 },
     { title: 'Officier Paz kiest',     story: 'Er was één stoel te weinig in de capsule.', item: '🪑 Capsulestoel',                difficulty: 'moeilijk',  seed: 23683 },
     { title: 'Orion gaat uit',         story: 'De laatste lichten. De laatste vraag.', item: '🔦 Noodlamp',                    difficulty: 'moeilijk',  seed: 23780 }
+  ]},
+
+  // ══════════════════════════════════════════════════════════════
+  // Delen IV t/m VI: elke wereld gaat verder. Tussendoor een makkelijke
+  // zaak om op adem te komen, aan het eind de zwaarste van de wereld.
+  // ══════════════════════════════════════════════════════════════
+
+  // ── Het Landhuis, verder ────────────────────────────────────
+  { key: 'landhuis-4', theme: 'landhuis', part: 4, title: 'Deel IV · Een jaar later',
+    intro: 'Een jaar na de storm wordt Blackwood verkocht. De nieuwe eigenaar nodigt de oude gasten uit. Niemand had moeten komen.',
+    outro: 'De verkoop gaat niet door. Het huis houdt zijn bewoners vast.',
+    briefing: 'Dezelfde gezichten, een jaar ouder en een stuk voorzichtiger. Lees elke verklaring twee keer: wie zegt waar hij níét was, vertelt je ook iets.',
+    cases: [
+    { title: 'De nieuwe eigenaar',     story: 'De koopakte lag klaar. De handtekening ontbrak.', item: '🖊️ Vulpen',                    difficulty: 'makkelijk', seed: 35101 },
+    { title: 'Stof op de piano',       story: 'Niemand had gespeeld. Toch stond de klep open.', item: '🎵 Pianoklep',                 difficulty: 'gemiddeld', seed: 35198 },
+    { title: 'De kelderdeur',          story: 'De deur klemde al jaren. Vannacht niet.', item: '🚪 Kelderdeur',                        difficulty: 'gemiddeld', seed: 35295 },
+    { title: 'Isabelle en het raam',   story: 'Ze zag iets in de tuin. Of dat zei ze.', item: '🔭 Verrekijker',                        difficulty: 'moeilijk',  seed: 35392 },
+    { title: 'Het koude haardvuur',    story: 'De haard was uit. De as was nog warm.', item: '🪵 Haardblok',                            difficulty: 'gemiddeld', seed: 35489 },
+    { title: 'De oude foto',           story: 'Op de foto stonden acht mensen. Eén was weggeknipt.', item: '✂️ Schaar',                difficulty: 'moeilijk',  seed: 35586 },
+    { title: 'Thomas telt het zilver', story: 'Zes lepels. Gisteren zeven.', item: '🥄 Zilveren lepel',                                  difficulty: 'moeilijk',  seed: 35683 },
+    { title: 'De sleutel van de zolder', story: 'Niemand ging naar de zolder. Behalve wie de sleutel had.', item: '🔐 Zoldersleutel', difficulty: 'moeilijk',  seed: 35780 }
+  ]},
+  { key: 'landhuis-5', theme: 'landhuis', part: 5, title: 'Deel V · De bruiloft',
+    intro: 'Rosalind trouwt op Blackwood. De hele familie komt, en met de familie komen de oude ruzies mee.',
+    outro: 'De taart is aangesneden, het feest is voorbij. De gasten vertrekken, op één na.',
+    briefing: 'Een bruiloft is druk: veel mensen, weinig kamers. Begin met wie zegt alleen te zijn geweest, dat ruimt meteen een hele kamer op.',
+    cases: [
+    { title: 'Het boeket',             story: 'Het boeket werd gevangen. Door de verkeerde.', item: '💐 Boeket',                       difficulty: 'makkelijk', seed: 45101 },
+    { title: 'De bruidstaart',         story: 'Drie lagen. De bovenste was aangeraakt.', item: '🎂 Taartschep',                        difficulty: 'gemiddeld', seed: 45198 },
+    { title: 'De ringen',              story: 'Twee ringen in een doosje. Eén doosje leeg.', item: '💍 Ringdoosje',                     difficulty: 'gemiddeld', seed: 45295 },
+    { title: 'De speech van Majoor Pike', story: 'Hij sprak tien minuten. Niemand luisterde. Eén iemand wel.', item: '📝 Speech',    difficulty: 'moeilijk',  seed: 45392 },
+    { title: 'Tante Agnes ziet alles', story: 'Vanuit haar stoel zag ze de hele hal. Zei ze.', item: '👓 Leesbril',                    difficulty: 'gemiddeld', seed: 45489 },
+    { title: 'Dansen in de hal',       story: 'De muziek speelde. Twee mensen dansten niet.', item: '🎻 Viool',                        difficulty: 'moeilijk',  seed: 45586 },
+    { title: 'De champagnekoeler',     story: 'Het ijs was gesmolten. Het glas ernaast onaangeraakt.', item: '🧊 IJsemmer',            difficulty: 'moeilijk',  seed: 45683 },
+    { title: 'De laatste dans',        story: 'Toen het licht aanging, stond er iemand te veel op de dansvloer.', item: '💃 Dansschoen', difficulty: 'moeilijk', seed: 45780 }
+  ]},
+  { key: 'landhuis-6', theme: 'landhuis', part: 6, title: 'Deel VI · Het geheim van Blackwood',
+    intro: 'Onder de trap zit een deur die op geen enkele plattegrond staat. Wat erachter ligt, verandert alles.',
+    outro: 'De deur onder de trap is dichtgemetseld. Blackwood zwijgt, en dit keer echt.',
+    briefing: 'Het laatste deel van het landhuis. Alles wat je hebt geleerd komt terug: hoeken, meubels, rijen. Zet niemand neer voordat je het zeker weet.',
+    cases: [
+    { title: 'De deur onder de trap',  story: 'Achter de trap zat een deur. Iemand wist ervan.', item: '🧱 Losse steen',                difficulty: 'makkelijk', seed: 55101 },
+    { title: 'De brief van 1912',      story: 'De brief was oud. De inkt niet.', item: '🖋️ Inktpot',                                 difficulty: 'gemiddeld', seed: 55198 },
+    { title: 'De plattegrond klopt niet', story: 'Eén kamer was groter dan op de tekening.', item: '📐 Meetlint',                     difficulty: 'moeilijk',  seed: 55295 },
+    { title: 'Dr. Cross onderzoekt',   story: 'De dokter vond het als eerste. Te snel.', item: '🩺 Stethoscoop',                       difficulty: 'moeilijk',  seed: 55392 },
+    { title: 'Clara zwijgt',           story: 'Ze wist wie het was. Ze zei het tegen niemand.', item: '🤫 Zakdoek',                    difficulty: 'gemiddeld', seed: 55489 },
+    { title: 'De verborgen kamer',     story: 'De kamer had geen raam. Toch scheen er licht.', item: '🕯️ Kandelaar',                  difficulty: 'moeilijk',  seed: 55586 },
+    { title: 'Marcus bekent',          story: 'De butler bekende alles. Behalve de moord.', item: '🧾 Bekentenis',                     difficulty: 'moeilijk',  seed: 55683 },
+    { title: 'Blackwood, het einde',   story: 'De laatste kamer. De laatste naam.', item: '🗝️ Laatste sleutel',                       difficulty: 'moeilijk',  seed: 55780 }
+  ]},
+
+  // ── Het Piratenschip, verder ────────────────────────────────
+  { key: 'piraten-4', theme: 'piraten', part: 4, title: 'Deel IV · De nieuwe kapitein',
+    intro: 'Roodbaard neemt het roer. De bemanning is het er niet mee eens. Op zee blijft niets lang stil.',
+    outro: 'De Meeuw heeft een kapitein. Voor hoelang, weet niemand.',
+    briefing: 'Een nieuwe kapitein en een oude bemanning. Verklaringen met "direct naast" zijn goud waard op zo\'n klein schip: elk vakje telt.',
+    cases: [
+    { title: 'Het roer wisselt',       story: 'Roodbaard nam het roer. Iemand liet het los.', item: '🛞 Scheepsroer',                 difficulty: 'makkelijk', seed: 37101 },
+    { title: 'De kaart van Nik',       story: 'Scheepsjongen Nik tekende een kaart van een plek die niet bestond.', item: '🖍️ Krijtje', difficulty: 'gemiddeld', seed: 37198 },
+    { title: 'Kok Ada mist een mes',   story: 'In de kombuis lagen elf messen. Het hoorden er twaalf te zijn.', item: '🔪 Koksmes',   difficulty: 'gemiddeld', seed: 37295 },
+    { title: 'Het lek',                story: 'Het water kwam binnen. Precies waar niemand keek.', item: '🪣 Emmer',                   difficulty: 'moeilijk',  seed: 37392 },
+    { title: 'Juffrouw Lark luistert', story: 'Ze hoorde stemmen in het ruim. Twee stemmen.', item: '🐚 Hoorschelp',                  difficulty: 'gemiddeld', seed: 37489 },
+    { title: 'Het gevecht om de kist', story: 'Twee mensen wilden de kist. Eén kreeg hem.', item: '🔒 Kistslot',                      difficulty: 'moeilijk',  seed: 37586 },
+    { title: 'De nacht zonder maan',   story: 'Het was aardedonker. Iemand kende de weg.', item: '🌑 Gedoofde lantaarn',               difficulty: 'moeilijk',  seed: 37683 },
+    { title: 'Roodbaard aan het roer', story: 'De kapitein stond aan het roer. Achter hem: niemand. Zei hij.', item: '🎖️ Kapiteinsknoop', difficulty: 'moeilijk', seed: 37780 }
+  ]},
+  { key: 'piraten-5', theme: 'piraten', part: 5, title: 'Deel V · Het spookschip',
+    intro: 'In de mist ligt een schip zonder bemanning. De Meeuw gaat langszij. Iemand had beter thuis kunnen blijven.',
+    outro: 'Het spookschip verdwijnt in de mist. De Meeuw vaart verder, één man lichter.',
+    briefing: 'Mist en een leeg schip: iedereen is zenuwachtig en praat te veel. Streep eerst de lege ruimtes weg, dan wordt de rest vanzelf klein.',
+    cases: [
+    { title: 'Het logboek van de ander', story: 'Het laatste stuk was in een bekend handschrift.', item: '📖 Vreemd logboek',          difficulty: 'makkelijk', seed: 47101 },
+    { title: 'Het schip in de mist',   story: 'Geen bemanning, geen vlag, één voetstap.', item: '🌫️ Mistlamp',                       difficulty: 'gemiddeld', seed: 47198 },
+    { title: 'De lege hangmat',        story: 'Alle hangmatten hingen leeg. Eén was nog warm.', item: '🛏️ Hangmat',                   difficulty: 'gemiddeld', seed: 47295 },
+    { title: 'Stuurman Kwint verdwaalt', story: 'Op een schip dat hij niet kende, vond hij de weg te goed.', item: '🧭 Tweede kompas', difficulty: 'moeilijk', seed: 47392 },
+    { title: 'Het lied uit het ruim',  story: 'Iemand zong. Niemand gaf het toe.', item: '🎶 Scheepslied',                             difficulty: 'gemiddeld', seed: 47489 },
+    { title: 'Dokter Sal en de kist',  story: 'Medicijnen voor een bemanning die er niet was.', item: '💊 Pillendoos',                  difficulty: 'moeilijk',  seed: 47586 },
+    { title: 'Bo en het kruit',        story: 'Het kruit was droog. Op één vat na.', item: '🧨 Kruitvat',                              difficulty: 'moeilijk',  seed: 47683 },
+    { title: 'De mist trekt op',       story: 'Toen de mist optrok, lag er iemand op het dek van de Meeuw.', item: '⚓ Roestig anker', difficulty: 'moeilijk', seed: 47780 }
+  ]},
+  { key: 'piraten-6', theme: 'piraten', part: 6, title: 'Deel VI · Zwartoogs schat',
+    intro: 'De echte schat van Zwartoog ligt niet op een eiland. Hij ligt aan boord. En iedereen weet nu waar.',
+    outro: 'De schat is verdeeld. De Meeuw is van de bemanning, en de bemanning van de zee.',
+    briefing: 'De laatste zaken op de Meeuw en de moeilijkste. Verklaringen over rijen en kolommen lopen dwars door het schip: gebruik het potlood.',
+    cases: [
+    { title: 'De dubbele bodem',       story: 'Onder het ruim lag nog een ruim.', item: '🪵 Losse plank',                              difficulty: 'makkelijk', seed: 57101 },
+    { title: 'Scheepsjongen Nik zwijgt', story: 'Hij had alles gezien. Hij was pas twaalf.', item: '🪀 Jojo',                          difficulty: 'gemiddeld', seed: 57198 },
+    { title: 'Het gouden oog',         story: 'Zwartoogs ooglap was van goud. Nu van niemand.', item: '🪙 Gouden ooglap',               difficulty: 'moeilijk',  seed: 57295 },
+    { title: 'De verdeling',           story: 'Acht delen. Zeven mensen aan tafel.', item: '⚖️ Weegschaal',                            difficulty: 'moeilijk',  seed: 57392 },
+    { title: 'Het mes van Ada',        story: 'Het mes was terug. Schoon.', item: '🧽 Schoon mes',                                      difficulty: 'gemiddeld', seed: 57489 },
+    { title: 'Muiterij, deel drie',    story: 'De derde keer is de gevaarlijkste.', item: '🏴 Zwarte doek',                             difficulty: 'moeilijk',  seed: 57586 },
+    { title: 'De laatste wacht',       story: 'Wie de laatste wacht had, zag de zon niet meer opkomen.', item: '🕯️ Wachtkaars',        difficulty: 'moeilijk',  seed: 57683 },
+    { title: 'Land van Zwartoog',      story: 'De kust van de kapitein. Het einde van de reis.', item: '🏝️ Kaart van thuis',          difficulty: 'moeilijk',  seed: 57780 }
+  ]},
+
+  // ── Grand Hotel Aurora, verder ──────────────────────────────
+  { key: 'hotel-4', theme: 'hotel', part: 4, title: 'Deel IV · De heropening',
+    intro: 'Grand Hotel Aurora gaat weer open. Nieuwe eigenaar, oude gasten, dezelfde gangen.',
+    outro: 'De heropening is een succes. Op één recensie na.',
+    briefing: 'Het hotel is opnieuw ingericht, dus bekijk de plattegrond goed voordat je begint. Tik op meubels waar je niet zeker van bent.',
+    cases: [
+    { title: 'Het lint wordt doorgeknipt', story: 'De schaar was scherp. De eigenaar niet meer.', item: '✂️ Feestschaar',              difficulty: 'makkelijk', seed: 39101 },
+    { title: 'Kamer 1',                story: 'De eerste gast, de eerste kamer, het eerste probleem.', item: '🔑 Sleutel 1',            difficulty: 'gemiddeld', seed: 39198 },
+    { title: 'Gravin Delacroix klaagt', story: 'Het bed was te hard. Het alibi te zacht.', item: '🛎️ Klachtenbel',                    difficulty: 'gemiddeld', seed: 39295 },
+    { title: 'De nieuwe kok',          story: 'Chef Rosa had hulp. De hulp had haast.', item: '🍳 Koekenpan',                          difficulty: 'moeilijk',  seed: 39392 },
+    { title: 'De lift heeft haast',    story: 'De lift ging naar boven. Niemand had gedrukt.', item: '⬆️ Liftpijl',                    difficulty: 'gemiddeld', seed: 39489 },
+    { title: 'Butler Ames herinnert zich', story: 'Hij herinnerde zich elke gast. Op één na.', item: '📒 Gastenlijst',                difficulty: 'moeilijk',  seed: 39586 },
+    { title: 'De spiegelzaal',         story: 'Honderd spiegels, honderd getuigen, één leugen.', item: '🪞 Spiegelscherf',              difficulty: 'moeilijk',  seed: 39683 },
+    { title: 'De eerste recensie',     story: 'Vijf sterren. Geschreven door iemand die nooit had ingecheckt.', item: '⭐ Recensiekaart', difficulty: 'moeilijk', seed: 39780 }
+  ]},
+  { key: 'hotel-5', theme: 'hotel', part: 5, title: 'Deel V · Het congres',
+    intro: 'Driehonderd congresgangers, één spreker die nooit het podium haalt.',
+    outro: 'Het congres is afgelopen. De aanwezigheidslijst klopt niet meer.',
+    briefing: 'Veel gasten betekent veel verklaringen over twee mensen tegelijk. Zet altijd eerst degene vast van wie je het meeste weet.',
+    cases: [
+    { title: 'Koffiepauze',            story: 'Tweehonderd kopjes. Eén ervan met iets extra.', item: '☕ Congreskopje',                 difficulty: 'makkelijk', seed: 49101 },
+    { title: 'De naambadge',           story: 'De badge lag op de grond. De naam klopte niet.', item: '🏷️ Naambadge',                  difficulty: 'gemiddeld', seed: 49198 },
+    { title: 'De verkeerde zaal',      story: 'Zaal B was leeg. Volgens het programma niet.', item: '🚪 Zaalbordje',                    difficulty: 'gemiddeld', seed: 49295 },
+    { title: 'Journalist Bram noteert', story: 'Hij schreef alles op. Ook wat hij niet had gezien.', item: '🗒️ Notitieblok',          difficulty: 'moeilijk',  seed: 49392 },
+    { title: 'Portier Jansen slaapt',  story: 'Voor het eerst in dertig jaar. Zei hij.', item: '😴 Portiersstoel',                      difficulty: 'gemiddeld', seed: 49489 },
+    { title: 'Danseres Lou treedt op', story: 'Het optreden duurde vier minuten. Precies lang genoeg.', item: '🩰 Balletschoen',        difficulty: 'moeilijk',  seed: 49586 },
+    { title: 'De microfoon staat aan', story: 'Iedereen hoorde het. Niemand begreep het.', item: '🎙️ Microfoon',                      difficulty: 'moeilijk',  seed: 49683 },
+    { title: 'De slotspeech',          story: 'De spreker kwam niet. De zaal wachtte.', item: '📣 Spreekgestoelte',                     difficulty: 'moeilijk',  seed: 49780 }
+  ]},
+  { key: 'hotel-6', theme: 'hotel', part: 6, title: 'Deel VI · De laatste nacht van Aurora',
+    intro: 'Het hotel sluit voorgoed. Het personeel blijft één nacht langer. Eén nacht te lang.',
+    outro: 'De lichten gaan uit. Grand Hotel Aurora is geschiedenis, en jij kent elke bladzijde.',
+    briefing: 'De laatste nacht en de moeilijkste zaken van het hotel. Hoeken, muren, rijen: alles telt. Neem de tijd, de sterren lopen niet weg.',
+    cases: [
+    { title: 'De sleutels worden ingeleverd', story: 'Alle sleutels aan het bord. Eén haak leeg.', item: '🪝 Sleutelhaak',             difficulty: 'makkelijk', seed: 59101 },
+    { title: 'De laatste maaltijd',    story: 'Chef Rosa kookte voor acht. Zeven aten.', item: '🍽️ Zilveren cloche',                  difficulty: 'gemiddeld', seed: 59198 },
+    { title: 'Het lege zwembad',       story: 'Het water was weg. Wat op de bodem lag niet.', item: '🏊 Zwembadtegel',                  difficulty: 'moeilijk',  seed: 59295 },
+    { title: 'Mevrouw Sato pakt in',   story: 'Twee koffers. Eén ervan niet van haar.', item: '🧳 Tweede koffer',                       difficulty: 'moeilijk',  seed: 59392 },
+    { title: 'Pianist Milo speelt uit', story: 'Het laatste lied. De laatste noot kwam niet.', item: '🎼 Laatste partituur',           difficulty: 'gemiddeld', seed: 59489 },
+    { title: 'De kluis is leeg',       story: 'De kluis stond open. De code was veranderd.', item: '🔓 Open kluis',                     difficulty: 'moeilijk',  seed: 59586 },
+    { title: 'Het licht in kamer 404', story: 'De kamer die niet bestond, brandde licht.', item: '💡 Peertje',                          difficulty: 'moeilijk',  seed: 59683 },
+    { title: 'Aurora dooft',           story: 'De hoofdschakelaar. De laatste hand.', item: '🔌 Hoofdschakelaar',                       difficulty: 'moeilijk',  seed: 59780 }
+  ]},
+
+  // ── Station Orion, verder ───────────────────────────────────
+  { key: 'ruimte-4', theme: 'ruimte', part: 4, title: 'Deel IV · Orion herstart',
+    intro: 'Een nieuwe bemanning neemt Station Orion in gebruik. De oude logboeken zijn gewist. Niet grondig genoeg.',
+    outro: 'Het station draait weer. De logboeken blijven voortaan bewaard.',
+    briefing: 'Orion is opnieuw in bedrijf en de modules zijn anders ingedeeld. Lege modules eerst wegstrepen, dat scheelt de helft van het werk.',
+    cases: [
+    { title: 'De herstart',            story: 'Alle systemen online. Eén bemanningslid offline.', item: '🔘 Startknop',                  difficulty: 'makkelijk', seed: 33101 },
+    { title: 'Het gewiste logboek',    story: 'Gewist, maar niet weg.', item: '💾 Herstelde data',                                       difficulty: 'gemiddeld', seed: 33198 },
+    { title: 'Bioloog Wren kweekt',    story: 'De kweekbak groeide te snel. Net als de verdenking.', item: '🧫 Petrischaal',            difficulty: 'gemiddeld', seed: 33295 },
+    { title: 'Zwaartekracht uit',      story: 'Twee minuten zonder zwaartekracht. Alles zweefde. Behalve de waarheid.', item: '🎈 Zwevende pen', difficulty: 'moeilijk', seed: 33392 },
+    { title: 'Kok Dima proeft',        story: 'Het rantsoen smaakte anders. Volgens één iemand.', item: '🥫 Rantsoenblik',              difficulty: 'gemiddeld', seed: 33489 },
+    { title: 'De zonnepanelen',        story: 'Het station kantelde naar de zon. Iemand had dat bevolen.', item: '☀️ Zonnepaneel',     difficulty: 'moeilijk',  seed: 33586 },
+    { title: 'Kadet Yuki dubbelt',     story: 'Volgens het rooster was Yuki op twee plekken tegelijk.', item: '📅 Dienstrooster',      difficulty: 'moeilijk',  seed: 33683 },
+    { title: 'Het nieuwe commando',    story: 'De nieuwe commandant hield het één week vol.', item: '🎖️ Commandantsspeld',             difficulty: 'moeilijk',  seed: 33780 }
+  ]},
+  { key: 'ruimte-5', theme: 'ruimte', part: 5, title: 'Deel V · De vreemde capsule',
+    intro: 'Een capsule koppelt aan zonder toestemming. Binnen: niemand. Buiten: een bemanning die opeens veel te vertellen heeft.',
+    outro: 'De capsule wordt losgekoppeld en weggeduwd. Wat erin zat, weet alleen de bemanning.',
+    briefing: 'Een vreemde capsule en zenuwachtige mensen. Verklaringen met "links van" en "hoger dan" gelden voor het hele station, niet voor één module.',
+    cases: [
+    { title: 'Leeg, zei men',          story: 'De capsule was leeg. Iemand was erin geweest.', item: '👣 Stofvoetstap',                 difficulty: 'makkelijk', seed: 43101 },
+    { title: 'Het koppelsignaal',      story: 'De capsule meldde zich beleefd. Daarna niet meer.', item: '📡 Koppelantenne',            difficulty: 'gemiddeld', seed: 43198 },
+    { title: 'De koude module',        story: 'De verwarming viel uit. In precies één module.', item: '🌡️ Thermometer',               difficulty: 'gemiddeld', seed: 43295 },
+    { title: 'Ingenieur Sol opent de sluis', story: 'Zonder toestemming. Met een goede reden, zei ze.', item: '🔧 Sluissleutel',       difficulty: 'moeilijk',  seed: 43392 },
+    { title: 'Officier Paz beveelt',   story: 'Het bevel was duidelijk. Niemand voerde het uit.', item: '📜 Bevelschrift',              difficulty: 'gemiddeld', seed: 43489 },
+    { title: 'Piloot Reyes berekent',  story: 'De koers klopte. De tijd niet.', item: '🧮 Koersberekening',                             difficulty: 'moeilijk',  seed: 43586 },
+    { title: 'Het pakket',             story: 'In de capsule lag een pakket. Aan één naam gericht.', item: '📦 Pakket',                 difficulty: 'moeilijk',  seed: 43683 },
+    { title: 'Loskoppelen',            story: 'De capsule ging weg. Met iets erin dat er eerst niet was.', item: '🔗 Koppelstuk',      difficulty: 'moeilijk',  seed: 43780 }
+  ]},
+  { key: 'ruimte-6', theme: 'ruimte', part: 6, title: 'Deel VI · De laatste omloop',
+    intro: 'Orion wordt opgegeven. Nog één omloop om de aarde, dan de capsule naar huis. Iedereen wil mee. Niet iedereen kan.',
+    outro: 'De capsule landt. Station Orion verbrandt in de dampkring, met al zijn geheimen. Behalve die van jou.',
+    briefing: 'De allerlaatste zaken van de campagne en de zwaarste. Alles komt samen. Wie alleen was in een module sluit iedereen daar uit; begin daar.',
+    cases: [
+    { title: 'De laatste omloop',      story: 'Negentig minuten om de aarde. Genoeg tijd.', item: '🌍 Aardefoto',                       difficulty: 'makkelijk', seed: 53101 },
+    { title: 'Zeven stoelen',          story: 'De capsule had zeven stoelen. Acht namen op de lijst.', item: '🪑 Zevende stoel',        difficulty: 'gemiddeld', seed: 53198 },
+    { title: 'Dr. Nkemelu tekent',     story: 'Het rapport was ondertekend. Twee keer.', item: '✒️ Handtekening',                       difficulty: 'moeilijk',  seed: 53295 },
+    { title: 'Botanist Tamsin snoeit', story: 'De kas werd opgeruimd. Grondig.', item: '🌿 Snoeischaar',                                difficulty: 'moeilijk',  seed: 53392 },
+    { title: 'De zuurstofmeter',       story: 'Genoeg zuurstof voor iedereen. Iets minder voor één iemand.', item: '🫧 Zuurstofmeter', difficulty: 'gemiddeld', seed: 53489 },
+    { title: 'Het laatste bericht naar huis', story: 'Het bericht was kort. Het was niet van de commandant.', item: '📨 Laatste bericht', difficulty: 'moeilijk', seed: 53586 },
+    { title: 'Koppeling om 04:00',     story: 'De capsule wachtte. Eén bemanningslid ook, ergens anders.', item: '⏱️ Stopwatch',        difficulty: 'moeilijk',  seed: 53683 },
+    { title: 'Orion verbrandt',        story: 'De laatste vraag boven de laatste dampkring.', item: '🔥 Hitteschild',                    difficulty: 'moeilijk',  seed: 53780 }
   ]}
 ];
 

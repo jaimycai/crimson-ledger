@@ -51,9 +51,18 @@
       <div class="home-card streak-card" id="menu-streak">
         <div class="streak-head">
           <span class="streak-title">🔥 <span id="streak-count">0</span> dagen streak</span>
+          <span class="freeze-pill" id="freeze-pill" hidden></span>
           <span class="streak-note" id="streak-note">Speel vandaag om je streak te houden</span>
         </div>
         <div class="week-strip" id="week-strip"></div>
+      </div>
+
+      <div class="home-card quest-card" id="menu-quests">
+        <div class="quest-head">
+          <span class="ribbon ribbon-gold">Opdrachten van vandaag</span>
+          <span class="quest-reward" id="quest-reward"></span>
+        </div>
+        <div class="quest-list" id="quest-list"></div>
       </div>
 
       <div class="home-card week-card">
@@ -237,7 +246,7 @@
       </div>
       <p class="board-casetext" id="board-casetext"></p>
       <div class="board-tip" id="board-tip" hidden>
-        <span>Tik een verdachte, dan een vakje. Alleen de moordenaar was in de kamer van het slachtoffer.</span>
+        <span>Sleep een verdachte naar een vakje, of tik eerst de verdachte en dan het vakje. Alleen de moordenaar was in de kamer van het slachtoffer.</span>
         <button type="button" id="btn-board-tip-close" aria-label="Sluiten">✕</button>
       </div>
       <div class="tutorial-coach board-coach" id="board-coach" hidden>
@@ -332,6 +341,13 @@
         <div class="stat-row"><span class="stat-label">Pogingen</span><span class="stat-value" id="stat-attempts">1</span></div>
       </div>
 
+      <div class="results-next" id="results-next" hidden>
+        <span class="results-next-label">Hierna</span>
+        <span class="results-next-title" id="results-next-title"></span>
+        <span class="results-next-story" id="results-next-story"></span>
+        <span class="results-next-bar" id="results-next-bar"></span>
+      </div>
+
       <div class="results-footer">
         <button class="btn btn-primary btn-block" id="btn-next-case" hidden>▶ Volgende zaak</button>
         <button class="btn btn-secondary btn-block" id="btn-remind" hidden>🔔 Herinner me morgen aan de dagelijkse zaak</button>
@@ -350,7 +366,7 @@
       <div class="how-steps">
         <div class="how-step">
           <span class="how-num">1</span>
-          <div><strong>Plaats de verdachten</strong><br>Tik een verdachte, dan een vakje op de plattegrond. Twijfel je? Met <em>Potlood</em> zet je een stipje op vakjes waar iemand zou kúnnen staan; <em>Gum</em> haalt stipjes en verdachten weer weg.</div>
+          <div><strong>Plaats de verdachten</strong><br>Sleep een verdachte naar een vakje op de plattegrond, of tik eerst de verdachte en dan het vakje. Sleep iemand van het bord af om hem weg te halen. Twijfel je? Met <em>Potlood</em> zet je een stipje op vakjes waar iemand zou kúnnen staan; <em>Gum</em> haalt stipjes en verdachten weer weg.</div>
         </div>
         <div class="how-step">
           <span class="how-num">2</span>

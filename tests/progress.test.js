@@ -45,12 +45,12 @@ check(Progress.checkMedals(base).length === 0, 'zonder voortgang geen medaille')
 let won = Progress.checkMedals({ ...base, solved: 1, elapsed: 60 });
 check(won.map(m => m.id).sort().join() === 'eerste-zaak,snel', 'eerste zaak + snelle speurder: ' + won.map(m => m.title).join(', '));
 check(Progress.checkMedals({ ...base, solved: 1, elapsed: 60 }).length === 0 && Progress.medalCount() === 2, 'een medaille krijg je maar één keer');
-won = Progress.checkMedals({ ...base, streak: 7, clean: 10, partsDone: 1, worldsDone: ['landhuis'], threeStars: 10, archiveCount: 5, weekFull: true, weekDone: true, evidence: 24, points: 5000, rankTitle: 'Meesterdetective' });
+won = Progress.checkMedals({ ...base, streak: 7, clean: 10, partsDone: 1, worldsDone: ['landhuis'], threeStars: 10, archiveCount: 5, weekFull: true, weekDone: true, evidence: 24, points: 5000, rankTitle: 'Meesterdetective', questsAll: true, freezeUsed: true });
 check(won.length === Progress.MEDALS.length - 5 && !won.some(m => ['piraten', 'hotel', 'ruimte'].includes(m.id)), `alle overige ${won.length} medailles behaald in één keer (alleen de drie andere werelden niet)`);
 check(Progress.formatDate('2026-01-12') === '12 jan 2026', 'datum in het Nederlands');
 
 // vitrine
-check(Progress.evidence('landhuis').length === 24 && Progress.evidence('landhuis').every(e => !e.got && e.icon && e.name), 'vitrine landhuis: 24 lege plekken');
+check(Progress.evidence('landhuis').length === 48 && Progress.evidence('landhuis').every(e => !e.got && e.icon && e.name), 'vitrine landhuis: 48 lege plekken');
 Campaign.save('landhuis', 0, 3);
 check(Progress.evidence('landhuis')[0].got && Progress.evidence('landhuis')[0].name === 'Wijnglas' && Progress.evidenceCount() === 1, 'na zaak 1 staat het wijnglas in de vitrine');
 
@@ -67,6 +67,30 @@ check(Mentor.reaction(false, 0) === 'Ik? Nooit!' && Mentor.reaction(true, 0).inc
 // verklaringen in de ik-vorm
 const st = p.clues.map(c => FloorPlan.statement(c, p));
 check(st.every(x => x.text.length > 5) && st.some(x => /^Ik /.test(x.text) || /en ik /.test(x.text)), 'verklaringen in de ik-vorm: ' + st[0].text);
+
+// ── Opdrachten van vandaag ──
+const d1 = new Date(2026, 8, 14), d2 = new Date(2026, 8, 15);
+const q1 = Progress.questsFor(d1), q2 = Progress.questsFor(d2);
+check(q1.length === 3 && new Set(q1.map(q => q.id)).size === 3 && ['zaak', 'dagelijks'].includes(q1[0].id), 'drie verschillende opdrachten, de eerste is makkelijk: ' + q1.map(q => q.id).join(', '));
+check(q1.map(q => q.id).join() !== q2.map(q => q.id).join() && Progress.questsFor(d1).map(q => q.id).join() === q1.map(q => q.id).join(), 'opdrachten wisselen per dag en zijn vast per dag');
+const p0 = Progress.points();
+let done = Progress.questBump('solved', 1, d1);
+const solvedQ = q1.find(q => q.key === 'solved');
+check((solvedQ ? done.length === 1 && done[0].id === solvedQ.id && Progress.points() === p0 + Progress.QUEST_POINTS : done.length === 0), 'zaak opgelost: de bijbehorende opdracht is klaar en betaalt 100 punten');
+done = Progress.questBump('solved', 1, d1);
+check(done.length === 0 || !done.some(x => solvedQ && x.id === solvedQ.id), 'een klare opdracht betaalt niet twee keer');
+const f0 = Progress.freezes(), pts = Progress.points();
+q1.forEach(q => Progress.questBump(q.key, q.goal, d1));
+check(Progress.questsAllDone(d1) && Progress.questState(d1).all && Progress.freezes() === f0 + 1 && Progress.points() >= pts + Progress.QUEST_ALL_POINTS, 'alle drie klaar: extra punten en een vrije dag');
+check(!Progress.questsAllDone(d2) && Progress.questState(d2).paid.length === 0, 'de volgende dag begint schoon');
+// ── Vrije dagen ──
+Progress.setFreezes(0);
+check(Progress.addFreeze() && Progress.addFreeze() && !Progress.addFreeze() && Progress.freezes() === Progress.FREEZE_MAX, 'maximaal twee vrije dagen op voorraad');
+Progress.setFreezes(0);
+// ── Speeltijdstip ──
+check(Progress.usualHour() === null, 'zonder speeldata geen gewoon speeluur');
+[19, 19, 8, 19, 12].forEach(h => { const d = new Date(); d.setHours(h); Progress.logPlayHour(d); });
+check(Progress.usualHour() === 19, 'gewone speeltijd = het uur dat het vaakst voorkomt');
 
 console.log(failures === 0 ? 'ALLE PROGRESS CHECKS PASSED' : `${failures} FAILURES`);
 process.exit(failures === 0 ? 0 : 1);
