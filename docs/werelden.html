@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1200">
+<title>Crimson Ledger · Werelden</title>
+<link rel="stylesheet" href="../style.css">
+<script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async></script>
+<style>
+  body { margin: 0; padding: 32px; background: #FAF5EF; font-family: 'Inter', system-ui, sans-serif; color: #2C1810; }
+  h1 { font-family: 'Playfair Display', Georgia, serif; font-size: 34px; margin: 0 0 4px; color: #8B2E1C; }
+  .sub { color: #6B5747; margin: 0 0 24px; }
+  .grid { display: grid; grid-template-columns: repeat(2, 540px); gap: 28px; }
+  .world { background: #fff; border: 2px solid #1A1108; border-radius: 18px; overflow: hidden; }
+  .world.concept { border-style: dashed; }
+  .banner { aspect-ratio: 393 / 200; overflow: hidden; border-bottom: 2px solid #1A1108; background: #E9D8C4; position: relative; }
+  .banner .mapart { width: 100%; height: 100%; display: block; }
+  .banner .placeholder { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 28px; color: #fff; text-shadow: 0 2px 4px rgba(0,0,0,0.4); }
+  .body { padding: 16px 18px 18px; }
+  .head { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
+  .head h2 { font-family: 'Playfair Display', serif; font-size: 24px; margin: 0; }
+  .tag { font-size: 11px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; padding: 3px 8px; border-radius: 999px; background: #B8955C; color: #fff; }
+  .tag.new { background: #2F6F6D; } .tag.later { background: #6B5747; }
+  .tagline { font-style: italic; color: #6B5747; margin: 4px 0 12px; }
+  .row { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 10px; }
+  .sw { width: 22px; height: 22px; border-radius: 6px; border: 1.5px solid #1A1108; }
+  .cast { display: flex; gap: 8px; flex-wrap: wrap; }
+  .cast span { display: flex; flex-direction: column; align-items: center; gap: 3px; width: 58px; font-size: 10px; text-align: center; line-height: 1.1; }
+  .cast i { width: 44px; height: 44px; border-radius: 50%; overflow: hidden; border: 2px solid #1A1108; display: block; }
+  .cast i .av { width: 100%; height: 100%; }
+  .furn { display: flex; gap: 6px; flex-wrap: wrap; }
+  .furn span { display: flex; flex-direction: column; align-items: center; gap: 2px; width: 62px; font-size: 10px; text-align: center; }
+  .furn i { width: 40px; height: 40px; display: block; } .furn i .av { width: 100%; height: 100%; }
+  .rooms { font-size: 11px; color: #4B3A2E; display: flex; flex-wrap: wrap; gap: 4px; }
+  .rooms b { padding: 2px 7px; border-radius: 6px; border: 1px solid #1A1108; font-weight: 600; }
+  h4 { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: #9C7A3C; margin: 10px 0 6px; }
+  .parts { font-size: 11px; color: #4B3A2E; line-height: 1.5; }
+</style>
+</head>
+<body>
+<h1>Crimson Ledger · Werelden</h1>
+<p class="sub">Zes gebouwde werelden (elk zes delen van acht zaken) en twee ideeën voor daarna. Papier-en-inkt-stijl, donkere omlijning, pastelvlakken.</p>
+<div class="grid" id="grid"></div>
+<script src="../avatars.js"></script>
+<script src="../themes.js"></script>
+<script src="../campaign.js"></script>
+<script src="../mapart.js"></script>
+<script>
+  const concepts = [
+    { id: 'circus', icon: '🎪', title: 'Het Circus', tagline: 'De voorstelling is voorbij, de tent gaat dicht, en de directeur ligt in de piste.',
+      accent: '#B3261E', ring: '#F5D67A', rooms: ['Piste', 'Kleedwagen', 'Dierentent', 'Kassa', 'Kantine', 'Werkplaats', 'Tribune', 'Directiewagen'],
+      cast: ['Directeur Zano', 'Clown Pippo', 'Trapezeartiest Mira', 'Leeuwentemmer Kurt', 'Waarzegster Zora', 'Sterke Man Boris', 'Kaartverkoper Els', 'Jongleur Teo'],
+      furniture: ['een kanon', 'een trapeze', 'een spiegelkast', 'een popcornkar', 'een leeuwenkooi'], floor: 'zaagsel', parts: 'De laatste voorstelling · De verdwenen leeuw · Het spiegelpaleis · Op tournee · De nieuwe directeur · De tent gaat dicht' },
+    { id: 'skihut', icon: '🏔️', title: 'De Skihut', tagline: 'Een lawine sluit het dal af. Zeven gasten, één kachel, en een gastheer die niet meer opwarmt.',
+      accent: '#3E5A6E', ring: '#DCEBF0', rooms: ['Gelagkamer', 'Keuken', 'Slaapzaal', 'Skiberging', 'Sauna', 'Terras', 'Kelder', 'Zolder'],
+      cast: ['Gastheer Anton', 'Skilerares Mieke', 'Bergredder Tom', 'Toeriste Hana', 'Kok Luigi', 'Fotograaf Sven', 'Dokter Greet', 'Jongen Kai'],
+      furniture: ['een kachel', 'een slee', 'een skirek', 'een geweitak', 'een fondue'], floor: 'houten balken', parts: 'De lawine · Sneeuwblind · De nacht van de storm · Dooi · Het skifeest · De laatste afdaling' }
+  ];
+  const el = document.getElementById('grid');
+  let html = '';
+  Themes.list().forEach(t => {
+    const isNew = t.id === 'museum' || t.id === 'trein';
+    const parts = Campaign.chaptersFor(t.id).map(ch => `${ch.icon} ${ch.title.split(' · ')[1]}`).join(' · ');
+    html += `<section class="world" style="--wa:${t.map.accent};--wr:${t.map.ring}">
+      <div class="banner">${MapArt.banner(t.id)}</div>
+      <div class="body">
+        <div class="head"><h2>${t.icon} ${t.title}</h2><span class="tag${isNew ? ' new' : ''}">${isNew ? 'Nieuw' : 'Gebouwd'} · vloer: ${t.floor}</span></div>
+        <p class="tagline">${t.tagline}</p>
+        <div class="row"><span class="sw" style="background:${t.map.accent}"></span><span class="sw" style="background:${t.map.ring}"></span>${t.rooms.slice(0, 8).map(r => `<span class="sw" style="background:${r.color}" title="${r.name}"></span>`).join('')}</div>
+        <h4>Verdachten · slachtoffer: ${t.victimName}</h4>
+        <div class="cast">${t.suspects.map((s, i) => `<span><i>${Avatars.suspect(s, i)}</i>${s.label}</span>`).join('')}</div>
+        <h4>Meubels</h4>
+        <div class="furn">${t.furniture.map(f => `<span><i>${Avatars.furniture(f.id)}</i>${f.nl}</span>`).join('')}</div>
+        <h4>${t.roomWordPlural}</h4>
+        <div class="rooms">${t.rooms.map(r => `<b style="background:${r.color}">${r.name}</b>`).join('')}</div>
+        <h4>Delen</h4>
+        <div class="parts">${parts}</div>
+      </div></section>`;
+  });
+  concepts.forEach(c => {
+    html += `<section class="world concept" style="--wa:${c.accent};--wr:${c.ring}">
+      <div class="banner" style="background:${c.accent}"><div class="placeholder">${c.icon} ${c.title} · banner nog te tekenen</div></div>
+      <div class="body">
+        <div class="head"><h2>${c.icon} ${c.title}</h2><span class="tag later">Idee · vloer: ${c.floor}</span></div>
+        <p class="tagline">${c.tagline}</p>
+        <div class="row"><span class="sw" style="background:${c.accent}"></span><span class="sw" style="background:${c.ring}"></span></div>
+        <h4>Verdachten</h4><div class="rooms">${c.cast.map(n => `<b>${n}</b>`).join('')}</div>
+        <h4>Meubels</h4><div class="rooms">${c.furniture.map(n => `<b>${n}</b>`).join('')}</div>
+        <h4>Ruimtes</h4><div class="rooms">${c.rooms.map(n => `<b>${n}</b>`).join('')}</div>
+        <h4>Delen</h4><div class="parts">${c.parts}</div>
+      </div></section>`;
+  });
+  el.innerHTML = html;
+</script>
+</body>
+</html>

@@ -125,7 +125,60 @@ const MapArt = (() => {
         <circle cx="196" cy="145" r="4" fill="#5FC9C9"/>
       </g>
       <rect x="0" y="188" width="393" height="12" fill="#1E2A3A"/>
-    `, 'banner-ruimte')
+    `, 'banner-ruimte'),
+
+    museum: () => svg('0 0 393 200', `
+      <rect width="393" height="200" fill="#2B3A45"/>
+      ${stars([[30, 24, 1.6], [80, 50, 1.2], [140, 18, 1.4], [250, 30, 1.2], [330, 22, 1.6], [370, 70, 1.2], [200, 44, 1]], '#F3EDE3')}
+      <circle cx="60" cy="60" r="16" fill="#F5E6B8" stroke="${INK}" stroke-width="1.5"/>
+      <!-- trappen -->
+      <g stroke="${INK}" stroke-width="1.3"><rect x="60" y="176" width="273" height="8" fill="#D0C9BD"/><rect x="72" y="168" width="249" height="8" fill="#DAD3C7"/><rect x="84" y="160" width="225" height="8" fill="#E5E1DA"/></g>
+      <rect x="0" y="184" width="393" height="16" fill="#1E2A33"/>
+      <!-- gevel met zuilen en fronton -->
+      <g stroke="${INK}" stroke-width="1.5">
+        <rect x="96" y="70" width="201" height="90" fill="#E5E1DA"/>
+        <path d="M86 70 L196.5 28 L307 70 Z" fill="#EFEBE3"/>
+        <rect x="84" y="66" width="225" height="8" fill="#D0C9BD"/>
+        <g fill="#F3EDE3">${[108, 140, 172, 221, 253, 285].map(x => `<rect x="${x - 6}" y="78" width="12" height="82"/><rect x="${x - 9}" y="74" width="18" height="5" rx="1"/><rect x="${x - 9}" y="156" width="18" height="5" rx="1"/>`).join('')}</g>
+        <rect x="182" y="104" width="29" height="56" rx="2" fill="#2F6F6D"/>
+        <rect x="186" y="108" width="21" height="24" fill="#F0CE8E"/>
+        <path d="M196.5 104 v56" stroke-width="1"/>
+      </g>
+      <circle cx="196.5" cy="50" r="7" fill="#D4A64A" stroke="${INK}" stroke-width="1.3"/>
+      <text x="196.5" y="93" text-anchor="middle" font-family="'Playfair Display', Georgia, serif" font-size="11" font-weight="700" letter-spacing="4" fill="#2F6F6D">MUSEUM</text>
+      <!-- spandoek dino -->
+      <g stroke="${INK}" stroke-width="1.2"><rect x="318" y="84" width="60" height="76" rx="2" fill="#D4A64A"/><path d="M328 140 q8-22 22-20 q10 1 16-8 l3 2 q-4 10-14 12 q-8 4-16 10 l-1 6 h-4z" fill="#F3EDE3"/><circle cx="367" cy="110" r="4" fill="#F3EDE3"/></g>
+      <g stroke="${INK}" stroke-width="1.3"><rect x="34" y="150" width="4" height="34" fill="#3E2A1D"/><circle cx="36" cy="146" r="6" fill="#F0CE8E"/></g>
+    `, 'banner-museum'),
+
+    trein: () => svg('0 0 393 200', `
+      <rect width="393" height="200" fill="#1F2E3A"/>
+      ${stars([[20, 26, 1.4], [70, 14, 1.2], [120, 40, 1.6], [180, 18, 1], [260, 30, 1.4], [340, 16, 1.6], [372, 48, 1.2]], '#F3EDE3')}
+      <circle cx="318" cy="48" r="20" fill="#F5E6B8" stroke="${INK}" stroke-width="1.5"/>
+      <!-- bergen -->
+      <path d="M0 150 L60 92 L110 130 L160 84 L220 138 L280 96 L330 132 L393 90 L393 156 L0 156 Z" fill="#33475A" stroke="${INK}" stroke-width="1.3"/>
+      <path d="M60 92 l-10 14 h20 z M160 84 l-11 16 h22 z M280 96 l-10 14 h20 z" fill="#F3EDE3"/>
+      <!-- tunnel -->
+      <path d="M330 156 v-40 q30-30 63-8 v48 z" fill="#0F1A22" stroke="${INK}" stroke-width="1.5"/>
+      <!-- rails -->
+      <rect x="0" y="156" width="393" height="44" fill="#3E2A1D"/>
+      <g stroke="#6B4423" stroke-width="3">${Array.from({ length: 20 }, (_, i) => `<path d="M${i * 20 + 6} 160 v36"/>`).join('')}</g>
+      <path d="M0 166 h393 M0 190 h393" stroke="#BFC9D4" stroke-width="2.5"/>
+      <!-- trein -->
+      <g stroke="${INK}" stroke-width="1.5">
+        <rect x="20" y="118" width="120" height="44" rx="4" fill="#1F4E3D"/>
+        <rect x="150" y="118" width="120" height="44" rx="4" fill="#1F4E3D"/>
+        <rect x="20" y="126" width="250" height="6" fill="#C9A227" stroke="none"/>
+        <g fill="#F0CE8E">${[34, 56, 78, 100, 122, 164, 186, 208, 230, 252].map(x => `<rect x="${x}" y="134" width="14" height="14" rx="2"/>`).join('')}</g>
+        <rect x="280" y="112" width="70" height="50" rx="4" fill="#2C3E50"/>
+        <rect x="292" y="96" width="26" height="18" rx="3" fill="#2C3E50"/>
+        <rect x="326" y="98" width="10" height="16" fill="#1A1108"/>
+        <circle cx="343" cy="136" r="8" fill="#F5D67A"/>
+        <g fill="#F3EDE3" opacity="0.9" stroke="none"><circle cx="331" cy="86" r="6"/><circle cx="322" cy="76" r="8"/><circle cx="308" cy="68" r="7"/><circle cx="292" cy="62" r="5"/></g>
+        <g fill="#2C3E50">${[40, 70, 100, 130, 170, 200, 230, 260, 295, 335].map(x => `<circle cx="${x}" cy="164" r="7"/>`).join('')}</g>
+        <g fill="#BFC9D4" stroke="none">${[40, 70, 100, 130, 170, 200, 230, 260, 295, 335].map(x => `<circle cx="${x}" cy="164" r="2.5"/>`).join('')}</g>
+      </g>
+    `, 'banner-trein')
   };
 
   // ── Decoraties langs het pad (40×40, zelfde stijl als de meubels) ──
@@ -165,6 +218,24 @@ const MapArt = (() => {
       `<g stroke="${INK}" stroke-width="1.3"><rect x="4" y="12" width="14" height="16" fill="#4A6B8A"/><rect x="22" y="12" width="14" height="16" fill="#4A6B8A"/><g stroke="#9DB7D6" stroke-width="1"><path d="M4 20 h14 M22 20 h14 M11 12 v16 M29 12 v16"/></g><rect x="18" y="18" width="4" height="4" fill="#8A97A3"/></g>`,
       `<g><path d="M6 32 L28 12" stroke="#F3EDE3" stroke-width="2" stroke-linecap="round"/><circle cx="29" cy="11" r="3.5" fill="#F3EDE3" stroke="${INK}" stroke-width="1"/></g>`,
       `<g><circle cx="20" cy="20" r="8" fill="#B8D9A1" stroke="${INK}" stroke-width="1.3"/><path d="M14 18 q4 4 12 0 M16 24 q4 2 8 0" fill="none" stroke="#7FA06B" stroke-width="1.5"/></g>`
+    ],
+    museum: [
+      `<g stroke="${INK}" stroke-width="1.3"><rect x="15" y="10" width="10" height="24" fill="#F3EDE3"/><rect x="11" y="7" width="18" height="4" rx="1" fill="#E5E1DA"/><rect x="11" y="33" width="18" height="4" rx="1" fill="#E5E1DA"/></g>`,
+      `<g fill="#F3EDE3" stroke="#7B5E3B" stroke-width="1.1"><path d="M8 26 q6-10 14-8 q6 1 9-3 l2 1 q-2 5-7 5 q-5 3-11 6 l-1 5 h-3 l1-5 q-3 0-4-1z"/><circle cx="30" cy="14" r="3"/></g>`,
+      `<g stroke="${INK}" stroke-width="1.3"><path d="M14 10 h12 l2 6 q-2 4-2 10 l-1 6 h-10 l-1-6 q0-6-2-10z" fill="#D4A64A"/><path d="M14 18 h12" stroke="#7A5A1C"/></g>`,
+      `<g stroke="${INK}" stroke-width="1.3"><rect x="7" y="10" width="26" height="20" rx="1.5" fill="#C9A227"/><rect x="10" y="13" width="20" height="14" fill="#9DB7D6"/><path d="M10 27 L17 19 L21 23 L25 18 L30 27 z" fill="#5C8B5E"/></g>`,
+      `<g stroke="${INK}" stroke-width="1.3"><rect x="8" y="20" width="24" height="5" rx="1" fill="#D0C9BD"/><rect x="8" y="14" width="24" height="5" rx="1" fill="#D0C9BD"/><path d="M11 25 v8 M29 25 v8" stroke-width="2"/></g>`,
+      `<g stroke="${INK}" stroke-width="1.3"><rect x="18" y="14" width="4" height="22" fill="#3E2A1D"/><rect x="13" y="6" width="14" height="10" rx="2" fill="#F0CE8E"/></g>`,
+      `<g stroke="${INK}" stroke-width="1.2"><rect x="12" y="26" width="16" height="7" rx="1" fill="#D0C9BD"/><ellipse cx="20" cy="14" rx="4.5" ry="5" fill="#F3EDE3"/><path d="M13 26 q1-6 7-6 q6 0 7 6z" fill="#F3EDE3"/></g>`
+    ],
+    trein: [
+      `<g stroke="${INK}" stroke-width="1.3"><rect x="18" y="8" width="4" height="26" fill="#3E2A1D"/><circle cx="20" cy="10" r="5" fill="#E74C3C"/><circle cx="20" cy="20" r="5" fill="#2ECC71"/><rect x="12" y="34" width="16" height="3" rx="1" fill="#3E2A1D"/></g>`,
+      `<g stroke="${INK}" stroke-width="1.3"><rect x="4" y="16" width="32" height="4" fill="#3E2A1D"/><rect x="4" y="24" width="32" height="4" fill="#3E2A1D"/><g stroke="#BFC9D4" stroke-width="2.5"><path d="M8 14 v16 M16 14 v16 M24 14 v16 M32 14 v16"/></g></g>`,
+      `<g stroke="${INK}" stroke-width="1.3"><rect x="8" y="14" width="24" height="18" rx="2.5" fill="#7A5236"/><rect x="15" y="10" width="10" height="5" rx="2" fill="none" stroke-width="2"/><rect x="18" y="20" width="4" height="5" rx="1" fill="#C9A227"/></g>`,
+      `<g stroke="${INK}" stroke-width="1.3"><rect x="14" y="12" width="12" height="16" rx="2" fill="#F5D67A"/><rect x="16" y="8" width="8" height="4" rx="1" fill="#4A4A4A"/><rect x="15" y="28" width="10" height="3" rx="1" fill="#4A4A4A"/><ellipse cx="20" cy="20" rx="2.4" ry="3.4" fill="#F39C12"/></g>`,
+      `<g fill="#2C3E50" stroke="${INK}" stroke-width="1"><circle cx="14" cy="26" r="5"/><circle cx="22" cy="22" r="6"/><circle cx="28" cy="28" r="5"/><circle cx="20" cy="30" r="4"/></g>`,
+      `<g stroke="${INK}" stroke-width="1.3"><rect x="8" y="14" width="24" height="12" rx="2" fill="#F0CE8E"/><path d="M14 14 v12 M26 14 v12" stroke-dasharray="2 2"/><circle cx="20" cy="20" r="2" fill="#8B2E1C" stroke="none"/></g>`,
+      `<g stroke="${INK}" stroke-width="1.3"><path d="M20 6 L30 24 H10 Z" fill="#33475A"/><path d="M20 14 L27 30 H13 Z" fill="#3E5A6E"/><rect x="18" y="30" width="4" height="5" fill="#3E2A1D"/></g>`
     ]
   };
 

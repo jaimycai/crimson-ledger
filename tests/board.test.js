@@ -34,7 +34,7 @@ const active = () => document.querySelector('.screen.active').id;
     check(document.getElementById('menu-rank').textContent.includes('Rekruut') && document.getElementById('menu-rank').textContent.includes('tot Speurder'), 'rang start als Rekruut: ' + document.getElementById('menu-rank').textContent);
 
     // ── themakiezer + sloten ──
-    check(document.querySelectorAll('.theme-card').length === 4, 'vier thema\'s in het menu');
+    check(document.querySelectorAll('.theme-card').length === 6, 'vier thema\'s in het menu');
 
     // ── moeilijkheidskiezer: mini-plattegrond + verdachten/afmeting per niveau ──
     check(document.querySelectorAll('.difficulty-preview svg').length === 3, 'drie mini-plattegronden in de moeilijkheidskiezer');
@@ -46,7 +46,10 @@ const active = () => document.querySelector('.screen.active').id;
     document.querySelector('.theme-card[data-theme="piraten"]').click();
     check(App.selectedTheme === 'landhuis', 'vergrendeld thema kan niet gekozen worden');
     App.storageSet('crimson-board-stats', JSON.stringify({ solved: 9 })); App.renderThemePicker();
-    check(document.querySelectorAll('.theme-card.locked').length === 0, 'na 9 zaken is alles open');
+    check(document.querySelectorAll('.theme-card.locked').length === 2 && document.querySelector('.theme-card[data-theme="museum"]').classList.contains('locked'), 'na 9 zaken zijn de eerste vier werelden open, museum en nachttrein nog dicht');
+    App.storageSet('crimson-board-stats', JSON.stringify({ solved: 16 })); App.renderThemePicker();
+    check(document.querySelectorAll('.theme-card.locked').length === 0, 'na 16 zaken is alles open');
+    App.storageSet('crimson-board-stats', JSON.stringify({ solved: 9 })); App.renderThemePicker();
     document.querySelector('.theme-card[data-theme="piraten"]').click();
     check(App.selectedTheme === 'piraten' && document.querySelector('.theme-card[data-theme="piraten"]').classList.contains('active'), 'thema kiezen werkt en wordt onthouden');
     check(document.querySelector('.difficulty-preview[data-preview="gemiddeld"]').innerHTML !== previewBefore, 'mini-plattegrond volgt het gekozen thema');
@@ -124,6 +127,7 @@ const active = () => document.querySelector('.screen.active').id;
     }
     check(Board.canDrop(0, free[0].x, free[0].y, null) && !Board.canDrop(0, p.victim.x, p.victim.y, null), 'slepen: een vrij vakje mag, het slachtoffer niet');
     check(Board.dropSuspect(0, free[0].x, free[0].y) && Board.placements[0].x === free[0].x && Board.placements[0].y === free[0].y && Board.active === 1, 'verdachte 1 neergezet door slepen, de kiezer schuift door');
+    check(document.querySelector(`#board-grid .bcell[data-x="${free[0].x}"][data-y="${free[0].y}"] .bname`).textContent === window.Themes.shortName(p.suspects[0].label) && /✓ /.test(document.querySelector('.sus-chip[data-s="0"] small').textContent), 'wie is wie: naamkaartje op het bord en de kamer in de kiezer');
     check(!Board.dropSuspect(1, free[0].x, free[0].y) && Board.placements[1] === null, 'vanaf de balk op een bezet vakje: geweigerd');
     check(Board.dropSuspect(1, free[1].x, free[1].y) && Board.dropSuspect(1, free[0].x, free[0].y, free[1]) && Board.placements[1].x === free[0].x && Board.placements[0].x === free[1].x && Board.placements[0].y === free[1].y, 'geplaatste verdachte op een ander gesleept: ze wisselen van plek');
     check(Board.liftSuspect(1) && Board.placements[1] === null && Board.active === 1, 'van het bord af slepen haalt de verdachte weg');
@@ -293,17 +297,17 @@ const active = () => document.querySelector('.screen.active').id;
     // ── campagne: één doorlopende wereldkaart ──
     document.getElementById('btn-campaign').click(); await sleep(300);
     check(active() === 'screen-campaign', 'wereldkaart opent');
-    check(document.querySelectorAll('.map-world').length === 5 && document.querySelectorAll('.map-banner').length === 4 && document.querySelectorAll('.map-banner .mapart').length === 4, 'één pad: vier werelden met een getekende banner, dan het archief');
-    check(document.querySelectorAll('.mnode').length === 194 && document.querySelectorAll('.msign').length === 25, `192 zaken + 2 dossiers, 25 wegwijzers (${document.querySelectorAll('.mnode').length} knopen)`);
-    check(document.querySelectorAll('.world-tab').length === 4 && document.querySelectorAll('.world-tab small').length === 0, 'vier werelden in de kiezer, alles open na 12 zaken');
-    check(document.getElementById('campaign-total').textContent === '★ 0/576', 'sterrenteller over de hele campagne');
+    check(document.querySelectorAll('.map-world').length === 7 && document.querySelectorAll('.map-banner').length === 6 && document.querySelectorAll('.map-banner .mapart').length === 6, 'één pad: zes werelden met een getekende banner, dan het archief');
+    check(document.querySelectorAll('.mnode').length === 290 && document.querySelectorAll('.msign').length === 37, `288 zaken + 2 dossiers, 37 wegwijzers (${document.querySelectorAll('.mnode').length} knopen)`);
+    check(document.querySelectorAll('.world-tab').length === 6 && document.querySelectorAll('.world-tab small').length === 1 && /nog 4 zaken/.test(document.querySelector('.world-tab[data-theme="trein"] small').textContent), 'zes werelden in de kiezer; na 12 zaken is alleen de nachttrein nog dicht (nog 4)');
+    check(document.getElementById('campaign-total').textContent === '★ 0/864', 'sterrenteller over de hele campagne');
     const node = (ch, i) => document.querySelector(`.mnode[data-chapter="${ch}"][data-idx="${i}"]`);
     check(node('landhuis', 0).classList.contains('open') && !!node('landhuis', 0).querySelector('.mnode-pin') && node('landhuis', 1).classList.contains('locked') && node('landhuis-2', 0).classList.contains('locked') && node('archief', 0).classList.contains('locked') && node('piraten', 0).classList.contains('open') && !node('piraten', 0).querySelector('.mnode-pin'), 'zaak 1 open met pion; zaak 2, deel II en archief dicht; piraten zaak 1 open zonder pion');
     check(/Speel zaak 1 · Het glas Bordeaux/.test(document.getElementById('btn-map-play').textContent) && !document.getElementById('btn-map-play').disabled, 'grote knop: ' + document.getElementById('btn-map-play').textContent);
-    check(document.querySelectorAll('.map-path path').length === 5 && document.querySelectorAll('.mapprop').length === 192, `pad per sectie en 192 decoraties langs het pad (${document.querySelectorAll('.mapprop').length})`);
+    check(document.querySelectorAll('.map-path path').length === 7 && document.querySelectorAll('.mapprop').length === 288, `pad per sectie en 288 decoraties langs het pad (${document.querySelectorAll('.mapprop').length})`);
     // tussenstops: per deel een strook met eigen sfeer, een minigame en een bewijskist
-    check(document.querySelectorAll('.map-unit').length === 24 && document.querySelectorAll('.map-unit.part-3').length === 4 && document.querySelectorAll('.map-unit.part-6').length === 4, 'elk deel een eigen strook (24), met stormdelen en nachtdelen');
-    check(document.querySelectorAll('.mmini').length === 24 && document.querySelectorAll('.mmini.locked').length === 24 && document.querySelectorAll('.mchest').length === 24 && document.querySelectorAll('.mchest.locked').length === 24, '24 minigames en 24 bewijskisten, allemaal nog dicht');
+    check(document.querySelectorAll('.map-unit').length === 36 && document.querySelectorAll('.map-unit.part-3').length === 6 && document.querySelectorAll('.map-unit.part-6').length === 6, 'elk deel een eigen strook (36), met stormdelen en nachtdelen');
+    check(document.querySelectorAll('.mmini').length === 36 && document.querySelectorAll('.mmini.locked').length === 36 && document.querySelectorAll('.mchest').length === 36 && document.querySelectorAll('.mchest.locked').length === 36, '36 minigames en 36 bewijskisten, allemaal nog dicht');
     check(/🍷/.test(document.querySelector('.msign').textContent) && /0\/8/.test(document.querySelector('.msign small').textContent), 'wegwijzer met icoon en teller: ' + document.querySelector('.msign').textContent);
     document.querySelector('.mmini').click();
     check(/Los eerst zaak 4 op/.test(document.getElementById('toast-text').textContent), 'dichte minigame legt uit wat er eerst moet');
@@ -339,19 +343,19 @@ const active = () => document.querySelector('.screen.active').id;
     check(!document.getElementById('btn-next-case').hidden && /De verdwenen sleutel/.test(document.getElementById('btn-next-case').textContent) && !document.getElementById('btn-map').hidden, 'volgende-zaak-knop en "Naar de kaart"');
     check(window.Campaign.stars('landhuis', 0) === 3 && window.Campaign.isUnlocked('landhuis', 1), 'voortgang bewaard, zaak 2 open');
     document.getElementById('btn-map').click(); await sleep(300);
-    check(active() === 'screen-campaign' && node('landhuis', 0).classList.contains('done') && node('landhuis', 0).querySelector('.mnode-stars').textContent === '★★★' && node('landhuis', 1).classList.contains('open') && document.getElementById('campaign-total').textContent === '★ 3/576', 'kaart bijgewerkt: zaak 1 klaar met drie sterren, zaak 2 open');
+    check(active() === 'screen-campaign' && node('landhuis', 0).classList.contains('done') && node('landhuis', 0).querySelector('.mnode-stars').textContent === '★★★' && node('landhuis', 1).classList.contains('open') && document.getElementById('campaign-total').textContent === '★ 3/864', 'kaart bijgewerkt: zaak 1 klaar met drie sterren, zaak 2 open');
     document.getElementById('btn-map-play').click(); await sleep(300);
     check(active() === 'screen-board' && Board.campaignCase.idx === 1 && !document.getElementById('part-modal').classList.contains('active') && document.getElementById('briefing-modal').classList.contains('active'), 'grote knop start zaak 2 met briefing, zonder deel-splash');
     document.getElementById('btn-briefing-go').click();
     Board.stopTimer(); App.navigateTo('menu'); await sleep(300);
-    check(document.getElementById('campaign-progress').textContent.startsWith('1 van 192') && document.getElementById('campaign-next').textContent === 'Deel I · Zaak 2', 'menu toont campagnevoortgang en de volgende zaak');
+    check(document.getElementById('campaign-progress').textContent.startsWith('1 van 288') && document.getElementById('campaign-next').textContent === 'Deel I · Zaak 2', 'menu toont campagnevoortgang en de volgende zaak');
 
     // ── vitrine & bureau ──
     document.getElementById('btn-awards').click(); await sleep(300);
     check(active() === 'screen-awards' && document.querySelectorAll('.medal').length === window.Progress.MEDALS.length && document.querySelectorAll('.medal.got').length >= 2, `vitrine: ${document.querySelectorAll('.medal.got').length} van ${document.querySelectorAll('.medal').length} medailles behaald`);
     check(/punten/.test(document.getElementById('awards-points').textContent) && document.getElementById('medal-count').textContent === String(document.querySelectorAll('.medal.got').length), 'punten en medailleteller in de kop');
     document.querySelector('.awards-tab[data-tab="vitrine"]').click();
-    check(!document.getElementById('awards-vitrine').hidden && document.getElementById('awards-medals').hidden && document.querySelectorAll('.shelf').length === 4 && document.querySelectorAll('.ev').length === 192 && document.querySelectorAll('.ev:not(.miss)').length === 1 && /Wijnglas/.test(document.querySelector('.ev:not(.miss)').textContent), 'vitrine: vier planken, 192 plekken, het wijnglas staat erin');
+    check(!document.getElementById('awards-vitrine').hidden && document.getElementById('awards-medals').hidden && document.querySelectorAll('.shelf').length === 6 && document.querySelectorAll('.ev').length === 288 && document.querySelectorAll('.ev:not(.miss)').length === 1 && /Wijnglas/.test(document.querySelector('.ev:not(.miss)').textContent), 'vitrine: zes planken, 288 plekken, het wijnglas staat erin');
     document.getElementById('btn-awards-back').click(); await sleep(300);
 
     // ── geluid ──
@@ -397,7 +401,7 @@ const active = () => document.querySelector('.screen.active').id;
     const rb = document.getElementById('btn-reset-progress');
     rb.click(); check(/Zeker/.test(rb.textContent) && (Board.loadStats().solved || 0) > 0, 'eerste tik vraagt bevestiging, wist nog niets');
     rb.click(); check((Board.loadStats().solved || 0) === 0 && document.getElementById('streak-count').textContent === '0' && window.Campaign.doneCount() === 0 && window.Progress.points() === 0 && window.Progress.medalCount() === 0, 'tweede tik wist alle voortgang, ook punten en medailles');
-    check(document.querySelectorAll('.theme-card.locked').length === 3, 'thema-sloten weer dicht na wissen');
+    check(document.querySelectorAll('.theme-card.locked').length === 5, 'thema-sloten weer dicht na wissen');
     document.getElementById('btn-close-settings').click();
     check(fs.existsSync(path.join(DIR, 'privacy.html')) && fs.existsSync(path.join(DIR, 'support.html')) && fs.existsSync(path.join(DIR, 'icon-1024.png')), 'privacy, support en 1024-icoon aanwezig');
 

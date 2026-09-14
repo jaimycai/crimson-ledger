@@ -17,9 +17,11 @@ const WEEK_TITLES = {
   landhuis: ['Het mysterie van de testamenten', 'De nacht van de drie klokken', 'Het geheim van de oostvleugel', 'Het diner van de leugenaars'],
   piraten:  ['Het complot in de kombuis', 'De muiterij op de Zwarte Meeuw', 'De kaart met twee kruizen', 'De vloek van het lege vat'],
   hotel:    ['De code van kamer 404', 'De laatste sleutel van Aurora', 'Het bal van de maskers', 'De gast die nooit uitcheckte'],
-  ruimte:   ['Het signaal uit sector 7', 'De koepel van Orion', 'De sluis die vanzelf openging', 'Het logboek zonder laatste regel']
+  ruimte:   ['Het signaal uit sector 7', 'De koepel van Orion', 'De sluis die vanzelf openging', 'Het logboek zonder laatste regel'],
+  museum:   ['De nacht van de sarcofaag', 'Het schilderij dat terugkeek', 'De vitrine zonder glas', 'Het geheim van zaal 7'],
+  trein:    ['De tunnel van vier minuten', 'Het kaartje zonder naam', 'De coupé die op slot zat', 'De laatste halte voor Wenen']
 };
-const WEEK_THEMES = ['landhuis', 'piraten', 'hotel', 'ruimte'];
+const WEEK_THEMES = ['landhuis', 'piraten', 'hotel', 'ruimte', 'museum', 'trein'];
 
 const Progress = {
   // ── opslag (via App, zodat privémodus nooit crasht) ──
@@ -177,6 +179,8 @@ const Progress = {
     { id: 'piraten',       icon: '🏴‍☠️', title: 'Kapitein van de Meeuw', hint: 'Maak alle delen van Het Piratenschip af',                   test: c => c.worldsDone.includes('piraten') },
     { id: 'hotel',         icon: '🏨', title: 'Sleutel van Aurora',    hint: 'Maak alle delen van Grand Hotel Aurora af',                  test: c => c.worldsDone.includes('hotel') },
     { id: 'ruimte',        icon: '🚀', title: 'Orion gaat uit',        hint: 'Maak alle delen van Station Orion af',                       test: c => c.worldsDone.includes('ruimte') },
+    { id: 'museum',        icon: '🏛️', title: 'Nachtwaker van Vlierbeek', hint: 'Maak alle delen van Het Museum af',                       test: c => c.worldsDone.includes('museum') },
+    { id: 'trein',         icon: '🚂', title: 'Eindstation',            hint: 'Maak alle delen van De Nachttrein af',                      test: c => c.worldsDone.includes('trein') },
     { id: 'opdrachten',    icon: '🎁', title: 'Alle opdrachten',       hint: 'Maak alle drie de opdrachten van een dag af',                test: c => !!c.questsAll },
     { id: 'vrije-dag',     icon: '🧊', title: 'Gered door een vrije dag', hint: 'Laat een vrije dag je streak redden',                     test: c => !!c.freezeUsed },
     { id: 'vlekkeloos',    icon: '⭐', title: 'Vlekkeloos',            hint: 'Haal tien keer drie sterren in de campagne',                 test: c => c.threeStars >= 10 },

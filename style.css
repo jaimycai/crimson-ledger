@@ -1559,6 +1559,24 @@ body.tutorial-mode #btn-share { display: none; }
     linear-gradient(90deg, rgba(255,255,255,0.45) 1px, transparent 1px) 0 0 / 50% 100%,
     rgba(255,255,255,0.22);
 }
+.board-grid[data-floor="terrazzo"] .bcell::before {
+  background:
+    radial-gradient(circle, rgba(47, 111, 109, 0.28) 0 1.5px, transparent 2.5px) 3px 4px / 14px 14px,
+    radial-gradient(circle, rgba(212, 166, 74, 0.30) 0 1.2px, transparent 2px) 9px 10px / 14px 14px,
+    rgba(255, 255, 255, 0.5);
+}
+.board-grid[data-floor="terrazzo"] .bcell.dark::before {
+  background:
+    radial-gradient(circle, rgba(47, 111, 109, 0.28) 0 1.5px, transparent 2.5px) 3px 4px / 14px 14px,
+    radial-gradient(circle, rgba(212, 166, 74, 0.30) 0 1.2px, transparent 2px) 9px 10px / 14px 14px,
+    rgba(0, 0, 0, 0.04);
+}
+.board-grid[data-floor="carpet"] .bcell::before {
+  background: repeating-linear-gradient(45deg, rgba(31, 78, 61, 0.14) 0 3px, transparent 3px 9px), rgba(255, 255, 255, 0.42);
+}
+.board-grid[data-floor="carpet"] .bcell.dark::before {
+  background: repeating-linear-gradient(45deg, rgba(31, 78, 61, 0.18) 0 3px, transparent 3px 9px), rgba(0, 0, 0, 0.05);
+}
 .board-grid[data-floor="grid"] .bcell.dark::before {
   background:
     linear-gradient(rgba(255,255,255,0.3) 1px, transparent 1px) 0 0 / 100% 50%,
@@ -1780,6 +1798,8 @@ input, textarea { -webkit-user-select: text; user-select: text; }
 .map-piraten  { background: repeating-linear-gradient(180deg, rgba(60, 30, 10, 0.10) 0 2px, transparent 2px 30px), #EFE3CF; }
 .map-hotel    { background: repeating-linear-gradient(45deg, rgba(185, 112, 122, 0.10) 0 2px, transparent 2px 28px), repeating-linear-gradient(-45deg, rgba(185, 112, 122, 0.10) 0 2px, transparent 2px 28px), #F7EFEB; }
 .map-ruimte   { background: linear-gradient(rgba(74, 107, 138, 0.14) 1px, transparent 1px) 0 0 / 30px 30px, linear-gradient(90deg, rgba(74, 107, 138, 0.14) 1px, transparent 1px) 0 0 / 30px 30px, #E9EEF3; }
+.map-museum   { background: radial-gradient(circle, rgba(47, 111, 109, 0.14) 0 2px, transparent 3px) 0 0 / 22px 22px, radial-gradient(circle, rgba(212, 166, 74, 0.16) 0 1.5px, transparent 2.5px) 11px 11px / 22px 22px, #EEF1EE; }
+.map-trein    { background: repeating-linear-gradient(90deg, rgba(31, 78, 61, 0.10) 0 2px, transparent 2px 26px), repeating-linear-gradient(180deg, rgba(201, 162, 39, 0.10) 0 1px, transparent 1px 12px), #EDEFE9; }
 .map-archief  { background: repeating-linear-gradient(180deg, rgba(44, 24, 16, 0.05) 0 1px, transparent 1px 22px), #F3EDE3; }
 .map-world.locked .mapart, .map-world.locked .mapprop { filter: grayscale(0.7); opacity: 0.7; }
 .map-banner { position: relative; aspect-ratio: 393 / 200; overflow: hidden; border-bottom: 2px solid #1A1108; }
@@ -2277,3 +2297,18 @@ input, textarea { -webkit-user-select: text; user-select: text; }
 .stamps { display: flex; gap: 6px; margin: 4px 0 8px; flex-wrap: wrap; }
 .stamp { width: 34px; height: 34px; border-radius: 50%; border: 2px dashed var(--border); display: flex; align-items: center; justify-content: center; font-size: 1rem; opacity: 0.35; filter: grayscale(1); }
 .stamp.got { border: 2px solid var(--gold); background: #FFF6D6; opacity: 1; filter: none; transform: rotate(-8deg); }
+
+/* ── Wie is wie: naamkaartje op het bord, kamer in de kiezer, spreker licht op ── */
+.bname {
+  position: absolute; left: 50%; bottom: 3%; transform: translateX(-50%);
+  max-width: 96%; padding: 1px 5px; border-radius: 8px; z-index: 3;
+  background: var(--sc, #1A1108); color: #fff; font-size: 0.5rem; font-weight: 800; line-height: 1.3;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; pointer-events: none;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.85);
+}
+@media (max-width: 380px) { .bname { font-size: 0.44rem; padding: 1px 3px; } }
+.sus-chip { border-color: var(--sc, var(--border)); }
+.sus-chip .sus-name { display: flex; flex-direction: column; line-height: 1.15; }
+.sus-chip .sus-name small { font-size: 0.62rem; font-weight: 700; color: var(--success); white-space: nowrap; }
+.sus-chip.placed .sus-ava { box-shadow: 0 0 0 2px var(--sc, var(--success)); }
+.bcell.lit-sus { outline: 4px solid var(--accent); outline-offset: -4px; animation: hint-pulse 0.9s ease-in-out 2; z-index: 2; }

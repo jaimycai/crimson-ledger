@@ -362,12 +362,184 @@ const CAMPAIGN = [
     { title: 'Het laatste bericht naar huis', story: 'Het bericht was kort. Het was niet van de commandant.', item: '📨 Laatste bericht', difficulty: 'moeilijk', seed: 53586 },
     { title: 'Koppeling om 04:00',     story: 'De capsule wachtte. Eén bemanningslid ook, ergens anders.', item: '⏱️ Stopwatch',        difficulty: 'moeilijk',  seed: 53683 },
     { title: 'Orion verbrandt',        story: 'De laatste vraag boven de laatste dampkring.', item: '🔥 Hitteschild',                    difficulty: 'moeilijk',  seed: 53780 }
+  ]},
+
+  // ── Het Museum ──────────────────────────────────────────────
+  { key: 'museum', theme: 'museum', part: 1, icon: '🏛️', title: 'Deel I · Na sluitingstijd',
+    intro: 'Het museum sluit om vijf uur. Om zes uur ligt de conservator tussen de beelden en zit elke deur op slot.',
+    outro: 'De eerste nacht is voorbij. Het museum blijft dicht, de vragen niet.',
+    briefing: 'Een museum heeft veel zalen en weinig mensen. Begin met wie zegt in welke zaal hij was, en let op de vitrines: "direct naast" telt alleen recht ernaast.',
+    cases: [
+    { title: 'Na sluitingstijd',       story: 'De deuren gingen dicht. Niet iedereen was naar buiten.', item: '🎟️ Toegangskaartje',        difficulty: 'makkelijk', seed: 1101 },
+    { title: 'De sarcofaag',           story: 'Het deksel stond op een kier. Het had dicht moeten zitten.', item: '⚱️ Canopenvaas',          difficulty: 'makkelijk', seed: 1198 },
+    { title: 'Het scheve schilderij',  story: 'Eén lijst hing scheef. De rest hing al honderd jaar recht.', item: '🖼️ Kleine lijst',        difficulty: 'makkelijk', seed: 1295 },
+    { title: 'Gids Fenna sluit af',    story: 'Ze deed elke avond de ronde. Vanavond sloeg ze een zaal over.', item: '🔑 Zaalsleutel',        difficulty: 'gemiddeld', seed: 1392 },
+    { title: 'De dinozaal',            story: 'Een bot lag op de verkeerde plek. Zeventig miljoen jaar had het goed gelegen.', item: '🦴 Dinobot', difficulty: 'gemiddeld', seed: 1489 },
+    { title: 'Het alarm zwijgt',       story: 'Het alarm ging niet af. Iemand wist de code.', item: '🔔 Alarmkastje',                     difficulty: 'gemiddeld', seed: 1586 },
+    { title: 'Nachtwaker Ruud slaapt', story: 'Zijn koffie was koud, zijn stoel warm.', item: '☕ Thermosfles',                             difficulty: 'moeilijk',  seed: 1683 },
+    { title: 'De laatste bezoeker',    story: 'Op de camera: één gast die nooit vertrok.', item: '📹 Camerabeeld',                          difficulty: 'moeilijk',  seed: 1780 }
+  ]},
+  { key: 'museum-2', theme: 'museum', part: 2, icon: '💎', title: 'Deel II · De verdwenen diamant',
+    intro: 'De Vlierbeek-diamant is weg uit de kluis. De politie zet het museum af. Iedereen die binnen was, blijft binnen.',
+    outro: 'De diamant is terug. Wie hem had, ook.',
+    briefing: 'Een diefstal én een moord: mensen liegen over waar ze waren. Twee verklaringen die elkaar tegenspreken kunnen niet allebei kloppen; zet de zekere eerst vast.',
+    cases: [
+    { title: 'De lege kluis',          story: 'De kluis was open, het kussentje leeg.', item: '🧿 Fluwelen kussen',                       difficulty: 'makkelijk', seed: 11101 },
+    { title: 'Stagiair Noor telt',     story: 'Volgens haar lijst was er niets weg. Volgens de kluis wel.', item: '📋 Inventarislijst',     difficulty: 'makkelijk', seed: 11198 },
+    { title: 'Het verkeerde beeld',    story: 'Het beeld was een kopie. Sinds gisteren.', item: '🗿 Kopie',                                difficulty: 'gemiddeld', seed: 11295 },
+    { title: 'Kunsthandelaar Vic biedt', story: 'Hij bood op iets dat nog niet te koop was.', item: '💳 Visitekaartje',                   difficulty: 'gemiddeld', seed: 11392 },
+    { title: 'De valse vloer',         story: 'Onder het tapijt lag een luik. Onder het luik lag stof.', item: '🚪 Luik',                  difficulty: 'gemiddeld', seed: 11489 },
+    { title: 'Restaurateur Imke poetst', story: 'Ze werkte aan een schilderij dat niet in de werkplaats hoorde.', item: '🖌️ Penseel',     difficulty: 'moeilijk',  seed: 11586 },
+    { title: 'De glazen vitrine',      story: 'Het glas was heel. De diamant weg.', item: '🔍 Loep',                                        difficulty: 'moeilijk',  seed: 11683 },
+    { title: 'Steen van Vlierbeek',    story: 'De diamant lag in de zaal waar niemand had gezocht.', item: '💎 Diamant',                    difficulty: 'moeilijk',  seed: 11780 }
+  ]},
+  { key: 'museum-3', theme: 'museum', part: 3, icon: '🎭', title: 'Deel III · De tentoonstelling',
+    intro: 'De grote opening. Driehonderd gasten, één spreker, en een zaal die op slot gaat voordat de champagne op is.',
+    outro: 'De tentoonstelling gaat door. Met één schilderij minder aan de muur.',
+    briefing: 'Bij de opening lopen veel mensen door dezelfde zalen. Verklaringen over rijen en kolommen lopen dwars door de muren: gebruik het potlood.',
+    cases: [
+    { title: 'De opening',             story: 'Het lint werd doorgeknipt. Daarna werd het stil.', item: '🎀 Openingslint',                 difficulty: 'makkelijk', seed: 21101 },
+    { title: 'Champagne in de hal',    story: 'Honderd glazen. Eén had een vingerafdruk te veel.', item: '🥂 Champagneglas',                difficulty: 'gemiddeld', seed: 21198 },
+    { title: 'Professor Adebayo spreekt', story: 'Zijn lezing duurde twintig minuten. Zijn alibi tien.', item: '📖 Lezing',                difficulty: 'gemiddeld', seed: 21295 },
+    { title: 'De verkeerde zaal',      story: 'Zaal 4 was gesloten. Volgens het programma niet.', item: '🚧 Afzetlint',                    difficulty: 'gemiddeld', seed: 21392 },
+    { title: 'Schoonmaker Piet dweilt', story: 'De vloer was schoon. Te schoon.', item: '🧹 Dweil',                                        difficulty: 'moeilijk',  seed: 21489 },
+    { title: 'Het portret kijkt terug', story: 'Het portret hing andersom. Iemand had het gedraaid.', item: '🖼️ Portret',                  difficulty: 'moeilijk',  seed: 21586 },
+    { title: 'Curator Bas zwijgt',     story: 'Hij wist welk schilderij vals was. Hij zei het niet.', item: '🏷️ Naamplaatje',              difficulty: 'moeilijk',  seed: 21683 },
+    { title: 'Licht uit in zaal 7',    story: 'Het licht viel uit. Toen het aanging, ontbrak er iemand.', item: '💡 Zaallamp',              difficulty: 'moeilijk',  seed: 21780 }
+  ]},
+  { key: 'museum-4', theme: 'museum', part: 4, icon: '📦', title: 'Deel IV · Het depot',
+    intro: 'In de kelders liggen tienduizend voorwerpen die niemand ooit ziet. Iemand zag er één te veel.',
+    outro: 'Het depot is weer op slot. De inventaris klopt, op één naam na.',
+    briefing: 'Het depot is een doolhof van kisten. Streep lege zalen als eerste weg; wat overblijft is klein.',
+    cases: [
+    { title: 'Kist 4471',              story: 'De kist stond open. Hij had honderd jaar dicht gezeten.', item: '📦 Kist 4471',              difficulty: 'makkelijk', seed: 31101 },
+    { title: 'Het mummiemasker',       story: 'Het masker lag naast de sarcofaag. Niet erin.', item: '🎭 Mummiemasker',                     difficulty: 'gemiddeld', seed: 31198 },
+    { title: 'Gids Fenna verdwaalt',   story: 'Ze kende elke gang. Behalve deze.', item: '🗺️ Depotplattegrond',                           difficulty: 'gemiddeld', seed: 31295 },
+    { title: 'Stof op de planken',     story: 'Overal stof, behalve op één plank.', item: '🪶 Plumeau',                                     difficulty: 'moeilijk',  seed: 31392 },
+    { title: 'De koude kamer',         story: 'De koeling stond aan. Iemand had erin gezeten.', item: '🌡️ Koelmeter',                       difficulty: 'gemiddeld', seed: 31489 },
+    { title: 'Nachtwaker Ruud rondt af', story: 'Zijn laatste ronde eindigde te vroeg.', item: '🔦 Zaklamp',                              difficulty: 'moeilijk',  seed: 31586 },
+    { title: 'Het gebroken vaasje',    story: 'Duizend jaar oud, vannacht in scherven.', item: '🏺 Scherf',                                 difficulty: 'moeilijk',  seed: 31683 },
+    { title: 'Onder het museum',       story: 'Onder het depot lag nog een gang.', item: '🧱 Kelderdeur',                                   difficulty: 'moeilijk',  seed: 31780 }
+  ]},
+  { key: 'museum-5', theme: 'museum', part: 5, icon: '🦖', title: 'Deel V · De nacht van de dino\'s',
+    intro: 'De kindernacht: honderd kinderen slapen tussen de skeletten. Als de lichten aangaan, is er iemand die niet meer wakker wordt.',
+    outro: 'De kinderen worden opgehaald. Het skelet staat weer compleet.',
+    briefing: 'Veel kleine getuigen en veel verwarring. Verklaringen over twee mensen tegelijk: zet eerst degene vast van wie je het meeste weet.',
+    cases: [
+    { title: 'Slaapzakken in de zaal', story: 'Honderd slaapzakken. Eén ervan was leeg.', item: '🛌 Slaapzak',                              difficulty: 'makkelijk', seed: 41101 },
+    { title: 'Het kampvuurverhaal',    story: 'Gids Fenna vertelde een verhaal. De afloop klopte.', item: '📚 Verhalenboek',                difficulty: 'gemiddeld', seed: 41198 },
+    { title: 'De verdwenen tand',      story: 'De T. rex miste een tand. De tand miste een T. rex.', item: '🦷 Dinotand',                   difficulty: 'gemiddeld', seed: 41295 },
+    { title: 'Stagiair Noor waakt',    story: 'Ze telde de kinderen. Ze vergat de volwassenen.', item: '🔢 Telmachine',                     difficulty: 'moeilijk',  seed: 41392 },
+    { title: 'De zaklamp',             story: 'Iemand scheen met een lamp waar geen lamp mocht.', item: '🔦 Kinderzaklamp',                  difficulty: 'gemiddeld', seed: 41489 },
+    { title: 'Het skelet beweegt',     story: 'Het skelet stond vanochtend anders.', item: '🦴 Losse wervel',                              difficulty: 'moeilijk',  seed: 41586 },
+    { title: 'Professor Adebayo slaapt niet', story: 'Hij las de hele nacht. Zei hij.', item: '👓 Leesbril',                                difficulty: 'moeilijk',  seed: 41683 },
+    { title: 'De laatste dino',        story: 'Als het licht aangaat, staat er iemand te veel in de zaal.', item: '🦖 Dino-figuurtje',      difficulty: 'moeilijk',  seed: 41780 }
+  ]},
+  { key: 'museum-6', theme: 'museum', part: 6, icon: '🗝️', title: 'Deel VI · Het geheim van Vlierbeek',
+    intro: 'Achter de Egyptische zaal zit een deur die op geen plattegrond staat. Wat erachter ligt, is ouder dan het museum.',
+    outro: 'De deur is dichtgemetseld. Het museum opent morgen gewoon. Jij weet wat erachter zat.',
+    briefing: 'Het laatste deel van het museum en de zwaarste zaken. Alles komt terug: hoeken, meubels, rijen. Zet niemand neer voordat je het zeker weet.',
+    cases: [
+    { title: 'De deur achter de zaal', story: 'Achter de sarcofaag zat een deur. Iemand wist ervan.', item: '🧱 Losse steen',              difficulty: 'makkelijk', seed: 51101 },
+    { title: 'Het oude dagboek',       story: 'De stichter schreef alles op. Bijna alles.', item: '📔 Dagboek',                             difficulty: 'gemiddeld', seed: 51198 },
+    { title: 'Restaurateur Imke ontdekt', story: 'Onder de verf zat een tweede schilderij.', item: '🎨 Röntgenfoto',                        difficulty: 'moeilijk',  seed: 51295 },
+    { title: 'De plattegrond klopt niet', story: 'Eén zaal was groter dan op de tekening.', item: '📐 Meetlint',                            difficulty: 'moeilijk',  seed: 51392 },
+    { title: 'Kunsthandelaar Vic bekent', story: 'Hij bekende de diefstal. Niet de moord.', item: '🧾 Bekentenis',                          difficulty: 'gemiddeld', seed: 51489 },
+    { title: 'De verborgen zaal',      story: 'Geen ramen, geen deuren, toch voetstappen.', item: '👣 Stofspoor',                           difficulty: 'moeilijk',  seed: 51586 },
+    { title: 'Curator Bas kiest',      story: 'Hij mocht één ding redden. Hij koos verkeerd.', item: '⚖️ Weegschaal',                       difficulty: 'moeilijk',  seed: 51683 },
+    { title: 'Vlierbeek, het einde',   story: 'De laatste zaal. De laatste naam.', item: '🗝️ Laatste sleutel',                             difficulty: 'moeilijk',  seed: 51780 }
+  ]},
+
+  // ── De Nachttrein ───────────────────────────────────────────
+  { key: 'trein', theme: 'trein', part: 1, icon: '🚂', title: 'Deel I · Vertrek',
+    intro: 'De nachttrein vertrekt om acht uur. Om negen uur ligt de conducteur in de restauratiewagen en stopt de trein pas bij zonsopgang.',
+    outro: 'De trein rijdt door de nacht. De reizigers ook.',
+    briefing: 'Een trein is lang en smal: wagons liggen naast elkaar. "Links van" en "hoger dan" gelden voor de hele plattegrond, niet voor één wagon.',
+    cases: [
+    { title: 'Vertrek om acht uur',    story: 'De fluit klonk. Eén reiziger hoorde hem niet meer.', item: '🎫 Treinkaartje',                difficulty: 'makkelijk', seed: 8101 },
+    { title: 'De kaartjescontrole',    story: 'De conducteur knipte elk kaartje. Op één na.', item: '🔖 Geknipt kaartje',                   difficulty: 'makkelijk', seed: 8198 },
+    { title: 'De koffer in coupé A',   story: 'De koffer was van niemand. Zei iedereen.', item: '🧳 Hutkoffer',                              difficulty: 'makkelijk', seed: 8295 },
+    { title: 'Goochelaar Otto verdwijnt', story: 'Hij deed een truc. De truc duurde te lang.', item: '🎩 Hoge hoed',                        difficulty: 'gemiddeld', seed: 8392 },
+    { title: 'Thee uit de samovar',    story: 'Het water kookte. De thee stond koud.', item: '🫖 Theeglas',                                  difficulty: 'gemiddeld', seed: 8489 },
+    { title: 'De tunnel',              story: 'Vier minuten donker. Genoeg voor één persoon.', item: '🕯️ Kaarsstompje',                    difficulty: 'gemiddeld', seed: 8586 },
+    { title: 'Barones Von Stahl klaagt', story: 'Het bed was te hard, de nacht te lang.', item: '💍 Zegelring',                            difficulty: 'moeilijk',  seed: 8683 },
+    { title: 'Het licht gaat aan',     story: 'Toen het licht terugkwam, was de conducteur weg.', item: '💡 Wagonlamp',                     difficulty: 'moeilijk',  seed: 8780 }
+  ]},
+  { key: 'trein-2', theme: 'trein', part: 2, icon: '❄️', title: 'Deel II · De sneeuw',
+    intro: 'De trein staat stil in de sneeuw. Geen station, geen hulp, en de dader zit nog aan boord.',
+    outro: 'De sneeuwploeg komt. De trein rijdt verder, met één lege coupé.',
+    briefing: 'Vast in de sneeuw: iedereen heeft elkaar gezien. "Direct naast" is goud waard in zo\'n smalle trein: elk vakje telt.',
+    cases: [
+    { title: 'Stilstand',              story: 'De trein stopte. Iemand niet.', item: '⏱️ Zakhorloge',                                       difficulty: 'makkelijk', seed: 18101 },
+    { title: 'Stoker Jules schept',    story: 'De kolen waren op. Behalve in één wagon.', item: '⚫ Kolenbrok',                             difficulty: 'makkelijk', seed: 18198 },
+    { title: 'Voetstappen in de sneeuw', story: 'Sporen naar de trein. Niet terug.', item: '👢 Sneeuwlaars',                              difficulty: 'gemiddeld', seed: 18295 },
+    { title: 'Verpleegster Ans helpt', story: 'Ze hielp iedereen. Eén iemand te goed.', item: '💊 Pillendoosje',                           difficulty: 'gemiddeld', seed: 18392 },
+    { title: 'De bevroren deur',       story: 'De deur zat vast. Van binnenuit.', item: '🧊 IJspegel',                                       difficulty: 'gemiddeld', seed: 18489 },
+    { title: 'Het pokerspel',          story: 'Vier spelers, drie handen kaarten.', item: '🃏 Speelkaart',                                  difficulty: 'moeilijk',  seed: 18586 },
+    { title: 'Actrice Lola repeteert', story: 'Haar tekst klopte. Haar alibi niet.', item: '📜 Toneeltekst',                                difficulty: 'moeilijk',  seed: 18683 },
+    { title: 'De sneeuwploeg',         story: 'Toen de ploeg kwam, ontbrak er een reiziger.', item: '🌨️ Sneeuwbol',                        difficulty: 'moeilijk',  seed: 18780 }
+  ]},
+  { key: 'trein-3', theme: 'trein', part: 3, icon: '🛂', title: 'Deel III · De grens',
+    intro: 'Bij de grens komen de douaniers aan boord. Iedereen laat zijn papieren zien. Eén paspoort is vals.',
+    outro: 'De grens is over. Het paspoort blijft achter, met zijn eigenaar.',
+    briefing: 'Aan de grens liegt iedereen over zijn naam. Verklaringen over rijen en kolommen lopen dwars door de wagons: gebruik het potlood.',
+    cases: [
+    { title: 'De douane',              story: 'Twee douaniers stapten in. Eén stapte uit.', item: '🛂 Stempel',                            difficulty: 'makkelijk', seed: 28101 },
+    { title: 'Het valse paspoort',     story: 'De foto klopte. De naam niet.', item: '🪪 Paspoort',                                         difficulty: 'gemiddeld', seed: 28198 },
+    { title: 'Reiziger Sami verkoopt', story: 'Hij verkocht horloges. En iets anders.', item: '⌚ Horloge',                                 difficulty: 'gemiddeld', seed: 28295 },
+    { title: 'De postwagen',           story: 'Een brief zonder postzegel, aan niemand gericht.', item: '✉️ Brief',                         difficulty: 'gemiddeld', seed: 28392 },
+    { title: 'Schaakmeester Ivo denkt', story: 'Hij zat een uur over één zet. Of over iets anders.', item: '♟️ Schaakstuk',                difficulty: 'moeilijk',  seed: 28489 },
+    { title: 'Weduwe Duval huilt',     story: 'Ze huilde om haar man. Die was al tien jaar dood.', item: '🖤 Rouwsluier',                    difficulty: 'moeilijk',  seed: 28586 },
+    { title: 'De gewisselde koffers',  story: 'Twee koffers, dezelfde sloten, één verschil.', item: '🔐 Kofferslot',                        difficulty: 'moeilijk',  seed: 28683 },
+    { title: 'Grenspost',              story: 'Bij de grens stapte er iemand uit. Zonder kaartje.', item: '🚧 Slagboom',                     difficulty: 'moeilijk',  seed: 28780 }
+  ]},
+  { key: 'trein-4', theme: 'trein', part: 4, icon: '🌙', title: 'Deel IV · De Oriënt-route',
+    intro: 'Een jaar later, dezelfde trein, dezelfde route naar het oosten. Sommige reizigers zijn terug. Dat hadden ze niet moeten doen.',
+    outro: 'De trein bereikt Istanbul. De reis is voorbij, voor bijna iedereen.',
+    briefing: 'Dezelfde gezichten, een jaar ouder. Lees elke verklaring twee keer: wie zegt waar hij níét was, vertelt je ook iets.',
+    cases: [
+    { title: 'Terug aan boord',        story: 'Dezelfde coupé. Een andere reden.', item: '🗓️ Reisdagboek',                                 difficulty: 'makkelijk', seed: 38101 },
+    { title: 'De grammofoon',          story: 'De plaat draaide. Niemand had hem opgezet.', item: '🎶 Grammofoonplaat',                     difficulty: 'gemiddeld', seed: 38198 },
+    { title: 'Goochelaar Otto komt terug', story: 'Zijn tweede truc was beter. Te goed.', item: '🐇 Konijn',                                difficulty: 'gemiddeld', seed: 38295 },
+    { title: 'De kroonluchter',        story: 'Eén kristal miste. Het lag drie wagons verderop.', item: '💎 Kristal',                      difficulty: 'moeilijk',  seed: 38392 },
+    { title: 'Stoker Jules ziet alles', story: 'Vanaf de locomotief zag hij elke wagon. Zei hij.', item: '🔥 Kolenschep',                  difficulty: 'gemiddeld', seed: 38489 },
+    { title: 'De bar sluit',           story: 'De laatste ronde. De laatste gast.', item: '🍸 Cocktailglas',                                difficulty: 'moeilijk',  seed: 38586 },
+    { title: 'De nacht zonder maan',   story: 'Aardedonker. Iemand kende de weg.', item: '🌑 Gedoofde lamp',                                difficulty: 'moeilijk',  seed: 38683 },
+    { title: 'Barones Von Stahl bekent', story: 'Ze bekende alles. Behalve de moord.', item: '🧾 Bekentenis',                              difficulty: 'moeilijk',  seed: 38780 }
+  ]},
+  { key: 'trein-5', theme: 'trein', part: 5, icon: '🎻', title: 'Deel V · Het feest in de salonwagen',
+    intro: 'Nieuwjaar in de salonwagen. Om twaalf uur gaat het licht uit. Om vijf over twaalf ontbreekt er iemand.',
+    outro: 'Het nieuwe jaar begint. De salonwagen is opgeruimd, op één stoel na.',
+    briefing: 'Een feest in een smalle wagon: veel mensen, weinig plek. Begin met wie zegt alleen te zijn geweest, dat ruimt een hele wagon op.',
+    cases: [
+    { title: 'Middernacht in de trein', story: 'Twaalf slagen. Eén gil.', item: '🎉 Feesttoeter',                                          difficulty: 'makkelijk', seed: 48101 },
+    { title: 'Het strijkkwartet',      story: 'Vier muzikanten, drie violen.', item: '🎻 Viool',                                            difficulty: 'gemiddeld', seed: 48198 },
+    { title: 'Actrice Lola zingt',     story: 'De salon hoorde haar. De bar ook. Onmogelijk.', item: '🎤 Microfoon',                        difficulty: 'gemiddeld', seed: 48295 },
+    { title: 'De champagnekoeler',     story: 'Het ijs was gesmolten. Het glas ernaast onaangeraakt.', item: '🧊 IJsemmer',                 difficulty: 'moeilijk',  seed: 48392 },
+    { title: 'Reiziger Sami danst',    story: 'Hij danste met iedereen. Behalve met één.', item: '💃 Dansschoen',                           difficulty: 'gemiddeld', seed: 48489 },
+    { title: 'Verpleegster Ans telt',  story: 'Ze telde de gasten. Er ontbrak er een. Er was er een te veel.', item: '📝 Gastenlijst',     difficulty: 'moeilijk',  seed: 48586 },
+    { title: 'Het vuurwerk',           story: 'Buiten vuurwerk. Binnen een knal.', item: '🎆 Vuurpijl',                                     difficulty: 'moeilijk',  seed: 48683 },
+    { title: 'De laatste dans',        story: 'Toen het licht aanging, stond er iemand te veel op de dansvloer.', item: '🥂 Champagneglas', difficulty: 'moeilijk', seed: 48780 }
+  ]},
+  { key: 'trein-6', theme: 'trein', part: 6, icon: '🏁', title: 'Deel VI · Eindstation',
+    intro: 'De laatste rit van de nachttrein. Bij het eindstation wordt hij gesloopt. Iemand wil dat niet meemaken.',
+    outro: 'Eindstation. De trein gaat naar de sloop, de dader naar de politie, en jij naar huis.',
+    briefing: 'De allerlaatste zaken van de trein en de zwaarste. Wie alleen was in een wagon sluit iedereen daar uit; begin daar.',
+    cases: [
+    { title: 'De laatste rit',         story: 'De laatste keer dat de fluit klonk.', item: '🚂 Fluit',                                      difficulty: 'makkelijk', seed: 58101 },
+    { title: 'Schaakmeester Ivo geeft op', story: 'Hij gaf de partij op. En iets anders.', item: '♚ Koning',                                difficulty: 'gemiddeld', seed: 58198 },
+    { title: 'De locomotief',          story: 'Niemand mocht in de locomotief. Iemand was er.', item: '🔧 Moersleutel',                     difficulty: 'moeilijk',  seed: 58295 },
+    { title: 'Weduwe Duval pakt in',   story: 'Twee koffers. Eén ervan niet van haar.', item: '🧳 Tweede koffer',                           difficulty: 'moeilijk',  seed: 58392 },
+    { title: 'Het laatste diner',      story: 'De kok kookte voor acht. Zeven aten.', item: '🍽️ Zilveren cloche',                          difficulty: 'gemiddeld', seed: 58489 },
+    { title: 'De bagagewagen',         story: 'Tussen de koffers lag meer dan bagage.', item: '🏷️ Bagagelabel',                            difficulty: 'moeilijk',  seed: 58586 },
+    { title: 'Stoker Jules stookt niet meer', story: 'De ketel was koud. Iemand had het vuur gedoofd.', item: '🧯 Emmer water',             difficulty: 'moeilijk',  seed: 58683 },
+    { title: 'Eindstation',            story: 'De trein stopt. De laatste vraag.', item: '🏁 Eindbord',                                     difficulty: 'moeilijk',  seed: 58780 }
   ]}
 ];
 
 // Eindeloos archief: genummerde dossiers, thema wisselt per dossier,
 // moeilijkheid loopt mee. Nooit op.
-const ARCHIVE_THEMES = ['landhuis', 'piraten', 'hotel', 'ruimte'];
+const ARCHIVE_THEMES = ['landhuis', 'piraten', 'hotel', 'ruimte', 'museum', 'trein'];
 const ARCHIVE_STORIES = [
   'Een oud dossier uit het archief. De feiten zijn koud, de vraag niet.',
   'Niemand heeft deze zaak ooit gesloten. Tot nu.',

@@ -379,6 +379,43 @@ vertaald naar de kaart:
   je te wachten staat (aantal delen en zaken, minigames, kisten). Bij een
   nieuw deel: icoon, titel, intro en de belofte van de kist.
 
+## Wie is wie, en twee nieuwe werelden (15 sep)
+
+Jaimy: "in game vind ik het lastig om te herkennen wie wie is … als ik naar de
+volgende stap ga ben ik alweer kwijt wie wie is. Na Station Orion moeten andere
+thema's komen, dit mag je bedenken en samen met Figma."
+
+- **Wie is wie.** Elke geplaatste verdachte draagt op het bord een naamkaartje
+  in zijn eigen kleur ("Pike", "Cross", "Nik": `Themes.shortName`). In de
+  kiezer staat onder een geplaatste naam zijn kamer ("✓ Kelder"), de rand van
+  de chip heeft de kleur van de verdachte, en als je een verklaring aantikt
+  licht niet alleen de kamer op maar ook het vakje van de spreker. Ook in de
+  minigames.
+- **Het Museum** (wereld 5, open na 12 zaken): nacht in het Museum van
+  Vlierbeek, conservator Adriaan Vos, terrazzovloer, twaalf zalen (Egyptische
+  Zaal, Dinozaal, Kluis, Depot …), meubels sarcofaag / schilderij / dinoskelet /
+  vitrine / standbeeld, cast Gids Fenna, Curator Bas, Restaurateur Imke,
+  Nachtwaker Ruud, Professor Adebayo, Kunsthandelaar Vic, Stagiair Noor,
+  Schoonmaker Piet. Delen: Na sluitingstijd · De verdwenen diamant · De
+  tentoonstelling · Het depot · De nacht van de dino's · Het geheim van
+  Vlierbeek.
+- **De Nachttrein** (wereld 6, open na 16 zaken): de nachttrein naar Wenen,
+  1934, conducteur Leon Marchetti, tapijtvloer, twaalf wagons (Restauratiewagen,
+  Salonwagen, Coupé A/B, Locomotief …), meubels hutkoffer / samovar /
+  grammofoon / bank / kroonluchter, cast Barones Von Stahl, Goochelaar Otto,
+  Schaakmeester Ivo, Verpleegster Ans, Reiziger Sami, Actrice Lola, Stoker
+  Jules, Weduwe Duval. Delen: Vertrek · De sneeuw · De grens · De Oriënt-route
+  · Het feest in de salonwagen · Eindstation.
+- Elke wereld heeft eigen kaartkunst (banner en zeven decoraties), een eigen
+  kaartachtergrond, weektitels, een wereldmedaille en 48 bewijsstukken. Totaal
+  nu 288 zaken, 864 sterren, 36 minigames en 36 bewijskisten.
+- **Figma**: `docs/werelden.html` is een conceptbord met alle zes werelden
+  (banner, palet, cast, meubels, ruimtes, delen) en twee ideeën voor daarna,
+  **Het Circus** en **De Skihut**. Het staat in Figma als
+  "Crimson Ledger · Werelden" (https://www.figma.com/design/RCm5uHCwOEnYs4CJDxnr29)
+  om samen verder te tekenen; de pagina is via de capture-toolbar opnieuw te
+  vangen na wijzigingen.
+
 ## Openstaande punten (volgorde van voorstel)
 
 1. App Store: stappen in `store/CHECKLIST.md` (Apple-account, archiveren, uploaden).

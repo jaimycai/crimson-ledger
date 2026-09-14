@@ -120,12 +120,81 @@ const THEMES = [
       { label: 'Bioloog Wren',    color: '#C2185B', style: { hair: 1, hat: 'helmet' } }
     ],
     outro: 'De sluizen gaan weer open. De moordenaar vliegt geboeid mee naar huis.'
+  },
+  {
+    id: 'museum', unlock: 12, icon: '🏛️', title: 'Het Museum', short: 'Museum',
+    map: { accent: '#2F6F6D', ring: '#D4A64A' }, tagline: 'Na sluitingstijd. Alle deuren op slot, één conservator op de vloer.',
+    intro: 'Het Museum van Vlierbeek, nacht. Het alarm ging niet af, de deuren zaten dicht, en de conservator ligt tussen de beelden. Wie binnen was, is nog binnen.',
+    victimName: 'Conservator Adriaan Vos', roomWord: 'zaal', roomWordPlural: 'zalen', floor: 'terrazzo',
+    rooms: [
+      { name: 'Egyptische Zaal', article: 'de', color: '#E3C58E' }, { name: 'Schilderijenzaal', article: 'de', color: '#E8A798' },
+      { name: 'Dinozaal', article: 'de', color: '#B8D9A1' }, { name: 'Kluis', article: 'de', color: '#C1B3A0' },
+      { name: 'Werkplaats', article: 'de', color: '#D9C7A6' }, { name: 'Museumwinkel', article: 'de', color: '#E3B7D6' },
+      { name: 'Hal', article: 'de', color: '#B9AEDC' }, { name: 'Archief', article: 'het', color: '#F0CE8E' },
+      { name: 'Beeldentuin', article: 'de', color: '#BFD8B0' }, { name: 'Depot', article: 'het', color: '#D0C9BD' },
+      { name: 'Kantoor', article: 'het', color: '#A8BEE0' }, { name: 'Museumcafé', article: 'het', color: '#9FC8C8' }
+    ],
+    furniture: [
+      { id: 'sarcofaag', nl: 'een sarcofaag' }, { id: 'schilderij', nl: 'een schilderij' }, { id: 'skelet', nl: 'een dinoskelet' },
+      { id: 'vitrine', nl: 'een vitrine' }, { id: 'beeld', nl: 'een standbeeld' }
+    ],
+    suspects: [
+      { label: 'Gids Fenna',          color: '#B85C5C', style: { hair: 1, glasses: true } },
+      { label: 'Curator Bas',         color: '#5C7AB8', style: { hair: 0, bowtie: true } },
+      { label: 'Restaurateur Imke',   color: '#8B5CB8', style: { hair: 2 } },
+      { label: 'Nachtwaker Ruud',     color: '#2C3E50', style: { hair: 3, hat: 'cap', moustache: true } },
+      { label: 'Professor Adebayo',   color: '#7B5E3B', style: { hair: 4, glasses: true, beard: true } },
+      { label: 'Kunsthandelaar Vic',  color: '#B8955C', style: { hair: 3, hat: 'tophat' } },
+      { label: 'Stagiair Noor',       color: '#C2185B', style: { hair: 1 } },
+      { label: 'Schoonmaker Piet',    color: '#5C8B5E', style: { hair: 0, hat: 'cap' } }
+    ],
+    outro: 'Het alarm gaat weer aan. De dader gaat mee, de collectie blijft.'
+  },
+  {
+    id: 'trein', unlock: 16, icon: '🚂', title: 'De Nachttrein', short: 'Nachttrein',
+    map: { accent: '#1F4E3D', ring: '#C9A227' }, tagline: 'Twaalf wagons, één tunnel, en een conducteur die zijn ronde nooit afmaakte.',
+    intro: 'De nachttrein naar Wenen, 1934. In een tunnel valt het licht uit. Als het terugkomt, ligt de conducteur in de restauratiewagen. De volgende halte is pas om zes uur.',
+    victimName: 'Conducteur Leon Marchetti', roomWord: 'wagon', roomWordPlural: 'wagons', floor: 'carpet',
+    rooms: [
+      { name: 'Restauratiewagen', article: 'de', color: '#E8A798' }, { name: 'Salonwagen', article: 'de', color: '#E3C58E' },
+      { name: 'Coupé A', article: 'de', color: '#A8BEE0' }, { name: 'Coupé B', article: 'de', color: '#C7BEE3' },
+      { name: 'Bagagewagen', article: 'de', color: '#D6C3A5' }, { name: 'Keukenwagen', article: 'de', color: '#9FC8C8' },
+      { name: 'Postwagen', article: 'de', color: '#D9B8A0' }, { name: 'Barwagen', article: 'de', color: '#E3B7D6' },
+      { name: 'Kolenwagen', article: 'de', color: '#C1B3A0' }, { name: 'Dienstruimte', article: 'de', color: '#BFD8B0' },
+      { name: 'Locomotief', article: 'de', color: '#B0C4CC' }, { name: 'Balkon', article: 'het', color: '#F0CE8E' }
+    ],
+    furniture: [
+      { id: 'hutkoffer', nl: 'een hutkoffer' }, { id: 'samovar', nl: 'een samovar' }, { id: 'grammofoon', nl: 'een grammofoon' },
+      { id: 'bank', nl: 'een bank' }, { id: 'kroonluchter', nl: 'een kroonluchter' }
+    ],
+    suspects: [
+      { label: 'Barones Von Stahl',   color: '#8B5CB8', style: { hair: 2, glasses: true } },
+      { label: 'Goochelaar Otto',     color: '#2C3E50', style: { hair: 0, hat: 'tophat', moustache: true } },
+      { label: 'Schaakmeester Ivo',   color: '#5C7AB8', style: { hair: 3, beard: true } },
+      { label: 'Verpleegster Ans',    color: '#B85C5C', style: { hair: 1 } },
+      { label: 'Reiziger Sami',       color: '#B8955C', style: { hair: 4, hat: 'cap' } },
+      { label: 'Actrice Lola',        color: '#C2185B', style: { hair: 2 } },
+      { label: 'Stoker Jules',        color: '#5C8B5E', style: { hair: 0, hat: 'bandana' } },
+      { label: 'Weduwe Duval',        color: '#7B5E3B', style: { hair: 1, glasses: true } }
+    ],
+    outro: 'Bij zonsopgang rijdt de trein het station binnen. Eén reiziger stapt uit in handboeien.'
   }
 ];
+
+// Korte naam voor op het bord: "Majoor Pike" → "Pike", "Dr. Cross" → "Cross", "Clara" → "Clara".
+const TITLES = new Set(['dr.', 'majoor', 'tante', 'kok', 'bootsman', 'stuurman', 'juffrouw', 'kanonnier', 'dokter', 'scheepsjongen',
+  'gravin', 'portier', 'pianist', 'mevrouw', 'journalist', 'chef', 'butler', 'danseres', 'piloot', 'ingenieur', 'botanist', 'kadet',
+  'officier', 'bioloog', 'gids', 'curator', 'restaurateur', 'nachtwaker', 'professor', 'stagiair', 'schoonmaker', 'kunsthandelaar',
+  'barones', 'goochelaar', 'schaakmeester', 'verpleegster', 'reiziger', 'actrice', 'stoker', 'weduwe', 'conducteur']);
 
 const Themes = {
   list: () => THEMES,
   get: id => THEMES.find(t => t.id === id) || THEMES[0],
+  shortName(label) {
+    const parts = String(label || '').trim().split(/\s+/);
+    if (parts.length > 1 && TITLES.has(parts[0].toLowerCase())) return parts.slice(1).join(' ');
+    return parts[0] || '';
+  },
   forDay: dayNumber => THEMES[((dayNumber % THEMES.length) + THEMES.length) % THEMES.length]
 };
 

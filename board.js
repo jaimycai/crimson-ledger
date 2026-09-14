@@ -209,11 +209,15 @@ const Board = {
   // ── Verdachtenkiezer ──────────────────────────────────────
   renderSuspects() {
     const wrap = document.getElementById('board-suspects');
-    wrap.innerHTML = this.puzzle.suspects.map((s, i) =>
-      `<button type="button" class="sus-chip${i === this.active ? ' active' : ''}${this.placements[i] ? ' placed' : ''}" data-s="${i}">
+    const p = this.puzzle;
+    wrap.innerHTML = p.suspects.map((s, i) => {
+      const c = this.placements[i];
+      const room = c ? FloorPlan.roomOf(p.rooms, c.x, c.y) : null;
+      return `<button type="button" class="sus-chip${i === this.active ? ' active' : ''}${c ? ' placed' : ''}" data-s="${i}" style="--sc:${s.color}">
          <span class="sus-ava">${Avatars.suspect(s, i)}</span>
-         <span class="sus-name">${s.label}</span>
-       </button>`).join('');
+         <span class="sus-name">${s.label}${room ? `<small>✓ ${room.name}</small>` : ''}</span>
+       </button>`;
+    }).join('');
     wrap.querySelectorAll('.sus-chip').forEach(b => b.addEventListener('click', () => {
       if (this.dragDone) return;
       this.active = +b.dataset.s;
@@ -396,7 +400,7 @@ const Board = {
   clearFocus() {
     clearTimeout(this.focusTimer);
     this.focusClue = null;
-    document.querySelectorAll('#board-grid .bcell.lit, #board-grid .bcell.lit-furn').forEach(el => el.classList.remove('lit', 'lit-furn'));
+    document.querySelectorAll('#board-grid .bcell.lit, #board-grid .bcell.lit-furn, #board-grid .bcell.lit-sus').forEach(el => el.classList.remove('lit', 'lit-furn', 'lit-sus'));
     document.querySelectorAll('.bclue.active, .sus-chip.lit').forEach(el => el.classList.remove('active', 'lit'));
   },
   focusOnClue(i) {
@@ -424,6 +428,9 @@ const Board = {
     [clue.s, clue.a, clue.b].filter(v => v !== undefined).forEach(s => {
       const chip = document.querySelector(`.sus-chip[data-s="${s}"]`);
       if (chip) chip.classList.add('lit');
+      const c = this.placements[s];   // staat hij al op het bord? dan licht zijn vakje op
+      const cell = c && document.querySelector(`#board-grid .bcell[data-x="${c.x}"][data-y="${c.y}"]`);
+      if (cell) cell.classList.add('lit-sus');
     });
     this.buzz(8);
     this.focusTimer = setTimeout(() => this.clearFocus(), 2600);
@@ -463,7 +470,7 @@ const Board = {
       let inner = '';
       if (furn) inner += `<span class="bfurn">${Avatars.furniture(furn)}</span>`;
       if (isVictim) inner += `<span class="bvictim">${Avatars.victim()}</span>`;
-      if (who !== undefined) inner += `<span class="bsus">${Avatars.suspect(p.suspects[who], who)}</span>`;
+      if (who !== undefined) inner += `<span class="bsus">${Avatars.suspect(p.suspects[who], who)}</span><span class="bname" style="--sc:${p.suspects[who].color}">${Themes.shortName(p.suspects[who].label)}</span>`;
       if (marked && marked.size) inner += '<span class="bmarks">' + [...marked].map(i => `<i style="background:${p.suspects[i].color}"></i>`).join('') + '</span>';
       el.innerHTML = inner;
       el.classList.toggle('has-sus', who !== undefined);

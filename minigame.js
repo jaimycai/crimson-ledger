@@ -73,7 +73,7 @@ const MiniGame = {
       const furn = p.furniture.get(k), who = byCell.get(k);
       if (furn) inner += `<span class="bfurn">${Avatars.furniture(furn)}</span>`;
       if (p.victim.x === x && p.victim.y === y) inner += `<span class="bvictim">${Avatars.victim()}</span>`;
-      if (showSuspects && who !== undefined) inner += `<span class="bsus">${Avatars.suspect(p.suspects[who], who)}</span>`;
+      if (showSuspects && who !== undefined) inner += `<span class="bsus">${Avatars.suspect(p.suspects[who], who)}</span><span class="bname" style="--sc:${p.suspects[who].color}">${Themes.shortName(p.suspects[who].label)}</span>`;
       html += `<span class="bcell${(x + y) % 2 === 0 ? ' dark' : ''} ${edges.join(' ')}${who !== undefined ? ' has-sus' : ''}" data-x="${x}" data-y="${y}" data-room="${room.id}" style="--room:${room.color}">${inner}</span>`;
     }
     p.rooms.forEach(room => {
