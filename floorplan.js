@@ -1,3 +1,5 @@
+// Vertaalhulp: gebruikt de taalmotor (i18n.js) als die er is, anders de Nederlandse tekst.
+const FP_T = (s, ...v) => { const g = typeof globalThis !== 'undefined' ? globalThis.T : undefined; if (typeof g === 'function') return g(s, ...v); return typeof s === 'string' ? s : s.map((x, i) => x + (i < v.length ? String(v[i]) : '')).join(''); };
 // ============================================================
 // FLOORPLAN ENGINE v2 — ruimtelijke moordmysterie-puzzel
 //
@@ -63,9 +65,9 @@ const FloorPlan = (() => {
     };
   }
   const POS_NL = rw => ({
-    hoek:   { los: `in een hoek van een ${rw}`,               kamer: 'in een hoek' },
-    muur:   { los: 'tegen een muur, niet in een hoek',        kamer: 'tegen een muur, niet in een hoek' },
-    midden: { los: `midden in een ${rw}, niet tegen een muur`, kamer: 'in het midden, niet tegen een muur' }
+    hoek:   { los: FP_T`in een hoek van een ${rw}`,               kamer: FP_T('in een hoek') },
+    muur:   { los: FP_T('tegen een muur, niet in een hoek'),        kamer: FP_T('tegen een muur, niet in een hoek') },
+    midden: { los: FP_T`midden in een ${rw}, niet tegen een muur`, kamer: FP_T('in het midden, niet tegen een muur') }
   });
 
   const DIFF = {
@@ -404,23 +406,23 @@ const FloorPlan = (() => {
     const R = id => { const q = base.rooms.find(x => x.id === id); return `${q.article || 'de'} ${q.name}`; };
     const F = f => base.furnitureNl[f] || f;
     switch (clue.kind) {
-      case 'room':         return `${N(clue.s)} was in ${R(clue.room)}.`;
-      case 'not-room':     return `${N(clue.s)} was niet in ${R(clue.room)}.`;
-      case 'room-pos':     return `${N(clue.s)} was in ${R(clue.room)}, ${POS[clue.pos].kamer}.`;
-      case 'pos':          return `${N(clue.s)} stond ${POS[clue.pos].los}.`;
-      case 'room-with':    return `${N(clue.s)} was in een ${rw} met ${F(clue.furniture)}.`;
-      case 'next-to':      return `${N(clue.s)} stond direct naast ${F(clue.furniture)}.`;
-      case 'room-next':    return `${N(clue.s)} was in ${R(clue.room)}, direct naast ${F(clue.furniture)}.`;
-      case 'same-room':    return `${N(clue.a)} en ${N(clue.b)} waren in dezelfde ${rw}.`;
-      case 'diff-room':    return `${N(clue.a)} en ${N(clue.b)} waren niet in dezelfde ${rw}.`;
-      case 'adjacent':     return `${N(clue.a)} stond direct naast ${N(clue.b)}.`;
-      case 'not-adjacent': return `${N(clue.a)} stond niet direct naast ${N(clue.b)}.`;
-      case 'same-row':     return `${N(clue.a)} en ${N(clue.b)} stonden op dezelfde rij.`;
-      case 'same-col':     return `${N(clue.a)} en ${N(clue.b)} stonden in dezelfde kolom.`;
-      case 'left-of':      return `${N(clue.a)} stond links van ${N(clue.b)} op de plattegrond.`;
-      case 'above':        return `${N(clue.a)} stond hoger op de plattegrond dan ${N(clue.b)}.`;
-      case 'empty-room':   return `Er was niemand in ${R(clue.room)}.`;
-      case 'alone':        return `${N(clue.s)} was alleen in de ${rw}.`;
+      case 'room':         return FP_T`${N(clue.s)} was in ${R(clue.room)}.`;
+      case 'not-room':     return FP_T`${N(clue.s)} was niet in ${R(clue.room)}.`;
+      case 'room-pos':     return FP_T`${N(clue.s)} was in ${R(clue.room)}, ${POS[clue.pos].kamer}.`;
+      case 'pos':          return FP_T`${N(clue.s)} stond ${POS[clue.pos].los}.`;
+      case 'room-with':    return FP_T`${N(clue.s)} was in een ${rw} met ${F(clue.furniture)}.`;
+      case 'next-to':      return FP_T`${N(clue.s)} stond direct naast ${F(clue.furniture)}.`;
+      case 'room-next':    return FP_T`${N(clue.s)} was in ${R(clue.room)}, direct naast ${F(clue.furniture)}.`;
+      case 'same-room':    return FP_T`${N(clue.a)} en ${N(clue.b)} waren in dezelfde ${rw}.`;
+      case 'diff-room':    return FP_T`${N(clue.a)} en ${N(clue.b)} waren niet in dezelfde ${rw}.`;
+      case 'adjacent':     return FP_T`${N(clue.a)} stond direct naast ${N(clue.b)}.`;
+      case 'not-adjacent': return FP_T`${N(clue.a)} stond niet direct naast ${N(clue.b)}.`;
+      case 'same-row':     return FP_T`${N(clue.a)} en ${N(clue.b)} stonden op dezelfde rij.`;
+      case 'same-col':     return FP_T`${N(clue.a)} en ${N(clue.b)} stonden in dezelfde kolom.`;
+      case 'left-of':      return FP_T`${N(clue.a)} stond links van ${N(clue.b)} op de plattegrond.`;
+      case 'above':        return FP_T`${N(clue.a)} stond hoger op de plattegrond dan ${N(clue.b)}.`;
+      case 'empty-room':   return FP_T`Er was niemand in ${R(clue.room)}.`;
+      case 'alone':        return FP_T`${N(clue.s)} was alleen in de ${rw}.`;
       default: return '';
     }
   }
@@ -436,30 +438,30 @@ const FloorPlan = (() => {
     const one = t => ({ who: [clue.s], text: t });
     const two = t => ({ who: [clue.a, clue.b], text: t });
     switch (clue.kind) {
-      case 'room':         return one(`Ik was in ${R(clue.room)}.`);
-      case 'not-room':     return one(`Ik was niet in ${R(clue.room)}.`);
-      case 'room-pos':     return one(`Ik was in ${R(clue.room)}, ${POS[clue.pos].kamer}.`);
-      case 'pos':          return one(`Ik stond ${POS[clue.pos].los}.`);
-      case 'room-with':    return one(`Ik was in een ${rw} met ${F(clue.furniture)}.`);
-      case 'next-to':      return one(`Ik stond direct naast ${F(clue.furniture)}.`);
-      case 'room-next':    return one(`Ik was in ${R(clue.room)}, direct naast ${F(clue.furniture)}.`);
-      case 'same-room':    return two(`Ik was in dezelfde ${rw} als ${N(clue.b)}.`);
-      case 'diff-room':    return two(`Ik was niet in dezelfde ${rw} als ${N(clue.b)}.`);
-      case 'adjacent':     return two(`Ik stond direct naast ${N(clue.b)}.`);
-      case 'not-adjacent': return two(`Ik stond niet direct naast ${N(clue.b)}.`);
-      case 'same-row':     return two(`${N(clue.b)} en ik stonden op dezelfde rij.`);
-      case 'same-col':     return two(`${N(clue.b)} en ik stonden in dezelfde kolom.`);
-      case 'left-of':      return two(`Ik stond links van ${N(clue.b)} op de plattegrond.`);
-      case 'above':        return two(`Ik stond hoger op de plattegrond dan ${N(clue.b)}.`);
-      case 'empty-room':   return { who: [], text: `Volgens het rapport was er niemand in ${R(clue.room)}.` };
-      case 'alone':        return one(`Ik was alleen in de ${rw}.`);
+      case 'room':         return one(FP_T`Ik was in ${R(clue.room)}.`);
+      case 'not-room':     return one(FP_T`Ik was niet in ${R(clue.room)}.`);
+      case 'room-pos':     return one(FP_T`Ik was in ${R(clue.room)}, ${POS[clue.pos].kamer}.`);
+      case 'pos':          return one(FP_T`Ik stond ${POS[clue.pos].los}.`);
+      case 'room-with':    return one(FP_T`Ik was in een ${rw} met ${F(clue.furniture)}.`);
+      case 'next-to':      return one(FP_T`Ik stond direct naast ${F(clue.furniture)}.`);
+      case 'room-next':    return one(FP_T`Ik was in ${R(clue.room)}, direct naast ${F(clue.furniture)}.`);
+      case 'same-room':    return two(FP_T`Ik was in dezelfde ${rw} als ${N(clue.b)}.`);
+      case 'diff-room':    return two(FP_T`Ik was niet in dezelfde ${rw} als ${N(clue.b)}.`);
+      case 'adjacent':     return two(FP_T`Ik stond direct naast ${N(clue.b)}.`);
+      case 'not-adjacent': return two(FP_T`Ik stond niet direct naast ${N(clue.b)}.`);
+      case 'same-row':     return two(FP_T`${N(clue.b)} en ik stonden op dezelfde rij.`);
+      case 'same-col':     return two(FP_T`${N(clue.b)} en ik stonden in dezelfde kolom.`);
+      case 'left-of':      return two(FP_T`Ik stond links van ${N(clue.b)} op de plattegrond.`);
+      case 'above':        return two(FP_T`Ik stond hoger op de plattegrond dan ${N(clue.b)}.`);
+      case 'empty-room':   return { who: [], text: FP_T`Volgens het rapport was er niemand in ${R(clue.room)}.` };
+      case 'alone':        return one(FP_T`Ik was alleen in de ${rw}.`);
       default: return { who: [], text: '' };
     }
   }
   const caseText = base => {
     const q = base.rooms.find(x => x.id === base.victim.roomId);
-    return `${base.theme.victimName || 'Het slachtoffer'} werd gevonden in ${q.article || 'de'} ${q.name}. ` +
-           `De moordenaar was de enige die zich in die ${base.theme.roomWord || 'kamer'} bevond.`;
+    return FP_T`${base.theme.victimName || FP_T('Het slachtoffer')} werd gevonden in ${q.article || 'de'} ${q.name}. ` +
+           FP_T`De moordenaar was de enige die zich in die ${base.theme.roomWord || 'kamer'} bevond.`;
   };
 
   // ── Generatie ───────────────────────────────────────────────
@@ -542,18 +544,18 @@ const FloorPlan = (() => {
       const bad = puzzle.clues.findIndex(c => holds(c, A1, puzzle) === false || holds(c, P, puzzle) === false);
       if (bad !== -1) {
         return { type: 'mistake', suspect: i, clues: [bad], cells: single,
-                 text: `${N(i)} staat verkeerd. Aanwijzing ${bad + 1} zegt: "${puzzle.clueTexts[bad]}"`,
-                 detail: 'Haal de verdachte weg en kijk welke vakjes die aanwijzing wél toelaat.' };
+                 text: FP_T`${N(i)} staat verkeerd. Aanwijzing ${bad + 1} zegt: "${puzzle.clueTexts[bad]}"`,
+                 detail: FP_T('Haal de verdachte weg en kijk welke vakjes die aanwijzing wél toelaat.') };
       }
       if (victimRule(P, puzzle) === false) {
         return { type: 'mistake', suspect: i, clues: [], cells: single,
-                 text: `Er staan twee verdachten in de ${puzzle.theme.roomWord || 'kamer'} van het slachtoffer. Alleen de moordenaar was daar.`,
-                 detail: 'Precies één persoon bevond zich in die kamer.' };
+                 text: FP_T`Er staan twee verdachten in de ${puzzle.theme.roomWord || 'kamer'} van het slachtoffer. Alleen de moordenaar was daar.`,
+                 detail: FP_T('Precies één persoon bevond zich in die kamer.') };
       }
       const rel = puzzle.clues.findIndex(c => mentions(c, i));
       return { type: 'mistake', suspect: i, clues: rel === -1 ? [] : [rel], cells: single,
-               text: `${N(i)} staat niet op de juiste plek.`,
-               detail: rel === -1 ? 'Kijk nog eens naar de aanwijzingen over de anderen.' : `Lees aanwijzing ${rel + 1} nog eens.` };
+               text: FP_T`${N(i)} staat niet op de juiste plek.`,
+               detail: rel === -1 ? FP_T('Kijk nog eens naar de aanwijzingen over de anderen.') : FP_T`Lees aanwijzing ${rel + 1} nog eens.` };
     }
 
     // 2. Redeneerstap: kandidaten met de juiste plaatsingen als vast gegeven
@@ -564,21 +566,21 @@ const FloorPlan = (() => {
       if (fixed[i]) continue;
       if (best === -1 || cands[i].length < cands[best].length) best = i;
     }
-    if (best === -1) return { type: 'done', clues: [], cells: [], text: 'Iedereen staat goed. Wie was alleen met het slachtoffer?', detail: '' };
+    if (best === -1) return { type: 'done', clues: [], cells: [], text: FP_T('Iedereen staat goed. Wie was alleen met het slachtoffer?'), detail: '' };
 
     const related = puzzle.clues.map((c, idx) => mentions(c, best) ? idx : -1).filter(i => i !== -1);
     const nrs = related.map(i => i + 1).join(', ');
     if (cands[best].length === 1) {
       return { type: 'deduce', suspect: best, clues: related, cells: cands[best],
-               text: `${N(best)} kan maar op één plek staan.`,
-               detail: related.length ? `Combineer aanwijzing ${nrs} met de spelregel over het slachtoffer.` : 'De spelregel over het slachtoffer dwingt dit af.' };
+               text: FP_T`${N(best)} kan maar op één plek staan.`,
+               detail: related.length ? FP_T`Combineer aanwijzing ${nrs} met de spelregel over het slachtoffer.` : FP_T('De spelregel over het slachtoffer dwingt dit af.') };
     }
     const roomIds = new Set(cands[best].map(c => roomAt(puzzle, c).id));
     const one = roomIds.size === 1 ? puzzle.rooms.find(q => q.id === [...roomIds][0]) : null;
-    const roomTxt = one ? `in ${one.article || 'de'} ${one.name}` : `verdeeld over ${roomIds.size} ${puzzle.theme.roomWordPlural || 'kamers'}`;
+    const roomTxt = one ? FP_T`in ${one.article || 'de'} ${one.name}` : FP_T`verdeeld over ${roomIds.size} ${puzzle.theme.roomWordPlural || 'kamers'}`;
     return { type: 'narrow', suspect: best, clues: related, cells: cands[best],
-             text: `Begin met ${N(best)}: er zijn nog maar ${cands[best].length} mogelijke vakjes, ${roomTxt}.`,
-             detail: related.length ? `Aanwijzing ${nrs} beperkt de opties. Streep vakjes weg die er niet aan voldoen.` : 'Gebruik de plaatsen van de anderen om verder te snoeien.' };
+             text: FP_T`Begin met ${N(best)}: er zijn nog maar ${cands[best].length} mogelijke vakjes, ${roomTxt}.`,
+             detail: related.length ? FP_T`Aanwijzing ${nrs} beperkt de opties. Streep vakjes weg die er niet aan voldoen.` : FP_T('Gebruik de plaatsen van de anderen om verder te snoeien.') };
   }
 
   return { generate, fromLayout, solve, candidates, check, holds, hint, formatClue, statement, rng,

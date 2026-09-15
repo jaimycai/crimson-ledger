@@ -1,3 +1,5 @@
+// Vertaalhulp: gebruikt de taalmotor (i18n.js) als die er is, anders de Nederlandse tekst.
+const AP_T = (s, ...v) => { const g = typeof globalThis !== 'undefined' ? globalThis.T : undefined; if (typeof g === 'function') return g(s, ...v); return typeof s === 'string' ? s : s.map((x, i) => x + (i < v.length ? String(v[i]) : '')).join(''); };
 // ============================================================
 // CRIMSON LEDGER — App Controller
 // Navigatie, logic grid gameplay, hints, timer, dagelijkse zaak
@@ -34,6 +36,10 @@ const App = {
   //  INITIALISATIE
   // ══════════════════════════════════════════════════════════
   init() {
+    if (typeof I18n !== 'undefined') {
+      I18n.init();
+      if (I18n.lang === 'en') { const cl = document.querySelector('.menu-classic'); if (cl) cl.hidden = true; }   // het klassieke raster is alleen Nederlands
+    }
     this.bootSplash();
     this.loadStreak();
     this.bindNavigation();
@@ -68,7 +74,7 @@ const App = {
       if (screen.classList.contains('loaded')) return;
       set(100);
       const btn = document.getElementById('btn-splash-start');
-      if (btn && this.storageGet('crimson-board-tutorial-done')) btn.textContent = 'Verder';
+      if (btn && this.storageGet('crimson-board-tutorial-done')) btn.textContent = AP_T('Verder');
       screen.classList.add('loaded');
       this.hideNativeSplash();
     };
@@ -106,7 +112,7 @@ const App = {
     const launch = (seed, daily, themeId) => {
       const diff = daily ? 'gemiddeld' : (this.selectedDifficulty || 'gemiddeld');
       if (Board.start(diff, seed, daily, themeId || this.selectedTheme)) this.navigateTo('board');
-      else this.showToast('⚠️', 'Kon geen plattegrond genereren, probeer opnieuw.');
+      else this.showToast('⚠️', AP_T('Kon geen plattegrond genereren, probeer opnieuw.'));
     };
     document.getElementById('btn-board-start').addEventListener('click', () => launch(0, false));
     document.getElementById('btn-board-daily').addEventListener('click', () => {
@@ -145,13 +151,13 @@ const App = {
   nextCampaignCase() { return Campaign.nextOverall(t => this.themeUnlocked(Themes.get(t)), this.storageGet('crimson-last-world')); },
   caseLabel(c) {
     if (!c) return 'Alles opgelost';
-    if (c.chapter === Campaign.ARCHIVE) return `Archief · ${c.title}`;
-    return `${Campaign.chapter(c.chapter).title.split(' · ')[0]} · Zaak ${c.idx + 1}`;
+    if (c.chapter === Campaign.ARCHIVE) return AP_T`Archief · ${c.title}`;
+    return AP_T`${Campaign.chapter(c.chapter).title.split(' · ')[0]} · Zaak ${c.idx + 1}`;
   },
   updateCampaignProgress() {
     const el = document.getElementById('campaign-progress');
     if (!el) return;
-    el.textContent = `${Campaign.doneCount()} van ${Campaign.total()} zaken opgelost`;
+    el.textContent = AP_T`${Campaign.doneCount()} van ${Campaign.total()} zaken opgelost`;
     const c = this.nextCampaignCase();
     const nx = document.getElementById('campaign-next'), ic = document.getElementById('campaign-icon');
     if (nx) nx.textContent = this.caseLabel(c);
@@ -214,7 +220,7 @@ const App = {
     const archOpen = Campaign.chapterOpen(Campaign.ARCHIVE);
     const arch = { theme: 'archief', th: null, open: archOpen, need: 0, top: y, items: [], archive: true };
     y += 8;
-    arch.items.push({ type: 'sign', title: '📁 Het archief · eindeloos', open: archOpen, done: false, y: y + 10 });
+    arch.items.push({ type: 'sign', title: AP_T('📁 Het archief · eindeloos'), open: archOpen, done: false, y: y + 10 });
     y += 88;
     Campaign.archiveList(2).forEach(c => {
       const it = { type: 'node', theme: c.theme, chapter: Campaign.ARCHIVE, idx: c.idx, num: c.title, title: c.title, story: c.story, difficulty: c.difficulty,
@@ -240,7 +246,7 @@ const App = {
     // wereldkiezer: springt naar de banner van die wereld
     document.getElementById('world-tabs').innerHTML = Themes.list().map(t => {
       const sec = L.sections.find(s => s.theme === t.id);
-      return `<button type="button" class="world-tab" data-theme="${t.id}">${t.icon} ${t.short}${sec.buy ? '<small>🔒 Pass</small>' : sec.need > 0 ? `<small>nog ${sec.need} ${sec.need === 1 ? 'zaak' : 'zaken'}</small>` : ''}</button>`;
+      return `<button type="button" class="world-tab" data-theme="${t.id}">${t.icon} ${t.short}${sec.buy ? '<small>🔒 Pass</small>' : sec.need > 0 ? `<small>${AP_T`nog ${sec.need} ${sec.need === 1 ? AP_T('zaak') : AP_T('zaken')}`}</small>` : ''}</button>`;
     }).join('');
     document.querySelectorAll('.world-tab').forEach(b => b.addEventListener('click', () => this.scrollToWorld(b.dataset.theme)));
     // secties: banner, pad, decoraties, wegwijzers, knopen
@@ -253,10 +259,10 @@ const App = {
       let html = `<div class="map-world map-${sec.theme}${sec.open ? '' : ' locked'}" data-theme="${sec.theme}" style="top:${sec.top}px;height:${sec.height}px;--wa:${accent};--wr:${ring}">`;
       sec.items.filter(i => i.type === 'unit').forEach(u => { html += `<div class="map-unit part-${u.part}${u.open ? '' : ' locked'}" style="top:${u.top - sec.top}px;height:${u.height}px"></div>`; });
       if (th) {
-        const sub = sec.open ? `${sec.done} van ${sec.total} zaken · ★ ${sec.stars}/${sec.total * 3}`
-                             : sec.buy ? `🔒 Deze wereld hoort bij de Crimson Pass, of koop hem los voor ${Store.price(Store.worldId(th.id))}. De dagelijkse zaak en de zaak van de week spelen hier gratis.`
-                             : `🔒 Los nog ${sec.need} ${sec.need === 1 ? 'zaak' : 'zaken'} op (vrij spel of dagelijks) om deze wereld te openen`;
-        const buyBtn = sec.buy ? `<button type="button" class="btn btn-gold btn-sm map-buy" data-theme="${th.id}">🛒 Ontgrendel ${th.title}</button>` : '';
+        const sub = sec.open ? AP_T`${sec.done} van ${sec.total} zaken · ★ ${sec.stars}/${sec.total * 3}`
+                             : sec.buy ? AP_T`🔒 Deze wereld hoort bij de Crimson Pass, of koop hem los voor ${Store.price(Store.worldId(th.id))}. De dagelijkse zaak en de zaak van de week spelen hier gratis.`
+                             : AP_T`🔒 Los nog ${sec.need} ${sec.need === 1 ? AP_T('zaak') : AP_T('zaken')} op (vrij spel of dagelijks) om deze wereld te openen`;
+        const buyBtn = sec.buy ? `<button type="button" class="btn btn-gold btn-sm map-buy" data-theme="${th.id}">${AP_T`🛒 Ontgrendel ${th.title}`}</button>` : '';
         html += `<div class="map-banner">${MapArt.banner(th.id)}<div class="map-banner-card"><b>${th.icon} ${th.title}</b><span>${sub}</span>${buyBtn}</div></div>`;
       }
       html += `<svg class="map-path" width="${W}" height="${sec.height}" viewBox="0 0 ${W} ${sec.height}" aria-hidden="true"><path d="${d}"/></svg>`;
@@ -269,19 +275,19 @@ const App = {
         if (it.type === 'unit') return;
         if (it.type === 'sign') { html += `<span class="msign${it.done ? ' done' : it.open ? '' : ' locked'}" style="top:${yy}px">${it.open ? '' : '🔒 '}${it.title}${it.count ? `<small>${it.count}</small>` : ''}</span>`; return; }
         if (it.type === 'mini') {
-          const name = it.kind === 'liar' ? 'Wie liegt?' : 'Vluchtige blik';
+          const name = it.kind === 'liar' ? AP_T('Wie liegt?') : AP_T('Vluchtige blik');
           const sub = it.state === 'done' ? '★'.repeat(it.best) + '☆'.repeat(3 - it.best) : name;
           html += `<button type="button" class="mmini ${it.state}" style="left:${it.x}%;top:${yy}px" data-chapter="${it.chapter}" data-after="${it.afterNum}" aria-label="Minigame ${name}">` +
                   `${it.state === 'locked' ? '🔒' : it.kind === 'liar' ? '🎯' : '👁️'}<span class="mnode-stars">${sub}</span></button>`;
           return;
         }
         if (it.type === 'chest') {
-          html += `<button type="button" class="mchest ${it.state}" style="left:${it.x}%;top:${yy}px" data-chapter="${it.chapter}" aria-label="Bewijskist">` +
-                  `${this.chestSvg()}<span class="mnode-stars">${it.state === 'done' ? 'geopend' : it.state === 'open' ? 'Open mij!' : 'bewijskist'}</span></button>`;
+          html += `<button type="button" class="mchest ${it.state}" style="left:${it.x}%;top:${yy}px" data-chapter="${it.chapter}" aria-label="${AP_T('Bewijskist')}">` +
+                  `${this.chestSvg()}<span class="mnode-stars">${it.state === 'done' ? AP_T('geopend') : it.state === 'open' ? AP_T('Open mij!') : AP_T('bewijskist')}</span></button>`;
           return;
         }
         const stars = it.stars ? '★'.repeat(it.stars) + (it.stars < 3 ? `<span class="miss">${'★'.repeat(3 - it.stars)}</span>` : '') : '';
-        html += `<button type="button" class="mnode ${it.state}" style="left:${it.x}%;top:${yy}px" data-chapter="${it.chapter}" data-idx="${it.idx}" aria-label="${it.archive ? it.title : 'Zaak ' + it.num + ': ' + it.title}">` +
+        html += `<button type="button" class="mnode ${it.state}" style="left:${it.x}%;top:${yy}px" data-chapter="${it.chapter}" data-idx="${it.idx}" aria-label="${it.archive ? it.title : AP_T`Zaak ${it.num}: ${it.title}`}">` +
                 `${it.state === 'locked' ? '🔒' : it.archive ? '📁' : it.num}${stars ? `<span class="mnode-stars">${stars}</span>` : ''}${it === current ? '<span class="mnode-pin">🕵️</span>' : ''}</button>`;
       });
       return html + '</div>';
@@ -290,19 +296,19 @@ const App = {
       this.openNode(L.nodes.find(n => n.chapter === b.dataset.chapter && n.idx === +b.dataset.idx))));
     canvas.querySelectorAll('.map-buy').forEach(b => b.addEventListener('click', () => this.openStore('world:' + b.dataset.theme)));
     canvas.querySelectorAll('.mmini').forEach(b => b.addEventListener('click', () => {
-      if (b.classList.contains('locked')) return this.showToast('🔒', `Los eerst zaak ${b.dataset.after} op, dan gaat deze minigame open.`);
+      if (b.classList.contains('locked')) return this.showToast('🔒', AP_T`Los eerst zaak ${b.dataset.after} op, dan gaat deze minigame open.`);
       if (typeof MiniGame !== 'undefined' && MiniGame.start(b.dataset.chapter)) this.navigateTo('mini');
     }));
     canvas.querySelectorAll('.mchest').forEach(b => b.addEventListener('click', () => {
-      if (b.classList.contains('locked')) return this.showToast('🔒', 'Maak eerst alle acht zaken van dit deel af, dan gaat de bewijskist open.');
-      if (b.classList.contains('done')) return this.showToast('🏅', 'Deze kist is al open. De stempel staat in de vitrine.');
+      if (b.classList.contains('locked')) return this.showToast('🔒', AP_T('Maak eerst alle acht zaken van dit deel af, dan gaat de bewijskist open.'));
+      if (b.classList.contains('done')) return this.showToast('🏅', AP_T('Deze kist is al open. De stempel staat in de vitrine.'));
       this.showChest(b.dataset.chapter);
     }));
     this.closeNode();
     // grote knop onderin
     const play = document.getElementById('btn-map-play');
-    if (current) { play.disabled = false; play.textContent = `▶ Speel ${current.archive ? current.title : 'zaak ' + current.num + ' · ' + current.title}`; }
-    else { play.disabled = true; play.textContent = '✓ Alles opgelost'; }
+    if (current) { play.disabled = false; play.textContent = AP_T`▶ Speel ${current.archive ? current.title : AP_T`zaak ${current.num} · ${current.title}`}`; }
+    else { play.disabled = true; play.textContent = AP_T('✓ Alles opgelost'); }
     this.mapTarget = current || L.nodes[L.nodes.length - 1];
     setTimeout(() => this.scrollToCurrent(), 0);
   },
@@ -345,15 +351,15 @@ const App = {
     const stars = it.stars ? '★'.repeat(it.stars) + '☆'.repeat(3 - it.stars) : '☆☆☆';
     const locked = it.state === 'locked';
     const th = Themes.get(it.theme);
-    const lockText = this.isPaidLocked(th) && !it.archive ? `${th.title} hoort bij de Crimson Pass. Ontgrendel de wereld in de winkel, of speel hier de dagelijkse zaak.`
-      : !this.themeUnlocked(th) && !it.archive ? `Los eerst ${th.unlock} zaken op (vrij spel of dagelijks) om ${th.title} te openen.`
-      : it.archive ? (Campaign.chapterOpen(Campaign.ARCHIVE) ? 'Los eerst het vorige dossier op.' : `Het archief opent na ${Campaign.ARCHIVE_UNLOCK} campagnezaken.`)
-      : it.idx === 0 ? 'Maak eerst het vorige deel af.' : `Los eerst zaak ${it.num - 1} op.`;
+    const lockText = this.isPaidLocked(th) && !it.archive ? AP_T`${th.title} hoort bij de Crimson Pass. Ontgrendel de wereld in de winkel, of speel hier de dagelijkse zaak.`
+      : !this.themeUnlocked(th) && !it.archive ? AP_T`Los eerst ${th.unlock} zaken op (vrij spel of dagelijks) om ${th.title} te openen.`
+      : it.archive ? (Campaign.chapterOpen(Campaign.ARCHIVE) ? AP_T('Los eerst het vorige dossier op.') : AP_T`Het archief opent na ${Campaign.ARCHIVE_UNLOCK} campagnezaken.`)
+      : it.idx === 0 ? AP_T('Maak eerst het vorige deel af.') : AP_T`Los eerst zaak ${it.num - 1} op.`;
     pop.innerHTML = `<div class="map-pop-card" style="--wa:${th.map.accent};--wr:${th.map.ring}">
-      <div class="map-pop-head"><h3>${it.archive ? `${it.title} · ${th.icon}` : `Zaak ${it.num}: ${it.title}`}</h3><span class="diff-pill diff-${it.difficulty}">${d.icon || ''} ${d.label || it.difficulty}</span></div>
+      <div class="map-pop-head"><h3>${it.archive ? `${it.title} · ${th.icon}` : AP_T`Zaak ${it.num}: ${it.title}`}</h3><span class="diff-pill diff-${it.difficulty}">${d.icon || ''} ${d.label || it.difficulty}</span></div>
       <p>${locked ? '🔒 ' + lockText : it.story}</p>
-      <p class="map-pop-rule">★★★ = zonder hint én in één keer goed · ★★ = één van de twee · ★ = opgelost</p>
-      <div class="map-pop-row"><span class="map-pop-best">Beste score: <b>${stars}</b></span>${locked ? '' : `<button type="button" class="btn btn-primary btn-sm" id="btn-pop-play">${it.stars ? 'Speel opnieuw' : 'Speel'}</button>`}</div>
+      <p class="map-pop-rule">${AP_T('★★★ = zonder hint én in één keer goed · ★★ = één van de twee · ★ = opgelost')}</p>
+      <div class="map-pop-row"><span class="map-pop-best">${AP_T('Beste score:')} <b>${stars}</b></span>${locked ? '' : `<button type="button" class="btn btn-primary btn-sm" id="btn-pop-play">${it.stars ? AP_T('Speel opnieuw') : AP_T('Speel')}</button>`}</div>
     </div>`;
     pop.hidden = false;
     const b = document.getElementById('btn-pop-play');
@@ -366,12 +372,12 @@ const App = {
   // Eerste zaak van een deel: eerst de "Nieuw deel"-splash, dan de briefing van Van Dam, dan het bord.
   startCampaignCase(key, idx) {
     const c = Campaign.caseAt(key, idx);
-    if (!c) return this.showToast('⚠️', 'Deze zaak kon niet geladen worden.');
+    if (!c) return this.showToast('⚠️', AP_T('Deze zaak kon niet geladen worden.'));
     if (this.isPaidLocked(Themes.get(c.theme))) return this.openStore('world:' + c.theme);
     const ch = Campaign.chapter(key);
     this.hideModal('chest-modal');
     const go = () => {
-      if (!Board.start(c.difficulty, c.seed, false, c.theme, c)) return this.showToast('⚠️', 'Deze zaak kon niet geladen worden.');
+      if (!Board.start(c.difficulty, c.seed, false, c.theme, c)) return this.showToast('⚠️', AP_T('Deze zaak kon niet geladen worden.'));
       this.storageSet('crimson-last-world', c.theme);
       this.navigateTo('board');
       this.showBriefing(c, ch);
@@ -392,7 +398,7 @@ const App = {
     const th = Themes.get(ch.theme), first = ch.part === 1, parts = Campaign.chaptersFor(th.id).length;
     const $ = id => document.getElementById(id);
     $('part-card').style.setProperty('--wa', th.map.accent);
-    $('part-ribbon').textContent = first ? '✨ Nieuwe wereld' : `Nieuw deel · ${ch.part} van ${parts}`;
+    $('part-ribbon').textContent = first ? AP_T('✨ Nieuwe wereld') : AP_T`Nieuw deel · ${ch.part} van ${parts}`;
     const banner = $('part-banner');
     banner.hidden = !first;
     banner.innerHTML = first ? MapArt.banner(th.id) : '';
@@ -404,9 +410,9 @@ const App = {
     cast.hidden = !first;
     cast.innerHTML = first ? th.suspects.map((sp, i) => `<span class="part-ava" style="--i:${i}">${Avatars.suspect(sp, i)}</span>`).join('') : '';
     $('part-reward').textContent = first
-      ? `${th.suspects.length} verdachten, ${parts} delen, ${Campaign.worldTotal(th.id)} zaken. Halverwege elk deel een minigame, aan het eind een bewijskist.`
-      : `Halverwege wacht een minigame, aan het eind een bewijskist: punten, een vrije dag en een stempel.`;
-    $('btn-part-go').textContent = `Begin ${ch.title.split(' · ')[0]}`;
+      ? AP_T`${th.suspects.length} verdachten, ${parts} delen, ${Campaign.worldTotal(th.id)} zaken. Halverwege elk deel een minigame, aan het eind een bewijskist.`
+      : AP_T`Halverwege wacht een minigame, aan het eind een bewijskist: punten, een vrije dag en een stempel.`;
+    $('btn-part-go').textContent = AP_T`Begin ${ch.title.split(' · ')[0]}`;
     const seen = this.partsSeen();
     if (!seen.includes(ch.key)) { seen.push(ch.key); this.storageSet('crimson-parts-seen', JSON.stringify(seen)); }
     this.partThen = then;
@@ -430,9 +436,9 @@ const App = {
     const card = $('chest-card');
     card.style.setProperty('--wa', th.map.accent);
     card.classList.remove('opened');
-    $('chest-ribbon').textContent = reward.world ? '🏆 Wereld voltooid!' : '✓ Deel voltooid';
+    $('chest-ribbon').textContent = reward.world ? AP_T('🏆 Wereld voltooid!') : AP_T('✓ Deel voltooid');
     $('chest-title').textContent = ch.title;
-    $('chest-sub').textContent = opened ? 'Deze kist is al open.' : reward.world ? `Alle ${Campaign.worldTotal(th.id)} zaken van ${th.title} opgelost. Tik op de kist.` : 'Alle acht zaken opgelost. Tik op de bewijskist.';
+    $('chest-sub').textContent = opened ? AP_T('Deze kist is al open.') : reward.world ? AP_T`Alle ${Campaign.worldTotal(th.id)} zaken van ${th.title} opgelost. Tik op de kist.` : AP_T('Alle acht zaken opgelost. Tik op de bewijskist.');
     $('chest-btn').innerHTML = `<span class="chest-glow"></span>${this.chestSvg()}`;
     $('chest-rewards').hidden = true;
     $('chest-actions').hidden = true;
@@ -450,14 +456,14 @@ const App = {
     if (r) {
       Progress.addPoints(r.points);
       Progress.addFreeze();
-      $('chest-rewards').innerHTML = [`🪙 +${r.points} punten`, '🧊 Een vrije dag', `${ch.icon || '🏅'} Stempel: ${ch.title.split(' · ')[0]}`]
+      $('chest-rewards').innerHTML = [AP_T`🪙 +${r.points} punten`, AP_T('🧊 Een vrije dag'), AP_T`${ch.icon || '🏅'} Stempel: ${ch.title.split(' · ')[0]}`]
         .map((t, i) => `<span class="reward" style="--i:${i}">${t}</span>`).join('');
-      $('chest-sub').textContent = r.world ? `${th.title} is helemaal opgelost. Wat een speurder.` : 'Goed werk, Rekruut. Dit is van jou.';
+      $('chest-sub').textContent = r.world ? AP_T`${th.title} is helemaal opgelost. Wat een speurder.` : AP_T('Goed werk, Rekruut. Dit is van jou.');
       Sound.play('win');
       if (typeof Board !== 'undefined' && Board.buzz) Board.buzz(30);
       if (typeof Board !== 'undefined' && Board.confetti) { try { Board.confetti(); } catch (e) { /* alleen op het resultaatscherm */ } }
     } else {
-      $('chest-rewards').innerHTML = '<span class="reward" style="--i:0">Al geopend</span>';
+      $('chest-rewards').innerHTML = `<span class="reward" style="--i:0">${AP_T('Al geopend')}</span>`;
     }
     $('chest-rewards').hidden = false;
     const next = Campaign.nextChapter(key);
@@ -485,24 +491,24 @@ const App = {
     if (!$('store-rows')) return;
     const reason = this.storeReason, pass = Store.hasPass();
     const lead = $('store-lead');
-    const leadText = reason === 'hint' ? `Je gratis hints voor vandaag zijn op (${Store.FREE_HINTS_PER_DAY} per dag). Morgen krijg je er weer ${Store.FREE_HINTS_PER_DAY}, of kies hieronder.`
-      : reason && reason.startsWith('world:') ? `${Themes.get(reason.slice(6)).title} hoort bij de Crimson Pass. Je kunt de wereld ook los kopen.`
-      : reason === 'cosmetics' ? 'Bordthema\'s en portretlijsten horen bij de Crimson Pass, of koop ze los.' : '';
+    const leadText = reason === 'hint' ? AP_T`Je gratis hints voor vandaag zijn op (${Store.FREE_HINTS_PER_DAY} per dag). Morgen krijg je er weer ${Store.FREE_HINTS_PER_DAY}, of kies hieronder.`
+      : reason && reason.startsWith('world:') ? AP_T`${Themes.get(reason.slice(6)).title} hoort bij de Crimson Pass. Je kunt de wereld ook los kopen.`
+      : reason === 'cosmetics' ? AP_T('Bordthema\'s en portretlijsten horen bij de Crimson Pass, of koop ze los.') : '';
     lead.textContent = leadText; lead.hidden = !leadText;
     const card = $('pass-card');
     card.classList.toggle('owned', pass);
-    $('btn-buy-pass').textContent = pass ? '✓ Je hebt de Crimson Pass' : `Crimson Pass · ${Store.price(Store.IDS.pass)}`;
+    $('btn-buy-pass').textContent = pass ? AP_T('✓ Je hebt de Crimson Pass') : AP_T`Crimson Pass · ${Store.price(Store.IDS.pass)}`;
     $('btn-buy-pass').disabled = pass;
     const row = (icon, title, sub, productId, owned, hl, key) => `<div class="store-row${owned ? ' owned' : ''}${hl ? ' hl' : ''}">
       <span class="store-icon">${icon}</span><span class="store-text"><b>${title}</b><small>${sub}</small></span>
-      <button type="button" class="btn ${owned ? 'btn-ghost' : 'btn-primary'}" data-product="${productId}" ${owned ? 'disabled' : ''}>${owned ? '✓ Van jou' : Store.price(productId)}</button></div>`;
-    let html = `<p class="store-head">Los te koop</p>`;
-    html += row('💡', `${Store.HINT_PACK} hints`, pass ? 'Met de Pass zijn hints onbeperkt.' : `Je hebt er nu ${Store.hintLabel()}. Elke dag krijg je ${Store.FREE_HINTS_PER_DAY} gratis.`, Store.IDS.hints, pass, reason === 'hint');
-    html += row('🎨', 'Bordthema\'s en lijsten', 'Nacht, sepia en kraftpapier; gouden, zilveren en crimson lijst.', Store.IDS.cosmetics, Store.ownsCosmetics(), reason === 'cosmetics');
-    html += `<p class="store-head">Werelden</p>`;
+      <button type="button" class="btn ${owned ? 'btn-ghost' : 'btn-primary'}" data-product="${productId}" ${owned ? 'disabled' : ''}>${owned ? AP_T('✓ Van jou') : Store.price(productId)}</button></div>`;
+    let html = `<p class="store-head">${AP_T('Los te koop')}</p>`;
+    html += row('💡', AP_T`${Store.HINT_PACK} hints`, pass ? AP_T('Met de Pass zijn hints onbeperkt.') : AP_T`Je hebt er nu ${Store.hintLabel()}. Elke dag krijg je ${Store.FREE_HINTS_PER_DAY} gratis.`, Store.IDS.hints, pass, reason === 'hint');
+    html += row('🎨', AP_T('Bordthema\'s en lijsten'), AP_T('Nacht, sepia en kraftpapier; gouden, zilveren en crimson lijst.'), Store.IDS.cosmetics, Store.ownsCosmetics(), reason === 'cosmetics');
+    html += `<p class="store-head">${AP_T('Werelden')}</p>`;
     Store.paidWorlds().forEach(id => {
       const t = Themes.get(id);
-      html += row(t.icon, t.title, `${Campaign.worldTotal(id)} zaken in ${Campaign.chaptersFor(id).length} delen · ${t.tagline}`, Store.worldId(id), Store.ownsWorld(id), reason === 'world:' + id);
+      html += row(t.icon, t.title, AP_T`${Campaign.worldTotal(id)} zaken in ${Campaign.chaptersFor(id).length} delen · ${t.tagline}`, Store.worldId(id), Store.ownsWorld(id), reason === 'world:' + id);
     });
     $('store-rows').innerHTML = html;
     $('store-rows').querySelectorAll('[data-product]').forEach(b => b.addEventListener('click', () => this.buy(b.dataset.product)));
@@ -511,23 +517,23 @@ const App = {
     if (hl && hl.scrollIntoView) { try { hl.scrollIntoView({ block: 'nearest' }); } catch (e) { /* oud */ } }
   },
   async buy(productId) {
-    if (!Store.available()) return this.showToast('🛒', 'Aankopen werken alleen in de app uit de App Store.');
+    if (!Store.available()) return this.showToast('🛒', AP_T('Aankopen werken alleen in de app uit de App Store.'));
     const r = await Store.buy(productId);
     if (r.ok) {
       if (productId === Store.IDS.pass) Progress.setFreezes(Progress.freezes() + 2);
       Sound.play('win');
-      this.showToast('🎉', productId === Store.IDS.hints ? `${Store.HINT_PACK} hints erbij. Veel speurplezier!` : productId === Store.IDS.pass ? 'Welkom bij de Crimson Pass: alles staat open.' : 'Gekocht! Veel speurplezier.');
+      this.showToast('🎉', productId === Store.IDS.hints ? AP_T`${Store.HINT_PACK} hints erbij. Veel speurplezier!` : productId === Store.IDS.pass ? AP_T('Welkom bij de Crimson Pass: alles staat open.') : AP_T('Gekocht! Veel speurplezier.'));
       this.onStoreChange();
     } else if (r.state === 'cancelled') { /* niets */ }
-    else if (r.state === 'pending') this.showToast('⏳', 'De aankoop wacht op goedkeuring (bijvoorbeeld van een ouder).');
-    else this.showToast('⚠️', 'De aankoop is niet gelukt. Probeer het later nog eens.');
+    else if (r.state === 'pending') this.showToast('⏳', AP_T('De aankoop wacht op goedkeuring (bijvoorbeeld van een ouder).'));
+    else this.showToast('⚠️', AP_T('De aankoop is niet gelukt. Probeer het later nog eens.'));
   },
   async restorePurchases() {
-    if (!Store.available()) return this.showToast('🛒', 'Herstellen werkt alleen in de app uit de App Store.');
+    if (!Store.available()) return this.showToast('🛒', AP_T('Herstellen werkt alleen in de app uit de App Store.'));
     const before = JSON.stringify(Store.state());
     const st = await Store.restore();
     this.onStoreChange();
-    this.showToast(JSON.stringify(st) !== before || st.pass ? '✓' : 'ℹ️', st.pass || (st.worlds || []).length || st.cosmetics ? 'Je aankopen zijn hersteld.' : 'Geen eerdere aankopen gevonden voor dit Apple ID.');
+    this.showToast(JSON.stringify(st) !== before || st.pass ? '✓' : 'ℹ️', st.pass || (st.worlds || []).length || st.cosmetics ? AP_T('Je aankopen zijn hersteld.') : AP_T('Geen eerdere aankopen gevonden voor dit Apple ID.'));
   },
   // na een aankoop of herstel: alles wat van bezit afhangt opnieuw tekenen
   onStoreChange() {
@@ -543,11 +549,11 @@ const App = {
     const skins = document.getElementById('look-skins'), frames = document.getElementById('look-frames');
     if (!skins || !frames) return;
     const owns = Store.ownsCosmetics();
-    const opt = (kind, it, on) => `<button type="button" class="look-opt${on ? ' on' : ''}${Store.canUse(it) ? '' : ' locked'}" data-${kind}="${it.id}"><i></i>${Store.canUse(it) ? '' : '🔒 '}${it.name}</button>`;
+    const opt = (kind, it, on) => `<button type="button" class="look-opt${on ? ' on' : ''}${Store.canUse(it) ? '' : ' locked'}" data-${kind}="${it.id}"><i></i>${Store.canUse(it) ? '' : '🔒 '}${AP_T(it.name)}</button>`;
     skins.innerHTML = Store.SKINS.map(it => opt('skin', it, Store.skin() === it.id)).join('');
     frames.innerHTML = Store.FRAMES.map(it => opt('frame', it, Store.frame() === it.id)).join('');
     const note = document.getElementById('look-note');
-    if (note) note.textContent = owns ? 'Bordthema en lijst om je rang' : 'Bordthema\'s en lijsten zitten in de Crimson Pass';
+    if (note) note.textContent = owns ? AP_T('Bordthema en lijst om je rang') : AP_T('Bordthema\'s en lijsten zitten in de Crimson Pass');
     skins.querySelectorAll('.look-opt').forEach(b => b.addEventListener('click', () => { if (!Store.setSkin(b.dataset.skin)) return this.openStore('cosmetics'); this.renderLook(); }));
     frames.querySelectorAll('.look-opt').forEach(b => b.addEventListener('click', () => { if (!Store.setFrame(b.dataset.frame)) return this.openStore('cosmetics'); this.renderLook(); }));
   },
@@ -557,6 +563,10 @@ const App = {
     on('btn-store-restore', () => this.restorePurchases());
     on('btn-restore', () => this.restorePurchases());
     on('btn-open-store', () => { this.hideModal('settings-modal'); this.openStore(null); });
+    document.querySelectorAll('.lang-btn').forEach(b => {
+      b.classList.toggle('active', typeof I18n !== 'undefined' && b.dataset.lang === I18n.lang);
+      b.addEventListener('click', () => { if (typeof I18n !== 'undefined' && b.dataset.lang !== I18n.lang) I18n.set(b.dataset.lang); });
+    });
     Store.applyLook();
     this.renderLook();
     Store.refresh().then(st => { if (st) this.onStoreChange(); });
@@ -582,18 +592,18 @@ const App = {
     if (!document.getElementById('daily-title')) return;
     const dayNo = this.getDayNumber(), theme = Themes.forDay(dayNo);
     const done = this.storageGet('crimson-board-daily-done') === new Date().toDateString();
-    set('daily-title', `Zaak van vandaag: ${Progress.dailyTitle(dayNo)}`);
+    set('daily-title', AP_T`Zaak van vandaag: ${Progress.dailyTitle(dayNo)}`);
     set('daily-text', `${theme.icon} ${theme.title}. ${theme.tagline}`);
-    set('daily-bonus', done ? '✓ Vandaag opgelost' : `🪙 +${Progress.DAILY_BONUS} punten`);
-    set('btn-board-daily', done ? 'Nog een zaak' : 'Speel');
+    set('daily-bonus', done ? AP_T('✓ Vandaag opgelost') : AP_T`🪙 +${Progress.DAILY_BONUS} punten`);
+    set('btn-board-daily', done ? AP_T('Nog een zaak') : AP_T('Speel'));
     this.renderWeek();
     const w = Progress.weekly(), wdone = Progress.weekDone(), wt = Themes.get(w.theme);
     set('week-title', w.title);
     set('week-text', wdone
-      ? `Opgelost! Week ${w.week} · ${wt.icon} ${wt.title}. Volgende week ligt er een nieuwe zaak.`
-      : `Week ${w.week} · ${wt.icon} ${wt.title} · moeilijk. Elke week één speciale zaak; iedereen speelt dezelfde. Deel je resultaat met andere speurders.`);
-    set('week-bonus', wdone ? '✓ Opgelost' : `🪙 +${Progress.WEEK_BONUS} punten`);
-    set('btn-week', wdone ? 'Nog eens' : 'Start');
+      ? AP_T`Opgelost! Week ${w.week} · ${wt.icon} ${wt.title}. Volgende week ligt er een nieuwe zaak.`
+      : AP_T`Week ${w.week} · ${wt.icon} ${wt.title} · moeilijk. Elke week één speciale zaak; iedereen speelt dezelfde. Deel je resultaat met andere speurders.`);
+    set('week-bonus', wdone ? AP_T('✓ Opgelost') : AP_T`🪙 +${Progress.WEEK_BONUS} punten`);
+    set('btn-week', wdone ? AP_T('Nog eens') : AP_T('Start'));
     const ws = document.getElementById('btn-week-share');
     if (ws) ws.hidden = !wdone;
     this.updateCampaignProgress();
@@ -610,16 +620,16 @@ const App = {
     // na vijf uur 's middags en nog niet gespeeld: de streak loopt gevaar
     const risk = !playedToday && count >= 2 && new Date().getHours() >= 17;
     if (note) {
-      note.textContent = playedToday ? 'Vandaag gespeeld. Tot morgen!'
-        : risk ? (freezes ? `Nog niet gespeeld. Een vrije dag vangt het op, maar liever niet.` : `Je streak van ${count} dagen loopt vanavond af. Speel één zaak.`)
-        : count >= 2 ? `Speel vandaag om je streak van ${count} dagen te houden` : 'Speel vandaag om je streak te houden';
+      note.textContent = playedToday ? AP_T('Vandaag gespeeld. Tot morgen!')
+        : risk ? (freezes ? AP_T`Nog niet gespeeld. Een vrije dag vangt het op, maar liever niet.` : AP_T`Je streak van ${count} dagen loopt vanavond af. Speel één zaak.`)
+        : count >= 2 ? AP_T`Speel vandaag om je streak van ${count} dagen te houden` : AP_T('Speel vandaag om je streak te houden');
       note.classList.toggle('risk', risk);
     }
     const pill = document.getElementById('freeze-pill');
     if (pill) {
       pill.hidden = freezes === 0;
-      pill.textContent = `🧊 ${freezes} vrije ${freezes === 1 ? 'dag' : 'dagen'}`;
-      pill.title = 'Mis je een dag, dan vult een vrije dag het gat en blijft je streak staan.';
+      pill.textContent = `🧊 ${freezes} ${freezes === 1 ? AP_T('vrije dag') : AP_T('vrije dagen')}`;
+      pill.title = AP_T('Mis je een dag, dan vult een vrije dag het gat en blijft je streak staan.');
     }
     this.renderQuests();
   },
@@ -639,14 +649,14 @@ const App = {
     const reward = document.getElementById('quest-reward');
     if (reward) {
       const all = st.all || quests.every(q => Progress.questDone(q, st));
-      reward.textContent = all ? '🎁 Alles klaar! Tot morgen.' : `🎁 Alle drie: +${Progress.QUEST_ALL_POINTS} punten en een vrije dag`;
+      reward.textContent = all ? AP_T('🎁 Alles klaar! Tot morgen.') : AP_T`🎁 Alle drie: +${Progress.QUEST_ALL_POINTS} punten en een vrije dag`;
       reward.classList.toggle('done', all);
     }
   },
   startWeekly() {
     const w = Progress.weekly();
     if (Board.start(w.difficulty, w.seed, false, w.theme, null, { weekly: w })) this.navigateTo('board');
-    else this.showToast('⚠️', 'Kon geen plattegrond genereren, probeer opnieuw.');
+    else this.showToast('⚠️', AP_T('Kon geen plattegrond genereren, probeer opnieuw.'));
   },
 
   // ══════════════════════════════════════════════════════════
@@ -660,19 +670,19 @@ const App = {
   },
   renderAwards() {
     const have = Progress.medals(), n = Object.keys(have).length;
-    document.getElementById('awards-points').textContent = `🪙 ${Progress.points()} punten`;
+    document.getElementById('awards-points').textContent = AP_T`🪙 ${Progress.points()} punten`;
     document.getElementById('medal-count').textContent = n;
     document.getElementById('awards-medals').innerHTML =
-      `<div class="medals-head"><h3>Medailleoverzicht</h3><span>${n} van de ${Progress.MEDALS.length} behaald</span></div>` +
-      Progress.MEDALS.map(m => `<div class="medal${have[m.id] ? ' got' : ''}"><span class="medal-icon">${m.icon}</span><span class="medal-body"><span class="medal-title">${m.title}</span><span class="medal-sub">${have[m.id] ? 'Behaald op ' + Progress.formatDate(have[m.id]) : m.hint}</span></span></div>`).join('');
+      `<div class="medals-head"><h3>${AP_T('Medailleoverzicht')}</h3><span>${AP_T`${n} van de ${Progress.MEDALS.length} behaald`}</span></div>` +
+      Progress.MEDALS.map(m => `<div class="medal${have[m.id] ? ' got' : ''}"><span class="medal-icon">${m.icon}</span><span class="medal-body"><span class="medal-title">${m.title}</span><span class="medal-sub">${have[m.id] ? AP_T`Behaald op ${Progress.formatDate(have[m.id])}` : m.hint}</span></span></div>`).join('');
     const total = Progress.evidenceCount();
     document.getElementById('awards-vitrine').innerHTML =
-      `<div class="medals-head"><h3>Bewijsstukken</h3><span>${total} van de ${Campaign.total()} verzameld</span></div>` +
+      `<div class="medals-head"><h3>${AP_T('Bewijsstukken')}</h3><span>${AP_T`${total} van de ${Campaign.total()} verzameld`}</span></div>` +
       Themes.list().map(t => {
         const ev = Progress.evidence(t.id), got = ev.filter(e => e.got).length;
         const stamps = Campaign.chaptersFor(t.id).map(ch => `<span class="stamp${Campaign.chestOpened(ch.key) ? ' got' : ''}" title="${ch.title}">${ch.icon || '🏅'}</span>`).join('');
         return `<div class="shelf-world"><h4>${t.icon} ${t.title} <small>${got}/${ev.length}</small></h4><div class="stamps" aria-label="Stempels">${stamps}</div><div class="shelf">${ev.map(e =>
-          `<span class="ev${e.got ? '' : ' miss'}" title="${e.title}"><i>${e.icon}</i><b>${e.got ? e.name : 'Gesloten'}</b></span>`).join('')}</div><div class="shelf-bar"><i style="width:${Math.round(got / ev.length * 100)}%"></i></div></div>`;
+          `<span class="ev${e.got ? '' : ' miss'}" title="${e.title}"><i>${e.icon}</i><b>${e.got ? e.name : AP_T('Gesloten')}</b></span>`).join('')}</div><div class="shelf-bar"><i style="width:${Math.round(got / ev.length * 100)}%"></i></div></div>`;
       }).join('');
   },
   medalQueue: [],
@@ -683,7 +693,7 @@ const App = {
     if (!m || !t) { this.medalShowing = false; return; }
     this.medalShowing = true;
     document.getElementById('medal-toast-icon').textContent = m.icon;
-    document.getElementById('medal-toast-text').textContent = `Nieuwe trofee: “${m.title}” ontgrendeld.`;
+    document.getElementById('medal-toast-text').textContent = AP_T`Nieuwe trofee: “${m.title}” ontgrendeld.`;
     t.classList.add('show');
     Sound.play('medal');
     setTimeout(() => { t.classList.remove('show'); setTimeout(() => this.pumpMedals(), 400); }, 2800);
@@ -706,7 +716,7 @@ const App = {
     }
     try {
       const perm = await LN.requestPermissions();
-      if (perm.display !== 'granted') { this.showToast('🔕', 'Meldingen staan uit. Zet ze aan bij Instellingen › Crimson Ledger.'); return false; }
+      if (perm.display !== 'granted') { this.showToast('🔕', AP_T('Meldingen staan uit. Zet ze aan bij Instellingen › Crimson Ledger.')); return false; }
     } catch (e) { return false; }
     this.storageSet('crimson-reminder', '1');
     await this.scheduleReminder();
@@ -724,8 +734,8 @@ const App = {
     if (doneToday || at <= new Date()) at.setDate(at.getDate() + 1);
     const streak = this.streak.count || 0, freezes = Progress.freezes();
     const body = streak > 1
-      ? (freezes ? `Je dagelijkse zaak wacht. Houd je streak van ${streak} dagen vast.` : `Je streak van ${streak} dagen loopt vanavond af. Eén zaak is genoeg.`)
-      : 'Er ligt een nieuwe zaak op je bureau. Wie was alleen met het slachtoffer?';
+      ? (freezes ? AP_T`Je dagelijkse zaak wacht. Houd je streak van ${streak} dagen vast.` : AP_T`Je streak van ${streak} dagen loopt vanavond af. Eén zaak is genoeg.`)
+      : AP_T('Er ligt een nieuwe zaak op je bureau. Wie was alleen met het slachtoffer?');
     try {
       await LN.cancel({ notifications: [{ id: 1 }] }).catch(() => {});
       await LN.schedule({ notifications: [{ id: 1, title: 'Crimson Ledger', body, schedule: { at, allowWhileIdle: true } }] });
@@ -747,11 +757,11 @@ const App = {
   bindSettings() {
     const btn = document.getElementById('btn-settings');
     if (!btn) return;
-    btn.addEventListener('click', () => { this.resetArmed = false; document.getElementById('btn-reset-progress').textContent = 'Wissen'; this.showModal('settings-modal'); });
+    btn.addEventListener('click', () => { this.resetArmed = false; document.getElementById('btn-reset-progress').textContent = AP_T('Wissen'); this.showModal('settings-modal'); });
     document.getElementById('btn-close-settings').addEventListener('click', () => this.hideModal('settings-modal'));
     // twee tikken: eerst bevestigen, dan wissen (geen confirm(): werkt niet in elke WebView)
     document.getElementById('btn-reset-progress').addEventListener('click', e => {
-      if (!this.resetArmed) { this.resetArmed = true; e.target.textContent = 'Zeker? Tik nogmaals'; return; }
+      if (!this.resetArmed) { this.resetArmed = true; e.target.textContent = AP_T('Zeker? Tik nogmaals'); return; }
       this.resetProgress();
       e.target.textContent = 'Gewist';
       this.resetArmed = false;
@@ -765,7 +775,7 @@ const App = {
     }
     const rb = document.getElementById('btn-remind');
     if (rb) rb.addEventListener('click', async () => {
-      if (await this.setReminder(true)) { rb.hidden = true; this.showToast('🔔', 'Ingesteld: elke dag om 18:30 een herinnering.'); }
+      if (await this.setReminder(true)) { rb.hidden = true; this.showToast('🔔', AP_T('Ingesteld: elke dag om 18:30 een herinnering.')); }
     });
   },
 
@@ -780,7 +790,7 @@ const App = {
     this.updateStreakDisplay();
     this.updateBoardStats();
     this.renderHome();
-    this.showToast('🧹', 'Alle voortgang is gewist.');
+    this.showToast('🧹', AP_T('Alle voortgang is gewist.'));
   },
 
   registerServiceWorker() {
@@ -810,14 +820,14 @@ const App = {
         <span class="theme-swatches">${t.rooms.slice(0, 4).map(r => `<i style="background:${r.color}"></i>`).join('')}</span>
         <span class="theme-icon">${locked ? '🔒' : t.icon}</span>
         <span class="theme-title">${t.title}</span>
-        ${locked ? (this.isPaidLocked(t) ? '<span class="theme-lock buy">Crimson Pass</span>' : `<span class="theme-lock">nog ${need} ${need === 1 ? 'zaak' : 'zaken'}</span>`) : ''}
+        ${locked ? (this.isPaidLocked(t) ? '<span class="theme-lock buy">Crimson Pass</span>' : `<span class="theme-lock">${AP_T`nog ${need} ${need === 1 ? AP_T('zaak') : AP_T('zaken')}`}</span>`) : ''}
       </button>`; }).join('');
     wrap.querySelectorAll('.theme-card').forEach(b => b.addEventListener('click', () => {
       const t = Themes.get(b.dataset.theme);
       if (this.isPaidLocked(t)) return this.openStore('world:' + t.id);
       if (!this.themeUnlocked(t)) {
         const need = (t.unlock || 0) - (Board.loadStats().solved || 0);
-        return this.showToast('🔒', `Los nog ${need} ${need === 1 ? 'zaak' : 'zaken'} op om ${t.title} te openen. De dagelijkse zaak telt mee.`);
+        return this.showToast('🔒', AP_T`Los nog ${need} ${need === 1 ? AP_T('zaak') : AP_T('zaken')} op om ${t.title} te openen. De dagelijkse zaak telt mee.`);
       }
       this.selectedTheme = t.id;
       this.storageSet('crimson-theme', this.selectedTheme);
@@ -850,7 +860,7 @@ const App = {
       prev.innerHTML = puzzle ? this.previewSvg(puzzle) : '';
       const dots = theme.suspects.slice(0, cfg.suspects).map(su => `<i style="background:${su.color}"></i>`).join('');
       meta.innerHTML = `${dots}<span>${cfg.cols}×${cfg.rows}</span>`;
-      meta.title = `${cfg.suspects} verdachten · ${cfg.cols} bij ${cfg.rows} vakjes`;
+      meta.title = AP_T`${cfg.suspects} verdachten · ${cfg.cols} bij ${cfg.rows} vakjes`;
     });
   },
   previewSvg(p) {
@@ -899,14 +909,14 @@ const App = {
       const solved = st.solved || 0, r = this.rankFor(solved);
       const left = r.next ? r.next.at - solved : 0;
       rankEl.innerHTML = `<span class="rank-title">🎖 ${r.title}</span>` + (r.next
-        ? `<span class="rank-bar"><i style="width:${Math.round(r.progress * 100)}%"></i></span><span class="rank-next">nog ${left} ${left === 1 ? 'zaak' : 'zaken'} tot ${r.next.title}</span>`
-        : '<span class="rank-next">hoogste rang bereikt</span>');
+        ? `<span class="rank-bar"><i style="width:${Math.round(r.progress * 100)}%"></i></span><span class="rank-next">${AP_T`nog ${left} ${left === 1 ? AP_T('zaak') : AP_T('zaken')} tot ${r.next.title}`}</span>`
+        : `<span class="rank-next">${AP_T('hoogste rang bereikt')}</span>`);
     }
     const done = this.storageGet('crimson-board-daily-done') === new Date().toDateString();
-    if (dateEl) dateEl.textContent = done ? 'Vandaag opgelost ✓' : `Vandaag: ${Themes.forDay(this.getDayNumber()).title}`;
-    if (!st.solved) { el.textContent = 'Nog geen zaak opgelost. Vandaag de eerste?'; return; }
+    if (dateEl) dateEl.textContent = done ? AP_T('Vandaag opgelost ✓') : AP_T`Vandaag: ${Themes.forDay(this.getDayNumber()).title}`;
+    if (!st.solved) { el.textContent = AP_T('Nog geen zaak opgelost. Vandaag de eerste?'); return; }
     const best = Object.entries(st.best || {}).map(([d, sec]) => `${(DIFFICULTY[d] || {}).label || d} ${Board.formatTime(sec)}`).join(' · ');
-    el.textContent = `${st.solved} ${st.solved === 1 ? 'zaak' : 'zaken'} opgelost${st.clean ? ` · ${st.clean} zonder hint` : ''}${best ? ` · beste: ${best}` : ''}`;
+    el.textContent = AP_T`${st.solved} ${st.solved === 1 ? AP_T('zaak') : AP_T('zaken')} opgelost` + (st.clean ? AP_T` · ${st.clean} zonder hint` : '') + (best ? AP_T` · beste: ${best}` : '');
   },
 
   // ══════════════════════════════════════════════════════════
@@ -1678,12 +1688,12 @@ const App = {
       ? navigator.share({ text }).catch(() => {})
       : Promise.reject(new Error('no share'));
     const viaClipboard = () => navigator.clipboard
-      ? navigator.clipboard.writeText(text).then(() => this.showToast('📋', 'Resultaat gekopieerd naar klembord!'))
+      ? navigator.clipboard.writeText(text).then(() => this.showToast('📋', AP_T('Resultaat gekopieerd naar klembord!')))
       : Promise.reject(new Error('no clipboard'));
 
     viaClipboard()
       .catch(viaShare)
-      .catch(() => this.showToast('⚠️', 'Delen wordt niet ondersteund in deze browser.'));
+      .catch(() => this.showToast('⚠️', AP_T('Delen wordt niet ondersteund in deze browser.')));
   },
 
   generateEmojiGrid() {
@@ -1740,7 +1750,7 @@ const App = {
     const now = new Date();
     const options = { weekday: 'long', day: 'numeric', month: 'long' };
     document.getElementById('daily-date').textContent =
-      now.toLocaleDateString('nl-NL', options);
+      now.toLocaleDateString(typeof I18n !== 'undefined' && I18n.lang === 'en' ? 'en-GB' : 'nl-NL', options);
   },
 
   // Voortgang staat in localStorage (web én app). In de iOS-app wordt elke
@@ -1814,14 +1824,14 @@ const App = {
   },
   // meldingen over de streak, ná de ceremonie op het resultaatscherm
   streakToasts() {
-    if (this.freezeUsed) { this.showToast('🧊', `Vrije dag gebruikt: je streak van ${this.streak.count} dagen is gered.`); this.freezeUsed = false; }
-    else if (this.freezeEarned) { this.showToast('🧊', `${this.streak.count} dagen op rij! Je hebt een vrije dag verdiend voor als je een dag mist.`); this.freezeEarned = false; }
+    if (this.freezeUsed) { this.showToast('🧊', AP_T`Vrije dag gebruikt: je streak van ${this.streak.count} dagen is gered.`); this.freezeUsed = false; }
+    else if (this.freezeEarned) { this.showToast('🧊', AP_T`${this.streak.count} dagen op rij! Je hebt een vrije dag verdiend voor als je een dag mist.`); this.freezeEarned = false; }
   },
   // opdracht klaar: kort melden (de punten zijn al bijgeschreven)
   questToast(done) {
     const all = done.find(q => q.all), q = done.find(x => !x.all);
     if (all) this.showToast('🎁', all.text);
-    else if (q) this.showToast(q.icon, `Opdracht klaar: ${q.text.toLowerCase()} (+${Progress.QUEST_POINTS} punten)`);
+    else if (q) this.showToast(q.icon, AP_T`Opdracht klaar: ${q.text.toLowerCase()} (+${Progress.QUEST_POINTS} punten)`);
     this.renderQuests();
   },
 

@@ -5,7 +5,7 @@ const { JSDOM, VirtualConsole } = loadJsdom();
 const DIR = path.join(__dirname, '..');
 let html = fs.readFileSync(path.join(DIR, 'index.html'), 'utf8');
 html = html.replace(/<script src="([^"]+)"><\/script>/g, (_, src) => `<script>${fs.readFileSync(path.join(DIR, src), 'utf8')}</script>`);
-html = html.replace(/<link[^>]+>/g, '').replace('</body>', '<script>window.App = App; window.Board = Board; window.FloorPlan = FloorPlan; window.Themes = Themes; window.Campaign = Campaign; window.Progress = Progress; window.Mentor = Mentor; window.MiniGame = MiniGame; window.Store = Store;</script></body>');
+html = html.replace('<head>', '<head><script>localStorage.setItem("crimson-lang", "nl");</script>').replace(/<link[^>]+>/g, '').replace('</body>', '<script>window.App = App; window.Board = Board; window.FloorPlan = FloorPlan; window.Themes = Themes; window.Campaign = Campaign; window.Progress = Progress; window.Mentor = Mentor; window.MiniGame = MiniGame; window.Store = Store;</script></body>');
 const errors = [];
 const vc = new VirtualConsole(); vc.on('jsdomError', e => errors.push(String(e.message || e)));
 const dom = new JSDOM(html, { runScripts: 'dangerously', pretendToBeVisual: true, url: 'http://localhost:8080/', virtualConsole: vc });

@@ -2415,3 +2415,7 @@ input, textarea { -webkit-user-select: text; user-select: text; }
 /* dichte wereld op de kaart en in de kiezer */
 .map-banner-card .btn { align-self: flex-start; margin-top: 6px; padding: 7px 12px; font-size: 0.76rem; }
 .theme-lock.buy { color: var(--gold); font-weight: 800; }
+
+/* ── Taalkeuze ─────────────────────────────────────────────── */
+.lang-row { display: flex; gap: 6px; }
+.lang-btn.active { background: var(--accent-subtle); color: var(--accent); border: 1.5px solid var(--accent); }

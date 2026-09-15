@@ -1,3 +1,5 @@
+// Vertaalhulp: gebruikt de taalmotor (i18n.js) als die er is, anders de Nederlandse tekst.
+const MG_T = (s, ...v) => { const g = typeof globalThis !== 'undefined' ? globalThis.T : undefined; if (typeof g === 'function') return g(s, ...v); return typeof s === 'string' ? s : s.map((x, i) => x + (i < v.length ? String(v[i]) : '')).join(''); };
 // ============================================================
 // MINIGAME — tussenstops op de wereldkaart, zoals de oefenrondes
 // op het pad van Duolingo. Kort (drie rondes), op een plattegrond
@@ -105,7 +107,7 @@ const MiniGame = {
     const day = typeof Progress !== 'undefined' && Progress.dayNumber ? Progress.dayNumber() : 0;
     Object.assign(this, { key, kind: Campaign.miniKind(key), round: 0, score: 0, used: [], locked: false, puzzle: null, cur: null, day });
     this.r = this.rng(4242 + day * 13 + ch.part * 97 + key.length);
-    document.getElementById('mini-title').textContent = this.NAMES[this.kind];
+    document.getElementById('mini-title').textContent = MG_T(this.NAMES[this.kind]);
     document.getElementById('mini-sub').textContent = `${Themes.get(ch.theme).icon} ${ch.title}`;
     document.getElementById('mini-result').hidden = true;
     document.getElementById('mini-body').hidden = false;
@@ -130,7 +132,7 @@ const MiniGame = {
   renderLiar() {
     this.cur = this.liarRound(this.puzzle, this.r);
     this.renderGrid(true);
-    document.getElementById('mini-q').textContent = `Ronde ${this.round}: iedereen staat op zijn plek. Wie liegt?`;
+    document.getElementById('mini-q').textContent = MG_T`Ronde ${this.round}: iedereen staat op zijn plek. Wie liegt?`;
     const opts = document.getElementById('mini-options');
     opts.innerHTML = this.cur.cards.map((c, i) => {
       const sp = this.speakers(c.clue);
@@ -143,16 +145,16 @@ const MiniGame = {
     this.used.push(this.cur.s);
     this.renderGrid(true);
     const s = this.puzzle.suspects[this.cur.s];
-    document.getElementById('mini-q').textContent = `Ronde ${this.round}: kijk goed waar iedereen staat…`;
+    document.getElementById('mini-q').textContent = MG_T`Ronde ${this.round}: kijk goed waar iedereen staat…`;
     const opts = document.getElementById('mini-options');
     let left = Math.round(this.LOOK_MS / 1000);
-    opts.innerHTML = `<span class="mini-look" id="mini-look">👁️ Onthoud het… <b>${left}</b></span>`;
+    opts.innerHTML = `<span class="mini-look" id="mini-look">${MG_T('👁️ Onthoud het… ')}<b>${left}</b></span>`;
     clearInterval(this.lookTick);
     this.lookTick = setInterval(() => { left--; const b = document.querySelector('#mini-look b'); if (b) b.textContent = Math.max(0, left); if (left <= 0) clearInterval(this.lookTick); }, 1000);
     clearTimeout(this.lookTimer);
     this.lookTimer = setTimeout(() => {
       this.renderGrid(false);
-      document.getElementById('mini-q').innerHTML = `Waar stond <b>${s.label}</b>?`;
+      document.getElementById('mini-q').innerHTML = MG_T`Waar stond <b>${s.label}</b>?`;
       opts.innerHTML = `<div class="mini-ask">${this.ava(this.cur.s)}<span>${s.label}</span></div>` +
         `<div class="mini-rooms">${this.cur.options.map((o, i) => `<button type="button" class="mini-room" data-i="${i}">${o.name}</button>`).join('')}</div>`;
       opts.querySelectorAll('.mini-room').forEach(b => b.addEventListener('click', () => this.answer(+b.dataset.i)));
@@ -181,7 +183,7 @@ const MiniGame = {
       const cell = document.querySelector(`#mini-grid .bcell[data-x="${c.x}"][data-y="${c.y}"]`);
       if (cell) cell.classList.add('lit');
     }
-    document.getElementById('mini-q').textContent = right ? `Goed gezien! +${this.POINTS_ROUND} punten` : (this.kind === 'liar' ? `Nee: ${this.puzzle.suspects[this.cur.cards[this.cur.answer].clue.s].label} loog.` : `Nee, daar stond ${this.puzzle.suspects[this.cur.s].label}.`);
+    document.getElementById('mini-q').textContent = right ? MG_T`Goed gezien! +${this.POINTS_ROUND} punten` : (this.kind === 'liar' ? MG_T`Nee: ${this.puzzle.suspects[this.cur.cards[this.cur.answer].clue.s].label} loog.` : MG_T`Nee, daar stond ${this.puzzle.suspects[this.cur.s].label}.`);
     Sound.play(right ? 'clue' : 'error');
     if (typeof Board !== 'undefined' && Board.buzz) Board.buzz(right ? 12 : 30);
     this.renderDots();
@@ -198,11 +200,11 @@ const MiniGame = {
     const ch = Campaign.chapter(this.key);
     res.innerHTML = `<div class="mini-result-card">
       <span class="mini-result-score">${'★'.repeat(this.score)}${'☆'.repeat(this.ROUNDS - this.score)}</span>
-      <h2>${perfect ? 'Scherp gezien!' : this.score ? 'Bijna allemaal' : 'Volgende keer beter'}</h2>
-      <p>${this.score} van de ${this.ROUNDS} goed${pts ? ` · <b>+${pts} punten</b>` : ''}${first && perfect ? ' (eerste keer alles goed: bonus!)' : ''}</p>
+      <h2>${perfect ? MG_T('Scherp gezien!') : this.score ? MG_T('Bijna allemaal') : MG_T('Volgende keer beter')}</h2>
+      <p>${MG_T`${this.score} van de ${this.ROUNDS} goed`}${pts ? MG_T` · <b>+${pts} punten</b>` : ''}${first && perfect ? MG_T(' (eerste keer alles goed: bonus!)') : ''}</p>
       <div class="mini-result-actions">
-        <button type="button" class="btn btn-secondary btn-block" id="btn-mini-again">🔁 Nog een keer</button>
-        <button type="button" class="btn btn-primary btn-block" id="btn-mini-map">🗺️ Terug naar de kaart</button>
+        <button type="button" class="btn btn-secondary btn-block" id="btn-mini-again">${MG_T('🔁 Nog een keer')}</button>
+        <button type="button" class="btn btn-primary btn-block" id="btn-mini-map">${MG_T('🗺️ Terug naar de kaart')}</button>
       </div></div>`;
     res.hidden = false;
     document.getElementById('mini-body').hidden = true;

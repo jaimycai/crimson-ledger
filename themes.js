@@ -245,7 +245,12 @@ const TITLES = new Set(['dr.', 'majoor', 'tante', 'kok', 'bootsman', 'stuurman',
   'officier', 'bioloog', 'gids', 'curator', 'restaurateur', 'nachtwaker', 'professor', 'stagiair', 'schoonmaker', 'kunsthandelaar',
   'barones', 'goochelaar', 'schaakmeester', 'verpleegster', 'reiziger', 'actrice', 'stoker', 'weduwe', 'conducteur',
   'clown', 'trapezeartiest', 'leeuwentemmer', 'waarzegster', 'sterke', 'man', 'kaartverkoper', 'jongleur', 'dierenarts',
-  'skilerares', 'bergredder', 'toeriste', 'fotograaf', 'jongen', 'berggids', 'gastheer']);
+  'skilerares', 'bergredder', 'toeriste', 'fotograaf', 'jongen', 'berggids', 'gastheer',
+  // Engels
+  'major', 'aunt', 'cook', 'boatswain', 'helmsman', 'miss', 'gunner', 'cabin', 'boy', 'countess', 'doorman', 'mrs', 'dancer', 'pilot', 'engineer',
+  'cadet', 'officer', 'biologist', 'guide', 'restorer', 'night', 'guard', 'art', 'dealer', 'intern', 'cleaner', 'baroness', 'magician', 'chess', 'master',
+  'nurse', 'traveller', 'actress', 'widow', 'trapeze', 'artist', 'lion', 'tamer', 'fortune', 'teller', 'strongman', 'ticket', 'seller', 'juggler', 'vet',
+  'ski', 'instructor', 'mountain', 'rescuer', 'tourist', 'photographer', 'young', 'host', 'chief']);
 
 const Themes = {
   list: () => THEMES,

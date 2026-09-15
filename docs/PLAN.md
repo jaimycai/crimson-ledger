@@ -503,6 +503,49 @@ Alles is nu nog vaste Nederlandse tekst in de code. Volgorde van aanpak:
 Later talen: Duits en Frans zijn logisch (markten met veel puzzelspelers en
 dezelfde speelstijl); daarvoor moet het woordenboek alleen worden uitgebreid.
 
+## Winkel en Engelse versie (16 sep)
+
+Jaimy: "pas je voorstellen toe: Crimson Pass, hints als zachte grens,
+wereldpakketten, cosmetica en een Engelse versie met een schakelaar in de
+instellingen. Als we daarmee klaar zijn kunnen we uploaden in de App Store."
+
+### Winkel (`store.js`, `ios/App/App/StorePlugin.swift`)
+
+- Eigen StoreKit 2-plugin (iOS 15+, dus het doel staat nu op 15.0): producten,
+  kopen, herstellen, geldige aankopen. Geen server; Apple bewaart het bezit en
+  bij elke start wordt `crimson-store` daarmee vergeleken.
+- Negen producten (ID's in `store/CHECKLIST.md`): Crimson Pass (€ 4,99, alles
+  voor altijd), 10 hints (€ 0,99), bordthema's en lijsten (€ 1,99), zes
+  wereldpakketten (€ 1,99). Gratis blijft: Het Landhuis, Het Piratenschip, de
+  dagelijkse zaak, de zaak van de week en het archief in álle werelden.
+- Hints als zachte grens: drie per dag gratis, daarna een pakket of de Pass. De
+  Hint-knop draagt een teller (∞ met de Pass); is hij op, dan opent de winkel met
+  die rij oplicht. Niets blokkeert ooit de voortgang.
+- Betaalde werelden op de kaart: banner met "Ontgrendel …", kiezer met
+  "Crimson Pass", tik op een zaak opent de winkel. De Pass geeft ook twee extra
+  vrije dagen (maximum vier).
+- Uiterlijk in Instellingen: bordthema papier / nacht / sepia / kraftpapier en
+  een gouden, zilveren of crimson lijst om je rang en om de stempel.
+- `Products.storekit` voor testen in Xcode zonder App Store Connect; nep-winkel
+  (`crimson-store-mock`) voor de browser en de tests (`tests/store.test.js`).
+
+### Engels (`i18n.js`, `i18n-data.js`, `i18n-campaign.js`)
+
+- Taalkeuze in Instellingen (Nederlands / English), onthouden in `crimson-lang`;
+  bij de eerste start de taal van het toestel. Wisselen herlaadt de app.
+- Drie manieren: `T\`…\`` voor tekst in de code (sjablonen met gaten),
+  `I18n.translateDom()` voor de vaste tekst in `index.html`, en
+  `I18n.localizeData()` die bij het opstarten de spelinhoud ter plekke vervangt
+  (werelden, kamers, meubels, namen met Engelse titels, alle 48 delen en 384
+  zaken met bewijsstukken, dag- en weektitels, medailles, opdrachten, Van Dam).
+  De generator (`FloorPlan.statement/formatClue/hint`) en de uitleg van Van Dam
+  gebruiken dezelfde sjablonen, dus verklaringen en hints zijn Engels.
+- Ruim 440 schermteksten en 1.700 stukken inhoud vertaald. Het klassieke
+  deductieraster (oude modus) blijft Nederlands en wordt in het Engels
+  verborgen.
+- Later talen: alleen `EN` in `i18n.js` en de twee datafiles kopiëren naar een
+  nieuwe taal; de code hoeft niet meer aangeraakt te worden.
+
 ## Openstaande punten (volgorde van voorstel)
 
 1. App Store: stappen in `store/CHECKLIST.md` (Apple-account, archiveren, uploaden).

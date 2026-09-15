@@ -1,3 +1,5 @@
+// Vertaalhulp: gebruikt de taalmotor (i18n.js) als die er is, anders de Nederlandse tekst.
+const PG_T = (s, ...v) => { const g = typeof globalThis !== 'undefined' ? globalThis.T : undefined; if (typeof g === 'function') return g(s, ...v); return typeof s === 'string' ? s : s.map((x, i) => x + (i < v.length ? String(v[i]) : '')).join(''); };
 // ============================================================
 // PROGRESS — punten, onderscheidingen (medailles), bewijsstukken
 // voor de vitrine, de weekstrook van de dagelijkse zaak en de
@@ -42,10 +44,10 @@ const Progress = {
     const base = this.BASE[o.difficulty] || this.BASE.gemiddeld;
     const par = this.PAR[o.difficulty] || this.PAR.gemiddeld;
     const time = Math.round(Math.max(0, 1 - (o.elapsed || 0) / par) * 250);
-    const rows = [['Basis', base], ['Tijdbonus', time], ['Zonder hint', o.hintsUsed === 0 ? 200 : 0], ['In één keer', o.attempts === 0 ? 150 : 0]];
-    if (o.isDaily) rows.push(['Dagelijkse zaak', this.DAILY_BONUS]);
-    if (o.isWeekly) rows.push(['Zaak van de week', this.WEEK_BONUS]);
-    if (o.isArchive) rows.push(['Archiefdossier', this.ARCHIVE_BONUS]);
+    const rows = [[PG_T('Basis'), base], [PG_T('Tijdbonus'), time], [PG_T('Zonder hint'), o.hintsUsed === 0 ? 200 : 0], [PG_T('In één keer'), o.attempts === 0 ? 150 : 0]];
+    if (o.isDaily) rows.push([PG_T('Dagelijkse zaak'), this.DAILY_BONUS]);
+    if (o.isWeekly) rows.push([PG_T('Zaak van de week'), this.WEEK_BONUS]);
+    if (o.isArchive) rows.push([PG_T('Archiefdossier'), this.ARCHIVE_BONUS]);
     return { rows, total: rows.reduce((n, r) => n + r[1], 0) };
   },
 
@@ -63,7 +65,7 @@ const Progress = {
     const monday = new Date(now); monday.setHours(0, 0, 0, 0);
     monday.setDate(monday.getDate() - ((monday.getDay() + 6) % 7));
     const today = this.dayKey(now);
-    return ['Ma', 'Di', 'Wo', 'Do', 'Vr', 'Za', 'Zo'].map((label, i) => {
+    return PG_T('Ma,Di,Wo,Do,Vr,Za,Zo').split(',').map((label, i) => {
       const d = new Date(monday); d.setDate(monday.getDate() + i);
       const key = this.dayKey(d);
       return { label, key, played: log.has(key), today: key === today, future: key > today, reward: i === 6 };
@@ -147,7 +149,7 @@ const Progress = {
       st.all = true;
       this.addPoints(this.QUEST_ALL_POINTS);
       this.addFreeze();
-      done.push({ id: 'alle', icon: '🎁', text: `Alle opdrachten klaar: +${this.QUEST_ALL_POINTS} punten en een vrije dag`, all: true });
+      done.push({ id: 'alle', icon: '🎁', text: PG_T`Alle opdrachten klaar: +${this.QUEST_ALL_POINTS} punten en een vrije dag`, all: true });
     }
     this.set('crimson-quests', JSON.stringify(st));
     return done;
@@ -212,7 +214,7 @@ const Progress = {
   formatDate(key) {
     if (!key) return '';
     const [y, m, d] = key.split('-').map(Number);
-    const months = ['jan', 'feb', 'mrt', 'apr', 'mei', 'jun', 'jul', 'aug', 'sep', 'okt', 'nov', 'dec'];
+    const months = PG_T('jan,feb,mrt,apr,mei,jun,jul,aug,sep,okt,nov,dec').split(',');
     return `${d} ${months[(m || 1) - 1]} ${y}`;
   },
 

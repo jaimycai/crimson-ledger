@@ -13,7 +13,7 @@ let html = fs.readFileSync(path.join(DIR, 'index.html'), 'utf8');
 // Inline the scripts so no file loading is needed
 html = html.replace(/<script src="([^"]+)"><\/script>/g, (_, src) =>
   `<script>${fs.readFileSync(path.join(DIR, src), 'utf8')}</script>`);
-html = html.replace(/<link[^>]+>/g, '').replace('</body>', '<script>window.App = App; window.Board = Board;</script></body>');
+html = html.replace('<head>', '<head><script>localStorage.setItem("crimson-lang", "nl");</script>').replace(/<link[^>]+>/g, '').replace('</body>', '<script>window.App = App; window.Board = Board;</script></body>');
 
 const errors = [];
 const vc = new VirtualConsole();

@@ -1,3 +1,5 @@
+// Vertaalhulp: gebruikt de taalmotor (i18n.js) als die er is, anders de Nederlandse tekst.
+const MT_T = (s, ...v) => { const g = typeof globalThis !== 'undefined' ? globalThis.T : undefined; if (typeof g === 'function') return g(s, ...v); return typeof s === 'string' ? s : s.map((x, i) => x + (i < v.length ? String(v[i]) : '')).join(''); };
 // ============================================================
 // MENTOR — Inspecteur Van Dam: briefing voor een campagnezaak,
 // een opmerking erna, de "Nieuw!"-uitleg bij een nieuw soort
@@ -38,30 +40,30 @@ const Mentor = {
   // Briefing vóór een campagnezaak: het verhaaltje plus één tip die bij deze zaak past.
   briefing(puzzle, c, chapter) {
     const part = chapter ? chapter.title.split(' · ')[0] : null;
-    const sub = c.chapter === 'archief' ? `Archief · ${c.title}` : `${part} · Zaak ${c.idx + 1}: ${c.title}`;
+    const sub = c.chapter === 'archief' ? MT_T`Archief · ${c.title}` : MT_T`${part} · Zaak ${c.idx + 1}: ${c.title}`;
     return { sub, text: `${c.story} ${this.tipFor(puzzle)}` };
   },
 
   // Opmerking op het resultaatscherm.
   remark(o) {
-    const you = o.rank || 'Rekruut';
+    const you = o.rank || MT_T('Rekruut');
     const pick = arr => arr[Math.abs(o.elapsed || 0) % arr.length];
     if (o.finale) return o.finale;
-    if (o.newRank) return `Je hebt je nieuwe rang verdiend, ${o.newRank}. Ik zou zeggen: op naar de volgende zaak.`;
-    if (o.isWeekly) return `De zaak van de week is gesloten, ${you}. Deel het resultaat, dan weet de rest van het bureau het ook.`;
+    if (o.newRank) return MT_T`Je hebt je nieuwe rang verdiend, ${o.newRank}. Ik zou zeggen: op naar de volgende zaak.`;
+    if (o.isWeekly) return MT_T`De zaak van de week is gesloten, ${you}. Deel het resultaat, dan weet de rest van het bureau het ook.`;
     if (o.hintsUsed === 0 && o.attempts === 0) return pick([
-      `Uitstekend speurwerk, ${you}. Geen hint, geen fout. Zo hoort het.`,
-      `Vlekkeloos, ${you}. Ik had het zelf niet beter gekund.`,
-      `Drie sterren. De dader had geen schijn van kans, ${you}.`
+      MT_T`Uitstekend speurwerk, ${you}. Geen hint, geen fout. Zo hoort het.`,
+      MT_T`Vlekkeloos, ${you}. Ik had het zelf niet beter gekund.`,
+      MT_T`Drie sterren. De dader had geen schijn van kans, ${you}.`
     ]);
     if (o.hintsUsed === 0) return pick([
-      `Zonder hint, ${you}. Volgende keer ook in één keer?`,
-      `Goed gezien, ${you}. Eén foute gok, maar je hebt hem.`
+      MT_T`Zonder hint, ${you}. Volgende keer ook in één keer?`,
+      MT_T`Goed gezien, ${you}. Eén foute gok, maar je hebt hem.`
     ]);
-    if (o.attempts === 0) return `In één keer goed, ${you}. Probeer het de volgende keer eens zonder hint.`;
+    if (o.attempts === 0) return MT_T`In één keer goed, ${you}. Probeer het de volgende keer eens zonder hint.`;
     return pick([
-      `Opgelost, ${you}. Hints zijn er om te gebruiken, maar kijk of je ze de volgende keer kunt missen.`,
-      `De zaak is rond, ${you}. Lees de verklaringen twee keer, dan heb je de hints niet nodig.`
+      MT_T`Opgelost, ${you}. Hints zijn er om te gebruiken, maar kijk of je ze de volgende keer kunt missen.`,
+      MT_T`De zaak is rond, ${you}. Lees de verklaringen twee keer, dan heb je de hints niet nodig.`
     ]);
   },
 
@@ -105,30 +107,27 @@ const Mentor = {
     const R = id => { const q = p.rooms.find(x => x.id === id); return `${q.article || 'de'} ${q.name}`; };
     const F = f => p.furnitureNl[f] || f;
     const rw = p.theme.roomWord || 'kamer', rws = p.theme.roomWordPlural || 'kamers';
-    const POS = {
-      hoek:   { where: `in een hoek van ${'%R'}`, rule: 'Een hoek is een vakje dat twee muren van die ' + rw + ' raakt.' },
-      muur:   { where: `tegen een muur van ${'%R'}, niet in een hoek`, rule: 'Zo\'n vakje raakt precies één muur.' },
-      midden: { where: `in het midden van ${'%R'}`, rule: 'Zo\'n vakje raakt geen enkele muur.' }
-    };
-    const pos = (id, room) => { const q = POS[id] || POS.hoek; return `${q.where.replace('%R', room)}. ${q.rule}`; };
+    const pos = (id, room) => id === 'muur' ? MT_T`tegen een muur van ${room}, niet in een hoek. Zo'n vakje raakt precies één muur.`
+      : id === 'midden' ? MT_T`in het midden van ${room}. Zo'n vakje raakt geen enkele muur.`
+      : MT_T`in een hoek van ${room}. Een hoek is een vakje dat twee muren van die ${rw} raakt.`;
     switch (clue.kind) {
-      case 'room':         return `${N(clue.s)} moet ergens in ${R(clue.room)} staan. Elk vrij vakje van die ${rw} kan.`;
-      case 'not-room':     return `${N(clue.s)} mag overal staan, behalve in ${R(clue.room)}.`;
-      case 'room-pos':     return `${N(clue.s)} staat ${pos(clue.pos, R(clue.room))}`;
-      case 'pos':          return `${N(clue.s)} staat ${pos(clue.pos, `een ${rw}`)} In welke ${rw} weet je nog niet.`;
-      case 'room-with':    return `${N(clue.s)} staat in een ${rw} waar ${F(clue.furniture)} staat. Zoek eerst dat meubel; elk vrij vakje in die ${rw} kan.`;
-      case 'next-to':      return `${N(clue.s)} staat op het vakje links, rechts, boven of onder ${F(clue.furniture)}. Schuin telt niet.`;
-      case 'room-next':    return `${N(clue.s)} staat in ${R(clue.room)}, recht naast ${F(clue.furniture)}: links, rechts, boven of onder, niet schuin.`;
-      case 'same-room':    return `${N(clue.a)} en ${N(clue.b)} staan in dezelfde ${rw}. Weet je waar één van de twee staat, dan weet je ook de ${rw} van de ander.`;
-      case 'diff-room':    return `${N(clue.a)} en ${N(clue.b)} staan in twee verschillende ${rws}.`;
-      case 'adjacent':     return `${N(clue.a)} en ${N(clue.b)} staan op vakjes die elkaar raken: links, rechts, boven of onder. Een muur ertussen mag.`;
-      case 'not-adjacent': return `${N(clue.a)} staat niet op een vakje dat ${N(clue.b)} raakt (links, rechts, boven of onder). Schuin ernaast mag wel.`;
-      case 'same-row':     return `${N(clue.a)} en ${N(clue.b)} staan op dezelfde rij: even hoog op de plattegrond, ook als dat in verschillende ${rws} is.`;
-      case 'same-col':     return `${N(clue.a)} en ${N(clue.b)} staan in dezelfde kolom: recht boven of onder elkaar. Muren tellen niet.`;
-      case 'left-of':      return `${N(clue.a)} staat in een kolom links van ${N(clue.b)}, in welke ${rw} dan ook.`;
-      case 'above':        return `${N(clue.a)} staat in een rij hoger dan ${N(clue.b)}, in welke ${rw} dan ook.`;
-      case 'empty-room':   return `In ${R(clue.room)} staat niemand. Die ${rw} kun je overslaan.`;
-      case 'alone':        return `${N(clue.s)} staat in een ${rw} waar verder niemand staat.`;
+      case 'room':         return MT_T`${N(clue.s)} moet ergens in ${R(clue.room)} staan. Elk vrij vakje van die ${rw} kan.`;
+      case 'not-room':     return MT_T`${N(clue.s)} mag overal staan, behalve in ${R(clue.room)}.`;
+      case 'room-pos':     return MT_T`${N(clue.s)} staat ${pos(clue.pos, R(clue.room))}`;
+      case 'pos':          return MT_T`${N(clue.s)} staat ${pos(clue.pos, MT_T`een ${rw}`)} In welke ${rw} weet je nog niet.`;
+      case 'room-with':    return MT_T`${N(clue.s)} staat in een ${rw} waar ${F(clue.furniture)} staat. Zoek eerst dat meubel; elk vrij vakje in die ${rw} kan.`;
+      case 'next-to':      return MT_T`${N(clue.s)} staat op het vakje links, rechts, boven of onder ${F(clue.furniture)}. Schuin telt niet.`;
+      case 'room-next':    return MT_T`${N(clue.s)} staat in ${R(clue.room)}, recht naast ${F(clue.furniture)}: links, rechts, boven of onder, niet schuin.`;
+      case 'same-room':    return MT_T`${N(clue.a)} en ${N(clue.b)} staan in dezelfde ${rw}. Weet je waar één van de twee staat, dan weet je ook de ${rw} van de ander.`;
+      case 'diff-room':    return MT_T`${N(clue.a)} en ${N(clue.b)} staan in twee verschillende ${rws}.`;
+      case 'adjacent':     return MT_T`${N(clue.a)} en ${N(clue.b)} staan op vakjes die elkaar raken: links, rechts, boven of onder. Een muur ertussen mag.`;
+      case 'not-adjacent': return MT_T`${N(clue.a)} staat niet op een vakje dat ${N(clue.b)} raakt (links, rechts, boven of onder). Schuin ernaast mag wel.`;
+      case 'same-row':     return MT_T`${N(clue.a)} en ${N(clue.b)} staan op dezelfde rij: even hoog op de plattegrond, ook als dat in verschillende ${rws} is.`;
+      case 'same-col':     return MT_T`${N(clue.a)} en ${N(clue.b)} staan in dezelfde kolom: recht boven of onder elkaar. Muren tellen niet.`;
+      case 'left-of':      return MT_T`${N(clue.a)} staat in een kolom links van ${N(clue.b)}, in welke ${rw} dan ook.`;
+      case 'above':        return MT_T`${N(clue.a)} staat in een rij hoger dan ${N(clue.b)}, in welke ${rw} dan ook.`;
+      case 'empty-room':   return MT_T`In ${R(clue.room)} staat niemand. Die ${rw} kun je overslaan.`;
+      case 'alone':        return MT_T`${N(clue.s)} staat in een ${rw} waar verder niemand staat.`;
       default: return '';
     }
   },
@@ -141,21 +140,21 @@ const Mentor = {
     const vroom = p.rooms.find(r => r.id === p.victim.roomId);
     if (h.type === 'mistake') {
       const cur = placements[h.suspect] ? roomOf(placements[h.suspect]) : null;
-      const where = cur ? ` Nu staat ${name} in ${cur.article || 'de'} ${cur.name}.` : '';
-      if (!h.clues.length && /twee verdachten/.test(h.text)) return `In ${vroom.article || 'de'} ${vroom.name} mag maar één persoon staan: de moordenaar. Sleep één van de twee naar een andere ${rw}.`;
+      const where = cur ? MT_T` Nu staat ${name} in ${cur.article || 'de'} ${cur.name}.` : '';
+      if (!h.clues.length && /twee verdachten/.test(h.text)) return MT_T`In ${vroom.article || 'de'} ${vroom.name} mag maar één persoon staan: de moordenaar. Sleep één van de twee naar een andere ${rw}.`;
       const c = h.clues.length ? p.clues[h.clues[0]] : null;
       const target = c && c.room !== undefined && c.kind !== 'not-room' && c.kind !== 'empty-room' ? p.rooms.find(r => r.id === c.room) : null;
-      return `Sleep ${name} van het bord af.${where}${target ? ` Zet ${name} daarna ergens in ${target.article || 'de'} ${target.name}.` : ` Lees de verklaring hierboven nog eens en probeer een vakje dat erbij past.`}`;
+      return MT_T`Sleep ${name} van het bord af.${where}${target ? MT_T` Zet ${name} daarna ergens in ${target.article || 'de'} ${target.name}.` : MT_T(' Lees de verklaring hierboven nog eens en probeer een vakje dat erbij past.')}`;
     }
     if (h.type === 'deduce') {
       const q = h.cells[0] ? roomOf(h.cells[0]) : null;
-      return `Er is maar één vakje over: het oplichtende vakje${q ? ` in ${q.article || 'de'} ${q.name}` : ''}. Sleep ${name} daarheen.`;
+      return MT_T`Er is maar één vakje over: het oplichtende vakje${q ? MT_T` in ${q.article || 'de'} ${q.name}` : ''}. Sleep ${name} daarheen.`;
     }
     if (h.type === 'narrow') {
       const rooms = [...new Set(h.cells.map(c => roomOf(c).name))];
-      return `${name} kan nog op ${h.cells.length} vakjes staan; ze lichten goud op${rooms.length === 1 ? `, in de ${rooms[0]}` : ''}. Zet daar een stipje met het Potlood en probeer ze één voor één: bij elk vakje kijk je of de andere verklaringen nog kloppen.`;
+      return MT_T`${name} kan nog op ${h.cells.length} vakjes staan; ze lichten goud op${rooms.length === 1 ? MT_T`, in de ${rooms[0]}` : ''}. Zet daar een stipje met het Potlood en probeer ze één voor één: bij elk vakje kijk je of de andere verklaringen nog kloppen.`;
     }
-    return `Iedereen staat goed. Tik op Controleer en wijs daarna aan wie alleen in ${vroom.article || 'de'} ${vroom.name} staat.`;
+    return MT_T`Iedereen staat goed. Tik op Controleer en wijs daarna aan wie alleen in ${vroom.article || 'de'} ${vroom.name} staat.`;
   },
 
   // Reacties bij de beschuldiging.

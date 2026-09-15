@@ -20,7 +20,7 @@ const mock = `<script>
     SplashScreen: { hide: async () => { window.__splashHidden++; } }
   } };
 </script>`;
-html = html.replace(/<link[^>]+>/g, '').replace('<body>', '<body>' + mock).replace('</body>', '<script>window.App = App; window.Board = Board;</script></body>');
+html = html.replace('<head>', '<head><script>Object.defineProperty(navigator, "language", { value: "nl-NL", configurable: true });</script>').replace(/<link[^>]+>/g, '').replace('<body>', '<body>' + mock).replace('</body>', '<script>window.App = App; window.Board = Board;</script></body>');
 const errors = [];
 const vc = new VirtualConsole(); vc.on('jsdomError', e => errors.push(String(e.message || e)));
 const dom = new JSDOM(html, { runScripts: 'dangerously', pretendToBeVisual: true, url: 'http://localhost:8080/', virtualConsole: vc });
