@@ -290,7 +290,7 @@
           <span class="tool-icon">↩</span><span class="tool-label">Terug</span>
         </button>
         <button type="button" class="tool" id="btn-board-hint">
-          <span class="tool-icon">💡</span><span class="tool-label">Hint</span>
+          <span class="tool-icon">💡<b class="tool-badge" id="hint-badge" hidden></b></span><span class="tool-label">Hint</span>
         </button>
         <button type="button" class="btn btn-primary board-check" id="btn-board-check" disabled>Controleer</button>
       </div>
@@ -507,10 +507,40 @@
         <div class="settings-row"><span>Privacy</span><a href="https://jaimycai.github.io/crimson-ledger/privacy.html" target="_blank" rel="noopener">Privacyverklaring ↗</a></div>
         <div class="settings-row"><span>Hulp</span><a href="https://jaimycai.github.io/crimson-ledger/support.html" target="_blank" rel="noopener">Support ↗</a></div>
         <div class="settings-row" id="settings-reminder" hidden><span>🔔 Dagelijkse herinnering (18:30)</span><label class="switch"><input type="checkbox" id="chk-reminder"><i></i></label></div>
+        <div class="settings-row settings-col" id="settings-look">
+          <span>🎨 Uiterlijk <small id="look-note"></small></span>
+          <div class="look-row" id="look-skins"></div>
+          <div class="look-row" id="look-frames"></div>
+        </div>
+        <div class="settings-row"><span>🛒 Winkel</span><button type="button" class="btn btn-gold btn-sm" id="btn-open-store">Crimson Pass</button></div>
+        <div class="settings-row"><span>Aankopen herstellen</span><button type="button" class="btn btn-ghost btn-sm" id="btn-restore">Herstellen</button></div>
         <div class="settings-row"><span>Alle voortgang wissen</span><button type="button" class="settings-danger" id="btn-reset-progress">Wissen</button></div>
       </div>
       <p class="settings-version">Crimson Ledger <span id="app-version">1.0.0</span> · gemaakt in Nederland</p>
       <button class="btn btn-primary btn-block" id="btn-close-settings">Sluiten</button>
+    </div>
+  </div>
+
+  <!-- ═══════ WINKEL ═══════ -->
+  <div class="modal-overlay" id="store-modal">
+    <div class="modal-content store-sheet">
+      <div class="modal-handle"></div>
+      <p class="store-lead" id="store-lead" hidden></p>
+      <div class="pass-card" id="pass-card">
+        <span class="ribbon ribbon-gold">Crimson Pass</span>
+        <h3>Alles, voor altijd</h3>
+        <ul class="pass-list">
+          <li>🗺️ Alle werelden, ook de werelden die nog komen</li>
+          <li>💡 Onbeperkt hints</li>
+          <li>🎨 Alle bordthema's en portretlijsten</li>
+          <li>🧊 Twee extra vrije dagen op voorraad</li>
+        </ul>
+        <button type="button" class="btn btn-gold btn-block" id="btn-buy-pass" data-product="pass">Crimson Pass · € 4,99</button>
+      </div>
+      <div class="store-rows" id="store-rows"></div>
+      <p class="store-small">Eenmalige aankopen via je Apple ID, geen abonnement. Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.</p>
+      <button type="button" class="btn btn-ghost btn-block" id="btn-store-restore">Aankopen herstellen</button>
+      <button type="button" class="btn btn-secondary btn-block" id="btn-close-store">Sluiten</button>
     </div>
   </div>
 
@@ -532,6 +562,7 @@
   <script src="mentor.js"></script>
   <script src="mapart.js"></script>
   <script src="minigame.js"></script>
+  <script src="store.js"></script>
   <script src="sound.js"></script>
   <script src="floorplan.js"></script>
   <script src="logic-engine.js"></script>

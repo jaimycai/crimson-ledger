@@ -96,8 +96,9 @@ const Progress = {
   // of alle opdrachten van een dag). Mis je een dag, dan vult een vrije dag
   // het gat en blijft je streak staan.
   FREEZE_MAX: 2,
+  maxFreezes() { return typeof Store !== 'undefined' && Store.hasPass && Store.hasPass() ? this.FREEZE_MAX + 2 : this.FREEZE_MAX; },
   freezes() { return Math.max(0, +this.get('crimson-freezes') || 0); },
-  setFreezes(n) { const v = Math.max(0, Math.min(this.FREEZE_MAX, n)); this.set('crimson-freezes', String(v)); return v; },
+  setFreezes(n) { const v = Math.max(0, Math.min(this.maxFreezes(), n)); this.set('crimson-freezes', String(v)); return v; },
   addFreeze() { const before = this.freezes(); return this.setFreezes(before + 1) > before; },
 
   // ── Opdrachten van vandaag ────────────────────────────────

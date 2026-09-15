@@ -1,0 +1,18 @@
+{
+  "identifier" : "C1A2B3C4",
+  "nonRenewingSubscriptions" : [ ],
+  "products" : [
+    { "displayPrice" : "4.99", "familyShareable" : true, "internalID" : "P0001", "localizations" : [ { "description" : "Alle werelden, onbeperkt hints, alle bordthema's en extra vrije dagen.", "displayName" : "Crimson Pass", "locale" : "nl_NL" } ], "productID" : "com.jaimycai.crimsonledger.pass", "referenceName" : "Crimson Pass", "type" : "NonConsumable" },
+    { "displayPrice" : "0.99", "familyShareable" : false, "internalID" : "P0002", "localizations" : [ { "description" : "Tien extra hints.", "displayName" : "10 hints", "locale" : "nl_NL" } ], "productID" : "com.jaimycai.crimsonledger.hints10", "referenceName" : "10 hints", "type" : "Consumable" },
+    { "displayPrice" : "1.99", "familyShareable" : true, "internalID" : "P0003", "localizations" : [ { "description" : "Bordthema's nacht, sepia en kraftpapier plus drie portretlijsten.", "displayName" : "Bordthema's en lijsten", "locale" : "nl_NL" } ], "productID" : "com.jaimycai.crimsonledger.cosmetics", "referenceName" : "Bordthema's en lijsten", "type" : "NonConsumable" },
+    { "displayPrice" : "1.99", "familyShareable" : true, "internalID" : "P0004", "localizations" : [ { "description" : "48 zaken in zes delen.", "displayName" : "Grand Hotel Aurora", "locale" : "nl_NL" } ], "productID" : "com.jaimycai.crimsonledger.world.hotel", "referenceName" : "Wereld: Grand Hotel Aurora", "type" : "NonConsumable" },
+    { "displayPrice" : "1.99", "familyShareable" : true, "internalID" : "P0005", "localizations" : [ { "description" : "48 zaken in zes delen.", "displayName" : "Station Orion", "locale" : "nl_NL" } ], "productID" : "com.jaimycai.crimsonledger.world.ruimte", "referenceName" : "Wereld: Station Orion", "type" : "NonConsumable" },
+    { "displayPrice" : "1.99", "familyShareable" : true, "internalID" : "P0006", "localizations" : [ { "description" : "48 zaken in zes delen.", "displayName" : "Het Museum", "locale" : "nl_NL" } ], "productID" : "com.jaimycai.crimsonledger.world.museum", "referenceName" : "Wereld: Het Museum", "type" : "NonConsumable" },
+    { "displayPrice" : "1.99", "familyShareable" : true, "internalID" : "P0007", "localizations" : [ { "description" : "48 zaken in zes delen.", "displayName" : "De Nachttrein", "locale" : "nl_NL" } ], "productID" : "com.jaimycai.crimsonledger.world.trein", "referenceName" : "Wereld: De Nachttrein", "type" : "NonConsumable" },
+    { "displayPrice" : "1.99", "familyShareable" : true, "internalID" : "P0008", "localizations" : [ { "description" : "48 zaken in zes delen.", "displayName" : "Het Circus", "locale" : "nl_NL" } ], "productID" : "com.jaimycai.crimsonledger.world.circus", "referenceName" : "Wereld: Het Circus", "type" : "NonConsumable" },
+    { "displayPrice" : "1.99", "familyShareable" : true, "internalID" : "P0009", "localizations" : [ { "description" : "48 zaken in zes delen.", "displayName" : "De Skihut", "locale" : "nl_NL" } ], "productID" : "com.jaimycai.crimsonledger.world.skihut", "referenceName" : "Wereld: De Skihut", "type" : "NonConsumable" }
+  ],
+  "settings" : { "_applicationInternalID" : "0", "_developerTeamID" : "", "_failTransactionsEnabled" : false, "_lastSynced" : 0, "_locale" : "nl_NL", "_storefront" : "NLD", "_storeKitErrors" : [ ] },
+  "subscriptionGroups" : [ ],
+  "version" : { "major" : 3, "minor" : 0 }
+}

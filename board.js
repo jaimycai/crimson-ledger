@@ -578,14 +578,18 @@ const Board = {
   hint() {
     if (this.solved) return;
     if (this.isTutorial) return this.showTutorialStep();
+    // drie gratis per dag; daarna een hintpakket of de Crimson Pass
+    if (typeof Store !== 'undefined' && !Store.canHint()) return App.openStore('hint');
     const h = FloorPlan.hint(this.puzzle, this.placements);
     this.hintsUsed++;
+    if (typeof Store !== 'undefined') Store.useHint();
     this.hintRefs = { cells: h.cells || [], clues: h.clues || [] };
     if (h.suspect !== undefined && h.suspect !== -1) this.active = h.suspect;
     this.after(true);
     const p = this.puzzle, $ = id => document.getElementById(id);
     $('hint-text').textContent = h.text;
-    $('hint-sub').textContent = `Hint ${this.hintsUsed} · deze zaak levert nu maximaal ★★ op`;
+    const left = typeof Store !== 'undefined' ? Store.hintsLeft() : Infinity;
+    $('hint-sub').textContent = `Hint ${this.hintsUsed} · deze zaak levert nu maximaal ★★ op` + (left === Infinity ? '' : ` · nog ${left} ${left === 1 ? 'hint' : 'hints'}`);
     // 1. kijk naar: de verklaring(en) waar het om gaat, of de spelregel
     const clues = (h.clues || []).slice(0, 1);   // één kaart: zo blijft "Doe dit" in beeld
     $('hint-clues').innerHTML = clues.length
@@ -611,6 +615,13 @@ const Board = {
     checkBtn.classList.toggle('ready', all && !this.solved && this.puzzle.clues.every(c => FloorPlan.holds(c, this.placements, this.puzzle) === true));
     document.getElementById('btn-board-undo').disabled = this.history.length === 0;
     ['place', 'mark', 'erase'].forEach(m => document.getElementById('btn-board-' + m).classList.toggle('active', this.mode === m));
+    // hoeveel hints je nog hebt (∞ met de Pass)
+    const badge = document.getElementById('hint-badge');
+    if (badge && typeof Store !== 'undefined') {
+      badge.hidden = !!this.isTutorial;
+      badge.textContent = Store.hintLabel();
+      badge.classList.toggle('empty', !Store.canHint());
+    }
   },
   setMode(m) {
     if (this.isTutorial) m = 'place';

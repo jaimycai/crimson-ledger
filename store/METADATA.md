@@ -64,3 +64,16 @@ De app is een offline puzzelspel; er is geen account of login nodig. Bij de eers
 ## Schermafbeeldingen (map `store/screenshots`, 1290×2796 = iPhone 6,7")
 Upload in deze volgorde: 04-verklaringen, 02-wereldkaart, 06-zaak-gesloten, 01-thuis, 05-beschuldiging, 03-briefing, 07-vitrine, 08-bord-orion. (Vernieuwd op 9 sep met de epische update: wereldkaart, verklaringen, Van Dam, ceremonie, vitrine.)
 iPad wordt niet ondersteund (alleen iPhone), dus geen iPad-schermafbeeldingen nodig.
+
+
+## In-app-aankopen (tekst voor App Store Connect)
+
+**Crimson Pass** (niet-verbruikbaar) — Alles, voor altijd: alle werelden (ook de werelden die nog komen), onbeperkt hints, alle bordthema's en portretlijsten, en twee extra vrije dagen voor je streak. Eenmalig, geen abonnement.
+
+**10 hints** (verbruikbaar) — Tien extra hints van Inspecteur Van Dam. Elke dag krijg je er drie gratis.
+
+**Bordthema's en lijsten** (niet-verbruikbaar) — Speel op een nachtbord, in sepia of op kraftpapier, en kies een gouden, zilveren of crimson lijst om je rang.
+
+**Wereld: …** (niet-verbruikbaar, zes stuks) — 48 zaken in zes delen, met minigames, bewijskisten en een eigen cast.
+
+Gratis blijft: Het Landhuis en Het Piratenschip (96 zaken), de dagelijkse zaak en de zaak van de week in alle werelden, het eindeloze archief, alle opdrachten en onderscheidingen.

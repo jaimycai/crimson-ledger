@@ -2351,3 +2351,67 @@ input, textarea { -webkit-user-select: text; user-select: text; }
 .map-legend { flex: none; padding: 4px 14px 6px; font-size: 0.68rem; color: var(--text-secondary); background: var(--bg-card); border-bottom: 1px solid var(--border-light); text-align: center; line-height: 1.35; }
 .map-legend b { color: #D4A64A; letter-spacing: 1px; }
 .map-pop-rule { font-size: 0.72rem; color: var(--text-light); margin: -4px 0 10px; line-height: 1.4; }
+
+/* ── Winkel ────────────────────────────────────────────────── */
+.store-sheet { max-height: 88dvh; padding-top: 14px; }
+.store-lead { font-weight: 700; color: var(--accent); text-align: center; margin: 0 0 10px; line-height: 1.4; }
+.store-lead[hidden] { display: none; }
+.pass-card { position: relative; overflow: hidden; background: linear-gradient(160deg, #2C1810, #5A2A1C); color: #fff; border-radius: 18px; padding: 16px 16px 14px; margin-bottom: 12px; box-shadow: var(--shadow-lg); }
+.pass-card h3 { color: #fff; font-size: 1.5rem; margin: 8px 0 6px; }
+.pass-list { list-style: none; padding: 0; margin: 0 0 12px; display: flex; flex-direction: column; gap: 5px; font-size: 0.88rem; }
+.pass-card.owned .btn { background: #4E8B4A; color: #fff; }
+.store-rows { display: flex; flex-direction: column; gap: 8px; margin-bottom: 10px; }
+.store-row { display: grid; grid-template-columns: 34px 1fr auto; align-items: center; gap: 10px; padding: 9px 10px; border-radius: 12px; border: 1.5px solid var(--border-light); background: var(--bg-card); }
+.store-row.hl { border-color: var(--gold); box-shadow: 0 0 0 2px var(--gold-light); }
+.store-row .store-icon { font-size: 1.35rem; text-align: center; }
+.store-row .store-text { display: flex; flex-direction: column; gap: 1px; min-width: 0; }
+.store-row .store-text b { font-size: 0.9rem; }
+.store-row .store-text small { font-size: 0.72rem; color: var(--text-secondary); line-height: 1.3; }
+.store-row .btn { padding: 8px 12px; font-size: 0.78rem; white-space: nowrap; }
+.store-row.owned .btn { background: var(--success-bg); color: var(--success); border: 1.5px solid var(--success); box-shadow: none; }
+.store-small { font-size: 0.7rem; color: var(--text-light); line-height: 1.4; text-align: center; margin: 4px 0 8px; }
+.store-head { font-size: 0.66rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); margin: 6px 0 0; }
+.tool-icon { position: relative; }
+.tool-badge { position: absolute; top: -6px; right: -12px; min-width: 16px; height: 16px; padding: 0 4px; border-radius: 8px; background: var(--gold); color: #fff; font-size: 0.58rem; font-weight: 800; font-style: normal; line-height: 16px; text-align: center; box-shadow: 0 0 0 1.5px #fff; }
+.tool-badge[hidden] { display: none; }
+.tool-badge.empty { background: var(--error); }
+.settings-col { flex-direction: column; align-items: stretch; gap: 8px; }
+.settings-col > span small { display: block; font-weight: 400; color: var(--text-light); font-size: 0.7rem; }
+.look-row { display: flex; gap: 6px; flex-wrap: wrap; }
+.look-opt { flex: 1 1 auto; min-width: 70px; padding: 8px 6px; border-radius: 10px; border: 1.5px solid var(--border); background: var(--bg-card); font: inherit; font-size: 0.74rem; font-weight: 700; color: var(--text-primary); cursor: pointer; display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.look-opt i { display: block; width: 34px; height: 22px; border-radius: 6px; border: 1.5px solid #1A1108; }
+.look-opt.on { border-color: var(--accent); background: var(--accent-subtle); }
+.look-opt.locked { opacity: 0.55; }
+.look-opt[data-skin="papier"] i { background: #FAF5EF; }
+.look-opt[data-skin="nacht"] i { background: #1E1A17; }
+.look-opt[data-skin="sepia"] i { background: #D9C7A6; }
+.look-opt[data-skin="kraft"] i { background: #C9A56B; }
+.look-opt[data-frame="geen"] i { border-radius: 50%; background: var(--bg-secondary); }
+.look-opt[data-frame="goud"] i { border-radius: 50%; background: var(--bg-secondary); border: 3px solid #D4A64A; }
+.look-opt[data-frame="zilver"] i { border-radius: 50%; background: var(--bg-secondary); border: 3px solid #A9B2BC; }
+.look-opt[data-frame="crimson"] i { border-radius: 50%; background: var(--bg-secondary); border: 3px solid #8B2E1C; }
+
+/* ── Bordthema's (cosmetica) ───────────────────────────────── */
+:root[data-skin="nacht"] .board-stage { background: #1E1A17; }
+:root[data-skin="nacht"] .board-grid { border-color: #0B0806; background: #0B0806; }
+:root[data-skin="nacht"] .bcell::before { background: rgba(0, 0, 0, 0.28); }
+:root[data-skin="nacht"] .bcell.dark::before { background: rgba(0, 0, 0, 0.42); }
+:root[data-skin="nacht"] .room-label { background: rgba(20, 14, 10, 0.92); color: #F3EDE3; border-color: #F3EDE3; }
+:root[data-skin="sepia"] .board-stage { background: #E8DCC4; }
+:root[data-skin="sepia"] .bcell::before { background: rgba(120, 90, 40, 0.16); }
+:root[data-skin="sepia"] .bcell.dark::before { background: rgba(120, 90, 40, 0.3); }
+:root[data-skin="sepia"] .bcell { filter: sepia(0.55); }
+:root[data-skin="kraft"] .board-stage { background: #C9A56B; }
+:root[data-skin="kraft"] .board-grid { border-color: #5A3E2B; background: #5A3E2B; }
+:root[data-skin="kraft"] .bcell::before { background: rgba(255, 240, 210, 0.35); }
+:root[data-skin="kraft"] .bcell.dark::before { background: rgba(90, 62, 43, 0.12); }
+/* portretlijst om je rang en om de portretten op het resultaatscherm */
+:root[data-frame="goud"] .menu-rank { box-shadow: 0 0 0 3px #D4A64A, var(--shadow-md); }
+:root[data-frame="zilver"] .menu-rank { box-shadow: 0 0 0 3px #A9B2BC, var(--shadow-md); }
+:root[data-frame="crimson"] .menu-rank { box-shadow: 0 0 0 3px #8B2E1C, var(--shadow-md); }
+:root[data-frame="goud"] .results-stamp { border-color: #D4A64A; }
+:root[data-frame="zilver"] .results-stamp { border-color: #A9B2BC; }
+:root[data-frame="crimson"] .results-stamp { border-color: #8B2E1C; }
+/* dichte wereld op de kaart en in de kiezer */
+.map-banner-card .btn { align-self: flex-start; margin-top: 6px; padding: 7px 12px; font-size: 0.76rem; }
+.theme-lock.buy { color: var(--gold); font-weight: 800; }

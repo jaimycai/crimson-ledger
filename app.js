@@ -132,6 +132,7 @@ const App = {
     on('btn-briefing-go', () => { this.hideModal('briefing-modal'); Board.startTimer(); Board.showIntro(); });
     on('btn-part-go', () => { this.hideModal('part-modal'); const f = this.partThen; this.partThen = null; if (f) f(); });
     if (typeof MiniGame !== 'undefined') MiniGame.bind();
+    if (typeof Store !== 'undefined') this.bindStore();
     document.getElementById('map-pop').addEventListener('click', e => { if (e.target.id === 'map-pop') this.closeNode(); });
     const scroll = document.getElementById('map-scroll');
     scroll.addEventListener('scroll', () => {
@@ -172,7 +173,7 @@ const App = {
     let y = 0, k = 0;
     Themes.list().forEach(th => {
       const themeOpen = this.themeUnlocked(th);
-      const sec = { theme: th.id, th, open: themeOpen, need: Math.max(0, (th.unlock || 0) - solved), top: y, items: [],
+      const sec = { theme: th.id, th, open: themeOpen, need: this.isPaidLocked(th) ? 0 : Math.max(0, (th.unlock || 0) - solved), buy: this.isPaidLocked(th), top: y, items: [],
                     stars: Campaign.worldStars(th.id), total: Campaign.worldTotal(th.id), done: Campaign.worldDone(th.id) };
       y += BH;   // banner
       let num = 0;
@@ -239,7 +240,7 @@ const App = {
     // wereldkiezer: springt naar de banner van die wereld
     document.getElementById('world-tabs').innerHTML = Themes.list().map(t => {
       const sec = L.sections.find(s => s.theme === t.id);
-      return `<button type="button" class="world-tab" data-theme="${t.id}">${t.icon} ${t.short}${sec.need > 0 ? `<small>nog ${sec.need} ${sec.need === 1 ? 'zaak' : 'zaken'}</small>` : ''}</button>`;
+      return `<button type="button" class="world-tab" data-theme="${t.id}">${t.icon} ${t.short}${sec.buy ? '<small>🔒 Pass</small>' : sec.need > 0 ? `<small>nog ${sec.need} ${sec.need === 1 ? 'zaak' : 'zaken'}</small>` : ''}</button>`;
     }).join('');
     document.querySelectorAll('.world-tab').forEach(b => b.addEventListener('click', () => this.scrollToWorld(b.dataset.theme)));
     // secties: banner, pad, decoraties, wegwijzers, knopen
@@ -253,8 +254,10 @@ const App = {
       sec.items.filter(i => i.type === 'unit').forEach(u => { html += `<div class="map-unit part-${u.part}${u.open ? '' : ' locked'}" style="top:${u.top - sec.top}px;height:${u.height}px"></div>`; });
       if (th) {
         const sub = sec.open ? `${sec.done} van ${sec.total} zaken · ★ ${sec.stars}/${sec.total * 3}`
+                             : sec.buy ? `🔒 Deze wereld hoort bij de Crimson Pass, of koop hem los voor ${Store.price(Store.worldId(th.id))}. De dagelijkse zaak en de zaak van de week spelen hier gratis.`
                              : `🔒 Los nog ${sec.need} ${sec.need === 1 ? 'zaak' : 'zaken'} op (vrij spel of dagelijks) om deze wereld te openen`;
-        html += `<div class="map-banner">${MapArt.banner(th.id)}<div class="map-banner-card"><b>${th.icon} ${th.title}</b><span>${sub}</span></div></div>`;
+        const buyBtn = sec.buy ? `<button type="button" class="btn btn-gold btn-sm map-buy" data-theme="${th.id}">🛒 Ontgrendel ${th.title}</button>` : '';
+        html += `<div class="map-banner">${MapArt.banner(th.id)}<div class="map-banner-card"><b>${th.icon} ${th.title}</b><span>${sub}</span>${buyBtn}</div></div>`;
       }
       html += `<svg class="map-path" width="${W}" height="${sec.height}" viewBox="0 0 ${W} ${sec.height}" aria-hidden="true"><path d="${d}"/></svg>`;
       if (th) nodesIn.forEach((it, i) => {
@@ -285,6 +288,7 @@ const App = {
     }).join('');
     canvas.querySelectorAll('.mnode').forEach(b => b.addEventListener('click', () =>
       this.openNode(L.nodes.find(n => n.chapter === b.dataset.chapter && n.idx === +b.dataset.idx))));
+    canvas.querySelectorAll('.map-buy').forEach(b => b.addEventListener('click', () => this.openStore('world:' + b.dataset.theme)));
     canvas.querySelectorAll('.mmini').forEach(b => b.addEventListener('click', () => {
       if (b.classList.contains('locked')) return this.showToast('🔒', `Los eerst zaak ${b.dataset.after} op, dan gaat deze minigame open.`);
       if (typeof MiniGame !== 'undefined' && MiniGame.start(b.dataset.chapter)) this.navigateTo('mini');
@@ -341,7 +345,8 @@ const App = {
     const stars = it.stars ? '★'.repeat(it.stars) + '☆'.repeat(3 - it.stars) : '☆☆☆';
     const locked = it.state === 'locked';
     const th = Themes.get(it.theme);
-    const lockText = !this.themeUnlocked(th) && !it.archive ? `Los eerst ${th.unlock} zaken op (vrij spel of dagelijks) om ${th.title} te openen.`
+    const lockText = this.isPaidLocked(th) && !it.archive ? `${th.title} hoort bij de Crimson Pass. Ontgrendel de wereld in de winkel, of speel hier de dagelijkse zaak.`
+      : !this.themeUnlocked(th) && !it.archive ? `Los eerst ${th.unlock} zaken op (vrij spel of dagelijks) om ${th.title} te openen.`
       : it.archive ? (Campaign.chapterOpen(Campaign.ARCHIVE) ? 'Los eerst het vorige dossier op.' : `Het archief opent na ${Campaign.ARCHIVE_UNLOCK} campagnezaken.`)
       : it.idx === 0 ? 'Maak eerst het vorige deel af.' : `Los eerst zaak ${it.num - 1} op.`;
     pop.innerHTML = `<div class="map-pop-card" style="--wa:${th.map.accent};--wr:${th.map.ring}">
@@ -362,6 +367,7 @@ const App = {
   startCampaignCase(key, idx) {
     const c = Campaign.caseAt(key, idx);
     if (!c) return this.showToast('⚠️', 'Deze zaak kon niet geladen worden.');
+    if (this.isPaidLocked(Themes.get(c.theme))) return this.openStore('world:' + c.theme);
     const ch = Campaign.chapter(key);
     this.hideModal('chest-modal');
     const go = () => {
@@ -462,6 +468,98 @@ const App = {
     $('chest-actions').hidden = false;
     this.updateBoardStats();
     this.renderHome();
+  },
+
+  // ══════════════════════════════════════════════════════════
+  //  WINKEL: Crimson Pass, hints, wereldpakketten, bordthema's
+  // ══════════════════════════════════════════════════════════
+  // reden: 'hint' | 'world:<id>' | 'cosmetics' | null — bepaalt de kop en welke rij oplicht
+  openStore(reason = null) {
+    this.storeReason = reason;
+    this.renderStore();
+    this.showModal('store-modal');
+    Store.loadPrices().then(() => this.renderStore());
+  },
+  renderStore() {
+    const $ = id => document.getElementById(id);
+    if (!$('store-rows')) return;
+    const reason = this.storeReason, pass = Store.hasPass();
+    const lead = $('store-lead');
+    const leadText = reason === 'hint' ? `Je gratis hints voor vandaag zijn op (${Store.FREE_HINTS_PER_DAY} per dag). Morgen krijg je er weer ${Store.FREE_HINTS_PER_DAY}, of kies hieronder.`
+      : reason && reason.startsWith('world:') ? `${Themes.get(reason.slice(6)).title} hoort bij de Crimson Pass. Je kunt de wereld ook los kopen.`
+      : reason === 'cosmetics' ? 'Bordthema\'s en portretlijsten horen bij de Crimson Pass, of koop ze los.' : '';
+    lead.textContent = leadText; lead.hidden = !leadText;
+    const card = $('pass-card');
+    card.classList.toggle('owned', pass);
+    $('btn-buy-pass').textContent = pass ? '✓ Je hebt de Crimson Pass' : `Crimson Pass · ${Store.price(Store.IDS.pass)}`;
+    $('btn-buy-pass').disabled = pass;
+    const row = (icon, title, sub, productId, owned, hl, key) => `<div class="store-row${owned ? ' owned' : ''}${hl ? ' hl' : ''}">
+      <span class="store-icon">${icon}</span><span class="store-text"><b>${title}</b><small>${sub}</small></span>
+      <button type="button" class="btn ${owned ? 'btn-ghost' : 'btn-primary'}" data-product="${productId}" ${owned ? 'disabled' : ''}>${owned ? '✓ Van jou' : Store.price(productId)}</button></div>`;
+    let html = `<p class="store-head">Los te koop</p>`;
+    html += row('💡', `${Store.HINT_PACK} hints`, pass ? 'Met de Pass zijn hints onbeperkt.' : `Je hebt er nu ${Store.hintLabel()}. Elke dag krijg je ${Store.FREE_HINTS_PER_DAY} gratis.`, Store.IDS.hints, pass, reason === 'hint');
+    html += row('🎨', 'Bordthema\'s en lijsten', 'Nacht, sepia en kraftpapier; gouden, zilveren en crimson lijst.', Store.IDS.cosmetics, Store.ownsCosmetics(), reason === 'cosmetics');
+    html += `<p class="store-head">Werelden</p>`;
+    Store.paidWorlds().forEach(id => {
+      const t = Themes.get(id);
+      html += row(t.icon, t.title, `${Campaign.worldTotal(id)} zaken in ${Campaign.chaptersFor(id).length} delen · ${t.tagline}`, Store.worldId(id), Store.ownsWorld(id), reason === 'world:' + id);
+    });
+    $('store-rows').innerHTML = html;
+    $('store-rows').querySelectorAll('[data-product]').forEach(b => b.addEventListener('click', () => this.buy(b.dataset.product)));
+    $('btn-buy-pass').onclick = () => this.buy(Store.IDS.pass);
+    const hl = $('store-rows').querySelector('.store-row.hl');
+    if (hl && hl.scrollIntoView) { try { hl.scrollIntoView({ block: 'nearest' }); } catch (e) { /* oud */ } }
+  },
+  async buy(productId) {
+    if (!Store.available()) return this.showToast('🛒', 'Aankopen werken alleen in de app uit de App Store.');
+    const r = await Store.buy(productId);
+    if (r.ok) {
+      if (productId === Store.IDS.pass) Progress.setFreezes(Progress.freezes() + 2);
+      Sound.play('win');
+      this.showToast('🎉', productId === Store.IDS.hints ? `${Store.HINT_PACK} hints erbij. Veel speurplezier!` : productId === Store.IDS.pass ? 'Welkom bij de Crimson Pass: alles staat open.' : 'Gekocht! Veel speurplezier.');
+      this.onStoreChange();
+    } else if (r.state === 'cancelled') { /* niets */ }
+    else if (r.state === 'pending') this.showToast('⏳', 'De aankoop wacht op goedkeuring (bijvoorbeeld van een ouder).');
+    else this.showToast('⚠️', 'De aankoop is niet gelukt. Probeer het later nog eens.');
+  },
+  async restorePurchases() {
+    if (!Store.available()) return this.showToast('🛒', 'Herstellen werkt alleen in de app uit de App Store.');
+    const before = JSON.stringify(Store.state());
+    const st = await Store.restore();
+    this.onStoreChange();
+    this.showToast(JSON.stringify(st) !== before || st.pass ? '✓' : 'ℹ️', st.pass || (st.worlds || []).length || st.cosmetics ? 'Je aankopen zijn hersteld.' : 'Geen eerdere aankopen gevonden voor dit Apple ID.');
+  },
+  // na een aankoop of herstel: alles wat van bezit afhangt opnieuw tekenen
+  onStoreChange() {
+    Store.applyLook();
+    this.renderStore();
+    this.renderLook();
+    this.updateBoardStats();
+    if (this.currentScreen === 'campaign') this.renderMap();
+    if (typeof Board !== 'undefined' && Board.updateTools && Board.puzzle) Board.updateTools();
+  },
+  // uiterlijk in de instellingen: bordthema en portretlijst
+  renderLook() {
+    const skins = document.getElementById('look-skins'), frames = document.getElementById('look-frames');
+    if (!skins || !frames) return;
+    const owns = Store.ownsCosmetics();
+    const opt = (kind, it, on) => `<button type="button" class="look-opt${on ? ' on' : ''}${Store.canUse(it) ? '' : ' locked'}" data-${kind}="${it.id}"><i></i>${Store.canUse(it) ? '' : '🔒 '}${it.name}</button>`;
+    skins.innerHTML = Store.SKINS.map(it => opt('skin', it, Store.skin() === it.id)).join('');
+    frames.innerHTML = Store.FRAMES.map(it => opt('frame', it, Store.frame() === it.id)).join('');
+    const note = document.getElementById('look-note');
+    if (note) note.textContent = owns ? 'Bordthema en lijst om je rang' : 'Bordthema\'s en lijsten zitten in de Crimson Pass';
+    skins.querySelectorAll('.look-opt').forEach(b => b.addEventListener('click', () => { if (!Store.setSkin(b.dataset.skin)) return this.openStore('cosmetics'); this.renderLook(); }));
+    frames.querySelectorAll('.look-opt').forEach(b => b.addEventListener('click', () => { if (!Store.setFrame(b.dataset.frame)) return this.openStore('cosmetics'); this.renderLook(); }));
+  },
+  bindStore() {
+    const on = (id, fn) => { const el = document.getElementById(id); if (el) el.addEventListener('click', fn); };
+    on('btn-close-store', () => this.hideModal('store-modal'));
+    on('btn-store-restore', () => this.restorePurchases());
+    on('btn-restore', () => this.restorePurchases());
+    on('btn-open-store', () => { this.hideModal('settings-modal'); this.openStore(null); });
+    Store.applyLook();
+    this.renderLook();
+    Store.refresh().then(st => { if (st) this.onStoreChange(); });
   },
 
   // ══════════════════════════════════════════════════════════
@@ -693,7 +791,11 @@ const App = {
     } catch (e) { /* niet beschikbaar */ }
   },
 
-  themeUnlocked(t) { return (t.unlock || 0) <= (Board.loadStats().solved || 0); },
+  themeUnlocked(t) {
+    if (typeof Store !== 'undefined' && Store.isPaidWorld(t.id)) return Store.ownsWorld(t.id);
+    return (t.unlock || 0) <= (Board.loadStats().solved || 0);
+  },
+  isPaidLocked(t) { return typeof Store !== 'undefined' && Store.isPaidWorld(t.id) && !Store.ownsWorld(t.id); },
 
   renderThemePicker() {
     const wrap = document.getElementById('theme-picker');
@@ -708,10 +810,11 @@ const App = {
         <span class="theme-swatches">${t.rooms.slice(0, 4).map(r => `<i style="background:${r.color}"></i>`).join('')}</span>
         <span class="theme-icon">${locked ? '🔒' : t.icon}</span>
         <span class="theme-title">${t.title}</span>
-        ${locked ? `<span class="theme-lock">nog ${need} ${need === 1 ? 'zaak' : 'zaken'}</span>` : ''}
+        ${locked ? (this.isPaidLocked(t) ? '<span class="theme-lock buy">Crimson Pass</span>' : `<span class="theme-lock">nog ${need} ${need === 1 ? 'zaak' : 'zaken'}</span>`) : ''}
       </button>`; }).join('');
     wrap.querySelectorAll('.theme-card').forEach(b => b.addEventListener('click', () => {
       const t = Themes.get(b.dataset.theme);
+      if (this.isPaidLocked(t)) return this.openStore('world:' + t.id);
       if (!this.themeUnlocked(t)) {
         const need = (t.unlock || 0) - (Board.loadStats().solved || 0);
         return this.showToast('🔒', `Los nog ${need} ${need === 1 ? 'zaak' : 'zaken'} op om ${t.title} te openen. De dagelijkse zaak telt mee.`);
