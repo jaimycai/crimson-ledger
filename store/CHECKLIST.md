@@ -14,7 +14,7 @@ npm run ios          # kopieert www/, synct Capacitor en opent Xcode
 ```
 Let op: gebruik de map `~/Developer/Murdoku` (de kopie in `~/Documents/Claude/Murdoku` loopt via iCloud en wordt alleen gespiegeld). Na een `git pull` in Xcode eerst *Product › Clean Build Folder*.
 In Xcode, doel **App**:
-- [ ] *Signing & Capabilities* → Team kiezen → "Automatically manage signing" aan. Bundle ID staat op `com.jaimycai.crimsonledger`.
+- [ ] *Signing & Capabilities* → Team kiezen → "Automatically manage signing" aan. Bundle ID staat op `nl.crimsonledger.app`.
 - [ ] *General* → Version 1.0.0, Build 1 (staan al). Deployment target iOS 15 (nodig voor StoreKit 2). Localizations: Dutch en English staan in `Info.plist` (`CFBundleLocalizations`), zodat de App Store beide talen toont.
 - [x] Project compileert voor simulator én toestel (arm64 Release, gecontroleerd op 8 sep). App draait in de iPhone 17 Pro-simulator.
 - [ ] Druk zelf ▶ op een simulator of je iPhone — controleer: oefenzaak start, tik werkt, haptiek, geluid.
@@ -27,15 +27,15 @@ De app heeft een winkel (Crimson Pass, hintpakket, bordthema's, zes wereldpakket
 
 | Type | Product-ID | Referentienaam | Prijs (tier) |
 |---|---|---|---|
-| Niet-verbruikbaar | `com.jaimycai.crimsonledger.pass` | Crimson Pass | € 4,99 |
-| Verbruikbaar | `com.jaimycai.crimsonledger.hints10` | 10 hints | € 0,99 |
-| Niet-verbruikbaar | `com.jaimycai.crimsonledger.cosmetics` | Bordthema's en lijsten | € 1,99 |
-| Niet-verbruikbaar | `com.jaimycai.crimsonledger.world.hotel` | Wereld: Grand Hotel Aurora | € 1,99 |
-| Niet-verbruikbaar | `com.jaimycai.crimsonledger.world.ruimte` | Wereld: Station Orion | € 1,99 |
-| Niet-verbruikbaar | `com.jaimycai.crimsonledger.world.museum` | Wereld: Het Museum | € 1,99 |
-| Niet-verbruikbaar | `com.jaimycai.crimsonledger.world.trein` | Wereld: De Nachttrein | € 1,99 |
-| Niet-verbruikbaar | `com.jaimycai.crimsonledger.world.circus` | Wereld: Het Circus | € 1,99 |
-| Niet-verbruikbaar | `com.jaimycai.crimsonledger.world.skihut` | Wereld: De Skihut | € 1,99 |
+| Niet-verbruikbaar | `nl.crimsonledger.app.pass` | Crimson Pass | € 4,99 |
+| Verbruikbaar | `nl.crimsonledger.app.hints10` | 10 hints | € 0,99 |
+| Niet-verbruikbaar | `nl.crimsonledger.app.cosmetics` | Bordthema's en lijsten | € 1,99 |
+| Niet-verbruikbaar | `nl.crimsonledger.app.world.hotel` | Wereld: Grand Hotel Aurora | € 1,99 |
+| Niet-verbruikbaar | `nl.crimsonledger.app.world.ruimte` | Wereld: Station Orion | € 1,99 |
+| Niet-verbruikbaar | `nl.crimsonledger.app.world.museum` | Wereld: Het Museum | € 1,99 |
+| Niet-verbruikbaar | `nl.crimsonledger.app.world.trein` | Wereld: De Nachttrein | € 1,99 |
+| Niet-verbruikbaar | `nl.crimsonledger.app.world.circus` | Wereld: Het Circus | € 1,99 |
+| Niet-verbruikbaar | `nl.crimsonledger.app.world.skihut` | Wereld: De Skihut | € 1,99 |
 
 - [ ] Per product: naam en omschrijving in het Nederlands én Engels (teksten staan in `store/METADATA.md`, onderaan), een schermafbeelding voor de beoordelaar (`store/screenshots/08-winkel.png`).
 - [ ] Zet "Gezinsdeling" (Family Sharing) aan voor de niet-verbruikbare producten.
@@ -53,7 +53,7 @@ De app heeft een winkel (Crimson Pass, hintpakket, bordthema's, zes wereldpakket
 | Platforms | alleen **iOS** aanvinken (geen macOS, tvOS, visionOS) |
 | Name | `Crimson Ledger` |
 | Primary Language | **Dutch (Netherlands)** — Engels voeg je later toe als extra taal |
-| Bundle ID | `com.jaimycai.crimsonledger` |
+| Bundle ID | `nl.crimsonledger.app` |
 | SKU | `crimson-ledger-ios` |
 | User Access | **Full Access** |
 
@@ -61,11 +61,33 @@ De naam moet uniek zijn in de hele App Store. Is "Crimson Ledger" bezet, probeer
 dan `Crimson Ledger: Moordpuzzel`; de naam in de lijst mag afwijken van de naam
 op het toestel (die staat vast op "Crimson Ledger" via `CFBundleDisplayName`).
 
-Staat de Bundle ID niet in de lijst? Registreer hem eerst: developer.apple.com ›
-*Certificates, Identifiers & Profiles* › *Identifiers* › **+** › App IDs › App ›
-Description `Crimson Ledger`, Bundle ID **Explicit** `com.jaimycai.crimsonledger`,
-geen extra Capabilities aanvinken → Register. Daarna verschijnt hij in het
-dropdownmenu (soms na een keer verversen).
+Staat de Bundle ID niet in de lijst? Registreer hem eerst; zie de volgende
+paragraaf. Daarna verschijnt hij in het dropdownmenu, soms pas na een keer
+verversen.
+
+## De Bundle ID registreren (developer.apple.com)
+
+De Bundle ID is de permanente naam van de app bij Apple. Na de eerste upload kun
+je hem nooit meer wijzigen, en hij is zichtbaar in foutrapporten en in sommige
+links. Daarom staat er geen persoonsnaam in: de app heet `nl.crimsonledger.app`.
+
+Ga naar *Certificates, Identifiers & Profiles* › *Identifiers* › **+**. Kies op
+het eerste scherm **App IDs** en klik Continue, kies daarna **App** en klik weer
+Continue. Vul het formulier zo in:
+
+| Veld | Wat je invult |
+|---|---|
+| Platform | **iOS, tvOS, watchOS** (dat is de enige keuze voor een iPhone-app) |
+| Description | `Crimson Ledger` — alleen letters, cijfers en spaties, geen leestekens |
+| Bundle ID | **Explicit** aanvinken, dan `nl.crimsonledger.app` in het veld |
+| Capabilities | niets aanvinken |
+| App Services | niets aanvinken |
+
+In-App Purchase staat altijd aan en kun je niet uitvinken; dat is goed, want de
+winkel in de app heeft het nodig. Push Notifications heb je **niet** nodig: de
+herinnering van de app is een lokale melding en die vraagt geen capability.
+
+Klik Continue, controleer het overzicht en klik Register.
 
 ### Daarna
 - [ ] Vul alle velden uit `store/METADATA.md` in (beschrijving, trefwoorden, URL's, leeftijd, privacy-vragenlijst = "verzamelt geen gegevens"; aankopen lopen via Apple, de app slaat zelf niets op over de koper).

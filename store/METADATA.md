@@ -3,7 +3,7 @@
 ## App-informatie
 - **Naam**: Crimson Ledger
 - **Ondertitel** (30 tekens max): Moordmysterie op de plattegrond
-- **Bundle ID**: com.jaimycai.crimsonledger
+- **Bundle ID**: nl.crimsonledger.app
 - **SKU**: crimson-ledger-ios
 - **Primaire categorie**: Games › Puzzle · **Secundair**: Games › Board
 - **Primaire taal**: Nederlands (nl-NL) · **Extra lokalisatie**: Engels (en-US), teksten hieronder

@@ -10,11 +10,11 @@
 // ============================================================
 
 const Store = {
-  APP: 'com.jaimycai.crimsonledger',
+  APP: 'nl.crimsonledger.app',
   IDS: {
-    pass: 'com.jaimycai.crimsonledger.pass',
-    hints: 'com.jaimycai.crimsonledger.hints10',
-    cosmetics: 'com.jaimycai.crimsonledger.cosmetics'
+    pass: 'nl.crimsonledger.app.pass',
+    hints: 'nl.crimsonledger.app.hints10',
+    cosmetics: 'nl.crimsonledger.app.cosmetics'
   },
   worldId(id) { return `${this.APP}.world.${id}`; },
   FREE_WORLDS: ['landhuis', 'piraten'],
