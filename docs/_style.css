@@ -1,0 +1,35 @@
+:root {
+  --paper: #f4ecdd;
+  --ink: #2b2118;
+  --muted: #6b5b48;
+  --crimson: #8c2f2f;
+  --gold: #a8802c;
+  --line: #d9c9ad;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 17px/1.65 Georgia, "Iowan Old Style", "Times New Roman", serif;
+}
+.wrap { max-width: 42rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+header { border-bottom: 2px solid var(--line); padding-bottom: 1.25rem; margin-bottom: 2rem; }
+.kicker { font-size: .8rem; letter-spacing: .18em; text-transform: uppercase; color: var(--gold); margin: 0 0 .35rem; }
+h1 { font-size: 2rem; margin: 0 0 .4rem; color: var(--crimson); letter-spacing: .01em; }
+h2 { font-size: 1.25rem; margin: 2.2rem 0 .6rem; color: var(--crimson); }
+h3 { font-size: 1rem; margin: 1.6rem 0 .3rem; }
+p, li { color: var(--ink); }
+.lead { color: var(--muted); font-style: italic; margin: 0; }
+a { color: var(--crimson); }
+ul { padding-left: 1.2rem; }
+.card { border: 1px solid var(--line); background: #fbf6ec; padding: 1rem 1.25rem; border-radius: 6px; margin: 1.5rem 0; }
+.lang { margin-top: 3.5rem; padding-top: 1.5rem; border-top: 1px dashed var(--line); }
+footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 2px solid var(--line); font-size: .85rem; color: var(--muted); }
+footer a { color: var(--muted); }
+nav a { margin-right: 1rem; font-size: .9rem; }
+@media (prefers-color-scheme: dark) {
+  :root { --paper: #191512; --ink: #ece2d2; --muted: #a2907a; --crimson: #d9877a; --gold: #c9a45a; --line: #3a3128; }
+  .card { background: #211b16; }
+}
