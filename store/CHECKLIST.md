@@ -9,12 +9,13 @@ Alles wat vanaf de code kan is gedaan. Dit zijn de stappen die jouw account en X
 
 ## Project openen
 ```bash
-cd ~/Documents/Claude/Murdoku
+cd ~/Developer/Murdoku
 npm run ios          # kopieert www/, synct Capacitor en opent Xcode
 ```
+Let op: gebruik de map `~/Developer/Murdoku` (de kopie in `~/Documents/Claude/Murdoku` loopt via iCloud en wordt alleen gespiegeld). Na een `git pull` in Xcode eerst *Product › Clean Build Folder*.
 In Xcode, doel **App**:
 - [ ] *Signing & Capabilities* → Team kiezen → "Automatically manage signing" aan. Bundle ID staat op `com.jaimycai.crimsonledger`.
-- [ ] *General* → Version 1.0.0, Build 1 (staan al). Deployment target iOS 15 (nodig voor StoreKit 2).
+- [ ] *General* → Version 1.0.0, Build 1 (staan al). Deployment target iOS 15 (nodig voor StoreKit 2). Localizations: Dutch en English staan in `Info.plist` (`CFBundleLocalizations`), zodat de App Store beide talen toont.
 - [x] Project compileert voor simulator én toestel (arm64 Release, gecontroleerd op 8 sep). App draait in de iPhone 17 Pro-simulator.
 - [ ] Druk zelf ▶ op een simulator of je iPhone — controleer: oefenzaak start, tik werkt, haptiek, geluid.
 
@@ -35,7 +36,7 @@ De app heeft een winkel (Crimson Pass, hintpakket, bordthema's, zes wereldpakket
 | Niet-verbruikbaar | `com.jaimycai.crimsonledger.world.circus` | Wereld: Het Circus | € 1,99 |
 | Niet-verbruikbaar | `com.jaimycai.crimsonledger.world.skihut` | Wereld: De Skihut | € 1,99 |
 
-- [ ] Per product: naam en omschrijving in het Nederlands (en Engels), een schermafbeelding voor de beoordelaar (mag een screenshot van de winkel in de app zijn).
+- [ ] Per product: naam en omschrijving in het Nederlands én Engels (teksten staan in `store/METADATA.md`, onderaan), een schermafbeelding voor de beoordelaar (`store/screenshots/08-winkel.png`).
 - [ ] Zet "Gezinsdeling" (Family Sharing) aan voor de niet-verbruikbare producten.
 - [ ] Bij het indienen van de app-versie: de producten **aanvinken** bij "In-App Purchases", anders worden ze niet mee beoordeeld.
 - [ ] Testen zonder App Store Connect: in Xcode *Product › Scheme › Edit Scheme › Run › Options › StoreKit Configuration* → kies `App/Products.storekit`. Dan kun je in de simulator kopen met nepgeld.
@@ -45,7 +46,9 @@ De app heeft een winkel (Crimson Pass, hintpakket, bordthema's, zes wereldpakket
 ## App Store Connect (appstoreconnect.apple.com)
 - [ ] *Mijn apps › +* → Nieuwe app: naam **Crimson Ledger**, taal Nederlands, Bundle ID kiezen, SKU `crimson-ledger-ios`.
 - [ ] Vul alle velden uit `store/METADATA.md` in (beschrijving, trefwoorden, URL's, leeftijd, privacy-vragenlijst = "verzamelt geen gegevens"; aankopen lopen via Apple, de app slaat zelf niets op over de koper).
-- [ ] Upload de schermafbeeldingen uit `store/screenshots/` (6,7"). App-icoon komt uit de build zelf.
+- [ ] Upload de schermafbeeldingen uit `store/screenshots/` (6,7").
+- [ ] Voeg de lokalisatie **English (U.S.)** toe (rechtsboven bij de versie: *Nederlands ▾ › Engels (V.S.)*) en vul naam, ondertitel, promotietekst, beschrijving, trefwoorden en "Wat is er nieuw" in uit het Engelse blok in `store/METADATA.md`. Schermafbeeldingen uit `store/screenshots-en/`.
+- [ ] Prijs en beschikbaarheid: app **Gratis**; de in-app aankopen hebben hun eigen prijs (tabel hierboven). App-icoon komt uit de build zelf.
 
 ## Bouwen en uploaden
 - [ ] Xcode: bovenin het doel op **Any iOS Device (arm64)** zetten → *Product › Archive*.
@@ -58,4 +61,5 @@ De app heeft een winkel (Crimson Pass, hintpakket, bordthema's, zes wereldpakket
 
 ## Nog open (jouw keuze)
 - Contact-e-mail in App Store Connect (verplicht veld) — niet in de code gezet, vul je zelf in.
-- Het klassieke deductieraster staat nog ingeklapt in het menu. Voor een strakkere eerste indruk kan het eruit; zeg het en ik verwijder het.
+- Het klassieke deductieraster staat nog ingeklapt in het Nederlandse menu (in het Engels is het verborgen). Voor een strakkere eerste indruk kan het eruit; zeg het en ik verwijder het.
+- Meer talen (Duits, Frans, Spaans): elke taal is één nieuw blok in `i18n.js` plus een kopie van `i18n-data.js` en `i18n-campaign.js`; de code hoeft niet meer aangeraakt te worden.
