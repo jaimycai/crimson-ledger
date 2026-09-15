@@ -21,7 +21,8 @@ In Xcode, doel **App**:
 
 ## In-app-aankopen (App Store Connect › je app › In-App Purchases)
 De app heeft een winkel (Crimson Pass, hintpakket, bordthema's, zes wereldpakketten). Zonder deze producten toont de app vaste prijzen en lukt kopen niet.
-- [ ] *Overeenkomsten, belasting en bankgegevens* (Agreements, Tax, and Banking): de **Paid Apps**-overeenkomst tekenen en bank- en belastinggegevens invullen. Zonder dit worden betaalde producten niet goedgekeurd.
+- [ ] *Overeenkomsten, belasting en bankgegevens* (Agreements, Tax, and Banking): de **Paid Apps**-overeenkomst tekenen en bank- en belastinggegevens invullen. Zonder dit worden betaalde producten niet goedgekeurd. Volledige uitleg, inclusief belastingformulieren en uitbetaling: **`store/UITBETALING.md`**.
+- [ ] **Apple Small Business Program** aanvragen (15 % commissie in plaats van 30 %). Gaat in op de eerste van de maand ná goedkeuring, dus vóór je eerste verkoop aanvragen. Zie `store/UITBETALING.md`.
 - [ ] Maak deze producten aan, met precies deze Product-ID's (de app zoekt erop):
 
 | Type | Product-ID | Referentienaam | Prijs (tier) |
@@ -44,11 +45,34 @@ De app heeft een winkel (Crimson Pass, hintpakket, bordthema's, zes wereldpakket
 - [ ] "Aankopen herstellen" staat in Instellingen en in de winkel (verplicht voor de beoordeling).
 
 ## App Store Connect (appstoreconnect.apple.com)
-- [ ] *Mijn apps › +* → Nieuwe app: naam **Crimson Ledger**, taal Nederlands, Bundle ID kiezen, SKU `crimson-ledger-ios`.
+
+### Het venster "New App" — wat je invult
+
+| Veld | Wat je kiest |
+|---|---|
+| Platforms | alleen **iOS** aanvinken (geen macOS, tvOS, visionOS) |
+| Name | `Crimson Ledger` |
+| Primary Language | **Dutch (Netherlands)** — Engels voeg je later toe als extra taal |
+| Bundle ID | `com.jaimycai.crimsonledger` |
+| SKU | `crimson-ledger-ios` |
+| User Access | **Full Access** |
+
+De naam moet uniek zijn in de hele App Store. Is "Crimson Ledger" bezet, probeer
+dan `Crimson Ledger: Moordpuzzel`; de naam in de lijst mag afwijken van de naam
+op het toestel (die staat vast op "Crimson Ledger" via `CFBundleDisplayName`).
+
+Staat de Bundle ID niet in de lijst? Registreer hem eerst: developer.apple.com ›
+*Certificates, Identifiers & Profiles* › *Identifiers* › **+** › App IDs › App ›
+Description `Crimson Ledger`, Bundle ID **Explicit** `com.jaimycai.crimsonledger`,
+geen extra Capabilities aanvinken → Register. Daarna verschijnt hij in het
+dropdownmenu (soms na een keer verversen).
+
+### Daarna
 - [ ] Vul alle velden uit `store/METADATA.md` in (beschrijving, trefwoorden, URL's, leeftijd, privacy-vragenlijst = "verzamelt geen gegevens"; aankopen lopen via Apple, de app slaat zelf niets op over de koper).
 - [ ] Upload de schermafbeeldingen uit `store/screenshots/` (6,7").
 - [ ] Voeg de lokalisatie **English (U.S.)** toe (rechtsboven bij de versie: *Nederlands ▾ › Engels (V.S.)*) en vul naam, ondertitel, promotietekst, beschrijving, trefwoorden en "Wat is er nieuw" in uit het Engelse blok in `store/METADATA.md`. Schermafbeeldingen uit `store/screenshots-en/`.
-- [ ] Prijs en beschikbaarheid: app **Gratis**; de in-app aankopen hebben hun eigen prijs (tabel hierboven). App-icoon komt uit de build zelf.
+- [ ] Prijs en beschikbaarheid: app **Gratis**; de in-app aankopen hebben hun eigen prijs (tabel hierboven).
+- [ ] Leeftijdsclassificatie invullen (antwoorden staan in `store/METADATA.md`) en de privacy-vragenlijst op "verzamelt geen gegevens". App-icoon komt uit de build zelf.
 
 ## Bouwen en uploaden
 - [ ] Xcode: bovenin het doel op **Any iOS Device (arm64)** zetten → *Product › Archive*.
@@ -58,6 +82,14 @@ De app heeft een winkel (Crimson Pass, hintpakket, bordthema's, zes wereldpakket
 ## Wat je kunt verwachten
 - Beoordeling duurt meestal 24–48 uur. Bij afwijzing op richtlijn 4.2 ("minimale functionaliteit"): antwoord dat het een volledig offline spel is met haptiek, geluid, campagne en dagelijkse zaak — geen ingepakte website. Meestal volstaat dat.
 - TestFlight is gratis en werkt met dezelfde upload: handig om het eerst op je eigen iPhone te installeren.
+
+## Betalen en uitbetalen
+Het geld loopt via Apple, niet via een eigen betaalprovider: Apple int, houdt
+15 % of 30 % in en maakt de rest maandelijks over naar je IBAN. Een eigen
+betaaloplossing (Stripe, PayPal, iDEAL) voor werelden, hints of de Pass is
+verboden onder richtlijn 3.1.1 en leidt tot afwijzing. Alles hierover, inclusief
+de belastingformulieren en wanneer het geld binnenkomt, staat in
+**`store/UITBETALING.md`**.
 
 ## Nog open (jouw keuze)
 - Contact-e-mail in App Store Connect (verplicht veld) — niet in de code gezet, vul je zelf in.
