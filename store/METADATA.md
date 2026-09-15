@@ -2,7 +2,7 @@
 
 ## App-informatie
 - **Naam**: Crimson Ledger
-- **Ondertitel** (30 tekens max): Moordmysterie op de plattegrond
+- **Ondertitel** (30 tekens max): Moordmysterie op plattegrond
 - **Bundle ID**: nl.crimsonledger.app
 - **SKU**: crimson-ledger-ios
 - **Primaire categorie**: Games › Puzzle · **Secundair**: Games › Board
@@ -63,7 +63,11 @@ GRATIS SPELEN, OF ALLES INEENS
 Het Landhuis en Het Piratenschip zijn gratis, net als de dagelijkse zaak, de zaak van de week en het archief in alle werelden. Drie hints per dag zijn gratis. De Crimson Pass opent alle werelden, onbeperkt hints en alle bordthema's: eenmalig, geen abonnement.
 
 ## Trefwoorden (100 tekens, komma-gescheiden)
-moordmysterie,logica,puzzel,deductie,detective,plattegrond,dagelijks,breinbreker,mysterie,cluedo
+logica,deductie,detective,speurder,misdaad,raadsel,denkspel,breinbreker,dagelijks,puzzel,offline
+
+Geen merknamen van anderen in de trefwoorden: Cluedo is een merk van Hasbro en
+Apple wijst metadata met zulke namen af (richtlijn 5.2.1). Woorden die al in de
+naam of de ondertitel staan hoef je hier niet te herhalen, die tellen al mee.
 
 ## Wat is er nieuw (1.0)
 Eerste versie: acht werelden op één wereldkaart, 384 campagnezaken met minigames en bewijskisten, een eindeloos archief, dagelijkse zaak met weekstrook en opdrachten, zaak van de week, Inspecteur Van Dam met hints in drie stappen, verklaringen die live groen of rood kleuren, punten, rangen, onderscheidingen en vitrine, begeleide oefenzaak. Nederlands en Engels.
@@ -74,6 +78,13 @@ De app is een offline puzzelspel; er is geen account of login nodig. Bij de eers
 ## Schermafbeeldingen (map `store/screenshots`, 1290×2796 = iPhone 6,7")
 Upload in deze volgorde: 04-verklaringen, 02-wereldkaart, 06-zaak-gesloten, 01-thuis, 05-beschuldiging, 03-briefing, 07-vitrine, 08-winkel. Engelse set in `store/screenshots-en/` (zelfde nummers) voor de en-US-lokalisatie. (Vernieuwd op 16 sep: acht werelden, minigames, kisten, winkel, Engels.)
 iPad wordt niet ondersteund (alleen iPhone), dus geen iPad-schermafbeeldingen nodig.
+
+## App-previews (map `store/previews`)
+- `crimson-ledger-nl.mp4` voor de Nederlandse lokalisatie, `crimson-ledger-en.mp4` voor de Engelse.
+- 1290×2796, H.264, 30 beelden per seconde, 24 seconden; Apple staat 15 tot 30 seconden toe.
+- Kies bij het uploaden een posterbeeld rond seconde 12 (het bord met de verklaringen). Apple toont dat stilstaande beeld voordat de video speelt.
+- Opnieuw maken: zie het kopje "Schermafbeeldingen en video opnieuw maken" in `store/CHECKLIST.md`.
+
 
 
 ## In-app-aankopen (tekst voor App Store Connect)
@@ -94,7 +105,7 @@ Gratis blijft: Het Landhuis en Het Piratenschip (96 zaken), de dagelijkse zaak e
 - **Name**: Crimson Ledger
 - **Subtitle** (30): Murder mystery on a floor plan
 - **Promotional text** (170): A new murder case every day. Place the suspects on the floor plan, combine the statements and point out who was alone with the victim.
-- **Keywords** (100): murder mystery,logic,puzzle,deduction,detective,floor plan,daily,brain teaser,mystery,cluedo
+- **Keywords** (100): logic,deduction,detective,sleuth,crime,riddle,brain teaser,daily,puzzle,offline,whodunit,mystery
 - **What's New (1.0)**: First release: eight worlds on one world map, 384 campaign cases with mini-games and evidence chests, an endless archive, a daily case with week strip and quests, a case of the week, Inspector Van Dam with three-step hints, statements that turn green or red as you play, points, ranks, awards and a cabinet, a guided practice case. Dutch and English.
 
 **Description**

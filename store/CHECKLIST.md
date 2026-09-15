@@ -1,5 +1,10 @@
 # Indienen bij de App Store — stappen voor morgen
 
+> **Alles wat je letterlijk in App Store Connect invult staat in
+> `store/APP-STORE-INVULLEN.md`**: veld voor veld, in de volgorde van de
+> versiepagina, met de bestandspaden van de schermafbeeldingen en de video's.
+> Deze lijst hier gaat over de stappen eromheen.
+
 Alles wat vanaf de code kan is gedaan. Dit zijn de stappen die jouw account en Xcode nodig hebben, in volgorde.
 
 ## Vooraf (kan vandaag al)
