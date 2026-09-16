@@ -94,6 +94,7 @@ Acht platen per taal, 1290×2796, gemaakt door `store/make-store-cards.js`: een 
 - `crimson-ledger-nl-886x1920.mp4` voor de Nederlandse lokalisatie, `crimson-ledger-en-886x1920.mp4` voor de Engelse.
 - **886×1920**, H.264, 30 beelden per seconde, 24 seconden; Apple staat 15 tot 30 seconden toe. App Store Connect vraagt voor de app-preview 886×1920 of 1920×886, een andere maat dan voor de schermafbeeldingen. Dezelfde opname staat er ook op 1290×2796 (`*-1290x2796.mp4`) voor het geval het uploadvenster die maat vraagt; de beeldverhouding is identiek, dus er wordt alleen verkleind.
 - Kies bij het uploaden een posterbeeld rond seconde 12 (het bord met de verklaringen). Apple toont dat stilstaande beeld voordat de video speelt.
+- De video heeft een stil AAC-geluidsspoor. Zonder geluidsspoor weigert App Store Connect het bestand met "Your app preview contains unsupported or corrupted audio"; `store/add-silence.swift` zet het erin.
 - Opnieuw maken: zie het kopje "Schermafbeeldingen en video opnieuw maken" in `store/CHECKLIST.md`.
 
 

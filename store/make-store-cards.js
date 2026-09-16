@@ -30,7 +30,9 @@ const CARDS = {
     ['05-beschuldiging', 'Wie was alleen\nmet het slachtoffer?', 'Wijs de dader aan. Hij bekent, of hij ontkent.'],
     ['03-briefing', 'Inspecteur Van Dam\nhelpt je op weg', 'Een briefing vooraf, hints in drie stappen.'],
     ['07-vitrine', 'Drieëntwintig\nonderscheidingen', 'En een vitrine met een bewijsstuk per zaak.'],
-    ['08-winkel', 'Geen levens.\nGeen advertenties.', 'Twee werelden gratis. De rest koop je één keer.']
+    ['08-winkel', 'Geen levens.\nGeen advertenties.', 'Twee werelden gratis. De rest koop je één keer.'],
+    ['09-circus', 'Van het landhuis\ntot het circus', 'Elke wereld een eigen huis, een eigen cast, een eigen zaak.'],
+    ['10-hint', 'Hints die uitleggen,\nniet verklappen', 'Van Dam wijst de verklaring aan en zegt wat eruit volgt.']
   ],
   en: [
     ['04-verklaringen', 'The suspects talk.', 'A statement that fits turns green.'],
@@ -40,7 +42,9 @@ const CARDS = {
     ['05-beschuldiging', 'Who was alone\nwith the victim?', 'Name the culprit. They confess, or they deny it.'],
     ['03-briefing', 'Inspector Van Dam\nsets you going', 'A briefing first, hints in three steps.'],
     ['07-vitrine', 'Twenty-three\nawards to earn', 'And a cabinet with one piece of evidence per case.'],
-    ['08-winkel', 'No lives.\nNo ads.', 'Two worlds free. The rest is a single purchase.']
+    ['08-winkel', 'No lives.\nNo ads.', 'Two worlds free. The rest is a single purchase.'],
+    ['09-circus', 'From the manor\nto the circus', 'Every world its own house, its own cast, its own case.'],
+    ['10-hint', 'Hints that explain,\nnever spoil', 'Van Dam points at the statement and says what follows.']
   ]
 };
 

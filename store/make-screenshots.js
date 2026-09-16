@@ -79,6 +79,34 @@ async function run(lang) {
   await page.evaluate(() => App.openStore(null)); await wait(400);
   await page.evaluate(() => { const m = document.querySelector('#store-modal .modal-content'); if (m) m.scrollTop = 0; }); await wait(200);
   await shot('08-winkel');
+  // een tweede wereld: het circus, met de Pass in bezit zodat hij open staat
+  await page.evaluate(() => {
+    const m = document.getElementById('store-modal'); if (m) m.classList.remove('active');
+    Store.save({ pass: true, worlds: [], cosmetics: false });
+  }); await wait(300);
+  await page.evaluate(() => {
+    const ch = Campaign.list().find(c => c.theme === 'circus') || Campaign.list()[0];
+    App.startCampaignCase(ch.key, 2);
+  }); await wait(600);
+  await page.evaluate(() => { const b = document.getElementById('btn-part-go'); if (b && document.getElementById('part-modal').classList.contains('active')) b.click(); }); await wait(400);
+  await page.evaluate(() => { const b = document.getElementById('btn-briefing-go'); if (b) b.click(); }); await wait(400);
+  await page.evaluate(() => { const ok = document.getElementById('btn-newclue-ok'); if (ok && document.getElementById('newclue-modal').classList.contains('active')) ok.click(); }); await wait(400);
+  await page.evaluate(() => {
+    const p = Board.puzzle;
+    [0, 1, 2].forEach(i => { Board.placements[i] = { x: p.solution[i].x, y: p.solution[i].y }; });
+    Board.after(); Board.deckIdx = 3; if (Board.renderDeck) Board.renderDeck();
+  }); await wait(400);
+  await shot('09-circus');
+  // de hint van Van Dam in drie stappen; eerst terug naar één geplaatste
+  // verdachte, anders geeft de hint alleen "iedereen staat goed"
+  await page.evaluate(() => {
+    const p = Board.puzzle;
+    Board.placements = [];
+    Board.placements[0] = { x: p.solution[0].x, y: p.solution[0].y };
+    Board.after();
+  }); await wait(300);
+  await page.evaluate(() => document.getElementById('btn-board-hint').click()); await wait(700);
+  await shot('10-hint');
   await browser.close();
 }
 (async () => { await run('nl'); await run('en'); })().catch(e => { console.error(e); process.exit(1); });

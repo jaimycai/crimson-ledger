@@ -12,8 +12,8 @@ App-ID 6812534368 · Bundle ID `nl.crimsonledger.app` · versie 1.0 · build 1
 
 | Wat | Waar |
 |---|---|
-| Schermafbeeldingen met kop, 6.5", 1284×2778 | `store/cards-65/` (NL), `store/cards-65-en/` (EN) |
-| Schermafbeeldingen met kop, 6.9", 1290×2796 | `store/cards/` (NL), `store/cards-en/` (EN) |
+| 10 schermafbeeldingen met kop, 6.5", 1284×2778 | `store/cards-65/` (NL), `store/cards-65-en/` (EN) |
+| 10 schermafbeeldingen met kop, 6.9", 1290×2796 | `store/cards/` (NL), `store/cards-en/` (EN) |
 | Kale schermen zonder kop, 6.5" | `store/screenshots-65/`, `store/screenshots-65-en/` |
 | Kale schermen zonder kop, 6.9" | `store/screenshots/`, `store/screenshots-en/` |
 | App-preview Nederlands, 24 s, **886×1920**, H.264 | `store/previews/crimson-ledger-nl-886x1920.mp4` |
@@ -103,6 +103,10 @@ de mappen zonder. Eén groep invullen is genoeg; Apple schaalt hem door naar de
 andere iPhones. iPad hoef je niet te doen, de app is alleen voor iPhone.
 
 - [ ] Sleep eerst de video erin: bij de groep 6.5" is dat `store/previews/crimson-ledger-nl-886x1920.mp4`, bij 6.9" `store/previews/crimson-ledger-nl-1290x2796.mp4`. Kies als posterbeeld ongeveer seconde 12, het bord met de verklaringen.
+  De video heeft een stil geluidsspoor. Dat moet: zonder geluidsspoor weigert App
+  Store Connect het bestand met "Your app preview contains unsupported or
+  corrupted audio", ook al is de video bewust stil. `store/add-silence.swift`
+  zet dat spoor erin.
 - [ ] Daarna de acht platen uit de map die bij de groep hoort, dus `store/cards-65/` bij 6.5" en `store/cards/` bij 6.9". Ze staan al in de goede volgorde, dus je kunt ze in één keer selecteren en erin slepen:
   1. `01-verklaringen.png` — De verdachten praten.
   2. `02-wereldkaart.png` — Acht werelden, één kronkelpad
@@ -112,6 +116,11 @@ andere iPhones. iPad hoef je niet te doen, de app is alleen voor iPhone.
   6. `06-briefing.png` — Inspecteur Van Dam helpt je op weg
   7. `07-vitrine.png` — Drieëntwintig onderscheidingen
   8. `08-winkel.png` — Geen levens. Geen advertenties.
+  9. `09-circus.png` — Van het landhuis tot het circus
+  10. `10-hint.png` — Hints die uitleggen, niet verklappen
+
+Tien is het maximum. Alleen de eerste drie komen op het installatievenster, dus
+daar staan het bord, de wereldkaart en Zaak Gesloten.
 
 Die platen hebben een kop boven het scherm, zoals de meeste spellen in de App
 Store doen. De eerste twee zijn wat de meeste mensen te zien krijgen; daarom
@@ -234,8 +243,10 @@ cd ~/Developer/Murdoku
 node store/make-screenshots.js 6.9 && node store/make-store-cards.js 6.9
 node store/make-screenshots.js 6.5 && node store/make-store-cards.js 6.5
 node store/make-preview.js /tmp/crimson-preview
-swift store/encode-preview.swift /tmp/crimson-preview/nl store/previews/crimson-ledger-nl-886x1920.mp4 30 886 1920
-swift store/encode-preview.swift /tmp/crimson-preview/en store/previews/crimson-ledger-en-886x1920.mp4 30 886 1920
+swift store/encode-preview.swift /tmp/crimson-preview/nl /tmp/nl.mp4 30 886 1920
+swift store/encode-preview.swift /tmp/crimson-preview/en /tmp/en.mp4 30 886 1920
+swift store/add-silence.swift /tmp/nl.mp4 store/previews/crimson-ledger-nl-886x1920.mp4
+swift store/add-silence.swift /tmp/en.mp4 store/previews/crimson-ledger-en-886x1920.mp4
 ```
 
 `make-preview.js` en `make-screenshots.js` hebben puppeteer nodig. Staat dat er
