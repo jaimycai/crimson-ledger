@@ -1,26 +1,28 @@
-# App Store Connect — invulvelden voor Crimson Ledger 1.0
+CRIMSON LEDGER 1.0 - teksten om in App Store Connect te plakken
+Gemaakt uit store/METADATA.md. Pas daar aan, niet hier.
 
-## App-informatie
-- **Naam**: Crimson Ledger
-- **Ondertitel** (30 tekens max): Moordmysterie op plattegrond
-- **Bundle ID**: nl.crimsonledger.app
-- **SKU**: crimson-ledger-ios
-- **Primaire categorie**: Games › Puzzle · **Secundair**: Games › Board
-- **Primaire taal**: Nederlands (nl-NL) · **Extra lokalisatie**: Engels (en-US), teksten hieronder
-- **Prijs**: Gratis, met in-app aankopen (zie onderaan)
-- **Leeftijdsclassificatie**: beantwoord alle vragen met "Geen", behalve *Cartoon or Fantasy Violence → Infrequent/Mild* (het slachtoffer is een krijtomtrek, geen geweld in beeld). Resultaat: 9+.
-- **Copyright**: © 2026 Jaimy Cai
-- **Privacyverklaring-URL**: https://jaimycai.github.io/crimson-ledger/privacy.html
-- **Support-URL**: https://jaimycai.github.io/crimson-ledger/support.html
-- **Marketing-URL** (optioneel): https://jaimycai.github.io/crimson-ledger/
+========================================================================
+NEDERLANDS - NAAM
+========================================================================
 
-## App-privacy (vragenlijst)
-- Verzamelt deze app gegevens? **Nee.** (Geen analytics, geen accounts, geen advertenties, alles lokaal.)
+Crimson Ledger
 
-## Promotietekst (170 tekens)
+========================================================================
+NEDERLANDS - ONDERTITEL (30 tekens)
+========================================================================
+
+Moordmysterie op plattegrond
+
+========================================================================
+NEDERLANDS - PROMOTIONAL TEXT (170 tekens)
+========================================================================
+
 Elke dag een nieuwe moordzaak. Plaats de verdachten op de plattegrond, combineer de aanwijzingen en wijs aan wie alleen was met het slachtoffer.
 
-## Beschrijving
+========================================================================
+NEDERLANDS - DESCRIPTION
+========================================================================
+
 Crimson Ledger is een logisch moordmysterie op een plattegrond.
 
 Een slachtoffer, een huis vol kamers en een handvol verdachten. De aanwijzingen vertellen je waar iedereen stond — in een hoek van de Bibliotheek, naast een plant, links van Marcus, alleen in de Keuken. Zet iedereen op de juiste plek en wijs aan wie alleen was met het slachtoffer. Dat is de moordenaar.
@@ -62,56 +64,45 @@ Kies je taal in Instellingen.
 GRATIS SPELEN, OF ALLES INEENS
 Het Landhuis en Het Piratenschip zijn gratis, net als de dagelijkse zaak, de zaak van de week en het archief in alle werelden. Drie hints per dag zijn gratis. De Crimson Pass opent alle werelden, onbeperkt hints en alle bordthema's: eenmalig, geen abonnement.
 
-## Trefwoorden (100 tekens, komma-gescheiden)
+========================================================================
+NEDERLANDS - KEYWORDS (100 tekens)
+========================================================================
+
 logica,deductie,detective,speurder,misdaad,raadsel,denkspel,breinbreker,dagelijks,puzzel,offline
 
-Geen merknamen van anderen in de trefwoorden: Cluedo is een merk van Hasbro en
-Apple wijst metadata met zulke namen af (richtlijn 5.2.1). Woorden die al in de
-naam of de ondertitel staan hoef je hier niet te herhalen, die tellen al mee.
+========================================================================
+NEDERLANDS - WAT IS ER NIEUW
+========================================================================
 
-## Wat is er nieuw (1.0)
 Eerste versie: acht werelden op één wereldkaart, 384 campagnezaken met minigames en bewijskisten, een eindeloos archief, dagelijkse zaak met weekstrook en opdrachten, zaak van de week, Inspecteur Van Dam met hints in drie stappen, verklaringen die live groen of rood kleuren, punten, rangen, onderscheidingen en vitrine, begeleide oefenzaak. Nederlands en Engels.
 
-## Notities voor App Review
+========================================================================
+NEDERLANDS - NOTES VOOR APP REVIEW
+========================================================================
+
 De app is een offline puzzelspel; er is geen account of login nodig. Bij de eerste start opent een korte begeleide oefenzaak (vier tikken). Daarna: de kaart "Dagelijkse zaak" of "Verder met de campagne" (wereldkaart › zaak 1 "Het glas Bordeaux", eerst een korte briefing van Inspecteur Van Dam, dan "Aan de slag"). De knop "Hint" legt de volgende logische stap uit. Er worden geen gegevens verzameld (zie privacyverklaring). De app is in het Nederlands en Engels; de taal volgt het toestel en staat in Instellingen (tandwiel rechtsboven). In-app aankopen: Crimson Pass, hintpakket, bordthema's en zes wereldpakketten; "Aankopen herstellen" staat in Instellingen en in de winkel. De gratis werelden (Het Landhuis, Het Piratenschip) en de dagelijkse zaak zijn zonder aankoop te beoordelen.
 
-## Schermafbeeldingen (map `store/screenshots`, 1290×2796 = iPhone 6,7")
-Upload in deze volgorde: 04-verklaringen, 02-wereldkaart, 06-zaak-gesloten, 01-thuis, 05-beschuldiging, 03-briefing, 07-vitrine, 08-winkel. Engelse set in `store/screenshots-en/` (zelfde nummers) voor de en-US-lokalisatie. (Vernieuwd op 16 sep: acht werelden, minigames, kisten, winkel, Engels.)
-iPad wordt niet ondersteund (alleen iPhone), dus geen iPad-schermafbeeldingen nodig.
+========================================================================
+ENGLISH - NAME
+========================================================================
 
-## Schermafbeeldingen met kop (map `store/cards` en `store/cards-en`)
-Acht platen per taal, 1290×2796, gemaakt door `store/make-store-cards.js`: een kop in Playfair boven het scherm, afwisselend op papier en op donker, met het toestel in een lijst eronder. Dit is de set die je uploadt; ze staan al genummerd op volgorde. De kale schermen zonder kop blijven staan in `store/screenshots`.
+Crimson Ledger
 
-## App-previews (map `store/previews`)
-- `crimson-ledger-nl-886x1920.mp4` voor de Nederlandse lokalisatie, `crimson-ledger-en-886x1920.mp4` voor de Engelse.
-- **886×1920**, H.264, 30 beelden per seconde, 24 seconden; Apple staat 15 tot 30 seconden toe. App Store Connect vraagt voor de app-preview 886×1920 of 1920×886, een andere maat dan voor de schermafbeeldingen. Dezelfde opname staat er ook op 1290×2796 (`*-1290x2796.mp4`) voor het geval het uploadvenster die maat vraagt; de beeldverhouding is identiek, dus er wordt alleen verkleind.
-- Kies bij het uploaden een posterbeeld rond seconde 12 (het bord met de verklaringen). Apple toont dat stilstaande beeld voordat de video speelt.
-- Opnieuw maken: zie het kopje "Schermafbeeldingen en video opnieuw maken" in `store/CHECKLIST.md`.
+========================================================================
+ENGLISH - SUBTITLE (30 chars)
+========================================================================
 
+Murder mystery on a floor plan
 
+========================================================================
+ENGLISH - PROMOTIONAL TEXT (170 chars)
+========================================================================
 
-## In-app-aankopen (tekst voor App Store Connect)
+A new murder case every day. Place the suspects on the floor plan, combine the statements and point out who was alone with the victim.
 
-**Crimson Pass** (niet-verbruikbaar) — Alles, voor altijd: alle werelden (ook de werelden die nog komen), onbeperkt hints, alle bordthema's en portretlijsten, en twee extra vrije dagen voor je streak. Eenmalig, geen abonnement.
-
-**10 hints** (verbruikbaar) — Tien extra hints van Inspecteur Van Dam. Elke dag krijg je er drie gratis.
-
-**Bordthema's en lijsten** (niet-verbruikbaar) — Speel op een nachtbord, in sepia of op kraftpapier, en kies een gouden, zilveren of crimson lijst om je rang.
-
-**Wereld: …** (niet-verbruikbaar, zes stuks) — 48 zaken in zes delen, met minigames, bewijskisten en een eigen cast.
-
-Gratis blijft: Het Landhuis en Het Piratenschip (96 zaken), de dagelijkse zaak en de zaak van de week in alle werelden, het eindeloze archief, alle opdrachten en onderscheidingen.
-
-
-## Engelse lokalisatie (en-US) — App Store Connect › Crimson Ledger › + taal
-
-- **Name**: Crimson Ledger
-- **Subtitle** (30): Murder mystery on a floor plan
-- **Promotional text** (170): A new murder case every day. Place the suspects on the floor plan, combine the statements and point out who was alone with the victim.
-- **Keywords** (100): logic,deduction,detective,sleuth,crime,riddle,brain teaser,daily,puzzle,offline,whodunit,mystery
-- **What's New (1.0)**: First release: eight worlds on one world map, 384 campaign cases with mini-games and evidence chests, an endless archive, a daily case with week strip and quests, a case of the week, Inspector Van Dam with three-step hints, statements that turn green or red as you play, points, ranks, awards and a cabinet, a guided practice case. Dutch and English.
-
-**Description**
+========================================================================
+ENGLISH - DESCRIPTION
+========================================================================
 
 Crimson Ledger is a logic murder mystery on a floor plan.
 
@@ -154,19 +145,40 @@ Pick your language in Settings.
 PLAY FOR FREE, OR UNLOCK EVERYTHING AT ONCE
 The Manor and The Pirate Ship are free, and so are the daily case, the case of the week and the archive in every world. Three hints a day are free. The Crimson Pass opens every world, unlimited hints and every board theme: one purchase, no subscription.
 
-**App Review notes (English)**
+========================================================================
+ENGLISH - KEYWORDS (100 chars)
+========================================================================
+
+logic,deduction,detective,sleuth,crime,riddle,brain teaser,daily,puzzle,offline,whodunit,mystery
+
+========================================================================
+ENGLISH - WHAT'S NEW
+========================================================================
+
+First release: eight worlds on one world map, 384 campaign cases with mini-games and evidence chests, an endless archive, a daily case with week strip and quests, a case of the week, Inspector Van Dam with three-step hints, statements that turn green or red as you play, points, ranks, awards and a cabinet, a guided practice case. Dutch and English.
+
+========================================================================
+ENGLISH - APP REVIEW NOTES
+========================================================================
+
 The app is an offline puzzle game; no account or login is needed. On first launch a short guided practice case opens (four taps). After that: the "Daily case" card or "Continue the campaign" (world map › case 1 "The Glass of Bordeaux", first a short briefing from Inspector Van Dam, then "Let's go"). The "Hint" button explains the next logical step. No data is collected (see privacy policy). The app is in Dutch and English; the language follows the device and can be changed in Settings (gear, top right). In-app purchases: Crimson Pass, hint pack, board themes and six world packs; "Restore purchases" is in Settings and in the shop. The free worlds (The Manor, The Pirate Ship) and the daily case can be reviewed without any purchase.
 
-**In-app purchases (English display names and descriptions)**
+========================================================================
+URLS (beide talen)
+========================================================================
 
-| Product-ID | Display name | Description |
-|---|---|---|
-| `…pass` | Crimson Pass | Everything, forever: all worlds (including the ones still to come), unlimited hints, all board themes and portrait frames, and two extra streak freezes. One purchase, no subscription. |
-| `…hints10` | 10 hints | Ten extra hints from Inspector Van Dam. You get three for free every day. |
-| `…cosmetics` | Board themes and frames | Play on a night board, in sepia or on kraft paper, and pick a gold, silver or crimson frame for your rank. |
-| `…world.hotel` | World: Grand Hotel Aurora | 48 cases in six parts, with mini-games, evidence chests and its own cast. |
-| `…world.ruimte` | World: Station Orion | idem |
-| `…world.museum` | World: The Museum | idem |
-| `…world.trein` | World: The Night Train | idem |
-| `…world.circus` | World: The Circus | idem |
-| `…world.skihut` | World: The Ski Lodge | idem |
+Support URL:        https://jaimycai.github.io/crimson-ledger/support.html
+Marketing URL:      https://jaimycai.github.io/crimson-ledger/
+Privacy Policy URL: https://jaimycai.github.io/crimson-ledger/privacy.html
+
+========================================================================
+OVERIGE VELDEN
+========================================================================
+
+Version:    1.0
+Copyright:  2026 Jaimy Cai
+Categorie:  Games > Puzzle (primair), Games > Board (secundair)
+Leeftijd:   9+ (alleen Cartoon or Fantasy Violence op Infrequent/Mild)
+IDFA:       Nee
+Sign-in:    niet vereist
+

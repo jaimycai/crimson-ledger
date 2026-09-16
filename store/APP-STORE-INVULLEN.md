@@ -15,8 +15,9 @@ App-ID 6812534368 · Bundle ID `nl.crimsonledger.app` · versie 1.0 · build 1
 | Schermafbeeldingen met kop, Nederlands, 8 stuks, 1290×2796 | `store/cards/` |
 | Schermafbeeldingen met kop, Engels, 8 stuks, 1290×2796 | `store/cards-en/` |
 | Kale schermafbeeldingen zonder kop, beide talen | `store/screenshots/`, `store/screenshots-en/` |
-| App-preview Nederlands, 24 s, 1290×2796, H.264 | `store/previews/crimson-ledger-nl.mp4` |
-| App-preview Engels, 24 s, 1290×2796, H.264 | `store/previews/crimson-ledger-en.mp4` |
+| App-preview Nederlands, 24 s, **886×1920**, H.264 | `store/previews/crimson-ledger-nl-886x1920.mp4` |
+| App-preview Engels, 24 s, **886×1920**, H.264 | `store/previews/crimson-ledger-en-886x1920.mp4` |
+| Dezelfde previews op 1290×2796, reserve | `store/previews/*-1290x2796.mp4` |
 | Support-pagina, live | https://jaimycai.github.io/crimson-ledger/support.html |
 | Privacyverklaring, live | https://jaimycai.github.io/crimson-ledger/privacy.html |
 | Marketingpagina, live | https://jaimycai.github.io/crimson-ledger/ |
@@ -91,7 +92,7 @@ de app mee de beoordeling in.
 Kies bovenaan **iPhone 6.9"**. Die ene maat is genoeg; Apple schaalt hem door
 naar de kleinere iPhones. iPad hoef je niet te doen, de app is alleen voor iPhone.
 
-- [ ] Sleep eerst de video erin: `store/previews/crimson-ledger-nl.mp4`. Kies als posterbeeld ongeveer seconde 12, het bord met de verklaringen.
+- [ ] Sleep eerst de video erin: `store/previews/crimson-ledger-nl-886x1920.mp4`. App Store Connect neemt voor de app-preview 886×1920 aan, niet de maat van de schermafbeeldingen. Kies als posterbeeld ongeveer seconde 12, het bord met de verklaringen.
 - [ ] Daarna de acht platen uit `store/cards/`. Ze staan al in de goede volgorde, dus je kunt ze in één keer selecteren en erin slepen:
   1. `01-verklaringen.png` — De verdachten praten.
   2. `02-wereldkaart.png` — Acht werelden, één kronkelpad
@@ -165,7 +166,7 @@ Rechtsboven op de versiepagina staat de taalkiezer. Kies *Nederlands ▾ ›
 Toevoegen › English (U.S.)* en vul in:
 
 - Name, Subtitle, Promotional Text, Keywords, Description: het blok **Engelse lokalisatie (en-US)** in `store/METADATA.md`.
-- Video: `store/previews/crimson-ledger-en.mp4`
+- Video: `store/previews/crimson-ledger-en-886x1920.mp4`
 - Schermafbeeldingen: de acht platen uit `store/cards-en/`, ze staan al op volgorde.
 
 ## 8. App Review Information
@@ -222,8 +223,8 @@ cd ~/Developer/Murdoku
 node store/make-screenshots.js
 node store/make-store-cards.js
 node store/make-preview.js /tmp/crimson-preview
-swift store/encode-preview.swift /tmp/crimson-preview/nl store/previews/crimson-ledger-nl.mp4 30
-swift store/encode-preview.swift /tmp/crimson-preview/en store/previews/crimson-ledger-en.mp4 30
+swift store/encode-preview.swift /tmp/crimson-preview/nl store/previews/crimson-ledger-nl-886x1920.mp4 30 886 1920
+swift store/encode-preview.swift /tmp/crimson-preview/en store/previews/crimson-ledger-en-886x1920.mp4 30 886 1920
 ```
 
 `make-preview.js` en `make-screenshots.js` hebben puppeteer nodig. Staat dat er

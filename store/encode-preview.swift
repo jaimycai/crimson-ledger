@@ -1,6 +1,9 @@
 // Maakt van de beelden uit store/make-preview.js één H.264-bestand dat
 // App Store Connect als app-preview accepteert (1290×2796, 30 beelden per
-// seconde). Gebruik: swift store/encode-preview.swift <map> <uit.mp4> [fps]
+// seconde). App Store Connect vraagt voor de app-preview 886x1920; die maat
+// geef je mee als vierde en vijfde argument. De beeldverhouding van 1290x2796
+// en 886x1920 is gelijk, dus er wordt alleen verkleind, niet uitgerekt.
+// Gebruik: swift store/encode-preview.swift <map> <uit.mp4> [fps] [breedte hoogte]
 import AVFoundation
 import CoreGraphics
 import Foundation
@@ -9,15 +12,15 @@ import ImageIO
 struct Frame { let file: String; let t: Double }
 
 let args = CommandLine.arguments
-guard args.count >= 3 else { FileHandle.standardError.write("gebruik: encode-preview.swift <map> <uit.mp4> [fps]\n".data(using: .utf8)!); exit(2) }
+guard args.count >= 3 else { FileHandle.standardError.write("gebruik: encode-preview.swift <map> <uit.mp4> [fps] [breedte hoogte]\n".data(using: .utf8)!); exit(2) }
 let dir = URL(fileURLWithPath: args[1])
 let out = URL(fileURLWithPath: args[2])
 let fps = args.count > 3 ? Int32(args[3]) ?? 30 : 30
 
 let manifestData = try Data(contentsOf: dir.appendingPathComponent("frames.json"))
 let manifest = try JSONSerialization.jsonObject(with: manifestData) as! [String: Any]
-let width = manifest["width"] as! Int
-let height = manifest["height"] as! Int
+let width = args.count > 4 ? Int(args[4]) ?? (manifest["width"] as! Int) : (manifest["width"] as! Int)
+let height = args.count > 5 ? Int(args[5]) ?? (manifest["height"] as! Int) : (manifest["height"] as! Int)
 let raw = manifest["frames"] as! [[String: Any]]
 let frames: [Frame] = raw.map { Frame(file: $0["file"] as! String, t: $0["t"] as! Double) }
 guard let last = frames.last else { FileHandle.standardError.write("geen beelden\n".data(using: .utf8)!); exit(1) }
@@ -65,6 +68,7 @@ func buffer(_ cg: CGImage) -> CVPixelBuffer? {
                               space: CGColorSpaceCreateDeviceRGB(),
                               bitmapInfo: CGImageAlphaInfo.noneSkipFirst.rawValue | CGBitmapInfo.byteOrder32Little.rawValue)
     else { return nil }
+    ctx.interpolationQuality = .high
     ctx.setFillColor(CGColor(red: 0, green: 0, blue: 0, alpha: 1))
     ctx.fill(CGRect(x: 0, y: 0, width: width, height: height))
     ctx.draw(cg, in: CGRect(x: 0, y: 0, width: width, height: height))
