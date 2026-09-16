@@ -6,8 +6,19 @@ const fs = require('fs');
 const path = require('path');
 
 const BASE = 'http://localhost:8090';
-const OUT = { nl: '/Users/jaimycai/Developer/Murdoku/store/cards', en: '/Users/jaimycai/Developer/Murdoku/store/cards-en' };
-const SRC = { nl: 'store/screenshots', en: 'store/screenshots-en' };
+// App Store Connect accepteert per maatgroep maar één formaat:
+//   6.9" → 1290×2796   6.5" → 1284×2778
+const SIZES = {
+  '6.9': { w: 430, h: 932, suffix: '' },
+  '6.5': { w: 428, h: 926, suffix: '-65' }
+};
+const SIZE = SIZES[process.argv[2] || '6.9'];
+if (!SIZE) { console.error('maat moet 6.9 of 6.5 zijn'); process.exit(2); }
+const OUT = {
+  nl: path.join(__dirname, `cards${SIZE.suffix}`),
+  en: path.join(__dirname, `cards${SIZE.suffix}-en`)
+};
+const SRC = { nl: `store/screenshots${SIZE.suffix}`, en: `store/screenshots${SIZE.suffix}-en` };
 
 // volgorde zoals ze in App Store Connect komen te staan
 const CARDS = {
@@ -39,7 +50,7 @@ const card = (src, head, sub, dark) => `
   @font-face { font-family: 'Inter'; font-style: normal; font-weight: 100 900; src: url('${BASE}/assets/fonts/Inter-normal.woff2') format('woff2'); }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
-    width: 430px; height: 932px; overflow: hidden;
+    width: ${SIZE.w}px; height: ${SIZE.h}px; overflow: hidden;
     display: flex; flex-direction: column; align-items: center;
     background: ${dark
       ? 'radial-gradient(120% 80% at 50% 0%, #33261d 0%, #201812 60%, #17110d 100%)'
@@ -88,7 +99,7 @@ async function run(lang) {
   const exe = `${process.env.HOME}/.cache/puppeteer/chrome/${chrome}/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing`;
   const browser = await puppeteer.launch({ headless: true, executablePath: fs.existsSync(exe) ? exe : undefined });
   const page = await browser.newPage();
-  await page.setViewport({ width: 430, height: 932, deviceScaleFactor: 3 });
+  await page.setViewport({ width: SIZE.w, height: SIZE.h, deviceScaleFactor: 3 });
 
   const list = CARDS[lang];
   for (let i = 0; i < list.length; i++) {

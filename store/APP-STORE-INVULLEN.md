@@ -12,9 +12,10 @@ App-ID 6812534368 · Bundle ID `nl.crimsonledger.app` · versie 1.0 · build 1
 
 | Wat | Waar |
 |---|---|
-| Schermafbeeldingen met kop, Nederlands, 8 stuks, 1290×2796 | `store/cards/` |
-| Schermafbeeldingen met kop, Engels, 8 stuks, 1290×2796 | `store/cards-en/` |
-| Kale schermafbeeldingen zonder kop, beide talen | `store/screenshots/`, `store/screenshots-en/` |
+| Schermafbeeldingen met kop, 6.5", 1284×2778 | `store/cards-65/` (NL), `store/cards-65-en/` (EN) |
+| Schermafbeeldingen met kop, 6.9", 1290×2796 | `store/cards/` (NL), `store/cards-en/` (EN) |
+| Kale schermen zonder kop, 6.5" | `store/screenshots-65/`, `store/screenshots-65-en/` |
+| Kale schermen zonder kop, 6.9" | `store/screenshots/`, `store/screenshots-en/` |
 | App-preview Nederlands, 24 s, **886×1920**, H.264 | `store/previews/crimson-ledger-nl-886x1920.mp4` |
 | App-preview Engels, 24 s, **886×1920**, H.264 | `store/previews/crimson-ledger-en-886x1920.mp4` |
 | Dezelfde previews op 1290×2796, reserve | `store/previews/*-1290x2796.mp4` |
@@ -89,11 +90,20 @@ de app mee de beoordeling in.
 
 ### App Previews and Screenshots
 
-Kies bovenaan **iPhone 6.9"**. Die ene maat is genoeg; Apple schaalt hem door
-naar de kleinere iPhones. iPad hoef je niet te doen, de app is alleen voor iPhone.
+Let eerst op **welke maatgroep** bovenaan het vak staat. App Store Connect
+accepteert per groep maar één formaat, en wijst alles af wat één pixel afwijkt:
 
-- [ ] Sleep eerst de video erin: `store/previews/crimson-ledger-nl-886x1920.mp4`. App Store Connect neemt voor de app-preview 886×1920 aan, niet de maat van de schermafbeeldingen. Kies als posterbeeld ongeveer seconde 12, het bord met de verklaringen.
-- [ ] Daarna de acht platen uit `store/cards/`. Ze staan al in de goede volgorde, dus je kunt ze in één keer selecteren en erin slepen:
+| Groep in App Store Connect | Schermafbeeldingen | App-preview | Map |
+|---|---|---|---|
+| iPhone 6.5" Display | 1284×2778 of 1242×2688 | 886×1920 | `store/cards-65/` |
+| iPhone 6.9" Display | 1290×2796 of 1320×2868 | 1290×2796 | `store/cards/` |
+
+Staat er **6.5" Display**, gebruik dan de mappen met `-65`. Staat er 6.9", gebruik
+de mappen zonder. Eén groep invullen is genoeg; Apple schaalt hem door naar de
+andere iPhones. iPad hoef je niet te doen, de app is alleen voor iPhone.
+
+- [ ] Sleep eerst de video erin: bij de groep 6.5" is dat `store/previews/crimson-ledger-nl-886x1920.mp4`, bij 6.9" `store/previews/crimson-ledger-nl-1290x2796.mp4`. Kies als posterbeeld ongeveer seconde 12, het bord met de verklaringen.
+- [ ] Daarna de acht platen uit de map die bij de groep hoort, dus `store/cards-65/` bij 6.5" en `store/cards/` bij 6.9". Ze staan al in de goede volgorde, dus je kunt ze in één keer selecteren en erin slepen:
   1. `01-verklaringen.png` — De verdachten praten.
   2. `02-wereldkaart.png` — Acht werelden, één kronkelpad
   3. `03-zaak-gesloten.png` — Zaak gesloten.
@@ -106,7 +116,8 @@ naar de kleinere iPhones. iPad hoef je niet te doen, de app is alleen voor iPhon
 Die platen hebben een kop boven het scherm, zoals de meeste spellen in de App
 Store doen. De eerste twee zijn wat de meeste mensen te zien krijgen; daarom
 staan het bord en de wereldkaart vooraan. Wil je liever de kale schermen zonder
-kop, gebruik dan `store/screenshots/` in de volgorde 04, 02, 06, 01, 05, 03, 07, 08.
+kop, gebruik dan `store/screenshots-65/` of `store/screenshots/` in de volgorde
+04, 02, 06, 01, 05, 03, 07, 08.
 
 ### Promotional Text
 
@@ -166,8 +177,8 @@ Rechtsboven op de versiepagina staat de taalkiezer. Kies *Nederlands ▾ ›
 Toevoegen › English (U.S.)* en vul in:
 
 - Name, Subtitle, Promotional Text, Keywords, Description: het blok **Engelse lokalisatie (en-US)** in `store/METADATA.md`.
-- Video: `store/previews/crimson-ledger-en-886x1920.mp4`
-- Schermafbeeldingen: de acht platen uit `store/cards-en/`, ze staan al op volgorde.
+- Video: `store/previews/crimson-ledger-en-886x1920.mp4` bij 6.5", `…-1290x2796.mp4` bij 6.9".
+- Schermafbeeldingen: de acht platen uit `store/cards-65-en/` bij 6.5", uit `store/cards-en/` bij 6.9". Ze staan al op volgorde.
 
 ## 8. App Review Information
 
@@ -220,8 +231,8 @@ In een tweede venster:
 
 ```
 cd ~/Developer/Murdoku
-node store/make-screenshots.js
-node store/make-store-cards.js
+node store/make-screenshots.js 6.9 && node store/make-store-cards.js 6.9
+node store/make-screenshots.js 6.5 && node store/make-store-cards.js 6.5
 node store/make-preview.js /tmp/crimson-preview
 swift store/encode-preview.swift /tmp/crimson-preview/nl store/previews/crimson-ledger-nl-886x1920.mp4 30 886 1920
 swift store/encode-preview.swift /tmp/crimson-preview/en store/previews/crimson-ledger-en-886x1920.mp4 30 886 1920

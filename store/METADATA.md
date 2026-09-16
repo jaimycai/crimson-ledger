@@ -79,6 +79,14 @@ De app is een offline puzzelspel; er is geen account of login nodig. Bij de eers
 Upload in deze volgorde: 04-verklaringen, 02-wereldkaart, 06-zaak-gesloten, 01-thuis, 05-beschuldiging, 03-briefing, 07-vitrine, 08-winkel. Engelse set in `store/screenshots-en/` (zelfde nummers) voor de en-US-lokalisatie. (Vernieuwd op 16 sep: acht werelden, minigames, kisten, winkel, Engels.)
 iPad wordt niet ondersteund (alleen iPhone), dus geen iPad-schermafbeeldingen nodig.
 
+## Maatgroepen in App Store Connect
+App Store Connect accepteert per maatgroep maar één formaat en wijst alles af wat afwijkt. Kijk dus eerst welke groep bovenaan het uploadvak staat.
+
+| Groep | Schermafbeeldingen | App-preview | Mappen |
+|---|---|---|---|
+| iPhone 6.5" Display | 1284×2778 | 886×1920 | `store/cards-65`, `store/cards-65-en`, `store/screenshots-65`, `store/screenshots-65-en` |
+| iPhone 6.9" Display | 1290×2796 | 1290×2796 | `store/cards`, `store/cards-en`, `store/screenshots`, `store/screenshots-en` |
+
 ## Schermafbeeldingen met kop (map `store/cards` en `store/cards-en`)
 Acht platen per taal, 1290×2796, gemaakt door `store/make-store-cards.js`: een kop in Playfair boven het scherm, afwisselend op papier en op donker, met het toestel in een lijst eronder. Dit is de set die je uploadt; ze staan al genummerd op volgorde. De kale schermen zonder kop blijven staan in `store/screenshots`.
 

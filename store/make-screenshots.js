@@ -1,20 +1,33 @@
-// Maakt de App Store-schermafbeeldingen (1290×2796, iPhone 6,7") in het Nederlands en Engels.
+// Maakt de App Store-schermafbeeldingen in het Nederlands en het Engels.
 // Gebruik: npx http-server -p 8090 (of python3 -m http.server 8090) in deze map, dan:
-//   node store/make-screenshots.js   (vereist: npm i -D puppeteer, eenmalig)
-// Uitvoer: store/screenshots/ (NL) en store/screenshots-en/ (EN).
+//   node store/make-screenshots.js 6.9   (vereist: npm i -D puppeteer, eenmalig)
+//   node store/make-screenshots.js 6.5
+// App Store Connect kent twee maatgroepen voor de iPhone en accepteert alleen
+// de exacte maat van de groep waarin je uploadt:
+//   6.9" → 1290×2796, uitvoer store/screenshots/ en store/screenshots-en/
+//   6.5" → 1284×2778, uitvoer store/screenshots-65/ en store/screenshots-65-en/
 
 
 const puppeteer = require('puppeteer'); const fs = require('fs');
 const wait = ms => new Promise(r => setTimeout(r, ms));
 const path = require('path');
-const OUT = { nl: path.join(__dirname, 'screenshots'), en: path.join(__dirname, 'screenshots-en') };
+const SIZES = {
+  '6.9': { w: 430, h: 932, suffix: '' },        // 1290×2796
+  '6.5': { w: 428, h: 926, suffix: '-65' }      // 1284×2778
+};
+const SIZE = SIZES[process.argv[2] || '6.9'];
+if (!SIZE) { console.error('maat moet 6.9 of 6.5 zijn'); process.exit(2); }
+const OUT = {
+  nl: path.join(__dirname, `screenshots${SIZE.suffix}`),
+  en: path.join(__dirname, `screenshots${SIZE.suffix}-en`)
+};
 async function run(lang) {
   fs.mkdirSync(OUT[lang], { recursive: true });
   const chrome = fs.readdirSync(process.env.HOME + '/.cache/puppeteer/chrome')[0];
   const exe = `${process.env.HOME}/.cache/puppeteer/chrome/${chrome}/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing`;
   const browser = await puppeteer.launch({ headless: true, executablePath: fs.existsSync(exe) ? exe : undefined });
   const page = await browser.newPage();
-  await page.setViewport({ width: 430, height: 932, deviceScaleFactor: 3, isMobile: true, hasTouch: true });
+  await page.setViewport({ width: SIZE.w, height: SIZE.h, deviceScaleFactor: 3, isMobile: true, hasTouch: true });
   page.on('pageerror', e => console.log('PAGEERROR', e.message));
   await page.evaluateOnNewDocument(lang => {
     localStorage.setItem('crimson-lang', lang);
