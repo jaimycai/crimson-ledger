@@ -12,8 +12,9 @@ App-ID 6812534368 · Bundle ID `nl.crimsonledger.app` · versie 1.0 · build 1
 
 | Wat | Waar |
 |---|---|
-| Schermafbeeldingen Nederlands, 8 stuks, 1290×2796 | `store/screenshots/` |
-| Schermafbeeldingen Engels, 8 stuks, 1290×2796 | `store/screenshots-en/` |
+| Schermafbeeldingen met kop, Nederlands, 8 stuks, 1290×2796 | `store/cards/` |
+| Schermafbeeldingen met kop, Engels, 8 stuks, 1290×2796 | `store/cards-en/` |
+| Kale schermafbeeldingen zonder kop, beide talen | `store/screenshots/`, `store/screenshots-en/` |
 | App-preview Nederlands, 24 s, 1290×2796, H.264 | `store/previews/crimson-ledger-nl.mp4` |
 | App-preview Engels, 24 s, 1290×2796, H.264 | `store/previews/crimson-ledger-en.mp4` |
 | Support-pagina, live | https://jaimycai.github.io/crimson-ledger/support.html |
@@ -91,18 +92,20 @@ Kies bovenaan **iPhone 6.9"**. Die ene maat is genoeg; Apple schaalt hem door
 naar de kleinere iPhones. iPad hoef je niet te doen, de app is alleen voor iPhone.
 
 - [ ] Sleep eerst de video erin: `store/previews/crimson-ledger-nl.mp4`. Kies als posterbeeld ongeveer seconde 12, het bord met de verklaringen.
-- [ ] Daarna de acht schermafbeeldingen uit `store/screenshots/`, in deze volgorde:
-  1. `04-verklaringen.png`
-  2. `02-wereldkaart.png`
-  3. `06-zaak-gesloten.png`
-  4. `01-thuis.png`
-  5. `05-beschuldiging.png`
-  6. `03-briefing.png`
-  7. `07-vitrine.png`
-  8. `08-winkel.png`
+- [ ] Daarna de acht platen uit `store/cards/`. Ze staan al in de goede volgorde, dus je kunt ze in één keer selecteren en erin slepen:
+  1. `01-verklaringen.png` — De verdachten praten.
+  2. `02-wereldkaart.png` — Acht werelden, één kronkelpad
+  3. `03-zaak-gesloten.png` — Zaak gesloten.
+  4. `04-thuis.png` — Elke dag een nieuwe zaak
+  5. `05-beschuldiging.png` — Wie was alleen met het slachtoffer?
+  6. `06-briefing.png` — Inspecteur Van Dam helpt je op weg
+  7. `07-vitrine.png` — Drieëntwintig onderscheidingen
+  8. `08-winkel.png` — Geen levens. Geen advertenties.
 
-De eerste twee zijn wat de meeste mensen te zien krijgen; daarom staan het bord
-en de wereldkaart vooraan.
+Die platen hebben een kop boven het scherm, zoals de meeste spellen in de App
+Store doen. De eerste twee zijn wat de meeste mensen te zien krijgen; daarom
+staan het bord en de wereldkaart vooraan. Wil je liever de kale schermen zonder
+kop, gebruik dan `store/screenshots/` in de volgorde 04, 02, 06, 01, 05, 03, 07, 08.
 
 ### Promotional Text
 
@@ -163,7 +166,7 @@ Toevoegen › English (U.S.)* en vul in:
 
 - Name, Subtitle, Promotional Text, Keywords, Description: het blok **Engelse lokalisatie (en-US)** in `store/METADATA.md`.
 - Video: `store/previews/crimson-ledger-en.mp4`
-- Schermafbeeldingen: `store/screenshots-en/`, dezelfde volgorde als hierboven.
+- Schermafbeeldingen: de acht platen uit `store/cards-en/`, ze staan al op volgorde.
 
 ## 8. App Review Information
 
@@ -217,6 +220,7 @@ In een tweede venster:
 ```
 cd ~/Developer/Murdoku
 node store/make-screenshots.js
+node store/make-store-cards.js
 node store/make-preview.js /tmp/crimson-preview
 swift store/encode-preview.swift /tmp/crimson-preview/nl store/previews/crimson-ledger-nl.mp4 30
 swift store/encode-preview.swift /tmp/crimson-preview/en store/previews/crimson-ledger-en.mp4 30

@@ -79,6 +79,9 @@ De app is een offline puzzelspel; er is geen account of login nodig. Bij de eers
 Upload in deze volgorde: 04-verklaringen, 02-wereldkaart, 06-zaak-gesloten, 01-thuis, 05-beschuldiging, 03-briefing, 07-vitrine, 08-winkel. Engelse set in `store/screenshots-en/` (zelfde nummers) voor de en-US-lokalisatie. (Vernieuwd op 16 sep: acht werelden, minigames, kisten, winkel, Engels.)
 iPad wordt niet ondersteund (alleen iPhone), dus geen iPad-schermafbeeldingen nodig.
 
+## Schermafbeeldingen met kop (map `store/cards` en `store/cards-en`)
+Acht platen per taal, 1290×2796, gemaakt door `store/make-store-cards.js`: een kop in Playfair boven het scherm, afwisselend op papier en op donker, met het toestel in een lijst eronder. Dit is de set die je uploadt; ze staan al genummerd op volgorde. De kale schermen zonder kop blijven staan in `store/screenshots`.
+
 ## App-previews (map `store/previews`)
 - `crimson-ledger-nl.mp4` voor de Nederlandse lokalisatie, `crimson-ledger-en.mp4` voor de Engelse.
 - 1290×2796, H.264, 30 beelden per seconde, 24 seconden; Apple staat 15 tot 30 seconden toe.
