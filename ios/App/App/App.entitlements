@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- App Store Connect eist deze sleutel zodra Game Center op de App ID
+	     aanstaat, en dat staat het standaard. De app gebruikt Game Center
+	     niet; de sleutel maakt alleen de build gelijk aan de App ID. -->
+	<key>com.apple.developer.game-center</key>
+	<true/>
+</dict>
+</plist>
