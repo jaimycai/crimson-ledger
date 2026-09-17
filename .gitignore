@@ -8,3 +8,6 @@ ios/App/App.xcodeproj/xcuserdata/
 ios/DerivedData/
 ios/App/App/config [0-9].xml
 store/previews/
+
+# sleutels van App Store Connect horen nooit in de repo
+*.p8
