@@ -299,6 +299,37 @@ async function submit(doSubmit) {
   console.log(`verzonden. status: ${check.data.attributes.state}`);
 }
 
+// Toont de laatste builds van Xcode Cloud, met de fouten van de laatste.
+async function ci() {
+  const products = await get('/v1/ciProducts?limit=10');
+  for (const prod of products.data) {
+    console.log(`Product ${prod.attributes.name} (${prod.id})`);
+    const runs = await get(`/v1/ciProducts/${prod.id}/buildRuns?limit=5&sort=-number`);
+    for (const r of runs.data) {
+      const a = r.attributes;
+      const sc = a.sourceCommit || {};
+      console.log(`  build ${a.number}  ${a.executionProgress}  ${a.completionStatus || ''}  ${(sc.commitSha || '').slice(0, 8)}  ${(sc.message || '').split('\n')[0].slice(0, 50)}`);
+    }
+    const last = runs.data[0];
+    if (last && last.attributes.completionStatus === 'FAILED') {
+      const actions = await get(`/v1/ciBuildRuns/${last.id}/actions`);
+      for (const act of actions.data) {
+        if (act.attributes.completionStatus !== 'FAILED') continue;
+        const issues = await get(`/v1/ciBuildActions/${act.id}/issues?limit=20`);
+        const seen = new Set();
+        console.log(`\n  fouten in "${act.attributes.name}":`);
+        for (const i of issues.data) {
+          if (i.attributes.issueType !== 'ERROR') continue;
+          const m = (i.attributes.message || '').slice(0, 200);
+          if (seen.has(m)) continue;
+          seen.add(m);
+          console.log(`    ${m}`);
+        }
+      }
+    }
+  }
+}
+
 const cmd = process.argv[2] || 'status';
 (async () => {
   if (cmd === 'status') return status();
@@ -307,6 +338,7 @@ const cmd = process.argv[2] || 'status';
   if (cmd === 'iap-locs') return iapLocalizations();
   if (cmd === 'set-build') return setBuild(process.argv[3]);
   if (cmd === 'submit') return submit(process.argv.includes('--submit'));
+  if (cmd === 'ci') return ci();
   console.error(`onbekende opdracht: ${cmd}`);
   process.exit(2);
 })().catch(e => { console.error(e.message); process.exit(1); });
