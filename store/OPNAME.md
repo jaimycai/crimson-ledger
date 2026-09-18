@@ -78,8 +78,13 @@ een paar minuten; duurt het uploaden te lang, exporteer dan via Foto's in lagere
    - **Game Center**: op 18 september is Game Center uitgezet op de App ID, de entitlement
      uit het project gehaald (commit `a53a571`) en **build 1.0 (5)** geüpload (Delivery UUID
      `994a05a0-12e8-421d-acc4-0a9d4bcc7435`). Zodra Apple hem verwerkt heeft: op de
-     versiepagina bij **Build** build 5 kiezen in plaats van 4, Save. Het Game Center-vinkje
-     hoort dan te verdwijnen. De zin over Game Center in Notes en reply kan dan weg, mag ook blijven.
+     versiepagina is build 5 gekozen in plaats van 4 (gedaan, 18 september 11:10). Het vinkje
+     zelf zit vast aan een app-instelling die de webpagina niet loslaat; via de App Store
+     Connect API is hij uitgezet: `PATCH /v1/gameCenterAppVersions/<id>` met
+     `attributes.enabled = false` (id via `GET /v1/gameCenterDetails/<id>/gameCenterAppVersions`).
+     Zonder die stap weigert App Store Connect bij het indienen met "You must add the
+     com.apple.developer.game-center key in Xcode", zoals op 17 september bij build 2.
+     De zin over Game Center in Notes en reply mag blijven staan.
      Uploaden vanaf de Mac werkt met het Apple ID dat in Xcode staat (`xcodebuild
      -exportArchive ... -allowProvisioningUpdates` zonder API-sleutel); de API-sleutel
      `CQ6TPURNQ9` mag niet cloud-signen ("Cloud signing permission error").
