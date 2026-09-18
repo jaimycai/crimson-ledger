@@ -12,13 +12,19 @@ en `store/REVIEW-NOTES.txt` (2.794 tekens, past in het Notes-veld van 4.000).
 
 App Store Connect › **Business › Agreements** meldt twee dingen:
 
-1. "To offer apps or other in-app purchases, you must update your legal entity
-   information prior to signing the Paid Apps Agreement." Dus: **Edit Legal Entity**,
-   daarna de **Paid Apps Agreement** tekenen, dan bank (IBAN) en belasting (W-8BEN).
-   Zonder deze overeenkomst kan Apple de negen aankopen niet goedkeuren, en laadt
-   StoreKit in TestFlight geen producten, zodat de opname geen aankoop kan tonen.
+1. De **Paid Apps Agreement** is getekend (18 september) maar staat op **Pending User
+   Info**: er ontbreekt nog een **bankrekening** (Add Bank Account, IBAN en BIC op je eigen
+   naam) en het **belastingformulier** (Add Tax Info: U.S. Tax Questionnaire, dat wordt een
+   W-8BEN). Pas als de status **Active** is kan Apple de negen aankopen goedkeuren en
+   laadt StoreKit in TestFlight producten.
 2. "Complete Compliance Requirements" voor de Digital Services Act: de **trader
    status**. Zonder dit wordt de app niet in de EU aangeboden, dus ook niet in Nederland.
+   Kies **"I'm a trader under the DSA"**: wie in-app aankopen verkoopt en een
+   KvK-inschrijving heeft, is een handelaar in de zin van de DSA. Apple vraagt dan een
+   adres, telefoonnummer en e-mailadres die **openbaar op de productpagina in de EU**
+   komen te staan; ze veranderen niets aan je Apple-account. Je mag daar een zakelijk
+   adres, nummer en e-mailadres voor gebruiken. Apple stuurt een code naar het nummer en
+   het e-mailadres om ze te bevestigen.
 
 Beide zijn invulwerk dat alleen jij kunt doen (eigen gegevens). Uitleg in `store/UITBETALING.md`.
 
@@ -68,9 +74,11 @@ een paar minuten; duurt het uploaden te lang, exporteer dan via Foto's in lagere
 2. Versiepagina 1.0 › **App Review Information**:
    - **Notes**: vervang de huidige tekst (739 tekens) door `store/REVIEW-NOTES.txt`.
    - **Attachment**: dezelfde video.
-   - **Game Center**-vinkje bij "Included Assets" **uit**: de app gebruikt Game Center niet
-     (de entitlement zit alleen in de build omdat de App ID het aan heeft). Een aangevinkte
-     functie die de beoordelaar niet vindt, is een nieuwe 2.1-vraag.
+   - **Notes** is op 18 september al vervangen door REVIEW-NOTES.txt en opgeslagen.
+   - **Game Center** bij "Included Assets" staat aangevinkt en komt uit de entitlement in de
+     build; de zin dat de app Game Center niet gebruikt staat daarom in de reply en in Notes.
+     Wil je het vinkje weg, dan moet de entitlement uit `ios/App/App/App.entitlements` en
+     Game Center uit de App ID, met een nieuwe build.
    - Sign-in required staat al uit, contactgegevens staan al ingevuld.
    - **Save**.
 3. Bovenaan op **Resubmit to App Review** als die knop actief is; anders is het antwoord

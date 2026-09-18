@@ -27,4 +27,4 @@ Nine one-time purchases, no subscriptions:
 Free without any purchase: The Manor and The Pirate Ship (96 cases), the daily case, the case of the week and the archive in every world.
 How to reach the purchase flows: (a) Settings (gear, top right) > Shop; (b) on the world map, tap a locked world or one of its cases > "Unlock" banner > Shop; (c) tap "Hint" after the three free hints of the day are used > the Shop opens with the hint pack highlighted. Tapping a product opens the standard StoreKit purchase sheet. "Restore purchases" is in Settings and at the bottom of the Shop.
 
-Technical summary: iPhone only, portrait, iOS 15.0 or later, one binary for all regions, no data collected.
+Technical summary: iPhone only, portrait, iOS 15.0 or later, one binary for all regions, no data collected. The build carries the Game Center entitlement only because Game Center is enabled on the App ID; the app does not use any Game Center feature.

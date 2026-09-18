@@ -14,4 +14,4 @@ IN-APP PURCHASES (nine one-time, no subscriptions): Crimson Pass (nl.crimsonledg
 
 SCREEN RECORDING: attached under Attachment (iPhone 13 Pro, current iOS, build 1.0 (4) via TestFlight): cold launch, practice case, a full case with a hint, accusation, Case Closed, world map, Shop, purchase flow, Settings.
 
-iPhone only, portrait, iOS 15.0+.
+iPhone only, portrait, iOS 15.0+. Game Center entitlement is in the build only because it is enabled on the App ID; the app does not use Game Center.
