@@ -75,10 +75,14 @@ een paar minuten; duurt het uploaden te lang, exporteer dan via Foto's in lagere
    - **Notes**: vervang de huidige tekst (739 tekens) door `store/REVIEW-NOTES.txt`.
    - **Attachment**: dezelfde video.
    - **Notes** is op 18 september al vervangen door REVIEW-NOTES.txt en opgeslagen.
-   - **Game Center** bij "Included Assets" staat aangevinkt en komt uit de entitlement in de
-     build; de zin dat de app Game Center niet gebruikt staat daarom in de reply en in Notes.
-     Wil je het vinkje weg, dan moet de entitlement uit `ios/App/App/App.entitlements` en
-     Game Center uit de App ID, met een nieuwe build.
+   - **Game Center**: op 18 september is Game Center uitgezet op de App ID, de entitlement
+     uit het project gehaald (commit `a53a571`) en **build 1.0 (5)** geüpload (Delivery UUID
+     `994a05a0-12e8-421d-acc4-0a9d4bcc7435`). Zodra Apple hem verwerkt heeft: op de
+     versiepagina bij **Build** build 5 kiezen in plaats van 4, Save. Het Game Center-vinkje
+     hoort dan te verdwijnen. De zin over Game Center in Notes en reply kan dan weg, mag ook blijven.
+     Uploaden vanaf de Mac werkt met het Apple ID dat in Xcode staat (`xcodebuild
+     -exportArchive ... -allowProvisioningUpdates` zonder API-sleutel); de API-sleutel
+     `CQ6TPURNQ9` mag niet cloud-signen ("Cloud signing permission error").
    - Sign-in required staat al uit, contactgegevens staan al ingevuld.
    - **Save**.
 3. Bovenaan op **Resubmit to App Review** als die knop actief is; anders is het antwoord
