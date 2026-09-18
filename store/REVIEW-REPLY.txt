@@ -1,0 +1,30 @@
+Thank you for reviewing Crimson Ledger. Below is the information requested under Guideline 2.1 (Information Needed). The same information has been added to App Review Information > Notes, and the screen recording is attached to this reply and uploaded under App Review Information > Attachment.
+
+1. SCREEN RECORDING
+The attached recording was made on a physical iPhone 13 Pro running the current iOS release, using build 1.0 (4) installed through TestFlight. It starts with a cold launch and shows the typical user flow: the guided practice case on first launch, the home screen, playing and solving a case (placing suspects on the floor plan, statements turning green or red, one hint, the accusation, the Case Closed screen), the world map, opening the shop from a locked world, the In-App Purchase flow with the standard StoreKit sheet, and Settings with the language switch and Restore Purchases. The app has no account registration, no login, no account deletion and no user-generated content, so there is nothing of that kind to show.
+
+2. PURPOSE AND TARGET AUDIENCE
+Crimson Ledger is a single-player logic puzzle game: a murder mystery on a floor plan. Each case gives the player a floor plan, a victim (a chalk outline) and a handful of suspects, plus statements such as "I stood next to a plant" or "I was alone in the Kitchen". The player places every suspect on the correct square using only logic, then points out who was alone with the victim. Every case has exactly one solution and can be solved without guessing; the puzzle generator proves this for every case it produces. The audience is casual puzzle players who enjoy deduction games, in Dutch and English (age rating 9+; no violence is depicted). The value: a fair deduction puzzle every day, hints that explain the next logical step instead of revealing the answer, 384 hand-written campaign cases in eight worlds, an endless archive, and no lives, timers or ads.
+
+3. SETUP AND ACCESS
+No setup, no login credentials and no sample files are needed. Launch the app: a short guided practice case starts (four taps). Then the home screen offers the "Daily case" card and "Continue the campaign". Campaign: world map > tap case 1 "The Glass of Bordeaux" > a short briefing by Inspector Van Dam > "Let's go". On the board: tap a suspect and then a square to place them; use Pencil, Eraser and Undo; "Hint" explains the next logical step in three steps; "Check" leads to the accusation screen and then Case Closed (stamp, stars, points, rank). Settings (gear, top right): language (Dutch or English), board appearance, an optional daily reminder, Shop, Restore Purchases, and links to the Privacy and Help pages. The language follows the device language on first launch. Everything can be reviewed without purchasing anything.
+
+4. EXTERNAL SERVICES, TOOLS AND PLATFORMS
+None are needed for the core functionality. The app is fully offline: all puzzles, stories, artwork and fonts are inside the app bundle. There is no server of our own, no data provider, no analytics, no advertising SDK, no AI service, no authentication service and no third-party payment processor. Apple platform services used: StoreKit 2 for In-App Purchase and Restore Purchases; local notifications for the optional daily reminder (permission is requested only when the user switches the reminder on); SKStoreReviewController for the rating prompt; haptics. The app is built with Capacitor (open source, MIT licence): a native iOS app whose interface is rendered from HTML and JavaScript files stored inside the bundle. No remote web content is loaded. The Privacy and Help links in Settings open our website (jaimycai.github.io/crimson-ledger) in the browser.
+
+5. REGIONAL DIFFERENCES
+None. The app functions identically in every region. It is localised in Dutch and English, follows the device language and can be switched in Settings. Prices are Apple's standard price tiers.
+
+6. REGULATED INDUSTRY OR PROTECTED THIRD-PARTY MATERIAL
+Not applicable. The app does not operate in a regulated industry and contains no protected third-party material. All characters, worlds, stories, artwork (vector portraits, furniture, maps) and the puzzle engine are original work by the developer. The two typefaces, Playfair Display and Inter, are used under the SIL Open Font License. No third-party trademarks are used.
+
+7. IN-APP PURCHASES
+Nine one-time purchases, no subscriptions:
+- Crimson Pass (non-consumable, nl.crimsonledger.app.pass): all worlds including future ones, unlimited hints, all board themes and frames, two extra streak freezes.
+- 10 hints (consumable, nl.crimsonledger.app.hints10): ten extra hints; three hints per day are free.
+- Board themes and frames (non-consumable, nl.crimsonledger.app.cosmetics): night, sepia and kraft boards; gold, silver and crimson rank frames.
+- Six world packs (non-consumable): nl.crimsonledger.app.world.hotel, .ruimte, .museum, .trein, .circus, .skihut. Each unlocks 48 campaign cases with mini-games and evidence chests.
+Free without any purchase: The Manor and The Pirate Ship (96 cases), the daily case, the case of the week and the archive in every world.
+How to reach the purchase flows: (a) Settings (gear, top right) > Shop; (b) on the world map, tap a locked world or one of its cases > "Unlock" banner > Shop; (c) tap "Hint" after the three free hints of the day are used > the Shop opens with the hint pack highlighted. Tapping a product opens the standard StoreKit purchase sheet. "Restore purchases" is in Settings and at the bottom of the Shop.
+
+Technical summary: iPhone only, portrait, iOS 15.0 or later, one binary for all regions, no data collected.

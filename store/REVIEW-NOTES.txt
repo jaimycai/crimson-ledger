@@ -1,0 +1,17 @@
+Offline single-player logic puzzle game (murder mystery on a floor plan). No account, no login, no user-generated content, no data collected. Everything can be reviewed without purchasing.
+
+PURPOSE AND AUDIENCE: each case gives a floor plan, a victim (chalk outline) and suspects with statements ("I stood next to a plant"). Place every suspect using logic, then point out who was alone with the victim. Every case has exactly one solution, proven by the generator; no guessing. For casual puzzle players, Dutch and English, 9+.
+
+ACCESS: launch > guided practice case (four taps) > home screen with "Daily case" and "Continue the campaign". Campaign: world map > case 1 "The Glass of Bordeaux" > briefing by Inspector Van Dam > "Let's go". Board: tap a suspect then a square; Pencil, Eraser, Undo; "Hint" explains the next logical step; "Check" > accusation > Case Closed. Settings (gear, top right): language (Dutch/English, follows the device at first launch), board appearance, optional reminder, Shop, Restore Purchases, Privacy and Help links.
+
+EXTERNAL SERVICES: none. All content is in the bundle; no server, no analytics, no ads, no AI, no authentication, no third-party payments. Apple services only: StoreKit 2 (In-App Purchase, Restore), local notifications (optional reminder, permission asked only when switched on), SKStoreReviewController, haptics. Built with Capacitor (MIT): native app rendering bundled HTML/JS, no remote web content. Privacy/Help links open jaimycai.github.io/crimson-ledger in the browser.
+
+REGIONS: identical in every region; Dutch and English; Apple price tiers.
+
+REGULATED / PROTECTED MATERIAL: none. All characters, worlds, stories, artwork and the engine are original. Fonts Playfair Display and Inter under the SIL Open Font License. No third-party trademarks.
+
+IN-APP PURCHASES (nine one-time, no subscriptions): Crimson Pass (nl.crimsonledger.app.pass: all worlds incl. future ones, unlimited hints, all themes and frames, two streak freezes); 10 hints (consumable, .hints10; three per day are free); Board themes and frames (.cosmetics); six world packs (.world.hotel, .ruimte, .museum, .trein, .circus, .skihut; 48 cases each). Free: The Manor, The Pirate Ship (96 cases), daily case, case of the week, archive in every world. Purchase flows: (a) Settings > Shop; (b) world map > locked world or case > "Unlock" > Shop; (c) "Hint" after the three free hints > Shop with the hint pack highlighted. Products open the standard StoreKit sheet. Restore Purchases in Settings and in the Shop.
+
+SCREEN RECORDING: attached under Attachment (iPhone 13 Pro, current iOS, build 1.0 (4) via TestFlight): cold launch, practice case, a full case with a hint, accusation, Case Closed, world map, Shop, purchase flow, Settings.
+
+iPhone only, portrait, iOS 15.0+.
