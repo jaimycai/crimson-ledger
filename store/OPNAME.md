@@ -1,109 +1,93 @@
-# App Review 2.1 "Information Needed" — wat er nu moet gebeuren
+# App Review 2.1 — hoe het afliep
 
-*18 september 2026. Inzending `bd8f6d73-3b89-42a4-9f7e-9e7e64ac89bc`, versie 1.0, build 4.
-Apple heeft de app niet op een fout afgewezen: een nieuw ontwikkelaarsaccount krijgt
-standaard dit verzoek om extra informatie. De negen in-app aankopen staan nog op
-"Ready for Review" en gaan mee zodra de versie is geaccepteerd.*
+*Bijgewerkt 22 september 2026. Elk gegeven hieronder is voor deze versie opnieuw
+afgelezen uit App Store Connect zelf, niet overgenomen uit de vorige versie van deze
+pagina. Die vorige versie beschreef de nacht van 18 september, toen het verzoek net
+binnen was, en is blijven staan terwijl de zaak allang was afgelopen.*
 
-De antwoordtekst staat kant-en-klaar in `store/REVIEW-REPLY.txt` (het bericht aan Apple)
-en `store/REVIEW-NOTES.txt` (2.794 tekens, past in het Notes-veld van 4.000).
+## De uitkomst: goedgekeurd
 
-## 0. Eerst dit, anders keurt Apple de aankopen alsnog af
+Inzending `bd8f6d73-3b89-42a4-9f7e-9e7e64ac89bc`, ingediend 18 september om 23:44,
+tien onderdelen. **Review Completed.** Alle tien staan op *Approved*:
 
-App Store Connect › **Business › Agreements** meldt twee dingen:
+| Onderdeel | Type |
+|---|---|
+| iOS App 1.0 (5) | App Version |
+| Crimson Pass | In-App Purchase |
+| 10 hints | In-App Purchase |
+| Bordthema's en lijsten | In-App Purchase |
+| Wereld: Grand Hotel Aurora, Station Orion, Het Museum, De Nachttrein, Het Circus, De Skihut | In-App Purchase (zes) |
 
-1. De **Paid Apps Agreement** is getekend (18 september) maar staat op **Pending User
-   Info**: er ontbreekt nog een **bankrekening** (Add Bank Account, IBAN en BIC op je eigen
-   naam) en het **belastingformulier** (Add Tax Info: U.S. Tax Questionnaire, dat wordt een
-   W-8BEN). Pas als de status **Active** is kan Apple de negen aankopen goedkeuren en
-   laadt StoreKit in TestFlight producten.
-2. "Complete Compliance Requirements" voor de Digital Services Act: de **trader
-   status**. Zonder dit wordt de app niet in de EU aangeboden, dus ook niet in Nederland.
-   Kies **"I'm a trader under the DSA"**: wie in-app aankopen verkoopt en een
-   KvK-inschrijving heeft, is een handelaar in de zin van de DSA. Apple vraagt dan een
-   adres, telefoonnummer en e-mailadres die **openbaar op de productpagina in de EU**
-   komen te staan; ze veranderen niets aan je Apple-account. Je mag daar een zakelijk
-   adres, nummer en e-mailadres voor gebruiken. Apple stuurt een code naar het nummer en
-   het e-mailadres om ze te bevestigen.
+Versie 1.0 staat op **Ready for Distribution**, met build 5 en "Automatically release
+this version". De app is live: `apps.apple.com/us/app/crimson-ledger/id6812534368`.
 
-Beide zijn invulwerk dat alleen jij kunt doen (eigen gegevens). Uitleg in `store/UITBETALING.md`.
+## De opname bleek niet nodig
 
-## 1. De build op je iPhone zetten (TestFlight, interne test, geen extra review)
+De vorige versie van deze pagina schreef een opname van tien stappen voor, en
+`REVIEW-REPLY.txt` en `REVIEW-NOTES.txt` zijn daarvoor geschreven. Wat er werkelijk
+gebeurd is: build 5 ging omhoog op 18 september om 11:01, de versie is dezelfde avond
+opnieuw ingediend, en Apple heeft hem goedgekeurd. Het veld **Attachment** in App Review
+Information is nog altijd leeg, en Notes bevat 1.091 tekens — niet de 2.794 uit
+`REVIEW-NOTES.txt`.
 
-1. App Store Connect › Crimson Ledger › tabblad **TestFlight** › Internal Testing › **Create Group**
-   (naam bijvoorbeeld "Jaimy"). Vink **Enable automatic distribution** aan.
-2. Voeg jezelf toe als tester (je Apple ID van het ontwikkelaarsaccount).
-3. Kies build **1.0 (4)** voor de groep.
-4. Op de iPhone: app **TestFlight** uit de App Store installeren, inloggen met hetzelfde
-   Apple ID, Crimson Ledger installeren.
-5. Werk de iPhone eerst bij: Instellingen › Algemeen › Software-update. Apple vraagt
-   een opname op "the latest operating system".
+Die twee tekstbestanden blijven staan als wat ze zijn: voorbereid materiaal dat niet
+verstuurd hoefde te worden. Ze beschrijven een opname die nooit gemaakt is, dus gebruik
+ze niet ongelezen bij een volgende inzending.
 
-Aankopen in een TestFlight-build lopen via de sandbox en kosten niets.
+De les voor de volgende keer: een 2.1 "Information Needed" bij een nieuw
+ontwikkelaarsaccount is geen afwijzing op de app. Een complete herinzending kan genoeg
+zijn.
 
-## 2. De opname (2 tot 3 minuten, staand, zonder geluid is prima)
+## Wat nog wél blokkeert: de Europese Unie
 
-Instellingen › Bedieningspaneel › "Schermopname" toevoegen als hij er nog niet staat.
-Verwijder Crimson Ledger eerst en installeer opnieuw via TestFlight, zodat de opname met
-een echte eerste start begint.
+Beschikbaarheid, afgelezen 22 september: **147 landen Available, 1 Processing (China
+mainland), 27 Cannot Sell.**
 
-Volgorde, precies wat Apple vraagt ("begin with launching the app, show the typical user flow"):
+Die 27 zijn de EU-lidstaten, Nederland inbegrepen. Bij elk land staat
+**"Trader Status Not Provided"** met de toelichting *"Trader status is required for
+distribution on the App Store in the European Union."* Daarom geeft
+`apps.apple.com/nl/app/id6812534368` een 404 terwijl de Amerikaanse pagina gewoon laadt.
 
-1. Bedieningspaneel › Schermopname starten › naar het beginscherm › **Crimson Ledger openen**.
-2. Splash › **Begin** › de begeleide **oefenzaak** afmaken (vier tikken).
-3. Thuisscherm: laat de kaart **Dagelijkse zaak** en **Verder met de campagne** zien.
-4. Wereldkaart › zaak 1 **Het glas Bordeaux** › briefing van Van Dam › **Aan de slag**.
-5. Op het bord: twee of drie verdachten plaatsen, laat een verklaring **groen** en één **rood**
-   worden, tik één keer op **Hint** (drie stappen), maak de zaak af, **Controleer**.
-6. Beschuldiging: wijs de dader aan › **Zaak gesloten** (stempel, sterren, punten).
-7. Terug naar de wereldkaart, scroll naar een vergrendelde wereld (Grand Hotel Aurora),
-   tik erop › **Ontgrendel** › de **Winkel** opent. Laat alle negen producten zien.
-8. Tik op **10 hints**: het StoreKit-venster verschijnt. Rond de sandbox-aankoop af
-   (als de Paid Apps Agreement al getekend is) of annuleer hem.
-9. Instellingen (tandwiel rechtsboven): taal naar **English** (app herlaadt), laat het
-   Engelse thuisscherm zien, tik op **Restore purchases**.
-10. Opname stoppen.
+Op *Business › Agreements* staat de Digital Services Act sinds 18 september op
+**In Review**. Er is dus ingediend en Apple verifieert. Let op: bij trader status stuurt
+Apple een code naar het opgegeven telefoonnummer en e-mailadres. Blijft die code
+onbeantwoord, dan blijft de status hangen zonder dat er iets misgaat wat je ziet.
 
-Het bestand staat in Foto's. AirDrop naar de Mac; .mov of .mp4 is goed. Hou het onder
-een paar minuten; duurt het uploaden te lang, exporteer dan via Foto's in lagere kwaliteit.
+## Wat er verder op orde is
 
-## 3. Antwoorden in App Store Connect
+| | Status | Sinds |
+|---|---|---|
+| Paid Apps Agreement | Active | 17 sep 2026 (tot 8 sep 2027) |
+| Free Apps Agreement | Active | 7 sep 2026 |
+| Bankrekening ING (7965), Nederland, EUR | Active | 18 sep 2026 |
+| U.S. Form W-8BEN | Active | 18 sep 2026 |
+| U.S. Certificate of Foreign Status of Beneficial Owner | Active | 18 sep 2026 |
+| Directive on Administrative Cooperation – 7th Amendment | Active | 18 sep 2026 |
 
-1. Crimson Ledger › **App Review** › inzending van 17 september › onderaan **Reply to App Review**:
-   plak `store/REVIEW-REPLY.txt`, voeg de video als bijlage toe, verstuur.
-2. Versiepagina 1.0 › **App Review Information**:
-   - **Notes**: vervang de huidige tekst (739 tekens) door `store/REVIEW-NOTES.txt`.
-   - **Attachment**: dezelfde video.
-   - **Notes** is op 18 september al vervangen door REVIEW-NOTES.txt en opgeslagen.
-   - **Game Center**: op 18 september is Game Center uitgezet op de App ID, de entitlement
-     uit het project gehaald (commit `a53a571`) en **build 1.0 (5)** geüpload (Delivery UUID
-     `994a05a0-12e8-421d-acc4-0a9d4bcc7435`). Zodra Apple hem verwerkt heeft: op de
-     versiepagina is build 5 gekozen in plaats van 4 (gedaan, 18 september 11:10). Het vinkje
-     zelf zit vast aan een app-instelling die de webpagina niet loslaat; via de App Store
-     Connect API is hij uitgezet: `PATCH /v1/gameCenterAppVersions/<id>` met
-     `attributes.enabled = false` (id via `GET /v1/gameCenterDetails/<id>/gameCenterAppVersions`).
-     Zonder die stap weigert App Store Connect bij het indienen met "You must add the
-     com.apple.developer.game-center key in Xcode", zoals op 17 september bij build 2.
-     De zin over Game Center in Notes en reply mag blijven staan.
-     Uploaden vanaf de Mac werkt met het Apple ID dat in Xcode staat (`xcodebuild
-     -exportArchive ... -allowProvisioningUpdates` zonder API-sleutel); de API-sleutel
-     `CQ6TPURNQ9` mag niet cloud-signen ("Cloud signing permission error").
-   - Sign-in required staat al uit, contactgegevens staan al ingevuld.
-   - **Save**.
-3. Bovenaan op **Resubmit to App Review** als die knop actief is; anders is het antwoord
-   genoeg en gaat de beoordeling verder vanuit het bericht.
+De blokkade uit de vorige versie van deze pagina — "Pending User Info, er ontbreekt nog
+een bankrekening en het belastingformulier" — bestaat niet meer. `UITBETALING.md` legt
+nog steeds goed uit hoe het geld loopt; alleen de vinkjes daarin zijn inmiddels gezet.
 
-## 4. Wat er verder klopt en niet hoeft te veranderen
+## TestFlight
 
-- Schermafbeeldingen: 10 platen met een kop boven een echt scherm van de app (2.3.3 in orde).
-- Geen inlog, geen account, geen gebruikersinhoud: de eerste drie opnamepunten van Apple vervallen.
-- Alleen iPhone (TARGETED_DEVICE_FAMILY = 1), staand, iOS 15.0 en hoger.
-- Privacy-URL en support-URL zijn live op GitHub Pages.
+Interne groep "Jaimy" bestaat, met vier builds.
 
-## 5. Wat een volgende vraag kan worden (en het antwoord al klaarstaat)
+| Build | Invites | Installs | Sessies |
+|---|---|---|---|
+| 5 | 1 | 1 | – |
+| 4 | 1 | 1 | 2 |
+| 2 | 1 | – | – |
+| 1 | 1 | – | – |
 
-- **4.2 Minimum functionality** ("website in een schil"): antwoord staat in punt 4 van
-  REVIEW-REPLY.txt: volledig offline, alle inhoud in de bundel, native StoreKit, haptiek,
-  meldingen, geen enkele externe pagina in de app zelf.
-- **3.1.1**: de winkel toont vaste prijzen als StoreKit niets laadt. Dat gebeurt alleen
-  zolang de Paid Apps Agreement niet getekend is; zie punt 0.
+## Wat er nu openstaat
+
+- [ ] **DSA trader status** laten afkomen. Controleer de mailbox op een
+      verificatieverzoek van Apple sinds 18 september. Zonder dit geen Nederland.
+- [ ] **App Store Small Business Program** — aanmelden via
+      `developer.apple.com/app-store/small-business-program/enroll/`. 15% in plaats van
+      30% commissie. Gaat pas in vijftien dagen na afloop van de fiscale maand waarin de
+      aanmelding is goedgekeurd, dus hoe eerder hoe beter. Het formulier vraagt of de
+      Paid Applications Agreement is geaccepteerd — dat is zo, sinds 17 september.
+- [ ] **Apple Silicon Mac-compatibiliteit** staat op niet geverifieerd, terwijl de
+      pagina meldt dat versie 1.0 compatibel is. Eén knop, en de app wordt vindbaar in
+      de Mac App Store.

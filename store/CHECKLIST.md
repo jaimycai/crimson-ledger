@@ -1,5 +1,9 @@
 # Indienen bij de App Store — stappen voor morgen
 
+> **Achterhaald sinds 22-09-2026.** Versie 1.0 (build 5) is goedgekeurd en live in
+> 147 landen. De stand van zaken staat in `store/OPNAME.md`; deze lijst blijft staan
+> als het draaiboek voor een volgende app.
+
 > **Alles wat je letterlijk in App Store Connect invult staat in
 > `store/APP-STORE-INVULLEN.md`**: veld voor veld, in de volgorde van de
 > versiepagina, met de bestandspaden van de schermafbeeldingen en de video's.
