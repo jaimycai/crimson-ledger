@@ -11,3 +11,4 @@ store/previews/
 
 # sleutels van App Store Connect horen nooit in de repo
 *.p8
+store/social/*.mp4
