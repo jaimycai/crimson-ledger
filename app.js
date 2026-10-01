@@ -520,7 +520,7 @@ const App = {
     if (hl && hl.scrollIntoView) { try { hl.scrollIntoView({ block: 'nearest' }); } catch (e) { /* oud */ } }
   },
   async buy(productId) {
-    if (!Store.available()) return this.showToast('🛒', AP_T('Aankopen werken alleen in de app uit de App Store.'));
+    if (!Store.available()) return this.showToast('🛒', AP_T('Aankopen werken alleen in de app uit de App Store of Google Play.'));
     const r = await Store.buy(productId);
     if (r.ok) {
       if (typeof Meting !== 'undefined') Meting.send('purchase', productId.split('.').slice(3).join('.'));
@@ -533,11 +533,11 @@ const App = {
     else this.showToast('⚠️', AP_T('De aankoop is niet gelukt. Probeer het later nog eens.'));
   },
   async restorePurchases() {
-    if (!Store.available()) return this.showToast('🛒', AP_T('Herstellen werkt alleen in de app uit de App Store.'));
+    if (!Store.available()) return this.showToast('🛒', AP_T('Herstellen werkt alleen in de app uit de App Store of Google Play.'));
     const before = JSON.stringify(Store.state());
     const st = await Store.restore();
     this.onStoreChange();
-    this.showToast(JSON.stringify(st) !== before || st.pass ? '✓' : 'ℹ️', st.pass || (st.worlds || []).length || st.cosmetics ? AP_T('Je aankopen zijn hersteld.') : AP_T('Geen eerdere aankopen gevonden voor dit Apple ID.'));
+    this.showToast(JSON.stringify(st) !== before || st.pass ? '✓' : 'ℹ️', st.pass || (st.worlds || []).length || st.cosmetics ? AP_T('Je aankopen zijn hersteld.') : AP_T('Geen eerdere aankopen gevonden voor dit account.'));
   },
   // na een aankoop of herstel: alles wat van bezit afhangt opnieuw tekenen
   onStoreChange() {

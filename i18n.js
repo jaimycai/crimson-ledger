@@ -167,7 +167,7 @@ const I18n = {
     'Alle voortgang wissen': 'Erase all progress', 'Wissen': 'Erase', '· gemaakt in Nederland': '· made in the Netherlands', '🌍 Taal': '🌍 Language',
     'Alles, voor altijd': 'Everything, forever', '🗺️ Alle werelden, ook de werelden die nog komen': '🗺️ All worlds, including the ones still to come', '💡 Onbeperkt hints': '💡 Unlimited hints',
     "🎨 Alle bordthema's en portretlijsten": '🎨 All board themes and portrait frames', '🧊 Twee extra vrije dagen op voorraad': '🧊 Two extra streak freezes in stock', 'Crimson Pass · € 4,99': 'Crimson Pass · € 4.99',
-    'Eenmalige aankopen via je Apple ID, geen abonnement. Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.': 'One-off purchases through your Apple ID, no subscription. The Manor, the Pirate Ship, the daily case, the case of the week and the archive always stay free.',
+    'Eenmalige aankopen via je account in de appwinkel, geen abonnement. Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.': 'One-off purchases through your app store account, no subscription. The Manor, the Pirate Ship, the daily case, the case of the week and the archive always stay free.',
     'Onderscheiding verdiend!': 'Award earned!',
     // ── code: kaart ──
     'Kon geen plattegrond genereren, probeer opnieuw.': 'Could not generate a floor plan, please try again.',
@@ -208,10 +208,10 @@ const I18n = {
     '{0} hints': '{0} hints', 'Met de Pass zijn hints onbeperkt.': 'With the Pass, hints are unlimited.', 'Je hebt er nu {0}. Elke dag krijg je {1} gratis.': 'You have {0} now. Every day you get {1} for free.',
     "Bordthema's en lijsten": 'Board themes and frames', 'Nacht, sepia en kraftpapier; gouden, zilveren en crimson lijst.': 'Night, sepia and kraft paper; gold, silver and crimson frame.',
     '{0} zaken in {1} delen · {2}': '{0} cases in {1} parts · {2}', '✓ Van jou': '✓ Yours',
-    'Aankopen werken alleen in de app uit de App Store.': 'Purchases only work in the app from the App Store.',
+    'Aankopen werken alleen in de app uit de App Store of Google Play.': 'Purchases only work in the app from the App Store or Google Play.',
     '{0} hints erbij. Veel speurplezier!': '{0} more hints. Happy sleuthing!', 'Welkom bij de Crimson Pass: alles staat open.': 'Welcome to the Crimson Pass: everything is open.', 'Gekocht! Veel speurplezier.': 'Purchased! Happy sleuthing.',
     'De aankoop wacht op goedkeuring (bijvoorbeeld van een ouder).': 'The purchase is waiting for approval (for example from a parent).', 'De aankoop is niet gelukt. Probeer het later nog eens.': 'The purchase failed. Please try again later.',
-    'Herstellen werkt alleen in de app uit de App Store.': 'Restoring only works in the app from the App Store.', 'Je aankopen zijn hersteld.': 'Your purchases have been restored.', 'Geen eerdere aankopen gevonden voor dit Apple ID.': 'No earlier purchases found for this Apple ID.',
+    'Herstellen werkt alleen in de app uit de App Store of Google Play.': 'Restoring only works in the app from the App Store or Google Play.', 'Je aankopen zijn hersteld.': 'Your purchases have been restored.', 'Geen eerdere aankopen gevonden voor dit account.': 'No earlier purchases found for this account.',
     'Bordthema en lijst om je rang': 'Board theme and frame around your rank', "Bordthema's en lijsten zitten in de Crimson Pass": 'Board themes and frames are part of the Crimson Pass',
     'Papier': 'Paper', 'Nacht': 'Night', 'Sepia': 'Sepia', 'Kraftpapier': 'Kraft paper', 'Geen lijst': 'No frame', 'Gouden lijst': 'Gold frame', 'Zilveren lijst': 'Silver frame', 'Crimson lijst': 'Crimson frame',
     // thuis
