@@ -1,5 +1,10 @@
 apply plugin: 'com.android.application'
 
+// Upload key lives outside the repo (~/.crimson). Without it a release build is unsigned.
+def keystoreProps = new Properties()
+def keystoreFile = new File(System.getProperty('user.home'), '.crimson/keystore.properties')
+if (keystoreFile.exists()) keystoreProps.load(new FileInputStream(keystoreFile))
+
 android {
     namespace "nl.crimsonledger.app"
     compileSdk rootProject.ext.compileSdkVersion
@@ -16,8 +21,19 @@ android {
             ignoreAssetsPattern '!.svn:!.git:!.ds_store:!*.scc:.*:!CVS:!thumbs.db:!picasa.ini:!*~'
         }
     }
+    signingConfigs {
+        release {
+            if (keystoreProps['storeFile']) {
+                storeFile file(keystoreProps['storeFile'])
+                storePassword keystoreProps['storePassword']
+                keyAlias keystoreProps['keyAlias']
+                keyPassword keystoreProps['keyPassword']
+            }
+        }
+    }
     buildTypes {
         release {
+            if (keystoreProps['storeFile']) signingConfig signingConfigs.release
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
