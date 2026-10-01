@@ -12,3 +12,7 @@ store/previews/
 # sleutels van App Store Connect horen nooit in de repo
 *.p8
 store/social/*.mp4
+store/social/week*/
+store/social/cases/
+store/social/still-*.png
+store/social/*.zip
