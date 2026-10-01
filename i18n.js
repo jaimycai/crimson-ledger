@@ -162,7 +162,7 @@ const I18n = {
     'Alle verklaringen': 'All statements', 'Tik een verklaring om hem op het bord te bekijken.': 'Tap a statement to see it on the board.', 'Sluiten': 'Close',
     'Aan de slag': "Let's go", 'Nieuw deel': 'New part', 'Deel voltooid': 'Part complete', 'Nieuw in dit deel': 'New in this part', 'Begrepen': 'Got it', 'Open de bewijskist': 'Open the evidence chest',
     // instellingen en winkel
-    'Instellingen': 'Settings', 'Privacy': 'Privacy', 'Privacyverklaring ↗': 'Privacy policy ↗', 'Hulp': 'Help', 'Support ↗': 'Support ↗', '🔔 Dagelijkse herinnering (18:30)': '🔔 Daily reminder (18:30)',
+    'Instellingen': 'Settings', 'Privacy': 'Privacy', '{0} dagen op rij! Cadeau: {1} staat nu voor je open.': '{0} days in a row! A gift: {1} is now open to you.', '📊 Anonieme statistieken': '📊 Anonymous statistics', 'Privacyverklaring ↗': 'Privacy policy ↗', 'Hulp': 'Help', 'Support ↗': 'Support ↗', '🔔 Dagelijkse herinnering (18:30)': '🔔 Daily reminder (18:30)',
     '🎨 Uiterlijk': '🎨 Appearance', '🛒 Winkel': '🛒 Shop', 'Crimson Pass': 'Crimson Pass', 'Aankopen herstellen': 'Restore purchases', 'Herstellen': 'Restore',
     'Alle voortgang wissen': 'Erase all progress', 'Wissen': 'Erase', '· gemaakt in Nederland': '· made in the Netherlands', '🌍 Taal': '🌍 Language',
     'Alles, voor altijd': 'Everything, forever', '🗺️ Alle werelden, ook de werelden die nog komen': '🗺️ All worlds, including the ones still to come', '💡 Onbeperkt hints': '💡 Unlimited hints',

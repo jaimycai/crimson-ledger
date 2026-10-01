@@ -48,7 +48,23 @@ const Store = {
   ownsWorld(id) {
     if (!this.isPaidWorld(id)) return true;
     const st = this.state();
-    return !!st.pass || (st.worlds || []).includes(id);
+    return !!st.pass || (st.worlds || []).includes(id) || this.gifts().includes(id);
+  },
+  // Werelden die je met spelen verdient (streak), los van aankopen. Staan apart
+  // zodat "Aankopen herstellen" ze niet overschrijft.
+  GIFT_STREAKS: [7, 30],
+  gifts() { return this.json('crimson-gift-worlds', []); },
+  nextGiftWorld() { return this.paidWorlds().find(id => !this.ownsWorld(id)) || null; },
+  // geeft de wereld terug die erbij kwam, of null
+  giftForStreak(count) {
+    if (!this.GIFT_STREAKS.includes(count) || this.hasPass()) return null;
+    const done = this.json('crimson-gift-streaks', []);
+    if (done.includes(count)) return null;
+    const w = this.nextGiftWorld();
+    if (!w) return null;
+    this.set('crimson-gift-worlds', JSON.stringify([...this.gifts(), w]));
+    this.set('crimson-gift-streaks', JSON.stringify([...done, count]));
+    return w;
   },
   paidWorlds() { return typeof Themes !== 'undefined' ? Themes.list().map(t => t.id).filter(id => this.isPaidWorld(id)) : []; },
 

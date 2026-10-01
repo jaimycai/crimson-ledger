@@ -55,6 +55,7 @@ const App = {
     this.updateStreakDisplay();
     this.renderHome();
     this.scheduleReminder();
+    if (typeof Meting !== 'undefined') Meting.open();
   },
 
   // ══════════════════════════════════════════════════════════
@@ -89,8 +90,9 @@ const App = {
       const C = window.Capacitor;
       const P = C && ((C.Plugins && C.Plugins.InAppReview) || (typeof C.registerPlugin === 'function' && C.registerPlugin('InAppReview')));
       if (!P || !C.isNativePlatform || !C.isNativePlatform() || this.storageGet('crimson-review-asked')) return;
-      if ((Board.loadStats().solved || 0) < 5) return;
+      if ((Board.loadStats().solved || 0) < 3) return;
       this.storageSet('crimson-review-asked', '1');
+      if (typeof Meting !== 'undefined') Meting.send('review_asked');
       setTimeout(() => { P.requestReview().catch(() => {}); }, 3500);
     } catch (e) { /* niet beschikbaar */ }
   },
@@ -482,6 +484,7 @@ const App = {
   // reden: 'hint' | 'world:<id>' | 'cosmetics' | null — bepaalt de kop en welke rij oplicht
   openStore(reason = null) {
     this.storeReason = reason;
+    if (typeof Meting !== 'undefined') Meting.send('store_open', String(reason || 'menu').split(':')[0]);
     this.renderStore();
     this.showModal('store-modal');
     Store.loadPrices().then(() => this.renderStore());
@@ -520,6 +523,7 @@ const App = {
     if (!Store.available()) return this.showToast('🛒', AP_T('Aankopen werken alleen in de app uit de App Store.'));
     const r = await Store.buy(productId);
     if (r.ok) {
+      if (typeof Meting !== 'undefined') Meting.send('purchase', productId.split('.').slice(3).join('.'));
       if (productId === Store.IDS.pass) Progress.setFreezes(Progress.freezes() + 2);
       Sound.play('win');
       this.showToast('🎉', productId === Store.IDS.hints ? AP_T`${Store.HINT_PACK} hints erbij. Veel speurplezier!` : productId === Store.IDS.pass ? AP_T('Welkom bij de Crimson Pass: alles staat open.') : AP_T('Gekocht! Veel speurplezier.'));
@@ -767,6 +771,8 @@ const App = {
       this.resetArmed = false;
     });
     // dagelijkse herinnering: alleen tonen als de app lokale meldingen heeft (iOS)
+    const chkM = document.getElementById('chk-meting');
+    if (chkM && typeof Meting !== 'undefined') { chkM.checked = Meting.on(); chkM.addEventListener('change', () => Meting.setOn(chkM.checked)); }
     const row = document.getElementById('settings-reminder'), chk = document.getElementById('chk-reminder');
     if (row && chk) {
       row.hidden = !this.notif();
@@ -1684,6 +1690,7 @@ const App = {
   },
   shareAny(text) {
     if (!text) return;
+    if (typeof Meting !== 'undefined') Meting.send('share');
     const viaShare = () => navigator.share
       ? navigator.share({ text }).catch(() => {})
       : Promise.reject(new Error('no share'));
@@ -1819,12 +1826,16 @@ const App = {
     this.freezeEarned = this.streak.count > 0 && this.streak.count % 5 === 0 && Progress.addFreeze();
 
     this.storageSet('crimson-streak', JSON.stringify(this.streak));
+    // 7 en 30 dagen op rij: een betaalde wereld cadeau
+    this.giftWorld = typeof Store !== 'undefined' ? Store.giftForStreak(this.streak.count) : null;
+    if (this.giftWorld && typeof Meting !== 'undefined') Meting.send('purchase', 'gift.' + this.giftWorld, this.streak.count);
     Progress.logDaily();
     this.updateStreakDisplay();
   },
   // meldingen over de streak, ná de ceremonie op het resultaatscherm
   streakToasts() {
     if (this.freezeUsed) { this.showToast('🧊', AP_T`Vrije dag gebruikt: je streak van ${this.streak.count} dagen is gered.`); this.freezeUsed = false; }
+    if (this.giftWorld) { const w = Themes.get(this.giftWorld); this.showToast('🎁', AP_T`${this.streak.count} dagen op rij! Cadeau: ${w.name} staat nu voor je open.`); this.giftWorld = null; if (this.onStoreChange) this.onStoreChange(); }
     else if (this.freezeEarned) { this.showToast('🧊', AP_T`${this.streak.count} dagen op rij! Je hebt een vrije dag verdiend voor als je een dag mist.`); this.freezeEarned = false; }
   },
   // opdracht klaar: kort melden (de punten zijn al bijgeschreven)

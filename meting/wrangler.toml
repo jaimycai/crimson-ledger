@@ -1,0 +1,14 @@
+name = "crimson-meting"
+main = "src/index.js"
+compatibility_date = "2026-09-01"
+workers_dev = true
+preview_urls = false
+
+# No request log: Cloudflare logs keep IP addresses and the app promises anonymous counters only.
+[observability]
+enabled = false
+
+[[d1_databases]]
+binding = "DB"
+database_name = "crimson-meting"
+database_id = "2a6a76a9-cf71-43cf-9862-4b69c532721e"

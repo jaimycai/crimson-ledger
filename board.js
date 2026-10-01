@@ -120,6 +120,7 @@ const Board = {
     const base = seed || (Date.now() % 1000000);
     for (let i = 0; i < 12 && !puzzle; i++) puzzle = FloorPlan.generate(base + i * 7919, difficultyId, theme);
     if (!puzzle) return false;
+    if (typeof Meting !== 'undefined' && !opts.tutorial) Meting.send('start', isDaily ? 'daily' : campaignCase ? 'campaign' : 'free', (this.loadStats().solved || 0));
 
     Object.assign(this, {
       puzzle, theme, difficulty: difficultyId, seed: base, isDaily,
@@ -585,6 +586,7 @@ const Board = {
     const h = FloorPlan.hint(this.puzzle, this.placements);
     this.hintsUsed++;
     if (typeof Store !== 'undefined') Store.useHint();
+    if (typeof Meting !== 'undefined') Meting.send('hint');
     this.hintRefs = { cells: h.cells || [], clues: h.clues || [] };
     if (h.suspect !== undefined && h.suspect !== -1) this.active = h.suspect;
     this.after(true);
@@ -751,6 +753,7 @@ const Board = {
     this.updateTools();
     if (this.isTutorial) {
       App.storageSet('crimson-board-tutorial-done', '1');
+      if (typeof Meting !== 'undefined') Meting.send('tutorial_done');
       document.getElementById('board-coach').hidden = true;
       document.getElementById('btn-board-hint').disabled = false;
       App.mode = 'board';
@@ -764,6 +767,7 @@ const Board = {
     const before = App.rankFor(solvedBefore);
     this.saveStats();
     const solvedAfter = this.loadStats().solved || 0;
+    if (typeof Meting !== 'undefined') Meting.send('solved', this.isDaily ? 'daily' : this.campaignCase ? 'campaign' : 'free', solvedAfter);
     const after = App.rankFor(solvedAfter);
     this.newRank = after.title !== before.title ? after.title : null;
     this.rankInfo = { before, after, solvedBefore, solvedAfter };
