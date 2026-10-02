@@ -73,8 +73,9 @@ carrousels en voor de eerste twee seconden van een raadsel, niet voor hele filmp
   Shorts kunnen later in dezelfde planning.
 - **Geluid zit in de video zelf.** Bij ingeplande posts kies je geen trending geluid in de app.
   Elke video krijgt daarom een eigen geluidsspoor uit `social/geluid.py` (tikkende klok, lage
-  toon, pianomotief; zelf gemaakt, geen rechten). Bij carrousels zet je TikToks automatische
-  muziek aan als Metricool die keuze biedt. Verkopers beweren dat posten via de API bereik kost;
+  toon, pianomotief; zelf gemaakt, geen rechten). Bij carrousels staat "Willekeurige muziek
+  toevoegen" aan. TikTok staat via Metricool geen AI-label op fotoposts toe; carrousels melden het
+  AI-beeld daarom in de tekst: "Beeld 1 is gemaakt met AI." Verkopers beweren dat posten via de API bereik kost;
   onbewezen.
 
 ## 5. Drie formaten, 21 dagen

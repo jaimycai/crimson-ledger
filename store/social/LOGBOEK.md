@@ -11,10 +11,10 @@ eerste publicatie op zijn vroegst 6 oktober.
 
 | # | Map | Formaat | Concept klaar | Live | Views 48u | Likes | Reacties | Bewaard | Gedeeld | Antwoord gepind |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 1 | dag1-carrousel | A carrousel | Higgsfield-concept van 1 okt vervalt; via Metricool | | | | | | | Dr. Cross |
-| 2 | dag2-meelossen | B meelossen | | | | | | | | n.v.t. |
-| 3 | dag3-uitleg | C uitleg | | | | | | | | n.v.t. |
-| 4 | dag4-carrousel | A carrousel | | | | | | | | Marcus |
+| 1 | dag1-carrousel | A carrousel | ingepland Metricool, di 6 okt 19:00 | | | | | | | Dr. Cross |
+| 2 | dag2-meelossen | B meelossen | ingepland Metricool, wo 7 okt 19:00 | | | | | | | n.v.t. |
+| 3 | dag3-uitleg | C uitleg | ingepland Metricool, do 8 okt 19:00 | | | | | | | n.v.t. |
+| 4 | dag4-carrousel | A carrousel | ingevuld in Metricool, wacht op Jaimy (vr 9 okt 19:00) | | | | | | | Marcus |
 | 5 | dag5-meelossen | B meelossen | | | | | | | | n.v.t. |
 | 6 | dag6-carrousel | A carrousel | | | | | | | | Marcus |
 | 7 | dag7-carrousel | A carrousel | | | | | | | | Rosalind |
@@ -31,3 +31,6 @@ eerste publicatie op zijn vroegst 6 oktober.
 - 2 okt: posten via Metricool, per week ingepland na één akkoord van Jaimy, elke dag 19:00.
   De concepten via Higgsfield vervallen. Video's van week 1 kregen een eigen geluidsspoor
   (`geluid.py`); ze waren stil omdat Jaimy in de app een geluid zou kiezen.
+- 2 okt: TikTok staat via Metricool geen AI-label op fotoposts toe. Carrousels melden het AI-beeld
+  daarom in de tekst ("Beeld 1 is gemaakt met AI."); video's met een AI-beeld krijgen het label.
+  Gratis Metricool: 20 posts per maand; het plan heeft 21 posts in oktober.
