@@ -1,0 +1,116 @@
+[
+ {
+  "path": "dag1-carrousel/1.jpg",
+  "media_id": "0b7f474b-3a8b-487d-ad0f-0c9898631fc2",
+  "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JBnDH0KuAa4VlaZTzc5CN8D9u0/0b7f474b-3a8b-487d-ad0f-0c9898631fc2.jpg",
+  "http": "200"
+ },
+ {
+  "path": "dag1-carrousel/2.jpg",
+  "media_id": "74fdd878-4fdb-4bdf-bf11-ba6d088564a5",
+  "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JBnDH0KuAa4VlaZTzc5CN8D9u0/74fdd878-4fdb-4bdf-bf11-ba6d088564a5.jpg",
+  "http": "200"
+ },
+ {
+  "path": "dag1-carrousel/3.jpg",
+  "media_id": "12619a62-88f6-41f6-a5d0-01833c980c20",
+  "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JBnDH0KuAa4VlaZTzc5CN8D9u0/12619a62-88f6-41f6-a5d0-01833c980c20.jpg",
+  "http": "200"
+ },
+ {
+  "path": "dag1-carrousel/4.jpg",
+  "media_id": "10ac3083-9868-469f-809c-5efee3775dfc",
+  "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JBnDH0KuAa4VlaZTzc5CN8D9u0/10ac3083-9868-469f-809c-5efee3775dfc.jpg",
+  "http": "200"
+ },
+ {
+  "path": "dag2-meelossen/video.mp4",
+  "media_id": "69f95db1-07a8-4a42-8538-b8ab819e94a5",
+  "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JBnDH0KuAa4VlaZTzc5CN8D9u0/69f95db1-07a8-4a42-8538-b8ab819e94a5.mp4",
+  "http": "200"
+ },
+ {
+  "path": "dag3-uitleg/video.mp4",
+  "media_id": "88507e54-c2d3-4172-803d-3c9a6e0002c7",
+  "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JBnDH0KuAa4VlaZTzc5CN8D9u0/88507e54-c2d3-4172-803d-3c9a6e0002c7.mp4",
+  "http": "200"
+ },
+ {
+  "path": "dag4-carrousel/1.jpg",
+  "media_id": "bdc9232c-3ce1-49e1-bd5e-7dbab10e21da",
+  "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JBnDH0KuAa4VlaZTzc5CN8D9u0/bdc9232c-3ce1-49e1-bd5e-7dbab10e21da.jpg",
+  "http": "200"
+ },
+ {
+  "path": "dag4-carrousel/2.jpg",
+  "media_id": "4b7557ac-7807-456d-94a9-066eb8fc345d",
+  "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JBnDH0KuAa4VlaZTzc5CN8D9u0/4b7557ac-7807-456d-94a9-066eb8fc345d.jpg",
+  "http": "200"
+ },
+ {
+  "path": "dag4-carrousel/3.jpg",
+  "media_id": "ddd2c081-d42c-4a97-b401-ed8301e2dd2b",
+  "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JBnDH0KuAa4VlaZTzc5CN8D9u0/ddd2c081-d42c-4a97-b401-ed8301e2dd2b.jpg",
+  "http": "200"
+ },
+ {
+  "path": "dag4-carrousel/4.jpg",
+  "media_id": "d4fdc970-01c0-4d01-997c-e4151732890e",
+  "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JBnDH0KuAa4VlaZTzc5CN8D9u0/d4fdc970-01c0-4d01-997c-e4151732890e.jpg",
+  "http": "200"
+ },
+ {
+  "path": "dag5-meelossen/video.mp4",
+  "media_id": "b4afe9dc-aba9-47b0-8bf0-024ffa7f3bf7",
+  "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JBnDH0KuAa4VlaZTzc5CN8D9u0/b4afe9dc-aba9-47b0-8bf0-024ffa7f3bf7.mp4",
+  "http": "200"
+ },
+ {
+  "path": "dag6-carrousel/1.jpg",
+  "media_id": "00cc1fec-ef56-4abf-ab1a-305070e4a7fd",
+  "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JBnDH0KuAa4VlaZTzc5CN8D9u0/00cc1fec-ef56-4abf-ab1a-305070e4a7fd.jpg",
+  "http": "200"
+ },
+ {
+  "path": "dag6-carrousel/2.jpg",
+  "media_id": "e0c45adf-d860-43e6-b438-c4d5e16054e2",
+  "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JBnDH0KuAa4VlaZTzc5CN8D9u0/e0c45adf-d860-43e6-b438-c4d5e16054e2.jpg",
+  "http": "200"
+ },
+ {
+  "path": "dag6-carrousel/3.jpg",
+  "media_id": "281a316f-a164-42f9-a93f-2e3495694ebb",
+  "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JBnDH0KuAa4VlaZTzc5CN8D9u0/281a316f-a164-42f9-a93f-2e3495694ebb.jpg",
+  "http": "200"
+ },
+ {
+  "path": "dag6-carrousel/4.jpg",
+  "media_id": "b82b403c-1090-4734-9a7e-e85c43ce7e3a",
+  "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JBnDH0KuAa4VlaZTzc5CN8D9u0/b82b403c-1090-4734-9a7e-e85c43ce7e3a.jpg",
+  "http": "200"
+ },
+ {
+  "path": "dag7-carrousel/1.jpg",
+  "media_id": "75f78eb8-93e8-453a-991e-0c177b9f2103",
+  "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JBnDH0KuAa4VlaZTzc5CN8D9u0/75f78eb8-93e8-453a-991e-0c177b9f2103.jpg",
+  "http": "200"
+ },
+ {
+  "path": "dag7-carrousel/2.jpg",
+  "media_id": "4f2c46a4-d4e0-418e-aad6-66c845f37665",
+  "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JBnDH0KuAa4VlaZTzc5CN8D9u0/4f2c46a4-d4e0-418e-aad6-66c845f37665.jpg",
+  "http": "200"
+ },
+ {
+  "path": "dag7-carrousel/3.jpg",
+  "media_id": "04618869-d696-4a06-b7b8-c1f21d27c9b1",
+  "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JBnDH0KuAa4VlaZTzc5CN8D9u0/04618869-d696-4a06-b7b8-c1f21d27c9b1.jpg",
+  "http": "200"
+ },
+ {
+  "path": "dag7-carrousel/4.jpg",
+  "media_id": "a8a85053-1a60-4794-a56f-fba08e9fd74c",
+  "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3JBnDH0KuAa4VlaZTzc5CN8D9u0/a8a85053-1a60-4794-a56f-fba08e9fd74c.jpg",
+  "http": "200"
+ }
+]

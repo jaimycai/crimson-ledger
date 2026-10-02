@@ -12,6 +12,7 @@ eerste publicatie op zijn vroegst 6 oktober.
 
 | # | Map | Formaat | Concept klaar | Live | Views 48u | Likes | Reacties | Bewaard | Gedeeld | Antwoord gepind |
 |---|---|---|---|---|---|---|---|---|---|---|
+| 2 okt | 0 (volgend: 0, geen posts) | niet gemeten (App Store Connect geblokkeerd voor de Chrome-extensie) | niet gemeten (idem) | niet gemeten (idem) | 1 (7 dagen, iOS, en) |
 | 1 | dag1-carrousel | A carrousel | 1 okt (formulier wacht op Jaimy) | | | | | | | Dr. Cross |
 | 2 | dag2-meelossen | B meelossen | | | | | | | | n.v.t. |
 | 3 | dag3-uitleg | C uitleg | | | | | | | | n.v.t. |
