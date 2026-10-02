@@ -70,6 +70,11 @@ const active = () => document.querySelector('.screen.active').id;
     const hintText = txt('hint-text') + ' ' + txt('hint-sub');
     check(hintText.length > 0 && !DUTCH.test(hintText), 'hint Engels: ' + hintText.slice(0, 80));
 
+    // ── oefenzaak ──
+    Board.startTutorial(); await sleep(50);
+    const tut = [txt('board-casetext'), ...[...document.querySelectorAll('.bclue-text, .room-label, .broom-name, [data-room-name]')].map(e => e.textContent)].join(' ').replace(/\s+/g, ' ').trim();
+    check(/Kitchen/.test(tut) && !/\b(Woonkamer|Keuken|de|het)\b/.test(tut), 'oefenzaak Engels: ' + tut.slice(0, 140));
+
     // ── omschakelen bewaart de keuze ──
     check(App.storageGet('crimson-lang') === 'en', 'taalkeuze bewaard');
     check(errors.length === 0, 'geen fouten tijdens het spelen in het Engels: ' + errors.join(' | '));

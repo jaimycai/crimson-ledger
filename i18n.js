@@ -105,6 +105,7 @@ const I18n = {
     if (typeof App !== 'undefined' && App.RANKS) App.RANKS.forEach(r => { if (DATA.ranks[r[1]]) r[1] = DATA.ranks[r[1]]; });
     if (typeof DIFFICULTY !== 'undefined') Object.keys(DATA.difficulty).forEach(k => { if (DIFFICULTY[k]) DIFFICULTY[k].label = DATA.difficulty[k]; });
     if (typeof Board !== 'undefined' && Board.TUTORIAL_STEPS) Board.TUTORIAL_STEPS.forEach((s, i) => { if (DATA.boardTutorial[i]) s.text = DATA.boardTutorial[i]; });
+    if (typeof Board !== 'undefined' && Board.TUTORIAL) Board.TUTORIAL.rooms.forEach(r => { const n = DATA.themes.landhuis.rooms[r.name]; if (n) { r.name = n; r.article = 'the'; } });
   },
 
   // ── Woordenboek: Nederlands → Engels ───────────────────────
