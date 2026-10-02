@@ -14,10 +14,10 @@ eerste publicatie op zijn vroegst 6 oktober.
 | 1 | dag1-carrousel | A carrousel | ingepland Metricool, di 6 okt 19:00 | | | | | | | Dr. Cross |
 | 2 | dag2-meelossen | B meelossen | ingepland Metricool, wo 7 okt 19:00 | | | | | | | n.v.t. |
 | 3 | dag3-uitleg | C uitleg | ingepland Metricool, do 8 okt 19:00 | | | | | | | n.v.t. |
-| 4 | dag4-carrousel | A carrousel | ingevuld in Metricool, wacht op Jaimy (vr 9 okt 19:00) | | | | | | | Marcus |
-| 5 | dag5-meelossen | B meelossen | | | | | | | | n.v.t. |
-| 6 | dag6-carrousel | A carrousel | | | | | | | | Marcus |
-| 7 | dag7-carrousel | A carrousel | | | | | | | | Rosalind |
+| 4 | dag4-carrousel | A carrousel | ingepland Metricool, vr 9 okt 19:00 | | | | | | | Marcus |
+| 5 | dag5-meelossen | B meelossen | ingepland Metricool, za 10 okt 19:00 | | | | | | | n.v.t. |
+| 6 | dag6-carrousel | A carrousel | ingepland Metricool, zo 11 okt 19:00 | | | | | | | Marcus |
+| 7 | dag7-carrousel | A carrousel | ingepland Metricool, ma 12 okt 19:00 | | | | | | | Rosalind |
 
 ## Dagcijfers
 
