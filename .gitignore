@@ -16,3 +16,4 @@ store/social/week*/
 store/social/cases/
 store/social/still-*.png
 store/social/*.zip
+__pycache__/

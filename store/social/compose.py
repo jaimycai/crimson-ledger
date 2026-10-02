@@ -1,6 +1,7 @@
 """Builds week 1 for TikTok/Reels from the captured cases: carousels (JPEG) and videos (frame lists)."""
 import json, os, subprocess, sys
 from PIL import Image, ImageDraw, ImageFont, ImageEnhance
+import geluid
 W, H = 1080, 1920
 GB = "/System/Library/Fonts/Supplemental/Georgia Bold.ttf"; GI = "/System/Library/Fonts/Supplemental/Georgia Italic.ttf"; GR = "/System/Library/Fonts/Supplemental/Georgia.ttf"
 CREAM, RED, INK, SOFT = (250, 245, 239), (139, 46, 28), (44, 24, 16), (110, 90, 78)
@@ -53,7 +54,8 @@ def video(day, name, frames, caption_file_text):
     with open(f"{out}/f/list.txt", "w") as fh:
         for p, sec in lst: fh.write(f"file '{os.path.abspath(p)}'\nduration {sec}\n")
         fh.write(f"file '{os.path.abspath(lst[-1][0])}'\n")
-    subprocess.run(["ffmpeg", "-y", "-v", "error", "-f", "concat", "-safe", "0", "-i", f"{out}/f/list.txt", "-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo", "-vf", "fps=30,format=yuv420p", "-c:v", "libx264", "-crf", "20", "-c:a", "aac", "-shortest", "-movflags", "+faststart", f"{out}/video.mp4"], check=True)
+    geluid.write(sum(sec for _, sec in lst) + 0.5, f"{out}/f/geluid.wav")  # scheduled posts carry their own sound
+    subprocess.run(["ffmpeg", "-y", "-v", "error", "-f", "concat", "-safe", "0", "-i", f"{out}/f/list.txt", "-i", f"{out}/f/geluid.wav", "-vf", "fps=30,format=yuv420p", "-af", f"volume={-16 - geluid.loudness(out + '/f/geluid.wav'):.1f}dB,alimiter=limit=0.89", "-c:v", "libx264", "-crf", "20", "-c:a", "aac", "-b:a", "160k", "-ar", "44100", "-shortest", "-movflags", "+faststart", f"{out}/video.mp4"], check=True)
     subprocess.run(["rm", "-rf", f"{out}/f"]); open(f"{out}/tekst.txt", "w").write(caption_file_text)
 def solve(day, i):
     c = case(i); fr = [(band(f"cases/{i}/board.png", f"Kun jij '{c['title']}' oplossen? Wie was alleen met het slachtoffer?"), 3.5)]

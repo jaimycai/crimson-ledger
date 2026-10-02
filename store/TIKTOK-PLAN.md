@@ -66,9 +66,16 @@ carrousels en voor de eerste twee seconden van een raadsel, niet voor hele filmp
   winkel. Daarom: naam van de app in beeld en in de beschrijving, elke video.
 - **Verplicht aanzetten**: "Commerciële inhoud bekendmaken › Je eigen merk" (TikTok-regel).
   AI-beeld dat echt lijkt: label "Door AI gegenereerd".
-- **Posten vanaf de telefoon.** Via Higgsfield zetten we video's in je TikTok-concepten; jij
-  publiceert met de hand en kiest daar een trending geluid. Verkopers beweren dat direct
-  posten via de API bereik kost; onbewezen, maar concepten kosten niets extra.
+- **Inplannen per week via Metricool** (besluit Jaimy, 2 oktober 2026). Elke week zet Claude
+  zeven posts als concept in Metricool. Jaimy keurt de week één keer goed in de chat ("plan
+  week N in"). Daarna zet Claude ze op automatisch publiceren, elke dag om 19:00. Metricool
+  plant video's én carrousels; TikTok Studio plant geen carrousels. Instagram Reels en YouTube
+  Shorts kunnen later in dezelfde planning.
+- **Geluid zit in de video zelf.** Bij ingeplande posts kies je geen trending geluid in de app.
+  Elke video krijgt daarom een eigen geluidsspoor uit `social/geluid.py` (tikkende klok, lage
+  toon, pianomotief; zelf gemaakt, geen rechten). Bij carrousels zet je TikToks automatische
+  muziek aan als Metricool die keuze biedt. Verkopers beweren dat posten via de API bereik kost;
+  onbewezen.
 
 ## 5. Drie formaten, 21 dagen
 
