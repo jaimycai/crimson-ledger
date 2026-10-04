@@ -1,16 +1,5 @@
 const crypto = require('crypto'); const fs = require('fs'); const path = require('path');
-const KEY_ID = 'CQ6TPURNQ9', ISSUER = '5806efa4-3fc7-4385-bdaf-847dd6ce866d';
-const KEY_PATH = process.env.HOME + '/.appstoreconnect/private_keys/AuthKey_CQ6TPURNQ9.p8';
-const b64 = b => Buffer.from(b).toString('base64').replace(/=+$/, '').replace(/\+/g, '-').replace(/\//g, '_');
-function token() { const now = Math.floor(Date.now() / 1000);
-  const input = `${b64(JSON.stringify({ alg: 'ES256', kid: KEY_ID, typ: 'JWT' }))}.${b64(JSON.stringify({ iss: ISSUER, iat: now, exp: now + 900, aud: 'appstoreconnect-v1' }))}`;
-  return `${input}.${b64(crypto.sign('sha256', Buffer.from(input), { key: crypto.createPrivateKey(fs.readFileSync(KEY_PATH)), dsaEncoding: 'ieee-p1363' }))}`; }
-async function api(method, p, body) {
-  const res = await fetch(p.startsWith('http') ? p : 'https://api.appstoreconnect.apple.com' + p, { method, headers: { Authorization: `Bearer ${token()}`, 'Content-Type': 'application/json' }, body: body ? JSON.stringify(body) : undefined });
-  const text = await res.text(); let j = null; try { j = JSON.parse(text); } catch (e) {}
-  if (!res.ok) { console.log('FAIL', method, p.slice(0, 80), res.status, text.slice(0, 300)); return null; }
-  return j || {};
-}
+const { api } = require('./asc-api');
 async function upload(kind, setId, file, extra = {}) {
   const buf = fs.readFileSync(file);
   const type = kind === 'appScreenshots' ? 'appScreenshots' : 'appPreviews';

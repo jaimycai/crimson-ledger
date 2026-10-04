@@ -3,7 +3,9 @@
 App Store Connect › Crimson Ledger › Distribution › Featuring › Nominations, of direct:
 https://appstoreconnect.apple.com/apps/6812534368/distribution/nominations
 
-Claude mocht de nominatie niet zelf aanmaken (auto-modus: "External System Writes"); Jaimy vult hem in.
+Ingediend op 4 oktober 2026 om 15:14 UTC (nominatie 74141e35, status SUBMITTED), op Jaimy's uitdrukkelijke verzoek.
+De velden staan ook in `store/nominaties/2026-10-enhancements.json`; een volgende nominatie gaat met
+`node store/asc-nominatie.js <spec.json> --submit`.
 
 - **Type**: App Enhancements
 - **Name**: Crimson Ledger: daily murder-mystery logic puzzles

@@ -17,3 +17,6 @@ store/social/cases/
 store/social/still-*.png
 store/social/*.zip
 __pycache__/
+
+# Persoonlijke Claude Code-instellingen (toestemmingen), niet in de repo
+.claude/settings.local.json
