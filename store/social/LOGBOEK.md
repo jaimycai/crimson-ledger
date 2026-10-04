@@ -24,6 +24,7 @@ eerste publicatie op zijn vroegst 6 oktober.
 | Datum | Volgers | App Store vertoningen | Paginaweergaven | Downloads | Nieuwe spelers (meting) |
 |---|---|---|---|---|---|
 | 2 okt | 0 (volgend: 0, geen posts) | niet gemeten (App Store Connect geblokkeerd voor de Chrome-extensie) | niet gemeten (idem) | niet gemeten (idem) | 1 (7 dagen, iOS, en) |
+| 4 okt | 0 (TikTok Studio, geen posts) | niet gemeten (App Store Connect geblokkeerd voor de Chrome-extensie) | niet gemeten (idem) | niet gemeten (idem) | 4 (7 dagen, iOS, en; 0 terug op dag 1, 0 zaken opgelost) |
 
 ## Beslissingen
 
