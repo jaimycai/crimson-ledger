@@ -6,10 +6,12 @@
 // ============================================================
 const Meting = {
   URL: 'https://crimson-meting.spaarplan-data.workers.dev/e',
-  VERSION: '1.1',
+  VERSION: '1.1.1',
   get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
   set(k, v) { if (typeof App !== 'undefined') App.storageSet(k, v); else { try { localStorage.setItem(k, v); } catch (e) { /* privémodus */ } } },
   on() { return this.get('crimson-meting') !== '0'; },
+  // De iOS-simulator zet 'CrimsonSimulator' in de user agent (MainViewController): testruns tellen niet mee.
+  test() { return typeof navigator !== 'undefined' && /CrimsonSimulator/.test(navigator.userAgent || ''); },
   setOn(v) { this.set('crimson-meting', v ? '1' : '0'); },
   platform() {
     try { const C = window.Capacitor; if (C && C.isNativePlatform && C.isNativePlatform()) return C.getPlatform() === 'android' ? 'android' : 'ios'; } catch (e) { /* web */ }
@@ -19,7 +21,7 @@ const Meting = {
   day(d = new Date()) { return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`; },
   // stuurt één teller; faalt stil (offline is normaal voor dit spel)
   send(e, a = '', n = 0) {
-    if (!this.on() || typeof fetch === 'undefined') return;
+    if (!this.on() || this.test() || typeof fetch === 'undefined') return;
     try {
       fetch(this.URL, { method: 'POST', keepalive: true, headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ e, a: String(a), n: Number(n) || 0, p: this.platform(), l: this.lang(), v: this.VERSION }) }).catch(() => {});
