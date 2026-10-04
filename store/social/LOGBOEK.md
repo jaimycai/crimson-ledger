@@ -24,7 +24,7 @@ eerste publicatie op zijn vroegst 6 oktober.
 | Datum | Volgers | App Store vertoningen | Paginaweergaven | Downloads | Nieuwe spelers (meting) |
 |---|---|---|---|---|---|
 | 2 okt | 0 (volgend: 0, geen posts) | niet gemeten (App Store Connect geblokkeerd voor de Chrome-extensie) | niet gemeten (idem) | niet gemeten (idem) | 1 (7 dagen, iOS, en) |
-| 4 okt | 0 (TikTok Studio, geen posts) | niet gemeten (App Store Connect geblokkeerd voor de Chrome-extensie) | niet gemeten (idem) | niet gemeten (idem) | 4 (7 dagen, iOS, en; 0 terug op dag 1, 0 zaken opgelost) |
+| 4 okt | 0 (TikTok Studio, geen posts) | 55 (30 dagen t/m 1 okt, handmatig gelezen) | 8 (idem) | 3 (idem) | 4 (7 dagen, iOS, en; 0 terug op dag 1, 0 zaken opgelost) |
 
 ## Beslissingen
 
@@ -35,3 +35,8 @@ eerste publicatie op zijn vroegst 6 oktober.
 - 2 okt: TikTok staat via Metricool geen AI-label op fotoposts toe. Carrousels melden het AI-beeld
   daarom in de tekst ("Beeld 1 is gemaakt met AI."); video's met een AI-beeld krijgen het label.
   Gratis Metricool: 20 posts per maand; het plan heeft 21 posts in oktober.
+- 4 okt: versie 1.1 (naam met zoekwoord, preview-video's) staat sinds 3 okt live. Zoekpositie NL: "crimson
+  ledger" 1, "moordmysterie" 2 van 4, "moord puzzel" 18, "whodunnit" 40, "murder mystery puzzle" 74; "detective
+  puzzel" en "logica puzzel" niet in de top 200. 0 beoordelingen. De winkel toont alleen Engels als taal (bundel
+  heeft alleen Base.lproj); de app zelf opent op een Nederlands toestel wel in het Nederlands. De meting telt
+  Claudes simulatortests mee (4 nieuwe spelers, alle Engels); echte spelers deze week waarschijnlijk 0 of 1.
