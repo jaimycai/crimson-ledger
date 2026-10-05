@@ -25,6 +25,7 @@ eerste publicatie op zijn vroegst 6 oktober.
 |---|---|---|---|---|---|
 | 2 okt | 0 (volgend: 0, geen posts) | niet gemeten (App Store Connect geblokkeerd voor de Chrome-extensie) | niet gemeten (idem) | niet gemeten (idem) | 1 (7 dagen, iOS, en) |
 | 4 okt | 0 (TikTok Studio, geen posts) | 55 (30 dagen t/m 1 okt, handmatig gelezen) | 8 (idem) | 3 (idem) | 4 (7 dagen, iOS, en; 0 terug op dag 1, 0 zaken opgelost) |
+| 5 okt | 0 (TikTok Studio, geen posts; de 7 ingeplande posts staan niet in TikTok Studio maar in Metricool) | niet gemeten (App Store Connect vraagt inlog in Chrome; `store/winkel.js` krijgt 403, sleutel mag geen rapporten lezen) | niet gemeten (idem) | niet gemeten (idem) | 7 (7 dagen, iOS, en 5 / nl 2; 0 terug op dag 1, 8 zaken gestart, 7 opgelost; telt mogelijk nog simulatortests mee) |
 
 ## Beslissingen
 
@@ -40,3 +41,5 @@ eerste publicatie op zijn vroegst 6 oktober.
   puzzel" en "logica puzzel" niet in de top 200. 0 beoordelingen. De winkel toont alleen Engels als taal (bundel
   heeft alleen Base.lproj); de app zelf opent op een Nederlands toestel wel in het Nederlands. De meting telt
   Claudes simulatortests mee (4 nieuwe spelers, alle Engels); echte spelers deze week waarschijnlijk 0 of 1.
+- 5 okt: zoekpositie NL (wekelijks): "moordmysterie" 2 van 4, "moordmysterie puzzel" 3 van 32; "detective
+  puzzel", "logica puzzel" niet in de top 200; "moordraadsel" geeft 0 resultaten.
