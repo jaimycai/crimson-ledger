@@ -25,7 +25,7 @@ eerste publicatie op zijn vroegst 6 oktober.
 |---|---|---|---|---|---|
 | 2 okt | 0 (volgend: 0, geen posts) | niet gemeten (App Store Connect geblokkeerd voor de Chrome-extensie) | niet gemeten (idem) | niet gemeten (idem) | 1 (7 dagen, iOS, en) |
 | 4 okt | 0 (TikTok Studio, geen posts) | 55 (30 dagen t/m 1 okt, handmatig gelezen) | 8 (idem) | 3 (idem) | 4 (7 dagen, iOS, en; 0 terug op dag 1, 0 zaken opgelost) |
-| 5 okt | 0 (TikTok Studio, geen posts; de 7 ingeplande posts staan niet in TikTok Studio maar in Metricool) | niet gemeten (App Store Connect vraagt inlog in Chrome; `store/winkel.js` krijgt 403, sleutel mag geen rapporten lezen) | niet gemeten (idem) | niet gemeten (idem) | 7 (7 dagen, iOS, en 5 / nl 2; 0 terug op dag 1, 8 zaken gestart, 7 opgelost; telt mogelijk nog simulatortests mee) |
+| 5 okt | 0 (TikTok Studio, geen posts; de 7 ingeplande posts staan niet in TikTok Studio maar in Metricool) | 55 (App Store Connect, data t/m 1 okt; 2 en 3 okt vertraagd bij Apple) | 8 (idem) | 3 (idem) | 7 (7 dagen, iOS, en 5 / nl 2; 0 terug op dag 1, 8 zaken gestart, 7 opgelost; telt mogelijk nog simulatortests mee) |
 
 ## Beslissingen
 
@@ -43,3 +43,9 @@ eerste publicatie op zijn vroegst 6 oktober.
   Claudes simulatortests mee (4 nieuwe spelers, alle Engels); echte spelers deze week waarschijnlijk 0 of 1.
 - 5 okt: zoekpositie NL (wekelijks): "moordmysterie" 2 van 4, "moordmysterie puzzel" 3 van 32; "detective
   puzzel", "logica puzzel" niet in de top 200; "moordraadsel" geeft 0 resultaten.
+- 5 okt: veelgezochte term is "murder sudoku" (eerste suggestie van de App Store bij "murder"); concurrenten zetten
+  "Moord Sudoku" of "Murder Sudoku" in hun naam. Wij: "murder sudoku" 30 van 49, "moord sudoku" 16 van 16, "moord" 12
+  van 87, "whodunnit" 42, "murder puzzle" 68, "murder mystery" 131. Zoekvolume zelf niet gemeten (vergt Apple Search
+  Ads). Voorstel: "moord sudoku" in ondertitel of zoekwoorden van de volgende versie, #murdersudoku onder posts.
+- 5 okt: Jaimy wil post 1 vandaag live. Om 19:41 in Metricool naar 5 okt 20:30 gezet en tekst aangevuld met
+  app-naam en #moordmysterie #murdermystery #crimsonledger; opslaan moest Jaimy zelf doen.
