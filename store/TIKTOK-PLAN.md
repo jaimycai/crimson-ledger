@@ -129,3 +129,41 @@ In dit genre kwam het bereik steeds van anderen, niet van het eigen account.
 Huidige tekst van TikToks AI-regels en eventuele straffen; of een Nederlands account de
 bio-link eerder krijgt; effect van land of VPN; of opwarmen iets uitmaakt; alle cijfers van
 partijen die zelf een carrousel-tool verkopen.
+
+## 9. Bijstelling na 0 views (7 oktober 2026)
+
+Post 1 had na ruim 24 uur 0 views. Bij 0 views heeft TikTok de post nog niet verspreid. Bij ongeveer 200
+views heeft TikTok hem wel aan een testgroep getoond, maar die haakte af. Nieuw onderzoek naar hoe andere
+ontwikkelaars het doen, met bronnen:
+
+- **Oorzaken van 0 views.** Vaak genoemd: een nieuw account dat te snel "zakelijk" begint (posts gepland,
+  link, veel uploads) of te weinig is opgewarmd. Bronnen: r/appledevelopers juli 2026 (puzzelontwikkelaar,
+  zelfde probleem), r/socialmedia mei 2026, r/gamedev. Het bewijs is zwak: losse ervaringen, geen test.
+- **Wat ze als oplossing noemen.** Opwarmen: 3 tot 5 dagen scrollen, liken en reageren in de puzzelhoek. Een
+  post met 0 views niet verwijderen en niet opnieuw uploaden. 24 tot 48 uur niets posten mag. Geen link in de
+  bio tot de eerste posts bereik halen.
+- **Plannen via een dienst.** TikTok-documentatie: alleen een *niet* geauditeerde API-dienst zet posts op
+  privé. Metricool is wel geauditeerd. Dat zulke posts een straf krijgen, is alleen beweerd, nooit aangetoond.
+  Het gebruikte alternatief: laat de dienst de post als concept in de TikTok-inbox zetten, kies in de app een
+  geluid en publiceer zelf.
+- **Carrousels winnen op zoeken en bewaren.** Een ontwikkelaar die eerlijk zegt dat hij een tool verkoopt:
+  85 carrousels in 37 dagen, 690.000 views per 28 dagen, 30 tot 50 downloads per dag. Video's "stierven",
+  carrousels bleven weken vindbaar. Sphinx Riddle: ongeveer 3.000 views per carrousel, uitschieters tot
+  20.000. Grote datasets spreken elkaar tegen over carrousel tegenover video (Fanpage Karma tegenover Buffer).
+- **Haak over een ander werkt beter dan een haak over de app.** Voorbeelden: "Alleen 2% vindt de dader",
+  "Mijn vriendin dacht dat het de butler was". Haken over de app bleven steken op 200 tot 900 views, haken
+  over een ander haalden 147.000 tot 234.000 (Larry, geen puzzelapp).
+- **Op elke reactie reageren.** Eén video ging zo naar 160.000 views (r/IndieDev).
+- **Grote raadselaccounts.** @riddle.tang (362.000 volgers) en @riddle.x8 (248.000 volgers, 1.157 video's)
+  zetten het raadsel als tekst in beeld en posten veel. Een sterk Nederlands raadselaccount is niet gevonden.
+
+**Regels vanaf nu**
+1. Profiel staat klaar: naam "Crimson Ledger · moordraadsels", app-icoon als profielfoto, bio zonder link.
+   Je kunt de naam pas na 13 okt weer wijzigen.
+2. Week 1 loopt zoals hij in Metricool staat. Verwijder geen post met 0 views en upload hem niet opnieuw.
+3. Haal posts 2 tot en met 7 samen niet meer dan 0 tot 50 views (meten op 10 okt), dan gaat week 2 anders.
+   Metricool stuurt de posts dan als concept naar de TikTok-inbox, of Jaimy publiceert ze zelf in de app met
+   een trending geluid. Dat is één verandering tegelijk; de inhoud blijft gelijk.
+4. Nieuwe carrousels openen met een haak over een ander of een getal ("Alleen 2% vindt de dader"), niet met
+   de app. De app-naam komt pas in de laatste dia en in de tekst.
+5. Elke reactie krijgt binnen een paar uur antwoord van Jaimy, in de app.

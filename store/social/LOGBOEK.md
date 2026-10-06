@@ -58,3 +58,6 @@ eerste publicatie op zijn vroegst 6 oktober.
 - 6 okt 23:50: dubbele post van 6 okt 19:02 op "Alleen ik" gezet (omkeerbaar, niet verwijderd). Openbaar profiel
   @crimsonledger.app toont geen profielfoto (standaard-J), geen bio, weergavenaam "crimsonledger.app", en het raster
   toont op het web geen post. Metricool vraagt in de ingebouwde browser om inloggen; niet gedaan.
+- 7 okt 00:00: profiel aangepast op verzoek van Jaimy. Weergavenaam "Crimson Ledger · moordraadsels" (wijzigen kan weer
+  na 13 okt), bio "Kun jij de dader vinden? 🔍 Elke dag een moordraadsel. App: Crimson Ledger", profielfoto het
+  app-icoon (`store/social/tiktok-avatar.png`). Onderzoek naar 0 views en nieuwe regels: TIKTOK-PLAN.md §9.
