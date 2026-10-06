@@ -11,7 +11,8 @@ eerste publicatie op zijn vroegst 6 oktober.
 
 | # | Map | Formaat | Concept klaar | Live | Views 48u | Likes | Reacties | Bewaard | Gedeeld | Antwoord gepind |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 1 | dag1-carrousel | A carrousel | ingepland Metricool, di 6 okt 19:00 | | | | | | | Dr. Cross |
+| 1 | dag1-carrousel | A carrousel | ingepland Metricool, di 6 okt 19:00 | 5 okt 23:03 (tekst met app-naam) | nog geen 48u; 0 na 24u | 0 | 0 | niet gemeten (Studio toont het niet) | niet gemeten (idem) | Dr. Cross |
+| 1b | dag1-carrousel (dubbel) | A carrousel | oude Metricool-planning | 6 okt 19:02 (oude tekst, zonder app-naam) | nog geen 48u; 0 na 4,5u | 0 | 0 | niet gemeten | niet gemeten | Dr. Cross |
 | 2 | dag2-meelossen | B meelossen | ingepland Metricool, wo 7 okt 19:00 | | | | | | | n.v.t. |
 | 3 | dag3-uitleg | C uitleg | ingepland Metricool, do 8 okt 19:00 | | | | | | | n.v.t. |
 | 4 | dag4-carrousel | A carrousel | ingepland Metricool, vr 9 okt 19:00 | | | | | | | Marcus |
@@ -26,6 +27,7 @@ eerste publicatie op zijn vroegst 6 oktober.
 | 2 okt | 0 (volgend: 0, geen posts) | niet gemeten (App Store Connect geblokkeerd voor de Chrome-extensie) | niet gemeten (idem) | niet gemeten (idem) | 1 (7 dagen, iOS, en) |
 | 4 okt | 0 (TikTok Studio, geen posts) | 55 (30 dagen t/m 1 okt, handmatig gelezen) | 8 (idem) | 3 (idem) | 4 (7 dagen, iOS, en; 0 terug op dag 1, 0 zaken opgelost) |
 | 5 okt | 0 (TikTok Studio, geen posts; de 7 ingeplande posts staan niet in TikTok Studio maar in Metricool) | 55 (App Store Connect, data t/m 1 okt; 2 en 3 okt vertraagd bij Apple) | 8 (idem) | 3 (idem) | 7 (7 dagen, iOS, en 5 / nl 2; 0 terug op dag 1, 8 zaken gestart, 7 opgelost; telt mogelijk nog simulatortests mee) |
+| 6 okt | 0 (TikTok Studio 23:35; 2 posts live, beide 0 views) | niet gemeten (App Store Connect geblokkeerd voor de Chrome-extensie) | niet gemeten (idem) | niet gemeten (idem) | 8 (7 dagen, iOS, en 5 / nl 4; 1 terug op dag 1, 19 zaken gestart, 17 opgelost, 0 aankopen) |
 
 ## Beslissingen
 
@@ -49,3 +51,7 @@ eerste publicatie op zijn vroegst 6 oktober.
   Ads). Voorstel: "moord sudoku" in ondertitel of zoekwoorden van de volgende versie, #murdersudoku onder posts.
 - 5 okt: Jaimy wil post 1 vandaag live. Om 19:41 in Metricool naar 5 okt 20:30 gezet en tekst aangevuld met
   app-naam en #moordmysterie #murdermystery #crimsonledger; opslaan moest Jaimy zelf doen.
+- 6 okt: post 1 staat twee keer live: 5 okt 23:03 (verzet, nieuwe tekst) en 6 okt 19:02 (oude planning
+  in Metricool liep ook). Beide 0 views om 23:35, de eerste na ruim 24 uur. Oorzaak van 0 views niet gemeten;
+  mogelijk beoordeling door TikTok of dubbele inhoud. Metricool was voor de Chrome-extensie geblokkeerd, de
+  overige planning (posts 2 t/m 7) is niet nagekeken.
