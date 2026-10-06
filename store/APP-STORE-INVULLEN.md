@@ -59,7 +59,7 @@ onbeperkt internet antwoord je overal "Nee". Uitkomst: **9+**.
 
 ## 4. App Privacy
 
-- [ ] "Verzamelt deze app gegevens?" → **Nee, wij verzamelen geen gegevens van deze app.** Geen analytics, geen accounts, geen advertenties, geen trackers; voortgang blijft op het toestel en betalingen lopen via Apple.
+- [ ] "Verzamelt deze app gegevens?" → sinds 1.1 **ja**: Gebruiksgegevens › Productinteractie, voor analyse, niet gekoppeld aan de gebruiker, niet voor tracking (anonieme tellers in `meting.js`, uit te zetten in Instellingen). Zo staat het sinds oktober 2026 in App Store Connect. Geen accounts, geen advertenties, geen trackers; voortgang blijft op het toestel en betalingen lopen via Apple.
 - [ ] Privacy Policy URL invullen (zie hierboven).
 
 ## 5. In-app aankopen (negen stuks)

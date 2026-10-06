@@ -61,3 +61,6 @@ eerste publicatie op zijn vroegst 6 oktober.
 - 7 okt 00:00: profiel aangepast op verzoek van Jaimy. Weergavenaam "Crimson Ledger · moordraadsels" (wijzigen kan weer
   na 13 okt), bio "Kun jij de dader vinden? 🔍 Elke dag een moordraadsel. App: Crimson Ledger", profielfoto het
   app-icoon (`store/social/tiktok-avatar.png`). Onderzoek naar 0 views en nieuwe regels: TIKTOK-PLAN.md §9.
+- 7 okt: nieuwe winkelteksten gekozen door een sparringronde van agents (zie `store/ASO.md`): NL "Crimson Ledger: Vind de
+  dader", EN "Crimson Ledger: Cozy Whodunnit", nieuwe Britse pagina "Crimson Ledger: Detective Game". Ingediend als 1.1.2
+  (build 10). Meet 7 en 14 dagen na goedkeuring opnieuw. TikTok-hook voortaan: "Kun jij de dader vinden?".

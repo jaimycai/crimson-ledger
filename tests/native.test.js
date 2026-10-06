@@ -17,7 +17,8 @@ const mock = `<script>
       set: async ({ key, value }) => { window.__native[key] = value; },
       remove: async ({ key }) => { delete window.__native[key]; }
     },
-    SplashScreen: { hide: async () => { window.__splashHidden++; } }
+    SplashScreen: { hide: async () => { window.__splashHidden++; } },
+    InAppReview: { requestReview: async () => {} }
   } };
 </script>`;
 html = html.replace('<head>', '<head><script>Object.defineProperty(navigator, "language", { value: "nl-NL", configurable: true });</script>').replace(/<link[^>]+>/g, '').replace('<body>', '<body>' + mock).replace('</body>', '<script>window.App = App; window.Board = Board;</script></body>');
@@ -39,6 +40,18 @@ const check = (c, m) => { if (c) console.log('ok  ', m); else { failures++; cons
   check(!('niet-van-ons' in window.__native), 'alleen crimson-sleutels worden gespiegeld');
   await sleep(1000);
   check(document.getElementById('screen-splash').classList.contains('loaded') && document.getElementById('btn-splash-start').textContent === 'Verder' && window.__splashHidden === 1, 'na het laden: knop "Verder" (er is voortgang) en de native splash is verborgen');
+  // beoordeling vragen: drie hoogtepunten, elk hooguit één keer
+  const moments = () => JSON.parse(window.localStorage.getItem('crimson-review-moments') || '[]');
+  App.maybeAskReview();
+  check(moments().join() === 'solved', 'na twee of meer opgeloste zaken: gevraagd (' + moments().join() + ')');
+  App.maybeAskReview();
+  check(moments().join() === 'solved', 'nog een zaak opgelost: niet opnieuw gevraagd');
+  App.maybeAskReview({ weeklyClean: true });
+  check(moments().join() === 'solved,weekclean', 'zaak van de week zonder hint: gevraagd');
+  App.streak.count = 7; App.maybeAskReview();
+  check(moments().join() === 'solved,weekclean,streak7', 'zeven dagen op rij: gevraagd');
+  App.maybeAskReview({ weeklyClean: true });
+  check(moments().length === 3, 'daarna niet meer');
   App.resetProgress(); await sleep(20);
   check(Object.keys(window.__native).filter(k => k.startsWith('crimson-')).length === 0 && !window.localStorage.getItem('crimson-board-stats'), 'wissen wist localStorage én native opslag');
   check(errors.length === 0, 'geen JS-fouten: ' + errors.join(' | '));

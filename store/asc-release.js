@@ -4,10 +4,13 @@
 //   node store/asc-release.js submit <version>                         submit that version for review
 //   node store/asc-release.js cancel                                   withdraw the submission waiting for review
 //   node store/asc-release.js metadata <version> <metadata.json>      store texts per locale (see below)
+//   node store/asc-release.js primary <locale>                        the language shown to everyone else
+//   node store/asc-release.js subcategory <id>                        second game subcategory, e.g. GAMES_BOARD
 // notes.json holds { "nl-NL": "...", "en-US": "..." }. Builds are uploaded first with xcodebuild (see the memory notes).
 // metadata.json holds per locale any of: name, subtitle (App Information) and description, keywords,
 // promotionalText, whatsNew (the version). A live version only accepts promotionalText; name and subtitle go to the
-// App Information that is still being edited, which exists once a new version has been created.
+// App Information that is still being edited, which exists once a new version has been created. A locale the
+// version does not have yet (for example en-GB) is created; it needs at least name and description.
 const fs = require('fs');
 const { api, wait, APP } = require('./asc-api');
 
@@ -96,19 +99,52 @@ async function metadata(v, file) {
     const ok = await api('PATCH', `/v1/appStoreVersionLocalizations/${l.id}`, { data: { type: 'appStoreVersionLocalizations', id: l.id, attributes } });
     console.log(l.attributes.locale, Object.keys(attributes).join(', '), ok ? 'set' : 'failed');
   }
+  // A locale in the file that the version does not have yet becomes a new store localization (it needs a description).
+  const have = new Set(locs.data.map(l => l.attributes.locale));
+  for (const [locale, t] of Object.entries(texts)) {
+    if (have.has(locale) || !t.description) continue;
+    const attributes = { locale };
+    for (const k of ['description', 'keywords', 'promotionalText', 'whatsNew', 'supportUrl', 'marketingUrl']) if (t[k] !== undefined) attributes[k] = t[k];
+    const ok = await api('POST', '/v1/appStoreVersionLocalizations', { data: { type: 'appStoreVersionLocalizations', attributes, relationships: { appStoreVersion: { data: { type: 'appStoreVersions', id: found.v.id } } } } });
+    console.log(locale, 'new store localization', ok ? 'created' : 'failed');
+  }
   if (!Object.values(texts).some(t => t.name || t.subtitle)) return;
   const infos = await api('GET', `/v1/apps/${APP}/appInfos?include=appInfoLocalizations`);
   const editable = infos.data.find(i => (i.attributes.appStoreState || i.attributes.state) !== 'READY_FOR_SALE');
   if (!editable) return console.log('name/subtitle: no App Information being edited; create the new version first');
   const ids = editable.relationships.appInfoLocalizations.data.map(d => d.id);
-  for (const l of (infos.included || []).filter(i => ids.includes(i.id))) {
+  const infoLocs = (infos.included || []).filter(i => ids.includes(i.id));
+  for (const l of infoLocs) {
     const t = texts[l.attributes.locale]; if (!t) continue;
     const attributes = {}; if (t.name) attributes.name = t.name; if (t.subtitle) attributes.subtitle = t.subtitle;
     if (!Object.keys(attributes).length) continue;
     const ok = await api('PATCH', `/v1/appInfoLocalizations/${l.id}`, { data: { type: 'appInfoLocalizations', id: l.id, attributes } });
     console.log(l.attributes.locale, Object.keys(attributes).join(', '), ok ? 'set' : 'failed');
   }
+  const haveInfo = new Set(infoLocs.map(l => l.attributes.locale));
+  for (const [locale, t] of Object.entries(texts)) {
+    if (haveInfo.has(locale) || !t.name) continue;
+    const attributes = { locale, name: t.name };
+    for (const k of ['subtitle', 'privacyPolicyUrl', 'privacyChoicesUrl']) if (t[k]) attributes[k] = t[k];
+    const ok = await api('POST', '/v1/appInfoLocalizations', { data: { type: 'appInfoLocalizations', attributes, relationships: { appInfo: { data: { type: 'appInfos', id: editable.id } } } } });
+    console.log(locale, 'new name and subtitle', ok ? 'created' : 'failed');
+  }
+}
+
+// Second game subcategory of the App Information being edited, e.g. GAMES_BOARD.
+async function subcategory(id) {
+  const infos = await api('GET', `/v1/apps/${APP}/appInfos`);
+  const editable = infos.data.find(i => (i.attributes.appStoreState || i.attributes.state) !== 'READY_FOR_SALE');
+  if (!editable) return console.log('no App Information being edited; create the new version first');
+  const r = await api('PATCH', `/v1/appInfos/${editable.id}`, { data: { type: 'appInfos', id: editable.id, relationships: { primarySubcategoryTwo: { data: { type: 'appCategories', id } } } } });
+  console.log('second subcategory:', r ? id : 'failed');
+}
+
+// The primary locale is what people see whose device language has no store localization of its own.
+async function primary(locale) {
+  const r = await api('PATCH', `/v1/apps/${APP}`, { data: { type: 'apps', id: APP, attributes: { primaryLocale: locale } } });
+  console.log('primary locale:', r ? r.data.attributes.primaryLocale : 'failed');
 }
 
 const [cmd, a, b, c] = process.argv.slice(2);
-({ status, prepare: () => prepare(a, b, c), submit: () => submit(a), cancel, metadata: () => metadata(a, b) }[cmd] || (() => console.log('usage: status | prepare <version> <build> [notes.json] | submit <version> | cancel | metadata <version> <metadata.json>')))();
+({ status, prepare: () => prepare(a, b, c), submit: () => submit(a), cancel, metadata: () => metadata(a, b), primary: () => primary(a), subcategory: () => subcategory(a) }[cmd] || (() => console.log('usage: status | prepare <version> <build> [notes.json] | submit <version> | cancel | metadata <version> <metadata.json> | primary <locale> | subcategory <id>')))();

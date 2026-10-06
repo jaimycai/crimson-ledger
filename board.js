@@ -804,7 +804,7 @@ const Board = {
     this.showResults();
     App.updateBoardStats();
     App.navigateTo('results');
-    App.maybeAskReview();
+    App.maybeAskReview({ weeklyClean: this.isWeekly && this.hintsUsed === 0 });
   },
   // medailles pas tonen als de ceremonie klaar is (of overgeslagen)
   flushMedals() {

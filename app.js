@@ -85,14 +85,22 @@ const App = {
   },
   // Eén keer vragen om een beoordeling (eigen ReviewPlugin in ios/App/App, SKStoreReviewController),
   // pas na vijf opgeloste zaken en niet meteen: de speler is dan net klaar met de ceremonie.
-  maybeAskReview() {
+  // Vraagt om een beoordeling op drie hoogtepunten, elk hooguit één keer: de tweede opgeloste zaak, zeven dagen op
+  // rij, en een zaak van de week zonder hint. Apple bepaalt zelf of het venster verschijnt (hooguit drie keer per jaar).
+  maybeAskReview(ctx = {}) {
     try {
       const C = window.Capacitor;
       const P = C && ((C.Plugins && C.Plugins.InAppReview) || (typeof C.registerPlugin === 'function' && C.registerPlugin('InAppReview')));
-      if (!P || !C.isNativePlatform || !C.isNativePlatform() || this.storageGet('crimson-review-asked')) return;
-      if ((Board.loadStats().solved || 0) < 3) return;
-      this.storageSet('crimson-review-asked', '1');
-      if (typeof Meting !== 'undefined') Meting.send('review_asked');
+      if (!P || !C.isNativePlatform || !C.isNativePlatform()) return;
+      let asked = [];
+      try { asked = JSON.parse(this.storageGet('crimson-review-moments') || '[]'); } catch (e) { asked = []; }
+      if (this.storageGet('crimson-review-asked') && !asked.includes('solved')) asked.push('solved');   // 1.1 vroeg al na zaak 3
+      const moment = !asked.includes('solved') && (Board.loadStats().solved || 0) >= 2 ? 'solved'
+        : !asked.includes('weekclean') && ctx.weeklyClean ? 'weekclean'
+        : !asked.includes('streak7') && this.streak && this.streak.count >= 7 ? 'streak7' : null;
+      if (!moment) return;
+      this.storageSet('crimson-review-moments', JSON.stringify([...asked, moment]));
+      if (typeof Meting !== 'undefined') Meting.send('review_asked', moment);
       setTimeout(() => { P.requestReview().catch(() => {}); }, 3500);
     } catch (e) { /* niet beschikbaar */ }
   },
