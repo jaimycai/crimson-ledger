@@ -10,7 +10,7 @@ Object.defineProperty(global, 'navigator', { get: () => ({ userAgent: ua.value, 
 const { Meting } = require('../meting.js');
 
 Meting.send('open', '', 0);
-check(sent.length === 1 && sent[0].e === 'open' && sent[0].v === '1.1.1', 'op een toestel gaat de teller weg, met versie 1.1.1');
+check(sent.length === 1 && sent[0].e === 'open' && sent[0].v === '1.1.2', 'op een toestel gaat de teller weg, met versie 1.1.2');
 
 ua.value += ' CrimsonSimulator';
 Meting.send('open', '', 0);

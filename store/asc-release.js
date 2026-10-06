@@ -3,7 +3,11 @@
 //   node store/asc-release.js prepare <version> <build> [notes.json]   create the version, set "What's New", attach the build
 //   node store/asc-release.js submit <version>                         submit that version for review
 //   node store/asc-release.js cancel                                   withdraw the submission waiting for review
+//   node store/asc-release.js metadata <version> <metadata.json>      store texts per locale (see below)
 // notes.json holds { "nl-NL": "...", "en-US": "..." }. Builds are uploaded first with xcodebuild (see the memory notes).
+// metadata.json holds per locale any of: name, subtitle (App Information) and description, keywords,
+// promotionalText, whatsNew (the version). A live version only accepts promotionalText; name and subtitle go to the
+// App Information that is still being edited, which exists once a new version has been created.
 const fs = require('fs');
 const { api, wait, APP } = require('./asc-api');
 
@@ -78,5 +82,33 @@ async function cancel() {
   console.log('cancel:', x.id.slice(0, 8), r ? r.data.attributes.state : 'failed');
 }
 
+async function metadata(v, file) {
+  const texts = JSON.parse(fs.readFileSync(file, 'utf8'));
+  const found = await version(v);
+  if (!found) return console.log('no version', v);
+  console.log('version', v, found.v.attributes.appStoreState);
+  const locs = await api('GET', `/v1/appStoreVersions/${found.v.id}/appStoreVersionLocalizations`);
+  for (const l of locs.data) {
+    const t = texts[l.attributes.locale]; if (!t) continue;
+    const attributes = {};
+    for (const k of ['description', 'keywords', 'promotionalText', 'whatsNew']) if (t[k] !== undefined) attributes[k] = t[k];
+    if (!Object.keys(attributes).length) continue;
+    const ok = await api('PATCH', `/v1/appStoreVersionLocalizations/${l.id}`, { data: { type: 'appStoreVersionLocalizations', id: l.id, attributes } });
+    console.log(l.attributes.locale, Object.keys(attributes).join(', '), ok ? 'set' : 'failed');
+  }
+  if (!Object.values(texts).some(t => t.name || t.subtitle)) return;
+  const infos = await api('GET', `/v1/apps/${APP}/appInfos?include=appInfoLocalizations`);
+  const editable = infos.data.find(i => (i.attributes.appStoreState || i.attributes.state) !== 'READY_FOR_SALE');
+  if (!editable) return console.log('name/subtitle: no App Information being edited; create the new version first');
+  const ids = editable.relationships.appInfoLocalizations.data.map(d => d.id);
+  for (const l of (infos.included || []).filter(i => ids.includes(i.id))) {
+    const t = texts[l.attributes.locale]; if (!t) continue;
+    const attributes = {}; if (t.name) attributes.name = t.name; if (t.subtitle) attributes.subtitle = t.subtitle;
+    if (!Object.keys(attributes).length) continue;
+    const ok = await api('PATCH', `/v1/appInfoLocalizations/${l.id}`, { data: { type: 'appInfoLocalizations', id: l.id, attributes } });
+    console.log(l.attributes.locale, Object.keys(attributes).join(', '), ok ? 'set' : 'failed');
+  }
+}
+
 const [cmd, a, b, c] = process.argv.slice(2);
-({ status, prepare: () => prepare(a, b, c), submit: () => submit(a), cancel }[cmd] || (() => console.log('usage: status | prepare <version> <build> [notes.json] | submit <version> | cancel')))();
+({ status, prepare: () => prepare(a, b, c), submit: () => submit(a), cancel, metadata: () => metadata(a, b) }[cmd] || (() => console.log('usage: status | prepare <version> <build> [notes.json] | submit <version> | cancel | metadata <version> <metadata.json>')))();

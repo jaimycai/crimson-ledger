@@ -6,7 +6,7 @@
 // ============================================================
 const Meting = {
   URL: 'https://crimson-meting.spaarplan-data.workers.dev/e',
-  VERSION: '1.1.1',
+  VERSION: '1.1.2',
   get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
   set(k, v) { if (typeof App !== 'undefined') App.storageSet(k, v); else { try { localStorage.setItem(k, v); } catch (e) { /* privémodus */ } } },
   on() { return this.get('crimson-meting') !== '0'; },
