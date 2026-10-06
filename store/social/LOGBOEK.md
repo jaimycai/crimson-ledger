@@ -12,7 +12,7 @@ eerste publicatie op zijn vroegst 6 oktober.
 | # | Map | Formaat | Concept klaar | Live | Views 48u | Likes | Reacties | Bewaard | Gedeeld | Antwoord gepind |
 |---|---|---|---|---|---|---|---|---|---|---|
 | 1 | dag1-carrousel | A carrousel | ingepland Metricool, di 6 okt 19:00 | 5 okt 23:03 (tekst met app-naam) | nog geen 48u; 0 na 24u | 0 | 0 | niet gemeten (Studio toont het niet) | niet gemeten (idem) | Dr. Cross |
-| 1b | dag1-carrousel (dubbel) | A carrousel | oude Metricool-planning | 6 okt 19:02 (oude tekst, zonder app-naam) | nog geen 48u; 0 na 4,5u | 0 | 0 | niet gemeten | niet gemeten | Dr. Cross |
+| 1b | dag1-carrousel (dubbel) | A carrousel | oude Metricool-planning | 6 okt 19:02 (oude tekst); 6 okt 23:50 op Alleen ik gezet | nog geen 48u; 0 na 4,5u | 0 | 0 | niet gemeten | niet gemeten | Dr. Cross |
 | 2 | dag2-meelossen | B meelossen | ingepland Metricool, wo 7 okt 19:00 | | | | | | | n.v.t. |
 | 3 | dag3-uitleg | C uitleg | ingepland Metricool, do 8 okt 19:00 | | | | | | | n.v.t. |
 | 4 | dag4-carrousel | A carrousel | ingepland Metricool, vr 9 okt 19:00 | | | | | | | Marcus |
@@ -55,3 +55,6 @@ eerste publicatie op zijn vroegst 6 oktober.
   in Metricool liep ook). Beide 0 views om 23:35, de eerste na ruim 24 uur. Oorzaak van 0 views niet gemeten;
   mogelijk beoordeling door TikTok of dubbele inhoud. Metricool was voor de Chrome-extensie geblokkeerd, de
   overige planning (posts 2 t/m 7) is niet nagekeken.
+- 6 okt 23:50: dubbele post van 6 okt 19:02 op "Alleen ik" gezet (omkeerbaar, niet verwijderd). Openbaar profiel
+  @crimsonledger.app toont geen profielfoto (standaard-J), geen bio, weergavenaam "crimsonledger.app", en het raster
+  toont op het web geen post. Metricool vraagt in de ingebouwde browser om inloggen; niet gedaan.
