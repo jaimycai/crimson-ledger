@@ -11,9 +11,9 @@ eerste publicatie op zijn vroegst 6 oktober.
 
 | # | Map | Formaat | Concept klaar | Live | Views 48u | Likes | Reacties | Bewaard | Gedeeld | Antwoord gepind |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 1 | dag1-carrousel | A carrousel | ingepland Metricool, di 6 okt 19:00 | 5 okt 23:03 (tekst met app-naam) | nog geen 48u; 0 na 24u | 0 | 0 | niet gemeten (Studio toont het niet) | niet gemeten (idem) | Dr. Cross |
+| 1 | dag1-carrousel | A carrousel | ingepland Metricool, di 6 okt 19:00 | 5 okt 23:03 (tekst met app-naam) | 0 na 44u (7 okt 19:00) | 0 | 0 | niet gemeten (Studio toont het niet) | niet gemeten (idem) | Dr. Cross |
 | 1b | dag1-carrousel (dubbel) | A carrousel | oude Metricool-planning | 6 okt 19:02 (oude tekst); 6 okt 23:50 op Alleen ik gezet | nog geen 48u; 0 na 4,5u | 0 | 0 | niet gemeten | niet gemeten | Dr. Cross |
-| 2 | dag2-meelossen | B meelossen | ingepland Metricool, wo 7 okt 19:00 | | | | | | | n.v.t. |
+| 2 | dag2-meelossen | B meelossen | ingepland Metricool, wo 7 okt 19:00 | 7 okt 19:02 | nog geen 48u; 0 na 5 min | 0 | 0 | niet gemeten (Studio toont het niet) | niet gemeten (idem) | n.v.t. |
 | 3 | dag3-uitleg | C uitleg | ingepland Metricool, do 8 okt 19:00 | | | | | | | n.v.t. |
 | 4 | dag4-carrousel | A carrousel | ingepland Metricool, vr 9 okt 19:00 | | | | | | | Marcus |
 | 5 | dag5-meelossen | B meelossen | ingepland Metricool, za 10 okt 19:00 | | | | | | | n.v.t. |
@@ -28,6 +28,7 @@ eerste publicatie op zijn vroegst 6 oktober.
 | 4 okt | 0 (TikTok Studio, geen posts) | 55 (30 dagen t/m 1 okt, handmatig gelezen) | 8 (idem) | 3 (idem) | 4 (7 dagen, iOS, en; 0 terug op dag 1, 0 zaken opgelost) |
 | 5 okt | 0 (TikTok Studio, geen posts; de 7 ingeplande posts staan niet in TikTok Studio maar in Metricool) | 55 (App Store Connect, data t/m 1 okt; 2 en 3 okt vertraagd bij Apple) | 8 (idem) | 3 (idem) | 7 (7 dagen, iOS, en 5 / nl 2; 0 terug op dag 1, 8 zaken gestart, 7 opgelost; telt mogelijk nog simulatortests mee) |
 | 6 okt | 0 (TikTok Studio 23:35; 2 posts live, beide 0 views) | niet gemeten (App Store Connect geblokkeerd voor de Chrome-extensie) | niet gemeten (idem) | niet gemeten (idem) | 8 (7 dagen, iOS, en 5 / nl 4; 1 terug op dag 1, 19 zaken gestart, 17 opgelost, 0 aankopen) |
+| 7 okt | 0 (TikTok Studio 19:05, geen volgers getoond; 3 posts, 2 openbaar, alle 0 views; analytics 7 dagen: 0 videoviews, 0 profielweergaven) | niet gemeten (goedkeuring voor App Store Connect in Chrome niet beantwoord, run zonder toezicht) | niet gemeten (idem) | niet gemeten (idem) | 9 (7 dagen, iOS, en 7 / nl 4 opens; 1 terug op dag 1, 21 zaken gestart, 18 opgelost, 0 aankopen, 5 keer gedeeld) |
 
 ## Beslissingen
 
@@ -64,3 +65,5 @@ eerste publicatie op zijn vroegst 6 oktober.
 - 7 okt: nieuwe winkelteksten gekozen door een sparringronde van agents (zie `store/ASO.md`): NL "Crimson Ledger: Vind de
   dader", EN "Crimson Ledger: Cozy Whodunnit", nieuwe Britse pagina "Crimson Ledger: Detective Game". Ingediend als 1.1.2
   (build 10). Meet 7 en 14 dagen na goedkeuring opnieuw. TikTok-hook voortaan: "Kun jij de dader vinden?".
+- 7 okt 19:05: post 1 heeft na 44 uur nog 0 views; post 2 (eerste video) live om 19:02. Volgens regel 3 van §9 valt
+  het besluit over week 2 op 10 okt. Niets verwijderd of opnieuw geüpload.
