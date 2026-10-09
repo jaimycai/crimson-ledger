@@ -14,8 +14,8 @@ eerste publicatie op zijn vroegst 6 oktober.
 | 1 | dag1-carrousel | A carrousel | ingepland Metricool, di 6 okt 19:00 | 5 okt 23:03 (tekst met app-naam) | 0 na 44u (7 okt 19:00); 1 op 9 okt 23:30 | 0 | 0 | niet gemeten (Studio toont het niet) | niet gemeten (idem) | Dr. Cross |
 | 1b | dag1-carrousel (dubbel) | A carrousel | oude Metricool-planning | 6 okt 19:02 (oude tekst); 6 okt 23:50 op Alleen ik gezet; Studio toont op 9 okt weer "Iedereen" | 1 na 76u (9 okt 23:30) | 0 | 0 | niet gemeten | niet gemeten | Dr. Cross |
 | 2 | dag2-meelossen | B meelossen | ingepland Metricool, wo 7 okt 19:00 | 7 okt 19:02 | 1 na 52u (9 okt 23:30) | 0 | 0 | niet gemeten (Studio toont het niet) | niet gemeten (idem) | n.v.t. |
-| 3 | dag3-uitleg | C uitleg | ingepland Metricool, do 8 okt 19:00 | 8 okt 19:02 | nog geen 48u; 0 na 28u | 0 | 0 | niet gemeten | niet gemeten | n.v.t. |
-| 4 | dag4-carrousel | A carrousel | ingepland Metricool, vr 9 okt 19:00 | 9 okt 19:05 | nog geen 48u; 234 na 4,5u | 0 | 0 | niet gemeten | niet gemeten | Marcus (nog niet, pas na 24u) |
+| 3 | dag3-uitleg | C uitleg | ingepland Metricool, do 8 okt 19:00 | 8 okt 19:02 | nog geen 48u; 0 na 29u (9 okt 23:56) | 0 | 0 | niet gemeten | niet gemeten | n.v.t. |
+| 4 | dag4-carrousel | A carrousel | ingepland Metricool, vr 9 okt 19:00 | 9 okt 19:05 | nog geen 48u; 234 na 4,5u, nog steeds 234 na 5u (9 okt 23:56) | 0 | 0 | niet gemeten | niet gemeten | Marcus (nog niet, pas na 24u) |
 | 5 | dag5-meelossen | B meelossen | ingepland Metricool, za 10 okt 19:00 | | | | | | | n.v.t. |
 | 6 | dag6-carrousel | A carrousel | ingepland Metricool, zo 11 okt 19:00 | | | | | | | Marcus |
 | 7 | dag7-carrousel | A carrousel | ingepland Metricool, ma 12 okt 19:00 | | | | | | | Rosalind |
@@ -80,3 +80,5 @@ eerste publicatie op zijn vroegst 6 oktober.
 - 9 okt: Metricool telt 5 van 20 gepubliceerde posts in oktober. Met de rest van week 1 wordt dat 8. Week 2 met 7 posts
   maakt 15; week 3 (20 t/m 26 okt) past dan niet meer helemaal (22). Drie posts per dag past helemaal niet in het gratis
   abonnement.
+- 9 okt 23:56: tweede meting. TikTok Studio ongewijzigd ten opzichte van 23:30 (post 4: 234 views, 0 likes, 0 reacties; overige
+  posts 0 of 1). De groei van post 4 staat stil sinds de eerste meting. Spelers (`meting.js 7`) ongewijzigd: 11 nieuw.
