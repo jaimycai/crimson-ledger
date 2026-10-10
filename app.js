@@ -256,7 +256,7 @@ const App = {
     // wereldkiezer: springt naar de banner van die wereld
     document.getElementById('world-tabs').innerHTML = Themes.list().map(t => {
       const sec = L.sections.find(s => s.theme === t.id);
-      return `<button type="button" class="world-tab" data-theme="${t.id}">${t.icon} ${t.short}${sec.buy ? '<small>🔒 Pass</small>' : sec.need > 0 ? `<small>${AP_T`nog ${sec.need} ${sec.need === 1 ? AP_T('zaak') : AP_T('zaken')}`}</small>` : ''}</button>`;
+      return `<button type="button" class="world-tab" data-theme="${t.id}">${t.icon} ${t.short}${sec.buy ? '<small>🔒 Pass</small>' : sec.need > 0 ? `<small>${AP_T`nog ${sec.need} {0|one:zaak|other:zaken}`}</small>` : ''}</button>`;
     }).join('');
     document.querySelectorAll('.world-tab').forEach(b => b.addEventListener('click', () => this.scrollToWorld(b.dataset.theme)));
     // secties: banner, pad, decoraties, wegwijzers, knopen
@@ -271,7 +271,7 @@ const App = {
       if (th) {
         const sub = sec.open ? AP_T`${sec.done} van ${sec.total} zaken · ★ ${sec.stars}/${sec.total * 3}`
                              : sec.buy ? AP_T`🔒 Deze wereld hoort bij de Crimson Pass, of koop hem los voor ${Store.price(Store.worldId(th.id))}. De dagelijkse zaak en de zaak van de week spelen hier gratis.`
-                             : AP_T`🔒 Los nog ${sec.need} ${sec.need === 1 ? AP_T('zaak') : AP_T('zaken')} op (vrij spel of dagelijks) om deze wereld te openen`;
+                             : AP_T`🔒 Los nog ${sec.need} {0|one:zaak|other:zaken} op (vrij spel of dagelijks) om deze wereld te openen`;
         const buyBtn = sec.buy ? `<button type="button" class="btn btn-gold btn-sm map-buy" data-theme="${th.id}">${AP_T`🛒 Ontgrendel ${th.title}`}</button>` : '';
         html += `<div class="map-banner">${MapArt.banner(th.id)}<div class="map-banner-card"><b>${th.icon} ${th.title}</b><span>${sub}</span>${buyBtn}</div></div>`;
       }
@@ -642,7 +642,7 @@ const App = {
     const pill = document.getElementById('freeze-pill');
     if (pill) {
       pill.hidden = freezes === 0;
-      pill.textContent = `🧊 ${freezes} ${freezes === 1 ? AP_T('vrije dag') : AP_T('vrije dagen')}`;
+      pill.textContent = AP_T`🧊 ${freezes} {0|one:vrije dag|other:vrije dagen}`;
       pill.title = AP_T('Mis je een dag, dan vult een vrije dag het gat en blijft je streak staan.');
     }
     this.renderQuests();
@@ -836,14 +836,14 @@ const App = {
         <span class="theme-swatches">${t.rooms.slice(0, 4).map(r => `<i style="background:${r.color}"></i>`).join('')}</span>
         <span class="theme-icon">${locked ? '🔒' : t.icon}</span>
         <span class="theme-title">${t.title}</span>
-        ${locked ? (this.isPaidLocked(t) ? '<span class="theme-lock buy">Crimson Pass</span>' : `<span class="theme-lock">${AP_T`nog ${need} ${need === 1 ? AP_T('zaak') : AP_T('zaken')}`}</span>`) : ''}
+        ${locked ? (this.isPaidLocked(t) ? '<span class="theme-lock buy">Crimson Pass</span>' : `<span class="theme-lock">${AP_T`nog ${need} {0|one:zaak|other:zaken}`}</span>`) : ''}
       </button>`; }).join('');
     wrap.querySelectorAll('.theme-card').forEach(b => b.addEventListener('click', () => {
       const t = Themes.get(b.dataset.theme);
       if (this.isPaidLocked(t)) return this.openStore('world:' + t.id);
       if (!this.themeUnlocked(t)) {
         const need = (t.unlock || 0) - (Board.loadStats().solved || 0);
-        return this.showToast('🔒', AP_T`Los nog ${need} ${need === 1 ? AP_T('zaak') : AP_T('zaken')} op om ${t.title} te openen. De dagelijkse zaak telt mee.`);
+        return this.showToast('🔒', AP_T`Los nog ${need} {0|one:zaak|other:zaken} op om ${t.title} te openen. De dagelijkse zaak telt mee.`);
       }
       this.selectedTheme = t.id;
       this.storageSet('crimson-theme', this.selectedTheme);
@@ -925,14 +925,14 @@ const App = {
       const solved = st.solved || 0, r = this.rankFor(solved);
       const left = r.next ? r.next.at - solved : 0;
       rankEl.innerHTML = `<span class="rank-title">🎖 ${r.title}</span>` + (r.next
-        ? `<span class="rank-bar"><i style="width:${Math.round(r.progress * 100)}%"></i></span><span class="rank-next">${AP_T`nog ${left} ${left === 1 ? AP_T('zaak') : AP_T('zaken')} tot ${r.next.title}`}</span>`
+        ? `<span class="rank-bar"><i style="width:${Math.round(r.progress * 100)}%"></i></span><span class="rank-next">${AP_T`nog ${left} {0|one:zaak|other:zaken} tot ${r.next.title}`}</span>`
         : `<span class="rank-next">${AP_T('hoogste rang bereikt')}</span>`);
     }
     const done = this.storageGet('crimson-board-daily-done') === new Date().toDateString();
     if (dateEl) dateEl.textContent = done ? AP_T('Vandaag opgelost ✓') : AP_T`Vandaag: ${Themes.forDay(this.getDayNumber()).title}`;
     if (!st.solved) { el.textContent = AP_T('Nog geen zaak opgelost. Vandaag de eerste?'); return; }
     const best = Object.entries(st.best || {}).map(([d, sec]) => `${(DIFFICULTY[d] || {}).label || d} ${Board.formatTime(sec)}`).join(' · ');
-    el.textContent = AP_T`${st.solved} ${st.solved === 1 ? AP_T('zaak') : AP_T('zaken')} opgelost` + (st.clean ? AP_T` · ${st.clean} zonder hint` : '') + (best ? AP_T` · beste: ${best}` : '');
+    el.textContent = AP_T`${st.solved} {0|one:zaak|other:zaken} opgelost` + (st.clean ? AP_T` · ${st.clean} zonder hint` : '') + (best ? AP_T` · beste: ${best}` : '');
   },
 
   // ══════════════════════════════════════════════════════════

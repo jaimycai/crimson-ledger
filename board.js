@@ -269,7 +269,7 @@ const Board = {
       const ci = p.clues.findIndex(c => t.kinds.includes(c.kind));
       const st = ci >= 0 ? FloorPlan.statement(p.clues[ci], p) : null;
       if (st && st.text) {
-        const who = st.who.length ? p.suspects[st.who[0]].label : Mentor.name;
+        const who = st.who.length ? Grammar.who(p.suspects[st.who[0]]) : Mentor.name;
         example = `<p class="newclue-ex">${BD_T`In deze zaak zegt <b>${who}</b>: “${st.text}”`}</p>`;
       }
     }
@@ -595,7 +595,7 @@ const Board = {
     const p = this.puzzle, $ = id => document.getElementById(id);
     $('hint-text').textContent = h.text;
     const left = typeof Store !== 'undefined' ? Store.hintsLeft() : Infinity;
-    $('hint-sub').textContent = BD_T`Hint ${this.hintsUsed} · deze zaak levert nu maximaal ★★ op` + (left === Infinity ? '' : BD_T` · nog ${left} ${left === 1 ? BD_T('hint') : BD_T('hints')}`);
+    $('hint-sub').textContent = BD_T`Hint ${this.hintsUsed} · deze zaak levert nu maximaal ★★ op` + (left === Infinity ? '' : BD_T` · nog ${left} {0|one:hint|other:hints}`);
     // 1. kijk naar: de verklaring(en) waar het om gaat, of de spelregel
     const clues = (h.clues || []).slice(0, 1);   // één kaart: zo blijft "Doe dit" in beeld
     $('hint-clues').innerHTML = clues.length
@@ -872,7 +872,7 @@ const Board = {
     const left = after.next ? after.next.at - (ri.solvedAfter || 0) : 0;
     $('results-rank').innerHTML =
       (this.newRank ? `<span class="rank-new">🎖 Nieuwe rang: ${this.newRank}</span>` : `<span class="rank-title">🎖 ${after.title}</span>`) +
-      `<span class="rank-next">${after.next ? BD_T`Volgende: ${after.next.title} · nog ${left} ${left === 1 ? BD_T('zaak') : BD_T('zaken')}` : BD_T('Hoogste rang bereikt')}</span>` +
+      `<span class="rank-next">${after.next ? BD_T`Volgende: ${after.next.title} · nog ${left} {1|one:zaak|other:zaken}` : BD_T('Hoogste rang bereikt')}</span>` +
       `<span class="rank-bar"><i style="width:${Math.round((this.newRank ? 0 : before.progress) * 100)}%" data-to="${Math.round(after.progress * 100)}"></i></span>`;
     const remark = Mentor.remark({ hintsUsed: this.hintsUsed, attempts: this.attempts, elapsed: this.elapsed, newRank: this.newRank,
                                    rank: before.title, isWeekly: this.isWeekly, stars: st });

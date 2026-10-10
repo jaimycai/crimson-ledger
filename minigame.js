@@ -156,7 +156,7 @@ const MiniGame = {
     clearTimeout(this.lookTimer);
     this.lookTimer = setTimeout(() => {
       this.renderGrid(false);
-      document.getElementById('mini-q').innerHTML = MG_T`Waar stond <b>${s.label}</b>?`;
+      document.getElementById('mini-q').innerHTML = MG_T`Waar stond <b>${Grammar.who(s)}</b>?`;
       opts.innerHTML = `<div class="mini-ask">${this.ava(this.cur.s)}<span>${s.label}</span></div>` +
         `<div class="mini-rooms">${this.cur.options.map((o, i) => `<button type="button" class="mini-room" data-i="${i}">${o.name}</button>`).join('')}</div>`;
       opts.querySelectorAll('.mini-room').forEach(b => b.addEventListener('click', () => this.answer(+b.dataset.i)));
@@ -185,7 +185,7 @@ const MiniGame = {
       const cell = document.querySelector(`#mini-grid .bcell[data-x="${c.x}"][data-y="${c.y}"]`);
       if (cell) cell.classList.add('lit');
     }
-    document.getElementById('mini-q').textContent = right ? MG_T`Goed gezien! +${this.POINTS_ROUND} punten` : (this.kind === 'liar' ? MG_T`Nee: ${this.puzzle.suspects[this.cur.cards[this.cur.answer].clue.s].label} loog.` : MG_T`Nee, daar stond ${this.puzzle.suspects[this.cur.s].label}.`);
+    document.getElementById('mini-q').textContent = right ? MG_T`Goed gezien! +${this.POINTS_ROUND} punten` : (this.kind === 'liar' ? MG_T`Nee: ${Grammar.who(this.puzzle.suspects[this.cur.cards[this.cur.answer].clue.s])} loog.` : MG_T`Nee, daar stond ${Grammar.who(this.puzzle.suspects[this.cur.s])}.`);
     Sound.play(right ? 'clue' : 'error');
     if (typeof Board !== 'undefined' && Board.buzz) Board.buzz(right ? 12 : 30);
     this.renderDots();

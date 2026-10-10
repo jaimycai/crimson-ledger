@@ -9,6 +9,8 @@
 // ============================================================
 
 (globalThis.LANG_PACKS = globalThis.LANG_PACKS || {}).en = {
+  meta: { name: 'English', dir: 'ltr', locale: 'en-GB' },
+
   ui: {
     // titel en startscherm
     'Crimson Ledger — Speur. Redeneer. Ontmasker.': 'Crimson Ledger — Search. Reason. Unmask.',
@@ -78,9 +80,8 @@
     '📁 Het archief · eindeloos': '📁 The archive · endless',
     '{0} van {1} zaken · ★ {2}/{3}': '{0} of {1} cases · ★ {2}/{3}',
     '🔒 Deze wereld hoort bij de Crimson Pass, of koop hem los voor {0}. De dagelijkse zaak en de zaak van de week spelen hier gratis.': '🔒 This world is part of the Crimson Pass, or buy it separately for {0}. The daily case and the case of the week are free here.',
-    '🔒 Los nog {0} {1} op (vrij spel of dagelijks) om deze wereld te openen': '🔒 Solve {0} more {1} (free play or daily) to open this world',
-    'zaak': 'case', 'zaken': 'cases', 'dag': 'day', 'dagen': 'days', 'hint': 'hint', 'hints': 'hints',
-    'nog {0} {1}': '{0} more {1}', '🔒 Pass': '🔒 Pass', '🛒 Ontgrendel {0}': '🛒 Unlock {0}',
+    'dag': 'day', 'dagen': 'days', 
+    '🔒 Pass': '🔒 Pass', '🛒 Ontgrendel {0}': '🛒 Unlock {0}',
     'Wie liegt?': 'Who is lying?', 'Vluchtige blik': 'Quick glance', 'geopend': 'opened', 'Open mij!': 'Open me!', 'bewijskist': 'evidence chest', 'Minigame {0}': 'Mini-game {0}', 'Bewijskist': 'Evidence chest',
     'Los eerst zaak {0} op, dan gaat deze minigame open.': 'Solve case {0} first, then this mini-game opens.',
     'Maak eerst alle acht zaken van dit deel af, dan gaat de bewijskist open.': 'Finish all eight cases of this part first, then the evidence chest opens.',
@@ -122,7 +123,7 @@
     '✓ Opgelost': '✓ Solved', 'Nog eens': 'Again',
     'Vandaag gespeeld. Tot morgen!': 'Played today. See you tomorrow!', 'Nog niet gespeeld. Een vrije dag vangt het op, maar liever niet.': 'Not played yet. A streak freeze would catch it, but better not.',
     'Je streak van {0} dagen loopt vanavond af. Speel één zaak.': 'Your {0}-day streak ends tonight. Play one case.', 'Speel vandaag om je streak van {0} dagen te houden': 'Play today to keep your {0}-day streak',
-    '🧊 {0} vrije {1}': '🧊 {0} streak {1}', 'vrije dag': 'freeze', 'freezes': 'freezes', 'Mis je een dag, dan vult een vrije dag het gat en blijft je streak staan.': 'Miss a day and a streak freeze fills the gap so your streak survives.',
+    'Mis je een dag, dan vult een vrije dag het gat en blijft je streak staan.': 'Miss a day and a streak freeze fills the gap so your streak survives.',
     '🎁 Alles klaar! Tot morgen.': '🎁 All done! See you tomorrow.', '🎁 Alle drie: +{0} punten en een vrije dag': '🎁 All three: +{0} points and a streak freeze', '+{0}': '+{0}',
     '🪙 {0} punten': '🪙 {0} points', ' · 🪙 {0} punten': ' · 🪙 {0} points', 'Medailleoverzicht': 'Medal overview', '{0} van de {1} behaald': '{0} of {1} earned', 'Behaald op {0}': 'Earned on {0}', 'Bewijsstukken': 'Evidence', '{0} van de {1} verzameld': '{0} of {1} collected', 'Gesloten': 'Locked', 'Stempels': 'Stamps',
     'Nieuwe trofee: “{0}” ontgrendeld.': 'New trophy: “{0}” unlocked.',
@@ -130,11 +131,10 @@
     'Je dagelijkse zaak wacht. Houd je streak van {0} dagen vast.': 'Your daily case is waiting. Keep your {0}-day streak going.', 'Je streak van {0} dagen loopt vanavond af. Eén zaak is genoeg.': 'Your {0}-day streak ends tonight. One case is enough.',
     'Er ligt een nieuwe zaak op je bureau. Wie was alleen met het slachtoffer?': 'A new case is on your desk. Who was alone with the victim?',
     'Zeker? Tik nogmaals': 'Sure? Tap again', 'Ingesteld: elke dag om 18:30 een herinnering.': 'Set: a reminder every day at 18:30.', 'Alle voortgang is gewist.': 'All progress has been erased.',
-    'Los nog {0} {1} op om {2} te openen. De dagelijkse zaak telt mee.': 'Solve {0} more {1} to open {2}. The daily case counts.',
     '{0} verdachten · {1} bij {2} vakjes': '{0} suspects · {1} by {2} squares',
-    'nog {0} {1} tot {2}': '{0} more {1} until {2}', 'hoogste rang bereikt': 'highest rank reached', 'Hoogste rang bereikt': 'Highest rank reached',
+    'hoogste rang bereikt': 'highest rank reached', 'Hoogste rang bereikt': 'Highest rank reached',
     'Vandaag opgelost ✓': 'Solved today ✓', 'Vandaag: {0}': 'Today: {0}', 'Nog geen zaak opgelost. Vandaag de eerste?': 'No case solved yet. The first one today?',
-    '{0} {1} opgelost': '{0} {1} solved', ' · {0} zonder hint': ' · {0} without a hint', ' · beste: {0}': ' · best: {0}',
+    ' · {0} zonder hint': ' · {0} without a hint', ' · beste: {0}': ' · best: {0}',
     'Resultaat gekopieerd naar klembord!': 'Result copied to clipboard!', 'Delen wordt niet ondersteund in deze browser.': 'Sharing is not supported in this browser.',
     'Vrije dag gebruikt: je streak van {0} dagen is gered.': 'Streak freeze used: your {0}-day streak is saved.', '{0} dagen op rij! Je hebt een vrije dag verdiend voor als je een dag mist.': '{0} days in a row! You earned a streak freeze for when you miss a day.',
     'Opdracht klaar: {0} (+{1} punten)': 'Quest done: {0} (+{1} points)', 'Alle opdrachten klaar: +{0} punten en een vrije dag': 'All quests done: +{0} points and a streak freeze',
@@ -143,13 +143,13 @@
     '🗓️ Week {0}': '🗓️ Week {0}', '📁 {0}': '📁 {0}', '📖 {0}. {1}': '📖 {0}. {1}', 'Stap {0} van {1}': 'Step {0} of {1}',
     'In deze zaak zegt {0}: “{1}”': 'In this case {0} says: “{1}”',
     '✓ Klopt': '✓ Holds', '✗ Klopt niet': '✗ Does not hold',
-    'Hint {0} · deze zaak levert nu maximaal ★★ op': 'Hint {0} · this case now earns at most ★★', ' · nog {0} {1}': ' · {0} {1} left',
+    'Hint {0} · deze zaak levert nu maximaal ★★ op': 'Hint {0} · this case now earns at most ★★', 
     'Potlood: zet een stipje op vakjes waar iemand zou kúnnen staan. Met Plaats zet je iemand echt neer, met Gum haal je het weer weg.': 'Pencil: put a dot on squares where someone could stand. With Place you really put someone down, with Eraser you remove it again.',
     'Bijna! Nog één verdachte staat verkeerd. {0} van de {1} staan al goed.': 'Almost! One suspect is still wrong. {0} of the {1} are already right.',
     '{0} verdachten staan verkeerd, {1} staan goed. Gebruik een hint als je vastzit.': '{0} suspects are wrong, {1} are right. Use a hint if you are stuck.',
     'Goed gedaan!': 'Well done!', 
     'Zo werkt elke zaak: plaats iedereen met de verklaringen, en wijs dan aan wie alleen was met het slachtoffer. Tijd voor een echte zaak.': 'This is how every case works: place everyone using the statements, then name who was alone with the victim. Time for a real case.',
-    '{0} punten': '{0} points', 'Volgende: {0} · nog {1} {2}': 'Next: {0} · {1} more {2}', 'Van Dam merkt op': 'Van Dam remarks', 'Waar iedereen stond': 'Where everyone stood',
+    '{0} punten': '{0} points', 'Van Dam merkt op': 'Van Dam remarks', 'Waar iedereen stond': 'Where everyone stood',
     '▶ Volgende zaak: {0}': '▶ Next case: {0}', '{0}. {1}': '{0}. {1}', 'af!': 'done!', 'nog 1 zaak': '1 case left', 'nog {0} zaken': '{0} cases left', '▶ Nog een zaak · {0}': '▶ Another case · {0}',
     ' punten': ' points', ' · Zaak van de week: {0}': ' · Case of the week: {0}', ' · Dag #{0}': ' · Day #{0}', 'Dagelijkse zaak ': 'Daily case ',
     // ── code: minigame ──
@@ -179,10 +179,19 @@
     'Combineer aanwijzing {0} met de spelregel over het slachtoffer.': 'Combine clue {0} with the rule about the victim.', 'De spelregel over het slachtoffer dwingt dit af.': 'The rule about the victim forces this.',
     'Aanwijzing {0} beperkt de opties. Streep vakjes weg die er niet aan voldoen.': 'Clue {0} limits the options. Cross off squares that do not satisfy it.', 'Gebruik de plaatsen van de anderen om verder te snoeien.': 'Use the positions of the others to narrow it down further.',
     'In deze zaak zegt <b>{0}</b>: “{1}”': 'In this case <b>{0}</b> says: “{1}”', 'Waar stond <b>{0}</b>?': 'Where was <b>{0}</b>?',
-    '{0} · Zaak {1}: {2}': '{0} · Case {1}: {2}', 'vrije dagen': 'streak freezes', '🧊 {0} {1}': '🧊 {0} {1}', 'nog {0} {1} tot {2}': '{0} more {1} until {2}',
-    'Volgende: {0} · nog {1} {2}': 'Next: {0} · {1} more {2}', 'Alle opdrachten klaar: +{0} punten en een vrije dag': 'All quests done: +{0} points and a streak freeze',
+    '{0} · Zaak {1}: {2}': '{0} · Case {1}: {2}', 
+    'Alle opdrachten klaar: +{0} punten en een vrije dag': 'All quests done: +{0} points and a streak freeze',
     // korte namen: Engelse titels
-    'Alle {0}': 'All {0}'
+    'Alle {0}': 'All {0}',
+    // aantallen: de vorm van het zelfstandig naamwoord kiest de vertaling ({0|one:…|other:…})
+    ' · nog {0} {0|one:hint|other:hints}': ' · {0} {0|one:hint|other:hints} left',
+    'Volgende: {0} · nog {1} {1|one:zaak|other:zaken}': 'Next: {0} · {1} more {1|one:case|other:cases}',
+    'nog {0} {0|one:zaak|other:zaken}': '{0} more {0|one:case|other:cases}',
+    '🔒 Los nog {0} {0|one:zaak|other:zaken} op (vrij spel of dagelijks) om deze wereld te openen': '🔒 Solve {0} more {0|one:case|other:cases} (free play or daily) to open this world',
+    '🧊 {0} {0|one:vrije dag|other:vrije dagen}': '🧊 {0} {0|one:freeze|other:freezes}',
+    'Los nog {0} {0|one:zaak|other:zaken} op om {1} te openen. De dagelijkse zaak telt mee.': 'Solve {0} more {0|one:case|other:cases} to open {1}. The daily case counts.',
+    'nog {0} {0|one:zaak|other:zaken} tot {1}': '{0} more {0|one:case|other:cases} until {1}',
+    '{0} {0|one:zaak|other:zaken} opgelost': '{0} {0|one:case|other:cases} solved'
   },
 
   data: {

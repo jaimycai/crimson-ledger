@@ -14,12 +14,14 @@ global.FloorPlan = FloorPlan;
 // Nederlands: alles blijft zoals het is
 I18n.lang = 'nl';
 check(T('Verder') === 'Verder' && T`Zaak ${3}: ${'x'}` === 'Zaak 3: x', 'Nederlands: T geeft de brontekst terug');
+check(T`nog ${1} {0|one:zaak|other:zaken}` === 'nog 1 zaak' && T`nog ${4} {0|one:zaak|other:zaken}` === 'nog 4 zaken', 'Nederlands: meervoud in de brontekst');
 const dutchStatement = FloorPlan.statement({ kind: 'room', s: 0, room: 0 }, { theme: THEMES[0], suspects: THEMES[0].suspects, rooms: [{ id: 0, name: 'Keuken', article: 'de' }], furnitureNl: {} }).text;
 check(dutchStatement === 'Ik was in de Keuken.', 'verklaring in het Nederlands: ' + dutchStatement);
 
 // Engels
 I18n.lang = 'en';
-check(T('Verder') === 'Continue' && T`Zaak ${3}: ${'x'}` === 'Case 3: x' && T`nog ${2} ${T('zaken')}` === '2 more cases', 'Engels: sjablonen met gaten');
+check(T('Verder') === 'Continue' && T`Zaak ${3}: ${'x'}` === 'Case 3: x', 'Engels: sjablonen met gaten');
+check(T`nog ${2} {0|one:zaak|other:zaken}` === '2 more cases' && T`nog ${1} {0|one:zaak|other:zaken}` === '1 more case', 'Engels: meervoud kiest de vertaling');
 const EN = globalThis.LANG_PACKS.en.ui;
 const missing = Object.keys(EN).filter(k => !EN[k]);
 check(missing.length === 0, 'geen lege vertalingen');

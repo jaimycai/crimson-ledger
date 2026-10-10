@@ -139,13 +139,14 @@ const Grammar = {
     const own = (((this.pack().rooms || {})[this.worldOf(base)]) || {})[q.key || q.name] || {};
     const the = own.the || [q.article === undefined ? 'de' : q.article, q.name].filter(Boolean).join(' ');
     const d = this.pack().derive || GRAMMAR_NL.derive;
-    return { name: own.name || q.name, the, in: own.in || this.fill(d.roomIn || 'in {room}', { room: the }) };
+    // eigen vormen uit het taalbestand (gen, dat, gender …) gaan mee, zodat een sjabloon {room.gen} kan gebruiken
+    return Object.assign({}, own, { name: own.name || q.name, the, in: own.in || this.fill(d.roomIn || 'in {room}', { room: the }) });
   },
   furn(base, id) {
     const own = (this.pack().furniture || {})[id] || {};
     const a = own.a || (base.furnitureNl && base.furnitureNl[id]) || id;
     const d = this.pack().derive || GRAMMAR_NL.derive;
-    return { a, next: own.next || this.fill(d.furnNext, { furn: a }), with: own.with || this.fill(d.furnWith, { furn: a }) };
+    return Object.assign({}, own, { a, next: own.next || this.fill(d.furnNext, { furn: a }), with: own.with || this.fill(d.furnWith, { furn: a }) });
   },
   rw(base) {
     const th = base.theme || {};
