@@ -7,7 +7,7 @@
 @font-face { font-family: 'Playfair Display'; font-style: normal; font-weight: 400 900; font-display: swap; src: url('assets/fonts/PlayfairDisplay-normal.woff2') format('woff2'); }
 @font-face { font-family: 'Playfair Display'; font-style: italic; font-weight: 400 900; font-display: swap; src: url('assets/fonts/PlayfairDisplay-italic.woff2') format('woff2'); }
 @font-face { font-family: 'Inter'; font-style: normal; font-weight: 100 900; font-display: swap; src: url('assets/fonts/Inter-normal.woff2') format('woff2'); }
-/* Koppen in het Russisch en Vietnamees: dezelfde Playfair, alleen die tekens, gemaakt uit de volledige versie.
+/* Koppen in het Russisch, Vietnamees en Turks: dezelfde Playfair, alleen die tekens, gemaakt uit de volledige versie.
    Eigen naam, want de licentie (SIL OFL, assets/fonts/OFL-display-ext.txt) reserveert "Playfair Display". */
 @font-face { font-family: 'Crimson Display Ext'; font-style: normal; font-weight: 400; font-display: swap; src: url('assets/fonts/display-ext-400.woff2') format('woff2'); }
 @font-face { font-family: 'Crimson Display Ext'; font-style: normal; font-weight: 600; font-display: swap; src: url('assets/fonts/display-ext-600.woff2') format('woff2'); }
@@ -72,7 +72,7 @@
 /* Inter dekt alleen Latijn. Russisch en Vietnamees lezen in de systeemletter (SF op iPhone, Roboto op
    Android), zodat een woord nooit uit twee lettertypes bestaat. Schriften die Playfair niet heeft, krijgen de
    systeemletter van dat schrift, met een schreefletter voor koppen waar het systeem die heeft. */
-:root:lang(ru), :root:lang(vi) { --font-body: -apple-system, system-ui, 'Segoe UI', Roboto, sans-serif; }
+:root:lang(ru), :root:lang(vi), :root:lang(tr) { --font-body: -apple-system, system-ui, 'Segoe UI', Roboto, sans-serif; }
 :root:lang(ar) { --font-heading: 'Geeza Pro', 'Noto Naskh Arabic', serif; --font-body: 'Geeza Pro', 'Noto Sans Arabic', system-ui, sans-serif; }
 :root:lang(ur) { --font-heading: 'Noto Nastaliq Urdu', 'Noto Naskh Arabic', serif; --font-body: 'Noto Nastaliq Urdu', 'Geeza Pro', 'Noto Sans Arabic', system-ui, sans-serif; }
 :root:lang(hi), :root:lang(mr) { --font-heading: 'Kohinoor Devanagari', 'Noto Serif Devanagari', serif; --font-body: 'Kohinoor Devanagari', 'Noto Sans Devanagari', system-ui, sans-serif; }
@@ -80,9 +80,10 @@
 :root:lang(te) { --font-heading: 'Kohinoor Telugu', 'Noto Serif Telugu', serif; --font-body: 'Kohinoor Telugu', 'Noto Sans Telugu', system-ui, sans-serif; }
 :root:lang(zh) { --font-heading: 'Songti SC', 'Noto Serif SC', serif; --font-body: 'PingFang SC', 'Noto Sans SC', system-ui, sans-serif; }
 :root:lang(ja) { --font-heading: 'Hiragino Mincho ProN', 'Noto Serif JP', serif; --font-body: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', system-ui, sans-serif; }
+:root:lang(ko) { --font-heading: 'AppleMyungjo', 'Noto Serif KR', serif; --font-body: 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif; }
 /* Schuin gezet Chinees, Arabisch of Devanagari is geen cursief, en letterafstand breekt de verbonden letters
    van het Arabisch en Urdu. */
-:root:is(:lang(ar), :lang(ur), :lang(hi), :lang(mr), :lang(bn), :lang(te), :lang(zh), :lang(ja)) * { font-style: normal !important; letter-spacing: 0 !important; }
+:root:is(:lang(ar), :lang(ur), :lang(hi), :lang(mr), :lang(bn), :lang(te), :lang(zh), :lang(ja), :lang(ko)) * { font-style: normal !important; letter-spacing: 0 !important; }
 /* De merknaam blijft altijd in Playfair. */
 :root .splash-title, :root .menu-title { font-family: 'Playfair Display', Georgia, serif; }
 

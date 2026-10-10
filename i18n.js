@@ -26,7 +26,9 @@ const I18n = {
     ['es', 'Español', 'ltr', 'es'],
     ['fr', 'Français', 'ltr', 'fr-FR'],
     ['id', 'Bahasa Indonesia', 'ltr', 'id-ID'],
+    ['it', 'Italiano', 'ltr', 'it-IT'],
     ['pt', 'Português', 'ltr', 'pt-BR'],
+    ['tr', 'Türkçe', 'ltr', 'tr-TR'],
     ['vi', 'Tiếng Việt', 'ltr', 'vi-VN'],
     ['ru', 'Русский', 'ltr', 'ru-RU'],
     ['ar', 'العربية', 'rtl', 'ar-u-nu-latn'],
@@ -36,7 +38,8 @@ const I18n = {
     ['bn', 'বাংলা', 'ltr', 'bn-u-nu-latn'],
     ['te', 'తెలుగు', 'ltr', 'te-IN'],
     ['zh', '简体中文', 'ltr', 'zh-CN'],
-    ['ja', '日本語', 'ltr', 'ja-JP']
+    ['ja', '日本語', 'ltr', 'ja-JP'],
+    ['ko', '한국어', 'ltr', 'ko-KR']
   ],
   KEY: 'crimson-lang',
   packs() { return (typeof globalThis !== 'undefined' && globalThis.LANG_PACKS) || {}; },
@@ -88,14 +91,26 @@ const I18n = {
     const d = this.dict();
     return this.format(d && d[key] ? d[key] : key, vals);
   },
+  // {0.ref} / {0.short}: een vorm van de waarde (namen dragen die, zie Grammar.who), anders de waarde zelf
   format(tpl, vals) {
-    return tpl.replace(/\{(\d+)((?:\|[a-z]+:[^|{}]*)+)?\}/g, (whole, i, opts) => (opts ? this.choose(vals[+i], opts, whole) : String(vals[+i])));
+    return tpl.replace(/\{(\d+)(?:\.([a-zA-Z]+))?((?:\|[a-z]+:[^|{}]*)+)?\}/g, (whole, i, form, opts) => {
+      const v = vals[+i];
+      if (opts) return this.choose(v, opts, whole);
+      return form && v !== null && v !== undefined && v[form] !== undefined ? String(v[form]) : String(v);
+    });
   },
-  // "|m:hij|f:zij" of "|one:zaak|other:zaken": kies de vorm die bij de waarde past.
+  // "|m:hij|f:zij", "|one:zaak|other:zaken" of "|c:이|v:가" (Koreaans): kies de vorm die bij de waarde past.
   // Een naam draagt zijn geslacht als String met .gender (Grammar.who); zonder geslacht geldt m.
   choose(v, opts, whole) {
     const map = {};
     opts.slice(1).split('|').forEach(p => { const i = p.indexOf(':'); map[p.slice(0, i)] = p.slice(i + 1); });
+    if (map.c !== undefined || map.v !== undefined) {
+      // Koreaans: partikel na een lettergreep met of zonder slotmedeklinker (이/가, 은/는, 을/를, 과/와)
+      const last = String(v === undefined || v === null ? '' : v).trim().slice(-1);
+      const code = last.charCodeAt(0);
+      const closed = code >= 0xAC00 && code <= 0xD7A3 ? (code - 0xAC00) % 28 !== 0 : /[0-9a-zA-Z]/.test(last) && !/[aeiouyAEIOUY]/.test(last);
+      return closed ? (map.c !== undefined ? map.c : map.v) : (map.v !== undefined ? map.v : map.c);
+    }
     if (map.m !== undefined || map.f !== undefined) {
       const g = (v && v.gender) || 'm';
       return map[g] !== undefined ? map[g] : (map.m !== undefined ? map.m : map.f);

@@ -18,7 +18,7 @@ Write `store/metadata/1.2.0/<store-locale>.json` with one object:
 | `subtitle` | 30 characters | a plain descriptor: murder-mystery logic puzzles |
 | `keywords` | **100 bytes in UTF-8** (non-Latin letters take 2–3 bytes each) | comma-separated, no spaces around commas, singular forms, no word that is already in the name or subtitle (Apple indexes those already), no other apps' or brands' names (never Cluedo, Clue, Murdle, Sherlock). Pick the terms a player in your market types: detective, murder, mystery, puzzle, logic, riddle, crime, culprit, suspect, offline, daily, whodunit — in your language, plus "sudoku" if people in your market use it for logic puzzles. |
 | `promotionalText` | 170 characters | the hook: find the culprit, 96 free cases, a new case every day, no ads, no subscription, plays offline |
-| `description` | 4000 characters | translate the English description faithfully and naturally; keep the section headings (in capitals where your script has them) and the facts exactly (numbers, worlds, prices model). The language paragraph says the game plays in 17 languages. |
+| `description` | 4000 characters | translate the English description faithfully and naturally; keep the section headings (in capitals where your script has them) and the facts exactly (numbers, worlds, prices model). The language paragraph says the game plays in 20 languages. |
 | `whatsNew` | 4000 characters (keep it short) | translate the English one |
 
 ## Rules
@@ -50,6 +50,9 @@ Write `store/metadata/1.2.0/<store-locale>.json` with one object:
 | te | te |
 | zh | zh-Hans |
 | ja | ja |
+| ko | ko |
+| it | it |
+| tr | tr |
 
 The codes for the four languages Apple added in 2026 (Bangla, Marathi, Telugu, Urdu) are checked when the texts
 are uploaded; the file name only needs to be one of the codes above.

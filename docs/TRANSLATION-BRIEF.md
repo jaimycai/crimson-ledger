@@ -2,7 +2,7 @@
 
 Crimson Ledger is a logic murder-mystery puzzle for phones. The player places suspects on a floor plan using
 their statements, then names the one person who was alone with the victim. Inspector Van Dam is the dry,
-kind mentor who explains things. The game ships in 17 languages; Dutch is the source language in the code and
+kind mentor who explains things. The game ships in 20 languages; Dutch is the source language in the code and
 English (`i18n/en.js`) is the reference translation.
 
 You translate one language. You write **only** inside `i18n/.work/<code>/` and then build `i18n/<code>.js`
@@ -36,11 +36,12 @@ Parts of one section are merged in file-name order, so split big sections into f
     in any row further up; "on the same row" / "in the same column" = anywhere on that row or column.
   - "in a room with a plant" = in the room that contains that piece of furniture, anywhere in it.
   - "I was alone in the room" = no other suspect in my room.
-- **Gaps.** `{0}`, `{1}` … in a `ui` value must all appear (order may change). Never invent a gap.
+- **Gaps.** `{0}`, `{1}` … in a `ui` value must all appear (order may change). Never invent a gap. When a gap holds a suspect's name you may write `{0.ref}` or `{0.short}` for the in-sentence form or the name without title.
 - **Choices.** A gap can choose a form:
   - number: `{0|one:case|other:cases}` — categories `zero one two few many other` as `Intl.PluralRules` uses them
     for your locale; always include `other`. Example Russian: `ещё {0} {0|one:дело|few:дела|many:дел|other:дела}`.
   - gender of a person: `{0|m:был|f:была}` — names carry their gender. Keys `m` and `f` (and `n` for a room word).
+  - Korean particles: `{0|c:이|v:가}` picks by whether the word ends in a final consonant (batchim) — `c` after a closed syllable, `v` after an open one (also works on names and rooms in templates: `{s|c:이|v:가}`).
   - The choice only prints the chosen text; write the plain `{0}` too where the number or name must show.
 - **Keep** HTML tags (`<b>…</b>`), emoji, `★`, `·`, `—`, numbers, and line structure. Keep "Crimson Ledger" and
   "Crimson Pass" in Latin letters. Digits stay Western (0–9).

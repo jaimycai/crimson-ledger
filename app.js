@@ -624,10 +624,21 @@ const App = {
     this.updateCampaignProgress();
   },
   renderWeek() {
+    // letter in het rondje: de korte dagletter van de taal zelf (Intl: "ح" in het Arabisch, "月" in het
+    // Japans), anders de eerste lettergreep van het label (Urdu heeft geen korte vorm in Intl)
+    const locale = typeof I18n !== 'undefined' ? I18n.locale() : 'nl-NL';
+    const latin = typeof I18n === 'undefined' || ['nl', 'en', 'de', 'es', 'fr', 'id', 'it', 'pt', 'tr', 'vi'].includes(I18n.lang);
+    const firstLetter = (t, i) => {
+      try {
+        const n = new Intl.DateTimeFormat(locale, { weekday: 'narrow' }).format(new Date(2026, 9, 5 + i));   // 5 okt 2026 is een maandag
+        if (n && (latin || !/^[A-Za-z]+$/.test(n))) return n;
+      } catch (e) { /* oude browser */ }
+      try { return [...new Intl.Segmenter(locale, { granularity: 'grapheme' }).segment(t)][0].segment; } catch (e) { return Array.from(t)[0] || ''; }
+    };
     const strip = document.getElementById('week-strip');
     if (!strip) return;
     const days = Progress.week();
-    strip.innerHTML = days.map(d => `<span class="wday${d.played ? ' played' : ''}${d.today ? ' today' : ''}${d.future ? ' future' : ''}${d.reward ? ' reward' : ''}"><i>${d.played ? '✓' : d.reward ? '🏅' : d.label[0]}</i>${d.label}</span>`).join('');
+    strip.innerHTML = days.map((d, i) => `<span class="wday${d.played ? ' played' : ''}${d.today ? ' today' : ''}${d.future ? ' future' : ''}${d.reward ? ' reward' : ''}"><i>${d.played ? '✓' : d.reward ? '🏅' : firstLetter(d.label, i)}</i>${d.label}</span>`).join('');
     const note = document.getElementById('streak-note');
     const today = days.find(d => d.today);
     const playedToday = !!(today && today.played);

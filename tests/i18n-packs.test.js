@@ -15,7 +15,7 @@ const check = (c, m) => { if (c) console.log('ok  ', m); else { failures++; cons
 const fail = (list, m, max = 8) => { check(list.length === 0, `${m}${list.length ? ` (${list.length}): ` + list.slice(0, max).join(' | ') : ''}`); };
 
 const { GRAMMAR_NL } = require('../grammar.js');
-const PLURAL = new Set(['zero', 'one', 'two', 'few', 'many', 'other']), GENDER = new Set(['m', 'f', 'n']);
+const PLURAL = new Set(['zero', 'one', 'two', 'few', 'many', 'other']), GENDER = new Set(['m', 'f', 'n']), FINAL = new Set(['c', 'v']);
 const langs = process.argv.slice(2).length ? process.argv.slice(2)
   : fs.readdirSync(path.join(DIR, 'i18n')).filter(f => f.endsWith('.js')).map(f => f.slice(0, -3)).sort();
 
@@ -35,12 +35,13 @@ const EN = en.I18n.packs().en;
 // gaps in a ui text: plain {0} and choices {0|…}
 function gaps(s) {
   const plain = new Set(), chosen = new Set(), bad = [];
-  for (const m of s.matchAll(/\{(\d+)((?:\|[a-z]+:[^|{}]*)+)?\}/g)) {
+  for (const m of s.matchAll(/\{(\d+)(?:\.[a-zA-Z]+)?((?:\|[a-z]+:[^|{}]*)+)?\}/g)) {
     (m[2] ? chosen : plain).add(+m[1]);
     if (m[2]) {
       const keys = m[2].slice(1).split('|').map(p => p.slice(0, p.indexOf(':')));
       const plural = keys.every(k => PLURAL.has(k)), gender = keys.every(k => GENDER.has(k));
-      if (!(plural && keys.includes('other')) && !(gender && keys.includes('m') && keys.includes('f'))) bad.push(m[0]);
+      const final = keys.every(k => FINAL.has(k)) && keys.length === 2;
+      if (!(plural && keys.includes('other')) && !(gender && keys.includes('m') && keys.includes('f')) && !final) bad.push(m[0]);
     }
   }
   return { plain, chosen, bad };

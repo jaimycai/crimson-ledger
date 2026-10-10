@@ -506,7 +506,10 @@ const FloorPlan = (() => {
     if (best === -1) return { type: 'done', clues: [], cells: [], text: FP_T('Iedereen staat goed. Wie was alleen met het slachtoffer?'), detail: '' };
 
     const related = puzzle.clues.map((c, idx) => mentions(c, best) ? idx : -1).filter(i => i !== -1);
-    const nrs = related.map(i => i + 1).join(', ');
+    // lijst van nummers in de vorm van de taal: "1, 2 en 4", "1、2、4", "1 و2 و4"
+    const nums = related.map(i => String(i + 1));
+    let nrs = nums.join(', ');
+    try { if (typeof I18n !== 'undefined' && I18n.locale) nrs = new Intl.ListFormat(I18n.locale(), { style: 'short', type: 'conjunction' }).format(nums); } catch (e) { /* oude browser: komma's */ }
     if (cands[best].length === 1) {
       return { type: 'deduce', suspect: best, clues: related, cells: cands[best],
                text: FP_T`${N(best)} kan maar op één plek staan.`,
