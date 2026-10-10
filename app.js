@@ -38,7 +38,7 @@ const App = {
   init() {
     if (typeof I18n !== 'undefined') {
       I18n.init();
-      if (I18n.lang === 'en') { const cl = document.querySelector('.menu-classic'); if (cl) cl.hidden = true; }   // het klassieke raster is alleen Nederlands
+      if (I18n.lang !== 'nl') { const cl = document.querySelector('.menu-classic'); if (cl) cl.hidden = true; }   // het klassieke raster is alleen Nederlands
     }
     this.bootSplash();
     this.loadStreak();
@@ -1765,7 +1765,7 @@ const App = {
     const now = new Date();
     const options = { weekday: 'long', day: 'numeric', month: 'long' };
     document.getElementById('daily-date').textContent =
-      now.toLocaleDateString(typeof I18n !== 'undefined' && I18n.lang === 'en' ? 'en-GB' : 'nl-NL', options);
+      now.toLocaleDateString(typeof I18n !== 'undefined' ? I18n.locale() : 'nl-NL', options);
   },
 
   // Voortgang staat in localStorage (web én app). In de iOS-app wordt elke

@@ -598,7 +598,7 @@ const Board = {
     const clues = (h.clues || []).slice(0, 1);   // één kaart: zo blijft "Doe dit" in beeld
     $('hint-clues').innerHTML = clues.length
       ? clues.map(i => this.clueCard(i, 'dclue')).join('')
-      : `<div class="hint-rule">${BD_T`📜 De spelregel: alleen de moordenaar was in de ${p.theme.roomWord || 'kamer'} van het slachtoffer.`}</div>`;
+      : `<div class="hint-rule">${Grammar.text('board/rule', p)}</div>`;
     $('hint-clues').querySelectorAll('.bclue-check').forEach(b => b.remove());
     // 2. dat betekent: uitleg in gewone taal met de namen van deze zaak
     const meaning = clues.length ? clues.map(i => Mentor.explain(p.clues[i], p)).filter(Boolean).join(' ') : (h.detail || '');
@@ -667,7 +667,7 @@ const Board = {
     if (this.isTutorial) { this.tutorialStep = 3; this.showTutorialStep(); }
     document.getElementById('murder-question').textContent = this.isTutorial
       ? this.TUTORIAL_STEPS[3].text
-      : BD_T`Iedereen staat op zijn plek. Wie was alleen met het slachtoffer in ${q.article || 'de'} ${q.name}?`;
+      : Grammar.text('board/accuse', p, { room: q.id });
     const wrap = document.getElementById('murder-options');
     // onder elke naam de kamer waar hij staat: de conclusie is dan één blik
     wrap.innerHTML = p.suspects.map((s, i) => {
@@ -841,7 +841,7 @@ const Board = {
     $('results-icon').hidden = true;
     $('results-stamp').style.borderColor = '';
     $('results-headline').textContent = this.isTutorial ? BD_T('Goed gedaan!') : BD_T('Zaak Opgelost!');
-    $('results-verdict').textContent = BD_T`${m.label} was alleen met het slachtoffer in ${q.article || 'de'} ${q.name}.`;
+    $('results-verdict').textContent = Grammar.text('board/verdict', p, { s: Grammar.who(m), room: q.id });
     // laatste zaak van een deel: de afsluiting van dat deel
     const chap = this.campaignCase ? Campaign.chapter(this.campaignCase.chapter) : null;
     const finale = chap && this.campaignCase.idx === chap.cases.length - 1 ? chap.outro : null;
@@ -884,7 +884,7 @@ const Board = {
       const row = document.createElement('div');
       row.className = 'results-solution-row';
       row.innerHTML = `<span class="results-solution-ava">${Avatars.suspect(s, i)}</span><b>${s.label}</b>` +
-                      `<span class="results-solution-room">${r.article || 'de'} ${r.name}${i === p.murderer ? ' 🔪' : ''}</span>`;
+                      `<span class="results-solution-room">${Grammar.room(p, r.id).the}${i === p.murderer ? ' 🔪' : ''}</span>`;
       solEl.appendChild(row);
     });
 

@@ -1,5 +1,7 @@
 // Vertaalhulp: gebruikt de taalmotor (i18n.js) als die er is, anders de Nederlandse tekst.
 const MT_T = (s, ...v) => { const g = typeof globalThis !== 'undefined' ? globalThis.T : undefined; if (typeof g === 'function') return g(s, ...v); return typeof s === 'string' ? s : s.map((x, i) => x + (i < v.length ? String(v[i]) : '')).join(''); };
+// Zinsbouw: grammar.js (in de browser een gewoon script, in Node via require).
+const MT_G = () => (typeof Grammar !== 'undefined' ? Grammar : require('./grammar.js').Grammar);
 // ============================================================
 // MENTOR — Inspecteur Van Dam: briefing voor een campagnezaak,
 // een opmerking erna, de "Nieuw!"-uitleg bij een nieuw soort
@@ -102,59 +104,32 @@ const Mentor = {
   // ── Hint in drie stappen: kijk naar, dat betekent, doe dit ──
   // Legt één verklaring uit in gewone taal, met de namen en kamers van deze
   // zaak, en zegt precies wat de speler nu moet doen.
-  explain(clue, p) {
-    const N = i => p.suspects[i].label;
-    const R = id => { const q = p.rooms.find(x => x.id === id); return `${q.article || 'de'} ${q.name}`; };
-    const F = f => p.furnitureNl[f] || f;
-    const rw = p.theme.roomWord || 'kamer', rws = p.theme.roomWordPlural || 'kamers';
-    const pos = (id, room) => id === 'muur' ? MT_T`tegen een muur van ${room}, niet in een hoek. Zo'n vakje raakt precies één muur.`
-      : id === 'midden' ? MT_T`in het midden van ${room}. Zo'n vakje raakt geen enkele muur.`
-      : MT_T`in een hoek van ${room}. Een hoek is een vakje dat twee muren van die ${rw} raakt.`;
-    switch (clue.kind) {
-      case 'room':         return MT_T`${N(clue.s)} moet ergens in ${R(clue.room)} staan. Elk vrij vakje van die ${rw} kan.`;
-      case 'not-room':     return MT_T`${N(clue.s)} mag overal staan, behalve in ${R(clue.room)}.`;
-      case 'room-pos':     return MT_T`${N(clue.s)} staat ${pos(clue.pos, R(clue.room))}`;
-      case 'pos':          return MT_T`${N(clue.s)} staat ${pos(clue.pos, MT_T`een ${rw}`)} In welke ${rw} weet je nog niet.`;
-      case 'room-with':    return MT_T`${N(clue.s)} staat in een ${rw} waar ${F(clue.furniture)} staat. Zoek eerst dat meubel; elk vrij vakje in die ${rw} kan.`;
-      case 'next-to':      return MT_T`${N(clue.s)} staat op het vakje links, rechts, boven of onder ${F(clue.furniture)}. Schuin telt niet.`;
-      case 'room-next':    return MT_T`${N(clue.s)} staat in ${R(clue.room)}, recht naast ${F(clue.furniture)}: links, rechts, boven of onder, niet schuin.`;
-      case 'same-room':    return MT_T`${N(clue.a)} en ${N(clue.b)} staan in dezelfde ${rw}. Weet je waar één van de twee staat, dan weet je ook de ${rw} van de ander.`;
-      case 'diff-room':    return MT_T`${N(clue.a)} en ${N(clue.b)} staan in twee verschillende ${rws}.`;
-      case 'adjacent':     return MT_T`${N(clue.a)} en ${N(clue.b)} staan op vakjes die elkaar raken: links, rechts, boven of onder. Een muur ertussen mag.`;
-      case 'not-adjacent': return MT_T`${N(clue.a)} staat niet op een vakje dat ${N(clue.b)} raakt (links, rechts, boven of onder). Schuin ernaast mag wel.`;
-      case 'same-row':     return MT_T`${N(clue.a)} en ${N(clue.b)} staan op dezelfde rij: even hoog op de plattegrond, ook als dat in verschillende ${rws} is.`;
-      case 'same-col':     return MT_T`${N(clue.a)} en ${N(clue.b)} staan in dezelfde kolom: recht boven of onder elkaar. Muren tellen niet.`;
-      case 'left-of':      return MT_T`${N(clue.a)} staat in een kolom links van ${N(clue.b)}, in welke ${rw} dan ook.`;
-      case 'above':        return MT_T`${N(clue.a)} staat in een rij hoger dan ${N(clue.b)}, in welke ${rw} dan ook.`;
-      case 'empty-room':   return MT_T`In ${R(clue.room)} staat niemand. Die ${rw} kun je overslaan.`;
-      case 'alone':        return MT_T`${N(clue.s)} staat in een ${rw} waar verder niemand staat.`;
-      default: return '';
-    }
-  },
+  explain(clue, p) { return MT_G().explain(clue, p); },
   // Wat moet de speler nu doen? h = uitkomst van FloorPlan.hint.
   hintAction(h, p, placements) {
-    const N = i => p.suspects[i].label;
-    const rw = p.theme.roomWord || 'kamer';
+    const G = MT_G();
     const roomOf = c => FloorPlan.roomOf(p.rooms, c.x, c.y);
-    const name = h.suspect !== undefined && h.suspect !== -1 ? N(h.suspect) : '';
-    const vroom = p.rooms.find(r => r.id === p.victim.roomId);
+    const s = h.suspect !== undefined && h.suspect !== -1 ? h.suspect : undefined;
+    const name = s !== undefined ? G.who(p.suspects[s]) : '';
+    const vroom = p.victim.roomId;
     if (h.type === 'mistake') {
       const cur = placements[h.suspect] ? roomOf(placements[h.suspect]) : null;
-      const where = cur ? MT_T` Nu staat ${name} in ${cur.article || 'de'} ${cur.name}.` : '';
-      if (!h.clues.length && /twee verdachten/.test(h.text)) return MT_T`In ${vroom.article || 'de'} ${vroom.name} mag maar één persoon staan: de moordenaar. Sleep één van de twee naar een andere ${rw}.`;
+      const where = cur ? G.text('action/now', p, { s, room: cur.id }) : '';
+      if (h.reason === 'victim-room') return G.text('action/two-in-victim-room', p, { room: vroom });
       const c = h.clues.length ? p.clues[h.clues[0]] : null;
-      const target = c && c.room !== undefined && c.kind !== 'not-room' && c.kind !== 'empty-room' ? p.rooms.find(r => r.id === c.room) : null;
-      return MT_T`Sleep ${name} van het bord af.${where}${target ? MT_T` Zet ${name} daarna ergens in ${target.article || 'de'} ${target.name}.` : MT_T(' Lees de verklaring hierboven nog eens en probeer een vakje dat erbij past.')}`;
+      const target = c && c.room !== undefined && c.kind !== 'not-room' && c.kind !== 'empty-room' ? c.room : undefined;
+      return MT_T`Sleep ${name} van het bord af.${where}${target !== undefined ? G.text('action/then', p, { s, room: target }) : MT_T(' Lees de verklaring hierboven nog eens en probeer een vakje dat erbij past.')}`;
     }
     if (h.type === 'deduce') {
       const q = h.cells[0] ? roomOf(h.cells[0]) : null;
-      return MT_T`Er is maar één vakje over: het oplichtende vakje${q ? MT_T` in ${q.article || 'de'} ${q.name}` : ''}. Sleep ${name} daarheen.`;
+      return q ? G.text('action/deduce.in', p, { s, room: q.id }) : G.text('action/deduce', p, { s });
     }
     if (h.type === 'narrow') {
-      const rooms = [...new Set(h.cells.map(c => roomOf(c).name))];
-      return MT_T`${name} kan nog op ${h.cells.length} vakjes staan; ze lichten goud op${rooms.length === 1 ? MT_T`, in de ${rooms[0]}` : ''}. Zet daar een stipje met het Potlood en probeer ze één voor één: bij elk vakje kijk je of de andere verklaringen nog kloppen.`;
+      const rooms = [...new Set(h.cells.map(c => roomOf(c).id))];
+      return rooms.length === 1 ? G.text('action/narrow.in', p, { s, n: h.cells.length, room: rooms[0] })
+                                : G.text('action/narrow', p, { s, n: h.cells.length });
     }
-    return MT_T`Iedereen staat goed. Tik op Controleer en wijs daarna aan wie alleen in ${vroom.article || 'de'} ${vroom.name} staat.`;
+    return G.text('action/done', p, { room: vroom });
   },
 
   // Reacties bij de beschuldiging.

@@ -17,7 +17,7 @@ const Meting = {
     try { const C = window.Capacitor; if (C && C.isNativePlatform && C.isNativePlatform()) return C.getPlatform() === 'android' ? 'android' : 'ios'; } catch (e) { /* web */ }
     return 'web';
   },
-  lang() { return (typeof I18n !== 'undefined' && I18n.lang === 'en') ? 'en' : 'nl'; },
+  lang() { return typeof I18n !== 'undefined' && I18n.lang ? I18n.lang : 'nl'; },
   day(d = new Date()) { return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`; },
   // stuurt één teller; faalt stil (offline is normaal voor dit spel)
   send(e, a = '', n = 0) {

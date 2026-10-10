@@ -3,12 +3,11 @@ const { THEMES, Themes } = require('../themes.js');
 const { CAMPAIGN, Campaign } = require('../campaign.js');
 const { Progress, DAILY_TITLES, WEEK_TITLES } = require('../progress.js');
 const { Mentor } = require('../mentor.js');
-const { I18N_DATA } = require('../i18n-data.js');
-const { I18N_CAMPAIGN } = require('../i18n-campaign.js');
+require('../i18n/en.js');
 const { I18n, T } = require('../i18n.js');
 let failures = 0;
 const check = (c, m) => { if (c) console.log('ok  ', m); else { failures++; console.log('FAIL', m); } };
-Object.assign(global, { THEMES, Themes, CAMPAIGN, Campaign, Progress, DAILY_TITLES, WEEK_TITLES, Mentor, I18N_DATA, I18N_CAMPAIGN, T, I18n });
+Object.assign(global, { THEMES, Themes, CAMPAIGN, Campaign, Progress, DAILY_TITLES, WEEK_TITLES, Mentor, T, I18n });
 const { FloorPlan } = require('../floorplan.js');
 global.FloorPlan = FloorPlan;
 
@@ -21,7 +20,8 @@ check(dutchStatement === 'Ik was in de Keuken.', 'verklaring in het Nederlands: 
 // Engels
 I18n.lang = 'en';
 check(T('Verder') === 'Continue' && T`Zaak ${3}: ${'x'}` === 'Case 3: x' && T`nog ${2} ${T('zaken')}` === '2 more cases', 'Engels: sjablonen met gaten');
-const missing = Object.keys(I18n.EN).filter(k => !I18n.EN[k]);
+const EN = globalThis.LANG_PACKS.en.ui;
+const missing = Object.keys(EN).filter(k => !EN[k]);
 check(missing.length === 0, 'geen lege vertalingen');
 I18n.localizeData();
 check(THEMES[0].title === 'The Manor' && THEMES[0].rooms[0].name === 'Living Room' && THEMES[0].rooms[0].article === 'the' && THEMES[0].furniture[0].nl === 'a plant', 'werelden vertaald: titel, kamers, meubels');

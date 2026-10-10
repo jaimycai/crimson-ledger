@@ -1,5 +1,7 @@
 // Vertaalhulp: gebruikt de taalmotor (i18n.js) als die er is, anders de Nederlandse tekst.
 const FP_T = (s, ...v) => { const g = typeof globalThis !== 'undefined' ? globalThis.T : undefined; if (typeof g === 'function') return g(s, ...v); return typeof s === 'string' ? s : s.map((x, i) => x + (i < v.length ? String(v[i]) : '')).join(''); };
+// Zinsbouw: grammar.js (in de browser een gewoon script, in Node via require).
+const FP_G = () => (typeof Grammar !== 'undefined' ? Grammar : require('./grammar.js').Grammar);
 // ============================================================
 // FLOORPLAN ENGINE v2 — ruimtelijke moordmysterie-puzzel
 //
@@ -64,12 +66,6 @@ const FloorPlan = (() => {
       suspects: pool
     };
   }
-  const POS_NL = rw => ({
-    hoek:   { los: FP_T`in een hoek van een ${rw}`,               kamer: FP_T('in een hoek') },
-    muur:   { los: FP_T('tegen een muur, niet in een hoek'),        kamer: FP_T('tegen een muur, niet in een hoek') },
-    midden: { los: FP_T`midden in een ${rw}, niet tegen een muur`, kamer: FP_T('in het midden, niet tegen een muur') }
-  });
-
   const DIFF = {
     makkelijk: { cols: 6, rows: 6, rooms: 4, merges: 0, suspects: 3, minClues: 3, maxClues: 5, maxCand: 12 },
     gemiddeld: { cols: 7, rows: 7, rooms: 5, merges: 1, suspects: 4, minClues: 4, maxClues: 7, maxCand: 14 },
@@ -156,7 +152,7 @@ const FloorPlan = (() => {
       shapes.splice(j, 1);
     }
     const defs = shuffle(r, theme.rooms);
-    return shapes.map((s, i) => ({ id: i, name: defs[i].name, article: defs[i].article || 'de', color: defs[i].color, list: s.list, cells: s.cells }));
+    return shapes.map((s, i) => ({ id: i, name: defs[i].name, key: defs[i].key || defs[i].name, article: defs[i].article !== undefined ? defs[i].article : 'de', color: defs[i].color, list: s.list, cells: s.cells }));
   }
 
   function placeFurniture(r, rooms, types) {
@@ -397,72 +393,12 @@ const FloorPlan = (() => {
     return selected.slice().sort((a, b) => rank(a) - rank(b));
   }
 
-  // ── Nederlandse tekst ───────────────────────────────────────
-  function formatClue(clue, base) {
-    const th = base.theme;
-    const rw = th.roomWord || 'kamer';
-    const POS = POS_NL(rw);
-    const N = i => base.suspects[i].label;
-    const R = id => { const q = base.rooms.find(x => x.id === id); return `${q.article || 'de'} ${q.name}`; };
-    const F = f => base.furnitureNl[f] || f;
-    switch (clue.kind) {
-      case 'room':         return FP_T`${N(clue.s)} was in ${R(clue.room)}.`;
-      case 'not-room':     return FP_T`${N(clue.s)} was niet in ${R(clue.room)}.`;
-      case 'room-pos':     return FP_T`${N(clue.s)} was in ${R(clue.room)}, ${POS[clue.pos].kamer}.`;
-      case 'pos':          return FP_T`${N(clue.s)} stond ${POS[clue.pos].los}.`;
-      case 'room-with':    return FP_T`${N(clue.s)} was in een ${rw} met ${F(clue.furniture)}.`;
-      case 'next-to':      return FP_T`${N(clue.s)} stond direct naast ${F(clue.furniture)}.`;
-      case 'room-next':    return FP_T`${N(clue.s)} was in ${R(clue.room)}, direct naast ${F(clue.furniture)}.`;
-      case 'same-room':    return FP_T`${N(clue.a)} en ${N(clue.b)} waren in dezelfde ${rw}.`;
-      case 'diff-room':    return FP_T`${N(clue.a)} en ${N(clue.b)} waren niet in dezelfde ${rw}.`;
-      case 'adjacent':     return FP_T`${N(clue.a)} stond direct naast ${N(clue.b)}.`;
-      case 'not-adjacent': return FP_T`${N(clue.a)} stond niet direct naast ${N(clue.b)}.`;
-      case 'same-row':     return FP_T`${N(clue.a)} en ${N(clue.b)} stonden op dezelfde rij.`;
-      case 'same-col':     return FP_T`${N(clue.a)} en ${N(clue.b)} stonden in dezelfde kolom.`;
-      case 'left-of':      return FP_T`${N(clue.a)} stond links van ${N(clue.b)} op de plattegrond.`;
-      case 'above':        return FP_T`${N(clue.a)} stond hoger op de plattegrond dan ${N(clue.b)}.`;
-      case 'empty-room':   return FP_T`Er was niemand in ${R(clue.room)}.`;
-      case 'alone':        return FP_T`${N(clue.s)} was alleen in de ${rw}.`;
-      default: return '';
-    }
-  }
+  // ── Tekst: de zinsbouw staat in grammar.js ──────────────────
+  const formatClue = (clue, base) => FP_G().clue(clue, base);
   // Dezelfde aanwijzing als verklaring in de ik-vorm: wie spreekt (indexen van
   // verdachten; leeg = de inspecteur leest het rapport voor) en wat hij zegt.
-  function statement(clue, base) {
-    const th = base.theme;
-    const rw = th.roomWord || 'kamer';
-    const POS = POS_NL(rw);
-    const N = i => base.suspects[i].label;
-    const R = id => { const q = base.rooms.find(x => x.id === id); return `${q.article || 'de'} ${q.name}`; };
-    const F = f => base.furnitureNl[f] || f;
-    const one = t => ({ who: [clue.s], text: t });
-    const two = t => ({ who: [clue.a, clue.b], text: t });
-    switch (clue.kind) {
-      case 'room':         return one(FP_T`Ik was in ${R(clue.room)}.`);
-      case 'not-room':     return one(FP_T`Ik was niet in ${R(clue.room)}.`);
-      case 'room-pos':     return one(FP_T`Ik was in ${R(clue.room)}, ${POS[clue.pos].kamer}.`);
-      case 'pos':          return one(FP_T`Ik stond ${POS[clue.pos].los}.`);
-      case 'room-with':    return one(FP_T`Ik was in een ${rw} met ${F(clue.furniture)}.`);
-      case 'next-to':      return one(FP_T`Ik stond direct naast ${F(clue.furniture)}.`);
-      case 'room-next':    return one(FP_T`Ik was in ${R(clue.room)}, direct naast ${F(clue.furniture)}.`);
-      case 'same-room':    return two(FP_T`Ik was in dezelfde ${rw} als ${N(clue.b)}.`);
-      case 'diff-room':    return two(FP_T`Ik was niet in dezelfde ${rw} als ${N(clue.b)}.`);
-      case 'adjacent':     return two(FP_T`Ik stond direct naast ${N(clue.b)}.`);
-      case 'not-adjacent': return two(FP_T`Ik stond niet direct naast ${N(clue.b)}.`);
-      case 'same-row':     return two(FP_T`${N(clue.b)} en ik stonden op dezelfde rij.`);
-      case 'same-col':     return two(FP_T`${N(clue.b)} en ik stonden in dezelfde kolom.`);
-      case 'left-of':      return two(FP_T`Ik stond links van ${N(clue.b)} op de plattegrond.`);
-      case 'above':        return two(FP_T`Ik stond hoger op de plattegrond dan ${N(clue.b)}.`);
-      case 'empty-room':   return { who: [], text: FP_T`Volgens het rapport was er niemand in ${R(clue.room)}.` };
-      case 'alone':        return one(FP_T`Ik was alleen in de ${rw}.`);
-      default: return { who: [], text: '' };
-    }
-  }
-  const caseText = base => {
-    const q = base.rooms.find(x => x.id === base.victim.roomId);
-    return FP_T`${base.theme.victimName || FP_T('Het slachtoffer')} werd gevonden in ${q.article || 'de'} ${q.name}. ` +
-           FP_T`De moordenaar was de enige die zich in die ${base.theme.roomWord || 'kamer'} bevond.`;
-  };
+  const statement = (clue, base) => FP_G().statement(clue, base);
+  const caseText = base => FP_G().caseText(base);
 
   // ── Generatie ───────────────────────────────────────────────
   function generate(seed, difficultyId, themeOrPool) {
@@ -508,7 +444,7 @@ const FloorPlan = (() => {
   // def: { cols, rows, layout: [[kamerIndex,...],...], rooms:[{name,article,color}],
   //        furniture: {"x,y": type}, victim:{x,y}, suspects, solution, murderer, clues, theme }
   function fromLayout(def) {
-    const rooms = def.rooms.map((rm, id) => ({ id, name: rm.name, article: rm.article || 'de', color: rm.color, list: [], cells: new Set() }));
+    const rooms = def.rooms.map((rm, id) => ({ id, name: rm.name, key: rm.key || rm.name, article: rm.article !== undefined ? rm.article : 'de', color: rm.color, list: [], cells: new Set() }));
     for (let y = 0; y < def.rows; y++) for (let x = 0; x < def.cols; x++) {
       const rm = rooms[def.layout[y][x]];
       rm.list.push({ x, y }); rm.cells.add(key(x, y));
@@ -530,7 +466,8 @@ const FloorPlan = (() => {
   // ── Hint-engine: uitleggen, niet verklappen ─────────────────
   // placements: array per verdachte met {x,y} of null
   function hint(puzzle, placements) {
-    const N = i => puzzle.suspects[i].label;
+    const G = FP_G();
+    const N = i => G.who(puzzle.suspects[i]);
     const n = puzzle.suspects.length;
     const P = placements.map(c => c || null);
     const mentions = (c, i) => (UNARY.has(c.kind) || c.kind === 'alone') ? c.s === i : BINARY.has(c.kind) ? (c.a === i || c.b === i) : false;
@@ -544,12 +481,12 @@ const FloorPlan = (() => {
       const bad = puzzle.clues.findIndex(c => holds(c, A1, puzzle) === false || holds(c, P, puzzle) === false);
       if (bad !== -1) {
         return { type: 'mistake', suspect: i, clues: [bad], cells: single,
-                 text: FP_T`${N(i)} staat verkeerd. Aanwijzing ${bad + 1} zegt: "${puzzle.clueTexts[bad]}"`,
+                 text: G.text('hint/wrong', puzzle, { s: i, n: bad + 1, quote: puzzle.clueTexts[bad] }),
                  detail: FP_T('Haal de verdachte weg en kijk welke vakjes die aanwijzing wél toelaat.') };
       }
       if (victimRule(P, puzzle) === false) {
-        return { type: 'mistake', suspect: i, clues: [], cells: single,
-                 text: FP_T`Er staan twee verdachten in de ${puzzle.theme.roomWord || 'kamer'} van het slachtoffer. Alleen de moordenaar was daar.`,
+        return { type: 'mistake', reason: 'victim-room', suspect: i, clues: [], cells: single,
+                 text: G.text('hint/two-in-victim-room', puzzle),
                  detail: FP_T('Precies één persoon bevond zich in die kamer.') };
       }
       const rel = puzzle.clues.findIndex(c => mentions(c, i));
@@ -577,9 +514,9 @@ const FloorPlan = (() => {
     }
     const roomIds = new Set(cands[best].map(c => roomAt(puzzle, c).id));
     const one = roomIds.size === 1 ? puzzle.rooms.find(q => q.id === [...roomIds][0]) : null;
-    const roomTxt = one ? FP_T`in ${one.article || 'de'} ${one.name}` : FP_T`verdeeld over ${roomIds.size} ${puzzle.theme.roomWordPlural || 'kamers'}`;
-    return { type: 'narrow', suspect: best, clues: related, cells: cands[best],
-             text: FP_T`Begin met ${N(best)}: er zijn nog maar ${cands[best].length} mogelijke vakjes, ${roomTxt}.`,
+    const text = one ? G.text('hint/start.one', puzzle, { s: best, n: cands[best].length, room: one.id })
+                     : G.text('hint/start.spread', puzzle, { s: best, n: cands[best].length, k: roomIds.size });
+    return { type: 'narrow', suspect: best, clues: related, cells: cands[best], text,
              detail: related.length ? FP_T`Aanwijzing ${nrs} beperkt de opties. Streep vakjes weg die er niet aan voldoen.` : FP_T('Gebruik de plaatsen van de anderen om verder te snoeien.') };
   }
 
