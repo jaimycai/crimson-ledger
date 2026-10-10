@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Video review</title>
+<style>
+  :root { --bg: #f4efe8; --panel: #fffdf9; --ink: #241510; --soft: #6f5d50; --line: #e2d8cc; --accent: #b53a24; --on: #fff; --sound: #2f6f8f; --clip: #eadfd2; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #15100d; --panel: #1f1814; --ink: #f3ebe2; --soft: #b3a291; --line: #3a2e26; --accent: #e0674d; --on: #1a0d08; --sound: #6fb3d2; --clip: #2c221c; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.45 -apple-system, BlinkMacSystemFont, Inter, sans-serif; }
+  header { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: space-between; padding: 14px 20px; background: var(--panel); border-bottom: 1px solid var(--line); }
+  h1 { margin: 0; font: 700 19px/1.2 Georgia, serif; }
+  .meta { color: var(--soft); font-size: 13px; }
+  button { font: inherit; border-radius: 10px; border: 1px solid var(--line); background: var(--panel); color: var(--ink); padding: 8px 14px; cursor: pointer; }
+  button.main { background: var(--accent); border-color: var(--accent); color: var(--on); font-weight: 600; }
+  button.sel { outline: 2px solid var(--accent); }
+  .wrap { display: grid; grid-template-columns: minmax(260px, 420px) 1fr; gap: 24px; padding: 20px; align-items: start; }
+  .player { position: relative; aspect-ratio: 9 / 16; background: #000; border-radius: 14px; overflow: hidden; cursor: crosshair; }
+  video { width: 100%; height: 100%; display: block; }
+  .pin { position: absolute; width: 24px; height: 24px; margin: -12px 0 0 -12px; border-radius: 50%; background: var(--accent); color: var(--on); font: 700 12px/24px sans-serif; text-align: center; box-shadow: 0 0 0 3px #fff; pointer-events: none; }
+  .controls { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; align-items: center; }
+  .now { font-variant-numeric: tabular-nums; color: var(--soft); margin-left: auto; }
+  .tl { position: relative; height: 74px; margin-top: 14px; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; user-select: none; }
+  .clip { position: absolute; top: 8px; height: 34px; background: var(--clip); border: 1px solid var(--line); border-radius: 6px; font-size: 11px; padding: 2px 6px; white-space: nowrap; color: var(--soft); }
+  .clip span { display: block; overflow: hidden; text-overflow: clip; }
+  .clip.trimmed { border-color: var(--accent); }
+  .h { position: absolute; top: 0; bottom: 0; width: 10px; cursor: ew-resize; z-index: 2; }
+  .h.l { left: -5px; } .h.r { right: -5px; }
+  .h:after { content: ''; position: absolute; left: 4px; top: 6px; bottom: 6px; width: 2px; background: var(--accent); opacity: .6; }
+  .head { position: absolute; top: 0; bottom: 0; width: 2px; background: var(--accent); pointer-events: none; }
+  .dot { position: absolute; bottom: 8px; width: 12px; height: 12px; margin-left: -6px; border-radius: 50%; background: var(--accent); }
+  .dot.s { background: var(--sound); }
+  .scrub { position: absolute; left: 0; right: 0; bottom: 0; height: 28px; cursor: pointer; }
+  .list h2 { margin: 0 0 8px; font: 700 16px/1.2 Georgia, serif; }
+  .c { display: flex; gap: 8px; align-items: flex-start; padding: 8px 0; border-top: 1px dashed var(--line); }
+  .c .tag { flex: none; min-width: 74px; font-size: 12px; color: var(--soft); padding-top: 6px; cursor: pointer; }
+  .c textarea { flex: 1; min-height: 46px; resize: vertical; font: inherit; border: 1px solid var(--line); border-radius: 8px; padding: 6px 8px; background: transparent; color: var(--ink); }
+  .help { color: var(--soft); font-size: 14px; margin: 0 0 12px; }
+  #toast { position: fixed; left: 50%; bottom: 24px; transform: translateX(-50%); background: var(--ink); color: var(--bg); padding: 10px 16px; border-radius: 10px; display: none; }
+  @media (max-width: 760px) { .wrap { grid-template-columns: 1fr; padding: 12px 16px; } .player { max-width: 360px; margin: 0 auto; } }
+</style>
+</head>
+<body>
+<header>
+  <div><h1 id="title">Review</h1><div class="meta" id="meta"></div></div>
+  <div><button id="clear">Alles wissen</button> <button class="main" id="copy">Kopieer alle opmerkingen</button></div>
+</header>
+<div class="wrap">
+  <div>
+    <div class="player" id="player"><video id="v" playsinline preload="auto"></video></div>
+    <div class="controls">
+      <button id="play">▶︎ Afspelen</button>
+      <button id="s1" class="sel">1x</button><button id="s2">2x</button>
+      <button id="snd" title="Opmerking over het geluid op dit moment">♪ Geluid</button>
+      <span class="now" id="now">0,00 s</span>
+    </div>
+    <div class="tl" id="tl"><div class="scrub" id="scrub"></div><div class="head" id="head"></div></div>
+  </div>
+  <div class="list">
+    <p class="help">Klik op het beeld om op dat moment en die plek een opmerking te pinnen (de video pauzeert). ♪ Geluid zet een opmerking over wat je nu hoort. Sleep de randen van een scène in de tijdlijn als een knip op de verkeerde plek zit. Klaar? Kopieer alles en plak het in de chat.</p>
+    <h2>Opmerkingen</h2>
+    <div id="list"></div>
+  </div>
+</div>
+<div id="toast"></div>
+<script>
+const R = /*REVIEW*/null;
+const KEY = 'review:' + R.zaak + ':v' + R.versie + ':' + R.gemaakt;
+const fmt = s => s.toFixed(2).replace('.', ',') + ' s';
+const v = document.getElementById('v'); v.src = R.video;
+let st = { notes: [], trims: {} };
+try { st = JSON.parse(localStorage.getItem(KEY)) || st; } catch (e) {}
+const save = () => { try { localStorage.setItem(KEY, JSON.stringify(st)); } catch (e) {} };
+document.getElementById('title').textContent = `Review ${R.zaak} · versie ${R.versie}`;
+document.getElementById('meta').textContent = `${fmt(R.duur)} · ${R.scenes.length} scènes · ${R.bron}`;
+const clips = R.scenes.map((s, i) => ({ i, title: s.title, a: s.t, b: i + 1 < R.scenes.length ? R.scenes[i + 1].t : R.duur }));
+const sceneAt = t => clips.reduce((c, x) => t >= x.a ? x : c, clips[0]);
+
+// controls
+const playBtn = document.getElementById('play');
+playBtn.onclick = () => v.paused ? v.play() : v.pause();
+v.onplay = () => playBtn.textContent = '❚❚ Pauze'; v.onpause = () => playBtn.textContent = '▶︎ Afspelen';
+const speed = r => { v.playbackRate = r; document.getElementById('s1').classList.toggle('sel', r === 1); document.getElementById('s2').classList.toggle('sel', r === 2); };
+document.getElementById('s1').onclick = () => speed(1); document.getElementById('s2').onclick = () => speed(2);
+document.addEventListener('keydown', e => { if (e.target.tagName === 'TEXTAREA') return; if (e.code === 'Space') { e.preventDefault(); playBtn.click(); } });
+
+// timeline
+const tl = document.getElementById('tl'), head = document.getElementById('head');
+const pct = t => t / R.duur * 100;
+function drawTl() {
+  tl.querySelectorAll('.clip,.dot').forEach(e => e.remove());
+  clips.forEach(c => {
+    const tr = st.trims[c.i] || {}, a = tr.a ?? c.a, b = tr.b ?? c.b;
+    const el = document.createElement('div'); el.className = 'clip' + (st.trims[c.i] ? ' trimmed' : '');
+    el.style.left = pct(a) + '%'; el.style.width = pct(b - a) + '%'; el.innerHTML = `<span>${c.title}</span>`; el.title = `${c.title}: ${fmt(a)} – ${fmt(b)}`;
+    ['l', 'r'].forEach(side => {
+      const h = document.createElement('div'); h.className = 'h ' + side; el.appendChild(h);
+      h.onpointerdown = e => {
+        e.preventDefault(); h.setPointerCapture(e.pointerId); v.pause();
+        h.onpointermove = m => {
+          const r = tl.getBoundingClientRect(), t = Math.max(0, Math.min(R.duur, (m.clientX - r.left) / r.width * R.duur));
+          const cur = st.trims[c.i] || {}; cur[side === 'l' ? 'a' : 'b'] = Math.round(t * 100) / 100; st.trims[c.i] = cur; v.currentTime = t;
+          const a2 = cur.a ?? c.a, b2 = cur.b ?? c.b; el.style.left = pct(a2) + '%'; el.style.width = pct(b2 - a2) + '%'; el.classList.add('trimmed');
+        };
+        h.onpointerup = () => { h.onpointermove = null; save(); drawAll(); };
+      };
+    });
+    tl.appendChild(el);
+  });
+  st.notes.forEach(n => { const d = document.createElement('div'); d.className = 'dot' + (n.kind === 'geluid' ? ' s' : ''); d.style.left = pct(n.t) + '%'; tl.appendChild(d); });
+}
+const scrub = document.getElementById('scrub');
+const seekTo = e => { const r = tl.getBoundingClientRect(); v.currentTime = Math.max(0, Math.min(R.duur, (e.clientX - r.left) / r.width * R.duur)); };
+scrub.onpointerdown = e => { seekTo(e); scrub.setPointerCapture(e.pointerId); scrub.onpointermove = seekTo; scrub.onpointerup = () => scrub.onpointermove = null; };
+const tick = () => { head.style.left = pct(v.currentTime) + '%'; document.getElementById('now').textContent = fmt(v.currentTime) + ' · ' + sceneAt(v.currentTime).title; drawPins(); requestAnimationFrame(tick); };
+requestAnimationFrame(tick);
+
+// pins on the picture
+const player = document.getElementById('player');
+player.addEventListener('click', e => {
+  v.pause(); const r = player.getBoundingClientRect();
+  st.notes.push({ kind: 'beeld', t: Math.round(v.currentTime * 100) / 100, x: Math.round((e.clientX - r.left) / r.width * 100), y: Math.round((e.clientY - r.top) / r.height * 100), text: '' });
+  save(); drawAll(true);
+});
+document.getElementById('snd').onclick = () => { st.notes.push({ kind: 'geluid', t: Math.round(v.currentTime * 100) / 100, text: '' }); save(); drawAll(true); };
+function drawPins() {
+  player.querySelectorAll('.pin').forEach(p => p.remove());
+  st.notes.forEach((n, i) => { if (n.kind !== 'beeld' || Math.abs(n.t - v.currentTime) > 0.4) return;
+    const p = document.createElement('div'); p.className = 'pin'; p.textContent = i + 1; p.style.left = n.x + '%'; p.style.top = n.y + '%'; player.appendChild(p); });
+}
+
+// list
+function drawList(focusLast) {
+  const list = document.getElementById('list'); list.innerHTML = '';
+  st.notes.map((n, i) => ({ n, i })).sort((a, b) => a.n.t - b.n.t).forEach(({ n, i }) => {
+    const c = document.createElement('div'); c.className = 'c';
+    c.innerHTML = `<span class="tag">${i + 1} · ${fmt(n.t)}<br>${n.kind === 'geluid' ? '♪ geluid' : sceneAt(n.t).title}</span><textarea placeholder="Wat moet anders?"></textarea><button title="Verwijder">×</button>`;
+    const ta = c.querySelector('textarea'); ta.value = n.text; ta.oninput = () => { st.notes[i].text = ta.value; save(); };
+    c.querySelector('.tag').onclick = () => { v.currentTime = n.t; };
+    c.querySelector('button').onclick = () => { st.notes.splice(i, 1); save(); drawAll(); };
+    list.appendChild(c);
+    if (focusLast && i === st.notes.length - 1) setTimeout(() => ta.focus(), 0);
+  });
+  Object.entries(st.trims).forEach(([k, tr]) => {
+    const cl = clips[k], c = document.createElement('div'); c.className = 'c';
+    c.innerHTML = `<span class="tag">knip</span><span style="flex:1;padding-top:6px">${cl.title}: ${fmt(tr.a ?? cl.a)} – ${fmt(tr.b ?? cl.b)} (was ${fmt(cl.a)} – ${fmt(cl.b)})</span><button title="Ongedaan">×</button>`;
+    c.querySelector('button').onclick = () => { delete st.trims[k]; save(); drawAll(); };
+    list.appendChild(c);
+  });
+  if (!list.children.length) list.innerHTML = '<p class="help">Nog geen opmerkingen.</p>';
+}
+const drawAll = f => { drawTl(); drawList(f); };
+drawAll();
+
+function allText() {
+  const lines = [...st.notes].sort((a, b) => a.t - b.t).filter(n => n.text.trim()).map(n => n.kind === 'geluid'
+    ? `${fmt(n.t)}, geluid (${sceneAt(n.t).title}): ${n.text.trim()}`
+    : `${fmt(n.t)}, ${sceneAt(n.t).title}, pin op ${n.x}% van links, ${n.y}% van boven: ${n.text.trim()}`);
+  Object.entries(st.trims).forEach(([k, tr]) => { const c = clips[k]; lines.push(`Knip ${c.title}: van ${fmt(c.a)} – ${fmt(c.b)} naar ${fmt(tr.a ?? c.a)} – ${fmt(tr.b ?? c.b)}`); });
+  return `Opmerkingen op ${R.zaak} versie ${R.versie} (${R.bron}):\n` + lines.join('\n');
+}
+const toast = m => { const t = document.getElementById('toast'); t.textContent = m; t.style.display = 'block'; setTimeout(() => t.style.display = 'none', 1800); };
+document.getElementById('copy').onclick = async () => {
+  const txt = allText();
+  try { await navigator.clipboard.writeText(txt); } catch (e) { const ta = document.createElement('textarea'); ta.value = txt; document.body.appendChild(ta); ta.select(); document.execCommand('copy'); ta.remove(); }
+  toast('Gekopieerd. Plak het in de chat.');
+};
+document.getElementById('clear').onclick = () => { if (confirm('Alle opmerkingen en knippen wissen?')) { st = { notes: [], trims: {} }; save(); drawAll(); } };
+</script>
+</body>
+</html>

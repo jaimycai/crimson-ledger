@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Raadsel — motion</title>
+<!-- One "who is the killer?" riddle video for TikTok, built from a case pulled with haal.js.
+     raadsel.html?zaak=c3-0          plays it
+     raadsel.html?zaak=c3-0&t=7.4    one frozen moment
+     Stage 2 of the motion workflow (MOTION-WERKWIJZE.md): scenes are laid out in their final look, without
+     animation yet. Motion is added after Jaimy's storyboard comments. -->
+<style>
+  @font-face { font-family: Playfair; src: url(../../../assets/fonts/PlayfairDisplay-normal.woff2) format('woff2'); font-weight: 400 900; }
+  @font-face { font-family: Playfair; font-style: italic; src: url(../../../assets/fonts/PlayfairDisplay-italic.woff2) format('woff2'); font-weight: 400 900; }
+  @font-face { font-family: Inter; src: url(../../../assets/fonts/Inter-normal.woff2) format('woff2'); font-weight: 100 900; }
+  :root { --ink: #140b08; --ink2: #22140e; --cream: #faf5ef; --soft: #c9b7a4; --gold: #e8be78; --red: #c43e26; --blood: #8f1d12; }
+  html, body { margin: 0; height: 100%; background: #000; overflow: hidden; }
+  #stage { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; transform-origin: 0 0; overflow: hidden;
+    background: radial-gradient(120% 80% at 50% 40%, #2a1810 0%, var(--ink) 60%, #0b0604 100%); color: var(--cream); font-family: Inter, sans-serif; }
+  #grain { position: absolute; inset: 0; pointer-events: none; opacity: .09; mix-blend-mode: overlay; z-index: 50;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23n)'/%3E%3C/svg%3E"); }
+  #vignette { position: absolute; inset: 0; pointer-events: none; z-index: 40; box-shadow: inset 0 0 260px 60px rgba(0,0,0,.75); }
+  #alarm { position: absolute; inset: 0; pointer-events: none; z-index: 41; box-shadow: inset 0 0 220px 40px rgba(196,62,38,.0); }
+  .layer { position: absolute; inset: 0; display: none; }
+  .on { display: block; }
+
+  /* floor plan and what sits on it */
+  #plan { position: absolute; left: 0; top: 0; transform-origin: 0 0; border-radius: 22px; overflow: hidden;
+    box-shadow: 0 40px 90px rgba(0,0,0,.7), 0 0 0 3px rgba(232,190,120,.25); }
+  #plan img { display: block; width: 100%; height: 100%; }
+  .room { position: absolute; transition: none; }
+  .room.dim { background: rgba(12,6,4,.62); }
+  .room.hit { box-shadow: inset 0 0 0 7px var(--gold); border-radius: 10px; }
+  .room.crime { box-shadow: inset 0 0 0 7px var(--red); border-radius: 10px; outline: 6px dashed rgba(196,62,38,.9); outline-offset: 6px; }
+  #victim { position: absolute; border-radius: 50%; box-shadow: 0 0 0 10px rgba(196,62,38,.85), 0 0 0 30px rgba(196,62,38,.3); }
+
+  .serif { font-family: Playfair, Georgia, serif; }
+  .center { position: absolute; left: 70px; right: 70px; text-align: center; }
+
+  /* scene: hook */
+  #hook .l1 { top: 560px; font: 800 96px/1.05 Playfair, serif; letter-spacing: -1px; }
+  #hook .num { top: 760px; font: 900 420px/1 Playfair, serif; color: var(--red); }
+  #hook .l2 { top: 1200px; font: 800 96px/1 Playfair, serif; }
+
+  /* captions under the plan */
+  .cap { top: 1330px; }
+  .cap .big { font: 800 84px/1.05 Playfair, serif; }
+  .cap .small { margin-top: 22px; font: italic 500 50px/1.25 Playfair, serif; color: var(--soft); }
+  .cap em { color: var(--red); font-style: normal; }
+
+  /* suspects */
+  #cards { position: absolute; left: 60px; right: 60px; top: 1080px; display: flex; justify-content: center; gap: 36px; }
+  .card { width: 280px; text-align: center; }
+  .ava { width: 240px; height: 240px; margin: 0 auto; border-radius: 50%; overflow: hidden; box-shadow: 0 0 0 8px var(--c), 0 24px 50px rgba(0,0,0,.6); background: var(--ink2); }
+  .ava svg { width: 100%; height: 100%; display: block; }
+  .card .nm { margin-top: 30px; font: 800 48px/1.1 Playfair, serif; color: var(--cream); }
+  .card .q { position: absolute; margin-top: -330px; margin-left: 170px; font: 900 120px/1 Playfair, serif; color: var(--red); }
+
+  /* one statement */
+  #stmt .who { position: absolute; left: 90px; top: 1040px; display: flex; align-items: center; gap: 30px; }
+  #stmt .who .ava { width: 150px; height: 150px; margin: 0; box-shadow: 0 0 0 6px var(--c); }
+  #stmt .who .nm { font: 800 56px/1 Playfair, serif; color: var(--gold); }
+  #stmt .who .nr { font: 600 30px/1 Inter, sans-serif; color: var(--soft); letter-spacing: 3px; text-transform: uppercase; margin-bottom: 14px; }
+  #stmt .txt { position: absolute; left: 90px; right: 150px; top: 1240px; padding: 44px 50px; border-radius: 34px; background: var(--cream); color: #241510;
+    font: 600 58px/1.28 Inter, sans-serif; box-shadow: 0 30px 70px rgba(0,0,0,.55); }
+  #stmt .txt:before { content: ''; position: absolute; left: 70px; top: -26px; border: 26px solid transparent; border-bottom-color: var(--cream); border-top: 0; }
+  .mark { background: linear-gradient(transparent 58%, rgba(232,190,120,.75) 58%); padding: 0 4px; }
+
+  /* all statements */
+  #list { position: absolute; left: 70px; right: 70px; top: 1020px; }
+  .row { display: flex; gap: 22px; align-items: flex-start; margin-bottom: 26px; }
+  .row .ava { width: 84px; height: 84px; margin: 0; flex: none; box-shadow: 0 0 0 4px var(--c); }
+  .row .t { font: 500 42px/1.25 Inter, sans-serif; color: var(--cream); padding-top: 6px; }
+  .row .t b { color: var(--gold); font-weight: 700; }
+
+  /* countdown */
+  #clock { position: absolute; right: 50px; top: 240px; width: 190px; height: 190px; display: none; }
+  #clock svg { position: absolute; inset: 0; transform: rotate(-90deg); }
+  #clock .n { position: absolute; inset: 0; display: grid; place-items: center; font: 900 92px/1 Playfair, serif; }
+  #clock.red .n { color: var(--red); }
+
+  /* time's up + end card */
+  #tijd .t1 { top: 330px; font: 900 220px/1 Playfair, serif; color: var(--red); }
+  #tijd .t2 { top: 600px; font: 800 86px/1.05 Playfair, serif; }
+  #tijd #cards2 { position: absolute; left: 60px; right: 60px; top: 860px; display: flex; justify-content: center; gap: 36px; }
+  #tijd .t3 { top: 1360px; font: italic 500 54px/1.3 Playfair, serif; color: var(--soft); }
+  #eind .icon { position: absolute; left: 390px; top: 560px; width: 300px; height: 300px; border-radius: 66px; box-shadow: 0 30px 80px rgba(0,0,0,.7), 0 0 0 3px rgba(232,190,120,.3); }
+  #eind .e1 { top: 940px; font: 900 104px/1 Playfair, serif; }
+  #eind .e2 { top: 1080px; font: italic 500 56px/1.3 Playfair, serif; color: var(--gold); }
+  #eind .e3 { top: 1240px; font: 600 40px/1.3 Inter, sans-serif; color: var(--soft); letter-spacing: 2px; }
+</style>
+</head>
+<body>
+<div id="stage">
+  <div id="plan"><img id="planimg" src="../motion/c3-0/plan.png" alt=""><div id="rooms"></div><div id="victim"></div></div>
+  <div class="layer" id="hook"><div class="center l1">Kun jij de dader<br>vinden in</div><div class="center num" id="hooknum">15</div><div class="center l2">seconden?</div></div>
+  <div class="layer" id="cap"><div class="center cap"><div class="big" id="capbig"></div><div class="small" id="capsmall"></div></div></div>
+  <div class="layer" id="sus"><div id="cards"></div></div>
+  <div class="layer" id="stmt"><div class="who"><div class="ava" id="sava"></div><div><div class="nr" id="snr"></div><div class="nm" id="snm"></div></div></div><div class="txt" id="stxt"></div></div>
+  <div class="layer" id="all"><div id="list"></div></div>
+  <div class="layer" id="tijd"><div class="center t1">Tijd!</div><div class="center t2">Wie is de moordenaar?</div><div id="cards2"></div><div class="center t3">Zet je antwoord in de reacties.<br>Morgen volgt het juiste antwoord.</div></div>
+  <div class="layer" id="eind"><img class="icon" src="../../../icon-1024.png" alt=""><div class="center e1">Crimson Ledger</div><div class="center e2">Elke dag een nieuwe zaak</div><div class="center e3">GRATIS IN DE APP STORE</div></div>
+  <div id="clock"><svg viewBox="0 0 190 190"><circle cx="95" cy="95" r="84" fill="rgba(20,11,8,.85)" stroke="rgba(232,190,120,.25)" stroke-width="12"/><circle id="arc" cx="95" cy="95" r="84" fill="none" stroke="#e8be78" stroke-width="12" stroke-linecap="round" stroke-dasharray="527.8"/></svg><div class="n" id="clockn">15</div></div>
+  <div id="alarm"></div><div id="vignette"></div><div id="grain"></div>
+</div>
+<script src="kern.js"></script>
+<script>document.write(`<script src="../motion/${Studio.q.get('zaak') || 'c3-0'}/zaak.js"><\/script>`);</script>
+<script>
+const Z = window.ZAAK, zaak = Studio.q.get('zaak') || 'c3-0';
+const $ = id => document.getElementById(id);
+const esc = s => s.replace(/[&<>]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
+$('planimg').src = `../motion/${zaak}/plan.png`;
+
+// ── timing, from the case itself ────────────────────────────
+const N = Z.statements.length, STEP = 2.2, CLOCK0 = 6.6;
+const SECS = CLOCK0 + N * STEP > CLOCK0 + 15 - 4 ? 25 : 15;     // the clock must outlast the statements by 4 s
+const END = CLOCK0 + SECS;
+$('hooknum').textContent = SECS;
+const scenes = [
+  { id: 'hook',  t: 0,   still: 0.9, title: 'Haak', beschrijving: `Zwart scherm. "Kun jij de dader vinden in ${SECS} seconden?" Het getal ${SECS} slaat rood in beeld; de plattegrond ligt wazig op de achtergrond.` },
+  { id: 'crime', t: 1.6, still: 2.6, title: 'Plaats delict', beschrijving: `De camera duikt de plattegrond in. Alles wordt donker behalve de ${roomName(Z.victim.roomId)}; een rode puls op het slachtoffer.` },
+  { id: 'rule',  t: 3.4, still: 4.4, title: 'De regel', beschrijving: 'Rode stippellijn om de kamer van het slachtoffer. In beeld: de moordenaar was daar als enige.' },
+  { id: 'sus',   t: 5.0, still: 6.0, title: `${Z.suspects.length} verdachten`, beschrijving: 'De plattegrond schuift omhoog; de portretten klappen één voor één open, elk in hun eigen kleur.' },
+  ...Z.statements.map((s, i) => ({ id: 'st' + i, t: CLOCK0 + i * STEP, still: CLOCK0 + i * STEP + 1.4, title: `Verklaring ${i + 1}`,
+    beschrijving: `${who(s).label} zegt het hardop: tekstballon schuift in, de genoemde kamer licht goud op op de plattegrond. De klok rechtsboven loopt vanaf hier.` })),
+  { id: 'all',   t: CLOCK0 + N * STEP, still: CLOCK0 + N * STEP + 1.2, title: 'Alles op een rij', beschrijving: 'Alle verklaringen onder elkaar onder de plattegrond. Klok tikt hoorbaar.' },
+  { id: 'last',  t: END - 3, still: END - 1.5, title: 'Laatste 3 seconden', beschrijving: 'Klok wordt rood, rode gloed aan de randen, elke seconde een harde tik.' },
+  { id: 'tijd',  t: END, still: END + 1.2, title: 'Tijd!', beschrijving: '"Tijd!" slaat in. De verdachten staan naast elkaar met een rood vraagteken. Oproep: antwoord in de reacties.' },
+  { id: 'eind',  t: END + 2.6, still: END + 3.6, title: 'Eindkaart', beschrijving: 'App-icoon, Crimson Ledger, "Elke dag een nieuwe zaak". Eerste en enige keer dat de app genoemd wordt.' },
+];
+const duration = END + 5.4;
+function roomName(id) { return (Z.rooms.find(r => r.id === id) || {}).name || ''; }
+function who(s) { return s.whoIdx >= 0 ? Z.suspects[s.whoIdx] : { label: 'Inspecteur Van Dam', short: 'Van Dam', color: '#8a7a6a', svg: '<svg viewBox="0 0 100 100"><text x="50" y="66" font-size="48" text-anchor="middle">🔎</text></svg>' }; }
+const roomsIn = text => Z.rooms.filter(r => text.toLowerCase().includes(r.name.toLowerCase())).map(r => String(r.id));
+const markRooms = text => Z.rooms.reduce((s, r) => s.replace(new RegExp(r.name, 'i'), m => `<span class="mark">${m}</span>`), esc(text));
+
+// ── build the static pieces once ────────────────────────────
+$('rooms').innerHTML = Z.rooms.map(r => `<div class="room" data-id="${r.id}" style="left:${r.box.x * 100}%;top:${r.box.y * 100}%;width:${r.box.w * 100}%;height:${r.box.h * 100}%"></div>`).join('');
+const vc = Z.cells[Z.victim.x + ',' + Z.victim.y];
+Object.assign($('victim').style, { left: (vc.x + vc.w * .2) * 100 + '%', top: (vc.y + vc.h * .2) * 100 + '%', width: vc.w * 60 + '%', height: vc.h * 60 + '%' });
+const card = (s, q) => `<div class="card" style="--c:${s.color}"><div class="ava">${s.svg}</div><div class="nm">${esc(s.short)}</div>${q ? '<div class="q">?</div>' : ''}</div>`;
+$('cards').innerHTML = Z.suspects.map(s => card(s)).join('');
+$('cards2').innerHTML = Z.suspects.map(s => card(s, true)).join('');
+$('list').innerHTML = Z.statements.map(s => `<div class="row" style="--c:${who(s).color}"><div class="ava">${who(s).svg}</div><div class="t"><b>${esc(who(s).short)}:</b> ${esc(s.text)}</div></div>`).join('');
+
+// plan placement per scene: [x, y, width] on the 1080x1920 stage
+const PW = w => w / Z.aspect;
+const PLAN = { hook: [-80, 420, 1240], crime: [60, 300, 960], rule: [60, 300, 960], sus: [200, 230, 680], st: [80, 230, 700], all: [80, 230, 640], last: [80, 230, 640] };
+
+function render(t) {
+  const s = Studio.sceneAt(scenes, t), kind = s.id.startsWith('st') ? 'st' : s.id;
+  document.querySelectorAll('.layer').forEach(l => l.classList.remove('on'));
+  const show = id => $(id).classList.add('on');
+  const p = PLAN[kind];
+  $('plan').style.display = p ? 'block' : 'none';
+  if (p) Object.assign($('plan').style, { left: p[0] + 'px', top: p[1] + 'px', width: p[2] + 'px', height: PW(p[2]) + 'px',
+    filter: kind === 'hook' ? 'blur(14px) brightness(.35)' : 'none' });
+  // room states
+  const hit = kind === 'st' ? roomsIn(Z.statements[+s.id.slice(2)].text) : [];
+  document.querySelectorAll('.room').forEach(el => {
+    const id = el.dataset.id, isCrime = id === String(Z.victim.roomId);
+    el.className = 'room' + (kind === 'crime' && !isCrime ? ' dim' : '') + (kind === 'rule' && isCrime ? ' crime' : '')
+      + (kind === 'rule' && !isCrime ? ' dim' : '') + (kind === 'st' && hit.length && !hit.includes(id) ? ' dim' : '') + (kind === 'st' && hit.includes(id) ? ' hit' : '');
+  });
+  $('victim').style.display = kind === 'crime' || kind === 'rule' ? 'block' : 'none';
+  // layers
+  if (kind === 'hook') show('hook');
+  if (kind === 'crime') { show('cap'); $('capbig').textContent = Z.victim.name || 'Het slachtoffer'; $('capsmall').innerHTML = `dood gevonden in de <em>${esc(roomName(Z.victim.roomId))}</em>`; }
+  if (kind === 'rule') { show('cap'); $('capbig').textContent = 'De moordenaar was daar als enige.'; $('capsmall').textContent = 'Wie stond er in die kamer?'; }
+  if (kind === 'sus') show('sus');
+  if (kind === 'st') {
+    show('stmt'); const i = +s.id.slice(2), st = Z.statements[i], w = who(st);
+    $('sava').innerHTML = w.svg; $('sava').style.setProperty('--c', w.color);
+    $('snm').textContent = w.label; $('snr').textContent = `Verklaring ${i + 1} van ${N}`; $('stxt').innerHTML = markRooms(st.text);
+  }
+  if (kind === 'all' || kind === 'last') show('all');
+  if (kind === 'tijd') show('tijd');
+  if (kind === 'eind') show('eind');
+  // clock
+  const running = t >= CLOCK0 && t < END, left = Math.max(0, Math.ceil(END - t));
+  $('clock').style.display = running ? 'block' : 'none';
+  $('clockn').textContent = left; $('clock').classList.toggle('red', left <= 3);
+  $('arc').style.strokeDashoffset = 527.8 * (1 - (END - t) / SECS);
+  $('arc').style.stroke = left <= 3 ? '#c43e26' : '#e8be78';
+  $('alarm').style.boxShadow = `inset 0 0 220px 40px rgba(196,62,38,${kind === 'last' ? .55 : 0})`;
+}
+
+// sound cues for render.js (Web Audio is not in screenshots, so the track is made separately)
+const cues = [
+  { t: 0.15, s: 'slag' }, { t: 1.6, s: 'whoosh' }, { t: 2.0, s: 'puls' }, { t: 3.4, s: 'slag' },
+  ...Z.suspects.map((_, i) => ({ t: 5.2 + i * .35, s: 'klik' })), ...Z.statements.map((_, i) => ({ t: CLOCK0 + i * STEP, s: 'whoosh' })),
+  ...Array.from({ length: SECS }, (_, i) => ({ t: CLOCK0 + i, s: END - (CLOCK0 + i) <= 3 ? 'tik-hard' : 'tik' })),
+  { t: END, s: 'gong' }, { t: END + 2.6, s: 'whoosh' },
+];
+Studio.start({ duration, scenes, cues, render });
+</script>
+</body>
+</html>

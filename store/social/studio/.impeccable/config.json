@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "dark-glow",
+        "value": "*",
+        "files": [
+          "store/social/studio/raadsel.html"
+        ],
+        "createdAt": "2026-10-10T08:52:46.137Z",
+        "reason": "Claude: remaining red/amber inset alarm and victim rings are literal crime-scene and countdown signals in a video frame, not UI decoration"
+      }
+    ]
+  }
+}

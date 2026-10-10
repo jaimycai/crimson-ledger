@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Storyboard</title>
+<style>
+  :root { --bg: #f4efe8; --panel: #fffdf9; --ink: #241510; --soft: #6f5d50; --line: #e2d8cc; --accent: #b53a24; --pin: #b53a24; --on: #fff; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #15100d; --panel: #1f1814; --ink: #f3ebe2; --soft: #b3a291; --line: #3a2e26; --accent: #e0674d; --pin: #e0674d; --on: #1a0d08; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.45 -apple-system, BlinkMacSystemFont, "Inter", sans-serif; }
+  header { position: sticky; top: 0; z-index: 5; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between;
+    padding: 14px 20px; background: var(--panel); border-bottom: 1px solid var(--line); }
+  h1 { margin: 0; font: 700 19px/1.2 Georgia, serif; }
+  .meta { color: var(--soft); font-size: 13px; }
+  button { font: inherit; border-radius: 10px; border: 1px solid var(--line); background: var(--panel); color: var(--ink); padding: 8px 14px; cursor: pointer; }
+  button.main { background: var(--accent); border-color: var(--accent); color: var(--on); font-weight: 600; }
+  .help { padding: 12px 20px 0; color: var(--soft); font-size: 14px; max-width: 900px; }
+  main { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 22px; padding: 20px; }
+  .shot { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; }
+  .frame { position: relative; aspect-ratio: 9 / 16; cursor: crosshair; background: #000; }
+  .frame img { width: 100%; height: 100%; display: block; }
+  .pin { position: absolute; width: 26px; height: 26px; margin: -13px 0 0 -13px; border-radius: 50%; background: var(--pin); color: var(--on);
+    font: 700 13px/26px sans-serif; text-align: center; box-shadow: 0 0 0 3px #fff, 0 4px 10px rgba(0,0,0,.5); pointer-events: none; }
+  .info { padding: 12px 14px 14px; display: flex; flex-direction: column; gap: 6px; }
+  .head { display: flex; justify-content: space-between; gap: 8px; font-weight: 700; }
+  .time { font-variant-numeric: tabular-nums; color: var(--soft); font-weight: 500; }
+  .desc { color: var(--soft); font-size: 14px; }
+  .c { display: flex; gap: 8px; align-items: flex-start; border-top: 1px dashed var(--line); padding-top: 8px; }
+  .c .n { flex: none; width: 22px; height: 22px; border-radius: 50%; background: var(--pin); color: var(--on); font: 700 12px/22px sans-serif; text-align: center; margin-top: 4px; }
+  .c textarea { flex: 1; min-height: 52px; resize: vertical; font: inherit; border: 1px solid var(--line); border-radius: 8px; padding: 6px 8px; background: transparent; color: var(--ink); }
+  .c .x { padding: 2px 8px; }
+  .general { padding: 0 20px 30px; max-width: 900px; }
+  .general textarea { width: 100%; min-height: 70px; font: inherit; border: 1px solid var(--line); border-radius: 10px; padding: 10px; background: var(--panel); color: var(--ink); }
+  #toast { position: fixed; left: 50%; bottom: 24px; transform: translateX(-50%); background: var(--ink); color: var(--bg); padding: 10px 16px; border-radius: 10px; display: none; }
+  @media (max-width: 560px) { main { grid-template-columns: 1fr 1fr; gap: 12px; padding: 12px; } header { padding: 12px 16px; } }
+</style>
+</head>
+<body>
+<header>
+  <div><h1 id="title">Storyboard</h1><div class="meta" id="meta"></div></div>
+  <div><button id="clear">Alles wissen</button> <button class="main" id="copy">Kopieer alle opmerkingen</button></div>
+</header>
+<p class="help">Klik op een plek in een beeld om daar een opmerking te pinnen. Elke opmerking onthoudt het shot, de tijd en de plek. Klaar? Kopieer alles en plak het in de chat.</p>
+<main id="grid"></main>
+<div class="general"><b>Algemene opmerking</b> (geldt voor de hele video)<textarea id="gen" placeholder="Bijvoorbeeld: alles iets rustiger, minder tekst per beeld"></textarea></div>
+<div id="toast"></div>
+<script>
+const B = {"zaak":"c3-0","bron":"raadsel.html?zaak=c3-0","duur":27,"gemaakt":"2026-10-10T08:54:31.585Z","shots":[{"nr":1,"img":"bord/01.jpg","t":0,"still":0.9,"title":"Haak","beschrijving":"Zwart scherm. \"Kun jij de dader vinden in 15 seconden?\" Het getal 15 slaat rood in beeld; de plattegrond ligt wazig op de achtergrond."},{"nr":2,"img":"bord/02.jpg","t":1.6,"still":2.6,"title":"Plaats delict","beschrijving":"De camera duikt de plattegrond in. Alles wordt donker behalve de Voorraadkamer; een rode puls op het slachtoffer."},{"nr":3,"img":"bord/03.jpg","t":3.4,"still":4.4,"title":"De regel","beschrijving":"Rode stippellijn om de kamer van het slachtoffer. In beeld: de moordenaar was daar als enige."},{"nr":4,"img":"bord/04.jpg","t":5,"still":6,"title":"3 verdachten","beschrijving":"De plattegrond schuift omhoog; de portretten klappen één voor één open, elk in hun eigen kleur."},{"nr":5,"img":"bord/05.jpg","t":6.6,"still":8,"title":"Verklaring 1","beschrijving":"Scheepsjongen Nik zegt het hardop: tekstballon schuift in, de genoemde kamer licht goud op op de plattegrond. De klok rechtsboven loopt vanaf hier."},{"nr":6,"img":"bord/06.jpg","t":8.8,"still":10.200000000000001,"title":"Verklaring 2","beschrijving":"Scheepsjongen Nik zegt het hardop: tekstballon schuift in, de genoemde kamer licht goud op op de plattegrond. De klok rechtsboven loopt vanaf hier."},{"nr":7,"img":"bord/07.jpg","t":11,"still":12.4,"title":"Verklaring 3","beschrijving":"Dokter Sal zegt het hardop: tekstballon schuift in, de genoemde kamer licht goud op op de plattegrond. De klok rechtsboven loopt vanaf hier."},{"nr":8,"img":"bord/08.jpg","t":13.2,"still":14.6,"title":"Verklaring 4","beschrijving":"Scheepsjongen Nik zegt het hardop: tekstballon schuift in, de genoemde kamer licht goud op op de plattegrond. De klok rechtsboven loopt vanaf hier."},{"nr":9,"img":"bord/09.jpg","t":15.4,"still":16.6,"title":"Alles op een rij","beschrijving":"Alle verklaringen onder elkaar onder de plattegrond. Klok tikt hoorbaar."},{"nr":10,"img":"bord/10.jpg","t":18.6,"still":20.1,"title":"Laatste 3 seconden","beschrijving":"Klok wordt rood, rode gloed aan de randen, elke seconde een harde tik."},{"nr":11,"img":"bord/11.jpg","t":21.6,"still":22.8,"title":"Tijd!","beschrijving":"\"Tijd!\" slaat in. De verdachten staan naast elkaar met een rood vraagteken. Oproep: antwoord in de reacties."},{"nr":12,"img":"bord/12.jpg","t":24.200000000000003,"still":25.200000000000003,"title":"Eindkaart","beschrijving":"App-icoon, Crimson Ledger, \"Elke dag een nieuwe zaak\". Eerste en enige keer dat de app genoemd wordt."}]};
+const KEY = 'bord:' + B.zaak + ':' + B.gemaakt;
+const fmt = s => s.toFixed(2).replace('.', ',') + ' s';
+let state = { pins: [], gen: '' };
+try { state = JSON.parse(localStorage.getItem(KEY)) || state; } catch (e) {}
+const save = () => { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) {} };
+document.getElementById('title').textContent = 'Storyboard ' + B.zaak;
+document.getElementById('meta').textContent = `${B.shots.length} shots · ${fmt(B.duur)} · ${B.bron}`;
+document.getElementById('gen').value = state.gen || '';
+document.getElementById('gen').addEventListener('input', e => { state.gen = e.target.value; save(); });
+
+function draw() {
+  const grid = document.getElementById('grid'); grid.innerHTML = '';
+  B.shots.forEach(s => {
+    const mine = state.pins.map((p, i) => ({ ...p, i })).filter(p => p.shot === s.nr);
+    const el = document.createElement('section'); el.className = 'shot';
+    el.innerHTML = `<div class="frame"><img src="${s.img}" alt="Shot ${s.nr}"></div>
+      <div class="info"><div class="head"><span>${String(s.nr).padStart(2, '0')} · ${s.title}</span><span class="time">${fmt(s.t)}</span></div>
+      <div class="desc">${s.beschrijving}</div></div>`;
+    const frame = el.querySelector('.frame'), info = el.querySelector('.info');
+    mine.forEach((p, k) => {
+      const pin = document.createElement('div'); pin.className = 'pin'; pin.textContent = k + 1;
+      pin.style.left = p.x + '%'; pin.style.top = p.y + '%'; frame.appendChild(pin);
+      const c = document.createElement('div'); c.className = 'c';
+      c.innerHTML = `<span class="n">${k + 1}</span><textarea placeholder="Wat moet hier anders?"></textarea><button class="x" title="Verwijder">×</button>`;
+      const ta = c.querySelector('textarea'); ta.value = p.text;
+      ta.addEventListener('input', () => { state.pins[p.i].text = ta.value; save(); });
+      c.querySelector('.x').addEventListener('click', () => { state.pins.splice(p.i, 1); save(); draw(); });
+      info.appendChild(c);
+    });
+    frame.addEventListener('click', e => {
+      const r = frame.getBoundingClientRect();
+      state.pins.push({ shot: s.nr, x: Math.round((e.clientX - r.left) / r.width * 100), y: Math.round((e.clientY - r.top) / r.height * 100), text: '' });
+      save(); draw();
+      const tas = document.querySelectorAll('.shot')[s.nr - 1].querySelectorAll('textarea'); tas[tas.length - 1].focus();
+    });
+    grid.appendChild(el);
+  });
+}
+draw();
+
+function allText() {
+  const lines = [...state.pins].sort((a, b) => a.shot - b.shot).filter(p => p.text.trim()).map(p => {
+    const s = B.shots.find(x => x.nr === p.shot);
+    return `Shot ${String(p.shot).padStart(2, '0')} (${s.title}), ${fmt(s.t)}, pin op ${p.x}% van links, ${p.y}% van boven: ${p.text.trim()}`;
+  });
+  if (state.gen.trim()) lines.push(`Algemeen: ${state.gen.trim()}`);
+  return `Opmerkingen op storyboard ${B.zaak} (${B.bron}):\n` + lines.join('\n');
+}
+const toast = m => { const t = document.getElementById('toast'); t.textContent = m; t.style.display = 'block'; setTimeout(() => t.style.display = 'none', 1800); };
+document.getElementById('copy').addEventListener('click', async () => {
+  const txt = allText();
+  try { await navigator.clipboard.writeText(txt); toast('Gekopieerd. Plak het in de chat.'); }
+  catch (e) { const ta = document.createElement('textarea'); ta.value = txt; document.body.appendChild(ta); ta.select(); document.execCommand('copy'); ta.remove(); toast('Gekopieerd.'); }
+});
+document.getElementById('clear').addEventListener('click', () => { if (confirm('Alle opmerkingen wissen?')) { state = { pins: [], gen: '' }; save(); document.getElementById('gen').value = ''; draw(); } });
+</script>
+</body>
+</html>
