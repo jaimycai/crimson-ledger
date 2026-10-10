@@ -96,3 +96,6 @@ eerste publicatie op zijn vroegst 6 oktober.
 - 10 okt: Jaimy koos drie carrousels per dag, rechtstreeks gepland in TikTok Studio (AI-label, "Jouw merk").
   Gepland: week2c 01 t/m 04 (10 okt 21:00; 11 okt 12:00, 16:00, 21:00). Nog te plannen: 05 t/m 21 (12 t/m 17 okt,
   rooster in TIKTOK-PLAN.md §10). Post 4 staat op 235 views en 1 reactie; groeide niet meer na de eerste 4,5 uur.
+- 10 okt: naam op elk kanaal wordt "Crimson Ledger · Crime Sudoku" (Jaimy; niet "Murder"). YouTube @crimsonledgerapp
+  staat zo sinds 10 okt. TikTok-weergavenaam kan pas vanaf 13 okt weer wijzigen: dan aanpassen in TikTok Studio of de app.
+  Kanalen via Buffer (gratis); TikTok gekoppeld, YouTube wacht op toestemming van Jaimy.
