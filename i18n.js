@@ -151,6 +151,7 @@ const I18n = {
         const nl = s.label;
         if (e.suspects[nl]) s.label = e.suspects[nl];
         if (e.suspectShort && e.suspectShort[nl] && typeof Themes !== 'undefined') Themes.SHORT[s.label] = e.suspectShort[nl];
+        if (e.suspectRef && e.suspectRef[nl] && typeof Themes !== 'undefined') Themes.REF[s.label] = e.suspectRef[nl];
       });
     });
     // campagne

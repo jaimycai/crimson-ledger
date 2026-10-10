@@ -250,9 +250,18 @@ const Board = {
   clueHtml(clue, i) {
     let t = FloorPlan.statement(clue, this.puzzle).text || this.puzzle.clueTexts[i];
     if (clue.furniture) {
-      const nl = this.puzzle.furnitureNl[clue.furniture] || clue.furniture;
+      // het icoontje komt achter het meubel zoals de zin het noemt ("naast een plant", "рядом с растением"),
+      // nooit midden in een verbogen woord; vindt het geen hele woordvorm, dan achter de zin
       const icon = `<span class="bclue-furn">${Avatars.furniture(clue.furniture)}</span>`;
-      t = t.includes(nl) ? t.replace(nl, `${nl}${icon}`) : `${t} ${icon}`;
+      const f = Grammar.furn(this.puzzle, clue.furniture);
+      const forms = [...new Set(Object.values(f).filter(v => typeof v === 'string' && v))].sort((a, b) => b.length - a.length);
+      const endsWord = c => !c || !/[\p{L}\p{M}]/u.test(c) || /[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}]/u.test(c);
+      let at = -1, len = 0;
+      for (const form of forms) {
+        for (let i = t.indexOf(form); i !== -1 && at === -1; i = t.indexOf(form, i + 1)) if (endsWord(t[i + form.length])) { at = i; len = form.length; }
+        if (at !== -1) break;
+      }
+      t = at === -1 ? `${t} ${icon}` : t.slice(0, at + len) + icon + t.slice(at + len);
     }
     return t;
   },

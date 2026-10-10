@@ -257,6 +257,8 @@ const Themes = {
   get: id => THEMES.find(t => t.id === id) || THEMES[0],
   // korte naam per vertaalde naam, uit het taalbestand (data.themes.<wereld>.suspectShort); gevuld door I18n.localizeData
   SHORT: {},
+  // vorm van de naam midden in een zin, per vertaalde naam (data.themes.<wereld>.suspectRef), als een taal die heeft
+  REF: {},
   shortName(label) {
     if (this.SHORT[label]) return this.SHORT[label];
     const parts = String(label || '').trim().split(/\s+/);

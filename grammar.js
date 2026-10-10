@@ -7,7 +7,7 @@
 // ("в кухне", "रसोई में", "in der Küche").
 //
 // Een taal levert sjablonen met benoemde gaten:
-//   {s} {b}          naam van de spreker/het onderwerp, de tweede persoon
+//   {s} {b}          naam van de spreker/het onderwerp, de tweede persoon; {b.short} zonder titel, {b.ref} vorm in een zin
 //   {room}           de kamer met lidwoord ("de Keuken", "the Kitchen")
 //   {room.in}        de kamer als plaats ("in de Keuken") — vorm per taal
 //   {furn}           het meubel met onbepaald lidwoord ("een plant")
@@ -132,7 +132,16 @@ const Grammar = {
 
   // ── woorden met hun vormen ──────────────────────────────────
   // Een naam als tekst met het geslacht erbij, zodat een keuzevorm {s|m:…|f:…} kan kiezen.
-  who(s) { const w = new String(s.label); w.gender = s.gender || 'm'; return w; },
+  // Vormen: {s.short} de naam zonder titel ("Marlow"), {s.ref} de vorm voor midden in een zin als de taal die
+  // geeft (data.themes.<wereld>.suspectRef, bv. "la doctora Marlow"), anders het etiket zelf.
+  who(s) {
+    const w = new String(s.label);
+    w.gender = s.gender || 'm';
+    const T = typeof Themes !== 'undefined' ? Themes : null;
+    w.short = T && T.shortName ? T.shortName(s.label) : s.label;
+    w.ref = (T && T.REF && T.REF[s.label]) || s.label;
+    return w;
+  },
   worldOf(base) { return (base.theme && base.theme.id) || ''; },
   room(base, id) {
     const q = base.rooms.find(x => x.id === id);

@@ -93,7 +93,7 @@ Slots in templates:
 | Slot | Meaning |
 |---|---|
 | `{s}` | the suspect the sentence is about. In `statement` templates `{s}` is the **speaker** ("I …"): the name is not printed there, but use `{s|m:…|f:…}` for verbs or adjectives that agree with the speaker ("я был/была", "मैं था/थी", "seul/seule"). |
-| `{b}` | the other suspect (two-person sentences) |
+| `{b}` | the other suspect (two-person sentences). `{b.short}` / `{s.short}` is the name without title (from `suspectShort`); `{b.ref}` / `{s.ref}` is the form for the middle of a sentence if your language needs one (an article, a lower-case title): give it per suspect in `data.themes.<world>.suspectRef`, keyed by the Dutch label; without it `.ref` is the plain label |
 | `{room}` | a room, in the form `rooms.<world>.<room>.the` (for English: "the Kitchen"); `{room.in}` the locative ("in the Kitchen", "на кухне", "रसोई में"); `{room.<form>}` any form you define |
 | `{furn}` | a piece of furniture with an indefinite article if your language has one ("a plant"); `{furn.next}` "next to a plant", `{furn.with}` "with a plant", `{furn.<form>}` |
 | `{rw}` `{rws}` | the room word of the world (room, cabin, module, hall, carriage …), singular and plural; `{rw.<form>}`; `{rw|m:…|f:…|n:…}` agrees with the room word's gender |
