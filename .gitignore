@@ -22,3 +22,7 @@ i18n/.work/
 
 # Persoonlijke Claude Code-instellingen (toestemmingen), niet in de repo
 .claude/settings.local.json
+
+# ruwe portretten van Higgsfield (1024 px, ~150 MB); de app gebruikt de kleine versies in assets/portretten/
+art/portretten/ruw/
+art/portretten/urls.txt

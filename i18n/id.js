@@ -219,7 +219,7 @@
     "🏆 Wereld voltooid!": "🏆 Dunia selesai!",
     "✓ Deel voltooid": "✓ Bagian selesai",
     "Deze kist is al open.": "Peti ini sudah terbuka.",
-    "Alle {0} zaken van {1} opgelost. Tik op de kist.": "Semua {0} kasus {1} terpecahkan. Ketuk petinya.",
+    "Alle {0} zaken van {1} opgelost. Tik op de kist.": "{0} dari {0} kasus {1} terpecahkan. Ketuk petinya.",
     "Alle acht zaken opgelost. Tik op de bewijskist.": "Kedelapan kasus terpecahkan. Ketuk peti bukti.",
     "🪙 +{0} punten": "🪙 +{0} poin",
     "🧊 Een vrije dag": "🧊 Satu hari libur",

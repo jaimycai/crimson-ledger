@@ -252,6 +252,9 @@ const TITLES = new Set(['dr.', 'majoor', 'tante', 'kok', 'bootsman', 'stuurman',
   'nurse', 'traveller', 'actress', 'widow', 'trapeze', 'artist', 'lion', 'tamer', 'fortune', 'teller', 'strongman', 'ticket', 'seller', 'juggler', 'vet',
   'ski', 'instructor', 'mountain', 'rescuer', 'tourist', 'photographer', 'young', 'host', 'chief']);
 
+// Gegraveerd portret per verdachte, in de stijl van Van Dam (Higgsfield, bron in art/portretten/).
+THEMES.forEach(t => t.suspects.forEach((s, i) => { s.portrait = `assets/portretten/${t.id}-${i}.webp`; }));
+
 const Themes = {
   list: () => THEMES,
   get: id => THEMES.find(t => t.id === id) || THEMES[0],

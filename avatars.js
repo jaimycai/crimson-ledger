@@ -27,6 +27,8 @@ const Avatars = (() => {
   // ── Verdachte: portret in de stijl van de covers ────────────
   // Gekleurde achtergrond, schouders, hoofd, kapsel + accent.
   function suspect(item, index) {
+    // eigen portret als de verdachte er een heeft; het SVG-gezicht hieronder is de terugval
+    if (item.portrait) return `<img class="av av-photo" src="${item.portrait}" alt="" draggable="false" decoding="async">`;
     const st    = item.style || {};
     const bg    = item.color || '#B85C5C';
     const skin  = st.skin  || SKIN[index % SKIN.length];

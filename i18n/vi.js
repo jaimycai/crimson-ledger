@@ -231,7 +231,7 @@
     "Werelden": "Thế giới",
     "{0} hints": "{0} gợi ý",
     "Met de Pass zijn hints onbeperkt.": "Có Pass thì gợi ý không giới hạn.",
-    "Je hebt er nu {0}. Elke dag krijg je {1} gratis.": "Bạn đang có {0}. Mỗi ngày bạn được {1} miễn phí.",
+    "Je hebt er nu {0}. Elke dag krijg je {1} gratis.": "Bạn đang có {0} gợi ý. Mỗi ngày bạn được {1} gợi ý miễn phí.",
     "Bordthema's en lijsten": "Giao diện và khung",
     "Nacht, sepia en kraftpapier; gouden, zilveren en crimson lijst.": "Đêm, sepia và giấy kraft; khung vàng, bạc và đỏ thẫm.",
     "{0} zaken in {1} delen · {2}": "{0} vụ án trong {1} phần · {2}",

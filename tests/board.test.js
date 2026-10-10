@@ -63,7 +63,7 @@ const active = () => document.querySelector('.screen.active').id;
     check(Board.theme.id === 'piraten' && document.getElementById('board-grid').dataset.floor === 'planks', 'vrij spel gebruikt het gekozen thema + vloer');
     check(document.getElementById('board-casetext').textContent.includes('Kapitein Zwartoog'), 'zaaktekst: ' + document.getElementById('board-casetext').textContent);
     check(document.querySelectorAll('#board-grid .bfurn svg').length === Board.puzzle.furniture.size, 'piratenmeubels getekend');
-    check(!!document.querySelector('.sus-chip .av-suspect'), 'piratenportretten getekend');
+    check(!!document.querySelector('.sus-chip img.av-photo[src*="portretten/piraten-"]'), 'piratenportretten getekend');
     Board.stopTimer(); App.navigateTo('menu'); await sleep(300);
 
     check(Board.start('gemiddeld', 12345, false), 'plattegrondzaak start');
