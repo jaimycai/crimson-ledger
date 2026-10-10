@@ -11,13 +11,13 @@ eerste publicatie op zijn vroegst 6 oktober.
 
 | # | Map | Formaat | Concept klaar | Live | Views 48u | Likes | Reacties | Bewaard | Gedeeld | Antwoord gepind |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 1 | dag1-carrousel | A carrousel | ingepland Metricool, di 6 okt 19:00 | 5 okt 23:03 (tekst met app-naam) | 0 na 44u (7 okt 19:00); 1 op 9 okt 23:30 | 0 | 0 | niet gemeten (Studio toont het niet) | niet gemeten (idem) | Dr. Cross |
-| 1b | dag1-carrousel (dubbel) | A carrousel | oude Metricool-planning | 6 okt 19:02 (oude tekst); 6 okt 23:50 op Alleen ik gezet; Studio toont op 9 okt weer "Iedereen" | 1 na 76u (9 okt 23:30) | 0 | 0 | niet gemeten | niet gemeten | Dr. Cross |
-| 2 | dag2-meelossen | B meelossen | ingepland Metricool, wo 7 okt 19:00 | 7 okt 19:02 | 1 na 52u (9 okt 23:30) | 0 | 0 | niet gemeten (Studio toont het niet) | niet gemeten (idem) | n.v.t. |
-| 3 | dag3-uitleg | C uitleg | ingepland Metricool, do 8 okt 19:00 | 8 okt 19:02 | nog geen 48u; 0 na 29u (9 okt 23:56) | 0 | 0 | niet gemeten | niet gemeten | n.v.t. |
-| 4 | dag4-carrousel | A carrousel | ingepland Metricool, vr 9 okt 19:00 | 9 okt 19:05 | nog geen 48u; 234 na 4,5u, nog steeds 234 na 5u (9 okt 23:56) | 0 | 0 | niet gemeten | niet gemeten | Marcus (nog niet, pas na 24u) |
+| 1 | dag1-carrousel | A carrousel | ingepland Metricool, di 6 okt 19:00 | 5 okt 23:03 (tekst met app-naam) | 0 na 44u (7 okt 19:00); 1 op 9 okt 23:30; 1 op 10 okt 10:37 | 0 | 0 | niet gemeten (Studio toont het niet) | niet gemeten (idem) | Dr. Cross |
+| 1b | dag1-carrousel (dubbel) | A carrousel | oude Metricool-planning | 6 okt 19:02 (oude tekst); 6 okt 23:50 op Alleen ik gezet; Studio toont op 9 okt weer "Iedereen" | 1 na 76u (9 okt 23:30); 1 op 10 okt 10:37 | 0 | 0 | niet gemeten | niet gemeten | Dr. Cross |
+| 2 | dag2-meelossen | B meelossen | ingepland Metricool, wo 7 okt 19:00 | 7 okt 19:02 | 1 na 52u (9 okt 23:30); 1 op 10 okt 10:37 | 0 | 0 | niet gemeten (Studio toont het niet) | niet gemeten (idem) | n.v.t. |
+| 3 | dag3-uitleg | C uitleg | ingepland Metricool, do 8 okt 19:00 | 8 okt 19:02 | nog geen 48u; 0 na 29u (9 okt 23:56); 0 na 39,5u (10 okt 10:37) | 0 | 0 | niet gemeten | niet gemeten | n.v.t. |
+| 4 | dag4-carrousel | A carrousel | ingepland Metricool, vr 9 okt 19:00 | 9 okt 19:05 | nog geen 48u; 234 na 4,5u, nog steeds 234 na 5u (9 okt 23:56) en na 15,5u (10 okt 10:37) | 0 | 0 | niet gemeten | niet gemeten | Marcus (nog niet, pas na 24u) |
 | 5 | dag5-meelossen | B meelossen | ingepland Metricool, za 10 okt 19:00 | | | | | | | n.v.t. |
-| 6 | dag6-carrousel | A carrousel | ingepland Metricool, zo 11 okt 19:00 | | | | | | | Marcus |
+| 6 | dag6-carrousel | A carrousel | ontbrak op 10 okt in Metricool; concept in Metricool 10 okt (zo 11 okt 19:00, automatisch publiceren uit) | | | | | | | Marcus |
 | 7 | dag7-carrousel | A carrousel | ingepland Metricool, ma 12 okt 19:00 | | | | | | | Rosalind |
 
 ## Dagcijfers
@@ -30,6 +30,7 @@ eerste publicatie op zijn vroegst 6 oktober.
 | 6 okt | 0 (TikTok Studio 23:35; 2 posts live, beide 0 views) | niet gemeten (App Store Connect geblokkeerd voor de Chrome-extensie) | niet gemeten (idem) | niet gemeten (idem) | 8 (7 dagen, iOS, en 5 / nl 4; 1 terug op dag 1, 19 zaken gestart, 17 opgelost, 0 aankopen) |
 | 7 okt | 0 (TikTok Studio 19:05, geen volgers getoond; 3 posts, 2 openbaar, alle 0 views; analytics 7 dagen: 0 videoviews, 0 profielweergaven) | niet gemeten (goedkeuring voor App Store Connect in Chrome niet beantwoord, run zonder toezicht) | niet gemeten (idem) | niet gemeten (idem) | 9 (7 dagen, iOS, en 7 / nl 4 opens; 1 terug op dag 1, 21 zaken gestart, 18 opgelost, 0 aankopen, 5 keer gedeeld) |
 | 9 okt | niet gemeten (TikTok Studio Analytics en profielpagina laadden niet in Chrome) | 245 (App Store Connect, 7 dagen t/m 8 okt) | 31 (idem) | 7 eerste downloads (idem; conversie 4,09%) | 11 (7 dagen, iOS, en 10 / nl 4 opens; 1 terug op dag 1, 24 zaken gestart, 21 opgelost, 0 aankopen, 8 keer gedeeld) |
+| 10 okt | 0 (TikTok Studio 10:37; analytics 7 dagen toont nog 0 videoviews) | niet gemeten (App Store Connect vraagt opnieuw inloggen; niet gedaan) | niet gemeten (idem) | niet gemeten (idem) | 9 (7 dagen, iOS, en 8 / nl 4 opens; 1 terug op dag 1, 24 zaken gestart, 21 opgelost, 0 aankopen, 8 keer gedeeld) |
 
 ## Beslissingen
 
@@ -82,3 +83,13 @@ eerste publicatie op zijn vroegst 6 oktober.
   abonnement.
 - 9 okt 23:56: tweede meting. TikTok Studio ongewijzigd ten opzichte van 23:30 (post 4: 234 views, 0 likes, 0 reacties; overige
   posts 0 of 1). De groei van post 4 staat stil sinds de eerste meting. Spelers (`meting.js 7`) ongewijzigd: 11 nieuw.
+- 10 okt 10:37: TikTok Studio ongewijzigd sinds 9 okt 23:56; post 4 blijft op 234 views, 0 likes, 0 reacties. In Metricool ontbrak
+  post 6 (zo 11 okt): de week toonde ma 5 t/m za 10 en ma 12, niets op zondag, niets bij verwijderde berichten. Post 6 opnieuw
+  aangemaakt als concept voor zo 11 okt 19:00 (vier jpg's, tekst met "Beeld 1 is gemaakt met AI."). Automatisch publiceren staat
+  uit; zonder akkoord van Jaimy gaat hij niet live. De TikTok-voorinstellingen (Publiek, Commerciële inhoud, muziek) verschijnen
+  pas als automatisch publiceren aan staat; die zet de chat die goedkeurt.
+- 10 okt: week 2 (13 t/m 19 okt) staat nog steeds niet in Metricool. Tweede poging met `week2/01-8okt-1200-c3-0/video.mp4`
+  (h264, yuv420p, 0,75 MB): Metricool toont een waarschuwingsicoon, video readyState 0, document.visibilityState "hidden". Oorzaak
+  is het verborgen Chrome-tabblad, niet het bestand. Niets opgeslagen. Voorstel voor week 2: per dag de eerste raadselvideo uit
+  `week2/` (01, 04, 07, 10, 13, 16, 19), elk om 19:00, tekst zonder de regels PLANNING en ANTWOORD. Uploaden kan alleen met het
+  Metricool-tabblad zichtbaar op het scherm.
