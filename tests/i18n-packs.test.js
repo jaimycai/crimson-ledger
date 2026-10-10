@@ -153,7 +153,8 @@ for (const lang of langs) {
   W.I18n.init();
   check(W.I18n.lang === lang, 'taal start: ' + W.I18n.lang);
   const broken = [], dutch = [];
-  const DUTCH = /\b(de|het|een|kamer|ruimte|naast|stond|niemand)\b/;
+  // Dutch words that are not words in any of the other sixteen languages ("de" is Spanish and French, "niemand" German)
+  const DUTCH = /\b(het|een|kamer|ruimte|naast|stond|staat|vakje|verklaring|slachtoffer)\b/;
   let n = 0;
   for (const th of W.Themes.list()) for (const diff of ['makkelijk', 'gemiddeld', 'moeilijk']) for (let seed = 1; seed <= 3; seed++) {
     const p = W.FloorPlan.generate(seed * 104729 + diff.length * 31 + th.id.length, diff, th);

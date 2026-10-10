@@ -1846,7 +1846,7 @@ const App = {
   // meldingen over de streak, ná de ceremonie op het resultaatscherm
   streakToasts() {
     if (this.freezeUsed) { this.showToast('🧊', AP_T`Vrije dag gebruikt: je streak van ${this.streak.count} dagen is gered.`); this.freezeUsed = false; }
-    if (this.giftWorld) { const w = Themes.get(this.giftWorld); this.showToast('🎁', AP_T`${this.streak.count} dagen op rij! Cadeau: ${w.name} staat nu voor je open.`); this.giftWorld = null; if (this.onStoreChange) this.onStoreChange(); }
+    if (this.giftWorld) { const w = Themes.get(this.giftWorld); this.showToast('🎁', AP_T`${this.streak.count} dagen op rij! Cadeau: ${w.title} staat nu voor je open.`); this.giftWorld = null; if (this.onStoreChange) this.onStoreChange(); }
     else if (this.freezeEarned) { this.showToast('🧊', AP_T`${this.streak.count} dagen op rij! Je hebt een vrije dag verdiend voor als je een dag mist.`); this.freezeEarned = false; }
   },
   // opdracht klaar: kort melden (de punten zijn al bijgeschreven)
