@@ -4,25 +4,29 @@
 //   node store/social/capture.js <caseIndex> [more indexes]
 const puppeteer = require('puppeteer-core'); const fs = require('fs'); const path = require('path');
 const wait = ms => new Promise(r => setTimeout(r, ms));
-const OUT = path.join(__dirname, 'cases');
+const LANG = process.env.LANG_CAPTURE || 'nl';
+const OUT = path.join(__dirname, LANG === 'nl' ? 'cases' : `cases-${LANG}`);
 (async () => {
   const browser = await puppeteer.launch({ headless: true, executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' });
-  for (const idx of process.argv.slice(2).map(Number)) {
-    const dir = path.join(OUT, String(idx)); fs.mkdirSync(dir, { recursive: true });
+  for (const arg of process.argv.slice(2)) {
+    // '<idx>' = case of the first chapter; '<chapter>:<idx>' = case of another chapter (dir c<chapter>-<idx>)
+    const [ch, idx] = arg.includes(':') ? arg.split(':').map(Number) : [0, Number(arg)];
+    const dir = path.join(OUT, ch ? `c${ch}-${idx}` : String(idx)); fs.mkdirSync(dir, { recursive: true });
     const page = await browser.newPage();
+    try {
     await page.setViewport({ width: 360, height: 640, deviceScaleFactor: 3, isMobile: true, hasTouch: true });
-    await page.evaluateOnNewDocument(() => {
-      localStorage.setItem('crimson-lang', 'nl'); localStorage.setItem('crimson-meting', '0');
+    await page.evaluateOnNewDocument((lang) => {
+      localStorage.setItem('crimson-lang', lang); localStorage.setItem('crimson-meting', '0');
       localStorage.setItem('crimson-board-tutorial-done', '1'); localStorage.setItem('crimson-board-tip-seen', '1');
       localStorage.setItem('crimson-store-mock', '1');
       localStorage.setItem('crimson-newclue-seen', JSON.stringify(['room', 'not-room', 'room-pos', 'near', 'row', 'col', 'same-room', 'not-same-room', 'left-of', 'above', 'furniture', 'alone', 'corner', 'wall', 'middle', 'next-to']));
       const camp = {}; for (let i = 0; i < 48; i++) camp['landhuis-' + i] = 3; localStorage.setItem('crimson-campaign', JSON.stringify(camp));
-    });
+    }, LANG);
     await page.goto('http://localhost:8093/index.html', { waitUntil: 'networkidle0' });
     await page.addStyleTag({ content: '#toast, #medal-toast, .toast { display: none !important }' });
     await wait(900);
     await page.evaluate(() => document.getElementById('btn-splash-start').click()); await wait(500);
-    await page.evaluate(i => App.startCampaignCase(Campaign.list()[0].key, i), idx); await wait(500);
+    await page.evaluate((i, c) => App.startCampaignCase(Campaign.list()[c].key, i), idx, ch); await wait(500);
     for (const id of ['btn-part-go', 'btn-briefing-go', 'btn-newclue-ok']) { await page.evaluate(id => { const b = document.getElementById(id); if (b && b.offsetParent) b.click(); }, id); await wait(400); }
     const data = await page.evaluate(() => {
       const p = Board.puzzle;
@@ -44,7 +48,8 @@ const OUT = path.join(__dirname, 'cases');
     await page.evaluate(() => window.scrollTo(0, 0)); await wait(200);
     await page.screenshot({ path: path.join(dir, 'closed.png') });
     fs.writeFileSync(path.join(dir, 'case.json'), JSON.stringify(data, null, 1));
-    console.log(idx, data.title, '|', n, 'suspects |', data.statements.length, 'statements | dader:', data.suspects[data.murderer]);
+    console.log(arg, data.title, '|', n, 'suspects |', data.statements.length, 'statements | dader:', data.suspects[data.murderer]);
+    } catch (e) { console.log(arg, 'overgeslagen:', e.message.split('\n')[0]); fs.rmSync(dir, { recursive: true, force: true }); }
     await page.close();
   }
   await browser.close();

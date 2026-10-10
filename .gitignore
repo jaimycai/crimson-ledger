@@ -26,3 +26,5 @@ i18n/.work/
 # ruwe portretten van Higgsfield (1024 px, ~150 MB); de app gebruikt de kleine versies in assets/portretten/
 art/portretten/ruw/
 art/portretten/urls.txt
+store/social/cases-*/
+store/social/en/
