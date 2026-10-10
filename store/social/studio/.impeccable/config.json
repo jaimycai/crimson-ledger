@@ -11,6 +11,15 @@
         ],
         "createdAt": "2026-10-10T08:52:46.137Z",
         "reason": "Claude: remaining red/amber inset alarm and victim rings are literal crime-scene and countdown signals in a video frame, not UI decoration"
+      },
+      {
+        "rule": "buried-raster",
+        "value": "*",
+        "files": [
+          "store/social/studio/raadsel.html"
+        ],
+        "createdAt": "2026-10-10T09:11:15.034Z",
+        "reason": "Claude: #grain is a deliberate 9% film-grain overlay with mix-blend-mode overlay, visible on the dark stage; not a buried photo"
       }
     ]
   }
