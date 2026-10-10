@@ -24,14 +24,14 @@ const THEMES = [
       { id: 'stoel', nl: 'een fauteuil' }, { id: 'doos', nl: 'een kist' }
     ],
     suspects: [
-      { label: 'Clara',     color: '#B85C5C', style: { hair: 1 } },
-      { label: 'Marcus',    color: '#5C7AB8', style: { hair: 0, moustache: true } },
-      { label: 'Dr. Cross', color: '#8B5CB8', style: { hair: 2, glasses: true } },
-      { label: 'Thomas',    color: '#5C8B5E', style: { hair: 3, bowtie: true } },
-      { label: 'Isabelle',  color: '#B8955C', style: { hair: 4 } },
-      { label: 'Rosalind',  color: '#C2185B', style: { hair: 2 } },
-      { label: 'Majoor Pike', color: '#2C3E50', style: { hair: 3, moustache: true } },
-      { label: 'Tante Agnes', color: '#7B5E3B', style: { hair: 1, glasses: true } }
+      { label: 'Clara',     gender: 'f', color: '#B85C5C', style: { hair: 1 } },
+      { label: 'Marcus',    gender: 'm', color: '#5C7AB8', style: { hair: 0, moustache: true } },
+      { label: 'Dr. Cross', gender: 'f', color: '#8B5CB8', style: { hair: 2, glasses: true } },
+      { label: 'Thomas',    gender: 'm', color: '#5C8B5E', style: { hair: 3, bowtie: true } },
+      { label: 'Isabelle',  gender: 'f', color: '#B8955C', style: { hair: 4 } },
+      { label: 'Rosalind',  gender: 'f', color: '#C2185B', style: { hair: 2 } },
+      { label: 'Majoor Pike', gender: 'm', color: '#2C3E50', style: { hair: 3, moustache: true } },
+      { label: 'Tante Agnes', gender: 'f', color: '#7B5E3B', style: { hair: 1, glasses: true } }
     ],
     outro: 'De geheimen van Landgoed Blackwood liggen op tafel. De moordenaar is gepakt.'
   },
@@ -52,14 +52,14 @@ const THEMES = [
       { id: 'touw', nl: 'een opgerold touw' }, { id: 'lantaarn', nl: 'een lantaarn' }
     ],
     suspects: [
-      { label: 'Roodbaard',   color: '#B3261E', style: { hair: 0, hat: 'tricorn', beard: true } },
-      { label: 'Bootsman Vos',color: '#5C7AB8', style: { hair: 3, hat: 'bandana', eyepatch: true } },
-      { label: 'Kok Ada',     color: '#B8955C', style: { hair: 2, hat: 'bandana' } },
-      { label: 'Stuurman Kwint', color: '#5C8B5E', style: { hair: 4, moustache: true } },
-      { label: 'Juffrouw Lark', color: '#8B5CB8', style: { hair: 1, hat: 'tricorn' } },
-      { label: 'Kanonnier Bo', color: '#2C3E50', style: { hair: 3, hat: 'bandana', beard: true } },
-      { label: 'Dokter Sal',   color: '#C2185B', style: { hair: 2, glasses: true } },
-      { label: 'Scheepsjongen Nik', color: '#7B5E3B', style: { hair: 4, hat: 'bandana' } }
+      { label: 'Roodbaard',   gender: 'm', color: '#B3261E', style: { hair: 0, hat: 'tricorn', beard: true } },
+      { label: 'Bootsman Vos',gender: 'm', color: '#5C7AB8', style: { hair: 3, hat: 'bandana', eyepatch: true } },
+      { label: 'Kok Ada',     gender: 'f', color: '#B8955C', style: { hair: 2, hat: 'bandana' } },
+      { label: 'Stuurman Kwint', gender: 'm', color: '#5C8B5E', style: { hair: 4, moustache: true } },
+      { label: 'Juffrouw Lark', gender: 'f', color: '#8B5CB8', style: { hair: 1, hat: 'tricorn' } },
+      { label: 'Kanonnier Bo', gender: 'm', color: '#2C3E50', style: { hair: 3, hat: 'bandana', beard: true } },
+      { label: 'Dokter Sal',   gender: 'f', color: '#C2185B', style: { hair: 2, glasses: true } },
+      { label: 'Scheepsjongen Nik', gender: 'm', color: '#7B5E3B', style: { hair: 4, hat: 'bandana' } }
     ],
     outro: 'De Zwarte Meeuw hijst de zeilen. De moordenaar zit in de brig.'
   },
@@ -81,14 +81,14 @@ const THEMES = [
       { id: 'sofa', nl: 'een sofa' }, { id: 'trolley', nl: 'een roomservice-wagentje' }
     ],
     suspects: [
-      { label: 'Gravin Delacroix', color: '#8B5CB8', style: { hair: 2, glasses: true } },
-      { label: 'Portier Jansen',   color: '#5C7AB8', style: { hair: 0, hat: 'cap', moustache: true } },
-      { label: 'Pianist Milo',     color: '#2C3E50', style: { hair: 4, bowtie: true } },
-      { label: 'Mevrouw Sato',     color: '#B85C5C', style: { hair: 1 } },
-      { label: 'Journalist Bram',  color: '#5C8B5E', style: { hair: 3, hat: 'tophat' } },
-      { label: 'Chef Rosa',        color: '#B3261E', style: { hair: 2, hat: 'cap' } },
-      { label: 'Butler Ames',      color: '#7B5E3B', style: { hair: 3, bowtie: true, moustache: true } },
-      { label: 'Danseres Lou',     color: '#C2185B', style: { hair: 4 } }
+      { label: 'Gravin Delacroix', gender: 'f', color: '#8B5CB8', style: { hair: 2, glasses: true } },
+      { label: 'Portier Jansen',   gender: 'm', color: '#5C7AB8', style: { hair: 0, hat: 'cap', moustache: true } },
+      { label: 'Pianist Milo',     gender: 'm', color: '#2C3E50', style: { hair: 4, bowtie: true } },
+      { label: 'Mevrouw Sato',     gender: 'f', color: '#B85C5C', style: { hair: 1 } },
+      { label: 'Journalist Bram',  gender: 'm', color: '#5C8B5E', style: { hair: 3, hat: 'tophat' } },
+      { label: 'Chef Rosa',        gender: 'f', color: '#B3261E', style: { hair: 2, hat: 'cap' } },
+      { label: 'Butler Ames',      gender: 'm', color: '#7B5E3B', style: { hair: 3, bowtie: true, moustache: true } },
+      { label: 'Danseres Lou',     gender: 'f', color: '#C2185B', style: { hair: 4 } }
     ],
     outro: 'Het orkest speelt weer. De moordenaar wordt door de politie de lobby uit begeleid.'
   },
@@ -110,14 +110,14 @@ const THEMES = [
       { id: 'krat', nl: 'een krat' }, { id: 'kweekbak', nl: 'een kweekbak' }
     ],
     suspects: [
-      { label: 'Dr. Nkemelu',     color: '#8B5CB8', style: { hair: 4, hat: 'helmet' } },
-      { label: 'Piloot Reyes',    color: '#B3261E', style: { hair: 0, hat: 'helmet', moustache: true } },
-      { label: 'Ingenieur Sol',   color: '#B8955C', style: { hair: 2, glasses: true } },
-      { label: 'Botanist Tamsin', color: '#5C8B5E', style: { hair: 1 } },
-      { label: 'Kadet Yuki',      color: '#5C7AB8', style: { hair: 3, hat: 'helmet' } },
-      { label: 'Kok Dima',        color: '#D9A441', style: { hair: 0, beard: true } },
-      { label: 'Officier Paz',    color: '#2C3E50', style: { hair: 2, hat: 'helmet', glasses: true } },
-      { label: 'Bioloog Wren',    color: '#C2185B', style: { hair: 1, hat: 'helmet' } }
+      { label: 'Dr. Nkemelu',     gender: 'm', color: '#8B5CB8', style: { hair: 4, hat: 'helmet' } },
+      { label: 'Piloot Reyes',    gender: 'm', color: '#B3261E', style: { hair: 0, hat: 'helmet', moustache: true } },
+      { label: 'Ingenieur Sol',   gender: 'f', color: '#B8955C', style: { hair: 2, glasses: true } },
+      { label: 'Botanist Tamsin', gender: 'f', color: '#5C8B5E', style: { hair: 1 } },
+      { label: 'Kadet Yuki',      gender: 'm', color: '#5C7AB8', style: { hair: 3, hat: 'helmet' } },
+      { label: 'Kok Dima',        gender: 'm', color: '#D9A441', style: { hair: 0, beard: true } },
+      { label: 'Officier Paz',    gender: 'f', color: '#2C3E50', style: { hair: 2, hat: 'helmet', glasses: true } },
+      { label: 'Bioloog Wren',    gender: 'f', color: '#C2185B', style: { hair: 1, hat: 'helmet' } }
     ],
     outro: 'De sluizen gaan weer open. De moordenaar vliegt geboeid mee naar huis.'
   },
@@ -139,14 +139,14 @@ const THEMES = [
       { id: 'vitrine', nl: 'een vitrine' }, { id: 'beeld', nl: 'een standbeeld' }
     ],
     suspects: [
-      { label: 'Gids Fenna',          color: '#B85C5C', style: { hair: 1, glasses: true } },
-      { label: 'Curator Bas',         color: '#5C7AB8', style: { hair: 0, bowtie: true } },
-      { label: 'Restaurateur Imke',   color: '#8B5CB8', style: { hair: 2 } },
-      { label: 'Nachtwaker Ruud',     color: '#2C3E50', style: { hair: 3, hat: 'cap', moustache: true } },
-      { label: 'Professor Adebayo',   color: '#7B5E3B', style: { hair: 4, glasses: true, beard: true } },
-      { label: 'Kunsthandelaar Vic',  color: '#B8955C', style: { hair: 3, hat: 'tophat' } },
-      { label: 'Stagiair Noor',       color: '#C2185B', style: { hair: 1 } },
-      { label: 'Schoonmaker Piet',    color: '#5C8B5E', style: { hair: 0, hat: 'cap' } }
+      { label: 'Gids Fenna',          gender: 'f', color: '#B85C5C', style: { hair: 1, glasses: true } },
+      { label: 'Curator Bas',         gender: 'm', color: '#5C7AB8', style: { hair: 0, bowtie: true } },
+      { label: 'Restaurateur Imke',   gender: 'f', color: '#8B5CB8', style: { hair: 2 } },
+      { label: 'Nachtwaker Ruud',     gender: 'm', color: '#2C3E50', style: { hair: 3, hat: 'cap', moustache: true } },
+      { label: 'Professor Adebayo',   gender: 'm', color: '#7B5E3B', style: { hair: 4, glasses: true, beard: true } },
+      { label: 'Kunsthandelaar Vic',  gender: 'm', color: '#B8955C', style: { hair: 3, hat: 'tophat' } },
+      { label: 'Stagiair Noor',       gender: 'f', color: '#C2185B', style: { hair: 1 } },
+      { label: 'Schoonmaker Piet',    gender: 'm', color: '#5C8B5E', style: { hair: 0, hat: 'cap' } }
     ],
     outro: 'Het alarm gaat weer aan. De dader gaat mee, de collectie blijft.'
   },
@@ -168,14 +168,14 @@ const THEMES = [
       { id: 'bank', nl: 'een bank' }, { id: 'kroonluchter', nl: 'een kroonluchter' }
     ],
     suspects: [
-      { label: 'Barones Von Stahl',   color: '#8B5CB8', style: { hair: 2, glasses: true } },
-      { label: 'Goochelaar Otto',     color: '#2C3E50', style: { hair: 0, hat: 'tophat', moustache: true } },
-      { label: 'Schaakmeester Ivo',   color: '#5C7AB8', style: { hair: 3, beard: true } },
-      { label: 'Verpleegster Ans',    color: '#B85C5C', style: { hair: 1 } },
-      { label: 'Reiziger Sami',       color: '#B8955C', style: { hair: 4, hat: 'cap' } },
-      { label: 'Actrice Lola',        color: '#C2185B', style: { hair: 2 } },
-      { label: 'Stoker Jules',        color: '#5C8B5E', style: { hair: 0, hat: 'bandana' } },
-      { label: 'Weduwe Duval',        color: '#7B5E3B', style: { hair: 1, glasses: true } }
+      { label: 'Barones Von Stahl',   gender: 'f', color: '#8B5CB8', style: { hair: 2, glasses: true } },
+      { label: 'Goochelaar Otto',     gender: 'm', color: '#2C3E50', style: { hair: 0, hat: 'tophat', moustache: true } },
+      { label: 'Schaakmeester Ivo',   gender: 'm', color: '#5C7AB8', style: { hair: 3, beard: true } },
+      { label: 'Verpleegster Ans',    gender: 'f', color: '#B85C5C', style: { hair: 1 } },
+      { label: 'Reiziger Sami',       gender: 'm', color: '#B8955C', style: { hair: 4, hat: 'cap' } },
+      { label: 'Actrice Lola',        gender: 'f', color: '#C2185B', style: { hair: 2 } },
+      { label: 'Stoker Jules',        gender: 'm', color: '#5C8B5E', style: { hair: 0, hat: 'bandana' } },
+      { label: 'Weduwe Duval',        gender: 'f', color: '#7B5E3B', style: { hair: 1, glasses: true } }
     ],
     outro: 'Bij zonsopgang rijdt de trein het station binnen. Eén reiziger stapt uit in handboeien.'
   },
@@ -197,14 +197,14 @@ const THEMES = [
       { id: 'popcornkar', nl: 'een popcornkar' }, { id: 'kooi', nl: 'een leeuwenkooi' }
     ],
     suspects: [
-      { label: 'Clown Pippo',          color: '#B3261E', style: { hair: 0 } },
-      { label: 'Trapezeartiest Mira',  color: '#C2185B', style: { hair: 2 } },
-      { label: 'Leeuwentemmer Kurt',   color: '#B8955C', style: { hair: 3, moustache: true } },
-      { label: 'Waarzegster Zora',     color: '#8B5CB8', style: { hair: 1, hat: 'bandana' } },
-      { label: 'Sterke Man Boris',     color: '#2C3E50', style: { hair: 0, beard: true, moustache: true } },
-      { label: 'Kaartverkoper Els',    color: '#5C8B5E', style: { hair: 4, glasses: true } },
-      { label: 'Jongleur Teo',         color: '#5C7AB8', style: { hair: 3, hat: 'cap' } },
-      { label: 'Dierenarts Nadia',     color: '#7B5E3B', style: { hair: 1, glasses: true } }
+      { label: 'Clown Pippo',          gender: 'm', color: '#B3261E', style: { hair: 0 } },
+      { label: 'Trapezeartiest Mira',  gender: 'f', color: '#C2185B', style: { hair: 2 } },
+      { label: 'Leeuwentemmer Kurt',   gender: 'm', color: '#B8955C', style: { hair: 3, moustache: true } },
+      { label: 'Waarzegster Zora',     gender: 'f', color: '#8B5CB8', style: { hair: 1, hat: 'bandana' } },
+      { label: 'Sterke Man Boris',     gender: 'm', color: '#2C3E50', style: { hair: 0, beard: true, moustache: true } },
+      { label: 'Kaartverkoper Els',    gender: 'f', color: '#5C8B5E', style: { hair: 4, glasses: true } },
+      { label: 'Jongleur Teo',         gender: 'm', color: '#5C7AB8', style: { hair: 3, hat: 'cap' } },
+      { label: 'Dierenarts Nadia',     gender: 'f', color: '#7B5E3B', style: { hair: 1, glasses: true } }
     ],
     outro: 'De tent wordt afgebroken. Het zaagsel wordt weggeveegd, en met het zaagsel het laatste spoor.'
   },
@@ -226,14 +226,14 @@ const THEMES = [
       { id: 'gewei', nl: 'een gewei' }, { id: 'fondue', nl: 'een fonduepan' }
     ],
     suspects: [
-      { label: 'Skilerares Mieke',     color: '#B85C5C', style: { hair: 1 } },
-      { label: 'Bergredder Tom',       color: '#5C8B5E', style: { hair: 3, beard: true } },
-      { label: 'Toeriste Hana',        color: '#C2185B', style: { hair: 2 } },
-      { label: 'Kok Luigi',            color: '#B8955C', style: { hair: 0, moustache: true } },
-      { label: 'Fotograaf Sven',       color: '#5C7AB8', style: { hair: 4, glasses: true } },
-      { label: 'Dokter Greet',         color: '#8B5CB8', style: { hair: 2, glasses: true } },
-      { label: 'Jongen Kai',           color: '#D9A441', style: { hair: 3, hat: 'cap' } },
-      { label: 'Berggids Ilse',        color: '#2C3E50', style: { hair: 1, hat: 'bandana' } }
+      { label: 'Skilerares Mieke',     gender: 'f', color: '#B85C5C', style: { hair: 1 } },
+      { label: 'Bergredder Tom',       gender: 'm', color: '#5C8B5E', style: { hair: 3, beard: true } },
+      { label: 'Toeriste Hana',        gender: 'f', color: '#C2185B', style: { hair: 2 } },
+      { label: 'Kok Luigi',            gender: 'm', color: '#B8955C', style: { hair: 0, moustache: true } },
+      { label: 'Fotograaf Sven',       gender: 'm', color: '#5C7AB8', style: { hair: 4, glasses: true } },
+      { label: 'Dokter Greet',         gender: 'f', color: '#8B5CB8', style: { hair: 2, glasses: true } },
+      { label: 'Jongen Kai',           gender: 'm', color: '#D9A441', style: { hair: 3, hat: 'cap' } },
+      { label: 'Berggids Ilse',        gender: 'f', color: '#2C3E50', style: { hair: 1, hat: 'bandana' } }
     ],
     outro: 'De hut is dicht, de sneeuw ligt weer stil. Jij weet wat eronder lag.'
   }

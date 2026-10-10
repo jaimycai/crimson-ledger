@@ -575,10 +575,12 @@ const App = {
     on('btn-store-restore', () => this.restorePurchases());
     on('btn-restore', () => this.restorePurchases());
     on('btn-open-store', () => { this.hideModal('settings-modal'); this.openStore(null); });
-    document.querySelectorAll('.lang-btn').forEach(b => {
-      b.classList.toggle('active', typeof I18n !== 'undefined' && b.dataset.lang === I18n.lang);
-      b.addEventListener('click', () => { if (typeof I18n !== 'undefined' && b.dataset.lang !== I18n.lang) I18n.set(b.dataset.lang); });
-    });
+    // taalkeuze: elke taal in haar eigen schrift; kiezen = onthouden en herladen
+    const langSel = document.getElementById('lang-select');
+    if (langSel && typeof I18n !== 'undefined') {
+      langSel.innerHTML = I18n.LANGS.map(([code, name, dir]) => `<option value="${code}" lang="${code}" dir="${dir}"${code === I18n.lang ? ' selected' : ''}>${name}</option>`).join('');
+      langSel.addEventListener('change', () => I18n.set(langSel.value));
+    }
     Store.applyLook();
     this.renderLook();
     Store.refresh().then(st => { if (st) this.onStoreChange(); });

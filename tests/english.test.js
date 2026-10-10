@@ -25,7 +25,9 @@ const active = () => document.querySelector('.screen.active').id;
     check(errors.length === 0, 'geen fouten bij het opstarten in het Engels: ' + errors.join(' | '));
     check(I18n.lang === 'en', 'taal is Engels');
     check(document.documentElement.lang === 'en' && /Crimson Ledger/.test(document.title), 'html lang en titel');
-    check(document.querySelector('.lang-btn[data-lang="en"]').classList.contains('active') && !document.querySelector('.lang-btn[data-lang="nl"]').classList.contains('active'), 'taalknop English staat aan');
+    const langSel = document.getElementById('lang-select');
+    check(langSel.value === 'en' && [...langSel.options].map(o => o.textContent).join(',') === I18n.LANGS.map(l => l[1]).join(','), 'taalkeuze staat op English, met elke taal in haar eigen naam');
+    check(document.querySelector('label[for="lang-select"]').textContent === '🌍 Language', 'label van de taalkeuze vertaald');
     check(document.querySelector('.menu-classic').hidden === true, 'klassiek raster verborgen in het Engels');
 
     // ── thuisscherm ──

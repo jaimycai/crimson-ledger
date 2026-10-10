@@ -82,7 +82,8 @@ const MiniGame = {
       const maxY = Math.max(...room.list.map(c => c.y));
       const xs = room.list.filter(c => c.y === maxY).map(c => c.x);
       const left = ((Math.min(...xs) + Math.max(...xs) + 1) / 2 / p.cols) * 100;
-      html += `<span class="room-label" style="left:${left}%;top:${((maxY + 1) / p.rows) * 100}%">${room.name}</span>`;
+      const span = ((Math.max(...xs) - Math.min(...xs) + 1) / p.cols) * 100;
+      html += `<span class="room-label" data-w="${span}" style="left:${left}%;top:${((maxY + 1) / p.rows) * 100}%">${room.name}</span>`;
     });
     return html;
   },
@@ -91,6 +92,7 @@ const MiniGame = {
     g.style.setProperty('--cols', p.cols); g.style.setProperty('--rows', p.rows);
     g.dataset.floor = p.theme.floor || 'checker';
     g.innerHTML = this.gridHtml(p, p.solution, showSuspects);
+    if (typeof Board !== 'undefined' && Board.fitLabels) Board.fitLabels(g);
   },
   ava(i) { return `<span class="bclue-ava">${Avatars.suspect(this.puzzle.suspects[i], i)}</span>`; },
   speakers(clue) {

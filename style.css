@@ -1327,6 +1327,8 @@ body.tutorial-mode #btn-share { display: none; }
   pointer-events: none;
   z-index: 2;
 }
+.room-label.clip { overflow: hidden; text-overflow: ellipsis; }
+.room-label.wrap { white-space: normal; text-align: center; line-height: 1.05; border-radius: 8px; -webkit-hyphens: auto; hyphens: auto; overflow-wrap: anywhere; }
 
 /* ── Verdachtenkiezer ──────────────────────────────────────── */
 .board-suspects {
@@ -2132,6 +2134,19 @@ input, textarea { -webkit-user-select: text; user-select: text; }
 .board-accuse .accuse-ava { width: 46px; height: 46px; }
 .board-accuse .accuse-name { font-size: 0.74rem; }
 .board-accuse .accuse-room { font-size: 0.62rem; }
+/* Korte schermen (iPhone SE: 320×568 en 375×667): het bord houdt een speelbare maat. Uitleg en
+   verklaring worden compacter; past het dan nog niet, dan scrolt het scherm in plaats van dat het
+   bord over de rest valt. */
+@media (max-height: 700px) {
+  #screen-board.active { overflow-y: auto; }
+  #screen-board .board-stage { flex: 1 1 0; min-height: 220px; }
+  .board-casetext { font-size: 0.68rem; padding: 4px 12px; }
+  .board-tip { font-size: 0.7rem; padding: 6px 8px; }
+  .clue-deck { gap: 5px; padding: 5px 12px 7px; }
+  .dclue { min-height: 0; padding: 8px; }
+  .dclue .bclue-ava { width: 36px; height: 36px; }
+  .dclue .bclue-text { font-size: 0.86rem; line-height: 1.35; }
+}
 /* korte schermen (iPhone SE): kop en portretten kleiner, bord mag smaller */
 @media (max-height: 720px) {
   #screen-board.accusing .board-grid { min-width: 0; }
@@ -2417,5 +2432,15 @@ input, textarea { -webkit-user-select: text; user-select: text; }
 .theme-lock.buy { color: var(--gold); font-weight: 800; }
 
 /* ── Taalkeuze ─────────────────────────────────────────────── */
-.lang-row { display: flex; gap: 6px; }
-.lang-btn.active { background: var(--accent-subtle); color: var(--accent); border: 1.5px solid var(--accent); }
+.lang-select {
+  appearance: none; -webkit-appearance: none; max-width: 60%; min-height: 40px; padding: 8px 30px 8px 12px;
+  font: inherit; font-size: 0.85rem; font-weight: 600; color: var(--accent);
+  background: var(--accent-subtle) no-repeat right 10px center / 10px 6px
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%23999' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  border: 1.5px solid var(--accent); border-radius: var(--radius-sm); cursor: pointer;
+}
+[dir="rtl"] .lang-select { padding: 8px 12px 8px 30px; background-position: left 10px center; }
+
+/* ── Rechts naar links (Arabisch, Urdu) ─────────────────────── */
+/* De tekst spiegelt, de plattegrond niet: "links van" in een verklaring gaat over de plattegrond. */
+[dir="rtl"] .board-grid { direction: ltr; }

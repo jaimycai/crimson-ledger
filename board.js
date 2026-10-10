@@ -195,7 +195,7 @@ const Board = {
       if (!roomAt(x + 1, y) || roomAt(x + 1, y).id !== room.id) edges.push('wr');
       html += `<button type="button" class="bcell${(x + y) % 2 === 0 ? ' dark' : ''} ${edges.join(' ')}" ` +
               `data-x="${x}" data-y="${y}" style="--room:${room.color}" ` +
-              `aria-label="Rij ${y + 1}, kolom ${x + 1}, ${room.name}"></button>`;
+              `aria-label="${BD_T`Rij ${y + 1}, kolom ${x + 1}, ${room.name}`}"></button>`;
     }
     // kamernaam op de onderste rij van de kamer (werkt ook bij L-vormen)
     p.rooms.forEach(room => {
@@ -203,9 +203,11 @@ const Board = {
       const xs = room.list.filter(c => c.y === maxY).map(c => c.x);
       const left = ((Math.min(...xs) + Math.max(...xs) + 1) / 2 / p.cols) * 100;
       const top = ((maxY + 1) / p.rows) * 100;
-      html += `<span class="room-label" style="left:${left}%;top:${top}%">${room.name}</span>`;
+      const span = ((Math.max(...xs) - Math.min(...xs) + 1) / p.cols) * 100;
+      html += `<span class="room-label" data-w="${span}" style="left:${left}%;top:${top}%">${room.name}</span>`;
     });
     grid.innerHTML = html;
+    this.fitLabels(grid);
     grid.querySelectorAll('.bcell').forEach(c => c.addEventListener('click', () => { if (!this.dragDone) this.onCell(+c.dataset.x, +c.dataset.y); }));
   },
 
@@ -1028,6 +1030,39 @@ const Board = {
     const width = Math.floor(Math.max(160, Math.min(w, 460, h * ratio)));
     grid.style.width = `${width}px`;
     grid.style.height = `${Math.floor(width / ratio)}px`;
+    this.fitLabels(grid);
+  },
+  // Een kamernaam mag niet breder worden dan de onderste rij van zijn kamer, anders loopt hij over
+  // de buurkamer (smalle kamers, lange namen in sommige talen): eerst iets kleiner, dan over twee regels.
+  fitLabels(grid) {
+    const gw = grid && grid.clientWidth;
+    if (!gw || typeof getComputedStyle === 'undefined') return;
+    const labels = [...grid.querySelectorAll('.room-label')];
+    labels.forEach(el => {
+      el.classList.remove('wrap', 'clip'); el.style.fontSize = ''; el.style.maxWidth = '';
+      const max = gw * (+el.dataset.w || 100) / 100 + 4;
+      if (el.offsetWidth <= max) return;
+      el.style.fontSize = `${Math.max(7, parseFloat(getComputedStyle(el).fontSize) * 0.85)}px`;
+      if (el.offsetWidth <= max) return;
+      el.classList.add('wrap'); el.style.maxWidth = `${Math.max(max, 44)}px`;
+    });
+    // Lopen twee namen dan nog over elkaar (een smalle kamer van één rij hoog), dan wordt de naam
+    // van de smalste kamer op één regel ingekort met een beletselteken.
+    for (let pass = 0; pass < 3; pass++) {
+      const rs = labels.map(el => el.getBoundingClientRect());
+      let changed = false;
+      for (let i = 0; i < labels.length; i++) for (let j = i + 1; j < labels.length; j++) {
+        const a = rs[i], b = rs[j];
+        if (!(a.left < b.right - 1 && b.left < a.right - 1 && a.top < b.bottom - 1 && b.top < a.bottom - 1)) continue;
+        const [first, second] = +labels[i].dataset.w <= +labels[j].dataset.w ? [labels[i], labels[j]] : [labels[j], labels[i]];
+        const el = first.classList.contains('clip') ? second : first;
+        if (el.classList.contains('clip')) continue;
+        el.classList.remove('wrap'); el.classList.add('clip');
+        el.style.maxWidth = `${Math.max(gw * (+el.dataset.w || 100) / 100, 28)}px`;
+        changed = true;
+      }
+      if (!changed) break;
+    }
   },
   bindFit() {
     let t = null;

@@ -42,7 +42,7 @@ function keysIn(src) {
     if (m[2] === '`') {
       const t = readTemplate(src, m.index + m[1].length);
       keys.push(t.parts.map((p, i) => unescape(p) + (i < t.parts.length - 1 ? `{${i}}` : '')).join(''));
-      re.lastIndex = t.end;
+      re.lastIndex = m.index + m[0].length;   // keep scanning inside the template: gaps can hold T calls of their own
     } else {
       const q = m[3]; let i = re.lastIndex, s = '';
       while (src[i] !== q) { s += src[i] === '\\' ? src.slice(i, i + 2) : src[i]; i += src[i] === '\\' ? 2 : 1; }
