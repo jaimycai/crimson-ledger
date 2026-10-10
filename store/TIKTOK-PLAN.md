@@ -167,3 +167,46 @@ ontwikkelaars het doen, met bronnen:
 4. Nieuwe carrousels openen met een haak over een ander of een getal ("Alleen 2% vindt de dader"), niet met
    de app. De app-naam komt pas in de laatste dia en in de tekst.
 5. Elke reactie krijgt binnen een paar uur antwoord van Jaimy, in de app.
+
+## 10. Nieuwe aanpak na week 1 (10 oktober 2026)
+
+Jaimy: "post zoveel mogelijk wat er nog beschikbaar is", en de app krijgt in 1.2 zeventien talen. Twee
+onderzoeksronden (gratis planners; marketing van vergelijkbare puzzelgames). Bij elke bewering de sterkte.
+
+**Wat de eerste week liet zien.** Post 4, een carrousel, haalde 234 views in 4,5 uur. De andere zes posts
+kwamen niet boven 1 view. Winkel (7 dagen t/m 8 okt): 245 vertoningen, 31 paginaweergaven (12,7%), 7
+downloads (22,6% van de bezoekers). De winkelpagina zet bezoekers dus redelijk om; bereik is het probleem.
+
+**Plannen zonder Metricool-limiet**
+- TikTok Studio op het web plant nu ook fotoposts (carrousels) in, gratis en zonder maandlimiet. Je kiest daar
+  zelf het AI-label en "Jouw merk". Gezien op 10 okt. Video's uploaden lukt alleen als het Chrome-venster
+  zichtbaar is; foto's lukken ook in een verborgen tabblad.
+- Buffer Free: 3 kanalen, per kanaal 10 posts tegelijk in de wachtrij, geen maandlimiet, carrousels en video,
+  en een API waarmee media als URL meegaan (officiële prijspagina en helpartikelen). Dit is de beste route voor
+  automatisch plannen naar TikTok, Instagram en YouTube tegelijk. Account aanmaken en koppelen doet Jaimy zelf.
+- Publer Free: zelfde wachtrijmodel, carrousels tot 35 foto's, geen API op het gratis plan.
+- Valt af: Postiz zelf hosten (eigen TikTok-app, zonder audit alleen privé), upload-post (TikTok alleen
+  betaald), Mixpost Lite (geen TikTok), Later en SocialBee (geen bruikbaar gratis plan).
+- Metricool blijft voor de drie posts van week 1 die er al staan (10 t/m 12 okt), daarna niet meer.
+
+**Wat werkte bij vergelijkbare spellen**
+- Deelkaart na elke puzzel: Wordle en Clues by Sam groeiden vooral door delen (sterk voor Wordle, matig voor
+  Clues by Sam). Onze deelkaart bestaat al; 8 keer gedeeld in 7 dagen.
+- Carrousels zonder gezicht: alleen bewijs van verkopers (zwak), maar het is ons enige eigen signaal.
+- Kleine creators (5.000 tot 100.000 volgers) met een gratis code: Wordbolt werd nummer 1 in Zweden met
+  alleen Zweedse Instagram-makers (matig, oud).
+- Lokalisatie van de winkelpagina: gemiddeld veel meer downloads per land, het sterkst in Azië (matig, oud).
+  Zoekwoorden per taal opnieuw kiezen, niet letterlijk vertalen.
+- Apple-featuring: nominatie via App Store Connect › Featuring › Nominations, minstens 3 weken vooruit. Versie
+  1.2 met 17 talen past bij "App Enhancements" (matig).
+- Eén account per taal: geen onafhankelijk bewijs, wel risico (zwak). Advies: één Nederlands account, later
+  hooguit één Engels. De andere talen lopen via de winkel, niet via eigen accounts.
+
+**Regels vanaf 10 oktober**
+1. Carrousel is het hoofdformaat. Video's alleen nog als de carrousels stilvallen.
+2. Twee posts per dag (12:30 en 19:00) zolang de voorraad strekt; daarna één per dag. Jaimy vroeg om zoveel
+   mogelijk; bij geen bereik na een week terug naar één.
+3. Inplannen rechtstreeks in TikTok Studio (dat test meteen of posten via een dienst de oorzaak was van 0 views).
+4. Na 1.2: dezelfde carrousels in het Engels op Instagram en YouTube Shorts via Buffer, en een featuring-
+   nominatie. Winkelteksten per taal met eigen zoekwoorden.
+5. Week 3: vijftien Nederlandse puzzel- en BookTok-makers benaderen met een gratis code. Jaimy verstuurt.
