@@ -1454,6 +1454,12 @@ body.tutorial-mode #btn-share { display: none; }
 .tool.active { background: var(--accent-subtle); color: var(--accent); }
 .tool:disabled { opacity: 0.35; cursor: default; }
 .tool-icon  { font-size: 1.05rem; line-height: 1; }
+/* iconen (icons.js): lijnen in de tekstkleur, even groot als de tekst eromheen */
+.ico { display: inline-block; width: 1.2em; height: 1.2em; vertical-align: -0.22em; flex: none; }
+.tool-icon .ico { width: 22px; height: 22px; vertical-align: 0; }
+.nav-icon .ico { width: 30px; height: 30px; vertical-align: 0; color: var(--accent); }
+.tutorial-coach-icon .ico { width: 26px; height: 26px; vertical-align: 0; color: var(--gold); }
+.results-stamp-icon .ico { width: 34px; height: 34px; vertical-align: 0; stroke-width: 2.5; }
 .tool-label { font-size: 0.58rem; font-weight: 600; }
 .board-check { flex: 1.4; padding: 10px 8px; font-size: 0.8rem; }
 

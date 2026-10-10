@@ -86,7 +86,7 @@
         <span class="nav-chev">›</span>
       </button>
       <button type="button" class="home-card nav-card" id="btn-free">
-        <span class="nav-icon">🎲</span>
+        <span class="nav-icon"><i class="ico" data-icon="dice-5"></i></span>
         <span class="nav-body">
           <span class="nav-title">Vrij spelen</span>
           <span class="nav-sub nav-sub-muted">Kies zelf de wereld en het niveau</span>
@@ -180,7 +180,7 @@
 
       <!-- Oefenzaak: begeleiding -->
       <div class="tutorial-coach" id="tutorial-coach" hidden>
-        <span class="tutorial-coach-icon">🎓</span>
+        <span class="tutorial-coach-icon"><i class="ico" data-icon="school"></i></span>
         <div class="tutorial-coach-body">
           <span class="tutorial-coach-step" id="tutorial-coach-step">Stap 1 van 5</span>
           <p class="tutorial-coach-text" id="tutorial-coach-text"></p>
@@ -251,7 +251,7 @@
         <button type="button" id="btn-board-tip-close" aria-label="Sluiten">✕</button>
       </div>
       <div class="tutorial-coach board-coach" id="board-coach" hidden>
-        <span class="tutorial-coach-icon">🎓</span>
+        <span class="tutorial-coach-icon"><i class="ico" data-icon="school"></i></span>
         <div class="tutorial-coach-body">
           <span class="tutorial-coach-step" id="board-coach-step">Stap 1 van 4</span>
           <p class="tutorial-coach-text" id="board-coach-text"></p>
@@ -278,19 +278,19 @@
 
       <div class="board-tools">
         <button type="button" class="tool active" id="btn-board-place">
-          <span class="tool-icon">👤</span><span class="tool-label">Plaats</span>
+          <span class="tool-icon"><i class="ico" data-icon="user"></i></span><span class="tool-label">Plaats</span>
         </button>
         <button type="button" class="tool" id="btn-board-mark">
-          <span class="tool-icon">✏️</span><span class="tool-label">Potlood</span>
+          <span class="tool-icon"><i class="ico" data-icon="pencil"></i></span><span class="tool-label">Potlood</span>
         </button>
         <button type="button" class="tool" id="btn-board-erase">
-          <span class="tool-icon">🧽</span><span class="tool-label">Gum</span>
+          <span class="tool-icon"><i class="ico" data-icon="eraser"></i></span><span class="tool-label">Gum</span>
         </button>
         <button type="button" class="tool" id="btn-board-undo">
-          <span class="tool-icon">↩</span><span class="tool-label">Terug</span>
+          <span class="tool-icon"><i class="ico" data-icon="arrow-back-up"></i></span><span class="tool-label">Terug</span>
         </button>
         <button type="button" class="tool" id="btn-board-hint">
-          <span class="tool-icon">💡<b class="tool-badge" id="hint-badge" hidden></b></span><span class="tool-label">Hint</span>
+          <span class="tool-icon"><i class="ico" data-icon="bulb"></i><b class="tool-badge" id="hint-badge" hidden></b></span><span class="tool-label">Hint</span>
         </button>
         <button type="button" class="btn btn-primary board-check" id="btn-board-check" disabled>Controleer</button>
       </div>
@@ -334,7 +334,7 @@
       <div class="results-panel" id="results-panel">
         <div class="results-panel-top">
           <div class="results-stamp" id="results-stamp">
-            <span class="results-stamp-icon" id="results-icon" hidden>✓</span>
+            <span class="results-stamp-icon" id="results-icon" hidden><i class="ico" data-icon="check"></i></span>
             <span class="results-stamp-text">Zaak Gesloten</span>
           </div>
           <div class="results-stars" id="results-stars"></div>
@@ -568,6 +568,7 @@
   <script src="meting.js"></script>
   <script src="i18n.js"></script>
   <script src="grammar.js"></script>
+  <script src="icons.js"></script>
   <script src="sound.js"></script>
   <script src="floorplan.js"></script>
   <script src="logic-engine.js"></script>

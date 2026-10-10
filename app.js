@@ -40,6 +40,7 @@ const App = {
       I18n.init();
       if (I18n.lang !== 'nl') { const cl = document.querySelector('.menu-classic'); if (cl) cl.hidden = true; }   // het klassieke raster is alleen Nederlands
     }
+    if (typeof Icons !== 'undefined') Icons.fill();
     this.bootSplash();
     this.loadStreak();
     this.bindNavigation();
