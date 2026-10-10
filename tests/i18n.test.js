@@ -43,5 +43,9 @@ check(/was found in the .+\. The murderer was the only one in that room\./.test(
 const h = FloorPlan.hint(p, new Array(p.suspects.length).fill(null));
 check(/Start with|can only be in one place/.test(h.text), 'hint in het Engels: ' + h.text);
 check(/stands|must be|can stand/.test(Mentor.explain(p.clues[0], p)), 'uitleg van Van Dam in het Engels: ' + Mentor.explain(p.clues[0], p));
+// the analytics worker refuses events in languages it does not know (400): it must list every app language
+const workerSrc = require('fs').readFileSync(require('path').join(__dirname, '..', 'meting', 'src', 'index.js'), 'utf8');
+const workerLangs = (workerSrc.match(/const LANGS = new Set\((\[[^\]]*\])\)/) || [, '[]'])[1].match(/'([a-z]+)'/g).map(x => x.slice(1, -1));
+check(I18n.LANGS.every(l => workerLangs.includes(l[0])), 'tellerdienst (meting/src/index.js) accepteert elke taal van de app');
 console.log(failures === 0 ? 'ALLE I18N CHECKS PASSED' : `${failures} FAILURES`);
 process.exit(failures ? 1 : 0);

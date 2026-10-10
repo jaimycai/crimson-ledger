@@ -3,7 +3,8 @@
 // player: no id, no IP, no user agent, and the day is the finest time unit.
 const EVENTS = new Set(['open', 'tutorial_done', 'start', 'solved', 'failed', 'hint', 'store_open', 'purchase', 'review_asked', 'share', 'reminder_on']);
 const PLATFORMS = new Set(['ios', 'android', 'web']);
-const LANGS = new Set(['nl', 'en']);
+// every language the app speaks (i18n.js I18n.LANGS)
+const LANGS = new Set(['nl', 'en', 'de', 'es', 'fr', 'id', 'it', 'pt', 'tr', 'vi', 'ru', 'ar', 'ur', 'hi', 'mr', 'bn', 'te', 'zh', 'ja', 'ko']);
 const clean = (s, max) => String(s == null ? '' : s).toLowerCase().replace(/[^a-z0-9_:.-]/g, '').slice(0, max);
 const cors = { 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'POST, OPTIONS', 'Access-Control-Allow-Headers': 'Content-Type' };
 
