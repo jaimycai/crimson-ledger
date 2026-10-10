@@ -255,7 +255,9 @@ h3 { font-size: 1.15rem; }
   border: 1.5px dashed var(--border);
   opacity: 0.5;
 }
-.splash-badge-icon { font-size: 3rem; }
+/* het beeldmerk van het app-icoon: vergrootglas met een druppel in de lens */
+.splash-mark { width: 58%; height: 58%; color: var(--accent); overflow: visible; }
+.splash-mark-drop { fill: var(--error); }
 
 @keyframes pulse-border {
   0%, 100% { border-color: var(--accent); }
