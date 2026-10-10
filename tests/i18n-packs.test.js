@@ -93,13 +93,18 @@ for (const lang of langs) {
   // data and campaign
   if (lang !== 'en') {
     const d = [], c = [];
-    shape(EN.data, P.data, 'data', d); shape(EN.campaign, P.campaign, 'campaign', c);
+    const { article, ...enData } = EN.data;   // a language without articles leaves data.article empty
+    shape(enData, P.data, 'data', d); shape(EN.campaign, P.campaign, 'campaign', c);
     fail(d, 'spelinhoud compleet (werelden, kamers, meubels, verdachten, titels, medailles …)');
     fail(c, 'campagne compleet (elk deel, elke zaak: titel, verhaaltje, bewijsstuk)');
     // Engels laat namen zonder titel weg (ze blijven gelijk); elke andere taal noemt iedereen
     const sus = [];
     for (const th of W.THEMES) for (const s of th.suspects) if (!(((P.data.themes || {})[th.id] || {}).suspects || {})[s.label]) sus.push(`${th.id}/${s.label}`);
     fail(sus, 'elke verdachte heeft een naam in deze taal');
+    // the board shows a short name (no title): data.themes.<world>.suspectShort, keyed by the Dutch label
+    const shortMissing = [];
+    for (const th of W.THEMES) for (const s of th.suspects) if (!((((P.data.themes || {})[th.id] || {}).suspectShort) || {})[s.label]) shortMissing.push(`${th.id}/${s.label}`);
+    fail(shortMissing, 'elke verdachte heeft een korte naam zonder titel (data.themes.<wereld>.suspectShort, sleutel = Nederlandse naam)');
   }
 
   // grammar
@@ -117,6 +122,7 @@ for (const lang of langs) {
     const plain = new Set(slots(t.replace(/\{[a-zA-Z0-9_.]+\|[^{}]*\}/g, '')).map(s => s.split('.')[0]));
     for (const s of new Set(slots(nl).map(s => s.split('.')[0]))) {
       if (['rw', 'rws'].includes(s)) continue;                       // the room word may be left out or rephrased
+      if (s === 's' && ['action/now', 'action/then'].includes(p)) continue;   // a follow-up sentence may say "he"/"she"/"him" 
       if (['s', 'b', 'n', 'k', 'quote', 'victim'].includes(s) ? !plain.has(s) : !heads.has(s)) lost.push(`${p}: {${s}}`);
     }
     // a word form a template asks for must exist everywhere

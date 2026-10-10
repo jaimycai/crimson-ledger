@@ -147,7 +147,11 @@ const I18n = {
       ['title', 'short', 'victimName', 'roomWord', 'roomWordPlural', 'tagline', 'intro', 'outro'].forEach(k => { if (e[k]) t[k] = e[k]; });
       t.rooms.forEach(r => { r.key = r.key || r.name; if (e.rooms[r.key]) r.name = e.rooms[r.key]; r.article = article; });
       t.furniture.forEach(f => { if (e.furniture[f.id]) f.nl = e.furniture[f.id]; });
-      t.suspects.forEach(s => { if (e.suspects[s.label]) s.label = e.suspects[s.label]; });
+      t.suspects.forEach(s => {
+        const nl = s.label;
+        if (e.suspects[nl]) s.label = e.suspects[nl];
+        if (e.suspectShort && e.suspectShort[nl] && typeof Themes !== 'undefined') Themes.SHORT[s.label] = e.suspectShort[nl];
+      });
     });
     // campagne
     if (CAMP && typeof CAMPAIGN !== 'undefined') CAMPAIGN.forEach(ch => {

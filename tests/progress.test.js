@@ -47,7 +47,7 @@ check(won.map(m => m.id).sort().join() === 'eerste-zaak,snel', 'eerste zaak + sn
 check(Progress.checkMedals({ ...base, solved: 1, elapsed: 60 }).length === 0 && Progress.medalCount() === 2, 'een medaille krijg je maar één keer');
 won = Progress.checkMedals({ ...base, streak: 7, clean: 10, partsDone: 1, worldsDone: ['landhuis'], threeStars: 10, archiveCount: 5, weekFull: true, weekDone: true, evidence: 24, points: 5000, rankTitle: 'Meesterdetective', questsAll: true, freezeUsed: true });
 check(won.length === Progress.MEDALS.length - 9 && !won.some(m => ['piraten', 'hotel', 'ruimte', 'museum', 'trein', 'circus', 'skihut'].includes(m.id)), `alle overige ${won.length} medailles behaald in één keer (alleen de zeven andere werelden niet)`);
-check(Progress.formatDate('2026-01-12') === '12 jan 2026', 'datum in het Nederlands');
+check(Progress.formatDate('2026-01-12') === '12 jan 2026', 'datum in het Nederlands (Intl, nl-NL)');
 
 // vitrine
 check(Progress.evidence('landhuis').length === 48 && Progress.evidence('landhuis').every(e => !e.got && e.icon && e.name), 'vitrine landhuis: 48 lege plekken');

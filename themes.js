@@ -255,7 +255,10 @@ const TITLES = new Set(['dr.', 'majoor', 'tante', 'kok', 'bootsman', 'stuurman',
 const Themes = {
   list: () => THEMES,
   get: id => THEMES.find(t => t.id === id) || THEMES[0],
+  // korte naam per vertaalde naam, uit het taalbestand (data.themes.<wereld>.suspectShort); gevuld door I18n.localizeData
+  SHORT: {},
   shortName(label) {
+    if (this.SHORT[label]) return this.SHORT[label];
     const parts = String(label || '').trim().split(/\s+/);
     while (parts.length > 1 && TITLES.has(parts[0].toLowerCase())) parts.shift();   // "Sterke Man Boris" → "Boris"
     return parts[0] || '';

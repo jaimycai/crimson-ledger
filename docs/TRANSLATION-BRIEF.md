@@ -15,6 +15,7 @@ Look at `i18n/en.js`: your file has the same five sections.
 | Section | What it is | Source |
 |---|---|---|
 | `meta` | `{ name, dir, locale }` — given in your task, copy it exactly | — |
+| | `data.article` is the article in front of a room name in plain sentences; leave it `''` if your language has none or if `grammar.rooms` gives every room its own forms | |
 | `ui` | every screen text. **Keys are the Dutch source texts and never change.** Values are your translation | translate the English value; read the Dutch key for nuance |
 | `data` | game content: 8 worlds (title, rooms, furniture, suspects, room word, story texts), ranks, difficulty names, daily and weekly case titles, medals, quests, Van Dam's tips, intros and reactions, archive stories, the tutorial | same keys as English |
 | `campaign` | 48 parts × 8 cases: `[title, intro, outro, briefing, [[case title, one-line story, evidence item], …]]` | same keys and order as English |
@@ -60,6 +61,9 @@ Parts of one section are merged in file-name order, so split big sections into f
   "Lady Clementine" → "Леди Клементина"). In non-Latin scripts write the name the way that script usually
   writes foreign names. Every one of the 64 suspects needs an entry in `data.themes.<world>.suspects`,
   keyed by the Dutch label (see `themes.js`; English lists only the ones whose label differs).
+- Each suspect also needs a **short name** for the board chips, without title: `data.themes.<world>.suspectShort`,
+  keyed by the Dutch label like `suspects` (`'Kok Saffron': 'Саффрон'`). Usually the given name; for "Barones Von
+  Stahl" the short name is "Von Stahl" in your script.
 - Each suspect has a gender in `themes.js` (`gender: 'f' | 'm'`); the stories match it.
 - **Names never change form.** Do not inflect a name (no case endings on names). Build sentences so the name
   stays in its dictionary form: make the name the subject, or put it after a word that takes the plain form

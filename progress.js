@@ -195,7 +195,7 @@ const Progress = {
     { id: 'weekzaak',      icon: '🗓️', title: 'Zaak van de week',      hint: 'Los een zaak van de week op',                                test: c => !!c.weekDone },
     { id: 'verzamelaar',   icon: '🗄️', title: 'Verzamelaar',           hint: 'Verzamel 24 bewijsstukken in de vitrine',                    test: c => c.evidence >= 24 },
     { id: 'punten',        icon: '🪙', title: 'Vijfduizend punten',    hint: 'Verzamel 5000 punten',                                       test: c => c.points >= 5000 },
-    { id: 'meester',       icon: '🎖️', title: 'Meesterdetective',      hint: 'Bereik de hoogste rang',                                     test: c => c.rankTitle === 'Meesterdetective' }
+    { id: 'meester',       icon: '🎖️', title: 'Meesterdetective',      hint: 'Bereik de hoogste rang',                                     test: c => c.rankLevel === 5 || c.rankTitle === 'Meesterdetective' }
   ],
   medals() { return this.json('crimson-medals', {}); },
   medalCount() { return Object.keys(this.medals()).length; },
@@ -214,8 +214,8 @@ const Progress = {
   formatDate(key) {
     if (!key) return '';
     const [y, m, d] = key.split('-').map(Number);
-    const months = PG_T('jan,feb,mrt,apr,mei,jun,jul,aug,sep,okt,nov,dec').split(',');
-    return `${d} ${months[(m || 1) - 1]} ${y}`;
+    const locale = typeof I18n !== 'undefined' && I18n.locale ? I18n.locale() : 'nl-NL';
+    return new Date(y, (m || 1) - 1, d || 1).toLocaleDateString(locale, { day: 'numeric', month: 'short', year: 'numeric' });
   },
 
   // ── Vitrine: één bewijsstuk per opgeloste campagnezaak ─────

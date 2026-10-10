@@ -416,7 +416,7 @@ const App = {
     $('part-icon').textContent = first ? th.icon : (ch.icon || th.icon);
     $('part-icon').hidden = first;
     $('part-title').textContent = first ? th.title : ch.title;
-    $('part-intro').textContent = first ? `${ch.title}. ${ch.intro}` : ch.intro;
+    $('part-intro').textContent = first ? AP_T`${ch.title}. ${ch.intro}` : ch.intro;
     const cast = $('part-cast');
     cast.hidden = !first;
     cast.innerHTML = first ? th.suspects.map((sp, i) => `<span class="part-ava" style="--i:${i}">${Avatars.suspect(sp, i)}</span>`).join('') : '';
@@ -608,7 +608,7 @@ const App = {
     const dayNo = this.getDayNumber(), theme = Themes.forDay(dayNo);
     const done = this.storageGet('crimson-board-daily-done') === new Date().toDateString();
     set('daily-title', AP_T`Zaak van vandaag: ${Progress.dailyTitle(dayNo)}`);
-    set('daily-text', `${theme.icon} ${theme.title}. ${theme.tagline}`);
+    set('daily-text', AP_T`${theme.icon} ${theme.title}. ${theme.tagline}`);
     set('daily-bonus', done ? AP_T('✓ Vandaag opgelost') : AP_T`🪙 +${Progress.DAILY_BONUS} punten`);
     set('btn-board-daily', done ? AP_T('Nog een zaak') : AP_T('Speel'));
     this.renderWeek();
@@ -911,7 +911,7 @@ const App = {
     const [at, title] = this.RANKS[idx];
     const nx = this.RANKS[idx + 1];
     const next = nx ? { at: nx[0], title: nx[1] } : null;
-    return { title, next, progress: next ? (solved - at) / (next.at - at) : 1 };
+    return { title, level: idx, next, progress: next ? (solved - at) / (next.at - at) : 1 };
   },
 
   updateBoardStats() {

@@ -743,7 +743,7 @@ const Board = {
       partsDone: Campaign.list().filter(ch => Campaign.chapterDone(ch.key)).length, worldsDone,
       threeStars: Campaign.threeStarCount(), archiveCount: Campaign.archiveCount(),
       weekFull: Progress.weekFull(), weekDone: Progress.weekDone(), evidence: Progress.evidenceCount(),
-      points: Progress.points(), rankTitle: App.rankFor(st.solved || 0).title,
+      points: Progress.points(), rankTitle: App.rankFor(st.solved || 0).title, rankLevel: App.rankFor(st.solved || 0).level,
       questsAll: Progress.questsAllDone(), freezeUsed: App.storageGet('crimson-freeze-used') === '1'
     };
   },
