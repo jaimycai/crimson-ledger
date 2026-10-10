@@ -723,7 +723,7 @@ const Board = {
     const bubble = (cls, text) => {
       react.hidden = false;
       react.className = `accuse-reaction ${cls}`;
-      react.innerHTML = `<span class="accuse-ava-sm">${Avatars.suspect(s, i)}</span><span><b>${s.label}:</b> “${text}”</span>`;
+      react.innerHTML = `<span class="accuse-ava-sm">${Avatars.suspect(s, i)}</span><span><b>${s.label}:</b> ${I18n.quote(text)}</span>`;
       if (react.scrollIntoView) react.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
     };
     if (i !== this.puzzle.murderer) {
@@ -885,7 +885,7 @@ const Board = {
       `<span class="rank-bar"><i style="width:${Math.round((this.newRank ? 0 : before.progress) * 100)}%" data-to="${Math.round(after.progress * 100)}"></i></span>`;
     const remark = Mentor.remark({ hintsUsed: this.hintsUsed, attempts: this.attempts, elapsed: this.elapsed, newRank: this.newRank,
                                    rank: before.title, isWeekly: this.isWeekly, stars: st });
-    mentor.innerHTML = `<img src="${Mentor.sketch}" alt=""><div><span class="mentor-label">${BD_T('Van Dam merkt op')}</span><p>“${remark}”</p></div>`;
+    mentor.innerHTML = `<img src="${Mentor.sketch}" alt=""><div><span class="mentor-label">${BD_T('Van Dam merkt op')}</span><p>${I18n.quote(remark)}</p></div>`;
 
     // waar iedereen stond
     const solEl = $('results-solution');
@@ -952,7 +952,7 @@ const Board = {
     const rows = [...document.querySelectorAll('#score-rows .score-row')];
     rows.forEach((r, i) => T(() => { show(r); const b = r.querySelector('b'); this.countUp(b, +b.dataset.v, 260, i === 0 ? '' : '+'); }, 1080 + i * 170));
     const tRows = 1080 + rows.length * 170;
-    T(() => { show($('score-total-row')); this.countUp($('score-total'), +$('score-total').dataset.v, 520, '', BD_T(' punten')); }, tRows);
+    T(() => { show($('score-total-row')); this.countUp($('score-total'), +$('score-total').dataset.v, 520, '', '', n => BD_T`${n} punten`); }, tRows);
     T(() => {
       show($('results-rank'));
       const bar = document.querySelector('#results-rank .rank-bar i');
@@ -961,12 +961,14 @@ const Board = {
     }, tRows + 320);
     T(() => { show($('results-mentor')); this.cerTimers = []; this.flushMedals(); }, tRows + 640);
   },
-  countUp(el, to, ms, prefix = '', suffix = '') {
+  // fmt(n) geeft de hele tekst, zodat een taal het woord bij het getal kan laten passen ("1 очко", "5 очков")
+  countUp(el, to, ms, prefix = '', suffix = '', fmt = null) {
     if (!el) return;
     const start = Date.now();
     const id = setInterval(() => {
       const k = Math.min(1, (Date.now() - start) / ms);
-      el.textContent = prefix + Math.round(to * k) + suffix;
+      const n = Math.round(to * k);
+      el.textContent = fmt ? fmt(n) : prefix + n + suffix;
       if (k >= 1) clearInterval(id);
     }, 30);
     this.cuTimers.push(id);
@@ -1040,6 +1042,19 @@ const Board = {
     grid.style.width = `${width}px`;
     grid.style.height = `${Math.floor(width / ratio)}px`;
     this.fitLabels(grid);
+    this.fitToolLabels();
+  },
+  // De labels onder de gereedschapsknoppen zijn klein; in langere talen ("Подсказка") worden ze kleiner
+  // in plaats van uit hun knop te lopen, tot 7 px (alleen op het kleinste scherm).
+  fitToolLabels() {
+    if (typeof getComputedStyle === 'undefined') return;
+    document.querySelectorAll('.board-tools .tool-label').forEach(el => {
+      el.style.fontSize = '';
+      const box = el.closest('.tool');
+      if (!box || !el.offsetWidth) return;
+      let fs = parseFloat(getComputedStyle(el).fontSize);
+      while (el.scrollWidth > box.clientWidth - 2 && fs > 7) { fs -= 0.25; el.style.fontSize = `${fs}px`; }
+    });
   },
   // Een kamernaam mag niet breder worden dan de onderste rij van zijn kamer, anders loopt hij over
   // de buurkamer (smalle kamers, lange namen in sommige talen): eerst iets kleiner, dan over twee regels.

@@ -1461,7 +1461,8 @@ body.tutorial-mode #btn-share { display: none; }
 .nav-icon .ico { width: 30px; height: 30px; vertical-align: 0; color: var(--accent); }
 .tutorial-coach-icon .ico { width: 26px; height: 26px; vertical-align: 0; color: var(--gold); }
 .results-stamp-icon .ico { width: 34px; height: 34px; vertical-align: 0; stroke-width: 2.5; }
-.tool-label { font-size: 0.58rem; font-weight: 600; }
+.tool-label { font-size: 0.58rem; font-weight: 600; max-width: 100%; white-space: nowrap; }
+.board-tools .tool { min-width: 0; }   /* een lang label maakt de knop niet breder; Board.fitToolLabels verkleint het */
 .board-check { flex: 1.4; padding: 10px 8px; font-size: 0.8rem; }
 
 @media (min-width: 520px) {

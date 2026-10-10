@@ -83,6 +83,10 @@ const I18n = {
     if (typeof location !== 'undefined' && location.reload) location.reload();
   },
 
+  // aanhalingstekens zoals de taal ze schrijft
+  QUOTES: { de: ['„', '“'], fr: ['«\u00a0', '\u00a0»'], es: ['«', '»'], it: ['«', '»'], ru: ['«', '»'], ar: ['«', '»'], ur: ['«', '»'], ja: ['「', '」'], zh: ['“', '”'], ko: ['“', '”'], tr: ['“', '”'] },
+  quote(text) { const q = this.QUOTES[this.lang] || ['“', '”']; return q[0] + text + q[1]; },
+
   // ── Tekst in de code ───────────────────────────────────────
   dict() { const p = this.pack(); return p && p.ui ? p.ui : null; },
   t(key) { const d = this.dict(); return d && d[key] ? d[key] : key; },

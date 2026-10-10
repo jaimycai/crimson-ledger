@@ -398,7 +398,7 @@ const App = {
   showBriefing(c, ch) {
     const b = Mentor.briefing(Board.puzzle, c, ch);
     document.getElementById('briefing-sub').textContent = b.sub;
-    document.getElementById('briefing-text').textContent = `“${b.text}”`;
+    document.getElementById('briefing-text').textContent = I18n.quote(b.text);
     Board.stopTimer();   // de klok loopt pas na "Aan de slag"
     this.showModal('briefing-modal');
   },
