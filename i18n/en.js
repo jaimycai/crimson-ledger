@@ -21,6 +21,9 @@
     // startscherm
     'Alle {0}': 'All {0}', 'Ma,Di,Wo,Do,Vr,Za,Zo': 'Mo,Tu,We,Th,Fr,Sa,Su', 'jan,feb,mrt,apr,mei,jun,jul,aug,sep,okt,nov,dec': 'Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec', '📁 Het archief · eindeloos': '📁 The archive · endless',
     'Basis': 'Base', 'Tijdbonus': 'Time bonus', 'Zonder hint': 'No hint', 'In één keer': 'First try', 'Archiefdossier': 'Archive file', 'Dossier {0}': 'File {0}',
+    'Combineer {1|one:aanwijzing|other:aanwijzingen} {0} met de spelregel over het slachtoffer.': 'Combine {1|one:clue|other:clues} {0} with the rule about the victim.',
+    '{1|one:Aanwijzing|other:Aanwijzingen} {0} {1|one:beperkt|other:beperken} de opties. Streep vakjes weg die er niet aan voldoen.': '{1|one:Clue|other:Clues} {0} {1|one:limits|other:limit} the options. Cross off squares that do not satisfy {1|one:it|other:them}.',
+    '{1} {0|one:dag|other:dagen} streak': '{1} day streak',
     'Dagelijkse zaak': 'Daily case', 'Zaak van vandaag': "Today's case", '🪙 +150 punten': '🪙 +150 points', 'Speel': 'Play',
     'dagen streak': 'day streak', 'Speel vandaag om je streak te houden': 'Play today to keep your streak',
     'Opdrachten van vandaag': "Today's quests", 'Zaak van de week': 'Case of the week', '🪙 +300 punten': '🪙 +300 points',

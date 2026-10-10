@@ -185,9 +185,9 @@ const I18n = {
   }
 };
 
-// T`…` met gaten, of T('…') voor losse tekst
+// T`…` met gaten, T('…') voor losse tekst, of T('… {0} …', waarde) als de zin zelf een vorm moet kiezen
 function T(strings, ...vals) {
-  if (typeof strings === 'string') return I18n.t(strings);
+  if (typeof strings === 'string') return vals.length ? I18n.format(I18n.t(strings), vals) : I18n.t(strings);
   return I18n.template(strings, vals);
 }
 

@@ -1,5 +1,5 @@
 // Vertaalhulp: gebruikt de taalmotor (i18n.js) als die er is, anders de Nederlandse tekst.
-const FP_T = (s, ...v) => { const g = typeof globalThis !== 'undefined' ? globalThis.T : undefined; if (typeof g === 'function') return g(s, ...v); return typeof s === 'string' ? s : s.map((x, i) => x + (i < v.length ? String(v[i]) : '')).join(''); };
+const FP_T = (s, ...v) => { const g = typeof globalThis !== 'undefined' ? globalThis.T : undefined; if (typeof g === 'function') return g(s, ...v); if (typeof s !== 'string') return s.map((x, i) => x + (i < v.length ? String(v[i]) : '')).join(''); return s.replace(/\{(\d+)((?:\|[a-z]+:[^|{}]*)+)?\}/g, (w, i, o) => { if (!o) return String(v[+i]); const m = {}; o.slice(1).split('|').forEach(p => { const k = p.indexOf(':'); m[p.slice(0, k)] = p.slice(k + 1); }); return v[+i] === 1 && m.one !== undefined ? m.one : m.other !== undefined ? m.other : w; }); };
 // Zinsbouw: grammar.js (in de browser een gewoon script, in Node via require).
 const FP_G = () => (typeof Grammar !== 'undefined' ? Grammar : require('./grammar.js').Grammar);
 // ============================================================
@@ -510,14 +510,14 @@ const FloorPlan = (() => {
     if (cands[best].length === 1) {
       return { type: 'deduce', suspect: best, clues: related, cells: cands[best],
                text: FP_T`${N(best)} kan maar op één plek staan.`,
-               detail: related.length ? FP_T`Combineer aanwijzing ${nrs} met de spelregel over het slachtoffer.` : FP_T('De spelregel over het slachtoffer dwingt dit af.') };
+               detail: related.length ? FP_T('Combineer {1|one:aanwijzing|other:aanwijzingen} {0} met de spelregel over het slachtoffer.', nrs, related.length) : FP_T('De spelregel over het slachtoffer dwingt dit af.') };
     }
     const roomIds = new Set(cands[best].map(c => roomAt(puzzle, c).id));
     const one = roomIds.size === 1 ? puzzle.rooms.find(q => q.id === [...roomIds][0]) : null;
     const text = one ? G.text('hint/start.one', puzzle, { s: best, n: cands[best].length, room: one.id })
                      : G.text('hint/start.spread', puzzle, { s: best, n: cands[best].length, k: roomIds.size });
     return { type: 'narrow', suspect: best, clues: related, cells: cands[best], text,
-             detail: related.length ? FP_T`Aanwijzing ${nrs} beperkt de opties. Streep vakjes weg die er niet aan voldoen.` : FP_T('Gebruik de plaatsen van de anderen om verder te snoeien.') };
+             detail: related.length ? FP_T('{1|one:Aanwijzing|other:Aanwijzingen} {0} {1|one:beperkt|other:beperken} de opties. Streep vakjes weg die er niet aan voldoen.', nrs, related.length) : FP_T('Gebruik de plaatsen van de anderen om verder te snoeien.') };
   }
 
   return { generate, fromLayout, solve, candidates, check, holds, hint, formatClue, statement, rng,

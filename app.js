@@ -1858,7 +1858,8 @@ const App = {
   },
 
   updateStreakDisplay() {
-    document.getElementById('streak-count').textContent = this.streak.count;
+    const n = this.streak.count;
+    document.getElementById('streak-title').innerHTML = `🔥 ${AP_T('{1} {0|one:dag|other:dagen} streak', n, `<span id="streak-count">${n}</span>`)}`;
     this.renderWeek();
   },
 
