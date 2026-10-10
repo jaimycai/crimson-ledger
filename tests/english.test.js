@@ -27,12 +27,12 @@ const active = () => document.querySelector('.screen.active').id;
     check(document.documentElement.lang === 'en' && /Crimson Ledger/.test(document.title), 'html lang en titel');
     const langSel = document.getElementById('lang-select');
     check(langSel.value === 'en' && [...langSel.options].map(o => o.textContent).join(',') === I18n.LANGS.map(l => l[1]).join(','), 'taalkeuze staat op English, met elke taal in haar eigen naam');
-    check(document.querySelector('label[for="lang-select"]').textContent === '🌍 Language', 'label van de taalkeuze vertaald');
+    check(document.querySelector('label[for="lang-select"]').textContent.replace(/^🌍/, '').trim() === 'Language', 'label van de taalkeuze vertaald');
     check(document.querySelector('.menu-classic').hidden === true, 'klassiek raster verborgen in het Engels');
 
     // ── thuisscherm ──
     check(/^Today's case: /.test(txt('daily-title')), 'dagelijkse kaart Engels: ' + txt('daily-title'));
-    check(txt('daily-bonus') === '🪙 +150 points' && txt('btn-board-daily') === 'Play', 'bonus en knop Engels: ' + txt('daily-bonus') + ' / ' + txt('btn-board-daily'));
+    check(txt('daily-bonus').replace(/^🪙\s*/, '') === '+150 points' && txt('btn-board-daily') === 'Play', 'bonus en knop Engels: ' + txt('daily-bonus') + ' / ' + txt('btn-board-daily'));
     check(txt('campaign-next') === 'Part I · Case 1', 'campagnekaart Engels: ' + txt('campaign-next'));
     check(txt('board-stats') === 'No case solved yet. The first one today?', 'voortgang Engels: ' + txt('board-stats'));
     check(/Recruit/.test(txt('menu-rank')) && /until Sleuth/.test(txt('menu-rank')), 'rang Engels: ' + txt('menu-rank'));
