@@ -56,4 +56,6 @@ en eigen geluid, en Jaimy stuurt bij vóór er gerenderd wordt.
 
 - 10 okt 2026: gereedschap gebouwd en getest. Eerste storyboard: `motion/c3-0/bord.html` ("De stille
   zee", 12 shots, 27 s), nog zonder beweging. Wacht op Jaimy's opmerkingen.
+- 10 okt 2026: letter voor video's is Zodiak + General Sans (Fontshare, via de API; zie `DESIGN.md` §4).
+  Storyboard opnieuw gemaakt; het eerste bord met Playfair + Inter staat als `motion/c3-0/bord-playfair.html`.
 - Bekend: de plattegrond uit de app kapt het kamerlabel "VOORRAADKAMER" af (ook in de app zelf).

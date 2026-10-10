@@ -13,10 +13,10 @@
   @font-face { font-family: Playfair; src: url(../../../assets/fonts/PlayfairDisplay-normal.woff2) format('woff2'); font-weight: 400 900; }
   @font-face { font-family: Playfair; font-style: italic; src: url(../../../assets/fonts/PlayfairDisplay-italic.woff2) format('woff2'); font-weight: 400 900; }
   @font-face { font-family: Inter; src: url(../../../assets/fonts/Inter-normal.woff2) format('woff2'); font-weight: 100 900; }
-  :root { --ink: #140b08; --ink2: #22140e; --cream: #faf5ef; --soft: #c9b7a4; --gold: #e8be78; --red: #c43e26; --blood: #8f1d12; }
+  :root { --serif: Playfair, Georgia, serif; --sans: Inter, sans-serif; --ink: #140b08; --ink2: #22140e; --cream: #faf5ef; --soft: #c9b7a4; --gold: #e8be78; --red: #c43e26; --blood: #8f1d12; }
   html, body { margin: 0; height: 100%; background: #000; overflow: hidden; }
   #stage { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; transform-origin: 0 0; overflow: hidden;
-    background: radial-gradient(120% 80% at 50% 40%, #2a1810 0%, var(--ink) 60%, #0b0604 100%); color: var(--cream); font-family: Inter, sans-serif; }
+    background: radial-gradient(120% 80% at 50% 40%, #2a1810 0%, var(--ink) 60%, #0b0604 100%); color: var(--cream); font-family: var(--sans); }
   #grain { position: absolute; inset: 0; pointer-events: none; opacity: .09; mix-blend-mode: overlay; z-index: 50;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23n)'/%3E%3C/svg%3E"); }
   #vignette { position: absolute; inset: 0; pointer-events: none; z-index: 40; box-shadow: inset 0 0 260px 60px rgba(0,0,0,.75); }
@@ -34,18 +34,18 @@
   .room.crime { box-shadow: inset 0 0 0 7px var(--red); border-radius: 10px; outline: 6px dashed rgba(196,62,38,.9); outline-offset: 6px; }
   #victim { position: absolute; border-radius: 50%; box-shadow: 0 0 0 10px rgba(196,62,38,.85), 0 0 0 30px rgba(196,62,38,.3); }
 
-  .serif { font-family: Playfair, Georgia, serif; }
+  .serif { font-family: var(--serif); }
   .center { position: absolute; left: 70px; right: 70px; text-align: center; }
 
   /* scene: hook */
-  #hook .l1 { top: 560px; font: 800 96px/1.05 Playfair, serif; letter-spacing: -1px; }
-  #hook .num { top: 760px; font: 900 420px/1 Playfair, serif; color: var(--red); }
-  #hook .l2 { top: 1200px; font: 800 96px/1 Playfair, serif; }
+  #hook .l1 { top: 560px; font: 800 96px/1.05 var(--serif); letter-spacing: -1px; }
+  #hook .num { top: 760px; font: 900 420px/1 var(--serif); color: var(--red); }
+  #hook .l2 { top: 1200px; font: 800 96px/1 var(--serif); }
 
   /* captions under the plan */
   .cap { top: 1330px; }
-  .cap .big { font: 800 84px/1.05 Playfair, serif; }
-  .cap .small { margin-top: 22px; font: italic 500 50px/1.25 Playfair, serif; color: var(--soft); }
+  .cap .big { font: 800 84px/1.05 var(--serif); }
+  .cap .small { margin-top: 22px; font: italic 500 50px/1.25 var(--serif); color: var(--soft); }
   .cap em { color: var(--red); font-style: normal; }
 
   /* suspects */
@@ -53,16 +53,16 @@
   .card { width: 280px; text-align: center; }
   .ava { width: 240px; height: 240px; margin: 0 auto; border-radius: 50%; overflow: hidden; box-shadow: 0 0 0 8px var(--c), 0 24px 50px rgba(0,0,0,.6); background: var(--ink2); }
   .ava svg { width: 100%; height: 100%; display: block; }
-  .card .nm { margin-top: 30px; font: 800 48px/1.1 Playfair, serif; color: var(--cream); }
-  .card .q { position: absolute; margin-top: -330px; margin-left: 170px; font: 900 120px/1 Playfair, serif; color: var(--red); }
+  .card .nm { margin-top: 30px; font: 800 48px/1.1 var(--serif); color: var(--cream); }
+  .card .q { position: absolute; margin-top: -330px; margin-left: 170px; font: 900 120px/1 var(--serif); color: var(--red); }
 
   /* one statement */
   #stmt .who { position: absolute; left: 90px; top: 1040px; display: flex; align-items: center; gap: 30px; }
   #stmt .who .ava { width: 150px; height: 150px; margin: 0; box-shadow: 0 0 0 6px var(--c); }
-  #stmt .who .nm { font: 800 56px/1 Playfair, serif; color: var(--gold); }
-  #stmt .who .nr { font: 600 30px/1 Inter, sans-serif; color: var(--soft); letter-spacing: 3px; text-transform: uppercase; margin-bottom: 14px; }
+  #stmt .who .nm { font: 800 56px/1 var(--serif); color: var(--gold); }
+  #stmt .who .nr { font: 600 30px/1 var(--sans); color: var(--soft); letter-spacing: 3px; text-transform: uppercase; margin-bottom: 14px; }
   #stmt .txt { position: absolute; left: 90px; right: 150px; top: 1240px; padding: 44px 50px; border-radius: 34px; background: var(--cream); color: #241510;
-    font: 600 58px/1.28 Inter, sans-serif; box-shadow: 0 30px 70px rgba(0,0,0,.55); }
+    font: 600 58px/1.28 var(--sans); box-shadow: 0 30px 70px rgba(0,0,0,.55); }
   #stmt .txt:before { content: ''; position: absolute; left: 70px; top: -26px; border: 26px solid transparent; border-bottom-color: var(--cream); border-top: 0; }
   .mark { background: linear-gradient(transparent 58%, rgba(232,190,120,.75) 58%); padding: 0 4px; }
 
@@ -70,24 +70,24 @@
   #list { position: absolute; left: 70px; right: 70px; top: 1020px; }
   .row { display: flex; gap: 22px; align-items: flex-start; margin-bottom: 26px; }
   .row .ava { width: 84px; height: 84px; margin: 0; flex: none; box-shadow: 0 0 0 4px var(--c); }
-  .row .t { font: 500 42px/1.25 Inter, sans-serif; color: var(--cream); padding-top: 6px; }
+  .row .t { font: 500 42px/1.25 var(--sans); color: var(--cream); padding-top: 6px; }
   .row .t b { color: var(--gold); font-weight: 700; }
 
   /* countdown */
   #clock { position: absolute; right: 50px; top: 240px; width: 190px; height: 190px; display: none; }
   #clock svg { position: absolute; inset: 0; transform: rotate(-90deg); }
-  #clock .n { position: absolute; inset: 0; display: grid; place-items: center; font: 900 92px/1 Playfair, serif; }
+  #clock .n { position: absolute; inset: 0; display: grid; place-items: center; font: 900 92px/1 var(--serif); }
   #clock.red .n { color: var(--red); }
 
   /* time's up + end card */
-  #tijd .t1 { top: 330px; font: 900 220px/1 Playfair, serif; color: var(--red); }
-  #tijd .t2 { top: 600px; font: 800 86px/1.05 Playfair, serif; }
+  #tijd .t1 { top: 330px; font: 900 220px/1 var(--serif); color: var(--red); }
+  #tijd .t2 { top: 600px; font: 800 86px/1.05 var(--serif); }
   #tijd #cards2 { position: absolute; left: 60px; right: 60px; top: 860px; display: flex; justify-content: center; gap: 36px; }
-  #tijd .t3 { top: 1360px; font: italic 500 54px/1.3 Playfair, serif; color: var(--soft); }
+  #tijd .t3 { top: 1360px; font: italic 500 54px/1.3 var(--serif); color: var(--soft); }
   #eind .icon { position: absolute; left: 390px; top: 560px; width: 300px; height: 300px; border-radius: 66px; box-shadow: 0 30px 80px rgba(0,0,0,.7), 0 0 0 3px rgba(232,190,120,.3); }
-  #eind .e1 { top: 940px; font: 900 104px/1 Playfair, serif; }
-  #eind .e2 { top: 1080px; font: italic 500 56px/1.3 Playfair, serif; color: var(--gold); }
-  #eind .e3 { top: 1240px; font: 600 40px/1.3 Inter, sans-serif; color: var(--soft); letter-spacing: 2px; }
+  #eind .e1 { top: 940px; font: 900 104px/1 var(--serif); }
+  #eind .e2 { top: 1080px; font: italic 500 56px/1.3 var(--serif); color: var(--gold); }
+  #eind .e3 { top: 1240px; font: 600 40px/1.3 var(--sans); color: var(--soft); letter-spacing: 2px; }
 </style>
 </head>
 <body>
@@ -104,6 +104,15 @@
   <div id="alarm"></div><div id="vignette"></div><div id="grain"></div>
 </div>
 <script src="kern.js"></script>
+<script>
+// Video type: Fontshare pair via the API (closed-source fonts may not be committed to this public repo). See DESIGN.md, Typografie.
+const LETTERS = { a: ['Zodiak', 'General Sans', 'zodiak@400,700,800,900&f[]=general-sans@400,500,600,700'],
+  b: ['Boska', 'Satoshi', 'boska@400,500,700,900&f[]=satoshi@400,500,700,900'],
+  c: ['Gambetta', 'Switzer', 'gambetta@400,500,600,700&f[]=switzer@400,500,600,700'] };
+const L = LETTERS[Studio.q.get('letter') || 'a'];   // default since 10-10-2026: Zodiak + General Sans; ?letter=app for Playfair + Inter
+if (L) { document.write(`<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=${L[2]}&display=block">`);
+  document.documentElement.style.setProperty('--serif', `'${L[0]}', Georgia, serif`); document.documentElement.style.setProperty('--sans', `'${L[1]}', sans-serif`); }
+</script>
 <script>document.write(`<script src="../motion/${Studio.q.get('zaak') || 'c3-0'}/zaak.js"><\/script>`);</script>
 <script>
 const Z = window.ZAAK, zaak = Studio.q.get('zaak') || 'c3-0';
