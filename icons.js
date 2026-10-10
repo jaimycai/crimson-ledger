@@ -77,7 +77,7 @@ const Icons = {
     '🎨': 'palette', '🛒': 'shopping-cart', '🧊': 'snowflake', '🔥': 'flame', '🎓': 'school', '🔒': 'lock', '🎁': 'gift',
     '📅': 'calendar', '🗓': 'calendar', '📁': 'folder', '✨': 'sparkles', '🏆': 'trophy', '📖': 'book', '🔁': 'repeat',
     '👁': 'eye', '▶': 'player-play', '✓': 'check', '↗': 'external-link', '←': 'arrow-left', '→': 'arrow-right', '🎖': 'award',
-    '⏱': 'clock', '🔍': 'search', '⚙': 'settings'
+    '⏱': 'clock', '🔍': 'search', '⚙': 'settings', '✅': 'check'
   },
   // waar emoji inhoud zijn en blijven
   KEEP: '.medal-icon, .medal-toast-icon, .theme-icon, .part-icon, .ev, .vitrine, .chest-items, .bclue-text, .dclue, .board-grid, .mini-grid, .story, .briefing-text, .results-solution, .map-art, select, option, textarea, input, svg, .classic, #screen-classic',
