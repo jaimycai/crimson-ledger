@@ -880,7 +880,7 @@ const Board = {
     const before = ri.before || after;
     const left = after.next ? after.next.at - (ri.solvedAfter || 0) : 0;
     $('results-rank').innerHTML =
-      (this.newRank ? `<span class="rank-new">🎖 Nieuwe rang: ${this.newRank}</span>` : `<span class="rank-title">🎖 ${after.title}</span>`) +
+      (this.newRank ? `<span class="rank-new">🎖 ${BD_T`Nieuwe rang: ${this.newRank}`}</span>` : `<span class="rank-title">🎖 ${after.title}</span>`) +
       `<span class="rank-next">${after.next ? BD_T`Volgende: ${after.next.title} · nog ${left} {1|one:zaak|other:zaken}` : BD_T('Hoogste rang bereikt')}</span>` +
       `<span class="rank-bar"><i style="width:${Math.round((this.newRank ? 0 : before.progress) * 100)}%" data-to="${Math.round(after.progress * 100)}"></i></span>`;
     const remark = Mentor.remark({ hintsUsed: this.hintsUsed, attempts: this.attempts, elapsed: this.elapsed, newRank: this.newRank,
