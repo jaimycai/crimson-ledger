@@ -1043,6 +1043,8 @@ const Board = {
     grid.style.height = `${Math.floor(width / ratio)}px`;
     this.fitLabels(grid);
     this.fitToolLabels();
+    // eerst gemeten met een reserveletter? dan opnieuw zodra de echte letters er zijn
+    if (typeof document !== 'undefined' && document.fonts && document.fonts.status !== 'loaded') document.fonts.ready.then(() => { this.fitLabels(grid); this.fitToolLabels(); });
   },
   // De labels onder de gereedschapsknoppen zijn klein; in langere talen ("Подсказка") worden ze kleiner
   // in plaats van uit hun knop te lopen, tot 7 px (alleen op het kleinste scherm).
@@ -1053,7 +1055,7 @@ const Board = {
       const box = el.closest('.tool');
       if (!box || !el.offsetWidth) return;
       let fs = parseFloat(getComputedStyle(el).fontSize);
-      while (el.scrollWidth > box.clientWidth - 2 && fs > 7) { fs -= 0.25; el.style.fontSize = `${fs}px`; }
+      while (el.scrollWidth > el.clientWidth + 1 && fs > 7) { fs -= 0.25; el.style.fontSize = `${fs}px`; }
     });
   },
   // Een kamernaam mag niet breder worden dan de onderste rij van zijn kamer, anders loopt hij over

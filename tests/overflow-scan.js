@@ -9,7 +9,7 @@ async function overflowScan() {
   const scan = screen => {
     const roots = [...document.querySelectorAll('.screen.active, .modal.active')];
     for (const root of roots) for (const e of root.querySelectorAll('*')) {
-      if (!e.offsetParent || e.closest('svg') || e.closest('.board-grid')) continue;
+      if (!e.offsetParent || e.closest('svg') || e.closest('.board-grid') || e.closest('.tool-badge')) continue;   // the hint badge sits on the edge on purpose
       const own = [...e.childNodes].filter(n => n.nodeType === 3).map(n => n.nodeValue).join('').trim();
       if (!own) continue;
       checked++;

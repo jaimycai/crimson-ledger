@@ -84,6 +84,10 @@
 /* Schuin gezet Chinees, Arabisch of Devanagari is geen cursief, en letterafstand breekt de verbonden letters
    van het Arabisch en Urdu. */
 :root:is(:lang(ar), :lang(ur), :lang(hi), :lang(mr), :lang(bn), :lang(te), :lang(zh), :lang(ja), :lang(ko)) * { font-style: normal !important; letter-spacing: 0 !important; }
+/* Nastaliq (Urdu) is hoog: lopende tekst krijgt meer regelafstand. */
+:root:lang(ur) :is(p, .board-tip span, .board-casetext, .bclue-text, .accuse-q, .hint-text, .hint-sub, .tutorial-coach-text, .briefing-text) { line-height: 1.9; }
+/* bladerpijlen altijd in de systeemletter (in Nastaliq lijken ‹ › op haakjes) */
+.deck-arrow { font-family: -apple-system, system-ui, sans-serif; }
 /* De merknaam blijft altijd in Playfair. */
 :root .splash-title, :root .menu-title { font-family: 'Playfair Display', Georgia, serif; }
 
