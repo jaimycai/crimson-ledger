@@ -1,10 +1,10 @@
 // Runs inside the app page (browser pane, javascript_tool): visits the main screens in the current language and
 // lists every piece of text that does not fit — cut off, sticking out of its button or box, or off screen.
-// Paste the whole file, then: await overflowScan()  →  [{ screen, kind, text, where }]
+// Paste the whole file, then: await overflowScan()  →  { checked, items: [{ screen, kind, text, where }] }
 async function overflowScan() {
   const sleep = ms => new Promise(r => setTimeout(r, ms));
   const click = id => { const el = document.getElementById(id); if (el) el.click(); return !!el; };
-  const out = [];
+  const out = []; let checked = 0;
   const label = e => (e.id ? '#' + e.id : '') + (typeof e.className === 'string' && e.className ? '.' + e.className.trim().split(/\s+/).join('.') : '') || e.tagName.toLowerCase();
   const scan = screen => {
     const roots = [...document.querySelectorAll('.screen.active, .modal.active')];
@@ -12,6 +12,7 @@ async function overflowScan() {
       if (!e.offsetParent || e.closest('svg') || e.closest('.board-grid')) continue;
       const own = [...e.childNodes].filter(n => n.nodeType === 3).map(n => n.nodeValue).join('').trim();
       if (!own) continue;
+      checked++;
       const cs = getComputedStyle(e), r = e.getBoundingClientRect();
       const text = own.slice(0, 70);
       if (e.scrollWidth > e.clientWidth + 1 && (cs.overflowX !== 'visible' || cs.textOverflow === 'ellipsis')) out.push({ screen, kind: 'afgekapt', text, where: label(e) });
@@ -40,5 +41,5 @@ async function overflowScan() {
   if (click('btn-awards')) { await sleep(500); scan('vitrine'); }
   App.navigateTo('menu');
   const seen = new Set();
-  return out.filter(o => { const k = o.screen + o.kind + o.text; if (seen.has(k)) return false; seen.add(k); return true; });
+  return { checked, items: out.filter(o => { const k = o.screen + o.kind + o.text; if (seen.has(k)) return false; seen.add(k); return true; }) };
 }
