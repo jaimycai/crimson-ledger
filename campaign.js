@@ -1,3 +1,5 @@
+// Vertaalhulp: gebruikt de taalmotor (i18n.js) als die er is, anders de Nederlandse tekst.
+const CP_T = (s, ...v) => { const g = typeof globalThis !== 'undefined' ? globalThis.T : undefined; if (typeof g === 'function') return g(s, ...v); return typeof s === 'string' ? s : s.map((x, i) => x + (i < v.length ? String(v[i]) : '')).join(''); };
 // ============================================================
 // CAMPAIGN — vaste reeks zaken per thema, zes delen van acht per wereld, met
 // titel, verhaaltje, bewijsstuk (voor de vitrine) en oplopende moeilijkheid. Zaken zijn
@@ -738,7 +740,7 @@ const Campaign = {
   archive(n) {
     const difficulty = n <= 2 ? 'makkelijk' : ARCHIVE_DIFF[n % ARCHIVE_DIFF.length];
     return { chapter: this.ARCHIVE, theme: ARCHIVE_THEMES[(n - 1) % ARCHIVE_THEMES.length], idx: n - 1,
-             title: `Dossier ${n}`, story: ARCHIVE_STORIES[(n - 1) % ARCHIVE_STORIES.length], difficulty, seed: 200000 + n * 9973 };
+             title: CP_T`Dossier ${n}`, story: ARCHIVE_STORIES[(n - 1) % ARCHIVE_STORIES.length], difficulty, seed: 200000 + n * 9973 };
   },
   caseAt(key, idx) {
     if (key === this.ARCHIVE) return this.archive(idx + 1);

@@ -20,7 +20,7 @@
     'Elke puzzel ontmaskert een moordenaar': 'Every puzzle unmasks a murderer',
     // startscherm
     'Alle {0}': 'All {0}', 'Ma,Di,Wo,Do,Vr,Za,Zo': 'Mo,Tu,We,Th,Fr,Sa,Su', 'jan,feb,mrt,apr,mei,jun,jul,aug,sep,okt,nov,dec': 'Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec', '📁 Het archief · eindeloos': '📁 The archive · endless',
-    'Basis': 'Base', 'Tijdbonus': 'Time bonus', 'Zonder hint': 'No hint', 'In één keer': 'First try', 'Archiefdossier': 'Archive file',
+    'Basis': 'Base', 'Tijdbonus': 'Time bonus', 'Zonder hint': 'No hint', 'In één keer': 'First try', 'Archiefdossier': 'Archive file', 'Dossier {0}': 'File {0}',
     'Dagelijkse zaak': 'Daily case', 'Zaak van vandaag': "Today's case", '🪙 +150 punten': '🪙 +150 points', 'Speel': 'Play',
     'dagen streak': 'day streak', 'Speel vandaag om je streak te houden': 'Play today to keep your streak',
     'Opdrachten van vandaag': "Today's quests", 'Zaak van de week': 'Case of the week', '🪙 +300 punten': '🪙 +300 points',
