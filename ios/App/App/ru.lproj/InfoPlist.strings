@@ -1,0 +1,2 @@
+/* Name under the icon. This folder lists Русский as a language of the app in the App Store and lets the web view report it. */
+"CFBundleDisplayName" = "Crimson Ledger";
