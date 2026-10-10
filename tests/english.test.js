@@ -6,7 +6,7 @@ const DIR = path.join(__dirname, '..');
 let html = fs.readFileSync(path.join(DIR, 'index.html'), 'utf8');
 html = html.replace(/<script src="([^"]+)"><\/script>/g, (_, src) => `<script>${fs.readFileSync(path.join(DIR, src), 'utf8')}</script>`);
 html = html.replace('<head>', '<head><script>localStorage.setItem("crimson-lang", "en");</script>').replace(/<link[^>]+>/g, '')
-  .replace('</body>', '<script>window.App = App; window.Board = Board; window.FloorPlan = FloorPlan; window.Themes = Themes; window.Campaign = Campaign; window.Progress = Progress; window.Mentor = Mentor; window.MiniGame = MiniGame; window.Store = Store; window.I18n = I18n;</script></body>');
+  .replace('</body>', '<script>window.App = App; window.Board = Board; window.FloorPlan = FloorPlan; window.Themes = Themes; window.Campaign = Campaign; window.Progress = Progress; window.Mentor = Mentor; window.MiniGame = MiniGame; window.Store = Store; window.I18n = I18n; window.DIFFICULTY = DIFFICULTY;</script></body>');
 const errors = [];
 const vc = new VirtualConsole(); vc.on('jsdomError', e => errors.push(String(e.message || e)));
 const dom = new JSDOM(html, { runScripts: 'dangerously', pretendToBeVisual: true, url: 'http://localhost:8080/', virtualConsole: vc });
@@ -74,6 +74,9 @@ const active = () => document.querySelector('.screen.active').id;
     Board.startTutorial(); await sleep(50);
     const tut = [txt('board-casetext'), ...[...document.querySelectorAll('.bclue-text, .room-label, .broom-name, [data-room-name]')].map(e => e.textContent)].join(' ').replace(/\s+/g, ' ').trim();
     check(/Kitchen/.test(tut) && !/\b(Woonkamer|Keuken|de|het)\b/.test(tut), 'oefenzaak Engels: ' + tut.slice(0, 140));
+
+    check(document.getElementById('btn-sound').textContent.includes('Sound'), 'geluidsknop Engels: ' + document.getElementById('btn-sound').textContent);
+    check(window.DIFFICULTY.tutorial.label === 'Practice case', 'oefenzaak als moeilijkheid Engels: ' + window.DIFFICULTY.tutorial.label);
 
     // ── omschakelen bewaart de keuze ──
     check(App.storageGet('crimson-lang') === 'en', 'taalkeuze bewaard');

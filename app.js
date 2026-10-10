@@ -761,7 +761,7 @@ const App = {
     const btn = document.getElementById('btn-sound');
     if (!btn) return;
     Sound.init(this.storageGet('crimson-sound'));
-    const label = () => { btn.textContent = Sound.enabled ? '🔊 Geluid aan' : '🔇 Geluid uit'; };
+    const label = () => { btn.textContent = Sound.enabled ? AP_T('🔊 Geluid aan') : AP_T('🔇 Geluid uit'); };
     label();
     btn.addEventListener('click', () => { Sound.toggle(); this.storageSet('crimson-sound', Sound.enabled ? '1' : '0'); label(); Sound.play('ui'); });
   },

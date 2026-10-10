@@ -224,7 +224,7 @@ const I18n = {
     'Je streak van {0} dagen loopt vanavond af. Speel één zaak.': 'Your {0}-day streak ends tonight. Play one case.', 'Speel vandaag om je streak van {0} dagen te houden': 'Play today to keep your {0}-day streak',
     '🧊 {0} vrije {1}': '🧊 {0} streak {1}', 'vrije dag': 'freeze', 'freezes': 'freezes', 'Mis je een dag, dan vult een vrije dag het gat en blijft je streak staan.': 'Miss a day and a streak freeze fills the gap so your streak survives.',
     '🎁 Alles klaar! Tot morgen.': '🎁 All done! See you tomorrow.', '🎁 Alle drie: +{0} punten en een vrije dag': '🎁 All three: +{0} points and a streak freeze', '+{0}': '+{0}',
-    '🪙 {0} punten': '🪙 {0} points', 'Medailleoverzicht': 'Medal overview', '{0} van de {1} behaald': '{0} of {1} earned', 'Behaald op {0}': 'Earned on {0}', 'Bewijsstukken': 'Evidence', '{0} van de {1} verzameld': '{0} of {1} collected', 'Gesloten': 'Locked', 'Stempels': 'Stamps',
+    '🪙 {0} punten': '🪙 {0} points', ' · 🪙 {0} punten': ' · 🪙 {0} points', 'Medailleoverzicht': 'Medal overview', '{0} van de {1} behaald': '{0} of {1} earned', 'Behaald op {0}': 'Earned on {0}', 'Bewijsstukken': 'Evidence', '{0} van de {1} verzameld': '{0} of {1} collected', 'Gesloten': 'Locked', 'Stempels': 'Stamps',
     'Nieuwe trofee: “{0}” ontgrendeld.': 'New trophy: “{0}” unlocked.',
     'Meldingen staan uit. Zet ze aan bij Instellingen › Crimson Ledger.': 'Notifications are off. Turn them on in Settings › Crimson Ledger.',
     'Je dagelijkse zaak wacht. Houd je streak van {0} dagen vast.': 'Your daily case is waiting. Keep your {0}-day streak going.', 'Je streak van {0} dagen loopt vanavond af. Eén zaak is genoeg.': 'Your {0}-day streak ends tonight. One case is enough.',

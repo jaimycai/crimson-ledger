@@ -8,7 +8,7 @@
 
 const I18N_DATA = {
   ranks: { Rekruut: 'Recruit', Speurder: 'Sleuth', Rechercheur: 'Detective', Inspecteur: 'Inspector', Hoofdinspecteur: 'Chief Inspector', Meesterdetective: 'Master Detective' },
-  difficulty: { makkelijk: 'Easy', gemiddeld: 'Medium', moeilijk: 'Hard' },
+  difficulty: { tutorial: 'Practice case', makkelijk: 'Easy', gemiddeld: 'Medium', moeilijk: 'Hard' },
   themes: {
     landhuis: {
       title: 'The Manor', short: 'Manor', victimName: 'Dr. Edward Blackwood', roomWord: 'room', roomWordPlural: 'rooms',
