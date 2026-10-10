@@ -18,9 +18,25 @@
 const I18n = {
   lang: 'nl',
   // [code, naam in de eigen taal, schrijfrichting, landinstelling voor datums en getallen]
+  // Volgorde in de taalkeuze: Nederlands en Engels, dan per schrift.
   LANGS: [
     ['nl', 'Nederlands', 'ltr', 'nl-NL'],
-    ['en', 'English', 'ltr', 'en-GB']
+    ['en', 'English', 'ltr', 'en-GB'],
+    ['de', 'Deutsch', 'ltr', 'de-DE'],
+    ['es', 'Español', 'ltr', 'es'],
+    ['fr', 'Français', 'ltr', 'fr-FR'],
+    ['id', 'Bahasa Indonesia', 'ltr', 'id-ID'],
+    ['pt', 'Português', 'ltr', 'pt-BR'],
+    ['vi', 'Tiếng Việt', 'ltr', 'vi-VN'],
+    ['ru', 'Русский', 'ltr', 'ru-RU'],
+    ['ar', 'العربية', 'rtl', 'ar-u-nu-latn'],
+    ['ur', 'اردو', 'rtl', 'ur-PK'],
+    ['hi', 'हिन्दी', 'ltr', 'hi-IN'],
+    ['mr', 'मराठी', 'ltr', 'mr-u-nu-latn'],
+    ['bn', 'বাংলা', 'ltr', 'bn-u-nu-latn'],
+    ['te', 'తెలుగు', 'ltr', 'te-IN'],
+    ['zh', '简体中文', 'ltr', 'zh-CN'],
+    ['ja', '日本語', 'ltr', 'ja-JP']
   ],
   KEY: 'crimson-lang',
   packs() { return (typeof globalThis !== 'undefined' && globalThis.LANG_PACKS) || {}; },
@@ -35,7 +51,11 @@ const I18n = {
     const saved = this.read();
     if (this.supported(saved)) return saved;
     const nav = typeof navigator === 'undefined' ? [] : (navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || '']);
-    for (const n of nav) { const code = String(n).toLowerCase().split(/[-_]/)[0]; if (this.supported(code)) return code; }
+    for (const n of nav) {
+      const tag = String(n).toLowerCase(), code = tag.split(/[-_]/)[0];
+      if (code === 'zh' && /hant|-tw|-hk|-mo/.test(tag)) continue;   // traditioneel Chinees: geen vereenvoudigd tonen
+      if (this.supported(code)) return code;
+    }
     return 'en';
   },
   // Het taalbestand inladen terwijl de pagina nog wordt gelezen, zodat het klaarstaat

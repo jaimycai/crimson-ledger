@@ -96,6 +96,10 @@ for (const lang of langs) {
     shape(EN.data, P.data, 'data', d); shape(EN.campaign, P.campaign, 'campaign', c);
     fail(d, 'spelinhoud compleet (werelden, kamers, meubels, verdachten, titels, medailles …)');
     fail(c, 'campagne compleet (elk deel, elke zaak: titel, verhaaltje, bewijsstuk)');
+    // Engels laat namen zonder titel weg (ze blijven gelijk); elke andere taal noemt iedereen
+    const sus = [];
+    for (const th of W.THEMES) for (const s of th.suspects) if (!(((P.data.themes || {})[th.id] || {}).suspects || {})[s.label]) sus.push(`${th.id}/${s.label}`);
+    fail(sus, 'elke verdachte heeft een naam in deze taal');
   }
 
   // grammar
