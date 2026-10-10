@@ -33,10 +33,11 @@ const Mentor = {
     ['not-room',     'Een "niet in" streept een kamer weg. Combineer dat met de spelregel over het slachtoffer.'],
     ['room',         'De duidelijkste verklaring: plaats deze persoon als eerste.']
   ],
+  FALLBACK_TIP: 'Begin bij de verklaring die het minste ruimte overlaat.',
   tipFor(puzzle) {
     const kinds = new Set((puzzle && puzzle.clues || []).map(c => c.kind));
     const t = this.TIPS.find(([k]) => kinds.has(k));
-    return t ? t[1] : 'Begin bij de verklaring die het minste ruimte overlaat.';
+    return t ? t[1] : this.FALLBACK_TIP;
   },
 
   // Briefing vóór een campagnezaak: het verhaaltje plus één tip die bij deze zaak past.

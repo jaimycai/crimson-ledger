@@ -172,6 +172,7 @@ const I18n = {
     if (typeof Mentor !== 'undefined') {
       Mentor.name = DATA.mentorName;
       Mentor.TIPS.forEach(t => { if (DATA.tips[t[0]]) t[1] = DATA.tips[t[0]]; });
+      if (DATA.tips.fallback) Mentor.FALLBACK_TIP = DATA.tips.fallback;
       Mentor.INTROS.forEach(i => { const e = DATA.intros[i.id]; if (e) { i.title = e[0]; i.text = e[1]; } });
       Mentor.REACT_WRONG.splice(0, Mentor.REACT_WRONG.length, ...DATA.reactWrong);
       Mentor.REACT_RIGHT.splice(0, Mentor.REACT_RIGHT.length, ...DATA.reactRight);
