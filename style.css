@@ -2469,3 +2469,5 @@ input, textarea { -webkit-user-select: text; user-select: text; }
 /* ── Rechts naar links (Arabisch, Urdu) ─────────────────────── */
 /* De tekst spiegelt, de plattegrond niet: "links van" in een verklaring gaat over de plattegrond. */
 [dir="rtl"] .board-grid { direction: ltr; }
+/* pijlen die niet vanzelf spiegelen (‹ › doen dat wel) */
+[dir="rtl"] .back-btn { transform: scaleX(-1); }

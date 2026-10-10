@@ -1190,7 +1190,9 @@ const Board = {
       const dx = e.clientX - x0, dy = e.clientY - y0;
       if (Math.abs(dx) > 36 && Math.abs(dx) > Math.abs(dy)) {
         e.preventDefault();
-        this.stepDeck(dx < 0 ? 1 : -1);
+        // van rechts naar links lezen (Arabisch, Urdu): naar rechts vegen is verder
+        const rtl = document.documentElement.dir === 'rtl';
+        this.stepDeck((dx < 0) !== rtl ? 1 : -1);
       }
     });
     track.addEventListener('pointercancel', () => { on = false; });
