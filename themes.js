@@ -24,14 +24,14 @@ const THEMES = [
       { id: 'stoel', nl: 'een fauteuil' }, { id: 'doos', nl: 'een kist' }
     ],
     suspects: [
-      { label: 'Clara',     gender: 'f', color: '#B85C5C', style: { hair: 1 } },
-      { label: 'Marcus',    gender: 'm', color: '#5C7AB8', style: { hair: 0, moustache: true } },
-      { label: 'Dr. Cross', gender: 'f', color: '#8B5CB8', style: { hair: 2, glasses: true } },
-      { label: 'Thomas',    gender: 'm', color: '#5C8B5E', style: { hair: 3, bowtie: true } },
-      { label: 'Isabelle',  gender: 'f', color: '#B8955C', style: { hair: 4 } },
-      { label: 'Rosalind',  gender: 'f', color: '#C2185B', style: { hair: 2 } },
+      { label: 'Lady Clementine',     gender: 'f', color: '#B85C5C', style: { hair: 1 } },
+      { label: 'Meneer Hargrove',    gender: 'm', color: '#5C7AB8', style: { hair: 0, moustache: true } },
+      { label: 'Dr. Quill', gender: 'f', color: '#8B5CB8', style: { hair: 2, glasses: true } },
+      { label: 'Mortimer',    gender: 'm', color: '#5C8B5E', style: { hair: 3, bowtie: true } },
+      { label: 'Juniper',  gender: 'f', color: '#B8955C', style: { hair: 4 } },
+      { label: 'Odette',  gender: 'f', color: '#C2185B', style: { hair: 2 } },
       { label: 'Majoor Pike', gender: 'm', color: '#2C3E50', style: { hair: 3, moustache: true } },
-      { label: 'Tante Agnes', gender: 'f', color: '#7B5E3B', style: { hair: 1, glasses: true } }
+      { label: 'Tante Agatha', gender: 'f', color: '#7B5E3B', style: { hair: 1, glasses: true } }
     ],
     outro: 'De geheimen van Landgoed Blackwood liggen op tafel. De moordenaar is gepakt.'
   },
@@ -52,14 +52,14 @@ const THEMES = [
       { id: 'touw', nl: 'een opgerold touw' }, { id: 'lantaarn', nl: 'een lantaarn' }
     ],
     suspects: [
-      { label: 'Roodbaard',   gender: 'm', color: '#B3261E', style: { hair: 0, hat: 'tricorn', beard: true } },
-      { label: 'Bootsman Vos',gender: 'm', color: '#5C7AB8', style: { hair: 3, hat: 'bandana', eyepatch: true } },
-      { label: 'Kok Ada',     gender: 'f', color: '#B8955C', style: { hair: 2, hat: 'bandana' } },
-      { label: 'Stuurman Kwint', gender: 'm', color: '#5C8B5E', style: { hair: 4, moustache: true } },
-      { label: 'Juffrouw Lark', gender: 'f', color: '#8B5CB8', style: { hair: 1, hat: 'tricorn' } },
-      { label: 'Kanonnier Bo', gender: 'm', color: '#2C3E50', style: { hair: 3, hat: 'bandana', beard: true } },
-      { label: 'Dokter Sal',   gender: 'f', color: '#C2185B', style: { hair: 2, glasses: true } },
-      { label: 'Scheepsjongen Nik', gender: 'm', color: '#7B5E3B', style: { hair: 4, hat: 'bandana' } }
+      { label: 'Barnaby',   gender: 'm', color: '#B3261E', style: { hair: 0, hat: 'tricorn', beard: true } },
+      { label: 'Bootsman Grimsby',gender: 'm', color: '#5C7AB8', style: { hair: 3, hat: 'bandana', eyepatch: true } },
+      { label: 'Kok Saffron',     gender: 'f', color: '#B8955C', style: { hair: 2, hat: 'bandana' } },
+      { label: 'Stuurman Ronan', gender: 'm', color: '#5C8B5E', style: { hair: 4, moustache: true } },
+      { label: 'Juffrouw Coral', gender: 'f', color: '#8B5CB8', style: { hair: 1, hat: 'tricorn' } },
+      { label: 'Kanonnier Thorne', gender: 'm', color: '#2C3E50', style: { hair: 3, hat: 'bandana', beard: true } },
+      { label: 'Dokter Marlow',   gender: 'f', color: '#C2185B', style: { hair: 2, glasses: true } },
+      { label: 'Scheepsjongen Pip', gender: 'm', color: '#7B5E3B', style: { hair: 4, hat: 'bandana' } }
     ],
     outro: 'De Zwarte Meeuw hijst de zeilen. De moordenaar zit in de brig.'
   },
@@ -82,13 +82,13 @@ const THEMES = [
     ],
     suspects: [
       { label: 'Gravin Delacroix', gender: 'f', color: '#8B5CB8', style: { hair: 2, glasses: true } },
-      { label: 'Portier Jansen',   gender: 'm', color: '#5C7AB8', style: { hair: 0, hat: 'cap', moustache: true } },
-      { label: 'Pianist Milo',     gender: 'm', color: '#2C3E50', style: { hair: 4, bowtie: true } },
+      { label: 'Portier Otis',   gender: 'm', color: '#5C7AB8', style: { hair: 0, hat: 'cap', moustache: true } },
+      { label: 'Pianist Felix',     gender: 'm', color: '#2C3E50', style: { hair: 4, bowtie: true } },
       { label: 'Mevrouw Sato',     gender: 'f', color: '#B85C5C', style: { hair: 1 } },
-      { label: 'Journalist Bram',  gender: 'm', color: '#5C8B5E', style: { hair: 3, hat: 'tophat' } },
-      { label: 'Chef Rosa',        gender: 'f', color: '#B3261E', style: { hair: 2, hat: 'cap' } },
-      { label: 'Butler Ames',      gender: 'm', color: '#7B5E3B', style: { hair: 3, bowtie: true, moustache: true } },
-      { label: 'Danseres Lou',     gender: 'f', color: '#C2185B', style: { hair: 4 } }
+      { label: 'Journalist Vance',  gender: 'm', color: '#5C8B5E', style: { hair: 3, hat: 'tophat' } },
+      { label: 'Chef Brigitte',        gender: 'f', color: '#B3261E', style: { hair: 2, hat: 'cap' } },
+      { label: 'Butler Winslow',      gender: 'm', color: '#7B5E3B', style: { hair: 3, bowtie: true, moustache: true } },
+      { label: 'Danseres Lulu',     gender: 'f', color: '#C2185B', style: { hair: 4 } }
     ],
     outro: 'Het orkest speelt weer. De moordenaar wordt door de politie de lobby uit begeleid.'
   },
@@ -112,8 +112,8 @@ const THEMES = [
     suspects: [
       { label: 'Dr. Nkemelu',     gender: 'm', color: '#8B5CB8', style: { hair: 4, hat: 'helmet' } },
       { label: 'Piloot Reyes',    gender: 'm', color: '#B3261E', style: { hair: 0, hat: 'helmet', moustache: true } },
-      { label: 'Ingenieur Sol',   gender: 'f', color: '#B8955C', style: { hair: 2, glasses: true } },
-      { label: 'Botanist Tamsin', gender: 'f', color: '#5C8B5E', style: { hair: 1 } },
+      { label: 'Ingenieur Vega',   gender: 'f', color: '#B8955C', style: { hair: 2, glasses: true } },
+      { label: 'Botanist Fern', gender: 'f', color: '#5C8B5E', style: { hair: 1 } },
       { label: 'Kadet Yuki',      gender: 'm', color: '#5C7AB8', style: { hair: 3, hat: 'helmet' } },
       { label: 'Kok Dima',        gender: 'm', color: '#D9A441', style: { hair: 0, beard: true } },
       { label: 'Officier Paz',    gender: 'f', color: '#2C3E50', style: { hair: 2, hat: 'helmet', glasses: true } },
@@ -139,14 +139,14 @@ const THEMES = [
       { id: 'vitrine', nl: 'een vitrine' }, { id: 'beeld', nl: 'een standbeeld' }
     ],
     suspects: [
-      { label: 'Gids Fenna',          gender: 'f', color: '#B85C5C', style: { hair: 1, glasses: true } },
-      { label: 'Curator Bas',         gender: 'm', color: '#5C7AB8', style: { hair: 0, bowtie: true } },
-      { label: 'Restaurateur Imke',   gender: 'f', color: '#8B5CB8', style: { hair: 2 } },
-      { label: 'Nachtwaker Ruud',     gender: 'm', color: '#2C3E50', style: { hair: 3, hat: 'cap', moustache: true } },
+      { label: 'Gids Margot',          gender: 'f', color: '#B85C5C', style: { hair: 1, glasses: true } },
+      { label: 'Curator Ellery',         gender: 'm', color: '#5C7AB8', style: { hair: 0, bowtie: true } },
+      { label: 'Restaurateur Iris',   gender: 'f', color: '#8B5CB8', style: { hair: 2 } },
+      { label: 'Nachtwaker Gus',     gender: 'm', color: '#2C3E50', style: { hair: 3, hat: 'cap', moustache: true } },
       { label: 'Professor Adebayo',   gender: 'm', color: '#7B5E3B', style: { hair: 4, glasses: true, beard: true } },
-      { label: 'Kunsthandelaar Vic',  gender: 'm', color: '#B8955C', style: { hair: 3, hat: 'tophat' } },
+      { label: 'Kunsthandelaar Lucian',  gender: 'm', color: '#B8955C', style: { hair: 3, hat: 'tophat' } },
       { label: 'Stagiair Noor',       gender: 'f', color: '#C2185B', style: { hair: 1 } },
-      { label: 'Schoonmaker Piet',    gender: 'm', color: '#5C8B5E', style: { hair: 0, hat: 'cap' } }
+      { label: 'Schoonmaker Hugo',    gender: 'm', color: '#5C8B5E', style: { hair: 0, hat: 'cap' } }
     ],
     outro: 'Het alarm gaat weer aan. De dader gaat mee, de collectie blijft.'
   },
@@ -169,9 +169,9 @@ const THEMES = [
     ],
     suspects: [
       { label: 'Barones Von Stahl',   gender: 'f', color: '#8B5CB8', style: { hair: 2, glasses: true } },
-      { label: 'Goochelaar Otto',     gender: 'm', color: '#2C3E50', style: { hair: 0, hat: 'tophat', moustache: true } },
+      { label: 'Goochelaar Orlando',     gender: 'm', color: '#2C3E50', style: { hair: 0, hat: 'tophat', moustache: true } },
       { label: 'Schaakmeester Ivo',   gender: 'm', color: '#5C7AB8', style: { hair: 3, beard: true } },
-      { label: 'Verpleegster Ans',    gender: 'f', color: '#B85C5C', style: { hair: 1 } },
+      { label: 'Verpleegster Hedda',    gender: 'f', color: '#B85C5C', style: { hair: 1 } },
       { label: 'Reiziger Sami',       gender: 'm', color: '#B8955C', style: { hair: 4, hat: 'cap' } },
       { label: 'Actrice Lola',        gender: 'f', color: '#C2185B', style: { hair: 2 } },
       { label: 'Stoker Jules',        gender: 'm', color: '#5C8B5E', style: { hair: 0, hat: 'bandana' } },
@@ -199,10 +199,10 @@ const THEMES = [
     suspects: [
       { label: 'Clown Pippo',          gender: 'm', color: '#B3261E', style: { hair: 0 } },
       { label: 'Trapezeartiest Mira',  gender: 'f', color: '#C2185B', style: { hair: 2 } },
-      { label: 'Leeuwentemmer Kurt',   gender: 'm', color: '#B8955C', style: { hair: 3, moustache: true } },
+      { label: 'Leeuwentemmer Gunther',   gender: 'm', color: '#B8955C', style: { hair: 3, moustache: true } },
       { label: 'Waarzegster Zora',     gender: 'f', color: '#8B5CB8', style: { hair: 1, hat: 'bandana' } },
       { label: 'Sterke Man Boris',     gender: 'm', color: '#2C3E50', style: { hair: 0, beard: true, moustache: true } },
-      { label: 'Kaartverkoper Els',    gender: 'f', color: '#5C8B5E', style: { hair: 4, glasses: true } },
+      { label: 'Kaartverkoopster Dottie',    gender: 'f', color: '#5C8B5E', style: { hair: 4, glasses: true } },
       { label: 'Jongleur Teo',         gender: 'm', color: '#5C7AB8', style: { hair: 3, hat: 'cap' } },
       { label: 'Dierenarts Nadia',     gender: 'f', color: '#7B5E3B', style: { hair: 1, glasses: true } }
     ],
@@ -226,28 +226,28 @@ const THEMES = [
       { id: 'gewei', nl: 'een gewei' }, { id: 'fondue', nl: 'een fonduepan' }
     ],
     suspects: [
-      { label: 'Skilerares Mieke',     gender: 'f', color: '#B85C5C', style: { hair: 1 } },
-      { label: 'Bergredder Tom',       gender: 'm', color: '#5C8B5E', style: { hair: 3, beard: true } },
+      { label: 'Skilerares Astrid',     gender: 'f', color: '#B85C5C', style: { hair: 1 } },
+      { label: 'Bergredder Bjorn',       gender: 'm', color: '#5C8B5E', style: { hair: 3, beard: true } },
       { label: 'Toeriste Hana',        gender: 'f', color: '#C2185B', style: { hair: 2 } },
       { label: 'Kok Luigi',            gender: 'm', color: '#B8955C', style: { hair: 0, moustache: true } },
-      { label: 'Fotograaf Sven',       gender: 'm', color: '#5C7AB8', style: { hair: 4, glasses: true } },
-      { label: 'Dokter Greet',         gender: 'f', color: '#8B5CB8', style: { hair: 2, glasses: true } },
+      { label: 'Fotograaf Emil',       gender: 'm', color: '#5C7AB8', style: { hair: 4, glasses: true } },
+      { label: 'Dokter Ingrid',         gender: 'f', color: '#8B5CB8', style: { hair: 2, glasses: true } },
       { label: 'Jongen Kai',           gender: 'm', color: '#D9A441', style: { hair: 3, hat: 'cap' } },
-      { label: 'Berggids Ilse',        gender: 'f', color: '#2C3E50', style: { hair: 1, hat: 'bandana' } }
+      { label: 'Berggids Freya',        gender: 'f', color: '#2C3E50', style: { hair: 1, hat: 'bandana' } }
     ],
     outro: 'De hut is dicht, de sneeuw ligt weer stil. Jij weet wat eronder lag.'
   }
 ];
 
-// Korte naam voor op het bord: "Majoor Pike" → "Pike", "Dr. Cross" → "Cross", "Clara" → "Clara".
+// Korte naam voor op het bord: "Majoor Pike" → "Pike", "Dr. Quill" → "Quill", "Lady Clementine" → "Clementine".
 const TITLES = new Set(['dr.', 'majoor', 'tante', 'kok', 'bootsman', 'stuurman', 'juffrouw', 'kanonnier', 'dokter', 'scheepsjongen',
   'gravin', 'portier', 'pianist', 'mevrouw', 'journalist', 'chef', 'butler', 'danseres', 'piloot', 'ingenieur', 'botanist', 'kadet',
   'officier', 'bioloog', 'gids', 'curator', 'restaurateur', 'nachtwaker', 'professor', 'stagiair', 'schoonmaker', 'kunsthandelaar',
   'barones', 'goochelaar', 'schaakmeester', 'verpleegster', 'reiziger', 'actrice', 'stoker', 'weduwe', 'conducteur',
-  'clown', 'trapezeartiest', 'leeuwentemmer', 'waarzegster', 'sterke', 'man', 'kaartverkoper', 'jongleur', 'dierenarts',
+  'clown', 'trapezeartiest', 'leeuwentemmer', 'waarzegster', 'sterke', 'man', 'kaartverkoper', 'kaartverkoopster', 'lady', 'meneer', 'jongleur', 'dierenarts',
   'skilerares', 'bergredder', 'toeriste', 'fotograaf', 'jongen', 'berggids', 'gastheer',
   // Engels
-  'major', 'aunt', 'cook', 'boatswain', 'helmsman', 'miss', 'gunner', 'cabin', 'boy', 'countess', 'doorman', 'mrs', 'dancer', 'pilot', 'engineer',
+  'major', 'aunt', 'lady', 'mr.', 'cook', 'boatswain', 'helmsman', 'miss', 'gunner', 'cabin', 'boy', 'countess', 'doorman', 'mrs', 'dancer', 'pilot', 'engineer',
   'cadet', 'officer', 'biologist', 'guide', 'restorer', 'night', 'guard', 'art', 'dealer', 'intern', 'cleaner', 'baroness', 'magician', 'chess', 'master',
   'nurse', 'traveller', 'actress', 'widow', 'trapeze', 'artist', 'lion', 'tamer', 'fortune', 'teller', 'strongman', 'ticket', 'seller', 'juggler', 'vet',
   'ski', 'instructor', 'mountain', 'rescuer', 'tourist', 'photographer', 'young', 'host', 'chief']);

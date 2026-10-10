@@ -51,10 +51,10 @@ const Board = {
     clues: [{ kind: 'room-pos', s: 0, room: 0, pos: 'hoek' }, { kind: 'next-to', s: 1, furniture: 'plant' }]
   },
   TUTORIAL_STEPS: [
-    { suspect: 0, cell: { x: 0, y: 0 }, text: 'Aanwijzing 1: Clara was in de Woonkamer, in een hoek. Drie hoeken zijn bezet door meubels, dus blijft er één over. Sleep Clara naar het oplichtende vakje, of tik erop.' },
-    { suspect: 1, cell: { x: 3, y: 3 }, text: 'Aanwijzing 2: Marcus stond direct naast een plant. Naast de plant is maar één vakje vrij. Sleep Marcus erheen, of tik erop.' },
+    { suspect: 0, cell: { x: 0, y: 0 }, text: 'Aanwijzing 1: Lady Clementine was in de Woonkamer, in een hoek. Drie hoeken zijn bezet door meubels, dus blijft er één over. Sleep Clementine naar het oplichtende vakje, of tik erop.' },
+    { suspect: 1, cell: { x: 3, y: 3 }, text: 'Aanwijzing 2: Meneer Hargrove stond direct naast een plant. Naast de plant is maar één vakje vrij. Sleep Hargrove erheen, of tik erop.' },
     { action: 'check', text: 'Iedereen staat op zijn plek. Tik op Controleer.' },
-    { action: 'murder', text: 'De spelregel: alleen de moordenaar was in de kamer van het slachtoffer. Marcus staat in de Keuken — kies Marcus.' }
+    { action: 'murder', text: 'De spelregel: alleen de moordenaar was in de kamer van het slachtoffer. Hargrove staat in de Keuken — kies Hargrove.' }
   ],
 
   startTutorial() {

@@ -55,8 +55,11 @@ het geslacht klopt met het portret. Slachtoffers blijven zoals ze zijn.
 | Het Circus | Clown Pippo · Trapezeartiest Mira · Leeuwentemmer Kurt · Waarzegster Zora · Sterke Man Boris · Kaartverkoper Els · Jongleur Teo · Dierenarts Nadia | Clown Pippo · Trapezeartiest Mira · Leeuwentemmer Gunther · Waarzegster Zora · Sterke Man Boris · Kaartverkoopster Dottie · Jongleur Teo · Dierenarts Nadia |
 | De Skihut | Skilerares Mieke · Bergredder Tom · Toeriste Hana · Kok Luigi · Fotograaf Sven · Dokter Greet · Jongen Kai · Berggids Ilse | Skilerares Astrid · Bergredder Bjorn · Toeriste Hana · Kok Luigi · Fotograaf Emil · Dokter Ingrid · Jongen Kai · Berggids Freya |
 
-Een hernoeming loopt door in `themes.js`, de verhalen in `campaign.js` en `i18n-campaign.js`, de oefenzaak,
-de minigames en de teksten van Van Dam. Een test zoekt daarna naar elke oude naam.
+**Toegepast op 10 oktober** (nog niet door Jaimy bevestigd; een naam wijzigen kan nog, in alle talen tegelijk):
+in `themes.js`, de verhalen in `campaign.js` en `i18n/en.js`, de oefenzaak en de Engelse titels. Het klassieke
+raster (`story.js`, alleen Nederlands) houdt zijn eigen personages. Elke verdachte heeft nu ook een geslacht
+(31 vrouwen, 33 mannen), gecontroleerd tegen de portretten en tegen "hij/zij" in 61 verhaaltjes; de zinsbouw
+van veel talen heeft dat nodig. `tests/names.test.js` zoekt elke oude naam.
 
 ## 4. Vijftien extra talen
 
