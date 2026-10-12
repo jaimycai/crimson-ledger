@@ -59,7 +59,7 @@
     "Makkelijk": "Fácil",
     "Opwarmer": "Aquecimento",
     "Gemiddeld": "Médio",
-    "Echt puzzelen": "Desafio de verdade",
+    "Echt puzzelen": "Agora é sério",
     "Moeilijk": "Difícil",
     "Voor speurneuzen": "Para detetives",
     "Start zaak": "Começar caso",
@@ -116,7 +116,7 @@
     "zet je een stipje op vakjes waar iemand zou kúnnen staan;": "você põe um pontinho nos quadrados onde alguém poderia estar; a",
     "haalt stipjes en verdachten weer weg.": "tira os pontinhos e os suspeitos.",
     "Lees de verklaringen": "Leia os depoimentos",
-    "Elke verdachte vertelt waar hij stond. Tik op een verklaring: de kamer of het meubel licht op in de plattegrond. Tik op een meubel om te zien wat het is. Klopt een verklaring met wat je hebt neergezet, dan wordt de kaart groen; klopt hij niet, dan wordt hij rood. \"In een hoek\" is een hoekvakje, \"tegen een muur\" raakt een muur maar is geen hoek.": "Cada suspeito conta onde estava. Toque num depoimento: o cômodo ou o objeto acende no tabuleiro. Toque num objeto para ver o que é. Se o depoimento bate com o que você posicionou, o cartão fica verde; se não bate, fica vermelho. \"Num canto\" é um quadrado de canto; \"junto a uma parede\" toca uma parede, mas não é canto.",
+    "Elke verdachte vertelt waar hij stond. Tik op een verklaring: de kamer of het meubel licht op in de plattegrond. Tik op een meubel om te zien wat het is. Klopt een verklaring met wat je hebt neergezet, dan wordt de kaart groen; klopt hij niet, dan wordt hij rood. \"In een hoek\" is een hoekvakje, \"tegen een muur\" raakt een muur maar is geen hoek.": "Cada suspeito conta onde estava. Toque num depoimento: o cômodo ou o objeto acende no tabuleiro. Toque num objeto para ver o que é. Se o depoimento bate com o que você posicionou, o cartão fica verde; se não bate, fica vermelho. “Num canto” é um quadrado de canto; “junto a uma parede” toca uma parede, mas não é canto.",
     "De spelregel": "A regra",
     "Alleen de moordenaar was in de kamer van het slachtoffer. Niemand anders.": "Só o assassino estava no cômodo da vítima. Mais ninguém.",
     "Wijs de moordenaar aan": "Aponte o assassino",
@@ -129,9 +129,9 @@
     "Gebruik logica": "Use a lógica",
     "Als een rij maar één optie heeft, is dat de match. Kruis-verwijs tussen tabellen!": "Se uma linha só tem uma opção, é essa. Cruze as informações entre as tabelas!",
     "Controleer je antwoord": "Confira sua resposta",
-    "Als je denkt dat je alles hebt, klik op \"Controleer\".": "Quando achar que tem tudo, toque em \"Verificar\".",
+    "Als je denkt dat je alles hebt, klik op \"Controleer\".": "Quando achar que tem tudo, toque em “Verificar”.",
     "Begrepen!": "Entendi!",
-    "Inspecteur Van Dam": "Inspetor Van Dam",
+    "Inspecteur Van Dam": "Inspetor Van Dam",
     "1 · Kijk naar": "1 · Observe",
     "2 · Dat betekent": "2 · Isso quer dizer",
     "3 · Doe dit": "3 · Faça isto",
@@ -203,7 +203,7 @@
     "Los eerst zaak {0} op.": "Resolva primeiro o caso {0}.",
     "Zaak {0}: {1}": "Caso {0}: {1}",
     "Zaak {0}: ": "Caso {0}: ",
-    "★★★ = zonder hint én in één keer goed · ★★ = één van de twee · ★ = opgelost": "★★★ = sem dica e certo de primeira · ★★ = um dos dois · ★ = resolvido",
+    "★★★ = zonder hint én in één keer goed · ★★ = één van de twee · ★ = opgelost": "★★★ = sem dica e de primeira · ★★ = um dos dois · ★ = resolvido",
     "Beste score:": "Recorde:",
     "Speel opnieuw": "Jogar de novo",
     "Deze zaak kon niet geladen worden.": "Não foi possível carregar este caso.",
@@ -222,7 +222,7 @@
     "{0} Stempel: {1}": "{0} Carimbo: {1}",
     "Al geopend": "Já aberto",
     "{0} is helemaal opgelost. Wat een speurder.": "{0}: tudo resolvido. Bom trabalho, detetive.",
-    "Goed werk, Rekruut. Dit is van jou.": "Bom trabalho, Recruta. Isto é seu.",
+    "Goed werk, Rekruut. Dit is van jou.": "Bom trabalho. Isto é seu.",
     "Je gratis hints voor vandaag zijn op ({0} per dag). Morgen krijg je er weer {1}, of kies hieronder.": "{0|zero:Suas dicas grátis de hoje acabaram|one:Sua dica grátis de hoje acabou|other:Suas dicas grátis de hoje acabaram} ({0} por dia). Amanhã você ganha mais {1}, ou escolha abaixo.",
     "{0} hoort bij de Crimson Pass. Je kunt de wereld ook los kopen.": "{0} faz parte do Crimson Pass. Você também pode comprar o mundo separadamente.",
     "Bordthema's en portretlijsten horen bij de Crimson Pass, of koop ze los.": "Temas de tabuleiro e molduras de retrato fazem parte do Crimson Pass, ou podem ser comprados separadamente.",
@@ -234,7 +234,7 @@
     "Met de Pass zijn hints onbeperkt.": "Com o Pass, as dicas são ilimitadas.",
     "Je hebt er nu {0}. Elke dag krijg je {1} gratis.": "Você tem {0} agora. Todo dia você ganha {1} grátis.",
     "Bordthema's en lijsten": "Temas e molduras",
-    "Nacht, sepia en kraftpapier; gouden, zilveren en crimson lijst.": "Noite, sépia e papel kraft; moldura dourada, prateada e Crimson.",
+    "Nacht, sepia en kraftpapier; gouden, zilveren en crimson lijst.": "Noite, sépia e papel kraft; molduras dourada, prateada e Crimson.",
     "{0} zaken in {1} delen · {2}": "{0} {0|zero:casos|one:caso|other:casos} em {1} {1|zero:partes|one:parte|other:partes} · {2}",
     "✓ Van jou": "✓ Seu",
     "Aankopen werken alleen in de app uit de App Store of Google Play.": "As compras só funcionam no app da App Store ou do Google Play.",
@@ -265,7 +265,7 @@
     "✓ Opgelost": "✓ Resolvido",
     "Nog eens": "De novo",
     "Vandaag gespeeld. Tot morgen!": "Jogado hoje. Até amanhã!",
-    "Nog niet gespeeld. Een vrije dag vangt het op, maar liever niet.": "Ainda não jogou hoje. Uma folga cobriria o dia, mas melhor não.",
+    "Nog niet gespeeld. Een vrije dag vangt het op, maar liever niet.": "Hoje ainda não. Uma folga cobriria o dia, mas melhor não.",
     "Je streak van {0} dagen loopt vanavond af. Speel één zaak.": "Sua sequência de {0} {0|zero:dias|one:dia|other:dias} termina hoje à noite. Jogue um caso.",
     "Speel vandaag om je streak van {0} dagen te houden": "Jogue hoje para manter sua sequência de {0} {0|zero:dias|one:dia|other:dias}",
     "Mis je een dag, dan vult een vrije dag het gat en blijft je streak staan.": "Se você perder um dia, uma folga cobre a falta e sua sequência continua.",
@@ -275,10 +275,10 @@
     "🪙 {0} punten": "🪙 {0} {0|zero:pontos|one:ponto|other:pontos}",
     " · 🪙 {0} punten": " · 🪙 {0} {0|zero:pontos|one:ponto|other:pontos}",
     "Medailleoverzicht": "Quadro de medalhas",
-    "{0} van de {1} behaald": "Conquistadas: {0} de {1}",
+    "{0} van de {1} behaald": "Conquistadas: {0} de {1}",
     "Behaald op {0}": "Conquistada em {0}",
     "Bewijsstukken": "Provas",
-    "{0} van de {1} verzameld": "Coletadas: {0} de {1}",
+    "{0} van de {1} verzameld": "Coletadas: {0} de {1}",
     "Gesloten": "Bloqueada",
     "Stempels": "Carimbos",
     "Nieuwe trofee: “{0}” ontgrendeld.": "Novo troféu: “{0}” desbloqueado.",
@@ -311,7 +311,7 @@
     "In deze zaak zegt {0}: “{1}”": "Neste caso, {0|m:o|f:a} {0} diz: “{1}”",
     "✓ Klopt": "✓ Confere",
     "✗ Klopt niet": "✗ Não confere",
-    "Hint {0} · deze zaak levert nu maximaal ★★ op": "Dica {0} · este caso agora vale no máximo ★★",
+    "Hint {0} · deze zaak levert nu maximaal ★★ op": "Dica {0} · este caso agora vale no máximo ★★",
     "Potlood: zet een stipje op vakjes waar iemand zou kúnnen staan. Met Plaats zet je iemand echt neer, met Gum haal je het weer weg.": "Lápis: marca com um pontinho os quadrados onde alguém poderia estar. Com Colocar, você posiciona alguém de verdade; com Borracha, você tira de novo.",
     "Bijna! Nog één verdachte staat verkeerd. {0} van de {1} staan al goed.": "Quase! Um suspeito ainda está no lugar errado. {0} de {1} já {0|zero:estão certos|one:está certo|other:estão certos}.",
     "{0} verdachten staan verkeerd, {1} staan goed. Gebruik een hint als je vastzit.": "{0} {0|zero:suspeitos estão|one:suspeito está|other:suspeitos estão} no lugar errado, {1} {1|zero:estão certos|one:está certo|other:estão certos}. Use uma dica se empacar.",
@@ -331,8 +331,8 @@
     " · Dag #{0}": " · Dia #{0}",
     "Dagelijkse zaak ": "Caso do dia ",
     "👁️ Vluchtige blik": "👁️ Olhada rápida",
-    "Ronde {0}: iedereen staat op zijn plek. Wie liegt?": "Rodada {0}: todos estão no lugar. Quem mente?",
-    "Ronde {0}: kijk goed waar iedereen staat…": "Rodada {0}: veja bem onde cada um está…",
+    "Ronde {0}: iedereen staat op zijn plek. Wie liegt?": "Rodada {0}: tudo no lugar. Quem mente?",
+    "Ronde {0}: kijk goed waar iedereen staat…": "Rodada {0}: veja bem onde todos estão…",
     "👁️ Onthoud het… ": "👁️ Memorize… ",
     "Waar stond {0}?": "Onde estava {0|m:o|f:a} {0}?",
     "Goed gezien! +{0} punten": "Bem observado! +{0} {0|zero:pontos|one:ponto|other:pontos}",
@@ -1090,20 +1090,20 @@
     "tips": {
       "same-row": "Atenção ao depoimento sobre uma linha: a linha vai da esquerda à direita, atravessando as paredes.",
       "same-col": "Uma coluna vai de cima a baixo pelo tabuleiro inteiro. As paredes não contam.",
-      "left-of": "\"Mais à esquerda\" vale para o tabuleiro inteiro: a pessoa está numa coluna mais à esquerda, em qualquer cômodo.",
-      "above": "\"Mais acima no tabuleiro\" quer dizer mais perto do topo, seja qual for o cômodo.",
-      "not-adjacent": "\"Não estava bem ao lado\" só descarta os quatro quadrados vizinhos. Na diagonal não conta como ao lado.",
-      "adjacent": "\"Bem ao lado\" é o quadrado à esquerda, à direita, acima ou abaixo. Nunca na diagonal.",
+      "left-of": "“Mais à esquerda” vale para o tabuleiro inteiro: a pessoa está numa coluna mais à esquerda, em qualquer cômodo.",
+      "above": "“Mais acima no tabuleiro” quer dizer mais perto do topo, seja qual for o cômodo.",
+      "not-adjacent": "“Não estava bem ao lado” só descarta os quatro quadrados vizinhos. Na diagonal não conta como ao lado.",
+      "adjacent": "“Bem ao lado” é o quadrado à esquerda, à direita, acima ou abaixo. Nunca na diagonal.",
       "alone": "Quem estava sozinho num cômodo tira todos os outros de lá. Ótimo para riscar cômodos.",
       "empty-room": "Um cômodo vazio segundo o relatório: não adianta tentar ninguém ali.",
-      "pos": "Um canto toca duas paredes, \"junto a uma parede\" toca uma e \"no meio\" não toca nenhuma.",
+      "pos": "Um canto toca duas paredes, “junto a uma parede” toca uma e “no meio” não toca nenhuma.",
       "room-pos": "Veja quais quadrados de canto ou junto à parede ainda estão livres nesse cômodo. Os objetos costumam ocupar alguns.",
-      "room-with": "Um cômodo \"com uma planta\" também pode ter outros objetos. Ache a planta primeiro.",
+      "room-with": "Um cômodo “com uma planta” também pode ter outros objetos. Ache a planta primeiro.",
       "next-to": "Toque no depoimento: o objeto acende. Só os quadrados bem ao lado dele servem.",
       "room-next": "Cômodo e objeto juntos: quase sempre sobra só um quadrado.",
       "diff-room": "Não estavam no mesmo cômodo: fixe primeiro a pessoa sobre quem você sabe mais.",
       "same-room": "Mesmo cômodo: descubra o cômodo de um e você sabe o do outro.",
-      "not-room": "Um \"não estava\" risca um cômodo. Combine com a regra da vítima.",
+      "not-room": "Um “não estava” risca um cômodo. Combine com a regra da vítima.",
       "room": "O depoimento mais claro: posicione esta pessoa primeiro.",
       "fallback": "Comece pelo depoimento que deixa menos opções."
     },
@@ -1164,7 +1164,7 @@
       "O nome do culpado foi riscado. Você o escreve de novo.",
       "Resolvido, segundo o arquivo. Não segundo os fatos."
     ],
-    "mentorName": "Inspetor Van Dam",
+    "mentorName": "Inspetor Van Dam",
     "boardTutorial": [
       "Depoimento 1: a Lady Clementine estava na Sala de Estar, num canto. Três cantos estão ocupados por objetos, então sobra um. Arraste a Clementine até o quadrado que brilha, ou toque nele.",
       "Depoimento 2: o Sr. Hargrove estava bem ao lado de uma planta. Só um quadrado bem ao lado da planta está livre. Arraste o Hargrove até lá, ou toque nesse quadrado.",
@@ -1175,7 +1175,7 @@
 
   campaign: {
     "landhuis": [
-      "Parte I · O jantar",
+      "Parte I · O jantar",
       "Mansão Blackwood, 1927. Depois do jantar, o anfitrião continua sentado na cadeira.",
       "Os segredos do jantar estão na mesa. Mas a família vai voltar.",
       "Boas-vindas a Blackwood. Comece por quem diz em que cômodo estava: são os depoimentos mais fáceis. E lembre-se: só o assassino estava com a vítima.",
@@ -1223,7 +1223,7 @@
       ]
     ],
     "landhuis-2": [
-      "Parte II · Os herdeiros",
+      "Parte II · Os herdeiros",
       "Depois do enterro, a família volta. Todos querem alguma coisa da casa.",
       "A herança foi dividida. Mas a casa ainda tem o que contar.",
       "A família voltou e todo mundo fala de todo mundo. Depoimentos sobre duas pessoas: fixe primeiro uma das duas.",
@@ -1271,7 +1271,7 @@
       ]
     ],
     "landhuis-3": [
-      "Parte III · A noite da tempestade",
+      "Parte III · A noite da tempestade",
       "A tempestade isola a propriedade do mundo. Ninguém entra, ninguém sai.",
       "Ao nascer do sol, a tempestade passa. A Mansão Blackwood não tem mais segredos.",
       "A tempestade fecha a casa. Espere depoimentos sobre linhas e colunas: elas atravessam as paredes. Olhe o tabuleiro com atenção.",
@@ -1319,7 +1319,7 @@
       ]
     ],
     "landhuis-4": [
-      "Parte IV · Um ano depois",
+      "Parte IV · Um ano depois",
       "Um ano depois da tempestade, Blackwood é vendida. O novo dono convida os antigos hóspedes. Ninguém devia ter vindo.",
       "A venda não sai. A casa fica com seus moradores.",
       "Os mesmos rostos, um ano mais velhos e bem mais cuidadosos. Leia cada depoimento duas vezes: quem diz onde NÃO estava também conta alguma coisa.",
@@ -1367,7 +1367,7 @@
       ]
     ],
     "landhuis-5": [
-      "Parte V · O casamento",
+      "Parte V · O casamento",
       "Odette se casa em Blackwood. A família inteira vem, e com ela vêm as velhas brigas.",
       "O bolo foi cortado, a festa acabou. Os convidados vão embora, menos um.",
       "Casamento é lotado: muita gente, poucos cômodos. Comece por quem diz que estava sozinho; isso resolve um cômodo inteiro de uma vez.",
@@ -1415,7 +1415,7 @@
       ]
     ],
     "landhuis-6": [
-      "Parte VI · O segredo de Blackwood",
+      "Parte VI · O segredo de Blackwood",
       "Embaixo da escada há uma porta que não aparece em nenhuma planta da casa. O que há atrás dela muda tudo.",
       "A porta embaixo da escada foi emparedada. Blackwood se cala, e desta vez para valer.",
       "A última parte da mansão. Tudo o que você aprendeu volta: cantos, objetos, linhas. Não posicione ninguém antes de ter certeza.",
@@ -1463,10 +1463,10 @@
       ]
     ],
     "piraten": [
-      "Parte I · O mar parado",
+      "Parte I · O mar parado",
       "A Gaivota Negra está parada num mar liso como um espelho. O capitão não responde mais.",
       "A Gaivota Negra iça as velas. Há uma ilha no mapa.",
-      "Um navio é pequeno e todo mundo viu todo mundo. \"Bem ao lado\" quer dizer o quadrado vizinho, nunca na diagonal. Comece pela cozinha.",
+      "Um navio é pequeno e todo mundo viu todo mundo. “Bem ao lado” quer dizer o quadrado vizinho, nunca na diagonal. Comece pela cozinha.",
       [
         [
           "O mar parado",
@@ -1511,7 +1511,7 @@
       ]
     ],
     "piraten-2": [
-      "Parte II · A ilha",
+      "Parte II · A ilha",
       "A Gaivota Negra ancora diante de uma ilha sem nome. O tesouro está perto, e todos sabem disso.",
       "O tesouro está no porão. As contas estão acertadas. Agora, para casa.",
       "Na ilha ninguém mente, mas todo mundo esconde alguma coisa. Use o Lápis para marcar os quadrados onde alguém poderia estar.",
@@ -1559,10 +1559,10 @@
       ]
     ],
     "piraten-3": [
-      "Parte III · A volta para casa",
+      "Parte III · A volta para casa",
       "Com o tesouro a bordo, começa a viagem de volta. Ficar rico não deixa ninguém mais honesto.",
       "A Gaivota Negra entra no porto. A tripulação está menor; o tesouro, completo.",
-      "Com o tesouro a bordo, a tripulação fica inquieta. Depoimentos como \"mais à esquerda\" e \"mais acima\" valem para o tabuleiro inteiro, não só para o compartimento.",
+      "Com o tesouro a bordo, a tripulação fica inquieta. Depoimentos como “mais à esquerda” e “mais acima” valem para o tabuleiro inteiro, não só para o compartimento.",
       [
         [
           "O primeiro turno",
@@ -1607,10 +1607,10 @@
       ]
     ],
     "piraten-4": [
-      "Parte IV · O novo capitão",
+      "Parte IV · O novo capitão",
       "Barnaby assume o leme. A tripulação não concorda. No mar, nada fica quieto por muito tempo.",
       "A Gaivota tem um capitão. Por quanto tempo, ninguém sabe.",
-      "Capitão novo, tripulação velha. Num navio tão pequeno, depoimentos com \"bem ao lado\" valem ouro: cada quadrado conta.",
+      "Capitão novo, tripulação velha. Num navio tão pequeno, depoimentos com “bem ao lado” valem ouro: cada quadrado conta.",
       [
         [
           "O leme troca de mãos",
@@ -1655,7 +1655,7 @@
       ]
     ],
     "piraten-5": [
-      "Parte V · O navio fantasma",
+      "Parte V · O navio fantasma",
       "Na neblina há um navio sem tripulação. A Gaivota encosta ao lado. Alguém devia ter ficado em casa.",
       "O navio fantasma some na neblina. A Gaivota segue viagem, com um homem a menos.",
       "Neblina e um navio vazio: todos estão nervosos e falam demais. Risque primeiro os compartimentos vazios; o resto diminui sozinho.",
@@ -1703,7 +1703,7 @@
       ]
     ],
     "piraten-6": [
-      "Parte VI · O tesouro do Olho Negro",
+      "Parte VI · O tesouro do Olho Negro",
       "O verdadeiro tesouro do Olho Negro não está numa ilha. Está a bordo. E agora todos sabem onde.",
       "O tesouro foi dividido. A Gaivota pertence à tripulação, e a tripulação, ao mar.",
       "Os últimos casos na Gaivota, e os mais difíceis. Depoimentos sobre linhas e colunas atravessam o navio inteiro: use o Lápis.",
@@ -1751,7 +1751,7 @@
       ]
     ],
     "hotel": [
-      "Parte I · A noite de Ano-Novo",
+      "Parte I · A noite de Ano-Novo",
       "Na última badalada da meia-noite, as luzes se apagaram. Quando voltaram, o dono estava caído no piso de mármore.",
       "A primeira noite do ano acabou. Os hóspedes ainda não podem ir para casa.",
       "Cem convidados, uma vítima. Um hotel tem muitas salas; risque primeiro as que o relatório diz que estavam vazias.",
@@ -1799,7 +1799,7 @@
       ]
     ],
     "hotel-2": [
-      "Parte II · Os hóspedes",
+      "Parte II · Os hóspedes",
       "Os hóspedes do Ano-Novo não podem sair do hotel. Os funcionários também não.",
       "Os hóspedes vão embora. O livro de hóspedes tem uma página a menos.",
       "Os hóspedes não podem sair, e dá para perceber nos depoimentos: curtos e secos. Duas pessoas na mesma sala: posicione primeiro a que tiver o depoimento mais claro.",
@@ -1847,10 +1847,10 @@
       ]
     ],
     "hotel-3": [
-      "Parte III · Os funcionários",
+      "Parte III · Os funcionários",
       "Quem conhece o hotel conhece os corredores atrás das paredes. É ali que esta parte começa.",
       "O Grand Hotel Aurora apaga as luzes. Desta vez, para sempre.",
-      "Os funcionários conhecem os corredores atrás das paredes. Pense em cantos e paredes: um canto toca duas paredes, \"junto a uma parede\" toca uma.",
+      "Os funcionários conhecem os corredores atrás das paredes. Pense em cantos e paredes: um canto toca duas paredes, “junto a uma parede” toca uma.",
       [
         [
           "O elevador de serviço",
@@ -1895,7 +1895,7 @@
       ]
     ],
     "hotel-4": [
-      "Parte IV · A reabertura",
+      "Parte IV · A reabertura",
       "O Grand Hotel Aurora reabre. Dono novo, hóspedes antigos, os mesmos corredores.",
       "A reabertura é um sucesso. Menos por uma avaliação.",
       "O hotel ganhou móveis novos, então estude o tabuleiro antes de começar. Toque nos objetos que você não reconhecer.",
@@ -1943,7 +1943,7 @@
       ]
     ],
     "hotel-5": [
-      "Parte V · A conferência",
+      "Parte V · A conferência",
       "Trezentos participantes, um palestrante que nunca chega ao palco.",
       "A conferência acabou. A lista de presença não fecha mais.",
       "Muitos hóspedes, muitos depoimentos sobre duas pessoas ao mesmo tempo. Fixe sempre primeiro quem você conhece melhor.",
@@ -1991,7 +1991,7 @@
       ]
     ],
     "hotel-6": [
-      "Parte VI · A última noite do Aurora",
+      "Parte VI · A última noite do Aurora",
       "O hotel fecha para sempre. Os funcionários ficam mais uma noite. Uma noite a mais do que deviam.",
       "As luzes se apagam. O Grand Hotel Aurora virou história, e você conhece cada página.",
       "A última noite e os casos mais difíceis do hotel. Cantos, paredes, linhas: tudo conta. Com calma; as estrelas esperam.",
@@ -2087,7 +2087,7 @@
       ]
     ],
     "ruimte-2": [
-      "Parte II · O sinal",
+      "Parte II · O sinal",
       "Um sinal de fora da estação. A tripulação se divide.",
       "O sinal para. A bordo, a inquietação continua.",
       "O sinal deixa todos nervosos. Quanto menos depoimentos, mais você precisa tirar de cada um. Leia duas vezes.",
@@ -2231,10 +2231,10 @@
       ]
     ],
     "ruimte-5": [
-      "Parte V · A cápsula estranha",
+      "Parte V · A cápsula estranha",
       "Uma cápsula se acopla sem permissão. Dentro: ninguém. Fora: uma tripulação que de repente tem muito a dizer.",
       "A cápsula é desacoplada e empurrada para longe. O que havia dentro, só a tripulação sabe.",
-      "Uma cápsula estranha e gente nervosa. Depoimentos com \"mais à esquerda\" e \"mais acima\" valem para a estação inteira, não para um só módulo.",
+      "Uma cápsula estranha e gente nervosa. Depoimentos com “mais à esquerda” e “mais acima” valem para a estação inteira, não para um só módulo.",
       [
         [
           "Vazia, disseram",
@@ -2279,7 +2279,7 @@
       ]
     ],
     "ruimte-6": [
-      "Parte VI · A última órbita",
+      "Parte VI · A última órbita",
       "Orion vai ser abandonada. Uma última órbita ao redor da Terra, depois a cápsula de volta. Todos querem ir. Nem todos podem.",
       "A cápsula pousa. A Estação Orion queima na atmosfera, com todos os seus segredos. Menos os seus.",
       "Os últimos casos da campanha, e os mais difíceis. Tudo se junta. Quem estava sozinho num módulo tira todos os outros de lá; comece por aí.",
@@ -2327,10 +2327,10 @@
       ]
     ],
     "museum": [
-      "Parte I · Depois do fechamento",
+      "Parte I · Depois do fechamento",
       "O museu fecha às cinco. Às seis, o curador está caído entre as estátuas e todas as portas estão trancadas.",
       "A primeira noite acabou. O museu continua fechado; as perguntas, não.",
-      "Um museu tem muitas salas e pouca gente. Comece por quem diz em que sala estava, e cuidado com as vitrines: \"bem ao lado\" só vale em linha reta, nunca na diagonal.",
+      "Um museu tem muitas salas e pouca gente. Comece por quem diz em que sala estava, e cuidado com as vitrines: “bem ao lado” só vale em linha reta, nunca na diagonal.",
       [
         [
           "Depois do fechamento",
@@ -2375,7 +2375,7 @@
       ]
     ],
     "museum-2": [
-      "Parte II · O diamante sumido",
+      "Parte II · O diamante sumido",
       "O diamante Vlierbeek sumiu do cofre. A polícia isola o museu. Quem estava lá dentro fica lá dentro.",
       "O diamante voltou. Quem estava com ele, também.",
       "Um roubo e um assassinato: as pessoas mentem sobre onde estavam. Dois depoimentos que se contradizem não podem ser verdadeiros ao mesmo tempo; fixe primeiro o que é certo.",
@@ -2423,7 +2423,7 @@
       ]
     ],
     "museum-3": [
-      "Parte III · A exposição",
+      "Parte III · A exposição",
       "A grande inauguração. Trezentos convidados, um orador e uma sala que se tranca antes de acabar o champanhe.",
       "A exposição continua. Com um quadro a menos na parede.",
       "Na inauguração, muita gente passa pelas mesmas salas. Depoimentos sobre linhas e colunas atravessam as paredes: use o Lápis.",
@@ -2471,7 +2471,7 @@
       ]
     ],
     "museum-4": [
-      "Parte IV · O depósito",
+      "Parte IV · O depósito",
       "Nos porões há dez mil objetos que ninguém nunca vê. Alguém viu um a mais.",
       "O depósito está trancado de novo. O inventário fecha, menos um nome.",
       "O depósito é um labirinto de caixotes. Risque primeiro as salas vazias; o que sobra é pouco.",
@@ -2519,7 +2519,7 @@
       ]
     ],
     "museum-5": [
-      "Parte V · A noite dos dinossauros",
+      "Parte V · A noite dos dinossauros",
       "Noite das crianças: cem crianças dormem entre os esqueletos. Quando as luzes acenderem, alguém não vai acordar.",
       "As crianças vão para casa. O esqueleto está completo de novo.",
       "Muitas testemunhas pequenas e muita confusão. Depoimentos sobre duas pessoas ao mesmo tempo: fixe primeiro quem você conhece melhor.",
@@ -2567,7 +2567,7 @@
       ]
     ],
     "museum-6": [
-      "Parte VI · O segredo de Vlierbeek",
+      "Parte VI · O segredo de Vlierbeek",
       "Atrás da Sala Egípcia há uma porta que não está em nenhuma planta. O que há atrás dela é mais antigo que o museu.",
       "A porta foi emparedada. Amanhã o museu abre como sempre. Você sabe o que havia atrás dela.",
       "A última parte do museu e os casos mais difíceis. Tudo volta: cantos, objetos, linhas. Não posicione ninguém antes de ter certeza.",
@@ -2615,10 +2615,10 @@
       ]
     ],
     "trein": [
-      "Parte I · A partida",
+      "Parte I · A partida",
       "O trem noturno parte às oito. Às nove, o condutor está caído no vagão-restaurante, e o trem só para ao nascer do sol.",
       "O trem segue pela noite. Os passageiros também.",
-      "Um trem é longo e estreito: os vagões ficam lado a lado. \"Mais à esquerda\" e \"mais acima\" valem para o tabuleiro inteiro, não para um vagão.",
+      "Um trem é longo e estreito: os vagões ficam lado a lado. “Mais à esquerda” e “mais acima” valem para o tabuleiro inteiro, não para um vagão.",
       [
         [
           "Partida às oito",
@@ -2663,10 +2663,10 @@
       ]
     ],
     "trein-2": [
-      "Parte II · A neve",
+      "Parte II · A neve",
       "O trem está parado na neve. Sem estação, sem ajuda, e o culpado ainda está a bordo.",
       "O limpa-neve chega. O trem segue viagem, com uma cabine vazia.",
-      "Presos na neve: todo mundo viu todo mundo. Num trem tão estreito, \"bem ao lado\" vale ouro: cada quadrado conta.",
+      "Presos na neve: todo mundo viu todo mundo. Num trem tão estreito, “bem ao lado” vale ouro: cada quadrado conta.",
       [
         [
           "Parada total",
@@ -2711,7 +2711,7 @@
       ]
     ],
     "trein-3": [
-      "Parte III · A fronteira",
+      "Parte III · A fronteira",
       "Na fronteira, os fiscais da alfândega sobem a bordo. Todos mostram seus documentos. Um passaporte é falso.",
       "A fronteira ficou para trás. O passaporte também, com o dono.",
       "Na fronteira, todo mundo mente sobre o próprio nome. Depoimentos sobre linhas e colunas atravessam os vagões: use o Lápis.",
@@ -2759,7 +2759,7 @@
       ]
     ],
     "trein-4": [
-      "Parte IV · A rota do Oriente",
+      "Parte IV · A rota do Oriente",
       "Um ano depois, o mesmo trem, a mesma rota para o leste. Alguns passageiros voltaram. Não deviam ter vindo.",
       "O trem chega a Istambul. A viagem acabou, para quase todos.",
       "Os mesmos rostos, um ano mais velhos. Leia cada depoimento duas vezes: quem diz onde NÃO estava também conta alguma coisa.",
@@ -2807,7 +2807,7 @@
       ]
     ],
     "trein-5": [
-      "Parte V · A festa no vagão-salão",
+      "Parte V · A festa no vagão-salão",
       "Réveillon no vagão-salão. À meia-noite, as luzes se apagam. À meia-noite e cinco, falta alguém.",
       "O ano novo começa. O vagão-salão é arrumado, menos uma cadeira.",
       "Uma festa num vagão estreito: muita gente, pouco espaço. Comece por quem diz que estava sozinho; isso resolve um vagão inteiro.",
@@ -2855,7 +2855,7 @@
       ]
     ],
     "trein-6": [
-      "Parte VI · Fim da linha",
+      "Parte VI · Fim da linha",
       "A última viagem do trem noturno. No fim da linha, ele vai para o ferro-velho. Alguém não quer ver isso.",
       "Fim da linha. O trem vai para o ferro-velho, o culpado para a polícia, e você para casa.",
       "Os últimos casos do trem, e os mais difíceis. Quem estava sozinho num vagão tira todos os outros de lá; comece por aí.",
@@ -2903,10 +2903,10 @@
       ]
     ],
     "circus": [
-      "Parte I · O último espetáculo",
+      "Parte I · O último espetáculo",
       "O último espetáculo da temporada. O público foi embora, a lona está fechando, e o diretor Zano está caído no picadeiro.",
       "A lona continua de pé. Os artistas também, até a polícia terminar.",
-      "Um circo é uma grande lona com muitos cantinhos. Comece por quem diz onde estava; \"bem ao lado\" só vale em linha reta, mesmo com um canhão.",
+      "Um circo é uma grande lona com muitos cantinhos. Comece por quem diz onde estava; “bem ao lado” só vale em linha reta, mesmo com um canhão.",
       [
         [
           "O último espetáculo",
@@ -2951,7 +2951,7 @@
       ]
     ],
     "circus-2": [
-      "Parte II · O leão sumido",
+      "Parte II · O leão sumido",
       "O leão sumiu da jaula. As cercas estão fechadas. Alguém o soltou, e alguém sumiu.",
       "O leão voltou a dormir. Quem abriu a jaula, não.",
       "Um leão solto deixa todos nervosos e os depoimentos curtos. Depoimentos sobre duas pessoas: fixe primeiro quem você conhece melhor.",
@@ -2999,7 +2999,7 @@
       ]
     ],
     "circus-3": [
-      "Parte III · A casa dos espelhos",
+      "Parte III · A casa dos espelhos",
       "A nova atração: uma tenda cheia de espelhos. Quem entra se vê cem vezes. Uma pessoa nunca saiu.",
       "Os espelhos são guardados. Um deles está quebrado.",
       "Na casa dos espelhos, tudo parece em dobro. Depoimentos sobre linhas e colunas atravessam as paredes: use o Lápis.",
@@ -3047,7 +3047,7 @@
       ]
     ],
     "circus-4": [
-      "Parte IV · Na estrada",
+      "Parte IV · Na estrada",
       "O circo segue viagem, cidade após cidade. Na estrada, a trupe não muda. A suspeita, sim.",
       "Os trailers seguem rodando. Um deles roda vazio.",
       "Os mesmos rostos, outra cidade. Leia cada depoimento duas vezes: quem diz onde NÃO estava também conta alguma coisa.",
@@ -3095,7 +3095,7 @@
       ]
     ],
     "circus-5": [
-      "Parte V · O novo diretor",
+      "Parte V · O novo diretor",
       "O circo tem um novo diretor. Nem todos estão contentes. A gala de estreia termina em silêncio.",
       "A cadeira do diretor está vazia de novo. Pela segunda vez nesta temporada.",
       "Uma gala com a lona cheia: muita gente, pouco espaço. Comece por quem diz que estava sozinho; isso resolve uma área inteira de uma vez.",
@@ -3143,7 +3143,7 @@
       ]
     ],
     "circus-6": [
-      "Parte VI · A lona desce",
+      "Parte VI · A lona desce",
       "O circo vai fechar para sempre. A última noite, o último número, a última chance de sumir.",
       "A lona é desmontada. A serragem é varrida, e com ela o último rastro.",
       "Os últimos casos do circo, e os mais difíceis. Quem estava sozinho numa área tira todos os outros de lá; comece por aí.",
@@ -3191,10 +3191,10 @@
       ]
     ],
     "skihut": [
-      "Parte I · A avalanche",
+      "Parte I · A avalanche",
       "Uma avalanche isola o vale. Sete hóspedes, uma lareira e, junto ao fogo, um anfitrião que nunca mais se aquece.",
       "A estrada continua fechada. Os hóspedes ficam, queiram ou não.",
-      "Um chalé é pequeno e quente, e todo mundo fica em cima de todo mundo. Comece por quem diz em que cômodo estava; cuidado com a lareira: \"bem ao lado\" só vale em linha reta.",
+      "Um chalé é pequeno e quente, e todo mundo fica em cima de todo mundo. Comece por quem diz em que cômodo estava; cuidado com a lareira: “bem ao lado” só vale em linha reta.",
       [
         [
           "A avalanche",
@@ -3239,7 +3239,7 @@
       ]
     ],
     "skihut-2": [
-      "Parte II · Cegos pela neve",
+      "Parte II · Cegos pela neve",
       "Uma nevasca tira toda a visibilidade. Lá fora, não se enxerga um palmo diante do nariz. Lá dentro, alguém enxerga uma chance.",
       "A tempestade acalma. A neve cobre tudo, menos a verdade.",
       "Cegos pela neve: todos falam do que não viram. Risque primeiro os cômodos vazios; o resto diminui sozinho.",
@@ -3287,7 +3287,7 @@
       ]
     ],
     "skihut-3": [
-      "Parte III · A noite da tempestade",
+      "Parte III · A noite da tempestade",
       "A segunda tempestade é pior. A luz cai, o chalé fica no escuro, e alguém aproveita o escuro.",
       "Ao nascer do sol, a luz volta. O chalé tem um hóspede a menos.",
       "Sem luz, com velas: depoimentos sobre linhas e colunas atravessam as paredes. Use o Lápis.",
@@ -3383,7 +3383,7 @@
       ]
     ],
     "skihut-5": [
-      "Parte V · A festa do esqui",
+      "Parte V · A festa do esqui",
       "A temporada termina com uma festa. Música, vinho quente e, à meia-noite, um grito no sótão.",
       "A festa acabou. O vinho quente esfriou, o chalé está quieto.",
       "Uma festa num chalé pequeno: muita gente, pouco espaço. Comece por quem diz que estava sozinho; isso resolve um cômodo inteiro de uma vez.",
@@ -3431,7 +3431,7 @@
       ]
     ],
     "skihut-6": [
-      "Parte VI · A última descida",
+      "Parte VI · A última descida",
       "O chalé vai fechar. Uma última descida de todos até o vale. Nem todos chegam lá embaixo.",
       "O chalé está fechado, a neve voltou a ficar quieta. Você sabe o que havia por baixo.",
       "Os últimos casos do chalé, e os mais difíceis. Quem estava sozinho num cômodo tira todos os outros de lá; comece por aí.",
@@ -3625,8 +3625,8 @@
       "hint": {
         "wrong": "{s|m:O|f:A} {s} está no lugar errado. A pista {n} diz: “{quote}”",
         "two-in-victim-room": "Há dois suspeitos {rw|m:no|f:na} {rw} da vítima. Só o assassino estava lá.",
-        "start.one": "Comece {s|m:pelo|f:pela} {s}: só {n|zero:restam|one:resta|other:restam} {n} {n|zero:quadrados possíveis|one:quadrado possível|other:quadrados possíveis}, {n|zero:todos|one:que fica|other:todos} {room.in}.",
-        "start.spread": "Comece {s|m:pelo|f:pela} {s}: só {n|zero:restam|one:resta|other:restam} {n} {n|zero:quadrados possíveis|one:quadrado possível|other:quadrados possíveis}, {n|zero:espalhados|one:espalhado|other:espalhados} por {k} {rws}."
+        "start.one": "Comece {s|m:pelo|f:pela} {s}: só {n|zero:restam|one:resta|other:restam} {n} {n|zero:quadrados possíveis|one:quadrado possível|other:quadrados possíveis}, {n|zero:todos|one:que fica|other:todos} {room.in}.",
+        "start.spread": "Comece {s|m:pelo|f:pela} {s}: só {n|zero:restam|one:resta|other:restam} {n} {n|zero:quadrados possíveis|one:quadrado possível|other:quadrados possíveis}, {n|zero:espalhados|one:espalhado|other:espalhados} por {k} {rws}."
       },
       "action": {
         "now": " No momento, {s|m:ele|f:ela} está {room.in}.",
@@ -3634,8 +3634,8 @@
         "then": " Depois, coloque-{s|m:o|f:a} em algum lugar {room.in}.",
         "deduce": "Só resta um quadrado: o que está brilhando. Arraste {s.ref} até lá.",
         "deduce.in": "Só resta um quadrado: o que está brilhando {room.in}. Arraste {s.ref} até lá.",
-        "narrow": "{s|m:O|f:A} {s} ainda pode estar em {n} {n|zero:quadrados|one:quadrado|other:quadrados}, que {n|zero:brilham|one:brilha|other:brilham} em dourado. Marque-{n|zero:os|one:o|other:os} com o Lápis e {n|zero:teste um por um: em cada quadrado|one:teste-o: nesse quadrado|other:teste um por um: em cada quadrado}, veja se os outros depoimentos continuam valendo.",
-        "narrow.in": "{s|m:O|f:A} {s} ainda pode estar em {n} {n|zero:quadrados|one:quadrado|other:quadrados} {room.in}, que {n|zero:brilham|one:brilha|other:brilham} em dourado. Marque-{n|zero:os|one:o|other:os} com o Lápis e {n|zero:teste um por um: em cada quadrado|one:teste-o: nesse quadrado|other:teste um por um: em cada quadrado}, veja se os outros depoimentos continuam valendo.",
+        "narrow": "{s|m:O|f:A} {s} ainda pode estar em {n} {n|zero:quadrados|one:quadrado|other:quadrados}, que {n|zero:brilham|one:brilha|other:brilham} em dourado. Marque-{n|zero:os|one:o|other:os} com o Lápis e {n|zero:teste um por um: em cada quadrado|one:teste-o: nesse quadrado|other:teste um por um: em cada quadrado}, veja se os outros depoimentos continuam valendo.",
+        "narrow.in": "{s|m:O|f:A} {s} ainda pode estar em {n} {n|zero:quadrados|one:quadrado|other:quadrados} {room.in}, que {n|zero:brilham|one:brilha|other:brilham} em dourado. Marque-{n|zero:os|one:o|other:os} com o Lápis e {n|zero:teste um por um: em cada quadrado|one:teste-o: nesse quadrado|other:teste um por um: em cada quadrado}, veja se os outros depoimentos continuam valendo.",
         "done": "Todos estão no lugar certo. Toque em Verificar e depois aponte quem está sozinho {room.in}."
       },
       "board": {
@@ -3647,526 +3647,526 @@
     "rooms": {
       "landhuis": {
         "Woonkamer": {
-          "the": "a Sala de Estar",
+          "the": "Sala de Estar",
           "in": "na Sala de Estar",
           "of": "da Sala de Estar"
         },
         "Keuken": {
-          "the": "a Cozinha",
+          "the": "Cozinha",
           "in": "na Cozinha",
           "of": "da Cozinha"
         },
         "Eetkamer": {
-          "the": "a Sala de Jantar",
+          "the": "Sala de Jantar",
           "in": "na Sala de Jantar",
           "of": "da Sala de Jantar"
         },
         "Bibliotheek": {
-          "the": "a Biblioteca",
+          "the": "Biblioteca",
           "in": "na Biblioteca",
           "of": "da Biblioteca"
         },
         "Slaapkamer": {
-          "the": "o Quarto",
+          "the": "Quarto",
           "in": "no Quarto",
           "of": "do Quarto"
         },
         "Badkamer": {
-          "the": "o Banheiro",
+          "the": "Banheiro",
           "in": "no Banheiro",
           "of": "do Banheiro"
         },
         "Garage": {
-          "the": "a Garagem",
+          "the": "Garagem",
           "in": "na Garagem",
           "of": "da Garagem"
         },
         "Hal": {
-          "the": "o Hall",
+          "the": "Hall",
           "in": "no Hall",
           "of": "do Hall"
         },
         "Wasruimte": {
-          "the": "a Lavanderia",
+          "the": "Lavanderia",
           "in": "na Lavanderia",
           "of": "da Lavanderia"
         },
         "Studeerkamer": {
-          "the": "o Escritório",
+          "the": "Escritório",
           "in": "no Escritório",
           "of": "do Escritório"
         },
         "Serre": {
-          "the": "a Estufa",
+          "the": "Estufa",
           "in": "na Estufa",
           "of": "da Estufa"
         },
         "Kelder": {
-          "the": "o Porão",
+          "the": "Porão",
           "in": "no Porão",
           "of": "do Porão"
         }
       },
       "piraten": {
         "Kajuit": {
-          "the": "a Cabine",
+          "the": "Cabine",
           "in": "na Cabine",
           "of": "da Cabine"
         },
         "Ruim": {
-          "the": "o Porão",
+          "the": "Porão",
           "in": "no Porão",
           "of": "do Porão"
         },
         "Kombuis": {
-          "the": "a Cozinha",
+          "the": "Cozinha",
           "in": "na Cozinha",
           "of": "da Cozinha"
         },
         "Dek": {
-          "the": "o Convés",
+          "the": "Convés",
           "in": "no Convés",
           "of": "do Convés"
         },
         "Kanonnendek": {
-          "the": "a Artilharia",
+          "the": "Artilharia",
           "in": "na Artilharia",
           "of": "da Artilharia"
         },
         "Voorraadkamer": {
-          "the": "a Despensa",
+          "the": "Despensa",
           "in": "na Despensa",
           "of": "da Despensa"
         },
         "Slaapvertrek": {
-          "the": "o Alojamento",
+          "the": "Alojamento",
           "in": "no Alojamento",
           "of": "do Alojamento"
         },
         "Kaartenkamer": {
-          "the": "a Sala dos Mapas",
+          "the": "Sala dos Mapas",
           "in": "na Sala dos Mapas",
           "of": "da Sala dos Mapas"
         },
         "Brig": {
-          "the": "o Calabouço",
+          "the": "Calabouço",
           "in": "no Calabouço",
           "of": "do Calabouço"
         },
         "Stuurhut": {
-          "the": "a Casa do Leme",
+          "the": "Casa do Leme",
           "in": "na Casa do Leme",
           "of": "da Casa do Leme"
         },
         "Kapiteinshut": {
-          "the": "o Camarote",
+          "the": "Camarote",
           "in": "no Camarote",
           "of": "do Camarote"
         },
         "Kruitkamer": {
-          "the": "o Paiol",
+          "the": "Paiol",
           "in": "no Paiol",
           "of": "do Paiol"
         },
         "Voorsteven": {
-          "the": "a Proa",
+          "the": "Proa",
           "in": "na Proa",
           "of": "da Proa"
         },
         "Achtersteven": {
-          "the": "a Popa",
+          "the": "Popa",
           "in": "na Popa",
           "of": "da Popa"
         }
       },
       "hotel": {
         "Lobby": {
-          "the": "o Saguão",
+          "the": "Saguão",
           "in": "no Saguão",
           "of": "do Saguão"
         },
         "Receptie": {
-          "the": "a Recepção",
+          "the": "Recepção",
           "in": "na Recepção",
           "of": "da Recepção"
         },
         "Restaurant": {
-          "the": "o Restaurante",
+          "the": "Restaurante",
           "in": "no Restaurante",
           "of": "do Restaurante"
         },
         "Balzaal": {
-          "the": "o Salão",
+          "the": "Salão",
           "in": "no Salão",
           "of": "do Salão"
         },
         "Bar": {
-          "the": "o Bar",
+          "the": "Bar",
           "in": "no Bar",
           "of": "do Bar"
         },
         "Keuken": {
-          "the": "a Cozinha",
+          "the": "Cozinha",
           "in": "na Cozinha",
           "of": "da Cozinha"
         },
         "Bibliotheek": {
-          "the": "a Biblioteca",
+          "the": "Biblioteca",
           "in": "na Biblioteca",
           "of": "da Biblioteca"
         },
         "Spa": {
-          "the": "o Spa",
+          "the": "Spa",
           "in": "no Spa",
           "of": "do Spa"
         },
         "Wijnkelder": {
-          "the": "a Adega",
+          "the": "Adega",
           "in": "na Adega",
           "of": "da Adega"
         },
         "Suite": {
-          "the": "a Suíte",
+          "the": "Suíte",
           "in": "na Suíte",
           "of": "da Suíte"
         },
         "Wasserij": {
-          "the": "a Lavanderia",
+          "the": "Lavanderia",
           "in": "na Lavanderia",
           "of": "da Lavanderia"
         },
         "Rookkamer": {
-          "the": "a Charutaria",
+          "the": "Charutaria",
           "in": "na Charutaria",
           "of": "da Charutaria"
         },
         "Kamer 12": {
-          "the": "o Quarto 12",
+          "the": "Quarto 12",
           "in": "no Quarto 12",
           "of": "do Quarto 12"
         },
         "Portiersloge": {
-          "the": "a Portaria",
+          "the": "Portaria",
           "in": "na Portaria",
           "of": "da Portaria"
         },
         "Personeelskamer": {
-          "the": "o Vestiário",
+          "the": "Vestiário",
           "in": "no Vestiário",
           "of": "do Vestiário"
         },
         "Terras": {
-          "the": "o Terraço",
+          "the": "Terraço",
           "in": "no Terraço",
           "of": "do Terraço"
         },
         "Salon": {
-          "the": "a Saleta",
+          "the": "Saleta",
           "in": "na Saleta",
           "of": "da Saleta"
         }
       },
       "ruimte": {
         "Brug": {
-          "the": "a Ponte",
+          "the": "Ponte",
           "in": "na Ponte",
           "of": "da Ponte"
         },
         "Laboratorium": {
-          "the": "o Laboratório",
+          "the": "Laboratório",
           "in": "no Laboratório",
           "of": "do Laboratório"
         },
         "Kantine": {
-          "the": "o Refeitório",
+          "the": "Refeitório",
           "in": "no Refeitório",
           "of": "do Refeitório"
         },
         "Machinekamer": {
-          "the": "a Engenharia",
+          "the": "Engenharia",
           "in": "na Engenharia",
           "of": "da Engenharia"
         },
         "Slaapcabine": {
-          "the": "o Dormitório",
+          "the": "Dormitório",
           "in": "no Dormitório",
           "of": "do Dormitório"
         },
         "Luchtsluis": {
-          "the": "a Eclusa",
+          "the": "Eclusa",
           "in": "na Eclusa",
           "of": "da Eclusa"
         },
         "Kas": {
-          "the": "a Estufa",
+          "the": "Estufa",
           "in": "na Estufa",
           "of": "da Estufa"
         },
         "Ziekenboeg": {
-          "the": "a Enfermaria",
+          "the": "Enfermaria",
           "in": "na Enfermaria",
           "of": "da Enfermaria"
         },
         "Opslag": {
-          "the": "o Depósito",
+          "the": "Depósito",
           "in": "no Depósito",
           "of": "do Depósito"
         },
         "Observatorium": {
-          "the": "o Observatório",
+          "the": "Observatório",
           "in": "no Observatório",
           "of": "do Observatório"
         },
         "Werkplaats": {
-          "the": "a Oficina",
+          "the": "Oficina",
           "in": "na Oficina",
           "of": "da Oficina"
         }
       },
       "museum": {
         "Egyptische Zaal": {
-          "the": "a Sala Egípcia",
+          "the": "Sala Egípcia",
           "in": "na Sala Egípcia",
           "of": "da Sala Egípcia"
         },
         "Schilderijenzaal": {
-          "the": "a Pinacoteca",
+          "the": "Pinacoteca",
           "in": "na Pinacoteca",
           "of": "da Pinacoteca"
         },
         "Dinozaal": {
-          "the": "a Sala Jurássica",
+          "the": "Sala Jurássica",
           "in": "na Sala Jurássica",
           "of": "da Sala Jurássica"
         },
         "Kluis": {
-          "the": "o Cofre",
+          "the": "Cofre",
           "in": "no Cofre",
           "of": "do Cofre"
         },
         "Werkplaats": {
-          "the": "o Ateliê",
+          "the": "Ateliê",
           "in": "no Ateliê",
           "of": "do Ateliê"
         },
         "Museumwinkel": {
-          "the": "a Loja",
+          "the": "Loja",
           "in": "na Loja",
           "of": "da Loja"
         },
         "Hal": {
-          "the": "o Saguão",
+          "the": "Saguão",
           "in": "no Saguão",
           "of": "do Saguão"
         },
         "Archief": {
-          "the": "o Arquivo",
+          "the": "Arquivo",
           "in": "no Arquivo",
           "of": "do Arquivo"
         },
         "Beeldentuin": {
-          "the": "o Jardim",
+          "the": "Jardim",
           "in": "no Jardim",
           "of": "do Jardim"
         },
         "Depot": {
-          "the": "o Depósito",
+          "the": "Depósito",
           "in": "no Depósito",
           "of": "do Depósito"
         },
         "Kantoor": {
-          "the": "o Escritório",
+          "the": "Escritório",
           "in": "no Escritório",
           "of": "do Escritório"
         },
         "Museumcafé": {
-          "the": "o Café",
+          "the": "Café",
           "in": "no Café",
           "of": "do Café"
         }
       },
       "trein": {
         "Restauratiewagen": {
-          "the": "o Restaurante",
+          "the": "Restaurante",
           "in": "no Restaurante",
           "of": "do Restaurante"
         },
         "Salonwagen": {
-          "the": "o Salão",
+          "the": "Salão",
           "in": "no Salão",
           "of": "do Salão"
         },
         "Coupé A": {
-          "the": "a Cabine A",
+          "the": "Cabine A",
           "in": "na Cabine A",
           "of": "da Cabine A"
         },
         "Coupé B": {
-          "the": "a Cabine B",
+          "the": "Cabine B",
           "in": "na Cabine B",
           "of": "da Cabine B"
         },
         "Bagagewagen": {
-          "the": "o Bagageiro",
+          "the": "Bagageiro",
           "in": "no Bagageiro",
           "of": "do Bagageiro"
         },
         "Keukenwagen": {
-          "the": "a Cozinha",
+          "the": "Cozinha",
           "in": "na Cozinha",
           "of": "da Cozinha"
         },
         "Postwagen": {
-          "the": "o Correio",
+          "the": "Correio",
           "in": "no Correio",
           "of": "do Correio"
         },
         "Barwagen": {
-          "the": "o Bar",
+          "the": "Bar",
           "in": "no Bar",
           "of": "do Bar"
         },
         "Kolenwagen": {
-          "the": "a Carvoeira",
+          "the": "Carvoeira",
           "in": "na Carvoeira",
           "of": "da Carvoeira"
         },
         "Dienstruimte": {
-          "the": "a Copa",
+          "the": "Copa",
           "in": "na Copa",
           "of": "da Copa"
         },
         "Locomotief": {
-          "the": "a Locomotiva",
+          "the": "Locomotiva",
           "in": "na Locomotiva",
           "of": "da Locomotiva"
         },
         "Balkon": {
-          "the": "a Varanda",
+          "the": "Varanda",
           "in": "na Varanda",
           "of": "da Varanda"
         }
       },
       "circus": {
         "Piste": {
-          "the": "o Picadeiro",
+          "the": "Picadeiro",
           "in": "no Picadeiro",
           "of": "do Picadeiro"
         },
         "Tribune": {
-          "the": "a Arquibancada",
+          "the": "Arquibancada",
           "in": "na Arquibancada",
           "of": "da Arquibancada"
         },
         "Kleedwagen": {
-          "the": "o Camarim",
+          "the": "Camarim",
           "in": "no Camarim",
           "of": "do Camarim"
         },
         "Dierentent": {
-          "the": "o Zoológico",
+          "the": "Zoológico",
           "in": "no Zoológico",
           "of": "do Zoológico"
         },
         "Kassa": {
-          "the": "a Bilheteria",
+          "the": "Bilheteria",
           "in": "na Bilheteria",
           "of": "da Bilheteria"
         },
         "Kantine": {
-          "the": "a Cantina",
+          "the": "Cantina",
           "in": "na Cantina",
           "of": "da Cantina"
         },
         "Werkplaats": {
-          "the": "a Oficina",
+          "the": "Oficina",
           "in": "na Oficina",
           "of": "da Oficina"
         },
         "Directiewagen": {
-          "the": "a Diretoria",
+          "the": "Diretoria",
           "in": "na Diretoria",
           "of": "da Diretoria"
         },
         "Stalling": {
-          "the": "o Estábulo",
+          "the": "Estábulo",
           "in": "no Estábulo",
           "of": "do Estábulo"
         },
         "Kostuumwagen": {
-          "the": "o Figurino",
+          "the": "Figurino",
           "in": "no Figurino",
           "of": "do Figurino"
         },
         "Ingang": {
-          "the": "a Entrada",
+          "the": "Entrada",
           "in": "na Entrada",
           "of": "da Entrada"
         },
         "Opslagtent": {
-          "the": "o Depósito",
+          "the": "Depósito",
           "in": "no Depósito",
           "of": "do Depósito"
         }
       },
       "skihut": {
         "Gelagkamer": {
-          "the": "o Salão",
+          "the": "Salão",
           "in": "no Salão",
           "of": "do Salão"
         },
         "Keuken": {
-          "the": "a Cozinha",
+          "the": "Cozinha",
           "in": "na Cozinha",
           "of": "da Cozinha"
         },
         "Slaapzaal": {
-          "the": "o Dormitório",
+          "the": "Dormitório",
           "in": "no Dormitório",
           "of": "do Dormitório"
         },
         "Skiberging": {
-          "the": "a Sala de Esquis",
+          "the": "Sala de Esquis",
           "in": "na Sala de Esquis",
           "of": "da Sala de Esquis"
         },
         "Sauna": {
-          "the": "a Sauna",
+          "the": "Sauna",
           "in": "na Sauna",
           "of": "da Sauna"
         },
         "Terras": {
-          "the": "o Terraço",
+          "the": "Terraço",
           "in": "no Terraço",
           "of": "do Terraço"
         },
         "Kelder": {
-          "the": "o Porão",
+          "the": "Porão",
           "in": "no Porão",
           "of": "do Porão"
         },
         "Zolder": {
-          "the": "o Sótão",
+          "the": "Sótão",
           "in": "no Sótão",
           "of": "do Sótão"
         },
         "Wasruimte": {
-          "the": "a Lavanderia",
+          "the": "Lavanderia",
           "in": "na Lavanderia",
           "of": "da Lavanderia"
         },
         "Voorraadkamer": {
-          "the": "a Despensa",
+          "the": "Despensa",
           "in": "na Despensa",
           "of": "da Despensa"
         },
         "Speelkamer": {
-          "the": "a Sala de Jogos",
+          "the": "Sala de Jogos",
           "in": "na Sala de Jogos",
           "of": "da Sala de Jogos"
         },
         "Hal": {
-          "the": "o Hall",
+          "the": "Hall",
           "in": "no Hall",
           "of": "do Hall"
         }

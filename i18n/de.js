@@ -133,7 +133,7 @@
     "Controleer je antwoord": "Prüfe deine Antwort",
     "Als je denkt dat je alles hebt, klik op \"Controleer\".": "Wenn du glaubst, alles zu haben, tippe auf „Prüfen“.",
     "Begrepen!": "Verstanden!",
-    "Inspecteur Van Dam": "Inspektor Van Dam",
+    "Inspecteur Van Dam": "Inspektor Van Dam",
     "1 · Kijk naar": "1 · Schau hin",
     "2 · Dat betekent": "2 · Das heißt",
     "3 · Doe dit": "3 · Dein Zug",
@@ -151,7 +151,7 @@
     "Privacy": "Datenschutz",
     "{0} dagen op rij! Cadeau: {1} staat nu voor je open.": "{0} {0|one:Tag|other:Tage} in Folge! Geschenk: {1} steht dir jetzt offen.",
     "📊 Anonieme statistieken": "📊 Anonyme Statistiken",
-    "Privacyverklaring ↗": "Datenschutzerklärung ↗",
+    "Privacyverklaring ↗": "Erklärung ↗",
     "Hulp": "Hilfe",
     "Support ↗": "Support ↗",
     "🔔 Dagelijkse herinnering (18:30)": "🔔 Tägliche Erinnerung (18:30)",
@@ -159,10 +159,10 @@
     "🛒 Winkel": "🛒 Shop",
     "Crimson Pass": "Crimson Pass",
     "Aankopen herstellen": "Käufe wiederherstellen",
-    "Herstellen": "Wiederherstellen",
+    "Herstellen": "Abrufen",
     "Alle voortgang wissen": "Fortschritt löschen",
     "Wissen": "Löschen",
-    "· gemaakt in Nederland": "· gemacht in den Niederlanden",
+    "· gemaakt in Nederland": "· aus den Niederlanden",
     "🌍 Taal": "🌍 Sprache",
     "Rij {0}, kolom {1}, {2}": "Reihe {0}, Spalte {1}, {2}",
     "Alles, voor altijd": "Alles, für immer",
@@ -171,7 +171,7 @@
     "🎨 Alle bordthema's en portretlijsten": "🎨 Alle Brettdesigns und Porträtrahmen",
     "🧊 Twee extra vrije dagen op voorraad": "🧊 Zwei freie Tage extra auf Vorrat",
     "Crimson Pass · € 4,99": "Crimson Pass · 4,99 €",
-    "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "Einmalkäufe über dein Konto im App-Store, kein Abo. Das Herrenhaus, das Piratenschiff, der Tagesfall, der Fall der Woche und das Archiv bleiben immer kostenlos.",
+    "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "Einmalkäufe über dein Konto im App Store, kein Abo. Das Herrenhaus, das Piratenschiff, der Tagesfall, der Fall der Woche und das Archiv bleiben immer kostenlos.",
     "Onderscheiding verdiend!": "Medaille verdient!",
     "Kon geen plattegrond genereren, probeer opnieuw.": "Der Grundriss konnte nicht erstellt werden. Versuche es noch einmal.",
     "Alles opgelost": "Alles gelöst",
@@ -205,7 +205,7 @@
     "Los eerst zaak {0} op.": "Löse erst Fall {0}.",
     "Zaak {0}: {1}": "Fall {0}: {1}",
     "Zaak {0}: ": "Fall {0}: ",
-    "★★★ = zonder hint én in één keer goed · ★★ = één van de twee · ★ = opgelost": "★★★ = ohne Tipp und auf Anhieb richtig · ★★ = eins von beiden · ★ = gelöst",
+    "★★★ = zonder hint én in één keer goed · ★★ = één van de twee · ★ = opgelost": "★★★ = ohne Tipp und auf Anhieb richtig · ★★ = eins von beiden · ★ = gelöst",
     "Beste score:": "Rekord:",
     "Speel opnieuw": "Noch mal spielen",
     "Deze zaak kon niet geladen worden.": "Dieser Fall konnte nicht geladen werden.",
@@ -224,7 +224,7 @@
     "{0} Stempel: {1}": "{0} Stempel: {1}",
     "Al geopend": "Schon geöffnet",
     "{0} is helemaal opgelost. Wat een speurder.": "{0} ist komplett gelöst. Was für eine Spürnase.",
-    "Goed werk, Rekruut. Dit is van jou.": "Gute Arbeit, Rekrut. Das gehört dir.",
+    "Goed werk, Rekruut. Dit is van jou.": "Gute Arbeit. Das gehört dir.",
     "Je gratis hints voor vandaag zijn op ({0} per dag). Morgen krijg je er weer {1}, of kies hieronder.": "{0|one:Dein kostenloser Tipp|other:Deine kostenlosen Tipps} für heute {0|one:ist|other:sind} aufgebraucht ({0} pro Tag). Morgen bekommst du wieder {1}, oder du wählst unten etwas aus.",
     "{0} hoort bij de Crimson Pass. Je kunt de wereld ook los kopen.": "{0} gehört zum Crimson Pass. Du kannst die Welt auch einzeln kaufen.",
     "Bordthema's en portretlijsten horen bij de Crimson Pass, of koop ze los.": "Brettdesigns und Porträtrahmen gehören zum Crimson Pass, oder du kaufst sie einzeln.",
@@ -267,7 +267,7 @@
     "✓ Opgelost": "✓ Gelöst",
     "Nog eens": "Noch mal",
     "Vandaag gespeeld. Tot morgen!": "Heute gespielt. Bis morgen!",
-    "Nog niet gespeeld. Een vrije dag vangt het op, maar liever niet.": "Noch nicht gespielt. Ein freier Tag fängt das auf, aber lieber nicht.",
+    "Nog niet gespeeld. Een vrije dag vangt het op, maar liever niet.": "Noch nicht gespielt. Ein freier Tag fängt das auf, aber lieber nicht.",
     "Je streak van {0} dagen loopt vanavond af. Speel één zaak.": "Deine Serie von {0} {0|one:Tag|other:Tagen} endet heute Abend. Spiele einen Fall.",
     "Speel vandaag om je streak van {0} dagen te houden": "Spiele heute, damit deine Serie von {0} {0|one:Tag|other:Tagen} hält",
     "Mis je een dag, dan vult een vrije dag het gat en blijft je streak staan.": "Verpasst du einen Tag, füllt ein freier Tag die Lücke und deine Serie bleibt bestehen.",
@@ -311,9 +311,9 @@
     "📖 {0}. {1}": "📖 {0}. {1}",
     "Stap {0} van {1}": "Schritt {0} von {1}",
     "In deze zaak zegt {0}: “{1}”": "In diesem Fall sagt {0}: „{1}“",
-    "✓ Klopt": "✓ Stimmt",
-    "✗ Klopt niet": "✗ Stimmt nicht",
-    "Hint {0} · deze zaak levert nu maximaal ★★ op": "Tipp {0} · dieser Fall bringt jetzt höchstens ★★",
+    "✓ Klopt": "✓ Passt",
+    "✗ Klopt niet": "✗ Passt nicht",
+    "Hint {0} · deze zaak levert nu maximaal ★★ op": "Tipp {0} · dieser Fall bringt jetzt höchstens ★★",
     "Potlood: zet een stipje op vakjes waar iemand zou kúnnen staan. Met Plaats zet je iemand echt neer, met Gum haal je het weer weg.": "Bleistift: Setze einen Punkt auf Felder, auf denen jemand stehen könnte. Mit „Setzen“ stellst du jemanden wirklich hin, mit dem Radierer nimmst du ihn wieder weg.",
     "Bijna! Nog één verdachte staat verkeerd. {0} van de {1} staan al goed.": "Fast! Ein Verdächtiger steht noch falsch. {0} von {1} {0|one:steht|other:stehen} schon richtig.",
     "{0} verdachten staan verkeerd, {1} staan goed. Gebruik een hint als je vastzit.": "{0} {0|one:Verdächtiger steht|other:Verdächtige stehen} falsch, {1} {1|one:steht|other:stehen} richtig. Nimm einen Tipp, wenn du feststeckst.",
@@ -333,9 +333,9 @@
     " · Dag #{0}": " · Tag #{0}",
     "Dagelijkse zaak ": "Tagesfall ",
     "👁️ Vluchtige blik": "👁️ Flüchtiger Blick",
-    "Ronde {0}: iedereen staat op zijn plek. Wie liegt?": "Runde {0}: Alle stehen an ihrem Platz. Wer lügt?",
-    "Ronde {0}: kijk goed waar iedereen staat…": "Runde {0}: Schau genau, wo alle stehen …",
-    "👁️ Onthoud het… ": "👁️ Merk es dir … ",
+    "Ronde {0}: iedereen staat op zijn plek. Wie liegt?": "Runde {0}: Alle am Platz. Wer lügt?",
+    "Ronde {0}: kijk goed waar iedereen staat…": "Runde {0}: Schau genau, wo alle stehen …",
+    "👁️ Onthoud het… ": "👁️ Merk es dir … ",
     "Waar stond {0}?": "Wo stand {0}?",
     "Goed gezien! +{0} punten": "Gut gesehen! +{0} {0|one:Punkt|other:Punkte}",
     "Nee: {0} loog.": "Nein: {0} hat gelogen.",
@@ -498,7 +498,7 @@
           "Juffrouw Coral": "Fräulein Coral",
           "Kanonnier Thorne": "Kanonier Thorne",
           "Dokter Marlow": "Doktorin Marlow",
-          "Scheepsjongen Pip": "Schiffsjunge Pip"
+          "Scheepsjongen Pip": "Schiffs­junge Pip"
         },
         "suspectShort": {
           "Barnaby": "Barnaby",
@@ -599,8 +599,8 @@
         "suspects": {
           "Dr. Nkemelu": "Dr. Nkemelu",
           "Piloot Reyes": "Pilot Reyes",
-          "Ingenieur Vega": "Ingenieurin Vega",
-          "Botanist Fern": "Botanikerin Fern",
+          "Ingenieur Vega": "Inge­nieurin Vega",
+          "Botanist Fern": "Bota­nikerin Fern",
           "Kadet Yuki": "Kadett Yuki",
           "Kok Dima": "Koch Dima",
           "Officier Paz": "Offizierin Paz",
@@ -648,13 +648,13 @@
           "beeld": "Statue"
         },
         "suspects": {
-          "Gids Margot": "Museumsführerin Margot",
+          "Gids Margot": "Museums­führerin Margot",
           "Curator Ellery": "Kurator Ellery",
-          "Restaurateur Iris": "Restauratorin Iris",
-          "Nachtwaker Gus": "Nachtwächter Gus",
+          "Restaurateur Iris": "Restau­ratorin Iris",
+          "Nachtwaker Gus": "Nacht­wächter Gus",
           "Professor Adebayo": "Professor Adebayo",
-          "Kunsthandelaar Lucian": "Kunsthändler Lucian",
-          "Stagiair Noor": "Praktikantin Noor",
+          "Kunsthandelaar Lucian": "Kunst­händler Lucian",
+          "Stagiair Noor": "Prakti­kantin Noor",
           "Schoonmaker Hugo": "Putzmann Hugo"
         },
         "suspectShort": {
@@ -701,10 +701,10 @@
         "suspects": {
           "Barones Von Stahl": "Baronin von Stahl",
           "Goochelaar Orlando": "Zauberer Orlando",
-          "Schaakmeester Ivo": "Schachmeister Ivo",
+          "Schaakmeester Ivo": "Schach­meister Ivo",
           "Verpleegster Hedda": "Schwester Hedda",
           "Reiziger Sami": "Passagier Sami",
-          "Actrice Lola": "Schauspielerin Lola",
+          "Actrice Lola": "Schau­spielerin Lola",
           "Stoker Jules": "Heizer Jules",
           "Weduwe Duval": "Witwe Duval"
         },
@@ -745,17 +745,17 @@
         "furniture": {
           "circuskanon": "Zirkuskanone",
           "trapeze": "Trapez",
-          "spiegelkast": "Spiegelschrank",
+          "spiegelkast": "Spiegel",
           "popcornkar": "Popcornwagen",
           "kooi": "Löwenkäfig"
         },
         "suspects": {
           "Clown Pippo": "Clown Pippo",
-          "Trapezeartiest Mira": "Trapezkünstlerin Mira",
-          "Leeuwentemmer Gunther": "Löwenbändiger Gunther",
-          "Waarzegster Zora": "Wahrsagerin Zora",
+          "Trapezeartiest Mira": "Trapez­künstlerin Mira",
+          "Leeuwentemmer Gunther": "Löwen­bändiger Gunther",
+          "Waarzegster Zora": "Wahr­sagerin Zora",
           "Sterke Man Boris": "Kraftprotz Boris",
-          "Kaartverkoopster Dottie": "Kartenverkäuferin Dottie",
+          "Kaartverkoopster Dottie": "Karten­verkäuferin Dottie",
           "Jongleur Teo": "Jongleur Teo",
           "Dierenarts Nadia": "Tierärztin Nadia"
         },
@@ -801,14 +801,14 @@
           "fondue": "Fonduetopf"
         },
         "suspects": {
-          "Skilerares Astrid": "Skilehrerin Astrid",
+          "Skilerares Astrid": "Ski­lehrerin Astrid",
           "Bergredder Bjorn": "Bergretter Bjorn",
           "Toeriste Hana": "Touristin Hana",
           "Kok Luigi": "Koch Luigi",
           "Fotograaf Emil": "Fotograf Emil",
           "Dokter Ingrid": "Doktorin Ingrid",
           "Jongen Kai": "Skischüler Kai",
-          "Berggids Freya": "Bergführerin Freya"
+          "Berggids Freya": "Berg­führerin Freya"
         },
         "suspectShort": {
           "Skilerares Astrid": "Astrid",
@@ -1013,15 +1013,15 @@
     "tips": {
       "same-row": "Achte auf die Aussage über eine Reihe: Eine Reihe läuft von links nach rechts, quer durch die Wände.",
       "same-col": "Eine Spalte läuft von oben nach unten über den ganzen Grundriss. Wände zählen nicht.",
-      "left-of": "„Links von“ gilt für den ganzen Grundriss: Der eine steht in einer Spalte weiter links, egal in welchem Raum.",
+      "left-of": "„Links von“ gilt für den ganzen Grundriss: Jede Spalte weiter links zählt, egal in welchem Raum.",
       "above": "„Weiter oben auf dem Grundriss“ heißt: näher am oberen Rand, egal in welchem Raum.",
       "not-adjacent": "„Nicht direkt neben“ schließt nur die vier Felder daneben aus. Diagonal zählt nicht als daneben.",
       "adjacent": "„Direkt neben“ ist das Feld links, rechts, darüber oder darunter. Nie diagonal.",
       "alone": "Wer allein in einem Raum war, schließt alle anderen dort aus. Praktisch, um Räume zu streichen.",
-      "empty-room": "Ein leerer Raum laut Bericht: Dort brauchst du niemanden auszuprobieren.",
+      "empty-room": "Laut Bericht war dieser Raum leer: Dort musst du niemanden ausprobieren.",
       "pos": "Eine Ecke berührt zwei Wände, „an einer Wand“ berührt eine und „in der Mitte“ keine.",
       "room-pos": "Schau, welche Ecken oder Wandfelder in diesem Raum noch frei sind. Möbel belegen oft ein paar davon.",
-      "room-with": "Ein Raum „mit einer Pflanze“ kann auch ein Raum mit mehr Möbeln sein. Suche zuerst die Pflanze.",
+      "room-with": "Ein Raum „mit einer Pflanze“ kann auch noch andere Möbel haben. Suche zuerst die Pflanze.",
       "next-to": "Tippe auf die Aussage: Das Möbelstück leuchtet auf. Nur die Felder direkt daneben kommen infrage.",
       "room-next": "Raum und Möbelstück zusammen: Meist bleibt dann nur noch ein Feld übrig.",
       "diff-room": "Nicht im selben Raum: Lege zuerst die Person fest, über die du am meisten weißt.",
@@ -1033,7 +1033,7 @@
     "intros": {
       "kamers": [
         "Räume",
-        "Ein Verdächtiger sagt dir, in welchem Raum er war. Suche diesen Raum auf dem Grundriss und setze ihn irgendwo hinein. Sagt jemand, wo er NICHT war? Dann kann er überall stehen, nur nicht in diesem Raum."
+        "Ein Verdächtiger sagt dir, in welchem Raum er war. Suche diesen Raum auf dem Grundriss und setze den Verdächtigen irgendwo hinein. Sagt jemand, wo er NICHT war? Dann kann er überall stehen, nur nicht in diesem Raum."
       ],
       "hoeken": [
         "Ecken und Wände",
@@ -1045,7 +1045,7 @@
       ],
       "samen": [
         "Zusammen oder allein",
-        "Im selben Raum: Setze beide in diesen einen Raum. Nicht im selben Raum: Setze sie in zwei verschiedene Räume. Ich war allein: Niemand sonst darf in diesem Raum stehen."
+        "Im selben Raum: Setze beide in ein und denselben Raum. Nicht im selben Raum: Setze sie in zwei verschiedene Räume. Ich war allein: Niemand sonst darf in diesem Raum stehen."
       ],
       "naast": [
         "Nebeneinander",
@@ -1072,10 +1072,10 @@
       "Schau noch mal auf den Grundriss."
     ],
     "reactRight": [
-      "… Woher wusstest du das?",
-      "… Na gut. Ich war’s.",
+      "… Woher wusstest du das?",
+      "… Na gut. Ich war’s.",
       "Fast wäre ich davongekommen.",
-      "… Du hast mich durchschaut."
+      "… Du hast mich durchschaut."
     ],
     "archiveStories": [
       "Eine alte Akte aus dem Archiv. Die Fakten sind kalt, die Frage nicht.",
@@ -1131,7 +1131,7 @@
         [
           "Der Gärtner schweigt",
           "Der Geräteschuppen war leer, der Gärtner auch.",
-          "🧤 Gartenhandschuh"
+          "🧤 Garten­handschuh"
         ],
         [
           "Das Testament",
@@ -1169,7 +1169,7 @@
         [
           "Die kaputte Uhr",
           "Die Uhr in der Halle war um zehn vor neun stehengeblieben.",
-          "⏰ Stehengebliebene Uhr"
+          "⏰ Stehen­gebliebene Uhr"
         ],
         [
           "Schritte im Keller",
@@ -1202,7 +1202,7 @@
         [
           "Das Licht geht aus",
           "Eine Kerze brannte noch, im falschen Zimmer.",
-          "🔦 Taschenlampe"
+          "🔦 Taschen­lampe"
         ],
         [
           "Der nasse Mantel",
@@ -1255,7 +1255,7 @@
         [
           "Staub auf dem Klavier",
           "Niemand hatte gespielt. Trotzdem stand der Deckel offen.",
-          "🎵 Klavierdeckel"
+          "🎵 Klavier­deckel"
         ],
         [
           "Die Kellertür",
@@ -1285,7 +1285,7 @@
         [
           "Der Dachbodenschlüssel",
           "Niemand ging auf den Dachboden. Außer dem, der den Schlüssel hatte.",
-          "🔐 Dachbodenschlüssel"
+          "🔐 Dach­boden­schlüssel"
         ]
       ]
     ],
@@ -1308,7 +1308,7 @@
         [
           "Die Ringe",
           "Zwei Ringe in einem Kästchen. Ein Kästchen leer.",
-          "💍 Ringkästchen"
+          "💍 Ring­kästchen"
         ],
         [
           "Die Rede von Major Pike",
@@ -1371,7 +1371,7 @@
         [
           "Das verborgene Zimmer",
           "Das Zimmer hatte kein Fenster. Trotzdem schien Licht.",
-          "🕯️ Kerzenleuchter"
+          "🕯️ Kerzen­leuchter"
         ],
         [
           "Hargrove gesteht",
@@ -1409,12 +1409,12 @@
         [
           "Die Kanone schweigt",
           "Niemand hörte einen Schuss. Trotzdem lag dort jemand.",
-          "💣 Kanonenkugel"
+          "💣 Kanonen­kugel"
         ],
         [
           "Meuterei",
           "Das Murren begann in der Kombüse.",
-          "🍴 Kombüsenmesser"
+          "🍴 Kombüsen­messer"
         ],
         [
           "Die Schatztruhe",
@@ -1447,7 +1447,7 @@
         [
           "Der Papagei spricht",
           "Der Vogel wiederholte einen Namen. Immer wieder.",
-          "🪶 Papageienfeder"
+          "🪶 Papageien­feder"
         ],
         [
           "Das leere Fass",
@@ -1462,7 +1462,7 @@
         [
           "Der Kompass dreht sich",
           "Die Nadel zeigte zur Kombüse.",
-          "🧲 Kompassnadel"
+          "🧲 Kompass­nadel"
         ],
         [
           "Das verschwundene Beiboot",
@@ -1500,12 +1500,12 @@
         [
           "Sturm an Backbord",
           "Alles rutschte. Eines blieb genau an seinem Platz.",
-          "🪢 Durchtrenntes Tau"
+          "🪢 Durch­trenntes Tau"
         ],
         [
           "Die Schiffskatze",
           "Die Katze saß, wo sie sonst nie saß.",
-          "🔔 Schiffsglocke"
+          "🔔 Schiffs­glocke"
         ],
         [
           "Meuterei, Teil zwei",
@@ -1525,7 +1525,7 @@
         [
           "Der letzte Kapitän",
           "Wer die Möwe führt, muss es sich verdienen.",
-          "🏴‍☠️ Kapitänsflagge"
+          "🏴‍☠️ Kapitäns­flagge"
         ]
       ]
     ],
@@ -1558,12 +1558,12 @@
         [
           "Fräulein Coral lauscht",
           "Sie hörte Stimmen im Laderaum. Zwei Stimmen.",
-          "🐚 Lauschmuschel"
+          "🐚 Lausch­muschel"
         ],
         [
           "Der Kampf um die Truhe",
           "Zwei wollten die Truhe. Einer bekam sie.",
-          "🔒 Truhenschloss"
+          "🔒 Truhen­schloss"
         ],
         [
           "Die Nacht ohne Mond",
@@ -1573,7 +1573,7 @@
         [
           "Barnaby am Ruder",
           "Der Kapitän stand am Ruder. Hinter ihm: niemand. Sagte er.",
-          "🎖️ Kapitänsknopf"
+          "🎖️ Kapitäns­knopf"
         ]
       ]
     ],
@@ -1606,7 +1606,7 @@
         [
           "Das Lied aus dem Laderaum",
           "Jemand sang. Niemand gab es zu.",
-          "🎶 Seemannslied"
+          "🎶 Seemanns­lied"
         ],
         [
           "Doktorin Marlow und die Truhe",
@@ -1702,7 +1702,7 @@
         [
           "Zimmerservice",
           "Der Servierwagen stand vor der Tür. Niemand hatte bestellt.",
-          "🛎️ Serviceklingel"
+          "🛎️ Service­klingel"
         ],
         [
           "Der Ballsaal",
@@ -1735,7 +1735,7 @@
         [
           "Frühstück für zwei",
           "Zwei Teller, ein Gast.",
-          "🍽️ Frühstücksteller"
+          "🍽️ Frühstücks­teller"
         ],
         [
           "Der Aufzug hält",
@@ -1745,7 +1745,7 @@
         [
           "Die Portiersloge",
           "Der Portier sah alles. Nur das nicht.",
-          "🧢 Portiersmütze"
+          "🧢 Portiers­mütze"
         ],
         [
           "Der vergessene Schirm",
@@ -1778,7 +1778,7 @@
         [
           "Der Personalaufzug",
           "Nur das Personal kannte den Personalaufzug. Offenbar nicht nur das Personal.",
-          "🗝️ Dienstschlüssel"
+          "🗝️ Dienst­schlüssel"
         ],
         [
           "Chefköchin Brigitte schmeckt ab",
@@ -1836,7 +1836,7 @@
         [
           "Gräfin Delacroix beschwert sich",
           "Das Bett war zu hart. Das Alibi zu weich.",
-          "🛎️ Beschwerdeklingel"
+          "🛎️ Beschwerde­klingel"
         ],
         [
           "Der neue Koch",
@@ -1856,12 +1856,12 @@
         [
           "Der Spiegelsaal",
           "Hundert Spiegel, hundert Zeugen, eine Lüge.",
-          "🪞 Spiegelscherbe"
+          "🪞 Spiegel­scherbe"
         ],
         [
           "Die erste Bewertung",
           "Fünf Sterne. Geschrieben von jemandem, der nie eingecheckt hatte.",
-          "⭐ Bewertungskarte"
+          "⭐ Bewertungs­karte"
         ]
       ]
     ],
@@ -1874,12 +1874,12 @@
         [
           "Kaffeepause",
           "Zweihundert Tassen. Eine davon mit einem kleinen Extra.",
-          "☕ Konferenztasse"
+          "☕ Konferenz­tasse"
         ],
         [
           "Das Namensschild",
           "Das Schild lag auf dem Boden. Der Name stimmte nicht.",
-          "🏷️ Namensschild"
+          "🏷️ Namens­schild"
         ],
         [
           "Der falsche Saal",
@@ -1922,7 +1922,7 @@
         [
           "Die Schlüssel werden abgegeben",
           "Alle Schlüssel am Brett. Ein Haken leer.",
-          "🪝 Schlüsselhaken"
+          "🪝 Schlüssel­haken"
         ],
         [
           "Das letzte Mahl",
@@ -1957,7 +1957,7 @@
         [
           "Aurora erlischt",
           "Der Hauptschalter. Die letzte Hand.",
-          "🔌 Hauptschalter"
+          "🔌 Haupt­schalter"
         ]
       ]
     ],
@@ -1985,7 +1985,7 @@
         [
           "Druckabfall",
           "Der Alarm ging los. Nicht wegen des Drucks.",
-          "🚨 Alarmleuchte"
+          "🚨 Alarm­leuchte"
         ],
         [
           "Der Wartungsroboter",
@@ -2038,7 +2038,7 @@
         [
           "Schleuse zwei",
           "Die Schleuse ging auf. Von innen.",
-          "🕹️ Schleusenhebel"
+          "🕹️ Schleusen­hebel"
         ],
         [
           "Die Kuppel dreht sich",
@@ -2053,7 +2053,7 @@
         [
           "Stille im Gewächshaus",
           "Die Pflanzen wuchsen. Sonst bewegte sich nichts.",
-          "🍃 Gewächshausblatt"
+          "🍃 Gewächs­haus­blatt"
         ]
       ]
     ],
@@ -2076,7 +2076,7 @@
         [
           "Die undichte Leitung",
           "Das Wasser lief Richtung Labor.",
-          "🧴 Wasserflasche"
+          "🧴 Wasser­flasche"
         ],
         [
           "Kadett Yuki zählt",
@@ -2149,7 +2149,7 @@
         [
           "Das neue Kommando",
           "Der neue Kommandant hielt eine Woche durch.",
-          "🎖️ Kommandantennadel"
+          "🎖️ Komman­danten­nadel"
         ]
       ]
     ],
@@ -2167,17 +2167,17 @@
         [
           "Das Andocksignal",
           "Die Kapsel meldete sich höflich. Danach nie wieder.",
-          "📡 Andockantenne"
+          "📡 Andock­antenne"
         ],
         [
           "Das kalte Modul",
           "Die Heizung fiel aus. In genau einem Modul.",
-          "🌡️ Thermometer"
+          "🌡️ Thermo­meter"
         ],
         [
           "Ingenieurin Vega öffnet die Schleuse",
           "Ohne Erlaubnis. Mit gutem Grund, sagte sie.",
-          "🔧 Schleusenschlüssel"
+          "🔧 Schleusen­schlüssel"
         ],
         [
           "Offizierin Paz befiehlt",
@@ -2187,7 +2187,7 @@
         [
           "Pilot Reyes rechnet",
           "Der Kurs stimmte. Die Zeit nicht.",
-          "🧮 Kursberechnung"
+          "🧮 Kurs­berechnung"
         ],
         [
           "Das Paket",
@@ -2225,12 +2225,12 @@
         [
           "Botanikerin Fern schneidet zurück",
           "Das Gewächshaus wurde aufgeräumt. Gründlich.",
-          "🌿 Gartenschere"
+          "🌿 Garten­schere"
         ],
         [
           "Die Sauerstoffanzeige",
           "Genug Sauerstoff für alle. Etwas weniger für einen.",
-          "🫧 Sauerstoffanzeige"
+          "🫧 Sauerstoff­anzeige"
         ],
         [
           "Die letzte Nachricht nach Hause",
@@ -2244,7 +2244,7 @@
         ],
         [
           "Orion verglüht",
-          "Die letzte Frage über der letzten Atmosphäre.",
+          "Die letzte Frage, am Rand der Atmosphäre.",
           "🔥 Hitzeschild"
         ]
       ]
@@ -2262,7 +2262,7 @@
         ],
         [
           "Der Sarkophag",
-          "Der Deckel stand einen Spalt offen. Er hätte zu sein müssen.",
+          "Der Deckel stand einen Spalt offen. Er hätte geschlossen sein müssen.",
           "⚱️ Kanope"
         ],
         [
@@ -2273,7 +2273,7 @@
         [
           "Museumsführerin Margot schließt ab",
           "Sie machte jeden Abend die Runde. Heute ließ sie einen Saal aus.",
-          "🔑 Saalschlüssel"
+          "🔑 Saal­schlüssel"
         ],
         [
           "Der Sauriersaal",
@@ -2288,12 +2288,12 @@
         [
           "Nachtwächter Gus schläft",
           "Sein Kaffee war kalt, sein Stuhl warm.",
-          "☕ Thermoskanne"
+          "☕ Thermos­kanne"
         ],
         [
           "Der letzte Besucher",
           "Auf der Kamera: ein Gast, der nie ging.",
-          "📹 Kameraaufnahme"
+          "📹 Kamera­aufnahme"
         ]
       ]
     ],
@@ -2354,12 +2354,12 @@
         [
           "Die Eröffnung",
           "Das Band wurde durchgeschnitten. Dann wurde es still.",
-          "🎀 Eröffnungsband"
+          "🎀 Eröffnungs­band"
         ],
         [
           "Champagner im Foyer",
           "Hundert Gläser. Eines hatte einen Fingerabdruck zu viel.",
-          "🥂 Champagnerglas"
+          "🥂 Champagner­glas"
         ],
         [
           "Professor Adebayo spricht",
@@ -2384,7 +2384,7 @@
         [
           "Kurator Ellery schweigt",
           "Er wusste, welches Gemälde gefälscht war. Er sagte es nicht.",
-          "🏷️ Namensschild"
+          "🏷️ Namens­schild"
         ],
         [
           "Licht aus in Saal 7",
@@ -2407,7 +2407,7 @@
         [
           "Die Mumienmaske",
           "Die Maske lag neben dem Sarkophag. Nicht darin.",
-          "🎭 Mumienmaske"
+          "🎭 Mumien­maske"
         ],
         [
           "Museumsführerin Margot verirrt sich",
@@ -2427,7 +2427,7 @@
         [
           "Nachtwächter Gus macht Schluss",
           "Seine letzte Runde endete zu früh.",
-          "🔦 Taschenlampe"
+          "🔦 Taschen­lampe"
         ],
         [
           "Die zerbrochene Vase",
@@ -2455,7 +2455,7 @@
         [
           "Die Lagerfeuergeschichte",
           "Museumsführerin Margot erzählte eine Geschichte. Das Ende wurde wahr.",
-          "📚 Geschichtenbuch"
+          "📚 Geschich­ten­buch"
         ],
         [
           "Der fehlende Zahn",
@@ -2470,7 +2470,7 @@
         [
           "Die Taschenlampe",
           "Jemand leuchtete dorthin, wo kein Licht erlaubt war.",
-          "🔦 Kindertaschenlampe"
+          "🔦 Kinder­taschen­lampe"
         ],
         [
           "Das Skelett bewegt sich",
@@ -2556,7 +2556,7 @@
         [
           "Der Koffer in Abteil A",
           "Der Koffer gehörte niemandem. Sagten alle.",
-          "🧳 Schrankkoffer"
+          "🧳 Schrank­koffer"
         ],
         [
           "Zauberer Orlando verschwindet",
@@ -2571,7 +2571,7 @@
         [
           "Der Tunnel",
           "Vier Minuten Dunkelheit. Genug für eine Person.",
-          "🕯️ Kerzenstummel"
+          "🕯️ Kerzen­stummel"
         ],
         [
           "Baronin von Stahl beschwert sich",
@@ -2599,12 +2599,12 @@
         [
           "Heizer Jules schaufelt",
           "Die Kohlen waren aus. Nur in einem Wagen nicht.",
-          "⚫ Kohlebrocken"
+          "⚫ Kohle­brocken"
         ],
         [
           "Spuren im Schnee",
           "Spuren zum Zug. Nicht zurück.",
-          "👢 Schneestiefel"
+          "👢 Schnee­stiefel"
         ],
         [
           "Schwester Hedda hilft",
@@ -2667,12 +2667,12 @@
         [
           "Witwe Duval weint",
           "Sie weinte um ihren Mann. Der war seit zehn Jahren tot.",
-          "🖤 Trauerschleier"
+          "🖤 Trauer­schleier"
         ],
         [
           "Die vertauschten Koffer",
           "Zwei Koffer, dieselben Schlösser, ein Unterschied.",
-          "🔐 Kofferschloss"
+          "🔐 Koffer­schloss"
         ],
         [
           "Grenzposten",
@@ -2690,7 +2690,7 @@
         [
           "Wieder an Bord",
           "Dasselbe Abteil. Ein anderer Grund.",
-          "🗓️ Reisetagebuch"
+          "🗓️ Reise­tage­buch"
         ],
         [
           "Das Grammophon",
@@ -2710,7 +2710,7 @@
         [
           "Heizer Jules sieht alles",
           "Von der Lokomotive aus sah er jeden Wagen. Sagte er.",
-          "🔥 Kohlenschaufel"
+          "🔥 Kohlen­schaufel"
         ],
         [
           "Die Bar schließt",
@@ -2773,7 +2773,7 @@
         [
           "Der letzte Tanz",
           "Als das Licht anging, stand eine Person zu viel auf der Tanzfläche.",
-          "🥂 Champagnerglas"
+          "🥂 Champagner­glas"
         ]
       ]
     ],
@@ -2796,7 +2796,7 @@
         [
           "Die Lokomotive",
           "Niemand durfte in die Lokomotive. Jemand war dort.",
-          "🔧 Schraubenschlüssel"
+          "🔧 Schrauben­schlüssel"
         ],
         [
           "Witwe Duval packt",
@@ -2811,7 +2811,7 @@
         [
           "Der Gepäckwagen",
           "Zwischen den Koffern lag mehr als Gepäck.",
-          "🏷️ Gepäckanhänger"
+          "🏷️ Gepäck­anhänger"
         ],
         [
           "Heizer Jules heizt nicht mehr",
@@ -2839,7 +2839,7 @@
         [
           "Die leere Kanone",
           "Die Kanone war geladen. Nicht mit einem Menschen.",
-          "💥 Kanonenkugel"
+          "💥 Kanonen­kugel"
         ],
         [
           "Clown Pippo lacht nicht",
@@ -2887,7 +2887,7 @@
         [
           "Spuren im Sägemehl",
           "Pfoten nach links, Stiefel nach rechts.",
-          "🐾 Pfotenabdruck"
+          "🐾 Pfoten­abdruck"
         ],
         [
           "Löwenbändiger Gunther sucht",
@@ -2907,7 +2907,7 @@
         [
           "Die Tierärztin kommt",
           "Tierärztin Nadia war schneller da als der Alarm.",
-          "💉 Betäubungspfeil"
+          "💉 Betäubungs­pfeil"
         ],
         [
           "Die Kasse stimmt nicht",
@@ -2930,11 +2930,11 @@
         [
           "Hundert Spiegel",
           "Alle sahen sich selbst. Niemand sah den Täter.",
-          "🪞 Spiegelscherbe"
+          "🪞 Spiegel­scherbe"
         ],
         [
           "Kraftprotz Boris hebt",
-          "Er hob den Spiegelschrank allein. Sagte er.",
+          "Er hob den großen Spiegel allein. Sagte er.",
           "🏋️ Hantel"
         ],
         [
@@ -2965,7 +2965,7 @@
         [
           "Hinter dem letzten Spiegel",
           "Hinter dem letzten Spiegel lag die letzte Frage.",
-          "🔦 Scheinwerfer"
+          "🔦 Schein­werfer"
         ]
       ]
     ],
@@ -2983,7 +2983,7 @@
         [
           "Der Wagen von Zora",
           "Ihr Wagen war abgeschlossen. Von außen.",
-          "🔐 Wagenschloss"
+          "🔐 Wagen­schloss"
         ],
         [
           "Clown Pippo verkleidet sich",
@@ -2998,7 +2998,7 @@
         [
           "Koch in der Kantine",
           "Das Essen war fertig. Ein Teller blieb voll.",
-          "🍲 Suppenschüssel"
+          "🍲 Suppen­schüssel"
         ],
         [
           "Der leere Stall",
@@ -3031,7 +3031,7 @@
         [
           "Der Zylinder",
           "Der Hut des Direktors lag in der Kantine.",
-          "🎩 Direktorenhut"
+          "🎩 Direktoren­hut"
         ],
         [
           "Jongleur Teo jongliert",
@@ -3089,7 +3089,7 @@
         [
           "Löwenbändiger Gunther nimmt Abschied",
           "Vom Löwen. Nicht von allen.",
-          "🦁 Löwenmähne"
+          "🦁 Löwen­mähne"
         ],
         [
           "Das letzte Lagerfeuer",
@@ -3104,7 +3104,7 @@
         [
           "Kartenverkäuferin Dottie schließt ab",
           "Sie machte das Licht aus. Jemand machte es wieder an.",
-          "🔦 Kassenlampe"
+          "🔦 Kassen­lampe"
         ],
         [
           "Das Zelt fällt",
@@ -3122,7 +3122,7 @@
         [
           "Die Lawine",
           "Der Berg kam herunter. Der Hüttenwirt auch.",
-          "❄️ Schneeflocke"
+          "❄️ Schnee­flocke"
         ],
         [
           "Der kalte Ofen",
@@ -3142,7 +3142,7 @@
         [
           "Bergretter Bjorn gräbt",
           "Er grub die Straße frei. In die falsche Richtung.",
-          "⛏️ Schneeschaufel"
+          "⛏️ Schnee­schaufel"
         ],
         [
           "Die Sauna",
@@ -3175,7 +3175,7 @@
         [
           "Koch Luigi kocht",
           "Die Suppe war fertig. Eine Schüssel blieb voll.",
-          "🍲 Suppenschüssel"
+          "🍲 Suppen­schüssel"
         ],
         [
           "Der Schlitten",
@@ -3223,7 +3223,7 @@
         [
           "Kerzen in der Gaststube",
           "Sieben Kerzen. Eine war ausgeblasen.",
-          "🕯️ Kerzenstummel"
+          "🕯️ Kerzen­stummel"
         ],
         [
           "Skischüler Kai hört etwas",
@@ -3276,17 +3276,17 @@
         [
           "Die Terrasse",
           "Die Terrasse war wieder offen. Der Stuhl am Geländer blieb leer.",
-          "🪑 Terrassenstuhl"
+          "🪑 Terrassen­stuhl"
         ],
         [
           "Die Speisekammer",
           "Eine Dose zu wenig. Ein Teller zu viel.",
-          "🥫 Konservendose"
+          "🥫 Konserven­dose"
         ],
         [
           "Koch Luigi fehlt ein Messer",
           "Elf Messer. Es hätten zwölf sein sollen.",
-          "🔪 Küchenmesser"
+          "🔪 Küchen­messer"
         ],
         [
           "Das Spielzimmer",
@@ -3301,7 +3301,7 @@
         [
           "Die Straße ist frei",
           "Das erste Auto fuhr los. Mit einem Sitz zu wenig.",
-          "🚗 Autoschlüssel"
+          "🚗 Auto­schlüssel"
         ]
       ]
     ],
@@ -3314,7 +3314,7 @@
         [
           "Glühwein",
           "Acht Becher. Sieben leer.",
-          "☕ Glühweinbecher"
+          "☕ Glühwein­becher"
         ],
         [
           "Die Band spielt",
@@ -3382,7 +3382,7 @@
         [
           "Das letzte Frühstück",
           "Koch Luigi kochte für acht. Sieben aßen.",
-          "🍽️ Frühstücksteller"
+          "🍽️ Frühstücks­teller"
         ],
         [
           "Der Schneemann",
@@ -3639,7 +3639,7 @@
         "deduce.in": "Nur ein Feld bleibt übrig: das leuchtende Feld {room.in}. Ziehe {s.ref} dorthin.",
         "narrow": "{s} kann noch auf {n} {n|one:Feld|other:Feldern} stehen; {n|one:es leuchtet|other:sie leuchten} golden. Setze dort mit dem Bleistift {n|one:einen Punkt und probiere es aus: Prüfe|other:Punkte und probiere sie nacheinander aus: Prüfe bei jedem Feld}, ob die anderen Aussagen noch stimmen.",
         "narrow.in": "{s} kann noch auf {n} {n|one:Feld|other:Feldern} {room.in} stehen; {n|one:es leuchtet|other:sie leuchten} golden. Setze dort mit dem Bleistift {n|one:einen Punkt und probiere es aus: Prüfe|other:Punkte und probiere sie nacheinander aus: Prüfe bei jedem Feld}, ob die anderen Aussagen noch stimmen.",
-        "done": "Alle stehen richtig. Tippe auf Prüfen und benenne dann, wer allein {room.in} steht."
+        "done": "Alle stehen richtig. Tippe auf Prüfen und benenne dann, wer allein {room.in} war."
       },
       "board": {
         "accuse": "Alle stehen an ihrem Platz. Wer war {room.in} allein mit dem Opfer?",
@@ -4573,10 +4573,10 @@
         "def": "das Trapez"
       },
       "spiegelkast": {
-        "a": "ein Spiegelschrank",
-        "next": "neben einem Spiegelschrank",
-        "with": "mit einem Spiegelschrank",
-        "def": "den Spiegelschrank"
+        "a": "ein Spiegel",
+        "next": "neben einem Spiegel",
+        "with": "mit einem Spiegel",
+        "def": "den Spiegel"
       },
       "popcornkar": {
         "a": "ein Popcornwagen",

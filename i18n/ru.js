@@ -11,7 +11,7 @@
   },
 
   ui: {
-    "Crimson Ledger — Speur. Redeneer. Ontmasker.": "Crimson Ledger — Ищите. Думайте. Разоблачайте.",
+    "Crimson Ledger — Speur. Redeneer. Ontmasker.": "Crimson Ledger — Ищите. Думайте. Разоблачайте.",
     "Speur. Redeneer. Ontmasker.": "Ищите. Думайте. Разоблачайте.",
     "Een moordmysterie logic-puzzel": "Детективная логическая головоломка",
     "Begin": "Начать",
@@ -25,28 +25,28 @@
     "Basis": "Базовые очки",
     "Tijdbonus": "Бонус за время",
     "Zonder hint": "Без подсказок",
-    "In één keer": "С первой попытки",
+    "In één keer": "С первой попытки",
     "Archiefdossier": "Архивное дело",
     "Dossier {0}": "Дело № {0}",
     "Nieuwe rang: {0}": "Новое звание: {0}",
-    "Combineer {1|one:aanwijzing|other:aanwijzingen} {0} met de spelregel over het slachtoffer.": "Сопоставьте {0|one:показание|few:показание|many:показание|other:показания} {0} с правилом о жертве.",
-    "{1|one:Aanwijzing|other:Aanwijzingen} {0} {1|one:beperkt|other:beperken} de opties. Streep vakjes weg die er niet aan voldoen.": "{0|one:Показание|few:Показание|many:Показание|other:Показания} {0} {0|one:сужает|few:сужает|many:сужает|other:сужают} выбор. Вычеркните клетки, которые {0|one:ему|few:ему|many:ему|other:им} не подходят.",
-    "{1} {0|one:dag|other:dagen} streak": "{1} {0|one:день|few:дня|many:дней|other:дня} подряд",
+    "Combineer {1|one:aanwijzing|other:aanwijzingen} {0} met de spelregel over het slachtoffer.": "Сопоставьте {0|one:показание|few:показание|many:показание|other:показания} {0} с правилом о жертве.",
+    "{1|one:Aanwijzing|other:Aanwijzingen} {0} {1|one:beperkt|other:beperken} de opties. Streep vakjes weg die er niet aan voldoen.": "{0|one:Показание|few:Показание|many:Показание|other:Показания} {0} {0|one:сужает|few:сужает|many:сужает|other:сужают} выбор. Вычеркните клетки, которые {0|one:ему|few:ему|many:ему|other:им} не подходят.",
+    "{1} {0|one:dag|other:dagen} streak": "{1} {0|one:день|few:дня|many:дней|other:дня} подряд",
     "Dagelijkse zaak": "Дело дня",
     "Zaak van vandaag": "Дело на сегодня",
-    "🪙 +150 punten": "🪙 +150 очков",
+    "🪙 +150 punten": "🪙 +150 очков",
     "Speel": "Играть",
     "dagen streak": "дн. подряд",
     "Speel vandaag om je streak te houden": "Сыграйте сегодня, чтобы не прервать серию",
     "Opdrachten van vandaag": "Задания на сегодня",
     "Zaak van de week": "Дело недели",
-    "🪙 +300 punten": "🪙 +300 очков",
+    "🪙 +300 punten": "🪙 +300 очков",
     "📤 Deel resultaat": "📤 Поделиться",
     "Start": "Начать",
     "Verder met de campagne:": "Продолжить кампанию:",
     "Deel I · Zaak 1": "Часть I · Дело 1",
     "Vrij spelen": "Свободная игра",
-    "Kies zelf de wereld en het niveau": "Мир и уровень — на ваш выбор",
+    "Kies zelf de wereld en het niveau": "Мир и уровень — на ваш выбор",
     "Klassiek deductieraster": "Классическая логическая таблица",
     "📅 Dagelijkse rasterzaak ·": "📅 Таблица дня ·",
     "Vrij spel (raster)": "Свободная игра (таблица)",
@@ -56,7 +56,7 @@
     "🏅 Vitrine": "🏅 Витрина",
     "🔊 Geluid aan": "🔊 Звук вкл.",
     "🔇 Geluid uit": "🔇 Звук выкл.",
-    "Rang en onderscheidingen": "Звание и награды",
+    "Rang en onderscheidingen": "Звание и награды",
     "🎲 Vrij spelen": "🎲 Свободная игра",
     "Wereld": "Мир",
     "Moeilijkheidsgraad": "Сложность",
@@ -67,11 +67,11 @@
     "Moeilijk": "Сложный",
     "Voor speurneuzen": "Для сыщиков",
     "Start zaak": "Начать дело",
-    "Vrij spel telt mee voor je rang en punten, niet voor de campagnesterren.": "Свободная игра идёт в зачёт звания и очков, но не звёзд кампании.",
-    "Zaak — De Rode Kamer": "Дело — Красная комната",
+    "Vrij spel telt mee voor je rang en punten, niet voor de campagnesterren.": "Свободная игра идёт в зачёт звания и очков, но не звёзд кампании.",
+    "Zaak — De Rode Kamer": "Дело — Красная комната",
     "De Rode Kamer": "Красная комната",
     "Begin Onderzoek": "Начать расследование",
-    "Stap 1 van 5": "Шаг 1 из 5",
+    "Stap 1 van 5": "Шаг 1 из 5",
     "Overslaan": "Пропустить",
     "📋 Aanwijzingen": "📋 Зацепки",
     "💡 Hint": "💡 Подсказка",
@@ -79,19 +79,19 @@
     "✓ Controleer": "✓ Проверить",
     "🗺️ Wereldkaart": "🗺️ Карта мира",
     "Per zaak:": "За дело:",
-    "zonder hint én in één keer ·": "без подсказок и с первой попытки ·",
+    "zonder hint én in één keer ·": "без подсказок и с первой попытки ·",
     "één van de twee ·": "одно из двух ·",
     "opgelost": "раскрыто",
-    "Vitrine & Bureau": "Витрина и кабинет",
+    "Vitrine & Bureau": "Витрина и кабинет",
     "Onderscheidingen": "Награды",
     "Vitrine": "Витрина",
-    "Sleep een verdachte naar een vakje, of tik eerst de verdachte en dan het vakje. Alleen de moordenaar was in de kamer van het slachtoffer.": "Перетащите подозреваемого на клетку или нажмите сначала на подозреваемого, а потом на клетку. В комнате жертвы был только убийца.",
-    "Stap 1 van 4": "Шаг 1 из 4",
+    "Sleep een verdachte naar een vakje, of tik eerst de verdachte en dan het vakje. Alleen de moordenaar was in de kamer van het slachtoffer.": "Перетащите подозреваемого на клетку или нажмите сначала на подозреваемого, а потом на клетку. В комнате жертвы был только убийца.",
+    "Stap 1 van 4": "Шаг 1 из 4",
     "Alle": "Все",
     "Plaats": "Ставить",
     "Potlood": "Карандаш",
     "Gum": "Ластик",
-    "Terug": "Отмена",
+    "Terug": "Отменить",
     "Hint": "Подсказка",
     "Controleer": "Проверить",
     "Vorige verklaring": "Предыдущее показание",
@@ -99,39 +99,39 @@
     "Meer tekst of groter bord": "Больше текста или крупнее поле",
     "Verklaring afvinken": "Отметить показание",
     "Wie heeft de moord gepleegd?": "Кто совершил убийство?",
-    "← Terug naar het bord": "← Назад к полю",
+    "← Terug naar het bord": "← Назад к полю",
     "🎯 Wie liegt?": "🎯 Кто лжёт?",
     "Zaak Opgelost!": "Дело раскрыто!",
     "Zaak Gesloten": "Дело закрыто",
     "Totaal": "Итого",
-    "0 punten": "0 очков",
+    "0 punten": "0 очков",
     "Tijd": "Время",
     "Moeilijkheid": "Уровень",
     "Hints": "Подсказки",
     "Pogingen": "Попытки",
     "Hierna": "Дальше",
     "▶ Volgende zaak": "▶ Следующее дело",
-    "🔔 Herinner me morgen aan de dagelijkse zaak": "🔔 Напомнить завтра о деле дня",
-    "🗺️ Naar de kaart": "🗺️ К карте",
-    "Naar het menu": "В меню",
+    "🔔 Herinner me morgen aan de dagelijkse zaak": "🔔 Напомнить завтра о деле дня",
+    "🗺️ Naar de kaart": "🗺️ К карте",
+    "Naar het menu": "В меню",
     "Hoe Werkt Het?": "Как играть?",
     "Plaats de verdachten": "Расставьте подозреваемых",
-    "Sleep een verdachte naar een vakje op de plattegrond, of tik eerst de verdachte en dan het vakje. Sleep iemand van het bord af om hem weg te halen. Twijfel je? Met": "Перетащите подозреваемого на клетку плана или нажмите сначала на подозреваемого, а потом на клетку. Чтобы убрать кого-то, перетащите его за пределы поля. Сомневаетесь? Выберите",
-    "zet je een stipje op vakjes waar iemand zou kúnnen staan;": "и отмечайте точкой клетки, где кто-то мог бы стоять;",
-    "haalt stipjes en verdachten weer weg.": "убирает точки и подозреваемых.",
+    "Sleep een verdachte naar een vakje op de plattegrond, of tik eerst de verdachte en dan het vakje. Sleep iemand van het bord af om hem weg te halen. Twijfel je? Met": "Перетащите подозреваемого на клетку плана или нажмите сначала на подозреваемого, а потом на клетку. Чтобы убрать кого-то, перетащите его за пределы поля. Сомневаетесь? Выберите",
+    "zet je een stipje op vakjes waar iemand zou kúnnen staan;": "и отмечайте точкой клетки, где кто-то мог бы стоять;",
+    "haalt stipjes en verdachten weer weg.": "убирает точки и подозреваемых.",
     "Lees de verklaringen": "Прочитайте показания",
-    "Elke verdachte vertelt waar hij stond. Tik op een verklaring: de kamer of het meubel licht op in de plattegrond. Tik op een meubel om te zien wat het is. Klopt een verklaring met wat je hebt neergezet, dan wordt de kaart groen; klopt hij niet, dan wordt hij rood. \"In een hoek\" is een hoekvakje, \"tegen een muur\" raakt een muur maar is geen hoek.": "Каждый подозреваемый рассказывает, где стоял. Нажмите на показание — комната или предмет подсветится на плане. Нажмите на предмет, чтобы узнать, что это. Если показание сходится с тем, как вы расставили подозреваемых, карточка станет зелёной; если нет — красной. «В углу» — это угловая клетка, «у стены» — клетка касается стены, но это не угол.",
+    "Elke verdachte vertelt waar hij stond. Tik op een verklaring: de kamer of het meubel licht op in de plattegrond. Tik op een meubel om te zien wat het is. Klopt een verklaring met wat je hebt neergezet, dan wordt de kaart groen; klopt hij niet, dan wordt hij rood. \"In een hoek\" is een hoekvakje, \"tegen een muur\" raakt een muur maar is geen hoek.": "Каждый подозреваемый рассказывает, где стоял. Нажмите на показание — комната или предмет подсветится на плане. Нажмите на предмет, чтобы узнать, что это. Если показание сходится с тем, как вы расставили подозреваемых, карточка станет зелёной; если нет — красной. «В углу» — это угловая клетка, «у стены» — клетка касается стены, но это не угол.",
     "De spelregel": "Правило",
-    "Alleen de moordenaar was in de kamer van het slachtoffer. Niemand anders.": "В комнате жертвы был только убийца. Больше никто.",
+    "Alleen de moordenaar was in de kamer van het slachtoffer. Niemand anders.": "В комнате жертвы был только убийца. Больше никто.",
     "Wijs de moordenaar aan": "Укажите убийцу",
-    "Staat iedereen goed? Dan kies je wie alleen was met het slachtoffer.": "Все на своих местах? Тогда выберите, кто был наедине с жертвой.",
+    "Staat iedereen goed? Dan kies je wie alleen was met het slachtoffer.": "Все на своих местах? Тогда выберите, кто был наедине с жертвой.",
     "Klassiek raster": "Классическая таблица",
     "Lees de aanwijzingen": "Прочитайте зацепки",
-    "Elke aanwijzing vertelt je iets over wie, wat en waar.": "Каждая зацепка что-то говорит о том, кто, чем и где.",
+    "Elke aanwijzing vertelt je iets over wie, wat en waar.": "Каждая зацепка что-то говорит о том, кто, чем и где.",
     "Vul het raster in": "Заполните таблицу",
     "Klik op een cel om te wisselen: leeg → ✗ (uitgesloten) → ✓ (bevestigd).": "Нажмите на ячейку, чтобы переключить: пусто → ✗ (исключено) → ✓ (подтверждено).",
     "Gebruik logica": "Рассуждайте",
-    "Als een rij maar één optie heeft, is dat de match. Kruis-verwijs tussen tabellen!": "Если в строке остался один вариант, это и есть ответ. Сверяйте таблицы между собой!",
+    "Als een rij maar één optie heeft, is dat de match. Kruis-verwijs tussen tabellen!": "Если в строке остался один вариант, это и есть ответ. Сверяйте таблицы между собой!",
     "Controleer je antwoord": "Проверьте ответ",
     "Als je denkt dat je alles hebt, klik op \"Controleer\".": "Когда решите, что всё готово, нажмите «Проверить».",
     "Begrepen!": "Понятно!",
@@ -146,12 +146,12 @@
     "Aan de slag": "За работу",
     "Nieuw deel": "Новая часть",
     "Deel voltooid": "Часть пройдена",
-    "Nieuw in dit deel": "Новое в этой части",
+    "Nieuw in dit deel": "Новое в этой части",
     "Begrepen": "Понятно",
-    "Open de bewijskist": "Открыть сундук с уликами",
+    "Open de bewijskist": "Открыть сундук с уликами",
     "Instellingen": "Настройки",
-    "Privacy": "Конфиденциальность",
-    "{0} dagen op rij! Cadeau: {1} staat nu voor je open.": "{0} {0|one:день|few:дня|many:дней|other:дня} подряд! Подарок: мир «{1}» теперь открыт.",
+    "Privacy": "Приватность",
+    "{0} dagen op rij! Cadeau: {1} staat nu voor je open.": "{0} {0|one:день|few:дня|many:дней|other:дня} подряд! Подарок: мир «{1}» теперь открыт.",
     "📊 Anonieme statistieken": "📊 Анонимная статистика",
     "Privacyverklaring ↗": "Политика ↗",
     "Hulp": "Помощь",
@@ -164,16 +164,16 @@
     "Herstellen": "Восстановить",
     "Alle voortgang wissen": "Стереть весь прогресс",
     "Wissen": "Стереть",
-    "· gemaakt in Nederland": "· сделано в Нидерландах",
+    "· gemaakt in Nederland": "· сделано в Нидерландах",
     "🌍 Taal": "🌍 Язык",
     "Rij {0}, kolom {1}, {2}": "Ряд {0}, столбец {1}, {2}",
-    "Alles, voor altijd": "Всё и навсегда",
+    "Alles, voor altijd": "Всё и навсегда",
     "🗺️ Alle werelden, ook de werelden die nog komen": "🗺️ Все миры, включая будущие",
     "💡 Onbeperkt hints": "💡 Безлимитные подсказки",
-    "🎨 Alle bordthema's en portretlijsten": "🎨 Все темы поля и рамки портретов",
-    "🧊 Twee extra vrije dagen op voorraad": "🧊 Два дополнительных отгула в запасе",
+    "🎨 Alle bordthema's en portretlijsten": "🎨 Все темы поля и рамки портретов",
+    "🧊 Twee extra vrije dagen op voorraad": "🧊 Два дополнительных отгула в запасе",
     "Crimson Pass · € 4,99": "Crimson Pass · 4,99 €",
-    "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "Разовые покупки через ваш аккаунт в магазине приложений, без подписки. «Поместье», «Пиратский корабль», дело дня, дело недели и архив всегда бесплатны.",
+    "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "Разовые покупки через ваш аккаунт в магазине приложений, без подписки. «Поместье», «Пиратский корабль», дело дня, дело недели и архив всегда бесплатны.",
     "Onderscheiding verdiend!": "Награда получена!",
     "Kon geen plattegrond genereren, probeer opnieuw.": "Не удалось построить план. Попробуйте ещё раз.",
     "Alles opgelost": "Всё раскрыто",
@@ -182,7 +182,7 @@
     "{0} · Zaak {1}": "{0} · Дело {1}",
     "{0} van {1} zaken opgelost": "Раскрыто дел: {0} из {1}",
     "{0} van {1} zaken · ★ {2}/{3}": "Дел: {0} из {1} · ★ {2}/{3}",
-    "🔒 Deze wereld hoort bij de Crimson Pass, of koop hem los voor {0}. De dagelijkse zaak en de zaak van de week spelen hier gratis.": "🔒 Этот мир входит в Crimson Pass, а ещё его можно купить отдельно за {0}. Дело дня и дело недели здесь бесплатны.",
+    "🔒 Deze wereld hoort bij de Crimson Pass, of koop hem los voor {0}. De dagelijkse zaak en de zaak van de week spelen hier gratis.": "🔒 Этот мир входит в Crimson Pass, а ещё его можно купить отдельно за {0}. Дело дня и дело недели здесь бесплатны.",
     "dag": "день",
     "dagen": "дней",
     "🔒 Pass": "🔒 Pass",
@@ -191,67 +191,67 @@
     "Vluchtige blik": "Беглый взгляд",
     "geopend": "открыт",
     "Open mij!": "Откройте!",
-    "bewijskist": "сундук с уликами",
+    "bewijskist": "сундук с уликами",
     "Minigame {0}": "Мини-игра {0}",
-    "Bewijskist": "Сундук с уликами",
+    "Bewijskist": "Сундук с уликами",
     "Los eerst zaak {0} op, dan gaat deze minigame open.": "Сначала раскройте дело {0}, тогда откроется эта мини-игра.",
-    "Maak eerst alle acht zaken van dit deel af, dan gaat de bewijskist open.": "Сначала раскройте все восемь дел этой части, тогда откроется сундук с уликами.",
-    "Deze kist is al open. De stempel staat in de vitrine.": "Этот сундук уже открыт. Штамп лежит в витрине.",
+    "Maak eerst alle acht zaken van dit deel af, dan gaat de bewijskist open.": "Сначала раскройте все восемь дел этой части, тогда откроется сундук с уликами.",
+    "Deze kist is al open. De stempel staat in de vitrine.": "Этот сундук уже открыт. Штамп лежит в витрине.",
     "▶ Speel {0}": "▶ Играть: {0}",
     "zaak {0} · {1}": "дело {0} · {1}",
-    "{0} hoort bij de Crimson Pass. Ontgrendel de wereld in de winkel, of speel hier de dagelijkse zaak.": "{0} входит в Crimson Pass. Откройте этот мир в магазине или сыграйте здесь дело дня.",
-    "Los eerst {0} zaken op (vrij spel of dagelijks) om {1} te openen.": "Чтобы открыть мир «{1}», сначала раскройте {0} {0|one:дело|few:дела|many:дел|other:дела} (свободная игра или дело дня).",
-    "Het archief opent na {0} campagnezaken.": "Архив откроется после {0} {0|one:дела|other:дел} кампании.",
+    "{0} hoort bij de Crimson Pass. Ontgrendel de wereld in de winkel, of speel hier de dagelijkse zaak.": "{0} входит в Crimson Pass. Откройте этот мир в магазине или сыграйте здесь дело дня.",
+    "Los eerst {0} zaken op (vrij spel of dagelijks) om {1} te openen.": "Чтобы открыть мир «{1}», сначала раскройте {0} {0|one:дело|few:дела|many:дел|other:дела} (свободная игра или дело дня).",
+    "Het archief opent na {0} campagnezaken.": "Архив откроется после {0} {0|one:дела|other:дел} кампании.",
     "Los eerst het vorige dossier op.": "Сначала раскройте предыдущее дело.",
     "Maak eerst het vorige deel af.": "Сначала пройдите предыдущую часть.",
     "Los eerst zaak {0} op.": "Сначала раскройте дело {0}.",
     "Zaak {0}: {1}": "Дело {0}: {1}",
     "Zaak {0}: ": "Дело {0}: ",
-    "★★★ = zonder hint én in één keer goed · ★★ = één van de twee · ★ = opgelost": "★★★ = без подсказок и с первой попытки · ★★ = одно из двух · ★ = раскрыто",
+    "★★★ = zonder hint én in één keer goed · ★★ = één van de twee · ★ = opgelost": "★★★ = без подсказок и с первой попытки · ★★ = одно из двух · ★ = раскрыто",
     "Beste score:": "Лучший результат:",
     "Speel opnieuw": "Сыграть снова",
     "Deze zaak kon niet geladen worden.": "Не удалось загрузить это дело.",
     "✨ Nieuwe wereld": "✨ Новый мир",
     "Nieuw deel · {0} van {1}": "Новая часть · {0} из {1}",
-    "{0} verdachten, {1} delen, {2} zaken. Halverwege elk deel een minigame, aan het eind een bewijskist.": "{0} {0|one:подозреваемый|few:подозреваемых|many:подозреваемых|other:подозреваемого}, {1} {1|one:часть|few:части|many:частей|other:части}, {2} {2|one:дело|few:дела|many:дел|other:дела}. В середине каждой части — мини-игра, в конце — сундук с уликами.",
-    "Halverwege wacht een minigame, aan het eind een bewijskist: punten, een vrije dag en een stempel.": "В середине ждёт мини-игра, в конце — сундук с уликами: очки, отгул и штамп.",
+    "{0} verdachten, {1} delen, {2} zaken. Halverwege elk deel een minigame, aan het eind een bewijskist.": "{0} {0|one:подозреваемый|few:подозреваемых|many:подозреваемых|other:подозреваемого}, {1} {1|one:часть|few:части|many:частей|other:части}, {2} {2|one:дело|few:дела|many:дел|other:дела}. В середине каждой части — мини-игра, в конце — сундук с уликами.",
+    "Halverwege wacht een minigame, aan het eind een bewijskist: punten, een vrije dag en een stempel.": "В середине ждёт мини-игра, в конце — сундук с уликами: очки, отгул и штамп.",
     "Begin {0}": "Начать: {0}",
     "🏆 Wereld voltooid!": "🏆 Мир пройден!",
     "✓ Deel voltooid": "✓ Часть пройдена",
     "Deze kist is al open.": "Этот сундук уже открыт.",
-    "Alle {0} zaken van {1} opgelost. Tik op de kist.": "Раскрыты все дела мира «{1}» — {0} из {0}. Нажмите на сундук.",
-    "Alle acht zaken opgelost. Tik op de bewijskist.": "Все восемь дел раскрыты. Нажмите на сундук с уликами.",
-    "🪙 +{0} punten": "🪙 +{0} {0|one:очко|few:очка|many:очков|other:очка}",
+    "Alle {0} zaken van {1} opgelost. Tik op de kist.": "Раскрыты все дела мира «{1}» — {0} из {0}. Нажмите на сундук.",
+    "Alle acht zaken opgelost. Tik op de bewijskist.": "Все восемь дел раскрыты. Нажмите на сундук с уликами.",
+    "🪙 +{0} punten": "🪙 +{0} {0|one:очко|few:очка|many:очков|other:очка}",
     "🧊 Een vrije dag": "🧊 Отгул",
     "{0} Stempel: {1}": "{0} Штамп: {1}",
     "Al geopend": "Уже открыт",
     "{0} is helemaal opgelost. Wat een speurder.": "Мир «{0}» пройден полностью. Вот это сыщик.",
-    "Goed werk, Rekruut. Dit is van jou.": "Хорошая работа, курсант. Это ваше.",
-    "Je gratis hints voor vandaag zijn op ({0} per dag). Morgen krijg je er weer {1}, of kies hieronder.": "Лимит бесплатных подсказок на сегодня исчерпан ({0} в день). Завтра вы снова получите {1} {1|one:подсказку|few:подсказки|many:подсказок|other:подсказки} — или выберите вариант ниже.",
-    "{0} hoort bij de Crimson Pass. Je kunt de wereld ook los kopen.": "{0} входит в Crimson Pass. Этот мир можно купить и отдельно.",
-    "Bordthema's en portretlijsten horen bij de Crimson Pass, of koop ze los.": "Темы поля и рамки портретов входят в Crimson Pass, их можно купить и отдельно.",
-    "✓ Je hebt de Crimson Pass": "✓ У вас есть Crimson Pass",
+    "Goed werk, Rekruut. Dit is van jou.": "Хорошая работа. Это вам.",
+    "Je gratis hints voor vandaag zijn op ({0} per dag). Morgen krijg je er weer {1}, of kies hieronder.": "Лимит бесплатных подсказок на сегодня исчерпан ({0} в день). Завтра вы снова получите {1} {1|one:подсказку|few:подсказки|many:подсказок|other:подсказки} — или выберите вариант ниже.",
+    "{0} hoort bij de Crimson Pass. Je kunt de wereld ook los kopen.": "{0} входит в Crimson Pass. Этот мир можно купить и отдельно.",
+    "Bordthema's en portretlijsten horen bij de Crimson Pass, of koop ze los.": "Темы поля и рамки портретов входят в Crimson Pass, их можно купить и отдельно.",
+    "✓ Je hebt de Crimson Pass": "✓ У вас есть Crimson Pass",
     "Crimson Pass · {0}": "Crimson Pass · {0}",
     "Los te koop": "По отдельности",
     "Werelden": "Миры",
-    "{0} hints": "{0} {0|one:подсказка|few:подсказки|many:подсказок|other:подсказки}",
-    "Met de Pass zijn hints onbeperkt.": "С Pass подсказки безлимитные.",
-    "Je hebt er nu {0}. Elke dag krijg je {1} gratis.": "Сейчас у вас {0} {0|one:подсказка|few:подсказки|many:подсказок|other:подсказки}. Каждый день вы получаете {1} бесплатно.",
-    "Bordthema's en lijsten": "Темы поля и рамки",
-    "Nacht, sepia en kraftpapier; gouden, zilveren en crimson lijst.": "Ночь, сепия и крафт-бумага; золотая, серебряная и багровая рамка.",
-    "{0} zaken in {1} delen · {2}": "{0} {0|one:дело|few:дела|many:дел|other:дела} в {1} {1|one:части|other:частях} · {2}",
+    "{0} hints": "{0} {0|one:подсказка|few:подсказки|many:подсказок|other:подсказки}",
+    "Met de Pass zijn hints onbeperkt.": "С Pass подсказки безлимитные.",
+    "Je hebt er nu {0}. Elke dag krijg je {1} gratis.": "Сейчас у вас {0} {0|one:подсказка|few:подсказки|many:подсказок|other:подсказки}. Каждый день вы получаете {1} бесплатно.",
+    "Bordthema's en lijsten": "Темы поля и рамки",
+    "Nacht, sepia en kraftpapier; gouden, zilveren en crimson lijst.": "Ночь, сепия и крафт-бумага; золотая, серебряная и багровая рамки.",
+    "{0} zaken in {1} delen · {2}": "{0} {0|one:дело|few:дела|many:дел|other:дела} в {1} {1|one:части|other:частях} · {2}",
     "✓ Van jou": "✓ Куплено",
-    "Aankopen werken alleen in de app uit de App Store of Google Play.": "Покупки работают только в приложении из App Store или Google Play.",
-    "{0} hints erbij. Veel speurplezier!": "+{0} {0|one:подсказка|few:подсказки|many:подсказок|other:подсказки}. Удачного расследования!",
-    "Welkom bij de Crimson Pass: alles staat open.": "Добро пожаловать в Crimson Pass: теперь открыто всё.",
+    "Aankopen werken alleen in de app uit de App Store of Google Play.": "Покупки работают только в приложении из App Store или Google Play.",
+    "{0} hints erbij. Veel speurplezier!": "+{0} {0|one:подсказка|few:подсказки|many:подсказок|other:подсказки}. Удачного расследования!",
+    "Welkom bij de Crimson Pass: alles staat open.": "Добро пожаловать в Crimson Pass: теперь открыто всё.",
     "Gekocht! Veel speurplezier.": "Куплено! Удачного расследования.",
     "De aankoop wacht op goedkeuring (bijvoorbeeld van een ouder).": "Покупка ждёт подтверждения (например, от родителя).",
     "De aankoop is niet gelukt. Probeer het later nog eens.": "Покупка не удалась. Попробуйте позже.",
-    "Herstellen werkt alleen in de app uit de App Store of Google Play.": "Восстановление работает только в приложении из App Store или Google Play.",
+    "Herstellen werkt alleen in de app uit de App Store of Google Play.": "Восстановление работает только в приложении из App Store или Google Play.",
     "Je aankopen zijn hersteld.": "Покупки восстановлены.",
     "Geen eerdere aankopen gevonden voor dit account.": "Для этого аккаунта покупок не найдено.",
-    "Bordthema en lijst om je rang": "Тема поля и рамка вокруг звания",
-    "Bordthema's en lijsten zitten in de Crimson Pass": "Темы поля и рамки входят в Crimson Pass",
+    "Bordthema en lijst om je rang": "Тема поля и рамка вокруг звания",
+    "Bordthema's en lijsten zitten in de Crimson Pass": "Темы поля и рамки входят в Crimson Pass",
     "Papier": "Бумага",
     "Nacht": "Ночь",
     "Sepia": "Сепия",
@@ -265,19 +265,19 @@
     "✓ Vandaag opgelost": "✓ Раскрыто сегодня",
     "Nog een zaak": "Ещё дело",
     "Opgelost! Week {0} · {1} {2}. Volgende week ligt er een nieuwe zaak.": "Раскрыто! Неделя {0} · {1} {2}. На следующей неделе будет новое дело.",
-    "Week {0} · {1} {2} · moeilijk. Elke week één speciale zaak; iedereen speelt dezelfde. Deel je resultaat met andere speurders.": "Неделя {0} · {1} {2} · сложно. Одно особое дело в неделю, у всех одно и то же. Поделитесь результатом с другими сыщиками.",
+    "Week {0} · {1} {2} · moeilijk. Elke week één speciale zaak; iedereen speelt dezelfde. Deel je resultaat met andere speurders.": "Неделя {0} · {1} {2} · сложный уровень. Одно особое дело в неделю, у всех одно и то же. Поделитесь результатом с другими сыщиками.",
     "✓ Opgelost": "✓ Раскрыто",
     "Nog eens": "Ещё раз",
     "Vandaag gespeeld. Tot morgen!": "Сегодня сыграно. До завтра!",
-    "Nog niet gespeeld. Een vrije dag vangt het op, maar liever niet.": "Сегодня ещё не сыграно. Отгул выручит, но лучше не надо.",
-    "Je streak van {0} dagen loopt vanavond af. Speel één zaak.": "Ваша серия из {0} {0|one:дня|other:дней} сегодня оборвётся. Сыграйте одно дело.",
-    "Speel vandaag om je streak van {0} dagen te houden": "Сыграйте сегодня, чтобы сохранить серию из {0} {0|one:дня|other:дней}",
-    "Mis je een dag, dan vult een vrije dag het gat en blijft je streak staan.": "Если пропустите день, отгул закроет пробел, и серия не прервётся.",
+    "Nog niet gespeeld. Een vrije dag vangt het op, maar liever niet.": "Сегодня ещё не сыграно. Отгул выручит, но лучше не надо.",
+    "Je streak van {0} dagen loopt vanavond af. Speel één zaak.": "Ваша серия из {0} {0|one:дня|other:дней} сегодня оборвётся. Сыграйте одно дело.",
+    "Speel vandaag om je streak van {0} dagen te houden": "Сыграйте сегодня, чтобы сохранить серию из {0} {0|one:дня|other:дней}",
+    "Mis je een dag, dan vult een vrije dag het gat en blijft je streak staan.": "Если пропустите день, отгул закроет пробел, и серия не прервётся.",
     "🎁 Alles klaar! Tot morgen.": "🎁 Всё готово! До завтра.",
-    "🎁 Alle drie: +{0} punten en een vrije dag": "🎁 Все три: +{0} {0|one:очко|few:очка|many:очков|other:очка} и отгул",
+    "🎁 Alle drie: +{0} punten en een vrije dag": "🎁 Все три: +{0} {0|one:очко|few:очка|many:очков|other:очка} и отгул",
     "+{0}": "+{0}",
-    "🪙 {0} punten": "🪙 {0} {0|one:очко|few:очка|many:очков|other:очка}",
-    " · 🪙 {0} punten": " · 🪙 {0} {0|one:очко|few:очка|many:очков|other:очка}",
+    "🪙 {0} punten": "🪙 {0} {0|one:очко|few:очка|many:очков|other:очка}",
+    " · 🪙 {0} punten": " · 🪙 {0} {0|one:очко|few:очка|many:очков|other:очка}",
     "Medailleoverzicht": "Медали",
     "{0} van de {1} behaald": "Получено: {0} из {1}",
     "Behaald op {0}": "Получена {0}",
@@ -285,15 +285,15 @@
     "{0} van de {1} verzameld": "Собрано: {0} из {1}",
     "Gesloten": "Не найдена",
     "Stempels": "Штампы",
-    "Nieuwe trofee: “{0}” ontgrendeld.": "Новый трофей: «{0}».",
-    "Meldingen staan uit. Zet ze aan bij Instellingen › Crimson Ledger.": "Уведомления выключены. Включите их в Настройках › Crimson Ledger.",
-    "Je dagelijkse zaak wacht. Houd je streak van {0} dagen vast.": "Дело дня ждёт. Не прерывайте серию из {0} {0|one:дня|other:дней}.",
-    "Je streak van {0} dagen loopt vanavond af. Eén zaak is genoeg.": "Ваша серия из {0} {0|one:дня|other:дней} сегодня оборвётся. Хватит одного дела.",
-    "Er ligt een nieuwe zaak op je bureau. Wie was alleen met het slachtoffer?": "На вашем столе новое дело. Кто был наедине с жертвой?",
+    "Nieuwe trofee: “{0}” ontgrendeld.": "Новый трофей: {0}.",
+    "Meldingen staan uit. Zet ze aan bij Instellingen › Crimson Ledger.": "Уведомления выключены. Включите их в Настройках › Crimson Ledger.",
+    "Je dagelijkse zaak wacht. Houd je streak van {0} dagen vast.": "Дело дня ждёт. Не прерывайте серию из {0} {0|one:дня|other:дней}.",
+    "Je streak van {0} dagen loopt vanavond af. Eén zaak is genoeg.": "Ваша серия из {0} {0|one:дня|other:дней} сегодня оборвётся. Хватит одного дела.",
+    "Er ligt een nieuwe zaak op je bureau. Wie was alleen met het slachtoffer?": "На вашем столе новое дело. Кто был наедине с жертвой?",
     "Zeker? Tik nogmaals": "Точно? Нажмите ещё раз",
-    "Ingesteld: elke dag om 18:30 een herinnering.": "Готово: напоминание каждый день в 18:30.",
+    "Ingesteld: elke dag om 18:30 een herinnering.": "Готово: напоминание каждый день в 18:30.",
     "Alle voortgang is gewist.": "Весь прогресс стёрт.",
-    "{0} verdachten · {1} bij {2} vakjes": "{0} {0|one:подозреваемый|few:подозреваемых|many:подозреваемых|other:подозреваемого} · поле {1} × {2}",
+    "{0} verdachten · {1} bij {2} vakjes": "{0} {0|one:подозреваемый|few:подозреваемых|many:подозреваемых|other:подозреваемого} · поле {1} × {2}",
     "hoogste rang bereikt": "высшее звание получено",
     "Hoogste rang bereikt": "Высшее звание получено",
     "Vandaag opgelost ✓": "Сегодня раскрыто ✓",
@@ -301,89 +301,89 @@
     "Nog geen zaak opgelost. Vandaag de eerste?": "Пока ни одного раскрытого дела. Может, сегодня первое?",
     " · {0} zonder hint": " · без подсказок: {0}",
     " · beste: {0}": " · лучшее: {0}",
-    "Resultaat gekopieerd naar klembord!": "Результат скопирован в буфер обмена!",
-    "Delen wordt niet ondersteund in deze browser.": "В этом браузере нельзя поделиться результатом.",
-    "Vrije dag gebruikt: je streak van {0} dagen is gered.": "Отгул использован: ваша серия из {0} {0|one:дня|other:дней} спасена.",
-    "{0} dagen op rij! Je hebt een vrije dag verdiend voor als je een dag mist.": "{0} {0|one:день|few:дня|many:дней|other:дня} подряд! Вы заработали отгул на случай, если пропустите день.",
-    "Opdracht klaar: {0} (+{1} punten)": "Задание выполнено: {0} (+{1} {1|one:очко|few:очка|many:очков|other:очка})",
-    "Alle opdrachten klaar: +{0} punten en een vrije dag": "Все задания выполнены: +{0} {0|one:очко|few:очка|many:очков|other:очка} и отгул",
-    "🔥 {0} dagen streak!": "🔥 {0} {0|one:день|few:дня|many:дней|other:дня} подряд!",
+    "Resultaat gekopieerd naar klembord!": "Результат скопирован в буфер обмена!",
+    "Delen wordt niet ondersteund in deze browser.": "В этом браузере нельзя поделиться результатом.",
+    "Vrije dag gebruikt: je streak van {0} dagen is gered.": "Отгул использован: ваша серия из {0} {0|one:дня|other:дней} спасена.",
+    "{0} dagen op rij! Je hebt een vrije dag verdiend voor als je een dag mist.": "{0} {0|one:день|few:дня|many:дней|other:дня} подряд! Вы заработали отгул на случай, если пропустите день.",
+    "Opdracht klaar: {0} (+{1} punten)": "Задание выполнено: {0} (+{1} {1|one:очко|few:очка|many:очков|other:очка})",
+    "Alle opdrachten klaar: +{0} punten en een vrije dag": "Все задания выполнены: +{0} {0|one:очко|few:очка|many:очков|other:очка} и отгул",
+    "🔥 {0} dagen streak!": "🔥 {0} {0|one:день|few:дня|many:дней|other:дня} подряд!",
     "🗓️ Week {0}": "🗓️ Неделя {0}",
     "📁 {0}": "📁 {0}",
     "📖 {0}. {1}": "📖 {0}. {1}",
     "Stap {0} van {1}": "Шаг {0} из {1}",
-    "In deze zaak zegt {0}: “{1}”": "{0} в этом деле говорит: «{1}»",
-    "✓ Klopt": "✓ Сходится",
-    "✗ Klopt niet": "✗ Не сходится",
+    "In deze zaak zegt {0}: “{1}”": "{0} в этом деле говорит: «{1}»",
+    "✓ Klopt": "✓ Верно",
+    "✗ Klopt niet": "✗ Неверно",
     "Hint {0} · deze zaak levert nu maximaal ★★ op": "Подсказка {0} · теперь за это дело не больше ★★",
-    "Potlood: zet een stipje op vakjes waar iemand zou kúnnen staan. Met Plaats zet je iemand echt neer, met Gum haal je het weer weg.": "Карандаш: отмечайте точкой клетки, где кто-то мог бы стоять. «Ставить» — поставить подозреваемого по-настоящему, «Ластик» — убрать.",
+    "Potlood: zet een stipje op vakjes waar iemand zou kúnnen staan. Met Plaats zet je iemand echt neer, met Gum haal je het weer weg.": "Карандаш: отмечайте точкой клетки, где кто-то мог бы стоять. «Ставить» — поставить подозреваемого по-настоящему, «Ластик» — убрать.",
     "Bijna! Nog één verdachte staat verkeerd. {0} van de {1} staan al goed.": "Почти! Один подозреваемый стоит не там. На своих местах уже {0} из {1}.",
     "{0} verdachten staan verkeerd, {1} staan goed. Gebruik een hint als je vastzit.": "Не на своих местах: {0}, на своих: {1}. Если застряли, возьмите подсказку.",
     "Goed gedaan!": "Отлично!",
-    "Zo werkt elke zaak: plaats iedereen met de verklaringen, en wijs dan aan wie alleen was met het slachtoffer. Tijd voor een echte zaak.": "Так устроено каждое дело: расставьте всех по показаниям, а затем укажите, кто был наедине с жертвой. Пора браться за настоящее дело.",
-    "{0} punten": "{0} {0|one:очко|few:очка|many:очков|other:очка}",
+    "Zo werkt elke zaak: plaats iedereen met de verklaringen, en wijs dan aan wie alleen was met het slachtoffer. Tijd voor een echte zaak.": "Так устроено каждое дело: расставьте всех по показаниям, а затем укажите, кто был наедине с жертвой. Пора браться за настоящее дело.",
+    "{0} punten": "{0} {0|one:очко|few:очка|many:очков|other:очка}",
     "Van Dam merkt op": "Ван Дам замечает",
     "Waar iedereen stond": "Кто где стоял",
     "▶ Volgende zaak: {0}": "▶ Следующее дело: {0}",
     "{0}. {1}": "{0}. {1}",
     "af!": "готово!",
-    "nog 1 zaak": "ещё 1 дело",
-    "nog {0} zaken": "ещё {0} {0|one:дело|few:дела|many:дел|other:дела}",
+    "nog 1 zaak": "ещё 1 дело",
+    "nog {0} zaken": "ещё {0} {0|one:дело|few:дела|many:дел|other:дела}",
     "▶ Nog een zaak · {0}": "▶ Ещё дело · {0}",
     " punten": " оч.",
     " · Zaak van de week: {0}": " · Дело недели: {0}",
     " · Dag #{0}": " · День #{0}",
     "Dagelijkse zaak ": "Дело дня ",
     "👁️ Vluchtige blik": "👁️ Беглый взгляд",
-    "Ronde {0}: iedereen staat op zijn plek. Wie liegt?": "Раунд {0}: все на своих местах. Кто лжёт?",
+    "Ronde {0}: iedereen staat op zijn plek. Wie liegt?": "Раунд {0}: все на местах. Кто лжёт?",
     "Ronde {0}: kijk goed waar iedereen staat…": "Раунд {0}: запомните, кто где стоит…",
     "👁️ Onthoud het… ": "👁️ Запоминайте… ",
-    "Waar stond {0}?": "{0} — где {0|m:он стоял|f:она стояла}?",
-    "Goed gezien! +{0} punten": "Верно! +{0} {0|one:очко|few:очка|many:очков|other:очка}",
+    "Waar stond {0}?": "{0} — где {0|m:он стоял|f:она стояла}?",
+    "Goed gezien! +{0} punten": "Верно! +{0} {0|one:очко|few:очка|many:очков|other:очка}",
     "Nee: {0} loog.": "Нет. {0} {0|m:лгал|f:лгала}.",
     "Nee, daar stond {0}.": "Нет. {0} {0|m:стоял|f:стояла} вот здесь.",
     "Scherp gezien!": "Зоркий глаз!",
     "Bijna allemaal": "Почти все",
-    "Volgende keer beter": "В следующий раз получится",
+    "Volgende keer beter": "В следующий раз получится",
     "{0} van de {1} goed": "Верно: {0} из {1}",
-    " · <b>+{0} punten</b>": " · <b>+{0} {0|one:очко|few:очка|many:очков|other:очка}</b>",
-    " (eerste keer alles goed: bonus!)": " (всё верно с первого раза: бонус!)",
+    " · <b>+{0} punten</b>": " · <b>+{0} {0|one:очко|few:очка|many:очков|other:очка}</b>",
+    " (eerste keer alles goed: bonus!)": " (всё верно с первого раза: бонус!)",
     "🔁 Nog een keer": "🔁 Ещё раз",
-    "🗺️ Terug naar de kaart": "🗺️ Назад к карте",
-    "Je hebt je nieuwe rang verdiend, {0}. Ik zou zeggen: op naar de volgende zaak.": "{0}, вы заслужили новое звание. Я бы сказал: вперёд, к следующему делу.",
-    "De zaak van de week is gesloten, {0}. Deel het resultaat, dan weet de rest van het bureau het ook.": "{0}, дело недели закрыто. Поделитесь результатом — пусть знает и весь отдел.",
-    "Uitstekend speurwerk, {0}. Geen hint, geen fout. Zo hoort het.": "{0}, отличная сыскная работа. Ни подсказки, ни ошибки. Так и надо.",
-    "Vlekkeloos, {0}. Ik had het zelf niet beter gekund.": "{0}, ни единой помарки. Я бы и сам не справился лучше.",
-    "Drie sterren. De dader had geen schijn van kans, {0}.": "Три звезды. {0}, у преступника не было ни единого шанса.",
-    "Zonder hint, {0}. Volgende keer ook in één keer?": "{0}, и без единой подсказки. В следующий раз — ещё и с первой попытки?",
+    "🗺️ Terug naar de kaart": "🗺️ Назад к карте",
+    "Je hebt je nieuwe rang verdiend, {0}. Ik zou zeggen: op naar de volgende zaak.": "{0}, вы заслужили новое звание. Я бы сказал: вперёд, к следующему делу.",
+    "De zaak van de week is gesloten, {0}. Deel het resultaat, dan weet de rest van het bureau het ook.": "{0}, дело недели закрыто. Поделитесь результатом — пусть знает и весь отдел.",
+    "Uitstekend speurwerk, {0}. Geen hint, geen fout. Zo hoort het.": "{0}, отличная сыскная работа. Ни подсказки, ни ошибки. Так и надо.",
+    "Vlekkeloos, {0}. Ik had het zelf niet beter gekund.": "{0}, ни единой помарки. Я бы и сам не справился лучше.",
+    "Drie sterren. De dader had geen schijn van kans, {0}.": "Три звезды. {0}, у преступника не было ни единого шанса.",
+    "Zonder hint, {0}. Volgende keer ook in één keer?": "{0}, и без единой подсказки. В следующий раз — ещё и с первой попытки?",
     "Goed gezien, {0}. Eén foute gok, maar je hebt hem.": "{0}, хорошо подмечено. Одна неверная догадка, но преступник пойман.",
-    "In één keer goed, {0}. Probeer het de volgende keer eens zonder hint.": "{0}, с первой попытки. В следующий раз попробуйте без подсказок.",
-    "Opgelost, {0}. Hints zijn er om te gebruiken, maar kijk of je ze de volgende keer kunt missen.": "{0}, дело раскрыто. Подсказки для того и нужны, но в следующий раз попробуйте обойтись без них.",
-    "De zaak is rond, {0}. Lees de verklaringen twee keer, dan heb je de hints niet nodig.": "{0}, дело закрыто. Читайте показания дважды — и подсказки не понадобятся.",
+    "In één keer goed, {0}. Probeer het de volgende keer eens zonder hint.": "{0}, верно с первой попытки. В следующий раз попробуйте без подсказок.",
+    "Opgelost, {0}. Hints zijn er om te gebruiken, maar kijk of je ze de volgende keer kunt missen.": "{0}, дело раскрыто. Подсказки для того и нужны, но в следующий раз попробуйте обойтись без них.",
+    "De zaak is rond, {0}. Lees de verklaringen twee keer, dan heb je de hints niet nodig.": "{0}, дело закрыто. Читайте показания дважды — и подсказки не понадобятся.",
     "Rekruut": "Курсант",
-    "Sleep {0} van het bord af.{1}{2}": "{0}: уберите {0|m:его|f:её} с поля.{1}{2}",
-    " Lees de verklaring hierboven nog eens en probeer een vakje dat erbij past.": " Перечитайте показание выше и попробуйте клетку, которая ему подходит.",
-    "Haal de verdachte weg en kijk welke vakjes die aanwijzing wél toelaat.": "Уберите подозреваемого и посмотрите, какие клетки это показание всё-таки допускает.",
+    "Sleep {0} van het bord af.{1}{2}": "{0}: уберите {0|m:его|f:её} с поля.{1}{2}",
+    " Lees de verklaring hierboven nog eens en probeer een vakje dat erbij past.": " Перечитайте показание выше и попробуйте клетку, которая ему подходит.",
+    "Haal de verdachte weg en kijk welke vakjes die aanwijzing wél toelaat.": "Уберите подозреваемого и посмотрите, какие клетки это показание всё-таки допускает.",
     "Precies één persoon bevond zich in die kamer.": "Там был ровно один человек.",
     "{0} staat niet op de juiste plek.": "{0} стоит не на своём месте.",
-    "Kijk nog eens naar de aanwijzingen over de anderen.": "Посмотрите ещё раз на показания о других.",
+    "Kijk nog eens naar de aanwijzingen over de anderen.": "Посмотрите ещё раз на показания о других.",
     "Lees aanwijzing {0} nog eens.": "Перечитайте показание {0}.",
-    "Iedereen staat goed. Wie was alleen met het slachtoffer?": "Все на своих местах. Кто был наедине с жертвой?",
-    "{0} kan maar op één plek staan.": "{0} может стоять только в одном месте.",
-    "Combineer aanwijzing {0} met de spelregel over het slachtoffer.": "Сопоставьте {0|one:показание|few:показание|many:показание|other:показания} {0} с правилом о жертве.",
-    "De spelregel over het slachtoffer dwingt dit af.": "Этого требует правило о жертве.",
-    "Aanwijzing {0} beperkt de opties. Streep vakjes weg die er niet aan voldoen.": "{0|one:Показание|few:Показание|many:Показание|other:Показания} {0} {0|one:сужает|few:сужает|many:сужает|other:сужают} выбор. Вычеркните клетки, которые {0|one:ему|few:ему|many:ему|other:им} не подходят.",
+    "Iedereen staat goed. Wie was alleen met het slachtoffer?": "Все на своих местах. Кто был наедине с жертвой?",
+    "{0} kan maar op één plek staan.": "{0} может стоять только в одном месте.",
+    "Combineer aanwijzing {0} met de spelregel over het slachtoffer.": "Сопоставьте {0|one:показание|few:показание|many:показание|other:показания} {0} с правилом о жертве.",
+    "De spelregel over het slachtoffer dwingt dit af.": "Этого требует правило о жертве.",
+    "Aanwijzing {0} beperkt de opties. Streep vakjes weg die er niet aan voldoen.": "{0|one:Показание|few:Показание|many:Показание|other:Показания} {0} {0|one:сужает|few:сужает|many:сужает|other:сужают} выбор. Вычеркните клетки, которые {0|one:ему|few:ему|many:ему|other:им} не подходят.",
     "Gebruik de plaatsen van de anderen om verder te snoeien.": "Используйте места остальных, чтобы сузить выбор ещё сильнее.",
-    "In deze zaak zegt <b>{0}</b>: “{1}”": "<b>{0}</b> в этом деле говорит: «{1}»",
-    "Waar stond <b>{0}</b>?": "<b>{0}</b> — где {0|m:он стоял|f:она стояла}?",
+    "In deze zaak zegt <b>{0}</b>: “{1}”": "<b>{0}</b> в этом деле говорит: «{1}»",
+    "Waar stond <b>{0}</b>?": "<b>{0}</b> — где {0|m:он стоял|f:она стояла}?",
     "{0} · Zaak {1}: {2}": "{0} · Дело {1}: {2}",
-    " · nog {0} {0|one:hint|other:hints}": " · {0|one:осталась|few:осталось|many:осталось|other:осталось} {0} {0|one:подсказка|few:подсказки|many:подсказок|other:подсказки}",
-    "Volgende: {0} · nog {1} {1|one:zaak|other:zaken}": "Следующее звание: {0} · ещё {1} {1|one:дело|few:дела|many:дел|other:дела}",
-    "nog {0} {0|one:zaak|other:zaken}": "ещё {0} {0|one:дело|few:дела|many:дел|other:дела}",
-    "🔒 Los nog {0} {0|one:zaak|other:zaken} op (vrij spel of dagelijks) om deze wereld te openen": "🔒 Раскройте ещё {0} {0|one:дело|few:дела|many:дел|other:дела} (свободная игра или дело дня), чтобы открыть этот мир",
-    "🧊 {0} {0|one:vrije dag|other:vrije dagen}": "🧊 {0} {0|one:отгул|few:отгула|many:отгулов|other:отгула}",
-    "Los nog {0} {0|one:zaak|other:zaken} op om {1} te openen. De dagelijkse zaak telt mee.": "Раскройте ещё {0} {0|one:дело|few:дела|many:дел|other:дела}, чтобы открыть мир «{1}». Дело дня тоже считается.",
-    "nog {0} {0|one:zaak|other:zaken} tot {1}": "ещё {0} {0|one:дело|few:дела|many:дел|other:дела} до звания «{1}»",
+    " · nog {0} {0|one:hint|other:hints}": " · {0|one:осталась|few:осталось|many:осталось|other:осталось} {0} {0|one:подсказка|few:подсказки|many:подсказок|other:подсказки}",
+    "Volgende: {0} · nog {1} {1|one:zaak|other:zaken}": "Следующее звание: {0} · ещё {1} {1|one:дело|few:дела|many:дел|other:дела}",
+    "nog {0} {0|one:zaak|other:zaken}": "ещё {0} {0|one:дело|few:дела|many:дел|other:дела}",
+    "🔒 Los nog {0} {0|one:zaak|other:zaken} op (vrij spel of dagelijks) om deze wereld te openen": "🔒 Раскройте ещё {0} {0|one:дело|few:дела|many:дел|other:дела} (свободная игра или дело дня), чтобы открыть этот мир",
+    "🧊 {0} {0|one:vrije dag|other:vrije dagen}": "🧊 {0} {0|one:отгул|few:отгула|many:отгулов|other:отгула}",
+    "Los nog {0} {0|one:zaak|other:zaken} op om {1} te openen. De dagelijkse zaak telt mee.": "Раскройте ещё {0} {0|one:дело|few:дела|many:дел|other:дела}, чтобы открыть мир «{1}». Дело дня тоже считается.",
+    "nog {0} {0|one:zaak|other:zaken} tot {1}": "ещё {0} {0|one:дело|few:дела|many:дел|other:дела} до звания «{1}»",
     "{0} {0|one:zaak|other:zaken} opgelost": "Раскрыто дел: {0}"
   },
 
@@ -410,8 +410,8 @@
         "victimName": "Доктор Эдвард Блэквуд",
         "roomWord": "комната",
         "roomWordPlural": "комнаты",
-        "tagline": "Ужин, бокал бордо и хозяин, который больше не встанет.",
-        "intro": "Поместье Блэквуд, 1927 год. После ужина хозяин так и остаётся сидеть в кресле. Бокал пуст, дом полон тайн.",
+        "tagline": "Ужин, бокал бордо и хозяин, который больше не встанет.",
+        "intro": "Поместье Блэквуд, 1927 год. После ужина хозяин так и остаётся сидеть в кресле. Бокал пуст, дом полон тайн.",
         "outro": "Тайны поместья Блэквуд вышли наружу. Убийца пойман.",
         "rooms": {
           "Woonkamer": "Гостиная",
@@ -471,9 +471,9 @@
         "victimName": "Капитан Черноглаз",
         "roomWord": "помещение",
         "roomWordPlural": "помещения",
-        "tagline": "Капитан мёртв, и никто не сойдёт с корабля.",
-        "intro": "«Чёрная чайка» стоит в штиль на зеркальном море. Капитан не отзывается. Никто не сойдёт с корабля, пока не найдут убийцу.",
-        "outro": "«Чёрная чайка» поднимает паруса. Убийца остаётся в карцере.",
+        "tagline": "Капитан мёртв, и никто не сойдёт с корабля.",
+        "intro": "«Чёрная чайка» стоит в штиль на зеркальном море. Капитан не отзывается. Никто не сойдёт с корабля, пока не найдут убийцу.",
+        "outro": "«Чёрная чайка» поднимает паруса. Убийца остаётся в карцере.",
         "rooms": {
           "Kajuit": "Каюта",
           "Ruim": "Трюм",
@@ -534,8 +534,8 @@
         "victimName": "Владелец отеля Валентейн Аврора",
         "roomWord": "помещение",
         "roomWordPlural": "помещения",
-        "tagline": "В полночь погас свет.",
-        "intro": "Новогодняя ночь в «Гранд-отеле Аврора». С двенадцатым ударом часов погас свет. Когда он зажёгся снова, владелец лежал на мраморном полу.",
+        "tagline": "В полночь погас свет.",
+        "intro": "Новогодняя ночь в «Гранд-отеле Аврора». С двенадцатым ударом часов погас свет. Когда он зажёгся снова, владелец лежал на мраморном полу.",
         "outro": "Огни «Гранд-отеля Аврора» гаснут. На этот раз навсегда.",
         "rooms": {
           "Lobby": "Вестибюль",
@@ -601,8 +601,8 @@
         "roomWord": "модуль",
         "roomWordPlural": "модули",
         "tagline": "Шлюзы заблокированы. Все по-прежнему на борту.",
-        "intro": "Космическая станция «Орион», 2189 год. Командир не выходит на вахту. Все шлюзы заблокированы: преступник всё ещё на борту.",
-        "outro": "Шлюзы снова открываются. Убийца летит домой в наручниках.",
+        "intro": "Космическая станция «Орион», 2189 год. Командир не выходит на вахту. Все шлюзы заблокированы: преступник всё ещё на борту.",
+        "outro": "Шлюзы снова открываются. Убийца летит домой в наручниках.",
         "rooms": {
           "Brug": "Мостик",
           "Laboratorium": "Лаборатория",
@@ -660,8 +660,8 @@
         "victimName": "Главный хранитель Адриан Вос",
         "roomWord": "зал",
         "roomWordPlural": "залы",
-        "tagline": "После закрытия. Все двери заперты, на полу — главный хранитель.",
-        "intro": "Музей Влирбек, ночь. Сигнализация не сработала, двери были заперты, а главный хранитель лежит среди статуй. Кто был внутри, тот и сейчас внутри.",
+        "tagline": "После закрытия. Все двери заперты, на полу — главный хранитель.",
+        "intro": "Музей Влирбек, ночь. Сигнализация не сработала, двери были заперты, а главный хранитель лежит среди статуй. Кто был внутри, тот и сейчас внутри.",
         "outro": "Сигнализация снова включена. Преступник уходит, коллекция остаётся.",
         "rooms": {
           "Egyptische Zaal": "Египет",
@@ -721,9 +721,9 @@
         "victimName": "Проводник Леон Маркетти",
         "roomWord": "вагон",
         "roomWordPlural": "вагоны",
-        "tagline": "Двенадцать вагонов, один тоннель и проводник, который так и не закончил обход.",
-        "intro": "Ночной поезд в Вену, 1934 год. В тоннеле гаснет свет. Когда он загорается снова, проводник лежит в вагоне-ресторане. Следующая остановка — только в шесть.",
-        "outro": "На рассвете поезд прибывает на вокзал. Один пассажир выходит в наручниках.",
+        "tagline": "Двенадцать вагонов, один тоннель и проводник, который так и не закончил обход.",
+        "intro": "Ночной поезд в Вену, 1934 год. В тоннеле гаснет свет. Когда он загорается снова, проводник лежит в вагоне-ресторане. Следующая остановка — только в шесть.",
+        "outro": "На рассвете поезд прибывает на вокзал. Один пассажир выходит в наручниках.",
         "rooms": {
           "Restauratiewagen": "Ресторан",
           "Salonwagen": "Салон",
@@ -782,9 +782,9 @@
         "victimName": "Директор Фердинанд Зано",
         "roomWord": "зона",
         "roomWordPlural": "зоны",
-        "tagline": "Представление окончено, шатёр закрывается, а директор лежит на манеже.",
-        "intro": "Цирк Зано, последнее представление сезона. Зрители разошлись, шатёр закрывается, а директор Зано лежит в опилках на манеже. Все артисты ещё здесь.",
-        "outro": "Шатёр разбирают. Опилки сметают, а с ними и последний след.",
+        "tagline": "Представление окончено, шатёр закрывается, а директор лежит на манеже.",
+        "intro": "Цирк Зано, последнее представление сезона. Зрители разошлись, шатёр закрывается, а директор Зано лежит в опилках на манеже. Все артисты ещё здесь.",
+        "outro": "Шатёр разбирают. Опилки сметают, а с ними и последний след.",
         "rooms": {
           "Piste": "Манеж",
           "Tribune": "Трибуны",
@@ -843,8 +843,8 @@
         "victimName": "Хозяин Антон Бергер",
         "roomWord": "помещение",
         "roomWordPlural": "помещения",
-        "tagline": "Лавина отрезала долину. Семь гостей, одна печка и хозяин, который больше не согреется.",
-        "intro": "Приют «Эдельвейс», высоко в Альпах. Лавина перекрыла единственную дорогу. Внутри — семь гостей, одна печка и хозяин у огня, который больше не согреется.",
+        "tagline": "Лавина отрезала долину. Семь гостей, одна печка и хозяин, который больше не согреется.",
+        "intro": "Приют «Эдельвейс», высоко в Альпах. Лавина перекрыла единственную дорогу. Внутри — семь гостей, одна печка и хозяин у огня, который больше не согреется.",
         "outro": "Приют закрыт, снег снова лежит спокойно. Вы знаете, что было под ним.",
         "rooms": {
           "Gelagkamer": "Общий зал",
@@ -920,7 +920,7 @@
       "Чужое пальто",
       "Молчаливая прислуга",
       "Пустой стул",
-      "Следы в пыли",
+      "Следы в пыли",
       "Поздний визит",
       "Задёрнутые шторы",
       "Одно имя лишнее",
@@ -941,7 +941,7 @@
       "piraten": [
         "Заговор на камбузе",
         "Бунт на «Чёрной чайке»",
-        "Карта с двумя крестами",
+        "Карта с двумя крестами",
         "Проклятие пустой бочки"
       ],
       "hotel": [
@@ -963,15 +963,15 @@
         "Тайна зала 7"
       ],
       "trein": [
-        "Четыре минуты в тоннеле",
+        "Четыре минуты в тоннеле",
         "Билет без имени",
         "Запертое купе",
         "Последняя остановка перед Веной"
       ],
       "circus": [
         "Номер без аплодисментов",
-        "Пушка, выстрелившая с опозданием",
-        "Клоун с двумя лицами",
+        "Пушка, выстрелившая с опозданием",
+        "Клоун с двумя лицами",
         "Ночь, когда шатёр затих"
       ],
       "skihut": [
@@ -996,7 +996,7 @@
       ],
       "volle-week": [
         "Полная неделя",
-        "Играть каждый день недели, с понедельника по воскресенье"
+        "Играть каждый день недели, с понедельника по воскресенье"
       ],
       "zonder-hint": [
         "Десять без подсказок",
@@ -1052,7 +1052,7 @@
       ],
       "vlekkeloos": [
         "Безупречно",
-        "Десять раз получить три звезды в кампании"
+        "Десять раз получить три звезды в кампании"
       ],
       "archivaris": [
         "Архивариус",
@@ -1064,11 +1064,11 @@
       ],
       "verzamelaar": [
         "Коллекционер",
-        "Собрать в витрине 24 улики"
+        "Собрать в витрине 24 улики"
       ],
       "punten": [
         "Пять тысяч очков",
-        "Набрать 5000 очков"
+        "Набрать 5000 очков"
       ],
       "meester": [
         "Мастер сыска",
@@ -1084,61 +1084,61 @@
       "vink": "Отметить три показания",
       "dagelijks": "Сыграть дело дня",
       "campagne": "Сыграть дело кампании",
-      "eenkeer": "Указать преступника с первой попытки",
+      "eenkeer": "Указать преступника с первой попытки",
       "sterren": "Получить три звезды за дело"
     },
     "tips": {
-      "same-row": "Следите за показанием о ряде: ряд идёт слева направо, прямо сквозь стены.",
-      "same-col": "Столбец идёт сверху вниз через весь план. Стены не в счёт.",
-      "left-of": "«Левее» относится ко всему плану: один стоит в столбце левее другого, в какой угодно комнате.",
-      "above": "«Выше на плане» значит ближе к верхнему краю плана, в какой угодно комнате.",
-      "not-adjacent": "«Не стоял прямо рядом» исключает только четыре соседние клетки. Клетка по диагонали соседней не считается.",
-      "adjacent": "«Прямо рядом» — это клетка слева, справа, сверху или снизу. Никогда не по диагонали.",
-      "alone": "Кто был в комнате один, тот исключает оттуда всех остальных. Так удобно вычёркивать комнаты.",
+      "same-row": "Следите за показанием о ряде: ряд идёт слева направо, прямо сквозь стены.",
+      "same-col": "Столбец идёт сверху вниз через весь план. Стены не в счёт.",
+      "left-of": "„Левее“ относится ко всему плану: один стоит в столбце левее другого, в какой угодно комнате.",
+      "above": "„Выше на плане“ значит ближе к верхнему краю плана, в какой угодно комнате.",
+      "not-adjacent": "„Не стоял прямо рядом“ исключает только четыре соседние клетки. Клетка по диагонали соседней не считается.",
+      "adjacent": "„Прямо рядом“ — это клетка слева, справа, сверху или снизу. Никогда не по диагонали.",
+      "alone": "Кто был в комнате один, тот исключает оттуда всех остальных. Так удобно вычёркивать комнаты.",
       "empty-room": "Согласно рапорту, комната пуста: туда никого ставить не нужно.",
-      "pos": "Угол касается двух стен, клетка «у стены» — одной, клетка «посередине» — ни одной.",
-      "room-pos": "Посмотрите, какие угловые и пристенные клетки в этой комнате ещё свободны. Мебель часто занимает несколько из них.",
-      "room-with": "Комната «с растением» может быть комнатой, где есть и другая мебель. Сначала найдите растение.",
-      "next-to": "Нажмите на показание — предмет подсветится. Подходят только соседние с ним клетки.",
-      "room-next": "Комната и предмет вместе: обычно остаётся всего одна клетка.",
-      "diff-room": "Не в одной комнате: сначала определите место того, о ком вы знаете больше всего.",
-      "same-room": "В одной комнате: найдите комнату одного — и вы узнаете комнату другого.",
-      "not-room": "Показание «меня там не было» вычёркивает комнату. Сопоставьте его с правилом о жертве.",
+      "pos": "Угол касается двух стен, клетка „у стены“ — одной, клетка „посередине“ — ни одной.",
+      "room-pos": "Посмотрите, какие угловые и пристенные клетки в этой комнате ещё свободны. Мебель часто занимает несколько из них.",
+      "room-with": "Комната „с растением“ может быть комнатой, где есть и другая мебель. Сначала найдите растение.",
+      "next-to": "Нажмите на показание — предмет подсветится. Подходят только соседние с ним клетки.",
+      "room-next": "Комната и предмет вместе: обычно остаётся всего одна клетка.",
+      "diff-room": "Не в одной комнате: сначала определите место того, о ком вы знаете больше всего.",
+      "same-room": "В одной комнате: найдите комнату одного — и вы узнаете комнату другого.",
+      "not-room": "Показание „меня там не было“ вычёркивает комнату. Сопоставьте его с правилом о жертве.",
       "room": "Самое ясное показание: поставьте этого человека первым.",
-      "fallback": "Начните с показания, которое оставляет меньше всего вариантов."
+      "fallback": "Начните с показания, которое оставляет меньше всего вариантов."
     },
     "intros": {
       "kamers": [
         "Комнаты",
-        "Подозреваемый говорит, в какой комнате был. Найдите эту комнату на плане и поставьте его на любую клетку в ней. Кто-то говорит, что где-то НЕ был? Тогда он может стоять где угодно, кроме этой комнаты."
+        "Подозреваемый говорит, в какой комнате был. Найдите эту комнату на плане и поставьте его на любую клетку в ней. Кто-то говорит, что где-то НЕ был? Тогда он может стоять где угодно, кроме этой комнаты."
       ],
       "hoeken": [
-        "Углы и стены",
-        "В каждой комнате три вида клеток. В углу: клетка касается двух стен комнаты (на картинке — красная). У стены: клетка касается только одной стены (золотая). Посередине: клетка не касается ни одной стены (зелёная)."
+        "Углы и стены",
+        "В каждой комнате три вида клеток. В углу: клетка касается двух стен комнаты (на картинке — красная). У стены: клетка касается только одной стены (золотая). Посередине: клетка не касается ни одной стены (зелёная)."
       ],
       "meubels": [
         "Мебель",
-        "Прямо рядом с предметом — это клетка слева, справа, сверху или снизу от него. По диагонали не считается. Не знаете, что это за предмет? Нажмите на него, и вы увидите название."
+        "Прямо рядом с предметом — это клетка слева, справа, сверху или снизу от него. По диагонали не считается. Не знаете, что это за предмет? Нажмите на него, и вы увидите название."
       ],
       "samen": [
         "Вместе или поодиночке",
-        "В одной комнате: поставьте обоих в одну и ту же комнату. Не в одной комнате: поставьте их в две разные комнаты. «Я был один»: больше никто не может стоять в этой комнате."
+        "В одной комнате: поставьте обоих в одну и ту же комнату. Не в одной комнате: поставьте их в две разные комнаты. «Я был один»: больше никто не может стоять в этой комнате."
       ],
       "naast": [
-        "Рядом друг с другом",
-        "Стоять прямо рядом с кем-то — значит, что клетки двоих соприкасаются стороной: слева, справа, сверху или снизу. По диагонали не считается. Стена между ними не мешает, лишь бы клетки были соседними."
+        "Рядом друг с другом",
+        "Стоять прямо рядом с кем-то — значит, что клетки двоих соприкасаются стороной: слева, справа, сверху или снизу. По диагонали не считается. Стена между ними не мешает, лишь бы клетки были соседними."
       ],
       "rijen": [
-        "Ряды и столбцы",
-        "Ряд идёт слева направо через весь план. Столбец — сверху вниз. «В одном ряду» может значить и в другой комнате: стены не в счёт."
+        "Ряды и столбцы",
+        "Ряд идёт слева направо через весь план. Столбец — сверху вниз. «В одном ряду» может значить и в другой комнате: стены не в счёт."
       ],
       "links": [
-        "Левее и выше",
-        "Левее кого-то — значит, в столбце дальше влево, даже если это другая комната. Выше кого-то — значит, в ряду ближе к верхнему краю плана."
+        "Левее и выше",
+        "Левее кого-то — значит, в столбце дальше влево, даже если это другая комната. Выше кого-то — значит, в ряду ближе к верхнему краю плана."
       ],
       "leeg": [
         "Пустые комнаты",
-        "Согласно рапорту, в этой комнате никого не было. Значит, никого туда не ставьте: эту комнату можно пропустить целиком."
+        "Согласно рапорту, в этой комнате никого не было. Значит, никого туда не ставьте: эту комнату можно пропустить целиком."
       ]
     },
     "reactWrong": [
@@ -1151,38 +1151,38 @@
     "reactRight": [
       "…Как вы догадались?",
       "…Ладно. Это я.",
-      "У меня почти получилось.",
+      "У меня почти получилось.",
       "…Вы меня раскусили."
     ],
     "archiveStories": [
-      "Старое дело из архива. Факты остыли, вопрос — нет.",
-      "Это дело так никто и не закрыл. До сегодняшнего дня.",
-      "Свидетели расходятся в показаниях. План — нет.",
+      "Старое дело из архива. Факты остыли, вопрос — нет.",
+      "Это дело так никто и не закрыл. До сегодняшнего дня.",
+      "Свидетели расходятся в показаниях. План — нет.",
       "Рапорт был коротким. Слишком коротким.",
-      "У всех было алиби. Одно из них не выдержало проверки.",
+      "У всех было алиби. Одно из них не выдержало проверки.",
       "Папка лежала на самом дне стопки. Не случайно.",
       "Имя преступника вычеркнуто. Вы впишете его снова.",
-      "По архиву — раскрыто. По фактам — нет."
+      "По архиву — раскрыто. По фактам — нет."
     ],
     "mentorName": "Инспектор Ван Дам",
     "boardTutorial": [
-      "Показание 1: Леди Клементина была в гостиной, в углу. Три угла заняты мебелью, так что свободен только один. Перетащите её на подсвеченную клетку или нажмите на эту клетку.",
-      "Показание 2: Мистер Харгроув стоял прямо рядом с растением. Рядом с растением свободна только одна клетка. Перетащите его туда или нажмите на неё.",
+      "Показание 1: Леди Клементина была в гостиной, в углу. Три угла заняты мебелью, так что свободен только один. Перетащите её на подсвеченную клетку или нажмите на эту клетку.",
+      "Показание 2: Мистер Харгроув стоял прямо рядом с растением. Рядом с растением свободна только одна клетка. Перетащите его туда или нажмите на неё.",
       "Все на своих местах. Нажмите «Проверить».",
-      "Правило: в комнате жертвы был только убийца. Харгроув стоит на кухне — выберите его."
+      "Правило: в комнате жертвы был только убийца. Харгроув стоит на кухне — выберите его."
     ]
   },
 
   campaign: {
     "landhuis": [
       "Часть I · Ужин",
-      "Поместье Блэквуд, 1927 год. После ужина хозяин так и остаётся сидеть в кресле.",
+      "Поместье Блэквуд, 1927 год. После ужина хозяин так и остаётся сидеть в кресле.",
       "Тайны ужина вышли наружу. Но семья ещё вернётся.",
-      "Добро пожаловать в Блэквуд. Начните с тех, кто называет комнату, где был: это самые простые показания. И помните: с жертвой был только убийца.",
+      "Добро пожаловать в Блэквуд. Начните с тех, кто называет комнату, где был: это самые простые показания. И помните: с жертвой был только убийца.",
       [
         [
           "Бокал бордо",
-          "Вечер начался с тоста и закончился тишиной.",
+          "Вечер начался с тоста и закончился тишиной.",
           "🍷 Бокал"
         ],
         [
@@ -1192,32 +1192,32 @@
         ],
         [
           "Дождь над поместьем",
-          "Непогода удержала всех в доме. Всех.",
+          "Непогода удержала всех в доме. Всех.",
           "☂️ Зонт"
         ],
         [
           "Последнее письмо",
-          "На столе лежало письмо, которое так и не дописали.",
+          "На столе лежало письмо, которое так и не дописали.",
           "✉️ Письмо"
         ],
         [
           "Портрет",
-          "Кто-то повернул семейный портрет лицом к стене.",
+          "Кто-то повернул семейный портрет лицом к стене.",
           "🖼️ Портрет"
         ],
         [
           "Садовник молчит",
-          "Сарай с инструментами был пуст. Садовника тоже не было.",
+          "Сарай с инструментами был пуст. Садовника тоже не было.",
           "🧤 Садовая перчатка"
         ],
         [
           "Завещание",
-          "Все знали, что в нём написано. Кто-то один знал лучше.",
+          "Все знали, что в нём написано. Кто-то один знал лучше.",
           "📜 Завещание"
         ],
         [
           "Красная комната",
-          "Всё сошлось в комнате, где всё началось.",
+          "Всё сошлось в комнате, где всё началось.",
           "🕯️ Красная свеча"
         ]
       ]
@@ -1226,7 +1226,7 @@
       "Часть II · Наследники",
       "После похорон семья возвращается. Каждый хочет что-то забрать из дома.",
       "Наследство поделено. Но дому ещё есть что рассказать.",
-      "Семья вернулась, и все говорят обо всех. Показания о двух людях: сначала определите место одного из них.",
+      "Семья вернулась, и все говорят обо всех. Показания о двух людях: сначала определите место одного из них.",
       [
         [
           "Опечатанная дверь",
@@ -1234,8 +1234,8 @@
           "🔏 Печать нотариуса"
         ],
         [
-          "Чай в четыре",
-          "Чашка была ещё полной. Стул рядом — пустым.",
+          "Чай в четыре",
+          "Чашка была ещё полной. Стул рядом — пустым.",
           "☕ Чайная чашка"
         ],
         [
@@ -1245,12 +1245,12 @@
         ],
         [
           "Сломанные часы",
-          "Часы в холле остановились без десяти девять.",
+          "Часы в холле остановились без десяти девять.",
           "⏰ Остановившиеся часы"
         ],
         [
-          "Шаги в подвале",
-          "В подвал никто никогда не спускался. Кто-то всё-таки спустился.",
+          "Шаги в подвале",
+          "В подвал никто никогда не спускался. Кто-то всё-таки спустился.",
           "🥾 Сапог"
         ],
         [
@@ -1260,7 +1260,7 @@
         ],
         [
           "Тайна оранжереи",
-          "За растениями была дверь, о которой никто не знал.",
+          "За растениями была дверь, о которой никто не знал.",
           "🌿 Папоротник"
         ],
         [
@@ -1273,12 +1273,12 @@
     "landhuis-3": [
       "Часть III · Ночь бури",
       "Гроза отрезает поместье от мира. Никто не войдёт, никто не выйдет.",
-      "На рассвете гроза уходит. У поместья Блэквуд больше нет тайн.",
-      "Буря заперла дом. Ждите показаний о рядах и столбцах: они проходят прямо сквозь стены. Внимательно смотрите на план.",
+      "На рассвете гроза уходит. У поместья Блэквуд больше нет тайн.",
+      "Буря заперла дом. Ждите показаний о рядах и столбцах: они проходят прямо сквозь стены. Внимательно смотрите на план.",
       [
         [
           "Гаснет свет",
-          "Одна свеча ещё горела — не в той комнате.",
+          "Одна свеча ещё горела — не в той комнате.",
           "🔦 Фонарик"
         ],
         [
@@ -1288,7 +1288,7 @@
         ],
         [
           "Библиотечная лестница",
-          "Лестница стояла у полки, которой никто не пользовался.",
+          "Лестница стояла у полки, которой никто не пользовался.",
           "🪜 Лестница"
         ],
         [
@@ -1303,7 +1303,7 @@
         ],
         [
           "Портрет наблюдает",
-          "С картины была видна вся столовая.",
+          "С картины была видна вся столовая.",
           "🪞 Зеркало"
         ],
         [
@@ -1322,7 +1322,7 @@
       "Часть IV · Год спустя",
       "Через год после бури Блэквуд продают. Новый владелец приглашает прежних гостей. Лучше бы никто не приезжал.",
       "Сделка срывается. Дом остаётся при своих жильцах.",
-      "Те же лица, на год старше и куда осторожнее. Читайте каждое показание дважды: тот, кто говорит, где его НЕ было, тоже кое-что сообщает.",
+      "Те же лица, на год старше и куда осторожнее. Читайте каждое показание дважды: тот, кто говорит, где его НЕ было, тоже кое-что сообщает.",
       [
         [
           "Новый владелец",
@@ -1331,17 +1331,17 @@
         ],
         [
           "Пыль на рояле",
-          "Никто не играл. И всё же крышка была открыта.",
+          "Никто не играл. И всё же крышка была открыта.",
           "🎵 Крышка рояля"
         ],
         [
-          "Дверь в подвал",
+          "Дверь в подвал",
           "Дверь заедало годами. Но не сегодня.",
-          "🚪 Дверь в подвал"
+          "🚪 Дверь в подвал"
         ],
         [
-          "Джунипер у окна",
-          "Она что-то увидела в саду. По крайней мере, так она сказала.",
+          "Джунипер у окна",
+          "Она что-то увидела в саду. По крайней мере, так она сказала.",
           "🔭 Бинокль"
         ],
         [
@@ -1361,16 +1361,16 @@
         ],
         [
           "Ключ от чердака",
-          "На чердак никто не ходил. Кроме того, у кого был ключ.",
+          "На чердак никто не ходил. Кроме того, у кого был ключ.",
           "🔐 Ключ от чердака"
         ]
       ]
     ],
     "landhuis-5": [
       "Часть V · Свадьба",
-      "Одетта выходит замуж в поместье Блэквуд. Приезжает вся семья, а с семьёй — старые ссоры.",
-      "Торт разрезан, праздник окончен. Гости разъезжаются — все, кроме одного.",
-      "На свадьбе тесно: много людей, мало комнат. Начните с того, кто говорит, что был один: это сразу исключает целую комнату для всех остальных.",
+      "Одетта выходит замуж в поместье Блэквуд. Приезжает вся семья, а с семьёй — старые ссоры.",
+      "Торт разрезан, праздник окончен. Гости разъезжаются — все, кроме одного.",
+      "На свадьбе тесно: много людей, мало комнат. Начните с того, кто говорит, что был один: это сразу исключает целую комнату для всех остальных.",
       [
         [
           "Букет",
@@ -1384,7 +1384,7 @@
         ],
         [
           "Кольца",
-          "Два кольца в футляре. Один футляр пуст.",
+          "Два кольца в футляре. Один футляр пуст.",
           "💍 Футляр для колец"
         ],
         [
@@ -1398,7 +1398,7 @@
           "👓 Очки для чтения"
         ],
         [
-          "Танцы в холле",
+          "Танцы в холле",
           "Играла музыка. Двое не танцевали.",
           "🎻 Скрипка"
         ],
@@ -1417,17 +1417,17 @@
     "landhuis-6": [
       "Часть VI · Тайна поместья Блэквуд",
       "Под лестницей есть дверь, которой нет ни на одном плане. То, что за ней, меняет всё.",
-      "Дверь под лестницей замурована. Блэквуд умолкает — на этот раз по-настоящему.",
+      "Дверь под лестницей замурована. Блэквуд умолкает — на этот раз по-настоящему.",
       "Последняя часть поместья. Возвращается всё, чему вы научились: углы, мебель, ряды. Никого не ставьте, пока не уверены.",
       [
         [
           "Дверь под лестницей",
-          "За лестницей была дверь. Кто-то о ней знал.",
+          "За лестницей была дверь. Кто-то о ней знал.",
           "🧱 Шатающийся камень"
         ],
         [
-          "Письмо 1912 года",
-          "Письмо было старым. Чернила — нет.",
+          "Письмо 1912 года",
+          "Письмо было старым. Чернила — нет.",
           "🖋️ Чернильница"
         ],
         [
@@ -1442,12 +1442,12 @@
         ],
         [
           "Клементина молчит",
-          "Она знала, кто это был. И никому не сказала.",
+          "Она знала, кто это был. И никому не сказала.",
           "🤫 Носовой платок"
         ],
         [
           "Потайная комната",
-          "В комнате не было окна. И всё же там горел свет.",
+          "В комнате не было окна. И всё же там горел свет.",
           "🕯️ Подсвечник"
         ],
         [
@@ -1464,9 +1464,9 @@
     ],
     "piraten": [
       "Часть I · Штиль",
-      "«Чёрная чайка» стоит в штиль на зеркальном море. Капитан больше не отзывается.",
+      "«Чёрная чайка» стоит в штиль на зеркальном море. Капитан больше не отзывается.",
       "«Чёрная чайка» поднимает паруса. На карте есть остров.",
-      "Корабль мал, и все видели всех. «Прямо рядом» — это соседняя клетка, никогда не по диагонали. Начните с камбуза.",
+      "Корабль мал, и все видели всех. «Прямо рядом» — это соседняя клетка, никогда не по диагонали. Начните с камбуза.",
       [
         [
           "Штиль",
@@ -1475,17 +1475,17 @@
         ],
         [
           "Украденная карта",
-          "Карта сокровищ исчезла. Тело — нет.",
+          "Карта сокровищ исчезла. Тело — нет.",
           "🗺️ Карта сокровищ"
         ],
         [
-          "Ром в трюме",
+          "Ром в трюме",
           "Три бочки пусты, один матрос молчит.",
           "🛢️ Бочка рома"
         ],
         [
           "Молчаливая пушка",
-          "Выстрела никто не слышал. И всё же кто-то лежал там.",
+          "Выстрела никто не слышал. И всё же кто-то лежал там.",
           "💣 Ядро"
         ],
         [
@@ -1512,23 +1512,23 @@
     ],
     "piraten-2": [
       "Часть II · Остров",
-      "«Чёрная чайка» бросает якорь у безымянного острова. Сокровище близко, и все это знают.",
-      "Сокровище в трюме. Счёты сведены. Теперь домой.",
-      "На острове никто не лжёт, но каждый о чём-то молчит. Отмечайте Карандашом клетки, где кто-то мог бы стоять.",
+      "«Чёрная чайка» бросает якорь у безымянного острова. Сокровище близко, и все это знают.",
+      "Сокровище в трюме. Счёты сведены. Теперь домой.",
+      "На острове никто не лжёт, но каждый о чём-то молчит. Отмечайте Карандашом клетки, где кто-то мог бы стоять.",
       [
         [
           "Следы на песке",
-          "Следы вели к воде. Обратно — нет.",
+          "Следы вели к воде. Обратно — нет.",
           "🐚 Ракушка"
         ],
         [
           "Попугай говорит",
-          "Птица повторяла одно имя. Снова и снова.",
+          "Птица повторяла одно имя. Снова и снова.",
           "🪶 Перо попугая"
         ],
         [
           "Пустая бочка",
-          "Ром кончился. Вопросы — нет.",
+          "Ром кончился. Вопросы — нет.",
           "🍾 Пустая бутылка"
         ],
         [
@@ -1543,26 +1543,26 @@
         ],
         [
           "Пропавшая шлюпка",
-          "Одной шлюпки не было. А вся команда была на месте.",
+          "Одной шлюпки не было. А вся команда была на месте.",
           "🚣 Весло"
         ],
         [
           "Канонир Торн считает",
-          "Двенадцать ядер, в ящике одиннадцать.",
+          "Двенадцать ядер, в ящике одиннадцать.",
           "📦 Ящик для ядер"
         ],
         [
           "Проклятие капитана",
-          "В проклятие верили все. Кроме преступника.",
+          "В проклятие верили все. Кроме преступника.",
           "📿 Амулет"
         ]
       ]
     ],
     "piraten-3": [
       "Часть III · Путь домой",
-      "С сокровищем на борту начинается путь домой. Богатство никого не делает честнее.",
-      "«Чёрная чайка» входит в гавань. Команда поредела, сокровище цело.",
-      "С сокровищем на борту команде не сидится на месте. Показания вроде «левее» и «выше» относятся ко всему плану, а не только к одному помещению.",
+      "С сокровищем на борту начинается путь домой. Богатство никого не делает честнее.",
+      "«Чёрная чайка» входит в гавань. Команда поредела, сокровище цело.",
+      "С сокровищем на борту команде не сидится на месте. Показания вроде «левее» и «выше» относятся ко всему плану, а не только к одному помещению.",
       [
         [
           "Первая вахта",
@@ -1570,13 +1570,13 @@
           "⏳ Песочные часы"
         ],
         [
-          "Доктор Марлоу и склянка",
+          "Доктор Марлоу и склянка",
           "Склянка была пуста. Этикетки не было.",
           "🧪 Склянка"
         ],
         [
-          "Шторм с левого борта",
-          "Всё съехало с мест. Одна вещь осталась точно на месте.",
+          "Шторм с левого борта",
+          "Всё съехало с мест. Одна вещь осталась точно на месте.",
           "🪢 Перерезанный канат"
         ],
         [
@@ -1591,7 +1591,7 @@
         ],
         [
           "Канат перерезан",
-          "Ножа не было ни у кого. Нож был у всех.",
+          "Ножа не было ни у кого. Нож был у всех.",
           "⚔️ Абордажная сабля"
         ],
         [
@@ -1601,19 +1601,19 @@
         ],
         [
           "Последний капитан",
-          "Кто встанет за штурвал «Чайки», должен это заслужить.",
+          "Кто встанет за штурвал, должен это заслужить.",
           "🏴‍☠️ Капитанский флаг"
         ]
       ]
     ],
     "piraten-4": [
       "Часть IV · Новый капитан",
-      "Барнаби встаёт за штурвал. Команда против. В море ничего не скроешь надолго.",
-      "У «Чайки» есть капитан. Надолго ли — никто не знает.",
-      "Новый капитан и старая команда. На таком маленьком корабле показания с «прямо рядом» на вес золота: каждая клетка на счету.",
+      "Барнаби встаёт за штурвал. Команда против. В море ничего не скроешь надолго.",
+      "У «Чайки» есть капитан. Надолго ли — никто не знает.",
+      "Новый капитан и старая команда. На таком маленьком корабле показания с «прямо рядом» на вес золота: каждая клетка на счету.",
       [
         [
-          "Смена у штурвала",
+          "Смена у штурвала",
           "Барнаби взялся за штурвал. Кто-то его отпустил.",
           "🛞 Штурвал"
         ],
@@ -1624,7 +1624,7 @@
         ],
         [
           "Кок Саффрон ищет нож",
-          "На камбузе одиннадцать ножей. А должно быть двенадцать.",
+          "На камбузе одиннадцать ножей. А должно быть двенадцать.",
           "🔪 Поварской нож"
         ],
         [
@@ -1634,7 +1634,7 @@
         ],
         [
           "Мисс Корал подслушивает",
-          "Она слышала голоса в трюме. Два голоса.",
+          "Она слышала голоса в трюме. Два голоса.",
           "🐚 Раковина"
         ],
         [
@@ -1648,17 +1648,17 @@
           "🌑 Тёмный фонарь"
         ],
         [
-          "Барнаби у штурвала",
-          "Капитан стоял у штурвала. За его спиной — никого. По его словам.",
+          "Барнаби у штурвала",
+          "Капитан стоял у штурвала. За его спиной — никого. По его словам.",
           "🎖️ Капитанская пуговица"
         ]
       ]
     ],
     "piraten-5": [
       "Часть V · Корабль-призрак",
-      "В тумане дрейфует корабль без команды. «Чайка» подходит к нему борт к борту. Кому-то лучше было остаться дома.",
-      "Корабль-призрак исчезает в тумане. «Чайка» идёт дальше, на одного человека легче.",
-      "Туман и пустой корабль: все нервничают и говорят лишнее. Сначала вычеркните пустые помещения — остальное сократится само собой.",
+      "В тумане дрейфует корабль без команды. «Чайка» подходит к нему борт к борту. Кому-то лучше было остаться дома.",
+      "Корабль-призрак исчезает в тумане. «Чайка» идёт дальше, на одного человека легче.",
+      "Туман и пустой корабль: все нервничают и говорят лишнее. Сначала вычеркните пустые помещения — остальное сократится само собой.",
       [
         [
           "Журнал чужого корабля",
@@ -1666,7 +1666,7 @@
           "📖 Чужой журнал"
         ],
         [
-          "Корабль в тумане",
+          "Корабль в тумане",
           "Ни команды, ни флага, один след.",
           "🌫️ Туманный фонарь"
         ],
@@ -1686,27 +1686,27 @@
           "🎶 Матросская песня"
         ],
         [
-          "Доктор Марлоу и сундук",
+          "Доктор Марлоу и сундук",
           "Лекарства для команды, которой не было.",
           "💊 Коробочка для таблеток"
         ],
         [
-          "Торн и порох",
+          "Торн и порох",
           "Порох был сухим. Весь, кроме одной бочки.",
           "🧨 Пороховая бочка"
         ],
         [
           "Туман рассеивается",
-          "Когда туман рассеялся, на палубе «Чайки» кто-то лежал.",
+          "Когда туман рассеялся, на палубе кто-то лежал.",
           "⚓ Ржавый якорь"
         ]
       ]
     ],
     "piraten-6": [
       "Часть VI · Клад капитана",
-      "Настоящий клад капитана спрятан не на острове. Он на борту. И теперь все знают где.",
-      "Клад поделён. «Чайка» принадлежит команде, а команда — морю.",
-      "Последние дела на «Чайке» — и самые трудные. Показания о рядах и столбцах проходят через весь корабль: пользуйтесь Карандашом.",
+      "Настоящий клад капитана спрятан не на острове. Он на борту. И теперь все знают где.",
+      "Клад поделён. «Чайка» принадлежит команде, а команда — морю.",
+      "Последние дела на «Чайке» — и самые трудные. Показания о рядах и столбцах проходят через весь корабль: пользуйтесь Карандашом.",
       [
         [
           "Двойное дно",
@@ -1735,12 +1735,12 @@
         ],
         [
           "Бунт, часть третья",
-          "Третий раз — самый опасный.",
+          "Третий раз — самый опасный.",
           "🏴 Чёрная ткань"
         ],
         [
           "Последняя вахта",
-          "Тот, кто стоял последнюю вахту, так и не увидел восхода.",
+          "Тот, кто стоял последнюю вахту, так и не увидел восхода.",
           "🕯️ Вахтенная свеча"
         ],
         [
@@ -1752,9 +1752,9 @@
     ],
     "hotel": [
       "Часть I · Новогодняя ночь",
-      "С двенадцатым ударом часов погас свет. Когда он зажёгся снова, владелец лежал на мраморном полу.",
+      "С двенадцатым ударом часов погас свет. Когда он зажёгся снова, владелец лежал на мраморном полу.",
       "Первая ночь года позади. Гостям пока нельзя разъезжаться.",
-      "Сотня гостей, одна жертва. В отеле много помещений: сначала вычеркните те, что по рапорту были пусты.",
+      "Сотня гостей, одна жертва. В отеле много помещений: сначала вычеркните те, что по рапорту были пусты.",
       [
         [
           "Полночь",
@@ -1763,11 +1763,11 @@
         ],
         [
           "Чужой чемодан",
-          "Чемодан в номере 12 не принадлежал гостю из номера 12.",
+          "Чемодан в номере 12 не принадлежал гостю из номера 12.",
           "🧳 Чемодан"
         ],
         [
-          "Шампанское в баре",
+          "Шампанское в баре",
           "Бокал был ещё холодным, когда это случилось.",
           "🍾 Шампанское"
         ],
@@ -1778,17 +1778,17 @@
         ],
         [
           "Обслуживание номеров",
-          "Тележка стояла у двери. Никто её не заказывал.",
+          "Тележка стояла у двери. Никто её не заказывал.",
           "🛎️ Звонок"
         ],
         [
           "Бальный зал",
-          "Сотня гостей — и всего один свидетель.",
+          "Сотня гостей — и всего один свидетель.",
           "🎭 Бальная маска"
         ],
         [
           "Ключ 404",
-          "Такого номера не существовало. А ключ — существовал.",
+          "Такого номера не существовало. А ключ — существовал.",
           "🔑 Ключ 404"
         ],
         [
@@ -1801,12 +1801,12 @@
     "hotel-2": [
       "Часть II · Гости",
       "Новогодним гостям нельзя покидать отель. Персоналу тоже.",
-      "Гости разъезжаются. В книге гостей на одну страницу меньше.",
-      "Гостям нельзя уехать, и это слышно по их показаниям: коротко и резко. Двое в одном помещении: сначала поставьте того, с кем всё яснее.",
+      "Гости разъезжаются. В книге гостей на одну страницу меньше.",
+      "Гостям нельзя уехать, и это слышно по их показаниям: коротко и резко. Двое в одном помещении: сначала поставьте того, с кем всё яснее.",
       [
         [
-          "Номер 7 пуст",
-          "Гость из номера 7 был в списке. Но не в постели.",
+          "Номер 7 пуст",
+          "Гость из номера 7 был в списке. Но не в постели.",
           "🛏️ Наволочка"
         ],
         [
@@ -1816,7 +1816,7 @@
         ],
         [
           "Лифт застрял",
-          "Между третьим и четвёртым этажом. Ровно на нужное время.",
+          "Между третьим и четвёртым этажом. Ровно на нужное время.",
           "🔘 Кнопка лифта"
         ],
         [
@@ -1826,35 +1826,35 @@
         ],
         [
           "Забытый зонт",
-          "Дождя не было. А зонт был мокрым.",
+          "Дождя не было. А зонт был мокрым.",
           "🌂 Мокрый зонт"
         ],
         [
           "Госпожа Сато поёт",
-          "Её пение слышали в баре. И в бальном зале. Невозможно.",
+          "Её пение слышали в баре. И в бальном зале. Невозможно.",
           "🎤 Микрофон"
         ],
         [
           "Винный погреб",
-          "Замок был цел. Бутылка — нет.",
+          "Замок был цел. Бутылка — нет.",
           "🍷 Бутылка вина"
         ],
         [
-          "Выезд в двенадцать",
-          "В двенадцать все уехали. Все, кроме одного.",
+          "Выезд в двенадцать",
+          "В двенадцать все уехали. Все, кроме одного.",
           "🧾 Счёт"
         ]
       ]
     ],
     "hotel-3": [
       "Часть III · Персонал",
-      "Кто знает отель, тот знает и коридоры за стенами. С них и начинается эта часть.",
+      "Кто знает отель, тот знает и коридоры за стенами. С них и начинается эта часть.",
       "«Гранд-отель Аврора» гасит огни. На этот раз навсегда.",
-      "Персонал знает коридоры за стенами. Помните про углы и стены: угол касается двух стен, клетка «у стены» — одной.",
+      "Персонал знает коридоры за стенами. Помните про углы и стены: угол касается двух стен, клетка «у стены» — одной.",
       [
         [
           "Служебный лифт",
-          "О служебном лифте знал только персонал. Как оказалось, не только.",
+          "О служебном лифте знал только персонал. Как оказалось, не только.",
           "🗝️ Служебный ключ"
         ],
         [
@@ -1864,7 +1864,7 @@
         ],
         [
           "Тележка горничной",
-          "Тележка стояла у люкса. Люкс был пуст.",
+          "Тележка стояла у люкса. Люкс был пуст.",
           "🧽 Губка"
         ],
         [
@@ -1874,7 +1874,7 @@
         ],
         [
           "Разбитый хрусталь",
-          "В люстре не хватало одного камня.",
+          "В люстре не хватало одного камня.",
           "💎 Хрусталик"
         ],
         [
@@ -1889,7 +1889,7 @@
         ],
         [
           "Последняя смена",
-          "«Аврора» закрывалась навсегда. Кому-то это было не по душе.",
+          "Отель закрывался навсегда. Кому-то это было не по душе.",
           "💡 Последняя лампа"
         ]
       ]
@@ -1898,7 +1898,7 @@
       "Часть IV · Открытие",
       "«Гранд-отель Аврора» открывается снова. Новый владелец, старые гости, те же коридоры.",
       "Открытие удалось. Кроме одного отзыва.",
-      "В отеле новая обстановка, так что сначала изучите план. Нажимайте на мебель, если не уверены, что это.",
+      "В отеле новая обстановка, так что сначала изучите план. Нажимайте на мебель, если не уверены, что это.",
       [
         [
           "Ленточка перерезана",
@@ -1912,7 +1912,7 @@
         ],
         [
           "Графиня Делакруа жалуется",
-          "Кровать была слишком жёсткой. Алиби — слишком мягким.",
+          "Кровать была слишком жёсткой. Алиби — слишком мягким.",
           "🛎️ Звонок для жалоб"
         ],
         [
@@ -1937,21 +1937,21 @@
         ],
         [
           "Первый отзыв",
-          "Пять звёзд. От того, кто так и не заселился.",
+          "Пять звёзд. От того, кто так и не заселился.",
           "⭐ Карточка отзыва"
         ]
       ]
     ],
     "hotel-5": [
       "Часть V · Конференция",
-      "Триста делегатов и один докладчик, который так и не дошёл до сцены.",
+      "Триста делегатов и один докладчик, который так и не дошёл до сцены.",
       "Конференция окончена. Список участников больше не сходится.",
-      "Много гостей — много показаний сразу о двоих. Всегда начинайте с того, о ком знаете больше всего.",
+      "Много гостей — много показаний сразу о двоих. Всегда начинайте с того, о ком знаете больше всего.",
       [
         [
           "Кофе-брейк",
-          "Двести чашек. В одной — кое-что ещё.",
-          "☕ Чашка с конференции"
+          "Двести чашек. В одной — кое-что ещё.",
+          "☕ Чашка с конференции"
         ],
         [
           "Бейдж",
@@ -1985,7 +1985,7 @@
         ],
         [
           "Заключительная речь",
-          "Докладчик так и не пришёл. Зал ждал.",
+          "Докладчик так и не пришёл. Зал ждал.",
           "📣 Трибуна"
         ]
       ]
@@ -1993,8 +1993,8 @@
     "hotel-6": [
       "Часть VI · Последняя ночь «Авроры»",
       "Отель закрывается навсегда. Персонал остаётся ещё на одну ночь. На одну ночь дольше, чем стоило.",
-      "Свет гаснет. «Гранд-отель Аврора» уходит в историю, и вы знаете каждую её страницу.",
-      "Последняя ночь и самые трудные дела отеля. Углы, стены, ряды: важно всё. Не спешите, звёзды подождут.",
+      "Свет гаснет. «Гранд-отель Аврора» уходит в историю, и вы знаете каждую её страницу.",
+      "Последняя ночь и самые трудные дела отеля. Углы, стены, ряды: важно всё. Не спешите, звёзды подождут.",
       [
         [
           "Ключи сданы",
@@ -2008,7 +2008,7 @@
         ],
         [
           "Пустой бассейн",
-          "Воды не было. А то, что лежало на дне, — было.",
+          "Воды не было. А то, что лежало на дне, — было.",
           "🏊 Плитка бассейна"
         ],
         [
@@ -2018,7 +2018,7 @@
         ],
         [
           "Пианист Феликс доигрывает",
-          "Последняя песня. Последняя нота так и не прозвучала.",
+          "Последняя песня. Последняя нота так и не прозвучала.",
           "🎼 Последние ноты"
         ],
         [
@@ -2027,8 +2027,8 @@
           "🔓 Открытый сейф"
         ],
         [
-          "Свет в номере 404",
-          "В номере, которого не существует, горел свет.",
+          "Свет в номере 404",
+          "В номере, которого не существует, горел свет.",
           "💡 Лампочка"
         ],
         [
@@ -2041,17 +2041,17 @@
     "ruimte": [
       "Часть I · Тревога",
       "Командир не выходит на вахту. Все шлюзы заблокированы.",
-      "Шлюзы остаются закрытыми. И тут антенна что-то ловит.",
-      "Станция «Орион», все шлюзы заблокированы. Экипаж говорит о модулях, а не о комнатах. В остальном всё как дома.",
+      "Шлюзы остаются закрытыми. И тут антенна что-то ловит.",
+      "Станция «Орион», все шлюзы заблокированы. Экипаж говорит о модулях, а не о комнатах. В остальном всё как дома.",
       [
         [
           "Тишина на мостике",
-          "Командир не вышла на связь. И больше не выйдет.",
+          "Командир не вышла на связь. И больше не выйдет.",
           "📓 Бортовой журнал"
         ],
         [
           "Лаборатория",
-          "Разбита пробирка. И алиби тоже.",
+          "Разбита пробирка. И алиби тоже.",
           "🧪 Пробирка"
         ],
         [
@@ -2081,8 +2081,8 @@
         ],
         [
           "Путь домой",
-          "В капсуле хватало места всем. Кроме одного.",
-          "🎫 Пропуск в капсулу"
+          "В капсуле хватало места всем. Кроме одного.",
+          "🎫 Пропуск в капсулу"
         ]
       ]
     ],
@@ -2094,7 +2094,7 @@
       [
         [
           "Сообщение",
-          "Сообщение пришло в 03:00. Его никто не слышал.",
+          "Сообщение пришло в 03:00. Его никто не слышал.",
           "📼 Запись"
         ],
         [
@@ -2128,7 +2128,7 @@
           "💽 Файл журнала"
         ],
         [
-          "Тишина в оранжерее",
+          "Тишина в оранжерее",
           "Растения росли. Больше ничего не двигалось.",
           "🍃 Лист из оранжереи"
         ]
@@ -2136,13 +2136,13 @@
     ],
     "ruimte-3": [
       "Часть III · Возвращение",
-      "В капсуле домой хватит места всем. Не все хотят лететь.",
-      "Капсула отстыковывается. Станция «Орион» продолжает вращаться — пустая и безмолвная.",
-      "Последний полёт. Ждите самых трудных дел кампании. Подсказка: кто был в модуле один, исключает оттуда всех остальных.",
+      "В капсуле домой хватит места всем. Не все хотят лететь.",
+      "Капсула отстыковывается. Станция «Орион» продолжает вращаться — пустая и безмолвная.",
+      "Последний полёт. Ждите самых трудных дел кампании. Подсказка: кто был в модуле один, исключает оттуда всех остальных.",
       [
         [
           "Первый цикл сна",
-          "Все спали по восемь часов. Один — девять.",
+          "Все спали по восемь часов. Один — девять.",
           "⏰ Будильник"
         ],
         [
@@ -2152,7 +2152,7 @@
         ],
         [
           "Протекающая труба",
-          "Вода текла в сторону лаборатории.",
+          "Вода текла в сторону лаборатории.",
           "🧴 Бутылка воды"
         ],
         [
@@ -2162,17 +2162,17 @@
         ],
         [
           "Доктор Нкемелу колеблется",
-          "Доктор знал больше, чем было в отчёте.",
+          "Доктор знал больше, чем было в отчёте.",
           "📄 Отчёт"
         ],
         [
           "Лаборатория опечатана",
-          "Дверь была заперта. С обеих сторон.",
+          "Дверь была заперта. С обеих сторон.",
           "🔏 Пломба лаборатории"
         ],
         [
           "Офицер Пас выбирает",
-          "В капсуле не хватало одного места.",
+          "В капсуле не хватало одного места.",
           "🪑 Кресло капсулы"
         ],
         [
@@ -2184,13 +2184,13 @@
     ],
     "ruimte-4": [
       "Часть IV · Перезапуск «Ориона»",
-      "Новый экипаж вводит станцию «Орион» в строй. Старые журналы стёрли. Но не до конца.",
+      "Новый экипаж вводит станцию «Орион» в строй. Старые журналы стёрли. Но не до конца.",
       "Станция снова работает. Отныне журналы хранятся.",
-      "«Орион» снова в строю, а модули расположены по-новому. Сначала вычеркните пустые модули — это половина работы.",
+      "«Орион» снова в строю, а модули расположены по-новому. Сначала вычеркните пустые модули — это половина работы.",
       [
         [
           "Перезапуск",
-          "Все системы в сети. Один член экипажа — нет.",
+          "Все системы в сети. Один член экипажа — нет.",
           "🔘 Кнопка пуска"
         ],
         [
@@ -2200,7 +2200,7 @@
         ],
         [
           "Биолог Рен выращивает",
-          "Грядка росла слишком быстро. Подозрения — тоже.",
+          "Грядка росла слишком быстро. Подозрения — тоже.",
           "🧫 Чашка Петри"
         ],
         [
@@ -2211,16 +2211,16 @@
         [
           "Повар Дима пробует",
           "Паёк был на вкус другим. По словам одного человека.",
-          "🥫 Банка с пайком"
+          "🥫 Банка с пайком"
         ],
         [
           "Солнечные панели",
-          "Станция развернулась к солнцу. Кто-то отдал приказ.",
+          "Станция развернулась к солнцу. Кто-то отдал приказ.",
           "☀️ Солнечная панель"
         ],
         [
           "Кадет Юки раздваивается",
-          "По графику Юки был в двух местах сразу.",
+          "По графику Юки был в двух местах сразу.",
           "📅 График дежурств"
         ],
         [
@@ -2232,28 +2232,28 @@
     ],
     "ruimte-5": [
       "Часть V · Чужая капсула",
-      "Капсула стыкуется без разрешения. Внутри — никого. Снаружи — экипаж, которому вдруг есть что сказать.",
-      "Капсулу отстыковали и оттолкнули. Что было внутри, знает только экипаж.",
-      "Чужая капсула и нервные люди. Показания с «левее» и «выше» относятся ко всей станции, а не к одному модулю.",
+      "Капсула стыкуется без разрешения. Внутри — никого. Снаружи — экипаж, которому вдруг есть что сказать.",
+      "Капсулу отстыковали и оттолкнули. Что было внутри, знает только экипаж.",
+      "Чужая капсула и нервные люди. Показания с «левее» и «выше» относятся ко всей станции, а не к одному модулю.",
       [
         [
           "Пусто, говорили они",
-          "Капсула была пуста. Кто-то в ней побывал.",
-          "👣 След в пыли"
+          "Капсула была пуста. Кто-то в ней побывал.",
+          "👣 След в пыли"
         ],
         [
           "Сигнал стыковки",
-          "Капсула вежливо представилась. И больше ни разу.",
+          "Капсула вежливо представилась. И больше ни разу.",
           "📡 Стыковочная антенна"
         ],
         [
           "Холодный модуль",
-          "Отказал обогрев. Ровно в одном модуле.",
+          "Отказал обогрев. Ровно в одном модуле.",
           "🌡️ Термометр"
         ],
         [
           "Инженер Вега открывает шлюз",
-          "Без разрешения. По уважительной причине — так она сказала.",
+          "Без разрешения. По уважительной причине — так она сказала.",
           "🔧 Ключ от шлюза"
         ],
         [
@@ -2263,26 +2263,26 @@
         ],
         [
           "Пилот Рейес считает",
-          "Курс был верным. Время — нет.",
+          "Курс был верным. Время — нет.",
           "🧮 Расчёт курса"
         ],
         [
           "Посылка",
-          "В капсуле лежала посылка. На одно имя.",
+          "В капсуле лежала посылка. На одно имя.",
           "📦 Посылка"
         ],
         [
           "Отстыковка",
-          "Капсула улетела. С тем, чего раньше в ней не было.",
+          "Капсула улетела. С тем, чего раньше в ней не было.",
           "🔗 Стыковочный узел"
         ]
       ]
     ],
     "ruimte-6": [
       "Часть VI · Последний виток",
-      "«Орион» покидают. Последний виток вокруг Земли — и капсула домой. Улететь хотят все. Смогут не все.",
-      "Капсула приземляется. Станция «Орион» сгорает в атмосфере со всеми своими тайнами. Кроме ваших.",
-      "Самые последние дела кампании — и самые трудные. Здесь сходится всё. Кто был в модуле один, исключает оттуда всех остальных: начните с этого.",
+      "«Орион» покидают. Последний виток вокруг Земли — и капсула домой. Улететь хотят все. Смогут не все.",
+      "Капсула приземляется. Станция «Орион» сгорает в атмосфере со всеми своими тайнами. Кроме ваших.",
+      "Самые последние дела кампании — и самые трудные. Здесь сходится всё. Кто был в модуле один, исключает оттуда всех остальных: начните с этого.",
       [
         [
           "Последний виток",
@@ -2291,7 +2291,7 @@
         ],
         [
           "Семь мест",
-          "В капсуле семь мест. В списке восемь имён.",
+          "В капсуле семь мест. В списке восемь имён.",
           "🪑 Седьмое кресло"
         ],
         [
@@ -2301,22 +2301,22 @@
         ],
         [
           "Ботаник Ферн подрезает",
-          "В оранжерее навели порядок. Тщательно.",
+          "В оранжерее навели порядок. Тщательно.",
           "🌿 Секатор"
         ],
         [
           "Датчик кислорода",
-          "Кислорода хватит всем. Одному — чуть меньше.",
+          "Кислорода хватит всем. Одному — чуть меньше.",
           "🫧 Датчик кислорода"
         ],
         [
           "Последнее сообщение домой",
-          "Сообщение было коротким. И не от командира.",
+          "Сообщение было коротким. И не от командира.",
           "📨 Последнее сообщение"
         ],
         [
-          "Стыковка в 04:00",
-          "Капсула ждала. Как и один член экипажа — в другом месте.",
+          "Стыковка в 04:00",
+          "Капсула ждала. Как и один член экипажа — в другом месте.",
           "⏱️ Секундомер"
         ],
         [
@@ -2328,9 +2328,9 @@
     ],
     "museum": [
       "Часть I · После закрытия",
-      "Музей закрывается в пять. В шесть главный хранитель лежит среди статуй, а все двери заперты.",
-      "Первая ночь позади. Музей остаётся закрытым, вопросы — открытыми.",
-      "В музее много залов и мало людей. Начните с тех, кто называет свой зал, и следите за витринами: «прямо рядом» — это только соседняя клетка, не по диагонали.",
+      "Музей закрывается в пять. В шесть главный хранитель лежит среди статуй, а все двери заперты.",
+      "Первая ночь позади. Музей остаётся закрытым, вопросы — открытыми.",
+      "В музее много залов и мало людей. Начните с тех, кто называет свой зал, и следите за витринами: «прямо рядом» — это только соседняя клетка, не по диагонали.",
       [
         [
           "После закрытия",
@@ -2339,7 +2339,7 @@
         ],
         [
           "Саркофаг",
-          "Крышка была сдвинута. А должна была быть закрыта.",
+          "Крышка была сдвинута. А должна была быть закрыта.",
           "⚱️ Канопа"
         ],
         [
@@ -2369,16 +2369,16 @@
         ],
         [
           "Последний посетитель",
-          "На камере — один гость, который так и не вышел.",
-          "📹 Запись с камеры"
+          "На камере — один гость, который так и не вышел.",
+          "📹 Запись с камеры"
         ]
       ]
     ],
     "museum-2": [
       "Часть II · Пропавший бриллиант",
       "Бриллиант Влирбека исчез из хранилища. Полиция оцепляет музей. Кто был внутри, остаётся внутри.",
-      "Бриллиант вернулся. Как и тот, у кого он был.",
-      "Кража и убийство: люди лгут о том, где были. Два показания, которые противоречат друг другу, не могут быть верны одновременно; начните с того, в чём уверены.",
+      "Бриллиант вернулся. Как и тот, у кого он был.",
+      "Кража и убийство: люди лгут о том, где были. Два показания, которые противоречат друг другу, не могут быть верны одновременно; начните с того, в чём уверены.",
       [
         [
           "Пустое хранилище",
@@ -2402,12 +2402,12 @@
         ],
         [
           "Фальшивый пол",
-          "Под ковром был люк. Под люком — пыль.",
+          "Под ковром был люк. Под люком — пыль.",
           "🚪 Люк"
         ],
         [
           "Реставратор Ирис полирует",
-          "Она работала над картиной, которой не место в мастерской.",
+          "Она работала над картиной, которой не место в мастерской.",
           "🖌️ Кисть"
         ],
         [
@@ -2417,16 +2417,16 @@
         ],
         [
           "Камень Влирбека",
-          "Бриллиант лежал в зале, где никто не искал.",
+          "Бриллиант лежал в зале, где никто не искал.",
           "💎 Бриллиант"
         ]
       ]
     ],
     "museum-3": [
       "Часть III · Выставка",
-      "Торжественное открытие. Триста гостей, один докладчик и зал, который запирают раньше, чем кончится шампанское.",
+      "Торжественное открытие. Триста гостей, один докладчик и зал, который запирают раньше, чем кончится шампанское.",
       "Выставка продолжается. На стене одной картиной меньше.",
-      "На открытии по одним и тем же залам ходит много людей. Показания о рядах и столбцах проходят прямо сквозь стены: пользуйтесь Карандашом.",
+      "На открытии по одним и тем же залам ходит много людей. Показания о рядах и столбцах проходят прямо сквозь стены: пользуйтесь Карандашом.",
       [
         [
           "Открытие",
@@ -2434,18 +2434,18 @@
           "🎀 Ленточка"
         ],
         [
-          "Шампанское в вестибюле",
-          "Сто бокалов. На одном — лишний отпечаток.",
+          "Шампанское в вестибюле",
+          "Сто бокалов. На одном — лишний отпечаток.",
           "🥂 Бокал шампанского"
         ],
         [
           "Профессор Адебайо выступает",
-          "Его лекция длилась двадцать минут. Его алиби — десять.",
+          "Его лекция длилась двадцать минут. Его алиби — десять.",
           "📖 Лекция"
         ],
         [
           "Не тот зал",
-          "Зал 4 был закрыт. Вопреки программе.",
+          "Зал 4 был закрыт. Вопреки программе.",
           "🚧 Лента ограждения"
         ],
         [
@@ -2460,11 +2460,11 @@
         ],
         [
           "Куратор Эллери молчит",
-          "Он знал, какая картина — подделка. И промолчал.",
+          "Он знал, какая картина — подделка. И промолчал.",
           "🏷️ Табличка"
         ],
         [
-          "Свет гаснет в зале 7",
+          "Свет гаснет в зале 7",
           "Свет отказал. Когда он зажёгся, кого-то не хватало.",
           "💡 Лампа зала"
         ]
@@ -2472,18 +2472,18 @@
     ],
     "museum-4": [
       "Часть IV · Запасник",
-      "В подвалах лежат десять тысяч предметов, которых никто никогда не видит. Кто-то увидел один лишний.",
-      "Запасник снова заперт. Опись сходится — вся, кроме одного имени.",
-      "Запасник — лабиринт из ящиков. Сначала вычеркните пустые залы: останется немного.",
+      "В подвалах лежат десять тысяч предметов, которых никто никогда не видит. Кто-то увидел один лишний.",
+      "Запасник снова заперт. Опись сходится — вся, кроме одного имени.",
+      "Запасник — лабиринт из ящиков. Сначала вычеркните пустые залы: останется немного.",
       [
         [
           "Ящик 4471",
-          "Ящик стоял открытым. А был закрыт сто лет.",
+          "Ящик стоял открытым. А был закрыт сто лет.",
           "📦 Ящик 4471"
         ],
         [
           "Погребальная маска",
-          "Маска лежала рядом с саркофагом. Не внутри.",
+          "Маска лежала рядом с саркофагом. Не внутри.",
           "🎭 Погребальная маска"
         ],
         [
@@ -2508,13 +2508,13 @@
         ],
         [
           "Разбитая ваза",
-          "Тысяча лет — и сегодня одни черепки.",
+          "Тысяча лет — и сегодня одни черепки.",
           "🏺 Черепок"
         ],
         [
           "Под музеем",
           "Под запасником был ещё один коридор.",
-          "🧱 Дверь в подвал"
+          "🧱 Дверь в подвал"
         ]
       ]
     ],
@@ -2522,21 +2522,21 @@
       "Часть V · Ночь динозавров",
       "Детская ночь: сотня детей спит среди скелетов. Когда зажжётся свет, кто-то не проснётся.",
       "Детей забрали. Скелет снова цел.",
-      "Много маленьких свидетелей и много путаницы. Показания сразу о двоих: сначала определите того, о ком знаете больше всего.",
+      "Много маленьких свидетелей и много путаницы. Показания сразу о двоих: сначала определите того, о ком знаете больше всего.",
       [
         [
-          "Спальники в вестибюле",
+          "Спальники в вестибюле",
           "Сто спальников. Один был пуст.",
           "🛌 Спальник"
         ],
         [
-          "Сказка у костра",
+          "Сказка у костра",
           "Экскурсовод Марго рассказала историю. Конец сбылся.",
           "📚 Книга сказок"
         ],
         [
           "Пропавший зуб",
-          "У тираннозавра пропал зуб. У зуба пропал тираннозавр.",
+          "У тираннозавра пропал зуб. У зуба пропал тираннозавр.",
           "🦷 Зуб динозавра"
         ],
         [
@@ -2561,7 +2561,7 @@
         ],
         [
           "Последний динозавр",
-          "Когда зажигается свет, в зале оказывается лишний человек.",
+          "Когда зажигается свет, в зале оказывается лишний человек.",
           "🦖 Фигурка динозавра"
         ]
       ]
@@ -2570,11 +2570,11 @@
       "Часть VI · Тайна Влирбека",
       "За египетским залом есть дверь, которой нет ни на одном плане. То, что за ней, старше самого музея.",
       "Дверь замурована. Завтра музей откроется как обычно. Вы знаете, что было за ней.",
-      "Последняя часть музея и самые трудные дела. Возвращается всё: углы, мебель, ряды. Никого не ставьте, пока не уверены.",
+      "Последняя часть музея и самые трудные дела. Возвращается всё: углы, мебель, ряды. Никого не ставьте, пока не уверены.",
       [
         [
           "Дверь за залом",
-          "За саркофагом была дверь. Кто-то о ней знал.",
+          "За саркофагом была дверь. Кто-то о ней знал.",
           "🧱 Шатающийся камень"
         ],
         [
@@ -2594,17 +2594,17 @@
         ],
         [
           "Арт-дилер Люциан признаётся",
-          "Он признался в краже. Не в убийстве.",
+          "Он признался в краже. Не в убийстве.",
           "🧾 Признание"
         ],
         [
           "Потайной зал",
-          "Ни окон, ни дверей — а шаги есть.",
-          "👣 След в пыли"
+          "Ни окон, ни дверей — а шаги есть.",
+          "👣 След в пыли"
         ],
         [
           "Куратор Эллери делает выбор",
-          "Спасти он мог что-то одно. И выбрал не то.",
+          "Спасти он мог что-то одно. И выбрал не то.",
           "⚖️ Весы"
         ],
         [
@@ -2616,12 +2616,12 @@
     ],
     "trein": [
       "Часть I · Отправление",
-      "Ночной поезд отправляется в восемь. В девять проводник лежит в вагоне-ресторане, а поезд не остановится до рассвета.",
-      "Поезд едет сквозь ночь. Пассажиры — тоже.",
-      "Поезд длинный и узкий: вагоны идут один за другим. «Левее» и «выше» относятся ко всему плану, а не к одному вагону.",
+      "Ночной поезд отправляется в восемь. В девять проводник лежит в вагоне-ресторане, а поезд не остановится до рассвета.",
+      "Поезд едет сквозь ночь. Пассажиры — тоже.",
+      "Поезд длинный и узкий: вагоны идут один за другим. «Левее» и «выше» относятся ко всему плану, а не к одному вагону.",
       [
         [
-          "Отправление в восемь",
+          "Отправление в восемь",
           "Раздался свисток. Один пассажир его уже не услышал.",
           "🎫 Билет"
         ],
@@ -2631,7 +2631,7 @@
           "🔖 Пробитый билет"
         ],
         [
-          "Чемодан в купе А",
+          "Чемодан в купе А",
           "Чемодан был ничей. Так говорили все.",
           "🧳 Дорожный сундук"
         ],
@@ -2642,7 +2642,7 @@
         ],
         [
           "Чай из самовара",
-          "Вода кипела. А чай стоял холодный.",
+          "Вода кипела. А чай стоял холодный.",
           "🫖 Стакан чая"
         ],
         [
@@ -2652,8 +2652,8 @@
         ],
         [
           "Баронесса фон Шталь жалуется",
-          "Постель была слишком жёсткой, ночь — слишком длинной.",
-          "💍 Перстень с печаткой"
+          "Постель была слишком жёсткой, ночь — слишком длинной.",
+          "💍 Перстень с печаткой"
         ],
         [
           "Зажигается свет",
@@ -2664,28 +2664,28 @@
     ],
     "trein-2": [
       "Часть II · Снег",
-      "Поезд стоит в снегу. Ни станции, ни помощи, а преступник всё ещё в поезде.",
-      "Приходит снегоочиститель. Поезд едет дальше — с одним пустым купе.",
-      "Застряли в снегу: все видели всех. В таком узком поезде «прямо рядом» на вес золота: каждая клетка на счету.",
+      "Поезд стоит в снегу. Ни станции, ни помощи, а преступник всё ещё в поезде.",
+      "Приходит снегоочиститель. Поезд едет дальше — с одним пустым купе.",
+      "Застряли в снегу: все видели всех. В таком узком поезде «прямо рядом» на вес золота: каждая клетка на счету.",
       [
         [
           "Остановка",
-          "Поезд остановился. А кто-то — нет.",
+          "Поезд остановился. А кто-то — нет.",
           "⏱️ Карманные часы"
         ],
         [
           "Кочегар Жюль бросает уголь",
-          "Угля не осталось. Кроме как в одном вагоне.",
+          "Угля не осталось. Кроме как в одном вагоне.",
           "⚫ Кусок угля"
         ],
         [
           "Следы на снегу",
-          "Следы к поезду. Обратно — нет.",
+          "Следы к поезду. Обратно — нет.",
           "👢 Зимний сапог"
         ],
         [
           "Медсестра Хедда помогает",
-          "Она помогала всем. Одному — слишком усердно.",
+          "Она помогала всем. Одному — слишком усердно.",
           "💊 Коробочка для таблеток"
         ],
         [
@@ -2694,13 +2694,13 @@
           "🧊 Сосулька"
         ],
         [
-          "Партия в покер",
+          "Партия в покер",
           "Четыре игрока, три расклада.",
           "🃏 Игральная карта"
         ],
         [
           "Актриса Лола репетирует",
-          "Текст роли был верным. Алиби — нет.",
+          "Текст роли был верным. Алиби — нет.",
           "📜 Сценарий"
         ],
         [
@@ -2712,9 +2712,9 @@
     ],
     "trein-3": [
       "Часть III · Граница",
-      "На границе в поезд садятся таможенники. Все показывают документы. Один паспорт фальшивый.",
-      "Граница пройдена. Паспорт остаётся — вместе с владельцем.",
-      "На границе все лгут о своём имени. Показания о рядах и столбцах проходят прямо сквозь вагоны: пользуйтесь Карандашом.",
+      "На границе в поезд садятся таможенники. Все показывают документы. Один паспорт фальшивый.",
+      "Граница пройдена. Паспорт остаётся — вместе с владельцем.",
+      "На границе все лгут о своём имени. Показания о рядах и столбцах проходят прямо сквозь вагоны: пользуйтесь Карандашом.",
       [
         [
           "Таможня",
@@ -2723,12 +2723,12 @@
         ],
         [
           "Фальшивый паспорт",
-          "Фото совпадало. Имя — нет.",
+          "Фото совпадало. Имя — нет.",
           "🪪 Паспорт"
         ],
         [
           "Путешественник Сами торгует",
-          "Он продавал часы. И кое-что ещё.",
+          "Он продавал часы. И кое-что ещё.",
           "⌚ Часы"
         ],
         [
@@ -2753,19 +2753,19 @@
         ],
         [
           "Пограничный пост",
-          "На границе кто-то сошёл с поезда. Без билета.",
+          "На границе кто-то сошёл с поезда. Без билета.",
           "🚧 Шлагбаум"
         ]
       ]
     ],
     "trein-4": [
       "Часть IV · Восточный маршрут",
-      "Год спустя — тот же поезд, тот же путь на восток. Кое-кто из пассажиров вернулся. Зря.",
-      "Поезд прибывает в Стамбул. Путешествие окончено — почти для всех.",
+      "Год спустя — тот же поезд, тот же путь на восток. Кое-кто из пассажиров вернулся. Зря.",
+      "Поезд прибывает в Стамбул. Путешествие окончено — почти для всех.",
       "Те же лица, на год старше. Читайте каждое показание дважды: тот, кто говорит, где его НЕ было, тоже кое-что сообщает.",
       [
         [
-          "Снова в пути",
+          "Снова в пути",
           "То же купе. Другая причина.",
           "🗓️ Дорожный дневник"
         ],
@@ -2786,7 +2786,7 @@
         ],
         [
           "Кочегар Жюль видит всё",
-          "С паровоза он видел каждый вагон. По его словам.",
+          "С паровоза он видел каждый вагон. По его словам.",
           "🔥 Угольная лопата"
         ],
         [
@@ -2807,13 +2807,13 @@
       ]
     ],
     "trein-5": [
-      "Часть V · Праздник в вагоне-салоне",
-      "Новогодняя ночь в вагоне-салоне. В двенадцать гаснет свет. В пять минут первого кого-то не хватает.",
-      "Начинается новый год. В вагоне-салоне прибрано — всё, кроме одного кресла.",
-      "Праздник в узком вагоне: много людей, мало места. Начните с того, кто говорит, что был один: это сразу исключает целый вагон для всех остальных.",
+      "Часть V · Праздник в вагоне-салоне",
+      "Новогодняя ночь в вагоне-салоне. В двенадцать гаснет свет. В пять минут первого кого-то не хватает.",
+      "Начинается новый год. В вагоне-салоне прибрано — всё, кроме одного кресла.",
+      "Праздник в узком вагоне: много людей, мало места. Начните с того, кто говорит, что был один: это сразу исключает целый вагон для всех остальных.",
       [
         [
-          "Полночь в поезде",
+          "Полночь в поезде",
           "Двенадцать ударов. Один крик.",
           "🎉 Дудка"
         ],
@@ -2824,7 +2824,7 @@
         ],
         [
           "Актриса Лола поёт",
-          "Её слышали в салоне. И в баре. Невозможно.",
+          "Её слышали в салоне. И в баре. Невозможно.",
           "🎤 Микрофон"
         ],
         [
@@ -2844,7 +2844,7 @@
         ],
         [
           "Фейерверк",
-          "Снаружи фейерверк. Внутри — выстрел.",
+          "Снаружи фейерверк. Внутри — выстрел.",
           "🎆 Ракета"
         ],
         [
@@ -2857,17 +2857,17 @@
     "trein-6": [
       "Часть VI · Конечная",
       "Последний рейс ночного поезда. На конечной его отправят на слом. Кто-то не хочет этого видеть.",
-      "Конечная. Поезд — на слом, преступник — в полицию, а вы — домой.",
-      "Самые последние дела поезда — и самые трудные. Кто был в вагоне один, исключает оттуда всех остальных: начните с этого.",
+      "Конечная. Поезд — на слом, преступник — в полицию, а вы — домой.",
+      "Самые последние дела поезда — и самые трудные. Кто был в вагоне один, исключает оттуда всех остальных: начните с этого.",
       [
         [
           "Последний рейс",
-          "Свисток прозвучал в последний раз.",
+          "Свисток прозвучал в последний раз.",
           "🚂 Свисток"
         ],
         [
           "Шахматист Иво сдаётся",
-          "Он сдал партию. И кое-что ещё.",
+          "Он сдал партию. И кое-что ещё.",
           "♚ Король"
         ],
         [
@@ -2904,14 +2904,14 @@
     ],
     "circus": [
       "Часть I · Последнее представление",
-      "Последнее представление сезона. Зрители разошлись, шатёр закрывается, а директор Зано лежит на манеже.",
-      "Шатёр стоит. Артисты тоже остаются — пока полиция не закончит.",
-      "Цирк — это один большой шатёр со множеством закоулков. Начните с тех, кто говорит, где был; «прямо рядом» — только соседняя клетка, даже если рядом пушка.",
+      "Последнее представление сезона. Зрители разошлись, шатёр закрывается, а директор Зано лежит на манеже.",
+      "Шатёр стоит. Артисты тоже остаются — пока полиция не закончит.",
+      "Цирк — это один большой шатёр со множеством закоулков. Начните с тех, кто говорит, где был; «прямо рядом» — только соседняя клетка, даже если рядом пушка.",
       [
         [
           "Последнее представление",
           "Аплодисменты стихли. Один артист не вышел на поклон.",
-          "🎟️ Билет в цирк"
+          "🎟️ Билет в цирк"
         ],
         [
           "Пустая пушка",
@@ -2920,7 +2920,7 @@
         ],
         [
           "Клоун Пиппо не смеётся",
-          "Впервые за двадцать лет. И это был не номер.",
+          "Впервые за двадцать лет. И это был не номер.",
           "🔴 Клоунский нос"
         ],
         [
@@ -2930,7 +2930,7 @@
         ],
         [
           "Попкорн на манеже",
-          "Дорожка из попкорна — от кассы до манежа.",
+          "Дорожка из попкорна — от кассы до манежа.",
           "🍿 Пакет попкорна"
         ],
         [
@@ -2940,7 +2940,7 @@
         ],
         [
           "Гадалка Зора знала",
-          "Она это предсказала. Потому её и подозревают.",
+          "Она это предсказала. Потому её и подозревают.",
           "🔮 Хрустальный шар"
         ],
         [
@@ -2952,9 +2952,9 @@
     ],
     "circus-2": [
       "Часть II · Пропавший лев",
-      "Лев исчез из клетки. Ограда заперта. Кто-то его выпустил, и кого-то больше нет.",
-      "Лев снова спит. А тот, кто открыл клетку, — нет.",
-      "Лев на свободе: все нервничают и говорят коротко. Показания о двоих: сначала определите того, о ком знаете больше всего.",
+      "Лев исчез из клетки. Ограда заперта. Кто-то его выпустил, и кого-то больше нет.",
+      "Лев снова спит. А тот, кто открыл клетку, — нет.",
+      "Лев на свободе: все нервничают и говорят коротко. Показания о двоих: сначала определите того, о ком знаете больше всего.",
       [
         [
           "Открытая клетка",
@@ -2962,8 +2962,8 @@
           "🔓 Засов"
         ],
         [
-          "Следы в опилках",
-          "Лапы — налево, сапоги — направо.",
+          "Следы в опилках",
+          "Лапы — налево, сапоги — направо.",
           "🐾 След лапы"
         ],
         [
@@ -2978,7 +2978,7 @@
         ],
         [
           "Жонглёр Тео роняет булаву",
-          "Впервые. Именно в этот момент.",
+          "Впервые. Именно в этот момент.",
           "🎳 Булава"
         ],
         [
@@ -3000,9 +3000,9 @@
     ],
     "circus-3": [
       "Часть III · Зеркальный лабиринт",
-      "Новый аттракцион: шатёр, полный зеркал. Кто входит, видит себя сто раз. Один человек так и не вышел.",
+      "Новый аттракцион: шатёр, полный зеркал. Кто входит, видит себя сто раз. Один человек так и не вышел.",
       "Зеркала упакованы. Одно из них разбито.",
-      "В зеркальном лабиринте всё кажется двойным. Показания о рядах и столбцах проходят прямо сквозь стены: пользуйтесь Карандашом.",
+      "В зеркальном лабиринте всё кажется двойным. Показания о рядах и столбцах проходят прямо сквозь стены: пользуйтесь Карандашом.",
       [
         [
           "Сто зеркал",
@@ -3011,7 +3011,7 @@
         ],
         [
           "Силач Борис поднимает",
-          "Он в одиночку поднял зеркальный шкаф. По его словам.",
+          "Он в одиночку поднял зеркальный шкаф. По его словам.",
           "🏋️ Гантель"
         ],
         [
@@ -3026,12 +3026,12 @@
         ],
         [
           "Отражение лжёт",
-          "В зеркале стоял кто-то другой.",
+          "В зеркале стоял кто-то другой.",
           "🧿 Зеркальное стекло"
         ],
         [
           "Гимнастка Мира падает",
-          "Она никогда не падала. Сегодня упала — нарочно.",
+          "Она никогда не падала. Сегодня упала — нарочно.",
           "🎗️ Страховочная сетка"
         ],
         [
@@ -3048,7 +3048,7 @@
     ],
     "circus-4": [
       "Часть IV · Гастроли",
-      "Цирк едет дальше, из города в город. В дороге труппа не меняется. Меняются подозрения.",
+      "Цирк едет дальше, из города в город. В дороге труппа не меняется. Меняются подозрения.",
       "Фургоны катятся дальше. Один фургон катится пустым.",
       "Те же лица, другой город. Читайте каждое показание дважды: тот, кто говорит, где его НЕ было, тоже кое-что сообщает.",
       [
@@ -3069,11 +3069,11 @@
         ],
         [
           "Барабан",
-          "В полночь заговорил барабан. Никто не играл.",
+          "В полночь заговорил барабан. Никто не играл.",
           "🥁 Барабан"
         ],
         [
-          "Повар в столовой",
+          "Повар в столовой",
           "Еда была готова. Одна тарелка осталась полной.",
           "🍲 Миска супа"
         ],
@@ -3084,21 +3084,21 @@
         ],
         [
           "Ночь без звёзд",
-          "Тучи. Кто-то знал дорогу в темноте.",
+          "Тучи. Кто-то знал дорогу в темноте.",
           "🌑 Тёмный фонарь"
         ],
         [
           "Гадалка Зора признаётся",
-          "Она призналась в предсказании. Не в деле.",
+          "Она призналась в предсказании. Не в деле.",
           "🃏 Карта таро"
         ]
       ]
     ],
     "circus-5": [
       "Часть V · Новый директор",
-      "У цирка новый директор. Довольны не все. Торжественный вечер заканчивается тишиной.",
+      "У цирка новый директор. Довольны не все. Торжественный вечер заканчивается тишиной.",
       "Кресло директора снова пусто. Второй раз за сезон.",
-      "Гала-вечер в полном шатре: много людей, мало места. Начните с того, кто говорит, что был один: это сразу исключает целую зону для всех остальных.",
+      "Гала-вечер в полном шатре: много людей, мало места. Начните с того, кто говорит, что был один: это сразу исключает целую зону для всех остальных.",
       [
         [
           "Гала-вечер",
@@ -3107,7 +3107,7 @@
         ],
         [
           "Цилиндр",
-          "Цилиндр директора лежал в столовой.",
+          "Цилиндр директора лежал в столовой.",
           "🎩 Цилиндр директора"
         ],
         [
@@ -3117,12 +3117,12 @@
         ],
         [
           "Фейерверк",
-          "Снаружи фейерверк. Внутри — выстрел.",
+          "Снаружи фейерверк. Внутри — выстрел.",
           "🎆 Ракета"
         ],
         [
           "Ветеринар Надя дежурит",
-          "Она дежурила у льва. По её словам.",
+          "Она дежурила у льва. По её словам.",
           "🩺 Стетоскоп"
         ],
         [
@@ -3145,12 +3145,12 @@
     "circus-6": [
       "Часть VI · Шатёр разбирают",
       "Цирк закрывается навсегда. Последний вечер, последний номер, последний шанс исчезнуть.",
-      "Шатёр разбирают. Опилки сметают, а с ними и последний след.",
-      "Самые последние дела цирка — и самые трудные. Кто был в зоне один, исключает оттуда всех остальных: начните с этого.",
+      "Шатёр разбирают. Опилки сметают, а с ними и последний след.",
+      "Самые последние дела цирка — и самые трудные. Кто был в зоне один, исключает оттуда всех остальных: начните с этого.",
       [
         [
           "Последний вечер",
-          "В последний раз шатёр был полон.",
+          "В последний раз шатёр был полон.",
           "🎟️ Последний билет"
         ],
         [
@@ -3170,7 +3170,7 @@
         ],
         [
           "Последний костёр",
-          "Все сидели у костра. Кроме одного.",
+          "Все сидели у костра. Кроме одного.",
           "🔥 Костёр"
         ],
         [
@@ -3185,20 +3185,20 @@
         ],
         [
           "Шатёр разбирают",
-          "Последний вопрос — под последним полотном.",
+          "Последний вопрос — под последним полотном.",
           "🎪 Полотно шатра"
         ]
       ]
     ],
     "skihut": [
       "Часть I · Лавина",
-      "Лавина отрезала долину. Семь гостей, одна печка и хозяин у огня, который больше не согреется.",
-      "Дорога всё ещё закрыта. Гости остаются — хотят они того или нет.",
-      "Горный приют маленький и тёплый, все друг у друга на виду. Начните с тех, кто называет помещение, где был; следите за печкой: «прямо рядом» — только соседняя клетка.",
+      "Лавина отрезала долину. Семь гостей, одна печка и хозяин у огня, который больше не согреется.",
+      "Дорога всё ещё закрыта. Гости остаются — хотят они того или нет.",
+      "Горный приют маленький и тёплый, все друг у друга на виду. Начните с тех, кто называет помещение, где был; следите за печкой: «прямо рядом» — только соседняя клетка.",
       [
         [
           "Лавина",
-          "Гора обрушилась. Хозяин — тоже.",
+          "Гора обрушилась. Хозяин — тоже.",
           "❄️ Снежинка"
         ],
         [
@@ -3218,12 +3218,12 @@
         ],
         [
           "Спасатель Бьорн копает",
-          "Он расчистил дорогу. Не в ту сторону.",
+          "Он расчистил дорогу. Не в ту сторону.",
           "⛏️ Лопата для снега"
         ],
         [
           "Сауна",
-          "Сауна была включена. В ней никто не сидел. И всё же она была нагрета.",
+          "Сауна была включена. В ней никто не сидел. И всё же она была нагрета.",
           "🧖 Полотенце"
         ],
         [
@@ -3232,7 +3232,7 @@
           "📷 Фотоплёнка"
         ],
         [
-          "Ночь в приюте",
+          "Ночь в приюте",
           "Первая ночь. Последняя для одного из гостей.",
           "🕯️ Свеча"
         ]
@@ -3242,11 +3242,11 @@
       "Часть II · Белая мгла",
       "Метель застилает всё. Снаружи не видно ни зги. Внутри кто-то видит свой шанс.",
       "Метель стихает. Снег укрывает всё, кроме правды.",
-      "Белая мгла: все говорят о том, чего не видели. Сначала вычеркните пустые помещения — остальное сократится само собой.",
+      "Белая мгла: все говорят о том, чего не видели. Сначала вычеркните пустые помещения — остальное сократится само собой.",
       [
         [
           "Ни зги не видно",
-          "Метель началась в три. В четыре кого-то не стало.",
+          "Метель началась в три. В четыре кого-то не стало.",
           "🌫️ Горнолыжные очки"
         ],
         [
@@ -3261,7 +3261,7 @@
         ],
         [
           "Туристка Хана заблудилась",
-          "Она не знала приюта. И всё же нашла подвал.",
+          "Она не знала приюта. И всё же нашла подвал.",
           "🗺️ План приюта"
         ],
         [
@@ -3271,12 +3271,12 @@
         ],
         [
           "Доктор Ингрид осматривает",
-          "Она осмотрела всех. Одного — слишком долго.",
+          "Она осмотрела всех. Одного — слишком долго.",
           "🩹 Бинт"
         ],
         [
           "Радио",
-          "Радио поймало одну фразу. Потом — треск.",
+          "Радио поймало одну фразу. Потом — треск.",
           "📻 Радио"
         ],
         [
@@ -3288,9 +3288,9 @@
     ],
     "skihut-3": [
       "Часть III · Ночь бури",
-      "Вторая буря сильнее. Пропадает электричество, приют погружается во тьму, и кто-то этим пользуется.",
-      "На рассвете дают свет. В приюте на одного гостя меньше.",
-      "Света нет, горят свечи: показания о рядах и столбцах проходят прямо сквозь стены. Пользуйтесь Карандашом.",
+      "Вторая буря сильнее. Пропадает электричество, приют погружается во тьму, и кто-то этим пользуется.",
+      "На рассвете дают свет. В приюте на одного гостя меньше.",
+      "Света нет, горят свечи: показания о рядах и столбцах проходят прямо сквозь стены. Пользуйтесь Карандашом.",
       [
         [
           "Свет погас",
@@ -3298,7 +3298,7 @@
           "🔌 Пробка"
         ],
         [
-          "Свечи в общем зале",
+          "Свечи в общем зале",
           "Семь свечей. Одну задули.",
           "🕯️ Огарок"
         ],
@@ -3309,12 +3309,12 @@
         ],
         [
           "Склад лыж",
-          "Одна пара лыж была мокрой. В доме снег не идёт.",
+          "Одна пара лыж была мокрой. В доме снег не идёт.",
           "🎿 Мокрая лыжа"
         ],
         [
           "Гид Фрейя знает дорогу",
-          "Она знала каждую тропу. Даже в темноте.",
+          "Она знала каждую тропу. Даже в темноте.",
           "🧭 Компас"
         ],
         [
@@ -3324,7 +3324,7 @@
         ],
         [
           "Спасатель Бьорн не спит",
-          "Он дежурил. Не у той двери.",
+          "Он дежурил. Не у той двери.",
           "🔦 Налобный фонарь"
         ],
         [
@@ -3338,7 +3338,7 @@
       "Часть IV · Оттепель",
       "Возвращается солнце, тает снег. То, что лежало под снегом, выходит на свет.",
       "Дорога снова открыта. Домой едут не все.",
-      "С оттепелью проступают следы. Читайте каждое показание дважды: тот, кто говорит, где его НЕ было, тоже кое-что сообщает.",
+      "С оттепелью проступают следы. Читайте каждое показание дважды: тот, кто говорит, где его НЕ было, тоже кое-что сообщает.",
       [
         [
           "Первая оттепель",
@@ -3347,13 +3347,13 @@
         ],
         [
           "Инструктор Астрид даёт урок",
-          "Одному ученику. Он так и не вернулся.",
+          "Одному ученику. Он так и не вернулся.",
           "🏂 Абонемент"
         ],
         [
           "Терраса",
-          "Террасу снова открыли. Стул у ограды остался пустым.",
-          "🪑 Стул с террасы"
+          "Террасу снова открыли. Стул у ограды остался пустым.",
+          "🪑 Стул с террасы"
         ],
         [
           "Кладовая",
@@ -3362,7 +3362,7 @@
         ],
         [
           "Повар Луиджи ищет нож",
-          "Одиннадцать ножей. А должно быть двенадцать.",
+          "Одиннадцать ножей. А должно быть двенадцать.",
           "🔪 Кухонный нож"
         ],
         [
@@ -3372,21 +3372,21 @@
         ],
         [
           "Фотограф Эмиль проявляет",
-          "На последнем снимке — приют и одно светящееся окно.",
+          "На последнем снимке — приют и одно светящееся окно.",
           "🖼️ Фотография"
         ],
         [
           "Дорога открыта",
-          "Первая машина уехала. Одного места в ней не хватило.",
+          "Первая машина уехала. Одного места в ней не хватило.",
           "🚗 Ключ от машины"
         ]
       ]
     ],
     "skihut-5": [
       "Часть V · Лыжная вечеринка",
-      "Сезон заканчивается вечеринкой. Музыка, глинтвейн, а в полночь — крик с чердака.",
-      "Вечеринка окончена. Глинтвейн остыл, в приюте тихо.",
-      "Вечеринка в маленьком приюте: много людей, мало места. Начните с того, кто говорит, что был один: это сразу исключает целое помещение для всех остальных.",
+      "Сезон заканчивается вечеринкой. Музыка, глинтвейн, а в полночь — крик с чердака.",
+      "Вечеринка окончена. Глинтвейн остыл, в приюте тихо.",
+      "Вечеринка в маленьком приюте: много людей, мало места. Начните с того, кто говорит, что был один: это сразу исключает целое помещение для всех остальных.",
       [
         [
           "Глинтвейн",
@@ -3405,7 +3405,7 @@
         ],
         [
           "Фейерверк над горой",
-          "Снаружи фейерверк. Внутри — выстрел.",
+          "Снаружи фейерверк. Внутри — выстрел.",
           "🎆 Ракета"
         ],
         [
@@ -3415,7 +3415,7 @@
         ],
         [
           "Чердак",
-          "Крик донёсся с чердака. Наверху никого не было. Так говорили все.",
+          "Крик донёсся с чердака. Наверху никого не было. Так говорили все.",
           "🪜 Лестница на чердак"
         ],
         [
@@ -3424,32 +3424,32 @@
           "🧸 Плюшевый мишка"
         ],
         [
-          "Полночь в горах",
-          "Когда зажёгся свет, в общем зале оказался лишний человек.",
+          "Полночь в горах",
+          "Когда зажёгся свет, в общем зале оказался лишний человек.",
           "🔔 Коровий колокольчик"
         ]
       ]
     ],
     "skihut-6": [
       "Часть VI · Последний спуск",
-      "Приют закрывается. Последний спуск для всех — в долину. До низа доберутся не все.",
+      "Приют закрывается. Последний спуск для всех — в долину. До низа доберутся не все.",
       "Приют закрыт, снег снова лежит спокойно. Вы знаете, что лежало под ним.",
-      "Самые последние дела приюта — и самые трудные. Кто был в помещении один, исключает оттуда всех остальных: начните с этого.",
+      "Самые последние дела приюта — и самые трудные. Кто был в помещении один, исключает оттуда всех остальных: начните с этого.",
       [
         [
           "Последнее утро",
-          "Печка горела в последний раз.",
+          "Печка горела в последний раз.",
           "🔥 Последняя искра"
         ],
         [
           "Гид Фрейя выбирает маршрут",
-          "Два пути вниз. Безопасный — один.",
+          "Два пути вниз. Безопасный — один.",
           "🪧 Указатель"
         ],
         [
           "Подвал",
-          "В подвал никто никогда не спускался. Кто-то всё-таки спустился.",
-          "🧱 Дверь в подвал"
+          "В подвал никто никогда не спускался. Кто-то всё-таки спустился.",
+          "🧱 Дверь в подвал"
         ],
         [
           "Спасатель Бьорн собирает рюкзак",
@@ -3463,17 +3463,17 @@
         ],
         [
           "Снеговик",
-          "Вчера снеговика здесь не было. У кого-то было время.",
+          "Вчера снеговика здесь не было. У кого-то было время.",
           "⛄ Снеговик"
         ],
         [
           "Инструктор Астрид ждёт",
-          "Она ждала у подъёмника. Подъёмник так и не пришёл.",
+          "Она ждала у подъёмника. Подъёмник так и не пришёл.",
           "🚡 Ски-пасс"
         ],
         [
           "Последний спуск",
-          "Вниз с горы. Последний вопрос.",
+          "Вниз с горы. Последний вопрос.",
           "🏁 Финишный флаг"
         ]
       ]
@@ -3483,22 +3483,22 @@
   grammar: {
     "positions": {
       "hoek": {
-        "room": "в углу",
-        "loose": "в углу {rw.gen}"
+        "room": "в углу",
+        "loose": "в углу {rw.gen}"
       },
       "muur": {
-        "room": "у стены, но не в углу",
-        "loose": "у стены, но не в углу"
+        "room": "у стены, но не в углу",
+        "loose": "у стены, но не в углу"
       },
       "midden": {
-        "room": "посередине, не у стены",
-        "loose": "посреди {rw.gen}, не у стены"
+        "room": "посередине, не у стены",
+        "loose": "посреди {rw.gen}, не у стены"
       }
     },
     "derive": {
-      "roomIn": "в {room}",
-      "furnNext": "рядом с {furn}",
-      "furnWith": "с {furn}",
+      "roomIn": "в {room}",
+      "furnNext": "рядом с {furn}",
+      "furnWith": "с {furn}",
       "victimDefault": "Жертва"
     },
     "roomWords": {
@@ -3577,95 +3577,95 @@
     },
     "templates": {
       "statement": {
-        "room": "Я {s|m:был|f:была} {room.in}.",
+        "room": "Я {s|m:был|f:была} {room.in}.",
         "not-room": "Меня не было {room.in}.",
-        "room-pos": "Я {s|m:был|f:была} {room.in}, {pos}.",
-        "pos": "Я {s|m:стоял|f:стояла} {pos.loose}.",
-        "room-with": "Я {s|m:был|f:была} в {rw.prep} {furn.with}.",
-        "next-to": "Я {s|m:стоял|f:стояла} прямо {furn.next}.",
-        "room-next": "Я {s|m:был|f:была} {room.in}, прямо {furn.next}.",
-        "same-room": "Я {s|m:был|f:была} в {rw|m:том же|f:той же|n:том же} {rw.prep}, что и {b.ref}.",
-        "diff-room": "{b} и я были в разных {rw.prepPl}.",
+        "room-pos": "Я {s|m:был|f:была} {room.in}, {pos}.",
+        "pos": "Я {s|m:стоял|f:стояла} {pos.loose}.",
+        "room-with": "Я {s|m:был|f:была} в {rw.prep} {furn.with}.",
+        "next-to": "Я {s|m:стоял|f:стояла} прямо {furn.next}.",
+        "room-next": "Я {s|m:был|f:была} {room.in}, прямо {furn.next}.",
+        "same-room": "Я {s|m:был|f:была} в {rw|m:том же|f:той же|n:том же} {rw.prep}, что и {b.ref}.",
+        "diff-room": "{b} и я были в разных {rw.prepPl}.",
         "adjacent": "{b} {b|m:стоял|f:стояла} прямо рядом со мной.",
         "not-adjacent": "{b} не {b|m:стоял|f:стояла} прямо рядом со мной.",
-        "same-row": "{b} и я стояли в одном ряду.",
-        "same-col": "{b} и я стояли в одном столбце.",
-        "left-of": "На плане я {s|m:стоял|f:стояла} левее, чем {b.ref}.",
-        "above": "На плане я {s|m:стоял|f:стояла} выше, чем {b.ref}.",
+        "same-row": "{b} и я стояли в одном ряду.",
+        "same-col": "{b} и я стояли в одном столбце.",
+        "left-of": "На плане я {s|m:стоял|f:стояла} левее, чем {b.ref}.",
+        "above": "На плане я {s|m:стоял|f:стояла} выше, чем {b.ref}.",
         "empty-room": "Согласно рапорту, {room.in} никого не было.",
-        "alone": "Я {s|m:был|f:была} в {rw.prep} {s|m:один|f:одна}."
+        "alone": "Я {s|m:был|f:была} в {rw.prep} {s|m:один|f:одна}."
       },
       "clue": {
         "room": "{s} {s|m:был|f:была} {room.in}.",
         "not-room": "{s} не {s|m:был|f:была} {room.in}.",
         "room-pos": "{s} {s|m:был|f:была} {room.in}, {pos}.",
         "pos": "{s} {s|m:стоял|f:стояла} {pos.loose}.",
-        "room-with": "{s} {s|m:был|f:была} в {rw.prep} {furn.with}.",
+        "room-with": "{s} {s|m:был|f:была} в {rw.prep} {furn.with}.",
         "next-to": "{s} {s|m:стоял|f:стояла} прямо {furn.next}.",
         "room-next": "{s} {s|m:был|f:была} {room.in}, прямо {furn.next}.",
-        "same-room": "{s} и {b.ref} были в {rw|m:одном|f:одной|n:одном} {rw.prep}.",
-        "diff-room": "{s} и {b.ref} были в разных {rw.prepPl}.",
-        "adjacent": "{s} и {b.ref} стояли прямо рядом друг с другом.",
-        "not-adjacent": "{s} и {b.ref} не стояли прямо рядом друг с другом.",
-        "same-row": "{s} и {b.ref} стояли в одном ряду.",
-        "same-col": "{s} и {b.ref} стояли в одном столбце.",
+        "same-room": "{s} и {b.ref} были в {rw|m:одном|f:одной|n:одном} {rw.prep}.",
+        "diff-room": "{s} и {b.ref} были в разных {rw.prepPl}.",
+        "adjacent": "{s} и {b.ref} стояли прямо рядом друг с другом.",
+        "not-adjacent": "{s} и {b.ref} не стояли прямо рядом друг с другом.",
+        "same-row": "{s} и {b.ref} стояли в одном ряду.",
+        "same-col": "{s} и {b.ref} стояли в одном столбце.",
         "left-of": "{s} {s|m:стоял|f:стояла} на плане левее, чем {b.ref}.",
         "above": "{s} {s|m:стоял|f:стояла} на плане выше, чем {b.ref}.",
         "empty-room": "{room.In} никого не было.",
-        "alone": "{s} {s|m:был|f:была} в {rw.prep} {s|m:один|f:одна}."
+        "alone": "{s} {s|m:был|f:была} в {rw.prep} {s|m:один|f:одна}."
       },
-      "caseText": "{victim}: тело найдено {room.in}. Кроме убийцы, в {rw|m:этом|f:этой|n:этом} {rw.prep} никого не было.",
+      "caseText": "{victim}: тело найдено {room.in}. Кроме убийцы, в {rw|m:этом|f:этой|n:этом} {rw.prep} никого не было.",
       "explain": {
         "room": "{s} {s|m:должен|f:должна} стоять где-то {room.in}. Подойдёт любая свободная клетка {rw|m:этого|f:этой|n:этого} {rw.gen}.",
         "not-room": "{s} может стоять где угодно, только не {room.in}.",
-        "room-pos.hoek": "{s} стоит в углу {room.gen}. Угол — это клетка, которая касается двух стен {rw|m:этого|f:этой|n:этого} {rw.gen}.",
-        "room-pos.muur": "{s} стоит у стены {room.gen}, но не в углу. Такая клетка касается ровно одной стены.",
+        "room-pos.hoek": "{s} стоит в углу {room.gen}. Угол — это клетка, которая касается двух стен {rw|m:этого|f:этой|n:этого} {rw.gen}.",
+        "room-pos.muur": "{s} стоит у стены {room.gen}, но не в углу. Такая клетка касается ровно одной стены.",
         "room-pos.midden": "{s} стоит посреди {room.gen}. Такая клетка не касается ни одной стены.",
-        "pos.hoek": "{s} стоит в углу {rw|m:какого-то|f:какой-то|n:какого-то} {rw.gen}. Угол — это клетка, которая касается двух стен {rw|m:этого|f:этой|n:этого} {rw.gen}. В {rw|m:каком|f:какой|n:каком} именно {rw.prep}, пока неизвестно.",
-        "pos.muur": "{s} стоит у стены {rw|m:какого-то|f:какой-то|n:какого-то} {rw.gen}, но не в углу. Такая клетка касается ровно одной стены. В {rw|m:каком|f:какой|n:каком} именно {rw.prep}, пока неизвестно.",
-        "pos.midden": "{s} стоит посреди {rw|m:какого-то|f:какой-то|n:какого-то} {rw.gen}. Такая клетка не касается ни одной стены. В {rw|m:каком|f:какой|n:каком} именно {rw.prep}, пока неизвестно.",
-        "room-with": "{s} стоит в {rw.prep}, где есть {furn}. Сначала найдите этот предмет: подойдёт любая свободная клетка {rw|m:этого|f:этой|n:этого} {rw.gen}.",
+        "pos.hoek": "{s} стоит в углу {rw|m:какого-то|f:какой-то|n:какого-то} {rw.gen}. Угол — это клетка, которая касается двух стен {rw|m:этого|f:этой|n:этого} {rw.gen}. В {rw|m:каком|f:какой|n:каком} именно {rw.prep}, пока неизвестно.",
+        "pos.muur": "{s} стоит у стены {rw|m:какого-то|f:какой-то|n:какого-то} {rw.gen}, но не в углу. Такая клетка касается ровно одной стены. В {rw|m:каком|f:какой|n:каком} именно {rw.prep}, пока неизвестно.",
+        "pos.midden": "{s} стоит посреди {rw|m:какого-то|f:какой-то|n:какого-то} {rw.gen}. Такая клетка не касается ни одной стены. В {rw|m:каком|f:какой|n:каком} именно {rw.prep}, пока неизвестно.",
+        "room-with": "{s} стоит в {rw.prep}, где есть {furn}. Сначала найдите этот предмет: подойдёт любая свободная клетка {rw|m:этого|f:этой|n:этого} {rw.gen}.",
         "next-to": "{s} стоит на клетке слева, справа, сверху или снизу от {furn.gen}. По диагонали не считается.",
         "room-next": "{s} стоит {room.in}, прямо {furn.next}: слева, справа, сверху или снизу, не по диагонали.",
-        "same-room": "{s} и {b.ref} стоят в {rw|m:одном|f:одной|n:одном} {rw.prep}. Если вы знаете {rw.acc} одного человека, вы знаете и {rw.acc} второго.",
-        "diff-room": "{s} и {b.ref} стоят в двух разных {rw.prepPl}.",
-        "adjacent": "{s} и {b.ref} стоят на соседних клетках: слева, справа, сверху или снизу друг от друга. Стена между ними не мешает.",
-        "not-adjacent": "{s} и {b.ref} не стоят на соседних клетках (слева, справа, сверху или снизу друг от друга). По диагонали — можно.",
-        "same-row": "{s} и {b.ref} стоят в одном ряду: на одной высоте на плане, даже если это разные {rws}.",
-        "same-col": "{s} и {b.ref} стоят в одном столбце: строго друг над другом. Стены не в счёт.",
-        "left-of": "{s} стоит в столбце левее, чем {b.ref}. В {rw|m:каком|f:какой|n:каком} {rw.prep} — неважно.",
-        "above": "{s} стоит в ряду выше, чем {b.ref}. В {rw|m:каком|f:какой|n:каком} {rw.prep} — неважно.",
+        "same-room": "{s} и {b.ref} стоят в {rw|m:одном|f:одной|n:одном} {rw.prep}. Если вы знаете {rw.acc} одного человека, вы знаете и {rw.acc} второго.",
+        "diff-room": "{s} и {b.ref} стоят в двух разных {rw.prepPl}.",
+        "adjacent": "{s} и {b.ref} стоят на соседних клетках: слева, справа, сверху или снизу друг от друга. Стена между ними не мешает.",
+        "not-adjacent": "{s} и {b.ref} не стоят на соседних клетках (слева, справа, сверху или снизу друг от друга). По диагонали — можно.",
+        "same-row": "{s} и {b.ref} стоят в одном ряду: на одной высоте на плане, даже если это разные {rws}.",
+        "same-col": "{s} и {b.ref} стоят в одном столбце: строго друг над другом. Стены не в счёт.",
+        "left-of": "{s} стоит в столбце левее, чем {b.ref}. В {rw|m:каком|f:какой|n:каком} {rw.prep} — неважно.",
+        "above": "{s} стоит в ряду выше, чем {b.ref}. В {rw|m:каком|f:какой|n:каком} {rw.prep} — неважно.",
         "empty-room": "{room.In} никто не стоит. {rw|m:Этот|f:Эту|n:Это} {rw.acc} можно пропустить.",
-        "alone": "{s} стоит в {rw.prep}, где больше никого нет."
+        "alone": "{s} стоит в {rw.prep}, где больше никого нет."
       },
       "hint": {
         "wrong": "{s} стоит не на своём месте. Показание {n} гласит: «{quote}»",
-        "two-in-victim-room": "В {rw.prep} жертвы стоят двое подозреваемых. А там был только убийца.",
-        "start.one": "Для начала: {s.ref} может стоять всего на {n} {n|one:клетке|other:клетках}, и все они {room.in}.",
-        "start.spread": "Для начала: {s.ref} может стоять всего на {n} {n|one:клетке|other:клетках} в {k} разных {rw.prepPl}."
+        "two-in-victim-room": "В {rw.prep} жертвы стоят двое подозреваемых. А там был только убийца.",
+        "start.one": "Для начала: {s.ref} может стоять всего на {n} {n|one:клетке|other:клетках}, и все они {room.in}.",
+        "start.spread": "Для начала: {s.ref} может стоять всего на {n} {n|one:клетке|other:клетках} в {k} разных {rw.prepPl}."
       },
       "action": {
         "now": " Сейчас {s|m:он|f:она} {room.in}.",
-        "two-in-victim-room": "{room.In} может стоять только один человек — убийца. Перетащите кого-нибудь из них в {rw|m:другой|f:другую|n:другое} {rw.acc}.",
+        "two-in-victim-room": "{room.In} может стоять только один человек — убийца. Перетащите кого-нибудь из них в {rw|m:другой|f:другую|n:другое} {rw.acc}.",
         "then": " Затем поставьте {s|m:его|f:её} где-нибудь {room.in}.",
-        "deduce": "Осталась только одна клетка — подсвеченная. Туда и {s|m:должен|f:должна} встать {s.ref}.",
-        "deduce.in": "Осталась только одна клетка — подсвеченная, {room.in}. Туда и {s|m:должен|f:должна} встать {s.ref}.",
-        "narrow": "{s} ещё может стоять на {n} {n|one:клетке|other:клетках} — они подсвечены золотым. Поставьте на них точки Карандашом и проверяйте по одной: для каждой клетки смотрите, сходятся ли остальные показания.",
-        "narrow.in": "{s} ещё может стоять на {n} {n|one:клетке|other:клетках} {room.in} — они подсвечены золотым. Поставьте на них точки Карандашом и проверяйте по одной: для каждой клетки смотрите, сходятся ли остальные показания.",
-        "done": "Все на своих местах. Нажмите «Проверить», а затем укажите, кто стоит {room.in} один."
+        "deduce": "Осталась только одна клетка — подсвеченная. Туда и {s|m:должен|f:должна} встать {s.ref}.",
+        "deduce.in": "Осталась только одна клетка — подсвеченная, {room.in}. Туда и {s|m:должен|f:должна} встать {s.ref}.",
+        "narrow": "{s} ещё может стоять на {n} {n|one:клетке|other:клетках} — они подсвечены золотым. Поставьте на них точки Карандашом и проверяйте по одной: для каждой клетки смотрите, сходятся ли остальные показания.",
+        "narrow.in": "{s} ещё может стоять на {n} {n|one:клетке|other:клетках} {room.in} — они подсвечены золотым. Поставьте на них точки Карандашом и проверяйте по одной: для каждой клетки смотрите, сходятся ли остальные показания.",
+        "done": "Все на своих местах. Нажмите «Проверить», а затем укажите, кто стоит {room.in} один."
       },
       "board": {
-        "accuse": "Все на своих местах. Кто был наедине с жертвой {room.in}?",
-        "verdict": "{s} {s|m:был|f:была} наедине с жертвой {room.in}.",
-        "rule": "📜 Правило: в {rw.prep} жертвы был только убийца."
+        "accuse": "Все на своих местах. Кто был наедине с жертвой {room.in}?",
+        "verdict": "{s} {s|m:был|f:была} наедине с жертвой {room.in}.",
+        "rule": "📜 Правило: в {rw.prep} жертвы был только убийца."
       }
     },
     "rooms": {
       "landhuis": {
         "Woonkamer": {
           "the": "гостиная",
-          "in": "в гостиной",
-          "In": "В гостиной",
+          "in": "в гостиной",
+          "In": "В гостиной",
           "gen": "гостиной"
         },
         "Keuken": {
@@ -3676,76 +3676,76 @@
         },
         "Eetkamer": {
           "the": "столовая",
-          "in": "в столовой",
-          "In": "В столовой",
+          "in": "в столовой",
+          "In": "В столовой",
           "gen": "столовой"
         },
         "Bibliotheek": {
           "the": "библиотека",
-          "in": "в библиотеке",
-          "In": "В библиотеке",
+          "in": "в библиотеке",
+          "In": "В библиотеке",
           "gen": "библиотеки"
         },
         "Slaapkamer": {
           "the": "спальня",
-          "in": "в спальне",
-          "In": "В спальне",
+          "in": "в спальне",
+          "In": "В спальне",
           "gen": "спальни"
         },
         "Badkamer": {
           "the": "ванная",
-          "in": "в ванной",
-          "In": "В ванной",
+          "in": "в ванной",
+          "In": "В ванной",
           "gen": "ванной"
         },
         "Garage": {
           "the": "гараж",
-          "in": "в гараже",
-          "In": "В гараже",
+          "in": "в гараже",
+          "In": "В гараже",
           "gen": "гаража"
         },
         "Hal": {
           "the": "холл",
-          "in": "в холле",
-          "In": "В холле",
+          "in": "в холле",
+          "In": "В холле",
           "gen": "холла"
         },
         "Wasruimte": {
           "the": "прачечная",
-          "in": "в прачечной",
-          "In": "В прачечной",
+          "in": "в прачечной",
+          "In": "В прачечной",
           "gen": "прачечной"
         },
         "Studeerkamer": {
           "the": "кабинет",
-          "in": "в кабинете",
-          "In": "В кабинете",
+          "in": "в кабинете",
+          "In": "В кабинете",
           "gen": "кабинета"
         },
         "Serre": {
           "the": "оранжерея",
-          "in": "в оранжерее",
-          "In": "В оранжерее",
+          "in": "в оранжерее",
+          "In": "В оранжерее",
           "gen": "оранжереи"
         },
         "Kelder": {
           "the": "подвал",
-          "in": "в подвале",
-          "In": "В подвале",
+          "in": "в подвале",
+          "In": "В подвале",
           "gen": "подвала"
         }
       },
       "piraten": {
         "Kajuit": {
           "the": "каюта",
-          "in": "в каюте",
-          "In": "В каюте",
+          "in": "в каюте",
+          "In": "В каюте",
           "gen": "каюты"
         },
         "Ruim": {
           "the": "трюм",
-          "in": "в трюме",
-          "In": "В трюме",
+          "in": "в трюме",
+          "In": "В трюме",
           "gen": "трюма"
         },
         "Kombuis": {
@@ -3768,44 +3768,44 @@
         },
         "Voorraadkamer": {
           "the": "кладовая",
-          "in": "в кладовой",
-          "In": "В кладовой",
+          "in": "в кладовой",
+          "In": "В кладовой",
           "gen": "кладовой"
         },
         "Slaapvertrek": {
           "the": "кубрик",
-          "in": "в кубрике",
-          "In": "В кубрике",
+          "in": "в кубрике",
+          "In": "В кубрике",
           "gen": "кубрика"
         },
         "Kaartenkamer": {
           "the": "штурманская",
-          "in": "в штурманской",
-          "In": "В штурманской",
+          "in": "в штурманской",
+          "In": "В штурманской",
           "gen": "штурманской"
         },
         "Brig": {
           "the": "карцер",
-          "in": "в карцере",
-          "In": "В карцере",
+          "in": "в карцере",
+          "In": "В карцере",
           "gen": "карцера"
         },
         "Stuurhut": {
           "the": "рубка",
-          "in": "в рубке",
-          "In": "В рубке",
+          "in": "в рубке",
+          "In": "В рубке",
           "gen": "рубки"
         },
         "Kapiteinshut": {
           "the": "каюта капитана",
-          "in": "в каюте капитана",
-          "In": "В каюте капитана",
+          "in": "в каюте капитана",
+          "In": "В каюте капитана",
           "gen": "каюты капитана"
         },
         "Kruitkamer": {
           "the": "крюйт-камера",
-          "in": "в крюйт-камере",
-          "In": "В крюйт-камере",
+          "in": "в крюйт-камере",
+          "In": "В крюйт-камере",
           "gen": "крюйт-камеры"
         },
         "Voorsteven": {
@@ -3824,8 +3824,8 @@
       "hotel": {
         "Lobby": {
           "the": "вестибюль",
-          "in": "в вестибюле",
-          "In": "В вестибюле",
+          "in": "в вестибюле",
+          "In": "В вестибюле",
           "gen": "вестибюля"
         },
         "Receptie": {
@@ -3836,20 +3836,20 @@
         },
         "Restaurant": {
           "the": "ресторан",
-          "in": "в ресторане",
-          "In": "В ресторане",
+          "in": "в ресторане",
+          "In": "В ресторане",
           "gen": "ресторана"
         },
         "Balzaal": {
           "the": "бальный зал",
-          "in": "в бальном зале",
-          "In": "В бальном зале",
+          "in": "в бальном зале",
+          "In": "В бальном зале",
           "gen": "бального зала"
         },
         "Bar": {
           "the": "бар",
-          "in": "в баре",
-          "In": "В баре",
+          "in": "в баре",
+          "In": "В баре",
           "gen": "бара"
         },
         "Keuken": {
@@ -3860,56 +3860,56 @@
         },
         "Bibliotheek": {
           "the": "библиотека",
-          "in": "в библиотеке",
-          "In": "В библиотеке",
+          "in": "в библиотеке",
+          "In": "В библиотеке",
           "gen": "библиотеки"
         },
         "Spa": {
           "the": "спа",
-          "in": "в спа",
-          "In": "В спа",
+          "in": "в спа",
+          "In": "В спа",
           "gen": "спа"
         },
         "Wijnkelder": {
           "the": "винный погреб",
-          "in": "в винном погребе",
-          "In": "В винном погребе",
+          "in": "в винном погребе",
+          "In": "В винном погребе",
           "gen": "винного погреба"
         },
         "Suite": {
           "the": "люкс",
-          "in": "в люксе",
-          "In": "В люксе",
+          "in": "в люксе",
+          "In": "В люксе",
           "gen": "люкса"
         },
         "Wasserij": {
           "the": "прачечная",
-          "in": "в прачечной",
-          "In": "В прачечной",
+          "in": "в прачечной",
+          "In": "В прачечной",
           "gen": "прачечной"
         },
         "Rookkamer": {
           "the": "курительная",
-          "in": "в курительной",
-          "In": "В курительной",
+          "in": "в курительной",
+          "In": "В курительной",
           "gen": "курительной"
         },
         "Kamer 12": {
           "the": "номер 12",
-          "in": "в номере 12",
-          "In": "В номере 12",
+          "in": "в номере 12",
+          "In": "В номере 12",
           "gen": "номера 12"
         },
         "Portiersloge": {
           "the": "швейцарская",
-          "in": "в швейцарской",
-          "In": "В швейцарской",
+          "in": "в швейцарской",
+          "In": "В швейцарской",
           "gen": "швейцарской"
         },
         "Personeelskamer": {
           "the": "комната персонала",
-          "in": "в комнате персонала",
-          "In": "В комнате персонала",
+          "in": "в комнате персонала",
+          "In": "В комнате персонала",
           "gen": "комнаты персонала"
         },
         "Terras": {
@@ -3920,8 +3920,8 @@
         },
         "Salon": {
           "the": "салон",
-          "in": "в салоне",
-          "In": "В салоне",
+          "in": "в салоне",
+          "In": "В салоне",
           "gen": "салона"
         }
       },
@@ -3934,44 +3934,44 @@
         },
         "Laboratorium": {
           "the": "лаборатория",
-          "in": "в лаборатории",
-          "In": "В лаборатории",
+          "in": "в лаборатории",
+          "In": "В лаборатории",
           "gen": "лаборатории"
         },
         "Kantine": {
           "the": "столовая",
-          "in": "в столовой",
-          "In": "В столовой",
+          "in": "в столовой",
+          "In": "В столовой",
           "gen": "столовой"
         },
         "Machinekamer": {
           "the": "техотсек",
-          "in": "в техотсеке",
-          "In": "В техотсеке",
+          "in": "в техотсеке",
+          "In": "В техотсеке",
           "gen": "техотсека"
         },
         "Slaapcabine": {
           "the": "каюта",
-          "in": "в каюте",
-          "In": "В каюте",
+          "in": "в каюте",
+          "In": "В каюте",
           "gen": "каюты"
         },
         "Luchtsluis": {
           "the": "шлюз",
-          "in": "в шлюзе",
-          "In": "В шлюзе",
+          "in": "в шлюзе",
+          "In": "В шлюзе",
           "gen": "шлюза"
         },
         "Kas": {
           "the": "оранжерея",
-          "in": "в оранжерее",
-          "In": "В оранжерее",
+          "in": "в оранжерее",
+          "In": "В оранжерее",
           "gen": "оранжереи"
         },
         "Ziekenboeg": {
           "the": "медотсек",
-          "in": "в медотсеке",
-          "In": "В медотсеке",
+          "in": "в медотсеке",
+          "In": "В медотсеке",
           "gen": "медотсека"
         },
         "Opslag": {
@@ -3982,138 +3982,138 @@
         },
         "Observatorium": {
           "the": "обсерватория",
-          "in": "в обсерватории",
-          "In": "В обсерватории",
+          "in": "в обсерватории",
+          "In": "В обсерватории",
           "gen": "обсерватории"
         },
         "Werkplaats": {
           "the": "мастерская",
-          "in": "в мастерской",
-          "In": "В мастерской",
+          "in": "в мастерской",
+          "In": "В мастерской",
           "gen": "мастерской"
         }
       },
       "museum": {
         "Egyptische Zaal": {
           "the": "египетский зал",
-          "in": "в египетском зале",
-          "In": "В египетском зале",
+          "in": "в египетском зале",
+          "In": "В египетском зале",
           "gen": "египетского зала"
         },
         "Schilderijenzaal": {
           "the": "зал живописи",
-          "in": "в зале живописи",
-          "In": "В зале живописи",
+          "in": "в зале живописи",
+          "In": "В зале живописи",
           "gen": "зала живописи"
         },
         "Dinozaal": {
           "the": "зал динозавров",
-          "in": "в зале динозавров",
-          "In": "В зале динозавров",
+          "in": "в зале динозавров",
+          "In": "В зале динозавров",
           "gen": "зала динозавров"
         },
         "Kluis": {
           "the": "хранилище",
-          "in": "в хранилище",
-          "In": "В хранилище",
+          "in": "в хранилище",
+          "In": "В хранилище",
           "gen": "хранилища"
         },
         "Werkplaats": {
           "the": "мастерская",
-          "in": "в мастерской",
-          "In": "В мастерской",
+          "in": "в мастерской",
+          "In": "В мастерской",
           "gen": "мастерской"
         },
         "Museumwinkel": {
           "the": "магазин",
-          "in": "в магазине",
-          "In": "В магазине",
+          "in": "в магазине",
+          "In": "В магазине",
           "gen": "магазина"
         },
         "Hal": {
           "the": "вестибюль",
-          "in": "в вестибюле",
-          "In": "В вестибюле",
+          "in": "в вестибюле",
+          "In": "В вестибюле",
           "gen": "вестибюля"
         },
         "Archief": {
           "the": "архив",
-          "in": "в архиве",
-          "In": "В архиве",
+          "in": "в архиве",
+          "In": "В архиве",
           "gen": "архива"
         },
         "Beeldentuin": {
           "the": "сад скульптур",
-          "in": "в саду скульптур",
-          "In": "В саду скульптур",
+          "in": "в саду скульптур",
+          "In": "В саду скульптур",
           "gen": "сада скульптур"
         },
         "Depot": {
           "the": "запасник",
-          "in": "в запаснике",
-          "In": "В запаснике",
+          "in": "в запаснике",
+          "In": "В запаснике",
           "gen": "запасника"
         },
         "Kantoor": {
           "the": "кабинет",
-          "in": "в кабинете",
-          "In": "В кабинете",
+          "in": "в кабинете",
+          "In": "В кабинете",
           "gen": "кабинета"
         },
         "Museumcafé": {
           "the": "кафе",
-          "in": "в кафе",
-          "In": "В кафе",
+          "in": "в кафе",
+          "In": "В кафе",
           "gen": "кафе"
         }
       },
       "trein": {
         "Restauratiewagen": {
           "the": "вагон-ресторан",
-          "in": "в вагоне-ресторане",
-          "In": "В вагоне-ресторане",
+          "in": "в вагоне-ресторане",
+          "In": "В вагоне-ресторане",
           "gen": "вагона-ресторана"
         },
         "Salonwagen": {
           "the": "вагон-салон",
-          "in": "в вагоне-салоне",
-          "In": "В вагоне-салоне",
+          "in": "в вагоне-салоне",
+          "In": "В вагоне-салоне",
           "gen": "вагона-салона"
         },
         "Coupé A": {
           "the": "купе А",
-          "in": "в купе А",
-          "In": "В купе А",
+          "in": "в купе А",
+          "In": "В купе А",
           "gen": "купе А"
         },
         "Coupé B": {
           "the": "купе Б",
-          "in": "в купе Б",
-          "In": "В купе Б",
+          "in": "в купе Б",
+          "In": "В купе Б",
           "gen": "купе Б"
         },
         "Bagagewagen": {
           "the": "багажный вагон",
-          "in": "в багажном вагоне",
-          "In": "В багажном вагоне",
+          "in": "в багажном вагоне",
+          "In": "В багажном вагоне",
           "gen": "багажного вагона"
         },
         "Keukenwagen": {
           "the": "вагон-кухня",
-          "in": "в вагоне-кухне",
-          "In": "В вагоне-кухне",
+          "in": "в вагоне-кухне",
+          "In": "В вагоне-кухне",
           "gen": "вагона-кухни"
         },
         "Postwagen": {
           "the": "почтовый вагон",
-          "in": "в почтовом вагоне",
-          "In": "В почтовом вагоне",
+          "in": "в почтовом вагоне",
+          "In": "В почтовом вагоне",
           "gen": "почтового вагона"
         },
         "Barwagen": {
           "the": "вагон-бар",
-          "in": "в вагоне-баре",
-          "In": "В вагоне-баре",
+          "in": "в вагоне-баре",
+          "In": "В вагоне-баре",
           "gen": "вагона-бара"
         },
         "Kolenwagen": {
@@ -4124,8 +4124,8 @@
         },
         "Dienstruimte": {
           "the": "служебное купе",
-          "in": "в служебном купе",
-          "In": "В служебном купе",
+          "in": "в служебном купе",
+          "In": "В служебном купе",
           "gen": "служебного купе"
         },
         "Locomotief": {
@@ -4156,56 +4156,56 @@
         },
         "Kleedwagen": {
           "the": "гримёрка",
-          "in": "в гримёрке",
-          "In": "В гримёрке",
+          "in": "в гримёрке",
+          "In": "В гримёрке",
           "gen": "гримёрки"
         },
         "Dierentent": {
           "the": "зверинец",
-          "in": "в зверинце",
-          "In": "В зверинце",
+          "in": "в зверинце",
+          "In": "В зверинце",
           "gen": "зверинца"
         },
         "Kassa": {
           "the": "касса",
-          "in": "в кассе",
-          "In": "В кассе",
+          "in": "в кассе",
+          "In": "В кассе",
           "gen": "кассы"
         },
         "Kantine": {
           "the": "столовая",
-          "in": "в столовой",
-          "In": "В столовой",
+          "in": "в столовой",
+          "In": "В столовой",
           "gen": "столовой"
         },
         "Werkplaats": {
           "the": "мастерская",
-          "in": "в мастерской",
-          "In": "В мастерской",
+          "in": "в мастерской",
+          "In": "В мастерской",
           "gen": "мастерской"
         },
         "Directiewagen": {
           "the": "дирекция",
-          "in": "в дирекции",
-          "In": "В дирекции",
+          "in": "в дирекции",
+          "In": "В дирекции",
           "gen": "дирекции"
         },
         "Stalling": {
           "the": "конюшня",
-          "in": "в конюшне",
-          "In": "В конюшне",
+          "in": "в конюшне",
+          "In": "В конюшне",
           "gen": "конюшни"
         },
         "Kostuumwagen": {
           "the": "костюмерная",
-          "in": "в костюмерной",
-          "In": "В костюмерной",
+          "in": "в костюмерной",
+          "In": "В костюмерной",
           "gen": "костюмерной"
         },
         "Ingang": {
           "the": "фойе",
-          "in": "в фойе",
-          "In": "В фойе",
+          "in": "в фойе",
+          "In": "В фойе",
           "gen": "фойе"
         },
         "Opslagtent": {
@@ -4218,8 +4218,8 @@
       "skihut": {
         "Gelagkamer": {
           "the": "общий зал",
-          "in": "в общем зале",
-          "In": "В общем зале",
+          "in": "в общем зале",
+          "In": "В общем зале",
           "gen": "общего зала"
         },
         "Keuken": {
@@ -4230,8 +4230,8 @@
         },
         "Slaapzaal": {
           "the": "спальня",
-          "in": "в спальне",
-          "In": "В спальне",
+          "in": "в спальне",
+          "In": "В спальне",
           "gen": "спальни"
         },
         "Skiberging": {
@@ -4242,8 +4242,8 @@
         },
         "Sauna": {
           "the": "сауна",
-          "in": "в сауне",
-          "In": "В сауне",
+          "in": "в сауне",
+          "In": "В сауне",
           "gen": "сауны"
         },
         "Terras": {
@@ -4254,8 +4254,8 @@
         },
         "Kelder": {
           "the": "подвал",
-          "in": "в подвале",
-          "In": "В подвале",
+          "in": "в подвале",
+          "In": "В подвале",
           "gen": "подвала"
         },
         "Zolder": {
@@ -4266,26 +4266,26 @@
         },
         "Wasruimte": {
           "the": "прачечная",
-          "in": "в прачечной",
-          "In": "В прачечной",
+          "in": "в прачечной",
+          "In": "В прачечной",
           "gen": "прачечной"
         },
         "Voorraadkamer": {
           "the": "кладовая",
-          "in": "в кладовой",
-          "In": "В кладовой",
+          "in": "в кладовой",
+          "In": "В кладовой",
           "gen": "кладовой"
         },
         "Speelkamer": {
           "the": "игровая",
-          "in": "в игровой",
-          "In": "В игровой",
+          "in": "в игровой",
+          "In": "В игровой",
           "gen": "игровой"
         },
         "Hal": {
           "the": "прихожая",
-          "in": "в прихожей",
-          "In": "В прихожей",
+          "in": "в прихожей",
+          "In": "В прихожей",
           "gen": "прихожей"
         }
       }
@@ -4293,50 +4293,50 @@
     "furniture": {
       "plant": {
         "a": "растение",
-        "next": "рядом с растением",
-        "with": "с растением",
+        "next": "рядом с растением",
+        "with": "с растением",
         "gen": "растения"
       },
       "tv": {
         "a": "телевизор",
-        "next": "рядом с телевизором",
-        "with": "с телевизором",
+        "next": "рядом с телевизором",
+        "with": "с телевизором",
         "gen": "телевизора"
       },
       "kast": {
         "a": "книжный шкаф",
-        "next": "рядом с книжным шкафом",
-        "with": "с книжным шкафом",
+        "next": "рядом с книжным шкафом",
+        "with": "с книжным шкафом",
         "gen": "книжного шкафа"
       },
       "stoel": {
         "a": "кресло",
-        "next": "рядом с креслом",
-        "with": "с креслом",
+        "next": "рядом с креслом",
+        "with": "с креслом",
         "gen": "кресла"
       },
       "doos": {
         "a": "ящик",
-        "next": "рядом с ящиком",
-        "with": "с ящиком",
+        "next": "рядом с ящиком",
+        "with": "с ящиком",
         "gen": "ящика"
       },
       "kanon": {
         "a": "пушка",
-        "next": "рядом с пушкой",
-        "with": "с пушкой",
+        "next": "рядом с пушкой",
+        "with": "с пушкой",
         "gen": "пушки"
       },
       "ton": {
         "a": "бочка",
-        "next": "рядом с бочкой",
-        "with": "с бочкой",
+        "next": "рядом с бочкой",
+        "with": "с бочкой",
         "gen": "бочки"
       },
       "schatkist": {
         "a": "сундук сокровищ",
-        "next": "рядом с сундуком сокровищ",
-        "with": "с сундуком сокровищ",
+        "next": "рядом с сундуком сокровищ",
+        "with": "с сундуком сокровищ",
         "gen": "сундука сокровищ"
       },
       "touw": {
@@ -4347,44 +4347,44 @@
       },
       "lantaarn": {
         "a": "фонарь",
-        "next": "рядом с фонарём",
-        "with": "с фонарём",
+        "next": "рядом с фонарём",
+        "with": "с фонарём",
         "gen": "фонаря"
       },
       "piano": {
         "a": "рояль",
-        "next": "рядом с роялем",
-        "with": "с роялем",
+        "next": "рядом с роялем",
+        "with": "с роялем",
         "gen": "рояля"
       },
       "koffer": {
         "a": "чемодан",
-        "next": "рядом с чемоданом",
-        "with": "с чемоданом",
+        "next": "рядом с чемоданом",
+        "with": "с чемоданом",
         "gen": "чемодана"
       },
       "palm": {
         "a": "пальма",
-        "next": "рядом с пальмой",
-        "with": "с пальмой",
+        "next": "рядом с пальмой",
+        "with": "с пальмой",
         "gen": "пальмы"
       },
       "sofa": {
         "a": "диван",
-        "next": "рядом с диваном",
-        "with": "с диваном",
+        "next": "рядом с диваном",
+        "with": "с диваном",
         "gen": "дивана"
       },
       "trolley": {
         "a": "сервировочная тележка",
-        "next": "рядом с сервировочной тележкой",
-        "with": "с сервировочной тележкой",
+        "next": "рядом с сервировочной тележкой",
+        "with": "с сервировочной тележкой",
         "gen": "сервировочной тележки"
       },
       "console": {
         "a": "пульт",
-        "next": "рядом с пультом",
-        "with": "с пультом",
+        "next": "рядом с пультом",
+        "with": "с пультом",
         "gen": "пульта"
       },
       "capsule": {
@@ -4395,32 +4395,32 @@
       },
       "robot": {
         "a": "ремонтный робот",
-        "next": "рядом с ремонтным роботом",
-        "with": "с ремонтным роботом",
+        "next": "рядом с ремонтным роботом",
+        "with": "с ремонтным роботом",
         "gen": "ремонтного робота"
       },
       "krat": {
         "a": "контейнер",
-        "next": "рядом с контейнером",
-        "with": "с контейнером",
+        "next": "рядом с контейнером",
+        "with": "с контейнером",
         "gen": "контейнера"
       },
       "kweekbak": {
         "a": "грядка",
-        "next": "рядом с грядкой",
-        "with": "с грядкой",
+        "next": "рядом с грядкой",
+        "with": "с грядкой",
         "gen": "грядки"
       },
       "sarcofaag": {
         "a": "саркофаг",
-        "next": "рядом с саркофагом",
-        "with": "с саркофагом",
+        "next": "рядом с саркофагом",
+        "with": "с саркофагом",
         "gen": "саркофага"
       },
       "schilderij": {
         "a": "картина",
-        "next": "рядом с картиной",
-        "with": "с картиной",
+        "next": "рядом с картиной",
+        "with": "с картиной",
         "gen": "картины"
       },
       "skelet": {
@@ -4431,8 +4431,8 @@
       },
       "vitrine": {
         "a": "витрина",
-        "next": "рядом с витриной",
-        "with": "с витриной",
+        "next": "рядом с витриной",
+        "with": "с витриной",
         "gen": "витрины"
       },
       "beeld": {
@@ -4443,20 +4443,20 @@
       },
       "hutkoffer": {
         "a": "дорожный сундук",
-        "next": "рядом с дорожным сундуком",
-        "with": "с дорожным сундуком",
+        "next": "рядом с дорожным сундуком",
+        "with": "с дорожным сундуком",
         "gen": "дорожного сундука"
       },
       "samovar": {
         "a": "самовар",
-        "next": "рядом с самоваром",
-        "with": "с самоваром",
+        "next": "рядом с самоваром",
+        "with": "с самоваром",
         "gen": "самовара"
       },
       "grammofoon": {
         "a": "граммофон",
-        "next": "рядом с граммофоном",
-        "with": "с граммофоном",
+        "next": "рядом с граммофоном",
+        "with": "с граммофоном",
         "gen": "граммофона"
       },
       "bank": {
@@ -4467,68 +4467,68 @@
       },
       "kroonluchter": {
         "a": "люстра",
-        "next": "рядом с люстрой",
-        "with": "с люстрой",
+        "next": "рядом с люстрой",
+        "with": "с люстрой",
         "gen": "люстры"
       },
       "circuskanon": {
         "a": "цирковая пушка",
-        "next": "рядом с цирковой пушкой",
-        "with": "с цирковой пушкой",
+        "next": "рядом с цирковой пушкой",
+        "with": "с цирковой пушкой",
         "gen": "цирковой пушки"
       },
       "trapeze": {
         "a": "трапеция",
-        "next": "рядом с трапецией",
-        "with": "с трапецией",
+        "next": "рядом с трапецией",
+        "with": "с трапецией",
         "gen": "трапеции"
       },
       "spiegelkast": {
         "a": "зеркальный шкаф",
-        "next": "рядом с зеркальным шкафом",
-        "with": "с зеркальным шкафом",
+        "next": "рядом с зеркальным шкафом",
+        "with": "с зеркальным шкафом",
         "gen": "зеркального шкафа"
       },
       "popcornkar": {
         "a": "аппарат для попкорна",
-        "next": "рядом с аппаратом для попкорна",
-        "with": "с аппаратом для попкорна",
+        "next": "рядом с аппаратом для попкорна",
+        "with": "с аппаратом для попкорна",
         "gen": "аппарата для попкорна"
       },
       "kooi": {
         "a": "вольер для льва",
-        "next": "рядом с вольером для льва",
-        "with": "с вольером для льва",
+        "next": "рядом с вольером для льва",
+        "with": "с вольером для льва",
         "gen": "вольера для льва"
       },
       "kachel": {
         "a": "печка",
-        "next": "рядом с печкой",
-        "with": "с печкой",
+        "next": "рядом с печкой",
+        "with": "с печкой",
         "gen": "печки"
       },
       "slee": {
         "a": "сани",
-        "next": "рядом с санями",
-        "with": "с санями",
+        "next": "рядом с санями",
+        "with": "с санями",
         "gen": "саней"
       },
       "skirek": {
         "a": "лыжная стойка",
-        "next": "рядом с лыжной стойкой",
-        "with": "с лыжной стойкой",
+        "next": "рядом с лыжной стойкой",
+        "with": "с лыжной стойкой",
         "gen": "лыжной стойки"
       },
       "gewei": {
         "a": "оленьи рога",
-        "next": "рядом с оленьими рогами",
-        "with": "с оленьими рогами",
+        "next": "рядом с оленьими рогами",
+        "with": "с оленьими рогами",
         "gen": "оленьих рогов"
       },
       "fondue": {
         "a": "котелок для фондю",
-        "next": "рядом с котелком для фондю",
-        "with": "с котелком для фондю",
+        "next": "рядом с котелком для фондю",
+        "with": "с котелком для фондю",
         "gen": "котелка для фондю"
       }
     }

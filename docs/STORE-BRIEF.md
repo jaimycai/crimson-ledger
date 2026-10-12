@@ -43,16 +43,17 @@ Write `store/metadata/1.2.0/<store-locale>.json` with one object:
 | vi | vi |
 | ru | ru |
 | ar | ar-SA |
-| ur | ur |
+| ur | ur-PK |
 | hi | hi |
-| mr | mr |
+| mr | mr-IN |
 | bn | bn-BD |
-| te | te |
+| te | te-IN |
 | zh | zh-Hans |
 | ja | ja |
 | ko | ko |
 | it | it |
 | tr | tr |
 
-The codes for the four languages Apple added in 2026 (Bangla, Marathi, Telugu, Urdu) are checked when the texts
-are uploaded; the file name only needs to be one of the codes above.
+The four languages Apple added in 2026 use region codes in App Store Connect: Bangla bn-BD, Marathi mr-IN,
+Telugu te-IN, Urdu ur-PK (Apple's table "Managing metadata in your app by using locale shortcodes"). A bare
+mr, te or ur is not in that table, so use these codes.

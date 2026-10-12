@@ -63,7 +63,7 @@
     "Makkelijk": "Facile",
     "Opwarmer": "Per scaldarsi",
     "Gemiddeld": "Medio",
-    "Echt puzzelen": "Da pensarci su",
+    "Echt puzzelen": "Per ragionare",
     "Moeilijk": "Difficile",
     "Voor speurneuzen": "Per segugi",
     "Start zaak": "Inizia il caso",
@@ -78,9 +78,9 @@
     "↺ Reset": "↺ Azzera",
     "✓ Controleer": "✓ Verifica",
     "🗺️ Wereldkaart": "🗺️ Mappa",
-    "Per zaak:": "Per ogni caso:",
-    "zonder hint én in één keer ·": "senza aiuti e al primo colpo ·",
-    "één van de twee ·": "una delle due ·",
+    "Per zaak:": "Stelle:",
+    "zonder hint én in één keer ·": "senza aiuti e al primo colpo ·",
+    "één van de twee ·": "una delle due ·",
     "opgelost": "risolto",
     "Vitrine & Bureau": "Vetrina e scrivania",
     "Onderscheidingen": "Medaglie",
@@ -135,7 +135,7 @@
     "Controleer je antwoord": "Verifica la risposta",
     "Als je denkt dat je alles hebt, klik op \"Controleer\".": "Quando pensi di avere tutto, tocca «Verifica».",
     "Begrepen!": "Ho capito!",
-    "Inspecteur Van Dam": "Ispettore Van Dam",
+    "Inspecteur Van Dam": "Ispettore Van Dam",
     "1 · Kijk naar": "1 · Guarda",
     "2 · Dat betekent": "2 · Significa",
     "3 · Doe dit": "3 · Fai così",
@@ -171,7 +171,7 @@
     "🗺️ Alle werelden, ook de werelden die nog komen": "🗺️ Tutti i mondi, anche quelli in arrivo",
     "💡 Onbeperkt hints": "💡 Aiuti illimitati",
     "🎨 Alle bordthema's en portretlijsten": "🎨 Tutti i temi del tabellone e le cornici dei ritratti",
-    "🧊 Twee extra vrije dagen op voorraad": "🧊 Due giorni liberi extra di scorta",
+    "🧊 Twee extra vrije dagen op voorraad": "🧊 Altri due giorni liberi di scorta",
     "Crimson Pass · € 4,99": "Crimson Pass · 4,99 €",
     "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "Acquisti una tantum tramite il tuo account dello store, nessun abbonamento. La villa, la nave pirata, il caso del giorno, il caso della settimana e l’archivio restano sempre gratis.",
     "Onderscheiding verdiend!": "Medaglia ottenuta!",
@@ -207,7 +207,7 @@
     "Los eerst zaak {0} op.": "Risolvi prima il caso {0}.",
     "Zaak {0}: {1}": "Caso {0}: {1}",
     "Zaak {0}: ": "Caso {0}: ",
-    "★★★ = zonder hint én in één keer goed · ★★ = één van de twee · ★ = opgelost": "★★★ = senza aiuti e giusto al primo colpo · ★★ = una delle due · ★ = risolto",
+    "★★★ = zonder hint én in één keer goed · ★★ = één van de twee · ★ = opgelost": "★★★ = senza aiuti e giusto al primo colpo · ★★ = una delle due · ★ = risolto",
     "Beste score:": "Record:",
     "Speel opnieuw": "Gioca ancora",
     "Deze zaak kon niet geladen worden.": "Impossibile caricare questo caso.",
@@ -220,13 +220,13 @@
     "✓ Deel voltooid": "✓ Parte completata",
     "Deze kist is al open.": "Questo scrigno è già aperto.",
     "Alle {0} zaken van {1} opgelost. Tik op de kist.": "{1}: {0} {0|one:caso risolto|other:casi risolti} su {0}. Tocca lo scrigno.",
-    "Alle acht zaken opgelost. Tik op de bewijskist.": "Tutti gli otto casi risolti. Tocca lo scrigno delle prove.",
+    "Alle acht zaken opgelost. Tik op de bewijskist.": "Tutti gli otto casi risolti. Tocca lo scrigno delle prove.",
     "🪙 +{0} punten": "🪙 +{0} {0|one:punto|other:punti}",
     "🧊 Een vrije dag": "🧊 Un giorno libero",
     "{0} Stempel: {1}": "{0} Timbro: {1}",
     "Al geopend": "Già aperto",
     "{0} is helemaal opgelost. Wat een speurder.": "{0}: tutto risolto. Che segugio.",
-    "Goed werk, Rekruut. Dit is van jou.": "Ottimo lavoro, Recluta. Questo è tuo.",
+    "Goed werk, Rekruut. Dit is van jou.": "Ottimo lavoro. Questo è tuo.",
     "Je gratis hints voor vandaag zijn op ({0} per dag). Morgen krijg je er weer {1}, of kies hieronder.": "Hai finito {0|one:l’aiuto gratuito|other:gli aiuti gratuiti} di oggi ({0} al giorno). Domani ne ricevi di nuovo {1}, oppure scegli qui sotto.",
     "{0} hoort bij de Crimson Pass. Je kunt de wereld ook los kopen.": "{0} fa parte del Crimson Pass. Puoi anche comprare il mondo a parte.",
     "Bordthema's en portretlijsten horen bij de Crimson Pass, of koop ze los.": "I temi del tabellone e le cornici dei ritratti fanno parte del Crimson Pass, oppure puoi comprarli a parte.",
@@ -238,7 +238,7 @@
     "Met de Pass zijn hints onbeperkt.": "Con il Pass gli aiuti sono illimitati.",
     "Je hebt er nu {0}. Elke dag krijg je {1} gratis.": "Ora ne hai {0}. Ogni giorno ne ricevi {1} gratis.",
     "Bordthema's en lijsten": "Temi e cornici",
-    "Nacht, sepia en kraftpapier; gouden, zilveren en crimson lijst.": "Notte, seppia e carta kraft; cornice oro, argento e cremisi.",
+    "Nacht, sepia en kraftpapier; gouden, zilveren en crimson lijst.": "Notte, seppia e carta kraft; cornici oro, argento e cremisi.",
     "{0} zaken in {1} delen · {2}": "{0} {0|one:caso|other:casi} in {1} {1|one:parte|other:parti} · {2}",
     "✓ Van jou": "✓ Ce l’hai",
     "Aankopen werken alleen in de app uit de App Store of Google Play.": "Gli acquisti funzionano solo nell’app scaricata da App Store o Google Play.",
@@ -315,7 +315,7 @@
     "In deze zaak zegt {0}: “{1}”": "Esempio da questo caso. {0}: «{1}»",
     "✓ Klopt": "✓ Torna",
     "✗ Klopt niet": "✗ Non torna",
-    "Hint {0} · deze zaak levert nu maximaal ★★ op": "Aiuto {0} · ora questo caso vale al massimo ★★",
+    "Hint {0} · deze zaak levert nu maximaal ★★ op": "Aiuto {0} · ora questo caso vale al massimo ★★",
     "Potlood: zet een stipje op vakjes waar iemand zou kúnnen staan. Met Plaats zet je iemand echt neer, met Gum haal je het weer weg.": "Matita: metti un puntino sulle caselle dove qualcuno potrebbe stare. Con Posiziona metti davvero una persona, con Gomma la togli.",
     "Bijna! Nog één verdachte staat verkeerd. {0} van de {1} staan al goed.": "Quasi! Un sospettato è ancora fuori posto. {0} su {1} {0|one:è|other:sono} già al posto giusto.",
     "{0} verdachten staan verkeerd, {1} staan goed. Gebruik een hint als je vastzit.": "{0} {0|one:sospettato è|other:sospettati sono} fuori posto, {1} {1|one:è|other:sono} al posto giusto. Usa un aiuto se ti blocchi.",
@@ -335,7 +335,7 @@
     " · Dag #{0}": " · Giorno #{0}",
     "Dagelijkse zaak ": "Caso del giorno ",
     "👁️ Vluchtige blik": "👁️ Colpo d’occhio",
-    "Ronde {0}: iedereen staat op zijn plek. Wie liegt?": "Round {0}: sono tutti al loro posto. Chi mente?",
+    "Ronde {0}: iedereen staat op zijn plek. Wie liegt?": "Round {0}: tutti al loro posto. Chi mente?",
     "Ronde {0}: kijk goed waar iedereen staat…": "Round {0}: guarda bene dove sono tutti…",
     "👁️ Onthoud het… ": "👁️ Memorizza… ",
     "Waar stond {0}?": "Dov’era {0.ref}?",
@@ -343,7 +343,7 @@
     "Nee: {0} loog.": "No: mentiva {0.ref}.",
     "Nee, daar stond {0}.": "No, lì c’era {0.ref}.",
     "Scherp gezien!": "Occhio di falco!",
-    "Bijna allemaal": "Quasi tutti",
+    "Bijna allemaal": "Non male",
     "Volgende keer beter": "Andrà meglio la prossima volta",
     "{0} van de {1} goed": "Giusti: {0} su {1}",
     " · <b>+{0} punten</b>": " · <b>+{0} {0|one:punto|other:punti}</b>",
@@ -377,7 +377,7 @@
     "In deze zaak zegt <b>{0}</b>: “{1}”": "Esempio da questo caso. <b>{0}</b>: «{1}»",
     "Waar stond <b>{0}</b>?": "Dov’era <b>{0.ref}</b>?",
     "{0} · Zaak {1}: {2}": "{0} · Caso {1}: {2}",
-    " · nog {0} {0|one:hint|other:hints}": " · {0} {0|one:aiuto rimasto|other:aiuti rimasti}",
+    " · nog {0} {0|one:hint|other:hints}": " · {0} {0|one:aiuto rimasto|other:aiuti rimasti}",
     "Volgende: {0} · nog {1} {1|one:zaak|other:zaken}": "Prossimo: {0} · ancora {1} {1|one:caso|other:casi}",
     "nog {0} {0|one:zaak|other:zaken}": "ancora {0} {0|one:caso|other:casi}",
     "🔒 Los nog {0} {0|one:zaak|other:zaken} op (vrij spel of dagelijks) om deze wereld te openen": "🔒 Risolvi ancora {0} {0|one:caso|other:casi} (gioco libero o del giorno) per aprire questo mondo",
@@ -1164,7 +1164,7 @@
       "Il nome del colpevole è cancellato. Tu lo riscrivi.",
       "Risolto, secondo l’archivio. Non secondo i fatti."
     ],
-    "mentorName": "Ispettore Van Dam",
+    "mentorName": "Ispettore Van Dam",
     "boardTutorial": [
       "Dichiarazione 1: Clementine era in salotto, in un angolo. Tre angoli sono occupati da oggetti, quindi ne resta uno. Trascina Clementine sulla casella illuminata, oppure toccala.",
       "Dichiarazione 2: Hargrove era proprio accanto a una pianta. Accanto alla pianta c’è una sola casella libera. Trascina lì Hargrove, oppure toccala.",
@@ -1175,23 +1175,23 @@
 
   campaign: {
     "landhuis": [
-      "Parte I · La cena",
+      "Parte I · La cena",
       "Villa Blackwood, 1927. Dopo cena il padrone di casa resta seduto in poltrona.",
       "I segreti della cena sono sul tavolo. Ma la famiglia tornerà.",
       "Eccoci a Blackwood. Comincia da chi dice in quale stanza era: sono le dichiarazioni più facili. E ricorda: solo l’assassino era con la vittima.",
       [
         [
-          "Il bicchiere di Bordeaux",
+          "Il bicchiere di Bordeaux",
           "La serata cominciò con un brindisi e finì nel silenzio.",
           "🍷 Bicchiere di vino"
         ],
         [
-          "La chiave scomparsa",
+          "La chiave scomparsa",
           "Lo studio era chiuso a chiave. Non è vero, disse il maggiordomo.",
           "🗝️ Chiave"
         ],
         [
-          "Pioggia sulla tenuta",
+          "Pioggia sulla tenuta",
           "La tempesta tenne tutti in casa. Tutti.",
           "☂️ Ombrello"
         ],
@@ -1201,45 +1201,45 @@
           "✉️ Lettera"
         ],
         [
-          "Il ritratto",
+          "Il ritratto",
           "Qualcuno aveva girato il ritratto di famiglia verso il muro.",
           "🖼️ Ritratto"
         ],
         [
-          "Il giardiniere tace",
+          "Il giardiniere tace",
           "Il capanno degli attrezzi era vuoto. Del giardiniere, nessuna traccia.",
           "🧤 Guanto da giardino"
         ],
         [
-          "Il testamento",
+          "Il testamento",
           "Tutti sapevano cosa c’era scritto. Una persona lo sapeva meglio.",
           "📜 Testamento"
         ],
         [
-          "La stanza rossa",
+          "La stanza rossa",
           "I conti tornarono nella stanza dove tutto era cominciato.",
           "🕯️ Candela rossa"
         ]
       ]
     ],
     "landhuis-2": [
-      "Parte II · Gli eredi",
+      "Parte II · Gli eredi",
       "Dopo il funerale la famiglia torna. Ognuno vuole qualcosa dalla casa.",
       "L’eredità è divisa. Ma la casa ha ancora qualcosa da raccontare.",
       "La famiglia è tornata e tutti parlano di tutti. Dichiarazioni su due persone: trova prima il posto di una delle due.",
       [
         [
-          "La porta sigillata",
+          "La porta sigillata",
           "Il notaio aveva sigillato lo studio. Il sigillo era rotto.",
           "🔏 Sigillo notarile"
         ],
         [
-          "Il tè alle quattro",
+          "Il tè alle quattro",
           "La tazza era ancora piena. La sedia accanto, vuota.",
           "☕ Tazza da tè"
         ],
         [
-          "Il diario di Agatha",
+          "Il diario di Agatha",
           "Zia Agatha scriveva tutto. Quasi tutto.",
           "📔 Diario"
         ],
@@ -1249,17 +1249,17 @@
           "⏰ Orologio fermo"
         ],
         [
-          "Passi in cantina",
+          "Passi in cantina",
           "Nessuno scendeva mai in cantina. Qualcuno sì.",
           "🥾 Stivale della cantina"
         ],
         [
-          "I bicchieri scambiati",
+          "I bicchieri scambiati",
           "Due bicchieri, lo stesso vino, una differenza.",
           "🥂 Due bicchieri"
         ],
         [
-          "Il segreto della serra",
+          "Il segreto della serra",
           "Dietro le piante c’era una porta che nessuno conosceva.",
           "🌿 Felce della serra"
         ],
@@ -1271,43 +1271,43 @@
       ]
     ],
     "landhuis-3": [
-      "Parte III · La notte della tempesta",
+      "Parte III · La notte della tempesta",
       "Il temporale isola la tenuta dal mondo. Nessuno entra, nessuno esce.",
       "All’alba il temporale si allontana. Villa Blackwood non ha più segreti.",
       "La tempesta chiude la casa. Aspettati dichiarazioni su righe e colonne: attraversano le pareti. Guarda bene la piantina.",
       [
         [
-          "Si spengono le luci",
+          "Si spengono le luci",
           "Una candela bruciava ancora, nella stanza sbagliata.",
           "🔦 Torcia"
         ],
         [
-          "Il cappotto bagnato",
+          "Il cappotto bagnato",
           "Qualcuno era stato fuori. Tutti lo negavano.",
           "🧥 Cappotto bagnato"
         ],
         [
-          "La scala della biblioteca",
+          "La scala della biblioteca",
           "La scala era appoggiata a uno scaffale che nessuno usava mai.",
           "🪜 Scala"
         ],
         [
-          "La finestra rotta",
+          "La finestra rotta",
           "I vetri erano dentro. Il vento veniva da fuori.",
           "🔷 Scheggia di vetro"
         ],
         [
-          "Il maggiordomo silenzioso",
+          "Il maggiordomo silenzioso",
           "Hargrove taceva. Già questo era sospetto.",
           "🎩 Cappello del maggiordomo"
         ],
         [
-          "Il ritratto osserva",
+          "Il ritratto osserva",
           "Dal quadro si vedeva tutta la sala da pranzo.",
           "🪞 Specchio"
         ],
         [
-          "Il maggiore Pike non dorme",
+          "Il maggiore Pike non dorme",
           "Il maggiore diceva di dormire. I suoi stivali dicevano altro.",
           "🎖️ Medaglia del maggiore"
         ],
@@ -1319,38 +1319,38 @@
       ]
     ],
     "landhuis-4": [
-      "Parte IV · Un anno dopo",
+      "Parte IV · Un anno dopo",
       "Un anno dopo la tempesta, Blackwood viene venduta. Il nuovo proprietario invita i vecchi ospiti. Nessuno avrebbe dovuto venire.",
       "La vendita salta. La casa si tiene i suoi abitanti.",
       "Le stesse facce, un anno più vecchie e molto più prudenti. Leggi ogni dichiarazione due volte: anche chi dice dove NON era ti dice qualcosa.",
       [
         [
-          "Il nuovo proprietario",
+          "Il nuovo proprietario",
           "L’atto era pronto. Mancava la firma.",
           "🖊️ Stilografica"
         ],
         [
-          "Polvere sul pianoforte",
+          "Polvere sul pianoforte",
           "Nessuno aveva suonato. Eppure il coperchio era aperto.",
           "🎵 Coperchio del pianoforte"
         ],
         [
-          "La porta della cantina",
+          "La porta della cantina",
           "Da anni la porta era bloccata. Non quella notte.",
           "🚪 Porta della cantina"
         ],
         [
-          "Juniper alla finestra",
+          "Juniper alla finestra",
           "Vide qualcosa in giardino. Almeno, così disse.",
           "🔭 Binocolo"
         ],
         [
-          "Il camino freddo",
+          "Il camino freddo",
           "Il fuoco era spento. La cenere era ancora calda.",
           "🪵 Ceppo"
         ],
         [
-          "La vecchia foto",
+          "La vecchia foto",
           "Otto persone nella foto. Una era stata ritagliata.",
           "✂️ Forbici"
         ],
@@ -1360,35 +1360,35 @@
           "🥄 Cucchiaio d’argento"
         ],
         [
-          "La chiave della soffitta",
+          "La chiave della soffitta",
           "Nessuno saliva in soffitta. Tranne chi aveva la chiave.",
           "🔐 Chiave della soffitta"
         ]
       ]
     ],
     "landhuis-5": [
-      "Parte V · Il matrimonio",
+      "Parte V · Il matrimonio",
       "Odette si sposa a Blackwood. Arriva tutta la famiglia, e con la famiglia i vecchi litigi.",
       "La torta è tagliata, la festa è finita. Gli ospiti se ne vanno, tutti tranne uno.",
       "A un matrimonio c’è ressa: tante persone, poche stanze. Comincia da chi dice di essere stato da solo: così escludi tutti gli altri da quella stanza.",
       [
         [
-          "Il bouquet",
+          "Il bouquet",
           "Il bouquet fu preso al volo. Dalla persona sbagliata.",
           "💐 Bouquet"
         ],
         [
-          "La torta nuziale",
+          "La torta nuziale",
           "Tre piani. Quello in cima era stato toccato.",
           "🎂 Paletta per torta"
         ],
         [
-          "Le fedi",
+          "Le fedi",
           "Due fedi, due astucci. Uno era vuoto.",
           "💍 Astuccio delle fedi"
         ],
         [
-          "Il discorso del maggiore Pike",
+          "Il discorso del maggiore Pike",
           "Parlò per dieci minuti. Nessuno ascoltava. Una persona sì.",
           "📝 Discorso"
         ],
@@ -1403,7 +1403,7 @@
           "🎻 Violino"
         ],
         [
-          "Il secchiello per lo champagne",
+          "Il secchiello per lo champagne",
           "Il ghiaccio si era sciolto. Il bicchiere accanto, intatto.",
           "🧊 Secchiello del ghiaccio"
         ],
@@ -1415,28 +1415,28 @@
       ]
     ],
     "landhuis-6": [
-      "Parte VI · Il segreto di Blackwood",
+      "Parte VI · Il segreto di Blackwood",
       "Sotto le scale c’è una porta che non compare su nessuna piantina. Quello che c’è dietro cambia tutto.",
       "La porta sotto le scale viene murata. Blackwood tace, e questa volta per davvero.",
       "L’ultima parte della villa. Torna tutto quello che hai imparato: angoli, oggetti, righe. Non posizionare nessuno finché non hai la certezza.",
       [
         [
-          "La porta sotto le scale",
+          "La porta sotto le scale",
           "Dietro le scale c’era una porta. Qualcuno lo sapeva.",
           "🧱 Pietra smossa"
         ],
         [
-          "La lettera del 1912",
+          "La lettera del 1912",
           "La lettera era vecchia. L’inchiostro no.",
           "🖋️ Calamaio"
         ],
         [
-          "La piantina non torna",
+          "La piantina non torna",
           "Una stanza era più grande che sul disegno.",
           "📐 Metro"
         ],
         [
-          "La dottoressa Quill indaga",
+          "La dottoressa Quill indaga",
           "La dottoressa lo trovò per prima. Troppo in fretta.",
           "🩺 Stetoscopio"
         ],
@@ -1446,7 +1446,7 @@
           "🤫 Fazzoletto"
         ],
         [
-          "La stanza nascosta",
+          "La stanza nascosta",
           "La stanza non aveva finestre. Eppure c’era luce.",
           "🕯️ Candeliere"
         ],
@@ -1456,14 +1456,14 @@
           "🧾 Confessione"
         ],
         [
-          "Blackwood, la fine",
+          "Blackwood, la fine",
           "L’ultima stanza. L’ultimo nome.",
           "🗝️ Ultima chiave"
         ]
       ]
     ],
     "piraten": [
-      "Parte I · La bonaccia",
+      "Parte I · La bonaccia",
       "Il Gabbiano Nero è fermo in bonaccia su un mare liscio come uno specchio. Il capitano non risponde più.",
       "Il Gabbiano Nero issa le vele. Sulla mappa c’è un’isola.",
       "Una nave è piccola e tutti hanno visto tutti. «Proprio accanto» vuol dire la casella a sinistra, a destra, sopra o sotto, mai in diagonale. Comincia dalla cambusa.",
@@ -1474,17 +1474,17 @@
           "🧭 Bussola"
         ],
         [
-          "La mappa rubata",
+          "La mappa rubata",
           "La mappa del tesoro era sparita. Il corpo no.",
           "🗺️ Mappa del tesoro"
         ],
         [
-          "Rum nella stiva",
+          "Rum nella stiva",
           "Tre barili vuoti, un marinaio muto.",
           "🛢️ Barile di rum"
         ],
         [
-          "Il cannone silenzioso",
+          "Il cannone silenzioso",
           "Nessuno sentì uno sparo. Eppure qualcuno era a terra.",
           "💣 Palla di cannone"
         ],
@@ -1494,93 +1494,93 @@
           "🍴 Coltello di cambusa"
         ],
         [
-          "Il forziere",
+          "Il forziere",
           "Il forziere era aperto. Il contenuto, sparito.",
           "💰 Moneta d’oro"
         ],
         [
-          "Arriva la tempesta",
+          "Arriva la tempesta",
           "Il cielo si fece nero, e anche l’umore dell’equipaggio.",
           "🏮 Lanterna"
         ],
         [
-          "Le ultime vele",
+          "Le ultime vele",
           "Una persona non avrebbe più toccato terra.",
           "⚓ Ancora"
         ]
       ]
     ],
     "piraten-2": [
-      "Parte II · L’isola",
+      "Parte II · L’isola",
       "Il Gabbiano Nero getta l’ancora davanti a un’isola senza nome. Il tesoro è vicino, e lo sanno tutti.",
       "Il tesoro è nella stiva. I conti sono saldati. Ora si torna a casa.",
       "Sull’isola nessuno mente, ma tutti tacciono qualcosa. Con la Matita segna le caselle dove qualcuno potrebbe stare.",
       [
         [
-          "Orme nella sabbia",
+          "Orme nella sabbia",
           "Le orme andavano verso l’acqua. Non tornavano.",
           "🐚 Conchiglia"
         ],
         [
-          "Il pappagallo parla",
+          "Il pappagallo parla",
           "L’uccello ripeteva un nome. Sempre lo stesso.",
           "🪶 Piuma di pappagallo"
         ],
         [
-          "Il barile vuoto",
+          "Il barile vuoto",
           "Il rum era finito. Le domande no.",
           "🍾 Bottiglia vuota"
         ],
         [
-          "La mappa falsa",
+          "La mappa falsa",
           "C’erano due mappe. Una mentiva.",
           "📜 Mappa falsa"
         ],
         [
-          "La bussola gira",
+          "La bussola gira",
           "L’ago puntava verso la cambusa.",
           "🧲 Ago della bussola"
         ],
         [
-          "La scialuppa scomparsa",
+          "La scialuppa scomparsa",
           "Mancava una scialuppa. L’equipaggio c’era tutto.",
           "🚣 Remo"
         ],
         [
-          "Il cannoniere Thorne conta",
+          "Il cannoniere Thorne conta",
           "Dodici palle di cannone, undici nella cassa.",
           "📦 Cassa delle munizioni"
         ],
         [
-          "La maledizione di Occhionero",
+          "La maledizione di Occhionero",
           "Tutti credevano alla maledizione. Tranne il colpevole.",
           "📿 Amuleto"
         ]
       ]
     ],
     "piraten-3": [
-      "Parte III · Il ritorno",
+      "Parte III · Il ritorno",
       "Con il tesoro a bordo comincia il viaggio di ritorno. Diventare ricchi non rende nessuno più onesto.",
       "Il Gabbiano Nero entra in porto. L’equipaggio è più piccolo, il tesoro è intero.",
       "Con il tesoro a bordo l’equipaggio si agita. Dichiarazioni come «più a sinistra di» e «più in alto di» valgono per tutta la piantina, non solo per il locale.",
       [
         [
-          "Il primo turno di guardia",
+          "Il primo turno di guardia",
           "La sentinella si addormentò. Almeno, così disse.",
           "⏳ Clessidra"
         ],
         [
-          "La dottoressa Marlow e la boccetta",
+          "La dottoressa Marlow e la boccetta",
           "La boccetta era vuota. L’etichetta, sparita.",
           "🧪 Boccetta"
         ],
         [
-          "Tempesta a babordo",
+          "Tempesta a babordo",
           "Tutto scivolava. Una cosa restò esattamente al suo posto.",
           "🪢 Cima tagliata"
         ],
         [
-          "La gatta di bordo",
+          "La gatta di bordo",
           "La gatta sedeva dove non si sedeva mai.",
           "🔔 Campana di bordo"
         ],
@@ -1590,12 +1590,12 @@
           "🗡️ Pugnale"
         ],
         [
-          "La cima è tagliata",
+          "La cima è tagliata",
           "Nessuno aveva un coltello. Tutti avevano un coltello.",
           "⚔️ Sciabola"
         ],
         [
-          "Terra in vista",
+          "Terra in vista",
           "Il porto era ancora a un giorno di distanza. Troppo lontano, per qualcuno.",
           "🔭 Cannocchiale"
         ],
@@ -1607,66 +1607,66 @@
       ]
     ],
     "piraten-4": [
-      "Parte IV · Il nuovo capitano",
+      "Parte IV · Il nuovo capitano",
       "Barnaby prende il timone. L’equipaggio non è d’accordo. In mare niente resta tranquillo a lungo.",
       "Il Gabbiano ha un capitano. Per quanto, nessuno lo sa.",
       "Un capitano nuovo e un equipaggio vecchio. Su una nave così piccola le dichiarazioni con «proprio accanto» valgono oro: ogni casella conta.",
       [
         [
-          "Il timone cambia mano",
+          "Il timone cambia mano",
           "Barnaby prese il timone. Qualcuno l’aveva lasciato.",
           "🛞 Ruota del timone"
         ],
         [
-          "La mappa di Pip",
+          "La mappa di Pip",
           "Il mozzo Pip disegnò la mappa di un posto che non esisteva.",
           "🖍️ Gessetto"
         ],
         [
-          "Alla cuoca Saffron manca un coltello",
+          "Alla cuoca Saffron manca un coltello",
           "Undici coltelli in cambusa. Avrebbero dovuto essere dodici.",
           "🔪 Coltello da cucina"
         ],
         [
-          "La falla",
+          "La falla",
           "L’acqua entrava. Proprio dove nessuno guardava.",
           "🪣 Secchio"
         ],
         [
-          "La signorina Coral ascolta",
+          "La signorina Coral ascolta",
           "Sentì delle voci nella stiva. Due voci.",
           "🐚 Conchiglia d’ascolto"
         ],
         [
-          "La lite per il forziere",
+          "La lite per il forziere",
           "Due persone volevano il forziere. Una l’ebbe.",
           "🔒 Lucchetto del forziere"
         ],
         [
-          "La notte senza luna",
+          "La notte senza luna",
           "Era buio pesto. Qualcuno conosceva la strada.",
           "🌑 Lanterna cieca"
         ],
         [
-          "Barnaby al timone",
+          "Barnaby al timone",
           "Il capitano era al timone. Dietro di lui: nessuno. Così diceva.",
           "🎖️ Bottone del capitano"
         ]
       ]
     ],
     "piraten-5": [
-      "Parte V · La nave fantasma",
+      "Parte V · La nave fantasma",
       "Nella nebbia c’è una nave senza equipaggio. Il Gabbiano le si affianca. Qualcuno avrebbe fatto meglio a restare a casa.",
       "La nave fantasma svanisce nella nebbia. Il Gabbiano prosegue, con un uomo in meno.",
       "Nebbia e una nave vuota: sono tutti nervosi e parlano troppo. Escludi prima i locali vuoti, poi il resto si restringe da sé.",
       [
         [
-          "Il diario di bordo dell’altra nave",
+          "Il diario di bordo dell’altra nave",
           "L’ultima annotazione era di una mano conosciuta.",
           "📖 Diario di bordo altrui"
         ],
         [
-          "La nave nella nebbia",
+          "La nave nella nebbia",
           "Nessun equipaggio, nessuna bandiera, un’impronta.",
           "🌫️ Fanale da nebbia"
         ],
@@ -1676,45 +1676,45 @@
           "🛏️ Amaca"
         ],
         [
-          "Il timoniere Ronan si perde",
+          "Il timoniere Ronan si perde",
           "Su una nave che non conosceva, trovò la strada fin troppo bene.",
           "🧭 Seconda bussola"
         ],
         [
-          "La canzone dalla stiva",
+          "La canzone dalla stiva",
           "Qualcuno cantava. Nessuno lo ammise.",
           "🎶 Canto marinaresco"
         ],
         [
-          "La dottoressa Marlow e la cassetta",
+          "La dottoressa Marlow e la cassetta",
           "Medicine per un equipaggio che non c’era.",
           "💊 Portapillole"
         ],
         [
-          "Thorne e la polvere da sparo",
+          "Thorne e la polvere da sparo",
           "La polvere era asciutta. Tutta, tranne un barile.",
           "🧨 Barile di polvere"
         ],
         [
-          "La nebbia si alza",
+          "La nebbia si alza",
           "Quando la nebbia si alzò, sul ponte del Gabbiano c’era qualcuno a terra.",
           "⚓ Ancora arrugginita"
         ]
       ]
     ],
     "piraten-6": [
-      "Parte VI · Il tesoro di Occhionero",
+      "Parte VI · Il tesoro di Occhionero",
       "Il vero tesoro di Occhionero non è su un’isola. È a bordo. E adesso tutti sanno dove.",
       "Il tesoro è diviso. Il Gabbiano appartiene all’equipaggio, e l’equipaggio al mare.",
       "Gli ultimi casi sul Gabbiano, e i più difficili. Le dichiarazioni su righe e colonne attraversano tutta la nave: usa la Matita.",
       [
         [
-          "Il doppio fondo",
+          "Il doppio fondo",
           "Sotto la stiva c’era un’altra stiva.",
           "🪵 Asse smossa"
         ],
         [
-          "Il mozzo Pip tace",
+          "Il mozzo Pip tace",
           "Aveva visto tutto. Aveva solo dodici anni.",
           "🪀 Yo-yo"
         ],
@@ -1724,12 +1724,12 @@
           "🪙 Benda d’oro"
         ],
         [
-          "La spartizione",
+          "La spartizione",
           "Otto parti. Sette persone al tavolo.",
           "⚖️ Bilancia"
         ],
         [
-          "Il coltello di Saffron",
+          "Il coltello di Saffron",
           "Il coltello era tornato. Pulito.",
           "🧽 Coltello pulito"
         ],
@@ -1739,19 +1739,19 @@
           "🏴 Drappo nero"
         ],
         [
-          "L’ultimo turno di guardia",
+          "L’ultimo turno di guardia",
           "Chi fece l’ultimo turno non vide mai sorgere il sole.",
           "🕯️ Candela di guardia"
         ],
         [
-          "La terra di Occhionero",
+          "La terra di Occhionero",
           "La costa del capitano. La fine del viaggio.",
           "🏝️ Mappa di casa"
         ]
       ]
     ],
     "hotel": [
-      "Parte I · La notte di Capodanno",
+      "Parte I · La notte di Capodanno",
       "Allo scoccare della mezzanotte si spense la luce. Quando tornò, il proprietario giaceva sul pavimento di marmo.",
       "La prima notte dell’anno è finita. Gli ospiti non possono ancora tornare a casa.",
       "Cento ospiti, una vittima. Un hotel ha molte sale: escludi prima quelle che secondo il rapporto erano vuote.",
@@ -1762,32 +1762,32 @@
           "⏱️ Orologio da taschino"
         ],
         [
-          "La valigia sbagliata",
+          "La valigia sbagliata",
           "La valigia della camera 12 non era dell’ospite della camera 12.",
           "🧳 Valigia"
         ],
         [
-          "Champagne al bar",
+          "Champagne al bar",
           "Il bicchiere era ancora freddo quando successe.",
           "🍾 Champagne"
         ],
         [
-          "Il pianista continua a suonare",
+          "Il pianista continua a suonare",
           "La musica non si fermò. Il proprietario sì.",
           "🎼 Spartito"
         ],
         [
-          "Servizio in camera",
+          "Servizio in camera",
           "Il carrello era davanti alla porta. Nessuno l’aveva ordinato.",
           "🛎️ Campanello di servizio"
         ],
         [
-          "La sala da ballo",
+          "La sala da ballo",
           "Cento ospiti, e un solo testimone.",
           "🎭 Maschera da ballo"
         ],
         [
-          "La chiave 404",
+          "La chiave 404",
           "Quella camera non esisteva. Quella chiave sì.",
           "🔑 Chiave 404"
         ],
@@ -1799,18 +1799,18 @@
       ]
     ],
     "hotel-2": [
-      "Parte II · Gli ospiti",
+      "Parte II · Gli ospiti",
       "Gli ospiti di Capodanno non possono lasciare l’hotel. E nemmeno il personale.",
       "Gli ospiti partono. Il registro ha una pagina in meno.",
       "Gli ospiti non possono andarsene, e si sente nelle loro dichiarazioni: brevi e taglienti. Due persone nella stessa sala: posiziona prima quella su cui hai più certezze.",
       [
         [
-          "La camera 7 è vuota",
+          "La camera 7 è vuota",
           "L’ospite della camera 7 era sulla lista. Non nel letto.",
           "🛏️ Federa"
         ],
         [
-          "Colazione per due",
+          "Colazione per due",
           "Due piatti, un ospite.",
           "🍽️ Piatto della colazione"
         ],
@@ -1820,7 +1820,7 @@
           "🔘 Pulsante dell’ascensore"
         ],
         [
-          "La portineria",
+          "La portineria",
           "Il portiere vedeva tutto. Tranne questo.",
           "🧢 Berretto del portiere"
         ],
@@ -1830,60 +1830,60 @@
           "🌂 Ombrello bagnato"
         ],
         [
-          "La signora Sato canta",
+          "La signora Sato canta",
           "Il bar la sentì cantare. Anche la sala da ballo. Impossibile.",
           "🎤 Microfono"
         ],
         [
-          "La cantina dei vini",
+          "La cantina dei vini",
           "La serratura era intatta. La bottiglia no.",
           "🍷 Bottiglia di vino"
         ],
         [
-          "Check-out a mezzogiorno",
+          "Check-out a mezzogiorno",
           "A mezzogiorno se n’erano andati. Tutti tranne uno.",
           "🧾 Conto"
         ]
       ]
     ],
     "hotel-3": [
-      "Parte III · Il personale",
+      "Parte III · Il personale",
       "Chi conosce l’hotel conosce i corridoi dietro le pareti. Questa parte comincia lì.",
       "Il Grand Hotel Aurora abbassa le luci. Questa volta per sempre.",
       "Il personale conosce i corridoi dietro le pareti. Pensa ad angoli e pareti: un angolo tocca due pareti, «contro una parete» ne tocca una sola.",
       [
         [
-          "Il montacarichi",
+          "Il montacarichi",
           "Solo il personale conosceva il montacarichi. A quanto pare, non solo.",
           "🗝️ Chiave di servizio"
         ],
         [
-          "La chef Brigitte assaggia",
+          "La chef Brigitte assaggia",
           "La zuppa era troppo salata. La chef non c’era.",
           "🧂 Saliera"
         ],
         [
-          "Il carrello delle pulizie",
+          "Il carrello delle pulizie",
           "Il carrello era davanti alla suite. La suite era vuota.",
           "🧽 Spugna"
         ],
         [
-          "Il pianista Felix tace",
+          "Il pianista Felix tace",
           "Per la prima volta in dieci anni il pianoforte restò chiuso.",
           "🎹 Tasto del pianoforte"
         ],
         [
-          "Il cristallo rotto",
+          "Il cristallo rotto",
           "Al lampadario mancava una goccia.",
           "💎 Cristallo"
         ],
         [
-          "La cassaforte",
+          "La cassaforte",
           "La cassaforte era aperta. Solo una persona conosceva la combinazione.",
           "🔢 Combinazione"
         ],
         [
-          "La camera 404",
+          "La camera 404",
           "La camera che non esisteva era stata usata di nuovo.",
           "🚪 Targhetta della porta"
         ],
@@ -1895,13 +1895,13 @@
       ]
     ],
     "hotel-4": [
-      "Parte IV · La riapertura",
+      "Parte IV · La riapertura",
       "Il Grand Hotel Aurora riapre. Nuovo proprietario, vecchi ospiti, gli stessi corridoi.",
       "La riapertura è un successo. Tranne una recensione.",
       "L’hotel è stato riarredato: studia la piantina prima di cominciare. Tocca gli oggetti su cui hai dubbi.",
       [
         [
-          "Il taglio del nastro",
+          "Il taglio del nastro",
           "Le forbici erano affilate. Il proprietario non vide la festa.",
           "✂️ Forbici da cerimonia"
         ],
@@ -1911,12 +1911,12 @@
           "🔑 Chiave 1"
         ],
         [
-          "La contessa Delacroix si lamenta",
+          "La contessa Delacroix si lamenta",
           "Il letto era troppo duro. L’alibi troppo debole.",
           "🛎️ Campanello dei reclami"
         ],
         [
-          "Il nuovo cuoco",
+          "Il nuovo cuoco",
           "La chef Brigitte aveva un aiuto. L’aiuto aveva fretta.",
           "🍳 Padella"
         ],
@@ -1926,78 +1926,78 @@
           "⬆️ Freccia dell’ascensore"
         ],
         [
-          "Il maggiordomo Winslow ricorda",
+          "Il maggiordomo Winslow ricorda",
           "Ricordava ogni ospite. Tutti tranne uno.",
           "📒 Elenco degli ospiti"
         ],
         [
-          "La sala degli specchi",
+          "La sala degli specchi",
           "Cento specchi, cento testimoni, una bugia.",
           "🪞 Scheggia di specchio"
         ],
         [
-          "La prima recensione",
+          "La prima recensione",
           "Cinque stelle. Scritte da qualcuno che non aveva mai fatto il check-in.",
           "⭐ Recensione"
         ]
       ]
     ],
     "hotel-5": [
-      "Parte V · Il convegno",
+      "Parte V · Il convegno",
       "Trecento delegati, un relatore che non arriva mai sul palco.",
       "Il convegno è finito. L’elenco dei presenti non torna più.",
       "Tanti ospiti vuol dire tante dichiarazioni su due persone alla volta. Trova sempre prima il posto di quella di cui sai di più.",
       [
         [
-          "La pausa caffè",
+          "La pausa caffè",
           "Duecento tazze. Una con qualcosa in più.",
           "☕ Tazza del convegno"
         ],
         [
-          "Il badge",
+          "Il badge",
           "Il badge era a terra. Il nome era sbagliato.",
           "🏷️ Badge"
         ],
         [
-          "La sala sbagliata",
+          "La sala sbagliata",
           "La sala B era vuota. Non secondo il programma.",
           "🚪 Cartello della sala"
         ],
         [
-          "Il giornalista Vance prende appunti",
+          "Il giornalista Vance prende appunti",
           "Annotava tutto. Anche quello che non aveva visto.",
           "🗒️ Taccuino"
         ],
         [
-          "Il portiere Otis dorme",
+          "Il portiere Otis dorme",
           "Per la prima volta in trent’anni. Così diceva.",
           "😴 Sedia del portiere"
         ],
         [
-          "La ballerina Lulu si esibisce",
+          "La ballerina Lulu si esibisce",
           "L’esibizione durò quattro minuti. Il tempo giusto.",
           "🩰 Scarpetta da danza"
         ],
         [
-          "Il microfono è acceso",
+          "Il microfono è acceso",
           "Lo sentirono tutti. Nessuno lo capì.",
           "🎙️ Microfono"
         ],
         [
-          "Il discorso di chiusura",
+          "Il discorso di chiusura",
           "Il relatore non arrivò mai. La sala aspettava.",
           "📣 Leggio"
         ]
       ]
     ],
     "hotel-6": [
-      "Parte VI · L’ultima notte dell’Aurora",
+      "Parte VI · L’ultima notte dell’Aurora",
       "L’hotel chiude per sempre. Il personale resta una notte in più. Una notte di troppo.",
       "Le luci si spengono. Il Grand Hotel Aurora è storia, e tu ne conosci ogni pagina.",
       "L’ultima notte e i casi più difficili dell’hotel. Angoli, pareti, righe: conta tutto. Prenditi il tuo tempo, le stelle aspettano.",
       [
         [
-          "Si consegnano le chiavi",
+          "Si consegnano le chiavi",
           "Tutte le chiavi sul pannello. Un gancio vuoto.",
           "🪝 Gancio delle chiavi"
         ],
@@ -2007,27 +2007,27 @@
           "🍽️ Cloche d’argento"
         ],
         [
-          "La piscina vuota",
+          "La piscina vuota",
           "L’acqua non c’era più. Quello che c’era sul fondo sì.",
           "🏊 Piastrella della piscina"
         ],
         [
-          "La signora Sato fa le valigie",
+          "La signora Sato fa le valigie",
           "Due valigie. Una non era sua.",
           "🧳 Seconda valigia"
         ],
         [
-          "L’ultimo pezzo del pianista Felix",
+          "L’ultimo pezzo del pianista Felix",
           "L’ultima canzone. L’ultima nota non arrivò mai.",
           "🎼 Ultimo spartito"
         ],
         [
-          "La cassaforte è vuota",
+          "La cassaforte è vuota",
           "La cassaforte era aperta. La combinazione era stata cambiata.",
           "🔓 Cassaforte aperta"
         ],
         [
-          "La luce nella camera 404",
+          "La luce nella camera 404",
           "La camera che non esisteva aveva la luce accesa.",
           "💡 Lampadina"
         ],
@@ -2039,38 +2039,38 @@
       ]
     ],
     "ruimte": [
-      "Parte I · Allarme",
+      "Parte I · Allarme",
       "La comandante non si presenta in servizio. Tutte le camere stagne sono sigillate.",
       "Le camere stagne restano chiuse. Poi l’antenna capta qualcosa.",
       "Stazione Orione, tutte le camere stagne sigillate. L’equipaggio parla di moduli, non di stanze. Per il resto funziona esattamente come a casa.",
       [
         [
-          "Silenzio in plancia",
+          "Silenzio in plancia",
           "La comandante non rispose all’appello. Mai più.",
           "📓 Diario di bordo"
         ],
         [
-          "Il laboratorio",
+          "Il laboratorio",
           "Una provetta rotta, e anche un alibi.",
           "🧪 Provetta"
         ],
         [
-          "La serra",
+          "La serra",
           "Tra le piante non c’erano solo foglie.",
           "🌱 Germoglio"
         ],
         [
-          "Calo di pressione",
+          "Calo di pressione",
           "Scattò l’allarme. Non per la pressione.",
           "🚨 Luce d’allarme"
         ],
         [
-          "Il robot di manutenzione",
+          "Il robot di manutenzione",
           "Il robot aveva visto tutto, ma non dice niente.",
           "💾 Chip del robot"
         ],
         [
-          "Ciclo di sonno",
+          "Ciclo di sonno",
           "Dormivano tutti. Tranne due persone.",
           "😴 Mascherina per dormire"
         ],
@@ -2080,25 +2080,25 @@
           "🌌 Mappa stellare"
         ],
         [
-          "Il viaggio di ritorno",
+          "Il viaggio di ritorno",
           "La capsula aveva posto per tutti. Tutti tranne uno.",
           "🎫 Pass per la capsula"
         ]
       ]
     ],
     "ruimte-2": [
-      "Parte II · Il segnale",
+      "Parte II · Il segnale",
       "Un segnale dall’esterno della stazione. L’equipaggio si divide.",
       "Il segnale si interrompe. A bordo resta l’inquietudine.",
       "Il segnale rende tutti nervosi. Meno dichiarazioni ci sono, più devi ricavare da ciascuna. Leggile due volte.",
       [
         [
-          "Il messaggio",
+          "Il messaggio",
           "Il messaggio arrivò alle 03:00. Nessuno lo sentì.",
           "📼 Registrazione"
         ],
         [
-          "Il sensore guasto",
+          "Il sensore guasto",
           "Un sensore si guastò. Proprio sopra la mensa.",
           "📟 Sensore"
         ],
@@ -2108,7 +2108,7 @@
           "🔥 Saldatore"
         ],
         [
-          "Il cuoco Dima continua a cucinare",
+          "Il cuoco Dima continua a cucinare",
           "Il cibo era pronto. Non venne nessuno.",
           "🥣 Razione"
         ],
@@ -2118,55 +2118,55 @@
           "🕹️ Leva della camera stagna"
         ],
         [
-          "La cupola ruota",
+          "La cupola ruota",
           "La cupola puntava verso la Terra. Nessuno l’aveva girata.",
           "🛰️ Motore della cupola"
         ],
         [
-          "Il robot mente",
+          "Il robot mente",
           "I file di log erano stati cancellati. Quasi tutti.",
           "💽 File di log"
         ],
         [
-          "Silenzio nella serra",
+          "Silenzio nella serra",
           "Le piante crescevano. Nient’altro si muoveva.",
           "🍃 Foglia della serra"
         ]
       ]
     ],
     "ruimte-3": [
-      "Parte III · Rientro",
+      "Parte III · Rientro",
       "La capsula per tornare a casa ha posto per tutti. Non tutti vogliono partire.",
       "La capsula si sgancia. La Stazione Orione continua a girare, vuota e silenziosa.",
       "L’ultimo viaggio. Aspettati i casi più difficili della campagna. Un consiglio: chi era da solo in un modulo esclude tutti gli altri da quel modulo.",
       [
         [
-          "Il primo ciclo di sonno",
+          "Il primo ciclo di sonno",
           "Tutti dormirono otto ore. Una persona nove.",
           "⏰ Sveglia"
         ],
         [
-          "Il pilota Reyes controlla",
+          "Il pilota Reyes controlla",
           "La checklist era spuntata. Da due mani.",
           "📋 Checklist"
         ],
         [
-          "Il tubo che perde",
+          "Il tubo che perde",
           "L’acqua scorreva verso il laboratorio.",
           "🧴 Borraccia"
         ],
         [
-          "Il cadetto Yuki conta",
+          "Il cadetto Yuki conta",
           "Tredici casse. Ieri erano dodici.",
           "📦 Cassa tredici"
         ],
         [
-          "Il dottor Nkemelu esita",
+          "Il dottor Nkemelu esita",
           "Il dottore sapeva più di quanto dicesse il rapporto.",
           "📄 Rapporto"
         ],
         [
-          "Il laboratorio è sigillato",
+          "Il laboratorio è sigillato",
           "La porta era chiusa a chiave. Da entrambi i lati.",
           "🔏 Sigillo del laboratorio"
         ],
@@ -2183,23 +2183,23 @@
       ]
     ],
     "ruimte-4": [
-      "Parte IV · Orione riparte",
+      "Parte IV · Orione riparte",
       "Un nuovo equipaggio rimette in servizio la Stazione Orione. I vecchi log erano stati cancellati. Non abbastanza bene.",
       "La stazione è di nuovo operativa. D’ora in poi i log si conservano.",
       "Orione è di nuovo in servizio e i moduli sono disposti diversamente. Escludi prima i moduli vuoti: ti risparmi metà del lavoro.",
       [
         [
-          "Il riavvio",
+          "Il riavvio",
           "Tutti i sistemi online. Un membro dell’equipaggio offline.",
           "🔘 Pulsante di avvio"
         ],
         [
-          "Il log cancellato",
+          "Il log cancellato",
           "Cancellato, ma non sparito.",
           "💾 Dati recuperati"
         ],
         [
-          "La biologa Wren coltiva",
+          "La biologa Wren coltiva",
           "Nella vasca idroponica tutto cresceva troppo in fretta. Anche il sospetto.",
           "🧫 Capsula di Petri"
         ],
@@ -2209,29 +2209,29 @@
           "🎈 Penna fluttuante"
         ],
         [
-          "Il cuoco Dima assaggia",
+          "Il cuoco Dima assaggia",
           "La razione aveva un sapore diverso. Secondo una persona.",
           "🥫 Scatoletta"
         ],
         [
-          "I pannelli solari",
+          "I pannelli solari",
           "La stazione si inclinò verso il sole. Qualcuno l’aveva ordinato.",
           "☀️ Pannello solare"
         ],
         [
-          "Il cadetto Yuki si sdoppia",
+          "Il cadetto Yuki si sdoppia",
           "Secondo i turni, Yuki era in due posti contemporaneamente.",
           "📅 Tabella dei turni"
         ],
         [
-          "Il nuovo comando",
+          "Il nuovo comando",
           "Il nuovo comandante durò una settimana.",
           "🎖️ Spilla del comandante"
         ]
       ]
     ],
     "ruimte-5": [
-      "Parte V · La capsula estranea",
+      "Parte V · La capsula estranea",
       "Una capsula attracca senza permesso. Dentro: nessuno. Fuori: un equipaggio che all’improvviso ha molto da dire.",
       "La capsula viene sganciata e spinta via. Cosa c’era dentro lo sa solo l’equipaggio.",
       "Una capsula estranea e gente nervosa. Le dichiarazioni con «più a sinistra di» e «più in alto di» valgono per tutta la stazione, non per un solo modulo.",
@@ -2242,17 +2242,17 @@
           "👣 Impronta nella polvere"
         ],
         [
-          "Il segnale di attracco",
+          "Il segnale di attracco",
           "La capsula si annunciò con cortesia. Poi mai più.",
           "📡 Antenna di attracco"
         ],
         [
-          "Il modulo freddo",
+          "Il modulo freddo",
           "Il riscaldamento si guastò. In un solo modulo.",
           "🌡️ Termometro"
         ],
         [
-          "L’ingegnera Vega apre la camera stagna",
+          "L’ingegnera Vega apre la camera stagna",
           "Senza permesso. Per un buon motivo, disse lei.",
           "🔧 Chiave della camera stagna"
         ],
@@ -2262,12 +2262,12 @@
           "📜 Ordine scritto"
         ],
         [
-          "Il pilota Reyes calcola",
+          "Il pilota Reyes calcola",
           "La rotta era giusta. L’orario no.",
           "🧮 Calcolo della rotta"
         ],
         [
-          "Il pacco",
+          "Il pacco",
           "Nella capsula c’era un pacco. Indirizzato a un solo nome.",
           "📦 Pacco"
         ],
@@ -2279,7 +2279,7 @@
       ]
     ],
     "ruimte-6": [
-      "Parte VI · L’ultima orbita",
+      "Parte VI · L’ultima orbita",
       "Orione viene abbandonata. Un’ultima orbita intorno alla Terra, poi la capsula verso casa. Tutti vogliono partire. Non tutti possono.",
       "La capsula atterra. La Stazione Orione brucia nell’atmosfera, con tutti i suoi segreti. Tranne i tuoi.",
       "Gli ultimi casi in assoluto della campagna, e i più difficili. Torna tutto. Chi era da solo in un modulo esclude tutti gli altri: comincia da lì.",
@@ -2295,27 +2295,27 @@
           "🪑 Settimo posto"
         ],
         [
-          "Il dottor Nkemelu firma",
+          "Il dottor Nkemelu firma",
           "Il rapporto era firmato. Due volte.",
           "✒️ Firma"
         ],
         [
-          "La botanica Fern pota",
+          "La botanica Fern pota",
           "La serra era stata riordinata. A fondo.",
           "🌿 Cesoie"
         ],
         [
-          "Il manometro dell’ossigeno",
+          "Il manometro dell’ossigeno",
           "Ossigeno sufficiente per tutti. Un po’ meno per una persona.",
           "🫧 Manometro dell’ossigeno"
         ],
         [
-          "L’ultimo messaggio a casa",
+          "L’ultimo messaggio a casa",
           "Il messaggio era breve. Non era della comandante.",
           "📨 Ultimo messaggio"
         ],
         [
-          "Attracco alle 04:00",
+          "Attracco alle 04:00",
           "La capsula aspettava. Anche un membro dell’equipaggio, da un’altra parte.",
           "⏱️ Cronometro"
         ],
@@ -2327,33 +2327,33 @@
       ]
     ],
     "museum": [
-      "Parte I · Dopo la chiusura",
+      "Parte I · Dopo la chiusura",
       "Il museo chiude alle cinque. Alle sei il conservatore giace tra le statue e tutte le porte sono chiuse a chiave.",
       "La prima notte è finita. Il museo resta chiuso, le domande restano aperte.",
       "Un museo ha molte sale e poche persone. Comincia da chi dice in quale sala era, e occhio alle teche: «proprio accanto» vale solo per le caselle che le toccano di lato, mai in diagonale.",
       [
         [
-          "Dopo la chiusura",
+          "Dopo la chiusura",
           "Le porte si chiusero. Non tutti erano fuori.",
           "🎟️ Biglietto d’ingresso"
         ],
         [
-          "Il sarcofago",
+          "Il sarcofago",
           "Il coperchio era socchiuso. Avrebbe dovuto essere chiuso.",
           "⚱️ Vaso canopo"
         ],
         [
-          "Il quadro storto",
+          "Il quadro storto",
           "Una cornice pendeva storta. Le altre erano dritte da cent’anni.",
           "🖼️ Piccola cornice"
         ],
         [
-          "La guida Margot chiude",
+          "La guida Margot chiude",
           "Faceva il giro ogni sera. Quella sera saltò una sala.",
           "🔑 Chiave della sala"
         ],
         [
-          "La sala dei dinosauri",
+          "La sala dei dinosauri",
           "Un osso era fuori posto. Per settanta milioni di anni era stato al suo posto.",
           "🦴 Osso di dinosauro"
         ],
@@ -2363,7 +2363,7 @@
           "🔔 Centralina d’allarme"
         ],
         [
-          "Il guardiano Gus dorme",
+          "Il guardiano Gus dorme",
           "Il suo caffè era freddo, la sua sedia calda.",
           "☕ Thermos"
         ],
@@ -2375,55 +2375,55 @@
       ]
     ],
     "museum-2": [
-      "Parte II · Il diamante scomparso",
+      "Parte II · Il diamante scomparso",
       "Il diamante di Vlierbeek è sparito dal caveau. La polizia isola il museo. Chi era dentro resta dentro.",
       "Il diamante è tornato. E anche chi l’aveva preso.",
       "Un furto e un omicidio: la gente mente su dove si trovava. Due dichiarazioni che si contraddicono non possono essere vere entrambe; parti da quella sicura.",
       [
         [
-          "Il caveau vuoto",
+          "Il caveau vuoto",
           "Il caveau era aperto, il cuscino vuoto.",
           "🧿 Cuscino di velluto"
         ],
         [
-          "La stagista Noor conta",
+          "La stagista Noor conta",
           "Secondo la sua lista non mancava niente. Secondo il caveau sì.",
           "📋 Inventario"
         ],
         [
-          "La statua sbagliata",
+          "La statua sbagliata",
           "La statua era una copia. Da ieri.",
           "🗿 Copia"
         ],
         [
-          "Il gallerista Lucian fa un’offerta",
+          "Il gallerista Lucian fa un’offerta",
           "Offrì una cifra per qualcosa che non era ancora in vendita.",
           "💳 Biglietto da visita"
         ],
         [
-          "Il pavimento falso",
+          "Il pavimento falso",
           "Sotto il tappeto c’era una botola. Sotto la botola, polvere.",
           "🚪 Botola"
         ],
         [
-          "La restauratrice Iris lucida",
+          "La restauratrice Iris lucida",
           "Lavorava a un quadro che non doveva stare in laboratorio.",
           "🖌️ Pennello"
         ],
         [
-          "La teca di vetro",
+          "La teca di vetro",
           "Il vetro era intatto. Il diamante, sparito.",
           "🔍 Lente"
         ],
         [
-          "La pietra di Vlierbeek",
+          "La pietra di Vlierbeek",
           "Il diamante era nella sala dove nessuno aveva guardato.",
           "💎 Diamante"
         ]
       ]
     ],
     "museum-3": [
-      "Parte III · La mostra",
+      "Parte III · La mostra",
       "La grande inaugurazione. Trecento ospiti, un oratore e una sala che si chiude prima che finisca lo champagne.",
       "La mostra continua. Con un quadro in meno alla parete.",
       "All’inaugurazione molte persone passano per le stesse sale. Le dichiarazioni su righe e colonne attraversano le pareti: usa la Matita.",
@@ -2439,123 +2439,123 @@
           "🥂 Flûte"
         ],
         [
-          "Il professor Adebayo parla",
+          "Il professor Adebayo parla",
           "La sua conferenza durò venti minuti. Il suo alibi dieci.",
           "📖 Conferenza"
         ],
         [
-          "La sala sbagliata",
+          "La sala sbagliata",
           "La sala 4 era chiusa. Non secondo il programma.",
           "🚧 Nastro di sbarramento"
         ],
         [
-          "L’inserviente Hugo passa il mocio",
+          "L’inserviente Hugo passa il mocio",
           "Il pavimento era pulito. Troppo pulito.",
           "🧹 Mocio"
         ],
         [
-          "Il ritratto ricambia lo sguardo",
+          "Il ritratto ricambia lo sguardo",
           "Il ritratto era appeso al contrario. Qualcuno l’aveva girato.",
           "🖼️ Ritratto"
         ],
         [
-          "Il curatore Ellery tace",
+          "Il curatore Ellery tace",
           "Sapeva quale quadro era falso. Non lo disse.",
           "🏷️ Targhetta"
         ],
         [
-          "Buio nella sala 7",
+          "Buio nella sala 7",
           "Le luci si spensero. Quando tornarono, mancava qualcuno.",
           "💡 Lampada della sala"
         ]
       ]
     ],
     "museum-4": [
-      "Parte IV · Il deposito",
+      "Parte IV · Il deposito",
       "Nei sotterranei ci sono diecimila oggetti che nessuno vede mai. Qualcuno ne vide uno di troppo.",
       "Il deposito è di nuovo chiuso. L’inventario torna, tranne un nome.",
       "Il deposito è un labirinto di casse. Escludi prima le sale vuote: quello che resta è poco.",
       [
         [
-          "La cassa 4471",
+          "La cassa 4471",
           "La cassa era aperta. Era rimasta chiusa per cent’anni.",
           "📦 Cassa 4471"
         ],
         [
-          "La maschera della mummia",
+          "La maschera della mummia",
           "La maschera era accanto al sarcofago. Non dentro.",
           "🎭 Maschera funeraria"
         ],
         [
-          "La guida Margot si perde",
+          "La guida Margot si perde",
           "Conosceva ogni corridoio. Tranne questo.",
           "🗺️ Mappa del deposito"
         ],
         [
-          "Polvere sugli scaffali",
+          "Polvere sugli scaffali",
           "Polvere dappertutto, tranne su uno scaffale.",
           "🪶 Piumino"
         ],
         [
-          "La cella frigorifera",
+          "La cella frigorifera",
           "La refrigerazione era accesa. Qualcuno era rimasto seduto lì dentro.",
           "🌡️ Termometro della cella"
         ],
         [
-          "Il guardiano Gus finisce il giro",
+          "Il guardiano Gus finisce il giro",
           "Il suo ultimo giro finì troppo presto.",
           "🔦 Torcia"
         ],
         [
-          "Il vaso rotto",
+          "Il vaso rotto",
           "Mille anni di storia, in pezzi quella notte.",
           "🏺 Coccio"
         ],
         [
-          "Sotto il museo",
+          "Sotto il museo",
           "Sotto il deposito c’era un altro corridoio.",
           "🧱 Porta della cantina"
         ]
       ]
     ],
     "museum-5": [
-      "Parte V · La notte dei dinosauri",
+      "Parte V · La notte dei dinosauri",
       "Notte dei bambini: cento bambini dormono tra gli scheletri. Quando si accendono le luci, qualcuno non si sveglierà.",
       "I bambini sono tornati a casa. Lo scheletro è di nuovo completo.",
       "Tanti piccoli testimoni e molta confusione. Dichiarazioni su due persone alla volta: trova prima il posto di quella di cui sai di più.",
       [
         [
-          "Sacchi a pelo nell’atrio",
+          "Sacchi a pelo nell’atrio",
           "Cento sacchi a pelo. Uno era vuoto.",
           "🛌 Sacco a pelo"
         ],
         [
-          "La storia intorno al fuoco",
+          "La storia intorno al fuoco",
           "La guida Margot raccontò una storia. Il finale si avverò.",
           "📚 Libro di storie"
         ],
         [
-          "Il dente scomparso",
+          "Il dente scomparso",
           "Al T. rex mancava un dente. Al dente mancava un T. rex.",
           "🦷 Dente di dinosauro"
         ],
         [
-          "La stagista Noor fa la guardia",
+          "La stagista Noor fa la guardia",
           "Contava i bambini. Si dimenticò degli adulti.",
           "🔢 Contapersone"
         ],
         [
-          "La torcia",
+          "La torcia",
           "Qualcuno fece luce dove la luce era vietata.",
           "🔦 Torcia per bambini"
         ],
         [
-          "Lo scheletro si muove",
+          "Lo scheletro si muove",
           "Stamattina lo scheletro era in un’altra posa.",
           "🦴 Vertebra staccata"
         ],
         [
-          "Il professor Adebayo non dorme",
+          "Il professor Adebayo non dorme",
           "Lesse tutta la notte. Così diceva.",
           "👓 Occhiali da lettura"
         ],
@@ -2567,103 +2567,103 @@
       ]
     ],
     "museum-6": [
-      "Parte VI · Il segreto di Vlierbeek",
+      "Parte VI · Il segreto di Vlierbeek",
       "Dietro la sala egizia c’è una porta che non compare su nessuna piantina. Quello che c’è dietro è più antico del museo.",
       "La porta viene murata. Domani il museo riapre come sempre. Tu sai cosa c’era dietro.",
       "L’ultima parte del museo e i casi più difficili. Torna tutto: angoli, oggetti, righe. Non posizionare nessuno finché non hai la certezza.",
       [
         [
-          "La porta dietro la sala",
+          "La porta dietro la sala",
           "Dietro il sarcofago c’era una porta. Qualcuno lo sapeva.",
           "🧱 Pietra smossa"
         ],
         [
-          "Il vecchio diario",
+          "Il vecchio diario",
           "Il fondatore scriveva tutto. Quasi tutto.",
           "📔 Diario"
         ],
         [
-          "La restauratrice Iris scopre",
+          "La restauratrice Iris scopre",
           "Sotto la pittura c’era un secondo quadro.",
           "🎨 Radiografia"
         ],
         [
-          "La piantina non torna",
+          "La piantina non torna",
           "Una sala era più grande che sul disegno.",
           "📐 Metro"
         ],
         [
-          "Il gallerista Lucian confessa",
+          "Il gallerista Lucian confessa",
           "Confessò il furto. Non l’omicidio.",
           "🧾 Confessione"
         ],
         [
-          "La sala nascosta",
+          "La sala nascosta",
           "Niente finestre, niente porte, eppure dei passi.",
           "👣 Traccia nella polvere"
         ],
         [
-          "Il curatore Ellery sceglie",
+          "Il curatore Ellery sceglie",
           "Poteva salvare una sola cosa. Scelse male.",
           "⚖️ Bilancia"
         ],
         [
-          "Vlierbeek, la fine",
+          "Vlierbeek, la fine",
           "L’ultima sala. L’ultimo nome.",
           "🗝️ Ultima chiave"
         ]
       ]
     ],
     "trein": [
-      "Parte I · La partenza",
+      "Parte I · La partenza",
       "Il treno notturno parte alle otto. Alle nove il capotreno giace nella carrozza ristorante, e il treno non si ferma fino all’alba.",
       "Il treno corre nella notte. E i passeggeri con lui.",
       "Un treno è lungo e stretto: le carrozze sono una accanto all’altra. «Più a sinistra di» e «più in alto di» valgono per tutta la piantina, non per una sola carrozza.",
       [
         [
-          "Partenza alle otto",
+          "Partenza alle otto",
           "Il fischio suonò. Un passeggero non lo sentì più.",
           "🎫 Biglietto del treno"
         ],
         [
-          "Il controllo dei biglietti",
+          "Il controllo dei biglietti",
           "Il capotreno vidimò ogni biglietto. Tutti tranne uno.",
           "🔖 Biglietto vidimato"
         ],
         [
-          "La valigia nella cabina A",
+          "La valigia nella cabina A",
           "La valigia non era di nessuno. Così dicevano tutti.",
           "🧳 Baule da viaggio"
         ],
         [
-          "Il mago Orlando sparisce",
+          "Il mago Orlando sparisce",
           "Fece un trucco. Il trucco durò troppo.",
           "🎩 Cilindro"
         ],
         [
-          "Tè dal samovar",
+          "Tè dal samovar",
           "L’acqua bolliva. Il tè era freddo.",
           "🫖 Bicchiere da tè"
         ],
         [
-          "La galleria",
+          "La galleria",
           "Quattro minuti di buio. Abbastanza per una persona.",
           "🕯️ Mozzicone di candela"
         ],
         [
-          "La baronessa Von Stahl si lamenta",
+          "La baronessa Von Stahl si lamenta",
           "Il letto era troppo duro, la notte troppo lunga.",
           "💍 Anello con sigillo"
         ],
         [
-          "Si riaccendono le luci",
+          "Si riaccendono le luci",
           "Quando tornò la luce, il capotreno non c’era più.",
           "💡 Lampada della carrozza"
         ]
       ]
     ],
     "trein-2": [
-      "Parte II · La neve",
+      "Parte II · La neve",
       "Il treno è fermo nella neve. Nessuna stazione, nessun aiuto, e il colpevole è ancora a bordo.",
       "Arriva lo spazzaneve. Il treno riparte, con una cabina vuota.",
       "Bloccati nella neve: tutti hanno visto tutti. In un treno così stretto «proprio accanto» vale oro: ogni casella conta.",
@@ -2674,12 +2674,12 @@
           "⏱️ Orologio da taschino"
         ],
         [
-          "Il fuochista Jules spala",
+          "Il fuochista Jules spala",
           "Il carbone era finito. Tranne in una carrozza.",
           "⚫ Pezzo di carbone"
         ],
         [
-          "Orme nella neve",
+          "Orme nella neve",
           "Tracce verso il treno. Nessuna di ritorno.",
           "👢 Scarpone da neve"
         ],
@@ -2689,12 +2689,12 @@
           "💊 Portapillole"
         ],
         [
-          "La porta ghiacciata",
+          "La porta ghiacciata",
           "La porta era bloccata. Dall’interno.",
           "🧊 Candelotto di ghiaccio"
         ],
         [
-          "La partita a poker",
+          "La partita a poker",
           "Quattro giocatori, tre mani di carte.",
           "🃏 Carta da gioco"
         ],
@@ -2704,121 +2704,121 @@
           "📜 Copione"
         ],
         [
-          "Lo spazzaneve",
+          "Lo spazzaneve",
           "Quando arrivò lo spazzaneve, mancava un passeggero.",
           "🌨️ Palla di vetro con la neve"
         ]
       ]
     ],
     "trein-3": [
-      "Parte III · Il confine",
+      "Parte III · Il confine",
       "Al confine salgono i doganieri. Tutti mostrano i documenti. Un passaporto è falso.",
       "Il confine è passato. Il passaporto resta indietro, con il suo proprietario.",
       "Al confine tutti mentono sul proprio nome. Le dichiarazioni su righe e colonne attraversano le carrozze: usa la Matita.",
       [
         [
-          "La dogana",
+          "La dogana",
           "Salirono due doganieri. Ne scese uno.",
           "🛂 Timbro"
         ],
         [
-          "Il passaporto falso",
+          "Il passaporto falso",
           "La foto corrispondeva. Il nome no.",
           "🪪 Passaporto"
         ],
         [
-          "Il viaggiatore Sami vende",
+          "Il viaggiatore Sami vende",
           "Vendeva orologi. E qualcos’altro.",
           "⌚ Orologio"
         ],
         [
-          "La carrozza postale",
+          "La carrozza postale",
           "Una lettera senza francobollo, indirizzata a nessuno.",
           "✉️ Lettera"
         ],
         [
-          "Lo scacchista Ivo riflette",
+          "Lo scacchista Ivo riflette",
           "Restò un’ora su una mossa. O su qualcos’altro.",
           "♟️ Pedone"
         ],
         [
-          "La vedova Duval piange",
+          "La vedova Duval piange",
           "Piangeva il marito. Era morto da dieci anni.",
           "🖤 Velo da lutto"
         ],
         [
-          "Le valigie scambiate",
+          "Le valigie scambiate",
           "Due valigie, le stesse serrature, una differenza.",
           "🔐 Serratura della valigia"
         ],
         [
-          "Il posto di frontiera",
+          "Il posto di frontiera",
           "Al confine qualcuno scese. Senza biglietto.",
           "🚧 Sbarra"
         ]
       ]
     ],
     "trein-4": [
-      "Parte IV · La linea d’Oriente",
+      "Parte IV · La linea d’Oriente",
       "Un anno dopo, lo stesso treno, la stessa tratta verso est. Alcuni passeggeri sono tornati. Non avrebbero dovuto.",
       "Il treno arriva a Istanbul. Il viaggio è finito, per quasi tutti.",
       "Le stesse facce, un anno più vecchie. Leggi ogni dichiarazione due volte: anche chi dice dove NON era ti dice qualcosa.",
       [
         [
-          "Di nuovo a bordo",
+          "Di nuovo a bordo",
           "La stessa cabina. Un altro motivo.",
           "🗓️ Diario di viaggio"
         ],
         [
-          "Il grammofono",
+          "Il grammofono",
           "Il disco girava. Nessuno l’aveva messo.",
           "🎶 Disco per grammofono"
         ],
         [
-          "Il ritorno del mago Orlando",
+          "Il ritorno del mago Orlando",
           "Il suo secondo trucco era migliore. Troppo.",
           "🐇 Coniglio"
         ],
         [
-          "Il lampadario",
+          "Il lampadario",
           "Mancava un cristallo. Era tre carrozze più in là.",
           "💎 Cristallo"
         ],
         [
-          "Il fuochista Jules vede tutto",
+          "Il fuochista Jules vede tutto",
           "Dalla locomotiva vedeva ogni carrozza. Così diceva.",
           "🔥 Pala da carbone"
         ],
         [
-          "Il bar chiude",
+          "Il bar chiude",
           "L’ultimo giro. L’ultimo cliente.",
           "🍸 Bicchiere da cocktail"
         ],
         [
-          "La notte senza luna",
+          "La notte senza luna",
           "Buio pesto. Qualcuno conosceva la strada.",
           "🌑 Lanterna cieca"
         ],
         [
-          "La baronessa Von Stahl confessa",
+          "La baronessa Von Stahl confessa",
           "Confessò tutto. Tranne l’omicidio.",
           "🧾 Confessione"
         ]
       ]
     ],
     "trein-5": [
-      "Parte V · La festa nella carrozza salotto",
+      "Parte V · La festa nella carrozza salotto",
       "Capodanno nella carrozza salotto. A mezzanotte si spengono le luci. A mezzanotte e cinque manca qualcuno.",
       "Comincia l’anno nuovo. La carrozza salotto viene riordinata, tranne una sedia.",
       "Una festa in una carrozza stretta: tanta gente, poco spazio. Comincia da chi dice di essere stato da solo: così escludi tutti gli altri da quella carrozza.",
       [
         [
-          "Mezzanotte sul treno",
+          "Mezzanotte sul treno",
           "Dodici rintocchi. Un urlo.",
           "🎉 Trombetta"
         ],
         [
-          "Il quartetto d’archi",
+          "Il quartetto d’archi",
           "Quattro musicisti, tre violini.",
           "🎻 Violino"
         ],
@@ -2828,12 +2828,12 @@
           "🎤 Microfono"
         ],
         [
-          "Il secchiello per lo champagne",
+          "Il secchiello per lo champagne",
           "Il ghiaccio si era sciolto. Il bicchiere accanto, intatto.",
           "🧊 Secchiello del ghiaccio"
         ],
         [
-          "Il viaggiatore Sami balla",
+          "Il viaggiatore Sami balla",
           "Ballò con tutti. Tranne una persona.",
           "💃 Scarpa da ballo"
         ],
@@ -2843,7 +2843,7 @@
           "📝 Elenco degli ospiti"
         ],
         [
-          "I fuochi d’artificio",
+          "I fuochi d’artificio",
           "Fuori, i fuochi d’artificio. Dentro, un colpo.",
           "🎆 Razzo"
         ],
@@ -2855,7 +2855,7 @@
       ]
     ],
     "trein-6": [
-      "Parte VI · Capolinea",
+      "Parte VI · Capolinea",
       "L’ultima corsa del treno notturno. Al capolinea finirà demolito. Qualcuno non vuole vederlo.",
       "Capolinea. Il treno va alla demolizione, il colpevole alla polizia, e tu a casa.",
       "Gli ultimi casi in assoluto del treno, e i più difficili. Chi era da solo in una carrozza esclude tutti gli altri: comincia da lì.",
@@ -2866,17 +2866,17 @@
           "🚂 Fischietto"
         ],
         [
-          "Lo scacchista Ivo abbandona",
+          "Lo scacchista Ivo abbandona",
           "Abbandonò la partita. E qualcos’altro.",
           "♚ Re"
         ],
         [
-          "La locomotiva",
+          "La locomotiva",
           "Nessuno poteva entrare in locomotiva. Qualcuno c’era.",
           "🔧 Chiave inglese"
         ],
         [
-          "La vedova Duval fa le valigie",
+          "La vedova Duval fa le valigie",
           "Due valigie. Una non era sua.",
           "🧳 Seconda valigia"
         ],
@@ -2886,12 +2886,12 @@
           "🍽️ Cloche d’argento"
         ],
         [
-          "Il bagagliaio",
+          "Il bagagliaio",
           "Tra le valigie non c’erano solo bagagli.",
           "🏷️ Etichetta del bagaglio"
         ],
         [
-          "Il fuochista Jules si ferma",
+          "Il fuochista Jules si ferma",
           "La caldaia era fredda. Qualcuno aveva spento il fuoco.",
           "🧯 Secchio d’acqua"
         ],
@@ -2903,7 +2903,7 @@
       ]
     ],
     "circus": [
-      "Parte I · L’ultimo spettacolo",
+      "Parte I · L’ultimo spettacolo",
       "L’ultimo spettacolo della stagione. Il pubblico se n’è andato, il tendone chiude e il direttore Zano giace in pista.",
       "Il tendone resta in piedi. Gli artisti anche, finché la polizia non ha finito.",
       "Un circo è un grande tendone pieno di piccoli spazi. Comincia da chi dice dov’era; «proprio accanto» vale solo a sinistra, a destra, sopra o sotto, anche con un cannone.",
@@ -2914,92 +2914,92 @@
           "🎟️ Biglietto del circo"
         ],
         [
-          "Il cannone vuoto",
+          "Il cannone vuoto",
           "Il cannone era carico. Non di una persona.",
           "💥 Palla di cannone"
         ],
         [
-          "Il clown Pippo non ride",
+          "Il clown Pippo non ride",
           "Per la prima volta in vent’anni. E non era un numero.",
           "🔴 Naso da clown"
         ],
         [
-          "Il trapezio oscilla",
+          "Il trapezio oscilla",
           "Il trapezio si muoveva ancora. Nessuno era appeso.",
           "🪢 Corda del trapezio"
         ],
         [
-          "Popcorn in pista",
+          "Popcorn in pista",
           "Una scia di popcorn, dalla biglietteria alla pista.",
           "🍿 Sacchetto di popcorn"
         ],
         [
-          "Il leone ruggisce",
+          "Il leone ruggisce",
           "Il leone era tranquillo. Fino alle dieci.",
           "🦁 Frusta"
         ],
         [
-          "La veggente Zora lo sapeva",
+          "La veggente Zora lo sapeva",
           "L’aveva predetto. Per questo era sospettata.",
           "🔮 Sfera di cristallo"
         ],
         [
-          "La luce nella cupola",
+          "La luce nella cupola",
           "In cima al tendone ardeva una lampada. Lassù non doveva esserci nessuno.",
           "💡 Lampada della cupola"
         ]
       ]
     ],
     "circus-2": [
-      "Parte II · Il leone scomparso",
+      "Parte II · Il leone scomparso",
       "Il leone non è più nella gabbia. I recinti sono chiusi. Qualcuno l’ha fatto uscire, e qualcuno non c’è più.",
       "Il leone dorme di nuovo. Chi ha aperto la gabbia no.",
       "Un leone in libertà rende tutti nervosi e le dichiarazioni brevi. Dichiarazioni su due persone: trova prima il posto di quella di cui sai di più.",
       [
         [
-          "La gabbia aperta",
+          "La gabbia aperta",
           "Il chiavistello era allentato. La serratura intatta.",
           "🔓 Chiavistello della gabbia"
         ],
         [
-          "Tracce nella segatura",
+          "Tracce nella segatura",
           "Zampe a sinistra, stivali a destra.",
           "🐾 Impronta di zampa"
         ],
         [
-          "Il domatore Gunther cerca",
+          "Il domatore Gunther cerca",
           "Cercò dappertutto. Tranne dov’era il leone.",
           "🥩 Pezzo di carne"
         ],
         [
-          "Il carrozzone dei costumi",
+          "Il carrozzone dei costumi",
           "Tra i costumi ne pendeva uno che non c’entrava.",
           "🎭 Costume di paillettes"
         ],
         [
-          "Il giocoliere Teo ne fa cadere una",
+          "Il giocoliere Teo ne fa cadere una",
           "Per la prima volta. Proprio in quel momento.",
           "🎳 Clava"
         ],
         [
-          "Arriva la veterinaria",
+          "Arriva la veterinaria",
           "La veterinaria Nadia arrivò prima dell’allarme.",
           "💉 Dardo sedativo"
         ],
         [
-          "La cassa non torna",
+          "La cassa non torna",
           "Un biglietto venduto in più. Un posto vuoto.",
           "🧾 Scontrino"
         ],
         [
-          "Il leone dorme",
+          "Il leone dorme",
           "Quando il leone si addormentò, il colpevole era già tornato.",
           "😴 Coperta del leone"
         ]
       ]
     ],
     "circus-3": [
-      "Parte III · La sala degli specchi",
+      "Parte III · La sala degli specchi",
       "La nuova attrazione: un tendone pieno di specchi. Chi entra si vede cento volte. Una persona non è mai uscita.",
       "Gli specchi vengono imballati. Uno è rotto.",
       "Nella sala degli specchi tutto sembra doppio. Le dichiarazioni su righe e colonne attraversano le pareti: usa la Matita.",
@@ -3010,7 +3010,7 @@
           "🪞 Scheggia di specchio"
         ],
         [
-          "Il forzuto Boris solleva",
+          "Il forzuto Boris solleva",
           "Sollevò da solo l’armadio a specchi. Così diceva.",
           "🏋️ Manubrio"
         ],
@@ -3020,22 +3020,22 @@
           "🚪 Lembo del tendone"
         ],
         [
-          "La bigliettaia Dottie conta",
+          "La bigliettaia Dottie conta",
           "Sette biglietti, otto visitatori.",
           "🎫 Ottavo biglietto"
         ],
         [
-          "Il riflesso mente",
+          "Il riflesso mente",
           "Nello specchio c’era qualcun altro.",
           "🧿 Vetro dello specchio"
         ],
         [
-          "La trapezista Mira cade",
+          "La trapezista Mira cade",
           "Non era mai caduta. Quella sera sì, apposta.",
           "🎗️ Rete di sicurezza"
         ],
         [
-          "Lo specchio deformante",
+          "Lo specchio deformante",
           "Lo specchio deformante non faceva più ridere.",
           "😆 Specchio deformante"
         ],
@@ -3047,38 +3047,38 @@
       ]
     ],
     "circus-4": [
-      "Parte IV · In tournée",
+      "Parte IV · In tournée",
       "Il circo si sposta, città dopo città. Per strada la compagnia non cambia. Il sospetto sì.",
       "I carri ripartono. Uno viaggia vuoto.",
       "Le stesse facce, un’altra città. Leggi ogni dichiarazione due volte: anche chi dice dove NON era ti dice qualcosa.",
       [
         [
-          "La prima città",
+          "La prima città",
           "Città nuova, problemi vecchi.",
           "🗺️ Itinerario"
         ],
         [
-          "Il carro di Zora",
+          "Il carro di Zora",
           "Il suo carro era chiuso a chiave. Da fuori.",
           "🔐 Serratura del carro"
         ],
         [
-          "Il clown Pippo travestito",
+          "Il clown Pippo travestito",
           "Due clown. Un solo Pippo.",
           "🎈 Palloncino"
         ],
         [
-          "La batteria",
+          "La batteria",
           "Il tamburo suonò a mezzanotte. Non suonava nessuno.",
           "🥁 Tamburo"
         ],
         [
-          "Il cuoco in mensa",
+          "Il cuoco in mensa",
           "Il cibo era pronto. Un piatto restò pieno.",
           "🍲 Scodella"
         ],
         [
-          "Le scuderie vuote",
+          "Le scuderie vuote",
           "I cavalli non c’erano più. Le scuderie sì.",
           "🐴 Ferro di cavallo"
         ],
@@ -3088,50 +3088,50 @@
           "🌑 Lanterna cieca"
         ],
         [
-          "La veggente Zora confessa",
+          "La veggente Zora confessa",
           "Confessò la predizione. Non il delitto.",
           "🃏 Carta dei tarocchi"
         ]
       ]
     ],
     "circus-5": [
-      "Parte V · Il nuovo direttore",
+      "Parte V · Il nuovo direttore",
       "C’è un nuovo direttore. Non tutti sono contenti. Il gala d’apertura finisce nel silenzio.",
       "La sedia del direttore è di nuovo vuota. Per la seconda volta in questa stagione.",
       "Un gala in un tendone pieno: tanta gente, poco spazio. Comincia da chi dice di essere stato da solo: così escludi tutti gli altri da quella zona.",
       [
         [
-          "Il gala",
+          "Il gala",
           "Champagne in pista. Un bicchiere restò pieno.",
           "🥂 Calice del gala"
         ],
         [
-          "Il cilindro",
+          "Il cilindro",
           "Il cappello del direttore era in mensa.",
           "🎩 Cappello del direttore"
         ],
         [
-          "Il giocoliere Teo in azione",
+          "Il giocoliere Teo in azione",
           "Cinque palline. Ne caddero quattro.",
           "🟠 Pallina da giocoliere"
         ],
         [
-          "I fuochi d’artificio",
+          "I fuochi d’artificio",
           "Fuori, i fuochi d’artificio. Dentro, un colpo.",
           "🎆 Razzo"
         ],
         [
-          "La veterinaria Nadia fa la guardia",
+          "La veterinaria Nadia fa la guardia",
           "Vegliava sul leone. Così diceva.",
           "🩺 Stetoscopio"
         ],
         [
-          "Il discorso",
+          "Il discorso",
           "Il nuovo direttore parlò. Nessuno ascoltava. Una persona sì.",
           "📝 Discorso"
         ],
         [
-          "Il forzuto Boris tace",
+          "Il forzuto Boris tace",
           "Poteva sollevare qualsiasi cosa. Tranne questo segreto.",
           "⛓️ Catena"
         ],
@@ -3143,7 +3143,7 @@
       ]
     ],
     "circus-6": [
-      "Parte VI · Giù il tendone",
+      "Parte VI · Giù il tendone",
       "Il circo chiude per sempre. L’ultima sera, l’ultimo numero, l’ultima occasione per sparire.",
       "Il tendone viene smontato. La segatura viene spazzata via, e con lei l’ultima traccia.",
       "Gli ultimi casi in assoluto del circo, e i più difficili. Chi era da solo in una zona esclude tutti gli altri: comincia da lì.",
@@ -3154,7 +3154,7 @@
           "🎟️ Ultimo biglietto"
         ],
         [
-          "La trapezista Mira salta",
+          "La trapezista Mira salta",
           "Il suo ultimo salto. Senza rete.",
           "🪂 Corda del salto"
         ],
@@ -3164,7 +3164,7 @@
           "💰 Cassetta dei soldi"
         ],
         [
-          "Il domatore Gunther dice addio",
+          "Il domatore Gunther dice addio",
           "Al leone. Non a tutti.",
           "🦁 Criniera"
         ],
@@ -3174,35 +3174,35 @@
           "🔥 Falò"
         ],
         [
-          "Cadono i pali",
+          "Cadono i pali",
           "Il tendone crollò. Non da solo.",
           "🪝 Picchetto"
         ],
         [
-          "La bigliettaia Dottie chiude",
+          "La bigliettaia Dottie chiude",
           "Spense le luci. Qualcuno le riaccese.",
           "🔦 Lampada della biglietteria"
         ],
         [
-          "Giù il tendone",
+          "Giù il tendone",
           "L’ultima domanda, sotto l’ultimo telo.",
           "🎪 Telo"
         ]
       ]
     ],
     "skihut": [
-      "Parte I · La valanga",
+      "Parte I · La valanga",
       "Una valanga isola la valle. Sette ospiti, una stufa e un gestore accanto al fuoco che non si scalderà più.",
       "La strada è ancora chiusa. Gli ospiti restano, che lo vogliano o no.",
       "Un rifugio è piccolo e caldo, e tutti stanno uno addosso all’altro. Comincia da chi dice in quale stanza era; occhio alla stufa: «proprio accanto» vale solo a sinistra, a destra, sopra o sotto.",
       [
         [
-          "La valanga",
+          "La valanga",
           "Venne giù la montagna. E anche il gestore.",
           "❄️ Fiocco di neve"
         ],
         [
-          "La stufa fredda",
+          "La stufa fredda",
           "La stufa era spenta. La legna era pronta.",
           "🪵 Ceppo"
         ],
@@ -3212,118 +3212,118 @@
           "🎿 Sci"
         ],
         [
-          "La fonduta",
+          "La fonduta",
           "Il formaggio era freddo. Non tutte le forchette tornarono.",
           "🫕 Forchetta da fonduta"
         ],
         [
-          "Il soccorritore Bjorn scava",
+          "Il soccorritore Bjorn scava",
           "Liberò la strada. Nella direzione sbagliata.",
           "⛏️ Pala da neve"
         ],
         [
-          "La sauna",
+          "La sauna",
           "La sauna era accesa e vuota. Eppure qualcuno c’era stato.",
           "🧖 Telo da sauna"
         ],
         [
-          "Il fotografo Emil scatta una foto",
+          "Il fotografo Emil scatta una foto",
           "Nella sua foto c’era qualcuno che non doveva esserci.",
           "📷 Rullino"
         ],
         [
-          "La notte al rifugio",
+          "La notte al rifugio",
           "La prima notte. L’ultima, per un ospite.",
           "🕯️ Candela"
         ]
       ]
     ],
     "skihut-2": [
-      "Parte II · Accecati dalla neve",
+      "Parte II · Accecati dalla neve",
       "Una bufera toglie ogni visibilità. Fuori non si vede a un palmo dal naso. Dentro, qualcuno vede la sua occasione.",
       "La tempesta si placa. La neve copre tutto, tranne la verità.",
       "Accecati dalla neve: tutti parlano di quello che non hanno visto. Escludi prima le stanze vuote, poi il resto si restringe da sé.",
       [
         [
-          "A un palmo dal naso",
+          "A un palmo dal naso",
           "La tempesta cominciò alle tre. Alle quattro mancava qualcuno.",
           "🌫️ Maschera da sci"
         ],
         [
-          "Il cuoco Luigi cucina",
+          "Il cuoco Luigi cucina",
           "La zuppa era pronta. Una scodella restò piena.",
           "🍲 Scodella"
         ],
         [
-          "La slitta",
+          "La slitta",
           "La slitta era fuori. Qualcuno l’aveva usata.",
           "🛷 Slitta"
         ],
         [
-          "La turista Hana si perde",
+          "La turista Hana si perde",
           "Non conosceva il rifugio. Eppure trovò la cantina.",
           "🗺️ Mappa del rifugio"
         ],
         [
-          "Le corna",
+          "Le corna",
           "Il trofeo era storto. Qualcuno ci si era aggrappato.",
           "🦌 Corna"
         ],
         [
-          "La dottoressa Ingrid visita",
+          "La dottoressa Ingrid visita",
           "Visitò tutti. Una persona troppo a lungo.",
           "🩹 Benda"
         ],
         [
-          "La radio",
+          "La radio",
           "La radio captò una frase. Poi solo fruscio.",
           "📻 Radio"
         ],
         [
-          "La tempesta si placa",
+          "La tempesta si placa",
           "Quando tornò il silenzio, mancava qualcuno.",
           "🧊 Candelotto di ghiaccio"
         ]
       ]
     ],
     "skihut-3": [
-      "Parte III · La notte della tempesta",
+      "Parte III · La notte della tempesta",
       "La seconda tempesta è peggiore. Salta la corrente, il rifugio piomba nel buio e qualcuno ne approfitta.",
       "All’alba torna la corrente. Il rifugio ha un ospite in meno.",
       "Niente corrente, candele accese: le dichiarazioni su righe e colonne attraversano le pareti. Usa la Matita.",
       [
         [
-          "Salta la corrente",
+          "Salta la corrente",
           "Le luci si spensero. Nessuno aveva visto il fusibile.",
           "🔌 Fusibile"
         ],
         [
-          "Candele nella stube",
+          "Candele nella stube",
           "Sette candele. Una era stata spenta.",
           "🕯️ Mozzicone di candela"
         ],
         [
-          "Il piccolo Kai sente qualcosa",
+          "Il piccolo Kai sente qualcosa",
           "Sentì dei passi in soffitta. Passi da adulto.",
           "👣 Impronta"
         ],
         [
-          "Il deposito sci",
+          "Il deposito sci",
           "Un paio di sci era bagnato. Dentro non aveva nevicato.",
           "🎿 Sci bagnato"
         ],
         [
-          "La guida alpina Freya conosce la strada",
+          "La guida alpina Freya conosce la strada",
           "Conosceva ogni sentiero. Anche al buio.",
           "🧭 Bussola"
         ],
         [
-          "La lavanderia",
+          "La lavanderia",
           "Un cappotto era steso ad asciugare. Non era di nessuno.",
           "🧥 Cappotto bagnato"
         ],
         [
-          "Il soccorritore Bjorn non dorme",
+          "Il soccorritore Bjorn non dorme",
           "Faceva la guardia. Alla porta sbagliata.",
           "🔦 Lampada frontale"
         ],
@@ -3335,13 +3335,13 @@
       ]
     ],
     "skihut-4": [
-      "Parte IV · Il disgelo",
+      "Parte IV · Il disgelo",
       "Torna il sole e la neve si scioglie. Quello che c’era sotto la neve viene alla luce.",
       "La strada è di nuovo aperta. Non tutti tornano a casa.",
       "Con il disgelo tornano le tracce. Leggi ogni dichiarazione due volte: anche chi dice dove NON era ti dice qualcosa.",
       [
         [
-          "Il primo disgelo",
+          "Il primo disgelo",
           "Sotto la neve c’era un guanto. Di nessuno.",
           "🧤 Guanto"
         ],
@@ -3351,39 +3351,39 @@
           "🏂 Buono lezione"
         ],
         [
-          "La terrazza",
+          "La terrazza",
           "La terrazza era di nuovo aperta. La sedia vicino alla ringhiera restò vuota.",
           "🪑 Sedia della terrazza"
         ],
         [
-          "La dispensa",
+          "La dispensa",
           "Una scatoletta in meno. Un piatto in più.",
           "🥫 Scatoletta"
         ],
         [
-          "Al cuoco Luigi manca un coltello",
+          "Al cuoco Luigi manca un coltello",
           "Undici coltelli. Avrebbero dovuto essere dodici.",
           "🔪 Coltello da cucina"
         ],
         [
-          "La sala giochi",
+          "La sala giochi",
           "Il gioco era pronto. Mancavano due giocatori.",
           "🎲 Dado"
         ],
         [
-          "Il fotografo Emil sviluppa",
+          "Il fotografo Emil sviluppa",
           "Nell’ultima foto: il rifugio, e una finestra illuminata.",
           "🖼️ Foto"
         ],
         [
-          "La strada si riapre",
+          "La strada si riapre",
           "Partì la prima auto. Con un posto in meno.",
           "🚗 Chiave dell’auto"
         ]
       ]
     ],
     "skihut-5": [
-      "Parte V · La festa sulla neve",
+      "Parte V · La festa sulla neve",
       "La stagione finisce con una festa. Musica, vin brulé e a mezzanotte un urlo dalla soffitta.",
       "La festa è finita. Il vin brulé è freddo, il rifugio è silenzioso.",
       "Una festa in un piccolo rifugio: tanta gente, poco spazio. Comincia da chi dice di essere stato da solo: così escludi tutti gli altri da quella stanza.",
@@ -3394,44 +3394,44 @@
           "☕ Tazza di vin brulé"
         ],
         [
-          "Suona la band",
+          "Suona la band",
           "Tre musicisti, due strumenti.",
           "🪗 Fisarmonica"
         ],
         [
-          "La turista Hana balla",
+          "La turista Hana balla",
           "Ballò con tutti. Tranne una persona.",
           "💃 Scarpa da ballo"
         ],
         [
-          "Fuochi sulla montagna",
+          "Fuochi sulla montagna",
           "Fuori, i fuochi d’artificio. Dentro, un colpo.",
           "🎆 Razzo"
         ],
         [
-          "La dottoressa Ingrid conta",
+          "La dottoressa Ingrid conta",
           "Contò gli ospiti. Ne mancava uno.",
           "📝 Elenco degli ospiti"
         ],
         [
-          "La soffitta",
+          "La soffitta",
           "L’urlo veniva dalla soffitta. Di sopra non c’era nessuno. Così dicevano tutti.",
           "🪜 Scala della soffitta"
         ],
         [
-          "Il piccolo Kai vede tutto",
+          "Il piccolo Kai vede tutto",
           "Non poteva restare alzato. Lo fece lo stesso.",
           "🧸 Orsacchiotto"
         ],
         [
-          "Mezzanotte in montagna",
+          "Mezzanotte in montagna",
           "Quando si riaccesero le luci, nella stube c’era una persona di troppo.",
           "🔔 Campanaccio"
         ]
       ]
     ],
     "skihut-6": [
-      "Parte VI · L’ultima discesa",
+      "Parte VI · L’ultima discesa",
       "Il rifugio chiude. Un’ultima discesa a valle per tutti. Non tutti arrivano in fondo.",
       "Il rifugio è chiuso, la neve è di nuovo immobile. Tu sai cosa c’era sotto.",
       "Gli ultimi casi in assoluto del rifugio, e i più difficili. Chi era da solo in una stanza esclude tutti gli altri: comincia da lì.",
@@ -3442,17 +3442,17 @@
           "🔥 Ultima scintilla"
         ],
         [
-          "La guida alpina Freya sceglie la via",
+          "La guida alpina Freya sceglie la via",
           "Due vie per scendere. Una sola sicura.",
           "🪧 Cartello"
         ],
         [
-          "La cantina",
+          "La cantina",
           "Nessuno scendeva mai in cantina. Qualcuno sì.",
           "🧱 Porta della cantina"
         ],
         [
-          "Il soccorritore Bjorn fa lo zaino",
+          "Il soccorritore Bjorn fa lo zaino",
           "Due zaini. Uno non era suo.",
           "🎒 Zaino"
         ],
@@ -3462,7 +3462,7 @@
           "🍽️ Piatto della colazione"
         ],
         [
-          "Il pupazzo di neve",
+          "Il pupazzo di neve",
           "Ieri il pupazzo di neve non c’era. Qualcuno aveva avuto tempo.",
           "⛄ Pupazzo di neve"
         ],

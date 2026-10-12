@@ -79,9 +79,9 @@
     "✓ Controleer": "✓ Periksa",
     "🗺️ Wereldkaart": "🗺️ Peta dunia",
     "Per zaak:": "Per kasus:",
-    "zonder hint én in één keer ·": "tanpa hint dan langsung benar ·",
-    "één van de twee ·": "salah satunya ·",
-    "opgelost": "tuntas",
+    "zonder hint én in één keer ·": "⁠tanpa hint dan langsung benar ·",
+    "één van de twee ·": "⁠satu dari keduanya ·",
+    "opgelost": "⁠tuntas",
     "Vitrine & Bureau": "Etalase & Meja",
     "Onderscheidingen": "Medali",
     "Vitrine": "Etalase",
@@ -100,7 +100,7 @@
     "Verklaring afvinken": "Centang keterangan",
     "Wie heeft de moord gepleegd?": "Siapa pembunuhnya?",
     "← Terug naar het bord": "← Kembali ke papan",
-    "🎯 Wie liegt?": "🎯 Siapa berbohong?",
+    "🎯 Wie liegt?": "🎯 Siapa bohong?",
     "Zaak Opgelost!": "Kasus Terungkap!",
     "Zaak Gesloten": "Kasus Ditutup",
     "Totaal": "Total",
@@ -118,9 +118,9 @@
     "Plaats de verdachten": "Taruh para tersangka",
     "Sleep een verdachte naar een vakje op de plattegrond, of tik eerst de verdachte en dan het vakje. Sleep iemand van het bord af om hem weg te halen. Twijfel je? Met": "Seret tersangka ke sebuah kotak di denah, atau ketuk tersangkanya dulu lalu kotaknya. Seret seseorang keluar dari papan untuk mengangkatnya. Ragu? Dengan",
     "zet je een stipje op vakjes waar iemand zou kúnnen staan;": "kamu memberi titik di kotak tempat seseorang bisa saja berdiri;",
-    "haalt stipjes en verdachten weer weg.": "menghilangkan lagi titik dan tersangka.",
+    "haalt stipjes en verdachten weer weg.": "menghilangkan titik dan tersangka dari papan.",
     "Lees de verklaringen": "Baca keterangannya",
-    "Elke verdachte vertelt waar hij stond. Tik op een verklaring: de kamer of het meubel licht op in de plattegrond. Tik op een meubel om te zien wat het is. Klopt een verklaring met wat je hebt neergezet, dan wordt de kaart groen; klopt hij niet, dan wordt hij rood. \"In een hoek\" is een hoekvakje, \"tegen een muur\" raakt een muur maar is geen hoek.": "Setiap tersangka menyebutkan di mana dia berdiri. Ketuk sebuah keterangan: ruangan atau perabotnya menyala di denah. Ketuk perabot untuk melihat apa itu. Kalau keterangan cocok dengan yang sudah kamu taruh, kartunya jadi hijau; kalau tidak, kartunya jadi merah. \"Di sudut\" berarti kotak sudut, \"menempel ke dinding\" menyentuh dinding tetapi bukan sudut.",
+    "Elke verdachte vertelt waar hij stond. Tik op een verklaring: de kamer of het meubel licht op in de plattegrond. Tik op een meubel om te zien wat het is. Klopt een verklaring met wat je hebt neergezet, dan wordt de kaart groen; klopt hij niet, dan wordt hij rood. \"In een hoek\" is een hoekvakje, \"tegen een muur\" raakt een muur maar is geen hoek.": "Setiap tersangka menyebutkan di mana dia berdiri. Ketuk sebuah keterangan: ruangan atau perabotnya menyala di denah. Ketuk perabot untuk melihat apa itu. Kalau keterangan cocok dengan yang sudah kamu taruh, kartunya jadi hijau; kalau tidak, kartunya jadi merah. “Di sudut” berarti kotak sudut, “menempel ke dinding” menyentuh dinding tetapi bukan sudut.",
     "De spelregel": "Aturan main",
     "Alleen de moordenaar was in de kamer van het slachtoffer. Niemand anders.": "Hanya pembunuh yang berada di ruangan korban. Tidak ada orang lain.",
     "Wijs de moordenaar aan": "Tunjuk pembunuhnya",
@@ -133,9 +133,9 @@
     "Gebruik logica": "Pakai logika",
     "Als een rij maar één optie heeft, is dat de match. Kruis-verwijs tussen tabellen!": "Kalau sebuah baris tinggal punya satu pilihan, itulah pasangannya. Cocokkan antartabel!",
     "Controleer je antwoord": "Periksa jawabanmu",
-    "Als je denkt dat je alles hebt, klik op \"Controleer\".": "Kalau menurutmu semuanya sudah lengkap, ketuk \"Periksa\".",
+    "Als je denkt dat je alles hebt, klik op \"Controleer\".": "Kalau menurutmu semuanya sudah lengkap, ketuk “Periksa”.",
     "Begrepen!": "Mengerti!",
-    "Inspecteur Van Dam": "Inspektur Van Dam",
+    "Inspecteur Van Dam": "Inspektur Van Dam",
     "1 · Kijk naar": "1 · Lihat",
     "2 · Dat betekent": "2 · Artinya",
     "3 · Doe dit": "3 · Lakukan ini",
@@ -187,7 +187,7 @@
     "dagen": "hari",
     "🔒 Pass": "🔒 Pass",
     "🛒 Ontgrendel {0}": "🛒 Buka {0}",
-    "Wie liegt?": "Siapa berbohong?",
+    "Wie liegt?": "Siapa bohong?",
     "Vluchtige blik": "Sekilas Pandang",
     "geopend": "terbuka",
     "Open mij!": "Buka aku!",
@@ -207,7 +207,7 @@
     "Los eerst zaak {0} op.": "Pecahkan dulu kasus {0}.",
     "Zaak {0}: {1}": "Kasus {0}: {1}",
     "Zaak {0}: ": "Kasus {0}: ",
-    "★★★ = zonder hint én in één keer goed · ★★ = één van de twee · ★ = opgelost": "★★★ = tanpa hint dan langsung benar · ★★ = salah satunya · ★ = tuntas",
+    "★★★ = zonder hint én in één keer goed · ★★ = één van de twee · ★ = opgelost": "★★★ = tanpa hint dan langsung benar · ★★ = satu dari keduanya · ★ = tuntas",
     "Beste score:": "Skor terbaik:",
     "Speel opnieuw": "Main lagi",
     "Deze zaak kon niet geladen worden.": "Kasus ini tidak bisa dimuat.",
@@ -220,13 +220,13 @@
     "✓ Deel voltooid": "✓ Bagian selesai",
     "Deze kist is al open.": "Peti ini sudah terbuka.",
     "Alle {0} zaken van {1} opgelost. Tik op de kist.": "{0} dari {0} kasus {1} terpecahkan. Ketuk petinya.",
-    "Alle acht zaken opgelost. Tik op de bewijskist.": "Kedelapan kasus terpecahkan. Ketuk peti bukti.",
+    "Alle acht zaken opgelost. Tik op de bewijskist.": "Kedelapan kasus terpecahkan. Ketuk peti bukti.",
     "🪙 +{0} punten": "🪙 +{0} poin",
     "🧊 Een vrije dag": "🧊 Satu hari libur",
     "{0} Stempel: {1}": "{0} Stempel: {1}",
     "Al geopend": "Sudah dibuka",
     "{0} is helemaal opgelost. Wat een speurder.": "{0} tuntas sepenuhnya. Benar-benar penyelidik sejati.",
-    "Goed werk, Rekruut. Dit is van jou.": "Kerja bagus, Rekrut. Ini untukmu.",
+    "Goed werk, Rekruut. Dit is van jou.": "Kerja bagus. Ini untukmu.",
     "Je gratis hints voor vandaag zijn op ({0} per dag). Morgen krijg je er weer {1}, of kies hieronder.": "Hint gratismu untuk hari ini sudah habis ({0} per hari). Besok kamu dapat {1} lagi, atau pilih di bawah.",
     "{0} hoort bij de Crimson Pass. Je kunt de wereld ook los kopen.": "{0} termasuk dalam Crimson Pass. Kamu juga bisa membeli dunia ini secara terpisah.",
     "Bordthema's en portretlijsten horen bij de Crimson Pass, of koop ze los.": "Tema papan dan bingkai potret termasuk dalam Crimson Pass, atau beli secara terpisah.",
@@ -335,13 +335,13 @@
     " · Dag #{0}": " · Hari #{0}",
     "Dagelijkse zaak ": "Kasus harian ",
     "👁️ Vluchtige blik": "👁️ Sekilas Pandang",
-    "Ronde {0}: iedereen staat op zijn plek. Wie liegt?": "Ronde {0}: semua sudah di tempatnya. Siapa berbohong?",
-    "Ronde {0}: kijk goed waar iedereen staat…": "Ronde {0}: perhatikan baik-baik posisi semua orang…",
+    "Ronde {0}: iedereen staat op zijn plek. Wie liegt?": "Ronde {0}: posisi benar. Siapa bohong?",
+    "Ronde {0}: kijk goed waar iedereen staat…": "Ronde {0}: perhatikan posisi semua orang…",
     "👁️ Onthoud het… ": "👁️ Ingat baik-baik… ",
-    "Waar stond {0}?": "Di mana {0} tadi?",
+    "Waar stond {0}?": "Di mana {0.short} tadi?",
     "Goed gezien! +{0} punten": "Jeli! +{0} poin",
-    "Nee: {0} loog.": "Bukan: {0} yang berbohong.",
-    "Nee, daar stond {0}.": "Bukan, yang di situ tadi {0}.",
+    "Nee: {0} loog.": "Bukan, {0.short} yang berbohong.",
+    "Nee, daar stond {0}.": "Bukan, {0.short} tadi di situ.",
     "Scherp gezien!": "Jeli sekali!",
     "Bijna allemaal": "Hampir semua",
     "Volgende keer beter": "Lain kali lebih baik",
@@ -375,9 +375,9 @@
     "Aanwijzing {0} beperkt de opties. Streep vakjes weg die er niet aan voldoen.": "Petunjuk {0} membatasi pilihan. Coret kotak yang tidak memenuhinya.",
     "Gebruik de plaatsen van de anderen om verder te snoeien.": "Gunakan posisi orang-orang lain untuk mempersempit pilihan.",
     "In deze zaak zegt <b>{0}</b>: “{1}”": "Dalam kasus ini <b>{0}</b> berkata: “{1}”",
-    "Waar stond <b>{0}</b>?": "Di mana <b>{0}</b> tadi?",
+    "Waar stond <b>{0}</b>?": "Di mana <b>{0.short}</b> tadi?",
     "{0} · Zaak {1}: {2}": "{0} · Kasus {1}: {2}",
-    " · nog {0} {0|one:hint|other:hints}": " · sisa {0} hint",
+    " · nog {0} {0|one:hint|other:hints}": " · sisa {0} hint",
     "Volgende: {0} · nog {1} {1|one:zaak|other:zaken}": "Berikutnya: {0} · {1} kasus lagi",
     "nog {0} {0|one:zaak|other:zaken}": "{0} kasus lagi",
     "🔒 Los nog {0} {0|one:zaak|other:zaken} op (vrij spel of dagelijks) om deze wereld te openen": "🔒 Pecahkan {0} kasus lagi (main bebas atau harian) untuk membuka dunia ini",
@@ -671,7 +671,7 @@
         "victimName": "Kondektur Leon Marchetti",
         "roomWord": "gerbong",
         "roomWordPlural": "gerbong",
-        "tagline": "Dua belas gerbong, satu terowongan, dan seorang kondektur yang tak pernah menuntaskan putarannya.",
+        "tagline": "Dua belas gerbong, satu terowongan, dan seorang kondektur yang tak pernah selesai berkeliling.",
         "intro": "Kereta malam ke Wina, 1934. Di dalam terowongan, lampu padam. Saat menyala lagi, sang kondektur tergeletak di gerbong makan. Pemberhentian berikutnya baru pukul enam.",
         "outro": "Saat matahari terbit, kereta masuk stasiun. Seorang penumpang turun dengan tangan terborgol.",
         "rooms": {
@@ -1010,20 +1010,20 @@
     "tips": {
       "same-row": "Perhatikan keterangan tentang baris: baris membentang dari kiri ke kanan, menembus dinding.",
       "same-col": "Kolom membentang dari atas ke bawah di seluruh denah. Dinding tidak dihitung.",
-      "left-of": "\"Lebih ke kiri\" berlaku untuk seluruh denah: orangnya berdiri di kolom yang lebih kiri, di ruangan mana pun.",
-      "above": "\"Lebih ke atas di denah\" berarti lebih dekat ke tepi atas, apa pun ruangannya.",
-      "not-adjacent": "\"Tidak tepat di sebelah\" hanya mencoret empat kotak di sampingnya. Diagonal tidak dihitung sebagai di sebelah.",
-      "adjacent": "\"Tepat di sebelah\" berarti kotak di kiri, kanan, atas, atau bawah. Tidak pernah diagonal.",
+      "left-of": "“Lebih ke kiri” berlaku untuk seluruh denah: orangnya berdiri di kolom yang lebih kiri, di ruangan mana pun.",
+      "above": "“Lebih ke atas di denah” berarti lebih dekat ke tepi atas, apa pun ruangannya.",
+      "not-adjacent": "“Tidak tepat di sebelah” hanya mencoret empat kotak di sampingnya. Diagonal tidak dihitung sebagai di sebelah.",
+      "adjacent": "“Tepat di sebelah” berarti kotak di kiri, kanan, atas, atau bawah. Tidak pernah diagonal.",
       "alone": "Siapa pun yang sendirian di sebuah ruangan menutup ruangan itu bagi semua orang lain. Berguna untuk mencoret ruangan.",
       "empty-room": "Ruangan kosong menurut laporan: tidak perlu mencoba siapa pun di sana.",
-      "pos": "Sudut menyentuh dua dinding, \"menempel ke dinding\" menyentuh satu, dan \"di tengah\" tidak menyentuh dinding sama sekali.",
+      "pos": "Sudut menyentuh dua dinding, “menempel ke dinding” menyentuh satu, dan “di tengah” tidak menyentuh dinding sama sekali.",
       "room-pos": "Lihat kotak sudut atau kotak dinding mana yang masih kosong di ruangan itu. Perabot sering menempati beberapa.",
-      "room-with": "Ruangan \"yang berisi tanaman\" bisa saja berisi perabot lain juga. Cari tanamannya dulu.",
+      "room-with": "Ruangan “yang berisi tanaman” bisa saja berisi perabot lain juga. Cari tanamannya dulu.",
       "next-to": "Ketuk keterangannya: perabotnya menyala. Hanya kotak di sebelahnya yang memenuhi syarat.",
       "room-next": "Ruangan dan perabot sekaligus: biasanya hanya tersisa satu kotak.",
       "diff-room": "Tidak di ruangan yang sama: tentukan dulu posisi orang yang paling banyak kamu ketahui.",
       "same-room": "Ruangan yang sama: temukan dulu ruangan salah satunya, maka kamu juga tahu ruangan yang lain.",
-      "not-room": "Keterangan \"tidak berada di\" mencoret satu ruangan. Gabungkan dengan aturan tentang korban.",
+      "not-room": "Keterangan “tidak berada di” mencoret satu ruangan. Gabungkan dengan aturan tentang korban.",
       "room": "Keterangan yang paling jelas: taruh orang ini lebih dulu.",
       "fallback": "Mulailah dari keterangan yang paling sedikit menyisakan kemungkinan."
     },
@@ -1042,7 +1042,7 @@
       ],
       "samen": [
         "Bersama atau sendirian",
-        "Di ruangan yang sama: taruh keduanya di satu ruangan itu. Tidak di ruangan yang sama: taruh mereka di dua ruangan berbeda. Saya sendirian: tidak boleh ada orang lain di ruangan itu."
+        "Di ruangan yang sama: taruh keduanya di satu ruangan. Tidak di ruangan yang sama: taruh mereka di dua ruangan berbeda. Saya sendirian: tidak boleh ada orang lain di ruangan itu."
       ],
       "naast": [
         "Bersebelahan",
@@ -1084,7 +1084,7 @@
       "Nama pelakunya dicoret. Kamu menuliskannya kembali.",
       "Terpecahkan, menurut arsip. Tidak menurut fakta."
     ],
-    "mentorName": "Inspektur Van Dam",
+    "mentorName": "Inspektur Van Dam",
     "boardTutorial": [
       "Keterangan 1: Lady Clementine berada di Ruang Tamu, di sudut. Tiga sudut sudah ditempati perabot, jadi tinggal satu. Seret Clementine ke kotak yang menyala, atau ketuk kotak itu.",
       "Keterangan 2: Tuan Hargrove berdiri tepat di sebelah tanaman. Hanya satu kotak di sebelah tanaman itu yang kosong. Seret Hargrove ke sana, atau ketuk kotak itu.",
@@ -1095,7 +1095,7 @@
 
   campaign: {
     "landhuis": [
-      "Bagian I · Makan Malam",
+      "Bagian I · Makan Malam",
       "Kediaman Blackwood, 1927. Selesai makan malam, sang tuan rumah tetap duduk di kursinya.",
       "Rahasia makan malam itu kini terhidang di atas meja. Tapi keluarga itu akan kembali.",
       "Selamat datang di Blackwood. Mulailah dari orang yang menyebutkan di ruangan mana dia berada: itulah keterangan yang paling mudah. Dan ingat: hanya pembunuh yang bersama korban.",
@@ -1137,13 +1137,13 @@
         ],
         [
           "Ruang Merah",
-          "Semuanya bertemu di ruangan tempat semuanya bermula.",
+          "Semuanya berujung di ruangan tempat semuanya bermula.",
           "🕯️ Lilin merah"
         ]
       ]
     ],
     "landhuis-2": [
-      "Bagian II · Para Ahli Waris",
+      "Bagian II · Para Ahli Waris",
       "Setelah pemakaman, keluarga itu kembali. Semua orang menginginkan sesuatu dari rumah ini.",
       "Warisan sudah dibagi. Tapi rumah ini masih menyimpan cerita.",
       "Keluarga itu kembali dan semua orang membicarakan semua orang. Keterangan tentang dua orang: tentukan dulu posisi salah satunya.",
@@ -1191,7 +1191,7 @@
       ]
     ],
     "landhuis-3": [
-      "Bagian III · Malam Badai",
+      "Bagian III · Malam Badai",
       "Badai petir memutus kediaman itu dari dunia luar. Tak ada yang bisa masuk, tak ada yang bisa keluar.",
       "Saat fajar, badai berlalu. Kediaman Blackwood tak lagi menyimpan rahasia.",
       "Badai mengurung rumah ini. Bersiaplah untuk keterangan tentang baris dan kolom: keduanya menembus dinding. Perhatikan denahnya baik-baik.",
@@ -1386,7 +1386,7 @@
       "Bagian I · Laut yang Tenang",
       "Camar Hitam terapung tanpa angin di laut yang licin bagai cermin. Sang kapten tak lagi menjawab.",
       "Camar Hitam mengembangkan layar. Di peta tampak sebuah pulau.",
-      "Kapal itu kecil dan semua orang saling melihat. \"Tepat di sebelah\" berarti kotak di sampingnya, tidak pernah diagonal. Mulailah di dapur kapal.",
+      "Kapal itu kecil dan semua orang saling melihat. “Tepat di sebelah” berarti kotak di sampingnya, tidak pernah diagonal. Mulailah di dapur kapal.",
       [
         [
           "Laut yang Tenang",
@@ -1482,7 +1482,7 @@
       "Bagian III · Pelayaran Pulang",
       "Dengan harta di atas kapal, perjalanan pulang dimulai. Menjadi kaya tidak membuat siapa pun lebih jujur.",
       "Camar Hitam berlayar masuk ke pelabuhan. Awaknya berkurang, hartanya utuh.",
-      "Dengan harta di atas kapal, para awak mulai gelisah. Keterangan seperti \"lebih ke kiri\" dan \"lebih ke atas\" berlaku untuk seluruh denah, bukan hanya ruangannya.",
+      "Dengan harta di atas kapal, para awak mulai gelisah. Keterangan seperti “lebih ke kiri” dan “lebih ke atas” berlaku untuk seluruh denah, bukan hanya ruangannya.",
       [
         [
           "Jaga Pertama",
@@ -1530,7 +1530,7 @@
       "Bagian IV · Kapten Baru",
       "Barnaby mengambil alih kemudi. Para awak tidak setuju. Di laut, tak ada yang tetap tenang lama-lama.",
       "Camar Hitam punya kapten. Untuk berapa lama, tak ada yang tahu.",
-      "Kapten baru dan awak lama. Keterangan \"tepat di sebelah\" sangat berharga di kapal sekecil ini: setiap kotak berarti.",
+      "Kapten baru dan awak lama. Keterangan “tepat di sebelah” sangat berharga di kapal sekecil ini: setiap kotak berarti.",
       [
         [
           "Kemudi Berganti Tangan",
@@ -1575,7 +1575,7 @@
       ]
     ],
     "piraten-5": [
-      "Bagian V · Kapal Hantu",
+      "Bagian V · Kapal Hantu",
       "Di tengah kabut ada sebuah kapal tanpa awak. Camar Hitam merapat ke sampingnya. Seseorang seharusnya tinggal di rumah saja.",
       "Kapal hantu itu lenyap ke dalam kabut. Camar Hitam berlayar lagi, berkurang satu orang.",
       "Kabut dan kapal kosong: semua orang gugup dan terlalu banyak bicara. Coret dulu ruangan yang kosong, sisanya akan menyempit dengan sendirinya.",
@@ -1623,7 +1623,7 @@
       ]
     ],
     "piraten-6": [
-      "Bagian VI · Harta Mata Hitam",
+      "Bagian VI · Harta Mata Hitam",
       "Harta Mata Hitam yang sebenarnya tidak ada di pulau. Harta itu ada di kapal. Dan kini semua orang tahu di mana.",
       "Hartanya sudah dibagi. Camar Hitam milik para awak, dan para awak milik laut.",
       "Kasus-kasus terakhir di Camar Hitam, dan yang tersulit. Keterangan tentang baris dan kolom menembus seluruh kapal: gunakan pensil.",
@@ -1671,7 +1671,7 @@
       ]
     ],
     "hotel": [
-      "Bagian I · Malam Tahun Baru",
+      "Bagian I · Malam Tahun Baru",
       "Tepat pukul dua belas, lampu padam. Saat menyala lagi, sang pemilik tergeletak di lantai marmer.",
       "Malam pertama tahun ini sudah lewat. Para tamu belum boleh pulang.",
       "Seratus tamu, satu korban. Hotel punya banyak ruangan; coret dulu ruangan yang menurut laporan kosong.",
@@ -1719,7 +1719,7 @@
       ]
     ],
     "hotel-2": [
-      "Bagian II · Para Tamu",
+      "Bagian II · Para Tamu",
       "Tamu-tamu Tahun Baru tidak boleh meninggalkan hotel. Begitu pula para staf.",
       "Para tamu berangkat. Buku tamu kehilangan satu halaman.",
       "Para tamu tak bisa pergi dan itu terdengar dari keterangan mereka: pendek dan tajam. Dua orang di ruangan yang sama: taruh dulu yang paling jelas.",
@@ -1767,10 +1767,10 @@
       ]
     ],
     "hotel-3": [
-      "Bagian III · Para Staf",
+      "Bagian III · Para Staf",
       "Siapa pun yang mengenal hotel ini mengenal lorong-lorong di balik dindingnya. Di sanalah bagian ini dimulai.",
       "Grand Hotel Aurora meredupkan lampunya. Kali ini untuk selamanya.",
-      "Para staf mengenal lorong-lorong di balik dinding. Ingat sudut dan dinding: sudut menyentuh dua dinding, \"menempel ke dinding\" menyentuh satu.",
+      "Para staf mengenal lorong-lorong di balik dinding. Ingat sudut dan dinding: sudut menyentuh dua dinding, “menempel ke dinding” menyentuh satu.",
       [
         [
           "Lift Servis",
@@ -2154,7 +2154,7 @@
       "Bagian V · Kapsul Asing",
       "Sebuah kapsul berlabuh tanpa izin. Di dalamnya: tak ada siapa-siapa. Di luarnya: kru yang mendadak banyak bicara.",
       "Kapsul itu dilepas dan didorong menjauh. Apa yang tadi ada di dalamnya, hanya kru yang tahu.",
-      "Kapsul asing dan orang-orang yang gugup. Keterangan \"lebih ke kiri\" dan \"lebih ke atas\" berlaku untuk seluruh stasiun, bukan untuk satu modul.",
+      "Kapsul asing dan orang-orang yang gugup. Keterangan “lebih ke kiri” dan “lebih ke atas” berlaku untuk seluruh stasiun, bukan untuk satu modul.",
       [
         [
           "Kosong, Kata Mereka",
@@ -2247,10 +2247,10 @@
       ]
     ],
     "museum": [
-      "Bagian I · Setelah Jam Tutup",
+      "Bagian I · Setelah Jam Tutup",
       "Museum tutup pukul lima. Pukul enam, sang kurator tergeletak di antara patung-patung dan semua pintu terkunci.",
       "Malam pertama sudah lewat. Museum tetap tutup, pertanyaannya tidak.",
-      "Museum punya banyak ruangan dan sedikit orang. Mulailah dari orang yang menyebutkan di ruangan mana dia berada, dan perhatikan lemari kaca: \"tepat di sebelah\" hanya berlaku untuk kotak yang persis di sampingnya.",
+      "Museum punya banyak ruangan dan sedikit orang. Mulailah dari orang yang menyebutkan di ruangan mana dia berada, dan perhatikan lemari kaca: “tepat di sebelah” hanya berlaku untuk kotak yang persis di sampingnya.",
       [
         [
           "Setelah Jam Tutup",
@@ -2439,7 +2439,7 @@
       ]
     ],
     "museum-5": [
-      "Bagian V · Malam Para Dinosaurus",
+      "Bagian V · Malam Para Dinosaurus",
       "Malam anak-anak: seratus anak tidur di antara kerangka-kerangka. Saat lampu menyala, seseorang tidak akan bangun.",
       "Anak-anak sudah dijemput. Kerangkanya kembali utuh.",
       "Banyak saksi cilik dan banyak kebingungan. Keterangan tentang dua orang sekaligus: tentukan dulu posisi orang yang paling banyak kamu ketahui.",
@@ -2538,7 +2538,7 @@
       "Bagian I · Keberangkatan",
       "Kereta malam berangkat pukul delapan. Pukul sembilan, sang kondektur tergeletak di gerbong makan dan kereta tak akan berhenti sampai matahari terbit.",
       "Kereta melaju menembus malam. Begitu pula para penumpangnya.",
-      "Kereta itu panjang dan sempit: gerbong-gerbongnya berjajar. \"Lebih ke kiri\" dan \"lebih ke atas\" berlaku untuk seluruh denah, bukan satu gerbong.",
+      "Kereta itu panjang dan sempit: gerbong-gerbongnya berjajar. “Lebih ke kiri” dan “lebih ke atas” berlaku untuk seluruh denah, bukan satu gerbong.",
       [
         [
           "Berangkat Pukul Delapan",
@@ -2586,7 +2586,7 @@
       "Bagian II · Salju",
       "Kereta terhenti di tengah salju. Tak ada stasiun, tak ada bantuan, dan pelakunya masih di dalam kereta.",
       "Bajak salju datang. Kereta melaju lagi, dengan satu kabin kosong.",
-      "Terjebak salju: semua orang saling melihat. \"Tepat di sebelah\" sangat berharga di kereta sesempit ini: setiap kotak berarti.",
+      "Terjebak salju: semua orang saling melihat. “Tepat di sebelah” sangat berharga di kereta sesempit ini: setiap kotak berarti.",
       [
         [
           "Terhenti",
@@ -2727,7 +2727,7 @@
       ]
     ],
     "trein-5": [
-      "Bagian V · Pesta di Gerbong Santai",
+      "Bagian V · Pesta di Gerbong Santai",
       "Malam Tahun Baru di gerbong santai. Pukul dua belas lampu padam. Pukul dua belas lewat lima, seseorang hilang.",
       "Tahun baru dimulai. Gerbong santai dirapikan, kecuali satu kursi.",
       "Pesta di gerbong yang sempit: banyak orang, sedikit tempat. Mulailah dari orang yang bilang dia sendirian; itu menutup satu gerbong penuh bagi yang lain.",
@@ -2775,7 +2775,7 @@
       ]
     ],
     "trein-6": [
-      "Bagian VI · Stasiun Akhir",
+      "Bagian VI · Stasiun Akhir",
       "Perjalanan terakhir kereta malam. Di stasiun akhir, kereta ini akan dijadikan besi tua. Seseorang tidak ingin melihat itu.",
       "Stasiun akhir. Kereta ke tempat besi tua, pelaku ke polisi, dan kamu pulang.",
       "Kasus-kasus paling akhir di kereta ini, dan yang tersulit. Siapa pun yang sendirian di sebuah gerbong menutup gerbong itu bagi yang lain; mulailah dari sana.",
@@ -2826,7 +2826,7 @@
       "Bagian I · Pertunjukan Terakhir",
       "Pertunjukan terakhir musim ini. Penonton sudah pergi, tenda ditutup, dan Direktur Zano tergeletak di arena.",
       "Tenda tetap berdiri. Begitu pula para pemain, sampai polisi selesai.",
-      "Sirkus adalah satu tenda besar dengan banyak sudut kecil. Mulailah dari orang yang menyebutkan di mana dia berada; \"tepat di sebelah\" hanya berlaku untuk kotak yang persis di sampingnya, bahkan di dekat meriam.",
+      "Sirkus adalah satu tenda besar dengan banyak sudut kecil. Mulailah dari orang yang menyebutkan di mana dia berada; “tepat di sebelah” hanya berlaku untuk kotak yang persis di sampingnya, bahkan di dekat meriam.",
       [
         [
           "Pertunjukan Terakhir",
@@ -2919,7 +2919,7 @@
       ]
     ],
     "circus-3": [
-      "Bagian III · Rumah Cermin",
+      "Bagian III · Rumah Cermin",
       "Atraksi baru: tenda penuh cermin. Siapa pun yang masuk melihat dirinya seratus kali. Satu orang tak pernah keluar.",
       "Cermin-cermin dikemas. Salah satunya pecah.",
       "Di rumah cermin semuanya tampak berlipat ganda. Keterangan tentang baris dan kolom menembus dinding: gunakan pensil.",
@@ -3111,10 +3111,10 @@
       ]
     ],
     "skihut": [
-      "Bagian I · Longsoran Salju",
+      "Bagian I · Longsoran Salju",
       "Longsoran salju menutup lembah. Tujuh tamu, satu tungku, dan tuan rumah yang duduk di dekat api dan tak pernah hangat lagi.",
       "Jalan masih tertutup. Para tamu tetap tinggal, suka atau tidak.",
-      "Pondok ski itu kecil dan hangat, dan semua orang berdesakan. Mulailah dari orang yang menyebutkan di ruangan mana dia berada; perhatikan tungkunya: \"tepat di sebelah\" hanya berlaku untuk kotak yang persis di sampingnya.",
+      "Pondok ski itu kecil dan hangat, dan semua orang berdesakan. Mulailah dari orang yang menyebutkan di ruangan mana dia berada; perhatikan tungkunya: “tepat di sebelah” hanya berlaku untuk kotak yang persis di sampingnya.",
       [
         [
           "Longsoran Salju",
@@ -3159,7 +3159,7 @@
       ]
     ],
     "skihut-2": [
-      "Bagian II · Buta Salju",
+      "Bagian II · Buta Salju",
       "Badai salju merenggut semua pandangan. Di luar, tangan di depan wajah pun tak terlihat. Di dalam, seseorang melihat kesempatan.",
       "Badai mereda. Salju menutupi segalanya, kecuali kebenaran.",
       "Buta salju: semua orang bicara tentang apa yang tidak mereka lihat. Coret dulu ruangan yang kosong, sisanya akan menyempit dengan sendirinya.",
@@ -3207,7 +3207,7 @@
       ]
     ],
     "skihut-3": [
-      "Bagian III · Malam Badai",
+      "Bagian III · Malam Badai",
       "Badai kedua lebih parah. Listrik padam, pondok gelap gulita, dan seseorang memanfaatkan kegelapan itu.",
       "Saat matahari terbit, listrik menyala lagi. Pondok itu berkurang satu tamu.",
       "Listrik padam, lilin menyala: keterangan tentang baris dan kolom menembus dinding. Gunakan pensil.",
@@ -3303,7 +3303,7 @@
       ]
     ],
     "skihut-5": [
-      "Bagian V · Pesta Ski",
+      "Bagian V · Pesta Ski",
       "Musim ditutup dengan pesta. Musik, anggur rempah hangat, dan tengah malam terdengar jeritan dari loteng.",
       "Pesta sudah usai. Anggur rempahnya dingin, pondoknya sunyi.",
       "Pesta di pondok kecil: banyak orang, sedikit tempat. Mulailah dari orang yang bilang dia sendirian; itu sekaligus menutup satu ruangan bagi yang lain.",
@@ -3519,7 +3519,7 @@
         "alone": "{s} berada di {rw} yang tidak ditempati orang lain."
       },
       "hint": {
-        "wrong": "{s} berada di tempat yang salah. Petunjuk {n} berbunyi: \"{quote}\"",
+        "wrong": "{s} berada di tempat yang salah. Petunjuk {n} berbunyi: “{quote}”",
         "two-in-victim-room": "Dua tersangka berada di {rw} korban. Hanya pembunuh yang ada di sana.",
         "start.one": "Mulailah dengan {s}: hanya tersisa {n} kotak yang mungkin, di {room}.",
         "start.spread": "Mulailah dengan {s}: hanya tersisa {n} kotak yang mungkin, tersebar di {k} {rws}."

@@ -28,3 +28,11 @@ art/portretten/ruw/
 art/portretten/urls.txt
 store/social/cases-*/
 store/social/en/
+
+# winkelscreenshots per taal (alleen nl en en staan in de repo); opnieuw te maken met store/make-screenshots.js en make-store-cards.js
+store/screenshots-65-*/
+store/cards-65-*/
+!store/screenshots-65-en/
+!store/cards-65-en/
+# bevat leveranciersnummer en een oude sleutel-ID: nooit in de openbare repo
+store/winkel.js

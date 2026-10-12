@@ -77,10 +77,10 @@
     "💡 Hint": "💡 İpucu",
     "↺ Reset": "↺ Sıfırla",
     "✓ Controleer": "✓ Kontrol Et",
-    "🗺️ Wereldkaart": "🗺️ Dünya haritası",
-    "Per zaak:": "Vaka başına:",
-    "zonder hint én in één keer ·": "ipucusuz ve ilk denemede ·",
-    "één van de twee ·": "ikisinden biri ·",
+    "🗺️ Wereldkaart": "🗺️ Harita",
+    "Per zaak:": "Yıldızlar:",
+    "zonder hint én in één keer ·": "ipucusuz ve ilk denemede ·",
+    "één van de twee ·": "ikisinden biri ·",
     "opgelost": "çözüldü",
     "Vitrine & Bureau": "Vitrin ve Masa",
     "Onderscheidingen": "Ödüller",
@@ -100,7 +100,7 @@
     "Verklaring afvinken": "İfadeyi işaretle",
     "Wie heeft de moord gepleegd?": "Cinayeti kim işledi?",
     "← Terug naar het bord": "← Tahtaya dön",
-    "🎯 Wie liegt?": "🎯 Kim yalan söylüyor?",
+    "🎯 Wie liegt?": "🎯 Yalancı kim?",
     "Zaak Opgelost!": "Vaka Çözüldü!",
     "Zaak Gesloten": "Vaka Kapandı",
     "Totaal": "Toplam",
@@ -120,7 +120,7 @@
     "zet je een stipje op vakjes waar iemand zou kúnnen staan;": "ile birinin durabileceği karelere nokta koyarsın;",
     "haalt stipjes en verdachten weer weg.": "noktaları ve şüphelileri kaldırır.",
     "Lees de verklaringen": "İfadeleri oku",
-    "Elke verdachte vertelt waar hij stond. Tik op een verklaring: de kamer of het meubel licht op in de plattegrond. Tik op een meubel om te zien wat het is. Klopt een verklaring met wat je hebt neergezet, dan wordt de kaart groen; klopt hij niet, dan wordt hij rood. \"In een hoek\" is een hoekvakje, \"tegen een muur\" raakt een muur maar is geen hoek.": "Her şüpheli nerede durduğunu anlatır. Bir ifadeye dokun: oda ya da eşya kat planında yanar. Bir eşyanın ne olduğunu görmek için ona dokun. İfade senin yerleştirdiklerinle uyuyorsa kart yeşile döner; uymuyorsa kırmızıya. \"Bir köşede\" bir köşe karesidir; \"duvar kenarında\" bir duvara değer ama köşe değildir.",
+    "Elke verdachte vertelt waar hij stond. Tik op een verklaring: de kamer of het meubel licht op in de plattegrond. Tik op een meubel om te zien wat het is. Klopt een verklaring met wat je hebt neergezet, dan wordt de kaart groen; klopt hij niet, dan wordt hij rood. \"In een hoek\" is een hoekvakje, \"tegen een muur\" raakt een muur maar is geen hoek.": "Her şüpheli nerede durduğunu anlatır. Bir ifadeye dokun: oda ya da eşya kat planında yanar. Bir eşyanın ne olduğunu görmek için ona dokun. İfade senin yerleştirdiklerinle uyuyorsa kart yeşile döner; uymuyorsa kırmızıya. “Bir köşede” bir köşe karesidir; “duvar kenarında” bir duvara değer ama köşe değildir.",
     "De spelregel": "Kural",
     "Alleen de moordenaar was in de kamer van het slachtoffer. Niemand anders.": "Kurbanın bulunduğu odada yalnızca katil vardı. Başka kimse yoktu.",
     "Wijs de moordenaar aan": "Katili göster",
@@ -133,9 +133,9 @@
     "Gebruik logica": "Mantığını kullan",
     "Als een rij maar één optie heeft, is dat de match. Kruis-verwijs tussen tabellen!": "Bir satırda tek seçenek kaldıysa eşleşme odur. Tabloları birbiriyle karşılaştır!",
     "Controleer je antwoord": "Cevabını kontrol et",
-    "Als je denkt dat je alles hebt, klik op \"Controleer\".": "Hepsini bulduğunu düşünüyorsan \"Kontrol Et\" düğmesine dokun.",
+    "Als je denkt dat je alles hebt, klik op \"Controleer\".": "Hepsini bulduğunu düşünüyorsan “Kontrol Et” düğmesine dokun.",
     "Begrepen!": "Anladım!",
-    "Inspecteur Van Dam": "Komiser Van Dam",
+    "Inspecteur Van Dam": "Komiser Van Dam",
     "1 · Kijk naar": "1 · Şuna bak",
     "2 · Dat betekent": "2 · Bu demek ki",
     "3 · Doe dit": "3 · Şunu yap",
@@ -187,7 +187,7 @@
     "dagen": "gün",
     "🔒 Pass": "🔒 Pass",
     "🛒 Ontgrendel {0}": "🛒 Kilidi aç: {0}",
-    "Wie liegt?": "Kim yalan söylüyor?",
+    "Wie liegt?": "Yalancı kim?",
     "Vluchtige blik": "Hızlı bakış",
     "geopend": "açıldı",
     "Open mij!": "Aç beni!",
@@ -207,7 +207,7 @@
     "Los eerst zaak {0} op.": "Önce {0}. vakayı çöz.",
     "Zaak {0}: {1}": "Vaka {0}: {1}",
     "Zaak {0}: ": "Vaka {0}: ",
-    "★★★ = zonder hint én in één keer goed · ★★ = één van de twee · ★ = opgelost": "★★★ = ipucusuz ve ilk denemede doğru · ★★ = ikisinden biri · ★ = çözüldü",
+    "★★★ = zonder hint én in één keer goed · ★★ = één van de twee · ★ = opgelost": "★★★ = ipucusuz ve ilk denemede doğru · ★★ = ikisinden biri · ★ = çözüldü",
     "Beste score:": "En iyi skor:",
     "Speel opnieuw": "Yeniden oyna",
     "Deze zaak kon niet geladen worden.": "Bu vaka yüklenemedi.",
@@ -226,7 +226,7 @@
     "{0} Stempel: {1}": "{0} Mühür: {1}",
     "Al geopend": "Zaten açıldı",
     "{0} is helemaal opgelost. Wat een speurder.": "{0} baştan sona çözüldü. Tam bir hafiyesin.",
-    "Goed werk, Rekruut. Dit is van jou.": "İyi iş, Çaylak. Bu senin.",
+    "Goed werk, Rekruut. Dit is van jou.": "İyi iş. Bu senin.",
     "Je gratis hints voor vandaag zijn op ({0} per dag). Morgen krijg je er weer {1}, of kies hieronder.": "Bugünkü ücretsiz ipuçların bitti (günde {0}). Yarın yine {1} ipucu alırsın; istersen aşağıdan seç.",
     "{0} hoort bij de Crimson Pass. Je kunt de wereld ook los kopen.": "{0}, Crimson Pass’e dahil. Dünyayı ayrıca da satın alabilirsin.",
     "Bordthema's en portretlijsten horen bij de Crimson Pass, of koop ze los.": "Tahta temaları ve portre çerçeveleri Crimson Pass’e dahil; istersen ayrıca satın al.",
@@ -291,7 +291,7 @@
     "Je streak van {0} dagen loopt vanavond af. Eén zaak is genoeg.": "{0} günlük serin bu akşam bitiyor. Bir vaka yeter.",
     "Er ligt een nieuwe zaak op je bureau. Wie was alleen met het slachtoffer?": "Masanda yeni bir vaka var. Kurbanla yalnız kalan kimdi?",
     "Zeker? Tik nogmaals": "Emin misin? Tekrar dokun",
-    "Ingesteld: elke dag om 18:30 een herinnering.": "Ayarlandı: her gün 18:30’da bir hatırlatma.",
+    "Ingesteld: elke dag om 18:30 een herinnering.": "Hatırlatma ayarlandı: her gün 18:30’da.",
     "Alle voortgang is gewist.": "Tüm ilerleme silindi.",
     "{0} verdachten · {1} bij {2} vakjes": "{0} şüpheli · {1}×{2} kare",
     "hoogste rang bereikt": "en yüksek rütbeye ulaşıldı",
@@ -313,9 +313,9 @@
     "📖 {0}. {1}": "📖 {0}. {1}",
     "Stap {0} van {1}": "Adım {0} / {1}",
     "In deze zaak zegt {0}: “{1}”": "Bu vakada {0} şöyle diyor: “{1}”",
-    "✓ Klopt": "✓ Tutuyor",
-    "✗ Klopt niet": "✗ Tutmuyor",
-    "Hint {0} · deze zaak levert nu maximaal ★★ op": "İpucu {0} · bu vaka artık en fazla ★★ getirir",
+    "✓ Klopt": "✓ Doğru",
+    "✗ Klopt niet": "✗ Yanlış",
+    "Hint {0} · deze zaak levert nu maximaal ★★ op": "İpucu {0} · bu vaka artık en fazla ★★ getirir",
     "Potlood: zet een stipje op vakjes waar iemand zou kúnnen staan. Met Plaats zet je iemand echt neer, met Gum haal je het weer weg.": "Kalem: birinin durabileceği karelere nokta koy. Yerleştir ile birini gerçekten yerine koyarsın, Silgi ile de kaldırırsın.",
     "Bijna! Nog één verdachte staat verkeerd. {0} van de {1} staan al goed.": "Az kaldı! Bir şüpheli hâlâ yanlış yerde. {1} şüpheliden {0} tanesi doğru yerde.",
     "{0} verdachten staan verkeerd, {1} staan goed. Gebruik een hint als je vastzit.": "{0} şüpheli yanlış, {1} şüpheli doğru yerde. Takılırsan bir ipucu kullan.",
@@ -335,8 +335,8 @@
     " · Dag #{0}": " · Gün #{0}",
     "Dagelijkse zaak ": "Günlük vaka ",
     "👁️ Vluchtige blik": "👁️ Hızlı bakış",
-    "Ronde {0}: iedereen staat op zijn plek. Wie liegt?": "Tur {0}: herkes yerinde. Kim yalan söylüyor?",
-    "Ronde {0}: kijk goed waar iedereen staat…": "Tur {0}: herkesin nerede durduğuna iyi bak…",
+    "Ronde {0}: iedereen staat op zijn plek. Wie liegt?": "Tur {0}: herkes yerinde. Yalancı kim?",
+    "Ronde {0}: kijk goed waar iedereen staat…": "Tur {0}: herkesin yerine iyi bak…",
     "👁️ Onthoud het… ": "👁️ Aklında tut… ",
     "Waar stond {0}?": "{0} neredeydi?",
     "Goed gezien! +{0} punten": "İyi gördün! +{0} puan",
@@ -377,7 +377,7 @@
     "In deze zaak zegt <b>{0}</b>: “{1}”": "Bu vakada <b>{0}</b> şöyle diyor: “{1}”",
     "Waar stond <b>{0}</b>?": "<b>{0}</b> neredeydi?",
     "{0} · Zaak {1}: {2}": "{0} · Vaka {1}: {2}",
-    " · nog {0} {0|one:hint|other:hints}": " · {0} ipucu kaldı",
+    " · nog {0} {0|one:hint|other:hints}": " · {0} ipucu kaldı",
     "Volgende: {0} · nog {1} {1|one:zaak|other:zaken}": "Sıradaki: {0} · {1} vaka daha",
     "nog {0} {0|one:zaak|other:zaken}": "{0} vaka daha",
     "🔒 Los nog {0} {0|one:zaak|other:zaken} op (vrij spel of dagelijks) om deze wereld te openen": "🔒 Bu dünyayı açmak için {0} vaka daha çöz (serbest oyun ya da günlük)",
@@ -935,7 +935,7 @@
         "Malikâne dünyasındaki bütün bölümleri bitir"
       ],
       "piraten": [
-        "Martının Kaptanı",
+        "Martı’nın Kaptanı",
         "Korsan Gemisi dünyasındaki bütün bölümleri bitir"
       ],
       "hotel": [
@@ -1010,20 +1010,20 @@
     "tips": {
       "same-row": "Satırla ilgili ifadeye dikkat et: bir satır soldan sağa uzanır, duvarların içinden dümdüz geçer.",
       "same-col": "Bir sütun bütün kat planı boyunca yukarıdan aşağıya uzanır. Duvarlar sayılmaz.",
-      "left-of": "\"Daha solda\" bütün kat planı için geçerli: biri daha soldaki bir sütunda durur, oda hangisi olursa olsun.",
-      "above": "\"Kat planında daha yukarıda\", oda hangisi olursa olsun, üst kenara daha yakın demek.",
-      "not-adjacent": "\"Hemen yanında değil\" yalnızca dört komşu kareyi eler. Çapraz, yanında sayılmaz.",
-      "adjacent": "\"Hemen yanında\" sol, sağ, üst ya da alt kare demek. Asla çapraz değil.",
+      "left-of": "“Daha solda” bütün kat planı için geçerli: biri daha soldaki bir sütunda durur, oda hangisi olursa olsun.",
+      "above": "“Kat planında daha yukarıda”, oda hangisi olursa olsun, üst kenara daha yakın demek.",
+      "not-adjacent": "“Hemen yanında değil” yalnızca dört komşu kareyi eler. Çapraz, yanında sayılmaz.",
+      "adjacent": "“Hemen yanında” sol, sağ, üst ya da alt kare demek. Asla çapraz değil.",
       "alone": "Bir odada yalnız olan, herkesi o odadan eler. Odaları elemek için işe yarar.",
       "empty-room": "Rapora göre boş bir oda: orada kimseyi denemene gerek yok.",
-      "pos": "Köşe iki duvara değer, \"duvar kenarında\" bir duvara, \"ortada\" hiçbir duvara.",
+      "pos": "Köşe iki duvara değer, “duvar kenarında” bir duvara, “ortada” hiçbir duvara.",
       "room-pos": "O odada hangi köşe ya da duvar karelerinin hâlâ boş olduğuna bak. Eşyalar çoğu zaman birkaçını kaplar.",
-      "room-with": "\"İçinde bitki olan\" bir odada başka eşyalar da olabilir. Önce bitkiyi bul.",
+      "room-with": "“İçinde bitki olan” bir odada başka eşyalar da olabilir. Önce bitkiyi bul.",
       "next-to": "İfadeye dokun: eşya yanar. Yalnızca onun hemen yanındaki kareler uygun.",
       "room-next": "Oda ve eşya birlikte: çoğu zaman tek bir kare kalır.",
       "diff-room": "Aynı odada değiller: önce hakkında en çok şey bildiğin kişiyi yerleştir.",
       "same-room": "Aynı oda: önce birinin odasını bul, diğerininkini de bilirsin.",
-      "not-room": "\"…değildim\" diyen bir ifade bir odayı eler. Bunu kurbanla ilgili kuralla birleştir.",
+      "not-room": "“…değildim” diyen bir ifade bir odayı eler. Bunu kurbanla ilgili kuralla birleştir.",
       "room": "En açık ifade: önce bu kişiyi yerleştir.",
       "fallback": "En az seçenek bırakan ifadeyle başla."
     },
@@ -1386,7 +1386,7 @@
       "Bölüm I · Durgun Deniz",
       "Kara Martı ayna gibi durgun bir denizde kıpırtısız yatıyor. Kaptan artık cevap vermiyor.",
       "Kara Martı yelkenlerini açıyor. Haritada bir ada var.",
-      "Gemi küçük ve herkes herkesi gördü. \"Hemen yanında\" yanındaki kare demek, asla çapraz değil. Kuzineden başla.",
+      "Gemi küçük ve herkes herkesi gördü. “Hemen yanında” yanındaki kare demek, asla çapraz değil. Kuzineden başla.",
       [
         [
           "Durgun Deniz",
@@ -1482,7 +1482,7 @@
       "Bölüm III · Eve Dönüş",
       "Hazine gemideyken eve dönüş yolculuğu başlıyor. Zengin olmak kimseyi daha dürüst yapmıyor.",
       "Kara Martı limana giriyor. Tayfa azaldı, hazine tam.",
-      "Hazine gemideyken tayfa huzursuzlanıyor. \"Daha solda\" ve \"daha yukarıda\" gibi ifadeler yalnızca odaya değil, bütün kat planına göre geçerli.",
+      "Hazine gemideyken tayfa huzursuzlanıyor. “Daha solda” ve “daha yukarıda” gibi ifadeler yalnızca odaya değil, bütün kat planına göre geçerli.",
       [
         [
           "İlk Nöbet",
@@ -1530,7 +1530,7 @@
       "Bölüm IV · Yeni Kaptan",
       "Dümene Barnaby geçiyor. Tayfa buna karşı. Denizde hiçbir şey uzun süre sessiz kalmaz.",
       "Martı’nın bir kaptanı var. Ne kadar süreceğini kimse bilmiyor.",
-      "Yeni bir kaptan, eski bir tayfa. Böyle küçük bir gemide \"hemen yanında\" diyen ifadeler altın değerinde: her kare önemli.",
+      "Yeni bir kaptan, eski bir tayfa. Böyle küçük bir gemide “hemen yanında” diyen ifadeler altın değerinde: her kare önemli.",
       [
         [
           "Dümen El Değiştiriyor",
@@ -1770,7 +1770,7 @@
       "Bölüm III · Personel",
       "Oteli tanıyan, duvarların arkasındaki koridorları da bilir. Bu bölüm orada başlıyor.",
       "Grand Otel Aurora ışıklarını kısıyor. Bu sefer sonsuza dek.",
-      "Personel duvarların arkasındaki koridorları bilir. Köşeleri ve duvarları düşün: köşe iki duvara değer, \"duvar kenarında\" bir duvara.",
+      "Personel duvarların arkasındaki koridorları bilir. Köşeleri ve duvarları düşün: köşe iki duvara değer, “duvar kenarında” bir duvara.",
       [
         [
           "Servis Asansörü",
@@ -2154,7 +2154,7 @@
       "Bölüm V · Yabancı Kapsül",
       "İzinsiz bir kapsül istasyona kenetleniyor. İçinde kimse yok. Dışarıda ise birden anlatacak çok şeyi olan bir mürettebat.",
       "Kapsül ayrılıp uzağa itiliyor. İçinde ne olduğunu yalnızca mürettebat biliyor.",
-      "Yabancı bir kapsül ve gergin insanlar. \"Daha solda\" ve \"daha yukarıda\" diyen ifadeler tek bir modüle değil, bütün istasyona göre geçerli.",
+      "Yabancı bir kapsül ve gergin insanlar. “Daha solda” ve “daha yukarıda” diyen ifadeler tek bir modüle değil, bütün istasyona göre geçerli.",
       [
         [
           "Boştu, Dediler",
@@ -2250,7 +2250,7 @@
       "Bölüm I · Kapanıştan Sonra",
       "Müze saat beşte kapanıyor. Saat altıda küratör heykellerin arasında yatıyor ve bütün kapılar kilitli.",
       "İlk gece bitti. Müze kapalı kalıyor; sorular ise kapanmıyor.",
-      "Bir müzede çok salon, az insan olur. Hangi salonda olduğunu söyleyenle başla ve vitrinlere dikkat et: \"hemen yanında\" yalnızca dümdüz yanındaki kare demek.",
+      "Bir müzede çok salon, az insan olur. Hangi salonda olduğunu söyleyenle başla ve vitrinlere dikkat et: “hemen yanında” yalnızca dümdüz yanındaki kare demek.",
       [
         [
           "Kapanıştan Sonra",
@@ -2538,7 +2538,7 @@
       "Bölüm I · Kalkış",
       "Gece treni saat sekizde kalkıyor. Saat dokuzda kondüktör yemekli vagonda yatıyor ve tren gün doğana kadar durmuyor.",
       "Tren gece boyunca yol alıyor. Yolcular da.",
-      "Tren uzun ve dar: vagonlar yan yana dizili. \"Daha solda\" ve \"daha yukarıda\" tek bir vagona değil, bütün kat planına göre geçerli.",
+      "Tren uzun ve dar: vagonlar yan yana dizili. “Daha solda” ve “daha yukarıda” tek bir vagona değil, bütün kat planına göre geçerli.",
       [
         [
           "Saat Sekizde Kalkış",
@@ -2586,7 +2586,7 @@
       "Bölüm II · Kar",
       "Tren karda duruyor. İstasyon yok, yardım yok ve fail hâlâ trende.",
       "Kar küreme aracı geliyor. Tren yoluna devam ediyor, bir kompartımanı boş.",
-      "Kara saplanmış bir tren: herkes herkesi gördü. Böyle dar bir trende \"hemen yanında\" altın değerinde: her kare önemli.",
+      "Kara saplanmış bir tren: herkes herkesi gördü. Böyle dar bir trende “hemen yanında” altın değerinde: her kare önemli.",
       [
         [
           "Duruş",
@@ -2826,7 +2826,7 @@
       "Bölüm I · Son Gösteri",
       "Sezonun son gösterisi. Seyirciler gitti, çadır kapanıyor ve Direktör Zano pistte yatıyor.",
       "Çadır ayakta kalıyor. Sanatçılar da, polis işini bitirene kadar.",
-      "Sirk, birçok küçük köşesi olan büyük bir çadırdır. Nerede olduğunu söyleyenle başla; \"hemen yanında\" yalnızca dümdüz yanındaki kare demek, söz konusu top olsa bile.",
+      "Sirk, birçok küçük köşesi olan büyük bir çadırdır. Nerede olduğunu söyleyenle başla; “hemen yanında” yalnızca dümdüz yanındaki kare demek, söz konusu top olsa bile.",
       [
         [
           "Son Gösteri",
@@ -3114,7 +3114,7 @@
       "Bölüm I · Çığ",
       "Bir çığ vadiyi kapatıyor. Yedi misafir, bir soba ve ateşin başında bir daha hiç ısınmayacak bir ev sahibi.",
       "Yol hâlâ kapalı. Misafirler istese de istemese de kalıyor.",
-      "Dağ evi küçük ve sıcak, herkes iç içe. Hangi odada olduğunu söyleyenle başla; sobaya dikkat et: \"hemen yanında\" yalnızca dümdüz yanındaki kare demek.",
+      "Dağ evi küçük ve sıcak, herkes iç içe. Hangi odada olduğunu söyleyenle başla; sobaya dikkat et: “hemen yanında” yalnızca dümdüz yanındaki kare demek.",
       [
         [
           "Çığ",
@@ -3485,10 +3485,10 @@
         "alone": "{s}, başka kimsenin durmadığı bir {rw.in} duruyor."
       },
       "hint": {
-        "wrong": "{s} yanlış yerde. {n} numaralı bulgu diyor ki: “{quote}”",
+        "wrong": "{s} yanlış yerde. {n} numaralı bulgu diyor ki: “{quote}”",
         "two-in-victim-room": "Kurbanın bulunduğu {rw.in} iki şüpheli duruyor. Orada yalnızca katil vardı.",
-        "start.one": "{s} ile başla: geriye yalnızca {n} olası kare kaldı, hepsi {room.in}.",
-        "start.spread": "{s} ile başla: geriye yalnızca {n} olası kare kaldı, {k} farklı {rw.dat} dağılmış."
+        "start.one": "{s} ile başla: {room.in} yalnızca {n} olası kare kaldı, başka yerde yok.",
+        "start.spread": "{s} ile başla: geriye yalnızca {n} olası kare kaldı, {k} farklı {rw.dat} dağılmış."
       },
       "action": {
         "now": " Şu an {room.in} duruyor.",
@@ -3496,8 +3496,8 @@
         "then": " Sonra onu {room.in} bir yere koy.",
         "deduce": "{s} için tek bir kare kaldı: parlayan kare. Onu oraya sürükle.",
         "deduce.in": "{s} için tek bir kare kaldı: {room.in} parlayan kare. Onu oraya sürükle.",
-        "narrow": "{s} hâlâ {n} karede durabilir; bu kareler altın rengiyle parlıyor. Kalemle onlara nokta koy ve tek tek dene: her karede diğer ifadelerin hâlâ tutup tutmadığına bak.",
-        "narrow.in": "{s} hâlâ {room.in} {n} karede durabilir; bu kareler altın rengiyle parlıyor. Kalemle onlara nokta koy ve tek tek dene: her karede diğer ifadelerin hâlâ tutup tutmadığına bak.",
+        "narrow": "{s} hâlâ {n} karede durabilir; bu kareler altın rengiyle parlıyor. Kalemle onlara nokta koy ve tek tek dene: her karede diğer ifadelerin hâlâ tutup tutmadığına bak.",
+        "narrow.in": "{s} hâlâ {room.in} {n} karede durabilir; bu kareler altın rengiyle parlıyor. Kalemle onlara nokta koy ve tek tek dene: her karede diğer ifadelerin hâlâ tutup tutmadığına bak.",
         "done": "Herkes doğru yerde. Kontrol Et düğmesine dokun, sonra {room.in} kimin yalnız durduğunu göster."
       },
       "board": {

@@ -40,7 +40,7 @@ const active = () => document.querySelector('.screen.active').id;
     const quests = [...document.querySelectorAll('#quest-list > *')];
     check(quests.length === 3 && !quests.some(li => DUTCH.test(li.textContent)) && !DUTCH.test(txt('quest-reward')), 'opdrachten Engels: ' + quests.map(l => l.textContent.replace(/\s+/g, ' ').trim()).join(' | ') + ' / ' + txt('quest-reward'));
     const btnFree = document.getElementById('btn-free');
-    check(/Free play/.test(btnFree.textContent) && /Pick the world/.test(btnFree.textContent), 'vaste tekst vertaald (Free play): ' + btnFree.textContent.replace(/\s+/g, ' ').trim());
+    check(/Free play/.test(btnFree.textContent) && /Choose your own world/.test(btnFree.textContent), 'vaste tekst vertaald (Free play): ' + btnFree.textContent.replace(/\s+/g, ' ').trim());
     check(document.getElementById('btn-settings').getAttribute('aria-label') === 'Settings', 'aria-label vertaald');
 
     // ── werelden en winkel ──
