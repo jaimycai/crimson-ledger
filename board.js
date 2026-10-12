@@ -140,9 +140,10 @@ const Board = {
     const diff = DIFFICULTY[difficultyId] || DIFFICULTY.gemiddeld;
     document.getElementById('board-diff-tag').textContent = campaignCase
       ? (campaignCase.chapter === Campaign.ARCHIVE ? `📁 ${campaignCase.title}` : `📖 ${campaignCase.idx + 1}. ${campaignCase.title}`)
-      : this.isWeekly ? `🗓️ Week ${this.weekly.week}` : (isDaily ? '📅 ' : '') + diff.label;
-    const lead = campaignCase ? campaignCase.story + ' ' : this.isWeekly ? this.weekly.title + '. ' : '';
-    document.getElementById('board-casetext').textContent = `${theme.icon} ${lead}${puzzle.caseText}`;
+      : this.isWeekly ? BD_T`🗓️ Week ${this.weekly.week}` : (isDaily ? '📅 ' : '') + diff.label;
+    const L = (typeof I18n !== 'undefined' ? I18n : { joinSentences: (...p) => p.filter(Boolean).join(' '), asSentence: t => (t ? t + '.' : '') });
+    const lead = campaignCase ? campaignCase.story : this.isWeekly ? L.asSentence(this.weekly.title) : '';
+    document.getElementById('board-casetext').textContent = `${theme.icon} ${L.joinSentences(lead, puzzle.caseText)}`;
     const grid = document.getElementById('board-grid');
     grid.classList.remove('solved');
     grid.dataset.floor = theme.floor || 'checker';
@@ -261,7 +262,10 @@ const Board = {
         for (let i = t.indexOf(form); i !== -1 && at === -1; i = t.indexOf(form, i + 1)) if (endsWord(t[i + form.length])) { at = i; len = form.length; }
         if (at !== -1) break;
       }
-      t = at === -1 ? `${t} ${icon}` : t.slice(0, at + len) + icon + t.slice(at + len);
+      if (at === -1) return `${t} ${icon}`;
+      // het laatste woord van de meubelnaam, het icoontje en leestekens erachter breken niet los van elkaar
+      const head = t.slice(0, at + len), word = t.slice(at, at + len).match(/\S+$/)[0], tail = t.slice(at + len).match(/^[^\s\p{L}\p{N}]*/u)[0];
+      t = head.slice(0, head.length - word.length) + `<span class="bclue-tail">${word}${icon}${tail}</span>` + t.slice(at + len + tail.length);
     }
     return t;
   },
@@ -493,6 +497,7 @@ const Board = {
       el.classList.toggle('conflict', conflict.has(k));
       el.classList.toggle('murder-room', !!this.accusing && FloorPlan.roomOf(p.rooms, x, y).id === p.victim.roomId);
     });
+    this.fitNames();
   },
 
   // ── Tik op een cel ────────────────────────────────────────
@@ -851,7 +856,7 @@ const Board = {
     this.skipCeremony(true);
     $('results-icon').hidden = true;
     $('results-stamp').style.borderColor = '';
-    $('results-headline').textContent = this.isTutorial ? BD_T('Goed gedaan!') : BD_T('Zaak Opgelost!');
+    $('results-headline').textContent = this.isTutorial ? BD_T('Goed gedaan!') : BD_T('Zaak opgelost!');
     $('results-verdict').textContent = Grammar.text('board/verdict', p, { s: Grammar.who(m), room: q.id });
     // laatste zaak van een deel: de afsluiting van dat deel
     const chap = this.campaignCase ? Campaign.chapter(this.campaignCase.chapter) : null;
@@ -1043,8 +1048,9 @@ const Board = {
     grid.style.height = `${Math.floor(width / ratio)}px`;
     this.fitLabels(grid);
     this.fitToolLabels();
+    this.fitNames();
     // eerst gemeten met een reserveletter? dan opnieuw zodra de echte letters er zijn
-    if (typeof document !== 'undefined' && document.fonts && document.fonts.status !== 'loaded') document.fonts.ready.then(() => { this.fitLabels(grid); this.fitToolLabels(); });
+    if (typeof document !== 'undefined' && document.fonts && document.fonts.status !== 'loaded') document.fonts.ready.then(() => { this.fitLabels(grid); this.fitToolLabels(); this.fitNames(); });
   },
   // De labels onder de gereedschapsknoppen zijn klein; in langere talen ("Подсказка") worden ze kleiner
   // in plaats van uit hun knop te lopen, tot 7 px (alleen op het kleinste scherm).
@@ -1056,6 +1062,24 @@ const Board = {
       if (!box || !el.offsetWidth) return;
       let fs = parseFloat(getComputedStyle(el).fontSize);
       while (el.scrollWidth > el.clientWidth + 1 && fs > 7) { fs -= 0.25; el.style.fontSize = `${fs}px`; }
+    });
+  },
+  // Een naamkaartje op het bord toont de korte naam liefst helemaal: eerst mag het een kwart vakje breder
+  // worden dan het vakje, dan wordt de letter kleiner (tot 6 px); pas daarna een beletselteken.
+  fitNames() {
+    if (typeof getComputedStyle === 'undefined' || typeof document === 'undefined') return;
+    const cut = el => el.scrollWidth > el.clientWidth;   // ook een halve pixel te veel geeft al een beletselteken
+    const grid = document.getElementById('board-grid'), g = grid && grid.getBoundingClientRect();
+    document.querySelectorAll('#board-grid .bname').forEach(el => {
+      el.style.fontSize = ''; el.style.maxWidth = ''; el.style.left = ''; el.style.right = ''; el.style.transform = '';
+      if (!el.offsetWidth || !cut(el)) return;
+      el.style.maxWidth = '125%';
+      let fs = parseFloat(getComputedStyle(el).fontSize);
+      while (cut(el) && fs > 6.1) { fs = Math.max(6, fs - 0.25); el.style.fontSize = `${fs}px`; }
+      // aan de rand van het bord niet over de rand heen: dan tegen de kant van het vakje aan
+      const r = el.getBoundingClientRect();
+      if (g && r.left < g.left) { el.style.left = '0'; el.style.transform = 'none'; }
+      else if (g && r.right > g.right) { el.style.left = 'auto'; el.style.right = '0'; el.style.transform = 'none'; }
     });
   },
   // Een kamernaam mag niet breder worden dan de onderste rij van zijn kamer, anders loopt hij over
@@ -1071,6 +1095,8 @@ const Board = {
       el.style.fontSize = `${Math.max(7, parseFloat(getComputedStyle(el).fontSize) * 0.85)}px`;
       if (el.offsetWidth <= max) return;
       el.classList.add('wrap'); el.style.maxWidth = `${Math.max(max, 44)}px`;
+      // meer dan drie regels = een woord dat letter voor letter breekt: dan op één regel inkorten
+      if (el.offsetHeight > parseFloat(getComputedStyle(el).fontSize) * 3.6) { el.classList.remove('wrap'); el.classList.add('clip'); el.style.maxWidth = `${Math.max(max, 28)}px`; }
     });
     // Lopen twee namen dan nog over elkaar (een smalle kamer van één rij hoog), dan wordt de naam
     // van de smalste kamer op één regel ingekort met een beletselteken.

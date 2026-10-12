@@ -38,7 +38,7 @@ const App = {
   init() {
     if (typeof I18n !== 'undefined') {
       I18n.init();
-      if (I18n.lang !== 'nl') { const cl = document.querySelector('.menu-classic'); if (cl) cl.hidden = true; }   // het klassieke raster is alleen Nederlands
+      if (I18n.lang !== 'nl') document.querySelectorAll('.menu-classic, .how-steps-classic').forEach(el => { el.hidden = true; });   // het klassieke raster is alleen Nederlands
     }
     if (typeof Icons !== 'undefined') { Icons.fill(); Icons.watch(); }
     this.bootSplash();
@@ -695,7 +695,7 @@ const App = {
     document.getElementById('awards-vitrine').hidden = tab !== 'vitrine';
   },
   renderAwards() {
-    const have = Progress.medals(), n = Object.keys(have).length;
+    const have = Progress.medals(), n = Progress.MEDALS.filter(m => have[m.id]).length;   // alleen bestaande onderscheidingen tellen
     document.getElementById('awards-points').textContent = AP_T`🪙 ${Progress.points()} punten`;
     document.getElementById('medal-count').textContent = n;
     document.getElementById('awards-medals').innerHTML =
@@ -789,7 +789,7 @@ const App = {
     document.getElementById('btn-reset-progress').addEventListener('click', e => {
       if (!this.resetArmed) { this.resetArmed = true; e.target.textContent = AP_T('Zeker? Tik nogmaals'); return; }
       this.resetProgress();
-      e.target.textContent = 'Gewist';
+      e.target.textContent = AP_T('Gewist');
       this.resetArmed = false;
     });
     // dagelijkse herinnering: alleen tonen als de app lokale meldingen heeft (iOS)

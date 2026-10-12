@@ -68,7 +68,7 @@ function seed(lang) {
     const d = new Date(); const log = []; for (let i = 1; i <= 5; i++) { const x = new Date(d); x.setDate(d.getDate() - i); log.push(x.toISOString().slice(0, 10)); }
     localStorage.setItem('crimson-daily-log', JSON.stringify(log));
     const today = new Date().toISOString().slice(0, 10);
-    localStorage.setItem('crimson-medals', JSON.stringify({ first: today, streak3: today, fast: today, nohint: today, part1: today }));
+    localStorage.setItem('crimson-medals', JSON.stringify({ 'eerste-zaak': today, 'drie-dagen': today, snel: today, deel: today }));
     localStorage.setItem('crimson-newclue-seen', JSON.stringify(['room', 'not-room', 'room-pos', 'near', 'row', 'col', 'same-room', 'not-same-room', 'left-of', 'above', 'furniture', 'alone', 'corner', 'wall', 'middle', 'next-to']));
   }
 }

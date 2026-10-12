@@ -49,6 +49,10 @@ const I18n = {
   info(code) { return this.LANGS.find(l => l[0] === (code || this.lang)) || this.LANGS[0]; },
   dir() { return this.info()[2]; },
   locale() { return this.info()[3]; },
+  // Chinees en Japans zetten geen spatie tussen zinnen, en sluiten een zin af met 。
+  cjk() { return this.lang === 'zh' || this.lang === 'ja'; },
+  joinSentences(...parts) { const list = parts.filter(Boolean); return list.join(this.cjk() ? '' : ' '); },
+  asSentence(t) { return t ? t + (this.cjk() ? '。' : '.') : ''; },
   read() { try { return localStorage.getItem(this.KEY); } catch (e) { return null; } },
   detect() {
     const saved = this.read();

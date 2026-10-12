@@ -1,0 +1,135 @@
+{
+ "NLD": {
+  "currency": "EUR",
+  "nl.crimsonledger.app.pass": 4.99,
+  "nl.crimsonledger.app.hints10": 0.99,
+  "nl.crimsonledger.app.cosmetics": 1.99,
+  "nl.crimsonledger.app.world.circus": 1.99
+ },
+ "BRA": {
+  "currency": "BRL",
+  "nl.crimsonledger.app.pass": 24.9,
+  "nl.crimsonledger.app.hints10": 6.9,
+  "nl.crimsonledger.app.cosmetics": 12.9,
+  "nl.crimsonledger.app.world.circus": 12.9
+ },
+ "DEU": {
+  "currency": "EUR",
+  "nl.crimsonledger.app.pass": 4.99,
+  "nl.crimsonledger.app.hints10": 0.99,
+  "nl.crimsonledger.app.cosmetics": 1.99,
+  "nl.crimsonledger.app.world.circus": 1.99
+ },
+ "ESP": {
+  "currency": "EUR",
+  "nl.crimsonledger.app.pass": 4.99,
+  "nl.crimsonledger.app.hints10": 0.99,
+  "nl.crimsonledger.app.cosmetics": 1.99,
+  "nl.crimsonledger.app.world.circus": 1.99
+ },
+ "FRA": {
+  "currency": "EUR",
+  "nl.crimsonledger.app.pass": 4.99,
+  "nl.crimsonledger.app.hints10": 0.99,
+  "nl.crimsonledger.app.cosmetics": 1.99,
+  "nl.crimsonledger.app.world.circus": 1.99
+ },
+ "GBR": {
+  "currency": "GBP",
+  "nl.crimsonledger.app.pass": 3.99,
+  "nl.crimsonledger.app.hints10": 0.99,
+  "nl.crimsonledger.app.cosmetics": 1.99,
+  "nl.crimsonledger.app.world.circus": 1.99
+ },
+ "IDN": {
+  "currency": "IDR",
+  "nl.crimsonledger.app.pass": 79000,
+  "nl.crimsonledger.app.hints10": 19000,
+  "nl.crimsonledger.app.cosmetics": 39000,
+  "nl.crimsonledger.app.world.circus": 39000
+ },
+ "IND": {
+  "currency": "INR",
+  "nl.crimsonledger.app.pass": 399,
+  "nl.crimsonledger.app.hints10": 99,
+  "nl.crimsonledger.app.cosmetics": 199,
+  "nl.crimsonledger.app.world.circus": 199
+ },
+ "ITA": {
+  "currency": "EUR",
+  "nl.crimsonledger.app.pass": 4.99,
+  "nl.crimsonledger.app.hints10": 0.99,
+  "nl.crimsonledger.app.cosmetics": 1.99,
+  "nl.crimsonledger.app.world.circus": 1.99
+ },
+ "JPN": {
+  "currency": "JPY",
+  "nl.crimsonledger.app.pass": 600,
+  "nl.crimsonledger.app.hints10": 150,
+  "nl.crimsonledger.app.cosmetics": 300,
+  "nl.crimsonledger.app.world.circus": 300
+ },
+ "KOR": {
+  "currency": "KRW",
+  "nl.crimsonledger.app.pass": 6600,
+  "nl.crimsonledger.app.hints10": 1100,
+  "nl.crimsonledger.app.cosmetics": 3300,
+  "nl.crimsonledger.app.world.circus": 3300
+ },
+ "MEX": {
+  "currency": "MXN",
+  "nl.crimsonledger.app.pass": 89,
+  "nl.crimsonledger.app.hints10": 19,
+  "nl.crimsonledger.app.cosmetics": 39,
+  "nl.crimsonledger.app.world.circus": 39
+ },
+ "PAK": {
+  "currency": "PKR",
+  "nl.crimsonledger.app.pass": 1100,
+  "nl.crimsonledger.app.hints10": 300,
+  "nl.crimsonledger.app.cosmetics": 500,
+  "nl.crimsonledger.app.world.circus": 500
+ },
+ "RUS": {
+  "currency": "RUB",
+  "nl.crimsonledger.app.pass": 349,
+  "nl.crimsonledger.app.hints10": 99,
+  "nl.crimsonledger.app.cosmetics": 199,
+  "nl.crimsonledger.app.world.circus": 199
+ },
+ "SAU": {
+  "currency": "SAR",
+  "nl.crimsonledger.app.pass": 17.99,
+  "nl.crimsonledger.app.hints10": 4.99,
+  "nl.crimsonledger.app.cosmetics": 9.99,
+  "nl.crimsonledger.app.world.circus": 9.99
+ },
+ "SGP": {
+  "currency": "SGD",
+  "nl.crimsonledger.app.pass": 5.98,
+  "nl.crimsonledger.app.hints10": 0.98,
+  "nl.crimsonledger.app.cosmetics": 2.98,
+  "nl.crimsonledger.app.world.circus": 2.98
+ },
+ "TUR": {
+  "currency": "TRY",
+  "nl.crimsonledger.app.pass": 199.99,
+  "nl.crimsonledger.app.hints10": 49.99,
+  "nl.crimsonledger.app.cosmetics": 99.99,
+  "nl.crimsonledger.app.world.circus": 99.99
+ },
+ "USA": {
+  "currency": "USD",
+  "nl.crimsonledger.app.pass": 3.99,
+  "nl.crimsonledger.app.hints10": 0.99,
+  "nl.crimsonledger.app.cosmetics": 1.99,
+  "nl.crimsonledger.app.world.circus": 1.99
+ },
+ "VNM": {
+  "currency": "VND",
+  "nl.crimsonledger.app.pass": 119000,
+  "nl.crimsonledger.app.hints10": 29000,
+  "nl.crimsonledger.app.cosmetics": 59000,
+  "nl.crimsonledger.app.world.circus": 59000
+ }
+}

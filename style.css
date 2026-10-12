@@ -1920,7 +1920,7 @@ input, textarea { -webkit-user-select: text; user-select: text; }
 .awards-tab.active { background: var(--bg-card); border-color: var(--border); box-shadow: var(--shadow-sm); color: var(--text-primary); }
 .awards-tab b { display: inline-flex; min-width: 20px; height: 20px; padding: 0 6px; border-radius: var(--radius-full); background: var(--accent); color: #fff; font-size: 0.7rem; align-items: center; justify-content: center; margin-left: 4px; }
 .awards-body { flex: 1; min-height: 0; overflow-y: auto; -webkit-overflow-scrolling: touch; padding: 8px 14px calc(24px + var(--sab)); display: flex; flex-direction: column; gap: 10px; }
-.medals-head { display: flex; justify-content: space-between; align-items: baseline; }
+.medals-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 2px 10px; }
 .medals-head h3 { font-size: 1.3rem; }
 .medals-head span { font-size: 0.78rem; color: var(--text-light); }
 .medal { display: flex; align-items: center; gap: 12px; padding: 12px 14px; border-radius: 14px; border: 1.5px solid var(--border-light); background: var(--bg-secondary); opacity: 0.75; }
@@ -1932,10 +1932,10 @@ input, textarea { -webkit-user-select: text; user-select: text; }
 .medal-sub { font-size: 0.76rem; color: var(--text-light); }
 .shelf-world h4 { font-family: var(--font-heading); font-size: 1rem; margin-bottom: 6px; display: flex; justify-content: space-between; align-items: baseline; }
 .shelf-world h4 small { font-size: 0.72rem; color: var(--text-light); font-weight: 400; font-family: var(--font-body); }
-.shelf { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px 4px; padding: 10px 8px 12px; background: #5A3E2B; border-radius: 12px; box-shadow: inset 0 -6px 0 #3E2A1D; }
+.shelf { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px 4px; padding: 10px 8px 12px; background: #5A3E2B; border-radius: 12px; box-shadow: inset 0 -6px 0 #3E2A1D; }
 .ev { display: flex; flex-direction: column; align-items: center; gap: 3px; }
 .ev i { font-style: normal; font-size: 1.5rem; line-height: 1; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.14); border-radius: 8px; }
-.ev b { font-size: 0.6rem; color: #F3EDE3; font-weight: 600; text-align: center; line-height: 1.1; }
+.ev b { font-size: 0.6rem; color: #F3EDE3; font-weight: 600; text-align: center; line-height: 1.1; -webkit-hyphens: auto; hyphens: auto; overflow-wrap: break-word; max-width: 100%; }
 .ev.miss i { filter: grayscale(1) brightness(0.4); opacity: 0.5; }
 .ev.miss b { color: rgba(243, 237, 227, 0.45); }
 .shelf-bar { height: 4px; background: var(--border-light); border-radius: 2px; margin: 6px 4px 0; overflow: hidden; }
@@ -2007,7 +2007,7 @@ input, textarea { -webkit-user-select: text; user-select: text; }
 .bclue-mentor { background: #F3EDE3; }
 .bclue-mentor img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .bclue-body { flex: 1; min-width: 0; }
-.bclue-head { display: flex; align-items: center; justify-content: space-between; gap: 6px; }
+.bclue-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 2px 6px; }
 .bclue-name { font-size: 0.9rem; }
 .bclue-state { font-size: 0.64rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; white-space: nowrap; }
 .bclue-state.ok { color: var(--success); }
@@ -2288,7 +2288,7 @@ input, textarea { -webkit-user-select: text; user-select: text; }
 .mmini.open { background: var(--gold); border-color: #fff; animation: node-pulse 1.6s ease-in-out infinite; }
 .mmini.done { background: #F3F8F1; border-color: #7DAE7A; }
 .mchest { padding: 3px; }
-.mchest .chest-svg { width: 100%; height: 100%; display: block; }
+.mchest .chest-svg { width: 100%; height: 100%; display: block; overflow: visible; }
 .mchest.locked .chest-svg { filter: grayscale(1); opacity: 0.6; }
 .mchest.open { border-color: var(--gold); box-shadow: 0 0 0 5px rgba(184, 149, 92, 0.35), var(--shadow-md); animation: chest-shake 1.6s ease-in-out infinite; }
 .mchest.done { background: #FFF6D6; }
@@ -2305,7 +2305,7 @@ input, textarea { -webkit-user-select: text; user-select: text; }
 .mini-stage { display: flex; justify-content: center; }
 .mini-grid { width: min(100%, 320px); height: auto; }
 .mini-grid .bcell { cursor: default; }
-.mini-q { font-size: 0.95rem; font-weight: 600; text-align: center; color: var(--text-primary); line-height: 1.4; min-height: 1.4em; }
+.mini-q { flex: none; font-size: 0.95rem; font-weight: 600; text-align: center; color: var(--text-primary); line-height: 1.4; min-height: 1.4em; }
 .mini-q b { color: var(--accent); }
 .mini-options { display: flex; flex-direction: column; gap: 8px; }
 .mini-card { text-align: left; width: 100%; font: inherit; cursor: pointer; min-height: 0; padding: 9px 10px 9px 8px; -webkit-tap-highlight-color: transparent; }
@@ -2358,7 +2358,7 @@ input, textarea { -webkit-user-select: text; user-select: text; }
 .chest-title { font-size: 1.55rem; margin: 8px 0 2px; }
 .chest-sub { font-size: 0.86rem; color: var(--text-secondary); margin-bottom: 8px; line-height: 1.4; }
 .chest { position: relative; width: 156px; height: 134px; margin: 2px auto 6px; border: 0; background: none; cursor: pointer; animation: chest-shake 1.8s ease-in-out infinite; -webkit-tap-highlight-color: transparent; }
-.chest .chest-svg { position: relative; width: 100%; height: 100%; display: block; filter: drop-shadow(0 6px 6px rgba(0, 0, 0, 0.2)); }
+.chest .chest-svg { position: relative; width: 100%; height: 100%; display: block; overflow: visible; filter: drop-shadow(0 6px 6px rgba(0, 0, 0, 0.2)); }
 .chest-card.opened .chest { animation: none; }
 .chest-card.opened .chest-lid { transform: rotate(-40deg); }
 .chest-glow { position: absolute; inset: 10% 10% 25%; border-radius: 50%; background: radial-gradient(circle, rgba(255, 222, 140, 0.95), rgba(255, 222, 140, 0)); opacity: 0; transform: scale(0.4); transition: opacity 0.4s, transform 0.6s var(--ease-spring); pointer-events: none; }
@@ -2480,7 +2480,7 @@ input, textarea { -webkit-user-select: text; user-select: text; }
 
 /* ── Taalkeuze ─────────────────────────────────────────────── */
 .lang-select {
-  appearance: none; -webkit-appearance: none; max-width: 60%; min-height: 40px; padding: 8px 30px 8px 12px;
+  appearance: none; -webkit-appearance: none; max-width: 66%; min-width: 0; text-overflow: ellipsis; min-height: 40px; padding: 8px 30px 8px 12px;
   font: inherit; font-size: 0.85rem; font-weight: 600; color: var(--accent);
   background: var(--accent-subtle) no-repeat right 10px center / 10px 6px
     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%23999' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
@@ -2493,3 +2493,34 @@ input, textarea { -webkit-user-select: text; user-select: text; }
 [dir="rtl"] .board-grid { direction: ltr; }
 /* pijlen die niet vanzelf spiegelen (‹ › doen dat wel) */
 [dir="rtl"] .back-btn { transform: scaleX(-1); }
+
+/* ── Release 1.2: wat de taalronde in alle talen vond ──────────────────── */
+/* knoppen en keuzelijsten nemen de letter van de taal over (anders Arial in het Hindi) */
+button, select, input, textarea { font-family: inherit; }
+/* bladerpijlen en de pijl op de navigatiekaarten in de systeemletter (in Nastaliq lijken ze op haakjes);
+   staat hier, na .deck-arrow { font: inherit }, zodat deze regel wint */
+.deck-arrow, .nav-chev { font-family: -apple-system, system-ui, sans-serif; }
+/* Urdu (Nastaliq) is hoog: koppen en tweeregelige paren krijgen ruimte, en de kop bovenin een scrollvak
+   wordt niet afgesneden ("قتل کس نے کیا؟") */
+:root:lang(ur) :is(h1, h2, h3, .home-card-title, .medal-title, .medal-sub, .store-row b, .store-row small, .pass-card h3,
+  .nav-title, .nav-sub, .accuse-name, .accuse-room, .settings-col small, .quest-text, .results-next-story, .chest-sub) { line-height: 1.75; }
+:root:lang(ur) .accuse-title { padding-top: 0.25em; }
+/* Koreaans breekt tussen woorden, niet midden in een woord; Japans en Chinees nooit vóór ー of leestekens */
+:root:lang(ko) body { word-break: keep-all; overflow-wrap: break-word; }
+:root:is(:lang(ja), :lang(zh)) body { line-break: strict; }
+/* naamkaartje op het bord: van rechts naar links in het Arabisch en Urdu, zodat het begin van de naam blijft staan */
+:root[dir="rtl"] .bname { direction: rtl; }
+/* sterren en hun betekenis blijven bij elkaar in de legenda van de kaart */
+.map-legend .nw { white-space: nowrap; }
+/* het meubel-icoontje en de punt erna blijven bij het laatste woord */
+.bclue-tail { white-space: nowrap; }
+/* de koopknop breekt niet tussen valuta en bedrag */
+#btn-buy-pass { white-space: nowrap; }
+/* verborgen meldingen boven het scherm laten geen grijze schaduwrand achter */
+.medal-toast:not(.show), .clue-toast:not(.show) { box-shadow: none; }
+.settings-row label[for="lang-select"] { white-space: nowrap; }
+
+/* portretlijsten uit de winkel: de lijst om elk rond portret van een verdachte (plus de rang en de stempel hierboven) */
+:root[data-frame="goud"] :is(.sus-ava, .bclue-ava, .accuse-ava, .accuse-ava-sm, .results-solution-ava, .part-ava) { border-color: #D4A64A; box-shadow: 0 0 0 1.5px #D4A64A; }
+:root[data-frame="zilver"] :is(.sus-ava, .bclue-ava, .accuse-ava, .accuse-ava-sm, .results-solution-ava, .part-ava) { border-color: #A9B2BC; box-shadow: 0 0 0 1.5px #A9B2BC; }
+:root[data-frame="crimson"] :is(.sus-ava, .bclue-ava, .accuse-ava, .accuse-ava-sm, .results-solution-ava, .part-ava) { border-color: #8B2E1C; box-shadow: 0 0 0 1.5px #8B2E1C; }

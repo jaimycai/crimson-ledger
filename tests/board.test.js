@@ -228,7 +228,7 @@ const active = () => document.querySelector('.screen.active').id;
     check(react.classList.contains('right') && react.textContent.includes(p.suspects[p.murderer].label) && !Board.solved, 'de dader bekent, resultaat volgt even later: ' + react.textContent.trim());
     await sleep(1100);
     check(Board.solved && active() === 'screen-results', 'juiste moordenaar → resultaatscherm');
-    check(document.getElementById('results-headline').textContent === 'Zaak Opgelost!', 'kop');
+    check(document.getElementById('results-headline').textContent === 'Zaak opgelost!', 'kop');
     // ceremonie: stempel, sterren, score, rang, opmerking van Van Dam
     check(!document.getElementById('results-panel').hidden && document.querySelectorAll('#score-rows .score-row').length === 4 && /Basis/.test(document.getElementById('score-rows').textContent), 'scorepaneel met vier regels');
     check(Board.cerTimers.length > 0, 'ceremonie loopt');

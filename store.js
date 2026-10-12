@@ -130,13 +130,17 @@ const Store = {
       return map;
     } catch (e) { return this.json('crimson-store-prices', {}); }
   },
+  // De prijs zoals de App Store hem geeft, met een harde spatie zodat valuta en bedrag nooit uit elkaar breken.
+  // Zonder App Store (web, simulator) de vaste europrijs in de schrijfwijze van de taal.
   price(productId) {
     const map = this.json('crimson-store-prices', {});
-    if (map[productId]) return map[productId];
-    if (productId === this.IDS.pass) return this.PRICES.pass;
-    if (productId === this.IDS.hints) return this.PRICES.hints;
-    if (productId === this.IDS.cosmetics) return this.PRICES.cosmetics;
-    return this.PRICES.world;
+    const nb = s => String(s).replace(/ /g, '\u00a0');
+    if (map[productId]) return nb(map[productId]);
+    const p = productId === this.IDS.pass ? this.PRICES.pass : productId === this.IDS.hints ? this.PRICES.hints : productId === this.IDS.cosmetics ? this.PRICES.cosmetics : this.PRICES.world;
+    try {
+      if (typeof I18n !== 'undefined' && I18n.lang !== 'nl') return nb(new Intl.NumberFormat(I18n.locale(), { style: 'currency', currency: 'EUR' }).format(parseFloat(p.replace(/[^0-9,]/g, '').replace(',', '.'))));
+    } catch (e) { /* oude schrijfwijze */ }
+    return nb(p);
   },
   // koopt één product; geeft { ok, state } terug
   async buy(productId) {

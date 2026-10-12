@@ -56,6 +56,23 @@ async function settle(page) {
   });
 }
 
+// De winkel toont de echte App Store-prijzen van de hoofdmarkt van elke taal (store/metadata/prices.json, uit
+// store/asc-prices.js), in de schrijfwijze van die markt en met westerse cijfers zoals de app.
+const MARKET = { nl: ['NLD', 'nl-NL'], en: ['USA', 'en-US'], de: ['DEU', 'de-DE'], es: ['ESP', 'es-ES'], fr: ['FRA', 'fr-FR'],
+  it: ['ITA', 'it-IT'], pt: ['BRA', 'pt-BR'], ru: ['RUS', 'ru-RU'], tr: ['TUR', 'tr-TR'], id: ['IDN', 'id-ID'], vi: ['VNM', 'vi-VN'],
+  ar: ['SAU', 'ar-SA'], ur: ['PAK', 'ur-PK'], hi: ['IND', 'hi-IN'], mr: ['IND', 'mr-IN'], bn: ['IND', 'bn-IN'], te: ['IND', 'te-IN'],
+  zh: ['SGP', 'zh-SG'], ja: ['JPN', 'ja-JP'], ko: ['KOR', 'ko-KR'] };
+function pricesFor(lang) {
+  const file = path.join(__dirname, 'metadata', 'prices.json');
+  if (!fs.existsSync(file) || !MARKET[lang]) return {};
+  const [terr, locale] = MARKET[lang], p = JSON.parse(fs.readFileSync(file, 'utf8'))[terr];
+  if (!p) return {};
+  const fmt = v => new Intl.NumberFormat(locale + '-u-nu-latn', { style: 'currency', currency: p.currency, minimumFractionDigits: Number.isInteger(v) ? 0 : 2, maximumFractionDigits: Number.isInteger(v) ? 0 : 2 }).format(v);
+  const out = {}, A = 'nl.crimsonledger.app';
+  for (const [id, v] of Object.entries(p)) if (id !== 'currency') out[id] = p.currency === 'SGD' ? fmt(v).replace('$', 'S$') : fmt(v);
+  for (const w of ['hotel', 'ruimte', 'museum', 'trein', 'circus', 'skihut']) out[`${A}.world.${w}`] = out[`${A}.world.circus`];
+  return out;
+}
 async function run(browser, lang) {
   const OUT = outDir(lang);
   fs.mkdirSync(OUT, { recursive: true });
@@ -70,8 +87,9 @@ async function run(browser, lang) {
   page.on('request', r => (r.url().startsWith(BASE + '/') || r.url().startsWith('data:') || r.url().startsWith('blob:')) ? r.continue() : r.abort('blockedbyclient'));
   page.on('pageerror', e => console.log(lang, 'PAGEERROR', e.message));
   page.on('console', m => { if (m.type() === 'error') console.log(lang, 'CONSOLE', m.text()); });
-  await page.evaluateOnNewDocument(lang => {
+  await page.evaluateOnNewDocument((lang, prices) => {
     localStorage.setItem('crimson-lang', lang);
+    localStorage.setItem('crimson-store-prices', JSON.stringify(prices));
     localStorage.setItem('crimson-board-tutorial-done', '1'); localStorage.setItem('crimson-board-tip-seen', '1');
     localStorage.setItem('crimson-store-mock', '1');
     localStorage.setItem('crimson-board-stats', JSON.stringify({ solved: 21, clean: 9, best: 154 }));
@@ -83,9 +101,9 @@ async function run(browser, lang) {
     const d = new Date(); const log = []; for (let i = 1; i <= 5; i++) { const x = new Date(d); x.setDate(d.getDate() - i); log.push(x.toISOString().slice(0, 10)); }
     localStorage.setItem('crimson-daily-log', JSON.stringify(log));
     const today = new Date().toISOString().slice(0, 10);
-    localStorage.setItem('crimson-medals', JSON.stringify({ first: today, streak3: today, fast: today, nohint: today, part1: today }));
+    localStorage.setItem('crimson-medals', JSON.stringify({ 'eerste-zaak': today, 'drie-dagen': today, snel: today, deel: today }));   // past bij de voortgang hierboven
     localStorage.setItem('crimson-newclue-seen', JSON.stringify(['room', 'not-room', 'room-pos', 'near', 'row', 'col', 'same-room', 'not-same-room', 'left-of', 'above', 'furniture', 'alone', 'corner', 'wall', 'middle', 'next-to']));
-  }, lang);
+  }, lang, pricesFor(lang));
   await page.goto(`${BASE}/index.html`, { waitUntil: 'networkidle0' });
   const got = await page.evaluate(() => document.documentElement.lang);
   if (got !== lang) throw new Error(`${lang}: de app draait in "${got}" (taalbestand niet geladen?)`);

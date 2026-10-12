@@ -44,7 +44,8 @@ const Mentor = {
   briefing(puzzle, c, chapter) {
     const part = chapter ? chapter.title.split(' · ')[0] : null;
     const sub = c.chapter === 'archief' ? MT_T`Archief · ${c.title}` : MT_T`${part} · Zaak ${c.idx + 1}: ${c.title}`;
-    return { sub, text: `${c.story} ${this.tipFor(puzzle)}` };
+    const tip = this.tipFor(puzzle);
+    return { sub, text: typeof I18n !== 'undefined' ? I18n.joinSentences(c.story, tip) : `${c.story} ${tip}` };
   },
 
   // Opmerking op het resultaatscherm.
@@ -118,8 +119,11 @@ const Mentor = {
       const where = cur ? G.text('action/now', p, { s, room: cur.id }) : '';
       if (h.reason === 'victim-room') return G.text('action/two-in-victim-room', p, { room: vroom });
       const c = h.clues.length ? p.clues[h.clues[0]] : null;
-      const target = c && c.room !== undefined && c.kind !== 'not-room' && c.kind !== 'empty-room' ? c.room : undefined;
-      return MT_T`Sleep ${name} van het bord af.${where}${target !== undefined ? G.text('action/then', p, { s, room: target }) : MT_T(' Lees de verklaring hierboven nog eens en probeer een vakje dat erbij past.')}`;
+      let target = c && c.room !== undefined && c.kind !== 'not-room' && c.kind !== 'empty-room' ? c.room : undefined;
+      // staat de verdachte al in de goede kamer maar op het verkeerde vakje, dan niet 'nu in X, zet hem daarna in X'
+      const sameRoom = target !== undefined && cur && cur.id === target;
+      if (sameRoom) target = undefined;
+      return MT_T`Sleep ${name} van het bord af.${sameRoom ? '' : where}${target !== undefined ? G.text('action/then', p, { s, room: target }) : MT_T(' Lees de verklaring hierboven nog eens en probeer een vakje dat erbij past.')}`;
     }
     if (h.type === 'deduce') {
       const q = h.cells[0] ? roomOf(h.cells[0]) : null;
