@@ -111,6 +111,10 @@ async function metadata(v, file) {
     if (have.has(locale) || !t.description) continue;
     const attributes = { locale };
     for (const k of ['description', 'keywords', 'promotionalText', 'whatsNew', 'supportUrl', 'marketingUrl']) if (t[k] !== undefined) attributes[k] = t[k];
+    // Apple refuses to submit a version whose localizations lack a support URL: take it from an existing one
+    const known = locs.data.find(l => l.attributes.supportUrl);
+    if (known && !attributes.supportUrl) attributes.supportUrl = known.attributes.supportUrl;
+    if (known && known.attributes.marketingUrl && !attributes.marketingUrl) attributes.marketingUrl = known.attributes.marketingUrl;
     const ok = await api('POST', '/v1/appStoreVersionLocalizations', { data: { type: 'appStoreVersionLocalizations', attributes, relationships: { appStoreVersion: { data: { type: 'appStoreVersions', id: found.v.id } } } } });
     console.log(locale, 'new store localization', ok ? 'created' : 'failed');
   }
