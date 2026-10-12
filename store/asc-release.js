@@ -42,7 +42,7 @@ async function prepare(v, buildNumber, notesFile) {
   console.log('version', v, found.v.attributes.appStoreState);
   if (notesFile) {
     const notes = JSON.parse(fs.readFileSync(notesFile, 'utf8'));
-    const locs = await api('GET', `/v1/appStoreVersions/${found.v.id}/appStoreVersionLocalizations`);
+    const locs = await api('GET', `/v1/appStoreVersions/${found.v.id}/appStoreVersionLocalizations?limit=50`);
     for (const l of locs.data) {
       const n = notes[l.attributes.locale];
       const whatsNew = n && typeof n === 'object' ? n.whatsNew : n;
@@ -96,7 +96,7 @@ async function metadata(v, file) {
   const found = await version(v);
   if (!found) return console.log('no version', v);
   console.log('version', v, found.v.attributes.appStoreState);
-  const locs = await api('GET', `/v1/appStoreVersions/${found.v.id}/appStoreVersionLocalizations`);
+  const locs = await api('GET', `/v1/appStoreVersions/${found.v.id}/appStoreVersionLocalizations?limit=50`);
   for (const l of locs.data) {
     const t = texts[l.attributes.locale]; if (!t) continue;
     const attributes = {};
@@ -115,11 +115,11 @@ async function metadata(v, file) {
     console.log(locale, 'new store localization', ok ? 'created' : 'failed');
   }
   if (!Object.values(texts).some(t => t.name || t.subtitle)) return;
-  const infos = await api('GET', `/v1/apps/${APP}/appInfos?include=appInfoLocalizations`);
+  const infos = await api('GET', `/v1/apps/${APP}/appInfos`);
   const editable = infos.data.find(i => (i.attributes.appStoreState || i.attributes.state) !== 'READY_FOR_SALE');
   if (!editable) return console.log('name/subtitle: no App Information being edited; create the new version first');
-  const ids = editable.relationships.appInfoLocalizations.data.map(d => d.id);
-  const infoLocs = (infos.included || []).filter(i => ids.includes(i.id));
+  // eigen lijst opvragen: een include geeft er maar tien mee
+  const infoLocs = ((await api('GET', `/v1/appInfos/${editable.id}/appInfoLocalizations?limit=50`)) || { data: [] }).data;
   for (const l of infoLocs) {
     const t = texts[l.attributes.locale]; if (!t) continue;
     const attributes = {}; if (t.name) attributes.name = t.name; if (t.subtitle) attributes.subtitle = t.subtitle;

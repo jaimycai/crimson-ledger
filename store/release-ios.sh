@@ -8,6 +8,7 @@
 # rejects the original .p8 (it has an extra line after the END marker), so it uses the clean copy in ~/.crimson/signing.
 # Nothing secret is in this file: the repository is public.
 set -euo pipefail
+export LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8   # CocoaPods (pod install inside cap sync) needs UTF-8
 cd "$(dirname "$0")/.."
 KID=$(grep KEY_ID ~/.appstoreconnect/config.txt | cut -d= -f2 | tr -d ' ')
 ISS=$(grep ISSUER_ID ~/.appstoreconnect/config.txt | cut -d= -f2 | tr -d ' ')
