@@ -1,12 +1,15 @@
 // Release an iOS version through App Store Connect.
 //   node store/asc-release.js status
-//   node store/asc-release.js prepare <version> <build> [notes.json]   create the version, set "What's New", attach the build
+//   node store/asc-release.js prepare <version> [notes.json]           create the version and set "What's New", then stop
+//   node store/asc-release.js prepare <version> <build> [notes.json]   the same, then wait for that build and attach it
 //   node store/asc-release.js submit <version>                         submit that version for review
 //   node store/asc-release.js cancel                                   withdraw the submission waiting for review
 //   node store/asc-release.js metadata <version> <metadata.json>      store texts per locale (see below)
 //   node store/asc-release.js primary <locale>                        the language shown to everyone else
 //   node store/asc-release.js subcategory <id>                        second game subcategory, e.g. GAMES_BOARD
-// notes.json holds { "nl-NL": "...", "en-US": "..." }. Builds are uploaded first with xcodebuild (see the memory notes).
+// notes.json holds { "nl-NL": "...", "en-US": "..." } (a metadata.json with whatsNew per locale works too). The build
+// number is the CURRENT_PROJECT_VERSION of the upload; builds are uploaded first with xcodebuild (see the memory notes).
+// Without a build number, prepare can run before the build exists, so metadata and screenshots can go in meanwhile.
 // metadata.json holds per locale any of: name, subtitle (App Information) and description, keywords,
 // promotionalText, whatsNew (the version). A live version only accepts promotionalText; name and subtitle go to the
 // App Information that is still being edited, which exists once a new version has been created. A locale the
@@ -41,11 +44,14 @@ async function prepare(v, buildNumber, notesFile) {
     const notes = JSON.parse(fs.readFileSync(notesFile, 'utf8'));
     const locs = await api('GET', `/v1/appStoreVersions/${found.v.id}/appStoreVersionLocalizations`);
     for (const l of locs.data) {
-      if (!notes[l.attributes.locale]) continue;
-      const ok = await api('PATCH', `/v1/appStoreVersionLocalizations/${l.id}`, { data: { type: 'appStoreVersionLocalizations', id: l.id, attributes: { whatsNew: notes[l.attributes.locale] } } });
+      const n = notes[l.attributes.locale];
+      const whatsNew = n && typeof n === 'object' ? n.whatsNew : n;
+      if (!whatsNew) continue;
+      const ok = await api('PATCH', `/v1/appStoreVersionLocalizations/${l.id}`, { data: { type: 'appStoreVersionLocalizations', id: l.id, attributes: { whatsNew } } });
       console.log('whatsNew', l.attributes.locale, ok ? 'set' : 'failed');
     }
   }
+  if (!buildNumber) return console.log('no build number given: version only, attach a build later with prepare', v, '<build>');
   let b;
   for (let i = 0; i < 60; i++) {
     const r = await api('GET', `/v1/builds?filter[app]=${APP}&filter[version]=${buildNumber}&filter[preReleaseVersion.version]=${v}&limit=1`);
@@ -147,4 +153,10 @@ async function primary(locale) {
 }
 
 const [cmd, a, b, c] = process.argv.slice(2);
-({ status, prepare: () => prepare(a, b, c), submit: () => submit(a), cancel, metadata: () => metadata(a, b), primary: () => primary(a), subcategory: () => subcategory(a) }[cmd] || (() => console.log('usage: status | prepare <version> <build> [notes.json] | submit <version> | cancel | metadata <version> <metadata.json> | primary <locale> | subcategory <id>')))();
+// prepare takes the build number and the notes file in either order; the build number is the one made of digits.
+function prepareArgs() {
+  const rest = [b, c].filter(Boolean);
+  const build = rest.find(x => /^\d+(\.\d+)*$/.test(x));
+  return prepare(a, build, rest.find(x => x !== build));
+}
+({ status, prepare: () => a ? prepareArgs() : console.log('usage: prepare <version> [build] [notes.json]'), submit: () => submit(a), cancel, metadata: () => metadata(a, b), primary: () => primary(a), subcategory: () => subcategory(a) }[cmd] || (() => console.log('usage: status | prepare <version> [build] [notes.json] | submit <version> | cancel | metadata <version> <metadata.json> | primary <locale> | subcategory <id>')))();

@@ -4,8 +4,28 @@
     {
       "name": "crimson-www",
       "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "8093", "--bind", "127.0.0.1", "--directory", "www"],
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "8093",
+        "--bind",
+        "127.0.0.1",
+        "--directory",
+        "www"
+      ],
       "port": 8093
+    },
+    {
+      "name": "crimson-root",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "8094",
+        "--bind",
+        "127.0.0.1"
+      ],
+      "port": 8094
     }
   ]
 }
