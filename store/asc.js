@@ -150,14 +150,16 @@ const IAP_TEXT = {
   }
 };
 
-// Zet voor elke in-app aankoop de Nederlandse en de Engelse tekst klaar.
+// Zet voor elke in-app aankoop de tekst klaar in elke winkeltaal: Nederlands en Engels van hierboven,
+// Engels (V.K.) gelijk aan Engels (V.S.), de talen van 1.2 uit store/iap-texts.js.
 // Bestaat een taal al, dan wordt hij bijgewerkt in plaats van toegevoegd.
 async function iapLocalizations() {
+  const extra = require('./iap-texts.js').build();   // controleert alle lengtes vóór de eerste aanroep
   const a = await app();
   const list = await get(`/v1/apps/${a.id}/inAppPurchasesV2?limit=50`);
   for (const p of list.data) {
     const pid = p.attributes.productId;
-    const texts = IAP_TEXT[pid];
+    const texts = IAP_TEXT[pid] && { ...IAP_TEXT[pid], 'en-GB': IAP_TEXT[pid]['en-US'], ...extra[pid] };
     if (!texts) { console.log(`overgeslagen, geen tekst bekend: ${pid}`); continue; }
     const have = await get(`/v2/inAppPurchases/${p.id}/inAppPurchaseLocalizations`);
     for (const [locale, [name, description]] of Object.entries(texts)) {
