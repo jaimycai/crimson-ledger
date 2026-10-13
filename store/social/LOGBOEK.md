@@ -36,6 +36,7 @@ eerste publicatie op zijn vroegst 6 oktober.
 | 9 okt | niet gemeten (TikTok Studio Analytics en profielpagina laadden niet in Chrome) | 245 (App Store Connect, 7 dagen t/m 8 okt) | 31 (idem) | 7 eerste downloads (idem; conversie 4,09%) | 11 (7 dagen, iOS, en 10 / nl 4 opens; 1 terug op dag 1, 24 zaken gestart, 21 opgelost, 0 aankopen, 8 keer gedeeld) |
 | 10 okt | 0 (TikTok Studio 10:37; analytics 7 dagen toont nog 0 videoviews) | niet gemeten (App Store Connect vraagt opnieuw inloggen; niet gedaan) | niet gemeten (idem) | niet gemeten (idem) | 9 (7 dagen, iOS, en 8 / nl 4 opens; 1 terug op dag 1, 24 zaken gestart, 21 opgelost, 0 aankopen, 8 keer gedeeld) |
 | 12 okt | niet gemeten (tab Volgers in TikTok Studio laadde niet; analytics 7 dagen: 498 videoviews, 7 profielweergaven, 1 like, 1 reactie, 0 gedeeld; 99,2% Voor jou, 0% zoeken) | niet gemeten (App Store Connect vraagt opnieuw inloggen; niet gedaan) | niet gemeten (idem) | niet gemeten (idem) | 24 (7 dagen; opens ios 16 / web 16, nl 9 / en 21 / de 2; 3 terug op dag 1, 1606 zaken gestart / 66 opgelost, 0 aankopen, 8 gedeeld; web-opens en het hoge aantal gestarte zaken komen waarschijnlijk van capture.js, niet van spelers) |
+| 13 okt | niet gemeten (Claude in Chrome niet verbonden, twee pogingen) | niet gemeten (idem) | niet gemeten (idem) | niet gemeten (idem) | 47 (7 dagen; opens ios 23 / web 33, nl 11 / en 28 / de 7 / overige talen 10; 3 terug op dag 1, 1642 zaken gestart / 74 opgelost, 0 aankopen, 8 gedeeld; de sprong en de talen hi, ru, ur, vi, zh komen waarschijnlijk van de taalcontrole voor 1.2 en capture.js, niet van spelers) |
 
 ## Beslissingen
 
@@ -115,3 +116,7 @@ eerste publicatie op zijn vroegst 6 oktober.
 - 12 okt: de vier carrousels uit week2c die rechtstreeks in TikTok Studio zijn gepland, staan na 23 tot 47 uur op 0 views.
   Via Metricool haalden posts 4, 5 en 7 wel bereik (237, 268, 78). Te testen oorzaak, één verandering: de route van plaatsen
   (TikTok Studio tegenover Metricool), met dezelfde soort carrousel. Post w2c-02 ging zonder tekst live.
+- 13 okt: geen postcijfers. Claude in Chrome was niet verbonden, dus TikTok Studio, Metricool en App Store Connect zijn niet
+  gelezen. Views na 48 uur van post 7 en w2c-02 t/m w2c-04 vallen vandaag en zijn gemist; volgende ronde meten.
+  Niet nagekeken of w2c-05 en verder in TikTok Studio gepland staan. Vanaf vandaag kan de TikTok-weergavenaam weer naar
+  "Crimson Ledger · Crime Sudoku".
