@@ -9,12 +9,15 @@ Er werken twee soorten sessies aan deze repo: een sessie op de Mac (pusht rechts
 cloudsessies (werken op een eigen `claude/...`-branch met een pull request). Om dubbel werk te voorkomen:
 
 1. Begin met `git fetch origin` en lees `git log HEAD..origin/main`. Wat daar staat, is al gedaan.
-2. Zet hieronder één regel met wat je gaat doen, push die meteen, en haal hem weg als het klaar is.
-3. Raak geen bestanden aan die een andere regel hieronder claimt.
+2. Kijk ook naar de open pull requests en de branches `origin/claude/*` (`git branch -r`). Werk dat daar
+   nog wacht, staat nog niet op `main` maar is wel gedaan. Lees de tabel hieronder in die branch.
+3. Zet hieronder één regel met wat je gaat doen en push die meteen. Is het klaar, zet dan de stand erbij;
+   haal de regel weg zodra het op `main` staat.
+4. Raak geen bestanden aan die een andere regel hieronder claimt.
 
 | Sinds | Sessie | Taak | Bestanden |
 |---|---|---|---|
-| 13 okt | cloud, branch `claude/kind-feynman-ocvzz9` | Aankoopteksten in de talen van 1.2 | `store/iap-texts.js`, `store/asc.js` (alleen `iapLocalizations`) |
+| 13 okt | cloud, branch `claude/kind-feynman-ocvzz9` | Aankoopteksten in de talen van 1.2. Klaar; wacht op samenvoegen van PR #1, daarna `node store/asc.js iap-locs` op de Mac. | `store/iap-texts.js`, `store/asc.js` (alleen `iapLocalizations`) |
 
 ## Wat live staat
 
