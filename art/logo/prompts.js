@@ -60,15 +60,53 @@ const PROMPTS = [
   { id: '3d-grootboek', richting: 'Andere stijl', stijl: '3D-voorwerp', ref: null,
     prompt: `${LEDGER} Stylised 3D object like a premium mobile game icon: chunky proportions, soft glossy materials, ` +
       'warm light, the book slightly tilted and half open with a golden glow coming from the pages. Solid deep ' +
-      'wine-red (#8B2E1C) background.' }
+      'wine-red (#8B2E1C) background.' },
+
+  // ── Ronde 2 (14 okt): Jaimy vond ronde 1 niet mooi en wees Detective Files: Mystery Cases (SayGames) aan als
+  // voorbeeld: een cartoonpersonage van dichtbij, dikke donkere lijnen, warme vlakke kleuren met zachte schaduw en een
+  // sfeervol decor. Eigen uitwerking met Van Dam, wijnrood en ons spel; het icoon van SayGames gaat niet mee als beeld.
+  { id: 'r2-loep', ronde: 2, richting: 'Cartoon, Van Dam', stijl: 'loep voor het oog, studeerkamer', ref: 'vandam',
+    prompt: 'He holds a magnifying glass in front of one eye, so that eye looks big and round. Behind him a dim study ' +
+      'with a warm hanging lamp and a cork board with a red string and two pinned photos (simple shapes only).' },
+  { id: 'r2-grootboek', ronde: 2, richting: 'Cartoon, Van Dam', stijl: 'kijkt over het grootboek', ref: 'vandam',
+    prompt: 'He holds an open crimson leather ledger book up near his face and peeks over it with one eyebrow raised. ' +
+      'Warm lamp light from above, a dark wine-red wall behind him.' },
+  { id: 'r2-plattegrond', ronde: 2, richting: 'Cartoon, Van Dam', stijl: 'over de plattegrond', ref: 'vandam',
+    prompt: 'He leans over a table with a colourful floor plan of a house (rooms in soft pastel colours, a few small ' +
+      'round tokens), a magnifying glass in his hand, seen from slightly above. Warm lamp light.' },
+  { id: 'r2-rode-draad', ronde: 2, richting: 'Cartoon, Van Dam', stijl: 'achterdochtig, rode draad', ref: 'vandam',
+    prompt: 'He looks sideways with suspicion, one eyebrow raised, one finger stroking his moustache. Behind him an ' +
+      'evidence board with a red string connecting pinned cards (simple shapes only), warm light.' },
+  { id: 'r2-nacht', ronde: 2, richting: 'Cartoon, Van Dam', stijl: 'loep, nachtstraat', ref: 'vandam',
+    prompt: 'He holds a magnifying glass in front of one eye, so that eye looks big and round. Behind him a night street ' +
+      'with one lit lamppost and a deep blue-purple sky, so his warm colours stand out.' },
+  { id: 'r2-wijnrood', ronde: 2, richting: 'Cartoon, Van Dam', stijl: 'loep, effen wijnrood', ref: 'vandam',
+    prompt: 'He holds a magnifying glass in front of one eye, so that eye looks big and round. A plain deep wine-red ' +
+      '(#8B2E1C) background with a soft spotlight glow behind his head, nothing else.' },
+  { id: 'r2-sleutel', ronde: 2, richting: 'Cartoon, Van Dam', stijl: 'bestudeert een sleutel', ref: 'vandam',
+    prompt: 'He holds up an old brass key between two fingers and studies it with a squint. Behind him the dim hallway ' +
+      'of an old mansion with a warm wall lamp.' },
+  { id: 'r2-glimlach', ronde: 2, richting: 'Cartoon, Van Dam', stijl: 'kijkt je aan, loep in de hand', ref: 'vandam',
+    prompt: 'He looks straight at the viewer with a small knowing smile, holding a magnifying glass at chest height. ' +
+      'Behind him a warm brick wall with a framed painting of a mansion and a hanging lamp.' }
 ];
 
-const full = p => `${BASE} ${p.prompt}`;
+// Ronde 2 heeft een eigen basis: een volle scène van dichtbij in plaats van één voorwerp op een effen vlak.
+const BASE2 = 'Square artwork for a mobile game app icon. The artwork fills the whole square canvas edge to edge: no rounded ' +
+  'corners, no frame, no border, no device mockup. Absolutely no text, letters, numbers, initials or signature anywhere. ' +
+  'Cartoon illustration in a modern mobile-game style: bold dark-brown outlines of even thickness, flat warm colours with ' +
+  'soft cel shading, clean simple shapes, readable at 60 by 60 pixels. The character is cropped close: head and shoulders ' +
+  'fill most of the square and touch the bottom edge. The character is Inspector Van Dam, a detective in his fifties: a ' +
+  'dark fedora with a wine-red band, a big curled handlebar moustache, bushy eyebrows, a long nose, a beige trench coat ' +
+  'over a white shirt and a wine-red tie. Friendly but serious, with a sharp, clever look. Use the reference image only ' +
+  'for his face, hat and moustache.';
+
+const full = p => `${p.ronde === 2 ? BASE2 : BASE} ${p.prompt}`;
 module.exports = { BASE, PROMPTS, full };
 
 if (require.main === module) {
   const id = process.argv[2];
-  const list = id ? PROMPTS.filter(p => p.id === id) : PROMPTS;
+  const list = id === 'ronde2' ? PROMPTS.filter(p => p.ronde === 2) : id ? PROMPTS.filter(p => p.id === id) : PROMPTS;
   if (!list.length) { console.error(`onbekend: ${id}`); process.exit(2); }
   console.log(JSON.stringify(list.map(p => ({ id: p.id, richting: p.richting, stijl: p.stijl,
     referentie: p.ref ? 'assets/vandam.jpg' : null, prompt: full(p) })), null, 1));

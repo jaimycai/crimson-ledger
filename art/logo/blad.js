@@ -10,7 +10,9 @@ const small = (file, px) => {
   catch (e) { execFileSync('convert', [file, '-resize', `${px}x${px}`, '-quality', '88', out]); }
   return 'data:image/jpeg;base64,' + fs.readFileSync(out).toString('base64');
 };
-const items = PROMPTS.filter(p => fs.existsSync(path.join(RUW, p.id + '.png')));
+// node art/logo/blad.js ronde2   toont alleen ronde 2
+const RONDE = process.argv[2] === 'ronde2' ? 2 : 0;
+const items = PROMPTS.filter(p => fs.existsSync(path.join(RUW, p.id + '.png')) && (!RONDE || p.ronde === RONDE));
 if (!items.length) { console.error('Nog geen beelden in art/logo/ruw/.'); process.exit(1); }
 const now = path.join(DIR, '../../icon-1024.png');
 const card = (img, s, title, sub) => `<figure><img class="groot" src="${img(360)}" alt=""><div class="rij"><img class="klein" src="${s}" alt=""><img class="klein donker" src="${s}" alt=""></div><figcaption><b>${title}</b><span>${sub}</span></figcaption></figure>`;
@@ -22,5 +24,5 @@ h1{font:700 30px/1.1 Georgia,serif;margin:0}.grid{display:grid;grid-template-col
 figure{margin:0;display:grid;gap:10px;background:var(--card);padding:14px;border:1px solid var(--line)}.groot{width:100%;aspect-ratio:1;border-radius:22.4%;display:block}
 .rij{display:flex;gap:10px}.rij img{width:60px;height:60px;border-radius:13.4px;padding:10px;background:var(--tile)}.rij img.donker{background:#1A120E}
 figcaption{display:grid;font-size:13px}figcaption span{color:var(--sub)}</style>
-<main><h1>Logo-proeven</h1><p>Groot, en op ware grootte op een licht en een donker scherm. Bronnen en opdrachten: art/logo/prompts.js.</p><div class="grid">${cards.join('')}</div></main>`);
+<main><h1>Logo-proeven${RONDE ? ', ronde ' + RONDE : ''}</h1><p>Groot, en op ware grootte op een licht en een donker scherm. Bronnen en opdrachten: art/logo/prompts.js.</p><div class="grid">${cards.join('')}</div></main>`);
 console.log(`blad.html: ${items.length} proeven + het huidige icoon`);
