@@ -384,7 +384,12 @@
     "🧊 {0} {0|one:vrije dag|other:vrije dagen}": "🧊 {0} {0|one:día libre|other:días libres}",
     "Los nog {0} {0|one:zaak|other:zaken} op om {1} te openen. De dagelijkse zaak telt mee.": "Resuelve {0} {0|one:caso|other:casos} más para abrir {1}. El caso diario también cuenta.",
     "nog {0} {0|one:zaak|other:zaken} tot {1}": "{0|one:falta|other:faltan} {0} {0|one:caso|other:casos} para {1}",
-    "{0} {0|one:zaak|other:zaken} opgelost": "{0} {0|one:caso resuelto|other:casos resueltos}"
+    "{0} {0|one:zaak|other:zaken} opgelost": "{0} {0|one:caso resuelto|other:casos resueltos}",
+    "Meester": "Maestro",
+    "Voor echte kenners": "Para expertos",
+    "Je gaat verder waar je was.": "Sigues donde lo dejaste.",
+    "⏱️ Klok tijdens een zaak": "⏱️ Cronómetro en los casos",
+    "Week {0} · {1} {2} · {3}. Elke week één speciale zaak op meesterniveau; iedereen speelt dezelfde. Deel je resultaat met andere speurders.": "Semana {0} · {1} {2} · {3}. Cada semana, un caso especial de nivel maestro; todos juegan el mismo. Comparte tu resultado con otros sabuesos."
   },
 
   data: {
@@ -401,7 +406,8 @@
       "tutorial": "Caso de práctica",
       "makkelijk": "Fácil",
       "gemiddeld": "Medio",
-      "moeilijk": "Difícil"
+      "moeilijk": "Difícil",
+      "meester": "Maestro"
     },
     "themes": {
       "landhuis": {
@@ -1073,6 +1079,10 @@
       "meester": [
         "Gran detective",
         "Alcanza el rango más alto"
+      ],
+      "meesterzaken": [
+        "Sabueso maestro",
+        "Resuelve cinco casos de nivel maestro"
       ]
     },
     "quests": {
@@ -3475,6 +3485,774 @@
           "El último descenso",
           "Montaña abajo. La última pregunta.",
           "🏁 Bandera de meta"
+        ]
+      ]
+    ],
+    "landhuis-7": [
+      "Parte VII · Las obras",
+      "Blackwood calló durante tres años. Entonces llegan los albañiles, y la primera pared que abren es la de debajo de la escalera.",
+      "Retiran los andamios y en el jardín aparece un cartel: se vende.",
+      "Los albañiles encuentran de todo en las paredes, y todo acaba en mi escritorio. En un plano de nueve por nueve hay pocos sitios fijos. Encadena las declaraciones que unen a dos personas: en cuanto un eslabón queda fijo, lo demás viene solo.",
+      [
+        [
+          "El primer agujero",
+          "El albañil abrió un agujero. Después no quiso seguir.",
+          "🔨 Maza"
+        ],
+        [
+          "Dinero bajo el suelo",
+          "Bajo el suelo había dinero. Demasiado poco para matar por él, decían todos.",
+          "💷 Billete"
+        ],
+        [
+          "Detrás del papel tapiz",
+          "Detrás del papel tapiz había una carta de amor. Sin nombre, pero con fecha.",
+          "💌 Carta de amor"
+        ],
+        [
+          "Lápiz en la viga",
+          "En una viga había una fecha escrita a lápiz. La de la semana pasada.",
+          "✏️ Lápiz de carpintero"
+        ],
+        [
+          "El mayor Pike no reconoce nada",
+          "En el desván estaba su viejo casco del ejército. Nunca lo había visto, dijo.",
+          "🪖 Casco militar"
+        ],
+        [
+          "Cuarenta tarros de mermelada",
+          "En el sótano había cuarenta tarros de mermelada. En uno no había mermelada.",
+          "🫙 Tarro de conserva"
+        ],
+        [
+          "El hilo rojo",
+          "De un clavo colgaba un hilo rojo. Hoy Clementine iba de azul.",
+          "🧵 Hilo rojo"
+        ],
+        [
+          "Noticias desde la pared",
+          "Dentro de la pared había un periódico de 1927. Faltaba el artículo sobre la cena.",
+          "🗞️ Periódico viejo"
+        ]
+      ]
+    ],
+    "landhuis-8": [
+      "Parte VIII · Adiós a Blackwood",
+      "Esta vez la venta sigue adelante. La familia tiene un fin de semana para vaciar Blackwood.",
+      "Echan el cerrojo de la verja, la familia se marcha y el expediente Blackwood se cierra para siempre.",
+      "La casa está vendida; los casos, todavía abiertos. «Más a la izquierda» y «más arriba» descartan columnas y filas enteras de una vez. Quien está más a la izquierda que alguien nunca está en la columna de más a la derecha; quien está más arriba, nunca en la fila de más abajo.",
+      [
+        [
+          "Los transportistas",
+          "Los transportistas contaron doce cajas. En el camión había trece.",
+          "🚚 Carta de porte"
+        ],
+        [
+          "El tasador",
+          "El tasador elogió cada pieza de la casa. Salvo el retrato del vestíbulo.",
+          "🔎 Lista de tasación"
+        ],
+        [
+          "Mortimer vuelve a contar",
+          "Una vez faltó una cuchara. Ahora sobraba una.",
+          "🍴 Estuche de cubiertos"
+        ],
+        [
+          "La rosa muerta",
+          "En el invernadero había una rosa muerta. Alguien seguía regándola cada día.",
+          "🥀 Rosa marchita"
+        ],
+        [
+          "La cena de despedida",
+          "La misma mesa que en 1927. Nadie quería sentarse en la cabecera.",
+          "🫗 Decantador"
+        ],
+        [
+          "La tía Agatha se queda",
+          "Todos recogían sus cosas. La tía Agatha seguía tejiendo, con un ojo puesto en la puerta.",
+          "🧶 Ovillo de lana"
+        ],
+        [
+          "El tanque lleno",
+          "El auto del garaje llevaba años parado. El tanque estaba lleno.",
+          "⛽ Bidón de gasolina"
+        ],
+        [
+          "La última línea",
+          "Hargrove cerró el libro de cuentas. En la última línea había un solo nombre.",
+          "📕 Libro de cuentas"
+        ]
+      ]
+    ],
+    "piraten-7": [
+      "Parte VII · La persecución",
+      "Un barco lleno de piratas ricos llama la atención. Una fragata de la marina sigue a la Gaviota y siempre sabe dónde está.",
+      "La fragata encalla en el arrecife, y la Gaviota pone rumbo al último puerto que aún la acepta.",
+      "El barco parece más grande y la tripulación habla menos. Con la víctima solo estaba el asesino. Si una declaración pone a dos personas en el mismo compartimento, ninguna de las dos estaba con la víctima.",
+      [
+        [
+          "Se busca, vivo o muerto",
+          "Sus caras colgaban en todos los puertos. En un cartel faltaba una.",
+          "📃 Cartel de «Se busca»"
+        ],
+        [
+          "A todo trapo",
+          "Navegaban a todo trapo. Aun así, la fragata se acercaba.",
+          "🪡 Aguja de velero"
+        ],
+        [
+          "El disparo de advertencia",
+          "La fragata disparó una vez. A bordo, alguien contó dos detonaciones.",
+          "🕳️ Agujero de bala"
+        ],
+        [
+          "La bandera blanca",
+          "Alguien izó la bandera blanca. Nadie quería rendirse.",
+          "🏳️ Bandera blanca"
+        ],
+        [
+          "El contramaestre Grimsby echa la sonda",
+          "Anunció seis brazas de fondo. Eran tres.",
+          "🧵 Sondaleza"
+        ],
+        [
+          "Señales en la oscuridad",
+          "Desde un ojo de buey parpadeaba una luz hacia la fragata. Tres destellos cortos.",
+          "🪟 Ojo de buey"
+        ],
+        [
+          "Miss Coral escribe",
+          "Escribía una carta cada noche. Esta era para la fragata.",
+          "💌 Nota clandestina"
+        ],
+        [
+          "El arrecife",
+          "La fragata encalló en el arrecife. El traidor seguía a bordo.",
+          "🪸 Trozo de coral"
+        ]
+      ]
+    ],
+    "piraten-8": [
+      "Parte VIII · El último puerto",
+      "La Gaviota atraca en un puerto donde nadie hace preguntas. Aquí quedará amarrada para siempre, y todos quieren sacar una última cosa de a bordo.",
+      "La Gaviota Negra queda amarrada para siempre, y la última palabra de su bitácora es tuya.",
+      "La última parte, y la más difícil. Si una declaración dice que alguien no estaba en la cocina, descarta de una vez toda la cocina para esa persona. Así te ahorras muchas cuentas.",
+      [
+        [
+          "El capitán de puerto",
+          "El capitán de puerto no hacía preguntas. Pero lo anotaba todo.",
+          "📗 Registro del puerto"
+        ],
+        [
+          "La última carga",
+          "La carga bajó a tierra. Una caja pesaba más de lo que decía la lista.",
+          "🪝 Gancho de carga"
+        ],
+        [
+          "Saffron guarda sus cuchillos",
+          "Metió doce cuchillos en su bolsa. A bordo tenía once.",
+          "👝 Funda de cuchillos"
+        ],
+        [
+          "El comprador",
+          "Un comprador ofreció oro por la Gaviota. Solo quería ver la bodega.",
+          "📑 Escritura de venta"
+        ],
+        [
+          "Thorne descarga el cañón",
+          "El cañón tenía que bajar a tierra. Aún estaba cargado.",
+          "🧨 Mecha"
+        ],
+        [
+          "La última ancla",
+          "El ancla cayó por última vez. De la cadena colgaba algo.",
+          "⛓️ Cadena del ancla"
+        ],
+        [
+          "Las ratas se van",
+          "Las ratas fueron las primeras en bajar a tierra. Sabían algo.",
+          "🪤 Trampa para ratas"
+        ],
+        [
+          "La última página",
+          "En la bitácora de la Gaviota aún queda una página en blanco.",
+          "📕 Bitácora cerrada"
+        ]
+      ]
+    ],
+    "hotel-7": [
+      "Parte VII · La subasta",
+      "Un mes después, todo lo que hay en el Aurora sale a subasta, del piano a la última cuchara. Los huéspedes de entonces ocupan la primera fila.",
+      "El martillo cae por última vez: todo está vendido, salvo el propio edificio.",
+      "Planos más grandes, declaraciones más vagas: esta subasta no es ninguna ganga. Con el lápiz, marca con un punto cada casilla donde un sospechoso aún pueda estar. Si dos sospechosos tienen que estar en la misma fila, compara sus puntos: una fila en la que solo uno de los dos tiene un punto queda descartada.",
+      [
+        [
+          "El día de exposición",
+          "El día de exposición todo llevaba una etiqueta. De una etiqueta no colgaba nada.",
+          "🏷️ Etiqueta de lote"
+        ],
+        [
+          "El catálogo",
+          "El lote 77 aparecía dos veces en el catálogo. Solo había un lote 77.",
+          "📕 Catálogo de la subasta"
+        ],
+        [
+          "La primera puja",
+          "La primera puja vino de una silla vacía.",
+          "🪧 Paleta de pujas"
+        ],
+        [
+          "Cubiertos al kilo",
+          "La plata se subastó por kilos. Faltaba un kilo.",
+          "🍴 Cubiertos del hotel"
+        ],
+        [
+          "El pianista Felix puja",
+          "Pujó por su viejo piano. Alguien pujó más.",
+          "🪑 Taburete del piano"
+        ],
+        [
+          "Seis letras",
+          "En la fachada se leía AURORA con seis letras. Quedaban cinco.",
+          "🅰️ Letra de la fachada"
+        ],
+        [
+          "La puerta giratoria",
+          "La puerta giratoria ya estaba vendida. A medianoche dio una vuelta más.",
+          "🔄 Puerta giratoria"
+        ],
+        [
+          "El último lote",
+          "El último lote no estaba en el catálogo. Aun así, alguien pujó.",
+          "🔨 Martillo del subastador"
+        ]
+      ]
+    ],
+    "hotel-8": [
+      "Parte VIII · La demolición",
+      "El lunes llega la bola de demolición. El fin de semana anterior, los huéspedes de entonces recorren por última vez los pasillos vacíos.",
+      "La bola de demolición se balancea, el polvo se asienta y se cierra el último expediente del Aurora.",
+      "El Aurora por última vez, casi solo con los casos más difíciles. Una palmera es un mal escondite: quien estaba justo al lado de una solo puede estar en unas pocas casillas. Busca primero esas declaraciones sobre objetos y empieza por ahí.",
+      [
+        [
+          "El permiso",
+          "La demolición estaba permitida a partir del lunes. Alguien empezó el domingo.",
+          "📃 Permiso de demolición"
+        ],
+        [
+          "El mayordomo Winslow con casco",
+          "Durante cuarenta años llevó pajarita. Hoy, un casco de obra.",
+          "⛑️ Casco de obra"
+        ],
+        [
+          "El viejo ascensor",
+          "En el hueco del ascensor aún colgaba una lista de huéspedes. Un nombre estaba tachado.",
+          "🛗 Botón del ascensor"
+        ],
+        [
+          "La grúa",
+          "Desde la grúa se veían todas las ventanas. En una había alguien.",
+          "🏗️ Gancho de grúa"
+        ],
+        [
+          "El último vals",
+          "El parqué estaba vendido. Aun así, había pasos de baile en el polvo.",
+          "🪩 Bola de espejos"
+        ],
+        [
+          "La primera piedra",
+          "Dentro de la primera piedra había una cápsula del tiempo. Alguien había llegado antes.",
+          "🫙 Cápsula del tiempo"
+        ],
+        [
+          "Aparece la habitación 404",
+          "Los obreros encontraron la habitación 404. El despertador aún hacía tictac.",
+          "⏰ Despertador en marcha"
+        ],
+        [
+          "La última hora",
+          "Al Aurora le quedaba una hora en pie. Suficiente para la última pregunta.",
+          "🧱 Último ladrillo"
+        ]
+      ]
+    ],
+    "ruimte-7": [
+      "Parte VII · Cuarentena",
+      "La cápsula ha aterrizado y la tripulación entra en cuarentena. Tres semanas, en una réplica a tamaño real de Orión dentro de un hangar en la Tierra.",
+      "El día que se abren las puertas, un barco saca del océano algo naranja.",
+      "De vuelta en la Tierra, y todavía tras una esclusa. Algunos casos ya son de nivel maestro: un tablero más grande, menos declaraciones directas. Quien estaba solo en un módulo también te habla de sus vecinos: si alguien estaba justo a su lado, había una pared entre los dos.",
+      [
+        [
+          "Orión en la Tierra",
+          "Cada módulo copiado hasta el último tornillo. Uno estaba suelto.",
+          "🔩 Tornillo suelto"
+        ],
+        [
+          "La bióloga Wren tacha los días",
+          "Tachaba cada día. Ayer alguien lo había hecho por ella.",
+          "📆 Calendario"
+        ],
+        [
+          "El doctor Nkemelu saca sangre",
+          "Ocho tubos de sangre. Uno no tenía nombre.",
+          "🩸 Tubo de sangre"
+        ],
+        [
+          "Visitas tras el cristal",
+          "Todos saludaban a su familia. Una persona miraba hacia otro lado.",
+          "🪟 Ventana de visitas"
+        ],
+        [
+          "Comida por la escotilla",
+          "Tres comidas al día por la escotilla. Una volvió sin tocar.",
+          "🍱 Bandeja de comida"
+        ],
+        [
+          "Otra vez la gravedad",
+          "Tras medio año flotando, todo se caía. También una coartada.",
+          "🥤 Vaso volcado"
+        ],
+        [
+          "El filtro de aire",
+          "El filtro lo atrapaba todo. También un pelo que no debía estar allí.",
+          "🌀 Filtro de aire"
+        ],
+        [
+          "Día veintiuno",
+          "Las puertas se abrieron. Sobre una cama aún quedaba una pulsera.",
+          "📛 Pulsera"
+        ]
+      ]
+    ],
+    "ruimte-8": [
+      "Parte VIII · La caja negra",
+      "No todo Orión ardió. Escuchan la caja negra en la réplica de la estación, módulo a módulo.",
+      "La caja negra enmudece, el expediente Orión se cierra y esta vez sigue cerrado.",
+      "La última parte de Orión, casi toda de nivel maestro. Si dos personas tienen que estar en el mismo módulo, busca un módulo donde quepan las dos sin romper ninguna de sus otras declaraciones. A menudo solo queda uno.",
+      [
+        [
+          "Del fondo del océano",
+          "Una caja naranja del fondo del mar. Lo había grabado todo.",
+          "🟧 Caja naranja"
+        ],
+        [
+          "Minuto cero",
+          "La grabación empezaba en silencio. Luego se abría una escotilla.",
+          "🎧 Auriculares"
+        ],
+        [
+          "La ingeniera Vega escucha",
+          "Conocía cada sonido de a bordo. Ese silbido, no.",
+          "⚙️ Válvula de presión"
+        ],
+        [
+          "Dos voces",
+          "Dos voces en la sala de máquinas. Según los turnos, allí no había nadie.",
+          "🗣️ Huella de voz"
+        ],
+        [
+          "La oficial Paz rebobina",
+          "Rebobinó tres veces. Después no dijo nada más.",
+          "⏪ Botón de rebobinar"
+        ],
+        [
+          "Once segundos de silencio",
+          "A las 04:00 la grabación se cortó durante once segundos. Y no se cortó sola.",
+          "🔇 Botón de silencio"
+        ],
+        [
+          "La botánica Fern calla",
+          "Su voz estaba en todas las grabaciones. En la última, no.",
+          "🪴 Esqueje"
+        ],
+        [
+          "La última grabación",
+          "El último minuto antes del desacoplamiento. Alguien susurró un nombre.",
+          "🗂️ Expediente Orión"
+        ]
+      ]
+    ],
+    "museum-7": [
+      "Parte VII · El préstamo",
+      "El museo vuelve a abrir, como si nunca hubiera habido una puerta. De Florencia llega en préstamo un cuadro famoso, asegurado por más de lo que vale el edificio.",
+      "El cuadro vuelve a Florencia, y la aseguradora cancela la póliza.",
+      "A partir de aquí hay casos de nivel maestro: un tablero más grande, menos asideros. Si dos personas comparten fila o columna, marca a lápiz un sitio para una y mira dónde puede ir todavía la otra. Si la otra no tiene adónde ir, la primera no estaba ahí.",
+      [
+        [
+          "La caja de Florencia",
+          "Según la etiqueta, dentro había un cuadro. La caja pesaba más.",
+          "🏷️ Etiqueta de envío"
+        ],
+        [
+          "Cuatro tornillos",
+          "Cuatro tornillos sujetaban el marco a la pared. Quedaban tres.",
+          "🔩 Tornillo del marco"
+        ],
+        [
+          "Cincuenta lux",
+          "La luz no podía pasar de cincuenta lux. Alguien la había subido.",
+          "🔆 Luxómetro"
+        ],
+        [
+          "La restauradora Iris duda",
+          "Bajo el microscopio, la pintura era demasiado joven para el cuadro.",
+          "🔬 Muestra de pintura"
+        ],
+        [
+          "La foto de prensa",
+          "En la foto de prensa había una mano de más.",
+          "📸 Foto de prensa"
+        ],
+        [
+          "La visita con audioguía",
+          "La parada catorce mencionaba un nombre que no figuraba en ninguna placa.",
+          "🎧 Audioguía"
+        ],
+        [
+          "El profesor Adebayo lo reconoce",
+          "Conocía el cuadro por una vieja diapositiva, tomada en Vlierbeek.",
+          "🎞️ Diapositiva antigua"
+        ],
+        [
+          "De vuelta a Florencia",
+          "Cerraron la caja. Lo que entró no era lo que había salido.",
+          "🪛 Destornillador"
+        ]
+      ]
+    ],
+    "museum-8": [
+      "Parte VIII · El centenario",
+      "Sin seguro, Vlierbeek celebra de todos modos sus cien años. En la fiesta, el cuadro auténtico vuelve a casa tras cincuenta años fuera.",
+      "El cuadro vuelve a colgar donde debe, y el expediente Vlierbeek queda cerrado para siempre.",
+      "Ya casi todos los casos son de nivel maestro; en un museo lleno de obras maestras, es lo que toca. Si te atascas, pregúntate qué declaración no has usado todavía. Marca las que vayas usando y lo verás de un vistazo.",
+      [
+        [
+          "El regreso a casa",
+          "Tras cincuenta años, el cuadro volvía a colgar en casa. De los mismos clavos.",
+          "🫧 Plástico de burbujas"
+        ],
+        [
+          "La bandera a media asta",
+          "La bandera del tejado estaba a media asta. Antes incluso de que empezara la fiesta.",
+          "🚩 Bandera del tejado"
+        ],
+        [
+          "El único vigilante",
+          "Sin seguro, Gus era toda la seguridad. Bostezó una vez.",
+          "🍬 Caramelo de menta"
+        ],
+        [
+          "La medalla del centenario",
+          "Cada invitado recibió una medalla. Una llevaba otro año.",
+          "🏅 Medalla del centenario"
+        ],
+        [
+          "La banda de música",
+          "La banda tocó la marcha del centenario. Una trompeta se quedó callada.",
+          "🎺 Trompeta"
+        ],
+        [
+          "El conservador Ellery lee los nombres",
+          "Leyó en voz alta el nombre de cada conservador. Se saltó uno.",
+          "📘 Libro del centenario"
+        ],
+        [
+          "La guía Margot cuenta la historia",
+          "Contó cien años en diez minutos. Omitió una noche.",
+          "📏 Puntero"
+        ],
+        [
+          "Vlierbeek cumple cien años",
+          "A medianoche, cien años. La última pregunta es la más antigua.",
+          "🖼️ El original"
+        ]
+      ]
+    ],
+    "trein-7": [
+      "Parte VII · La cochera",
+      "El desguace se aplaza hasta la primavera. El tren pasa el invierno en una cochera, y por la noche recibe visitas.",
+      "En primavera, un desconocido compra el tren para un último viaje a Viena.",
+      "La cochera es más grande de lo que parece, y algunos casos también: nueve casillas por nueve. «No estaba justo al lado de» solo descarta cuatro casillas. Deja esas declaraciones para el final.",
+      [
+        [
+          "Luz sin corriente",
+          "En el vagón restaurante había una luz encendida. No había corriente.",
+          "🔋 Batería"
+        ],
+        [
+          "La cama deshecha",
+          "El tren llevaba semanas vacío. Alguien había dormido en la cama del compartimento A.",
+          "🧦 Calcetín de lana"
+        ],
+        [
+          "El mago Orlando ensaya",
+          "Ensayaba su número de desaparición en el tren vacío. Alguien lo miraba.",
+          "🪄 Varita mágica"
+        ],
+        [
+          "El cambio de agujas",
+          "Alguien cambió las agujas por la noche. El tren seguía dentro.",
+          "🎚️ Palanca de agujas"
+        ],
+        [
+          "El fogonero Jules huele humo",
+          "La caldera llevaba semanas fría. Esta noche, no.",
+          "♨️ Manómetro"
+        ],
+        [
+          "La viuda Duval rebusca",
+          "Vino por la segunda maleta. Alguien se le había adelantado.",
+          "🪡 Alfiler de sombrero"
+        ],
+        [
+          "Flores de escarcha",
+          "En las flores de escarcha de la ventanilla se leía un nombre. Medio nombre.",
+          "🪟 Ventanilla helada"
+        ],
+        [
+          "Se vende",
+          "Se vende: un tren nocturno, doce vagones. Hubo una respuesta.",
+          "📰 Anuncio del periódico"
+        ]
+      ]
+    ],
+    "trein-8": [
+      "Parte VIII · La llegada",
+      "El tren hace una vez más la vieja ruta a Viena. Todos los pasajeros de entonces han recibido un boleto, sin remitente.",
+      "En Viena, el tren nocturno entra en un museo y se queda allí para siempre.",
+      "El último viaje, y casi todo de nivel maestro. Cuenta en cada vagón las casillas sin objeto: no caben más personas que esas. Un vagón pequeño se llena enseguida.",
+      [
+        [
+          "La invitación",
+          "Vinieron todos. Nadie admitió que tenía curiosidad.",
+          "📩 Sobre en blanco"
+        ],
+        [
+          "Otra vez ese túnel",
+          "A las nueve, otra vez ese túnel. Todos contuvieron la respiración.",
+          "🕰️ Reloj de sobremesa"
+        ],
+        [
+          "Primera clase",
+          "La baronesa viajaba en primera clase. Este tren no tenía primera clase.",
+          "🦊 Estola de piel"
+        ],
+        [
+          "El nuevo revisor",
+          "Alguien picó los boletos. El tren no tenía revisor.",
+          "🕳️ Perforadora de boletos"
+        ],
+        [
+          "La actriz Lola hace de sí misma",
+          "Volvió a representar aquella noche. Con demasiada exactitud.",
+          "💄 Barra de labios"
+        ],
+        [
+          "El noveno pasajero",
+          "Ocho boletos enviados. Nueve personas a bordo.",
+          "👔 Corbata"
+        ],
+        [
+          "La enfermera Hedda vela",
+          "Se quedó toda la noche despierta en el pasillo. Aun así, alguien logró pasar.",
+          "🧩 Crucigramas"
+        ],
+        [
+          "Por fin, Viena",
+          "Quien envió los boletos también iba en el tren.",
+          "🚉 Boleto de andén"
+        ]
+      ]
+    ],
+    "circus-7": [
+      "Parte VII · Los cuarteles de invierno",
+      "La carpa está plegada en el granero de los cuarteles de invierno, una granja a las afueras. Todos esperan a un comprador y se vigilan unos a otros.",
+      "No llega ningún comprador, así que el circo actúa una vez más: de noche, en el granero.",
+      "Los cuarteles de invierno son grandes y las declaraciones dicen poco. Marca primero, en cada zona, qué casillas están en una esquina, junto a una pared o en el centro. Una zona de dos casillas de ancho no tiene centro: quien está «en el centro» está en otra parte.",
+      [
+        [
+          "El octavo carromato",
+          "Siete carromatos entraron en el granero. Por la mañana había ocho.",
+          "🛞 Rueda de carromato"
+        ],
+        [
+          "La veleta",
+          "La veleta del granero giraba. No hacía viento.",
+          "🐓 Veleta"
+        ],
+        [
+          "El forzudo Boris sierra leña",
+          "Serró leña para todo el invierno. En una sola noche.",
+          "🪚 Sierra"
+        ],
+        [
+          "El agujero en el hielo",
+          "El estanque se había helado. Salvo en un sitio.",
+          "⛸️ Patín de hielo"
+        ],
+        [
+          "El payaso Pippo sin maquillaje",
+          "Sin maquillaje nadie lo reconocía. Le venía bien.",
+          "💄 Caja de maquillaje"
+        ],
+        [
+          "Circo en venta",
+          "El anuncio salió en el periódico. Nadie lo había puesto.",
+          "🗞️ Recorte de periódico"
+        ],
+        [
+          "La veterinaria Nadia se queda",
+          "Su trabajo había terminado. Aun así, se quedó una semana más.",
+          "💼 Maletín de veterinaria"
+        ],
+        [
+          "El comprador se echa atrás",
+          "El comprador llamó para cancelar. En la granja, alguien ya lo sabía.",
+          "☎️ Auricular del teléfono"
+        ]
+      ]
+    ],
+    "circus-8": [
+      "Parte VIII · La función nocturna",
+      "El pueblo viene a ver una función en el granero, a la luz de los faroles. La pista es de paja; los artistas, los mismos.",
+      "Los últimos aplausos se apagan en el granero, y del Circo Zano solo queda tu expediente.",
+      "Casi todos los casos de esta parte son de los más difíciles. Si te atascas, pon a alguien a lápiz en un sitio posible y razona a partir de ahí. Si eso rompe una declaración, el sitio está mal; un error a lápiz no cuesta nada.",
+      [
+        [
+          "El ensayo general",
+          "En el ensayo actuó un número que no estaba en el programa.",
+          "📑 Programa de mano"
+        ],
+        [
+          "El maestro de ceremonias",
+          "Alguien tenía que presentar la función. Había dos personas preparadas.",
+          "📢 Megáfono"
+        ],
+        [
+          "Las antorchas del malabarista Teo",
+          "Cinco antorchas en un granero lleno de paja. Atrapó cuatro.",
+          "🔥 Antorcha de malabares"
+        ],
+        [
+          "El algodón de azúcar",
+          "La máquina de algodón de azúcar funcionó toda la velada. Nadie estaba detrás.",
+          "🍭 Algodón de azúcar"
+        ],
+        [
+          "El intermedio",
+          "El intermedio duró diez minutos. Para un artista, veinte.",
+          "🔔 Campana del intermedio"
+        ],
+        [
+          "La trapecista Mira sube",
+          "Colgó su trapecio de una viga. La viga estaba medio serrada.",
+          "🪜 Escalera de cuerda"
+        ],
+        [
+          "La taquillera Dottie vende",
+          "Entrar era gratis. Aun así, vendió entradas.",
+          "💶 Monedas sueltas"
+        ],
+        [
+          "Ovación en pie",
+          "Todos se pusieron de pie para aplaudir. Una persona se quedó sentada.",
+          "🪧 Cartel del circo"
+        ]
+      ]
+    ],
+    "skihut-7": [
+      "Parte VII · Fuera de temporada",
+      "En otoño, el refugio está vacío. Aun así, hay una luz encendida, y cinco antiguos huéspedes todavía tienen llave.",
+      "Cae la primera nieve y corta la carretera, igual que la primera vez.",
+      "El tablero crece y las declaraciones se vuelven más tacañas. Si el informe dice que una sala estaba vacía, todo ese bloque de casillas queda descartado para los cinco, también para quien no aparece en ninguna otra declaración. Al final, un refugio vacío sirve para algo.",
+      [
+        [
+          "Luz tras los postigos",
+          "Todos los postigos estaban cerrados. Detrás de uno había luz.",
+          "🪔 Lámpara de aceite"
+        ],
+        [
+          "Las llaves de repuesto",
+          "Existían cuatro llaves de repuesto. Dentro había cinco huéspedes.",
+          "🔑 Llave de repuesto"
+        ],
+        [
+          "Sábanas sobre los muebles",
+          "Todos los muebles estaban bajo una sábana. Debajo de una no había ningún mueble.",
+          "🛋️ Sábana guardapolvo"
+        ],
+        [
+          "El cocinero Luigi recoge hongos",
+          "Recogió una cesta llena. Una especie no estaba en su libro.",
+          "🍄 Hongo"
+        ],
+        [
+          "La ratonera",
+          "La ratonera de la despensa había saltado. Sin ratón.",
+          "🪤 Ratonera"
+        ],
+        [
+          "La turista Hana escribe a casa",
+          "Su postal venía del refugio. El refugio llevaba meses cerrado.",
+          "🏞️ Postal"
+        ],
+        [
+          "El teleférico en silencio",
+          "En otoño el teleférico no funcionaba. Aun así, arriba colgaba una cabina.",
+          "🚠 Cabina del teleférico"
+        ],
+        [
+          "La primera nieve",
+          "La primera nieve cayó a medianoche. Un solo rastro llevaba hasta la puerta.",
+          "🥾 Bota de montaña"
+        ]
+      ]
+    ],
+    "skihut-8": [
+      "Parte VIII · Edelweiss",
+      "La carretera está cortada y el refugio, lleno. Alrededor de la estufa, las mismas caras que la primera noche.",
+      "Van Dam cierra su libreta, te saluda con la cabeza y baja al valle sin prisa, por la nieve recién caída.",
+      "Los últimos casos, casi todos en el tablero grande. No te atasques con quien más te cueste: coloca primero a los demás, y al último muchas veces solo le queda una casilla. Así lo he hecho siempre.",
+      [
+        [
+          "Los sitios de siempre",
+          "Todos ocuparon el mismo sitio que la primera noche. Todos menos uno.",
+          "📇 Tarjeta de mesa"
+        ],
+        [
+          "La pila de leña",
+          "Leña para todo el invierno. Cortada en una tarde, por nadie.",
+          "🪓 Hacha"
+        ],
+        [
+          "Falta una página",
+          "Cada invierno, todos firmaban el libro de visitas. Faltaba un invierno.",
+          "📄 Hoja suelta"
+        ],
+        [
+          "La tubería helada",
+          "A las tres se heló la tubería. Alguien había abierto una ventana.",
+          "🚰 Grifo helado"
+        ],
+        [
+          "El pequeño Kai se queda despierto",
+          "Este año le dejaron quedarse despierto. Vio más de lo que quería.",
+          "🧣 Bufanda de lana"
+        ],
+        [
+          "El detector de avalanchas",
+          "El detector pitaba en el sótano. Allí no había nieve.",
+          "📟 Detector de avalanchas"
+        ],
+        [
+          "La guía Freya lo predice",
+          "Predijo una avalancha, con la hora exacta. No dijo cómo.",
+          "⛰️ Altímetro"
+        ],
+        [
+          "Edelweiss",
+          "Donde empezó, junto a la estufa. Ahí termina también.",
+          "🌼 Flor de edelweiss seca"
         ]
       ]
     ]

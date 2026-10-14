@@ -384,7 +384,12 @@
     "🧊 {0} {0|one:vrije dag|other:vrije dagen}": "🧊 {0} {0|one:freier Tag|other:freie Tage}",
     "Los nog {0} {0|one:zaak|other:zaken} op om {1} te openen. De dagelijkse zaak telt mee.": "Löse noch {0} {0|one:Fall|other:Fälle}, um „{1}“ zu öffnen. Der Tagesfall zählt mit.",
     "nog {0} {0|one:zaak|other:zaken} tot {1}": "noch {0} {0|one:Fall|other:Fälle} bis zum Rang {1}",
-    "{0} {0|one:zaak|other:zaken} opgelost": "{0} {0|one:Fall|other:Fälle} gelöst"
+    "{0} {0|one:zaak|other:zaken} opgelost": "{0} {0|one:Fall|other:Fälle} gelöst",
+    "Meester": "Meister",
+    "Voor echte kenners": "Für echte Kenner",
+    "Je gaat verder waar je was.": "Du machst weiter, wo du aufgehört hast.",
+    "⏱️ Klok tijdens een zaak": "⏱️ Stoppuhr im Fall",
+    "Week {0} · {1} {2} · {3}. Elke week één speciale zaak op meesterniveau; iedereen speelt dezelfde. Deel je resultaat met andere speurders.": "Woche {0} · {1} {2} · {3}. Jede Woche ein besonderer Fall auf Meisterniveau; alle spielen denselben. Teile dein Ergebnis mit anderen Spürnasen."
   },
 
   data: {
@@ -401,7 +406,8 @@
       "tutorial": "Übungsfall",
       "makkelijk": "Leicht",
       "gemiddeld": "Mittel",
-      "moeilijk": "Schwer"
+      "moeilijk": "Schwer",
+      "meester": "Meister"
     },
     "themes": {
       "landhuis": {
@@ -996,6 +1002,10 @@
       "meester": [
         "Meisterdetektiv",
         "Erreiche den höchsten Rang"
+      ],
+      "meesterzaken": [
+        "Meisterspürnase",
+        "Löse fünf Fälle auf Meisterniveau"
       ]
     },
     "quests": {
@@ -3398,6 +3408,774 @@
           "Die letzte Abfahrt",
           "Den Berg hinunter. Die letzte Frage.",
           "🏁 Zielflagge"
+        ]
+      ]
+    ],
+    "landhuis-7": [
+      "Teil VII · Der Umbau",
+      "Blackwood schwieg drei Jahre lang. Dann kommen die Maurer, und die erste Wand, die sie aufbrechen, ist die unter der Treppe.",
+      "Das Gerüst wird abgebaut, und im Garten steht bald ein Schild: Zu verkaufen.",
+      "Maurer finden alles Mögliche in Wänden, und alles landet auf meinem Schreibtisch. Auf einem Grundriss von neun mal neun Feldern sind feste Plätze rar. Reihe die Aussagen, die zwei Personen verbinden, aneinander: Steht ein Glied der Kette fest, folgt der Rest.",
+      [
+        [
+          "Das erste Loch",
+          "Der Maurer schlug ein einziges Loch. Danach wollte er nicht mehr weiter.",
+          "🔨 Vorschlag­hammer"
+        ],
+        [
+          "Geld unter dem Boden",
+          "Unter dem Boden lag Geld. Zu wenig, um dafür zu morden, sagten alle.",
+          "💷 Geldschein"
+        ],
+        [
+          "Hinter der Tapete",
+          "Hinter der Tapete steckte ein Liebesbrief. Kein Name, aber ein Datum.",
+          "💌 Liebes­brief"
+        ],
+        [
+          "Bleistift auf dem Balken",
+          "Auf einem Balken stand mit Bleistift ein Datum. Das von letzter Woche.",
+          "✏️ Zimmer­manns­bleistift"
+        ],
+        [
+          "Major Pike erkennt nichts",
+          "Auf dem Dachboden lag sein alter Armeehelm. Nie gesehen, sagte er.",
+          "🪖 Armeehelm"
+        ],
+        [
+          "Vierzig Gläser Marmelade",
+          "Im Keller standen vierzig Gläser Marmelade. In einem war keine Marmelade.",
+          "🫙 Einmach­glas"
+        ],
+        [
+          "Der rote Faden",
+          "An einem Nagel hing ein roter Faden. Clementine trug heute Blau.",
+          "🧵 Roter Faden"
+        ],
+        [
+          "Neues aus der Wand",
+          "In der Wand steckte eine Zeitung von 1927. Der Artikel über das Dinner fehlte.",
+          "🗞️ Alte Zeitung"
+        ]
+      ]
+    ],
+    "landhuis-8": [
+      "Teil VIII · Abschied von Blackwood",
+      "Diesmal klappt der Verkauf. Die Familie hat ein Wochenende Zeit, um Blackwood leer zu räumen.",
+      "Das Tor fällt ins Schloss, die Familie fährt davon, und die Akte Blackwood wird für immer geschlossen.",
+      "Das Haus ist verkauft, die Fälle sind noch offen. „Links von“ und „weiter oben als“ streichen ganze Spalten und Reihen auf einmal. Wer links von jemandem steht, steht nie in der Spalte ganz rechts; wer weiter oben steht als jemand, nie in der untersten Reihe.",
+      [
+        [
+          "Die Möbelpacker",
+          "Die Möbelpacker zählten zwölf Kisten. Im Wagen standen dreizehn.",
+          "🚚 Fracht­brief"
+        ],
+        [
+          "Der Gutachter",
+          "Der Gutachter lobte jedes Stück im Haus. Bis auf das Porträt in der Halle.",
+          "🔎 Gutachten"
+        ],
+        [
+          "Mortimer zählt nach",
+          "Damals fehlte ein Löffel. Jetzt war einer zu viel da.",
+          "🍴 Besteck­kasten"
+        ],
+        [
+          "Die tote Rose",
+          "Im Wintergarten stand eine tote Rose. Jemand goss sie noch jeden Tag.",
+          "🥀 Verwelkte Rose"
+        ],
+        [
+          "Das Abschiedsdinner",
+          "Derselbe Tisch wie 1927. Niemand wollte am Kopfende sitzen.",
+          "🫗 Karaffe"
+        ],
+        [
+          "Tante Agatha bleibt",
+          "Alle packten. Tante Agatha strickte weiter und behielt die Tür im Auge.",
+          "🧶 Strickzeug"
+        ],
+        [
+          "Ein voller Tank",
+          "Das Auto in der Garage fuhr seit Jahren nicht mehr. Der Tank war voll.",
+          "⛽ Benzin­kanister"
+        ],
+        [
+          "Die letzte Zeile",
+          "Hargrove schloss das Kassenbuch. In der letzten Zeile stand ein einziger Name.",
+          "📕 Kassenbuch"
+        ]
+      ]
+    ],
+    "piraten-7": [
+      "Teil VII · Die Verfolgung",
+      "Ein Schiff voller reicher Piraten fällt auf. Eine Fregatte der Marine folgt der Möwe und weiß immer, wo sie ist.",
+      "Die Fregatte läuft auf das Riff auf, und die Möwe nimmt Kurs auf den letzten Hafen, der sie noch aufnimmt.",
+      "Das Schiff wirkt größer, und die Mannschaft sagt weniger. Beim Opfer stand nur der Täter. Bringt eine Aussage zwei Personen in denselben Raum, steht keiner von beiden beim Opfer.",
+      [
+        [
+          "Gesucht, tot oder lebendig",
+          "In jedem Hafen hingen ihre Gesichter. Auf einem Plakat fehlte eines.",
+          "📃 Steckbrief"
+        ],
+        [
+          "Alle Segel gesetzt",
+          "Alle Segel waren gesetzt. Trotzdem kam die Fregatte näher.",
+          "🪡 Segelnadel"
+        ],
+        [
+          "Der Warnschuss",
+          "Die Fregatte schoss einmal. An Bord zählte jemand zwei Knalle.",
+          "🕳️ Einschuss­loch"
+        ],
+        [
+          "Die weiße Flagge",
+          "Jemand hisste die weiße Flagge. Niemand wollte sich ergeben.",
+          "🏳️ Weiße Flagge"
+        ],
+        [
+          "Bootsmann Grimsby lotet",
+          "Er meldete sechs Faden. Es waren drei.",
+          "🧵 Lotleine"
+        ],
+        [
+          "Signale im Dunkeln",
+          "Aus einem Bullauge blinkte Licht zur Fregatte hinüber. Dreimal kurz.",
+          "🪟 Bullauge"
+        ],
+        [
+          "Fräulein Coral schreibt",
+          "Sie schrieb jeden Abend einen Brief. Dieser war für die Fregatte.",
+          "💌 Ge­schmug­gelter Zettel"
+        ],
+        [
+          "Das Riff",
+          "Die Fregatte saß auf dem Riff fest. Der Verräter war noch an Bord.",
+          "🪸 Stück Koralle"
+        ]
+      ]
+    ],
+    "piraten-8": [
+      "Teil VIII · Der letzte Hafen",
+      "Die Möwe macht in einem Hafen fest, in dem niemand Fragen stellt. Hier wird sie für immer an die Kette gelegt, und alle wollen noch etwas von Bord holen.",
+      "Die Schwarze Möwe liegt für immer an der Kette, und das letzte Wort in ihrem Logbuch gehört dir.",
+      "Der letzte Teil, und der schwerste. Sagt eine Aussage, dass jemand nicht in der Kombüse war, dann streiche für diese Person die ganze Kombüse auf einmal. Das spart viel Zählerei.",
+      [
+        [
+          "Der Hafenmeister",
+          "Der Hafenmeister stellte keine Fragen. Aber er schrieb alles auf.",
+          "📗 Hafen­register"
+        ],
+        [
+          "Die letzte Ladung",
+          "Die Ladung ging von Bord. Eine Kiste wog mehr, als auf der Liste stand.",
+          "🪝 Ladehaken"
+        ],
+        [
+          "Saffron packt ihre Messer",
+          "Zwölf Messer kamen in ihre Tasche. An Bord hatte sie immer nur elf.",
+          "👝 Messer­rolle"
+        ],
+        [
+          "Der Käufer",
+          "Ein Käufer bot Gold für die Möwe. Er wollte nur den Laderaum sehen.",
+          "📑 Kauf­vertrag"
+        ],
+        [
+          "Thorne entlädt die Kanone",
+          "Die Kanone musste von Bord. Sie war noch geladen.",
+          "🧨 Lunte"
+        ],
+        [
+          "Der letzte Anker",
+          "Der Anker fiel zum letzten Mal. An der Kette hing etwas.",
+          "⛓️ Ankerkette"
+        ],
+        [
+          "Die Ratten verlassen das Schiff",
+          "Die Ratten gingen als Erste von Bord. Sie wussten etwas.",
+          "🪤 Ratten­falle"
+        ],
+        [
+          "Die letzte Seite",
+          "Im Logbuch der Möwe ist noch eine Seite leer.",
+          "📕 Ge­schlossenes Logbuch"
+        ]
+      ]
+    ],
+    "hotel-7": [
+      "Teil VII · Die Auktion",
+      "Einen Monat später kommt alles von Aurora unter den Hammer, vom Klavier bis zum letzten Löffel. Die alten Gäste sitzen in der ersten Reihe.",
+      "Der Hammer fällt zum letzten Mal: Alles ist verkauft, außer dem Gebäude selbst.",
+      "Größere Grundrisse, vagere Aussagen: Diese Auktion ist kein Schnäppchen. Setze mit dem Bleistift einen Punkt auf jedes Feld, auf dem ein Verdächtiger noch stehen kann. Müssen zwei Verdächtige in derselben Reihe stehen, vergleiche ihre Punkte: Eine Reihe, in der nur einer der beiden einen Punkt hat, scheidet aus.",
+      [
+        [
+          "Der Besichtigungstag",
+          "Am Besichtigungstag hing an allem ein Schildchen. An einem Schildchen hing nichts.",
+          "🏷️ Losschild"
+        ],
+        [
+          "Der Katalog",
+          "Los 77 stand zweimal im Katalog. Es gab nur ein Los 77.",
+          "📕 Auktions­katalog"
+        ],
+        [
+          "Das erste Gebot",
+          "Das erste Gebot kam von einem leeren Stuhl.",
+          "🪧 Bieter­karte"
+        ],
+        [
+          "Besteck nach Kilo",
+          "Das Silber wurde kiloweise versteigert. Ein Kilo fehlte.",
+          "🍴 Hotel­besteck"
+        ],
+        [
+          "Pianist Felix bietet mit",
+          "Er bot auf sein altes Klavier. Jemand bot mehr.",
+          "🪑 Klavier­hocker"
+        ],
+        [
+          "Sechs Buchstaben",
+          "An der Fassade stand AURORA, in sechs Buchstaben. Fünf hingen noch.",
+          "🅰️ Fassaden­buchstabe"
+        ],
+        [
+          "Die Drehtür",
+          "Die Drehtür war schon verkauft. Um Mitternacht drehte sie sich noch einmal.",
+          "🔄 Drehtür"
+        ],
+        [
+          "Das letzte Los",
+          "Das letzte Los stand nicht im Katalog. Trotzdem wurde darauf geboten.",
+          "🔨 Auktions­hammer"
+        ]
+      ]
+    ],
+    "hotel-8": [
+      "Teil VIII · Der Abriss",
+      "Am Montag kommt die Abrissbirne. Am Wochenende davor gehen die alten Gäste noch einmal durch die leeren Flure.",
+      "Die Abrissbirne schwingt, der Staub legt sich, und die letzte Akte von Aurora wird geschlossen.",
+      "Noch einmal Aurora, fast nur mit den schwersten Fällen. Eine Palme ist ein schlechtes Versteck: Wer direkt neben einer Palme stand, kann nur auf wenigen Feldern stehen. Suche zuerst diese Aussagen über Möbel und fang dort an.",
+      [
+        [
+          "Die Genehmigung",
+          "Der Abriss war ab Montag erlaubt. Jemand fing am Sonntag an.",
+          "📃 Abriss­genehmigung"
+        ],
+        [
+          "Butler Winslow mit Helm",
+          "Vierzig Jahre lang trug er eine Fliege. Heute einen Bauhelm.",
+          "⛑️ Bauhelm"
+        ],
+        [
+          "Der alte Aufzug",
+          "Im Aufzugschacht hing noch eine Gästekarte. Ein Name war durchgestrichen.",
+          "🛗 Aufzug­knopf"
+        ],
+        [
+          "Der Kran",
+          "Vom Kran aus sah man jedes Fenster. In einem stand jemand.",
+          "🏗️ Kranhaken"
+        ],
+        [
+          "Der letzte Walzer",
+          "Das Parkett war verkauft. Trotzdem waren im Staub Tanzschritte zu sehen.",
+          "🪩 Spiegel­kugel"
+        ],
+        [
+          "Der Grundstein",
+          "Im Grundstein steckte eine Zeitkapsel. Jemand war schneller gewesen.",
+          "🫙 Zeitkapsel"
+        ],
+        [
+          "Zimmer 404 gefunden",
+          "Die Abrissarbeiter fanden Zimmer 404. Der Wecker tickte noch.",
+          "⏰ Tickender Wecker"
+        ],
+        [
+          "Die letzte Stunde",
+          "Aurora stand noch eine Stunde. Genug für die letzte Frage.",
+          "🧱 Letzter Backstein"
+        ]
+      ]
+    ],
+    "ruimte-7": [
+      "Teil VII · Quarantäne",
+      "Die Kapsel ist gelandet, und die Crew kommt in Quarantäne. Drei Wochen lang, in einem Nachbau von Orion in einem Hangar auf der Erde.",
+      "Am Tag, an dem sich die Türen öffnen, fischt ein Schiff etwas Orangefarbenes aus dem Ozean.",
+      "Zurück auf der Erde und immer noch hinter einer Schleuse. Manche Fälle sind jetzt auf Meisterniveau: ein größeres Brett, weniger direkte Aussagen. Wer allein in einem Modul war, verrät auch etwas über seine Nachbarn: Wer direkt neben ihm stand, stand auf der anderen Seite einer Wand.",
+      [
+        [
+          "Orion auf der Erde",
+          "Jedes Modul bis zur letzten Schraube nachgebaut. Eine Schraube saß locker.",
+          "🔩 Lockere Schraube"
+        ],
+        [
+          "Biologin Wren zählt die Tage",
+          "Sie strich jeden Tag im Kalender durch. Gestern hatte es jemand für sie getan.",
+          "📆 Countdown-Kalender"
+        ],
+        [
+          "Dr. Nkemelu nimmt Blut ab",
+          "Acht Röhrchen Blut. Auf einem stand kein Name.",
+          "🩸 Blut­röhrchen"
+        ],
+        [
+          "Besuch hinter Glas",
+          "Alle winkten ihren Familien zu. Eine Person sah in die andere Richtung.",
+          "🪟 Sicht­fenster"
+        ],
+        [
+          "Essen durch die Klappe",
+          "Drei Mahlzeiten am Tag durch die Klappe. Eine kam unberührt zurück.",
+          "🍱 Essens­tablett"
+        ],
+        [
+          "Wieder Schwerkraft",
+          "Nach einem halben Jahr Schweben fiel alles um. Auch ein Alibi.",
+          "🥤 Um­gekippter Becher"
+        ],
+        [
+          "Der Luftfilter",
+          "Der Filter fing alles auf. Auch ein Haar, das nicht dorthin gehörte.",
+          "🌀 Luftfilter"
+        ],
+        [
+          "Tag einundzwanzig",
+          "Die Türen gingen auf. Ein Armband lag noch auf einem Bett.",
+          "📛 Armband"
+        ]
+      ]
+    ],
+    "ruimte-8": [
+      "Teil VIII · Der Flugschreiber",
+      "Nicht alles von Orion ist verglüht. Der Flugschreiber wird im Nachbau der Station abgespielt, Modul für Modul.",
+      "Der Flugschreiber verstummt, die Akte Orion wird geschlossen, und diesmal bleibt sie zu.",
+      "Der letzte Teil von Orion, fast alles auf Meisterniveau. Müssen zwei Personen im selben Modul stehen, suche ein Modul, in das beide passen, mitsamt all ihren anderen Aussagen. Oft bleibt nur eines übrig.",
+      [
+        [
+          "Aus dem Ozean",
+          "Ein orangefarbener Kasten vom Meeresgrund. Er hatte alles aufgezeichnet.",
+          "🟧 Orange­farbener Kasten"
+        ],
+        [
+          "Minute null",
+          "Die Aufnahme begann mit Stille. Dann ging eine Luke auf.",
+          "🎧 Kopfhörer"
+        ],
+        [
+          "Ingenieurin Vega hört zu",
+          "Sie kannte jedes Geräusch an Bord. Dieses Zischen nicht.",
+          "⚙️ Druck­ventil"
+        ],
+        [
+          "Zwei Stimmen",
+          "Zwei Stimmen im Antriebsraum. Laut Dienstplan war dort niemand.",
+          "🗣️ Stimm­abdruck"
+        ],
+        [
+          "Offizierin Paz spult zurück",
+          "Sie spulte dreimal zurück. Danach sagte sie nichts mehr.",
+          "⏪ Rückspul­taste"
+        ],
+        [
+          "Elf Sekunden Stille",
+          "Um 04:00 brach die Aufnahme elf Sekunden lang ab. Nicht von selbst.",
+          "🔇 Stummtaste"
+        ],
+        [
+          "Botanikerin Fern verstummt",
+          "Ihre Stimme war auf jeder Aufnahme. Auf der letzten nicht.",
+          "🪴 Steckling"
+        ],
+        [
+          "Die letzte Aufnahme",
+          "Die letzte Minute vor dem Abkoppeln. Jemand flüsterte einen Namen.",
+          "🗂️ Akte Orion"
+        ]
+      ]
+    ],
+    "museum-7": [
+      "Teil VII · Die Leihgabe",
+      "Das Museum ist wieder offen, als hätte es nie eine Tür gegeben. Aus Florenz kommt ein berühmtes Gemälde als Leihgabe, versichert für mehr als das Gebäude.",
+      "Das Gemälde geht zurück nach Florenz, und die Versicherung kündigt die Police.",
+      "Ab hier sind Meisterfälle dabei: ein größeres Brett, weniger Anhaltspunkte. Teilen zwei Personen eine Reihe oder eine Spalte, setze die eine mit dem Bleistift hin und schau, wo die andere noch stehen kann. Bleibt für die andere kein Feld übrig, stand die eine dort nicht.",
+      [
+        [
+          "Die Kiste aus Florenz",
+          "Laut Etikett war ein einziges Gemälde darin. Die Kiste wog mehr.",
+          "🏷️ Transport­etikett"
+        ],
+        [
+          "Vier Schrauben",
+          "Vier Schrauben hielten den Rahmen an der Wand. Drei waren noch da.",
+          "🔩 Aufhänge­schraube"
+        ],
+        [
+          "Fünfzig Lux",
+          "Mehr als fünfzig Lux waren nicht erlaubt. Jemand hatte das Licht heller gestellt.",
+          "🔆 Luxmeter"
+        ],
+        [
+          "Restauratorin Iris zweifelt",
+          "Unter dem Mikroskop war die Farbe zu jung für das Gemälde.",
+          "🔬 Farbprobe"
+        ],
+        [
+          "Das Pressefoto",
+          "Auf dem Pressefoto war eine Hand zu viel.",
+          "📸 Pressefoto"
+        ],
+        [
+          "Die Audioführung",
+          "Station vierzehn nannte einen Namen, der auf keinem Schild stand.",
+          "🎧 Audioguide"
+        ],
+        [
+          "Professor Adebayo erkennt es",
+          "Er kannte das Gemälde von einem alten Dia, aufgenommen in Vlierbeek.",
+          "🎞️ Altes Dia"
+        ],
+        [
+          "Zurück nach Florenz",
+          "Die Kiste wurde verschlossen. Was hineinkam, war nicht, was herauskam.",
+          "🪛 Schrauben­zieher"
+        ]
+      ]
+    ],
+    "museum-8": [
+      "Teil VIII · Das Jubiläum",
+      "Ohne Versicherung feiert Vlierbeek trotzdem seinen hundertsten Geburtstag. Auf dem Fest kommt das echte Gemälde nach Hause, nach fünfzig Jahren in der Fremde.",
+      "Das Gemälde hängt wieder, wo es hingehört, und die Akte Vlierbeek wird für immer geschlossen.",
+      "Fast jeder Fall ist jetzt ein Meisterfall; in einem Museum passt das. Wenn du feststeckst, frag dich, welche Aussage du noch nicht benutzt hast. Hake ab, was du benutzt, dann siehst du es auf einen Blick.",
+      [
+        [
+          "Die Heimkehr",
+          "Nach fünfzig Jahren hing das Gemälde wieder zu Hause. An denselben Nägeln.",
+          "🫧 Noppen­folie"
+        ],
+        [
+          "Die Flagge auf halbmast",
+          "Die Flagge auf dem Dach hing auf halbmast. Noch bevor das Fest begann.",
+          "🚩 Dachflagge"
+        ],
+        [
+          "Der einzige Wächter",
+          "Ohne Versicherung war Gus der ganze Sicherheitsdienst. Er gähnte ein einziges Mal.",
+          "🍬 Pfeffer­minz"
+        ],
+        [
+          "Die Jubiläumsmedaille",
+          "Jeder Gast bekam eine Medaille. Auf einer stand eine andere Jahreszahl.",
+          "🏅 Jubiläums­medaille"
+        ],
+        [
+          "Die Blaskapelle",
+          "Die Blaskapelle spielte den Jubiläumsmarsch. Eine Trompete blieb stumm.",
+          "🎺 Trompete"
+        ],
+        [
+          "Kurator Ellery liest vor",
+          "Er las die Namen aller Kuratoren vor. Einen ließ er aus.",
+          "📘 Jubiläums­buch"
+        ],
+        [
+          "Museumsführerin Margot erzählt",
+          "Sie erzählte hundert Jahre in zehn Minuten. Eine Nacht ließ sie weg.",
+          "📏 Zeigestock"
+        ],
+        [
+          "Vlierbeek wird hundert",
+          "Um Mitternacht hundert Jahre alt. Die letzte Frage ist die älteste.",
+          "🖼️ Das Original"
+        ]
+      ]
+    ],
+    "trein-7": [
+      "Teil VII · Der Lokschuppen",
+      "Die Verschrottung wird auf das Frühjahr verschoben. Der Zug überwintert in einem Lokschuppen, und nachts bekommt er Besuch.",
+      "Im Frühjahr kauft ein Unbekannter den Zug, für eine letzte Fahrt nach Wien.",
+      "Der Lokschuppen ist größer, als er aussieht, und manche Fälle auch: neun mal neun Felder. „Nicht direkt neben“ streicht nur vier Felder. Heb dir diese Aussagen bis zum Schluss auf.",
+      [
+        [
+          "Licht ohne Strom",
+          "Im Speisewagen brannte Licht. Der Strom war abgestellt.",
+          "🔋 Batterie"
+        ],
+        [
+          "Das zerwühlte Bett",
+          "Der Zug stand seit Wochen leer. Im Bett in Abteil A hatte jemand geschlafen.",
+          "🧦 Wollsocke"
+        ],
+        [
+          "Zauberer Orlando übt",
+          "Er übte seinen Verschwindetrick im leeren Zug. Jemand sah zu.",
+          "🪄 Zauberstab"
+        ],
+        [
+          "Die Weiche",
+          "Jemand stellte nachts die Weiche um. Der Zug stand noch im Schuppen.",
+          "🎚️ Weichen­hebel"
+        ],
+        [
+          "Heizer Jules riecht Rauch",
+          "Der Kessel war seit Wochen kalt. Heute Nacht nicht.",
+          "♨️ Manometer"
+        ],
+        [
+          "Witwe Duval sucht",
+          "Sie kam, um den zweiten Koffer zu holen. Jemand war ihr zuvorgekommen.",
+          "🪡 Hutnadel"
+        ],
+        [
+          "Eisblumen am Fenster",
+          "In den Eisblumen am Fenster stand ein Name. Die Hälfte davon.",
+          "🪟 Gefrorene Scheibe"
+        ],
+        [
+          "Zu verkaufen",
+          "Zu verkaufen: ein Nachtzug, zwölf Wagen. Es kam eine einzige Antwort.",
+          "📰 Zeitungs­anzeige"
+        ]
+      ]
+    ],
+    "trein-8": [
+      "Teil VIII · Ankunft",
+      "Der Zug fährt noch einmal die alte Strecke nach Wien. Alle Fahrgäste von damals haben eine Fahrkarte bekommen, ohne Absender.",
+      "In Wien rollt der Nachtzug in ein Museum und bleibt dort für immer stehen.",
+      "Die letzte Fahrt, und fast alles auf Meisterniveau. Zähle in jedem Wagen die Felder ohne Möbel: So viele Menschen passen hinein, nicht mehr. Ein kleiner Wagen ist schnell voll.",
+      [
+        [
+          "Die Einladung",
+          "Alle kamen. Niemand gab zu, dass er neugierig war.",
+          "📩 Blanko-Umschlag"
+        ],
+        [
+          "Wieder dieser Tunnel",
+          "Um neun wieder dieser Tunnel. Alle hielten den Atem an.",
+          "🕰️ Kaminuhr"
+        ],
+        [
+          "Erste Klasse",
+          "Die Baronin reiste erster Klasse. Dieser Zug hatte keine erste Klasse.",
+          "🦊 Pelzstola"
+        ],
+        [
+          "Der neue Schaffner",
+          "Jemand lochte die Fahrkarten. Der Zug hatte keinen Schaffner.",
+          "🕳️ Lochzange"
+        ],
+        [
+          "Schauspielerin Lola spielt sich selbst",
+          "Sie spielte den Abend von damals nach. Ein wenig zu genau.",
+          "💄 Lippen­stift"
+        ],
+        [
+          "Der neunte Fahrgast",
+          "Acht Fahrkarten verschickt. Neun Menschen an Bord.",
+          "👔 Krawatte"
+        ],
+        [
+          "Schwester Hedda bleibt wach",
+          "Sie saß die ganze Nacht im Gang. Trotzdem kam jemand vorbei.",
+          "🧩 Rätsel­heft"
+        ],
+        [
+          "Endlich Wien",
+          "Wer die Fahrkarten verschickt hatte, saß selbst auch im Zug.",
+          "🚉 Bahnsteig­karte"
+        ]
+      ]
+    ],
+    "circus-7": [
+      "Teil VII · Das Winterquartier",
+      "Das Zelt liegt zusammengefaltet in der Scheune des Winterquartiers, eines Bauernhofs vor der Stadt. Alle warten auf einen Käufer und behalten die anderen im Auge.",
+      "Es kommt kein Käufer, also spielt der Zirkus noch einmal: nachts, in der Scheune.",
+      "Das Winterquartier ist groß, und die Aussagen verraten wenig. Markiere zuerst in jedem Bereich, welche Felder in einer Ecke, an einer Wand oder in der Mitte liegen. Ein Bereich, der zwei Felder breit ist, hat keine Mitte: Wer „in der Mitte“ steht, steht woanders.",
+      [
+        [
+          "Der achte Wagen",
+          "Sieben Wagen rollten in die Scheune. Am Morgen standen dort acht.",
+          "🛞 Wagenrad"
+        ],
+        [
+          "Der Wetterhahn",
+          "Der Wetterhahn auf der Scheune drehte sich. Es ging kein Wind.",
+          "🐓 Wetterhahn"
+        ],
+        [
+          "Kraftprotz Boris sägt Holz",
+          "Er sägte Holz für den ganzen Winter. In einer Nacht.",
+          "🪚 Säge"
+        ],
+        [
+          "Das Loch im Eis",
+          "Der Teich war zugefroren. Bis auf eine Stelle.",
+          "⛸️ Schlitt­schuh"
+        ],
+        [
+          "Clown Pippo ohne Schminke",
+          "Ohne Schminke erkannte ihn niemand. Das kam ihm gelegen.",
+          "💄 Schmink­kasten"
+        ],
+        [
+          "Zirkus zu verkaufen",
+          "Die Anzeige stand in der Zeitung. Niemand hatte sie aufgegeben.",
+          "🗞️ Zeitungs­ausschnitt"
+        ],
+        [
+          "Tierärztin Nadia bleibt",
+          "Ihre Arbeit war getan. Trotzdem blieb sie noch eine Woche.",
+          "💼 Arzttasche"
+        ],
+        [
+          "Der Käufer sagt ab",
+          "Der Käufer sagte telefonisch ab. Auf dem Hof wusste es jemand schon vorher.",
+          "☎️ Telefon­hörer"
+        ]
+      ]
+    ],
+    "circus-8": [
+      "Teil VIII · Die Nachtvorstellung",
+      "Das Dorf kommt zu einer einzigen Vorstellung in die Scheune, bei Laternenlicht. Die Manege ist aus Stroh, die Artisten sind dieselben.",
+      "Der letzte Applaus verklingt in der Scheune, und von Zirkus Zano bleibt nur deine Akte.",
+      "Fast jeder Fall in diesem Teil ist von der schwersten Sorte. Wenn du feststeckst, setze jemanden mit dem Bleistift auf ein mögliches Feld und denk von dort aus weiter. Widerspricht das einer Aussage, ist das Feld falsch; ein Fehler mit Bleistift kostet nichts.",
+      [
+        [
+          "Die Generalprobe",
+          "Bei der Probe trat eine Nummer auf, die nicht im Programm stand.",
+          "📑 Programm­heft"
+        ],
+        [
+          "Der Sprechstallmeister",
+          "Jemand musste den Abend ansagen. Zwei standen bereit.",
+          "📢 Megafon"
+        ],
+        [
+          "Jongleur Teo mit Fackeln",
+          "Fünf Fackeln in einer Scheune voller Stroh. Er fing vier.",
+          "🔥 Jonglier­fackel"
+        ],
+        [
+          "Die Zuckerwatte",
+          "Die Zuckerwattemaschine lief den ganzen Abend. Niemand stand dahinter.",
+          "🍭 Zucker­watte"
+        ],
+        [
+          "Die Pause",
+          "Die Pause dauerte zehn Minuten. Für einen Artisten zwanzig.",
+          "🔔 Pausen­glocke"
+        ],
+        [
+          "Trapezkünstlerin Mira klettert",
+          "Sie hängte ihr Trapez an einen Balken. Der Balken war halb durchgesägt.",
+          "🪜 Strick­leiter"
+        ],
+        [
+          "Kartenverkäuferin Dottie verkauft",
+          "Der Eintritt war frei. Trotzdem verkaufte sie Karten.",
+          "💶 Wechsel­geld"
+        ],
+        [
+          "Stehende Ovationen",
+          "Alle standen auf, um zu klatschen. Eine Person blieb sitzen.",
+          "🪧 Zirkus­plakat"
+        ]
+      ]
+    ],
+    "skihut-7": [
+      "Teil VII · Nebensaison",
+      "Im Herbst steht die Hütte leer. Trotzdem brennt Licht, und fünf alte Gäste haben noch einen Schlüssel.",
+      "Der erste Schnee fällt und sperrt die Straße, genau wie beim ersten Mal.",
+      "Das Brett wird größer, und die Aussagen werden sparsamer. Steht im Bericht, dass ein Raum leer war, fällt dieser ganze Block von Feldern für alle fünf weg, auch für die, die sonst nirgends erwähnt werden. So ist eine leere Hütte doch noch zu etwas gut.",
+      [
+        [
+          "Licht hinter den Fensterläden",
+          "Alle Fensterläden waren zu. Hinter einem brannte Licht.",
+          "🪔 Öllampe"
+        ],
+        [
+          "Die Ersatzschlüssel",
+          "Es gab vier Ersatzschlüssel. Drinnen saßen fünf Gäste.",
+          "🔑 Ersatz­schlüssel"
+        ],
+        [
+          "Laken über den Möbeln",
+          "Jedes Möbelstück lag unter einem Laken. Unter einem davon war kein Möbelstück.",
+          "🛋️ Abdecktuch"
+        ],
+        [
+          "Koch Luigi sammelt Pilze",
+          "Er sammelte einen vollen Korb. Eine Sorte stand nicht in seinem Buch.",
+          "🍄 Pilz"
+        ],
+        [
+          "Die Mausefalle",
+          "Die Falle in der Speisekammer war zugeschnappt. Ohne Maus.",
+          "🪤 Mausefalle"
+        ],
+        [
+          "Touristin Hana schreibt nach Hause",
+          "Ihre Karte kam aus der Hütte. Die Hütte war seit Monaten zu.",
+          "🏞️ Ansichts­karte"
+        ],
+        [
+          "Die stille Seilbahn",
+          "Im Herbst fuhr die Seilbahn nicht. Trotzdem hing oben eine Gondel.",
+          "🚠 Gondel"
+        ],
+        [
+          "Der erste Schnee",
+          "Der erste Schnee fiel um Mitternacht. Eine einzige Spur führte zur Tür.",
+          "🥾 Wander­schuh"
+        ]
+      ]
+    ],
+    "skihut-8": [
+      "Teil VIII · Edelweiss",
+      "Die Straße ist gesperrt, und die Hütte ist voll. Um den Ofen sitzen dieselben Gesichter wie am ersten Abend.",
+      "Van Dam klappt sein Notizbuch zu, nickt dir zu und geht ohne Eile durch den frischen Schnee hinunter ins Tal.",
+      "Die letzten Fälle, fast alle auf dem großen Brett. Bleib nicht an dem hängen, der am schwierigsten ist: Setze zuerst die anderen, dann bleibt für den letzten oft nur ein Feld übrig. So habe ich es immer gemacht.",
+      [
+        [
+          "Feste Plätze",
+          "Alle nahmen denselben Platz wie am ersten Abend. Bis auf einen.",
+          "📇 Tischkarte"
+        ],
+        [
+          "Der Holzstapel",
+          "Holz für den ganzen Winter. An einem Nachmittag gehackt, von niemandem.",
+          "🪓 Axt"
+        ],
+        [
+          "Eine Seite zu wenig",
+          "Jeden Winter trugen sich alle ins Gästebuch ein. Ein Winter fehlte.",
+          "📄 Loses Blatt"
+        ],
+        [
+          "Die gefrorene Leitung",
+          "Um drei fror die Leitung ein. Jemand hatte ein Fenster geöffnet.",
+          "🚰 Ein­gefrorener Hahn"
+        ],
+        [
+          "Skischüler Kai bleibt auf",
+          "Dieses Jahr durfte er aufbleiben. Er sah mehr, als er wollte.",
+          "🧣 Wollschal"
+        ],
+        [
+          "Der Lawinenpiepser",
+          "Der Piepser piepte im Keller. Dort unten lag kein Schnee.",
+          "📟 Lawinen­piepser"
+        ],
+        [
+          "Bergführerin Freya prophezeit",
+          "Sie sagte eine Lawine voraus, auf die Stunde genau. Wie, sagte sie nicht.",
+          "⛰️ Höhen­messer"
+        ],
+        [
+          "Edelweiss",
+          "Wo es begann, am Ofen. Dort endet es auch.",
+          "🌼 Getrock­netes Edel­weiß"
         ]
       ]
     ]

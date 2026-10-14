@@ -1,6 +1,6 @@
 # Stand van Crimson Ledger
 
-*Bijgewerkt 14 oktober 2026, op `main` 51bd7ca. Dit is het startpunt voor een nieuwe sessie: eerst dit
+*Bijgewerkt 15 oktober 2026. Dit is het startpunt voor een nieuwe sessie: eerst dit
 bestand, dan alleen de bestanden die bij de taak horen. Werk het bij aan het eind van elke sessie.*
 
 ## Wie werkt waaraan
@@ -17,7 +17,7 @@ cloudsessies (werken op een eigen `claude/...`-branch met een pull request). Om 
 
 | Sinds | Sessie | Taak | Bestanden |
 |---|---|---|---|
-| 14 okt | cloud, branch `claude/kind-feynman-ocvzz9` | Nieuw logo. Onderzoek klaar, tien Higgsfield-opdrachten staan in `art/logo/prompts.js`. Mac-sessie van 14 okt: tien proeven gemaakt (ruw in `art/logo/ruw/`, buiten git), keuzeblad als artifact https://claude.ai/artifact/24rYzVVMmRLwbHn8v2N7F7. Jaimy vindt ze alle tien niet mooi. Nieuwe stap: 38 echte App Store-iconen als referentie (https://claude.ai/artifact/7M4goug6WXKVxWVHkR2GHz); Jaimy koos nr. 2, Detective Files: Mystery Cases (cartoon van dichtbij, dikke lijnen, warme kleuren, sfeervol decor). Ronde 2: acht proeven met Van Dam in die stijl (`node art/logo/prompts.js ronde2`, blad met `node art/logo/blad.js ronde2`), op hetzelfde keuzeblad gezet. **Jaimy koos op 14 okt `r2-rode-draad`** (Van Dam, achterdochtig, hand aan zijn snor, bord met rode draad). Ingezet in app, startscherm, web, Android en TikTok-avatar. **Versie 1.2.1 (13) ingediend op 14 okt** (WAITING_FOR_REVIEW), met de aankoopteksten (negen inAppPurchaseSubmissions) en What's New in 23 winkeltalen. Pas dan worden de iconen vervangen. | `art/logo/`, later `icon-*.png`, `resources/`, `ios/App/App/Assets.xcassets/`, `android/app/src/main/res/`, het `splash-mark` in `index.html`, `store/social/tiktok-avatar.png` |
+| 14 okt | Mac | **Versie 1.3.0 (14)**: twee delen per wereld erbij (512 zaken), meesterniveau, verder waar je was, klok verbergen. Alle 20 talen vertaald en getest op 15 okt. Wacht op goedkeuring van 1.2.1; daarna 1.3.0 klaarzetten en indienen. Zie `docs/PLAN-1.3.md`. | `campaign.js`, `floorplan.js`, `board.js`, `i18n/`, `store/metadata/1.3.0*`, `store/cards-text/` |
 
 ## Voor de Mac-sessie
 
@@ -31,7 +31,7 @@ Klaargezet door een cloudsessie op 14 okt. Doe het in deze volgorde, zonder tuss
    Geef bij elke opdracht met `referentie: assets/vandam.jpg` dat portret mee als referentiebeeld.
 4. Download elk beeld met `art/logo/haal.sh <id> <url>`, maak het keuzeblad met `node art/logo/blad.js` en laat
    `art/logo/blad.html` aan Jaimy zien (bijvoorbeeld als artifact). De ruwe beelden blijven buiten git.
-**Gedaan op 14 okt (Mac):** stap 2 (189 aankoopteksten toegevoegd, 17 bestaande nl/en op slot, zie `store/social/LOGBOEK.md`), stap 3 en 4 (tien proeven, keuzeblad als artifact, link in de tabel hierboven). Open: stap 5.
+**Gedaan op 14 okt (Mac):** stap 2 (189 aankoopteksten toegevoegd, 17 bestaande nl/en op slot, zie `store/social/LOGBOEK.md`), stap 3 en 4 (tien proeven, keuzeblad als artifact, link in de tabel hierboven). Stap 5 ook gedaan: Jaimy koos `r2-rode-draad`, ingezet in 1.2.1.
 
 5. Zet de keuze van Jaimy hier in het overzicht. Het vervangen van de iconen (app, startscherm, winkel, kanalen)
    en versie 1.2.1 volgen daarna.
@@ -42,7 +42,8 @@ Klaargezet door een cloudsessie op 14 okt. Doe het in deze volgorde, zonder tuss
 |---|---|---|
 | iOS-app | Live sinds 22 sep (1.0, build 5), id 6812534368. 1.1 live sinds 3 okt. | `store/OPNAME.md`, `store/social/LOGBOEK.md` |
 | 1.1.2 | Goedgekeurd op 7 okt (mail van App Store Connect). | `store/ASO.md` |
-| 1.2 bij Apple | Build 1.2.0 (12) op TestFlight op 12 okt. **Goedgekeurd op 13 okt** om 12:09 (mail "Review of your Crimson Ledger: Crime Sudoku submission is complete"). Of hij automatisch is vrijgegeven, staat niet in de mail. | mailbox van het ontwikkelaarsaccount |
+| 1.2 bij Apple | 1.2.0 (12) goedgekeurd op 13 okt, READY_FOR_SALE. | `node store/asc-release.js status` |
+| 1.2.1 | Nieuw icoon (Van Dam, `r2-rode-draad`) en aankoopteksten. Ingediend 14 okt, op 15 okt nog WAITING_FOR_REVIEW. | `node store/asc-release.js status` |
 | Nederland (EU) | De NL-winkel toont de app (zoekposities gemeten op 4 en 12 okt). | `store/social/LOGBOEK.md` |
 | Cijfers | 7 dagen tot 8 okt: 245 vertoningen, 31 paginaweergaven, 7 downloads, 0 aankopen, 0 beoordelingen. 12 okt: "moordmysterie" van plek 2 naar 4, mogelijk door de NL-naam van 1.1.2 (niet gemeten). | `store/social/LOGBOEK.md` |
 | Featuring | Nominatie "App Enhancements" ingediend op 4 okt. | `store/NOMINATIE.md` |

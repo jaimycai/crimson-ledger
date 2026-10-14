@@ -384,7 +384,12 @@
     "🧊 {0} {0|one:vrije dag|other:vrije dagen}": "🧊 {0} izin günü",
     "Los nog {0} {0|one:zaak|other:zaken} op om {1} te openen. De dagelijkse zaak telt mee.": "{0} vaka daha çöz, {1} açılsın. Günlük vaka da sayılır.",
     "nog {0} {0|one:zaak|other:zaken} tot {1}": "{1} için {0} vaka daha",
-    "{0} {0|one:zaak|other:zaken} opgelost": "{0} vaka çözüldü"
+    "{0} {0|one:zaak|other:zaken} opgelost": "{0} vaka çözüldü",
+    "Meester": "Usta",
+    "Voor echte kenners": "Gerçek uzmanlar için",
+    "Je gaat verder waar je was.": "Kaldığın yerden devam ediyorsun.",
+    "⏱️ Klok tijdens een zaak": "⏱️ Vaka sırasında saat",
+    "Week {0} · {1} {2} · {3}. Elke week één speciale zaak op meesterniveau; iedereen speelt dezelfde. Deel je resultaat met andere speurders.": "Hafta {0} · {1} {2} · {3}. Her hafta usta seviyesinde özel bir vaka; herkes aynısını oynar. Sonucunu diğer hafiyelerle paylaş."
   },
 
   data: {
@@ -401,7 +406,8 @@
       "tutorial": "Alıştırma vakası",
       "makkelijk": "Kolay",
       "gemiddeld": "Orta",
-      "moeilijk": "Zor"
+      "moeilijk": "Zor",
+      "meester": "Usta"
     },
     "themes": {
       "landhuis": {
@@ -993,6 +999,10 @@
       "meester": [
         "Usta Dedektif",
         "En yüksek rütbeye ulaş"
+      ],
+      "meesterzaken": [
+        "Usta Hafiye",
+        "Usta seviyesinde beş vaka çöz"
       ]
     },
     "quests": {
@@ -3395,6 +3405,774 @@
           "Son İniş",
           "Dağdan aşağı. Son soru.",
           "🏁 Bitiş bayrağı"
+        ]
+      ]
+    ],
+    "landhuis-7": [
+      "Bölüm VII · Tadilat",
+      "Blackwood üç yıl sessiz kaldı. Sonra duvarcılar geliyor ve kırıp açtıkları ilk duvar, merdivenin altındaki oluyor.",
+      "İskeleler sökülüyor ve bahçeye bir tabela dikiliyor: satılık.",
+      "Duvarcılar duvarların içinden neler neler çıkarır, hepsi de benim masama gelir. Dokuza dokuz karelik bir kat planında kesin yerler azdır. İki kişiyi birbirine bağlayan ifadeleri art arda diz: bir halka kesinleşince gerisi de gelir.",
+      [
+        [
+          "İlk Delik",
+          "Duvarcı tek bir delik açtı. Sonra devam etmek istemedi.",
+          "🔨 Balyoz"
+        ],
+        [
+          "Döşemenin Altında Para",
+          "Döşemenin altında para vardı. Cinayete değmeyecek kadar az, dedi herkes.",
+          "💷 Banknot"
+        ],
+        [
+          "Duvar Kâğıdının Arkasında",
+          "Duvar kâğıdının arkasında bir aşk mektubu vardı. İsim yok, ama bir tarih var.",
+          "💌 Aşk mektubu"
+        ],
+        [
+          "Kirişteki Kalem Yazısı",
+          "Bir kirişe kurşun kalemle bir tarih yazılmıştı. Geçen haftanın tarihi.",
+          "✏️ Marangoz kalemi"
+        ],
+        [
+          "Binbaşı Pike Hiçbir Şeyi Tanımıyor",
+          "Tavan arasında kendi eski asker miğferi duruyordu. Hiç görmedim, dedi.",
+          "🪖 Asker miğferi"
+        ],
+        [
+          "Kırk Kavanoz Reçel",
+          "Mahzende kırk kavanoz reçel duruyordu. Birinin içinde reçel yoktu.",
+          "🫙 Reçel kavanozu"
+        ],
+        [
+          "Kırmızı İplik",
+          "Bir çivide kırmızı bir iplik asılıydı. Clementine bugün mavi giyiyordu.",
+          "🧵 Kırmızı iplik"
+        ],
+        [
+          "Duvardan Gelen Haber",
+          "Duvarın içinde 1927 tarihli bir gazete vardı. Akşam yemeğiyle ilgili haber eksikti.",
+          "🗞️ Eski gazete"
+        ]
+      ]
+    ],
+    "landhuis-8": [
+      "Bölüm VIII · Blackwood’a Veda",
+      "Bu sefer satış gerçekleşiyor. Ailenin Blackwood’u boşaltmak için yalnızca bir hafta sonu var.",
+      "Bahçe kapısı ardından kilitleniyor, aile arabayla uzaklaşıyor ve Blackwood dosyası temelli kapanıyor.",
+      "Ev satıldı, vakalar hâlâ açık. “Daha solda” ve “daha yukarıda” tek seferde bütün bir sütunu ya da satırı eler. Birinden daha solda duran asla kat planının en sağdaki sütununda olamaz; daha yukarıda duran asla en alt satırında olamaz.",
+      [
+        [
+          "Nakliyeciler",
+          "Nakliyeciler on iki sandık saydı. Kamyonda on üç tane vardı.",
+          "🚚 İrsaliye"
+        ],
+        [
+          "Değerleme Uzmanı",
+          "Değerleme uzmanı evdeki her parçayı övdü. Holdeki portre hariç.",
+          "🔎 Değerleme listesi"
+        ],
+        [
+          "Mortimer Yeniden Sayıyor",
+          "Bir zamanlar bir kaşık kaybolmuştu. Şimdi bir tane fazla vardı.",
+          "🍴 Çatal bıçak kutusu"
+        ],
+        [
+          "Kurumuş Gül",
+          "Kış bahçesinde kurumuş bir gül duruyordu. Biri onu hâlâ her gün suluyordu.",
+          "🥀 Solmuş gül"
+        ],
+        [
+          "Veda Yemeği",
+          "1927’dekiyle aynı masa. Kimse masanın başına oturmak istemedi.",
+          "🫗 Karaf"
+        ],
+        [
+          "Agatha Teyze Kalıyor",
+          "Herkes eşyalarını topluyordu. Agatha Teyze bir gözü kapıda, örgüsünü örmeye devam etti.",
+          "🧶 Örgü"
+        ],
+        [
+          "Dolu Depo",
+          "Garajdaki araba yıllardır çalışmıyordu. Deposu doluydu.",
+          "⛽ Benzin bidonu"
+        ],
+        [
+          "Son Satır",
+          "Hargrove kasa defterini kapattı. Son satırda tek bir isim yazılıydı.",
+          "📕 Kasa defteri"
+        ]
+      ]
+    ],
+    "piraten-7": [
+      "Bölüm VII · Kovalamaca",
+      "Zengin korsanlarla dolu bir gemi göze batar. Bir donanma fırkateyni Martı’nın peşine düşüyor ve onun nerede olduğunu hep biliyor.",
+      "Fırkateyn resifte karaya oturuyor ve Martı, onu hâlâ kabul edecek son limana rota çiziyor.",
+      "Gemi daha büyük görünüyor, tayfa daha az konuşuyor. Kurbanın bulunduğu bölmede yalnızca katil vardı. Bir ifade iki kişiyi aynı bölmeye koyuyorsa, ikisi de kurbanın bölmesinde olamaz.",
+      [
+        [
+          "Ölü ya da Diri Aranıyor",
+          "Her limanda yüzleri asılıydı. Bir afişte yüzlerden biri eksikti.",
+          "📃 Aranıyor afişi"
+        ],
+        [
+          "Bütün Yelkenler Açık",
+          "Bütün yelkenler açıktı. Yine de fırkateyn yaklaşıyordu.",
+          "🪡 Yelken iğnesi"
+        ],
+        [
+          "Uyarı Atışı",
+          "Fırkateyn bir kez ateş etti. Gemide biri iki patlama saydı.",
+          "🕳️ Kurşun deliği"
+        ],
+        [
+          "Beyaz Bayrak",
+          "Biri beyaz bayrağı çekti. Kimse teslim olmak istemiyordu.",
+          "🏳️ Beyaz bayrak"
+        ],
+        [
+          "Lostromo Grimsby Derinliği Ölçüyor",
+          "Altı kulaç diye bağırdı. Üç kulaçtı.",
+          "🧵 İskandil ipi"
+        ],
+        [
+          "Karanlıkta İşaretler",
+          "Bir lombozdan fırkateyne doğru bir ışık yanıp söndü. Üç kez, kısa kısa.",
+          "🪟 Lomboz"
+        ],
+        [
+          "Bayan Coral Yazıyor",
+          "Her akşam bir mektup yazardı. Bu seferki fırkateyne gidiyordu.",
+          "💌 Gizli not"
+        ],
+        [
+          "Resif",
+          "Fırkateyn resifte karaya oturdu. Hain hâlâ gemideydi.",
+          "🪸 Mercan parçası"
+        ]
+      ]
+    ],
+    "piraten-8": [
+      "Bölüm VIII · Son Liman",
+      "Martı, kimsenin soru sormadığı bir limana yanaşıyor. Burada temelli bağlanıp kalacak ve herkes gemiden son bir şey almak istiyor.",
+      "Kara Martı temelli bağlanıp kalıyor ve seyir defterindeki son söz senin.",
+      "Son bölüm ve en zoru. Bir ifade birinin kuzinede olmadığını söylüyorsa, o kişi için bütün kuzineyi tek seferde ele. Bu seni bir sürü saymaktan kurtarır.",
+      [
+        [
+          "Liman Reisi",
+          "Liman reisi hiç soru sormadı. Ama her şeyi not etti.",
+          "📗 Liman defteri"
+        ],
+        [
+          "Son Yük",
+          "Yük karaya indirildi. Bir sandık, listede yazandan ağır çekiyordu.",
+          "🪝 Yük kancası"
+        ],
+        [
+          "Saffron Bıçaklarını Topluyor",
+          "Çantasına on iki bıçak koydu. Gemide hep on bir bıçağı vardı.",
+          "👝 Bıçak çantası"
+        ],
+        [
+          "Alıcı",
+          "Bir alıcı Martı için altın teklif etti. Tek istediği ambarı görmekti.",
+          "📑 Satış senedi"
+        ],
+        [
+          "Thorne Topu Boşaltıyor",
+          "Top karaya çıkarılacaktı. Hâlâ doluydu.",
+          "🧨 Fitil"
+        ],
+        [
+          "Son Çapa",
+          "Çapa son kez atıldı. Zincirde bir şey asılıydı.",
+          "⛓️ Çapa zinciri"
+        ],
+        [
+          "Fareler Gidiyor",
+          "Gemiden ilk inenler fareler oldu. Bir şey biliyorlardı.",
+          "🪤 Sıçan kapanı"
+        ],
+        [
+          "Son Sayfa",
+          "Martı’nın seyir defterinde hâlâ bir sayfa boş.",
+          "📕 Kapalı seyir defteri"
+        ]
+      ]
+    ],
+    "hotel-7": [
+      "Bölüm VII · Müzayede",
+      "Bir ay sonra Aurora’daki her şey, piyanodan son kaşığa kadar, açık artırmaya çıkıyor. Eski misafirler ön sırada oturuyor.",
+      "Tokmak son kez iniyor: binanın kendisi dışında her şey satıldı.",
+      "Daha büyük kat planları, daha belirsiz ifadeler: bu müzayede kelepir değil. Bir şüphelinin hâlâ durabileceği her kareye kalemle nokta koy. İki şüphelinin aynı satırda olması gerekiyorsa noktalarını karşılaştır: ikisinden yalnızca birinin noktası olan bir satır elenir.",
+      [
+        [
+          "Ön İzleme Günü",
+          "Ön izleme gününde her şeyin üstünde bir etiket vardı. Bir etiketin ucunda hiçbir şey yoktu.",
+          "🏷️ Müzayede etiketi"
+        ],
+        [
+          "Katalog",
+          "77 numaralı parça katalogda iki kez geçiyordu. Oysa yalnızca bir tane 77 numaralı parça vardı.",
+          "📕 Müzayede kataloğu"
+        ],
+        [
+          "İlk Teklif",
+          "İlk teklif boş bir sandalyeden geldi.",
+          "🪧 Teklif kartı"
+        ],
+        [
+          "Kiloyla Çatal Bıçak",
+          "Gümüşler kiloyla satıldı. Bir kilo eksikti.",
+          "🍴 Otel çatal bıçağı"
+        ],
+        [
+          "Piyanist Felix Teklif Veriyor",
+          "Eski piyanosuna teklif verdi. Biri daha yüksek teklif verdi.",
+          "🪑 Piyano taburesi"
+        ],
+        [
+          "Altı Harf",
+          "Cephede altı harfle AURORA yazıyordu. Beşi hâlâ asılıydı.",
+          "🅰️ Cephe harfi"
+        ],
+        [
+          "Döner Kapı",
+          "Döner kapı çoktan satılmıştı. Gece yarısı bir kez daha döndü.",
+          "🔄 Döner kapı"
+        ],
+        [
+          "Son Parça",
+          "Son parça katalogda yoktu. Yine de ona teklif verildi.",
+          "🔨 Müzayede tokmağı"
+        ]
+      ]
+    ],
+    "hotel-8": [
+      "Bölüm VIII · Yıkım",
+      "Pazartesi yıkım topu geliyor. Ondan önceki hafta sonu eski misafirler boş koridorlarda son bir kez dolaşıyor.",
+      "Yıkım topu sallanıyor, toz yatışıyor ve Aurora’nın son dosyası kapanıyor.",
+      "Son bir kez Aurora, neredeyse yalnızca en zor vakalarla. Palmiye kötü bir saklanma yeridir: bir palmiyenin hemen yanında duran yalnızca birkaç karede olabilir. Önce eşyalarla ilgili bu ifadeleri bul ve oradan başla.",
+      [
+        [
+          "Ruhsat",
+          "Yıkıma pazartesiden itibaren izin vardı. Biri pazar günü başladı.",
+          "📃 Yıkım ruhsatı"
+        ],
+        [
+          "Baretli Kâhya Winslow",
+          "Kırk yıl papyon taktı. Bugün baret.",
+          "⛑️ Baret"
+        ],
+        [
+          "Eski Asansör",
+          "Asansör boşluğunda hâlâ bir misafir kartı asılıydı. Bir ismin üstü çizilmişti.",
+          "🛗 Asansör düğmesi"
+        ],
+        [
+          "Vinç",
+          "Vinçten bütün pencereler görünüyordu. Pencerelerden birinde biri duruyordu.",
+          "🏗️ Vinç kancası"
+        ],
+        [
+          "Son Vals",
+          "Parke satılmıştı. Yine de tozun üstünde dans adımları vardı.",
+          "🪩 Disko topu"
+        ],
+        [
+          "Temel Taşı",
+          "Temel taşının içinde bir zaman kapsülü vardı. Biri onu daha önce bulmuştu.",
+          "🫙 Zaman kapsülü"
+        ],
+        [
+          "404 Numaralı Oda Bulundu",
+          "Yıkım ekibi 404 numaralı odayı buldu. Çalar saat hâlâ tıkırdıyordu.",
+          "⏰ Tıkırdayan saat"
+        ],
+        [
+          "Son Saat",
+          "Aurora’nın ayakta kalacak bir saati vardı. Son soru için yeterli.",
+          "🧱 Son tuğla"
+        ]
+      ]
+    ],
+    "ruimte-7": [
+      "Bölüm VII · Karantina",
+      "Kapsül indi ve mürettebat karantinaya giriyor. Üç hafta, Dünya’da bir hangara kurulmuş birebir bir Orion kopyasında.",
+      "Kapıların açıldığı gün bir gemi okyanustan turuncu bir şey çıkarıyor.",
+      "Yeniden Dünya’da, ama hâlâ bir hava kilidinin arkasında. Bazı vakalar artık usta seviyesinde: daha büyük bir tahta, daha az doğrudan ifade. Bir modülde yalnız olan, başkaları hakkında da bir şey söyler: onun hemen yanında duran herkes bir duvarın öbür tarafındaydı.",
+      [
+        [
+          "Dünya’da Orion",
+          "Her modül son vidasına kadar kopyalanmıştı. Vidalardan biri gevşekti.",
+          "🔩 Gevşek vida"
+        ],
+        [
+          "Biyolog Wren Gün Sayıyor",
+          "Her günün üstünü çizerdi. Dün biri onun yerine çizmişti.",
+          "📆 Geri sayım takvimi"
+        ],
+        [
+          "Dr. Nkemelu Kan Alıyor",
+          "Sekiz tüp kan. Birinin üstünde isim yoktu.",
+          "🩸 Kan tüpü"
+        ],
+        [
+          "Cam Arkasında Ziyaret",
+          "Herkes ailesine el salladı. Biri başka yöne bakıyordu.",
+          "🪟 Gözlem camı"
+        ],
+        [
+          "Kapaktan Gelen Yemek",
+          "Günde üç öğün kapaktan veriliyordu. Biri el sürülmeden geri geldi.",
+          "🍱 Yemek tepsisi"
+        ],
+        [
+          "Yeniden Yerçekimi",
+          "Altı ay süzüldükten sonra her şey devrildi. Bir mazeret de.",
+          "🥤 Devrilmiş bardak"
+        ],
+        [
+          "Hava Filtresi",
+          "Filtre her şeyi yakaladı. Oraya ait olmayan bir saç teli dahil.",
+          "🌀 Hava filtresi"
+        ],
+        [
+          "Yirmi Birinci Gün",
+          "Kapılar açıldı. Bir yatakta hâlâ bir bileklik duruyordu.",
+          "📛 Bileklik"
+        ]
+      ]
+    ],
+    "ruimte-8": [
+      "Bölüm VIII · Kara Kutu",
+      "Orion’un her parçası yanmadı. Kara kutunun kaydı, kopya istasyonda modül modül dinletiliyor.",
+      "Kayıt susuyor, Orion dosyası kapanıyor ve bu sefer kapalı kalıyor.",
+      "Orion’un son bölümü, neredeyse tamamı usta seviyesinde. İki kişinin aynı modülde olması gerekiyorsa, diğer bütün ifadeleriyle birlikte ikisinin de sığabileceği bir modül ara. Çoğu zaman geriye tek bir modül kalır.",
+      [
+        [
+          "Okyanustan Çıkan",
+          "Deniz dibinden turuncu bir kutu. Her şeyi kaydetmişti.",
+          "🟧 Turuncu kutu"
+        ],
+        [
+          "Sıfırıncı Dakika",
+          "Kayıt sessizlikle başladı. Sonra bir kapak açıldı.",
+          "🎧 Kulaklık"
+        ],
+        [
+          "Mühendis Vega Dinliyor",
+          "İstasyondaki her sesi bilirdi. Bu tıslamayı bilmiyordu.",
+          "⚙️ Basınç vanası"
+        ],
+        [
+          "İki Ses",
+          "Makine odasında iki ses. Çizelgeye göre orada kimse yoktu.",
+          "🗣️ Ses izi"
+        ],
+        [
+          "Subay Paz Geri Sarıyor",
+          "Kaydı üç kez geri sardı. Sonra bir daha hiçbir şey söylemedi.",
+          "⏪ Geri sarma düğmesi"
+        ],
+        [
+          "On Bir Saniyelik Sessizlik",
+          "Saat 04:00’te kayıt on bir saniye kesildi. Kendiliğinden değil.",
+          "🔇 Sessiz düğmesi"
+        ],
+        [
+          "Botanikçi Fern Susuyor",
+          "Sesi her kayıtta vardı. Sonuncusunda yoktu.",
+          "🪴 Bitki çeliği"
+        ],
+        [
+          "Son Kayıt",
+          "Ayrılmadan önceki son dakika. Biri bir isim fısıldadı.",
+          "🗂️ Orion dosyası"
+        ]
+      ]
+    ],
+    "museum-7": [
+      "Bölüm VII · Ödünç Eser",
+      "Müze yeniden açık, sanki orada hiç kapı olmamış gibi. Floransa’dan ödünç ünlü bir tablo geliyor; binadan daha yüksek bir bedelle sigortalı.",
+      "Tablo Floransa’ya geri dönüyor ve sigortacı poliçeyi iptal ediyor.",
+      "Bundan sonra arada usta seviyesinde vakalar da var: daha büyük tahta, daha az tutunacak yer. İki kişi aynı satırı ya da sütunu paylaşıyorsa biri için tek bir kareye kalemle nokta koy ve diğerinin hâlâ nereye gidebileceğine bak. Diğerinin gidecek yeri yoksa ilki o karede değildi.",
+      [
+        [
+          "Floransa’dan Gelen Sandık",
+          "Etikete göre içinde tek bir tablo vardı. Sandık daha ağırdı.",
+          "🏷️ Nakliye etiketi"
+        ],
+        [
+          "Dört Vida",
+          "Dört vida çerçeveyi duvarda tutuyordu. Üçü kalmıştı.",
+          "🔩 Askı vidası"
+        ],
+        [
+          "Elli Lüks",
+          "Işık elli lüksü geçmemeliydi. Biri ışığı yükseltmişti.",
+          "🔆 Işıkölçer"
+        ],
+        [
+          "Restoratör Iris Kuşkulanıyor",
+          "Mikroskop altında boya, tablo için fazla gençti.",
+          "🔬 Boya örneği"
+        ],
+        [
+          "Basın Fotoğrafı",
+          "Basın fotoğrafında bir el fazlaydı.",
+          "📸 Basın fotoğrafı"
+        ],
+        [
+          "Sesli Tur",
+          "On dördüncü durak, hiçbir etikette olmayan bir isimden söz ediyordu.",
+          "🎧 Sesli rehber"
+        ],
+        [
+          "Profesör Adebayo Tabloyu Tanıyor",
+          "Tabloyu Vlierbeek’te çekilmiş eski bir slayttan tanıyordu.",
+          "🎞️ Eski slayt"
+        ],
+        [
+          "Floransa’ya Dönüş",
+          "Sandık kapatıldı. İçine giren, içinden çıkan değildi.",
+          "🪛 Tornavida"
+        ]
+      ]
+    ],
+    "museum-8": [
+      "Bölüm VIII · Yüzüncü Yıl",
+      "Vlierbeek sigortasız da olsa yüzüncü yaşını kutluyor. Kutlamada asıl tablo, elli yıllık yokluğun ardından evine dönüyor.",
+      "Tablo yeniden ait olduğu yerde asılı ve Vlierbeek dosyası temelli kapanıyor.",
+      "Artık neredeyse her vaka usta seviyesinde; bir müzeye de yakışır. Takıldığında hangi ifadeyi henüz kullanmadığını kendine sor. Kullandığın ifadeleri işaretle, kalanı bir bakışta görürsün.",
+      [
+        [
+          "Eve Dönüş",
+          "Elli yıl sonra tablo yeniden evinde asılıydı. Aynı çivilerde.",
+          "🫧 Balonlu naylon"
+        ],
+        [
+          "Yarıya İndirilen Bayrak",
+          "Çatıdaki bayrak yarıya indirilmişti. Daha kutlama başlamadan.",
+          "🚩 Çatı bayrağı"
+        ],
+        [
+          "Tek Bekçi",
+          "Sigorta yoktu, güvenlik ekibi tek kişiydi: Gus. Bir kez esnedi.",
+          "🍬 Nane şekeri"
+        ],
+        [
+          "Yüzüncü Yıl Madalyonu",
+          "Her misafire bir madalyon verildi. Birinin üstünde başka bir yıl yazıyordu.",
+          "🏅 Yüzüncü yıl madalyonu"
+        ],
+        [
+          "Bando",
+          "Bando yüzüncü yıl marşını çaldı. Bir trompet sessiz kaldı.",
+          "🎺 Trompet"
+        ],
+        [
+          "Küratör Ellery İsimleri Okuyor",
+          "Bütün küratörlerin isimlerini okudu. Birini atladı.",
+          "📘 Yüzüncü yıl kitabı"
+        ],
+        [
+          "Rehber Margot Anlatıyor",
+          "Yüz yılı on dakikada anlattı. Bir geceden hiç söz etmedi.",
+          "📏 İşaret çubuğu"
+        ],
+        [
+          "Vlierbeek Yüz Yaşında",
+          "Gece yarısı tam yüz yaşında. Son soru, soruların en eskisi.",
+          "🖼️ Asıl tablo"
+        ]
+      ]
+    ],
+    "trein-7": [
+      "Bölüm VII · Hangar",
+      "Hurdaya ayırma bahara erteleniyor. Tren kışı bir hangarda geçiriyor ve geceleri ziyaretçileri oluyor.",
+      "Baharda bir yabancı, Viyana’ya son bir sefer için treni satın alıyor.",
+      "Hangar göründüğünden büyük, bazı vakalar da öyle: dokuza dokuz kare. “Hemen yanında değil” yalnızca dört komşu kareyi eler. Bu ifadeleri en sona sakla.",
+      [
+        [
+          "Elektriksiz Işık",
+          "Yemekli vagonda bir ışık yanıyordu. Elektrik kesikti.",
+          "🔋 Akü"
+        ],
+        [
+          "Dağınık Yatak",
+          "Tren haftalardır boş duruyordu. A kompartımanındaki yatakta biri uyumuştu.",
+          "🧦 Yün çorap"
+        ],
+        [
+          "Sihirbaz Orlando Prova Yapıyor",
+          "Boş trende kaybolma numarasının provasını yaptı. Biri izliyordu.",
+          "🪄 Sihirli değnek"
+        ],
+        [
+          "Makas",
+          "Biri gece makası değiştirdi. Tren hâlâ içerideydi.",
+          "🎚️ Makas kolu"
+        ],
+        [
+          "Ateşçi Jules Duman Kokusu Alıyor",
+          "Kazan haftalardır soğuktu. Bu gece değil.",
+          "♨️ Basınç göstergesi"
+        ],
+        [
+          "Dul Bayan Duval Arıyor",
+          "İkinci bavulu almaya geldi. Biri ondan önce gelmişti.",
+          "🪡 Şapka iğnesi"
+        ],
+        [
+          "Camda Buz Çiçekleri",
+          "Camdaki buz çiçeklerinde bir isim vardı. Yarım bir isim.",
+          "🪟 Buzlu cam"
+        ],
+        [
+          "Satılık",
+          "Satılık: bir gece treni, on iki vagon. Tek bir yanıt geldi.",
+          "📰 Gazete ilanı"
+        ]
+      ]
+    ],
+    "trein-8": [
+      "Bölüm VIII · Varış",
+      "Tren eski rotada son bir kez Viyana’ya gidiyor. O geceki yolcuların hepsine birer bilet gelmiş, gönderen belli değil.",
+      "Viyana’da gece treni bir müzeye giriyor ve orada temelli kalıyor.",
+      "Son sefer ve neredeyse tamamı usta seviyesinde. Her vagonda eşyasız kareleri say: oraya en fazla o kadar kişi sığar. Küçük bir vagon çabuk dolar.",
+      [
+        [
+          "Davet",
+          "Herkes geldi. Kimse merak ettiğini kabul etmedi.",
+          "📩 Boş zarf"
+        ],
+        [
+          "Yine O Tünel",
+          "Saat dokuzda yine o tünel. Herkes nefesini tuttu.",
+          "🕰️ Şömine saati"
+        ],
+        [
+          "Birinci Sınıf",
+          "Barones birinci sınıfta seyahat ederdi. Bu trende birinci sınıf yoktu.",
+          "🦊 Kürk etol"
+        ],
+        [
+          "Yeni Kondüktör",
+          "Biri biletleri zımbaladı. Trenin kondüktörü yoktu.",
+          "🕳️ Bilet zımbası"
+        ],
+        [
+          "Aktris Lola Kendini Oynuyor",
+          "O geceyi yeniden canlandırdı. Biraz fazla kusursuz.",
+          "💄 Ruj"
+        ],
+        [
+          "Dokuzuncu Yolcu",
+          "Sekiz bilet gönderildi. Trende dokuz kişi vardı.",
+          "👔 Kravat"
+        ],
+        [
+          "Hemşire Hedda Uyumuyor",
+          "Bütün gece koridorda uyanık oturdu. Yine de biri önünden geçti.",
+          "🧩 Bulmaca kitabı"
+        ],
+        [
+          "Nihayet Viyana",
+          "Biletleri gönderen de trendeydi.",
+          "🚉 Peron bileti"
+        ]
+      ]
+    ],
+    "circus-7": [
+      "Bölüm VII · Kışlak",
+      "Çadır, katlanmış hâlde kışlağın ambarında duruyor: şehrin dışında bir çiftlik. Herkes bir alıcı bekliyor ve bir yandan da diğerlerini gözlüyor.",
+      "Alıcı gelmiyor, bu yüzden sirk son bir kez sahneye çıkıyor: gece, ambarda.",
+      "Kışlak büyük, ifadeler az şey söylüyor. Önce her alanda hangi karelerin köşede, hangilerinin duvar kenarında ya da ortada olduğuna bak. İki kare genişliğindeki bir alanın ortası yoktur: “ortada” duran başka bir alandadır.",
+      [
+        [
+          "Sekizinci Araba",
+          "Ambara yedi araba girdi. Sabah sekiz taneydi.",
+          "🛞 Araba tekerleği"
+        ],
+        [
+          "Rüzgâr Gülü",
+          "Ambarın üstündeki rüzgâr gülü dönüyordu. Hiç rüzgâr yoktu.",
+          "🐓 Rüzgâr gülü"
+        ],
+        [
+          "Pehlivan Boris Odun Kesiyor",
+          "Bütün kışa yetecek odunu kesti. Tek gecede.",
+          "🪚 Testere"
+        ],
+        [
+          "Buzdaki Delik",
+          "Gölet donmuştu. Bir yer hariç.",
+          "⛸️ Paten"
+        ],
+        [
+          "Makyajsız Palyaço Pippo",
+          "Makyajsız onu kimse tanımadı. Bu işine geldi.",
+          "💄 Makyaj kutusu"
+        ],
+        [
+          "Satılık Sirk",
+          "İlan gazetede çıktı. Kimse vermemişti.",
+          "🗞️ Gazete kupürü"
+        ],
+        [
+          "Veteriner Nadia Kalıyor",
+          "İşi bitmişti. Yine de bir hafta daha kaldı.",
+          "💼 Veteriner çantası"
+        ],
+        [
+          "Alıcı Vazgeçiyor",
+          "Alıcı arayıp vazgeçti. Çiftlikte biri bunu çoktan biliyordu.",
+          "☎️ Telefon ahizesi"
+        ]
+      ]
+    ],
+    "circus-8": [
+      "Bölüm VIII · Gece Gösterisi",
+      "Köy, fener ışığında ambardaki tek bir gösteriyi izlemeye geliyor. Pist samandan, sanatçılar aynı.",
+      "Son alkış ambarda sönüp gidiyor ve Zano Sirki’nden geriye yalnızca senin dosyan kalıyor.",
+      "Bu bölümdeki vakaların neredeyse hepsi en zor türden. Takılırsan birinin olası karelerinden birine kalemle nokta koy ve sanki oradaymış gibi düşünmeye devam et. Bu bir ifadeyle çelişirse o kare yanlıştır; kalemle yapılan bir hata hiçbir şeye mal olmaz.",
+      [
+        [
+          "Genel Prova",
+          "Provada programda olmayan bir numara vardı.",
+          "📑 Program kitapçığı"
+        ],
+        [
+          "Sunucu",
+          "Biri akşamı sunmalıydı. Hazırda bekleyen iki kişi vardı.",
+          "📢 Megafon"
+        ],
+        [
+          "Meşaleli Jonglör Teo",
+          "Samanla dolu bir ambarda beş meşale. Dördünü yakaladı.",
+          "🔥 Jonglör meşalesi"
+        ],
+        [
+          "Pamuk Şeker",
+          "Pamuk şeker makinesi bütün akşam döndü. Başında kimse yoktu.",
+          "🍭 Pamuk şeker"
+        ],
+        [
+          "Ara",
+          "Ara on dakika sürdü. Bir sanatçı için yirmi.",
+          "🔔 Ara zili"
+        ],
+        [
+          "Trapezci Mira Tırmanıyor",
+          "Trapezini bir kirişe astı. Kiriş yarıya kadar testereyle kesilmişti.",
+          "🪜 İp merdiven"
+        ],
+        [
+          "Biletçi Dottie Bilet Satıyor",
+          "Giriş ücretsizdi. Yine de bilet sattı.",
+          "💶 Bozuk para"
+        ],
+        [
+          "Ayakta Alkış",
+          "Herkes alkışlamak için ayağa kalktı. Biri oturmaya devam etti.",
+          "🪧 Sirk afişi"
+        ]
+      ]
+    ],
+    "skihut-7": [
+      "Bölüm VII · Sezon Dışı",
+      "Sonbaharda dağ evi boş. Yine de bir ışık yanıyor ve beş eski misafirin hâlâ anahtarı var.",
+      "İlk kar yağıyor ve yolu kapatıyor, tıpkı ilk seferki gibi.",
+      "Tahta büyüyor, ifadeler cimrileşiyor. Rapora göre bir oda boşsa, o odanın bütün kareleri beş kişinin hepsi için elenir; başka hiçbir yerde adı geçmeyen için de. Demek ki boş bir dağ evi de bir işe yarıyor.",
+      [
+        [
+          "Panjurların Ardında Işık",
+          "Bütün panjurlar kapalıydı. Birinin ardında bir ışık yanıyordu.",
+          "🪔 Gaz lambası"
+        ],
+        [
+          "Yedek Anahtarlar",
+          "Dört yedek anahtar vardı. İçeride beş misafir oturuyordu.",
+          "🔑 Yedek anahtar"
+        ],
+        [
+          "Eşyaların Üstünde Örtüler",
+          "Her eşya bir örtünün altındaydı. Birinin altında eşya yoktu.",
+          "🛋️ Toz örtüsü"
+        ],
+        [
+          "Aşçı Luigi Mantar Topluyor",
+          "Bir sepet dolusu topladı. Bir türü kitabında yoktu.",
+          "🍄 Mantar"
+        ],
+        [
+          "Fare Kapanı",
+          "Kilerdeki kapan kapanmıştı. İçinde fare yoktu.",
+          "🪤 Fare kapanı"
+        ],
+        [
+          "Turist Hana Kartpostal Yazıyor",
+          "Kartpostalı dağ evinden gelmişti. Dağ evi aylardır kapalıydı.",
+          "🏞️ Kartpostal"
+        ],
+        [
+          "Sessiz Teleferik",
+          "Sonbaharda teleferik çalışmıyordu. Yine de tepede bir kabin asılı duruyordu.",
+          "🚠 Teleferik kabini"
+        ],
+        [
+          "İlk Kar",
+          "İlk kar gece yarısı yağdı. Kapıya giden tek bir iz vardı.",
+          "🥾 Dağ botu"
+        ]
+      ]
+    ],
+    "skihut-8": [
+      "Bölüm VIII · Edelweiss",
+      "Yol kapalı, dağ evi dolu. Sobanın etrafında ilk akşamki yüzler oturuyor.",
+      "Van Dam defterini kapatıyor, sana başıyla selam veriyor ve taze karda acele etmeden vadiye doğru yürüyor.",
+      "Son vakalar, neredeyse hepsi büyük tahtada. En zor olana takılıp kalma: önce diğerlerini yerleştir, sonuncuya çoğu zaman tek bir kare kalır. Ben hep böyle yaptım.",
+      [
+        [
+          "Her Zamanki Yerler",
+          "Herkes ilk akşamki yerine oturdu. Biri hariç.",
+          "📇 Yer kartı"
+        ],
+        [
+          "Odun Yığını",
+          "Bütün kışa yetecek odun. Tek bir öğleden sonrada yarılmış, hem de hiç kimse tarafından.",
+          "🪓 Balta"
+        ],
+        [
+          "Bir Sayfa Eksik",
+          "Her kış herkes misafir defterini imzalardı. Bir kış eksikti.",
+          "📄 Kopmuş sayfa"
+        ],
+        [
+          "Donmuş Boru",
+          "Saat üçte boru dondu. Biri bir pencere açmıştı.",
+          "🚰 Donmuş musluk"
+        ],
+        [
+          "Küçük Kai Geç Yatıyor",
+          "Bu yıl geç yatmasına izin vardı. İstediğinden fazlasını gördü.",
+          "🧣 Yün atkı"
+        ],
+        [
+          "Çığ Vericisi",
+          "Verici mahzende bip bip ötüyordu. Orada kar yoktu.",
+          "📟 Çığ vericisi"
+        ],
+        [
+          "Dağ Rehberi Freya Tahmin Ediyor",
+          "Bir çığı saatine kadar önceden söyledi. Nasıl bildiğini söylemedi.",
+          "⛰️ Yükseklik ölçer"
+        ],
+        [
+          "Edelweiss",
+          "Sobanın başında başladı. Orada da bitiyor.",
+          "🌼 Kurutulmuş edelweiss"
         ]
       ]
     ]

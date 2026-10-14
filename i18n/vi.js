@@ -384,7 +384,12 @@
     "Nieuwe rang: {0}": "Cấp bậc mới: {0}",
     "{1} {0|one:dag|other:dagen} streak": "{1} ngày liên tiếp",
     "Combineer {1|one:aanwijzing|other:aanwijzingen} {0} met de spelregel over het slachtoffer.": "Kết hợp manh mối {0} với luật về nạn nhân.",
-    "{1|one:Aanwijzing|other:Aanwijzingen} {0} {1|one:beperkt|other:beperken} de opties. Streep vakjes weg die er niet aan voldoen.": "Manh mối {0} thu hẹp các khả năng. Hãy gạch bỏ những ô không phù hợp."
+    "{1|one:Aanwijzing|other:Aanwijzingen} {0} {1|one:beperkt|other:beperken} de opties. Streep vakjes weg die er niet aan voldoen.": "Manh mối {0} thu hẹp các khả năng. Hãy gạch bỏ những ô không phù hợp.",
+    "Meester": "Bậc thầy",
+    "Voor echte kenners": "Cho người sành sỏi",
+    "Je gaat verder waar je was.": "Bạn chơi tiếp từ chỗ đã dừng.",
+    "⏱️ Klok tijdens een zaak": "⏱️ Đồng hồ khi phá án",
+    "Week {0} · {1} {2} · {3}. Elke week één speciale zaak op meesterniveau; iedereen speelt dezelfde. Deel je resultaat met andere speurders.": "Tuần {0} · {1} {2} · {3}. Mỗi tuần một vụ án đặc biệt ở mức bậc thầy; ai cũng chơi cùng một vụ. Chia sẻ kết quả với các thám tử khác."
   },
 
   data: {
@@ -401,7 +406,8 @@
       "tutorial": "Vụ án luyện tập",
       "makkelijk": "Dễ",
       "gemiddeld": "Vừa",
-      "moeilijk": "Khó"
+      "moeilijk": "Khó",
+      "meester": "Bậc thầy"
     },
     "themes": {
       "landhuis": {
@@ -1073,6 +1079,10 @@
       "meester": [
         "Đại thám tử",
         "Đạt cấp bậc cao nhất"
+      ],
+      "meesterzaken": [
+        "Bậc thầy phá án",
+        "Giải năm vụ án ở mức bậc thầy"
       ]
     },
     "quests": {
@@ -3475,6 +3485,774 @@
           "Lần xuống núi cuối cùng",
           "Xuống núi. Câu hỏi cuối cùng.",
           "🏁 Cờ đích"
+        ]
+      ]
+    ],
+    "landhuis-7": [
+      "Phần VII · Cuộc cải tạo",
+      "Blackwood im lặng suốt ba năm. Rồi thợ xây đến, và bức tường đầu tiên họ đục ra là bức tường dưới cầu thang.",
+      "Giàn giáo được tháo dỡ, và một tấm biển được cắm trong vườn: cần bán.",
+      "Thợ xây tìm thấy đủ thứ trong tường, và tất cả đều được đưa đến bàn giấy của tôi. Trên một sơ đồ chín nhân chín ô, những chỗ chắc chắn rất hiếm. Hãy xâu chuỗi các lời khai liên kết hai người: chỉ cần cố định được một mắt xích, phần còn lại sẽ theo sau.",
+      [
+        [
+          "Lỗ thủng đầu tiên",
+          "Người thợ xây đục đúng một lỗ. Sau đó anh ta không chịu làm tiếp nữa.",
+          "🔨 Búa tạ"
+        ],
+        [
+          "Tiền dưới sàn nhà",
+          "Dưới sàn nhà có tiền. Ai cũng bảo số tiền đó không đáng để giết người.",
+          "💷 Tờ tiền"
+        ],
+        [
+          "Sau lớp giấy dán tường",
+          "Sau lớp giấy dán tường có một bức thư tình. Không có tên, chỉ có ngày tháng.",
+          "💌 Thư tình"
+        ],
+        [
+          "Bút chì trên thanh xà",
+          "Trên một thanh xà có ngày tháng viết bằng bút chì. Ngày của tuần trước.",
+          "✏️ Bút chì thợ mộc"
+        ],
+        [
+          "Thiếu tá Pike chẳng nhận ra gì",
+          "Trên gác mái có chiếc mũ sắt quân đội cũ của ông. Ông bảo chưa từng thấy nó.",
+          "🪖 Mũ sắt quân đội"
+        ],
+        [
+          "Bốn mươi hũ mứt",
+          "Dưới tầng hầm có bốn mươi hũ mứt. Một hũ không đựng mứt.",
+          "🫙 Hũ mứt"
+        ],
+        [
+          "Sợi chỉ đỏ",
+          "Một sợi chỉ đỏ vướng trên một chiếc đinh. Hôm nay Clementine mặc màu xanh dương.",
+          "🧵 Sợi chỉ đỏ"
+        ],
+        [
+          "Tin tức từ bức tường",
+          "Trong tường có một tờ báo từ năm 1927. Bài viết về bữa tối đã bị cắt mất.",
+          "🗞️ Báo cũ"
+        ]
+      ]
+    ],
+    "landhuis-8": [
+      "Phần VIII · Từ biệt Blackwood",
+      "Lần này thì bán được thật. Gia đình có đúng một kỳ cuối tuần để dọn hết đồ đạc khỏi Blackwood.",
+      "Cánh cổng sập khóa, gia đình lái xe đi, và hồ sơ Blackwood khép lại mãi mãi.",
+      "Nhà đã bán, nhưng các vụ án vẫn còn bỏ ngỏ. “Bên trái” và “hàng cao hơn” gạch bỏ cả cột, cả hàng cùng một lúc. Ai đứng bên trái một người khác thì không bao giờ ở cột ngoài cùng bên phải; ai đứng ở hàng cao hơn thì không bao giờ ở hàng dưới cùng.",
+      [
+        [
+          "Đội chuyển nhà",
+          "Đội chuyển nhà đếm được mười hai thùng. Trên xe lại có mười ba.",
+          "🚚 Vận đơn"
+        ],
+        [
+          "Người định giá",
+          "Người định giá khen mọi món đồ trong nhà. Trừ bức chân dung ở sảnh.",
+          "🔎 Bảng định giá"
+        ],
+        [
+          "Mortimer đếm lại",
+          "Hồi trước thiếu một chiếc thìa. Giờ lại thừa một chiếc.",
+          "🍴 Hộp dao nĩa"
+        ],
+        [
+          "Bông hồng chết",
+          "Trong nhà kính có một bông hồng đã chết. Vẫn có người ngày nào cũng tưới nó.",
+          "🥀 Hoa hồng héo"
+        ],
+        [
+          "Bữa tối chia tay",
+          "Vẫn chiếc bàn ấy như năm 1927. Không ai muốn ngồi ở đầu bàn.",
+          "🫗 Bình rượu"
+        ],
+        [
+          "Dì Agatha ở lại",
+          "Ai cũng đang thu dọn đồ. Dì Agatha vẫn ngồi đan, một mắt để ý cánh cửa.",
+          "🧶 Đồ đan len"
+        ],
+        [
+          "Bình xăng đầy",
+          "Chiếc xe trong nhà xe đã nhiều năm không chạy. Bình xăng thì đầy.",
+          "⛽ Can xăng"
+        ],
+        [
+          "Dòng cuối cùng",
+          "Hargrove gấp cuốn sổ cái lại. Ở dòng cuối cùng chỉ có một cái tên.",
+          "📕 Sổ cái"
+        ]
+      ]
+    ],
+    "piraten-7": [
+      "Phần VII · Cuộc truy đuổi",
+      "Một con tàu đầy cướp biển giàu có thì khó tránh bị chú ý. Một chiến hạm hải quân bám theo Mòng Biển, và lúc nào cũng biết nó đang ở đâu.",
+      "Chiến hạm mắc cạn trên rạn san hô, còn Mòng Biển hướng về bến cảng cuối cùng còn chịu đón nó.",
+      "Con tàu như rộng ra, còn thủy thủ đoàn thì nói ít đi. Chỉ có thủ phạm ở cùng nạn nhân. Nếu một lời khai đặt hai người vào cùng một khoang, thì không ai trong hai người đó ở cùng nạn nhân.",
+      [
+        [
+          "Truy nã, sống hay chết",
+          "Bến cảng nào cũng dán ảnh truy nã họ. Có một tấm thiếu mất một gương mặt.",
+          "📃 Tờ truy nã"
+        ],
+        [
+          "Căng hết buồm",
+          "Mọi cánh buồm đều đã căng. Vậy mà chiến hạm vẫn tiến lại gần hơn.",
+          "🪡 Kim khâu buồm"
+        ],
+        [
+          "Phát súng cảnh cáo",
+          "Chiến hạm bắn một phát. Trên tàu, có người đếm được hai tiếng nổ.",
+          "🕳️ Lỗ đạn"
+        ],
+        [
+          "Lá cờ trắng",
+          "Có người kéo cờ trắng. Không ai muốn đầu hàng.",
+          "🏳️ Cờ trắng"
+        ],
+        [
+          "Grimsby đo độ sâu",
+          "Ông hô sâu sáu sải. Thực ra chỉ có ba.",
+          "🧵 Dây đo sâu"
+        ],
+        [
+          "Tín hiệu trong bóng tối",
+          "Từ một ô cửa sổ mạn tàu, có ánh đèn nháy về phía chiến hạm. Ba lần ngắn.",
+          "🪟 Cửa sổ mạn tàu"
+        ],
+        [
+          "Cô Coral viết thư",
+          "Tối nào cô cũng viết một lá thư. Lá thư này gửi cho chiến hạm.",
+          "💌 Thư gửi lén"
+        ],
+        [
+          "Rạn san hô",
+          "Chiến hạm mắc cạn trên rạn san hô. Kẻ phản bội vẫn còn trên tàu.",
+          "🪸 Mảnh san hô"
+        ]
+      ]
+    ],
+    "piraten-8": [
+      "Phần VIII · Bến cảng cuối cùng",
+      "Mòng Biển cập vào một bến cảng nơi không ai hỏi han gì. Ở đây nó sẽ nằm neo mãi mãi, và ai cũng muốn lấy nốt một thứ gì đó từ trên tàu.",
+      "Tàu Mòng Biển Đen nằm neo mãi mãi, và lời cuối cùng trong nhật ký hải trình của nó là của bạn.",
+      "Phần cuối cùng, và cũng khó nhất. Nếu một lời khai nói ai đó không ở trong bếp tàu, hãy gạch bỏ toàn bộ bếp tàu cho người đó trong một lần. Đỡ phải đếm rất nhiều.",
+      [
+        [
+          "Trưởng cảng",
+          "Trưởng cảng không hỏi han gì. Nhưng ông ghi lại tất cả.",
+          "📗 Sổ đăng ký cảng"
+        ],
+        [
+          "Chuyến hàng cuối cùng",
+          "Hàng hóa được dỡ lên bờ. Một thùng nặng hơn con số trong danh sách.",
+          "🪝 Móc cẩu hàng"
+        ],
+        [
+          "Saffron gói dao",
+          "Cô xếp mười hai con dao vào túi. Trên tàu, cô chỉ có mười một con.",
+          "👝 Túi cuộn dao"
+        ],
+        [
+          "Người mua",
+          "Một người mua trả bằng vàng để có Mòng Biển. Ông ta chỉ muốn xem khoang hàng.",
+          "📑 Giấy mua bán"
+        ],
+        [
+          "Thorne tháo đạn khẩu pháo",
+          "Khẩu pháo phải được đưa lên bờ. Nó vẫn còn nạp đạn.",
+          "🧨 Ngòi nổ"
+        ],
+        [
+          "Lần thả neo cuối cùng",
+          "Mỏ neo được thả xuống lần cuối. Có thứ gì đó mắc trên sợi xích.",
+          "⛓️ Xích neo"
+        ],
+        [
+          "Lũ chuột rời tàu",
+          "Lũ chuột là những kẻ rời tàu đầu tiên. Chúng biết điều gì đó.",
+          "🪤 Bẫy chuột cống"
+        ],
+        [
+          "Trang cuối cùng",
+          "Trong nhật ký hải trình của Mòng Biển vẫn còn một trang trống.",
+          "📕 Nhật ký đã khép"
+        ]
+      ]
+    ],
+    "hotel-7": [
+      "Phần VII · Buổi đấu giá",
+      "Một tháng sau, mọi thứ của Aurora được đem ra đấu giá, từ cây đàn piano đến chiếc thìa cuối cùng. Những vị khách cũ ngồi ở hàng ghế đầu.",
+      "Tiếng búa gõ lần cuối: mọi thứ đã được bán, trừ chính tòa nhà.",
+      "Sơ đồ lớn hơn, lời khai mơ hồ hơn: buổi đấu giá này chẳng phải món hời. Hãy dùng bút chì chấm một dấu vào mọi ô mà một nghi phạm còn có thể đứng. Nếu hai nghi phạm phải ở cùng một hàng, hãy so các dấu chấm của họ: hàng nào chỉ một trong hai người có dấu chấm thì bị loại.",
+      [
+        [
+          "Ngày xem hàng",
+          "Ngày xem hàng, món nào cũng gắn một tấm thẻ. Có một tấm thẻ không gắn vào món nào.",
+          "🏷️ Thẻ lô hàng"
+        ],
+        [
+          "Cuốn danh mục",
+          "Lô 77 xuất hiện hai lần trong danh mục. Chỉ có một lô 77.",
+          "📕 Danh mục đấu giá"
+        ],
+        [
+          "Lần trả giá đầu tiên",
+          "Lần trả giá đầu tiên đến từ một chiếc ghế trống.",
+          "🪧 Bảng trả giá"
+        ],
+        [
+          "Dao nĩa tính theo kilô",
+          "Đồ bạc được bán đấu giá theo kilô. Thiếu mất một kilô.",
+          "🍴 Dao nĩa khách sạn"
+        ],
+        [
+          "Nghệ sĩ piano Felix trả giá",
+          "Ông trả giá cho cây đàn piano cũ của mình. Có người trả cao hơn.",
+          "🪑 Ghế đàn piano"
+        ],
+        [
+          "Sáu chữ cái",
+          "Trên mặt tiền có chữ AURORA, sáu chữ cái. Giờ chỉ còn năm chữ.",
+          "🅰️ Chữ trên mặt tiền"
+        ],
+        [
+          "Cửa xoay",
+          "Cánh cửa xoay đã được bán. Đến nửa đêm, nó vẫn xoay thêm một vòng.",
+          "🔄 Cửa xoay"
+        ],
+        [
+          "Lô hàng cuối cùng",
+          "Lô cuối cùng không có trong danh mục. Vậy mà vẫn có người trả giá.",
+          "🔨 Búa đấu giá"
+        ]
+      ]
+    ],
+    "hotel-8": [
+      "Phần VIII · Ngày phá dỡ",
+      "Thứ Hai, quả tạ phá dỡ sẽ tới. Cuối tuần trước đó, những vị khách cũ đi dọc những hành lang trống lần cuối cùng.",
+      "Quả tạ phá dỡ vung lên, bụi lắng xuống, và hồ sơ cuối cùng về Aurora khép lại.",
+      "Aurora thêm một lần cuối, gần như toàn những vụ án khó nhất. Cây cọ là chỗ ẩn nấp tồi: ai đứng ngay cạnh một cây cọ thì chỉ có thể ở vài ô. Hãy tìm những lời khai về đồ đạc ấy trước và bắt đầu từ đó.",
+      [
+        [
+          "Giấy phép",
+          "Được phép phá dỡ từ thứ Hai. Có người bắt đầu từ Chủ nhật.",
+          "📃 Giấy phép phá dỡ"
+        ],
+        [
+          "Quản gia Winslow đội mũ bảo hộ",
+          "Bốn mươi năm ông thắt nơ. Hôm nay ông đội mũ bảo hộ.",
+          "⛑️ Mũ bảo hộ"
+        ],
+        [
+          "Thang máy cũ",
+          "Trong giếng thang máy còn treo một tấm thẻ khách. Một cái tên đã bị gạch đi.",
+          "🛗 Nút thang máy"
+        ],
+        [
+          "Cần cẩu",
+          "Từ cần cẩu, có thể thấy mọi ô cửa sổ. Ở một ô cửa có người đứng.",
+          "🏗️ Móc cần cẩu"
+        ],
+        [
+          "Điệu valse cuối cùng",
+          "Sàn gỗ đã được bán. Vậy mà trên lớp bụi vẫn có dấu những bước nhảy.",
+          "🪩 Quả cầu gương"
+        ],
+        [
+          "Viên đá đầu tiên",
+          "Trong viên đá đầu tiên có một hộp thời gian. Có người đã đến trước.",
+          "🫙 Hộp thời gian"
+        ],
+        [
+          "Tìm thấy phòng 404",
+          "Đội phá dỡ tìm thấy phòng 404. Chiếc đồng hồ báo thức vẫn tích tắc.",
+          "⏰ Đồng hồ báo thức"
+        ],
+        [
+          "Giờ cuối cùng",
+          "Aurora còn đứng vững thêm một giờ. Đủ cho câu hỏi cuối cùng.",
+          "🧱 Viên gạch cuối cùng"
+        ]
+      ]
+    ],
+    "ruimte-7": [
+      "Phần VII · Cách ly",
+      "Khoang trở về đã hạ cánh, và phi hành đoàn vào khu cách ly. Ba tuần, trong một bản sao Orion bằng kích thước thật, đặt trong một nhà chứa máy bay trên Trái Đất.",
+      "Vào ngày cửa mở, một con tàu vớt được một thứ màu cam từ dưới đại dương lên.",
+      "Đã về Trái Đất mà vẫn ở sau cửa khóa khí. Một số vụ án giờ ở mức bậc thầy: bàn chơi lớn hơn, ít lời khai trực tiếp hơn. Ai ở một mình trong một mô-đun cũng cho bạn biết về những người khác: ai đứng ngay cạnh người đó thì đứng ở phía bên kia một bức tường.",
+      [
+        [
+          "Orion trên Trái Đất",
+          "Mọi mô-đun được dựng lại đến từng con ốc. Có một con ốc bị lỏng.",
+          "🔩 Con ốc lỏng"
+        ],
+        [
+          "Nhà sinh vật học Wren đếm ngày",
+          "Ngày nào cô cũng gạch bỏ một ngày trên lịch. Hôm qua có người đã gạch thay cô.",
+          "📆 Lịch đếm ngược"
+        ],
+        [
+          "Bác sĩ Nkemelu lấy máu",
+          "Tám ống máu. Một ống không có tên.",
+          "🩸 Ống máu"
+        ],
+        [
+          "Thăm qua lớp kính",
+          "Ai cũng vẫy tay chào gia đình. Có một người nhìn sang hướng khác.",
+          "🪟 Cửa kính quan sát"
+        ],
+        [
+          "Bữa ăn qua cửa sập",
+          "Ba bữa mỗi ngày đưa qua cửa sập. Một khay quay về còn nguyên.",
+          "🍱 Khay cơm"
+        ],
+        [
+          "Lại có trọng lực",
+          "Sau nửa năm lơ lửng, mọi thứ đổ nhào. Một chứng cứ ngoại phạm cũng vậy.",
+          "🥤 Cốc bị đổ"
+        ],
+        [
+          "Bộ lọc không khí",
+          "Bộ lọc giữ lại mọi thứ. Cả một sợi tóc lẽ ra không có ở đó.",
+          "🌀 Bộ lọc không khí"
+        ],
+        [
+          "Ngày thứ hai mươi mốt",
+          "Cửa mở ra. Một chiếc vòng tay vẫn nằm trên giường.",
+          "📛 Vòng đeo tay"
+        ]
+      ]
+    ],
+    "ruimte-8": [
+      "Phần VIII · Hộp đen",
+      "Không phải mọi thứ của Orion đều đã cháy. Hộp đen được phát lại trong bản sao của trạm, từng mô-đun một.",
+      "Hộp đen im bặt, hồ sơ Orion khép lại, và lần này thì khép hẳn.",
+      "Phần cuối của Orion, gần như toàn bộ ở mức bậc thầy. Khi hai người phải ở cùng một mô-đun, hãy tìm mô-đun mà cả hai đều vừa, tính cả mọi lời khai khác của họ. Thường chỉ còn lại một.",
+      [
+        [
+          "Từ đáy đại dương",
+          "Một chiếc hộp màu cam từ đáy biển. Nó đã ghi lại mọi thứ.",
+          "🟧 Hộp màu cam"
+        ],
+        [
+          "Phút số không",
+          "Bản ghi bắt đầu bằng im lặng. Rồi một cửa sập mở ra.",
+          "🎧 Tai nghe"
+        ],
+        [
+          "Kỹ sư Vega lắng nghe",
+          "Cô biết mọi âm thanh trên trạm. Trừ tiếng xì này.",
+          "⚙️ Van áp suất"
+        ],
+        [
+          "Hai giọng nói",
+          "Hai giọng nói trong phòng máy. Theo lịch trực, ở đó không có ai.",
+          "🗣️ Mẫu giọng nói"
+        ],
+        [
+          "Sĩ quan Paz tua lại",
+          "Cô tua lại ba lần. Sau đó cô không nói gì nữa.",
+          "⏪ Nút tua lại"
+        ],
+        [
+          "Mười một giây im lặng",
+          "Lúc 04:00, bản ghi mất tiếng suốt mười một giây. Không phải tự nhiên mà mất.",
+          "🔇 Nút tắt tiếng"
+        ],
+        [
+          "Nhà thực vật học Fern im lặng",
+          "Giọng cô có trong mọi bản ghi. Trừ bản cuối cùng.",
+          "🪴 Cành giâm"
+        ],
+        [
+          "Bản ghi cuối cùng",
+          "Phút cuối cùng trước khi tách khỏi trạm. Có người thì thầm một cái tên.",
+          "🗂️ Hồ sơ Orion"
+        ]
+      ]
+    ],
+    "museum-7": [
+      "Phần VII · Bức tranh cho mượn",
+      "Bảo tàng mở cửa trở lại, như thể chưa từng có cánh cửa nào. Một bức tranh nổi tiếng từ Florence được cho mượn, với mức bảo hiểm cao hơn cả giá trị tòa nhà.",
+      "Bức tranh trở về Florence, và hãng bảo hiểm hủy hợp đồng.",
+      "Từ đây bắt đầu có những vụ án bậc thầy: bàn chơi lớn hơn, ít điểm tựa hơn. Khi hai người chung một hàng hoặc một cột, hãy đặt một người bằng bút chì rồi xem người kia còn có thể đứng ở đâu. Nếu người kia không còn chỗ nào, thì người thứ nhất không đứng ở đó.",
+      [
+        [
+          "Thùng hàng từ Florence",
+          "Theo nhãn, bên trong có một bức tranh. Thùng hàng thì nặng hơn.",
+          "🏷️ Nhãn vận chuyển"
+        ],
+        [
+          "Bốn con vít",
+          "Bốn con vít giữ khung tranh trên tường. Giờ chỉ còn ba.",
+          "🔩 Vít treo tranh"
+        ],
+        [
+          "Năm mươi lux",
+          "Ánh sáng không được vượt quá năm mươi lux. Có người đã vặn cao hơn.",
+          "🔆 Máy đo ánh sáng"
+        ],
+        [
+          "Thợ phục chế Iris nghi ngờ",
+          "Dưới kính hiển vi, lớp sơn quá mới so với bức tranh.",
+          "🔬 Mẫu sơn"
+        ],
+        [
+          "Tấm ảnh báo chí",
+          "Tấm ảnh báo chí có thừa một bàn tay.",
+          "📸 Ảnh báo chí"
+        ],
+        [
+          "Bản thuyết minh",
+          "Điểm dừng số mười bốn nhắc đến một cái tên không có trên tấm biển nào.",
+          "🎧 Máy thuyết minh"
+        ],
+        [
+          "Giáo sư Adebayo nhận ra",
+          "Ông biết bức tranh qua một tấm phim slide cũ, chụp ở Vlierbeek.",
+          "🎞️ Phim slide cũ"
+        ],
+        [
+          "Trở về Florence",
+          "Thùng hàng được đóng lại. Thứ cho vào không phải là thứ lấy ra.",
+          "🪛 Tua vít"
+        ]
+      ]
+    ],
+    "museum-8": [
+      "Phần VIII · Lễ kỷ niệm trăm năm",
+      "Không có bảo hiểm, Vlierbeek vẫn mừng sinh nhật lần thứ một trăm. Tại bữa tiệc, bức tranh thật trở về nhà, sau năm mươi năm xa cách.",
+      "Bức tranh lại treo đúng chỗ của nó, và hồ sơ Vlierbeek khép lại mãi mãi.",
+      "Giờ gần như vụ nào cũng là vụ án bậc thầy; trong bảo tàng thì thế mới hợp. Khi bị bí, hãy tự hỏi lời khai nào bạn chưa dùng đến. Đánh dấu lời khai nào bạn đã dùng, rồi chỉ cần liếc qua là thấy.",
+      [
+        [
+          "Ngày trở về",
+          "Sau năm mươi năm, bức tranh lại treo ở nhà. Trên đúng những chiếc đinh cũ.",
+          "🫧 Xốp bong bóng"
+        ],
+        [
+          "Cờ rủ",
+          "Lá cờ trên mái treo rủ. Từ trước khi bữa tiệc bắt đầu.",
+          "🚩 Cờ trên mái"
+        ],
+        [
+          "Người bảo vệ duy nhất",
+          "Không có bảo hiểm, Gus là toàn bộ lực lượng bảo vệ. Ông ngáp đúng một lần.",
+          "🍬 Kẹo bạc hà"
+        ],
+        [
+          "Kỷ niệm chương",
+          "Mỗi vị khách nhận một kỷ niệm chương. Có một chiếc khắc một năm khác.",
+          "🏅 Kỷ niệm chương"
+        ],
+        [
+          "Dàn kèn đồng",
+          "Dàn kèn đồng chơi bản nhạc mừng trăm năm. Một cây kèn trumpet vẫn im tiếng.",
+          "🎺 Kèn trumpet"
+        ],
+        [
+          "Giám tuyển Ellery đọc tên",
+          "Ông đọc tên tất cả các giám tuyển. Ông bỏ qua một cái tên.",
+          "📘 Sách kỷ niệm"
+        ],
+        [
+          "Hướng dẫn viên Margot kể chuyện",
+          "Cô kể một trăm năm trong mười phút. Cô bỏ qua một đêm.",
+          "📏 Que chỉ"
+        ],
+        [
+          "Vlierbeek tròn trăm tuổi",
+          "Tròn một trăm tuổi lúc nửa đêm. Câu hỏi cuối cùng là câu hỏi lâu đời nhất.",
+          "🖼️ Bản gốc"
+        ]
+      ]
+    ],
+    "trein-7": [
+      "Phần VII · Nhà chứa tàu",
+      "Việc tháo dỡ được hoãn đến mùa xuân. Con tàu qua mùa đông trong một nhà chứa tàu, và ban đêm lại có khách đến thăm.",
+      "Mùa xuân, một người lạ mua lại con tàu, cho một chuyến cuối cùng tới Vienna.",
+      "Nhà chứa tàu lớn hơn vẻ ngoài, và một số vụ án cũng vậy: chín nhân chín ô. “Không đứng ngay cạnh” chỉ loại bốn ô. Hãy để những lời khai đó lại sau cùng.",
+      [
+        [
+          "Đèn sáng mà không có điện",
+          "Trong toa ăn có đèn sáng. Điện thì đã bị cắt.",
+          "🔋 Ắc quy"
+        ],
+        [
+          "Chiếc giường có người nằm",
+          "Con tàu đã bỏ không nhiều tuần. Chiếc giường trong khoang A có dấu người nằm.",
+          "🧦 Tất len"
+        ],
+        [
+          "Ảo thuật gia Orlando tập luyện",
+          "Ông tập trò biến mất trong con tàu trống. Có người đang nhìn.",
+          "🪄 Đũa phép"
+        ],
+        [
+          "Bẻ ghi",
+          "Đêm qua có người bẻ ghi. Con tàu vẫn nằm trong nhà chứa.",
+          "🎚️ Cần bẻ ghi"
+        ],
+        [
+          "Thợ đốt lò Jules ngửi thấy khói",
+          "Nồi hơi đã nguội nhiều tuần. Đêm nay thì không.",
+          "♨️ Đồng hồ áp suất"
+        ],
+        [
+          "Bà góa Duval tìm kiếm",
+          "Bà đến lấy chiếc vali thứ hai. Có người đã đến trước.",
+          "🪡 Kim cài mũ"
+        ],
+        [
+          "Hoa băng trên ô kính",
+          "Trong hoa băng trên ô kính có một cái tên. Một nửa cái tên.",
+          "🪟 Ô kính đóng băng"
+        ],
+        [
+          "Cần bán",
+          "Cần bán: một tàu đêm, mười hai toa. Chỉ có một người hồi âm.",
+          "📰 Tin rao vặt"
+        ]
+      ]
+    ],
+    "trein-8": [
+      "Phần VIII · Đến nơi",
+      "Con tàu chạy tuyến đường cũ tới Vienna thêm một lần nữa. Mọi hành khách năm xưa đều nhận được một tấm vé, không ghi người gửi.",
+      "Ở Vienna, chuyến tàu đêm lăn bánh vào một bảo tàng và nằm lại đó mãi mãi.",
+      "Chuyến đi cuối cùng, và gần như toàn bộ ở mức bậc thầy. Trong mỗi toa, hãy đếm những ô không có đồ đạc: chỉ chừng ấy người vừa trong toa, không hơn. Một toa nhỏ sẽ đầy rất nhanh.",
+      [
+        [
+          "Thư mời",
+          "Ai cũng đến. Không ai thừa nhận mình tò mò.",
+          "📩 Phong bì trống"
+        ],
+        [
+          "Lại đường hầm ấy",
+          "Chín giờ, lại đường hầm ấy. Ai cũng nín thở.",
+          "🕰️ Đồng hồ để bàn"
+        ],
+        [
+          "Hạng nhất",
+          "Nữ nam tước luôn đi hạng nhất. Chuyến tàu này không có hạng nhất.",
+          "🦊 Khăn choàng lông"
+        ],
+        [
+          "Người soát vé mới",
+          "Có người bấm vé. Chuyến tàu không có người soát vé.",
+          "🕳️ Kìm bấm vé"
+        ],
+        [
+          "Nữ diễn viên Lola đóng chính mình",
+          "Cô diễn lại buổi tối năm ấy. Hơi quá chính xác.",
+          "💄 Son môi"
+        ],
+        [
+          "Hành khách thứ chín",
+          "Tám tấm vé được gửi đi. Chín người trên tàu.",
+          "👔 Cà vạt"
+        ],
+        [
+          "Y tá Hedda thức trắng",
+          "Cô ngồi canh ngoài hành lang suốt đêm. Vậy mà vẫn có người lọt qua.",
+          "🧩 Sách giải đố"
+        ],
+        [
+          "Cuối cùng cũng tới Vienna",
+          "Người gửi những tấm vé cũng có mặt trên tàu.",
+          "🚉 Vé sân ga"
+        ]
+      ]
+    ],
+    "circus-7": [
+      "Phần VII · Nơi trú đông",
+      "Căn lều nằm gấp gọn trong nhà kho của nơi trú đông, một trang trại ngoài thị trấn. Ai cũng chờ người mua và để mắt đến những người khác.",
+      "Không có người mua nào đến, nên rạp xiếc diễn thêm một lần: ban đêm, trong nhà kho.",
+      "Nơi trú đông thì rộng mà lời khai thì nói được ít. Trước tiên, hãy đánh dấu trong mỗi khu vực những ô nào ở góc, sát tường hay ở giữa. Một khu vực chỉ rộng hai ô thì không có ô nào ở giữa: ai “ở giữa” thì đứng ở nơi khác.",
+      [
+        [
+          "Chiếc xe thứ tám",
+          "Bảy chiếc xe lăn bánh vào nhà kho. Sáng ra có tám chiếc.",
+          "🛞 Bánh xe"
+        ],
+        [
+          "Chong chóng gió",
+          "Chong chóng gió trên nóc nhà kho đang quay. Trời không có gió.",
+          "🐓 Chong chóng gió"
+        ],
+        [
+          "Lực sĩ Boris xẻ gỗ",
+          "Anh ta xẻ đủ gỗ cho cả mùa đông. Chỉ trong một đêm.",
+          "🪚 Cưa gỗ"
+        ],
+        [
+          "Lỗ băng trên ao",
+          "Mặt ao đã đóng băng. Trừ một chỗ.",
+          "⛸️ Giày trượt băng"
+        ],
+        [
+          "Chú hề Pippo không hóa trang",
+          "Không có lớp hóa trang, không ai nhận ra anh ta. Thật là tiện.",
+          "💄 Hộp phấn hóa trang"
+        ],
+        [
+          "Rạp xiếc cần bán",
+          "Mẩu quảng cáo đã lên báo. Không ai đăng nó cả.",
+          "🗞️ Mẩu báo cắt"
+        ],
+        [
+          "Bác sĩ thú y Nadia ở lại",
+          "Việc của cô đã xong. Vậy mà cô ở lại thêm một tuần.",
+          "💼 Túi đồ thú y"
+        ],
+        [
+          "Người mua hủy hẹn",
+          "Người mua gọi điện hủy. Ở trang trại, có người đã biết trước.",
+          "☎️ Ống nghe điện thoại"
+        ]
+      ]
+    ],
+    "circus-8": [
+      "Phần VIII · Buổi diễn ban đêm",
+      "Cả làng đến xem một buổi diễn trong nhà kho, dưới ánh đèn bão. Sàn diễn trải rơm, các nghệ sĩ vẫn là những người cũ.",
+      "Tràng pháo tay cuối cùng lắng xuống trong nhà kho, và tất cả những gì còn lại của Rạp xiếc Zano là hồ sơ của bạn.",
+      "Gần như mọi vụ án trong phần này đều thuộc loại khó nhất. Khi bị bí, hãy dùng bút chì đặt một người vào một chỗ có thể, rồi suy luận tiếp từ đó. Nếu việc đó làm một lời khai không còn đúng, thì chỗ đó sai; sai bằng bút chì thì chẳng mất gì.",
+      [
+        [
+          "Buổi tổng duyệt",
+          "Trong buổi tổng duyệt có một tiết mục không có trong chương trình.",
+          "📑 Tờ chương trình"
+        ],
+        [
+          "Người dẫn chương trình",
+          "Phải có người giới thiệu buổi diễn. Có hai người đã sẵn sàng.",
+          "📢 Loa cầm tay"
+        ],
+        [
+          "Những ngọn đuốc của Teo",
+          "Năm ngọn đuốc trong một nhà kho đầy rơm. Anh ta bắt được bốn.",
+          "🔥 Đuốc tung hứng"
+        ],
+        [
+          "Kẹo bông",
+          "Máy làm kẹo bông chạy suốt buổi tối. Không ai đứng sau máy.",
+          "🍭 Kẹo bông"
+        ],
+        [
+          "Giờ nghỉ giữa buổi",
+          "Giờ nghỉ kéo dài mười phút. Với một nghệ sĩ thì là hai mươi.",
+          "🔔 Chuông giải lao"
+        ],
+        [
+          "Nghệ sĩ đu bay Mira leo lên",
+          "Cô treo đu bay lên một thanh xà. Thanh xà đã bị cưa đứt một nửa.",
+          "🪜 Thang dây"
+        ],
+        [
+          "Cô bán vé Dottie bán vé",
+          "Vào cửa miễn phí. Vậy mà cô vẫn bán vé.",
+          "💶 Tiền lẻ"
+        ],
+        [
+          "Đứng dậy vỗ tay",
+          "Mọi người đứng dậy vỗ tay. Có một người vẫn ngồi yên.",
+          "🪧 Áp phích xiếc"
+        ]
+      ]
+    ],
+    "skihut-7": [
+      "Phần VII · Mùa vắng khách",
+      "Vào mùa thu, nhà nghỉ bỏ trống. Vậy mà vẫn có đèn sáng, và năm vị khách cũ vẫn còn giữ chìa khóa.",
+      "Trận tuyết đầu mùa rơi xuống và chặn con đường, y như lần đầu tiên.",
+      "Bàn chơi lớn hơn, còn lời khai thì dè sẻn hơn. Nếu báo cáo nói một phòng bỏ trống, thì toàn bộ các ô của phòng đó bị loại đối với cả năm người, kể cả người không được nhắc đến ở bất kỳ đâu khác. Hóa ra một nhà nghỉ trống vẫn có ích.",
+      [
+        [
+          "Ánh đèn sau cửa chớp",
+          "Mọi cửa chớp đều đóng. Sau một cánh, có đèn sáng.",
+          "🪔 Đèn dầu"
+        ],
+        [
+          "Chìa khóa dự phòng",
+          "Có bốn chiếc chìa khóa dự phòng. Bên trong có năm vị khách.",
+          "🔑 Chìa khóa dự phòng"
+        ],
+        [
+          "Khăn phủ đồ đạc",
+          "Đồ đạc nào cũng nằm dưới một tấm khăn phủ. Dưới một tấm lại chẳng có đồ đạc gì.",
+          "🛋️ Khăn phủ bụi"
+        ],
+        [
+          "Đầu bếp Luigi hái nấm",
+          "Anh ta hái đầy một giỏ. Có một loại không có trong sách của anh ta.",
+          "🍄 Cây nấm"
+        ],
+        [
+          "Bẫy chuột",
+          "Chiếc bẫy trong kho thực phẩm đã sập. Không có con chuột nào.",
+          "🪤 Bẫy chuột"
+        ],
+        [
+          "Du khách Hana gửi bưu thiếp",
+          "Tấm bưu thiếp của cô gửi đi từ nhà nghỉ. Nhà nghỉ đã đóng cửa nhiều tháng.",
+          "🏞️ Bưu thiếp"
+        ],
+        [
+          "Cáp treo im lìm",
+          "Mùa thu, cáp treo không chạy. Vậy mà có một cabin treo trên đỉnh.",
+          "🚠 Cabin cáp treo"
+        ],
+        [
+          "Trận tuyết đầu mùa",
+          "Trận tuyết đầu mùa rơi lúc nửa đêm. Một vệt dấu chân dẫn tới cửa.",
+          "🥾 Giày leo núi"
+        ]
+      ]
+    ],
+    "skihut-8": [
+      "Phần VIII · Edelweiss",
+      "Đường đã bị chặn và nhà nghỉ kín khách. Quanh lò sưởi vẫn là những gương mặt của đêm đầu tiên.",
+      "Van Dam gấp cuốn sổ tay lại, gật đầu với bạn, rồi thong thả đi xuống thung lũng qua lớp tuyết mới.",
+      "Những vụ án cuối cùng, gần như đều trên bàn chơi lớn. Đừng sa lầy vào người khó nhất: hãy đặt những người khác trước, khi đó người cuối cùng thường chỉ còn đúng một ô. Tôi vẫn luôn làm như vậy.",
+      [
+        [
+          "Chỗ ngồi quen",
+          "Ai cũng ngồi đúng chỗ như đêm đầu tiên. Trừ một người.",
+          "📇 Thẻ chỗ ngồi"
+        ],
+        [
+          "Đống củi",
+          "Củi cho cả mùa đông, bổ xong trong một buổi chiều. Không ai bổ cả.",
+          "🪓 Rìu"
+        ],
+        [
+          "Thiếu một trang",
+          "Mùa đông nào mọi người cũng ký sổ khách. Thiếu mất một mùa đông.",
+          "📄 Trang giấy rời"
+        ],
+        [
+          "Đường ống đóng băng",
+          "Lúc ba giờ, đường ống đóng băng. Có người đã mở một cửa sổ.",
+          "🚰 Vòi nước đóng băng"
+        ],
+        [
+          "Cậu bé Kai thức khuya",
+          "Năm nay cậu được phép thức khuya. Cậu đã thấy nhiều hơn cậu muốn.",
+          "🧣 Khăn len"
+        ],
+        [
+          "Máy định vị tuyết lở",
+          "Máy định vị kêu bíp dưới tầng hầm. Dưới đó không có tuyết.",
+          "📟 Máy định vị tuyết lở"
+        ],
+        [
+          "Người dẫn đường Freya tiên đoán",
+          "Cô đoán trước một trận tuyết lở, chính xác đến từng giờ. Cô không nói bằng cách nào.",
+          "⛰️ Máy đo độ cao"
+        ],
+        [
+          "Edelweiss",
+          "Nơi mọi chuyện bắt đầu, bên lò sưởi. Cũng là nơi mọi chuyện kết thúc.",
+          "🌼 Hoa nhung tuyết khô"
         ]
       ]
     ]

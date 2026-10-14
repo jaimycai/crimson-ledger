@@ -384,7 +384,12 @@
     "🧊 {0} {0|one:vrije dag|other:vrije dagen}": "🧊 {0} hari libur",
     "Los nog {0} {0|one:zaak|other:zaken} op om {1} te openen. De dagelijkse zaak telt mee.": "Pecahkan {0} kasus lagi untuk membuka {1}. Kasus harian ikut dihitung.",
     "nog {0} {0|one:zaak|other:zaken} tot {1}": "{0} kasus lagi sampai {1}",
-    "{0} {0|one:zaak|other:zaken} opgelost": "{0} kasus tuntas"
+    "{0} {0|one:zaak|other:zaken} opgelost": "{0} kasus tuntas",
+    "Meester": "Ahli",
+    "Voor echte kenners": "Bagi pakar sejati",
+    "Je gaat verder waar je was.": "Kamu lanjut dari tempat terakhir.",
+    "⏱️ Klok tijdens een zaak": "⏱️ Jam selama kasus",
+    "Week {0} · {1} {2} · {3}. Elke week één speciale zaak op meesterniveau; iedereen speelt dezelfde. Deel je resultaat met andere speurders.": "Minggu {0} · {1} {2} · {3}. Setiap minggu satu kasus istimewa tingkat ahli; semua orang memainkan kasus yang sama. Bagikan hasilmu ke penyelidik lain."
   },
 
   data: {
@@ -401,7 +406,8 @@
       "tutorial": "Kasus latihan",
       "makkelijk": "Mudah",
       "gemiddeld": "Sedang",
-      "moeilijk": "Sulit"
+      "moeilijk": "Sulit",
+      "meester": "Ahli"
     },
     "themes": {
       "landhuis": {
@@ -993,6 +999,10 @@
       "meester": [
         "Detektif Ulung",
         "Capai pangkat tertinggi"
+      ],
+      "meesterzaken": [
+        "Penyelidik Ahli",
+        "Pecahkan lima kasus tingkat ahli"
       ]
     },
     "quests": {
@@ -3395,6 +3405,774 @@
           "Turunan Terakhir",
           "Turun gunung. Pertanyaan terakhir.",
           "🏁 Bendera finis"
+        ]
+      ]
+    ],
+    "landhuis-7": [
+      "Bagian VII · Renovasi",
+      "Blackwood membisu selama tiga tahun. Lalu para tukang batu datang, dan dinding pertama yang mereka bongkar adalah dinding di bawah tangga.",
+      "Perancah dibongkar, dan di kebun dipasang papan bertuliskan: dijual.",
+      "Tukang batu menemukan macam-macam di dalam dinding, dan semuanya berakhir di meja saya. Di denah sembilan kali sembilan, jarang ada posisi yang langsung pasti. Rangkai keterangan yang menghubungkan dua orang: begitu satu mata rantai pasti, sisanya menyusul.",
+      [
+        [
+          "Lubang Pertama",
+          "Tukang batu itu membuat satu lubang. Setelah itu dia tak mau melanjutkan.",
+          "🔨 Palu godam"
+        ],
+        [
+          "Uang di Bawah Lantai",
+          "Di bawah lantai ada uang. Terlalu sedikit untuk jadi alasan membunuh, kata semua orang.",
+          "💷 Uang kertas"
+        ],
+        [
+          "Di Balik Kertas Dinding",
+          "Di balik kertas dinding ada surat cinta. Tanpa nama, tapi ada tanggalnya.",
+          "💌 Surat cinta"
+        ],
+        [
+          "Pensil di Balok",
+          "Di sebuah balok tertulis tanggal dengan pensil. Tanggal minggu lalu.",
+          "✏️ Pensil tukang kayu"
+        ],
+        [
+          "Mayor Pike Tak Mengenali Apa Pun",
+          "Di loteng tergeletak helm tentaranya yang lama. Belum pernah lihat, katanya.",
+          "🪖 Helm tentara"
+        ],
+        [
+          "Empat Puluh Stoples Selai",
+          "Di ruang bawah tanah ada empat puluh stoples selai. Satu di antaranya tidak berisi selai.",
+          "🫙 Stoples selai"
+        ],
+        [
+          "Benang Merah",
+          "Seutas benang merah tergantung di sebuah paku. Hari ini Clementine memakai baju biru.",
+          "🧵 Benang merah"
+        ],
+        [
+          "Berita dari Dinding",
+          "Di dalam dinding ada koran tahun 1927. Berita tentang makan malam itu sudah hilang.",
+          "🗞️ Koran lama"
+        ]
+      ]
+    ],
+    "landhuis-8": [
+      "Bagian VIII · Perpisahan dengan Blackwood",
+      "Kali ini penjualannya jadi. Keluarga itu punya satu akhir pekan untuk mengosongkan Blackwood.",
+      "Gerbang terkunci, mobil keluarga itu menjauh, dan berkas Blackwood ditutup untuk selamanya.",
+      "Rumahnya sudah terjual, kasus-kasusnya masih terbuka. “Lebih ke kiri” dan “lebih ke atas” mencoret seluruh kolom dan baris sekaligus. Orang yang berdiri lebih ke kiri daripada seseorang tidak pernah berada di kolom paling kanan; orang yang berdiri lebih ke atas tidak pernah berada di baris paling bawah.",
+      [
+        [
+          "Tukang Angkut",
+          "Tukang angkut menghitung dua belas peti. Di truk ada tiga belas.",
+          "🚚 Surat jalan"
+        ],
+        [
+          "Juru Taksir",
+          "Juru taksir memuji setiap benda di rumah itu. Kecuali potret di aula.",
+          "🔎 Daftar taksiran"
+        ],
+        [
+          "Mortimer Menghitung Lagi",
+          "Dulu sebuah sendok hilang. Kini ada satu yang berlebih.",
+          "🍴 Kotak sendok garpu"
+        ],
+        [
+          "Mawar yang Mati",
+          "Di rumah kaca ada setangkai mawar mati. Seseorang masih menyiraminya setiap hari.",
+          "🥀 Mawar layu"
+        ],
+        [
+          "Makan Malam Perpisahan",
+          "Meja yang sama seperti pada tahun 1927. Tak seorang pun mau duduk di ujung meja.",
+          "🫗 Karaf"
+        ],
+        [
+          "Bibi Agatha Tetap Tinggal",
+          "Semua orang berkemas. Bibi Agatha terus merajut, satu matanya mengawasi pintu.",
+          "🧶 Rajutan"
+        ],
+        [
+          "Tangki Penuh",
+          "Mobil di garasi sudah bertahun-tahun tidak jalan. Tangkinya penuh.",
+          "⛽ Jeriken bensin"
+        ],
+        [
+          "Baris Terakhir",
+          "Hargrove menutup buku kas. Di baris terakhir tertulis satu nama.",
+          "📕 Buku kas"
+        ]
+      ]
+    ],
+    "piraten-7": [
+      "Bagian VII · Pengejaran",
+      "Kapal penuh bajak laut kaya pasti menarik perhatian. Sebuah fregat angkatan laut membuntuti Camar Hitam, dan selalu tahu di mana kapal itu berada.",
+      "Fregat itu kandas di karang, dan Camar Hitam berlayar menuju pelabuhan terakhir yang masih mau menerimanya.",
+      "Kapalnya terasa lebih besar dan para awak makin sedikit bicara. Hanya pembunuh yang bersama korban. Kalau sebuah keterangan menaruh dua orang di ruangan yang sama, tak satu pun dari mereka bersama korban.",
+      [
+        [
+          "Dicari, Hidup atau Mati",
+          "Wajah mereka terpampang di setiap pelabuhan. Di satu poster, ada satu wajah yang hilang.",
+          "📃 Poster buronan"
+        ],
+        [
+          "Semua Layar Terkembang",
+          "Semua layar sudah dikembangkan. Tapi fregat itu makin dekat.",
+          "🪡 Jarum layar"
+        ],
+        [
+          "Tembakan Peringatan",
+          "Fregat itu menembak sekali. Di atas kapal, seseorang menghitung dua letusan.",
+          "🕳️ Lubang peluru"
+        ],
+        [
+          "Bendera Putih",
+          "Seseorang mengibarkan bendera putih. Tak ada yang mau menyerah.",
+          "🏳️ Bendera putih"
+        ],
+        [
+          "Grimsby Mengukur Kedalaman",
+          "Dia berseru enam depa. Ternyata hanya tiga.",
+          "🧵 Tali duga"
+        ],
+        [
+          "Sinyal dalam Gelap",
+          "Dari sebuah jendela kapal, cahaya berkedip ke arah fregat. Tiga kali, pendek-pendek.",
+          "🪟 Jendela kapal"
+        ],
+        [
+          "Nona Coral Menulis",
+          "Setiap malam dia menulis surat. Yang ini untuk fregat itu.",
+          "💌 Surat selundupan"
+        ],
+        [
+          "Terumbu Karang",
+          "Fregat itu kandas di karang. Pengkhianatnya masih ada di kapal.",
+          "🪸 Pecahan karang"
+        ]
+      ]
+    ],
+    "piraten-8": [
+      "Bagian VIII · Pelabuhan Terakhir",
+      "Camar Hitam bersandar di pelabuhan tempat tak seorang pun mengajukan pertanyaan. Di sini kapal itu akan ditambatkan untuk selamanya, dan semua orang masih ingin mengambil sesuatu dari atas kapal.",
+      "Camar Hitam ditambatkan untuk selamanya, dan kamulah yang menulis kata terakhir di buku lognya.",
+      "Bagian terakhir, dan yang tersulit. Kalau sebuah keterangan menyebut seseorang tidak berada di dapur kapal, coret seluruh dapur kapal untuk orang itu sekaligus. Itu menghemat banyak hitungan.",
+      [
+        [
+          "Syahbandar",
+          "Syahbandar tidak bertanya apa-apa. Tapi dia mencatat semuanya.",
+          "📗 Register pelabuhan"
+        ],
+        [
+          "Muatan Terakhir",
+          "Muatannya diturunkan. Satu peti lebih berat daripada yang tertulis di daftar.",
+          "🪝 Kait muatan"
+        ],
+        [
+          "Saffron Mengemasi Pisaunya",
+          "Dua belas pisau masuk ke tasnya. Di kapal dia hanya pernah punya sebelas.",
+          "👝 Tas gulung pisau"
+        ],
+        [
+          "Sang Pembeli",
+          "Seorang pembeli menawarkan emas untuk Camar Hitam. Dia hanya ingin melihat palkanya.",
+          "📑 Akta jual beli"
+        ],
+        [
+          "Thorne Mengosongkan Meriam",
+          "Meriam itu harus diturunkan dari kapal. Ternyata masih terisi.",
+          "🧨 Sumbu"
+        ],
+        [
+          "Jangkar Terakhir",
+          "Jangkar dibuang untuk terakhir kalinya. Ada sesuatu yang tergantung di rantainya.",
+          "⛓️ Rantai jangkar"
+        ],
+        [
+          "Tikus-Tikus Pergi",
+          "Tikus-tikus yang pertama turun dari kapal. Mereka tahu sesuatu.",
+          "🪤 Perangkap tikus"
+        ],
+        [
+          "Halaman Terakhir",
+          "Di buku log Camar Hitam masih ada satu halaman kosong.",
+          "📕 Buku log tertutup"
+        ]
+      ]
+    ],
+    "hotel-7": [
+      "Bagian VII · Lelang",
+      "Sebulan kemudian, seluruh isi Aurora dilelang, dari piano sampai sendok terakhir. Tamu-tamu lama duduk di barisan depan.",
+      "Palu diketuk untuk terakhir kalinya: semuanya terjual, kecuali gedungnya sendiri.",
+      "Denah lebih besar, keterangan lebih samar: lelang ini bukan obral. Dengan pensil, beri titik di setiap kotak tempat seorang tersangka masih bisa berdiri. Kalau dua tersangka harus berada di baris yang sama, bandingkan titik mereka: baris yang hanya berisi titik salah satu dari mereka bisa dicoret.",
+      [
+        [
+          "Hari Pratinjau",
+          "Pada hari pratinjau, semua barang diberi label. Ada satu label yang tidak terpasang di barang apa pun.",
+          "🏷️ Label lot"
+        ],
+        [
+          "Katalog",
+          "Lot 77 tercantum dua kali di katalog. Padahal hanya ada satu lot 77.",
+          "📕 Katalog lelang"
+        ],
+        [
+          "Tawaran Pertama",
+          "Tawaran pertama datang dari kursi kosong.",
+          "🪧 Papan penawaran"
+        ],
+        [
+          "Sendok Garpu per Kilo",
+          "Peralatan perak dilelang per kilo. Satu kilo hilang.",
+          "🍴 Sendok garpu hotel"
+        ],
+        [
+          "Pianis Felix Menawar",
+          "Dia menawar piano lamanya. Seseorang menawar lebih tinggi.",
+          "🪑 Bangku piano"
+        ],
+        [
+          "Enam Huruf",
+          "Di fasad gedung tertulis AURORA dalam enam huruf. Yang masih terpasang tinggal lima.",
+          "🅰️ Huruf fasad"
+        ],
+        [
+          "Pintu Putar",
+          "Pintu putarnya sudah terjual. Tengah malam, pintu itu berputar sekali lagi.",
+          "🔄 Pintu putar"
+        ],
+        [
+          "Lot Terakhir",
+          "Lot terakhir tidak ada di katalog. Tapi tetap ada yang menawarnya.",
+          "🔨 Palu lelang"
+        ]
+      ]
+    ],
+    "hotel-8": [
+      "Bagian VIII · Pembongkaran",
+      "Senin nanti bola penghancur datang. Akhir pekan sebelumnya, tamu-tamu lama menyusuri lorong-lorong yang kosong untuk terakhir kalinya.",
+      "Bola penghancur berayun, debu mengendap, dan berkas terakhir Aurora ditutup.",
+      "Aurora sekali lagi, dan hampir semuanya kasus tersulit. Pohon palem adalah tempat sembunyi yang buruk: orang yang berdiri tepat di sebelah pohon palem hanya bisa berada di beberapa kotak. Cari dulu keterangan seperti itu tentang perabot, dan mulailah dari sana.",
+      [
+        [
+          "Izin Bongkar",
+          "Pembongkaran baru boleh dimulai hari Senin. Seseorang sudah mulai hari Minggu.",
+          "📃 Izin pembongkaran"
+        ],
+        [
+          "Helm Butler Winslow",
+          "Empat puluh tahun dia memakai dasi kupu-kupu. Hari ini helm proyek.",
+          "⛑️ Helm proyek"
+        ],
+        [
+          "Lift Tua",
+          "Di lubang lift masih tergantung kartu tamu. Satu nama dicoret.",
+          "🛗 Tombol lift"
+        ],
+        [
+          "Derek",
+          "Dari atas derek, setiap jendela terlihat. Di salah satunya berdiri seseorang.",
+          "🏗️ Kait derek"
+        ],
+        [
+          "Wals Terakhir",
+          "Lantai parketnya sudah terjual. Tapi di debu ada jejak langkah dansa.",
+          "🪩 Bola cermin"
+        ],
+        [
+          "Batu Pertama",
+          "Di dalam batu pertama ada kapsul waktu. Ada yang sudah mendahului.",
+          "🫙 Kapsul waktu"
+        ],
+        [
+          "Kamar 404 Ditemukan",
+          "Pekerja pembongkaran menemukan kamar 404. Jam wekernya masih berdetak.",
+          "⏰ Weker berdetak"
+        ],
+        [
+          "Jam Terakhir",
+          "Aurora masih berdiri satu jam lagi. Cukup untuk pertanyaan terakhir.",
+          "🧱 Batu bata terakhir"
+        ]
+      ]
+    ],
+    "ruimte-7": [
+      "Bagian VII · Karantina",
+      "Kapsul sudah mendarat dan para kru masuk karantina. Tiga minggu, di replika Orion seukuran aslinya, di sebuah hanggar di Bumi.",
+      "Pada hari pintu-pintu dibuka, sebuah kapal mengangkat sesuatu berwarna oranye dari samudra.",
+      "Kembali di Bumi, dan masih di balik airlock. Beberapa kasus kini tingkat ahli: papan lebih besar, lebih sedikit keterangan langsung. Siapa pun yang sendirian di sebuah modul juga memberitahumu sesuatu tentang yang lain: orang yang berdiri tepat di sebelahnya pasti berada di seberang dinding.",
+      [
+        [
+          "Orion di Bumi",
+          "Setiap modul ditiru sampai ke sekrup terakhir. Salah satu sekrupnya longgar.",
+          "🔩 Sekrup longgar"
+        ],
+        [
+          "Ahli Biologi Wren Menghitung Hari",
+          "Setiap hari dia mencoret kalender. Kemarin seseorang sudah melakukannya untuknya.",
+          "📆 Kalender hitung mundur"
+        ],
+        [
+          "Dr. Nkemelu Mengambil Darah",
+          "Delapan tabung darah. Salah satunya tanpa nama.",
+          "🩸 Tabung darah"
+        ],
+        [
+          "Kunjungan di Balik Kaca",
+          "Semua orang melambai ke keluarga mereka. Satu orang memandang ke arah lain.",
+          "🪟 Jendela kunjungan"
+        ],
+        [
+          "Makanan Lewat Loket",
+          "Tiga kali sehari makanan masuk lewat loket. Satu porsi kembali tanpa disentuh.",
+          "🍱 Baki makanan"
+        ],
+        [
+          "Gravitasi Kembali",
+          "Setelah setengah tahun melayang, semuanya terguling. Begitu pula sebuah alibi.",
+          "🥤 Gelas terguling"
+        ],
+        [
+          "Filter Udara",
+          "Filter itu menangkap segalanya. Termasuk sehelai rambut yang bukan pada tempatnya.",
+          "🌀 Filter udara"
+        ],
+        [
+          "Hari Kedua Puluh Satu",
+          "Pintu-pintu dibuka. Satu gelang masih tergeletak di atas ranjang.",
+          "📛 Gelang tangan"
+        ]
+      ]
+    ],
+    "ruimte-8": [
+      "Bagian VIII · Perekam Penerbangan",
+      "Tidak semua bagian Orion terbakar. Perekam penerbangannya diputar ulang di replika stasiun, modul demi modul.",
+      "Perekam itu terdiam, berkas Orion ditutup, dan kali ini tetap tertutup.",
+      "Bagian terakhir Orion, hampir semuanya tingkat ahli. Kalau dua orang harus berada di modul yang sama, cari modul tempat keduanya muat, dengan memperhitungkan semua keterangan mereka yang lain. Sering kali hanya satu modul yang tersisa.",
+      [
+        [
+          "Dari Samudra",
+          "Sebuah kotak oranye dari dasar laut. Kotak itu merekam segalanya.",
+          "🟧 Kotak oranye"
+        ],
+        [
+          "Menit Nol",
+          "Rekaman dimulai dengan keheningan. Lalu sebuah palka terbuka.",
+          "🎧 Headphone"
+        ],
+        [
+          "Insinyur Vega Mendengarkan",
+          "Dia mengenal setiap bunyi di stasiun. Kecuali desis yang ini.",
+          "⚙️ Katup tekanan"
+        ],
+        [
+          "Dua Suara",
+          "Dua suara di ruang mesin. Menurut jadwal tugas, tidak ada siapa-siapa di sana.",
+          "🗣️ Sidik suara"
+        ],
+        [
+          "Perwira Paz Memutar Ulang",
+          "Dia memutar ulang bagian itu tiga kali. Setelah itu dia tak berkata apa-apa lagi.",
+          "⏪ Tombol mundur"
+        ],
+        [
+          "Sebelas Detik Hening",
+          "Pukul 04:00 rekaman terputus selama sebelas detik. Bukan dengan sendirinya.",
+          "🔇 Tombol senyap"
+        ],
+        [
+          "Ahli Botani Fern Membisu",
+          "Suaranya ada di setiap rekaman. Tapi tidak di rekaman terakhir.",
+          "🪴 Stek tanaman"
+        ],
+        [
+          "Rekaman Terakhir",
+          "Menit terakhir sebelum lepas labuh. Seseorang membisikkan sebuah nama.",
+          "🗂️ Berkas Orion"
+        ]
+      ]
+    ],
+    "museum-7": [
+      "Bagian VII · Lukisan Pinjaman",
+      "Museum buka lagi, seolah pintu itu tak pernah ada. Dari Firenze datang sebuah lukisan terkenal sebagai pinjaman, dengan nilai asuransi lebih tinggi daripada gedungnya.",
+      "Lukisan itu kembali ke Firenze, dan perusahaan asuransi membatalkan polisnya.",
+      "Mulai dari sini ada kasus tingkat ahli: papan lebih besar, lebih sedikit pegangan. Kalau dua orang berada di baris atau kolom yang sama, tandai dengan pensil satu tempat untuk salah satunya, lalu lihat di mana yang lain masih bisa berdiri. Kalau yang lain tidak punya tempat lagi, orang pertama tidak berdiri di situ.",
+      [
+        [
+          "Peti dari Firenze",
+          "Menurut labelnya, isinya satu lukisan. Petinya lebih berat.",
+          "🏷️ Label pengiriman"
+        ],
+        [
+          "Empat Sekrup",
+          "Empat sekrup menahan bingkai di dinding. Tinggal tiga.",
+          "🔩 Sekrup gantungan"
+        ],
+        [
+          "Lima Puluh Lux",
+          "Cahayanya tak boleh lebih dari lima puluh lux. Seseorang telah menaikkannya.",
+          "🔆 Pengukur cahaya"
+        ],
+        [
+          "Restorator Iris Ragu",
+          "Di bawah mikroskop, catnya terlalu muda untuk lukisan itu.",
+          "🔬 Sampel cat"
+        ],
+        [
+          "Foto Pers",
+          "Foto pers itu kelebihan satu tangan.",
+          "📸 Foto pers"
+        ],
+        [
+          "Tur Audio",
+          "Nomor empat belas menyebut sebuah nama yang tak tercantum di label mana pun.",
+          "🎧 Pemandu audio"
+        ],
+        [
+          "Profesor Adebayo Mengenalinya",
+          "Dia mengenali lukisan itu dari sebuah slide lama, yang dibuat di Vlierbeek.",
+          "🎞️ Slide lama"
+        ],
+        [
+          "Kembali ke Firenze",
+          "Peti ditutup. Apa yang dimasukkan bukan apa yang dikeluarkan.",
+          "🪛 Obeng"
+        ]
+      ]
+    ],
+    "museum-8": [
+      "Bagian VIII · Seratus Tahun",
+      "Tanpa asuransi, Vlierbeek tetap merayakan ulang tahunnya yang keseratus. Di pesta itu lukisan yang asli pulang, setelah lima puluh tahun pergi.",
+      "Lukisan itu kembali tergantung di tempatnya, dan berkas Vlierbeek ditutup untuk selamanya.",
+      "Hampir setiap kasus kini tingkat ahli; cocok untuk sebuah museum. Kalau buntu, tanyakan pada dirimu keterangan mana yang belum kamu pakai. Centang keterangan yang sudah kamu pakai, maka sekali lihat kamu langsung tahu.",
+      [
+        [
+          "Kepulangan",
+          "Setelah lima puluh tahun, lukisan itu tergantung lagi di rumahnya. Di paku yang sama.",
+          "🫧 Plastik gelembung"
+        ],
+        [
+          "Bendera Setengah Tiang",
+          "Bendera di atap berkibar setengah tiang. Bahkan sebelum pesta dimulai.",
+          "🚩 Bendera atap"
+        ],
+        [
+          "Satu-satunya Penjaga",
+          "Tanpa asuransi, Gus adalah seluruh tim keamanan. Dia menguap sekali.",
+          "🍬 Permen mint"
+        ],
+        [
+          "Medali Peringatan",
+          "Setiap tamu mendapat medali. Satu medali bertuliskan tahun yang berbeda.",
+          "🏅 Medali peringatan"
+        ],
+        [
+          "Korps Musik",
+          "Korps musik memainkan lagu peringatan. Satu terompet tetap diam.",
+          "🎺 Terompet"
+        ],
+        [
+          "Kurator Ellery Membacakan Nama",
+          "Dia membacakan nama semua kurator. Satu nama dilewatinya.",
+          "📘 Buku peringatan"
+        ],
+        [
+          "Pemandu Margot Bercerita",
+          "Dia menceritakan seratus tahun dalam sepuluh menit. Satu malam tidak dia ceritakan.",
+          "📏 Tongkat penunjuk"
+        ],
+        [
+          "Vlierbeek Genap Seratus Tahun",
+          "Tepat tengah malam usianya seratus tahun. Pertanyaan terakhir adalah yang paling tua.",
+          "🖼️ Lukisan asli"
+        ]
+      ]
+    ],
+    "trein-7": [
+      "Bagian VII · Depo Kereta",
+      "Rencana menjadikan kereta itu besi tua ditunda sampai musim semi. Selama musim dingin kereta itu menginap di sebuah depo, dan pada malam hari ada yang datang berkunjung.",
+      "Pada musim semi, seorang tak dikenal membeli kereta itu, untuk satu perjalanan terakhir ke Wina.",
+      "Depo ini lebih besar daripada kelihatannya, begitu pula beberapa kasus: sembilan kali sembilan kotak. “Tidak tepat di sebelah” hanya mencoret empat kotak. Simpan keterangan seperti itu untuk paling akhir.",
+      [
+        [
+          "Lampu Tanpa Listrik",
+          "Ada lampu menyala di gerbong makan. Listriknya sudah diputus.",
+          "🔋 Aki"
+        ],
+        [
+          "Ranjang yang Sudah Ditiduri",
+          "Kereta itu sudah berminggu-minggu kosong. Ranjang di Kabin A sudah ditiduri.",
+          "🧦 Kaus kaki wol"
+        ],
+        [
+          "Pesulap Orlando Berlatih",
+          "Dia melatih trik menghilangnya di kereta yang kosong. Ada yang menonton.",
+          "🪄 Tongkat sihir"
+        ],
+        [
+          "Wesel",
+          "Seseorang memindahkan wesel pada malam hari. Keretanya masih di dalam depo.",
+          "🎚️ Tuas wesel"
+        ],
+        [
+          "Juru Api Jules Mencium Asap",
+          "Ketelnya sudah berminggu-minggu dingin. Malam ini tidak.",
+          "♨️ Pengukur tekanan"
+        ],
+        [
+          "Janda Duval Mencari",
+          "Dia datang mengambil koper kedua. Seseorang sudah mendahuluinya.",
+          "🪡 Jarum topi"
+        ],
+        [
+          "Bunga Es di Jendela",
+          "Di bunga es pada kaca jendela tertulis sebuah nama. Hanya separuhnya.",
+          "🪟 Kaca beku"
+        ],
+        [
+          "Dijual",
+          "Dijual: satu kereta malam, dua belas gerbong. Hanya ada satu tanggapan.",
+          "📰 Iklan koran"
+        ]
+      ]
+    ],
+    "trein-8": [
+      "Bagian VIII · Kedatangan",
+      "Kereta itu sekali lagi menempuh rute lama ke Wina. Semua penumpang dari perjalanan dulu mendapat tiket, tanpa nama pengirim.",
+      "Di Wina, kereta malam itu masuk ke sebuah museum dan tinggal di sana untuk selamanya.",
+      "Perjalanan terakhir, dan hampir semuanya tingkat ahli. Hitung kotak tanpa perabot di setiap gerbong: sebanyak itulah orang yang muat di dalamnya, tidak lebih. Gerbong kecil cepat penuh.",
+      [
+        [
+          "Undangan",
+          "Semua orang datang. Tak ada yang mengaku penasaran.",
+          "📩 Amplop polos"
+        ],
+        [
+          "Terowongan Itu Lagi",
+          "Pukul sembilan, terowongan itu lagi. Semua orang menahan napas.",
+          "🕰️ Jam meja"
+        ],
+        [
+          "Kelas Satu",
+          "Baroness Von Stahl selalu naik kelas satu. Kereta ini tidak punya kelas satu.",
+          "🦊 Stola bulu"
+        ],
+        [
+          "Kondektur Baru",
+          "Seseorang melubangi tiket-tiket. Kereta itu tidak punya kondektur.",
+          "🕳️ Pelubang tiket"
+        ],
+        [
+          "Aktris Lola Memerankan Dirinya",
+          "Dia memeragakan ulang malam itu. Sedikit terlalu persis.",
+          "💄 Lipstik"
+        ],
+        [
+          "Penumpang Kesembilan",
+          "Delapan tiket dikirim. Sembilan orang di dalam kereta.",
+          "👔 Dasi"
+        ],
+        [
+          "Perawat Hedda Berjaga",
+          "Dia berjaga semalaman di lorong. Tapi tetap ada yang lewat.",
+          "🧩 Buku teka-teki"
+        ],
+        [
+          "Wina, Akhirnya",
+          "Orang yang mengirim tiket-tiket itu juga ada di dalam kereta.",
+          "🚉 Karcis peron"
+        ]
+      ]
+    ],
+    "circus-7": [
+      "Bagian VII · Markas Musim Dingin",
+      "Tenda terlipat di lumbung markas musim dingin, sebuah tanah pertanian di luar kota. Semua orang menunggu pembeli dan saling mengawasi.",
+      "Tak ada pembeli yang datang, jadi sirkus tampil sekali lagi: malam hari, di lumbung.",
+      "Markas musim dingin ini luas dan keterangannya tidak banyak memberi tahu. Tandai dulu, di setiap area, kotak mana yang di sudut, menempel ke dinding, atau di tengah. Area selebar dua kotak tidak punya tengah: siapa pun yang berada “di tengah” pasti berdiri di tempat lain.",
+      [
+        [
+          "Karavan Kedelapan",
+          "Tujuh karavan masuk ke lumbung. Paginya ada delapan.",
+          "🛞 Roda karavan"
+        ],
+        [
+          "Penunjuk Angin",
+          "Ayam-ayaman penunjuk angin di atap lumbung berputar. Padahal tidak ada angin.",
+          "🐓 Penunjuk angin"
+        ],
+        [
+          "Orang Kuat Boris Menggergaji Kayu",
+          "Dia menggergaji kayu untuk sepanjang musim dingin. Dalam satu malam.",
+          "🪚 Gergaji kayu"
+        ],
+        [
+          "Lubang di Es",
+          "Kolamnya membeku. Kecuali di satu tempat.",
+          "⛸️ Sepatu seluncur"
+        ],
+        [
+          "Badut Pippo Tanpa Riasan",
+          "Tanpa riasan, tak ada yang mengenalinya. Itu menguntungkannya.",
+          "💄 Kotak rias"
+        ],
+        [
+          "Sirkus Dijual",
+          "Iklannya muncul di koran. Tak ada yang memasangnya.",
+          "🗞️ Guntingan koran"
+        ],
+        [
+          "Dokter Hewan Nadia Tetap Tinggal",
+          "Tugasnya sudah selesai. Tapi dia tinggal seminggu lagi.",
+          "💼 Tas dokter hewan"
+        ],
+        [
+          "Pembeli Membatalkan",
+          "Pembeli menelepon untuk membatalkan. Seseorang di pertanian itu sudah tahu lebih dulu.",
+          "☎️ Gagang telepon"
+        ]
+      ]
+    ],
+    "circus-8": [
+      "Bagian VIII · Pertunjukan Malam",
+      "Warga desa datang menonton satu pertunjukan di lumbung, diterangi lentera. Arenanya dari jerami, para pemainnya tetap sama.",
+      "Tepuk tangan terakhir memudar di lumbung, dan yang tersisa dari Sirkus Zano hanyalah berkasmu.",
+      "Hampir setiap kasus di bagian ini termasuk jenis tersulit. Kalau buntu, tandai dengan pensil satu tempat yang mungkin untuk seseorang, lalu lanjutkan penalaranmu dari sana. Kalau itu melanggar sebuah keterangan, tempat itu salah; kesalahan dengan pensil tidak ada ruginya.",
+      [
+        [
+          "Gladi Resik",
+          "Saat gladi resik, ada satu atraksi yang tidak tercantum di susunan acara.",
+          "📑 Buklet acara"
+        ],
+        [
+          "Pembawa Acara",
+          "Seseorang harus membawakan acara malam itu. Dua orang sudah siap.",
+          "📢 Megafon"
+        ],
+        [
+          "Pemain Juggling Teo dan Obor",
+          "Lima obor di lumbung penuh jerami. Dia menangkap empat.",
+          "🔥 Obor juggling"
+        ],
+        [
+          "Arum Manis",
+          "Mesin arum manis berputar sepanjang malam. Tak ada yang berdiri di belakangnya.",
+          "🍭 Arum manis"
+        ],
+        [
+          "Jeda",
+          "Jeda berlangsung sepuluh menit. Bagi satu pemain, dua puluh.",
+          "🔔 Bel jeda"
+        ],
+        [
+          "Pemain Trapeze Mira Memanjat",
+          "Dia menggantungkan trapezenya di sebuah balok. Balok itu sudah setengah tergergaji.",
+          "🪜 Tangga tali"
+        ],
+        [
+          "Penjual Tiket Dottie Berjualan",
+          "Masuknya gratis. Tapi dia tetap menjual tiket.",
+          "💶 Uang kembalian"
+        ],
+        [
+          "Semua Berdiri",
+          "Semua orang berdiri untuk bertepuk tangan. Satu orang tetap duduk.",
+          "🪧 Poster sirkus"
+        ]
+      ]
+    ],
+    "skihut-7": [
+      "Bagian VII · Musim Sepi",
+      "Pada musim gugur pondok itu kosong. Tapi ada lampu yang menyala, dan lima tamu lama masih punya kunci.",
+      "Salju pertama turun dan menutup jalan, sama seperti pertama kali.",
+      "Papannya makin besar dan keterangannya makin pelit. Kalau laporan menyebut sebuah ruangan kosong, semua kotak di ruangan itu tercoret untuk kelima orang, termasuk siapa pun yang tidak disebut di tempat lain. Jadi pondok kosong pun masih ada gunanya.",
+      [
+        [
+          "Cahaya di Balik Daun Jendela",
+          "Semua daun jendela tertutup. Di balik salah satunya, ada lampu menyala.",
+          "🪔 Lampu minyak"
+        ],
+        [
+          "Kunci Cadangan",
+          "Ada empat kunci cadangan. Di dalam ada lima tamu.",
+          "🔑 Kunci cadangan"
+        ],
+        [
+          "Kain Penutup Perabot",
+          "Setiap perabot ditutupi kain. Di bawah salah satunya tidak ada perabot.",
+          "🛋️ Kain penutup debu"
+        ],
+        [
+          "Koki Luigi Memetik Jamur",
+          "Dia memetik sekeranjang penuh. Satu jenis tidak ada di bukunya.",
+          "🍄 Jamur"
+        ],
+        [
+          "Jebakan Tikus",
+          "Jebakan di gudang sudah terkatup. Tanpa tikus di dalamnya.",
+          "🪤 Jebakan tikus"
+        ],
+        [
+          "Turis Hana Berkirim Kabar",
+          "Kartu posnya dikirim dari pondok itu. Pondoknya sudah berbulan-bulan tutup.",
+          "🏞️ Kartu pos"
+        ],
+        [
+          "Kereta Gantung yang Diam",
+          "Pada musim gugur kereta gantung tidak beroperasi. Tapi ada satu gondola tergantung di atas.",
+          "🚠 Gondola"
+        ],
+        [
+          "Salju Pertama",
+          "Salju pertama turun tengah malam. Satu jejak kaki mengarah ke pintu.",
+          "🥾 Sepatu gunung"
+        ]
+      ]
+    ],
+    "skihut-8": [
+      "Bagian VIII · Edelweiss",
+      "Jalan tertutup dan pondok penuh. Di sekeliling tungku duduk wajah-wajah yang sama seperti pada malam pertama.",
+      "Van Dam menutup buku catatannya, mengangguk kepadamu, lalu berjalan tanpa terburu-buru menembus salju yang baru turun, menuju lembah.",
+      "Kasus-kasus terakhir, hampir semuanya di papan besar. Jangan terpaku pada yang paling sulit: taruh dulu yang lain, maka untuk yang terakhir sering hanya tersisa satu kotak. Begitulah yang selalu saya lakukan.",
+      [
+        [
+          "Tempat Biasa",
+          "Semua orang duduk di tempat yang sama seperti pada malam pertama. Kecuali satu.",
+          "📇 Kartu tempat duduk"
+        ],
+        [
+          "Tumpukan Kayu",
+          "Kayu untuk sepanjang musim dingin. Dibelah dalam satu sore, oleh tak seorang pun.",
+          "🪓 Kapak"
+        ],
+        [
+          "Kurang Satu Halaman",
+          "Setiap musim dingin semua orang menandatangani buku tamu. Satu musim dingin hilang.",
+          "📄 Halaman lepas"
+        ],
+        [
+          "Pipa Beku",
+          "Pukul tiga pipanya membeku. Seseorang telah membuka jendela.",
+          "🚰 Keran beku"
+        ],
+        [
+          "Bocah Kai Begadang",
+          "Tahun ini dia boleh begadang. Dia melihat lebih banyak daripada yang dia mau.",
+          "🧣 Syal wol"
+        ],
+        [
+          "Pemancar Longsoran",
+          "Pemancar itu berbunyi bip di ruang bawah tanah. Di sana tidak ada salju.",
+          "📟 Pemancar longsoran"
+        ],
+        [
+          "Pemandu Gunung Freya Meramalkan",
+          "Dia meramalkan longsoran salju, tepat sampai ke jamnya. Dia tidak bilang bagaimana caranya.",
+          "⛰️ Altimeter"
+        ],
+        [
+          "Edelweiss",
+          "Di tempat semuanya bermula, di dekat tungku. Di sana pula semuanya berakhir.",
+          "🌼 Edelweiss kering"
         ]
       ]
     ]

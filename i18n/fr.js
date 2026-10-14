@@ -384,7 +384,12 @@
     "{0} {0|one:zaak|other:zaken} opgelost": "{0} {0|one:affaire résolue|other:affaires résolues}",
     "Combineer {1|one:aanwijzing|other:aanwijzingen} {0} met de spelregel over het slachtoffer.": "Combine {1|one:l’indice|other:les indices} {0} avec la règle concernant la victime.",
     "{1|one:Aanwijzing|other:Aanwijzingen} {0} {1|one:beperkt|other:beperken} de opties. Streep vakjes weg die er niet aan voldoen.": "{1|one:L’indice|other:Les indices} {0} {1|one:limite|other:limitent} les possibilités. Élimine les cases qui ne {1|one:le|other:les} respectent pas.",
-    "{1} {0|one:dag|other:dagen} streak": "{1} {0|one:jour|other:jours} de série"
+    "{1} {0|one:dag|other:dagen} streak": "{1} {0|one:jour|other:jours} de série",
+    "Meester": "Maître",
+    "Voor echte kenners": "Pour vrais experts",
+    "Je gaat verder waar je was.": "Tu reprends là où tu en étais.",
+    "⏱️ Klok tijdens een zaak": "⏱️ Chrono pendant une affaire",
+    "Week {0} · {1} {2} · {3}. Elke week één speciale zaak op meesterniveau; iedereen speelt dezelfde. Deel je resultaat met andere speurders.": "Semaine {0} · {1} {2} · {3}. Une affaire spéciale de niveau maître chaque semaine ; tout le monde joue la même. Partage ton résultat avec d’autres limiers."
   },
 
   data: {
@@ -401,7 +406,8 @@
       "tutorial": "Affaire d’entraînement",
       "makkelijk": "Facile",
       "gemiddeld": "Moyen",
-      "moeilijk": "Difficile"
+      "moeilijk": "Difficile",
+      "meester": "Maître"
     },
     "themes": {
       "landhuis": {
@@ -993,6 +999,10 @@
       "meester": [
         "Grand détective",
         "Atteins le rang le plus élevé"
+      ],
+      "meesterzaken": [
+        "Maître limier",
+        "Résous cinq affaires de niveau maître"
       ]
     },
     "quests": {
@@ -3395,6 +3405,774 @@
           "La dernière descente",
           "En bas de la montagne. La dernière question.",
           "🏁 Drapeau d’arrivée"
+        ]
+      ]
+    ],
+    "landhuis-7": [
+      "Chapitre VII · Les travaux",
+      "Blackwood s’est tu pendant trois ans. Puis les maçons arrivent, et le premier mur qu’ils percent est celui sous l’escalier.",
+      "Les échafaudages sont démontés et un panneau apparaît dans le jardin : à vendre.",
+      "Les maçons trouvent de tout dans les murs, et tout finit sur mon bureau. Sur un plan de neuf cases sur neuf, les positions sûres se font rares. Mets bout à bout les déclarations qui relient deux personnes : dès qu’un maillon est fixé, le reste suit.",
+      [
+        [
+          "Le premier trou",
+          "Le maçon a percé un seul trou. Ensuite, il n’a plus voulu continuer.",
+          "🔨 Masse"
+        ],
+        [
+          "De l’argent sous le plancher",
+          "Sous le plancher, il y avait de l’argent. Trop peu pour tuer, disait tout le monde.",
+          "💷 Billet de banque"
+        ],
+        [
+          "Derrière le papier peint",
+          "Derrière le papier peint, il y avait une lettre d’amour. Pas de nom, mais une date.",
+          "💌 Lettre d’amour"
+        ],
+        [
+          "Au crayon sur la poutre",
+          "Sur une poutre, quelqu’un avait noté une date au crayon. Celle de la semaine dernière.",
+          "✏️ Crayon de charpentier"
+        ],
+        [
+          "Le major Pike ne reconnaît rien",
+          "Son vieux casque militaire traînait au grenier. Jamais vu, a-t-il dit.",
+          "🪖 Casque militaire"
+        ],
+        [
+          "Quarante pots de confiture",
+          "Quarante pots de confiture à la cave. Dans l’un d’eux, pas de confiture.",
+          "🫙 Bocal"
+        ],
+        [
+          "Le fil rouge",
+          "Un fil rouge pendait à un clou. Aujourd’hui, Clementine portait du bleu.",
+          "🧵 Fil rouge"
+        ],
+        [
+          "Des nouvelles du mur",
+          "Dans le mur, il y avait un journal de 1927. L’article sur le dîner avait disparu.",
+          "🗞️ Vieux journal"
+        ]
+      ]
+    ],
+    "landhuis-8": [
+      "Chapitre VIII · Adieu à Blackwood",
+      "Cette fois, la vente ne tombe pas à l’eau. La famille a un week-end pour vider Blackwood.",
+      "Le portail se referme, la famille s’en va, et le dossier Blackwood est classé pour de bon.",
+      "La maison est vendue, les affaires restent ouvertes. « Plus à gauche » et « plus haut » rayent d’un coup des colonnes et des lignes entières. Qui est plus à gauche qu’un autre n’est jamais dans la colonne la plus à droite ; qui est plus haut, jamais sur la ligne du bas.",
+      [
+        [
+          "Les déménageurs",
+          "Les déménageurs ont compté douze caisses. Dans le camion, il y en avait treize.",
+          "🚚 Bon de transport"
+        ],
+        [
+          "L’expert",
+          "L’expert a vanté chaque objet de la maison. Sauf le portrait du hall.",
+          "🔎 Inventaire estimatif"
+        ],
+        [
+          "Mortimer recompte",
+          "Un jour, il manquait une cuillère. Cette fois, il y en avait une de trop.",
+          "🍴 Coffret à couverts"
+        ],
+        [
+          "La rose morte",
+          "Dans la serre, il y avait une rose morte. Quelqu’un l’arrosait encore chaque jour.",
+          "🥀 Rose fanée"
+        ],
+        [
+          "Le dîner d’adieu",
+          "La même table qu’en 1927. Personne ne voulait la place du maître de maison.",
+          "🫗 Carafe"
+        ],
+        [
+          "Tante Agatha reste",
+          "Tout le monde faisait ses cartons. Tante Agatha tricotait toujours, un œil sur la porte.",
+          "🧶 Tricot"
+        ],
+        [
+          "Le réservoir plein",
+          "La voiture du garage ne roulait plus depuis des années. Le réservoir était plein.",
+          "⛽ Bidon d’essence"
+        ],
+        [
+          "La dernière ligne",
+          "Hargrove a refermé le livre de comptes. Sur la dernière ligne, il n’y avait qu’un nom.",
+          "📕 Livre de comptes"
+        ]
+      ]
+    ],
+    "piraten-7": [
+      "Chapitre VII · La poursuite",
+      "Un navire plein de pirates riches, ça se remarque. Une frégate de la marine suit la Mouette, et sait toujours où elle se trouve.",
+      "La frégate s’échoue sur le récif, et la Mouette met le cap sur le dernier port qui veut encore d’elle.",
+      "Le navire paraît plus grand et l’équipage en dit moins. Seul le meurtrier était avec la victime. Si une déclaration place deux personnes dans la même zone, aucune des deux n’était avec la victime.",
+      [
+        [
+          "Recherchés, morts ou vifs",
+          "Leurs visages étaient affichés dans chaque port. Sur une affiche, il en manquait un.",
+          "📃 Avis de recherche"
+        ],
+        [
+          "Toutes voiles dehors",
+          "Toutes les voiles étaient hissées. La frégate se rapprochait pourtant.",
+          "🪡 Aiguille à voile"
+        ],
+        [
+          "Le coup de semonce",
+          "La frégate a tiré une fois. À bord, quelqu’un a compté deux détonations.",
+          "🕳️ Impact de balle"
+        ],
+        [
+          "Le drapeau blanc",
+          "Quelqu’un a hissé le drapeau blanc. Personne ne voulait se rendre.",
+          "🏳️ Drapeau blanc"
+        ],
+        [
+          "Le bosco Grimsby sonde",
+          "Il a annoncé six brasses de fond. Il y en avait trois.",
+          "🧵 Ligne de sonde"
+        ],
+        [
+          "Signaux dans le noir",
+          "D’un hublot, une lumière clignotait vers la frégate. Trois éclats brefs.",
+          "🪟 Hublot"
+        ],
+        [
+          "Mademoiselle Coral écrit",
+          "Elle écrivait une lettre chaque soir. Celle-ci était pour la frégate.",
+          "💌 Billet clandestin"
+        ],
+        [
+          "Le récif",
+          "La frégate s’est échouée sur le récif. Le traître était toujours à bord.",
+          "🪸 Morceau de corail"
+        ]
+      ]
+    ],
+    "piraten-8": [
+      "Chapitre VIII · Le dernier port",
+      "La Mouette s’amarre dans un port où personne ne pose de questions. Elle y finira ses jours à quai, et chacun veut encore récupérer quelque chose à bord.",
+      "La Mouette noire est désarmée pour de bon, et le dernier mot de son journal de bord est le tien.",
+      "Le dernier chapitre, et le plus difficile. Si une déclaration dit que quelqu’un n’était pas dans la coquerie, raye d’un coup toute la coquerie pour cette personne. Ça t’évite de compter case par case.",
+      [
+        [
+          "Le capitaine de port",
+          "Le capitaine de port ne posait pas de questions. Mais il notait tout.",
+          "📗 Registre du port"
+        ],
+        [
+          "La dernière cargaison",
+          "La cargaison a été débarquée. Une caisse pesait plus lourd que ne le disait la liste.",
+          "🪝 Crochet de levage"
+        ],
+        [
+          "Saffron emballe ses couteaux",
+          "Douze couteaux sont partis dans son sac. À bord, elle n’en avait jamais eu que onze.",
+          "👝 Trousse à couteaux"
+        ],
+        [
+          "L’acheteur",
+          "Un acheteur a offert de l’or pour la Mouette. Il voulait seulement voir la cale.",
+          "📑 Acte de vente"
+        ],
+        [
+          "Thorne décharge le canon",
+          "Le canon devait être débarqué. Il était encore chargé.",
+          "🧨 Mèche"
+        ],
+        [
+          "Le dernier mouillage",
+          "L’ancre est tombée pour la dernière fois. Quelque chose pendait à la chaîne.",
+          "⛓️ Chaîne d’ancre"
+        ],
+        [
+          "Les rats quittent le navire",
+          "Les rats ont été les premiers à quitter le bord. Ils savaient quelque chose.",
+          "🪤 Piège à rats"
+        ],
+        [
+          "La dernière page",
+          "Dans le journal de bord de la Mouette, une page est encore blanche.",
+          "📕 Journal de bord fermé"
+        ]
+      ]
+    ],
+    "hotel-7": [
+      "Chapitre VII · La vente aux enchères",
+      "Un mois plus tard, tout ce que contient l’Aurora passe sous le marteau, du piano à la dernière cuillère. Les anciens clients sont au premier rang.",
+      "Le marteau tombe une dernière fois : tout est vendu, sauf le bâtiment lui-même.",
+      "Des plans plus grands, des déclarations plus floues : cette vente n’a rien d’une bonne affaire. Avec le Crayon, mets un point sur chaque case où un suspect peut encore se trouver. Si deux suspects doivent être sur la même ligne, compare leurs points : une ligne où un seul des deux a un point est exclue.",
+      [
+        [
+          "Le jour de l’exposition",
+          "Le jour de l’exposition, tout portait une étiquette. Une étiquette n’était attachée à rien.",
+          "🏷️ Étiquette de lot"
+        ],
+        [
+          "Le catalogue",
+          "Le lot 77 figurait deux fois au catalogue. Il n’y avait qu’un lot 77.",
+          "📕 Catalogue de vente"
+        ],
+        [
+          "La première enchère",
+          "La première enchère est venue d’une chaise vide.",
+          "🪧 Palette d’enchères"
+        ],
+        [
+          "Couverts au kilo",
+          "L’argenterie était vendue au kilo. Il manquait un kilo.",
+          "🍴 Couverts de l’hôtel"
+        ],
+        [
+          "Le pianiste Felix enchérit",
+          "Il a enchéri sur son vieux piano. Quelqu’un a surenchéri.",
+          "🪑 Tabouret de piano"
+        ],
+        [
+          "Six lettres",
+          "Sur la façade, AURORA s’écrivait en six lettres. Il en restait cinq.",
+          "🅰️ Lettre de façade"
+        ],
+        [
+          "La porte à tambour",
+          "La porte à tambour était déjà vendue. À minuit, elle a encore fait un tour.",
+          "🔄 Porte à tambour"
+        ],
+        [
+          "Le dernier lot",
+          "Le dernier lot ne figurait pas au catalogue. Quelqu’un a pourtant enchéri.",
+          "🔨 Marteau d’enchères"
+        ]
+      ]
+    ],
+    "hotel-8": [
+      "Chapitre VIII · La démolition",
+      "Lundi, la boule de démolition arrive. Le week-end d’avant, les anciens clients parcourent une dernière fois les couloirs vides.",
+      "La boule de démolition s’élance, la poussière retombe, et le dernier dossier de l’Aurora est classé.",
+      "L’Aurora une dernière fois, avec presque uniquement les affaires les plus difficiles. Un palmier est une mauvaise cachette : qui se tenait juste à côté d’un palmier ne peut être que sur quelques cases. Cherche d’abord ces déclarations sur les meubles et commence par là.",
+      [
+        [
+          "Le permis",
+          "La démolition était autorisée à partir de lundi. Quelqu’un a commencé dimanche.",
+          "📃 Permis de démolir"
+        ],
+        [
+          "Le majordome Winslow en casque",
+          "Pendant quarante ans, il a porté un nœud papillon. Aujourd’hui, un casque de chantier.",
+          "⛑️ Casque de chantier"
+        ],
+        [
+          "Le vieil ascenseur",
+          "Dans la cage d’ascenseur pendait encore une carte de client. Un nom était barré.",
+          "🛗 Bouton d’ascenseur"
+        ],
+        [
+          "La grue",
+          "Depuis la grue, on voyait chaque fenêtre. À l’une d’elles se tenait quelqu’un.",
+          "🏗️ Crochet de grue"
+        ],
+        [
+          "La dernière valse",
+          "Le parquet avait été vendu. Pourtant, il y avait des pas de danse dans la poussière.",
+          "🪩 Boule à facettes"
+        ],
+        [
+          "La première pierre",
+          "Dans la première pierre, il y avait une capsule temporelle. Quelqu’un était passé avant.",
+          "🫙 Capsule temporelle"
+        ],
+        [
+          "La chambre 404 retrouvée",
+          "Les démolisseurs ont trouvé la chambre 404. Le réveil faisait encore tic-tac.",
+          "⏰ Réveil en marche"
+        ],
+        [
+          "La dernière heure",
+          "Il restait une heure à l’Aurora. Assez pour la dernière question.",
+          "🧱 Dernière brique"
+        ]
+      ]
+    ],
+    "ruimte-7": [
+      "Chapitre VII · Quarantaine",
+      "La capsule a atterri et l’équipage part en quarantaine. Trois semaines dans une réplique d’Orion, au fond d’un hangar sur Terre.",
+      "Le jour où les portes s’ouvrent, un navire repêche quelque chose d’orange dans l’océan.",
+      "De retour sur Terre, et toujours derrière un sas. Certaines affaires sont maintenant de niveau maître : un plateau plus grand, moins de déclarations directes. Qui était seul dans un module t’apprend aussi quelque chose sur ses voisins : quiconque était côte à côte avec lui se tenait de l’autre côté d’un mur.",
+      [
+        [
+          "Orion sur Terre",
+          "Chaque module reproduit jusqu’à la dernière vis. L’une d’elles était desserrée.",
+          "🔩 Vis desserrée"
+        ],
+        [
+          "La biologiste Wren compte les jours",
+          "Elle barrait chaque jour. Hier, quelqu’un l’avait fait à sa place.",
+          "📆 Compte à rebours"
+        ],
+        [
+          "Le Dr Nkemelu prélève",
+          "Huit tubes de sang. L’un d’eux ne portait pas de nom.",
+          "🩸 Tube de sang"
+        ],
+        [
+          "Visite derrière la vitre",
+          "Tout le monde faisait signe à sa famille. Une personne regardait ailleurs.",
+          "🪟 Vitre d’observation"
+        ],
+        [
+          "Repas par le passe-plat",
+          "Trois repas par jour par le passe-plat. L’un est revenu intact.",
+          "🍱 Plateau-repas"
+        ],
+        [
+          "La gravité revient",
+          "Après six mois en apesanteur, tout tombait. Un alibi aussi.",
+          "🥤 Gobelet renversé"
+        ],
+        [
+          "Le filtre à air",
+          "Le filtre retenait tout. Même un cheveu qui n’avait rien à faire là.",
+          "🌀 Filtre à air"
+        ],
+        [
+          "Jour vingt et un",
+          "Les portes se sont ouvertes. Un bracelet traînait encore sur un lit.",
+          "📛 Bracelet d’identification"
+        ]
+      ]
+    ],
+    "ruimte-8": [
+      "Chapitre VIII · La boîte noire",
+      "Orion n’a pas entièrement brûlé. La boîte noire est écoutée dans la réplique de la station, module par module.",
+      "La boîte noire se tait, le dossier Orion est classé, et cette fois, il le reste.",
+      "Le dernier chapitre d’Orion, presque entièrement de niveau maître. Quand deux personnes doivent être dans le même module, cherche un module où toutes les deux ont leur place, en tenant compte de toutes leurs autres déclarations. Souvent, il n’en reste qu’un.",
+      [
+        [
+          "Sortie de l’océan",
+          "Une boîte orange remontée du fond de la mer. Elle avait tout enregistré.",
+          "🟧 Boîte orange"
+        ],
+        [
+          "Minute zéro",
+          "L’enregistrement commençait par un silence. Puis une écoutille s’est ouverte.",
+          "🎧 Casque audio"
+        ],
+        [
+          "L’ingénieure Vega écoute",
+          "Elle connaissait chaque bruit à bord. Pas ce sifflement.",
+          "⚙️ Soupape de pression"
+        ],
+        [
+          "Deux voix",
+          "Deux voix dans la machinerie. D’après le planning, personne n’y était.",
+          "🗣️ Empreinte vocale"
+        ],
+        [
+          "L’officière Paz rembobine",
+          "Elle a rembobiné trois fois. Ensuite, elle n’a plus rien dit.",
+          "⏪ Bouton rembobiner"
+        ],
+        [
+          "Onze secondes de silence",
+          "À 04:00, l’enregistrement s’est coupé pendant onze secondes. Pas tout seul.",
+          "🔇 Bouton sourdine"
+        ],
+        [
+          "La botaniste Fern se tait",
+          "Sa voix était sur chaque enregistrement. Pas sur le dernier.",
+          "🪴 Bouture"
+        ],
+        [
+          "Le dernier enregistrement",
+          "La dernière minute avant le désamarrage. Quelqu’un a chuchoté un nom.",
+          "🗂️ Dossier Orion"
+        ]
+      ]
+    ],
+    "museum-7": [
+      "Chapitre VII · Le prêt",
+      "Le musée a rouvert, comme s’il n’y avait jamais eu de porte. Un tableau célèbre arrive de Florence en prêt, assuré pour plus que le bâtiment.",
+      "Le tableau repart à Florence, et l’assureur résilie la police.",
+      "À partir d’ici, il y a des affaires de niveau maître : un plateau plus grand, moins de points d’appui. Quand deux personnes partagent une ligne ou une colonne, place l’une au Crayon et regarde où l’autre peut encore aller. Si l’autre n’a plus aucune case possible, la première n’était pas là.",
+      [
+        [
+          "La caisse de Florence",
+          "D’après l’étiquette, la caisse contenait un seul tableau. Elle pesait plus lourd.",
+          "🏷️ Étiquette de transport"
+        ],
+        [
+          "Quatre vis",
+          "Quatre vis tenaient le cadre au mur. Il en restait trois.",
+          "🔩 Vis d’accrochage"
+        ],
+        [
+          "Cinquante lux",
+          "La lumière ne devait pas dépasser cinquante lux. Quelqu’un l’avait montée.",
+          "🔆 Luxmètre"
+        ],
+        [
+          "La restauratrice Iris a des doutes",
+          "Au microscope, la peinture était trop jeune pour le tableau.",
+          "🔬 Échantillon de peinture"
+        ],
+        [
+          "La photo de presse",
+          "Sur la photo de presse, il y avait une main de trop.",
+          "📸 Photo de presse"
+        ],
+        [
+          "L’audioguide",
+          "L’étape quatorze citait un nom qui ne figurait sur aucune étiquette.",
+          "🎧 Audioguide"
+        ],
+        [
+          "Le professeur Adebayo le reconnaît",
+          "Il connaissait ce tableau par une vieille diapositive, prise à Vlierbeek.",
+          "🎞️ Vieille diapositive"
+        ],
+        [
+          "Retour à Florence",
+          "La caisse a été refermée. Ce qui y est entré n’est pas ce qui en est sorti.",
+          "🪛 Tournevis"
+        ]
+      ]
+    ],
+    "museum-8": [
+      "Chapitre VIII · Le centenaire",
+      "Sans assurance, Vlierbeek fête tout de même ses cent ans. Pendant la fête, le vrai tableau rentre à la maison, après cinquante ans d’absence.",
+      "Le tableau est de nouveau à sa place, et le dossier Vlierbeek est classé pour de bon.",
+      "Presque toutes les affaires sont désormais de niveau maître ; dans un musée, rien de plus normal. Si tu bloques, demande-toi quelle déclaration tu n’as pas encore utilisée. Coche celles que tu utilises : tu le verras tout de suite.",
+      [
+        [
+          "Le retour",
+          "Après cinquante ans, le tableau était de nouveau accroché chez lui. Aux mêmes clous.",
+          "🫧 Papier bulle"
+        ],
+        [
+          "Le drapeau en berne",
+          "Sur le toit, le drapeau était en berne. Avant même le début de la fête.",
+          "🚩 Drapeau du toit"
+        ],
+        [
+          "Le seul gardien",
+          "Sans assurance, Gus était à lui seul toute la sécurité. Il a bâillé une fois.",
+          "🍬 Pastille de menthe"
+        ],
+        [
+          "La médaille du centenaire",
+          "Chaque invité a reçu une médaille. L’une portait une autre année.",
+          "🏅 Médaille du centenaire"
+        ],
+        [
+          "La fanfare",
+          "La fanfare jouait l’hymne du centenaire. Une trompette est restée muette.",
+          "🎺 Trompette"
+        ],
+        [
+          "Le conservateur Ellery lit les noms",
+          "Il a lu le nom de chaque conservateur. Il en a sauté un.",
+          "📘 Livre du centenaire"
+        ],
+        [
+          "La guide Margot raconte",
+          "Elle a raconté cent ans en dix minutes. Elle a passé une nuit sous silence.",
+          "📏 Baguette de guide"
+        ],
+        [
+          "Vlierbeek a cent ans",
+          "Cent ans à minuit. La dernière question est la plus ancienne.",
+          "🖼️ L’original"
+        ]
+      ]
+    ],
+    "trein-7": [
+      "Chapitre VII · Le dépôt",
+      "Le départ à la casse est reporté au printemps. Le train passe l’hiver dans un dépôt, et la nuit, il reçoit de la visite.",
+      "Au printemps, un inconnu achète le train, pour un dernier trajet jusqu’à Vienne.",
+      "Le dépôt est plus grand qu’il n’y paraît, et certaines affaires aussi : neuf cases sur neuf. « Pas côte à côte » n’exclut que quatre cases. Garde ces déclarations pour la fin.",
+      [
+        [
+          "De la lumière sans courant",
+          "Une lampe brillait dans le wagon-restaurant. Le courant était coupé.",
+          "🔋 Batterie"
+        ],
+        [
+          "Le lit défait",
+          "Le train était vide depuis des semaines. Quelqu’un avait dormi dans le lit du compartiment A.",
+          "🧦 Chaussette de laine"
+        ],
+        [
+          "Le magicien Orlando s’entraîne",
+          "Il répétait son tour de disparition dans le train vide. Quelqu’un regardait.",
+          "🪄 Baguette magique"
+        ],
+        [
+          "L’aiguillage",
+          "Quelqu’un a manœuvré l’aiguillage pendant la nuit. Le train était encore à l’intérieur.",
+          "🎚️ Levier d’aiguillage"
+        ],
+        [
+          "Le chauffeur Jules flaire la fumée",
+          "La chaudière était froide depuis des semaines. Pas cette nuit.",
+          "♨️ Manomètre"
+        ],
+        [
+          "La veuve Duval cherche",
+          "Elle venait chercher la seconde valise. Quelqu’un l’avait devancée.",
+          "🪡 Épingle à chapeau"
+        ],
+        [
+          "Fleurs de givre",
+          "Dans les fleurs de givre de la vitre, il y avait un nom. La moitié d’un nom.",
+          "🪟 Vitre gelée"
+        ],
+        [
+          "À vendre",
+          "À vendre : un train de nuit, douze wagons. Une seule réponse est arrivée.",
+          "📰 Petite annonce"
+        ]
+      ]
+    ],
+    "trein-8": [
+      "Chapitre VIII · L’arrivée",
+      "Le train refait une dernière fois l’ancienne ligne jusqu’à Vienne. Tous les voyageurs d’autrefois ont reçu un billet, sans expéditeur.",
+      "À Vienne, le train de nuit entre dans un musée et y reste pour de bon.",
+      "Le dernier trajet, presque entièrement de niveau maître. Dans chaque wagon, compte les cases sans meuble : c’est le nombre de personnes qui y tiennent, pas plus. Un petit wagon est vite plein.",
+      [
+        [
+          "L’invitation",
+          "Tout le monde est venu. Personne n’a avoué être curieux.",
+          "📩 Enveloppe vierge"
+        ],
+        [
+          "Encore ce tunnel",
+          "À neuf heures, encore ce tunnel. Tout le monde a retenu son souffle.",
+          "🕰️ Pendule"
+        ],
+        [
+          "Première classe",
+          "La baronne voyageait en première classe. Ce train n’avait pas de première classe.",
+          "🦊 Étole de fourrure"
+        ],
+        [
+          "Le nouveau contrôleur",
+          "Quelqu’un poinçonnait les billets. Le train n’avait pas de contrôleur.",
+          "🕳️ Poinçon"
+        ],
+        [
+          "L’actrice Lola joue son propre rôle",
+          "Elle a rejoué la soirée d’autrefois. Un peu trop fidèlement.",
+          "💄 Rouge à lèvres"
+        ],
+        [
+          "Le neuvième voyageur",
+          "Huit billets envoyés. Neuf personnes à bord.",
+          "👔 Cravate"
+        ],
+        [
+          "L’infirmière Hedda veille",
+          "Elle a veillé toute la nuit dans le couloir. Quelqu’un est passé quand même.",
+          "🧩 Carnet de jeux"
+        ],
+        [
+          "Vienne, enfin",
+          "La personne qui avait envoyé les billets était elle aussi à bord.",
+          "🚉 Billet de quai"
+        ]
+      ]
+    ],
+    "circus-7": [
+      "Chapitre VII · Les quartiers d’hiver",
+      "Le chapiteau repose, plié, dans la grange des quartiers d’hiver, une ferme à l’écart de la ville. Tout le monde attend un acheteur et surveille les autres.",
+      "Aucun acheteur ne vient, alors le cirque joue une dernière fois : la nuit, dans la grange.",
+      "Les quartiers d’hiver sont grands et les déclarations en disent peu. Marque d’abord, dans chaque zone, les cases qui sont dans un coin, contre un mur ou au milieu. Une zone large de deux cases n’a pas de milieu : qui se tient « au milieu » se trouve forcément ailleurs.",
+      [
+        [
+          "La huitième roulotte",
+          "Sept roulottes sont entrées dans la grange. Au matin, il y en avait huit.",
+          "🛞 Roue de roulotte"
+        ],
+        [
+          "La girouette",
+          "La girouette de la grange tournait. Il n’y avait pas de vent.",
+          "🐓 Girouette"
+        ],
+        [
+          "Le colosse Boris scie du bois",
+          "Il a scié du bois pour tout l’hiver. En une seule nuit.",
+          "🪚 Scie"
+        ],
+        [
+          "Le trou dans la glace",
+          "L’étang était gelé. Sauf à un endroit.",
+          "⛸️ Patin à glace"
+        ],
+        [
+          "Le clown Pippo sans maquillage",
+          "Sans maquillage, personne ne le reconnaissait. Ça tombait bien.",
+          "💄 Boîte à maquillage"
+        ],
+        [
+          "Cirque à vendre",
+          "L’annonce était dans le journal. Personne ne l’avait passée.",
+          "🗞️ Coupure de journal"
+        ],
+        [
+          "La vétérinaire Nadia reste",
+          "Son travail était terminé. Pourtant, elle est restée une semaine de plus.",
+          "💼 Trousse de vétérinaire"
+        ],
+        [
+          "L’acheteur se désiste",
+          "L’acheteur a appelé pour annuler. À la ferme, quelqu’un le savait déjà.",
+          "☎️ Combiné de téléphone"
+        ]
+      ]
+    ],
+    "circus-8": [
+      "Chapitre VIII · Le spectacle de nuit",
+      "Le village vient voir une représentation unique dans la grange, à la lueur des lanternes. La piste est en paille, les artistes sont les mêmes.",
+      "Les derniers applaudissements s’éteignent dans la grange, et du Cirque Zano, il ne reste que ton dossier.",
+      "Presque toutes les affaires de ce chapitre sont du genre le plus coriace. Si tu bloques, place quelqu’un au Crayon à un endroit possible et raisonne à partir de là. Si une déclaration ne tient plus, cet endroit est faux ; une erreur au Crayon ne coûte rien.",
+      [
+        [
+          "La répétition générale",
+          "À la répétition, il y avait un numéro qui ne figurait pas au programme.",
+          "📑 Programme"
+        ],
+        [
+          "Monsieur Loyal",
+          "Il fallait quelqu’un pour annoncer la soirée. Deux personnes étaient prêtes.",
+          "📢 Porte-voix"
+        ],
+        [
+          "Les torches du jongleur Teo",
+          "Cinq torches dans une grange pleine de paille. Il en a rattrapé quatre.",
+          "🔥 Torche de jonglage"
+        ],
+        [
+          "La barbe à papa",
+          "La machine à barbe à papa a tourné toute la soirée. Personne ne s’en occupait.",
+          "🍭 Barbe à papa"
+        ],
+        [
+          "L’entracte",
+          "L’entracte a duré dix minutes. Pour un artiste, vingt.",
+          "🔔 Sonnette d’entracte"
+        ],
+        [
+          "La trapéziste Mira grimpe",
+          "Elle a accroché son trapèze à une poutre. La poutre était à moitié sciée.",
+          "🪜 Échelle de corde"
+        ],
+        [
+          "La guichetière Dottie vend",
+          "L’entrée était gratuite. Pourtant, elle vendait des billets.",
+          "💶 Petite monnaie"
+        ],
+        [
+          "L’ovation",
+          "Tout le monde s’est levé pour applaudir. Une personne est restée assise.",
+          "🪧 Affiche de cirque"
+        ]
+      ]
+    ],
+    "skihut-7": [
+      "Chapitre VII · Hors saison",
+      "En automne, le chalet est vide. Pourtant, une lumière brille, et cinq anciens clients ont encore une clé.",
+      "La première neige tombe et coupe la route, comme la première fois.",
+      "Le plateau s’agrandit et les déclarations se font avares. Si le rapport dit qu’une pièce était vide, raye tout ce bloc de cases pour les cinq suspects, y compris pour celui qu’on ne cite nulle part ailleurs. Un chalet vide sert donc quand même à quelque chose.",
+      [
+        [
+          "De la lumière derrière les volets",
+          "Tous les volets étaient fermés. Derrière l’un d’eux, une lumière brillait.",
+          "🪔 Lampe à huile"
+        ],
+        [
+          "Les doubles des clés",
+          "Il existait quatre doubles des clés. À l’intérieur, il y avait cinq clients.",
+          "🔑 Double de clé"
+        ],
+        [
+          "Des draps sur les meubles",
+          "Chaque meuble était sous un drap. Sous l’un d’eux, il n’y avait pas de meuble.",
+          "🛋️ Housse de protection"
+        ],
+        [
+          "Le cuisinier Luigi cueille des champignons",
+          "Il a rempli tout un panier. Une espèce ne figurait pas dans son livre.",
+          "🍄 Champignon"
+        ],
+        [
+          "La tapette à souris",
+          "La tapette du garde-manger s’était refermée. Sans souris.",
+          "🪤 Tapette à souris"
+        ],
+        [
+          "La touriste Hana écrit",
+          "Sa carte postale venait du chalet. Le chalet était fermé depuis des mois.",
+          "🏞️ Carte postale"
+        ],
+        [
+          "Le téléphérique muet",
+          "En automne, le téléphérique ne tournait pas. Pourtant, une cabine était suspendue en haut.",
+          "🚠 Cabine"
+        ],
+        [
+          "La première neige",
+          "La première neige est tombée à minuit. Une seule trace menait à la porte.",
+          "🥾 Chaussure de montagne"
+        ]
+      ]
+    ],
+    "skihut-8": [
+      "Chapitre VIII · Edelweiss",
+      "La route est coupée et le chalet est plein. Autour du poêle, les mêmes visages que le premier soir.",
+      "Van Dam referme son carnet, te fait un signe de tête et descend vers la vallée dans la neige fraîche, sans se presser.",
+      "Les dernières affaires, presque toutes sur le grand plateau. Ne bloque pas sur le suspect le plus difficile : place d’abord les autres, et il ne reste souvent qu’une case pour le dernier. C’est comme ça que j’ai toujours fait.",
+      [
+        [
+          "Chacun à sa place",
+          "Tout le monde a repris sa place du premier soir. Sauf une personne.",
+          "📇 Marque-place"
+        ],
+        [
+          "Le tas de bois",
+          "Du bois pour tout l’hiver. Fendu en un après-midi, par personne.",
+          "🪓 Hache"
+        ],
+        [
+          "Une page de moins",
+          "Chaque hiver, tout le monde signait le livre d’or. Il manquait un hiver.",
+          "📄 Page volante"
+        ],
+        [
+          "La conduite gelée",
+          "À trois heures, la conduite a gelé. Quelqu’un avait ouvert une fenêtre.",
+          "🚰 Robinet gelé"
+        ],
+        [
+          "Le petit Kai veille",
+          "Cette année, il avait le droit de veiller. Il en a vu plus qu’il n’aurait voulu.",
+          "🧣 Écharpe en laine"
+        ],
+        [
+          "La balise d’avalanche",
+          "La balise bipait à la cave. En bas, pas un flocon.",
+          "📟 Balise d’avalanche"
+        ],
+        [
+          "La guide Freya prédit",
+          "Elle a prédit une avalanche, à l’heure près. Elle n’a pas dit comment.",
+          "⛰️ Altimètre"
+        ],
+        [
+          "Edelweiss",
+          "Là où tout a commencé, près du poêle. C’est là aussi que tout finit.",
+          "🌼 Edelweiss séché"
         ]
       ]
     ]
