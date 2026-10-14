@@ -311,7 +311,7 @@ const CAMPAIGN = [
     briefing: 'Het schip lijkt groter en de bemanning zegt minder. Bij het slachtoffer stond alleen de dader. Zet een verklaring twee mensen in dezelfde ruimte, dan staat geen van beiden bij het slachtoffer.',
     cases: [
     { title: 'Gezocht, dood of levend', story: 'In elke haven hing hun gezicht. Op één poster ontbrak er een.', item: '📃 Opsporingsposter', difficulty: 'moeilijk', seed: 67101 },
-    { title: 'Alle zeilen bij', story: 'Alle zeilen stonden bij. Toch kwam het fregat dichterbij.', item: '🪡 Zeilnaald', difficulty: 'moeilijk', seed: 67198 },
+    { title: 'Alle zeilen bij', story: 'Alle zeilen stonden bij. Toch kwam het fregat dichterbij.', item: '🪡 Zeilnaald', difficulty: 'moeilijk', seed: 67205 },
     { title: 'Het waarschuwingsschot', story: 'Het fregat schoot één keer. Aan boord telde iemand twee knallen.', item: '🕳️ Kogelgat', difficulty: 'meester', seed: 67295 },
     { title: 'De witte vlag', story: 'Iemand hees de witte vlag. Niemand wilde zich overgeven.', item: '🏳️ Witte vlag', difficulty: 'moeilijk', seed: 67392 },
     { title: 'Bootsman Grimsby peilt', story: 'Hij riep zes vadem diep. Het waren er drie.', item: '🧵 Loodlijn', difficulty: 'meester', seed: 67489 },
@@ -382,7 +382,7 @@ const CAMPAIGN = [
     outro: 'De hamer valt voor het laatst: alles is verkocht, behalve het gebouw zelf.',
     briefing: 'Grotere plattegronden, vagere verklaringen: deze veiling is geen koopje. Zet met het potlood een stipje op elk vakje waar een verdachte nog kan staan. Moeten twee verdachten in dezelfde rij staan, vergelijk dan hun stipjes: een rij waar maar één van de twee een stipje heeft, valt af.',
     cases: [
-    { title: 'De kijkdag', story: 'Op de kijkdag hing aan alles een kaartje. Aan één kaartje hing niets.', item: '🏷️ Kavelkaartje', difficulty: 'moeilijk', seed: 69101 },
+    { title: 'De kijkdag', story: 'Op de kijkdag hing aan alles een kaartje. Aan één kaartje hing niets.', item: '🏷️ Kavelkaartje', difficulty: 'moeilijk', seed: 69108 },
     { title: 'De catalogus', story: 'Kavel 77 stond twee keer in de catalogus. Er was maar één kavel 77.', item: '📕 Veilingcatalogus', difficulty: 'moeilijk', seed: 69198 },
     { title: 'Het eerste bod', story: 'Het eerste bod kwam van een lege stoel.', item: '🪧 Biedbordje', difficulty: 'meester', seed: 69295 },
     { title: 'Bestek per kilo', story: 'Het zilver werd per kilo geveild. Er ontbrak een kilo.', item: '🍴 Hotelbestek', difficulty: 'moeilijk', seed: 69392 },
@@ -582,7 +582,7 @@ const CAMPAIGN = [
     outro: 'Het schilderij hangt weer waar het hoort, en het dossier Vlierbeek gaat voorgoed dicht.',
     briefing: 'Bijna elke zaak is nu een meesterzaak; in een museum past dat. Zit je vast, vraag je dan af welke verklaring je nog niet hebt gebruikt. Vink af wat je gebruikt, dan zie je het in één oogopslag.',
     cases: [
-    { title: 'De thuiskomst', story: 'Na vijftig jaar hing het schilderij weer thuis. Op dezelfde spijkers.', item: '🫧 Noppenfolie', difficulty: 'moeilijk', seed: 71101 },
+    { title: 'De thuiskomst', story: 'Na vijftig jaar hing het schilderij weer thuis. Op dezelfde spijkers.', item: '🫧 Noppenfolie', difficulty: 'moeilijk', seed: 71108 },
     { title: 'De vlag halfstok', story: 'De vlag op het dak hing halfstok. Al voordat het feest begon.', item: '🚩 Dakvlag', difficulty: 'meester', seed: 71198 },
     { title: 'De enige bewaker', story: 'Zonder verzekering was Gus de hele beveiliging. Hij gaapte één keer.', item: '🍬 Pepermunt', difficulty: 'meester', seed: 71295 },
     { title: 'De jubileumpenning', story: 'Elke gast kreeg een penning. Eén penning had een ander jaartal.', item: '🏅 Jubileumpenning', difficulty: 'meester', seed: 71392 },
@@ -696,7 +696,7 @@ const CAMPAIGN = [
     outro: 'In Wenen rolt de nachttrein een museum in en blijft daar voorgoed staan.',
     briefing: 'De laatste rit, en bijna alles op meesterniveau. Tel in elke wagon de vakjes zonder meubel: zoveel mensen passen erin, niet meer. Een kleine wagon zit snel vol.',
     cases: [
-    { title: 'De uitnodiging', story: 'Iedereen kwam. Niemand gaf toe dat hij nieuwsgierig was.', item: '📩 Blanco envelop', difficulty: 'moeilijk', seed: 78101 },
+    { title: 'De uitnodiging', story: 'Iedereen kwam. Niemand gaf toe dat hij nieuwsgierig was.', item: '📩 Blanco envelop', difficulty: 'moeilijk', seed: 78108 },
     { title: 'Weer die tunnel', story: 'Om negen uur weer die tunnel. Iedereen hield zijn adem in.', item: '🕰️ Pendule', difficulty: 'meester', seed: 78198 },
     { title: 'Eerste klas', story: 'De barones reisde eerste klas. Deze trein had geen eerste klas.', item: '🦊 Bontstola', difficulty: 'meester', seed: 78295 },
     { title: 'De nieuwe conducteur', story: 'Iemand knipte de kaartjes. De trein had geen conducteur.', item: '🕳️ Kniptang', difficulty: 'meester', seed: 78392 },
@@ -799,9 +799,9 @@ const CAMPAIGN = [
     { title: 'De achtste wagen', story: 'Zeven wagens reden de schuur in. \'s Ochtends stonden er acht.', item: '🛞 Wagenwiel', difficulty: 'moeilijk', seed: 62101 },
     { title: 'De windhaan', story: 'De windhaan op de schuur draaide. Er stond geen wind.', item: '🐓 Windhaan', difficulty: 'moeilijk', seed: 62198 },
     { title: 'Sterke Man Boris zaagt hout', story: 'Hij zaagde hout voor de hele winter. In één nacht.', item: '🪚 Houtzaag', difficulty: 'meester', seed: 62295 },
-    { title: 'Het wak in de vijver', story: 'De vijver was dichtgevroren. Op één plek na.', item: '⛸️ Schaats', difficulty: 'moeilijk', seed: 62392 },
-    { title: 'Clown Pippo zonder schmink', story: 'Zonder schmink herkende niemand hem. Dat kwam goed uit.', item: '💄 Schminkdoos', difficulty: 'meester', seed: 62489 },
-    { title: 'Circus te koop', story: 'De advertentie stond in de krant. Niemand had hem geplaatst.', item: '🗞️ Krantenknipsel', difficulty: 'moeilijk', seed: 62586 },
+    { title: 'Het wak in de vijver', story: 'De vijver was dichtgevroren. Op één plek na.', item: '⛸️ Schaats', difficulty: 'moeilijk', seed: 62399 },
+    { title: 'Clown Pippo zonder schmink', story: 'Zonder schmink herkende niemand hem. Dat kwam goed uit.', item: '💄 Schminkdoos', difficulty: 'meester', seed: 62496 },
+    { title: 'Circus te koop', story: 'De advertentie stond in de krant. Niemand had hem geplaatst.', item: '🗞️ Krantenknipsel', difficulty: 'moeilijk', seed: 62593 },
     { title: 'Dierenarts Nadia blijft', story: 'Haar werk zat erop. Toch bleef ze nog een week.', item: '💼 Dokterstas', difficulty: 'meester', seed: 62683 },
     { title: 'De koper belt af', story: 'De koper belde af. Op het erf wist iemand het al eerder.', item: '☎️ Telefoonhoorn', difficulty: 'meester', seed: 62780 }
   ]},

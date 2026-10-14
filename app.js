@@ -616,7 +616,7 @@ const App = {
     set('week-title', w.title);
     set('week-text', wdone
       ? AP_T`Opgelost! Week ${w.week} · ${wt.icon} ${wt.title}. Volgende week ligt er een nieuwe zaak.`
-      : AP_T`Week ${w.week} · ${wt.icon} ${wt.title} · moeilijk. Elke week één speciale zaak; iedereen speelt dezelfde. Deel je resultaat met andere speurders.`);
+      : AP_T`Week ${w.week} · ${wt.icon} ${wt.title} · ${DIFFICULTY.meester.label}. Elke week één speciale zaak op meesterniveau; iedereen speelt dezelfde. Deel je resultaat met andere speurders.`);
     set('week-bonus', wdone ? AP_T('✓ Opgelost') : AP_T`🪙 +${Progress.WEEK_BONUS} punten`);
     set('btn-week', wdone ? AP_T('Nog eens') : AP_T('Start'));
     const ws = document.getElementById('btn-week-share');

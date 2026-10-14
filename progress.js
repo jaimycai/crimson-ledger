@@ -86,7 +86,7 @@ const Progress = {
   weekKey(d = new Date()) { const w = this.isoWeek(d); return `${w.year}-W${String(w.week).padStart(2, '0')}`; },
   weekly(d = new Date()) {
     const w = this.isoWeek(d), n = w.year * 53 + w.week;
-    return { key: this.weekKey(d), seed: 300000 + n * 31, theme: WEEK_THEMES[n % WEEK_THEMES.length], difficulty: 'moeilijk',
+    return { key: this.weekKey(d), seed: 300000 + n * 31, theme: WEEK_THEMES[n % WEEK_THEMES.length], difficulty: 'meester',   // sinds 1.3 op meesterniveau
              title: WEEK_TITLES[WEEK_THEMES[n % WEEK_THEMES.length]][Math.floor(n / WEEK_THEMES.length) % 4], week: w.week };
   },
   weekDone(d = new Date()) { return this.get('crimson-week-done') === this.weekKey(d); },
@@ -195,6 +195,7 @@ const Progress = {
     { id: 'weekzaak',      icon: '🗓️', title: 'Zaak van de week',      hint: 'Los een zaak van de week op',                                test: c => !!c.weekDone },
     { id: 'verzamelaar',   icon: '🗄️', title: 'Verzamelaar',           hint: 'Verzamel 24 bewijsstukken in de vitrine',                    test: c => c.evidence >= 24 },
     { id: 'punten',        icon: '🪙', title: 'Vijfduizend punten',    hint: 'Verzamel 5000 punten',                                       test: c => c.points >= 5000 },
+    { id: 'meesterzaken',  icon: '♟️', title: 'Meesterspeurder',       hint: 'Los vijf zaken op meesterniveau op',                         test: c => c.masterSolved >= 5 },
     { id: 'meester',       icon: '🎖️', title: 'Meesterdetective',      hint: 'Bereik de hoogste rang',                                     test: c => c.rankLevel === 5 || c.rankTitle === 'Meesterdetective' }
   ],
   medals() { return this.json('crimson-medals', {}); },

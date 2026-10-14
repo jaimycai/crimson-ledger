@@ -271,7 +271,7 @@ const active = () => document.querySelector('.screen.active').id;
     // ── zaak van de week ──
     document.getElementById('btn-play-again').click(); await sleep(300);
     document.getElementById('btn-week').click(); await sleep(300);
-    check(active() === 'screen-board' && Board.isWeekly && Board.difficulty === 'moeilijk' && /Week \d+/.test(document.getElementById('board-diff-tag').textContent), 'zaak van de week gestart: ' + document.getElementById('board-diff-tag').textContent);
+    check(active() === 'screen-board' && Board.isWeekly && Board.difficulty === 'meester' && /Week \d+/.test(document.getElementById('board-diff-tag').textContent), 'zaak van de week gestart: ' + document.getElementById('board-diff-tag').textContent);
     const wk = Board.puzzle;
     wk.solution.forEach((c, i) => { Board.placements[i] = { x: c.x, y: c.y }; }); Board.after();
     document.getElementById('btn-board-check').click();

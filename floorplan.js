@@ -86,9 +86,9 @@ const FloorPlan = (() => {
     moeilijk:  { room: 1, 'room-pos': 2, 'room-next': 2, 'room-with': 4, 'next-to': 4, pos: 3, 'not-room': 3,
                  'same-room': 3, 'diff-room': 2, adjacent: 3, 'not-adjacent': 2, 'same-row': 3, 'same-col': 3,
                  'left-of': 3, above: 3, 'empty-room': 2, alone: 3 },
-    meester:   { room: 1, 'room-pos': 1, 'room-next': 2, 'room-with': 4, 'next-to': 4, pos: 3, 'not-room': 3,
-                 'same-room': 4, 'diff-room': 3, adjacent: 4, 'not-adjacent': 3, 'same-row': 4, 'same-col': 4,
-                 'left-of': 4, above: 4, 'empty-room': 2, alone: 3 }
+    meester:   { room: 1, 'room-pos': 2, 'room-next': 2, 'room-with': 4, 'next-to': 4, pos: 3, 'not-room': 3,
+                 'same-room': 4, 'diff-room': 3, adjacent: 4, 'not-adjacent': 3, 'same-row': 3, 'same-col': 3,
+                 'left-of': 2, above: 2, 'empty-room': 2, alone: 3 }
   };
 
   const UNARY = new Set(['room', 'not-room', 'room-pos', 'pos', 'room-with', 'next-to', 'room-next']);
@@ -440,6 +440,13 @@ const FloorPlan = (() => {
                      roomMap: buildRoomMap(rooms), difficulty: difficultyId, theme, furnitureTypes, furnitureNl };
       const clues = selectClues(base, cluePool(base), cfg, difficultyId, r);
       if (!clues) continue;
+      // meester: eerlijk moeilijk (uit de reviews van 1.3): minstens één verklaring met een kamer als houvast,
+      // hooguit twee "links van"/"hoger dan", en stap voor stap op te lossen zonder te gokken
+      if (difficultyId === 'meester') {
+        const anchor = clues.some(c => c.kind === 'room' || c.kind === 'room-pos' || c.kind === 'room-next');
+        const order = clues.filter(c => c.kind === 'left-of' || c.kind === 'above').length;
+        if (!anchor || order > 2 || !stepwise({ ...base, clues }).solved) continue;
+      }
 
       return { ...base, clues, clueTexts: clues.map(c => formatClue(c, base)), caseText: caseText(base) };
     }
@@ -467,6 +474,60 @@ const FloorPlan = (() => {
       furnitureNl: Object.fromEntries(theme.furniture.map(f => [f.id, f.nl]))
     };
     return { ...base, clues: def.clues, clueTexts: def.clues.map(c => formatClue(c, base)), caseText: caseText(base) };
+  }
+
+  // ── Eerlijk op te lossen? ───────────────────────────────────
+  // Lost de zaak op zoals een speler zonder te gokken. Herhaal tot er niets meer verandert: eigen verklaringen,
+  // verklaringen over twee personen (beide kanten), de spelregel (precies één persoon, de moordenaar, stond in de
+  // kamer van het slachtoffer: kan maar één persoon daar staan, dan staat die daar; moet iemand daar staan, dan de
+  // rest niet), "alleen in de kamer", en bezette vakjes. Wie nog maar één vakje heeft, staat vast.
+  // solved = zo komt iedereen op zijn plek; steps = het aantal rondes met nieuwe vaste plekken (maat voor moeilijkheid).
+  function stepwise(puzzle) {
+    const n = puzzle.suspects.length, vroom = puzzle.victim.roomId;
+    const inV = c => roomAt(puzzle, c).id === vroom;
+    const alone = puzzle.clues.filter(c => c.kind === 'alone');
+    const bins = puzzle.clues.filter(c => BINARY.has(c.kind));
+    const cands = candidates(puzzle, null);
+    const done = new Array(n).fill(false);
+    const set = (i, f) => { if (f.length === cands[i].length) return false; cands[i] = f; return true; };
+    let steps = 0;
+    for (let round = 0; round < n * 6; round++) {
+      let changed = true;
+      while (changed) {
+        changed = false;
+        // bezette vakjes: wie vaststaat, houdt dat vakje voor zichzelf
+        for (let i = 0; i < n; i++) if (cands[i].length === 1) {
+          const k = key(cands[i][0].x, cands[i][0].y);
+          for (let j = 0; j < n; j++) if (j !== i && set(j, cands[j].filter(c => key(c.x, c.y) !== k))) changed = true;
+        }
+        // spelregel slachtoffer
+        const canV = [...Array(n).keys()].filter(i => cands[i].some(inV));
+        if (canV.length === 1 && set(canV[0], cands[canV[0]].filter(inV))) changed = true;
+        const mustV = [...Array(n).keys()].find(i => cands[i].length > 0 && cands[i].every(inV));
+        if (mustV !== undefined) for (let i = 0; i < n; i++) if (i !== mustV && set(i, cands[i].filter(c => !inV(c)))) changed = true;
+        // alleen in de kamer
+        for (const cl of alone) {
+          const rooms = new Set(cands[cl.s].map(c => roomAt(puzzle, c).id));
+          if (rooms.size !== 1) continue;
+          const R = [...rooms][0];
+          for (let i = 0; i < n; i++) if (i !== cl.s && set(i, cands[i].filter(c => roomAt(puzzle, c).id !== R))) changed = true;
+        }
+        // verklaringen over twee personen
+        for (const cl of bins) {
+          const A = cands[cl.a], B = cands[cl.b];
+          if (set(cl.a, A.filter(a => B.some(b => binaryOk(cl, a, b, puzzle))))) changed = true;
+          if (set(cl.b, cands[cl.b].filter(b => cands[cl.a].some(a => binaryOk(cl, a, b, puzzle))))) changed = true;
+        }
+        if (cands.some(cs => !cs.length)) return { solved: false, steps };
+      }
+      const singles = cands.map((cs, i) => (!done[i] && cs.length === 1 ? i : -1)).filter(i => i !== -1);
+      if (!singles.length) break;
+      singles.forEach(i => { done[i] = true; });
+      steps++;
+      if (done.every(Boolean)) break;
+    }
+    const solved = cands.every((cs, i) => cs.length === 1 && cs[0].x === puzzle.solution[i].x && cs[0].y === puzzle.solution[i].y);
+    return { solved, steps };
   }
 
   // ── Hint-engine: uitleggen, niet verklappen ─────────────────
@@ -529,7 +590,7 @@ const FloorPlan = (() => {
              detail: related.length ? FP_T('{1|one:Aanwijzing|other:Aanwijzingen} {0} {1|one:beperkt|other:beperken} de opties. Streep vakjes weg die er niet aan voldoen.', nrs, related.length) : FP_T('Gebruik de plaatsen van de anderen om verder te snoeien.') };
   }
 
-  return { generate, fromLayout, solve, candidates, check, holds, hint, formatClue, statement, rng,
+  return { generate, fromLayout, solve, candidates, stepwise, check, holds, hint, formatClue, statement, rng,
            DIFF, FURNITURE, FURNITURE_NL, roomOf, cellsOf, isCorner, isEdge, posOf, key };
 })();
 

@@ -130,6 +130,8 @@ const Board = {
       focusClue: null, newRank: null, okCount: 0, isWeekly: !!opts.weekly, weekly: opts.weekly || null, score: null, medalsWon: [],
       dailyDoneBefore: App.storageGet('crimson-board-daily-done') === new Date().toDateString()
     });
+    this.elapsedBase = 0;
+    const resumed = this.restoreResume();
     // één "Nieuw!"-uitleg per zaak, voor de eerste soort verklaring die de speler nog niet kent
     this.newIntro = typeof Mentor !== 'undefined' ? Mentor.introFor(puzzle.clues.map(c => c.kind), this.introsSeen()) : null;
     this.endAccuse();
@@ -161,12 +163,48 @@ const Board = {
     // campagnezaak: eerst de briefing van Van Dam, de uitleg volgt na "Aan de slag"
     this.renderIntro();
     if (!campaignCase) this.showIntro();
+    if (resumed) App.showToast('⏯️', BD_T('Je gaat verder waar je was.'));
     return true;
   },
 
+  // ── Verder waar je was (1.3) ──────────────────────────────
+  // Eén onafgemaakte zaak blijft bewaard (campagne, dagelijkse zaak, zaak van de week): plaatsingen, stipjes,
+  // afgevinkte verklaringen, tijd, hints en pogingen. Open je dezelfde zaak opnieuw, dan ga je daar verder.
+  RESUME_KEY: 'crimson-resume',
+  resumeId() {
+    if (this.isTutorial) return null;
+    if (this.campaignCase) return `c:${this.campaignCase.chapter}:${this.campaignCase.idx}`;
+    if (this.isWeekly && this.weekly) return `w:${this.weekly.key}`;
+    if (this.isDaily) return `d:${new Date().toDateString()}`;
+    return null;
+  },
+  saveResume() {
+    const id = this.resumeId();
+    if (!id || this.solved) return;
+    const marks = [...this.marks].map(([k, s]) => [k, [...s]]);
+    App.storageSet(this.RESUME_KEY, JSON.stringify({ id, seed: this.seed, placements: this.placements, marks,
+      done: [...this.clueDone], elapsed: this.elapsed || 0, hints: this.hintsUsed, attempts: this.attempts }));
+  },
+  restoreResume() {
+    const id = this.resumeId();
+    if (!id) return false;
+    let s = null;
+    try { s = JSON.parse(App.storageGet(this.RESUME_KEY) || 'null'); } catch (e) { s = null; }
+    if (!s || s.id !== id || s.seed !== this.seed || !Array.isArray(s.placements) || s.placements.length !== this.placements.length) return false;
+    const n = this.puzzle.cols, m = this.puzzle.rows;
+    this.placements = s.placements.map(c => (c && Number.isInteger(c.x) && c.x >= 0 && c.x < n && c.y >= 0 && c.y < m ? { x: c.x, y: c.y } : null));
+    this.marks = new Map((s.marks || []).filter(e => Array.isArray(e) && Array.isArray(e[1])).map(([k, v]) => [k, new Set(v)]));
+    this.clueDone = new Set((s.done || []).filter(i => Number.isInteger(i)));
+    this.hintsUsed = s.hints || 0;
+    this.attempts = s.attempts || 0;
+    this.elapsedBase = Math.max(0, s.elapsed || 0);
+    return this.placements.some(Boolean) || this.marks.size > 0;
+  },
+  clearResume() { App.storageSet(this.RESUME_KEY, ''); },
+
   startTimer() {
     clearInterval(this.timerId);
-    this.startTime = Date.now();
+    this.startTime = Date.now() - (this.elapsedBase || 0) * 1000;
     const el = document.getElementById('board-timer');
     const tick = () => {
       this.elapsed = Math.floor((Date.now() - this.startTime) / 1000);
@@ -348,6 +386,7 @@ const Board = {
   toggleDone(i) {
     if (this.clueDone.has(i)) this.clueDone.delete(i); else { this.clueDone.add(i); this.questBump('ticked'); }
     this.renderClues();
+    this.saveResume();
   },
   // opdracht van vandaag bijwerken (stil; de melding komt op het resultaatscherm of het menu)
   questBump(key, n = 1) {
@@ -574,6 +613,7 @@ const Board = {
     this.renderSuspects();
     this.renderClues();
     this.updateTools();
+    this.saveResume();
   },
 
   flash(x, y) {
@@ -753,7 +793,7 @@ const Board = {
     const st = this.loadStats();
     const worldsDone = Themes.list().map(t => t.id).filter(id => Campaign.chaptersFor(id).every(ch => Campaign.chapterDone(ch.key)));
     return {
-      solved: st.solved || 0, clean: st.clean || 0, streak: App.streak.count || 0, elapsed: this.elapsed,
+      solved: st.solved || 0, clean: st.clean || 0, masterSolved: st.master || 0, streak: App.streak.count || 0, elapsed: this.elapsed,
       partsDone: Campaign.list().filter(ch => Campaign.chapterDone(ch.key)).length, worldsDone,
       threeStars: Campaign.threeStarCount(), archiveCount: Campaign.archiveCount(),
       weekFull: Progress.weekFull(), weekDone: Progress.weekDone(), evidence: Progress.evidenceCount(),
@@ -764,6 +804,7 @@ const Board = {
 
   finish() {
     this.solved = true;
+    this.clearResume();
     this.stopTimer();
     document.getElementById('board-grid').classList.add('solved');
     this.updateTools();
@@ -845,6 +886,7 @@ const Board = {
     st.best = st.best || {};
     if (!st.best[this.difficulty] || this.elapsed < st.best[this.difficulty]) st.best[this.difficulty] = this.elapsed;
     if (this.hintsUsed === 0) st.clean = (st.clean || 0) + 1;
+    if (this.difficulty === 'meester') st.master = (st.master || 0) + 1;
     App.storageSet('crimson-board-stats', JSON.stringify(st));
   },
 
@@ -929,7 +971,7 @@ const Board = {
       // vrij spel, dagelijkse zaak of zaak van de week: meteen door kunnen
       nextBtn.hidden = false;
       nextBtn.textContent = BD_T`▶ Nog een zaak · ${this.theme.title}`;
-      const diff = this.isDaily ? 'gemiddeld' : this.isWeekly ? 'moeilijk' : this.difficulty, themeId = this.theme.id;
+      const diff = this.isDaily ? 'gemiddeld' : this.isWeekly ? 'meester' : this.difficulty, themeId = this.theme.id;
       nextBtn.onclick = () => {
         if (Board.start(diff, 0, false, themeId)) App.navigateTo('board');
         else App.showToast('⚠️', BD_T('Kon geen plattegrond genereren, probeer opnieuw.'));
