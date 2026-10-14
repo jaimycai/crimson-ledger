@@ -17,7 +17,7 @@ cloudsessies (werken op een eigen `claude/...`-branch met een pull request). Om 
 
 | Sinds | Sessie | Taak | Bestanden |
 |---|---|---|---|
-| 14 okt | cloud, branch `claude/kind-feynman-ocvzz9` | Nieuw logo. Onderzoek klaar, tien Higgsfield-opdrachten staan in `art/logo/prompts.js`. Mac-sessie van 14 okt: tien proeven gemaakt (ruw in `art/logo/ruw/`, buiten git), keuzeblad als artifact https://claude.ai/artifact/24rYzVVMmRLwbHn8v2N7F7. Wacht op de keuze van Jaimy. Pas dan worden de iconen vervangen. | `art/logo/`, later `icon-*.png`, `resources/`, `ios/App/App/Assets.xcassets/`, `android/app/src/main/res/`, het `splash-mark` in `index.html`, `store/social/tiktok-avatar.png` |
+| 14 okt | cloud, branch `claude/kind-feynman-ocvzz9` | Nieuw logo. Onderzoek klaar, tien Higgsfield-opdrachten staan in `art/logo/prompts.js`. Mac-sessie van 14 okt: tien proeven gemaakt (ruw in `art/logo/ruw/`, buiten git), keuzeblad als artifact https://claude.ai/artifact/24rYzVVMmRLwbHn8v2N7F7. Jaimy vindt ze alle tien niet mooi. Nieuwe stap: 38 echte App Store-iconen als referentie (https://claude.ai/artifact/7M4goug6WXKVxWVHkR2GHz); Jaimy kiest de nummers die hem aanspreken, daarna nieuwe proeven in die richting. Pas dan worden de iconen vervangen. | `art/logo/`, later `icon-*.png`, `resources/`, `ios/App/App/Assets.xcassets/`, `android/app/src/main/res/`, het `splash-mark` in `index.html`, `store/social/tiktok-avatar.png` |
 
 ## Voor de Mac-sessie
 
