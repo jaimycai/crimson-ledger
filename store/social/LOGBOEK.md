@@ -126,3 +126,9 @@ eerste publicatie op zijn vroegst 6 oktober.
   Metricool) haalt 239 views na 47 uur; de vier carrousels uit TikTok Studio staan na 69 tot 78 uur op 1 view. Daarmee
   zitten nu drie Metricool-posts (4, 5, 7) rond 240 tot 270 en alle Studio-posts op 1: het verschil in route blijft de
   sterkste te testen oorzaak. Groei na de eerste uren blijft bij elke post uit (post 4: 234 na 4,5u, 238 na 5 dagen).
+- 14 okt (Mac-sessie): aankoopteksten naar App Store Connect met `node store/asc.js iap-locs`. **Toegevoegd** voor alle
+  negen aankopen in 20 winkeltalen: en-GB, ar-SA, bn-BD, de-DE, es-ES, es-MX, fr-FR, hi, id, it, ja, ko, mr-IN, pt-BR,
+  pt-PT, ru, te-IN, tr, ur-PK, vi, zh-Hans (189 teksten), plus nl-NL voor de Crimson Pass (had er nog geen).
+  **MISLUKT** (17): de bestaande nl-NL- en en-US-teksten van de andere aankopen ("ENTITY_ERROR.ATTRIBUTE.INVALID.UNMODIFIABLE":
+  goedgekeurde aankopen laten hun bestaande tekst niet wijzigen). Die oude nl- en en-teksten blijven dus zoals ze zijn.
+  De nieuwe teksten gaan langs Apple met de volgende versie (1.2.1).
