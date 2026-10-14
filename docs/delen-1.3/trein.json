@@ -1,0 +1,77 @@
+{
+  "theme": "trein",
+  "parts": [
+    {
+      "part": 7,
+      "icon": "🛤️",
+      "nl": {
+        "title": "Deel VII · De remise",
+        "intro": "De sloop wordt uitgesteld tot het voorjaar. De trein overwintert in een remise, en 's nachts krijgt hij bezoek.",
+        "outro": "In het voorjaar koopt een onbekende de trein, voor één laatste rit naar Wenen.",
+        "briefing": "De remise is groter dan hij lijkt, en sommige zaken ook: negen bij negen vakjes. \"Niet direct naast\" streept maar vier vakjes weg. Bewaar die verklaringen voor het laatst.",
+        "cases": [
+          { "title": "Licht zonder stroom", "story": "Er brandde licht in de restauratiewagen. De stroom was eraf.", "item": "🔋 Accu" },
+          { "title": "Het beslapen bed", "story": "De trein stond al weken leeg. Het bed in coupé A was beslapen.", "item": "🧦 Wollen sok" },
+          { "title": "Goochelaar Orlando oefent", "story": "Hij oefende zijn verdwijntruc in de lege trein. Er keek iemand.", "item": "🪄 Toverstaf" },
+          { "title": "De wissel", "story": "Iemand zette 's nachts de wissel om. De trein stond nog binnen.", "item": "🎚️ Wisselhendel" },
+          { "title": "Stoker Jules ruikt rook", "story": "De ketel was al weken koud. Vannacht niet.", "item": "♨️ Drukmeter" },
+          { "title": "Weduwe Duval zoekt", "story": "Ze kwam de tweede koffer halen. Iemand was haar voor geweest.", "item": "🪡 Hoedenspeld" },
+          { "title": "IJsbloemen op de ruit", "story": "In de ijsbloemen op de ruit stond een naam. De helft ervan.", "item": "🪟 Bevroren ruit" },
+          { "title": "Te koop", "story": "Te koop: één nachttrein, twaalf wagons. Er kwam één reactie.", "item": "📰 Krantenadvertentie" }
+        ]
+      },
+      "en": {
+        "title": "Part VII · The Engine Shed",
+        "intro": "The scrapping is put off until spring. The train spends the winter in an engine shed, and at night it has visitors.",
+        "outro": "In spring a stranger buys the train, for one last run to Vienna.",
+        "briefing": "The engine shed is bigger than it looks, and so are some of the cases: nine squares by nine. “Not directly next to” rules out only four squares. Save those statements for last.",
+        "cases": [
+          { "title": "Light Without Power", "story": "A light was on in the dining car. The power was off.", "item": "🔋 Battery" },
+          { "title": "The Slept-in Bed", "story": "The train had stood empty for weeks. The bed in Compartment A had been slept in.", "item": "🧦 Woollen sock" },
+          { "title": "Magician Orlando Practises", "story": "He practised his vanishing trick in the empty train. Someone was watching.", "item": "🪄 Magic wand" },
+          { "title": "The Points", "story": "Someone changed the points in the night. The train was still inside.", "item": "🎚️ Points lever" },
+          { "title": "Stoker Jules Smells Smoke", "story": "The boiler had been cold for weeks. Not tonight.", "item": "♨️ Pressure gauge" },
+          { "title": "Widow Duval Searches", "story": "She came for the second suitcase. Someone had got there first.", "item": "🪡 Hatpin" },
+          { "title": "Frost on the Window", "story": "There was a name in the frost on the window. Half of one.", "item": "🪟 Frozen pane" },
+          { "title": "For Sale", "story": "For sale: one night train, twelve carriages. There was one reply.", "item": "📰 Newspaper advert" }
+        ]
+      }
+    },
+    {
+      "part": 8,
+      "icon": "🌄",
+      "nl": {
+        "title": "Deel VIII · Aankomst",
+        "intro": "De trein rijdt nog één keer de oude route naar Wenen. Alle reizigers van toen hebben een kaartje gekregen, zonder afzender.",
+        "outro": "In Wenen rolt de nachttrein een museum in en blijft daar voorgoed staan.",
+        "briefing": "De laatste rit, en bijna alles op meesterniveau. Tel in elke wagon de vakjes zonder meubel: zoveel mensen passen erin, niet meer. Een kleine wagon zit snel vol.",
+        "cases": [
+          { "title": "De uitnodiging", "story": "Iedereen kwam. Niemand gaf toe dat hij nieuwsgierig was.", "item": "📩 Blanco envelop" },
+          { "title": "Weer die tunnel", "story": "Om negen uur weer die tunnel. Iedereen hield zijn adem in.", "item": "🕰️ Pendule" },
+          { "title": "Eerste klas", "story": "De barones reisde eerste klas. Deze trein had geen eerste klas.", "item": "🦊 Bontstola" },
+          { "title": "De nieuwe conducteur", "story": "Iemand knipte de kaartjes. De trein had geen conducteur.", "item": "🕳️ Kniptang" },
+          { "title": "Actrice Lola speelt zichzelf", "story": "Ze speelde de avond van toen na. Iets te precies.", "item": "💄 Lippenstift" },
+          { "title": "De negende reiziger", "story": "Acht kaartjes verstuurd. Negen mensen aan boord.", "item": "👔 Stropdas" },
+          { "title": "Verpleegster Hedda blijft op", "story": "Ze bleef de hele nacht op in de gang. Iemand kwam er toch langs.", "item": "🧩 Puzzelboekje" },
+          { "title": "Wenen, eindelijk", "story": "Wie de kaartjes stuurde, zat zelf ook in de trein.", "item": "🚉 Perronkaartje" }
+        ]
+      },
+      "en": {
+        "title": "Part VIII · Arrival",
+        "intro": "The train runs the old route to Vienna one more time. Every passenger from back then has received a ticket, with no sender.",
+        "outro": "In Vienna the night train rolls into a museum and stays there for good.",
+        "briefing": "The last run, and almost all of it at master level. Count the squares without furniture in each carriage: that many people fit, no more. A small carriage fills up fast.",
+        "cases": [
+          { "title": "The Invitation", "story": "Everyone came. Nobody admitted to being curious.", "item": "📩 Blank envelope" },
+          { "title": "That Tunnel Again", "story": "At nine, that tunnel again. Everyone held their breath.", "item": "🕰️ Mantel clock" },
+          { "title": "First Class", "story": "The baroness travelled first class. This train had no first class.", "item": "🦊 Fur stole" },
+          { "title": "The New Conductor", "story": "Someone punched the tickets. The train had no conductor.", "item": "🕳️ Ticket punch" },
+          { "title": "Actress Lola Plays Herself", "story": "She acted out that night again. A little too precisely.", "item": "💄 Lipstick" },
+          { "title": "The Ninth Passenger", "story": "Eight tickets sent. Nine people aboard.", "item": "👔 Necktie" },
+          { "title": "Nurse Hedda Stays Up", "story": "She sat up in the corridor all night. Someone got past anyway.", "item": "🧩 Puzzle book" },
+          { "title": "Vienna at Last", "story": "Whoever sent the tickets was on the train too.", "item": "🚉 Platform ticket" }
+        ]
+      }
+    }
+  ]
+}

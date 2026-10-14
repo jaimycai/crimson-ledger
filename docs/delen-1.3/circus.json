@@ -1,0 +1,205 @@
+{
+  "theme": "circus",
+  "parts": [
+    {
+      "part": 7,
+      "icon": "🏚️",
+      "nl": {
+        "title": "Deel VII · Het winterkwartier",
+        "intro": "De tent ligt opgevouwen in de schuur van het winterkwartier, een boerderij buiten de stad. Iedereen wacht op een koper en houdt de anderen in de gaten.",
+        "outro": "Er komt geen koper, dus speelt het circus nog één keer: 's nachts, in de schuur.",
+        "briefing": "Het winterkwartier is groot en de verklaringen zeggen weinig. Markeer eerst in elke ruimte welke vakjes in een hoek, tegen een muur of in het midden liggen. Een ruimte van twee vakjes breed heeft geen midden: wie \"in het midden\" staat, staat ergens anders.",
+        "cases": [
+          {
+            "title": "De achtste wagen",
+            "story": "Zeven wagens reden de schuur in. 's Ochtends stonden er acht.",
+            "item": "🛞 Wagenwiel"
+          },
+          {
+            "title": "De windhaan",
+            "story": "De windhaan op de schuur draaide. Er stond geen wind.",
+            "item": "🐓 Windhaan"
+          },
+          {
+            "title": "Sterke Man Boris zaagt hout",
+            "story": "Hij zaagde hout voor de hele winter. In één nacht.",
+            "item": "🪚 Houtzaag"
+          },
+          {
+            "title": "Het wak in de vijver",
+            "story": "De vijver was dichtgevroren. Op één plek na.",
+            "item": "⛸️ Schaats"
+          },
+          {
+            "title": "Clown Pippo zonder schmink",
+            "story": "Zonder schmink herkende niemand hem. Dat kwam goed uit.",
+            "item": "💄 Schminkdoos"
+          },
+          {
+            "title": "Circus te koop",
+            "story": "De advertentie stond in de krant. Niemand had hem geplaatst.",
+            "item": "🗞️ Krantenknipsel"
+          },
+          {
+            "title": "Dierenarts Nadia blijft",
+            "story": "Haar werk zat erop. Toch bleef ze nog een week.",
+            "item": "💼 Dokterstas"
+          },
+          {
+            "title": "De koper belt af",
+            "story": "De koper belde af. Op het erf wist iemand het al eerder.",
+            "item": "☎️ Telefoonhoorn"
+          }
+        ]
+      },
+      "en": {
+        "title": "Part VII · Winter Quarters",
+        "intro": "The tent lies folded in the barn at the winter quarters, a farm outside town. Everyone waits for a buyer and keeps an eye on the others.",
+        "outro": "No buyer comes, so the circus plays one more time: at night, in the barn.",
+        "briefing": "The winter quarters are big and the statements say little. First mark, in every area, which squares are in a corner, against a wall or in the middle. An area two squares wide has no middle: whoever stands “in the middle” stands somewhere else.",
+        "cases": [
+          {
+            "title": "The Eighth Wagon",
+            "story": "Seven wagons rolled into the barn. In the morning there were eight.",
+            "item": "🛞 Wagon wheel"
+          },
+          {
+            "title": "The Weathervane",
+            "story": "The weathervane on the barn was turning. There was no wind.",
+            "item": "🐓 Weathervane"
+          },
+          {
+            "title": "Strongman Boris Saws Wood",
+            "story": "He sawed wood for the whole winter. In one night.",
+            "item": "🪚 Saw"
+          },
+          {
+            "title": "The Hole in the Ice",
+            "story": "The pond had frozen over. Except in one spot.",
+            "item": "⛸️ Ice skate"
+          },
+          {
+            "title": "Clown Pippo Without Make-up",
+            "story": "Without his make-up nobody recognised him. That was convenient.",
+            "item": "💄 Make-up box"
+          },
+          {
+            "title": "Circus for Sale",
+            "story": "The advert was in the paper. Nobody had placed it.",
+            "item": "🗞️ Newspaper clipping"
+          },
+          {
+            "title": "Vet Nadia Stays On",
+            "story": "Her work was done. Still she stayed another week.",
+            "item": "💼 Vet's bag"
+          },
+          {
+            "title": "The Buyer Cancels",
+            "story": "The buyer called to cancel. Someone on the farm already knew.",
+            "item": "☎️ Telephone receiver"
+          }
+        ]
+      }
+    },
+    {
+      "part": 8,
+      "icon": "🏮",
+      "nl": {
+        "title": "Deel VIII · De nachtvoorstelling",
+        "intro": "Het dorp komt kijken naar één voorstelling in de schuur, bij lantaarnlicht. De piste is van stro, de artiesten zijn dezelfde.",
+        "outro": "Het laatste applaus sterft weg in de schuur, en van Circus Zano blijft alleen jouw dossier over.",
+        "briefing": "Bijna elke zaak in dit deel is van het zwaarste soort. Zit je vast, zet dan iemand in potlood op één mogelijke plek en redeneer vanaf daar verder. Breekt dat een verklaring, dan is die plek fout; een fout in potlood kost niets.",
+        "cases": [
+          {
+            "title": "De generale repetitie",
+            "story": "Bij de repetitie deed een act mee die niet op het programma stond.",
+            "item": "📑 Programmaboekje"
+          },
+          {
+            "title": "De spreekstalmeester",
+            "story": "Iemand moest de avond aankondigen. Er stonden twee mensen klaar.",
+            "item": "📢 Megafoon"
+          },
+          {
+            "title": "Jongleur Teo met fakkels",
+            "story": "Vijf fakkels in een schuur vol stro. Hij ving er vier.",
+            "item": "🔥 Jongleerfakkel"
+          },
+          {
+            "title": "De suikerspin",
+            "story": "De suikerspinmachine draaide de hele avond. Niemand stond erachter.",
+            "item": "🍭 Suikerspin"
+          },
+          {
+            "title": "De pauze",
+            "story": "De pauze duurde tien minuten. Voor één artiest twintig.",
+            "item": "🔔 Pauzebel"
+          },
+          {
+            "title": "Trapezeartiest Mira klimt",
+            "story": "Ze hing haar trapeze aan een balk. De balk was half doorgezaagd.",
+            "item": "🪜 Touwladder"
+          },
+          {
+            "title": "Kaartverkoopster Dottie verkoopt",
+            "story": "De toegang was gratis. Toch verkocht ze kaartjes.",
+            "item": "💶 Wisselgeld"
+          },
+          {
+            "title": "Staande ovatie",
+            "story": "Iedereen stond op om te klappen. Eén iemand bleef zitten.",
+            "item": "🪧 Circusaffiche"
+          }
+        ]
+      },
+      "en": {
+        "title": "Part VIII · The Night Show",
+        "intro": "The village comes to watch one show in the barn, by lantern light. The ring is made of straw; the performers are the same.",
+        "outro": "The last applause fades in the barn, and all that is left of Circus Zano is your case file.",
+        "briefing": "Almost every case in this part is of the hardest kind. If you are stuck, pencil someone into one possible place and reason on from there. If that breaks a statement, the place is wrong; a mistake in pencil costs nothing.",
+        "cases": [
+          {
+            "title": "The Dress Rehearsal",
+            "story": "At the rehearsal there was an act that wasn't on the programme.",
+            "item": "📑 Programme booklet"
+          },
+          {
+            "title": "The Ringmaster",
+            "story": "Someone had to announce the show. Two people were ready.",
+            "item": "📢 Megaphone"
+          },
+          {
+            "title": "Juggler Teo's Torches",
+            "story": "Five torches in a barn full of straw. He caught four.",
+            "item": "🔥 Juggling torch"
+          },
+          {
+            "title": "Candyfloss",
+            "story": "The candyfloss machine ran all evening. Nobody stood behind it.",
+            "item": "🍭 Candyfloss"
+          },
+          {
+            "title": "The Interval",
+            "story": "The interval lasted ten minutes. For one performer, twenty.",
+            "item": "🔔 Interval bell"
+          },
+          {
+            "title": "Trapeze Artist Mira Climbs",
+            "story": "She hung her trapeze from a beam. The beam had been half sawn through.",
+            "item": "🪜 Rope ladder"
+          },
+          {
+            "title": "Ticket Seller Dottie Sells",
+            "story": "Entry was free. She sold tickets anyway.",
+            "item": "💶 Small change"
+          },
+          {
+            "title": "Standing Ovation",
+            "story": "Everyone stood up to applaud. One person stayed seated.",
+            "item": "🪧 Circus poster"
+          }
+        ]
+      }
+    }
+  ]
+}

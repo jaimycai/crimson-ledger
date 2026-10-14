@@ -1,0 +1,77 @@
+{
+  "theme": "ruimte",
+  "parts": [
+    {
+      "part": 7,
+      "icon": "🔒",
+      "nl": {
+        "title": "Deel VII · Quarantaine",
+        "intro": "De capsule is geland en de bemanning gaat in quarantaine. Drie weken, in een nagebouwde Orion in een hangar op aarde.",
+        "outro": "Op de dag dat de deuren opengaan, vist een schip iets oranjes uit de oceaan.",
+        "briefing": "Terug op aarde, en nog steeds achter een sluis. Sommige zaken zijn nu op meesterniveau: een groter bord, minder directe verklaringen. Wie alleen was in een module, zegt ook iets over zijn buren: wie direct naast hem stond, stond aan de andere kant van een muur.",
+        "cases": [
+          { "title": "Orion op aarde", "story": "Elke module nagebouwd tot op de schroef. Eén ervan zat los.", "item": "🔩 Losse schroef" },
+          { "title": "Bioloog Wren streept af", "story": "Ze streepte elke dag af. Gisteren had iemand het voor haar gedaan.", "item": "📆 Aftelkalender" },
+          { "title": "Dr. Nkemelu prikt", "story": "Acht buisjes bloed. Op één ervan stond geen naam.", "item": "🩸 Bloedbuisje" },
+          { "title": "Bezoek achter glas", "story": "Iedereen zwaaide naar de familie. Eén iemand keek de andere kant op.", "item": "🪟 Kijkraam" },
+          { "title": "Eten door het luik", "story": "Drie maaltijden per dag door het luik. Eén kwam onaangeroerd terug.", "item": "🍱 Maaltijdbak" },
+          { "title": "Weer zwaartekracht", "story": "Na een halfjaar zweven viel alles om. Ook een alibi.", "item": "🥤 Omgevallen beker" },
+          { "title": "Het luchtfilter", "story": "Het filter ving alles op. Ook een haar die er niet hoorde.", "item": "🌀 Luchtfilter" },
+          { "title": "Dag eenentwintig", "story": "De deuren gingen open. Eén polsbandje lag nog op een bed.", "item": "📛 Polsbandje" }
+        ]
+      },
+      "en": {
+        "title": "Part VII · Quarantine",
+        "intro": "The capsule has landed and the crew goes into quarantine. Three weeks, in a full-size copy of Orion in a hangar on Earth.",
+        "outro": "On the day the doors open, a ship fishes something orange out of the ocean.",
+        "briefing": "Back on Earth, and still behind an airlock. Some cases are now at master level: a bigger board, fewer direct statements. Whoever was alone in a module also tells you about the others: anyone directly next to them stood on the other side of a wall.",
+        "cases": [
+          { "title": "Orion on Earth", "story": "Every module copied down to the last screw. One of them was loose.", "item": "🔩 Loose screw" },
+          { "title": "Biologist Wren Keeps Count", "story": "She crossed off every day. Yesterday someone had done it for her.", "item": "📆 Countdown calendar" },
+          { "title": "Dr. Nkemelu Draws Blood", "story": "Eight tubes of blood. One of them had no name on it.", "item": "🩸 Blood vial" },
+          { "title": "Visitors Behind Glass", "story": "Everyone waved at their families. One person looked the other way.", "item": "🪟 Viewing window" },
+          { "title": "Meals Through the Hatch", "story": "Three meals a day through the hatch. One came back untouched.", "item": "🍱 Meal tray" },
+          { "title": "Gravity Again", "story": "After half a year of floating, everything fell over. So did an alibi.", "item": "🥤 Tipped-over cup" },
+          { "title": "The Air Filter", "story": "The filter caught everything. Including a hair that did not belong.", "item": "🌀 Air filter" },
+          { "title": "Day Twenty-One", "story": "The doors opened. One wristband was still lying on a bed.", "item": "📛 Wristband" }
+        ]
+      }
+    },
+    {
+      "part": 8,
+      "icon": "🌊",
+      "nl": {
+        "title": "Deel VIII · De vluchtrecorder",
+        "intro": "Niet alles van Orion is verbrand. De vluchtrecorder wordt afgespeeld in de nagebouwde Orion, module voor module.",
+        "outro": "De recorder zwijgt, het dossier Orion gaat dicht, en deze keer blijft het dicht.",
+        "briefing": "Het laatste deel van Orion, bijna alles op meesterniveau. Moeten twee mensen in dezelfde module staan, zoek dan een module waar ze allebei passen, met al hun andere verklaringen erbij. Vaak blijft er maar één over.",
+        "cases": [
+          { "title": "Uit de oceaan", "story": "Een oranje doos van de zeebodem. Hij had alles opgenomen.", "item": "🟧 Oranje doos" },
+          { "title": "Minuut nul", "story": "De opname begon met stilte. Toen ging er een luik open.", "item": "🎧 Koptelefoon" },
+          { "title": "Ingenieur Vega luistert", "story": "Ze kende elk geluid aan boord. Dit sissen kende ze niet.", "item": "⚙️ Drukventiel" },
+          { "title": "Twee stemmen", "story": "Twee stemmen in de machinekamer. Volgens het rooster was daar niemand.", "item": "🗣️ Stemafdruk" },
+          { "title": "Officier Paz spoelt terug", "story": "Ze spoelde drie keer terug. Daarna zei ze niets meer.", "item": "⏪ Terugspoelknop" },
+          { "title": "Elf seconden stilte", "story": "Om 04:00 viel de opname elf seconden weg. Niet vanzelf.", "item": "🔇 Dempknop" },
+          { "title": "Botanist Fern zwijgt", "story": "Haar stem stond op elke opname. Op de laatste niet.", "item": "🪴 Stekje" },
+          { "title": "De laatste opname", "story": "De laatste minuut voor het loskoppelen. Iemand fluisterde een naam.", "item": "🗂️ Dossier Orion" }
+        ]
+      },
+      "en": {
+        "title": "Part VIII · The Flight Recorder",
+        "intro": "Not all of Orion burned. The flight recorder is played back in the copy of the station, module by module.",
+        "outro": "The recorder falls silent, the Orion file closes, and this time it stays closed.",
+        "briefing": "The last part of Orion, almost all of it at master level. When two people must be in the same module, look for a module where both of them fit, along with all their other statements. Often only one is left.",
+        "cases": [
+          { "title": "Out of the Ocean", "story": "An orange box from the seabed. It had recorded everything.", "item": "🟧 Orange box" },
+          { "title": "Minute Zero", "story": "The recording began with silence. Then a hatch opened.", "item": "🎧 Headphones" },
+          { "title": "Engineer Vega Listens", "story": "She knew every sound on board. Not this hiss.", "item": "⚙️ Pressure valve" },
+          { "title": "Two Voices", "story": "Two voices in the engine room. According to the roster, nobody was there.", "item": "🗣️ Voiceprint" },
+          { "title": "Officer Paz Rewinds", "story": "She rewound it three times. After that she said nothing.", "item": "⏪ Rewind button" },
+          { "title": "Eleven Seconds of Silence", "story": "At 04:00 the recording cut out for eleven seconds. Not by itself.", "item": "🔇 Mute button" },
+          { "title": "Botanist Fern Falls Silent", "story": "Her voice was on every recording. Not on the last one.", "item": "🪴 Plant cutting" },
+          { "title": "The Last Recording", "story": "The last minute before undocking. Someone whispered a name.", "item": "🗂️ Orion file" }
+        ]
+      }
+    }
+  ]
+}

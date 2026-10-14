@@ -435,6 +435,28 @@
       ['The Hidden Room', 'The room had no window. Yet light shone.', '🕯️ Candlestick'],
       ['Hargrove Confesses', 'The butler confessed to everything. Except the murder.', '🧾 Confession'],
       ['Blackwood, the End', 'The last room. The last name.', '🗝️ Last key']]],
+    'landhuis-7': ['Part VII · The Renovation', 'Blackwood kept quiet for three years. Then the builders arrive, and the first wall they knock through is the one under the stairs.', 'The scaffolding comes down and a sign goes up in the garden: for sale.',
+      'Builders find all sorts of things in walls, and all of it lands on my desk. On a nine-by-nine floor plan, fixed spots are scarce. Line up the statements that link two people: once one link is fixed, the rest follow.', [
+      ['The First Hole', 'The bricklayer knocked one hole. After that he would not go on.', '🔨 Sledgehammer'],
+      ['Money Under the Floor', 'There was money under the floor. Not enough to kill for, everyone said.', '💷 Banknote'],
+      ['Behind the Wallpaper', 'Behind the wallpaper was a love letter. No name, but a date.', '💌 Love letter'],
+      ['Pencil on the Beam', 'Someone had pencilled a date on a beam. Last week\'s date.', '✏️ Carpenter\'s pencil'],
+      ['Major Pike Recognises Nothing', 'His old army helmet lay in the attic. Never seen it, he said.', '🪖 Army helmet'],
+      ['Forty Jars of Jam', 'Forty jars of jam stood in the cellar. One of them held no jam.', '🫙 Jam jar'],
+      ['The Red Thread', 'A red thread hung from a nail. Clementine was wearing blue today.', '🧵 Red thread'],
+      ['News from the Wall', 'Inside the wall was a newspaper from 1927. The piece about the dinner was gone.', '🗞️ Old newspaper']
+    ]],
+    'landhuis-8': ['Part VIII · Farewell to Blackwood', 'This time the sale goes through. The family has one weekend to clear out Blackwood.', 'The gate clicks shut, the family drives away, and the Blackwood file is closed for good.',
+      'The house is sold; the cases are still open. “Left of” and “higher than” cross off whole columns and rows at once. Whoever stands left of someone is never in the far-right column; whoever stands higher is never on the bottom row.', [
+      ['The Removal Men', 'The removal men counted twelve crates. The van held thirteen.', '🚚 Waybill'],
+      ['The Valuer', 'The valuer praised every piece in the house. Except the portrait in the hall.', '🔎 Valuation list'],
+      ['Mortimer Counts Again', 'Once a spoon went missing. Now there was one too many.', '🍴 Cutlery case'],
+      ['The Dead Rose', 'A dead rose stood in the conservatory. Someone still watered it every day.', '🥀 Wilted rose'],
+      ['The Farewell Dinner', 'The same table as in 1927. Nobody wanted the seat at the head.', '🫗 Decanter'],
+      ['Aunt Agatha Stays', 'Everyone was packing. Aunt Agatha kept knitting, one eye on the door.', '🧶 Knitting'],
+      ['A Full Tank', 'The car in the garage hadn\'t run in years. The tank was full.', '⛽ Petrol can'],
+      ['The Last Line', 'Hargrove closed the ledger. On the last line was a single name.', '📕 Ledger']
+    ]],
 
     piraten: ['Part I · The Still Sea', 'The Black Gull lies becalmed on a mirror-flat sea. The captain no longer answers.', 'The Black Gull hoists her sails. There is an island on the map.',
       'A ship is small and everyone has seen everyone. “Directly next to” means the square beside it, never diagonal. Start in the galley.', [
@@ -496,6 +518,28 @@
       ['Mutiny, Part Three', 'The third time is the most dangerous.', '🏴 Black cloth'],
       ['The Last Watch', 'Whoever had the last watch never saw the sun rise.', '🕯️ Watch candle'],
       ["Blackeye's Land", "The captain's coast. The end of the voyage.", '🏝️ Map of home']]],
+    'piraten-7': ['Part VII · The Chase', 'A ship full of rich pirates gets noticed. A navy frigate follows the Gull, and always knows where she is.', 'The frigate runs aground on the reef, and the Gull sets course for the last harbour that will still have her.',
+      'The ship seems bigger and the crew says less. Only the murderer stood with the victim. If a statement puts two people in the same room, neither of them is with the victim.', [
+      ['Wanted, Dead or Alive', 'Their faces hung in every port. One poster was missing a face.', '📃 Wanted poster'],
+      ['Every Sail Set', 'Every sail was set. Still the frigate drew closer.', '🪡 Sail needle'],
+      ['The Warning Shot', 'The frigate fired once. On board, someone counted two bangs.', '🕳️ Bullet hole'],
+      ['The White Flag', 'Someone hoisted the white flag. Nobody wanted to surrender.', '🏳️ White flag'],
+      ['Grimsby Sounds the Depth', 'He called six fathoms. There were three.', '🧵 Sounding line'],
+      ['Signals in the Dark', 'A light blinked from a porthole towards the frigate. Three short flashes.', '🪟 Porthole'],
+      ['Miss Coral Writes', 'She wrote a letter every evening. This one was for the frigate.', '💌 Smuggled note'],
+      ['The Reef', 'The frigate ran aground on the reef. The traitor was still on board.', '🪸 Piece of coral']
+    ]],
+    'piraten-8': ['Part VIII · The Last Harbour', 'The Gull moors in a harbour where nobody asks questions. She will be laid up here for good, and everyone wants one last thing from on board.', 'The Black Gull is laid up for good, and the last word in her logbook is yours.',
+      'The last part, and the hardest. If a statement says someone was not in the galley, cross off the whole galley for that person in one go. It saves a lot of counting.', [
+      ['The Harbourmaster', 'The harbourmaster asked no questions. He did write everything down.', '📗 Harbour register'],
+      ['The Last Cargo', 'The cargo went ashore. One crate weighed more than the list said.', '🪝 Cargo hook'],
+      ['Saffron Packs Her Knives', 'Twelve knives went into her bag. On board she only ever had eleven.', '👝 Knife roll'],
+      ['The Buyer', 'A buyer offered gold for the Gull. He only wanted to see the hold.', '📑 Bill of sale'],
+      ['Thorne Unloads the Cannon', 'The cannon had to go ashore. It was still loaded.', '🧨 Fuse'],
+      ['The Last Anchor', 'The anchor dropped for the last time. Something hung from the chain.', '⛓️ Anchor chain'],
+      ['The Rats Leave', 'The rats were the first to go ashore. They knew something.', '🪤 Rat trap'],
+      ['The Last Page', 'One page is still blank in the Gull\'s logbook.', '📕 Closed logbook']
+    ]],
 
     hotel: ["Part I · New Year's Night", 'On the stroke of twelve the lights went out. When they came back, the owner lay on the marble floor.', 'The first night of the year is over. The guests may not go home yet.',
       'A hundred guests, one victim. A hotel has many rooms; first cross off the rooms the report says were empty.', [
@@ -557,6 +601,28 @@
       ['The Safe Is Empty', 'The safe stood open. The code had been changed.', '🔓 Open safe'],
       ['The Light in Room 404', 'The room that did not exist had its light on.', '💡 Bulb'],
       ['Aurora Goes Dark', 'The main switch. The last hand.', '🔌 Main switch']]],
+    'hotel-7': ['Part VII · The Auction', 'A month later everything in Aurora goes under the hammer, from the piano to the last spoon. The old guests sit in the front row.', 'The hammer falls for the last time: everything is sold except the building itself.',
+      'Bigger floor plans, vaguer statements: this auction is no bargain. Use the pencil to put a dot on every square where a suspect could still stand. If two suspects must be in the same row, compare their dots: a row where only one of them has a dot is out.', [
+      ['Viewing Day', 'On viewing day everything had a tag. One tag had nothing attached.', '🏷️ Lot tag'],
+      ['The Catalogue', 'Lot 77 was in the catalogue twice. There was only one lot 77.', '📕 Auction catalogue'],
+      ['The First Bid', 'The first bid came from an empty chair.', '🪧 Bidding paddle'],
+      ['Cutlery by the Kilo', 'The silver was sold by the kilo. A kilo was missing.', '🍴 Hotel cutlery'],
+      ['Pianist Felix Bids', 'He bid on his old piano. Someone bid higher.', '🪑 Piano stool'],
+      ['Six Letters', 'AURORA stood on the façade in six letters. Five were still up.', '🅰️ Façade letter'],
+      ['The Revolving Door', 'The revolving door was already sold. At midnight it turned once more.', '🔄 Revolving door'],
+      ['The Last Lot', 'The last lot was not in the catalogue. Someone bid on it anyway.', '🔨 Auction hammer']
+    ]],
+    'hotel-8': ['Part VIII · The Demolition', 'On Monday the wrecking ball comes. The weekend before, the old guests walk the empty corridors one last time.', 'The wrecking ball swings, the dust settles, and the last file on Aurora is closed.',
+      'Aurora one last time, with almost nothing but the hardest cases. A palm is a poor hiding place: whoever stood directly next to one can only be on a few squares. Find those statements about furniture first and start there.', [
+      ['The Permit', 'Demolition was allowed from Monday. Someone started on Sunday.', '📃 Demolition permit'],
+      ['Butler Winslow\'s Hard Hat', 'For forty years he wore a bow tie. Today, a hard hat.', '⛑️ Hard hat'],
+      ['The Old Lift', 'A guest card still hung in the lift shaft. One name was crossed out.', '🛗 Lift button'],
+      ['The Crane', 'From the crane you could see every window. Someone stood in one.', '🏗️ Crane hook'],
+      ['The Last Waltz', 'The parquet had been sold. Yet there were dance steps in the dust.', '🪩 Mirror ball'],
+      ['The Foundation Stone', 'Inside the foundation stone was a time capsule. Someone got there first.', '🫙 Time capsule'],
+      ['Room 404 Found', 'The demolition crew found room 404. The alarm clock was still ticking.', '⏰ Ticking alarm clock'],
+      ['The Last Hour', 'Aurora had one hour left standing. Enough for the last question.', '🧱 Last brick']
+    ]],
 
     ruimte: ['Part I · Alarm', 'The commander does not report for duty. All airlocks are sealed.', 'The airlocks stay shut. Then the antenna picks something up.',
       'Station Orion, all airlocks sealed. The crew talk about modules, not rooms. Otherwise it works exactly like at home.', [
@@ -618,6 +684,28 @@
       ['The Last Message Home', 'The message was short. It was not from the commander.', '📨 Last message'],
       ['Docking at 04:00', 'The capsule waited. So did one crew member, somewhere else.', '⏱️ Stopwatch'],
       ['Orion Burns', 'The last question, at the edge of the atmosphere.', '🔥 Heat shield']]],
+    'ruimte-7': ['Part VII · Quarantine', 'The capsule has landed and the crew goes into quarantine. Three weeks, in a full-size copy of Orion in a hangar on Earth.', 'On the day the doors open, a ship fishes something orange out of the ocean.',
+      'Back on Earth, and still behind an airlock. Some cases are now at master level: a bigger board, fewer direct statements. Whoever was alone in a module also tells you about the others: anyone directly next to them stood on the other side of a wall.', [
+      ['Orion on Earth', 'Every module copied down to the last screw. One of them was loose.', '🔩 Loose screw'],
+      ['Biologist Wren Keeps Count', 'She crossed off every day. Yesterday someone had done it for her.', '📆 Countdown calendar'],
+      ['Dr. Nkemelu Draws Blood', 'Eight tubes of blood. One of them had no name on it.', '🩸 Blood vial'],
+      ['Visitors Behind Glass', 'Everyone waved at their families. One person looked the other way.', '🪟 Viewing window'],
+      ['Meals Through the Hatch', 'Three meals a day through the hatch. One came back untouched.', '🍱 Meal tray'],
+      ['Gravity Again', 'After half a year of floating, everything fell over. So did an alibi.', '🥤 Tipped-over cup'],
+      ['The Air Filter', 'The filter caught everything. Including a hair that did not belong.', '🌀 Air filter'],
+      ['Day Twenty-One', 'The doors opened. One wristband was still lying on a bed.', '📛 Wristband']
+    ]],
+    'ruimte-8': ['Part VIII · The Flight Recorder', 'Not all of Orion burned. The flight recorder is played back in the copy of the station, module by module.', 'The recorder falls silent, the Orion file closes, and this time it stays closed.',
+      'The last part of Orion, almost all of it at master level. When two people must be in the same module, look for a module where both of them fit, along with all their other statements. Often only one is left.', [
+      ['Out of the Ocean', 'An orange box from the seabed. It had recorded everything.', '🟧 Orange box'],
+      ['Minute Zero', 'The recording began with silence. Then a hatch opened.', '🎧 Headphones'],
+      ['Engineer Vega Listens', 'She knew every sound on board. Not this hiss.', '⚙️ Pressure valve'],
+      ['Two Voices', 'Two voices in the engine room. According to the roster, nobody was there.', '🗣️ Voiceprint'],
+      ['Officer Paz Rewinds', 'She rewound it three times. After that she said nothing.', '⏪ Rewind button'],
+      ['Eleven Seconds of Silence', 'At 04:00 the recording cut out for eleven seconds. Not by itself.', '🔇 Mute button'],
+      ['Botanist Fern Falls Silent', 'Her voice was on every recording. Not on the last one.', '🪴 Plant cutting'],
+      ['The Last Recording', 'The last minute before undocking. Someone whispered a name.', '🗂️ Orion file']
+    ]],
 
     museum: ['Part I · After Closing Time', 'The museum closes at five. At six the curator lies among the statues and every door is locked.', 'The first night is over. The museum stays closed, the questions do not.',
       'A museum has many galleries and few people. Start with whoever says which gallery they were in, and watch the display cases: “directly next to” only counts straight beside it.', [
@@ -679,6 +767,28 @@
       ['The Hidden Gallery', 'No windows, no doors, yet footsteps.', '👣 Dust trail'],
       ['Curator Ellery Chooses', 'He could save one thing. He chose wrong.', '⚖️ Scales'],
       ['Vlierbeek, the End', 'The last gallery. The last name.', '🗝️ Last key']]],
+    'museum-7': ['Part VII · The Loan', 'The museum is open again, as if there had never been a door. A famous painting arrives on loan from Florence, insured for more than the building.', 'The painting goes back to Florence, and the insurer cancels the policy.',
+      'From here on there are master cases: a bigger board, less to hold on to. When two people share a row or a column, put one down in pencil and see where the other can still go. If the other has nowhere to go, the first one was not there.', [
+      ['The Crate from Florence', 'According to the label there was one painting inside. The crate weighed more.', '🏷️ Shipping label'],
+      ['Four Screws', 'Four screws held the frame to the wall. Three were left.', '🔩 Hanging screw'],
+      ['Fifty Lux', 'The light was not allowed above fifty lux. Someone had turned it up.', '🔆 Light meter'],
+      ['Restorer Iris Has Doubts', 'Under the microscope the paint was too young for the painting.', '🔬 Paint sample'],
+      ['The Press Photo', 'The press photo showed one hand too many.', '📸 Press photo'],
+      ['The Audio Tour', 'Stop fourteen mentioned a name that was on no label.', '🎧 Audio guide'],
+      ['Professor Adebayo Recognises It', 'He knew the painting from an old slide, taken in Vlierbeek.', '🎞️ Old slide'],
+      ['Back to Florence', 'The crate was closed. What went in was not what came out.', '🪛 Screwdriver']
+    ]],
+    'museum-8': ['Part VIII · The Centenary', 'Without insurance, Vlierbeek celebrates its hundredth birthday anyway. At the party the real painting comes home, after fifty years away.', 'The painting hangs where it belongs again, and the Vlierbeek file is closed for good.',
+      'Nearly every case is a master case now; fitting, in a museum. When you are stuck, ask yourself which statement you have not used yet. Tick off the ones you use and you will see it at a glance.', [
+      ['The Homecoming', 'After fifty years the painting hung at home again. On the same nails.', '🫧 Bubble wrap'],
+      ['Flag at Half-Mast', 'The flag on the roof hung at half-mast. Before the party had even begun.', '🚩 Roof flag'],
+      ['The Only Guard', 'Without insurance, Gus was the entire security. He yawned once.', '🍬 Peppermint'],
+      ['The Centenary Medal', 'Every guest got a medal. One medal had a different year on it.', '🏅 Centenary medal'],
+      ['The Brass Band', 'The brass band played the centenary march. One trumpet stayed silent.', '🎺 Trumpet'],
+      ['Curator Ellery Reads the Names', 'He read out the name of every curator. He skipped one.', '📘 Centenary book'],
+      ['Guide Margot Tells the Story', 'She told a hundred years in ten minutes. She left out one night.', '📏 Pointer'],
+      ['Vlierbeek Turns a Hundred', 'A hundred years old at midnight. The last question is the oldest.', '🖼️ The original']
+    ]],
 
     trein: ['Part I · Departure', 'The night train leaves at eight. At nine the conductor lies in the dining car and the train does not stop until sunrise.', 'The train rides through the night. So do the passengers.',
       'A train is long and narrow: carriages lie side by side. “Left of” and “higher than” apply to the whole floor plan, not one carriage.', [
@@ -740,6 +850,28 @@
       ['The Luggage Car', 'Among the suitcases lay more than luggage.', '🏷️ Luggage tag'],
       ['Stoker Jules Stokes No More', 'The boiler was cold. Somebody had put out the fire.', '🧯 Bucket of water'],
       ['Terminus', 'The train stops. The last question.', '🏁 End sign']]],
+    'trein-7': ['Part VII · The Engine Shed', 'The scrapping is put off until spring. The train spends the winter in an engine shed, and at night it has visitors.', 'In spring a stranger buys the train, for one last run to Vienna.',
+      'The engine shed is bigger than it looks, and so are some of the cases: nine squares by nine. “Not directly next to” rules out only four squares. Save those statements for last.', [
+      ['Light Without Power', 'A light was on in the dining car. The power was off.', '🔋 Battery'],
+      ['The Slept-in Bed', 'The train had stood empty for weeks. The bed in Compartment A had been slept in.', '🧦 Woollen sock'],
+      ['Magician Orlando Practises', 'He practised his vanishing trick in the empty train. Someone was watching.', '🪄 Magic wand'],
+      ['The Points', 'Someone changed the points in the night. The train was still inside.', '🎚️ Points lever'],
+      ['Stoker Jules Smells Smoke', 'The boiler had been cold for weeks. Not tonight.', '♨️ Pressure gauge'],
+      ['Widow Duval Searches', 'She came for the second suitcase. Someone had got there first.', '🪡 Hatpin'],
+      ['Frost on the Window', 'There was a name in the frost on the window. Half of one.', '🪟 Frozen pane'],
+      ['For Sale', 'For sale: one night train, twelve carriages. There was one reply.', '📰 Newspaper advert']
+    ]],
+    'trein-8': ['Part VIII · Arrival', 'The train runs the old route to Vienna one more time. Every passenger from back then has received a ticket, with no sender.', 'In Vienna the night train rolls into a museum and stays there for good.',
+      'The last run, and almost all of it at master level. Count the squares without furniture in each carriage: that many people fit, no more. A small carriage fills up fast.', [
+      ['The Invitation', 'Everyone came. Nobody admitted to being curious.', '📩 Blank envelope'],
+      ['That Tunnel Again', 'At nine, that tunnel again. Everyone held their breath.', '🕰️ Mantel clock'],
+      ['First Class', 'The baroness travelled first class. This train had no first class.', '🦊 Fur stole'],
+      ['The New Conductor', 'Someone punched the tickets. The train had no conductor.', '🕳️ Ticket punch'],
+      ['Actress Lola Plays Herself', 'She acted out that night again. A little too precisely.', '💄 Lipstick'],
+      ['The Ninth Passenger', 'Eight tickets sent. Nine people aboard.', '👔 Necktie'],
+      ['Nurse Hedda Stays Up', 'She sat up in the corridor all night. Someone got past anyway.', '🧩 Puzzle book'],
+      ['Vienna at Last', 'Whoever sent the tickets was on the train too.', '🚉 Platform ticket']
+    ]],
 
     circus: ['Part I · The Last Show', 'The last show of the season. The audience has gone, the tent is closing, and Director Zano lies in the ring.', 'The tent stays up. The performers stay too, until the police are done.',
       'A circus is one big tent with many little corners. Start with whoever says where they were; “directly next to” only counts straight beside it, even with a cannon.', [
@@ -801,6 +933,28 @@
       ['The Tent Poles Fall', 'The tent collapsed. Not by itself.', '🪝 Tent peg'],
       ['Ticket Seller Dottie Locks Up', 'She turned the lights off. Someone turned them back on.', '🔦 Box-office lamp'],
       ['The Tent Comes Down', 'The last question, under the last canvas.', '🎪 Canvas']]],
+    'circus-7': ['Part VII · Winter Quarters', 'The tent lies folded in the barn at the winter quarters, a farm outside town. Everyone waits for a buyer and keeps an eye on the others.', 'No buyer comes, so the circus plays one more time: at night, in the barn.',
+      'The winter quarters are big and the statements say little. First mark, in every area, which squares are in a corner, against a wall or in the middle. An area two squares wide has no middle: whoever stands “in the middle” stands somewhere else.', [
+      ['The Eighth Wagon', 'Seven wagons rolled into the barn. In the morning there were eight.', '🛞 Wagon wheel'],
+      ['The Weathervane', 'The weathervane on the barn was turning. There was no wind.', '🐓 Weathervane'],
+      ['Strongman Boris Saws Wood', 'He sawed wood for the whole winter. In one night.', '🪚 Saw'],
+      ['The Hole in the Ice', 'The pond had frozen over. Except in one spot.', '⛸️ Ice skate'],
+      ['Clown Pippo Without Make-up', 'Without his make-up nobody recognised him. That was convenient.', '💄 Make-up box'],
+      ['Circus for Sale', 'The advert was in the paper. Nobody had placed it.', '🗞️ Newspaper clipping'],
+      ['Vet Nadia Stays On', 'Her work was done. Still she stayed another week.', '💼 Vet\'s bag'],
+      ['The Buyer Cancels', 'The buyer called to cancel. Someone on the farm already knew.', '☎️ Telephone receiver']
+    ]],
+    'circus-8': ['Part VIII · The Night Show', 'The village comes to watch one show in the barn, by lantern light. The ring is made of straw; the performers are the same.', 'The last applause fades in the barn, and all that is left of Circus Zano is your case file.',
+      'Almost every case in this part is of the hardest kind. If you are stuck, pencil someone into one possible place and reason on from there. If that breaks a statement, the place is wrong; a mistake in pencil costs nothing.', [
+      ['The Dress Rehearsal', 'At the rehearsal there was an act that wasn\'t on the programme.', '📑 Programme booklet'],
+      ['The Ringmaster', 'Someone had to announce the show. Two people were ready.', '📢 Megaphone'],
+      ['Juggler Teo\'s Torches', 'Five torches in a barn full of straw. He caught four.', '🔥 Juggling torch'],
+      ['Candyfloss', 'The candyfloss machine ran all evening. Nobody stood behind it.', '🍭 Candyfloss'],
+      ['The Interval', 'The interval lasted ten minutes. For one performer, twenty.', '🔔 Interval bell'],
+      ['Trapeze Artist Mira Climbs', 'She hung her trapeze from a beam. The beam had been half sawn through.', '🪜 Rope ladder'],
+      ['Ticket Seller Dottie Sells', 'Entry was free. She sold tickets anyway.', '💶 Small change'],
+      ['Standing Ovation', 'Everyone stood up to applaud. One person stayed seated.', '🪧 Circus poster']
+    ]],
 
     skihut: ['Part I · The Avalanche', 'An avalanche seals the valley. Seven guests, one stove, and a host by the fire who never warms up again.', 'The road is still closed. The guests stay, whether they like it or not.',
       'A ski lodge is small and warm and everyone is on top of each other. Start with whoever says which room they were in; watch the stove: “directly next to” only counts straight beside it.', [
@@ -861,7 +1015,29 @@
       ['The Last Breakfast', 'Cook Luigi cooked for eight. Seven ate.', '🍽️ Breakfast plate'],
       ['The Snowman', 'The snowman was not there yesterday. Someone had had time.', '⛄ Snowman'],
       ['Ski Instructor Astrid Waits', 'She waited at the lift. The lift never came.', '🚡 Lift pass'],
-      ['The Last Descent', 'Down the mountain. The last question.', '🏁 Finish flag']]]
+      ['The Last Descent', 'Down the mountain. The last question.', '🏁 Finish flag']]],
+    'skihut-7': ['Part VII · Off Season', 'In autumn the lodge stands empty. Yet a light is on, and five old guests still have a key.', 'The first snow falls and closes the road, just like the first time.',
+      'The board gets bigger and the statements get stingier. If the report says a room was empty, that whole block of squares is gone for all five, including anyone who is not mentioned anywhere else. So an empty lodge is good for something after all.', [
+      ['Light Behind the Shutters', 'Every shutter was closed. Behind one of them, a light was on.', '🪔 Oil lamp'],
+      ['The Spare Keys', 'There were four spare keys. Inside sat five guests.', '🔑 Spare key'],
+      ['Sheets over the Furniture', 'Every piece of furniture lay under a sheet. Under one, there was no furniture.', '🛋️ Dust sheet'],
+      ['Cook Luigi Picks Mushrooms', 'He picked a full basket. One kind was not in his book.', '🍄 Mushroom'],
+      ['The Mousetrap', 'The trap in the pantry had snapped shut. No mouse.', '🪤 Mousetrap'],
+      ['Tourist Hana Writes Home', 'Her postcard came from the lodge. The lodge had been closed for months.', '🏞️ Postcard'],
+      ['The Silent Cable Car', 'In autumn the cable car did not run. Yet a gondola hung at the top.', '🚠 Gondola'],
+      ['The First Snow', 'The first snow fell at midnight. One set of tracks led to the door.', '🥾 Hiking boot']
+    ]],
+    'skihut-8': ['Part VIII · Edelweiss', 'The road is closed and the lodge is full. Around the stove sit the same faces as on the first night.', 'Van Dam shuts his notebook, gives you a nod and walks down to the valley through the fresh snow, in no hurry.',
+      'The last cases, nearly all on the big board. Don\'t get stuck on the hardest one: place the others first, and the last one often has only one square left. That is how I have always done it.', [
+      ['Usual Seats', 'Everyone took the same seat as on the first night. All but one.', '📇 Place card'],
+      ['The Woodpile', 'Wood for the whole winter. Chopped in one afternoon, by nobody.', '🪓 Axe'],
+      ['A Page Short', 'Every winter everyone signed the guest book. One winter was missing.', '📄 Loose page'],
+      ['The Frozen Pipe', 'At three the pipe froze. Someone had opened a window.', '🚰 Frozen tap'],
+      ['Young Kai Stays Up', 'This year he was allowed to stay up. He saw more than he wanted to.', '🧣 Woollen scarf'],
+      ['The Avalanche Beacon', 'The beacon was beeping in the cellar. There was no snow down there.', '📟 Avalanche beacon'],
+      ['Mountain Guide Freya Predicts', 'She predicted an avalanche, to the hour. She did not say how.', '⛰️ Altimeter'],
+      ['Edelweiss', 'Where it began, by the stove. That is where it ends, too.', '🌼 Dried edelweiss']
+    ]],
   },
 
   // Zinsbouw (grammar.js): sjablonen met benoemde gaten, zie de uitleg bovenin grammar.js.

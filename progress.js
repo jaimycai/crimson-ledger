@@ -34,8 +34,8 @@ const Progress = {
   json(k, fallback) { try { const v = JSON.parse(this.get(k) || 'null'); return v === null ? fallback : v; } catch (e) { return fallback; } },
 
   // ── Punten ─────────────────────────────────────────────────
-  BASE: { makkelijk: 300, gemiddeld: 500, moeilijk: 800 },
-  PAR:  { makkelijk: 150, gemiddeld: 240, moeilijk: 420 },   // seconden waarbinnen er tijdbonus is
+  BASE: { makkelijk: 300, gemiddeld: 500, moeilijk: 800, meester: 1200 },
+  PAR:  { makkelijk: 150, gemiddeld: 240, moeilijk: 420, meester: 720 },   // seconden waarbinnen er tijdbonus is
   DAILY_BONUS: 150, WEEK_BONUS: 300, ARCHIVE_BONUS: 100,
   points() { return +this.get('crimson-points') || 0; },
   addPoints(n) { const t = this.points() + n; this.set('crimson-points', String(t)); return t; },

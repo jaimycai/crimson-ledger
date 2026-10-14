@@ -1,0 +1,77 @@
+{
+  "theme": "landhuis",
+  "parts": [
+    {
+      "part": 7,
+      "icon": "🏗️",
+      "nl": {
+        "title": "Deel VII · De verbouwing",
+        "intro": "Blackwood zweeg drie jaar. Dan komen de metselaars, en de eerste muur die ze openbreken is die onder de trap.",
+        "outro": "De steigers gaan weg en in de tuin komt een bord: te koop.",
+        "briefing": "Metselaars vinden van alles in muren, en alles komt op mijn bureau. Op een plattegrond van negen bij negen zijn vaste plekken schaars. Leg de verklaringen die twee mensen koppelen achter elkaar: staat één schakel vast, dan volgt de rest.",
+        "cases": [
+          { "title": "Het eerste gat", "story": "De metselaar sloeg één gat. Daarna wilde hij niet meer verder.", "item": "🔨 Moker" },
+          { "title": "Geld onder de vloer", "story": "Onder de vloer lag geld. Te weinig om voor te moorden, zei iedereen.", "item": "💷 Bankbiljet" },
+          { "title": "Achter het behang", "story": "Achter het behang zat een liefdesbrief. Geen naam, wel een datum.", "item": "💌 Liefdesbrief" },
+          { "title": "Potlood op de balk", "story": "Op een balk stond in potlood een datum. Die van vorige week.", "item": "✏️ Timmermanspotlood" },
+          { "title": "Majoor Pike herkent niets", "story": "Op zolder lag zijn oude legerhelm. Nooit gezien, zei hij.", "item": "🪖 Legerhelm" },
+          { "title": "Veertig potten jam", "story": "In de kelder stonden veertig potten jam. In één zat geen jam.", "item": "🫙 Inmaakpot" },
+          { "title": "De rode draad", "story": "Aan een spijker hing een rode draad. Clementine droeg vandaag blauw.", "item": "🧵 Rode draad" },
+          { "title": "Nieuws uit de muur", "story": "In de muur zat een krant uit 1927. Het stuk over het diner was weg.", "item": "🗞️ Oude krant" }
+        ]
+      },
+      "en": {
+        "title": "Part VII · The Renovation",
+        "intro": "Blackwood kept quiet for three years. Then the builders arrive, and the first wall they knock through is the one under the stairs.",
+        "outro": "The scaffolding comes down and a sign goes up in the garden: for sale.",
+        "briefing": "Builders find all sorts of things in walls, and all of it lands on my desk. On a nine-by-nine floor plan, fixed spots are scarce. Line up the statements that link two people: once one link is fixed, the rest follow.",
+        "cases": [
+          { "title": "The First Hole", "story": "The bricklayer knocked one hole. After that he would not go on.", "item": "🔨 Sledgehammer" },
+          { "title": "Money Under the Floor", "story": "There was money under the floor. Not enough to kill for, everyone said.", "item": "💷 Banknote" },
+          { "title": "Behind the Wallpaper", "story": "Behind the wallpaper was a love letter. No name, but a date.", "item": "💌 Love letter" },
+          { "title": "Pencil on the Beam", "story": "Someone had pencilled a date on a beam. Last week's date.", "item": "✏️ Carpenter's pencil" },
+          { "title": "Major Pike Recognises Nothing", "story": "His old army helmet lay in the attic. Never seen it, he said.", "item": "🪖 Army helmet" },
+          { "title": "Forty Jars of Jam", "story": "Forty jars of jam stood in the cellar. One of them held no jam.", "item": "🫙 Jam jar" },
+          { "title": "The Red Thread", "story": "A red thread hung from a nail. Clementine was wearing blue today.", "item": "🧵 Red thread" },
+          { "title": "News from the Wall", "story": "Inside the wall was a newspaper from 1927. The piece about the dinner was gone.", "item": "🗞️ Old newspaper" }
+        ]
+      }
+    },
+    {
+      "part": 8,
+      "icon": "🔒",
+      "nl": {
+        "title": "Deel VIII · Afscheid van Blackwood",
+        "intro": "Deze keer gaat de verkoop door. De familie krijgt één weekend om Blackwood leeg te halen.",
+        "outro": "Het hek valt in het slot, de familie rijdt weg, en het dossier Blackwood gaat voorgoed dicht.",
+        "briefing": "Het huis is verkocht, de zaken zijn nog open. \"Links van\" en \"hoger dan\" strepen hele kolommen en rijen tegelijk weg. Wie links van iemand staat, staat nooit in de kolom helemaal rechts; wie hoger staat, nooit op de onderste rij.",
+        "cases": [
+          { "title": "De verhuizers", "story": "De verhuizers telden twaalf kisten. In de wagen stonden er dertien.", "item": "🚚 Vrachtbrief" },
+          { "title": "De taxateur", "story": "De taxateur prees elk stuk in huis. Behalve het portret in de hal.", "item": "🔎 Taxatielijst" },
+          { "title": "Mortimer telt opnieuw", "story": "Ooit miste er een lepel. Nu was er een te veel.", "item": "🍴 Bestekcassette" },
+          { "title": "De dode roos", "story": "In de serre stond een dode roos. Iemand gaf hem nog elke dag water.", "item": "🥀 Verwelkte roos" },
+          { "title": "Het afscheidsdiner", "story": "Dezelfde tafel als in 1927. Niemand wilde aan het hoofd zitten.", "item": "🫗 Karaf" },
+          { "title": "Tante Agatha blijft", "story": "Iedereen pakte in. Tante Agatha breide door, met één oog op de deur.", "item": "🧶 Breiwerk" },
+          { "title": "De volle tank", "story": "De auto in de garage reed al jaren niet. De tank was vol.", "item": "⛽ Benzineblik" },
+          { "title": "De laatste regel", "story": "Hargrove sloot het kasboek. Op de laatste regel stond één naam.", "item": "📕 Kasboek" }
+        ]
+      },
+      "en": {
+        "title": "Part VIII · Farewell to Blackwood",
+        "intro": "This time the sale goes through. The family has one weekend to clear out Blackwood.",
+        "outro": "The gate clicks shut, the family drives away, and the Blackwood file is closed for good.",
+        "briefing": "The house is sold; the cases are still open. “Left of” and “higher than” cross off whole columns and rows at once. Whoever stands left of someone is never in the far-right column; whoever stands higher is never on the bottom row.",
+        "cases": [
+          { "title": "The Removal Men", "story": "The removal men counted twelve crates. The van held thirteen.", "item": "🚚 Waybill" },
+          { "title": "The Valuer", "story": "The valuer praised every piece in the house. Except the portrait in the hall.", "item": "🔎 Valuation list" },
+          { "title": "Mortimer Counts Again", "story": "Once a spoon went missing. Now there was one too many.", "item": "🍴 Cutlery case" },
+          { "title": "The Dead Rose", "story": "A dead rose stood in the conservatory. Someone still watered it every day.", "item": "🥀 Wilted rose" },
+          { "title": "The Farewell Dinner", "story": "The same table as in 1927. Nobody wanted the seat at the head.", "item": "🫗 Decanter" },
+          { "title": "Aunt Agatha Stays", "story": "Everyone was packing. Aunt Agatha kept knitting, one eye on the door.", "item": "🧶 Knitting" },
+          { "title": "A Full Tank", "story": "The car in the garage hadn't run in years. The tank was full.", "item": "⛽ Petrol can" },
+          { "title": "The Last Line", "story": "Hargrove closed the ledger. On the last line was a single name.", "item": "📕 Ledger" }
+        ]
+      }
+    }
+  ]
+}

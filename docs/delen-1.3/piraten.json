@@ -1,0 +1,77 @@
+{
+  "theme": "piraten",
+  "parts": [
+    {
+      "part": 7,
+      "icon": "⛵",
+      "nl": {
+        "title": "Deel VII · De achtervolging",
+        "intro": "Een schip vol rijke piraten valt op. Een fregat van de marine volgt de Meeuw, en weet steeds waar ze is.",
+        "outro": "Het fregat loopt vast op het rif, en de Meeuw zet koers naar de laatste haven die haar nog wil.",
+        "briefing": "Het schip lijkt groter en de bemanning zegt minder. Bij het slachtoffer stond alleen de dader. Zet een verklaring twee mensen in dezelfde ruimte, dan staat geen van beiden bij het slachtoffer.",
+        "cases": [
+          { "title": "Gezocht, dood of levend", "story": "In elke haven hing hun gezicht. Op één poster ontbrak er een.", "item": "📃 Opsporingsposter" },
+          { "title": "Alle zeilen bij", "story": "Alle zeilen stonden bij. Toch kwam het fregat dichterbij.", "item": "🪡 Zeilnaald" },
+          { "title": "Het waarschuwingsschot", "story": "Het fregat schoot één keer. Aan boord telde iemand twee knallen.", "item": "🕳️ Kogelgat" },
+          { "title": "De witte vlag", "story": "Iemand hees de witte vlag. Niemand wilde zich overgeven.", "item": "🏳️ Witte vlag" },
+          { "title": "Bootsman Grimsby peilt", "story": "Hij riep zes vadem diep. Het waren er drie.", "item": "🧵 Loodlijn" },
+          { "title": "Signalen in het donker", "story": "Uit een patrijspoort knipperde licht naar het fregat. Drie keer kort.", "item": "🪟 Patrijspoort" },
+          { "title": "Juffrouw Coral schrijft", "story": "Ze schreef elke avond een brief. Deze was voor het fregat.", "item": "💌 Gesmokkeld briefje" },
+          { "title": "Het rif", "story": "Het fregat liep vast op het rif. De verrader zat nog aan boord.", "item": "🪸 Stuk koraal" }
+        ]
+      },
+      "en": {
+        "title": "Part VII · The Chase",
+        "intro": "A ship full of rich pirates gets noticed. A navy frigate follows the Gull, and always knows where she is.",
+        "outro": "The frigate runs aground on the reef, and the Gull sets course for the last harbour that will still have her.",
+        "briefing": "The ship seems bigger and the crew says less. Only the murderer stood with the victim. If a statement puts two people in the same room, neither of them is with the victim.",
+        "cases": [
+          { "title": "Wanted, Dead or Alive", "story": "Their faces hung in every port. One poster was missing a face.", "item": "📃 Wanted poster" },
+          { "title": "Every Sail Set", "story": "Every sail was set. Still the frigate drew closer.", "item": "🪡 Sail needle" },
+          { "title": "The Warning Shot", "story": "The frigate fired once. On board, someone counted two bangs.", "item": "🕳️ Bullet hole" },
+          { "title": "The White Flag", "story": "Someone hoisted the white flag. Nobody wanted to surrender.", "item": "🏳️ White flag" },
+          { "title": "Grimsby Sounds the Depth", "story": "He called six fathoms. There were three.", "item": "🧵 Sounding line" },
+          { "title": "Signals in the Dark", "story": "A light blinked from a porthole towards the frigate. Three short flashes.", "item": "🪟 Porthole" },
+          { "title": "Miss Coral Writes", "story": "She wrote a letter every evening. This one was for the frigate.", "item": "💌 Smuggled note" },
+          { "title": "The Reef", "story": "The frigate ran aground on the reef. The traitor was still on board.", "item": "🪸 Piece of coral" }
+        ]
+      }
+    },
+    {
+      "part": 8,
+      "icon": "⚓",
+      "nl": {
+        "title": "Deel VIII · De laatste haven",
+        "intro": "De Meeuw meert aan in een haven waar niemand vragen stelt. Hier gaat ze voorgoed aan de ketting, en iedereen wil nog iets van boord halen.",
+        "outro": "De Zwarte Meeuw ligt voorgoed aan de ketting, en het laatste woord in haar logboek is van jou.",
+        "briefing": "Het laatste deel, en het zwaarste. Zegt een verklaring dat iemand niet in de kombuis was, streep dan in één keer de hele kombuis voor die persoon weg. Dat scheelt een hoop getel.",
+        "cases": [
+          { "title": "De havenmeester", "story": "De havenmeester stelde geen vragen. Hij schreef wel alles op.", "item": "📗 Havenregister" },
+          { "title": "De laatste lading", "story": "De lading ging van boord. Eén kist woog meer dan op de lijst stond.", "item": "🪝 Laadhaak" },
+          { "title": "Saffron pakt haar messen", "story": "Twaalf messen gingen mee in haar tas. Aan boord had ze er elf.", "item": "👝 Messenrol" },
+          { "title": "De koper", "story": "Een koper bood goud voor de Meeuw. Hij wilde alleen het ruim zien.", "item": "📑 Koopakte" },
+          { "title": "Thorne ontlaadt het kanon", "story": "Het kanon moest van boord. Het was nog geladen.", "item": "🧨 Lont" },
+          { "title": "Het laatste anker", "story": "Het anker viel voor de laatste keer. Er hing iets aan de ketting.", "item": "⛓️ Ankerketting" },
+          { "title": "De ratten vertrekken", "story": "De ratten gingen als eersten van boord. Ze wisten iets.", "item": "🪤 Rattenval" },
+          { "title": "De laatste bladzijde", "story": "In het logboek van de Meeuw is nog één bladzijde leeg.", "item": "📕 Gesloten logboek" }
+        ]
+      },
+      "en": {
+        "title": "Part VIII · The Last Harbour",
+        "intro": "The Gull moors in a harbour where nobody asks questions. She will be laid up here for good, and everyone wants one last thing from on board.",
+        "outro": "The Black Gull is laid up for good, and the last word in her logbook is yours.",
+        "briefing": "The last part, and the hardest. If a statement says someone was not in the galley, cross off the whole galley for that person in one go. It saves a lot of counting.",
+        "cases": [
+          { "title": "The Harbourmaster", "story": "The harbourmaster asked no questions. He did write everything down.", "item": "📗 Harbour register" },
+          { "title": "The Last Cargo", "story": "The cargo went ashore. One crate weighed more than the list said.", "item": "🪝 Cargo hook" },
+          { "title": "Saffron Packs Her Knives", "story": "Twelve knives went into her bag. On board she only ever had eleven.", "item": "👝 Knife roll" },
+          { "title": "The Buyer", "story": "A buyer offered gold for the Gull. He only wanted to see the hold.", "item": "📑 Bill of sale" },
+          { "title": "Thorne Unloads the Cannon", "story": "The cannon had to go ashore. It was still loaded.", "item": "🧨 Fuse" },
+          { "title": "The Last Anchor", "story": "The anchor dropped for the last time. Something hung from the chain.", "item": "⛓️ Anchor chain" },
+          { "title": "The Rats Leave", "story": "The rats were the first to go ashore. They knew something.", "item": "🪤 Rat trap" },
+          { "title": "The Last Page", "story": "One page is still blank in the Gull's logbook.", "item": "📕 Closed logbook" }
+        ]
+      }
+    }
+  ]
+}

@@ -233,6 +233,34 @@ const CAMPAIGN = [
     { title: 'Hargrove bekent',          story: 'De butler bekende alles. Behalve de moord.', item: '🧾 Bekentenis',                     difficulty: 'moeilijk',  seed: 55683 },
     { title: 'Blackwood, het einde',   story: 'De laatste kamer. De laatste naam.', item: '🗝️ Laatste sleutel',                       difficulty: 'moeilijk',  seed: 55780 }
   ]},
+  { key: 'landhuis-7', theme: 'landhuis', part: 7, icon: '🏗️', title: 'Deel VII · De verbouwing',
+    intro: 'Blackwood zweeg drie jaar. Dan komen de metselaars, en de eerste muur die ze openbreken is die onder de trap.',
+    outro: 'De steigers gaan weg en in de tuin komt een bord: te koop.',
+    briefing: 'Metselaars vinden van alles in muren, en alles komt op mijn bureau. Op een plattegrond van negen bij negen zijn vaste plekken schaars. Leg de verklaringen die twee mensen koppelen achter elkaar: staat één schakel vast, dan volgt de rest.',
+    cases: [
+    { title: 'Het eerste gat', story: 'De metselaar sloeg één gat. Daarna wilde hij niet meer verder.', item: '🔨 Moker', difficulty: 'moeilijk', seed: 65101 },
+    { title: 'Geld onder de vloer', story: 'Onder de vloer lag geld. Te weinig om voor te moorden, zei iedereen.', item: '💷 Bankbiljet', difficulty: 'moeilijk', seed: 65198 },
+    { title: 'Achter het behang', story: 'Achter het behang zat een liefdesbrief. Geen naam, wel een datum.', item: '💌 Liefdesbrief', difficulty: 'meester', seed: 65295 },
+    { title: 'Potlood op de balk', story: 'Op een balk stond in potlood een datum. Die van vorige week.', item: '✏️ Timmermanspotlood', difficulty: 'moeilijk', seed: 65392 },
+    { title: 'Majoor Pike herkent niets', story: 'Op zolder lag zijn oude legerhelm. Nooit gezien, zei hij.', item: '🪖 Legerhelm', difficulty: 'meester', seed: 65489 },
+    { title: 'Veertig potten jam', story: 'In de kelder stonden veertig potten jam. In één zat geen jam.', item: '🫙 Inmaakpot', difficulty: 'moeilijk', seed: 65586 },
+    { title: 'De rode draad', story: 'Aan een spijker hing een rode draad. Clementine droeg vandaag blauw.', item: '🧵 Rode draad', difficulty: 'meester', seed: 65683 },
+    { title: 'Nieuws uit de muur', story: 'In de muur zat een krant uit 1927. Het stuk over het diner was weg.', item: '🗞️ Oude krant', difficulty: 'meester', seed: 65780 }
+  ]},
+  { key: 'landhuis-8', theme: 'landhuis', part: 8, icon: '🔒', title: 'Deel VIII · Afscheid van Blackwood',
+    intro: 'Deze keer gaat de verkoop door. De familie krijgt één weekend om Blackwood leeg te halen.',
+    outro: 'Het hek valt in het slot, de familie rijdt weg, en het dossier Blackwood gaat voorgoed dicht.',
+    briefing: 'Het huis is verkocht, de zaken zijn nog open. "Links van" en "hoger dan" strepen hele kolommen en rijen tegelijk weg. Wie links van iemand staat, staat nooit in de kolom helemaal rechts; wie hoger staat, nooit op de onderste rij.',
+    cases: [
+    { title: 'De verhuizers', story: 'De verhuizers telden twaalf kisten. In de wagen stonden er dertien.', item: '🚚 Vrachtbrief', difficulty: 'moeilijk', seed: 75101 },
+    { title: 'De taxateur', story: 'De taxateur prees elk stuk in huis. Behalve het portret in de hal.', item: '🔎 Taxatielijst', difficulty: 'meester', seed: 75198 },
+    { title: 'Mortimer telt opnieuw', story: 'Ooit miste er een lepel. Nu was er een te veel.', item: '🍴 Bestekcassette', difficulty: 'meester', seed: 75295 },
+    { title: 'De dode roos', story: 'In de serre stond een dode roos. Iemand gaf hem nog elke dag water.', item: '🥀 Verwelkte roos', difficulty: 'meester', seed: 75392 },
+    { title: 'Het afscheidsdiner', story: 'Dezelfde tafel als in 1927. Niemand wilde aan het hoofd zitten.', item: '🫗 Karaf', difficulty: 'meester', seed: 75489 },
+    { title: 'Tante Agatha blijft', story: 'Iedereen pakte in. Tante Agatha breide door, met één oog op de deur.', item: '🧶 Breiwerk', difficulty: 'meester', seed: 75586 },
+    { title: 'De volle tank', story: 'De auto in de garage reed al jaren niet. De tank was vol.', item: '⛽ Benzineblik', difficulty: 'meester', seed: 75683 },
+    { title: 'De laatste regel', story: 'Hargrove sloot het kasboek. Op de laatste regel stond één naam.', item: '📕 Kasboek', difficulty: 'meester', seed: 75780 }
+  ]},
 
   // ── Het Piratenschip, verder ────────────────────────────────
   { key: 'piraten-4', theme: 'piraten', part: 4, icon: '🛞', title: 'Deel IV · De nieuwe kapitein',
@@ -276,6 +304,34 @@ const CAMPAIGN = [
     { title: 'Muiterij, deel drie',    story: 'De derde keer is de gevaarlijkste.', item: '🏴 Zwarte doek',                             difficulty: 'moeilijk',  seed: 57586 },
     { title: 'De laatste wacht',       story: 'Wie de laatste wacht had, zag de zon niet meer opkomen.', item: '🕯️ Wachtkaars',        difficulty: 'moeilijk',  seed: 57683 },
     { title: 'Land van Zwartoog',      story: 'De kust van de kapitein. Het einde van de reis.', item: '🏝️ Kaart van thuis',          difficulty: 'moeilijk',  seed: 57780 }
+  ]},
+  { key: 'piraten-7', theme: 'piraten', part: 7, icon: '⛵', title: 'Deel VII · De achtervolging',
+    intro: 'Een schip vol rijke piraten valt op. Een fregat van de marine volgt de Meeuw, en weet steeds waar ze is.',
+    outro: 'Het fregat loopt vast op het rif, en de Meeuw zet koers naar de laatste haven die haar nog wil.',
+    briefing: 'Het schip lijkt groter en de bemanning zegt minder. Bij het slachtoffer stond alleen de dader. Zet een verklaring twee mensen in dezelfde ruimte, dan staat geen van beiden bij het slachtoffer.',
+    cases: [
+    { title: 'Gezocht, dood of levend', story: 'In elke haven hing hun gezicht. Op één poster ontbrak er een.', item: '📃 Opsporingsposter', difficulty: 'moeilijk', seed: 67101 },
+    { title: 'Alle zeilen bij', story: 'Alle zeilen stonden bij. Toch kwam het fregat dichterbij.', item: '🪡 Zeilnaald', difficulty: 'moeilijk', seed: 67198 },
+    { title: 'Het waarschuwingsschot', story: 'Het fregat schoot één keer. Aan boord telde iemand twee knallen.', item: '🕳️ Kogelgat', difficulty: 'meester', seed: 67295 },
+    { title: 'De witte vlag', story: 'Iemand hees de witte vlag. Niemand wilde zich overgeven.', item: '🏳️ Witte vlag', difficulty: 'moeilijk', seed: 67392 },
+    { title: 'Bootsman Grimsby peilt', story: 'Hij riep zes vadem diep. Het waren er drie.', item: '🧵 Loodlijn', difficulty: 'meester', seed: 67489 },
+    { title: 'Signalen in het donker', story: 'Uit een patrijspoort knipperde licht naar het fregat. Drie keer kort.', item: '🪟 Patrijspoort', difficulty: 'moeilijk', seed: 67586 },
+    { title: 'Juffrouw Coral schrijft', story: 'Ze schreef elke avond een brief. Deze was voor het fregat.', item: '💌 Gesmokkeld briefje', difficulty: 'meester', seed: 67683 },
+    { title: 'Het rif', story: 'Het fregat liep vast op het rif. De verrader zat nog aan boord.', item: '🪸 Stuk koraal', difficulty: 'meester', seed: 67780 }
+  ]},
+  { key: 'piraten-8', theme: 'piraten', part: 8, icon: '⚓', title: 'Deel VIII · De laatste haven',
+    intro: 'De Meeuw meert aan in een haven waar niemand vragen stelt. Hier gaat ze voorgoed aan de ketting, en iedereen wil nog iets van boord halen.',
+    outro: 'De Zwarte Meeuw ligt voorgoed aan de ketting, en het laatste woord in haar logboek is van jou.',
+    briefing: 'Het laatste deel, en het zwaarste. Zegt een verklaring dat iemand niet in de kombuis was, streep dan in één keer de hele kombuis voor die persoon weg. Dat scheelt een hoop getel.',
+    cases: [
+    { title: 'De havenmeester', story: 'De havenmeester stelde geen vragen. Hij schreef wel alles op.', item: '📗 Havenregister', difficulty: 'moeilijk', seed: 77101 },
+    { title: 'De laatste lading', story: 'De lading ging van boord. Eén kist woog meer dan op de lijst stond.', item: '🪝 Laadhaak', difficulty: 'meester', seed: 77198 },
+    { title: 'Saffron pakt haar messen', story: 'Twaalf messen gingen mee in haar tas. Aan boord had ze er elf.', item: '👝 Messenrol', difficulty: 'meester', seed: 77295 },
+    { title: 'De koper', story: 'Een koper bood goud voor de Meeuw. Hij wilde alleen het ruim zien.', item: '📑 Koopakte', difficulty: 'meester', seed: 77392 },
+    { title: 'Thorne ontlaadt het kanon', story: 'Het kanon moest van boord. Het was nog geladen.', item: '🧨 Lont', difficulty: 'meester', seed: 77489 },
+    { title: 'Het laatste anker', story: 'Het anker viel voor de laatste keer. Er hing iets aan de ketting.', item: '⛓️ Ankerketting', difficulty: 'meester', seed: 77586 },
+    { title: 'De ratten vertrekken', story: 'De ratten gingen als eersten van boord. Ze wisten iets.', item: '🪤 Rattenval', difficulty: 'meester', seed: 77683 },
+    { title: 'De laatste bladzijde', story: 'In het logboek van de Meeuw is nog één bladzijde leeg.', item: '📕 Gesloten logboek', difficulty: 'meester', seed: 77780 }
   ]},
 
   // ── Grand Hotel Aurora, verder ──────────────────────────────
@@ -321,6 +377,34 @@ const CAMPAIGN = [
     { title: 'Het licht in kamer 404', story: 'De kamer die niet bestond, brandde licht.', item: '💡 Peertje',                          difficulty: 'moeilijk',  seed: 59683 },
     { title: 'Aurora dooft',           story: 'De hoofdschakelaar. De laatste hand.', item: '🔌 Hoofdschakelaar',                       difficulty: 'moeilijk',  seed: 59780 }
   ]},
+  { key: 'hotel-7', theme: 'hotel', part: 7, icon: '🔨', title: 'Deel VII · De veiling',
+    intro: 'Een maand later gaat alles van Aurora onder de hamer, van de piano tot de laatste lepel. De oude gasten zitten op de eerste rij.',
+    outro: 'De hamer valt voor het laatst: alles is verkocht, behalve het gebouw zelf.',
+    briefing: 'Grotere plattegronden, vagere verklaringen: deze veiling is geen koopje. Zet met het potlood een stipje op elk vakje waar een verdachte nog kan staan. Moeten twee verdachten in dezelfde rij staan, vergelijk dan hun stipjes: een rij waar maar één van de twee een stipje heeft, valt af.',
+    cases: [
+    { title: 'De kijkdag', story: 'Op de kijkdag hing aan alles een kaartje. Aan één kaartje hing niets.', item: '🏷️ Kavelkaartje', difficulty: 'moeilijk', seed: 69101 },
+    { title: 'De catalogus', story: 'Kavel 77 stond twee keer in de catalogus. Er was maar één kavel 77.', item: '📕 Veilingcatalogus', difficulty: 'moeilijk', seed: 69198 },
+    { title: 'Het eerste bod', story: 'Het eerste bod kwam van een lege stoel.', item: '🪧 Biedbordje', difficulty: 'meester', seed: 69295 },
+    { title: 'Bestek per kilo', story: 'Het zilver werd per kilo geveild. Er ontbrak een kilo.', item: '🍴 Hotelbestek', difficulty: 'moeilijk', seed: 69392 },
+    { title: 'Pianist Felix biedt', story: 'Hij bood op zijn oude piano. Iemand bood hoger.', item: '🪑 Pianokruk', difficulty: 'meester', seed: 69489 },
+    { title: 'Zes letters', story: 'Op de gevel stond AURORA in zes letters. Er hingen er nog vijf.', item: '🅰️ Gevelletter', difficulty: 'moeilijk', seed: 69586 },
+    { title: 'De draaideur', story: 'De draaideur was al verkocht. Om middernacht draaide hij nog één keer.', item: '🔄 Draaideur', difficulty: 'meester', seed: 69683 },
+    { title: 'De laatste kavel', story: 'De laatste kavel stond niet in de catalogus. Toch werd erop geboden.', item: '🔨 Veilinghamer', difficulty: 'meester', seed: 69780 }
+  ]},
+  { key: 'hotel-8', theme: 'hotel', part: 8, icon: '🏗️', title: 'Deel VIII · De sloop',
+    intro: 'Maandag komt de sloopkogel. Het weekend ervoor lopen de oude gasten nog één keer door de lege gangen.',
+    outro: 'De sloopkogel zwaait, het stof daalt neer, en het laatste dossier van Aurora gaat dicht.',
+    briefing: 'Nog één keer Aurora, met bijna alleen de zwaarste zaken. Een palm is een slechte schuilplaats: wie direct naast een palm stond, kan maar op een paar vakjes staan. Zoek eerst die verklaringen over meubels en begin daar.',
+    cases: [
+    { title: 'De vergunning', story: 'De sloop mocht vanaf maandag. Iemand begon op zondag.', item: '📃 Sloopvergunning', difficulty: 'moeilijk', seed: 79101 },
+    { title: 'Butler Winslow met helm', story: 'Veertig jaar droeg hij een strik. Vandaag een bouwhelm.', item: '⛑️ Bouwhelm', difficulty: 'meester', seed: 79198 },
+    { title: 'De oude lift', story: 'In de liftschacht hing een gastenkaartje. Eén naam was doorgestreept.', item: '🛗 Liftknop', difficulty: 'meester', seed: 79295 },
+    { title: 'De hijskraan', story: 'Vanuit de kraan zag je elk raam. In één raam stond iemand.', item: '🏗️ Kraanhaak', difficulty: 'meester', seed: 79392 },
+    { title: 'De laatste wals', story: 'Het parket was verkocht. Toch stonden er danspassen in het stof.', item: '🪩 Spiegelbol', difficulty: 'meester', seed: 79489 },
+    { title: 'De eerste steen', story: 'In de eerste steen zat een tijdcapsule. Iemand was er eerder bij.', item: '🫙 Tijdcapsule', difficulty: 'meester', seed: 79586 },
+    { title: 'Kamer 404 gevonden', story: 'De slopers vonden kamer 404. De wekker tikte nog.', item: '⏰ Tikkende wekker', difficulty: 'meester', seed: 79683 },
+    { title: 'Het laatste uur', story: 'Aurora stond nog één uur overeind. Genoeg voor de laatste vraag.', item: '🧱 Laatste baksteen', difficulty: 'meester', seed: 79780 }
+  ]},
 
   // ── Station Orion, verder ───────────────────────────────────
   { key: 'ruimte-4', theme: 'ruimte', part: 4, icon: '🔘', title: 'Deel IV · Orion herstart',
@@ -364,6 +448,34 @@ const CAMPAIGN = [
     { title: 'Het laatste bericht naar huis', story: 'Het bericht was kort. Het was niet van de commandant.', item: '📨 Laatste bericht', difficulty: 'moeilijk', seed: 53586 },
     { title: 'Koppeling om 04:00',     story: 'De capsule wachtte. Eén bemanningslid ook, ergens anders.', item: '⏱️ Stopwatch',        difficulty: 'moeilijk',  seed: 53683 },
     { title: 'Orion verbrandt',        story: 'De laatste vraag boven de laatste dampkring.', item: '🔥 Hitteschild',                    difficulty: 'moeilijk',  seed: 53780 }
+  ]},
+  { key: 'ruimte-7', theme: 'ruimte', part: 7, icon: '🔒', title: 'Deel VII · Quarantaine',
+    intro: 'De capsule is geland en de bemanning gaat in quarantaine. Drie weken, in een nagebouwde Orion in een hangar op aarde.',
+    outro: 'Op de dag dat de deuren opengaan, vist een schip iets oranjes uit de oceaan.',
+    briefing: 'Terug op aarde, en nog steeds achter een sluis. Sommige zaken zijn nu op meesterniveau: een groter bord, minder directe verklaringen. Wie alleen was in een module, zegt ook iets over zijn buren: wie direct naast hem stond, stond aan de andere kant van een muur.',
+    cases: [
+    { title: 'Orion op aarde', story: 'Elke module nagebouwd tot op de schroef. Eén ervan zat los.', item: '🔩 Losse schroef', difficulty: 'moeilijk', seed: 63101 },
+    { title: 'Bioloog Wren streept af', story: 'Ze streepte elke dag af. Gisteren had iemand het voor haar gedaan.', item: '📆 Aftelkalender', difficulty: 'moeilijk', seed: 63198 },
+    { title: 'Dr. Nkemelu prikt', story: 'Acht buisjes bloed. Op één ervan stond geen naam.', item: '🩸 Bloedbuisje', difficulty: 'meester', seed: 63295 },
+    { title: 'Bezoek achter glas', story: 'Iedereen zwaaide naar de familie. Eén iemand keek de andere kant op.', item: '🪟 Kijkraam', difficulty: 'moeilijk', seed: 63392 },
+    { title: 'Eten door het luik', story: 'Drie maaltijden per dag door het luik. Eén kwam onaangeroerd terug.', item: '🍱 Maaltijdbak', difficulty: 'meester', seed: 63489 },
+    { title: 'Weer zwaartekracht', story: 'Na een halfjaar zweven viel alles om. Ook een alibi.', item: '🥤 Omgevallen beker', difficulty: 'moeilijk', seed: 63586 },
+    { title: 'Het luchtfilter', story: 'Het filter ving alles op. Ook een haar die er niet hoorde.', item: '🌀 Luchtfilter', difficulty: 'meester', seed: 63683 },
+    { title: 'Dag eenentwintig', story: 'De deuren gingen open. Eén polsbandje lag nog op een bed.', item: '📛 Polsbandje', difficulty: 'meester', seed: 63780 }
+  ]},
+  { key: 'ruimte-8', theme: 'ruimte', part: 8, icon: '🌊', title: 'Deel VIII · De vluchtrecorder',
+    intro: 'Niet alles van Orion is verbrand. De vluchtrecorder wordt afgespeeld in de nagebouwde Orion, module voor module.',
+    outro: 'De recorder zwijgt, het dossier Orion gaat dicht, en deze keer blijft het dicht.',
+    briefing: 'Het laatste deel van Orion, bijna alles op meesterniveau. Moeten twee mensen in dezelfde module staan, zoek dan een module waar ze allebei passen, met al hun andere verklaringen erbij. Vaak blijft er maar één over.',
+    cases: [
+    { title: 'Uit de oceaan', story: 'Een oranje doos van de zeebodem. Hij had alles opgenomen.', item: '🟧 Oranje doos', difficulty: 'moeilijk', seed: 73101 },
+    { title: 'Minuut nul', story: 'De opname begon met stilte. Toen ging er een luik open.', item: '🎧 Koptelefoon', difficulty: 'meester', seed: 73198 },
+    { title: 'Ingenieur Vega luistert', story: 'Ze kende elk geluid aan boord. Dit sissen kende ze niet.', item: '⚙️ Drukventiel', difficulty: 'meester', seed: 73295 },
+    { title: 'Twee stemmen', story: 'Twee stemmen in de machinekamer. Volgens het rooster was daar niemand.', item: '🗣️ Stemafdruk', difficulty: 'meester', seed: 73392 },
+    { title: 'Officier Paz spoelt terug', story: 'Ze spoelde drie keer terug. Daarna zei ze niets meer.', item: '⏪ Terugspoelknop', difficulty: 'meester', seed: 73489 },
+    { title: 'Elf seconden stilte', story: 'Om 04:00 viel de opname elf seconden weg. Niet vanzelf.', item: '🔇 Dempknop', difficulty: 'meester', seed: 73586 },
+    { title: 'Botanist Fern zwijgt', story: 'Haar stem stond op elke opname. Op de laatste niet.', item: '🪴 Stekje', difficulty: 'meester', seed: 73683 },
+    { title: 'De laatste opname', story: 'De laatste minuut voor het loskoppelen. Iemand fluisterde een naam.', item: '🗂️ Dossier Orion', difficulty: 'meester', seed: 73780 }
   ]},
 
   // ── Het Museum ──────────────────────────────────────────────
@@ -451,6 +563,34 @@ const CAMPAIGN = [
     { title: 'Curator Ellery kiest',      story: 'Hij mocht één ding redden. Hij koos verkeerd.', item: '⚖️ Weegschaal',                       difficulty: 'moeilijk',  seed: 51683 },
     { title: 'Vlierbeek, het einde',   story: 'De laatste zaal. De laatste naam.', item: '🗝️ Laatste sleutel',                             difficulty: 'moeilijk',  seed: 51780 }
   ]},
+  { key: 'museum-7', theme: 'museum', part: 7, icon: '🖼️', title: 'Deel VII · De bruikleen',
+    intro: 'Het museum is weer open, alsof er nooit een deur is geweest. Uit Florence komt een beroemd schilderij in bruikleen, verzekerd voor meer dan het gebouw.',
+    outro: 'Het schilderij gaat terug naar Florence, en de verzekeraar zegt de polis op.',
+    briefing: 'Vanaf hier zitten er meesterzaken tussen: groter bord, minder houvast. Delen twee mensen een rij of een kolom, zet de een dan in potlood neer en kijk waar de ander nog kan. Kan de ander nergens heen, dan stond de een daar niet.',
+    cases: [
+    { title: 'De kist uit Florence', story: 'Volgens het label zat er één schilderij in. De kist woog meer.', item: '🏷️ Transportlabel', difficulty: 'moeilijk', seed: 61101 },
+    { title: 'Vier schroeven', story: 'Vier schroeven hielden de lijst aan de muur. Er zaten er nog drie.', item: '🔩 Ophangschroef', difficulty: 'moeilijk', seed: 61198 },
+    { title: 'Vijftig lux', story: 'Het licht mocht niet boven vijftig lux. Iemand had het hoger gezet.', item: '🔆 Luxmeter', difficulty: 'meester', seed: 61295 },
+    { title: 'Restaurateur Iris twijfelt', story: 'Onder de microscoop was de verf te jong voor het schilderij.', item: '🔬 Verfmonster', difficulty: 'moeilijk', seed: 61392 },
+    { title: 'De persfoto', story: 'Op de persfoto stond een hand te veel.', item: '📸 Persfoto', difficulty: 'meester', seed: 61489 },
+    { title: 'De audiotour', story: 'Stop veertien noemde een naam die op geen enkel bordje stond.', item: '🎧 Audiogids', difficulty: 'moeilijk', seed: 61586 },
+    { title: 'Professor Adebayo herkent het', story: 'Hij kende het schilderij van een oude dia, gemaakt in Vlierbeek.', item: '🎞️ Oude dia', difficulty: 'meester', seed: 61683 },
+    { title: 'Terug naar Florence', story: 'De kist ging dicht. Wat erin ging, was niet wat eruit kwam.', item: '🪛 Schroevendraaier', difficulty: 'meester', seed: 61780 }
+  ]},
+  { key: 'museum-8', theme: 'museum', part: 8, icon: '🎂', title: 'Deel VIII · Het jubileum',
+    intro: 'Zonder verzekering viert Vlierbeek toch zijn honderdste verjaardag. Op het feest komt het echte schilderij thuis, na vijftig jaar weg.',
+    outro: 'Het schilderij hangt weer waar het hoort, en het dossier Vlierbeek gaat voorgoed dicht.',
+    briefing: 'Bijna elke zaak is nu een meesterzaak; in een museum past dat. Zit je vast, vraag je dan af welke verklaring je nog niet hebt gebruikt. Vink af wat je gebruikt, dan zie je het in één oogopslag.',
+    cases: [
+    { title: 'De thuiskomst', story: 'Na vijftig jaar hing het schilderij weer thuis. Op dezelfde spijkers.', item: '🫧 Noppenfolie', difficulty: 'moeilijk', seed: 71101 },
+    { title: 'De vlag halfstok', story: 'De vlag op het dak hing halfstok. Al voordat het feest begon.', item: '🚩 Dakvlag', difficulty: 'meester', seed: 71198 },
+    { title: 'De enige bewaker', story: 'Zonder verzekering was Gus de hele beveiliging. Hij gaapte één keer.', item: '🍬 Pepermunt', difficulty: 'meester', seed: 71295 },
+    { title: 'De jubileumpenning', story: 'Elke gast kreeg een penning. Eén penning had een ander jaartal.', item: '🏅 Jubileumpenning', difficulty: 'meester', seed: 71392 },
+    { title: 'De fanfare', story: 'De fanfare speelde het jubileumlied. Eén trompet bleef stil.', item: '🎺 Trompet', difficulty: 'meester', seed: 71489 },
+    { title: 'Curator Ellery leest voor', story: 'Hij las de namen van alle conservators voor. Eén naam sloeg hij over.', item: '📘 Jubileumboek', difficulty: 'meester', seed: 71586 },
+    { title: 'Gids Margot vertelt', story: 'Ze vertelde honderd jaar in tien minuten. Eén nacht liet ze weg.', item: '📏 Aanwijsstok', difficulty: 'meester', seed: 71683 },
+    { title: 'Vlierbeek wordt honderd', story: 'Honderd jaar oud om middernacht. De laatste vraag is de oudste.', item: '🖼️ Het origineel', difficulty: 'meester', seed: 71780 }
+  ]},
 
   // ── De Nachttrein ───────────────────────────────────────────
   { key: 'trein', theme: 'trein', part: 1, icon: '🚂', title: 'Deel I · Vertrek',
@@ -536,6 +676,34 @@ const CAMPAIGN = [
     { title: 'De bagagewagen',         story: 'Tussen de koffers lag meer dan bagage.', item: '🏷️ Bagagelabel',                            difficulty: 'moeilijk',  seed: 58586 },
     { title: 'Stoker Jules stookt niet meer', story: 'De ketel was koud. Iemand had het vuur gedoofd.', item: '🧯 Emmer water',             difficulty: 'moeilijk',  seed: 58683 },
     { title: 'Eindstation',            story: 'De trein stopt. De laatste vraag.', item: '🏁 Eindbord',                                     difficulty: 'moeilijk',  seed: 58780 }
+  ]},
+  { key: 'trein-7', theme: 'trein', part: 7, icon: '🛤️', title: 'Deel VII · De remise',
+    intro: 'De sloop wordt uitgesteld tot het voorjaar. De trein overwintert in een remise, en \'s nachts krijgt hij bezoek.',
+    outro: 'In het voorjaar koopt een onbekende de trein, voor één laatste rit naar Wenen.',
+    briefing: 'De remise is groter dan hij lijkt, en sommige zaken ook: negen bij negen vakjes. "Niet direct naast" streept maar vier vakjes weg. Bewaar die verklaringen voor het laatst.',
+    cases: [
+    { title: 'Licht zonder stroom', story: 'Er brandde licht in de restauratiewagen. De stroom was eraf.', item: '🔋 Accu', difficulty: 'moeilijk', seed: 68101 },
+    { title: 'Het beslapen bed', story: 'De trein stond al weken leeg. Het bed in coupé A was beslapen.', item: '🧦 Wollen sok', difficulty: 'moeilijk', seed: 68198 },
+    { title: 'Goochelaar Orlando oefent', story: 'Hij oefende zijn verdwijntruc in de lege trein. Er keek iemand.', item: '🪄 Toverstaf', difficulty: 'meester', seed: 68295 },
+    { title: 'De wissel', story: 'Iemand zette \'s nachts de wissel om. De trein stond nog binnen.', item: '🎚️ Wisselhendel', difficulty: 'moeilijk', seed: 68392 },
+    { title: 'Stoker Jules ruikt rook', story: 'De ketel was al weken koud. Vannacht niet.', item: '♨️ Drukmeter', difficulty: 'meester', seed: 68489 },
+    { title: 'Weduwe Duval zoekt', story: 'Ze kwam de tweede koffer halen. Iemand was haar voor geweest.', item: '🪡 Hoedenspeld', difficulty: 'moeilijk', seed: 68586 },
+    { title: 'IJsbloemen op de ruit', story: 'In de ijsbloemen op de ruit stond een naam. De helft ervan.', item: '🪟 Bevroren ruit', difficulty: 'meester', seed: 68683 },
+    { title: 'Te koop', story: 'Te koop: één nachttrein, twaalf wagons. Er kwam één reactie.', item: '📰 Krantenadvertentie', difficulty: 'meester', seed: 68780 }
+  ]},
+  { key: 'trein-8', theme: 'trein', part: 8, icon: '🌄', title: 'Deel VIII · Aankomst',
+    intro: 'De trein rijdt nog één keer de oude route naar Wenen. Alle reizigers van toen hebben een kaartje gekregen, zonder afzender.',
+    outro: 'In Wenen rolt de nachttrein een museum in en blijft daar voorgoed staan.',
+    briefing: 'De laatste rit, en bijna alles op meesterniveau. Tel in elke wagon de vakjes zonder meubel: zoveel mensen passen erin, niet meer. Een kleine wagon zit snel vol.',
+    cases: [
+    { title: 'De uitnodiging', story: 'Iedereen kwam. Niemand gaf toe dat hij nieuwsgierig was.', item: '📩 Blanco envelop', difficulty: 'moeilijk', seed: 78101 },
+    { title: 'Weer die tunnel', story: 'Om negen uur weer die tunnel. Iedereen hield zijn adem in.', item: '🕰️ Pendule', difficulty: 'meester', seed: 78198 },
+    { title: 'Eerste klas', story: 'De barones reisde eerste klas. Deze trein had geen eerste klas.', item: '🦊 Bontstola', difficulty: 'meester', seed: 78295 },
+    { title: 'De nieuwe conducteur', story: 'Iemand knipte de kaartjes. De trein had geen conducteur.', item: '🕳️ Kniptang', difficulty: 'meester', seed: 78392 },
+    { title: 'Actrice Lola speelt zichzelf', story: 'Ze speelde de avond van toen na. Iets te precies.', item: '💄 Lippenstift', difficulty: 'meester', seed: 78489 },
+    { title: 'De negende reiziger', story: 'Acht kaartjes verstuurd. Negen mensen aan boord.', item: '👔 Stropdas', difficulty: 'meester', seed: 78586 },
+    { title: 'Verpleegster Hedda blijft op', story: 'Ze bleef de hele nacht op in de gang. Iemand kwam er toch langs.', item: '🧩 Puzzelboekje', difficulty: 'meester', seed: 78683 },
+    { title: 'Wenen, eindelijk', story: 'Wie de kaartjes stuurde, zat zelf ook in de trein.', item: '🚉 Perronkaartje', difficulty: 'meester', seed: 78780 }
   ]},
 
   // ── Het Circus ──────────────────────────────────────────────
@@ -623,6 +791,34 @@ const CAMPAIGN = [
     { title: 'Kaartverkoopster Dottie sluit af', story: 'Ze deed het licht uit. Iemand deed het weer aan.', item: '🔦 Kassalamp',                difficulty: 'moeilijk',  seed: 52683 },
     { title: 'De tent gaat dicht',     story: 'De laatste vraag, onder het laatste doek.', item: '🎪 Tentdoek',                             difficulty: 'moeilijk',  seed: 52780 }
   ]},
+  { key: 'circus-7', theme: 'circus', part: 7, icon: '🏚️', title: 'Deel VII · Het winterkwartier',
+    intro: 'De tent ligt opgevouwen in de schuur van het winterkwartier, een boerderij buiten de stad. Iedereen wacht op een koper en houdt de anderen in de gaten.',
+    outro: 'Er komt geen koper, dus speelt het circus nog één keer: \'s nachts, in de schuur.',
+    briefing: 'Het winterkwartier is groot en de verklaringen zeggen weinig. Markeer eerst in elke ruimte welke vakjes in een hoek, tegen een muur of in het midden liggen. Een ruimte van twee vakjes breed heeft geen midden: wie "in het midden" staat, staat ergens anders.',
+    cases: [
+    { title: 'De achtste wagen', story: 'Zeven wagens reden de schuur in. \'s Ochtends stonden er acht.', item: '🛞 Wagenwiel', difficulty: 'moeilijk', seed: 62101 },
+    { title: 'De windhaan', story: 'De windhaan op de schuur draaide. Er stond geen wind.', item: '🐓 Windhaan', difficulty: 'moeilijk', seed: 62198 },
+    { title: 'Sterke Man Boris zaagt hout', story: 'Hij zaagde hout voor de hele winter. In één nacht.', item: '🪚 Houtzaag', difficulty: 'meester', seed: 62295 },
+    { title: 'Het wak in de vijver', story: 'De vijver was dichtgevroren. Op één plek na.', item: '⛸️ Schaats', difficulty: 'moeilijk', seed: 62392 },
+    { title: 'Clown Pippo zonder schmink', story: 'Zonder schmink herkende niemand hem. Dat kwam goed uit.', item: '💄 Schminkdoos', difficulty: 'meester', seed: 62489 },
+    { title: 'Circus te koop', story: 'De advertentie stond in de krant. Niemand had hem geplaatst.', item: '🗞️ Krantenknipsel', difficulty: 'moeilijk', seed: 62586 },
+    { title: 'Dierenarts Nadia blijft', story: 'Haar werk zat erop. Toch bleef ze nog een week.', item: '💼 Dokterstas', difficulty: 'meester', seed: 62683 },
+    { title: 'De koper belt af', story: 'De koper belde af. Op het erf wist iemand het al eerder.', item: '☎️ Telefoonhoorn', difficulty: 'meester', seed: 62780 }
+  ]},
+  { key: 'circus-8', theme: 'circus', part: 8, icon: '🏮', title: 'Deel VIII · De nachtvoorstelling',
+    intro: 'Het dorp komt kijken naar één voorstelling in de schuur, bij lantaarnlicht. De piste is van stro, de artiesten zijn dezelfde.',
+    outro: 'Het laatste applaus sterft weg in de schuur, en van Circus Zano blijft alleen jouw dossier over.',
+    briefing: 'Bijna elke zaak in dit deel is van het zwaarste soort. Zit je vast, zet dan iemand in potlood op één mogelijke plek en redeneer vanaf daar verder. Breekt dat een verklaring, dan is die plek fout; een fout in potlood kost niets.',
+    cases: [
+    { title: 'De generale repetitie', story: 'Bij de repetitie deed een act mee die niet op het programma stond.', item: '📑 Programmaboekje', difficulty: 'moeilijk', seed: 72101 },
+    { title: 'De spreekstalmeester', story: 'Iemand moest de avond aankondigen. Er stonden twee mensen klaar.', item: '📢 Megafoon', difficulty: 'meester', seed: 72198 },
+    { title: 'Jongleur Teo met fakkels', story: 'Vijf fakkels in een schuur vol stro. Hij ving er vier.', item: '🔥 Jongleerfakkel', difficulty: 'meester', seed: 72295 },
+    { title: 'De suikerspin', story: 'De suikerspinmachine draaide de hele avond. Niemand stond erachter.', item: '🍭 Suikerspin', difficulty: 'meester', seed: 72392 },
+    { title: 'De pauze', story: 'De pauze duurde tien minuten. Voor één artiest twintig.', item: '🔔 Pauzebel', difficulty: 'meester', seed: 72489 },
+    { title: 'Trapezeartiest Mira klimt', story: 'Ze hing haar trapeze aan een balk. De balk was half doorgezaagd.', item: '🪜 Touwladder', difficulty: 'meester', seed: 72586 },
+    { title: 'Kaartverkoopster Dottie verkoopt', story: 'De toegang was gratis. Toch verkocht ze kaartjes.', item: '💶 Wisselgeld', difficulty: 'meester', seed: 72683 },
+    { title: 'Staande ovatie', story: 'Iedereen stond op om te klappen. Eén iemand bleef zitten.', item: '🪧 Circusaffiche', difficulty: 'meester', seed: 72780 }
+  ]},
 
   // ── De Skihut ───────────────────────────────────────────────
   { key: 'skihut', theme: 'skihut', part: 1, icon: '🏔️', title: 'Deel I · De lawine',
@@ -708,7 +904,35 @@ const CAMPAIGN = [
     { title: 'De sneeuwman',           story: 'De sneeuwman stond er gisteren niet. Iemand had tijd gehad.', item: '⛄ Sneeuwman',         difficulty: 'moeilijk',  seed: 54586 },
     { title: 'Skilerares Astrid wacht', story: 'Ze wachtte bij de lift. De lift kwam niet.', item: '🚡 Liftkaart',                           difficulty: 'moeilijk',  seed: 54683 },
     { title: 'De laatste afdaling',    story: 'De berg af. De laatste vraag.', item: '🏁 Finishvlag',                                       difficulty: 'moeilijk',  seed: 54780 }
-  ]}
+  ]},
+  { key: 'skihut-7', theme: 'skihut', part: 7, icon: '🍂', title: 'Deel VII · Buiten het seizoen',
+    intro: 'In de herfst staat de hut leeg. Toch brandt er licht, en vijf oude gasten hebben nog een sleutel.',
+    outro: 'De eerste sneeuw valt en sluit de weg, net als de eerste keer.',
+    briefing: 'Het bord wordt groter en de verklaringen worden zuiniger. Staat in het rapport dat een ruimte leeg was, dan valt dat hele blok vakjes af voor alle vijf, ook voor wie verder nergens genoemd wordt. Zo is een lege hut toch nog ergens goed voor.',
+    cases: [
+    { title: 'Licht achter de luiken', story: 'Alle luiken zaten dicht. Achter één ervan brandde licht.', item: '🪔 Olielamp', difficulty: 'moeilijk', seed: 64101 },
+    { title: 'De reservesleutels', story: 'Er bestonden vier reservesleutels. Binnen zaten vijf gasten.', item: '🔑 Reservesleutel', difficulty: 'moeilijk', seed: 64198 },
+    { title: 'Lakens over de meubels', story: 'Elk meubel lag onder een laken. Onder één ervan zat geen meubel.', item: '🛋️ Stoflaken', difficulty: 'meester', seed: 64295 },
+    { title: 'Kok Luigi plukt paddenstoelen', story: 'Hij plukte een volle mand. Eén soort stond niet in zijn boek.', item: '🍄 Paddenstoel', difficulty: 'moeilijk', seed: 64392 },
+    { title: 'De muizenval', story: 'De val in de voorraadkamer was dichtgeklapt. Zonder muis.', item: '🪤 Muizenval', difficulty: 'meester', seed: 64489 },
+    { title: 'Toeriste Hana schrijft', story: 'Haar kaart kwam uit de hut. De hut was al maanden dicht.', item: '🏞️ Ansichtkaart', difficulty: 'moeilijk', seed: 64586 },
+    { title: 'De stille kabelbaan', story: 'In de herfst reed de kabelbaan niet. Toch hing er een gondel boven.', item: '🚠 Gondel', difficulty: 'meester', seed: 64683 },
+    { title: 'De eerste sneeuw', story: 'De eerste sneeuw viel om twaalf uur. Eén spoor liep naar de deur.', item: '🥾 Bergschoen', difficulty: 'meester', seed: 64780 }
+  ]},
+  { key: 'skihut-8', theme: 'skihut', part: 8, icon: '🌼', title: 'Deel VIII · Edelweiss',
+    intro: 'De weg is dicht en de hut is vol. Om de kachel zitten dezelfde gezichten als op de eerste avond.',
+    outro: 'Van Dam klapt zijn notitieboek dicht, knikt naar jou en loopt zonder haast door de verse sneeuw naar het dal.',
+    briefing: 'De laatste zaken, bijna allemaal op het grote bord. Blijf niet hangen bij wie het lastigst is: zet eerst de anderen neer, dan blijft er voor de laatste vaak maar één vakje over. Zo heb ik het altijd gedaan.',
+    cases: [
+    { title: 'Vaste plekken', story: 'Iedereen nam dezelfde plek als op de eerste avond. Op één na.', item: '📇 Tafelkaartje', difficulty: 'moeilijk', seed: 74101 },
+    { title: 'De houtstapel', story: 'Hout voor de hele winter. Gehakt in één middag, door niemand.', item: '🪓 Bijl', difficulty: 'meester', seed: 74198 },
+    { title: 'Een bladzijde te weinig', story: 'Elke winter tekende iedereen het gastenboek. Eén winter ontbrak.', item: '📄 Losse bladzijde', difficulty: 'meester', seed: 74295 },
+    { title: 'De bevroren leiding', story: 'Om drie uur bevroor de leiding. Iemand had een raam opengezet.', item: '🚰 Bevroren kraan', difficulty: 'meester', seed: 74392 },
+    { title: 'Jongen Kai blijft op', story: 'Dit jaar mocht hij opblijven. Hij zag meer dan hij wilde.', item: '🧣 Wollen sjaal', difficulty: 'meester', seed: 74489 },
+    { title: 'De lawinepieper', story: 'De pieper piepte in de kelder. Daar lag geen sneeuw.', item: '📟 Lawinepieper', difficulty: 'meester', seed: 74586 },
+    { title: 'Berggids Freya voorspelt', story: 'Ze voorspelde een lawine, tot op het uur. Ze zei niet hoe.', item: '⛰️ Hoogtemeter', difficulty: 'meester', seed: 74683 },
+    { title: 'Edelweiss', story: 'Waar het begon, bij de kachel. Daar eindigt het ook.', item: '🌼 Gedroogde edelweiss', difficulty: 'meester', seed: 74780 }
+  ]},
 ];
 
 // Eindeloos archief: genummerde dossiers, thema wisselt per dossier,

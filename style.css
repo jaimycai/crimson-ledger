@@ -370,7 +370,7 @@ h3 { font-size: 1.15rem; }
 /* ── Moeilijkheidsselector ──────────────────────────────────── */
 .difficulty-selector {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);   /* vier niveaus: twee bij twee op de telefoon, op een rij als er plek is */
   gap: 8px;
 }
 .difficulty-btn {
@@ -2523,3 +2523,4 @@ button, select, input, textarea { font-family: inherit; }
 :root[data-frame="goud"] :is(.sus-ava, .bclue-ava, .accuse-ava, .accuse-ava-sm, .results-solution-ava, .part-ava) { border-color: #D4A64A; box-shadow: 0 0 0 1.5px #D4A64A; }
 :root[data-frame="zilver"] :is(.sus-ava, .bclue-ava, .accuse-ava, .accuse-ava-sm, .results-solution-ava, .part-ava) { border-color: #A9B2BC; box-shadow: 0 0 0 1.5px #A9B2BC; }
 :root[data-frame="crimson"] :is(.sus-ava, .bclue-ava, .accuse-ava, .accuse-ava-sm, .results-solution-ava, .part-ava) { border-color: #8B2E1C; box-shadow: 0 0 0 1.5px #8B2E1C; }
+@media (min-width: 560px) { .difficulty-selector { grid-template-columns: repeat(4, 1fr); } }

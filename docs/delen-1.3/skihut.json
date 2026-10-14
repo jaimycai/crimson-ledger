@@ -1,0 +1,77 @@
+{
+  "theme": "skihut",
+  "parts": [
+    {
+      "part": 7,
+      "icon": "🍂",
+      "nl": {
+        "title": "Deel VII · Buiten het seizoen",
+        "intro": "In de herfst staat de hut leeg. Toch brandt er licht, en vijf oude gasten hebben nog een sleutel.",
+        "outro": "De eerste sneeuw valt en sluit de weg, net als de eerste keer.",
+        "briefing": "Het bord wordt groter en de verklaringen worden zuiniger. Staat in het rapport dat een ruimte leeg was, dan valt dat hele blok vakjes af voor alle vijf, ook voor wie verder nergens genoemd wordt. Zo is een lege hut toch nog ergens goed voor.",
+        "cases": [
+          { "title": "Licht achter de luiken", "story": "Alle luiken zaten dicht. Achter één ervan brandde licht.", "item": "🪔 Olielamp" },
+          { "title": "De reservesleutels", "story": "Er bestonden vier reservesleutels. Binnen zaten vijf gasten.", "item": "🔑 Reservesleutel" },
+          { "title": "Lakens over de meubels", "story": "Elk meubel lag onder een laken. Onder één ervan zat geen meubel.", "item": "🛋️ Stoflaken" },
+          { "title": "Kok Luigi plukt paddenstoelen", "story": "Hij plukte een volle mand. Eén soort stond niet in zijn boek.", "item": "🍄 Paddenstoel" },
+          { "title": "De muizenval", "story": "De val in de voorraadkamer was dichtgeklapt. Zonder muis.", "item": "🪤 Muizenval" },
+          { "title": "Toeriste Hana schrijft", "story": "Haar kaart kwam uit de hut. De hut was al maanden dicht.", "item": "🏞️ Ansichtkaart" },
+          { "title": "De stille kabelbaan", "story": "In de herfst reed de kabelbaan niet. Toch hing er een gondel boven.", "item": "🚠 Gondel" },
+          { "title": "De eerste sneeuw", "story": "De eerste sneeuw viel om twaalf uur. Eén spoor liep naar de deur.", "item": "🥾 Bergschoen" }
+        ]
+      },
+      "en": {
+        "title": "Part VII · Off Season",
+        "intro": "In autumn the lodge stands empty. Yet a light is on, and five old guests still have a key.",
+        "outro": "The first snow falls and closes the road, just like the first time.",
+        "briefing": "The board gets bigger and the statements get stingier. If the report says a room was empty, that whole block of squares is gone for all five, including anyone who is not mentioned anywhere else. So an empty lodge is good for something after all.",
+        "cases": [
+          { "title": "Light Behind the Shutters", "story": "Every shutter was closed. Behind one of them, a light was on.", "item": "🪔 Oil lamp" },
+          { "title": "The Spare Keys", "story": "There were four spare keys. Inside sat five guests.", "item": "🔑 Spare key" },
+          { "title": "Sheets over the Furniture", "story": "Every piece of furniture lay under a sheet. Under one, there was no furniture.", "item": "🛋️ Dust sheet" },
+          { "title": "Cook Luigi Picks Mushrooms", "story": "He picked a full basket. One kind was not in his book.", "item": "🍄 Mushroom" },
+          { "title": "The Mousetrap", "story": "The trap in the pantry had snapped shut. No mouse.", "item": "🪤 Mousetrap" },
+          { "title": "Tourist Hana Writes Home", "story": "Her postcard came from the lodge. The lodge had been closed for months.", "item": "🏞️ Postcard" },
+          { "title": "The Silent Cable Car", "story": "In autumn the cable car did not run. Yet a gondola hung at the top.", "item": "🚠 Gondola" },
+          { "title": "The First Snow", "story": "The first snow fell at midnight. One set of tracks led to the door.", "item": "🥾 Hiking boot" }
+        ]
+      }
+    },
+    {
+      "part": 8,
+      "icon": "🌼",
+      "nl": {
+        "title": "Deel VIII · Edelweiss",
+        "intro": "De weg is dicht en de hut is vol. Om de kachel zitten dezelfde gezichten als op de eerste avond.",
+        "outro": "Van Dam klapt zijn notitieboek dicht, knikt naar jou en loopt zonder haast door de verse sneeuw naar het dal.",
+        "briefing": "De laatste zaken, bijna allemaal op het grote bord. Blijf niet hangen bij wie het lastigst is: zet eerst de anderen neer, dan blijft er voor de laatste vaak maar één vakje over. Zo heb ik het altijd gedaan.",
+        "cases": [
+          { "title": "Vaste plekken", "story": "Iedereen nam dezelfde plek als op de eerste avond. Op één na.", "item": "📇 Tafelkaartje" },
+          { "title": "De houtstapel", "story": "Hout voor de hele winter. Gehakt in één middag, door niemand.", "item": "🪓 Bijl" },
+          { "title": "Een bladzijde te weinig", "story": "Elke winter tekende iedereen het gastenboek. Eén winter ontbrak.", "item": "📄 Losse bladzijde" },
+          { "title": "De bevroren leiding", "story": "Om drie uur bevroor de leiding. Iemand had een raam opengezet.", "item": "🚰 Bevroren kraan" },
+          { "title": "Jongen Kai blijft op", "story": "Dit jaar mocht hij opblijven. Hij zag meer dan hij wilde.", "item": "🧣 Wollen sjaal" },
+          { "title": "De lawinepieper", "story": "De pieper piepte in de kelder. Daar lag geen sneeuw.", "item": "📟 Lawinepieper" },
+          { "title": "Berggids Freya voorspelt", "story": "Ze voorspelde een lawine, tot op het uur. Ze zei niet hoe.", "item": "⛰️ Hoogtemeter" },
+          { "title": "Edelweiss", "story": "Waar het begon, bij de kachel. Daar eindigt het ook.", "item": "🌼 Gedroogde edelweiss" }
+        ]
+      },
+      "en": {
+        "title": "Part VIII · Edelweiss",
+        "intro": "The road is closed and the lodge is full. Around the stove sit the same faces as on the first night.",
+        "outro": "Van Dam shuts his notebook, gives you a nod and walks down to the valley through the fresh snow, in no hurry.",
+        "briefing": "The last cases, nearly all on the big board. Don't get stuck on the hardest one: place the others first, and the last one often has only one square left. That is how I have always done it.",
+        "cases": [
+          { "title": "Usual Seats", "story": "Everyone took the same seat as on the first night. All but one.", "item": "📇 Place card" },
+          { "title": "The Woodpile", "story": "Wood for the whole winter. Chopped in one afternoon, by nobody.", "item": "🪓 Axe" },
+          { "title": "A Page Short", "story": "Every winter everyone signed the guest book. One winter was missing.", "item": "📄 Loose page" },
+          { "title": "The Frozen Pipe", "story": "At three the pipe froze. Someone had opened a window.", "item": "🚰 Frozen tap" },
+          { "title": "Young Kai Stays Up", "story": "This year he was allowed to stay up. He saw more than he wanted to.", "item": "🧣 Woollen scarf" },
+          { "title": "The Avalanche Beacon", "story": "The beacon was beeping in the cellar. There was no snow down there.", "item": "📟 Avalanche beacon" },
+          { "title": "Mountain Guide Freya Predicts", "story": "She predicted an avalanche, to the hour. She did not say how.", "item": "⛰️ Altimeter" },
+          { "title": "Edelweiss", "story": "Where it began, by the stove. That is where it ends, too.", "item": "🌼 Dried edelweiss" }
+        ]
+      }
+    }
+  ]
+}

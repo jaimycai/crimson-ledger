@@ -867,7 +867,7 @@ const App = {
   // ── Moeilijkheidskiezer: mini-plattegrond in het gekozen thema ──
   // Vaste seeds per niveau, zodat het voorbeeld rustig blijft; de echte
   // zaak gebruikt een andere seed, dus het voorbeeld verklapt niets.
-  PREVIEW_SEEDS: { makkelijk: 1301, gemiddeld: 2402, moeilijk: 3503 },
+  PREVIEW_SEEDS: { makkelijk: 1301, gemiddeld: 2402, moeilijk: 3503, meester: 4604 },
   previewCache: {},
   renderDifficultyPreviews() {
     if (typeof FloorPlan === 'undefined' || typeof Themes === 'undefined') return;

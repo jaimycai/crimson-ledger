@@ -1,0 +1,205 @@
+{
+  "theme": "museum",
+  "parts": [
+    {
+      "part": 7,
+      "icon": "🖼️",
+      "nl": {
+        "title": "Deel VII · De bruikleen",
+        "intro": "Het museum is weer open, alsof er nooit een deur is geweest. Uit Florence komt een beroemd schilderij in bruikleen, verzekerd voor meer dan het gebouw.",
+        "outro": "Het schilderij gaat terug naar Florence, en de verzekeraar zegt de polis op.",
+        "briefing": "Vanaf hier zitten er meesterzaken tussen: groter bord, minder houvast. Delen twee mensen een rij of een kolom, zet de een dan in potlood neer en kijk waar de ander nog kan. Kan de ander nergens heen, dan stond de een daar niet.",
+        "cases": [
+          {
+            "title": "De kist uit Florence",
+            "story": "Volgens het label zat er één schilderij in. De kist woog meer.",
+            "item": "🏷️ Transportlabel"
+          },
+          {
+            "title": "Vier schroeven",
+            "story": "Vier schroeven hielden de lijst aan de muur. Er zaten er nog drie.",
+            "item": "🔩 Ophangschroef"
+          },
+          {
+            "title": "Vijftig lux",
+            "story": "Het licht mocht niet boven vijftig lux. Iemand had het hoger gezet.",
+            "item": "🔆 Luxmeter"
+          },
+          {
+            "title": "Restaurateur Iris twijfelt",
+            "story": "Onder de microscoop was de verf te jong voor het schilderij.",
+            "item": "🔬 Verfmonster"
+          },
+          {
+            "title": "De persfoto",
+            "story": "Op de persfoto stond een hand te veel.",
+            "item": "📸 Persfoto"
+          },
+          {
+            "title": "De audiotour",
+            "story": "Stop veertien noemde een naam die op geen enkel bordje stond.",
+            "item": "🎧 Audiogids"
+          },
+          {
+            "title": "Professor Adebayo herkent het",
+            "story": "Hij kende het schilderij van een oude dia, gemaakt in Vlierbeek.",
+            "item": "🎞️ Oude dia"
+          },
+          {
+            "title": "Terug naar Florence",
+            "story": "De kist ging dicht. Wat erin ging, was niet wat eruit kwam.",
+            "item": "🪛 Schroevendraaier"
+          }
+        ]
+      },
+      "en": {
+        "title": "Part VII · The Loan",
+        "intro": "The museum is open again, as if there had never been a door. A famous painting arrives on loan from Florence, insured for more than the building.",
+        "outro": "The painting goes back to Florence, and the insurer cancels the policy.",
+        "briefing": "From here on there are master cases: a bigger board, less to hold on to. When two people share a row or a column, put one down in pencil and see where the other can still go. If the other has nowhere to go, the first one was not there.",
+        "cases": [
+          {
+            "title": "The Crate from Florence",
+            "story": "According to the label there was one painting inside. The crate weighed more.",
+            "item": "🏷️ Shipping label"
+          },
+          {
+            "title": "Four Screws",
+            "story": "Four screws held the frame to the wall. Three were left.",
+            "item": "🔩 Hanging screw"
+          },
+          {
+            "title": "Fifty Lux",
+            "story": "The light was not allowed above fifty lux. Someone had turned it up.",
+            "item": "🔆 Light meter"
+          },
+          {
+            "title": "Restorer Iris Has Doubts",
+            "story": "Under the microscope the paint was too young for the painting.",
+            "item": "🔬 Paint sample"
+          },
+          {
+            "title": "The Press Photo",
+            "story": "The press photo showed one hand too many.",
+            "item": "📸 Press photo"
+          },
+          {
+            "title": "The Audio Tour",
+            "story": "Stop fourteen mentioned a name that was on no label.",
+            "item": "🎧 Audio guide"
+          },
+          {
+            "title": "Professor Adebayo Recognises It",
+            "story": "He knew the painting from an old slide, taken in Vlierbeek.",
+            "item": "🎞️ Old slide"
+          },
+          {
+            "title": "Back to Florence",
+            "story": "The crate was closed. What went in was not what came out.",
+            "item": "🪛 Screwdriver"
+          }
+        ]
+      }
+    },
+    {
+      "part": 8,
+      "icon": "🎂",
+      "nl": {
+        "title": "Deel VIII · Het jubileum",
+        "intro": "Zonder verzekering viert Vlierbeek toch zijn honderdste verjaardag. Op het feest komt het echte schilderij thuis, na vijftig jaar weg.",
+        "outro": "Het schilderij hangt weer waar het hoort, en het dossier Vlierbeek gaat voorgoed dicht.",
+        "briefing": "Bijna elke zaak is nu een meesterzaak; in een museum past dat. Zit je vast, vraag je dan af welke verklaring je nog niet hebt gebruikt. Vink af wat je gebruikt, dan zie je het in één oogopslag.",
+        "cases": [
+          {
+            "title": "De thuiskomst",
+            "story": "Na vijftig jaar hing het schilderij weer thuis. Op dezelfde spijkers.",
+            "item": "🫧 Noppenfolie"
+          },
+          {
+            "title": "De vlag halfstok",
+            "story": "De vlag op het dak hing halfstok. Al voordat het feest begon.",
+            "item": "🚩 Dakvlag"
+          },
+          {
+            "title": "De enige bewaker",
+            "story": "Zonder verzekering was Gus de hele beveiliging. Hij gaapte één keer.",
+            "item": "🍬 Pepermunt"
+          },
+          {
+            "title": "De jubileumpenning",
+            "story": "Elke gast kreeg een penning. Eén penning had een ander jaartal.",
+            "item": "🏅 Jubileumpenning"
+          },
+          {
+            "title": "De fanfare",
+            "story": "De fanfare speelde het jubileumlied. Eén trompet bleef stil.",
+            "item": "🎺 Trompet"
+          },
+          {
+            "title": "Curator Ellery leest voor",
+            "story": "Hij las de namen van alle conservators voor. Eén naam sloeg hij over.",
+            "item": "📘 Jubileumboek"
+          },
+          {
+            "title": "Gids Margot vertelt",
+            "story": "Ze vertelde honderd jaar in tien minuten. Eén nacht liet ze weg.",
+            "item": "📏 Aanwijsstok"
+          },
+          {
+            "title": "Vlierbeek wordt honderd",
+            "story": "Honderd jaar oud om middernacht. De laatste vraag is de oudste.",
+            "item": "🖼️ Het origineel"
+          }
+        ]
+      },
+      "en": {
+        "title": "Part VIII · The Centenary",
+        "intro": "Without insurance, Vlierbeek celebrates its hundredth birthday anyway. At the party the real painting comes home, after fifty years away.",
+        "outro": "The painting hangs where it belongs again, and the Vlierbeek file is closed for good.",
+        "briefing": "Nearly every case is a master case now; fitting, in a museum. When you are stuck, ask yourself which statement you have not used yet. Tick off the ones you use and you will see it at a glance.",
+        "cases": [
+          {
+            "title": "The Homecoming",
+            "story": "After fifty years the painting hung at home again. On the same nails.",
+            "item": "🫧 Bubble wrap"
+          },
+          {
+            "title": "Flag at Half-Mast",
+            "story": "The flag on the roof hung at half-mast. Before the party had even begun.",
+            "item": "🚩 Roof flag"
+          },
+          {
+            "title": "The Only Guard",
+            "story": "Without insurance, Gus was the entire security. He yawned once.",
+            "item": "🍬 Peppermint"
+          },
+          {
+            "title": "The Centenary Medal",
+            "story": "Every guest got a medal. One medal had a different year on it.",
+            "item": "🏅 Centenary medal"
+          },
+          {
+            "title": "The Brass Band",
+            "story": "The brass band played the centenary march. One trumpet stayed silent.",
+            "item": "🎺 Trumpet"
+          },
+          {
+            "title": "Curator Ellery Reads the Names",
+            "story": "He read out the name of every curator. He skipped one.",
+            "item": "📘 Centenary book"
+          },
+          {
+            "title": "Guide Margot Tells the Story",
+            "story": "She told a hundred years in ten minutes. She left out one night.",
+            "item": "📏 Pointer"
+          },
+          {
+            "title": "Vlierbeek Turns a Hundred",
+            "story": "A hundred years old at midnight. The last question is the oldest.",
+            "item": "🖼️ The original"
+          }
+        ]
+      }
+    }
+  ]
+}

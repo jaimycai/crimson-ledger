@@ -1,0 +1,205 @@
+{
+  "theme": "hotel",
+  "parts": [
+    {
+      "part": 7,
+      "icon": "🔨",
+      "nl": {
+        "title": "Deel VII · De veiling",
+        "intro": "Een maand later gaat alles van Aurora onder de hamer, van de piano tot de laatste lepel. De oude gasten zitten op de eerste rij.",
+        "outro": "De hamer valt voor het laatst: alles is verkocht, behalve het gebouw zelf.",
+        "briefing": "Grotere plattegronden, vagere verklaringen: deze veiling is geen koopje. Zet met het potlood een stipje op elk vakje waar een verdachte nog kan staan. Moeten twee verdachten in dezelfde rij staan, vergelijk dan hun stipjes: een rij waar maar één van de twee een stipje heeft, valt af.",
+        "cases": [
+          {
+            "title": "De kijkdag",
+            "story": "Op de kijkdag hing aan alles een kaartje. Aan één kaartje hing niets.",
+            "item": "🏷️ Kavelkaartje"
+          },
+          {
+            "title": "De catalogus",
+            "story": "Kavel 77 stond twee keer in de catalogus. Er was maar één kavel 77.",
+            "item": "📕 Veilingcatalogus"
+          },
+          {
+            "title": "Het eerste bod",
+            "story": "Het eerste bod kwam van een lege stoel.",
+            "item": "🪧 Biedbordje"
+          },
+          {
+            "title": "Bestek per kilo",
+            "story": "Het zilver werd per kilo geveild. Er ontbrak een kilo.",
+            "item": "🍴 Hotelbestek"
+          },
+          {
+            "title": "Pianist Felix biedt",
+            "story": "Hij bood op zijn oude piano. Iemand bood hoger.",
+            "item": "🪑 Pianokruk"
+          },
+          {
+            "title": "Zes letters",
+            "story": "Op de gevel stond AURORA in zes letters. Er hingen er nog vijf.",
+            "item": "🅰️ Gevelletter"
+          },
+          {
+            "title": "De draaideur",
+            "story": "De draaideur was al verkocht. Om middernacht draaide hij nog één keer.",
+            "item": "🔄 Draaideur"
+          },
+          {
+            "title": "De laatste kavel",
+            "story": "De laatste kavel stond niet in de catalogus. Toch werd erop geboden.",
+            "item": "🔨 Veilinghamer"
+          }
+        ]
+      },
+      "en": {
+        "title": "Part VII · The Auction",
+        "intro": "A month later everything in Aurora goes under the hammer, from the piano to the last spoon. The old guests sit in the front row.",
+        "outro": "The hammer falls for the last time: everything is sold except the building itself.",
+        "briefing": "Bigger floor plans, vaguer statements: this auction is no bargain. Use the pencil to put a dot on every square where a suspect could still stand. If two suspects must be in the same row, compare their dots: a row where only one of them has a dot is out.",
+        "cases": [
+          {
+            "title": "Viewing Day",
+            "story": "On viewing day everything had a tag. One tag had nothing attached.",
+            "item": "🏷️ Lot tag"
+          },
+          {
+            "title": "The Catalogue",
+            "story": "Lot 77 was in the catalogue twice. There was only one lot 77.",
+            "item": "📕 Auction catalogue"
+          },
+          {
+            "title": "The First Bid",
+            "story": "The first bid came from an empty chair.",
+            "item": "🪧 Bidding paddle"
+          },
+          {
+            "title": "Cutlery by the Kilo",
+            "story": "The silver was sold by the kilo. A kilo was missing.",
+            "item": "🍴 Hotel cutlery"
+          },
+          {
+            "title": "Pianist Felix Bids",
+            "story": "He bid on his old piano. Someone bid higher.",
+            "item": "🪑 Piano stool"
+          },
+          {
+            "title": "Six Letters",
+            "story": "AURORA stood on the façade in six letters. Five were still up.",
+            "item": "🅰️ Façade letter"
+          },
+          {
+            "title": "The Revolving Door",
+            "story": "The revolving door was already sold. At midnight it turned once more.",
+            "item": "🔄 Revolving door"
+          },
+          {
+            "title": "The Last Lot",
+            "story": "The last lot was not in the catalogue. Someone bid on it anyway.",
+            "item": "🔨 Auction hammer"
+          }
+        ]
+      }
+    },
+    {
+      "part": 8,
+      "icon": "🏗️",
+      "nl": {
+        "title": "Deel VIII · De sloop",
+        "intro": "Maandag komt de sloopkogel. Het weekend ervoor lopen de oude gasten nog één keer door de lege gangen.",
+        "outro": "De sloopkogel zwaait, het stof daalt neer, en het laatste dossier van Aurora gaat dicht.",
+        "briefing": "Nog één keer Aurora, met bijna alleen de zwaarste zaken. Een palm is een slechte schuilplaats: wie direct naast een palm stond, kan maar op een paar vakjes staan. Zoek eerst die verklaringen over meubels en begin daar.",
+        "cases": [
+          {
+            "title": "De vergunning",
+            "story": "De sloop mocht vanaf maandag. Iemand begon op zondag.",
+            "item": "📃 Sloopvergunning"
+          },
+          {
+            "title": "Butler Winslow met helm",
+            "story": "Veertig jaar droeg hij een strik. Vandaag een bouwhelm.",
+            "item": "⛑️ Bouwhelm"
+          },
+          {
+            "title": "De oude lift",
+            "story": "In de liftschacht hing een gastenkaartje. Eén naam was doorgestreept.",
+            "item": "🛗 Liftknop"
+          },
+          {
+            "title": "De hijskraan",
+            "story": "Vanuit de kraan zag je elk raam. In één raam stond iemand.",
+            "item": "🏗️ Kraanhaak"
+          },
+          {
+            "title": "De laatste wals",
+            "story": "Het parket was verkocht. Toch stonden er danspassen in het stof.",
+            "item": "🪩 Spiegelbol"
+          },
+          {
+            "title": "De eerste steen",
+            "story": "In de eerste steen zat een tijdcapsule. Iemand was er eerder bij.",
+            "item": "🫙 Tijdcapsule"
+          },
+          {
+            "title": "Kamer 404 gevonden",
+            "story": "De slopers vonden kamer 404. De wekker tikte nog.",
+            "item": "⏰ Tikkende wekker"
+          },
+          {
+            "title": "Het laatste uur",
+            "story": "Aurora stond nog één uur overeind. Genoeg voor de laatste vraag.",
+            "item": "🧱 Laatste baksteen"
+          }
+        ]
+      },
+      "en": {
+        "title": "Part VIII · The Demolition",
+        "intro": "On Monday the wrecking ball comes. The weekend before, the old guests walk the empty corridors one last time.",
+        "outro": "The wrecking ball swings, the dust settles, and the last file on Aurora is closed.",
+        "briefing": "Aurora one last time, with almost nothing but the hardest cases. A palm is a poor hiding place: whoever stood directly next to one can only be on a few squares. Find those statements about furniture first and start there.",
+        "cases": [
+          {
+            "title": "The Permit",
+            "story": "Demolition was allowed from Monday. Someone started on Sunday.",
+            "item": "📃 Demolition permit"
+          },
+          {
+            "title": "Butler Winslow's Hard Hat",
+            "story": "For forty years he wore a bow tie. Today, a hard hat.",
+            "item": "⛑️ Hard hat"
+          },
+          {
+            "title": "The Old Lift",
+            "story": "A guest card still hung in the lift shaft. One name was crossed out.",
+            "item": "🛗 Lift button"
+          },
+          {
+            "title": "The Crane",
+            "story": "From the crane you could see every window. Someone stood in one.",
+            "item": "🏗️ Crane hook"
+          },
+          {
+            "title": "The Last Waltz",
+            "story": "The parquet had been sold. Yet there were dance steps in the dust.",
+            "item": "🪩 Mirror ball"
+          },
+          {
+            "title": "The Foundation Stone",
+            "story": "Inside the foundation stone was a time capsule. Someone got there first.",
+            "item": "🫙 Time capsule"
+          },
+          {
+            "title": "Room 404 Found",
+            "story": "The demolition crew found room 404. The alarm clock was still ticking.",
+            "item": "⏰ Ticking alarm clock"
+          },
+          {
+            "title": "The Last Hour",
+            "story": "Aurora had one hour left standing. Enough for the last question.",
+            "item": "🧱 Last brick"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -37,6 +37,16 @@ const DIFFICULTY = {
     desc: 'Alleen voor doorgewinterde speurders',
     numCategories: 3,
     numItems: 5
+  },
+  // plattegrondzaak op meesterniveau (1.3); niet in de keuze van het klassieke raster
+  meester: {
+    id: 'meester',
+    label: 'Meester',
+    icon: '⚫',
+    desc: 'Voor echte kenners',
+    numCategories: 3,
+    numItems: 5,
+    hidden: true
   }
 };
 

@@ -69,7 +69,10 @@ const FloorPlan = (() => {
   const DIFF = {
     makkelijk: { cols: 6, rows: 6, rooms: 4, merges: 0, suspects: 3, minClues: 3, maxClues: 5, maxCand: 12 },
     gemiddeld: { cols: 7, rows: 7, rooms: 5, merges: 1, suspects: 4, minClues: 4, maxClues: 7, maxCand: 14 },
-    moeilijk:  { cols: 8, rows: 8, rooms: 6, merges: 2, suspects: 5, minClues: 5, maxClues: 9, maxCand: 14 }
+    moeilijk:  { cols: 8, rows: 8, rooms: 6, merges: 2, suspects: 5, minClues: 5, maxClues: 9, maxCand: 14 },
+    // meester (1.3): groter bord, zwakkere directe aanwijzingen (tot 22 vakjes per verdachte na de eigen
+    // aanwijzingen), dus meer afleiden via relaties. Gemeten: 30 van 30 seeds lukken, ~0,45 s per zaak in Node.
+    meester:   { cols: 9, rows: 9, rooms: 7, merges: 3, suspects: 5, minClues: 5, maxClues: 10, maxCand: 22 }
   };
 
   // Voorkeur per moeilijkheid: makkelijk = directe kamers, moeilijk = indirect
@@ -82,7 +85,10 @@ const FloorPlan = (() => {
                  'left-of': 2, above: 2, 'empty-room': 2, alone: 2 },
     moeilijk:  { room: 1, 'room-pos': 2, 'room-next': 2, 'room-with': 4, 'next-to': 4, pos: 3, 'not-room': 3,
                  'same-room': 3, 'diff-room': 2, adjacent: 3, 'not-adjacent': 2, 'same-row': 3, 'same-col': 3,
-                 'left-of': 3, above: 3, 'empty-room': 2, alone: 3 }
+                 'left-of': 3, above: 3, 'empty-room': 2, alone: 3 },
+    meester:   { room: 1, 'room-pos': 1, 'room-next': 2, 'room-with': 4, 'next-to': 4, pos: 3, 'not-room': 3,
+                 'same-room': 4, 'diff-room': 3, adjacent: 4, 'not-adjacent': 3, 'same-row': 4, 'same-col': 4,
+                 'left-of': 4, above: 4, 'empty-room': 2, alone: 3 }
   };
 
   const UNARY = new Set(['room', 'not-room', 'room-pos', 'pos', 'room-with', 'next-to', 'room-next']);

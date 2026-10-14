@@ -50,7 +50,7 @@ check(won.length === Progress.MEDALS.length - 9 && !won.some(m => ['piraten', 'h
 check(Progress.formatDate('2026-01-12') === '12 jan 2026', 'datum in het Nederlands (Intl, nl-NL)');
 
 // vitrine
-check(Progress.evidence('landhuis').length === 48 && Progress.evidence('landhuis').every(e => !e.got && e.icon && e.name), 'vitrine landhuis: 48 lege plekken');
+check(Progress.evidence('landhuis').length === 64 && Progress.evidence('landhuis').every(e => !e.got && e.icon && e.name), 'vitrine landhuis: 64 lege plekken');
 Campaign.save('landhuis', 0, 3);
 check(Progress.evidence('landhuis')[0].got && Progress.evidence('landhuis')[0].name === 'Wijnglas' && Progress.evidenceCount() === 1, 'na zaak 1 staat het wijnglas in de vitrine');
 

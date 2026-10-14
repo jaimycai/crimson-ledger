@@ -21,11 +21,13 @@ for (const ch of CAMPAIGN) {
   okCases += okCh;
   check(okCh === ch.cases.length, `${ch.key}: ${okCh}/${ch.cases.length} zaken laden en zijn uniek`);
   const diffs = ch.cases.map(c => c.difficulty);
-  check(diffs[0] === 'makkelijk' && diffs[diffs.length - 1] === 'moeilijk', `${ch.key}: loopt op van makkelijk naar moeilijk`);
+  // delen 1-6 lopen op van makkelijk naar moeilijk; de delen 7 en 8 (1.3) van moeilijk naar meester
+  const RANK = { makkelijk: 0, gemiddeld: 1, moeilijk: 2, meester: 3 };
+  check(RANK[diffs[0]] <= RANK[diffs[diffs.length - 1]] && RANK[diffs[diffs.length - 1]] >= 2 && (ch.part > 6 || diffs[0] === 'makkelijk'), `${ch.key}: loopt op in moeilijkheid`);
   check(!!(ch.title && ch.intro && ch.outro) && ch.cases.every(c => c.title && c.story), `${ch.key}: titel, intro, outro en verhaaltjes aanwezig`);
 }
 check(allSeeds.size === total, 'alle seeds uniek over de hele campagne');
-check(okCases === total && total === Campaign.total() && total === 384, `alle ${total} campagnezaken in orde`);
+check(okCases === total && total === Campaign.total() && total === 512, `alle ${total} campagnezaken in orde`);
 
 // eindeloos archief
 const N = 12; let okArch = 0;
@@ -40,8 +42,8 @@ check(Campaign.starsFor(0, 0) === 3 && Campaign.starsFor(0, 2) === 2 && Campaign
 check(Campaign.isUnlocked('landhuis', 0) && !Campaign.isUnlocked('landhuis', 1), 'zonder voortgang: alleen de eerste zaak open');
 check(Campaign.chapterOpen('landhuis') && !Campaign.chapterOpen('landhuis-2') && !Campaign.chapterOpen(Campaign.ARCHIVE), 'zonder voortgang: deel I open, deel II en archief dicht');
 const n1 = Campaign.next('landhuis', 7);
-check(n1 && n1.chapter === 'landhuis-2' && n1.idx === 0 && Campaign.next('landhuis-3', 7).chapter === 'landhuis-4' && Campaign.next('landhuis-6', 7) === null && Campaign.next('landhuis', 0).title === 'De verdwenen sleutel' && Campaign.next(Campaign.ARCHIVE, 4).title === 'Dossier 6', 'volgende-zaak-logica: door naar het volgende deel (ook IV t/m VI), archief telt door');
-check(Campaign.chaptersFor('landhuis').map(c => c.part).join('') === '123456' && Campaign.chaptersFor('ruimte').length === 6 && Campaign.chapter('hotel-6').title.startsWith('Deel VI') && !Campaign.chapterOpen('landhuis-4'), 'zes delen per wereld, op volgorde, deel IV pas open na deel III');
+check(n1 && n1.chapter === 'landhuis-2' && n1.idx === 0 && Campaign.next('landhuis-3', 7).chapter === 'landhuis-4' && Campaign.next('landhuis-6', 7).chapter === 'landhuis-7' && Campaign.next('landhuis-8', 7) === null && Campaign.next('landhuis', 0).title === 'De verdwenen sleutel' && Campaign.next(Campaign.ARCHIVE, 4).title === 'Dossier 6', 'volgende-zaak-logica: door naar het volgende deel (ook IV t/m VIII), archief telt door');
+check(Campaign.chaptersFor('landhuis').map(c => c.part).join('') === '12345678' && Campaign.chaptersFor('ruimte').length === 8 && Campaign.chapter('hotel-8').title.startsWith('Deel VIII') && !Campaign.chapterOpen('landhuis-4'), 'acht delen per wereld, op volgorde, deel IV pas open na deel III');
 
 // bewijsstukken, briefings, archief per wereld, wereldhulpjes
 const items = CAMPAIGN.flatMap(ch => ch.cases.map(c => c.item));
@@ -50,7 +52,7 @@ check(CAMPAIGN.every(ch => ch.briefing && ch.briefing.length > 40), 'elk deel he
 check(Campaign.isUnlocked(Campaign.ARCHIVE, 0) && !Campaign.isUnlocked(Campaign.ARCHIVE, 1), 'archief: dossier 1 open zodra het archief open is, dossier 2 wacht op dossier 1');
 const al = Campaign.archiveList();
 check(al.length === 2 && al[0].title === 'Dossier 1' && al[1].title === 'Dossier 2' && al.every(c => c.state === 'locked') && al[0].theme === 'landhuis' && al[1].theme === 'piraten', 'archief op de kaart: dossier 1 en 2 (thema wisselt), dicht zolang het archief dicht is');
-check(Campaign.worldTotal('piraten') === 48 && Campaign.worldStars('piraten') === 0 && Campaign.worldDone('piraten') === 0, 'wereldtellers');
+check(Campaign.worldTotal('piraten') === 64 && Campaign.worldStars('piraten') === 0 && Campaign.worldDone('piraten') === 0, 'wereldtellers');
 check(Campaign.current('landhuis').title === 'Het glas Bordeaux' && Campaign.current('piraten', false) === null && Campaign.nextOverall(null, 'hotel').title === 'Middernacht', 'huidige zaak per wereld en over alle werelden');
 console.log(`\n(${((Date.now() - t0) / 1000).toFixed(1)}s)`);
 // ── Tussenstops: minigame en bewijskist ──
@@ -60,8 +62,8 @@ Object.assign(global, { FloorPlan, Themes, Campaign, Avatars, Mentor });   // mi
 const { MiniGame } = require('../minigame.js');
 check(CAMPAIGN.every(ch => ch.icon) && Campaign.miniKind('landhuis') === 'liar' && Campaign.miniKind('landhuis-2') === 'memory', 'elk deel heeft een icoon; minigames wisselen af (oneven: Wie liegt?, even: Vluchtige blik)');
 check(!Campaign.miniOpen('landhuis') && !Campaign.chestOpened('landhuis') && Campaign.openChest('landhuis') === null, 'zonder voortgang: minigame dicht, kist dicht en niet te openen');
-check(Campaign.nextChapter('landhuis').key === 'landhuis-2' && Campaign.nextChapter('landhuis-6') === null && Campaign.lastPart('ruimte-6') && !Campaign.lastPart('ruimte-5'), 'volgend deel en laatste deel');
-check(Campaign.chestReward('landhuis').points === Campaign.CHEST_POINTS && Campaign.chestReward('landhuis-6').points === Campaign.WORLD_CHEST_POINTS && Campaign.chestReward('landhuis-6').world, 'kist: 300 punten per deel, 1000 bij het laatste deel van een wereld');
+check(Campaign.nextChapter('landhuis').key === 'landhuis-2' && Campaign.nextChapter('landhuis-6').key === 'landhuis-7' && Campaign.nextChapter('landhuis-8') === null && Campaign.lastPart('ruimte-8') && !Campaign.lastPart('ruimte-6'), 'volgend deel en laatste deel');
+check(Campaign.chestReward('landhuis').points === Campaign.CHEST_POINTS && Campaign.chestReward('landhuis-8').points === Campaign.WORLD_CHEST_POINTS && Campaign.chestReward('landhuis-8').world, 'kist: 300 punten per deel, 1000 bij het laatste deel van een wereld');
 // drie rondes van elke soort, deterministisch en met precies één leugen
 let okLiar = 0, okMem = 0;
 for (let round = 1; round <= 3; round++) {
