@@ -11,18 +11,18 @@ eerste publicatie op zijn vroegst 6 oktober.
 
 | # | Map | Formaat | Concept klaar | Live | Views 48u | Likes | Reacties | Bewaard | Gedeeld | Antwoord gepind |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 1 | dag1-carrousel | A carrousel | ingepland Metricool, di 6 okt 19:00 | 5 okt 23:03 (tekst met app-naam) | 0 na 44u (7 okt 19:00); 1 op 9 okt 23:30; 1 op 10 okt 10:37; 1 op 12 okt 20:12 | 0 | 0 | niet gemeten (Studio toont het niet) | niet gemeten (idem) | Dr. Cross |
-| 1b | dag1-carrousel (dubbel) | A carrousel | oude Metricool-planning | 6 okt 19:02 (oude tekst); 6 okt 23:50 op Alleen ik gezet; Studio toont op 9 okt weer "Iedereen" | 1 na 76u (9 okt 23:30); 1 op 10 okt 10:37; 1 op 12 okt 20:12 | 0 | 0 | niet gemeten | niet gemeten | Dr. Cross |
-| 2 | dag2-meelossen | B meelossen | ingepland Metricool, wo 7 okt 19:00 | 7 okt 19:02 | 1 na 52u (9 okt 23:30); 1 op 10 okt 10:37; 1 op 12 okt 20:12 | 0 | 0 | niet gemeten (Studio toont het niet) | niet gemeten (idem) | n.v.t. |
-| 3 | dag3-uitleg | C uitleg | ingepland Metricool, do 8 okt 19:00 | 8 okt 19:02 | 0 na 29u (9 okt 23:56); 0 na 39,5u (10 okt 10:37); 0 na 97u (12 okt 20:12) | 0 | 0 | niet gemeten | niet gemeten | n.v.t. |
-| 4 | dag4-carrousel | A carrousel | ingepland Metricool, vr 9 okt 19:00 | 9 okt 19:05 | 234 na 4,5u, 234 na 15,5u (10 okt 10:37); 237 na 73u (12 okt 20:12) | 0 | 1 | niet gemeten | niet gemeten | Marcus (24u voorbij; pinnen aan Jaimy) |
-| 5 | dag5-meelossen | B meelossen | ingepland Metricool, za 10 okt 19:00 | 10 okt 19:02 | 268 na 49u (12 okt 20:12) | 1 | 0 | niet gemeten | niet gemeten | n.v.t. |
+| 1 | dag1-carrousel | A carrousel | ingepland Metricool, di 6 okt 19:00 | 5 okt 23:03 (tekst met app-naam) | 0 na 44u (7 okt 19:00); 1 op 9 okt 23:30; 1 op 10 okt 10:37; 1 op 12 okt 20:12; 1 op 14 okt 17:51 | 0 | 0 | niet gemeten (Studio toont het niet) | niet gemeten (idem) | Dr. Cross |
+| 1b | dag1-carrousel (dubbel) | A carrousel | oude Metricool-planning | 6 okt 19:02 (oude tekst); 6 okt 23:50 op Alleen ik gezet; Studio toont op 9 okt weer "Iedereen" | 1 na 76u (9 okt 23:30); 1 op 10 okt 10:37; 1 op 12 okt 20:12; 1 op 14 okt 17:51 | 0 | 0 | niet gemeten | niet gemeten | Dr. Cross |
+| 2 | dag2-meelossen | B meelossen | ingepland Metricool, wo 7 okt 19:00 | 7 okt 19:02 | 1 na 52u (9 okt 23:30); 1 op 10 okt 10:37; 1 op 12 okt 20:12; 1 op 14 okt 17:51 | 0 | 0 | niet gemeten (Studio toont het niet) | niet gemeten (idem) | n.v.t. |
+| 3 | dag3-uitleg | C uitleg | ingepland Metricool, do 8 okt 19:00 | 8 okt 19:02 | 0 na 29u (9 okt 23:56); 0 na 39,5u (10 okt 10:37); 0 na 97u (12 okt 20:12); 1 op 14 okt 17:51 | 0 | 0 | niet gemeten | niet gemeten | n.v.t. |
+| 4 | dag4-carrousel | A carrousel | ingepland Metricool, vr 9 okt 19:00 | 9 okt 19:05 | 234 na 4,5u, 234 na 15,5u (10 okt 10:37); 237 na 73u (12 okt 20:12); 238 op 14 okt 17:51 | 0 | 1 | niet gemeten | niet gemeten | Marcus (24u voorbij; pinnen aan Jaimy) |
+| 5 | dag5-meelossen | B meelossen | ingepland Metricool, za 10 okt 19:00 | 10 okt 19:02 | 268 na 49u (12 okt 20:12); 271 op 14 okt 17:51 | 1 | 0 | niet gemeten | niet gemeten | n.v.t. |
 | 6 | dag6-carrousel | A carrousel | ontbrak op 10 okt in Metricool; concept in Metricool 10 okt (zo 11 okt 19:00, automatisch publiceren uit) | niet live (concept niet goedgekeurd; niet in TikTok Studio op 12 okt 20:12) | | | | | | Marcus |
-| 7 | dag7-carrousel | A carrousel | ingepland Metricool, ma 12 okt 19:00 | 12 okt 19:05 | nog geen 48u; 78 na 1u (12 okt 20:12) | 0 | 0 | niet gemeten | niet gemeten | Rosalind (pas na 24u) |
-| w2c-01 | week2c/01-c3-0 | A carrousel | gepland TikTok Studio | 10 okt 21:00 ("De stille zee") | 0 na 47u (12 okt 20:12) | 0 | 0 | niet gemeten | niet gemeten | |
-| w2c-02 | week2c/02-c1-2 | A carrousel | gepland TikTok Studio | 11 okt 12:00 ("Geen beschrijving": tekst ontbreekt) | nog geen 48u; 0 na 32u | 0 | 0 | niet gemeten | niet gemeten | |
-| w2c-03 | week2c/03-c4-0 | A carrousel | gepland TikTok Studio | 11 okt 16:00 ("Voetsporen in het zand") | nog geen 48u; 0 na 28u | 0 | 0 | niet gemeten | niet gemeten | |
-| w2c-04 | week2c/04-c1-0 | A carrousel | gepland TikTok Studio | 11 okt 21:00 ("De verzegelde deur") | nog geen 48u; 0 na 23u | 0 | 0 | niet gemeten | niet gemeten | |
+| 7 | dag7-carrousel | A carrousel | ingepland Metricool, ma 12 okt 19:00 | 12 okt 19:05 | 239 na 47u (14 okt 17:51); 78 na 1u | 0 | 0 | niet gemeten | niet gemeten | Rosalind (pas na 24u) |
+| w2c-01 | week2c/01-c3-0 | A carrousel | gepland TikTok Studio | 10 okt 21:00 ("De stille zee") | 0 na 47u (12 okt 20:12); 1 op 14 okt 17:51 | 0 | 0 | niet gemeten | niet gemeten | |
+| w2c-02 | week2c/02-c1-2 | A carrousel | gepland TikTok Studio | 11 okt 12:00 ("Geen beschrijving": tekst ontbreekt) | 1 na 78u (14 okt 17:51) | 0 | 0 | niet gemeten | niet gemeten | |
+| w2c-03 | week2c/03-c4-0 | A carrousel | gepland TikTok Studio | 11 okt 16:00 ("Voetsporen in het zand") | 1 na 74u (14 okt 17:51) | 0 | 0 | niet gemeten | niet gemeten | |
+| w2c-04 | week2c/04-c1-0 | A carrousel | gepland TikTok Studio | 11 okt 21:00 ("De verzegelde deur") | 1 na 69u (14 okt 17:51) | 0 | 0 | niet gemeten | niet gemeten | |
 
 ## Dagcijfers
 
@@ -37,6 +37,7 @@ eerste publicatie op zijn vroegst 6 oktober.
 | 10 okt | 0 (TikTok Studio 10:37; analytics 7 dagen toont nog 0 videoviews) | niet gemeten (App Store Connect vraagt opnieuw inloggen; niet gedaan) | niet gemeten (idem) | niet gemeten (idem) | 9 (7 dagen, iOS, en 8 / nl 4 opens; 1 terug op dag 1, 24 zaken gestart, 21 opgelost, 0 aankopen, 8 keer gedeeld) |
 | 12 okt | niet gemeten (tab Volgers in TikTok Studio laadde niet; analytics 7 dagen: 498 videoviews, 7 profielweergaven, 1 like, 1 reactie, 0 gedeeld; 99,2% Voor jou, 0% zoeken) | niet gemeten (App Store Connect vraagt opnieuw inloggen; niet gedaan) | niet gemeten (idem) | niet gemeten (idem) | 24 (7 dagen; opens ios 16 / web 16, nl 9 / en 21 / de 2; 3 terug op dag 1, 1606 zaken gestart / 66 opgelost, 0 aankopen, 8 gedeeld; web-opens en het hoge aantal gestarte zaken komen waarschijnlijk van capture.js, niet van spelers) |
 | 13 okt | niet gemeten (Claude in Chrome niet verbonden, twee pogingen) | niet gemeten (idem) | niet gemeten (idem) | niet gemeten (idem) | 47 (7 dagen; opens ios 23 / web 33, nl 11 / en 28 / de 7 / overige talen 10; 3 terug op dag 1, 1642 zaken gestart / 74 opgelost, 0 aankopen, 8 gedeeld; de sprong en de talen hi, ru, ur, vi, zh komen waarschijnlijk van de taalcontrole voor 1.2 en capture.js, niet van spelers) |
+| 14 okt | 0 (TikTok Studio 17:51; analytics 7 dagen: 798 videoviews, 9 profielweergaven, 1 like, 1 reactie, 0 gedeeld; 98,6% Voor jou, 0% zoeken) | niet gemeten (App Store Connect vraagt opnieuw inloggen; niet gedaan) | niet gemeten (idem) | niet gemeten (idem) | 52 (7 dagen; opens ios 28 / web 33, en 28 / nl 9 / de 7 / overige talen 17; 3 terug op dag 1, 1743 zaken gestart / 159 opgelost, 0 aankopen, 8 gedeeld; web-opens en overige talen waarschijnlijk taalcontrole en capture.js, niet spelers) |
 
 ## Beslissingen
 
@@ -120,3 +121,8 @@ eerste publicatie op zijn vroegst 6 oktober.
   gelezen. Views na 48 uur van post 7 en w2c-02 t/m w2c-04 vallen vandaag en zijn gemist; volgende ronde meten.
   Niet nagekeken of w2c-05 en verder in TikTok Studio gepland staan. Vanaf vandaag kan de TikTok-weergavenaam weer naar
   "Crimson Ledger · Crime Sudoku".
+- 14 okt 17:51: geen nieuwe post sinds 12 okt 19:05. In de lijst van TikTok Studio staat niets na post 7; w2c-05 en verder
+  (gepland 12 t/m 17 okt volgens §10) zijn niet live. Of ze nog gepland staan, is niet nagekeken. Post 7 (carrousel via
+  Metricool) haalt 239 views na 47 uur; de vier carrousels uit TikTok Studio staan na 69 tot 78 uur op 1 view. Daarmee
+  zitten nu drie Metricool-posts (4, 5, 7) rond 240 tot 270 en alle Studio-posts op 1: het verschil in route blijft de
+  sterkste te testen oorzaak. Groei na de eerste uren blijft bij elke post uit (post 4: 234 na 4,5u, 238 na 5 dagen).
