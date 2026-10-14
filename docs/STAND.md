@@ -17,7 +17,7 @@ cloudsessies (werken op een eigen `claude/...`-branch met een pull request). Om 
 
 | Sinds | Sessie | Taak | Bestanden |
 |---|---|---|---|
-| 14 okt | cloud, branch `claude/kind-feynman-ocvzz9` | Nieuw logo. Onderzoek klaar, tien Higgsfield-opdrachten staan in `art/logo/prompts.js`. Wacht op de Mac-sessie (zie "Voor de Mac-sessie"), daarna op de keuze van Jaimy. Pas dan worden de iconen vervangen. | `art/logo/`, later `icon-*.png`, `resources/`, `ios/App/App/Assets.xcassets/`, `android/app/src/main/res/`, het `splash-mark` in `index.html`, `store/social/tiktok-avatar.png` |
+| 14 okt | cloud, branch `claude/kind-feynman-ocvzz9` | Nieuw logo. Onderzoek klaar, tien Higgsfield-opdrachten staan in `art/logo/prompts.js`. Mac-sessie van 14 okt: tien proeven gemaakt (ruw in `art/logo/ruw/`, buiten git), keuzeblad als artifact https://claude.ai/artifact/24rYzVVMmRLwbHn8v2N7F7. Wacht op de keuze van Jaimy. Pas dan worden de iconen vervangen. | `art/logo/`, later `icon-*.png`, `resources/`, `ios/App/App/Assets.xcassets/`, `android/app/src/main/res/`, het `splash-mark` in `index.html`, `store/social/tiktok-avatar.png` |
 
 ## Voor de Mac-sessie
 
@@ -31,6 +31,8 @@ Klaargezet door een cloudsessie op 14 okt. Doe het in deze volgorde, zonder tuss
    Geef bij elke opdracht met `referentie: assets/vandam.jpg` dat portret mee als referentiebeeld.
 4. Download elk beeld met `art/logo/haal.sh <id> <url>`, maak het keuzeblad met `node art/logo/blad.js` en laat
    `art/logo/blad.html` aan Jaimy zien (bijvoorbeeld als artifact). De ruwe beelden blijven buiten git.
+**Gedaan op 14 okt (Mac):** stap 2 (189 aankoopteksten toegevoegd, 17 bestaande nl/en op slot, zie `store/social/LOGBOEK.md`), stap 3 en 4 (tien proeven, keuzeblad als artifact, link in de tabel hierboven). Open: stap 5.
+
 5. Zet de keuze van Jaimy hier in het overzicht. Het vervangen van de iconen (app, startscherm, winkel, kanalen)
    en versie 1.2.1 volgen daarna.
 
@@ -70,7 +72,7 @@ Klaargezet door een cloudsessie op 14 okt. Doe het in deze volgorde, zonder tuss
 
 | # | Stap | Wie |
 |---|---|---|
-| 1 | Aankoopteksten naar App Store Connect (stap 2 hierboven). Apple beoordeelt gewijzigde aankoopteksten; ze kunnen mee met versie 1.2.1, samen met het nieuwe logo. | Mac-sessie, Jaimy klikt ja |
+| 1 | Aankoopteksten naar App Store Connect (stap 2 hierboven). **Gedaan 14 okt** voor 20 winkeltalen. Apple beoordeelt gewijzigde aankoopteksten; ze kunnen mee met versie 1.2.1, samen met het nieuwe logo. | Mac-sessie, Jaimy klikt ja |
 | 2 | Nieuwe featuring-nominatie voor 1.2 met 20 talen, minstens drie weken vooruit. | Mac-sessie, na akkoord van Jaimy |
 | 3 | 7 en 14 dagen na goedkeuring de zoekposities meten (NL, US, GB en de grote nieuwe talen). | Mac-sessie |
 

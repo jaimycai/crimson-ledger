@@ -17,10 +17,10 @@ const card = (img, s, title, sub) => `<figure><img class="groot" src="${img(360)
 const cards = items.map(p => { const f = path.join(RUW, p.id + '.png'); const s = small(f, 120); return card(px => small(f, px), s, p.id, `${p.richting} · ${p.stijl}`); });
 const nu = small(now, 120); cards.unshift(card(px => small(now, px), nu, 'nu', 'het huidige icoon'));
 fs.writeFileSync(path.join(DIR, 'blad.html'), `<title>Crimson Ledger logo-proeven</title>
-<style>body{margin:0;background:#FAF5EF;color:#2C1810;font:15px/1.5 system-ui,sans-serif}main{max-width:1100px;margin:0 auto;padding:32px max(16px,env(safe-area-inset-left,0px));display:grid;gap:24px}
-h1{font:700 30px/1.1 Georgia,serif;margin:0}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:20px}
-figure{margin:0;display:grid;gap:10px;background:#F3EDE3;padding:14px;border:1px solid #E0D3C3}.groot{width:100%;aspect-ratio:1;border-radius:22.4%;display:block}
-.rij{display:flex;gap:10px}.rij img{width:60px;height:60px;border-radius:13.4px;padding:10px;background:#E4D8C8}.rij img.donker{background:#1A120E}
-figcaption{display:grid;font-size:13px}figcaption span{color:#5A3E2B}</style>
+<meta name="viewport" content="width=device-width,initial-scale=1"><style>:root{--bg:#FAF5EF;--ink:#2C1810;--card:#F3EDE3;--line:#E0D3C3;--sub:#5A3E2B;--tile:#E4D8C8}@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17110D;--ink:#F3EDE3;--card:#221913;--line:#3A2B20;--sub:#C9B8A6;--tile:#E4D8C8}}:root[data-theme="dark"]{--bg:#17110D;--ink:#F3EDE3;--card:#221913;--line:#3A2B20;--sub:#C9B8A6;--tile:#E4D8C8}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,sans-serif}main{max-width:1100px;margin:0 auto;padding:32px max(16px,env(safe-area-inset-left,0px));display:grid;gap:24px}
+h1{font:700 30px/1.1 Georgia,serif;margin:0}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(220px,100%),1fr));gap:20px}
+figure{margin:0;display:grid;gap:10px;background:var(--card);padding:14px;border:1px solid var(--line)}.groot{width:100%;aspect-ratio:1;border-radius:22.4%;display:block}
+.rij{display:flex;gap:10px}.rij img{width:60px;height:60px;border-radius:13.4px;padding:10px;background:var(--tile)}.rij img.donker{background:#1A120E}
+figcaption{display:grid;font-size:13px}figcaption span{color:var(--sub)}</style>
 <main><h1>Logo-proeven</h1><p>Groot, en op ware grootte op een licht en een donker scherm. Bronnen en opdrachten: art/logo/prompts.js.</p><div class="grid">${cards.join('')}</div></main>`);
 console.log(`blad.html: ${items.length} proeven + het huidige icoon`);
