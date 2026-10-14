@@ -1,6 +1,6 @@
 # Stand van Crimson Ledger
 
-*Bijgewerkt 13 oktober 2026, op `main` f3de005. Dit is het startpunt voor een nieuwe sessie: eerst dit
+*Bijgewerkt 14 oktober 2026, op `main` 43c0427. Dit is het startpunt voor een nieuwe sessie: eerst dit
 bestand, dan alleen de bestanden die bij de taak horen. Werk het bij aan het eind van elke sessie.*
 
 ## Wie werkt waaraan
@@ -17,15 +17,15 @@ cloudsessies (werken op een eigen `claude/...`-branch met een pull request). Om 
 
 | Sinds | Sessie | Taak | Bestanden |
 |---|---|---|---|
-| 13 okt | cloud, branch `claude/kind-feynman-ocvzz9` | Aankoopteksten in de talen van 1.2. Klaar; wacht op samenvoegen van PR #1, daarna `node store/asc.js iap-locs` op de Mac. | `store/iap-texts.js`, `store/asc.js` (alleen `iapLocalizations`) |
+| 14 okt | cloud, branch `claude/kind-feynman-ocvzz9` | Nieuw logo: voorstellen maken, na keuze van Jaimy het app-icoon, het startscherm en de winkel- en kanaalbeelden vervangen. | `icon-*.png`, `resources/`, `ios/App/App/Assets.xcassets/`, `android/app/src/main/res/`, het `splash-mark` in `index.html`, `store/social/tiktok-avatar.png` |
 
 ## Wat live staat
 
 | | Stand | Bron |
 |---|---|---|
 | iOS-app | Live sinds 22 sep (1.0, build 5), id 6812534368. 1.1 live sinds 3 okt. | `store/OPNAME.md`, `store/social/LOGBOEK.md` |
-| Laatste inzending | 1.1.2 (build 10) op 7 okt, met nieuwe winkelteksten. Uitkomst staat niet in de repo. | `store/ASO.md` |
-| 1.2 bij Apple | Onbekend. Op 12 okt is de versie in App Store Connect voorbereid; Apple weigerde indienen zonder support-URL in de nieuwe talen, dat is hersteld (c491e9d). Of 1.2 daarna is ingediend, staat niet in de repo. De Mac-sessie zet dit in `store/social/LOGBOEK.md`. | `store/asc-release.js` |
+| 1.1.2 | Goedgekeurd op 7 okt (mail van App Store Connect). | `store/ASO.md` |
+| 1.2 bij Apple | Build 1.2.0 (12) op TestFlight op 12 okt. **Goedgekeurd op 13 okt** om 12:09 (mail "Review of your Crimson Ledger: Crime Sudoku submission is complete"). Of hij automatisch is vrijgegeven, staat niet in de mail. | mailbox van het ontwikkelaarsaccount |
 | Nederland (EU) | De NL-winkel toont de app (zoekposities gemeten op 4 en 12 okt). | `store/social/LOGBOEK.md` |
 | Cijfers | 7 dagen tot 8 okt: 245 vertoningen, 31 paginaweergaven, 7 downloads, 0 aankopen, 0 beoordelingen. 12 okt: "moordmysterie" van plek 2 naar 4, mogelijk door de NL-naam van 1.1.2 (niet gemeten). | `store/social/LOGBOEK.md` |
 | Featuring | Nominatie "App Enhancements" ingediend op 4 okt. | `store/NOMINATIE.md` |
@@ -33,7 +33,7 @@ cloudsessies (werken op een eigen `claude/...`-branch met een pull request). Om 
 | TikTok | Carrousels via Metricool haalden bereik (237, 268, 78 views); de vier die rechtstreeks in TikTok Studio zijn gepland, bleven op 0. Te testen: de route van plaatsen. Formaat C (uitleg) vervalt. Op 13 okt niet gemeten (Chrome niet verbonden). | `store/social/LOGBOEK.md` |
 | Kanaalnaam | "Crimson Ledger · Crime Sudoku". YouTube heeft hem; TikTok kan sinds 13 okt worden aangepast. | `store/social/LOGBOEK.md` |
 
-## Versie 1.2: klaar
+## Versie 1.2: goedgekeurd op 13 okt
 
 - Versie 1.2.0, build 12 (iOS, Android, `package.json`, instellingen).
 - 20 talen, met zinsbouw per taal, meervoud, rechts naar links voor Arabisch en Urdu en letters per schrift.
@@ -51,14 +51,13 @@ cloudsessies (werken op een eigen `claude/...`-branch met een pull request). Om 
   wereldomschrijvingen uit de taalbestanden van de app; drie korte omschrijvingen zijn apart vertaald en
   nagelezen. `node store/asc.js iap-locs` zet ze in App Store Connect (op de Mac).
 
-## Versie 1.2: wat nog moet
+## Na 1.2: wat nog moet
 
 | # | Stap | Wie |
 |---|---|---|
-| 1 | Nakijken of 1.2 (build 12) is ingediend, en wat Apple zegt. | Mac-sessie of Jaimy |
-| 2 | `node store/asc.js iap-locs` draaien, zodat de aankopen in elke taal een naam hebben. Een aankoop die in beoordeling zit, staat op slot; het script meldt dat per taal en gaat door. | Mac-sessie |
-| 3 | Nieuwe featuring-nominatie voor 1.2 met 20 talen, minstens drie weken vooruit. | Mac-sessie, na akkoord van Jaimy |
-| 4 | 7 en 14 dagen na goedkeuring de zoekposities meten (NL, US, GB en de grote nieuwe talen). | Mac-sessie |
+| 1 | `git pull` en `node store/asc.js iap-locs` draaien, zodat de aankopen in elke taal een naam hebben. Apple beoordeelt gewijzigde aankoopteksten; ze kunnen mee met de volgende versie (1.2.1, met het nieuwe logo). | Mac-sessie, Jaimy klikt ja |
+| 2 | Nieuwe featuring-nominatie voor 1.2 met 20 talen, minstens drie weken vooruit. | Mac-sessie, na akkoord van Jaimy |
+| 3 | 7 en 14 dagen na goedkeuring de zoekposities meten (NL, US, GB en de grote nieuwe talen). | Mac-sessie |
 
 ## Daarna: de lijst uit de Enigmic-analyse
 
