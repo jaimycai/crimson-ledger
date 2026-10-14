@@ -17,7 +17,7 @@ const LOCALES = {
   'tr': 'tr', 'ur-PK': 'ur', 'vi': 'vi', 'zh-Hans': 'zh'
 };
 const WORLDS = ['hotel', 'ruimte', 'museum', 'trein', 'circus', 'skihut'];
-const WORLD_CASES = 48, WORLD_PARTS = 6, HINT_PACK = 10;
+const WORLD_CASES = 64, WORLD_PARTS = 8, HINT_PACK = 10;
 
 // [Crimson Pass, 10 hints, bordthema's en lijsten]: "Alle werelden, onbeperkt hints en alle thema's." /
 // "Tien extra hints van Inspecteur Van Dam." / "Drie bordthema's en drie lijsten." Woorden en de naam van

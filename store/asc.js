@@ -125,28 +125,28 @@ const IAP_TEXT = {
     'en-US': ['Board themes and frames', 'Three board themes and three frames.']
   },
   'nl.crimsonledger.app.world.hotel': {
-    'nl-NL': ['Grand Hotel Aurora', '48 zaken in zes delen, eigen cast.'],
-    'en-US': ['Grand Hotel Aurora', '48 cases in six parts, own cast.']
+    'nl-NL': ['Grand Hotel Aurora', '64 zaken in acht delen, eigen cast.'],
+    'en-US': ['Grand Hotel Aurora', '64 cases in eight parts, own cast.']
   },
   'nl.crimsonledger.app.world.ruimte': {
-    'nl-NL': ['Station Orion', '48 zaken in zes delen, eigen cast.'],
-    'en-US': ['Station Orion', '48 cases in six parts, own cast.']
+    'nl-NL': ['Station Orion', '64 zaken in acht delen, eigen cast.'],
+    'en-US': ['Station Orion', '64 cases in eight parts, own cast.']
   },
   'nl.crimsonledger.app.world.museum': {
-    'nl-NL': ['Het Museum', '48 zaken in zes delen, eigen cast.'],
-    'en-US': ['The Museum', '48 cases in six parts, own cast.']
+    'nl-NL': ['Het Museum', '64 zaken in acht delen, eigen cast.'],
+    'en-US': ['The Museum', '64 cases in eight parts, own cast.']
   },
   'nl.crimsonledger.app.world.trein': {
-    'nl-NL': ['De Nachttrein', '48 zaken in zes delen, eigen cast.'],
-    'en-US': ['The Night Train', '48 cases in six parts, own cast.']
+    'nl-NL': ['De Nachttrein', '64 zaken in acht delen, eigen cast.'],
+    'en-US': ['The Night Train', '64 cases in eight parts, own cast.']
   },
   'nl.crimsonledger.app.world.circus': {
-    'nl-NL': ['Het Circus', '48 zaken in zes delen, eigen cast.'],
-    'en-US': ['The Circus', '48 cases in six parts, own cast.']
+    'nl-NL': ['Het Circus', '64 zaken in acht delen, eigen cast.'],
+    'en-US': ['The Circus', '64 cases in eight parts, own cast.']
   },
   'nl.crimsonledger.app.world.skihut': {
-    'nl-NL': ['De Skihut', '48 zaken in zes delen, eigen cast.'],
-    'en-US': ['The Ski Lodge', '48 cases in six parts, own cast.']
+    'nl-NL': ['De Skihut', '64 zaken in acht delen, eigen cast.'],
+    'en-US': ['The Ski Lodge', '64 cases in eight parts, own cast.']
   }
 };
 

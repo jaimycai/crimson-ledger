@@ -1,11 +1,11 @@
 [
-  ["04-verklaringen", "Les suspects parlent.", "384 affaires. Sans pub. Une nouvelle chaque jour."],
-  ["02-wereldkaart", "Huit mondes,\nun seul chemin sinueux", "384 affaires, de facile à difficile."],
+  ["04-verklaringen", "Les suspects parlent.", "512 affaires. Sans pub. Une nouvelle chaque jour."],
+  ["02-wereldkaart", "Huit mondes,\nun seul chemin sinueux", "512 affaires, de facile à difficile."],
   ["06-zaak-gesloten", "Affaire classée.", "Des étoiles si tu trouves sans aide et du premier coup."],
   ["01-thuis", "Une nouvelle affaire\nchaque jour", "Des missions du jour, une série à tenir et ta semaine sous les yeux."],
   ["05-beschuldiging", "Qui était seul\navec la victime ?", "Désigne le coupable. Il avoue, ou il nie tout."],
   ["03-briefing", "L’inspecteur Van Dam\nte met sur la piste", "D’abord un briefing, puis des aides en trois étapes."],
-  ["07-vitrine", "Vingt-trois\ndistinctions à décrocher", "Et une vitrine avec une pièce à conviction par affaire."],
+  ["07-vitrine", "Vingt-quatre\ndistinctions à décrocher", "Et une vitrine avec une pièce à conviction par affaire."],
   ["08-winkel", "Pas de vies.\nPas de pub.", "Deux mondes gratuits. Le reste en un seul achat."],
   ["09-circus", "Du Manoir\nau Cirque", "À chaque monde son décor, ses suspects, ses affaires."],
   ["10-hint", "Des aides qui expliquent,\nsans rien dévoiler", "Van Dam te montre une déclaration et ce qui en découle."]
