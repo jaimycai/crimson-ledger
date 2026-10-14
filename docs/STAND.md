@@ -21,14 +21,14 @@ cloudsessies (werken op een eigen `claude/...`-branch met een pull request). Om 
 
 ## Voor de Mac-sessie
 
-Klaargezet door een cloudsessie op 14 okt. Jaimy hoeft alleen akkoord te geven. Doe het in deze volgorde:
+Klaargezet door een cloudsessie op 14 okt. Doe het in deze volgorde, zonder tussendoor te vragen:
 
 1. `git pull`.
 2. **Aankoopteksten:** `node store/asc.js iap-locs` (met de sleutel uit `~/.appstoreconnect`). Meld per taal
    "toegevoegd" of "MISLUKT", en zet het resultaat in `store/social/LOGBOEK.md`.
-3. **Logo-proeven:** `node art/logo/prompts.js` geeft tien opdrachten. Noem Jaimy eerst wat tien beelden in
-   Higgsfield kosten (gpt_image_2_5, high, 1k, 1:1) en wacht op ja. Geef bij elke opdracht met
-   `referentie: assets/vandam.jpg` dat portret mee als referentiebeeld.
+3. **Logo-proeven:** `node art/logo/prompts.js` geeft tien opdrachten. Maak ze meteen in Higgsfield
+   (gpt_image_2_5, high, 1k, 1:1); Jaimy heeft een abonnement, dus je hoeft niet eerst naar de kosten te vragen.
+   Geef bij elke opdracht met `referentie: assets/vandam.jpg` dat portret mee als referentiebeeld.
 4. Download elk beeld met `art/logo/haal.sh <id> <url>`, maak het keuzeblad met `node art/logo/blad.js` en laat
    `art/logo/blad.html` aan Jaimy zien (bijvoorbeeld als artifact). De ruwe beelden blijven buiten git.
 5. Zet de keuze van Jaimy hier in het overzicht. Het vervangen van de iconen (app, startscherm, winkel, kanalen)
@@ -96,8 +96,8 @@ Kan: code, tests (`npm test`, ruim tien minuten), schermafbeeldingen met Chromiu
 vertalingen, documenten, git en pull requests.
 
 Kan niet: bouwen of uploaden (`store/release-ios.sh`), App Store Connect via de API (de sleutel staat in
-`~/.appstoreconnect` op de Mac), TikTok Studio, Metricool en Buffer in Chrome, Higgsfield (kost credits;
-prijs vooraf noemen).
+`~/.appstoreconnect` op de Mac), TikTok Studio, Metricool en Buffer in Chrome, Higgsfield (alleen op de Mac gekoppeld; Jaimy heeft een
+abonnement).
 
 ## Regels die altijd gelden
 
