@@ -41,6 +41,7 @@ const App = {
       if (I18n.lang !== 'nl') document.querySelectorAll('.menu-classic, .how-steps-classic').forEach(el => { el.hidden = true; });   // het klassieke raster is alleen Nederlands
     }
     if (typeof Icons !== 'undefined') { Icons.fill(); Icons.watch(); }
+    this.applyTimerPref();
     this.bootSplash();
     this.loadStreak();
     this.bindNavigation();
@@ -793,6 +794,10 @@ const App = {
       this.resetArmed = false;
     });
     // dagelijkse herinnering: alleen tonen als de app lokale meldingen heeft (iOS)
+    // rustige stand (1.3): de klok tijdens een zaak kan uit; de tijdbonus telt gewoon door
+    const chkT = document.getElementById('chk-timer');
+    if (chkT) { chkT.checked = this.storageGet('crimson-timer-off') !== '1';
+      chkT.addEventListener('change', () => { this.storageSet('crimson-timer-off', chkT.checked ? '0' : '1'); this.applyTimerPref(); }); }
     const chkM = document.getElementById('chk-meting');
     if (chkM && typeof Meting !== 'undefined') { chkM.checked = Meting.on(); chkM.addEventListener('change', () => Meting.setOn(chkM.checked)); }
     const row = document.getElementById('settings-reminder'), chk = document.getElementById('chk-reminder');
@@ -1789,6 +1794,7 @@ const App = {
   prefs() {
     try { const P = window.Capacitor && window.Capacitor.Plugins; return (P && P.Preferences) || null; } catch (e) { return null; }
   },
+  applyTimerPref() { document.documentElement.dataset.timer = this.storageGet('crimson-timer-off') === '1' ? 'off' : 'on'; },
   storageGet(key) {
     try { return localStorage.getItem(key); } catch (e) { return null; }
   },

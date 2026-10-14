@@ -2524,3 +2524,5 @@ button, select, input, textarea { font-family: inherit; }
 :root[data-frame="zilver"] :is(.sus-ava, .bclue-ava, .accuse-ava, .accuse-ava-sm, .results-solution-ava, .part-ava) { border-color: #A9B2BC; box-shadow: 0 0 0 1.5px #A9B2BC; }
 :root[data-frame="crimson"] :is(.sus-ava, .bclue-ava, .accuse-ava, .accuse-ava-sm, .results-solution-ava, .part-ava) { border-color: #8B2E1C; box-shadow: 0 0 0 1.5px #8B2E1C; }
 @media (min-width: 560px) { .difficulty-selector { grid-template-columns: repeat(4, 1fr); } }
+/* rustige stand: klok verborgen (de plek blijft, zodat de kop niet verspringt) */
+:root[data-timer="off"] #board-timer { visibility: hidden; }

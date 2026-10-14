@@ -133,7 +133,11 @@
     'Meldingen staan uit. Zet ze aan bij Instellingen › Crimson Ledger.': 'Notifications are off. Turn them on in Settings › Crimson Ledger.',
     'Je dagelijkse zaak wacht. Houd je streak van {0} dagen vast.': 'Your daily case is waiting. Keep your {0}-day streak going.', 'Je streak van {0} dagen loopt vanavond af. Eén zaak is genoeg.': 'Your {0}-day streak ends tonight. One case is enough.',
     'Er ligt een nieuwe zaak op je bureau. Wie was alleen met het slachtoffer?': 'A new case is on your desk. Who was alone with the victim?',
-    'Gewist': 'Erased', 'Zeker? Tik nogmaals': 'Sure? Tap again', 'Ingesteld: elke dag om 18:30 een herinnering.': 'Reminder set: every day at 18:30.', 'Alle voortgang is gewist.': 'All progress has been erased.',
+    'Gewist': 'Erased', 'Zeker? Tik nogmaals': 'Sure? Tap again',
+    // 1.3
+    'Meester': 'Master', 'Voor echte kenners': 'For true experts', 'Je gaat verder waar je was.': 'You pick up where you left off.',
+    '⏱️ Klok tijdens een zaak': '⏱️ Clock during a case',
+    'Week {0} · {1} {2} · {3}. Elke week één speciale zaak op meesterniveau; iedereen speelt dezelfde. Deel je resultaat met andere speurders.': 'Week {0} · {1} {2} · {3}. One special master-level case every week; everyone plays the same one. Share your result with other sleuths.', 'Ingesteld: elke dag om 18:30 een herinnering.': 'Reminder set: every day at 18:30.', 'Alle voortgang is gewist.': 'All progress has been erased.',
     '{0} verdachten · {1} bij {2} vakjes': '{0} {0|one:suspect|other:suspects} · {1} by {2} grid',
     'hoogste rang bereikt': 'highest rank reached', 'Hoogste rang bereikt': 'Highest rank reached',
     'Vandaag opgelost ✓': 'Solved today ✓', 'Vandaag: {0}': 'Today: {0}', 'Nog geen zaak opgelost. Vandaag de eerste?': 'No case solved yet. The first one today?',
@@ -200,7 +204,7 @@
   data: {
     article: 'the',
     ranks: { Rekruut: 'Recruit', Speurder: 'Sleuth', Rechercheur: 'Detective', Inspecteur: 'Inspector', Hoofdinspecteur: 'Chief Inspector', Meesterdetective: 'Master Detective' },
-    difficulty: { tutorial: 'Practice case', makkelijk: 'Easy', gemiddeld: 'Medium', moeilijk: 'Hard' },
+    difficulty: { tutorial: 'Practice case', makkelijk: 'Easy', gemiddeld: 'Medium', moeilijk: 'Hard', meester: 'Master' },
     themes: {
       landhuis: {
         title: 'The Manor', short: 'Manor', victimName: 'Dr. Edward Blackwood', roomWord: 'room', roomWordPlural: 'rooms',
@@ -316,6 +320,7 @@
       'weekzaak': ['Case of the Week', 'Solve a case of the week'],
       'verzamelaar': ['Collector', 'Collect 24 pieces of evidence in the cabinet'],
       'punten': ['Five Thousand Points', 'Collect 5000 points'],
+      'meesterzaken': ['Master Sleuth', 'Solve five master-level cases'],
       'meester': ['Master Detective', 'Reach the highest rank']
     },
     quests: {
