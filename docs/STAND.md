@@ -17,7 +17,7 @@ cloudsessies (werken op een eigen `claude/...`-branch met een pull request). Om 
 
 | Sinds | Sessie | Taak | Bestanden |
 |---|---|---|---|
-| 14 okt | Mac | **Versie 1.3.0 (14)**: twee delen per wereld erbij (512 zaken), meesterniveau, verder waar je was, klok verbergen. Alle 20 talen vertaald en getest op 15 okt. Wacht op goedkeuring van 1.2.1; daarna 1.3.0 klaarzetten en indienen. Zie `docs/PLAN-1.3.md`. | `campaign.js`, `floorplan.js`, `board.js`, `i18n/`, `store/metadata/1.3.0*`, `store/cards-text/` |
+| 14 okt | Mac | **Versie 1.3.0 (14)**: twee delen per wereld erbij (512 zaken), meesterniveau, verder waar je was, klok verbergen. Alle 20 talen vertaald en getest op 15 okt. **Ingediend op 15 okt** (inzending 8b819bfa, WAITING_FOR_REVIEW, build 14): op Jaimy's verzoek is 1.2.1 teruggetrokken en dezelfde winkelversie omgenummerd naar 1.3.0, dus het nieuwe icoon gaat met 1.3 mee. Teksten en 230 schermafbeeldingen in 23 winkeltalen; de aankoopteksten (64 zaken in acht delen) staan als aankoopversie 2 ter beoordeling. Zie `docs/PLAN-1.3.md`. | `campaign.js`, `floorplan.js`, `board.js`, `i18n/`, `store/metadata/1.3.0*`, `store/cards-text/` |
 
 ## Voor de Mac-sessie
 
@@ -43,7 +43,7 @@ Klaargezet door een cloudsessie op 14 okt. Doe het in deze volgorde, zonder tuss
 | iOS-app | Live sinds 22 sep (1.0, build 5), id 6812534368. 1.1 live sinds 3 okt. | `store/OPNAME.md`, `store/social/LOGBOEK.md` |
 | 1.1.2 | Goedgekeurd op 7 okt (mail van App Store Connect). | `store/ASO.md` |
 | 1.2 bij Apple | 1.2.0 (12) goedgekeurd op 13 okt, READY_FOR_SALE. | `node store/asc-release.js status` |
-| 1.2.1 | Nieuw icoon (Van Dam, `r2-rode-draad`) en aankoopteksten. Ingediend 14 okt, op 15 okt nog WAITING_FOR_REVIEW. | `node store/asc-release.js status` |
+| 1.2.1 | Nieuw icoon en aankoopteksten. Ingediend 14 okt, op 15 okt teruggetrokken en vervangen door 1.3.0 (zelfde winkelversie, build 14), ingediend 15 okt. | `node store/asc-release.js status` |
 | Nederland (EU) | De NL-winkel toont de app (zoekposities gemeten op 4 en 12 okt). | `store/social/LOGBOEK.md` |
 | Cijfers | 7 dagen tot 8 okt: 245 vertoningen, 31 paginaweergaven, 7 downloads, 0 aankopen, 0 beoordelingen. 12 okt: "moordmysterie" van plek 2 naar 4, mogelijk door de NL-naam van 1.1.2 (niet gemeten). | `store/social/LOGBOEK.md` |
 | Featuring | Nominatie "App Enhancements" ingediend op 4 okt. | `store/NOMINATIE.md` |
