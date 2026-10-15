@@ -165,7 +165,9 @@ async function iapLocalizations() {
     for (const [locale, [name, description]] of Object.entries(texts)) {
       if (name.length > 30) throw new Error(`naam te lang (${name.length}) voor ${pid} ${locale}`);
       if (description.length > 45) throw new Error(`beschrijving te lang (${description.length}) voor ${pid} ${locale}`);
-      const existing = have.data.find(l => l.attributes.locale === locale);
+      // an approved text that is being changed exists twice: the approved one (locked) and a draft; edit the draft
+      const same = have.data.filter(l => l.attributes.locale === locale);
+      const existing = same.find(l => l.attributes.state !== 'APPROVED') || same[0];
       try {
       if (existing) {
         await api('PATCH', `/v1/inAppPurchaseLocalizations/${existing.id}`, {
