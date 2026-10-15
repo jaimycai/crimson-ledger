@@ -210,3 +210,15 @@ downloads (22,6% van de bezoekers). De winkelpagina zet bezoekers dus redelijk o
 4. Na 1.2: dezelfde carrousels in het Engels op Instagram en YouTube Shorts via Buffer, en een featuring-
    nominatie. Winkelteksten per taal met eigen zoekwoorden.
 5. Week 3: vijftien Nederlandse puzzel- en BookTok-makers benaderen met een gratis code. Jaimy verstuurt.
+
+## 11. Engels account (15 oktober 2026)
+
+Jaimy maakt een apart Engels TikTok-account aan, naast het Nederlandse. Reden: van de app-opens in de week tot en met
+15 okt waren er 34 Engels en 11 Nederlands. Voorraad: `social/en/` (21 carrousels, gebouwd op 10 okt met `en_carrousel.py`,
+nooit gepost). Daarin staat geen AI-beeld, dus geen AI-label. Week 3 Engels = `en/01` t/m `en/07`, 20 t/m 26 okt om 19:00;
+rooster en teksten staan in `social/EN-WEEK3.md`.
+- Account: 3 tot 5 dagen opwarmen in de Engelse puzzelhoek, zoals bij het Nederlandse account. Naam in de stijl
+  "Crimson Ledger · Crime Sudoku".
+- Concepten pas in Metricool zodra het account daar gekoppeld is. Of het gratis Metricool-plan een tweede TikTok-account of
+  merk toelaat, en of dat een eigen limiet van 20 posts heeft, is niet nagekeken. Lukt het niet, dan via Buffer Free (§10).
+- Meten zoals het Nederlandse account: views na 48 uur, reacties, en het aandeel Engelse nieuwe spelers in `meting.js`.

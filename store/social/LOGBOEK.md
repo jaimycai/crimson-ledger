@@ -150,3 +150,5 @@ eerste publicatie op zijn vroegst 6 oktober.
 - 15 okt: Jaimy vraagt of een Engelse post nodig is, omdat de markt groter is. Gemeten: 34 van de opens deze week zijn Engels,
   11 Nederlands. Voorstel: apart Engels TikTok-account (aanmaken doet Jaimy), daarna wekelijks Engelse carrousels als concept
   via `en_carrousel.py`. Of het gratis Metricool-plan per account een eigen limiet van 20 heeft, is niet nagekeken.
+- 15 okt (na de ronde): Jaimy maakt een Engels TikTok-account aan. Engelse week 3 klaargezet in `social/EN-WEEK3.md`
+  (en/01 t/m en/07, 20 t/m 26 okt 19:00, zonder AI-label). Nog niet in Metricool: het account bestaat nog niet. Zie TIKTOK-PLAN §11.
