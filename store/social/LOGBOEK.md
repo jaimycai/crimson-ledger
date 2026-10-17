@@ -178,3 +178,10 @@ eerste publicatie op zijn vroegst 6 oktober.
   Engelse bio, detective-icoon en taal English (US). Opslaan van naam, bio en foto tegelijk gaf "Er is iets misgegaan"; los
   per veld lukte het. Accountregio staat vast op Netherlands (TikTok: bepaald bij registratie, niet te wijzigen op het web).
   Opwarmen 3 tot 5 dagen; eerste Engelse post op zijn vroegst rond 22 okt. Het NL-profiel heeft nog het oude vergrootglas-icoon.
+- 18 okt (woordkeuze, TIKTOK-PLAN §13): ingeplande posts aangepast. Metricool 20, 21, 22 okt en Buffer 23 t/m 26 okt: hashtags zonder
+  #moordraadsel; w3-02 (21 okt) en w3-05 (24 okt) kregen een nieuwe tekst en een nieuwe dia 1 ("15 seconden. Eén dader. Jij?" en "Ze spreken
+  allemaal de waarheid. Wie was het?"); hun laatste dia toont nu het detective-icoon. De Metricool-concepten voor 23 t/m 26 okt staan nog als
+  concept (oude tekst) en publiceren niet. EN-bio: "Can you find the culprit? 🔍 512 mystery cases, pure logic. App: Crimson Ledger".
+- 18 okt: Spaans account @crimsonledger.es (Jaimy). Claude zette bio "¿Puedes encontrar al culpable? 🔍 512 casos, pura lógica. App:
+  Crimson Ledger", naam "Crimson Ledger · Crime Sudoku", detective-icoon, taal Español (Latinoamérica). Regio "Países Bajos" vast.
+  Openbaar, reacties voor iedereen. Nog niet in Buffer: Free heeft 3 kanalen en die zijn bezet (NL, EN, YouTube).
