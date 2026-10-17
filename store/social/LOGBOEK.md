@@ -170,3 +170,7 @@ eerste publicatie op zijn vroegst 6 oktober.
   "Jouw merk"-optie en geen muziekkeuze bij fotoposts (Metricool: wel "Jouw merk" en willekeurige muziek); het AI-beeld staat in beide
   in de tekst. Vergelijk views na 48 uur. Buffer Free: 10 posts tegelijk in de wachtrij; Buffer toont ook "Reach" per TikTok-post
   (post 7: 225), bruikbaar als tweede meetbron.
+- 17 okt (na akkoord Jaimy): TikTok-weergavenaam "Crimson Ledger · Crime Sudoku" (volgende wijziging pas over 7 dagen), bio "Kun jij de dader
+  vinden? 🔍 512 moordzaken, puur logica. App: Crimson Ledger". Featuring-nominatie ebb2170c ingediend (NEW_CONTENT, 1.3, 23 talen, datum 26 okt).
+  In-App Event "Zaak van de week" (6824057777) ingediend ter beoordeling: 26 okt t/m 25 nov, alle landen, 23 talen, badge Challenge,
+  zelfde woordloze kaart voor elke taal (`store/events/`). Deeplink = winkelpagina, want de app heeft geen URL-schema.

@@ -43,8 +43,8 @@ TikTok leverde in 7 dagen 8 profielweergaven. Paginaweergaven 10 t/m 16 okt: Spa
 
 | # | Actie | Waarom | Wie | Status |
 |---|---|---|---|---|
-| 1 | **In-App Event "Zaak van de week"** in alle 20 winkeltalen | Events staan in zoekresultaten en op de Vandaag-pagina, per land, gratis. Grootste hefboom in de landen waar we al 4 tot 9 staan. | Claude bouwt kaart en teksten, dient in via de API na akkoord | klaar te bouwen |
-| 2 | **Featuring-nominatie 1.3** (20 talen, meesterniveau) | Eén nominatie per release is gratis; 1.3 is de grootste update tot nu toe | Claude via `asc-nominatie.js`, na akkoord | te doen |
+| 1 | **In-App Event "Zaak van de week"** in alle 20 winkeltalen | Events staan in zoekresultaten en op de Vandaag-pagina, per land, gratis. Grootste hefboom in de landen waar we al 4 tot 9 staan. | Claude (`store/events/asc-event.js`) | ingediend 17 okt, loopt 26 okt t/m 25 nov |
+| 2 | **Featuring-nominatie 1.3** (20 talen, meesterniveau) | Eén nominatie per release is gratis; 1.3 is de grootste update tot nu toe | Claude via `asc-nominatie.js` | ingediend 17 okt (ebb2170c) |
 | 3 | **Beoordelingen** | Vraagmomenten zitten al in de app (tweede zaak, cadeauwereld, zaak van de week; `app.js` maybeAskReview). Meer kan alleen door meer spelers. Beloning voor een beoordeling mag niet. | — | staat |
 | 4 | **Promotietekst per taal** elke week roteren met de zaak van de week | Kost niets, geen review nodig | Claude, wekelijks | te doen |
 | 5 | **Spaanstalige content** (`social/es/`, 7 carrousels klaar) | Grootste groep bezoekers; het genre ging in Spanje viraal | Jaimy maakt het account, Claude plant | wacht op account |

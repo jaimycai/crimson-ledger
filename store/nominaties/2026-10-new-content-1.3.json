@@ -1,0 +1,12 @@
+{
+  "name": "Crimson Ledger 1.3: 512 cases, master level, 20 languages",
+  "type": "NEW_CONTENT",
+  "description": "Crimson Ledger is a murder-mystery logic puzzle by an independent developer in the Netherlands. Each case is a floor plan with suspects, rooms and furniture: players place every suspect from their statements and unmask the one person who was alone with the victim. Our own engine builds and proves every case, so there is exactly one solution, reachable by pure logic, never by guessing. Version 1.3 adds 128 cases (512 in total, 128 free), a new master level with 9x9 floor plans and five suspects, resume-where-you-left-off, and a setting to hide the clock. The app and store page are fully localized in 20 languages, from Spanish, Portuguese and French to Japanese, Korean, Arabic and Hindi. A weekly master case runs as the In-App Event 'Case of the Week'. No ads, no subscription, plays offline.",
+  "publishStartDate": "2026-10-26T00:00:00Z",
+  "deviceFamilies": ["IPHONE"],
+  "locales": ["en-US", "en-GB", "nl-NL", "ar-SA", "bn-BD", "de-DE", "es-ES", "es-MX", "fr-FR", "hi", "id", "it", "ja", "ko", "mr-IN", "pt-BR", "pt-PT", "ru", "te-IN", "tr", "ur-PK", "vi", "zh-Hans"],
+  "hasInAppEvents": true,
+  "launchInSelectMarketsFirst": false,
+  "preOrderEnabled": false,
+  "notes": "Version 1.3.0 is live since 15 October 2026. The publish date is the start of the In-App Event 'Case of the Week' (26 October to 25 November). Store pages for Latin America, Brazil and Italy now bring most of our visitors after localization. Single developer, the Netherlands."
+}
