@@ -185,3 +185,9 @@ eerste publicatie op zijn vroegst 6 oktober.
 - 18 okt: Spaans account @crimsonledger.es (Jaimy). Claude zette bio "¿Puedes encontrar al culpable? 🔍 512 casos, pura lógica. App:
   Crimson Ledger", naam "Crimson Ledger · Crime Sudoku", detective-icoon, taal Español (Latinoamérica). Regio "Países Bajos" vast.
   Openbaar, reacties voor iedereen. Nog niet in Buffer: Free heeft 3 kanalen en die zijn bezet (NL, EN, YouTube).
+- 18 okt: Buffer heeft nu TikTok NL, EN (@crimsonledgergame) en ES (@crimsonledger.es); YouTube eruit (Jaimy). Kanaaltijdzone EN = New York,
+  ES = Mexico City; de kiezer in Buffer rekent in Amsterdam-tijd. Ingepland, 19:00 lokale avondtijd (VS-oost en Mexico):
+  EN `en/01` t/m `07`: 23, 24, 25 okt 01:00 en 26, 27, 28, 29 okt 00:00 (Amsterdam) = 22 t/m 28 okt 19:00 New York.
+  ES `es/01` t/m `05`: 23, 24, 25 okt 03:00 en 26, 27 okt 02:00 (Amsterdam) = 22 t/m 26 okt 19:00-20:00 Mexico-Stad.
+  ES `es/06` en `07` (27 en 28 okt Mexico) nog niet: de veiligheidscontrole van Claude Code vroeg een uitdrukkelijk akkoord.
+  Nieuwe accounts posten op dag 4 na aanmaak; het plan zegt 3 tot 5 dagen opwarmen.
