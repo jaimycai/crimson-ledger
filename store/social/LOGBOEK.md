@@ -23,9 +23,9 @@ eerste publicatie op zijn vroegst 6 oktober.
 | w2c-02 | week2c/02-c1-2 | A carrousel | gepland TikTok Studio | 11 okt 12:00 ("Geen beschrijving": tekst ontbreekt) | 1 na 78u (14 okt 17:51); 1 op 17 okt 22:00 | 0 | 0 | niet gemeten | niet gemeten | |
 | w2c-03 | week2c/03-c4-0 | A carrousel | gepland TikTok Studio | 11 okt 16:00 ("Voetsporen in het zand") | 1 na 74u (14 okt 17:51); 1 op 17 okt 22:00 | 0 | 0 | niet gemeten | niet gemeten | |
 | w2c-04 | week2c/04-c1-0 | A carrousel | gepland TikTok Studio | 11 okt 21:00 ("De verzegelde deur") | 1 na 69u (14 okt 17:51); 1 op 17 okt 22:00 | 0 | 0 | niet gemeten | niet gemeten | |
-| w3-01 | week2c/05-c2-1 | A carrousel | concept in Metricool 15 okt (di 20 okt 19:00, automatisch publiceren uit) | niet live (wacht op "plan week 3 in") | | | | | | Thomas |
-| w3-02 | week2c/06-c3-2 | A carrousel | concept in Metricool 15 okt (wo 21 okt 19:00, automatisch publiceren uit) | niet live (wacht op "plan week 3 in") | | | | | | Stuurman Kwint |
-| w3-03 | week2c/07-c2-0 | A carrousel | concept in Metricool 15 okt (do 22 okt 19:00, automatisch publiceren uit) | niet live (wacht op "plan week 3 in") | | | | | | Isabelle |
+| w3-01 | week2c/05-c2-1 | A carrousel | concept in Metricool 15 okt (di 20 okt 19:00, automatisch publiceren uit) | ingepland Metricool 17 okt 22:45 (di 20 okt 19:00; Publiek, muziek, Jouw merk) | | | | | | Thomas |
+| w3-02 | week2c/06-c3-2 | A carrousel | concept in Metricool 15 okt (wo 21 okt 19:00, automatisch publiceren uit) | ingepland Metricool 17 okt 22:45 (wo 21 okt 19:00; Publiek, muziek, Jouw merk) | | | | | | Stuurman Kwint |
+| w3-03 | week2c/07-c2-0 | A carrousel | concept in Metricool 15 okt (do 22 okt 19:00, automatisch publiceren uit) | ingepland Metricool 17 okt 22:45 (do 22 okt 19:00; Publiek, muziek, Jouw merk) | | | | | | Isabelle |
 | w3-04 | week2c/08-c3-3 | A carrousel | concept in Metricool 15 okt (vr 23 okt 19:00, automatisch publiceren uit) | niet live (wacht op "plan week 3 in") | | | | | | Juffrouw Lark |
 | w3-05 | week2c/09-c4-4 | A carrousel | concept in Metricool 15 okt (za 24 okt 19:00, automatisch publiceren uit) | niet live (wacht op "plan week 3 in") | | | | | | Kanonnier Bo |
 | w3-06 | week2c/10-c3-1 | A carrousel | concept in Metricool 15 okt (zo 25 okt 19:00, automatisch publiceren uit) | niet live (wacht op "plan week 3 in") | | | | | | Dokter Sal |
@@ -163,3 +163,5 @@ eerste publicatie op zijn vroegst 6 oktober.
   Zoekpositie: sterk in eigen-taaltermen (br "ache o culpado" 1, it "sudoku omicidio" 5, es/mx/fr "sudoku asesinato/meurtre" 7), maar
   us/gb "murder sudoku" niet in de top 200 bij 0 beoordelingen. Zeven Spaanse carrousels gebouwd (`es/`, `ES-WEEK1.md`). Details en
   volgorde: TIKTOK-PLAN §12.
+- 17 okt 22:45: "plan week 3 in" van Jaimy. w3-01 t/m w3-03 (20 t/m 22 okt) staan op automatisch publiceren. Daarna gestopt op vraag
+  van Jaimy over de route (gratis alternatief, nieuwe accounts); w3-04 t/m w3-07 (23 t/m 26 okt) blijven concept.
