@@ -28,9 +28,9 @@ def center(d, y, text, font, fill, maxw=W - 140, lh=1.2):
     return y
 
 # Same order of three per day; the hook rotates so no two videos in a row open the same way.
-HOOKS = ["Kun jij de dader vinden in {t} seconden?", "Ze spreken allemaal de waarheid. Wie is de moordenaar?",
+HOOKS = ["Kun jij de dader vinden in {t} seconden?", "Ze spreken allemaal de waarheid. Wie was het?",
          "Lukt dit jou zonder te gokken?", "Eén van hen was alleen met het slachtoffer. Wie?",
-         "Lees mee. Wie heeft het gedaan?", "{t} seconden. Eén moordenaar. Jij?", "Speurneus? Bewijs het."]
+         "Lees mee. Wie heeft het gedaan?", "{t} seconden. Eén dader. Jij?", "Speurneus? Bewijs het."]
 SLOTS = ["12:00", "16:00", "21:00"]
 DAYS = ["do 8 okt", "vr 9 okt", "za 10 okt", "zo 11 okt", "ma 12 okt", "di 13 okt", "wo 14 okt"]
 CASES = ["c3-0", "c1-2", "c4-0", "c1-0", "c2-1", "c3-2", "c2-0", "c3-3", "c4-4", "c3-1", "c1-3", "c5-0",

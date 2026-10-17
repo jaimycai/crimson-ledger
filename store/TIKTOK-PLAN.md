@@ -254,3 +254,22 @@ termen hebben 50 tot 2.162 beoordelingen (Enigmic, Murder Sudoku: Tiny Crimes).
    (na de 2e opgeloste zaak, bij de cadeauwereld). Dit is de hefboom voor de Engelse markt; vergt een nieuwe build.
 4. Spaans account pas als het Engelse account na een week bereik haalt; anders eerst de les uit het Engelse account toepassen.
    Eén nieuw account tegelijk, zodat het verschil meetbaar blijft.
+
+## 13. Woordkeuze (18 oktober 2026)
+
+Besluit Jaimy: niet steeds "moordenaar", "killer" of "murder" gebruiken; het klinkt raar en wordt niet goed geassocieerd.
+Daarnaast zeggen makers vaak dat TikTok woorden rond geweld minder verspreidt ("algospeak"). Dat is niet door TikTok bevestigd
+en door ons niet gemeten; het is een reden te meer, geen bewezen oorzaak van het lage bereik.
+
+| Taal | Niet in haken, teksten en bio | Wel |
+|---|---|---|
+| NL | moordenaar, moordraadsel, moordzaken | dader, wie was het, wie heeft het gedaan, zaak, raadsel, speurneus |
+| EN | killer, murder, murderer | culprit, who did it, case, mystery, whodunit, sleuth |
+| ES | asesino, asesinato | culpable, quién fue, caso, misterio, enigma |
+
+"Slachtoffer"/"victim"/"víctima" mag: zonder dat woord is de spelregel niet uit te leggen. De winkel valt hier niet onder:
+"murder sudoku" is daar de zoekterm van het genre (ASO.md). Het ingediende In-App Event noemt nog "murder case"; bij een
+volgend event neutraal.
+
+Toegepast op 18 okt: haken en hashtags in `week2.py`, `week2_carrousel.py`, `en_carrousel.py`; niet-geposte carrousels
+`week2c/05` t/m `21`, `en/`, `es/` opnieuw gebouwd; `EN-WEEK3.md`, `ES-WEEK1.md`, `ACCOUNTS-KIT.md` bijgewerkt.

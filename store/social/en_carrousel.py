@@ -17,21 +17,21 @@ ACCENTS = [(214, 92, 34), (126, 76, 214), (38, 108, 196), (40, 128, 70)]
 LANG = os.environ.get("LANG_CAROUSEL", "en")   # en (default) or es:  LANG_CAROUSEL=es python3 en_carrousel.py
 SRC, OUT = f"cases-{LANG}", LANG
 T = {
- "en": dict(hooks=[("Can you find the", "killer?"), ("Only one of them was", "alone."), ("Solve it without", "guessing."),
+ "en": dict(hooks=[("Can you find the", "culprit?"), ("Only one of them was", "alone."), ("Solve it without", "guessing."),
          ("Who did it? You have", "25 seconds."), ("Everyone tells the", "truth."), ("Think like a real", "detective."),
-         ("Find the killer with pure", "logic.")],
-   suspects="suspects", read=("Read the", "clues"), rule="The killer was the only one in the victim's room.",
+         ("Find the culprit with pure", "logic.")],
+   suspects="suspects", read=("Read the", "clues"), rule="The culprit was the only one in the victim's room.",
    steps=("Place, eliminate,", "deduce"), who=("Who did it?", "Comment below"), tomorrow="Answer in the comments tomorrow.",
    free="96 free cases · App Store", caption="read the statements and put your answer in the comments.",
-   tags="#murdermystery #logicpuzzle #whodunit #riddle #detective #puzzle #brainteaser #murdersudoku",
+   tags="#mystery #logicpuzzle #whodunit #riddle #detective #puzzle #brainteaser #crimesudoku",
    answer="ANSWER (pin as a comment after 24 hours): {}. Play the full case in Crimson Ledger."),
- "es": dict(hooks=[("¿Puedes encontrar al", "asesino?"), ("Solo uno estaba a solas con la", "víctima."), ("Resuélvelo sin", "adivinar."),
+ "es": dict(hooks=[("¿Puedes encontrar al", "culpable?"), ("Solo uno estaba a solas con la", "víctima."), ("Resuélvelo sin", "adivinar."),
          ("¿Quién fue? Tienes", "25 segundos."), ("Todos dicen la", "verdad."), ("Piensa como un verdadero", "detective."),
-         ("Encuentra al asesino con pura", "lógica.")],
-   suspects="sospechosos", read=("Lee las", "pistas"), rule="El asesino era el único en la sala de la víctima.",
+         ("Encuentra al culpable con pura", "lógica.")],
+   suspects="sospechosos", read=("Lee las", "pistas"), rule="El culpable era el único en la sala de la víctima.",
    steps=("Coloca, descarta,", "deduce"), who=("¿Quién fue?", "Comenta abajo"), tomorrow="Respuesta mañana en los comentarios.",
    free="96 casos gratis · App Store", caption="lee las declaraciones y deja tu respuesta en los comentarios.",
-   tags="#misterio #asesinato #acertijo #detective #logica #puzzle #quienfue #sudokuasesinato",
+   tags="#misterio #acertijo #detective #logica #puzzle #quienfue #enigma #sudoku",
    answer="RESPUESTA (fija como comentario tras 24 horas): {}. Juega el caso completo en Crimson Ledger."),
 }[LANG]
 HOOKS = T["hooks"]

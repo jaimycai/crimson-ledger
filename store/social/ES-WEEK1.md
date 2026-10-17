@@ -8,9 +8,9 @@ Dates below are a placeholder week; shift them to the first week after the accou
 ## Tue 20 Oct, 19:00 — es/01-c3-0
 
 ```
-¿Puedes encontrar al asesino? 🔍 El mar en calma: lee las declaraciones y deja tu respuesta en los comentarios.
+¿Puedes encontrar al culpable? 🔍 El mar en calma: lee las declaraciones y deja tu respuesta en los comentarios.
 
-#misterio #asesinato #acertijo #detective #logica #puzzle #quienfue #sudokuasesinato
+#misterio #acertijo #detective #logica #puzzle #quienfue #enigma #sudoku
 ```
 
 Pin after 24h: Artillero Thorne. Juega el caso completo en Crimson Ledger.
@@ -20,7 +20,7 @@ Pin after 24h: Artillero Thorne. Juega el caso completo en Crimson Ledger.
 ```
 Solo uno estaba a solas con la víctima. 🔍 El diario de Agatha: lee las declaraciones y deja tu respuesta en los comentarios.
 
-#misterio #asesinato #acertijo #detective #logica #puzzle #quienfue #sudokuasesinato
+#misterio #acertijo #detective #logica #puzzle #quienfue #enigma #sudoku
 ```
 
 Pin after 24h: Mr. Hargrove. Juega el caso completo en Crimson Ledger.
@@ -30,7 +30,7 @@ Pin after 24h: Mr. Hargrove. Juega el caso completo en Crimson Ledger.
 ```
 Resuélvelo sin adivinar. 🔍 Huellas en la arena: lee las declaraciones y deja tu respuesta en los comentarios.
 
-#misterio #asesinato #acertijo #detective #logica #puzzle #quienfue #sudokuasesinato
+#misterio #acertijo #detective #logica #puzzle #quienfue #enigma #sudoku
 ```
 
 Pin after 24h: Timonel Ronan. Juega el caso completo en Crimson Ledger.
@@ -40,7 +40,7 @@ Pin after 24h: Timonel Ronan. Juega el caso completo en Crimson Ledger.
 ```
 ¿Quién fue? Tienes 25 segundos. 🔍 La puerta sellada: lee las declaraciones y deja tu respuesta en los comentarios.
 
-#misterio #asesinato #acertijo #detective #logica #puzzle #quienfue #sudokuasesinato
+#misterio #acertijo #detective #logica #puzzle #quienfue #enigma #sudoku
 ```
 
 Pin after 24h: Juniper. Juega el caso completo en Crimson Ledger.
@@ -50,7 +50,7 @@ Pin after 24h: Juniper. Juega el caso completo en Crimson Ledger.
 ```
 Todos dicen la verdad. 🔍 El abrigo mojado: lee las declaraciones y deja tu respuesta en los comentarios.
 
-#misterio #asesinato #acertijo #detective #logica #puzzle #quienfue #sudokuasesinato
+#misterio #acertijo #detective #logica #puzzle #quienfue #enigma #sudoku
 ```
 
 Pin after 24h: Mortimer. Juega el caso completo en Crimson Ledger.
@@ -60,7 +60,7 @@ Pin after 24h: Mortimer. Juega el caso completo en Crimson Ledger.
 ```
 Piensa como un verdadero detective. 🔍 Ron en la bodega: lee las declaraciones y deja tu respuesta en los comentarios.
 
-#misterio #asesinato #acertijo #detective #logica #puzzle #quienfue #sudokuasesinato
+#misterio #acertijo #detective #logica #puzzle #quienfue #enigma #sudoku
 ```
 
 Pin after 24h: Timonel Ronan. Juega el caso completo en Crimson Ledger.
@@ -68,9 +68,9 @@ Pin after 24h: Timonel Ronan. Juega el caso completo en Crimson Ledger.
 ## Mon 26 Oct, 19:00 — es/07-c2-0
 
 ```
-Encuentra al asesino con pura lógica. 🔍 Se va la luz: lee las declaraciones y deja tu respuesta en los comentarios.
+Encuentra al culpable con pura lógica. 🔍 Se va la luz: lee las declaraciones y deja tu respuesta en los comentarios.
 
-#misterio #asesinato #acertijo #detective #logica #puzzle #quienfue #sudokuasesinato
+#misterio #acertijo #detective #logica #puzzle #quienfue #enigma #sudoku
 ```
 
 Pin after 24h: Juniper. Juega el caso completo en Crimson Ledger.

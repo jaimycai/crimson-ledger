@@ -16,7 +16,7 @@ Aanmaken doet Jaimy zelf; Claude maakt geen accounts en logt nergens in. Daarna 
 | | Engels | Spaans |
 |---|---|---|
 | Naam | Crimson Ledger · Crime Sudoku | Crimson Ledger · Crime Sudoku |
-| Bio (≤80) | Can you find the killer? 🔍 512 murder cases, pure logic. App: Crimson Ledger | ¿Puedes encontrar al asesino? 🔍 512 casos, pura lógica. App: Crimson Ledger |
+| Bio (≤80) | Can you find the culprit? 🔍 512 mystery cases, pure logic. App: Crimson Ledger | ¿Puedes encontrar al culpable? 🔍 512 casos, pura lógica. App: Crimson Ledger |
 | Profielfoto | `store/social/tiktok-avatar.png` (zelfde als het Nederlandse account) | idem |
 
 De naam is op elk kanaal gelijk (besluit 10 okt). Link in bio kan pas vanaf 1.000 volgers.

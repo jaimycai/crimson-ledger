@@ -21,7 +21,7 @@ def build(k, cid):
     for j, s in enumerate(slides): s.save(f"{out}/{j + 1}.jpg", quality=90)
     open(f"{out}/tekst.txt", "w").write(
         f"{h} 🔍 Beeld 1 is gemaakt met AI. {c['title']}: lees de verklaringen en zet je antwoord in de reacties.\n\n"
-        f"#moordraadsel #raadsel #wieishetgeweest #detective #breinbreker #puzzel #logica #whodunnit\n\n"
+        f"#raadsel #wieishetgeweest #puzzeltijd #detective #breinbreker #puzzel #logica #whodunnit\n\n"
         f"ANTWOORD (na 24 uur vastpinnen als reactie): {c['suspects'][c['murderer']]}. Speel de hele zaak in Crimson Ledger.\n")
     print(k + 1, cid, c["title"], "|", h)
 

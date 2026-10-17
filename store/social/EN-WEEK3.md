@@ -8,9 +8,9 @@ Caption: copy the block below as is. The answer is NOT in the caption; pin it as
 ## Tue 20 Oct, 19:00 — en/01-c3-0
 
 ```
-Can you find the killer? 🔍 The Still Sea: read the statements and put your answer in the comments.
+Can you find the culprit? 🔍 The Still Sea: read the statements and put your answer in the comments.
 
-#murdermystery #logicpuzzle #whodunit #riddle #detective #puzzle #brainteaser #murdersudoku
+#mystery #logicpuzzle #whodunit #riddle #detective #puzzle #brainteaser #crimesudoku
 ```
 
 Pin after 24h: Gunner Thorne. Play the full case in Crimson Ledger.
@@ -20,7 +20,7 @@ Pin after 24h: Gunner Thorne. Play the full case in Crimson Ledger.
 ```
 Only one of them was alone. 🔍 Agatha's Diary: read the statements and put your answer in the comments.
 
-#murdermystery #logicpuzzle #whodunit #riddle #detective #puzzle #brainteaser #murdersudoku
+#mystery #logicpuzzle #whodunit #riddle #detective #puzzle #brainteaser #crimesudoku
 ```
 
 Pin after 24h: Mr. Hargrove. Play the full case in Crimson Ledger.
@@ -30,7 +30,7 @@ Pin after 24h: Mr. Hargrove. Play the full case in Crimson Ledger.
 ```
 Solve it without guessing. 🔍 Footprints in the Sand: read the statements and put your answer in the comments.
 
-#murdermystery #logicpuzzle #whodunit #riddle #detective #puzzle #brainteaser #murdersudoku
+#mystery #logicpuzzle #whodunit #riddle #detective #puzzle #brainteaser #crimesudoku
 ```
 
 Pin after 24h: Helmsman Ronan. Play the full case in Crimson Ledger.
@@ -40,7 +40,7 @@ Pin after 24h: Helmsman Ronan. Play the full case in Crimson Ledger.
 ```
 Who did it? You have 25 seconds. 🔍 The Sealed Door: read the statements and put your answer in the comments.
 
-#murdermystery #logicpuzzle #whodunit #riddle #detective #puzzle #brainteaser #murdersudoku
+#mystery #logicpuzzle #whodunit #riddle #detective #puzzle #brainteaser #crimesudoku
 ```
 
 Pin after 24h: Juniper. Play the full case in Crimson Ledger.
@@ -50,7 +50,7 @@ Pin after 24h: Juniper. Play the full case in Crimson Ledger.
 ```
 Everyone tells the truth. 🔍 The Wet Coat: read the statements and put your answer in the comments.
 
-#murdermystery #logicpuzzle #whodunit #riddle #detective #puzzle #brainteaser #murdersudoku
+#mystery #logicpuzzle #whodunit #riddle #detective #puzzle #brainteaser #crimesudoku
 ```
 
 Pin after 24h: Mortimer. Play the full case in Crimson Ledger.
@@ -60,7 +60,7 @@ Pin after 24h: Mortimer. Play the full case in Crimson Ledger.
 ```
 Think like a real detective. 🔍 Rum in the Hold: read the statements and put your answer in the comments.
 
-#murdermystery #logicpuzzle #whodunit #riddle #detective #puzzle #brainteaser #murdersudoku
+#mystery #logicpuzzle #whodunit #riddle #detective #puzzle #brainteaser #crimesudoku
 ```
 
 Pin after 24h: Helmsman Ronan. Play the full case in Crimson Ledger.
@@ -68,9 +68,9 @@ Pin after 24h: Helmsman Ronan. Play the full case in Crimson Ledger.
 ## Mon 26 Oct, 19:00 — en/07-c2-0
 
 ```
-Find the killer with pure logic. 🔍 The Lights Go Out: read the statements and put your answer in the comments.
+Find the culprit with pure logic. 🔍 The Lights Go Out: read the statements and put your answer in the comments.
 
-#murdermystery #logicpuzzle #whodunit #riddle #detective #puzzle #brainteaser #murdersudoku
+#mystery #logicpuzzle #whodunit #riddle #detective #puzzle #brainteaser #crimesudoku
 ```
 
 Pin after 24h: Juniper. Play the full case in Crimson Ledger.
