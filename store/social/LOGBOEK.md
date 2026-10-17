@@ -26,10 +26,10 @@ eerste publicatie op zijn vroegst 6 oktober.
 | w3-01 | week2c/05-c2-1 | A carrousel | concept in Metricool 15 okt (di 20 okt 19:00, automatisch publiceren uit) | ingepland Metricool 17 okt 22:45 (di 20 okt 19:00; Publiek, muziek, Jouw merk) | | | | | | Thomas |
 | w3-02 | week2c/06-c3-2 | A carrousel | concept in Metricool 15 okt (wo 21 okt 19:00, automatisch publiceren uit) | ingepland Metricool 17 okt 22:45 (wo 21 okt 19:00; Publiek, muziek, Jouw merk) | | | | | | Stuurman Kwint |
 | w3-03 | week2c/07-c2-0 | A carrousel | concept in Metricool 15 okt (do 22 okt 19:00, automatisch publiceren uit) | ingepland Metricool 17 okt 22:45 (do 22 okt 19:00; Publiek, muziek, Jouw merk) | | | | | | Isabelle |
-| w3-04 | week2c/08-c3-3 | A carrousel | concept in Metricool 15 okt (vr 23 okt 19:00, automatisch publiceren uit) | niet live (wacht op "plan week 3 in") | | | | | | Juffrouw Lark |
-| w3-05 | week2c/09-c4-4 | A carrousel | concept in Metricool 15 okt (za 24 okt 19:00, automatisch publiceren uit) | niet live (wacht op "plan week 3 in") | | | | | | Kanonnier Bo |
-| w3-06 | week2c/10-c3-1 | A carrousel | concept in Metricool 15 okt (zo 25 okt 19:00, automatisch publiceren uit) | niet live (wacht op "plan week 3 in") | | | | | | Dokter Sal |
-| w3-07 | week2c/11-c1-3 | A carrousel | concept in Metricool 15 okt (ma 26 okt 19:00, automatisch publiceren uit) | niet live (wacht op "plan week 3 in") | | | | | | Marcus |
+| w3-04 | week2c/08-c3-3 | A carrousel | concept in Metricool 15 okt (vr 23 okt 19:00, automatisch publiceren uit) | ingepland Buffer 17 okt (vr 23 okt 19:00, automatisch; Metricool-concept blijft concept) | | | | | | Juffrouw Lark |
+| w3-05 | week2c/09-c4-4 | A carrousel | concept in Metricool 15 okt (za 24 okt 19:00, automatisch publiceren uit) | ingepland Buffer 17 okt (za 24 okt 19:00, automatisch; Metricool-concept blijft concept) | | | | | | Kanonnier Bo |
+| w3-06 | week2c/10-c3-1 | A carrousel | concept in Metricool 15 okt (zo 25 okt 19:00, automatisch publiceren uit) | ingepland Buffer 17 okt (zo 25 okt 19:00, automatisch; Metricool-concept blijft concept) | | | | | | Dokter Sal |
+| w3-07 | week2c/11-c1-3 | A carrousel | concept in Metricool 15 okt (ma 26 okt 19:00, automatisch publiceren uit) | ingepland Buffer 17 okt (ma 26 okt 19:00, automatisch; Metricool-concept blijft concept) | | | | | | Marcus |
 
 ## Dagcijfers
 
@@ -165,3 +165,8 @@ eerste publicatie op zijn vroegst 6 oktober.
   volgorde: TIKTOK-PLAN §12.
 - 17 okt 22:45: "plan week 3 in" van Jaimy. w3-01 t/m w3-03 (20 t/m 22 okt) staan op automatisch publiceren. Daarna gestopt op vraag
   van Jaimy over de route (gratis alternatief, nieuwe accounts); w3-04 t/m w3-07 (23 t/m 26 okt) blijven concept.
+- 17 okt 23:50: routetest op verzoek van Jaimy. w3-04 t/m w3-07 (23 t/m 26 okt, 19:00) via Buffer Free ingepland, w3-01 t/m w3-03 via
+  Metricool. Zelfde soort carrousel, zelfde tijd; de route is de enige bedoelde verandering. Verschillen die Buffer oplegt: geen
+  "Jouw merk"-optie en geen muziekkeuze bij fotoposts (Metricool: wel "Jouw merk" en willekeurige muziek); het AI-beeld staat in beide
+  in de tekst. Vergelijk views na 48 uur. Buffer Free: 10 posts tegelijk in de wachtrij; Buffer toont ook "Reach" per TikTok-post
+  (post 7: 225), bruikbaar als tweede meetbron.
