@@ -1,6 +1,5 @@
-// In-App Event in App Store Connect. Event images take only uploaded: true (no checksum, unlike app screenshots).
 // In-App Event in App Store Connect from a spec in store/events/<name>.json: event, one localization per store
-// language, the same wordless card (1920x1080) and details image (1080x1920) for every language, then review.
+// language, the same wordless card (1920x1080) and details image (1080x1920) for every language, then review. Event images take only uploaded: true (no checksum, unlike app screenshots).
 //   node store/events/asc-event.js store/events/zaak-van-de-week.json            create as draft
 //   node store/events/asc-event.js store/events/zaak-van-de-week.json --submit   also submit for review
 //   node store/events/asc-event.js list
