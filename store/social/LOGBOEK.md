@@ -174,3 +174,7 @@ eerste publicatie op zijn vroegst 6 oktober.
   vinden? 🔍 512 moordzaken, puur logica. App: Crimson Ledger". Featuring-nominatie ebb2170c ingediend (NEW_CONTENT, 1.3, 23 talen, datum 26 okt).
   In-App Event "Zaak van de week" (6824057777) ingediend ter beoordeling: 26 okt t/m 25 nov, alle landen, 23 talen, badge Challenge,
   zelfde woordloze kaart voor elke taal (`store/events/`). Deeplink = winkelpagina, want de app heeft geen URL-schema.
+- 18 okt: Engels account @crimsonledgergame bestaat (Jaimy), gekoppeld aan Buffer. Claude zette naam "Crimson Ledger · Crime Sudoku",
+  Engelse bio, detective-icoon en taal English (US). Opslaan van naam, bio en foto tegelijk gaf "Er is iets misgegaan"; los
+  per veld lukte het. Accountregio staat vast op Netherlands (TikTok: bepaald bij registratie, niet te wijzigen op het web).
+  Opwarmen 3 tot 5 dagen; eerste Engelse post op zijn vroegst rond 22 okt. Het NL-profiel heeft nog het oude vergrootglas-icoon.
