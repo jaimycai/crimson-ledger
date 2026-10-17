@@ -222,3 +222,35 @@ rooster en teksten staan in `social/EN-WEEK3.md`.
 - Concepten pas in Metricool zodra het account daar gekoppeld is. Of het gratis Metricool-plan een tweede TikTok-account of
   merk toelaat, en of dat een eigen limiet van 20 posts heeft, is niet nagekeken. Lukt het niet, dan via Buffer Free (§10).
 - Meten zoals het Nederlandse account: views na 48 uur, reacties, en het aandeel Engelse nieuwe spelers in `meting.js`.
+
+## 12. Stand en internationaal (17 oktober 2026)
+
+Gemeten op 17 okt, geen bronnen van derden.
+
+**Waar de bezoekers vandaan komen.** App Store Connect, paginaweergaven 10 t/m 16 okt per land (86 in totaal): Nederland 20,
+Verenigde Staten 13, Mexico 9, Saudi-Arabië 9, Colombia 6, Vietnam 5, Spanje 4, Ecuador 3, Frankrijk 3, Duitsland 3, Portugal 3,
+Costa Rica 2, overige 6. De Spaanstalige landen samen: 25, meer dan Nederland. Per dag van 1 (10 okt) naar 22 (16 okt), vanaf
+versie 1.2 met de extra winkeltalen. Bron per type (30 dagen): vrijwel alles "App Store Search"; webverwijzingen (TikTok) 0.
+
+**Zoekpositie per land** (iTunes-zoek-API, top 200, 17 okt). Sterk in eigen-taaltermen met weinig concurrentie: br "ache o culpado"
+1, nl "vind de dader" 1, nl "moordmysterie" 3, br "sudoku assassinato" 4, it "sudoku omicidio" 5, fr/es/mx "sudoku meurtre/asesinato" 7,
+tr "cinayet sudoku" 9. Zwak in de grote Engelse markt: us "murder sudoku", "whodunit", "detective game", "murder mystery puzzle" en
+gb "murder sudoku" niet in de top 200; us "crime sudoku" 30, gb 47, ca 54. Overal 0 beoordelingen (us, gb). De leiders in die
+termen hebben 50 tot 2.162 beoordelingen (Enigmic, Murder Sudoku: Tiny Crimes).
+
+**Wat dit zegt**
+1. De winkel in 20 talen werkt: hij levert nu het verkeer, niet TikTok. TikTok gaf 8 profielweergaven in 7 dagen.
+2. De Engelse markt blokkeert op beoordelingen, niet op teksten. Met 0 beoordelingen komt de app daar niet in de top 200.
+3. Spaans is de grootste groep bezoekers na de winkel-update. Het genre ging bovendien in Spanje viraal (§2).
+
+**Gedaan op 17 okt**
+- Zeven Spaanse carrousels gebouwd (`social/es/`, rooster en teksten in `social/ES-WEEK1.md`), dezelfde zaken als `en/01` t/m `en/07`.
+  `en_carrousel.py` maakt nu beide talen (`LANG_CAROUSEL=es`); de Engelse uitvoer is byte voor byte gelijk gebleven.
+
+**Volgorde voor de komende week** (beslissingen voor Jaimy staan in het verslag)
+1. NL week 3 live via Metricool ("plan week 3 in"). Zonder dat gaat er sinds 12 okt niets live.
+2. Engels account opwarmen en `en/01` t/m `en/07` plaatsen (§11).
+3. Beoordelingen: kijk waarom 23 keer vragen geen beoordeling in de VS opleverde, en vraag op de momenten uit `ASO.md`
+   (na de 2e opgeloste zaak, bij de cadeauwereld). Dit is de hefboom voor de Engelse markt; vergt een nieuwe build.
+4. Spaans account pas als het Engelse account na een week bereik haalt; anders eerst de les uit het Engelse account toepassen.
+   Eén nieuw account tegelijk, zodat het verschil meetbaar blijft.

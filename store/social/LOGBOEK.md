@@ -158,3 +158,8 @@ eerste publicatie op zijn vroegst 6 oktober.
   paginaweergaven, 45 eerste downloads, eerste aankoop ($1). De groei komt niet van TikTok (8 profielweergaven, 0% zoeken); waarschijnlijk
   van versie 1.2 en de extra winkeltalen, niet gemeten welk deel waarvan. Week 3 staat nog als concept en wacht op "plan week 3 in";
   zonder akkoord vóór di 20 okt 19:00 gaat er ook in week 3 niets live.
+- 17 okt (na de ronde, op vraag van Jaimy): stand marketing en buitenland gemeten. Paginaweergaven 10 t/m 16 okt per land: NL 20,
+  VS 13, Spaanstalig samen 25 (MX 9, CO 6, ES 4, EC 3, CR 2, PY 1), Saudi-Arabië 9. Bron: vrijwel alles App Store Search, 0 via web.
+  Zoekpositie: sterk in eigen-taaltermen (br "ache o culpado" 1, it "sudoku omicidio" 5, es/mx/fr "sudoku asesinato/meurtre" 7), maar
+  us/gb "murder sudoku" niet in de top 200 bij 0 beoordelingen. Zeven Spaanse carrousels gebouwd (`es/`, `ES-WEEK1.md`). Details en
+  volgorde: TIKTOK-PLAN §12.
