@@ -389,7 +389,15 @@
     "Voor echte kenners": "Gerçek uzmanlar için",
     "Je gaat verder waar je was.": "Kaldığın yerden devam ediyorsun.",
     "⏱️ Klok tijdens een zaak": "⏱️ Vaka sırasında saat",
-    "Week {0} · {1} {2} · {3}. Elke week één speciale zaak op meesterniveau; iedereen speelt dezelfde. Deel je resultaat met andere speurders.": "Hafta {0} · {1} {2} · {3}. Her hafta usta seviyesinde özel bir vaka; herkes aynısını oynar. Sonucunu diğer hafiyelerle paylaş."
+    "Week {0} · {1} {2} · {3}. Elke week één speciale zaak op meesterniveau; iedereen speelt dezelfde. Deel je resultaat met andere speurders.": "Hafta {0} · {1} {2} · {3}. Her hafta usta seviyesinde özel bir vaka; herkes aynısını oynar. Sonucunu diğer hafiyelerle paylaş.",
+    "💬 Wat kan beter?": "💬 Neyi daha iyi yapabiliriz?",
+    "Schrijf ons": "Bize yaz",
+    "Wat kan beter?": "Neyi daha iyi yapabiliriz?",
+    "Vertel wat je mist of wat niet goed werkt. Je bericht gaat anoniem naar de maker van het spel. Zet er geen naam of e-mailadres in.": "Neyin eksik olduğunu ya da neyin iyi çalışmadığını anlat. Mesajın oyunun yapımcısına anonim olarak ulaşır. Adını veya e-posta adresini yazma.",
+    "Bijvoorbeeld: welke zaak je lastig vond, of wat je nog mist in het spel.": "Örneğin: hangi vakayı zor buldun ya da oyunda neyi görmek istersin.",
+    "Versturen": "Gönder",
+    "Bedankt! Je bericht is verstuurd.": "Teşekkürler! Mesajın gönderildi.",
+    "Versturen lukt nu niet. Probeer het later opnieuw.": "Şu anda gönderilemiyor. Daha sonra tekrar dene."
   },
 
   data: {

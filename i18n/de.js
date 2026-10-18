@@ -389,7 +389,15 @@
     "Voor echte kenners": "Für echte Kenner",
     "Je gaat verder waar je was.": "Du machst weiter, wo du aufgehört hast.",
     "⏱️ Klok tijdens een zaak": "⏱️ Stoppuhr im Fall",
-    "Week {0} · {1} {2} · {3}. Elke week één speciale zaak op meesterniveau; iedereen speelt dezelfde. Deel je resultaat met andere speurders.": "Woche {0} · {1} {2} · {3}. Jede Woche ein besonderer Fall auf Meisterniveau; alle spielen denselben. Teile dein Ergebnis mit anderen Spürnasen."
+    "Week {0} · {1} {2} · {3}. Elke week één speciale zaak op meesterniveau; iedereen speelt dezelfde. Deel je resultaat met andere speurders.": "Woche {0} · {1} {2} · {3}. Jede Woche ein besonderer Fall auf Meisterniveau; alle spielen denselben. Teile dein Ergebnis mit anderen Spürnasen.",
+    "💬 Wat kan beter?": "💬 Was können wir verbessern?",
+    "Schrijf ons": "Schreib uns",
+    "Wat kan beter?": "Was können wir verbessern?",
+    "Vertel wat je mist of wat niet goed werkt. Je bericht gaat anoniem naar de maker van het spel. Zet er geen naam of e-mailadres in.": "Erzähl uns, was dir fehlt oder was nicht gut funktioniert. Deine Nachricht geht anonym an den Macher des Spiels. Schreib keinen Namen und keine E-Mail-Adresse hinein.",
+    "Bijvoorbeeld: welke zaak je lastig vond, of wat je nog mist in het spel.": "Zum Beispiel: welcher Fall dir schwerfiel oder was dir im Spiel noch fehlt.",
+    "Versturen": "Senden",
+    "Bedankt! Je bericht is verstuurd.": "Danke! Deine Nachricht ist verschickt.",
+    "Versturen lukt nu niet. Probeer het later opnieuw.": "Senden klappt gerade nicht. Versuch es später noch einmal."
   },
 
   data: {

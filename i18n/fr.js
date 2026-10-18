@@ -389,7 +389,15 @@
     "Voor echte kenners": "Pour vrais experts",
     "Je gaat verder waar je was.": "Tu reprends là où tu en étais.",
     "⏱️ Klok tijdens een zaak": "⏱️ Chrono pendant une affaire",
-    "Week {0} · {1} {2} · {3}. Elke week één speciale zaak op meesterniveau; iedereen speelt dezelfde. Deel je resultaat met andere speurders.": "Semaine {0} · {1} {2} · {3}. Une affaire spéciale de niveau maître chaque semaine ; tout le monde joue la même. Partage ton résultat avec d’autres limiers."
+    "Week {0} · {1} {2} · {3}. Elke week één speciale zaak op meesterniveau; iedereen speelt dezelfde. Deel je resultaat met andere speurders.": "Semaine {0} · {1} {2} · {3}. Une affaire spéciale de niveau maître chaque semaine ; tout le monde joue la même. Partage ton résultat avec d’autres limiers.",
+    "💬 Wat kan beter?": "💬 Qu’est-ce qu’on peut améliorer ?",
+    "Schrijf ons": "Écris-nous",
+    "Wat kan beter?": "Qu’est-ce qu’on peut améliorer ?",
+    "Vertel wat je mist of wat niet goed werkt. Je bericht gaat anoniem naar de maker van het spel. Zet er geen naam of e-mailadres in.": "Dis-nous ce qui te manque ou ce qui ne marche pas bien. Ton message part de façon anonyme vers le créateur du jeu. N’y mets ni ton nom ni ton adresse e-mail.",
+    "Bijvoorbeeld: welke zaak je lastig vond, of wat je nog mist in het spel.": "Par exemple : quelle affaire t’a paru difficile, ou ce qui te manque dans le jeu.",
+    "Versturen": "Envoyer",
+    "Bedankt! Je bericht is verstuurd.": "Merci ! Ton message est envoyé.",
+    "Versturen lukt nu niet. Probeer het later opnieuw.": "L’envoi ne marche pas pour l’instant. Réessaie plus tard."
   },
 
   data: {

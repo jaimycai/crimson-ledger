@@ -44,6 +44,7 @@ const ICONS = {
   'map': '<path d="m3 7l6-3l6 3l6-3v13l-6 3l-6-3l-6 3zm6-3v13m6-10v13"/>',
   'medal': '<path d="M12 4v3M8 4v6m8-6v6m-4 8.5L9 20l.5-3.5l-2-2l3-.5l1.5-3l1.5 3l3 .5l-2 2L15 20z"/>',
   'mountain': '<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M3 20h18L14.079 5.388a2.3 2.3 0 0 0-4.158 0z"/><path d="m7.5 11l2 2.5L12 11l2 3l2.5-2"/></g>',
+  'message-circle': '<path d="M3 20l1.3-3.9C1.976 12.663 2.874 8.228 6.4 5.726c3.526-2.501 8.59-2.296 11.845.48c3.255 2.777 3.695 7.266 1.029 10.501C16.608 19.942 11.659 20.922 7.7 19z"/>',
   'palette': '<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 21a9 9 0 0 1 0-18c4.97 0 9 3.582 9 8c0 1.06-.474 2.078-1.318 2.828S17.693 15 16.5 15H14a2 2 0 0 0-1 3.75A1.3 1.3 0 0 1 12 21"/><path d="M7.5 10.5a1 1 0 1 0 2 0a1 1 0 1 0-2 0m4-3a1 1 0 1 0 2 0a1 1 0 1 0-2 0m4 3a1 1 0 1 0 2 0a1 1 0 1 0-2 0"/></g>',
   'pencil': '<path d="M4 20h4L18.5 9.5a2.828 2.828 0 1 0-4-4L4 16zm9.5-13.5l4 4"/>',
   'player-play': '<path d="M7 4v16l13-8z"/>',
@@ -77,7 +78,7 @@ const Icons = {
     '🎨': 'palette', '🛒': 'shopping-cart', '🧊': 'snowflake', '🔥': 'flame', '🎓': 'school', '🔒': 'lock', '🎁': 'gift',
     '📅': 'calendar', '🗓': 'calendar', '📁': 'folder', '✨': 'sparkles', '🏆': 'trophy', '📖': 'book', '🔁': 'repeat',
     '👁': 'eye', '▶': 'player-play', '✓': 'check', '↗': 'external-link', '←': 'arrow-left', '→': 'arrow-right', '🎖': 'award',
-    '⏱': 'clock', '🔍': 'search', '⚙': 'settings', '✅': 'check'
+    '⏱': 'clock', '🔍': 'search', '⚙': 'settings', '✅': 'check', '💬': 'message-circle'
   },
   // waar emoji inhoud zijn en blijven
   KEEP: '.medal-icon, .medal-toast-icon, .theme-icon, .part-icon, .ev, .vitrine, .chest-items, .bclue-text, .dclue, .board-grid, .mini-grid, .story, .briefing-text, .results-solution, .map-art, select, option, textarea, input, svg, .classic, #screen-classic',

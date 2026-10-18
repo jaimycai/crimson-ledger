@@ -504,6 +504,18 @@
     </div>
   </div>
 
+  <!-- ═══════ FEEDBACK (1.3.1) ═══════ -->
+  <div class="modal-overlay" id="feedback-modal">
+    <div class="modal-content">
+      <div class="modal-handle"></div>
+      <h3 class="text-center">Wat kan beter?</h3>
+      <p class="feedback-lead">Vertel wat je mist of wat niet goed werkt. Je bericht gaat anoniem naar de maker van het spel. Zet er geen naam of e-mailadres in.</p>
+      <textarea id="feedback-text" class="feedback-text" rows="5" maxlength="1000" placeholder="Bijvoorbeeld: welke zaak je lastig vond, of wat je nog mist in het spel."></textarea>
+      <button class="btn btn-primary btn-block" id="btn-feedback-send" disabled>Versturen</button>
+      <button class="btn btn-ghost btn-block" id="btn-feedback-close">Sluiten</button>
+    </div>
+  </div>
+
   <!-- ═══════ INSTELLINGEN MODAL ═══════ -->
   <div class="modal-overlay" id="settings-modal">
     <div class="modal-content">
@@ -513,6 +525,7 @@
         <div class="settings-row"><label for="lang-select">🌍 Taal</label><select id="lang-select" class="lang-select"></select></div>
         <div class="settings-row"><span>Privacy</span><a href="https://jaimycai.github.io/crimson-ledger/privacy.html" target="_blank" rel="noopener">Privacyverklaring ↗</a></div>
         <div class="settings-row"><span>Hulp</span><a href="https://jaimycai.github.io/crimson-ledger/support.html" target="_blank" rel="noopener">Support ↗</a></div>
+        <div class="settings-row"><span>💬 Wat kan beter?</span><button type="button" id="btn-feedback">Schrijf ons</button></div>
         <div class="settings-row"><span>⏱️ Klok tijdens een zaak</span><label class="switch"><input type="checkbox" id="chk-timer"><i></i></label></div>
         <div class="settings-row"><span>📊 Anonieme statistieken</span><label class="switch"><input type="checkbox" id="chk-meting"><i></i></label></div>
         <div class="settings-row" id="settings-reminder" hidden><span>🔔 Dagelijkse herinnering (18:30)</span><label class="switch"><input type="checkbox" id="chk-reminder"><i></i></label></div>

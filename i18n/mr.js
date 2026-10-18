@@ -389,7 +389,15 @@
     "Voor echte kenners": "खऱ्या जाणकारांसाठी",
     "Je gaat verder waar je was.": "तुम्ही जिथे थांबला होतात, तिथूनच पुढे.",
     "⏱️ Klok tijdens een zaak": "⏱️ प्रकरणादरम्यान घड्याळ",
-    "Week {0} · {1} {2} · {3}. Elke week één speciale zaak op meesterniveau; iedereen speelt dezelfde. Deel je resultaat met andere speurders.": "आठवडा {0} · {1} {2} · {3}. दर आठवड्याला निष्णात पातळीवरचे एक खास प्रकरण; सगळे तेच खेळतात. तुमचा निकाल इतर शोधकांसोबत शेअर करा."
+    "Week {0} · {1} {2} · {3}. Elke week één speciale zaak op meesterniveau; iedereen speelt dezelfde. Deel je resultaat met andere speurders.": "आठवडा {0} · {1} {2} · {3}. दर आठवड्याला निष्णात पातळीवरचे एक खास प्रकरण; सगळे तेच खेळतात. तुमचा निकाल इतर शोधकांसोबत शेअर करा.",
+    "💬 Wat kan beter?": "💬 काय सुधारता येईल?",
+    "Schrijf ons": "आम्हाला लिहा",
+    "Wat kan beter?": "काय सुधारता येईल?",
+    "Vertel wat je mist of wat niet goed werkt. Je bericht gaat anoniem naar de maker van het spel. Zet er geen naam of e-mailadres in.": "तुम्हाला काय कमी वाटते किंवा काय नीट चालत नाही, ते सांगा. तुमचा संदेश नाव न सांगता खेळाच्या निर्मात्यापर्यंत पोहोचतो. त्यात तुमचे नाव किंवा ईमेल पत्ता लिहू नका.",
+    "Bijvoorbeeld: welke zaak je lastig vond, of wat je nog mist in het spel.": "उदा.: कोणते प्रकरण अवघड वाटले, किंवा खेळात आणखी काय हवे.",
+    "Versturen": "पाठवा",
+    "Bedankt! Je bericht is verstuurd.": "धन्यवाद! तुमचा संदेश पाठवला.",
+    "Versturen lukt nu niet. Probeer het later opnieuw.": "आत्ता पाठवता आले नाही. थोड्या वेळाने पुन्हा प्रयत्न करा."
   },
 
   data: {

@@ -389,7 +389,15 @@
     "Voor echte kenners": "నిజమైన నిపుణుల కోసం",
     "Je gaat verder waar je was.": "మీరు ఆపిన చోటి నుంచే కొనసాగిస్తున్నారు.",
     "⏱️ Klok tijdens een zaak": "⏱️ కేసు ఆడేటప్పుడు గడియారం",
-    "Week {0} · {1} {2} · {3}. Elke week één speciale zaak op meesterniveau; iedereen speelt dezelfde. Deel je resultaat met andere speurders.": "వారం {0} · {1} {2} · {3}. ప్రతి వారం మాస్టర్ స్థాయిలో ఒక ప్రత్యేక కేసు; అందరూ అదే కేసు ఆడతారు. మీ ఫలితాన్ని ఇతర డిటెక్టివ్‌లతో పంచుకోండి."
+    "Week {0} · {1} {2} · {3}. Elke week één speciale zaak op meesterniveau; iedereen speelt dezelfde. Deel je resultaat met andere speurders.": "వారం {0} · {1} {2} · {3}. ప్రతి వారం మాస్టర్ స్థాయిలో ఒక ప్రత్యేక కేసు; అందరూ అదే కేసు ఆడతారు. మీ ఫలితాన్ని ఇతర డిటెక్టివ్‌లతో పంచుకోండి.",
+    "💬 Wat kan beter?": "💬 ఏది ఇంకా బాగుండొచ్చు?",
+    "Schrijf ons": "మాకు రాయండి",
+    "Wat kan beter?": "ఏది ఇంకా బాగుండొచ్చు?",
+    "Vertel wat je mist of wat niet goed werkt. Je bericht gaat anoniem naar de maker van het spel. Zet er geen naam of e-mailadres in.": "మీకు ఏమి లోటుగా అనిపిస్తుందో, లేదా ఏది సరిగ్గా పనిచేయడం లేదో చెప్పండి. మీ సందేశం పేరు లేకుండా గేమ్ తయారీదారుకు చేరుతుంది. అందులో మీ పేరు లేదా ఈమెయిల్ చిరునామా రాయకండి.",
+    "Bijvoorbeeld: welke zaak je lastig vond, of wat je nog mist in het spel.": "ఉదాహరణకు: ఏ కేసు కష్టంగా అనిపించింది, లేదా గేమ్‌లో ఇంకా ఏమి ఉండాలనుకుంటున్నారు.",
+    "Versturen": "పంపండి",
+    "Bedankt! Je bericht is verstuurd.": "ధన్యవాదాలు! మీ సందేశం పంపబడింది.",
+    "Versturen lukt nu niet. Probeer het later opnieuw.": "ఇప్పుడు పంపడం కుదరలేదు. కాసేపటి తర్వాత మళ్లీ ప్రయత్నించండి."
   },
 
   data: {

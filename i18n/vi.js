@@ -389,7 +389,15 @@
     "Voor echte kenners": "Cho người sành sỏi",
     "Je gaat verder waar je was.": "Bạn chơi tiếp từ chỗ đã dừng.",
     "⏱️ Klok tijdens een zaak": "⏱️ Đồng hồ khi phá án",
-    "Week {0} · {1} {2} · {3}. Elke week één speciale zaak op meesterniveau; iedereen speelt dezelfde. Deel je resultaat met andere speurders.": "Tuần {0} · {1} {2} · {3}. Mỗi tuần một vụ án đặc biệt ở mức bậc thầy; ai cũng chơi cùng một vụ. Chia sẻ kết quả với các thám tử khác."
+    "Week {0} · {1} {2} · {3}. Elke week één speciale zaak op meesterniveau; iedereen speelt dezelfde. Deel je resultaat met andere speurders.": "Tuần {0} · {1} {2} · {3}. Mỗi tuần một vụ án đặc biệt ở mức bậc thầy; ai cũng chơi cùng một vụ. Chia sẻ kết quả với các thám tử khác.",
+    "💬 Wat kan beter?": "💬 Điều gì có thể tốt hơn?",
+    "Schrijf ons": "Viết cho chúng tôi",
+    "Wat kan beter?": "Điều gì có thể tốt hơn?",
+    "Vertel wat je mist of wat niet goed werkt. Je bericht gaat anoniem naar de maker van het spel. Zet er geen naam of e-mailadres in.": "Hãy cho chúng tôi biết bạn thấy thiếu gì hoặc chỗ nào chưa ổn. Tin nhắn được gửi ẩn danh đến người làm trò chơi. Đừng ghi tên hay địa chỉ email của bạn.",
+    "Bijvoorbeeld: welke zaak je lastig vond, of wat je nog mist in het spel.": "Ví dụ: vụ án nào bạn thấy khó, hoặc bạn muốn trò chơi có thêm gì.",
+    "Versturen": "Gửi",
+    "Bedankt! Je bericht is verstuurd.": "Cảm ơn bạn! Tin nhắn đã được gửi.",
+    "Versturen lukt nu niet. Probeer het later opnieuw.": "Hiện chưa gửi được. Bạn thử lại sau nhé."
   },
 
   data: {

@@ -389,7 +389,15 @@
     "Voor echte kenners": "玄人向け",
     "Je gaat verder waar je was.": "前回の続きから再開します。",
     "⏱️ Klok tijdens een zaak": "⏱️ 事件中のタイマー",
-    "Week {0} · {1} {2} · {3}. Elke week één speciale zaak op meesterniveau; iedereen speelt dezelfde. Deel je resultaat met andere speurders.": "第{0}週 · {1} {2} · {3}。毎週ひとつ、達人級の特別な事件を全員が同じ条件で解きます。結果をほかの探偵たちとシェアしましょう。"
+    "Week {0} · {1} {2} · {3}. Elke week één speciale zaak op meesterniveau; iedereen speelt dezelfde. Deel je resultaat met andere speurders.": "第{0}週 · {1} {2} · {3}。毎週ひとつ、達人級の特別な事件を全員が同じ条件で解きます。結果をほかの探偵たちとシェアしましょう。",
+    "💬 Wat kan beter?": "💬 改善してほしいこと",
+    "Schrijf ons": "意見を送る",
+    "Wat kan beter?": "改善してほしいこと",
+    "Vertel wat je mist of wat niet goed werkt. Je bericht gaat anoniem naar de maker van het spel. Zet er geen naam of e-mailadres in.": "物足りない点や、うまく動かない点を教えてください。メッセージは匿名でゲームの作者に届きます。名前やメールアドレスは書かないでください。",
+    "Bijvoorbeeld: welke zaak je lastig vond, of wat je nog mist in het spel.": "例：難しかった事件、ゲームにほしいものなど",
+    "Versturen": "送信",
+    "Bedankt! Je bericht is verstuurd.": "ありがとうございます！メッセージを送信しました。",
+    "Versturen lukt nu niet. Probeer het later opnieuw.": "今は送信できません。しばらくしてからもう一度お試しください。"
   },
 
   data: {

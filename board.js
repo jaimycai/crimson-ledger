@@ -861,7 +861,7 @@ const Board = {
     this.showResults();
     App.updateBoardStats();
     App.navigateTo('results');
-    App.maybeAskReview({ weeklyClean: this.isWeekly && this.hintsUsed === 0 });
+    App.maybeAskReview({ weeklyClean: this.isWeekly && this.hintsUsed === 0, stars: Campaign.starsFor(this.hintsUsed, this.attempts) });
   },
   // medailles pas tonen als de ceremonie klaar is (of overgeslagen)
   flushMedals() {

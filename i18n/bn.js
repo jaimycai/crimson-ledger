@@ -389,7 +389,15 @@
     "Voor echte kenners": "খাঁটি সমঝদারদের জন্য",
     "Je gaat verder waar je was.": "যেখানে থেমেছিলেন, সেখান থেকেই শুরু।",
     "⏱️ Klok tijdens een zaak": "⏱️ কেস চলাকালীন ঘড়ি",
-    "Week {0} · {1} {2} · {3}. Elke week één speciale zaak op meesterniveau; iedereen speelt dezelfde. Deel je resultaat met andere speurders.": "সপ্তাহ {0} · {1} {2} · {3}। প্রতি সপ্তাহে ওস্তাদ স্তরের একটি বিশেষ কেস; সবাই একই কেস খেলেন। অন্য গোয়েন্দাদের সঙ্গে আপনার ফল শেয়ার করুন।"
+    "Week {0} · {1} {2} · {3}. Elke week één speciale zaak op meesterniveau; iedereen speelt dezelfde. Deel je resultaat met andere speurders.": "সপ্তাহ {0} · {1} {2} · {3}। প্রতি সপ্তাহে ওস্তাদ স্তরের একটি বিশেষ কেস; সবাই একই কেস খেলেন। অন্য গোয়েন্দাদের সঙ্গে আপনার ফল শেয়ার করুন।",
+    "💬 Wat kan beter?": "💬 কী আরও ভালো হতে পারে?",
+    "Schrijf ons": "আমাদের লিখুন",
+    "Wat kan beter?": "কী আরও ভালো হতে পারে?",
+    "Vertel wat je mist of wat niet goed werkt. Je bericht gaat anoniem naar de maker van het spel. Zet er geen naam of e-mailadres in.": "আপনার কী কম মনে হয় বা কী ঠিকমতো কাজ করে না, জানান। আপনার বার্তা নাম ছাড়াই গেমের নির্মাতার কাছে পৌঁছায়। এতে আপনার নাম বা ইমেল ঠিকানা লিখবেন না।",
+    "Bijvoorbeeld: welke zaak je lastig vond, of wat je nog mist in het spel.": "যেমন: কোন কেস কঠিন লেগেছে, বা গেমে আর কী চান।",
+    "Versturen": "পাঠান",
+    "Bedankt! Je bericht is verstuurd.": "ধন্যবাদ! আপনার বার্তা পাঠানো হয়েছে।",
+    "Versturen lukt nu niet. Probeer het later opnieuw.": "এখন পাঠানো যাচ্ছে না। পরে আবার চেষ্টা করুন।"
   },
 
   data: {

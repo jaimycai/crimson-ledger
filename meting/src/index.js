@@ -27,12 +27,34 @@ export default {
       return new Response(null, { status: 204, headers: cors });
     }
 
-    // Read side, for the owner only: GET /stats?days=30 with the secret in a header.
+    // Feedback (1.3.1): a message the player typed under Settings → "Wat kan beter?". Stored with the day, platform,
+    // language and app version only; no IP, no id. At most 300 messages a day, so a flood cannot fill the database.
+    if (req.method === 'POST' && url.pathname === '/f') {
+      let b;
+      try { b = JSON.parse((await req.text()).slice(0, 8000)); } catch (e) { return new Response(null, { status: 400, headers: cors }); }
+      const t = String(b.t == null ? '' : b.t).replace(/[\u0000-\u0008\u000b-\u001f\u007f]/g, '').trim().slice(0, 1000);
+      const p = clean(b.p, 8), l = clean(b.l, 2);
+      if (t.length < 3 || !PLATFORMS.has(p) || !LANGS.has(l)) return new Response(null, { status: 400, headers: cors });
+      const day = new Date().toISOString().slice(0, 10);
+      const today = await env.DB.prepare('SELECT COUNT(*) AS n FROM feedback WHERE day = ?').bind(day).first('n');
+      if (today >= 300) return new Response(null, { status: 429, headers: cors });
+      await env.DB.prepare('INSERT INTO feedback (day, p, l, v, t) VALUES (?, ?, ?, ?, ?)').bind(day, p, l, clean(b.v, 10), t).run();
+      return new Response(null, { status: 204, headers: cors });
+    }
+
+    // Read side, for the owner only: GET /stats?days=30 or /feedback?days=30 with the secret in a header.
     if (req.method === 'GET' && url.pathname === '/stats') {
       if (!env.STATS_KEY || req.headers.get('x-stats-key') !== env.STATS_KEY) return new Response('forbidden', { status: 403 });
       const days = Math.max(1, Math.min(365, Number(url.searchParams.get('days')) || 30));
       const since = new Date(Date.now() - days * 864e5).toISOString().slice(0, 10);
       const r = await env.DB.prepare('SELECT day, e, a, n, p, l, v, c FROM tel WHERE day >= ? ORDER BY day, e').bind(since).all();
+      return Response.json(r.results);
+    }
+    if (req.method === 'GET' && url.pathname === '/feedback') {
+      if (!env.STATS_KEY || req.headers.get('x-stats-key') !== env.STATS_KEY) return new Response('forbidden', { status: 403 });
+      const days = Math.max(1, Math.min(365, Number(url.searchParams.get('days')) || 30));
+      const since = new Date(Date.now() - days * 864e5).toISOString().slice(0, 10);
+      const r = await env.DB.prepare('SELECT id, day, p, l, v, t FROM feedback WHERE day >= ? ORDER BY id').bind(since).all();
       return Response.json(r.results);
     }
     return new Response('not found', { status: 404 });

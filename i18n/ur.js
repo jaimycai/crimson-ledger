@@ -389,7 +389,15 @@
     "Voor echte kenners": "سچے پارکھوں کے لیے",
     "Je gaat verder waar je was.": "کیس وہیں سے جاری ہے جہاں چھوڑا تھا۔",
     "⏱️ Klok tijdens een zaak": "⏱️ کیس کے دوران گھڑی",
-    "Week {0} · {1} {2} · {3}. Elke week één speciale zaak op meesterniveau; iedereen speelt dezelfde. Deel je resultaat met andere speurders.": "ہفتہ {0} · {1} {2} · {3}۔ ہر ہفتے ماہر درجے کا ایک خاص کیس؛ سب ایک ہی کیس کھیلتے ہیں۔ اپنا نتیجہ دوسرے کھوجیوں کے ساتھ شیئر کریں۔"
+    "Week {0} · {1} {2} · {3}. Elke week één speciale zaak op meesterniveau; iedereen speelt dezelfde. Deel je resultaat met andere speurders.": "ہفتہ {0} · {1} {2} · {3}۔ ہر ہفتے ماہر درجے کا ایک خاص کیس؛ سب ایک ہی کیس کھیلتے ہیں۔ اپنا نتیجہ دوسرے کھوجیوں کے ساتھ شیئر کریں۔",
+    "💬 Wat kan beter?": "💬 کیا بہتر ہو سکتا ہے؟",
+    "Schrijf ons": "ہمیں لکھیں",
+    "Wat kan beter?": "کیا بہتر ہو سکتا ہے؟",
+    "Vertel wat je mist of wat niet goed werkt. Je bericht gaat anoniem naar de maker van het spel. Zet er geen naam of e-mailadres in.": "بتائیں کہ آپ کو کیا کمی محسوس ہوتی ہے یا کیا ٹھیک سے کام نہیں کرتا۔ آپ کا پیغام نام کے بغیر گیم بنانے والے تک پہنچتا ہے۔ اس میں اپنا نام یا ای میل پتہ نہ لکھیں۔",
+    "Bijvoorbeeld: welke zaak je lastig vond, of wat je nog mist in het spel.": "مثلاً: کون سا کیس مشکل لگا، یا گیم میں اور کیا ہونا چاہیے۔",
+    "Versturen": "بھیجیں",
+    "Bedankt! Je bericht is verstuurd.": "شکریہ! آپ کا پیغام بھیج دیا گیا۔",
+    "Versturen lukt nu niet. Probeer het later opnieuw.": "ابھی بھیجا نہیں جا سکا۔ کچھ دیر بعد دوبارہ کوشش کریں۔"
   },
 
   data: {

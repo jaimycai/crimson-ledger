@@ -1,10 +1,20 @@
 // Leest de anonieme tellers uit en rekent retentie uit.
 //   node store/meting.js [dagen]
+//   node store/meting.js feedback [dagen]   de berichten uit Instellingen → "Wat kan beter?" (sinds 1.3.1)
 // De sleutel staat in ~/.crimson/stats-key (niet in de repo).
 const fs = require('fs');
 const key = fs.readFileSync(process.env.HOME + '/.crimson/stats-key', 'utf8').trim();
-const days = Number(process.argv[2]) || 30;
+const feedback = process.argv[2] === 'feedback';
+const days = Number(process.argv[feedback ? 3 : 2]) || 30;
 (async () => {
+  if (feedback) {
+    const res = await fetch(`https://crimson-meting.spaarplan-data.workers.dev/feedback?days=${days}`, { headers: { 'x-stats-key': key } });
+    if (!res.ok) { console.error('feedback:', res.status); process.exit(1); }
+    const rows = await res.json();
+    console.log(`Feedback, laatste ${days} dagen: ${rows.length} bericht(en)`);
+    for (const r of rows) console.log(`\n${r.day}  ${r.l}  ${r.p}  ${r.v}\n${r.t}`);
+    return;
+  }
   const res = await fetch(`https://crimson-meting.spaarplan-data.workers.dev/stats?days=${days}`, { headers: { 'x-stats-key': key } });
   if (!res.ok) { console.error('stats:', res.status); process.exit(1); }
   const rows = await res.json();

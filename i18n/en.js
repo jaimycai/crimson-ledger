@@ -137,6 +137,11 @@
     // 1.3
     'Meester': 'Master', 'Voor echte kenners': 'For true experts', 'Je gaat verder waar je was.': 'You pick up where you left off.',
     '⏱️ Klok tijdens een zaak': '⏱️ Clock during a case',
+    // 1.3.1: the feedback sheet under Settings
+    '💬 Wat kan beter?': '💬 What could be better?', 'Schrijf ons': 'Write to us', 'Wat kan beter?': 'What could be better?',
+    'Vertel wat je mist of wat niet goed werkt. Je bericht gaat anoniem naar de maker van het spel. Zet er geen naam of e-mailadres in.': "Tell us what you miss or what doesn't work well. Your message goes anonymously to the maker of the game. Don't include your name or email address.",
+    'Bijvoorbeeld: welke zaak je lastig vond, of wat je nog mist in het spel.': "For example: which case you found hard, or what you'd like to see in the game.",
+    'Versturen': 'Send', 'Bedankt! Je bericht is verstuurd.': 'Thank you! Your message has been sent.', 'Versturen lukt nu niet. Probeer het later opnieuw.': "Couldn't send right now. Please try again later.",
     'Week {0} · {1} {2} · {3}. Elke week één speciale zaak op meesterniveau; iedereen speelt dezelfde. Deel je resultaat met andere speurders.': 'Week {0} · {1} {2} · {3}. One special master-level case every week; everyone plays the same one. Share your result with other sleuths.', 'Ingesteld: elke dag om 18:30 een herinnering.': 'Reminder set: every day at 18:30.', 'Alle voortgang is gewist.': 'All progress has been erased.',
     '{0} verdachten · {1} bij {2} vakjes': '{0} {0|one:suspect|other:suspects} · {1} by {2} grid',
     'hoogste rang bereikt': 'highest rank reached', 'Hoogste rang bereikt': 'Highest rank reached',

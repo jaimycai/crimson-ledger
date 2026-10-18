@@ -389,7 +389,15 @@
     "Voor echte kenners": "Для знатоков",
     "Je gaat verder waar je was.": "Вы продолжаете с того места, где остановились.",
     "⏱️ Klok tijdens een zaak": "⏱️ Таймер во время дела",
-    "Week {0} · {1} {2} · {3}. Elke week één speciale zaak op meesterniveau; iedereen speelt dezelfde. Deel je resultaat met andere speurders.": "Неделя {0} · {1} {2} · уровень «{3}». Одно особое дело в неделю, у всех одно и то же. Поделитесь результатом с другими сыщиками."
+    "Week {0} · {1} {2} · {3}. Elke week één speciale zaak op meesterniveau; iedereen speelt dezelfde. Deel je resultaat met andere speurders.": "Неделя {0} · {1} {2} · уровень «{3}». Одно особое дело в неделю, у всех одно и то же. Поделитесь результатом с другими сыщиками.",
+    "💬 Wat kan beter?": "💬 Что улучшить?",
+    "Schrijf ons": "Написать нам",
+    "Wat kan beter?": "Что улучшить?",
+    "Vertel wat je mist of wat niet goed werkt. Je bericht gaat anoniem naar de maker van het spel. Zet er geen naam of e-mailadres in.": "Расскажите, чего вам не хватает или что работает плохо. Сообщение анонимно придёт автору игры. Не указывайте в нём имя и адрес электронной почты.",
+    "Bijvoorbeeld: welke zaak je lastig vond, of wat je nog mist in het spel.": "Например: какое дело показалось трудным или чего не хватает в игре.",
+    "Versturen": "Отправить",
+    "Bedankt! Je bericht is verstuurd.": "Спасибо! Сообщение отправлено.",
+    "Versturen lukt nu niet. Probeer het later opnieuw.": "Сейчас отправить не получается. Попробуйте позже."
   },
 
   data: {

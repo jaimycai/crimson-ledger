@@ -389,7 +389,15 @@
     "Voor echte kenners": "Bagi pakar sejati",
     "Je gaat verder waar je was.": "Kamu lanjut dari tempat terakhir.",
     "⏱️ Klok tijdens een zaak": "⏱️ Jam selama kasus",
-    "Week {0} · {1} {2} · {3}. Elke week één speciale zaak op meesterniveau; iedereen speelt dezelfde. Deel je resultaat met andere speurders.": "Minggu {0} · {1} {2} · {3}. Setiap minggu satu kasus istimewa tingkat ahli; semua orang memainkan kasus yang sama. Bagikan hasilmu ke penyelidik lain."
+    "Week {0} · {1} {2} · {3}. Elke week één speciale zaak op meesterniveau; iedereen speelt dezelfde. Deel je resultaat met andere speurders.": "Minggu {0} · {1} {2} · {3}. Setiap minggu satu kasus istimewa tingkat ahli; semua orang memainkan kasus yang sama. Bagikan hasilmu ke penyelidik lain.",
+    "💬 Wat kan beter?": "💬 Apa yang bisa lebih baik?",
+    "Schrijf ons": "Tulis ke kami",
+    "Wat kan beter?": "Apa yang bisa lebih baik?",
+    "Vertel wat je mist of wat niet goed werkt. Je bericht gaat anoniem naar de maker van het spel. Zet er geen naam of e-mailadres in.": "Ceritakan apa yang kurang atau yang tidak berjalan dengan baik. Pesanmu dikirim secara anonim ke pembuat game. Jangan tulis nama atau alamat emailmu.",
+    "Bijvoorbeeld: welke zaak je lastig vond, of wat je nog mist in het spel.": "Misalnya: kasus mana yang sulit, atau apa yang ingin kamu lihat di game.",
+    "Versturen": "Kirim",
+    "Bedankt! Je bericht is verstuurd.": "Terima kasih! Pesanmu sudah terkirim.",
+    "Versturen lukt nu niet. Probeer het later opnieuw.": "Belum bisa mengirim sekarang. Coba lagi nanti."
   },
 
   data: {

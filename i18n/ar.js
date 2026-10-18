@@ -389,7 +389,15 @@
     "Voor echte kenners": "لنخبة المحققين",
     "Je gaat verder waar je was.": "تتابع من حيث توقفت.",
     "⏱️ Klok tijdens een zaak": "⏱️ المؤقّت أثناء القضية",
-    "Week {0} · {1} {2} · {3}. Elke week één speciale zaak op meesterniveau; iedereen speelt dezelfde. Deel je resultaat met andere speurders.": "الأسبوع {0} · {1} {2} · {3}. كل أسبوع قضية خاصة واحدة من مستوى الخبراء؛ الجميع يلعبون القضية نفسها. شارك نتيجتك مع محققين آخرين."
+    "Week {0} · {1} {2} · {3}. Elke week één speciale zaak op meesterniveau; iedereen speelt dezelfde. Deel je resultaat met andere speurders.": "الأسبوع {0} · {1} {2} · {3}. كل أسبوع قضية خاصة واحدة من مستوى الخبراء؛ الجميع يلعبون القضية نفسها. شارك نتيجتك مع محققين آخرين.",
+    "💬 Wat kan beter?": "💬 ما الذي يمكن تحسينه؟",
+    "Schrijf ons": "اكتب لنا",
+    "Wat kan beter?": "ما الذي يمكن تحسينه؟",
+    "Vertel wat je mist of wat niet goed werkt. Je bericht gaat anoniem naar de maker van het spel. Zet er geen naam of e-mailadres in.": "أخبرنا بما ينقصك أو بما لا يعمل جيدًا. تصل رسالتك إلى صانع اللعبة دون ذكر هويتك. لا تكتب فيها اسمك أو بريدك الإلكتروني.",
+    "Bijvoorbeeld: welke zaak je lastig vond, of wat je nog mist in het spel.": "مثلًا: أي قضية وجدتها صعبة، أو ما الذي تتمنى إضافته إلى اللعبة.",
+    "Versturen": "إرسال",
+    "Bedankt! Je bericht is verstuurd.": "شكرًا! أُرسلت رسالتك.",
+    "Versturen lukt nu niet. Probeer het later opnieuw.": "تعذّر الإرسال الآن. حاول مرة أخرى لاحقًا."
   },
 
   data: {

@@ -389,7 +389,15 @@
     "Voor echte kenners": "行家专属",
     "Je gaat verder waar je was.": "从上次离开的地方继续。",
     "⏱️ Klok tijdens een zaak": "⏱️ 破案时显示计时",
-    "Week {0} · {1} {2} · {3}. Elke week één speciale zaak op meesterniveau; iedereen speelt dezelfde. Deel je resultaat met andere speurders.": "第{0}周 · {1} {2} · {3}。每周一个大师级特别案件，所有人玩的都是同一个。和其他侦探分享你的成绩吧。"
+    "Week {0} · {1} {2} · {3}. Elke week één speciale zaak op meesterniveau; iedereen speelt dezelfde. Deel je resultaat met andere speurders.": "第{0}周 · {1} {2} · {3}。每周一个大师级特别案件，所有人玩的都是同一个。和其他侦探分享你的成绩吧。",
+    "💬 Wat kan beter?": "💬 哪里可以更好？",
+    "Schrijf ons": "写信给我们",
+    "Wat kan beter?": "哪里可以更好？",
+    "Vertel wat je mist of wat niet goed werkt. Je bericht gaat anoniem naar de maker van het spel. Zet er geen naam of e-mailadres in.": "告诉我们你觉得缺少什么，或者哪里不好用。你的消息会匿名发送给游戏作者。请不要写上你的名字或邮箱地址。",
+    "Bijvoorbeeld: welke zaak je lastig vond, of wat je nog mist in het spel.": "例如：哪个案件你觉得难，或者你希望游戏里还有什么。",
+    "Versturen": "发送",
+    "Bedankt! Je bericht is verstuurd.": "谢谢！你的消息已发送。",
+    "Versturen lukt nu niet. Probeer het later opnieuw.": "现在无法发送，请稍后再试。"
   },
 
   data: {

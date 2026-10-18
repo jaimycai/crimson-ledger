@@ -6,7 +6,11 @@
 // ============================================================
 const Meting = {
   URL: 'https://crimson-meting.spaarplan-data.workers.dev/e',
-  VERSION: '1.1.3',
+  // de versie zoals de app hem toont (index.html #app-version); stond tot 1.3.1 vast op 1.1.3
+  version() {
+    try { const el = document.getElementById('app-version'); if (el && el.textContent.trim()) return el.textContent.trim(); } catch (e) { /* geen DOM */ }
+    return '?';
+  },
   get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
   set(k, v) { if (typeof App !== 'undefined') App.storageSet(k, v); else { try { localStorage.setItem(k, v); } catch (e) { /* privémodus */ } } },
   on() { return this.get('crimson-meting') !== '0'; },
@@ -24,8 +28,17 @@ const Meting = {
     if (!this.on() || this.test() || typeof fetch === 'undefined') return;
     try {
       fetch(this.URL, { method: 'POST', keepalive: true, headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ e, a: String(a), n: Number(n) || 0, p: this.platform(), l: this.lang(), v: this.VERSION }) }).catch(() => {});
+        body: JSON.stringify({ e, a: String(a), n: Number(n) || 0, p: this.platform(), l: this.lang(), v: this.version() }) }).catch(() => {});
     } catch (err) { /* geen netwerk */ }
+  },
+  // Een bericht uit Instellingen → "Wat kan beter?". Gaat ook als de tellers uit staan: de speler stuurt het zelf.
+  // Alleen de tekst, het platform, de taal en de versie; de server bewaart geen IP-adres. Geeft true als het aankwam.
+  feedback(text) {
+    if (typeof fetch === 'undefined') return Promise.resolve(false);
+    if (this.test()) return Promise.resolve(true);
+    return fetch(this.URL.replace(/\/e$/, '/f'), { method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ t: String(text).slice(0, 1000), p: this.platform(), l: this.lang(), v: this.version() }) })
+      .then(r => r.ok, () => false);
   },
   // één keer per dag: hoeveel dagen na de eerste start komt iemand terug
   open() {

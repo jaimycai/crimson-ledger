@@ -389,7 +389,15 @@
     "Voor echte kenners": "Para especialistas",
     "Je gaat verder waar je was.": "Você continua de onde parou.",
     "⏱️ Klok tijdens een zaak": "⏱️ Mostrar cronômetro",
-    "Week {0} · {1} {2} · {3}. Elke week één speciale zaak op meesterniveau; iedereen speelt dezelfde. Deel je resultaat met andere speurders.": "Semana {0} · {1} {2} · {3}. Um caso especial por semana, no nível Mestre; todos jogam o mesmo. Compartilhe seu resultado com outros detetives."
+    "Week {0} · {1} {2} · {3}. Elke week één speciale zaak op meesterniveau; iedereen speelt dezelfde. Deel je resultaat met andere speurders.": "Semana {0} · {1} {2} · {3}. Um caso especial por semana, no nível Mestre; todos jogam o mesmo. Compartilhe seu resultado com outros detetives.",
+    "💬 Wat kan beter?": "💬 O que podemos melhorar?",
+    "Schrijf ons": "Escreva para nós",
+    "Wat kan beter?": "O que podemos melhorar?",
+    "Vertel wat je mist of wat niet goed werkt. Je bericht gaat anoniem naar de maker van het spel. Zet er geen naam of e-mailadres in.": "Conte o que está faltando ou o que não funciona bem. Sua mensagem vai de forma anônima para o criador do jogo. Não coloque seu nome nem seu e-mail.",
+    "Bijvoorbeeld: welke zaak je lastig vond, of wat je nog mist in het spel.": "Por exemplo: qual caso você achou difícil ou o que ainda falta no jogo.",
+    "Versturen": "Enviar",
+    "Bedankt! Je bericht is verstuurd.": "Obrigado! Sua mensagem foi enviada.",
+    "Versturen lukt nu niet. Probeer het later opnieuw.": "Não foi possível enviar agora. Tente de novo mais tarde."
   },
 
   data: {

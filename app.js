@@ -85,10 +85,11 @@ const App = {
     const minWait = new Promise(r => setTimeout(r, 900));
     Promise.race([Promise.all([fonts, loaded, minWait]), new Promise(r => setTimeout(r, 2500))]).then(done, done);
   },
-  // Eén keer vragen om een beoordeling (eigen ReviewPlugin in ios/App/App, SKStoreReviewController),
-  // pas na vijf opgeloste zaken en niet meteen: de speler is dan net klaar met de ceremonie.
-  // Vraagt om een beoordeling op drie hoogtepunten, elk hooguit één keer: de tweede opgeloste zaak, zeven dagen op
-  // rij, en een zaak van de week zonder hint. Apple bepaalt zelf of het venster verschijnt (hooguit drie keer per jaar).
+  // Vraagt om een beoordeling (eigen ReviewPlugin in ios/App/App, SKStoreReviewController) op drie hoogtepunten,
+  // elk hooguit één keer: vijf opgeloste zaken, een zaak van de week zonder hint en zeven dagen op rij. Nooit vóór de
+  // vijfde zaak en alleen direct na een zaak met minstens twee sterren (zonder hint of in één keer), zodat de vraag
+  // komt op een goed moment voor wie het spel al kent; het oordeel zelf vragen we niet. Apple bepaalt of het venster
+  // verschijnt (hooguit drie keer per jaar). Wie iets mist, heeft de knop "Wat kan beter?" in de instellingen.
   maybeAskReview(ctx = {}) {
     try {
       const C = window.Capacitor;
@@ -97,7 +98,8 @@ const App = {
       let asked = [];
       try { asked = JSON.parse(this.storageGet('crimson-review-moments') || '[]'); } catch (e) { asked = []; }
       if (this.storageGet('crimson-review-asked') && !asked.includes('solved')) asked.push('solved');   // 1.1 vroeg al na zaak 3
-      const moment = !asked.includes('solved') && (Board.loadStats().solved || 0) >= 2 ? 'solved'
+      if ((Board.loadStats().solved || 0) < 5 || (ctx.stars || 0) < 2) return;
+      const moment = !asked.includes('solved') ? 'solved'
         : !asked.includes('weekclean') && ctx.weeklyClean ? 'weekclean'
         : !asked.includes('streak7') && this.streak && this.streak.count >= 7 ? 'streak7' : null;
       if (!moment) return;
@@ -786,6 +788,21 @@ const App = {
     if (!btn) return;
     btn.addEventListener('click', () => { this.resetArmed = false; document.getElementById('btn-reset-progress').textContent = AP_T('Wissen'); this.showModal('settings-modal'); });
     document.getElementById('btn-close-settings').addEventListener('click', () => this.hideModal('settings-modal'));
+    // "Wat kan beter?" (1.3.1): een bericht in eigen woorden, anoniem naar onze tellerserver (Meting.feedback)
+    const fbText = document.getElementById('feedback-text'), fbSend = document.getElementById('btn-feedback-send');
+    const fbReady = () => { fbSend.disabled = fbText.value.trim().length < 3; };
+    fbText.addEventListener('input', fbReady);
+    document.getElementById('btn-feedback').addEventListener('click', () => {
+      this.hideModal('settings-modal'); fbReady(); this.showModal('feedback-modal');
+    });
+    document.getElementById('btn-feedback-close').addEventListener('click', () => this.hideModal('feedback-modal'));
+    fbSend.addEventListener('click', () => {
+      fbSend.disabled = true;
+      (typeof Meting !== 'undefined' ? Meting.feedback(fbText.value.trim()) : Promise.resolve(false)).then(ok => {
+        if (ok) { fbText.value = ''; this.hideModal('feedback-modal'); this.showToast('💌', AP_T('Bedankt! Je bericht is verstuurd.')); }
+        else { this.showToast('⚠️', AP_T('Versturen lukt nu niet. Probeer het later opnieuw.')); fbReady(); }
+      });
+    });
     // twee tikken: eerst bevestigen, dan wissen (geen confirm(): werkt niet in elke WebView)
     document.getElementById('btn-reset-progress').addEventListener('click', e => {
       if (!this.resetArmed) { this.resetArmed = true; e.target.textContent = AP_T('Zeker? Tik nogmaals'); return; }

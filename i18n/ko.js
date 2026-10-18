@@ -389,7 +389,15 @@
     "Voor echte kenners": "진짜 고수용",
     "Je gaat verder waar je was.": "하던 곳에서 이어서 해요.",
     "⏱️ Klok tijdens een zaak": "⏱️ 사건 중 시계 표시",
-    "Week {0} · {1} {2} · {3}. Elke week één speciale zaak op meesterniveau; iedereen speelt dezelfde. Deel je resultaat met andere speurders.": "{0}주차 · {1} {2} · {3}. 매주 마스터 난이도의 특별한 사건이 하나씩 나오고, 모두 같은 사건을 풀어요. 다른 탐정들과 결과를 공유해 보세요."
+    "Week {0} · {1} {2} · {3}. Elke week één speciale zaak op meesterniveau; iedereen speelt dezelfde. Deel je resultaat met andere speurders.": "{0}주차 · {1} {2} · {3}. 매주 마스터 난이도의 특별한 사건이 하나씩 나오고, 모두 같은 사건을 풀어요. 다른 탐정들과 결과를 공유해 보세요.",
+    "💬 Wat kan beter?": "💬 개선했으면 하는 점",
+    "Schrijf ons": "의견 보내기",
+    "Wat kan beter?": "개선했으면 하는 점",
+    "Vertel wat je mist of wat niet goed werkt. Je bericht gaat anoniem naar de maker van het spel. Zet er geen naam of e-mailadres in.": "아쉬운 점이나 잘 안 되는 부분을 알려 주세요. 메시지는 익명으로 게임 제작자에게 전달돼요. 이름이나 이메일 주소는 적지 마세요.",
+    "Bijvoorbeeld: welke zaak je lastig vond, of wat je nog mist in het spel.": "예: 어려웠던 사건, 게임에 있었으면 하는 것",
+    "Versturen": "보내기",
+    "Bedankt! Je bericht is verstuurd.": "고마워요! 메시지를 보냈어요.",
+    "Versturen lukt nu niet. Probeer het later opnieuw.": "지금은 보낼 수 없어요. 나중에 다시 시도해 주세요."
   },
 
   data: {
