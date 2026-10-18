@@ -191,3 +191,5 @@ eerste publicatie op zijn vroegst 6 oktober.
   ES `es/01` t/m `05`: 23, 24, 25 okt 03:00 en 26, 27 okt 02:00 (Amsterdam) = 22 t/m 26 okt 19:00-20:00 Mexico-Stad.
   ES `es/06` en `07` (27 en 28 okt Mexico) nog niet: de veiligheidscontrole van Claude Code vroeg een uitdrukkelijk akkoord.
   Nieuwe accounts posten op dag 4 na aanmaak; het plan zegt 3 tot 5 dagen opwarmen.
+- 19 okt 00:55: `es/06` en `es/07` ingepland na akkoord Jaimy (28 en 29 okt 02:00 Amsterdam = 27 en 28 okt 19:00 Mexico-Stad).
+  Buffer: EN 7, ES 7, NL 4 in de wachtrij. Buffer Free staat 10 ingeplande posts per kanaal tegelijk toe.
