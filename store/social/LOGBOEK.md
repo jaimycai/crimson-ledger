@@ -193,3 +193,8 @@ eerste publicatie op zijn vroegst 6 oktober.
   Nieuwe accounts posten op dag 4 na aanmaak; het plan zegt 3 tot 5 dagen opwarmen.
 - 19 okt 00:55: `es/06` en `es/07` ingepland na akkoord Jaimy (28 en 29 okt 02:00 Amsterdam = 27 en 28 okt 19:00 Mexico-Stad).
   Buffer: EN 7, ES 7, NL 4 in de wachtrij. Buffer Free staat 10 ingeplande posts per kanaal tegelijk toe.
+- 19 okt 18:10-19:15: drie per dag (TIKTOK-PLAN §14). Spaanse carrousels `es/08` t/m `21` gebouwd. Buffer omgezet en aangevuld tot 10 per kanaal:
+  ES `es/01` t/m `10`: 19 okt 20:00; 20 okt 00:00, 03:00, 20:00; 21 okt 00:00, 03:00, 20:00; 22 okt 00:00, 03:00, 20:00 (Amsterdam).
+  EN `en/01` t/m `10`: 19 okt 22:00; 20 okt 01:00, 18:00, 22:00; 21 okt 01:00, 18:00, 22:00; 22 okt 01:00, 18:00, 22:00 (Amsterdam).
+  Let op: één bewerking liet Buffer de andere posts van het kanaal naar zijn eigen tijdsloten schuiven; alles daarna teruggezet en nagelezen.
+  NL in Buffer ongewijzigd (23 t/m 26 okt 19:00). De taak crimson-social vult EN en ES voortaan elke ronde aan tot 10.

@@ -273,3 +273,14 @@ volgend event neutraal.
 
 Toegepast op 18 okt: haken en hashtags in `week2.py`, `week2_carrousel.py`, `en_carrousel.py`; niet-geposte carrousels
 `week2c/05` t/m `21`, `en/`, `es/` opnieuw gebouwd; `EN-WEEK3.md`, `ES-WEEK1.md`, `ACCOUNTS-KIT.md` bijgewerkt.
+
+## 14. Drie per dag op EN en ES (19 oktober 2026)
+
+Besluit Jaimy: vanaf 19 okt drie posts per dag op @crimsonledgergame (EN) en @crimsonledger.es (ES), om 12:00, 16:00 en 19:00
+lokale tijd (New York, Mexico-Stad). De accounts zijn 18 okt gemaakt, dus de opwarmtijd van §4 (3 tot 5 dagen) is ingekort; ook dat
+is Jaimy's keuze. Buffer Free houdt 10 posts per kanaal vast, dus de dagelijkse taak `crimson-social` vult de wachtrij elke ronde
+aan (sectie C2 van de taak). Voorraad op 19 okt: EN `en/01` t/m `21`, ES `es/01` t/m `21`.
+
+Accountregio: beide nieuwe accounts staan op Nederland. TikTok legt die vast bij registratie en laat hem op het web niet wijzigen.
+Wat TikTok wel ziet: taal van de tekst, hashtags, de taalinstelling van het account en wie reageert. Of de regio het bereik buiten
+NL remt, is niet gemeten. Meten: in TikTok Studio › Analytics › Kijkers staan de landen van de kijkers zodra er genoeg zijn.
