@@ -284,3 +284,9 @@ aan (sectie C2 van de taak). Voorraad op 19 okt: EN `en/01` t/m `21`, ES `es/01`
 Accountregio: beide nieuwe accounts staan op Nederland. TikTok legt die vast bij registratie en laat hem op het web niet wijzigen.
 Wat TikTok wel ziet: taal van de tekst, hashtags, de taalinstelling van het account en wie reageert. Of de regio het bereik buiten
 NL remt, is niet gemeten. Meten: in TikTok Studio › Analytics › Kijkers staan de landen van de kijkers zodra er genoeg zijn.
+
+Aanvulling 19 okt (zoektocht naar regio en VPN; Reddit was niet bereikbaar voor de zoekfunctie): geen onafhankelijke bron of
+meting gevonden. Wat er is, komt van verkopers van VPN's of accounts. Die zeggen dat SIM, taal en de regio bij registratie meetellen,
+en dat een gedeelde VPN-IP juist tot minder bereik of een shadowban kan leiden. Besluit: geen VPN. Buffer plaatst de posts vanaf
+zijn eigen servers, dus een VPN op de laptop verandert niets aan het plaatsen. Na 48 uur in TikTok Studio › Analytics › Kijkers
+kijken uit welke landen de kijkers van EN en ES komen; pas daarna beslissen.
