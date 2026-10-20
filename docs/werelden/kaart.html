@@ -19,7 +19,7 @@
 <div id="out"></div>
 <script src="../../mapart.js"></script>
 <script>
-  document.getElementById('out').innerHTML = ['hacienda', 'opera'].map(w => `<section><h2>${w}</h2>
+  document.getElementById('out').innerHTML = ['hacienda', 'opera', 'opgraving', 'casino', 'filmstudio', 'karavaan', 'abdij', 'vuurtoren'].map(w => `<section><h2>${w}</h2>
     <div class="ban">${MapArt.banner(w)}</div>
     <div class="props map-${w}">${[...Array(MapArt.propCount(w))].map((_, i) => MapArt.prop(w, i)).join('')}</div></section>`).join('');
 </script>

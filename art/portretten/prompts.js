@@ -19,7 +19,11 @@ const ERA = {
   hacienda: 'a tequila hacienda in Jalisco, Mexico, in 1952',
   opera: 'a grand opera house in Paris on a premiere night in 1891',
   opgraving: 'an archaeological dig in the Valley of the Kings, Egypt, in 1922',
-  casino: 'a luxurious casino in Monte Carlo on Grand Prix weekend in 1960'
+  casino: 'a luxurious casino in Monte Carlo on Grand Prix weekend in 1960',
+  filmstudio: 'a Hollywood film studio in 1931',
+  karavaan: 'a caravanserai at a desert oasis on the old spice route, around 1900',
+  abdij: 'a medieval abbey in the mountains in the winter of 1327',
+  vuurtoren: 'a lighthouse island off a stormy coast in 1900'
 };
 
 const PEOPLE = {
@@ -130,7 +134,7 @@ const PEOPLE = {
     'Opzichter Ahmed': 'an Egyptian dig foreman in his forties, white turban, neat beard, striped galabiya, calm authoritative look',
     'Correspondente Ivy': 'an American newspaper correspondent in her thirties, short wavy hair under a beret, trench coat, notebook and camera strap',
     'Kameeldrijver Omar': 'a young camel driver in his twenties, keffiyeh head scarf, bright smile, rope and a leather water bag over his shoulder',
-    'Egyptologe Clara': 'a rival Egyptologist in her forties, tightly pinned hair, wire spectacles, high-collared blouse, magnifying glass on a chain',
+    'Egyptologe Edith': 'a rival Egyptologist in her forties, tightly pinned hair, wire spectacles, high-collared blouse, magnifying glass on a chain',
     'Verzamelaar Von Hagen': 'a German antiquities collector in his sixties, white linen suit, panama hat, monocle, silver-headed walking stick'
   },
   casino: {
@@ -140,8 +144,48 @@ const PEOPLE = {
     'Coureur Rocco': 'a dashing Italian racing driver in his thirties, tousled hair, leather racing jacket, driving goggles pushed up on his forehead',
     'Bankier Sterling': 'a cool English banker in his fifties, silver hair, tuxedo, pocket square, cufflinks, a faint smirk',
     'Fotomodel Tess': 'a fashion model in her twenties, sleek bob, bold eyeliner, polka-dot dress, big sunglasses pushed up into her hair',
-    'Gokker Duke': 'a professional American gambler in his forties, fedora, loosened tie, cigar, a stack of chips in his hand',
-    'Huisdetective Fenna': 'the casino\'s house detective, a woman in her forties, sharp tailored suit, short hair, observant eyes, small notebook'
+    'Gokker Jack': 'a professional American gambler in his forties, fedora, loosened tie, cigar, a stack of chips in his hand',
+    'Huisdetective Nora': 'the casino\'s house detective, a woman in her forties, sharp tailored suit, short hair, observant eyes, small notebook'
+  },
+  filmstudio: {
+    'Filmster Vivian': 'a glamorous film star in her thirties, platinum finger waves, pencilled eyebrows, satin gown with a fur collar',
+    'Regisseur Baxter': 'a film director in his fifties, flat cap, round glasses, tweed jacket, megaphone in hand',
+    'Schrijfster Peggy': 'a sharp screenwriter in her thirties, short bob, cardigan, pencil behind her ear, typed script pages',
+    'Stuntman Hank': 'a rugged stuntman in his thirties, broken nose, cowboy hat, bandana, leather vest',
+    'Cameraman Lenny': 'a cameraman in his forties, cap worn backwards, rolled sleeves, a light meter on a cord around his neck',
+    'Grimeuse Rita': 'a make-up artist in her forties, hair tied in a scarf, powder brush in hand, smock with many pockets',
+    'Agent Sid': 'a fast-talking talent agent in his forties, pinstripe suit, slicked hair, cigar, carnation in his buttonhole',
+    'Starlet Joy': 'a hopeful young starlet of about twenty, curly hair with a bow, polka-dot dress, wide eager smile'
+  },
+  karavaan: {
+    'Koopvrouw Layla': 'a shrewd spice merchant in her forties, patterned headscarf, gold bangles, embroidered robe, a small brass scale',
+    'Gids Tariq': 'a desert guide in his thirties, indigo turban wrapped down to the chin, keen eyes, camel stick',
+    'Tapijthandelaar Yusuf': 'a jovial carpet merchant in his fifties, round cap, grey beard, striped kaftan, rolled carpet under his arm',
+    'Reizigster Beatrix': 'a European woman traveller in her thirties, pith helmet with a scarf, linen jacket, travel journal',
+    'Theeschenker Hamid': 'a young tea server in his twenties, small cap, embroidered vest, ornate brass teapot held high',
+    'Sterrenkijker Zahra': 'an astronomer and navigator in her forties, head scarf with tiny stars, brass astrolabe in her hands',
+    'Bewaker Karim': 'a stern caravanserai guard in his forties, thick moustache, sash, sheathed curved dagger, ring of keys',
+    'Dichteres Samira': 'a young poet in her twenties, flowing scarf, kohl-lined eyes, reed pen and a small book of verses'
+  },
+  abdij: {
+    'Broeder Anselm': 'an elderly librarian monk in his sixties, tonsure, grey beard, black Benedictine habit, large key ring',
+    'Broeder Cuthbert': 'a stout herbalist monk in his forties, tonsure, rosy cheeks, habit with rolled sleeves, a bundle of dried herbs',
+    'Novice Elias': 'a young novice of about eighteen, short hair, plain grey habit, nervous eyes, wax tablet',
+    'Pelgrim Gisela': 'a pilgrim woman in her thirties, wide-brimmed hat with a scallop shell, travelling cloak, wooden staff',
+    'Kruidenvrouw Hilde': 'a village herb woman in her fifties, linen head cloth, weathered face, basket of herbs',
+    'Gravin Mathilde': 'a noble countess in her forties, fur-trimmed mantle, jewelled circlet over a veil, proud gaze',
+    'Verluchtster Odile': 'a young illuminator of manuscripts in her twenties, ink-stained fingers, plain wimple, fine brush in hand',
+    'Kelderbroeder Waldo': 'a burly cellarer monk in his fifties, tonsure, heavy jaw, leather apron over the habit, keys at his belt'
+  },
+  vuurtoren: {
+    'Assistent Jonas': 'a young assistant lighthouse keeper in his twenties, knitted sweater, peaked cap, oil can in hand',
+    'Huishoudster Martha': 'a sturdy housekeeper in her fifties, bonnet, shawl, apron, firm mouth',
+    'Visser Bartel': 'a weathered fisherman in his sixties, oilskin sou\'wester hat, white beard, pipe',
+    'Loodsman Kees': 'a harbour pilot in his forties, navy pea coat with brass buttons, captain\'s cap, spyglass',
+    'Vogelkundige Dorien': 'an ornithologist in her thirties, tweed jacket, field glasses, a feather in her hat band, notebook',
+    'Schipbreukeling Lev': 'a shipwreck survivor in his thirties, wet tousled hair, torn shirt, a blanket around his shoulders',
+    'Onderwijzeres Wilma': 'the island schoolteacher in her forties, hair in a tight bun, high-collared blouse, spectacles on a chain',
+    'Telegrafiste Fien': 'a young telegraph operator in her twenties, short curls, waistcoat, sleeve garters, a telegraph key in front of her'
   }
 };
 

@@ -1033,6 +1033,128 @@
           "Toneelmeester Hugo": "el tramoyista Hugo",
           "Recensente Simone": "la crítica Simone"
         }
+      },
+      "opgraving": {
+        "title": "La tumba de Nefer-Ankh",
+        "short": "Tumba",
+        "victimName": "Lord Edmund Ashcombe",
+        "roomWord": "zona",
+        "roomWordPlural": "zonas",
+        "tagline": "Luxor, 1922. Una puerta sellada, una maldición en el umbral y un lord que no sobrevive al primer paso.",
+        "intro": "Valle de los Reyes, noviembre de 1922. Tras seis años de excavación, la expedición encuentra una puerta sellada. Lord Ashcombe entra el primero. Ya no vuelve a salir.",
+        "outro": "La tumba vuelve a estar cerrada. La maldición no existía. El culpable, sí.",
+        "rooms": {
+          "Grafkamer": "Cripta",
+          "Voorkamer": "Antecámara",
+          "Schatkamer": "Tesoro",
+          "Gang": "Corredor",
+          "Werktent": "Taller",
+          "Slaaptent": "Dormitorio",
+          "Kampvuur": "Fogata",
+          "Donkere kamer": "Cuarto oscuro",
+          "Keuken": "Cocina",
+          "Voorraadkamer": "Despensa",
+          "Stal": "Establo",
+          "Ziekenboeg": "Enfermería"
+        },
+        "furniture": {
+          "canope": "un vaso canopo",
+          "olielamp": "una lámpara de aceite",
+          "kameel": "un camello",
+          "papyrus": "un papiro",
+          "zeef": "un tamiz"
+        },
+        "suspects": {
+          "Professor Hartley": "Profesor Hartley",
+          "Lady Rosamund": "Lady Rosamund",
+          "Tekenares Maud": "Dibujante Maud",
+          "Opzichter Ahmed": "Capataz Ahmed",
+          "Correspondente Ivy": "Corresponsal Ivy",
+          "Kameeldrijver Omar": "Camellero Omar",
+          "Egyptologe Edith": "Egiptóloga Edith",
+          "Verzamelaar Von Hagen": "Coleccionista Von Hagen"
+        },
+        "suspectShort": {
+          "Professor Hartley": "Hartley",
+          "Lady Rosamund": "Rosamund",
+          "Tekenares Maud": "Maud",
+          "Opzichter Ahmed": "Ahmed",
+          "Correspondente Ivy": "Ivy",
+          "Kameeldrijver Omar": "Omar",
+          "Egyptologe Edith": "Edith",
+          "Verzamelaar Von Hagen": "Von Hagen"
+        },
+        "suspectRef": {
+          "Professor Hartley": "el profesor Hartley",
+          "Lady Rosamund": "Lady Rosamund",
+          "Tekenares Maud": "la dibujante Maud",
+          "Opzichter Ahmed": "el capataz Ahmed",
+          "Correspondente Ivy": "la corresponsal Ivy",
+          "Kameeldrijver Omar": "el camellero Omar",
+          "Egyptologe Edith": "la egiptóloga Edith",
+          "Verzamelaar Von Hagen": "el coleccionista Von Hagen"
+        }
+      },
+      "casino": {
+        "title": "Casino Azur",
+        "short": "Casino",
+        "victimName": "El dueño Lorenzo Vitali",
+        "roomWord": "zona",
+        "roomWordPlural": "zonas",
+        "tagline": "Montecarlo, fin de semana del Gran Premio, 1960. Fichas, champán y un dueño que pierde su última apuesta.",
+        "intro": "Casino Azur, Montecarlo, mayo de 1960. Es el fin de semana del Gran Premio y todas las mesas están llenas. A medianoche, el dueño Lorenzo Vitali yace en su propia cámara fuerte, entre las pilas de fichas.",
+        "outro": "Las mesas están vacías y las fichas, contadas. La casa no siempre gana.",
+        "rooms": {
+          "Speelzaal": "Sala de juego",
+          "Pokerkamer": "Sala de póquer",
+          "Kluis": "Cámara fuerte",
+          "Bar": "Bar",
+          "Terras": "Terraza",
+          "Garderobe": "Guardarropa",
+          "Directiekamer": "Despacho",
+          "Balzaal": "Salón de baile",
+          "Keuken": "Cocina",
+          "Jachthaven": "Puerto",
+          "Garage": "Garaje",
+          "Salon": "Salón"
+        },
+        "furniture": {
+          "roulette": "una ruleta",
+          "fiches": "una pila de fichas",
+          "fruitautomaat": "una máquina tragamonedas",
+          "champagnetoren": "una torre de champán",
+          "shaker": "una coctelera"
+        },
+        "suspects": {
+          "Croupier Marcel": "Crupier Marcel",
+          "Zangeres Gigi": "Cantante Gigi",
+          "Erfgename Delphine": "Heredera Delphine",
+          "Coureur Rocco": "Piloto Rocco",
+          "Bankier Sterling": "Banquero Sterling",
+          "Fotomodel Tess": "Modelo Tess",
+          "Gokker Jack": "Apostador Jack",
+          "Huisdetective Nora": "Jefa de seguridad Nora"
+        },
+        "suspectShort": {
+          "Croupier Marcel": "Marcel",
+          "Zangeres Gigi": "Gigi",
+          "Erfgename Delphine": "Delphine",
+          "Coureur Rocco": "Rocco",
+          "Bankier Sterling": "Sterling",
+          "Fotomodel Tess": "Tess",
+          "Gokker Jack": "Jack",
+          "Huisdetective Nora": "Nora"
+        },
+        "suspectRef": {
+          "Croupier Marcel": "el crupier Marcel",
+          "Zangeres Gigi": "la cantante Gigi",
+          "Erfgename Delphine": "la heredera Delphine",
+          "Coureur Rocco": "el piloto Rocco",
+          "Bankier Sterling": "el banquero Sterling",
+          "Fotomodel Tess": "la modelo Tess",
+          "Gokker Jack": "el apostador Jack",
+          "Huisdetective Nora": "la jefa de seguridad Nora"
+        }
       }
     },
     "daily": [
@@ -1127,6 +1249,18 @@
         "El aria que nadie conocía",
         "La cuerda que se rompió",
         "La última reverencia de Colette"
+      ],
+      "opgraving": [
+        "La maldición de Nefer-Ankh",
+        "La estatuilla que desapareció",
+        "La noche de la tormenta de arena",
+        "La última caja hacia El Cairo"
+      ],
+      "casino": [
+        "La cámara fuerte de Vitali",
+        "Todo al diecisiete",
+        "La vuelta de Mónaco",
+        "La última partida del Azur"
       ]
     },
     "medals": {
@@ -1233,6 +1367,14 @@
       "opera": [
         "Cae el telón",
         "Termina todas las partes de la Opéra Lumière"
+      ],
+      "opgraving": [
+        "Se rompe la maldición",
+        "Termina todas las partes de la tumba de Nefer-Ankh"
+      ],
+      "casino": [
+        "La casa pierde",
+        "Termina todas las partes del Casino Azur"
       ]
     },
     "quests": {
@@ -5173,6 +5315,774 @@
           "🎟️ Último boleto"
         ]
       ]
+    ],
+    "opgraving": [
+      "Parte I · La puerta sellada",
+      "Valle de los Reyes, noviembre de 1922. Tras seis años de excavación, la expedición encuentra una puerta sellada. Lord Ashcombe entra el primero. Ya no vuelve a salir.",
+      "La puerta está abierta y el lord está muerto. La tumba tiene más cámaras.",
+      "Una tumba es oscura y estrecha, y el campamento, grande y abierto. Empieza por quien dice en qué zona estaba; «justo al lado de la lámpara de aceite» es solo la casilla contigua, nunca en diagonal.",
+      [
+        [
+          "La puerta sellada",
+          "Seis años de arena. Después, una puerta y un lord menos.",
+          "🔏 Sello de la tumba"
+        ],
+        [
+          "El primer paso",
+          "Lord Ashcombe quería entrar el primero. Alguien se lo permitió.",
+          "🔦 Linterna"
+        ],
+        [
+          "El profesor Hartley mide",
+          "Midió cada escalón. Uno era nuevo.",
+          "📏 Metro plegable"
+        ],
+        [
+          "La lámpara de aceite",
+          "La lámpara del corredor seguía encendida. Nadie había traído aceite.",
+          "🪔 Lámpara de aceite"
+        ],
+        [
+          "La dibujante Maud dibuja",
+          "En su dibujo, la puerta estaba cerrada. A las diez estaba abierta.",
+          "✏️ Lápiz de dibujo"
+        ],
+        [
+          "Agua de Luxor",
+          "El camellero Omar trajo ocho odres de agua. Volvieron siete.",
+          "💧 Odre"
+        ],
+        [
+          "La noche en el campamento",
+          "Todos dormían en su carpa. Casi todos.",
+          "⛺ Palo de carpa"
+        ],
+        [
+          "Pasada la medianoche",
+          "A las doce aullaron los chacales. A la una, alguien cavaba.",
+          "🌙 Luna creciente"
+        ]
+      ]
+    ],
+    "opgraving-2": [
+      "Parte II · La maldición",
+      "En el umbral hay signos. El capataz Ahmed los lee en voz alta: quien perturbe esta tumba morirá. El campamento se lo cree.",
+      "La maldición resulta ser una traducción. Mala, y hecha a propósito.",
+      "La superstición vuelve inseguros a los testigos, pero no al plano. Una declaración sobre dos personas se resuelve fijando primero a una de las dos.",
+      [
+        [
+          "Signos en el umbral",
+          "Tres líneas de jeroglíficos. Cuatro traducciones.",
+          "👁️ Ojo de Horus"
+        ],
+        [
+          "Los excavadores hacen huelga",
+          "Cien excavadores, cien palas. Nadie cava.",
+          "⛏️ Pala"
+        ],
+        [
+          "La egiptóloga Edith traduce",
+          "Se sabía el texto de memoria. Demasiado bien.",
+          "📖 Diccionario"
+        ],
+        [
+          "El gato negro",
+          "Un gato entró en la tumba. Salió con algo.",
+          "🐈‍⬛ Gato negro"
+        ],
+        [
+          "La corresponsal Ivy telegrafía",
+          "Su crónica sobre la maldición ya estaba en el periódico. Antes de que hubiera maldición.",
+          "📨 Telegrama"
+        ],
+        [
+          "Una serpiente en la carpa",
+          "Nunca había entrado una serpiente en el campamento. Hasta anoche.",
+          "🐍 Piel de serpiente"
+        ],
+        [
+          "Lady Rosamund quiere irse",
+          "Hizo las maletas. Se olvidó de una.",
+          "👒 Sombrero de paja"
+        ],
+        [
+          "La maldición rota",
+          "Las maldiciones no matan. Alguien, sí.",
+          "🪬 Amuleto"
+        ]
+      ]
+    ],
+    "opgraving-3": [
+      "Parte III · La cámara del tesoro",
+      "Detrás de la cripta hay una segunda puerta. Al otro lado: oro hasta el techo. Ya falta una estatuilla de oro.",
+      "Cada pieza vuelve a estar en la lista. La estatuilla ha vuelto; el ladrón ya no está libre.",
+      "En la cámara del tesoro cuenta cada pieza, y cada declaración. Quien dice dónde NO estaba también te está diciendo algo: descarta esa zona enseguida.",
+      [
+        [
+          "Oro hasta el techo",
+          "Doscientas piezas en la lista. Ciento noventa y nueve en el estante.",
+          "📋 Lista de hallazgos"
+        ],
+        [
+          "La estatuilla de oro",
+          "La estatuilla era del tamaño de una mano. Y igual de fácil de llevarse.",
+          "✨ Estatuilla de oro"
+        ],
+        [
+          "El coleccionista Von Hagen puja",
+          "Ofreció una fortuna. Por algo que todavía no se había encontrado.",
+          "🧾 Cheque"
+        ],
+        [
+          "El escarabeo",
+          "Un escarabeo de lapislázuli. Estaba en la caja equivocada.",
+          "🪲 Escarabeo"
+        ],
+        [
+          "El capataz Ahmed cuenta",
+          "Cada noche contaba a los hombres. Esta noche sobraba uno.",
+          "🧮 Ábaco"
+        ],
+        [
+          "El pectoral",
+          "El pectoral de oro estaba en el suelo. Ayer colgaba de la pared.",
+          "🛡️ Pectoral"
+        ],
+        [
+          "Una huella en el polvo",
+          "Polvo de tres mil años. Y una huella dactilar reciente.",
+          "🔍 Lupa"
+        ],
+        [
+          "El pedestal vacío",
+          "En el pedestal ya no había nada. Pero tenía arena encima, del campamento.",
+          "⏳ Reloj de arena"
+        ]
+      ]
+    ],
+    "opgraving-4": [
+      "Parte IV · La tormenta de arena",
+      "Tres días de tormenta de arena. Las carpas restallan, la tumba está cerrada y nadie entra ni sale del campamento.",
+      "La tormenta amaina. La arena ha cubierto todas las huellas, menos una.",
+      "En la tormenta nadie ve a más de un metro, así que fíjate en quién estaba justo al lado de quién. Coloca primero al sospechoso con menos opciones; lo demás viene solo.",
+      [
+        [
+          "Arena por todas partes",
+          "Arena en el té, arena en la carpa, arena en una historia que no cuadraba.",
+          "🫖 Té con arena"
+        ],
+        [
+          "La carpa taller",
+          "La carpa taller salió volando. Lo que había dentro, no.",
+          "🧰 Caja de herramientas"
+        ],
+        [
+          "El camellero Omar busca",
+          "Un camello se perdió en la tormenta. Omar lo encontró, con la alforja llena.",
+          "🐪 Camello"
+        ],
+        [
+          "El cuarto oscuro",
+          "Durante la tormenta, alguien reveló fotos. Ha desaparecido una placa.",
+          "🎞️ Placa fotográfica"
+        ],
+        [
+          "Una luz en la tormenta",
+          "En plena tormenta, había una luz encendida junto a la tumba.",
+          "🏮 Farol de tormenta"
+        ],
+        [
+          "El profesor Hartley escribe",
+          "Su diario llegaba hasta el martes. Después escribió otra mano.",
+          "📓 Diario"
+        ],
+        [
+          "La corresponsal Ivy espera",
+          "Tenía una crónica lista. Sobre algo que aún no había pasado.",
+          "⌨️ Máquina de escribir"
+        ],
+        [
+          "Después de la tormenta",
+          "Todas las huellas habían desaparecido. Menos una.",
+          "👣 Huella"
+        ]
+      ]
+    ],
+    "opgraving-5": [
+      "Parte V · Llega la prensa",
+      "El hallazgo es noticia en todo el mundo. Corresponsales de Londres y El Cairo esperan al borde del campamento, y todos quieren la primera foto.",
+      "Los periódicos tienen su foto. La verdadera nunca se imprimió.",
+      "Con la prensa en el campamento, cada uno está en otro sitio. Empieza por quien dice que estaba solo: así despejas una zona entera de golpe.",
+      [
+        [
+          "La primera foto",
+          "Veinte fotógrafos. Un flash de más.",
+          "📸 Lámpara de flash"
+        ],
+        [
+          "Exclusiva",
+          "Solo un periódico pudo entrar. Otro lo supo antes.",
+          "🗞️ Periódico de la mañana"
+        ],
+        [
+          "La corresponsal Ivy llama",
+          "La línea con El Cairo estuvo ocupada una hora. Por otra persona.",
+          "☎️ Teléfono"
+        ],
+        [
+          "Lady Rosamund posa",
+          "Salía en todas las fotos. En una de ellas está en otro sitio.",
+          "🖼️ Foto del periódico"
+        ],
+        [
+          "La entrevista",
+          "El profesor Hartley dijo tres frases. El periódico publicó cuatro.",
+          "🎙️ Micrófono"
+        ],
+        [
+          "El guardia sobornado",
+          "Le dieron una libra para que mirara hacia otro lado. Miró de todos modos.",
+          "💷 Billete de una libra"
+        ],
+        [
+          "La dibujante Maud dibuja a la prensa",
+          "En su boceto había doce periodistas. Eran once.",
+          "🖍️ Lápiz de cera"
+        ],
+        [
+          "Noticia de portada",
+          "El titular era cierto. La historia de debajo, no.",
+          "📰 Portada"
+        ]
+      ]
+    ],
+    "opgraving-6": [
+      "Parte VI · El sarcófago",
+      "En la cripta hay un sarcófago de piedra. La tapa pesa una tonelada. Cuando se abre, debajo hay más de un secreto.",
+      "La tapa vuelve a estar en su sitio. Nefer-Ankh descansa, y tú sabes por qué el campamento estaba tan callado.",
+      "Las declaraciones se vuelven más tacañas y la tumba, más oscura. Usa el lápiz: tacha las casillas imposibles y mira qué queda.",
+      [
+        [
+          "La tapa",
+          "Diez hombres levantaron la tapa. Once hombres la habían visto.",
+          "🪨 Tapa de piedra"
+        ],
+        [
+          "La momia",
+          "En el sarcófago yacía la reina. Y una nota de ayer.",
+          "📃 Nota"
+        ],
+        [
+          "La egiptóloga Edith reconoce",
+          "Reconoció la cara de la tapa. No dijo de quién era.",
+          "📐 Transportador"
+        ],
+        [
+          "Los vasos canopos",
+          "Cuatro vasos, cuatro dioses. En uno no había corazón.",
+          "🏺 Vaso canopo"
+        ],
+        [
+          "El capataz Ahmed vigila",
+          "Vigiló la tumba toda la noche. Durmió una hora.",
+          "🕰️ Reloj de bolsillo"
+        ],
+        [
+          "El papiro",
+          "En el sarcófago había un papiro. El papel era demasiado nuevo.",
+          "📜 Papiro"
+        ],
+        [
+          "El coleccionista Von Hagen quiere comprar",
+          "Solo quería el papiro. Sabía lo que decía.",
+          "💼 Maletín"
+        ],
+        [
+          "Lo que había bajo la tapa",
+          "Tres mil años de silencio. Bastó una semana para romperlo.",
+          "🗝️ Llave de bronce"
+        ]
+      ]
+    ],
+    "opgraving-7": [
+      "Parte VII · Nilo abajo",
+      "Los hallazgos bajan por el Nilo en barco hasta El Cairo. Doce cajas en cubierta, ocho pasajeros a bordo, y una caja que nunca llega.",
+      "En El Cairo cuentan las cajas. Doce. Tú sabes por qué hay doce.",
+      "El tablero crece y las declaraciones se vuelven más tacañas. Si el informe dice que una zona estaba vacía, esa zona entera queda descartada para todos.",
+      [
+        [
+          "Doce cajas",
+          "Doce cajas en cubierta. En Asiut, once.",
+          "📦 Caja de hallazgos"
+        ],
+        [
+          "El camellero Omar a bordo",
+          "Nunca había subido a un barco. Conocía el camino a la bodega.",
+          "⚓ Ancla"
+        ],
+        [
+          "La bodega",
+          "Abajo, en la bodega, hacía calor y estaba oscuro. Alguien había dejado una lámpara encendida.",
+          "🕯️ Farol de barco"
+        ],
+        [
+          "Lady Rosamund guarda silencio",
+          "No habló con nadie en todo el viaje. Salvo una vez, en plena noche.",
+          "🧣 Chal de viaje"
+        ],
+        [
+          "El sello de aduanas",
+          "Cada caja llevaba un sello. Uno seguía húmedo.",
+          "🛂 Sello de aduanas"
+        ],
+        [
+          "El profesor Hartley echa cuentas",
+          "El seguro pagaba por caja. Contó una de más.",
+          "🧾 Póliza de seguro"
+        ],
+        [
+          "Cocodrilos",
+          "En plena noche, algo cayó por la borda. Demasiado pesado para una caja.",
+          "🐊 Piel de cocodrilo"
+        ],
+        [
+          "Llegada a El Cairo",
+          "En el muelle de El Cairo había doce cajas. Una más de las que iban a bordo.",
+          "🏛️ Etiqueta del museo"
+        ]
+      ]
+    ],
+    "opgraving-8": [
+      "Parte VIII · De vuelta a la arena",
+      "La temporada ha terminado y la tumba se cierra hasta el año que viene. Una última noche alrededor de la fogata, con las mismas caras que el primer día.",
+      "Van Dam se sacude la arena del sombrero, se despide del campamento y sube al tren hacia El Cairo. La tumba de Nefer-Ankh ya no guarda secretos.",
+      "Los últimos casos, casi todos en el tablero grande. No te atasques con quien más te cueste: coloca primero a los demás, y al último muchas veces solo le queda una casilla.",
+      [
+        [
+          "La última fogata",
+          "Todos estaban sentados alrededor del fuego. Un sitio quedó caliente, y vacío.",
+          "🔥 Brasa encendida"
+        ],
+        [
+          "Se cierra la puerta",
+          "Volvieron a tapiar la puerta. Detrás de las piedras todo siguió en silencio. Casi.",
+          "🧱 Ladrillo"
+        ],
+        [
+          "La dibujante Maud hace las maletas",
+          "Trescientos dibujos en una carpeta. Uno no debía estar ahí.",
+          "🗂️ Carpeta de dibujos"
+        ],
+        [
+          "La última ronda",
+          "El capataz Ahmed hizo su última ronda. Volvió con una piedra en la mano.",
+          "🪨 Piedra caliza"
+        ],
+        [
+          "La egiptóloga Edith se queda",
+          "Todos se fueron. Ella se quedó un día más, sola.",
+          "⛺ Última carpa"
+        ],
+        [
+          "La cuenta",
+          "Lord Ashcombe lo pagaba todo. Tras su muerte, pagó otra persona.",
+          "💰 Caja de caudales"
+        ],
+        [
+          "El ojo de la reina",
+          "En la tapa hay dos ojos pintados. Uno de ellos mira al culpable.",
+          "👁️ Ojo pintado"
+        ],
+        [
+          "De vuelta a la arena",
+          "Donde empezó, junto a la puerta sellada. Ahí termina también.",
+          "🏜️ Arena del desierto"
+        ]
+      ]
+    ],
+    "casino": [
+      "Parte I · La gran noche",
+      "Casino Azur, Montecarlo, mayo de 1960. Es el fin de semana del Gran Premio y todas las mesas están llenas. A medianoche, el dueño Lorenzo Vitali yace en su propia cámara fuerte, entre las pilas de fichas.",
+      "Las mesas cierran. Pero aún queda mucho fin de semana.",
+      "Un casino es una gran sala con muchos rincones. Empieza por quien dice en qué zona estaba; «justo al lado de la máquina tragamonedas» es solo la casilla contigua, nunca en diagonal.",
+      [
+        [
+          "Hagan juego",
+          "La primera partida de la noche. La última del dueño.",
+          "🎲 Dado"
+        ],
+        [
+          "La cámara fuerte abierta",
+          "La cámara fuerte estaba abierta. Solo se abre con dos llaves.",
+          "🔐 Llave de la cámara"
+        ],
+        [
+          "El crupier Marcel reparte",
+          "Repartió toda la noche. A medianoche, en su mesa había otra persona.",
+          "🃏 Naipe"
+        ],
+        [
+          "La torre de champán",
+          "Cien copas en una torre. Faltaba una.",
+          "🥂 Copa de champán"
+        ],
+        [
+          "La cantante Gigi canta",
+          "Su última canción hablaba de una cámara fuerte. Nadie se rio.",
+          "🎤 Micrófono"
+        ],
+        [
+          "Las fichas",
+          "Rojas, verdes, negras. Un color no existía en este casino.",
+          "🔴 Ficha falsa"
+        ],
+        [
+          "La jefa de seguridad Nora vigila",
+          "Vio a todos los jugadores. A todos menos uno.",
+          "🕵️‍♀️ Placa de detective"
+        ],
+        [
+          "Medianoche en Mónaco",
+          "El reloj dio las doce. Fuera, el ruido de los motores se apagó.",
+          "🕛 Reloj del casino"
+        ]
+      ]
+    ],
+    "casino-2": [
+      "Parte II · La cámara fuerte",
+      "La policía de Mónaco cierra el casino. En la cámara fuerte todo sigue en su sitio. No falta nada, salvo el dueño.",
+      "La cámara fuerte vuelve a estar cerrada. Mañana la ruleta seguirá girando como siempre.",
+      "Aquí todos juegan con dos cartas a la vez. Una declaración sobre dos personas se resuelve fijando primero a una de las dos.",
+      [
+        [
+          "Dos llaves",
+          "La cámara fuerte solo se abría con dos llaves. Encontraron una sola.",
+          "🗝️ Segunda llave"
+        ],
+        [
+          "El banquero Sterling echa cuentas",
+          "Sabía exactamente lo que había en la cámara fuerte. Hasta la última ficha.",
+          "🧮 Regla de cálculo"
+        ],
+        [
+          "El guardarropa",
+          "Cuarenta y ocho abrigos. Recogieron cuarenta y siete.",
+          "🧥 Abrigo de noche"
+        ],
+        [
+          "La heredera Delphine pierde",
+          "Perdía todas las noches. Esta noche no perdió nada.",
+          "💍 Anillo de diamantes"
+        ],
+        [
+          "La cerradura de combinación",
+          "Cuatro cifras. El dueño no se las dijo a nadie. Casi a nadie.",
+          "🔢 Cerradura de combinación"
+        ],
+        [
+          "El piloto Rocco llega tarde",
+          "Entró a las doce y media. Su casco todavía estaba caliente.",
+          "🪖 Casco de carreras"
+        ],
+        [
+          "El vigilante nocturno",
+          "El vigilante nocturno dormía en el garaje. Oyó un motor.",
+          "🚨 Campana de alarma"
+        ],
+        [
+          "Una cámara fuerte llena",
+          "Todo seguía allí. Hasta sobraba.",
+          "💵 Billete"
+        ]
+      ]
+    ],
+    "casino-3": [
+      "Parte III · No va más",
+      "El casino vuelve a abrir. En la mesa cinco, la bola cae una y otra vez en el mismo número, y alguien sabe por qué.",
+      "Han pesado la ruleta y la han enderezado. La bola vuelve a caer donde quiere.",
+      "En la ruleta, todos miran la rueda y no a los demás. Quien dice dónde NO estaba también te está diciendo algo: descarta esa zona enseguida.",
+      [
+        [
+          "Diecisiete",
+          "Diecisiete seis veces seguidas. El crupier no levantó la vista.",
+          "🎯 Bola de ruleta"
+        ],
+        [
+          "El apostador Jack gana",
+          "Lo apostó todo al diecisiete. Antes de que girara la rueda.",
+          "🎩 Sombrero fedora"
+        ],
+        [
+          "La rueda torcida",
+          "La rueda se inclinaba un milímetro. Suficiente para una fortuna.",
+          "⚙️ Rodamiento"
+        ],
+        [
+          "La modelo Tess mira",
+          "Miró la rueda toda la noche. O al hombre de al lado.",
+          "🕶️ Lentes de sol"
+        ],
+        [
+          "El imán",
+          "Debajo de la mesa cinco había un imán. Alguien lo había pegado ayer.",
+          "🧲 Imán"
+        ],
+        [
+          "Suspenden al crupier Marcel",
+          "Lo mandaron a casa. Se fue al puerto.",
+          "🪪 Pase de personal"
+        ],
+        [
+          "El dinero de la banca",
+          "La banca perdió un millón en una noche. El banquero se rio.",
+          "💸 Apuesta perdida"
+        ],
+        [
+          "No va más",
+          "No más apuestas. Salvo una.",
+          "🎰 Última ficha"
+        ]
+      ]
+    ],
+    "casino-4": [
+      "Parte IV · El Gran Premio",
+      "El domingo se corre el Gran Premio. Los motores rugen por las calles de Montecarlo, y el casino es una gran tribuna.",
+      "Cae la bandera y el ganador bebe champán. En la tribuna hay un asiento vacío.",
+      "El día de la carrera, todos están junto a la ventana. Coloca primero al sospechoso con menos opciones; lo demás viene solo.",
+      [
+        [
+          "La salida",
+          "Veinte monoplazas en la parrilla de salida. Volvieron diecinueve.",
+          "🏁 Bandera de salida"
+        ],
+        [
+          "El piloto Rocco en boxes",
+          "Su monoplaza estaba listo. Los neumáticos, no.",
+          "🛞 Rueda de carreras"
+        ],
+        [
+          "La tribuna",
+          "Todos estaban sentados en la tribuna. Un asiento siguió vacío toda la carrera.",
+          "🎟️ Boleto de tribuna"
+        ],
+        [
+          "El garaje",
+          "En el garaje del casino había un auto de carreras. No era de Rocco.",
+          "🏎️ Auto de carreras"
+        ],
+        [
+          "El banquero Sterling apuesta",
+          "Apostó por el perdedor. Ganó.",
+          "📈 Boleto de apuesta"
+        ],
+        [
+          "Gasolina",
+          "El garaje olía a gasolina. Ya no había ningún auto.",
+          "⛽ Bidón"
+        ],
+        [
+          "La modelo Tess sale en la foto",
+          "Salía en la foto con el ganador. Al fondo: la cámara fuerte.",
+          "📷 Foto de prensa"
+        ],
+        [
+          "La última vuelta",
+          "En la última vuelta se apagó un motor. No en el circuito.",
+          "🏆 Trofeo"
+        ]
+      ]
+    ],
+    "casino-5": [
+      "Parte V · El yate",
+      "Una fiesta a bordo del yate de la heredera, en el puerto. Farolillos, jazz y champán. Al salir el sol, falta un bote.",
+      "El bote vuelve a estar amarrado en el muelle. El yate zarpa, con un invitado menos.",
+      "En un yate hay poco espacio y todos están muy juntos. Empieza por quien dice que estaba solo: así despejas una zona entera de golpe.",
+      [
+        [
+          "Farolillos sobre el agua",
+          "Cien farolillos. Uno se apagó.",
+          "🏮 Farolillo"
+        ],
+        [
+          "La heredera Delphine da una fiesta",
+          "Invitó a todos. Menos a uno.",
+          "💌 Invitación"
+        ],
+        [
+          "El bote",
+          "A las dos, el bote seguía amarrado al yate. A las tres, ya no.",
+          "🛶 Bote"
+        ],
+        [
+          "La cantante Gigi canta en cubierta",
+          "Cantó hasta las tres. Su última canción no la oyó nadie.",
+          "🎷 Saxofón"
+        ],
+        [
+          "La brújula",
+          "La brújula apuntaba en la dirección equivocada. Alguien llevaba un imán en el bolsillo.",
+          "🧭 Brújula"
+        ],
+        [
+          "El apostador Jack nada",
+          "No sabía nadar, dijo. Tenía el pelo mojado.",
+          "🏊 Toalla mojada"
+        ],
+        [
+          "El puerto de noche",
+          "A las cuatro, el puerto estaba en silencio. Salvo por un motor.",
+          "⚓ Ancla"
+        ],
+        [
+          "Al amanecer",
+          "El sol salió sobre la bahía. En cubierta había un invitado menos.",
+          "🌅 Amanecer"
+        ]
+      ]
+    ],
+    "casino-6": [
+      "Parte VI · La partida trucada",
+      "En la sala de póquer, el mismo jugador gana todas las manos. Las cartas están marcadas, y la jefa de seguridad quiere saber quién las marcó.",
+      "Las cartas marcadas están en la cámara fuerte. El jugador que las usó ya no se sienta a la mesa.",
+      "A los tramposos les gusta mentir; al plano, no. Las declaraciones se vuelven más tacañas: descarta lo que no puede ser y mira qué queda.",
+      [
+        [
+          "La mesa tres",
+          "Cinco jugadores, un crupier. Uno de ellos conocía todas las cartas.",
+          "♠️ As de picas"
+        ],
+        [
+          "La marca",
+          "En el dorso de las cartas había un punto. Solo se veía con lentes de color.",
+          "👓 Lentes de color"
+        ],
+        [
+          "La jefa de seguridad Nora interroga",
+          "Hizo una pregunta a cada uno. Un jugador dio dos respuestas.",
+          "📝 Libreta de interrogatorios"
+        ],
+        [
+          "La manga",
+          "Tenía una carta en la manga. Su chaqueta estaba colgada en el guardarropa.",
+          "👔 Camisa"
+        ],
+        [
+          "El banquero Sterling pierde",
+          "Perdió por primera vez en diez años. A propósito.",
+          "💳 Carta de crédito"
+        ],
+        [
+          "El espejo detrás de la barra",
+          "En el espejo se veían las cartas de la mesa tres.",
+          "🪞 Espejo del bar"
+        ],
+        [
+          "El piloto Rocco juega",
+          "Jugaba como corría: demasiado rápido y sin frenar.",
+          "🎲 Dados"
+        ],
+        [
+          "Cartas marcadas",
+          "Todas las cartas estaban marcadas. Menos una baraja.",
+          "🃏 Baraja marcada"
+        ]
+      ]
+    ],
+    "casino-7": [
+      "Parte VII · El baile de gala",
+      "El baile de gala de la temporada, en el salón de baile. Etiqueta rigurosa, la orquesta toca hasta las tres, y una invitada lleva guantes toda la noche.",
+      "La orquesta recoge y el salón de baile se queda vacío. Los guantes están en el guardarropa.",
+      "El tablero crece y las declaraciones se vuelven más tacañas. Si el informe dice que una zona estaba vacía, esa zona entera queda descartada para todos.",
+      [
+        [
+          "Etiqueta rigurosa",
+          "Todos de negro. Un esmoquin estaba alquilado a otro nombre.",
+          "🤵 Esmoquin"
+        ],
+        [
+          "Los guantes",
+          "Llevó guantes toda la noche. Incluso durante la cena.",
+          "🧤 Guante largo"
+        ],
+        [
+          "La cantante Gigi y el banquero",
+          "Bailaron una pieza. Después, él se quedó solo en la barra.",
+          "🍸 Martini"
+        ],
+        [
+          "La orquesta",
+          "Doce músicos, doce sillas. Una silla estaba en el guardarropa.",
+          "🎺 Trompeta"
+        ],
+        [
+          "La heredera Delphine baila",
+          "Bailó con todos. Su pulsera bailó con ella, hasta la medianoche.",
+          "💠 Pulsera"
+        ],
+        [
+          "El zapato perdido",
+          "A las tres había un zapato en la pista de baile. Quien lo llevaba ya no estaba.",
+          "👠 Zapato de tacón"
+        ],
+        [
+          "Los fuegos artificiales",
+          "A medianoche, fuegos artificiales sobre la bahía. Un estallido vino de dentro.",
+          "🎆 Fuegos artificiales"
+        ],
+        [
+          "El último vals",
+          "El último vals duró cuatro minutos. Tiempo suficiente para una sola cosa.",
+          "🎻 Arco de violín"
+        ]
+      ]
+    ],
+    "casino-8": [
+      "Parte VIII · La última apuesta",
+      "El casino va a tener un nuevo dueño. Una noche más bajo las viejas lámparas de araña, con las mismas caras que el fin de semana del Gran Premio.",
+      "Van Dam pone su última ficha al rojo, la deja ahí y sale a la noche de Montecarlo. La casa no siempre gana.",
+      "Los últimos casos, casi todos en el tablero grande. No te atasques con quien más te cueste: coloca primero a los demás, y al último muchas veces solo le queda una casilla.",
+      [
+        [
+          "El nuevo dueño",
+          "Nadie conocía al nuevo dueño. Salvo un invitado.",
+          "📝 Contrato de compraventa"
+        ],
+        [
+          "El crupier Marcel se despide",
+          "Treinta años en la misma mesa. Esta noche miraba hacia la puerta.",
+          "🏅 Insignia de despedida"
+        ],
+        [
+          "El último champán",
+          "La última botella de la bodega. Alguien ya la había abierto.",
+          "🍾 Última botella"
+        ],
+        [
+          "La jefa de seguridad Nora cierra su expediente",
+          "Escribió el nombre. No lo tachó.",
+          "📁 Expediente"
+        ],
+        [
+          "El piloto Rocco se marcha",
+          "Su auto estaba listo. La llave estaba en la cámara fuerte.",
+          "🔑 Llave del auto"
+        ],
+        [
+          "El apostador Jack lo apuesta todo",
+          "Todo a un número. Ya lo sabía.",
+          "🪙 Última moneda"
+        ],
+        [
+          "Se apaga la lámpara de araña",
+          "A las dos se fue la luz. Una vela siguió encendida.",
+          "🕯️ Cera de vela"
+        ],
+        [
+          "La última apuesta",
+          "Donde empezó, en la cámara fuerte. Ahí termina también.",
+          "♦️ As de diamantes"
+        ]
+      ]
     ]
   },
 
@@ -5244,6 +6154,16 @@
         "gender": "f"
       },
       "opera": {
+        "rw": "zona",
+        "rws": "zonas",
+        "gender": "f"
+      },
+      "opgraving": {
+        "rw": "zona",
+        "rws": "zonas",
+        "gender": "f"
+      },
+      "casino": {
         "rw": "zona",
         "rws": "zonas",
         "gender": "f"
@@ -5774,9 +6694,9 @@
           "de": "del taller"
         },
         "Directiewagen": {
-          "the": "el despacho del director",
-          "in": "en el despacho del director",
-          "de": "del despacho del director"
+          "the": "el despacho",
+          "in": "en el despacho",
+          "de": "del despacho"
         },
         "Stalling": {
           "the": "el establo",
@@ -5970,9 +6890,9 @@
           "de": "de la sastrería"
         },
         "Directiekamer": {
-          "the": "el despacho del director",
-          "in": "en el despacho del director",
-          "de": "del despacho del director"
+          "the": "el despacho",
+          "in": "en el despacho",
+          "de": "del despacho"
         },
         "Repetitiezaal": {
           "the": "la sala de ensayo",
@@ -5983,6 +6903,130 @@
           "the": "la escalinata",
           "in": "en la escalinata",
           "de": "de la escalinata"
+        }
+      },
+      "opgraving": {
+        "Grafkamer": {
+          "the": "la cripta",
+          "in": "en la cripta",
+          "de": "de la cripta"
+        },
+        "Voorkamer": {
+          "the": "la antecámara",
+          "in": "en la antecámara",
+          "de": "de la antecámara"
+        },
+        "Schatkamer": {
+          "the": "la cámara del tesoro",
+          "in": "en la cámara del tesoro",
+          "de": "de la cámara del tesoro"
+        },
+        "Gang": {
+          "the": "el corredor",
+          "in": "en el corredor",
+          "de": "del corredor"
+        },
+        "Werktent": {
+          "the": "la carpa taller",
+          "in": "en la carpa taller",
+          "de": "de la carpa taller"
+        },
+        "Slaaptent": {
+          "the": "la carpa dormitorio",
+          "in": "en la carpa dormitorio",
+          "de": "de la carpa dormitorio"
+        },
+        "Kampvuur": {
+          "the": "la zona de la fogata",
+          "in": "en la zona de la fogata",
+          "de": "de la zona de la fogata"
+        },
+        "Donkere kamer": {
+          "the": "el cuarto oscuro",
+          "in": "en el cuarto oscuro",
+          "de": "del cuarto oscuro"
+        },
+        "Keuken": {
+          "the": "la cocina",
+          "in": "en la cocina",
+          "de": "de la cocina"
+        },
+        "Voorraadkamer": {
+          "the": "la despensa",
+          "in": "en la despensa",
+          "de": "de la despensa"
+        },
+        "Stal": {
+          "the": "el establo",
+          "in": "en el establo",
+          "de": "del establo"
+        },
+        "Ziekenboeg": {
+          "the": "la enfermería",
+          "in": "en la enfermería",
+          "de": "de la enfermería"
+        }
+      },
+      "casino": {
+        "Speelzaal": {
+          "the": "la sala de juego",
+          "in": "en la sala de juego",
+          "de": "de la sala de juego"
+        },
+        "Pokerkamer": {
+          "the": "la sala de póquer",
+          "in": "en la sala de póquer",
+          "de": "de la sala de póquer"
+        },
+        "Kluis": {
+          "the": "la cámara fuerte",
+          "in": "en la cámara fuerte",
+          "de": "de la cámara fuerte"
+        },
+        "Bar": {
+          "the": "el bar",
+          "in": "en el bar",
+          "de": "del bar"
+        },
+        "Terras": {
+          "the": "la terraza",
+          "in": "en la terraza",
+          "de": "de la terraza"
+        },
+        "Garderobe": {
+          "the": "el guardarropa",
+          "in": "en el guardarropa",
+          "de": "del guardarropa"
+        },
+        "Directiekamer": {
+          "the": "el despacho",
+          "in": "en el despacho",
+          "de": "del despacho"
+        },
+        "Balzaal": {
+          "the": "el salón de baile",
+          "in": "en el salón de baile",
+          "de": "del salón de baile"
+        },
+        "Keuken": {
+          "the": "la cocina",
+          "in": "en la cocina",
+          "de": "de la cocina"
+        },
+        "Jachthaven": {
+          "the": "el puerto",
+          "in": "en el puerto",
+          "de": "del puerto"
+        },
+        "Garage": {
+          "the": "el garaje",
+          "in": "en el garaje",
+          "de": "del garaje"
+        },
+        "Salon": {
+          "the": "el salón",
+          "in": "en el salón",
+          "de": "del salón"
         }
       }
     },
@@ -6236,6 +7280,56 @@
         "a": "unos binoculares de teatro",
         "next": "al lado de unos binoculares de teatro",
         "with": "con unos binoculares de teatro"
+      },
+      "canope": {
+        "a": "un vaso canopo",
+        "next": "al lado de un vaso canopo",
+        "with": "con un vaso canopo"
+      },
+      "olielamp": {
+        "a": "una lámpara de aceite",
+        "next": "al lado de una lámpara de aceite",
+        "with": "con una lámpara de aceite"
+      },
+      "kameel": {
+        "a": "un camello",
+        "next": "al lado de un camello",
+        "with": "con un camello"
+      },
+      "papyrus": {
+        "a": "un papiro",
+        "next": "al lado de un papiro",
+        "with": "con un papiro"
+      },
+      "zeef": {
+        "a": "un tamiz",
+        "next": "al lado de un tamiz",
+        "with": "con un tamiz"
+      },
+      "roulette": {
+        "a": "una ruleta",
+        "next": "al lado de una ruleta",
+        "with": "con una ruleta"
+      },
+      "fiches": {
+        "a": "una pila de fichas",
+        "next": "al lado de una pila de fichas",
+        "with": "con una pila de fichas"
+      },
+      "fruitautomaat": {
+        "a": "una máquina tragamonedas",
+        "next": "al lado de una máquina tragamonedas",
+        "with": "con una máquina tragamonedas"
+      },
+      "champagnetoren": {
+        "a": "una torre de champán",
+        "next": "al lado de una torre de champán",
+        "with": "con una torre de champán"
+      },
+      "shaker": {
+        "a": "una coctelera",
+        "next": "al lado de una coctelera",
+        "with": "con una coctelera"
       }
     }
   }

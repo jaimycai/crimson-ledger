@@ -1,0 +1,1985 @@
+{
+ "note": "Dutch is the source, English the reference translation. Suspect \"who\" and \"look\" are background for the translator only.",
+ "worlds": {
+  "opgraving": {
+   "era": "an archaeological dig in the Valley of the Kings, Egypt, in 1922",
+   "theme": {
+    "nl": {
+     "title": "Het Graf van Nefer-Ankh",
+     "short": "Opgraving",
+     "victimName": "Lord Edmund Ashcombe",
+     "roomWord": "ruimte",
+     "roomWordPlural": "ruimtes",
+     "tagline": "Luxor, 1922. Een verzegelde deur, een vloek op de drempel, en een lord die de eerste stap niet overleeft.",
+     "intro": "Vallei der Koningen, november 1922. Na zes jaar graven vindt de expeditie een verzegelde deur. Lord Ashcombe gaat als eerste naar binnen. Hij komt er niet meer uit.",
+     "outro": "Het graf is weer dicht. De vloek bestond niet. De dader wel."
+    },
+    "en": {
+     "title": "The Tomb of Nefer-Ankh",
+     "short": "Tomb",
+     "victimName": "Lord Edmund Ashcombe",
+     "roomWord": "room",
+     "roomWordPlural": "rooms",
+     "tagline": "Luxor, 1922. A sealed door, a curse on the threshold, and a lord who does not survive the first step.",
+     "intro": "Valley of the Kings, November 1922. After six years of digging, the expedition finds a sealed door. Lord Ashcombe goes in first. He never comes out.",
+     "outro": "The tomb is closed again. The curse never existed. The culprit did."
+    }
+   },
+   "rooms": [
+    {
+     "nl": "Grafkamer",
+     "article": "de",
+     "en": "Burial Chamber"
+    },
+    {
+     "nl": "Voorkamer",
+     "article": "de",
+     "en": "Antechamber"
+    },
+    {
+     "nl": "Schatkamer",
+     "article": "de",
+     "en": "Treasury"
+    },
+    {
+     "nl": "Gang",
+     "article": "de",
+     "en": "Corridor"
+    },
+    {
+     "nl": "Werktent",
+     "article": "de",
+     "en": "Work Tent"
+    },
+    {
+     "nl": "Slaaptent",
+     "article": "de",
+     "en": "Sleeping Tent"
+    },
+    {
+     "nl": "Kampvuur",
+     "article": "het",
+     "en": "Campfire"
+    },
+    {
+     "nl": "Donkere kamer",
+     "article": "de",
+     "en": "Darkroom"
+    },
+    {
+     "nl": "Keuken",
+     "article": "de",
+     "en": "Kitchen"
+    },
+    {
+     "nl": "Voorraadkamer",
+     "article": "de",
+     "en": "Storeroom"
+    },
+    {
+     "nl": "Stal",
+     "article": "de",
+     "en": "Stable"
+    },
+    {
+     "nl": "Ziekenboeg",
+     "article": "de",
+     "en": "Sick Bay"
+    }
+   ],
+   "furniture": [
+    {
+     "id": "canope",
+     "nl": "een canopenkruik",
+     "en": "a canopic jar"
+    },
+    {
+     "id": "olielamp",
+     "nl": "een olielamp",
+     "en": "an oil lamp"
+    },
+    {
+     "id": "kameel",
+     "nl": "een kameel",
+     "en": "a camel"
+    },
+    {
+     "id": "papyrus",
+     "nl": "een papyrusrol",
+     "en": "a papyrus scroll"
+    },
+    {
+     "id": "zeef",
+     "nl": "een zeef",
+     "en": "a sieve"
+    }
+   ],
+   "suspects": [
+    {
+     "nl": "Professor Hartley",
+     "en": "Professor Hartley",
+     "gender": "m",
+     "who": "Leidt de opgraving, al zes jaar in de vallei",
+     "look": "a stern archaeologist in his fifties, pith helmet, round spectacles, grey moustache, khaki field jacket with many pockets"
+    },
+    {
+     "nl": "Lady Rosamund",
+     "en": "Lady Rosamund",
+     "gender": "f",
+     "who": "Nicht van Lord Ashcombe, voor het eerst in Egypte",
+     "look": "an English aristocrat in her twenties, cloche hat with a sun veil, pearl necklace, linen travelling dress, parasol over her shoulder"
+    },
+    {
+     "nl": "Tekenares Maud",
+     "en": "Artist Maud",
+     "gender": "f",
+     "who": "Tekent elke vondst voordat iemand hem aanraakt",
+     "look": "an expedition artist in her thirties, short practical bob, sleeves rolled up, pencil behind her ear, sketchbook in hand"
+    },
+    {
+     "nl": "Opzichter Ahmed",
+     "en": "Foreman Ahmed",
+     "gender": "m",
+     "who": "Leidt de ploeg van honderd gravers",
+     "look": "an Egyptian dig foreman in his forties, white turban, neat beard, striped galabiya, calm authoritative look"
+    },
+    {
+     "nl": "Correspondente Ivy",
+     "en": "Correspondent Ivy",
+     "gender": "f",
+     "who": "Schrijft voor een krant in New York",
+     "look": "an American newspaper correspondent in her thirties, short wavy hair under a beret, trench coat, notebook and camera strap"
+    },
+    {
+     "nl": "Kameeldrijver Omar",
+     "en": "Camel Driver Omar",
+     "gender": "m",
+     "who": "Brengt water en post uit Luxor",
+     "look": "a young camel driver in his twenties, keffiyeh head scarf, bright smile, rope and a leather water bag over his shoulder"
+    },
+    {
+     "nl": "Egyptologe Edith",
+     "en": "Egyptologist Edith",
+     "gender": "f",
+     "who": "Wilde dit graf zelf vinden",
+     "look": "a rival Egyptologist in her forties, tightly pinned hair, wire spectacles, high-collared blouse, magnifying glass on a chain"
+    },
+    {
+     "nl": "Verzamelaar Von Hagen",
+     "en": "Collector Von Hagen",
+     "gender": "m",
+     "who": "Koopt wat de musea niet krijgen",
+     "look": "a German antiquities collector in his sixties, white linen suit, panama hat, monocle, silver-headed walking stick"
+    }
+   ],
+   "week": {
+    "nl": [
+     "De vloek van Nefer-Ankh",
+     "Het beeldje dat verdween",
+     "De nacht van de zandstorm",
+     "De laatste kist naar Caïro"
+    ],
+    "en": [
+     "The Curse of Nefer-Ankh",
+     "The Statuette That Vanished",
+     "The Night of the Sandstorm",
+     "The Last Crate to Cairo"
+    ]
+   },
+   "medal": {
+    "nl": [
+     "De vloek verbroken",
+     "Maak alle delen van Het Graf van Nefer-Ankh af"
+    ],
+    "en": [
+     "The Curse Is Broken",
+     "Finish every part of The Tomb of Nefer-Ankh"
+    ]
+   },
+   "campaign": [
+    {
+     "key": "opgraving",
+     "nl": {
+      "title": "Deel I · De verzegelde deur",
+      "intro": "Vallei der Koningen, november 1922. Na zes jaar graven vindt de expeditie een verzegelde deur. Lord Ashcombe gaat als eerste naar binnen. Hij komt er niet meer uit.",
+      "outro": "De deur staat open en de lord is dood. Het graf heeft nog meer kamers.",
+      "briefing": "Een graf is donker en smal, het kamp groot en open. Begin bij wie zegt in welke ruimte hij was; \"direct naast\" de olielamp telt alleen recht ernaast, nooit schuin.",
+      "cases": [
+       [
+        "De verzegelde deur",
+        "Zes jaar zand. Daarna één deur en één lord minder.",
+        "🔏 Grafzegel"
+       ],
+       [
+        "De eerste stap",
+        "Lord Ashcombe wilde als eerste naar binnen. Iemand liet hem.",
+        "🔦 Zaklamp"
+       ],
+       [
+        "Professor Hartley meet",
+        "Hij mat elke trede. Eén trede was nieuw.",
+        "📏 Duimstok"
+       ],
+       [
+        "De olielamp",
+        "De lamp in de gang brandde nog. Niemand had olie gebracht.",
+        "🪔 Olielamp"
+       ],
+       [
+        "Tekenares Maud tekent",
+        "Op haar tekening stond de deur dicht. Om tien uur was hij open.",
+        "✏️ Tekenpotlood"
+       ],
+       [
+        "Water uit Luxor",
+        "Kameeldrijver Omar bracht acht zakken water. Er kwamen er zeven terug.",
+        "💧 Waterzak"
+       ],
+       [
+        "De nacht in het kamp",
+        "Iedereen sliep in zijn tent. Bijna iedereen.",
+        "⛺ Tentstok"
+       ],
+       [
+        "Na middernacht",
+        "Om twaalf uur huilden de jakhalzen. Om één uur werd er gegraven.",
+        "🌙 Wassende maan"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part I · The Sealed Door",
+      "intro": "Valley of the Kings, November 1922. After six years of digging, the expedition finds a sealed door. Lord Ashcombe goes in first. He never comes out.",
+      "outro": "The door is open and the lord is dead. The tomb has more chambers.",
+      "briefing": "A tomb is dark and narrow, the camp big and open. Start with whoever says which room they were in; “directly next to” the oil lamp only counts straight beside it, never diagonally.",
+      "cases": [
+       [
+        "The Sealed Door",
+        "Six years of sand. Then one door, and one lord fewer.",
+        "🔏 Tomb seal"
+       ],
+       [
+        "The First Step",
+        "Lord Ashcombe wanted to go in first. Someone let him.",
+        "🔦 Torch"
+       ],
+       [
+        "Professor Hartley Measures",
+        "He measured every step. One step was new.",
+        "📏 Folding rule"
+       ],
+       [
+        "The Oil Lamp",
+        "The lamp in the corridor was still burning. Nobody had brought any oil.",
+        "🪔 Oil lamp"
+       ],
+       [
+        "Artist Maud Draws",
+        "In her drawing the door was shut. At ten it was open.",
+        "✏️ Drawing pencil"
+       ],
+       [
+        "Water from Luxor",
+        "Camel Driver Omar brought eight bags of water. Seven came back.",
+        "💧 Water bag"
+       ],
+       [
+        "The Night in the Camp",
+        "Everyone slept in their tent. Almost everyone.",
+        "⛺ Tent pole"
+       ],
+       [
+        "After Midnight",
+        "At twelve the jackals howled. At one someone was digging.",
+        "🌙 Waxing moon"
+       ]
+      ]
+     }
+    },
+    {
+     "key": "opgraving-2",
+     "nl": {
+      "title": "Deel II · De vloek",
+      "intro": "Op de drempel staan tekens. Opzichter Ahmed leest ze voor: wie dit graf verstoort, sterft. Het kamp gelooft het.",
+      "outro": "De vloek blijkt een vertaling. Een slechte, en een bewuste.",
+      "briefing": "Bijgeloof maakt getuigen onzeker, de plattegrond niet. Een verklaring over twee mensen los je op door eerst één van de twee vast te zetten.",
+      "cases": [
+       [
+        "Tekens op de drempel",
+        "Drie regels hiërogliefen. Vier vertalingen.",
+        "👁️ Oog van Horus"
+       ],
+       [
+        "De gravers staken",
+        "Honderd gravers, honderd scheppen. Niemand graaft.",
+        "⛏️ Schep"
+       ],
+       [
+        "Egyptologe Edith vertaalt",
+        "Ze kende de tekst uit haar hoofd. Te goed.",
+        "📖 Woordenboek"
+       ],
+       [
+        "De zwarte kat",
+        "Een kat liep het graf in. Hij kwam er met iets terug.",
+        "🐈‍⬛ Zwarte kat"
+       ],
+       [
+        "Correspondente Ivy telegrafeert",
+        "Haar bericht over de vloek stond al in de krant. Voordat er een vloek was.",
+        "📨 Telegram"
+       ],
+       [
+        "Een slang in de tent",
+        "Er was nog nooit een slang in het kamp geweest. Tot vannacht.",
+        "🐍 Slangenhuid"
+       ],
+       [
+        "Lady Rosamund wil weg",
+        "Ze pakte haar koffers. Eén koffer vergat ze.",
+        "👒 Strohoed"
+       ],
+       [
+        "De vloek gebroken",
+        "Vloeken doden niet. Iemand wel.",
+        "🪬 Amulet"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part II · The Curse",
+      "intro": "There are signs on the threshold. Foreman Ahmed reads them out: whoever disturbs this tomb will die. The camp believes it.",
+      "outro": "The curse turns out to be a translation. A bad one, and a deliberate one.",
+      "briefing": "Superstition makes witnesses unsure, but not the floor plan. Solve a statement about two people by fixing one of the two first.",
+      "cases": [
+       [
+        "Signs on the Threshold",
+        "Three lines of hieroglyphs. Four translations.",
+        "👁️ Eye of Horus"
+       ],
+       [
+        "The Diggers Strike",
+        "A hundred diggers, a hundred shovels. Nobody digs.",
+        "⛏️ Shovel"
+       ],
+       [
+        "Egyptologist Edith Translates",
+        "She knew the text by heart. Too well.",
+        "📖 Dictionary"
+       ],
+       [
+        "The Black Cat",
+        "A cat walked into the tomb. It came out with something.",
+        "🐈‍⬛ Black cat"
+       ],
+       [
+        "Correspondent Ivy Cables",
+        "Her story about the curse was already in the paper. Before there was a curse.",
+        "📨 Telegram"
+       ],
+       [
+        "A Snake in the Tent",
+        "There had never been a snake in the camp. Until last night.",
+        "🐍 Snakeskin"
+       ],
+       [
+        "Lady Rosamund Wants to Leave",
+        "She packed her cases. She forgot one.",
+        "👒 Straw hat"
+       ],
+       [
+        "The Curse Broken",
+        "Curses do not kill. Someone does.",
+        "🪬 Amulet"
+       ]
+      ]
+     }
+    },
+    {
+     "key": "opgraving-3",
+     "nl": {
+      "title": "Deel III · De schatkamer",
+      "intro": "Achter de grafkamer ligt een tweede deur. Erachter: goud tot aan het plafond. Een gouden beeldje is al weg.",
+      "outro": "Elk stuk staat weer op de lijst. Het beeldje is terug, de dief niet meer vrij.",
+      "briefing": "In de schatkamer telt elk stuk, en elke verklaring. Wie zegt waar hij níét was, vertelt je ook iets: streep die ruimte meteen weg.",
+      "cases": [
+       [
+        "Goud tot aan het plafond",
+        "Tweehonderd stukken op de lijst. Honderdnegenennegentig op de plank.",
+        "📋 Vondstenlijst"
+       ],
+       [
+        "Het gouden beeldje",
+        "Het beeldje was zo groot als een hand. En net zo makkelijk mee te nemen.",
+        "✨ Gouden beeldje"
+       ],
+       [
+        "Verzamelaar Von Hagen biedt",
+        "Hij bood een fortuin. Voor iets wat nog niet gevonden was.",
+        "🧾 Cheque"
+       ],
+       [
+        "De scarabee",
+        "Een scarabee van lapis. Hij lag in de verkeerde kist.",
+        "🪲 Scarabee"
+       ],
+       [
+        "Opzichter Ahmed telt",
+        "Hij telde elke avond de mannen. Vanavond was er één te veel.",
+        "🧮 Telraam"
+       ],
+       [
+        "De borstplaat",
+        "De gouden borstplaat lag op de vloer. Gisteren hing hij aan de muur.",
+        "🛡️ Borstplaat"
+       ],
+       [
+        "Een vingerafdruk in het stof",
+        "Stof van drieduizend jaar. En één verse vingerafdruk.",
+        "🔍 Vergrootglas"
+       ],
+       [
+        "Het lege voetstuk",
+        "Op het voetstuk stond niets meer. Er lag wel zand op, uit het kamp.",
+        "⏳ Zandloper"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part III · The Treasury",
+      "intro": "Behind the burial chamber is a second door. Behind it: gold up to the ceiling. A golden statuette is already gone.",
+      "outro": "Every piece is back on the list. The statuette is back, the thief no longer free.",
+      "briefing": "In the treasury every piece counts, and every statement. Whoever says where they were not tells you something too: cross that room off straight away.",
+      "cases": [
+       [
+        "Gold up to the Ceiling",
+        "Two hundred pieces on the list. A hundred and ninety-nine on the shelf.",
+        "📋 Find list"
+       ],
+       [
+        "The Golden Statuette",
+        "The statuette was the size of a hand. And just as easy to take.",
+        "✨ Golden statuette"
+       ],
+       [
+        "Collector Von Hagen Bids",
+        "He offered a fortune. For something that had not been found yet.",
+        "🧾 Cheque"
+       ],
+       [
+        "The Scarab",
+        "A scarab of lapis. It lay in the wrong crate.",
+        "🪲 Scarab"
+       ],
+       [
+        "Foreman Ahmed Counts",
+        "Every evening he counted the men. Tonight there was one too many.",
+        "🧮 Abacus"
+       ],
+       [
+        "The Pectoral",
+        "The golden pectoral lay on the floor. Yesterday it hung on the wall.",
+        "🛡️ Pectoral"
+       ],
+       [
+        "A Fingerprint in the Dust",
+        "Three thousand years of dust. And one fresh fingerprint.",
+        "🔍 Magnifying glass"
+       ],
+       [
+        "The Empty Plinth",
+        "Nothing stood on the plinth any more. But there was sand on it, from the camp.",
+        "⏳ Hourglass"
+       ]
+      ]
+     }
+    },
+    {
+     "key": "opgraving-4",
+     "nl": {
+      "title": "Deel IV · De zandstorm",
+      "intro": "Drie dagen zandstorm. De tenten klapperen, het graf is dicht, en niemand komt het kamp in of uit.",
+      "outro": "De storm gaat liggen. Het zand heeft alle sporen bedekt, op één na.",
+      "briefing": "In de storm ziet niemand verder dan een meter, dus let op wie direct naast wie stond. Zet eerst de verdachte met de kleinste keus neer; de rest volgt.",
+      "cases": [
+       [
+        "Zand in alles",
+        "Zand in de thee, zand in de tent, zand in een verhaal dat niet klopte.",
+        "🫖 Zandige thee"
+       ],
+       [
+        "De werktent",
+        "De werktent waaide weg. Wat erin lag, niet.",
+        "🧰 Gereedschapskist"
+       ],
+       [
+        "Kameeldrijver Omar zoekt",
+        "Een kameel was weg in de storm. Omar vond hem terug, met een volle zadeltas.",
+        "🐪 Kameel"
+       ],
+       [
+        "De donkere kamer",
+        "Tijdens de storm ontwikkelde iemand foto's. Eén plaat is verdwenen.",
+        "🎞️ Fotoplaat"
+       ],
+       [
+        "Licht in de storm",
+        "Midden in de storm brandde er licht bij het graf.",
+        "🏮 Stormlamp"
+       ],
+       [
+        "Professor Hartley schrijft",
+        "Zijn dagboek liep tot dinsdag. Daarna schreef een andere hand.",
+        "📓 Dagboek"
+       ],
+       [
+        "Correspondente Ivy wacht",
+        "Ze had een bericht klaar. Over iets wat nog moest gebeuren.",
+        "⌨️ Typemachine"
+       ],
+       [
+        "Na de storm",
+        "Alle sporen waren weg. Op één na.",
+        "👣 Voetafdruk"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part IV · The Sandstorm",
+      "intro": "Three days of sandstorm. The tents flap, the tomb is shut, and nobody gets in or out of the camp.",
+      "outro": "The storm dies down. The sand has covered every trace, except one.",
+      "briefing": "In the storm nobody can see further than a metre, so watch who stood directly next to whom. Place the suspect with the fewest options first; the rest follows.",
+      "cases": [
+       [
+        "Sand in Everything",
+        "Sand in the tea, sand in the tent, sand in a story that did not add up.",
+        "🫖 Sandy tea"
+       ],
+       [
+        "The Work Tent",
+        "The work tent blew away. What was in it did not.",
+        "🧰 Toolbox"
+       ],
+       [
+        "Camel Driver Omar Searches",
+        "A camel went missing in the storm. Omar found it again, with a full saddlebag.",
+        "🐪 Camel"
+       ],
+       [
+        "The Darkroom",
+        "During the storm someone developed photographs. One plate has disappeared.",
+        "🎞️ Photographic plate"
+       ],
+       [
+        "Light in the Storm",
+        "In the middle of the storm a light was burning by the tomb.",
+        "🏮 Storm lantern"
+       ],
+       [
+        "Professor Hartley Writes",
+        "His diary ran until Tuesday. After that, another hand wrote.",
+        "📓 Diary"
+       ],
+       [
+        "Correspondent Ivy Waits",
+        "She had a story ready. About something that had not happened yet.",
+        "⌨️ Typewriter"
+       ],
+       [
+        "After the Storm",
+        "Every trace was gone. Except one.",
+        "👣 Footprint"
+       ]
+      ]
+     }
+    },
+    {
+     "key": "opgraving-5",
+     "nl": {
+      "title": "Deel V · De pers komt",
+      "intro": "De vondst is wereldnieuws. Correspondenten uit Londen en Caïro staan aan de rand van het kamp, en iedereen wil de eerste foto.",
+      "outro": "De kranten hebben hun foto. De echte is nooit gedrukt.",
+      "briefing": "Met de pers in het kamp staat iedereen ergens anders. Begin bij wie zegt alleen te zijn geweest: dat ruimt meteen een hele ruimte op.",
+      "cases": [
+       [
+        "De eerste foto",
+        "Twintig fotografen. Eén flits te veel.",
+        "📸 Flitslamp"
+       ],
+       [
+        "Exclusief",
+        "Eén krant mocht naar binnen. Een andere krant wist het eerder.",
+        "🗞️ Ochtendkrant"
+       ],
+       [
+        "Correspondente Ivy belt",
+        "De lijn naar Caïro was een uur bezet. Door iemand anders.",
+        "☎️ Telefoon"
+       ],
+       [
+        "Lady Rosamund poseert",
+        "Ze stond op elke foto. Op één ervan staat ze ergens anders.",
+        "🖼️ Krantenfoto"
+       ],
+       [
+        "Het interview",
+        "Professor Hartley zei drie zinnen. De krant drukte er vier.",
+        "🎙️ Microfoon"
+       ],
+       [
+        "De omgekochte bewaker",
+        "Hij kreeg een pond om weg te kijken. Hij keek toch.",
+        "💷 Pondbiljet"
+       ],
+       [
+        "Tekenares Maud tekent de pers",
+        "Op haar schets stonden twaalf journalisten. Er waren er elf.",
+        "🖍️ Krijt"
+       ],
+       [
+        "Voorpaginanieuws",
+        "De kop klopte. Het verhaal eronder niet.",
+        "📰 Voorpagina"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part V · The Press Arrives",
+      "intro": "The find is world news. Correspondents from London and Cairo stand at the edge of the camp, and everyone wants the first photo.",
+      "outro": "The papers have their photo. The real one was never printed.",
+      "briefing": "With the press in the camp, everyone is somewhere else. Start with whoever says they were alone: that clears a whole room at once.",
+      "cases": [
+       [
+        "The First Photo",
+        "Twenty photographers. One flash too many.",
+        "📸 Flash lamp"
+       ],
+       [
+        "Exclusive",
+        "One paper was allowed inside. Another paper knew first.",
+        "🗞️ Morning paper"
+       ],
+       [
+        "Correspondent Ivy Phones",
+        "The line to Cairo was busy for an hour. Someone else was on it.",
+        "☎️ Telephone"
+       ],
+       [
+        "Lady Rosamund Poses",
+        "She was in every photo. In one of them she stands somewhere else.",
+        "🖼️ Newspaper photo"
+       ],
+       [
+        "The Interview",
+        "Professor Hartley said three sentences. The paper printed four.",
+        "🎙️ Microphone"
+       ],
+       [
+        "The Bribed Guard",
+        "He got a pound to look away. He looked anyway.",
+        "💷 Pound note"
+       ],
+       [
+        "Artist Maud Draws the Press",
+        "Her sketch showed twelve journalists. There were eleven.",
+        "🖍️ Crayon"
+       ],
+       [
+        "Front-Page News",
+        "The headline was right. The story under it was not.",
+        "📰 Front page"
+       ]
+      ]
+     }
+    },
+    {
+     "key": "opgraving-6",
+     "nl": {
+      "title": "Deel VI · De sarcofaag",
+      "intro": "In de grafkamer staat een stenen sarcofaag. Het deksel weegt een ton. Als het opengaat, ligt eronder meer dan één geheim.",
+      "outro": "Het deksel ligt weer op zijn plek. Nefer-Ankh rust, en jij weet waarom het kamp zo stil was.",
+      "briefing": "De verklaringen worden zuiniger en het graf wordt donkerder. Gebruik het potlood: streep vakjes weg die niet kunnen en kijk wat overblijft.",
+      "cases": [
+       [
+        "Het deksel",
+        "Tien mannen tilden het deksel. Elf mannen hadden het gezien.",
+        "🪨 Stenen deksel"
+       ],
+       [
+        "De mummie",
+        "In de sarcofaag lag de koningin. En een briefje van gisteren.",
+        "📃 Briefje"
+       ],
+       [
+        "Egyptologe Edith herkent",
+        "Ze herkende het gezicht op het deksel. Ze zei niet van wie het was.",
+        "📐 Gradenboog"
+       ],
+       [
+        "De canopenkruiken",
+        "Vier kruiken, vier goden. In één ervan zat geen hart.",
+        "🏺 Canopenkruik"
+       ],
+       [
+        "Opzichter Ahmed waakt",
+        "Hij waakte de hele nacht bij het graf. Hij sliep één uur.",
+        "🕰️ Zakhorloge"
+       ],
+       [
+        "De papyrusrol",
+        "In de sarcofaag lag een papyrus. Het papier was te nieuw.",
+        "📜 Papyrus"
+       ],
+       [
+        "Verzamelaar Von Hagen wil kopen",
+        "Hij wilde alleen de rol. Hij wist wat erop stond.",
+        "💼 Aktetas"
+       ],
+       [
+        "Wat onder het deksel lag",
+        "Drieduizend jaar stilte. Eén week was genoeg om die te breken.",
+        "🗝️ Bronzen sleutel"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part VI · The Sarcophagus",
+      "intro": "In the burial chamber stands a stone sarcophagus. The lid weighs a ton. When it opens, more than one secret lies underneath.",
+      "outro": "The lid is back in place. Nefer-Ankh rests, and you know why the camp was so quiet.",
+      "briefing": "The statements get sparser and the tomb gets darker. Use the pencil: cross off squares that cannot be and see what is left.",
+      "cases": [
+       [
+        "The Lid",
+        "Ten men lifted the lid. Eleven men had seen it.",
+        "🪨 Stone lid"
+       ],
+       [
+        "The Mummy",
+        "In the sarcophagus lay the queen. And a note from yesterday.",
+        "📃 Note"
+       ],
+       [
+        "Egyptologist Edith Recognises",
+        "She recognised the face on the lid. She did not say whose it was.",
+        "📐 Protractor"
+       ],
+       [
+        "The Canopic Jars",
+        "Four jars, four gods. One of them held no heart.",
+        "🏺 Canopic jar"
+       ],
+       [
+        "Foreman Ahmed Keeps Watch",
+        "He kept watch by the tomb all night. He slept for one hour.",
+        "🕰️ Pocket watch"
+       ],
+       [
+        "The Papyrus Scroll",
+        "In the sarcophagus lay a papyrus. The paper was too new.",
+        "📜 Papyrus"
+       ],
+       [
+        "Collector Von Hagen Wants to Buy",
+        "He only wanted the scroll. He knew what was on it.",
+        "💼 Briefcase"
+       ],
+       [
+        "What Lay Under the Lid",
+        "Three thousand years of silence. One week was enough to break it.",
+        "🗝️ Bronze key"
+       ]
+      ]
+     }
+    },
+    {
+     "key": "opgraving-7",
+     "nl": {
+      "title": "Deel VII · De Nijl af",
+      "intro": "De vondsten gaan per boot de Nijl af naar Caïro. Twaalf kisten aan dek, acht passagiers aan boord, en één kist komt niet aan.",
+      "outro": "In Caïro worden de kisten geteld. Twaalf. Jij weet waarom het er twaalf zijn.",
+      "briefing": "Het bord wordt groter en de verklaringen worden zuiniger. Staat in het rapport dat een ruimte leeg was, dan valt die hele ruimte af voor iedereen.",
+      "cases": [
+       [
+        "Twaalf kisten",
+        "Twaalf kisten aan dek. Bij Assioet nog elf.",
+        "📦 Vondstenkist"
+       ],
+       [
+        "Kameeldrijver Omar aan boord",
+        "Hij had nog nooit op een boot gestaan. Hij kende de weg naar het ruim.",
+        "⚓ Anker"
+       ],
+       [
+        "Het ruim",
+        "Beneden in het ruim was het warm en donker. Iemand had er een lamp laten branden.",
+        "🕯️ Scheepslamp"
+       ],
+       [
+        "Lady Rosamund zwijgt",
+        "Ze sprak de hele reis met niemand. Behalve één keer, midden in de nacht.",
+        "🧣 Reissjaal"
+       ],
+       [
+        "Het douanestempel",
+        "Elke kist had een stempel. Eén stempel was nog nat.",
+        "🛂 Douanestempel"
+       ],
+       [
+        "Professor Hartley rekent",
+        "De verzekering betaalde per kist. Hij telde er één te veel.",
+        "🧾 Verzekeringspolis"
+       ],
+       [
+        "Krokodillen",
+        "Midden in de nacht viel er iets overboord. Te zwaar voor een kist.",
+        "🐊 Krokodillenleer"
+       ],
+       [
+        "Aankomst in Caïro",
+        "Op de kade in Caïro stonden twaalf kisten. Eén meer dan er aan boord waren.",
+        "🏛️ Museumlabel"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part VII · Down the Nile",
+      "intro": "The finds go down the Nile by boat to Cairo. Twelve crates on deck, eight passengers on board, and one crate never arrives.",
+      "outro": "In Cairo the crates are counted. Twelve. You know why there are twelve.",
+      "briefing": "The board gets bigger and the statements get sparser. If the report says a room was empty, that whole room is ruled out for everyone.",
+      "cases": [
+       [
+        "Twelve Crates",
+        "Twelve crates on deck. At Asyut, eleven.",
+        "📦 Find crate"
+       ],
+       [
+        "Camel Driver Omar on Board",
+        "He had never stood on a boat. He knew the way to the hold.",
+        "⚓ Anchor"
+       ],
+       [
+        "The Hold",
+        "Down in the hold it was warm and dark. Someone had left a lamp burning there.",
+        "🕯️ Ship lamp"
+       ],
+       [
+        "Lady Rosamund Stays Silent",
+        "She spoke to nobody the whole journey. Except once, in the middle of the night.",
+        "🧣 Travelling scarf"
+       ],
+       [
+        "The Customs Stamp",
+        "Every crate had a stamp. One stamp was still wet.",
+        "🛂 Customs stamp"
+       ],
+       [
+        "Professor Hartley Does the Sums",
+        "The insurance paid per crate. He counted one too many.",
+        "🧾 Insurance policy"
+       ],
+       [
+        "Crocodiles",
+        "In the middle of the night something fell overboard. Too heavy for a crate.",
+        "🐊 Crocodile leather"
+       ],
+       [
+        "Arrival in Cairo",
+        "Twelve crates stood on the quay in Cairo. One more than had been on board.",
+        "🏛️ Museum label"
+       ]
+      ]
+     }
+    },
+    {
+     "key": "opgraving-8",
+     "nl": {
+      "title": "Deel VIII · Terug naar het zand",
+      "intro": "Het seizoen is voorbij en het graf gaat dicht tot volgend jaar. Nog één nacht rond het kampvuur, met dezelfde gezichten als op de eerste dag.",
+      "outro": "Van Dam schudt het zand uit zijn hoed, groet het kamp en stapt in de trein naar Caïro. Het graf van Nefer-Ankh heeft geen geheimen meer.",
+      "briefing": "De laatste zaken, bijna allemaal op het grote bord. Blijf niet hangen bij wie het lastigst is: zet eerst de anderen neer, dan blijft er voor de laatste vaak maar één vakje over.",
+      "cases": [
+       [
+        "Het laatste kampvuur",
+        "Iedereen zat rond het vuur. Eén plek bleef warm, en leeg.",
+        "🔥 Gloeiend kooltje"
+       ],
+       [
+        "De deur gaat dicht",
+        "Ze metselden de deur weer dicht. Achter de stenen bleef het stil. Bijna.",
+        "🧱 Baksteen"
+       ],
+       [
+        "Tekenares Maud pakt in",
+        "Driehonderd tekeningen in één map. Eén tekening hoorde er niet bij.",
+        "🗂️ Tekenmap"
+       ],
+       [
+        "De laatste ronde",
+        "Opzichter Ahmed liep zijn laatste ronde. Hij kwam terug met een steen in zijn hand.",
+        "🪨 Kalksteen"
+       ],
+       [
+        "Egyptologe Edith blijft",
+        "Iedereen vertrok. Zij bleef nog één dag, alleen.",
+        "⛺ Laatste tent"
+       ],
+       [
+        "De rekening",
+        "Lord Ashcombe betaalde alles. Na zijn dood betaalde iemand anders.",
+        "💰 Geldkist"
+       ],
+       [
+        "Het oog van de koningin",
+        "Op het deksel staan twee geschilderde ogen. Eén ervan kijkt naar de dader.",
+        "👁️ Geschilderd oog"
+       ],
+       [
+        "Terug naar het zand",
+        "Waar het begon, bij de verzegelde deur. Daar eindigt het ook.",
+        "🏜️ Woestijnzand"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part VIII · Back to the Sand",
+      "intro": "The season is over and the tomb closes until next year. One last night around the campfire, with the same faces as on the first day.",
+      "outro": "Van Dam shakes the sand out of his hat, waves to the camp and boards the train to Cairo. The Tomb of Nefer-Ankh has no secrets left.",
+      "briefing": "The last cases, nearly all on the big board. Do not get stuck on the hardest one: place the others first, and the last one often has only one square left.",
+      "cases": [
+       [
+        "The Last Campfire",
+        "Everyone sat around the fire. One place stayed warm, and empty.",
+        "🔥 Glowing ember"
+       ],
+       [
+        "The Door Is Closed",
+        "They bricked the door up again. Behind the stones it stayed quiet. Almost.",
+        "🧱 Brick"
+       ],
+       [
+        "Artist Maud Packs",
+        "Three hundred drawings in one folder. One drawing did not belong.",
+        "🗂️ Drawing folder"
+       ],
+       [
+        "The Last Round",
+        "Foreman Ahmed walked his last round. He came back with a stone in his hand.",
+        "🪨 Limestone"
+       ],
+       [
+        "Egyptologist Edith Stays",
+        "Everyone left. She stayed one more day, alone.",
+        "⛺ Last tent"
+       ],
+       [
+        "The Bill",
+        "Lord Ashcombe paid for everything. After his death, someone else paid.",
+        "💰 Cash box"
+       ],
+       [
+        "The Eye of the Queen",
+        "Two painted eyes on the lid. One of them looks at the culprit.",
+        "👁️ Painted eye"
+       ],
+       [
+        "Back to the Sand",
+        "Where it began, at the sealed door. That is where it ends.",
+        "🏜️ Desert sand"
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  "casino": {
+   "era": "a luxurious casino in Monte Carlo on Grand Prix weekend in 1960",
+   "theme": {
+    "nl": {
+     "title": "Casino Azur",
+     "short": "Casino",
+     "victimName": "Eigenaar Lorenzo Vitali",
+     "roomWord": "ruimte",
+     "roomWordPlural": "ruimtes",
+     "tagline": "Monte Carlo, Grand Prix-weekend 1960. Fiches, champagne, en een eigenaar die zijn laatste gok verliest.",
+     "intro": "Casino Azur, Monte Carlo, mei 1960. Het is Grand Prix-weekend en alle tafels zijn vol. Om middernacht ligt eigenaar Lorenzo Vitali in zijn eigen kluis, tussen de stapels fiches.",
+     "outro": "De tafels zijn leeg, de fiches geteld. Het huis wint niet altijd."
+    },
+    "en": {
+     "title": "Casino Azur",
+     "short": "Casino",
+     "victimName": "Owner Lorenzo Vitali",
+     "roomWord": "room",
+     "roomWordPlural": "rooms",
+     "tagline": "Monte Carlo, Grand Prix weekend 1960. Chips, champagne, and an owner who loses his last bet.",
+     "intro": "Casino Azur, Monte Carlo, May 1960. It is Grand Prix weekend and every table is full. At midnight owner Lorenzo Vitali lies in his own vault, between the stacks of chips.",
+     "outro": "The tables are empty, the chips counted. The house does not always win."
+    }
+   },
+   "rooms": [
+    {
+     "nl": "Speelzaal",
+     "article": "de",
+     "en": "Gaming Room"
+    },
+    {
+     "nl": "Pokerkamer",
+     "article": "de",
+     "en": "Poker Room"
+    },
+    {
+     "nl": "Kluis",
+     "article": "de",
+     "en": "Vault"
+    },
+    {
+     "nl": "Bar",
+     "article": "de",
+     "en": "Bar"
+    },
+    {
+     "nl": "Terras",
+     "article": "het",
+     "en": "Terrace"
+    },
+    {
+     "nl": "Garderobe",
+     "article": "de",
+     "en": "Cloakroom"
+    },
+    {
+     "nl": "Directiekamer",
+     "article": "de",
+     "en": "Office"
+    },
+    {
+     "nl": "Balzaal",
+     "article": "de",
+     "en": "Ballroom"
+    },
+    {
+     "nl": "Keuken",
+     "article": "de",
+     "en": "Kitchen"
+    },
+    {
+     "nl": "Jachthaven",
+     "article": "de",
+     "en": "Marina"
+    },
+    {
+     "nl": "Garage",
+     "article": "de",
+     "en": "Garage"
+    },
+    {
+     "nl": "Salon",
+     "article": "de",
+     "en": "Salon"
+    }
+   ],
+   "furniture": [
+    {
+     "id": "roulette",
+     "nl": "een roulettewiel",
+     "en": "a roulette wheel"
+    },
+    {
+     "id": "fiches",
+     "nl": "een stapel fiches",
+     "en": "a stack of chips"
+    },
+    {
+     "id": "fruitautomaat",
+     "nl": "een fruitautomaat",
+     "en": "a slot machine"
+    },
+    {
+     "id": "champagnetoren",
+     "nl": "een champagnetoren",
+     "en": "a champagne tower"
+    },
+    {
+     "id": "shaker",
+     "nl": "een cocktailshaker",
+     "en": "a cocktail shaker"
+    }
+   ],
+   "suspects": [
+    {
+     "nl": "Croupier Marcel",
+     "en": "Croupier Marcel",
+     "gender": "m",
+     "who": "Leidt de roulettetafel en ziet elke inzet",
+     "look": "a precise croupier in his forties, slicked-back hair, thin moustache, white dinner jacket with black bow tie, rake in hand"
+    },
+    {
+     "nl": "Zangeres Gigi",
+     "en": "Singer Gigi",
+     "gender": "f",
+     "who": "Zingt elke avond in de bar",
+     "look": "a glamorous nightclub singer in her twenties, platinum bouffant hair, sparkling evening gown, long gloves, vintage microphone"
+    },
+    {
+     "nl": "Erfgename Delphine",
+     "en": "Heiress Delphine",
+     "gender": "f",
+     "who": "Verspeelt elk jaar een fortuin, met plezier",
+     "look": "a wealthy heiress in her thirties, elegant updo, diamond earrings, silk evening gown, long cigarette holder"
+    },
+    {
+     "nl": "Coureur Rocco",
+     "en": "Racing Driver Rocco",
+     "gender": "m",
+     "who": "Rijdt zondag de Grand Prix",
+     "look": "a dashing Italian racing driver in his thirties, tousled hair, leather racing jacket, driving goggles pushed up on his forehead"
+    },
+    {
+     "nl": "Bankier Sterling",
+     "en": "Banker Sterling",
+     "gender": "m",
+     "who": "Leende de eigenaar te veel geld",
+     "look": "a cool English banker in his fifties, silver hair, tuxedo, pocket square, cufflinks, a faint smirk"
+    },
+    {
+     "nl": "Fotomodel Tess",
+     "en": "Model Tess",
+     "gender": "f",
+     "who": "Staat op elke foto van het weekend",
+     "look": "a fashion model in her twenties, sleek bob, bold eyeliner, polka-dot dress, big sunglasses pushed up into her hair"
+    },
+    {
+     "nl": "Gokker Jack",
+     "en": "Gambler Jack",
+     "gender": "m",
+     "who": "Wint te vaak om toeval te zijn",
+     "look": "a professional American gambler in his forties, fedora, loosened tie, cigar, a stack of chips in his hand"
+    },
+    {
+     "nl": "Huisdetective Nora",
+     "en": "House Detective Nora",
+     "gender": "f",
+     "who": "Let op valsspelers, in dienst van het casino",
+     "look": "the casino's house detective, a woman in her forties, sharp tailored suit, short hair, observant eyes, small notebook"
+    }
+   ],
+   "week": {
+    "nl": [
+     "De kluis van Vitali",
+     "Alles op zeventien",
+     "De ronde van Monaco",
+     "Het laatste spel van Azur"
+    ],
+    "en": [
+     "The Vault of Vitali",
+     "Everything on Seventeen",
+     "The Lap of Monaco",
+     "The Last Game at Azur"
+    ]
+   },
+   "medal": {
+    "nl": [
+     "Het huis verliest",
+     "Maak alle delen van Casino Azur af"
+    ],
+    "en": [
+     "The House Loses",
+     "Finish every part of Casino Azur"
+    ]
+   },
+   "campaign": [
+    {
+     "key": "casino",
+     "nl": {
+      "title": "Deel I · De grote avond",
+      "intro": "Casino Azur, Monte Carlo, mei 1960. Het is Grand Prix-weekend en alle tafels zijn vol. Om middernacht ligt eigenaar Lorenzo Vitali in zijn eigen kluis, tussen de stapels fiches.",
+      "outro": "De tafels gaan dicht. Maar het weekend is nog lang.",
+      "briefing": "Een casino is één grote zaal met veel hoeken. Begin bij wie zegt in welke ruimte hij was; \"direct naast\" de fruitautomaat telt alleen recht ernaast, nooit schuin.",
+      "cases": [
+       [
+        "Faites vos jeux",
+        "Het eerste spel van de avond. Het laatste van de eigenaar.",
+        "🎲 Dobbelsteen"
+       ],
+       [
+        "De open kluis",
+        "De kluis stond open. Hij gaat alleen open met twee sleutels.",
+        "🔐 Kluissleutel"
+       ],
+       [
+        "Croupier Marcel deelt",
+        "Hij deelde de hele avond. Om middernacht stond er een ander aan zijn tafel.",
+        "🃏 Speelkaart"
+       ],
+       [
+        "De champagnetoren",
+        "Honderd glazen in een toren. Eén glas ontbrak.",
+        "🥂 Coupe"
+       ],
+       [
+        "Zangeres Gigi zingt",
+        "Haar laatste lied ging over een kluis. Niemand lachte.",
+        "🎤 Microfoon"
+       ],
+       [
+        "De fiches",
+        "Rood, groen, zwart. Eén kleur bestond niet in dit casino.",
+        "🔴 Valse fiche"
+       ],
+       [
+        "Huisdetective Nora let op",
+        "Ze zag elke speler. Op één na.",
+        "🕵️‍♀️ Detectivepas"
+       ],
+       [
+        "Middernacht in Monaco",
+        "De klok sloeg twaalf. Buiten zweeg het geluid van de motoren.",
+        "🕛 Casinoklok"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part I · The Big Night",
+      "intro": "Casino Azur, Monte Carlo, May 1960. It is Grand Prix weekend and every table is full. At midnight owner Lorenzo Vitali lies in his own vault, between the stacks of chips.",
+      "outro": "The tables close. But the weekend is still long.",
+      "briefing": "A casino is one big hall with many corners. Start with whoever says which room they were in; “directly next to” the slot machine only counts straight beside it, never diagonally.",
+      "cases": [
+       [
+        "Faites vos jeux",
+        "The first game of the evening. The owner's last.",
+        "🎲 Die"
+       ],
+       [
+        "The Open Vault",
+        "The vault was open. It only opens with two keys.",
+        "🔐 Vault key"
+       ],
+       [
+        "Croupier Marcel Deals",
+        "He dealt all evening. At midnight someone else stood at his table.",
+        "🃏 Playing card"
+       ],
+       [
+        "The Champagne Tower",
+        "A hundred glasses in a tower. One glass was missing.",
+        "🥂 Coupe"
+       ],
+       [
+        "Singer Gigi Sings",
+        "Her last song was about a vault. Nobody laughed.",
+        "🎤 Microphone"
+       ],
+       [
+        "The Chips",
+        "Red, green, black. One colour did not exist in this casino.",
+        "🔴 Fake chip"
+       ],
+       [
+        "House Detective Nora Keeps Watch",
+        "She saw every player. All but one.",
+        "🕵️‍♀️ Detective badge"
+       ],
+       [
+        "Midnight in Monaco",
+        "The clock struck twelve. Outside, the sound of the engines fell silent.",
+        "🕛 Casino clock"
+       ]
+      ]
+     }
+    },
+    {
+     "key": "casino-2",
+     "nl": {
+      "title": "Deel II · De kluis",
+      "intro": "De politie van Monaco sluit het casino. In de kluis ligt alles nog op zijn plek. Er ontbreekt niets, behalve de eigenaar.",
+      "outro": "De kluis is weer dicht. Morgen draait het wiel gewoon verder.",
+      "briefing": "Hier speelt iedereen met twee kaarten tegelijk. Een verklaring over twee mensen los je op door eerst één van de twee vast te zetten.",
+      "cases": [
+       [
+        "Twee sleutels",
+        "De kluis ging alleen open met twee sleutels. Er was er maar één gevonden.",
+        "🗝️ Tweede sleutel"
+       ],
+       [
+        "Bankier Sterling rekent",
+        "Hij wist precies wat er in de kluis lag. Tot op de laatste fiche.",
+        "🧮 Rekenliniaal"
+       ],
+       [
+        "De garderobe",
+        "Achtenveertig jassen. Er werden er zevenenveertig opgehaald.",
+        "🧥 Avondjas"
+       ],
+       [
+        "Erfgename Delphine verliest",
+        "Ze verloor elke avond. Vanavond verloor ze niets.",
+        "💍 Diamanten ring"
+       ],
+       [
+        "Het codeslot",
+        "Vier cijfers. De eigenaar vertelde ze aan niemand. Bijna niemand.",
+        "🔢 Codeslot"
+       ],
+       [
+        "Coureur Rocco komt te laat",
+        "Hij kwam om half één binnen. Zijn helm was nog warm.",
+        "🪖 Racehelm"
+       ],
+       [
+        "De nachtwaker",
+        "De nachtwaker sliep in de garage. Hij hoorde een motor.",
+        "🚨 Alarmbel"
+       ],
+       [
+        "Een volle kluis",
+        "Alles lag er nog. Te veel zelfs.",
+        "💵 Bankbiljet"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part II · The Vault",
+      "intro": "The Monaco police close the casino. In the vault everything is still in its place. Nothing is missing, except the owner.",
+      "outro": "The vault is shut again. Tomorrow the wheel turns as usual.",
+      "briefing": "Here everyone plays two cards at once. Solve a statement about two people by fixing one of the two first.",
+      "cases": [
+       [
+        "Two Keys",
+        "The vault only opened with two keys. Only one was found.",
+        "🗝️ Second key"
+       ],
+       [
+        "Banker Sterling Does the Sums",
+        "He knew exactly what was in the vault. Down to the last chip.",
+        "🧮 Slide rule"
+       ],
+       [
+        "The Cloakroom",
+        "Forty-eight coats. Forty-seven were collected.",
+        "🧥 Evening coat"
+       ],
+       [
+        "Heiress Delphine Loses",
+        "She lost every evening. Tonight she lost nothing.",
+        "💍 Diamond ring"
+       ],
+       [
+        "The Combination Lock",
+        "Four digits. The owner told them to nobody. Almost nobody.",
+        "🔢 Combination lock"
+       ],
+       [
+        "Racing Driver Rocco Is Late",
+        "He came in at half past twelve. His helmet was still warm.",
+        "🪖 Racing helmet"
+       ],
+       [
+        "The Night Watchman",
+        "The night watchman slept in the garage. He heard an engine.",
+        "🚨 Alarm bell"
+       ],
+       [
+        "A Full Vault",
+        "Everything was still there. Too much, even.",
+        "💵 Banknote"
+       ]
+      ]
+     }
+    },
+    {
+     "key": "casino-3",
+     "nl": {
+      "title": "Deel III · Rien ne va plus",
+      "intro": "Het casino gaat weer open. Aan tafel vijf valt het balletje steeds op hetzelfde getal, en iemand weet waarom.",
+      "outro": "Het wiel is gewogen en rechtgezet. Het balletje valt weer waar het wil.",
+      "briefing": "Bij de roulette kijkt iedereen naar het wiel, niet naar elkaar. Wie zegt waar hij níét was, vertelt je ook iets: streep die ruimte meteen weg.",
+      "cases": [
+       [
+        "Zeventien",
+        "Zes keer achter elkaar zeventien. De croupier keek niet op.",
+        "🎯 Rouletteballetje"
+       ],
+       [
+        "Gokker Jack wint",
+        "Hij zette alles op zeventien. Voordat het wiel draaide.",
+        "🎩 Fedora"
+       ],
+       [
+        "Het scheve wiel",
+        "Het wiel helde één millimeter. Genoeg voor een fortuin.",
+        "⚙️ Kogellager"
+       ],
+       [
+        "Fotomodel Tess kijkt toe",
+        "Ze keek de hele avond naar het wiel. Of naar de man ernaast.",
+        "🕶️ Zonnebril"
+       ],
+       [
+        "De magneet",
+        "Onder tafel vijf zat een magneet. Iemand had hem er gisteren onder geplakt.",
+        "🧲 Magneet"
+       ],
+       [
+        "Croupier Marcel wordt geschorst",
+        "Hij moest naar huis. Hij ging naar de jachthaven.",
+        "🪪 Personeelspas"
+       ],
+       [
+        "Het geld van de bank",
+        "De bank verloor in één nacht een miljoen. De bankier lachte.",
+        "💸 Verloren inzet"
+       ],
+       [
+        "Rien ne va plus",
+        "Niets gaat meer. Behalve één inzet.",
+        "🎰 Laatste fiche"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part III · Rien ne va plus",
+      "intro": "The casino reopens. At table five the ball keeps landing on the same number, and someone knows why.",
+      "outro": "The wheel has been weighed and set straight. The ball lands where it likes again.",
+      "briefing": "At the roulette everyone watches the wheel, not each other. Whoever says where they were not tells you something too: cross that room off straight away.",
+      "cases": [
+       [
+        "Seventeen",
+        "Seventeen six times in a row. The croupier did not look up.",
+        "🎯 Roulette ball"
+       ],
+       [
+        "Gambler Jack Wins",
+        "He put everything on seventeen. Before the wheel turned.",
+        "🎩 Fedora"
+       ],
+       [
+        "The Crooked Wheel",
+        "The wheel tilted by one millimetre. Enough for a fortune.",
+        "⚙️ Ball bearing"
+       ],
+       [
+        "Model Tess Watches",
+        "She watched the wheel all evening. Or the man next to it.",
+        "🕶️ Sunglasses"
+       ],
+       [
+        "The Magnet",
+        "Under table five was a magnet. Someone had stuck it there yesterday.",
+        "🧲 Magnet"
+       ],
+       [
+        "Croupier Marcel Is Suspended",
+        "He was sent home. He went to the marina.",
+        "🪪 Staff pass"
+       ],
+       [
+        "The Bank's Money",
+        "The bank lost a million in one night. The banker laughed.",
+        "💸 Lost stake"
+       ],
+       [
+        "Rien ne va plus",
+        "No more bets. Except one.",
+        "🎰 Last chip"
+       ]
+      ]
+     }
+    },
+    {
+     "key": "casino-4",
+     "nl": {
+      "title": "Deel IV · De Grand Prix",
+      "intro": "Zondag de Grand Prix. Motoren brullen door de straten van Monte Carlo, en het casino is één grote tribune.",
+      "outro": "De vlag valt en de winnaar drinkt champagne. Op de tribune is één stoel leeg.",
+      "briefing": "Op de racedag staat iedereen bij het raam. Zet eerst de verdachte met de kleinste keus neer; de rest volgt.",
+      "cases": [
+       [
+        "De start",
+        "Twintig wagens op de startlijn. Negentien kwamen terug.",
+        "🏁 Startvlag"
+       ],
+       [
+        "Coureur Rocco in de pits",
+        "Zijn wagen stond klaar. De banden niet.",
+        "🛞 Racewiel"
+       ],
+       [
+        "De tribune",
+        "Iedereen zat op de tribune. Eén stoel bleef de hele race leeg.",
+        "🎟️ Tribunekaart"
+       ],
+       [
+        "De garage",
+        "In de garage van het casino stond een raceauto. Hij was niet van Rocco.",
+        "🏎️ Raceauto"
+       ],
+       [
+        "Bankier Sterling wedt",
+        "Hij wedde op de verliezer. Hij won.",
+        "📈 Wedbriefje"
+       ],
+       [
+        "Benzine",
+        "De garage rook naar benzine. Er stond geen auto meer.",
+        "⛽ Jerrycan"
+       ],
+       [
+        "Fotomodel Tess op de foto",
+        "Ze stond op de foto met de winnaar. Op de achtergrond: de kluis.",
+        "📷 Persfoto"
+       ],
+       [
+        "De laatste ronde",
+        "In de laatste ronde viel één motor stil. Niet op het circuit.",
+        "🏆 Beker"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part IV · The Grand Prix",
+      "intro": "Sunday is the Grand Prix. Engines roar through the streets of Monte Carlo, and the casino is one big grandstand.",
+      "outro": "The flag falls and the winner drinks champagne. In the grandstand, one seat is empty.",
+      "briefing": "On race day everyone stands at the window. Place the suspect with the fewest options first; the rest follows.",
+      "cases": [
+       [
+        "The Start",
+        "Twenty cars on the starting grid. Nineteen came back.",
+        "🏁 Starting flag"
+       ],
+       [
+        "Racing Driver Rocco in the Pits",
+        "His car was ready. His tyres were not.",
+        "🛞 Racing wheel"
+       ],
+       [
+        "The Grandstand",
+        "Everyone sat in the grandstand. One seat stayed empty the whole race.",
+        "🎟️ Grandstand ticket"
+       ],
+       [
+        "The Garage",
+        "In the casino's garage stood a racing car. It was not Rocco's.",
+        "🏎️ Racing car"
+       ],
+       [
+        "Banker Sterling Bets",
+        "He bet on the loser. He won.",
+        "📈 Betting slip"
+       ],
+       [
+        "Petrol",
+        "The garage smelled of petrol. There was no car any more.",
+        "⛽ Jerrycan"
+       ],
+       [
+        "Model Tess in the Photo",
+        "She was in the photo with the winner. In the background: the vault.",
+        "📷 Press photo"
+       ],
+       [
+        "The Last Lap",
+        "On the last lap one engine went quiet. Not on the circuit.",
+        "🏆 Trophy"
+       ]
+      ]
+     }
+    },
+    {
+     "key": "casino-5",
+     "nl": {
+      "title": "Deel V · Het jacht",
+      "intro": "Een feest aan boord van het jacht van de erfgename, in de haven. Lampions, jazz en champagne. Als de zon opkomt, is er één sloep weg.",
+      "outro": "De sloep ligt weer aan de kade. Het jacht vaart uit, met één gast minder.",
+      "briefing": "Op een jacht is het smal en staat iedereen dicht op elkaar. Begin bij wie zegt alleen te zijn geweest: dat ruimt meteen een hele ruimte op.",
+      "cases": [
+       [
+        "Lampions op het water",
+        "Honderd lampions. Eén ging uit.",
+        "🏮 Lampion"
+       ],
+       [
+        "Erfgename Delphine geeft een feest",
+        "Ze nodigde iedereen uit. Behalve één.",
+        "💌 Uitnodiging"
+       ],
+       [
+        "De sloep",
+        "Om twee uur lag de sloep nog aan het jacht. Om drie uur niet meer.",
+        "🛶 Sloep"
+       ],
+       [
+        "Zangeres Gigi zingt aan dek",
+        "Ze zong tot drie uur. Haar laatste lied hoorde niemand.",
+        "🎷 Saxofoon"
+       ],
+       [
+        "Het kompas",
+        "Het kompas wees de verkeerde kant op. Iemand had een magneet in zijn zak.",
+        "🧭 Kompas"
+       ],
+       [
+        "Gokker Jack zwemt",
+        "Hij kon niet zwemmen, zei hij. Zijn haar was nat.",
+        "🏊 Natte handdoek"
+       ],
+       [
+        "De haven bij nacht",
+        "Om vier uur was de haven stil. Op één motor na.",
+        "⚓ Bootanker"
+       ],
+       [
+        "Bij zonsopgang",
+        "De zon kwam op boven de baai. Er stond één gast minder aan dek.",
+        "🌅 Zonsopgang"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part V · The Yacht",
+      "intro": "A party on board the heiress's yacht, in the harbour. Lanterns, jazz and champagne. When the sun comes up, one dinghy is gone.",
+      "outro": "The dinghy is back at the quay. The yacht sails out, one guest short.",
+      "briefing": "On a yacht it is narrow and everyone stands close together. Start with whoever says they were alone: that clears a whole room at once.",
+      "cases": [
+       [
+        "Lanterns on the Water",
+        "A hundred lanterns. One went out.",
+        "🏮 Lantern"
+       ],
+       [
+        "Heiress Delphine Throws a Party",
+        "She invited everyone. Except one.",
+        "💌 Invitation"
+       ],
+       [
+        "The Dinghy",
+        "At two the dinghy was still tied to the yacht. At three it was not.",
+        "🛶 Dinghy"
+       ],
+       [
+        "Singer Gigi Sings on Deck",
+        "She sang until three. Nobody heard her last song.",
+        "🎷 Saxophone"
+       ],
+       [
+        "The Compass",
+        "The compass pointed the wrong way. Someone had a magnet in their pocket.",
+        "🧭 Compass"
+       ],
+       [
+        "Gambler Jack Swims",
+        "He could not swim, he said. His hair was wet.",
+        "🏊 Wet towel"
+       ],
+       [
+        "The Harbour at Night",
+        "At four the harbour was quiet. Except for one engine.",
+        "⚓ Boat anchor"
+       ],
+       [
+        "At Sunrise",
+        "The sun rose over the bay. There was one guest fewer on deck.",
+        "🌅 Sunrise"
+       ]
+      ]
+     }
+    },
+    {
+     "key": "casino-6",
+     "nl": {
+      "title": "Deel VI · Het valse spel",
+      "intro": "In de pokerkamer wint dezelfde speler elke hand. De kaarten zijn gemerkt, en de huisdetective wil weten door wie.",
+      "outro": "De gemerkte kaarten liggen in de kluis. De speler die ze gebruikte zit niet meer aan tafel.",
+      "briefing": "Valsspelers liegen graag, de plattegrond niet. De verklaringen worden zuiniger: streep weg wat niet kan en kijk wat overblijft.",
+      "cases": [
+       [
+        "Tafel drie",
+        "Vijf spelers, één deler. Een van hen kende elke kaart.",
+        "♠️ Schoppenaas"
+       ],
+       [
+        "Het merkteken",
+        "Op de achterkant van de kaarten zat een stip. Je zag hem alleen met een gekleurde bril.",
+        "👓 Gekleurde bril"
+       ],
+       [
+        "Huisdetective Nora verhoort",
+        "Ze stelde iedereen één vraag. Eén speler gaf twee antwoorden.",
+        "📝 Verhoorblok"
+       ],
+       [
+        "De mouw",
+        "Hij had een kaart in zijn mouw. Zijn jasje hing in de garderobe.",
+        "👔 Overhemd"
+       ],
+       [
+        "Bankier Sterling verliest",
+        "Hij verloor voor het eerst in tien jaar. Met opzet.",
+        "💳 Kredietbrief"
+       ],
+       [
+        "De spiegel achter de bar",
+        "In de spiegel zag je de kaarten van tafel drie.",
+        "🪞 Barspiegel"
+       ],
+       [
+        "Coureur Rocco speelt",
+        "Hij speelde zoals hij reed: te snel, en zonder remmen.",
+        "🎲 Dobbelstenen"
+       ],
+       [
+        "Gemerkte kaarten",
+        "Alle kaarten waren gemerkt. Op één stapel na.",
+        "🃏 Gemerkt spel"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part VI · The Crooked Game",
+      "intro": "In the poker room the same player wins every hand. The cards are marked, and the house detective wants to know by whom.",
+      "outro": "The marked cards are in the vault. The player who used them no longer sits at the table.",
+      "briefing": "Cheats like to lie, but the floor plan does not. The statements get sparser: cross off what cannot be and see what is left.",
+      "cases": [
+       [
+        "Table Three",
+        "Five players, one dealer. One of them knew every card.",
+        "♠️ Ace of spades"
+       ],
+       [
+        "The Mark",
+        "There was a dot on the back of the cards. You could only see it with tinted glasses.",
+        "👓 Tinted glasses"
+       ],
+       [
+        "House Detective Nora Questions",
+        "She asked everyone one question. One player gave two answers.",
+        "📝 Interview pad"
+       ],
+       [
+        "The Sleeve",
+        "He had a card up his sleeve. His jacket was hanging in the cloakroom.",
+        "👔 Shirt"
+       ],
+       [
+        "Banker Sterling Loses",
+        "He lost for the first time in ten years. On purpose.",
+        "💳 Letter of credit"
+       ],
+       [
+        "The Mirror Behind the Bar",
+        "In the mirror you could see the cards at table three.",
+        "🪞 Bar mirror"
+       ],
+       [
+        "Racing Driver Rocco Plays",
+        "He played the way he drove: too fast, and without brakes.",
+        "🎲 Dice"
+       ],
+       [
+        "Marked Cards",
+        "Every card was marked. Except one deck.",
+        "🃏 Marked deck"
+       ]
+      ]
+     }
+    },
+    {
+     "key": "casino-7",
+     "nl": {
+      "title": "Deel VII · Het galabal",
+      "intro": "Het galabal van het seizoen in de balzaal. Smoking verplicht, het orkest speelt tot drie uur, en één gast draagt de hele avond handschoenen.",
+      "outro": "Het orkest pakt in en de balzaal is leeg. De handschoenen liggen in de garderobe.",
+      "briefing": "Het bord wordt groter en de verklaringen worden zuiniger. Staat in het rapport dat een ruimte leeg was, dan valt die hele ruimte af voor iedereen.",
+      "cases": [
+       [
+        "Smoking verplicht",
+        "Iedereen in het zwart. Eén smoking was gehuurd, op een andere naam.",
+        "🤵 Smoking"
+       ],
+       [
+        "De handschoenen",
+        "Ze droeg de hele avond handschoenen. Ook tijdens het eten.",
+        "🧤 Avondhandschoen"
+       ],
+       [
+        "Zangeres Gigi en de bankier",
+        "Ze dansten één dans. Daarna zat hij alleen aan de bar.",
+        "🍸 Martini"
+       ],
+       [
+        "Het orkest",
+        "Twaalf muzikanten, twaalf stoelen. Eén stoel stond in de garderobe.",
+        "🎺 Trompet"
+       ],
+       [
+        "Erfgename Delphine danst",
+        "Ze danste met iedereen. Haar armband danste mee, tot middernacht.",
+        "💠 Armband"
+       ],
+       [
+        "De verloren schoen",
+        "Om drie uur lag er één schoen op de dansvloer. De eigenaar was weg.",
+        "👠 Pump"
+       ],
+       [
+        "Het vuurwerk",
+        "Om middernacht vuurwerk boven de baai. Eén knal kwam van binnen.",
+        "🎆 Vuurwerk"
+       ],
+       [
+        "De laatste wals",
+        "De laatste wals duurde vier minuten. Genoeg tijd voor één ding.",
+        "🎻 Strijkstok"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part VII · The Gala Ball",
+      "intro": "The gala ball of the season in the ballroom. Black tie, the orchestra plays until three, and one guest wears gloves all evening.",
+      "outro": "The orchestra packs up and the ballroom is empty. The gloves are in the cloakroom.",
+      "briefing": "The board gets bigger and the statements get sparser. If the report says a room was empty, that whole room is ruled out for everyone.",
+      "cases": [
+       [
+        "Black Tie",
+        "Everyone in black. One dinner jacket was hired, under another name.",
+        "🤵 Dinner jacket"
+       ],
+       [
+        "The Gloves",
+        "She wore gloves all evening. Even at dinner.",
+        "🧤 Evening glove"
+       ],
+       [
+        "Singer Gigi and the Banker",
+        "They danced one dance. After that he sat alone at the bar.",
+        "🍸 Martini"
+       ],
+       [
+        "The Orchestra",
+        "Twelve musicians, twelve chairs. One chair stood in the cloakroom.",
+        "🎺 Trumpet"
+       ],
+       [
+        "Heiress Delphine Dances",
+        "She danced with everyone. Her bracelet danced along, until midnight.",
+        "💠 Bracelet"
+       ],
+       [
+        "The Lost Shoe",
+        "At three one shoe lay on the dance floor. Its owner was gone.",
+        "👠 Court shoe"
+       ],
+       [
+        "The Fireworks",
+        "At midnight, fireworks over the bay. One bang came from inside.",
+        "🎆 Fireworks"
+       ],
+       [
+        "The Last Waltz",
+        "The last waltz lasted four minutes. Enough time for one thing.",
+        "🎻 Violin bow"
+       ]
+      ]
+     }
+    },
+    {
+     "key": "casino-8",
+     "nl": {
+      "title": "Deel VIII · De laatste inzet",
+      "intro": "Het casino krijgt een nieuwe eigenaar. Nog één avond onder de oude kroonluchters, met dezelfde gezichten als in het Grand Prix-weekend.",
+      "outro": "Van Dam zet zijn laatste fiche op rood, laat hem liggen en loopt de nacht van Monte Carlo in. Het huis wint niet altijd.",
+      "briefing": "De laatste zaken, bijna allemaal op het grote bord. Blijf niet hangen bij wie het lastigst is: zet eerst de anderen neer, dan blijft er voor de laatste vaak maar één vakje over.",
+      "cases": [
+       [
+        "De nieuwe eigenaar",
+        "Niemand kende de nieuwe eigenaar. Op één gast na.",
+        "📝 Koopcontract"
+       ],
+       [
+        "Croupier Marcel neemt afscheid",
+        "Dertig jaar aan dezelfde tafel. Vanavond keek hij naar de deur.",
+        "🏅 Afscheidsspeld"
+       ],
+       [
+        "De laatste champagne",
+        "De laatste fles uit de kelder. Iemand had hem al geopend.",
+        "🍾 Laatste fles"
+       ],
+       [
+        "Huisdetective Nora sluit haar dossier",
+        "Ze schreef de naam op. Ze streepte hem niet door.",
+        "📁 Dossier"
+       ],
+       [
+        "Coureur Rocco vertrekt",
+        "Zijn auto stond klaar. De sleutel lag in de kluis.",
+        "🔑 Autosleutel"
+       ],
+       [
+        "Gokker Jack zet alles in",
+        "Alles op één getal. Hij wist het al.",
+        "🪙 Laatste munt"
+       ],
+       [
+        "De kroonluchter dooft",
+        "Om twee uur ging het licht uit. Eén kaars bleef branden.",
+        "🕯️ Kaarsvet"
+       ],
+       [
+        "De laatste inzet",
+        "Waar het begon, in de kluis. Daar eindigt het ook.",
+        "♦️ Ruitenaas"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part VIII · The Last Bet",
+      "intro": "The casino is getting a new owner. One more evening under the old chandeliers, with the same faces as on Grand Prix weekend.",
+      "outro": "Van Dam puts his last chip on red, leaves it there and walks out into the Monte Carlo night. The house does not always win.",
+      "briefing": "The last cases, nearly all on the big board. Do not get stuck on the hardest one: place the others first, and the last one often has only one square left.",
+      "cases": [
+       [
+        "The New Owner",
+        "Nobody knew the new owner. Except one guest.",
+        "📝 Sale contract"
+       ],
+       [
+        "Croupier Marcel Says Goodbye",
+        "Thirty years at the same table. Tonight he watched the door.",
+        "🏅 Farewell pin"
+       ],
+       [
+        "The Last Champagne",
+        "The last bottle from the cellar. Someone had already opened it.",
+        "🍾 Last bottle"
+       ],
+       [
+        "House Detective Nora Closes Her File",
+        "She wrote down the name. She did not cross it out.",
+        "📁 File"
+       ],
+       [
+        "Racing Driver Rocco Leaves",
+        "His car was ready. The key was in the vault.",
+        "🔑 Car key"
+       ],
+       [
+        "Gambler Jack Goes All In",
+        "Everything on one number. He already knew.",
+        "🪙 Last coin"
+       ],
+       [
+        "The Chandelier Goes Dark",
+        "At two the lights went out. One candle kept burning.",
+        "🕯️ Candle wax"
+       ],
+       [
+        "The Last Bet",
+        "Where it began, in the vault. That is where it ends.",
+        "♦️ Ace of diamonds"
+       ]
+      ]
+     }
+    }
+   ]
+  }
+ }
+}

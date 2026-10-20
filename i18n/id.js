@@ -933,6 +933,108 @@
           "Toneelmeester Hugo": "Hugo",
           "Recensente Simone": "Simone"
         }
+      },
+      "opgraving": {
+        "title": "Makam Nefer-Ankh",
+        "short": "Makam",
+        "victimName": "Lord Edmund Ashcombe",
+        "roomWord": "ruangan",
+        "roomWordPlural": "ruangan",
+        "tagline": "Luxor, 1922. Pintu bersegel, kutukan di ambang pintu, dan seorang lord yang tak selamat melewati langkah pertama.",
+        "intro": "Lembah Para Raja, November 1922. Setelah enam tahun menggali, ekspedisi itu menemukan sebuah pintu bersegel. Lord Ashcombe masuk lebih dulu. Dia tak pernah keluar lagi.",
+        "outro": "Makam itu tertutup lagi. Kutukannya tidak nyata. Pelakunya nyata.",
+        "rooms": {
+          "Grafkamer": "Ruang Makam",
+          "Voorkamer": "Ruang Depan",
+          "Schatkamer": "Ruang Harta",
+          "Gang": "Lorong",
+          "Werktent": "Tenda Kerja",
+          "Slaaptent": "Tenda Tidur",
+          "Kampvuur": "Api Unggun",
+          "Donkere kamer": "Kamar Gelap",
+          "Keuken": "Dapur",
+          "Voorraadkamer": "Gudang",
+          "Stal": "Kandang Unta",
+          "Ziekenboeg": "Ruang Medis"
+        },
+        "furniture": {
+          "canope": "guci kanopik",
+          "olielamp": "lampu minyak",
+          "kameel": "unta",
+          "papyrus": "gulungan papirus",
+          "zeef": "ayakan"
+        },
+        "suspects": {
+          "Professor Hartley": "Profesor Hartley",
+          "Lady Rosamund": "Lady Rosamund",
+          "Tekenares Maud": "Juru Gambar Maud",
+          "Opzichter Ahmed": "Mandor Ahmed",
+          "Correspondente Ivy": "Koresponden Ivy",
+          "Kameeldrijver Omar": "Pawang Unta Omar",
+          "Egyptologe Edith": "Egiptolog Edith",
+          "Verzamelaar Von Hagen": "Kolektor Von Hagen"
+        },
+        "suspectShort": {
+          "Professor Hartley": "Hartley",
+          "Lady Rosamund": "Rosamund",
+          "Tekenares Maud": "Maud",
+          "Opzichter Ahmed": "Ahmed",
+          "Correspondente Ivy": "Ivy",
+          "Kameeldrijver Omar": "Omar",
+          "Egyptologe Edith": "Edith",
+          "Verzamelaar Von Hagen": "Von Hagen"
+        }
+      },
+      "casino": {
+        "title": "Casino Azur",
+        "short": "Kasino",
+        "victimName": "Pemilik Kasino Lorenzo Vitali",
+        "roomWord": "ruangan",
+        "roomWordPlural": "ruangan",
+        "tagline": "Monte Carlo, akhir pekan Grand Prix 1960. Chip, sampanye, dan seorang pemilik kasino yang kalah dalam taruhan terakhirnya.",
+        "intro": "Casino Azur, Monte Carlo, Mei 1960. Akhir pekan Grand Prix, dan semua meja penuh. Tengah malam, pemilik kasino Lorenzo Vitali tergeletak di ruang brankasnya sendiri, di antara tumpukan chip.",
+        "outro": "Meja-meja kosong, chip sudah dihitung. Bandar tidak selalu menang.",
+        "rooms": {
+          "Speelzaal": "Ruang Judi",
+          "Pokerkamer": "Ruang Poker",
+          "Kluis": "Ruang Brankas",
+          "Bar": "Bar",
+          "Terras": "Teras",
+          "Garderobe": "Ruang Mantel",
+          "Directiekamer": "Kantor",
+          "Balzaal": "Ruang Dansa",
+          "Keuken": "Dapur",
+          "Jachthaven": "Marina",
+          "Garage": "Garasi",
+          "Salon": "Ruang Duduk"
+        },
+        "furniture": {
+          "roulette": "roda rolet",
+          "fiches": "tumpukan chip",
+          "fruitautomaat": "mesin slot",
+          "champagnetoren": "menara sampanye",
+          "shaker": "shaker koktail"
+        },
+        "suspects": {
+          "Croupier Marcel": "Croupier Marcel",
+          "Zangeres Gigi": "Penyanyi Gigi",
+          "Erfgename Delphine": "Ahli Waris Delphine",
+          "Coureur Rocco": "Pembalap Rocco",
+          "Bankier Sterling": "Bankir Sterling",
+          "Fotomodel Tess": "Model Tess",
+          "Gokker Jack": "Penjudi Jack",
+          "Huisdetective Nora": "Kepala Keamanan Nora"
+        },
+        "suspectShort": {
+          "Croupier Marcel": "Marcel",
+          "Zangeres Gigi": "Gigi",
+          "Erfgename Delphine": "Delphine",
+          "Coureur Rocco": "Rocco",
+          "Bankier Sterling": "Sterling",
+          "Fotomodel Tess": "Tess",
+          "Gokker Jack": "Jack",
+          "Huisdetective Nora": "Nora"
+        }
       }
     },
     "daily": [
@@ -1027,6 +1129,18 @@
         "Aria yang Tak Dikenal Siapa Pun",
         "Tali yang Putus",
         "Salam Terakhir Colette"
+      ],
+      "opgraving": [
+        "Kutukan Nefer-Ankh",
+        "Patung Kecil yang Lenyap",
+        "Malam Badai Pasir",
+        "Peti Terakhir ke Kairo"
+      ],
+      "casino": [
+        "Brankas Vitali",
+        "Semua di Tujuh Belas",
+        "Putaran Monako",
+        "Permainan Terakhir di Azur"
       ]
     },
     "medals": {
@@ -1133,6 +1247,14 @@
       "opera": [
         "Tirai Turun",
         "Selesaikan semua bagian Opéra Lumière"
+      ],
+      "opgraving": [
+        "Kutukan Dipatahkan",
+        "Selesaikan semua bagian Makam Nefer-Ankh"
+      ],
+      "casino": [
+        "Bandar Kalah",
+        "Selesaikan semua bagian Casino Azur"
       ]
     },
     "quests": {
@@ -5073,6 +5195,774 @@
           "🎟️ Tiket terakhir"
         ]
       ]
+    ],
+    "opgraving": [
+      "Bagian I · Pintu Bersegel",
+      "Lembah Para Raja, November 1922. Setelah enam tahun menggali, ekspedisi itu menemukan sebuah pintu bersegel. Lord Ashcombe masuk lebih dulu. Dia tak pernah keluar lagi.",
+      "Pintunya terbuka dan sang lord tewas. Makam itu masih punya ruangan lain.",
+      "Makam itu gelap dan sempit, perkemahannya luas dan terbuka. Mulailah dari orang yang menyebutkan di ruangan mana dia berada; “tepat di sebelah” lampu minyak hanya berlaku untuk kotak yang persis di sampingnya, tidak pernah diagonal.",
+      [
+        [
+          "Pintu Bersegel",
+          "Enam tahun pasir. Lalu satu pintu, dan kurang satu lord.",
+          "🔏 Segel makam"
+        ],
+        [
+          "Langkah Pertama",
+          "Lord Ashcombe ingin masuk lebih dulu. Seseorang membiarkannya.",
+          "🔦 Senter"
+        ],
+        [
+          "Profesor Hartley Mengukur",
+          "Dia mengukur setiap anak tangga. Satu anak tangga masih baru.",
+          "📏 Meteran lipat"
+        ],
+        [
+          "Lampu Minyak",
+          "Lampu di lorong masih menyala. Tak ada yang membawa minyak.",
+          "🪔 Lampu minyak"
+        ],
+        [
+          "Juru Gambar Maud Menggambar",
+          "Di gambarnya, pintu itu tertutup. Pukul sepuluh, pintu itu terbuka.",
+          "✏️ Pensil gambar"
+        ],
+        [
+          "Air dari Luxor",
+          "Pawang Unta Omar membawa delapan kantong air. Yang kembali tujuh.",
+          "💧 Kantong air"
+        ],
+        [
+          "Malam di Perkemahan",
+          "Semua orang tidur di tendanya. Hampir semua.",
+          "⛺ Tiang tenda"
+        ],
+        [
+          "Lewat Tengah Malam",
+          "Pukul dua belas, serigala melolong. Pukul satu, ada yang menggali.",
+          "🌙 Bulan sabit"
+        ]
+      ]
+    ],
+    "opgraving-2": [
+      "Bagian II · Kutukan",
+      "Ada tanda-tanda di ambang pintu. Mandor Ahmed membacakannya: siapa pun yang mengusik makam ini akan mati. Seisi perkemahan percaya.",
+      "Kutukan itu ternyata sebuah terjemahan. Terjemahan yang buruk, dan disengaja.",
+      "Takhayul membuat saksi ragu, tapi denah tidak. Keterangan tentang dua orang: tentukan dulu posisi salah satunya.",
+      [
+        [
+          "Tanda di Ambang Pintu",
+          "Tiga baris hieroglif. Empat terjemahan.",
+          "👁️ Mata Horus"
+        ],
+        [
+          "Para Penggali Mogok",
+          "Seratus penggali, seratus sekop. Tak ada yang menggali.",
+          "⛏️ Sekop"
+        ],
+        [
+          "Egiptolog Edith Menerjemahkan",
+          "Dia hafal teks itu di luar kepala. Terlalu hafal.",
+          "📖 Kamus"
+        ],
+        [
+          "Kucing Hitam",
+          "Seekor kucing masuk ke makam. Ia keluar membawa sesuatu.",
+          "🐈‍⬛ Kucing hitam"
+        ],
+        [
+          "Koresponden Ivy Mengirim Telegram",
+          "Beritanya tentang kutukan sudah terbit di koran. Sebelum ada kutukan.",
+          "📨 Telegram"
+        ],
+        [
+          "Ular di Tenda",
+          "Belum pernah ada ular di perkemahan. Sampai semalam.",
+          "🐍 Kulit ular"
+        ],
+        [
+          "Lady Rosamund Ingin Pergi",
+          "Dia mengemasi koper-kopernya. Satu koper dia lupakan.",
+          "👒 Topi jerami"
+        ],
+        [
+          "Kutukan Dipatahkan",
+          "Kutukan tidak bisa membunuh. Seseorang bisa.",
+          "🪬 Jimat"
+        ]
+      ]
+    ],
+    "opgraving-3": [
+      "Bagian III · Ruang Harta",
+      "Di balik ruang makam ada pintu kedua. Di baliknya: emas sampai ke langit-langit. Sebuah patung emas kecil sudah hilang.",
+      "Setiap benda kembali tercatat di daftar. Patung kecil itu sudah kembali, dan pencurinya tak lagi bebas.",
+      "Di ruang harta setiap benda dihitung, begitu pula setiap keterangan. Orang yang bilang di mana dia TIDAK berada juga memberitahumu sesuatu: langsung coret ruangan itu.",
+      [
+        [
+          "Emas sampai ke Langit-Langit",
+          "Dua ratus benda di daftar. Seratus sembilan puluh sembilan di rak.",
+          "📋 Daftar temuan"
+        ],
+        [
+          "Patung Emas Kecil",
+          "Patung itu sebesar telapak tangan. Dan semudah itu pula dibawa pergi.",
+          "✨ Patung emas kecil"
+        ],
+        [
+          "Kolektor Von Hagen Menawar",
+          "Dia menawarkan harga selangit. Untuk sesuatu yang belum ditemukan.",
+          "🧾 Cek"
+        ],
+        [
+          "Skarab",
+          "Sebuah skarab dari lapis lazuli. Letaknya di peti yang salah.",
+          "🪲 Skarab"
+        ],
+        [
+          "Mandor Ahmed Menghitung",
+          "Setiap malam dia menghitung para pekerja. Malam ini jumlahnya lebih satu.",
+          "🧮 Sempoa"
+        ],
+        [
+          "Hiasan Dada",
+          "Hiasan dada emas itu tergeletak di lantai. Kemarin masih tergantung di dinding.",
+          "🛡️ Hiasan dada"
+        ],
+        [
+          "Sidik Jari di Debu",
+          "Debu tiga ribu tahun. Dan satu sidik jari yang masih baru.",
+          "🔍 Kaca pembesar"
+        ],
+        [
+          "Alas Patung yang Kosong",
+          "Tak ada lagi yang berdiri di atas alas itu. Tapi ada pasir di atasnya, dari perkemahan.",
+          "⏳ Jam pasir"
+        ]
+      ]
+    ],
+    "opgraving-4": [
+      "Bagian IV · Badai Pasir",
+      "Tiga hari badai pasir. Tenda-tenda berkibar, makam ditutup, dan tak seorang pun bisa masuk atau keluar perkemahan.",
+      "Badai mereda. Pasir menutupi semua jejak, kecuali satu.",
+      "Dalam badai tak ada yang bisa melihat lebih dari satu meter, jadi perhatikan siapa berdiri tepat di sebelah siapa. Taruh dulu tersangka yang pilihannya paling sedikit; sisanya menyusul.",
+      [
+        [
+          "Pasir di Mana-Mana",
+          "Pasir di teh, pasir di tenda, pasir di cerita yang tidak cocok.",
+          "🫖 Teh berpasir"
+        ],
+        [
+          "Tenda Kerja",
+          "Tenda kerja itu terbang tertiup angin. Isinya tidak.",
+          "🧰 Kotak perkakas"
+        ],
+        [
+          "Pawang Unta Omar Mencari",
+          "Seekor unta hilang dalam badai. Omar menemukannya kembali, dengan tas pelana yang penuh.",
+          "🐪 Unta"
+        ],
+        [
+          "Kamar Gelap",
+          "Saat badai, seseorang mencuci foto. Satu pelat hilang.",
+          "🎞️ Pelat foto"
+        ],
+        [
+          "Cahaya dalam Badai",
+          "Di tengah badai, ada cahaya menyala di dekat makam.",
+          "🏮 Lentera badai"
+        ],
+        [
+          "Profesor Hartley Menulis",
+          "Buku hariannya berlanjut sampai hari Selasa. Setelah itu, tangan lain yang menulis.",
+          "📓 Buku harian"
+        ],
+        [
+          "Koresponden Ivy Menunggu",
+          "Dia sudah menyiapkan berita. Tentang sesuatu yang belum terjadi.",
+          "⌨️ Mesin tik"
+        ],
+        [
+          "Setelah Badai",
+          "Semua jejak hilang. Kecuali satu.",
+          "👣 Jejak kaki"
+        ]
+      ]
+    ],
+    "opgraving-5": [
+      "Bagian V · Pers Datang",
+      "Temuan itu jadi berita dunia. Koresponden dari London dan Kairo berdiri di tepi perkemahan, dan semua orang ingin mendapat foto pertama.",
+      "Koran-koran sudah mendapat fotonya. Foto yang asli tak pernah dicetak.",
+      "Dengan pers di perkemahan, semua orang berpencar. Mulailah dari orang yang bilang dia sendirian; itu sekaligus menutup satu ruangan bagi yang lain.",
+      [
+        [
+          "Foto Pertama",
+          "Dua puluh fotografer. Kelebihan satu kilatan.",
+          "📸 Lampu kilat"
+        ],
+        [
+          "Eksklusif",
+          "Satu koran boleh masuk. Koran lain sudah tahu lebih dulu.",
+          "🗞️ Koran pagi"
+        ],
+        [
+          "Koresponden Ivy Menelepon",
+          "Saluran ke Kairo sibuk selama satu jam. Ada orang lain yang memakainya.",
+          "☎️ Telepon"
+        ],
+        [
+          "Lady Rosamund Berpose",
+          "Dia ada di setiap foto. Di salah satunya dia berdiri di tempat lain.",
+          "🖼️ Foto koran"
+        ],
+        [
+          "Wawancara",
+          "Profesor Hartley mengucapkan tiga kalimat. Koran mencetak empat.",
+          "🎙️ Mikrofon"
+        ],
+        [
+          "Penjaga yang Disuap",
+          "Dia diberi satu pound agar berpaling. Dia tetap melihat.",
+          "💷 Uang kertas pound"
+        ],
+        [
+          "Juru Gambar Maud Menggambar Pers",
+          "Di sketsanya ada dua belas wartawan. Yang datang sebelas.",
+          "🖍️ Krayon"
+        ],
+        [
+          "Berita Halaman Depan",
+          "Judulnya benar. Berita di bawahnya tidak.",
+          "📰 Halaman depan"
+        ]
+      ]
+    ],
+    "opgraving-6": [
+      "Bagian VI · Sarkofagus",
+      "Di ruang makam berdiri sebuah sarkofagus batu. Tutupnya seberat satu ton. Saat dibuka, di bawahnya tersimpan lebih dari satu rahasia.",
+      "Tutupnya sudah kembali ke tempatnya. Nefer-Ankh beristirahat, dan kamu tahu mengapa perkemahan itu begitu sunyi.",
+      "Keterangannya makin pelit dan makamnya makin gelap. Gunakan pensil: coret kotak yang tidak mungkin, lalu lihat apa yang tersisa.",
+      [
+        [
+          "Tutup Sarkofagus",
+          "Sepuluh orang mengangkat tutupnya. Sebelas orang melihatnya.",
+          "🪨 Tutup batu"
+        ],
+        [
+          "Mumi",
+          "Di dalam sarkofagus terbaring sang ratu. Dan secarik catatan dari kemarin.",
+          "📃 Catatan"
+        ],
+        [
+          "Egiptolog Edith Mengenali",
+          "Dia mengenali wajah di tutup itu. Dia tidak mengatakan wajah siapa.",
+          "📐 Busur derajat"
+        ],
+        [
+          "Guci Kanopik",
+          "Empat guci, empat dewa. Salah satunya tidak berisi jantung.",
+          "🏺 Guci kanopik"
+        ],
+        [
+          "Mandor Ahmed Berjaga",
+          "Dia berjaga semalaman di dekat makam. Dia tidur satu jam.",
+          "🕰️ Jam saku"
+        ],
+        [
+          "Gulungan Papirus",
+          "Di dalam sarkofagus ada selembar papirus. Kertasnya terlalu baru.",
+          "📜 Papirus"
+        ],
+        [
+          "Kolektor Von Hagen Ingin Membeli",
+          "Dia hanya menginginkan gulungan itu. Dia tahu isinya.",
+          "💼 Tas kerja"
+        ],
+        [
+          "Apa yang Ada di Bawah Tutup",
+          "Tiga ribu tahun keheningan. Satu minggu cukup untuk memecahnya.",
+          "🗝️ Kunci perunggu"
+        ]
+      ]
+    ],
+    "opgraving-7": [
+      "Bagian VII · Menyusuri Nil",
+      "Temuan-temuan dibawa dengan kapal menyusuri Sungai Nil ke Kairo. Dua belas peti di dek, delapan penumpang di kapal, dan satu peti tak pernah tiba.",
+      "Di Kairo peti-peti itu dihitung. Dua belas. Kamu tahu mengapa jumlahnya dua belas.",
+      "Papannya makin besar dan keterangannya makin pelit. Kalau laporan menyebut sebuah ruangan kosong, seluruh ruangan itu tercoret untuk semua orang.",
+      [
+        [
+          "Dua Belas Peti",
+          "Dua belas peti di dek. Di Asyut tinggal sebelas.",
+          "📦 Peti temuan"
+        ],
+        [
+          "Pawang Unta Omar di Kapal",
+          "Dia belum pernah naik kapal. Dia tahu jalan ke palka.",
+          "⚓ Jangkar"
+        ],
+        [
+          "Palka",
+          "Di bawah, palka itu panas dan gelap. Seseorang membiarkan lampu menyala di sana.",
+          "🕯️ Lampu kapal"
+        ],
+        [
+          "Lady Rosamund Diam",
+          "Sepanjang perjalanan dia tidak bicara dengan siapa pun. Kecuali sekali, di tengah malam.",
+          "🧣 Syal perjalanan"
+        ],
+        [
+          "Cap Bea Cukai",
+          "Setiap peti punya cap. Satu cap masih basah.",
+          "🛂 Cap bea cukai"
+        ],
+        [
+          "Profesor Hartley Berhitung",
+          "Asuransi membayar per peti. Hitungannya kelebihan satu.",
+          "🧾 Polis asuransi"
+        ],
+        [
+          "Buaya",
+          "Tengah malam ada sesuatu yang jatuh dari kapal. Terlalu berat untuk sebuah peti.",
+          "🐊 Kulit buaya"
+        ],
+        [
+          "Tiba di Kairo",
+          "Di dermaga Kairo ada dua belas peti. Satu lebih banyak daripada yang ada di kapal.",
+          "🏛️ Label museum"
+        ]
+      ]
+    ],
+    "opgraving-8": [
+      "Bagian VIII · Kembali ke Pasir",
+      "Musim penggalian sudah usai dan makam ditutup sampai tahun depan. Satu malam terakhir di sekeliling api unggun, dengan wajah-wajah yang sama seperti pada hari pertama.",
+      "Van Dam mengibaskan pasir dari topinya, melambai kepada seisi perkemahan, lalu naik kereta ke Kairo. Makam Nefer-Ankh tak lagi menyimpan rahasia.",
+      "Kasus-kasus terakhir, hampir semuanya di papan besar. Jangan terpaku pada yang paling sulit: taruh dulu yang lain, maka untuk yang terakhir sering hanya tersisa satu kotak.",
+      [
+        [
+          "Api Unggun Terakhir",
+          "Semua orang duduk mengelilingi api. Satu tempat tetap hangat, dan kosong.",
+          "🔥 Bara menyala"
+        ],
+        [
+          "Pintu Ditutup",
+          "Mereka menembok pintu itu lagi. Di balik batu-batu itu, semuanya tetap sunyi. Hampir.",
+          "🧱 Batu bata"
+        ],
+        [
+          "Juru Gambar Maud Berkemas",
+          "Tiga ratus gambar dalam satu map. Satu gambar tidak seharusnya ada di sana.",
+          "🗂️ Map gambar"
+        ],
+        [
+          "Patroli Terakhir",
+          "Mandor Ahmed berpatroli untuk terakhir kalinya. Dia kembali dengan sebongkah batu di tangan.",
+          "🪨 Batu kapur"
+        ],
+        [
+          "Egiptolog Edith Tinggal",
+          "Semua orang pergi. Dia tinggal satu hari lagi, sendirian.",
+          "⛺ Tenda terakhir"
+        ],
+        [
+          "Tagihan",
+          "Lord Ashcombe membayar semuanya. Setelah dia meninggal, orang lain yang membayar.",
+          "💰 Peti uang"
+        ],
+        [
+          "Mata Sang Ratu",
+          "Di tutup sarkofagus ada dua mata yang dilukis. Salah satunya menatap pelakunya.",
+          "👁️ Mata yang dilukis"
+        ],
+        [
+          "Kembali ke Pasir",
+          "Semuanya bermula di pintu bersegel. Di sana pula semuanya berakhir.",
+          "🏜️ Pasir gurun"
+        ]
+      ]
+    ],
+    "casino": [
+      "Bagian I · Malam Besar",
+      "Casino Azur, Monte Carlo, Mei 1960. Akhir pekan Grand Prix, dan semua meja penuh. Tengah malam, pemilik kasino Lorenzo Vitali tergeletak di ruang brankasnya sendiri, di antara tumpukan chip.",
+      "Meja-meja ditutup. Tapi akhir pekan masih panjang.",
+      "Kasino adalah satu aula besar dengan banyak sudut. Mulailah dari orang yang menyebutkan di ruangan mana dia berada; “tepat di sebelah” mesin slot hanya berlaku untuk kotak yang persis di sampingnya, tidak pernah diagonal.",
+      [
+        [
+          "Faites vos jeux",
+          "Permainan pertama malam itu. Yang terakhir bagi sang pemilik.",
+          "🎲 Dadu"
+        ],
+        [
+          "Brankas yang Terbuka",
+          "Pintu brankas terbuka. Pintu itu hanya bisa dibuka dengan dua kunci.",
+          "🔐 Kunci brankas"
+        ],
+        [
+          "Croupier Marcel Membagi Kartu",
+          "Dia membagi kartu sepanjang malam. Tengah malam, orang lain berdiri di mejanya.",
+          "🃏 Kartu remi"
+        ],
+        [
+          "Menara Sampanye",
+          "Seratus gelas dalam satu menara. Satu gelas hilang.",
+          "🥂 Gelas coupe"
+        ],
+        [
+          "Penyanyi Gigi Bernyanyi",
+          "Lagu terakhirnya tentang sebuah brankas. Tak ada yang tertawa.",
+          "🎤 Mikrofon"
+        ],
+        [
+          "Chip Kasino",
+          "Merah, hijau, hitam. Satu warna tidak ada di kasino ini.",
+          "🔴 Chip palsu"
+        ],
+        [
+          "Kepala Keamanan Nora Mengawasi",
+          "Dia melihat setiap pemain. Kecuali satu.",
+          "🕵️‍♀️ Lencana keamanan"
+        ],
+        [
+          "Tengah Malam di Monako",
+          "Jam berdentang dua belas kali. Di luar, deru mesin pun terdiam.",
+          "🕛 Jam kasino"
+        ]
+      ]
+    ],
+    "casino-2": [
+      "Bagian II · Brankas",
+      "Polisi Monako menutup kasino. Di ruang brankas semuanya masih di tempatnya. Tak ada yang hilang, kecuali sang pemilik.",
+      "Brankas sudah tertutup lagi. Besok roda rolet berputar seperti biasa.",
+      "Di sini semua orang memainkan dua kartu sekaligus. Keterangan tentang dua orang: tentukan dulu posisi salah satunya.",
+      [
+        [
+          "Dua Kunci",
+          "Brankas itu hanya bisa dibuka dengan dua kunci. Hanya satu yang ditemukan.",
+          "🗝️ Kunci kedua"
+        ],
+        [
+          "Bankir Sterling Berhitung",
+          "Dia tahu persis isi brankas itu. Sampai chip terakhir.",
+          "🧮 Mistar hitung"
+        ],
+        [
+          "Ruang Mantel",
+          "Empat puluh delapan mantel. Yang diambil empat puluh tujuh.",
+          "🧥 Mantel malam"
+        ],
+        [
+          "Ahli Waris Delphine Kalah",
+          "Dia kalah setiap malam. Malam ini dia tidak kalah sedikit pun.",
+          "💍 Cincin berlian"
+        ],
+        [
+          "Kunci Kombinasi",
+          "Empat angka. Sang pemilik tak memberitahukannya kepada siapa pun. Hampir tak seorang pun.",
+          "🔢 Kunci kombinasi"
+        ],
+        [
+          "Pembalap Rocco Terlambat",
+          "Dia masuk pukul setengah satu. Helmnya masih hangat.",
+          "🪖 Helm balap"
+        ],
+        [
+          "Penjaga Malam",
+          "Penjaga malam tidur di garasi. Dia mendengar suara mesin.",
+          "🚨 Bel alarm"
+        ],
+        [
+          "Brankas yang Penuh",
+          "Semuanya masih ada. Malah terlalu banyak.",
+          "💵 Uang kertas"
+        ]
+      ]
+    ],
+    "casino-3": [
+      "Bagian III · Rien ne va plus",
+      "Kasino dibuka lagi. Di meja lima, bolanya terus jatuh di angka yang sama, dan seseorang tahu sebabnya.",
+      "Roda rolet sudah ditimbang dan diluruskan. Bolanya kembali jatuh sesukanya.",
+      "Di meja rolet semua orang menatap roda, bukan satu sama lain. Orang yang bilang di mana dia TIDAK berada juga memberitahumu sesuatu: langsung coret ruangan itu.",
+      [
+        [
+          "Tujuh Belas",
+          "Tujuh belas, enam kali berturut-turut. Sang croupier tidak mendongak.",
+          "🎯 Bola rolet"
+        ],
+        [
+          "Penjudi Jack Menang",
+          "Dia memasang semuanya di tujuh belas. Sebelum rodanya berputar.",
+          "🎩 Topi fedora"
+        ],
+        [
+          "Roda yang Miring",
+          "Roda itu miring satu milimeter. Cukup untuk jadi kaya raya.",
+          "⚙️ Bantalan peluru"
+        ],
+        [
+          "Model Tess Menonton",
+          "Sepanjang malam dia menatap roda itu. Atau pria di sebelahnya.",
+          "🕶️ Kacamata hitam"
+        ],
+        [
+          "Magnet",
+          "Di bawah meja lima ada magnet. Seseorang menempelkannya di sana kemarin.",
+          "🧲 Magnet"
+        ],
+        [
+          "Croupier Marcel Diskors",
+          "Dia disuruh pulang. Dia pergi ke marina.",
+          "🪪 Kartu pegawai"
+        ],
+        [
+          "Uang Bank",
+          "Bank kasino kehilangan satu juta dalam semalam. Sang bankir tertawa.",
+          "💸 Taruhan yang hilang"
+        ],
+        [
+          "Rien ne va plus",
+          "Taruhan ditutup. Kecuali satu.",
+          "🎰 Chip terakhir"
+        ]
+      ]
+    ],
+    "casino-4": [
+      "Bagian IV · Grand Prix",
+      "Hari Minggu ada Grand Prix. Mesin-mesin meraung di jalan-jalan Monte Carlo, dan kasino menjadi satu tribun besar.",
+      "Bendera finis dikibarkan dan sang juara minum sampanye. Di tribun, satu kursi kosong.",
+      "Pada hari balapan semua orang berdiri di dekat jendela. Taruh dulu tersangka yang pilihannya paling sedikit; sisanya menyusul.",
+      [
+        [
+          "Start",
+          "Dua puluh mobil di garis start. Yang kembali sembilan belas.",
+          "🏁 Bendera start"
+        ],
+        [
+          "Pembalap Rocco di Pit",
+          "Mobilnya sudah siap. Bannya belum.",
+          "🛞 Roda balap"
+        ],
+        [
+          "Tribun",
+          "Semua orang duduk di tribun. Satu kursi tetap kosong sepanjang balapan.",
+          "🎟️ Tiket tribun"
+        ],
+        [
+          "Garasi",
+          "Di garasi kasino ada sebuah mobil balap. Bukan milik Rocco.",
+          "🏎️ Mobil balap"
+        ],
+        [
+          "Bankir Sterling Bertaruh",
+          "Dia bertaruh pada si pecundang. Dia menang.",
+          "📈 Slip taruhan"
+        ],
+        [
+          "Bensin",
+          "Garasi itu berbau bensin. Tak ada lagi mobil di sana.",
+          "⛽ Jeriken"
+        ],
+        [
+          "Model Tess di Foto",
+          "Dia berfoto bersama sang juara. Di latar belakang: brankas.",
+          "📷 Foto pers"
+        ],
+        [
+          "Putaran Terakhir",
+          "Di putaran terakhir, satu mesin mati. Bukan di sirkuit.",
+          "🏆 Piala"
+        ]
+      ]
+    ],
+    "casino-5": [
+      "Bagian V · Kapal Pesiar",
+      "Pesta di atas kapal pesiar milik sang ahli waris, di pelabuhan. Lampion, jazz, dan sampanye. Saat matahari terbit, satu sekoci hilang.",
+      "Sekoci itu sudah kembali tertambat di dermaga. Kapal pesiar itu berlayar, kurang satu tamu.",
+      "Di kapal pesiar ruangnya sempit dan semua orang berdiri berdekatan. Mulailah dari orang yang bilang dia sendirian; itu sekaligus menutup satu ruangan bagi yang lain.",
+      [
+        [
+          "Lampion di Atas Air",
+          "Seratus lampion. Satu padam.",
+          "🏮 Lampion"
+        ],
+        [
+          "Ahli Waris Delphine Mengadakan Pesta",
+          "Dia mengundang semua orang. Kecuali satu.",
+          "💌 Undangan"
+        ],
+        [
+          "Sekoci",
+          "Pukul dua, sekoci itu masih tertambat di kapal pesiar. Pukul tiga, tidak lagi.",
+          "🛶 Sekoci"
+        ],
+        [
+          "Penyanyi Gigi Bernyanyi di Dek",
+          "Dia bernyanyi sampai pukul tiga. Lagu terakhirnya tak didengar siapa pun.",
+          "🎷 Saksofon"
+        ],
+        [
+          "Kompas",
+          "Kompas itu menunjuk ke arah yang salah. Seseorang menyimpan magnet di sakunya.",
+          "🧭 Kompas"
+        ],
+        [
+          "Penjudi Jack Berenang",
+          "Katanya dia tidak bisa berenang. Rambutnya basah.",
+          "🏊 Handuk basah"
+        ],
+        [
+          "Pelabuhan di Malam Hari",
+          "Pukul empat, pelabuhan sunyi. Kecuali deru satu mesin.",
+          "⚓ Jangkar perahu"
+        ],
+        [
+          "Saat Matahari Terbit",
+          "Matahari terbit di atas teluk. Di dek kurang satu tamu.",
+          "🌅 Matahari terbit"
+        ]
+      ]
+    ],
+    "casino-6": [
+      "Bagian VI · Permainan Curang",
+      "Di ruang poker, pemain yang sama memenangkan setiap putaran. Kartunya ditandai, dan kepala keamanan ingin tahu siapa yang menandainya.",
+      "Kartu-kartu bertanda itu sudah ada di brankas. Pemain yang memakainya tak lagi duduk di meja.",
+      "Pemain curang suka berbohong, tapi denah tidak. Keterangannya makin pelit: coret yang tidak mungkin, lalu lihat apa yang tersisa.",
+      [
+        [
+          "Meja Tiga",
+          "Lima pemain, satu pembagi kartu. Salah satunya tahu setiap kartu.",
+          "♠️ As sekop"
+        ],
+        [
+          "Tanda di Kartu",
+          "Di punggung kartu ada sebuah titik. Titik itu hanya terlihat dengan kacamata berwarna.",
+          "👓 Kacamata berwarna"
+        ],
+        [
+          "Kepala Keamanan Nora Menginterogasi",
+          "Dia mengajukan satu pertanyaan kepada setiap orang. Satu pemain memberi dua jawaban.",
+          "📝 Blok catatan"
+        ],
+        [
+          "Lengan Baju",
+          "Dia menyembunyikan kartu di lengan bajunya. Jasnya tergantung di ruang mantel.",
+          "👔 Kemeja"
+        ],
+        [
+          "Bankir Sterling Kalah",
+          "Dia kalah untuk pertama kalinya dalam sepuluh tahun. Dengan sengaja.",
+          "💳 Surat kredit"
+        ],
+        [
+          "Cermin di Belakang Bar",
+          "Di cermin itu kartu-kartu di meja tiga terlihat jelas.",
+          "🪞 Cermin bar"
+        ],
+        [
+          "Pembalap Rocco Bermain",
+          "Dia bermain seperti dia menyetir: terlalu cepat, dan tanpa rem.",
+          "🎲 Dadu"
+        ],
+        [
+          "Kartu Bertanda",
+          "Semua kartu ditandai. Kecuali satu set.",
+          "🃏 Set kartu bertanda"
+        ]
+      ]
+    ],
+    "casino-7": [
+      "Bagian VII · Pesta Gala",
+      "Pesta gala musim ini di ruang dansa. Wajib tuksedo, orkes bermain sampai pukul tiga, dan satu tamu memakai sarung tangan sepanjang malam.",
+      "Orkes berkemas dan ruang dansa kosong. Sarung tangan itu tergeletak di ruang mantel.",
+      "Papannya makin besar dan keterangannya makin pelit. Kalau laporan menyebut sebuah ruangan kosong, seluruh ruangan itu tercoret untuk semua orang.",
+      [
+        [
+          "Wajib Tuksedo",
+          "Semua orang berpakaian hitam. Satu tuksedo disewa, atas nama orang lain.",
+          "🤵 Tuksedo"
+        ],
+        [
+          "Sarung Tangan",
+          "Sepanjang malam dia memakai sarung tangan. Bahkan saat makan.",
+          "🧤 Sarung tangan panjang"
+        ],
+        [
+          "Penyanyi Gigi dan Sang Bankir",
+          "Mereka berdansa satu kali. Setelah itu sang bankir duduk sendirian di bar.",
+          "🍸 Martini"
+        ],
+        [
+          "Orkes",
+          "Dua belas musisi, dua belas kursi. Satu kursi ada di ruang mantel.",
+          "🎺 Trompet"
+        ],
+        [
+          "Ahli Waris Delphine Berdansa",
+          "Dia berdansa dengan semua orang. Gelangnya ikut berdansa, sampai tengah malam.",
+          "💠 Gelang"
+        ],
+        [
+          "Sepatu yang Hilang",
+          "Pukul tiga, ada sebelah sepatu tergeletak di lantai dansa. Pemiliknya sudah pergi.",
+          "👠 Sepatu hak tinggi"
+        ],
+        [
+          "Kembang Api",
+          "Tengah malam ada kembang api di atas teluk. Satu letusan datang dari dalam.",
+          "🎆 Kembang api"
+        ],
+        [
+          "Wals Terakhir",
+          "Wals terakhir berlangsung empat menit. Cukup waktu untuk satu hal.",
+          "🎻 Penggesek biola"
+        ]
+      ]
+    ],
+    "casino-8": [
+      "Bagian VIII · Taruhan Terakhir",
+      "Kasino itu akan berganti pemilik. Satu malam lagi di bawah lampu gantung kristal yang lama, dengan wajah-wajah yang sama seperti pada akhir pekan Grand Prix.",
+      "Van Dam menaruh chip terakhirnya di merah, membiarkannya di sana, lalu berjalan menembus malam Monte Carlo. Bandar tidak selalu menang.",
+      "Kasus-kasus terakhir, hampir semuanya di papan besar. Jangan terpaku pada yang paling sulit: taruh dulu yang lain, maka untuk yang terakhir sering hanya tersisa satu kotak.",
+      [
+        [
+          "Pemilik Baru",
+          "Tak ada yang mengenal pemilik baru itu. Kecuali satu tamu.",
+          "📝 Kontrak jual beli"
+        ],
+        [
+          "Croupier Marcel Pamit",
+          "Tiga puluh tahun di meja yang sama. Malam ini dia terus menatap pintu.",
+          "🏅 Pin perpisahan"
+        ],
+        [
+          "Sampanye Terakhir",
+          "Botol terakhir dari ruang bawah tanah. Seseorang sudah membukanya.",
+          "🍾 Botol terakhir"
+        ],
+        [
+          "Kepala Keamanan Nora Menutup Berkasnya",
+          "Dia menulis nama itu. Dia tidak mencoretnya.",
+          "📁 Berkas"
+        ],
+        [
+          "Pembalap Rocco Pergi",
+          "Mobilnya sudah siap. Kuncinya ada di brankas.",
+          "🔑 Kunci mobil"
+        ],
+        [
+          "Penjudi Jack Mempertaruhkan Semuanya",
+          "Semua di satu angka. Dia sudah tahu.",
+          "🪙 Koin terakhir"
+        ],
+        [
+          "Lampu Gantung Padam",
+          "Pukul dua, lampu padam. Satu lilin tetap menyala.",
+          "🕯️ Lelehan lilin"
+        ],
+        [
+          "Taruhan Terakhir",
+          "Semuanya bermula di ruang brankas. Di sana pula semuanya berakhir.",
+          "♦️ As wajik"
+        ]
+      ]
     ]
   },
 
@@ -5135,6 +6025,14 @@
         "rws": "ruangan"
       },
       "opera": {
+        "rw": "ruangan",
+        "rws": "ruangan"
+      },
+      "opgraving": {
+        "rw": "ruangan",
+        "rws": "ruangan"
+      },
+      "casino": {
         "rw": "ruangan",
         "rws": "ruangan"
       }
@@ -5748,6 +6646,106 @@
           "the": "Tangga Utama",
           "in": "di Tangga Utama"
         }
+      },
+      "opgraving": {
+        "Grafkamer": {
+          "the": "Ruang Makam",
+          "in": "di Ruang Makam"
+        },
+        "Voorkamer": {
+          "the": "Ruang Depan",
+          "in": "di Ruang Depan"
+        },
+        "Schatkamer": {
+          "the": "Ruang Harta",
+          "in": "di Ruang Harta"
+        },
+        "Gang": {
+          "the": "Lorong",
+          "in": "di Lorong"
+        },
+        "Werktent": {
+          "the": "Tenda Kerja",
+          "in": "di Tenda Kerja"
+        },
+        "Slaaptent": {
+          "the": "Tenda Tidur",
+          "in": "di Tenda Tidur"
+        },
+        "Kampvuur": {
+          "the": "area Api Unggun",
+          "in": "di area Api Unggun"
+        },
+        "Donkere kamer": {
+          "the": "Kamar Gelap",
+          "in": "di Kamar Gelap"
+        },
+        "Keuken": {
+          "the": "Dapur",
+          "in": "di Dapur"
+        },
+        "Voorraadkamer": {
+          "the": "Gudang",
+          "in": "di Gudang"
+        },
+        "Stal": {
+          "the": "Kandang Unta",
+          "in": "di Kandang Unta"
+        },
+        "Ziekenboeg": {
+          "the": "Ruang Medis",
+          "in": "di Ruang Medis"
+        }
+      },
+      "casino": {
+        "Speelzaal": {
+          "the": "Ruang Judi",
+          "in": "di Ruang Judi"
+        },
+        "Pokerkamer": {
+          "the": "Ruang Poker",
+          "in": "di Ruang Poker"
+        },
+        "Kluis": {
+          "the": "Ruang Brankas",
+          "in": "di Ruang Brankas"
+        },
+        "Bar": {
+          "the": "Bar",
+          "in": "di Bar"
+        },
+        "Terras": {
+          "the": "Teras",
+          "in": "di Teras"
+        },
+        "Garderobe": {
+          "the": "Ruang Mantel",
+          "in": "di Ruang Mantel"
+        },
+        "Directiekamer": {
+          "the": "Kantor",
+          "in": "di Kantor"
+        },
+        "Balzaal": {
+          "the": "Ruang Dansa",
+          "in": "di Ruang Dansa"
+        },
+        "Keuken": {
+          "the": "Dapur",
+          "in": "di Dapur"
+        },
+        "Jachthaven": {
+          "the": "Marina",
+          "in": "di Marina"
+        },
+        "Garage": {
+          "the": "Garasi",
+          "in": "di Garasi"
+        },
+        "Salon": {
+          "the": "Ruang Duduk",
+          "in": "di Ruang Duduk"
+        }
       }
     },
     "furniture": {
@@ -6000,6 +6998,56 @@
         "a": "teropong opera",
         "next": "di sebelah teropong opera",
         "with": "dengan teropong opera"
+      },
+      "canope": {
+        "a": "guci kanopik",
+        "next": "di sebelah guci kanopik",
+        "with": "dengan guci kanopik"
+      },
+      "olielamp": {
+        "a": "lampu minyak",
+        "next": "di sebelah lampu minyak",
+        "with": "dengan lampu minyak"
+      },
+      "kameel": {
+        "a": "unta",
+        "next": "di sebelah unta",
+        "with": "dengan unta"
+      },
+      "papyrus": {
+        "a": "gulungan papirus",
+        "next": "di sebelah gulungan papirus",
+        "with": "dengan gulungan papirus"
+      },
+      "zeef": {
+        "a": "ayakan",
+        "next": "di sebelah ayakan",
+        "with": "dengan ayakan"
+      },
+      "roulette": {
+        "a": "roda rolet",
+        "next": "di sebelah roda rolet",
+        "with": "dengan roda rolet"
+      },
+      "fiches": {
+        "a": "tumpukan chip",
+        "next": "di sebelah tumpukan chip",
+        "with": "dengan tumpukan chip"
+      },
+      "fruitautomaat": {
+        "a": "mesin slot",
+        "next": "di sebelah mesin slot",
+        "with": "dengan mesin slot"
+      },
+      "champagnetoren": {
+        "a": "menara sampanye",
+        "next": "di sebelah menara sampanye",
+        "with": "dengan menara sampanye"
+      },
+      "shaker": {
+        "a": "shaker koktail",
+        "next": "di sebelah shaker koktail",
+        "with": "dengan shaker koktail"
       }
     }
   }

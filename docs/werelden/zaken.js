@@ -33,7 +33,7 @@
       'kkggghhh', [
         ['Tekens op de drempel', 'Drie regels hiërogliefen. Vier vertalingen.', '👁️ Oog van Horus'],
         ['De gravers staken', 'Honderd gravers, honderd scheppen. Niemand graaft.', '⛏️ Schep'],
-        ['Egyptologe Clara vertaalt', 'Ze kende de tekst uit haar hoofd. Te goed.', '📖 Woordenboek'],
+        ['Egyptologe Edith vertaalt', 'Ze kende de tekst uit haar hoofd. Te goed.', '📖 Woordenboek'],
         ['De zwarte kat', 'Een kat liep het graf in. Hij kwam er met iets terug.', '🐈‍⬛ Zwarte kat'],
         ['Correspondente Ivy telegrafeert', 'Haar bericht over de vloek stond al in de krant. Voordat er een vloek was.', '📨 Telegram'],
         ['Een slang in de tent', 'Er was nog nooit een slang in het kamp geweest. Tot vannacht.', '🐍 Slangenhuid'],
@@ -89,7 +89,7 @@
       'kghhghhh', [
         ['Het deksel', 'Tien mannen tilden het deksel. Elf mannen hadden het gezien.', '🪨 Stenen deksel'],
         ['De mummie', 'In de sarcofaag lag de koningin. En een briefje van gisteren.', '📃 Briefje'],
-        ['Egyptologe Clara herkent', 'Ze herkende het gezicht op het deksel. Ze zei niet van wie het was.', '📐 Gradenboog'],
+        ['Egyptologe Edith herkent', 'Ze herkende het gezicht op het deksel. Ze zei niet van wie het was.', '📐 Gradenboog'],
         ['De canopenkruiken', 'Vier kruiken, vier goden. In één ervan zat geen hart.', '🏺 Canopenkruik'],
         ['Opzichter Ahmed waakt', 'Hij waakte de hele nacht bij het graf. Hij sliep één uur.', '🕰️ Zakhorloge'],
         ['De papyrusrol', 'In de sarcofaag lag een papyrus. Het papier was te nieuw.', '📜 Papyrus'],
@@ -119,7 +119,7 @@
         ['De deur gaat dicht', 'Ze metselden de deur weer dicht. Achter de stenen bleef het stil. Bijna.', '🧱 Baksteen'],
         ['Tekenares Maud pakt in', 'Driehonderd tekeningen in één map. Eén tekening hoorde er niet bij.', '🗂️ Tekenmap'],
         ['De laatste ronde', 'Opzichter Ahmed liep zijn laatste ronde. Hij kwam terug met een steen in zijn hand.', '🪨 Kalksteen'],
-        ['Egyptologe Clara blijft', 'Iedereen vertrok. Zij bleef nog één dag, alleen.', '⛺ Laatste tent'],
+        ['Egyptologe Edith blijft', 'Iedereen vertrok. Zij bleef nog één dag, alleen.', '⛺ Laatste tent'],
         ['De rekening', 'Lord Ashcombe betaalde alles. Na zijn dood betaalde iemand anders.', '💰 Geldkist'],
         ['Het oog van de koningin', 'Op het deksel staan twee geschilderde ogen. Eén ervan kijkt naar de dader.', '👁️ Geschilderd oog'],
         ['Terug naar het zand', 'Waar het begon, bij de verzegelde deur. Daar eindigt het ook.', '🏜️ Woestijnzand']
@@ -138,7 +138,7 @@
         ['De champagnetoren', 'Honderd glazen in een toren. Eén glas ontbrak.', '🥂 Coupe'],
         ['Zangeres Gigi zingt', 'Haar laatste lied ging over een kluis. Niemand lachte.', '🎤 Microfoon'],
         ['De fiches', 'Rood, groen, zwart. Eén kleur bestond niet in dit casino.', '🔴 Valse fiche'],
-        ['Huisdetective Fenna let op', 'Ze zag elke speler. Op één na.', '🕵️‍♀️ Detectivepas'],
+        ['Huisdetective Nora let op', 'Ze zag elke speler. Op één na.', '🕵️‍♀️ Detectivepas'],
         ['Middernacht in Monaco', 'De klok sloeg twaalf. Buiten zweeg het geluid van de motoren.', '🕛 Casinoklok']
       ]],
     ['🔐', 'De kluis',
@@ -161,7 +161,7 @@
       'Bij de roulette kijkt iedereen naar het wiel, niet naar elkaar. Wie zegt waar hij níét was, vertelt je ook iets: streep die ruimte meteen weg.',
       'kggghhhh', [
         ['Zeventien', 'Zes keer achter elkaar zeventien. De croupier keek niet op.', '🎯 Rouletteballetje'],
-        ['Gokker Duke wint', 'Hij zette alles op zeventien. Voordat het wiel draaide.', '🎩 Fedora'],
+        ['Gokker Jack wint', 'Hij zette alles op zeventien. Voordat het wiel draaide.', '🎩 Fedora'],
         ['Het scheve wiel', 'Het wiel helde één millimeter. Genoeg voor een fortuin.', '⚙️ Kogellager'],
         ['Fotomodel Tess kijkt toe', 'Ze keek de hele avond naar het wiel. Of naar de man ernaast.', '🕶️ Zonnebril'],
         ['De magneet', 'Onder tafel vijf zat een magneet. Iemand had hem er gisteren onder geplakt.', '🧲 Magneet'],
@@ -193,7 +193,7 @@
         ['De sloep', 'Om twee uur lag de sloep nog aan het jacht. Om drie uur niet meer.', '🛶 Sloep'],
         ['Zangeres Gigi zingt aan dek', 'Ze zong tot drie uur. Haar laatste lied hoorde niemand.', '🎷 Saxofoon'],
         ['Het kompas', 'Het kompas wees de verkeerde kant op. Iemand had een magneet in zijn zak.', '🧭 Kompas'],
-        ['Gokker Duke zwemt', 'Hij kon niet zwemmen, zei hij. Zijn haar was nat.', '🏊 Natte handdoek'],
+        ['Gokker Jack zwemt', 'Hij kon niet zwemmen, zei hij. Zijn haar was nat.', '🏊 Natte handdoek'],
         ['De haven bij nacht', 'Om vier uur was de haven stil. Op één motor na.', '⚓ Bootanker'],
         ['Bij zonsopgang', 'De zon kwam op boven de baai. Er stond één gast minder aan dek.', '🌅 Zonsopgang']
       ]],
@@ -204,7 +204,7 @@
       'kghhghhh', [
         ['Tafel drie', 'Vijf spelers, één deler. Een van hen kende elke kaart.', '♠️ Schoppenaas'],
         ['Het merkteken', 'Op de achterkant van de kaarten zat een stip. Je zag hem alleen met een gekleurde bril.', '👓 Gekleurde bril'],
-        ['Huisdetective Fenna verhoort', 'Ze stelde iedereen één vraag. Eén speler gaf twee antwoorden.', '📝 Verhoorblok'],
+        ['Huisdetective Nora verhoort', 'Ze stelde iedereen één vraag. Eén speler gaf twee antwoorden.', '📝 Verhoorblok'],
         ['De mouw', 'Hij had een kaart in zijn mouw. Zijn jasje hing in de garderobe.', '👔 Overhemd'],
         ['Bankier Sterling verliest', 'Hij verloor voor het eerst in tien jaar. Met opzet.', '💳 Kredietbrief'],
         ['De spiegel achter de bar', 'In de spiegel zag je de kaarten van tafel drie.', '🪞 Barspiegel'],
@@ -233,9 +233,9 @@
         ['De nieuwe eigenaar', 'Niemand kende de nieuwe eigenaar. Op één gast na.', '📝 Koopcontract'],
         ['Croupier Marcel neemt afscheid', 'Dertig jaar aan dezelfde tafel. Vanavond keek hij naar de deur.', '🏅 Afscheidsspeld'],
         ['De laatste champagne', 'De laatste fles uit de kelder. Iemand had hem al geopend.', '🍾 Laatste fles'],
-        ['Huisdetective Fenna sluit haar dossier', 'Ze schreef de naam op. Ze streepte hem niet door.', '📁 Dossier'],
+        ['Huisdetective Nora sluit haar dossier', 'Ze schreef de naam op. Ze streepte hem niet door.', '📁 Dossier'],
         ['Coureur Rocco vertrekt', 'Zijn auto stond klaar. De sleutel lag in de kluis.', '🔑 Autosleutel'],
-        ['Gokker Duke zet alles in', 'Alles op één getal. Hij wist het al.', '🪙 Laatste munt'],
+        ['Gokker Jack zet alles in', 'Alles op één getal. Hij wist het al.', '🪙 Laatste munt'],
         ['De kroonluchter dooft', 'Om twee uur ging het licht uit. Eén kaars bleef branden.', '🕯️ Kaarsvet'],
         ['De laatste inzet', 'Waar het begon, in de kluis. Daar eindigt het ook.', '♦️ Ruitenaas']
       ]]

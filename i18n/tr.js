@@ -933,6 +933,108 @@
           "Toneelmeester Hugo": "Hugo",
           "Recensente Simone": "Simone"
         }
+      },
+      "opgraving": {
+        "title": "Nefer-Ankh’ın Mezarı",
+        "short": "Kazı",
+        "victimName": "Lord Edmund Ashcombe",
+        "roomWord": "alan",
+        "roomWordPlural": "alanlar",
+        "tagline": "Luksor, 1922. Mühürlü bir kapı, eşikte bir lanet ve ilk adımı sağ atlatamayan bir lord.",
+        "intro": "Krallar Vadisi, Kasım 1922. Altı yıllık kazının ardından ekip mühürlü bir kapı buluyor. Lord Ashcombe içeri ilk giren oluyor. Bir daha dışarı çıkmıyor.",
+        "outro": "Mezar yeniden kapandı. Lanet hiç yoktu. Fail ise vardı.",
+        "rooms": {
+          "Grafkamer": "Mezar Odası",
+          "Voorkamer": "Ön Oda",
+          "Schatkamer": "Hazine Odası",
+          "Gang": "Koridor",
+          "Werktent": "Çalışma Çadırı",
+          "Slaaptent": "Uyku Çadırı",
+          "Kampvuur": "Ateş Başı",
+          "Donkere kamer": "Karanlık Oda",
+          "Keuken": "Mutfak",
+          "Voorraadkamer": "Kiler",
+          "Stal": "Ahır",
+          "Ziekenboeg": "Revir"
+        },
+        "furniture": {
+          "canope": "kanopik kavanoz",
+          "olielamp": "kandil",
+          "kameel": "deve",
+          "papyrus": "papirüs tomarı",
+          "zeef": "elek"
+        },
+        "suspects": {
+          "Professor Hartley": "Profesör Hartley",
+          "Lady Rosamund": "Leydi Rosamund",
+          "Tekenares Maud": "Çizer Maud",
+          "Opzichter Ahmed": "İşçibaşı Ahmed",
+          "Correspondente Ivy": "Muhabir Ivy",
+          "Kameeldrijver Omar": "Deveci Omar",
+          "Egyptologe Edith": "Mısırbilimci Edith",
+          "Verzamelaar Von Hagen": "Koleksiyoncu Von Hagen"
+        },
+        "suspectShort": {
+          "Professor Hartley": "Hartley",
+          "Lady Rosamund": "Rosamund",
+          "Tekenares Maud": "Maud",
+          "Opzichter Ahmed": "Ahmed",
+          "Correspondente Ivy": "Ivy",
+          "Kameeldrijver Omar": "Omar",
+          "Egyptologe Edith": "Edith",
+          "Verzamelaar Von Hagen": "Von Hagen"
+        }
+      },
+      "casino": {
+        "title": "Casino Azur",
+        "short": "Kumarhane",
+        "victimName": "Kumarhane Sahibi Lorenzo Vitali",
+        "roomWord": "alan",
+        "roomWordPlural": "alanlar",
+        "tagline": "Monte Carlo, 1960 Grand Prix hafta sonu. Fişler, şampanya ve son bahsini kaybeden bir kumarhane sahibi.",
+        "intro": "Casino Azur, Monte Carlo, Mayıs 1960. Grand Prix hafta sonu ve bütün masalar dolu. Gece yarısı kumarhanenin sahibi Lorenzo Vitali kendi kasa odasında, fiş yığınlarının arasında yatıyor.",
+        "outro": "Masalar boş, fişler sayıldı. Kasa her zaman kazanmaz.",
+        "rooms": {
+          "Speelzaal": "Oyun Salonu",
+          "Pokerkamer": "Poker Odası",
+          "Kluis": "Kasa Odası",
+          "Bar": "Bar",
+          "Terras": "Teras",
+          "Garderobe": "Vestiyer",
+          "Directiekamer": "Direktörlük",
+          "Balzaal": "Balo Salonu",
+          "Keuken": "Mutfak",
+          "Jachthaven": "Marina",
+          "Garage": "Garaj",
+          "Salon": "Salon"
+        },
+        "furniture": {
+          "roulette": "rulet çarkı",
+          "fiches": "fiş yığını",
+          "fruitautomaat": "slot makinesi",
+          "champagnetoren": "şampanya kulesi",
+          "shaker": "kokteyl karıştırıcısı"
+        },
+        "suspects": {
+          "Croupier Marcel": "Krupiye Marcel",
+          "Zangeres Gigi": "Şarkıcı Gigi",
+          "Erfgename Delphine": "Mirasçı Delphine",
+          "Coureur Rocco": "Yarış Pilotu Rocco",
+          "Bankier Sterling": "Bankacı Sterling",
+          "Fotomodel Tess": "Manken Tess",
+          "Gokker Jack": "Kumarbaz Jack",
+          "Huisdetective Nora": "Güvenlik Şefi Nora"
+        },
+        "suspectShort": {
+          "Croupier Marcel": "Marcel",
+          "Zangeres Gigi": "Gigi",
+          "Erfgename Delphine": "Delphine",
+          "Coureur Rocco": "Rocco",
+          "Bankier Sterling": "Sterling",
+          "Fotomodel Tess": "Tess",
+          "Gokker Jack": "Jack",
+          "Huisdetective Nora": "Nora"
+        }
       }
     },
     "daily": [
@@ -1027,6 +1129,18 @@
         "Kimsenin Bilmediği Arya",
         "Kopan Halat",
         "Colette Son Kez Selama Çıkıyor"
+      ],
+      "opgraving": [
+        "Nefer-Ankh’ın Laneti",
+        "Kaybolan Heykelcik",
+        "Kum Fırtınası Gecesi",
+        "Kahire’ye Son Sandık"
+      ],
+      "casino": [
+        "Vitali’nin Kasası",
+        "Hepsi On Yediye",
+        "Monako Turu",
+        "Azur’da Son Oyun"
       ]
     },
     "medals": {
@@ -1133,6 +1247,14 @@
       "opera": [
         "Perde İniyor",
         "Opéra Lumière dünyasındaki bütün bölümleri bitir"
+      ],
+      "opgraving": [
+        "Lanet Bozuldu",
+        "Nefer-Ankh’ın Mezarı dünyasındaki bütün bölümleri bitir"
+      ],
+      "casino": [
+        "Kasa Kaybediyor",
+        "Casino Azur dünyasındaki bütün bölümleri bitir"
       ]
     },
     "quests": {
@@ -5073,6 +5195,774 @@
           "🎟️ Son bilet"
         ]
       ]
+    ],
+    "opgraving": [
+      "Bölüm I · Mühürlü Kapı",
+      "Krallar Vadisi, Kasım 1922. Altı yıllık kazının ardından ekip mühürlü bir kapı buluyor. Lord Ashcombe içeri ilk giren oluyor. Bir daha dışarı çıkmıyor.",
+      "Kapı açık ve lord ölü. Mezarın başka odaları da var.",
+      "Mezar karanlık ve dar, kamp ise büyük ve açık. Hangi alanda olduğunu söyleyenle başla. Kandilin “hemen yanında” yalnızca tam yanındaki kare demek, asla çapraz değil.",
+      [
+        [
+          "Mühürlü Kapı",
+          "Altı yıl kum. Sonra bir kapı bulundu ve bir lord eksildi.",
+          "🔏 Mezar mührü"
+        ],
+        [
+          "İlk Adım",
+          "Lord Ashcombe içeri ilk girmek istedi. Biri ona izin verdi.",
+          "🔦 El feneri"
+        ],
+        [
+          "Profesör Hartley Ölçüyor",
+          "Her basamağı ölçtü. Bir basamak yeniydi.",
+          "📏 Katlanır metre"
+        ],
+        [
+          "Kandil",
+          "Koridordaki kandil hâlâ yanıyordu. Kimse yağ getirmemişti.",
+          "🪔 Kandil"
+        ],
+        [
+          "Çizer Maud Çiziyor",
+          "Çiziminde kapı kapalıydı. Saat onda açıktı.",
+          "✏️ Çizim kalemi"
+        ],
+        [
+          "Luksor’dan Su",
+          "Deveci Omar sekiz tulum su getirdi. Yedisi geri döndü.",
+          "💧 Su tulumu"
+        ],
+        [
+          "Kampta Gece",
+          "Herkes kendi çadırında uyudu. Neredeyse herkes.",
+          "⛺ Çadır direği"
+        ],
+        [
+          "Gece Yarısından Sonra",
+          "Saat on ikide çakallar uludu. Saat birde biri kazıyordu.",
+          "🌙 Büyüyen ay"
+        ]
+      ]
+    ],
+    "opgraving-2": [
+      "Bölüm II · Lanet",
+      "Eşikte işaretler var. İşçibaşı Ahmed onları yüksek sesle okuyor: bu mezarı rahatsız eden ölecek. Kamp buna inanıyor.",
+      "Lanetin bir çeviri olduğu ortaya çıkıyor. Kötü bir çeviri, hem de bilerek yapılmış.",
+      "Batıl inanç tanıkların aklını karıştırır; kat planı ise şaşmaz. İki kişiyle ilgili bir ifadeyi çözmek için önce ikisinden birinin yerini kesinleştir.",
+      [
+        [
+          "Eşikteki İşaretler",
+          "Üç satır hiyeroglif. Dört çeviri.",
+          "👁️ Horus’un Gözü"
+        ],
+        [
+          "İşçiler Grevde",
+          "Yüz işçi, yüz kürek. Kimse kazmıyor.",
+          "⛏️ Kürek"
+        ],
+        [
+          "Mısırbilimci Edith Çeviriyor",
+          "Metni ezbere biliyordu. Fazla iyi.",
+          "📖 Sözlük"
+        ],
+        [
+          "Kara Kedi",
+          "Bir kedi mezara girdi. Dışarı bir şeyle çıktı.",
+          "🐈‍⬛ Kara kedi"
+        ],
+        [
+          "Muhabir Ivy Telgraf Çekiyor",
+          "Lanetle ilgili haberi gazetede çıkmıştı bile. Daha ortada bir lanet yokken.",
+          "📨 Telgraf"
+        ],
+        [
+          "Çadırda Bir Yılan",
+          "Kampta daha önce hiç yılan görülmemişti. Dün geceye kadar.",
+          "🐍 Yılan derisi"
+        ],
+        [
+          "Leydi Rosamund Gitmek İstiyor",
+          "Bavullarını topladı. Birini unuttu.",
+          "👒 Hasır şapka"
+        ],
+        [
+          "Lanet Bozuldu",
+          "Lanetler öldürmez. Biri öldürür.",
+          "🪬 Muska"
+        ]
+      ]
+    ],
+    "opgraving-3": [
+      "Bölüm III · Hazine Odası",
+      "Mezar odasının arkasında ikinci bir kapı var. Ardında tavana kadar altın. Altın bir heykelcik çoktan kaybolmuş.",
+      "Her parça yeniden listede. Heykelcik geri döndü, hırsız artık serbest değil.",
+      "Hazine odasında her parça önemlidir, her ifade de. Nerede OLMADIĞINI söyleyen de sana bir şey anlatır: o alanı hemen ele.",
+      [
+        [
+          "Tavana Kadar Altın",
+          "Listede iki yüz parça. Rafta yüz doksan dokuz.",
+          "📋 Buluntu listesi"
+        ],
+        [
+          "Altın Heykelcik",
+          "Heykelcik bir el büyüklüğündeydi. Alıp götürmesi de o kadar kolaydı.",
+          "✨ Altın heykelcik"
+        ],
+        [
+          "Koleksiyoncu Von Hagen Teklif Veriyor",
+          "Bir servet teklif etti. Henüz bulunmamış bir şey için.",
+          "🧾 Çek"
+        ],
+        [
+          "Skarabe",
+          "Lapis lazuliden bir skarabe. Yanlış sandıktaydı.",
+          "🪲 Skarabe"
+        ],
+        [
+          "İşçibaşı Ahmed Sayıyor",
+          "Her akşam adamlarını saydı. Bu akşam bir kişi fazlaydı.",
+          "🧮 Abaküs"
+        ],
+        [
+          "Göğüslük",
+          "Altın göğüslük yerde duruyordu. Dün duvarda asılıydı.",
+          "🛡️ Göğüslük"
+        ],
+        [
+          "Tozda Bir Parmak İzi",
+          "Üç bin yıllık toz. Ve taze bir parmak izi.",
+          "🔍 Büyüteç"
+        ],
+        [
+          "Boş Kaide",
+          "Kaide artık boştu. Ama üstünde kamptan gelen kum vardı.",
+          "⏳ Kum saati"
+        ]
+      ]
+    ],
+    "opgraving-4": [
+      "Bölüm IV · Kum Fırtınası",
+      "Üç gündür kum fırtınası. Çadırlar rüzgârda çırpınıyor, mezar kapalı ve kimse kampa girip çıkamıyor.",
+      "Fırtına diniyor. Kum bütün izleri örttü, biri hariç.",
+      "Fırtınada kimse bir metreden ötesini göremez, o yüzden kimin kimin hemen yanında durduğuna dikkat et. Önce en az seçeneği olan şüpheliyi yerleştir; gerisi arkasından gelir.",
+      [
+        [
+          "Her Yerde Kum",
+          "Çayda kum, çadırda kum, tutmayan bir hikâyede kum.",
+          "🫖 Kumlu çay"
+        ],
+        [
+          "Çalışma Çadırı",
+          "Çalışma çadırını rüzgâr uçurdu. İçindekileri uçurmadı.",
+          "🧰 Alet kutusu"
+        ],
+        [
+          "Deveci Omar Arıyor",
+          "Fırtınada bir deve kayboldu. Omar onu geri buldu; heybesi doluydu.",
+          "🐪 Deve"
+        ],
+        [
+          "Karanlık Oda",
+          "Fırtına sırasında biri fotoğraf banyo etti. Bir cam negatif kayboldu.",
+          "🎞️ Cam negatif"
+        ],
+        [
+          "Fırtınada Işık",
+          "Fırtınanın ortasında mezarın yanında bir ışık yanıyordu.",
+          "🏮 Fırtına feneri"
+        ],
+        [
+          "Profesör Hartley Yazıyor",
+          "Günlüğü salıya kadar sürüyordu. Sonrasını başka bir el yazdı.",
+          "📓 Günlük"
+        ],
+        [
+          "Muhabir Ivy Bekliyor",
+          "Hazır bir haberi vardı. Henüz olmamış bir şey hakkında.",
+          "⌨️ Daktilo"
+        ],
+        [
+          "Fırtınadan Sonra",
+          "Bütün izler kaybolmuştu. Biri hariç.",
+          "👣 Ayak izi"
+        ]
+      ]
+    ],
+    "opgraving-5": [
+      "Bölüm V · Basın Geliyor",
+      "Buluntu dünya haberi oldu. Londra ve Kahire’den gelen muhabirler kampın kenarında bekliyor ve herkes ilk fotoğrafı istiyor.",
+      "Gazeteler fotoğraflarını aldı. Gerçek olanı hiç basılmadı.",
+      "Kampta basın varken herkes başka bir yerde durur. Yalnız olduğunu söyleyenle başla: bu, bütün bir alanı tek seferde boşaltır.",
+      [
+        [
+          "İlk Fotoğraf",
+          "Yirmi fotoğrafçı. Bir flaş fazla.",
+          "📸 Flaş lambası"
+        ],
+        [
+          "Özel Haber",
+          "İçeri yalnızca bir gazete girebildi. Başka bir gazete önceden biliyordu.",
+          "🗞️ Sabah gazetesi"
+        ],
+        [
+          "Muhabir Ivy Telefon Ediyor",
+          "Kahire hattı bir saat meşguldü. Hatta başka biri vardı.",
+          "☎️ Telefon"
+        ],
+        [
+          "Leydi Rosamund Poz Veriyor",
+          "Her fotoğrafta o vardı. Birinde başka bir yerde duruyor.",
+          "🖼️ Gazete fotoğrafı"
+        ],
+        [
+          "Röportaj",
+          "Profesör Hartley üç cümle söyledi. Gazete dört cümle bastı.",
+          "🎙️ Mikrofon"
+        ],
+        [
+          "Rüşvet Alan Bekçi",
+          "Başka yöne bakması için bir sterlin aldı. Yine de baktı.",
+          "💷 Sterlin banknotu"
+        ],
+        [
+          "Çizer Maud Basını Çiziyor",
+          "Eskizinde on iki gazeteci vardı. Gerçekte on bir kişiydiler.",
+          "🖍️ Mum boya"
+        ],
+        [
+          "Birinci Sayfa Haberi",
+          "Manşet doğruydu. Altındaki haber değil.",
+          "📰 Birinci sayfa"
+        ]
+      ]
+    ],
+    "opgraving-6": [
+      "Bölüm VI · Lahit",
+      "Mezar odasında taş bir lahit duruyor. Kapağı bir ton ağırlığında. Açıldığında altından birden fazla sır çıkıyor.",
+      "Kapak yeniden yerinde. Nefer-Ankh huzur içinde yatıyor ve kampın neden bu kadar sessiz olduğunu sen biliyorsun.",
+      "İfadeler cimrileşiyor, mezar da kararıyor. Kalemi kullan: olamayacak kareleri ele ve geriye ne kaldığına bak.",
+      [
+        [
+          "Kapak",
+          "Kapağı on adam kaldırdı. On bir adam görmüştü.",
+          "🪨 Taş kapak"
+        ],
+        [
+          "Mumya",
+          "Lahitte kraliçe yatıyordu. Bir de dünden kalma bir not.",
+          "📃 Not"
+        ],
+        [
+          "Mısırbilimci Edith Tanıyor",
+          "Kapaktaki yüzü tanıdı. Kimin yüzü olduğunu söylemedi.",
+          "📐 İletki"
+        ],
+        [
+          "Kanopik Kavanozlar",
+          "Dört kavanoz, dört tanrı. Birinde kalp yoktu.",
+          "🏺 Kanopik kavanoz"
+        ],
+        [
+          "İşçibaşı Ahmed Nöbet Tutuyor",
+          "Bütün gece mezarın başında nöbet tuttu. Bir saat uyudu.",
+          "🕰️ Cep saati"
+        ],
+        [
+          "Papirüs Tomarı",
+          "Lahitte bir papirüs vardı. Kâğıt fazla yeniydi.",
+          "📜 Papirüs"
+        ],
+        [
+          "Koleksiyoncu Von Hagen Satın Almak İstiyor",
+          "Yalnızca tomarı istedi. Üstünde ne yazdığını biliyordu.",
+          "💼 Evrak çantası"
+        ],
+        [
+          "Kapağın Altında Yatan",
+          "Üç bin yıllık sessizlik. Onu bozmaya bir hafta yetti.",
+          "🗝️ Bronz anahtar"
+        ]
+      ]
+    ],
+    "opgraving-7": [
+      "Bölüm VII · Nil Boyunca",
+      "Buluntular gemiyle Nil boyunca Kahire’ye gidiyor. Güvertede on iki sandık, gemide sekiz yolcu ve bir sandık hiç varmıyor.",
+      "Kahire’de sandıklar sayılıyor. On iki. Neden on iki olduğunu sen biliyorsun.",
+      "Tahta büyüyor, ifadeler cimrileşiyor. Rapora göre bir alan boşsa, o alanın tamamı herkes için elenir.",
+      [
+        [
+          "On İki Sandık",
+          "Güvertede on iki sandık. Asyut’ta on bir.",
+          "📦 Buluntu sandığı"
+        ],
+        [
+          "Deveci Omar Gemide",
+          "Daha önce hiç gemiye binmemişti. Ambarın yolunu biliyordu.",
+          "⚓ Çapa"
+        ],
+        [
+          "Ambar",
+          "Aşağıda, ambarda hava sıcak ve karanlıktı. Biri orada bir lamba yanık bırakmıştı.",
+          "🕯️ Gemi lambası"
+        ],
+        [
+          "Leydi Rosamund Susuyor",
+          "Bütün yolculuk boyunca kimseyle konuşmadı. Bir kez hariç, gecenin ortasında.",
+          "🧣 Seyahat şalı"
+        ],
+        [
+          "Gümrük Damgası",
+          "Her sandıkta bir damga vardı. Bir damga hâlâ ıslaktı.",
+          "🛂 Gümrük damgası"
+        ],
+        [
+          "Profesör Hartley Hesap Yapıyor",
+          "Sigorta sandık başına ödüyordu. Bir sandık fazla saydı.",
+          "🧾 Sigorta poliçesi"
+        ],
+        [
+          "Timsahlar",
+          "Gecenin ortasında gemiden suya bir şey düştü. Bir sandık için fazla ağırdı.",
+          "🐊 Timsah derisi"
+        ],
+        [
+          "Kahire’ye Varış",
+          "Kahire rıhtımında on iki sandık duruyordu. Gemide olandan bir fazla.",
+          "🏛️ Müze etiketi"
+        ]
+      ]
+    ],
+    "opgraving-8": [
+      "Bölüm VIII · Kuma Dönüş",
+      "Kazı mevsimi bitti ve mezar gelecek yıla kadar kapanıyor. Kamp ateşinin başında son bir gece, ilk günkü yüzlerle.",
+      "Van Dam şapkasındaki kumu silkeliyor, kampa el sallıyor ve Kahire trenine biniyor. Nefer-Ankh’ın mezarında artık hiçbir sır kalmadı.",
+      "Son vakalar, neredeyse hepsi büyük tahtada. En zor olana takılıp kalma: önce diğerlerini yerleştir, sonuncuya çoğu zaman tek bir kare kalır.",
+      [
+        [
+          "Son Kamp Ateşi",
+          "Herkes ateşin etrafında oturdu. Bir yer sıcak kaldı. Ve boş.",
+          "🔥 Kızgın kor"
+        ],
+        [
+          "Kapı Kapanıyor",
+          "Kapıyı yeniden tuğlayla ördüler. Taşların ardı sessiz kaldı. Neredeyse.",
+          "🧱 Tuğla"
+        ],
+        [
+          "Çizer Maud Toplanıyor",
+          "Bir dosyada üç yüz çizim. Biri oraya ait değildi.",
+          "🗂️ Çizim dosyası"
+        ],
+        [
+          "Son Tur",
+          "İşçibaşı Ahmed son turunu attı. Elinde bir taşla döndü.",
+          "🪨 Kireçtaşı"
+        ],
+        [
+          "Mısırbilimci Edith Kalıyor",
+          "Herkes gitti. O bir gün daha kaldı, tek başına.",
+          "⛺ Son çadır"
+        ],
+        [
+          "Hesap",
+          "Her şeyi Lord Ashcombe ödüyordu. Ölümünden sonra başka biri ödedi.",
+          "💰 Para kutusu"
+        ],
+        [
+          "Kraliçenin Gözü",
+          "Kapakta iki boyalı göz var. Biri faile bakıyor.",
+          "👁️ Boyalı göz"
+        ],
+        [
+          "Kuma Dönüş",
+          "Başladığı yerde, mühürlü kapının önünde. Orada da bitiyor.",
+          "🏜️ Çöl kumu"
+        ]
+      ]
+    ],
+    "casino": [
+      "Bölüm I · Büyük Gece",
+      "Casino Azur, Monte Carlo, Mayıs 1960. Grand Prix hafta sonu ve bütün masalar dolu. Gece yarısı kumarhanenin sahibi Lorenzo Vitali kendi kasa odasında, fiş yığınlarının arasında yatıyor.",
+      "Masalar kapanıyor. Ama hafta sonu daha bitmedi.",
+      "Kumarhane, köşesi bol tek bir büyük salondur. Hangi alanda olduğunu söyleyenle başla. Slot makinesinin “hemen yanında” yalnızca tam yanındaki kare demek, asla çapraz değil.",
+      [
+        [
+          "Faites vos jeux",
+          "Akşamın ilk oyunu. Kumarhane sahibinin sonuncusu.",
+          "🎲 Zar"
+        ],
+        [
+          "Açık Kasa",
+          "Kasa açıktı. Yalnızca iki anahtarla açılır.",
+          "🔐 Kasa anahtarı"
+        ],
+        [
+          "Krupiye Marcel Kart Dağıtıyor",
+          "Bütün akşam kart dağıttı. Gece yarısı masasında başka biri duruyordu.",
+          "🃏 Oyun kâğıdı"
+        ],
+        [
+          "Şampanya Kulesi",
+          "Bir kulede yüz kadeh. Bir kadeh eksikti.",
+          "🥂 Kup kadeh"
+        ],
+        [
+          "Şarkıcı Gigi Şarkı Söylüyor",
+          "Son şarkısı bir kasa hakkındaydı. Kimse gülmedi.",
+          "🎤 Mikrofon"
+        ],
+        [
+          "Fişler",
+          "Kırmızı, yeşil, siyah. Bir renk bu kumarhanede hiç yoktu.",
+          "🔴 Sahte fiş"
+        ],
+        [
+          "Güvenlik Şefi Nora Göz Kulak Oluyor",
+          "Her oyuncuyu gördü. Biri hariç.",
+          "🕵️‍♀️ Güvenlik rozeti"
+        ],
+        [
+          "Monako’da Gece Yarısı",
+          "Saat on ikiyi vurdu. Dışarıda motor sesleri sustu.",
+          "🕛 Kumarhane saati"
+        ]
+      ]
+    ],
+    "casino-2": [
+      "Bölüm II · Kasa",
+      "Monako polisi kumarhaneyi kapatıyor. Kasa odasında her şey hâlâ yerli yerinde. Hiçbir şey eksik değil, kumarhane sahibi hariç.",
+      "Kasa yeniden kapalı. Yarın çark her zamanki gibi dönecek.",
+      "Burada herkes aynı anda iki el oynar. İki kişiyle ilgili bir ifadeyi çözmek için önce ikisinden birinin yerini kesinleştir.",
+      [
+        [
+          "İki Anahtar",
+          "Kasa ancak iki anahtarla açılıyordu. Yalnızca biri bulundu.",
+          "🗝️ İkinci anahtar"
+        ],
+        [
+          "Bankacı Sterling Hesap Yapıyor",
+          "Kasada ne olduğunu tam olarak biliyordu. Son fişine kadar.",
+          "🧮 Hesap cetveli"
+        ],
+        [
+          "Vestiyer",
+          "Kırk sekiz palto. Kırk yedisi geri alındı.",
+          "🧥 Gece paltosu"
+        ],
+        [
+          "Mirasçı Delphine Kaybediyor",
+          "Her akşam kaybederdi. Bu akşam hiçbir şey kaybetmedi.",
+          "💍 Pırlanta yüzük"
+        ],
+        [
+          "Şifreli Kilit",
+          "Dört rakam. Kumarhane sahibi onları kimseye söylemedi. Neredeyse kimseye.",
+          "🔢 Şifreli kilit"
+        ],
+        [
+          "Yarış Pilotu Rocco Geç Kalıyor",
+          "Saat on iki buçukta içeri girdi. Kaskı hâlâ sıcaktı.",
+          "🪖 Yarış kaskı"
+        ],
+        [
+          "Gece Bekçisi",
+          "Gece bekçisi garajda uyuyordu. Bir motor sesi duydu.",
+          "🚨 Alarm zili"
+        ],
+        [
+          "Dolu Bir Kasa",
+          "Her şey hâlâ yerindeydi. Hatta fazlası.",
+          "💵 Banknot"
+        ]
+      ]
+    ],
+    "casino-3": [
+      "Bölüm III · Rien ne va plus",
+      "Kumarhane yeniden açılıyor. Beş numaralı masada top hep aynı sayıya düşüyor ve biri nedenini biliyor.",
+      "Çark tartıldı ve düzeltildi. Top yeniden istediği yere düşüyor.",
+      "Rulette herkes birbirine değil, çarka bakar. Nerede OLMADIĞINI söyleyen de sana bir şey anlatır: o alanı hemen ele.",
+      [
+        [
+          "On Yedi",
+          "Art arda altı kez on yedi. Krupiye başını kaldırmadı.",
+          "🎯 Rulet topu"
+        ],
+        [
+          "Kumarbaz Jack Kazanıyor",
+          "Her şeyi on yediye yatırdı. Çark dönmeden önce.",
+          "🎩 Fötr şapka"
+        ],
+        [
+          "Eğri Çark",
+          "Çark bir milimetre eğikti. Bir servet için yeterli.",
+          "⚙️ Bilyeli rulman"
+        ],
+        [
+          "Manken Tess İzliyor",
+          "Bütün akşam çarkı izledi. Ya da yanındaki adamı.",
+          "🕶️ Güneş gözlüğü"
+        ],
+        [
+          "Mıknatıs",
+          "Beş numaralı masanın altında bir mıknatıs vardı. Biri onu dün oraya yapıştırmıştı.",
+          "🧲 Mıknatıs"
+        ],
+        [
+          "Krupiye Marcel Uzaklaştırılıyor",
+          "Eve gönderildi. Marinaya gitti.",
+          "🪪 Personel kartı"
+        ],
+        [
+          "Bankanın Parası",
+          "Banka bir gecede bir milyon kaybetti. Bankacı güldü.",
+          "💸 Kayıp bahis"
+        ],
+        [
+          "Rien ne va plus",
+          "Bahisler kapandı. Biri hariç.",
+          "🎰 Son fiş"
+        ]
+      ]
+    ],
+    "casino-4": [
+      "Bölüm IV · Grand Prix",
+      "Pazar günü Grand Prix var. Motorlar Monte Carlo sokaklarında kükrüyor ve kumarhane kocaman bir tribün.",
+      "Damalı bayrak sallanıyor ve kazanan şampanya içiyor. Tribünde bir koltuk boş.",
+      "Yarış günü herkes pencerenin önünde durur. Önce en az seçeneği olan şüpheliyi yerleştir; gerisi arkasından gelir.",
+      [
+        [
+          "Start",
+          "Start çizgisinde yirmi araba. On dokuzu geri döndü.",
+          "🏁 Start bayrağı"
+        ],
+        [
+          "Yarış Pilotu Rocco Pitte",
+          "Arabası hazırdı. Lastikleri değil.",
+          "🛞 Yarış tekerleği"
+        ],
+        [
+          "Tribün",
+          "Herkes tribünde oturuyordu. Bir koltuk bütün yarış boyunca boş kaldı.",
+          "🎟️ Tribün bileti"
+        ],
+        [
+          "Garaj",
+          "Kumarhanenin garajında bir yarış arabası duruyordu. Sahibi Rocco değildi.",
+          "🏎️ Yarış arabası"
+        ],
+        [
+          "Bankacı Sterling Bahse Giriyor",
+          "Kaybedecek olana bahis yaptı. Kazandı.",
+          "📈 Bahis kuponu"
+        ],
+        [
+          "Benzin",
+          "Garaj benzin kokuyordu. Ortada artık araba yoktu.",
+          "⛽ Benzin bidonu"
+        ],
+        [
+          "Manken Tess Fotoğrafta",
+          "Kazananla birlikte fotoğraftaydı. Arka planda: kasa.",
+          "📷 Basın fotoğrafı"
+        ],
+        [
+          "Son Tur",
+          "Son turda bir motor sustu. Pistte değil.",
+          "🏆 Kupa"
+        ]
+      ]
+    ],
+    "casino-5": [
+      "Bölüm V · Yat",
+      "Limanda, mirasçının yatında bir parti. Fenerler, caz ve şampanya. Güneş doğduğunda filikalardan biri kayıp.",
+      "Filika yeniden rıhtımda. Yat denize açılıyor, bir konuk eksik.",
+      "Yatta yer dardır ve herkes birbirine yakın durur. Yalnız olduğunu söyleyenle başla: bu, bütün bir alanı tek seferde boşaltır.",
+      [
+        [
+          "Suyun Üstünde Fenerler",
+          "Yüz fener. Biri söndü.",
+          "🏮 Kâğıt fener"
+        ],
+        [
+          "Mirasçı Delphine Parti Veriyor",
+          "Herkesi davet etti. Biri hariç.",
+          "💌 Davetiye"
+        ],
+        [
+          "Filika",
+          "Saat ikide filika hâlâ yata bağlıydı. Saat üçte değildi.",
+          "🛶 Filika"
+        ],
+        [
+          "Şarkıcı Gigi Güvertede",
+          "Saat üçe kadar şarkı söyledi. Son şarkısını kimse duymadı.",
+          "🎷 Saksofon"
+        ],
+        [
+          "Pusula",
+          "Pusula yanlış yönü gösteriyordu. Birinin cebinde mıknatıs vardı.",
+          "🧭 Pusula"
+        ],
+        [
+          "Kumarbaz Jack Yüzüyor",
+          "Yüzme bilmediğini söyledi. Saçları ıslaktı.",
+          "🏊 Islak havlu"
+        ],
+        [
+          "Gece Vakti Liman",
+          "Saat dörtte liman sessizdi. Bir motor hariç.",
+          "⚓ Tekne çapası"
+        ],
+        [
+          "Gün Doğarken",
+          "Güneş koyun üstünde doğdu. Güvertede bir konuk eksikti.",
+          "🌅 Gün doğumu"
+        ]
+      ]
+    ],
+    "casino-6": [
+      "Bölüm VI · Hileli Oyun",
+      "Poker odasında her eli aynı oyuncu kazanıyor. Kartlar işaretli ve kumarhanenin güvenlik şefi kimin işaretlediğini bilmek istiyor.",
+      "İşaretli kartlar kasada. Onları kullanan oyuncu artık masada oturmuyor.",
+      "Hilekârlar yalan söylemeyi sever, kat planı söylemez. İfadeler cimrileşiyor: olamayacak olanı ele ve geriye ne kaldığına bak.",
+      [
+        [
+          "Üç Numaralı Masa",
+          "Beş oyuncu, bir dağıtıcı. İçlerinden biri her kartı biliyordu.",
+          "♠️ Maça ası"
+        ],
+        [
+          "İşaret",
+          "Kartların arkasında bir nokta vardı. Yalnızca renkli gözlükle görünüyordu.",
+          "👓 Renkli gözlük"
+        ],
+        [
+          "Güvenlik Şefi Nora Sorguluyor",
+          "Herkese tek bir soru sordu. Bir oyuncu iki cevap verdi.",
+          "📝 Sorgu defteri"
+        ],
+        [
+          "Yendeki Kart",
+          "Yeninde bir kart saklıyordu. Ceketi vestiyerde asılıydı.",
+          "👔 Gömlek"
+        ],
+        [
+          "Bankacı Sterling Kaybediyor",
+          "On yıldır ilk kez kaybetti. Bile bile.",
+          "💳 Akreditif"
+        ],
+        [
+          "Barın Arkasındaki Ayna",
+          "Aynada üç numaralı masanın kartları görünüyordu.",
+          "🪞 Bar aynası"
+        ],
+        [
+          "Yarış Pilotu Rocco Oynuyor",
+          "Araba sürdüğü gibi oynadı: fazla hızlı ve frensiz.",
+          "🎲 Zarlar"
+        ],
+        [
+          "İşaretli Kartlar",
+          "Bütün kartlar işaretliydi. Bir deste hariç.",
+          "🃏 İşaretli deste"
+        ]
+      ]
+    ],
+    "casino-7": [
+      "Bölüm VII · Gala Balosu",
+      "Balo salonunda sezonun gala balosu. Smokin zorunlu, orkestra saat üçe kadar çalıyor ve bir konuk bütün akşam eldiven takıyor.",
+      "Orkestra çalgılarını topluyor, balo salonu boş. Eldivenler vestiyerde.",
+      "Tahta büyüyor, ifadeler cimrileşiyor. Rapora göre bir alan boşsa, o alanın tamamı herkes için elenir.",
+      [
+        [
+          "Smokin Zorunlu",
+          "Herkes siyahlar içinde. Bir smokin kiralanmıştı, başka bir adla.",
+          "🤵 Smokin"
+        ],
+        [
+          "Eldivenler",
+          "Bütün akşam eldiven taktı. Yemekte bile.",
+          "🧤 Gece eldiveni"
+        ],
+        [
+          "Şarkıcı Gigi ve Bankacı",
+          "Tek bir dans ettiler. Sonra bankacı barda yalnız oturdu.",
+          "🍸 Martini"
+        ],
+        [
+          "Orkestra",
+          "On iki müzisyen, on iki sandalye. Bir sandalye vestiyerdeydi.",
+          "🎺 Trompet"
+        ],
+        [
+          "Mirasçı Delphine Dans Ediyor",
+          "Herkesle dans etti. Bileziği de onunla dans etti, gece yarısına kadar.",
+          "💠 Bilezik"
+        ],
+        [
+          "Kayıp Ayakkabı",
+          "Saat üçte dans pistinde tek bir ayakkabı duruyordu. Sahibi gitmişti.",
+          "👠 Topuklu ayakkabı"
+        ],
+        [
+          "Havai Fişekler",
+          "Gece yarısı koyun üstünde havai fişekler. Bir patlama içeriden geldi.",
+          "🎆 Havai fişek"
+        ],
+        [
+          "Son Vals",
+          "Son vals dört dakika sürdü. Tek bir iş için yeterli zaman.",
+          "🎻 Keman yayı"
+        ]
+      ]
+    ],
+    "casino-8": [
+      "Bölüm VIII · Son Bahis",
+      "Kumarhanenin yeni bir sahibi oluyor. Eski avizelerin altında son bir akşam, Grand Prix hafta sonundaki yüzlerle.",
+      "Van Dam son fişini kırmızıya koyuyor, orada bırakıyor ve Monte Carlo gecesine karışıyor. Kasa her zaman kazanmaz.",
+      "Son vakalar, neredeyse hepsi büyük tahtada. En zor olana takılıp kalma: önce diğerlerini yerleştir, sonuncuya çoğu zaman tek bir kare kalır.",
+      [
+        [
+          "Yeni Sahip",
+          "Yeni sahibi kimse tanımıyordu. Bir konuk hariç.",
+          "📝 Satış sözleşmesi"
+        ],
+        [
+          "Krupiye Marcel Veda Ediyor",
+          "Otuz yıl aynı masada. Bu akşam gözü kapıdaydı.",
+          "🏅 Veda rozeti"
+        ],
+        [
+          "Son Şampanya",
+          "Mahzenden çıkan son şişe. Biri onu çoktan açmıştı.",
+          "🍾 Son şişe"
+        ],
+        [
+          "Güvenlik Şefi Nora Dosyasını Kapatıyor",
+          "Adı yazdı. Üstünü çizmedi.",
+          "📁 Dosya"
+        ],
+        [
+          "Yarış Pilotu Rocco Gidiyor",
+          "Arabası hazırdı. Anahtarı kasadaydı.",
+          "🔑 Araba anahtarı"
+        ],
+        [
+          "Kumarbaz Jack Her Şeyini Ortaya Sürüyor",
+          "Hepsi tek bir sayıya. Zaten biliyordu.",
+          "🪙 Son madeni para"
+        ],
+        [
+          "Avize Sönüyor",
+          "Saat ikide ışıklar söndü. Bir mum yanmaya devam etti.",
+          "🕯️ Mum damlası"
+        ],
+        [
+          "Son Bahis",
+          "Başladığı yerde, kasa odasında. Orada da bitiyor.",
+          "♦️ Karo ası"
+        ]
+      ]
     ]
   },
 
@@ -6336,6 +7226,226 @@
           "In": "Büyük merdivende",
           "WasI": "Büyük merdivendeydim"
         }
+      },
+      "opgraving": {
+        "Grafkamer": {
+          "the": "mezar odası",
+          "in": "mezar odasında",
+          "gen": "mezar odasının",
+          "was": "mezar odasındaydı",
+          "wasI": "mezar odasındaydım",
+          "In": "Mezar odasında",
+          "WasI": "Mezar odasındaydım"
+        },
+        "Voorkamer": {
+          "the": "ön oda",
+          "in": "ön odada",
+          "gen": "ön odanın",
+          "was": "ön odadaydı",
+          "wasI": "ön odadaydım",
+          "In": "Ön odada",
+          "WasI": "Ön odadaydım"
+        },
+        "Schatkamer": {
+          "the": "hazine odası",
+          "in": "hazine odasında",
+          "gen": "hazine odasının",
+          "was": "hazine odasındaydı",
+          "wasI": "hazine odasındaydım",
+          "In": "Hazine odasında",
+          "WasI": "Hazine odasındaydım"
+        },
+        "Gang": {
+          "the": "koridor",
+          "in": "koridorda",
+          "gen": "koridorun",
+          "was": "koridordaydı",
+          "wasI": "koridordaydım",
+          "In": "Koridorda",
+          "WasI": "Koridordaydım"
+        },
+        "Werktent": {
+          "the": "çalışma çadırı",
+          "in": "çalışma çadırında",
+          "gen": "çalışma çadırının",
+          "was": "çalışma çadırındaydı",
+          "wasI": "çalışma çadırındaydım",
+          "In": "Çalışma çadırında",
+          "WasI": "Çalışma çadırındaydım"
+        },
+        "Slaaptent": {
+          "the": "uyku çadırı",
+          "in": "uyku çadırında",
+          "gen": "uyku çadırının",
+          "was": "uyku çadırındaydı",
+          "wasI": "uyku çadırındaydım",
+          "In": "Uyku çadırında",
+          "WasI": "Uyku çadırındaydım"
+        },
+        "Kampvuur": {
+          "the": "ateş başı",
+          "in": "ateş başında",
+          "gen": "ateş başının",
+          "was": "ateş başındaydı",
+          "wasI": "ateş başındaydım",
+          "In": "Ateş başında",
+          "WasI": "Ateş başındaydım"
+        },
+        "Donkere kamer": {
+          "the": "karanlık oda",
+          "in": "karanlık odada",
+          "gen": "karanlık odanın",
+          "was": "karanlık odadaydı",
+          "wasI": "karanlık odadaydım",
+          "In": "Karanlık odada",
+          "WasI": "Karanlık odadaydım"
+        },
+        "Keuken": {
+          "the": "mutfak",
+          "in": "mutfakta",
+          "gen": "mutfağın",
+          "was": "mutfaktaydı",
+          "wasI": "mutfaktaydım",
+          "In": "Mutfakta",
+          "WasI": "Mutfaktaydım"
+        },
+        "Voorraadkamer": {
+          "the": "kiler",
+          "in": "kilerde",
+          "gen": "kilerin",
+          "was": "kilerdeydi",
+          "wasI": "kilerdeydim",
+          "In": "Kilerde",
+          "WasI": "Kilerdeydim"
+        },
+        "Stal": {
+          "the": "ahır",
+          "in": "ahırda",
+          "gen": "ahırın",
+          "was": "ahırdaydı",
+          "wasI": "ahırdaydım",
+          "In": "Ahırda",
+          "WasI": "Ahırdaydım"
+        },
+        "Ziekenboeg": {
+          "the": "revir",
+          "in": "revirde",
+          "gen": "revirin",
+          "was": "revirdeydi",
+          "wasI": "revirdeydim",
+          "In": "Revirde",
+          "WasI": "Revirdeydim"
+        }
+      },
+      "casino": {
+        "Speelzaal": {
+          "the": "oyun salonu",
+          "in": "oyun salonunda",
+          "gen": "oyun salonunun",
+          "was": "oyun salonundaydı",
+          "wasI": "oyun salonundaydım",
+          "In": "Oyun salonunda",
+          "WasI": "Oyun salonundaydım"
+        },
+        "Pokerkamer": {
+          "the": "poker odası",
+          "in": "poker odasında",
+          "gen": "poker odasının",
+          "was": "poker odasındaydı",
+          "wasI": "poker odasındaydım",
+          "In": "Poker odasında",
+          "WasI": "Poker odasındaydım"
+        },
+        "Kluis": {
+          "the": "kasa odası",
+          "in": "kasa odasında",
+          "gen": "kasa odasının",
+          "was": "kasa odasındaydı",
+          "wasI": "kasa odasındaydım",
+          "In": "Kasa odasında",
+          "WasI": "Kasa odasındaydım"
+        },
+        "Bar": {
+          "the": "bar",
+          "in": "barda",
+          "gen": "barın",
+          "was": "bardaydı",
+          "wasI": "bardaydım",
+          "In": "Barda",
+          "WasI": "Bardaydım"
+        },
+        "Terras": {
+          "the": "teras",
+          "in": "terasta",
+          "gen": "terasın",
+          "was": "terastaydı",
+          "wasI": "terastaydım",
+          "In": "Terasta",
+          "WasI": "Terastaydım"
+        },
+        "Garderobe": {
+          "the": "vestiyer",
+          "in": "vestiyerde",
+          "gen": "vestiyerin",
+          "was": "vestiyerdeydi",
+          "wasI": "vestiyerdeydim",
+          "In": "Vestiyerde",
+          "WasI": "Vestiyerdeydim"
+        },
+        "Directiekamer": {
+          "the": "direktörlük",
+          "in": "direktörlükte",
+          "gen": "direktörlüğün",
+          "was": "direktörlükteydi",
+          "wasI": "direktörlükteydim",
+          "In": "Direktörlükte",
+          "WasI": "Direktörlükteydim"
+        },
+        "Balzaal": {
+          "the": "balo salonu",
+          "in": "balo salonunda",
+          "gen": "balo salonunun",
+          "was": "balo salonundaydı",
+          "wasI": "balo salonundaydım",
+          "In": "Balo salonunda",
+          "WasI": "Balo salonundaydım"
+        },
+        "Keuken": {
+          "the": "mutfak",
+          "in": "mutfakta",
+          "gen": "mutfağın",
+          "was": "mutfaktaydı",
+          "wasI": "mutfaktaydım",
+          "In": "Mutfakta",
+          "WasI": "Mutfaktaydım"
+        },
+        "Jachthaven": {
+          "the": "marina",
+          "in": "marinada",
+          "gen": "marinanın",
+          "was": "marinadaydı",
+          "wasI": "marinadaydım",
+          "In": "Marinada",
+          "WasI": "Marinadaydım"
+        },
+        "Garage": {
+          "the": "garaj",
+          "in": "garajda",
+          "gen": "garajın",
+          "was": "garajdaydı",
+          "wasI": "garajdaydım",
+          "In": "Garajda",
+          "WasI": "Garajdaydım"
+        },
+        "Salon": {
+          "the": "salon",
+          "in": "salonda",
+          "gen": "salonun",
+          "was": "salondaydı",
+          "wasI": "salondaydım",
+          "In": "Salonda",
+          "WasI": "Salondaydım"
+        }
       }
     },
     "furniture": {
@@ -6738,6 +7848,86 @@
         "bare": "opera dürbünü",
         "next": "bir opera dürbününün yanında",
         "with": "opera dürbünlü"
+      },
+      "canope": {
+        "a": "bir kanopik kavanoz",
+        "gen": "bir kanopik kavanozun",
+        "Gen": "Bir kanopik kavanozun",
+        "bare": "kanopik kavanoz",
+        "next": "bir kanopik kavanozun yanında",
+        "with": "kanopik kavanozlu"
+      },
+      "olielamp": {
+        "a": "bir kandil",
+        "gen": "bir kandilin",
+        "Gen": "Bir kandilin",
+        "bare": "kandil",
+        "next": "bir kandilin yanında",
+        "with": "kandilli"
+      },
+      "kameel": {
+        "a": "bir deve",
+        "gen": "bir devenin",
+        "Gen": "Bir devenin",
+        "bare": "deve",
+        "next": "bir devenin yanında",
+        "with": "develi"
+      },
+      "papyrus": {
+        "a": "bir papirüs tomarı",
+        "gen": "bir papirüs tomarının",
+        "Gen": "Bir papirüs tomarının",
+        "bare": "papirüs tomarı",
+        "next": "bir papirüs tomarının yanında",
+        "with": "papirüs tomarlı"
+      },
+      "zeef": {
+        "a": "bir elek",
+        "gen": "bir eleğin",
+        "Gen": "Bir eleğin",
+        "bare": "elek",
+        "next": "bir eleğin yanında",
+        "with": "elekli"
+      },
+      "roulette": {
+        "a": "bir rulet çarkı",
+        "gen": "bir rulet çarkının",
+        "Gen": "Bir rulet çarkının",
+        "bare": "rulet çarkı",
+        "next": "bir rulet çarkının yanında",
+        "with": "rulet çarklı"
+      },
+      "fiches": {
+        "a": "bir fiş yığını",
+        "gen": "bir fiş yığınının",
+        "Gen": "Bir fiş yığınının",
+        "bare": "fiş yığını",
+        "next": "bir fiş yığınının yanında",
+        "with": "fiş yığınlı"
+      },
+      "fruitautomaat": {
+        "a": "bir slot makinesi",
+        "gen": "bir slot makinesinin",
+        "Gen": "Bir slot makinesinin",
+        "bare": "slot makinesi",
+        "next": "bir slot makinesinin yanında",
+        "with": "slot makineli"
+      },
+      "champagnetoren": {
+        "a": "bir şampanya kulesi",
+        "gen": "bir şampanya kulesinin",
+        "Gen": "Bir şampanya kulesinin",
+        "bare": "şampanya kulesi",
+        "next": "bir şampanya kulesinin yanında",
+        "with": "şampanya kuleli"
+      },
+      "shaker": {
+        "a": "bir kokteyl karıştırıcısı",
+        "gen": "bir kokteyl karıştırıcısının",
+        "Gen": "Bir kokteyl karıştırıcısının",
+        "bare": "kokteyl karıştırıcısı",
+        "next": "bir kokteyl karıştırıcısının yanında",
+        "with": "kokteyl karıştırıcılı"
       }
     },
     "roomWords": {
@@ -6850,6 +8040,30 @@
         "wasThey": "alandaydılar"
       },
       "opera": {
+        "rw": "alan",
+        "rws": "alanlar",
+        "in": "alanda",
+        "gen": "alanın",
+        "acc": "alanı",
+        "dat": "alana",
+        "pluralIn": "alanlarda",
+        "was": "alandaydı",
+        "wasI": "alandaydım",
+        "wasThey": "alandaydılar"
+      },
+      "opgraving": {
+        "rw": "alan",
+        "rws": "alanlar",
+        "in": "alanda",
+        "gen": "alanın",
+        "acc": "alanı",
+        "dat": "alana",
+        "pluralIn": "alanlarda",
+        "was": "alandaydı",
+        "wasI": "alandaydım",
+        "wasThey": "alandaydılar"
+      },
+      "casino": {
         "rw": "alan",
         "rws": "alanlar",
         "in": "alanda",

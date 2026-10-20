@@ -1033,6 +1033,128 @@
           "Toneelmeester Hugo": "trưởng hậu đài Hugo",
           "Recensente Simone": "nhà phê bình Simone"
         }
+      },
+      "opgraving": {
+        "title": "Lăng mộ Nefer-Ankh",
+        "short": "Lăng mộ",
+        "victimName": "Huân tước Edmund Ashcombe",
+        "roomWord": "khu vực",
+        "roomWordPlural": "khu vực",
+        "tagline": "Luxor, 1922. Một cánh cửa niêm phong, một lời nguyền trên ngưỡng cửa, và một huân tước không qua khỏi bước chân đầu tiên.",
+        "intro": "Thung lũng các vị Vua, tháng 11 năm 1922. Sau sáu năm đào bới, đoàn khảo cổ tìm thấy một cánh cửa niêm phong. Huân tước Ashcombe là người đầu tiên bước vào. Ông không bao giờ trở ra nữa.",
+        "outro": "Lăng mộ đã đóng lại. Lời nguyền chưa từng có thật. Thủ phạm thì có.",
+        "rooms": {
+          "Grafkamer": "Hầm mộ",
+          "Voorkamer": "Tiền sảnh",
+          "Schatkamer": "Phòng kho báu",
+          "Gang": "Hành lang",
+          "Werktent": "Lều làm việc",
+          "Slaaptent": "Lều ngủ",
+          "Kampvuur": "Lửa trại",
+          "Donkere kamer": "Phòng tối",
+          "Keuken": "Nhà bếp",
+          "Voorraadkamer": "Kho dự trữ",
+          "Stal": "Chuồng lạc đà",
+          "Ziekenboeg": "Phòng y tế"
+        },
+        "furniture": {
+          "canope": "bình canopic",
+          "olielamp": "đèn dầu",
+          "kameel": "lạc đà",
+          "papyrus": "cuộn giấy cói",
+          "zeef": "cái sàng"
+        },
+        "suspects": {
+          "Professor Hartley": "Giáo sư Hartley",
+          "Lady Rosamund": "Quý bà Rosamund",
+          "Tekenares Maud": "Họa sĩ Maud",
+          "Opzichter Ahmed": "Đốc công Ahmed",
+          "Correspondente Ivy": "Phóng viên Ivy",
+          "Kameeldrijver Omar": "Người dắt lạc đà Omar",
+          "Egyptologe Edith": "Nhà Ai Cập học Edith",
+          "Verzamelaar Von Hagen": "Nhà sưu tầm Von Hagen"
+        },
+        "suspectShort": {
+          "Professor Hartley": "Hartley",
+          "Lady Rosamund": "Rosamund",
+          "Tekenares Maud": "Maud",
+          "Opzichter Ahmed": "Ahmed",
+          "Correspondente Ivy": "Ivy",
+          "Kameeldrijver Omar": "Omar",
+          "Egyptologe Edith": "Edith",
+          "Verzamelaar Von Hagen": "Von Hagen"
+        },
+        "suspectRef": {
+          "Professor Hartley": "giáo sư Hartley",
+          "Lady Rosamund": "quý bà Rosamund",
+          "Tekenares Maud": "họa sĩ Maud",
+          "Opzichter Ahmed": "đốc công Ahmed",
+          "Correspondente Ivy": "phóng viên Ivy",
+          "Kameeldrijver Omar": "người dắt lạc đà Omar",
+          "Egyptologe Edith": "nhà Ai Cập học Edith",
+          "Verzamelaar Von Hagen": "nhà sưu tầm Von Hagen"
+        }
+      },
+      "casino": {
+        "title": "Sòng bạc Azur",
+        "short": "Sòng bạc",
+        "victimName": "Chủ sòng bạc Lorenzo Vitali",
+        "roomWord": "khu vực",
+        "roomWordPlural": "khu vực",
+        "tagline": "Monte Carlo, cuối tuần Grand Prix năm 1960. Phỉnh, sâm panh, và một ông chủ thua canh bạc cuối cùng của mình.",
+        "intro": "Sòng bạc Azur, Monte Carlo, tháng 5 năm 1960. Đang là dịp cuối tuần Grand Prix và bàn nào cũng kín chỗ. Lúc nửa đêm, ông chủ Lorenzo Vitali nằm trong hầm két của chính mình, giữa những chồng phỉnh.",
+        "outro": "Các bàn đã vắng, phỉnh đã đếm xong. Nhà cái không phải lúc nào cũng thắng.",
+        "rooms": {
+          "Speelzaal": "Sảnh chơi bạc",
+          "Pokerkamer": "Phòng poker",
+          "Kluis": "Hầm két",
+          "Bar": "Quán bar",
+          "Terras": "Sân hiên",
+          "Garderobe": "Phòng gửi đồ",
+          "Directiekamer": "Phòng giám đốc",
+          "Balzaal": "Phòng dạ vũ",
+          "Keuken": "Nhà bếp",
+          "Jachthaven": "Bến du thuyền",
+          "Garage": "Nhà xe",
+          "Salon": "Phòng khách"
+        },
+        "furniture": {
+          "roulette": "vòng quay roulette",
+          "fiches": "chồng phỉnh",
+          "fruitautomaat": "máy đánh bạc",
+          "champagnetoren": "tháp ly sâm panh",
+          "shaker": "bình lắc cocktail"
+        },
+        "suspects": {
+          "Croupier Marcel": "Người chia bài Marcel",
+          "Zangeres Gigi": "Ca sĩ Gigi",
+          "Erfgename Delphine": "Nữ thừa kế Delphine",
+          "Coureur Rocco": "Tay đua Rocco",
+          "Bankier Sterling": "Chủ ngân hàng Sterling",
+          "Fotomodel Tess": "Người mẫu Tess",
+          "Gokker Jack": "Con bạc Jack",
+          "Huisdetective Nora": "Thám tử sòng bạc Nora"
+        },
+        "suspectShort": {
+          "Croupier Marcel": "Marcel",
+          "Zangeres Gigi": "Gigi",
+          "Erfgename Delphine": "Delphine",
+          "Coureur Rocco": "Rocco",
+          "Bankier Sterling": "Sterling",
+          "Fotomodel Tess": "Tess",
+          "Gokker Jack": "Jack",
+          "Huisdetective Nora": "Nora"
+        },
+        "suspectRef": {
+          "Croupier Marcel": "người chia bài Marcel",
+          "Zangeres Gigi": "ca sĩ Gigi",
+          "Erfgename Delphine": "nữ thừa kế Delphine",
+          "Coureur Rocco": "tay đua Rocco",
+          "Bankier Sterling": "chủ ngân hàng Sterling",
+          "Fotomodel Tess": "người mẫu Tess",
+          "Gokker Jack": "con bạc Jack",
+          "Huisdetective Nora": "thám tử sòng bạc Nora"
+        }
       }
     },
     "daily": [
@@ -1127,6 +1249,18 @@
         "Khúc aria không ai biết",
         "Sợi dây bị đứt",
         "Lần cúi chào cuối cùng của Colette"
+      ],
+      "opgraving": [
+        "Lời nguyền của Nefer-Ankh",
+        "Bức tượng nhỏ biến mất",
+        "Đêm bão cát",
+        "Thùng hàng cuối cùng về Cairo"
+      ],
+      "casino": [
+        "Hầm két của Vitali",
+        "Dồn hết vào số mười bảy",
+        "Vòng đua Monaco",
+        "Ván cuối cùng ở Azur"
       ]
     },
     "medals": {
@@ -1233,6 +1367,14 @@
       "opera": [
         "Hạ màn",
         "Hoàn thành mọi phần của Nhà hát Lumière"
+      ],
+      "opgraving": [
+        "Hóa giải lời nguyền",
+        "Hoàn thành mọi phần của Lăng mộ Nefer-Ankh"
+      ],
+      "casino": [
+        "Nhà cái thua cuộc",
+        "Hoàn thành mọi phần của Sòng bạc Azur"
       ]
     },
     "quests": {
@@ -5173,6 +5315,774 @@
           "🎟️ Tấm vé cuối cùng"
         ]
       ]
+    ],
+    "opgraving": [
+      "Phần I · Cánh cửa niêm phong",
+      "Thung lũng các vị Vua, tháng 11 năm 1922. Sau sáu năm đào bới, đoàn khảo cổ tìm thấy một cánh cửa niêm phong. Huân tước Ashcombe là người đầu tiên bước vào. Ông không bao giờ trở ra nữa.",
+      "Cánh cửa đã mở và huân tước đã chết. Lăng mộ vẫn còn những gian phòng khác.",
+      "Lăng mộ thì tối và hẹp, khu trại thì rộng và thoáng. Hãy bắt đầu với người nói rõ mình ở khu vực nào; “ngay cạnh” đèn dầu chỉ tính ô sát bên, không bao giờ tính ô chéo.",
+      [
+        [
+          "Cánh cửa niêm phong",
+          "Sáu năm toàn cát. Rồi một cánh cửa, và bớt đi một huân tước.",
+          "🔏 Dấu niêm phong lăng mộ"
+        ],
+        [
+          "Bước chân đầu tiên",
+          "Huân tước Ashcombe muốn là người đầu tiên bước vào. Có người đã để ông làm vậy.",
+          "🔦 Đèn pin"
+        ],
+        [
+          "Giáo sư Hartley đo đạc",
+          "Ông đo từng bậc thang. Có một bậc còn mới.",
+          "📏 Thước gấp"
+        ],
+        [
+          "Chiếc đèn dầu",
+          "Ngọn đèn ở hành lang vẫn còn cháy. Không ai mang dầu tới.",
+          "🪔 Đèn dầu"
+        ],
+        [
+          "Họa sĩ Maud ký họa",
+          "Trong bản vẽ của cô, cánh cửa đóng. Lúc mười giờ, nó đã mở.",
+          "✏️ Bút chì vẽ"
+        ],
+        [
+          "Nước từ Luxor",
+          "Người dắt lạc đà Omar mang tới tám túi nước. Chỉ bảy túi quay về.",
+          "💧 Túi nước"
+        ],
+        [
+          "Đêm trong khu trại",
+          "Ai cũng ngủ trong lều của mình. Gần như ai cũng vậy.",
+          "⛺ Cọc lều"
+        ],
+        [
+          "Sau nửa đêm",
+          "Lúc mười hai giờ, bầy chó rừng tru lên. Lúc một giờ, có người đang đào.",
+          "🌙 Trăng non"
+        ]
+      ]
+    ],
+    "opgraving-2": [
+      "Phần II · Lời nguyền",
+      "Trên ngưỡng cửa có những ký hiệu. Đốc công Ahmed đọc to: kẻ nào quấy rầy lăng mộ này sẽ phải chết. Cả khu trại đều tin.",
+      "Hóa ra lời nguyền là một bản dịch. Một bản dịch tồi, và cố ý.",
+      "Mê tín khiến nhân chứng hoang mang, nhưng sơ đồ thì không. Lời khai về hai người: hãy xác định vị trí của một trong hai người trước.",
+      [
+        [
+          "Ký hiệu trên ngưỡng cửa",
+          "Ba dòng chữ tượng hình. Bốn bản dịch.",
+          "👁️ Mắt Horus"
+        ],
+        [
+          "Thợ đào đình công",
+          "Một trăm thợ đào, một trăm cái xẻng. Không ai đào cả.",
+          "⛏️ Xẻng"
+        ],
+        [
+          "Nhà Ai Cập học Edith dịch",
+          "Bà thuộc lòng văn bản ấy. Thuộc quá kỹ.",
+          "📖 Từ điển"
+        ],
+        [
+          "Con mèo đen",
+          "Một con mèo đi vào lăng mộ. Nó trở ra, mang theo một thứ gì đó.",
+          "🐈‍⬛ Mèo đen"
+        ],
+        [
+          "Phóng viên Ivy gửi điện tín",
+          "Bài viết của cô về lời nguyền đã lên báo. Trước cả khi có lời nguyền.",
+          "📨 Điện tín"
+        ],
+        [
+          "Một con rắn trong lều",
+          "Trước giờ trong trại chưa từng có rắn. Cho đến đêm qua.",
+          "🐍 Da rắn"
+        ],
+        [
+          "Quý bà Rosamund muốn rời đi",
+          "Cô thu dọn vali. Có một chiếc cô bỏ quên.",
+          "👒 Mũ rơm"
+        ],
+        [
+          "Lời nguyền bị phá vỡ",
+          "Lời nguyền không giết được ai. Nhưng có người thì giết được.",
+          "🪬 Bùa hộ mệnh"
+        ]
+      ]
+    ],
+    "opgraving-3": [
+      "Phần III · Phòng kho báu",
+      "Phía sau hầm mộ có một cánh cửa thứ hai. Đằng sau đó: vàng chất cao tới trần. Một bức tượng nhỏ bằng vàng đã biến mất.",
+      "Danh sách đã đủ, không thiếu món nào. Bức tượng nhỏ đã trở về, tên trộm thì không còn được tự do.",
+      "Trong phòng kho báu, món đồ nào cũng đáng kể, lời khai nào cũng vậy. Người nói mình KHÔNG ở đâu cũng cho bạn biết điều gì đó: hãy gạch bỏ khu vực đó ngay.",
+      [
+        [
+          "Vàng chất tới trần",
+          "Hai trăm món trong danh sách. Một trăm chín mươi chín món trên kệ.",
+          "📋 Danh sách hiện vật"
+        ],
+        [
+          "Bức tượng nhỏ bằng vàng",
+          "Bức tượng chỉ to bằng bàn tay. Và cũng dễ mang đi như vậy.",
+          "✨ Tượng vàng nhỏ"
+        ],
+        [
+          "Nhà sưu tầm Von Hagen trả giá",
+          "Ông trả cả một gia tài. Cho một thứ còn chưa được tìm thấy.",
+          "🧾 Tấm séc"
+        ],
+        [
+          "Con bọ hung",
+          "Một con bọ hung bằng đá lapis. Nó nằm nhầm thùng.",
+          "🪲 Bọ hung"
+        ],
+        [
+          "Đốc công Ahmed điểm danh",
+          "Tối nào ông cũng đếm người. Tối nay thừa ra một người.",
+          "🧮 Bàn tính"
+        ],
+        [
+          "Tấm giáp ngực",
+          "Tấm giáp ngực bằng vàng nằm trên sàn. Hôm qua nó còn treo trên tường.",
+          "🛡️ Giáp ngực"
+        ],
+        [
+          "Dấu vân tay trong lớp bụi",
+          "Bụi của ba nghìn năm. Và một dấu vân tay còn mới.",
+          "🔍 Kính lúp"
+        ],
+        [
+          "Bệ tượng trống trơn",
+          "Trên bệ không còn gì nữa. Nhưng trên đó có cát, cát từ khu trại.",
+          "⏳ Đồng hồ cát"
+        ]
+      ]
+    ],
+    "opgraving-4": [
+      "Phần IV · Bão cát",
+      "Ba ngày bão cát. Lều trại bay phần phật, lăng mộ đóng kín, và không ai ra vào được khu trại.",
+      "Cơn bão đã lặng. Cát đã phủ kín mọi dấu vết, trừ một.",
+      "Trong bão, không ai nhìn xa quá một mét, nên hãy để ý ai đứng ngay cạnh ai. Hãy đặt nghi phạm có ít lựa chọn nhất trước; phần còn lại sẽ theo sau.",
+      [
+        [
+          "Cát lọt vào mọi thứ",
+          "Cát trong trà, cát trong lều, cát trong một câu chuyện không khớp.",
+          "🫖 Trà lẫn cát"
+        ],
+        [
+          "Lều làm việc",
+          "Lều làm việc bị gió cuốn bay. Những thứ bên trong thì không.",
+          "🧰 Hộp đồ nghề"
+        ],
+        [
+          "Người dắt lạc đà Omar đi tìm",
+          "Một con lạc đà bị lạc trong bão. Omar tìm lại được nó, kèm một túi yên căng đầy.",
+          "🐪 Lạc đà"
+        ],
+        [
+          "Phòng tối",
+          "Trong lúc bão, có người rửa ảnh. Một tấm kính ảnh đã biến mất.",
+          "🎞️ Kính ảnh"
+        ],
+        [
+          "Ánh đèn trong bão",
+          "Giữa cơn bão, có một ngọn đèn sáng gần lăng mộ.",
+          "🏮 Đèn bão"
+        ],
+        [
+          "Giáo sư Hartley viết nhật ký",
+          "Nhật ký của ông dừng ở thứ Ba. Sau đó là nét chữ của người khác.",
+          "📓 Nhật ký"
+        ],
+        [
+          "Phóng viên Ivy chờ đợi",
+          "Cô đã viết sẵn một bài. Về một chuyện còn chưa xảy ra.",
+          "⌨️ Máy đánh chữ"
+        ],
+        [
+          "Sau cơn bão",
+          "Mọi dấu vết đều đã mất. Trừ một.",
+          "👣 Dấu chân"
+        ]
+      ]
+    ],
+    "opgraving-5": [
+      "Phần V · Báo chí kéo đến",
+      "Phát hiện này đã thành tin tức khắp thế giới. Phóng viên từ London và Cairo đứng kín rìa khu trại, và ai cũng muốn có tấm ảnh đầu tiên.",
+      "Các tờ báo đã có ảnh của họ. Tấm ảnh thật thì chưa bao giờ được in.",
+      "Báo chí đã vào trại, và mỗi người đứng một nơi. Hãy bắt đầu với người nói không ai ở cùng khu vực với mình: mọi người khác bị loại khỏi khu vực đó ngay lập tức.",
+      [
+        [
+          "Tấm ảnh đầu tiên",
+          "Hai mươi nhiếp ảnh gia. Thừa một lần chớp đèn.",
+          "📸 Đèn chớp"
+        ],
+        [
+          "Tin độc quyền",
+          "Chỉ một tờ báo được vào trong. Một tờ báo khác lại biết trước.",
+          "🗞️ Báo sáng"
+        ],
+        [
+          "Phóng viên Ivy gọi điện",
+          "Đường dây đi Cairo bận suốt một giờ. Có người khác đang dùng.",
+          "☎️ Điện thoại"
+        ],
+        [
+          "Quý bà Rosamund tạo dáng",
+          "Cô có mặt trong mọi tấm ảnh. Trong một tấm, cô lại đứng ở chỗ khác.",
+          "🖼️ Ảnh trên báo"
+        ],
+        [
+          "Cuộc phỏng vấn",
+          "Giáo sư Hartley nói ba câu. Tờ báo in bốn câu.",
+          "🎙️ Micrô"
+        ],
+        [
+          "Người gác bị mua chuộc",
+          "Anh ta nhận một bảng Anh để làm ngơ. Anh ta vẫn cứ nhìn.",
+          "💷 Tờ một bảng Anh"
+        ],
+        [
+          "Họa sĩ Maud vẽ các nhà báo",
+          "Bản phác họa của cô có mười hai nhà báo. Thực tế chỉ có mười một.",
+          "🖍️ Phấn vẽ"
+        ],
+        [
+          "Tin trang nhất",
+          "Dòng tít thì đúng. Câu chuyện bên dưới thì không.",
+          "📰 Trang nhất"
+        ]
+      ]
+    ],
+    "opgraving-6": [
+      "Phần VI · Cỗ quan tài đá",
+      "Trong hầm mộ có một cỗ quan tài đá. Chiếc nắp nặng cả tấn. Khi nó được mở ra, bên dưới không chỉ có một bí mật.",
+      "Chiếc nắp đã về lại chỗ cũ. Nefer-Ankh được yên nghỉ, và bạn biết vì sao khu trại lại im lặng đến thế.",
+      "Lời khai ngày càng dè sẻn, còn lăng mộ thì ngày càng tối. Hãy dùng bút chì: gạch bỏ những ô không phù hợp, rồi xem còn lại gì.",
+      [
+        [
+          "Nắp quan tài",
+          "Mười người nâng chiếc nắp lên. Mười một người đã nhìn thấy.",
+          "🪨 Nắp đá"
+        ],
+        [
+          "Xác ướp",
+          "Trong quan tài là nữ hoàng. Và một mẩu giấy từ hôm qua.",
+          "📃 Mẩu giấy"
+        ],
+        [
+          "Nhà Ai Cập học Edith nhận ra",
+          "Bà nhận ra gương mặt trên nắp quan tài. Bà không nói đó là mặt của ai.",
+          "📐 Thước đo góc"
+        ],
+        [
+          "Những bình canopic",
+          "Bốn chiếc bình, bốn vị thần. Có một chiếc không chứa trái tim.",
+          "🏺 Bình canopic"
+        ],
+        [
+          "Đốc công Ahmed canh gác",
+          "Ông canh bên lăng mộ suốt đêm. Ông ngủ mất một giờ.",
+          "🕰️ Đồng hồ bỏ túi"
+        ],
+        [
+          "Cuộn giấy cói",
+          "Trong quan tài có một cuộn giấy cói. Giấy còn quá mới.",
+          "📜 Giấy cói"
+        ],
+        [
+          "Nhà sưu tầm Von Hagen muốn mua",
+          "Ông chỉ muốn cuộn giấy. Ông biết trên đó viết gì.",
+          "💼 Cặp tài liệu"
+        ],
+        [
+          "Điều nằm dưới nắp quan tài",
+          "Ba nghìn năm im lặng. Chỉ một tuần là đủ để phá vỡ nó.",
+          "🗝️ Chìa khóa đồng"
+        ]
+      ]
+    ],
+    "opgraving-7": [
+      "Phần VII · Xuôi dòng sông Nin",
+      "Các hiện vật được chở bằng thuyền xuôi sông Nin về Cairo. Mười hai thùng hàng trên boong, tám hành khách trên thuyền, và một thùng không bao giờ tới nơi.",
+      "Ở Cairo, người ta đếm các thùng hàng. Mười hai. Bạn biết vì sao lại là mười hai.",
+      "Bàn chơi lớn hơn, còn lời khai thì dè sẻn hơn. Nếu báo cáo nói một khu vực bỏ trống, thì cả khu vực đó bị loại đối với mọi người.",
+      [
+        [
+          "Mười hai thùng hàng",
+          "Mười hai thùng trên boong. Đến Asyut còn mười một.",
+          "📦 Thùng hiện vật"
+        ],
+        [
+          "Người dắt lạc đà Omar lên thuyền",
+          "Anh chưa từng đặt chân lên thuyền. Vậy mà anh biết đường xuống khoang hàng.",
+          "⚓ Mỏ neo"
+        ],
+        [
+          "Khoang hàng",
+          "Dưới khoang hàng nóng và tối. Có người đã để một ngọn đèn cháy ở đó.",
+          "🕯️ Đèn thuyền"
+        ],
+        [
+          "Quý bà Rosamund im lặng",
+          "Suốt chuyến đi, cô không nói chuyện với ai. Trừ một lần, vào giữa đêm.",
+          "🧣 Khăn choàng đi đường"
+        ],
+        [
+          "Dấu hải quan",
+          "Thùng nào cũng được đóng dấu. Một dấu vẫn còn ướt.",
+          "🛂 Dấu hải quan"
+        ],
+        [
+          "Giáo sư Hartley tính toán",
+          "Bảo hiểm trả tiền theo từng thùng. Ông đếm thừa một thùng.",
+          "🧾 Hợp đồng bảo hiểm"
+        ],
+        [
+          "Cá sấu",
+          "Giữa đêm, có thứ gì đó rơi xuống sông. Một thùng hàng không nặng đến thế.",
+          "🐊 Da cá sấu"
+        ],
+        [
+          "Cập bến Cairo",
+          "Trên bến Cairo có mười hai thùng hàng. Nhiều hơn số thùng trên thuyền đúng một thùng.",
+          "🏛️ Nhãn bảo tàng"
+        ]
+      ]
+    ],
+    "opgraving-8": [
+      "Phần VIII · Trở về với cát",
+      "Mùa khai quật đã kết thúc và lăng mộ sẽ đóng lại đến năm sau. Thêm một đêm cuối quanh lửa trại, vẫn những gương mặt như ngày đầu tiên.",
+      "Van Dam giũ cát khỏi mũ, chào cả khu trại rồi lên chuyến tàu đi Cairo. Lăng mộ Nefer-Ankh không còn bí mật nào nữa.",
+      "Những vụ án cuối cùng, gần như đều trên bàn chơi lớn. Đừng sa lầy vào người khó nhất: hãy đặt những người khác trước, khi đó người cuối cùng thường chỉ còn đúng một ô.",
+      [
+        [
+          "Đêm lửa trại cuối cùng",
+          "Mọi người ngồi quanh đống lửa. Một chỗ ngồi vẫn còn ấm, và bỏ trống.",
+          "🔥 Than hồng"
+        ],
+        [
+          "Cánh cửa khép lại",
+          "Họ lại xây gạch bịt kín cánh cửa. Sau những viên đá, mọi thứ im lặng. Gần như vậy.",
+          "🧱 Viên gạch"
+        ],
+        [
+          "Họa sĩ Maud đóng gói",
+          "Ba trăm bức vẽ trong một cặp. Có một bức lẽ ra không nằm trong đó.",
+          "🗂️ Cặp tranh"
+        ],
+        [
+          "Vòng tuần tra cuối cùng",
+          "Đốc công Ahmed đi tuần lần cuối. Ông trở về với một hòn đá trong tay.",
+          "🪨 Đá vôi"
+        ],
+        [
+          "Nhà Ai Cập học Edith ở lại",
+          "Mọi người đều rời đi. Bà ở lại thêm một ngày, một mình.",
+          "⛺ Chiếc lều cuối cùng"
+        ],
+        [
+          "Hóa đơn",
+          "Huân tước Ashcombe trả tiền cho mọi thứ. Sau khi ông chết, có người khác trả.",
+          "💰 Hòm tiền"
+        ],
+        [
+          "Con mắt của nữ hoàng",
+          "Trên nắp quan tài có hai con mắt được vẽ. Một trong hai đang nhìn về phía thủ phạm.",
+          "👁️ Con mắt vẽ"
+        ],
+        [
+          "Trở về với cát",
+          "Nơi mọi chuyện bắt đầu, bên cánh cửa niêm phong. Cũng là nơi mọi chuyện kết thúc.",
+          "🏜️ Cát sa mạc"
+        ]
+      ]
+    ],
+    "casino": [
+      "Phần I · Đêm trọng đại",
+      "Sòng bạc Azur, Monte Carlo, tháng 5 năm 1960. Đang là dịp cuối tuần Grand Prix và bàn nào cũng kín chỗ. Lúc nửa đêm, ông chủ Lorenzo Vitali nằm trong hầm két của chính mình, giữa những chồng phỉnh.",
+      "Các bàn đã đóng. Nhưng dịp cuối tuần vẫn còn dài.",
+      "Sòng bạc là một sảnh lớn với nhiều góc khuất. Hãy bắt đầu với người nói rõ mình ở khu vực nào; “ngay cạnh” máy đánh bạc chỉ tính ô sát bên, không bao giờ tính ô chéo.",
+      [
+        [
+          "Mời đặt cược",
+          "Ván đầu tiên của buổi tối. Ván cuối cùng của ông chủ.",
+          "🎲 Xúc xắc"
+        ],
+        [
+          "Hầm két mở toang",
+          "Hầm két đang mở. Nó chỉ mở được bằng hai chiếc chìa khóa.",
+          "🔐 Chìa khóa hầm két"
+        ],
+        [
+          "Người chia bài Marcel đứng bàn",
+          "Ông chia bài suốt buổi tối. Lúc nửa đêm, một người khác đứng ở bàn của ông.",
+          "🃏 Lá bài"
+        ],
+        [
+          "Tháp ly sâm panh",
+          "Một trăm chiếc ly xếp thành tháp. Thiếu một chiếc.",
+          "🥂 Ly sâm panh"
+        ],
+        [
+          "Ca sĩ Gigi hát",
+          "Bài hát cuối cùng của cô nói về một hầm két. Không ai cười.",
+          "🎤 Micrô"
+        ],
+        [
+          "Phỉnh cược",
+          "Đỏ, xanh lá, đen. Có một màu không hề có ở sòng bạc này.",
+          "🔴 Phỉnh giả"
+        ],
+        [
+          "Thám tử sòng bạc Nora quan sát",
+          "Cô để mắt tới mọi người chơi. Trừ một người.",
+          "🕵️‍♀️ Thẻ thám tử"
+        ],
+        [
+          "Nửa đêm ở Monaco",
+          "Đồng hồ điểm mười hai tiếng. Bên ngoài, tiếng động cơ đã im bặt.",
+          "🕛 Đồng hồ sòng bạc"
+        ]
+      ]
+    ],
+    "casino-2": [
+      "Phần II · Hầm két",
+      "Cảnh sát Monaco đóng cửa sòng bạc. Trong hầm két, mọi thứ vẫn nằm nguyên chỗ cũ. Không mất thứ gì, trừ ông chủ.",
+      "Hầm két đã đóng lại. Ngày mai vòng roulette lại quay như mọi ngày.",
+      "Ở đây ai cũng chơi hai lá bài cùng lúc. Lời khai về hai người: hãy xác định vị trí của một trong hai người trước.",
+      [
+        [
+          "Hai chiếc chìa khóa",
+          "Hầm két chỉ mở được bằng hai chiếc chìa khóa. Người ta chỉ tìm thấy một chiếc.",
+          "🗝️ Chìa khóa thứ hai"
+        ],
+        [
+          "Chủ ngân hàng Sterling tính toán",
+          "Ông biết chính xác trong hầm két có gì. Đến từng chiếc phỉnh cuối cùng.",
+          "🧮 Thước lôga"
+        ],
+        [
+          "Phòng gửi đồ",
+          "Bốn mươi tám chiếc áo khoác. Chỉ bốn mươi bảy chiếc được lấy về.",
+          "🧥 Áo khoác dạ tiệc"
+        ],
+        [
+          "Nữ thừa kế Delphine thua bạc",
+          "Tối nào cô cũng thua. Tối nay cô không thua gì cả.",
+          "💍 Nhẫn kim cương"
+        ],
+        [
+          "Khóa mật mã",
+          "Bốn chữ số. Ông chủ không nói cho ai biết. Gần như không ai.",
+          "🔢 Khóa mật mã"
+        ],
+        [
+          "Tay đua Rocco đến muộn",
+          "Anh bước vào lúc mười hai giờ rưỡi. Mũ bảo hiểm của anh vẫn còn ấm.",
+          "🪖 Mũ bảo hiểm đua"
+        ],
+        [
+          "Người gác đêm",
+          "Người gác đêm ngủ trong nhà xe. Ông nghe thấy tiếng động cơ.",
+          "🚨 Chuông báo động"
+        ],
+        [
+          "Hầm két đầy ắp",
+          "Mọi thứ vẫn còn đó. Thậm chí còn quá nhiều.",
+          "💵 Tiền giấy"
+        ]
+      ]
+    ],
+    "casino-3": [
+      "Phần III · Ngừng đặt cược",
+      "Sòng bạc mở cửa trở lại. Ở bàn số năm, viên bi cứ rơi vào cùng một con số, và có người biết vì sao.",
+      "Vòng quay đã được cân và chỉnh lại. Viên bi lại rơi vào nơi nó muốn.",
+      "Ở bàn roulette, ai cũng nhìn vòng quay, không ai nhìn ai. Người nói mình KHÔNG ở đâu cũng cho bạn biết điều gì đó: hãy gạch bỏ khu vực đó ngay.",
+      [
+        [
+          "Số mười bảy",
+          "Sáu lần liên tiếp ra số mười bảy. Người chia bài không ngẩng lên.",
+          "🎯 Bi roulette"
+        ],
+        [
+          "Con bạc Jack thắng",
+          "Anh ta dồn hết vào số mười bảy. Trước khi vòng quay bắt đầu.",
+          "🎩 Mũ phớt"
+        ],
+        [
+          "Vòng quay bị lệch",
+          "Vòng quay nghiêng một milimét. Đủ để kiếm cả một gia tài.",
+          "⚙️ Ổ bi"
+        ],
+        [
+          "Người mẫu Tess dõi theo",
+          "Cả buổi tối cô nhìn vòng quay. Hoặc nhìn người đàn ông bên cạnh nó.",
+          "🕶️ Kính râm"
+        ],
+        [
+          "Cục nam châm",
+          "Dưới bàn số năm có một cục nam châm. Có người đã dán nó vào đó từ hôm qua.",
+          "🧲 Nam châm"
+        ],
+        [
+          "Người chia bài Marcel bị đình chỉ",
+          "Ông bị cho về nhà. Ông lại đi ra bến du thuyền.",
+          "🪪 Thẻ nhân viên"
+        ],
+        [
+          "Tiền của nhà cái",
+          "Nhà cái thua một triệu chỉ trong một đêm. Chủ ngân hàng thì bật cười.",
+          "💸 Tiền cược mất trắng"
+        ],
+        [
+          "Ngừng đặt cược",
+          "Không nhận cược nữa. Trừ một khoản cược.",
+          "🎰 Phỉnh cuối cùng"
+        ]
+      ]
+    ],
+    "casino-4": [
+      "Phần IV · Giải Grand Prix",
+      "Chủ nhật là ngày đua Grand Prix. Động cơ gầm rú khắp các con phố Monte Carlo, và cả sòng bạc biến thành một khán đài lớn.",
+      "Cờ phất xuống và người thắng cuộc uống sâm panh. Trên khán đài, có một ghế trống.",
+      "Vào ngày đua, ai cũng đứng bên cửa sổ. Hãy đặt nghi phạm có ít lựa chọn nhất trước; phần còn lại sẽ theo sau.",
+      [
+        [
+          "Vạch xuất phát",
+          "Hai mươi chiếc xe trên vạch xuất phát. Mười chín chiếc quay về.",
+          "🏁 Cờ xuất phát"
+        ],
+        [
+          "Tay đua Rocco ở khu pit",
+          "Xe của anh đã sẵn sàng. Lốp xe thì chưa.",
+          "🛞 Bánh xe đua"
+        ],
+        [
+          "Khán đài",
+          "Ai cũng ngồi trên khán đài. Một ghế bỏ trống suốt cuộc đua.",
+          "🎟️ Vé khán đài"
+        ],
+        [
+          "Nhà xe",
+          "Trong nhà xe của sòng bạc có một chiếc xe đua. Nó không phải của Rocco.",
+          "🏎️ Xe đua"
+        ],
+        [
+          "Chủ ngân hàng Sterling đặt cược",
+          "Ông đặt cược vào người thua. Ông đã thắng.",
+          "📈 Phiếu cược"
+        ],
+        [
+          "Mùi xăng",
+          "Nhà xe nồng mùi xăng. Không còn chiếc xe nào ở đó.",
+          "⛽ Can xăng"
+        ],
+        [
+          "Người mẫu Tess lên ảnh",
+          "Cô chụp ảnh cùng người thắng cuộc. Ở phía sau: hầm két.",
+          "📷 Ảnh báo chí"
+        ],
+        [
+          "Vòng đua cuối cùng",
+          "Ở vòng cuối, có một động cơ tắt lịm. Không phải trên đường đua.",
+          "🏆 Cúp"
+        ]
+      ]
+    ],
+    "casino-5": [
+      "Phần V · Chiếc du thuyền",
+      "Nữ thừa kế mở tiệc trên du thuyền của mình, neo ngay trong cảng. Đèn lồng, nhạc jazz và sâm panh. Khi mặt trời mọc, một chiếc xuồng đã biến mất.",
+      "Chiếc xuồng đã về lại bến. Du thuyền ra khơi, thiếu đi một vị khách.",
+      "Trên du thuyền, chỗ thì chật và ai cũng đứng sát nhau. Hãy bắt đầu với người nói không ai ở cùng khu vực với mình: mọi người khác bị loại khỏi khu vực đó ngay lập tức.",
+      [
+        [
+          "Đèn lồng trên mặt nước",
+          "Một trăm chiếc đèn lồng. Một chiếc đã tắt.",
+          "🏮 Đèn lồng"
+        ],
+        [
+          "Nữ thừa kế Delphine mở tiệc",
+          "Cô mời tất cả mọi người. Trừ một người.",
+          "💌 Thiệp mời"
+        ],
+        [
+          "Chiếc xuồng",
+          "Lúc hai giờ, chiếc xuồng vẫn buộc vào du thuyền. Lúc ba giờ thì không còn nữa.",
+          "🛶 Xuồng"
+        ],
+        [
+          "Ca sĩ Gigi hát trên boong",
+          "Cô hát đến ba giờ. Bài hát cuối cùng của cô không ai nghe thấy.",
+          "🎷 Kèn saxophone"
+        ],
+        [
+          "Chiếc la bàn",
+          "La bàn chỉ sai hướng. Có người mang một cục nam châm trong túi.",
+          "🧭 La bàn"
+        ],
+        [
+          "Con bạc Jack đi bơi",
+          "Anh ta nói mình không biết bơi. Tóc anh ta lại ướt.",
+          "🏊 Khăn tắm ướt"
+        ],
+        [
+          "Bến cảng về đêm",
+          "Lúc bốn giờ, bến cảng im lặng. Trừ tiếng một động cơ.",
+          "⚓ Neo thuyền"
+        ],
+        [
+          "Lúc bình minh",
+          "Mặt trời mọc trên vịnh. Trên boong thiếu một vị khách.",
+          "🌅 Bình minh"
+        ]
+      ]
+    ],
+    "casino-6": [
+      "Phần VI · Ván bài gian lận",
+      "Trong phòng poker, cùng một người chơi thắng mọi ván. Các lá bài đã bị đánh dấu, và thám tử của sòng bạc muốn biết ai đã làm.",
+      "Những lá bài bị đánh dấu đã nằm trong hầm két. Người dùng chúng không còn ngồi ở bàn nữa.",
+      "Kẻ gian lận thích nói dối, nhưng sơ đồ thì không. Lời khai ngày càng dè sẻn: hãy gạch bỏ những gì không thể đúng, rồi xem còn lại gì.",
+      [
+        [
+          "Bàn số ba",
+          "Năm người chơi, một người chia bài. Một trong số họ biết mọi lá bài.",
+          "♠️ Át bích"
+        ],
+        [
+          "Vết đánh dấu",
+          "Mặt sau các lá bài có một chấm nhỏ. Chỉ đeo kính màu mới nhìn thấy.",
+          "👓 Kính màu"
+        ],
+        [
+          "Thám tử sòng bạc Nora thẩm vấn",
+          "Cô hỏi mỗi người một câu. Một người chơi đưa ra hai câu trả lời.",
+          "📝 Sổ thẩm vấn"
+        ],
+        [
+          "Tay áo",
+          "Có kẻ giấu một lá bài trong tay áo. Còn áo vest của hắn thì treo ở phòng gửi đồ.",
+          "👔 Áo sơ mi"
+        ],
+        [
+          "Chủ ngân hàng Sterling thua bạc",
+          "Lần đầu tiên sau mười năm, ông thua. Cố tình.",
+          "💳 Thư tín dụng"
+        ],
+        [
+          "Tấm gương sau quầy bar",
+          "Nhìn vào gương, có thể thấy bài của bàn số ba.",
+          "🪞 Gương quầy bar"
+        ],
+        [
+          "Tay đua Rocco chơi bài",
+          "Anh chơi bài như cách anh lái xe: quá nhanh, và không có phanh.",
+          "🎲 Cặp xúc xắc"
+        ],
+        [
+          "Bài bị đánh dấu",
+          "Mọi lá bài đều bị đánh dấu. Trừ một bộ.",
+          "🃏 Bộ bài đánh dấu"
+        ]
+      ]
+    ],
+    "casino-7": [
+      "Phần VII · Đêm dạ vũ",
+      "Buổi dạ vũ lớn nhất mùa diễn ra trong phòng dạ vũ. Bắt buộc mặc lễ phục, dàn nhạc chơi đến ba giờ, và một vị khách đeo găng tay suốt buổi tối.",
+      "Dàn nhạc thu dọn nhạc cụ và phòng dạ vũ đã vắng. Đôi găng tay nằm trong phòng gửi đồ.",
+      "Bàn chơi lớn hơn, còn lời khai thì dè sẻn hơn. Nếu báo cáo nói một khu vực bỏ trống, thì cả khu vực đó bị loại đối với mọi người.",
+      [
+        [
+          "Bắt buộc mặc lễ phục",
+          "Ai cũng mặc đồ đen. Một bộ lễ phục được thuê, dưới tên người khác.",
+          "🤵 Lễ phục"
+        ],
+        [
+          "Đôi găng tay",
+          "Cô ta đeo găng tay suốt buổi tối. Cả trong bữa ăn.",
+          "🧤 Găng tay dạ tiệc"
+        ],
+        [
+          "Ca sĩ Gigi và chủ ngân hàng",
+          "Họ nhảy với nhau một điệu. Sau đó ông ngồi một mình ở quầy bar.",
+          "🍸 Martini"
+        ],
+        [
+          "Dàn nhạc",
+          "Mười hai nhạc công, mười hai chiếc ghế. Một chiếc ghế nằm trong phòng gửi đồ.",
+          "🎺 Kèn trumpet"
+        ],
+        [
+          "Nữ thừa kế Delphine khiêu vũ",
+          "Cô nhảy với tất cả mọi người. Chiếc vòng tay của cô cũng nhảy theo, cho đến nửa đêm.",
+          "💠 Vòng tay"
+        ],
+        [
+          "Chiếc giày đánh rơi",
+          "Lúc ba giờ, có một chiếc giày nằm trên sàn nhảy. Chủ nhân của nó đã biến mất.",
+          "👠 Giày cao gót"
+        ],
+        [
+          "Pháo hoa",
+          "Nửa đêm, pháo hoa rực sáng trên vịnh. Một tiếng nổ phát ra từ bên trong.",
+          "🎆 Pháo hoa"
+        ],
+        [
+          "Điệu valse cuối cùng",
+          "Điệu valse cuối cùng kéo dài bốn phút. Đủ thời gian cho một việc.",
+          "🎻 Vĩ đàn"
+        ]
+      ]
+    ],
+    "casino-8": [
+      "Phần VIII · Ván cược cuối cùng",
+      "Sòng bạc sắp có chủ mới. Thêm một buổi tối dưới những chiếc đèn chùm cũ, vẫn những gương mặt như dịp cuối tuần Grand Prix.",
+      "Van Dam đặt chiếc phỉnh cuối cùng vào màu đỏ, để nguyên đó rồi bước vào màn đêm Monte Carlo. Nhà cái không phải lúc nào cũng thắng.",
+      "Những vụ án cuối cùng, gần như đều trên bàn chơi lớn. Đừng sa lầy vào người khó nhất: hãy đặt những người khác trước, khi đó người cuối cùng thường chỉ còn đúng một ô.",
+      [
+        [
+          "Ông chủ mới",
+          "Không ai biết ông chủ mới. Trừ một vị khách.",
+          "📝 Hợp đồng mua bán"
+        ],
+        [
+          "Người chia bài Marcel từ biệt",
+          "Ba mươi năm ở cùng một bàn. Tối nay ông nhìn về phía cửa.",
+          "🏅 Huy hiệu chia tay"
+        ],
+        [
+          "Chai sâm panh cuối cùng",
+          "Chai cuối cùng trong hầm rượu. Đã có người mở nó.",
+          "🍾 Chai cuối cùng"
+        ],
+        [
+          "Thám tử sòng bạc Nora khép hồ sơ",
+          "Cô ghi cái tên lại. Cô không gạch nó đi.",
+          "📁 Hồ sơ"
+        ],
+        [
+          "Tay đua Rocco rời đi",
+          "Xe của anh đã sẵn sàng. Chìa khóa lại nằm trong hầm két.",
+          "🔑 Chìa khóa xe"
+        ],
+        [
+          "Con bạc Jack tất tay",
+          "Tất cả vào một con số. Anh ta đã biết trước.",
+          "🪙 Đồng xu cuối cùng"
+        ],
+        [
+          "Đèn chùm vụt tắt",
+          "Lúc hai giờ, đèn tắt. Một ngọn nến vẫn cháy.",
+          "🕯️ Sáp nến"
+        ],
+        [
+          "Ván cược cuối cùng",
+          "Nơi mọi chuyện bắt đầu, trong hầm két. Cũng là nơi mọi chuyện kết thúc.",
+          "♦️ Át rô"
+        ]
+      ]
     ]
   },
 
@@ -5235,6 +6145,14 @@
         "rws": "khu vực"
       },
       "opera": {
+        "rw": "khu vực",
+        "rws": "khu vực"
+      },
+      "opgraving": {
+        "rw": "khu vực",
+        "rws": "khu vực"
+      },
+      "casino": {
         "rw": "khu vực",
         "rws": "khu vực"
       }
@@ -5389,6 +6307,36 @@
       },
       "toneelkijker": {
         "a": "một chiếc ống nhòm"
+      },
+      "canope": {
+        "a": "một chiếc bình canopic"
+      },
+      "olielamp": {
+        "a": "một chiếc đèn dầu"
+      },
+      "kameel": {
+        "a": "một con lạc đà"
+      },
+      "papyrus": {
+        "a": "một cuộn giấy cói"
+      },
+      "zeef": {
+        "a": "một cái sàng"
+      },
+      "roulette": {
+        "a": "một vòng quay roulette"
+      },
+      "fiches": {
+        "a": "một chồng phỉnh"
+      },
+      "fruitautomaat": {
+        "a": "một chiếc máy đánh bạc"
+      },
+      "champagnetoren": {
+        "a": "một tháp ly sâm panh"
+      },
+      "shaker": {
+        "a": "một chiếc bình lắc cocktail"
       }
     },
     "templates": {
@@ -5891,6 +6839,85 @@
         "Trappenhuis": {
           "the": "cầu thang",
           "in": "trên cầu thang"
+        }
+      },
+      "opgraving": {
+        "Grafkamer": {
+          "the": "hầm mộ"
+        },
+        "Voorkamer": {
+          "the": "tiền sảnh"
+        },
+        "Schatkamer": {
+          "the": "phòng kho báu"
+        },
+        "Gang": {
+          "the": "hành lang"
+        },
+        "Werktent": {
+          "the": "lều làm việc"
+        },
+        "Slaaptent": {
+          "the": "lều ngủ"
+        },
+        "Kampvuur": {
+          "the": "khu lửa trại",
+          "in": "bên lửa trại"
+        },
+        "Donkere kamer": {
+          "the": "phòng tối"
+        },
+        "Keuken": {
+          "the": "nhà bếp"
+        },
+        "Voorraadkamer": {
+          "the": "kho dự trữ"
+        },
+        "Stal": {
+          "the": "chuồng lạc đà"
+        },
+        "Ziekenboeg": {
+          "the": "phòng y tế"
+        }
+      },
+      "casino": {
+        "Speelzaal": {
+          "the": "sảnh chơi bạc"
+        },
+        "Pokerkamer": {
+          "the": "phòng poker"
+        },
+        "Kluis": {
+          "the": "hầm két"
+        },
+        "Bar": {
+          "the": "quán bar"
+        },
+        "Terras": {
+          "the": "sân hiên",
+          "in": "trên sân hiên"
+        },
+        "Garderobe": {
+          "the": "phòng gửi đồ"
+        },
+        "Directiekamer": {
+          "the": "phòng giám đốc"
+        },
+        "Balzaal": {
+          "the": "phòng dạ vũ"
+        },
+        "Keuken": {
+          "the": "nhà bếp"
+        },
+        "Jachthaven": {
+          "the": "bến du thuyền",
+          "in": "trên bến du thuyền"
+        },
+        "Garage": {
+          "the": "nhà xe"
+        },
+        "Salon": {
+          "the": "phòng khách"
         }
       }
     }

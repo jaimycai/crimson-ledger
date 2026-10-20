@@ -60,3 +60,13 @@ EOF
   `assets/portretten/{opgraving,casino}-<n>.webp`. 128 zaken in `docs/werelden/zaken.js` (seeds 121101+ en 131101+),
   `node docs/werelden/bewijs.js` bewijst ze alle 128. Volgende stap voor deze twee: inbouw en vertalingen, zoals bij 9-10.
 
+- 21 okt: wereld 11 en 12 ingebouwd zoals 9-10: `themes.js`, `campaign.js` (768 zaken), `avatars.js`, `style.css` (vloeren
+  `zandsteen`, `ruiten`), `mapart.js`, `progress.js`; Engels zelf geschreven, de 18 andere talen elk door een vertaalagent en een
+  nalezer (`bron-opgraving-casino.json`, inhoudsnotities N = 21 in de vertaalopdracht). De huisdetective Nora heet nergens zoals
+  de rang van de speler (bijvoorbeeld "Enquêtrice Nora", "Jefa de seguridad Nora"). Losse fix: Spaans circus en opera zeggen
+  nu "el despacho" (was "El director … en el despacho del director"). `npm test` volledig groen; Frans casino en Japans graf
+  in de browser bekeken.
+- 21 okt: wereld 13-16 (Filmstudio, Karavaan, Abdij, Vuurtoren): ontwerp in `ontwerp.js`, 32 portretten (48 credits, saldo
+  174,76) in `assets/portretten/`, vloeren en kaartachtergronden in `style.css`. 256 zaken in `docs/werelden/zaken-13-14.js` en
+  `zaken-15-16.js` (seeds 141101+ tot 171101+), alle 256 bewezen. Engels voor thema's en campagne staat klaar (nog buiten de app).
+  Volgende stap: inbouw en vertalingen, zoals bij 11-12.

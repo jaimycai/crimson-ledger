@@ -294,6 +294,64 @@ const THEMES = [
       { label: 'Recensente Simone',     gender: 'f', color: '#B85C5C', style: { hair: 1 } }
     ],
     outro: 'Het doek valt voor de laatste keer. Het applaus is voor jou.'
+  },
+  {
+    id: 'opgraving', unlock: 36, icon: '🏺', title: 'Het Graf van Nefer-Ankh', short: 'Opgraving',
+    map: { accent: '#1F4E79', ring: '#E3C27A' }, tagline: 'Luxor, 1922. Een verzegelde deur, een vloek op de drempel, en een lord die de eerste stap niet overleeft.',
+    intro: 'Vallei der Koningen, november 1922. Na zes jaar graven vindt de expeditie een verzegelde deur. Lord Ashcombe gaat als eerste naar binnen. Hij komt er niet meer uit.',
+    victimName: 'Lord Edmund Ashcombe', roomWord: 'ruimte', roomWordPlural: 'ruimtes', floor: 'zandsteen',
+    rooms: [
+      { name: 'Grafkamer', article: 'de', color: '#F2C46D' }, { name: 'Voorkamer', article: 'de', color: '#D9B48A' },
+      { name: 'Schatkamer', article: 'de', color: '#9FCBA8' }, { name: 'Gang', article: 'de', color: '#C9B79C' },
+      { name: 'Werktent', article: 'de', color: '#E8A798' }, { name: 'Slaaptent', article: 'de', color: '#B3A1D6' },
+      { name: 'Kampvuur', article: 'het', color: '#F3B57A' }, { name: 'Donkere kamer', article: 'de', color: '#93A9C9' },
+      { name: 'Keuken', article: 'de', color: '#9FC8C8' }, { name: 'Voorraadkamer', article: 'de', color: '#D0C9BD' },
+      { name: 'Stal', article: 'de', color: '#C7D9A0' }, { name: 'Ziekenboeg', article: 'de', color: '#8CC3DE' }
+    ],
+    furniture: [
+      { id: 'canope', nl: 'een canopenkruik' }, { id: 'olielamp', nl: 'een olielamp' }, { id: 'kameel', nl: 'een kameel' },
+      { id: 'papyrus', nl: 'een papyrusrol' }, { id: 'zeef', nl: 'een zeef' }
+    ],
+    suspects: [
+      { label: 'Professor Hartley',     gender: 'm', color: '#B85C5C', style: { hair: 3, moustache: true, glasses: true } },
+      { label: 'Lady Rosamund',         gender: 'f', color: '#5C8B5E', style: { hair: 1 } },
+      { label: 'Tekenares Maud',        gender: 'f', color: '#C2185B', style: { hair: 2 } },
+      { label: 'Opzichter Ahmed',       gender: 'm', color: '#B8955C', style: { hair: 0, beard: true } },
+      { label: 'Correspondente Ivy',    gender: 'f', color: '#8B5CB8', style: { hair: 4 } },
+      { label: 'Kameeldrijver Omar',    gender: 'm', color: '#5C7AB8', style: { hair: 0 } },
+      { label: 'Egyptologe Edith',      gender: 'f', color: '#2C3E50', style: { hair: 2, glasses: true } },
+      { label: 'Verzamelaar Von Hagen', gender: 'm', color: '#D9A441', style: { hair: 3, beard: true, hat: 'tophat' } }
+    ],
+    outro: 'Het graf is weer dicht. De vloek bestond niet. De dader wel.'
+  },
+  {
+    id: 'casino', unlock: 40, icon: '🎰', title: 'Casino Azur', short: 'Casino',
+    map: { accent: '#0F5E4A', ring: '#E8C77A' }, tagline: 'Monte Carlo, Grand Prix-weekend 1960. Fiches, champagne, en een eigenaar die zijn laatste gok verliest.',
+    intro: 'Casino Azur, Monte Carlo, mei 1960. Het is Grand Prix-weekend en alle tafels zijn vol. Om middernacht ligt eigenaar Lorenzo Vitali in zijn eigen kluis, tussen de stapels fiches.',
+    victimName: 'Eigenaar Lorenzo Vitali', roomWord: 'ruimte', roomWordPlural: 'ruimtes', floor: 'ruiten',
+    rooms: [
+      { name: 'Speelzaal', article: 'de', color: '#9FCBA8' }, { name: 'Pokerkamer', article: 'de', color: '#7FB3B0' },
+      { name: 'Kluis', article: 'de', color: '#C9B79C' }, { name: 'Bar', article: 'de', color: '#F2C46D' },
+      { name: 'Terras', article: 'het', color: '#8CC3DE' }, { name: 'Garderobe', article: 'de', color: '#D0C9BD' },
+      { name: 'Directiekamer', article: 'de', color: '#B3A1D6' }, { name: 'Balzaal', article: 'de', color: '#E7A9CF' },
+      { name: 'Keuken', article: 'de', color: '#C7D9A0' }, { name: 'Jachthaven', article: 'de', color: '#93A9C9' },
+      { name: 'Garage', article: 'de', color: '#D9B48A' }, { name: 'Salon', article: 'de', color: '#D9737F' }
+    ],
+    furniture: [
+      { id: 'roulette', nl: 'een roulettewiel' }, { id: 'fiches', nl: 'een stapel fiches' }, { id: 'fruitautomaat', nl: 'een fruitautomaat' },
+      { id: 'champagnetoren', nl: 'een champagnetoren' }, { id: 'shaker', nl: 'een cocktailshaker' }
+    ],
+    suspects: [
+      { label: 'Croupier Marcel',       gender: 'm', color: '#B85C5C', style: { hair: 0, moustache: true } },
+      { label: 'Zangeres Gigi',         gender: 'f', color: '#5C8B5E', style: { hair: 4 } },
+      { label: 'Erfgename Delphine',    gender: 'f', color: '#C2185B', style: { hair: 2 } },
+      { label: 'Coureur Rocco',         gender: 'm', color: '#B8955C', style: { hair: 4 } },
+      { label: 'Bankier Sterling',      gender: 'm', color: '#8B5CB8', style: { hair: 3 } },
+      { label: 'Fotomodel Tess',        gender: 'f', color: '#5C7AB8', style: { hair: 1 } },
+      { label: 'Gokker Jack',           gender: 'm', color: '#2C3E50', style: { hair: 3, hat: 'tophat' } },
+      { label: 'Huisdetective Nora',   gender: 'f', color: '#D9A441', style: { hair: 1, glasses: true } }
+    ],
+    outro: 'De tafels zijn leeg, de fiches geteld. Het huis wint niet altijd.'
   }
 ];
 
@@ -306,11 +364,16 @@ const TITLES = new Set(['dr.', 'majoor', 'tante', 'kok', 'bootsman', 'stuurman',
   'skilerares', 'bergredder', 'toeriste', 'fotograaf', 'jongen', 'berggids', 'gastheer',
   'doña', 'mariachi', 'kokkin', 'voorman', 'schilderes', 'neef', 'notaris', 'zuster', 'don',
   'diva', 'tenor', 'dirigent', 'kostumière', 'baron', 'toneelmeester', 'recensente', 'directeur',
+  'tekenares', 'opzichter', 'correspondente', 'kameeldrijver', 'egyptologe', 'verzamelaar',
+  'croupier', 'zangeres', 'erfgename', 'coureur', 'bankier', 'fotomodel', 'gokker', 'huisdetective', 'eigenaar',
   // Engels
   'major', 'aunt', 'lady', 'mr.', 'cook', 'boatswain', 'helmsman', 'miss', 'gunner', 'cabin', 'boy', 'countess', 'doorman', 'mrs', 'dancer', 'pilot', 'engineer',
   'cadet', 'officer', 'biologist', 'guide', 'restorer', 'night', 'guard', 'art', 'dealer', 'intern', 'cleaner', 'baroness', 'magician', 'chess', 'master',
   'nurse', 'traveller', 'actress', 'widow', 'trapeze', 'artist', 'lion', 'tamer', 'fortune', 'teller', 'strongman', 'ticket', 'seller', 'juggler', 'vet',
-  'ski', 'instructor', 'mountain', 'rescuer', 'tourist', 'photographer', 'young', 'host', 'chief']);
+  'ski', 'instructor', 'mountain', 'rescuer', 'tourist', 'photographer', 'young', 'host', 'chief',
+  'nephew', 'notary', 'sister', 'painter', 'foreman', 'conductor', 'seamstress', 'stage', 'manager', 'critic',
+  'correspondent', 'camel', 'driver', 'egyptologist', 'collector',
+  'singer', 'heiress', 'racing', 'banker', 'model', 'gambler', 'house', 'detective', 'owner', 'doctor', 'mrs.']);
 
 const PARTICLES = new Set(['von', 'van', 'de', 'der', 'den', 'du', 'la', 'le', 'di', 'da']);
 

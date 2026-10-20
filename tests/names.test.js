@@ -27,5 +27,12 @@ check(found.length === 0, 'geen oude namen meer: ' + found.join(', '));
 check(THEMES.every(t => t.suspects.every(s => s.gender === 'f' || s.gender === 'm')), 'elke verdachte heeft een geslacht');
 const clash = THEMES.filter(t => new Set(t.suspects.map(s => Themes.shortName(s.label)[0])).size !== t.suspects.length).map(t => t.id);
 check(clash.length === 0, 'binnen een wereld begint elke korte naam met een andere letter' + (clash.length ? ': ' + clash.join(', ') : ''));
+// English has no short-name list: the board strips the English title words in TITLES, so a new title word must be there
+// ("Nephew Tomás" showed "Nephew" on the board until 'nephew' was added)
+require('../i18n/en.js');
+const EN = globalThis.LANG_PACKS.en.data.themes;
+const enShort = THEMES.flatMap(t => t.suspects.map(s => [s.label, (EN[t.id] && EN[t.id].suspects || {})[s.label] || s.label]))
+  .filter(([nl, en]) => Themes.shortName(en) !== Themes.shortName(nl)).map(([nl, en]) => `${en} → ${Themes.shortName(en)}`);
+check(enShort.length === 0, 'Engelse korte naam is de voornaam, zoals in het Nederlands' + (enShort.length ? ': ' + enShort.join(', ') : ''));
 console.log(failures ? `${failures} FAILURES` : 'ALLE NAMEN CHECKS PASSED');
 process.exit(failures ? 1 : 0);
