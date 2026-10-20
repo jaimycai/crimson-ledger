@@ -34,3 +34,8 @@ Acht werelden = 512 zaken erbij, 1.024 in totaal.
 - Twee werelden tegelijk ontwerpen, zodat er niet acht keer dezelfde fout in zit (vakmanschap §1, één categorie tegelijk).
 - Winkeltekst: geen getal als haak ("1.024 zaken" alleen in de beschrijving), wel "elke dag een nieuwe zaak" en de werelden.
 EOF
+
+## Stand
+- 20 okt: ontwerpbladen Hacienda (wereld 9) en Opera (wereld 10) klaar in `docs/werelden/` (`ontwerp.js` met de gegevens,
+  `ontwerpblad.html` toont ze met een echt bord uit de motor, `blad-*.jpg` voor de telefoon). Nieuw: tien meubeliconen en twee
+  vloeren (`tegels`, `parket`). De motor maakt per wereld 48 van 48 zaken over alle vier niveaus. Wacht op Jaimy's ja.

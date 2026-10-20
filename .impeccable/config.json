@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "dark-glow",
+        "value": "*",
+        "files": [
+          "docs/werelden/ontwerpblad.html"
+        ],
+        "createdAt": "2026-10-20T18:16:56.290Z",
+        "reason": "Claude: the glow is --gold-light from the app's own style.css (DESIGN.md gold), loaded by the design sheet, not drawn by the sheet"
+      }
+    ]
+  }
+}
