@@ -42,4 +42,6 @@ EOF
 - 20 okt, later: Jaimy keurde beide werelden goed ("Opera mag iets aantrekkelijker": fluweelrood met goud, rijkere kamerkleuren,
   toneelkijker in plaats van lessenaar, nieuwe tagline). 128 zaken staan in `docs/werelden/zaken.js` (vorm van `CAMPAIGN`,
   seeds 101101+ en 111101+); `node docs/werelden/bewijs.js` bewijst ze alle 128. Ze gaan pas naar `campaign.js` en `themes.js`
-  samen met de vertalingen, zodat de tests groen blijven. Portretten: 1,5 credit per stuk, 24 voor 16 (saldo 270,76); wacht op ja.
+  samen met de vertalingen, zodat de tests groen blijven. Portretten: na Jaimy's ja gemaakt, 24 credits
+  (saldo nu 246,76); `assets/portretten/{hacienda,opera}-<n>.webp`, uitgesneden met `art/portretten/snij.py`.
+- Volgende stap: vertalingen (19 talen, woordvormen) en daarna `themes.js`, `campaign.js`, `avatars.js`, `style.css`, `mapart.js`.
