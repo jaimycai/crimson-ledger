@@ -312,6 +312,8 @@ const TITLES = new Set(['dr.', 'majoor', 'tante', 'kok', 'bootsman', 'stuurman',
   'nurse', 'traveller', 'actress', 'widow', 'trapeze', 'artist', 'lion', 'tamer', 'fortune', 'teller', 'strongman', 'ticket', 'seller', 'juggler', 'vet',
   'ski', 'instructor', 'mountain', 'rescuer', 'tourist', 'photographer', 'young', 'host', 'chief']);
 
+const PARTICLES = new Set(['von', 'van', 'de', 'der', 'den', 'du', 'la', 'le', 'di', 'da']);
+
 // Gegraveerd portret per verdachte, in de stijl van Van Dam (Higgsfield, bron in art/portretten/).
 THEMES.forEach(t => t.suspects.forEach((s, i) => { s.portrait = `assets/portretten/${t.id}-${i}.webp`; }));
 
@@ -326,6 +328,8 @@ const Themes = {
     if (this.SHORT[label]) return this.SHORT[label];
     const parts = String(label || '').trim().split(/\s+/);
     while (parts.length > 1 && TITLES.has(parts[0].toLowerCase())) parts.shift();   // "Sterke Man Boris" → "Boris"
+    // a name particle stays with the name: "Barones Von Stahl" → "Von Stahl", not "Von"
+    if (parts.length > 1 && PARTICLES.has(parts[0].toLowerCase())) return parts.join(' ');
     return parts[0] || '';
   },
   forDay: dayNumber => THEMES[((dayNumber % THEMES.length) + THEMES.length) % THEMES.length]

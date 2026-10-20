@@ -52,3 +52,8 @@ EOF
   23 talen, reviewscreenshot `store/screenshots/review-<wereld>.png`. De Crimson Pass hoeft niet te veranderen: de app geeft
   elke betaalde wereld vrij met de Pass. Ze gaan mee met de review van 1.4 (`node store/asc.js submit`).
   Nog te doen: wat-is-nieuw, winkeltekst en schermafbeeldingen bijwerken (aantallen werelden), en daarna wereld 11 tot en met 16.
+- 21 okt: ontwerpbladen wereld 11 "Het Graf van Nefer-Ankh" (Egypte 1922, lapis met goud, vloer `zandsteen`) en wereld 12
+  "Casino Azur" (Monte Carlo 1960, groen vilt met goud, vloer `ruiten`) in `docs/werelden/ontwerp.js`; het blad toont nu
+  alleen werelden die nog niet in de app staan (`?alle` toont alles). Motor: 48/48 per wereld. Wacht op Jaimy's ja.
+  Losse fix: korte naam houdt een voorvoegsel ("Barones Von Stahl" → "Von Stahl", stond als "Von" op het bord).
+

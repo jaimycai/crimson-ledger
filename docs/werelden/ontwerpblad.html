@@ -36,8 +36,8 @@
   .room span { min-width: 0; overflow-wrap: anywhere; hyphens: auto; }
   .room small { color: var(--text-light); font-size: 0.74rem; display: block; }
   .room.reuse small::after { content: ' · al vertaald'; }
-  .furn { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; }
-  .furn div { background: var(--bg-card); border: 1px solid var(--border-light); border-radius: 10px; padding: 10px 4px 8px; text-align: center; font-size: 0.78rem; }
+  .furn { display: grid; grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 8px; }
+  .furn div { background: var(--bg-card); border: 1px solid var(--border-light); border-radius: 10px; padding: 10px 4px 8px; text-align: center; font-size: 0.78rem; min-width: 0; }
   .furn svg { width: 46px; height: 46px; display: block; margin: 0 auto 4px; }
   .sus { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; }
   .card { background: var(--bg-card); border: 1px solid var(--border-light); border-radius: 10px; padding: 10px 10px 10px; }
@@ -83,22 +83,34 @@
   .board-grid[data-floor="parket"] .bcell.dark::before {
     background: repeating-linear-gradient(-45deg, rgba(60,30,10,0.09) 0 1px, transparent 1px 7px), rgba(60,30,10,0.04);
   }
+  .board-grid[data-floor="zandsteen"] .bcell::before {
+    background: linear-gradient(rgba(122, 82, 54, 0.22) 1px, transparent 1px) 0 0 / 100% 50%, linear-gradient(90deg, rgba(122, 82, 54, 0.18) 1px, transparent 1px) 0 0 / 50% 100%, rgba(255, 238, 205, 0.32);
+  }
+  .board-grid[data-floor="zandsteen"] .bcell.dark::before {
+    background: linear-gradient(rgba(122, 82, 54, 0.22) 1px, transparent 1px) 0 0 / 100% 50%, linear-gradient(90deg, rgba(122, 82, 54, 0.18) 1px, transparent 1px) 25% 0 / 50% 100%, rgba(122, 82, 54, 0.05);
+  }
+  .board-grid[data-floor="ruiten"] .bcell::before {
+    background: repeating-linear-gradient(45deg, rgba(201, 162, 39, 0.22) 0 1px, transparent 1px 9px), repeating-linear-gradient(-45deg, rgba(201, 162, 39, 0.22) 0 1px, transparent 1px 9px), rgba(255, 255, 255, 0.3);
+  }
+  .board-grid[data-floor="ruiten"] .bcell.dark::before {
+    background: repeating-linear-gradient(45deg, rgba(201, 162, 39, 0.22) 0 1px, transparent 1px 9px), repeating-linear-gradient(-45deg, rgba(201, 162, 39, 0.22) 0 1px, transparent 1px 9px), rgba(0, 0, 0, 0.04);
+  }
 </style>
 </head>
 <body>
 <main class="sheet">
   <p class="eyebrow">Crimson Ledger · ontwerpblad 1.4</p>
-  <h1>Twee nieuwe werelden</h1>
-  <p class="lead">Wereld 9 en 10 van de acht nieuwe. Kijk per wereld en zeg ja, of wat anders moet.</p>
+  <h1 id="kop">Nieuwe werelden</h1>
+  <p class="lead" id="lead">Kijk per wereld en zeg ja, of wat anders moet.</p>
   <nav class="jump" id="jump"></nav>
   <div id="worlds"></div>
   <section class="next">
     <h2 class="next-h">Na je ja</h2>
     <ol>
-      <li>Portretten: klaar (16 stuks, 24 credits).</li>
-      <li>De 64 zaken per wereld staan hierboven; elke seed bewijst <code>tests/campaign.test.js</code>.</li>
-      <li>Alle teksten in 19 talen, met de woordvormen voor kamers en meubels.</li>
-      <li>Kaart, winkelaankoop, schermafbeeldingen en wat-is-nieuw.</li>
+      <li>Acht portretten per wereld in de vaste gravurestijl: 1,5 credit per stuk, 24 credits voor twee werelden. Eerst jouw ja.</li>
+      <li>64 zaken per wereld: titel, verhaaltje, bewijsstuk en een seed die de motor bewijst.</li>
+      <li>Alle teksten in 19 talen: per taal een vertaler en een tweede lezer.</li>
+      <li>Kaart, aankoop in App Store Connect, schermafbeeldingen en wat-is-nieuw.</li>
     </ol>
   </section>
 </main>
@@ -116,13 +128,19 @@
   ONTWERP.forEach(w => w.furniture.forEach(f => { ICONS[f.id] = f.icon; }));
   const furnSvg = id => ICONS[id] ? `<svg viewBox="0 0 40 40" class="av av-furn" aria-hidden="true">${ICONS[id]}</svg>` : Avatars.furniture(id);
   // titles of the new worlds, until they are added to TITLES in themes.js
-  const NEW_TITLES = new Set(['doña', 'mariachi', 'kokkin', 'voorman', 'schilderes', 'neef', 'notaris', 'zuster',
-    'diva', 'tenor', 'dirigent', 'danseres', 'kostumière', 'baron', 'toneelmeester', 'recensente']);
-  const shortName = label => { const p = label.split(/\s+/); while (p.length > 1 && NEW_TITLES.has(p[0].toLowerCase())) p.shift(); return p[0]; };
+  const NEW_TITLES = new Set(['tekenares', 'opzichter', 'correspondente', 'kameeldrijver', 'egyptologe', 'verzamelaar',
+    'croupier', 'zangeres', 'erfgename', 'coureur', 'bankier', 'fotomodel', 'gokker', 'huisdetective']);
+  const shortName = label => { const p = label.split(/\s+/); while (p.length > 1 && NEW_TITLES.has(p[0].toLowerCase())) p.shift(); return Themes.shortName(p.join(' ')); };
+  const FLOORS = { tegels: 'terracotta tegels', parket: 'visgraatparket', zandsteen: 'zandstenen blokken', ruiten: 'art-deco ruiten' };
+  // a sheet shows the worlds that are not in the app yet; ?alle shows every sheet
+  const built = new Set(THEMES.map(t => t.id));
+  const shown = ONTWERP.filter(w => location.search.includes('alle') || !built.has(w.id));
+  document.getElementById('kop').textContent = shown.length === 2 ? 'Twee nieuwe werelden' : `${shown.length} werelden`;
+  document.getElementById('lead').textContent = `Wereld ${shown.map(w => w.nr).join(' en ')} van de acht nieuwe. Kijk per wereld en zeg ja, of wat anders moet.`;
   // room names that already exist in a released world are translated in all languages
   const known = new Set(THEMES.flatMap(t => t.rooms.map(r => r.name)));
   // a fixed seed per world, so the sheet always shows the same case
-  const SEEDS = { hacienda: 1952, opera: 1891 };
+  const SEEDS = { hacienda: 1952, opera: 1891, opgraving: 1912, casino: 1944 };
 
   const boardHtml = p => {
     const roomAt = (x, y) => FloorPlan.roomOf(p.rooms, x, y);
@@ -151,9 +169,10 @@
   };
 
   const worldsEl = document.getElementById('worlds');
-  document.getElementById('jump').innerHTML = ONTWERP.map(w => `<a href="#${w.id}">${w.icon} ${esc(w.short)}</a>`).join('');
-  ONTWERP.forEach(w => {
-    const theme = { ...w, suspects: w.suspects.map((s, i) => ({ ...s, style: { hair: i % 5 }, portrait: `../../assets/portretten/${w.id}-${i}.webp` })) };
+  document.getElementById('jump').innerHTML = shown.map(w => `<a href="#${w.id}">${w.icon} ${esc(w.short)}</a>`).join('');
+  shown.forEach(w => {
+    const isBuilt = built.has(w.id), chapters = CAMPAIGN.filter(ch => ch.theme === w.id);
+    const theme = { ...w, suspects: w.suspects.map((s, i) => ({ ...s, style: { hair: i % 5 }, portrait: isBuilt ? `../../assets/portretten/${w.id}-${i}.webp` : undefined })) };
     const p = FloorPlan.generate(SEEDS[w.id], 'gemiddeld', theme);
     const sec = document.createElement('section');
     sec.className = 'world'; sec.id = w.id;
@@ -169,7 +188,7 @@
         <div class="victim">${Avatars.victim()}<span>Slachtoffer: <b>${esc(w.victimName)}</b></span></div></div>
       <h3>Zo ziet een zaak eruit</h3>
       <div class="boardwrap"><div class="board-grid" data-floor="${w.floor}" style="--cols:${p.cols};--rows:${p.rows}">${boardHtml(p)}</div>
-        <p class="cap">Echt bord uit de motor, gemiddeld, met de oplossing ingevuld. Vloer: ${w.floor === 'tegels' ? 'terracotta tegels' : 'visgraatparket'} (nieuw).</p></div>
+        <p class="cap">Echt bord uit de motor, gemiddeld, met de oplossing ingevuld. Vloer: ${FLOORS[w.floor] || w.floor} (nieuw).</p></div>
       <h3>Twaalf ruimtes</h3>
       <div class="rooms">${w.rooms.map(r => `<div class="room${known.has(r.name) ? ' reuse' : ''}"><i style="background:${r.color}"></i><span>${esc(r.name)}<small>${r.article} ${esc(r.name.toLowerCase())}</small></span></div>`).join('')}</div>
       <h3>Vijf meubels</h3>
@@ -179,11 +198,11 @@
         <div class="top"><span class="ava">${Avatars.suspect(s, i)}</span><span><b>${esc(s.label)}</b><span class="short">${esc(shortName(s.label))} · ${s.gender === 'f' ? 'v' : 'm'}</span></span></div>
         <p class="who">${esc(s.who)}</p>
         <details><summary>Portretopdracht</summary><p>${esc(s.look)}</p></details></div>`).join('')}</div>
-      <div class="style-ref"><img src="../../art/portretten/vandam-zonder-tekst.png" alt=""><p>Gravures in de vaste stijl, met het portret van Van Dam als enige stijlreferentie. Gemaakt op 20 oktober voor 24 credits.</p></div>
-      <h3>Acht delen, 64 zaken</h3>
-      <ol class="parts">${CAMPAIGN.filter(ch => ch.theme === w.id).map(ch => `<li><b>${esc(ch.title.replace(/^Deel [IVX]+ · /, ''))}</b><span>${esc(ch.intro)}</span>
+      <div class="style-ref"><img src="../../art/portretten/vandam-zonder-tekst.png" alt=""><p>${isBuilt ? 'Gravures in de vaste stijl, met het portret van Van Dam als enige stijlreferentie.' : 'De gezichtjes hierboven zijn tijdelijk. Elk portret wordt een gravure in deze stijl, zoals Van Dam en de andere werelden.'}</p></div>
+      <h3>${chapters.length ? 'Acht delen, 64 zaken' : 'Acht delen'}</h3>
+      <ol class="parts">${chapters.length ? chapters.map(ch => `<li><b>${esc(ch.title.replace(/^Deel [IVX]+ · /, ''))}</b><span>${esc(ch.intro)}</span>
         <ul class="cases">${ch.cases.map(c => { const [icon, ...name] = c.item.split(' '); return `<li><span class="it" title="${esc(name.join(' '))}">${icon}</span><span class="ct">${esc(c.title)}<small class="${c.difficulty}">${c.difficulty}</small></span><span class="cs">${esc(c.story)}</span></li>`; }).join('')}</ul>
-        <p class="brief">Van Dam: ${esc(ch.briefing)}</p></li>`).join('')}</ol>
+        <p class="brief">Van Dam: ${esc(ch.briefing)}</p></li>`).join('') : w.parts.map(([t, s]) => `<li><b>${esc(t)}</b><span>${esc(s)}</span></li>`).join('')}</ol>
       <p class="outro">${esc(w.outro)}</p>`;
     worldsEl.appendChild(sec);
   });
