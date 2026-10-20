@@ -205,3 +205,7 @@ eerste publicatie op zijn vroegst 6 oktober.
   Winkel: niet gemeten (App Store Connect vraagt opnieuw inloggen). Spelers 7 dagen: 63 nieuw, terug dag 1 25%, dag 7 5%; oefenzaak 70%,
   zaak 1 48%, zaak 5 32%, zaak 10 14%; 35 keer om een beoordeling gevraagd; beoordelingen: 0 in VS, ES, MX, BR, IT, 1 in FR.
   In-App Event "Zaak van de week" goedgekeurd (start 26 okt).
+- 20 okt 19:20: NL naar 2 per dag (Jaimy). Buffer NL: `week2c/12` t/m `17` om 12:30 op 21 t/m 26 okt, naast 19:00 (21-22 okt Metricool, 23-26 okt
+  Buffer). Wachtrij NL nu 10. Winkel (App Store Connect, 13 t/m 19 okt): 64 eerste downloads (SA 12, VS 12, NL 10, FR 8, CO 5, IT 3, MX 3, ES 2),
+  4.830 vertoningen, 288 paginaweergaven, conversie 2,24%. Benchmark Puzzle (21-27 sep): onze conversie 4,17% boven het 75e percentiel (2,92%).
+  Retentie in App Store Connect: te weinig opt-in-gegevens; eigen meting blijft de bron.

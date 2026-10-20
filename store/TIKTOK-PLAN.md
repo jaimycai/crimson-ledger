@@ -290,3 +290,25 @@ meting gevonden. Wat er is, komt van verkopers van VPN's of accounts. Die zeggen
 en dat een gedeelde VPN-IP juist tot minder bereik of een shadowban kan leiden. Besluit: geen VPN. Buffer plaatst de posts vanaf
 zijn eigen servers, dus een VPN op de laptop verandert niets aan het plaatsen. Na 48 uur in TikTok Studio › Analytics › Kijkers
 kijken uit welke landen de kijkers van EN en ES komen; pas daarna beslissen.
+
+## 15. Wat in de niche views haalt, en wat wij doen (20 oktober 2026)
+
+Onderzoek 20 okt: 289 TikTok-posts uit 29 nichepagina's (murdoku, enigmic, murdle, detective riddles, acertijos), cijfers van de
+post zelf (sterk). Geen enkele van de 289 toppers was een carrousel; allemaal video, ~80% met ingesproken stem, mediaan ~75 s.
+Onze carrousels: gemiddelde kijktijd 4,0 s, 3,4% kijkt alles (es/01). De views gaan naar makers die het spel spelen, niet naar
+de accounts van de spellen zelf; volgers maken weinig uit (@cozymarjolein, 2.850 volgers: 603K views op "Laten we samen Murdoku
+puzzel 30 oplossen").
+
+Drie formaten, op volgorde:
+- **A. Los met mij op** (60-120 s): plattegrond in beeld, stem leest elke verklaring, verdachte valt op zijn plek, de plattegrond
+  wijst de dader aan, "zoek Crimson Ledger". Sjabloon `studio/meelossen.html` (NL, EN, ES); storyboards in
+  `motion/c3-0*/bord-meelossen.html`, wachten op Jaimy's pins (vakmanschap: eerst storyboard).
+- **B. Raadsel met klok** (45-65 s): `studio/raadsel.html`, storyboard sinds 10 okt, wacht op pins.
+- **C. Acht seconden "wie was het?"**, antwoord pas in de volgende post: later.
+
+Tot de video's klaar zijn, lopen de carrousels door (NL 2 per dag sinds 21 okt, EN en ES 3 per dag). Daarna vervangt video de
+carrousel slot voor slot, zodat het verschil per account meetbaar blijft.
+
+Bio-link: een klikbare link onder 1.000 volgers kan alleen met een geverifieerd Business-account (KvK nodig). Business heeft alleen
+de Commercial Music Library; voor A en B maakt dat weinig uit (eigen stem en eigen muziek). Besluit aan Jaimy.
+Bronnen en de volledige lijst met posts: `social/onderzoek-2026-10-20.md`.

@@ -9,7 +9,9 @@ const fs = require('fs'), path = require('path');
   const arg = process.argv[2] || 'raadsel.html?zaak=c3-0';
   const [file, query = ''] = arg.split('?');
   const zaak = new URLSearchParams(query).get('zaak') || 'c3-0';
-  const out = path.join(__dirname, '..', 'motion', zaak); fs.mkdirSync(path.join(out, 'bord'), { recursive: true });
+  // one board per template: raadsel.html keeps bord.html, any other template gets bord-<name>.html
+  const base = path.basename(file, '.html'), dirName = base === 'raadsel' ? 'bord' : `bord-${base}`;
+  const out = path.join(__dirname, '..', 'motion', zaak); fs.mkdirSync(path.join(out, dirName), { recursive: true });
   const url = t => `file://${path.join(__dirname, file)}?${query}&t=${t}`;
   const browser = await puppeteer.launch({ headless: true, executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome', args: ['--allow-file-access-from-files'] });
   const page = await browser.newPage();
@@ -20,13 +22,13 @@ const fs = require('fs'), path = require('path');
   for (const [i, s] of comp.scenes.entries()) {
     await page.goto(url(s.still), { waitUntil: 'networkidle0' });
     await page.evaluate(() => document.fonts.ready);
-    const name = `bord/${String(i + 1).padStart(2, '0')}.jpg`;
+    const name = `${dirName}/${String(i + 1).padStart(2, '0')}.jpg`;
     await page.screenshot({ path: path.join(out, name), type: 'jpeg', quality: 86 });
     shots.push({ nr: i + 1, img: name, ...s });
   }
   await browser.close();
   const tpl = fs.readFileSync(path.join(__dirname, 'bord-sjabloon.html'), 'utf8');
   const html = tpl.replace('/*BORD*/null', JSON.stringify({ zaak, bron: arg, duur: comp.duration, gemaakt: new Date().toISOString(), shots }));
-  fs.writeFileSync(path.join(out, 'bord.html'), html);
-  console.log(`${shots.length} shots -> ${path.join(out, 'bord.html')}`);
+  fs.writeFileSync(path.join(out, dirName + '.html'), html);
+  console.log(`${shots.length} shots -> ${path.join(out, dirName + '.html')}`);
 })();

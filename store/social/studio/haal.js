@@ -2,24 +2,26 @@
 // sharp PNG, where each room and cell sits on it, the suspects with their own SVG portraits, the victim,
 // the statements and the answer. Needs the app on http://localhost:8093 (preview "crimson-www").
 //   node store/social/studio/haal.js 3:0        -> store/social/motion/c3-0/{plan.png,zaak.json,zaak.js}
+//   LANG_CAPTURE=en node store/social/studio/haal.js 3:0   -> store/social/motion/c3-0-en/ (app language en)
 const puppeteer = require('puppeteer-core');
 const fs = require('fs'), path = require('path');
 const wait = ms => new Promise(r => setTimeout(r, ms));
+const LANG = process.env.LANG_CAPTURE || 'nl';
 (async () => {
   const browser = await puppeteer.launch({ headless: true, executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' });
   for (const arg of process.argv.slice(2)) {
     const [ch, idx] = arg.includes(':') ? arg.split(':').map(Number) : [0, Number(arg)];
-    const cid = ch ? `c${ch}-${idx}` : String(idx);
+    const cid = (ch ? `c${ch}-${idx}` : String(idx)) + (LANG === 'nl' ? '' : '-' + LANG);
     const dir = path.join(__dirname, '..', 'motion', cid); fs.mkdirSync(dir, { recursive: true });
     const page = await browser.newPage();
     await page.setViewport({ width: 360, height: 640, deviceScaleFactor: 4, isMobile: true, hasTouch: true });
-    await page.evaluateOnNewDocument(() => {
-      localStorage.setItem('crimson-lang', 'nl'); localStorage.setItem('crimson-meting', '0');
+    await page.evaluateOnNewDocument((lang) => {
+      localStorage.setItem('crimson-lang', lang); localStorage.setItem('crimson-meting', '0');
       localStorage.setItem('crimson-board-tutorial-done', '1'); localStorage.setItem('crimson-board-tip-seen', '1');
       localStorage.setItem('crimson-store-mock', '1');
       localStorage.setItem('crimson-newclue-seen', JSON.stringify(['room', 'not-room', 'room-pos', 'near', 'row', 'col', 'same-room', 'not-same-room', 'left-of', 'above', 'furniture', 'alone', 'corner', 'wall', 'middle', 'next-to']));
       const camp = {}; for (let i = 0; i < 48; i++) camp['landhuis-' + i] = 3; localStorage.setItem('crimson-campaign', JSON.stringify(camp));
-    });
+    }, LANG);
     await page.goto('http://localhost:8093/index.html', { waitUntil: 'networkidle0' });
     await page.addStyleTag({ content: '#toast, #medal-toast, .toast { display: none !important }' });
     await wait(900);
@@ -44,6 +46,8 @@ const wait = ms => new Promise(r => setTimeout(r, ms));
         statements: p.clues.map(c => { const st = FloorPlan.statement(c, p); return { whoIdx: st.who.length ? st.who[0] : -1, text: st.text }; }),
       };
     });
+    // portraits are photos with a path relative to the app; point them at www/ so the studio pages (store/social/studio/) find them
+    data.suspects.forEach(s => { s.svg = s.svg.replace(/src="assets\//g, 'src="../../../www/assets/'); });
     fs.writeFileSync(path.join(dir, 'zaak.json'), JSON.stringify(data, null, 1));
     fs.writeFileSync(path.join(dir, 'zaak.js'), 'window.ZAAK = ' + JSON.stringify(data) + ';\n'); // file:// pages cannot fetch json
     console.log(cid, data.title, '|', data.suspects.length, 'verdachten |', data.statements.length, 'verklaringen | dader:', data.suspects[data.murderer].label);
