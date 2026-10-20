@@ -1,7 +1,8 @@
 // Design sheets for the new worlds of 1.4 (PLAN-1.4.md). Same shape as a world in themes.js, plus what the sheet needs:
 // a portrait description per suspect (for art/portretten/prompts.js) and the eight parts with a one-line intro.
 // Shown by ontwerpblad.html (worlds that are not in themes.js yet; ?alle shows every sheet). After Jaimy's yes this
-// becomes the themes.js entry, the portrait prompts and the campaign parts. nr is the world's place on the map.
+// becomes the themes.js entry, the portrait prompts and the campaign parts. nr is the world's place on the map;
+// portraits: true once assets/portretten/<world>-<n>.webp exist. Cases of approved worlds wait in zaken.js.
 // Room names that already exist in another world (Keuken, Kelder, Bibliotheek, Wasruimte) are reused on purpose:
 // they are translated in all 19 languages with every word form.
 // Room colours: twelve distinct hues per world (at most two beige), so neighbouring rooms stay apart on the board.
@@ -123,7 +124,7 @@ window.ONTWERP = [
     outro: 'Het doek valt voor de laatste keer. Het applaus is voor jou.'
   },
   {
-    id: 'opgraving', nr: 11, unlock: 36, icon: '🏺', title: 'Het Graf van Nefer-Ankh', short: 'Opgraving',
+    id: 'opgraving', nr: 11, unlock: 36, portraits: true, icon: '🏺', title: 'Het Graf van Nefer-Ankh', short: 'Opgraving',
     era: 'an archaeological dig in the Valley of the Kings, Egypt, in 1922',
     map: { accent: '#1F4E79', ring: '#E3C27A' },
     tagline: 'Luxor, 1922. Een verzegelde deur, een vloek op de drempel, en een lord die de eerste stap niet overleeft.',
@@ -180,7 +181,7 @@ window.ONTWERP = [
     outro: 'Het graf is weer dicht. De vloek bestond niet. De dader wel.'
   },
   {
-    id: 'casino', nr: 12, unlock: 40, icon: '🎰', title: 'Casino Azur', short: 'Casino',
+    id: 'casino', nr: 12, unlock: 40, portraits: true, icon: '🎰', title: 'Casino Azur', short: 'Casino',
     era: 'a luxurious casino in Monte Carlo on Grand Prix weekend in 1960',
     map: { accent: '#0F5E4A', ring: '#E8C77A' },
     tagline: 'Monte Carlo, Grand Prix-weekend 1960. Fiches, champagne, en een eigenaar die zijn laatste gok verliest.',

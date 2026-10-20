@@ -56,4 +56,7 @@ EOF
   "Casino Azur" (Monte Carlo 1960, groen vilt met goud, vloer `ruiten`) in `docs/werelden/ontwerp.js`; het blad toont nu
   alleen werelden die nog niet in de app staan (`?alle` toont alles). Motor: 48/48 per wereld. Wacht op Jaimy's ja.
   Losse fix: korte naam houdt een voorvoegsel ("Barones Von Stahl" → "Von Stahl", stond als "Von" op het bord).
+- 21 okt: Jaimy keurde wereld 11 en 12 goed. 16 portretten gemaakt (24 credits, saldo 222,76), uitgesneden naar
+  `assets/portretten/{opgraving,casino}-<n>.webp`. 128 zaken in `docs/werelden/zaken.js` (seeds 121101+ en 131101+),
+  `node docs/werelden/bewijs.js` bewijst ze alle 128. Volgende stap voor deze twee: inbouw en vertalingen, zoals bij 9-10.
 

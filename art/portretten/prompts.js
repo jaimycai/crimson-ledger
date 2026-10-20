@@ -17,7 +17,9 @@ const ERA = {
   circus: 'a travelling circus in the 1920s',
   skihut: 'a mountain hut in the Alps in winter',
   hacienda: 'a tequila hacienda in Jalisco, Mexico, in 1952',
-  opera: 'a grand opera house in Paris on a premiere night in 1891'
+  opera: 'a grand opera house in Paris on a premiere night in 1891',
+  opgraving: 'an archaeological dig in the Valley of the Kings, Egypt, in 1922',
+  casino: 'a luxurious casino in Monte Carlo on Grand Prix weekend in 1960'
 };
 
 const PEOPLE = {
@@ -120,6 +122,26 @@ const PEOPLE = {
     'Baron Viktor': 'a wealthy baron in his fifties, monocle, mutton-chop whiskers, opera cape over evening dress, silver-topped cane',
     'Toneelmeester Hugo': 'a burly stagehand chief in his forties, flat cap, rolled shirtsleeves, braces, coil of rope on his shoulder, short beard',
     'Recensente Simone': 'an elegant critic in her thirties, short dark hair under a small feathered hat, high-collared jacket, notebook and pencil, raised eyebrow'
+  },
+  opgraving: {
+    'Professor Hartley': 'a stern archaeologist in his fifties, pith helmet, round spectacles, grey moustache, khaki field jacket with many pockets',
+    'Lady Rosamund': 'an English aristocrat in her twenties, cloche hat with a sun veil, pearl necklace, linen travelling dress, parasol over her shoulder',
+    'Tekenares Maud': 'an expedition artist in her thirties, short practical bob, sleeves rolled up, pencil behind her ear, sketchbook in hand',
+    'Opzichter Ahmed': 'an Egyptian dig foreman in his forties, white turban, neat beard, striped galabiya, calm authoritative look',
+    'Correspondente Ivy': 'an American newspaper correspondent in her thirties, short wavy hair under a beret, trench coat, notebook and camera strap',
+    'Kameeldrijver Omar': 'a young camel driver in his twenties, keffiyeh head scarf, bright smile, rope and a leather water bag over his shoulder',
+    'Egyptologe Clara': 'a rival Egyptologist in her forties, tightly pinned hair, wire spectacles, high-collared blouse, magnifying glass on a chain',
+    'Verzamelaar Von Hagen': 'a German antiquities collector in his sixties, white linen suit, panama hat, monocle, silver-headed walking stick'
+  },
+  casino: {
+    'Croupier Marcel': 'a precise croupier in his forties, slicked-back hair, thin moustache, white dinner jacket with black bow tie, rake in hand',
+    'Zangeres Gigi': 'a glamorous nightclub singer in her twenties, platinum bouffant hair, sparkling evening gown, long gloves, vintage microphone',
+    'Erfgename Delphine': 'a wealthy heiress in her thirties, elegant updo, diamond earrings, silk evening gown, long cigarette holder',
+    'Coureur Rocco': 'a dashing Italian racing driver in his thirties, tousled hair, leather racing jacket, driving goggles pushed up on his forehead',
+    'Bankier Sterling': 'a cool English banker in his fifties, silver hair, tuxedo, pocket square, cufflinks, a faint smirk',
+    'Fotomodel Tess': 'a fashion model in her twenties, sleek bob, bold eyeliner, polka-dot dress, big sunglasses pushed up into her hair',
+    'Gokker Duke': 'a professional American gambler in his forties, fedora, loosened tie, cigar, a stack of chips in his hand',
+    'Huisdetective Fenna': 'the casino\'s house detective, a woman in her forties, sharp tailored suit, short hair, observant eyes, small notebook'
   }
 };
 

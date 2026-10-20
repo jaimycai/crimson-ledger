@@ -105,10 +105,10 @@
   <nav class="jump" id="jump"></nav>
   <div id="worlds"></div>
   <section class="next">
-    <h2 class="next-h">Na je ja</h2>
+    <h2 class="next-h">Wat er per wereld gebeurt</h2>
     <ol>
-      <li>Acht portretten per wereld in de vaste gravurestijl: 1,5 credit per stuk, 24 credits voor twee werelden. Eerst jouw ja.</li>
-      <li>64 zaken per wereld: titel, verhaaltje, bewijsstuk en een seed die de motor bewijst.</li>
+      <li>Acht portretten in de vaste gravurestijl, 1,5 credit per stuk, pas na jouw ja.</li>
+      <li>64 zaken: titel, verhaaltje, bewijsstuk en een seed die de motor bewijst.</li>
       <li>Alle teksten in 19 talen: per taal een vertaler en een tweede lezer.</li>
       <li>Kaart, aankoop in App Store Connect, schermafbeeldingen en wat-is-nieuw.</li>
     </ol>
@@ -120,6 +120,7 @@
 <script src="../../floorplan.js"></script>
 <script src="ontwerp.js"></script>
 <script src="../../campaign.js"></script>
+<script src="zaken.js"></script>
 <script>
 (() => {
   const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -171,8 +172,9 @@
   const worldsEl = document.getElementById('worlds');
   document.getElementById('jump').innerHTML = shown.map(w => `<a href="#${w.id}">${w.icon} ${esc(w.short)}</a>`).join('');
   shown.forEach(w => {
-    const isBuilt = built.has(w.id), chapters = CAMPAIGN.filter(ch => ch.theme === w.id);
-    const theme = { ...w, suspects: w.suspects.map((s, i) => ({ ...s, style: { hair: i % 5 }, portrait: isBuilt ? `../../assets/portretten/${w.id}-${i}.webp` : undefined })) };
+    const isBuilt = built.has(w.id), hasPortraits = isBuilt || w.portraits;
+    const chapters = [...CAMPAIGN, ...(window.ZAKEN || [])].filter(ch => ch.theme === w.id);
+    const theme = { ...w, suspects: w.suspects.map((s, i) => ({ ...s, style: { hair: i % 5 }, portrait: hasPortraits ? `../../assets/portretten/${w.id}-${i}.webp` : undefined })) };
     const p = FloorPlan.generate(SEEDS[w.id], 'gemiddeld', theme);
     const sec = document.createElement('section');
     sec.className = 'world'; sec.id = w.id;
@@ -198,7 +200,7 @@
         <div class="top"><span class="ava">${Avatars.suspect(s, i)}</span><span><b>${esc(s.label)}</b><span class="short">${esc(shortName(s.label))} · ${s.gender === 'f' ? 'v' : 'm'}</span></span></div>
         <p class="who">${esc(s.who)}</p>
         <details><summary>Portretopdracht</summary><p>${esc(s.look)}</p></details></div>`).join('')}</div>
-      <div class="style-ref"><img src="../../art/portretten/vandam-zonder-tekst.png" alt=""><p>${isBuilt ? 'Gravures in de vaste stijl, met het portret van Van Dam als enige stijlreferentie.' : 'De gezichtjes hierboven zijn tijdelijk. Elk portret wordt een gravure in deze stijl, zoals Van Dam en de andere werelden.'}</p></div>
+      <div class="style-ref"><img src="../../art/portretten/vandam-zonder-tekst.png" alt=""><p>${hasPortraits ? 'Gravures in de vaste stijl, met het portret van Van Dam als enige stijlreferentie.' : 'De gezichtjes hierboven zijn tijdelijk. Elk portret wordt een gravure in deze stijl, zoals Van Dam en de andere werelden.'}</p></div>
       <h3>${chapters.length ? 'Acht delen, 64 zaken' : 'Acht delen'}</h3>
       <ol class="parts">${chapters.length ? chapters.map(ch => `<li><b>${esc(ch.title.replace(/^Deel [IVX]+ · /, ''))}</b><span>${esc(ch.intro)}</span>
         <ul class="cases">${ch.cases.map(c => { const [icon, ...name] = c.item.split(' '); return `<li><span class="it" title="${esc(name.join(' '))}">${icon}</span><span class="ct">${esc(c.title)}<small class="${c.difficulty}">${c.difficulty}</small></span><span class="cs">${esc(c.story)}</span></li>`; }).join('')}</ul>
