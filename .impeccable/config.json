@@ -11,6 +11,42 @@
         ],
         "createdAt": "2026-10-20T18:16:56.290Z",
         "reason": "Claude: the glow is --gold-light from the app's own style.css (DESIGN.md gold), loaded by the design sheet, not drawn by the sheet"
+      },
+      {
+        "rule": "dark-glow",
+        "value": "*",
+        "files": [
+          "docs/werelden/kaart.html"
+        ],
+        "createdAt": "2026-10-20T19:24:56.968Z",
+        "reason": "Claude: same --gold-light glow from the app's own style.css that the review page loads, not drawn by the page"
+      },
+      {
+        "rule": "cream-palette",
+        "value": "*",
+        "files": [
+          "docs/werelden/kaart.html"
+        ],
+        "createdAt": "2026-10-20T19:47:54.902Z",
+        "reason": "Claude: comes from the app's own style.css (DESIGN.md paper colour, .shelf, map glow) that this review page loads; the page draws none of it"
+      },
+      {
+        "rule": "side-tab",
+        "value": "*",
+        "files": [
+          "docs/werelden/kaart.html"
+        ],
+        "createdAt": "2026-10-20T19:47:54.917Z",
+        "reason": "Claude: comes from the app's own style.css (DESIGN.md paper colour, .shelf, map glow) that this review page loads; the page draws none of it"
+      },
+      {
+        "rule": "radial-halo",
+        "value": "*",
+        "files": [
+          "docs/werelden/kaart.html"
+        ],
+        "createdAt": "2026-10-20T19:47:54.931Z",
+        "reason": "Claude: comes from the app's own style.css (DESIGN.md paper colour, .shelf, map glow) that this review page loads; the page draws none of it"
       }
     ]
   }

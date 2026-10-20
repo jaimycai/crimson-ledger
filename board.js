@@ -174,7 +174,7 @@ const Board = {
   resumeId() {
     if (this.isTutorial) return null;
     if (this.campaignCase) return `c:${this.campaignCase.chapter}:${this.campaignCase.idx}`;
-    if (this.isWeekly && this.weekly) return `w:${this.weekly.key}`;
+    if (this.isWeekly && this.weekly) return `w:${this.weekly.key}:${this.weekly.theme}`;
     if (this.isDaily) return `d:${new Date().toDateString()}`;
     return null;
   },

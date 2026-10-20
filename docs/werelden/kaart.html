@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kaartkunst nieuwe werelden</title>
+<!-- Map art of the new worlds as the app draws it: banner, path decorations and the map background. -->
+<link rel="stylesheet" href="../../style.css">
+<style>
+  body { background: var(--bg-primary); margin: 0; padding: 16px; font-family: 'Inter', system-ui, sans-serif; }
+  section { max-width: 420px; margin: 0 auto 28px; }
+  h2 { font-family: 'Playfair Display', serif; margin: 0 0 8px; }
+  .ban svg { width: 100%; height: auto; display: block; border-radius: 12px; border: 1px solid var(--border-light); }
+  .props { display: flex; flex-wrap: wrap; gap: 10px; padding: 14px; border-radius: 12px; margin-top: 10px; }
+  .props svg { width: 48px; height: 48px; }
+</style>
+</head>
+<body>
+<div id="out"></div>
+<script src="../../mapart.js"></script>
+<script>
+  document.getElementById('out').innerHTML = ['hacienda', 'opera'].map(w => `<section><h2>${w}</h2>
+    <div class="ban">${MapArt.banner(w)}</div>
+    <div class="props map-${w}">${[...Array(MapArt.propCount(w))].map((_, i) => MapArt.prop(w, i)).join('')}</div></section>`).join('');
+</script>
+</body>
+</html>

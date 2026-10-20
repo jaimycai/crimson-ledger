@@ -236,6 +236,64 @@ const THEMES = [
       { label: 'Berggids Freya',        gender: 'f', color: '#2C3E50', style: { hair: 1, hat: 'bandana' } }
     ],
     outro: 'De hut is dicht, de sneeuw ligt weer stil. Jij weet wat eronder lag.'
+  },
+  {
+    id: 'hacienda', unlock: 28, icon: '🌵', title: 'Hacienda San Isidro', short: 'Hacienda',
+    map: { accent: '#A0522D', ring: '#F3DCC4' }, tagline: 'Het agavefeest van San Isidro. Muziek op de patio, en een patrón die niet meer opstaat.',
+    intro: 'Hacienda San Isidro, Jalisco, 1952. De agave is geoogst en de hele familie viert feest. Dan ligt Don Rafael in de stokerij, tussen de koperen ketels.',
+    victimName: 'Don Rafael Ortega', roomWord: 'ruimte', roomWordPlural: 'ruimtes', floor: 'tegels',
+    rooms: [
+      { name: 'Patio', article: 'de', color: '#F0CE8E' }, { name: 'Stokerij', article: 'de', color: '#D9A36F' },
+      { name: 'Kelder', article: 'de', color: '#C9B79C' }, { name: 'Kapel', article: 'de', color: '#E3B7D6' },
+      { name: 'Keuken', article: 'de', color: '#9FC8C8' }, { name: 'Eetzaal', article: 'de', color: '#E8A798' },
+      { name: 'Stal', article: 'de', color: '#C7D9A0' }, { name: 'Salon', article: 'de', color: '#B9AEDC' },
+      { name: 'Veranda', article: 'de', color: '#BFD8B0' }, { name: 'Bibliotheek', article: 'de', color: '#D6C3A5' },
+      { name: 'Wasruimte', article: 'de', color: '#8FC5D8' }, { name: 'Klokkentoren', article: 'de', color: '#A8BEE0' }
+    ],
+    furniture: [
+      { id: 'agave', nl: 'een agave' }, { id: 'ketel', nl: 'een koperen ketel' }, { id: 'gitaar', nl: 'een gitaar' },
+      { id: 'hangmat', nl: 'een hangmat' }, { id: 'pinata', nl: 'een piñata' }
+    ],
+    suspects: [
+      { label: 'Doña Inés',             gender: 'f', color: '#B85C5C', style: { hair: 2 } },
+      { label: 'Mariachi Rubén',        gender: 'm', color: '#5C8B5E', style: { hair: 0, moustache: true } },
+      { label: 'Kokkin Lupita',         gender: 'f', color: '#C2185B', style: { hair: 2 } },
+      { label: 'Voorman Esteban',       gender: 'm', color: '#B8955C', style: { hair: 3, beard: true, hat: 'cap' } },
+      { label: 'Schilderes Paloma',     gender: 'f', color: '#8B5CB8', style: { hair: 1 } },
+      { label: 'Neef Tomás',            gender: 'm', color: '#5C7AB8', style: { hair: 0, moustache: true } },
+      { label: 'Notaris Guzmán',        gender: 'm', color: '#2C3E50', style: { hair: 3, glasses: true } },
+      { label: 'Zuster Bárbara',        gender: 'f', color: '#D9A441', style: { hair: 2, hat: 'bandana' } }
+    ],
+    outro: 'De ketels koelen af, de muziek is stil. Jij weet wat er in de ketel zat.'
+  },
+  {
+    id: 'opera', unlock: 32, icon: '🎭', title: 'Opéra Lumière', short: 'Opera',
+    map: { accent: '#7A1430', ring: '#E8C77A' }, tagline: 'Rood fluweel, kristallen kroonluchters en een uitverkochte première. Alleen de directeur komt na de pauze niet terug.',
+    intro: 'Opéra Lumière, Parijs, 1891. Goud, kristal en rood fluweel tot in de nok, en de première is uitverkocht. In de pauze ligt directeur Gaston Leclerc achter het toneel, onder het touwwerk.',
+    victimName: 'Directeur Gaston Leclerc', roomWord: 'ruimte', roomWordPlural: 'ruimtes', floor: 'parket',
+    rooms: [
+      { name: 'Toneel', article: 'het', color: '#F2C46D' }, { name: 'Coulisse', article: 'de', color: '#CDB89A' },
+      { name: 'Orkestbak', article: 'de', color: '#7FB3B0' }, { name: 'Kleedkamer', article: 'de', color: '#F0A6A0' },
+      { name: 'Foyer', article: 'de', color: '#9FCBA8' }, { name: 'Loge', article: 'de', color: '#D9737F' },
+      { name: 'Rekwisietenkamer', article: 'de', color: '#D9B48A' }, { name: 'Toneelkelder', article: 'de', color: '#93A9C9' },
+      { name: 'Kostuumatelier', article: 'het', color: '#E7A9CF' }, { name: 'Directiekamer', article: 'de', color: '#B3A1D6' },
+      { name: 'Repetitiezaal', article: 'de', color: '#8CC3DE' }, { name: 'Trappenhuis', article: 'het', color: '#EAD9B0' }
+    ],
+    furniture: [
+      { id: 'paspop', nl: 'een paspop' }, { id: 'harp', nl: 'een harp' }, { id: 'masker', nl: 'een masker' },
+      { id: 'boeket', nl: 'een boeket' }, { id: 'toneelkijker', nl: 'een toneelkijker' }
+    ],
+    suspects: [
+      { label: 'Diva Colette',          gender: 'f', color: '#C2185B', style: { hair: 4 } },
+      { label: 'Tenor Matteo',          gender: 'm', color: '#5C7AB8', style: { hair: 4, moustache: true } },
+      { label: 'Dirigent Armand',       gender: 'm', color: '#2C3E50', style: { hair: 4 } },
+      { label: 'Danseres Ninon',        gender: 'f', color: '#8B5CB8', style: { hair: 2 } },
+      { label: 'Kostumière Eloise',     gender: 'f', color: '#D9A441', style: { hair: 2, glasses: true } },
+      { label: 'Baron Viktor',          gender: 'm', color: '#B8955C', style: { hair: 3, moustache: true, hat: 'tophat' } },
+      { label: 'Toneelmeester Hugo',    gender: 'm', color: '#5C8B5E', style: { hair: 3, beard: true, hat: 'cap' } },
+      { label: 'Recensente Simone',     gender: 'f', color: '#B85C5C', style: { hair: 1 } }
+    ],
+    outro: 'Het doek valt voor de laatste keer. Het applaus is voor jou.'
   }
 ];
 
@@ -246,6 +304,8 @@ const TITLES = new Set(['dr.', 'majoor', 'tante', 'kok', 'bootsman', 'stuurman',
   'barones', 'goochelaar', 'schaakmeester', 'verpleegster', 'reiziger', 'actrice', 'stoker', 'weduwe', 'conducteur',
   'clown', 'trapezeartiest', 'leeuwentemmer', 'waarzegster', 'sterke', 'man', 'kaartverkoper', 'kaartverkoopster', 'lady', 'meneer', 'jongleur', 'dierenarts',
   'skilerares', 'bergredder', 'toeriste', 'fotograaf', 'jongen', 'berggids', 'gastheer',
+  'doña', 'mariachi', 'kokkin', 'voorman', 'schilderes', 'neef', 'notaris', 'zuster', 'don',
+  'diva', 'tenor', 'dirigent', 'kostumière', 'baron', 'toneelmeester', 'recensente', 'directeur',
   // Engels
   'major', 'aunt', 'lady', 'mr.', 'cook', 'boatswain', 'helmsman', 'miss', 'gunner', 'cabin', 'boy', 'countess', 'doorman', 'mrs', 'dancer', 'pilot', 'engineer',
   'cadet', 'officer', 'biologist', 'guide', 'restorer', 'night', 'guard', 'art', 'dealer', 'intern', 'cleaner', 'baroness', 'magician', 'chess', 'master',

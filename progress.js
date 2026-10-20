@@ -23,9 +23,12 @@ const WEEK_TITLES = {
   museum:   ['De nacht van de sarcofaag', 'Het schilderij dat terugkeek', 'De vitrine zonder glas', 'Het geheim van zaal 7'],
   trein:    ['De tunnel van vier minuten', 'Het kaartje zonder naam', 'De coupé die op slot zat', 'De laatste halte voor Wenen'],
   circus:   ['De act zonder applaus', 'Het kanon dat te laat schoot', 'De clown met twee gezichten', 'De nacht dat de tent zweeg'],
-  skihut:   ['De kachel die uitging', 'Sporen die niet terugkwamen', 'De nacht van de tweede lawine', 'De laatste gast van Edelweiss']
+  skihut:   ['De kachel die uitging', 'Sporen die niet terugkwamen', 'De nacht van de tweede lawine', 'De laatste gast van Edelweiss'],
+  hacienda: ['Het vat zonder merk', 'De nacht van de kapelklok', 'Het testament onder de vloer', 'De laatste oogst van San Isidro'],
+  opera:    ['Het spook van loge vijf', 'De aria die niemand kende', 'Het touw dat knapte', 'De laatste buiging van Colette']
 };
-const WEEK_THEMES = ['landhuis', 'piraten', 'hotel', 'ruimte', 'museum', 'trein', 'circus', 'skihut'];
+// sinds 1.4 met Hacienda en Opera: de rotatie verschuift, daarom bewaart board.js een weekzaak per week én wereld
+const WEEK_THEMES = ['landhuis', 'piraten', 'hotel', 'ruimte', 'museum', 'trein', 'circus', 'skihut', 'hacienda', 'opera'];
 
 const Progress = {
   // ── opslag (via App, zodat privémodus nooit crasht) ──
@@ -188,6 +191,8 @@ const Progress = {
     { id: 'trein',         icon: '🚂', title: 'Eindstation',            hint: 'Maak alle delen van De Nachttrein af',                      test: c => c.worldsDone.includes('trein') },
     { id: 'circus',        icon: '🎪', title: 'De tent gaat dicht',     hint: 'Maak alle delen van Het Circus af',                         test: c => c.worldsDone.includes('circus') },
     { id: 'skihut',        icon: '🏔️', title: 'De laatste afdaling',    hint: 'Maak alle delen van De Skihut af',                          test: c => c.worldsDone.includes('skihut') },
+    { id: 'hacienda',      icon: '🌵', title: 'Het laatste vat',        hint: 'Maak alle delen van Hacienda San Isidro af',                test: c => c.worldsDone.includes('hacienda') },
+    { id: 'opera',         icon: '🎭', title: 'Het doek valt',          hint: 'Maak alle delen van Opéra Lumière af',                      test: c => c.worldsDone.includes('opera') },
     { id: 'opdrachten',    icon: '🎁', title: 'Alle opdrachten',       hint: 'Maak alle drie de opdrachten van een dag af',                test: c => !!c.questsAll },
     { id: 'vrije-dag',     icon: '🧊', title: 'Gered door een vrije dag', hint: 'Laat een vrije dag je streak redden',                     test: c => !!c.freezeUsed },
     { id: 'vlekkeloos',    icon: '⭐', title: 'Vlekkeloos',            hint: 'Haal tien keer drie sterren in de campagne',                 test: c => c.threeStars >= 10 },

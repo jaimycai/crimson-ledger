@@ -831,6 +831,108 @@
           "Jongen Kai": "Kai",
           "Berggids Freya": "Freya"
         }
+      },
+      "hacienda": {
+        "title": "Hacienda San Isidro",
+        "short": "Hacienda",
+        "victimName": "Don Rafael Ortega",
+        "roomWord": "pièce",
+        "roomWordPlural": "pièces",
+        "tagline": "La fête de l’agave à San Isidro. De la musique dans le patio, et un patrón qui ne se relève plus.",
+        "intro": "Hacienda San Isidro, Jalisco, 1952. L’agave est récolté et toute la famille fait la fête. Puis on trouve Don Rafael dans la distillerie, entre les alambics en cuivre.",
+        "outro": "Les alambics refroidissent, la musique s’est tue. Toi, tu sais ce qu’il y avait dans l’alambic.",
+        "rooms": {
+          "Patio": "Patio",
+          "Stokerij": "Distillerie",
+          "Kelder": "Cave",
+          "Kapel": "Chapelle",
+          "Keuken": "Cuisine",
+          "Eetzaal": "Salle à manger",
+          "Stal": "Écurie",
+          "Salon": "Salon",
+          "Veranda": "Véranda",
+          "Bibliotheek": "Bibliothèque",
+          "Wasruimte": "Buanderie",
+          "Klokkentoren": "Clocher"
+        },
+        "furniture": {
+          "agave": "un agave",
+          "ketel": "un alambic en cuivre",
+          "gitaar": "une guitare",
+          "hangmat": "un hamac",
+          "pinata": "une piñata"
+        },
+        "suspects": {
+          "Doña Inés": "Doña Inés",
+          "Mariachi Rubén": "Mariachi Rubén",
+          "Kokkin Lupita": "Cuisinière Lupita",
+          "Voorman Esteban": "Contremaître Esteban",
+          "Schilderes Paloma": "Peintre Paloma",
+          "Neef Tomás": "Neveu Tomás",
+          "Notaris Guzmán": "Notaire Guzmán",
+          "Zuster Bárbara": "Sœur Bárbara"
+        },
+        "suspectShort": {
+          "Doña Inés": "Inés",
+          "Mariachi Rubén": "Rubén",
+          "Kokkin Lupita": "Lupita",
+          "Voorman Esteban": "Esteban",
+          "Schilderes Paloma": "Paloma",
+          "Neef Tomás": "Tomás",
+          "Notaris Guzmán": "Guzmán",
+          "Zuster Bárbara": "Bárbara"
+        }
+      },
+      "opera": {
+        "title": "Opéra Lumière",
+        "short": "Opéra",
+        "victimName": "Le directeur Gaston Leclerc",
+        "roomWord": "zone",
+        "roomWordPlural": "zones",
+        "tagline": "Velours rouge, lustres de cristal et une première à guichets fermés. Seul le directeur ne revient pas après l’entracte.",
+        "intro": "Opéra Lumière, Paris, 1891. De l’or, du cristal et du velours rouge jusqu’au plafond, et la première affiche complet. À l’entracte, le directeur Gaston Leclerc gît derrière la scène, sous les cordages.",
+        "outro": "Le rideau tombe pour la dernière fois. Les applaudissements sont pour toi.",
+        "rooms": {
+          "Toneel": "Scène",
+          "Coulisse": "Coulisses",
+          "Orkestbak": "Fosse",
+          "Kleedkamer": "Vestiaire",
+          "Foyer": "Foyer",
+          "Loge": "Loge",
+          "Rekwisietenkamer": "Accessoires",
+          "Toneelkelder": "Dessous de scène",
+          "Kostuumatelier": "Costumerie",
+          "Directiekamer": "Bureau",
+          "Repetitiezaal": "Salle de répétition",
+          "Trappenhuis": "Escalier"
+        },
+        "furniture": {
+          "paspop": "un mannequin de couture",
+          "harp": "une harpe",
+          "masker": "un masque",
+          "boeket": "un bouquet",
+          "toneelkijker": "une lorgnette"
+        },
+        "suspects": {
+          "Diva Colette": "Diva Colette",
+          "Tenor Matteo": "Ténor Matteo",
+          "Dirigent Armand": "Maestro Armand",
+          "Danseres Ninon": "Danseuse Ninon",
+          "Kostumière Eloise": "Costumière Eloise",
+          "Baron Viktor": "Baron Viktor",
+          "Toneelmeester Hugo": "Chef machiniste Hugo",
+          "Recensente Simone": "Critique Simone"
+        },
+        "suspectShort": {
+          "Diva Colette": "Colette",
+          "Tenor Matteo": "Matteo",
+          "Dirigent Armand": "Armand",
+          "Danseres Ninon": "Ninon",
+          "Kostumière Eloise": "Eloise",
+          "Baron Viktor": "Viktor",
+          "Toneelmeester Hugo": "Hugo",
+          "Recensente Simone": "Simone"
+        }
       }
     },
     "daily": [
@@ -913,6 +1015,18 @@
         "Les traces sans retour",
         "La nuit de la seconde avalanche",
         "Le dernier client d’Edelweiss"
+      ],
+      "hacienda": [
+        "Le fût sans marque",
+        "La nuit de la cloche",
+        "Le testament sous le plancher",
+        "La dernière récolte de San Isidro"
+      ],
+      "opera": [
+        "Le fantôme de la loge cinq",
+        "L’aria que personne ne connaissait",
+        "La corde qui céda",
+        "Le dernier salut de Colette"
       ]
     },
     "medals": {
@@ -1011,6 +1125,14 @@
       "meesterzaken": [
         "Maître limier",
         "Résous cinq affaires de niveau maître"
+      ],
+      "hacienda": [
+        "Le dernier fût",
+        "Termine tous les chapitres de l’Hacienda San Isidro"
+      ],
+      "opera": [
+        "Le rideau tombe",
+        "Termine tous les chapitres de l’Opéra Lumière"
       ]
     },
     "quests": {
@@ -4183,6 +4305,774 @@
           "🌼 Edelweiss séché"
         ]
       ]
+    ],
+    "hacienda": [
+      "Chapitre I · La fête de l’agave",
+      "Hacienda San Isidro, Jalisco, 1952. La récolte d’agave est rentrée et la famille fait la fête. Puis on trouve Don Rafael dans la distillerie, entre les alambics en cuivre.",
+      "La fête s’est tue. Mais la famille reste, pour le testament.",
+      "Une hacienda, c’est grand, mais pendant une fête, tout le monde reste ensemble. Commence par qui dit dans quelle pièce il était ; « juste à côté » de l’alambic, c’est seulement une case qui le touche par un côté, jamais en diagonale.",
+      [
+        [
+          "La fête de l’agave",
+          "La récolte était rentrée. Le patrón n’est pas sorti.",
+          "🌵 Feuille d’agave"
+        ],
+        [
+          "L’alambic en cuivre",
+          "L’alambic était encore chaud. La distillerie était fermée à clé.",
+          "🔑 Clé de la distillerie"
+        ],
+        [
+          "Le mariachi Rubén chante",
+          "Il a chanté la chanson préférée de Don Rafael. Personne n’a applaudi.",
+          "🎺 Trompette"
+        ],
+        [
+          "Un feu d’artifice au-dessus du patio",
+          "Tout le monde regardait en l’air. Presque tout le monde.",
+          "🎆 Fusée"
+        ],
+        [
+          "La cuisinière Lupita compte les assiettes",
+          "Elle avait mis neuf couverts. Huit personnes ont mangé.",
+          "🍽️ Assiette en terre cuite"
+        ],
+        [
+          "La première bouteille",
+          "La première bouteille de la récolte était ouverte. Personne ne l’avait ouverte.",
+          "🍾 Bouchon"
+        ],
+        [
+          "Doña Inés porte le deuil",
+          "Elle était déjà en noir avant que quiconque le sache.",
+          "🖤 Mantille noire"
+        ],
+        [
+          "Minuit à San Isidro",
+          "L’horloge a sonné douze coups. Un de trop.",
+          "🕛 Horloge murale"
+        ]
+      ]
+    ],
+    "hacienda-2": [
+      "Chapitre II · La distillerie",
+      "La police est encore en route depuis Guadalajara. Dans la distillerie, les alambics sont encore chauds, et quelqu’un a ouvert le robinet.",
+      "La distillerie est sous scellés. Demain, le notaire lit le testament.",
+      "Dans la distillerie, tout tourne autour des alambics. Déclarations sur deux personnes : fixe d’abord l’une des deux.",
+      [
+        [
+          "Le robinet ouvert",
+          "Tout un alambic s’est vidé sur le sol. Personne n’a rien entendu.",
+          "🚰 Robinet en cuivre"
+        ],
+        [
+          "Le contremaître Esteban goûte",
+          "Il a goûté chaque alambic. Il en a sauté un.",
+          "🥃 Verre de dégustation"
+        ],
+        [
+          "Le registre des récoltes",
+          "Le registre comptait dix charrettes. Dans la cour, il y en avait neuf.",
+          "📒 Registre des récoltes"
+        ],
+        [
+          "Le feu sous l’alambic",
+          "Le feu a brûlé toute la nuit. Quelqu’un avait remis du bois.",
+          "🪵 Bois de mesquite"
+        ],
+        [
+          "Le neveu Tomás, venu de la ville",
+          "Il n’arriverait que demain, disait-il. Sa voiture était déjà dans la cour.",
+          "🎩 Chapeau de citadin"
+        ],
+        [
+          "Deux fûts de trop",
+          "À la cave, il y avait deux fûts sans marque.",
+          "🛢️ Fût de chêne"
+        ],
+        [
+          "La peintre Paloma dessine",
+          "Elle a dessiné la distillerie à neuf heures. Sur le dessin, une lumière était allumée.",
+          "🖌️ Esquisse"
+        ],
+        [
+          "Le secret de l’alambic",
+          "Ce qu’il y avait dans l’alambic, ce n’était pas de la tequila.",
+          "⚗️ Ballon de distillation"
+        ]
+      ]
+    ],
+    "hacienda-3": [
+      "Chapitre III · Le testament",
+      "La famille est réunie au salon. Le notaire Guzmán ouvre le testament, et certains n’entendent pas leur nom.",
+      "Le testament a été lu. Les héritiers ne se regardent plus.",
+      "Chacun veut sa part de l’héritage et chacun parle de chacun. Qui dit où il n’était pas t’apprend quelque chose, lui aussi : raye tout de suite cette pièce.",
+      [
+        [
+          "La lecture",
+          "Le notaire a lu trois pages. Le testament en comptait quatre.",
+          "📜 Testament"
+        ],
+        [
+          "Le coffret scellé",
+          "Le sceau était intact. Le coffret était vide.",
+          "🔏 Cachet de cire"
+        ],
+        [
+          "Le notaire Guzmán transpire",
+          "Il a essuyé ses lunettes trois fois. Il ne faisait pas chaud.",
+          "👓 Lunettes du notaire"
+        ],
+        [
+          "L’héritier oublié",
+          "Le testament citait un nom que personne ne connaissait.",
+          "🪪 Vieux passeport"
+        ],
+        [
+          "Le neveu Tomás fait ses comptes",
+          "Il avait déjà dépensé sa part. L’an dernier.",
+          "🧾 Reconnaissance de dette"
+        ],
+        [
+          "La signature",
+          "Deux signatures de Don Rafael. L’une d’elles, trop belle.",
+          "🖋️ Stylo-plume"
+        ],
+        [
+          "Doña Inés ne signe pas",
+          "Elle a refusé de signer. Elle savait pourquoi.",
+          "💍 Alliance"
+        ],
+        [
+          "Le dernier codicille",
+          "Sous le plancher de la bibliothèque, il restait une lettre.",
+          "✉️ Codicille"
+        ]
+      ]
+    ],
+    "hacienda-4": [
+      "Chapitre IV · La chapelle",
+      "Avant l’enterrement, les cierges brûlent toute la nuit dans la chapelle. Tout le monde vient prier, et un banc reste vide.",
+      "Les cierges se sont consumés. La famille porte Don Rafael dehors.",
+      "Dans la chapelle, tout le monde reste assis, alors regarde bien qui était à côté de qui. Place d’abord le suspect qui a le moins de cases possibles ; le reste suit.",
+      [
+        [
+          "La veillée",
+          "Jusqu’à minuit, la famille était réunie. Après, plus du tout.",
+          "🕯️ Cierge d’autel"
+        ],
+        [
+          "Sœur Bárbara prie",
+          "Elle a prié pour tout le monde. Elle a sauté un nom.",
+          "📿 Chapelet"
+        ],
+        [
+          "Le banc vide",
+          "Huit places au premier rang. Sept personnes.",
+          "🪑 Banc d’église"
+        ],
+        [
+          "Le clocher",
+          "À trois heures, la cloche a sonné. Personne n’avait touché la corde.",
+          "🔔 Corde de la cloche"
+        ],
+        [
+          "La cuisinière Lupita cuisine",
+          "Elle a cuisiné pour toute la veillée. Une marmite est restée intacte.",
+          "🍲 Pozole"
+        ],
+        [
+          "L’encens",
+          "L’encens brûlait trop tôt. Quelqu’un était déjà passé à la chapelle.",
+          "🪔 Encensoir"
+        ],
+        [
+          "La confession",
+          "Quelqu’un s’était confessé. La sœur n’a pas dit qui.",
+          "🚪 Confessionnal"
+        ],
+        [
+          "Le dernier adieu",
+          "Le cercueil était encore fermé. Une fleur était déjà posée dessus.",
+          "🌹 Rose rouge"
+        ]
+      ]
+    ],
+    "hacienda-5": [
+      "Chapitre V · Le Jour des morts",
+      "Un an plus tard. Des œillets d’Inde sur l’autel, des crânes en sucre sur la table, et toute la famille est de retour à San Isidro.",
+      "Les bougies de l’autel s’éteignent. Don Rafael repose en paix, ou presque.",
+      "Le Jour des morts, la maison est pleine de monde. Commence par qui dit avoir été seul : ça écarte d’un coup tous les autres de sa pièce.",
+      [
+        [
+          "L’autel",
+          "Sur l’autel, il y avait huit photos. Hier, il y en avait sept.",
+          "🖼️ Cadre photo"
+        ],
+        [
+          "Les œillets d’Inde",
+          "Une traînée de fleurs orange menait à la cave.",
+          "🌼 Œillet d’Inde"
+        ],
+        [
+          "Les crânes en sucre",
+          "Un nom sur chaque crâne. Sur l’un d’eux, le nom de quelqu’un encore en vie.",
+          "💀 Crâne en sucre"
+        ],
+        [
+          "Le mariachi Rubén joue pour les morts",
+          "Il a joué la chanson de Don Rafael. Quelqu’un qui ne pouvait pas la connaître l’a chantée avec lui.",
+          "🎸 Corde de guitare"
+        ],
+        [
+          "La piñata",
+          "La piñata était déjà ouverte avant l’arrivée des enfants.",
+          "🪅 Piñata"
+        ],
+        [
+          "La peintre Paloma revient",
+          "Elle a peint l’autel. Sur la toile se tenait quelqu’un qui n’était pas là.",
+          "🎨 Palette"
+        ],
+        [
+          "Le pan de muerto",
+          "La cuisinière Lupita a fait cuire douze pains. Il y en avait onze.",
+          "🍞 Pan de muerto"
+        ],
+        [
+          "La nuit des esprits",
+          "Tout le monde a vu un fantôme dans le patio. Un des fantômes portait des chaussures.",
+          "👞 Chaussure boueuse"
+        ]
+      ]
+    ],
+    "hacienda-6": [
+      "Chapitre VI · La saison sèche",
+      "Il n’a pas plu depuis des mois. Le puits est vide, l’agave se dessèche, et quelqu’un a vendu l’eau.",
+      "Enfin la pluie. L’eau est revenue, et le coupable a refait surface.",
+      "La sécheresse rend les gens secs, et les déclarations se font avares. Sers-toi du Crayon : écarte les cases impossibles et regarde ce qui reste.",
+      [
+        [
+          "Le puits vide",
+          "Le seau est remonté à sec. Hier, ce n’était pas le cas.",
+          "🪣 Seau du puits"
+        ],
+        [
+          "Le contremaître Esteban creuse",
+          "Il a creusé un nouveau puits. Au mauvais endroit.",
+          "⛏️ Pioche"
+        ],
+        [
+          "Le registre de l’eau",
+          "Chaque cruche d’eau était notée dans le registre. Sauf les dix dernières.",
+          "📘 Registre de l’eau"
+        ],
+        [
+          "L’agave desséché",
+          "Tout un rang d’agaves était mort. Seulement ce rang-là.",
+          "🥀 Feuille desséchée"
+        ],
+        [
+          "La cuisinière Lupita économise",
+          "Elle gardait de l’eau pour la cuisine. Sa jarre était vide.",
+          "🏺 Jarre à eau"
+        ],
+        [
+          "Le neveu Tomás vend",
+          "Il vendait de l’eau aux voisins. L’eau de qui ?",
+          "💵 Billet de pesos"
+        ],
+        [
+          "Le hamac",
+          "Personne n’était couché dans le hamac. Pourtant, il se balançait.",
+          "🪢 Corde de hamac"
+        ],
+        [
+          "La première pluie",
+          "Quand la pluie est arrivée, tout le monde a couru dehors. Sauf une personne.",
+          "🌧️ Tonneau d’eau de pluie"
+        ]
+      ]
+    ],
+    "hacienda-7": [
+      "Chapitre VII · La foire aux chevaux",
+      "Des acheteurs de trois villages dans la cour. Chevaux, argent et selles changent de mains, et un cheval ne revient pas.",
+      "Les acheteurs sont partis et l’écurie est calme. Le cheval disparu est de retour dans son box.",
+      "Le plateau s’agrandit et les déclarations se font avares. Si le rapport dit qu’une pièce était vide, toute cette pièce est exclue pour tout le monde.",
+      [
+        [
+          "Le premier acheteur",
+          "Il a payé en or. Pour un cheval qui n’était pas à vendre.",
+          "🪙 Pièce d’or"
+        ],
+        [
+          "Le cheval noir",
+          "Son box était vide. La selle y était encore accrochée.",
+          "🐎 Cheval noir"
+        ],
+        [
+          "Le contremaître Esteban marchande",
+          "Il a demandé trop peu. Beaucoup trop peu.",
+          "🤝 Poignée de main"
+        ],
+        [
+          "Le maréchal-ferrant",
+          "Quatre fers à cheval commandés. Il y en avait trois.",
+          "🔨 Marteau de forgeron"
+        ],
+        [
+          "Sœur Bárbara bénit",
+          "Elle a béni chaque cheval. Le dernier a pris peur devant elle.",
+          "💧 Eau bénite"
+        ],
+        [
+          "Le registre de l’écurie",
+          "Chaque cheval y figurait. Le cheval disparu n’y figurait plus.",
+          "📖 Registre de l’écurie"
+        ],
+        [
+          "La chevauchée nocturne",
+          "À deux heures, tout le monde a entendu des sabots. Personne n’est allé voir.",
+          "🌙 Demi-lune"
+        ],
+        [
+          "La selle de Don Rafael",
+          "Sa selle était accrochée au mur depuis un an. Aujourd’hui, le cuir était chaud.",
+          "🏇 Selle d’argent"
+        ]
+      ]
+    ],
+    "hacienda-8": [
+      "Chapitre VIII · Adieu à San Isidro",
+      "L’hacienda est mise en vente. Une dernière fête dans le patio, avec les mêmes visages que le premier soir.",
+      "Van Dam met son chapeau, salue la famille et part pour la gare dans la dernière charrette. San Isidro n’a plus de secrets.",
+      "Les dernières affaires, presque toutes sur le grand plateau. Ne bloque pas sur le suspect le plus difficile : place d’abord les autres, et il ne reste souvent qu’une case pour le dernier.",
+      [
+        [
+          "L’acheteur",
+          "L’acheteur venait de Mexico. Il connaissait le chemin de la cave.",
+          "📝 Acte de vente"
+        ],
+        [
+          "Le dernier fût",
+          "Un fût est resté. Il portait une année : 1952.",
+          "🏷️ Étiquette de fût"
+        ],
+        [
+          "Doña Inés fait ses bagages",
+          "Elle n’a emporté qu’un coffret. Il était lourd.",
+          "🧳 Valise"
+        ],
+        [
+          "L’horloge du clocher reste",
+          "L’horloge du clocher ne partait pas avec eux. Quelqu’un le voulait pourtant.",
+          "🕰️ Horloge du clocher"
+        ],
+        [
+          "Le mariachi Rubén joue la dernière chanson",
+          "La chanson du premier soir. Cette fois, avec un autre couplet.",
+          "🎼 Partition"
+        ],
+        [
+          "Le portrait de Don Rafael",
+          "Le portrait est parti dans la caisse. Derrière le cadre, il y avait une lettre.",
+          "💌 Lettre cachée"
+        ],
+        [
+          "Le notaire Guzmán clôt le dossier",
+          "Il a tamponné le dernier acte. L’encre du tampon était encore fraîche.",
+          "📎 Dernier acte"
+        ],
+        [
+          "Adieu à San Isidro",
+          "Là où tout a commencé, près des alambics. C’est là aussi que tout finit.",
+          "🍶 Dernière bouteille"
+        ]
+      ]
+    ],
+    "opera": [
+      "Chapitre I · La première",
+      "Opéra Lumière, Paris, 1891. De l’or, du cristal et une salle comble. À l’entracte, le directeur Leclerc gît derrière la scène, sous les cordages.",
+      "Le rideau est tombé et la salle est vide. Mais demain, le spectacle continue.",
+      "Un opéra, c’est un labyrinthe de couloirs et d’escaliers. Commence par qui dit dans quelle zone il était ; « juste à côté » de la harpe, c’est seulement une case qui la touche par un côté, jamais en diagonale.",
+      [
+        [
+          "Le rideau se lève",
+          "La salle affichait complet. La loge du directeur est restée vide.",
+          "🎟️ Billet d’entrée"
+        ],
+        [
+          "L’entracte",
+          "Vingt minutes d’entracte. Assez pour une seule chose.",
+          "🥂 Coupe de champagne"
+        ],
+        [
+          "La diva Colette chante",
+          "Elle a atteint la note aiguë. Derrière la scène, quelque chose est tombé.",
+          "💎 Boucle d’oreille en diamant"
+        ],
+        [
+          "Les cordages",
+          "Cent cordes derrière la scène. L’une avait été coupée.",
+          "✂️ Ciseaux"
+        ],
+        [
+          "Le chef machiniste Hugo compte",
+          "Il a compté les contrepoids. Il y en avait un de trop.",
+          "⚖️ Contrepoids"
+        ],
+        [
+          "Les applaudissements",
+          "Dix minutes d’applaudissements. Personne n’a entendu le choc, derrière.",
+          "💐 Gerbe de fleurs"
+        ],
+        [
+          "Le baron Viktor paie",
+          "Le baron a financé la première. Il n’est pas resté jusqu’à la fin.",
+          "💰 Bourse"
+        ],
+        [
+          "Après la représentation",
+          "La salle s’est vidée. Derrière le rideau gisait le directeur.",
+          "🎭 Masque de théâtre"
+        ]
+      ]
+    ],
+    "opera-2": [
+      "Chapitre II · Derrière le rideau",
+      "La représentation continue, et la police circule derrière la scène. Cordages, trappes et contrepoids : seule l’équipe s’y retrouve.",
+      "Les cordages sont comptés. Demain, une nouvelle aria est au programme.",
+      "Derrière le rideau, tout est proche. Déclarations sur deux personnes : fixe d’abord l’une des deux.",
+      [
+        [
+          "La trappe",
+          "La trappe de la scène était ouverte. Personne ne s’en était servi.",
+          "🕳️ Trappe"
+        ],
+        [
+          "Chuchotements en coulisse",
+          "Quelqu’un chuchotait en coulisse. Tout le monde l’a entendu, personne ne savait qui.",
+          "🧣 Foulard de soie"
+        ],
+        [
+          "Le chef machiniste Hugo fait un nœud",
+          "Il fait chaque nœud lui-même. Pas celui-ci.",
+          "🪢 Nœud marin"
+        ],
+        [
+          "Le décor du deuxième acte",
+          "Un château en carton. Derrière la porte se tenait quelqu’un de bien réel.",
+          "🏰 Château en carton"
+        ],
+        [
+          "La danseuse Ninon attend",
+          "Elle attendait son entrée en scène. Le moment n’est jamais venu.",
+          "🩰 Pointes"
+        ],
+        [
+          "Le souffleur",
+          "Pas un mot n’est sorti du trou du souffleur. Il n’y avait personne dedans.",
+          "📃 Livret du souffleur"
+        ],
+        [
+          "Le sac de sable",
+          "Un sac de sable est tombé à deux mètres du ténor.",
+          "🪨 Sac de sable"
+        ],
+        [
+          "Derrière le rideau",
+          "Quand le rideau s’est levé, il y avait une personne de trop sur la scène.",
+          "💡 Feux de la rampe"
+        ]
+      ]
+    ],
+    "opera-3": [
+      "Chapitre III · La partition disparue",
+      "Une heure avant la représentation, la nouvelle aria a disparu. Pas de partition, pas de première, et quelqu’un le sait.",
+      "La partition est de retour dans la fosse d’orchestre. La diva Colette chante comme si de rien n’était.",
+      "Tout le monde cherche la partition et tout le monde accuse quelqu’un d’autre. Qui dit où il n’était pas t’apprend quelque chose, lui aussi : raye tout de suite cette zone.",
+      [
+        [
+          "Le classeur vide",
+          "Le chef d’orchestre a ouvert le classeur. Il était vide.",
+          "🎼 Classeur vide"
+        ],
+        [
+          "Le maestro Armand cherche",
+          "Il a fouillé la fosse d’orchestre. Il savait où chercher.",
+          "🪄 Baguette"
+        ],
+        [
+          "Trois copies",
+          "Trois copies de l’aria. Deux retrouvées.",
+          "📄 Copie"
+        ],
+        [
+          "La costumière Eloise coud",
+          "Il y avait du papier dans l’ourlet d’une robe.",
+          "🪡 Aiguille"
+        ],
+        [
+          "La tache d’encre",
+          "Quelqu’un avait de l’encre sur les doigts. Celle du compositeur.",
+          "🫙 Encrier"
+        ],
+        [
+          "La critique Simone sait déjà",
+          "Son article était déjà écrit. Sur une aria que personne n’avait entendue.",
+          "📰 Journal du matin"
+        ],
+        [
+          "Le poêle allumé",
+          "Dans le bureau du directeur, le poêle brûlait. Il y avait du papier à côté.",
+          "🔥 Papier brûlé"
+        ],
+        [
+          "L’aria",
+          "L’aria a été chantée. Par la mauvaise voix.",
+          "🎶 Aria"
+        ]
+      ]
+    ],
+    "opera-4": [
+      "Chapitre IV · Le bal masqué",
+      "Le bal masqué annuel, dans le foyer. Tout le monde porte un masque, et personne ne sait qui se tenait à côté de qui.",
+      "À minuit, les masques tombent. Tout le monde ne rit pas.",
+      "Sous les masques, personne ne se reconnaît, mais le plan, lui, ne ment pas. Place d’abord le suspect qui a le moins de cases possibles ; le reste suit.",
+      [
+        [
+          "Masques en place",
+          "Deux cents invités, deux cents masques. Un masque de trop.",
+          "🦚 Plume de paon"
+        ],
+        [
+          "La valse",
+          "L’orchestre a joué une valse. Un couple n’a pas dansé.",
+          "🎻 Violon"
+        ],
+        [
+          "Le baron Viktor ne reconnaît personne",
+          "Il connaissait tout Paris. Ce soir, personne.",
+          "🧐 Monocle"
+        ],
+        [
+          "Le masque rouge",
+          "Tout le monde était en blanc. Sauf une personne.",
+          "🪶 Plume rouge"
+        ],
+        [
+          "La danseuse Ninon danse avec le baron",
+          "Ils ont dansé trois danses. La troisième, elle l’a dansée seule.",
+          "👠 Escarpin de bal"
+        ],
+        [
+          "Champagne à minuit",
+          "Le bouchon a sauté à minuit. La seconde détonation ne venait pas d’une bouteille.",
+          "🍾 Bouteille de champagne"
+        ],
+        [
+          "La salle des glaces",
+          "Dans les miroirs se tenait quelqu’un qui n’était pas là.",
+          "🪞 Miroir à main"
+        ],
+        [
+          "Bas les masques",
+          "À minuit, les masques sont tombés. Personne ne connaissait l’un des visages.",
+          "🎀 Ruban de masque"
+        ]
+      ]
+    ],
+    "opera-5": [
+      "Chapitre V · Les dessous de l’Opéra",
+      "Sous la scène se cache un second bâtiment : couloirs, machines et un lac souterrain. Quelqu’un y rôde.",
+      "Les trappes sont fermées. Ce qui était en bas a refait surface.",
+      "Dans les dessous, on ne voit pas grand-chose. Les déclarations sur les lignes et les colonnes traversent les murs ; sers-toi du Crayon.",
+      [
+        [
+          "L’escalier qui descend",
+          "Cent marches jusqu’aux dessous. Sur la dernière, il y avait un gant.",
+          "🧤 Gant blanc"
+        ],
+        [
+          "Le lac souterrain",
+          "Sous le bâtiment, il y a de l’eau. Une barque que personne ne connaissait y flottait.",
+          "🛶 Barque"
+        ],
+        [
+          "Le chef machiniste Hugo descend",
+          "Il est descendu avec une lanterne. Il est remonté sans.",
+          "🏮 Lanterne"
+        ],
+        [
+          "Le fantôme de l’Opéra",
+          "Tout le monde parlait d’un fantôme. Le fantôme avait les pieds mouillés.",
+          "🧥 Cape mouillée"
+        ],
+        [
+          "Le ténor Matteo fait ses gammes",
+          "Il répétait en bas, là où personne ne l’entendait. Presque personne.",
+          "🎵 Diapason"
+        ],
+        [
+          "La salle des machines",
+          "La roue qui fait tourner le décor était arrêtée. Quelque chose s’y était coincé.",
+          "⚙️ Engrenage"
+        ],
+        [
+          "Les lettres du fantôme",
+          "Chaque semaine, une lettre à l’encre rouge. Cette semaine, deux.",
+          "✉️ Lettre rouge"
+        ],
+        [
+          "La loge cinq",
+          "La loge cinq ne se vendait jamais. Pourtant, ce soir, quelqu’un y était assis.",
+          "🗝️ Clé de loge"
+        ]
+      ]
+    ],
+    "opera-6": [
+      "Chapitre VI · La générale",
+      "Le nouvel opéra doit être parfait. Répétition générale jusque tard dans la nuit, et l’un des accessoires n’est pas factice.",
+      "La répétition est terminée. Demain, la troupe part en tournée.",
+      "Pendant une répétition, chacun change sans cesse de place, et les déclarations se font avares. Raye ce qui est impossible et regarde ce qui reste.",
+      [
+        [
+          "Encore une fois",
+          "Le chef d’orchestre a tout fait rejouer. Un musicien a joué autre chose.",
+          "🥁 Timbale"
+        ],
+        [
+          "La vraie épée",
+          "Toutes les épées étaient en bois. Sauf une.",
+          "🗡️ Épée de théâtre"
+        ],
+        [
+          "La costumière Eloise fait les essayages",
+          "Chaque costume allait. L’un d’eux avait été retouché pour quelqu’un d’autre.",
+          "📏 Mètre ruban"
+        ],
+        [
+          "La coupe empoisonnée",
+          "Au troisième acte, le roi boit du poison. Ce soir, il avait un goût amer.",
+          "🍷 Coupe en or"
+        ],
+        [
+          "La critique Simone observe",
+          "Elle n’avait pas le droit d’être là. Elle était assise au troisième rang.",
+          "📝 Carnet"
+        ],
+        [
+          "La salle des accessoires",
+          "Chaque objet avait un numéro. Le numéro quatorze avait disparu.",
+          "🏷️ Étiquette numérotée"
+        ],
+        [
+          "La diva Colette refuse",
+          "Elle a refusé d’entrer en scène. Elle savait ce qui était suspendu au-dessus.",
+          "👑 Couronne de théâtre"
+        ],
+        [
+          "Le filage",
+          "Du début à la fin, sans s’arrêter. Une porte est restée fermée.",
+          "🚪 Porte du vestiaire"
+        ]
+      ]
+    ],
+    "opera-7": [
+      "Chapitre VII · La tournée",
+      "Vienne, Milan, Londres. La troupe voyage avec tout le décor, et les ennuis voyagent avec elle.",
+      "Après la dernière ville, le décor rentre à Paris. La troupe aussi, moins une personne.",
+      "Le plateau s’agrandit et les déclarations se font avares. Si le rapport dit qu’une zone était vide, toute cette zone est exclue pour tout le monde.",
+      [
+        [
+          "Vienne",
+          "À Vienne, toute la salle s’est levée pour applaudir. Sauf un fauteuil.",
+          "🍰 Sachertorte"
+        ],
+        [
+          "La malle perdue",
+          "Douze malles ont quitté Paris. Onze sont arrivées.",
+          "🧳 Malle de décor"
+        ],
+        [
+          "Milan",
+          "À la Scala, le ténor Matteo chantait chez lui. Quelqu’un ne le voulait pas.",
+          "🎫 Billet de la Scala"
+        ],
+        [
+          "Le baron Viktor est du voyage",
+          "Il a payé le voyage. Il n’était pas dans la voiture indiquée sur son billet.",
+          "🎩 Haut-de-forme"
+        ],
+        [
+          "Londres dans le brouillard",
+          "À cause du brouillard, personne ne voyait l’autre côté de la scène.",
+          "🫖 Théière"
+        ],
+        [
+          "La costumière Eloise fait les malles",
+          "Deux cents costumes dans cinquante paniers. Un panier était trop lourd.",
+          "🧺 Panier à costumes"
+        ],
+        [
+          "Le train de nuit",
+          "Le train a roulé toute la nuit. Au petit-déjeuner, il manquait quelqu’un.",
+          "🛏️ Wagon-lit"
+        ],
+        [
+          "Retour à Paris",
+          "La police attendait sur le quai. Elle savait quel train.",
+          "🚉 Ticket de quai"
+        ]
+      ]
+    ],
+    "opera-8": [
+      "Chapitre VIII · La dernière",
+      "L’Opéra Lumière ferme pour travaux. Une dernière fois, le rideau se lève, devant le même public que le soir de la première.",
+      "Van Dam se lève le dernier, applaudit une fois et descend le grand escalier, vers la nuit parisienne.",
+      "Les dernières affaires, presque toutes sur le grand plateau. Ne bloque pas sur le suspect le plus difficile : place d’abord les autres, et il ne reste souvent qu’une case pour le dernier.",
+      [
+        [
+          "La même salle",
+          "Chacun occupait le même fauteuil que le soir de la première. Sauf une personne.",
+          "💺 Fauteuil de velours"
+        ],
+        [
+          "Le maestro Armand fait ses adieux",
+          "Il a dirigé ici pendant trente ans. Ce soir, il n’a pas regardé l’orchestre.",
+          "🎖️ Médaille d’honneur"
+        ],
+        [
+          "Le dernier bouquet",
+          "Quarante bouquets sur la scène. L’un d’eux, sans carte.",
+          "💐 Bouquet sans carte"
+        ],
+        [
+          "Le lustre",
+          "Le grand lustre penchait. Quelqu’un était monté là-haut.",
+          "✨ Pampille de cristal"
+        ],
+        [
+          "La danseuse Ninon danse en solo",
+          "Son premier solo. Tout le monde la regardait, sauf une personne.",
+          "🌸 Fleur de coiffure"
+        ],
+        [
+          "La critique Simone écrit",
+          "Son dernier article. Sur le spectacle, et sur le coupable.",
+          "✒️ Porte-plume"
+        ],
+        [
+          "Le chef machiniste Hugo baisse le rideau",
+          "Le rideau est descendu pour la dernière fois. Il a gardé une corde en main.",
+          "🧰 Caisse à outils"
+        ],
+        [
+          "La dernière représentation",
+          "Là où tout a commencé, derrière le rideau. C’est là aussi que tout finit.",
+          "🎟️ Dernier billet"
+        ]
+      ]
     ]
   },
 
@@ -4271,6 +5161,22 @@
         "le": "la pièce",
         "un": "une pièce",
         "ce": "cette pièce"
+      },
+      "hacienda": {
+        "rw": "pièce",
+        "rws": "pièces",
+        "gender": "f",
+        "le": "la pièce",
+        "un": "une pièce",
+        "ce": "cette pièce"
+      },
+      "opera": {
+        "rw": "zone",
+        "rws": "zones",
+        "gender": "f",
+        "le": "la zone",
+        "un": "une zone",
+        "ce": "cette zone"
       }
     },
     "templates": {
@@ -4782,6 +5688,106 @@
           "the": "l’entrée",
           "in": "dans l’entrée"
         }
+      },
+      "hacienda": {
+        "Patio": {
+          "the": "le patio",
+          "in": "dans le patio"
+        },
+        "Stokerij": {
+          "the": "la distillerie",
+          "in": "dans la distillerie"
+        },
+        "Kelder": {
+          "the": "la cave",
+          "in": "à la cave"
+        },
+        "Kapel": {
+          "the": "la chapelle",
+          "in": "dans la chapelle"
+        },
+        "Keuken": {
+          "the": "la cuisine",
+          "in": "dans la cuisine"
+        },
+        "Eetzaal": {
+          "the": "la salle à manger",
+          "in": "dans la salle à manger"
+        },
+        "Stal": {
+          "the": "l’écurie",
+          "in": "dans l’écurie"
+        },
+        "Salon": {
+          "the": "le salon",
+          "in": "dans le salon"
+        },
+        "Veranda": {
+          "the": "la véranda",
+          "in": "sous la véranda"
+        },
+        "Bibliotheek": {
+          "the": "la bibliothèque",
+          "in": "dans la bibliothèque"
+        },
+        "Wasruimte": {
+          "the": "la buanderie",
+          "in": "dans la buanderie"
+        },
+        "Klokkentoren": {
+          "the": "le clocher",
+          "in": "dans le clocher"
+        }
+      },
+      "opera": {
+        "Toneel": {
+          "the": "la scène",
+          "in": "sur la scène"
+        },
+        "Coulisse": {
+          "the": "les coulisses",
+          "in": "dans les coulisses"
+        },
+        "Orkestbak": {
+          "the": "la fosse d’orchestre",
+          "in": "dans la fosse d’orchestre"
+        },
+        "Kleedkamer": {
+          "the": "le vestiaire",
+          "in": "au vestiaire"
+        },
+        "Foyer": {
+          "the": "le foyer",
+          "in": "dans le foyer"
+        },
+        "Loge": {
+          "the": "la loge",
+          "in": "dans la loge"
+        },
+        "Rekwisietenkamer": {
+          "the": "la salle des accessoires",
+          "in": "dans la salle des accessoires"
+        },
+        "Toneelkelder": {
+          "the": "les dessous de scène",
+          "in": "dans les dessous de scène"
+        },
+        "Kostuumatelier": {
+          "the": "la costumerie",
+          "in": "dans la costumerie"
+        },
+        "Directiekamer": {
+          "the": "le bureau",
+          "in": "dans le bureau"
+        },
+        "Repetitiezaal": {
+          "the": "la salle de répétition",
+          "in": "dans la salle de répétition"
+        },
+        "Trappenhuis": {
+          "the": "le grand escalier",
+          "in": "dans le grand escalier"
+        }
       }
     },
     "furniture": {
@@ -4984,6 +5990,56 @@
         "a": "un caquelon",
         "next": "à côté d’un caquelon",
         "with": "avec un caquelon"
+      },
+      "agave": {
+        "a": "un agave",
+        "next": "à côté d’un agave",
+        "with": "avec un agave"
+      },
+      "ketel": {
+        "a": "un alambic en cuivre",
+        "next": "à côté d’un alambic en cuivre",
+        "with": "avec un alambic en cuivre"
+      },
+      "gitaar": {
+        "a": "une guitare",
+        "next": "à côté d’une guitare",
+        "with": "avec une guitare"
+      },
+      "hangmat": {
+        "a": "un hamac",
+        "next": "à côté d’un hamac",
+        "with": "avec un hamac"
+      },
+      "pinata": {
+        "a": "une piñata",
+        "next": "à côté d’une piñata",
+        "with": "avec une piñata"
+      },
+      "paspop": {
+        "a": "un mannequin de couture",
+        "next": "à côté d’un mannequin de couture",
+        "with": "avec un mannequin de couture"
+      },
+      "harp": {
+        "a": "une harpe",
+        "next": "à côté d’une harpe",
+        "with": "avec une harpe"
+      },
+      "masker": {
+        "a": "un masque",
+        "next": "à côté d’un masque",
+        "with": "avec un masque"
+      },
+      "boeket": {
+        "a": "un bouquet",
+        "next": "à côté d’un bouquet",
+        "with": "avec un bouquet"
+      },
+      "toneelkijker": {
+        "a": "une lorgnette",
+        "next": "à côté d’une lorgnette",
+        "with": "avec une lorgnette"
       }
     }
   }

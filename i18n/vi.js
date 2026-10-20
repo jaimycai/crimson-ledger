@@ -911,6 +911,128 @@
           "Jongen Kai": "cậu bé Kai",
           "Berggids Freya": "người dẫn đường Freya"
         }
+      },
+      "hacienda": {
+        "title": "Điền trang San Isidro",
+        "short": "Điền trang",
+        "victimName": "Don Rafael Ortega",
+        "roomWord": "khu vực",
+        "roomWordPlural": "khu vực",
+        "tagline": "Lễ hội cây thùa ở San Isidro. Âm nhạc trong sân, và một ông chủ không bao giờ đứng dậy nữa.",
+        "intro": "Điền trang San Isidro, Jalisco, năm 1952. Thùa đã thu hoạch xong và cả gia đình đang mở tiệc. Rồi người ta thấy Don Rafael nằm trong xưởng rượu, giữa những nồi cất rượu bằng đồng.",
+        "outro": "Những nồi cất đã nguội, tiếng nhạc đã tắt. Bạn biết trong nồi có gì.",
+        "rooms": {
+          "Patio": "Sân",
+          "Stokerij": "Xưởng rượu",
+          "Kelder": "Tầng hầm",
+          "Kapel": "Nhà nguyện",
+          "Keuken": "Nhà bếp",
+          "Eetzaal": "Phòng ăn",
+          "Stal": "Chuồng ngựa",
+          "Salon": "Phòng khách",
+          "Veranda": "Hiên nhà",
+          "Bibliotheek": "Thư viện",
+          "Wasruimte": "Phòng giặt",
+          "Klokkentoren": "Tháp chuông"
+        },
+        "furniture": {
+          "agave": "cây thùa",
+          "ketel": "nồi cất rượu",
+          "gitaar": "đàn guitar",
+          "hangmat": "võng",
+          "pinata": "piñata"
+        },
+        "suspects": {
+          "Doña Inés": "Doña Inés",
+          "Mariachi Rubén": "Mariachi Rubén",
+          "Kokkin Lupita": "Đầu bếp Lupita",
+          "Voorman Esteban": "Đốc công Esteban",
+          "Schilderes Paloma": "Họa sĩ Paloma",
+          "Neef Tomás": "Cháu trai Tomás",
+          "Notaris Guzmán": "Công chứng viên Guzmán",
+          "Zuster Bárbara": "Sơ Bárbara"
+        },
+        "suspectShort": {
+          "Doña Inés": "Inés",
+          "Mariachi Rubén": "Rubén",
+          "Kokkin Lupita": "Lupita",
+          "Voorman Esteban": "Esteban",
+          "Schilderes Paloma": "Paloma",
+          "Neef Tomás": "Tomás",
+          "Notaris Guzmán": "Guzmán",
+          "Zuster Bárbara": "Bárbara"
+        },
+        "suspectRef": {
+          "Doña Inés": "Doña Inés",
+          "Mariachi Rubén": "mariachi Rubén",
+          "Kokkin Lupita": "đầu bếp Lupita",
+          "Voorman Esteban": "đốc công Esteban",
+          "Schilderes Paloma": "họa sĩ Paloma",
+          "Neef Tomás": "cháu trai Tomás",
+          "Notaris Guzmán": "công chứng viên Guzmán",
+          "Zuster Bárbara": "sơ Bárbara"
+        }
+      },
+      "opera": {
+        "title": "Nhà hát Lumière",
+        "short": "Nhà hát",
+        "victimName": "Giám đốc Gaston Leclerc",
+        "roomWord": "khu vực",
+        "roomWordPlural": "khu vực",
+        "tagline": "Nhung đỏ, đèn chùm pha lê và một đêm ra mắt cháy vé. Chỉ có ông giám đốc không quay lại sau giờ giải lao.",
+        "intro": "Nhà hát Lumière, Paris, năm 1891. Vàng, pha lê và nhung đỏ phủ kín tới tận mái, và đêm ra mắt đã cháy vé. Trong giờ giải lao, giám đốc Gaston Leclerc nằm sau sân khấu, dưới những sợi dây treo phông.",
+        "outro": "Tấm màn hạ xuống lần cuối. Tràng pháo tay này dành cho bạn.",
+        "rooms": {
+          "Toneel": "Sân khấu",
+          "Coulisse": "Cánh gà",
+          "Orkestbak": "Hố nhạc",
+          "Kleedkamer": "Phòng thay đồ",
+          "Foyer": "Tiền sảnh",
+          "Loge": "Lô ghế",
+          "Rekwisietenkamer": "Phòng đạo cụ",
+          "Toneelkelder": "Hầm sân khấu",
+          "Kostuumatelier": "Xưởng may",
+          "Directiekamer": "Phòng giám đốc",
+          "Repetitiezaal": "Phòng tập",
+          "Trappenhuis": "Cầu thang"
+        },
+        "furniture": {
+          "paspop": "ma-nơ-canh",
+          "harp": "đàn hạc",
+          "masker": "mặt nạ",
+          "boeket": "bó hoa",
+          "toneelkijker": "ống nhòm"
+        },
+        "suspects": {
+          "Diva Colette": "Diva Colette",
+          "Tenor Matteo": "Tenor Matteo",
+          "Dirigent Armand": "Nhạc trưởng Armand",
+          "Danseres Ninon": "Vũ công Ninon",
+          "Kostumière Eloise": "Thợ may Eloise",
+          "Baron Viktor": "Nam tước Viktor",
+          "Toneelmeester Hugo": "Trưởng hậu đài Hugo",
+          "Recensente Simone": "Nhà phê bình Simone"
+        },
+        "suspectShort": {
+          "Diva Colette": "Colette",
+          "Tenor Matteo": "Matteo",
+          "Dirigent Armand": "Armand",
+          "Danseres Ninon": "Ninon",
+          "Kostumière Eloise": "Eloise",
+          "Baron Viktor": "Viktor",
+          "Toneelmeester Hugo": "Hugo",
+          "Recensente Simone": "Simone"
+        },
+        "suspectRef": {
+          "Diva Colette": "diva Colette",
+          "Tenor Matteo": "tenor Matteo",
+          "Dirigent Armand": "nhạc trưởng Armand",
+          "Danseres Ninon": "vũ công Ninon",
+          "Kostumière Eloise": "thợ may Eloise",
+          "Baron Viktor": "nam tước Viktor",
+          "Toneelmeester Hugo": "trưởng hậu đài Hugo",
+          "Recensente Simone": "nhà phê bình Simone"
+        }
       }
     },
     "daily": [
@@ -993,6 +1115,18 @@
         "Dấu chân không quay về",
         "Đêm của trận tuyết lở thứ hai",
         "Vị khách cuối cùng của Edelweiss"
+      ],
+      "hacienda": [
+        "Thùng rượu không nhãn",
+        "Đêm của chuông nhà nguyện",
+        "Bản di chúc dưới sàn nhà",
+        "Mùa thu hoạch cuối của San Isidro"
+      ],
+      "opera": [
+        "Bóng ma lô số 5",
+        "Khúc aria không ai biết",
+        "Sợi dây bị đứt",
+        "Lần cúi chào cuối cùng của Colette"
       ]
     },
     "medals": {
@@ -1091,6 +1225,14 @@
       "meesterzaken": [
         "Bậc thầy phá án",
         "Giải năm vụ án ở mức bậc thầy"
+      ],
+      "hacienda": [
+        "Thùng rượu cuối cùng",
+        "Hoàn thành mọi phần của Điền trang San Isidro"
+      ],
+      "opera": [
+        "Hạ màn",
+        "Hoàn thành mọi phần của Nhà hát Lumière"
       ]
     },
     "quests": {
@@ -4263,6 +4405,774 @@
           "🌼 Hoa nhung tuyết khô"
         ]
       ]
+    ],
+    "hacienda": [
+      "Phần I · Lễ hội cây thùa",
+      "Điền trang San Isidro, Jalisco, năm 1952. Thùa đã thu hoạch xong và cả gia đình đang mở tiệc. Rồi người ta thấy Don Rafael nằm trong xưởng rượu, giữa những nồi cất rượu bằng đồng.",
+      "Bữa tiệc đã lặng đi. Nhưng cả nhà vẫn ở lại để chờ bản di chúc.",
+      "Điền trang thì rộng, nhưng trong bữa tiệc ai cũng đứng tụ lại với nhau. Hãy bắt đầu với người nói rõ mình ở khu vực nào; “ngay cạnh” nồi cất rượu chỉ tính ô sát bên, không bao giờ tính ô chéo.",
+      [
+        [
+          "Lễ hội cây thùa",
+          "Mùa thu hoạch đã xong. Ông chủ không bước ra ngoài.",
+          "🌵 Lá thùa"
+        ],
+        [
+          "Nồi cất rượu bằng đồng",
+          "Nồi cất vẫn còn ấm. Xưởng rượu đã khóa cửa.",
+          "🔑 Chìa khóa xưởng rượu"
+        ],
+        [
+          "Mariachi Rubén hát",
+          "Anh ta hát bài Don Rafael thích nhất. Không ai vỗ tay.",
+          "🎺 Kèn trumpet"
+        ],
+        [
+          "Pháo hoa trên sân",
+          "Mọi người đều ngước nhìn lên. Gần như mọi người.",
+          "🎆 Pháo thăng thiên"
+        ],
+        [
+          "Đầu bếp Lupita đếm đĩa",
+          "Cô bày bàn cho chín người. Tám người ăn.",
+          "🍽️ Đĩa đất nung"
+        ],
+        [
+          "Chai rượu đầu tiên",
+          "Chai rượu đầu tiên của mùa thu hoạch đã được mở. Không ai mở nó cả.",
+          "🍾 Nút bần"
+        ],
+        [
+          "Doña Inés để tang",
+          "Bà đã mặc đồ đen trước khi có ai hay biết.",
+          "🖤 Khăn choàng ren đen"
+        ],
+        [
+          "Nửa đêm ở San Isidro",
+          "Đồng hồ điểm mười hai tiếng. Thừa một tiếng.",
+          "🕛 Đồng hồ treo tường"
+        ]
+      ]
+    ],
+    "hacienda-2": [
+      "Phần II · Xưởng rượu",
+      "Cảnh sát vẫn đang trên đường từ Guadalajara tới. Trong xưởng rượu, các nồi cất vẫn còn ấm, và có người đã mở vòi.",
+      "Xưởng rượu đã bị niêm phong. Ngày mai công chứng viên sẽ đọc di chúc.",
+      "Trong xưởng rượu, mọi thứ đều xoay quanh các nồi cất. Lời khai về hai người: hãy xác định vị trí của một trong hai người trước.",
+      [
+        [
+          "Chiếc vòi bị mở",
+          "Cả một nồi cất chảy cạn ra sàn. Không ai nghe thấy gì.",
+          "🚰 Vòi đồng"
+        ],
+        [
+          "Đốc công Esteban nếm thử",
+          "Ông nếm thử từng nồi cất. Có một nồi ông bỏ qua.",
+          "🥃 Ly nếm rượu"
+        ],
+        [
+          "Sổ thu hoạch",
+          "Trong sổ ghi mười chiếc xe kéo. Ngoài bãi có chín chiếc.",
+          "📒 Sổ thu hoạch"
+        ],
+        [
+          "Lửa dưới nồi cất",
+          "Lửa cháy suốt đêm. Có người đã thêm củi.",
+          "🪵 Củi mesquite"
+        ],
+        [
+          "Cháu trai Tomás từ thành phố",
+          "Anh ta nói ngày mai mới tới. Xe của anh ta đã đỗ sẵn ngoài bãi.",
+          "🎩 Mũ phớt thành thị"
+        ],
+        [
+          "Thừa hai thùng rượu",
+          "Trong tầng hầm có hai thùng rượu không nhãn.",
+          "🛢️ Thùng gỗ sồi"
+        ],
+        [
+          "Họa sĩ Paloma phác họa",
+          "Cô vẽ xưởng rượu lúc chín giờ. Trong bức vẽ, có đèn sáng.",
+          "🖌️ Bản phác họa"
+        ],
+        [
+          "Bí mật của nồi cất",
+          "Thứ trong nồi cất không phải là tequila.",
+          "⚗️ Bình chưng cất"
+        ]
+      ]
+    ],
+    "hacienda-3": [
+      "Phần III · Bản di chúc",
+      "Cả gia đình ngồi trong phòng khách. Công chứng viên Guzmán mở bản di chúc, và không phải ai cũng nghe thấy tên mình.",
+      "Di chúc đã được đọc xong. Những người thừa kế không còn nhìn mặt nhau nữa.",
+      "Ai cũng muốn một phần gia tài và ai cũng nói về người khác. Người nói mình KHÔNG ở đâu cũng cho bạn biết điều gì đó: hãy gạch bỏ khu vực đó ngay.",
+      [
+        [
+          "Buổi đọc di chúc",
+          "Công chứng viên đọc ba trang. Bản di chúc có bốn trang.",
+          "📜 Di chúc"
+        ],
+        [
+          "Chiếc hộp niêm phong",
+          "Dấu niêm phong còn nguyên. Chiếc hộp thì trống rỗng.",
+          "🔏 Dấu sáp niêm phong"
+        ],
+        [
+          "Công chứng viên Guzmán đổ mồ hôi",
+          "Ông lau kính ba lần. Trời đâu có nóng.",
+          "👓 Kính của công chứng viên"
+        ],
+        [
+          "Người thừa kế bị lãng quên",
+          "Trong di chúc có một cái tên không ai biết.",
+          "🪪 Hộ chiếu cũ"
+        ],
+        [
+          "Cháu trai Tomás tính toán",
+          "Anh ta đã tiêu hết phần thừa kế của mình. Từ năm ngoái.",
+          "🧾 Giấy nợ"
+        ],
+        [
+          "Chữ ký",
+          "Có hai chữ ký của Don Rafael. Một chữ ký đẹp quá mức.",
+          "🖋️ Bút máy"
+        ],
+        [
+          "Doña Inés không ký",
+          "Bà từ chối ký. Bà biết vì sao.",
+          "💍 Nhẫn cưới"
+        ],
+        [
+          "Phụ lục cuối cùng",
+          "Dưới sàn thư viện còn một lá thư nữa.",
+          "✉️ Phụ lục di chúc"
+        ]
+      ]
+    ],
+    "hacienda-4": [
+      "Phần IV · Nhà nguyện",
+      "Trước tang lễ, nến thắp sáng nhà nguyện suốt đêm. Ai cũng đến cầu nguyện, và một băng ghế vẫn bỏ trống.",
+      "Nến đã cháy hết. Gia đình khiêng Don Rafael ra ngoài.",
+      "Trong nhà nguyện, ai cũng ngồi yên, nên hãy để ý ai ngồi cạnh ai. Hãy đặt nghi phạm có ít lựa chọn nhất trước; phần còn lại sẽ theo sau.",
+      [
+        [
+          "Đêm canh thức",
+          "Cả gia đình ngồi cùng nhau đến nửa đêm. Sau đó thì không.",
+          "🕯️ Nến bàn thờ"
+        ],
+        [
+          "Sơ Bárbara cầu nguyện",
+          "Sơ cầu nguyện cho tất cả mọi người. Sơ bỏ qua một cái tên.",
+          "📿 Chuỗi tràng hạt"
+        ],
+        [
+          "Băng ghế trống",
+          "Băng ghế đầu có tám chỗ. Có bảy người.",
+          "🪑 Ghế nhà thờ"
+        ],
+        [
+          "Tháp chuông",
+          "Lúc ba giờ, chuông đổ. Không ai chạm vào dây chuông.",
+          "🔔 Dây chuông"
+        ],
+        [
+          "Đầu bếp Lupita nấu ăn",
+          "Cô nấu cho cả đêm canh thức. Có một nồi không ai đụng đến.",
+          "🍲 Pozole"
+        ],
+        [
+          "Hương trầm",
+          "Hương trầm được đốt quá sớm. Đã có người vào nhà nguyện từ trước.",
+          "🪔 Bình hương"
+        ],
+        [
+          "Lời xưng tội",
+          "Có người đã xưng tội. Sơ không nói là ai.",
+          "🚪 Tòa giải tội"
+        ],
+        [
+          "Lời từ biệt",
+          "Quan tài vẫn còn đóng. Đã có một bông hoa đặt trên đó.",
+          "🌹 Hoa hồng đỏ"
+        ]
+      ]
+    ],
+    "hacienda-5": [
+      "Phần V · Ngày của người chết",
+      "Một năm sau. Cúc vạn thọ trên bàn thờ, đầu lâu bằng đường trên bàn ăn, và cả gia đình đã trở lại San Isidro.",
+      "Nến trên bàn thờ tắt dần. Don Rafael đã được yên nghỉ, gần như vậy.",
+      "Vào Ngày của người chết, nhà đông nghịt người. Hãy bắt đầu với người nói không ai ở cùng khu vực với mình: mọi người khác bị loại khỏi khu vực đó ngay lập tức.",
+      [
+        [
+          "Bàn thờ",
+          "Trên bàn thờ có tám tấm ảnh. Hôm qua chỉ có bảy.",
+          "🖼️ Khung ảnh"
+        ],
+        [
+          "Cúc vạn thọ",
+          "Một vệt hoa màu cam dẫn xuống tầng hầm.",
+          "🌼 Hoa cúc vạn thọ"
+        ],
+        [
+          "Đầu lâu bằng đường",
+          "Đầu lâu nào cũng có một cái tên. Trên một chiếc là tên của một người còn sống.",
+          "💀 Đầu lâu đường"
+        ],
+        [
+          "Mariachi Rubén chơi nhạc cho người chết",
+          "Anh ta chơi bài hát của Don Rafael. Có người hát theo, dù lẽ ra không thể biết bài đó.",
+          "🎸 Dây đàn guitar"
+        ],
+        [
+          "Chiếc piñata",
+          "Chiếc piñata đã bị mở ra trước khi bọn trẻ đến.",
+          "🪅 Piñata"
+        ],
+        [
+          "Họa sĩ Paloma trở lại",
+          "Cô vẽ bàn thờ. Trong bức tranh có một người không hề có mặt ở đó.",
+          "🎨 Bảng màu"
+        ],
+        [
+          "Pan de muerto",
+          "Đầu bếp Lupita nướng mười hai ổ bánh. Chỉ có mười một ổ.",
+          "🍞 Bánh pan de muerto"
+        ],
+        [
+          "Đêm của những linh hồn",
+          "Ai cũng thấy một hồn ma trong sân. Có một hồn ma đi giày.",
+          "👞 Giày dính bùn"
+        ]
+      ]
+    ],
+    "hacienda-6": [
+      "Phần VI · Mùa khô",
+      "Đã mấy tháng trời không mưa. Giếng cạn, thùa héo úa, và có người đã bán nước.",
+      "Cuối cùng trời cũng mưa. Nước đã có lại, thủ phạm cũng đã lộ mặt.",
+      "Hạn hán khiến người ta cộc lốc, và lời khai cũng dè sẻn hơn. Hãy dùng bút chì: gạch bỏ những ô không phù hợp, rồi xem còn lại gì.",
+      [
+        [
+          "Giếng cạn",
+          "Chiếc gầu kéo lên khô khốc. Hôm qua thì chưa.",
+          "🪣 Gầu múc nước"
+        ],
+        [
+          "Đốc công Esteban đào giếng",
+          "Ông đào một cái giếng mới. Ở sai chỗ.",
+          "⛏️ Cuốc chim"
+        ],
+        [
+          "Sổ nước",
+          "Bình nước nào cũng được ghi vào sổ. Trừ mười bình cuối cùng.",
+          "📘 Sổ nước"
+        ],
+        [
+          "Thùa héo úa",
+          "Cả một luống thùa đã chết. Chỉ luống đó thôi.",
+          "🥀 Lá héo"
+        ],
+        [
+          "Đầu bếp Lupita tiết kiệm",
+          "Cô để dành nước cho nhà bếp. Vò nước của cô đã cạn.",
+          "🏺 Vò nước"
+        ],
+        [
+          "Cháu trai Tomás bán nước",
+          "Anh ta bán nước cho hàng xóm. Nước của ai?",
+          "💵 Tờ peso"
+        ],
+        [
+          "Chiếc võng",
+          "Không ai nằm trên võng. Vậy mà nó vẫn đung đưa.",
+          "🪢 Dây võng"
+        ],
+        [
+          "Cơn mưa đầu tiên",
+          "Khi mưa đến, mọi người đều chạy ra ngoài. Trừ một người.",
+          "🌧️ Thùng hứng nước mưa"
+        ]
+      ]
+    ],
+    "hacienda-7": [
+      "Phần VII · Phiên chợ ngựa",
+      "Người mua từ ba làng tụ tập ngoài bãi. Ngựa, tiền và yên cương đổi chủ, và một con ngựa không trở về.",
+      "Người mua đã đi hết và chuồng ngựa đã yên. Con ngựa mất tích đã về lại chỗ của nó.",
+      "Bàn chơi lớn hơn, còn lời khai thì dè sẻn hơn. Nếu báo cáo nói một khu vực bỏ trống, thì cả khu vực đó bị loại đối với mọi người.",
+      [
+        [
+          "Người mua đầu tiên",
+          "Ông ta trả bằng vàng. Cho một con ngựa không hề rao bán.",
+          "🪙 Đồng tiền vàng"
+        ],
+        [
+          "Con ngựa đen",
+          "Chuồng của nó trống trơn. Bộ yên vẫn còn treo ở đó.",
+          "🐎 Ngựa đen"
+        ],
+        [
+          "Đốc công Esteban mặc cả",
+          "Ông ra giá quá thấp. Thấp đến vô lý.",
+          "🤝 Cái bắt tay"
+        ],
+        [
+          "Thợ đóng móng ngựa",
+          "Bốn chiếc móng sắt được đặt làm. Chỉ có ba chiếc.",
+          "🔨 Búa thợ rèn"
+        ],
+        [
+          "Sơ Bárbara ban phép lành",
+          "Sơ ban phép lành cho từng con ngựa. Con cuối cùng hoảng sợ né tránh sơ.",
+          "💧 Nước thánh"
+        ],
+        [
+          "Sổ chuồng ngựa",
+          "Con ngựa nào cũng có tên trong sổ. Con ngựa mất tích thì không còn nữa.",
+          "📖 Sổ chuồng ngựa"
+        ],
+        [
+          "Cuộc phi ngựa trong đêm",
+          "Lúc hai giờ, ai cũng nghe tiếng vó ngựa. Không ai ra xem.",
+          "🌙 Trăng khuyết"
+        ],
+        [
+          "Bộ yên của Don Rafael",
+          "Bộ yên của ông treo trên tường suốt một năm. Hôm nay lớp da lại ấm.",
+          "🏇 Yên ngựa bạc"
+        ]
+      ]
+    ],
+    "hacienda-8": [
+      "Phần VIII · Từ biệt San Isidro",
+      "Điền trang sắp được bán. Một bữa tiệc cuối cùng trong sân, với những gương mặt của đêm đầu tiên.",
+      "Van Dam đội mũ lên, gật đầu chào cả nhà, rồi theo chuyến xe kéo cuối cùng ra ga. San Isidro không còn bí mật nào nữa.",
+      "Những vụ án cuối cùng, gần như đều trên bàn chơi lớn. Đừng sa lầy vào người khó nhất: hãy đặt những người khác trước, khi đó người cuối cùng thường chỉ còn đúng một ô.",
+      [
+        [
+          "Người mua",
+          "Người mua đến từ Thành phố Mexico. Ông ta biết đường xuống tầng hầm.",
+          "📝 Hợp đồng mua bán"
+        ],
+        [
+          "Thùng rượu cuối cùng",
+          "Một thùng rượu ở lại. Trên đó có ghi năm: 1952.",
+          "🏷️ Nhãn thùng rượu"
+        ],
+        [
+          "Doña Inés thu dọn hành lý",
+          "Bà chỉ mang theo một chiếc hộp nhỏ. Chiếc hộp rất nặng.",
+          "🧳 Vali"
+        ],
+        [
+          "Đồng hồ tháp ở lại",
+          "Chiếc đồng hồ trên tháp không được mang theo. Có người lại muốn mang nó đi.",
+          "🕰️ Đồng hồ tháp"
+        ],
+        [
+          "Mariachi Rubén chơi bài cuối cùng",
+          "Bài hát của đêm đầu tiên. Lần này có một đoạn lời khác.",
+          "🎼 Bản nhạc"
+        ],
+        [
+          "Bức chân dung Don Rafael",
+          "Bức chân dung được cho vào thùng. Sau khung tranh có một lá thư.",
+          "💌 Lá thư giấu kín"
+        ],
+        [
+          "Công chứng viên Guzmán khép hồ sơ",
+          "Ông đóng dấu lên văn tự cuối cùng. Con dấu vẫn còn ướt mực.",
+          "📎 Văn tự cuối cùng"
+        ],
+        [
+          "Từ biệt San Isidro",
+          "Nơi mọi chuyện bắt đầu, bên những nồi cất rượu. Cũng là nơi mọi chuyện kết thúc.",
+          "🍶 Chai rượu cuối cùng"
+        ]
+      ]
+    ],
+    "opera": [
+      "Phần I · Đêm ra mắt",
+      "Nhà hát Lumière, Paris, năm 1891. Vàng, pha lê và một khán phòng cháy vé. Trong giờ giải lao, giám đốc Leclerc nằm sau sân khấu, dưới những sợi dây treo phông.",
+      "Màn đã hạ và khán phòng đã vắng. Nhưng ngày mai buổi diễn vẫn tiếp tục.",
+      "Nhà hát opera là một mê cung hành lang và cầu thang. Hãy bắt đầu với người nói rõ mình ở khu vực nào; “ngay cạnh” cây đàn hạc chỉ tính ô sát bên, không bao giờ tính ô chéo.",
+      [
+        [
+          "Màn nhung kéo lên",
+          "Khán phòng cháy vé. Lô ghế của giám đốc vẫn trống.",
+          "🎟️ Vé vào cửa"
+        ],
+        [
+          "Giờ giải lao",
+          "Hai mươi phút giải lao. Đủ thời gian cho một việc.",
+          "🥂 Ly sâm panh"
+        ],
+        [
+          "Diva Colette hát",
+          "Cô lên được nốt cao. Sau sân khấu, có thứ gì đó rơi xuống.",
+          "💎 Hoa tai kim cương"
+        ],
+        [
+          "Những sợi dây treo",
+          "Sau sân khấu có cả trăm sợi dây. Một sợi đã bị cắt đứt.",
+          "✂️ Cây kéo"
+        ],
+        [
+          "Trưởng hậu đài Hugo đếm",
+          "Anh ta đếm các đối trọng. Thừa ra một cái.",
+          "⚖️ Đối trọng"
+        ],
+        [
+          "Tràng pháo tay",
+          "Mười phút vỗ tay. Không ai nghe thấy tiếng va đập phía sau.",
+          "💐 Bó hoa"
+        ],
+        [
+          "Nam tước Viktor trả tiền",
+          "Nam tước bỏ tiền cho đêm ra mắt. Ông ta không ở lại đến cuối.",
+          "💰 Túi tiền"
+        ],
+        [
+          "Sau buổi diễn",
+          "Khán phòng vãn người. Sau tấm màn, giám đốc nằm đó.",
+          "🎭 Mặt nạ kịch"
+        ]
+      ]
+    ],
+    "opera-2": [
+      "Phần II · Sau tấm màn",
+      "Buổi diễn vẫn tiếp tục, cảnh sát đi lại sau sân khấu. Dây thừng, cửa sập và đối trọng: ở đây chỉ có đội hậu đài biết đường.",
+      "Dây treo đã được đếm xong. Ngày mai chương trình có một khúc aria mới.",
+      "Sau tấm màn, mọi thứ đều sát nhau. Lời khai về hai người: hãy xác định vị trí của một trong hai người trước.",
+      [
+        [
+          "Cửa sập",
+          "Cửa sập trên sân khấu đang mở. Không ai dùng đến nó.",
+          "🕳️ Cửa sập"
+        ],
+        [
+          "Tiếng thì thầm trong cánh gà",
+          "Có người thì thầm trong cánh gà. Ai cũng nghe thấy, không ai biết là ai.",
+          "🧣 Khăn lụa"
+        ],
+        [
+          "Trưởng hậu đài Hugo thắt nút",
+          "Anh ta tự tay thắt mọi nút dây. Nút này thì không.",
+          "🪢 Nút thủy thủ"
+        ],
+        [
+          "Cảnh trí hồi hai",
+          "Một tòa lâu đài bằng bìa cứng. Sau cánh cửa có một người thật.",
+          "🏰 Lâu đài bìa cứng"
+        ],
+        [
+          "Vũ công Ninon chờ",
+          "Cô chờ đến lượt ra sân khấu. Lượt đó không bao giờ đến.",
+          "🩰 Giày ba lê"
+        ],
+        [
+          "Người nhắc tuồng",
+          "Từ hộp nhắc tuồng không vọng ra lời nào. Không có ai trong đó.",
+          "📃 Sổ nhắc tuồng"
+        ],
+        [
+          "Bao cát",
+          "Một bao cát rơi xuống, cách chàng tenor hai mét.",
+          "🪨 Bao cát"
+        ],
+        [
+          "Sau tấm màn",
+          "Khi màn kéo lên, trên sân khấu thừa ra một người.",
+          "💡 Đèn chân sân khấu"
+        ]
+      ]
+    ],
+    "opera-3": [
+      "Phần III · Bản nhạc mất tích",
+      "Một giờ trước buổi diễn, khúc aria mới biến mất. Không có bản nhạc thì không có đêm ra mắt, và có người biết điều đó.",
+      "Bản nhạc đã nằm lại trong hố nhạc. Diva Colette cất tiếng hát, như thể chưa có chuyện gì xảy ra.",
+      "Ai cũng tìm bản nhạc và ai cũng chỉ tay vào người khác. Người nói mình KHÔNG ở đâu cũng cho bạn biết điều gì đó: hãy gạch bỏ khu vực đó ngay.",
+      [
+        [
+          "Tập nhạc trống",
+          "Nhạc trưởng mở tập nhạc ra. Bên trong trống trơn.",
+          "🎼 Tập nhạc trống"
+        ],
+        [
+          "Nhạc trưởng Armand tìm kiếm",
+          "Ông tìm trong hố nhạc. Ông biết phải tìm ở đâu.",
+          "🪄 Đũa chỉ huy"
+        ],
+        [
+          "Ba bản sao",
+          "Ba bản sao của khúc aria. Tìm thấy hai.",
+          "📄 Bản sao"
+        ],
+        [
+          "Thợ may Eloise khâu vá",
+          "Trong gấu một chiếc váy có giấy.",
+          "🪡 Kim khâu"
+        ],
+        [
+          "Vết mực",
+          "Trên ngón tay của một người có mực. Mực của nhà soạn nhạc.",
+          "🫙 Lọ mực"
+        ],
+        [
+          "Nhà phê bình Simone đã biết trước",
+          "Bài phê bình của cô đã viết xong. Về một khúc aria chưa ai từng nghe.",
+          "📰 Báo buổi sáng"
+        ],
+        [
+          "Lò sưởi đang cháy",
+          "Lò sưởi trong phòng giám đốc đang cháy. Bên cạnh có giấy.",
+          "🔥 Giấy cháy dở"
+        ],
+        [
+          "Khúc aria",
+          "Khúc aria đã được hát. Nhưng bằng giọng của người khác.",
+          "🎶 Khúc aria"
+        ]
+      ]
+    ],
+    "opera-4": [
+      "Phần IV · Vũ hội mặt nạ",
+      "Vũ hội mặt nạ thường niên ở tiền sảnh. Ai cũng đeo mặt nạ, và không ai biết ai đã đứng cạnh ai.",
+      "Nửa đêm, mặt nạ được tháo xuống. Không phải ai cũng cười.",
+      "Đeo mặt nạ thì không ai nhận ra ai, nhưng sơ đồ không biết nói dối. Hãy đặt nghi phạm có ít lựa chọn nhất trước; phần còn lại sẽ theo sau.",
+      [
+        [
+          "Đeo mặt nạ",
+          "Hai trăm vị khách, hai trăm chiếc mặt nạ. Thừa một chiếc.",
+          "🦚 Lông công"
+        ],
+        [
+          "Điệu valse",
+          "Dàn nhạc chơi một điệu valse. Có một cặp không nhảy.",
+          "🎻 Đàn vĩ cầm"
+        ],
+        [
+          "Nam tước Viktor không nhận ra ai",
+          "Ông ta quen tất cả mọi người ở Paris. Tối nay thì không ai.",
+          "🧐 Kính một mắt"
+        ],
+        [
+          "Chiếc mặt nạ đỏ",
+          "Ai cũng mặc đồ trắng. Trừ một người.",
+          "🪶 Lông vũ đỏ"
+        ],
+        [
+          "Vũ công Ninon nhảy với nam tước",
+          "Họ nhảy ba điệu. Điệu thứ ba cô nhảy một mình.",
+          "👠 Giày dạ hội"
+        ],
+        [
+          "Sâm panh lúc nửa đêm",
+          "Chai rượu nổ nút lúc mười hai giờ. Tiếng nổ thứ hai thì không phải từ chai rượu.",
+          "🍾 Chai sâm panh"
+        ],
+        [
+          "Sảnh gương",
+          "Trong gương có một người không hề ở đó.",
+          "🪞 Gương cầm tay"
+        ],
+        [
+          "Tháo mặt nạ",
+          "Nửa đêm, mọi người tháo mặt nạ. Có một gương mặt không ai nhận ra.",
+          "🎀 Dây buộc mặt nạ"
+        ]
+      ]
+    ],
+    "opera-5": [
+      "Phần V · Hầm sân khấu",
+      "Bên dưới sân khấu là cả một tòa nhà thứ hai: hành lang, máy móc và một hồ nước ngầm. Có người đang lang thang dưới đó.",
+      "Các cửa sập đã đóng. Những gì nằm bên dưới đã lộ ra.",
+      "Dưới hầm, bạn chẳng thấy được bao nhiêu. Lời khai về hàng và cột xuyên thẳng qua các bức tường: hãy dùng bút chì.",
+      [
+        [
+          "Cầu thang đi xuống",
+          "Một trăm bậc xuống hầm. Trên bậc cuối có một chiếc găng tay.",
+          "🧤 Găng tay trắng"
+        ],
+        [
+          "Hồ nước ngầm",
+          "Bên dưới tòa nhà có nước. Trên mặt nước có một chiếc thuyền không ai biết.",
+          "🛶 Thuyền chèo"
+        ],
+        [
+          "Trưởng hậu đài Hugo xuống hầm",
+          "Anh ta cầm đèn lồng đi xuống. Lúc trở lên thì không còn đèn.",
+          "🏮 Đèn lồng"
+        ],
+        [
+          "Bóng ma nhà hát",
+          "Ai cũng nói về một bóng ma. Bóng ma ấy ướt chân.",
+          "🧥 Áo choàng ướt"
+        ],
+        [
+          "Tenor Matteo luyện giọng",
+          "Anh ta luyện giọng dưới hầm, nơi không ai nghe thấy. Gần như không ai.",
+          "🎵 Âm thoa"
+        ],
+        [
+          "Phòng máy",
+          "Bánh xe quay cảnh trí đã đứng im. Có thứ gì đó kẹt bên trong.",
+          "⚙️ Bánh răng"
+        ],
+        [
+          "Thư của bóng ma",
+          "Tuần nào cũng có một lá thư mực đỏ. Tuần này có hai.",
+          "✉️ Thư mực đỏ"
+        ],
+        [
+          "Lô số 5",
+          "Lô số 5 chưa bao giờ được bán vé. Vậy mà tối nay có người ngồi đó.",
+          "🗝️ Chìa khóa lô ghế"
+        ]
+      ]
+    ],
+    "opera-6": [
+      "Phần VI · Buổi tổng duyệt",
+      "Vở opera mới phải thật hoàn hảo. Buổi tổng duyệt kéo dài đến tận khuya, và có một đạo cụ là đồ thật.",
+      "Buổi tổng duyệt đã xong. Ngày mai đoàn đi lưu diễn.",
+      "Trong buổi tổng duyệt, ai cũng liên tục đổi chỗ, và lời khai cũng dè sẻn hơn. Hãy gạch bỏ những gì không thể đúng, rồi xem còn lại gì.",
+      [
+        [
+          "Thêm một lần nữa",
+          "Nhạc trưởng bắt chơi lại từ đầu. Có một nhạc công chơi khác đi.",
+          "🥁 Trống định âm"
+        ],
+        [
+          "Thanh kiếm thật",
+          "Mọi thanh kiếm đều bằng gỗ. Trừ một thanh.",
+          "🗡️ Kiếm sân khấu"
+        ],
+        [
+          "Thợ may Eloise thử đồ",
+          "Bộ trang phục nào cũng vừa. Có một bộ đã được sửa cho người khác.",
+          "📏 Thước dây"
+        ],
+        [
+          "Chiếc chén độc",
+          "Ở hồi ba, nhà vua uống thuốc độc. Tối nay nó có vị đắng.",
+          "🍷 Chén vàng"
+        ],
+        [
+          "Nhà phê bình Simone ngồi xem",
+          "Cô không được phép có mặt. Cô ngồi ở hàng ghế thứ ba.",
+          "📝 Sổ ghi chép"
+        ],
+        [
+          "Phòng đạo cụ",
+          "Món đồ nào cũng có số. Số mười bốn đã biến mất.",
+          "🏷️ Thẻ số"
+        ],
+        [
+          "Diva Colette từ chối",
+          "Cô từ chối ra sân khấu. Cô biết thứ gì đang treo phía trên.",
+          "👑 Vương miện sân khấu"
+        ],
+        [
+          "Diễn liền một mạch",
+          "Từ đầu đến cuối, không dừng lại. Có một cánh cửa vẫn đóng.",
+          "🚪 Cửa phòng thay đồ"
+        ]
+      ]
+    ],
+    "opera-7": [
+      "Phần VII · Chuyến lưu diễn",
+      "Vienna, Milan, London. Đoàn mang theo toàn bộ cảnh trí, và rắc rối cũng đi theo.",
+      "Sau thành phố cuối cùng, cảnh trí được chở về Paris. Cả đoàn cũng về, trừ một người.",
+      "Bàn chơi lớn hơn, còn lời khai thì dè sẻn hơn. Nếu báo cáo nói một khu vực bỏ trống, thì cả khu vực đó bị loại đối với mọi người.",
+      [
+        [
+          "Vienna",
+          "Ở Vienna, khán giả đứng dậy vỗ tay. Trừ một chiếc ghế.",
+          "🍰 Bánh Sacher"
+        ],
+        [
+          "Chiếc rương thất lạc",
+          "Mười hai chiếc rương rời Paris. Mười một chiếc đến nơi.",
+          "🧳 Rương cảnh trí"
+        ],
+        [
+          "Milan",
+          "Ở nhà hát La Scala, tenor Matteo hát trên sân nhà. Có người không muốn vậy.",
+          "🎫 Vé La Scala"
+        ],
+        [
+          "Nam tước Viktor đi cùng",
+          "Ông ta trả tiền cho chuyến đi. Ông ta ngồi ở một toa khác với toa ghi trên vé.",
+          "🎩 Mũ chóp cao"
+        ],
+        [
+          "London trong sương mù",
+          "Qua làn sương mù, không ai nhìn thấy phía bên kia sân khấu.",
+          "🫖 Ấm trà"
+        ],
+        [
+          "Thợ may Eloise đóng gói",
+          "Hai trăm bộ trang phục trong năm mươi chiếc giỏ. Một chiếc giỏ nặng quá mức.",
+          "🧺 Giỏ trang phục"
+        ],
+        [
+          "Chuyến tàu đêm",
+          "Đoàn tàu chạy xuyên đêm. Đến bữa sáng thì thiếu một người.",
+          "🛏️ Khoang giường nằm"
+        ],
+        [
+          "Trở về Paris",
+          "Cảnh sát đã chờ sẵn trên sân ga. Họ biết là chuyến tàu nào.",
+          "🚉 Vé sân ga"
+        ]
+      ]
+    ],
+    "opera-8": [
+      "Phần VIII · Buổi diễn cuối cùng",
+      "Nhà hát Lumière đóng cửa để tu sửa. Màn nhung kéo lên lần cuối, trước những khán giả của đêm ra mắt.",
+      "Van Dam là người cuối cùng đứng dậy khỏi ghế. Ông vỗ tay một lần rồi bước xuống cầu thang, đi vào màn đêm Paris.",
+      "Những vụ án cuối cùng, gần như đều trên bàn chơi lớn. Đừng sa lầy vào người khó nhất: hãy đặt những người khác trước, khi đó người cuối cùng thường chỉ còn đúng một ô.",
+      [
+        [
+          "Cùng một khán phòng",
+          "Ai cũng ngồi đúng chiếc ghế như đêm ra mắt. Trừ một người.",
+          "💺 Ghế nhung"
+        ],
+        [
+          "Nhạc trưởng Armand từ biệt",
+          "Ba mươi năm ông chỉ huy ở đây. Tối nay ông không nhìn về phía dàn nhạc.",
+          "🎖️ Huy chương danh dự"
+        ],
+        [
+          "Bó hoa cuối cùng",
+          "Trên sân khấu có bốn mươi bó hoa. Một bó không có thiệp.",
+          "💐 Bó hoa không thiệp"
+        ],
+        [
+          "Đèn chùm",
+          "Chiếc đèn chùm lớn treo lệch. Đã có người lên trên đó.",
+          "✨ Giọt pha lê"
+        ],
+        [
+          "Vũ công Ninon múa đơn",
+          "Màn múa đơn đầu tiên của cô. Ai cũng nhìn cô, trừ một người.",
+          "🌸 Hoa cài tóc"
+        ],
+        [
+          "Nhà phê bình Simone viết bài",
+          "Bài phê bình cuối cùng của cô. Về buổi diễn, và về thủ phạm.",
+          "✒️ Bút chấm mực"
+        ],
+        [
+          "Trưởng hậu đài Hugo hạ màn",
+          "Tấm màn hạ xuống lần cuối. Anh ta vẫn giữ chặt một sợi dây.",
+          "🧰 Hộp đồ nghề"
+        ],
+        [
+          "Buổi diễn cuối cùng",
+          "Nơi mọi chuyện bắt đầu, sau tấm màn. Cũng là nơi mọi chuyện kết thúc.",
+          "🎟️ Tấm vé cuối cùng"
+        ]
+      ]
     ]
   },
 
@@ -4319,6 +5229,14 @@
       "skihut": {
         "rw": "phòng",
         "rws": "phòng"
+      },
+      "hacienda": {
+        "rw": "khu vực",
+        "rws": "khu vực"
+      },
+      "opera": {
+        "rw": "khu vực",
+        "rws": "khu vực"
       }
     },
     "furniture": {
@@ -4441,6 +5359,36 @@
       },
       "fondue": {
         "a": "một nồi lẩu phô mai"
+      },
+      "agave": {
+        "a": "một cây thùa"
+      },
+      "ketel": {
+        "a": "một nồi cất rượu"
+      },
+      "gitaar": {
+        "a": "một cây đàn guitar"
+      },
+      "hangmat": {
+        "a": "một chiếc võng"
+      },
+      "pinata": {
+        "a": "một chiếc piñata"
+      },
+      "paspop": {
+        "a": "một chiếc ma-nơ-canh"
+      },
+      "harp": {
+        "a": "một cây đàn hạc"
+      },
+      "masker": {
+        "a": "một chiếc mặt nạ"
+      },
+      "boeket": {
+        "a": "một bó hoa"
+      },
+      "toneelkijker": {
+        "a": "một chiếc ống nhòm"
       }
     },
     "templates": {
@@ -4863,6 +5811,86 @@
         },
         "Hal": {
           "the": "sảnh"
+        }
+      },
+      "hacienda": {
+        "Patio": {
+          "the": "sân"
+        },
+        "Stokerij": {
+          "the": "xưởng rượu"
+        },
+        "Kelder": {
+          "the": "tầng hầm"
+        },
+        "Kapel": {
+          "the": "nhà nguyện"
+        },
+        "Keuken": {
+          "the": "nhà bếp"
+        },
+        "Eetzaal": {
+          "the": "phòng ăn"
+        },
+        "Stal": {
+          "the": "chuồng ngựa"
+        },
+        "Salon": {
+          "the": "phòng khách"
+        },
+        "Veranda": {
+          "the": "hiên nhà",
+          "in": "trên hiên nhà"
+        },
+        "Bibliotheek": {
+          "the": "thư viện"
+        },
+        "Wasruimte": {
+          "the": "phòng giặt"
+        },
+        "Klokkentoren": {
+          "the": "tháp chuông",
+          "in": "trên tháp chuông"
+        }
+      },
+      "opera": {
+        "Toneel": {
+          "the": "sân khấu",
+          "in": "trên sân khấu"
+        },
+        "Coulisse": {
+          "the": "cánh gà"
+        },
+        "Orkestbak": {
+          "the": "hố nhạc"
+        },
+        "Kleedkamer": {
+          "the": "phòng thay đồ"
+        },
+        "Foyer": {
+          "the": "tiền sảnh"
+        },
+        "Loge": {
+          "the": "lô ghế"
+        },
+        "Rekwisietenkamer": {
+          "the": "phòng đạo cụ"
+        },
+        "Toneelkelder": {
+          "the": "hầm sân khấu"
+        },
+        "Kostuumatelier": {
+          "the": "xưởng may"
+        },
+        "Directiekamer": {
+          "the": "phòng giám đốc"
+        },
+        "Repetitiezaal": {
+          "the": "phòng tập"
+        },
+        "Trappenhuis": {
+          "the": "cầu thang",
+          "in": "trên cầu thang"
         }
       }
     }

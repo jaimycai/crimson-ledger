@@ -831,6 +831,108 @@
           "Jongen Kai": "Kai",
           "Berggids Freya": "Freya"
         }
+      },
+      "hacienda": {
+        "title": "Hacienda San Isidro",
+        "short": "Hacienda",
+        "victimName": "Don Rafael Ortega",
+        "roomWord": "ruangan",
+        "roomWordPlural": "ruangan",
+        "tagline": "Pesta agave San Isidro. Musik di patio, dan sang patrón yang tak bangkit lagi.",
+        "intro": "Hacienda San Isidro, Jalisco, 1952. Agave sudah dipanen dan seluruh keluarga berpesta. Lalu Don Rafael ditemukan tergeletak di penyulingan, di antara ketel-ketel tembaga.",
+        "outro": "Ketel-ketel mendingin, musik pun diam. Kamu tahu apa yang ada di dalam ketel itu.",
+        "rooms": {
+          "Patio": "Patio",
+          "Stokerij": "Penyulingan",
+          "Kelder": "Bawah Tanah",
+          "Kapel": "Kapel",
+          "Keuken": "Dapur",
+          "Eetzaal": "Ruang Makan",
+          "Stal": "Kandang Kuda",
+          "Salon": "Ruang Duduk",
+          "Veranda": "Beranda",
+          "Bibliotheek": "Perpustakaan",
+          "Wasruimte": "Ruang Cuci",
+          "Klokkentoren": "Menara Lonceng"
+        },
+        "furniture": {
+          "agave": "agave",
+          "ketel": "ketel tembaga",
+          "gitaar": "gitar",
+          "hangmat": "tempat tidur gantung",
+          "pinata": "piñata"
+        },
+        "suspects": {
+          "Doña Inés": "Doña Inés",
+          "Mariachi Rubén": "Mariachi Rubén",
+          "Kokkin Lupita": "Koki Lupita",
+          "Voorman Esteban": "Mandor Esteban",
+          "Schilderes Paloma": "Pelukis Paloma",
+          "Neef Tomás": "Keponakan Tomás",
+          "Notaris Guzmán": "Notaris Guzmán",
+          "Zuster Bárbara": "Suster Bárbara"
+        },
+        "suspectShort": {
+          "Doña Inés": "Inés",
+          "Mariachi Rubén": "Rubén",
+          "Kokkin Lupita": "Lupita",
+          "Voorman Esteban": "Esteban",
+          "Schilderes Paloma": "Paloma",
+          "Neef Tomás": "Tomás",
+          "Notaris Guzmán": "Guzmán",
+          "Zuster Bárbara": "Bárbara"
+        }
+      },
+      "opera": {
+        "title": "Opéra Lumière",
+        "short": "Opera",
+        "victimName": "Direktur Gaston Leclerc",
+        "roomWord": "ruangan",
+        "roomWordPlural": "ruangan",
+        "tagline": "Beludru merah, lampu gantung kristal, dan malam perdana yang tiketnya habis terjual. Hanya sang direktur yang tak kembali seusai jeda.",
+        "intro": "Opéra Lumière, Paris, 1891. Emas, kristal, dan beludru merah sampai ke langit-langit, dan tiket malam perdana habis terjual. Saat jeda, Direktur Gaston Leclerc ditemukan tergeletak di belakang panggung, di bawah tali-temali.",
+        "outro": "Tirai turun untuk terakhir kalinya. Tepuk tangan itu untukmu.",
+        "rooms": {
+          "Toneel": "Panggung",
+          "Coulisse": "Sisi Panggung",
+          "Orkestbak": "Lubang Orkes",
+          "Kleedkamer": "Ruang Rias",
+          "Foyer": "Lobi",
+          "Loge": "Loge",
+          "Rekwisietenkamer": "Ruang Properti",
+          "Toneelkelder": "Bawah Panggung",
+          "Kostuumatelier": "Ruang Kostum",
+          "Directiekamer": "Kantor",
+          "Repetitiezaal": "Ruang Latihan",
+          "Trappenhuis": "Tangga Utama"
+        },
+        "furniture": {
+          "paspop": "manekin",
+          "harp": "harpa",
+          "masker": "topeng",
+          "boeket": "buket bunga",
+          "toneelkijker": "teropong opera"
+        },
+        "suspects": {
+          "Diva Colette": "Diva Colette",
+          "Tenor Matteo": "Tenor Matteo",
+          "Dirigent Armand": "Dirigen Armand",
+          "Danseres Ninon": "Balerina Ninon",
+          "Kostumière Eloise": "Penata Kostum Eloise",
+          "Baron Viktor": "Baron Viktor",
+          "Toneelmeester Hugo": "Pimpinan Panggung Hugo",
+          "Recensente Simone": "Kritikus Simone"
+        },
+        "suspectShort": {
+          "Diva Colette": "Colette",
+          "Tenor Matteo": "Matteo",
+          "Dirigent Armand": "Armand",
+          "Danseres Ninon": "Ninon",
+          "Kostumière Eloise": "Eloise",
+          "Baron Viktor": "Viktor",
+          "Toneelmeester Hugo": "Hugo",
+          "Recensente Simone": "Simone"
+        }
       }
     },
     "daily": [
@@ -913,6 +1015,18 @@
         "Jejak yang Tak Pernah Kembali",
         "Malam Longsoran Kedua",
         "Tamu Terakhir Edelweiss"
+      ],
+      "hacienda": [
+        "Tong Tanpa Merek",
+        "Malam Lonceng Kapel",
+        "Surat Wasiat di Bawah Lantai",
+        "Panen Terakhir San Isidro"
+      ],
+      "opera": [
+        "Hantu Loge Lima",
+        "Aria yang Tak Dikenal Siapa Pun",
+        "Tali yang Putus",
+        "Salam Terakhir Colette"
       ]
     },
     "medals": {
@@ -1011,6 +1125,14 @@
       "meesterzaken": [
         "Penyelidik Ahli",
         "Pecahkan lima kasus tingkat ahli"
+      ],
+      "hacienda": [
+        "Tong Terakhir",
+        "Selesaikan semua bagian Hacienda San Isidro"
+      ],
+      "opera": [
+        "Tirai Turun",
+        "Selesaikan semua bagian Opéra Lumière"
       ]
     },
     "quests": {
@@ -4183,6 +4305,774 @@
           "🌼 Edelweiss kering"
         ]
       ]
+    ],
+    "hacienda": [
+      "Bagian I · Pesta Agave",
+      "Hacienda San Isidro, Jalisco, 1952. Agave sudah dipanen dan keluarga itu berpesta. Lalu Don Rafael ditemukan tergeletak di penyulingan, di antara ketel-ketel tembaga.",
+      "Pesta sudah sunyi. Tapi keluarga itu tetap tinggal demi surat wasiat.",
+      "Hacienda itu luas, tapi saat pesta semua orang berkumpul. Mulailah dari orang yang menyebutkan di ruangan mana dia berada; “tepat di sebelah” ketel tembaga hanya berlaku untuk kotak yang persis di sampingnya, tidak pernah diagonal.",
+      [
+        [
+          "Pesta Agave",
+          "Panen sudah selesai. Sang patrón tak kunjung keluar.",
+          "🌵 Daun agave"
+        ],
+        [
+          "Ketel Tembaga",
+          "Ketelnya masih hangat. Penyulingan terkunci.",
+          "🔑 Kunci penyulingan"
+        ],
+        [
+          "Mariachi Rubén Bernyanyi",
+          "Dia menyanyikan lagu kesayangan Don Rafael. Tak ada yang bertepuk tangan.",
+          "🎺 Trompet"
+        ],
+        [
+          "Kembang Api di Atas Patio",
+          "Semua orang menengadah. Hampir semua.",
+          "🎆 Roket"
+        ],
+        [
+          "Koki Lupita Menghitung Piring",
+          "Dia menata meja untuk sembilan orang. Yang makan delapan.",
+          "🍽️ Piring tanah liat"
+        ],
+        [
+          "Botol Pertama",
+          "Botol pertama hasil panen sudah terbuka. Tak ada yang membukanya.",
+          "🍾 Gabus"
+        ],
+        [
+          "Doña Inés Berkabung",
+          "Dia sudah berpakaian hitam sebelum ada yang tahu.",
+          "🖤 Mantilla hitam"
+        ],
+        [
+          "Tengah Malam di San Isidro",
+          "Jam berdentang dua belas kali. Satu dentang terlalu banyak.",
+          "🕛 Jam dinding"
+        ]
+      ]
+    ],
+    "hacienda-2": [
+      "Bagian II · Penyulingan",
+      "Polisi masih dalam perjalanan dari Guadalajara. Di penyulingan, ketel-ketel masih hangat, dan seseorang telah membuka kerannya.",
+      "Penyulingan disegel. Besok notaris membacakan surat wasiat.",
+      "Di penyulingan, semuanya berpusat pada ketel. Keterangan tentang dua orang: tentukan dulu posisi salah satunya.",
+      [
+        [
+          "Keran yang Terbuka",
+          "Satu ketel penuh tumpah habis ke lantai. Tak ada yang mendengar apa pun.",
+          "🚰 Keran tembaga"
+        ],
+        [
+          "Mandor Esteban Mencicipi",
+          "Dia mencicipi setiap ketel. Satu ketel dia lewatkan.",
+          "🥃 Gelas cicip"
+        ],
+        [
+          "Buku Panen",
+          "Di buku tercatat sepuluh gerobak. Di pekarangan ada sembilan.",
+          "📒 Buku panen"
+        ],
+        [
+          "Api di Bawah Ketel",
+          "Apinya menyala semalaman. Seseorang menambahkan kayu.",
+          "🪵 Kayu mesquite"
+        ],
+        [
+          "Keponakan Tomás dari Kota",
+          "Katanya dia baru tiba besok. Mobilnya sudah ada di halaman.",
+          "🎩 Topi kota"
+        ],
+        [
+          "Kelebihan Dua Tong",
+          "Di ruang bawah tanah ada dua tong tanpa merek.",
+          "🛢️ Tong kayu ek"
+        ],
+        [
+          "Pelukis Paloma Membuat Sketsa",
+          "Dia menggambar penyulingan pukul sembilan. Di gambarnya ada lampu menyala.",
+          "🖌️ Sketsa"
+        ],
+        [
+          "Rahasia Ketel",
+          "Isi ketel itu bukan tequila.",
+          "⚗️ Labu suling"
+        ]
+      ]
+    ],
+    "hacienda-3": [
+      "Bagian III · Surat Wasiat",
+      "Keluarga itu berkumpul di ruang duduk. Notaris Guzmán membuka surat wasiat, dan tidak semua orang mendengar namanya disebut.",
+      "Surat wasiat sudah dibacakan. Para ahli waris tak lagi saling memandang.",
+      "Semua orang menginginkan bagian warisan dan semua orang membicarakan semua orang. Orang yang bilang di mana dia TIDAK berada juga memberitahumu sesuatu: langsung coret ruangan itu.",
+      [
+        [
+          "Pembacaan",
+          "Notaris membacakan tiga halaman. Surat wasiat itu punya empat.",
+          "📜 Surat wasiat"
+        ],
+        [
+          "Kotak yang Disegel",
+          "Segelnya utuh. Kotaknya kosong.",
+          "🔏 Segel lak"
+        ],
+        [
+          "Notaris Guzmán Berkeringat",
+          "Dia mengelap kacamatanya tiga kali. Udara tidak panas.",
+          "👓 Kacamata notaris"
+        ],
+        [
+          "Ahli Waris yang Terlupakan",
+          "Di surat wasiat tercantum nama yang tak dikenal siapa pun.",
+          "🪪 Paspor lama"
+        ],
+        [
+          "Keponakan Tomás Berhitung",
+          "Dia sudah menghabiskan bagian warisannya. Tahun lalu.",
+          "🧾 Surat utang"
+        ],
+        [
+          "Tanda Tangan",
+          "Dua tanda tangan Don Rafael. Salah satunya terlalu rapi.",
+          "🖋️ Pena tinta"
+        ],
+        [
+          "Doña Inés Tak Mau Tanda Tangan",
+          "Dia menolak menandatangani. Dia tahu alasannya.",
+          "💍 Cincin kawin"
+        ],
+        [
+          "Kodisil Terakhir",
+          "Di bawah lantai perpustakaan masih ada satu surat lagi.",
+          "✉️ Kodisil"
+        ]
+      ]
+    ],
+    "hacienda-4": [
+      "Bagian IV · Kapel",
+      "Menjelang pemakaman, lilin di kapel menyala semalaman. Semua orang datang berdoa, dan satu bangku tetap kosong.",
+      "Lilin-lilin sudah habis terbakar. Keluarga itu mengusung Don Rafael keluar.",
+      "Di kapel semua orang duduk diam, jadi perhatikan siapa duduk di sebelah siapa. Taruh dulu tersangka yang pilihannya paling sedikit; sisanya menyusul.",
+      [
+        [
+          "Malam Berjaga",
+          "Sampai tengah malam keluarga itu duduk bersama. Setelah itu tidak lagi.",
+          "🕯️ Lilin altar"
+        ],
+        [
+          "Suster Bárbara Berdoa",
+          "Dia mendoakan semua orang. Satu nama dia lewatkan.",
+          "📿 Rosario"
+        ],
+        [
+          "Bangku yang Kosong",
+          "Delapan tempat di bangku depan. Tujuh orang.",
+          "🪑 Bangku gereja"
+        ],
+        [
+          "Menara Lonceng",
+          "Pukul tiga lonceng berbunyi. Tak ada yang menyentuh talinya.",
+          "🔔 Tali lonceng"
+        ],
+        [
+          "Koki Lupita Memasak",
+          "Dia memasak untuk semua yang berjaga. Satu panci tak tersentuh.",
+          "🍲 Pozole"
+        ],
+        [
+          "Dupa",
+          "Dupanya menyala terlalu awal. Seseorang sudah lebih dulu ada di kapel.",
+          "🪔 Pedupaan"
+        ],
+        [
+          "Pengakuan Dosa",
+          "Seseorang telah mengaku dosa. Sang suster tidak mengatakan siapa.",
+          "🚪 Bilik pengakuan"
+        ],
+        [
+          "Perpisahan",
+          "Peti matinya masih tertutup. Sudah ada satu bunga di atasnya.",
+          "🌹 Mawar merah"
+        ]
+      ]
+    ],
+    "hacienda-5": [
+      "Bagian V · Hari Orang Mati",
+      "Setahun kemudian. Marigold di altar, tengkorak gula di meja, dan seluruh keluarga kembali ke San Isidro.",
+      "Lilin-lilin di altar padam. Don Rafael sudah tenang, hampir.",
+      "Pada Hari Orang Mati rumah itu penuh orang. Mulailah dari orang yang bilang dia sendirian; itu sekaligus menutup satu ruangan bagi yang lain.",
+      [
+        [
+          "Altar",
+          "Di altar ada delapan foto. Kemarin masih tujuh.",
+          "🖼️ Bingkai foto"
+        ],
+        [
+          "Marigold",
+          "Jejak bunga oranye mengarah ke ruang bawah tanah.",
+          "🌼 Marigold"
+        ],
+        [
+          "Tengkorak Gula",
+          "Di setiap tengkorak ada nama. Di salah satunya, nama orang yang masih hidup.",
+          "💀 Tengkorak gula"
+        ],
+        [
+          "Mariachi Rubén Bermain untuk Arwah",
+          "Dia memainkan lagu Don Rafael. Seseorang ikut bernyanyi, padahal tak mungkin tahu lagunya.",
+          "🎸 Senar gitar"
+        ],
+        [
+          "Piñata",
+          "Piñata itu sudah terbuka sebelum anak-anak datang.",
+          "🪅 Piñata"
+        ],
+        [
+          "Pelukis Paloma Kembali",
+          "Dia melukis altar itu. Di kanvasnya ada seseorang yang tidak hadir.",
+          "🎨 Palet"
+        ],
+        [
+          "Pan de Muerto",
+          "Koki Lupita memanggang dua belas roti. Yang ada sebelas.",
+          "🍞 Pan de muerto"
+        ],
+        [
+          "Malam Para Arwah",
+          "Semua orang melihat hantu di patio. Satu hantu memakai sepatu.",
+          "👞 Sepatu berlumpur"
+        ]
+      ]
+    ],
+    "hacienda-6": [
+      "Bagian VI · Musim Kemarau",
+      "Sudah berbulan-bulan tidak hujan. Sumur kering, agave layu, dan seseorang telah menjual airnya.",
+      "Akhirnya hujan. Airnya kembali, pelakunya pun ketahuan.",
+      "Kemarau membuat orang irit bicara, dan keterangannya makin pelit. Gunakan pensil: coret kotak yang tidak mungkin, lalu lihat apa yang tersisa.",
+      [
+        [
+          "Sumur yang Kering",
+          "Embernya naik dalam keadaan kering. Kemarin belum.",
+          "🪣 Ember sumur"
+        ],
+        [
+          "Mandor Esteban Menggali",
+          "Dia menggali sumur baru. Di tempat yang salah.",
+          "⛏️ Beliung"
+        ],
+        [
+          "Buku Air",
+          "Setiap kendi air tercatat di buku. Kecuali sepuluh yang terakhir.",
+          "📘 Buku air"
+        ],
+        [
+          "Agave yang Layu",
+          "Satu baris agave mati semua. Hanya baris itu.",
+          "🥀 Daun layu"
+        ],
+        [
+          "Koki Lupita Berhemat",
+          "Dia menyimpan air untuk dapur. Kendinya kosong.",
+          "🏺 Kendi air"
+        ],
+        [
+          "Keponakan Tomás Berjualan",
+          "Dia menjual air kepada tetangga. Air milik siapa?",
+          "💵 Uang kertas peso"
+        ],
+        [
+          "Tempat Tidur Gantung",
+          "Tak ada yang berbaring di sana. Tapi tempat tidur gantung itu berayun.",
+          "🪢 Tali tempat tidur gantung"
+        ],
+        [
+          "Hujan Pertama",
+          "Saat hujan turun, semua orang berlari keluar. Kecuali satu.",
+          "🌧️ Tong air hujan"
+        ]
+      ]
+    ],
+    "hacienda-7": [
+      "Bagian VII · Pasar Kuda",
+      "Pembeli dari tiga desa memenuhi halaman. Kuda, uang, dan pelana berpindah tangan, dan satu kuda tidak kembali.",
+      "Para pembeli sudah pergi dan kandang kuda sunyi. Kuda yang hilang sudah kembali ke biliknya.",
+      "Papannya makin besar dan keterangannya makin pelit. Kalau laporan menyebut sebuah ruangan kosong, seluruh ruangan itu tercoret untuk semua orang.",
+      [
+        [
+          "Pembeli Pertama",
+          "Dia membayar dengan emas. Untuk kuda yang tidak dijual.",
+          "🪙 Koin emas"
+        ],
+        [
+          "Kuda Hitam",
+          "Biliknya kosong. Pelananya masih tergantung di sana.",
+          "🐎 Kuda hitam"
+        ],
+        [
+          "Mandor Esteban Menawar",
+          "Harga yang dia minta terlalu rendah. Jauh terlalu rendah.",
+          "🤝 Jabat tangan"
+        ],
+        [
+          "Tukang Ladam",
+          "Empat ladam dipesan. Yang ada tiga.",
+          "🔨 Palu pandai besi"
+        ],
+        [
+          "Suster Bárbara Memberkati",
+          "Dia memberkati setiap kuda. Kuda terakhir kaget melihatnya.",
+          "💧 Air suci"
+        ],
+        [
+          "Buku Kandang",
+          "Setiap kuda tercatat di dalamnya. Kuda yang hilang kini tidak tercatat lagi.",
+          "📖 Buku kandang"
+        ],
+        [
+          "Perjalanan Malam",
+          "Pukul dua semua orang mendengar derap kaki kuda. Tak ada yang keluar melihat.",
+          "🌙 Bulan separuh"
+        ],
+        [
+          "Pelana Don Rafael",
+          "Setahun pelananya tergantung di dinding. Hari ini kulitnya hangat.",
+          "🏇 Pelana perak"
+        ]
+      ]
+    ],
+    "hacienda-8": [
+      "Bagian VIII · Perpisahan dengan San Isidro",
+      "Hacienda itu akan dijual. Satu pesta terakhir di patio, dengan wajah-wajah yang sama seperti pada malam pertama.",
+      "Van Dam memakai topinya, mengangguk kepada keluarga itu, lalu menumpang gerobak terakhir ke stasiun. San Isidro tak lagi menyimpan rahasia.",
+      "Kasus-kasus terakhir, hampir semuanya di papan besar. Jangan terpaku pada yang paling sulit: taruh dulu yang lain, maka untuk yang terakhir sering hanya tersisa satu kotak.",
+      [
+        [
+          "Pembeli",
+          "Pembelinya datang dari Kota Meksiko. Dia tahu jalan ke ruang bawah tanah.",
+          "📝 Akta jual beli"
+        ],
+        [
+          "Tong Terakhir",
+          "Satu tong tertinggal. Ada angka tahun di atasnya: 1952.",
+          "🏷️ Label tong"
+        ],
+        [
+          "Doña Inés Berkemas",
+          "Dia hanya membawa sebuah kotak kecil. Kotak itu berat.",
+          "🧳 Koper"
+        ],
+        [
+          "Jam Menara Tetap Tinggal",
+          "Jam menara tidak ikut dibawa. Ada yang ingin membawanya.",
+          "🕰️ Jam menara"
+        ],
+        [
+          "Mariachi Rubén Memainkan Lagu Terakhir",
+          "Lagu dari malam pertama. Kini dengan bait yang berbeda.",
+          "🎼 Lembaran not"
+        ],
+        [
+          "Potret Don Rafael",
+          "Potret itu masuk ke peti. Di balik bingkainya ada sepucuk surat.",
+          "💌 Surat tersembunyi"
+        ],
+        [
+          "Notaris Guzmán Menutup Berkas",
+          "Dia mencap akta terakhir. Capnya masih basah.",
+          "📎 Akta terakhir"
+        ],
+        [
+          "Perpisahan dengan San Isidro",
+          "Semuanya bermula di dekat ketel-ketel. Di sana pula semuanya berakhir.",
+          "🍶 Botol terakhir"
+        ]
+      ]
+    ],
+    "opera": [
+      "Bagian I · Malam Perdana",
+      "Opéra Lumière, Paris, 1891. Emas, kristal, dan semua kursi terjual habis. Saat jeda, Direktur Leclerc ditemukan tergeletak di belakang panggung, di bawah tali-temali.",
+      "Tirai sudah turun dan gedung sudah kosong. Tapi besok pertunjukan tetap berlanjut.",
+      "Gedung opera adalah labirin lorong dan tangga. Mulailah dari orang yang menyebutkan di ruangan mana dia berada; “tepat di sebelah” harpa hanya berlaku untuk kotak yang persis di sampingnya, tidak pernah diagonal.",
+      [
+        [
+          "Tirai Naik",
+          "Semua kursi terjual habis. Loge sang direktur tetap kosong.",
+          "🎟️ Tiket masuk"
+        ],
+        [
+          "Jeda",
+          "Jeda dua puluh menit. Cukup waktu untuk satu hal.",
+          "🥂 Gelas sampanye"
+        ],
+        [
+          "Diva Colette Bernyanyi",
+          "Dia mencapai nada tinggi itu. Di belakang panggung, sesuatu jatuh.",
+          "💎 Anting berlian"
+        ],
+        [
+          "Tali-Temali",
+          "Seratus tali di belakang panggung. Satu sudah dipotong.",
+          "✂️ Gunting"
+        ],
+        [
+          "Pimpinan Panggung Hugo Menghitung",
+          "Dia menghitung pemberat. Ada satu yang berlebih.",
+          "⚖️ Pemberat"
+        ],
+        [
+          "Tepuk Tangan",
+          "Sepuluh menit tepuk tangan. Tak ada yang mendengar bunyi debam di baliknya.",
+          "💐 Seikat bunga"
+        ],
+        [
+          "Baron Viktor Membayar",
+          "Sang baron membiayai malam perdana itu. Dia tidak tinggal sampai selesai.",
+          "💰 Kantong uang"
+        ],
+        [
+          "Seusai Pertunjukan",
+          "Gedung mulai kosong. Di balik tirai tergeletak sang direktur.",
+          "🎭 Topeng teater"
+        ]
+      ]
+    ],
+    "opera-2": [
+      "Bagian II · Di Balik Tirai",
+      "Pertunjukan berlanjut, dan polisi berkeliaran di belakang panggung. Tali, pintu jebakan, dan pemberat: di sini hanya kru yang tahu jalan.",
+      "Tali-temali sudah dihitung. Besok ada aria baru di daftar acara.",
+      "Di balik tirai semuanya berdekatan. Keterangan tentang dua orang: tentukan dulu posisi salah satunya.",
+      [
+        [
+          "Pintu Jebakan",
+          "Pintu jebakan di panggung terbuka. Tak ada yang memakainya.",
+          "🕳️ Pintu jebakan"
+        ],
+        [
+          "Bisikan di Sisi Panggung",
+          "Seseorang berbisik di sisi panggung. Semua orang mendengarnya, tak ada yang tahu siapa.",
+          "🧣 Selendang sutra"
+        ],
+        [
+          "Pimpinan Panggung Hugo Membuat Simpul",
+          "Dia mengikat setiap simpul sendiri. Simpul yang ini tidak.",
+          "🪢 Simpul pelaut"
+        ],
+        [
+          "Dekor Babak Kedua",
+          "Sebuah kastel dari karton. Di balik pintunya berdiri seseorang sungguhan.",
+          "🏰 Kastel karton"
+        ],
+        [
+          "Balerina Ninon Menunggu",
+          "Dia menunggu gilirannya naik panggung. Giliran itu tak pernah datang.",
+          "🩰 Sepatu balet"
+        ],
+        [
+          "Pembisik",
+          "Dari bilik pembisik tak terdengar sepatah kata pun. Tak ada orang di dalamnya.",
+          "📃 Buku naskah"
+        ],
+        [
+          "Karung Pasir",
+          "Sebuah karung pasir jatuh dua meter dari sang tenor.",
+          "🪨 Karung pasir"
+        ],
+        [
+          "Di Balik Tirai",
+          "Saat tirai naik, ada satu orang terlalu banyak di panggung.",
+          "💡 Lampu panggung"
+        ]
+      ]
+    ],
+    "opera-3": [
+      "Bagian III · Partitur yang Hilang",
+      "Satu jam sebelum pertunjukan, aria baru itu lenyap. Tanpa partitur tak ada malam perdana, dan seseorang tahu itu.",
+      "Partitur itu sudah kembali ke lubang orkes. Diva Colette bernyanyi, seolah tak terjadi apa-apa.",
+      "Semua orang mencari partitur dan semua orang menuding orang lain. Orang yang bilang di mana dia TIDAK berada juga memberitahumu sesuatu: langsung coret ruangan itu.",
+      [
+        [
+          "Map Kosong",
+          "Sang dirigen membuka mapnya. Map itu kosong.",
+          "🎼 Map kosong"
+        ],
+        [
+          "Dirigen Armand Mencari",
+          "Dia mencari di lubang orkes. Dia tahu harus melihat ke mana.",
+          "🪄 Tongkat dirigen"
+        ],
+        [
+          "Tiga Salinan",
+          "Tiga salinan aria itu. Dua ditemukan.",
+          "📄 Salinan"
+        ],
+        [
+          "Penata Kostum Eloise Menjahit",
+          "Di kelim sebuah gaun terselip kertas.",
+          "🪡 Jarum"
+        ],
+        [
+          "Noda Tinta",
+          "Ada tinta di jari seseorang. Tinta milik sang komponis.",
+          "🫙 Botol tinta"
+        ],
+        [
+          "Kritikus Simone Sudah Tahu",
+          "Ulasannya sudah siap. Tentang aria yang belum pernah didengar siapa pun.",
+          "📰 Koran pagi"
+        ],
+        [
+          "Tungku Menyala",
+          "Di kantor direktur, tungku menyala. Di sebelahnya ada kertas.",
+          "🔥 Kertas terbakar"
+        ],
+        [
+          "Aria",
+          "Aria itu dinyanyikan. Oleh suara yang salah.",
+          "🎶 Aria"
+        ]
+      ]
+    ],
+    "opera-4": [
+      "Bagian IV · Pesta Topeng",
+      "Pesta topeng tahunan di lobi. Semua orang memakai topeng, dan tak ada yang tahu siapa berdiri di sebelah siapa.",
+      "Tengah malam topeng-topeng dilepas. Tidak semua orang tertawa.",
+      "Di balik topeng tak ada yang saling mengenali, tapi denah tidak berbohong. Taruh dulu tersangka yang pilihannya paling sedikit; sisanya menyusul.",
+      [
+        [
+          "Pasang Topeng",
+          "Dua ratus tamu, dua ratus topeng. Satu topeng terlalu banyak.",
+          "🦚 Bulu merak"
+        ],
+        [
+          "Wals",
+          "Orkes memainkan wals. Satu pasangan tidak ikut berdansa.",
+          "🎻 Biola"
+        ],
+        [
+          "Baron Viktor Tak Mengenali Siapa Pun",
+          "Dia kenal semua orang di Paris. Malam ini tak seorang pun.",
+          "🧐 Monokel"
+        ],
+        [
+          "Topeng Merah",
+          "Semua orang memakai putih. Kecuali satu.",
+          "🪶 Bulu merah"
+        ],
+        [
+          "Balerina Ninon Berdansa dengan Baron",
+          "Mereka berdansa tiga kali. Dansa ketiga dia lakukan sendirian.",
+          "👠 Sepatu dansa"
+        ],
+        [
+          "Sampanye Tengah Malam",
+          "Botolnya meletup pukul dua belas. Letupan kedua bukan dari botol.",
+          "🍾 Botol sampanye"
+        ],
+        [
+          "Aula Cermin",
+          "Di cermin-cermin tampak seseorang yang tidak ada di sana.",
+          "🪞 Cermin tangan"
+        ],
+        [
+          "Lepas Topeng",
+          "Tengah malam topeng-topeng dilepas. Satu wajah tak dikenal siapa pun.",
+          "🎀 Pita topeng"
+        ]
+      ]
+    ],
+    "opera-5": [
+      "Bagian V · Bawah Panggung",
+      "Di bawah panggung ada gedung kedua: lorong, mesin, dan danau bawah tanah. Seseorang berkeliaran di sana.",
+      "Pintu-pintu jebakan sudah ditutup. Apa yang ada di bawah kini terungkap.",
+      "Di bawah panggung hampir tak ada yang terlihat. Keterangan tentang baris dan kolom menembus dinding: gunakan pensil.",
+      [
+        [
+          "Tangga ke Bawah",
+          "Seratus anak tangga ke bawah. Di anak tangga terakhir tergeletak sebuah sarung tangan.",
+          "🧤 Sarung tangan putih"
+        ],
+        [
+          "Danau Bawah Tanah",
+          "Di bawah gedung ada air. Di sana ada perahu kecil yang tak dikenal siapa pun.",
+          "🛶 Perahu dayung"
+        ],
+        [
+          "Pimpinan Panggung Hugo Turun",
+          "Dia turun membawa lentera. Dia kembali tanpa lentera.",
+          "🏮 Lentera"
+        ],
+        [
+          "Hantu Opera",
+          "Semua orang membicarakan hantu. Kaki hantu itu basah.",
+          "🧥 Jubah basah"
+        ],
+        [
+          "Tenor Matteo Berlatih",
+          "Dia berlatih di bawah, tempat tak ada yang mendengarnya. Hampir tak ada.",
+          "🎵 Garpu tala"
+        ],
+        [
+          "Ruang Mesin",
+          "Roda pemutar dekor berhenti. Ada sesuatu yang tersangkut di situ.",
+          "⚙️ Roda gigi"
+        ],
+        [
+          "Surat dari Hantu",
+          "Setiap minggu sepucuk surat bertinta merah. Minggu ini dua.",
+          "✉️ Surat merah"
+        ],
+        [
+          "Loge Lima",
+          "Loge Lima tak pernah dijual. Tapi malam ini ada yang duduk di sana.",
+          "🗝️ Kunci loge"
+        ]
+      ]
+    ],
+    "opera-6": [
+      "Bagian VI · Gladi Resik",
+      "Opera baru itu harus sempurna. Gladi resik sampai larut malam, dan satu properti ternyata asli.",
+      "Gladi sudah selesai. Besok rombongan berangkat tur.",
+      "Saat gladi semua orang terus berpindah tempat, dan keterangannya makin pelit. Coret yang tidak mungkin, lalu lihat apa yang tersisa.",
+      [
+        [
+          "Sekali Lagi",
+          "Sang dirigen menyuruh semuanya dimainkan ulang. Satu musisi memainkan hal lain.",
+          "🥁 Timpani"
+        ],
+        [
+          "Pedang Asli",
+          "Semua pedang terbuat dari kayu. Kecuali satu.",
+          "🗡️ Pedang panggung"
+        ],
+        [
+          "Penata Kostum Eloise Mengepas",
+          "Setiap kostum pas. Satu sudah diubah untuk orang lain.",
+          "📏 Meteran jahit"
+        ],
+        [
+          "Cawan Racun",
+          "Di babak ketiga, sang raja meminum racun. Malam ini rasanya pahit.",
+          "🍷 Cawan emas"
+        ],
+        [
+          "Kritikus Simone Ikut Menonton",
+          "Dia tidak boleh ada di sana. Dia duduk di baris ketiga.",
+          "📝 Buku catatan"
+        ],
+        [
+          "Ruang Properti",
+          "Setiap barang punya nomor. Nomor empat belas hilang.",
+          "🏷️ Label nomor"
+        ],
+        [
+          "Diva Colette Menolak",
+          "Dia menolak naik panggung. Dia tahu apa yang tergantung di atas.",
+          "👑 Mahkota panggung"
+        ],
+        [
+          "Gladi Tanpa Henti",
+          "Dari awal sampai akhir, tanpa berhenti. Satu pintu tetap tertutup.",
+          "🚪 Pintu ruang rias"
+        ]
+      ]
+    ],
+    "opera-7": [
+      "Bagian VII · Tur Keliling",
+      "Wina, Milan, London. Rombongan itu bepergian dengan seluruh dekor, dan masalah ikut bepergian bersama mereka.",
+      "Setelah kota terakhir, dekor kembali ke Paris. Rombongan juga, kecuali satu orang.",
+      "Papannya makin besar dan keterangannya makin pelit. Kalau laporan menyebut sebuah ruangan kosong, seluruh ruangan itu tercoret untuk semua orang.",
+      [
+        [
+          "Wina",
+          "Di Wina penonton bertepuk tangan sambil berdiri. Kecuali di satu kursi.",
+          "🍰 Sachertorte"
+        ],
+        [
+          "Koper yang Hilang",
+          "Dua belas koper berangkat dari Paris. Yang tiba sebelas.",
+          "🧳 Koper dekor"
+        ],
+        [
+          "Milan",
+          "Di La Scala, Tenor Matteo bernyanyi di kandang sendiri. Ada yang tidak menginginkannya.",
+          "🎫 Tiket La Scala"
+        ],
+        [
+          "Baron Viktor Ikut Serta",
+          "Dia membiayai perjalanan itu. Dia duduk di gerbong yang berbeda dari yang tertera di tiketnya.",
+          "🎩 Topi tinggi"
+        ],
+        [
+          "London Berkabut",
+          "Karena kabut, tak ada yang bisa melihat sisi seberang panggung.",
+          "🫖 Teko teh"
+        ],
+        [
+          "Penata Kostum Eloise Berkemas",
+          "Dua ratus kostum di lima puluh keranjang. Satu keranjang terlalu berat.",
+          "🧺 Keranjang kostum"
+        ],
+        [
+          "Kereta Malam",
+          "Kereta melaju sepanjang malam. Saat sarapan, ada yang tidak hadir.",
+          "🛏️ Kabin tidur"
+        ],
+        [
+          "Kembali ke Paris",
+          "Polisi menunggu di peron. Mereka tahu kereta yang mana.",
+          "🚉 Karcis peron"
+        ]
+      ]
+    ],
+    "opera-8": [
+      "Bagian VIII · Pentas Terakhir",
+      "Opéra Lumière akan ditutup untuk renovasi. Sekali lagi tirai naik, untuk penonton yang sama seperti pada malam perdana.",
+      "Van Dam yang terakhir bangkit dari kursinya. Dia bertepuk tangan sekali, lalu menuruni tangga, menuju malam Paris.",
+      "Kasus-kasus terakhir, hampir semuanya di papan besar. Jangan terpaku pada yang paling sulit: taruh dulu yang lain, maka untuk yang terakhir sering hanya tersisa satu kotak.",
+      [
+        [
+          "Penonton yang Sama",
+          "Semua orang duduk di kursi yang sama seperti pada malam perdana. Kecuali satu.",
+          "💺 Kursi beludru"
+        ],
+        [
+          "Dirigen Armand Pamit",
+          "Tiga puluh tahun dia memimpin orkes di sini. Malam ini dia tidak menatap orkesnya.",
+          "🎖️ Medali kehormatan"
+        ],
+        [
+          "Buket Terakhir",
+          "Empat puluh buket tergeletak di panggung. Satu tanpa kartu.",
+          "💐 Buket tanpa kartu"
+        ],
+        [
+          "Lampu Kristal",
+          "Lampu kristal besar itu tergantung miring. Seseorang tadi naik ke atas.",
+          "✨ Tetesan kristal"
+        ],
+        [
+          "Balerina Ninon Menari Solo",
+          "Solo pertamanya. Semua orang memandangnya, kecuali satu.",
+          "🌸 Bunga rambut"
+        ],
+        [
+          "Kritikus Simone Menulis",
+          "Ulasan terakhirnya. Tentang pertunjukan itu, dan tentang pelakunya.",
+          "✒️ Pena celup"
+        ],
+        [
+          "Pimpinan Panggung Hugo Menurunkan Tirai",
+          "Tirai turun untuk terakhir kalinya. Satu tali tetap dia pegang.",
+          "🧰 Kotak perkakas"
+        ],
+        [
+          "Pentas Terakhir",
+          "Semuanya bermula di balik tirai. Di sana pula semuanya berakhir.",
+          "🎟️ Tiket terakhir"
+        ]
+      ]
     ]
   },
 
@@ -4237,6 +5127,14 @@
         "rws": "area"
       },
       "skihut": {
+        "rw": "ruangan",
+        "rws": "ruangan"
+      },
+      "hacienda": {
+        "rw": "ruangan",
+        "rws": "ruangan"
+      },
+      "opera": {
         "rw": "ruangan",
         "rws": "ruangan"
       }
@@ -4750,6 +5648,106 @@
           "the": "Lorong",
           "in": "di Lorong"
         }
+      },
+      "hacienda": {
+        "Patio": {
+          "the": "Patio",
+          "in": "di Patio"
+        },
+        "Stokerij": {
+          "the": "Penyulingan",
+          "in": "di Penyulingan"
+        },
+        "Kelder": {
+          "the": "Bawah Tanah",
+          "in": "di Bawah Tanah"
+        },
+        "Kapel": {
+          "the": "Kapel",
+          "in": "di Kapel"
+        },
+        "Keuken": {
+          "the": "Dapur",
+          "in": "di Dapur"
+        },
+        "Eetzaal": {
+          "the": "Ruang Makan",
+          "in": "di Ruang Makan"
+        },
+        "Stal": {
+          "the": "Kandang Kuda",
+          "in": "di Kandang Kuda"
+        },
+        "Salon": {
+          "the": "Ruang Duduk",
+          "in": "di Ruang Duduk"
+        },
+        "Veranda": {
+          "the": "Beranda",
+          "in": "di Beranda"
+        },
+        "Bibliotheek": {
+          "the": "Perpustakaan",
+          "in": "di Perpustakaan"
+        },
+        "Wasruimte": {
+          "the": "Ruang Cuci",
+          "in": "di Ruang Cuci"
+        },
+        "Klokkentoren": {
+          "the": "Menara Lonceng",
+          "in": "di Menara Lonceng"
+        }
+      },
+      "opera": {
+        "Toneel": {
+          "the": "Panggung",
+          "in": "di Panggung"
+        },
+        "Coulisse": {
+          "the": "Sisi Panggung",
+          "in": "di Sisi Panggung"
+        },
+        "Orkestbak": {
+          "the": "Lubang Orkes",
+          "in": "di Lubang Orkes"
+        },
+        "Kleedkamer": {
+          "the": "Ruang Rias",
+          "in": "di Ruang Rias"
+        },
+        "Foyer": {
+          "the": "Lobi",
+          "in": "di Lobi"
+        },
+        "Loge": {
+          "the": "Loge",
+          "in": "di Loge"
+        },
+        "Rekwisietenkamer": {
+          "the": "Ruang Properti",
+          "in": "di Ruang Properti"
+        },
+        "Toneelkelder": {
+          "the": "Bawah Panggung",
+          "in": "di Bawah Panggung"
+        },
+        "Kostuumatelier": {
+          "the": "Ruang Kostum",
+          "in": "di Ruang Kostum"
+        },
+        "Directiekamer": {
+          "the": "Kantor",
+          "in": "di Kantor"
+        },
+        "Repetitiezaal": {
+          "the": "Ruang Latihan",
+          "in": "di Ruang Latihan"
+        },
+        "Trappenhuis": {
+          "the": "Tangga Utama",
+          "in": "di Tangga Utama"
+        }
       }
     },
     "furniture": {
@@ -4952,6 +5950,56 @@
         "a": "panci fondue",
         "next": "di sebelah panci fondue",
         "with": "dengan panci fondue"
+      },
+      "agave": {
+        "a": "agave",
+        "next": "di sebelah agave",
+        "with": "dengan agave"
+      },
+      "ketel": {
+        "a": "ketel tembaga",
+        "next": "di sebelah ketel tembaga",
+        "with": "dengan ketel tembaga"
+      },
+      "gitaar": {
+        "a": "gitar",
+        "next": "di sebelah gitar",
+        "with": "dengan gitar"
+      },
+      "hangmat": {
+        "a": "tempat tidur gantung",
+        "next": "di sebelah tempat tidur gantung",
+        "with": "dengan tempat tidur gantung"
+      },
+      "pinata": {
+        "a": "piñata",
+        "next": "di sebelah piñata",
+        "with": "dengan piñata"
+      },
+      "paspop": {
+        "a": "manekin",
+        "next": "di sebelah manekin",
+        "with": "dengan manekin"
+      },
+      "harp": {
+        "a": "harpa",
+        "next": "di sebelah harpa",
+        "with": "dengan harpa"
+      },
+      "masker": {
+        "a": "topeng",
+        "next": "di sebelah topeng",
+        "with": "dengan topeng"
+      },
+      "boeket": {
+        "a": "buket bunga",
+        "next": "di sebelah buket bunga",
+        "with": "dengan buket bunga"
+      },
+      "toneelkijker": {
+        "a": "teropong opera",
+        "next": "di sebelah teropong opera",
+        "with": "dengan teropong opera"
       }
     }
   }

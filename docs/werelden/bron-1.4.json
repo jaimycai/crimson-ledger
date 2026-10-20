@@ -1,0 +1,1985 @@
+{
+ "note": "Dutch is the source, English the reference translation. Suspect \"who\" and \"look\" are background for the translator only.",
+ "worlds": {
+  "hacienda": {
+   "era": "a tequila hacienda in Jalisco, Mexico, in 1952",
+   "theme": {
+    "nl": {
+     "title": "Hacienda San Isidro",
+     "short": "Hacienda",
+     "victimName": "Don Rafael Ortega",
+     "roomWord": "ruimte",
+     "roomWordPlural": "ruimtes",
+     "tagline": "Het agavefeest van San Isidro. Muziek op de patio, en een patrón die niet meer opstaat.",
+     "intro": "Hacienda San Isidro, Jalisco, 1952. De agave is geoogst en de hele familie viert feest. Dan ligt Don Rafael in de stokerij, tussen de koperen ketels.",
+     "outro": "De ketels koelen af, de muziek is stil. Jij weet wat er in de ketel zat."
+    },
+    "en": {
+     "title": "Hacienda San Isidro",
+     "short": "Hacienda",
+     "victimName": "Don Rafael Ortega",
+     "roomWord": "room",
+     "roomWordPlural": "rooms",
+     "tagline": "The agave festival of San Isidro. Music on the patio, and a patrón who will not get up again.",
+     "intro": "Hacienda San Isidro, Jalisco, 1952. The agave is harvested and the whole family is celebrating. Then Don Rafael is found in the distillery, between the copper stills.",
+     "outro": "The stills cool down, the music falls silent. You know what was in the still."
+    }
+   },
+   "rooms": [
+    {
+     "nl": "Patio",
+     "article": "de",
+     "en": "Patio"
+    },
+    {
+     "nl": "Stokerij",
+     "article": "de",
+     "en": "Distillery"
+    },
+    {
+     "nl": "Kelder",
+     "article": "de",
+     "en": "Cellar"
+    },
+    {
+     "nl": "Kapel",
+     "article": "de",
+     "en": "Chapel"
+    },
+    {
+     "nl": "Keuken",
+     "article": "de",
+     "en": "Kitchen"
+    },
+    {
+     "nl": "Eetzaal",
+     "article": "de",
+     "en": "Dining Hall"
+    },
+    {
+     "nl": "Stal",
+     "article": "de",
+     "en": "Stable"
+    },
+    {
+     "nl": "Salon",
+     "article": "de",
+     "en": "Salon"
+    },
+    {
+     "nl": "Veranda",
+     "article": "de",
+     "en": "Veranda"
+    },
+    {
+     "nl": "Bibliotheek",
+     "article": "de",
+     "en": "Library"
+    },
+    {
+     "nl": "Wasruimte",
+     "article": "de",
+     "en": "Laundry"
+    },
+    {
+     "nl": "Klokkentoren",
+     "article": "de",
+     "en": "Bell Tower"
+    }
+   ],
+   "furniture": [
+    {
+     "id": "agave",
+     "nl": "een agave",
+     "en": "an agave"
+    },
+    {
+     "id": "ketel",
+     "nl": "een koperen ketel",
+     "en": "a copper still"
+    },
+    {
+     "id": "gitaar",
+     "nl": "een gitaar",
+     "en": "a guitar"
+    },
+    {
+     "id": "hangmat",
+     "nl": "een hangmat",
+     "en": "a hammock"
+    },
+    {
+     "id": "pinata",
+     "nl": "een piñata",
+     "en": "a piñata"
+    }
+   ],
+   "suspects": [
+    {
+     "nl": "Doña Inés",
+     "en": "Doña Inés",
+     "gender": "f",
+     "who": "Weduwe van Don Rafael, vrouw des huizes",
+     "look": "a proud widow in her fifties, black hair in a low bun with a tortoiseshell comb, black lace mantilla over the shoulders, small gold cross"
+    },
+    {
+     "nl": "Mariachi Rubén",
+     "en": "Mariachi Rubén",
+     "gender": "m",
+     "who": "Zanger van het feestorkest",
+     "look": "a handsome mariachi singer in his thirties, thin moustache, charro jacket with silver buttons, wide bow tie, hat hanging on his back"
+    },
+    {
+     "nl": "Kokkin Lupita",
+     "en": "Cook Lupita",
+     "gender": "f",
+     "who": "Kookt al dertig jaar op de hacienda",
+     "look": "a warm cook in her forties, braids pinned around her head, embroidered blouse, apron, rebozo shawl over one shoulder"
+    },
+    {
+     "nl": "Voorman Esteban",
+     "en": "Foreman Esteban",
+     "gender": "m",
+     "who": "Leidt de agaveoogst op het land",
+     "look": "a weathered field foreman in his fifties, broad straw hat, grey stubble, work shirt with rolled sleeves, a coa harvesting tool over his shoulder"
+    },
+    {
+     "nl": "Schilderes Paloma",
+     "en": "Painter Paloma",
+     "gender": "f",
+     "who": "Gast uit de stad, schildert de oogst",
+     "look": "a bohemian painter in her thirties, flowers braided into dark hair, bold earrings, paint-stained smock, direct gaze"
+    },
+    {
+     "nl": "Neef Tomás",
+     "en": "Nephew Tomás",
+     "gender": "m",
+     "who": "Neef en erfgenaam, net terug uit de hoofdstad",
+     "look": "a slick young man in his twenties, oiled side-parted hair, sharp double-breasted suit, pencil moustache, cigarette case in hand"
+    },
+    {
+     "nl": "Notaris Guzmán",
+     "en": "Notary Guzmán",
+     "gender": "m",
+     "who": "Bewaart het testament",
+     "look": "a fussy notary in his sixties, round spectacles, bald with grey fringe, three-piece suit, leather document case"
+    },
+    {
+     "nl": "Zuster Bárbara",
+     "en": "Sister Bárbara",
+     "gender": "f",
+     "who": "Non uit de kapel van de hacienda",
+     "look": "a calm nun in her forties, simple dark habit and white wimple, wooden rosary, observant eyes"
+    }
+   ],
+   "week": {
+    "nl": [
+     "Het vat zonder merk",
+     "De nacht van de kapelklok",
+     "Het testament onder de vloer",
+     "De laatste oogst van San Isidro"
+    ],
+    "en": [
+     "The Barrel Without a Brand",
+     "The Night of the Chapel Bell",
+     "The Will Under the Floor",
+     "The Last Harvest of San Isidro"
+    ]
+   },
+   "medal": {
+    "nl": [
+     "Het laatste vat",
+     "Maak alle delen van Hacienda San Isidro af"
+    ],
+    "en": [
+     "The Last Barrel",
+     "Finish every part of Hacienda San Isidro"
+    ]
+   },
+   "campaign": [
+    {
+     "key": "hacienda",
+     "nl": {
+      "title": "Deel I · Het agavefeest",
+      "intro": "Hacienda San Isidro, Jalisco, 1952. De agave is binnen en de familie viert feest. Dan ligt Don Rafael in de stokerij, tussen de koperen ketels.",
+      "outro": "Het feest is stilgevallen. Maar de familie blijft voor het testament.",
+      "briefing": "Een hacienda is groot, maar op een feest staat iedereen bij elkaar. Begin bij wie zegt in welke ruimte hij was; \"direct naast\" de ketel telt alleen recht ernaast, nooit schuin.",
+      "cases": [
+       [
+        "Het agavefeest",
+        "De oogst was binnen. De patrón kwam niet naar buiten.",
+        "🌵 Agaveblad"
+       ],
+       [
+        "De koperen ketel",
+        "De ketel was nog warm. De stokerij zat op slot.",
+        "🔑 Stokerijsleutel"
+       ],
+       [
+        "Mariachi Rubén zingt",
+        "Hij zong het lievelingslied van Don Rafael. Niemand klapte.",
+        "🎺 Trompet"
+       ],
+       [
+        "Vuurwerk boven de patio",
+        "Iedereen keek omhoog. Bijna iedereen.",
+        "🎆 Vuurpijl"
+       ],
+       [
+        "Kokkin Lupita telt de borden",
+        "Ze dekte voor negen. Er aten er acht.",
+        "🍽️ Aardewerken bord"
+       ],
+       [
+        "De eerste fles",
+        "De eerste fles van de oogst was open. Niemand had hem opengemaakt.",
+        "🍾 Kurk"
+       ],
+       [
+        "Doña Inés rouwt",
+        "Ze droeg al zwart voordat iemand het wist.",
+        "🖤 Zwarte mantilla"
+       ],
+       [
+        "Middernacht in San Isidro",
+        "De klok sloeg twaalf. Eén slag te veel.",
+        "🕛 Wandklok"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part I · The Agave Festival",
+      "intro": "Hacienda San Isidro, Jalisco, 1952. The agave is in and the family is celebrating. Then Don Rafael is found in the distillery, between the copper stills.",
+      "outro": "The party has gone quiet. But the family is staying for the will.",
+      "briefing": "A hacienda is big, but at a party everyone stands together. Start with whoever says which room they were in; “directly next to” the still only counts straight beside it, never diagonally.",
+      "cases": [
+       [
+        "The Agave Festival",
+        "The harvest was in. The patrón did not come outside.",
+        "🌵 Agave leaf"
+       ],
+       [
+        "The Copper Still",
+        "The still was warm. The distillery was locked.",
+        "🔑 Distillery key"
+       ],
+       [
+        "Mariachi Rubén Sings",
+        "He sang Don Rafael's favourite song. Nobody clapped.",
+        "🎺 Trumpet"
+       ],
+       [
+        "Fireworks over the Patio",
+        "Everyone looked up. Almost everyone.",
+        "🎆 Rocket"
+       ],
+       [
+        "Cook Lupita Counts the Plates",
+        "She set the table for nine. Eight people ate.",
+        "🍽️ Clay plate"
+       ],
+       [
+        "The First Bottle",
+        "The first bottle of the harvest was open. Nobody had opened it.",
+        "🍾 Cork"
+       ],
+       [
+        "Doña Inés Mourns",
+        "She was wearing black before anyone knew.",
+        "🖤 Black mantilla"
+       ],
+       [
+        "Midnight in San Isidro",
+        "The clock struck twelve. One stroke too many.",
+        "🕛 Wall clock"
+       ]
+      ]
+     }
+    },
+    {
+     "key": "hacienda-2",
+     "nl": {
+      "title": "Deel II · De stokerij",
+      "intro": "De politie is nog onderweg uit Guadalajara. In de stokerij zijn de ketels nog warm, en iemand heeft de kraan opengezet.",
+      "outro": "De stokerij is verzegeld. Morgen leest de notaris het testament voor.",
+      "briefing": "In de stokerij draait alles om de ketels. Een verklaring over twee mensen los je op door eerst één van de twee vast te zetten.",
+      "cases": [
+       [
+        "De open kraan",
+        "Een hele ketel liep leeg op de vloer. Niemand hoorde iets.",
+        "🚰 Koperen kraan"
+       ],
+       [
+        "Voorman Esteban proeft",
+        "Hij proefde elke ketel. Eén ketel sloeg hij over.",
+        "🥃 Proefglas"
+       ],
+       [
+        "Het oogstboek",
+        "In het boek stonden tien karren. Op het erf stonden er negen.",
+        "📒 Oogstboek"
+       ],
+       [
+        "Het vuur onder de ketel",
+        "Het vuur brandde de hele nacht. Iemand had hout bijgelegd.",
+        "🪵 Mesquitehout"
+       ],
+       [
+        "Neef Tomás uit de stad",
+        "Hij kwam pas morgen aan, zei hij. Zijn auto stond al op het erf.",
+        "🎩 Stadshoed"
+       ],
+       [
+        "Twee vaten te veel",
+        "In de kelder lagen twee vaten zonder merk.",
+        "🛢️ Eiken vat"
+       ],
+       [
+        "Schilderes Paloma schetst",
+        "Ze tekende de stokerij om negen uur. Op de tekening brandde licht.",
+        "🖌️ Schets"
+       ],
+       [
+        "Het geheim van de ketel",
+        "Wat er in de ketel zat, was geen tequila.",
+        "⚗️ Distilleerkolf"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part II · The Distillery",
+      "intro": "The police are still on their way from Guadalajara. In the distillery the stills are still warm, and someone has opened the tap.",
+      "outro": "The distillery is sealed. Tomorrow the notary reads the will.",
+      "briefing": "In the distillery everything turns on the stills. Solve a statement about two people by fixing one of the two first.",
+      "cases": [
+       [
+        "The Open Tap",
+        "A whole still ran out onto the floor. Nobody heard a thing.",
+        "🚰 Copper tap"
+       ],
+       [
+        "Foreman Esteban Tastes",
+        "He tasted every still. He skipped one.",
+        "🥃 Tasting glass"
+       ],
+       [
+        "The Harvest Book",
+        "The book listed ten carts. Nine stood in the yard.",
+        "📒 Harvest book"
+       ],
+       [
+        "The Fire Under the Still",
+        "The fire burned all night. Someone had added wood.",
+        "🪵 Mesquite wood"
+       ],
+       [
+        "Nephew Tomás from the City",
+        "He would only arrive tomorrow, he said. His car was already in the yard.",
+        "🎩 City hat"
+       ],
+       [
+        "Two Barrels Too Many",
+        "In the cellar lay two barrels without a brand.",
+        "🛢️ Oak barrel"
+       ],
+       [
+        "Painter Paloma Sketches",
+        "She drew the distillery at nine. In the drawing a light was on.",
+        "🖌️ Sketch"
+       ],
+       [
+        "The Secret of the Still",
+        "What was in the still was not tequila.",
+        "⚗️ Distilling flask"
+       ]
+      ]
+     }
+    },
+    {
+     "key": "hacienda-3",
+     "nl": {
+      "title": "Deel III · Het testament",
+      "intro": "De familie zit in de salon. Notaris Guzmán opent het testament, en niet iedereen hoort zijn naam.",
+      "outro": "Het testament is gelezen. De erfgenamen kijken elkaar niet meer aan.",
+      "briefing": "Iedereen wil iets van de erfenis en iedereen praat over iedereen. Wie zegt waar hij níét was, vertelt je ook iets: streep die ruimte meteen weg.",
+      "cases": [
+       [
+        "De voorlezing",
+        "De notaris las drie bladzijden voor. Het testament had er vier.",
+        "📜 Testament"
+       ],
+       [
+        "Het verzegelde kistje",
+        "Het zegel was heel. Het kistje was leeg.",
+        "🔏 Lakzegel"
+       ],
+       [
+        "Notaris Guzmán zweet",
+        "Hij poetste zijn bril drie keer. Het was niet warm.",
+        "👓 Notarisbril"
+       ],
+       [
+        "De vergeten erfgenaam",
+        "In het testament stond een naam die niemand kende.",
+        "🪪 Oud paspoort"
+       ],
+       [
+        "Neef Tomás rekent",
+        "Hij had zijn erfdeel al uitgegeven. Vorig jaar.",
+        "🧾 Schuldbekentenis"
+       ],
+       [
+        "De handtekening",
+        "Twee handtekeningen van Don Rafael. Eén ervan te mooi.",
+        "🖋️ Vulpen"
+       ],
+       [
+        "Doña Inés tekent niet",
+        "Ze weigerde te tekenen. Ze wist waarom.",
+        "💍 Trouwring"
+       ],
+       [
+        "Het laatste codicil",
+        "Onder de vloer van de bibliotheek lag nog één brief.",
+        "✉️ Codicil"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part III · The Will",
+      "intro": "The family sits in the salon. Notary Guzmán opens the will, and not everyone hears their name.",
+      "outro": "The will has been read. The heirs no longer look at each other.",
+      "briefing": "Everyone wants a piece of the estate and everyone talks about everyone. Whoever says where they were not tells you something too: cross that room off straight away.",
+      "cases": [
+       [
+        "The Reading",
+        "The notary read out three pages. The will had four.",
+        "📜 Will"
+       ],
+       [
+        "The Sealed Box",
+        "The seal was intact. The box was empty.",
+        "🔏 Wax seal"
+       ],
+       [
+        "Notary Guzmán Sweats",
+        "He polished his glasses three times. It was not warm.",
+        "👓 Notary glasses"
+       ],
+       [
+        "The Forgotten Heir",
+        "The will named someone nobody knew.",
+        "🪪 Old passport"
+       ],
+       [
+        "Nephew Tomás Does the Sums",
+        "He had already spent his share. Last year.",
+        "🧾 IOU"
+       ],
+       [
+        "The Signature",
+        "Two signatures of Don Rafael. One of them too neat.",
+        "🖋️ Fountain pen"
+       ],
+       [
+        "Doña Inés Will Not Sign",
+        "She refused to sign. She knew why.",
+        "💍 Wedding ring"
+       ],
+       [
+        "The Last Codicil",
+        "Under the library floor lay one more letter.",
+        "✉️ Codicil"
+       ]
+      ]
+     }
+    },
+    {
+     "key": "hacienda-4",
+     "nl": {
+      "title": "Deel IV · De kapel",
+      "intro": "Voor de begrafenis brandt de kapel de hele nacht. Iedereen komt bidden, en één bank blijft leeg.",
+      "outro": "De kaarsen zijn opgebrand. De familie draagt Don Rafael naar buiten.",
+      "briefing": "In de kapel zit iedereen stil, dus let op wie naast wie zat. Zet eerst de verdachte met de kleinste keus neer; de rest volgt.",
+      "cases": [
+       [
+        "De nachtwake",
+        "Tot middernacht zat de familie samen. Daarna niet meer.",
+        "🕯️ Altaarkaars"
+       ],
+       [
+        "Zuster Bárbara bidt",
+        "Ze bad voor iedereen. Eén naam sloeg ze over.",
+        "📿 Rozenkrans"
+       ],
+       [
+        "De lege bank",
+        "Acht plaatsen in de voorste bank. Zeven mensen.",
+        "🪑 Kerkbank"
+       ],
+       [
+        "De klokkentoren",
+        "Om drie uur luidde de klok. Niemand had het touw aangeraakt.",
+        "🔔 Klokkentouw"
+       ],
+       [
+        "Kokkin Lupita kookt",
+        "Ze kookte voor de hele wake. Eén pan bleef onaangeroerd.",
+        "🍲 Pozole"
+       ],
+       [
+        "Wierook",
+        "De wierook brandde te vroeg. Iemand was al eerder in de kapel.",
+        "🪔 Wierookvat"
+       ],
+       [
+        "De biecht",
+        "Iemand had gebiecht. De zuster zei niet wie.",
+        "🚪 Biechtstoel"
+       ],
+       [
+        "Het afscheid",
+        "De kist was nog dicht. Er lag al één bloem op.",
+        "🌹 Rode roos"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part IV · The Chapel",
+      "intro": "Before the funeral the chapel burns with candles all night. Everyone comes to pray, and one pew stays empty.",
+      "outro": "The candles have burned down. The family carries Don Rafael outside.",
+      "briefing": "In the chapel everyone sits still, so watch who sat next to whom. Place the suspect with the fewest options first; the rest follows.",
+      "cases": [
+       [
+        "The Vigil",
+        "Until midnight the family sat together. After that, not any more.",
+        "🕯️ Altar candle"
+       ],
+       [
+        "Sister Bárbara Prays",
+        "She prayed for everyone. She skipped one name.",
+        "📿 Rosary"
+       ],
+       [
+        "The Empty Pew",
+        "Eight places in the front pew. Seven people.",
+        "🪑 Church pew"
+       ],
+       [
+        "The Bell Tower",
+        "At three the bell rang. Nobody had touched the rope.",
+        "🔔 Bell rope"
+       ],
+       [
+        "Cook Lupita Cooks",
+        "She cooked for the whole vigil. One pot was never touched.",
+        "🍲 Pozole"
+       ],
+       [
+        "Incense",
+        "The incense burned too early. Someone had been in the chapel before.",
+        "🪔 Censer"
+       ],
+       [
+        "The Confession",
+        "Someone had confessed. The sister did not say who.",
+        "🚪 Confessional"
+       ],
+       [
+        "The Farewell",
+        "The coffin was still closed. One flower already lay on it.",
+        "🌹 Red rose"
+       ]
+      ]
+     }
+    },
+    {
+     "key": "hacienda-5",
+     "nl": {
+      "title": "Deel V · Dag van de Doden",
+      "intro": "Een jaar later. Goudsbloemen op het altaar, suikerschedels op tafel, en de hele familie is terug op San Isidro.",
+      "outro": "De kaarsen op het altaar doven. Don Rafael heeft zijn rust, bijna.",
+      "briefing": "Op de Dag van de Doden staat het huis vol mensen. Begin bij wie zegt alleen te zijn geweest: dat ruimt meteen een hele ruimte op.",
+      "cases": [
+       [
+        "Het altaar",
+        "Op het altaar stonden acht foto's. Gisteren waren het er zeven.",
+        "🖼️ Fotolijstje"
+       ],
+       [
+        "Goudsbloemen",
+        "Een spoor van oranje bloemen liep naar de kelder.",
+        "🌼 Goudsbloem"
+       ],
+       [
+        "Suikerschedels",
+        "Op elke schedel een naam. Op één ervan de naam van iemand die nog leefde.",
+        "💀 Suikerschedel"
+       ],
+       [
+        "Mariachi Rubén speelt voor de doden",
+        "Hij speelde het lied van Don Rafael. Iemand zong mee die het niet kon kennen.",
+        "🎸 Gitaarsnaar"
+       ],
+       [
+        "De piñata",
+        "De piñata was al open voordat de kinderen kwamen.",
+        "🪅 Piñata"
+       ],
+       [
+        "Schilderes Paloma komt terug",
+        "Ze schilderde het altaar. Op het doek stond iemand die er niet was.",
+        "🎨 Palet"
+       ],
+       [
+        "Pan de muerto",
+        "Kokkin Lupita bakte twaalf broden. Er waren er elf.",
+        "🍞 Pan de muerto"
+       ],
+       [
+        "De nacht van de geesten",
+        "Iedereen zag een geest op de patio. Eén geest had schoenen aan.",
+        "👞 Modderschoen"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part V · Day of the Dead",
+      "intro": "A year later. Marigolds on the altar, sugar skulls on the table, and the whole family is back at San Isidro.",
+      "outro": "The candles on the altar go out. Don Rafael is at rest, almost.",
+      "briefing": "On the Day of the Dead the house is full of people. Start with whoever says they were alone: that clears a whole room at once.",
+      "cases": [
+       [
+        "The Altar",
+        "On the altar stood eight photos. Yesterday there were seven.",
+        "🖼️ Photo frame"
+       ],
+       [
+        "Marigolds",
+        "A trail of orange flowers led to the cellar.",
+        "🌼 Marigold"
+       ],
+       [
+        "Sugar Skulls",
+        "A name on every skull. On one of them, the name of someone still alive.",
+        "💀 Sugar skull"
+       ],
+       [
+        "Mariachi Rubén Plays for the Dead",
+        "He played Don Rafael's song. Someone sang along who could not have known it.",
+        "🎸 Guitar string"
+       ],
+       [
+        "The Piñata",
+        "The piñata was open before the children came.",
+        "🪅 Piñata"
+       ],
+       [
+        "Painter Paloma Returns",
+        "She painted the altar. On the canvas stood someone who was not there.",
+        "🎨 Palette"
+       ],
+       [
+        "Pan de Muerto",
+        "Cook Lupita baked twelve loaves. There were eleven.",
+        "🍞 Pan de muerto"
+       ],
+       [
+        "The Night of the Spirits",
+        "Everyone saw a ghost on the patio. One ghost was wearing shoes.",
+        "👞 Muddy shoe"
+       ]
+      ]
+     }
+    },
+    {
+     "key": "hacienda-6",
+     "nl": {
+      "title": "Deel VI · Het droge seizoen",
+      "intro": "Het regent al maanden niet. De put staat leeg, de agave verdort, en iemand heeft het water verkocht.",
+      "outro": "Eindelijk regen. Het water is terug, de schuldige ook.",
+      "briefing": "Droogte maakt mensen kort van stof en de verklaringen worden zuiniger. Gebruik het potlood: streep vakjes weg die niet kunnen en kijk wat overblijft.",
+      "cases": [
+       [
+        "De lege put",
+        "De emmer kwam droog boven. Gisteren nog niet.",
+        "🪣 Putemmer"
+       ],
+       [
+        "Voorman Esteban graaft",
+        "Hij groef een nieuwe put. Op de verkeerde plek.",
+        "⛏️ Houweel"
+       ],
+       [
+        "Het waterboek",
+        "Elke kan water stond in het boek. Behalve de laatste tien.",
+        "📘 Waterboek"
+       ],
+       [
+        "De verdorde agave",
+        "Een hele rij agave was dood. Alleen die rij.",
+        "🥀 Verdord blad"
+       ],
+       [
+        "Kokkin Lupita spaart",
+        "Ze bewaarde water voor de keuken. Haar kruik was leeg.",
+        "🏺 Waterkruik"
+       ],
+       [
+        "Neef Tomás verkoopt",
+        "Hij verkocht water aan de buren. Water van wie?",
+        "💵 Pesobiljet"
+       ],
+       [
+        "De hangmat",
+        "In de hangmat lag niemand. Toch schommelde hij.",
+        "🪢 Hangmatkoord"
+       ],
+       [
+        "De eerste regen",
+        "Toen de regen kwam, liep iedereen naar buiten. Op één na.",
+        "🌧️ Regenton"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part VI · The Dry Season",
+      "intro": "It has not rained for months. The well is empty, the agave is withering, and someone has sold the water.",
+      "outro": "Rain at last. The water is back, and the culprit is known.",
+      "briefing": "Drought makes people curt, and the statements get sparser. Use the pencil: cross off squares that cannot be and see what is left.",
+      "cases": [
+       [
+        "The Empty Well",
+        "The bucket came up dry. Yesterday it did not.",
+        "🪣 Well bucket"
+       ],
+       [
+        "Foreman Esteban Digs",
+        "He dug a new well. In the wrong place.",
+        "⛏️ Pickaxe"
+       ],
+       [
+        "The Water Book",
+        "Every jug of water was in the book. Except the last ten.",
+        "📘 Water book"
+       ],
+       [
+        "The Withered Agave",
+        "A whole row of agave had died. Only that row.",
+        "🥀 Withered leaf"
+       ],
+       [
+        "Cook Lupita Saves",
+        "She kept water for the kitchen. Her jug was empty.",
+        "🏺 Water jug"
+       ],
+       [
+        "Nephew Tomás Sells",
+        "He sold water to the neighbours. Whose water?",
+        "💵 Peso note"
+       ],
+       [
+        "The Hammock",
+        "Nobody lay in the hammock. Yet it was swinging.",
+        "🪢 Hammock cord"
+       ],
+       [
+        "The First Rain",
+        "When the rain came, everyone ran outside. All but one.",
+        "🌧️ Rain barrel"
+       ]
+      ]
+     }
+    },
+    {
+     "key": "hacienda-7",
+     "nl": {
+      "title": "Deel VII · De paardenmarkt",
+      "intro": "Kopers uit drie dorpen op het erf. Paarden, geld en zadels wisselen van eigenaar, en één paard komt niet terug.",
+      "outro": "De kopers zijn weg en de stal is stil. Het verdwenen paard staat weer in zijn box.",
+      "briefing": "Het bord wordt groter en de verklaringen worden zuiniger. Staat in het rapport dat een ruimte leeg was, dan valt die hele ruimte af voor iedereen.",
+      "cases": [
+       [
+        "De eerste koper",
+        "Hij betaalde in goud. Voor een paard dat niet te koop was.",
+        "🪙 Gouden munt"
+       ],
+       [
+        "Het zwarte paard",
+        "Zijn box was leeg. Het zadel hing er nog.",
+        "🐎 Zwart paard"
+       ],
+       [
+        "Voorman Esteban onderhandelt",
+        "Hij vroeg te weinig. Veel te weinig.",
+        "🤝 Handdruk"
+       ],
+       [
+        "De hoefsmid",
+        "Vier hoefijzers besteld. Er lagen er drie.",
+        "🔨 Smidshamer"
+       ],
+       [
+        "Zuster Bárbara zegent",
+        "Ze zegende elk paard. Het laatste paard schrok van haar.",
+        "💧 Wijwater"
+       ],
+       [
+        "Het stalboek",
+        "Elk paard stond erin. Het verdwenen paard niet meer.",
+        "📖 Stalboek"
+       ],
+       [
+        "De nachtelijke rit",
+        "Om twee uur hoorde iedereen hoeven. Niemand ging kijken.",
+        "🌙 Halve maan"
+       ],
+       [
+        "Het zadel van Don Rafael",
+        "Zijn zadel hing een jaar aan de muur. Vandaag was het leer warm.",
+        "🏇 Zilveren zadel"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part VII · The Horse Fair",
+      "intro": "Buyers from three villages in the yard. Horses, money and saddles change hands, and one horse does not come back.",
+      "outro": "The buyers have gone and the stable is quiet. The missing horse is back in its stall.",
+      "briefing": "The board gets bigger and the statements get sparser. If the report says a room was empty, that whole room is ruled out for everyone.",
+      "cases": [
+       [
+        "The First Buyer",
+        "He paid in gold. For a horse that was not for sale.",
+        "🪙 Gold coin"
+       ],
+       [
+        "The Black Horse",
+        "His stall was empty. The saddle was still hanging there.",
+        "🐎 Black horse"
+       ],
+       [
+        "Foreman Esteban Haggles",
+        "He asked too little. Far too little.",
+        "🤝 Handshake"
+       ],
+       [
+        "The Farrier",
+        "Four horseshoes ordered. Three were there.",
+        "🔨 Smith's hammer"
+       ],
+       [
+        "Sister Bárbara Blesses",
+        "She blessed every horse. The last horse shied away from her.",
+        "💧 Holy water"
+       ],
+       [
+        "The Stable Book",
+        "Every horse was in it. The missing horse no longer was.",
+        "📖 Stable book"
+       ],
+       [
+        "The Night Ride",
+        "At two everyone heard hooves. Nobody went to look.",
+        "🌙 Half moon"
+       ],
+       [
+        "Don Rafael's Saddle",
+        "His saddle had hung on the wall for a year. Today the leather was warm.",
+        "🏇 Silver saddle"
+       ]
+      ]
+     }
+    },
+    {
+     "key": "hacienda-8",
+     "nl": {
+      "title": "Deel VIII · Afscheid van San Isidro",
+      "intro": "De hacienda wordt verkocht. Nog één feest op de patio, met dezelfde gezichten als op de eerste avond.",
+      "outro": "Van Dam zet zijn hoed op, groet de familie en rijdt met de laatste kar naar het station. San Isidro heeft geen geheimen meer.",
+      "briefing": "De laatste zaken, bijna allemaal op het grote bord. Blijf niet hangen bij wie het lastigst is: zet eerst de anderen neer, dan blijft er voor de laatste vaak maar één vakje over.",
+      "cases": [
+       [
+        "De koper",
+        "De koper kwam uit Mexico-Stad. Hij kende de weg naar de kelder.",
+        "📝 Koopakte"
+       ],
+       [
+        "Het laatste vat",
+        "Eén vat bleef achter. Er stond een jaartal op: 1952.",
+        "🏷️ Vatlabel"
+       ],
+       [
+        "Doña Inés pakt in",
+        "Ze nam alleen een kistje mee. Het was zwaar.",
+        "🧳 Reiskoffer"
+       ],
+       [
+        "De torenklok blijft",
+        "De klok van de toren ging niet mee. Iemand wilde dat wel.",
+        "🕰️ Torenklok"
+       ],
+       [
+        "Mariachi Rubén speelt het laatste lied",
+        "Het lied van de eerste avond. Nu met een ander couplet.",
+        "🎼 Bladmuziek"
+       ],
+       [
+        "Het portret van Don Rafael",
+        "Het portret ging de kist in. Achter de lijst zat een brief.",
+        "💌 Verborgen brief"
+       ],
+       [
+        "Notaris Guzmán sluit af",
+        "Hij stempelde de laatste akte. De stempel was nog nat.",
+        "📎 Laatste akte"
+       ],
+       [
+        "Afscheid van San Isidro",
+        "Waar het begon, bij de ketels. Daar eindigt het ook.",
+        "🍶 Laatste fles"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part VIII · Farewell to San Isidro",
+      "intro": "The hacienda is being sold. One last party on the patio, with the same faces as on the first night.",
+      "outro": "Van Dam puts on his hat, nods to the family and rides the last cart to the station. San Isidro has no secrets left.",
+      "briefing": "The last cases, nearly all on the big board. Do not get stuck on the hardest one: place the others first, and the last one often has only one square left.",
+      "cases": [
+       [
+        "The Buyer",
+        "The buyer came from Mexico City. He knew the way to the cellar.",
+        "📝 Deed of sale"
+       ],
+       [
+        "The Last Barrel",
+        "One barrel stayed behind. It bore a year: 1952.",
+        "🏷️ Barrel label"
+       ],
+       [
+        "Doña Inés Packs",
+        "She took only a small box. It was heavy.",
+        "🧳 Suitcase"
+       ],
+       [
+        "The Tower Clock Stays",
+        "The tower clock was not going with them. Someone wanted it to.",
+        "🕰️ Tower clock"
+       ],
+       [
+        "Mariachi Rubén Plays the Last Song",
+        "The song from the first night. Now with a different verse.",
+        "🎼 Sheet music"
+       ],
+       [
+        "Don Rafael's Portrait",
+        "The portrait went into the crate. Behind the frame was a letter.",
+        "💌 Hidden letter"
+       ],
+       [
+        "Notary Guzmán Closes the File",
+        "He stamped the last deed. The stamp was still wet.",
+        "📎 Last deed"
+       ],
+       [
+        "Farewell to San Isidro",
+        "Where it began, by the stills. That is where it ends.",
+        "🍶 Last bottle"
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  "opera": {
+   "era": "a grand opera house in Paris on a premiere night in 1891",
+   "theme": {
+    "nl": {
+     "title": "Opéra Lumière",
+     "short": "Opera",
+     "victimName": "Directeur Gaston Leclerc",
+     "roomWord": "ruimte",
+     "roomWordPlural": "ruimtes",
+     "tagline": "Rood fluweel, kristallen kroonluchters en een uitverkochte première. Alleen de directeur komt na de pauze niet terug.",
+     "intro": "Opéra Lumière, Parijs, 1891. Goud, kristal en rood fluweel tot in de nok, en de première is uitverkocht. In de pauze ligt directeur Gaston Leclerc achter het toneel, onder het touwwerk.",
+     "outro": "Het doek valt voor de laatste keer. Het applaus is voor jou."
+    },
+    "en": {
+     "title": "Opéra Lumière",
+     "short": "Opera",
+     "victimName": "Director Gaston Leclerc",
+     "roomWord": "room",
+     "roomWordPlural": "rooms",
+     "tagline": "Red velvet, crystal chandeliers and a sold-out premiere. Only the director does not come back after the interval.",
+     "intro": "Opéra Lumière, Paris, 1891. Gold, crystal and red velvet up to the rafters, and the premiere is sold out. In the interval Director Gaston Leclerc lies behind the stage, under the rigging.",
+     "outro": "The curtain falls for the last time. The applause is for you."
+    }
+   },
+   "rooms": [
+    {
+     "nl": "Toneel",
+     "article": "het",
+     "en": "Stage"
+    },
+    {
+     "nl": "Coulisse",
+     "article": "de",
+     "en": "Side Stage"
+    },
+    {
+     "nl": "Orkestbak",
+     "article": "de",
+     "en": "Orchestra Pit"
+    },
+    {
+     "nl": "Kleedkamer",
+     "article": "de",
+     "en": "Dressing Room"
+    },
+    {
+     "nl": "Foyer",
+     "article": "de",
+     "en": "Foyer"
+    },
+    {
+     "nl": "Loge",
+     "article": "de",
+     "en": "Opera Box"
+    },
+    {
+     "nl": "Rekwisietenkamer",
+     "article": "de",
+     "en": "Prop Room"
+    },
+    {
+     "nl": "Toneelkelder",
+     "article": "de",
+     "en": "Trap Room"
+    },
+    {
+     "nl": "Kostuumatelier",
+     "article": "het",
+     "en": "Wardrobe"
+    },
+    {
+     "nl": "Directiekamer",
+     "article": "de",
+     "en": "Director's Office"
+    },
+    {
+     "nl": "Repetitiezaal",
+     "article": "de",
+     "en": "Rehearsal Room"
+    },
+    {
+     "nl": "Trappenhuis",
+     "article": "het",
+     "en": "Grand Staircase"
+    }
+   ],
+   "furniture": [
+    {
+     "id": "paspop",
+     "nl": "een paspop",
+     "en": "a dress form"
+    },
+    {
+     "id": "harp",
+     "nl": "een harp",
+     "en": "a harp"
+    },
+    {
+     "id": "masker",
+     "nl": "een masker",
+     "en": "a mask"
+    },
+    {
+     "id": "boeket",
+     "nl": "een boeket",
+     "en": "a bouquet"
+    },
+    {
+     "id": "toneelkijker",
+     "nl": "een toneelkijker",
+     "en": "a pair of opera glasses"
+    }
+   ],
+   "suspects": [
+    {
+     "nl": "Diva Colette",
+     "en": "Diva Colette",
+     "gender": "f",
+     "who": "De sopraan, ster van de première",
+     "look": "a glamorous opera diva in her thirties, piled-up curls with a jewelled tiara, off-shoulder velvet gown, fur stole, haughty look"
+    },
+    {
+     "nl": "Tenor Matteo",
+     "en": "Tenor Matteo",
+     "gender": "m",
+     "who": "Italiaanse tenor, haar tegenspeler",
+     "look": "a dashing Italian tenor in his thirties, wavy hair, curled moustache, embroidered stage doublet with a ruff collar"
+    },
+    {
+     "nl": "Dirigent Armand",
+     "en": "Conductor Armand",
+     "gender": "m",
+     "who": "Leidt het orkest, al dertig jaar aan het huis",
+     "look": "a severe conductor in his sixties, wild white hair, white tie and tailcoat, baton in hand, intense frown"
+    },
+    {
+     "nl": "Danseres Ninon",
+     "en": "Dancer Ninon",
+     "gender": "f",
+     "who": "Jongste ballerina van het corps",
+     "look": "a young ballerina in her late teens, hair in a tight bun, tulle tutu bodice, ribbon at the neck, wide nervous eyes"
+    },
+    {
+     "nl": "Kostumière Eloise",
+     "en": "Seamstress Eloise",
+     "gender": "f",
+     "who": "Maakt alle kostuums, kent elke naad",
+     "look": "a sharp seamstress in her forties, measuring tape around the neck, pins in her collar, high-necked blouse, pince-nez"
+    },
+    {
+     "nl": "Baron Viktor",
+     "en": "Baron Viktor",
+     "gender": "m",
+     "who": "Geldschieter van de opera",
+     "look": "a wealthy baron in his fifties, monocle, mutton-chop whiskers, opera cape over evening dress, silver-topped cane"
+    },
+    {
+     "nl": "Toneelmeester Hugo",
+     "en": "Stage Manager Hugo",
+     "gender": "m",
+     "who": "Bedient het touwwerk en de valluiken",
+     "look": "a burly stagehand chief in his forties, flat cap, rolled shirtsleeves, braces, coil of rope on his shoulder, short beard"
+    },
+    {
+     "nl": "Recensente Simone",
+     "en": "Critic Simone",
+     "gender": "f",
+     "who": "Schrijft voor Le Figaro, gevreesd om haar pen",
+     "look": "an elegant critic in her thirties, short dark hair under a small feathered hat, high-collared jacket, notebook and pencil, raised eyebrow"
+    }
+   ],
+   "week": {
+    "nl": [
+     "Het spook van loge vijf",
+     "De aria die niemand kende",
+     "Het touw dat knapte",
+     "De laatste buiging van Colette"
+    ],
+    "en": [
+     "The Phantom of Box Five",
+     "The Aria Nobody Knew",
+     "The Rope That Snapped",
+     "Colette's Final Bow"
+    ]
+   },
+   "medal": {
+    "nl": [
+     "Het doek valt",
+     "Maak alle delen van Opéra Lumière af"
+    ],
+    "en": [
+     "The Curtain Falls",
+     "Finish every part of Opéra Lumière"
+    ]
+   },
+   "campaign": [
+    {
+     "key": "opera",
+     "nl": {
+      "title": "Deel I · De première",
+      "intro": "Opéra Lumière, Parijs, 1891. Goud, kristal en een uitverkochte zaal. In de pauze ligt directeur Leclerc achter het toneel, onder het touwwerk.",
+      "outro": "Het doek is gevallen en de zaal is leeg. Maar de voorstelling gaat morgen door.",
+      "briefing": "Een operagebouw is een doolhof van gangen en trappen. Begin bij wie zegt in welke ruimte hij was; \"direct naast\" de harp telt alleen recht ernaast, nooit schuin.",
+      "cases": [
+       [
+        "Het doek gaat op",
+        "De zaal was uitverkocht. De loge van de directeur bleef leeg.",
+        "🎟️ Toegangskaartje"
+       ],
+       [
+        "De pauze",
+        "Twintig minuten pauze. Genoeg tijd voor één ding.",
+        "🥂 Champagneglas"
+       ],
+       [
+        "Diva Colette zingt",
+        "Ze haalde de hoge noot. Achter het toneel viel iets.",
+        "💎 Diamanten oorbel"
+       ],
+       [
+        "Het touwwerk",
+        "Honderd touwen achter het toneel. Eén was doorgesneden.",
+        "✂️ Schaar"
+       ],
+       [
+        "Toneelmeester Hugo telt",
+        "Hij telde de contragewichten. Er hing er één te veel.",
+        "⚖️ Contragewicht"
+       ],
+       [
+        "Het applaus",
+        "Tien minuten applaus. Niemand hoorde de klap erachter.",
+        "💐 Bos bloemen"
+       ],
+       [
+        "Baron Viktor betaalt",
+        "De baron betaalde de première. Hij bleef niet tot het einde.",
+        "💰 Geldbuidel"
+       ],
+       [
+        "Na de voorstelling",
+        "De zaal liep leeg. Achter het doek lag de directeur.",
+        "🎭 Theatermasker"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part I · The Premiere",
+      "intro": "Opéra Lumière, Paris, 1891. Gold, crystal and a sold-out house. In the interval Director Leclerc lies behind the stage, under the rigging.",
+      "outro": "The curtain has fallen and the house is empty. But the show goes on tomorrow.",
+      "briefing": "An opera house is a maze of corridors and stairs. Start with whoever says which room they were in; “directly next to” the harp only counts straight beside it, never diagonally.",
+      "cases": [
+       [
+        "The Curtain Rises",
+        "The house was sold out. The director's box stayed empty.",
+        "🎟️ Ticket"
+       ],
+       [
+        "The Interval",
+        "Twenty minutes of interval. Enough time for one thing.",
+        "🥂 Champagne glass"
+       ],
+       [
+        "Diva Colette Sings",
+        "She hit the high note. Behind the stage something fell.",
+        "💎 Diamond earring"
+       ],
+       [
+        "The Rigging",
+        "A hundred ropes behind the stage. One had been cut.",
+        "✂️ Scissors"
+       ],
+       [
+        "Stage Manager Hugo Counts",
+        "He counted the counterweights. There was one too many.",
+        "⚖️ Counterweight"
+       ],
+       [
+        "The Applause",
+        "Ten minutes of applause. Nobody heard the thud behind it.",
+        "💐 Bunch of flowers"
+       ],
+       [
+        "Baron Viktor Pays",
+        "The baron paid for the premiere. He did not stay to the end.",
+        "💰 Money pouch"
+       ],
+       [
+        "After the Show",
+        "The house emptied. Behind the curtain lay the director.",
+        "🎭 Theatre mask"
+       ]
+      ]
+     }
+    },
+    {
+     "key": "opera-2",
+     "nl": {
+      "title": "Deel II · Achter het doek",
+      "intro": "De voorstelling gaat door, de politie loopt achter het toneel. Touwen, valluiken en contragewichten: hier kent alleen de ploeg de weg.",
+      "outro": "Het touwwerk is geteld. Morgen staat er een nieuwe aria op het programma.",
+      "briefing": "Achter het doek is alles dichtbij. Een verklaring over twee mensen los je op door eerst één van de twee vast te zetten.",
+      "cases": [
+       [
+        "Het valluik",
+        "Het luik in het toneel stond open. Niemand had het gebruikt.",
+        "🕳️ Valluik"
+       ],
+       [
+        "Gefluister in de coulisse",
+        "Iemand fluisterde in de coulisse. Iedereen hoorde het, niemand wist wie.",
+        "🧣 Zijden sjaal"
+       ],
+       [
+        "Toneelmeester Hugo knoopt",
+        "Hij legt elke knoop zelf. Deze knoop niet.",
+        "🪢 Scheepsknoop"
+       ],
+       [
+        "Het decor van de tweede akte",
+        "Een kasteel van karton. Achter de deur stond iemand echt.",
+        "🏰 Kartonnen kasteel"
+       ],
+       [
+        "Danseres Ninon wacht",
+        "Ze wachtte op haar opkomst. Die kwam niet.",
+        "🩰 Spitzen"
+       ],
+       [
+        "De souffleur",
+        "Uit het souffleurshokje kwam geen woord. Er zat niemand in.",
+        "📃 Souffleursboek"
+       ],
+       [
+        "De zandzak",
+        "Een zandzak viel twee meter naast de tenor.",
+        "🪨 Zandzak"
+       ],
+       [
+        "Achter het doek",
+        "Toen het doek opging, stond er iemand te veel op het toneel.",
+        "💡 Voetlicht"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part II · Behind the Curtain",
+      "intro": "The show goes on, and the police walk behind the stage. Ropes, trapdoors and counterweights: only the crew knows the way here.",
+      "outro": "The rigging has been counted. Tomorrow a new aria is on the programme.",
+      "briefing": "Behind the curtain everything is close together. Solve a statement about two people by fixing one of the two first.",
+      "cases": [
+       [
+        "The Trapdoor",
+        "The trapdoor in the stage was open. Nobody had used it.",
+        "🕳️ Trapdoor"
+       ],
+       [
+        "Whispers in the Wings",
+        "Someone whispered in the wings. Everyone heard it, nobody knew who.",
+        "🧣 Silk scarf"
+       ],
+       [
+        "Stage Manager Hugo Ties a Knot",
+        "He ties every knot himself. Not this one.",
+        "🪢 Sailor's knot"
+       ],
+       [
+        "The Second-Act Set",
+        "A cardboard castle. Behind the door stood someone real.",
+        "🏰 Cardboard castle"
+       ],
+       [
+        "Dancer Ninon Waits",
+        "She waited for her entrance. It never came.",
+        "🩰 Pointe shoes"
+       ],
+       [
+        "The Prompter",
+        "Not a word came from the prompt box. Nobody was in it.",
+        "📃 Prompt book"
+       ],
+       [
+        "The Sandbag",
+        "A sandbag fell two metres from the tenor.",
+        "🪨 Sandbag"
+       ],
+       [
+        "Behind the Curtain",
+        "When the curtain rose, there was one person too many on the stage.",
+        "💡 Footlight"
+       ]
+      ]
+     }
+    },
+    {
+     "key": "opera-3",
+     "nl": {
+      "title": "Deel III · De verdwenen partituur",
+      "intro": "Een uur voor de voorstelling is de nieuwe aria weg. Zonder partituur geen première, en iemand weet dat.",
+      "outro": "De partituur ligt weer in de orkestbak. Diva Colette zingt, alsof er niets gebeurd is.",
+      "briefing": "Iedereen zoekt de partituur en iedereen wijst naar een ander. Wie zegt waar hij níét was, vertelt je ook iets: streep die ruimte meteen weg.",
+      "cases": [
+       [
+        "De lege map",
+        "De dirigent sloeg de map open. Hij was leeg.",
+        "🎼 Lege map"
+       ],
+       [
+        "Dirigent Armand zoekt",
+        "Hij zocht in de orkestbak. Hij wist waar hij moest kijken.",
+        "🪄 Dirigeerstok"
+       ],
+       [
+        "Drie kopieën",
+        "Drie kopieën van de aria. Twee gevonden.",
+        "📄 Kopie"
+       ],
+       [
+        "Kostumière Eloise naait",
+        "In de zoom van een jurk zat papier.",
+        "🪡 Naald"
+       ],
+       [
+        "De inktvlek",
+        "Op iemands vingers zat inkt. Van de componist.",
+        "🫙 Inktpot"
+       ],
+       [
+        "Recensente Simone weet het al",
+        "Haar recensie stond al klaar. Over een aria die niemand had gehoord.",
+        "📰 Ochtendkrant"
+       ],
+       [
+        "De kachel brandt",
+        "In de directiekamer brandde de kachel. Er lag papier naast.",
+        "🔥 Verbrand papier"
+       ],
+       [
+        "De aria",
+        "De aria werd gezongen. Door de verkeerde stem.",
+        "🎶 Aria"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part III · The Missing Score",
+      "intro": "An hour before the show the new aria is gone. No score, no premiere, and someone knows it.",
+      "outro": "The score is back in the orchestra pit. Diva Colette sings as if nothing happened.",
+      "briefing": "Everyone is searching for the score and everyone points at someone else. Whoever says where they were not tells you something too: cross that room off straight away.",
+      "cases": [
+       [
+        "The Empty Folder",
+        "The conductor opened the folder. It was empty.",
+        "🎼 Empty folder"
+       ],
+       [
+        "Conductor Armand Searches",
+        "He searched the orchestra pit. He knew where to look.",
+        "🪄 Baton"
+       ],
+       [
+        "Three Copies",
+        "Three copies of the aria. Two found.",
+        "📄 Copy"
+       ],
+       [
+        "Seamstress Eloise Sews",
+        "There was paper in the hem of a dress.",
+        "🪡 Needle"
+       ],
+       [
+        "The Ink Stain",
+        "There was ink on someone's fingers. The composer's ink.",
+        "🫙 Inkwell"
+       ],
+       [
+        "Critic Simone Already Knows",
+        "Her review was already written. About an aria nobody had heard.",
+        "📰 Morning paper"
+       ],
+       [
+        "The Stove Is Lit",
+        "The stove in the director's office was burning. Paper lay beside it.",
+        "🔥 Burnt paper"
+       ],
+       [
+        "The Aria",
+        "The aria was sung. By the wrong voice.",
+        "🎶 Aria"
+       ]
+      ]
+     }
+    },
+    {
+     "key": "opera-4",
+     "nl": {
+      "title": "Deel IV · Het gemaskerd bal",
+      "intro": "Het jaarlijkse gemaskerd bal in de foyer. Iedereen draagt een masker, en niemand weet wie naast wie stond.",
+      "outro": "Om middernacht gaan de maskers af. Niet iedereen lacht.",
+      "briefing": "Met maskers op kent niemand elkaar, maar de plattegrond liegt niet. Zet eerst de verdachte met de kleinste keus neer; de rest volgt.",
+      "cases": [
+       [
+        "Maskers op",
+        "Tweehonderd gasten, tweehonderd maskers. Eén masker te veel.",
+        "🦚 Pauwenveer"
+       ],
+       [
+        "De wals",
+        "Het orkest speelde een wals. Eén paar danste niet mee.",
+        "🎻 Viool"
+       ],
+       [
+        "Baron Viktor herkent niemand",
+        "Hij kende iedereen in Parijs. Vanavond niemand.",
+        "🧐 Monocle"
+       ],
+       [
+        "Het rode masker",
+        "Iedereen droeg wit. Behalve één.",
+        "🪶 Rode veer"
+       ],
+       [
+        "Danseres Ninon danst met de baron",
+        "Ze dansten drie dansen. De derde danste ze alleen.",
+        "👠 Balschoen"
+       ],
+       [
+        "Champagne om middernacht",
+        "De fles knalde om twaalf uur. De tweede knal niet.",
+        "🍾 Champagnefles"
+       ],
+       [
+        "De spiegelzaal",
+        "In de spiegels stond iemand die er niet was.",
+        "🪞 Handspiegel"
+       ],
+       [
+        "Maskers af",
+        "Om middernacht gingen de maskers af. Eén gezicht kende niemand.",
+        "🎀 Maskerlint"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part IV · The Masked Ball",
+      "intro": "The yearly masked ball in the foyer. Everyone wears a mask, and nobody knows who stood next to whom.",
+      "outro": "At midnight the masks come off. Not everyone is laughing.",
+      "briefing": "With masks on, nobody knows anyone, but the floor plan does not lie. Place the suspect with the fewest options first; the rest follows.",
+      "cases": [
+       [
+        "Masks On",
+        "Two hundred guests, two hundred masks. One mask too many.",
+        "🦚 Peacock feather"
+       ],
+       [
+        "The Waltz",
+        "The orchestra played a waltz. One couple did not dance.",
+        "🎻 Violin"
+       ],
+       [
+        "Baron Viktor Recognises Nobody",
+        "He knew everyone in Paris. Tonight nobody.",
+        "🧐 Monocle"
+       ],
+       [
+        "The Red Mask",
+        "Everyone wore white. Except one.",
+        "🪶 Red feather"
+       ],
+       [
+        "Dancer Ninon Dances with the Baron",
+        "They danced three dances. She danced the third alone.",
+        "👠 Ball slipper"
+       ],
+       [
+        "Champagne at Midnight",
+        "The bottle popped at twelve. The second bang did not come from a bottle.",
+        "🍾 Champagne bottle"
+       ],
+       [
+        "The Hall of Mirrors",
+        "In the mirrors stood someone who was not there.",
+        "🪞 Hand mirror"
+       ],
+       [
+        "Masks Off",
+        "At midnight the masks came off. Nobody knew one of the faces.",
+        "🎀 Mask ribbon"
+       ]
+      ]
+     }
+    },
+    {
+     "key": "opera-5",
+     "nl": {
+      "title": "Deel V · De toneelkelder",
+      "intro": "Onder het toneel ligt een tweede gebouw: gangen, machines en een ondergronds meer. Daar dwaalt iemand rond.",
+      "outro": "De luiken zijn dicht. Wat beneden lag, is boven gekomen.",
+      "briefing": "In de kelder zie je weinig. Verklaringen over rijen en kolommen lopen dwars door de muren heen; gebruik het potlood.",
+      "cases": [
+       [
+        "De trap naar beneden",
+        "Honderd treden naar de kelder. Op de laatste lag een handschoen.",
+        "🧤 Witte handschoen"
+       ],
+       [
+        "Het ondergrondse meer",
+        "Onder het gebouw ligt water. Er lag een bootje dat niemand kende.",
+        "🛶 Roeibootje"
+       ],
+       [
+        "Toneelmeester Hugo daalt af",
+        "Hij ging met een lantaarn naar beneden. Hij kwam zonder terug.",
+        "🏮 Lantaarn"
+       ],
+       [
+        "Het spook van de opera",
+        "Iedereen sprak over een spook. Het spook had natte voeten.",
+        "🧥 Natte cape"
+       ],
+       [
+        "Tenor Matteo oefent",
+        "Hij oefende beneden, waar niemand hem hoorde. Bijna niemand.",
+        "🎵 Stemvork"
+       ],
+       [
+        "De machinekamer",
+        "Het rad dat het decor draait, stond stil. Er zat iets tussen.",
+        "⚙️ Tandwiel"
+       ],
+       [
+        "Brieven van het spook",
+        "Elke week een brief in rode inkt. Deze week twee.",
+        "✉️ Rode brief"
+       ],
+       [
+        "Loge vijf",
+        "Loge vijf werd nooit verkocht. Toch zat er vanavond iemand.",
+        "🗝️ Logesleutel"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part V · Under the Stage",
+      "intro": "Under the stage lies a second building: passages, machines and an underground lake. Someone is wandering down there.",
+      "outro": "The trapdoors are shut. What lay below has come to light.",
+      "briefing": "Below the stage you can hardly see. Statements about rows and columns run straight through the walls; use the pencil.",
+      "cases": [
+       [
+        "The Stairs Down",
+        "A hundred steps to the cellar. On the last one lay a glove.",
+        "🧤 White glove"
+       ],
+       [
+        "The Underground Lake",
+        "There is water under the building. A boat lay on it that nobody knew.",
+        "🛶 Rowing boat"
+       ],
+       [
+        "Stage Manager Hugo Goes Down",
+        "He went down with a lantern. He came back without one.",
+        "🏮 Lantern"
+       ],
+       [
+        "The Phantom of the Opera",
+        "Everyone talked about a phantom. The phantom had wet feet.",
+        "🧥 Wet cape"
+       ],
+       [
+        "Tenor Matteo Practises",
+        "He practised down below, where nobody could hear him. Almost nobody.",
+        "🎵 Tuning fork"
+       ],
+       [
+        "The Machine Room",
+        "The wheel that turns the scenery had stopped. Something was caught in it.",
+        "⚙️ Cog"
+       ],
+       [
+        "Letters from the Phantom",
+        "Every week a letter in red ink. This week two.",
+        "✉️ Red letter"
+       ],
+       [
+        "Box Five",
+        "Box Five was never sold. Yet tonight someone sat in it.",
+        "🗝️ Box key"
+       ]
+      ]
+     }
+    },
+    {
+     "key": "opera-6",
+     "nl": {
+      "title": "Deel VI · Generale repetitie",
+      "intro": "De nieuwe opera moet perfect zijn. Generale repetitie tot diep in de nacht, en één rekwisiet is echt.",
+      "outro": "De repetitie is voorbij. Morgen gaat het gezelschap op tournee.",
+      "briefing": "Op een repetitie staat iedereen steeds ergens anders en de verklaringen worden zuiniger. Streep weg wat niet kan en kijk wat overblijft.",
+      "cases": [
+       [
+        "Nog één keer",
+        "De dirigent liet alles opnieuw spelen. Eén musicus speelde iets anders.",
+        "🥁 Pauk"
+       ],
+       [
+        "Het echte zwaard",
+        "Alle zwaarden waren van hout. Op één na.",
+        "🗡️ Toneelzwaard"
+       ],
+       [
+        "Kostumière Eloise past",
+        "Elk kostuum paste. Eén was vermaakt voor iemand anders.",
+        "📏 Meetlint"
+       ],
+       [
+        "De gifbeker",
+        "In de derde akte drinkt de koning gif. Vanavond smaakte het bitter.",
+        "🍷 Gouden beker"
+       ],
+       [
+        "Recensente Simone kijkt mee",
+        "Ze mocht er niet zijn. Ze zat op de derde rij.",
+        "📝 Notitieboekje"
+       ],
+       [
+        "De rekwisietenkamer",
+        "Elk stuk had een nummer. Nummer veertien was weg.",
+        "🏷️ Nummerlabel"
+       ],
+       [
+        "Diva Colette weigert",
+        "Ze weigerde op te komen. Ze wist wat er boven hing.",
+        "👑 Toneelkroon"
+       ],
+       [
+        "De doorloop",
+        "Van begin tot eind, zonder te stoppen. Eén deur bleef dicht.",
+        "🚪 Kleedkamerdeur"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part VI · Dress Rehearsal",
+      "intro": "The new opera has to be perfect. Dress rehearsal deep into the night, and one prop is real.",
+      "outro": "The rehearsal is over. Tomorrow the company goes on tour.",
+      "briefing": "At a rehearsal everyone keeps moving and the statements get sparser. Cross off what cannot be and see what is left.",
+      "cases": [
+       [
+        "One More Time",
+        "The conductor had everything played again. One musician played something else.",
+        "🥁 Kettledrum"
+       ],
+       [
+        "The Real Sword",
+        "All the swords were wooden. All but one.",
+        "🗡️ Stage sword"
+       ],
+       [
+        "Seamstress Eloise Fits",
+        "Every costume fitted. One had been altered for someone else.",
+        "📏 Tape measure"
+       ],
+       [
+        "The Poisoned Cup",
+        "In the third act the king drinks poison. Tonight it tasted bitter.",
+        "🍷 Golden cup"
+       ],
+       [
+        "Critic Simone Watches",
+        "She was not allowed in. She sat in the third row.",
+        "📝 Notebook"
+       ],
+       [
+        "The Prop Room",
+        "Every piece had a number. Number fourteen was gone.",
+        "🏷️ Number tag"
+       ],
+       [
+        "Diva Colette Refuses",
+        "She refused to go on. She knew what was hanging above.",
+        "👑 Stage crown"
+       ],
+       [
+        "The Run-Through",
+        "From start to finish, without stopping. One door stayed shut.",
+        "🚪 Dressing room door"
+       ]
+      ]
+     }
+    },
+    {
+     "key": "opera-7",
+     "nl": {
+      "title": "Deel VII · De tournee",
+      "intro": "Wenen, Milaan, Londen. Het gezelschap reist met het hele decor, en de moeilijkheden reizen mee.",
+      "outro": "Na de laatste stad gaat het decor terug naar Parijs. Het gezelschap ook, op één na.",
+      "briefing": "Het bord wordt groter en de verklaringen worden zuiniger. Staat in het rapport dat een ruimte leeg was, dan valt die hele ruimte af voor iedereen.",
+      "cases": [
+       [
+        "Wenen",
+        "In Wenen klapte het publiek staand. Op één stoel na.",
+        "🍰 Sachertaart"
+       ],
+       [
+        "De verloren koffer",
+        "Twaalf koffers vertrokken uit Parijs. Elf kwamen aan.",
+        "🧳 Decorkoffer"
+       ],
+       [
+        "Milaan",
+        "In de Scala zong Tenor Matteo thuis. Iemand wilde dat niet.",
+        "🎫 Scala-kaartje"
+       ],
+       [
+        "Baron Viktor reist mee",
+        "Hij betaalde de reis. Hij zat in een ander rijtuig dan zijn kaartje zei.",
+        "🎩 Hoge hoed"
+       ],
+       [
+        "Londen in de mist",
+        "Door de mist zag niemand de overkant van het toneel.",
+        "🫖 Theepot"
+       ],
+       [
+        "Kostumière Eloise pakt in",
+        "Tweehonderd kostuums in vijftig manden. Eén mand was te zwaar.",
+        "🧺 Kostuummand"
+       ],
+       [
+        "De nachttrein",
+        "De trein reed door de nacht. Bij het ontbijt ontbrak er iemand.",
+        "🛏️ Slaapcoupé"
+       ],
+       [
+        "Terug naar Parijs",
+        "Op het perron wachtte de politie. Ze wisten welke trein.",
+        "🚉 Perronkaartje"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part VII · The Tour",
+      "intro": "Vienna, Milan, London. The company travels with the whole set, and the trouble travels with it.",
+      "outro": "After the last city the set goes back to Paris. So does the company, all but one.",
+      "briefing": "The board gets bigger and the statements get sparser. If the report says a room was empty, that whole room is ruled out for everyone.",
+      "cases": [
+       [
+        "Vienna",
+        "In Vienna the audience gave a standing ovation. All but one seat.",
+        "🍰 Sachertorte"
+       ],
+       [
+        "The Lost Trunk",
+        "Twelve trunks left Paris. Eleven arrived.",
+        "🧳 Set trunk"
+       ],
+       [
+        "Milan",
+        "At La Scala, Tenor Matteo sang at home. Someone did not want that.",
+        "🎫 La Scala ticket"
+       ],
+       [
+        "Baron Viktor Travels Along",
+        "He paid for the journey. He sat in a different carriage from the one on his ticket.",
+        "🎩 Top hat"
+       ],
+       [
+        "London in the Fog",
+        "Through the fog nobody could see the other side of the stage.",
+        "🫖 Teapot"
+       ],
+       [
+        "Seamstress Eloise Packs",
+        "Two hundred costumes in fifty hampers. One hamper was too heavy.",
+        "🧺 Costume hamper"
+       ],
+       [
+        "The Night Train",
+        "The train ran through the night. At breakfast someone was missing.",
+        "🛏️ Sleeping compartment"
+       ],
+       [
+        "Back to Paris",
+        "The police were waiting on the platform. They knew which train.",
+        "🚉 Platform ticket"
+       ]
+      ]
+     }
+    },
+    {
+     "key": "opera-8",
+     "nl": {
+      "title": "Deel VIII · Laatste voorstelling",
+      "intro": "De Opéra Lumière gaat dicht voor een verbouwing. Nog één keer gaat het doek op, voor dezelfde zaal als op de première.",
+      "outro": "Van Dam staat als laatste op uit de zaal, klapt één keer en loopt de trap af, de Parijse nacht in.",
+      "briefing": "De laatste zaken, bijna allemaal op het grote bord. Blijf niet hangen bij wie het lastigst is: zet eerst de anderen neer, dan blijft er voor de laatste vaak maar één vakje over.",
+      "cases": [
+       [
+        "Dezelfde zaal",
+        "Iedereen zat op dezelfde stoel als op de première. Op één na.",
+        "💺 Fluwelen stoel"
+       ],
+       [
+        "Dirigent Armand neemt afscheid",
+        "Dertig jaar dirigeerde hij hier. Vanavond keek hij niet naar het orkest.",
+        "🎖️ Erepenning"
+       ],
+       [
+        "Het laatste boeket",
+        "Op het toneel lagen veertig boeketten. Eén zonder kaartje.",
+        "💐 Boeket zonder kaartje"
+       ],
+       [
+        "De kroonluchter",
+        "De grote kroonluchter hing scheef. Iemand was boven geweest.",
+        "✨ Kristallen druppel"
+       ],
+       [
+        "Danseres Ninon danst solo",
+        "Haar eerste solo. Iedereen keek naar haar, behalve één.",
+        "🌸 Haarbloem"
+       ],
+       [
+        "Recensente Simone schrijft",
+        "Haar laatste recensie. Over de voorstelling, en over de dader.",
+        "✒️ Kroontjespen"
+       ],
+       [
+        "Toneelmeester Hugo laat zakken",
+        "Het doek zakte voor de laatste keer. Eén touw hield hij vast.",
+        "🧰 Gereedschapskist"
+       ],
+       [
+        "Laatste voorstelling",
+        "Waar het begon, achter het doek. Daar eindigt het ook.",
+        "🎟️ Laatste kaartje"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part VIII · The Final Performance",
+      "intro": "The Opéra Lumière is closing for renovation. One last time the curtain rises, for the same audience as at the premiere.",
+      "outro": "Van Dam is the last to rise from his seat. He claps once and walks down the stairs, into the Paris night.",
+      "briefing": "The last cases, nearly all on the big board. Do not get stuck on the hardest one: place the others first, and the last one often has only one square left.",
+      "cases": [
+       [
+        "The Same House",
+        "Everyone sat in the same seat as at the premiere. All but one.",
+        "💺 Velvet seat"
+       ],
+       [
+        "Conductor Armand Says Goodbye",
+        "For thirty years he conducted here. Tonight he did not look at the orchestra.",
+        "🎖️ Medal of honour"
+       ],
+       [
+        "The Last Bouquet",
+        "Forty bouquets lay on the stage. One without a card.",
+        "💐 Bouquet without a card"
+       ],
+       [
+        "The Chandelier",
+        "The great chandelier hung crooked. Someone had been up there.",
+        "✨ Crystal drop"
+       ],
+       [
+        "Dancer Ninon Dances Solo",
+        "Her first solo. Everyone watched her, all but one.",
+        "🌸 Hair flower"
+       ],
+       [
+        "Critic Simone Writes",
+        "Her last review. About the performance, and about the culprit.",
+        "✒️ Dip pen"
+       ],
+       [
+        "Stage Manager Hugo Lowers the Curtain",
+        "The curtain came down for the last time. He kept hold of one rope.",
+        "🧰 Toolbox"
+       ],
+       [
+        "The Final Performance",
+        "Where it began, behind the curtain. That is where it ends.",
+        "🎟️ Last ticket"
+       ]
+      ]
+     }
+    }
+   ]
+  }
+ }
+}

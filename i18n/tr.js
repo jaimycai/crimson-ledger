@@ -831,6 +831,108 @@
           "Jongen Kai": "Kai",
           "Berggids Freya": "Freya"
         }
+      },
+      "hacienda": {
+        "title": "Hacienda San Isidro",
+        "short": "Hacienda",
+        "victimName": "Don Rafael Ortega",
+        "roomWord": "alan",
+        "roomWordPlural": "alanlar",
+        "tagline": "San Isidro’da agave şenliği. Avluda müzik ve bir daha ayağa kalkmayacak bir patron.",
+        "intro": "Hacienda San Isidro, Jalisco, 1952. Agave hasadı bitti ve bütün aile kutlama yapıyor. Derken Don Rafael damıtımevinde, bakır imbiklerin arasında yatıyor.",
+        "outro": "İmbikler soğuyor, müzik sustu. İmbikte ne olduğunu sen biliyorsun.",
+        "rooms": {
+          "Patio": "Avlu",
+          "Stokerij": "Damıtımevi",
+          "Kelder": "Mahzen",
+          "Kapel": "Şapel",
+          "Keuken": "Mutfak",
+          "Eetzaal": "Yemek Salonu",
+          "Stal": "Ahır",
+          "Salon": "Salon",
+          "Veranda": "Veranda",
+          "Bibliotheek": "Kütüphane",
+          "Wasruimte": "Çamaşırlık",
+          "Klokkentoren": "Çan Kulesi"
+        },
+        "furniture": {
+          "agave": "agave",
+          "ketel": "bakır imbik",
+          "gitaar": "gitar",
+          "hangmat": "hamak",
+          "pinata": "pinyata"
+        },
+        "suspects": {
+          "Doña Inés": "Doña Inés",
+          "Mariachi Rubén": "Mariachi Rubén",
+          "Kokkin Lupita": "Aşçı Lupita",
+          "Voorman Esteban": "Ustabaşı Esteban",
+          "Schilderes Paloma": "Ressam Paloma",
+          "Neef Tomás": "Yeğen Tomás",
+          "Notaris Guzmán": "Noter Guzmán",
+          "Zuster Bárbara": "Rahibe Bárbara"
+        },
+        "suspectShort": {
+          "Doña Inés": "Inés",
+          "Mariachi Rubén": "Rubén",
+          "Kokkin Lupita": "Lupita",
+          "Voorman Esteban": "Esteban",
+          "Schilderes Paloma": "Paloma",
+          "Neef Tomás": "Tomás",
+          "Notaris Guzmán": "Guzmán",
+          "Zuster Bárbara": "Bárbara"
+        }
+      },
+      "opera": {
+        "title": "Opéra Lumière",
+        "short": "Opera",
+        "victimName": "Direktör Gaston Leclerc",
+        "roomWord": "alan",
+        "roomWordPlural": "alanlar",
+        "tagline": "Kırmızı kadife, kristal avizeler ve kapalı gişe bir prömiyer. Yalnızca direktör perde arasından sonra geri dönmüyor.",
+        "intro": "Opéra Lumière, Paris, 1891. Tavana kadar altın, kristal ve kırmızı kadife; prömiyer kapalı gişe. Perde arasında Direktör Gaston Leclerc sahnenin arkasında, halatların altında yatıyor.",
+        "outro": "Perde son kez iniyor. Alkışlar senin için.",
+        "rooms": {
+          "Toneel": "Sahne",
+          "Coulisse": "Yan Sahne",
+          "Orkestbak": "Orkestra Çukuru",
+          "Kleedkamer": "Makyaj Odası",
+          "Foyer": "Fuaye",
+          "Loge": "Loca",
+          "Rekwisietenkamer": "Aksesuar Odası",
+          "Toneelkelder": "Sahne Altı",
+          "Kostuumatelier": "Kostümhane",
+          "Directiekamer": "Direktörlük",
+          "Repetitiezaal": "Prova Salonu",
+          "Trappenhuis": "Büyük Merdiven"
+        },
+        "furniture": {
+          "paspop": "terzi mankeni",
+          "harp": "arp",
+          "masker": "maske",
+          "boeket": "buket",
+          "toneelkijker": "opera dürbünü"
+        },
+        "suspects": {
+          "Diva Colette": "Diva Colette",
+          "Tenor Matteo": "Tenor Matteo",
+          "Dirigent Armand": "Maestro Armand",
+          "Danseres Ninon": "Balerin Ninon",
+          "Kostumière Eloise": "Kostümcü Eloise",
+          "Baron Viktor": "Baron Viktor",
+          "Toneelmeester Hugo": "Sahne Amiri Hugo",
+          "Recensente Simone": "Eleştirmen Simone"
+        },
+        "suspectShort": {
+          "Diva Colette": "Colette",
+          "Tenor Matteo": "Matteo",
+          "Dirigent Armand": "Armand",
+          "Danseres Ninon": "Ninon",
+          "Kostumière Eloise": "Eloise",
+          "Baron Viktor": "Viktor",
+          "Toneelmeester Hugo": "Hugo",
+          "Recensente Simone": "Simone"
+        }
       }
     },
     "daily": [
@@ -913,6 +1015,18 @@
         "Geri Dönmeyen İzler",
         "İkinci Çığın Gecesi",
         "Edelweiss’in Son Misafiri"
+      ],
+      "hacienda": [
+        "Damgasız Fıçı",
+        "Şapel Çanının Gecesi",
+        "Döşemenin Altındaki Vasiyet",
+        "San Isidro’nun Son Hasadı"
+      ],
+      "opera": [
+        "Beş Numaralı Locanın Hayaleti",
+        "Kimsenin Bilmediği Arya",
+        "Kopan Halat",
+        "Colette Son Kez Selama Çıkıyor"
       ]
     },
     "medals": {
@@ -1011,6 +1125,14 @@
       "meesterzaken": [
         "Usta Hafiye",
         "Usta seviyesinde beş vaka çöz"
+      ],
+      "hacienda": [
+        "Son Fıçı",
+        "Hacienda San Isidro dünyasındaki bütün bölümleri bitir"
+      ],
+      "opera": [
+        "Perde İniyor",
+        "Opéra Lumière dünyasındaki bütün bölümleri bitir"
       ]
     },
     "quests": {
@@ -4183,6 +4305,774 @@
           "🌼 Kurutulmuş edelweiss"
         ]
       ]
+    ],
+    "hacienda": [
+      "Bölüm I · Agave Şenliği",
+      "Hacienda San Isidro, Jalisco, 1952. Agave hasadı kaldırıldı ve aile kutlama yapıyor. Derken Don Rafael damıtımevinde, bakır imbiklerin arasında yatıyor.",
+      "Şenlik sustu. Ama aile vasiyet için kalıyor.",
+      "Hacienda büyüktür, ama şenlikte herkes bir arada durur. Hangi alanda olduğunu söyleyenle başla. İmbiğin “hemen yanında” yalnızca tam yanındaki kare demek, asla çapraz değil.",
+      [
+        [
+          "Agave Şenliği",
+          "Hasat kaldırılmıştı. Patron dışarı çıkmadı.",
+          "🌵 Agave yaprağı"
+        ],
+        [
+          "Bakır İmbik",
+          "İmbik hâlâ sıcaktı. Damıtımevi kilitliydi.",
+          "🔑 Damıtımevi anahtarı"
+        ],
+        [
+          "Mariachi Rubén Şarkı Söylüyor",
+          "Don Rafael’in en sevdiği şarkıyı söyledi. Kimse alkışlamadı.",
+          "🎺 Trompet"
+        ],
+        [
+          "Avlunun Üstünde Havai Fişekler",
+          "Herkes yukarı baktı. Neredeyse herkes.",
+          "🎆 Fişek"
+        ],
+        [
+          "Aşçı Lupita Tabakları Sayıyor",
+          "Dokuz kişilik sofra kurdu. Sekiz kişi yedi.",
+          "🍽️ Toprak tabak"
+        ],
+        [
+          "İlk Şişe",
+          "Hasadın ilk şişesi açıktı. Kimse onu açmamıştı.",
+          "🍾 Mantar tıpa"
+        ],
+        [
+          "Doña Inés Yas Tutuyor",
+          "Daha kimse bilmeden siyah giymişti.",
+          "🖤 Siyah mantilla"
+        ],
+        [
+          "San Isidro’da Gece Yarısı",
+          "Saat on ikiyi vurdu. Bir vuruş fazla.",
+          "🕛 Duvar saati"
+        ]
+      ]
+    ],
+    "hacienda-2": [
+      "Bölüm II · Damıtımevi",
+      "Polis hâlâ Guadalajara’dan yolda. Damıtımevinde imbikler hâlâ sıcak ve biri musluğu açmış.",
+      "Damıtımevi mühürlendi. Yarın noter vasiyeti okuyacak.",
+      "Damıtımevinde her şey imbiklerin etrafında döner. İki kişiyle ilgili bir ifadeyi çözmek için önce ikisinden birinin yerini kesinleştir.",
+      [
+        [
+          "Açık Musluk",
+          "Koca bir imbik yere boşaldı. Kimse bir şey duymadı.",
+          "🚰 Bakır musluk"
+        ],
+        [
+          "Ustabaşı Esteban Tadına Bakıyor",
+          "Her imbikten tattı. Birini atladı.",
+          "🥃 Tadım bardağı"
+        ],
+        [
+          "Hasat Defteri",
+          "Defterde on yük arabası yazılıydı. Çiftlikte dokuz tane vardı.",
+          "📒 Hasat defteri"
+        ],
+        [
+          "İmbiğin Altındaki Ateş",
+          "Ateş bütün gece yandı. Biri odun atmıştı.",
+          "🪵 Meskit odunu"
+        ],
+        [
+          "Şehirden Gelen Yeğen Tomás",
+          "Ancak yarın geleceğini söylemişti. Otomobili çoktan çiftlikteydi.",
+          "🎩 Şehir şapkası"
+        ],
+        [
+          "İki Fıçı Fazla",
+          "Mahzende damgasız iki fıçı duruyordu.",
+          "🛢️ Meşe fıçı"
+        ],
+        [
+          "Ressam Paloma Eskiz Çiziyor",
+          "Damıtımevini saat dokuzda çizdi. Çizimde bir ışık yanıyordu.",
+          "🖌️ Eskiz"
+        ],
+        [
+          "İmbiğin Sırrı",
+          "İmbikteki şey tekila değildi.",
+          "⚗️ Damıtma balonu"
+        ]
+      ]
+    ],
+    "hacienda-3": [
+      "Bölüm III · Vasiyet",
+      "Aile salonda oturuyor. Noter Guzmán vasiyeti açıyor ve bazıları adını hiç duymuyor.",
+      "Vasiyet okundu. Mirasçılar artık birbirinin yüzüne bakmıyor.",
+      "Herkes mirastan pay istiyor ve herkes herkes hakkında konuşuyor. Nerede OLMADIĞINI söyleyen de sana bir şey anlatır: o alanı hemen ele.",
+      [
+        [
+          "Vasiyetin Okunması",
+          "Noter üç sayfa okudu. Vasiyet dört sayfaydı.",
+          "📜 Vasiyetname"
+        ],
+        [
+          "Mühürlü Kutu",
+          "Mühür sağlamdı. Kutu boştu.",
+          "🔏 Mum mühür"
+        ],
+        [
+          "Noter Guzmán Terliyor",
+          "Gözlüğünü üç kez sildi. Hava sıcak değildi.",
+          "👓 Noter gözlüğü"
+        ],
+        [
+          "Unutulan Mirasçı",
+          "Vasiyette kimsenin tanımadığı bir ad vardı.",
+          "🪪 Eski pasaport"
+        ],
+        [
+          "Yeğen Tomás Hesap Yapıyor",
+          "Miras payını çoktan harcamıştı. Geçen yıl.",
+          "🧾 Borç senedi"
+        ],
+        [
+          "İmza",
+          "Don Rafael’in iki imzası. Biri fazla düzgün.",
+          "🖋️ Dolma kalem"
+        ],
+        [
+          "Doña Inés İmzalamıyor",
+          "İmzalamayı reddetti. Nedenini biliyordu.",
+          "💍 Alyans"
+        ],
+        [
+          "Son Vasiyet Eki",
+          "Kütüphane döşemesinin altında bir mektup daha vardı.",
+          "✉️ Vasiyet eki"
+        ]
+      ]
+    ],
+    "hacienda-4": [
+      "Bölüm IV · Şapel",
+      "Cenazeden önce şapelde bütün gece mumlar yanıyor. Herkes dua etmeye geliyor ve bir sıra boş kalıyor.",
+      "Mumlar eriyip bitti. Aile Don Rafael’i dışarı taşıyor.",
+      "Şapelde herkes kıpırdamadan oturur, o yüzden kimin kimin yanında oturduğuna dikkat et. Önce en az seçeneği olan şüpheliyi yerleştir; gerisi arkasından gelir.",
+      [
+        [
+          "Gece Nöbeti",
+          "Aile gece yarısına kadar bir arada oturdu. Sonrasında değil.",
+          "🕯️ Sunak mumu"
+        ],
+        [
+          "Rahibe Bárbara Dua Ediyor",
+          "Herkes için dua etti. Bir adı atladı.",
+          "📿 Tespih"
+        ],
+        [
+          "Boş Sıra",
+          "Ön sırada sekiz yer. Yedi kişi.",
+          "🪑 Kilise sırası"
+        ],
+        [
+          "Çan Kulesi",
+          "Saat üçte çan çaldı. Kimse ipe dokunmamıştı.",
+          "🔔 Çan ipi"
+        ],
+        [
+          "Aşçı Lupita Yemek Pişiriyor",
+          "Bütün nöbet için yemek pişirdi. Tencerelerden birine hiç dokunulmadı.",
+          "🍲 Pozole"
+        ],
+        [
+          "Tütsü",
+          "Tütsü fazla erken yanıyordu. Biri şapele daha önce gelmişti.",
+          "🪔 Buhurdan"
+        ],
+        [
+          "Günah Çıkarma",
+          "Biri günah çıkarmıştı. Rahibe kim olduğunu söylemedi.",
+          "🚪 Günah çıkarma kabini"
+        ],
+        [
+          "Veda",
+          "Tabut hâlâ kapalıydı. Üstünde şimdiden bir çiçek vardı.",
+          "🌹 Kırmızı gül"
+        ]
+      ]
+    ],
+    "hacienda-5": [
+      "Bölüm V · Ölüler Günü",
+      "Bir yıl sonra. Sunakta kadife çiçekleri, masada şeker kafatasları ve bütün aile yeniden San Isidro’da.",
+      "Sunaktaki mumlar sönüyor. Don Rafael huzura kavuştu, neredeyse.",
+      "Ölüler Günü’nde ev insanla dolar. Yalnız olduğunu söyleyenle başla: bu, bütün bir alanı tek seferde boşaltır.",
+      [
+        [
+          "Sunak",
+          "Sunakta sekiz fotoğraf duruyordu. Dün yedi taneydi.",
+          "🖼️ Fotoğraf çerçevesi"
+        ],
+        [
+          "Kadife Çiçekleri",
+          "Turuncu çiçeklerden bir iz mahzene uzanıyordu.",
+          "🌼 Kadife çiçeği"
+        ],
+        [
+          "Şeker Kafatasları",
+          "Her kafatasında bir ad. Birinde hâlâ yaşayan birinin adı.",
+          "💀 Şeker kafatası"
+        ],
+        [
+          "Mariachi Rubén Ölüler İçin Çalıyor",
+          "Don Rafael’in şarkısını çaldı. Şarkıyı bilmesi imkânsız biri de eşlik etti.",
+          "🎸 Gitar teli"
+        ],
+        [
+          "Pinyata",
+          "Pinyata çocuklar gelmeden açılmıştı.",
+          "🪅 Pinyata"
+        ],
+        [
+          "Ressam Paloma Geri Dönüyor",
+          "Sunağın resmini yaptı. Tuvalde orada olmayan biri duruyordu.",
+          "🎨 Palet"
+        ],
+        [
+          "Pan de Muerto",
+          "Aşçı Lupita on iki ekmek pişirdi. On bir tane vardı.",
+          "🍞 Pan de muerto"
+        ],
+        [
+          "Ruhlar Gecesi",
+          "Herkes avluda bir hayalet gördü. Hayaletlerden biri ayakkabılıydı.",
+          "👞 Çamurlu ayakkabı"
+        ]
+      ]
+    ],
+    "hacienda-6": [
+      "Bölüm VI · Kurak Mevsim",
+      "Aylardır yağmur yağmıyor. Kuyu boş, agaveler kuruyor ve biri suyu satmış.",
+      "Sonunda yağmur. Su geri döndü, fail de ortaya çıktı.",
+      "Kuraklık insanları huysuz yapar, ifadeler de cimrileşir. Kalemi kullan: olamayacak kareleri ele ve geriye ne kaldığına bak.",
+      [
+        [
+          "Boş Kuyu",
+          "Kova kuru çıktı. Dün daha öyle değildi.",
+          "🪣 Kuyu kovası"
+        ],
+        [
+          "Ustabaşı Esteban Kazıyor",
+          "Yeni bir kuyu kazdı. Yanlış yere.",
+          "⛏️ Kazma"
+        ],
+        [
+          "Su Defteri",
+          "Her testi su deftere yazılmıştı. Son on tanesi hariç.",
+          "📘 Su defteri"
+        ],
+        [
+          "Kuruyan Agave",
+          "Koca bir sıra agave ölmüştü. Yalnızca o sıra.",
+          "🥀 Kuru yaprak"
+        ],
+        [
+          "Aşçı Lupita Su Biriktiriyor",
+          "Mutfak için su saklıyordu. Testisi boştu.",
+          "🏺 Su testisi"
+        ],
+        [
+          "Yeğen Tomás Satıyor",
+          "Komşulara su sattı. Kimin suyunu?",
+          "💵 Peso banknotu"
+        ],
+        [
+          "Hamak",
+          "Hamakta kimse yatmıyordu. Yine de sallanıyordu.",
+          "🪢 Hamak ipi"
+        ],
+        [
+          "İlk Yağmur",
+          "Yağmur gelince herkes dışarı koştu. Biri hariç.",
+          "🌧️ Yağmur fıçısı"
+        ]
+      ]
+    ],
+    "hacienda-7": [
+      "Bölüm VII · At Panayırı",
+      "Çiftlikte üç köyden gelen alıcılar var. Atlar, para ve eyerler el değiştiriyor ve bir at geri dönmüyor.",
+      "Alıcılar gitti, ahır sessiz. Kaybolan at yeniden bölmesinde.",
+      "Tahta büyüyor, ifadeler cimrileşiyor. Rapora göre bir alan boşsa, o alanın tamamı herkes için elenir.",
+      [
+        [
+          "İlk Alıcı",
+          "Altınla ödedi. Satılık olmayan bir at için.",
+          "🪙 Altın sikke"
+        ],
+        [
+          "Kara At",
+          "Bölmesi boştu. Eyeri hâlâ orada asılıydı.",
+          "🐎 Kara at"
+        ],
+        [
+          "Ustabaşı Esteban Pazarlık Ediyor",
+          "İstediği fiyat düşüktü. Fazlasıyla düşük.",
+          "🤝 El sıkışma"
+        ],
+        [
+          "Nalbant",
+          "Dört nal ısmarlanmıştı. Ortada üç tane vardı.",
+          "🔨 Demirci çekici"
+        ],
+        [
+          "Rahibe Bárbara Kutsuyor",
+          "Her atı kutsadı. Sonuncu at ondan ürktü.",
+          "💧 Kutsal su"
+        ],
+        [
+          "Ahır Defteri",
+          "Her at defterde yazılıydı. Kaybolan at artık yazılı değildi.",
+          "📖 Ahır defteri"
+        ],
+        [
+          "Gece Binişi",
+          "Saat ikide herkes nal sesleri duydu. Kimse bakmaya gitmedi.",
+          "🌙 Yarım ay"
+        ],
+        [
+          "Don Rafael’in Eyeri",
+          "Eyeri bir yıldır duvarda asılıydı. Bugün derisi sıcaktı.",
+          "🏇 Gümüş eyer"
+        ]
+      ]
+    ],
+    "hacienda-8": [
+      "Bölüm VIII · San Isidro’ya Veda",
+      "Hacienda satılıyor. Avluda son bir şenlik, ilk akşamki yüzlerle.",
+      "Van Dam şapkasını takıyor, aileyi başıyla selamlıyor ve son yük arabasıyla istasyona gidiyor. San Isidro’nun artık hiçbir sırrı kalmadı.",
+      "Son vakalar, neredeyse hepsi büyük tahtada. En zor olana takılıp kalma: önce diğerlerini yerleştir, sonuncuya çoğu zaman tek bir kare kalır.",
+      [
+        [
+          "Alıcı",
+          "Alıcı Meksiko’dan gelmişti. Mahzenin yolunu biliyordu.",
+          "📝 Satış senedi"
+        ],
+        [
+          "Son Fıçı",
+          "Bir fıçı geride kaldı. Üstünde bir yıl yazıyordu: 1952.",
+          "🏷️ Fıçı etiketi"
+        ],
+        [
+          "Doña Inés Bavul Hazırlıyor",
+          "Yanına yalnızca küçük bir kutu aldı. Kutu ağırdı.",
+          "🧳 Seyahat bavulu"
+        ],
+        [
+          "Kule Saati Kalıyor",
+          "Kulenin saati götürülmeyecekti. Biri götürülmesini istiyordu.",
+          "🕰️ Kule saati"
+        ],
+        [
+          "Mariachi Rubén Son Şarkıyı Çalıyor",
+          "İlk akşamın şarkısı. Şimdi başka bir kıtayla.",
+          "🎼 Nota kâğıdı"
+        ],
+        [
+          "Don Rafael’in Portresi",
+          "Portre sandığa kondu. Çerçevenin arkasında bir mektup vardı.",
+          "💌 Gizli mektup"
+        ],
+        [
+          "Noter Guzmán Dosyayı Kapatıyor",
+          "Son senedi damgaladı. Damga hâlâ ıslaktı.",
+          "📎 Son senet"
+        ],
+        [
+          "San Isidro’ya Veda",
+          "Başladığı yerde, imbiklerin yanında. Orada da bitiyor.",
+          "🍶 Son şişe"
+        ]
+      ]
+    ],
+    "opera": [
+      "Bölüm I · Prömiyer",
+      "Opéra Lumière, Paris, 1891. Altın, kristal ve kapalı gişe bir salon. Perde arasında Direktör Leclerc sahnenin arkasında, halatların altında yatıyor.",
+      "Perde indi ve salon boş. Ama gösteri yarın devam ediyor.",
+      "Bir opera binası koridorlardan ve merdivenlerden oluşan bir labirenttir. Hangi alanda olduğunu söyleyenle başla. Arpın “hemen yanında” yalnızca tam yanındaki kare demek, asla çapraz değil.",
+      [
+        [
+          "Perde Açılıyor",
+          "Salon kapalı gişeydi. Direktörün locası boş kaldı.",
+          "🎟️ Giriş bileti"
+        ],
+        [
+          "Perde Arası",
+          "Yirmi dakikalık ara. Tek bir şeye yetecek kadar zaman.",
+          "🥂 Şampanya kadehi"
+        ],
+        [
+          "Diva Colette Şarkı Söylüyor",
+          "Tiz notayı tutturdu. Sahnenin arkasında bir şey düştü.",
+          "💎 Elmas küpe"
+        ],
+        [
+          "Halatlar",
+          "Sahnenin arkasında yüz halat. Biri kesilmişti.",
+          "✂️ Makas"
+        ],
+        [
+          "Sahne Amiri Hugo Sayıyor",
+          "Karşı ağırlıkları saydı. Bir tane fazla asılıydı.",
+          "⚖️ Karşı ağırlık"
+        ],
+        [
+          "Alkış",
+          "On dakika alkış. Arkadaki gümlemeyi kimse duymadı.",
+          "💐 Çiçek demeti"
+        ],
+        [
+          "Baron Viktor Ödüyor",
+          "Prömiyerin parasını baron ödedi. Sonuna kadar kalmadı.",
+          "💰 Para kesesi"
+        ],
+        [
+          "Gösteriden Sonra",
+          "Salon boşaldı. Perdenin arkasında direktör yatıyordu.",
+          "🎭 Tiyatro maskesi"
+        ]
+      ]
+    ],
+    "opera-2": [
+      "Bölüm II · Perdenin Ardında",
+      "Gösteri sürüyor, polis sahnenin arkasında dolaşıyor. Halatlar, sahne kapakları ve karşı ağırlıklar: burada yolu yalnızca ekip bilir.",
+      "Halatlar sayıldı. Yarın programda yeni bir arya var.",
+      "Perdenin ardında her şey birbirine yakın. İki kişiyle ilgili bir ifadeyi çözmek için önce ikisinden birinin yerini kesinleştir.",
+      [
+        [
+          "Sahne Kapağı",
+          "Sahnedeki kapak açıktı. Kimse onu kullanmamıştı.",
+          "🕳️ Sahne kapağı"
+        ],
+        [
+          "Yan Sahnede Fısıltı",
+          "Biri yan sahnede fısıldadı. Herkes duydu, kimse kim olduğunu bilmiyordu.",
+          "🧣 İpek şal"
+        ],
+        [
+          "Sahne Amiri Hugo Düğüm Atıyor",
+          "Her düğümü kendisi atar. Bu düğümü değil.",
+          "🪢 Gemici düğümü"
+        ],
+        [
+          "İkinci Perdenin Dekoru",
+          "Kartondan bir şato. Kapının arkasında gerçek biri duruyordu.",
+          "🏰 Karton şato"
+        ],
+        [
+          "Balerin Ninon Bekliyor",
+          "Sahneye çıkış sırasını bekledi. O sıra hiç gelmedi.",
+          "🩰 Puant ayakkabıları"
+        ],
+        [
+          "Suflör",
+          "Suflör kulübesinden tek kelime çıkmadı. İçinde kimse yoktu.",
+          "📃 Suflör metni"
+        ],
+        [
+          "Kum Torbası",
+          "Bir kum torbası tenorun iki metre yanına düştü.",
+          "🪨 Kum torbası"
+        ],
+        [
+          "Perdenin Ardında",
+          "Perde açıldığında sahnede bir kişi fazlaydı.",
+          "💡 Rampa ışığı"
+        ]
+      ]
+    ],
+    "opera-3": [
+      "Bölüm III · Kayıp Partisyon",
+      "Gösteriye bir saat var ve yeni arya ortada yok. Partisyon yoksa prömiyer de yok ve biri bunu biliyor.",
+      "Partisyon yeniden orkestra çukurunda. Diva Colette hiçbir şey olmamış gibi şarkı söylüyor.",
+      "Herkes partisyonu arıyor ve herkes başkasını gösteriyor. Nerede OLMADIĞINI söyleyen de sana bir şey anlatır: o alanı hemen ele.",
+      [
+        [
+          "Boş Dosya",
+          "Maestro dosyayı açtı. Boştu.",
+          "🎼 Boş dosya"
+        ],
+        [
+          "Maestro Armand Arıyor",
+          "Orkestra çukurunda aradı. Nereye bakacağını biliyordu.",
+          "🪄 Şef batonu"
+        ],
+        [
+          "Üç Kopya",
+          "Aryanın üç kopyası. İkisi bulundu.",
+          "📄 Kopya"
+        ],
+        [
+          "Kostümcü Eloise Dikiş Dikiyor",
+          "Bir elbisenin etek ucunda kâğıt vardı.",
+          "🪡 İğne"
+        ],
+        [
+          "Mürekkep Lekesi",
+          "Birinin parmaklarında mürekkep vardı. Bestecinin mürekkebi.",
+          "🫙 Mürekkep hokkası"
+        ],
+        [
+          "Eleştirmen Simone Zaten Biliyor",
+          "Eleştirisi çoktan hazırdı. Kimsenin duymadığı bir arya hakkında.",
+          "📰 Sabah gazetesi"
+        ],
+        [
+          "Soba Yanıyor",
+          "Direktörlükte soba yanıyordu. Yanında kâğıt duruyordu.",
+          "🔥 Yanık kâğıt"
+        ],
+        [
+          "Arya",
+          "Arya söylendi. Yanlış sesle.",
+          "🎶 Arya"
+        ]
+      ]
+    ],
+    "opera-4": [
+      "Bölüm IV · Maskeli Balo",
+      "Fuayede her yılki maskeli balo. Herkes maske takıyor ve kimse kimin kimin yanında durduğunu bilmiyor.",
+      "Gece yarısı maskeler çıkıyor. Gülmeyenler de var.",
+      "Maskeler takılıyken kimse kimseyi tanımaz, ama kat planı yalan söylemez. Önce en az seçeneği olan şüpheliyi yerleştir; gerisi arkasından gelir.",
+      [
+        [
+          "Maskeler Takılıyor",
+          "İki yüz misafir, iki yüz maske. Bir maske fazla.",
+          "🦚 Tavus kuşu tüyü"
+        ],
+        [
+          "Vals",
+          "Orkestra bir vals çaldı. Bir çift dansa katılmadı.",
+          "🎻 Keman"
+        ],
+        [
+          "Baron Viktor Kimseyi Tanımıyor",
+          "Paris’te herkesi tanırdı. Bu akşam kimseyi.",
+          "🧐 Monokl"
+        ],
+        [
+          "Kırmızı Maske",
+          "Herkes beyaz giymişti. Biri hariç.",
+          "🪶 Kırmızı tüy"
+        ],
+        [
+          "Balerin Ninon Baronla Dans Ediyor",
+          "Üç dans ettiler. Üçüncüsünde Ninon yalnız dans etti.",
+          "👠 Balo ayakkabısı"
+        ],
+        [
+          "Gece Yarısı Şampanya",
+          "Şişe saat on ikide patladı. İkinci patlama şişeden değildi.",
+          "🍾 Şampanya şişesi"
+        ],
+        [
+          "Aynalı Salon",
+          "Aynalarda orada olmayan biri duruyordu.",
+          "🪞 El aynası"
+        ],
+        [
+          "Maskeler Çıkıyor",
+          "Gece yarısı maskeler çıktı. Yüzlerden birini kimse tanımadı.",
+          "🎀 Maske kurdelesi"
+        ]
+      ]
+    ],
+    "opera-5": [
+      "Bölüm V · Sahne Altı",
+      "Sahnenin altında ikinci bir bina var: koridorlar, makineler ve bir yeraltı gölü. Orada biri dolaşıyor.",
+      "Kapaklar kapandı. Aşağıda saklı olan gün yüzüne çıktı.",
+      "Sahne altında pek bir şey görünmez. Satır ve sütun ifadeleri duvarların içinden dümdüz geçer: kalemi kullan.",
+      [
+        [
+          "Aşağı İnen Merdiven",
+          "Bodruma yüz basamak. Sonuncusunda bir eldiven duruyordu.",
+          "🧤 Beyaz eldiven"
+        ],
+        [
+          "Yeraltı Gölü",
+          "Binanın altında su var. Üstünde kimsenin tanımadığı bir kayık duruyordu.",
+          "🛶 Sandal"
+        ],
+        [
+          "Sahne Amiri Hugo Aşağı İniyor",
+          "Elinde bir fenerle aşağı indi. Fenersiz döndü.",
+          "🏮 Fener"
+        ],
+        [
+          "Operadaki Hayalet",
+          "Herkes bir hayaletten söz ediyordu. Hayaletin ayakları ıslaktı.",
+          "🧥 Islak pelerin"
+        ],
+        [
+          "Tenor Matteo Ses Çalışıyor",
+          "Aşağıda, kimsenin duyamayacağı yerde çalıştı. Neredeyse kimsenin.",
+          "🎵 Diyapazon"
+        ],
+        [
+          "Makine Odası",
+          "Dekoru döndüren çark durmuştu. Arasına bir şey sıkışmıştı.",
+          "⚙️ Dişli çark"
+        ],
+        [
+          "Hayaletin Mektupları",
+          "Her hafta kırmızı mürekkeple bir mektup. Bu hafta iki tane.",
+          "✉️ Kırmızı mektup"
+        ],
+        [
+          "Beş Numaralı Loca",
+          "Beş numaralı loca hiç satılmadı. Yine de bu akşam içinde biri oturuyordu.",
+          "🗝️ Loca anahtarı"
+        ]
+      ]
+    ],
+    "opera-6": [
+      "Bölüm VI · Genel Prova",
+      "Yeni opera kusursuz olmalı. Gecenin geç saatlerine kadar genel prova ve aksesuarlardan biri gerçek.",
+      "Prova bitti. Yarın topluluk turneye çıkıyor.",
+      "Provada herkes sürekli yer değiştirir, ifadeler de cimrileşir. Olamayacak olanı ele ve geriye ne kaldığına bak.",
+      [
+        [
+          "Bir Kez Daha",
+          "Maestro her şeyi baştan çaldırdı. Bir müzisyen başka bir şey çaldı.",
+          "🥁 Timpani"
+        ],
+        [
+          "Gerçek Kılıç",
+          "Bütün kılıçlar tahtadandı. Biri hariç.",
+          "🗡️ Sahne kılıcı"
+        ],
+        [
+          "Kostümcü Eloise Prova Yaptırıyor",
+          "Her kostüm tam oldu. Biri başkası için tadil edilmişti.",
+          "📏 Mezura"
+        ],
+        [
+          "Zehirli Kadeh",
+          "Üçüncü perdede kral zehir içer. Bu akşam tadı acıydı.",
+          "🍷 Altın kadeh"
+        ],
+        [
+          "Eleştirmen Simone İzliyor",
+          "Orada bulunmaması gerekiyordu. Üçüncü sırada oturuyordu.",
+          "📝 Not defteri"
+        ],
+        [
+          "Aksesuar Odası",
+          "Her parçanın bir numarası vardı. On dört numara yoktu.",
+          "🏷️ Numara etiketi"
+        ],
+        [
+          "Diva Colette Reddediyor",
+          "Sahneye çıkmayı reddetti. Yukarıda neyin asılı olduğunu biliyordu.",
+          "👑 Sahne tacı"
+        ],
+        [
+          "Baştan Sona",
+          "Başından sonuna, hiç durmadan. Bir kapı kapalı kaldı.",
+          "🚪 Makyaj odası kapısı"
+        ]
+      ]
+    ],
+    "opera-7": [
+      "Bölüm VII · Turne",
+      "Viyana, Milano, Londra. Topluluk bütün dekoruyla yolculuk ediyor, dertler de onunla birlikte.",
+      "Son şehirden sonra dekor Paris’e dönüyor. Topluluk da, biri hariç.",
+      "Tahta büyüyor, ifadeler cimrileşiyor. Rapora göre bir alan boşsa, o alanın tamamı herkes için elenir.",
+      [
+        [
+          "Viyana",
+          "Viyana’da seyirciler ayakta alkışladı. Bir koltuk hariç.",
+          "🍰 Sacher pastası"
+        ],
+        [
+          "Kayıp Sandık",
+          "Paris’ten on iki sandık yola çıktı. On biri ulaştı.",
+          "🧳 Dekor sandığı"
+        ],
+        [
+          "Milano",
+          "La Scala’da Tenor Matteo kendi memleketinde şarkı söyledi. Biri bunu istemiyordu.",
+          "🎫 La Scala bileti"
+        ],
+        [
+          "Baron Viktor da Geliyor",
+          "Yolculuğun parasını o ödedi. Biletinde yazandan başka bir vagonda oturuyordu.",
+          "🎩 Silindir şapka"
+        ],
+        [
+          "Sisli Londra",
+          "Sisten kimse sahnenin öbür ucunu göremiyordu.",
+          "🫖 Demlik"
+        ],
+        [
+          "Kostümcü Eloise Sepetleri Hazırlıyor",
+          "Elli sepette iki yüz kostüm. Sepetlerden biri fazla ağırdı.",
+          "🧺 Kostüm sepeti"
+        ],
+        [
+          "Gece Treni",
+          "Tren gece boyunca yol aldı. Kahvaltıda biri eksikti.",
+          "🛏️ Yataklı kompartıman"
+        ],
+        [
+          "Paris’e Dönüş",
+          "Peronda polis bekliyordu. Hangi tren olduğunu biliyorlardı.",
+          "🚉 Peron bileti"
+        ]
+      ]
+    ],
+    "opera-8": [
+      "Bölüm VIII · Son Gösteri",
+      "Opéra Lumière tadilat için kapanıyor. Perde son bir kez, prömiyerdeki seyircilerin önünde açılıyor.",
+      "Van Dam salonda en son ayağa kalkıyor. Bir kez alkışlıyor ve merdivenlerden inip Paris gecesine karışıyor.",
+      "Son vakalar, neredeyse hepsi büyük tahtada. En zor olana takılıp kalma: önce diğerlerini yerleştir, sonuncuya çoğu zaman tek bir kare kalır.",
+      [
+        [
+          "Aynı Salon",
+          "Herkes prömiyerdeki koltuğunda oturdu. Biri hariç.",
+          "💺 Kadife koltuk"
+        ],
+        [
+          "Maestro Armand Veda Ediyor",
+          "Otuz yıl burada orkestra yönetti. Bu akşam orkestraya bakmadı.",
+          "🎖️ Şeref madalyası"
+        ],
+        [
+          "Son Buket",
+          "Sahnede kırk buket vardı. Biri kartsızdı.",
+          "💐 Kartsız buket"
+        ],
+        [
+          "Avize",
+          "Büyük avize eğri asılıydı. Biri yukarı çıkmıştı.",
+          "✨ Kristal damla"
+        ],
+        [
+          "Balerin Ninon Solo Dans Ediyor",
+          "İlk solosu. Herkes ona bakıyordu, biri hariç.",
+          "🌸 Saç çiçeği"
+        ],
+        [
+          "Eleştirmen Simone Yazıyor",
+          "Son eleştirisi. Gösteri hakkında ve fail hakkında.",
+          "✒️ Çelik uçlu kalem"
+        ],
+        [
+          "Sahne Amiri Hugo Perdeyi İndiriyor",
+          "Perde son kez indi. Bir halatı elinden bırakmadı.",
+          "🧰 Alet çantası"
+        ],
+        [
+          "Son Gösteri",
+          "Başladığı yerde, perdenin arkasında. Orada da bitiyor.",
+          "🎟️ Son bilet"
+        ]
+      ]
     ]
   },
 
@@ -5226,6 +6116,226 @@
           "In": "Holde",
           "WasI": "Holdeydim"
         }
+      },
+      "hacienda": {
+        "Patio": {
+          "the": "avlu",
+          "in": "avluda",
+          "gen": "avlunun",
+          "was": "avludaydı",
+          "wasI": "avludaydım",
+          "In": "Avluda",
+          "WasI": "Avludaydım"
+        },
+        "Stokerij": {
+          "the": "damıtımevi",
+          "in": "damıtımevinde",
+          "gen": "damıtımevinin",
+          "was": "damıtımevindeydi",
+          "wasI": "damıtımevindeydim",
+          "In": "Damıtımevinde",
+          "WasI": "Damıtımevindeydim"
+        },
+        "Kelder": {
+          "the": "mahzen",
+          "in": "mahzende",
+          "gen": "mahzenin",
+          "was": "mahzendeydi",
+          "wasI": "mahzendeydim",
+          "In": "Mahzende",
+          "WasI": "Mahzendeydim"
+        },
+        "Kapel": {
+          "the": "şapel",
+          "in": "şapelde",
+          "gen": "şapelin",
+          "was": "şapeldeydi",
+          "wasI": "şapeldeydim",
+          "In": "Şapelde",
+          "WasI": "Şapeldeydim"
+        },
+        "Keuken": {
+          "the": "mutfak",
+          "in": "mutfakta",
+          "gen": "mutfağın",
+          "was": "mutfaktaydı",
+          "wasI": "mutfaktaydım",
+          "In": "Mutfakta",
+          "WasI": "Mutfaktaydım"
+        },
+        "Eetzaal": {
+          "the": "yemek salonu",
+          "in": "yemek salonunda",
+          "gen": "yemek salonunun",
+          "was": "yemek salonundaydı",
+          "wasI": "yemek salonundaydım",
+          "In": "Yemek salonunda",
+          "WasI": "Yemek salonundaydım"
+        },
+        "Stal": {
+          "the": "ahır",
+          "in": "ahırda",
+          "gen": "ahırın",
+          "was": "ahırdaydı",
+          "wasI": "ahırdaydım",
+          "In": "Ahırda",
+          "WasI": "Ahırdaydım"
+        },
+        "Salon": {
+          "the": "salon",
+          "in": "salonda",
+          "gen": "salonun",
+          "was": "salondaydı",
+          "wasI": "salondaydım",
+          "In": "Salonda",
+          "WasI": "Salondaydım"
+        },
+        "Veranda": {
+          "the": "veranda",
+          "in": "verandada",
+          "gen": "verandanın",
+          "was": "verandadaydı",
+          "wasI": "verandadaydım",
+          "In": "Verandada",
+          "WasI": "Verandadaydım"
+        },
+        "Bibliotheek": {
+          "the": "kütüphane",
+          "in": "kütüphanede",
+          "gen": "kütüphanenin",
+          "was": "kütüphanedeydi",
+          "wasI": "kütüphanedeydim",
+          "In": "Kütüphanede",
+          "WasI": "Kütüphanedeydim"
+        },
+        "Wasruimte": {
+          "the": "çamaşırlık",
+          "in": "çamaşırlıkta",
+          "gen": "çamaşırlığın",
+          "was": "çamaşırlıktaydı",
+          "wasI": "çamaşırlıktaydım",
+          "In": "Çamaşırlıkta",
+          "WasI": "Çamaşırlıktaydım"
+        },
+        "Klokkentoren": {
+          "the": "çan kulesi",
+          "in": "çan kulesinde",
+          "gen": "çan kulesinin",
+          "was": "çan kulesindeydi",
+          "wasI": "çan kulesindeydim",
+          "In": "Çan kulesinde",
+          "WasI": "Çan kulesindeydim"
+        }
+      },
+      "opera": {
+        "Toneel": {
+          "the": "sahne",
+          "in": "sahnede",
+          "gen": "sahnenin",
+          "was": "sahnedeydi",
+          "wasI": "sahnedeydim",
+          "In": "Sahnede",
+          "WasI": "Sahnedeydim"
+        },
+        "Coulisse": {
+          "the": "yan sahne",
+          "in": "yan sahnede",
+          "gen": "yan sahnenin",
+          "was": "yan sahnedeydi",
+          "wasI": "yan sahnedeydim",
+          "In": "Yan sahnede",
+          "WasI": "Yan sahnedeydim"
+        },
+        "Orkestbak": {
+          "the": "orkestra çukuru",
+          "in": "orkestra çukurunda",
+          "gen": "orkestra çukurunun",
+          "was": "orkestra çukurundaydı",
+          "wasI": "orkestra çukurundaydım",
+          "In": "Orkestra çukurunda",
+          "WasI": "Orkestra çukurundaydım"
+        },
+        "Kleedkamer": {
+          "the": "makyaj odası",
+          "in": "makyaj odasında",
+          "gen": "makyaj odasının",
+          "was": "makyaj odasındaydı",
+          "wasI": "makyaj odasındaydım",
+          "In": "Makyaj odasında",
+          "WasI": "Makyaj odasındaydım"
+        },
+        "Foyer": {
+          "the": "fuaye",
+          "in": "fuayede",
+          "gen": "fuayenin",
+          "was": "fuayedeydi",
+          "wasI": "fuayedeydim",
+          "In": "Fuayede",
+          "WasI": "Fuayedeydim"
+        },
+        "Loge": {
+          "the": "loca",
+          "in": "locada",
+          "gen": "locanın",
+          "was": "locadaydı",
+          "wasI": "locadaydım",
+          "In": "Locada",
+          "WasI": "Locadaydım"
+        },
+        "Rekwisietenkamer": {
+          "the": "aksesuar odası",
+          "in": "aksesuar odasında",
+          "gen": "aksesuar odasının",
+          "was": "aksesuar odasındaydı",
+          "wasI": "aksesuar odasındaydım",
+          "In": "Aksesuar odasında",
+          "WasI": "Aksesuar odasındaydım"
+        },
+        "Toneelkelder": {
+          "the": "sahne altı",
+          "in": "sahne altında",
+          "gen": "sahne altının",
+          "was": "sahne altındaydı",
+          "wasI": "sahne altındaydım",
+          "In": "Sahne altında",
+          "WasI": "Sahne altındaydım"
+        },
+        "Kostuumatelier": {
+          "the": "kostümhane",
+          "in": "kostümhanede",
+          "gen": "kostümhanenin",
+          "was": "kostümhanedeydi",
+          "wasI": "kostümhanedeydim",
+          "In": "Kostümhanede",
+          "WasI": "Kostümhanedeydim"
+        },
+        "Directiekamer": {
+          "the": "direktörlük",
+          "in": "direktörlükte",
+          "gen": "direktörlüğün",
+          "was": "direktörlükteydi",
+          "wasI": "direktörlükteydim",
+          "In": "Direktörlükte",
+          "WasI": "Direktörlükteydim"
+        },
+        "Repetitiezaal": {
+          "the": "prova salonu",
+          "in": "prova salonunda",
+          "gen": "prova salonunun",
+          "was": "prova salonundaydı",
+          "wasI": "prova salonundaydım",
+          "In": "Prova salonunda",
+          "WasI": "Prova salonundaydım"
+        },
+        "Trappenhuis": {
+          "the": "büyük merdiven",
+          "in": "büyük merdivende",
+          "gen": "büyük merdivenin",
+          "was": "büyük merdivendeydi",
+          "wasI": "büyük merdivendeydim",
+          "In": "Büyük merdivende",
+          "WasI": "Büyük merdivendeydim"
+        }
       }
     },
     "furniture": {
@@ -5548,6 +6658,86 @@
         "bare": "fondü tenceresi",
         "next": "bir fondü tenceresinin yanında",
         "with": "fondü tencereli"
+      },
+      "agave": {
+        "a": "bir agave",
+        "gen": "bir agavenin",
+        "Gen": "Bir agavenin",
+        "bare": "agave",
+        "next": "bir agavenin yanında",
+        "with": "agaveli"
+      },
+      "ketel": {
+        "a": "bir bakır imbik",
+        "gen": "bir bakır imbiğin",
+        "Gen": "Bir bakır imbiğin",
+        "bare": "bakır imbik",
+        "next": "bir bakır imbiğin yanında",
+        "with": "bakır imbikli"
+      },
+      "gitaar": {
+        "a": "bir gitar",
+        "gen": "bir gitarın",
+        "Gen": "Bir gitarın",
+        "bare": "gitar",
+        "next": "bir gitarın yanında",
+        "with": "gitarlı"
+      },
+      "hangmat": {
+        "a": "bir hamak",
+        "gen": "bir hamağın",
+        "Gen": "Bir hamağın",
+        "bare": "hamak",
+        "next": "bir hamağın yanında",
+        "with": "hamaklı"
+      },
+      "pinata": {
+        "a": "bir pinyata",
+        "gen": "bir pinyatanın",
+        "Gen": "Bir pinyatanın",
+        "bare": "pinyata",
+        "next": "bir pinyatanın yanında",
+        "with": "pinyatalı"
+      },
+      "paspop": {
+        "a": "bir terzi mankeni",
+        "gen": "bir terzi mankeninin",
+        "Gen": "Bir terzi mankeninin",
+        "bare": "terzi mankeni",
+        "next": "bir terzi mankeninin yanında",
+        "with": "terzi mankenli"
+      },
+      "harp": {
+        "a": "bir arp",
+        "gen": "bir arpın",
+        "Gen": "Bir arpın",
+        "bare": "arp",
+        "next": "bir arpın yanında",
+        "with": "arplı"
+      },
+      "masker": {
+        "a": "bir maske",
+        "gen": "bir maskenin",
+        "Gen": "Bir maskenin",
+        "bare": "maske",
+        "next": "bir maskenin yanında",
+        "with": "maskeli"
+      },
+      "boeket": {
+        "a": "bir buket",
+        "gen": "bir buketin",
+        "Gen": "Bir buketin",
+        "bare": "buket",
+        "next": "bir buketin yanında",
+        "with": "buketli"
+      },
+      "toneelkijker": {
+        "a": "bir opera dürbünü",
+        "gen": "bir opera dürbününün",
+        "Gen": "Bir opera dürbününün",
+        "bare": "opera dürbünü",
+        "next": "bir opera dürbününün yanında",
+        "with": "opera dürbünlü"
       }
     },
     "roomWords": {
@@ -5646,6 +6836,30 @@
         "was": "odadaydı",
         "wasI": "odadaydım",
         "wasThey": "odadaydılar"
+      },
+      "hacienda": {
+        "rw": "alan",
+        "rws": "alanlar",
+        "in": "alanda",
+        "gen": "alanın",
+        "acc": "alanı",
+        "dat": "alana",
+        "pluralIn": "alanlarda",
+        "was": "alandaydı",
+        "wasI": "alandaydım",
+        "wasThey": "alandaydılar"
+      },
+      "opera": {
+        "rw": "alan",
+        "rws": "alanlar",
+        "in": "alanda",
+        "gen": "alanın",
+        "acc": "alanı",
+        "dat": "alana",
+        "pluralIn": "alanlarda",
+        "was": "alandaydı",
+        "wasI": "alandaydım",
+        "wasThey": "alandaydılar"
       }
     }
   }

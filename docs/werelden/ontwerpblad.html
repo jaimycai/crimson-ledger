@@ -96,7 +96,7 @@
     <h2 class="next-h">Na je ja</h2>
     <ol>
       <li>Portretten: klaar (16 stuks, 24 credits).</li>
-      <li>De 64 zaken per wereld staan hierboven; elke seed is door de motor bewezen (<code>bewijs.js</code>).</li>
+      <li>De 64 zaken per wereld staan hierboven; elke seed bewijst <code>tests/campaign.test.js</code>.</li>
       <li>Alle teksten in 19 talen, met de woordvormen voor kamers en meubels.</li>
       <li>Kaart, winkelaankoop, schermafbeeldingen en wat-is-nieuw.</li>
     </ol>
@@ -107,7 +107,7 @@
 <script src="../../grammar.js"></script>
 <script src="../../floorplan.js"></script>
 <script src="ontwerp.js"></script>
-<script src="zaken.js"></script>
+<script src="../../campaign.js"></script>
 <script>
 (() => {
   const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -181,7 +181,7 @@
         <details><summary>Portretopdracht</summary><p>${esc(s.look)}</p></details></div>`).join('')}</div>
       <div class="style-ref"><img src="../../art/portretten/vandam-zonder-tekst.png" alt=""><p>Gravures in de vaste stijl, met het portret van Van Dam als enige stijlreferentie. Gemaakt op 20 oktober voor 24 credits.</p></div>
       <h3>Acht delen, 64 zaken</h3>
-      <ol class="parts">${ZAKEN.filter(ch => ch.theme === w.id).map(ch => `<li><b>${esc(ch.title.replace(/^Deel [IVX]+ · /, ''))}</b><span>${esc(ch.intro)}</span>
+      <ol class="parts">${CAMPAIGN.filter(ch => ch.theme === w.id).map(ch => `<li><b>${esc(ch.title.replace(/^Deel [IVX]+ · /, ''))}</b><span>${esc(ch.intro)}</span>
         <ul class="cases">${ch.cases.map(c => { const [icon, ...name] = c.item.split(' '); return `<li><span class="it" title="${esc(name.join(' '))}">${icon}</span><span class="ct">${esc(c.title)}<small class="${c.difficulty}">${c.difficulty}</small></span><span class="cs">${esc(c.story)}</span></li>`; }).join('')}</ul>
         <p class="brief">Van Dam: ${esc(ch.briefing)}</p></li>`).join('')}</ol>
       <p class="outro">${esc(w.outro)}</p>`;

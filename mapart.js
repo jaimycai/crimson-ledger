@@ -231,7 +231,56 @@ const MapArt = (() => {
       <!-- dennen en sneeuwpop -->
       <g stroke="${INK}" stroke-width="1.3">${[40, 70, 330, 360].map((x, i) => `<path d="M${x} ${150 - (i % 2) * 8} l-14 30 h28 z" fill="#2F6F4E"/><path d="M${x} ${132 - (i % 2) * 8} l-10 22 h20 z" fill="#3E8A65"/><rect x="${x - 3}" y="${178 - (i % 2) * 8}" width="6" height="8" fill="#5C3D28"/>`).join('')}</g>
       <g stroke="${INK}" stroke-width="1.3"><circle cx="100" cy="176" r="12" fill="#FBF6EC"/><circle cx="100" cy="158" r="8" fill="#FBF6EC"/><circle cx="98" cy="156" r="1" fill="${INK}"/><circle cx="103" cy="156" r="1" fill="${INK}"/><path d="M101 159 l5 1 l-5 1 z" fill="#F39C12"/><path d="M88 172 l-8-6 M112 172 l8-6" stroke-width="1.6"/></g>
-    `, 'banner-skihut')
+    `, 'banner-skihut'),
+
+    hacienda: () => svg('0 0 393 200', `
+      <rect width="393" height="200" fill="#F2C98A"/>
+      <circle cx="318" cy="70" r="26" fill="#F7E2A6" stroke="${INK}" stroke-width="1.5"/>
+      <path d="M0 124 q60 -30 120 -8 q70 -34 150 -6 q60 -22 123 4 V200 H0 z" fill="#C98B5A" stroke="${INK}" stroke-width="1.3"/>
+      <!-- papel picado -->
+      <path d="M0 14 q98 22 196 0 q98 22 197 0" fill="none" stroke="${INK}" stroke-width="1.2"/>
+      <g stroke="${INK}" stroke-width="0.9">${[...Array(16)].map((_, i) => { const x = 10 + i * 24.4, t = (x % 196) / 196, y = 14 + 44 * t * (1 - t); return `<path d="M${(x - 6).toFixed(1)} ${y.toFixed(1)} h12 v12 l-3 -2 l-3 2 l-3 -2 l-3 2 z" fill="${['#E84393', '#2E9CCA', '#F39C12', '#3FAE6A'][i % 4]}"/>`; }).join('')}</g>
+      <!-- hacienda met klokkentoren -->
+      <g stroke="${INK}" stroke-width="1.5">
+        <rect x="112" y="112" width="190" height="56" fill="#F3EDE3"/>
+        <path d="M104 114 L122 98 H292 L310 114 Z" fill="#B5552E"/>
+        <g stroke="#8A3A1E" stroke-width="1"><path d="M126 106 h162 M118 110 h178"/></g>
+        ${[0, 1, 2, 3, 4].map(i => `<path d="M${128 + i * 34} 168 v-24 a12 12 0 0 1 24 0 v24 z" fill="#7A4A2E"/>`).join('')}
+        <rect x="70" y="88" width="42" height="80" fill="#F3EDE3"/>
+        <path d="M70 90 q21 -38 42 0 z" fill="#F3EDE3"/>
+        <path d="M82 116 v-12 a9 9 0 0 1 18 0 v12 z" fill="#3E2A1D"/>
+        <path d="M86 114 q0 -9 5 -9 q5 0 5 9 z" fill="#C9A227"/>
+        <path d="M91 46 v14 M86 51 h10" stroke-width="2"/>
+        <rect x="80" y="136" width="22" height="32" fill="#7A4A2E"/>
+      </g>
+      <rect x="0" y="168" width="393" height="32" fill="#D9A36F"/>
+      <path d="M0 168 h393" stroke="${INK}" stroke-width="1.5"/>
+      <!-- agaveveld -->
+      ${[4, 34, 316, 348].map(x => `<g transform="translate(${x} 150)"><g><ellipse cx="20" cy="33" rx="11" ry="2.6" fill="#9C6B43"/><g fill="#6E9E8A" stroke="#2F5546" stroke-width="1.1" stroke-linejoin="round"><path d="M17 32 L3 22 L19 30z"/><path d="M23 32 L37 22 L21 30z"/><path d="M17 32 L7 10 L20 29z"/><path d="M23 32 L33 10 L20 29z"/><path d="M18 32 L20 4 L22 32z"/></g></g></g>`).join('')}
+    `, 'banner-hacienda'),
+
+    opera: () => svg('0 0 393 200', `
+      <rect width="393" height="200" fill="#3A1426"/>
+      ${stars([[20, 26, 1.4], [62, 12, 1.2], [118, 34, 1.4], [272, 20, 1.2], [330, 40, 1.6], [372, 16, 1.2]], '#F3EDE3')}
+      <circle cx="44" cy="54" r="14" fill="#F5E6B8" stroke="${INK}" stroke-width="1.3"/>
+      <!-- gevel van de opera -->
+      <g stroke="${INK}" stroke-width="1.5">
+        <path d="M150 72 q46 -40 92 0 z" fill="#C9A227"/>
+        <path d="M196 52 v-6" stroke-width="2"/><circle cx="196" cy="43" r="4" fill="#E0B95A"/>
+        <rect x="102" y="72" width="188" height="18" fill="#E9D8B8"/>
+        <path d="M102 72 h188" stroke="#C9A227" stroke-width="2.4"/>
+        <rect x="92" y="90" width="208" height="40" fill="#E9D8B8"/>
+        ${[0, 1, 2, 3, 4, 5, 6, 7, 8].map(i => `<rect x="${100 + i * 23.5}" y="93" width="6" height="34" fill="#F3EDE3" stroke-width="1"/>`).join('')}
+        ${[0, 1, 2, 3, 4, 5, 6, 7].map(i => `<path d="M${108 + i * 23.5} 122 v-14 a5.5 5.5 0 0 1 11 0 v14 z" fill="#F0CE8E" stroke-width="1"/>`).join('')}
+        <rect x="86" y="130" width="220" height="38" fill="#D9C7A6"/>
+        ${[0, 1, 2, 3, 4, 5, 6].map(i => `<path d="M${96 + i * 30} 168 v-22 a10 10 0 0 1 20 0 v22 z" fill="#F5D67A"/>`).join('')}
+      </g>
+      <rect x="0" y="168" width="393" height="32" fill="#5A2A3A"/>
+      <path d="M0 168 h393" stroke="${INK}" stroke-width="1.5"/>
+      <g stroke="${INK}" stroke-width="1.3"><path d="M150 168 h92 l14 32 h-120 z" fill="#B3261E"/><path d="M146 178 h100 M142 189 h108" stroke="#8B1E17"/></g>
+      <!-- lantaarns -->
+      ${[52, 340].map(x => `<g stroke="${INK}" stroke-width="1.3"><rect x="${x - 2}" y="128" width="4" height="40" fill="#2C2C2C"/><rect x="${x - 7}" y="114" width="14" height="16" rx="2" fill="#F5D67A"/><path d="M${x - 9} 114 h18 l-3 -5 h-12 z" fill="#2C2C2C"/></g>`).join('')}
+    `, 'banner-opera')
   };
 
   // ── Decoraties langs het pad (40×40, zelfde stijl als de meubels) ──
@@ -307,6 +356,24 @@ const MapArt = (() => {
       `<g fill="none" stroke="#DCEBF0" stroke-width="2" stroke-linecap="round"><path d="M20 6 v28 M8 13 l24 14 M8 27 l24-14"/><path d="M20 6 l-3 4 M20 6 l3 4 M20 34 l-3-4 M20 34 l3-4"/></g><g fill="none" stroke="${INK}" stroke-width="0.6" stroke-linecap="round"><path d="M20 6 v28 M8 13 l24 14 M8 27 l24-14"/></g>`,
       `<g stroke="${INK}" stroke-width="1.3"><rect x="14" y="12" width="12" height="16" rx="2" fill="#F5D67A"/><rect x="16" y="8" width="8" height="4" rx="1" fill="#4A4A4A"/><rect x="15" y="28" width="10" height="3" rx="1" fill="#4A4A4A"/><ellipse cx="20" cy="20" rx="2.4" ry="3.4" fill="#F39C12"/></g>`,
       `<g stroke="${INK}" stroke-width="1.3"><rect x="18" y="10" width="4" height="26" fill="#5C3D28"/><path d="M22 12 h12 l3 4 l-3 4 h-12 z" fill="#F0CE8E"/><path d="M18 22 h-12 l-3 4 l3 4 h12 z" fill="#DCEBF0"/></g>`
+    ],
+    hacienda: [
+      `<g><ellipse cx="20" cy="33" rx="11" ry="2.6" fill="#9C6B43"/><g fill="#6E9E8A" stroke="#2F5546" stroke-width="1.1" stroke-linejoin="round"><path d="M17 32 L3 22 L19 30z"/><path d="M23 32 L37 22 L21 30z"/><path d="M17 32 L7 10 L20 29z"/><path d="M23 32 L33 10 L20 29z"/><path d="M18 32 L20 4 L22 32z"/></g></g>`,
+      `<g><path d="M22 13 q9 -5 12 5 v12" fill="none" stroke="#9C5326" stroke-width="2.2" stroke-linecap="round"/><circle cx="17" cy="23" r="9" fill="#C8743A" stroke="#7A3E1C" stroke-width="1.4"/><path d="M11 17 q6 -9 12 0" fill="#D98B4E" stroke="#7A3E1C" stroke-width="1.3"/><rect x="15.5" y="9" width="3" height="4" fill="#7A3E1C"/><ellipse cx="13.5" cy="21" rx="2" ry="3.4" fill="#F0B98A" opacity="0.7"/><rect x="9" y="31" width="16" height="3" rx="1" fill="#3B2A1B"/><rect x="31" y="30" width="5" height="4" rx="1" fill="#7A5236" stroke="#3B2A1B" stroke-width="1"/></g>`,
+      `<g stroke="${INK}" stroke-width="1.3"><ellipse cx="20" cy="26" rx="16" ry="5" fill="#E3C58E"/><path d="M13 25 q1 -14 7 -14 q6 0 7 14 z" fill="#E3C58E"/><path d="M13.5 22 h13" stroke="#B3261E" stroke-width="2"/></g>`,
+      `<g><path d="M22 19 L33 7" stroke="#5A3A1E" stroke-width="3" stroke-linecap="round"/><path d="M31 4 l4 -1 l1 4 l-3 2z" fill="#3B2A1B"/><g stroke="#7A4A1C" stroke-width="1.4"><ellipse cx="15" cy="27" rx="8" ry="7" fill="#D99A4E"/><ellipse cx="21" cy="20" rx="5.5" ry="5" fill="#D99A4E"/></g><ellipse cx="15" cy="27" rx="7.3" ry="6.3" fill="#D99A4E"/><ellipse cx="21" cy="20" rx="4.8" ry="4.3" fill="#D99A4E"/><circle cx="17" cy="24" r="2.4" fill="#3B2A1B"/><path d="M11 30 l4 -4" stroke="#5A3A1E" stroke-width="1.6"/></g>`,
+      `<g stroke="${INK}" stroke-width="1"><path d="M2 10 q18 6 36 0" fill="none" stroke-width="1.4"/>${[[5, '#E84393'], [14, '#2E9CCA'], [23, '#F39C12'], [31, '#3FAE6A']].map(([x, c]) => `<path d="M${x} 12 h7 v11 l-1.75 -1.6 l-1.75 1.6 l-1.75 -1.6 l-1.75 1.6 z" fill="${c}"/>`).join('')}</g>`,
+      `<g><path d="M20 0 v6" stroke="#3B2A1B" stroke-width="1.1"/><path d="M17.2 15.7 L20.0 6.0 L22.8 15.7z" fill="#E84393" stroke="#3B2A1B" stroke-width="1.1" stroke-linejoin="round"/><path d="M23.2 15.9 L33.0 13.5 L26.0 20.8z" fill="#2E9CCA" stroke="#3B2A1B" stroke-width="1.1" stroke-linejoin="round"/><path d="M26.0 21.2 L33.0 28.5 L23.2 26.1z" fill="#F39C12" stroke="#3B2A1B" stroke-width="1.1" stroke-linejoin="round"/><path d="M22.8 26.3 L20.0 36.0 L17.2 26.3z" fill="#3FAE6A" stroke="#3B2A1B" stroke-width="1.1" stroke-linejoin="round"/><path d="M16.8 26.1 L7.0 28.5 L14.0 21.2z" fill="#E84393" stroke="#3B2A1B" stroke-width="1.1" stroke-linejoin="round"/><path d="M14.0 20.8 L7.0 13.5 L16.8 15.9z" fill="#2E9CCA" stroke="#3B2A1B" stroke-width="1.1" stroke-linejoin="round"/><circle cx="20" cy="21" r="6.4" fill="#F2C14E" stroke="#7A5A1C" stroke-width="1.2"/></g>`,
+      `<g stroke="${INK}" stroke-width="1.3"><path d="M20 5 v5" stroke-width="2"/><path d="M12 28 q0 -18 8 -18 q8 0 8 18 z" fill="#C9A227"/><rect x="10" y="28" width="20" height="3" rx="1.5" fill="#B8955C"/><circle cx="20" cy="33" r="2.4" fill="#7A5A1C"/></g>`
+    ],
+    opera: [
+      `<g><path d="M29 24 L34 37" stroke="#7A5236" stroke-width="1.8" stroke-linecap="round"/><path d="M29 12 q7 -9 4 -11 q-2 6 -6 9z" fill="#B3261E"/><path d="M6 16 Q20 8 34 16 Q33 26 25 25 Q20 22 15 25 Q7 26 6 16z" fill="#F2F0EA" stroke="#3B2A1B" stroke-width="1.3" stroke-linejoin="round"/><path d="M8 14.5 Q20 7.5 32 14.5" fill="none" stroke="#C9A227" stroke-width="1.5"/><ellipse cx="14" cy="18" rx="3.2" ry="2" fill="#3B2A1B"/><ellipse cx="26" cy="18" rx="3.2" ry="2" fill="#3B2A1B"/></g>`,
+      `<g stroke="${INK}" stroke-width="1.2"><path d="M20 3 v8" stroke-width="1.6"/><path d="M8 17 q12 -10 24 0" fill="none" stroke="#C9A227" stroke-width="2.2"/><path d="M11 19 q9 8 18 0" fill="none" stroke="#C9A227" stroke-width="1.8"/>${[10, 16, 24, 30].map(x => `<path d="M${x} 17 v-4" stroke-width="1.4"/><circle cx="${x}" cy="11.5" r="1.6" fill="#F5D67A" stroke="none"/>`).join('')}<g fill="#DCEBF0" stroke-width="0.8"><path d="M14 24 l1.5 5 h-3 z"/><path d="M20 26 l1.5 6 h-3 z"/><path d="M26 24 l1.5 5 h-3 z"/></g></g>`,
+      `<g><path d="M15 7.2 V33.2 M18.5 6.9 V29.5 M22 7.5 V25.8 M25.5 9.1 V22.1 M29 11.7 V18.4" stroke="#E8DCC8" stroke-width="0.9"/><path d="M11 8 Q22 2 33 15" fill="none" stroke="#C9A227" stroke-width="2.6" stroke-linecap="round"/><path d="M11 7 V34" stroke="#C9A227" stroke-width="3" stroke-linecap="round"/><path d="M33 15 L15 34" stroke="#7A5236" stroke-width="3.4" stroke-linecap="round"/><rect x="8" y="33" width="12" height="3" rx="1" fill="#7A5A1C"/><circle cx="11" cy="6" r="2" fill="#E0B95A" stroke="#7A5A1C" stroke-width="0.8"/></g>`,
+      `<g><ellipse cx="10" cy="20" rx="3.2" ry="1.8" fill="#3F7D4E" transform="rotate(-30 10 20)"/><ellipse cx="30" cy="20" rx="3.2" ry="1.8" fill="#3F7D4E" transform="rotate(30 30 20)"/><path d="M13 21 L20 36 L27 21z" fill="#EDE6D6" stroke="#8A7A60" stroke-width="1.2" stroke-linejoin="round"/><path d="M16 28 h8" stroke="#B3261E" stroke-width="2.2"/><g stroke="#7A0F35" stroke-width="1"><circle cx="14" cy="17" r="4.5" fill="#C2185B"/><circle cx="26" cy="17" r="4.5" fill="#C2185B"/><circle cx="20" cy="12" r="5" fill="#D81B60"/></g><g fill="none" stroke="#7A0F35" stroke-width="0.9"><path d="M20 10 a2 2 0 1 1 -2 2"/><path d="M14 15.5 a1.6 1.6 0 1 1 -1.6 1.6"/><path d="M26 15.5 a1.6 1.6 0 1 1 -1.6 1.6"/></g></g>`,
+      `<g stroke="${INK}" stroke-width="1.3"><path d="M6 13 h28 v5 a2.5 2.5 0 0 0 0 5 v5 h-28 v-5 a2.5 2.5 0 0 0 0 -5 z" fill="#F0CE8E"/><path d="M14 13 v15" stroke-dasharray="2 2"/><path d="M23 17 l1.4 2.8 3 .4 -2.2 2.1 .5 3 -2.7 -1.4 -2.7 1.4 .5 -3 -2.2 -2.1 3 -.4 z" fill="#B3261E" stroke-width="0.8"/></g>`,
+      `<g><path d="M31 30 L36 38" stroke="#C9A227" stroke-width="2.2" stroke-linecap="round"/><rect x="6" y="11" width="12" height="15" rx="3.5" fill="#F1E7D6" stroke="#7A5A1C" stroke-width="1.2"/><rect x="22" y="11" width="12" height="15" rx="3.5" fill="#F1E7D6" stroke="#7A5A1C" stroke-width="1.2"/><rect x="17.5" y="14" width="5" height="6" rx="1" fill="#C9A227" stroke="#7A5A1C" stroke-width="0.8"/><path d="M6.5 16 h11 M22.5 16 h11" stroke="#C9A227" stroke-width="1.6"/><circle cx="12" cy="28" r="5" fill="#3B4E6B" stroke="#C9A227" stroke-width="1.8"/><circle cx="28" cy="28" r="5" fill="#3B4E6B" stroke="#C9A227" stroke-width="1.8"/><path d="M9.8 26.6 a2.6 2.6 0 0 1 2.6 -2 M25.8 26.6 a2.6 2.6 0 0 1 2.6 -2" fill="none" stroke="#DCEBF0" stroke-width="1"/></g>`,
+      `<g><path d="M20 27 v6 M14 36 L20 32 L26 36" stroke="#3B2A1B" stroke-width="1.8" fill="none" stroke-linecap="round"/><rect x="18" y="4" width="4" height="4" rx="1" fill="#7A5236"/><path d="M13 9 q7 -4 14 0 q2 6 -1.5 10 q2.5 4 2.5 9 h-16 q0 -5 2.5 -9 q-3.5 -4 -1.5 -10z" fill="#E8DCC8" stroke="#7A5A1C" stroke-width="1.3" stroke-linejoin="round"/><path d="M13.5 18 h13" stroke="#C62828" stroke-width="1.2"/><path d="M15 18 v1.6 M18 18 v1.6 M21 18 v1.6 M24 18 v1.6" stroke="#C62828" stroke-width="0.7"/></g>`
     ]
   };
 

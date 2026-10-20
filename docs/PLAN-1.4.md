@@ -40,8 +40,11 @@ EOF
   `ontwerpblad.html` toont ze met een echt bord uit de motor, `blad-*.jpg` voor de telefoon). Nieuw: tien meubeliconen en twee
   vloeren (`tegels`, `parket`). De motor maakt per wereld 48 van 48 zaken over alle vier niveaus. Wacht op Jaimy's ja.
 - 20 okt, later: Jaimy keurde beide werelden goed ("Opera mag iets aantrekkelijker": fluweelrood met goud, rijkere kamerkleuren,
-  toneelkijker in plaats van lessenaar, nieuwe tagline). 128 zaken staan in `docs/werelden/zaken.js` (vorm van `CAMPAIGN`,
-  seeds 101101+ en 111101+); `node docs/werelden/bewijs.js` bewijst ze alle 128. Ze gaan pas naar `campaign.js` en `themes.js`
-  samen met de vertalingen, zodat de tests groen blijven. Portretten: na Jaimy's ja gemaakt, 24 credits
+  toneelkijker in plaats van lessenaar, nieuwe tagline). 128 zaken geschreven (seeds 101101+ en 111101+), nu in `campaign.js`. Portretten: na Jaimy's ja gemaakt, 24 credits
   (saldo nu 246,76); `assets/portretten/{hacienda,opera}-<n>.webp`, uitgesneden met `art/portretten/snij.py`.
-- Volgende stap: vertalingen (19 talen, woordvormen) en daarna `themes.js`, `campaign.js`, `avatars.js`, `style.css`, `mapart.js`.
+- 20-21 okt: beide werelden ingebouwd: `themes.js`, `campaign.js` (640 zaken), `avatars.js` (10 meubels), `style.css`
+  (vloeren `tegels`, `parket`, kaartachtergrond), `mapart.js` (banner en 7 decoraties), `progress.js` (weektitels, rotatie
+  over 10 werelden, medaille). Board.js bewaart een weekzaak nu per week én wereld. Engels zelf geschreven; de 18 andere talen
+  elk door een vertaalagent en een tweede agent nagelezen (`docs/werelden/VERTAALOPDRACHT-1.4.md`, bron `bron-1.4.json`).
+  `npm test` volledig groen. Nog te doen: winkelaankopen in App Store Connect (hacienda, opera) en de Pass, wat-is-nieuw,
+  schermafbeeldingen, en daarna wereld 11 tot en met 16.
