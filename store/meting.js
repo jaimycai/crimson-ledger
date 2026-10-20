@@ -29,7 +29,7 @@ const days = Number(process.argv[feedback ? 3 : 2]) || 30;
   console.log(`Zaken gestart / opgelost:       ${sum(r => r.e === 'start')} / ${sum(r => r.e === 'solved')}`);
   for (const n of [1, 3, 5, 10]) console.log(`  spelers die zaak ${n} haalden:     ${sum(r => r.e === 'solved' && r.n === n)} (${pct(sum(r => r.e === 'solved' && r.n === n))})`);
   console.log(`Hints: ${sum(r => r.e === 'hint')}  Winkel geopend: ${sum(r => r.e === 'store_open')}  Aankopen: ${sum(r => r.e === 'purchase' && !r.a.startsWith('gift'))}  Cadeauwerelden: ${sum(r => r.e === 'purchase' && r.a.startsWith('gift'))}`);
-  console.log(`Beoordeling gevraagd: ${sum(r => r.e === 'review_asked')}  Gedeeld: ${sum(r => r.e === 'share')}`);
+  console.log(`Beoordeling gevraagd: ${sum(r => r.e === 'review_asked')}  Gedeeld: ${sum(r => r.e === 'share')}  Herinnering aangezet: ${sum(r => r.e === 'reminder_on')} (${pct(sum(r => r.e === 'reminder_on'))})`);
   const by = k => Object.entries(rows.filter(r => r.e === 'open').reduce((m, r) => (m[r[k]] = (m[r[k]] || 0) + r.c, m), {})).map(([a, b]) => `${a} ${b}`).join(', ');
   console.log(`Opens per platform: ${by('p') || '-'}   per taal: ${by('l') || '-'}`);
 })();

@@ -906,8 +906,11 @@ const Board = {
     $('results-description').textContent = this.isTutorial
       ? BD_T('Zo werkt elke zaak: plaats iedereen met de verklaringen, en wijs dan aan wie alleen was met het slachtoffer. Tijd voor een echte zaak.')
       : (finale || '');
+    // The daily reminder is the strongest pull back the next day. Offer it after a daily case and after each of the first three
+    // solved cases (most new players start in the campaign and would otherwise never see it), never during the practice case.
     const remindBtn = $('btn-remind');
-    if (remindBtn) remindBtn.hidden = !(this.isDaily && !this.isTutorial && App.notif() && !App.reminderEnabled());
+    const earlySolve = !this.isDaily && (this.loadStats().solved || 0) <= 3;
+    if (remindBtn) remindBtn.hidden = !((this.isDaily || earlySolve) && !this.isTutorial && App.notif() && !App.reminderEnabled());
 
     // scorepaneel: stempel, sterren, punten, rang; en de opmerking van Van Dam
     const panel = $('results-panel'), mentor = $('results-mentor');
@@ -976,6 +979,11 @@ const Board = {
         if (Board.start(diff, 0, false, themeId)) App.navigateTo('board');
         else App.showToast('⚠️', BD_T('Kon geen plattegrond genereren, probeer opnieuw.'));
       };
+    } else if (this.isTutorial && typeof Campaign !== 'undefined' && Campaign.list().length) {
+      // right after the practice case: straight into the first real case, not via the map (only 48% reached case 1 that way)
+      const first = Campaign.list()[0], c0 = Campaign.caseAt(first.key, 0);
+      nextBtn.hidden = !c0 || Campaign.stars(first.key, 0) > 0;
+      if (c0) { nextBtn.textContent = BD_T`▶ Volgende zaak: ${c0.title}`; nextBtn.onclick = () => App.startCampaignCase(first.key, 0, true); }
     } else { nextBtn.hidden = true; }
     $('stat-time').textContent = this.formatTime(this.elapsed);
     $('stat-difficulty').textContent = (DIFFICULTY[this.difficulty] || DIFFICULTY.gemiddeld).label;

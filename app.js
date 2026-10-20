@@ -384,7 +384,7 @@ const App = {
 
   partsSeen() { try { return JSON.parse(this.storageGet('crimson-parts-seen') || '[]'); } catch (e) { return []; } },
   // Eerste zaak van een deel: eerst de "Nieuw deel"-splash, dan de briefing van Van Dam, dan het bord.
-  startCampaignCase(key, idx) {
+  startCampaignCase(key, idx, direct = false) {
     const c = Campaign.caseAt(key, idx);
     if (!c) return this.showToast('⚠️', AP_T('Deze zaak kon niet geladen worden.'));
     if (this.isPaidLocked(Themes.get(c.theme))) return this.openStore('world:' + c.theme);
@@ -396,6 +396,8 @@ const App = {
       this.navigateTo('board');
       this.showBriefing(c, ch);
     };
+    // straight from the practice case: no part splash in between (the cast is on the board itself); later parts keep theirs
+    if (direct && ch && !this.partsSeen().includes(key)) this.storageSet('crimson-parts-seen', JSON.stringify([...this.partsSeen(), key]));
     if (ch && idx === 0 && !this.partsSeen().includes(key)) this.showPartSplash(ch, go); else go();
   },
   showBriefing(c, ch) {
@@ -740,7 +742,7 @@ const App = {
     if (!LN) return false;
     if (!on) {
       this.storageSet('crimson-reminder', '0');
-      try { await LN.cancel({ notifications: [{ id: 1 }] }); } catch (e) { /* niets gepland */ }
+      try { await LN.cancel({ notifications: [1, 2, 3, 4, 5].map(id => ({ id })) }); } catch (e) { /* niets gepland */ }
       return false;
     }
     try {
@@ -748,6 +750,7 @@ const App = {
       if (perm.display !== 'granted') { this.showToast('🔕', AP_T('Meldingen staan uit. Zet ze aan bij Instellingen › Crimson Ledger.')); return false; }
     } catch (e) { return false; }
     this.storageSet('crimson-reminder', '1');
+    if (typeof Meting !== 'undefined') Meting.send('reminder_on');
     await this.scheduleReminder();
     return true;
   },
@@ -765,9 +768,14 @@ const App = {
     const body = streak > 1
       ? (freezes ? AP_T`Je dagelijkse zaak wacht. Houd je streak van ${streak} dagen vast.` : AP_T`Je streak van ${streak} dagen loopt vanavond af. Eén zaak is genoeg.`)
       : AP_T('Er ligt een nieuwe zaak op je bureau. Wie was alleen met het slachtoffer?');
+    // Not one reminder but a short series (days 1, 2, 3, 5 and 7 from the next one), all replanned at every open: a player who
+    // skips a day still gets a nudge, and it stops after a week (Duolingo: days 3-4 decide whether someone comes back).
+    const later = AP_T('Er ligt een nieuwe zaak op je bureau. Wie was alleen met het slachtoffer?');
+    const plan = [0, 1, 2, 4, 6].map((d, i) => { const when = new Date(at); when.setDate(when.getDate() + d);
+      return { id: i + 1, title: 'Crimson Ledger', body: i === 0 ? body : later, schedule: { at: when, allowWhileIdle: true } }; });
     try {
-      await LN.cancel({ notifications: [{ id: 1 }] }).catch(() => {});
-      await LN.schedule({ notifications: [{ id: 1, title: 'Crimson Ledger', body, schedule: { at, allowWhileIdle: true } }] });
+      await LN.cancel({ notifications: plan.map(p => ({ id: p.id })) }).catch(() => {});
+      await LN.schedule({ notifications: plan });
     } catch (e) { /* geen meldingen beschikbaar */ }
   },
 
@@ -1864,6 +1872,8 @@ const App = {
       this.freezeUsed = true;
       this.storageSet('crimson-freeze-used', '1');
     } else {
+      // the very first streak starts with two free days, so one missed day early on does not reset it (Duolingo: two beat one)
+      if (!this.streak.lastDate && !this.storageGet('crimson-freeze-starter')) { Progress.setFreezes(Math.max(Progress.freezes(), 2)); this.storageSet('crimson-freeze-starter', '1'); }
       this.streak.count = 1;
     }
     this.streak.lastDate = today;
