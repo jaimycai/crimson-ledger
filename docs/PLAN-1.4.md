@@ -46,5 +46,9 @@ EOF
   (vloeren `tegels`, `parket`, kaartachtergrond), `mapart.js` (banner en 7 decoraties), `progress.js` (weektitels, rotatie
   over 10 werelden, medaille). Board.js bewaart een weekzaak nu per week én wereld. Engels zelf geschreven; de 18 andere talen
   elk door een vertaalagent en een tweede agent nagelezen (`docs/werelden/VERTAALOPDRACHT-1.4.md`, bron `bron-1.4.json`).
-  `npm test` volledig groen. Nog te doen: winkelaankopen in App Store Connect (hacienda, opera) en de Pass, wat-is-nieuw,
-  schermafbeeldingen, en daarna wereld 11 tot en met 16.
+  `npm test` volledig groen.
+- 21 okt: aankopen `nl.crimsonledger.app.world.hacienda` (6825075336) en `.world.opera` (6825075487) aangemaakt met
+  `store/asc-iap-wereld.js`: niet-verbruikbaar, € 1,99 met Nederland als basis (zelfde prijzen als De Skihut), 175 landen,
+  23 talen, reviewscreenshot `store/screenshots/review-<wereld>.png`. De Crimson Pass hoeft niet te veranderen: de app geeft
+  elke betaalde wereld vrij met de Pass. Ze gaan mee met de review van 1.4 (`node store/asc.js submit`).
+  Nog te doen: wat-is-nieuw, winkeltekst en schermafbeeldingen bijwerken (aantallen werelden), en daarna wereld 11 tot en met 16.

@@ -147,6 +147,14 @@ const IAP_TEXT = {
   'nl.crimsonledger.app.world.skihut': {
     'nl-NL': ['De Skihut', '64 zaken in acht delen, eigen cast.'],
     'en-US': ['The Ski Lodge', '64 cases in eight parts, own cast.']
+  },
+  'nl.crimsonledger.app.world.hacienda': {
+    'nl-NL': ['Hacienda San Isidro', '64 zaken in acht delen, eigen cast.'],
+    'en-US': ['Hacienda San Isidro', '64 cases in eight parts, own cast.']
+  },
+  'nl.crimsonledger.app.world.opera': {
+    'nl-NL': ['Opéra Lumière', '64 zaken in acht delen, eigen cast.'],
+    'en-US': ['Opéra Lumière', '64 cases in eight parts, own cast.']
   }
 };
 
