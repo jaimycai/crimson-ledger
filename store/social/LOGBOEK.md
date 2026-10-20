@@ -198,3 +198,10 @@ eerste publicatie op zijn vroegst 6 oktober.
   EN `en/01` t/m `10`: 19 okt 22:00; 20 okt 01:00, 18:00, 22:00; 21 okt 01:00, 18:00, 22:00; 22 okt 01:00, 18:00, 22:00 (Amsterdam).
   Let op: één bewerking liet Buffer de andere posts van het kanaal naar zijn eigen tijdsloten schuiven; alles daarna teruggezet en nagelezen.
   NL in Buffer ongewijzigd (23 t/m 26 okt 19:00). De taak crimson-social vult EN en ES voortaan elke ronde aan tot 10.
+- 20 okt 19:00 meting. ES (TikTok Studio): es/01 344 views (19 okt 20:02), es/02 320, es/03 315; per post 0-2 likes, 0 reacties.
+  es/01: gemiddelde kijktijd 3,99 s, 3,4% bekijkt alles, 100% via Voor jou, kijkers 88,6% Spanje, 3,2% Duitsland, 1,4% VK, Mexico niet
+  in de lijst, 80% vrouw. De accountregio NL houdt het bereik dus niet in Nederland; TikTok verdeelt op taal. Latijns-Amerika bereikt
+  het nog niet. EN (Buffer): en/01 106 views; en/02 en en/03 nog zonder cijfers (Buffer ververst traag). Volgers EN/ES: niet gemeten.
+  Winkel: niet gemeten (App Store Connect vraagt opnieuw inloggen). Spelers 7 dagen: 63 nieuw, terug dag 1 25%, dag 7 5%; oefenzaak 70%,
+  zaak 1 48%, zaak 5 32%, zaak 10 14%; 35 keer om een beoordeling gevraagd; beoordelingen: 0 in VS, ES, MX, BR, IT, 1 in FR.
+  In-App Event "Zaak van de week" goedgekeurd (start 26 okt).
