@@ -209,3 +209,7 @@ eerste publicatie op zijn vroegst 6 oktober.
   Buffer). Wachtrij NL nu 10. Winkel (App Store Connect, 13 t/m 19 okt): 64 eerste downloads (SA 12, VS 12, NL 10, FR 8, CO 5, IT 3, MX 3, ES 2),
   4.830 vertoningen, 288 paginaweergaven, conversie 2,24%. Benchmark Puzzle (21-27 sep): onze conversie 4,17% boven het 75e percentiel (2,92%).
   Retentie in App Store Connect: te weinig opt-in-gegevens; eigen meting blijft de bron.
+- 20 okt 21:30: versie 1.3.1 (build 15) ingediend: direct van oefenzaak naar zaak 1, herinnering na de eerste drie zaken, reeks meldingen dag
+  1-7, twee vrije dagen bij de eerste streak. Indienen gaf twee keer een serverfout van Apple (500); de derde poging lukte, WAITING_FOR_REVIEW.
+- 20 okt: Jaimy: "512" is geen goede haak. Weg uit de eindkaart van de video's en uit de bio-teksten in ACCOUNTS-KIT; nieuwe bio's:
+  NL "Kun jij de dader vinden? 🔍 Elke dag een nieuw raadsel. App: Crimson Ledger", EN "... A new mystery every day ...", ES "... Un misterio nuevo cada día ...".
