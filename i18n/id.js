@@ -1035,6 +1035,210 @@
           "Gokker Jack": "Jack",
           "Huisdetective Nora": "Nora"
         }
+      },
+      "filmstudio": {
+        "title": "Paradise Pictures",
+        "short": "Studio",
+        "victimName": "Bos Studio Samuel Gold",
+        "roomWord": "ruangan",
+        "roomWordPlural": "ruangan",
+        "tagline": "Hollywood, 1931. Film bersuara pertama studio itu, dan seorang bos yang tak sempat menuntaskan adegan terakhirnya.",
+        "intro": "Paradise Pictures, Hollywood, 1931. Studio itu sedang membuat film bersuara pertamanya. Seusai take terakhir hari itu, bos studio Samuel Gold tergeletak di ruang tayang, sementara filmnya masih berputar.",
+        "outro": "Lampu-lampu padam dan film sudah tersimpan di kalengnya. Kini akhir ceritanya masuk akal.",
+        "rooms": {
+          "Studiohal": "Studio Utama",
+          "Montagekamer": "Ruang Edit",
+          "Kleedkamer": "Ruang Rias",
+          "Kantine": "Kantin",
+          "Rekwisietenkamer": "Ruang Properti",
+          "Projectiezaal": "Ruang Tayang",
+          "Werkplaats": "Bengkel",
+          "Directiekamer": "Kantor",
+          "Geluidsstudio": "Ruang Rekam",
+          "Archief": "Ruang Arsip",
+          "Buitenset": "Set Luar",
+          "Poort": "Gerbang"
+        },
+        "furniture": {
+          "filmcamera": "kamera film",
+          "schijnwerper": "lampu sorot",
+          "regiestoel": "kursi sutradara",
+          "klapbord": "papan klep",
+          "filmspoel": "gulungan film"
+        },
+        "suspects": {
+          "Filmster Vivian": "Bintang Film Vivian",
+          "Regisseur Baxter": "Sutradara Baxter",
+          "Schrijfster Peggy": "Penulis Peggy",
+          "Stuntman Hank": "Stuntman Hank",
+          "Cameraman Lenny": "Juru Kamera Lenny",
+          "Grimeuse Rita": "Penata Rias Rita",
+          "Agent Sid": "Manajer Sid",
+          "Starlet Joy": "Aktris Muda Joy"
+        },
+        "suspectShort": {
+          "Filmster Vivian": "Vivian",
+          "Regisseur Baxter": "Baxter",
+          "Schrijfster Peggy": "Peggy",
+          "Stuntman Hank": "Hank",
+          "Cameraman Lenny": "Lenny",
+          "Grimeuse Rita": "Rita",
+          "Agent Sid": "Sid",
+          "Starlet Joy": "Joy"
+        }
+      },
+      "karavaan": {
+        "title": "Karavanserai Al-Nour",
+        "short": "Karavan",
+        "victimName": "Pemimpin Karavan Idris",
+        "roomWord": "ruangan",
+        "roomWordPlural": "ruangan",
+        "tagline": "Sebuah oasis di jalur rempah kuno. Dua belas unta, delapan pengelana, dan seorang pemimpin karavan yang tak akan berangkat lagi.",
+        "intro": "Karavanserai Al-Nour, sebuah oasis di jalur rempah kuno. Karavan itu beristirahat satu malam di balik temboknya. Saat fajar, pemimpin karavan Idris tergeletak di dekat unta-unta, padahal gerbang tertutup sepanjang malam.",
+        "outro": "Karavan itu melanjutkan perjalanan. Satu rahasia tidak lagi tertinggal di balik gerbang.",
+        "rooms": {
+          "Binnenplaats": "Pelataran",
+          "Bazaar": "Pasar",
+          "Theehuis": "Kedai Teh",
+          "Badhuis": "Pemandian",
+          "Waterput": "Sumur",
+          "Gastenkamer": "Kamar Tamu",
+          "Tapijtwinkel": "Toko Karpet",
+          "Poort": "Gerbang",
+          "Dakterras": "Teras Atap",
+          "Stal": "Kandang Unta",
+          "Keuken": "Dapur",
+          "Voorraadkamer": "Gudang"
+        },
+        "furniture": {
+          "tapijt": "karpet",
+          "specerijen": "keranjang rempah",
+          "kruik": "kendi air",
+          "zadel": "pelana unta",
+          "weegschaal": "timbangan kuningan"
+        },
+        "suspects": {
+          "Koopvrouw Layla": "Saudagar Layla",
+          "Gids Tariq": "Pemandu Tariq",
+          "Tapijthandelaar Yusuf": "Pedagang Karpet Yusuf",
+          "Reizigster Beatrix": "Pengelana Beatrix",
+          "Theeschenker Hamid": "Penyaji Teh Hamid",
+          "Sterrenkijker Zahra": "Pengamat Bintang Zahra",
+          "Bewaker Karim": "Penjaga Karim",
+          "Dichteres Samira": "Penyair Samira"
+        },
+        "suspectShort": {
+          "Koopvrouw Layla": "Layla",
+          "Gids Tariq": "Tariq",
+          "Tapijthandelaar Yusuf": "Yusuf",
+          "Reizigster Beatrix": "Beatrix",
+          "Theeschenker Hamid": "Hamid",
+          "Sterrenkijker Zahra": "Zahra",
+          "Bewaker Karim": "Karim",
+          "Dichteres Samira": "Samira"
+        }
+      },
+      "abdij": {
+        "title": "Biara Santo Aldric",
+        "short": "Biara",
+        "victimName": "Kepala Biara Bertram",
+        "roomWord": "ruangan",
+        "roomWordPlural": "ruangan",
+        "tagline": "Sebuah biara di pegunungan, 1327. Sebuah buku terlarang, perpustakaan yang terkunci, dan seorang kepala biara yang tak selamat melewati malam.",
+        "intro": "Biara Santo Aldric, musim dingin 1327. Salju menutup jalur pegunungan. Seusai ibadat malam, kepala biara Bertram tergeletak di skriptorium, dengan tinta di jari-jarinya.",
+        "outro": "Lonceng berbunyi memanggil ibadat sore. Buku itu sudah kembali ke raknya.",
+        "rooms": {
+          "Scriptorium": "Skriptorium",
+          "Kapel": "Kapel",
+          "Kruidentuin": "Kebun Herbal",
+          "Bibliotheek": "Perpustakaan",
+          "Refter": "Ruang Makan",
+          "Slaapzaal": "Ruang Tidur",
+          "Kloostergang": "Selasar",
+          "Kelder": "Bawah Tanah",
+          "Keuken": "Dapur",
+          "Klokkentoren": "Menara Lonceng",
+          "Ziekenboeg": "Ruang Rawat",
+          "Bakkerij": "Rumah Roti"
+        },
+        "furniture": {
+          "lessenaar": "meja tulis",
+          "kandelaar": "tempat lilin",
+          "bijenkorf": "sarang lebah",
+          "vijzel": "lumpang",
+          "zandloper": "jam pasir"
+        },
+        "suspects": {
+          "Broeder Anselm": "Bruder Anselm",
+          "Broeder Cuthbert": "Bruder Cuthbert",
+          "Novice Elias": "Novis Elias",
+          "Pelgrim Gisela": "Peziarah Gisela",
+          "Kruidenvrouw Hilde": "Tabib Hilde",
+          "Gravin Mathilde": "Countess Mathilde",
+          "Verluchtster Odile": "Penghias Naskah Odile",
+          "Kelderbroeder Waldo": "Juru Gudang Waldo"
+        },
+        "suspectShort": {
+          "Broeder Anselm": "Anselm",
+          "Broeder Cuthbert": "Cuthbert",
+          "Novice Elias": "Elias",
+          "Pelgrim Gisela": "Gisela",
+          "Kruidenvrouw Hilde": "Hilde",
+          "Gravin Mathilde": "Mathilde",
+          "Verluchtster Odile": "Odile",
+          "Kelderbroeder Waldo": "Waldo"
+        }
+      },
+      "vuurtoren": {
+        "title": "Mercusuar Tanjung Kelabu",
+        "short": "Mercusuar",
+        "victimName": "Penjaga Mercusuar Silas Mourne",
+        "roomWord": "area",
+        "roomWordPlural": "area",
+        "tagline": "1900. Sebuah pulau, badai tiga hari, dan sebuah mercusuar yang padam untuk pertama kalinya dalam dua puluh tahun.",
+        "intro": "Mercusuar Tanjung Kelabu, November 1900. Badai memutus pulau itu dari daratan. Tengah malam, lampunya padam. Di atas, di ruang lentera, tergeletak penjaga mercusuar Silas Mourne.",
+        "outro": "Lampunya kembali berputar. Setiap nakhoda bisa melihatnya, dan kamu tahu siapa yang memadamkannya.",
+        "rooms": {
+          "Lantaarnkamer": "Ruang Lentera",
+          "Wenteltrap": "Tangga Putar",
+          "Wachtershuis": "Rumah Penjaga",
+          "Steiger": "Dermaga",
+          "Botenhuis": "Rumah Perahu",
+          "Seinkamer": "Ruang Sinyal",
+          "Klif": "Tebing",
+          "Strand": "Pantai",
+          "Keuken": "Dapur",
+          "Kelder": "Bawah Tanah",
+          "Werkplaats": "Bengkel",
+          "Voorraadkamer": "Gudang"
+        },
+        "furniture": {
+          "boei": "pelampung",
+          "fuik": "bubu lobster",
+          "misthoorn": "terompet kabut",
+          "stormlamp": "lampu badai",
+          "verrekijker": "teropong"
+        },
+        "suspects": {
+          "Assistent Jonas": "Asisten Jonas",
+          "Huishoudster Martha": "Pengurus Rumah Martha",
+          "Visser Bartel": "Nelayan Bartel",
+          "Loodsman Kees": "Pandu Laut Kees",
+          "Vogelkundige Dorien": "Ahli Burung Dorien",
+          "Schipbreukeling Lev": "Penyintas Lev",
+          "Onderwijzeres Wilma": "Guru Wilma",
+          "Telegrafiste Fien": "Juru Telegraf Fien"
+        },
+        "suspectShort": {
+          "Assistent Jonas": "Jonas",
+          "Huishoudster Martha": "Martha",
+          "Visser Bartel": "Bartel",
+          "Loodsman Kees": "Kees",
+          "Vogelkundige Dorien": "Dorien",
+          "Schipbreukeling Lev": "Lev",
+          "Onderwijzeres Wilma": "Wilma",
+          "Telegrafiste Fien": "Fien"
+        }
       }
     },
     "daily": [
@@ -1141,6 +1345,30 @@
         "Semua di Tujuh Belas",
         "Putaran Monako",
         "Permainan Terakhir di Azur"
+      ],
+      "filmstudio": [
+        "Film yang Tak Boleh Ditonton",
+        "Stunt yang Gagal",
+        "Suara dalam Rekaman",
+        "Adegan Terakhir Gold"
+      ],
+      "karavaan": [
+        "Safron Al-Nour",
+        "Malam Seribu Bintang",
+        "Karpet dengan Dua Motif",
+        "Karavan Terakhir"
+      ],
+      "abdij": [
+        "Buku Tanpa Judul",
+        "Malam Lonceng yang Bisu",
+        "Herba yang Tak Menyembuhkan",
+        "Kepala Biara Terakhir dari Santo Aldric"
+      ],
+      "vuurtoren": [
+        "Cahaya yang Padam",
+        "Lelaki dari Laut",
+        "Halaman dari Buku Log",
+        "Malam Terakhir di Tanjung Kelabu"
       ]
     },
     "medals": {
@@ -1255,6 +1483,22 @@
       "casino": [
         "Bandar Kalah",
         "Selesaikan semua bagian Casino Azur"
+      ],
+      "filmstudio": [
+        "Tamat",
+        "Selesaikan semua bagian Paradise Pictures"
+      ],
+      "karavaan": [
+        "Karavan Berangkat Lagi",
+        "Selesaikan semua bagian Karavanserai Al-Nour"
+      ],
+      "abdij": [
+        "Lonceng Berbunyi",
+        "Selesaikan semua bagian Biara Santo Aldric"
+      ],
+      "vuurtoren": [
+        "Cahaya Menyala Lagi",
+        "Selesaikan semua bagian Mercusuar Tanjung Kelabu"
       ]
     },
     "quests": {
@@ -5963,6 +6207,1542 @@
           "♦️ As wajik"
         ]
       ]
+    ],
+    "filmstudio": [
+      "Bagian I · Take Terakhir",
+      "Paradise Pictures, Hollywood, 1931. Studio itu sedang membuat film bersuara pertamanya. Seusai take terakhir hari itu, bos studio Samuel Gold tergeletak di ruang tayang, sementara filmnya masih berputar.",
+      "Proyektor sudah berhenti dan bos studio sudah tewas. Filmnya masih jauh dari selesai.",
+      "Studio adalah satu aula besar dengan banyak pintu. Mulailah dari orang yang menyebutkan di ruangan mana dia berada; “tepat di sebelah” lampu sorot hanya berlaku untuk kotak yang persis di sampingnya, tidak pernah diagonal.",
+      [
+        [
+          "Take Terakhir",
+          "Take keempat puluh tujuh akhirnya berhasil. Itu juga take terakhir.",
+          "🎬 Papan klep"
+        ],
+        [
+          "Ruang Tayang",
+          "Saat bos studio ditemukan, filmnya masih berputar. Dia tidak sempat melihat akhirnya.",
+          "📽️ Proyektor"
+        ],
+        [
+          "Sutradara Baxter Berteriak Cut",
+          "Seharian dia berteriak “cut”. Pukul enam, dia tidak berteriak apa pun.",
+          "📣 Megafon"
+        ],
+        [
+          "Lampu Sorot",
+          "Pukul enam, semua lampu dipadamkan. Satu jam kemudian, satu lampu masih hangat.",
+          "💡 Bola lampu"
+        ],
+        [
+          "Bintang Film Vivian Menunggu",
+          "Katanya dia sedang menunggu adegan terakhirnya. Riasannya sudah dihapus.",
+          "💄 Lipstik"
+        ],
+        [
+          "Gulungan Film",
+          "Di proyektor terpasang gulungan tiga. Gulungan dua tergeletak di lantai.",
+          "🎞️ Gulungan film"
+        ],
+        [
+          "Juru Kamera Lenny Terus Merekam",
+          "Kameranya masih berputar semenit setelah take terakhir. Tak ada yang memintanya.",
+          "🎥 Kamera film"
+        ],
+        [
+          "Lewat Pukul Enam",
+          "Pukul enam, gerbang ditutup. Pukul tujuh, gerbang itu terbuka sekali lagi.",
+          "🔑 Kunci gerbang"
+        ]
+      ]
+    ],
+    "filmstudio-2": [
+      "Bagian II · Gulungan yang Hilang",
+      "Satu-satunya salinan film baru itu lenyap. Kalengnya tersimpan di ruang arsip, terkunci. Pemutaran perdananya seminggu lagi.",
+      "Gulungan film itu sudah kembali ke kalengnya. Satu adegan sudah dipotong, dan kamu tahu siapa yang memotongnya.",
+      "Di studio, semua orang menunjuk orang lain. Keterangan tentang dua orang: tentukan dulu posisi salah satunya.",
+      [
+        [
+          "Kaleng Kosong",
+          "Di kalengnya tertulis judul film itu. Isinya kosong.",
+          "🗃️ Kaleng film"
+        ],
+        [
+          "Manajer Sid Menelepon",
+          "Dia menelepon untuk membicarakan film itu. Belum ada yang memberitahunya bahwa film itu hilang.",
+          "☎️ Telepon"
+        ],
+        [
+          "Ruang Arsip",
+          "Ruang arsip hanya bisa dibuka dengan satu kunci. Kunci itu tergantung di kantor, pada sebatang paku.",
+          "🗝️ Kunci arsip"
+        ],
+        [
+          "Penulis Peggy Menulis Ulang",
+          "Untuk keempat kalinya dia menulis ulang akhir ceritanya. Kini ada pencurian di dalamnya.",
+          "⌨️ Mesin tik"
+        ],
+        [
+          "Ruang Edit",
+          "Di lantai berserakan potongan film. Semuanya dari adegan yang sama.",
+          "✂️ Gunting film"
+        ],
+        [
+          "Aktris Muda Joy Melihat Sesuatu",
+          "Dia melihat seseorang berjalan sambil mengepit kaleng. Dia kira isinya biskuit.",
+          "🍪 Kaleng biskuit"
+        ],
+        [
+          "Penjaga Malam",
+          "Penjaga malam berkeliling setiap jam. Pukul tiga, dia melewatkan satu putaran.",
+          "🔦 Senter"
+        ],
+        [
+          "Seminggu Lagi",
+          "Poster-posternya sudah terpasang di seluruh kota. Filmnya belum ada di mana pun.",
+          "🖼️ Poster film"
+        ]
+      ]
+    ],
+    "filmstudio-3": [
+      "Bagian III · Adegan Stunt",
+      "Lompatan dari atap saloon di set luar, sudah dilatih seratus kali. Hari ini lompatan itu gagal. Stuntman Hank bersumpah ada yang mengutak-atik matrasnya.",
+      "Matras sudah kembali ke tempatnya dan Stuntman Hank sudah bisa berjalan lagi. Lompatan berikutnya mulus.",
+      "Saat ada stunt, semua orang menengadah, bukan saling memandang. Orang yang bilang di mana dia TIDAK berada juga memberitahumu sesuatu: langsung coret ruangan itu.",
+      [
+        [
+          "Dilatih Seratus Kali",
+          "Seratus lompatan, seratus kali berhasil. Yang keseratus satu tidak.",
+          "🪜 Tangga"
+        ],
+        [
+          "Stuntman Hank Jatuh",
+          "Dia melompat dari ketinggian enam meter. Matrasnya ada satu meter lebih jauh.",
+          "🛏️ Matras"
+        ],
+        [
+          "Atap Saloon",
+          "Atap saloon itu terbuat dari karton. Satu papannya terbuat dari kayu.",
+          "🪵 Papan kayu"
+        ],
+        [
+          "Sutradara Baxter Minta Diulang",
+          "Dia menyuruh lompatan itu diulang sebelas kali. Baru pada yang kedua belas dia memalingkan muka.",
+          "⏱️ Stopwatch"
+        ],
+        [
+          "Kuda",
+          "Kuda itu kaget mendengar letusan. Di naskah tidak ada tembakan.",
+          "🐎 Kuda"
+        ],
+        [
+          "Penata Rias Rita Menempelkan Kumis",
+          "Dia menempelkan kumis pada stuntman kedua. Padahal stuntman-nya hanya satu.",
+          "🥸 Kumis palsu"
+        ],
+        [
+          "Tali",
+          "Tali itu sanggup menahan dua ratus kilo. Tali itu putus saat menahan tujuh puluh.",
+          "🪢 Tali"
+        ],
+        [
+          "Juru Kamera Lenny Merekam Semuanya",
+          "Dia merekam lompatan itu dari dua sisi. Di gulungan kedua, ada seseorang di balik cerobong.",
+          "🎞️ Gulungan kedua"
+        ]
+      ]
+    ],
+    "filmstudio-4": [
+      "Bagian IV · Film Bersuara",
+      "Film pertama yang bersuara. Kamera ditempatkan di dalam lemari kedap suara, dan mikrofon disembunyikan di rangkaian bunga. Mikrofon itu mendengar lebih banyak daripada seharusnya.",
+      "Semua rekaman sudah disunting dan ruang rekam sunyi. Percakapan di piringan terakhir bukan rahasia lagi.",
+      "Di set film bersuara tak seorang pun boleh bicara, jadi perhatikan siapa berdiri tepat di sebelah siapa. Taruh dulu tersangka yang pilihannya paling sedikit; sisanya menyusul.",
+      [
+        [
+          "Tenang di Set",
+          "Di atas pintu menyala lampu merah: harap tenang. Di balik pintu, ada yang berbisik.",
+          "🔴 Lampu merah"
+        ],
+        [
+          "Mikrofon di Rangkaian Bunga",
+          "Di rangkaian bunga itu ada mikrofon. Tak seorang pun dari tim suara memasangnya di sana.",
+          "💐 Rangkaian bunga"
+        ],
+        [
+          "Bintang Film Vivian Mendapat Suara",
+          "Di film bisu, dia seorang bintang. Di film bersuara, orang lain yang bernyanyi untuknya.",
+          "🎵 Partitur"
+        ],
+        [
+          "Lemari Es",
+          "Kamera ditaruh di dalam lemari yang dijuluki lemari es. Siang itu, ada dua orang di dalamnya.",
+          "🧊 Lemari es"
+        ],
+        [
+          "Manajer Sid Berbisik",
+          "Dia membisikkan tawaran ke telinga sang bintang. Mikrofonnya ikut berbisik.",
+          "🎧 Headphone"
+        ],
+        [
+          "Piringan Lilin",
+          "Suaranya direkam di piringan lilin, seiring dengan filmnya. Satu piringan tertinggal tiga detik.",
+          "💿 Piringan lilin"
+        ],
+        [
+          "Penulis Peggy Mendengarkan Ulang",
+          "Dia menulis sendiri setiap kalimat. Ada satu kalimat di rekaman yang tidak dia kenal.",
+          "📝 Naskah"
+        ],
+        [
+          "Yang Didengar Mikrofon",
+          "Di rekaman terdengar adegannya. Dan di belakangnya, sebuah pintu yang ditutup.",
+          "🔊 Pengeras suara"
+        ]
+      ]
+    ],
+    "filmstudio-5": [
+      "Bagian V · Audisi",
+      "Seratus calon untuk satu peran, mengantre sampai ke gerbang studio. Masing-masing mendapat tiga menit di depan kamera. Salah satunya tidak kembali dari uji kamera.",
+      "Perannya sudah diberikan dan antrean sudah bubar. Satu uji kamera tidak akan pernah diputar.",
+      "Saat audisi semua orang ikut antre, tapi tidak semua berada di ruangan yang sama. Mulailah dari orang yang bilang dia sendirian; itu sekaligus menutup satu ruangan bagi yang lain.",
+      [
+        [
+          "Seratus Calon",
+          "Seratus nama di daftar. Di akhir hari, tinggal sembilan puluh sembilan.",
+          "📋 Daftar calon"
+        ],
+        [
+          "Aktris Muda Joy Ikut Menonton",
+          "Tahun lalu dia masih berdiri di antrean itu. Sekarang dia mengamati siapa yang datang di belakangnya.",
+          "🎀 Pita rambut"
+        ],
+        [
+          "Uji Kamera",
+          "Tiga menit di depan kamera. Filmnya berdurasi empat menit.",
+          "🎞️ Rekaman uji"
+        ],
+        [
+          "Penata Rias Rita Merias",
+          "Dia merias seratus wajah. Satu wajah sudah dia kenal.",
+          "🖌️ Kuas bedak"
+        ],
+        [
+          "Manajer Sid Meneken Kontrak",
+          "Dia menyuruh seorang calon meneken kontrak sebelum audisi dimulai. Calon itu tidak pernah muncul.",
+          "🖋️ Pulpen"
+        ],
+        [
+          "Nomor Tujuh Belas",
+          "Setiap calon mendapat nomor di dadanya. Nomor tujuh belas lewat dua kali.",
+          "🔢 Kartu nomor"
+        ],
+        [
+          "Bintang Film Vivian Terus Menonton",
+          "Dia datang untuk melihat siapa yang akan menggantikannya. Dia tetap di sana sampai gelap.",
+          "🧣 Kerah bulu"
+        ],
+        [
+          "Satu Mantel di Gantungan",
+          "Pukul lima, masih ada satu mantel di gantungan. Tak ada yang datang mengambilnya.",
+          "🧥 Jas hujan"
+        ]
+      ]
+    ],
+    "filmstudio-6": [
+      "Bagian VI · Kebakaran di Ruang Arsip",
+      "Film lama terbuat dari nitrat, dan nitrat terbakar lebih cepat daripada kertas. Tengah malam, api menyembur dari ruang arsip. Seseorang tahu seberapa cepat api itu akan menjalar.",
+      "Apinya sudah padam dan ruang arsip hangus menghitam. Ini bukan kecelakaan.",
+      "Setelah kebakaran, tak ada yang ingat persis di mana dia berdiri. Gunakan pensil: coret kotak yang tidak mungkin, lalu lihat apa yang tersisa.",
+      [
+        [
+          "Nitrat",
+          "Di setiap kotak tertulis: dilarang merokok. Di lantai ada puntung rokok.",
+          "🚭 Tanda dilarang merokok"
+        ],
+        [
+          "Pemadam Kebakaran",
+          "Pemadam kebakaran tiba dalam sepuluh menit. Ruang arsip habis terbakar dalam lima menit.",
+          "🚒 Mobil pemadam"
+        ],
+        [
+          "Juru Kamera Lenny Menyelamatkan Kotak",
+          "Dia berlari menembus api demi satu kotak. Isinya hasil karyanya sendiri.",
+          "📦 Kotak film"
+        ],
+        [
+          "Lonceng Kebakaran",
+          "Lonceng berbunyi pukul dua. Pukul setengah dua, penjaga malam sudah mencium sesuatu.",
+          "🔔 Lonceng kebakaran"
+        ],
+        [
+          "Penulis Peggy Bekerja Lembur",
+          "Dia mengerjakan naskah sampai tengah malam. Di ruang arsip, katanya semula.",
+          "🗒️ Buku catatan"
+        ],
+        [
+          "Stuntman Hank dan Api",
+          "Di depan kamera, dia berjalan menembus api. Semalam dia menjauhi api itu jauh-jauh.",
+          "🧯 Alat pemadam api"
+        ],
+        [
+          "Daftar Ruang Arsip",
+          "Menurut daftar, ada tiga ratus kaleng. Di antara abu, hanya ada dua ratus.",
+          "📒 Buku arsip"
+        ],
+        [
+          "Sutradara Baxter Menonton",
+          "Semua film lamanya habis dilalap api. Dia tampak lega.",
+          "👓 Kacamata bulat"
+        ]
+      ]
+    ],
+    "filmstudio-7": [
+      "Bagian VII · Di Lokasi",
+      "Film koboi di gurun, sehari perjalanan dari studio. Sepuluh truk, dua puluh kuda, dan sebuah kota karton di bawah terik matahari. Tong airnya kurang satu.",
+      "Truk-truk kembali ke Hollywood. Tong air itu sudah ditemukan, setengah penuh dan jauh dari perkemahan.",
+      "Papannya makin besar dan keterangannya makin pelit. Kalau laporan menyebut sebuah ruangan kosong, seluruh ruangan itu tercoret untuk semua orang.",
+      [
+        [
+          "Sepuluh Truk",
+          "Sepuluh truk masuk ke gurun. Yang ikut hanya sembilan tong air.",
+          "🛢️ Tong air"
+        ],
+        [
+          "Stuntman Hank Mengemudi",
+          "Dia menggulingkan kereta pos dua kali. Hanya sekali yang ada di naskah.",
+          "🐎 Kereta pos"
+        ],
+        [
+          "Matahari Siang",
+          "Pukul dua belas, matahari tepat di atas set. Meski begitu, ada satu bayangan panjang.",
+          "☀️ Matahari siang"
+        ],
+        [
+          "Bintang Film Vivian di Pasir",
+          "Dia menolak masuk ke gurun. Tapi ada pasir di sepatu botnya.",
+          "👢 Sepatu bot berkuda"
+        ],
+        [
+          "Api Unggun",
+          "Seluruh kru bernyanyi di sekeliling api. Saat refrein, satu suara hilang.",
+          "🪕 Banjo"
+        ],
+        [
+          "Penata Rias Rita Membedaki",
+          "Setiap pagi dia membedaki sepuluh wajah. Satu wajah sudah berbedak, sisa semalam.",
+          "🪞 Cermin tangan"
+        ],
+        [
+          "Truk Air",
+          "Truk air itu terparkir di dekat perkemahan sepanjang malam. Saat fajar, truk itu ada satu kilometer lebih jauh.",
+          "🚚 Truk air"
+        ],
+        [
+          "Manajer Sid Mengabari Studio",
+          "Tak ada telepon dalam radius seratus mil. Tapi dalam satu jam, studio sudah tahu.",
+          "✉️ Telegram"
+        ]
+      ]
+    ],
+    "filmstudio-8": [
+      "Bagian VIII · Gala Besar",
+      "Filmnya sudah rampung dan malam ini pemutaran perdananya. Pada gala di studio utama, lampu-lampu menyala sekali lagi, dengan wajah-wajah yang sama seperti pada malam take terakhir.",
+      "Van Dam mengenakan topinya, mengangguk ke arah kursi sutradara yang kosong, lalu berjalan melewati gerbang menuju malam Hollywood. Kini akhir ceritanya masuk akal.",
+      "Kasus-kasus terakhir, hampir semuanya di papan besar. Jangan terpaku pada yang paling sulit: taruh dulu yang lain, maka untuk yang terakhir sering hanya tersisa satu kotak.",
+      [
+        [
+          "Karpet Merah",
+          "Seribu orang di sepanjang karpet merah. Salah satunya ikut masuk ke dalam.",
+          "🎟️ Tiket perdana"
+        ],
+        [
+          "Bintang Film Vivian Bersinar",
+          "Semua orang memandangi gaunnya. Tak ada yang memperhatikan tangannya.",
+          "💎 Bros"
+        ],
+        [
+          "Penulis Peggy Melihat Akhir Ceritanya",
+          "Dia menulis akhir cerita itu tujuh kali. Di layar, dia melihat versi kedelapan.",
+          "📜 Adegan penutup"
+        ],
+        [
+          "Aktris Muda Joy Dilirik",
+          "Semua orang ingin berfoto dengannya. Satu fotografer hanya mengincar tasnya.",
+          "👛 Tas pesta"
+        ],
+        [
+          "Sutradara Baxter Berterima Kasih",
+          "Dia berterima kasih kepada seluruh kru dengan menyebut nama mereka satu per satu. Satu nama dia ucapkan seperti pertanyaan.",
+          "🎙️ Mikrofon"
+        ],
+        [
+          "Manajer Sid Ingin Lebih",
+          "Dia mendapat sepuluh persen dari segalanya. Malam ini dia menginginkan sisanya.",
+          "💵 Lembar dolar"
+        ],
+        [
+          "Juru Kamera Lenny Memutar Film",
+          "Dia sendiri yang memutar film di ruang proyektor. Ada satu gulungan lebih banyak daripada yang disunting.",
+          "📽️ Proyektor film"
+        ],
+        [
+          "Gala Besar",
+          "Semuanya bermula di ruang tayang. Di sana pula semuanya berakhir.",
+          "🎞️ Gulungan terakhir"
+        ]
+      ]
+    ],
+    "karavaan": [
+      "Bagian I · Gerbang Ditutup",
+      "Karavanserai Al-Nour, sebuah oasis di jalur rempah kuno. Karavan itu beristirahat satu malam di balik temboknya. Saat fajar, pemimpin karavan Idris tergeletak di dekat unta-unta, padahal gerbang tertutup sepanjang malam.",
+      "Pemimpin karavan tewas dan gerbang tetap tertutup. Tak ada yang pergi sebelum ceritanya masuk akal.",
+      "Karavanserai adalah satu pelataran dengan banyak pintu. Mulailah dari orang yang menyebutkan di ruangan mana dia berada; “tepat di sebelah” kendi air hanya berlaku untuk kotak yang persis di sampingnya, tidak pernah diagonal.",
+      [
+        [
+          "Gerbang Ditutup",
+          "Saat matahari terbenam, gerbang ditutup. Saat fajar, belum ada yang pergi, tapi pengelananya kurang satu.",
+          "🔒 Grendel gerbang"
+        ],
+        [
+          "Dua Belas Unta",
+          "Dua belas unta di kandang. Malam itu, tak satu pun bersuara.",
+          "🐪 Unta"
+        ],
+        [
+          "Penjaga Karim Berjaga",
+          "Dia duduk di dekat gerbang sepanjang malam. Katanya, kunci tergantung di ikat pinggangnya sepanjang malam.",
+          "🗝️ Seikat kunci"
+        ],
+        [
+          "Kendi Air",
+          "Pukul sepuluh, kendi di dekat sumur penuh. Tengah malam, kendi itu kosong.",
+          "🏺 Kendi air"
+        ],
+        [
+          "Saudagar Layla Menimbang",
+          "Setiap malam dia menimbang safronnya. Semalam dia menimbang sesuatu yang lain.",
+          "⚖️ Timbangan kuningan"
+        ],
+        [
+          "Pelana Unta",
+          "Pelana pemimpin karavan sudah disiapkan untuk keberangkatan. Dia ingin pergi sebelum gerbang dibuka.",
+          "🪢 Tali pelana"
+        ],
+        [
+          "Penyair Samira Menulis",
+          "Malam itu dia menulis puisi tentang sang pemimpin karavan. Puisi itu sebuah perpisahan.",
+          "✒️ Pena buluh"
+        ],
+        [
+          "Sebelum Fajar",
+          "Pukul empat, ayam jantan berkokok. Pukul tiga, sudah ada yang berjalan di teras atap.",
+          "🐓 Ayam jantan"
+        ]
+      ]
+    ],
+    "karavaan-2": [
+      "Bagian II · Safron yang Hilang",
+      "Saudagar Layla bepergian dengan sepuluh karung safron, cukup untuk membeli rumah di kota. Saat dihitung, jumlahnya sembilan. Gerbang masih tertutup.",
+      "Karung kesepuluh sudah kembali bersama sembilan karung lainnya. Beratnya berkurang segenggam.",
+      "Di balik tembok, semua orang membicarakan semua orang. Keterangan tentang dua orang: tentukan dulu posisi salah satunya.",
+      [
+        [
+          "Sepuluh Karung",
+          "Sepuluh karung saat tiba. Sembilan saat sarapan.",
+          "🌸 Karung safron"
+        ],
+        [
+          "Pemandu Tariq Menurunkan Muatan",
+          "Dia sendiri yang menurunkan karung-karung itu dari punggung unta. Dia masih ingat unta mana yang membawa kelebihan satu karung.",
+          "🧭 Kompas"
+        ],
+        [
+          "Gudang",
+          "Gudang itu bisa dikunci. Gemboknya ada di sisi dalam.",
+          "🔐 Gembok"
+        ],
+        [
+          "Pedagang Karpet Yusuf Menggulung",
+          "Pagi itu dia menggulung semua karpetnya. Satu karpet lebih berat daripada kemarin.",
+          "🧶 Karpet gulung"
+        ],
+        [
+          "Benang Merah",
+          "Safron hanyalah benang-benang merah, seringan udara. Sehelai tergeletak di lantai dapur.",
+          "🧵 Helai safron"
+        ],
+        [
+          "Pengelana Beatrix Mencatat",
+          "Dia mencatat semua yang dia lihat. Tentang malam itu, tak ada satu catatan pun.",
+          "📔 Jurnal perjalanan"
+        ],
+        [
+          "Sembilan Karung",
+          "Sembilan karung, semuanya sama berat. Salah satunya separuh berisi pasir.",
+          "⏳ Pasir gurun"
+        ],
+        [
+          "Penyaji Teh Hamid Mendengarnya",
+          "Dia mendengar seseorang membicarakan safron. Sejam sebelum safron itu hilang.",
+          "🍯 Tempat gula"
+        ]
+      ]
+    ],
+    "karavaan-3": [
+      "Bagian III · Kedai Teh",
+      "Setiap malam seluruh rombongan karavan berkumpul di kedai teh. Penyaji Teh Hamid menuangkan teh, dan mendengar semuanya. Ada satu percakapan yang tak didengar siapa pun.",
+      "Kedai teh sudah kosong dan gelas-gelas tertelungkup di atas baki. Percakapan yang tak didengar siapa pun kini kamu ketahui.",
+      "Di kedai teh, semua orang memperhatikan teko, bukan satu sama lain. Orang yang bilang di mana dia TIDAK berada juga memberitahumu sesuatu: langsung coret ruangan itu.",
+      [
+        [
+          "Tiga Gelas",
+          "Di kedai teh, semua orang minum tiga gelas. Satu tamu tidak menyentuh gelas ketiganya.",
+          "🍵 Gelas teh"
+        ],
+        [
+          "Penyaji Teh Hamid Menuang",
+          "Dia menuang dari tempat tinggi supaya tehnya berbuih. Malam ini tangannya gemetar.",
+          "🫖 Teko kuningan"
+        ],
+        [
+          "Bantal Kosong",
+          "Delapan bantal duduk mengelilingi meja rendah. Satu di antaranya tidak diduduki siapa pun.",
+          "🛋️ Bantal duduk"
+        ],
+        [
+          "Pengamat Bintang Zahra Mendengarkan",
+          "Katanya dia sedang memandangi bintang. Dia duduk membelakangi jendela.",
+          "🔭 Astrolab"
+        ],
+        [
+          "Daun Mint Segar",
+          "Di setiap gelas ada daun mint segar. Di satu gelas, daunnya kering.",
+          "🌿 Daun mint"
+        ],
+        [
+          "Penjaga Karim Masuk",
+          "Setiap malam, pukul sepuluh, dia mengambil segelas teh. Kemarin dia datang pukul sembilan.",
+          "⌛ Jam pasir"
+        ],
+        [
+          "Tirai",
+          "Di balik tirai kedai teh ada pintu kedua. Kata si penyaji teh, pintu itu tak pernah dibuka.",
+          "🪟 Tirai"
+        ],
+        [
+          "Saudagar Layla Menawar",
+          "Sejam lamanya dia berunding dengan pemandu soal ongkos perjalanan. Pukul sebelas, ongkosnya tiba-tiba naik.",
+          "💰 Uang perjalanan"
+        ]
+      ]
+    ],
+    "karavaan-4": [
+      "Bagian IV · Pasar",
+      "Hari pasar di oasis. Pedagang dari tiga desa menggelar dagangan mereka di pelataran. Seribu suara, dan salah satunya berbohong.",
+      "Lapak-lapak dibongkar dan pelataran kembali sunyi. Suara yang berbohong sudah ditemukan.",
+      "Pada hari pasar semua orang berdiri berdesakan, jadi perhatikan siapa berdiri tepat di sebelah siapa. Taruh dulu tersangka yang pilihannya paling sedikit; sisanya menyusul.",
+      [
+        [
+          "Hari Pasar",
+          "Seribu orang di pasar. Salah satunya tidak membeli apa pun dan tetap di sana seharian.",
+          "🪙 Koin tembaga"
+        ],
+        [
+          "Pedagang Karpet Yusuf Berjualan",
+          "Hari ini dia menjual tujuh karpet. Dia hanya membawa enam.",
+          "🧶 Karpet"
+        ],
+        [
+          "Keranjang Rempah",
+          "Kayu manis, kapulaga, dan jintan. Satu keranjang tidak berbau apa pun.",
+          "🧺 Keranjang rempah"
+        ],
+        [
+          "Pengelana Beatrix Berbelanja",
+          "Dia membeli karpet yang tak sanggup dia bawa. Dia tidak meminta bantuan siapa pun.",
+          "🧳 Peti perjalanan"
+        ],
+        [
+          "Anak Timbangan Palsu",
+          "Semua anak timbangan di pasar diberi cap. Satu anak timbangan tidak bercap.",
+          "⚖️ Anak timbangan palsu"
+        ],
+        [
+          "Pemandu Tariq Bertukar Unta",
+          "Dia menukar unta tuanya dengan unta muda. Unta tua itu tahu jalan pulang.",
+          "🐪 Unta tua"
+        ],
+        [
+          "Penjual Air",
+          "Di pasar ada yang menjual air dari sumur. Sumur itu milik semua orang.",
+          "🫗 Cangkir air"
+        ],
+        [
+          "Penyair Samira Membacakan Puisi",
+          "Dia membacakan puisi tentang pengkhianatan. Semua orang menatap pria yang sama.",
+          "📖 Buku puisi"
+        ]
+      ]
+    ],
+    "karavaan-5": [
+      "Bagian V · Malam Penuh Bintang",
+      "Di atas teras atap, Pengamat Bintang Zahra membaca arah untuk perjalanan berikutnya. Malam cerah dan karavanserai tertidur. Dia melihat cahaya yang seharusnya tidak ada.",
+      "Cahaya itu ternyata lentera, dan lentera itu ada pemiliknya. Rutenya sudah pasti.",
+      "Dalam gelap di atap, semua orang hanya melihat dirinya sendiri. Mulailah dari orang yang bilang dia sendirian; itu sekaligus menutup satu ruangan bagi yang lain.",
+      [
+        [
+          "Cahaya di Gurun",
+          "Di tempat yang tak ada desanya, sebuah cahaya menyala. Dua kali nyala, dua kali padam.",
+          "🏮 Lentera"
+        ],
+        [
+          "Pengamat Bintang Zahra Berhitung",
+          "Dia mengukur ketinggian Bintang Utara. Bintangnya benar, petanya tidak.",
+          "🗺️ Peta bintang"
+        ],
+        [
+          "Teras Atap",
+          "Empat pengelana tidur di atap di bawah bintang. Ada lima tikar tidur.",
+          "🛌 Tikar tidur"
+        ],
+        [
+          "Penjaga Karim Juga Melihatnya",
+          "Dari gerbang, dia melihat cahaya yang sama. Dia baru melaporkannya keesokan siangnya.",
+          "🪔 Lampu jaga"
+        ],
+        [
+          "Bintang Jatuh",
+          "Tengah malam, sebuah bintang jatuh. Semua orang membuat permohonan, kecuali satu.",
+          "🌠 Bintang jatuh"
+        ],
+        [
+          "Penyair Samira Menghitung Bintang",
+          "Dia menulis puisi tentang bintang-bintang di atas gurun. Hitungannya kelebihan satu.",
+          "📜 Puisi"
+        ],
+        [
+          "Penyaji Teh Hamid Membawa Teh",
+          "Pukul dua, dia membawa teh ke atap. Di sana sudah ada dua gelas.",
+          "🍵 Dua gelas"
+        ],
+        [
+          "Menjelang Fajar",
+          "Bintang-bintang memudar satu per satu. Cahaya di gurun padam paling akhir.",
+          "🌄 Fajar"
+        ]
+      ]
+    ],
+    "karavaan-6": [
+      "Bagian VI · Pemandian",
+      "Pemandian itu hangat dan penuh uap. Para pengelana membasuh pasir perjalanan di sana, dan tak ada yang bisa melihat lebih jauh dari tangannya sendiri. Hampir tak ada.",
+      "Uapnya sudah menghilang dan batu-batunya mendingin. Siapa pun yang bersembunyi di dalamnya kini berdiri di tempat terang.",
+      "Uap membuat saksi ragu, tapi denah tidak. Gunakan pensil: coret kotak yang tidak mungkin, lalu lihat apa yang tersisa.",
+      [
+        [
+          "Batu Panas",
+          "Api di bawah batu-batu itu menyala siang dan malam. Semalam api itu padam selama satu jam.",
+          "🪨 Batu panas"
+        ],
+        [
+          "Di Tengah Uap",
+          "Semua orang di pemandian hanya melihat uap. Satu tamu melihat sebuah wajah.",
+          "🌫️ Uap"
+        ],
+        [
+          "Pengelana Beatrix Membasuh Pasir",
+          "Dia berada di pemandian selama satu jam. Rambutnya kering.",
+          "🧼 Sabun"
+        ],
+        [
+          "Delapan Pasang Sandal",
+          "Di dekat pintu ada delapan pasang sandal. Yang keluar sembilan orang.",
+          "🩴 Sandal mandi"
+        ],
+        [
+          "Pedagang Karpet Yusuf Berkeringat",
+          "Katanya dia berkeringat karena panas. Padahal dia belum masuk.",
+          "💦 Saputangan"
+        ],
+        [
+          "Sumur",
+          "Pemandian mendapat airnya dari sumur. Semalam airnya keruh.",
+          "🪣 Timba sumur"
+        ],
+        [
+          "Pemandu Tariq Mandi",
+          "Katanya dia tidak pernah mandi sebelum perjalanan. Semalam dia mandi.",
+          "🌹 Air mawar"
+        ],
+        [
+          "Saudagar Layla Kehilangan Cincin",
+          "Cincinnya tergeletak di dasar kolam. Dia tidak pernah melepasnya.",
+          "💍 Cincin emas"
+        ]
+      ]
+    ],
+    "karavaan-7": [
+      "Bagian VII · Perjalanan Panjang",
+      "Karavan itu menyeberangi gurun selama dua puluh hari, dari sumur ke sumur. Setiap malam Pemandu Tariq menghitung unta. Tidak setiap malam jumlahnya sama.",
+      "Setelah dua puluh hari, karavan itu tiba di pantai. Sang pemandu menghitung sekali lagi, dan jumlahnya cocok.",
+      "Papannya makin besar dan keterangannya makin pelit. Kalau laporan menyebut sebuah ruangan kosong, seluruh ruangan itu tercoret untuk semua orang.",
+      [
+        [
+          "Dua Puluh Hari",
+          "Air untuk dua puluh hari. Pada hari kedua belas, air itu habis.",
+          "💧 Kantong air"
+        ],
+        [
+          "Pemandu Tariq Menghitung Unta",
+          "Dua belas unta saat berangkat, sebelas di sumur pertama. Di sumur kedua, dua belas lagi.",
+          "🐪 Unta beban"
+        ],
+        [
+          "Jejak",
+          "Sang pemandu membaca setiap jejak di pasir. Satu jejak berjalan mundur.",
+          "👣 Jejak kaki"
+        ],
+        [
+          "Pengamat Bintang Zahra Menunjukkan Jalan",
+          "Setiap malam dia menunjuk ke selatan. Pada malam keenam, sedikit lebih ke timur.",
+          "⭐ Bintang penunjuk"
+        ],
+        [
+          "Penjaga Karim Ikut",
+          "Dua puluh tahun dia tak pernah melangkah ke luar tembok. Kali ini dia bersikeras ikut.",
+          "⛺ Tenda perjalanan"
+        ],
+        [
+          "Sumur Kering",
+          "Di peta ada air. Seseorang sudah menimbun sumur itu.",
+          "🕳️ Sumur kering"
+        ],
+        [
+          "Penyaji Teh Hamid Menyeduh Teh",
+          "Setiap malam dia menyeduh teh dengan air terakhir. Setiap malam, masih ada air yang tersisa.",
+          "🔥 Api unggun"
+        ],
+        [
+          "Laut",
+          "Setelah dua puluh hari, karavan itu mencium bau garam. Satu unta berjalan ke arah sebaliknya.",
+          "🌊 Angin laut"
+        ]
+      ]
+    ],
+    "karavaan-8": [
+      "Bagian VIII · Berpisah dengan Oasis",
+      "Karavan itu melanjutkan perjalanan dan karavanserai tertinggal di belakang. Satu malam lagi di teras atap di bawah bintang, dengan wajah-wajah yang sama seperti pada malam gerbang ditutup.",
+      "Van Dam mengibaskan pasir dari mantelnya, menyapa sang penjaga, lalu berjalan melewati gerbang bersama karavan saat fajar menyingsing. Satu rahasia tidak lagi tertinggal di balik gerbang.",
+      "Kasus-kasus terakhir, hampir semuanya di papan besar. Jangan terpaku pada yang paling sulit: taruh dulu yang lain, maka untuk yang terakhir sering hanya tersisa satu kotak.",
+      [
+        [
+          "Malam Terakhir",
+          "Semua orang duduk di teras atap. Di kandang di bawah, sebatang lilin masih menyala.",
+          "🕯️ Cahaya lilin"
+        ],
+        [
+          "Penyair Samira Berpamitan",
+          "Di puisi terakhirnya tidak ada nama. Semua orang tetap tahu siapa yang dia maksud.",
+          "📓 Buku syair"
+        ],
+        [
+          "Saudagar Layla Melunasi",
+          "Dia membayar tempatnya di karavan. Dengan safron dari karung kesepuluh.",
+          "👝 Kantong uang"
+        ],
+        [
+          "Pedagang Karpet Yusuf Lupa Sesuatu",
+          "Dia meninggalkan satu karpet, tergulung di kamar tamu. Dia tidak pernah meninggalkan apa pun.",
+          "🧶 Karpet terakhir"
+        ],
+        [
+          "Pengelana Beatrix Menutup Bukunya",
+          "Bukunya tentang perjalanan ini sudah selesai. Bab terakhirnya belum berjudul.",
+          "📕 Buku perjalanan"
+        ],
+        [
+          "Penjaga Karim Membuka Gerbang",
+          "Dua puluh tahun dia membuka gerbang saat matahari terbit. Hari ini dia membukanya sejam lebih awal.",
+          "🔑 Kunci besar"
+        ],
+        [
+          "Gelas Terakhir",
+          "Penyaji Teh Hamid menuangkan teh untuk semua orang sekali lagi. Gelas yang dia isi kelebihan satu.",
+          "🫖 Teko terakhir"
+        ],
+        [
+          "Berpisah dengan Oasis",
+          "Semuanya bermula di dekat unta-unta di kandang. Di sana pula semuanya berakhir.",
+          "🔔 Lonceng unta"
+        ]
+      ]
+    ],
+    "abdij": [
+      "Bagian I · Kepala Biara yang Tewas",
+      "Biara Santo Aldric, musim dingin 1327. Salju menutup jalur pegunungan. Seusai ibadat malam, kepala biara Bertram tergeletak di skriptorium, dengan tinta di jari-jarinya.",
+      "Para biarawan mendoakan kepala biara mereka. Salju tak kunjung mencair, dan musim dingin masih panjang.",
+      "Biara penuh lorong sunyi dan pintu tertutup. Mulailah dari orang yang menyebutkan di ruangan mana dia berada; “tepat di sebelah” tempat lilin hanya berlaku untuk kotak yang persis di sampingnya, tidak pernah diagonal.",
+      [
+        [
+          "Seusai Ibadat Malam",
+          "Dua belas biarawan menyanyikan ibadat malam. Setelah itu, kurang satu suara.",
+          "📿 Rosario"
+        ],
+        [
+          "Tinta di Jari-jarinya",
+          "Kepala biara tak pernah menulis sendiri. Jari-jarinya hitam oleh tinta.",
+          "🪶 Pena bulu angsa"
+        ],
+        [
+          "Bruder Anselm Menghitung",
+          "Tujuh kunci di gantungannya. Kemarin masih delapan.",
+          "🗝️ Seikat kunci"
+        ],
+        [
+          "Tempat Lilin",
+          "Lilin di skriptorium masih menyala. Setelah ibadat malam, tak boleh ada cahaya di sana.",
+          "🕯️ Lilin lebah"
+        ],
+        [
+          "Novis Elias Menulis",
+          "Di papan lilinnya tertulis sebuah mazmur. Di bawahnya, setengah terhapus, sebuah nama.",
+          "📝 Papan lilin"
+        ],
+        [
+          "Salju di Jalur Gunung",
+          "Tak seorang pun bisa masuk atau keluar biara. Namun seutas tali menjuntai di tembok.",
+          "🪢 Tali rami"
+        ],
+        [
+          "Countess Mathilde Menunggu",
+          "Dia ingin bicara dengan kepala biara setelah ibadat malam. Katanya, kepala biara tidak datang.",
+          "💍 Cincin stempel"
+        ],
+        [
+          "Malam Pertama",
+          "Gerbang tertutup dan jalur gunung tertutup. Pintu skriptorium terbuka.",
+          "🔩 Grendel pintu"
+        ]
+      ]
+    ],
+    "abdij-2": [
+      "Bagian II · Buku Terlarang",
+      "Di perpustakaan ada satu buku yang tak boleh dibaca siapa pun. Hanya kepala biara yang memegang kuncinya. Tetap saja, ada yang membacanya.",
+      "Buku itu kembali terkunci. Pertanyaannya bukan lagi siapa yang membacanya, tetapi mengapa.",
+      "Di perpustakaan semua orang berbisik, dan setiap kata berarti. Keterangan tentang dua orang: tentukan dulu posisi salah satunya.",
+      [
+        [
+          "Di Balik Gembok",
+          "Buku itu tersimpan di balik dua gembok. Satu gembok masih terkunci.",
+          "🔒 Gembok"
+        ],
+        [
+          "Bruder Anselm Bungkam",
+          "Dia tahu buku mana itu. Dia juga tahu siapa yang memintanya.",
+          "📚 Katalog"
+        ],
+        [
+          "Kurang Satu Lembar",
+          "Buku itu terdiri dari dua ratus lembar. Satu lembar dipotong dengan rapi.",
+          "🔪 Pisau raut"
+        ],
+        [
+          "Penghias Naskah Odile Melihat",
+          "Emas di pinggir halaman adalah karyanya. Bukunya sendiri belum pernah dia lihat, katanya.",
+          "✨ Daun emas"
+        ],
+        [
+          "Membaca dengan Cahaya Lilin",
+          "Ada noda lilin di perkamen itu. Lilin lemak dari dapur, bukan lilin lebah dari kapel.",
+          "🕯️ Lilin lemak"
+        ],
+        [
+          "Novis Elias Membaca",
+          "Dia hampir tak bisa bahasa Latin, katanya. Di papan lilinnya tertulis satu kalimat dari buku terlarang.",
+          "✍️ Kalimat salinan"
+        ],
+        [
+          "Juru Gudang Waldo dan Sang Countess",
+          "Mereka berbicara berdua di selasar. Setelah itu, keduanya tak saling bicara lagi.",
+          "✉️ Surat bersegel"
+        ],
+        [
+          "Buku Terlarang",
+          "Tak seorang pun boleh membacanya. Dua orang tetap membacanya.",
+          "📕 Buku terlarang"
+        ]
+      ]
+    ],
+    "abdij-3": [
+      "Bagian III · Kebun Herbal",
+      "Kebun herbal tertutup salju, tetapi herba kering tergantung di dalam. Di ruang rawat, seorang biarawan tua makin sakit, bukannya sembuh. Ada yang meracik ulang minumannya.",
+      "Biarawan tua itu sudah bisa duduk lagi dan minta sup. Guci yang salah sudah disingkirkan dari ruang rawat.",
+      "Di antara herba, semua orang tahu apa yang tumbuh di mana. Orang yang bilang di mana dia TIDAK berada juga memberitahumu sesuatu: langsung coret ruangan itu.",
+      [
+        [
+          "Setiap Herba Menyembuhkan",
+          "Sage untuk tenggorokan, mint untuk perut. Di dalam guci itu tak ada satu pun dari keduanya.",
+          "🌿 Sage kering"
+        ],
+        [
+          "Bruder Cuthbert Meracik",
+          "Dia meracik minuman itu seperti setiap malam. Hanya saja, kali ini dia tidak mencicipinya.",
+          "🥣 Ramuan herbal"
+        ],
+        [
+          "Lumpang",
+          "Di dalam lumpang masih ada bubuk. Dari herba yang tidak tumbuh di kebun ini.",
+          "🌰 Akar tumbuk"
+        ],
+        [
+          "Tabib Hilde Datang",
+          "Dia datang dari desa membawa sekeranjang penuh herba. Padahal jalur gunung sudah seminggu tertutup.",
+          "🧺 Keranjang herba"
+        ],
+        [
+          "Lebah di Musim Dingin",
+          "Di musim dingin, lebah tidur. Tetap saja, ada yang membuka sarangnya.",
+          "🍯 Sisiran madu"
+        ],
+        [
+          "Ruang Rawat",
+          "Tiga ranjang, dua orang sakit. Ranjang ketiga masih hangat.",
+          "🛏️ Kasur jerami"
+        ],
+        [
+          "Peziarah Gisela Membantu",
+          "Dia menawarkan diri merawat si sakit. Dia sudah tahu minuman apa yang diberikan kepada si sakit sebelum ada yang memberitahunya.",
+          "🍶 Labu minum"
+        ],
+        [
+          "Akonit",
+          "Bunga ungu yang cantik. Di setiap buku herbal ada tanda silang kecil di samping namanya.",
+          "🪻 Akonit"
+        ]
+      ]
+    ],
+    "abdij-4": [
+      "Bagian IV · Musim Dingin yang Panjang",
+      "Jalur gunung tertutup sampai musim semi. Juru Gudang Waldo menghitung persediaan setiap minggu, dan setiap minggu ruang bawah tanah lebih kosong daripada seharusnya.",
+      "Isi ruang bawah tanah sudah dihitung dan roti dibagi dengan adil. Yang tadinya makan untuk dua orang, kini makan untuk satu.",
+      "Di musim dingin semua orang berdiam dekat api, dan dekat satu sama lain. Taruh dulu tersangka yang pilihannya paling sedikit; sisanya menyusul.",
+      [
+        [
+          "Sampai Musim Semi",
+          "Gandum cukup untuk empat bulan, kata juru gudang. Setelah sebulan, separuhnya sudah habis.",
+          "🌾 Karung gandum"
+        ],
+        [
+          "Juru Gudang Waldo Menimbang",
+          "Setiap minggu dia menimbang keju. Tak satu pun hilang, tetapi semuanya makin ringan.",
+          "🧀 Bulatan keju"
+        ],
+        [
+          "Rumah Roti",
+          "Tungku sudah dingin sejak ibadat malam. Namun ruangan itu berbau roti segar.",
+          "🍞 Roti gandum hitam"
+        ],
+        [
+          "Countess Mathilde Berpuasa",
+          "Dia berpuasa sepanjang masa Adven, katanya. Di bawah ranjangnya ada remah roti putih.",
+          "🥖 Kerak roti"
+        ],
+        [
+          "Jam Pasir",
+          "Di dapur, ada yang membalik jam pasir setiap jam. Pukul tiga, dia lupa.",
+          "⏳ Jam pasir"
+        ],
+        [
+          "Novis Elias Lapar",
+          "Dialah yang paling kurus di antara semuanya. Sampai pertengahan Januari.",
+          "🍽️ Mangkuk kayu"
+        ],
+        [
+          "Anggur untuk Misa",
+          "Untuk misa, satu kendi seminggu sudah cukup. Satu tong penuh lenyap.",
+          "🍷 Anggur misa"
+        ],
+        [
+          "Salju Setinggi Daun Jendela",
+          "Salju menumpuk sampai ke daun jendela ruang makan. Satu daun jendela terbuka, dari dalam.",
+          "🧊 Juntaian es"
+        ]
+      ]
+    ],
+    "abdij-5": [
+      "Bagian V · Kunjungan Uskup",
+      "Salju mencair selama seminggu, dan jalur gunung terbuka. Uskup sedang dalam perjalanan untuk memilih kepala biara baru, dan tidak semua orang ingin dia tiba.",
+      "Uskup tiba dengan selamat dan memberkati biara. Kepala biara baru sudah terpilih, dan tak satu suara pun dibeli.",
+      "Untuk kunjungan itu, semua orang bersiap di tempat yang berbeda. Mulailah dari orang yang bilang dia sendirian; itu sekaligus menutup satu ruangan bagi yang lain.",
+      [
+        [
+          "Surat Bersegel",
+          "Surat uskup itu bersegel merah. Segelnya sudah pernah dibuka.",
+          "📜 Surat uskup"
+        ],
+        [
+          "Bruder Anselm Ingin Jadi Kepala Biara",
+          "Dia tidak menginginkannya, katanya. Sumpahnya sudah dia hafal di luar kepala.",
+          "📃 Sumpah kepala biara"
+        ],
+        [
+          "Menara Lonceng",
+          "Saat uskup tiba, lonceng dibunyikan. Talinya sudah dipotong, setinggi mata.",
+          "🔔 Tali lonceng"
+        ],
+        [
+          "Countess Mathilde Menyumbang",
+          "Dia menghadiahkan piala emas kepada biara. Asalkan uskup memilih calonnya.",
+          "🏆 Piala emas"
+        ],
+        [
+          "Batu di Jalan Setapak",
+          "Ada yang menggulingkan batu ke jalan setapak gunung. Batu-batu itu ada di atas salju, bukan di bawahnya.",
+          "🪨 Bongkah batu"
+        ],
+        [
+          "Bruder Cuthbert Memasak",
+          "Jamuan untuk uskup. Satu hidangan khusus untuknya seorang.",
+          "🍲 Semur"
+        ],
+        [
+          "Tabib Hilde Tahu Jalannya",
+          "Dia tahu setiap jalan setapak di pegunungan. Termasuk jalan yang akan dilalui uskup.",
+          "🥾 Sepatu bot basah"
+        ],
+        [
+          "Uskup Tiba",
+          "Bagalnya lebih dulu melewati gerbang. Uskup menyusul sejam kemudian, berjalan kaki.",
+          "🐴 Bagal"
+        ]
+      ]
+    ],
+    "abdij-6": [
+      "Bagian VI · Kebakaran di Skriptorium",
+      "Tengah malam, skriptorium terbakar. Para biarawan memadamkannya dengan salju dan ember. Satu buku diselamatkan, oleh orang yang salah.",
+      "Apinya sudah padam dan dindingnya hitam. Buku yang diselamatkan tersimpan di kapel, jauh dari tangan yang salah.",
+      "Asap membuat saksi ragu, tapi denah tidak. Keterangannya makin pelit: gunakan pensil, coret kotak yang tidak mungkin, lalu lihat apa yang tersisa.",
+      [
+        [
+          "Asap Seusai Ibadat Malam",
+          "Seusai ibadat malam, ada asap di selasar. Semua lilin sudah dipadamkan.",
+          "💨 Jejak asap"
+        ],
+        [
+          "Ember Berisi Salju",
+          "Para biarawan memadamkan api dengan salju dari pelataran. Di dekat skriptorium, saljunya sudah disekop sebelum api menyala.",
+          "🪣 Ember kayu"
+        ],
+        [
+          "Penghias Naskah Odile Berlari",
+          "Dialah yang pertama berlari ke dalam api, demi buku-bukunya. Dia kembali dengan tangan kosong dan lengan baju yang bersih.",
+          "🎨 Pot cat"
+        ],
+        [
+          "Meja Tulis",
+          "Semua meja tulis terbakar. Yang paling hitam justru meja yang paling jauh dari lilin.",
+          "🪵 Kayu hangus"
+        ],
+        [
+          "Juru Gudang Waldo Memadamkan Api",
+          "Dia membawa ember yang paling berat. Jubahnya tidak berbau asap, tetapi minyak.",
+          "🫙 Kendi minyak"
+        ],
+        [
+          "Abu di Ruang Makan",
+          "Di perapian ruang makan ada abu perkamen. Padahal api di skriptorium baru menyala belakangan.",
+          "🌫️ Abu perkamen"
+        ],
+        [
+          "Peziarah Gisela Berdoa",
+          "Selama kebakaran, dia berdoa di kapel. Mantelnya hitam oleh jelaga.",
+          "🧥 Mantel peziarah"
+        ],
+        [
+          "Penyelamat yang Salah",
+          "Satu buku diselamatkan. Oleh orang yang mengaku tak bisa membaca.",
+          "📘 Sampul hangus"
+        ]
+      ]
+    ],
+    "abdij-7": [
+      "Bagian VII · Para Peziarah",
+      "Dua belas peziarah mengetuk gerbang dan meminta tempat bermalam. Menurut aturan biara, setiap tamu harus diterima seperti Kristus sendiri. Setelah tiga hari, sebelas orang melanjutkan perjalanan.",
+      "Sebelas peziarah melanjutkan perjalanan ke Roma. Yang kedua belas tinggal, tetapi bukan sebagai tamu.",
+      "Papannya makin besar dan biaranya makin penuh. Kalau laporan menyebut sebuah ruangan kosong, seluruh ruangan itu tercoret untuk semua orang.",
+      [
+        [
+          "Dua Belas di Gerbang",
+          "Dua belas peziarah meminta roti dan tempat tidur. Di salju depan gerbang ada tiga belas pasang jejak kaki.",
+          "👣 Jejak kaki"
+        ],
+        [
+          "Peziarah Gisela Mengenali Seseorang",
+          "Dia mengenal salah satu dari kedua belas orang itu. Dia baru mengatakannya setelah orang itu pergi.",
+          "🐚 Kerang Santo Yakobus"
+        ],
+        [
+          "Buku Tamu",
+          "Setiap tamu menulis namanya di buku itu. Dua nama ditulis dengan tulisan tangan yang sama.",
+          "✒️ Buku tamu"
+        ],
+        [
+          "Bruder Cuthbert Membalut",
+          "Dia membalut kaki sebelas peziarah. Yang kedua belas tidak lecet sama sekali.",
+          "🩹 Perban linen"
+        ],
+        [
+          "Roti untuk Kaum Miskin",
+          "Setiap peziarah mendapat satu roti. Yang dipanggang ada tiga belas.",
+          "🥖 Roti peziarah"
+        ],
+        [
+          "Novis Elias Berbicara",
+          "Dia berbicara dengan para peziarah dalam bahasa mereka sendiri. Musim panas lalu dia bilang asalnya dari desa dekat sini.",
+          "🧾 Surat jalan"
+        ],
+        [
+          "Penghias Naskah Odile Menggambar",
+          "Dia menggambar kedua belas peziarah di pinggir halaman buku mazmur. Satu wajah pernah dia lukis sebelumnya.",
+          "🖌️ Kuas"
+        ],
+        [
+          "Sebelas Berangkat",
+          "Dua belas orang datang. Sebelas melanjutkan perjalanan ke Roma.",
+          "⛰️ Jalan gunung"
+        ]
+      ]
+    ],
+    "abdij-8": [
+      "Bagian VIII · Ibadat Terakhir",
+      "Musim semi tiba dan salju di jalur gunung mencair. Satu malam lagi di selasar, dengan wajah-wajah yang sama seperti pada malam pertama musim dingin.",
+      "Van Dam merapatkan mantelnya, membungkuk kepada para biarawan, lalu berjalan melewati jalur gunung yang sudah terbuka, turun ke lembah. Lonceng berbunyi memanggil ibadat sore. Buku itu sudah kembali ke raknya.",
+      "Kasus-kasus terakhir, hampir semuanya di papan besar. Jangan terpaku pada yang paling sulit: taruh dulu yang lain, maka untuk yang terakhir sering hanya tersisa satu kotak.",
+      [
+        [
+          "Salju Mencair",
+          "Di bawah salju dekat tembok tergeletak sebuah kunci. Kunci kedelapan.",
+          "🔑 Kunci besi"
+        ],
+        [
+          "Bruder Anselm Menyerahkan Kunci",
+          "Selama empat puluh tahun, dia membawa kunci-kunci itu. Malam ini dia menyerahkan semuanya, kecuali satu.",
+          "⛓️ Gantungan kunci"
+        ],
+        [
+          "Tabib Hilde Pulang",
+          "Dia datang membawa sekeranjang penuh herba. Dia pulang dengan keranjang yang tetap penuh, tanpa herba.",
+          "🧺 Keranjang penuh"
+        ],
+        [
+          "Kepala Biara Baru",
+          "Untuk pertama kalinya dia memberkati para biarawan. Satu biarawan tidak menundukkan kepala.",
+          "⚜️ Tongkat kepala biara"
+        ],
+        [
+          "Juru Gudang Waldo Mengunci Ruang Bawah Tanah",
+          "Ruang bawah tanah sudah terisi lagi untuk musim panas. Di balik tong terakhir ada sesuatu yang tidak semestinya ada di sana.",
+          "🍺 Bir biara"
+        ],
+        [
+          "Countess Mathilde Pergi",
+          "Keretanya sudah siap di gerbang. Kereta itu lebih berat daripada saat dia datang.",
+          "🛞 Roda kereta"
+        ],
+        [
+          "Ibadat Sore",
+          "Ibadat sore terakhir musim dingin ini. Satu suara menyanyikan mazmur yang berbeda.",
+          "🎼 Buku antifon"
+        ],
+        [
+          "Ibadat Terakhir",
+          "Semuanya bermula di skriptorium. Di sana pula semuanya berakhir.",
+          "🖋️ Tempat tinta"
+        ]
+      ]
+    ],
+    "vuurtoren": [
+      "Bagian I · Lampu Padam",
+      "Mercusuar Tanjung Kelabu, November 1900. Badai memutus pulau itu dari daratan. Tengah malam, lampunya padam. Di atas, di ruang lentera, tergeletak penjaga mercusuar Silas Mourne.",
+      "Lampunya menyala lagi, tetapi sang penjaga takkan pernah melihatnya. Badai masih akan berlangsung berhari-hari.",
+      "Pulaunya kecil, mercusuarnya tinggi dan sempit. Mulailah dari orang yang menyebutkan di area mana dia berada; “tepat di sebelah” pelampung hanya berlaku untuk kotak yang persis di sampingnya, tidak pernah diagonal.",
+      [
+        [
+          "Tengah Malam",
+          "Selama dua puluh tahun, lampu itu menyala setiap malam. Malam ini, pukul dua belas, lampu itu padam.",
+          "🪔 Pembakar minyak tanah"
+        ],
+        [
+          "Ruang Lentera",
+          "Sang penjaga tergeletak di bawah lensa. Pintunya terkunci dari dalam.",
+          "🔐 Kunci ruang lentera"
+        ],
+        [
+          "Asisten Jonas Memanjat",
+          "Seratus dua belas anak tangga ke puncak. Katanya, dia sampai di atas dalam dua menit.",
+          "🕰️ Jam saku"
+        ],
+        [
+          "Pelampung",
+          "Pelampung itu selalu tergantung di samping pintu rumah penjaga. Malam ini pelampung itu terapung di antara ombak.",
+          "🛟 Pelampung"
+        ],
+        [
+          "Juru Telegraf Fien Mengirim Kabar",
+          "Pukul dua belas kurang lima, dia mengabari daratan bahwa lampunya padam. Pukul dua belas, lampu itu baru padam.",
+          "📨 Pesan telegraf"
+        ],
+        [
+          "Mesin Pemutar",
+          "Mesin pemutar lensa berhenti. Ada simpul pelaut yang melilitnya.",
+          "🪢 Simpul pelaut"
+        ],
+        [
+          "Pengurus Rumah Martha Tidur",
+          "Dia sudah tidur sejak pukul sepuluh, katanya. Tengah malam, teko tehnya masih hangat.",
+          "🫖 Teko teh"
+        ],
+        [
+          "Badai dari Barat",
+          "Tak ada perahu yang bisa mendarat atau meninggalkan pulau. Namun di dermaga, perahunya kurang satu.",
+          "⚓ Tali tambat lepas"
+        ]
+      ]
+    ],
+    "vuurtoren-2": [
+      "Bagian II · Kapal Karam",
+      "Pada malam kedua badai, lampunya padam selama satu jam. Dalam satu jam itu, sebuah kapal menabrak karang di bawah tebing. Seorang lelaki terdampar, tanpa dokumen.",
+      "Bangkai kapal itu hancur dihantam ombak. Kenapa kapal itu berlayar begitu dekat ke pantai, kini kamu tahu.",
+      "Setelah kapal karam, semua orang menceritakan apa yang mereka lihat, dan siapa. Keterangan tentang dua orang: tentukan dulu posisi salah satunya.",
+      [
+        [
+          "Menabrak Karang",
+          "Tanpa lampu, kapal itu berlayar lurus ke arah tebing. Padahal di pantai ada lampu yang menyala.",
+          "🏮 Lampu badai"
+        ],
+        [
+          "Penyintas Lev Terdampar",
+          "Dia terdampar tanpa dokumen. Kotak tembakaunya kering.",
+          "🚬 Kotak tembakau"
+        ],
+        [
+          "Nelayan Bartel Melihatnya",
+          "Dia menyaksikannya dari atas tebing, katanya. Dayungnya masih basah.",
+          "🚣 Dayung"
+        ],
+        [
+          "Bangkai Kapal",
+          "Yang tersisa dari kapal itu hanya haluannya. Nama di haluan sudah ditutup cat.",
+          "🖌️ Cat basah"
+        ],
+        [
+          "Pandu Laut Kees dan Sang Kapten",
+          "Dia mengenal kapten kapal itu. Malam itu mereka punya janji bertemu, di lepas pantai.",
+          "🗺️ Peta laut"
+        ],
+        [
+          "Ahli Burung Dorien Mencatat",
+          "Di buku catatannya: pukul tiga, pantai, seekor burung pemakan tiram. Dan seorang lelaki.",
+          "📓 Buku catatan lapangan"
+        ],
+        [
+          "Peti di Pantai",
+          "Dua belas peti terdampar. Di rumah perahu hanya ada sembilan.",
+          "📦 Peti kapal"
+        ],
+        [
+          "Juru Telegraf Fien dan Daratan",
+          "Daratan menanyakan nama kapal itu. Dia sudah mengirimkannya sebelum ada yang melihat haluannya.",
+          "📃 Pita telegraf"
+        ]
+      ]
+    ],
+    "vuurtoren-3": [
+      "Bagian III · Kabut",
+      "Setelah badai, datanglah kabut. Selama tiga hari, terompet kabut berbunyi setiap seperempat jam. Pada malam kedua, bunyinya kelebihan satu kali.",
+      "Kabut menghilang dan terompet kabut terdiam. Perahu yang menunggu isyarat itu tak pernah tiba.",
+      "Dalam kabut tak ada yang bisa melihat apa pun, tapi semua orang tahu di mana mereka tidak berdiri. Orang yang bilang di mana dia TIDAK berada juga memberitahumu sesuatu: langsung coret area itu.",
+      [
+        [
+          "Setiap Seperempat Jam",
+          "Empat tiupan per jam. Pukul dua, ada lima.",
+          "📯 Terompet kabut"
+        ],
+        [
+          "Asisten Jonas Meniup",
+          "Dia meniup terompet itu sepanjang malam, katanya. Pukul tiga, dia tertidur di dapur.",
+          "⚙️ Engkol"
+        ],
+        [
+          "Teropong",
+          "Saat berkabut, teropong tak ada gunanya. Namun teropong itu berdiri di tebing, mengarah ke laut.",
+          "🔭 Teropong"
+        ],
+        [
+          "Guru Wilma Tersesat",
+          "Sudah sepuluh tahun dia berjalan dari sekolah ke rumah penjaga. Dalam kabut, dia malah tiba di rumah perahu.",
+          "👓 Kacamata berembun"
+        ],
+        [
+          "Suara dalam Kabut",
+          "Seseorang berteriak minta tolong dari dermaga. Saat mereka tiba di sana, yang tergeletak hanya sebuah topi.",
+          "🧢 Topi basah"
+        ],
+        [
+          "Nelayan Bartel Melaut",
+          "Tak ada nelayan yang melaut dalam kabut. Dia pulang dengan bubu yang kosong, kecuali satu.",
+          "🦞 Bubu lobster"
+        ],
+        [
+          "Penyintas Lev Mengerti",
+          "Dia tidak bisa berbahasa Belanda, katanya. Dia tertawa mendengar lelucon si nelayan.",
+          "🧶 Selimut wol"
+        ],
+        [
+          "Kelebihan Satu Kali",
+          "Tiupan kelima itu bukan kekeliruan. Itu isyarat, untuk sebuah perahu di dalam kabut.",
+          "⛵ Sekoci"
+        ]
+      ]
+    ],
+    "vuurtoren-4": [
+      "Bagian IV · Buku Log",
+      "Setiap malam sang penjaga menulis di buku log: cuaca, kapal-kapal, lampu. Halaman terakhirnya dirobek.",
+      "Halaman terakhir sudah ditemukan, kusut dan setengah terbakar. Isinya sudah kamu ketahui.",
+      "Di buku log semuanya tercatat berurutan, dan setiap catatan menunjuk ke sebuah area. Taruh dulu tersangka yang pilihannya paling sedikit; sisanya menyusul.",
+      [
+        [
+          "Halaman Terakhir",
+          "Halaman itu sudah dirobek. Di halaman berikutnya ada bekas tekanan penanya.",
+          "📄 Bekas tekanan"
+        ],
+        [
+          "Pengurus Rumah Martha Menggosok",
+          "Dia tak pernah menyentuh buku log itu, katanya. Di sampulnya ada lilin semir.",
+          "🧽 Kain lap"
+        ],
+        [
+          "Tinta dan Pensil",
+          "Sang penjaga selalu menulis dengan tinta. Catatan terakhir ditulis dengan pensil.",
+          "✏️ Pensil tukang kayu"
+        ],
+        [
+          "Pandu Laut Kees Ikut Membaca",
+          "Dia tahu kapal mana saja yang tercatat di buku log. Juga kapal mana yang tidak.",
+          "📋 Daftar kapal"
+        ],
+        [
+          "Cuaca Menurut Sang Penjaga",
+          "Angin berkekuatan sembilan, tulisnya pada hari Selasa. Pada hari Selasa tak ada angin sama sekali.",
+          "🌬️ Pengukur angin"
+        ],
+        [
+          "Guru Wilma Mengenali Tulisan Itu",
+          "Dia mengenali setiap tulisan tangan di pulau itu. Yang ini juga, katanya, lalu dia terdiam.",
+          "🖋️ Pena celup"
+        ],
+        [
+          "Juru Telegraf Fien Menyalin",
+          "Setiap pesan ke daratan juga dia salin ke bukunya sendiri. Ada satu pesan yang tercatat dua kali.",
+          "📒 Buku telegraf"
+        ],
+        [
+          "Abu di Tungku",
+          "Di tungku ruang sinyal ada abu. Di antaranya, secarik sudut kertas bertuliskan sebuah angka.",
+          "🔥 Sobekan hangus"
+        ]
+      ]
+    ],
+    "vuurtoren-5": [
+      "Bagian V · Kapal Perbekalan",
+      "Sebulan sekali kapal datang membawa minyak tanah, tepung, dan pos. Seisi pulau berdiri di dermaga. Kali ini kapal itu akan membawa sesuatu pulang.",
+      "Kapal itu berangkat tanpa peti tersebut. Nakhodanya tak pernah tahu apa yang hampir dia bawa.",
+      "Saat kapal datang, semua orang mengangkut barang di tempat yang berbeda. Mulailah dari orang yang bilang dia sendirian; itu sekaligus menutup satu area bagi yang lain.",
+      [
+        [
+          "Sebulan Sekali",
+          "Minyak tanah, tepung, dan pos, seperti setiap bulan. Kali ini juga sebuah peti tanpa nama.",
+          "🛢️ Tong minyak tanah"
+        ],
+        [
+          "Pos",
+          "Ada surat untuk sang penjaga. Dikirim dari daratan, sehari setelah dia meninggal.",
+          "✉️ Surat"
+        ],
+        [
+          "Pengurus Rumah Martha Memesan",
+          "Di daftarnya: tepung, garam, dan racun tikus. Di pulau itu tidak ada tikus.",
+          "☠️ Racun tikus"
+        ],
+        [
+          "Rumah Perahu",
+          "Di rumah perahu ada peti yang harus ikut dibawa pulang. Di tutupnya ada lubang-lubang udara.",
+          "📦 Peti berlubang udara"
+        ],
+        [
+          "Penyintas Lev Ingin Ikut",
+          "Dia tidak punya uang, katanya. Dia menawari sang nakhoda sekeping koin emas.",
+          "🪙 Koin emas"
+        ],
+        [
+          "Ahli Burung Dorien Mengirim Barang",
+          "Sepuluh burung awetan untuk museum. Salah satunya terlalu berat untuk seekor burung.",
+          "🐦 Camar awetan"
+        ],
+        [
+          "Daftar Muatan",
+          "Semua isi daftar muatan cocok. Beratnya tidak.",
+          "⚖️ Timbangan"
+        ],
+        [
+          "Pandu Laut Kees Mengantar Kapal",
+          "Dia memandu kapal itu melewati karang, seperti biasa. Kali ini butuh waktu sejam lebih lama.",
+          "🧭 Kompas"
+        ]
+      ]
+    ],
+    "vuurtoren-6": [
+      "Bagian VI · Migrasi Burung",
+      "Ribuan burung yang bermigrasi beristirahat di pulau itu, dalam perjalanan ke selatan. Ahli Burung Dorien menghitungnya dari atas tebing, dan semua orang ikut membantu. Tidak semua orang memperhatikan burung-burung itu.",
+      "Burung-burung itu melanjutkan perjalanan ke selatan. Di buku catatan Dorien, hitungannya kembali cocok.",
+      "Di tebing semua orang menengadah, bukan saling memandang. Keterangannya makin pelit: gunakan pensil, coret kotak yang tidak mungkin, lalu lihat apa yang tersisa.",
+      [
+        [
+          "Seribu Sayap",
+          "Saat matahari terbit, tebing itu penuh burung. Satu tempat tetap kosong, seolah ada orang yang berbaring di sana.",
+          "🪶 Bulu camar"
+        ],
+        [
+          "Ahli Burung Dorien Mengamati",
+          "Sepanjang pagi, binokularnya terarah ke rumah perahu. Tak ada burung yang bersarang di sana.",
+          "🔭 Binokular"
+        ],
+        [
+          "Sarang Kosong",
+          "Sarang di tebing itu kosong, seperti biasanya di bulan November. Kecuali sebuah kunci.",
+          "🪺 Sarang burung"
+        ],
+        [
+          "Asisten Jonas Mencari Telur",
+          "Dia menuruni tebing untuk mencari telur camar, katanya. Di bulan November.",
+          "🧗 Tali panjat"
+        ],
+        [
+          "Merpati Pos",
+          "Di antara burung-burung yang bermigrasi ada seekor merpati. Merpati itu tidak terbang ke selatan, tetapi ke daratan.",
+          "🕊️ Merpati pos"
+        ],
+        [
+          "Nelayan Bartel Memberi Makan Camar",
+          "Setiap pagi dia melempar sisa ikan ke camar-camar. Pagi ini dia melempar sesuatu yang lain ke laut.",
+          "🐟 Ember ikan"
+        ],
+        [
+          "Penyintas Lev Mengenal Burung",
+          "Dia pelaut, katanya. Dia tahu nama Latin setiap burung.",
+          "📚 Buku burung"
+        ],
+        [
+          "Satu yang Tak Beristirahat",
+          "Ribuan burung tidur di pulau itu. Satu pengamat burung berjalan sepanjang malam di pantai, membawa lampu.",
+          "🥾 Sepatu bot berpasir"
+        ]
+      ]
+    ],
+    "vuurtoren-7": [
+      "Bagian VII · Badai Musim Dingin",
+      "Badai terdahsyat dalam dua puluh tahun. Ombak menghantam sampai melewati tebing, dan pulau itu terputus dari daratan selama tiga minggu.",
+      "Badai mereda dan telegraf berdetak lagi. Apa yang tiga minggu tersimpan di dalam, kini tak lagi tersimpan.",
+      "Papannya makin besar dan pulaunya makin kecil. Kalau laporan menyebut sebuah area kosong, seluruh area itu tercoret untuk semua orang.",
+      [
+        [
+          "Tiga Minggu di Dalam",
+          "Delapan orang, satu rumah, tiga minggu. Pada hari kedua belas, tak seorang pun bicara lagi.",
+          "🪵 Kayu bakar"
+        ],
+        [
+          "Kabel",
+          "Pada hari pertama badai, kabel ke daratan putus. Kabel tidak putus selurus itu.",
+          "🔌 Kabel telegraf"
+        ],
+        [
+          "Pengurus Rumah Martha Membagikan Sup",
+          "Setiap malam, delapan mangkuk sup. Yang kembali kosong ada sembilan.",
+          "🥣 Mangkuk sup"
+        ],
+        [
+          "Ruang Bawah Tanah Kebanjiran",
+          "Air di ruang bawah tanah setinggi lutut. Semuanya mengapung, kecuali satu peti.",
+          "⚓ Peti timbal"
+        ],
+        [
+          "Guru Wilma Mengajar",
+          "Dikte yang dia berikan bercerita tentang kapal yang tenggelam. Penyintas Lev membetulkan nama kapalnya.",
+          "📝 Dikte"
+        ],
+        [
+          "Kancing Pandu Laut Kees Hilang",
+          "Satu kancing kuningan hilang dari mantelnya. Kancing itu tergeletak di ruang lentera sejak malam pertama.",
+          "🟡 Kancing kuningan"
+        ],
+        [
+          "Asisten Jonas Menjaga Lampu",
+          "Selama tiga minggu, dia sendirian menjaga lampu tetap menyala. Minyak tanah yang dia pakai hanya separuhnya.",
+          "🪔 Sumbu lampu"
+        ],
+        [
+          "Nelayan Bartel Teringat",
+          "Badai seperti ini pernah dia lihat sekali, dua puluh tahun lalu. Waktu itu lampunya juga padam.",
+          "📰 Koran lama"
+        ]
+      ]
+    ],
+    "vuurtoren-8": [
+      "Bagian VIII · Cahaya Terakhir",
+      "Seorang penjaga baru akan datang dari daratan. Satu malam lagi di bawah lampu yang berputar, dengan wajah-wajah yang sama seperti pada malam pertama badai.",
+      "Van Dam naik ke kapal perbekalan, menyentuh topinya, dan tidak menoleh lagi. Lampunya kembali berputar. Setiap nakhoda bisa melihatnya, dan kamu tahu siapa yang memadamkannya.",
+      "Kasus-kasus terakhir, hampir semuanya di papan besar. Jangan terpaku pada yang paling sulit: taruh dulu yang lain, maka untuk yang terakhir sering hanya tersisa satu kotak.",
+      [
+        [
+          "Penjaga Baru",
+          "Dia datang dengan kapal dan langsung naik ke puncak. Dia sudah tahu jalannya.",
+          "🧳 Koper"
+        ],
+        [
+          "Pengurus Rumah Martha Berkemas",
+          "Selama dua puluh tahun, dia memasak untuk sang penjaga. Di dalam kopernya ada cincin kawin milik sang penjaga.",
+          "💍 Cincin kawin"
+        ],
+        [
+          "Juru Telegraf Fien Pamit",
+          "Pesan terakhirnya ke daratan: semua beres. Dia mengirimnya dua kali, yang kedua dengan sandi lain.",
+          "🔤 Kode Morse"
+        ],
+        [
+          "Penyintas Lev Menyebut Nama",
+          "Setelah dua bulan, dia menyebutkan namanya. Itu nama kapal tersebut.",
+          "🏷️ Papan nama"
+        ],
+        [
+          "Ahli Burung Dorien Pergi",
+          "Dia menghitung empat ribu burung untuk museum. Yang dia bawa pergi empat ribu satu.",
+          "🗃️ Peti burung"
+        ],
+        [
+          "Asisten Jonas Tidak Jadi Penjaga",
+          "Selama tiga tahun, dia membantu sang penjaga. Yang dipilih orang lain, dan dia sudah tahu sejak sebulan lalu.",
+          "📜 Surat pengangkatan"
+        ],
+        [
+          "Guru Wilma Tetap Tinggal",
+          "Semua orang pergi dengan kapal. Dia tetap tinggal, demi sekolah, padahal sekolah itu sudah sebulan tutup.",
+          "🔔 Lonceng sekolah"
+        ],
+        [
+          "Cahaya Terakhir",
+          "Semuanya bermula di ruang lentera. Di sana pula semuanya berakhir.",
+          "🔆 Lensa Fresnel"
+        ]
+      ]
     ]
   },
 
@@ -6035,6 +7815,22 @@
       "casino": {
         "rw": "ruangan",
         "rws": "ruangan"
+      },
+      "filmstudio": {
+        "rw": "ruangan",
+        "rws": "ruangan"
+      },
+      "karavaan": {
+        "rw": "ruangan",
+        "rws": "ruangan"
+      },
+      "abdij": {
+        "rw": "ruangan",
+        "rws": "ruangan"
+      },
+      "vuurtoren": {
+        "rw": "area",
+        "rws": "area"
       }
     },
     "templates": {
@@ -6746,6 +8542,206 @@
           "the": "Ruang Duduk",
           "in": "di Ruang Duduk"
         }
+      },
+      "filmstudio": {
+        "Studiohal": {
+          "the": "Studio Utama",
+          "in": "di Studio Utama"
+        },
+        "Montagekamer": {
+          "the": "Ruang Edit",
+          "in": "di Ruang Edit"
+        },
+        "Kleedkamer": {
+          "the": "Ruang Rias",
+          "in": "di Ruang Rias"
+        },
+        "Kantine": {
+          "the": "Kantin",
+          "in": "di Kantin"
+        },
+        "Rekwisietenkamer": {
+          "the": "Ruang Properti",
+          "in": "di Ruang Properti"
+        },
+        "Projectiezaal": {
+          "the": "Ruang Tayang",
+          "in": "di Ruang Tayang"
+        },
+        "Werkplaats": {
+          "the": "Bengkel",
+          "in": "di Bengkel"
+        },
+        "Directiekamer": {
+          "the": "Kantor",
+          "in": "di Kantor"
+        },
+        "Geluidsstudio": {
+          "the": "Ruang Rekam",
+          "in": "di Ruang Rekam"
+        },
+        "Archief": {
+          "the": "Ruang Arsip",
+          "in": "di Ruang Arsip"
+        },
+        "Buitenset": {
+          "the": "Set Luar",
+          "in": "di Set Luar"
+        },
+        "Poort": {
+          "the": "area Gerbang",
+          "in": "di area Gerbang"
+        }
+      },
+      "karavaan": {
+        "Binnenplaats": {
+          "the": "Pelataran",
+          "in": "di Pelataran"
+        },
+        "Bazaar": {
+          "the": "Pasar",
+          "in": "di Pasar"
+        },
+        "Theehuis": {
+          "the": "Kedai Teh",
+          "in": "di Kedai Teh"
+        },
+        "Badhuis": {
+          "the": "Pemandian",
+          "in": "di Pemandian"
+        },
+        "Waterput": {
+          "the": "area Sumur",
+          "in": "di area Sumur"
+        },
+        "Gastenkamer": {
+          "the": "Kamar Tamu",
+          "in": "di Kamar Tamu"
+        },
+        "Tapijtwinkel": {
+          "the": "Toko Karpet",
+          "in": "di Toko Karpet"
+        },
+        "Poort": {
+          "the": "area Gerbang",
+          "in": "di area Gerbang"
+        },
+        "Dakterras": {
+          "the": "Teras Atap",
+          "in": "di Teras Atap"
+        },
+        "Stal": {
+          "the": "Kandang Unta",
+          "in": "di Kandang Unta"
+        },
+        "Keuken": {
+          "the": "Dapur",
+          "in": "di Dapur"
+        },
+        "Voorraadkamer": {
+          "the": "Gudang",
+          "in": "di Gudang"
+        }
+      },
+      "abdij": {
+        "Scriptorium": {
+          "the": "Skriptorium",
+          "in": "di Skriptorium"
+        },
+        "Kapel": {
+          "the": "Kapel",
+          "in": "di Kapel"
+        },
+        "Kruidentuin": {
+          "the": "Kebun Herbal",
+          "in": "di Kebun Herbal"
+        },
+        "Bibliotheek": {
+          "the": "Perpustakaan",
+          "in": "di Perpustakaan"
+        },
+        "Refter": {
+          "the": "Ruang Makan",
+          "in": "di Ruang Makan"
+        },
+        "Slaapzaal": {
+          "the": "Ruang Tidur",
+          "in": "di Ruang Tidur"
+        },
+        "Kloostergang": {
+          "the": "Selasar",
+          "in": "di Selasar"
+        },
+        "Kelder": {
+          "the": "Bawah Tanah",
+          "in": "di Bawah Tanah"
+        },
+        "Keuken": {
+          "the": "Dapur",
+          "in": "di Dapur"
+        },
+        "Klokkentoren": {
+          "the": "Menara Lonceng",
+          "in": "di Menara Lonceng"
+        },
+        "Ziekenboeg": {
+          "the": "Ruang Rawat",
+          "in": "di Ruang Rawat"
+        },
+        "Bakkerij": {
+          "the": "Rumah Roti",
+          "in": "di Rumah Roti"
+        }
+      },
+      "vuurtoren": {
+        "Lantaarnkamer": {
+          "the": "Ruang Lentera",
+          "in": "di Ruang Lentera"
+        },
+        "Wenteltrap": {
+          "the": "Tangga Putar",
+          "in": "di Tangga Putar"
+        },
+        "Wachtershuis": {
+          "the": "Rumah Penjaga",
+          "in": "di Rumah Penjaga"
+        },
+        "Steiger": {
+          "the": "area Dermaga",
+          "in": "di area Dermaga"
+        },
+        "Botenhuis": {
+          "the": "Rumah Perahu",
+          "in": "di Rumah Perahu"
+        },
+        "Seinkamer": {
+          "the": "Ruang Sinyal",
+          "in": "di Ruang Sinyal"
+        },
+        "Klif": {
+          "the": "area Tebing",
+          "in": "di area Tebing"
+        },
+        "Strand": {
+          "the": "area Pantai",
+          "in": "di area Pantai"
+        },
+        "Keuken": {
+          "the": "Dapur",
+          "in": "di Dapur"
+        },
+        "Kelder": {
+          "the": "Bawah Tanah",
+          "in": "di Bawah Tanah"
+        },
+        "Werkplaats": {
+          "the": "Bengkel",
+          "in": "di Bengkel"
+        },
+        "Voorraadkamer": {
+          "the": "Gudang",
+          "in": "di Gudang"
+        }
       }
     },
     "furniture": {
@@ -7048,6 +9044,106 @@
         "a": "shaker koktail",
         "next": "di sebelah shaker koktail",
         "with": "dengan shaker koktail"
+      },
+      "filmcamera": {
+        "a": "kamera film",
+        "next": "di sebelah kamera film",
+        "with": "dengan kamera film"
+      },
+      "schijnwerper": {
+        "a": "lampu sorot",
+        "next": "di sebelah lampu sorot",
+        "with": "dengan lampu sorot"
+      },
+      "regiestoel": {
+        "a": "kursi sutradara",
+        "next": "di sebelah kursi sutradara",
+        "with": "dengan kursi sutradara"
+      },
+      "klapbord": {
+        "a": "papan klep",
+        "next": "di sebelah papan klep",
+        "with": "dengan papan klep"
+      },
+      "filmspoel": {
+        "a": "gulungan film",
+        "next": "di sebelah gulungan film",
+        "with": "dengan gulungan film"
+      },
+      "tapijt": {
+        "a": "karpet",
+        "next": "di sebelah karpet",
+        "with": "dengan karpet"
+      },
+      "specerijen": {
+        "a": "keranjang rempah",
+        "next": "di sebelah keranjang rempah",
+        "with": "dengan keranjang rempah"
+      },
+      "kruik": {
+        "a": "kendi air",
+        "next": "di sebelah kendi air",
+        "with": "dengan kendi air"
+      },
+      "zadel": {
+        "a": "pelana unta",
+        "next": "di sebelah pelana unta",
+        "with": "dengan pelana unta"
+      },
+      "weegschaal": {
+        "a": "timbangan kuningan",
+        "next": "di sebelah timbangan kuningan",
+        "with": "dengan timbangan kuningan"
+      },
+      "lessenaar": {
+        "a": "meja tulis",
+        "next": "di sebelah meja tulis",
+        "with": "dengan meja tulis"
+      },
+      "kandelaar": {
+        "a": "tempat lilin",
+        "next": "di sebelah tempat lilin",
+        "with": "dengan tempat lilin"
+      },
+      "bijenkorf": {
+        "a": "sarang lebah",
+        "next": "di sebelah sarang lebah",
+        "with": "dengan sarang lebah"
+      },
+      "vijzel": {
+        "a": "lumpang",
+        "next": "di sebelah lumpang",
+        "with": "dengan lumpang"
+      },
+      "zandloper": {
+        "a": "jam pasir",
+        "next": "di sebelah jam pasir",
+        "with": "dengan jam pasir"
+      },
+      "boei": {
+        "a": "pelampung",
+        "next": "di sebelah pelampung",
+        "with": "dengan pelampung"
+      },
+      "fuik": {
+        "a": "bubu lobster",
+        "next": "di sebelah bubu lobster",
+        "with": "dengan bubu lobster"
+      },
+      "misthoorn": {
+        "a": "terompet kabut",
+        "next": "di sebelah terompet kabut",
+        "with": "dengan terompet kabut"
+      },
+      "stormlamp": {
+        "a": "lampu badai",
+        "next": "di sebelah lampu badai",
+        "with": "dengan lampu badai"
+      },
+      "verrekijker": {
+        "a": "teropong",
+        "next": "di sebelah teropong",
+        "with": "dengan teropong"
       }
     }
   }

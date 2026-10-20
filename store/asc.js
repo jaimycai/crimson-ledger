@@ -163,6 +163,22 @@ const IAP_TEXT = {
   'nl.crimsonledger.app.world.casino': {
     'nl-NL': ['Casino Azur', '64 zaken in acht delen, eigen cast.'],
     'en-US': ['Casino Azur', '64 cases in eight parts, own cast.']
+  },
+  'nl.crimsonledger.app.world.filmstudio': {
+    'nl-NL': ['Paradise Pictures', '64 zaken in acht delen, eigen cast.'],
+    'en-US': ['Paradise Pictures', '64 cases in eight parts, own cast.']
+  },
+  'nl.crimsonledger.app.world.karavaan': {
+    'nl-NL': ['Karavanserai Al-Nour', '64 zaken in acht delen, eigen cast.'],
+    'en-US': ['The Caravanserai of Al-Nour', '64 cases in eight parts, own cast.']
+  },
+  'nl.crimsonledger.app.world.abdij': {
+    'nl-NL': ['De Abdij van Sint-Aldric', '64 zaken in acht delen, eigen cast.'],
+    'en-US': ['The Abbey of Saint Aldric', '64 cases in eight parts, own cast.']
+  },
+  'nl.crimsonledger.app.world.vuurtoren': {
+    'nl-NL': ['Vuurtoren Grauwkaap', '64 zaken in acht delen, eigen cast.'],
+    'en-US': ['Greycape Lighthouse', '64 cases in eight parts, own cast.']
   }
 };
 

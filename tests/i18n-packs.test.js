@@ -19,6 +19,10 @@ const PLURAL = new Set(['zero', 'one', 'two', 'few', 'many', 'other']), GENDER =
 const langs = process.argv.slice(2).length ? process.argv.slice(2)
   : fs.readdirSync(path.join(DIR, 'i18n')).filter(f => f.endsWith('.js')).map(f => f.slice(0, -3)).sort();
 
+// I18N_SKIP_WORLDS=abdij,vuurtoren leaves worlds out of every check, for a translator who adds new worlds in two rounds
+const SKIP = new Set((process.env.I18N_SKIP_WORLDS || '').split(',').map(s => s.trim()).filter(Boolean));
+const dropSkipped = o => Object.fromEntries(Object.entries(o).filter(([k]) => !SKIP.has(k.replace(/-\d+$/, ''))));
+if (SKIP.size) console.log(`NOTE werelden overgeslagen: ${[...SKIP].join(', ')}`);
 // a fresh browser-like world per language, without a DOM
 function world(lang) {
   const ctx = { console, Intl, localStorage: { getItem: () => lang, setItem() {} }, navigator: { language: lang, languages: [lang] } };
@@ -26,6 +30,7 @@ function world(lang) {
   for (const f of ['themes.js', 'campaign.js', 'mentor.js', `i18n/${lang}.js`, 'i18n.js', 'grammar.js', 'floorplan.js']) vm.runInContext(read(f), ctx, { filename: f });
   // a new language registers itself from its meta until it is added to I18n.LANGS
   vm.runInContext(`{ const m = (LANG_PACKS['${lang}'] || {}).meta; if (m && !I18n.supported('${lang}')) { I18n.LANGS.push(['${lang}', m.name, m.dir, m.locale]); globalThis.__new = true; } }`, ctx);
+  vm.runInContext(`for (const id of ${JSON.stringify([...SKIP])}) { const i = THEMES.findIndex(t => t.id === id); if (i >= 0) THEMES.splice(i, 1); }`, ctx);
   vm.runInContext('globalThis.__ = { I18n, Grammar, FloorPlan, Themes, THEMES, Mentor, GRAMMAR_NL, isNew: !!globalThis.__new };', ctx);
   return ctx.__;
 }
@@ -95,7 +100,8 @@ for (const lang of langs) {
   if (lang !== 'en') {
     const d = [], c = [];
     const { article, ...enData } = EN.data;   // a language without articles leaves data.article empty
-    shape(enData, P.data, 'data', d); shape(EN.campaign, P.campaign, 'campaign', c);
+    const ref = SKIP.size ? { ...enData, themes: dropSkipped(enData.themes), week: dropSkipped(enData.week), medals: dropSkipped(enData.medals) } : enData;
+    shape(ref, P.data, 'data', d); shape(SKIP.size ? dropSkipped(EN.campaign) : EN.campaign, P.campaign, 'campaign', c);
     fail(d, 'spelinhoud compleet (werelden, kamers, meubels, verdachten, titels, medailles …)');
     fail(c, 'campagne compleet (elk deel, elke zaak: titel, verhaaltje, bewijsstuk)');
     // Engels laat namen zonder titel weg (ze blijven gelijk); elke andere taal noemt iedereen

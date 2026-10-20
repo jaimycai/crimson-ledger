@@ -1,0 +1,1985 @@
+{
+ "note": "Dutch is the source, English the reference translation. Suspect \"who\" and \"look\" are background for the translator only.",
+ "worlds": {
+  "filmstudio": {
+   "era": "a Hollywood film studio in 1931",
+   "theme": {
+    "nl": {
+     "title": "Paradise Pictures",
+     "short": "Filmstudio",
+     "victimName": "Studiobaas Samuel Gold",
+     "roomWord": "ruimte",
+     "roomWordPlural": "ruimtes",
+     "tagline": "Hollywood, 1931. De eerste geluidsfilm van de studio, en een baas die zijn laatste scène niet haalt.",
+     "intro": "Paradise Pictures, Hollywood, 1931. De studio draait zijn eerste geluidsfilm. Na de laatste opname van de dag ligt studiobaas Samuel Gold in de projectiezaal, terwijl de film nog loopt.",
+     "outro": "De lampen gaan uit en de film is in het blik. Het einde klopt eindelijk."
+    },
+    "en": {
+     "title": "Paradise Pictures",
+     "short": "Studio",
+     "victimName": "Studio Boss Samuel Gold",
+     "roomWord": "room",
+     "roomWordPlural": "rooms",
+     "tagline": "Hollywood, 1931. The studio's first talking picture, and a boss who does not make it through his final scene.",
+     "intro": "Paradise Pictures, Hollywood, 1931. The studio is shooting its first talking picture. After the last take of the day, studio boss Samuel Gold lies in the screening room while the film is still running.",
+     "outro": "The lights go out and the film is in the can. At last, the ending works."
+    }
+   },
+   "rooms": [
+    {
+     "nl": "Studiohal",
+     "article": "de",
+     "en": "Sound Stage"
+    },
+    {
+     "nl": "Montagekamer",
+     "article": "de",
+     "en": "Cutting Room"
+    },
+    {
+     "nl": "Kleedkamer",
+     "article": "de",
+     "en": "Dressing Room"
+    },
+    {
+     "nl": "Kantine",
+     "article": "de",
+     "en": "Canteen"
+    },
+    {
+     "nl": "Rekwisietenkamer",
+     "article": "de",
+     "en": "Prop Room"
+    },
+    {
+     "nl": "Projectiezaal",
+     "article": "de",
+     "en": "Screening Room"
+    },
+    {
+     "nl": "Werkplaats",
+     "article": "de",
+     "en": "Workshop"
+    },
+    {
+     "nl": "Directiekamer",
+     "article": "de",
+     "en": "Office"
+    },
+    {
+     "nl": "Geluidsstudio",
+     "article": "de",
+     "en": "Sound Booth"
+    },
+    {
+     "nl": "Archief",
+     "article": "het",
+     "en": "Film Vault"
+    },
+    {
+     "nl": "Buitenset",
+     "article": "de",
+     "en": "Backlot"
+    },
+    {
+     "nl": "Poort",
+     "article": "de",
+     "en": "Studio Gate"
+    }
+   ],
+   "furniture": [
+    {
+     "id": "filmcamera",
+     "nl": "een filmcamera",
+     "en": "a film camera"
+    },
+    {
+     "id": "schijnwerper",
+     "nl": "een schijnwerper",
+     "en": "a spotlight"
+    },
+    {
+     "id": "regiestoel",
+     "nl": "een regiestoel",
+     "en": "a director's chair"
+    },
+    {
+     "id": "klapbord",
+     "nl": "een klapbord",
+     "en": "a clapperboard"
+    },
+    {
+     "id": "filmspoel",
+     "nl": "een filmspoel",
+     "en": "a film reel"
+    }
+   ],
+   "suspects": [
+    {
+     "nl": "Filmster Vivian",
+     "en": "Film Star Vivian",
+     "gender": "f",
+     "who": "De ster van de nieuwe film",
+     "look": "a glamorous film star in her thirties, platinum finger waves, pencilled eyebrows, satin gown with a fur collar"
+    },
+    {
+     "nl": "Regisseur Baxter",
+     "en": "Director Baxter",
+     "gender": "m",
+     "who": "Regisseert de eerste geluidsfilm van de studio",
+     "look": "a film director in his fifties, flat cap, round glasses, tweed jacket, megaphone in hand"
+    },
+    {
+     "nl": "Schrijfster Peggy",
+     "en": "Writer Peggy",
+     "gender": "f",
+     "who": "Schreef het script en herschrijft het elke dag",
+     "look": "a sharp screenwriter in her thirties, short bob, cardigan, pencil behind her ear, typed script pages"
+    },
+    {
+     "nl": "Stuntman Hank",
+     "en": "Stuntman Hank",
+     "gender": "m",
+     "who": "Valt voor de ster van daken en paarden",
+     "look": "a rugged stuntman in his thirties, broken nose, cowboy hat, bandana, leather vest"
+    },
+    {
+     "nl": "Cameraman Lenny",
+     "en": "Cameraman Lenny",
+     "gender": "m",
+     "who": "Ziet alles door zijn lens",
+     "look": "a cameraman in his forties, cap worn backwards, rolled sleeves, a light meter on a cord around his neck"
+    },
+    {
+     "nl": "Grimeuse Rita",
+     "en": "Make-up Artist Rita",
+     "gender": "f",
+     "who": "Maakt elke dag de gezichten van de sterren",
+     "look": "a make-up artist in her forties, hair tied in a scarf, powder brush in hand, smock with many pockets"
+    },
+    {
+     "nl": "Agent Sid",
+     "en": "Agent Sid",
+     "gender": "m",
+     "who": "Onderhandelt over elk contract in de studio",
+     "look": "a fast-talking talent agent in his forties, pinstripe suit, slicked hair, cigar, carnation in his buttonhole"
+    },
+    {
+     "nl": "Starlet Joy",
+     "en": "Starlet Joy",
+     "gender": "f",
+     "who": "Kreeg net haar eerste rol",
+     "look": "a hopeful young starlet of about twenty, curly hair with a bow, polka-dot dress, wide eager smile"
+    }
+   ],
+   "week": {
+    "nl": [
+     "De film die niemand mocht zien",
+     "De stunt die misging",
+     "De stem op de geluidsband",
+     "De laatste scène van Gold"
+    ],
+    "en": [
+     "The Film Nobody Was Allowed to See",
+     "The Stunt That Went Wrong",
+     "The Voice on the Soundtrack",
+     "Gold's Final Scene"
+    ]
+   },
+   "medal": {
+    "nl": [
+     "Het doek is gevallen",
+     "Maak alle delen van Paradise Pictures af"
+    ],
+    "en": [
+     "The End of the Picture",
+     "Finish every part of Paradise Pictures"
+    ]
+   },
+   "campaign": [
+    {
+     "key": "filmstudio",
+     "nl": {
+      "title": "Deel I · De laatste opname",
+      "intro": "Paradise Pictures, Hollywood, 1931. De studio draait zijn eerste geluidsfilm. Na de laatste opname van de dag ligt studiobaas Samuel Gold in de projectiezaal, terwijl de film nog loopt.",
+      "outro": "De projector staat stil en de studiobaas is dood. De film is nog lang niet af.",
+      "briefing": "Een studio is één grote hal met veel deuren. Begin bij wie zegt in welke ruimte hij was; \"direct naast\" de schijnwerper telt alleen recht ernaast, nooit schuin.",
+      "cases": [
+       [
+        "De laatste opname",
+        "Opname zevenenveertig was eindelijk goed. Het was ook de laatste.",
+        "🎬 Klapbord"
+       ],
+       [
+        "De projectiezaal",
+        "Toen ze de studiobaas vonden, liep de film nog. Hij had het einde niet gezien.",
+        "📽️ Projector"
+       ],
+       [
+        "Regisseur Baxter roept stop",
+        "Hij riep de hele dag stop. Om zes uur riep hij niets.",
+        "📣 Megafoon"
+       ],
+       [
+        "De schijnwerper",
+        "Om zes uur gingen alle lampen uit. Eén lamp was een uur later nog warm.",
+        "💡 Gloeilamp"
+       ],
+       [
+        "Filmster Vivian wacht",
+        "Ze wachtte op haar laatste scène, zei ze. Haar make-up was er al af.",
+        "💄 Lippenstift"
+       ],
+       [
+        "De filmspoel",
+        "In de projector zat spoel drie. Spoel twee lag op de vloer.",
+        "🎞️ Filmspoel"
+       ],
+       [
+        "Cameraman Lenny draait door",
+        "Zijn camera liep nog een minuut na de laatste opname. Niemand had erom gevraagd.",
+        "🎥 Filmcamera"
+       ],
+       [
+        "Na zessen",
+        "Om zes uur ging de poort dicht. Om zeven uur ging hij nog één keer open.",
+        "🔑 Poortsleutel"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part I · The Last Take",
+      "intro": "Paradise Pictures, Hollywood, 1931. The studio is shooting its first talking picture. After the last take of the day, studio boss Samuel Gold lies in the screening room while the film is still running.",
+      "outro": "The projector has stopped and the studio boss is dead. The picture is far from finished.",
+      "briefing": "A studio is one big hall with many doors. Start with whoever says which room they were in; “directly next to” the spotlight only counts straight beside it, never diagonally.",
+      "cases": [
+       [
+        "The Last Take",
+        "Take forty-seven was finally good. It was also the last.",
+        "🎬 Clapperboard"
+       ],
+       [
+        "The Screening Room",
+        "When they found the studio boss, the film was still running. He had not seen the ending.",
+        "📽️ Projector"
+       ],
+       [
+        "Director Baxter Calls Cut",
+        "He called cut all day. At six he called nothing.",
+        "📣 Megaphone"
+       ],
+       [
+        "The Spotlight",
+        "At six all the lights went off. An hour later one lamp was still warm.",
+        "💡 Light bulb"
+       ],
+       [
+        "Film Star Vivian Waits",
+        "She was waiting for her last scene, she said. Her make-up was already off.",
+        "💄 Lipstick"
+       ],
+       [
+        "The Film Reel",
+        "Reel three was in the projector. Reel two lay on the floor.",
+        "🎞️ Film reel"
+       ],
+       [
+        "Cameraman Lenny Keeps Rolling",
+        "His camera ran for another minute after the last take. Nobody had asked for it.",
+        "🎥 Film camera"
+       ],
+       [
+        "After Six",
+        "At six the gate closed. At seven it opened one more time.",
+        "🔑 Gate key"
+       ]
+      ]
+     }
+    },
+    {
+     "key": "filmstudio-2",
+     "nl": {
+      "title": "Deel II · De verdwenen filmrol",
+      "intro": "De enige kopie van de nieuwe film is weg. Het blik stond in het archief, achter slot. De première is over een week.",
+      "outro": "De filmrol ligt weer in het blik. Eén scène is eruit geknipt, en jij weet door wie.",
+      "briefing": "In een studio wijst iedereen naar iemand anders. Een verklaring over twee mensen los je op door eerst één van de twee vast te zetten.",
+      "cases": [
+       [
+        "Het lege blik",
+        "Op het blik staat de titel van de film. Erin zit niets.",
+        "🗃️ Filmblik"
+       ],
+       [
+        "Agent Sid belt",
+        "Hij belde om over de film te praten. Niemand had hem nog verteld dat die weg was.",
+        "☎️ Telefoon"
+       ],
+       [
+        "Het archief",
+        "Het archief gaat open met één sleutel. Die hangt in de directiekamer, aan een spijker.",
+        "🗝️ Archiefsleutel"
+       ],
+       [
+        "Schrijfster Peggy herschrijft",
+        "Ze herschreef het einde voor de vierde keer. Nu zat er een diefstal in.",
+        "⌨️ Typemachine"
+       ],
+       [
+        "De montagekamer",
+        "Op de vloer lagen snippers film. Allemaal uit dezelfde scène.",
+        "✂️ Montageschaar"
+       ],
+       [
+        "Starlet Joy ziet iets",
+        "Ze zag iemand lopen met een blik onder de arm. Ze dacht dat het koekjes waren.",
+        "🍪 Koekblik"
+       ],
+       [
+        "De nachtwaker",
+        "De nachtwaker liep elk uur een ronde. Om drie uur sloeg hij er één over.",
+        "🔦 Zaklamp"
+       ],
+       [
+        "Nog een week",
+        "De affiches hangen al in de hele stad. De film ligt nog nergens.",
+        "🖼️ Filmaffiche"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part II · The Missing Reel",
+      "intro": "The only copy of the new picture is gone. The can was in the film vault, under lock and key. The premiere is in a week.",
+      "outro": "The reel is back in its can. One scene has been cut out, and you know by whom.",
+      "briefing": "In a studio everyone points at someone else. Solve a statement about two people by fixing one of the two first.",
+      "cases": [
+       [
+        "The Empty Can",
+        "The title of the picture is on the can. There is nothing inside.",
+        "🗃️ Film can"
+       ],
+       [
+        "Agent Sid Calls",
+        "He called to talk about the picture. Nobody had told him yet that it was gone.",
+        "☎️ Telephone"
+       ],
+       [
+        "The Film Vault",
+        "The film vault opens with one key. It hangs in the office, on a nail.",
+        "🗝️ Vault key"
+       ],
+       [
+        "Writer Peggy Rewrites",
+        "She rewrote the ending for the fourth time. Now there was a theft in it.",
+        "⌨️ Typewriter"
+       ],
+       [
+        "The Cutting Room",
+        "Scraps of film lay on the floor. All from the same scene.",
+        "✂️ Editing scissors"
+       ],
+       [
+        "Starlet Joy Sees Something",
+        "She saw someone walking with a can under their arm. She thought it held biscuits.",
+        "🍪 Biscuit tin"
+       ],
+       [
+        "The Night Watchman",
+        "The night watchman walked a round every hour. At three he skipped one.",
+        "🔦 Torch"
+       ],
+       [
+        "One More Week",
+        "The posters are already up all over town. The picture is nowhere.",
+        "🖼️ Film poster"
+       ]
+      ]
+     }
+    },
+    {
+     "key": "filmstudio-3",
+     "nl": {
+      "title": "Deel III · De stuntscène",
+      "intro": "Een sprong van het dak van de saloon op de buitenset, honderd keer geoefend. Vandaag ging het mis. Stuntman Hank zweert dat iemand aan de mat heeft gezeten.",
+      "outro": "De mat ligt weer op zijn plek en Stuntman Hank loopt alweer. De volgende sprong gaat goed.",
+      "briefing": "Bij een stunt kijkt iedereen omhoog, niet naar elkaar. Wie zegt waar hij níét was, vertelt je ook iets: streep die ruimte meteen weg.",
+      "cases": [
+       [
+        "Honderd keer geoefend",
+        "Honderd sprongen, honderd keer goed. De honderdeerste niet.",
+        "🪜 Ladder"
+       ],
+       [
+        "Stuntman Hank valt",
+        "Hij sprong van zes meter hoog. De mat lag een meter verderop.",
+        "🛏️ Valmat"
+       ],
+       [
+        "Het dak van de saloon",
+        "Het dak van de saloon is van karton. Eén plank was van hout.",
+        "🪵 Plank"
+       ],
+       [
+        "Regisseur Baxter wil het nog eens",
+        "Hij liet de sprong elf keer overdoen. Pas bij de twaalfde keek hij weg.",
+        "⏱️ Stopwatch"
+       ],
+       [
+        "Het paard",
+        "Het paard schrok van een knal. In het script stond geen schot.",
+        "🐎 Paard"
+       ],
+       [
+        "Grimeuse Rita plakt een snor",
+        "Ze plakte een snor op een tweede stuntman. Er was maar één stuntman.",
+        "🥸 Plaksnor"
+       ],
+       [
+        "Het touw",
+        "Het touw kon tweehonderd kilo dragen. Het knapte onder zeventig.",
+        "🪢 Touw"
+       ],
+       [
+        "Cameraman Lenny filmt alles",
+        "Hij filmde de sprong van twee kanten. Op de tweede rol staat iemand achter de schoorsteen.",
+        "🎞️ Tweede rol"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part III · The Stunt Scene",
+      "intro": "A jump from the roof of the saloon on the backlot, rehearsed a hundred times. Today it went wrong. Stuntman Hank swears someone touched the mat.",
+      "outro": "The mat is back in its place and Stuntman Hank is walking again. The next jump goes fine.",
+      "briefing": "During a stunt everyone looks up, not at each other. Whoever says where they were not tells you something too: cross that room off straight away.",
+      "cases": [
+       [
+        "Rehearsed a Hundred Times",
+        "A hundred jumps, a hundred times right. The hundred and first was not.",
+        "🪜 Ladder"
+       ],
+       [
+        "Stuntman Hank Falls",
+        "He jumped from six metres up. The mat lay a metre further on.",
+        "🛏️ Crash mat"
+       ],
+       [
+        "The Saloon Roof",
+        "The saloon roof is made of cardboard. One plank was made of wood.",
+        "🪵 Plank"
+       ],
+       [
+        "Director Baxter Wants Another Take",
+        "He had the jump redone eleven times. Only on the twelfth did he look away.",
+        "⏱️ Stopwatch"
+       ],
+       [
+        "The Horse",
+        "The horse shied at a bang. There was no shot in the script.",
+        "🐎 Horse"
+       ],
+       [
+        "Make-up Artist Rita Glues a Moustache",
+        "She glued a moustache onto a second stuntman. There was only one stuntman.",
+        "🥸 Fake moustache"
+       ],
+       [
+        "The Rope",
+        "The rope could hold two hundred kilos. It snapped under seventy.",
+        "🪢 Rope"
+       ],
+       [
+        "Cameraman Lenny Films Everything",
+        "He filmed the jump from two sides. On the second reel someone stands behind the chimney.",
+        "🎞️ Second reel"
+       ]
+      ]
+     }
+    },
+    {
+     "key": "filmstudio-4",
+     "nl": {
+      "title": "Deel IV · De geluidsfilm",
+      "intro": "De eerste film met geluid. De camera staat in een geluiddichte kast en de microfoons hangen verstopt in bloemstukken. Ze horen meer dan de bedoeling was.",
+      "outro": "De opnames zijn gemonteerd en de geluidsstudio is stil. Het gesprek op de laatste plaat is geen geheim meer.",
+      "briefing": "Op de geluidsset mag niemand een woord zeggen, dus let op wie direct naast wie stond. Zet eerst de verdachte met de kleinste keus neer; de rest volgt.",
+      "cases": [
+       [
+        "Stilte op de set",
+        "Boven de deur brandt een rood lampje: stilte. Achter de deur werd gefluisterd.",
+        "🔴 Rood lampje"
+       ],
+       [
+        "De microfoon in de bloemen",
+        "In het bloemstuk zat een microfoon. Niemand van het geluid had hem daar gehangen.",
+        "💐 Bloemstuk"
+       ],
+       [
+        "Filmster Vivian krijgt een stem",
+        "In stomme films was ze een ster. In de geluidsfilm zingt iemand anders voor haar.",
+        "🎵 Bladmuziek"
+       ],
+       [
+        "De ijskast",
+        "De camera staat in een kast die ze de ijskast noemen. Die middag stonden er twee mensen in.",
+        "🧊 IJskast"
+       ],
+       [
+        "Agent Sid fluistert",
+        "Hij fluisterde een bod in het oor van de ster. De microfoon fluisterde mee.",
+        "🎧 Koptelefoon"
+       ],
+       [
+        "De wasplaat",
+        "Het geluid staat op een wasplaat, gelijk met de film. Eén plaat liep drie seconden achter.",
+        "💿 Wasplaat"
+       ],
+       [
+        "Schrijfster Peggy luistert terug",
+        "Ze schreef elke zin zelf. Eén zin op de opname kende ze niet.",
+        "📝 Script"
+       ],
+       [
+        "Wat de microfoon hoorde",
+        "Op de opname hoor je de scène. En daarachter een deur die dichtgaat.",
+        "🔊 Luidspreker"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part IV · The Talking Picture",
+      "intro": "The first picture with sound. The camera stands in a soundproof box and the microphones hang hidden in flower arrangements. They hear more than they were meant to.",
+      "outro": "The takes are edited and the sound booth is quiet. The conversation on the last disc is no secret any more.",
+      "briefing": "On the sound stage nobody may say a word, so watch who stood directly next to whom. Place the suspect with the fewest options first; the rest follows.",
+      "cases": [
+       [
+        "Quiet on the Set",
+        "Above the door burns a red light: silence. Behind the door someone was whispering.",
+        "🔴 Red light"
+       ],
+       [
+        "The Microphone in the Flowers",
+        "There was a microphone in the flower arrangement. Nobody from the sound crew had put it there.",
+        "💐 Flower arrangement"
+       ],
+       [
+        "Film Star Vivian Gets a Voice",
+        "In silent pictures she was a star. In the talking picture someone else sings for her.",
+        "🎵 Sheet music"
+       ],
+       [
+        "The Icebox",
+        "The camera stands in a box they call the icebox. That afternoon two people stood in it.",
+        "🧊 Icebox"
+       ],
+       [
+        "Agent Sid Whispers",
+        "He whispered an offer into the star's ear. The microphone whispered along.",
+        "🎧 Headphones"
+       ],
+       [
+        "The Wax Disc",
+        "The sound is on a wax disc, in step with the film. One disc ran three seconds behind.",
+        "💿 Wax disc"
+       ],
+       [
+        "Writer Peggy Listens Back",
+        "She wrote every line herself. One line on the recording she did not know.",
+        "📝 Script"
+       ],
+       [
+        "What the Microphone Heard",
+        "On the recording you hear the scene. And behind it, a door closing.",
+        "🔊 Loudspeaker"
+       ]
+      ]
+     }
+    },
+    {
+     "key": "filmstudio-5",
+     "nl": {
+      "title": "Deel V · De auditie",
+      "intro": "Honderd kandidaten voor één rol, in een rij tot aan de poort. Elk krijgt drie minuten voor de camera. Eén van hen komt niet terug van de proefopname.",
+      "outro": "De rol is vergeven en de rij is naar huis. Eén proefopname wordt nooit vertoond.",
+      "briefing": "Bij een auditie staat iedereen in de rij, maar niet iedereen in dezelfde ruimte. Begin bij wie zegt alleen te zijn geweest: dat ruimt meteen een hele ruimte op.",
+      "cases": [
+       [
+        "Honderd kandidaten",
+        "Honderd namen op de lijst. Aan het eind van de dag nog negenennegentig.",
+        "📋 Kandidatenlijst"
+       ],
+       [
+        "Starlet Joy kijkt mee",
+        "Vorig jaar stond zij nog in die rij. Nu kijkt ze wie er achter haar aan komt.",
+        "🎀 Haarstrik"
+       ],
+       [
+        "De proefopname",
+        "Drie minuten voor de camera. De film duurt vier minuten.",
+        "🎞️ Proefopname"
+       ],
+       [
+        "Grimeuse Rita maakt op",
+        "Ze maakte honderd gezichten op. Eén gezicht kende ze al.",
+        "🖌️ Poederkwast"
+       ],
+       [
+        "Agent Sid tekent",
+        "Hij liet een kandidaat tekenen voor de auditie begon. Die kandidaat kwam niet opdagen.",
+        "🖋️ Vulpen"
+       ],
+       [
+        "Nummer zeventien",
+        "Elke kandidaat kreeg een nummer op zijn borst. Nummer zeventien liep twee keer langs.",
+        "🔢 Nummerbord"
+       ],
+       [
+        "Filmster Vivian blijft kijken",
+        "Ze kwam even kijken wie haar zou opvolgen. Ze bleef tot het donker was.",
+        "🧣 Bontkraag"
+       ],
+       [
+        "Eén jas aan de kapstok",
+        "Om vijf uur hing er nog één jas aan de kapstok. Niemand kwam hem halen.",
+        "🧥 Regenjas"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part V · The Audition",
+      "intro": "A hundred hopefuls for one part, in a queue all the way to the studio gate. Each gets three minutes in front of the camera. One of them does not come back from the screen test.",
+      "outro": "The part has been cast and the queue has gone home. One screen test will never be shown.",
+      "briefing": "At an audition everyone is in the queue, but not everyone is in the same room. Start with whoever says they were alone: that clears a whole room at once.",
+      "cases": [
+       [
+        "A Hundred Hopefuls",
+        "A hundred names on the list. By the end of the day, ninety-nine.",
+        "📋 Audition list"
+       ],
+       [
+        "Starlet Joy Watches",
+        "Last year she was still in that queue. Now she watches who is coming up behind her.",
+        "🎀 Hair bow"
+       ],
+       [
+        "The Screen Test",
+        "Three minutes in front of the camera. The film runs four minutes.",
+        "🎞️ Screen test"
+       ],
+       [
+        "Make-up Artist Rita Does the Faces",
+        "She made up a hundred faces. One face she already knew.",
+        "🖌️ Powder brush"
+       ],
+       [
+        "Agent Sid Signs a Client",
+        "He had a hopeful sign before the audition began. That hopeful never turned up.",
+        "🖋️ Fountain pen"
+       ],
+       [
+        "Number Seventeen",
+        "Every hopeful got a number on their chest. Number seventeen went past twice.",
+        "🔢 Number card"
+       ],
+       [
+        "Film Star Vivian Keeps Watching",
+        "She came by to see who would replace her. She stayed until it was dark.",
+        "🧣 Fur collar"
+       ],
+       [
+        "One Coat on the Rack",
+        "At five one coat was still hanging on the rack. Nobody came to fetch it.",
+        "🧥 Raincoat"
+       ]
+      ]
+     }
+    },
+    {
+     "key": "filmstudio-6",
+     "nl": {
+      "title": "Deel VI · De brand in het archief",
+      "intro": "Oude films zijn van nitraat, en nitraat brandt sneller dan papier. Midden in de nacht slaan de vlammen uit het archief. Iemand wist hoe snel het zou gaan.",
+      "outro": "Het vuur is uit en het archief is zwart. Een ongeluk was het niet.",
+      "briefing": "Na een brand weet niemand meer precies waar hij stond. Gebruik het potlood: streep vakjes weg die niet kunnen en kijk wat overblijft.",
+      "cases": [
+       [
+        "Nitraat",
+        "Op elke doos staat: niet roken. Op de vloer lag een peuk.",
+        "🚭 Rookverbod"
+       ],
+       [
+        "De brandweer",
+        "De brandweer was er in tien minuten. Het archief brandde in vijf.",
+        "🚒 Brandweerwagen"
+       ],
+       [
+        "Cameraman Lenny redt een doos",
+        "Hij rende het vuur in voor één doos. Er zat zijn eigen werk in.",
+        "📦 Filmdoos"
+       ],
+       [
+        "De brandbel",
+        "De bel ging om twee uur. Om half twee rook de nachtwaker al iets.",
+        "🔔 Brandbel"
+       ],
+       [
+        "Schrijfster Peggy werkte laat",
+        "Ze werkte tot middernacht aan het script. In het archief, zei ze eerst.",
+        "🗒️ Kladblok"
+       ],
+       [
+        "Stuntman Hank en het vuur",
+        "Voor de camera loopt hij dwars door vuur. Vannacht liep hij er ver omheen.",
+        "🧯 Brandblusser"
+       ],
+       [
+        "De lijst van het archief",
+        "Volgens de lijst stonden er driehonderd blikken. In de as lagen er tweehonderd.",
+        "📒 Archiefboek"
+       ],
+       [
+        "Regisseur Baxter kijkt toe",
+        "Al zijn oude films gingen in vlammen op. Hij leek opgelucht.",
+        "👓 Ronde bril"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part VI · The Fire in the Film Vault",
+      "intro": "Old films are made of nitrate, and nitrate burns faster than paper. In the middle of the night flames shoot out of the film vault. Someone knew how fast it would go.",
+      "outro": "The fire is out and the film vault is black. It was no accident.",
+      "briefing": "After a fire nobody knows exactly where they stood. Use the pencil: cross off squares that cannot be and see what is left.",
+      "cases": [
+       [
+        "Nitrate",
+        "Every box says: no smoking. A cigarette end lay on the floor.",
+        "🚭 No-smoking sign"
+       ],
+       [
+        "The Fire Brigade",
+        "The fire brigade was there in ten minutes. The film vault burned out in five.",
+        "🚒 Fire engine"
+       ],
+       [
+        "Cameraman Lenny Saves a Box",
+        "He ran into the fire for one box. It held his own work.",
+        "📦 Film box"
+       ],
+       [
+        "The Fire Bell",
+        "The bell rang at two. At half past one the night watchman could already smell something.",
+        "🔔 Fire bell"
+       ],
+       [
+        "Writer Peggy Worked Late",
+        "She worked on the script until midnight. In the film vault, she said at first.",
+        "🗒️ Notepad"
+       ],
+       [
+        "Stuntman Hank and the Fire",
+        "In front of the camera he walks straight through fire. Last night he gave it a wide berth.",
+        "🧯 Fire extinguisher"
+       ],
+       [
+        "The Vault List",
+        "According to the list there were three hundred cans. In the ashes there were two hundred.",
+        "📒 Vault ledger"
+       ],
+       [
+        "Director Baxter Looks On",
+        "All his old films went up in flames. He seemed relieved.",
+        "👓 Round glasses"
+       ]
+      ]
+     }
+    },
+    {
+     "key": "filmstudio-7",
+     "nl": {
+      "title": "Deel VII · Op locatie",
+      "intro": "Een western in de woestijn, een dag rijden van de studio. Tien wagens, twintig paarden en een stadje van karton onder de zon. Er is één watervat te weinig.",
+      "outro": "De wagens rijden terug naar Hollywood. Het watervat is gevonden, half vol en ver van het kamp.",
+      "briefing": "Het bord wordt groter en de verklaringen worden zuiniger. Staat in het rapport dat een ruimte leeg was, dan valt die hele ruimte af voor iedereen.",
+      "cases": [
+       [
+        "Tien wagens",
+        "Tien wagens reden de woestijn in. Er gingen negen watervaten mee.",
+        "🛢️ Watervat"
+       ],
+       [
+        "Stuntman Hank rijdt",
+        "Hij gooide de postkoets twee keer om. Eén keer stond in het script.",
+        "🐎 Postkoets"
+       ],
+       [
+        "De middagzon",
+        "Om twaalf uur stond de zon recht boven de set. Toch viel er één lange schaduw.",
+        "☀️ Middagzon"
+       ],
+       [
+        "Filmster Vivian in het zand",
+        "Ze weigerde de woestijn in te gaan. Toch zat er zand in haar laarzen.",
+        "👢 Rijlaars"
+       ],
+       [
+        "Het kampvuur",
+        "Rond het vuur zong de hele ploeg. Bij het refrein ontbrak één stem.",
+        "🪕 Banjo"
+       ],
+       [
+        "Grimeuse Rita poedert",
+        "Ze poederde elke ochtend tien gezichten. Op één gezicht zat al poeder, van gisteravond.",
+        "🪞 Handspiegel"
+       ],
+       [
+        "De waterwagen",
+        "De waterwagen stond de hele nacht bij het kamp. Bij zonsopgang stond hij een kilometer verderop.",
+        "🚚 Waterwagen"
+       ],
+       [
+        "Agent Sid seint de studio",
+        "Er was geen telefoon binnen honderd mijl. Toch wist de studio het binnen een uur.",
+        "✉️ Telegram"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part VII · On Location",
+      "intro": "A western in the desert, a day's drive from the studio. Ten wagons, twenty horses and a cardboard town under the sun. There is one water barrel too few.",
+      "outro": "The wagons drive back to Hollywood. The water barrel has been found, half full and far from the camp.",
+      "briefing": "The board gets bigger and the statements get sparser. If the report says a room was empty, that whole room is ruled out for everyone.",
+      "cases": [
+       [
+        "Ten Wagons",
+        "Ten wagons drove into the desert. Nine water barrels went with them.",
+        "🛢️ Water barrel"
+       ],
+       [
+        "Stuntman Hank Drives",
+        "He overturned the stagecoach twice. Once was in the script.",
+        "🐎 Stagecoach"
+       ],
+       [
+        "The Midday Sun",
+        "At twelve the sun stood straight above the set. Still, one long shadow fell.",
+        "☀️ Midday sun"
+       ],
+       [
+        "Film Star Vivian in the Sand",
+        "She refused to go into the desert. Still, there was sand in her boots.",
+        "👢 Riding boot"
+       ],
+       [
+        "The Campfire",
+        "Around the fire the whole crew sang. One voice was missing from the chorus.",
+        "🪕 Banjo"
+       ],
+       [
+        "Make-up Artist Rita Powders",
+        "Every morning she powdered ten faces. One face already had powder on it, from last night.",
+        "🪞 Hand mirror"
+       ],
+       [
+        "The Water Truck",
+        "The water truck stood by the camp all night. At sunrise it stood a kilometre further on.",
+        "🚚 Water truck"
+       ],
+       [
+        "Agent Sid Wires the Studio",
+        "There was no telephone within a hundred miles. Still, the studio knew within an hour.",
+        "✉️ Telegram"
+       ]
+      ]
+     }
+    },
+    {
+     "key": "filmstudio-8",
+     "nl": {
+      "title": "Deel VIII · Het grote gala",
+      "intro": "De film is af en vanavond is de première. Op het gala in de studiohal gaan de lampen nog één keer aan, met dezelfde gezichten als op de avond van de laatste opname.",
+      "outro": "Van Dam zet zijn hoed op, knikt naar de lege regiestoel en loopt door de poort de nacht van Hollywood in. Het einde klopt eindelijk.",
+      "briefing": "De laatste zaken, bijna allemaal op het grote bord. Blijf niet hangen bij wie het lastigst is: zet eerst de anderen neer, dan blijft er voor de laatste vaak maar één vakje over.",
+      "cases": [
+       [
+        "De rode loper",
+        "Duizend mensen langs de rode loper. Eén van hen liep mee naar binnen.",
+        "🎟️ Premièrekaart"
+       ],
+       [
+        "Filmster Vivian schittert",
+        "Iedereen keek naar haar jurk. Niemand keek naar haar handen.",
+        "💎 Broche"
+       ],
+       [
+        "Schrijfster Peggy ziet haar einde",
+        "Ze schreef het einde zeven keer. Op het doek zag ze een achtste.",
+        "📜 Slotscène"
+       ],
+       [
+        "Starlet Joy wordt ontdekt",
+        "Iedereen wilde met haar op de foto. Eén fotograaf wilde alleen haar tasje.",
+        "👛 Avondtasje"
+       ],
+       [
+        "Regisseur Baxter bedankt",
+        "Hij bedankte de hele ploeg bij naam. Eén naam sprak hij uit als een vraag.",
+        "🎙️ Microfoon"
+       ],
+       [
+        "Agent Sid wil meer",
+        "Hij kreeg tien procent van alles. Vanavond wilde hij de rest.",
+        "💵 Dollarbiljet"
+       ],
+       [
+        "Cameraman Lenny draait af",
+        "Hij draaide de film zelf af in de cabine. Er zat één rol meer in dan er gemonteerd was.",
+        "📽️ Filmprojector"
+       ],
+       [
+        "Het grote gala",
+        "Waar het begon, in de projectiezaal. Daar eindigt het ook.",
+        "🎞️ Laatste spoel"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part VIII · The Grand Gala",
+      "intro": "The picture is finished and tonight is the premiere. At the gala on the sound stage the lights go on one more time, with the same faces as on the evening of the last take.",
+      "outro": "Van Dam puts on his hat, nods at the empty director's chair and walks through the studio gate into the Hollywood night. At last, the ending works.",
+      "briefing": "The last cases, nearly all on the big board. Do not get stuck on the hardest one: place the others first, and the last one often has only one square left.",
+      "cases": [
+       [
+        "The Red Carpet",
+        "A thousand people along the red carpet. One of them followed the guests inside.",
+        "🎟️ Premiere ticket"
+       ],
+       [
+        "Film Star Vivian Shines",
+        "Everyone looked at her dress. Nobody looked at her hands.",
+        "💎 Brooch"
+       ],
+       [
+        "Writer Peggy Sees Her Ending",
+        "She wrote the ending seven times. On the screen she saw an eighth.",
+        "📜 Final scene"
+       ],
+       [
+        "Starlet Joy Is Discovered",
+        "Everyone wanted a photo with her. One photographer only wanted her handbag.",
+        "👛 Evening bag"
+       ],
+       [
+        "Director Baxter Gives Thanks",
+        "He thanked the whole crew by name. One name he said like a question.",
+        "🎙️ Microphone"
+       ],
+       [
+        "Agent Sid Wants More",
+        "He got ten per cent of everything. Tonight he wanted the rest.",
+        "💵 Dollar bill"
+       ],
+       [
+        "Cameraman Lenny Runs the Film",
+        "He ran the film himself in the projection booth. There was one reel more in it than had been edited.",
+        "📽️ Film projector"
+       ],
+       [
+        "The Grand Gala",
+        "Where it began, in the screening room. That is where it ends.",
+        "🎞️ Last reel"
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  "karavaan": {
+   "era": "a caravanserai at a desert oasis on the old spice route, around 1900",
+   "theme": {
+    "nl": {
+     "title": "Karavanserai Al-Nour",
+     "short": "Karavaan",
+     "victimName": "Karavaanleider Idris",
+     "roomWord": "ruimte",
+     "roomWordPlural": "ruimtes",
+     "tagline": "Een oase op de oude specerijenroute. Twaalf kamelen, acht reizigers, en een karavaanleider die niet meer vertrekt.",
+     "intro": "Karavanserai Al-Nour, een oase op de oude specerijenroute. De karavaan rust één nacht binnen de muren. Bij zonsopgang ligt karavaanleider Idris bij de kamelen, en de poort is de hele nacht dicht geweest.",
+     "outro": "De karavaan trekt verder. Achter de poort blijft één geheim minder achter."
+    },
+    "en": {
+     "title": "The Caravanserai of Al-Nour",
+     "short": "Caravan",
+     "victimName": "Caravan Leader Idris",
+     "roomWord": "room",
+     "roomWordPlural": "rooms",
+     "tagline": "An oasis on the old spice route. Twelve camels, eight travellers, and a caravan leader who never sets out again.",
+     "intro": "The caravanserai of Al-Nour, an oasis on the old spice route. The caravan rests one night inside the walls. At sunrise caravan leader Idris lies by the camels, and the gate has been shut all night.",
+     "outro": "The caravan moves on. Behind the gate, there is one secret fewer."
+    }
+   },
+   "rooms": [
+    {
+     "nl": "Binnenplaats",
+     "article": "de",
+     "en": "Courtyard"
+    },
+    {
+     "nl": "Bazaar",
+     "article": "de",
+     "en": "Bazaar"
+    },
+    {
+     "nl": "Theehuis",
+     "article": "het",
+     "en": "Tea House"
+    },
+    {
+     "nl": "Badhuis",
+     "article": "het",
+     "en": "Bathhouse"
+    },
+    {
+     "nl": "Waterput",
+     "article": "de",
+     "en": "Well"
+    },
+    {
+     "nl": "Gastenkamer",
+     "article": "de",
+     "en": "Guest Room"
+    },
+    {
+     "nl": "Tapijtwinkel",
+     "article": "de",
+     "en": "Carpet Shop"
+    },
+    {
+     "nl": "Poort",
+     "article": "de",
+     "en": "Gate"
+    },
+    {
+     "nl": "Dakterras",
+     "article": "het",
+     "en": "Roof Terrace"
+    },
+    {
+     "nl": "Stal",
+     "article": "de",
+     "en": "Stable"
+    },
+    {
+     "nl": "Keuken",
+     "article": "de",
+     "en": "Kitchen"
+    },
+    {
+     "nl": "Voorraadkamer",
+     "article": "de",
+     "en": "Storeroom"
+    }
+   ],
+   "furniture": [
+    {
+     "id": "tapijt",
+     "nl": "een tapijt",
+     "en": "a carpet"
+    },
+    {
+     "id": "specerijen",
+     "nl": "een mand specerijen",
+     "en": "a basket of spices"
+    },
+    {
+     "id": "kruik",
+     "nl": "een waterkruik",
+     "en": "a water jar"
+    },
+    {
+     "id": "zadel",
+     "nl": "een kameelzadel",
+     "en": "a camel saddle"
+    },
+    {
+     "id": "weegschaal",
+     "nl": "een koperen weegschaal",
+     "en": "a brass scale"
+    }
+   ],
+   "suspects": [
+    {
+     "nl": "Koopvrouw Layla",
+     "en": "Merchant Layla",
+     "gender": "f",
+     "who": "Handelt in saffraan en kaneel",
+     "look": "a shrewd spice merchant in her forties, patterned headscarf, gold bangles, embroidered robe, a small brass scale"
+    },
+    {
+     "nl": "Gids Tariq",
+     "en": "Guide Tariq",
+     "gender": "m",
+     "who": "Kent elke duin tussen hier en de zee",
+     "look": "a desert guide in his thirties, indigo turban wrapped down to the chin, keen eyes, camel stick"
+    },
+    {
+     "nl": "Tapijthandelaar Yusuf",
+     "en": "Carpet Seller Yusuf",
+     "gender": "m",
+     "who": "Verkoopt tapijten aan iedereen die stilstaat",
+     "look": "a jovial carpet merchant in his fifties, round cap, grey beard, striped kaftan, rolled carpet under his arm"
+    },
+    {
+     "nl": "Reizigster Beatrix",
+     "en": "Traveller Beatrix",
+     "gender": "f",
+     "who": "Reist alleen en schrijft er een boek over",
+     "look": "a European woman traveller in her thirties, pith helmet with a scarf, linen jacket, travel journal"
+    },
+    {
+     "nl": "Theeschenker Hamid",
+     "en": "Tea Server Hamid",
+     "gender": "m",
+     "who": "Schenkt de thee en hoort elk gesprek",
+     "look": "a young tea server in his twenties, small cap, embroidered vest, ornate brass teapot held high"
+    },
+    {
+     "nl": "Sterrenkijker Zahra",
+     "en": "Stargazer Zahra",
+     "gender": "f",
+     "who": "Leest de weg in de sterren",
+     "look": "an astronomer and navigator in her forties, head scarf with tiny stars, brass astrolabe in her hands"
+    },
+    {
+     "nl": "Bewaker Karim",
+     "en": "Guard Karim",
+     "gender": "m",
+     "who": "Bewaakt de poort, de hele nacht",
+     "look": "a stern caravanserai guard in his forties, thick moustache, sash, sheathed curved dagger, ring of keys"
+    },
+    {
+     "nl": "Dichteres Samira",
+     "en": "Poet Samira",
+     "gender": "f",
+     "who": "Schrijft gedichten over elke reiziger",
+     "look": "a young poet in her twenties, flowing scarf, kohl-lined eyes, reed pen and a small book of verses"
+    }
+   ],
+   "week": {
+    "nl": [
+     "De saffraan van Al-Nour",
+     "De nacht van duizend sterren",
+     "Het tapijt met twee patronen",
+     "De laatste karavaan"
+    ],
+    "en": [
+     "The Saffron of Al-Nour",
+     "The Night of a Thousand Stars",
+     "The Carpet with Two Patterns",
+     "The Last Caravan"
+    ]
+   },
+   "medal": {
+    "nl": [
+     "De karavaan trekt verder",
+     "Maak alle delen van Karavanserai Al-Nour af"
+    ],
+    "en": [
+     "The Caravan Moves On",
+     "Finish every part of The Caravanserai of Al-Nour"
+    ]
+   },
+   "campaign": [
+    {
+     "key": "karavaan",
+     "nl": {
+      "title": "Deel I · De poort gaat dicht",
+      "intro": "Karavanserai Al-Nour, een oase op de oude specerijenroute. De karavaan rust één nacht binnen de muren. Bij zonsopgang ligt karavaanleider Idris bij de kamelen, en de poort is de hele nacht dicht geweest.",
+      "outro": "De karavaanleider is dood en de poort blijft dicht. Niemand vertrekt voordat het verhaal klopt.",
+      "briefing": "Een karavanserai is één binnenplaats met veel deuren. Begin bij wie zegt in welke ruimte hij was; \"direct naast\" de waterkruik telt alleen recht ernaast, nooit schuin.",
+      "cases": [
+       [
+        "De poort gaat dicht",
+        "Bij zonsondergang ging de poort dicht. Bij zonsopgang was niemand vertrokken, en toch was er één reiziger minder.",
+        "🔒 Poortslot"
+       ],
+       [
+        "Twaalf kamelen",
+        "Twaalf kamelen in de stal. Geen van hen maakte die nacht geluid.",
+        "🐪 Kameel"
+       ],
+       [
+        "Bewaker Karim houdt de wacht",
+        "Hij zat de hele nacht bij de poort. De sleutel hing de hele nacht aan zijn riem, zegt hij.",
+        "🗝️ Sleutelbos"
+       ],
+       [
+        "De waterkruik",
+        "Om tien uur was de kruik bij de put vol. Om middernacht was hij leeg.",
+        "🏺 Waterkruik"
+       ],
+       [
+        "Koopvrouw Layla weegt",
+        "Ze woog elke avond haar saffraan. Gisteravond woog ze iets anders.",
+        "⚖️ Koperen weegschaal"
+       ],
+       [
+        "Het kameelzadel",
+        "Het zadel van de karavaanleider lag klaar voor vertrek. Hij wilde weg voordat de poort openging.",
+        "🪢 Zadelriem"
+       ],
+       [
+        "Dichteres Samira schrijft",
+        "Ze schreef die avond een gedicht over de karavaanleider. Het was een afscheid.",
+        "✒️ Rietpen"
+       ],
+       [
+        "Voor zonsopgang",
+        "Om vier uur kraaide de haan. Om drie uur liep er al iemand over het dakterras.",
+        "🐓 Haan"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part I · The Gate Closes",
+      "intro": "The caravanserai of Al-Nour, an oasis on the old spice route. The caravan rests one night inside the walls. At sunrise caravan leader Idris lies by the camels, and the gate has been shut all night.",
+      "outro": "The caravan leader is dead and the gate stays shut. Nobody leaves until the story adds up.",
+      "briefing": "A caravanserai is one courtyard with many doors. Start with whoever says which room they were in; “directly next to” the water jar only counts straight beside it, never diagonally.",
+      "cases": [
+       [
+        "The Gate Closes",
+        "At sunset the gate closed. At sunrise nobody had left, and still there was one traveller fewer.",
+        "🔒 Gate lock"
+       ],
+       [
+        "Twelve Camels",
+        "Twelve camels in the stable. None of them made a sound that night.",
+        "🐪 Camel"
+       ],
+       [
+        "Guard Karim Keeps Watch",
+        "He sat by the gate all night. The key hung on his belt all night, he says.",
+        "🗝️ Bunch of keys"
+       ],
+       [
+        "The Water Jar",
+        "At ten the jar by the well was full. At midnight it was empty.",
+        "🏺 Water jar"
+       ],
+       [
+        "Merchant Layla Weighs",
+        "Every evening she weighed her saffron. Last night she weighed something else.",
+        "⚖️ Brass scale"
+       ],
+       [
+        "The Camel Saddle",
+        "The caravan leader's saddle lay ready for departure. He wanted to leave before the gate opened.",
+        "🪢 Saddle strap"
+       ],
+       [
+        "Poet Samira Writes",
+        "That evening she wrote a poem about the caravan leader. It was a farewell.",
+        "✒️ Reed pen"
+       ],
+       [
+        "Before Sunrise",
+        "At four the cockerel crowed. At three someone was already walking across the roof terrace.",
+        "🐓 Cockerel"
+       ]
+      ]
+     }
+    },
+    {
+     "key": "karavaan-2",
+     "nl": {
+      "title": "Deel II · De verdwenen saffraan",
+      "intro": "Koopvrouw Layla reist met tien zakken saffraan, genoeg voor een huis in de stad. Bij het tellen zijn het er negen. De poort is nog steeds dicht.",
+      "outro": "De tiende zak ligt weer bij de andere negen. Hij is een handvol lichter.",
+      "briefing": "Binnen de muren praat iedereen over iedereen. Een verklaring over twee mensen los je op door eerst één van de twee vast te zetten.",
+      "cases": [
+       [
+        "Tien zakken",
+        "Tien zakken bij aankomst. Negen bij het ontbijt.",
+        "🌸 Saffraanzak"
+       ],
+       [
+        "Gids Tariq laadt af",
+        "Hij laadde de zakken zelf van de kamelen. Hij weet nog welke kameel er één te veel droeg.",
+        "🧭 Kompas"
+       ],
+       [
+        "De voorraadkamer",
+        "De voorraadkamer gaat op slot. Het slot zit aan de binnenkant.",
+        "🔐 Hangslot"
+       ],
+       [
+        "Tapijthandelaar Yusuf rolt op",
+        "Hij rolde die ochtend al zijn tapijten op. Eén tapijt was zwaarder dan gisteren.",
+        "🧶 Opgerold tapijt"
+       ],
+       [
+        "Rode draadjes",
+        "Saffraan is niet meer dan rode draadjes, licht als lucht. Op de keukenvloer lag er één.",
+        "🧵 Saffraandraad"
+       ],
+       [
+        "Reizigster Beatrix noteert",
+        "Ze schrijft alles op wat ze ziet. Over die nacht staat er niets.",
+        "📔 Reisboek"
+       ],
+       [
+        "Negen zakken",
+        "Negen zakken, alle even zwaar. Eén ervan was voor de helft zand.",
+        "⏳ Woestijnzand"
+       ],
+       [
+        "Theeschenker Hamid hoort het",
+        "Hij hoorde iemand over saffraan praten. Een uur voordat die weg was.",
+        "🍯 Suikerpot"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part II · The Missing Saffron",
+      "intro": "Merchant Layla travels with ten sacks of saffron, enough for a house in the city. When they are counted, there are nine. The gate is still shut.",
+      "outro": "The tenth sack is back with the other nine. It is a handful lighter.",
+      "briefing": "Inside the walls everyone talks about everyone. Solve a statement about two people by fixing one of the two first.",
+      "cases": [
+       [
+        "Ten Sacks",
+        "Ten sacks on arrival. Nine at breakfast.",
+        "🌸 Saffron sack"
+       ],
+       [
+        "Guide Tariq Unloads",
+        "He unloaded the sacks from the camels himself. He still remembers which camel carried one too many.",
+        "🧭 Compass"
+       ],
+       [
+        "The Storeroom",
+        "The storeroom locks. The lock is on the inside.",
+        "🔐 Padlock"
+       ],
+       [
+        "Carpet Seller Yusuf Rolls Up",
+        "That morning he rolled up all his carpets. One carpet was heavier than yesterday.",
+        "🧶 Rolled carpet"
+       ],
+       [
+        "Red Threads",
+        "Saffron is nothing but red threads, light as air. One lay on the kitchen floor.",
+        "🧵 Saffron thread"
+       ],
+       [
+        "Traveller Beatrix Takes Notes",
+        "She writes down everything she sees. About that night there is nothing.",
+        "📔 Travel journal"
+       ],
+       [
+        "Nine Sacks",
+        "Nine sacks, all equally heavy. One of them was half sand.",
+        "⏳ Desert sand"
+       ],
+       [
+        "Tea Server Hamid Overhears",
+        "He heard someone talking about saffron. An hour before it was gone.",
+        "🍯 Sugar pot"
+       ]
+      ]
+     }
+    },
+    {
+     "key": "karavaan-3",
+     "nl": {
+      "title": "Deel III · Het theehuis",
+      "intro": "Elke avond zit de hele karavaan in het theehuis bij elkaar. Theeschenker Hamid schenkt, en hoort alles. Eén gesprek hoorde niemand.",
+      "outro": "Het theehuis is leeg en de glazen staan omgekeerd op het blad. Het gesprek dat niemand hoorde, ken jij nu.",
+      "briefing": "In het theehuis kijkt iedereen naar de pot, niet naar elkaar. Wie zegt waar hij níét was, vertelt je ook iets: streep die ruimte meteen weg.",
+      "cases": [
+       [
+        "Drie glazen",
+        "In het theehuis drinkt iedereen drie glazen. Eén gast liet zijn derde staan.",
+        "🍵 Theeglas"
+       ],
+       [
+        "Theeschenker Hamid schenkt",
+        "Hij schenkt van hoog, zodat de thee schuimt. Vanavond trilde zijn hand.",
+        "🫖 Koperen theepot"
+       ],
+       [
+        "Het lege kussen",
+        "Rond de lage tafel lagen acht kussens. Op één ervan had niemand gezeten.",
+        "🛋️ Zitkussen"
+       ],
+       [
+        "Sterrenkijker Zahra luistert",
+        "Ze zei dat ze naar de sterren keek. Ze zat met haar rug naar het raam.",
+        "🔭 Astrolabium"
+       ],
+       [
+        "Verse munt",
+        "In elk glas lag verse munt. In één glas lag gedroogde.",
+        "🌿 Muntblad"
+       ],
+       [
+        "Bewaker Karim komt binnen",
+        "Hij haalt elke avond om tien uur een glas thee. Gisteren kwam hij om negen.",
+        "⌛ Zandloper"
+       ],
+       [
+        "Het gordijn",
+        "Achter het gordijn van het theehuis zit een tweede deur. De theeschenker zegt dat die nooit opengaat.",
+        "🪟 Gordijn"
+       ],
+       [
+        "Koopvrouw Layla onderhandelt",
+        "Ze praatte een uur met de gids over de prijs van de reis. Om elf uur was de prijs ineens hoger.",
+        "💰 Reisgeld"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part III · The Tea House",
+      "intro": "Every evening the whole caravan sits together in the tea house. Tea Server Hamid pours, and hears everything. One conversation nobody heard.",
+      "outro": "The tea house is empty and the glasses stand upside down on the tray. The conversation nobody heard, you know now.",
+      "briefing": "In the tea house everyone watches the pot, not each other. Whoever says where they were not tells you something too: cross that room off straight away.",
+      "cases": [
+       [
+        "Three Glasses",
+        "In the tea house everyone drinks three glasses. One guest left the third one standing.",
+        "🍵 Tea glass"
+       ],
+       [
+        "Tea Server Hamid Pours",
+        "He pours from high up, so the tea foams. Tonight his hand was shaking.",
+        "🫖 Brass teapot"
+       ],
+       [
+        "The Empty Cushion",
+        "Eight cushions lay around the low table. Nobody had sat on one of them.",
+        "🛋️ Floor cushion"
+       ],
+       [
+        "Stargazer Zahra Listens",
+        "She said she was looking at the stars. She sat with her back to the window.",
+        "🔭 Astrolabe"
+       ],
+       [
+        "Fresh Mint",
+        "Every glass had fresh mint in it. One glass had dried mint.",
+        "🌿 Mint leaf"
+       ],
+       [
+        "Guard Karim Comes In",
+        "Every evening at ten he fetches a glass of tea. Yesterday he came at nine.",
+        "⌛ Hourglass"
+       ],
+       [
+        "The Curtain",
+        "Behind the curtain of the tea house there is a second door. The tea server says it never opens.",
+        "🪟 Curtain"
+       ],
+       [
+        "Merchant Layla Bargains",
+        "She talked with the guide for an hour about the price of the journey. At eleven the price was suddenly higher.",
+        "💰 Travel money"
+       ]
+      ]
+     }
+    },
+    {
+     "key": "karavaan-4",
+     "nl": {
+      "title": "Deel IV · De bazaar",
+      "intro": "Marktdag in de oase. Kooplieden uit drie dorpen spreiden hun waren uit over de binnenplaats. Duizend stemmen, en één ervan liegt.",
+      "outro": "De kramen worden afgebroken en de binnenplaats is weer stil. De stem die loog, is gevonden.",
+      "briefing": "Op marktdag staat iedereen schouder aan schouder, dus let op wie direct naast wie stond. Zet eerst de verdachte met de kleinste keus neer; de rest volgt.",
+      "cases": [
+       [
+        "Marktdag",
+        "Duizend mensen op de bazaar. Eén van hen kocht niets en bleef de hele dag.",
+        "🪙 Koperen munt"
+       ],
+       [
+        "Tapijthandelaar Yusuf verkoopt",
+        "Hij verkocht vandaag zeven tapijten. Hij had er zes bij zich.",
+        "🧶 Tapijt"
+       ],
+       [
+        "De specerijenmand",
+        "Kaneel, kardemom en komijn. Eén mand rook nergens naar.",
+        "🧺 Specerijenmand"
+       ],
+       [
+        "Reizigster Beatrix koopt",
+        "Ze kocht een tapijt dat ze niet kon dragen. Ze vroeg niemand om hulp.",
+        "🧳 Reiskoffer"
+       ],
+       [
+        "Het valse gewicht",
+        "Alle gewichten op de markt zijn gestempeld. Eén gewicht had geen stempel.",
+        "⚖️ Vals gewicht"
+       ],
+       [
+        "Gids Tariq ruilt",
+        "Hij ruilde zijn oude kameel tegen een jonge. De oude kende de weg terug.",
+        "🐪 Oude kameel"
+       ],
+       [
+        "De waterverkoper",
+        "Op de bazaar verkocht iemand water uit de put. De put is van iedereen.",
+        "🫗 Waterbeker"
+       ],
+       [
+        "Dichteres Samira draagt voor",
+        "Ze droeg een gedicht voor over verraad. Iedereen keek naar dezelfde man.",
+        "📖 Dichtbundel"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part IV · The Bazaar",
+      "intro": "Market day at the oasis. Traders from three villages spread their goods across the courtyard. A thousand voices, and one of them is lying.",
+      "outro": "The stalls are taken down and the courtyard is quiet again. The voice that lied has been found.",
+      "briefing": "On market day everyone stands shoulder to shoulder, so watch who stood directly next to whom. Place the suspect with the fewest options first; the rest follows.",
+      "cases": [
+       [
+        "Market Day",
+        "A thousand people at the bazaar. One of them bought nothing and stayed all day.",
+        "🪙 Copper coin"
+       ],
+       [
+        "Carpet Seller Yusuf Sells",
+        "Today he sold seven carpets. He had six with him.",
+        "🧶 Carpet"
+       ],
+       [
+        "The Spice Basket",
+        "Cinnamon, cardamom and cumin. One basket smelled of nothing.",
+        "🧺 Spice basket"
+       ],
+       [
+        "Traveller Beatrix Buys",
+        "She bought a carpet she could not carry. She asked nobody for help.",
+        "🧳 Travelling trunk"
+       ],
+       [
+        "The False Weight",
+        "Every weight at the market is stamped. One weight had no stamp.",
+        "⚖️ False weight"
+       ],
+       [
+        "Guide Tariq Trades",
+        "He traded his old camel for a young one. The old one knew the way back.",
+        "🐪 Old camel"
+       ],
+       [
+        "The Water Seller",
+        "At the bazaar someone was selling water from the well. The well belongs to everyone.",
+        "🫗 Water cup"
+       ],
+       [
+        "Poet Samira Recites",
+        "She recited a poem about betrayal. Everyone looked at the same man.",
+        "📖 Book of poems"
+       ]
+      ]
+     }
+    },
+    {
+     "key": "karavaan-5",
+     "nl": {
+      "title": "Deel V · De nacht van de sterren",
+      "intro": "Boven op het dakterras leest Sterrenkijker Zahra de weg voor de volgende tocht. De nacht is helder en de karavanserai slaapt. Ze ziet een licht dat er niet hoort.",
+      "outro": "Het licht was een lantaarn, en de lantaarn had een eigenaar. De route ligt vast.",
+      "briefing": "In het donker op het dak ziet iedereen alleen zichzelf. Begin bij wie zegt alleen te zijn geweest: dat ruimt meteen een hele ruimte op.",
+      "cases": [
+       [
+        "Een licht in de woestijn",
+        "Waar geen dorp is, brandde een licht. Twee keer aan, twee keer uit.",
+        "🏮 Lantaarn"
+       ],
+       [
+        "Sterrenkijker Zahra rekent",
+        "Ze mat de hoogte van de Poolster. De ster stond goed, haar kaart niet.",
+        "🗺️ Sterrenkaart"
+       ],
+       [
+        "Het dakterras",
+        "Op het dak sliepen vier reizigers onder de sterren. Er lagen vijf slaapmatten.",
+        "🛌 Slaapmat"
+       ],
+       [
+        "Bewaker Karim ziet het ook",
+        "Vanaf de poort zag hij hetzelfde licht. Hij meldde het pas de volgende middag.",
+        "🪔 Wachtlamp"
+       ],
+       [
+        "Een vallende ster",
+        "Om middernacht viel er een ster. Iedereen deed een wens, op één na.",
+        "🌠 Vallende ster"
+       ],
+       [
+        "Dichteres Samira telt sterren",
+        "Ze schreef een gedicht over de sterren boven de woestijn. Ze telde er één te veel.",
+        "📜 Gedicht"
+       ],
+       [
+        "Theeschenker Hamid brengt thee",
+        "Om twee uur bracht hij thee naar het dak. Er stonden al twee glazen.",
+        "🍵 Twee glazen"
+       ],
+       [
+        "Voor de dageraad",
+        "De sterren verbleekten één voor één. Het licht in de woestijn ging als laatste uit.",
+        "🌄 Dageraad"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part V · The Night of the Stars",
+      "intro": "Up on the roof terrace, Stargazer Zahra reads the way for the next journey. The night is clear and the caravanserai sleeps. She sees a light that should not be there.",
+      "outro": "The light was a lantern, and the lantern had an owner. The route is set.",
+      "briefing": "In the dark on the roof everyone sees only themselves. Start with whoever says they were alone: that clears a whole room at once.",
+      "cases": [
+       [
+        "A Light in the Desert",
+        "Where there is no village, a light was burning. On twice, off twice.",
+        "🏮 Lantern"
+       ],
+       [
+        "Stargazer Zahra Calculates",
+        "She measured the height of the Pole Star. The star was right, her chart was not.",
+        "🗺️ Star chart"
+       ],
+       [
+        "The Roof Terrace",
+        "Four travellers slept on the roof under the stars. There were five sleeping mats.",
+        "🛌 Sleeping mat"
+       ],
+       [
+        "Guard Karim Sees It Too",
+        "From the gate he saw the same light. He only reported it the next afternoon.",
+        "🪔 Watch lamp"
+       ],
+       [
+        "A Falling Star",
+        "At midnight a star fell. Everyone made a wish, all but one.",
+        "🌠 Falling star"
+       ],
+       [
+        "Poet Samira Counts Stars",
+        "She wrote a poem about the stars above the desert. She counted one too many.",
+        "📜 Poem"
+       ],
+       [
+        "Tea Server Hamid Brings Tea",
+        "At two he brought tea up to the roof. Two glasses were already there.",
+        "🍵 Two glasses"
+       ],
+       [
+        "Before Dawn",
+        "The stars faded one by one. The light in the desert was the last to go out.",
+        "🌄 Dawn"
+       ]
+      ]
+     }
+    },
+    {
+     "key": "karavaan-6",
+     "nl": {
+      "title": "Deel VI · Het badhuis",
+      "intro": "Het badhuis is warm en vol damp. Reizigers wassen er het zand van de tocht af, en niemand ziet verder dan zijn hand. Bijna niemand.",
+      "outro": "De damp is opgetrokken en de stenen koelen af. Wie zich erin verstopte, staat nu in het volle licht.",
+      "briefing": "Damp maakt getuigen onzeker, de plattegrond niet. Gebruik het potlood: streep vakjes weg die niet kunnen en kijk wat overblijft.",
+      "cases": [
+       [
+        "Warme stenen",
+        "Het vuur onder de stenen brandt dag en nacht. Vannacht ging het een uur uit.",
+        "🪨 Hete steen"
+       ],
+       [
+        "In de damp",
+        "Iedereen in het badhuis zag alleen damp. Eén gast zag een gezicht.",
+        "🌫️ Damp"
+       ],
+       [
+        "Reizigster Beatrix wast het zand af",
+        "Ze bleef een uur in het badhuis. Haar haar was droog.",
+        "🧼 Zeep"
+       ],
+       [
+        "Acht paar slippers",
+        "Bij de deur stonden acht paar slippers. Er kwamen negen mensen naar buiten.",
+        "🩴 Badslipper"
+       ],
+       [
+        "Tapijthandelaar Yusuf zweet",
+        "Hij zei dat hij zweette van de warmte. Hij was nog niet binnen geweest.",
+        "💦 Zweetdoek"
+       ],
+       [
+        "De waterput",
+        "Het badhuis krijgt zijn water uit de put. Vannacht kwam het troebel boven.",
+        "🪣 Putemmer"
+       ],
+       [
+        "Gids Tariq baadt",
+        "Voor een tocht baadt hij nooit, zegt hij. Vannacht wel.",
+        "🌹 Rozenwater"
+       ],
+       [
+        "Koopvrouw Layla mist een ring",
+        "Haar ring lag op de bodem van het bad. Ze doet hem nooit af.",
+        "💍 Gouden ring"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part VI · The Bathhouse",
+      "intro": "The bathhouse is warm and full of steam. Travellers wash off the sand of the journey there, and nobody can see further than their own hand. Almost nobody.",
+      "outro": "The steam has lifted and the stones are cooling. Whoever hid in it now stands in full light.",
+      "briefing": "Steam makes witnesses unsure, but not the floor plan. Use the pencil: cross off squares that cannot be and see what is left.",
+      "cases": [
+       [
+        "Warm Stones",
+        "The fire under the stones burns day and night. Last night it went out for an hour.",
+        "🪨 Hot stone"
+       ],
+       [
+        "In the Steam",
+        "Everyone in the bathhouse saw only steam. One guest saw a face.",
+        "🌫️ Steam"
+       ],
+       [
+        "Traveller Beatrix Washes Off the Sand",
+        "She stayed in the bathhouse for an hour. Her hair was dry.",
+        "🧼 Soap"
+       ],
+       [
+        "Eight Pairs of Slippers",
+        "Eight pairs of slippers stood by the door. Nine people came out.",
+        "🩴 Bath slipper"
+       ],
+       [
+        "Carpet Seller Yusuf Sweats",
+        "He said he was sweating from the heat. He had not been inside yet.",
+        "💦 Sweat cloth"
+       ],
+       [
+        "The Well",
+        "The bathhouse gets its water from the well. Last night it came up cloudy.",
+        "🪣 Well bucket"
+       ],
+       [
+        "Guide Tariq Bathes",
+        "He never bathes before a journey, he says. Last night he did.",
+        "🌹 Rose water"
+       ],
+       [
+        "Merchant Layla Loses a Ring",
+        "Her ring lay at the bottom of the bath. She never takes it off.",
+        "💍 Gold ring"
+       ]
+      ]
+     }
+    },
+    {
+     "key": "karavaan-7",
+     "nl": {
+      "title": "Deel VII · De lange tocht",
+      "intro": "De karavaan trekt twintig dagen door de woestijn, van put naar put. Elke avond telt Gids Tariq de kamelen. Niet elke avond komt hij op hetzelfde getal uit.",
+      "outro": "Na twintig dagen bereikt de karavaan de kust. De gids telt nog één keer, en het getal klopt.",
+      "briefing": "Het bord wordt groter en de verklaringen worden zuiniger. Staat in het rapport dat een ruimte leeg was, dan valt die hele ruimte af voor iedereen.",
+      "cases": [
+       [
+        "Twintig dagen",
+        "Water voor twintig dagen. Op dag twaalf was het op.",
+        "💧 Waterzak"
+       ],
+       [
+        "Gids Tariq telt de kamelen",
+        "Twaalf kamelen bij vertrek, elf bij de eerste put. Bij de tweede put weer twaalf.",
+        "🐪 Lastkameel"
+       ],
+       [
+        "Het spoor",
+        "De gids leest elk spoor in het zand. Eén spoor liep achteruit.",
+        "👣 Spoor"
+       ],
+       [
+        "Sterrenkijker Zahra wijst de weg",
+        "Elke nacht wees ze naar het zuiden. In de zesde nacht een beetje meer naar het oosten.",
+        "⭐ Leidster"
+       ],
+       [
+        "Bewaker Karim reist mee",
+        "Twintig jaar kwam hij niet buiten de muren. Deze keer wilde hij per se mee.",
+        "⛺ Reistent"
+       ],
+       [
+        "De droge put",
+        "Op de kaart stond water. Iemand had de put dichtgegooid.",
+        "🕳️ Droge put"
+       ],
+       [
+        "Theeschenker Hamid zet thee",
+        "Elke avond zette hij thee van het laatste water. Elke avond bleef er water over.",
+        "🔥 Kampvuur"
+       ],
+       [
+        "De zee",
+        "Na twintig dagen rook de karavaan zout. Eén kameel liep de andere kant op.",
+        "🌊 Zeewind"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part VII · The Long Journey",
+      "intro": "The caravan crosses the desert for twenty days, from well to well. Every evening Guide Tariq counts the camels. Not every evening does he get the same number.",
+      "outro": "After twenty days the caravan reaches the coast. The guide counts one more time, and the number is right.",
+      "briefing": "The board gets bigger and the statements get sparser. If the report says a room was empty, that whole room is ruled out for everyone.",
+      "cases": [
+       [
+        "Twenty Days",
+        "Water for twenty days. On day twelve it was gone.",
+        "💧 Water bag"
+       ],
+       [
+        "Guide Tariq Counts the Camels",
+        "Twelve camels at departure, eleven at the first well. At the second well, twelve again.",
+        "🐪 Pack camel"
+       ],
+       [
+        "The Track",
+        "The guide reads every track in the sand. One track ran backwards.",
+        "👣 Track"
+       ],
+       [
+        "Stargazer Zahra Shows the Way",
+        "Every night she pointed south. On the sixth night a little more to the east.",
+        "⭐ Guiding star"
+       ],
+       [
+        "Guard Karim Comes Along",
+        "For twenty years he never went outside the walls. This time he insisted on coming.",
+        "⛺ Travel tent"
+       ],
+       [
+        "The Dry Well",
+        "The map showed water. Someone had filled in the well.",
+        "🕳️ Dry well"
+       ],
+       [
+        "Tea Server Hamid Makes Tea",
+        "Every evening he made tea with the last of the water. Every evening there was water left over.",
+        "🔥 Campfire"
+       ],
+       [
+        "The Sea",
+        "After twenty days the caravan smelled salt. One camel walked the other way.",
+        "🌊 Sea wind"
+       ]
+      ]
+     }
+    },
+    {
+     "key": "karavaan-8",
+     "nl": {
+      "title": "Deel VIII · Afscheid van de oase",
+      "intro": "De karavaan trekt verder en de karavanserai blijft achter. Nog één avond op het dakterras onder de sterren, met dezelfde gezichten als op de nacht dat de poort dichtging.",
+      "outro": "Van Dam schudt het zand uit zijn jas, groet de bewaker en loopt bij zonsopgang met de karavaan door de poort. Achter de poort blijft één geheim minder achter.",
+      "briefing": "De laatste zaken, bijna allemaal op het grote bord. Blijf niet hangen bij wie het lastigst is: zet eerst de anderen neer, dan blijft er voor de laatste vaak maar één vakje over.",
+      "cases": [
+       [
+        "De laatste avond",
+        "Iedereen zat op het dakterras. Beneden in de stal brandde nog een kaars.",
+        "🕯️ Kaarslicht"
+       ],
+       [
+        "Dichteres Samira neemt afscheid",
+        "In haar laatste gedicht staat geen naam. Iedereen wist toch wie ze bedoelde.",
+        "📓 Versboek"
+       ],
+       [
+        "Koopvrouw Layla rekent af",
+        "Ze betaalde haar plek in de karavaan. Met saffraan uit de tiende zak.",
+        "👝 Geldbuidel"
+       ],
+       [
+        "Tapijthandelaar Yusuf vergeet iets",
+        "Hij liet één tapijt achter, opgerold in de gastenkamer. Hij laat nooit iets achter.",
+        "🧶 Laatste tapijt"
+       ],
+       [
+        "Reizigster Beatrix sluit haar boek",
+        "Haar boek over de reis is af. Het laatste hoofdstuk heeft nog geen titel.",
+        "📕 Reisverhaal"
+       ],
+       [
+        "Bewaker Karim opent de poort",
+        "Twintig jaar opende hij de poort bij zonsopgang. Vandaag deed hij het een uur eerder.",
+        "🔑 Grote sleutel"
+       ],
+       [
+        "Het laatste glas",
+        "Theeschenker Hamid schonk nog één keer voor iedereen in. Hij schonk één glas te veel.",
+        "🫖 Laatste pot"
+       ],
+       [
+        "Afscheid van de oase",
+        "Waar het begon, bij de kamelen in de stal. Daar eindigt het ook.",
+        "🔔 Kameelbel"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part VIII · Farewell to the Oasis",
+      "intro": "The caravan moves on and the caravanserai stays behind. One more evening on the roof terrace under the stars, with the same faces as on the night the gate closed.",
+      "outro": "Van Dam shakes the sand out of his coat, greets the guard and walks through the gate with the caravan at sunrise. Behind the gate, there is one secret fewer.",
+      "briefing": "The last cases, nearly all on the big board. Do not get stuck on the hardest one: place the others first, and the last one often has only one square left.",
+      "cases": [
+       [
+        "The Last Evening",
+        "Everyone sat on the roof terrace. Down in the stable a candle was still burning.",
+        "🕯️ Candlelight"
+       ],
+       [
+        "Poet Samira Says Goodbye",
+        "Her last poem has no name in it. Everyone knew who she meant anyway.",
+        "📓 Book of verse"
+       ],
+       [
+        "Merchant Layla Settles Up",
+        "She paid for her place in the caravan. With saffron from the tenth sack.",
+        "👝 Money pouch"
+       ],
+       [
+        "Carpet Seller Yusuf Forgets Something",
+        "He left one carpet behind, rolled up in the guest room. He never leaves anything behind.",
+        "🧶 Last carpet"
+       ],
+       [
+        "Traveller Beatrix Closes Her Book",
+        "Her book about the journey is finished. The last chapter has no title yet.",
+        "📕 Travel book"
+       ],
+       [
+        "Guard Karim Opens the Gate",
+        "For twenty years he opened the gate at sunrise. Today he did it an hour early.",
+        "🔑 Great key"
+       ],
+       [
+        "The Last Glass",
+        "Tea Server Hamid poured for everyone one last time. He poured one glass too many.",
+        "🫖 Last pot"
+       ],
+       [
+        "Farewell to the Oasis",
+        "Where it began, by the camels in the stable. That is where it ends.",
+        "🔔 Camel bell"
+       ]
+      ]
+     }
+    }
+   ]
+  }
+ }
+}

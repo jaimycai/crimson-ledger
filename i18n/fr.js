@@ -1035,6 +1035,210 @@
           "Gokker Jack": "Jack",
           "Huisdetective Nora": "Nora"
         }
+      },
+      "filmstudio": {
+        "title": "Paradise Pictures",
+        "short": "Studio",
+        "victimName": "Le magnat Samuel Gold",
+        "roomWord": "pièce",
+        "roomWordPlural": "pièces",
+        "tagline": "Hollywood, 1931. Le premier film parlant du studio, et un patron qui n’ira pas au bout de sa dernière scène.",
+        "intro": "Paradise Pictures, Hollywood, 1931. Le studio tourne son premier film parlant. Après la dernière prise de la journée, le patron du studio, Samuel Gold, gît dans la salle de projection, et le film passe encore.",
+        "outro": "Les lumières s’éteignent et le film est dans la boîte. La fin tient enfin debout.",
+        "rooms": {
+          "Studiohal": "Grand studio",
+          "Montagekamer": "Montage",
+          "Kleedkamer": "Loge",
+          "Kantine": "Cantine",
+          "Rekwisietenkamer": "Accessoires",
+          "Projectiezaal": "Projection",
+          "Werkplaats": "Atelier",
+          "Directiekamer": "Bureau",
+          "Geluidsstudio": "Cabine de son",
+          "Archief": "Archives",
+          "Buitenset": "Extérieurs",
+          "Poort": "Entrée"
+        },
+        "furniture": {
+          "filmcamera": "une caméra",
+          "schijnwerper": "un projecteur",
+          "regiestoel": "une chaise de réalisateur",
+          "klapbord": "un clap",
+          "filmspoel": "une bobine"
+        },
+        "suspects": {
+          "Filmster Vivian": "Vedette Vivian",
+          "Regisseur Baxter": "Réalisateur Baxter",
+          "Schrijfster Peggy": "Scénariste Peggy",
+          "Stuntman Hank": "Cascadeur Hank",
+          "Cameraman Lenny": "Cameraman Lenny",
+          "Grimeuse Rita": "Maquilleuse Rita",
+          "Agent Sid": "Imprésario Sid",
+          "Starlet Joy": "Starlette Joy"
+        },
+        "suspectShort": {
+          "Filmster Vivian": "Vivian",
+          "Regisseur Baxter": "Baxter",
+          "Schrijfster Peggy": "Peggy",
+          "Stuntman Hank": "Hank",
+          "Cameraman Lenny": "Lenny",
+          "Grimeuse Rita": "Rita",
+          "Agent Sid": "Sid",
+          "Starlet Joy": "Joy"
+        }
+      },
+      "karavaan": {
+        "title": "Le Caravansérail d’Al-Nour",
+        "short": "Caravane",
+        "victimName": "Le chef de caravane Idris",
+        "roomWord": "zone",
+        "roomWordPlural": "zones",
+        "tagline": "Une oasis sur l’ancienne route des épices. Douze chameaux, huit voyageurs, et un chef de caravane qui ne repartira jamais.",
+        "intro": "Le caravansérail d’Al-Nour, une oasis sur l’ancienne route des épices. La caravane passe une nuit à l’abri des murs. À l’aube, le chef de caravane Idris gît près des chameaux, et la porte est restée fermée toute la nuit.",
+        "outro": "La caravane reprend la route. Derrière la porte, il reste un secret de moins.",
+        "rooms": {
+          "Binnenplaats": "Cour",
+          "Bazaar": "Bazar",
+          "Theehuis": "Salon de thé",
+          "Badhuis": "Hammam",
+          "Waterput": "Puits",
+          "Gastenkamer": "Chambre",
+          "Tapijtwinkel": "Boutique",
+          "Poort": "Porche",
+          "Dakterras": "Terrasse",
+          "Stal": "Écurie",
+          "Keuken": "Cuisine",
+          "Voorraadkamer": "Réserve"
+        },
+        "furniture": {
+          "tapijt": "un tapis",
+          "specerijen": "un panier d’épices",
+          "kruik": "une jarre",
+          "zadel": "une selle de chameau",
+          "weegschaal": "une balance en laiton"
+        },
+        "suspects": {
+          "Koopvrouw Layla": "Marchande Layla",
+          "Gids Tariq": "Guide Tariq",
+          "Tapijthandelaar Yusuf": "Marchand de tapis Yusuf",
+          "Reizigster Beatrix": "Voyageuse Beatrix",
+          "Theeschenker Hamid": "Serveur de thé Hamid",
+          "Sterrenkijker Zahra": "Astronome Zahra",
+          "Bewaker Karim": "Gardien Karim",
+          "Dichteres Samira": "Poétesse Samira"
+        },
+        "suspectShort": {
+          "Koopvrouw Layla": "Layla",
+          "Gids Tariq": "Tariq",
+          "Tapijthandelaar Yusuf": "Yusuf",
+          "Reizigster Beatrix": "Beatrix",
+          "Theeschenker Hamid": "Hamid",
+          "Sterrenkijker Zahra": "Zahra",
+          "Bewaker Karim": "Karim",
+          "Dichteres Samira": "Samira"
+        }
+      },
+      "abdij": {
+        "title": "L’Abbaye Saint-Aldric",
+        "short": "Abbaye",
+        "victimName": "L’abbé Bertram",
+        "roomWord": "pièce",
+        "roomWordPlural": "pièces",
+        "tagline": "Une abbaye dans les montagnes, 1327. Un livre interdit, une bibliothèque fermée à clé, et un abbé qui ne passera pas la nuit.",
+        "intro": "L’abbaye Saint-Aldric, hiver 1327. La neige ferme le col. Après l’office de nuit, l’abbé Bertram gît dans le scriptorium, les doigts tachés d’encre.",
+        "outro": "La cloche sonne les vêpres. Le livre est de nouveau sur son étagère.",
+        "rooms": {
+          "Scriptorium": "Scriptorium",
+          "Kapel": "Chapelle",
+          "Kruidentuin": "Jardin",
+          "Bibliotheek": "Bibliothèque",
+          "Refter": "Réfectoire",
+          "Slaapzaal": "Dortoir",
+          "Kloostergang": "Cloître",
+          "Kelder": "Cave",
+          "Keuken": "Cuisine",
+          "Klokkentoren": "Clocher",
+          "Ziekenboeg": "Infirmerie",
+          "Bakkerij": "Fournil"
+        },
+        "furniture": {
+          "lessenaar": "un pupitre",
+          "kandelaar": "un chandelier",
+          "bijenkorf": "une ruche",
+          "vijzel": "un mortier",
+          "zandloper": "un sablier"
+        },
+        "suspects": {
+          "Broeder Anselm": "Frère Anselm",
+          "Broeder Cuthbert": "Frère Cuthbert",
+          "Novice Elias": "Novice Elias",
+          "Pelgrim Gisela": "Pèlerine Gisela",
+          "Kruidenvrouw Hilde": "Herboriste Hilde",
+          "Gravin Mathilde": "Comtesse Mathilde",
+          "Verluchtster Odile": "Enlumineuse Odile",
+          "Kelderbroeder Waldo": "Cellérier Waldo"
+        },
+        "suspectShort": {
+          "Broeder Anselm": "Anselm",
+          "Broeder Cuthbert": "Cuthbert",
+          "Novice Elias": "Elias",
+          "Pelgrim Gisela": "Gisela",
+          "Kruidenvrouw Hilde": "Hilde",
+          "Gravin Mathilde": "Mathilde",
+          "Verluchtster Odile": "Odile",
+          "Kelderbroeder Waldo": "Waldo"
+        }
+      },
+      "vuurtoren": {
+        "title": "Le Phare de Cap-Gris",
+        "short": "Phare",
+        "victimName": "Le gardien Silas Mourne",
+        "roomWord": "zone",
+        "roomWordPlural": "zones",
+        "tagline": "1900. Une île, trois jours de tempête, et un phare éteint pour la première fois en vingt ans.",
+        "intro": "Le phare de Cap-Gris, novembre 1900. Une tempête coupe l’île du continent. À minuit, le phare s’éteint. Tout en haut, dans la lanterne, gît le gardien Silas Mourne.",
+        "outro": "Le faisceau tourne de nouveau. Chaque marin le voit, et toi, tu sais qui l’a éteint.",
+        "rooms": {
+          "Lantaarnkamer": "Lanterne",
+          "Wenteltrap": "Escalier",
+          "Wachtershuis": "Maison",
+          "Steiger": "Jetée",
+          "Botenhuis": "Hangar",
+          "Seinkamer": "Télégraphe",
+          "Klif": "Falaise",
+          "Strand": "Plage",
+          "Keuken": "Cuisine",
+          "Kelder": "Cave",
+          "Werkplaats": "Atelier",
+          "Voorraadkamer": "Réserve"
+        },
+        "furniture": {
+          "boei": "une bouée de sauvetage",
+          "fuik": "un casier à homards",
+          "misthoorn": "une corne de brume",
+          "stormlamp": "une lampe-tempête",
+          "verrekijker": "une longue-vue"
+        },
+        "suspects": {
+          "Assistent Jonas": "Assistant Jonas",
+          "Huishoudster Martha": "Gouvernante Martha",
+          "Visser Bartel": "Pêcheur Bartel",
+          "Loodsman Kees": "Pilote Kees",
+          "Vogelkundige Dorien": "Ornithologue Dorien",
+          "Schipbreukeling Lev": "Naufragé Lev",
+          "Onderwijzeres Wilma": "Institutrice Wilma",
+          "Telegrafiste Fien": "Télégraphiste Fien"
+        },
+        "suspectShort": {
+          "Assistent Jonas": "Jonas",
+          "Huishoudster Martha": "Martha",
+          "Visser Bartel": "Bartel",
+          "Loodsman Kees": "Kees",
+          "Vogelkundige Dorien": "Dorien",
+          "Schipbreukeling Lev": "Lev",
+          "Onderwijzeres Wilma": "Wilma",
+          "Telegrafiste Fien": "Fien"
+        }
       }
     },
     "daily": [
@@ -1141,6 +1345,30 @@
         "Tout sur le dix-sept",
         "Le tour de Monaco",
         "La dernière partie de l’Azur"
+      ],
+      "filmstudio": [
+        "Le film que personne ne devait voir",
+        "La cascade qui a mal tourné",
+        "La voix sur la bande-son",
+        "La dernière scène de Gold"
+      ],
+      "karavaan": [
+        "Le safran d’Al-Nour",
+        "La nuit des mille étoiles",
+        "Le tapis aux deux motifs",
+        "La dernière caravane"
+      ],
+      "abdij": [
+        "Le livre sans titre",
+        "La nuit de la cloche muette",
+        "L’herbe qui ne guérissait pas",
+        "Le dernier abbé de Saint-Aldric"
+      ],
+      "vuurtoren": [
+        "La lumière qui s’est éteinte",
+        "L’homme venu de la mer",
+        "La page du registre",
+        "La dernière nuit à Cap-Gris"
       ]
     },
     "medals": {
@@ -1255,6 +1483,22 @@
       "casino": [
         "La banque a sauté",
         "Termine tous les chapitres du Casino Azur"
+      ],
+      "filmstudio": [
+        "Clap de fin",
+        "Termine tous les chapitres de Paradise Pictures"
+      ],
+      "karavaan": [
+        "La caravane passe",
+        "Termine tous les chapitres du Caravansérail d’Al-Nour"
+      ],
+      "abdij": [
+        "La cloche sonne",
+        "Termine tous les chapitres de l’Abbaye Saint-Aldric"
+      ],
+      "vuurtoren": [
+        "Le phare se rallume",
+        "Termine tous les chapitres du Phare de Cap-Gris"
       ]
     },
     "quests": {
@@ -5963,6 +6207,1542 @@
           "♦️ As de carreau"
         ]
       ]
+    ],
+    "filmstudio": [
+      "Chapitre I · La dernière prise",
+      "Paradise Pictures, Hollywood, 1931. Le studio tourne son premier film parlant. Après la dernière prise de la journée, le patron du studio, Samuel Gold, gît dans la salle de projection, et le film passe encore.",
+      "La projection s’est arrêtée et le patron du studio est mort. Le film est loin d’être fini.",
+      "Un studio, c’est une grande halle avec beaucoup de portes. Commence par qui dit dans quelle pièce il était ; « juste à côté » du projecteur, c’est seulement une case qui le touche par un côté, jamais en diagonale.",
+      [
+        [
+          "La dernière prise",
+          "La prise quarante-sept était enfin bonne. C’était aussi la dernière.",
+          "🎬 Clap"
+        ],
+        [
+          "La salle de projection",
+          "Quand on a trouvé le patron du studio, le film passait encore. Il n’en avait pas vu la fin.",
+          "📽️ Appareil de projection"
+        ],
+        [
+          "Le réalisateur Baxter crie « Coupez »",
+          "Il a crié « Coupez » toute la journée. À six heures, il n’a rien crié.",
+          "📣 Mégaphone"
+        ],
+        [
+          "Le projecteur",
+          "À six heures, toutes les lampes se sont éteintes. Une heure plus tard, une lampe était encore chaude.",
+          "💡 Ampoule"
+        ],
+        [
+          "La vedette Vivian attend",
+          "Elle attendait sa dernière scène, a-t-elle dit. Elle était déjà démaquillée.",
+          "💄 Rouge à lèvres"
+        ],
+        [
+          "La bobine",
+          "Dans l’appareil de projection, il y avait la bobine trois. La bobine deux traînait par terre.",
+          "🎞️ Bobine"
+        ],
+        [
+          "Le cameraman Lenny continue de tourner",
+          "Sa caméra a tourné encore une minute après la dernière prise. Personne ne l’avait demandé.",
+          "🎥 Caméra"
+        ],
+        [
+          "Après six heures",
+          "À six heures, le portail s’est fermé. À sept heures, il s’est ouvert encore une fois.",
+          "🔑 Clé du portail"
+        ]
+      ]
+    ],
+    "filmstudio-2": [
+      "Chapitre II · La bobine disparue",
+      "La seule copie du nouveau film a disparu. La boîte était aux archives, sous clé. La première a lieu dans une semaine.",
+      "La bobine est de retour dans sa boîte. Une scène a été coupée, et tu sais par qui.",
+      "Dans un studio, chacun montre quelqu’un d’autre du doigt. Déclarations sur deux personnes : fixe d’abord l’une des deux.",
+      [
+        [
+          "La boîte vide",
+          "Le titre du film est écrit sur la boîte. Dedans, il n’y a rien.",
+          "🗃️ Boîte de film"
+        ],
+        [
+          "L’imprésario Sid téléphone",
+          "Il a appelé pour parler du film. Personne ne lui avait encore dit qu’il avait disparu.",
+          "☎️ Téléphone"
+        ],
+        [
+          "Les archives",
+          "Les archives s’ouvrent avec une seule clé. Elle est accrochée à un clou, dans le bureau.",
+          "🗝️ Clé des archives"
+        ],
+        [
+          "La scénariste Peggy réécrit",
+          "Elle a réécrit la fin pour la quatrième fois. Maintenant, il y avait un vol dedans.",
+          "⌨️ Machine à écrire"
+        ],
+        [
+          "La salle de montage",
+          "Des chutes de pellicule traînaient par terre. Toutes de la même scène.",
+          "✂️ Ciseaux de monteur"
+        ],
+        [
+          "La starlette Joy voit quelque chose",
+          "Elle a vu quelqu’un passer avec une boîte sous le bras. Elle a cru qu’il y avait des biscuits dedans.",
+          "🍪 Boîte à biscuits"
+        ],
+        [
+          "Le veilleur de nuit",
+          "Le veilleur de nuit faisait une ronde toutes les heures. À trois heures, il en a sauté une.",
+          "🔦 Lampe torche"
+        ],
+        [
+          "Encore une semaine",
+          "Les affiches sont déjà collées dans toute la ville. Le film, lui, n’est nulle part.",
+          "🖼️ Affiche du film"
+        ]
+      ]
+    ],
+    "filmstudio-3": [
+      "Chapitre III · La cascade",
+      "Un saut du toit du saloon, dans le décor extérieur, répété cent fois. Aujourd’hui, ça a mal tourné. Le cascadeur Hank jure que quelqu’un a touché au matelas.",
+      "Le matelas est de nouveau à sa place et le cascadeur Hank remarche déjà. Le saut suivant se passe bien.",
+      "Pendant une cascade, tout le monde regarde en l’air, pas les autres. Qui dit où il n’était pas t’apprend quelque chose, lui aussi : raye tout de suite cette pièce.",
+      [
+        [
+          "Répété cent fois",
+          "Cent sauts, cent fois réussis. Le cent unième, non.",
+          "🪜 Échelle"
+        ],
+        [
+          "Le cascadeur Hank tombe",
+          "Il a sauté de six mètres de haut. Le matelas était un mètre plus loin.",
+          "🛏️ Matelas de chute"
+        ],
+        [
+          "Le toit du saloon",
+          "Le toit du saloon est en carton. Une planche était en bois.",
+          "🪵 Planche"
+        ],
+        [
+          "Le réalisateur Baxter en veut une autre",
+          "Il a fait refaire le saut onze fois. À la douzième seulement, il a détourné les yeux.",
+          "⏱️ Chronomètre"
+        ],
+        [
+          "Le cheval",
+          "Le cheval a eu peur d’une détonation. Le scénario ne prévoyait aucun coup de feu.",
+          "🐎 Cheval"
+        ],
+        [
+          "La maquilleuse Rita colle une moustache",
+          "Elle a collé une moustache à un deuxième cascadeur. Il n’y avait qu’un seul cascadeur.",
+          "🥸 Fausse moustache"
+        ],
+        [
+          "La corde",
+          "La corde pouvait porter deux cents kilos. Elle a cassé sous soixante-dix.",
+          "🪢 Corde"
+        ],
+        [
+          "Le cameraman Lenny filme tout",
+          "Il a filmé le saut sous deux angles. Sur la deuxième bobine, quelqu’un se tient derrière la cheminée.",
+          "🎞️ Deuxième bobine"
+        ]
+      ]
+    ],
+    "filmstudio-4": [
+      "Chapitre IV · Le film parlant",
+      "Le premier film avec du son. La caméra est enfermée dans une cabine insonorisée et les micros sont cachés dans les bouquets. Ils entendent plus que prévu.",
+      "Les prises sont montées et la cabine de son est silencieuse. La conversation du dernier disque n’est plus un secret.",
+      "Pendant une prise, personne n’a le droit de dire un mot, alors regarde bien qui était juste à côté de qui. Place d’abord le suspect qui a le moins de cases possibles ; le reste suit.",
+      [
+        [
+          "Silence, on tourne",
+          "Au-dessus de la porte, une lampe rouge est allumée : silence. Derrière la porte, quelqu’un chuchotait.",
+          "🔴 Lampe rouge"
+        ],
+        [
+          "Le micro dans les fleurs",
+          "Il y avait un micro dans le bouquet. Personne de l’équipe du son ne l’y avait mis.",
+          "💐 Bouquet"
+        ],
+        [
+          "La vedette Vivian trouve sa voix",
+          "Dans les films muets, c’était une vedette. Dans le film parlant, quelqu’un d’autre chante à sa place.",
+          "🎵 Partition"
+        ],
+        [
+          "La glacière",
+          "La caméra est dans une cabine qu’on appelle la glacière. Cet après-midi-là, deux personnes s’y tenaient.",
+          "🧊 Glacière"
+        ],
+        [
+          "L’imprésario Sid chuchote",
+          "Il a chuchoté une offre à l’oreille de la vedette. Le micro a chuchoté avec lui.",
+          "🎧 Casque"
+        ],
+        [
+          "Le disque de cire",
+          "Le son est gravé sur un disque de cire, en même temps que le film. Un disque avait trois secondes de retard.",
+          "💿 Disque de cire"
+        ],
+        [
+          "La scénariste Peggy réécoute",
+          "Elle avait écrit chaque réplique elle-même. Une réplique de l’enregistrement lui était inconnue.",
+          "📝 Scénario"
+        ],
+        [
+          "Ce que le micro a entendu",
+          "Sur l’enregistrement, on entend la scène. Et derrière, une porte qui se ferme.",
+          "🔊 Haut-parleur"
+        ]
+      ]
+    ],
+    "filmstudio-5": [
+      "Chapitre V · L’audition",
+      "Cent candidats pour un seul rôle, en file jusqu’au portail. Chacun a trois minutes devant la caméra. L’un d’eux ne revient pas de son bout d’essai.",
+      "Le rôle est attribué et la file est rentrée chez elle. Un bout d’essai ne sera jamais projeté.",
+      "À une audition, tout le monde fait la queue, mais pas tout le monde dans la même pièce. Commence par qui dit avoir été seul : ça écarte d’un coup tous les autres de sa pièce.",
+      [
+        [
+          "Cent candidats",
+          "Cent noms sur la liste. À la fin de la journée, quatre-vingt-dix-neuf.",
+          "📋 Liste des candidats"
+        ],
+        [
+          "La starlette Joy regarde",
+          "L’an dernier, elle faisait encore la queue. Aujourd’hui, elle regarde qui arrive derrière elle.",
+          "🎀 Nœud dans les cheveux"
+        ],
+        [
+          "Le bout d’essai",
+          "Trois minutes devant la caméra. La pellicule dure quatre minutes.",
+          "🎞️ Bout d’essai"
+        ],
+        [
+          "La maquilleuse Rita maquille",
+          "Elle a maquillé cent visages. Elle connaissait déjà l’un d’eux.",
+          "🖌️ Pinceau à poudre"
+        ],
+        [
+          "L’imprésario Sid fait signer",
+          "Il a fait signer un candidat avant le début de l’audition. Ce candidat ne s’est jamais présenté.",
+          "🖋️ Stylo-plume"
+        ],
+        [
+          "Le numéro dix-sept",
+          "Chaque candidat portait un numéro sur la poitrine. Le numéro dix-sept est passé deux fois.",
+          "🔢 Dossard"
+        ],
+        [
+          "La vedette Vivian s’attarde",
+          "Elle est venue voir qui allait la remplacer. Elle est restée jusqu’à la nuit.",
+          "🧣 Col de fourrure"
+        ],
+        [
+          "Un seul manteau",
+          "À cinq heures, un manteau était encore accroché au portemanteau. Personne n’est venu le chercher.",
+          "🧥 Imperméable"
+        ]
+      ]
+    ],
+    "filmstudio-6": [
+      "Chapitre VI · L’incendie des archives",
+      "Les vieux films sont en nitrate, et le nitrate brûle plus vite que le papier. En pleine nuit, des flammes jaillissent des archives. Quelqu’un savait à quelle vitesse ça irait.",
+      "Le feu est éteint et les archives sont noires de suie. Ce n’était pas un accident.",
+      "Après un incendie, personne ne sait plus exactement où il se tenait. Sers-toi du Crayon : écarte les cases impossibles et regarde ce qui reste.",
+      [
+        [
+          "Nitrate",
+          "Sur chaque boîte, il est écrit : défense de fumer. Un mégot traînait par terre.",
+          "🚭 Défense de fumer"
+        ],
+        [
+          "Les pompiers",
+          "Les pompiers sont arrivés en dix minutes. Les archives ont brûlé en cinq.",
+          "🚒 Camion de pompiers"
+        ],
+        [
+          "Le cameraman Lenny sauve une boîte",
+          "Il a couru dans le feu pour une seule boîte. Elle contenait son propre travail.",
+          "📦 Boîte de pellicule"
+        ],
+        [
+          "La cloche d’alarme",
+          "La cloche a sonné à deux heures. À une heure et demie, le veilleur de nuit sentait déjà quelque chose.",
+          "🔔 Cloche d’alarme"
+        ],
+        [
+          "La scénariste Peggy travaillait tard",
+          "Elle a travaillé sur le scénario jusqu’à minuit. Aux archives, a-t-elle d’abord dit.",
+          "🗒️ Bloc-notes"
+        ],
+        [
+          "Le cascadeur Hank et le feu",
+          "Devant la caméra, il traverse les flammes. Cette nuit, il a fait un grand détour.",
+          "🧯 Extincteur"
+        ],
+        [
+          "Le registre des archives",
+          "D’après le registre, il y avait trois cents boîtes. Dans les cendres, il y en avait deux cents.",
+          "📒 Registre des archives"
+        ],
+        [
+          "Le réalisateur Baxter regarde",
+          "Tous ses vieux films sont partis en fumée. Il avait l’air soulagé.",
+          "👓 Lunettes rondes"
+        ]
+      ]
+    ],
+    "filmstudio-7": [
+      "Chapitre VII · En décors naturels",
+      "Un western dans le désert, à une journée de route du studio. Dix camions, vingt chevaux et une petite ville en carton sous le soleil. Il manque un tonneau d’eau.",
+      "Les camions repartent vers Hollywood. Le tonneau d’eau a été retrouvé, à moitié plein et loin du camp.",
+      "Le plateau s’agrandit et les déclarations se font avares. Si le rapport dit qu’une pièce était vide, toute cette pièce est exclue pour tout le monde.",
+      [
+        [
+          "Dix camions",
+          "Dix camions sont partis dans le désert. Neuf tonneaux d’eau les accompagnaient.",
+          "🛢️ Tonneau d’eau"
+        ],
+        [
+          "Le cascadeur Hank tient les rênes",
+          "Il a renversé la diligence deux fois. Le scénario n’en prévoyait qu’une.",
+          "🐎 Diligence"
+        ],
+        [
+          "Le soleil de midi",
+          "À midi, le soleil était juste au-dessus du décor. Pourtant, une longue ombre est tombée.",
+          "☀️ Soleil de midi"
+        ],
+        [
+          "La vedette Vivian dans le sable",
+          "Elle a refusé d’aller dans le désert. Pourtant, il y avait du sable dans ses bottes.",
+          "👢 Botte de cavalière"
+        ],
+        [
+          "Le feu de camp",
+          "Autour du feu, toute l’équipe chantait. Au refrain, il manquait une voix.",
+          "🪕 Banjo"
+        ],
+        [
+          "La maquilleuse Rita poudre",
+          "Chaque matin, elle poudrait dix visages. Un visage était déjà poudré, depuis la veille au soir.",
+          "🪞 Miroir à main"
+        ],
+        [
+          "Le camion-citerne",
+          "Le camion-citerne est resté près du camp toute la nuit. À l’aube, il était un kilomètre plus loin.",
+          "🚚 Camion-citerne"
+        ],
+        [
+          "L’imprésario Sid télégraphie",
+          "Il n’y avait pas de téléphone à cent miles à la ronde. Pourtant, le studio l’a su en moins d’une heure.",
+          "✉️ Télégramme"
+        ]
+      ]
+    ],
+    "filmstudio-8": [
+      "Chapitre VIII · Le grand gala",
+      "Le film est terminé et la première a lieu ce soir. Pour le gala, dans le grand studio, les lumières se rallument une dernière fois, sur les mêmes visages que le soir de la dernière prise.",
+      "Van Dam met son chapeau, salue d’un signe de tête la chaise vide du réalisateur et franchit le portail, dans la nuit d’Hollywood. La fin tient enfin debout.",
+      "Les dernières affaires, presque toutes sur le grand plateau. Ne bloque pas sur le suspect le plus difficile : place d’abord les autres, et il ne reste souvent qu’une case pour le dernier.",
+      [
+        [
+          "Le tapis rouge",
+          "Mille personnes le long du tapis rouge. L’une d’elles a suivi les invités à l’intérieur.",
+          "🎟️ Billet de la première"
+        ],
+        [
+          "La vedette Vivian brille",
+          "Tout le monde regardait sa robe. Personne ne regardait ses mains.",
+          "💎 Broche"
+        ],
+        [
+          "La scénariste Peggy voit sa fin",
+          "Elle a écrit la fin sept fois. À l’écran, elle en a vu une huitième.",
+          "📜 Scène finale"
+        ],
+        [
+          "La starlette Joy est découverte",
+          "Tout le monde voulait une photo avec elle. Un photographe ne voulait que son sac.",
+          "👛 Sac du soir"
+        ],
+        [
+          "Le réalisateur Baxter remercie",
+          "Il a remercié toute l’équipe, nom par nom. Il a prononcé un nom comme une question.",
+          "🎙️ Micro"
+        ],
+        [
+          "L’imprésario Sid en veut plus",
+          "Il touchait dix pour cent sur tout. Ce soir, il voulait le reste.",
+          "💵 Billet d’un dollar"
+        ],
+        [
+          "Le cameraman Lenny projette",
+          "Il a projeté le film lui-même, depuis la cabine de projection. Il y avait une bobine de plus que ce qui avait été monté.",
+          "📽️ Appareil de projection"
+        ],
+        [
+          "Le grand gala",
+          "Là où tout a commencé, dans la salle de projection. C’est là que tout finit.",
+          "🎞️ Dernière bobine"
+        ]
+      ]
+    ],
+    "karavaan": [
+      "Chapitre I · La porte se ferme",
+      "Le caravansérail d’Al-Nour, une oasis sur l’ancienne route des épices. La caravane passe une nuit à l’abri des murs. À l’aube, le chef de caravane Idris gît près des chameaux, et la porte est restée fermée toute la nuit.",
+      "Le chef de caravane est mort et la porte reste fermée. Personne ne part tant que l’histoire ne tient pas debout.",
+      "Un caravansérail, c’est une seule cour avec beaucoup de portes. Commence par qui dit dans quelle zone il était ; « juste à côté » de la jarre, c’est seulement une case qui la touche par un côté, jamais en diagonale.",
+      [
+        [
+          "La porte se ferme",
+          "Au coucher du soleil, la porte s’est fermée. À l’aube, personne n’était parti, et pourtant il manquait un voyageur.",
+          "🔒 Serrure de la porte"
+        ],
+        [
+          "Douze chameaux",
+          "Douze chameaux dans l’écurie. Aucun n’a fait de bruit cette nuit-là.",
+          "🐪 Chameau"
+        ],
+        [
+          "Le gardien Karim monte la garde",
+          "Il a passé toute la nuit sous le porche. La clé est restée toute la nuit à sa ceinture, dit-il.",
+          "🗝️ Trousseau de clés"
+        ],
+        [
+          "La jarre",
+          "À dix heures, la jarre près du puits était pleine. À minuit, elle était vide.",
+          "🏺 Jarre d’eau"
+        ],
+        [
+          "La marchande Layla pèse",
+          "Chaque soir, elle pesait son safran. Hier soir, elle a pesé autre chose.",
+          "⚖️ Balance en laiton"
+        ],
+        [
+          "La selle de chameau",
+          "La selle du chef de caravane était prête pour le départ. Il voulait partir avant l’ouverture de la porte.",
+          "🪢 Sangle de selle"
+        ],
+        [
+          "La poétesse Samira écrit",
+          "Ce soir-là, elle a écrit un poème sur le chef de caravane. C’était un adieu.",
+          "✒️ Calame"
+        ],
+        [
+          "Avant l’aube",
+          "À quatre heures, le coq a chanté. À trois heures, quelqu’un marchait déjà sur la terrasse.",
+          "🐓 Coq"
+        ]
+      ]
+    ],
+    "karavaan-2": [
+      "Chapitre II · Le safran disparu",
+      "La marchande Layla voyage avec dix sacs de safran, de quoi acheter une maison en ville. Au moment de les compter, il y en a neuf. La porte est toujours fermée.",
+      "Le dixième sac a rejoint les neuf autres. Il est plus léger d’une poignée.",
+      "Entre ces murs, tout le monde parle de tout le monde. Déclarations sur deux personnes : fixe d’abord l’une des deux.",
+      [
+        [
+          "Dix sacs",
+          "Dix sacs à l’arrivée. Neuf au petit déjeuner.",
+          "🌸 Sac de safran"
+        ],
+        [
+          "Le guide Tariq décharge",
+          "Il a déchargé lui-même les sacs des chameaux. Il se souvient encore du chameau qui en portait un de trop.",
+          "🧭 Boussole"
+        ],
+        [
+          "La réserve",
+          "La réserve se ferme à clé. La serrure est à l’intérieur.",
+          "🔐 Cadenas"
+        ],
+        [
+          "Le marchand de tapis Yusuf roule ses tapis",
+          "Ce matin-là, il a roulé tous ses tapis. Un tapis était plus lourd que la veille.",
+          "🧶 Tapis roulé"
+        ],
+        [
+          "Des fils rouges",
+          "Le safran, ce ne sont que des fils rouges, légers comme l’air. Il y en avait un par terre, dans la cuisine.",
+          "🧵 Filament de safran"
+        ],
+        [
+          "La voyageuse Beatrix prend des notes",
+          "Elle note tout ce qu’elle voit. Sur cette nuit-là, il n’y a rien.",
+          "📔 Carnet de voyage"
+        ],
+        [
+          "Neuf sacs",
+          "Neuf sacs, tous du même poids. L’un d’eux était à moitié rempli de sable.",
+          "⏳ Sable du désert"
+        ],
+        [
+          "Le serveur de thé Hamid entend tout",
+          "Il a entendu quelqu’un parler de safran. Une heure avant que le safran disparaisse.",
+          "🍯 Sucrier"
+        ]
+      ]
+    ],
+    "karavaan-3": [
+      "Chapitre III · Le salon de thé",
+      "Chaque soir, toute la caravane se retrouve au salon de thé. Hamid, le serveur de thé, verse et entend tout. Une conversation, personne ne l’a entendue.",
+      "Le salon de thé est vide et les verres sont posés à l’envers. La conversation que personne n’a entendue, tu la connais maintenant.",
+      "Au salon de thé, tout le monde regarde la théière, pas les autres. Qui dit où il n’était pas t’apprend quelque chose, lui aussi : raye tout de suite cette zone.",
+      [
+        [
+          "Trois verres",
+          "Au salon de thé, chacun boit trois verres. Un client a laissé le troisième.",
+          "🍵 Verre à thé"
+        ],
+        [
+          "Le serveur de thé Hamid verse",
+          "Il verse de haut, pour que le thé mousse. Ce soir, sa main tremblait.",
+          "🫖 Théière en cuivre"
+        ],
+        [
+          "Le coussin vide",
+          "Huit coussins entouraient la table basse. Sur l’un d’eux, personne ne s’était assis.",
+          "🛋️ Coussin de sol"
+        ],
+        [
+          "L’astronome Zahra écoute",
+          "Elle a dit qu’elle regardait les étoiles. Elle était assise dos à la fenêtre.",
+          "🔭 Astrolabe"
+        ],
+        [
+          "Menthe fraîche",
+          "Chaque verre contenait de la menthe fraîche. Un verre, de la menthe séchée.",
+          "🌿 Feuille de menthe"
+        ],
+        [
+          "Le gardien Karim entre",
+          "Chaque soir à dix heures, il vient chercher un verre de thé. Hier, il est venu à neuf heures.",
+          "⌛ Sablier"
+        ],
+        [
+          "Le rideau",
+          "Derrière le rideau du salon de thé, il y a une deuxième porte. Le serveur de thé dit qu’elle ne s’ouvre jamais.",
+          "🪟 Rideau"
+        ],
+        [
+          "La marchande Layla négocie",
+          "Elle a discuté une heure avec le guide du prix du voyage. À onze heures, le prix avait soudain monté.",
+          "💰 Argent du voyage"
+        ]
+      ]
+    ],
+    "karavaan-4": [
+      "Chapitre IV · Le bazar",
+      "Jour de marché à l’oasis. Des marchands de trois villages étalent leurs marchandises dans la cour. Mille voix, et l’une d’elles ment.",
+      "Les étals sont démontés et la cour est de nouveau calme. La voix qui mentait a été trouvée.",
+      "Le jour du marché, tout le monde est coude à coude, alors regarde bien qui était juste à côté de qui. Place d’abord le suspect qui a le moins de cases possibles ; le reste suit.",
+      [
+        [
+          "Jour de marché",
+          "Mille personnes au bazar. L’une d’elles n’a rien acheté et est restée toute la journée.",
+          "🪙 Pièce de cuivre"
+        ],
+        [
+          "Le marchand de tapis Yusuf vend",
+          "Aujourd’hui, il a vendu sept tapis. Il en avait six avec lui.",
+          "🧶 Tapis"
+        ],
+        [
+          "Le panier d’épices",
+          "Cannelle, cardamome et cumin. Un panier ne sentait rien.",
+          "🧺 Panier d’épices"
+        ],
+        [
+          "La voyageuse Beatrix achète",
+          "Elle a acheté un tapis qu’elle ne pouvait pas porter. Elle n’a demandé d’aide à personne.",
+          "🧳 Malle de voyage"
+        ],
+        [
+          "Le faux poids",
+          "Tous les poids du marché sont poinçonnés. Un poids ne l’était pas.",
+          "⚖️ Faux poids"
+        ],
+        [
+          "Le guide Tariq fait un échange",
+          "Il a échangé son vieux chameau contre un jeune. Le vieux connaissait le chemin du retour.",
+          "🐪 Vieux chameau"
+        ],
+        [
+          "Le porteur d’eau",
+          "Au bazar, quelqu’un vendait l’eau du puits. Le puits appartient à tout le monde.",
+          "🫗 Gobelet d’eau"
+        ],
+        [
+          "La poétesse Samira déclame",
+          "Elle a déclamé un poème sur la trahison. Tout le monde a regardé le même homme.",
+          "📖 Recueil de poèmes"
+        ]
+      ]
+    ],
+    "karavaan-5": [
+      "Chapitre V · La nuit des étoiles",
+      "Tout en haut, sur la terrasse, l’astronome Zahra lit dans le ciel la route du prochain voyage. La nuit est claire et le caravansérail dort. Elle voit une lumière qui n’a rien à faire là.",
+      "La lumière était une lanterne, et la lanterne avait un propriétaire. La route est fixée.",
+      "Dans le noir, sur le toit, chacun ne voit que soi. Commence par qui dit avoir été seul : ça écarte d’un coup tous les autres de sa zone.",
+      [
+        [
+          "Une lumière dans le désert",
+          "Là où il n’y a aucun village, une lumière brûlait. Allumée deux fois, éteinte deux fois.",
+          "🏮 Lanterne"
+        ],
+        [
+          "L’astronome Zahra calcule",
+          "Elle a mesuré la hauteur de l’étoile Polaire. L’étoile était à sa place, sa carte non.",
+          "🗺️ Carte du ciel"
+        ],
+        [
+          "La terrasse",
+          "Sur le toit, quatre voyageurs dormaient à la belle étoile. Il y avait cinq nattes.",
+          "🛌 Natte"
+        ],
+        [
+          "Le gardien Karim l’a vue aussi",
+          "Depuis le porche, il a vu la même lumière. Il ne l’a signalée que le lendemain après-midi.",
+          "🪔 Lampe de garde"
+        ],
+        [
+          "Une étoile filante",
+          "À minuit, une étoile est tombée. Tout le monde a fait un vœu, sauf une personne.",
+          "🌠 Étoile filante"
+        ],
+        [
+          "La poétesse Samira compte les étoiles",
+          "Elle a écrit un poème sur les étoiles au-dessus du désert. Elle en a compté une de trop.",
+          "📜 Poème"
+        ],
+        [
+          "Le serveur de thé Hamid apporte le thé",
+          "À deux heures, il a monté du thé sur le toit. Il y avait déjà deux verres.",
+          "🍵 Deux verres"
+        ],
+        [
+          "Avant le jour",
+          "Les étoiles ont pâli une à une. La lumière dans le désert s’est éteinte la dernière.",
+          "🌄 Aube"
+        ]
+      ]
+    ],
+    "karavaan-6": [
+      "Chapitre VI · Le hammam",
+      "Le hammam est chaud et plein de vapeur. Les voyageurs s’y lavent du sable du voyage, et personne ne voit plus loin que sa main. Presque personne.",
+      "La vapeur s’est dissipée et les pierres refroidissent. Qui s’y cachait est maintenant en pleine lumière.",
+      "La vapeur rend les témoins hésitants, pas le plan. Sers-toi du Crayon : écarte les cases impossibles et regarde ce qui reste.",
+      [
+        [
+          "Pierres chaudes",
+          "Le feu sous les pierres brûle jour et nuit. Cette nuit, il s’est éteint pendant une heure.",
+          "🪨 Pierre chaude"
+        ],
+        [
+          "Dans la vapeur",
+          "Au hammam, tout le monde n’a vu que de la vapeur. Un client a vu un visage.",
+          "🌫️ Vapeur"
+        ],
+        [
+          "La voyageuse Beatrix se lave du sable",
+          "Elle est restée une heure au hammam. Ses cheveux étaient secs.",
+          "🧼 Savon"
+        ],
+        [
+          "Huit paires de babouches",
+          "Près de la porte, il y avait huit paires de babouches. Neuf personnes sont sorties.",
+          "🩴 Babouche"
+        ],
+        [
+          "Le marchand de tapis Yusuf transpire",
+          "Il a dit qu’il transpirait à cause de la chaleur. Il n’était pas encore entré.",
+          "💦 Serviette"
+        ],
+        [
+          "Le puits",
+          "Le hammam tire son eau du puits. Cette nuit, elle est remontée trouble.",
+          "🪣 Seau du puits"
+        ],
+        [
+          "Le guide Tariq se baigne",
+          "Avant un voyage, il ne se baigne jamais, dit-il. Cette nuit, si.",
+          "🌹 Eau de rose"
+        ],
+        [
+          "La marchande Layla perd une bague",
+          "Sa bague était au fond du bassin. Elle ne l’enlève jamais.",
+          "💍 Bague en or"
+        ]
+      ]
+    ],
+    "karavaan-7": [
+      "Chapitre VII · La longue traversée",
+      "La caravane traverse le désert pendant vingt jours, de puits en puits. Chaque soir, le guide Tariq compte les chameaux. Il ne trouve pas chaque soir le même nombre.",
+      "Après vingt jours, la caravane atteint la côte. Le guide compte une dernière fois, et le compte est bon.",
+      "Le plateau s’agrandit et les déclarations se font avares. Si le rapport dit qu’une zone était vide, toute cette zone est exclue pour tout le monde.",
+      [
+        [
+          "Vingt jours",
+          "De l’eau pour vingt jours. Au douzième jour, il n’y en avait plus.",
+          "💧 Outre"
+        ],
+        [
+          "Le guide Tariq compte les chameaux",
+          "Douze chameaux au départ, onze au premier puits. Au deuxième puits, de nouveau douze.",
+          "🐪 Chameau de bât"
+        ],
+        [
+          "La trace",
+          "Le guide lit chaque trace dans le sable. Une trace allait à reculons.",
+          "👣 Empreintes"
+        ],
+        [
+          "L’astronome Zahra montre le chemin",
+          "Chaque nuit, elle indiquait le sud. La sixième nuit, un peu plus vers l’est.",
+          "⭐ Étoile guide"
+        ],
+        [
+          "Le gardien Karim part aussi",
+          "En vingt ans, il n’était jamais sorti des murs. Cette fois, il a tenu à venir.",
+          "⛺ Tente de voyage"
+        ],
+        [
+          "Le puits à sec",
+          "La carte indiquait de l’eau. Quelqu’un avait comblé le puits.",
+          "🕳️ Puits à sec"
+        ],
+        [
+          "Le serveur de thé Hamid fait le thé",
+          "Chaque soir, il faisait le thé avec les dernières gouttes d’eau. Chaque soir, il restait de l’eau.",
+          "🔥 Feu de camp"
+        ],
+        [
+          "La mer",
+          "Après vingt jours, la caravane a senti le sel. Un chameau est parti dans l’autre sens.",
+          "🌊 Vent de mer"
+        ]
+      ]
+    ],
+    "karavaan-8": [
+      "Chapitre VIII · Adieu à l’oasis",
+      "La caravane reprend la route et le caravansérail reste derrière elle. Une dernière soirée sur la terrasse, sous les étoiles, avec les mêmes visages que la nuit où la porte s’est fermée.",
+      "Van Dam secoue le sable de son manteau, salue le gardien et franchit la porte avec la caravane, au lever du soleil. Derrière la porte, il reste un secret de moins.",
+      "Les dernières affaires, presque toutes sur le grand plateau. Ne bloque pas sur le suspect le plus difficile : place d’abord les autres, et il ne reste souvent qu’une case pour le dernier.",
+      [
+        [
+          "La dernière soirée",
+          "Tout le monde était sur la terrasse. En bas, dans l’écurie, une bougie brûlait encore.",
+          "🕯️ Bougie"
+        ],
+        [
+          "La poétesse Samira fait ses adieux",
+          "Son dernier poème ne contient aucun nom. Tout le monde savait pourtant de qui elle parlait.",
+          "📓 Carnet de vers"
+        ],
+        [
+          "La marchande Layla règle ses comptes",
+          "Elle a payé sa place dans la caravane. Avec du safran du dixième sac.",
+          "👝 Bourse"
+        ],
+        [
+          "Le marchand de tapis Yusuf oublie quelque chose",
+          "Il a laissé un tapis, roulé, dans la chambre. Il n’oublie jamais rien.",
+          "🧶 Dernier tapis"
+        ],
+        [
+          "La voyageuse Beatrix referme son livre",
+          "Son livre sur le voyage est terminé. Le dernier chapitre n’a pas encore de titre.",
+          "📕 Récit de voyage"
+        ],
+        [
+          "Le gardien Karim ouvre la porte",
+          "Pendant vingt ans, il a ouvert la porte au lever du soleil. Aujourd’hui, il l’a fait une heure plus tôt.",
+          "🔑 Grande clé"
+        ],
+        [
+          "Le dernier verre",
+          "Le serveur de thé Hamid a servi tout le monde une dernière fois. Il a servi un verre de trop.",
+          "🫖 Dernière théière"
+        ],
+        [
+          "Adieu à l’oasis",
+          "Là où tout a commencé, près des chameaux, dans l’écurie. C’est là que tout finit.",
+          "🔔 Clochette de chameau"
+        ]
+      ]
+    ],
+    "abdij": [
+      "Chapitre I · L’abbé mort",
+      "L’abbaye Saint-Aldric, hiver 1327. La neige ferme le col. Après l’office de nuit, l’abbé Bertram gît dans le scriptorium, les doigts tachés d’encre.",
+      "Les frères prient pour leur abbé. La neige tient, et l’hiver est encore long.",
+      "Une abbaye, ce sont des couloirs silencieux et des portes closes. Commence par qui dit dans quelle pièce il était ; « juste à côté » du chandelier, c’est seulement une case qui le touche par un côté, jamais en diagonale.",
+      [
+        [
+          "Après l’office de nuit",
+          "Douze frères ont chanté les matines. Ensuite, on a entendu une voix de moins.",
+          "📿 Chapelet"
+        ],
+        [
+          "De l’encre sur les doigts",
+          "L’abbé n’écrivait jamais lui-même. Ses doigts étaient noirs d’encre.",
+          "🪶 Plume d’oie"
+        ],
+        [
+          "Frère Anselm compte",
+          "Sept clés à son anneau. Hier, il y en avait huit.",
+          "🗝️ Trousseau de clés"
+        ],
+        [
+          "Le chandelier",
+          "La bougie du scriptorium brûlait encore. Après les matines, aucune lumière n’y est permise.",
+          "🕯️ Bougie de cire"
+        ],
+        [
+          "Le novice Elias écrit",
+          "Sur sa tablette de cire, il y avait un psaume. En dessous, à moitié effacé, un nom.",
+          "📝 Tablette de cire"
+        ],
+        [
+          "Neige sur le col",
+          "Personne ne pouvait entrer dans l’abbaye ni en sortir. Pourtant, une corde pendait par-dessus le mur.",
+          "🪢 Corde de chanvre"
+        ],
+        [
+          "La comtesse Mathilde attend",
+          "Elle voulait parler à l’abbé après les matines. Elle dit qu’il n’est jamais venu.",
+          "💍 Chevalière"
+        ],
+        [
+          "La première nuit",
+          "Le portail était fermé et le col aussi. La porte du scriptorium était ouverte.",
+          "🔩 Verrou"
+        ]
+      ]
+    ],
+    "abdij-2": [
+      "Chapitre II · Le livre interdit",
+      "Dans la bibliothèque, il y a un livre que personne n’a le droit de lire. Seul l’abbé en avait la clé. Quelqu’un l’a lu quand même.",
+      "Le livre est de nouveau sous clé. La question n’est plus de savoir qui l’a lu, mais pourquoi.",
+      "Dans la bibliothèque, tout le monde chuchote, et chaque mot compte. Déclarations sur deux personnes : fixe d’abord l’une des deux.",
+      [
+        [
+          "Sous clé",
+          "Le livre était fermé par deux serrures. L’une d’elles était encore verrouillée.",
+          "🔒 Cadenas"
+        ],
+        [
+          "Frère Anselm se tait",
+          "Il savait de quel livre il s’agissait. Il savait aussi qui l’avait demandé.",
+          "📚 Catalogue"
+        ],
+        [
+          "Un feuillet de moins",
+          "Le livre comptait deux cents feuillets. L’un d’eux avait été découpé net.",
+          "🔪 Canif"
+        ],
+        [
+          "L’enlumineuse Odile regarde",
+          "L’or dans la marge est de sa main. Le livre lui-même, elle ne l’avait jamais vu, dit-elle.",
+          "✨ Feuille d’or"
+        ],
+        [
+          "Lire à la chandelle",
+          "Il y avait de la graisse de chandelle sur le parchemin. Du suif de la cuisine, pas de la cire de la chapelle.",
+          "🕯️ Chandelle de suif"
+        ],
+        [
+          "Le novice Elias lit",
+          "Il connaît à peine le latin, dit-il. Sur sa tablette de cire, il y avait une phrase du livre interdit.",
+          "✍️ Phrase recopiée"
+        ],
+        [
+          "Le cellérier Waldo et la comtesse",
+          "Ils ont parlé ensemble dans le cloître. Ensuite, ils ne se sont plus adressé la parole.",
+          "✉️ Billet scellé"
+        ],
+        [
+          "Le livre interdit",
+          "Personne n’avait le droit de le lire. Deux personnes l’ont fait quand même.",
+          "📕 Livre interdit"
+        ]
+      ]
+    ],
+    "abdij-3": [
+      "Chapitre III · Le jardin des simples",
+      "Le jardin des simples est sous la neige, mais les herbes séchées pendent à l’intérieur. À l’infirmerie, un vieux frère va de plus en plus mal au lieu d’aller mieux. Quelqu’un prépare son breuvage une seconde fois.",
+      "Le vieux frère est de nouveau assis dans son lit et réclame de la soupe. Le mauvais pot a disparu de l’infirmerie.",
+      "Parmi les herbes, chacun sait ce qui pousse où. Qui dit où il n’était pas t’apprend quelque chose, lui aussi : raye tout de suite cette pièce.",
+      [
+        [
+          "Chaque herbe guérit",
+          "La sauge pour la gorge, la menthe pour l’estomac. Le pot ne contenait ni l’une ni l’autre.",
+          "🌿 Sauge séchée"
+        ],
+        [
+          "Frère Cuthbert prépare le breuvage",
+          "Il a préparé le breuvage comme chaque soir. Seulement, cette fois, il ne l’a pas goûté.",
+          "🥣 Breuvage d’herbes"
+        ],
+        [
+          "Le mortier",
+          "Il restait de la poudre dans le mortier. Celle d’une plante qui ne pousse pas dans ce jardin.",
+          "🌰 Racine moulue"
+        ],
+        [
+          "L’herboriste Hilde entre",
+          "Elle est venue du village avec un panier plein d’herbes. Le col était fermé depuis une semaine.",
+          "🧺 Panier d’herbes"
+        ],
+        [
+          "Des abeilles en hiver",
+          "En hiver, les abeilles dorment. Quelqu’un a pourtant ouvert la ruche.",
+          "🍯 Rayon de miel"
+        ],
+        [
+          "L’infirmerie",
+          "Trois lits, deux malades. Le troisième lit était chaud.",
+          "🛏️ Paillasse"
+        ],
+        [
+          "La pèlerine Gisela aide",
+          "Elle a proposé de soigner le malade. Elle savait quel breuvage on lui donnait avant que quiconque le lui dise.",
+          "🍶 Calebasse"
+        ],
+        [
+          "L’aconit",
+          "Une jolie fleur violette. Dans chaque traité des simples, une petite croix figure à côté de son nom.",
+          "🪻 Aconit"
+        ]
+      ]
+    ],
+    "abdij-4": [
+      "Chapitre IV · Le long hiver",
+      "Le col est fermé jusqu’au printemps. Chaque semaine, le cellérier Waldo compte les provisions, et chaque semaine, la cave est plus vide qu’elle ne devrait l’être.",
+      "La cave est comptée et le pain partagé équitablement. Qui mangeait pour deux mange maintenant pour un.",
+      "En hiver, tout le monde reste près du feu, et près des autres. Place d’abord le suspect qui a le moins de cases possibles ; le reste suit.",
+      [
+        [
+          "Jusqu’au printemps",
+          "Assez de grain pour quatre mois, a dit le cellérier. Au bout d’un mois, la moitié avait disparu.",
+          "🌾 Sac de grain"
+        ],
+        [
+          "Le cellérier Waldo pèse",
+          "Chaque semaine, il pesait les fromages. Il n’en manquait aucun, mais ils devenaient plus légers.",
+          "🧀 Meule de fromage"
+        ],
+        [
+          "Le fournil",
+          "Le four est froid depuis les matines. Pourtant, le fournil sent le pain frais.",
+          "🍞 Pain de seigle"
+        ],
+        [
+          "La comtesse Mathilde jeûne",
+          "Elle jeûne pendant tout l’Avent, dit-elle. Sous son lit, il y a des miettes de pain blanc.",
+          "🥖 Croûte de pain"
+        ],
+        [
+          "Le sablier",
+          "Dans la cuisine, quelqu’un retourne le sablier toutes les heures. À trois heures, il a oublié.",
+          "⏳ Sablier"
+        ],
+        [
+          "Le novice Elias a faim",
+          "C’était le plus maigre de tous. Jusqu’à la mi-janvier.",
+          "🍽️ Écuelle en bois"
+        ],
+        [
+          "Du vin pour la messe",
+          "Pour la messe, une cruche par semaine suffit. Un tonneau entier a disparu.",
+          "🍷 Vin de messe"
+        ],
+        [
+          "La neige jusqu’aux volets",
+          "La neige montait jusqu’aux volets du réfectoire. Un volet était ouvert, de l’intérieur.",
+          "🧊 Glaçon"
+        ]
+      ]
+    ],
+    "abdij-5": [
+      "Chapitre V · La visite de l’évêque",
+      "Une semaine de redoux ouvre le col. L’évêque est en route pour choisir un nouvel abbé, et tout le monde ne souhaite pas qu’il arrive.",
+      "L’évêque arrive sain et sauf et bénit l’abbaye. Le nouvel abbé est élu, et aucune voix n’a été achetée.",
+      "Pour la visite, chacun attend à un endroit différent. Commence par qui dit avoir été seul : ça écarte d’un coup tous les autres de sa pièce.",
+      [
+        [
+          "Une lettre scellée",
+          "La lettre de l’évêque portait un sceau rouge. Le sceau avait déjà été brisé une fois.",
+          "📜 Lettre de l’évêque"
+        ],
+        [
+          "Frère Anselm veut devenir abbé",
+          "Il n’en veut pas, dit-il. Il connaît déjà le serment par cœur.",
+          "📃 Serment de l’abbé"
+        ],
+        [
+          "Le clocher",
+          "Quand l’évêque arrive, la cloche sonne. La corde avait été coupée, à hauteur des yeux.",
+          "🔔 Corde de la cloche"
+        ],
+        [
+          "La comtesse Mathilde fait un don",
+          "Elle offre à l’abbaye un calice en or. Si l’évêque choisit son candidat.",
+          "🏆 Calice en or"
+        ],
+        [
+          "Des pierres sur le chemin",
+          "Quelqu’un avait fait rouler des pierres sur le chemin de montagne. Elles reposaient sur la neige, pas dessous.",
+          "🪨 Rocher"
+        ],
+        [
+          "Frère Cuthbert cuisine",
+          "Un festin pour l’évêque. Un plat était pour lui seul.",
+          "🍲 Ragoût"
+        ],
+        [
+          "L’herboriste Hilde connaît le chemin",
+          "Elle connaît chaque sentier de la montagne. Y compris celui que l’évêque devait prendre.",
+          "🥾 Botte mouillée"
+        ],
+        [
+          "L’évêque arrive",
+          "Sa mule a franchi le portail la première. L’évêque, une heure plus tard, à pied.",
+          "🐴 Mule"
+        ]
+      ]
+    ],
+    "abdij-6": [
+      "Chapitre VI · Le feu au scriptorium",
+      "En pleine nuit, le scriptorium prend feu. Les frères combattent les flammes avec de la neige et des seaux. Un livre est sauvé, par la mauvaise personne.",
+      "Le feu est éteint et les murs sont noirs. Le livre sauvé repose dans la chapelle, à l’abri des mauvaises mains.",
+      "La fumée brouille les témoins, pas le plan. Les déclarations se font plus rares : sers-toi du Crayon, écarte les cases impossibles et regarde ce qui reste.",
+      [
+        [
+          "De la fumée après les matines",
+          "Après les matines, de la fumée flottait dans le cloître. Toutes les bougies étaient déjà éteintes.",
+          "💨 Traînée de fumée"
+        ],
+        [
+          "Des seaux de neige",
+          "Les frères ont combattu le feu avec la neige de la cour. Près du scriptorium, la neige avait déjà été déblayée, avant le début de l’incendie.",
+          "🪣 Seau en bois"
+        ],
+        [
+          "L’enlumineuse Odile court",
+          "Elle a été la première à se jeter dans le feu, pour ses livres. Elle est revenue les mains vides et les manches propres.",
+          "🎨 Pot de couleur"
+        ],
+        [
+          "Le pupitre",
+          "Tous les pupitres avaient brûlé. Le plus noir était celui qui se trouvait le plus loin des bougies.",
+          "🪵 Bois calciné"
+        ],
+        [
+          "Le cellérier Waldo combat le feu",
+          "Il portait les seaux les plus lourds. Son habit ne sentait pas le feu, mais l’huile.",
+          "🫙 Jarre d’huile"
+        ],
+        [
+          "Des cendres dans le réfectoire",
+          "Dans la cheminée du réfectoire, il y avait des cendres de parchemin. Le feu du scriptorium n’a commencé que plus tard.",
+          "🌫️ Cendres de parchemin"
+        ],
+        [
+          "La pèlerine Gisela prie",
+          "Elle a prié dans la chapelle pendant tout l’incendie. Son manteau était noir de suie.",
+          "🧥 Manteau de pèlerin"
+        ],
+        [
+          "Le mauvais sauveteur",
+          "Un livre a été sauvé. Par quelqu’un qui dit ne pas savoir lire.",
+          "📘 Reliure roussie"
+        ]
+      ]
+    ],
+    "abdij-7": [
+      "Chapitre VII · Les pèlerins",
+      "Douze pèlerins frappent au portail et demandent l’hospitalité. La Règle dit que chaque hôte doit être reçu comme le Christ lui-même. Au bout de trois jours, onze reprennent la route.",
+      "Les onze pèlerins repartent vers Rome. Le douzième reste, mais pas comme hôte.",
+      "Le plateau s’agrandit et l’abbaye se remplit. Si le rapport dit qu’une pièce était vide, toute cette pièce est exclue pour tout le monde.",
+      [
+        [
+          "Douze au portail",
+          "Douze pèlerins ont demandé du pain et un lit. Dans la neige devant le portail, il y avait treize paires d’empreintes.",
+          "👣 Empreintes de pas"
+        ],
+        [
+          "La pèlerine Gisela reconnaît quelqu’un",
+          "Elle connaissait l’un des douze. Elle ne l’a dit qu’après son départ.",
+          "🐚 Coquille Saint-Jacques"
+        ],
+        [
+          "Le livre des hôtes",
+          "Chaque hôte écrivait son nom dans le livre. Deux noms sont de la même main.",
+          "✒️ Livre des hôtes"
+        ],
+        [
+          "Frère Cuthbert soigne les pieds",
+          "Il a pansé les pieds de onze pèlerins. Le douzième n’avait pas d’ampoules.",
+          "🩹 Bande de lin"
+        ],
+        [
+          "Le pain des pauvres",
+          "Chaque pèlerin a reçu un pain. Le fournil en a cuit treize.",
+          "🥖 Pain du pèlerin"
+        ],
+        [
+          "Le novice Elias parle",
+          "Il a parlé aux pèlerins dans leur propre langue. Il vient d’un village tout proche, disait-il cet été.",
+          "🧾 Sauf-conduit"
+        ],
+        [
+          "L’enlumineuse Odile dessine",
+          "Elle a dessiné les douze dans la marge d’un psautier. Elle avait déjà peint l’un des visages.",
+          "🖌️ Pinceau"
+        ],
+        [
+          "Onze s’en vont",
+          "Douze sont entrés. Onze sont repartis vers Rome.",
+          "⛰️ Chemin de montagne"
+        ]
+      ]
+    ],
+    "abdij-8": [
+      "Chapitre VIII · Le dernier office",
+      "Le printemps arrive et la neige fond sur le col. Encore une nuit dans le cloître, avec les mêmes visages que lors de la première nuit d’hiver.",
+      "Van Dam resserre son manteau, s’incline devant les frères et descend vers la vallée par le col rouvert. La cloche sonne les vêpres. Le livre est de nouveau sur son étagère.",
+      "Les dernières affaires, presque toutes sur le grand plateau. Ne bloque pas sur le suspect le plus difficile : place d’abord les autres, et il ne reste souvent qu’une case pour le dernier.",
+      [
+        [
+          "La neige fond",
+          "Sous la neige, près du mur, il y avait une clé. La huitième.",
+          "🔑 Clé en fer"
+        ],
+        [
+          "Frère Anselm rend les clés",
+          "Pendant quarante ans, il a porté les clés. Ce soir, il les dépose, toutes sauf une.",
+          "⛓️ Anneau des clés"
+        ],
+        [
+          "L’herboriste Hilde rentre chez elle",
+          "Elle est venue avec un panier plein d’herbes. Elle repart avec un panier plein, et sans herbes.",
+          "🧺 Panier plein"
+        ],
+        [
+          "Le nouvel abbé",
+          "Il bénit les frères pour la première fois. Un frère ne baisse pas la tête.",
+          "⚜️ Crosse abbatiale"
+        ],
+        [
+          "Le cellérier Waldo ferme la cave",
+          "La cave est de nouveau pleine pour l’été. Derrière le dernier tonneau, il y a quelque chose qui n’a rien à y faire.",
+          "🍺 Bière de l’abbaye"
+        ],
+        [
+          "La comtesse Mathilde s’en va",
+          "Son chariot attend au portail. Il est plus lourd qu’à son arrivée.",
+          "🛞 Roue de chariot"
+        ],
+        [
+          "Les vêpres",
+          "Les dernières vêpres de l’hiver. Une voix a chanté un autre psaume.",
+          "🎼 Antiphonaire"
+        ],
+        [
+          "Le dernier office",
+          "Là où tout a commencé, dans le scriptorium. C’est là que tout se termine.",
+          "🖋️ Encrier en corne"
+        ]
+      ]
+    ],
+    "vuurtoren": [
+      "Chapitre I · Le phare s’éteint",
+      "Le phare de Cap-Gris, novembre 1900. Une tempête coupe l’île du continent. À minuit, le phare s’éteint. Tout en haut, dans la lanterne, gît le gardien Silas Mourne.",
+      "La lumière brille de nouveau, mais le gardien ne la verra plus. La tempête dure encore des jours.",
+      "Une île, c’est petit, et un phare, c’est haut et étroit. Commence par qui dit dans quelle zone il était ; « juste à côté » de la bouée de sauvetage, c’est seulement une case qui la touche par un côté, jamais en diagonale.",
+      [
+        [
+          "Minuit",
+          "Pendant vingt ans, la lumière a brillé chaque nuit. Cette nuit, elle s’est arrêtée à minuit.",
+          "🪔 Brûleur à pétrole"
+        ],
+        [
+          "La lanterne",
+          "Le gardien gisait sous la lentille. La porte était fermée à clé de l’intérieur.",
+          "🔐 Clé de la lanterne"
+        ],
+        [
+          "L’assistant Jonas grimpe",
+          "Cent douze marches jusqu’en haut. Il y était en deux minutes, dit-il.",
+          "🕰️ Montre de gousset"
+        ],
+        [
+          "La bouée de sauvetage",
+          "La bouée est toujours accrochée à côté de la porte de la maison du gardien. Cette nuit, elle flottait dans les brisants.",
+          "🛟 Bouée de sauvetage"
+        ],
+        [
+          "La télégraphiste Fien transmet",
+          "À minuit moins cinq, elle a télégraphié au continent que le phare était éteint. Il s’est éteint à minuit.",
+          "📨 Télégramme"
+        ],
+        [
+          "Le mécanisme de rotation",
+          "Le mécanisme qui fait tourner la lentille était arrêté. Un nœud de marin l’entourait.",
+          "🪢 Nœud de marin"
+        ],
+        [
+          "La gouvernante Martha dort",
+          "Elle dormait déjà à dix heures, dit-elle. À minuit, la théière était encore chaude.",
+          "🫖 Théière"
+        ],
+        [
+          "Tempête d’ouest",
+          "Aucun bateau ne pouvait accoster ni quitter l’île. Pourtant, à la jetée, il en manquait un.",
+          "⚓ Amarre détachée"
+        ]
+      ]
+    ],
+    "vuurtoren-2": [
+      "Chapitre II · Le naufrage",
+      "La deuxième nuit de tempête, la lumière s’éteint pendant une heure. Pendant cette heure, un navire se jette sur les rochers au pied de la falaise. La mer rejette un homme sur le rivage, sans papiers.",
+      "L’épave se disloque dans les brisants. Pourquoi le navire passait si près de la côte, tu le sais maintenant.",
+      "Après un naufrage, chacun raconte ce qu’il a vu, et qui. Déclarations sur deux personnes : fixe d’abord l’une des deux.",
+      [
+        [
+          "Sur les rochers",
+          "Sans la lumière, le navire a foncé droit sur la falaise. Sur la plage, pourtant, une lampe brûlait.",
+          "🏮 Lampe-tempête"
+        ],
+        [
+          "Le naufragé Lev s’échoue",
+          "La mer l’a rejeté sans papiers. Sa boîte à tabac était sèche.",
+          "🚬 Boîte à tabac"
+        ],
+        [
+          "Le pêcheur Bartel a tout vu",
+          "Il regardait depuis la falaise, dit-il. Ses rames étaient encore mouillées.",
+          "🚣 Rame"
+        ],
+        [
+          "L’épave",
+          "Du navire, il ne restait que la proue. Le nom sur la proue avait été recouvert de peinture.",
+          "🖌️ Peinture fraîche"
+        ],
+        [
+          "Le pilote Kees et le capitaine",
+          "Il connaissait le capitaine du navire. Ils avaient rendez-vous cette nuit-là, au large.",
+          "🗺️ Carte marine"
+        ],
+        [
+          "L’ornithologue Dorien prend des notes",
+          "Dans son carnet de terrain : trois heures, plage, un huîtrier. Et un homme.",
+          "📓 Carnet de terrain"
+        ],
+        [
+          "Des caisses sur la plage",
+          "Douze caisses se sont échouées. Dans le hangar à bateaux, il y en avait neuf.",
+          "📦 Coffre de marin"
+        ],
+        [
+          "La télégraphiste Fien et le continent",
+          "Le continent a demandé le nom du navire. Elle l’a transmis avant que quiconque ait vu la proue.",
+          "📃 Bande télégraphique"
+        ]
+      ]
+    ],
+    "vuurtoren-3": [
+      "Chapitre III · Le brouillard",
+      "Après la tempête vient le brouillard. Pendant trois jours, la corne de brume sonne tous les quarts d’heure. La deuxième nuit, elle sonne une fois de trop.",
+      "Le brouillard se lève et la corne de brume se tait. Le bateau qui attendait le signal n’est jamais arrivé.",
+      "Dans le brouillard, personne ne voit rien, mais chacun sait où il ne se tenait pas. Qui dit où il n’était pas t’apprend quelque chose, lui aussi : raye tout de suite cette zone.",
+      [
+        [
+          "Tous les quarts d’heure",
+          "Quatre coups par heure. À deux heures, il y en a eu cinq.",
+          "📯 Corne de brume"
+        ],
+        [
+          "L’assistant Jonas sonne la corne",
+          "Il a actionné la corne toute la nuit, dit-il. À trois heures, il dormait dans la cuisine.",
+          "⚙️ Manivelle"
+        ],
+        [
+          "La longue-vue",
+          "Dans le brouillard, une longue-vue ne sert à rien. Pourtant, elle était là, sur la falaise, pointée vers la mer.",
+          "🔭 Longue-vue"
+        ],
+        [
+          "L’institutrice Wilma se perd",
+          "Depuis dix ans, elle va à pied de l’école à la maison du gardien. Dans le brouillard, elle s’est retrouvée au hangar à bateaux.",
+          "👓 Lunettes embuées"
+        ],
+        [
+          "Une voix dans le brouillard",
+          "Quelqu’un a appelé à l’aide depuis la jetée. Quand on est arrivé, il n’y avait plus qu’une casquette.",
+          "🧢 Casquette mouillée"
+        ],
+        [
+          "Le pêcheur Bartel prend la mer",
+          "Aucun pêcheur ne sort dans le brouillard. Il est revenu avec des casiers vides, sauf un.",
+          "🦞 Casier à homards"
+        ],
+        [
+          "Le naufragé Lev comprend",
+          "Il ne parle pas néerlandais, dit-il. Il a ri d’une blague du pêcheur.",
+          "🧶 Couverture de laine"
+        ],
+        [
+          "Une fois de trop",
+          "Ce cinquième coup n’était pas une erreur. C’était un signal, pour un bateau dans le brouillard.",
+          "⛵ Chaloupe"
+        ]
+      ]
+    ],
+    "vuurtoren-4": [
+      "Chapitre IV · Le registre",
+      "Chaque nuit, le gardien écrivait dans le registre du phare : le temps, les navires, la lumière. La dernière page a été arrachée.",
+      "La dernière page a été retrouvée, froissée et à moitié brûlée. Ce qu’il y avait dessus, tu le savais déjà.",
+      "Dans un registre, tout est dans l’ordre, et chaque ligne renvoie à une zone. Place d’abord le suspect qui a le moins de cases possibles ; le reste suit.",
+      [
+        [
+          "La dernière page",
+          "La page a été arrachée. Sur la suivante, on voit l’empreinte de sa plume.",
+          "📄 Empreinte"
+        ],
+        [
+          "La gouvernante Martha astique",
+          "Elle n’a jamais touché le registre, dit-elle. Il y avait de la cire à meubles sur la couverture.",
+          "🧽 Chiffon à lustrer"
+        ],
+        [
+          "Encre et crayon",
+          "Le gardien écrivait toujours à l’encre. La dernière ligne est au crayon.",
+          "✏️ Crayon de charpentier"
+        ],
+        [
+          "Le pilote Kees lit par-dessus l’épaule",
+          "Il savait quels navires figuraient dans le registre. Et quel navire n’y figurait pas.",
+          "📋 Liste des navires"
+        ],
+        [
+          "Le temps selon le gardien",
+          "Force neuf, a-t-il écrit mardi. Mardi, il n’y avait pas un souffle de vent.",
+          "🌬️ Anémomètre"
+        ],
+        [
+          "L’institutrice Wilma reconnaît l’écriture",
+          "Elle connaît toutes les écritures de l’île. Celle-ci aussi, a-t-elle dit, puis elle s’est tue.",
+          "🖋️ Porte-plume"
+        ],
+        [
+          "La télégraphiste Fien recopie",
+          "Chaque message pour le continent, elle le recopie aussi dans son propre cahier. Un message y figure deux fois.",
+          "📒 Cahier des messages"
+        ],
+        [
+          "Des cendres dans le poêle",
+          "Il y avait des cendres dans le poêle de la salle du télégraphe. Parmi elles, un coin de papier avec un nombre.",
+          "🔥 Coin brûlé"
+        ]
+      ]
+    ],
+    "vuurtoren-5": [
+      "Chapitre V · Le bateau de ravitaillement",
+      "Une fois par mois, le bateau apporte du pétrole, de la farine et le courrier. Toute l’île attend sur la jetée. Cette fois, le bateau emporte quelque chose au retour.",
+      "Le bateau repart sans la caisse. Le patron n’a jamais su ce qu’il avait failli emporter.",
+      "Quand le bateau arrive, chacun décharge à un endroit différent. Commence par qui dit avoir été seul : ça écarte d’un coup tous les autres de sa zone.",
+      [
+        [
+          "Une fois par mois",
+          "Du pétrole, de la farine et le courrier, comme chaque mois. Cette fois, il y avait aussi une caisse sans nom.",
+          "🛢️ Fût de pétrole"
+        ],
+        [
+          "Le courrier",
+          "Une lettre est arrivée pour le gardien. Postée sur le continent, le lendemain de sa mort.",
+          "✉️ Lettre"
+        ],
+        [
+          "La gouvernante Martha passe commande",
+          "Sur sa liste : farine, sel et mort-aux-rats. Il n’y a pas de rats sur l’île.",
+          "☠️ Mort-aux-rats"
+        ],
+        [
+          "Le hangar à bateaux",
+          "Dans le hangar à bateaux, il y avait une caisse à renvoyer. Le couvercle était percé de trous d’aération.",
+          "📦 Caisse percée de trous"
+        ],
+        [
+          "Le naufragé Lev veut partir",
+          "Il n’a pas d’argent, dit-il. Il a offert une pièce d’or au patron du bateau.",
+          "🪙 Pièce d’or"
+        ],
+        [
+          "L’ornithologue Dorien fait un envoi",
+          "Dix oiseaux empaillés pour le musée. L’un d’eux est plus lourd qu’un oiseau ne devrait l’être.",
+          "🐦 Mouette empaillée"
+        ],
+        [
+          "La liste de chargement",
+          "Tout ce qui figurait sur la liste correspondait. Le poids, non.",
+          "⚖️ Bascule"
+        ],
+        [
+          "Le pilote Kees reconduit le bateau",
+          "Il a guidé le bateau entre les rochers, comme toujours. Cette fois, ça a pris une heure de plus.",
+          "🧭 Compas"
+        ]
+      ]
+    ],
+    "vuurtoren-6": [
+      "Chapitre VI · La migration",
+      "Des milliers d’oiseaux migrateurs se reposent sur l’île, en route vers le sud. L’ornithologue Dorien les compte depuis la falaise, et tout le monde l’aide. Tout le monde ne regarde pas les oiseaux.",
+      "Les oiseaux repartent vers le sud. Dans le carnet de Dorien, le compte est de nouveau juste.",
+      "Sur la falaise, tout le monde regarde en l’air, pas les autres. Les déclarations se font plus rares : sers-toi du Crayon, écarte les cases impossibles et regarde ce qui reste.",
+      [
+        [
+          "Mille ailes",
+          "Au lever du soleil, la falaise était couverte d’oiseaux. Un endroit est resté vide, comme si quelqu’un s’y était couché.",
+          "🪶 Plume de mouette"
+        ],
+        [
+          "L’ornithologue Dorien observe",
+          "Toute la matinée, ses jumelles étaient braquées sur le hangar à bateaux. Aucun oiseau n’y niche.",
+          "🔭 Jumelles"
+        ],
+        [
+          "Le nid vide",
+          "Le nid sur la falaise était vide, comme il se doit en novembre. À part une clé.",
+          "🪺 Nid d’oiseau"
+        ],
+        [
+          "L’assistant Jonas cherche des œufs",
+          "Il est descendu le long de la falaise pour chercher des œufs de mouette, dit-il. En novembre.",
+          "🧗 Corde d’escalade"
+        ],
+        [
+          "Le pigeon voyageur",
+          "Parmi les oiseaux migrateurs, il y avait un pigeon. Il ne volait pas vers le sud, mais vers le continent.",
+          "🕊️ Pigeon voyageur"
+        ],
+        [
+          "Le pêcheur Bartel nourrit les mouettes",
+          "Chaque matin, il jette des déchets de poisson aux mouettes. Ce matin, il a jeté autre chose à la mer.",
+          "🐟 Seau à poisson"
+        ],
+        [
+          "Le naufragé Lev connaît les oiseaux",
+          "Il est matelot, dit-il. Il connaît chaque oiseau par son nom latin.",
+          "📚 Livre d’oiseaux"
+        ],
+        [
+          "Sans repos",
+          "Des milliers d’oiseaux dormaient sur l’île. Un seul observateur d’oiseaux a arpenté la plage toute la nuit, une lampe à la main.",
+          "🥾 Bottes pleines de sable"
+        ]
+      ]
+    ],
+    "vuurtoren-7": [
+      "Chapitre VII · La tempête d’hiver",
+      "La pire tempête depuis vingt ans. Les vagues passent par-dessus la falaise, et l’île est coupée du continent pendant trois semaines.",
+      "La tempête se calme et le télégraphe crépite de nouveau. Ce qui est resté entre ces murs pendant trois semaines n’y restera pas plus longtemps.",
+      "Le plateau s’agrandit et l’île rétrécit. Si le rapport dit qu’une zone était vide, toute cette zone est exclue pour tout le monde.",
+      [
+        [
+          "Trois semaines enfermés",
+          "Huit personnes, une maison, trois semaines. Au douzième jour, plus personne ne disait rien.",
+          "🪵 Bois de chauffage"
+        ],
+        [
+          "Le câble",
+          "Le premier jour de la tempête, le câble vers le continent s’est rompu. Un câble ne casse pas aussi net.",
+          "🔌 Câble télégraphique"
+        ],
+        [
+          "La gouvernante Martha fait le service",
+          "Huit bols de soupe chaque soir. Neuf sont revenus vides.",
+          "🥣 Bol de soupe"
+        ],
+        [
+          "La cave est inondée",
+          "L’eau montait jusqu’aux genoux dans la cave. Tout flottait, sauf un coffre.",
+          "⚓ Coffre en plomb"
+        ],
+        [
+          "L’institutrice Wilma fait la classe",
+          "Sa dictée parlait d’un navire qui avait sombré. Le naufragé Lev a corrigé le nom.",
+          "📝 Dictée"
+        ],
+        [
+          "Le pilote Kees a perdu un bouton",
+          "Il manque un bouton de cuivre à son caban. Le bouton était dans la lanterne depuis la première nuit.",
+          "🟡 Bouton de cuivre"
+        ],
+        [
+          "L’assistant Jonas tient le phare",
+          "Pendant trois semaines, il a gardé seul la lumière allumée. Il n’a utilisé que la moitié du pétrole.",
+          "🪔 Mèche de lampe"
+        ],
+        [
+          "Le pêcheur Bartel se souvient",
+          "Il avait déjà vu une tempête pareille une fois, il y a vingt ans. Cette fois-là aussi, la lumière s’était éteinte.",
+          "📰 Vieux journal"
+        ]
+      ]
+    ],
+    "vuurtoren-8": [
+      "Chapitre VIII · La dernière lumière",
+      "Un nouveau gardien arrive du continent. Encore une nuit sous le faisceau qui tourne, avec les mêmes visages que lors de la première nuit de tempête.",
+      "Van Dam monte dans le bateau de ravitaillement, touche le bord de son chapeau et ne se retourne pas. Le faisceau tourne de nouveau. Chaque marin le voit, et toi, tu sais qui l’a éteint.",
+      "Les dernières affaires, presque toutes sur le grand plateau. Ne bloque pas sur le suspect le plus difficile : place d’abord les autres, et il ne reste souvent qu’une case pour le dernier.",
+      [
+        [
+          "Le nouveau gardien",
+          "Il est arrivé par le bateau et il est monté tout de suite en haut. Il connaissait déjà le chemin.",
+          "🧳 Valise"
+        ],
+        [
+          "La gouvernante Martha fait ses bagages",
+          "Pendant vingt ans, elle a cuisiné pour le gardien. Dans sa valise, il y a l’alliance du gardien.",
+          "💍 Alliance"
+        ],
+        [
+          "La télégraphiste Fien ferme la ligne",
+          "Son dernier message au continent : tout va bien. Elle l’a envoyé deux fois, la seconde dans un autre code.",
+          "🔤 Code morse"
+        ],
+        [
+          "Le naufragé Lev a un nom",
+          "Après deux mois, il dit comment il s’appelle. C’est le nom du navire.",
+          "🏷️ Plaque du nom"
+        ],
+        [
+          "L’ornithologue Dorien s’en va",
+          "Elle a compté quatre mille oiseaux pour le musée. Elle en emporte quatre mille un.",
+          "🗃️ Caisse à oiseaux"
+        ],
+        [
+          "L’assistant Jonas ne sera pas gardien",
+          "Pendant trois ans, il a aidé le gardien. On en a choisi un autre, et il le savait depuis un mois.",
+          "📜 Lettre de nomination"
+        ],
+        [
+          "L’institutrice Wilma reste",
+          "Tout le monde part avec le bateau. Elle reste, pour l’école, et l’école est fermée depuis un mois.",
+          "🔔 Cloche de l’école"
+        ],
+        [
+          "La dernière lumière",
+          "Là où tout a commencé, dans la lanterne. C’est là que tout se termine.",
+          "🔆 Lentille de Fresnel"
+        ]
+      ]
     ]
   },
 
@@ -6083,6 +7863,38 @@
         "le": "la pièce",
         "un": "une pièce",
         "ce": "cette pièce"
+      },
+      "filmstudio": {
+        "rw": "pièce",
+        "rws": "pièces",
+        "gender": "f",
+        "le": "la pièce",
+        "un": "une pièce",
+        "ce": "cette pièce"
+      },
+      "karavaan": {
+        "rw": "zone",
+        "rws": "zones",
+        "gender": "f",
+        "le": "la zone",
+        "un": "une zone",
+        "ce": "cette zone"
+      },
+      "abdij": {
+        "rw": "pièce",
+        "rws": "pièces",
+        "gender": "f",
+        "le": "la pièce",
+        "un": "une pièce",
+        "ce": "cette pièce"
+      },
+      "vuurtoren": {
+        "rw": "zone",
+        "rws": "zones",
+        "gender": "f",
+        "le": "la zone",
+        "un": "une zone",
+        "ce": "cette zone"
       }
     },
     "templates": {
@@ -6794,6 +8606,206 @@
           "the": "le salon",
           "in": "dans le salon"
         }
+      },
+      "filmstudio": {
+        "Studiohal": {
+          "the": "le grand studio",
+          "in": "dans le grand studio"
+        },
+        "Montagekamer": {
+          "the": "la salle de montage",
+          "in": "dans la salle de montage"
+        },
+        "Kleedkamer": {
+          "the": "la loge",
+          "in": "dans la loge"
+        },
+        "Kantine": {
+          "the": "la cantine",
+          "in": "à la cantine"
+        },
+        "Rekwisietenkamer": {
+          "the": "la salle des accessoires",
+          "in": "dans la salle des accessoires"
+        },
+        "Projectiezaal": {
+          "the": "la salle de projection",
+          "in": "dans la salle de projection"
+        },
+        "Werkplaats": {
+          "the": "l’atelier",
+          "in": "dans l’atelier"
+        },
+        "Directiekamer": {
+          "the": "le bureau",
+          "in": "dans le bureau"
+        },
+        "Geluidsstudio": {
+          "the": "la cabine de son",
+          "in": "dans la cabine de son"
+        },
+        "Archief": {
+          "the": "les archives",
+          "in": "aux archives"
+        },
+        "Buitenset": {
+          "the": "le décor extérieur",
+          "in": "dans le décor extérieur"
+        },
+        "Poort": {
+          "the": "l’entrée",
+          "in": "à l’entrée"
+        }
+      },
+      "karavaan": {
+        "Binnenplaats": {
+          "the": "la cour",
+          "in": "dans la cour"
+        },
+        "Bazaar": {
+          "the": "le bazar",
+          "in": "au bazar"
+        },
+        "Theehuis": {
+          "the": "le salon de thé",
+          "in": "dans le salon de thé"
+        },
+        "Badhuis": {
+          "the": "le hammam",
+          "in": "au hammam"
+        },
+        "Waterput": {
+          "the": "la place du puits",
+          "in": "sur la place du puits"
+        },
+        "Gastenkamer": {
+          "the": "la chambre",
+          "in": "dans la chambre"
+        },
+        "Tapijtwinkel": {
+          "the": "la boutique de tapis",
+          "in": "dans la boutique de tapis"
+        },
+        "Poort": {
+          "the": "le porche",
+          "in": "sous le porche"
+        },
+        "Dakterras": {
+          "the": "la terrasse",
+          "in": "sur la terrasse"
+        },
+        "Stal": {
+          "the": "l’écurie",
+          "in": "dans l’écurie"
+        },
+        "Keuken": {
+          "the": "la cuisine",
+          "in": "dans la cuisine"
+        },
+        "Voorraadkamer": {
+          "the": "la réserve",
+          "in": "dans la réserve"
+        }
+      },
+      "abdij": {
+        "Scriptorium": {
+          "the": "le scriptorium",
+          "in": "dans le scriptorium"
+        },
+        "Kapel": {
+          "the": "la chapelle",
+          "in": "dans la chapelle"
+        },
+        "Kruidentuin": {
+          "the": "le jardin des simples",
+          "in": "dans le jardin des simples"
+        },
+        "Bibliotheek": {
+          "the": "la bibliothèque",
+          "in": "dans la bibliothèque"
+        },
+        "Refter": {
+          "the": "le réfectoire",
+          "in": "dans le réfectoire"
+        },
+        "Slaapzaal": {
+          "the": "le dortoir",
+          "in": "dans le dortoir"
+        },
+        "Kloostergang": {
+          "the": "le cloître",
+          "in": "dans le cloître"
+        },
+        "Kelder": {
+          "the": "la cave",
+          "in": "à la cave"
+        },
+        "Keuken": {
+          "the": "la cuisine",
+          "in": "dans la cuisine"
+        },
+        "Klokkentoren": {
+          "the": "le clocher",
+          "in": "dans le clocher"
+        },
+        "Ziekenboeg": {
+          "the": "l’infirmerie",
+          "in": "à l’infirmerie"
+        },
+        "Bakkerij": {
+          "the": "le fournil",
+          "in": "dans le fournil"
+        }
+      },
+      "vuurtoren": {
+        "Lantaarnkamer": {
+          "the": "la lanterne",
+          "in": "dans la lanterne"
+        },
+        "Wenteltrap": {
+          "the": "l’escalier",
+          "in": "dans l’escalier"
+        },
+        "Wachtershuis": {
+          "the": "la maison du gardien",
+          "in": "dans la maison du gardien"
+        },
+        "Steiger": {
+          "the": "la jetée",
+          "in": "sur la jetée"
+        },
+        "Botenhuis": {
+          "the": "le hangar à bateaux",
+          "in": "dans le hangar à bateaux"
+        },
+        "Seinkamer": {
+          "the": "la salle du télégraphe",
+          "in": "dans la salle du télégraphe"
+        },
+        "Klif": {
+          "the": "la falaise",
+          "in": "sur la falaise"
+        },
+        "Strand": {
+          "the": "la plage",
+          "in": "sur la plage"
+        },
+        "Keuken": {
+          "the": "la cuisine",
+          "in": "dans la cuisine"
+        },
+        "Kelder": {
+          "the": "la cave",
+          "in": "à la cave"
+        },
+        "Werkplaats": {
+          "the": "l’atelier",
+          "in": "dans l’atelier"
+        },
+        "Voorraadkamer": {
+          "the": "la réserve",
+          "in": "dans la réserve"
+        }
       }
     },
     "furniture": {
@@ -7096,6 +9108,106 @@
         "a": "un shaker",
         "next": "à côté d’un shaker",
         "with": "avec un shaker"
+      },
+      "filmcamera": {
+        "a": "une caméra",
+        "next": "à côté d’une caméra",
+        "with": "avec une caméra"
+      },
+      "schijnwerper": {
+        "a": "un projecteur",
+        "next": "à côté d’un projecteur",
+        "with": "avec un projecteur"
+      },
+      "regiestoel": {
+        "a": "une chaise de réalisateur",
+        "next": "à côté d’une chaise de réalisateur",
+        "with": "avec une chaise de réalisateur"
+      },
+      "klapbord": {
+        "a": "un clap",
+        "next": "à côté d’un clap",
+        "with": "avec un clap"
+      },
+      "filmspoel": {
+        "a": "une bobine",
+        "next": "à côté d’une bobine",
+        "with": "avec une bobine"
+      },
+      "tapijt": {
+        "a": "un tapis",
+        "next": "à côté d’un tapis",
+        "with": "avec un tapis"
+      },
+      "specerijen": {
+        "a": "un panier d’épices",
+        "next": "à côté d’un panier d’épices",
+        "with": "avec un panier d’épices"
+      },
+      "kruik": {
+        "a": "une jarre",
+        "next": "à côté d’une jarre",
+        "with": "avec une jarre"
+      },
+      "zadel": {
+        "a": "une selle de chameau",
+        "next": "à côté d’une selle de chameau",
+        "with": "avec une selle de chameau"
+      },
+      "weegschaal": {
+        "a": "une balance en laiton",
+        "next": "à côté d’une balance en laiton",
+        "with": "avec une balance en laiton"
+      },
+      "lessenaar": {
+        "a": "un pupitre",
+        "next": "à côté d’un pupitre",
+        "with": "avec un pupitre"
+      },
+      "kandelaar": {
+        "a": "un chandelier",
+        "next": "à côté d’un chandelier",
+        "with": "avec un chandelier"
+      },
+      "bijenkorf": {
+        "a": "une ruche",
+        "next": "à côté d’une ruche",
+        "with": "avec une ruche"
+      },
+      "vijzel": {
+        "a": "un mortier",
+        "next": "à côté d’un mortier",
+        "with": "avec un mortier"
+      },
+      "zandloper": {
+        "a": "un sablier",
+        "next": "à côté d’un sablier",
+        "with": "avec un sablier"
+      },
+      "boei": {
+        "a": "une bouée de sauvetage",
+        "next": "à côté d’une bouée de sauvetage",
+        "with": "avec une bouée de sauvetage"
+      },
+      "fuik": {
+        "a": "un casier à homards",
+        "next": "à côté d’un casier à homards",
+        "with": "avec un casier à homards"
+      },
+      "misthoorn": {
+        "a": "une corne de brume",
+        "next": "à côté d’une corne de brume",
+        "with": "avec une corne de brume"
+      },
+      "stormlamp": {
+        "a": "une lampe-tempête",
+        "next": "à côté d’une lampe-tempête",
+        "with": "avec une lampe-tempête"
+      },
+      "verrekijker": {
+        "a": "une longue-vue",
+        "next": "à côté d’une longue-vue",
+        "with": "avec une longue-vue"
       }
     }
   }

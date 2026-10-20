@@ -352,6 +352,122 @@ const THEMES = [
       { label: 'Huisdetective Nora',   gender: 'f', color: '#D9A441', style: { hair: 1, glasses: true } }
     ],
     outro: 'De tafels zijn leeg, de fiches geteld. Het huis wint niet altijd.'
+  },
+  {
+    id: 'filmstudio', unlock: 44, icon: '🎬', title: 'Paradise Pictures', short: 'Filmstudio',
+    map: { accent: '#26232E', ring: '#F2C46D' }, tagline: 'Hollywood, 1931. De eerste geluidsfilm van de studio, en een baas die zijn laatste scène niet haalt.',
+    intro: 'Paradise Pictures, Hollywood, 1931. De studio draait zijn eerste geluidsfilm. Na de laatste opname van de dag ligt studiobaas Samuel Gold in de projectiezaal, terwijl de film nog loopt.',
+    victimName: 'Studiobaas Samuel Gold', roomWord: 'ruimte', roomWordPlural: 'ruimtes', floor: 'beton',
+    rooms: [
+      { name: 'Studiohal', article: 'de', color: '#F2C46D' }, { name: 'Montagekamer', article: 'de', color: '#93A9C9' },
+      { name: 'Kleedkamer', article: 'de', color: '#F0A6A0' }, { name: 'Kantine', article: 'de', color: '#C7D9A0' },
+      { name: 'Rekwisietenkamer', article: 'de', color: '#D9B48A' }, { name: 'Projectiezaal', article: 'de', color: '#B3A1D6' },
+      { name: 'Werkplaats', article: 'de', color: '#C9B79C' }, { name: 'Directiekamer', article: 'de', color: '#D9737F' },
+      { name: 'Geluidsstudio', article: 'de', color: '#7FB3B0' }, { name: 'Archief', article: 'het', color: '#D0C9BD' },
+      { name: 'Buitenset', article: 'de', color: '#E9C9A0' }, { name: 'Poort', article: 'de', color: '#8CC3DE' }
+    ],
+    furniture: [
+      { id: 'filmcamera', nl: 'een filmcamera' }, { id: 'schijnwerper', nl: 'een schijnwerper' }, { id: 'regiestoel', nl: 'een regiestoel' },
+      { id: 'klapbord', nl: 'een klapbord' }, { id: 'filmspoel', nl: 'een filmspoel' }
+    ],
+    suspects: [
+      { label: 'Filmster Vivian',           gender: 'f', color: '#B85C5C', style: { hair: 1 } },
+      { label: 'Regisseur Baxter',          gender: 'm', color: '#5C8B5E', style: { hair: 0, glasses: true, hat: 'cap' } },
+      { label: 'Schrijfster Peggy',         gender: 'f', color: '#C2185B', style: { hair: 2 } },
+      { label: 'Stuntman Hank',             gender: 'm', color: '#B8955C', style: { hair: 3, hat: 'bandana' } },
+      { label: 'Cameraman Lenny',           gender: 'm', color: '#8B5CB8', style: { hair: 0, hat: 'cap' } },
+      { label: 'Grimeuse Rita',             gender: 'f', color: '#5C7AB8', style: { hair: 4, hat: 'bandana' } },
+      { label: 'Agent Sid',                 gender: 'm', color: '#2C3E50', style: { hair: 3, moustache: true } },
+      { label: 'Starlet Joy',               gender: 'f', color: '#D9A441', style: { hair: 4 } }
+    ],
+    outro: 'De lampen gaan uit en de film is in het blik. Het einde klopt eindelijk.'
+  },
+  {
+    id: 'karavaan', unlock: 48, icon: '🐫', title: 'Karavanserai Al-Nour', short: 'Karavaan',
+    map: { accent: '#0E6E73', ring: '#F2C46D' }, tagline: 'Een oase op de oude specerijenroute. Twaalf kamelen, acht reizigers, en een karavaanleider die niet meer vertrekt.',
+    intro: 'Karavanserai Al-Nour, een oase op de oude specerijenroute. De karavaan rust één nacht binnen de muren. Bij zonsopgang ligt karavaanleider Idris bij de kamelen, en de poort is de hele nacht dicht geweest.',
+    victimName: 'Karavaanleider Idris', roomWord: 'ruimte', roomWordPlural: 'ruimtes', floor: 'mozaiek',
+    rooms: [
+      { name: 'Binnenplaats', article: 'de', color: '#F2C46D' }, { name: 'Bazaar', article: 'de', color: '#E8A798' },
+      { name: 'Theehuis', article: 'het', color: '#9FCBA8' }, { name: 'Badhuis', article: 'het', color: '#8CC3DE' },
+      { name: 'Waterput', article: 'de', color: '#93A9C9' }, { name: 'Gastenkamer', article: 'de', color: '#B3A1D6' },
+      { name: 'Tapijtwinkel', article: 'de', color: '#D9737F' }, { name: 'Poort', article: 'de', color: '#C9B79C' },
+      { name: 'Dakterras', article: 'het', color: '#F3B57A' }, { name: 'Stal', article: 'de', color: '#C7D9A0' },
+      { name: 'Keuken', article: 'de', color: '#9FC8C8' }, { name: 'Voorraadkamer', article: 'de', color: '#D0C9BD' }
+    ],
+    furniture: [
+      { id: 'tapijt', nl: 'een tapijt' }, { id: 'specerijen', nl: 'een mand specerijen' }, { id: 'kruik', nl: 'een waterkruik' },
+      { id: 'zadel', nl: 'een kameelzadel' }, { id: 'weegschaal', nl: 'een koperen weegschaal' }
+    ],
+    suspects: [
+      { label: 'Koopvrouw Layla',           gender: 'f', color: '#B85C5C', style: { hair: 4, hat: 'bandana' } },
+      { label: 'Gids Tariq',                gender: 'm', color: '#5C8B5E', style: { hair: 0, hat: 'bandana' } },
+      { label: 'Tapijthandelaar Yusuf',     gender: 'm', color: '#C2185B', style: { hair: 0, beard: true, hat: 'cap' } },
+      { label: 'Reizigster Beatrix',        gender: 'f', color: '#B8955C', style: { hair: 1, hat: 'helmet' } },
+      { label: 'Theeschenker Hamid',        gender: 'm', color: '#8B5CB8', style: { hair: 2, hat: 'cap' } },
+      { label: 'Sterrenkijker Zahra',       gender: 'f', color: '#5C7AB8', style: { hair: 4, hat: 'bandana' } },
+      { label: 'Bewaker Karim',             gender: 'm', color: '#2C3E50', style: { hair: 3, moustache: true } },
+      { label: 'Dichteres Samira',          gender: 'f', color: '#D9A441', style: { hair: 2 } }
+    ],
+    outro: 'De karavaan trekt verder. Achter de poort blijft één geheim minder achter.'
+  },
+  {
+    id: 'abdij', unlock: 52, icon: '⛪', title: 'De Abdij van Sint-Aldric', short: 'Abdij',
+    map: { accent: '#3D4A2E', ring: '#E3C27A' }, tagline: 'Een abdij in de bergen, 1327. Een verboden boek, een gesloten bibliotheek, en een abt die de nacht niet overleeft.',
+    intro: 'Abdij van Sint-Aldric, winter 1327. De sneeuw sluit de bergpas af. Na het nachtgebed ligt abt Bertram in het scriptorium, met inkt aan zijn vingers.',
+    victimName: 'Abt Bertram', roomWord: 'ruimte', roomWordPlural: 'ruimtes', floor: 'plavuizen',
+    rooms: [
+      { name: 'Scriptorium', article: 'het', color: '#F2C46D' }, { name: 'Kapel', article: 'de', color: '#E3B7D6' },
+      { name: 'Kruidentuin', article: 'de', color: '#C7D9A0' }, { name: 'Bibliotheek', article: 'de', color: '#D9B48A' },
+      { name: 'Refter', article: 'de', color: '#E8A798' }, { name: 'Slaapzaal', article: 'de', color: '#B3A1D6' },
+      { name: 'Kloostergang', article: 'de', color: '#C9B79C' }, { name: 'Kelder', article: 'de', color: '#D0C9BD' },
+      { name: 'Keuken', article: 'de', color: '#9FC8C8' }, { name: 'Klokkentoren', article: 'de', color: '#93A9C9' },
+      { name: 'Ziekenboeg', article: 'de', color: '#8CC3DE' }, { name: 'Bakkerij', article: 'de', color: '#F3B57A' }
+    ],
+    furniture: [
+      { id: 'lessenaar', nl: 'een schrijflessenaar' }, { id: 'kandelaar', nl: 'een kandelaar' }, { id: 'bijenkorf', nl: 'een bijenkorf' },
+      { id: 'vijzel', nl: 'een vijzel' }, { id: 'zandloper', nl: 'een zandloper' }
+    ],
+    suspects: [
+      { label: 'Broeder Anselm',            gender: 'm', color: '#B85C5C', style: { hair: 0, beard: true } },
+      { label: 'Broeder Cuthbert',          gender: 'm', color: '#5C8B5E', style: { hair: 0 } },
+      { label: 'Novice Elias',              gender: 'm', color: '#C2185B', style: { hair: 2 } },
+      { label: 'Pelgrim Gisela',            gender: 'f', color: '#B8955C', style: { hair: 1, hat: 'tophat' } },
+      { label: 'Kruidenvrouw Hilde',        gender: 'f', color: '#8B5CB8', style: { hair: 4, hat: 'bandana' } },
+      { label: 'Gravin Mathilde',           gender: 'f', color: '#5C7AB8', style: { hair: 3 } },
+      { label: 'Verluchtster Odile',        gender: 'f', color: '#2C3E50', style: { hair: 1 } },
+      { label: 'Kelderbroeder Waldo',       gender: 'm', color: '#D9A441', style: { hair: 0, beard: true } }
+    ],
+    outro: 'De klok luidt voor het avondgebed. Het boek staat weer op zijn plank.'
+  },
+  {
+    id: 'vuurtoren', unlock: 56, icon: '🌊', title: 'Vuurtoren Grauwkaap', short: 'Vuurtoren',
+    map: { accent: '#2A4D69', ring: '#F5E6B8' }, tagline: '1900. Een eiland, een storm van drie dagen, en een vuurtoren die voor het eerst in twintig jaar donker is.',
+    intro: 'Vuurtoren Grauwkaap, november 1900. Een storm sluit het eiland af van de wal. Om middernacht gaat het licht uit. Boven in de lantaarnkamer ligt wachter Silas Mourne.',
+    victimName: 'Vuurtorenwachter Silas Mourne', roomWord: 'ruimte', roomWordPlural: 'ruimtes', floor: 'kasseien',
+    rooms: [
+      { name: 'Lantaarnkamer', article: 'de', color: '#F2C46D' }, { name: 'Wenteltrap', article: 'de', color: '#D0C9BD' },
+      { name: 'Wachtershuis', article: 'het', color: '#E8A798' }, { name: 'Steiger', article: 'de', color: '#D9B48A' },
+      { name: 'Botenhuis', article: 'het', color: '#9FCBA8' }, { name: 'Seinkamer', article: 'de', color: '#B3A1D6' },
+      { name: 'Klif', article: 'het', color: '#C9B79C' }, { name: 'Strand', article: 'het', color: '#EBD7A6' },
+      { name: 'Keuken', article: 'de', color: '#9FC8C8' }, { name: 'Kelder', article: 'de', color: '#93A9C9' },
+      { name: 'Werkplaats', article: 'de', color: '#C7D9A0' }, { name: 'Voorraadkamer', article: 'de', color: '#E3B7D6' }
+    ],
+    furniture: [
+      { id: 'boei', nl: 'een reddingsboei' }, { id: 'fuik', nl: 'een kreeftenfuik' }, { id: 'misthoorn', nl: 'een misthoorn' },
+      { id: 'stormlamp', nl: 'een stormlamp' }, { id: 'verrekijker', nl: 'een verrekijker' }
+    ],
+    suspects: [
+      { label: 'Assistent Jonas',           gender: 'm', color: '#B85C5C', style: { hair: 2, hat: 'cap' } },
+      { label: 'Huishoudster Martha',       gender: 'f', color: '#5C8B5E', style: { hair: 4 } },
+      { label: 'Visser Bartel',             gender: 'm', color: '#C2185B', style: { hair: 0, beard: true, hat: 'helmet' } },
+      { label: 'Loodsman Kees',             gender: 'm', color: '#B8955C', style: { hair: 3, moustache: true, hat: 'cap' } },
+      { label: 'Vogelkundige Dorien',       gender: 'f', color: '#8B5CB8', style: { hair: 1, glasses: true } },
+      { label: 'Schipbreukeling Lev',       gender: 'm', color: '#5C7AB8', style: { hair: 2 } },
+      { label: 'Onderwijzeres Wilma',       gender: 'f', color: '#2C3E50', style: { hair: 3, glasses: true } },
+      { label: 'Telegrafiste Fien',         gender: 'f', color: '#D9A441', style: { hair: 2 } }
+    ],
+    outro: 'Het licht draait weer. Elke schipper ziet het, en jij weet wie het doofde.'
   }
 ];
 
@@ -366,6 +482,10 @@ const TITLES = new Set(['dr.', 'majoor', 'tante', 'kok', 'bootsman', 'stuurman',
   'diva', 'tenor', 'dirigent', 'kostumière', 'baron', 'toneelmeester', 'recensente', 'directeur',
   'tekenares', 'opzichter', 'correspondente', 'kameeldrijver', 'egyptologe', 'verzamelaar',
   'croupier', 'zangeres', 'erfgename', 'coureur', 'bankier', 'fotomodel', 'gokker', 'huisdetective', 'eigenaar',
+  'studiobaas', 'filmster', 'regisseur', 'schrijfster', 'stuntman', 'cameraman', 'grimeuse', 'agent', 'starlet',
+  'karavaanleider', 'koopvrouw', 'tapijthandelaar', 'reizigster', 'theeschenker', 'sterrenkijker', 'bewaker', 'dichteres',
+  'abt', 'broeder', 'novice', 'pelgrim', 'kruidenvrouw', 'verluchtster', 'kelderbroeder',
+  'vuurtorenwachter', 'assistent', 'huishoudster', 'visser', 'loodsman', 'vogelkundige', 'schipbreukeling', 'onderwijzeres', 'telegrafiste',
   // Engels
   'major', 'aunt', 'lady', 'mr.', 'cook', 'boatswain', 'helmsman', 'miss', 'gunner', 'cabin', 'boy', 'countess', 'doorman', 'mrs', 'dancer', 'pilot', 'engineer',
   'cadet', 'officer', 'biologist', 'guide', 'restorer', 'night', 'guard', 'art', 'dealer', 'intern', 'cleaner', 'baroness', 'magician', 'chess', 'master',
@@ -373,7 +493,11 @@ const TITLES = new Set(['dr.', 'majoor', 'tante', 'kok', 'bootsman', 'stuurman',
   'ski', 'instructor', 'mountain', 'rescuer', 'tourist', 'photographer', 'young', 'host', 'chief',
   'nephew', 'notary', 'sister', 'painter', 'foreman', 'conductor', 'seamstress', 'stage', 'manager', 'critic',
   'correspondent', 'camel', 'driver', 'egyptologist', 'collector',
-  'singer', 'heiress', 'racing', 'banker', 'model', 'gambler', 'house', 'detective', 'owner', 'doctor', 'mrs.']);
+  'singer', 'heiress', 'racing', 'banker', 'model', 'gambler', 'house', 'detective', 'owner', 'doctor', 'mrs.',
+  'studio', 'boss', 'film', 'star', 'director', 'writer', 'make-up', 'stuntman', 'cameraman', 'agent', 'starlet',
+  'caravan', 'leader', 'merchant', 'carpet', 'tea', 'server', 'stargazer', 'poet',
+  'abbot', 'brother', 'novice', 'pilgrim', 'herb', 'woman', 'illuminator', 'cellarer',
+  'keeper', 'assistant', 'housekeeper', 'fisherman', 'ornithologist', 'castaway', 'schoolteacher', 'telegraphist']);
 
 const PARTICLES = new Set(['von', 'van', 'de', 'der', 'den', 'du', 'la', 'le', 'di', 'da']);
 

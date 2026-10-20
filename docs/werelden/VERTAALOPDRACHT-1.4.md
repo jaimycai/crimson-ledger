@@ -1,7 +1,7 @@
 # Translation task 1.4 — new worlds
 
 Your task message names the worlds, the source file and the file number N (20 for Hacienda and Opera, 21 for the
-Tomb of Nefer-Ankh and Casino Azur, and so on). You add those worlds to **one** existing language pack of Crimson Ledger. Everything else in that pack is done
+Tomb of Nefer-Ankh and Casino Azur, 22 for Paradise Pictures and the Caravanserai, 23 for the Abbey and the Lighthouse). You add those worlds to **one** existing language pack of Crimson Ledger. Everything else in that pack is done
 and must stay as it is. Read `docs/TRANSLATION-BRIEF.md` first (rules for logic, gaps, names, tone, length, grammar).
 
 ## Source
@@ -83,5 +83,49 @@ Then build and check:
   champagnetoren = champagne tower of glasses, shaker = cocktail shaker.
 - Roulette, poker and Grand Prix terms: use what players in your language say ("Faites vos jeux" and "Rien ne va plus"
   are French casino calls; keep them in French where your casinos use them, otherwise translate).
+
+## Content notes: Paradise Pictures and the Caravanserai of Al-Nour (N = 22)
+
+- **Names.** Keep the given names (Vivian, Baxter, Peggy, Hank, Lenny, Rita, Sid, Joy; Layla, Tariq, Yusuf, Beatrix,
+  Hamid, Zahra, Karim, Samira; victims Samuel Gold and Idris). Translate titles:
+  Filmster (film star, female), Regisseur (film director), Schrijfster (screenwriter, female), Stuntman, Cameraman,
+  Grimeuse (make-up artist, female), Agent (talent agent, not police), Starlet (young actress); Studiobaas (studio boss)
+  is the victim's title. Koopvrouw (spice merchant, female), Gids (desert guide), Tapijthandelaar (carpet seller),
+  Reizigster (woman traveller), Theeschenker (tea server), Sterrenkijker (stargazer and navigator, female), Bewaker
+  (gate guard), Dichteres (poet, female); Karavaanleider (caravan leader) is the victim's title.
+- **Rooms.** Studiohal = sound stage (a large hall), Montagekamer = cutting room, Projectiezaal = screening room,
+  Geluidsstudio = sound booth, Archief = film vault, Buitenset = backlot (outdoor), Poort = studio gate (outdoor);
+  Binnenplaats = courtyard (outdoor), Bazaar = market hall, Theehuis = tea house, Badhuis = bathhouse (hammam),
+  Waterput = the well (outdoor spot), Tapijtwinkel = carpet shop, Poort = the caravanserai gate, Dakterras = roof
+  terrace (outdoor), Stal = stable for camels. Kleedkamer, Rekwisietenkamer, Directiekamer, Werkplaats, Kantine,
+  Gastenkamer, Keuken, Voorraadkamer: reuse your existing names where they fit this world.
+- **Furniture.** filmcamera = film camera on a tripod, schijnwerper = studio spotlight, regiestoel = director's chair,
+  klapbord = clapperboard, filmspoel = film reel; tapijt = carpet, specerijen = basket of spices, kruik = clay water
+  jar, zadel = camel saddle, weegschaal = brass scale.
+- Film words: use what your film industry says ("take", "cut", "action", "the talkies"). 1931 Hollywood: the studio's
+  first sound film.
+
+## Content notes: the Abbey of Saint Aldric and Greycape Lighthouse (N = 23)
+
+- **Names.** Keep the given names (Anselm, Cuthbert, Elias, Gisela, Hilde, Mathilde, Odile, Waldo; Jonas, Martha,
+  Bartel, Kees, Dorien, Lev, Wilma, Fien; victims Abbot Bertram and Silas Mourne). "Sint-Aldric" is Saint Aldric in your
+  language's form for saints; "Grauwkaap" is the island's name (English Greycape): translate it as a place name if your
+  language does that for such names, otherwise transliterate the English. Translate titles: Broeder (monk, "Brother"),
+  Novice (novice monk), Pelgrim (woman pilgrim), Kruidenvrouw (village herb woman), Gravin (countess, keep as in your
+  other worlds), Verluchtster (manuscript illuminator, female), Kelderbroeder (cellarer monk); Abt (abbot) is the
+  victim's title. Assistent (assistant lighthouse keeper), Huishoudster (housekeeper), Visser (fisherman), Loodsman
+  (harbour pilot, not an aircraft pilot), Vogelkundige (ornithologist, female), Schipbreukeling (castaway, shipwreck
+  survivor), Onderwijzeres (schoolteacher, female), Telegrafiste (telegraph operator, female); Vuurtorenwachter
+  (lighthouse keeper) is the victim's title.
+- **Rooms.** Scriptorium = the monks' writing room, Refter = refectory (dining hall), Slaapzaal = dormitory, Kloostergang
+  = cloister (covered walk around a garden), Kruidentuin = herb garden (outdoor), Klokkentoren = bell tower (reuse the
+  hacienda's form if it fits), Ziekenboeg = infirmary, Bakkerij = bakery; Lantaarnkamer = lantern room at the top,
+  Wenteltrap = spiral stairs, Wachtershuis = keeper's house, Steiger = jetty (outdoor), Botenhuis = boathouse, Seinkamer
+  = signal room (telegraph), Klif = cliff (outdoor), Strand = beach (outdoor). Kapel, Bibliotheek, Kelder, Keuken,
+  Werkplaats, Voorraadkamer: reuse your existing names.
+- **Furniture.** lessenaar = slanted writing desk for copying books, kandelaar = candlestick, bijenkorf = straw beehive,
+  vijzel = mortar and pestle, zandloper = hourglass; boei = lifebuoy, fuik = lobster pot (wicker trap), misthoorn =
+  foghorn, stormlamp = storm lantern, verrekijker = telescope (spyglass on a stand).
+- Church words (vespers, compline, the bell for prayer): use the words your language uses for a Catholic abbey.
 
 Do not edit any file outside `i18n/.work/<code>/` except the rebuilt `i18n/<code>.js`. Do not commit.

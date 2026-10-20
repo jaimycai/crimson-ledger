@@ -1038,6 +1038,210 @@
           "Gokker Jack": "Jack",
           "Huisdetective Nora": "Nora"
         }
+      },
+      "filmstudio": {
+        "title": "Paradise Pictures",
+        "short": "Filmstudio",
+        "victimName": "Studiochef Samuel Gold",
+        "roomWord": "Raum",
+        "roomWordPlural": "Räume",
+        "tagline": "Hollywood, 1931. Der erste Tonfilm des Studios und ein Chef, der seine letzte Szene nicht überlebt.",
+        "intro": "Paradise Pictures, Hollywood, 1931. Das Studio dreht seinen ersten Tonfilm. Nach der letzten Aufnahme des Tages liegt Studiochef Samuel Gold im Vorführsaal, während der Film noch läuft.",
+        "outro": "Die Lichter gehen aus, und der Film ist im Kasten. Endlich stimmt das Ende.",
+        "rooms": {
+          "Studiohal": "Studiohalle",
+          "Montagekamer": "Schneideraum",
+          "Kleedkamer": "Garderobe",
+          "Kantine": "Kantine",
+          "Rekwisietenkamer": "Requisite",
+          "Projectiezaal": "Vorführsaal",
+          "Werkplaats": "Werkstatt",
+          "Directiekamer": "Direktion",
+          "Geluidsstudio": "Tonkabine",
+          "Archief": "Archiv",
+          "Buitenset": "Freigelände",
+          "Poort": "Toreinfahrt"
+        },
+        "furniture": {
+          "filmcamera": "Filmkamera",
+          "schijnwerper": "Scheinwerfer",
+          "regiestoel": "Regiestuhl",
+          "klapbord": "Filmklappe",
+          "filmspoel": "Filmspule"
+        },
+        "suspects": {
+          "Filmster Vivian": "Filmstar Vivian",
+          "Regisseur Baxter": "Regisseur Baxter",
+          "Schrijfster Peggy": "Drehbuch­autorin Peggy",
+          "Stuntman Hank": "Stuntman Hank",
+          "Cameraman Lenny": "Kameramann Lenny",
+          "Grimeuse Rita": "Masken­bildnerin Rita",
+          "Agent Sid": "Filmagent Sid",
+          "Starlet Joy": "Starlet Joy"
+        },
+        "suspectShort": {
+          "Filmster Vivian": "Vivian",
+          "Regisseur Baxter": "Baxter",
+          "Schrijfster Peggy": "Peggy",
+          "Stuntman Hank": "Hank",
+          "Cameraman Lenny": "Lenny",
+          "Grimeuse Rita": "Rita",
+          "Agent Sid": "Sid",
+          "Starlet Joy": "Joy"
+        }
+      },
+      "karavaan": {
+        "title": "Die Karawanserei Al-Nour",
+        "short": "Karawane",
+        "victimName": "Karawanenführer Idris",
+        "roomWord": "Raum",
+        "roomWordPlural": "Räume",
+        "tagline": "Eine Oase an der alten Gewürzstraße. Zwölf Kamele, acht Reisende und ein Karawanenführer, der nie wieder aufbricht.",
+        "intro": "Karawanserei Al-Nour, eine Oase an der alten Gewürzstraße. Die Karawane rastet eine Nacht hinter den Mauern. Bei Sonnenaufgang liegt Karawanenführer Idris bei den Kamelen, und das Tor war die ganze Nacht geschlossen.",
+        "outro": "Die Karawane zieht weiter. Hinter dem Tor bleibt ein Geheimnis weniger zurück.",
+        "rooms": {
+          "Binnenplaats": "Innenhof",
+          "Bazaar": "Basar",
+          "Theehuis": "Teehaus",
+          "Badhuis": "Badehaus",
+          "Waterput": "Brunnenplatz",
+          "Gastenkamer": "Gästezimmer",
+          "Tapijtwinkel": "Teppichladen",
+          "Poort": "Torhalle",
+          "Dakterras": "Dachterrasse",
+          "Stal": "Stall",
+          "Keuken": "Küche",
+          "Voorraadkamer": "Vorratsraum"
+        },
+        "furniture": {
+          "tapijt": "Teppich",
+          "specerijen": "Gewürzkorb",
+          "kruik": "Wasserkrug",
+          "zadel": "Kamelsattel",
+          "weegschaal": "Messingwaage"
+        },
+        "suspects": {
+          "Koopvrouw Layla": "Gewürz­händlerin Layla",
+          "Gids Tariq": "Wüsten­führer Tariq",
+          "Tapijthandelaar Yusuf": "Teppich­händler Yusuf",
+          "Reizigster Beatrix": "Globe­trotterin Beatrix",
+          "Theeschenker Hamid": "Kellner Hamid",
+          "Sterrenkijker Zahra": "Astronomin Zahra",
+          "Bewaker Karim": "Torwächter Karim",
+          "Dichteres Samira": "Dichterin Samira"
+        },
+        "suspectShort": {
+          "Koopvrouw Layla": "Layla",
+          "Gids Tariq": "Tariq",
+          "Tapijthandelaar Yusuf": "Yusuf",
+          "Reizigster Beatrix": "Beatrix",
+          "Theeschenker Hamid": "Hamid",
+          "Sterrenkijker Zahra": "Zahra",
+          "Bewaker Karim": "Karim",
+          "Dichteres Samira": "Samira"
+        }
+      },
+      "abdij": {
+        "title": "Die Abtei Sankt Aldric",
+        "short": "Abtei",
+        "victimName": "Abt Bertram",
+        "roomWord": "Raum",
+        "roomWordPlural": "Räume",
+        "tagline": "Eine Abtei in den Bergen, 1327. Ein verbotenes Buch, eine verschlossene Bibliothek und ein Abt, der die Nacht nicht überlebt.",
+        "intro": "Abtei Sankt Aldric, Winter 1327. Der Schnee sperrt den Bergpass. Nach dem Nachtgebet liegt Abt Bertram im Skriptorium, mit Tinte an den Fingern.",
+        "outro": "Die Glocke läutet zum Abendgebet. Das Buch steht wieder im Regal.",
+        "rooms": {
+          "Scriptorium": "Skriptorium",
+          "Kapel": "Kapelle",
+          "Kruidentuin": "Arzneigarten",
+          "Bibliotheek": "Bibliothek",
+          "Refter": "Refektorium",
+          "Slaapzaal": "Schlafsaal",
+          "Kloostergang": "Kreuzgang",
+          "Kelder": "Keller",
+          "Keuken": "Küche",
+          "Klokkentoren": "Glockenturm",
+          "Ziekenboeg": "Krankenstube",
+          "Bakkerij": "Backhaus"
+        },
+        "furniture": {
+          "lessenaar": "Schreibpult",
+          "kandelaar": "Kerzenleuchter",
+          "bijenkorf": "Bienenkorb",
+          "vijzel": "Mörser",
+          "zandloper": "Sanduhr"
+        },
+        "suspects": {
+          "Broeder Anselm": "Bruder Anselm",
+          "Broeder Cuthbert": "Bruder Cuthbert",
+          "Novice Elias": "Novize Elias",
+          "Pelgrim Gisela": "Pilgerin Gisela",
+          "Kruidenvrouw Hilde": "Kräuter­frau Hilde",
+          "Gravin Mathilde": "Gräfin Mathilde",
+          "Verluchtster Odile": "Buch­malerin Odile",
+          "Kelderbroeder Waldo": "Keller­meister Waldo"
+        },
+        "suspectShort": {
+          "Broeder Anselm": "Anselm",
+          "Broeder Cuthbert": "Cuthbert",
+          "Novice Elias": "Elias",
+          "Pelgrim Gisela": "Gisela",
+          "Kruidenvrouw Hilde": "Hilde",
+          "Gravin Mathilde": "Mathilde",
+          "Verluchtster Odile": "Odile",
+          "Kelderbroeder Waldo": "Waldo"
+        }
+      },
+      "vuurtoren": {
+        "title": "Leuchtturm Graukap",
+        "short": "Leuchtturm",
+        "victimName": "Leuchtturmwärter Silas Mourne",
+        "roomWord": "Raum",
+        "roomWordPlural": "Räume",
+        "tagline": "1900. Eine Insel, ein dreitägiger Sturm und ein Leuchtturm, der zum ersten Mal seit zwanzig Jahren dunkel ist.",
+        "intro": "Leuchtturm Graukap, November 1900. Ein Sturm schneidet die Insel vom Festland ab. Um Mitternacht geht das Licht aus. Oben im Laternenraum liegt Wärter Silas Mourne.",
+        "outro": "Das Licht dreht sich wieder. Jeder Schiffer sieht es, und du weißt, wer es gelöscht hat.",
+        "rooms": {
+          "Lantaarnkamer": "Laternenraum",
+          "Wenteltrap": "Wendeltreppe",
+          "Wachtershuis": "Wärterhaus",
+          "Steiger": "Steg",
+          "Botenhuis": "Bootshaus",
+          "Seinkamer": "Signalraum",
+          "Klif": "Kliff",
+          "Strand": "Strand",
+          "Keuken": "Küche",
+          "Kelder": "Keller",
+          "Werkplaats": "Werkstatt",
+          "Voorraadkamer": "Vorratsraum"
+        },
+        "furniture": {
+          "boei": "Rettungsring",
+          "fuik": "Hummerkorb",
+          "misthoorn": "Nebelhorn",
+          "stormlamp": "Sturmlaterne",
+          "verrekijker": "Fernrohr"
+        },
+        "suspects": {
+          "Assistent Jonas": "Hilfs­wärter Jonas",
+          "Huishoudster Martha": "Haus­hälterin Martha",
+          "Visser Bartel": "Fischer Bartel",
+          "Loodsman Kees": "Lotse Kees",
+          "Vogelkundige Dorien": "Ornitho­login Dorien",
+          "Schipbreukeling Lev": "Fremdling Lev",
+          "Onderwijzeres Wilma": "Lehrerin Wilma",
+          "Telegrafiste Fien": "Telegra­fistin Fien"
+        },
+        "suspectShort": {
+          "Assistent Jonas": "Jonas",
+          "Huishoudster Martha": "Martha",
+          "Visser Bartel": "Bartel",
+          "Loodsman Kees": "Kees",
+          "Vogelkundige Dorien": "Dorien",
+          "Schipbreukeling Lev": "Lev",
+          "Onderwijzeres Wilma": "Wilma",
+          "Telegrafiste Fien": "Fien"
+        }
       }
     },
     "daily": [
@@ -1144,6 +1348,30 @@
         "Alles auf die Siebzehn",
         "Die Runde von Monaco",
         "Das letzte Spiel im Azur"
+      ],
+      "filmstudio": [
+        "Der Film, den niemand sehen durfte",
+        "Der Stunt, der schiefging",
+        "Die Stimme auf der Tonspur",
+        "Die letzte Szene von Gold"
+      ],
+      "karavaan": [
+        "Der Safran von Al-Nour",
+        "Die Nacht der tausend Sterne",
+        "Der Teppich mit zwei Mustern",
+        "Die letzte Karawane"
+      ],
+      "abdij": [
+        "Das Buch ohne Titel",
+        "Die Nacht der stillen Glocke",
+        "Das Kraut, das nicht heilte",
+        "Der letzte Abt von Sankt Aldric"
+      ],
+      "vuurtoren": [
+        "Das Licht, das ausging",
+        "Der Mann aus dem Meer",
+        "Die Seite aus dem Logbuch",
+        "Die letzte Nacht auf Graukap"
       ]
     },
     "medals": {
@@ -1258,6 +1486,22 @@
       "casino": [
         "Die Bank verliert",
         "Schließe alle Teile von Casino Azur ab"
+      ],
+      "filmstudio": [
+        "Die letzte Klappe ist gefallen",
+        "Schließe alle Teile von Paradise Pictures ab"
+      ],
+      "karavaan": [
+        "Die Karawane zieht weiter",
+        "Schließe alle Teile der Karawanserei Al-Nour ab"
+      ],
+      "abdij": [
+        "Die Glocke läutet",
+        "Schließe alle Teile der Abtei Sankt Aldric ab"
+      ],
+      "vuurtoren": [
+        "Das Licht brennt wieder",
+        "Schließe alle Teile des Leuchtturms Graukap ab"
       ]
     },
     "quests": {
@@ -5966,6 +6210,1542 @@
           "♦️ Karo-Ass"
         ]
       ]
+    ],
+    "filmstudio": [
+      "Teil I · Die letzte Aufnahme",
+      "Paradise Pictures, Hollywood, 1931. Das Studio dreht seinen ersten Tonfilm. Nach der letzten Aufnahme des Tages liegt Studiochef Samuel Gold im Vorführsaal, während der Film noch läuft.",
+      "Der Projektor steht still, und der Studiochef ist tot. Der Film ist noch lange nicht fertig.",
+      "Ein Studio ist eine einzige große Halle mit vielen Türen. Fang bei denen an, die sagen, in welchem Raum sie waren; „direkt neben“ dem Scheinwerfer zählt nur genau daneben, nie schräg.",
+      [
+        [
+          "Die letzte Aufnahme",
+          "Aufnahme siebenundvierzig war endlich gut. Sie war auch die letzte.",
+          "🎬 Filmklappe"
+        ],
+        [
+          "Der Vorführsaal",
+          "Als man den Studiochef fand, lief der Film noch. Das Ende hatte er nicht gesehen.",
+          "📽️ Projektor"
+        ],
+        [
+          "Regisseur Baxter ruft „Schnitt“",
+          "Den ganzen Tag rief er „Schnitt“. Um sechs rief er gar nichts.",
+          "📣 Megafon"
+        ],
+        [
+          "Der Scheinwerfer",
+          "Um sechs gingen alle Lampen aus. Eine Lampe war eine Stunde später noch warm.",
+          "💡 Glühbirne"
+        ],
+        [
+          "Filmstar Vivian wartet",
+          "Sie wartete auf ihre letzte Szene, sagte sie. Ihr Make-up war schon ab.",
+          "💄 Lippen­stift"
+        ],
+        [
+          "Die Filmspule",
+          "Im Projektor steckte Spule drei. Spule zwei lag auf dem Boden.",
+          "🎞️ Filmspule"
+        ],
+        [
+          "Kameramann Lenny dreht weiter",
+          "Seine Kamera lief nach der letzten Aufnahme noch eine Minute. Niemand hatte darum gebeten.",
+          "🎥 Filmkamera"
+        ],
+        [
+          "Nach sechs",
+          "Um sechs ging das Tor zu. Um sieben ging es noch einmal auf.",
+          "🔑 Tor­schlüssel"
+        ]
+      ]
+    ],
+    "filmstudio-2": [
+      "Teil II · Die verschwundene Filmrolle",
+      "Die einzige Kopie des neuen Films ist weg. Die Dose stand im Archiv, hinter Schloss und Riegel. Die Premiere ist in einer Woche.",
+      "Die Filmrolle liegt wieder in der Dose. Eine Szene wurde herausgeschnitten, und du weißt, von wem.",
+      "In einem Studio zeigt jeder auf jemand anderen. Eine Aussage über zwei Personen löst du, indem du zuerst eine der beiden festlegst.",
+      [
+        [
+          "Die leere Dose",
+          "Auf der Dose steht der Titel des Films. Drin ist nichts.",
+          "🗃️ Filmdose"
+        ],
+        [
+          "Filmagent Sidruft an",
+          "Er rief an, um über den Film zu reden. Ihm hatte noch niemand gesagt, dass die Kopie weg war.",
+          "☎️ Telefon"
+        ],
+        [
+          "Das Archiv",
+          "Das Archiv geht nur mit einem Schlüssel auf. Der hängt in der Direktion, an einem Nagel.",
+          "🗝️ Archiv­schlüssel"
+        ],
+        [
+          "Drehbuchautorin Peggy schreibt um",
+          "Sie schrieb das Ende zum vierten Mal um. Jetzt kam ein Diebstahl darin vor.",
+          "⌨️ Schreib­maschine"
+        ],
+        [
+          "Der Schneideraum",
+          "Auf dem Boden lagen Filmschnipsel. Alle aus derselben Szene.",
+          "✂️ Filmschere"
+        ],
+        [
+          "Starlet Joy sieht etwas",
+          "Sie sah jemanden mit einer Dose unter dem Arm. Sie dachte, es wären Kekse darin.",
+          "🍪 Keksdose"
+        ],
+        [
+          "Der Nachtwächter",
+          "Der Nachtwächter machte jede Stunde eine Runde. Um drei ließ er eine aus.",
+          "🔦 Stablampe"
+        ],
+        [
+          "Noch eine Woche",
+          "Die Plakate hängen schon in der ganzen Stadt. Vom Film fehlt jede Spur.",
+          "🖼️ Filmplakat"
+        ]
+      ]
+    ],
+    "filmstudio-3": [
+      "Teil III · Die Stuntszene",
+      "Ein Sprung vom Dach des Saloons auf dem Freigelände, hundertmal geprobt. Heute ging er schief. Stuntman Hank schwört, dass jemand an der Matte war.",
+      "Die Matte liegt wieder an ihrem Platz, und Stuntman Hank läuft schon wieder. Der nächste Sprung geht gut.",
+      "Bei einem Stunt schauen alle nach oben, nicht aufeinander. Wer sagt, wo er NICHT war, verrät dir auch etwas: Streiche diesen Raum sofort.",
+      [
+        [
+          "Hundertmal geprobt",
+          "Hundert Sprünge, hundertmal gut. Der hundertunderste nicht.",
+          "🪜 Leiter"
+        ],
+        [
+          "Stuntman Hank fällt",
+          "Er sprang aus sechs Metern Höhe. Die Matte lag einen Meter weiter.",
+          "🛏️ Sprung­matte"
+        ],
+        [
+          "Das Dach des Saloons",
+          "Das Dach des Saloons ist aus Pappe. Ein Brett war aus Holz.",
+          "🪵 Brett"
+        ],
+        [
+          "Regisseur Baxter will es noch mal",
+          "Er ließ den Sprung elfmal wiederholen. Erst beim zwölften Mal sah er weg.",
+          "⏱️ Stoppuhr"
+        ],
+        [
+          "Das Pferd",
+          "Das Pferd scheute vor einem Knall. Im Drehbuch stand kein Schuss.",
+          "🐎 Pferd"
+        ],
+        [
+          "Maskenbildnerin Rita klebt einen Bart an",
+          "Sie klebte einem zweiten Stuntman einen Schnurrbart an. Es gab nur einen Stuntman.",
+          "🥸 Klebebart"
+        ],
+        [
+          "Das Seil",
+          "Das Seil konnte zweihundert Kilo tragen. Es riss bei siebzig.",
+          "🪢 Seil"
+        ],
+        [
+          "Kameramann Lenny filmt alles",
+          "Er filmte den Sprung von zwei Seiten. Auf der zweiten Rolle steht jemand hinter dem Schornstein.",
+          "🎞️ Zweite Rolle"
+        ]
+      ]
+    ],
+    "filmstudio-4": [
+      "Teil IV · Der Tonfilm",
+      "Der erste Film mit Ton. Die Kamera steht in einem schalldichten Kasten, und die Mikrofone hängen versteckt in Blumengestecken. Sie hören mehr, als sie sollten.",
+      "Die Aufnahmen sind geschnitten, und in der Tonkabine ist es still. Das Gespräch auf der letzten Platte ist kein Geheimnis mehr.",
+      "Beim Tonfilm darf am Set niemand ein Wort sagen, also achte darauf, wer direkt neben wem stand. Setze zuerst den Verdächtigen mit den wenigsten Möglichkeiten; der Rest folgt.",
+      [
+        [
+          "Ruhe am Set",
+          "Über der Tür brennt ein rotes Licht: Ruhe. Hinter der Tür wurde geflüstert.",
+          "🔴 Rotlicht"
+        ],
+        [
+          "Das Mikrofon in den Blumen",
+          "Im Blumengesteck steckte ein Mikrofon. Niemand vom Ton hatte es dort aufgehängt.",
+          "💐 Blumen­gesteck"
+        ],
+        [
+          "Filmstar Vivian bekommt eine Stimme",
+          "Im Stummfilm war sie ein Star. Im Tonfilm singt jemand anders für sie.",
+          "🎵 Notenblatt"
+        ],
+        [
+          "Der Eisschrank",
+          "Die Kamera steht in einem Kasten, den alle den Eisschrank nennen. An diesem Nachmittag standen zwei Leute darin.",
+          "🧊 Eisschrank"
+        ],
+        [
+          "Filmagent Sidflüstert",
+          "Er flüsterte dem Star ein Angebot ins Ohr. Das Mikrofon flüsterte mit.",
+          "🎧 Kopfhörer"
+        ],
+        [
+          "Die Wachsplatte",
+          "Der Ton liegt auf einer Wachsplatte, synchron zum Film. Eine Platte lief drei Sekunden hinterher.",
+          "💿 Wachs­platte"
+        ],
+        [
+          "Drehbuchautorin Peggy hört genau hin",
+          "Sie schrieb jeden Satz selbst. Einen Satz auf der Aufnahme kannte sie nicht.",
+          "📝 Drehbuch"
+        ],
+        [
+          "Was das Mikrofon hörte",
+          "Auf der Aufnahme hört man die Szene. Und dahinter eine Tür, die zugeht.",
+          "🔊 Laut­sprecher"
+        ]
+      ]
+    ],
+    "filmstudio-5": [
+      "Teil V · Das Vorsprechen",
+      "Hundert Bewerber für eine Rolle, in einer Schlange bis ans Tor. Jeder bekommt drei Minuten vor der Kamera. Einer von ihnen kommt von der Probeaufnahme nicht zurück.",
+      "Die Rolle ist vergeben, und die Schlange ist nach Hause gegangen. Eine Probeaufnahme wird nie gezeigt.",
+      "Beim Vorsprechen stehen alle in der Schlange, aber nicht alle im selben Raum. Fang bei dem an, der sagt, er sei allein gewesen: Das macht sofort einen ganzen Raum frei.",
+      [
+        [
+          "Hundert Bewerber",
+          "Hundert Namen auf der Liste. Am Ende des Tages noch neunundneunzig.",
+          "📋 Bewerber­liste"
+        ],
+        [
+          "Starlet Joy schaut zu",
+          "Letztes Jahr stand sie selbst noch in dieser Schlange. Jetzt schaut sie, wer nach ihr kommt.",
+          "🎀 Haar­schleife"
+        ],
+        [
+          "Die Probeaufnahme",
+          "Drei Minuten vor der Kamera. Der Film dauert vier Minuten.",
+          "🎞️ Probe­aufnahme"
+        ],
+        [
+          "Maskenbildnerin Rita schminkt",
+          "Sie schminkte hundert Gesichter. Ein Gesicht kannte sie schon.",
+          "🖌️ Puder­pinsel"
+        ],
+        [
+          "Filmagent Sidlässt unterschreiben",
+          "Er ließ einen Bewerber unterschreiben, bevor das Vorsprechen begann. Dieser Bewerber tauchte nie auf.",
+          "🖋️ Füller"
+        ],
+        [
+          "Nummer siebzehn",
+          "Jeder Bewerber bekam eine Nummer auf die Brust. Nummer siebzehn ging zweimal vorbei.",
+          "🔢 Nummern­karte"
+        ],
+        [
+          "Filmstar Vivian schaut weiter zu",
+          "Sie kam kurz vorbei, um zu sehen, wer ihr nachfolgen würde. Sie blieb, bis es dunkel war.",
+          "🧣 Pelzkragen"
+        ],
+        [
+          "Ein Mantel am Kleiderständer",
+          "Um fünf hing noch ein Mantel am Kleiderständer. Niemand holte ihn ab.",
+          "🧥 Regen­mantel"
+        ]
+      ]
+    ],
+    "filmstudio-6": [
+      "Teil VI · Der Brand im Archiv",
+      "Alte Filme sind aus Nitrat, und Nitrat brennt schneller als Papier. Mitten in der Nacht schlagen Flammen aus dem Archiv. Jemand wusste, wie schnell es gehen würde.",
+      "Das Feuer ist aus, und das Archiv ist schwarz. Ein Unfall war es nicht.",
+      "Nach einem Brand weiß niemand mehr genau, wo er stand. Nimm den Bleistift: Streiche Felder, die nicht gehen, und schau, was übrig bleibt.",
+      [
+        [
+          "Nitrat",
+          "Auf jeder Kiste steht: Rauchen verboten. Auf dem Boden lag eine Kippe.",
+          "🚭 Rauch­verbot"
+        ],
+        [
+          "Die Feuerwehr",
+          "Die Feuerwehr war in zehn Minuten da. Das Archiv brannte in fünf aus.",
+          "🚒 Feuer­wehrauto"
+        ],
+        [
+          "Kameramann Lenny rettet eine Kiste",
+          "Er rannte für eine Kiste ins Feuer. Darin lag seine eigene Arbeit.",
+          "📦 Filmkiste"
+        ],
+        [
+          "Die Feuerglocke",
+          "Die Glocke läutete um zwei. Um halb zwei roch der Nachtwächter schon etwas.",
+          "🔔 Feuer­glocke"
+        ],
+        [
+          "Drehbuchautorin Peggy arbeitete lange",
+          "Sie arbeitete bis Mitternacht am Drehbuch. Im Archiv, sagte sie zuerst.",
+          "🗒️ Schreib­block"
+        ],
+        [
+          "Stuntman Hank und das Feuer",
+          "Vor der Kamera läuft er mitten durchs Feuer. Letzte Nacht machte er einen großen Bogen darum.",
+          "🧯 Feuer­löscher"
+        ],
+        [
+          "Die Liste des Archivs",
+          "Laut Liste standen dort dreihundert Dosen. In der Asche lagen zweihundert.",
+          "📒 Archivbuch"
+        ],
+        [
+          "Regisseur Baxter schaut zu",
+          "Alle seine alten Filme gingen in Flammen auf. Er wirkte erleichtert.",
+          "👓 Runde Brille"
+        ]
+      ]
+    ],
+    "filmstudio-7": [
+      "Teil VII · Außendreh",
+      "Ein Western in der Wüste, eine Tagesfahrt vom Studio entfernt. Zehn Wagen, zwanzig Pferde und ein Städtchen aus Pappe unter der Sonne. Es fehlt ein Wasserfass.",
+      "Die Wagen fahren zurück nach Hollywood. Das Wasserfass ist gefunden, halb voll und weit weg vom Lager.",
+      "Das Brett wird größer, und die Aussagen werden sparsamer. Steht im Bericht, dass ein Raum leer war, fällt dieser ganze Raum für alle weg.",
+      [
+        [
+          "Zehn Wagen",
+          "Zehn Wagen fuhren in die Wüste. Neun Wasserfässer fuhren mit.",
+          "🛢️ Wasserfass"
+        ],
+        [
+          "Stuntman Hank fährt",
+          "Er warf die Postkutsche zweimal um. Einmal stand im Drehbuch.",
+          "🐎 Post­kutsche"
+        ],
+        [
+          "Die Mittagssonne",
+          "Um zwölf stand die Sonne genau über dem Set. Trotzdem fiel ein langer Schatten.",
+          "☀️ Mittags­sonne"
+        ],
+        [
+          "Filmstar Vivian im Sand",
+          "Sie weigerte sich, in die Wüste zu gehen. Trotzdem war Sand in ihren Stiefeln.",
+          "👢 Reit­stiefel"
+        ],
+        [
+          "Das Lagerfeuer",
+          "Am Feuer sang die ganze Truppe. Beim Refrain fehlte eine Stimme.",
+          "🪕 Banjo"
+        ],
+        [
+          "Maskenbildnerin Rita pudert",
+          "Sie puderte jeden Morgen zehn Gesichter. Auf einem Gesicht war schon Puder, von gestern Abend.",
+          "🪞 Hand­spiegel"
+        ],
+        [
+          "Der Wasserwagen",
+          "Der Wasserwagen stand die ganze Nacht beim Lager. Bei Sonnenaufgang stand er einen Kilometer weiter.",
+          "🚚 Wasser­wagen"
+        ],
+        [
+          "Filmagent Sidtelegrafiert",
+          "Im Umkreis von hundert Meilen gab es kein Telefon. Trotzdem wusste das Studio es innerhalb einer Stunde.",
+          "✉️ Telegramm"
+        ]
+      ]
+    ],
+    "filmstudio-8": [
+      "Teil VIII · Die große Gala",
+      "Der Film ist fertig, und heute Abend ist Premiere. Bei der Gala in der Studiohalle gehen die Lichter noch einmal an, mit denselben Gesichtern wie am Abend der letzten Aufnahme.",
+      "Van Dam setzt seinen Hut auf, nickt dem leeren Regiestuhl zu und geht durch das Tor hinaus in die Nacht von Hollywood. Endlich stimmt das Ende.",
+      "Die letzten Fälle, fast alle auf dem großen Brett. Bleib nicht an dem hängen, der am schwierigsten ist: Setze zuerst die anderen, dann bleibt für den letzten oft nur ein Feld übrig.",
+      [
+        [
+          "Der rote Teppich",
+          "Tausend Menschen am roten Teppich. Einer von ihnen ging mit hinein.",
+          "🎟️ Premieren­karte"
+        ],
+        [
+          "Filmstar Vivian glänzt",
+          "Alle sahen auf ihr Kleid. Niemand sah auf ihre Hände.",
+          "💎 Brosche"
+        ],
+        [
+          "Drehbuchautorin Peggy sieht ihr Ende",
+          "Sie schrieb das Ende siebenmal. Auf der Leinwand sah sie ein achtes.",
+          "📜 Schluss­szene"
+        ],
+        [
+          "Starlet Joy wird entdeckt",
+          "Alle wollten ein Foto mit ihr. Ein Fotograf wollte nur ihre Handtasche.",
+          "👛 Abend­tasche"
+        ],
+        [
+          "Regisseur Baxter dankt",
+          "Er dankte der ganzen Truppe, jedem mit Namen. Einen Namen sprach er aus wie eine Frage.",
+          "🎙️ Mikrofon"
+        ],
+        [
+          "Filmagent Sidwill mehr",
+          "Er bekam zehn Prozent von allem. Heute Abend wollte er den Rest.",
+          "💵 Dollar­schein"
+        ],
+        [
+          "Kameramann Lenny führt vor",
+          "Er führte den Film selbst in der Vorführkabine vor. Es lief eine Rolle mehr, als geschnitten worden war.",
+          "📽️ Film­projektor"
+        ],
+        [
+          "Die große Gala",
+          "Wo es anfing, im Vorführsaal. Dort endet es auch.",
+          "🎞️ Letzte Spule"
+        ]
+      ]
+    ],
+    "karavaan": [
+      "Teil I · Das Tor schließt sich",
+      "Karawanserei Al-Nour, eine Oase an der alten Gewürzstraße. Die Karawane rastet eine Nacht hinter den Mauern. Bei Sonnenaufgang liegt Karawanenführer Idris bei den Kamelen, und das Tor war die ganze Nacht geschlossen.",
+      "Der Karawanenführer ist tot, und das Tor bleibt zu. Niemand reist ab, bevor die Geschichte stimmt.",
+      "Eine Karawanserei ist ein einziger Innenhof mit vielen Türen. Fang bei denen an, die sagen, in welchem Raum sie waren; „direkt neben“ dem Wasserkrug zählt nur genau daneben, nie schräg.",
+      [
+        [
+          "Das Tor schließt sich",
+          "Bei Sonnenuntergang schloss sich das Tor. Bei Sonnenaufgang war niemand abgereist, und doch fehlte ein Reisender.",
+          "🔒 Torschloss"
+        ],
+        [
+          "Zwölf Kamele",
+          "Zwölf Kamele im Stall. Keines machte in dieser Nacht einen Laut.",
+          "🐪 Kamel"
+        ],
+        [
+          "Torwächter Karim hält Wache",
+          "Er saß die ganze Nacht am Tor. Der Schlüssel hing die ganze Nacht an seinem Gürtel, sagt er.",
+          "🗝️ Schlüssel­bund"
+        ],
+        [
+          "Der Wasserkrug",
+          "Um zehn war der Krug am Brunnen voll. Um Mitternacht war er leer.",
+          "🏺 Wasserkrug"
+        ],
+        [
+          "Gewürzhändlerin Layla wiegt",
+          "Jeden Abend wog sie ihren Safran. Gestern Abend wog sie etwas anderes.",
+          "⚖️ Messing­waage"
+        ],
+        [
+          "Der Kamelsattel",
+          "Der Sattel des Karawanenführers lag zur Abreise bereit. Er wollte fort, bevor das Tor aufging.",
+          "🪢 Sattelgurt"
+        ],
+        [
+          "Dichterin Samira schreibt",
+          "An diesem Abend schrieb sie ein Gedicht über den Karawanenführer. Es war ein Abschied.",
+          "✒️ Rohrfeder"
+        ],
+        [
+          "Vor Sonnenaufgang",
+          "Um vier krähte der Hahn. Um drei ging schon jemand über die Dachterrasse.",
+          "🐓 Hahn"
+        ]
+      ]
+    ],
+    "karavaan-2": [
+      "Teil II · Der verschwundene Safran",
+      "Gewürzhändlerin Layla reist mit zehn Säcken Safran, genug für ein Haus in der Stadt. Beim Zählen sind es neun. Das Tor ist immer noch zu.",
+      "Der zehnte Sack liegt wieder bei den anderen neun. Er ist eine Handvoll leichter.",
+      "Hinter den Mauern redet jeder über jeden. Eine Aussage über zwei Personen löst du, indem du zuerst eine der beiden festlegst.",
+      [
+        [
+          "Zehn Säcke",
+          "Zehn Säcke bei der Ankunft. Neun beim Frühstück.",
+          "🌸 Safransack"
+        ],
+        [
+          "Wüstenführer Tariq lädt ab",
+          "Er lud die Säcke selbst von den Kamelen. Er weiß noch, welches Kamel einen zu viel trug.",
+          "🧭 Kompass"
+        ],
+        [
+          "Der Vorratsraum",
+          "Der Vorratsraum lässt sich abschließen. Das Schloss sitzt innen.",
+          "🔐 Vorhänge­schloss"
+        ],
+        [
+          "Teppichhändler Yusuf rollt ein",
+          "An diesem Morgen rollte er alle seine Teppiche ein. Einer war schwerer als gestern.",
+          "🧶 Eingerollter Teppich"
+        ],
+        [
+          "Rote Fäden",
+          "Safran ist nichts als rote Fäden, leicht wie Luft. Einer lag auf dem Küchenboden.",
+          "🧵 Safran­faden"
+        ],
+        [
+          "Globetrotterin Beatrix notiert",
+          "Sie schreibt alles auf, was sie sieht. Über diese Nacht steht nichts darin.",
+          "📔 Reise­tagebuch"
+        ],
+        [
+          "Neun Säcke",
+          "Neun Säcke, alle gleich schwer. Einer davon war zur Hälfte Sand.",
+          "⏳ Wüstensand"
+        ],
+        [
+          "Kellner Hamid hört mit",
+          "Er hörte, wie jemand über Safran sprach. Eine Stunde, bevor der Safran weg war.",
+          "🍯 Zuckerdose"
+        ]
+      ]
+    ],
+    "karavaan-3": [
+      "Teil III · Das Teehaus",
+      "Jeden Abend sitzt die ganze Karawane im Teehaus beisammen. Kellner Hamid schenkt ein und hört alles. Ein Gespräch hörte niemand.",
+      "Das Teehaus ist leer, und die Gläser stehen umgedreht auf dem Tablett. Das Gespräch, das niemand hörte, kennst du jetzt.",
+      "Im Teehaus schauen alle auf die Kanne, nicht aufeinander. Wer sagt, wo er NICHT war, verrät dir auch etwas: Streiche diesen Raum sofort.",
+      [
+        [
+          "Drei Gläser",
+          "Im Teehaus trinkt jeder drei Gläser. Ein Gast ließ sein drittes stehen.",
+          "🍵 Teeglas"
+        ],
+        [
+          "Kellner Hamid schenkt ein",
+          "Er schenkt aus großer Höhe ein, damit der Tee schäumt. Heute Abend zitterte seine Hand.",
+          "🫖 Messing­kanne"
+        ],
+        [
+          "Das leere Kissen",
+          "Acht Kissen lagen um den niedrigen Tisch. Auf einem hatte niemand gesessen.",
+          "🛋️ Sitzkissen"
+        ],
+        [
+          "Astronomin Zahra hört zu",
+          "Sie sagte, sie habe zu den Sternen geschaut. Sie saß mit dem Rücken zum Fenster.",
+          "🔭 Astro­labium"
+        ],
+        [
+          "Frische Minze",
+          "In jedem Glas lag frische Minze. In einem Glas lag getrocknete.",
+          "🌿 Minzblatt"
+        ],
+        [
+          "Torwächter Karim kommt herein",
+          "Jeden Abend um zehn holt er sich ein Glas Tee. Gestern kam er um neun.",
+          "⌛ Stunden­glas"
+        ],
+        [
+          "Der Vorhang",
+          "Hinter dem Vorhang des Teehauses ist eine zweite Tür. Der Kellner sagt, sie geht nie auf.",
+          "🪟 Vorhang"
+        ],
+        [
+          "Gewürzhändlerin Layla verhandelt",
+          "Sie redete eine Stunde mit dem Wüstenführer über den Preis der Reise. Um elf war der Preis plötzlich höher.",
+          "💰 Reisegeld"
+        ]
+      ]
+    ],
+    "karavaan-4": [
+      "Teil IV · Der Basar",
+      "Markttag in der Oase. Händler aus drei Dörfern breiten ihre Waren im Innenhof aus. Tausend Stimmen, und eine davon lügt.",
+      "Die Stände werden abgebaut, und im Innenhof ist es wieder still. Die Stimme, die log, ist gefunden.",
+      "Am Markttag stehen alle Schulter an Schulter, also achte darauf, wer direkt neben wem stand. Setze zuerst den Verdächtigen mit den wenigsten Möglichkeiten; der Rest folgt.",
+      [
+        [
+          "Markttag",
+          "Tausend Menschen im Basar. Einer von ihnen kaufte nichts und blieb den ganzen Tag.",
+          "🪙 Kupfer­münze"
+        ],
+        [
+          "Teppichhändler Yusuf verkauft",
+          "Heute verkaufte er sieben Teppiche. Er hatte sechs dabei.",
+          "🧶 Teppich"
+        ],
+        [
+          "Der Gewürzkorb",
+          "Zimt, Kardamom und Kreuzkümmel. Ein Korb roch nach nichts.",
+          "🧺 Gewürzkorb"
+        ],
+        [
+          "Globetrotterin Beatrix kauft ein",
+          "Sie kaufte einen Teppich, den sie nicht tragen konnte. Sie bat niemanden um Hilfe.",
+          "🧳 Reise­koffer"
+        ],
+        [
+          "Das falsche Gewicht",
+          "Alle Gewichte auf dem Markt sind gestempelt. Ein Gewicht hatte keinen Stempel.",
+          "⚖️ Falsches Gewicht"
+        ],
+        [
+          "Wüstenführer Tariq tauscht",
+          "Er tauschte sein altes Kamel gegen ein junges. Das alte kannte den Weg zurück.",
+          "🐪 Altes Kamel"
+        ],
+        [
+          "Der Wasserverkäufer",
+          "Im Basar verkaufte jemand Wasser aus dem Brunnen. Der Brunnen gehört allen.",
+          "🫗 Wasser­becher"
+        ],
+        [
+          "Dichterin Samira trägt vor",
+          "Sie trug ein Gedicht über Verrat vor. Alle sahen denselben Mann an.",
+          "📖 Gedicht­band"
+        ]
+      ]
+    ],
+    "karavaan-5": [
+      "Teil V · Die Nacht der Sterne",
+      "Oben auf der Dachterrasse liest Astronomin Zahra in den Sternen den Weg für die nächste Reise. Die Nacht ist klar, und die Karawanserei schläft. Sie sieht ein Licht, das dort nicht hingehört.",
+      "Das Licht war eine Laterne, und die Laterne hatte einen Besitzer. Die Route steht fest.",
+      "Im Dunkeln auf dem Dach sieht jeder nur sich selbst. Fang bei dem an, der sagt, er sei allein gewesen: Das macht sofort einen ganzen Raum frei.",
+      [
+        [
+          "Ein Licht in der Wüste",
+          "Wo kein Dorf ist, brannte ein Licht. Zweimal an, zweimal aus.",
+          "🏮 Laterne"
+        ],
+        [
+          "Astronomin Zahra rechnet",
+          "Sie maß die Höhe des Polarsterns. Der Stern stand richtig, ihre Karte nicht.",
+          "🗺️ Sternkarte"
+        ],
+        [
+          "Die Dachterrasse",
+          "Auf dem Dach schliefen vier Reisende unter den Sternen. Es lagen fünf Schlafmatten da.",
+          "🛌 Schlaf­matte"
+        ],
+        [
+          "Torwächter Karim sieht es auch",
+          "Vom Tor aus sah er dasselbe Licht. Er meldete es erst am nächsten Nachmittag.",
+          "🪔 Wachlampe"
+        ],
+        [
+          "Eine Sternschnuppe",
+          "Um Mitternacht fiel eine Sternschnuppe. Alle wünschten sich etwas, bis auf einen.",
+          "🌠 Stern­schnuppe"
+        ],
+        [
+          "Dichterin Samira zählt Sterne",
+          "Sie schrieb ein Gedicht über die Sterne am Wüstenhimmel. Sie zählte einen zu viel.",
+          "📜 Gedicht"
+        ],
+        [
+          "Kellner Hamid bringt Tee",
+          "Um zwei brachte er Tee aufs Dach. Dort standen schon zwei Gläser.",
+          "🍵 Zwei Gläser"
+        ],
+        [
+          "Vor dem Morgengrauen",
+          "Die Sterne verblassten, einer nach dem anderen. Das Licht in der Wüste erlosch als letztes.",
+          "🌄 Morgen­grauen"
+        ]
+      ]
+    ],
+    "karavaan-6": [
+      "Teil VI · Das Badehaus",
+      "Das Badehaus ist warm und voller Dampf. Die Reisenden waschen sich dort den Sand des Weges ab, und niemand sieht weiter als bis zur eigenen Hand. Fast niemand.",
+      "Der Dampf hat sich verzogen, und die Steine kühlen ab. Wer sich darin versteckt hat, steht jetzt im vollen Licht.",
+      "Dampf macht Zeugen unsicher, den Grundriss nicht. Nimm den Bleistift: Streiche Felder, die nicht gehen, und schau, was übrig bleibt.",
+      [
+        [
+          "Warme Steine",
+          "Das Feuer unter den Steinen brennt Tag und Nacht. Letzte Nacht ging es eine Stunde lang aus.",
+          "🪨 Heißer Stein"
+        ],
+        [
+          "Im Dampf",
+          "Alle im Badehaus sahen nur Dampf. Ein Gast sah ein Gesicht.",
+          "🌫️ Dampf"
+        ],
+        [
+          "Globetrotterin Beatrix wäscht den Sand ab",
+          "Sie blieb eine Stunde im Badehaus. Ihr Haar war trocken.",
+          "🧼 Seife"
+        ],
+        [
+          "Acht Paar Pantoffeln",
+          "An der Tür standen acht Paar Pantoffeln. Heraus kamen neun Leute.",
+          "🩴 Bade­pantoffel"
+        ],
+        [
+          "Teppichhändler Yusuf schwitzt",
+          "Er sagte, er schwitze von der Hitze. Dabei war er noch gar nicht drin gewesen.",
+          "💦 Schweiß­tuch"
+        ],
+        [
+          "Der Brunnen",
+          "Das Badehaus bekommt sein Wasser aus dem Brunnen. Letzte Nacht kam es trüb herauf.",
+          "🪣 Brunnen­eimer"
+        ],
+        [
+          "Wüstenführer Tariq badet",
+          "Vor einer Reise badet er nie, sagt er. Letzte Nacht schon.",
+          "🌹 Rosen­wasser"
+        ],
+        [
+          "Gewürzhändlerin Layla vermisst einen Ring",
+          "Ihr Ring lag auf dem Grund des Beckens. Sie nimmt ihn nie ab.",
+          "💍 Goldring"
+        ]
+      ]
+    ],
+    "karavaan-7": [
+      "Teil VII · Die lange Reise",
+      "Die Karawane zieht zwanzig Tage durch die Wüste, von Brunnen zu Brunnen. Jeden Abend zählt Wüstenführer Tariq die Kamele. Nicht jeden Abend kommt er auf dieselbe Zahl.",
+      "Nach zwanzig Tagen erreicht die Karawane die Küste. Der Wüstenführer zählt noch einmal, und die Zahl stimmt.",
+      "Das Brett wird größer, und die Aussagen werden sparsamer. Steht im Bericht, dass ein Raum leer war, fällt dieser ganze Raum für alle weg.",
+      [
+        [
+          "Zwanzig Tage",
+          "Wasser für zwanzig Tage. Am zwölften Tag war es aufgebraucht.",
+          "💧 Wasser­schlauch"
+        ],
+        [
+          "Wüstenführer Tariq zählt die Kamele",
+          "Zwölf Kamele bei der Abreise, elf am ersten Brunnen. Am zweiten Brunnen wieder zwölf.",
+          "🐪 Lastkamel"
+        ],
+        [
+          "Die Spur",
+          "Der Wüstenführer liest jede Spur im Sand. Eine Spur lief rückwärts.",
+          "👣 Fußspur"
+        ],
+        [
+          "Astronomin Zahra weist den Weg",
+          "Jede Nacht zeigte sie nach Süden. In der sechsten Nacht ein wenig mehr nach Osten.",
+          "⭐ Leitstern"
+        ],
+        [
+          "Torwächter Karim reist mit",
+          "Zwanzig Jahre lang kam er nicht vor die Mauern. Diesmal wollte er unbedingt mit.",
+          "⛺ Reisezelt"
+        ],
+        [
+          "Der trockene Brunnen",
+          "Auf der Karte war Wasser eingezeichnet. Jemand hatte den Brunnen zugeschüttet.",
+          "🕳️ Trockener Brunnen"
+        ],
+        [
+          "Kellner Hamid kocht Tee",
+          "Jeden Abend kochte er Tee mit dem letzten Wasser. Jeden Abend blieb Wasser übrig.",
+          "🔥 Lagerfeuer"
+        ],
+        [
+          "Das Meer",
+          "Nach zwanzig Tagen roch die Karawane Salz. Ein Kamel lief in die andere Richtung.",
+          "🌊 Seewind"
+        ]
+      ]
+    ],
+    "karavaan-8": [
+      "Teil VIII · Abschied von der Oase",
+      "Die Karawane zieht weiter, und die Karawanserei bleibt zurück. Noch ein Abend auf der Dachterrasse unter den Sternen, mit denselben Gesichtern wie in der Nacht, als sich das Tor schloss.",
+      "Van Dam schüttelt den Sand aus seinem Mantel, grüßt den Torwächter und geht bei Sonnenaufgang mit der Karawane durch das Tor. Hinter dem Tor bleibt ein Geheimnis weniger zurück.",
+      "Die letzten Fälle, fast alle auf dem großen Brett. Bleib nicht an dem hängen, der am schwierigsten ist: Setze zuerst die anderen, dann bleibt für den letzten oft nur ein Feld übrig.",
+      [
+        [
+          "Der letzte Abend",
+          "Alle saßen auf der Dachterrasse. Unten im Stall brannte noch eine Kerze.",
+          "🕯️ Kerzen­licht"
+        ],
+        [
+          "Dichterin Samira nimmt Abschied",
+          "In ihrem letzten Gedicht steht kein Name. Trotzdem wussten alle, wen sie meinte.",
+          "📓 Versheft"
+        ],
+        [
+          "Gewürzhändlerin Layla rechnet ab",
+          "Sie bezahlte ihren Platz in der Karawane. Mit Safran aus dem zehnten Sack.",
+          "👝 Geldbeutel"
+        ],
+        [
+          "Teppichhändler Yusuf vergisst etwas",
+          "Er ließ einen Teppich zurück, eingerollt im Gästezimmer. Er lässt nie etwas zurück.",
+          "🧶 Letzter Teppich"
+        ],
+        [
+          "Globetrotterin Beatrix schließt ihr Buch",
+          "Ihr Buch über die Reise ist fertig. Das letzte Kapitel hat noch keinen Titel.",
+          "📕 Reise­bericht"
+        ],
+        [
+          "Torwächter Karim öffnet das Tor",
+          "Zwanzig Jahre lang öffnete er das Tor bei Sonnenaufgang. Heute tat er es eine Stunde früher.",
+          "🔑 Großer Schlüssel"
+        ],
+        [
+          "Das letzte Glas",
+          "Kellner Hamid schenkte noch einmal allen ein. Er schenkte ein Glas zu viel ein.",
+          "🫖 Letzte Kanne"
+        ],
+        [
+          "Abschied von der Oase",
+          "Wo es anfing, bei den Kamelen im Stall. Dort endet es auch.",
+          "🔔 Kamel­glocke"
+        ]
+      ]
+    ],
+    "abdij": [
+      "Teil I · Der tote Abt",
+      "Abtei Sankt Aldric, Winter 1327. Der Schnee sperrt den Bergpass. Nach dem Nachtgebet liegt Abt Bertram im Skriptorium, mit Tinte an den Fingern.",
+      "Die Brüder beten für ihren Abt. Der Schnee bleibt liegen, und der Winter ist noch lang.",
+      "Eine Abtei ist voller stiller Gänge und verschlossener Türen. Fang bei denen an, die sagen, in welchem Raum sie waren; „direkt neben“ dem Kerzenleuchter zählt nur genau daneben, nie schräg.",
+      [
+        [
+          "Nach dem Nachtgebet",
+          "Zwölf Brüder sangen die Mette. Danach fehlte eine Stimme.",
+          "📿 Paternoster­schnur"
+        ],
+        [
+          "Tinte an den Fingern",
+          "Der Abt schrieb nie selbst. Seine Finger waren schwarz von Tinte.",
+          "🪶 Gänsekiel"
+        ],
+        [
+          "Bruder Anselm zählt",
+          "Sieben Schlüssel an seinem Ring. Gestern waren es acht.",
+          "🗝️ Schlüssel­bund"
+        ],
+        [
+          "Der Kerzenleuchter",
+          "Die Kerze im Skriptorium brannte noch. Nach der Mette ist dort kein Licht erlaubt.",
+          "🕯️ Wachskerze"
+        ],
+        [
+          "Novize Elias schreibt",
+          "Auf seiner Wachstafel stand ein Psalm. Darunter, halb ausgewischt, ein Name.",
+          "📝 Wachstafel"
+        ],
+        [
+          "Schnee auf dem Pass",
+          "Niemand kam in die Abtei hinein oder hinaus. Trotzdem hing ein Seil über der Mauer.",
+          "🪢 Hanfseil"
+        ],
+        [
+          "Gräfin Mathilde wartet",
+          "Sie wollte den Abt nach der Mette sprechen. Sie sagt, er sei nicht gekommen.",
+          "💍 Siegelring"
+        ],
+        [
+          "Die erste Nacht",
+          "Das Tor war zu, und der Pass war zu. Die Tür des Skriptoriums stand offen.",
+          "🔩 Türriegel"
+        ]
+      ]
+    ],
+    "abdij-2": [
+      "Teil II · Das verbotene Buch",
+      "In der Bibliothek steht ein Buch, das niemand lesen darf. Nur der Abt hatte den Schlüssel. Jemand hat es trotzdem gelesen.",
+      "Das Buch liegt wieder hinter Schloss und Riegel. Die Frage ist nicht mehr, wer es las, sondern warum.",
+      "In der Bibliothek flüstern alle, und jedes Wort zählt. Eine Aussage über zwei Personen löst du, indem du zuerst eine der beiden festlegst.",
+      [
+        [
+          "Hinter Schloss und Riegel",
+          "Das Buch lag hinter zwei Schlössern. Ein Schloss war noch zu.",
+          "🔒 Hänge­schloss"
+        ],
+        [
+          "Bruder Anselm schweigt",
+          "Er wusste, welches Buch es war. Er wusste auch, wer danach gefragt hatte.",
+          "📚 Katalog"
+        ],
+        [
+          "Ein Blatt weniger",
+          "Das Buch hatte zweihundert Blätter. Ein Blatt war sauber herausgeschnitten.",
+          "🔪 Feder­messer"
+        ],
+        [
+          "Buchmalerin Odile schaut hin",
+          "Das Gold am Rand stammt von ihrer Hand. Das Buch selbst habe sie nie gesehen, sagt sie.",
+          "✨ Blattgold"
+        ],
+        [
+          "Lesen bei Kerzenlicht",
+          "Auf dem Pergament war Kerzenfett. Talg aus der Küche, kein Wachs aus der Kapelle.",
+          "🕯️ Talgkerze"
+        ],
+        [
+          "Novize Elias liest",
+          "Er könne kaum Latein, sagt er. Auf seiner Wachstafel stand ein Satz aus dem verbotenen Buch.",
+          "✍️ Abge­schriebener Satz"
+        ],
+        [
+          "Kellermeister Waldo und die Gräfin",
+          "Sie sprachen miteinander im Kreuzgang. Danach sagten sie kein Wort mehr zueinander.",
+          "✉️ Ver­siegelter Brief"
+        ],
+        [
+          "Das verbotene Buch",
+          "Niemand durfte es lesen. Zwei haben es trotzdem getan.",
+          "📕 Verbotenes Buch"
+        ]
+      ]
+    ],
+    "abdij-3": [
+      "Teil III · Der Arzneigarten",
+      "Der Arzneigarten liegt unter dem Schnee, aber die getrockneten Kräuter hängen drinnen. In der Krankenstube wird ein alter Bruder kränker statt gesünder. Jemand mischt seinen Trank ein zweites Mal.",
+      "Der alte Bruder sitzt wieder aufrecht und verlangt nach Suppe. Der falsche Topf steht nicht mehr in der Krankenstube.",
+      "Zwischen den Kräutern weiß jeder, was wo wächst. Wer sagt, wo er NICHT war, verrät dir auch etwas: Streiche diesen Raum sofort.",
+      [
+        [
+          "Jedes Kraut heilt",
+          "Salbei für den Hals, Minze für den Magen. Im Topf war keines von beiden.",
+          "🌿 Getrock­neter Salbei"
+        ],
+        [
+          "Bruder Cuthbert mischt",
+          "Er mischte den Trank wie jeden Abend. Nur probierte er diesmal nicht davon.",
+          "🥣 Kräuter­trank"
+        ],
+        [
+          "Der Mörser",
+          "Im Mörser war noch Pulver. Von einem Kraut, das nicht in diesem Garten wächst.",
+          "🌰 Gemahlene Wurzel"
+        ],
+        [
+          "Kräuterfrau Hilde kommt herein",
+          "Sie kam mit einem Korb voller Kräuter aus dem Dorf. Der Pass war schon seit einer Woche zu.",
+          "🧺 Kräuter­korb"
+        ],
+        [
+          "Bienen im Winter",
+          "Im Winter schlafen die Bienen. Jemand hat den Korb trotzdem geöffnet.",
+          "🍯 Honigwabe"
+        ],
+        [
+          "Die Krankenstube",
+          "Drei Betten, zwei Kranke. Das dritte Bett war warm.",
+          "🛏️ Strohsack"
+        ],
+        [
+          "Pilgerin Gisela hilft",
+          "Sie bot an, den Kranken zu pflegen. Sie wusste, welchen Trank er bekam, bevor es ihr jemand gesagt hatte.",
+          "🍶 Kürbis­flasche"
+        ],
+        [
+          "Eisenhut",
+          "Eine hübsche violette Blume. In jedem Kräuterbuch steht ein Kreuzchen neben ihrem Namen.",
+          "🪻 Eisenhut"
+        ]
+      ]
+    ],
+    "abdij-4": [
+      "Teil IV · Der lange Winter",
+      "Der Pass ist bis zum Frühjahr zu. Kellermeister Waldo zählt jede Woche die Vorräte, und jede Woche ist der Keller leerer, als er sein sollte.",
+      "Der Keller ist gezählt und das Brot gerecht verteilt. Wer für zwei aß, isst jetzt für einen.",
+      "Im Winter bleiben alle nah am Feuer und nah beieinander. Setze zuerst den Verdächtigen mit den wenigsten Möglichkeiten; der Rest folgt.",
+      [
+        [
+          "Bis zum Frühjahr",
+          "Genug Korn für vier Monate, sagte der Kellermeister. Nach einem Monat war die Hälfte weg.",
+          "🌾 Kornsack"
+        ],
+        [
+          "Kellermeister Waldo wiegt",
+          "Jede Woche wog er die Käse. Keiner fehlte, aber sie wurden leichter.",
+          "🧀 Käselaib"
+        ],
+        [
+          "Das Backhaus",
+          "Der Ofen ist seit der Mette kalt. Trotzdem riecht das Backhaus nach frischem Brot.",
+          "🍞 Roggenbrot"
+        ],
+        [
+          "Gräfin Mathilde fastet",
+          "Sie fastet den ganzen Advent über, sagt sie. Unter ihrem Bett liegen Krümel von Weißbrot.",
+          "🥖 Brotkruste"
+        ],
+        [
+          "Die Sanduhr",
+          "In der Küche dreht jemand jede Stunde die Sanduhr um. Um drei vergaß er es.",
+          "⏳ Sanduhr"
+        ],
+        [
+          "Novize Elias hat Hunger",
+          "Er war der Magerste von allen. Bis Mitte Januar.",
+          "🍽️ Holznapf"
+        ],
+        [
+          "Wein für die Messe",
+          "Für die Messe reicht ein Krug pro Woche. Ein ganzes Fass verschwand.",
+          "🍷 Messwein"
+        ],
+        [
+          "Schnee bis an die Fensterläden",
+          "Der Schnee lag bis an die Fensterläden des Refektoriums. Einer stand offen, von innen geöffnet.",
+          "🧊 Eiszapfen"
+        ]
+      ]
+    ],
+    "abdij-5": [
+      "Teil V · Der Besuch des Bischofs",
+      "Eine Woche Tauwetter öffnet den Pass. Der Bischof ist unterwegs, um einen neuen Abt zu wählen, und nicht jeder will, dass er ankommt.",
+      "Der Bischof kommt wohlbehalten an und segnet die Abtei. Der neue Abt wird gewählt, und keine Stimme wurde gekauft.",
+      "Für den Besuch steht jeder woanders bereit. Fang bei dem an, der sagt, er sei allein gewesen: Das macht sofort einen ganzen Raum frei.",
+      [
+        [
+          "Ein Brief mit Siegel",
+          "Der Brief des Bischofs hatte ein rotes Siegel. Das Siegel war schon einmal gebrochen worden.",
+          "📜 Bischofs­brief"
+        ],
+        [
+          "Bruder Anselm will Abt werden",
+          "Er wolle es nicht, sagt er. Den Eid kann er schon auswendig.",
+          "📃 Abtseid"
+        ],
+        [
+          "Der Glockenturm",
+          "Wenn der Bischof ankommt, läutet die Glocke. Das Seil war durchgeschnitten, auf Augenhöhe.",
+          "🔔 Glocken­seil"
+        ],
+        [
+          "Gräfin Mathilde stiftet",
+          "Sie stiftet der Abtei einen goldenen Kelch. Falls der Bischof ihren Kandidaten wählt.",
+          "🏆 Goldener Kelch"
+        ],
+        [
+          "Steine auf dem Weg",
+          "Jemand hatte Steine auf den Bergweg gerollt. Sie lagen oben auf dem Schnee, nicht darunter.",
+          "🪨 Fels­brocken"
+        ],
+        [
+          "Bruder Cuthbert kocht",
+          "Für den Bischof ein Festmahl. Eine Schüssel war nur für ihn bestimmt.",
+          "🍲 Eintopf"
+        ],
+        [
+          "Kräuterfrau Hilde kennt den Weg",
+          "Sie kennt jeden Pfad durch die Berge. Auch den Pfad, den der Bischof nehmen würde.",
+          "🥾 Nasser Stiefel"
+        ],
+        [
+          "Der Bischof kommt",
+          "Sein Maultier kam als Erstes durch das Tor. Der Bischof eine Stunde später, zu Fuß.",
+          "🐴 Maultier"
+        ]
+      ]
+    ],
+    "abdij-6": [
+      "Teil VI · Feuer im Skriptorium",
+      "Mitten in der Nacht brennt das Skriptorium. Die Brüder löschen mit Schnee und Eimern. Ein Buch wird gerettet, von der falschen Person.",
+      "Das Feuer ist aus, und die Mauern sind schwarz. Das gerettete Buch liegt in der Kapelle, nicht mehr in den falschen Händen.",
+      "Rauch macht Zeugen unsicher, den Grundriss nicht. Die Aussagen werden sparsamer: Nimm den Bleistift, streiche Felder, die nicht gehen, und schau, was übrig bleibt.",
+      [
+        [
+          "Rauch nach der Mette",
+          "Nach der Mette hing Rauch im Kreuzgang. Alle Kerzen waren schon gelöscht.",
+          "💨 Rauchspur"
+        ],
+        [
+          "Eimer voll Schnee",
+          "Die Brüder löschten mit Schnee aus dem Hof. Vor dem Skriptorium war der Schnee schon weggeschaufelt, bevor das Feuer ausbrach.",
+          "🪣 Holzeimer"
+        ],
+        [
+          "Buchmalerin Odile rennt",
+          "Sie rannte als Erste ins Feuer, für ihre Bücher. Sie kam mit leeren Händen und sauberen Ärmeln zurück.",
+          "🎨 Farb­näpfchen"
+        ],
+        [
+          "Das Schreibpult",
+          "Alle Schreibpulte waren verbrannt. Am schwärzesten war das Pult, das am weitesten von den Kerzen entfernt stand.",
+          "🪵 Verkohltes Holz"
+        ],
+        [
+          "Kellermeister Waldo löscht",
+          "Er trug die schwersten Eimer. Seine Kutte roch nicht nach Feuer, sondern nach Öl.",
+          "🫙 Ölkrug"
+        ],
+        [
+          "Asche im Refektorium",
+          "Im Kamin des Refektoriums lag Asche von Pergament. Das Feuer im Skriptorium brach erst später aus.",
+          "🌫️ Pergament­asche"
+        ],
+        [
+          "Pilgerin Gisela betet",
+          "Sie betete während des ganzen Brandes in der Kapelle. Ihr Mantel war schwarz vor Ruß.",
+          "🧥 Pilger­mantel"
+        ],
+        [
+          "Der falsche Retter",
+          "Ein Buch wurde gerettet. Von jemandem, der sagt, er könne nicht lesen.",
+          "📘 Versengter Einband"
+        ]
+      ]
+    ],
+    "abdij-7": [
+      "Teil VII · Die Pilger",
+      "Zwölf Pilger klopfen an und bitten um Obdach. Die Regel sagt: Jeder Gast soll aufgenommen werden wie Christus selbst. Nach drei Tagen ziehen elf weiter.",
+      "Die elf Pilger ziehen weiter nach Rom. Der zwölfte bleibt, aber nicht als Gast.",
+      "Das Brett wird größer und die Abtei voller. Steht im Bericht, dass ein Raum leer war, fällt dieser ganze Raum für alle weg.",
+      [
+        [
+          "Zwölf am Tor",
+          "Zwölf Pilger baten um Brot und ein Bett. Im Schnee vor dem Tor waren dreizehn Paar Fußspuren.",
+          "👣 Fußspuren"
+        ],
+        [
+          "Pilgerin Gisela erkennt jemanden",
+          "Sie kannte einen der zwölf. Sie sagte es erst, als er fort war.",
+          "🐚 Jakobs­muschel"
+        ],
+        [
+          "Das Gästebuch",
+          "Jeder Gast schrieb seinen Namen in das Buch. Zwei Namen stehen in derselben Handschrift.",
+          "✒️ Gästebuch"
+        ],
+        [
+          "Bruder Cuthbert verbindet",
+          "Er verband die Füße von elf Pilgern. Der zwölfte hatte keine Blasen.",
+          "🩹 Leinen­verband"
+        ],
+        [
+          "Das Brot der Armen",
+          "Jeder Pilger bekam ein Brot. Im Backhaus wurden dreizehn gebacken.",
+          "🥖 Pilgerbrot"
+        ],
+        [
+          "Novize Elias spricht",
+          "Er sprach mit den Pilgern in ihrer eigenen Sprache. Er komme aus einem Dorf ganz in der Nähe, sagte er im Sommer.",
+          "🧾 Geleitbrief"
+        ],
+        [
+          "Buchmalerin Odile zeichnet",
+          "Sie zeichnete die zwölf an den Rand eines Psalters. Ein Gesicht hatte sie schon einmal gemalt.",
+          "🖌️ Pinsel"
+        ],
+        [
+          "Elf brechen auf",
+          "Zwölf kamen herein. Elf zogen weiter nach Rom.",
+          "⛰️ Bergpfad"
+        ]
+      ]
+    ],
+    "abdij-8": [
+      "Teil VIII · Das letzte Stundengebet",
+      "Das Frühjahr kommt, und der Schnee schmilzt vom Pass. Noch eine Nacht im Kreuzgang, mit denselben Gesichtern wie in der ersten Winternacht.",
+      "Van Dam zieht seinen Mantel zu, verneigt sich vor den Brüdern und geht über den offenen Pass hinab ins Tal. Die Glocke läutet zum Abendgebet. Das Buch steht wieder im Regal.",
+      "Die letzten Fälle, fast alle auf dem großen Brett. Bleib nicht an dem hängen, der am schwierigsten ist: Setze zuerst die anderen, dann bleibt für den letzten oft nur ein Feld übrig.",
+      [
+        [
+          "Der Schnee schmilzt",
+          "Unter dem Schnee an der Mauer lag ein Schlüssel. Der achte.",
+          "🔑 Eiserner Schlüssel"
+        ],
+        [
+          "Bruder Anselm gibt die Schlüssel ab",
+          "Vierzig Jahre trug er die Schlüssel. Heute Abend legt er sie ab, bis auf einen.",
+          "⛓️ Schlüssel­ring"
+        ],
+        [
+          "Kräuterfrau Hilde geht nach Hause",
+          "Sie kam mit einem vollen Korb Kräuter. Sie geht mit einem vollen Korb. Ohne Kräuter.",
+          "🧺 Voller Korb"
+        ],
+        [
+          "Der neue Abt",
+          "Er segnet die Brüder zum ersten Mal. Ein Bruder senkt den Kopf nicht.",
+          "⚜️ Abtsstab"
+        ],
+        [
+          "Kellermeister Waldo schließt ab",
+          "Der Keller ist für den Sommer wieder gefüllt. Hinter dem letzten Fass steht etwas, das nicht dorthin gehört.",
+          "🍺 Kloster­bier"
+        ],
+        [
+          "Gräfin Mathilde reist ab",
+          "Ihr Wagen steht am Tor bereit. Er ist schwerer als bei ihrer Ankunft.",
+          "🛞 Wagenrad"
+        ],
+        [
+          "Die Vesper",
+          "Das letzte Abendgebet des Winters. Eine Stimme sang einen anderen Psalm.",
+          "🎼 Antiphonar"
+        ],
+        [
+          "Das letzte Stundengebet",
+          "Wo es begann, im Skriptorium. Dort endet es auch.",
+          "🖋️ Tinten­horn"
+        ]
+      ]
+    ],
+    "vuurtoren": [
+      "Teil I · Das Licht geht aus",
+      "Leuchtturm Graukap, November 1900. Ein Sturm schneidet die Insel vom Festland ab. Um Mitternacht geht das Licht aus. Oben im Laternenraum liegt Wärter Silas Mourne.",
+      "Das Licht brennt wieder, aber der Wärter sieht es nicht mehr. Der Sturm hält noch tagelang an.",
+      "Eine Insel ist klein, ein Leuchtturm hoch und schmal. Fang bei denen an, die sagen, in welchem Raum sie waren; „direkt neben“ dem Rettungsring zählt nur genau daneben, nie schräg.",
+      [
+        [
+          "Mitternacht",
+          "Zwanzig Jahre lang brannte das Licht jede Nacht. Heute Nacht ging es um zwölf aus.",
+          "🪔 Petroleum­brenner"
+        ],
+        [
+          "Der Laternenraum",
+          "Der Wärter lag unter der Linse. Die Tür war von innen abgeschlossen.",
+          "🔐 Laternen­schlüssel"
+        ],
+        [
+          "Hilfswärter Jonas steigt hinauf",
+          "Hundertzwölf Stufen bis nach oben. Er sei in zwei Minuten oben gewesen, sagt er.",
+          "🕰️ Taschenuhr"
+        ],
+        [
+          "Der Rettungsring",
+          "Der Rettungsring hängt immer neben der Tür des Wärterhauses. Heute Nacht trieb er in der Brandung.",
+          "🛟 Rettungs­ring"
+        ],
+        [
+          "Telegrafistin Fien morst",
+          "Um fünf vor zwölf morste sie ans Festland, das Licht sei aus. Um zwölf ging es aus.",
+          "📨 Depesche"
+        ],
+        [
+          "Das Drehwerk",
+          "Das Drehwerk der Linse stand still. Ein Seemannsknoten war darum geschlungen.",
+          "🪢 Seemanns­knoten"
+        ],
+        [
+          "Haushälterin Martha schläft",
+          "Sie habe schon um zehn geschlafen, sagt sie. Um Mitternacht war die Teekanne noch warm.",
+          "🫖 Teekanne"
+        ],
+        [
+          "Sturm aus Westen",
+          "Kein Boot konnte die Insel erreichen oder verlassen. Trotzdem lag am Steg ein Boot weniger.",
+          "⚓ Lose Festmacher­leine"
+        ]
+      ]
+    ],
+    "vuurtoren-2": [
+      "Teil II · Der Schiffbruch",
+      "In der zweiten Sturmnacht fällt das Licht eine Stunde lang aus. In dieser Stunde läuft ein Schiff unter dem Kliff auf die Felsen. Ein Mann wird angespült, ohne Papiere.",
+      "Das Wrack zerbricht in der Brandung. Warum das Schiff so dicht unter der Küste fuhr, weißt du jetzt.",
+      "Nach einem Schiffbruch erzählt jeder, was er gesehen hat, und wen. Eine Aussage über zwei Personen löst du, indem du zuerst eine der beiden festlegst.",
+      [
+        [
+          "Auf den Felsen",
+          "Ohne das Licht fuhr das Schiff geradewegs auf das Kliff zu. Am Strand aber brannte eine Lampe.",
+          "🏮 Sturm­laterne"
+        ],
+        [
+          "Fremdling Lev wird angespült",
+          "Er wurde ohne Papiere angespült. Seine Tabakdose war trocken.",
+          "🚬 Tabakdose"
+        ],
+        [
+          "Fischer Bartel sieht es",
+          "Er habe vom Kliff aus zugesehen, sagt er. Seine Ruder waren noch nass.",
+          "🚣 Ruder"
+        ],
+        [
+          "Das Wrack",
+          "Vom Schiff blieb nur der Bug übrig. Der Name am Bug war übermalt.",
+          "🖌️ Frische Farbe"
+        ],
+        [
+          "Lotse Kees und der Kapitän",
+          "Er kannte den Kapitän des Schiffs. Sie waren in dieser Nacht verabredet, vor der Küste.",
+          "🗺️ Seekarte"
+        ],
+        [
+          "Ornithologin Dorien notiert",
+          "In ihrem Beobachtungsbuch: drei Uhr, Strand, ein Austernfischer. Und ein Mann.",
+          "📓 Beobachtungs­buch"
+        ],
+        [
+          "Kisten am Strand",
+          "Zwölf Kisten wurden angespült. Im Bootshaus standen neun.",
+          "📦 Seekiste"
+        ],
+        [
+          "Telegrafistin Fien und das Festland",
+          "Das Festland fragte nach dem Namen des Schiffs. Sie morste ihn durch, bevor jemand den Bug gesehen hatte.",
+          "📃 Morse­streifen"
+        ]
+      ]
+    ],
+    "vuurtoren-3": [
+      "Teil III · Der Nebel",
+      "Nach dem Sturm kommt der Nebel. Drei Tage lang tönt das Nebelhorn jede Viertelstunde. In der zweiten Nacht tönt es einmal zu oft.",
+      "Der Nebel lichtet sich, und das Nebelhorn schweigt. Das Boot, das auf das Signal wartete, ist nie angekommen.",
+      "Im Nebel sieht niemand etwas, aber jeder weiß, wo er nicht stand. Wer sagt, wo er NICHT war, verrät dir auch etwas: Streiche diesen Raum sofort.",
+      [
+        [
+          "Jede Viertelstunde",
+          "Vier Stöße pro Stunde. Um zwei waren es fünf.",
+          "📯 Nebelhorn"
+        ],
+        [
+          "Hilfswärter Jonas bläst",
+          "Er habe die ganze Nacht ins Horn geblasen, sagt er. Um drei schlief er in der Küche.",
+          "⚙️ Kurbel"
+        ],
+        [
+          "Das Fernrohr",
+          "Bei Nebel nützt ein Fernrohr nichts. Trotzdem stand es auf dem Kliff, aufs Meer gerichtet.",
+          "🔭 Fernrohr"
+        ],
+        [
+          "Lehrerin Wilma verirrt sich",
+          "Seit zehn Jahren geht sie von der Schule zum Wärterhaus. Im Nebel landete sie beim Bootshaus.",
+          "👓 Be­schlagene Brille"
+        ],
+        [
+          "Eine Stimme im Nebel",
+          "Jemand rief vom Steg aus um Hilfe. Als man hinkam, lag dort nur eine Mütze.",
+          "🧢 Nasse Mütze"
+        ],
+        [
+          "Fischer Bartel fährt hinaus",
+          "Kein Fischer fährt in den Nebel hinaus. Er kam mit leeren Hummerkörben zurück, bis auf einen.",
+          "🦞 Hummerkorb"
+        ],
+        [
+          "Fremdling Lev versteht es",
+          "Er spreche kein Niederländisch, sagt er. Er lachte über einen Witz des Fischers.",
+          "🧶 Wolldecke"
+        ],
+        [
+          "Einmal zu oft",
+          "Dieser fünfte Stoß war kein Versehen. Es war ein Signal. Für ein Boot im Nebel.",
+          "⛵ Schaluppe"
+        ]
+      ]
+    ],
+    "vuurtoren-4": [
+      "Teil IV · Das Logbuch",
+      "Jede Nacht schrieb der Wärter ins Logbuch: das Wetter, die Schiffe, das Licht. Die letzte Seite ist herausgerissen.",
+      "Die letzte Seite ist wieder aufgetaucht, zerknüllt und halb verbrannt. Was darauf stand, wusstest du schon.",
+      "In einem Logbuch steht alles der Reihe nach, und jede Zeile zeigt auf einen Raum. Setze zuerst den Verdächtigen mit den wenigsten Möglichkeiten; der Rest folgt.",
+      [
+        [
+          "Die letzte Seite",
+          "Die Seite ist herausgerissen. Auf der nächsten steht der Abdruck seiner Feder.",
+          "📄 Durchdruck"
+        ],
+        [
+          "Haushälterin Martha poliert",
+          "Das Logbuch habe sie nie angefasst, sagt sie. Auf dem Einband war Bohnerwachs.",
+          "🧽 Putztuch"
+        ],
+        [
+          "Tinte und Bleistift",
+          "Der Wärter schrieb immer mit Tinte. Die letzte Zeile ist mit Bleistift geschrieben.",
+          "✏️ Zimmermanns­bleistift"
+        ],
+        [
+          "Lotse Kees liest mit",
+          "Er wusste, welche Schiffe im Logbuch standen. Auch, welches Schiff nicht darin stand.",
+          "📋 Schiffs­liste"
+        ],
+        [
+          "Das Wetter laut dem Wärter",
+          "Windstärke neun, schrieb er am Dienstag. Am Dienstag war es windstill.",
+          "🌬️ Windmesser"
+        ],
+        [
+          "Lehrerin Wilma kennt die Handschrift",
+          "Sie kennt jede Handschrift auf der Insel. Diese kenne sie auch, sagte sie, und dann schwieg sie.",
+          "🖋️ Stahlfeder"
+        ],
+        [
+          "Telegrafistin Fien schreibt ab",
+          "Jede Nachricht ans Festland schreibt sie auch in ihr eigenes Buch. Eine Nachricht steht zweimal darin.",
+          "📒 Telegramm­buch"
+        ],
+        [
+          "Asche im Ofen",
+          "Im Ofen des Signalraums lag Asche. Dazwischen ein Eckchen Papier mit einer Zahl.",
+          "🔥 Verbrannte Ecke"
+        ]
+      ]
+    ],
+    "vuurtoren-5": [
+      "Teil V · Das Versorgungsboot",
+      "Einmal im Monat kommt das Boot mit Petroleum, Mehl und Post. Die ganze Insel steht auf dem Steg. Diesmal nimmt das Boot etwas mit zurück.",
+      "Das Boot fährt ohne die Kiste ab. Der Schiffer hat nie erfahren, was er beinahe mitgenommen hätte.",
+      "Wenn das Boot kommt, schleppt jeder woanders. Fang bei dem an, der sagt, er sei allein gewesen: Das macht sofort einen ganzen Raum frei.",
+      [
+        [
+          "Einmal im Monat",
+          "Petroleum, Mehl und Post, wie jeden Monat. Diesmal auch eine Kiste ohne Namen.",
+          "🛢️ Petroleum­fass"
+        ],
+        [
+          "Die Post",
+          "Es kam ein Brief für den Wärter. Abgeschickt auf dem Festland, einen Tag nach seinem Tod.",
+          "✉️ Brief"
+        ],
+        [
+          "Haushälterin Martha bestellt",
+          "Auf ihrer Liste: Mehl, Salz und Rattengift. Auf der Insel gibt es keine Ratten.",
+          "☠️ Rattengift"
+        ],
+        [
+          "Das Bootshaus",
+          "Im Bootshaus stand eine Kiste, die mit zurück sollte. Im Deckel waren Luftlöcher.",
+          "📦 Kiste mit Luft­löchern"
+        ],
+        [
+          "Fremdling Lev will mit",
+          "Er habe kein Geld, sagt er. Er bot dem Schiffer eine Goldmünze an.",
+          "🪙 Goldmünze"
+        ],
+        [
+          "Ornithologin Dorien verschickt",
+          "Zehn ausgestopfte Vögel für das Museum. Einer davon ist schwerer, als ein Vogel sein sollte.",
+          "🐦 Ausge­stopfte Möwe"
+        ],
+        [
+          "Die Frachtliste",
+          "Alles auf der Frachtliste stimmte. Das Gewicht nicht.",
+          "⚖️ Dezimal­waage"
+        ],
+        [
+          "Lotse Kees bringt das Boot hinaus",
+          "Er lotste das Boot an den Felsen vorbei, wie immer. Diesmal dauerte es eine Stunde länger.",
+          "🧭 Kompass"
+        ]
+      ]
+    ],
+    "vuurtoren-6": [
+      "Teil VI · Der Vogelzug",
+      "Tausende Zugvögel rasten auf der Insel, auf dem Weg nach Süden. Ornithologin Dorien zählt sie vom Kliff aus, und alle helfen mit. Nicht alle schauen auf die Vögel.",
+      "Die Vögel ziehen weiter nach Süden. Im Beobachtungsbuch von Dorien stimmt die Zählung wieder.",
+      "Auf dem Kliff schauen alle nach oben, nicht aufeinander. Die Aussagen werden sparsamer: Nimm den Bleistift, streiche Felder, die nicht gehen, und schau, was übrig bleibt.",
+      [
+        [
+          "Tausend Flügel",
+          "Bei Sonnenaufgang war das Kliff voller Vögel. Eine Stelle blieb leer, als hätte dort jemand gelegen.",
+          "🪶 Möwenfeder"
+        ],
+        [
+          "Ornithologin Dorien beobachtet",
+          "Ihr Feldstecher war den ganzen Morgen auf das Bootshaus gerichtet. Dort nisten keine Vögel.",
+          "🔭 Feld­stecher"
+        ],
+        [
+          "Das leere Nest",
+          "Das Nest auf dem Kliff war leer, wie es sich im November gehört. Bis auf einen Schlüssel.",
+          "🪺 Vogelnest"
+        ],
+        [
+          "Hilfswärter Jonas sucht Eier",
+          "Er sei das Kliff hinabgeklettert, um Möweneier zu holen, sagt er. Im November.",
+          "🧗 Kletter­seil"
+        ],
+        [
+          "Die Brieftaube",
+          "Zwischen den Zugvögeln saß eine Taube. Sie flog nicht nach Süden, sondern zum Festland.",
+          "🕊️ Brieftaube"
+        ],
+        [
+          "Fischer Bartel füttert die Möwen",
+          "Jeden Morgen wirft er den Möwen Fischabfälle zu. Heute Morgen warf er etwas anderes ins Meer.",
+          "🐟 Fischeimer"
+        ],
+        [
+          "Fremdling Lev kennt die Vögel",
+          "Er sei Matrose, sagt er. Er kennt jeden Vogel bei seinem lateinischen Namen.",
+          "📚 Vogelbuch"
+        ],
+        [
+          "Einer, der nicht ruht",
+          "Tausende Vögel schliefen auf der Insel. Ein Vogelbeobachter lief die ganze Nacht mit einer Lampe über den Strand.",
+          "🥾 Sandige Stiefel"
+        ]
+      ]
+    ],
+    "vuurtoren-7": [
+      "Teil VII · Der Wintersturm",
+      "Der schwerste Sturm seit zwanzig Jahren. Die Wellen schlagen über das Kliff, und die Insel ist drei Wochen lang vom Festland abgeschnitten.",
+      "Der Sturm legt sich, und der Telegraf tickt wieder. Was drei Wochen drinnen blieb, bleibt nicht länger drinnen.",
+      "Das Brett wird größer und die Insel kleiner. Steht im Bericht, dass ein Raum leer war, fällt dieser ganze Raum für alle weg.",
+      [
+        [
+          "Drei Wochen drinnen",
+          "Acht Menschen, ein Haus, drei Wochen. Am zwölften Tag sagte niemand mehr etwas.",
+          "🪵 Brennholz"
+        ],
+        [
+          "Das Kabel",
+          "Am ersten Sturmtag riss das Kabel zum Festland. Ein Kabel reißt nicht so gerade ab.",
+          "🔌 Telegrafen­kabel"
+        ],
+        [
+          "Haushälterin Martha teilt aus",
+          "Jeden Abend acht Schalen Suppe. Neun kamen leer zurück.",
+          "🥣 Suppen­schale"
+        ],
+        [
+          "Der Keller läuft voll",
+          "Das Wasser stand knietief im Keller. Alles schwamm, bis auf eine Kiste.",
+          "⚓ Bleikiste"
+        ],
+        [
+          "Lehrerin Wilma unterrichtet",
+          "Ihr Diktat handelte von einem Schiff, das sank. Fremdling Lev verbesserte den Namen.",
+          "📝 Diktat"
+        ],
+        [
+          "Lotse Kees vermisst einen Knopf",
+          "An seiner Jacke fehlt ein Messingknopf. Der Knopf lag seit der ersten Nacht im Laternenraum.",
+          "🟡 Messing­knopf"
+        ],
+        [
+          "Hilfswärter Jonas hütet das Licht",
+          "Drei Wochen lang hielt er das Licht allein am Brennen. Er verbrauchte nur die Hälfte des Petroleums.",
+          "🪔 Lampen­docht"
+        ],
+        [
+          "Fischer Bartel erinnert sich",
+          "So einen Sturm hatte er erst einmal gesehen, vor zwanzig Jahren. Damals ging das Licht auch aus.",
+          "📰 Alte Zeitung"
+        ]
+      ]
+    ],
+    "vuurtoren-8": [
+      "Teil VIII · Das letzte Licht",
+      "Vom Festland kommt ein neuer Wärter. Noch eine Nacht unter dem kreisenden Licht, mit denselben Gesichtern wie in der ersten Sturmnacht.",
+      "Van Dam steigt ins Versorgungsboot, tippt an seinen Hut und blickt nicht zurück. Das Licht dreht sich wieder. Jeder Schiffer sieht es, und du weißt, wer es gelöscht hat.",
+      "Die letzten Fälle, fast alle auf dem großen Brett. Bleib nicht an dem hängen, der am schwierigsten ist: Setze zuerst die anderen, dann bleibt für den letzten oft nur ein Feld übrig.",
+      [
+        [
+          "Der neue Wärter",
+          "Er kam mit dem Boot und stieg sofort nach oben. Er kannte den Weg schon.",
+          "🧳 Reise­koffer"
+        ],
+        [
+          "Haushälterin Martha packt",
+          "Zwanzig Jahre lang kochte sie für den Wärter. In ihrem Koffer liegt sein Ehering.",
+          "💍 Ehering"
+        ],
+        [
+          "Telegrafistin Fien meldet sich ab",
+          "Ihre letzte Nachricht ans Festland: alles in Ordnung. Sie morste sie zweimal, beim zweiten Mal in einem anderen Code.",
+          "🔤 Morsecode"
+        ],
+        [
+          "Fremdling Lev bekommt einen Namen",
+          "Nach zwei Monaten sagt er, wie er heißt. Es ist der Name des Schiffs.",
+          "🏷️ Namens­brett"
+        ],
+        [
+          "Ornithologin Dorien reist ab",
+          "Sie zählte viertausend Vögel für das Museum. Sie nimmt viertausendundeinen mit.",
+          "🗃️ Vogelkiste"
+        ],
+        [
+          "Hilfswärter Jonas wird nicht Wärter",
+          "Drei Jahre lang half er dem Wärter. Man wählte einen anderen, und er wusste es schon seit einem Monat.",
+          "📜 Ernennungs­schreiben"
+        ],
+        [
+          "Lehrerin Wilma bleibt",
+          "Alle fahren mit dem Boot ab. Sie bleibt, für die Schule, und die Schule ist schon seit einem Monat zu.",
+          "🔔 Schul­glocke"
+        ],
+        [
+          "Das letzte Licht",
+          "Wo es begann, im Laternenraum. Dort endet es auch.",
+          "🔆 Fresnel­linse"
+        ]
+      ]
     ]
   },
 
@@ -6179,6 +7959,74 @@
         "allein": "im Raum"
       },
       "casino": {
+        "rw": "Raum",
+        "rws": "Räume",
+        "gender": "m",
+        "im": "im Raum",
+        "imSelben": "im selben Raum",
+        "inEinem": "in einem Raum",
+        "inDiesem": "in diesem Raum",
+        "einesGen": "eines Raums",
+        "Welcher": "Welcher Raum",
+        "den": "den Raum",
+        "dpl": "Räumen",
+        "inWelchem": "in welchem Raum",
+        "inAnderen": "in einen anderen Raum",
+        "alleinIch": "im Raum",
+        "allein": "im Raum"
+      },
+      "filmstudio": {
+        "rw": "Raum",
+        "rws": "Räume",
+        "gender": "m",
+        "im": "im Raum",
+        "imSelben": "im selben Raum",
+        "inEinem": "in einem Raum",
+        "inDiesem": "in diesem Raum",
+        "einesGen": "eines Raums",
+        "Welcher": "Welcher Raum",
+        "den": "den Raum",
+        "dpl": "Räumen",
+        "inWelchem": "in welchem Raum",
+        "inAnderen": "in einen anderen Raum",
+        "alleinIch": "im Raum",
+        "allein": "im Raum"
+      },
+      "karavaan": {
+        "rw": "Raum",
+        "rws": "Räume",
+        "gender": "m",
+        "im": "im Raum",
+        "imSelben": "im selben Raum",
+        "inEinem": "in einem Raum",
+        "inDiesem": "in diesem Raum",
+        "einesGen": "eines Raums",
+        "Welcher": "Welcher Raum",
+        "den": "den Raum",
+        "dpl": "Räumen",
+        "inWelchem": "in welchem Raum",
+        "inAnderen": "in einen anderen Raum",
+        "alleinIch": "im Raum",
+        "allein": "im Raum"
+      },
+      "abdij": {
+        "rw": "Raum",
+        "rws": "Räume",
+        "gender": "m",
+        "im": "im Raum",
+        "imSelben": "im selben Raum",
+        "inEinem": "in einem Raum",
+        "inDiesem": "in diesem Raum",
+        "einesGen": "eines Raums",
+        "Welcher": "Welcher Raum",
+        "den": "den Raum",
+        "dpl": "Räumen",
+        "inWelchem": "in welchem Raum",
+        "inAnderen": "in einen anderen Raum",
+        "alleinIch": "im Raum",
+        "allein": "im Raum"
+      },
+      "vuurtoren": {
         "rw": "Raum",
         "rws": "Räume",
         "gender": "m",
@@ -7355,6 +9203,350 @@
           "gen": "des Salons",
           "gender": "m"
         }
+      },
+      "filmstudio": {
+        "Studiohal": {
+          "the": "die Studiohalle",
+          "in": "in der Studiohalle",
+          "into": "in die Studiohalle",
+          "gen": "der Studiohalle",
+          "gender": "f"
+        },
+        "Montagekamer": {
+          "the": "der Schneideraum",
+          "in": "im Schneideraum",
+          "into": "in den Schneideraum",
+          "gen": "des Schneideraums",
+          "gender": "m"
+        },
+        "Kleedkamer": {
+          "the": "die Garderobe",
+          "in": "in der Garderobe",
+          "into": "in die Garderobe",
+          "gen": "der Garderobe",
+          "gender": "f"
+        },
+        "Kantine": {
+          "the": "die Kantine",
+          "in": "in der Kantine",
+          "into": "in die Kantine",
+          "gen": "der Kantine",
+          "gender": "f"
+        },
+        "Rekwisietenkamer": {
+          "the": "die Requisite",
+          "in": "in der Requisite",
+          "into": "in die Requisite",
+          "gen": "der Requisite",
+          "gender": "f"
+        },
+        "Projectiezaal": {
+          "the": "der Vorführsaal",
+          "in": "im Vorführsaal",
+          "into": "in den Vorführsaal",
+          "gen": "des Vorführsaals",
+          "gender": "m"
+        },
+        "Werkplaats": {
+          "the": "die Werkstatt",
+          "in": "in der Werkstatt",
+          "into": "in die Werkstatt",
+          "gen": "der Werkstatt",
+          "gender": "f"
+        },
+        "Directiekamer": {
+          "the": "die Direktion",
+          "in": "in der Direktion",
+          "into": "in die Direktion",
+          "gen": "der Direktion",
+          "gender": "f"
+        },
+        "Geluidsstudio": {
+          "the": "die Tonkabine",
+          "in": "in der Tonkabine",
+          "into": "in die Tonkabine",
+          "gen": "der Tonkabine",
+          "gender": "f"
+        },
+        "Archief": {
+          "the": "das Archiv",
+          "in": "im Archiv",
+          "into": "ins Archiv",
+          "gen": "des Archivs",
+          "gender": "n"
+        },
+        "Buitenset": {
+          "the": "das Freigelände",
+          "in": "auf dem Freigelände",
+          "into": "auf das Freigelände",
+          "gen": "des Freigeländes",
+          "gender": "n"
+        },
+        "Poort": {
+          "the": "die Toreinfahrt",
+          "in": "in der Toreinfahrt",
+          "into": "in die Toreinfahrt",
+          "gen": "der Toreinfahrt",
+          "gender": "f"
+        }
+      },
+      "karavaan": {
+        "Binnenplaats": {
+          "the": "der Innenhof",
+          "in": "im Innenhof",
+          "into": "in den Innenhof",
+          "gen": "des Innenhofs",
+          "gender": "m"
+        },
+        "Bazaar": {
+          "the": "der Basar",
+          "in": "im Basar",
+          "into": "in den Basar",
+          "gen": "des Basars",
+          "gender": "m"
+        },
+        "Theehuis": {
+          "the": "das Teehaus",
+          "in": "im Teehaus",
+          "into": "ins Teehaus",
+          "gen": "des Teehauses",
+          "gender": "n"
+        },
+        "Badhuis": {
+          "the": "das Badehaus",
+          "in": "im Badehaus",
+          "into": "ins Badehaus",
+          "gen": "des Badehauses",
+          "gender": "n"
+        },
+        "Waterput": {
+          "the": "der Brunnenplatz",
+          "in": "auf dem Brunnenplatz",
+          "into": "auf den Brunnenplatz",
+          "gen": "des Brunnenplatzes",
+          "gender": "m"
+        },
+        "Gastenkamer": {
+          "the": "das Gästezimmer",
+          "in": "im Gästezimmer",
+          "into": "ins Gästezimmer",
+          "gen": "des Gästezimmers",
+          "gender": "n"
+        },
+        "Tapijtwinkel": {
+          "the": "der Teppichladen",
+          "in": "im Teppichladen",
+          "into": "in den Teppichladen",
+          "gen": "des Teppichladens",
+          "gender": "m"
+        },
+        "Poort": {
+          "the": "die Torhalle",
+          "in": "in der Torhalle",
+          "into": "in die Torhalle",
+          "gen": "der Torhalle",
+          "gender": "f"
+        },
+        "Dakterras": {
+          "the": "die Dachterrasse",
+          "in": "auf der Dachterrasse",
+          "into": "auf die Dachterrasse",
+          "gen": "der Dachterrasse",
+          "gender": "f"
+        },
+        "Stal": {
+          "the": "der Stall",
+          "in": "im Stall",
+          "into": "in den Stall",
+          "gen": "des Stalls",
+          "gender": "m"
+        },
+        "Keuken": {
+          "the": "die Küche",
+          "in": "in der Küche",
+          "into": "in die Küche",
+          "gen": "der Küche",
+          "gender": "f"
+        },
+        "Voorraadkamer": {
+          "the": "der Vorratsraum",
+          "in": "im Vorratsraum",
+          "into": "in den Vorratsraum",
+          "gen": "des Vorratsraums",
+          "gender": "m"
+        }
+      },
+      "abdij": {
+        "Scriptorium": {
+          "the": "das Skriptorium",
+          "in": "im Skriptorium",
+          "into": "ins Skriptorium",
+          "gen": "des Skriptoriums",
+          "gender": "n"
+        },
+        "Kapel": {
+          "the": "die Kapelle",
+          "in": "in der Kapelle",
+          "into": "in die Kapelle",
+          "gen": "der Kapelle",
+          "gender": "f"
+        },
+        "Kruidentuin": {
+          "the": "der Arzneigarten",
+          "in": "im Arzneigarten",
+          "into": "in den Arzneigarten",
+          "gen": "des Arzneigartens",
+          "gender": "m"
+        },
+        "Bibliotheek": {
+          "the": "die Bibliothek",
+          "in": "in der Bibliothek",
+          "into": "in die Bibliothek",
+          "gen": "der Bibliothek",
+          "gender": "f"
+        },
+        "Refter": {
+          "the": "das Refektorium",
+          "in": "im Refektorium",
+          "into": "ins Refektorium",
+          "gen": "des Refektoriums",
+          "gender": "n"
+        },
+        "Slaapzaal": {
+          "the": "der Schlafsaal",
+          "in": "im Schlafsaal",
+          "into": "in den Schlafsaal",
+          "gen": "des Schlafsaals",
+          "gender": "m"
+        },
+        "Kloostergang": {
+          "the": "der Kreuzgang",
+          "in": "im Kreuzgang",
+          "into": "in den Kreuzgang",
+          "gen": "des Kreuzgangs",
+          "gender": "m"
+        },
+        "Kelder": {
+          "the": "der Keller",
+          "in": "im Keller",
+          "into": "in den Keller",
+          "gen": "des Kellers",
+          "gender": "m"
+        },
+        "Keuken": {
+          "the": "die Küche",
+          "in": "in der Küche",
+          "into": "in die Küche",
+          "gen": "der Küche",
+          "gender": "f"
+        },
+        "Klokkentoren": {
+          "the": "der Glockenturm",
+          "in": "im Glockenturm",
+          "into": "in den Glockenturm",
+          "gen": "des Glockenturms",
+          "gender": "m"
+        },
+        "Ziekenboeg": {
+          "the": "die Krankenstube",
+          "in": "in der Krankenstube",
+          "into": "in die Krankenstube",
+          "gen": "der Krankenstube",
+          "gender": "f"
+        },
+        "Bakkerij": {
+          "the": "das Backhaus",
+          "in": "im Backhaus",
+          "into": "ins Backhaus",
+          "gen": "des Backhauses",
+          "gender": "n"
+        }
+      },
+      "vuurtoren": {
+        "Lantaarnkamer": {
+          "the": "der Laternenraum",
+          "in": "im Laternenraum",
+          "into": "in den Laternenraum",
+          "gen": "des Laternenraums",
+          "gender": "m"
+        },
+        "Wenteltrap": {
+          "the": "die Wendeltreppe",
+          "in": "auf der Wendeltreppe",
+          "into": "auf die Wendeltreppe",
+          "gen": "der Wendeltreppe",
+          "gender": "f"
+        },
+        "Wachtershuis": {
+          "the": "das Wärterhaus",
+          "in": "im Wärterhaus",
+          "into": "ins Wärterhaus",
+          "gen": "des Wärterhauses",
+          "gender": "n"
+        },
+        "Steiger": {
+          "the": "der Steg",
+          "in": "auf dem Steg",
+          "into": "auf den Steg",
+          "gen": "des Stegs",
+          "gender": "m"
+        },
+        "Botenhuis": {
+          "the": "das Bootshaus",
+          "in": "im Bootshaus",
+          "into": "ins Bootshaus",
+          "gen": "des Bootshauses",
+          "gender": "n"
+        },
+        "Seinkamer": {
+          "the": "der Signalraum",
+          "in": "im Signalraum",
+          "into": "in den Signalraum",
+          "gen": "des Signalraums",
+          "gender": "m"
+        },
+        "Klif": {
+          "the": "das Kliff",
+          "in": "auf dem Kliff",
+          "into": "auf das Kliff",
+          "gen": "des Kliffs",
+          "gender": "n"
+        },
+        "Strand": {
+          "the": "der Strand",
+          "in": "am Strand",
+          "into": "an den Strand",
+          "gen": "des Strandes",
+          "gender": "m"
+        },
+        "Keuken": {
+          "the": "die Küche",
+          "in": "in der Küche",
+          "into": "in die Küche",
+          "gen": "der Küche",
+          "gender": "f"
+        },
+        "Kelder": {
+          "the": "der Keller",
+          "in": "im Keller",
+          "into": "in den Keller",
+          "gen": "des Kellers",
+          "gender": "m"
+        },
+        "Werkplaats": {
+          "the": "die Werkstatt",
+          "in": "in der Werkstatt",
+          "into": "in die Werkstatt",
+          "gen": "der Werkstatt",
+          "gender": "f"
+        },
+        "Voorraadkamer": {
+          "the": "der Vorratsraum",
+          "in": "im Vorratsraum",
+          "into": "in den Vorratsraum",
+          "gen": "des Vorratsraums",
+          "gender": "m"
+        }
       }
     },
     "furniture": {
@@ -7717,6 +9909,126 @@
         "next": "neben einem Cocktailshaker",
         "with": "mit einem Cocktailshaker",
         "def": "den Cocktailshaker"
+      },
+      "filmcamera": {
+        "a": "eine Filmkamera",
+        "next": "neben einer Filmkamera",
+        "with": "mit einer Filmkamera",
+        "def": "die Filmkamera"
+      },
+      "schijnwerper": {
+        "a": "ein Scheinwerfer",
+        "next": "neben einem Scheinwerfer",
+        "with": "mit einem Scheinwerfer",
+        "def": "den Scheinwerfer"
+      },
+      "regiestoel": {
+        "a": "ein Regiestuhl",
+        "next": "neben einem Regiestuhl",
+        "with": "mit einem Regiestuhl",
+        "def": "den Regiestuhl"
+      },
+      "klapbord": {
+        "a": "eine Filmklappe",
+        "next": "neben einer Filmklappe",
+        "with": "mit einer Filmklappe",
+        "def": "die Filmklappe"
+      },
+      "filmspoel": {
+        "a": "eine Filmspule",
+        "next": "neben einer Filmspule",
+        "with": "mit einer Filmspule",
+        "def": "die Filmspule"
+      },
+      "tapijt": {
+        "a": "ein Teppich",
+        "next": "neben einem Teppich",
+        "with": "mit einem Teppich",
+        "def": "den Teppich"
+      },
+      "specerijen": {
+        "a": "ein Gewürzkorb",
+        "next": "neben einem Gewürzkorb",
+        "with": "mit einem Gewürzkorb",
+        "def": "den Gewürzkorb"
+      },
+      "kruik": {
+        "a": "ein Wasserkrug",
+        "next": "neben einem Wasserkrug",
+        "with": "mit einem Wasserkrug",
+        "def": "den Wasserkrug"
+      },
+      "zadel": {
+        "a": "ein Kamelsattel",
+        "next": "neben einem Kamelsattel",
+        "with": "mit einem Kamelsattel",
+        "def": "den Kamelsattel"
+      },
+      "weegschaal": {
+        "a": "eine Messingwaage",
+        "next": "neben einer Messingwaage",
+        "with": "mit einer Messingwaage",
+        "def": "die Messingwaage"
+      },
+      "lessenaar": {
+        "a": "ein Schreibpult",
+        "next": "neben einem Schreibpult",
+        "with": "mit einem Schreibpult",
+        "def": "das Schreibpult"
+      },
+      "kandelaar": {
+        "a": "ein Kerzenleuchter",
+        "next": "neben einem Kerzenleuchter",
+        "with": "mit einem Kerzenleuchter",
+        "def": "den Kerzenleuchter"
+      },
+      "bijenkorf": {
+        "a": "ein Bienenkorb",
+        "next": "neben einem Bienenkorb",
+        "with": "mit einem Bienenkorb",
+        "def": "den Bienenkorb"
+      },
+      "vijzel": {
+        "a": "ein Mörser",
+        "next": "neben einem Mörser",
+        "with": "mit einem Mörser",
+        "def": "den Mörser"
+      },
+      "zandloper": {
+        "a": "eine Sanduhr",
+        "next": "neben einer Sanduhr",
+        "with": "mit einer Sanduhr",
+        "def": "die Sanduhr"
+      },
+      "boei": {
+        "a": "ein Rettungsring",
+        "next": "neben einem Rettungsring",
+        "with": "mit einem Rettungsring",
+        "def": "den Rettungsring"
+      },
+      "fuik": {
+        "a": "ein Hummerkorb",
+        "next": "neben einem Hummerkorb",
+        "with": "mit einem Hummerkorb",
+        "def": "den Hummerkorb"
+      },
+      "misthoorn": {
+        "a": "ein Nebelhorn",
+        "next": "neben einem Nebelhorn",
+        "with": "mit einem Nebelhorn",
+        "def": "das Nebelhorn"
+      },
+      "stormlamp": {
+        "a": "eine Sturmlaterne",
+        "next": "neben einer Sturmlaterne",
+        "with": "mit einer Sturmlaterne",
+        "def": "die Sturmlaterne"
+      },
+      "verrekijker": {
+        "a": "ein Fernrohr",
+        "next": "neben einem Fernrohr",
+        "with": "mit einem Fernrohr",
+        "def": "das Fernrohr"
       }
     }
   }

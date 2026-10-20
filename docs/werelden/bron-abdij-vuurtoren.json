@@ -1,0 +1,1985 @@
+{
+ "note": "Dutch is the source, English the reference translation. Suspect \"who\" and \"look\" are background for the translator only.",
+ "worlds": {
+  "abdij": {
+   "era": "a medieval abbey in the mountains in the winter of 1327",
+   "theme": {
+    "nl": {
+     "title": "De Abdij van Sint-Aldric",
+     "short": "Abdij",
+     "victimName": "Abt Bertram",
+     "roomWord": "ruimte",
+     "roomWordPlural": "ruimtes",
+     "tagline": "Een abdij in de bergen, 1327. Een verboden boek, een gesloten bibliotheek, en een abt die de nacht niet overleeft.",
+     "intro": "Abdij van Sint-Aldric, winter 1327. De sneeuw sluit de bergpas af. Na het nachtgebed ligt abt Bertram in het scriptorium, met inkt aan zijn vingers.",
+     "outro": "De klok luidt voor het avondgebed. Het boek staat weer op zijn plank."
+    },
+    "en": {
+     "title": "The Abbey of Saint Aldric",
+     "short": "Abbey",
+     "victimName": "Abbot Bertram",
+     "roomWord": "room",
+     "roomWordPlural": "rooms",
+     "tagline": "An abbey in the mountains, 1327. A forbidden book, a locked library, and an abbot who does not survive the night.",
+     "intro": "The Abbey of Saint Aldric, winter 1327. Snow closes the mountain pass. After the night prayers, Abbot Bertram lies in the scriptorium, with ink on his fingers.",
+     "outro": "The bell rings for evening prayer. The book is back on its shelf."
+    }
+   },
+   "rooms": [
+    {
+     "nl": "Scriptorium",
+     "article": "het",
+     "en": "Scriptorium"
+    },
+    {
+     "nl": "Kapel",
+     "article": "de",
+     "en": "Chapel"
+    },
+    {
+     "nl": "Kruidentuin",
+     "article": "de",
+     "en": "Herb Garden"
+    },
+    {
+     "nl": "Bibliotheek",
+     "article": "de",
+     "en": "Library"
+    },
+    {
+     "nl": "Refter",
+     "article": "de",
+     "en": "Refectory"
+    },
+    {
+     "nl": "Slaapzaal",
+     "article": "de",
+     "en": "Dormitory"
+    },
+    {
+     "nl": "Kloostergang",
+     "article": "de",
+     "en": "Cloister"
+    },
+    {
+     "nl": "Kelder",
+     "article": "de",
+     "en": "Cellar"
+    },
+    {
+     "nl": "Keuken",
+     "article": "de",
+     "en": "Kitchen"
+    },
+    {
+     "nl": "Klokkentoren",
+     "article": "de",
+     "en": "Bell Tower"
+    },
+    {
+     "nl": "Ziekenboeg",
+     "article": "de",
+     "en": "Infirmary"
+    },
+    {
+     "nl": "Bakkerij",
+     "article": "de",
+     "en": "Bakery"
+    }
+   ],
+   "furniture": [
+    {
+     "id": "lessenaar",
+     "nl": "een schrijflessenaar",
+     "en": "a writing desk"
+    },
+    {
+     "id": "kandelaar",
+     "nl": "een kandelaar",
+     "en": "a candlestick"
+    },
+    {
+     "id": "bijenkorf",
+     "nl": "een bijenkorf",
+     "en": "a beehive"
+    },
+    {
+     "id": "vijzel",
+     "nl": "een vijzel",
+     "en": "a mortar"
+    },
+    {
+     "id": "zandloper",
+     "nl": "een zandloper",
+     "en": "an hourglass"
+    }
+   ],
+   "suspects": [
+    {
+     "nl": "Broeder Anselm",
+     "en": "Brother Anselm",
+     "gender": "m",
+     "who": "Bewaart de sleutels van de bibliotheek",
+     "look": "an elderly librarian monk in his sixties, tonsure, grey beard, black Benedictine habit, large key ring"
+    },
+    {
+     "nl": "Broeder Cuthbert",
+     "en": "Brother Cuthbert",
+     "gender": "m",
+     "who": "Kweekt de kruiden en mengt de dranken",
+     "look": "a stout herbalist monk in his forties, tonsure, rosy cheeks, habit with rolled sleeves, a bundle of dried herbs"
+    },
+    {
+     "nl": "Novice Elias",
+     "en": "Novice Elias",
+     "gender": "m",
+     "who": "Kwam deze zomer naar de abdij",
+     "look": "a young novice of about eighteen, short hair, plain grey habit, nervous eyes, wax tablet"
+    },
+    {
+     "nl": "Pelgrim Gisela",
+     "en": "Pilgrim Gisela",
+     "gender": "f",
+     "who": "Op weg naar Rome, gestrand door de sneeuw",
+     "look": "a pilgrim woman in her thirties, wide-brimmed hat with a scallop shell, travelling cloak, wooden staff"
+    },
+    {
+     "nl": "Kruidenvrouw Hilde",
+     "en": "Herb Woman Hilde",
+     "gender": "f",
+     "who": "Komt uit het dorp met kruiden voor de zieken",
+     "look": "a village herb woman in her fifties, linen head cloth, weathered face, basket of herbs"
+    },
+    {
+     "nl": "Gravin Mathilde",
+     "en": "Countess Mathilde",
+     "gender": "f",
+     "who": "Betaalt de abdij en wil er iets voor terug",
+     "look": "a noble countess in her forties, fur-trimmed mantle, jewelled circlet over a veil, proud gaze"
+    },
+    {
+     "nl": "Verluchtster Odile",
+     "en": "Illuminator Odile",
+     "gender": "f",
+     "who": "Schildert de gouden letters in de boeken",
+     "look": "a young illuminator of manuscripts in her twenties, ink-stained fingers, plain wimple, fine brush in hand"
+    },
+    {
+     "nl": "Kelderbroeder Waldo",
+     "en": "Cellarer Waldo",
+     "gender": "m",
+     "who": "Beheert de voorraden en de kelder",
+     "look": "a burly cellarer monk in his fifties, tonsure, heavy jaw, leather apron over the habit, keys at his belt"
+    }
+   ],
+   "week": {
+    "nl": [
+     "Het boek zonder titel",
+     "De nacht van de stille klok",
+     "Het kruid dat niet genas",
+     "De laatste abt van Sint-Aldric"
+    ],
+    "en": [
+     "The Book Without a Title",
+     "The Night of the Silent Bell",
+     "The Herb That Did Not Heal",
+     "The Last Abbot of Saint Aldric"
+    ]
+   },
+   "medal": {
+    "nl": [
+     "De klok luidt",
+     "Maak alle delen van De Abdij van Sint-Aldric af"
+    ],
+    "en": [
+     "The Bell Rings",
+     "Finish every part of The Abbey of Saint Aldric"
+    ]
+   },
+   "campaign": [
+    {
+     "key": "abdij",
+     "nl": {
+      "title": "Deel I · De dode abt",
+      "intro": "Abdij van Sint-Aldric, winter 1327. De sneeuw sluit de bergpas af. Na het nachtgebed ligt abt Bertram in het scriptorium, met inkt aan zijn vingers.",
+      "outro": "De broeders bidden voor hun abt. De sneeuw blijft liggen, en de winter is nog lang.",
+      "briefing": "Een abdij is vol stille gangen en gesloten deuren. Begin bij wie zegt in welke ruimte hij was; \"direct naast\" de kandelaar telt alleen recht ernaast, nooit schuin.",
+      "cases": [
+       [
+        "Na het nachtgebed",
+        "Twaalf broeders zongen de metten. Daarna klonk er één stem minder.",
+        "📿 Paternostersnoer"
+       ],
+       [
+        "Inkt aan zijn vingers",
+        "De abt schreef nooit zelf. Zijn vingers waren zwart van de inkt.",
+        "🪶 Ganzenveer"
+       ],
+       [
+        "Broeder Anselm telt",
+        "Zeven sleutels aan zijn ring. Gisteren waren het er acht.",
+        "🗝️ Sleutelbos"
+       ],
+       [
+        "De kandelaar",
+        "De kaars in het scriptorium brandde nog. Na de metten mag daar geen licht zijn.",
+        "🕯️ Waskaars"
+       ],
+       [
+        "Novice Elias schrijft",
+        "Op zijn wastablet stond een psalm. Eronder, half uitgewist, een naam.",
+        "📝 Wastablet"
+       ],
+       [
+        "Sneeuw op de pas",
+        "Niemand kon de abdij in of uit. Toch hing er een touw over de muur.",
+        "🪢 Hennepkoord"
+       ],
+       [
+        "Gravin Mathilde wacht",
+        "Ze wilde de abt na de metten spreken. Ze zegt dat hij niet kwam.",
+        "💍 Zegelring"
+       ],
+       [
+        "De eerste nacht",
+        "De poort was dicht en de pas was dicht. De deur van het scriptorium stond open.",
+        "🔩 Deurgrendel"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part I · The Dead Abbot",
+      "intro": "The Abbey of Saint Aldric, winter 1327. Snow closes the mountain pass. After the night prayers, Abbot Bertram lies in the scriptorium, with ink on his fingers.",
+      "outro": "The brothers pray for their abbot. The snow stays, and the winter is still long.",
+      "briefing": "An abbey is full of quiet corridors and closed doors. Start with whoever says which room they were in; “directly next to” the candlestick only counts straight beside it, never diagonally.",
+      "cases": [
+       [
+        "After the Night Prayers",
+        "Twelve brothers sang Matins. After that, there was one voice fewer.",
+        "📿 Paternoster beads"
+       ],
+       [
+        "Ink on His Fingers",
+        "The abbot never wrote himself. His fingers were black with ink.",
+        "🪶 Goose quill"
+       ],
+       [
+        "Brother Anselm Counts",
+        "Seven keys on his ring. Yesterday there were eight.",
+        "🗝️ Bunch of keys"
+       ],
+       [
+        "The Candlestick",
+        "The candle in the scriptorium was still burning. After Matins no light is allowed there.",
+        "🕯️ Wax candle"
+       ],
+       [
+        "Novice Elias Writes",
+        "On his wax tablet was a psalm. Below it, half rubbed out, a name.",
+        "📝 Wax tablet"
+       ],
+       [
+        "Snow on the Pass",
+        "Nobody could get in or out of the abbey. Yet a rope hung over the wall.",
+        "🪢 Hemp cord"
+       ],
+       [
+        "Countess Mathilde Waits",
+        "She wanted to speak to the abbot after Matins. She says he never came.",
+        "💍 Signet ring"
+       ],
+       [
+        "The First Night",
+        "The gate was shut and the pass was shut. The door of the scriptorium stood open.",
+        "🔩 Door bolt"
+       ]
+      ]
+     }
+    },
+    {
+     "key": "abdij-2",
+     "nl": {
+      "title": "Deel II · Het verboden boek",
+      "intro": "In de bibliotheek staat één boek dat niemand mag lezen. Alleen de abt had de sleutel. Iemand heeft het toch gelezen.",
+      "outro": "Het boek ligt weer achter slot. De vraag is niet meer wie het las, maar waarom.",
+      "briefing": "In de bibliotheek fluistert iedereen, en elk woord telt. Een verklaring over twee mensen los je op door eerst één van de twee vast te zetten.",
+      "cases": [
+       [
+        "Achter slot",
+        "Het boek lag achter twee sloten. Eén slot was nog dicht.",
+        "🔒 Hangslot"
+       ],
+       [
+        "Broeder Anselm zwijgt",
+        "Hij wist welk boek het was. Hij wist ook wie erom had gevraagd.",
+        "📚 Catalogus"
+       ],
+       [
+        "Een blad minder",
+        "Het boek telde tweehonderd bladen. Eén blad was er recht uitgesneden.",
+        "🔪 Pennenmes"
+       ],
+       [
+        "Verluchtster Odile kijkt",
+        "Het goud in de marge is van haar hand. Het boek zelf had ze nooit gezien, zegt ze.",
+        "✨ Bladgoud"
+       ],
+       [
+        "Lezen bij kaarslicht",
+        "Op het perkament zat kaarsvet. Talg uit de keuken, geen was uit de kapel.",
+        "🕯️ Talgkaars"
+       ],
+       [
+        "Novice Elias leest",
+        "Hij kent nauwelijks Latijn, zegt hij. Op zijn wastablet stond een zin uit het verboden boek.",
+        "✍️ Overgeschreven zin"
+       ],
+       [
+        "Kelderbroeder Waldo en de gravin",
+        "Ze spraken samen in de kloostergang. Daarna zeiden ze geen woord meer tegen elkaar.",
+        "✉️ Verzegeld briefje"
+       ],
+       [
+        "Het verboden boek",
+        "Niemand mocht het lezen. Twee mensen hebben het toch gedaan.",
+        "📕 Verboden boek"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part II · The Forbidden Book",
+      "intro": "In the library stands one book that nobody may read. Only the abbot had the key. Someone has read it anyway.",
+      "outro": "The book is under lock and key again. The question is no longer who read it, but why.",
+      "briefing": "In the library everyone whispers, and every word counts. Solve a statement about two people by fixing one of the two first.",
+      "cases": [
+       [
+        "Under Lock and Key",
+        "The book lay behind two locks. One lock was still shut.",
+        "🔒 Padlock"
+       ],
+       [
+        "Brother Anselm Stays Silent",
+        "He knew which book it was. He also knew who had asked for it.",
+        "📚 Catalogue"
+       ],
+       [
+        "One Leaf Fewer",
+        "The book had two hundred leaves. One leaf had been cut out cleanly.",
+        "🔪 Penknife"
+       ],
+       [
+        "Illuminator Odile Looks",
+        "The gold in the margin is her work. The book itself she had never seen, she says.",
+        "✨ Gold leaf"
+       ],
+       [
+        "Reading by Candlelight",
+        "There was candle grease on the parchment. Tallow from the kitchen, not wax from the chapel.",
+        "🕯️ Tallow candle"
+       ],
+       [
+        "Novice Elias Reads",
+        "He barely knows any Latin, he says. On his wax tablet was a line from the forbidden book.",
+        "✍️ Copied line"
+       ],
+       [
+        "Cellarer Waldo and the Countess",
+        "They spoke together in the cloister. After that, they did not say another word to each other.",
+        "✉️ Sealed note"
+       ],
+       [
+        "The Forbidden Book",
+        "Nobody was allowed to read it. Two people did anyway.",
+        "📕 Forbidden book"
+       ]
+      ]
+     }
+    },
+    {
+     "key": "abdij-3",
+     "nl": {
+      "title": "Deel III · De kruidentuin",
+      "intro": "De kruidentuin ligt onder de sneeuw, maar de gedroogde kruiden hangen binnen. In de ziekenboeg wordt een oude broeder zieker in plaats van beter. Iemand mengt zijn drank opnieuw.",
+      "outro": "De oude broeder zit weer rechtop en vraagt om soep. De verkeerde pot is weg uit de ziekenboeg.",
+      "briefing": "Tussen de kruiden weet iedereen wat waar groeit. Wie zegt waar hij níét was, vertelt je ook iets: streep die ruimte meteen weg.",
+      "cases": [
+       [
+        "Elk kruid geneest",
+        "Salie voor de keel, munt voor de maag. In de pot zat geen van beide.",
+        "🌿 Gedroogde salie"
+       ],
+       [
+        "Broeder Cuthbert mengt",
+        "Hij mengde de drank zoals elke avond. Alleen proefde hij er deze keer niet van.",
+        "🥣 Kruidendrank"
+       ],
+       [
+        "De vijzel",
+        "In de vijzel zat nog poeder. Van een kruid dat niet in deze tuin groeit.",
+        "🌰 Gemalen wortel"
+       ],
+       [
+        "Kruidenvrouw Hilde komt binnen",
+        "Ze kwam uit het dorp met een mand vol kruiden. De pas was al een week dicht.",
+        "🧺 Kruidenmand"
+       ],
+       [
+        "Bijen in de winter",
+        "In de winter slapen de bijen. Iemand heeft de korf toch opengemaakt.",
+        "🍯 Honingraat"
+       ],
+       [
+        "De ziekenboeg",
+        "Drie bedden, twee zieken. Het derde bed was warm.",
+        "🛏️ Strozak"
+       ],
+       [
+        "Pelgrim Gisela helpt",
+        "Ze bood aan de zieke te verzorgen. Ze wist welke drank hij kreeg, voordat iemand het haar zei.",
+        "🍶 Drinkkalebas"
+       ],
+       [
+        "Monnikskap",
+        "Een mooie paarse bloem. In elk kruidenboek staat een kruisje naast haar naam.",
+        "🪻 Monnikskap"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part III · The Herb Garden",
+      "intro": "The herb garden lies under the snow, but the dried herbs hang indoors. In the infirmary an old brother is getting worse instead of better. Someone is mixing his drink a second time.",
+      "outro": "The old brother is sitting up again and asking for soup. The wrong jar is gone from the infirmary.",
+      "briefing": "Among the herbs, everyone knows what grows where. Whoever says where they were not tells you something too: cross that room off straight away.",
+      "cases": [
+       [
+        "Every Herb Heals",
+        "Sage for the throat, mint for the stomach. The jar held neither.",
+        "🌿 Dried sage"
+       ],
+       [
+        "Brother Cuthbert Mixes",
+        "He mixed the drink as he did every evening. Only this time he did not taste it.",
+        "🥣 Herbal drink"
+       ],
+       [
+        "The Mortar",
+        "There was still powder in the mortar. From a herb that does not grow in this garden.",
+        "🌰 Ground root"
+       ],
+       [
+        "Herb Woman Hilde Comes In",
+        "She came from the village with a basket full of herbs. The pass had been shut for a week.",
+        "🧺 Herb basket"
+       ],
+       [
+        "Bees in Winter",
+        "In winter the bees sleep. Someone opened the hive anyway.",
+        "🍯 Honeycomb"
+       ],
+       [
+        "The Infirmary",
+        "Three beds, two patients. The third bed was warm.",
+        "🛏️ Straw mattress"
+       ],
+       [
+        "Pilgrim Gisela Helps",
+        "She offered to nurse the patient. She knew which drink he was given before anyone told her.",
+        "🍶 Drinking gourd"
+       ],
+       [
+        "Monkshood",
+        "A pretty purple flower. In every herbal there is a little cross beside its name.",
+        "🪻 Monkshood"
+       ]
+      ]
+     }
+    },
+    {
+     "key": "abdij-4",
+     "nl": {
+      "title": "Deel IV · De lange winter",
+      "intro": "De pas is dicht tot het voorjaar. Kelderbroeder Waldo telt elke week de voorraden, en elke week is de kelder leger dan hij hoort te zijn.",
+      "outro": "De kelder is geteld en het brood eerlijk verdeeld. Wie at voor twee, eet nu voor één.",
+      "briefing": "In de winter blijft iedereen dicht bij het vuur, en dicht bij elkaar. Zet eerst de verdachte met de kleinste keus neer; de rest volgt.",
+      "cases": [
+       [
+        "Tot het voorjaar",
+        "Genoeg graan voor vier maanden, zei de kelderbroeder. Na één maand was de helft op.",
+        "🌾 Graanzak"
+       ],
+       [
+        "Kelderbroeder Waldo weegt",
+        "Elke week woog hij de kazen. Er ontbrak er geen, maar ze werden lichter.",
+        "🧀 Kaaswiel"
+       ],
+       [
+        "De bakkerij",
+        "De oven is koud sinds de metten. Toch ruikt de bakkerij naar vers brood.",
+        "🍞 Roggebrood"
+       ],
+       [
+        "Gravin Mathilde vast",
+        "Ze vast de hele advent, zegt ze. Onder haar bed liggen kruimels van wittebrood.",
+        "🥖 Broodkorst"
+       ],
+       [
+        "De zandloper",
+        "In de keuken draait iemand elk uur de zandloper om. Om drie uur vergat hij het.",
+        "⏳ Zandloper"
+       ],
+       [
+        "Novice Elias heeft honger",
+        "Hij was de magerste van allemaal. Tot half januari.",
+        "🍽️ Houten nap"
+       ],
+       [
+        "Wijn voor de mis",
+        "Voor de mis is een kan per week genoeg. Er verdween een heel vat.",
+        "🍷 Miswijn"
+       ],
+       [
+        "Sneeuw tot de luiken",
+        "De sneeuw lag tot aan de luiken van de refter. Eén luik stond open, van binnenuit.",
+        "🧊 IJspegel"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part IV · The Long Winter",
+      "intro": "The pass is shut until spring. Cellarer Waldo counts the stores every week, and every week the cellar is emptier than it should be.",
+      "outro": "The cellar is counted and the bread shared fairly. Whoever ate for two now eats for one.",
+      "briefing": "In winter everyone stays close to the fire, and close to each other. Place the suspect with the fewest options first; the rest follows.",
+      "cases": [
+       [
+        "Until Spring",
+        "Enough grain for four months, said the cellarer. After one month half of it was gone.",
+        "🌾 Grain sack"
+       ],
+       [
+        "Cellarer Waldo Weighs",
+        "Every week he weighed the cheeses. None was missing, but they got lighter.",
+        "🧀 Cheese wheel"
+       ],
+       [
+        "The Bakery",
+        "The oven has been cold since Matins. Yet the bakery smells of fresh bread.",
+        "🍞 Rye bread"
+       ],
+       [
+        "Countess Mathilde Fasts",
+        "She is fasting all through Advent, she says. Under her bed lie crumbs of white bread.",
+        "🥖 Bread crust"
+       ],
+       [
+        "The Hourglass",
+        "In the kitchen someone turns the hourglass every hour. At three he forgot.",
+        "⏳ Hourglass"
+       ],
+       [
+        "Novice Elias Is Hungry",
+        "He was the thinnest of them all. Until the middle of January.",
+        "🍽️ Wooden bowl"
+       ],
+       [
+        "Wine for Mass",
+        "For Mass one jug a week is enough. A whole barrel disappeared.",
+        "🍷 Altar wine"
+       ],
+       [
+        "Snow up to the Shutters",
+        "The snow lay up to the shutters of the refectory. One shutter stood open, from the inside.",
+        "🧊 Icicle"
+       ]
+      ]
+     }
+    },
+    {
+     "key": "abdij-5",
+     "nl": {
+      "title": "Deel V · Het bezoek van de bisschop",
+      "intro": "Een week dooi opent de pas. De bisschop is op weg om een nieuwe abt te kiezen, en niet iedereen wil dat hij aankomt.",
+      "outro": "De bisschop komt veilig aan en zegent de abdij. De nieuwe abt wordt gekozen, en geen stem is gekocht.",
+      "briefing": "Voor het bezoek staat iedereen ergens anders klaar. Begin bij wie zegt alleen te zijn geweest: dat ruimt meteen een hele ruimte op.",
+      "cases": [
+       [
+        "Een brief met zegel",
+        "De brief van de bisschop had een rood zegel. Het zegel was al eens gebroken.",
+        "📜 Bisschopsbrief"
+       ],
+       [
+        "Broeder Anselm wil abt worden",
+        "Hij wil het niet, zegt hij. Hij kent de eed al uit zijn hoofd.",
+        "📃 Abtseed"
+       ],
+       [
+        "De klokkentoren",
+        "Als de bisschop aankomt, luidt de klok. Het touw was doorgesneden, op ooghoogte.",
+        "🔔 Klokkentouw"
+       ],
+       [
+        "Gravin Mathilde schenkt",
+        "Ze schenkt de abdij een gouden kelk. Als de bisschop haar kandidaat kiest.",
+        "🏆 Gouden kelk"
+       ],
+       [
+        "Stenen op het pad",
+        "Iemand had stenen op het bergpad gerold. Ze lagen boven op de sneeuw, niet eronder.",
+        "🪨 Rotsblok"
+       ],
+       [
+        "Broeder Cuthbert kookt",
+        "Voor de bisschop een feestmaal. Eén schotel was voor hem alleen.",
+        "🍲 Stoofpot"
+       ],
+       [
+        "Kruidenvrouw Hilde kent de weg",
+        "Ze kent elk pad door de bergen. Ook het pad dat de bisschop zou nemen.",
+        "🥾 Natte laars"
+       ],
+       [
+        "De bisschop komt",
+        "Zijn muildier kwam als eerste de poort door. De bisschop een uur later, te voet.",
+        "🐴 Muildier"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part V · The Bishop's Visit",
+      "intro": "A week of thaw opens the pass. The bishop is on his way to choose a new abbot, and not everyone wants him to arrive.",
+      "outro": "The bishop arrives safely and blesses the abbey. The new abbot is chosen, and not one vote was bought.",
+      "briefing": "For the visit, everyone stands ready somewhere else. Start with whoever says they were alone: that clears a whole room at once.",
+      "cases": [
+       [
+        "A Sealed Letter",
+        "The bishop's letter had a red seal. The seal had been broken once before.",
+        "📜 Bishop's letter"
+       ],
+       [
+        "Brother Anselm Wants to Be Abbot",
+        "He does not want it, he says. He already knows the oath by heart.",
+        "📃 Abbot's oath"
+       ],
+       [
+        "The Bell Tower",
+        "When the bishop arrives, the bell rings. The rope had been cut, at eye level.",
+        "🔔 Bell rope"
+       ],
+       [
+        "Countess Mathilde Donates",
+        "She gives the abbey a golden chalice. If the bishop chooses her candidate.",
+        "🏆 Golden chalice"
+       ],
+       [
+        "Stones on the Path",
+        "Someone had rolled stones onto the mountain path. They lay on top of the snow, not under it.",
+        "🪨 Boulder"
+       ],
+       [
+        "Brother Cuthbert Cooks",
+        "A feast for the bishop. One dish was for him alone.",
+        "🍲 Stew"
+       ],
+       [
+        "Herb Woman Hilde Knows the Way",
+        "She knows every path through the mountains. Including the path the bishop would take.",
+        "🥾 Wet boot"
+       ],
+       [
+        "The Bishop Arrives",
+        "His mule came through the gate first. The bishop an hour later, on foot.",
+        "🐴 Mule"
+       ]
+      ]
+     }
+    },
+    {
+     "key": "abdij-6",
+     "nl": {
+      "title": "Deel VI · Vuur in het scriptorium",
+      "intro": "Midden in de nacht staat het scriptorium in brand. De broeders blussen met sneeuw en emmers. Eén boek is gered, door de verkeerde.",
+      "outro": "Het vuur is uit en de muren zijn zwart. Het geredde boek ligt in de kapel, uit de verkeerde handen.",
+      "briefing": "Rook maakt getuigen vaag, de plattegrond niet. De verklaringen worden zuiniger: gebruik het potlood, streep vakjes weg die niet kunnen en kijk wat overblijft.",
+      "cases": [
+       [
+        "Rook na de metten",
+        "Na de metten hing er rook in de kloostergang. Alle kaarsen waren al gedoofd.",
+        "💨 Rookspoor"
+       ],
+       [
+        "Emmers sneeuw",
+        "De broeders blusten met sneeuw van de binnenplaats. Bij het scriptorium was de sneeuw al weggeschept, voor het vuur begon.",
+        "🪣 Houten emmer"
+       ],
+       [
+        "Verluchtster Odile rent",
+        "Ze rende als eerste het vuur in, voor haar boeken. Ze kwam terug met lege handen en schone mouwen.",
+        "🎨 Verfpotje"
+       ],
+       [
+        "De lessenaar",
+        "Alle lessenaars waren verbrand. Het zwartst was de lessenaar die het verst van de kaarsen stond.",
+        "🪵 Verkoold hout"
+       ],
+       [
+        "Kelderbroeder Waldo blust",
+        "Hij droeg de zwaarste emmers. Zijn habijt rook niet naar vuur, maar naar olie.",
+        "🫙 Oliekruik"
+       ],
+       [
+        "As in de refter",
+        "In de haard van de refter lag as van perkament. Het vuur in het scriptorium begon pas later.",
+        "🌫️ Perkamentas"
+       ],
+       [
+        "Pelgrim Gisela bidt",
+        "Ze bad de hele brand lang in de kapel. Haar mantel was zwart van het roet.",
+        "🧥 Pelgrimsmantel"
+       ],
+       [
+        "De verkeerde redder",
+        "Eén boek werd gered. Door iemand die zegt dat hij niet kan lezen.",
+        "📘 Geschroeide band"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part VI · Fire in the Scriptorium",
+      "intro": "In the middle of the night the scriptorium is on fire. The brothers fight it with snow and buckets. One book is saved, by the wrong person.",
+      "outro": "The fire is out and the walls are black. The saved book lies in the chapel, out of the wrong hands.",
+      "briefing": "Smoke makes witnesses vague, but not the floor plan. The statements get sparser: use the pencil, cross off squares that cannot be and see what is left.",
+      "cases": [
+       [
+        "Smoke after Matins",
+        "After Matins there was smoke in the cloister. Every candle had already been put out.",
+        "💨 Trail of smoke"
+       ],
+       [
+        "Buckets of Snow",
+        "The brothers fought the fire with snow from the courtyard. By the scriptorium the snow had already been shovelled away, before the fire started.",
+        "🪣 Wooden bucket"
+       ],
+       [
+        "Illuminator Odile Runs",
+        "She was the first to run into the fire, for her books. She came back empty-handed, with clean sleeves.",
+        "🎨 Paint pot"
+       ],
+       [
+        "The Writing Desk",
+        "Every writing desk had burned. The blackest was the desk that stood furthest from the candles.",
+        "🪵 Charred wood"
+       ],
+       [
+        "Cellarer Waldo Fights the Fire",
+        "He carried the heaviest buckets. His habit did not smell of fire, but of oil.",
+        "🫙 Oil jar"
+       ],
+       [
+        "Ashes in the Refectory",
+        "In the refectory hearth lay ashes of parchment. The fire in the scriptorium only started later.",
+        "🌫️ Parchment ash"
+       ],
+       [
+        "Pilgrim Gisela Prays",
+        "She prayed in the chapel all through the fire. Her cloak was black with soot.",
+        "🧥 Pilgrim's cloak"
+       ],
+       [
+        "The Wrong Rescuer",
+        "One book was saved. By someone who says he cannot read.",
+        "📘 Scorched binding"
+       ]
+      ]
+     }
+    },
+    {
+     "key": "abdij-7",
+     "nl": {
+      "title": "Deel VII · De pelgrims",
+      "intro": "Twaalf pelgrims kloppen aan en vragen om onderdak. De regel zegt dat elke gast ontvangen wordt als Christus zelf. Na drie dagen trekken er elf verder.",
+      "outro": "De elf pelgrims trekken verder naar Rome. De twaalfde blijft, maar niet als gast.",
+      "briefing": "Het bord wordt groter en de abdij voller. Staat in het rapport dat een ruimte leeg was, dan valt die hele ruimte af voor iedereen.",
+      "cases": [
+       [
+        "Twaalf aan de poort",
+        "Twaalf pelgrims vroegen om brood en een bed. In de sneeuw voor de poort stonden dertien paar voetsporen.",
+        "👣 Voetsporen"
+       ],
+       [
+        "Pelgrim Gisela herkent iemand",
+        "Ze kende één van de twaalf. Ze zei het pas toen hij weg was.",
+        "🐚 Sint-Jakobsschelp"
+       ],
+       [
+        "Het gastenboek",
+        "Elke gast schreef zijn naam in het boek. Twee namen staan er in dezelfde hand.",
+        "✒️ Gastenboek"
+       ],
+       [
+        "Broeder Cuthbert verbindt",
+        "Hij verbond de voeten van elf pelgrims. De twaalfde had geen blaren.",
+        "🩹 Linnen verband"
+       ],
+       [
+        "Het brood van de armen",
+        "Elke pelgrim kreeg één brood. De bakkerij bakte er dertien.",
+        "🥖 Pelgrimsbrood"
+       ],
+       [
+        "Novice Elias spreekt",
+        "Hij sprak met de pelgrims in hun eigen taal. Hij komt uit een dorp hier vlakbij, zei hij in de zomer.",
+        "🧾 Vrijgeleide"
+       ],
+       [
+        "Verluchtster Odile tekent",
+        "Ze tekende de twaalf in de marge van een psalter. Eén gezicht had ze al eens geschilderd.",
+        "🖌️ Penseel"
+       ],
+       [
+        "Elf vertrekken",
+        "Twaalf kwamen er binnen. Elf trokken verder naar Rome.",
+        "⛰️ Bergpad"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part VII · The Pilgrims",
+      "intro": "Twelve pilgrims knock at the gate and ask for shelter. The Rule says every guest is to be received as Christ himself. After three days, eleven move on.",
+      "outro": "The eleven pilgrims move on to Rome. The twelfth stays, but not as a guest.",
+      "briefing": "The board gets bigger and the abbey fuller. If the report says a room was empty, that whole room is ruled out for everyone.",
+      "cases": [
+       [
+        "Twelve at the Gate",
+        "Twelve pilgrims asked for bread and a bed. In the snow before the gate were thirteen pairs of footprints.",
+        "👣 Footprints"
+       ],
+       [
+        "Pilgrim Gisela Recognises Someone",
+        "She knew one of the twelve. She only said so once he had gone.",
+        "🐚 Scallop shell"
+       ],
+       [
+        "The Guest Book",
+        "Every guest wrote his name in the book. Two names are in the same hand.",
+        "✒️ Guest book"
+       ],
+       [
+        "Brother Cuthbert Bandages",
+        "He bandaged the feet of eleven pilgrims. The twelfth had no blisters.",
+        "🩹 Linen bandage"
+       ],
+       [
+        "Bread for the Poor",
+        "Every pilgrim was given one loaf. The bakery baked thirteen.",
+        "🥖 Pilgrim's bread"
+       ],
+       [
+        "Novice Elias Speaks",
+        "He spoke to the pilgrims in their own language. He comes from a village close by, he said in the summer.",
+        "🧾 Safe conduct"
+       ],
+       [
+        "Illuminator Odile Draws",
+        "She drew the twelve in the margin of a psalter. One face she had painted before.",
+        "🖌️ Brush"
+       ],
+       [
+        "Eleven Leave",
+        "Twelve came in. Eleven went on to Rome.",
+        "⛰️ Mountain path"
+       ]
+      ]
+     }
+    },
+    {
+     "key": "abdij-8",
+     "nl": {
+      "title": "Deel VIII · Het laatste getijde",
+      "intro": "Het voorjaar komt en de sneeuw smelt van de pas. Nog één nacht in de kloostergang, met dezelfde gezichten als in de eerste winternacht.",
+      "outro": "Van Dam trekt zijn mantel dicht, buigt voor de broeders en loopt over de open pas het dal in. De klok luidt voor het avondgebed. Het boek staat weer op zijn plank.",
+      "briefing": "De laatste zaken, bijna allemaal op het grote bord. Blijf niet hangen bij wie het lastigst is: zet eerst de anderen neer, dan blijft er voor de laatste vaak maar één vakje over.",
+      "cases": [
+       [
+        "De sneeuw smelt",
+        "Onder de sneeuw bij de muur lag een sleutel. De achtste.",
+        "🔑 IJzeren sleutel"
+       ],
+       [
+        "Broeder Anselm geeft de sleutels af",
+        "Veertig jaar droeg hij de sleutels. Vanavond legt hij ze neer, op één na.",
+        "⛓️ Sleutelring"
+       ],
+       [
+        "Kruidenvrouw Hilde gaat naar huis",
+        "Ze kwam met een volle mand kruiden. Ze gaat met een volle mand, en geen kruiden.",
+        "🧺 Volle mand"
+       ],
+       [
+        "De nieuwe abt",
+        "Hij zegent de broeders voor het eerst. Eén broeder buigt zijn hoofd niet.",
+        "⚜️ Abtsstaf"
+       ],
+       [
+        "Kelderbroeder Waldo sluit de kelder",
+        "De kelder is weer gevuld voor de zomer. Achter het laatste vat staat iets wat er niet hoort.",
+        "🍺 Kloosterbier"
+       ],
+       [
+        "Gravin Mathilde vertrekt",
+        "Haar wagen staat klaar aan de poort. Hij is zwaarder dan toen ze kwam.",
+        "🛞 Wagenwiel"
+       ],
+       [
+        "De vespers",
+        "Het laatste avondgebed van de winter. Eén stem zong een andere psalm.",
+        "🎼 Antifonarium"
+       ],
+       [
+        "Het laatste getijde",
+        "Waar het begon, in het scriptorium. Daar eindigt het ook.",
+        "🖋️ Inkthoorn"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part VIII · The Last Office",
+      "intro": "Spring comes and the snow melts from the pass. One more night in the cloister, with the same faces as on the first night of winter.",
+      "outro": "Van Dam pulls his cloak tight, bows to the brothers and walks over the open pass down into the valley. The bell rings for evening prayer. The book is back on its shelf.",
+      "briefing": "The last cases, nearly all on the big board. Do not get stuck on the hardest one: place the others first, and the last one often has only one square left.",
+      "cases": [
+       [
+        "The Snow Melts",
+        "Under the snow by the wall lay a key. The eighth.",
+        "🔑 Iron key"
+       ],
+       [
+        "Brother Anselm Hands Over the Keys",
+        "For forty years he carried the keys. Tonight he lays them down, all but one.",
+        "⛓️ Key ring"
+       ],
+       [
+        "Herb Woman Hilde Goes Home",
+        "She came with a basket full of herbs. She leaves with a full basket, and no herbs.",
+        "🧺 Full basket"
+       ],
+       [
+        "The New Abbot",
+        "He blesses the brothers for the first time. One brother does not bow his head.",
+        "⚜️ Abbot's crozier"
+       ],
+       [
+        "Cellarer Waldo Locks the Cellar",
+        "The cellar is full again for the summer. Behind the last barrel stands something that does not belong there.",
+        "🍺 Abbey ale"
+       ],
+       [
+        "Countess Mathilde Leaves",
+        "Her wagon stands ready at the gate. It is heavier than when she came.",
+        "🛞 Wagon wheel"
+       ],
+       [
+        "Vespers",
+        "The last evening prayer of the winter. One voice sang a different psalm.",
+        "🎼 Antiphonary"
+       ],
+       [
+        "The Last Office",
+        "Where it began, in the scriptorium. That is where it ends.",
+        "🖋️ Inkhorn"
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  "vuurtoren": {
+   "era": "a lighthouse island off a stormy coast in 1900",
+   "theme": {
+    "nl": {
+     "title": "Vuurtoren Grauwkaap",
+     "short": "Vuurtoren",
+     "victimName": "Vuurtorenwachter Silas Mourne",
+     "roomWord": "ruimte",
+     "roomWordPlural": "ruimtes",
+     "tagline": "1900. Een eiland, een storm van drie dagen, en een vuurtoren die voor het eerst in twintig jaar donker is.",
+     "intro": "Vuurtoren Grauwkaap, november 1900. Een storm sluit het eiland af van de wal. Om middernacht gaat het licht uit. Boven in de lantaarnkamer ligt wachter Silas Mourne.",
+     "outro": "Het licht draait weer. Elke schipper ziet het, en jij weet wie het doofde."
+    },
+    "en": {
+     "title": "Greycape Lighthouse",
+     "short": "Lighthouse",
+     "victimName": "Keeper Silas Mourne",
+     "roomWord": "room",
+     "roomWordPlural": "rooms",
+     "tagline": "1900. An island, a three-day storm, and a lighthouse that is dark for the first time in twenty years.",
+     "intro": "Greycape Lighthouse, November 1900. A storm cuts the island off from the mainland. At midnight the light goes out. Up in the lantern room lies keeper Silas Mourne.",
+     "outro": "The light turns again. Every skipper can see it, and you know who put it out."
+    }
+   },
+   "rooms": [
+    {
+     "nl": "Lantaarnkamer",
+     "article": "de",
+     "en": "Lantern Room"
+    },
+    {
+     "nl": "Wenteltrap",
+     "article": "de",
+     "en": "Spiral Stairs"
+    },
+    {
+     "nl": "Wachtershuis",
+     "article": "het",
+     "en": "Keeper's House"
+    },
+    {
+     "nl": "Steiger",
+     "article": "de",
+     "en": "Jetty"
+    },
+    {
+     "nl": "Botenhuis",
+     "article": "het",
+     "en": "Boathouse"
+    },
+    {
+     "nl": "Seinkamer",
+     "article": "de",
+     "en": "Signal Room"
+    },
+    {
+     "nl": "Klif",
+     "article": "het",
+     "en": "Cliff"
+    },
+    {
+     "nl": "Strand",
+     "article": "het",
+     "en": "Beach"
+    },
+    {
+     "nl": "Keuken",
+     "article": "de",
+     "en": "Kitchen"
+    },
+    {
+     "nl": "Kelder",
+     "article": "de",
+     "en": "Cellar"
+    },
+    {
+     "nl": "Werkplaats",
+     "article": "de",
+     "en": "Workshop"
+    },
+    {
+     "nl": "Voorraadkamer",
+     "article": "de",
+     "en": "Storeroom"
+    }
+   ],
+   "furniture": [
+    {
+     "id": "boei",
+     "nl": "een reddingsboei",
+     "en": "a lifebuoy"
+    },
+    {
+     "id": "fuik",
+     "nl": "een kreeftenfuik",
+     "en": "a lobster pot"
+    },
+    {
+     "id": "misthoorn",
+     "nl": "een misthoorn",
+     "en": "a foghorn"
+    },
+    {
+     "id": "stormlamp",
+     "nl": "een stormlamp",
+     "en": "a storm lantern"
+    },
+    {
+     "id": "verrekijker",
+     "nl": "een verrekijker",
+     "en": "a telescope"
+    }
+   ],
+   "suspects": [
+    {
+     "nl": "Assistent Jonas",
+     "en": "Assistant Jonas",
+     "gender": "m",
+     "who": "Hielp de wachter, al drie jaar",
+     "look": "a young assistant lighthouse keeper in his twenties, knitted sweater, peaked cap, oil can in hand"
+    },
+    {
+     "nl": "Huishoudster Martha",
+     "en": "Housekeeper Martha",
+     "gender": "f",
+     "who": "Kookt en poetst in het wachtershuis",
+     "look": "a sturdy housekeeper in her fifties, bonnet, shawl, apron, firm mouth"
+    },
+    {
+     "nl": "Visser Bartel",
+     "en": "Fisherman Bartel",
+     "gender": "m",
+     "who": "Vist rond het eiland sinds zijn tiende",
+     "look": "a weathered fisherman in his sixties, oilskin sou'wester hat, white beard, pipe"
+    },
+    {
+     "nl": "Loodsman Kees",
+     "en": "Pilot Kees",
+     "gender": "m",
+     "who": "Brengt schepen veilig de haven in",
+     "look": "a harbour pilot in his forties, navy pea coat with brass buttons, captain's cap, spyglass"
+    },
+    {
+     "nl": "Vogelkundige Dorien",
+     "en": "Ornithologist Dorien",
+     "gender": "f",
+     "who": "Telt de zeevogels voor een museum",
+     "look": "an ornithologist in her thirties, tweed jacket, field glasses, a feather in her hat band, notebook"
+    },
+    {
+     "nl": "Schipbreukeling Lev",
+     "en": "Castaway Lev",
+     "gender": "m",
+     "who": "Spoelde aan na de storm, zonder papieren",
+     "look": "a shipwreck survivor in his thirties, wet tousled hair, torn shirt, a blanket around his shoulders"
+    },
+    {
+     "nl": "Onderwijzeres Wilma",
+     "en": "Schoolteacher Wilma",
+     "gender": "f",
+     "who": "Leert de vissersjongens lezen",
+     "look": "the island schoolteacher in her forties, hair in a tight bun, high-collared blouse, spectacles on a chain"
+    },
+    {
+     "nl": "Telegrafiste Fien",
+     "en": "Telegraphist Fien",
+     "gender": "f",
+     "who": "Seint elk bericht naar de wal",
+     "look": "a young telegraph operator in her twenties, short curls, waistcoat, sleeve garters, a telegraph key in front of her"
+    }
+   ],
+   "week": {
+    "nl": [
+     "Het licht dat uitging",
+     "De man uit zee",
+     "De bladzijde uit het logboek",
+     "De laatste nacht op Grauwkaap"
+    ],
+    "en": [
+     "The Light That Went Out",
+     "The Man from the Sea",
+     "The Page from the Logbook",
+     "The Last Night on Greycape"
+    ]
+   },
+   "medal": {
+    "nl": [
+     "Het licht brandt weer",
+     "Maak alle delen van Vuurtoren Grauwkaap af"
+    ],
+    "en": [
+     "The Light Burns Again",
+     "Finish every part of Greycape Lighthouse"
+    ]
+   },
+   "campaign": [
+    {
+     "key": "vuurtoren",
+     "nl": {
+      "title": "Deel I · Het licht gaat uit",
+      "intro": "Vuurtoren Grauwkaap, november 1900. Een storm sluit het eiland af van de wal. Om middernacht gaat het licht uit. Boven in de lantaarnkamer ligt wachter Silas Mourne.",
+      "outro": "Het licht brandt weer, maar de wachter ziet het niet meer. De storm houdt nog dagen aan.",
+      "briefing": "Een eiland is klein, een vuurtoren hoog en smal. Begin bij wie zegt in welke ruimte hij was; \"direct naast\" de reddingsboei telt alleen recht ernaast, nooit schuin.",
+      "cases": [
+       [
+        "Middernacht",
+        "Twintig jaar brandde het licht elke nacht. Vannacht hield het om twaalf uur op.",
+        "🪔 Petroleumbrander"
+       ],
+       [
+        "De lantaarnkamer",
+        "De wachter lag onder de lens. De deur zat van binnen op slot.",
+        "🔐 Lantaarnsleutel"
+       ],
+       [
+        "Assistent Jonas klimt",
+        "Honderdtwaalf treden naar boven. Hij was in twee minuten boven, zegt hij.",
+        "🕰️ Zakhorloge"
+       ],
+       [
+        "De reddingsboei",
+        "De boei hangt altijd naast de deur van het wachtershuis. Vannacht dreef hij in de branding.",
+        "🛟 Reddingsboei"
+       ],
+       [
+        "Telegrafiste Fien seint",
+        "Om vijf voor twaalf seinde ze naar de wal dat het licht uit was. Om twaalf uur ging het uit.",
+        "📨 Seinbericht"
+       ],
+       [
+        "Het draaiwerk",
+        "Het draaiwerk van de lens stond stil. Er zat een zeemansknoop omheen.",
+        "🪢 Zeemansknoop"
+       ],
+       [
+        "Huishoudster Martha slaapt",
+        "Ze sliep al om tien uur, zegt ze. Om middernacht was de theepot nog warm.",
+        "🫖 Theepot"
+       ],
+       [
+        "Storm uit het westen",
+        "Geen boot kon het eiland op of af. Aan de steiger lag er toch één minder.",
+        "⚓ Los meertouw"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part I · The Light Goes Out",
+      "intro": "Greycape Lighthouse, November 1900. A storm cuts the island off from the mainland. At midnight the light goes out. Up in the lantern room lies keeper Silas Mourne.",
+      "outro": "The light burns again, but the keeper will never see it. The storm goes on for days.",
+      "briefing": "An island is small, a lighthouse tall and narrow. Start with whoever says which room they were in; “directly next to” the lifebuoy only counts straight beside it, never diagonally.",
+      "cases": [
+       [
+        "Midnight",
+        "For twenty years the light burned every night. Tonight it stopped at twelve.",
+        "🪔 Paraffin burner"
+       ],
+       [
+        "The Lantern Room",
+        "The keeper lay under the lens. The door was locked from the inside.",
+        "🔐 Lantern room key"
+       ],
+       [
+        "Assistant Jonas Climbs",
+        "A hundred and twelve steps to the top. He was up in two minutes, he says.",
+        "🕰️ Pocket watch"
+       ],
+       [
+        "The Lifebuoy",
+        "The lifebuoy always hangs beside the door of the keeper's house. Tonight it was floating in the surf.",
+        "🛟 Lifebuoy"
+       ],
+       [
+        "Telegraphist Fien Signals",
+        "At five to twelve she signalled to the mainland that the light was out. At twelve it went out.",
+        "📨 Signal message"
+       ],
+       [
+        "The Turning Gear",
+        "The turning gear of the lens stood still. There was a sailor's knot around it.",
+        "🪢 Sailor's knot"
+       ],
+       [
+        "Housekeeper Martha Sleeps",
+        "She was asleep by ten, she says. At midnight the teapot was still warm.",
+        "🫖 Teapot"
+       ],
+       [
+        "Storm from the West",
+        "No boat could reach or leave the island. Yet at the jetty there was one boat fewer.",
+        "⚓ Loose mooring line"
+       ]
+      ]
+     }
+    },
+    {
+     "key": "vuurtoren-2",
+     "nl": {
+      "title": "Deel II · De schipbreuk",
+      "intro": "In de tweede stormnacht valt het licht een uur uit. In dat uur loopt een schip op de rotsen onder het klif. Eén man spoelt aan, zonder papieren.",
+      "outro": "Het wrak breekt in de branding. Waarom het schip zo dicht onder de kust voer, weet jij nu.",
+      "briefing": "Na een schipbreuk vertelt iedereen wat hij zag, en wie. Een verklaring over twee mensen los je op door eerst één van de twee vast te zetten.",
+      "cases": [
+       [
+        "Op de rotsen",
+        "Zonder licht voer het schip recht op het klif af. Op het strand brandde wel een lamp.",
+        "🏮 Stormlamp"
+       ],
+       [
+        "Schipbreukeling Lev spoelt aan",
+        "Hij spoelde aan zonder papieren. Zijn tabaksdoos was droog.",
+        "🚬 Tabaksdoos"
+       ],
+       [
+        "Visser Bartel ziet het",
+        "Hij keek vanaf het klif toe, zegt hij. Zijn riemen waren nog nat.",
+        "🚣 Roeiriem"
+       ],
+       [
+        "Het wrak",
+        "Van het schip bleef alleen de boeg over. De naam op de boeg was overgeschilderd.",
+        "🖌️ Verse verf"
+       ],
+       [
+        "Loodsman Kees en de kapitein",
+        "Hij kende de kapitein van het schip. Ze hadden die nacht een afspraak, voor de kust.",
+        "🗺️ Zeekaart"
+       ],
+       [
+        "Vogelkundige Dorien noteert",
+        "In haar veldboek: drie uur, strand, één scholekster. En een man.",
+        "📓 Veldboek"
+       ],
+       [
+        "Kisten op het strand",
+        "Twaalf kisten spoelden aan. In het botenhuis stonden er negen.",
+        "📦 Scheepskist"
+       ],
+       [
+        "Telegrafiste Fien en de wal",
+        "De wal vroeg naar de naam van het schip. Ze seinde hem door voordat iemand de boeg had gezien.",
+        "📃 Seinstrook"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part II · The Shipwreck",
+      "intro": "On the second night of the storm the light fails for an hour. In that hour a ship runs onto the rocks below the cliff. One man washes ashore, without papers.",
+      "outro": "The wreck breaks up in the surf. Why the ship sailed so close to the coast, you now know.",
+      "briefing": "After a shipwreck, everyone tells what they saw, and whom. Solve a statement about two people by fixing one of the two first.",
+      "cases": [
+       [
+        "On the Rocks",
+        "Without the light, the ship sailed straight for the cliff. On the beach, though, a lamp was burning.",
+        "🏮 Storm lantern"
+       ],
+       [
+        "Castaway Lev Washes Ashore",
+        "He washed ashore without papers. His tobacco tin was dry.",
+        "🚬 Tobacco tin"
+       ],
+       [
+        "Fisherman Bartel Sees It",
+        "He watched from the cliff, he says. His oars were still wet.",
+        "🚣 Oar"
+       ],
+       [
+        "The Wreck",
+        "Only the bow of the ship was left. The name on the bow had been painted over.",
+        "🖌️ Fresh paint"
+       ],
+       [
+        "Pilot Kees and the Captain",
+        "He knew the ship's captain. They had an appointment that night, off the coast.",
+        "🗺️ Sea chart"
+       ],
+       [
+        "Ornithologist Dorien Takes Notes",
+        "In her field notebook: three o'clock, beach, one oystercatcher. And a man.",
+        "📓 Field notebook"
+       ],
+       [
+        "Crates on the Beach",
+        "Twelve crates washed ashore. In the boathouse there were nine.",
+        "📦 Ship's chest"
+       ],
+       [
+        "Telegraphist Fien and the Mainland",
+        "The mainland asked for the name of the ship. She sent it before anyone had seen the bow.",
+        "📃 Signal tape"
+       ]
+      ]
+     }
+    },
+    {
+     "key": "vuurtoren-3",
+     "nl": {
+      "title": "Deel III · De mist",
+      "intro": "Na de storm komt de mist. Drie dagen lang blaast de misthoorn elk kwartier. Op de tweede nacht blaast hij één keer te vaak.",
+      "outro": "De mist trekt op en de misthoorn zwijgt. De boot die op het sein wachtte, is nooit aangekomen.",
+      "briefing": "In de mist ziet niemand iets, maar iedereen weet waar hij niet stond. Wie zegt waar hij níét was, vertelt je ook iets: streep die ruimte meteen weg.",
+      "cases": [
+       [
+        "Elk kwartier",
+        "Vier stoten per uur. Om twee uur waren het er vijf.",
+        "📯 Misthoorn"
+       ],
+       [
+        "Assistent Jonas blaast",
+        "Hij blies de hoorn de hele nacht, zegt hij. Om drie uur sliep hij in de keuken.",
+        "⚙️ Slinger"
+       ],
+       [
+        "De verrekijker",
+        "Bij mist heb je niets aan een verrekijker. Toch stond hij op het klif, gericht op zee.",
+        "🔭 Verrekijker"
+       ],
+       [
+        "Onderwijzeres Wilma verdwaalt",
+        "Ze loopt al tien jaar van de school naar het wachtershuis. In de mist kwam ze uit bij het botenhuis.",
+        "👓 Beslagen bril"
+       ],
+       [
+        "Een stem in de mist",
+        "Iemand riep vanaf de steiger om hulp. Toen ze er kwamen, lag er alleen een pet.",
+        "🧢 Natte pet"
+       ],
+       [
+        "Visser Bartel vaart uit",
+        "Geen visser gaat de mist in. Hij kwam terug met lege fuiken, op één na.",
+        "🦞 Kreeftenfuik"
+       ],
+       [
+        "Schipbreukeling Lev verstaat het",
+        "Hij spreekt geen Nederlands, zegt hij. Hij lachte om een grap van de visser.",
+        "🧶 Wollen deken"
+       ],
+       [
+        "Eén keer te vaak",
+        "Die vijfde stoot was geen vergissing. Het was een sein, voor een boot in de mist.",
+        "⛵ Sloep"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part III · The Fog",
+      "intro": "After the storm comes the fog. For three days the foghorn sounds every quarter of an hour. On the second night it sounds once too often.",
+      "outro": "The fog lifts and the foghorn falls silent. The boat that waited for the signal never arrived.",
+      "briefing": "In the fog nobody sees anything, but everyone knows where they did not stand. Whoever says where they were not tells you something too: cross that room off straight away.",
+      "cases": [
+       [
+        "Every Quarter Hour",
+        "Four blasts an hour. At two there were five.",
+        "📯 Foghorn"
+       ],
+       [
+        "Assistant Jonas Blows",
+        "He sounded the horn all night, he says. At three he was asleep in the kitchen.",
+        "⚙️ Crank"
+       ],
+       [
+        "The Telescope",
+        "In fog a telescope is no use. Yet there it stood on the cliff, pointed out to sea.",
+        "🔭 Telescope"
+       ],
+       [
+        "Schoolteacher Wilma Gets Lost",
+        "For ten years she has walked from the school to the keeper's house. In the fog she ended up at the boathouse.",
+        "👓 Misted glasses"
+       ],
+       [
+        "A Voice in the Fog",
+        "Someone called for help from the jetty. When they got there, only a cap was lying there.",
+        "🧢 Wet cap"
+       ],
+       [
+        "Fisherman Bartel Goes Out",
+        "No fisherman goes out into the fog. He came back with empty lobster pots, all but one.",
+        "🦞 Lobster pot"
+       ],
+       [
+        "Castaway Lev Understands",
+        "He speaks no Dutch, he says. He laughed at a joke the fisherman told.",
+        "🧶 Woollen blanket"
+       ],
+       [
+        "Once Too Often",
+        "That fifth blast was no mistake. It was a signal, for a boat in the fog.",
+        "⛵ Sloop"
+       ]
+      ]
+     }
+    },
+    {
+     "key": "vuurtoren-4",
+     "nl": {
+      "title": "Deel IV · Het logboek",
+      "intro": "Elke nacht schreef de wachter in het logboek: het weer, de schepen, het licht. De laatste bladzijde is eruit gescheurd.",
+      "outro": "De laatste bladzijde is terecht, verfrommeld en half verbrand. Wat erop stond, wist jij al.",
+      "briefing": "In een logboek staat alles op volgorde, en elke regel wijst naar een ruimte. Zet eerst de verdachte met de kleinste keus neer; de rest volgt.",
+      "cases": [
+       [
+        "De laatste bladzijde",
+        "De bladzijde is eruit gescheurd. Op de volgende staat de afdruk van zijn pen.",
+        "📄 Doordruk"
+       ],
+       [
+        "Huishoudster Martha poetst",
+        "Het logboek raakte ze nooit aan, zegt ze. Er zat boenwas op de kaft.",
+        "🧽 Poetsdoek"
+       ],
+       [
+        "Inkt en potlood",
+        "De wachter schreef altijd met inkt. De laatste regel staat er in potlood.",
+        "✏️ Timmermanspotlood"
+       ],
+       [
+        "Loodsman Kees leest mee",
+        "Hij wist welke schepen in het logboek stonden. Ook welk schip er niet in stond.",
+        "📋 Scheepslijst"
+       ],
+       [
+        "Het weer volgens de wachter",
+        "Windkracht negen, schreef hij op dinsdag. Op dinsdag was het windstil.",
+        "🌬️ Windmeter"
+       ],
+       [
+        "Onderwijzeres Wilma kent het handschrift",
+        "Ze kent elk handschrift op het eiland. Dit kende ze ook, zei ze, en toen zweeg ze.",
+        "🖋️ Kroontjespen"
+       ],
+       [
+        "Telegrafiste Fien schrijft over",
+        "Elk bericht naar de wal schrijft ze ook in haar eigen boek. Eén bericht staat er twee keer in.",
+        "📒 Seinboek"
+       ],
+       [
+        "As in de kachel",
+        "In de kachel van de seinkamer lag as. Daartussen een hoekje papier met een getal.",
+        "🔥 Verbrand hoekje"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part IV · The Logbook",
+      "intro": "Every night the keeper wrote in the logbook: the weather, the ships, the light. The last page has been torn out.",
+      "outro": "The last page has turned up, crumpled and half burned. What was on it, you already knew.",
+      "briefing": "In a logbook everything is in order, and every line points to a room. Place the suspect with the fewest options first; the rest follows.",
+      "cases": [
+       [
+        "The Last Page",
+        "The page has been torn out. On the next one is the imprint of his pen.",
+        "📄 Imprint"
+       ],
+       [
+        "Housekeeper Martha Polishes",
+        "She never touched the logbook, she says. There was polishing wax on the cover.",
+        "🧽 Polishing cloth"
+       ],
+       [
+        "Ink and Pencil",
+        "The keeper always wrote in ink. The last line is in pencil.",
+        "✏️ Carpenter's pencil"
+       ],
+       [
+        "Pilot Kees Reads Along",
+        "He knew which ships were in the logbook. And which ship was not.",
+        "📋 Ship list"
+       ],
+       [
+        "The Weather According to the Keeper",
+        "Force nine, he wrote on Tuesday. On Tuesday there was no wind at all.",
+        "🌬️ Anemometer"
+       ],
+       [
+        "Schoolteacher Wilma Knows the Handwriting",
+        "She knows every hand on the island. She knew this one too, she said, and then fell silent.",
+        "🖋️ Dip pen"
+       ],
+       [
+        "Telegraphist Fien Copies Out",
+        "She copies every message to the mainland into her own book as well. One message is in there twice.",
+        "📒 Signal book"
+       ],
+       [
+        "Ashes in the Stove",
+        "There were ashes in the stove of the signal room. Among them, a corner of paper with a number.",
+        "🔥 Burnt corner"
+       ]
+      ]
+     }
+    },
+    {
+     "key": "vuurtoren-5",
+     "nl": {
+      "title": "Deel V · De bevoorradingsboot",
+      "intro": "Eens per maand komt de boot met petroleum, meel en post. Het hele eiland staat op de steiger. Deze keer neemt de boot iets mee terug.",
+      "outro": "De boot vertrekt zonder de kist. De schipper heeft nooit geweten wat hij bijna meenam.",
+      "briefing": "Als de boot komt, sjouwt iedereen ergens anders. Begin bij wie zegt alleen te zijn geweest: dat ruimt meteen een hele ruimte op.",
+      "cases": [
+       [
+        "Eens per maand",
+        "Petroleum, meel en post, zoals elke maand. Deze keer ook een kist zonder naam.",
+        "🛢️ Petroleumvat"
+       ],
+       [
+        "De post",
+        "Er kwam een brief voor de wachter. Verstuurd vanaf de wal, een dag na zijn dood.",
+        "✉️ Brief"
+       ],
+       [
+        "Huishoudster Martha bestelt",
+        "Op haar lijst: meel, zout en rattengif. Er zijn geen ratten op het eiland.",
+        "☠️ Rattengif"
+       ],
+       [
+        "Het botenhuis",
+        "In het botenhuis stond een kist die mee terug moest. In het deksel zaten luchtgaten.",
+        "📦 Kist met luchtgaten"
+       ],
+       [
+        "Schipbreukeling Lev wil mee",
+        "Hij heeft geen geld, zegt hij. Hij bood de schipper een gouden munt.",
+        "🪙 Gouden munt"
+       ],
+       [
+        "Vogelkundige Dorien verstuurt",
+        "Tien opgezette vogels voor het museum. Eén ervan is zwaarder dan een vogel hoort te zijn.",
+        "🐦 Opgezette meeuw"
+       ],
+       [
+        "De vrachtlijst",
+        "Alles op de vrachtlijst klopte. Het gewicht niet.",
+        "⚖️ Bascule"
+       ],
+       [
+        "Loodsman Kees brengt de boot weg",
+        "Hij loodste de boot langs de rotsen, zoals altijd. Deze keer duurde het een uur langer.",
+        "🧭 Kompas"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part V · The Supply Boat",
+      "intro": "Once a month the boat comes with paraffin, flour and post. The whole island stands on the jetty. This time the boat takes something back with it.",
+      "outro": "The boat leaves without the crate. The skipper never knew what he almost took along.",
+      "briefing": "When the boat comes in, everyone is hauling somewhere else. Start with whoever says they were alone: that clears a whole room at once.",
+      "cases": [
+       [
+        "Once a Month",
+        "Paraffin, flour and post, as every month. This time also a crate without a name.",
+        "🛢️ Paraffin barrel"
+       ],
+       [
+        "The Post",
+        "A letter came for the keeper. Sent from the mainland, a day after his death.",
+        "✉️ Letter"
+       ],
+       [
+        "Housekeeper Martha Orders",
+        "On her list: flour, salt and rat poison. There are no rats on the island.",
+        "☠️ Rat poison"
+       ],
+       [
+        "The Boathouse",
+        "In the boathouse stood a crate that was to go back. There were air holes in the lid.",
+        "📦 Crate with air holes"
+       ],
+       [
+        "Castaway Lev Wants to Go Along",
+        "He has no money, he says. He offered the skipper a gold coin.",
+        "🪙 Gold coin"
+       ],
+       [
+        "Ornithologist Dorien Sends Off",
+        "Ten stuffed birds for the museum. One of them is heavier than a bird should be.",
+        "🐦 Stuffed gull"
+       ],
+       [
+        "The Cargo List",
+        "Everything on the cargo list matched. The weight did not.",
+        "⚖️ Platform scale"
+       ],
+       [
+        "Pilot Kees Takes the Boat Out",
+        "He piloted the boat past the rocks, as always. This time it took an hour longer.",
+        "🧭 Compass"
+       ]
+      ]
+     }
+    },
+    {
+     "key": "vuurtoren-6",
+     "nl": {
+      "title": "Deel VI · De vogeltrek",
+      "intro": "Duizenden trekvogels rusten op het eiland, op weg naar het zuiden. Vogelkundige Dorien telt ze vanaf het klif, en iedereen helpt mee. Niet iedereen kijkt naar de vogels.",
+      "outro": "De vogels trekken verder naar het zuiden. In het veldboek van Dorien klopt de telling weer.",
+      "briefing": "Op het klif kijkt iedereen omhoog, niet naar elkaar. De verklaringen worden zuiniger: gebruik het potlood, streep vakjes weg die niet kunnen en kijk wat overblijft.",
+      "cases": [
+       [
+        "Duizend vleugels",
+        "Bij zonsopgang zat het klif vol vogels. Eén plek bleef leeg, alsof daar iemand had gelegen.",
+        "🪶 Meeuwenveer"
+       ],
+       [
+        "Vogelkundige Dorien kijkt",
+        "Haar kijker stond de hele ochtend op het botenhuis gericht. Daar nestelen geen vogels.",
+        "🔭 Veldkijker"
+       ],
+       [
+        "Het lege nest",
+        "Het nest op het klif was leeg, zoals in november hoort. Op een sleutel na.",
+        "🪺 Vogelnest"
+       ],
+       [
+        "Assistent Jonas zoekt eieren",
+        "Hij klom het klif af voor meeuweneieren, zegt hij. In november.",
+        "🧗 Klimtouw"
+       ],
+       [
+        "De postduif",
+        "Tussen de trekvogels zat één duif. Die vloog niet naar het zuiden, maar naar de wal.",
+        "🕊️ Postduif"
+       ],
+       [
+        "Visser Bartel voert de meeuwen",
+        "Elke ochtend gooit hij visafval naar de meeuwen. Vanmorgen gooide hij iets anders in zee.",
+        "🐟 Visemmer"
+       ],
+       [
+        "Schipbreukeling Lev kent de vogels",
+        "Hij is matroos, zegt hij. Hij kent elke vogel bij zijn Latijnse naam.",
+        "📚 Vogelboek"
+       ],
+       [
+        "Eén die niet rust",
+        "Duizenden vogels sliepen op het eiland. Eén vogelaar liep de hele nacht met een lamp over het strand.",
+        "🥾 Zanderige laarzen"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part VI · The Migration",
+      "intro": "Thousands of migrating birds rest on the island, on their way south. Ornithologist Dorien counts them from the cliff, and everyone helps. Not everyone is watching the birds.",
+      "outro": "The birds fly on south. In Dorien's field notebook the count adds up again.",
+      "briefing": "On the cliff everyone looks up, not at each other. The statements get sparser: use the pencil, cross off squares that cannot be and see what is left.",
+      "cases": [
+       [
+        "A Thousand Wings",
+        "At sunrise the cliff was full of birds. One spot stayed empty, as if someone had lain there.",
+        "🪶 Gull feather"
+       ],
+       [
+        "Ornithologist Dorien Watches",
+        "All morning her glasses were trained on the boathouse. No birds nest there.",
+        "🔭 Field glasses"
+       ],
+       [
+        "The Empty Nest",
+        "The nest on the cliff was empty, as it should be in November. Except for a key.",
+        "🪺 Bird's nest"
+       ],
+       [
+        "Assistant Jonas Looks for Eggs",
+        "He climbed down the cliff for gull eggs, he says. In November.",
+        "🧗 Climbing rope"
+       ],
+       [
+        "The Carrier Pigeon",
+        "Among the migrating birds was one pigeon. It did not fly south, but to the mainland.",
+        "🕊️ Carrier pigeon"
+       ],
+       [
+        "Fisherman Bartel Feeds the Gulls",
+        "Every morning he throws fish scraps to the gulls. This morning he threw something else into the sea.",
+        "🐟 Fish bucket"
+       ],
+       [
+        "Castaway Lev Knows the Birds",
+        "He is a sailor, he says. He knows every bird by its Latin name.",
+        "📚 Bird book"
+       ],
+       [
+        "One Who Does Not Rest",
+        "Thousands of birds slept on the island. One birdwatcher walked the beach all night with a lamp.",
+        "🥾 Sandy boots"
+       ]
+      ]
+     }
+    },
+    {
+     "key": "vuurtoren-7",
+     "nl": {
+      "title": "Deel VII · De winterstorm",
+      "intro": "De zwaarste storm in twintig jaar. De golven slaan over het klif, en het eiland is drie weken afgesloten van de wal.",
+      "outro": "De storm gaat liggen en de telegraaf tikt weer. Wat drie weken binnen bleef, blijft niet langer binnen.",
+      "briefing": "Het bord wordt groter en het eiland kleiner. Staat in het rapport dat een ruimte leeg was, dan valt die hele ruimte af voor iedereen.",
+      "cases": [
+       [
+        "Drie weken binnen",
+        "Acht mensen, één huis, drie weken. Op dag twaalf zei niemand meer iets.",
+        "🪵 Brandhout"
+       ],
+       [
+        "De kabel",
+        "Op de eerste stormdag brak de kabel naar de wal. Een kabel breekt niet zo recht af.",
+        "🔌 Telegraafkabel"
+       ],
+       [
+        "Huishoudster Martha deelt uit",
+        "Elke avond acht kommen soep. Er kwamen er negen leeg terug.",
+        "🥣 Soepkom"
+       ],
+       [
+        "De kelder loopt onder",
+        "Het water stond tot de knieën in de kelder. Alles dreef, op één kist na.",
+        "⚓ Loden kist"
+       ],
+       [
+        "Onderwijzeres Wilma geeft les",
+        "Haar dictee ging over een schip dat zonk. Schipbreukeling Lev verbeterde de naam.",
+        "📝 Dictee"
+       ],
+       [
+        "Loodsman Kees mist een knoop",
+        "Aan zijn jas ontbreekt een koperen knoop. Die lag in de lantaarnkamer, sinds de eerste nacht.",
+        "🟡 Koperen knoop"
+       ],
+       [
+        "Assistent Jonas houdt het licht aan",
+        "Drie weken hield hij alleen het licht brandend. Hij gebruikte maar de helft van de petroleum.",
+        "🪔 Lampenpit"
+       ],
+       [
+        "Visser Bartel herinnert zich",
+        "Zo een storm zag hij één keer eerder, twintig jaar geleden. Toen ging het licht ook uit.",
+        "📰 Oude krant"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part VII · The Winter Storm",
+      "intro": "The worst storm in twenty years. The waves break over the cliff, and the island is cut off from the mainland for three weeks.",
+      "outro": "The storm dies down and the telegraph ticks again. What stayed indoors for three weeks stays indoors no longer.",
+      "briefing": "The board gets bigger and the island smaller. If the report says a room was empty, that whole room is ruled out for everyone.",
+      "cases": [
+       [
+        "Three Weeks Indoors",
+        "Eight people, one house, three weeks. By day twelve nobody was saying anything.",
+        "🪵 Firewood"
+       ],
+       [
+        "The Cable",
+        "On the first day of the storm the cable to the mainland broke. A cable does not break off that straight.",
+        "🔌 Telegraph cable"
+       ],
+       [
+        "Housekeeper Martha Serves",
+        "Eight bowls of soup every evening. Nine came back empty.",
+        "🥣 Soup bowl"
+       ],
+       [
+        "The Cellar Floods",
+        "The water in the cellar was knee-deep. Everything floated, except one chest.",
+        "⚓ Lead chest"
+       ],
+       [
+        "Schoolteacher Wilma Teaches",
+        "Her dictation was about a ship that sank. Castaway Lev corrected the name.",
+        "📝 Dictation"
+       ],
+       [
+        "Pilot Kees Is Missing a Button",
+        "A brass button is missing from his coat. It has been lying in the lantern room since the first night.",
+        "🟡 Brass button"
+       ],
+       [
+        "Assistant Jonas Keeps the Light Burning",
+        "For three weeks he kept the light burning alone. He used only half the paraffin.",
+        "🪔 Lamp wick"
+       ],
+       [
+        "Fisherman Bartel Remembers",
+        "He had seen a storm like this once before, twenty years ago. Then too the light went out.",
+        "📰 Old newspaper"
+       ]
+      ]
+     }
+    },
+    {
+     "key": "vuurtoren-8",
+     "nl": {
+      "title": "Deel VIII · Het laatste licht",
+      "intro": "Er komt een nieuwe wachter van de wal. Nog één nacht onder het draaiende licht, met dezelfde gezichten als in de eerste stormnacht.",
+      "outro": "Van Dam stapt in de bevoorradingsboot, tikt tegen zijn hoed en kijkt niet meer om. Het licht draait weer. Elke schipper ziet het, en jij weet wie het doofde.",
+      "briefing": "De laatste zaken, bijna allemaal op het grote bord. Blijf niet hangen bij wie het lastigst is: zet eerst de anderen neer, dan blijft er voor de laatste vaak maar één vakje over.",
+      "cases": [
+       [
+        "De nieuwe wachter",
+        "Hij kwam met de boot en klom meteen naar boven. Hij wist de weg al.",
+        "🧳 Reiskoffer"
+       ],
+       [
+        "Huishoudster Martha pakt in",
+        "Twintig jaar kookte ze voor de wachter. In haar koffer zit zijn trouwring.",
+        "💍 Trouwring"
+       ],
+       [
+        "Telegrafiste Fien seint af",
+        "Haar laatste bericht naar de wal: alles in orde. Ze seinde het twee keer, de tweede keer in een andere code.",
+        "🔤 Morsecode"
+       ],
+       [
+        "Schipbreukeling Lev krijgt een naam",
+        "Na twee maanden zegt hij hoe hij heet. Het is de naam van het schip.",
+        "🏷️ Naambord"
+       ],
+       [
+        "Vogelkundige Dorien vertrekt",
+        "Ze telde vierduizend vogels voor het museum. Ze neemt er vierduizend en één mee.",
+        "🗃️ Vogelkist"
+       ],
+       [
+        "Assistent Jonas wordt geen wachter",
+        "Drie jaar hielp hij de wachter. Ze kozen een ander, en hij wist het al een maand.",
+        "📜 Benoemingsbrief"
+       ],
+       [
+        "Onderwijzeres Wilma blijft",
+        "Iedereen gaat met de boot mee. Zij blijft, voor de school, en de school is al een maand dicht.",
+        "🔔 Schoolbel"
+       ],
+       [
+        "Het laatste licht",
+        "Waar het begon, in de lantaarnkamer. Daar eindigt het ook.",
+        "🔆 Fresnellens"
+       ]
+      ]
+     },
+     "en": {
+      "title": "Part VIII · The Last Light",
+      "intro": "A new keeper is coming from the mainland. One more night under the turning light, with the same faces as on the first night of the storm.",
+      "outro": "Van Dam steps into the supply boat, touches his hat and does not look back. The light turns again. Every skipper can see it, and you know who put it out.",
+      "briefing": "The last cases, nearly all on the big board. Do not get stuck on the hardest one: place the others first, and the last one often has only one square left.",
+      "cases": [
+       [
+        "The New Keeper",
+        "He came on the boat and climbed straight to the top. He already knew the way.",
+        "🧳 Suitcase"
+       ],
+       [
+        "Housekeeper Martha Packs",
+        "For twenty years she cooked for the keeper. In her suitcase is his wedding ring.",
+        "💍 Wedding ring"
+       ],
+       [
+        "Telegraphist Fien Signs Off",
+        "Her last message to the mainland: all is well. She sent it twice, the second time in a different code.",
+        "🔤 Morse code"
+       ],
+       [
+        "Castaway Lev Gets a Name",
+        "After two months he says what his name is. It is the name of the ship.",
+        "🏷️ Nameboard"
+       ],
+       [
+        "Ornithologist Dorien Leaves",
+        "She counted four thousand birds for the museum. She is taking four thousand and one with her.",
+        "🗃️ Bird crate"
+       ],
+       [
+        "Assistant Jonas Does Not Become Keeper",
+        "For three years he helped the keeper. They chose someone else, and he had known for a month.",
+        "📜 Letter of appointment"
+       ],
+       [
+        "Schoolteacher Wilma Stays",
+        "Everyone is leaving on the boat. She stays, for the school, and the school has been closed for a month.",
+        "🔔 School bell"
+       ],
+       [
+        "The Last Light",
+        "Where it began, in the lantern room. That is where it ends.",
+        "🔆 Fresnel lens"
+       ]
+      ]
+     }
+    }
+   ]
+  }
+ }
+}

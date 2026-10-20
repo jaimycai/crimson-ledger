@@ -46,11 +46,11 @@ const active = () => document.querySelector('.screen.active').id;
     // ── werelden en winkel ──
     App.storageSet('crimson-board-stats', JSON.stringify({ solved: 9 })); App.renderThemePicker();
     const cards = [...document.querySelectorAll('.theme-card')];
-    check(cards.length === 12 && cards.every(c => !DUTCH.test(c.querySelector('.theme-title, b, strong, h3, span') ? c.textContent : '')), 'twaalf werelden zonder Nederlands: ' + cards.map(c => c.textContent.replace(/\s+/g, ' ').trim().slice(0, 30)).join(' | '));
+    check(cards.length === 16 && cards.every(c => !DUTCH.test(c.querySelector('.theme-title, b, strong, h3, span') ? c.textContent : '')), 'zestien werelden zonder Nederlands: ' + cards.map(c => c.textContent.replace(/\s+/g, ' ').trim().slice(0, 30)).join(' | '));
     check(/Blackwood Manor|The Manor/.test(cards[0].textContent) && /The Pirate Ship/.test(cards[1].textContent), 'werelden dragen Engelse titels');
     document.querySelector('.theme-card[data-theme="hotel"]').click();
     check(document.getElementById('store-modal').classList.contains('active') && /Crimson Pass/.test(txt('store-lead')) && !DUTCH.test(txt('store-lead')), 'winkel Engels: ' + txt('store-lead'));
-    check([...document.querySelectorAll('#store-rows .store-row')].length === 12 && ![...document.querySelectorAll('#store-rows')].some(r => DUTCH.test(r.textContent)), 'winkelrijen Engels');
+    check([...document.querySelectorAll('#store-rows .store-row')].length === 16 && ![...document.querySelectorAll('#store-rows')].some(r => DUTCH.test(r.textContent)), 'winkelrijen Engels');
     App.hideModal('store-modal');
 
     // ── een zaak spelen ──

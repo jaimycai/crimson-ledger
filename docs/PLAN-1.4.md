@@ -72,3 +72,13 @@ EOF
   Volgende stap: inbouw en vertalingen, zoals bij 11-12.
 - 21 okt: aankopen `nl.crimsonledger.app.world.opgraving` (6825097935) en `.world.casino` (6825098062) aangemaakt op dezelfde
   manier, READY_TO_SUBMIT, met reviewscreenshot.
+- 21-22 okt: wereld 13-16 ingebouwd: `themes.js` (16 werelden, titelwoorden NL/EN), `campaign.js` (1.024 zaken), `progress.js`
+  (weektitels, rotatie over 16 werelden, 4 medailles, 32 in totaal); Engels in `en.js`. De 18 andere talen in twee rondes per
+  taal (N = 22 Filmstudio en Karavaan, N = 23 Abdij en Vuurtoren), elk door een vertaler en een nalezer
+  (`bron-filmstudio-karavaan.json`, `bron-abdij-vuurtoren.json`). Nieuw in de pakkettest: `I18N_SKIP_WORLDS=…` slaat werelden
+  over die een vertaler nog niet heeft. Losse fix: Spaans graf zegt «la explanada de la fogata» (geen dubbele «zona»).
+  `npm test` volledig groen; Arabische karavaan (RTL) en Duitse abdij in de browser bekeken.
+- 22 okt: aankopen `.world.filmstudio` (6825110776), `.world.karavaan` (6825111119), `.world.abdij` (6825111281) en
+  `.world.vuurtoren` (6825111505), READY_TO_SUBMIT. Winkeltekst 1.4 (beschrijving met 16 werelden en wat-is-nieuw) in 23 talen
+  in `store/metadata/1.4.0.json`, elke beschrijving onder 4.000 tekens. Nog te doen: schermafbeeldingen, build, indienen
+  zodra 1.3.1 door de review is.

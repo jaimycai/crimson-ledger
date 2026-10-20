@@ -1035,6 +1035,210 @@
           "Gokker Jack": "Jack",
           "Huisdetective Nora": "Nora"
         }
+      },
+      "filmstudio": {
+        "title": "Paradise Pictures",
+        "short": "Stüdyo",
+        "victimName": "Stüdyo Patronu Samuel Gold",
+        "roomWord": "alan",
+        "roomWordPlural": "alanlar",
+        "tagline": "Hollywood, 1931. Stüdyonun ilk sesli filmi ve son sahnesinden sağ çıkamayan bir patron.",
+        "intro": "Paradise Pictures, Hollywood, 1931. Stüdyo ilk sesli filmini çekiyor. Günün son çekiminden sonra stüdyo patronu Samuel Gold sinema salonunda yatıyor. Film hâlâ oynuyor.",
+        "outro": "Işıklar sönüyor ve film artık kutuda. Filmin sonu nihayet yerine oturdu.",
+        "rooms": {
+          "Studiohal": "Plato",
+          "Montagekamer": "Montaj Odası",
+          "Kleedkamer": "Makyaj Odası",
+          "Kantine": "Kantin",
+          "Rekwisietenkamer": "Aksesuar Odası",
+          "Projectiezaal": "Sinema Salonu",
+          "Werkplaats": "Atölye",
+          "Directiekamer": "Direktörlük",
+          "Geluidsstudio": "Ses Kabini",
+          "Archief": "Arşiv",
+          "Buitenset": "Dış Set",
+          "Poort": "Ana Kapı"
+        },
+        "furniture": {
+          "filmcamera": "film kamerası",
+          "schijnwerper": "projektör",
+          "regiestoel": "yönetmen sandalyesi",
+          "klapbord": "klaket",
+          "filmspoel": "film makarası"
+        },
+        "suspects": {
+          "Filmster Vivian": "Film Yıldızı Vivian",
+          "Regisseur Baxter": "Yönetmen Baxter",
+          "Schrijfster Peggy": "Senarist Peggy",
+          "Stuntman Hank": "Dublör Hank",
+          "Cameraman Lenny": "Kameraman Lenny",
+          "Grimeuse Rita": "Makyöz Rita",
+          "Agent Sid": "Menajer Sid",
+          "Starlet Joy": "Yıldız Adayı Joy"
+        },
+        "suspectShort": {
+          "Filmster Vivian": "Vivian",
+          "Regisseur Baxter": "Baxter",
+          "Schrijfster Peggy": "Peggy",
+          "Stuntman Hank": "Hank",
+          "Cameraman Lenny": "Lenny",
+          "Grimeuse Rita": "Rita",
+          "Agent Sid": "Sid",
+          "Starlet Joy": "Joy"
+        }
+      },
+      "karavaan": {
+        "title": "Al-Nour Kervansarayı",
+        "short": "Kervan",
+        "victimName": "Kervanbaşı İdris",
+        "roomWord": "alan",
+        "roomWordPlural": "alanlar",
+        "tagline": "Eski baharat yolunda bir vaha. On iki deve, sekiz yolcu ve bir daha yola çıkmayacak bir kervanbaşı.",
+        "intro": "Al-Nour Kervansarayı, eski baharat yolunda bir vaha. Kervan bir geceliğine surların içinde dinleniyor. Gün doğarken kervanbaşı İdris develerin yanında yatıyor ve büyük kapı bütün gece kapalı kaldı.",
+        "outro": "Kervan yoluna devam ediyor. Kapının ardında artık bir sır eksik.",
+        "rooms": {
+          "Binnenplaats": "Avlu",
+          "Bazaar": "Çarşı",
+          "Theehuis": "Çayhane",
+          "Badhuis": "Hamam",
+          "Waterput": "Kuyu Alanı",
+          "Gastenkamer": "Konuk Odası",
+          "Tapijtwinkel": "Halı Dükkânı",
+          "Poort": "Büyük Kapı",
+          "Dakterras": "Çatı Terası",
+          "Stal": "Ahır",
+          "Keuken": "Mutfak",
+          "Voorraadkamer": "Kiler"
+        },
+        "furniture": {
+          "tapijt": "halı",
+          "specerijen": "baharat sepeti",
+          "kruik": "su testisi",
+          "zadel": "deve eyeri",
+          "weegschaal": "bakır terazi"
+        },
+        "suspects": {
+          "Koopvrouw Layla": "Baharatçı Layla",
+          "Gids Tariq": "Rehber Tariq",
+          "Tapijthandelaar Yusuf": "Halıcı Yusuf",
+          "Reizigster Beatrix": "Gezgin Beatrix",
+          "Theeschenker Hamid": "Çaycı Hamid",
+          "Sterrenkijker Zahra": "Gökbilimci Zahra",
+          "Bewaker Karim": "Bekçi Karim",
+          "Dichteres Samira": "Şair Samira"
+        },
+        "suspectShort": {
+          "Koopvrouw Layla": "Layla",
+          "Gids Tariq": "Tariq",
+          "Tapijthandelaar Yusuf": "Yusuf",
+          "Reizigster Beatrix": "Beatrix",
+          "Theeschenker Hamid": "Hamid",
+          "Sterrenkijker Zahra": "Zahra",
+          "Bewaker Karim": "Karim",
+          "Dichteres Samira": "Samira"
+        }
+      },
+      "abdij": {
+        "title": "Aziz Aldric Manastırı",
+        "short": "Manastır",
+        "victimName": "Başrahip Bertram",
+        "roomWord": "alan",
+        "roomWordPlural": "alanlar",
+        "tagline": "Dağlarda bir manastır, 1327. Yasak bir kitap, kilitli bir kütüphane ve geceyi çıkaramayan bir başrahip.",
+        "intro": "Aziz Aldric Manastırı, 1327 kışı. Kar dağ geçidini kapatıyor. Gece duasından sonra başrahip Bertram yazı odasında yatıyor, parmakları mürekkepli.",
+        "outro": "Çan akşam duası için çalıyor. Kitap yeniden rafında.",
+        "rooms": {
+          "Scriptorium": "Yazı Odası",
+          "Kapel": "Şapel",
+          "Kruidentuin": "Ot Bahçesi",
+          "Bibliotheek": "Kütüphane",
+          "Refter": "Yemekhane",
+          "Slaapzaal": "Yatakhane",
+          "Kloostergang": "Revaklı Avlu",
+          "Kelder": "Mahzen",
+          "Keuken": "Mutfak",
+          "Klokkentoren": "Çan Kulesi",
+          "Ziekenboeg": "Revir",
+          "Bakkerij": "Fırın Odası"
+        },
+        "furniture": {
+          "lessenaar": "yazı masası",
+          "kandelaar": "şamdan",
+          "bijenkorf": "arı kovanı",
+          "vijzel": "taş havan",
+          "zandloper": "kum saati"
+        },
+        "suspects": {
+          "Broeder Anselm": "Rahip Anselm",
+          "Broeder Cuthbert": "Rahip Cuthbert",
+          "Novice Elias": "Çömez Elias",
+          "Pelgrim Gisela": "Hacı Gisela",
+          "Kruidenvrouw Hilde": "Şifacı Hilde",
+          "Gravin Mathilde": "Kontes Mathilde",
+          "Verluchtster Odile": "Tezhipçi Odile",
+          "Kelderbroeder Waldo": "Kilerci Waldo"
+        },
+        "suspectShort": {
+          "Broeder Anselm": "Anselm",
+          "Broeder Cuthbert": "Cuthbert",
+          "Novice Elias": "Elias",
+          "Pelgrim Gisela": "Gisela",
+          "Kruidenvrouw Hilde": "Hilde",
+          "Gravin Mathilde": "Mathilde",
+          "Verluchtster Odile": "Odile",
+          "Kelderbroeder Waldo": "Waldo"
+        }
+      },
+      "vuurtoren": {
+        "title": "Griburun Feneri",
+        "short": "Fener",
+        "victimName": "Fener Bekçisi Silas Mourne",
+        "roomWord": "alan",
+        "roomWordPlural": "alanlar",
+        "tagline": "1900. Bir ada, üç gün süren bir fırtına ve yirmi yıldır ilk kez karanlıkta kalan bir fener.",
+        "intro": "Griburun Feneri, Kasım 1900. Fırtına adanın karayla bağlantısını kesiyor. Gece yarısı ışık sönüyor. Yukarıda, fener odasında fener bekçisi Silas Mourne yatıyor.",
+        "outro": "Işık yeniden dönüyor. Her gemici onu görüyor ve kimin söndürdüğünü sen biliyorsun.",
+        "rooms": {
+          "Lantaarnkamer": "Fener Odası",
+          "Wenteltrap": "Merdiven",
+          "Wachtershuis": "Bekçi Evi",
+          "Steiger": "İskele",
+          "Botenhuis": "Kayıkhane",
+          "Seinkamer": "Telgrafhane",
+          "Klif": "Kayalık",
+          "Strand": "Kumsal",
+          "Keuken": "Mutfak",
+          "Kelder": "Mahzen",
+          "Werkplaats": "Atölye",
+          "Voorraadkamer": "Kiler"
+        },
+        "furniture": {
+          "boei": "can simidi",
+          "fuik": "ıstakoz kapanı",
+          "misthoorn": "sis düdüğü",
+          "stormlamp": "gemici feneri",
+          "verrekijker": "teleskop"
+        },
+        "suspects": {
+          "Assistent Jonas": "Bekçi Yardımcısı Jonas",
+          "Huishoudster Martha": "Kâhya Martha",
+          "Visser Bartel": "Balıkçı Bartel",
+          "Loodsman Kees": "Kılavuz Kees",
+          "Vogelkundige Dorien": "Kuşbilimci Dorien",
+          "Schipbreukeling Lev": "Kazazede Lev",
+          "Onderwijzeres Wilma": "Öğretmen Wilma",
+          "Telegrafiste Fien": "Telgrafçı Fien"
+        },
+        "suspectShort": {
+          "Assistent Jonas": "Jonas",
+          "Huishoudster Martha": "Martha",
+          "Visser Bartel": "Bartel",
+          "Loodsman Kees": "Kees",
+          "Vogelkundige Dorien": "Dorien",
+          "Schipbreukeling Lev": "Lev",
+          "Onderwijzeres Wilma": "Wilma",
+          "Telegrafiste Fien": "Fien"
+        }
       }
     },
     "daily": [
@@ -1141,6 +1345,30 @@
         "Hepsi On Yediye",
         "Monako Turu",
         "Azur’da Son Oyun"
+      ],
+      "filmstudio": [
+        "Kimsenin Görmemesi Gereken Film",
+        "Ters Giden Dublör Sahnesi",
+        "Kayıttaki Ses",
+        "Gold’un Son Sahnesi"
+      ],
+      "karavaan": [
+        "Al-Nour’un Safranı",
+        "Bin Yıldızlı Gece",
+        "İki Desenli Halı",
+        "Son Kervan"
+      ],
+      "abdij": [
+        "Başlıksız Kitap",
+        "Çanın Sustuğu Gece",
+        "Şifa Vermeyen Ot",
+        "Aziz Aldric’in Son Başrahibi"
+      ],
+      "vuurtoren": [
+        "Sönen Işık",
+        "Denizden Gelen Adam",
+        "Defterden Koparılan Sayfa",
+        "Griburun’da Son Gece"
       ]
     },
     "medals": {
@@ -1255,6 +1483,22 @@
       "casino": [
         "Kasa Kaybediyor",
         "Casino Azur dünyasındaki bütün bölümleri bitir"
+      ],
+      "filmstudio": [
+        "Jenerik Akıyor",
+        "Paradise Pictures dünyasındaki bütün bölümleri bitir"
+      ],
+      "karavaan": [
+        "Kervan Yürüyor",
+        "Al-Nour Kervansarayı dünyasındaki bütün bölümleri bitir"
+      ],
+      "abdij": [
+        "Çan Çalıyor",
+        "Aziz Aldric Manastırı dünyasındaki bütün bölümleri bitir"
+      ],
+      "vuurtoren": [
+        "Işık Yeniden Yanıyor",
+        "Griburun Feneri dünyasındaki bütün bölümleri bitir"
       ]
     },
     "quests": {
@@ -5963,6 +6207,1542 @@
           "♦️ Karo ası"
         ]
       ]
+    ],
+    "filmstudio": [
+      "Bölüm I · Son Çekim",
+      "Paradise Pictures, Hollywood, 1931. Stüdyo ilk sesli filmini çekiyor. Günün son çekiminden sonra stüdyo patronu Samuel Gold sinema salonunda yatıyor. Film hâlâ oynuyor.",
+      "Projeksiyon makinesi durdu ve stüdyo patronu öldü. Film bitmekten çok uzak.",
+      "Stüdyo, çok kapılı tek bir büyük salondur. Hangi alanda olduğunu söyleyenle başla. Projektörün “hemen yanında” yalnızca tam yanındaki kare demek, asla çapraz değil.",
+      [
+        [
+          "Son Çekim",
+          "Kırk yedinci çekim nihayet iyiydi. Aynı zamanda sonuncusuydu.",
+          "🎬 Klaket"
+        ],
+        [
+          "Sinema Salonu",
+          "Stüdyo patronunu bulduklarında film hâlâ oynuyordu. Filmin sonunu görmemişti.",
+          "📽️ Projeksiyon makinesi"
+        ],
+        [
+          "Yönetmen Baxter Çekimi Kesiyor",
+          "Bütün gün “kestik” diye bağırdı. Saat altıda hiç sesi çıkmadı.",
+          "📣 Megafon"
+        ],
+        [
+          "Projektör",
+          "Saat altıda bütün ışıklar söndü. Bir lamba bir saat sonra hâlâ sıcaktı.",
+          "💡 Ampul"
+        ],
+        [
+          "Film Yıldızı Vivian Bekliyor",
+          "Son sahnesini beklediğini söyledi. Makyajı çoktan silinmişti.",
+          "💄 Ruj"
+        ],
+        [
+          "Film Makarası",
+          "Projeksiyon makinesinde üçüncü makara vardı. İkinci makara yerde duruyordu.",
+          "🎞️ Film makarası"
+        ],
+        [
+          "Kameraman Lenny Çekime Devam Ediyor",
+          "Kamerası son çekimden sonra bir dakika daha döndü. Kimse bunu istememişti.",
+          "🎥 Film kamerası"
+        ],
+        [
+          "Altıdan Sonra",
+          "Saat altıda ana kapı kapandı. Saat yedide bir kez daha açıldı.",
+          "🔑 Kapı anahtarı"
+        ]
+      ]
+    ],
+    "filmstudio-2": [
+      "Bölüm II · Kayıp Makara",
+      "Yeni filmin tek kopyası ortadan kayboldu. Kutusu arşivde, kilit altındaydı. Prömiyere bir hafta var.",
+      "Makara yeniden kutusunda. Bir sahne kesilip çıkarılmış ve kimin kestiğini sen biliyorsun.",
+      "Stüdyoda herkes başkasını gösterir. İki kişiyle ilgili bir ifadeyi çözmek için önce ikisinden birinin yerini kesinleştir.",
+      [
+        [
+          "Boş Kutu",
+          "Kutunun üstünde filmin adı yazıyor. İçinde hiçbir şey yok.",
+          "🗃️ Film kutusu"
+        ],
+        [
+          "Menajer Sid Telefon Ediyor",
+          "Film hakkında konuşmak için aradı. Filmin kaybolduğunu ona henüz kimse söylememişti.",
+          "☎️ Telefon"
+        ],
+        [
+          "Arşiv",
+          "Arşiv tek bir anahtarla açılıyor. Anahtar direktörlükte, bir çiviye asılı.",
+          "🗝️ Arşiv anahtarı"
+        ],
+        [
+          "Senarist Peggy Yeniden Yazıyor",
+          "Finali dördüncü kez yeniden yazdı. Artık içinde bir hırsızlık vardı.",
+          "⌨️ Daktilo"
+        ],
+        [
+          "Montaj Odası",
+          "Yerde film kırpıntıları vardı. Hepsi aynı sahnedendi.",
+          "✂️ Montaj makası"
+        ],
+        [
+          "Yıldız Adayı Joy Bir Şey Görüyor",
+          "Kolunun altında bir kutuyla yürüyen birini gördü. İçinde bisküvi olduğunu sandı.",
+          "🍪 Bisküvi kutusu"
+        ],
+        [
+          "Gece Bekçisi",
+          "Gece bekçisi her saat bir tur atıyordu. Saat üçte bir turu atladı.",
+          "🔦 El feneri"
+        ],
+        [
+          "Bir Hafta Kaldı",
+          "Afişler şimdiden bütün şehre asıldı. Film ise hiçbir yerde yok.",
+          "🖼️ Film afişi"
+        ]
+      ]
+    ],
+    "filmstudio-3": [
+      "Bölüm III · Dublör Sahnesi",
+      "Dış setteki kovboy barının çatısından bir atlayış, yüz kez prova edilmiş. Bugün ters gitti. Dublör Hank birinin mindere dokunduğuna yemin ediyor.",
+      "Minder yeniden yerinde ve Dublör Hank yine yürüyor. Bir sonraki atlayış sorunsuz geçiyor.",
+      "Dublör sahnesinde herkes birbirine değil, yukarı bakar. Nerede OLMADIĞINI söyleyen de sana bir şey anlatır: o alanı hemen ele.",
+      [
+        [
+          "Yüz Kez Prova",
+          "Yüz atlayış, yüzü de kusursuz. Yüz birincisi değil.",
+          "🪜 Merdiven"
+        ],
+        [
+          "Dublör Hank Düşüyor",
+          "Altı metreden atladı. Minder bir metre ötedeydi.",
+          "🛏️ Düşme minderi"
+        ],
+        [
+          "Barın Çatısı",
+          "Kovboy barının çatısı kartondan. Bir kalas ise gerçek tahtadandı.",
+          "🪵 Kalas"
+        ],
+        [
+          "Yönetmen Baxter Bir Çekim Daha İstiyor",
+          "Atlayışı on bir kez tekrarlattı. Ancak on ikincisinde başını çevirdi.",
+          "⏱️ Kronometre"
+        ],
+        [
+          "At",
+          "At bir patlamayla ürktü. Senaryoda silah sesi yoktu.",
+          "🐎 At"
+        ],
+        [
+          "Makyöz Rita Bıyık Yapıştırıyor",
+          "İkinci bir dublöre bıyık yapıştırdı. Oysa yalnızca bir dublör vardı.",
+          "🥸 Takma bıyık"
+        ],
+        [
+          "Halat",
+          "Halat iki yüz kilo taşıyabiliyordu. Yetmiş kiloda koptu.",
+          "🪢 Halat"
+        ],
+        [
+          "Kameraman Lenny Her Şeyi Filme Alıyor",
+          "Atlayışı iki açıdan çekti. İkinci makarada bacanın arkasında biri duruyor.",
+          "🎞️ İkinci makara"
+        ]
+      ]
+    ],
+    "filmstudio-4": [
+      "Bölüm IV · Sesli Film",
+      "İlk sesli film. Kamera ses geçirmez bir dolabın içinde duruyor, mikrofonlar çiçek aranjmanlarına gizlenmiş. Duymaları gerekenden fazlasını duyuyorlar.",
+      "Çekimler kurgulandı ve ses kabini sessiz. Son plaktaki konuşma artık sır değil.",
+      "Sesli çekimde platoda kimse tek kelime edemez, o yüzden kimin kimin hemen yanında durduğuna dikkat et. Önce en az seçeneği olan şüpheliyi yerleştir; gerisi arkasından gelir.",
+      [
+        [
+          "Sette Sessizlik",
+          "Kapının üstünde kırmızı bir lamba yanıyor: sessizlik. Kapının arkasında biri fısıldıyordu.",
+          "🔴 Kırmızı lamba"
+        ],
+        [
+          "Çiçeklerdeki Mikrofon",
+          "Çiçek aranjmanının içinde bir mikrofon vardı. Ses ekibinden kimse onu oraya koymamıştı.",
+          "💐 Çiçek aranjmanı"
+        ],
+        [
+          "Film Yıldızı Vivian Seslendiriliyor",
+          "Sessiz filmlerde bir yıldızdı. Sesli filmde onun yerine başkası şarkı söylüyor.",
+          "🎵 Nota kâğıdı"
+        ],
+        [
+          "Buzdolabı",
+          "Kamera, buzdolabı dedikleri bir dolabın içinde duruyor. O öğleden sonra içinde iki kişi duruyordu.",
+          "🧊 Buzdolabı"
+        ],
+        [
+          "Menajer Sid Fısıldıyor",
+          "Yıldızın kulağına bir teklif fısıldadı. Mikrofon da onunla birlikte fısıldadı.",
+          "🎧 Kulaklık"
+        ],
+        [
+          "Mum Plak",
+          "Ses, filmle eş zamanlı olarak bir mum plağa kaydediliyor. Bir plak üç saniye geriden geliyordu.",
+          "💿 Mum plak"
+        ],
+        [
+          "Senarist Peggy Kaydı Dinliyor",
+          "Her repliği kendisi yazmıştı. Kayıttaki bir repliği tanımadı.",
+          "📝 Senaryo"
+        ],
+        [
+          "Mikrofonun Duydukları",
+          "Kayıtta sahneyi duyuyorsun. Ve arkasında kapanan bir kapıyı.",
+          "🔊 Hoparlör"
+        ]
+      ]
+    ],
+    "filmstudio-5": [
+      "Bölüm V · Seçmeler",
+      "Tek bir rol için yüz aday, ana kapıya kadar uzanan bir kuyrukta. Her birine kameranın önünde üç dakika veriliyor. İçlerinden biri deneme çekiminden geri dönmüyor.",
+      "Rol verildi ve kuyruk dağıldı. Bir deneme çekimi hiçbir zaman gösterilmeyecek.",
+      "Seçmelerde herkes aynı kuyrukta durur, ama herkes aynı alanda değildir. Yalnız olduğunu söyleyenle başla: bu, bütün bir alanı tek seferde boşaltır.",
+      [
+        [
+          "Yüz Aday",
+          "Listede yüz isim. Günün sonunda doksan dokuz.",
+          "📋 Aday listesi"
+        ],
+        [
+          "Yıldız Adayı Joy İzliyor",
+          "Geçen yıl o kuyrukta kendisi duruyordu. Şimdi arkasından kimin geldiğine bakıyor.",
+          "🎀 Saç fiyonku"
+        ],
+        [
+          "Deneme Çekimi",
+          "Kameranın önünde üç dakika. Film dört dakika sürüyor.",
+          "🎞️ Deneme çekimi"
+        ],
+        [
+          "Makyöz Rita Makyaj Yapıyor",
+          "Yüz kişiye makyaj yaptı. Bir yüzü zaten tanıyordu.",
+          "🖌️ Pudra fırçası"
+        ],
+        [
+          "Menajer Sid İmza Attırıyor",
+          "Seçmeler başlamadan bir adaya imza attırdı. O aday hiç gelmedi.",
+          "🖋️ Dolma kalem"
+        ],
+        [
+          "On Yedi Numara",
+          "Her adayın göğsünde bir numara vardı. On yedi numara kapının önünden iki kez geçti.",
+          "🔢 Numara kartı"
+        ],
+        [
+          "Film Yıldızı Vivian İzlemeyi Sürdürüyor",
+          "Yerine kimin geçeceğini görmek için bir uğradı. Hava kararana kadar kaldı.",
+          "🧣 Kürk yaka"
+        ],
+        [
+          "Askıda Tek Bir Palto",
+          "Saat beşte askıda hâlâ bir palto duruyordu. Kimse onu almaya gelmedi.",
+          "🧥 Yağmurluk"
+        ]
+      ]
+    ],
+    "filmstudio-6": [
+      "Bölüm VI · Arşivde Yangın",
+      "Eski filmler nitrattan yapılır ve nitrat kâğıttan hızlı yanar. Gecenin bir yarısı arşivden alevler yükseliyor. Biri bunun ne kadar hızlı olacağını biliyordu.",
+      "Yangın söndü ve arşiv kapkara. Bu bir kaza değildi.",
+      "Bir yangından sonra kimse tam olarak nerede durduğunu hatırlamaz. Kalemi kullan: olamayacak kareleri ele ve geriye ne kaldığına bak.",
+      [
+        [
+          "Nitrat",
+          "Her kutunun üstünde yazıyor: sigara içilmez. Yerde bir izmarit vardı.",
+          "🚭 Sigara yasağı levhası"
+        ],
+        [
+          "İtfaiye",
+          "İtfaiye on dakikada geldi. Arşiv beş dakikada yanıp bitti.",
+          "🚒 İtfaiye aracı"
+        ],
+        [
+          "Kameraman Lenny Bir Kutu Kurtarıyor",
+          "Tek bir kutu için alevlerin içine koştu. İçinde kendi çektikleri vardı.",
+          "📦 Makara kutusu"
+        ],
+        [
+          "Yangın Zili",
+          "Zil saat ikide çaldı. Gece bekçisi bir buçukta bir şeyin kokusunu almıştı bile.",
+          "🔔 Yangın zili"
+        ],
+        [
+          "Senarist Peggy Geç Saate Kadar Çalıştı",
+          "Gece yarısına kadar senaryo üzerinde çalıştı. Önce arşivde çalıştığını söyledi.",
+          "🗒️ Not defteri"
+        ],
+        [
+          "Dublör Hank ve Ateş",
+          "Kameranın önünde ateşin içinden yürüyüp geçer. Dün gece ateşten uzak durdu.",
+          "🧯 Yangın söndürücü"
+        ],
+        [
+          "Arşiv Listesi",
+          "Listeye göre üç yüz kutu vardı. Küllerin arasında iki yüz tane vardı.",
+          "📒 Arşiv defteri"
+        ],
+        [
+          "Yönetmen Baxter Seyrediyor",
+          "Bütün eski filmleri yanıp kül oldu. Rahatlamış görünüyordu.",
+          "👓 Yuvarlak gözlük"
+        ]
+      ]
+    ],
+    "filmstudio-7": [
+      "Bölüm VII · Dış Çekim",
+      "Çölde bir western, stüdyodan bir günlük yol. On araç, yirmi at ve güneşin altında kartondan bir kasaba. Bir su varili eksik.",
+      "Araçlar Hollywood’a dönüyor. Su varili bulundu; yarısı dolu ve kamptan çok uzakta.",
+      "Tahta büyüyor, ifadeler cimrileşiyor. Rapora göre bir alan boşsa, o alanın tamamı herkes için elenir.",
+      [
+        [
+          "On Araç",
+          "On araç çöle girdi. Yanlarında dokuz su varili vardı.",
+          "🛢️ Su varili"
+        ],
+        [
+          "Dublör Hank Arabayı Sürüyor",
+          "Posta arabasını iki kez devirdi. Yalnızca biri senaryoda yazıyordu.",
+          "🐎 Posta arabası"
+        ],
+        [
+          "Öğle Güneşi",
+          "Saat on ikide güneş tam setin üstündeydi. Yine de uzun bir gölge düştü.",
+          "☀️ Öğle güneşi"
+        ],
+        [
+          "Film Yıldızı Vivian Kumda",
+          "Çöle girmeyi reddetti. Yine de çizmelerinde kum vardı.",
+          "👢 Binici çizmesi"
+        ],
+        [
+          "Kamp Ateşi",
+          "Bütün ekip ateşin çevresinde şarkı söyledi. Nakaratta bir ses eksikti.",
+          "🪕 Banjo"
+        ],
+        [
+          "Makyöz Rita Pudralıyor",
+          "Her sabah on yüzü pudralıyordu. Bir yüzde dün akşamdan kalma pudra vardı.",
+          "🪞 El aynası"
+        ],
+        [
+          "Su Kamyonu",
+          "Su kamyonu bütün gece kampın yanında durdu. Gün doğarken bir kilometre ötedeydi.",
+          "🚚 Su kamyonu"
+        ],
+        [
+          "Menajer Sid Stüdyoya Telgraf Çekiyor",
+          "Yüz mil içinde telefon yoktu. Yine de stüdyo bir saat içinde haber aldı.",
+          "✉️ Telgraf"
+        ]
+      ]
+    ],
+    "filmstudio-8": [
+      "Bölüm VIII · Büyük Gala",
+      "Film bitti ve bu akşam prömiyer var. Platodaki galada ışıklar bir kez daha yanıyor. Yüzler, son çekimin yapıldığı akşamkilerin aynısı.",
+      "Van Dam şapkasını takıyor, boş yönetmen sandalyesine başıyla selam veriyor ve ana kapıdan çıkıp Hollywood gecesine karışıyor. Filmin sonu nihayet yerine oturdu.",
+      "Son vakalar, neredeyse hepsi büyük tahtada. En zor olana takılıp kalma: önce diğerlerini yerleştir, sonuncuya çoğu zaman tek bir kare kalır.",
+      [
+        [
+          "Kırmızı Halı",
+          "Kırmızı halının iki yanında bin kişi. İçlerinden biri konuklarla birlikte içeri girdi.",
+          "🎟️ Prömiyer bileti"
+        ],
+        [
+          "Film Yıldızı Vivian Göz Kamaştırıyor",
+          "Herkes elbisesine baktı. Kimse ellerine bakmadı.",
+          "💎 Broş"
+        ],
+        [
+          "Senarist Peggy Finalini Görüyor",
+          "Finali yedi kez yazdı. Perdede sekizincisini gördü.",
+          "📜 Final sahnesi"
+        ],
+        [
+          "Yıldız Adayı Joy Keşfediliyor",
+          "Herkes onunla fotoğraf çektirmek istedi. Bir fotoğrafçı yalnızca çantasını istiyordu.",
+          "👛 Gece çantası"
+        ],
+        [
+          "Yönetmen Baxter Teşekkür Ediyor",
+          "Bütün ekibe tek tek adlarıyla teşekkür etti. Bir adı soru sorar gibi söyledi.",
+          "🎙️ Mikrofon"
+        ],
+        [
+          "Menajer Sid Daha Fazlasını İstiyor",
+          "Her şeyin yüzde onunu alıyordu. Bu akşam geri kalanını istedi.",
+          "💵 Dolar banknotu"
+        ],
+        [
+          "Kameraman Lenny Filmi Oynatıyor",
+          "Filmi projeksiyon kabininde kendisi oynattı. İçinde kurgulanandan bir makara fazla vardı.",
+          "📽️ Projeksiyon makinesi"
+        ],
+        [
+          "Büyük Gala",
+          "Her şey sinema salonunda başladı. Orada da bitiyor.",
+          "🎞️ Son makara"
+        ]
+      ]
+    ],
+    "karavaan": [
+      "Bölüm I · Kapı Kapanıyor",
+      "Al-Nour Kervansarayı, eski baharat yolunda bir vaha. Kervan bir geceliğine surların içinde dinleniyor. Gün doğarken kervanbaşı İdris develerin yanında yatıyor ve büyük kapı bütün gece kapalı kaldı.",
+      "Kervanbaşı öldü ve kapı kapalı kalıyor. Hikâye yerine oturana kadar kimse yola çıkmıyor.",
+      "Kervansaray, çok kapılı tek bir avludur. Hangi alanda olduğunu söyleyenle başla. Su testisinin “hemen yanında” yalnızca tam yanındaki kare demek, asla çapraz değil.",
+      [
+        [
+          "Kapı Kapanıyor",
+          "Güneş batarken büyük kapı kapandı. Gün doğarken kimse ayrılmamıştı, yine de bir yolcu eksikti.",
+          "🔒 Kapı kilidi"
+        ],
+        [
+          "On İki Deve",
+          "Ahırda on iki deve. O gece hiçbiri ses çıkarmadı.",
+          "🐪 Deve"
+        ],
+        [
+          "Bekçi Karim Nöbet Tutuyor",
+          "Bütün gece kapının yanında oturdu. Anahtarın bütün gece kemerinde asılı olduğunu söylüyor.",
+          "🗝️ Anahtar destesi"
+        ],
+        [
+          "Su Testisi",
+          "Saat onda kuyunun yanındaki testi doluydu. Gece yarısı boştu.",
+          "🏺 Su testisi"
+        ],
+        [
+          "Baharatçı Layla Tartıyor",
+          "Her akşam safranını tartardı. Dün akşam başka bir şey tarttı.",
+          "⚖️ Bakır terazi"
+        ],
+        [
+          "Deve Eyeri",
+          "Kervanbaşının eyeri yola çıkmak için hazırdı. Kapı açılmadan gitmek istiyordu.",
+          "🪢 Eyer kayışı"
+        ],
+        [
+          "Şair Samira Yazıyor",
+          "O akşam kervanbaşı hakkında bir şiir yazdı. Şiir bir vedaydı.",
+          "✒️ Kamış kalem"
+        ],
+        [
+          "Gün Doğmadan",
+          "Horoz saat dörtte öttü. Saat üçte biri çoktan çatı terasında yürüyordu.",
+          "🐓 Horoz"
+        ]
+      ]
+    ],
+    "karavaan-2": [
+      "Bölüm II · Kayıp Safran",
+      "Baharatçı Layla on çuval safranla yolculuk ediyor; şehirde bir ev alacak kadar. Sayıldığında dokuz çuval çıkıyor. Kapı hâlâ kapalı.",
+      "Onuncu çuval yeniden diğer dokuzunun yanında. Bir avuç hafiflemiş.",
+      "Surların içinde herkes herkes hakkında konuşur. İki kişiyle ilgili bir ifadeyi çözmek için önce ikisinden birinin yerini kesinleştir.",
+      [
+        [
+          "On Çuval",
+          "Varışta on çuval. Kahvaltıda dokuz.",
+          "🌸 Safran çuvalı"
+        ],
+        [
+          "Rehber Tariq Yük İndiriyor",
+          "Çuvalları develerden kendisi indirdi. Hangi devenin bir çuval fazla taşıdığını hâlâ hatırlıyor.",
+          "🧭 Pusula"
+        ],
+        [
+          "Kiler",
+          "Kilerin kapısı kilitleniyor. Kilit iç tarafta.",
+          "🔐 Asma kilit"
+        ],
+        [
+          "Halıcı Yusuf Halıları Topluyor",
+          "O sabah bütün halılarını rulo yaptı. Bir halı dünden ağırdı.",
+          "🧶 Rulo halı"
+        ],
+        [
+          "Kırmızı İplikler",
+          "Safran kırmızı iplikçiklerden ibarettir, hava kadar hafif. Mutfağın zemininde bir tane duruyordu.",
+          "🧵 Safran ipliği"
+        ],
+        [
+          "Gezgin Beatrix Not Alıyor",
+          "Gördüğü her şeyi yazar. O gece hakkında hiçbir şey yok.",
+          "📔 Seyahat defteri"
+        ],
+        [
+          "Dokuz Çuval",
+          "Dokuz çuval, hepsi aynı ağırlıkta. Biri yarı yarıya kumdu.",
+          "⏳ Çöl kumu"
+        ],
+        [
+          "Çaycı Hamid Kulak Misafiri Oluyor",
+          "Birinin safran hakkında konuştuğunu duydu. Safran kaybolmadan bir saat önce.",
+          "🍯 Şekerlik"
+        ]
+      ]
+    ],
+    "karavaan-3": [
+      "Bölüm III · Çayhane",
+      "Her akşam bütün kervan çayhanede bir araya gelir. Çaycı Hamid çay doldurur ve her şeyi duyar. Bir konuşmayı ise kimse duymadı.",
+      "Çayhane boş, bardaklar tepside ters çevrilmiş duruyor. Kimsenin duymadığı konuşmayı artık sen biliyorsun.",
+      "Çayhanede herkes birbirine değil, demliğe bakar. Nerede OLMADIĞINI söyleyen de sana bir şey anlatır: o alanı hemen ele.",
+      [
+        [
+          "Üç Bardak",
+          "Çayhanede herkes üç bardak içer. Bir konuk üçüncüsüne dokunmadı.",
+          "🍵 Çay bardağı"
+        ],
+        [
+          "Çaycı Hamid Çay Dolduruyor",
+          "Çay köpürsün diye yüksekten döker. Bu akşam eli titriyordu.",
+          "🫖 Bakır çaydanlık"
+        ],
+        [
+          "Boş Minder",
+          "Alçak masanın çevresinde sekiz minder vardı. Birine kimse oturmamıştı.",
+          "🛋️ Yer minderi"
+        ],
+        [
+          "Gökbilimci Zahra Dinliyor",
+          "Yıldızlara baktığını söyledi. Sırtı pencereye dönüktü.",
+          "🔭 Usturlap"
+        ],
+        [
+          "Taze Nane",
+          "Her bardakta taze nane vardı. Birinde ise kuru nane vardı.",
+          "🌿 Nane yaprağı"
+        ],
+        [
+          "Bekçi Karim İçeri Giriyor",
+          "Her akşam saat onda bir bardak çay almaya gelir. Dün dokuzda geldi.",
+          "⌛ Kum saati"
+        ],
+        [
+          "Perde",
+          "Çayhanedeki perdenin arkasında ikinci bir kapı var. Çaycı o kapının hiç açılmadığını söylüyor.",
+          "🪟 Perde"
+        ],
+        [
+          "Baharatçı Layla Pazarlık Ediyor",
+          "Rehberle yolculuğun fiyatı hakkında bir saat konuştu. Saat on birde fiyat birden yükseldi.",
+          "💰 Yol parası"
+        ]
+      ]
+    ],
+    "karavaan-4": [
+      "Bölüm IV · Çarşı",
+      "Vahada pazar kuruluyor. Üç köyden gelen tüccarlar mallarını avluya seriyor. Bin ses var ve biri yalan söylüyor.",
+      "Tezgâhlar sökülüyor ve avlu yeniden sessiz. Yalan söyleyen ses bulundu.",
+      "Pazar yerinde herkes omuz omuza durur, o yüzden kimin kimin hemen yanında durduğuna dikkat et. Önce en az seçeneği olan şüpheliyi yerleştir; gerisi arkasından gelir.",
+      [
+        [
+          "Pazar Yeri",
+          "Çarşıda bin kişi. Biri hiçbir şey almadı ve bütün gün kaldı.",
+          "🪙 Bakır sikke"
+        ],
+        [
+          "Halıcı Yusuf Satış Yapıyor",
+          "Bugün yedi halı sattı. Yanında altı tane vardı.",
+          "🧶 Halı"
+        ],
+        [
+          "Baharat Sepeti",
+          "Tarçın, kakule ve kimyon. Bir sepet hiçbir şey kokmuyordu.",
+          "🧺 Baharat sepeti"
+        ],
+        [
+          "Gezgin Beatrix Alışveriş Yapıyor",
+          "Taşıyamayacağı bir halı aldı. Kimseden yardım istemedi.",
+          "🧳 Seyahat sandığı"
+        ],
+        [
+          "Sahte Ağırlık",
+          "Pazardaki bütün ağırlıklar damgalıdır. Birinin damgası yoktu.",
+          "⚖️ Sahte ağırlık"
+        ],
+        [
+          "Rehber Tariq Takas Ediyor",
+          "Yaşlı devesini genç bir deveyle takas etti. Yaşlı deve dönüş yolunu biliyordu.",
+          "🐪 Yaşlı deve"
+        ],
+        [
+          "Sucu",
+          "Çarşıda biri kuyudan su satıyordu. Kuyu herkesindir.",
+          "🫗 Su tası"
+        ],
+        [
+          "Şair Samira Şiir Okuyor",
+          "İhanet üzerine bir şiir okudu. Herkes aynı adama baktı.",
+          "📖 Şiir kitabı"
+        ]
+      ]
+    ],
+    "karavaan-5": [
+      "Bölüm V · Yıldızlar Gecesi",
+      "Çatı terasında Gökbilimci Zahra bir sonraki yolculuğun rotasını yıldızlardan okuyor. Gece açık ve kervansaray uyuyor. Orada olmaması gereken bir ışık görüyor.",
+      "Işık bir fenerdi ve fenerin bir sahibi vardı. Rota belli.",
+      "Karanlıkta, çatıda herkes yalnızca kendini görür. Yalnız olduğunu söyleyenle başla: bu, bütün bir alanı tek seferde boşaltır.",
+      [
+        [
+          "Çölde Bir Işık",
+          "Köy olmayan bir yerde bir ışık yanıyordu. İki kez yandı, iki kez söndü.",
+          "🏮 Fener"
+        ],
+        [
+          "Gökbilimci Zahra Hesap Yapıyor",
+          "Kutup Yıldızı’nın yüksekliğini ölçtü. Yıldız doğru yerdeydi, haritası değil.",
+          "🗺️ Yıldız haritası"
+        ],
+        [
+          "Çatı Terası",
+          "Damda dört yolcu yıldızların altında uyudu. Beş yer yatağı vardı.",
+          "🛌 Yer yatağı"
+        ],
+        [
+          "Bekçi Karim de Görüyor",
+          "Kapıdan aynı ışığı gördü. Ancak ertesi öğleden sonra haber verdi.",
+          "🪔 Nöbet lambası"
+        ],
+        [
+          "Kayan Yıldız",
+          "Gece yarısı bir yıldız kaydı. Biri hariç herkes bir dilek tuttu.",
+          "🌠 Kayan yıldız"
+        ],
+        [
+          "Şair Samira Yıldız Sayıyor",
+          "Çölün üstündeki yıldızlar hakkında bir şiir yazdı. Bir yıldız fazla saydı.",
+          "📜 Şiir"
+        ],
+        [
+          "Çaycı Hamid Çay Getiriyor",
+          "Saat ikide çatıya çay götürdü. Orada zaten iki bardak vardı.",
+          "🍵 İki bardak"
+        ],
+        [
+          "Şafaktan Önce",
+          "Yıldızlar birer birer soldu. Çöldeki ışık en son söndü.",
+          "🌄 Şafak"
+        ]
+      ]
+    ],
+    "karavaan-6": [
+      "Bölüm VI · Hamam",
+      "Hamam sıcak ve buhar dolu. Yolcular orada yolculuğun kumundan arınıyor ve kimse elinden ötesini göremiyor. Neredeyse kimse.",
+      "Buhar dağıldı ve taşlar soğuyor. Buharın içinde saklanan artık apaçık ortada.",
+      "Buhar tanıkların aklını karıştırır, kat planı ise şaşmaz. Kalemi kullan: olamayacak kareleri ele ve geriye ne kaldığına bak.",
+      [
+        [
+          "Sıcak Taşlar",
+          "Taşların altındaki ateş gece gündüz yanar. Dün gece bir saatliğine söndü.",
+          "🪨 Sıcak taş"
+        ],
+        [
+          "Buharın İçinde",
+          "Hamamdaki herkes yalnızca buhar gördü. Bir konuk bir yüz gördü.",
+          "🌫️ Buhar"
+        ],
+        [
+          "Gezgin Beatrix Kumdan Arınıyor",
+          "Hamamda bir saat kaldı. Saçı kuruydu.",
+          "🧼 Sabun"
+        ],
+        [
+          "Sekiz Çift Nalın",
+          "Kapının yanında sekiz çift nalın duruyordu. Dışarı dokuz kişi çıktı.",
+          "🩴 Hamam nalını"
+        ],
+        [
+          "Halıcı Yusuf Terliyor",
+          "Sıcaktan terlediğini söyledi. Daha içeri bile girmemişti.",
+          "💦 Ter mendili"
+        ],
+        [
+          "Kuyu",
+          "Hamam suyunu kuyudan alır. Dün gece su bulanık çıktı.",
+          "🪣 Kuyu kovası"
+        ],
+        [
+          "Rehber Tariq Yıkanıyor",
+          "Yolculuktan önce asla yıkanmadığını söylüyor. Dün gece yıkandı.",
+          "🌹 Gül suyu"
+        ],
+        [
+          "Baharatçı Layla Yüzüğünü Kaybediyor",
+          "Yüzüğü kurnanın dibindeydi. Onu hiç çıkarmaz.",
+          "💍 Altın yüzük"
+        ]
+      ]
+    ],
+    "karavaan-7": [
+      "Bölüm VII · Uzun Yolculuk",
+      "Kervan yirmi gün boyunca kuyudan kuyuya çölü aşıyor. Her akşam Rehber Tariq develeri sayıyor. Her akşam aynı sayıyı bulmuyor.",
+      "Yirmi günün sonunda kervan kıyıya ulaşıyor. Rehber son bir kez sayıyor ve sayı doğru.",
+      "Tahta büyüyor, ifadeler cimrileşiyor. Rapora göre bir alan boşsa, o alanın tamamı herkes için elenir.",
+      [
+        [
+          "Yirmi Gün",
+          "Yirmi günlük su. On ikinci gün bitti.",
+          "💧 Su tulumu"
+        ],
+        [
+          "Rehber Tariq Develeri Sayıyor",
+          "Yola çıkarken on iki deve, ilk kuyuda on bir. İkinci kuyuda yine on iki.",
+          "🐪 Yük devesi"
+        ],
+        [
+          "İz",
+          "Rehber kumdaki her izi okur. Bir iz geriye doğru gidiyordu.",
+          "👣 Ayak izi"
+        ],
+        [
+          "Gökbilimci Zahra Yolu Gösteriyor",
+          "Her gece güneyi gösteriyordu. Altıncı gece biraz daha doğuyu.",
+          "⭐ Kılavuz yıldız"
+        ],
+        [
+          "Bekçi Karim Yola Katılıyor",
+          "Yirmi yıl boyunca surların dışına hiç çıkmadı. Bu kez gelmekte ısrar etti.",
+          "⛺ Yol çadırı"
+        ],
+        [
+          "Kuru Kuyu",
+          "Haritada su vardı. Biri kuyuyu toprakla doldurmuştu.",
+          "🕳️ Kuru kuyu"
+        ],
+        [
+          "Çaycı Hamid Çay Demliyor",
+          "Her akşam son kalan suyla çay demliyordu. Her akşam yine de geriye su kalıyordu.",
+          "🔥 Kamp ateşi"
+        ],
+        [
+          "Deniz",
+          "Yirmi günün sonunda kervan tuz kokusu aldı. Bir deve öbür yöne yürüdü.",
+          "🌊 Deniz rüzgârı"
+        ]
+      ]
+    ],
+    "karavaan-8": [
+      "Bölüm VIII · Vahaya Veda",
+      "Kervan yoluna devam ediyor, kervansaray geride kalıyor. Yıldızların altında, çatı terasında son bir akşam. Yüzler, kapının kapandığı gecekilerin aynısı.",
+      "Van Dam ceketindeki kumu silkeliyor, bekçiyi selamlıyor ve gün doğarken kervanla birlikte büyük kapıdan geçiyor. Kapının ardında artık bir sır eksik.",
+      "Son vakalar, neredeyse hepsi büyük tahtada. En zor olana takılıp kalma: önce diğerlerini yerleştir, sonuncuya çoğu zaman tek bir kare kalır.",
+      [
+        [
+          "Son Akşam",
+          "Herkes çatı terasında oturuyordu. Aşağıda, ahırda hâlâ bir mum yanıyordu.",
+          "🕯️ Mum ışığı"
+        ],
+        [
+          "Şair Samira Veda Ediyor",
+          "Son şiirinde hiç ad yok. Yine de herkes kimi kastettiğini biliyordu.",
+          "📓 Şiir defteri"
+        ],
+        [
+          "Baharatçı Layla Hesabı Kapatıyor",
+          "Kervandaki yerinin parasını ödedi. Onuncu çuvaldan safranla.",
+          "👝 Para kesesi"
+        ],
+        [
+          "Halıcı Yusuf Bir Şey Unutuyor",
+          "Konuk odasında rulo yapılmış bir halı bıraktı. Hiçbir şeyi geride bırakmaz.",
+          "🧶 Son halı"
+        ],
+        [
+          "Gezgin Beatrix Kitabını Kapatıyor",
+          "Yolculuk kitabı bitti. Son bölümün henüz bir başlığı yok.",
+          "📕 Seyahatname"
+        ],
+        [
+          "Bekçi Karim Kapıyı Açıyor",
+          "Yirmi yıl boyunca kapıyı gün doğarken açtı. Bugün bir saat erken açtı.",
+          "🔑 Büyük anahtar"
+        ],
+        [
+          "Son Bardak",
+          "Çaycı Hamid herkese son bir kez çay doldurdu. Bir bardak fazla doldurdu.",
+          "🫖 Son demlik"
+        ],
+        [
+          "Vahaya Veda",
+          "Her şey ahırda, develerin yanında başladı. Orada da bitiyor.",
+          "🔔 Deve çanı"
+        ]
+      ]
+    ],
+    "abdij": [
+      "Bölüm I · Ölü Başrahip",
+      "Aziz Aldric Manastırı, 1327 kışı. Kar dağ geçidini kapatıyor. Gece duasından sonra başrahip Bertram yazı odasında yatıyor, parmakları mürekkepli.",
+      "Rahipler başrahipleri için dua ediyor. Kar erimiyor ve kışın bitmesine daha çok var.",
+      "Manastır sessiz koridorlar ve kapalı kapılarla doludur. Hangi alanda olduğunu söyleyenle başla. Şamdanın “hemen yanında” yalnızca tam yanındaki kare demek, asla çapraz değil.",
+      [
+        [
+          "Gece Duasından Sonra",
+          "On iki rahip gece duasının ilahilerini söyledi. Ardından bir ses eksildi.",
+          "📿 Tespih"
+        ],
+        [
+          "Mürekkepli Parmaklar",
+          "Başrahip hiçbir zaman kendisi yazmazdı. Parmakları mürekkepten kapkaraydı.",
+          "🪶 Kaz tüyü kalem"
+        ],
+        [
+          "Rahip Anselm Anahtarları Sayıyor",
+          "Halkasında yedi anahtar var. Dün sekiz taneydi.",
+          "🗝️ Anahtar destesi"
+        ],
+        [
+          "Şamdan",
+          "Yazı odasındaki mum hâlâ yanıyordu. Gece duasından sonra orada ışık yakmak yasak.",
+          "🕯️ Balmumu mum"
+        ],
+        [
+          "Çömez Elias Yazıyor",
+          "Balmumu tabletinde bir mezmur yazılıydı. Altında, yarı silinmiş bir isim.",
+          "📝 Balmumu tablet"
+        ],
+        [
+          "Geçitte Kar",
+          "Kimse manastıra giremez ya da manastırdan çıkamazdı. Yine de duvardan bir ip sarkıyordu.",
+          "🪢 Kenevir ip"
+        ],
+        [
+          "Kontes Mathilde Bekliyor",
+          "Gece duasından sonra başrahiple konuşmak istedi. Başrahibin hiç gelmediğini söylüyor.",
+          "💍 Mühür yüzüğü"
+        ],
+        [
+          "İlk Gece",
+          "Manastırın kapısı kapalıydı, geçit de kapalıydı. Yazı odasının kapısı ise açıktı.",
+          "🔩 Kapı sürgüsü"
+        ]
+      ]
+    ],
+    "abdij-2": [
+      "Bölüm II · Yasak Kitap",
+      "Kütüphanede kimsenin okumaması gereken bir kitap duruyor. Anahtarı yalnızca başrahipteydi. Yine de biri onu okudu.",
+      "Kitap yeniden kilit altında. Soru artık onu kimin okuduğu değil, neden okuduğu.",
+      "Kütüphanede herkes fısıldar ve her kelime önemlidir. İki kişiyle ilgili bir ifadeyi çözmek için önce ikisinden birinin yerini kesinleştir.",
+      [
+        [
+          "Kilit Altında",
+          "Kitap iki kilidin arkasındaydı. Kilitlerden biri hâlâ kapalıydı.",
+          "🔒 Asma kilit"
+        ],
+        [
+          "Rahip Anselm Susuyor",
+          "Hangi kitap olduğunu biliyordu. Onu kimin istediğini de biliyordu.",
+          "📚 Katalog"
+        ],
+        [
+          "Bir Yaprak Eksik",
+          "Kitap iki yüz yapraktı. Yapraklardan biri düzgünce kesilip çıkarılmıştı.",
+          "🔪 Çakı"
+        ],
+        [
+          "Tezhipçi Odile Sayfaya Bakıyor",
+          "Kenardaki altın yaldız onun eseri. Kitabın kendisini ise hiç görmediğini söylüyor.",
+          "✨ Altın varak"
+        ],
+        [
+          "Mum Işığında Okumak",
+          "Parşömende mum lekesi vardı. Şapelin balmumu değil, mutfağın don yağı.",
+          "🕯️ Don yağı mumu"
+        ],
+        [
+          "Çömez Elias Okuyor",
+          "Latinceyi zar zor bildiğini söylüyor. Balmumu tabletinde yasak kitaptan bir satır vardı.",
+          "✍️ Kopyalanmış satır"
+        ],
+        [
+          "Kilerci Waldo ve Kontes",
+          "Revaklı avluda baş başa konuştular. Ondan sonra birbirlerine tek kelime etmediler.",
+          "✉️ Mühürlü not"
+        ],
+        [
+          "Yasak Kitap",
+          "Kimsenin onu okumasına izin yoktu. Yine de iki kişi okudu.",
+          "📕 Yasak kitap"
+        ]
+      ]
+    ],
+    "abdij-3": [
+      "Bölüm III · Ot Bahçesi",
+      "Ot bahçesi karın altında, ama kurutulmuş otlar içeride asılı. Revirde yaşlı bir rahip iyileşeceğine kötüleşiyor. Biri onun içeceğini ikinci kez hazırlıyor.",
+      "Yaşlı rahip yeniden doğrulmuş, çorba istiyor. Yanlış kavanoz revirden kaldırıldı.",
+      "Otların arasında herkes neyin nerede yetiştiğini bilir. Nerede OLMADIĞINI söyleyen de sana bir şey anlatır: o alanı hemen ele.",
+      [
+        [
+          "Her Ot Şifadır",
+          "Boğaz için adaçayı, mide için nane. Kavanozda ikisi de yoktu.",
+          "🌿 Kuru adaçayı"
+        ],
+        [
+          "Rahip Cuthbert İçeceği Hazırlıyor",
+          "İçeceği her akşamki gibi hazırladı. Yalnız bu kez tadına bakmadı.",
+          "🥣 Şifalı içecek"
+        ],
+        [
+          "Havan",
+          "Havanda hâlâ toz vardı. Bu bahçede yetişmeyen bir otun tozu.",
+          "🌰 Dövülmüş kök"
+        ],
+        [
+          "Şifacı Hilde İçeri Giriyor",
+          "Köyden bir sepet dolusu otla geldi. Geçit bir haftadır kapalıydı.",
+          "🧺 Ot sepeti"
+        ],
+        [
+          "Kışın Arılar",
+          "Kışın arılar uyur. Yine de biri kovanı açmış.",
+          "🍯 Bal peteği"
+        ],
+        [
+          "Revir",
+          "Üç yatak, iki hasta. Üçüncü yatak sıcaktı.",
+          "🛏️ Saman şilte"
+        ],
+        [
+          "Hacı Gisela Yardım Ediyor",
+          "Hastaya bakmayı önerdi. Kimse ona söylemeden, hastanın hangi içeceği aldığını biliyordu.",
+          "🍶 Su kabağı"
+        ],
+        [
+          "Kurtboğan",
+          "Güzel, mor bir çiçek. Her bitki kitabında adının yanında küçük bir haç var.",
+          "🪻 Kurtboğan"
+        ]
+      ]
+    ],
+    "abdij-4": [
+      "Bölüm IV · Uzun Kış",
+      "Geçit bahara kadar kapalı. Kilerci Waldo her hafta erzakı sayıyor ve mahzen her hafta olması gerekenden daha boş.",
+      "Mahzen sayıldı ve ekmek adilce paylaştırıldı. İki kişilik yiyen, artık bir kişilik yiyor.",
+      "Kışın herkes ateşe yakın, birbirine yakın durur. Önce en az seçeneği olan şüpheliyi yerleştir; gerisi arkasından gelir.",
+      [
+        [
+          "Bahara Kadar",
+          "Dört aya yetecek tahıl var, dedi kilerci. Bir ay sonra yarısı bitmişti.",
+          "🌾 Tahıl çuvalı"
+        ],
+        [
+          "Kilerci Waldo Peynirleri Tartıyor",
+          "Peynirleri her hafta tarttı. Hiçbiri eksik değildi, ama hafifliyorlardı.",
+          "🧀 Teker peynir"
+        ],
+        [
+          "Fırın Odası",
+          "Fırın gece duasından beri soğuk. Yine de fırın odası taze ekmek kokuyor.",
+          "🍞 Çavdar ekmeği"
+        ],
+        [
+          "Kontes Mathilde Oruç Tutuyor",
+          "Noel’e kadar oruç tuttuğunu söylüyor. Yatağının altında beyaz ekmek kırıntıları var.",
+          "🥖 Ekmek kabuğu"
+        ],
+        [
+          "Kum Saati",
+          "Mutfakta biri her saat başı kum saatini çeviriyor. Saat üçte unuttu.",
+          "⏳ Kum saati"
+        ],
+        [
+          "Çömez Elias Acıkıyor",
+          "Hepsinin en zayıfıydı. Ocak ortasına kadar.",
+          "🍽️ Tahta kâse"
+        ],
+        [
+          "Ayin Şarabı",
+          "Ayin için haftada bir sürahi yeter. Koca bir fıçı ortadan kayboldu.",
+          "🍷 Ayin şarabı"
+        ],
+        [
+          "Kepenklere Kadar Kar",
+          "Kar yemekhanenin kepenklerine kadar yükselmişti. Bir kepenk açıktı, içeriden açılmış.",
+          "🧊 Buz sarkıtı"
+        ]
+      ]
+    ],
+    "abdij-5": [
+      "Bölüm V · Piskoposun Ziyareti",
+      "Bir haftalık ılık hava geçidi açıyor. Piskopos yeni bir başrahip seçmek için yolda ve gelmesini herkes istemiyor.",
+      "Piskopos sağ salim geliyor ve manastırı kutsuyor. Yeni başrahip seçiliyor ve tek bir oy bile satın alınmadı.",
+      "Ziyaret için herkes başka bir yerde hazır bekliyor. Yalnız olduğunu söyleyenle başla: bu, bütün bir alanı tek seferde boşaltır.",
+      [
+        [
+          "Mühürlü Bir Mektup",
+          "Piskoposun mektubunda kırmızı bir mühür vardı. Mühür daha önce bir kez kırılmıştı.",
+          "📜 Piskoposun mektubu"
+        ],
+        [
+          "Rahip Anselm Başrahip Olmak İstiyor",
+          "İstemediğini söylüyor. Yemini şimdiden ezbere biliyor.",
+          "📃 Başrahip yemini"
+        ],
+        [
+          "Çan Kulesi",
+          "Piskopos geldiğinde çan çalar. İp göz hizasından kesilmişti.",
+          "🔔 Çan ipi"
+        ],
+        [
+          "Kontes Mathilde Bağış Yapıyor",
+          "Manastıra altın bir kadeh bağışlıyor. Piskopos onun adayını seçerse.",
+          "🏆 Altın kadeh"
+        ],
+        [
+          "Yolda Taşlar",
+          "Biri dağ yoluna taşlar yuvarlamıştı. Taşlar karın altında değil, üstündeydi.",
+          "🪨 Kaya parçası"
+        ],
+        [
+          "Rahip Cuthbert Yemek Yapıyor",
+          "Piskopos için bir ziyafet. Tabaklardan biri yalnızca piskopos içindi.",
+          "🍲 Güveç"
+        ],
+        [
+          "Şifacı Hilde Yolu Biliyor",
+          "Dağlardaki her patikayı bilir. Piskoposun izleyeceği patikayı da.",
+          "🥾 Islak çizme"
+        ],
+        [
+          "Piskopos Geliyor",
+          "Kapıdan ilk giren katırı oldu. Piskopos bir saat sonra geldi, yürüyerek.",
+          "🐴 Katır"
+        ]
+      ]
+    ],
+    "abdij-6": [
+      "Bölüm VI · Yazı Odasında Yangın",
+      "Gecenin bir yarısı yazı odası yanıyor. Rahipler yangını karla ve kovalarla söndürmeye çalışıyor. Bir kitap kurtarılıyor, ama yanlış kişi tarafından.",
+      "Yangın söndü, duvarlar kapkara. Kurtarılan kitap şapelde duruyor, yanlış ellerden uzakta.",
+      "Duman tanıkların gözünü bulandırır, kat planı ise şaşmaz. İfadeler cimrileşiyor: kalemi kullan, olamayacak kareleri ele ve geriye ne kaldığına bak.",
+      [
+        [
+          "Gece Duasından Sonra Duman",
+          "Gece duasından sonra revaklı avluda duman vardı. Bütün mumlar çoktan söndürülmüştü.",
+          "💨 Duman izi"
+        ],
+        [
+          "Kova Kova Kar",
+          "Rahipler yangını avludaki karla söndürdü. Yazı odasının önündeki kar ise yangın başlamadan küreklenmişti.",
+          "🪣 Tahta kova"
+        ],
+        [
+          "Tezhipçi Odile Koşuyor",
+          "Kitapları için ateşe ilk o koştu. Elleri boş, yenleri tertemiz döndü.",
+          "🎨 Boya kabı"
+        ],
+        [
+          "Yazı Masası",
+          "Bütün yazı masaları yanmıştı. En kara olanı, mumlara en uzak duranıydı.",
+          "🪵 Kömürleşmiş tahta"
+        ],
+        [
+          "Kilerci Waldo Yangını Söndürüyor",
+          "En ağır kovaları o taşıdı. Cüppesi duman değil, yağ kokuyordu.",
+          "🫙 Yağ testisi"
+        ],
+        [
+          "Yemekhanede Kül",
+          "Yemekhanenin ocağında parşömen külü vardı. Yazı odasındaki yangın ise daha sonra başladı.",
+          "🌫️ Parşömen külü"
+        ],
+        [
+          "Hacı Gisela Dua Ediyor",
+          "Yangın boyunca şapelde dua etti. Pelerini isten kapkaraydı.",
+          "🧥 Hacı pelerini"
+        ],
+        [
+          "Yanlış Kurtarıcı",
+          "Bir kitap kurtarıldı. Hem de okuma bilmediğini söyleyen biri tarafından.",
+          "📘 Kavrulmuş cilt"
+        ]
+      ]
+    ],
+    "abdij-7": [
+      "Bölüm VII · Hacılar",
+      "On iki hacı kapıyı çalıp sığınacak bir yer istiyor. Manastırın kuralları her konuğun İsa’nın kendisi gibi karşılanmasını buyurur. Üç gün sonra on biri yola devam ediyor.",
+      "On bir hacı Roma’ya doğru yola devam ediyor. On ikincisi kalıyor, ama konuk olarak değil.",
+      "Tahta büyüyor, manastır doluyor. Rapora göre bir alan boşsa, o alanın tamamı herkes için elenir.",
+      [
+        [
+          "Kapıda On İki Kişi",
+          "On iki hacı ekmek ve yatak istedi. Kapının önündeki karda on üç çift ayak izi vardı.",
+          "👣 Ayak izleri"
+        ],
+        [
+          "Hacı Gisela Birini Tanıyor",
+          "On iki kişiden birini tanıyordu. Bunu ancak o gittikten sonra söyledi.",
+          "🐚 Tarak kabuğu"
+        ],
+        [
+          "Konuk Defteri",
+          "Her konuk adını deftere yazdı. İki ad aynı elden çıkmış.",
+          "✒️ Konuk defteri"
+        ],
+        [
+          "Rahip Cuthbert Yara Sarıyor",
+          "On bir hacının ayaklarını sardı. On ikincisinin ayağında tek bir su toplaması yoktu.",
+          "🩹 Keten sargı"
+        ],
+        [
+          "Yoksulların Ekmeği",
+          "Her hacıya bir somun ekmek verildi. Fırında on üç somun pişti.",
+          "🥖 Hacı ekmeği"
+        ],
+        [
+          "Çömez Elias Konuşuyor",
+          "Hacılarla kendi dillerinde konuştu. Yazın, buraya yakın bir köyden geldiğini söylemişti.",
+          "🧾 Geçiş belgesi"
+        ],
+        [
+          "Tezhipçi Odile Yüzleri Çiziyor",
+          "On iki hacıyı bir mezmur kitabının kenarına çizdi. Yüzlerden birini daha önce de resmetmişti.",
+          "🖌️ Fırça"
+        ],
+        [
+          "On Biri Yola Çıkıyor",
+          "On iki kişi içeri girdi. On biri Roma’ya doğru yola devam etti.",
+          "⛰️ Dağ yolu"
+        ]
+      ]
+    ],
+    "abdij-8": [
+      "Bölüm VIII · Son Dua",
+      "Bahar geliyor ve geçitteki kar eriyor. Revaklı avluda bir gece daha, kışın ilk gecesindeki yüzlerle.",
+      "Van Dam pelerinine sıkıca sarınıyor, rahiplerin önünde eğiliyor ve açılan geçitten vadiye iniyor. Çan akşam duası için çalıyor. Kitap yeniden rafında.",
+      "Son vakalar, neredeyse hepsi büyük tahtada. En zor olana takılıp kalma: önce diğerlerini yerleştir, sonuncuya çoğu zaman tek bir kare kalır.",
+      [
+        [
+          "Kar Eriyor",
+          "Duvarın dibinde, karın altında bir anahtar yatıyordu. Sekizinci anahtar.",
+          "🔑 Demir anahtar"
+        ],
+        [
+          "Rahip Anselm Anahtarları Teslim Ediyor",
+          "Kırk yıl boyunca anahtarları taşıdı. Bu akşam hepsini bırakıyor, biri hariç.",
+          "⛓️ Anahtar halkası"
+        ],
+        [
+          "Şifacı Hilde Evine Dönüyor",
+          "Dolu bir ot sepetiyle gelmişti. Dolu bir sepetle gidiyor, içinde tek bir ot olmadan.",
+          "🧺 Dolu sepet"
+        ],
+        [
+          "Yeni Başrahip",
+          "Rahipleri ilk kez kutsuyor. Rahiplerden biri başını eğmiyor.",
+          "⚜️ Başrahip asası"
+        ],
+        [
+          "Kilerci Waldo Mahzeni Kilitliyor",
+          "Mahzen yaz için yeniden dolu. Son fıçının arkasında orada olmaması gereken bir şey duruyor.",
+          "🍺 Manastır birası"
+        ],
+        [
+          "Kontes Mathilde Yola Çıkıyor",
+          "Arabası kapıda hazır bekliyor. Geldiği zamankinden daha ağır.",
+          "🛞 Araba tekerleği"
+        ],
+        [
+          "Akşam Duası",
+          "Kışın son akşam duası. Bir ses başka bir mezmur okudu.",
+          "🎼 İlahi kitabı"
+        ],
+        [
+          "Son Dua",
+          "Her şey yazı odasında başladı. Yine orada bitiyor.",
+          "🖋️ Mürekkep hokkası"
+        ]
+      ]
+    ],
+    "vuurtoren": [
+      "Bölüm I · Işık Sönüyor",
+      "Griburun Feneri, Kasım 1900. Fırtına adanın karayla bağlantısını kesiyor. Gece yarısı ışık sönüyor. Yukarıda, fener odasında fener bekçisi Silas Mourne yatıyor.",
+      "Işık yeniden yanıyor, ama bekçi onu artık göremeyecek. Fırtına günlerce sürüyor.",
+      "Ada küçüktür, fener yüksek ve dar. Hangi alanda olduğunu söyleyenle başla. Can simidinin “hemen yanında” yalnızca tam yanındaki kare demek, asla çapraz değil.",
+      [
+        [
+          "Gece Yarısı",
+          "Yirmi yıl boyunca ışık her gece yandı. Bu gece saat on ikide söndü.",
+          "🪔 Gazyağı brülörü"
+        ],
+        [
+          "Fener Odası",
+          "Bekçi merceğin altında yatıyordu. Kapı içeriden kilitliydi.",
+          "🔐 Fener odası anahtarı"
+        ],
+        [
+          "Bekçi Yardımcısı Jonas Tırmanıyor",
+          "Yukarıya yüz on iki basamak. İki dakikada yukarı çıktığını söylüyor.",
+          "🕰️ Cep saati"
+        ],
+        [
+          "Can Simidi",
+          "Can simidi her zaman bekçi evinin kapısının yanında asılı durur. Bu gece kıyıya vuran dalgaların arasında yüzüyordu.",
+          "🛟 Can simidi"
+        ],
+        [
+          "Telgrafçı Fien Telgraf Çekiyor",
+          "Saat on ikiye beş kala karaya ışığın söndüğünü bildirdi. Işık saat on ikide söndü.",
+          "📨 Telgraf"
+        ],
+        [
+          "Döner Mekanizma",
+          "Merceğin döner mekanizması durmuştu. Etrafına bir gemici düğümü atılmıştı.",
+          "🪢 Gemici düğümü"
+        ],
+        [
+          "Kâhya Martha Uyuyor",
+          "Saat ondan beri uyuduğunu söylüyor. Gece yarısı demlik hâlâ sıcaktı.",
+          "🫖 Demlik"
+        ],
+        [
+          "Batıdan Fırtına",
+          "Hiçbir tekne adaya yanaşamaz ya da adadan ayrılamazdı. Yine de iskelede bir tekne eksikti.",
+          "⚓ Çözülmüş palamar"
+        ]
+      ]
+    ],
+    "vuurtoren-2": [
+      "Bölüm II · Gemi Kazası",
+      "Fırtınanın ikinci gecesi ışık bir saatliğine sönüyor. O bir saat içinde bir gemi kayalığın dibinde karaya oturuyor. Kıyıya tek bir adam vuruyor, üstünde hiçbir belge yok.",
+      "Enkaz dalgaların arasında parçalanıyor. Geminin kıyıya neden bu kadar yakın seyrettiğini artık sen biliyorsun.",
+      "Bir gemi kazasından sonra herkes ne gördüğünü ve kimi gördüğünü anlatır. İki kişiyle ilgili bir ifadeyi çözmek için önce ikisinden birinin yerini kesinleştir.",
+      [
+        [
+          "Kayalarda",
+          "Işık olmayınca gemi doğruca kayalığa yöneldi. Oysa kumsalda bir lamba yanıyordu.",
+          "🏮 Gemici feneri"
+        ],
+        [
+          "Kazazede Lev Kıyıya Vuruyor",
+          "Kıyıya hiçbir belgesi olmadan vurdu. Tütün tabakası kupkuruydu.",
+          "🚬 Tütün tabakası"
+        ],
+        [
+          "Balıkçı Bartel Olanları Görüyor",
+          "Kayalıktan izlediğini söylüyor. Kürekleri hâlâ ıslaktı.",
+          "🚣 Kürek"
+        ],
+        [
+          "Enkaz",
+          "Gemiden geriye yalnızca pruvası kaldı. Pruvadaki ad boyanarak kapatılmıştı.",
+          "🖌️ Taze boya"
+        ],
+        [
+          "Kılavuz Kees ve Kaptan",
+          "Geminin kaptanını tanıyordu. O gece kıyının açığında buluşacaklardı.",
+          "🗺️ Deniz haritası"
+        ],
+        [
+          "Kuşbilimci Dorien Not Alıyor",
+          "Saha defterinde: saat üç, kumsal, bir poyraz kuşu. Ve bir adam.",
+          "📓 Saha defteri"
+        ],
+        [
+          "Kumsalda Sandıklar",
+          "Kıyıya on iki sandık vurdu. Kayıkhanede dokuz tane vardı.",
+          "📦 Gemi sandığı"
+        ],
+        [
+          "Telgrafçı Fien ve Karşı Kıyı",
+          "Karşı kıyı geminin adını sordu. Adı, daha kimse pruvayı görmeden telgrafla bildirdi.",
+          "📃 Telgraf şeridi"
+        ]
+      ]
+    ],
+    "vuurtoren-3": [
+      "Bölüm III · Sis",
+      "Fırtınanın ardından sis geliyor. Üç gün boyunca sis düdüğü her çeyrek saatte bir ötüyor. İkinci gece bir kez fazla ötüyor.",
+      "Sis kalkıyor ve sis düdüğü susuyor. İşareti bekleyen tekne hiç gelmedi.",
+      "Siste kimse bir şey görmez, ama herkes nerede durmadığını bilir. Nerede OLMADIĞINI söyleyen de sana bir şey anlatır: o alanı hemen ele.",
+      [
+        [
+          "Her Çeyrek Saatte",
+          "Saatte dört kez. Saat ikide beş kez öttü.",
+          "📯 Sis düdüğü"
+        ],
+        [
+          "Bekçi Yardımcısı Jonas Düdük Öttürüyor",
+          "Bütün gece düdüğü öttürdüğünü söylüyor. Saat üçte mutfakta uyuyordu.",
+          "⚙️ Manivela"
+        ],
+        [
+          "Teleskop",
+          "Siste teleskop hiçbir işe yaramaz. Yine de kayalıkta duruyordu, denize çevrili.",
+          "🔭 Teleskop"
+        ],
+        [
+          "Öğretmen Wilma Yolunu Kaybediyor",
+          "On yıldır okuldan bekçi evine yürüyor. Siste kayıkhanenin önüne çıktı.",
+          "👓 Buğulu gözlük"
+        ],
+        [
+          "Siste Bir Ses",
+          "Biri iskeleden yardım istedi. Oraya vardıklarında yerde yalnızca bir kasket vardı.",
+          "🧢 Islak kasket"
+        ],
+        [
+          "Balıkçı Bartel Denize Açılıyor",
+          "Hiçbir balıkçı siste denize açılmaz. Döndüğünde kapanlarının biri hariç hepsi boştu.",
+          "🦞 Istakoz kapanı"
+        ],
+        [
+          "Kazazede Lev Şakayı Anlıyor",
+          "Hollandaca bilmediğini söylüyor. Balıkçının bir şakasına güldü.",
+          "🧶 Yün battaniye"
+        ],
+        [
+          "Bir Kez Fazla",
+          "O beşinci düdük bir yanlışlık değildi. Sisteki bir tekneye verilen bir işaretti.",
+          "⛵ Filika"
+        ]
+      ]
+    ],
+    "vuurtoren-4": [
+      "Bölüm IV · Nöbet Defteri",
+      "Bekçi her gece nöbet defterine yazardı: havayı, gemileri, ışığı. Son sayfa koparılmış.",
+      "Son sayfa bulundu, buruşmuş ve yarı yanmış. Üstünde ne yazdığını sen zaten biliyordun.",
+      "Nöbet defterinde her şey sırasıyla yazılıdır ve her satır bir alanı gösterir. Önce en az seçeneği olan şüpheliyi yerleştir; gerisi arkasından gelir.",
+      [
+        [
+          "Son Sayfa",
+          "Sayfa koparılmış. Bir sonrakinde kaleminin izi var.",
+          "📄 Kalem izi"
+        ],
+        [
+          "Kâhya Martha Temizlik Yapıyor",
+          "Nöbet defterine hiç dokunmadığını söylüyor. Kapağında cila vardı.",
+          "🧽 Cila bezi"
+        ],
+        [
+          "Mürekkep ve Kurşun Kalem",
+          "Bekçi her zaman mürekkeple yazardı. Son satır kurşun kalemle yazılmış.",
+          "✏️ Marangoz kalemi"
+        ],
+        [
+          "Kılavuz Kees de Okuyor",
+          "Defterde hangi gemilerin yazılı olduğunu biliyordu. Hangi geminin yazılı olmadığını da.",
+          "📋 Gemi listesi"
+        ],
+        [
+          "Bekçiye Göre Hava",
+          "Salı günü “dokuz bofor” diye yazmış. Salı günü hiç rüzgâr yoktu.",
+          "🌬️ Rüzgârölçer"
+        ],
+        [
+          "Öğretmen Wilma El Yazısını Tanıyor",
+          "Adadaki her el yazısını tanır. Bunu da tanıdığını söyledi, sonra sustu.",
+          "🖋️ Çelik uçlu kalem"
+        ],
+        [
+          "Telgrafçı Fien Deftere Geçiriyor",
+          "Karaya gönderdiği her mesajı kendi defterine de yazar. Mesajlardan biri defterde iki kez geçiyor.",
+          "📒 Telgraf defteri"
+        ],
+        [
+          "Sobada Kül",
+          "Telgrafhanenin sobasında kül vardı. Arasında, üstünde bir sayı yazılı küçük bir kâğıt köşesi.",
+          "🔥 Yanık köşe"
+        ]
+      ]
+    ],
+    "vuurtoren-5": [
+      "Bölüm V · Erzak Teknesi",
+      "Ayda bir tekne gazyağı, un ve posta getirir. Bütün ada iskelede bekliyor. Bu kez tekne dönerken yanında bir şey götürüyor.",
+      "Tekne sandık olmadan ayrılıyor. Kaptan neyi az kalsın götüreceğini hiçbir zaman öğrenmedi.",
+      "Tekne gelince herkes başka bir yerde yük taşır. Yalnız olduğunu söyleyenle başla: bu, bütün bir alanı tek seferde boşaltır.",
+      [
+        [
+          "Ayda Bir",
+          "Her ay olduğu gibi gazyağı, un ve posta. Bu kez bir de adsız bir sandık.",
+          "🛢️ Gazyağı varili"
+        ],
+        [
+          "Posta",
+          "Bekçiye bir mektup geldi. Karadan, ölümünden bir gün sonra gönderilmiş.",
+          "✉️ Mektup"
+        ],
+        [
+          "Kâhya Martha Sipariş Veriyor",
+          "Listesinde un, tuz ve fare zehiri var. Adada hiç fare yok.",
+          "☠️ Fare zehiri"
+        ],
+        [
+          "Kayıkhane",
+          "Kayıkhanede geri gönderilecek bir sandık duruyordu. Kapağında hava delikleri vardı.",
+          "📦 Hava delikli sandık"
+        ],
+        [
+          "Kazazede Lev Gitmek İstiyor",
+          "Hiç parası olmadığını söylüyor. Kaptana altın bir sikke teklif etti.",
+          "🪙 Altın sikke"
+        ],
+        [
+          "Kuşbilimci Dorien Kuşları Gönderiyor",
+          "Müze için on doldurulmuş kuş. İçlerinden biri, bir kuşun olması gerekenden daha ağır.",
+          "🐦 Doldurulmuş martı"
+        ],
+        [
+          "Yük Listesi",
+          "Yük listesindeki her şey tutuyordu. Ağırlık hariç.",
+          "⚖️ Baskül"
+        ],
+        [
+          "Kılavuz Kees Tekneye Kılavuzluk Ediyor",
+          "Her zamanki gibi tekneyi kayaların arasından geçirdi. Bu kez bir saat fazla sürdü.",
+          "🧭 Pusula"
+        ]
+      ]
+    ],
+    "vuurtoren-6": [
+      "Bölüm VI · Kuş Göçü",
+      "Binlerce göçmen kuş güneye giderken adada dinleniyor. Kuşbilimci Dorien onları kayalıktan sayıyor ve herkes yardım ediyor. Ama herkes kuşlara bakmıyor.",
+      "Kuşlar güneye doğru yola devam ediyor. Saha defterindeki sayım yeniden tutuyor.",
+      "Kayalıkta herkes birbirine değil, yukarı bakar. İfadeler cimrileşiyor: kalemi kullan, olamayacak kareleri ele ve geriye ne kaldığına bak.",
+      [
+        [
+          "Bin Kanat",
+          "Gün doğarken kayalık kuşlarla doluydu. Bir yer boş kaldı, sanki orada biri yatmış gibi.",
+          "🪶 Martı tüyü"
+        ],
+        [
+          "Kuşbilimci Dorien Gözlem Yapıyor",
+          "Dürbünü bütün sabah kayıkhaneye çevriliydi. Orada hiç kuş yuva yapmaz.",
+          "🔭 Dürbün"
+        ],
+        [
+          "Boş Yuva",
+          "Kayalıktaki yuva, kasımda olması gerektiği gibi boştu. Bir anahtar hariç.",
+          "🪺 Kuş yuvası"
+        ],
+        [
+          "Bekçi Yardımcısı Jonas Yumurta Arıyor",
+          "Martı yumurtası için kayalıktan aşağı indiğini söylüyor. Kasımda.",
+          "🧗 Tırmanma ipi"
+        ],
+        [
+          "Posta Güvercini",
+          "Göçmen kuşların arasında bir güvercin vardı. Güneye değil, karaya uçtu.",
+          "🕊️ Posta güvercini"
+        ],
+        [
+          "Balıkçı Bartel Martıları Besliyor",
+          "Her sabah martılara balık artığı atar. Bu sabah denize başka bir şey attı.",
+          "🐟 Balık kovası"
+        ],
+        [
+          "Kazazede Lev Kuşları Tanıyor",
+          "Gemici olduğunu söylüyor. Her kuşu Latince adıyla biliyor.",
+          "📚 Kuş kitabı"
+        ],
+        [
+          "Dinlenmeyen Biri",
+          "Binlerce kuş adada uyudu. Kuş gözlemcilerinden biri bütün gece elinde bir lambayla kumsalda yürüdü.",
+          "🥾 Kumlu çizmeler"
+        ]
+      ]
+    ],
+    "vuurtoren-7": [
+      "Bölüm VII · Kış Fırtınası",
+      "Yirmi yılın en şiddetli fırtınası. Dalgalar kayalığın üstünden aşıyor ve adanın karayla bağlantısı üç hafta boyunca kesik.",
+      "Fırtına diniyor ve telgraf yeniden tıkırdıyor. Üç hafta içeride kalan, artık içeride kalmıyor.",
+      "Tahta büyüyor, ada küçülüyor. Rapora göre bir alan boşsa, o alanın tamamı herkes için elenir.",
+      [
+        [
+          "Üç Hafta İçeride",
+          "Sekiz kişi, tek bir ev, üç hafta. On ikinci gün artık kimse konuşmuyordu.",
+          "🪵 Odun"
+        ],
+        [
+          "Kablo",
+          "Fırtınanın ilk günü karaya giden kablo koptu. Bir kablo bu kadar düzgün kopmaz.",
+          "🔌 Telgraf kablosu"
+        ],
+        [
+          "Kâhya Martha Çorba Dağıtıyor",
+          "Her akşam sekiz kâse çorba. Dokuz kâse boş geri döndü.",
+          "🥣 Çorba kâsesi"
+        ],
+        [
+          "Mahzeni Su Basıyor",
+          "Mahzende su dizlere kadar yükseldi. Her şey yüzüyordu, bir sandık hariç.",
+          "⚓ Kurşun sandık"
+        ],
+        [
+          "Öğretmen Wilma Ders Veriyor",
+          "Diktesi batan bir gemi hakkındaydı. Kazazede Lev geminin adını düzeltti.",
+          "📝 Dikte"
+        ],
+        [
+          "Kılavuz Kees ve Kayıp Düğme",
+          "Ceketinin bakır düğmelerinden biri eksik. Düğme ilk geceden beri fener odasında duruyordu.",
+          "🟡 Bakır düğme"
+        ],
+        [
+          "Bekçi Yardımcısı Jonas Işığı Yakıyor",
+          "Üç hafta boyunca ışığı tek başına yaktı. Gazyağının yalnızca yarısını kullandı.",
+          "🪔 Lamba fitili"
+        ],
+        [
+          "Balıkçı Bartel Hatırlıyor",
+          "Böyle bir fırtınayı daha önce yalnızca bir kez görmüştü, yirmi yıl önce. O zaman da ışık sönmüştü.",
+          "📰 Eski gazete"
+        ]
+      ]
+    ],
+    "vuurtoren-8": [
+      "Bölüm VIII · Son Işık",
+      "Karadan yeni bir fener bekçisi geliyor. Dönen ışığın altında bir gece daha, fırtınanın ilk gecesindeki yüzlerle.",
+      "Van Dam erzak teknesine biniyor, şapkasına dokunuyor ve bir daha arkasına bakmıyor. Işık yeniden dönüyor. Her gemici onu görüyor ve kimin söndürdüğünü sen biliyorsun.",
+      "Son vakalar, neredeyse hepsi büyük tahtada. En zor olana takılıp kalma: önce diğerlerini yerleştir, sonuncuya çoğu zaman tek bir kare kalır.",
+      [
+        [
+          "Yeni Bekçi",
+          "Tekneyle geldi ve hemen yukarı çıktı. Yolu zaten biliyordu.",
+          "🧳 Bavul"
+        ],
+        [
+          "Kâhya Martha Bavulunu Topluyor",
+          "Yirmi yıl boyunca bekçiye yemek pişirdi. Bavulunda bekçinin alyansı var.",
+          "💍 Alyans"
+        ],
+        [
+          "Telgrafçı Fien Son Telgrafı Çekiyor",
+          "Karaya gönderdiği son mesaj: her şey yolunda. İki kez gönderdi, ikincisini başka bir şifreyle.",
+          "🔤 Mors alfabesi"
+        ],
+        [
+          "Kazazede Lev Adını Söylüyor",
+          "İki ay sonra adının ne olduğunu söylüyor. Geminin adıyla aynı.",
+          "🏷️ Ad levhası"
+        ],
+        [
+          "Kuşbilimci Dorien Yola Çıkıyor",
+          "Müze için dört bin kuş saydı. Yanında dört bin bir kuş götürüyor.",
+          "🗃️ Kuş sandığı"
+        ],
+        [
+          "Bekçi Yardımcısı Jonas Bekçi Olamıyor",
+          "Üç yıl boyunca bekçiye yardım etti. Başka birini seçtiler ve o bunu bir aydır biliyordu.",
+          "📜 Atama yazısı"
+        ],
+        [
+          "Öğretmen Wilma Kalıyor",
+          "Herkes tekneyle gidiyor. O okul için kalıyor, oysa okul bir aydır kapalı.",
+          "🔔 Okul zili"
+        ],
+        [
+          "Son Işık",
+          "Her şey fener odasında başladı. Yine orada bitiyor.",
+          "🔆 Fresnel merceği"
+        ]
+      ]
     ]
   },
 
@@ -7446,6 +9226,446 @@
           "In": "Salonda",
           "WasI": "Salondaydım"
         }
+      },
+      "filmstudio": {
+        "Studiohal": {
+          "the": "plato",
+          "in": "platoda",
+          "gen": "platonun",
+          "was": "platodaydı",
+          "wasI": "platodaydım",
+          "In": "Platoda",
+          "WasI": "Platodaydım"
+        },
+        "Montagekamer": {
+          "the": "montaj odası",
+          "in": "montaj odasında",
+          "gen": "montaj odasının",
+          "was": "montaj odasındaydı",
+          "wasI": "montaj odasındaydım",
+          "In": "Montaj odasında",
+          "WasI": "Montaj odasındaydım"
+        },
+        "Kleedkamer": {
+          "the": "makyaj odası",
+          "in": "makyaj odasında",
+          "gen": "makyaj odasının",
+          "was": "makyaj odasındaydı",
+          "wasI": "makyaj odasındaydım",
+          "In": "Makyaj odasında",
+          "WasI": "Makyaj odasındaydım"
+        },
+        "Kantine": {
+          "the": "kantin",
+          "in": "kantinde",
+          "gen": "kantinin",
+          "was": "kantindeydi",
+          "wasI": "kantindeydim",
+          "In": "Kantinde",
+          "WasI": "Kantindeydim"
+        },
+        "Rekwisietenkamer": {
+          "the": "aksesuar odası",
+          "in": "aksesuar odasında",
+          "gen": "aksesuar odasının",
+          "was": "aksesuar odasındaydı",
+          "wasI": "aksesuar odasındaydım",
+          "In": "Aksesuar odasında",
+          "WasI": "Aksesuar odasındaydım"
+        },
+        "Projectiezaal": {
+          "the": "sinema salonu",
+          "in": "sinema salonunda",
+          "gen": "sinema salonunun",
+          "was": "sinema salonundaydı",
+          "wasI": "sinema salonundaydım",
+          "In": "Sinema salonunda",
+          "WasI": "Sinema salonundaydım"
+        },
+        "Werkplaats": {
+          "the": "atölye",
+          "in": "atölyede",
+          "gen": "atölyenin",
+          "was": "atölyedeydi",
+          "wasI": "atölyedeydim",
+          "In": "Atölyede",
+          "WasI": "Atölyedeydim"
+        },
+        "Directiekamer": {
+          "the": "direktörlük",
+          "in": "direktörlükte",
+          "gen": "direktörlüğün",
+          "was": "direktörlükteydi",
+          "wasI": "direktörlükteydim",
+          "In": "Direktörlükte",
+          "WasI": "Direktörlükteydim"
+        },
+        "Geluidsstudio": {
+          "the": "ses kabini",
+          "in": "ses kabininde",
+          "gen": "ses kabininin",
+          "was": "ses kabinindeydi",
+          "wasI": "ses kabinindeydim",
+          "In": "Ses kabininde",
+          "WasI": "Ses kabinindeydim"
+        },
+        "Archief": {
+          "the": "arşiv",
+          "in": "arşivde",
+          "gen": "arşivin",
+          "was": "arşivdeydi",
+          "wasI": "arşivdeydim",
+          "In": "Arşivde",
+          "WasI": "Arşivdeydim"
+        },
+        "Buitenset": {
+          "the": "dış set",
+          "in": "dış sette",
+          "gen": "dış setin",
+          "was": "dış setteydi",
+          "wasI": "dış setteydim",
+          "In": "Dış sette",
+          "WasI": "Dış setteydim"
+        },
+        "Poort": {
+          "the": "ana kapı alanı",
+          "in": "ana kapıda",
+          "gen": "ana kapının",
+          "was": "ana kapıdaydı",
+          "wasI": "ana kapıdaydım",
+          "In": "Ana kapıda",
+          "WasI": "Ana kapıdaydım"
+        }
+      },
+      "karavaan": {
+        "Binnenplaats": {
+          "the": "avlu",
+          "in": "avluda",
+          "gen": "avlunun",
+          "was": "avludaydı",
+          "wasI": "avludaydım",
+          "In": "Avluda",
+          "WasI": "Avludaydım"
+        },
+        "Bazaar": {
+          "the": "çarşı",
+          "in": "çarşıda",
+          "gen": "çarşının",
+          "was": "çarşıdaydı",
+          "wasI": "çarşıdaydım",
+          "In": "Çarşıda",
+          "WasI": "Çarşıdaydım"
+        },
+        "Theehuis": {
+          "the": "çayhane",
+          "in": "çayhanede",
+          "gen": "çayhanenin",
+          "was": "çayhanedeydi",
+          "wasI": "çayhanedeydim",
+          "In": "Çayhanede",
+          "WasI": "Çayhanedeydim"
+        },
+        "Badhuis": {
+          "the": "hamam",
+          "in": "hamamda",
+          "gen": "hamamın",
+          "was": "hamamdaydı",
+          "wasI": "hamamdaydım",
+          "In": "Hamamda",
+          "WasI": "Hamamdaydım"
+        },
+        "Waterput": {
+          "the": "kuyu alanı",
+          "in": "kuyu alanında",
+          "gen": "kuyu alanının",
+          "was": "kuyu alanındaydı",
+          "wasI": "kuyu alanındaydım",
+          "In": "Kuyu alanında",
+          "WasI": "Kuyu alanındaydım"
+        },
+        "Gastenkamer": {
+          "the": "konuk odası",
+          "in": "konuk odasında",
+          "gen": "konuk odasının",
+          "was": "konuk odasındaydı",
+          "wasI": "konuk odasındaydım",
+          "In": "Konuk odasında",
+          "WasI": "Konuk odasındaydım"
+        },
+        "Tapijtwinkel": {
+          "the": "halı dükkânı",
+          "in": "halı dükkânında",
+          "gen": "halı dükkânının",
+          "was": "halı dükkânındaydı",
+          "wasI": "halı dükkânındaydım",
+          "In": "Halı dükkânında",
+          "WasI": "Halı dükkânındaydım"
+        },
+        "Poort": {
+          "the": "büyük kapı alanı",
+          "in": "büyük kapıda",
+          "gen": "büyük kapının",
+          "was": "büyük kapıdaydı",
+          "wasI": "büyük kapıdaydım",
+          "In": "Büyük kapıda",
+          "WasI": "Büyük kapıdaydım"
+        },
+        "Dakterras": {
+          "the": "çatı terası",
+          "in": "çatı terasında",
+          "gen": "çatı terasının",
+          "was": "çatı terasındaydı",
+          "wasI": "çatı terasındaydım",
+          "In": "Çatı terasında",
+          "WasI": "Çatı terasındaydım"
+        },
+        "Stal": {
+          "the": "ahır",
+          "in": "ahırda",
+          "gen": "ahırın",
+          "was": "ahırdaydı",
+          "wasI": "ahırdaydım",
+          "In": "Ahırda",
+          "WasI": "Ahırdaydım"
+        },
+        "Keuken": {
+          "the": "mutfak",
+          "in": "mutfakta",
+          "gen": "mutfağın",
+          "was": "mutfaktaydı",
+          "wasI": "mutfaktaydım",
+          "In": "Mutfakta",
+          "WasI": "Mutfaktaydım"
+        },
+        "Voorraadkamer": {
+          "the": "kiler",
+          "in": "kilerde",
+          "gen": "kilerin",
+          "was": "kilerdeydi",
+          "wasI": "kilerdeydim",
+          "In": "Kilerde",
+          "WasI": "Kilerdeydim"
+        }
+      },
+      "abdij": {
+        "Scriptorium": {
+          "the": "yazı odası",
+          "in": "yazı odasında",
+          "gen": "yazı odasının",
+          "was": "yazı odasındaydı",
+          "wasI": "yazı odasındaydım",
+          "In": "Yazı odasında",
+          "WasI": "Yazı odasındaydım"
+        },
+        "Kapel": {
+          "the": "şapel",
+          "in": "şapelde",
+          "gen": "şapelin",
+          "was": "şapeldeydi",
+          "wasI": "şapeldeydim",
+          "In": "Şapelde",
+          "WasI": "Şapeldeydim"
+        },
+        "Kruidentuin": {
+          "the": "ot bahçesi",
+          "in": "ot bahçesinde",
+          "gen": "ot bahçesinin",
+          "was": "ot bahçesindeydi",
+          "wasI": "ot bahçesindeydim",
+          "In": "Ot bahçesinde",
+          "WasI": "Ot bahçesindeydim"
+        },
+        "Bibliotheek": {
+          "the": "kütüphane",
+          "in": "kütüphanede",
+          "gen": "kütüphanenin",
+          "was": "kütüphanedeydi",
+          "wasI": "kütüphanedeydim",
+          "In": "Kütüphanede",
+          "WasI": "Kütüphanedeydim"
+        },
+        "Refter": {
+          "the": "yemekhane",
+          "in": "yemekhanede",
+          "gen": "yemekhanenin",
+          "was": "yemekhanedeydi",
+          "wasI": "yemekhanedeydim",
+          "In": "Yemekhanede",
+          "WasI": "Yemekhanedeydim"
+        },
+        "Slaapzaal": {
+          "the": "yatakhane",
+          "in": "yatakhanede",
+          "gen": "yatakhanenin",
+          "was": "yatakhanedeydi",
+          "wasI": "yatakhanedeydim",
+          "In": "Yatakhanede",
+          "WasI": "Yatakhanedeydim"
+        },
+        "Kloostergang": {
+          "the": "revaklı avlu",
+          "in": "revaklı avluda",
+          "gen": "revaklı avlunun",
+          "was": "revaklı avludaydı",
+          "wasI": "revaklı avludaydım",
+          "In": "Revaklı avluda",
+          "WasI": "Revaklı avludaydım"
+        },
+        "Kelder": {
+          "the": "mahzen",
+          "in": "mahzende",
+          "gen": "mahzenin",
+          "was": "mahzendeydi",
+          "wasI": "mahzendeydim",
+          "In": "Mahzende",
+          "WasI": "Mahzendeydim"
+        },
+        "Keuken": {
+          "the": "mutfak",
+          "in": "mutfakta",
+          "gen": "mutfağın",
+          "was": "mutfaktaydı",
+          "wasI": "mutfaktaydım",
+          "In": "Mutfakta",
+          "WasI": "Mutfaktaydım"
+        },
+        "Klokkentoren": {
+          "the": "çan kulesi",
+          "in": "çan kulesinde",
+          "gen": "çan kulesinin",
+          "was": "çan kulesindeydi",
+          "wasI": "çan kulesindeydim",
+          "In": "Çan kulesinde",
+          "WasI": "Çan kulesindeydim"
+        },
+        "Ziekenboeg": {
+          "the": "revir",
+          "in": "revirde",
+          "gen": "revirin",
+          "was": "revirdeydi",
+          "wasI": "revirdeydim",
+          "In": "Revirde",
+          "WasI": "Revirdeydim"
+        },
+        "Bakkerij": {
+          "the": "fırın odası",
+          "in": "fırın odasında",
+          "gen": "fırın odasının",
+          "was": "fırın odasındaydı",
+          "wasI": "fırın odasındaydım",
+          "In": "Fırın odasında",
+          "WasI": "Fırın odasındaydım"
+        }
+      },
+      "vuurtoren": {
+        "Lantaarnkamer": {
+          "the": "fener odası",
+          "in": "fener odasında",
+          "gen": "fener odasının",
+          "was": "fener odasındaydı",
+          "wasI": "fener odasındaydım",
+          "In": "Fener odasında",
+          "WasI": "Fener odasındaydım"
+        },
+        "Wenteltrap": {
+          "the": "merdiven",
+          "in": "merdivende",
+          "gen": "merdivenin",
+          "was": "merdivendeydi",
+          "wasI": "merdivendeydim",
+          "In": "Merdivende",
+          "WasI": "Merdivendeydim"
+        },
+        "Wachtershuis": {
+          "the": "bekçi evi",
+          "in": "bekçi evinde",
+          "gen": "bekçi evinin",
+          "was": "bekçi evindeydi",
+          "wasI": "bekçi evindeydim",
+          "In": "Bekçi evinde",
+          "WasI": "Bekçi evindeydim"
+        },
+        "Steiger": {
+          "the": "iskele",
+          "in": "iskelede",
+          "gen": "iskelenin",
+          "was": "iskeledeydi",
+          "wasI": "iskeledeydim",
+          "In": "İskelede",
+          "WasI": "İskeledeydim"
+        },
+        "Botenhuis": {
+          "the": "kayıkhane",
+          "in": "kayıkhanede",
+          "gen": "kayıkhanenin",
+          "was": "kayıkhanedeydi",
+          "wasI": "kayıkhanedeydim",
+          "In": "Kayıkhanede",
+          "WasI": "Kayıkhanedeydim"
+        },
+        "Seinkamer": {
+          "the": "telgrafhane",
+          "in": "telgrafhanede",
+          "gen": "telgrafhanenin",
+          "was": "telgrafhanedeydi",
+          "wasI": "telgrafhanedeydim",
+          "In": "Telgrafhanede",
+          "WasI": "Telgrafhanedeydim"
+        },
+        "Klif": {
+          "the": "kayalık",
+          "in": "kayalıkta",
+          "gen": "kayalığın",
+          "was": "kayalıktaydı",
+          "wasI": "kayalıktaydım",
+          "In": "Kayalıkta",
+          "WasI": "Kayalıktaydım"
+        },
+        "Strand": {
+          "the": "kumsal",
+          "in": "kumsalda",
+          "gen": "kumsalın",
+          "was": "kumsaldaydı",
+          "wasI": "kumsaldaydım",
+          "In": "Kumsalda",
+          "WasI": "Kumsaldaydım"
+        },
+        "Keuken": {
+          "the": "mutfak",
+          "in": "mutfakta",
+          "gen": "mutfağın",
+          "was": "mutfaktaydı",
+          "wasI": "mutfaktaydım",
+          "In": "Mutfakta",
+          "WasI": "Mutfaktaydım"
+        },
+        "Kelder": {
+          "the": "mahzen",
+          "in": "mahzende",
+          "gen": "mahzenin",
+          "was": "mahzendeydi",
+          "wasI": "mahzendeydim",
+          "In": "Mahzende",
+          "WasI": "Mahzendeydim"
+        },
+        "Werkplaats": {
+          "the": "atölye",
+          "in": "atölyede",
+          "gen": "atölyenin",
+          "was": "atölyedeydi",
+          "wasI": "atölyedeydim",
+          "In": "Atölyede",
+          "WasI": "Atölyedeydim"
+        },
+        "Voorraadkamer": {
+          "the": "kiler",
+          "in": "kilerde",
+          "gen": "kilerin",
+          "was": "kilerdeydi",
+          "wasI": "kilerdeydim",
+          "In": "Kilerde",
+          "WasI": "Kilerdeydim"
+        }
       }
     },
     "furniture": {
@@ -7928,6 +10148,166 @@
         "bare": "kokteyl karıştırıcısı",
         "next": "bir kokteyl karıştırıcısının yanında",
         "with": "kokteyl karıştırıcılı"
+      },
+      "filmcamera": {
+        "a": "bir film kamerası",
+        "gen": "bir film kamerasının",
+        "Gen": "Bir film kamerasının",
+        "bare": "film kamerası",
+        "next": "bir film kamerasının yanında",
+        "with": "film kameralı"
+      },
+      "schijnwerper": {
+        "a": "bir projektör",
+        "gen": "bir projektörün",
+        "Gen": "Bir projektörün",
+        "bare": "projektör",
+        "next": "bir projektörün yanında",
+        "with": "projektörlü"
+      },
+      "regiestoel": {
+        "a": "bir yönetmen sandalyesi",
+        "gen": "bir yönetmen sandalyesinin",
+        "Gen": "Bir yönetmen sandalyesinin",
+        "bare": "yönetmen sandalyesi",
+        "next": "bir yönetmen sandalyesinin yanında",
+        "with": "yönetmen sandalyeli"
+      },
+      "klapbord": {
+        "a": "bir klaket",
+        "gen": "bir klaketin",
+        "Gen": "Bir klaketin",
+        "bare": "klaket",
+        "next": "bir klaketin yanında",
+        "with": "klaketli"
+      },
+      "filmspoel": {
+        "a": "bir film makarası",
+        "gen": "bir film makarasının",
+        "Gen": "Bir film makarasının",
+        "bare": "film makarası",
+        "next": "bir film makarasının yanında",
+        "with": "film makaralı"
+      },
+      "tapijt": {
+        "a": "bir halı",
+        "gen": "bir halının",
+        "Gen": "Bir halının",
+        "bare": "halı",
+        "next": "bir halının yanında",
+        "with": "halılı"
+      },
+      "specerijen": {
+        "a": "bir baharat sepeti",
+        "gen": "bir baharat sepetinin",
+        "Gen": "Bir baharat sepetinin",
+        "bare": "baharat sepeti",
+        "next": "bir baharat sepetinin yanında",
+        "with": "baharat sepetli"
+      },
+      "kruik": {
+        "a": "bir su testisi",
+        "gen": "bir su testisinin",
+        "Gen": "Bir su testisinin",
+        "bare": "su testisi",
+        "next": "bir su testisinin yanında",
+        "with": "su testili"
+      },
+      "zadel": {
+        "a": "bir deve eyeri",
+        "gen": "bir deve eyerinin",
+        "Gen": "Bir deve eyerinin",
+        "bare": "deve eyeri",
+        "next": "bir deve eyerinin yanında",
+        "with": "deve eyerli"
+      },
+      "weegschaal": {
+        "a": "bir bakır terazi",
+        "gen": "bir bakır terazinin",
+        "Gen": "Bir bakır terazinin",
+        "bare": "bakır terazi",
+        "next": "bir bakır terazinin yanında",
+        "with": "bakır terazili"
+      },
+      "lessenaar": {
+        "a": "bir yazı masası",
+        "gen": "bir yazı masasının",
+        "Gen": "Bir yazı masasının",
+        "bare": "yazı masası",
+        "next": "bir yazı masasının yanında",
+        "with": "yazı masalı"
+      },
+      "kandelaar": {
+        "a": "bir şamdan",
+        "gen": "bir şamdanın",
+        "Gen": "Bir şamdanın",
+        "bare": "şamdan",
+        "next": "bir şamdanın yanında",
+        "with": "şamdanlı"
+      },
+      "bijenkorf": {
+        "a": "bir arı kovanı",
+        "gen": "bir arı kovanının",
+        "Gen": "Bir arı kovanının",
+        "bare": "arı kovanı",
+        "next": "bir arı kovanının yanında",
+        "with": "arı kovanlı"
+      },
+      "vijzel": {
+        "a": "bir taş havan",
+        "gen": "bir taş havanın",
+        "Gen": "Bir taş havanın",
+        "bare": "taş havan",
+        "next": "bir taş havanın yanında",
+        "with": "taş havanlı"
+      },
+      "zandloper": {
+        "a": "bir kum saati",
+        "gen": "bir kum saatinin",
+        "Gen": "Bir kum saatinin",
+        "bare": "kum saati",
+        "next": "bir kum saatinin yanında",
+        "with": "kum saatli"
+      },
+      "boei": {
+        "a": "bir can simidi",
+        "gen": "bir can simidinin",
+        "Gen": "Bir can simidinin",
+        "bare": "can simidi",
+        "next": "bir can simidinin yanında",
+        "with": "can simitli"
+      },
+      "fuik": {
+        "a": "bir ıstakoz kapanı",
+        "gen": "bir ıstakoz kapanının",
+        "Gen": "Bir ıstakoz kapanının",
+        "bare": "ıstakoz kapanı",
+        "next": "bir ıstakoz kapanının yanında",
+        "with": "ıstakoz kapanlı"
+      },
+      "misthoorn": {
+        "a": "bir sis düdüğü",
+        "gen": "bir sis düdüğünün",
+        "Gen": "Bir sis düdüğünün",
+        "bare": "sis düdüğü",
+        "next": "bir sis düdüğünün yanında",
+        "with": "sis düdüklü"
+      },
+      "stormlamp": {
+        "a": "bir gemici feneri",
+        "gen": "bir gemici fenerinin",
+        "Gen": "Bir gemici fenerinin",
+        "bare": "gemici feneri",
+        "next": "bir gemici fenerinin yanında",
+        "with": "gemici fenerli"
+      },
+      "verrekijker": {
+        "a": "bir teleskop",
+        "gen": "bir teleskobun",
+        "Gen": "Bir teleskobun",
+        "bare": "teleskop",
+        "next": "bir teleskobun yanında",
+        "with": "teleskoplu"
       }
     },
     "roomWords": {
@@ -8064,6 +10444,54 @@
         "wasThey": "alandaydılar"
       },
       "casino": {
+        "rw": "alan",
+        "rws": "alanlar",
+        "in": "alanda",
+        "gen": "alanın",
+        "acc": "alanı",
+        "dat": "alana",
+        "pluralIn": "alanlarda",
+        "was": "alandaydı",
+        "wasI": "alandaydım",
+        "wasThey": "alandaydılar"
+      },
+      "filmstudio": {
+        "rw": "alan",
+        "rws": "alanlar",
+        "in": "alanda",
+        "gen": "alanın",
+        "acc": "alanı",
+        "dat": "alana",
+        "pluralIn": "alanlarda",
+        "was": "alandaydı",
+        "wasI": "alandaydım",
+        "wasThey": "alandaydılar"
+      },
+      "karavaan": {
+        "rw": "alan",
+        "rws": "alanlar",
+        "in": "alanda",
+        "gen": "alanın",
+        "acc": "alanı",
+        "dat": "alana",
+        "pluralIn": "alanlarda",
+        "was": "alandaydı",
+        "wasI": "alandaydım",
+        "wasThey": "alandaydılar"
+      },
+      "abdij": {
+        "rw": "alan",
+        "rws": "alanlar",
+        "in": "alanda",
+        "gen": "alanın",
+        "acc": "alanı",
+        "dat": "alana",
+        "pluralIn": "alanlarda",
+        "was": "alandaydı",
+        "wasI": "alandaydım",
+        "wasThey": "alandaydılar"
+      },
+      "vuurtoren": {
         "rw": "alan",
         "rws": "alanlar",
         "in": "alanda",

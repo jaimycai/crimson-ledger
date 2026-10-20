@@ -1155,6 +1155,250 @@
           "Gokker Jack": "con bạc Jack",
           "Huisdetective Nora": "thám tử sòng bạc Nora"
         }
+      },
+      "filmstudio": {
+        "title": "Hãng phim Paradise",
+        "short": "Hãng phim",
+        "victimName": "Chủ hãng phim Samuel Gold",
+        "roomWord": "khu vực",
+        "roomWordPlural": "khu vực",
+        "tagline": "Hollywood, 1931. Bộ phim nói đầu tiên của hãng, và một ông chủ không qua khỏi cảnh quay cuối cùng.",
+        "intro": "Hãng phim Paradise, Hollywood, 1931. Hãng đang quay bộ phim nói đầu tiên của mình. Sau cảnh quay cuối cùng trong ngày, ông chủ hãng phim Samuel Gold nằm trong phòng chiếu, trong khi phim vẫn đang chạy.",
+        "outro": "Đèn đã tắt và phim đã đóng máy. Cuối cùng thì cái kết cũng hợp lý.",
+        "rooms": {
+          "Studiohal": "Trường quay",
+          "Montagekamer": "Phòng dựng",
+          "Kleedkamer": "Phòng thay đồ",
+          "Kantine": "Căng tin",
+          "Rekwisietenkamer": "Phòng đạo cụ",
+          "Projectiezaal": "Phòng chiếu",
+          "Werkplaats": "Xưởng",
+          "Directiekamer": "Phòng giám đốc",
+          "Geluidsstudio": "Phòng thu âm",
+          "Archief": "Kho phim",
+          "Buitenset": "Bãi ngoại cảnh",
+          "Poort": "Cổng"
+        },
+        "furniture": {
+          "filmcamera": "máy quay phim",
+          "schijnwerper": "đèn rọi",
+          "regiestoel": "ghế đạo diễn",
+          "klapbord": "bảng clapper",
+          "filmspoel": "cuộn phim"
+        },
+        "suspects": {
+          "Filmster Vivian": "Minh tinh Vivian",
+          "Regisseur Baxter": "Đạo diễn Baxter",
+          "Schrijfster Peggy": "Biên kịch Peggy",
+          "Stuntman Hank": "Người đóng thế Hank",
+          "Cameraman Lenny": "Người quay phim Lenny",
+          "Grimeuse Rita": "Thợ trang điểm Rita",
+          "Agent Sid": "Người đại diện Sid",
+          "Starlet Joy": "Diễn viên trẻ Joy"
+        },
+        "suspectShort": {
+          "Filmster Vivian": "Vivian",
+          "Regisseur Baxter": "Baxter",
+          "Schrijfster Peggy": "Peggy",
+          "Stuntman Hank": "Hank",
+          "Cameraman Lenny": "Lenny",
+          "Grimeuse Rita": "Rita",
+          "Agent Sid": "Sid",
+          "Starlet Joy": "Joy"
+        },
+        "suspectRef": {
+          "Filmster Vivian": "minh tinh Vivian",
+          "Regisseur Baxter": "đạo diễn Baxter",
+          "Schrijfster Peggy": "biên kịch Peggy",
+          "Stuntman Hank": "người đóng thế Hank",
+          "Cameraman Lenny": "người quay phim Lenny",
+          "Grimeuse Rita": "thợ trang điểm Rita",
+          "Agent Sid": "người đại diện Sid",
+          "Starlet Joy": "diễn viên trẻ Joy"
+        }
+      },
+      "karavaan": {
+        "title": "Lữ quán Al-Nour",
+        "short": "Lữ quán",
+        "victimName": "Trưởng đoàn Idris",
+        "roomWord": "khu vực",
+        "roomWordPlural": "khu vực",
+        "tagline": "Một ốc đảo trên con đường gia vị xưa. Mười hai con lạc đà, tám lữ khách, và một trưởng đoàn không bao giờ lên đường nữa.",
+        "intro": "Lữ quán Al-Nour, một ốc đảo trên con đường gia vị xưa. Đoàn lữ hành nghỉ lại một đêm trong vòng tường. Lúc bình minh, trưởng đoàn Idris nằm bên bầy lạc đà, và cổng đã đóng suốt đêm.",
+        "outro": "Đoàn lữ hành lại lên đường. Sau cánh cổng, bớt đi một bí mật.",
+        "rooms": {
+          "Binnenplaats": "Sân trong",
+          "Bazaar": "Khu chợ",
+          "Theehuis": "Quán trà",
+          "Badhuis": "Nhà tắm hơi",
+          "Waterput": "Giếng nước",
+          "Gastenkamer": "Phòng nghỉ",
+          "Tapijtwinkel": "Tiệm thảm",
+          "Poort": "Cổng",
+          "Dakterras": "Sân thượng",
+          "Stal": "Chuồng lạc đà",
+          "Keuken": "Nhà bếp",
+          "Voorraadkamer": "Kho dự trữ"
+        },
+        "furniture": {
+          "tapijt": "tấm thảm",
+          "specerijen": "giỏ gia vị",
+          "kruik": "vò nước",
+          "zadel": "yên lạc đà",
+          "weegschaal": "cân đồng"
+        },
+        "suspects": {
+          "Koopvrouw Layla": "Thương nhân Layla",
+          "Gids Tariq": "Người dẫn đường Tariq",
+          "Tapijthandelaar Yusuf": "Người bán thảm Yusuf",
+          "Reizigster Beatrix": "Lữ khách Beatrix",
+          "Theeschenker Hamid": "Người rót trà Hamid",
+          "Sterrenkijker Zahra": "Nhà thiên văn Zahra",
+          "Bewaker Karim": "Lính gác Karim",
+          "Dichteres Samira": "Nhà thơ Samira"
+        },
+        "suspectShort": {
+          "Koopvrouw Layla": "Layla",
+          "Gids Tariq": "Tariq",
+          "Tapijthandelaar Yusuf": "Yusuf",
+          "Reizigster Beatrix": "Beatrix",
+          "Theeschenker Hamid": "Hamid",
+          "Sterrenkijker Zahra": "Zahra",
+          "Bewaker Karim": "Karim",
+          "Dichteres Samira": "Samira"
+        },
+        "suspectRef": {
+          "Koopvrouw Layla": "thương nhân Layla",
+          "Gids Tariq": "người dẫn đường Tariq",
+          "Tapijthandelaar Yusuf": "người bán thảm Yusuf",
+          "Reizigster Beatrix": "lữ khách Beatrix",
+          "Theeschenker Hamid": "người rót trà Hamid",
+          "Sterrenkijker Zahra": "nhà thiên văn Zahra",
+          "Bewaker Karim": "lính gác Karim",
+          "Dichteres Samira": "nhà thơ Samira"
+        }
+      },
+      "abdij": {
+        "title": "Tu viện Thánh Aldric",
+        "short": "Tu viện",
+        "victimName": "Tu viện trưởng Bertram",
+        "roomWord": "khu vực",
+        "roomWordPlural": "khu vực",
+        "tagline": "Một tu viện trên núi, năm 1327. Một cuốn sách cấm, một thư viện khóa kín, và một tu viện trưởng không qua khỏi đêm ấy.",
+        "intro": "Tu viện Thánh Aldric, mùa đông năm 1327. Tuyết chặn kín đèo núi. Sau giờ kinh đêm, tu viện trưởng Bertram nằm trong phòng chép sách, ngón tay dính mực.",
+        "outro": "Chuông đổ báo giờ kinh chiều. Cuốn sách lại nằm trên giá.",
+        "rooms": {
+          "Scriptorium": "Phòng chép sách",
+          "Kapel": "Nhà nguyện",
+          "Kruidentuin": "Vườn thuốc",
+          "Bibliotheek": "Thư viện",
+          "Refter": "Nhà ăn",
+          "Slaapzaal": "Phòng ngủ",
+          "Kloostergang": "Hành lang",
+          "Kelder": "Tầng hầm",
+          "Keuken": "Nhà bếp",
+          "Klokkentoren": "Tháp chuông",
+          "Ziekenboeg": "Phòng y tế",
+          "Bakkerij": "Xưởng bánh"
+        },
+        "furniture": {
+          "lessenaar": "bàn viết",
+          "kandelaar": "chân nến",
+          "bijenkorf": "tổ ong",
+          "vijzel": "cối giã thuốc",
+          "zandloper": "đồng hồ cát"
+        },
+        "suspects": {
+          "Broeder Anselm": "Thầy Anselm",
+          "Broeder Cuthbert": "Thầy Cuthbert",
+          "Novice Elias": "Tập sinh Elias",
+          "Pelgrim Gisela": "Người hành hương Gisela",
+          "Kruidenvrouw Hilde": "Bà lang Hilde",
+          "Gravin Mathilde": "Nữ bá tước Mathilde",
+          "Verluchtster Odile": "Thợ minh họa Odile",
+          "Kelderbroeder Waldo": "Thầy quản kho Waldo"
+        },
+        "suspectShort": {
+          "Broeder Anselm": "Anselm",
+          "Broeder Cuthbert": "Cuthbert",
+          "Novice Elias": "Elias",
+          "Pelgrim Gisela": "Gisela",
+          "Kruidenvrouw Hilde": "Hilde",
+          "Gravin Mathilde": "Mathilde",
+          "Verluchtster Odile": "Odile",
+          "Kelderbroeder Waldo": "Waldo"
+        },
+        "suspectRef": {
+          "Broeder Anselm": "thầy Anselm",
+          "Broeder Cuthbert": "thầy Cuthbert",
+          "Novice Elias": "tập sinh Elias",
+          "Pelgrim Gisela": "người hành hương Gisela",
+          "Kruidenvrouw Hilde": "bà lang Hilde",
+          "Gravin Mathilde": "nữ bá tước Mathilde",
+          "Verluchtster Odile": "thợ minh họa Odile",
+          "Kelderbroeder Waldo": "thầy quản kho Waldo"
+        }
+      },
+      "vuurtoren": {
+        "title": "Hải đăng Greycape",
+        "short": "Hải đăng",
+        "victimName": "Người gác đèn Silas Mourne",
+        "roomWord": "khu vực",
+        "roomWordPlural": "khu vực",
+        "tagline": "1900. Một hòn đảo, một cơn bão kéo dài ba ngày, và một ngọn hải đăng lần đầu tiên tối đèn sau hai mươi năm.",
+        "intro": "Hải đăng Greycape, tháng 11 năm 1900. Một cơn bão cắt đứt hòn đảo khỏi đất liền. Lúc nửa đêm, ngọn đèn tắt. Trong phòng đèn trên đỉnh tháp, người gác đèn Silas Mourne nằm bất động.",
+        "outro": "Ngọn đèn lại quay. Thuyền trưởng nào cũng nhìn thấy nó, và bạn biết ai đã dập tắt nó.",
+        "rooms": {
+          "Lantaarnkamer": "Phòng đèn",
+          "Wenteltrap": "Thang xoắn",
+          "Wachtershuis": "Nhà gác đèn",
+          "Steiger": "Cầu tàu",
+          "Botenhuis": "Nhà thuyền",
+          "Seinkamer": "Phòng điện báo",
+          "Klif": "Vách đá",
+          "Strand": "Bãi biển",
+          "Keuken": "Nhà bếp",
+          "Kelder": "Tầng hầm",
+          "Werkplaats": "Xưởng",
+          "Voorraadkamer": "Kho dự trữ"
+        },
+        "furniture": {
+          "boei": "phao cứu sinh",
+          "fuik": "bẫy tôm hùm",
+          "misthoorn": "còi sương mù",
+          "stormlamp": "đèn bão",
+          "verrekijker": "kính viễn vọng"
+        },
+        "suspects": {
+          "Assistent Jonas": "Phụ tá Jonas",
+          "Huishoudster Martha": "Quản gia Martha",
+          "Visser Bartel": "Ngư dân Bartel",
+          "Loodsman Kees": "Hoa tiêu Kees",
+          "Vogelkundige Dorien": "Nhà điểu học Dorien",
+          "Schipbreukeling Lev": "Người đắm tàu Lev",
+          "Onderwijzeres Wilma": "Cô giáo Wilma",
+          "Telegrafiste Fien": "Điện báo viên Fien"
+        },
+        "suspectShort": {
+          "Assistent Jonas": "Jonas",
+          "Huishoudster Martha": "Martha",
+          "Visser Bartel": "Bartel",
+          "Loodsman Kees": "Kees",
+          "Vogelkundige Dorien": "Dorien",
+          "Schipbreukeling Lev": "Lev",
+          "Onderwijzeres Wilma": "Wilma",
+          "Telegrafiste Fien": "Fien"
+        },
+        "suspectRef": {
+          "Assistent Jonas": "phụ tá Jonas",
+          "Huishoudster Martha": "quản gia Martha",
+          "Visser Bartel": "ngư dân Bartel",
+          "Loodsman Kees": "hoa tiêu Kees",
+          "Vogelkundige Dorien": "nhà điểu học Dorien",
+          "Schipbreukeling Lev": "người đắm tàu Lev",
+          "Onderwijzeres Wilma": "cô giáo Wilma",
+          "Telegrafiste Fien": "điện báo viên Fien"
+        }
       }
     },
     "daily": [
@@ -1261,6 +1505,30 @@
         "Dồn hết vào số mười bảy",
         "Vòng đua Monaco",
         "Ván cuối cùng ở Azur"
+      ],
+      "filmstudio": [
+        "Bộ phim không ai được xem",
+        "Pha đóng thế thất bại",
+        "Giọng nói trong bản thu âm",
+        "Cảnh cuối của Gold"
+      ],
+      "karavaan": [
+        "Nghệ tây của Al-Nour",
+        "Đêm của nghìn vì sao",
+        "Tấm thảm hai hoa văn",
+        "Đoàn lữ hành cuối cùng"
+      ],
+      "abdij": [
+        "Cuốn sách không tên",
+        "Đêm chuông im tiếng",
+        "Cây thuốc không chữa lành",
+        "Tu viện trưởng cuối cùng ở Thánh Aldric"
+      ],
+      "vuurtoren": [
+        "Ngọn đèn đã tắt",
+        "Người đàn ông từ biển",
+        "Trang giấy từ sổ nhật ký",
+        "Đêm cuối cùng trên đảo Greycape"
       ]
     },
     "medals": {
@@ -1375,6 +1643,22 @@
       "casino": [
         "Nhà cái thua cuộc",
         "Hoàn thành mọi phần của Sòng bạc Azur"
+      ],
+      "filmstudio": [
+        "Phim đã hạ màn",
+        "Hoàn thành mọi phần của Hãng phim Paradise"
+      ],
+      "karavaan": [
+        "Đoàn lữ hành lên đường",
+        "Hoàn thành mọi phần của Lữ quán Al-Nour"
+      ],
+      "abdij": [
+        "Hồi chuông vang lên",
+        "Hoàn thành mọi phần của Tu viện Thánh Aldric"
+      ],
+      "vuurtoren": [
+        "Ngọn đèn lại sáng",
+        "Hoàn thành mọi phần của Hải đăng Greycape"
       ]
     },
     "quests": {
@@ -6083,6 +6367,1542 @@
           "♦️ Át rô"
         ]
       ]
+    ],
+    "filmstudio": [
+      "Phần I · Cảnh quay cuối cùng",
+      "Hãng phim Paradise, Hollywood, 1931. Hãng đang quay bộ phim nói đầu tiên của mình. Sau cảnh quay cuối cùng trong ngày, ông chủ hãng phim Samuel Gold nằm trong phòng chiếu, trong khi phim vẫn đang chạy.",
+      "Máy chiếu đã dừng và ông chủ hãng phim đã chết. Bộ phim thì còn lâu mới xong.",
+      "Cả hãng phim là một gian sảnh lớn với nhiều cánh cửa. Hãy bắt đầu với người nói rõ mình ở khu vực nào; “ngay cạnh” đèn rọi chỉ tính ô sát bên, không bao giờ tính ô chéo.",
+      [
+        [
+          "Cảnh quay cuối cùng",
+          "Lần quay thứ bốn mươi bảy rốt cuộc cũng đạt. Đó cũng là lần cuối.",
+          "🎬 Bảng clapper"
+        ],
+        [
+          "Phòng chiếu",
+          "Khi người ta tìm thấy ông chủ hãng phim, phim vẫn đang chạy. Ông đã không được xem đoạn kết.",
+          "📽️ Máy chiếu"
+        ],
+        [
+          "Đạo diễn Baxter hô cắt",
+          "Ông hô cắt suốt cả ngày. Lúc sáu giờ, ông không hô gì cả.",
+          "📣 Loa cầm tay"
+        ],
+        [
+          "Đèn rọi",
+          "Lúc sáu giờ, mọi ngọn đèn đều tắt. Một giờ sau, có một ngọn đèn vẫn còn ấm.",
+          "💡 Bóng đèn"
+        ],
+        [
+          "Minh tinh Vivian chờ đợi",
+          "Cô nói mình đang chờ quay cảnh cuối. Lớp trang điểm của cô thì đã tẩy từ trước.",
+          "💄 Son môi"
+        ],
+        [
+          "Cuộn phim",
+          "Trong máy chiếu là cuộn số ba. Cuộn số hai nằm trên sàn.",
+          "🎞️ Cuộn phim"
+        ],
+        [
+          "Người quay phim Lenny vẫn bấm máy",
+          "Máy quay của anh vẫn chạy thêm một phút sau lần quay cuối. Không ai yêu cầu cả.",
+          "🎥 Máy quay phim"
+        ],
+        [
+          "Sau sáu giờ",
+          "Lúc sáu giờ, cổng đóng lại. Lúc bảy giờ, cổng mở ra thêm một lần nữa.",
+          "🔑 Chìa khóa cổng"
+        ]
+      ]
+    ],
+    "filmstudio-2": [
+      "Phần II · Cuộn phim mất tích",
+      "Bản duy nhất của bộ phim mới đã biến mất. Hộp phim được cất trong kho phim, có khóa cẩn thận. Còn một tuần nữa là công chiếu.",
+      "Cuộn phim đã nằm lại trong hộp. Một cảnh đã bị cắt đi, và bạn biết ai đã cắt.",
+      "Ở hãng phim, ai cũng chỉ tay vào người khác. Lời khai về hai người: hãy xác định vị trí của một trong hai người trước.",
+      [
+        [
+          "Hộp phim trống",
+          "Trên hộp có ghi tên phim. Bên trong chẳng có gì.",
+          "🗃️ Hộp phim"
+        ],
+        [
+          "Người đại diện Sid gọi điện",
+          "Ông gọi để bàn về bộ phim. Chưa ai báo cho ông biết là phim đã mất.",
+          "☎️ Điện thoại"
+        ],
+        [
+          "Kho phim",
+          "Kho phim chỉ mở được bằng một chiếc chìa khóa. Nó treo trên một cây đinh trong phòng giám đốc.",
+          "🗝️ Chìa khóa kho phim"
+        ],
+        [
+          "Biên kịch Peggy viết lại",
+          "Cô viết lại đoạn kết lần thứ tư. Giờ trong đó có một vụ trộm.",
+          "⌨️ Máy đánh chữ"
+        ],
+        [
+          "Phòng dựng phim",
+          "Trên sàn có những mẩu phim vụn. Tất cả đều từ cùng một cảnh.",
+          "✂️ Kéo dựng phim"
+        ],
+        [
+          "Diễn viên trẻ Joy nhìn thấy gì đó",
+          "Cô thấy có người đi ngang, kẹp một chiếc hộp dưới nách. Cô tưởng trong đó là bánh quy.",
+          "🍪 Hộp bánh quy"
+        ],
+        [
+          "Người gác đêm",
+          "Người gác đêm đi tuần mỗi giờ một lần. Lúc ba giờ, ông bỏ qua một lượt.",
+          "🔦 Đèn pin"
+        ],
+        [
+          "Còn một tuần",
+          "Áp phích đã dán khắp thành phố. Bộ phim thì chẳng thấy đâu.",
+          "🖼️ Áp phích phim"
+        ]
+      ]
+    ],
+    "filmstudio-3": [
+      "Phần III · Cảnh đóng thế",
+      "Một cú nhảy từ mái quán rượu ở bãi ngoại cảnh, đã tập đến một trăm lần. Hôm nay thì hỏng. Người đóng thế Hank thề là có người đã động vào tấm đệm.",
+      "Tấm đệm đã về lại chỗ cũ và người đóng thế Hank đã đi lại được. Cú nhảy tiếp theo diễn ra suôn sẻ.",
+      "Khi quay cảnh đóng thế, ai cũng nhìn lên, không ai nhìn ai. Người nói mình KHÔNG ở đâu cũng cho bạn biết điều gì đó: hãy gạch bỏ khu vực đó ngay.",
+      [
+        [
+          "Tập một trăm lần",
+          "Một trăm cú nhảy, một trăm lần đều ổn. Lần thứ một trăm lẻ một thì không.",
+          "🪜 Thang"
+        ],
+        [
+          "Người đóng thế Hank ngã",
+          "Anh nhảy từ độ cao sáu mét. Tấm đệm thì nằm cách đó một mét.",
+          "🛏️ Đệm đỡ"
+        ],
+        [
+          "Mái quán rượu",
+          "Mái quán rượu làm bằng bìa các-tông. Một tấm ván thì làm bằng gỗ.",
+          "🪵 Tấm ván"
+        ],
+        [
+          "Đạo diễn Baxter muốn quay lại",
+          "Ông bắt quay lại cú nhảy mười một lần. Đến lần thứ mười hai, ông mới nhìn đi chỗ khác.",
+          "⏱️ Đồng hồ bấm giờ"
+        ],
+        [
+          "Con ngựa",
+          "Con ngựa giật mình vì một tiếng nổ. Kịch bản không có phát súng nào.",
+          "🐎 Ngựa"
+        ],
+        [
+          "Thợ trang điểm Rita dán ria",
+          "Bà dán ria mép cho một người đóng thế thứ hai. Chỉ có đúng một người đóng thế.",
+          "🥸 Ria mép giả"
+        ],
+        [
+          "Sợi dây",
+          "Sợi dây chịu được hai trăm ký. Nó đứt khi mới có bảy mươi ký.",
+          "🪢 Dây thừng"
+        ],
+        [
+          "Người quay phim Lenny quay mọi thứ",
+          "Anh quay cú nhảy từ hai phía. Trong cuộn phim thứ hai, có người đứng sau ống khói.",
+          "🎞️ Cuộn phim thứ hai"
+        ]
+      ]
+    ],
+    "filmstudio-4": [
+      "Phần IV · Phim nói",
+      "Bộ phim đầu tiên có âm thanh. Máy quay đặt trong một chiếc tủ cách âm, còn micrô được giấu trong những lẵng hoa. Chúng nghe được nhiều hơn dự tính.",
+      "Các cảnh quay đã dựng xong và phòng thu âm đã im ắng. Cuộc trò chuyện trên chiếc đĩa cuối cùng không còn là bí mật nữa.",
+      "Khi quay có thu âm, không ai được nói một lời, nên hãy để ý ai đứng ngay cạnh ai. Hãy đặt nghi phạm có ít lựa chọn nhất trước; phần còn lại sẽ theo sau.",
+      [
+        [
+          "Giữ im lặng",
+          "Trên cửa có một ngọn đèn đỏ đang sáng: im lặng. Sau cánh cửa, có người thì thầm.",
+          "🔴 Đèn đỏ"
+        ],
+        [
+          "Micrô trong lẵng hoa",
+          "Trong lẵng hoa có một chiếc micrô. Không ai bên âm thanh treo nó ở đó.",
+          "💐 Lẵng hoa"
+        ],
+        [
+          "Minh tinh Vivian có giọng nói",
+          "Trong phim câm, cô là một ngôi sao. Trong phim nói, người khác hát thay cô.",
+          "🎵 Bản nhạc"
+        ],
+        [
+          "Tủ lạnh",
+          "Máy quay đặt trong một chiếc tủ mà mọi người gọi là tủ lạnh. Chiều hôm đó, có hai người đứng trong đó.",
+          "🧊 Tủ lạnh"
+        ],
+        [
+          "Người đại diện Sid thì thầm",
+          "Ông thì thầm một lời đề nghị vào tai ngôi sao. Chiếc micrô thì thầm theo.",
+          "🎧 Tai nghe"
+        ],
+        [
+          "Đĩa sáp",
+          "Âm thanh được thu trên một chiếc đĩa sáp, khớp với phim. Có một đĩa chạy chậm ba giây.",
+          "💿 Đĩa sáp"
+        ],
+        [
+          "Biên kịch Peggy nghe lại",
+          "Cô tự viết từng câu thoại. Có một câu trong bản thu mà cô không biết.",
+          "📝 Kịch bản"
+        ],
+        [
+          "Những gì micrô nghe thấy",
+          "Trong bản thu, bạn nghe thấy cảnh quay. Và phía sau đó là tiếng một cánh cửa đóng lại.",
+          "🔊 Loa"
+        ]
+      ]
+    ],
+    "filmstudio-5": [
+      "Phần V · Buổi thử vai",
+      "Một trăm ứng viên cho một vai diễn, xếp hàng dài tới tận cổng. Mỗi người có ba phút trước máy quay. Một người trong số họ không trở về sau lần quay thử.",
+      "Vai diễn đã có người nhận và những người xếp hàng đã ra về. Có một đoạn quay thử sẽ không bao giờ được chiếu.",
+      "Ở buổi thử vai, ai cũng xếp hàng, nhưng không phải ai cũng ở cùng một khu vực. Hãy bắt đầu với người nói không ai ở cùng khu vực với mình: mọi người khác bị loại khỏi khu vực đó ngay lập tức.",
+      [
+        [
+          "Một trăm ứng viên",
+          "Một trăm cái tên trong danh sách. Cuối ngày, còn chín mươi chín.",
+          "📋 Danh sách ứng viên"
+        ],
+        [
+          "Diễn viên trẻ Joy theo dõi",
+          "Năm ngoái, cô vẫn còn đứng trong hàng người đó. Giờ cô nhìn xem ai đang theo sau mình.",
+          "🎀 Nơ cài tóc"
+        ],
+        [
+          "Lần quay thử",
+          "Ba phút trước máy quay. Đoạn phim dài bốn phút.",
+          "🎞️ Phim quay thử"
+        ],
+        [
+          "Thợ trang điểm Rita làm việc",
+          "Bà trang điểm cho một trăm gương mặt. Có một gương mặt bà đã quen.",
+          "🖌️ Cọ phấn"
+        ],
+        [
+          "Người đại diện Sid ký hợp đồng",
+          "Ông cho một ứng viên ký hợp đồng trước khi buổi thử vai bắt đầu. Ứng viên đó không bao giờ xuất hiện.",
+          "🖋️ Bút máy"
+        ],
+        [
+          "Số mười bảy",
+          "Mỗi ứng viên đeo một con số trước ngực. Số mười bảy đi ngang qua hai lần.",
+          "🔢 Bảng số"
+        ],
+        [
+          "Minh tinh Vivian ở lại xem",
+          "Cô ghé qua xem ai sẽ thay thế mình. Cô ở lại đến khi trời tối.",
+          "🧣 Cổ áo lông"
+        ],
+        [
+          "Một chiếc áo trên móc",
+          "Lúc năm giờ, vẫn còn một chiếc áo khoác treo trên móc. Không ai đến lấy.",
+          "🧥 Áo mưa"
+        ]
+      ]
+    ],
+    "filmstudio-6": [
+      "Phần VI · Vụ cháy kho phim",
+      "Phim cũ làm bằng nitrat, và nitrat cháy nhanh hơn giấy. Giữa đêm, lửa bùng lên từ kho phim. Có người đã biết nó sẽ cháy nhanh đến mức nào.",
+      "Lửa đã tắt và kho phim cháy đen. Đó không phải là tai nạn.",
+      "Sau một vụ cháy, không ai còn nhớ chính xác mình đã đứng ở đâu. Hãy dùng bút chì: gạch bỏ những ô không phù hợp, rồi xem còn lại gì.",
+      [
+        [
+          "Nitrat",
+          "Trên mỗi hộp đều ghi: cấm hút thuốc. Trên sàn có một mẩu thuốc lá.",
+          "🚭 Biển cấm hút thuốc"
+        ],
+        [
+          "Đội cứu hỏa",
+          "Đội cứu hỏa đến trong mười phút. Kho phim cháy rụi trong năm phút.",
+          "🚒 Xe cứu hỏa"
+        ],
+        [
+          "Người quay phim Lenny cứu một hộp",
+          "Anh lao vào đám cháy vì một chiếc hộp. Trong đó là tác phẩm của chính anh.",
+          "📦 Hộp đựng phim"
+        ],
+        [
+          "Chuông báo cháy",
+          "Chuông reo lúc hai giờ. Lúc một giờ rưỡi, người gác đêm đã ngửi thấy mùi gì đó.",
+          "🔔 Chuông báo cháy"
+        ],
+        [
+          "Biên kịch Peggy làm muộn",
+          "Cô viết kịch bản đến nửa đêm. Ở trong kho phim, lúc đầu cô nói vậy.",
+          "🗒️ Sổ nháp"
+        ],
+        [
+          "Người đóng thế Hank và ngọn lửa",
+          "Trước máy quay, anh đi xuyên qua lửa. Đêm qua, anh lại đi vòng thật xa.",
+          "🧯 Bình chữa cháy"
+        ],
+        [
+          "Sổ kho phim",
+          "Theo danh sách, kho có ba trăm hộp phim. Trong đống tro chỉ có hai trăm.",
+          "📒 Sổ kho"
+        ],
+        [
+          "Đạo diễn Baxter đứng nhìn",
+          "Mọi bộ phim cũ của ông đều chìm trong biển lửa. Trông ông có vẻ nhẹ nhõm.",
+          "👓 Kính gọng tròn"
+        ]
+      ]
+    ],
+    "filmstudio-7": [
+      "Phần VII · Quay ngoại cảnh",
+      "Một phim cao bồi giữa sa mạc, cách hãng phim một ngày đường. Mười chiếc xe, hai mươi con ngựa và một thị trấn bằng bìa các-tông dưới nắng. Thiếu mất một thùng nước.",
+      "Đoàn xe chạy về Hollywood. Thùng nước đã được tìm thấy, còn một nửa, nằm cách xa khu trại.",
+      "Bàn chơi lớn hơn, còn lời khai thì dè sẻn hơn. Nếu báo cáo nói một khu vực bỏ trống, thì cả khu vực đó bị loại đối với mọi người.",
+      [
+        [
+          "Mười chiếc xe",
+          "Mười chiếc xe tiến vào sa mạc. Đi cùng là chín thùng nước.",
+          "🛢️ Thùng nước"
+        ],
+        [
+          "Người đóng thế Hank cầm cương",
+          "Anh làm lật cỗ xe ngựa chở khách hai lần. Kịch bản chỉ có một lần.",
+          "🐎 Xe ngựa"
+        ],
+        [
+          "Nắng trưa",
+          "Lúc mười hai giờ, mặt trời đứng ngay trên đỉnh phim trường. Vậy mà vẫn có một cái bóng dài.",
+          "☀️ Nắng trưa"
+        ],
+        [
+          "Minh tinh Vivian trên cát",
+          "Cô từ chối đi vào sa mạc. Vậy mà trong ủng của cô lại có cát.",
+          "👢 Ủng cưỡi ngựa"
+        ],
+        [
+          "Lửa trại",
+          "Cả đoàn hát quanh đống lửa. Đến điệp khúc thì thiếu một giọng.",
+          "🪕 Đàn banjo"
+        ],
+        [
+          "Thợ trang điểm Rita đánh phấn",
+          "Mỗi sáng bà đánh phấn cho mười gương mặt. Có một gương mặt đã có sẵn phấn, từ tối hôm qua.",
+          "🪞 Gương cầm tay"
+        ],
+        [
+          "Xe chở nước",
+          "Xe chở nước đậu cạnh khu trại suốt đêm. Lúc bình minh, nó đã ở cách đó một cây số.",
+          "🚚 Xe chở nước"
+        ],
+        [
+          "Người đại diện Sid đánh điện về hãng",
+          "Không có điện thoại nào trong vòng một trăm dặm. Vậy mà chỉ trong một giờ, hãng phim đã biết chuyện.",
+          "✉️ Điện tín"
+        ]
+      ]
+    ],
+    "filmstudio-8": [
+      "Phần VIII · Đêm gala lớn",
+      "Bộ phim đã xong và tối nay là buổi công chiếu. Trong đêm gala ở trường quay, đèn bật sáng thêm một lần nữa, vẫn những gương mặt như buổi tối của cảnh quay cuối cùng.",
+      "Van Dam đội mũ lên, gật đầu với chiếc ghế đạo diễn trống trơn rồi bước qua cổng, đi vào màn đêm Hollywood. Cuối cùng thì cái kết cũng hợp lý.",
+      "Những vụ án cuối cùng, gần như đều trên bàn chơi lớn. Đừng sa lầy vào người khó nhất: hãy đặt những người khác trước, khi đó người cuối cùng thường chỉ còn đúng một ô.",
+      [
+        [
+          "Thảm đỏ",
+          "Một nghìn người đứng dọc thảm đỏ. Một người trong số họ đã đi theo khách vào trong.",
+          "🎟️ Vé công chiếu"
+        ],
+        [
+          "Minh tinh Vivian tỏa sáng",
+          "Ai cũng nhìn chiếc váy của cô. Không ai nhìn đôi tay cô.",
+          "💎 Trâm cài"
+        ],
+        [
+          "Biên kịch Peggy xem đoạn kết của mình",
+          "Cô đã viết đoạn kết bảy lần. Trên màn ảnh, cô thấy một đoạn kết thứ tám.",
+          "📜 Cảnh kết"
+        ],
+        [
+          "Diễn viên trẻ Joy được phát hiện",
+          "Ai cũng muốn chụp ảnh với cô. Có một nhiếp ảnh gia chỉ muốn chiếc túi xách của cô.",
+          "👛 Túi dạ hội"
+        ],
+        [
+          "Đạo diễn Baxter cảm ơn",
+          "Ông cảm ơn cả đoàn, gọi tên từng người. Có một cái tên ông đọc lên như một câu hỏi.",
+          "🎙️ Micrô"
+        ],
+        [
+          "Người đại diện Sid muốn nhiều hơn",
+          "Ông được mười phần trăm của mọi thứ. Tối nay, ông muốn phần còn lại.",
+          "💵 Tờ đô la"
+        ],
+        [
+          "Người quay phim Lenny chiếu phim",
+          "Anh tự chiếu phim trong buồng máy chiếu. Trong máy có thừa một cuộn so với bản đã dựng.",
+          "📽️ Máy chiếu phim"
+        ],
+        [
+          "Đêm gala lớn",
+          "Nơi mọi chuyện bắt đầu, trong phòng chiếu. Cũng là nơi mọi chuyện kết thúc.",
+          "🎞️ Cuộn phim cuối"
+        ]
+      ]
+    ],
+    "karavaan": [
+      "Phần I · Cổng đóng lại",
+      "Lữ quán Al-Nour, một ốc đảo trên con đường gia vị xưa. Đoàn lữ hành nghỉ lại một đêm trong vòng tường. Lúc bình minh, trưởng đoàn Idris nằm bên bầy lạc đà, và cổng đã đóng suốt đêm.",
+      "Trưởng đoàn đã chết và cổng vẫn đóng. Không ai rời đi cho đến khi câu chuyện hợp lý.",
+      "Lữ quán là một khoảng sân lớn với nhiều cánh cửa. Hãy bắt đầu với người nói rõ mình ở khu vực nào; “ngay cạnh” vò nước chỉ tính ô sát bên, không bao giờ tính ô chéo.",
+      [
+        [
+          "Cổng đóng lại",
+          "Lúc hoàng hôn, cổng đóng lại. Đến bình minh, chưa ai rời đi, vậy mà lại thiếu một lữ khách.",
+          "🔒 Khóa cổng"
+        ],
+        [
+          "Mười hai con lạc đà",
+          "Mười hai con lạc đà trong chuồng. Đêm đó, không con nào kêu một tiếng.",
+          "🐪 Lạc đà"
+        ],
+        [
+          "Lính gác Karim trực đêm",
+          "Ông ngồi bên cổng suốt đêm. Chiếc chìa khóa treo ở thắt lưng ông suốt đêm, ông nói vậy.",
+          "🗝️ Chùm chìa khóa"
+        ],
+        [
+          "Vò nước",
+          "Lúc mười giờ, chiếc vò cạnh giếng còn đầy. Đến nửa đêm, nó đã cạn.",
+          "🏺 Vò nước"
+        ],
+        [
+          "Thương nhân Layla cân hàng",
+          "Tối nào bà cũng cân nghệ tây của mình. Tối qua, bà cân một thứ khác.",
+          "⚖️ Cân đồng"
+        ],
+        [
+          "Yên lạc đà",
+          "Bộ yên của trưởng đoàn đã sẵn sàng để lên đường. Ông muốn đi trước khi cổng mở.",
+          "🪢 Dây yên"
+        ],
+        [
+          "Nhà thơ Samira viết",
+          "Tối đó, cô viết một bài thơ về trưởng đoàn. Đó là một lời từ biệt.",
+          "✒️ Bút sậy"
+        ],
+        [
+          "Trước bình minh",
+          "Lúc bốn giờ, gà gáy. Lúc ba giờ, đã có người đi ngang qua sân thượng.",
+          "🐓 Gà trống"
+        ]
+      ]
+    ],
+    "karavaan-2": [
+      "Phần II · Nghệ tây biến mất",
+      "Thương nhân Layla mang theo mười bao nghệ tây, đủ để mua một căn nhà trong thành phố. Khi đếm lại, chỉ còn chín bao. Cổng vẫn đóng.",
+      "Bao thứ mười đã nằm lại cạnh chín bao kia. Nó nhẹ đi một nắm.",
+      "Trong vòng tường, ai cũng bàn tán về nhau. Lời khai về hai người: hãy xác định vị trí của một trong hai người trước.",
+      [
+        [
+          "Mười bao",
+          "Mười bao lúc đến nơi. Chín bao lúc ăn sáng.",
+          "🌸 Bao nghệ tây"
+        ],
+        [
+          "Người dẫn đường Tariq dỡ hàng",
+          "Anh tự tay dỡ các bao khỏi lưng lạc đà. Anh vẫn nhớ con lạc đà nào đã chở thừa một bao.",
+          "🧭 La bàn"
+        ],
+        [
+          "Kho dự trữ",
+          "Kho dự trữ có khóa. Ổ khóa nằm ở mặt trong.",
+          "🔐 Ổ khóa"
+        ],
+        [
+          "Người bán thảm Yusuf cuộn thảm",
+          "Sáng đó, ông cuộn hết thảm của mình lại. Có một tấm nặng hơn hôm qua.",
+          "🧶 Thảm cuộn"
+        ],
+        [
+          "Những sợi đỏ",
+          "Nghệ tây chỉ là những sợi nhụy đỏ, nhẹ như không khí. Trên sàn nhà bếp có một sợi.",
+          "🧵 Sợi nghệ tây"
+        ],
+        [
+          "Lữ khách Beatrix ghi chép",
+          "Cô ghi lại mọi thứ cô thấy. Về đêm hôm đó, không có dòng nào.",
+          "📔 Nhật ký du hành"
+        ],
+        [
+          "Chín bao",
+          "Chín bao, bao nào cũng nặng như nhau. Một bao trong đó có một nửa là cát.",
+          "⏳ Cát sa mạc"
+        ],
+        [
+          "Người rót trà Hamid nghe được",
+          "Anh nghe thấy có người nói về nghệ tây. Một giờ trước khi nó biến mất.",
+          "🍯 Hũ đường"
+        ]
+      ]
+    ],
+    "karavaan-3": [
+      "Phần III · Quán trà",
+      "Tối nào cả đoàn lữ hành cũng ngồi cùng nhau trong quán trà. Người rót trà Hamid rót trà, và nghe hết mọi chuyện. Có một cuộc trò chuyện không ai nghe thấy.",
+      "Quán trà đã vắng và những chiếc ly đã úp ngược trên khay. Cuộc trò chuyện không ai nghe thấy, giờ bạn đã biết.",
+      "Trong quán trà, ai cũng nhìn ấm trà, không ai nhìn ai. Người nói mình KHÔNG ở đâu cũng cho bạn biết điều gì đó: hãy gạch bỏ khu vực đó ngay.",
+      [
+        [
+          "Ba ly trà",
+          "Trong quán trà, ai cũng uống ba ly. Có một vị khách để nguyên ly thứ ba.",
+          "🍵 Ly trà"
+        ],
+        [
+          "Người rót trà Hamid rót trà",
+          "Anh rót từ trên cao để trà sủi bọt. Tối nay, tay anh run.",
+          "🫖 Ấm trà đồng"
+        ],
+        [
+          "Chiếc gối trống",
+          "Quanh chiếc bàn thấp có tám chiếc gối. Có một chiếc không ai ngồi.",
+          "🛋️ Gối ngồi"
+        ],
+        [
+          "Nhà thiên văn Zahra lắng nghe",
+          "Bà nói mình đang ngắm sao. Bà ngồi quay lưng về phía cửa sổ.",
+          "🔭 Thước đo sao"
+        ],
+        [
+          "Bạc hà tươi",
+          "Ly nào cũng có bạc hà tươi. Một ly lại có bạc hà khô.",
+          "🌿 Lá bạc hà"
+        ],
+        [
+          "Lính gác Karim bước vào",
+          "Tối nào ông cũng đến lấy một ly trà lúc mười giờ. Hôm qua, ông đến lúc chín giờ.",
+          "⌛ Đồng hồ cát"
+        ],
+        [
+          "Tấm rèm",
+          "Sau tấm rèm của quán trà có một cánh cửa thứ hai. Người rót trà nói nó không bao giờ mở.",
+          "🪟 Rèm cửa"
+        ],
+        [
+          "Thương nhân Layla mặc cả",
+          "Bà nói chuyện với người dẫn đường suốt một giờ về giá chuyến đi. Lúc mười một giờ, giá bỗng tăng lên.",
+          "💰 Lộ phí"
+        ]
+      ]
+    ],
+    "karavaan-4": [
+      "Phần IV · Khu chợ",
+      "Phiên chợ ở ốc đảo. Thương lái từ ba ngôi làng bày hàng khắp sân trong. Một nghìn giọng nói, và một trong số đó đang nói dối.",
+      "Các sạp hàng đã dỡ đi và sân trong đã yên tĩnh trở lại. Đã tìm ra giọng nói dối.",
+      "Vào phiên chợ, ai cũng đứng vai kề vai, nên hãy để ý ai đứng ngay cạnh ai. Hãy đặt nghi phạm có ít lựa chọn nhất trước; phần còn lại sẽ theo sau.",
+      [
+        [
+          "Phiên chợ",
+          "Một nghìn người ở khu chợ. Một người trong số đó chẳng mua gì mà ở lại suốt cả ngày.",
+          "🪙 Đồng xu đồng"
+        ],
+        [
+          "Người bán thảm Yusuf bán hàng",
+          "Hôm nay ông bán được bảy tấm thảm. Ông chỉ mang theo sáu tấm.",
+          "🧶 Tấm thảm"
+        ],
+        [
+          "Giỏ gia vị",
+          "Quế, bạch đậu khấu và thì là Ai Cập. Có một giỏ chẳng có mùi gì.",
+          "🧺 Giỏ gia vị"
+        ],
+        [
+          "Lữ khách Beatrix mua sắm",
+          "Cô mua một tấm thảm mà cô không mang nổi. Cô không nhờ ai giúp.",
+          "🧳 Rương hành lý"
+        ],
+        [
+          "Quả cân gian",
+          "Mọi quả cân ở chợ đều có đóng dấu. Có một quả cân không có dấu.",
+          "⚖️ Quả cân gian"
+        ],
+        [
+          "Người dẫn đường Tariq đổi lạc đà",
+          "Anh đổi con lạc đà già lấy một con non. Con già thì biết đường về.",
+          "🐪 Lạc đà già"
+        ],
+        [
+          "Người bán nước",
+          "Ở khu chợ, có người bán nước lấy từ giếng. Giếng là của chung mọi người.",
+          "🫗 Cốc nước"
+        ],
+        [
+          "Nhà thơ Samira ngâm thơ",
+          "Cô ngâm một bài thơ về sự phản bội. Ai cũng nhìn về cùng một người đàn ông.",
+          "📖 Tập thơ"
+        ]
+      ]
+    ],
+    "karavaan-5": [
+      "Phần V · Đêm của những vì sao",
+      "Trên sân thượng, nhà thiên văn Zahra xem sao để tìm đường cho chuyến đi tiếp theo. Đêm quang đãng và cả lữ quán đang ngủ. Bà thấy một ánh đèn lẽ ra không nên có ở đó.",
+      "Ánh đèn đó là một chiếc đèn lồng, và chiếc đèn lồng có chủ. Lộ trình đã được định.",
+      "Trong bóng tối trên mái, ai cũng chỉ thấy chính mình. Hãy bắt đầu với người nói không ai ở cùng khu vực với mình: mọi người khác bị loại khỏi khu vực đó ngay lập tức.",
+      [
+        [
+          "Ánh đèn giữa sa mạc",
+          "Ở nơi không có làng mạc, có một ánh đèn. Hai lần sáng, hai lần tắt.",
+          "🏮 Đèn lồng"
+        ],
+        [
+          "Nhà thiên văn Zahra tính toán",
+          "Bà đo độ cao của sao Bắc Cực. Ngôi sao thì đúng, tấm bản đồ của bà thì không.",
+          "🗺️ Bản đồ sao"
+        ],
+        [
+          "Sân thượng",
+          "Trên mái, bốn lữ khách ngủ dưới bầu trời sao. Có năm tấm chiếu.",
+          "🛌 Chiếu ngủ"
+        ],
+        [
+          "Lính gác Karim cũng thấy",
+          "Từ cổng, ông cũng thấy ánh đèn đó. Mãi đến chiều hôm sau ông mới báo.",
+          "🪔 Đèn gác"
+        ],
+        [
+          "Sao băng",
+          "Lúc nửa đêm, có một ngôi sao băng. Ai cũng ước một điều, trừ một người.",
+          "🌠 Sao băng"
+        ],
+        [
+          "Nhà thơ Samira đếm sao",
+          "Cô viết một bài thơ về những vì sao trên sa mạc. Cô đếm thừa một ngôi.",
+          "📜 Bài thơ"
+        ],
+        [
+          "Người rót trà Hamid mang trà lên",
+          "Lúc hai giờ, anh mang trà lên mái. Ở đó đã có sẵn hai ly.",
+          "🍵 Hai ly trà"
+        ],
+        [
+          "Trước rạng đông",
+          "Các vì sao mờ dần từng ngôi một. Ánh đèn trong sa mạc là thứ tắt sau cùng.",
+          "🌄 Rạng đông"
+        ]
+      ]
+    ],
+    "karavaan-6": [
+      "Phần VI · Nhà tắm hơi",
+      "Nhà tắm hơi ấm áp và đầy hơi nước. Lữ khách gột rửa cát bụi của chuyến đi ở đó, và không ai nhìn xa hơn bàn tay mình. Gần như không ai.",
+      "Hơi nước đã tan và những phiến đá đang nguội dần. Kẻ đã ẩn mình trong đó giờ đứng giữa ánh sáng.",
+      "Hơi nước làm nhân chứng không chắc chắn, còn sơ đồ thì không. Hãy dùng bút chì: gạch bỏ những ô không phù hợp, rồi xem còn lại gì.",
+      [
+        [
+          "Đá nóng",
+          "Lửa dưới những phiến đá cháy ngày đêm. Đêm qua, nó tắt mất một giờ.",
+          "🪨 Đá nóng"
+        ],
+        [
+          "Trong hơi nước",
+          "Ai ở nhà tắm hơi cũng chỉ thấy hơi nước. Có một vị khách đã thấy một gương mặt.",
+          "🌫️ Hơi nước"
+        ],
+        [
+          "Lữ khách Beatrix gột sạch cát",
+          "Cô ở trong nhà tắm hơi một giờ. Tóc cô vẫn khô.",
+          "🧼 Xà phòng"
+        ],
+        [
+          "Tám đôi dép",
+          "Bên cửa có tám đôi dép. Có chín người bước ra.",
+          "🩴 Dép tắm"
+        ],
+        [
+          "Người bán thảm Yusuf đổ mồ hôi",
+          "Ông nói ông đổ mồ hôi vì nóng. Ông còn chưa hề vào trong.",
+          "💦 Khăn lau mồ hôi"
+        ],
+        [
+          "Giếng nước",
+          "Nhà tắm hơi lấy nước từ giếng. Đêm qua, nước kéo lên bị đục.",
+          "🪣 Gàu múc nước"
+        ],
+        [
+          "Người dẫn đường Tariq đi tắm",
+          "Anh nói anh không bao giờ tắm trước một chuyến đi. Đêm qua thì có.",
+          "🌹 Nước hoa hồng"
+        ],
+        [
+          "Thương nhân Layla mất nhẫn",
+          "Chiếc nhẫn của bà nằm dưới đáy bể tắm. Bà không bao giờ tháo nó ra.",
+          "💍 Nhẫn vàng"
+        ]
+      ]
+    ],
+    "karavaan-7": [
+      "Phần VII · Hành trình dài",
+      "Đoàn lữ hành băng qua sa mạc suốt hai mươi ngày, từ giếng này sang giếng khác. Tối nào người dẫn đường Tariq cũng đếm lạc đà. Không phải tối nào anh cũng ra cùng một con số.",
+      "Sau hai mươi ngày, đoàn lữ hành đến bờ biển. Người dẫn đường đếm thêm một lần nữa, và con số đã đúng.",
+      "Bàn chơi lớn hơn, còn lời khai thì dè sẻn hơn. Nếu báo cáo nói một khu vực bỏ trống, thì cả khu vực đó bị loại đối với mọi người.",
+      [
+        [
+          "Hai mươi ngày",
+          "Nước đủ cho hai mươi ngày. Đến ngày thứ mười hai thì đã hết.",
+          "💧 Túi nước"
+        ],
+        [
+          "Người dẫn đường Tariq đếm lạc đà",
+          "Mười hai con lạc đà lúc khởi hành, mười một con ở giếng đầu tiên. Đến giếng thứ hai, lại là mười hai.",
+          "🐪 Lạc đà thồ"
+        ],
+        [
+          "Dấu vết",
+          "Người dẫn đường đọc được mọi dấu vết trên cát. Có một dấu vết đi giật lùi.",
+          "👣 Dấu chân"
+        ],
+        [
+          "Nhà thiên văn Zahra chỉ đường",
+          "Đêm nào bà cũng chỉ về phía nam. Đến đêm thứ sáu thì lệch thêm một chút về phía đông.",
+          "⭐ Sao dẫn đường"
+        ],
+        [
+          "Lính gác Karim đi cùng",
+          "Suốt hai mươi năm, ông chưa từng ra khỏi vòng tường. Lần này, ông nhất quyết đòi đi cùng.",
+          "⛺ Lều du hành"
+        ],
+        [
+          "Giếng cạn",
+          "Trên bản đồ có ghi nguồn nước. Có người đã lấp cái giếng.",
+          "🕳️ Giếng cạn"
+        ],
+        [
+          "Người rót trà Hamid pha trà",
+          "Tối nào anh cũng pha trà bằng chỗ nước cuối cùng. Tối nào cũng còn thừa nước.",
+          "🔥 Lửa trại"
+        ],
+        [
+          "Biển",
+          "Sau hai mươi ngày, đoàn lữ hành ngửi thấy mùi muối. Có một con lạc đà đi về hướng ngược lại.",
+          "🌊 Gió biển"
+        ]
+      ]
+    ],
+    "karavaan-8": [
+      "Phần VIII · Từ biệt ốc đảo",
+      "Đoàn lữ hành lại lên đường và lữ quán ở lại phía sau. Thêm một buổi tối cuối trên sân thượng dưới bầu trời sao, vẫn những gương mặt như đêm cổng đóng lại.",
+      "Van Dam giũ cát khỏi áo khoác, chào người lính gác rồi cùng đoàn lữ hành bước qua cổng lúc bình minh. Sau cánh cổng, bớt đi một bí mật.",
+      "Những vụ án cuối cùng, gần như đều trên bàn chơi lớn. Đừng sa lầy vào người khó nhất: hãy đặt những người khác trước, khi đó người cuối cùng thường chỉ còn đúng một ô.",
+      [
+        [
+          "Buổi tối cuối cùng",
+          "Mọi người đều ngồi trên sân thượng. Bên dưới, trong chuồng lạc đà, vẫn còn một ngọn nến đang cháy.",
+          "🕯️ Ánh nến"
+        ],
+        [
+          "Nhà thơ Samira từ biệt",
+          "Bài thơ cuối cùng của cô không nêu tên ai. Vậy mà ai cũng biết cô nói về ai.",
+          "📓 Sổ thơ"
+        ],
+        [
+          "Thương nhân Layla thanh toán",
+          "Bà trả tiền cho chỗ của mình trong đoàn lữ hành. Bằng nghệ tây từ bao thứ mười.",
+          "👝 Túi tiền"
+        ],
+        [
+          "Người bán thảm Yusuf bỏ quên",
+          "Ông để lại một tấm thảm, cuộn tròn trong phòng nghỉ. Ông chưa bao giờ bỏ quên thứ gì.",
+          "🧶 Tấm thảm cuối cùng"
+        ],
+        [
+          "Lữ khách Beatrix gấp sách lại",
+          "Cuốn sách về chuyến đi của cô đã xong. Chương cuối vẫn chưa có tên.",
+          "📕 Ký sự du hành"
+        ],
+        [
+          "Lính gác Karim mở cổng",
+          "Suốt hai mươi năm, ông mở cổng lúc bình minh. Hôm nay, ông mở sớm hơn một giờ.",
+          "🔑 Chìa khóa lớn"
+        ],
+        [
+          "Ly trà cuối cùng",
+          "Người rót trà Hamid rót cho mọi người thêm một lần cuối. Anh rót thừa một ly.",
+          "🫖 Ấm trà cuối"
+        ],
+        [
+          "Từ biệt ốc đảo",
+          "Nơi mọi chuyện bắt đầu, bên bầy lạc đà trong chuồng. Cũng là nơi mọi chuyện kết thúc.",
+          "🔔 Chuông lạc đà"
+        ]
+      ]
+    ],
+    "abdij": [
+      "Phần I · Tu viện trưởng đã chết",
+      "Tu viện Thánh Aldric, mùa đông năm 1327. Tuyết chặn kín đèo núi. Sau giờ kinh đêm, tu viện trưởng Bertram nằm trong phòng chép sách, ngón tay dính mực.",
+      "Các thầy cầu nguyện cho tu viện trưởng của mình. Tuyết vẫn phủ dày, và mùa đông vẫn còn dài.",
+      "Tu viện đầy những lối đi yên tĩnh và những cánh cửa đóng kín. Hãy bắt đầu với người nói rõ mình ở khu vực nào; “ngay cạnh” chân nến chỉ tính ô sát bên, không bao giờ tính ô chéo.",
+      [
+        [
+          "Sau giờ kinh đêm",
+          "Mười hai thầy hát kinh đêm. Sau đó, tiếng hát thiếu đi một giọng.",
+          "📿 Chuỗi hạt"
+        ],
+        [
+          "Mực trên ngón tay",
+          "Tu viện trưởng chưa bao giờ tự tay viết. Ngón tay ông đen vì mực.",
+          "🪶 Bút lông ngỗng"
+        ],
+        [
+          "Thầy Anselm đếm chìa khóa",
+          "Chùm chìa khóa của thầy có bảy chiếc. Hôm qua còn tám chiếc.",
+          "🗝️ Chùm chìa khóa"
+        ],
+        [
+          "Chân nến",
+          "Ngọn nến trong phòng chép sách vẫn còn cháy. Sau giờ kinh đêm, ở đó không được có ánh sáng nào.",
+          "🕯️ Nến sáp ong"
+        ],
+        [
+          "Tập sinh Elias viết",
+          "Trên bảng sáp của cậu có một bài thánh vịnh. Bên dưới, bị xóa mất một nửa, là một cái tên.",
+          "📝 Bảng sáp"
+        ],
+        [
+          "Tuyết trên đèo",
+          "Không ai có thể vào hay ra khỏi tu viện. Vậy mà có một sợi dây thừng vắt qua tường.",
+          "🪢 Dây gai"
+        ],
+        [
+          "Nữ bá tước Mathilde chờ đợi",
+          "Bà muốn nói chuyện với tu viện trưởng sau giờ kinh đêm. Bà nói ông đã không đến.",
+          "💍 Nhẫn ấn"
+        ],
+        [
+          "Đêm đầu tiên",
+          "Cổng đã đóng, và đèo cũng đã đóng. Cửa phòng chép sách thì để mở.",
+          "🔩 Then cửa"
+        ]
+      ]
+    ],
+    "abdij-2": [
+      "Phần II · Cuốn sách cấm",
+      "Trong thư viện có một cuốn sách không ai được đọc. Chỉ tu viện trưởng giữ chìa khóa. Vậy mà vẫn có người đã đọc nó.",
+      "Cuốn sách lại được khóa kỹ. Câu hỏi không còn là ai đã đọc, mà là vì sao.",
+      "Trong thư viện, ai cũng nói thì thầm, và từng lời đều quan trọng. Lời khai về hai người: hãy xác định vị trí của một trong hai người trước.",
+      [
+        [
+          "Sau ổ khóa",
+          "Cuốn sách nằm sau hai ổ khóa. Một ổ vẫn còn khóa.",
+          "🔒 Ổ khóa móc"
+        ],
+        [
+          "Thầy Anselm im lặng",
+          "Thầy biết đó là cuốn sách nào. Thầy cũng biết ai đã hỏi mượn nó.",
+          "📚 Danh mục sách"
+        ],
+        [
+          "Thiếu một tờ",
+          "Cuốn sách có hai trăm tờ. Một tờ đã bị cắt ra, gọn gàng.",
+          "🔪 Dao gọt bút"
+        ],
+        [
+          "Thợ minh họa Odile xem xét",
+          "Nét vàng ở lề sách là do tay cô vẽ. Còn chính cuốn sách thì cô chưa từng thấy, cô nói vậy.",
+          "✨ Vàng lá"
+        ],
+        [
+          "Đọc dưới ánh nến",
+          "Trên tấm giấy da có vết nến nhỏ giọt. Mỡ động vật từ nhà bếp, không phải sáp ong từ nhà nguyện.",
+          "🕯️ Nến mỡ"
+        ],
+        [
+          "Tập sinh Elias đọc",
+          "Cậu nói mình gần như không biết tiếng Latinh. Trên bảng sáp của cậu có một câu trong cuốn sách cấm.",
+          "✍️ Câu chép lại"
+        ],
+        [
+          "Thầy quản kho Waldo và nữ bá tước",
+          "Hai người nói chuyện với nhau trong hành lang. Sau đó, họ không nói với nhau thêm một lời nào nữa.",
+          "✉️ Mẩu thư niêm phong"
+        ],
+        [
+          "Cuốn sách cấm",
+          "Không ai được phép đọc nó. Vậy mà có hai người đã đọc.",
+          "📕 Sách cấm"
+        ]
+      ]
+    ],
+    "abdij-3": [
+      "Phần III · Vườn thuốc",
+      "Vườn thuốc nằm dưới tuyết, nhưng thảo dược phơi khô được treo trong nhà. Trong phòng y tế, một thầy già ngày càng yếu đi thay vì khỏe lại. Có người pha lại thuốc của thầy.",
+      "Thầy già đã ngồi dậy được và đòi ăn súp. Hũ thuốc nhầm đã không còn trong phòng y tế.",
+      "Giữa các loại thảo dược, ai cũng biết cây nào mọc ở đâu. Người nói mình KHÔNG ở đâu cũng cho bạn biết điều gì đó: hãy gạch bỏ khu vực đó ngay.",
+      [
+        [
+          "Cây nào cũng chữa bệnh",
+          "Xô thơm cho cổ họng, bạc hà cho dạ dày. Trong hũ không có thứ nào cả.",
+          "🌿 Xô thơm khô"
+        ],
+        [
+          "Thầy Cuthbert pha thuốc",
+          "Thầy pha thuốc như mọi tối. Chỉ có điều lần này thầy không nếm thử.",
+          "🥣 Thuốc thảo dược"
+        ],
+        [
+          "Cối giã thuốc",
+          "Trong cối vẫn còn bột. Bột của một loại cây không mọc trong khu vườn này.",
+          "🌰 Rễ cây giã nhỏ"
+        ],
+        [
+          "Bà lang Hilde bước vào",
+          "Bà từ làng lên với một giỏ đầy thảo dược. Đèo đã bị chặn một tuần rồi.",
+          "🧺 Giỏ thảo dược"
+        ],
+        [
+          "Ong trong mùa đông",
+          "Mùa đông, đàn ong ngủ. Vậy mà có người đã mở tổ ong ra.",
+          "🍯 Mảnh tổ ong"
+        ],
+        [
+          "Phòng y tế",
+          "Ba chiếc giường, hai người bệnh. Chiếc giường thứ ba vẫn còn ấm.",
+          "🛏️ Nệm rơm"
+        ],
+        [
+          "Người hành hương Gisela giúp đỡ",
+          "Cô xin được chăm sóc người bệnh. Cô biết thầy được cho uống thuốc gì trước khi có ai nói cho cô biết.",
+          "🍶 Bầu đựng nước"
+        ],
+        [
+          "Hoa ô đầu",
+          "Một bông hoa tím rất đẹp. Trong mọi cuốn sách thảo dược, bên cạnh tên nó đều có một dấu thập nhỏ.",
+          "🪻 Hoa ô đầu"
+        ]
+      ]
+    ],
+    "abdij-4": [
+      "Phần IV · Mùa đông dài",
+      "Đèo bị chặn cho tới mùa xuân. Tuần nào thầy quản kho Waldo cũng kiểm lại lương thực, và tuần nào tầng hầm cũng vơi hơn mức lẽ ra phải có.",
+      "Tầng hầm đã được kiểm đếm, bánh mì được chia công bằng. Ai từng ăn phần của hai người, giờ chỉ ăn phần của một người.",
+      "Mùa đông, ai cũng ở gần bếp lửa, và gần nhau. Hãy đặt nghi phạm có ít lựa chọn nhất trước; phần còn lại sẽ theo sau.",
+      [
+        [
+          "Cho tới mùa xuân",
+          "Đủ lúa mì cho bốn tháng, thầy quản kho nói. Mới qua một tháng, một nửa đã hết.",
+          "🌾 Bao lúa mì"
+        ],
+        [
+          "Thầy quản kho Waldo cân đo",
+          "Tuần nào thầy cũng cân những bánh phô mai. Không thiếu bánh nào, nhưng chúng cứ nhẹ dần.",
+          "🧀 Bánh phô mai"
+        ],
+        [
+          "Xưởng bánh",
+          "Lò nướng đã nguội từ sau giờ kinh đêm. Vậy mà xưởng bánh vẫn thơm mùi bánh mì mới ra lò.",
+          "🍞 Bánh mì đen"
+        ],
+        [
+          "Nữ bá tước Mathilde giữ chay",
+          "Bà nói mình giữ chay suốt Mùa Vọng. Dưới gầm giường bà có vụn bánh mì trắng.",
+          "🥖 Vỏ bánh mì"
+        ],
+        [
+          "Đồng hồ cát",
+          "Trong nhà bếp, có người cứ mỗi giờ lại lật đồng hồ cát. Lúc ba giờ, người đó quên.",
+          "⏳ Đồng hồ cát"
+        ],
+        [
+          "Tập sinh Elias đói bụng",
+          "Cậu từng gầy nhất trong tất cả mọi người. Cho tới giữa tháng Giêng.",
+          "🍽️ Bát gỗ"
+        ],
+        [
+          "Rượu cho Thánh lễ",
+          "Để dâng Thánh lễ, mỗi tuần một bình là đủ. Vậy mà mất cả một thùng.",
+          "🍷 Rượu lễ"
+        ],
+        [
+          "Tuyết ngập tới cửa chớp",
+          "Tuyết phủ cao tới cửa chớp của nhà ăn. Một cánh cửa chớp đã bị mở từ bên trong.",
+          "🧊 Nhũ băng"
+        ]
+      ]
+    ],
+    "abdij-5": [
+      "Phần V · Đức giám mục đến thăm",
+      "Một tuần tuyết tan mở lại con đèo. Đức giám mục đang trên đường tới để chọn một tu viện trưởng mới, và không phải ai cũng muốn ngài tới nơi.",
+      "Đức giám mục đến nơi an toàn và ban phép lành cho tu viện. Tu viện trưởng mới đã được bầu, và không một lá phiếu nào bị mua.",
+      "Để đón đức giám mục, mỗi người đứng chờ sẵn ở một nơi. Hãy bắt đầu với người nói không ai ở cùng khu vực với mình: mọi người khác bị loại khỏi khu vực đó ngay lập tức.",
+      [
+        [
+          "Bức thư có dấu niêm",
+          "Thư của đức giám mục có dấu niêm đỏ. Dấu niêm ấy đã từng bị bóc một lần.",
+          "📜 Thư giám mục"
+        ],
+        [
+          "Thầy Anselm muốn làm tu viện trưởng",
+          "Thầy nói mình không muốn. Thầy đã thuộc lòng lời thề.",
+          "📃 Lời thề tu viện trưởng"
+        ],
+        [
+          "Tháp chuông",
+          "Khi đức giám mục đến, chuông sẽ vang lên. Sợi dây chuông đã bị cắt đứt, ngang tầm mắt.",
+          "🔔 Dây chuông"
+        ],
+        [
+          "Nữ bá tước Mathilde dâng tặng",
+          "Bà sẽ tặng tu viện một chiếc chén thánh bằng vàng. Nếu đức giám mục chọn ứng viên của bà.",
+          "🏆 Chén thánh vàng"
+        ],
+        [
+          "Đá trên lối đi",
+          "Có người đã lăn đá xuống đường núi. Đá nằm trên mặt tuyết, không phải bên dưới.",
+          "🪨 Tảng đá"
+        ],
+        [
+          "Thầy Cuthbert nấu ăn",
+          "Một bữa tiệc cho đức giám mục. Có một món chỉ dành riêng cho ngài.",
+          "🍲 Món hầm"
+        ],
+        [
+          "Bà lang Hilde thuộc đường",
+          "Bà biết mọi lối đi xuyên qua núi. Kể cả con đường đức giám mục sẽ đi.",
+          "🥾 Ủng ướt"
+        ],
+        [
+          "Đức giám mục đến",
+          "Con la của ngài qua cổng trước tiên. Một giờ sau đức giám mục mới tới, đi bộ.",
+          "🐴 Con la"
+        ]
+      ]
+    ],
+    "abdij-6": [
+      "Phần VI · Cháy phòng chép sách",
+      "Giữa đêm, phòng chép sách bốc cháy. Các thầy dập lửa bằng tuyết và xô nước. Một cuốn sách được cứu ra, nhưng người cứu nó lại là người không nên làm thế.",
+      "Lửa đã tắt, những bức tường đen kịt. Cuốn sách được cứu nay nằm trong nhà nguyện, đã thoát khỏi tay kẻ không nên giữ nó.",
+      "Khói làm nhân chứng mơ hồ, còn sơ đồ thì không. Lời khai ngày càng dè sẻn: hãy dùng bút chì, gạch bỏ những ô không phù hợp, rồi xem còn lại gì.",
+      [
+        [
+          "Khói sau giờ kinh đêm",
+          "Sau giờ kinh đêm, khói bay trong hành lang. Mọi ngọn nến đều đã tắt từ trước.",
+          "💨 Vệt khói"
+        ],
+        [
+          "Những xô tuyết",
+          "Các thầy dập lửa bằng tuyết từ sân trong. Quanh phòng chép sách, tuyết đã được xúc đi từ trước khi đám cháy bắt đầu.",
+          "🪣 Xô gỗ"
+        ],
+        [
+          "Thợ minh họa Odile chạy vào",
+          "Cô là người đầu tiên lao vào đám cháy, vì những cuốn sách của mình. Cô quay ra tay không, ống tay áo sạch sẽ.",
+          "🎨 Hũ màu"
+        ],
+        [
+          "Bàn viết",
+          "Mọi chiếc bàn viết đều cháy. Đen nhất là chiếc bàn đặt xa những ngọn nến nhất.",
+          "🪵 Gỗ cháy đen"
+        ],
+        [
+          "Thầy quản kho Waldo dập lửa",
+          "Thầy xách những xô nặng nhất. Áo dòng của thầy không có mùi khói, mà có mùi dầu.",
+          "🫙 Hũ dầu"
+        ],
+        [
+          "Tro trong nhà ăn",
+          "Trong lò sưởi của nhà ăn có tro giấy da. Lửa ở phòng chép sách mãi sau mới bắt đầu.",
+          "🌫️ Tro giấy da"
+        ],
+        [
+          "Người hành hương Gisela cầu nguyện",
+          "Cô cầu nguyện trong nhà nguyện suốt lúc đám cháy diễn ra. Áo choàng của cô đen sạm vì bồ hóng.",
+          "🧥 Áo choàng hành hương"
+        ],
+        [
+          "Người cứu sách đáng ngờ",
+          "Một cuốn sách đã được cứu. Bởi một người nói rằng mình không biết đọc.",
+          "📘 Bìa sách cháy sém"
+        ]
+      ]
+    ],
+    "abdij-7": [
+      "Phần VII · Những người hành hương",
+      "Mười hai người hành hương gõ cổng xin trú nhờ. Luật dòng dạy rằng mọi vị khách phải được đón tiếp như chính Chúa Kitô. Ba ngày sau, mười một người lên đường đi tiếp.",
+      "Mười một người hành hương tiếp tục lên đường tới Rôma. Người thứ mười hai ở lại, nhưng không phải với tư cách khách.",
+      "Bàn chơi lớn hơn, còn tu viện thì đông hơn. Nếu báo cáo nói một khu vực bỏ trống, thì cả khu vực đó bị loại đối với mọi người.",
+      [
+        [
+          "Mười hai người trước cổng",
+          "Mười hai người hành hương xin bánh mì và một chỗ ngủ. Trên tuyết trước cổng có mười ba đôi dấu chân.",
+          "👣 Dấu chân"
+        ],
+        [
+          "Người hành hương Gisela nhận ra một người",
+          "Cô quen một trong mười hai người ấy. Đến khi người đó đi rồi, cô mới nói ra.",
+          "🐚 Vỏ sò điệp"
+        ],
+        [
+          "Sổ khách",
+          "Mỗi vị khách đều ghi tên mình vào sổ. Có hai cái tên được viết bằng cùng một nét chữ.",
+          "✒️ Sổ khách"
+        ],
+        [
+          "Thầy Cuthbert băng bó",
+          "Thầy băng chân cho mười một người hành hương. Người thứ mười hai không hề phồng rộp.",
+          "🩹 Băng vải lanh"
+        ],
+        [
+          "Bánh mì cho người nghèo",
+          "Mỗi người hành hương được một ổ bánh mì. Xưởng bánh nướng mười ba ổ.",
+          "🥖 Bánh mì hành hương"
+        ],
+        [
+          "Tập sinh Elias trò chuyện",
+          "Cậu nói chuyện với những người hành hương bằng chính tiếng của họ. Hồi mùa hè, cậu nói mình đến từ một ngôi làng gần đây.",
+          "🧾 Giấy thông hành"
+        ],
+        [
+          "Thợ minh họa Odile vẽ phác",
+          "Cô vẽ mười hai người bên lề một cuốn sách Thánh vịnh. Có một khuôn mặt cô đã từng vẽ trước đây.",
+          "🖌️ Cọ vẽ"
+        ],
+        [
+          "Mười một người ra đi",
+          "Mười hai người đã đến. Mười một người đi tiếp tới Rôma.",
+          "⛰️ Đường núi"
+        ]
+      ]
+    ],
+    "abdij-8": [
+      "Phần VIII · Giờ kinh cuối cùng",
+      "Mùa xuân đến, tuyết trên đèo tan dần. Thêm một đêm nữa trong hành lang, vẫn những gương mặt như đêm đông đầu tiên.",
+      "Van Dam kéo kín áo choàng, cúi chào các thầy rồi băng qua con đèo đã thông, xuống thung lũng. Chuông đổ báo giờ kinh chiều. Cuốn sách lại nằm trên giá.",
+      "Những vụ án cuối cùng, gần như đều trên bàn chơi lớn. Đừng sa lầy vào người khó nhất: hãy đặt những người khác trước, khi đó người cuối cùng thường chỉ còn đúng một ô.",
+      [
+        [
+          "Tuyết tan",
+          "Dưới lớp tuyết sát chân tường có một chiếc chìa khóa. Chiếc thứ tám.",
+          "🔑 Chìa khóa sắt"
+        ],
+        [
+          "Thầy Anselm trao lại chìa khóa",
+          "Bốn mươi năm thầy giữ những chiếc chìa khóa. Tối nay thầy đặt chúng xuống, trừ một chiếc.",
+          "⛓️ Vòng chìa khóa"
+        ],
+        [
+          "Bà lang Hilde về nhà",
+          "Bà đến với một giỏ đầy thảo dược. Bà ra về với một giỏ đầy, và chẳng còn thảo dược nào.",
+          "🧺 Giỏ đầy"
+        ],
+        [
+          "Tu viện trưởng mới",
+          "Ngài ban phép lành cho các thầy lần đầu tiên. Có một thầy không cúi đầu.",
+          "⚜️ Gậy mục tử"
+        ],
+        [
+          "Thầy quản kho Waldo khóa tầng hầm",
+          "Tầng hầm lại đầy ắp cho mùa hè. Sau thùng rượu cuối cùng có một thứ không nên ở đó.",
+          "🍺 Bia tu viện"
+        ],
+        [
+          "Nữ bá tước Mathilde ra đi",
+          "Cỗ xe của bà đã sẵn sàng ở cổng. Nó nặng hơn lúc bà đến.",
+          "🛞 Bánh xe ngựa"
+        ],
+        [
+          "Kinh chiều",
+          "Giờ kinh chiều cuối cùng của mùa đông. Có một giọng lại hát một bài thánh vịnh khác.",
+          "🎼 Sách điệp ca"
+        ],
+        [
+          "Giờ kinh cuối cùng",
+          "Nơi mọi chuyện bắt đầu, trong phòng chép sách. Cũng là nơi mọi chuyện kết thúc.",
+          "🖋️ Sừng đựng mực"
+        ]
+      ]
+    ],
+    "vuurtoren": [
+      "Phần I · Ngọn đèn tắt",
+      "Hải đăng Greycape, tháng 11 năm 1900. Một cơn bão cắt đứt hòn đảo khỏi đất liền. Lúc nửa đêm, ngọn đèn tắt. Trong phòng đèn trên đỉnh tháp, người gác đèn Silas Mourne nằm bất động.",
+      "Ngọn đèn đã sáng trở lại, nhưng người gác đèn không bao giờ còn thấy nó nữa. Cơn bão còn kéo dài thêm nhiều ngày.",
+      "Hòn đảo thì nhỏ, ngọn hải đăng thì cao và hẹp. Hãy bắt đầu với người nói rõ mình ở khu vực nào; “ngay cạnh” phao cứu sinh chỉ tính ô sát bên, không bao giờ tính ô chéo.",
+      [
+        [
+          "Nửa đêm",
+          "Suốt hai mươi năm, ngọn đèn sáng mỗi đêm. Đêm nay nó tắt lúc mười hai giờ.",
+          "🪔 Đầu đốt dầu hỏa"
+        ],
+        [
+          "Phòng đèn",
+          "Người gác đèn nằm dưới thấu kính. Cửa bị khóa từ bên trong.",
+          "🔐 Chìa khóa phòng đèn"
+        ],
+        [
+          "Phụ tá Jonas leo lên",
+          "Một trăm mười hai bậc lên tới đỉnh. Anh nói mình lên tới nơi trong hai phút.",
+          "🕰️ Đồng hồ bỏ túi"
+        ],
+        [
+          "Phao cứu sinh",
+          "Chiếc phao luôn treo cạnh cửa nhà gác đèn. Đêm nay nó trôi dập dềnh giữa sóng.",
+          "🛟 Phao cứu sinh"
+        ],
+        [
+          "Điện báo viên Fien đánh điện",
+          "Lúc mười hai giờ kém năm, cô đánh điện vào đất liền báo rằng đèn đã tắt. Đúng mười hai giờ, đèn mới tắt.",
+          "📨 Bức điện"
+        ],
+        [
+          "Cơ cấu xoay",
+          "Cơ cấu xoay của thấu kính đã đứng yên. Có một nút thắt thủy thủ quấn quanh nó.",
+          "🪢 Nút thắt thủy thủ"
+        ],
+        [
+          "Quản gia Martha đã ngủ",
+          "Bà nói mình đã ngủ từ lúc mười giờ. Lúc nửa đêm, ấm trà vẫn còn ấm.",
+          "🫖 Ấm trà"
+        ],
+        [
+          "Bão từ phía tây",
+          "Không con thuyền nào có thể cập đảo hay rời đảo. Vậy mà ở cầu tàu lại thiếu một chiếc.",
+          "⚓ Dây neo bị tuột"
+        ]
+      ]
+    ],
+    "vuurtoren-2": [
+      "Phần II · Vụ đắm tàu",
+      "Vào đêm bão thứ hai, đèn tắt suốt một giờ. Trong giờ ấy, một con tàu đâm vào những tảng đá dưới chân vách đá. Một người đàn ông dạt vào bờ, không có giấy tờ.",
+      "Xác tàu vỡ vụn trong sóng. Giờ thì bạn biết vì sao con tàu lại đi sát bờ đến thế.",
+      "Sau một vụ đắm tàu, ai cũng kể mình đã thấy gì, và thấy ai. Lời khai về hai người: hãy xác định vị trí của một trong hai người trước.",
+      [
+        [
+          "Đâm vào đá",
+          "Không có ánh đèn, con tàu lao thẳng về phía vách đá. Thế nhưng trên bãi biển lại có một ngọn đèn đang cháy.",
+          "🏮 Đèn bão"
+        ],
+        [
+          "Người đắm tàu Lev dạt vào bờ",
+          "Anh dạt vào bờ mà không có giấy tờ. Hộp thuốc lá của anh vẫn khô.",
+          "🚬 Hộp thuốc lá"
+        ],
+        [
+          "Ngư dân Bartel đã nhìn thấy",
+          "Ông nói mình đứng trên vách đá nhìn xuống. Mái chèo của ông vẫn còn ướt.",
+          "🚣 Mái chèo"
+        ],
+        [
+          "Xác tàu",
+          "Con tàu chỉ còn lại phần mũi. Cái tên trên mũi tàu đã bị sơn đè lên.",
+          "🖌️ Sơn mới"
+        ],
+        [
+          "Hoa tiêu Kees và thuyền trưởng",
+          "Ông quen thuyền trưởng của con tàu. Đêm đó hai người có hẹn với nhau, ngoài khơi.",
+          "🗺️ Hải đồ"
+        ],
+        [
+          "Nhà điểu học Dorien ghi chép",
+          "Trong sổ thực địa của cô: ba giờ, bãi biển, một con chim mò sò. Và một người đàn ông.",
+          "📓 Sổ thực địa"
+        ],
+        [
+          "Những chiếc thùng trên bãi biển",
+          "Mười hai chiếc thùng dạt vào bờ. Trong nhà thuyền chỉ có chín chiếc.",
+          "📦 Rương đi biển"
+        ],
+        [
+          "Điện báo viên Fien và đất liền",
+          "Đất liền hỏi tên con tàu. Cô đã đánh điện báo tên trước khi có ai nhìn thấy mũi tàu.",
+          "📃 Băng điện báo"
+        ]
+      ]
+    ],
+    "vuurtoren-3": [
+      "Phần III · Sương mù",
+      "Sau cơn bão là sương mù. Suốt ba ngày, còi sương mù rúc lên mỗi mười lăm phút. Vào đêm thứ hai, nó rúc thừa một lần.",
+      "Sương tan và còi sương mù im bặt. Con thuyền chờ hiệu lệnh ấy đã không bao giờ cập bến.",
+      "Trong sương mù, không ai thấy gì, nhưng ai cũng biết mình không đứng ở đâu. Người nói mình KHÔNG ở đâu cũng cho bạn biết điều gì đó: hãy gạch bỏ khu vực đó ngay.",
+      [
+        [
+          "Mỗi mười lăm phút",
+          "Mỗi giờ bốn hồi còi. Lúc hai giờ có tới năm hồi.",
+          "📯 Còi sương mù"
+        ],
+        [
+          "Phụ tá Jonas thổi còi",
+          "Anh nói mình thổi còi suốt đêm. Lúc ba giờ, anh đang ngủ trong nhà bếp.",
+          "⚙️ Tay quay"
+        ],
+        [
+          "Kính viễn vọng",
+          "Trong sương mù, kính viễn vọng chẳng giúp được gì. Vậy mà nó lại được dựng trên vách đá, hướng ra biển.",
+          "🔭 Kính viễn vọng"
+        ],
+        [
+          "Cô giáo Wilma lạc đường",
+          "Đã mười năm nay cô đi bộ từ trường đến nhà gác đèn. Trong sương mù, cô lại đến nhà thuyền.",
+          "👓 Kính bị mờ"
+        ],
+        [
+          "Tiếng gọi trong sương mù",
+          "Có người kêu cứu từ cầu tàu. Khi mọi người tới nơi, chỉ còn một chiếc mũ lưỡi trai nằm đó.",
+          "🧢 Mũ ướt"
+        ],
+        [
+          "Ngư dân Bartel ra khơi",
+          "Không ngư dân nào ra khơi giữa sương mù. Ông trở về với những chiếc bẫy tôm hùm trống rỗng, trừ một chiếc.",
+          "🦞 Bẫy tôm hùm"
+        ],
+        [
+          "Người đắm tàu Lev nghe hiểu",
+          "Anh nói mình không biết tiếng Hà Lan. Anh đã bật cười vì một câu đùa của ông ngư dân.",
+          "🧶 Chăn len"
+        ],
+        [
+          "Thừa một lần",
+          "Hồi còi thứ năm ấy không phải nhầm lẫn. Đó là một hiệu lệnh, cho một con thuyền trong sương mù.",
+          "⛵ Thuyền buồm nhỏ"
+        ]
+      ]
+    ],
+    "vuurtoren-4": [
+      "Phần IV · Sổ nhật ký",
+      "Đêm nào người gác đèn cũng ghi vào sổ nhật ký: thời tiết, tàu thuyền, ngọn đèn. Trang cuối cùng đã bị xé mất.",
+      "Trang cuối cùng đã được tìm thấy, nhàu nát và cháy mất một nửa. Những gì ghi trên đó, bạn đã biết từ trước.",
+      "Trong sổ nhật ký, mọi thứ đều theo thứ tự, và mỗi dòng đều chỉ về một khu vực. Hãy đặt nghi phạm có ít lựa chọn nhất trước; phần còn lại sẽ theo sau.",
+      [
+        [
+          "Trang cuối cùng",
+          "Trang giấy đã bị xé ra. Trang kế tiếp còn hằn dấu ngòi bút của ông.",
+          "📄 Vết hằn"
+        ],
+        [
+          "Quản gia Martha lau chùi",
+          "Bà nói mình chưa bao giờ đụng vào sổ nhật ký. Trên bìa sổ có sáp đánh bóng.",
+          "🧽 Khăn lau"
+        ],
+        [
+          "Mực và bút chì",
+          "Người gác đèn luôn viết bằng mực. Dòng cuối cùng lại viết bằng bút chì.",
+          "✏️ Bút chì thợ mộc"
+        ],
+        [
+          "Hoa tiêu Kees đọc cùng",
+          "Ông biết những con tàu nào có trong sổ nhật ký. Cả con tàu nào không có trong đó.",
+          "📋 Danh sách tàu"
+        ],
+        [
+          "Thời tiết theo người gác đèn",
+          "Gió cấp chín, ông ghi vào hôm thứ Ba. Hôm thứ Ba trời lặng gió.",
+          "🌬️ Máy đo gió"
+        ],
+        [
+          "Cô giáo Wilma nhận ra nét chữ",
+          "Cô biết mọi nét chữ trên đảo. Nét chữ này cô cũng biết, cô nói vậy, rồi im lặng.",
+          "🖋️ Bút chấm mực"
+        ],
+        [
+          "Điện báo viên Fien chép lại",
+          "Mỗi bức điện gửi vào đất liền, cô đều chép lại vào sổ riêng. Có một bức điện được chép hai lần.",
+          "📒 Sổ điện báo"
+        ],
+        [
+          "Tro trong lò sưởi",
+          "Trong lò sưởi của phòng điện báo có tro. Lẫn trong đó là một góc giấy có ghi một con số.",
+          "🔥 Góc giấy cháy"
+        ]
+      ]
+    ],
+    "vuurtoren-5": [
+      "Phần V · Thuyền tiếp tế",
+      "Mỗi tháng một lần, thuyền tiếp tế chở dầu hỏa, bột mì và thư từ tới. Cả đảo ra đứng trên cầu tàu. Lần này, con thuyền mang theo một thứ khi quay về.",
+      "Con thuyền rời đi mà không có chiếc thùng. Người lái thuyền không bao giờ biết mình suýt chở theo thứ gì.",
+      "Khi thuyền cập bến, ai cũng khuân vác ở một nơi khác nhau. Hãy bắt đầu với người nói không ai ở cùng khu vực với mình: mọi người khác bị loại khỏi khu vực đó ngay lập tức.",
+      [
+        [
+          "Mỗi tháng một lần",
+          "Dầu hỏa, bột mì và thư từ, như mọi tháng. Lần này có thêm một chiếc thùng không đề tên.",
+          "🛢️ Thùng dầu hỏa"
+        ],
+        [
+          "Thư từ",
+          "Có một lá thư gửi người gác đèn. Gửi đi từ đất liền, một ngày sau khi ông chết.",
+          "✉️ Lá thư"
+        ],
+        [
+          "Quản gia Martha đặt hàng",
+          "Trong danh sách của bà: bột mì, muối và thuốc diệt chuột. Trên đảo không có con chuột nào.",
+          "☠️ Thuốc diệt chuột"
+        ],
+        [
+          "Nhà thuyền",
+          "Trong nhà thuyền có một chiếc thùng sẽ được gửi về. Trên nắp thùng có lỗ thông hơi.",
+          "📦 Thùng có lỗ thông hơi"
+        ],
+        [
+          "Người đắm tàu Lev muốn đi theo",
+          "Anh nói mình không có tiền. Anh đã chìa ra cho người lái thuyền một đồng tiền vàng.",
+          "🪙 Đồng tiền vàng"
+        ],
+        [
+          "Nhà điểu học Dorien gửi hàng",
+          "Mười tiêu bản chim cho viện bảo tàng. Một tiêu bản nặng hơn mức một con chim nên có.",
+          "🐦 Tiêu bản mòng biển"
+        ],
+        [
+          "Bảng kê hàng",
+          "Mọi thứ trong bảng kê hàng đều khớp. Trọng lượng thì không.",
+          "⚖️ Cân bàn"
+        ],
+        [
+          "Hoa tiêu Kees đưa thuyền đi",
+          "Ông dẫn thuyền đi qua những bãi đá, như mọi khi. Lần này mất thêm một giờ.",
+          "🧭 La bàn"
+        ]
+      ]
+    ],
+    "vuurtoren-6": [
+      "Phần VI · Mùa chim di cư",
+      "Hàng nghìn con chim di cư dừng chân trên đảo, trên đường về phương nam. Nhà điểu học Dorien đếm chúng từ trên vách đá, và ai cũng phụ giúp. Không phải ai cũng nhìn đàn chim.",
+      "Đàn chim bay tiếp về phương nam. Trong sổ thực địa của Dorien, con số lại khớp.",
+      "Trên vách đá, ai cũng ngước nhìn lên trời, không ai nhìn ai. Lời khai ngày càng dè sẻn: hãy dùng bút chì, gạch bỏ những ô không phù hợp, rồi xem còn lại gì.",
+      [
+        [
+          "Nghìn đôi cánh",
+          "Lúc mặt trời mọc, vách đá kín chim. Có một chỗ vẫn trống, như thể có người đã nằm ở đó.",
+          "🪶 Lông mòng biển"
+        ],
+        [
+          "Nhà điểu học Dorien quan sát",
+          "Suốt buổi sáng, ống nhòm của cô chĩa về phía nhà thuyền. Ở đó không có chim làm tổ.",
+          "🔭 Ống nhòm"
+        ],
+        [
+          "Tổ chim trống",
+          "Tổ chim trên vách đá trống không, như lẽ thường vào tháng 11. Trừ một chiếc chìa khóa.",
+          "🪺 Tổ chim"
+        ],
+        [
+          "Phụ tá Jonas đi tìm trứng",
+          "Anh nói mình trèo xuống vách đá để lấy trứng mòng biển. Vào tháng 11.",
+          "🧗 Dây leo núi"
+        ],
+        [
+          "Bồ câu đưa thư",
+          "Giữa đàn chim di cư có một con bồ câu. Nó không bay về phương nam, mà bay vào đất liền.",
+          "🕊️ Bồ câu đưa thư"
+        ],
+        [
+          "Ngư dân Bartel cho mòng biển ăn",
+          "Sáng nào ông cũng ném cá vụn cho mòng biển. Sáng nay ông ném một thứ khác xuống biển.",
+          "🐟 Xô cá"
+        ],
+        [
+          "Người đắm tàu Lev biết các loài chim",
+          "Anh nói mình là thủy thủ. Anh biết tên Latinh của từng loài chim.",
+          "📚 Sách về chim"
+        ],
+        [
+          "Một người không nghỉ ngơi",
+          "Hàng nghìn con chim ngủ trên đảo. Có một người xem chim cầm đèn đi dọc bãi biển suốt đêm.",
+          "🥾 Ủng dính cát"
+        ]
+      ]
+    ],
+    "vuurtoren-7": [
+      "Phần VII · Bão mùa đông",
+      "Cơn bão dữ dội nhất trong hai mươi năm. Sóng đánh tràn qua vách đá, và hòn đảo bị cắt đứt khỏi đất liền suốt ba tuần.",
+      "Bão tan và máy điện báo lại kêu tích tắc. Những gì bị nhốt trong nhà suốt ba tuần, giờ không còn bị nhốt nữa.",
+      "Bàn chơi lớn hơn, còn hòn đảo thì nhỏ lại. Nếu báo cáo nói một khu vực bỏ trống, thì cả khu vực đó bị loại đối với mọi người.",
+      [
+        [
+          "Ba tuần trong nhà",
+          "Tám người, một ngôi nhà, ba tuần. Đến ngày thứ mười hai, không ai còn nói câu nào.",
+          "🪵 Củi"
+        ],
+        [
+          "Sợi cáp",
+          "Ngày bão đầu tiên, sợi cáp nối vào đất liền bị đứt. Cáp tự đứt thì không gọn như thế.",
+          "🔌 Cáp điện báo"
+        ],
+        [
+          "Quản gia Martha chia súp",
+          "Mỗi tối tám bát súp. Có chín chiếc bát trở về trống trơn.",
+          "🥣 Bát súp"
+        ],
+        [
+          "Tầng hầm ngập nước",
+          "Nước trong tầng hầm ngập tới đầu gối. Mọi thứ đều nổi lềnh bềnh, trừ một chiếc rương.",
+          "⚓ Rương chì"
+        ],
+        [
+          "Cô giáo Wilma dạy học",
+          "Bài chính tả của cô kể về một con tàu bị chìm. Người đắm tàu Lev đã sửa lại cái tên.",
+          "📝 Bài chính tả"
+        ],
+        [
+          "Hoa tiêu Kees mất một chiếc cúc",
+          "Áo khoác của ông thiếu một chiếc cúc đồng. Chiếc cúc ấy đã nằm trong phòng đèn, từ đêm đầu tiên.",
+          "🟡 Cúc đồng"
+        ],
+        [
+          "Phụ tá Jonas giữ đèn sáng",
+          "Ba tuần liền, một mình anh giữ cho ngọn đèn sáng. Anh chỉ dùng hết một nửa số dầu hỏa.",
+          "🪔 Bấc đèn"
+        ],
+        [
+          "Ngư dân Bartel nhớ lại",
+          "Ông từng thấy một cơn bão như thế này một lần, hai mươi năm trước. Lần đó, ngọn đèn cũng tắt.",
+          "📰 Tờ báo cũ"
+        ]
+      ]
+    ],
+    "vuurtoren-8": [
+      "Phần VIII · Ngọn đèn cuối cùng",
+      "Một người gác đèn mới đang từ đất liền tới. Thêm một đêm nữa dưới ngọn đèn xoay, vẫn những gương mặt như đêm bão đầu tiên.",
+      "Van Dam bước lên thuyền tiếp tế, chạm tay vào vành mũ và không ngoảnh lại. Ngọn đèn lại quay. Thuyền trưởng nào cũng nhìn thấy nó, và bạn biết ai đã dập tắt nó.",
+      "Những vụ án cuối cùng, gần như đều trên bàn chơi lớn. Đừng sa lầy vào người khó nhất: hãy đặt những người khác trước, khi đó người cuối cùng thường chỉ còn đúng một ô.",
+      [
+        [
+          "Người gác đèn mới",
+          "Ông đến bằng thuyền và leo thẳng lên đỉnh tháp. Ông đã biết sẵn đường đi.",
+          "🧳 Vali"
+        ],
+        [
+          "Quản gia Martha thu dọn hành lý",
+          "Hai mươi năm bà nấu ăn cho người gác đèn. Trong vali của bà có chiếc nhẫn cưới của ông.",
+          "💍 Nhẫn cưới"
+        ],
+        [
+          "Điện báo viên Fien đánh bức điện cuối",
+          "Bức điện cuối cùng của cô gửi vào đất liền: mọi việc ổn cả. Cô đánh nó hai lần, lần thứ hai bằng một mã khác.",
+          "🔤 Mã Morse"
+        ],
+        [
+          "Người đắm tàu Lev có một cái tên",
+          "Sau hai tháng, anh mới nói mình tên là gì. Đó là tên của con tàu.",
+          "🏷️ Biển tên tàu"
+        ],
+        [
+          "Nhà điểu học Dorien ra đi",
+          "Cô đã đếm bốn nghìn con chim cho viện bảo tàng. Cô mang theo bốn nghìn lẻ một con.",
+          "🗃️ Thùng đựng chim"
+        ],
+        [
+          "Phụ tá Jonas không được làm người gác đèn",
+          "Ba năm anh phụ giúp người gác đèn. Người ta đã chọn một người khác, và anh đã biết chuyện đó từ một tháng trước.",
+          "📜 Thư bổ nhiệm"
+        ],
+        [
+          "Cô giáo Wilma ở lại",
+          "Ai cũng đi theo thuyền. Cô ở lại, vì ngôi trường, mà ngôi trường đã đóng cửa một tháng nay.",
+          "🔔 Chuông trường"
+        ],
+        [
+          "Ngọn đèn cuối cùng",
+          "Nơi mọi chuyện bắt đầu, trong phòng đèn. Cũng là nơi mọi chuyện kết thúc.",
+          "🔆 Thấu kính Fresnel"
+        ]
+      ]
     ]
   },
 
@@ -6153,6 +7973,22 @@
         "rws": "khu vực"
       },
       "casino": {
+        "rw": "khu vực",
+        "rws": "khu vực"
+      },
+      "filmstudio": {
+        "rw": "khu vực",
+        "rws": "khu vực"
+      },
+      "karavaan": {
+        "rw": "khu vực",
+        "rws": "khu vực"
+      },
+      "abdij": {
+        "rw": "khu vực",
+        "rws": "khu vực"
+      },
+      "vuurtoren": {
         "rw": "khu vực",
         "rws": "khu vực"
       }
@@ -6337,6 +8173,66 @@
       },
       "shaker": {
         "a": "một chiếc bình lắc cocktail"
+      },
+      "filmcamera": {
+        "a": "một chiếc máy quay phim"
+      },
+      "schijnwerper": {
+        "a": "một chiếc đèn rọi"
+      },
+      "regiestoel": {
+        "a": "một chiếc ghế đạo diễn"
+      },
+      "klapbord": {
+        "a": "một tấm bảng clapper"
+      },
+      "filmspoel": {
+        "a": "một cuộn phim"
+      },
+      "tapijt": {
+        "a": "một tấm thảm"
+      },
+      "specerijen": {
+        "a": "một giỏ gia vị"
+      },
+      "kruik": {
+        "a": "một chiếc vò nước"
+      },
+      "zadel": {
+        "a": "một chiếc yên lạc đà"
+      },
+      "weegschaal": {
+        "a": "một chiếc cân đồng"
+      },
+      "lessenaar": {
+        "a": "một chiếc bàn viết"
+      },
+      "kandelaar": {
+        "a": "một chiếc chân nến"
+      },
+      "bijenkorf": {
+        "a": "một tổ ong"
+      },
+      "vijzel": {
+        "a": "một chiếc cối giã thuốc"
+      },
+      "zandloper": {
+        "a": "một chiếc đồng hồ cát"
+      },
+      "boei": {
+        "a": "một chiếc phao cứu sinh"
+      },
+      "fuik": {
+        "a": "một chiếc bẫy tôm hùm"
+      },
+      "misthoorn": {
+        "a": "một chiếc còi sương mù"
+      },
+      "stormlamp": {
+        "a": "một chiếc đèn bão"
+      },
+      "verrekijker": {
+        "a": "một chiếc kính viễn vọng"
       }
     },
     "templates": {
@@ -6918,6 +8814,166 @@
         },
         "Salon": {
           "the": "phòng khách"
+        }
+      },
+      "filmstudio": {
+        "Studiohal": {
+          "the": "trường quay"
+        },
+        "Montagekamer": {
+          "the": "phòng dựng phim"
+        },
+        "Kleedkamer": {
+          "the": "phòng thay đồ"
+        },
+        "Kantine": {
+          "the": "căng tin"
+        },
+        "Rekwisietenkamer": {
+          "the": "phòng đạo cụ"
+        },
+        "Projectiezaal": {
+          "the": "phòng chiếu"
+        },
+        "Werkplaats": {
+          "the": "xưởng"
+        },
+        "Directiekamer": {
+          "the": "phòng giám đốc"
+        },
+        "Geluidsstudio": {
+          "the": "phòng thu âm"
+        },
+        "Archief": {
+          "the": "kho phim"
+        },
+        "Buitenset": {
+          "the": "bãi ngoại cảnh",
+          "in": "trên bãi ngoại cảnh"
+        },
+        "Poort": {
+          "the": "khu cổng"
+        }
+      },
+      "karavaan": {
+        "Binnenplaats": {
+          "the": "sân trong",
+          "in": "trong sân"
+        },
+        "Bazaar": {
+          "the": "khu chợ"
+        },
+        "Theehuis": {
+          "the": "quán trà"
+        },
+        "Badhuis": {
+          "the": "nhà tắm hơi"
+        },
+        "Waterput": {
+          "the": "khu giếng nước"
+        },
+        "Gastenkamer": {
+          "the": "phòng nghỉ"
+        },
+        "Tapijtwinkel": {
+          "the": "tiệm thảm"
+        },
+        "Poort": {
+          "the": "khu cổng"
+        },
+        "Dakterras": {
+          "the": "sân thượng",
+          "in": "trên sân thượng"
+        },
+        "Stal": {
+          "the": "chuồng lạc đà"
+        },
+        "Keuken": {
+          "the": "nhà bếp"
+        },
+        "Voorraadkamer": {
+          "the": "kho dự trữ"
+        }
+      },
+      "abdij": {
+        "Scriptorium": {
+          "the": "phòng chép sách"
+        },
+        "Kapel": {
+          "the": "nhà nguyện"
+        },
+        "Kruidentuin": {
+          "the": "vườn thuốc"
+        },
+        "Bibliotheek": {
+          "the": "thư viện"
+        },
+        "Refter": {
+          "the": "nhà ăn"
+        },
+        "Slaapzaal": {
+          "the": "phòng ngủ"
+        },
+        "Kloostergang": {
+          "the": "hành lang"
+        },
+        "Kelder": {
+          "the": "tầng hầm"
+        },
+        "Keuken": {
+          "the": "nhà bếp"
+        },
+        "Klokkentoren": {
+          "the": "tháp chuông",
+          "in": "trên tháp chuông"
+        },
+        "Ziekenboeg": {
+          "the": "phòng y tế"
+        },
+        "Bakkerij": {
+          "the": "xưởng bánh"
+        }
+      },
+      "vuurtoren": {
+        "Lantaarnkamer": {
+          "the": "phòng đèn"
+        },
+        "Wenteltrap": {
+          "the": "cầu thang xoắn",
+          "in": "trên cầu thang xoắn"
+        },
+        "Wachtershuis": {
+          "the": "nhà gác đèn"
+        },
+        "Steiger": {
+          "the": "cầu tàu",
+          "in": "trên cầu tàu"
+        },
+        "Botenhuis": {
+          "the": "nhà thuyền"
+        },
+        "Seinkamer": {
+          "the": "phòng điện báo"
+        },
+        "Klif": {
+          "the": "khu vách đá",
+          "in": "trên vách đá"
+        },
+        "Strand": {
+          "the": "bãi biển",
+          "in": "trên bãi biển"
+        },
+        "Keuken": {
+          "the": "nhà bếp"
+        },
+        "Kelder": {
+          "the": "tầng hầm"
+        },
+        "Werkplaats": {
+          "the": "xưởng"
+        },
+        "Voorraadkamer": {
+          "the": "kho dự trữ"
         }
       }
     }

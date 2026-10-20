@@ -27,10 +27,15 @@ const WEEK_TITLES = {
   hacienda: ['Het vat zonder merk', 'De nacht van de kapelklok', 'Het testament onder de vloer', 'De laatste oogst van San Isidro'],
   opera:    ['Het spook van loge vijf', 'De aria die niemand kende', 'Het touw dat knapte', 'De laatste buiging van Colette'],
   opgraving: ['De vloek van Nefer-Ankh', 'Het beeldje dat verdween', 'De nacht van de zandstorm', 'De laatste kist naar Caïro'],
-  casino:   ['De kluis van Vitali', 'Alles op zeventien', 'De ronde van Monaco', 'Het laatste spel van Azur']
+  casino:   ['De kluis van Vitali', 'Alles op zeventien', 'De ronde van Monaco', 'Het laatste spel van Azur'],
+  filmstudio: ['De film die niemand mocht zien', 'De stunt die misging', 'De stem op de geluidsband', 'De laatste scène van Gold'],
+  karavaan: ['De saffraan van Al-Nour', 'De nacht van duizend sterren', 'Het tapijt met twee patronen', 'De laatste karavaan'],
+  abdij:    ['Het boek zonder titel', 'De nacht van de stille klok', 'Het kruid dat niet genas', 'De laatste abt van Sint-Aldric'],
+  vuurtoren: ['Het licht dat uitging', 'De man uit zee', 'De bladzijde uit het logboek', 'De laatste nacht op Grauwkaap']
 };
-// sinds 1.4 met Hacienda, Opera, Opgraving en Casino: de rotatie verschuift, daarom bewaart board.js een weekzaak per week én wereld
-const WEEK_THEMES = ['landhuis', 'piraten', 'hotel', 'ruimte', 'museum', 'trein', 'circus', 'skihut', 'hacienda', 'opera', 'opgraving', 'casino'];
+// sinds 1.4 met Hacienda, Opera, Opgraving, Casino, Filmstudio, Karavaan, Abdij en Vuurtoren: de rotatie verschuift, daarom bewaart board.js een weekzaak per week én wereld
+const WEEK_THEMES = ['landhuis', 'piraten', 'hotel', 'ruimte', 'museum', 'trein', 'circus', 'skihut', 'hacienda', 'opera', 'opgraving', 'casino',
+  'filmstudio', 'karavaan', 'abdij', 'vuurtoren'];
 
 const Progress = {
   // ── opslag (via App, zodat privémodus nooit crasht) ──
@@ -197,6 +202,10 @@ const Progress = {
     { id: 'opera',         icon: '🎭', title: 'Het doek valt',          hint: 'Maak alle delen van Opéra Lumière af',                      test: c => c.worldsDone.includes('opera') },
     { id: 'opgraving',     icon: '🏺', title: 'De vloek verbroken',     hint: 'Maak alle delen van Het Graf van Nefer-Ankh af',            test: c => c.worldsDone.includes('opgraving') },
     { id: 'casino',        icon: '🎰', title: 'Het huis verliest',      hint: 'Maak alle delen van Casino Azur af',                        test: c => c.worldsDone.includes('casino') },
+    { id: 'filmstudio',    icon: '🎬', title: 'Het doek is gevallen',   hint: 'Maak alle delen van Paradise Pictures af',                  test: c => c.worldsDone.includes('filmstudio') },
+    { id: 'karavaan',      icon: '🐫', title: 'De karavaan trekt verder', hint: 'Maak alle delen van Karavanserai Al-Nour af',             test: c => c.worldsDone.includes('karavaan') },
+    { id: 'abdij',         icon: '⛪', title: 'De klok luidt',          hint: 'Maak alle delen van De Abdij van Sint-Aldric af',           test: c => c.worldsDone.includes('abdij') },
+    { id: 'vuurtoren',     icon: '🌊', title: 'Het licht brandt weer',  hint: 'Maak alle delen van Vuurtoren Grauwkaap af',                test: c => c.worldsDone.includes('vuurtoren') },
     { id: 'opdrachten',    icon: '🎁', title: 'Alle opdrachten',       hint: 'Maak alle drie de opdrachten van een dag af',                test: c => !!c.questsAll },
     { id: 'vrije-dag',     icon: '🧊', title: 'Gered door een vrije dag', hint: 'Laat een vrije dag je streak redden',                     test: c => !!c.freezeUsed },
     { id: 'vlekkeloos',    icon: '⭐', title: 'Vlekkeloos',            hint: 'Haal tien keer drie sterren in de campagne',                 test: c => c.threeStars >= 10 },

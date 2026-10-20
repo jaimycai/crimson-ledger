@@ -1155,6 +1155,250 @@
           "Gokker Jack": "o Apostador Jack",
           "Huisdetective Nora": "a Chefe de segurança Nora"
         }
+      },
+      "filmstudio": {
+        "title": "Paradise Pictures",
+        "short": "Estúdio",
+        "victimName": "Magnata Samuel Gold",
+        "roomWord": "área",
+        "roomWordPlural": "áreas",
+        "tagline": "Hollywood, 1931. O primeiro filme falado do estúdio e um magnata que não chega ao fim da última cena.",
+        "intro": "Paradise Pictures, Hollywood, 1931. O estúdio roda seu primeiro filme falado. Depois da última tomada do dia, o magnata Samuel Gold está caído na sala de cinema, e o filme ainda está passando.",
+        "outro": "As luzes se apagam e o filme está na lata. Enfim, o final faz sentido.",
+        "rooms": {
+          "Studiohal": "Set",
+          "Montagekamer": "Montagem",
+          "Kleedkamer": "Camarim",
+          "Kantine": "Cantina",
+          "Rekwisietenkamer": "Depósito",
+          "Projectiezaal": "Sala de Cinema",
+          "Werkplaats": "Oficina",
+          "Directiekamer": "Escritório",
+          "Geluidsstudio": "Cabine de Som",
+          "Archief": "Arquivo",
+          "Buitenset": "Set Externo",
+          "Poort": "Portaria"
+        },
+        "furniture": {
+          "filmcamera": "uma câmera de cinema",
+          "schijnwerper": "um refletor",
+          "regiestoel": "uma cadeira de diretor",
+          "klapbord": "uma claquete",
+          "filmspoel": "um rolo de filme"
+        },
+        "suspects": {
+          "Filmster Vivian": "Estrela Vivian",
+          "Regisseur Baxter": "Diretor Baxter",
+          "Schrijfster Peggy": "Roteirista Peggy",
+          "Stuntman Hank": "Dublê Hank",
+          "Cameraman Lenny": "Cinegrafista Lenny",
+          "Grimeuse Rita": "Maquiadora Rita",
+          "Agent Sid": "Agente Sid",
+          "Starlet Joy": "Novata Joy"
+        },
+        "suspectShort": {
+          "Filmster Vivian": "Vivian",
+          "Regisseur Baxter": "Baxter",
+          "Schrijfster Peggy": "Peggy",
+          "Stuntman Hank": "Hank",
+          "Cameraman Lenny": "Lenny",
+          "Grimeuse Rita": "Rita",
+          "Agent Sid": "Sid",
+          "Starlet Joy": "Joy"
+        },
+        "suspectRef": {
+          "Filmster Vivian": "a Estrela Vivian",
+          "Regisseur Baxter": "o Diretor Baxter",
+          "Schrijfster Peggy": "a Roteirista Peggy",
+          "Stuntman Hank": "o Dublê Hank",
+          "Cameraman Lenny": "o Cinegrafista Lenny",
+          "Grimeuse Rita": "a Maquiadora Rita",
+          "Agent Sid": "o Agente Sid",
+          "Starlet Joy": "a Novata Joy"
+        }
+      },
+      "karavaan": {
+        "title": "O Caravançará de Al-Nour",
+        "short": "Caravana",
+        "victimName": "Caravaneiro Idris",
+        "roomWord": "área",
+        "roomWordPlural": "áreas",
+        "tagline": "Um oásis na velha rota das especiarias. Doze camelos, oito viajantes e um caravaneiro que não parte mais.",
+        "intro": "Caravançará de Al-Nour, um oásis na velha rota das especiarias. A caravana descansa uma noite dentro das muralhas. Ao nascer do sol, o caravaneiro Idris está caído junto aos camelos, e o portão ficou fechado a noite toda.",
+        "outro": "A caravana segue viagem. Atrás do portão, fica um segredo a menos.",
+        "rooms": {
+          "Binnenplaats": "Pátio",
+          "Bazaar": "Bazar",
+          "Theehuis": "Casa de Chá",
+          "Badhuis": "Casa de Banhos",
+          "Waterput": "Poço",
+          "Gastenkamer": "Quarto",
+          "Tapijtwinkel": "Tapeçaria",
+          "Poort": "Portão",
+          "Dakterras": "Terraço",
+          "Stal": "Estábulo",
+          "Keuken": "Cozinha",
+          "Voorraadkamer": "Despensa"
+        },
+        "furniture": {
+          "tapijt": "um tapete",
+          "specerijen": "um cesto de especiarias",
+          "kruik": "um cântaro",
+          "zadel": "uma sela de camelo",
+          "weegschaal": "uma balança de latão"
+        },
+        "suspects": {
+          "Koopvrouw Layla": "Mercadora Layla",
+          "Gids Tariq": "Guia Tariq",
+          "Tapijthandelaar Yusuf": "Tapeceiro Yusuf",
+          "Reizigster Beatrix": "Viajante Beatrix",
+          "Theeschenker Hamid": "Garçom Hamid",
+          "Sterrenkijker Zahra": "Astrônoma Zahra",
+          "Bewaker Karim": "Guarda Karim",
+          "Dichteres Samira": "Poetisa Samira"
+        },
+        "suspectShort": {
+          "Koopvrouw Layla": "Layla",
+          "Gids Tariq": "Tariq",
+          "Tapijthandelaar Yusuf": "Yusuf",
+          "Reizigster Beatrix": "Beatrix",
+          "Theeschenker Hamid": "Hamid",
+          "Sterrenkijker Zahra": "Zahra",
+          "Bewaker Karim": "Karim",
+          "Dichteres Samira": "Samira"
+        },
+        "suspectRef": {
+          "Koopvrouw Layla": "a Mercadora Layla",
+          "Gids Tariq": "o Guia Tariq",
+          "Tapijthandelaar Yusuf": "o Tapeceiro Yusuf",
+          "Reizigster Beatrix": "a Viajante Beatrix",
+          "Theeschenker Hamid": "o Garçom Hamid",
+          "Sterrenkijker Zahra": "a Astrônoma Zahra",
+          "Bewaker Karim": "o Guarda Karim",
+          "Dichteres Samira": "a Poetisa Samira"
+        }
+      },
+      "abdij": {
+        "title": "A Abadia de Santo Aldric",
+        "short": "Abadia",
+        "victimName": "Abade Bertram",
+        "roomWord": "área",
+        "roomWordPlural": "áreas",
+        "tagline": "Uma abadia nas montanhas, 1327. Um livro proibido, uma biblioteca trancada e um abade que não sobrevive à noite.",
+        "intro": "Abadia de Santo Aldric, inverno de 1327. A neve fecha a passagem na montanha. Depois da oração da noite, o abade Bertram está caído no scriptorium, com tinta nos dedos.",
+        "outro": "O sino toca para as vésperas. O livro voltou à sua prateleira.",
+        "rooms": {
+          "Scriptorium": "Scriptorium",
+          "Kapel": "Capela",
+          "Kruidentuin": "Horta de Ervas",
+          "Bibliotheek": "Biblioteca",
+          "Refter": "Refeitório",
+          "Slaapzaal": "Dormitório",
+          "Kloostergang": "Claustro",
+          "Kelder": "Porão",
+          "Keuken": "Cozinha",
+          "Klokkentoren": "Campanário",
+          "Ziekenboeg": "Enfermaria",
+          "Bakkerij": "Padaria"
+        },
+        "furniture": {
+          "lessenaar": "uma mesa de copista",
+          "kandelaar": "um castiçal",
+          "bijenkorf": "uma colmeia",
+          "vijzel": "um pilão",
+          "zandloper": "uma ampulheta"
+        },
+        "suspects": {
+          "Broeder Anselm": "Irmão Anselm",
+          "Broeder Cuthbert": "Irmão Cuthbert",
+          "Novice Elias": "Noviço Elias",
+          "Pelgrim Gisela": "Peregrina Gisela",
+          "Kruidenvrouw Hilde": "Erveira Hilde",
+          "Gravin Mathilde": "Condessa Mathilde",
+          "Verluchtster Odile": "Iluminadora Odile",
+          "Kelderbroeder Waldo": "Despenseiro Waldo"
+        },
+        "suspectShort": {
+          "Broeder Anselm": "Anselm",
+          "Broeder Cuthbert": "Cuthbert",
+          "Novice Elias": "Elias",
+          "Pelgrim Gisela": "Gisela",
+          "Kruidenvrouw Hilde": "Hilde",
+          "Gravin Mathilde": "Mathilde",
+          "Verluchtster Odile": "Odile",
+          "Kelderbroeder Waldo": "Waldo"
+        },
+        "suspectRef": {
+          "Broeder Anselm": "o Irmão Anselm",
+          "Broeder Cuthbert": "o Irmão Cuthbert",
+          "Novice Elias": "o Noviço Elias",
+          "Pelgrim Gisela": "a Peregrina Gisela",
+          "Kruidenvrouw Hilde": "a Erveira Hilde",
+          "Gravin Mathilde": "a Condessa Mathilde",
+          "Verluchtster Odile": "a Iluminadora Odile",
+          "Kelderbroeder Waldo": "o Despenseiro Waldo"
+        }
+      },
+      "vuurtoren": {
+        "title": "O Farol de Cabo Cinzento",
+        "short": "Farol",
+        "victimName": "Faroleiro Silas Mourne",
+        "roomWord": "área",
+        "roomWordPlural": "áreas",
+        "tagline": "1900. Uma ilha, uma tempestade de três dias e um farol apagado pela primeira vez em vinte anos.",
+        "intro": "Farol de Cabo Cinzento, novembro de 1900. Uma tempestade isola a ilha do continente. À meia-noite, a luz se apaga. Lá em cima, na sala da luz, o faroleiro Silas Mourne está caído.",
+        "outro": "A luz gira de novo. Todo navegante a vê, e você sabe quem a apagou.",
+        "rooms": {
+          "Lantaarnkamer": "Sala da Luz",
+          "Wenteltrap": "Escada Caracol",
+          "Wachtershuis": "Casa do Farol",
+          "Steiger": "Cais",
+          "Botenhuis": "Casa de Barcos",
+          "Seinkamer": "Sala de Sinais",
+          "Klif": "Penhasco",
+          "Strand": "Praia",
+          "Keuken": "Cozinha",
+          "Kelder": "Porão",
+          "Werkplaats": "Oficina",
+          "Voorraadkamer": "Despensa"
+        },
+        "furniture": {
+          "boei": "uma boia salva-vidas",
+          "fuik": "um covo de lagosta",
+          "misthoorn": "uma buzina de nevoeiro",
+          "stormlamp": "um lampião",
+          "verrekijker": "uma luneta"
+        },
+        "suspects": {
+          "Assistent Jonas": "Ajudante Jonas",
+          "Huishoudster Martha": "Governanta Martha",
+          "Visser Bartel": "Pescador Bartel",
+          "Loodsman Kees": "Prático Kees",
+          "Vogelkundige Dorien": "Ornitóloga Dorien",
+          "Schipbreukeling Lev": "Náufrago Lev",
+          "Onderwijzeres Wilma": "Professora Wilma",
+          "Telegrafiste Fien": "Telegrafista Fien"
+        },
+        "suspectShort": {
+          "Assistent Jonas": "Jonas",
+          "Huishoudster Martha": "Martha",
+          "Visser Bartel": "Bartel",
+          "Loodsman Kees": "Kees",
+          "Vogelkundige Dorien": "Dorien",
+          "Schipbreukeling Lev": "Lev",
+          "Onderwijzeres Wilma": "Wilma",
+          "Telegrafiste Fien": "Fien"
+        },
+        "suspectRef": {
+          "Assistent Jonas": "o Ajudante Jonas",
+          "Huishoudster Martha": "a Governanta Martha",
+          "Visser Bartel": "o Pescador Bartel",
+          "Loodsman Kees": "o Prático Kees",
+          "Vogelkundige Dorien": "a Ornitóloga Dorien",
+          "Schipbreukeling Lev": "o Náufrago Lev",
+          "Onderwijzeres Wilma": "a Professora Wilma",
+          "Telegrafiste Fien": "a Telegrafista Fien"
+        }
       }
     },
     "daily": [
@@ -1261,6 +1505,30 @@
         "Tudo no dezessete",
         "Uma volta em Mônaco",
         "O último jogo do Azur"
+      ],
+      "filmstudio": [
+        "O filme que ninguém podia ver",
+        "A cena de risco que deu errado",
+        "A voz na trilha sonora",
+        "A última cena de Gold"
+      ],
+      "karavaan": [
+        "O açafrão de Al-Nour",
+        "A noite das mil estrelas",
+        "O tapete com dois padrões",
+        "A última caravana"
+      ],
+      "abdij": [
+        "O livro sem título",
+        "A noite do sino calado",
+        "A erva que não curou",
+        "O último abade de Santo Aldric"
+      ],
+      "vuurtoren": [
+        "A luz que se apagou",
+        "O homem que veio do mar",
+        "A página do diário",
+        "A última noite em Cabo Cinzento"
       ]
     },
     "medals": {
@@ -1375,6 +1643,22 @@
       "casino": [
         "A casa perde",
         "Termine todas as partes do Casino Azur"
+      ],
+      "filmstudio": [
+        "Sobem os créditos",
+        "Termine todas as partes da Paradise Pictures"
+      ],
+      "karavaan": [
+        "A caravana segue viagem",
+        "Termine todas as partes do Caravançará de Al-Nour"
+      ],
+      "abdij": [
+        "O sino toca",
+        "Termine todas as partes da Abadia de Santo Aldric"
+      ],
+      "vuurtoren": [
+        "A luz brilha de novo",
+        "Termine todas as partes do Farol de Cabo Cinzento"
       ]
     },
     "quests": {
@@ -6083,6 +6367,1542 @@
           "♦️ Ás de ouros"
         ]
       ]
+    ],
+    "filmstudio": [
+      "Parte I · A última tomada",
+      "Paradise Pictures, Hollywood, 1931. O estúdio roda seu primeiro filme falado. Depois da última tomada do dia, o magnata Samuel Gold está caído na sala de cinema, e o filme ainda está passando.",
+      "O projetor parou e o magnata está morto. O filme ainda está longe de ficar pronto.",
+      "Um estúdio é um grande galpão com muitas portas. Comece por quem diz em que área estava; “bem ao lado” do refletor só vale em linha reta, nunca na diagonal.",
+      [
+        [
+          "A última tomada",
+          "A tomada quarenta e sete enfim ficou boa. Também foi a última.",
+          "🎬 Claquete"
+        ],
+        [
+          "A sala de cinema",
+          "Quando encontraram o magnata, o filme ainda estava passando. Ele não viu o final.",
+          "📽️ Projetor"
+        ],
+        [
+          "Diretor Baxter grita “corta”",
+          "Ele gritou “corta” o dia inteiro. Às seis, não gritou nada.",
+          "📣 Megafone"
+        ],
+        [
+          "O refletor",
+          "Às seis, todas as luzes se apagaram. Uma hora depois, uma lâmpada ainda estava quente.",
+          "💡 Lâmpada"
+        ],
+        [
+          "Estrela Vivian espera",
+          "Ela esperava a última cena, foi o que ela disse. Já tinha tirado a maquiagem.",
+          "💄 Batom"
+        ],
+        [
+          "O rolo de filme",
+          "No projetor estava o rolo três. O rolo dois estava no chão.",
+          "🎞️ Rolo de filme"
+        ],
+        [
+          "Cinegrafista Lenny continua rodando",
+          "A câmera dele rodou mais um minuto depois da última tomada. Ninguém tinha pedido.",
+          "🎥 Câmera de cinema"
+        ],
+        [
+          "Depois das seis",
+          "Às seis, o portão fechou. Às sete, abriu mais uma vez.",
+          "🔑 Chave do portão"
+        ]
+      ]
+    ],
+    "filmstudio-2": [
+      "Parte II · O rolo desaparecido",
+      "A única cópia do filme novo sumiu. A lata estava no arquivo, trancada à chave. A estreia é daqui a uma semana.",
+      "O rolo está de volta na lata. Uma cena foi cortada, e você sabe por quem.",
+      "Num estúdio, todo mundo aponta para outra pessoa. Para resolver um depoimento sobre duas pessoas, fixe primeiro uma das duas.",
+      [
+        [
+          "A lata vazia",
+          "Na lata está o título do filme. Dentro, nada.",
+          "🗃️ Lata de filme"
+        ],
+        [
+          "Agente Sid liga",
+          "Ele ligou para falar do filme. Ainda ninguém tinha contado a ele que o filme havia sumido.",
+          "☎️ Telefone"
+        ],
+        [
+          "O arquivo",
+          "O arquivo abre com uma única chave. Ela fica pendurada num prego, no escritório.",
+          "🗝️ Chave do arquivo"
+        ],
+        [
+          "Roteirista Peggy reescreve",
+          "Ela reescreveu o final pela quarta vez. Agora, o final tinha um roubo.",
+          "⌨️ Máquina de escrever"
+        ],
+        [
+          "A sala de montagem",
+          "No chão, pedaços de filme. Todos da mesma cena.",
+          "✂️ Tesoura de montagem"
+        ],
+        [
+          "Novata Joy vê alguma coisa",
+          "Ela viu alguém passar com uma lata debaixo do braço. Achou que eram biscoitos.",
+          "🍪 Lata de biscoitos"
+        ],
+        [
+          "O vigia noturno",
+          "O vigia noturno fazia uma ronda a cada hora. Às três, pulou uma.",
+          "🔦 Lanterna"
+        ],
+        [
+          "Mais uma semana",
+          "Os cartazes já estão pela cidade inteira. O filme não está em lugar nenhum.",
+          "🖼️ Cartaz do filme"
+        ]
+      ]
+    ],
+    "filmstudio-3": [
+      "Parte III · A cena de risco",
+      "Um salto do telhado do saloon, no set externo, ensaiado cem vezes. Hoje deu errado. O Dublê Hank jura que alguém mexeu no colchão.",
+      "O colchão está de volta no lugar e o Dublê Hank já anda de novo. O próximo salto dá certo.",
+      "Numa cena de risco, todos olham para cima, não uns para os outros. Quem diz onde NÃO estava também conta alguma coisa: risque essa área na hora.",
+      [
+        [
+          "Ensaiado cem vezes",
+          "Cem saltos, cem acertos. O centésimo primeiro, não.",
+          "🪜 Escada"
+        ],
+        [
+          "Dublê Hank cai",
+          "Ele pulou de seis metros de altura. O colchão estava um metro mais adiante.",
+          "🛏️ Colchão de queda"
+        ],
+        [
+          "O telhado do saloon",
+          "O telhado do saloon é de papelão. Uma das tábuas era de madeira.",
+          "🪵 Tábua"
+        ],
+        [
+          "Diretor Baxter quer outra tomada",
+          "Ele mandou repetir o salto onze vezes. Só na décima segunda desviou o olhar.",
+          "⏱️ Cronômetro"
+        ],
+        [
+          "O cavalo",
+          "O cavalo se assustou com um estouro. No roteiro não havia tiro nenhum.",
+          "🐎 Cavalo"
+        ],
+        [
+          "Maquiadora Rita cola um bigode",
+          "Ela colou um bigode num segundo dublê. Só havia um dublê.",
+          "🥸 Bigode postiço"
+        ],
+        [
+          "A corda",
+          "A corda aguentava duzentos quilos. Arrebentou com setenta.",
+          "🪢 Corda"
+        ],
+        [
+          "Cinegrafista Lenny filma tudo",
+          "Ele filmou o salto de dois ângulos. No segundo rolo, há alguém atrás da chaminé.",
+          "🎞️ Segundo rolo"
+        ]
+      ]
+    ],
+    "filmstudio-4": [
+      "Parte IV · O filme falado",
+      "O primeiro filme com som. A câmera fica dentro de uma cabine à prova de som, e os microfones ficam escondidos em arranjos de flores. Eles ouvem mais do que deviam.",
+      "As tomadas foram montadas e a cabine de som está em silêncio. A conversa do último disco não é mais segredo.",
+      "No set, ninguém pode dizer uma palavra; então preste atenção em quem estava bem ao lado de quem. Posicione primeiro o suspeito com menos opções; o resto se encaixa.",
+      [
+        [
+          "Silêncio no set",
+          "Acima da porta, uma luz vermelha acesa: silêncio. Atrás da porta, alguém cochichava.",
+          "🔴 Luz vermelha"
+        ],
+        [
+          "O microfone nas flores",
+          "Havia um microfone no arranjo de flores. Ninguém da equipe de som o tinha posto ali.",
+          "💐 Arranjo de flores"
+        ],
+        [
+          "Estrela Vivian ganha uma voz",
+          "Nos filmes mudos, ela era uma estrela. No filme falado, outra pessoa canta por ela.",
+          "🎵 Partitura"
+        ],
+        [
+          "A geladeira",
+          "A câmera fica numa cabine que chamam de geladeira. Naquela tarde, havia duas pessoas lá dentro.",
+          "🧊 Geladeira"
+        ],
+        [
+          "Agente Sid cochicha",
+          "Ele cochichou uma proposta no ouvido da estrela. O microfone cochichou junto.",
+          "🎧 Fones de ouvido"
+        ],
+        [
+          "O disco de cera",
+          "O som fica num disco de cera, sincronizado com o filme. Um disco estava três segundos atrasado.",
+          "💿 Disco de cera"
+        ],
+        [
+          "Roteirista Peggy ouve a gravação",
+          "Ela mesma escreveu cada fala. Uma fala da gravação, ela não conhecia.",
+          "📝 Roteiro"
+        ],
+        [
+          "O que o microfone ouviu",
+          "Na gravação, ouve-se a cena. E, por trás dela, uma porta se fechando.",
+          "🔊 Alto-falante"
+        ]
+      ]
+    ],
+    "filmstudio-5": [
+      "Parte V · A audição",
+      "Cem candidatos para um papel, numa fila que vai até a portaria. Cada um tem três minutos diante da câmera. Um deles não volta do teste de câmera.",
+      "O papel foi entregue e a fila foi para casa. Um teste de câmera nunca será exibido.",
+      "Numa audição, todos estão na fila, mas nem todos na mesma área. Comece por quem diz que estava sozinho; isso resolve uma área inteira de uma vez.",
+      [
+        [
+          "Cem candidatos",
+          "Cem nomes na lista. No fim do dia, noventa e nove.",
+          "📋 Lista de candidatos"
+        ],
+        [
+          "Novata Joy observa",
+          "No ano passado, ela ainda estava naquela fila. Agora observa quem vem atrás dela.",
+          "🎀 Laço de cabelo"
+        ],
+        [
+          "O teste de câmera",
+          "Três minutos diante da câmera. O filme dura quatro.",
+          "🎞️ Teste de câmera"
+        ],
+        [
+          "Maquiadora Rita maquia",
+          "Ela maquiou cem rostos. Um deles ela já conhecia.",
+          "🖌️ Pincel de pó"
+        ],
+        [
+          "Agente Sid fecha contrato",
+          "Ele fez um candidato assinar antes de a audição começar. Esse candidato nunca apareceu.",
+          "🖋️ Caneta-tinteiro"
+        ],
+        [
+          "Número dezessete",
+          "Cada candidato levava um número no peito. O número dezessete passou duas vezes.",
+          "🔢 Número de candidato"
+        ],
+        [
+          "Estrela Vivian fica olhando",
+          "Ela veio ver quem ia substituí-la. Ficou até escurecer.",
+          "🧣 Gola de pele"
+        ],
+        [
+          "Um casaco no cabide",
+          "Às cinco, ainda havia um casaco no cabide. Ninguém veio buscá-lo.",
+          "🧥 Capa de chuva"
+        ]
+      ]
+    ],
+    "filmstudio-6": [
+      "Parte VI · O incêndio no arquivo",
+      "Filmes antigos são de nitrato, e nitrato queima mais rápido que papel. No meio da noite, labaredas saem do arquivo. Alguém sabia com que rapidez o fogo ia se espalhar.",
+      "O fogo foi apagado e o arquivo está preto. Não foi acidente.",
+      "Depois de um incêndio, ninguém sabe ao certo onde estava. Use o Lápis: risque os quadrados impossíveis e veja o que sobra.",
+      [
+        [
+          "Nitrato",
+          "Em cada caixa está escrito: proibido fumar. No chão, havia uma bituca.",
+          "🚭 Placa de proibido fumar"
+        ],
+        [
+          "Os bombeiros",
+          "Os bombeiros chegaram em dez minutos. O arquivo queimou em cinco.",
+          "🚒 Caminhão de bombeiros"
+        ],
+        [
+          "Cinegrafista Lenny salva uma caixa",
+          "Ele correu para dentro do fogo por uma caixa. Nela estava o trabalho dele.",
+          "📦 Caixa de filmes"
+        ],
+        [
+          "O sino de incêndio",
+          "O sino tocou às duas. À uma e meia, o vigia noturno já sentia cheiro de alguma coisa.",
+          "🔔 Sino de incêndio"
+        ],
+        [
+          "Roteirista Peggy trabalhou até tarde",
+          "Ela trabalhou no roteiro até a meia-noite. No arquivo, foi o que ela disse primeiro.",
+          "🗒️ Bloco de notas"
+        ],
+        [
+          "Dublê Hank e o fogo",
+          "Diante da câmera, ele atravessa o fogo. Ontem à noite, passou longe dele.",
+          "🧯 Extintor"
+        ],
+        [
+          "A lista do arquivo",
+          "Pela lista, eram trezentas latas. Nas cinzas, havia duzentas.",
+          "📒 Livro do arquivo"
+        ],
+        [
+          "Diretor Baxter observa",
+          "Todos os seus filmes antigos viraram cinzas. Ele parecia aliviado.",
+          "👓 Óculos redondos"
+        ]
+      ]
+    ],
+    "filmstudio-7": [
+      "Parte VII · Em locação",
+      "Um faroeste no deserto, a um dia de viagem do estúdio. Dez carroças, vinte cavalos e uma cidadezinha de papelão sob o sol. Falta um barril de água.",
+      "As carroças voltam para Hollywood. O barril de água foi encontrado, pela metade e longe do acampamento.",
+      "O tabuleiro cresce e os depoimentos ficam mais econômicos. Se o relatório diz que uma área estava vazia, essa área inteira fica descartada para todos.",
+      [
+        [
+          "Dez carroças",
+          "Dez carroças partiram para o deserto. Levaram nove barris de água.",
+          "🛢️ Barril de água"
+        ],
+        [
+          "Dublê Hank na diligência",
+          "Ele virou a diligência duas vezes. Uma estava no roteiro.",
+          "🐎 Diligência"
+        ],
+        [
+          "O sol do meio-dia",
+          "Ao meio-dia, o sol estava bem em cima do set. Mesmo assim, caiu uma sombra comprida.",
+          "☀️ Sol do meio-dia"
+        ],
+        [
+          "Estrela Vivian na areia",
+          "Ela se recusou a ir para o deserto. Mesmo assim, havia areia nas botas dela.",
+          "👢 Bota de montaria"
+        ],
+        [
+          "A fogueira",
+          "Em volta do fogo, a equipe inteira cantava. No refrão, faltou uma voz.",
+          "🪕 Banjo"
+        ],
+        [
+          "Maquiadora Rita passa pó",
+          "Toda manhã, ela passava pó em dez rostos. Um rosto já estava com pó, da noite anterior.",
+          "🪞 Espelho de mão"
+        ],
+        [
+          "O caminhão-pipa",
+          "O caminhão-pipa ficou a noite toda junto ao acampamento. Ao nascer do sol, estava um quilômetro mais adiante.",
+          "🚚 Caminhão-pipa"
+        ],
+        [
+          "Agente Sid telegrafa",
+          "Não havia telefone num raio de cem milhas. Mesmo assim, o estúdio soube em uma hora.",
+          "✉️ Telegrama"
+        ]
+      ]
+    ],
+    "filmstudio-8": [
+      "Parte VIII · A noite de gala",
+      "O filme está pronto e a estreia é hoje à noite. Na festa de gala no set, as luzes se acendem mais uma vez, com os mesmos rostos da noite da última tomada.",
+      "Van Dam põe o chapéu, acena com a cabeça para a cadeira de diretor vazia e sai pelo portão, rumo à noite de Hollywood. Enfim, o final faz sentido.",
+      "Os últimos casos, quase todos no tabuleiro grande. Não fique travado no mais difícil: posicione os outros primeiro, e para o último muitas vezes sobra um quadrado só.",
+      [
+        [
+          "O tapete vermelho",
+          "Mil pessoas ao longo do tapete vermelho. Uma delas entrou junto com os convidados.",
+          "🎟️ Ingresso da estreia"
+        ],
+        [
+          "Estrela Vivian brilha",
+          "Todos olhavam para o vestido dela. Ninguém olhava para as mãos.",
+          "💎 Broche"
+        ],
+        [
+          "Roteirista Peggy vê seu final",
+          "Ela escreveu o final sete vezes. Na tela, viu um oitavo.",
+          "📜 Cena final"
+        ],
+        [
+          "Novata Joy é descoberta",
+          "Todos queriam uma foto com ela. Um fotógrafo só queria a bolsa dela.",
+          "👛 Bolsa de festa"
+        ],
+        [
+          "Diretor Baxter agradece",
+          "Ele agradeceu à equipe inteira, nome por nome. Um nome ele disse como se fosse uma pergunta.",
+          "🎙️ Microfone"
+        ],
+        [
+          "Agente Sid quer mais",
+          "Ele ficava com dez por cento de tudo. Hoje à noite, queria o resto.",
+          "💵 Nota de dólar"
+        ],
+        [
+          "Cinegrafista Lenny projeta o filme",
+          "Ele mesmo projetou o filme, da cabine de projeção. Havia um rolo a mais do que na montagem.",
+          "📽️ Projetor de cinema"
+        ],
+        [
+          "A noite de gala",
+          "Onde começou, na sala de cinema. É ali que termina também.",
+          "🎞️ Último rolo"
+        ]
+      ]
+    ],
+    "karavaan": [
+      "Parte I · O portão se fecha",
+      "Caravançará de Al-Nour, um oásis na velha rota das especiarias. A caravana descansa uma noite dentro das muralhas. Ao nascer do sol, o caravaneiro Idris está caído junto aos camelos, e o portão ficou fechado a noite toda.",
+      "O caravaneiro está morto e o portão continua fechado. Ninguém parte até a história fechar.",
+      "Um caravançará é um grande pátio com muitas portas. Comece por quem diz em que área estava; “bem ao lado” do cântaro só vale em linha reta, nunca na diagonal.",
+      [
+        [
+          "O portão se fecha",
+          "Ao pôr do sol, o portão se fechou. Ao nascer do sol, ninguém tinha partido, e mesmo assim havia um viajante a menos.",
+          "🔒 Fechadura do portão"
+        ],
+        [
+          "Doze camelos",
+          "Doze camelos no estábulo. Nenhum fez barulho naquela noite.",
+          "🐪 Camelo"
+        ],
+        [
+          "Guarda Karim fica de vigia",
+          "Ele passou a noite toda sentado junto ao portão. A chave ficou a noite toda no cinto dele, é o que ele diz.",
+          "🗝️ Molho de chaves"
+        ],
+        [
+          "O cântaro",
+          "Às dez, o cântaro junto ao poço estava cheio. À meia-noite, estava vazio.",
+          "🏺 Cântaro"
+        ],
+        [
+          "Mercadora Layla pesa",
+          "Toda noite, ela pesava seu açafrão. Ontem à noite, pesou outra coisa.",
+          "⚖️ Balança de latão"
+        ],
+        [
+          "A sela de camelo",
+          "A sela do caravaneiro estava pronta para a partida. Ele queria partir antes de o portão abrir.",
+          "🪢 Correia da sela"
+        ],
+        [
+          "Poetisa Samira escreve",
+          "Naquela noite, ela escreveu um poema sobre o caravaneiro. Era uma despedida.",
+          "✒️ Pena de junco"
+        ],
+        [
+          "Antes do nascer do sol",
+          "Às quatro, o galo cantou. Às três, alguém já andava pelo terraço.",
+          "🐓 Galo"
+        ]
+      ]
+    ],
+    "karavaan-2": [
+      "Parte II · O açafrão desaparecido",
+      "A Mercadora Layla viaja com dez sacos de açafrão, o bastante para uma casa na cidade. Na contagem, são nove. O portão continua fechado.",
+      "O décimo saco está de novo com os outros nove. Está um punhado mais leve.",
+      "Dentro das muralhas, todo mundo fala de todo mundo. Para resolver um depoimento sobre duas pessoas, fixe primeiro uma das duas.",
+      [
+        [
+          "Dez sacos",
+          "Dez sacos na chegada. Nove no café da manhã.",
+          "🌸 Saco de açafrão"
+        ],
+        [
+          "Guia Tariq descarrega",
+          "Ele mesmo tirou os sacos dos camelos. Ainda lembra qual camelo carregava um a mais.",
+          "🧭 Bússola"
+        ],
+        [
+          "A despensa",
+          "A despensa fecha à chave. A fechadura fica do lado de dentro.",
+          "🔐 Cadeado"
+        ],
+        [
+          "Tapeceiro Yusuf enrola os tapetes",
+          "Naquela manhã, ele enrolou todos os tapetes. Um deles pesava mais que na véspera.",
+          "🧶 Tapete enrolado"
+        ],
+        [
+          "Fios vermelhos",
+          "Açafrão não passa de fios vermelhos, leves como o ar. Havia um no chão da cozinha.",
+          "🧵 Fio de açafrão"
+        ],
+        [
+          "Viajante Beatrix anota",
+          "Ela anota tudo o que vê. Sobre aquela noite, não há nada.",
+          "📔 Diário de viagem"
+        ],
+        [
+          "Nove sacos",
+          "Nove sacos, todos com o mesmo peso. Um deles era metade areia.",
+          "⏳ Areia do deserto"
+        ],
+        [
+          "Garçom Hamid ouve",
+          "Ele ouviu alguém falar de açafrão. Uma hora antes de o açafrão sumir.",
+          "🍯 Açucareiro"
+        ]
+      ]
+    ],
+    "karavaan-3": [
+      "Parte III · A casa de chá",
+      "Toda noite, a caravana inteira se reúne na casa de chá. O Garçom Hamid serve, e ouve tudo. Uma conversa, ninguém ouviu.",
+      "A casa de chá está vazia e os copos estão de boca para baixo na bandeja. A conversa que ninguém ouviu, agora você conhece.",
+      "Na casa de chá, todos olham para o bule, não uns para os outros. Quem diz onde NÃO estava também conta alguma coisa: risque essa área na hora.",
+      [
+        [
+          "Três copos",
+          "Na casa de chá, todo mundo bebe três copos. Um hóspede deixou o terceiro na mesa.",
+          "🍵 Copo de chá"
+        ],
+        [
+          "Garçom Hamid serve",
+          "Ele serve do alto, para o chá fazer espuma. Hoje à noite, a mão dele tremia.",
+          "🫖 Bule de latão"
+        ],
+        [
+          "A almofada vazia",
+          "Oito almofadas em volta da mesa baixa. Em uma delas, ninguém tinha sentado.",
+          "🛋️ Almofada"
+        ],
+        [
+          "Astrônoma Zahra escuta",
+          "Ela disse que estava olhando as estrelas. Estava de costas para a janela.",
+          "🔭 Astrolábio"
+        ],
+        [
+          "Hortelã fresca",
+          "Em cada copo havia hortelã fresca. Em um, havia hortelã seca.",
+          "🌿 Folha de hortelã"
+        ],
+        [
+          "Guarda Karim entra",
+          "Toda noite, às dez, ele vem buscar um copo de chá. Ontem, veio às nove.",
+          "⌛ Ampulheta"
+        ],
+        [
+          "A cortina",
+          "Atrás da cortina da casa de chá há uma segunda porta. O garçom diz que ela nunca se abre.",
+          "🪟 Cortina"
+        ],
+        [
+          "Mercadora Layla negocia",
+          "Ela passou uma hora discutindo com o guia o preço da viagem. Às onze, de repente, o preço estava mais alto.",
+          "💰 Dinheiro da viagem"
+        ]
+      ]
+    ],
+    "karavaan-4": [
+      "Parte IV · O bazar",
+      "Dia de feira no oásis. Mercadores de três aldeias espalham suas mercadorias pelo pátio. Mil vozes, e uma delas mente.",
+      "As barracas são desmontadas e o pátio volta a ficar quieto. A voz que mentiu foi encontrada.",
+      "Em dia de feira, todo mundo fica ombro a ombro; então preste atenção em quem estava bem ao lado de quem. Posicione primeiro o suspeito com menos opções; o resto se encaixa.",
+      [
+        [
+          "Dia de feira",
+          "Mil pessoas no bazar. Uma delas não comprou nada e ficou o dia inteiro.",
+          "🪙 Moeda de cobre"
+        ],
+        [
+          "Tapeceiro Yusuf vende",
+          "Hoje ele vendeu sete tapetes. Tinha trazido seis.",
+          "🧶 Tapete"
+        ],
+        [
+          "O cesto de especiarias",
+          "Canela, cardamomo e cominho. Um cesto não tinha cheiro de nada.",
+          "🧺 Cesto de especiarias"
+        ],
+        [
+          "Viajante Beatrix compra",
+          "Ela comprou um tapete que não conseguia carregar. Não pediu ajuda a ninguém.",
+          "🧳 Baú de viagem"
+        ],
+        [
+          "O peso falso",
+          "Todos os pesos da feira são carimbados. Um deles não tinha carimbo.",
+          "⚖️ Peso falso"
+        ],
+        [
+          "Guia Tariq troca",
+          "Ele trocou o camelo velho por um jovem. O velho conhecia o caminho de volta.",
+          "🐪 Camelo velho"
+        ],
+        [
+          "O vendedor de água",
+          "No bazar, alguém vendia água do poço. O poço é de todos.",
+          "🫗 Caneca de água"
+        ],
+        [
+          "Poetisa Samira declama",
+          "Ela declamou um poema sobre traição. Todos olharam para o mesmo homem.",
+          "📖 Livro de poemas"
+        ]
+      ]
+    ],
+    "karavaan-5": [
+      "Parte V · A noite das estrelas",
+      "Lá em cima, no terraço, a Astrônoma Zahra lê nas estrelas o caminho da próxima viagem. A noite está clara e o caravançará dorme. Ela vê uma luz que não devia estar ali.",
+      "A luz era uma lanterna, e a lanterna tinha dono. A rota está decidida.",
+      "No escuro, lá no telhado, cada um só vê a si mesmo. Comece por quem diz que estava sozinho; isso resolve uma área inteira de uma vez.",
+      [
+        [
+          "Uma luz no deserto",
+          "Onde não há aldeia, havia uma luz acesa. Acendeu duas vezes, apagou duas vezes.",
+          "🏮 Lanterna"
+        ],
+        [
+          "Astrônoma Zahra calcula",
+          "Ela mediu a altura da Estrela Polar. A estrela estava certa; o mapa dela, não.",
+          "🗺️ Carta celeste"
+        ],
+        [
+          "O terraço",
+          "No terraço, quatro viajantes dormiam sob as estrelas. Havia cinco esteiras.",
+          "🛌 Esteira"
+        ],
+        [
+          "Guarda Karim também vê",
+          "Do portão, ele viu a mesma luz. Só avisou na tarde seguinte.",
+          "🪔 Lamparina de vigia"
+        ],
+        [
+          "Uma estrela cadente",
+          "À meia-noite, caiu uma estrela. Todos fizeram um pedido, menos um.",
+          "🌠 Estrela cadente"
+        ],
+        [
+          "Poetisa Samira conta estrelas",
+          "Ela escreveu um poema sobre as estrelas do deserto. Contou uma a mais.",
+          "📜 Poema"
+        ],
+        [
+          "Garçom Hamid leva chá",
+          "Às duas, ele levou chá ao terraço. Já havia dois copos lá.",
+          "🍵 Dois copos"
+        ],
+        [
+          "Antes da aurora",
+          "As estrelas foram sumindo uma a uma. A luz no deserto foi a última a se apagar.",
+          "🌄 Aurora"
+        ]
+      ]
+    ],
+    "karavaan-6": [
+      "Parte VI · A casa de banhos",
+      "A casa de banhos é quente e cheia de vapor. Ali, os viajantes tiram a areia da viagem, e ninguém enxerga além da própria mão. Quase ninguém.",
+      "O vapor se dissipou e as pedras estão esfriando. Quem se escondia nele agora está em plena luz.",
+      "O vapor deixa as testemunhas inseguras; o tabuleiro, não. Use o Lápis: risque os quadrados impossíveis e veja o que sobra.",
+      [
+        [
+          "Pedras quentes",
+          "O fogo sob as pedras arde dia e noite. Ontem à noite, apagou por uma hora.",
+          "🪨 Pedra quente"
+        ],
+        [
+          "No vapor",
+          "Na casa de banhos, todos só viam vapor. Um hóspede viu um rosto.",
+          "🌫️ Vapor"
+        ],
+        [
+          "Viajante Beatrix tira a areia",
+          "Ela ficou uma hora na casa de banhos. O cabelo dela estava seco.",
+          "🧼 Sabão"
+        ],
+        [
+          "Oito pares de chinelos",
+          "Junto à porta, havia oito pares de chinelos. Saíram nove pessoas.",
+          "🩴 Chinelo"
+        ],
+        [
+          "Tapeceiro Yusuf está suando",
+          "Ele disse que suava por causa do calor. Ainda nem tinha entrado.",
+          "💦 Lenço"
+        ],
+        [
+          "O poço",
+          "A casa de banhos tira a água do poço. Ontem à noite, a água veio turva.",
+          "🪣 Balde do poço"
+        ],
+        [
+          "Guia Tariq toma banho",
+          "Ele nunca toma banho antes de uma viagem, diz ele. Ontem à noite, tomou.",
+          "🌹 Água de rosas"
+        ],
+        [
+          "Mercadora Layla perde um anel",
+          "O anel dela estava no fundo da banheira. Ela nunca o tira.",
+          "💍 Anel de ouro"
+        ]
+      ]
+    ],
+    "karavaan-7": [
+      "Parte VII · A longa travessia",
+      "A caravana atravessa o deserto por vinte dias, de poço em poço. Toda noite, o Guia Tariq conta os camelos. Nem toda noite ele chega ao mesmo número.",
+      "Depois de vinte dias, a caravana chega à costa. O guia conta mais uma vez, e o número está certo.",
+      "O tabuleiro cresce e os depoimentos ficam mais econômicos. Se o relatório diz que uma área estava vazia, essa área inteira fica descartada para todos.",
+      [
+        [
+          "Vinte dias",
+          "Água para vinte dias. No dia doze, acabou.",
+          "💧 Odre de água"
+        ],
+        [
+          "Guia Tariq conta os camelos",
+          "Doze camelos na partida, onze no primeiro poço. No segundo poço, doze de novo.",
+          "🐪 Camelo de carga"
+        ],
+        [
+          "O rastro",
+          "O guia lê cada rastro na areia. Um rastro andava para trás.",
+          "👣 Rastro"
+        ],
+        [
+          "Astrônoma Zahra mostra o caminho",
+          "Toda noite, ela apontava para o sul. Na sexta noite, um pouco mais para o leste.",
+          "⭐ Estrela-guia"
+        ],
+        [
+          "Guarda Karim vai junto",
+          "Em vinte anos, ele nunca tinha saído das muralhas. Desta vez, fez questão de ir.",
+          "⛺ Barraca de viagem"
+        ],
+        [
+          "O poço seco",
+          "O mapa mostrava água. Alguém tinha aterrado o poço.",
+          "🕳️ Poço seco"
+        ],
+        [
+          "Garçom Hamid faz chá",
+          "Toda noite, ele fazia chá com o resto da água. Toda noite, sobrava água.",
+          "🔥 Fogueira"
+        ],
+        [
+          "O mar",
+          "Depois de vinte dias, a caravana sentiu cheiro de sal. Um camelo foi para o outro lado.",
+          "🌊 Brisa do mar"
+        ]
+      ]
+    ],
+    "karavaan-8": [
+      "Parte VIII · Adeus ao oásis",
+      "A caravana segue viagem e o caravançará fica para trás. Mais uma noite no terraço, sob as estrelas, com os mesmos rostos da noite em que o portão se fechou.",
+      "Van Dam sacode a areia do casaco, cumprimenta o guarda e, ao nascer do sol, sai pelo portão com a caravana. Atrás do portão, fica um segredo a menos.",
+      "Os últimos casos, quase todos no tabuleiro grande. Não fique travado no mais difícil: posicione os outros primeiro, e para o último muitas vezes sobra um quadrado só.",
+      [
+        [
+          "A última noite",
+          "Todos estavam no terraço. Lá embaixo, no estábulo, ainda havia uma vela acesa.",
+          "🕯️ Luz de vela"
+        ],
+        [
+          "Poetisa Samira se despede",
+          "No último poema dela não há nome nenhum. Mesmo assim, todos sabiam de quem ela falava.",
+          "📓 Caderno de versos"
+        ],
+        [
+          "Mercadora Layla acerta as contas",
+          "Ela pagou seu lugar na caravana. Com açafrão do décimo saco.",
+          "👝 Bolsa de moedas"
+        ],
+        [
+          "Tapeceiro Yusuf esquece algo",
+          "Ele deixou um tapete para trás, enrolado no quarto de hóspedes. Ele nunca esquece nada.",
+          "🧶 Último tapete"
+        ],
+        [
+          "Viajante Beatrix fecha o livro",
+          "O livro dela sobre a viagem está pronto. O último capítulo ainda não tem título.",
+          "📕 Relato de viagem"
+        ],
+        [
+          "Guarda Karim abre o portão",
+          "Por vinte anos, ele abriu o portão ao nascer do sol. Hoje, abriu uma hora antes.",
+          "🔑 Chave grande"
+        ],
+        [
+          "O último copo",
+          "O Garçom Hamid serviu todo mundo uma última vez. Serviu um copo a mais.",
+          "🫖 Último bule"
+        ],
+        [
+          "Adeus ao oásis",
+          "Onde começou, junto aos camelos no estábulo. É ali que termina também.",
+          "🔔 Sino de camelo"
+        ]
+      ]
+    ],
+    "abdij": [
+      "Parte I · O abade morto",
+      "Abadia de Santo Aldric, inverno de 1327. A neve fecha a passagem na montanha. Depois da oração da noite, o abade Bertram está caído no scriptorium, com tinta nos dedos.",
+      "Os irmãos rezam pelo abade. A neve não derrete, e o inverno ainda vai longe.",
+      "Uma abadia é cheia de corredores silenciosos e portas fechadas. Comece por quem diz em que área estava; “bem ao lado” do castiçal só vale em linha reta, nunca na diagonal.",
+      [
+        [
+          "Depois da oração da noite",
+          "Doze irmãos cantaram as matinas. Depois, havia uma voz a menos.",
+          "📿 Contas de oração"
+        ],
+        [
+          "Tinta nos dedos",
+          "O abade nunca escrevia com a própria mão. Os dedos dele estavam pretos de tinta.",
+          "🪶 Pena de ganso"
+        ],
+        [
+          "Irmão Anselm conta as chaves",
+          "Sete chaves na argola. Ontem eram oito.",
+          "🗝️ Molho de chaves"
+        ],
+        [
+          "O castiçal",
+          "A vela do scriptorium ainda estava acesa. Depois das matinas, não pode haver luz ali.",
+          "🕯️ Vela de cera"
+        ],
+        [
+          "Noviço Elias escreve",
+          "Na tábua de cera dele havia um salmo. Embaixo, meio apagado, um nome.",
+          "📝 Tábua de cera"
+        ],
+        [
+          "Neve na passagem",
+          "Ninguém conseguia entrar nem sair da abadia. Mesmo assim, havia uma corda pendurada no muro.",
+          "🪢 Corda de cânhamo"
+        ],
+        [
+          "Condessa Mathilde espera",
+          "Ela queria falar com o abade depois das matinas. Diz que ele não apareceu.",
+          "💍 Anel de sinete"
+        ],
+        [
+          "A primeira noite",
+          "O portão estava fechado, e a passagem também. A porta do scriptorium estava aberta.",
+          "🔩 Ferrolho"
+        ]
+      ]
+    ],
+    "abdij-2": [
+      "Parte II · O livro proibido",
+      "Na biblioteca há um livro que ninguém pode ler. Só o abade tinha a chave. Mesmo assim, alguém o leu.",
+      "O livro está trancado de novo. A pergunta não é mais quem o leu, mas por quê.",
+      "Na biblioteca, todos cochicham, e cada palavra conta. Para resolver um depoimento sobre duas pessoas, fixe primeiro uma das duas.",
+      [
+        [
+          "Sob chave",
+          "O livro ficava atrás de duas fechaduras. Uma delas ainda estava trancada.",
+          "🔒 Cadeado"
+        ],
+        [
+          "Irmão Anselm se cala",
+          "Ele sabia que livro era. Também sabia quem o tinha pedido.",
+          "📚 Catálogo"
+        ],
+        [
+          "Uma folha a menos",
+          "O livro tinha duzentas folhas. Uma delas foi cortada rente.",
+          "🔪 Canivete"
+        ],
+        [
+          "Iluminadora Odile observa",
+          "O ouro na margem é obra dela. O livro em si, ela nunca tinha visto, diz ela.",
+          "✨ Folha de ouro"
+        ],
+        [
+          "Leitura à luz de vela",
+          "Havia pingos de vela no pergaminho. Sebo da cozinha, não cera da capela.",
+          "🕯️ Vela de sebo"
+        ],
+        [
+          "Noviço Elias lê",
+          "Ele mal sabe latim, diz ele. Na tábua de cera dele havia uma frase do livro proibido.",
+          "✍️ Frase copiada"
+        ],
+        [
+          "Despenseiro Waldo e a condessa",
+          "Os dois conversaram no claustro. Depois disso, não trocaram mais nenhuma palavra.",
+          "✉️ Bilhete lacrado"
+        ],
+        [
+          "O livro proibido",
+          "Ninguém podia lê-lo. Duas pessoas leram mesmo assim.",
+          "📕 Livro proibido"
+        ]
+      ]
+    ],
+    "abdij-3": [
+      "Parte III · A horta de ervas",
+      "A horta de ervas está debaixo da neve, mas as ervas secas ficam penduradas lá dentro. Na enfermaria, um irmão idoso piora em vez de melhorar. Alguém prepara a bebida dele pela segunda vez.",
+      "O irmão idoso já se senta na cama e pede sopa. O pote errado sumiu da enfermaria.",
+      "Entre as ervas, todos sabem o que cresce onde. Quem diz onde NÃO estava também conta alguma coisa: risque essa área na hora.",
+      [
+        [
+          "Toda erva cura",
+          "Sálvia para a garganta, hortelã para o estômago. No pote não havia nenhuma das duas.",
+          "🌿 Sálvia seca"
+        ],
+        [
+          "Irmão Cuthbert prepara a bebida",
+          "Ele preparou a bebida como toda noite. Só que desta vez não provou.",
+          "🥣 Infusão de ervas"
+        ],
+        [
+          "O pilão",
+          "Ainda havia pó no pilão. De uma erva que não cresce nesta horta.",
+          "🌰 Raiz moída"
+        ],
+        [
+          "Erveira Hilde chega",
+          "Ela veio da aldeia com um cesto cheio de ervas. A passagem estava fechada havia uma semana.",
+          "🧺 Cesto de ervas"
+        ],
+        [
+          "Abelhas no inverno",
+          "No inverno, as abelhas dormem. Mesmo assim, alguém abriu a colmeia.",
+          "🍯 Favo de mel"
+        ],
+        [
+          "A enfermaria",
+          "Três camas, dois doentes. A terceira cama estava quente.",
+          "🛏️ Colchão de palha"
+        ],
+        [
+          "Peregrina Gisela ajuda",
+          "Ela se ofereceu para cuidar do doente. Sabia que bebida ele tomava antes que alguém contasse a ela.",
+          "🍶 Cabaça"
+        ],
+        [
+          "Acônito",
+          "Uma linda flor roxa. Em todo livro de ervas, há uma cruzinha ao lado do nome dela.",
+          "🪻 Acônito"
+        ]
+      ]
+    ],
+    "abdij-4": [
+      "Parte IV · O longo inverno",
+      "A passagem fica fechada até a primavera. Toda semana, o Despenseiro Waldo conta as provisões, e toda semana o porão está mais vazio do que deveria.",
+      "O porão foi contado e o pão, dividido com justiça. Quem comia por dois agora come por um.",
+      "No inverno, todos ficam perto do fogo, e perto uns dos outros. Posicione primeiro o suspeito com menos opções; o resto se encaixa.",
+      [
+        [
+          "Até a primavera",
+          "Grãos para quatro meses, disse o despenseiro. Depois de um mês, metade tinha acabado.",
+          "🌾 Saco de grãos"
+        ],
+        [
+          "Despenseiro Waldo pesa os queijos",
+          "Toda semana ele pesava os queijos. Não faltava nenhum, mas eles ficavam mais leves.",
+          "🧀 Roda de queijo"
+        ],
+        [
+          "A padaria",
+          "O forno está frio desde as matinas. Mesmo assim, a padaria cheira a pão fresco.",
+          "🍞 Pão de centeio"
+        ],
+        [
+          "Condessa Mathilde jejua",
+          "Ela jejua durante todo o Advento, diz ela. Debaixo da cama dela há migalhas de pão branco.",
+          "🥖 Casca de pão"
+        ],
+        [
+          "A ampulheta",
+          "Na cozinha, alguém vira a ampulheta a cada hora. Às três, esqueceu.",
+          "⏳ Ampulheta"
+        ],
+        [
+          "Noviço Elias tem fome",
+          "Ele era o mais magro de todos. Até meados de janeiro.",
+          "🍽️ Tigela de madeira"
+        ],
+        [
+          "Vinho de missa",
+          "Para a missa, basta uma jarra por semana. Sumiu um barril inteiro.",
+          "🍷 Vinho de missa"
+        ],
+        [
+          "Neve até as janelas",
+          "A neve chegava às janelas do refeitório. Uma janela tinha sido aberta por dentro.",
+          "🧊 Pingente de gelo"
+        ]
+      ]
+    ],
+    "abdij-5": [
+      "Parte V · A visita do bispo",
+      "Uma semana de degelo abre a passagem. O bispo está a caminho para escolher um novo abade, e nem todos querem que ele chegue.",
+      "O bispo chega são e salvo e abençoa a abadia. O novo abade é eleito, e nenhum voto foi comprado.",
+      "Para a visita, cada um espera num lugar diferente. Comece por quem diz que estava sozinho; isso resolve uma área inteira de uma vez.",
+      [
+        [
+          "Uma carta lacrada",
+          "A carta do bispo tinha um lacre vermelho. O lacre já tinha sido rompido uma vez.",
+          "📜 Carta do bispo"
+        ],
+        [
+          "Irmão Anselm quer ser abade",
+          "Ele não quer, diz ele. Já sabe o juramento de cor.",
+          "📃 Juramento do abade"
+        ],
+        [
+          "O campanário",
+          "Quando o bispo chega, o sino toca. A corda tinha sido cortada, na altura dos olhos.",
+          "🔔 Corda do sino"
+        ],
+        [
+          "Condessa Mathilde faz uma doação",
+          "Ela dá à abadia um cálice de ouro. Se o bispo escolher o candidato dela.",
+          "🏆 Cálice de ouro"
+        ],
+        [
+          "Pedras no caminho",
+          "Alguém rolou pedras para a trilha da montanha. Elas estavam em cima da neve, não embaixo.",
+          "🪨 Pedregulho"
+        ],
+        [
+          "Irmão Cuthbert cozinha",
+          "Um banquete para o bispo. Um dos pratos era só para ele.",
+          "🍲 Ensopado"
+        ],
+        [
+          "Erveira Hilde conhece o caminho",
+          "Ela conhece cada trilha pelas montanhas. Inclusive a que o bispo ia tomar.",
+          "🥾 Bota molhada"
+        ],
+        [
+          "O bispo chega",
+          "A mula dele passou primeiro pelo portão. O bispo, uma hora depois, a pé.",
+          "🐴 Mula"
+        ]
+      ]
+    ],
+    "abdij-6": [
+      "Parte VI · Fogo no scriptorium",
+      "No meio da noite, o scriptorium pega fogo. Os irmãos combatem as chamas com neve e baldes. Um livro é salvo, pela pessoa errada.",
+      "O fogo foi apagado e as paredes estão pretas. O livro salvo está na capela, longe das mãos erradas.",
+      "A fumaça deixa as testemunhas confusas; o tabuleiro, não. Os depoimentos ficam mais econômicos: use o Lápis, risque os quadrados impossíveis e veja o que sobra.",
+      [
+        [
+          "Fumaça depois das matinas",
+          "Depois das matinas, havia fumaça no claustro. Todas as velas já tinham sido apagadas.",
+          "💨 Rastro de fumaça"
+        ],
+        [
+          "Baldes de neve",
+          "Os irmãos combateram o fogo com neve do pátio. Junto ao scriptorium, a neve já tinha sido retirada antes de o fogo começar.",
+          "🪣 Balde de madeira"
+        ],
+        [
+          "Iluminadora Odile corre",
+          "Ela foi a primeira a correr para dentro do fogo, pelos livros dela. Voltou de mãos vazias e com as mangas limpas.",
+          "🎨 Pote de tinta"
+        ],
+        [
+          "A mesa de copista",
+          "Todas as mesas de copista queimaram. A mais preta era a que ficava mais longe das velas.",
+          "🪵 Madeira carbonizada"
+        ],
+        [
+          "Despenseiro Waldo apaga o fogo",
+          "Ele carregou os baldes mais pesados. O hábito dele não cheirava a fogo, mas a óleo.",
+          "🫙 Jarro de óleo"
+        ],
+        [
+          "Cinzas no refeitório",
+          "Na lareira do refeitório havia cinzas de pergaminho. O fogo no scriptorium só começou depois.",
+          "🌫️ Cinza de pergaminho"
+        ],
+        [
+          "Peregrina Gisela reza",
+          "Ela rezou na capela durante todo o incêndio. A capa dela estava preta de fuligem.",
+          "🧥 Capa de peregrina"
+        ],
+        [
+          "O salvador errado",
+          "Um livro foi salvo. Por alguém que diz não saber ler.",
+          "📘 Encadernação chamuscada"
+        ]
+      ]
+    ],
+    "abdij-7": [
+      "Parte VII · Os peregrinos",
+      "Doze peregrinos batem ao portão e pedem abrigo. A Regra diz que todo hóspede deve ser recebido como o próprio Cristo. Depois de três dias, onze seguem viagem.",
+      "Os onze peregrinos seguem para Roma. O décimo segundo fica, mas não como hóspede.",
+      "O tabuleiro cresce e a abadia se enche. Se o relatório diz que uma área estava vazia, essa área inteira fica descartada para todos.",
+      [
+        [
+          "Doze no portão",
+          "Doze peregrinos pediram pão e uma cama. Na neve diante do portão havia treze pares de pegadas.",
+          "👣 Pegadas"
+        ],
+        [
+          "Peregrina Gisela reconhece alguém",
+          "Ela conhecia um dos doze. Só disse isso depois que ele foi embora.",
+          "🐚 Concha de Santiago"
+        ],
+        [
+          "O livro de hóspedes",
+          "Cada hóspede escreveu o próprio nome no livro. Dois nomes foram escritos pela mesma mão.",
+          "✒️ Livro de hóspedes"
+        ],
+        [
+          "Irmão Cuthbert faz curativos",
+          "Ele enfaixou os pés de onze peregrinos. O décimo segundo não tinha bolhas.",
+          "🩹 Atadura de linho"
+        ],
+        [
+          "O pão dos pobres",
+          "Cada peregrino ganhou um pão. A padaria assou treze.",
+          "🥖 Pão do peregrino"
+        ],
+        [
+          "Noviço Elias fala",
+          "Ele falou com os peregrinos na língua deles. No verão, disse que era de uma aldeia aqui perto.",
+          "🧾 Salvo-conduto"
+        ],
+        [
+          "Iluminadora Odile desenha",
+          "Ela desenhou os doze na margem de um saltério. Um dos rostos ela já tinha pintado antes.",
+          "🖌️ Pincel"
+        ],
+        [
+          "Onze partem",
+          "Doze entraram. Onze seguiram para Roma.",
+          "⛰️ Trilha da montanha"
+        ]
+      ]
+    ],
+    "abdij-8": [
+      "Parte VIII · O último ofício",
+      "A primavera chega e a neve derrete na passagem. Mais uma noite no claustro, com os mesmos rostos da primeira noite do inverno.",
+      "Van Dam fecha bem a capa, faz uma reverência aos irmãos e desce pela passagem aberta até o vale. O sino toca para as vésperas. O livro voltou à sua prateleira.",
+      "Os últimos casos, quase todos no tabuleiro grande. Não fique travado no mais difícil: posicione os outros primeiro, e para o último muitas vezes sobra um quadrado só.",
+      [
+        [
+          "A neve derrete",
+          "Debaixo da neve, junto ao muro, havia uma chave. A oitava.",
+          "🔑 Chave de ferro"
+        ],
+        [
+          "Irmão Anselm entrega as chaves",
+          "Por quarenta anos, ele carregou as chaves. Esta noite, ele as entrega, menos uma.",
+          "⛓️ Argola de chaves"
+        ],
+        [
+          "Erveira Hilde volta para casa",
+          "Ela veio com um cesto cheio de ervas. Vai embora com um cesto cheio, e sem ervas.",
+          "🧺 Cesto cheio"
+        ],
+        [
+          "O novo abade",
+          "Ele abençoa os irmãos pela primeira vez. Um irmão não inclina a cabeça.",
+          "⚜️ Báculo"
+        ],
+        [
+          "Despenseiro Waldo tranca o porão",
+          "O porão está cheio de novo para o verão. Atrás do último barril há algo que não devia estar ali.",
+          "🍺 Cerveja do mosteiro"
+        ],
+        [
+          "Condessa Mathilde parte",
+          "A carroça dela está pronta no portão. Está mais pesada do que quando ela chegou.",
+          "🛞 Roda de carroça"
+        ],
+        [
+          "As vésperas",
+          "As últimas vésperas do inverno. Uma voz cantou um salmo diferente.",
+          "🎼 Antifonário"
+        ],
+        [
+          "O último ofício",
+          "Onde começou, no scriptorium. É ali que termina também.",
+          "🖋️ Tinteiro"
+        ]
+      ]
+    ],
+    "vuurtoren": [
+      "Parte I · A luz se apaga",
+      "Farol de Cabo Cinzento, novembro de 1900. Uma tempestade isola a ilha do continente. À meia-noite, a luz se apaga. Lá em cima, na sala da luz, o faroleiro Silas Mourne está caído.",
+      "A luz brilha de novo, mas o faroleiro não vai mais vê-la. A tempestade ainda dura dias.",
+      "Uma ilha é pequena; um farol, alto e estreito. Comece por quem diz em que área estava; “bem ao lado” da boia salva-vidas só vale em linha reta, nunca na diagonal.",
+      [
+        [
+          "Meia-noite",
+          "Por vinte anos, a luz brilhou toda noite. Esta noite, parou à meia-noite.",
+          "🪔 Queimador de querosene"
+        ],
+        [
+          "A sala da luz",
+          "O faroleiro estava caído sob a lente. A porta estava trancada por dentro.",
+          "🔐 Chave da sala da luz"
+        ],
+        [
+          "Ajudante Jonas sobe",
+          "Cento e doze degraus até o topo. Ele chegou lá em cima em dois minutos, diz ele.",
+          "🕰️ Relógio de bolso"
+        ],
+        [
+          "A boia salva-vidas",
+          "A boia fica sempre pendurada ao lado da porta da casa do farol. Esta noite, flutuava na arrebentação.",
+          "🛟 Boia salva-vidas"
+        ],
+        [
+          "Telegrafista Fien transmite",
+          "Às cinco para a meia-noite, ela telegrafou ao continente que a luz estava apagada. A luz se apagou à meia-noite.",
+          "📨 Telegrama"
+        ],
+        [
+          "O mecanismo",
+          "O mecanismo que gira a lente estava parado. Havia um nó de marinheiro em volta dele.",
+          "🪢 Nó de marinheiro"
+        ],
+        [
+          "Governanta Martha dorme",
+          "Ela já dormia às dez, diz ela. À meia-noite, o bule ainda estava quente.",
+          "🫖 Bule"
+        ],
+        [
+          "Tempestade do oeste",
+          "Nenhum barco conseguia chegar à ilha nem sair dela. Mesmo assim, no cais, havia um barco a menos.",
+          "⚓ Amarra solta"
+        ]
+      ]
+    ],
+    "vuurtoren-2": [
+      "Parte II · O naufrágio",
+      "Na segunda noite de tempestade, a luz falha por uma hora. Nessa hora, um navio bate nas rochas ao pé do penhasco. Um homem chega à praia, sem documentos.",
+      "Os destroços se desfazem na arrebentação. Por que o navio navegava tão perto da costa, agora você sabe.",
+      "Depois de um naufrágio, todos contam o que viram, e quem viram. Para resolver um depoimento sobre duas pessoas, fixe primeiro uma das duas.",
+      [
+        [
+          "Nas rochas",
+          "Sem a luz, o navio foi direto para o penhasco. Na praia, porém, havia um lampião aceso.",
+          "🏮 Lampião"
+        ],
+        [
+          "Náufrago Lev chega à praia",
+          "O mar o trouxe até a praia, sem documentos. A caixa de tabaco dele estava seca.",
+          "🚬 Caixa de tabaco"
+        ],
+        [
+          "Pescador Bartel vê tudo",
+          "Ele estava olhando do alto do penhasco, diz ele. Os remos dele ainda estavam molhados.",
+          "🚣 Remo"
+        ],
+        [
+          "Os destroços",
+          "Do navio, só sobrou a proa. O nome na proa tinha sido coberto com tinta.",
+          "🖌️ Tinta fresca"
+        ],
+        [
+          "Prático Kees e o capitão",
+          "Ele conhecia o capitão do navio. Os dois tinham marcado um encontro naquela noite, ao largo da costa.",
+          "🗺️ Carta náutica"
+        ],
+        [
+          "Ornitóloga Dorien anota",
+          "No caderno de campo dela: três horas, praia, um ostraceiro. E um homem.",
+          "📓 Caderno de campo"
+        ],
+        [
+          "Caixotes na praia",
+          "O mar trouxe doze caixotes até a praia. Na casa de barcos, havia nove.",
+          "📦 Baú de navio"
+        ],
+        [
+          "Telegrafista Fien e o continente",
+          "O continente perguntou o nome do navio. Ela o transmitiu antes de alguém ver a proa.",
+          "📃 Fita telegráfica"
+        ]
+      ]
+    ],
+    "vuurtoren-3": [
+      "Parte III · O nevoeiro",
+      "Depois da tempestade, vem o nevoeiro. Por três dias, a buzina de nevoeiro soa a cada quinze minutos. Na segunda noite, ela soa uma vez a mais.",
+      "O nevoeiro se dissipa e a buzina se cala. O barco que esperava o sinal nunca chegou.",
+      "No nevoeiro, ninguém vê nada, mas todos sabem onde não estavam. Quem diz onde NÃO estava também conta alguma coisa: risque essa área na hora.",
+      [
+        [
+          "A cada quinze minutos",
+          "Quatro toques por hora. Às duas, foram cinco.",
+          "📯 Buzina de nevoeiro"
+        ],
+        [
+          "Ajudante Jonas toca a buzina",
+          "Ele tocou a buzina a noite inteira, diz ele. Às três, estava dormindo na cozinha.",
+          "⚙️ Manivela"
+        ],
+        [
+          "A luneta",
+          "No nevoeiro, uma luneta não serve para nada. Mesmo assim, ela estava no penhasco, apontada para o mar.",
+          "🔭 Luneta"
+        ],
+        [
+          "Professora Wilma se perde",
+          "Há dez anos ela vai da escola até a casa do farol. No nevoeiro, foi parar na casa de barcos.",
+          "👓 Óculos embaçados"
+        ],
+        [
+          "Uma voz no nevoeiro",
+          "Alguém pediu socorro do cais. Quando chegaram lá, só havia um boné.",
+          "🧢 Boné molhado"
+        ],
+        [
+          "Pescador Bartel sai para o mar",
+          "Nenhum pescador sai no nevoeiro. Ele voltou com os covos vazios, menos um.",
+          "🦞 Covo de lagosta"
+        ],
+        [
+          "Náufrago Lev entende",
+          "Ele não fala holandês, diz ele. Riu de uma piada do pescador.",
+          "🧶 Cobertor de lã"
+        ],
+        [
+          "Uma vez a mais",
+          "Aquele quinto toque não foi engano. Era um sinal, para um barco no nevoeiro.",
+          "⛵ Chalupa"
+        ]
+      ]
+    ],
+    "vuurtoren-4": [
+      "Parte IV · O diário do farol",
+      "Toda noite, o faroleiro escrevia no diário do farol: o tempo, os navios, a luz. A última página foi arrancada.",
+      "A última página apareceu, amassada e meio queimada. O que estava escrito nela, você já sabia.",
+      "Num diário, tudo está em ordem, e cada linha aponta para uma área. Posicione primeiro o suspeito com menos opções; o resto se encaixa.",
+      [
+        [
+          "A última página",
+          "A página foi arrancada. Na seguinte, ficou a marca da caneta dele.",
+          "📄 Marca da escrita"
+        ],
+        [
+          "Governanta Martha lustra os móveis",
+          "Ela nunca tocou no diário, diz ela. Havia cera de móveis na capa.",
+          "🧽 Flanela"
+        ],
+        [
+          "Tinta e lápis",
+          "O faroleiro sempre escrevia a tinta. A última linha está a lápis.",
+          "✏️ Lápis de carpinteiro"
+        ],
+        [
+          "Prático Kees espia o diário",
+          "Ele sabia que navios estavam no diário. E também que navio não estava.",
+          "📋 Lista de navios"
+        ],
+        [
+          "O tempo segundo o faroleiro",
+          "Vento força nove, escreveu ele na terça. Na terça, não ventava nada.",
+          "🌬️ Anemômetro"
+        ],
+        [
+          "Professora Wilma conhece a letra",
+          "Ela conhece a letra de todo mundo na ilha. Esta ela também conhecia, disse ela, e depois se calou.",
+          "🖋️ Pena de metal"
+        ],
+        [
+          "Telegrafista Fien copia",
+          "Toda mensagem para o continente ela copia também no próprio caderno. Uma mensagem aparece lá duas vezes.",
+          "📒 Caderno de mensagens"
+        ],
+        [
+          "Cinzas no fogão",
+          "Havia cinzas no fogão da sala de sinais. No meio delas, um cantinho de papel com um número.",
+          "🔥 Canto queimado"
+        ]
+      ]
+    ],
+    "vuurtoren-5": [
+      "Parte V · O barco de suprimentos",
+      "Uma vez por mês, chega o barco com querosene, farinha e correio. A ilha inteira espera no cais. Desta vez, o barco leva algo de volta.",
+      "O barco parte sem o caixote. O barqueiro nunca soube o que quase levou junto.",
+      "Quando o barco chega, cada um carrega coisas num lugar diferente. Comece por quem diz que estava sozinho; isso resolve uma área inteira de uma vez.",
+      [
+        [
+          "Uma vez por mês",
+          "Querosene, farinha e correio, como todo mês. Desta vez, também um caixote sem nome.",
+          "🛢️ Barril de querosene"
+        ],
+        [
+          "O correio",
+          "Chegou uma carta para o faroleiro. Enviada do continente, um dia depois da morte dele.",
+          "✉️ Carta"
+        ],
+        [
+          "Governanta Martha faz o pedido",
+          "Na lista dela: farinha, sal e veneno de rato. Não há ratos na ilha.",
+          "☠️ Veneno de rato"
+        ],
+        [
+          "A casa de barcos",
+          "Na casa de barcos havia um caixote que devia voltar no barco. A tampa tinha furos de ventilação.",
+          "📦 Caixote com furos"
+        ],
+        [
+          "Náufrago Lev quer ir junto",
+          "Ele não tem dinheiro, diz ele. Ofereceu ao barqueiro uma moeda de ouro.",
+          "🪙 Moeda de ouro"
+        ],
+        [
+          "Ornitóloga Dorien despacha as aves",
+          "Dez aves empalhadas para o museu. Uma delas pesa mais do que uma ave deveria.",
+          "🐦 Gaivota empalhada"
+        ],
+        [
+          "A lista de carga",
+          "Tudo na lista de carga conferia. O peso, não.",
+          "⚖️ Balança de plataforma"
+        ],
+        [
+          "Prático Kees leva o barco",
+          "Ele guiou o barco entre as rochas, como sempre. Desta vez, levou uma hora a mais.",
+          "🧭 Bússola"
+        ]
+      ]
+    ],
+    "vuurtoren-6": [
+      "Parte VI · A migração das aves",
+      "Milhares de aves migratórias descansam na ilha, a caminho do sul. A Ornitóloga Dorien as conta do alto do penhasco, e todos ajudam. Nem todos estão olhando para as aves.",
+      "As aves seguem para o sul. No caderno de campo de Dorien, a contagem volta a bater.",
+      "No penhasco, todos olham para cima, não uns para os outros. Os depoimentos ficam mais econômicos: use o Lápis, risque os quadrados impossíveis e veja o que sobra.",
+      [
+        [
+          "Mil asas",
+          "Ao nascer do sol, o penhasco estava cheio de aves. Um lugar ficou vazio, como se alguém tivesse deitado ali.",
+          "🪶 Pena de gaivota"
+        ],
+        [
+          "Ornitóloga Dorien observa",
+          "O binóculo dela ficou a manhã inteira apontado para a casa de barcos. Nenhuma ave faz ninho ali.",
+          "🔭 Binóculo"
+        ],
+        [
+          "O ninho vazio",
+          "O ninho no penhasco estava vazio, como deve ser em novembro. A não ser por uma chave.",
+          "🪺 Ninho"
+        ],
+        [
+          "Ajudante Jonas procura ovos",
+          "Ele desceu o penhasco atrás de ovos de gaivota, diz ele. Em novembro.",
+          "🧗 Corda de escalada"
+        ],
+        [
+          "O pombo-correio",
+          "Entre as aves migratórias havia um pombo. Ele não voou para o sul, mas para o continente.",
+          "🕊️ Pombo-correio"
+        ],
+        [
+          "Pescador Bartel alimenta as gaivotas",
+          "Toda manhã, ele joga restos de peixe para as gaivotas. Hoje de manhã, jogou outra coisa no mar.",
+          "🐟 Balde de peixe"
+        ],
+        [
+          "Náufrago Lev conhece as aves",
+          "Ele é marinheiro, diz ele. Conhece cada ave pelo nome em latim.",
+          "📚 Livro de aves"
+        ],
+        [
+          "Alguém que não descansa",
+          "Milhares de aves dormiam na ilha. Um observador de aves andou a noite inteira pela praia com um lampião.",
+          "🥾 Botas cheias de areia"
+        ]
+      ]
+    ],
+    "vuurtoren-7": [
+      "Parte VII · A tempestade de inverno",
+      "A pior tempestade em vinte anos. As ondas quebram por cima do penhasco, e a ilha fica três semanas isolada do continente.",
+      "A tempestade passa e o telégrafo volta a funcionar. O que ficou guardado por três semanas não fica mais guardado.",
+      "O tabuleiro cresce e a ilha encolhe. Se o relatório diz que uma área estava vazia, essa área inteira fica descartada para todos.",
+      [
+        [
+          "Três semanas lá dentro",
+          "Oito pessoas, uma casa, três semanas. No décimo segundo dia, ninguém dizia mais nada.",
+          "🪵 Lenha"
+        ],
+        [
+          "O cabo",
+          "No primeiro dia de tempestade, o cabo para o continente se rompeu. Um cabo não se rompe assim tão reto.",
+          "🔌 Cabo telegráfico"
+        ],
+        [
+          "Governanta Martha serve a sopa",
+          "Toda noite, oito tigelas de sopa. Voltaram nove vazias.",
+          "🥣 Tigela de sopa"
+        ],
+        [
+          "O porão alaga",
+          "A água no porão chegava aos joelhos. Tudo boiava, menos um baú.",
+          "⚓ Baú de chumbo"
+        ],
+        [
+          "Professora Wilma dá aula",
+          "O ditado dela era sobre um navio que afundou. O Náufrago Lev corrigiu o nome.",
+          "📝 Ditado"
+        ],
+        [
+          "Prático Kees perdeu um botão",
+          "Falta um botão de latão no casaco dele. O botão estava na sala da luz desde a primeira noite.",
+          "🟡 Botão de latão"
+        ],
+        [
+          "Ajudante Jonas mantém a luz acesa",
+          "Por três semanas, ele manteve a luz acesa sozinho. Usou só metade do querosene.",
+          "🪔 Pavio"
+        ],
+        [
+          "Pescador Bartel se lembra",
+          "Ele já tinha visto uma tempestade assim uma vez, vinte anos atrás. Naquela vez, a luz também se apagou.",
+          "📰 Jornal velho"
+        ]
+      ]
+    ],
+    "vuurtoren-8": [
+      "Parte VIII · A última luz",
+      "Um novo faroleiro vem do continente. Mais uma noite sob a luz que gira, com os mesmos rostos da primeira noite de tempestade.",
+      "Van Dam sobe no barco de suprimentos, toca a aba do chapéu e não olha para trás. A luz gira de novo. Todo navegante a vê, e você sabe quem a apagou.",
+      "Os últimos casos, quase todos no tabuleiro grande. Não fique travado no mais difícil: posicione os outros primeiro, e para o último muitas vezes sobra um quadrado só.",
+      [
+        [
+          "O novo faroleiro",
+          "Ele chegou no barco e subiu direto para o topo. Já conhecia o caminho.",
+          "🧳 Mala de viagem"
+        ],
+        [
+          "Governanta Martha faz as malas",
+          "Por vinte anos, ela cozinhou para o faroleiro. Na mala dela está a aliança dele.",
+          "💍 Aliança"
+        ],
+        [
+          "Telegrafista Fien se despede",
+          "A última mensagem dela para o continente: tudo em ordem. Ela a transmitiu duas vezes, a segunda num código diferente.",
+          "🔤 Código Morse"
+        ],
+        [
+          "Náufrago Lev ganha um nome",
+          "Depois de dois meses, ele diz como se chama. É o nome do navio.",
+          "🏷️ Placa do navio"
+        ],
+        [
+          "Ornitóloga Dorien vai embora",
+          "Ela contou quatro mil aves para o museu. Leva quatro mil e uma.",
+          "🗃️ Caixa de aves"
+        ],
+        [
+          "Ajudante Jonas não vira faroleiro",
+          "Por três anos, ele ajudou o faroleiro. Escolheram outro, e ele já sabia havia um mês.",
+          "📜 Carta de nomeação"
+        ],
+        [
+          "Professora Wilma fica na ilha",
+          "Todos vão embora no barco. Ela fica, pela escola, e a escola está fechada há um mês.",
+          "🔔 Sino da escola"
+        ],
+        [
+          "A última luz",
+          "Onde começou, na sala da luz. É ali que termina também.",
+          "🔆 Lente de Fresnel"
+        ]
+      ]
     ]
   },
 
@@ -6186,6 +8006,34 @@
         "found": "foi encontrado morto"
       },
       "casino": {
+        "rw": "área",
+        "rws": "áreas",
+        "gender": "f",
+        "vic": "O",
+        "found": "foi encontrado morto"
+      },
+      "filmstudio": {
+        "rw": "área",
+        "rws": "áreas",
+        "gender": "f",
+        "vic": "O",
+        "found": "foi encontrado morto"
+      },
+      "karavaan": {
+        "rw": "área",
+        "rws": "áreas",
+        "gender": "f",
+        "vic": "O",
+        "found": "foi encontrado morto"
+      },
+      "abdij": {
+        "rw": "área",
+        "rws": "áreas",
+        "gender": "f",
+        "vic": "O",
+        "found": "foi encontrado morto"
+      },
+      "vuurtoren": {
         "rw": "área",
         "rws": "áreas",
         "gender": "f",
@@ -7052,6 +8900,254 @@
           "in": "na Saleta",
           "of": "da Saleta"
         }
+      },
+      "filmstudio": {
+        "Studiohal": {
+          "the": "Set",
+          "in": "no Set",
+          "of": "do Set"
+        },
+        "Montagekamer": {
+          "the": "Montagem",
+          "in": "na Montagem",
+          "of": "da Montagem"
+        },
+        "Kleedkamer": {
+          "the": "Camarim",
+          "in": "no Camarim",
+          "of": "do Camarim"
+        },
+        "Kantine": {
+          "the": "Cantina",
+          "in": "na Cantina",
+          "of": "da Cantina"
+        },
+        "Rekwisietenkamer": {
+          "the": "Depósito",
+          "in": "no Depósito",
+          "of": "do Depósito"
+        },
+        "Projectiezaal": {
+          "the": "Sala de Cinema",
+          "in": "na Sala de Cinema",
+          "of": "da Sala de Cinema"
+        },
+        "Werkplaats": {
+          "the": "Oficina",
+          "in": "na Oficina",
+          "of": "da Oficina"
+        },
+        "Directiekamer": {
+          "the": "Escritório",
+          "in": "no Escritório",
+          "of": "do Escritório"
+        },
+        "Geluidsstudio": {
+          "the": "Cabine de Som",
+          "in": "na Cabine de Som",
+          "of": "da Cabine de Som"
+        },
+        "Archief": {
+          "the": "Arquivo",
+          "in": "no Arquivo",
+          "of": "do Arquivo"
+        },
+        "Buitenset": {
+          "the": "Set Externo",
+          "in": "no Set Externo",
+          "of": "do Set Externo"
+        },
+        "Poort": {
+          "the": "Portaria",
+          "in": "na Portaria",
+          "of": "da Portaria"
+        }
+      },
+      "karavaan": {
+        "Binnenplaats": {
+          "the": "Pátio",
+          "in": "no Pátio",
+          "of": "do Pátio"
+        },
+        "Bazaar": {
+          "the": "Bazar",
+          "in": "no Bazar",
+          "of": "do Bazar"
+        },
+        "Theehuis": {
+          "the": "Casa de Chá",
+          "in": "na Casa de Chá",
+          "of": "da Casa de Chá"
+        },
+        "Badhuis": {
+          "the": "Casa de Banhos",
+          "in": "na Casa de Banhos",
+          "of": "da Casa de Banhos"
+        },
+        "Waterput": {
+          "the": "Poço",
+          "in": "na área do Poço",
+          "of": "da área do Poço"
+        },
+        "Gastenkamer": {
+          "the": "Quarto",
+          "in": "no Quarto",
+          "of": "do Quarto"
+        },
+        "Tapijtwinkel": {
+          "the": "Tapeçaria",
+          "in": "na Tapeçaria",
+          "of": "da Tapeçaria"
+        },
+        "Poort": {
+          "the": "Portão",
+          "in": "na área do Portão",
+          "of": "da área do Portão"
+        },
+        "Dakterras": {
+          "the": "Terraço",
+          "in": "no Terraço",
+          "of": "do Terraço"
+        },
+        "Stal": {
+          "the": "Estábulo",
+          "in": "no Estábulo",
+          "of": "do Estábulo"
+        },
+        "Keuken": {
+          "the": "Cozinha",
+          "in": "na Cozinha",
+          "of": "da Cozinha"
+        },
+        "Voorraadkamer": {
+          "the": "Despensa",
+          "in": "na Despensa",
+          "of": "da Despensa"
+        }
+      },
+      "abdij": {
+        "Scriptorium": {
+          "the": "Scriptorium",
+          "in": "no Scriptorium",
+          "of": "do Scriptorium"
+        },
+        "Kapel": {
+          "the": "Capela",
+          "in": "na Capela",
+          "of": "da Capela"
+        },
+        "Kruidentuin": {
+          "the": "Horta de Ervas",
+          "in": "na Horta de Ervas",
+          "of": "da Horta de Ervas"
+        },
+        "Bibliotheek": {
+          "the": "Biblioteca",
+          "in": "na Biblioteca",
+          "of": "da Biblioteca"
+        },
+        "Refter": {
+          "the": "Refeitório",
+          "in": "no Refeitório",
+          "of": "do Refeitório"
+        },
+        "Slaapzaal": {
+          "the": "Dormitório",
+          "in": "no Dormitório",
+          "of": "do Dormitório"
+        },
+        "Kloostergang": {
+          "the": "Claustro",
+          "in": "no Claustro",
+          "of": "do Claustro"
+        },
+        "Kelder": {
+          "the": "Porão",
+          "in": "no Porão",
+          "of": "do Porão"
+        },
+        "Keuken": {
+          "the": "Cozinha",
+          "in": "na Cozinha",
+          "of": "da Cozinha"
+        },
+        "Klokkentoren": {
+          "the": "Campanário",
+          "in": "no Campanário",
+          "of": "do Campanário"
+        },
+        "Ziekenboeg": {
+          "the": "Enfermaria",
+          "in": "na Enfermaria",
+          "of": "da Enfermaria"
+        },
+        "Bakkerij": {
+          "the": "Padaria",
+          "in": "na Padaria",
+          "of": "da Padaria"
+        }
+      },
+      "vuurtoren": {
+        "Lantaarnkamer": {
+          "the": "Sala da Luz",
+          "in": "na Sala da Luz",
+          "of": "da Sala da Luz"
+        },
+        "Wenteltrap": {
+          "the": "Escada Caracol",
+          "in": "na Escada Caracol",
+          "of": "da Escada Caracol"
+        },
+        "Wachtershuis": {
+          "the": "Casa do Farol",
+          "in": "na Casa do Farol",
+          "of": "da Casa do Farol"
+        },
+        "Steiger": {
+          "the": "Cais",
+          "in": "no Cais",
+          "of": "do Cais"
+        },
+        "Botenhuis": {
+          "the": "Casa de Barcos",
+          "in": "na Casa de Barcos",
+          "of": "da Casa de Barcos"
+        },
+        "Seinkamer": {
+          "the": "Sala de Sinais",
+          "in": "na Sala de Sinais",
+          "of": "da Sala de Sinais"
+        },
+        "Klif": {
+          "the": "Penhasco",
+          "in": "na área do Penhasco",
+          "of": "da área do Penhasco"
+        },
+        "Strand": {
+          "the": "Praia",
+          "in": "na Praia",
+          "of": "da Praia"
+        },
+        "Keuken": {
+          "the": "Cozinha",
+          "in": "na Cozinha",
+          "of": "da Cozinha"
+        },
+        "Kelder": {
+          "the": "Porão",
+          "in": "no Porão",
+          "of": "do Porão"
+        },
+        "Werkplaats": {
+          "the": "Oficina",
+          "in": "na Oficina",
+          "of": "da Oficina"
+        },
+        "Voorraadkamer": {
+          "the": "Despensa",
+          "in": "na Despensa",
+          "of": "da Despensa"
+        }
       }
     },
     "furniture": {
@@ -7354,6 +9450,106 @@
         "a": "uma coqueteleira",
         "next": "bem ao lado de uma coqueteleira",
         "with": "com uma coqueteleira"
+      },
+      "filmcamera": {
+        "a": "uma câmera de cinema",
+        "next": "bem ao lado de uma câmera de cinema",
+        "with": "com uma câmera de cinema"
+      },
+      "schijnwerper": {
+        "a": "um refletor",
+        "next": "bem ao lado de um refletor",
+        "with": "com um refletor"
+      },
+      "regiestoel": {
+        "a": "uma cadeira de diretor",
+        "next": "bem ao lado de uma cadeira de diretor",
+        "with": "com uma cadeira de diretor"
+      },
+      "klapbord": {
+        "a": "uma claquete",
+        "next": "bem ao lado de uma claquete",
+        "with": "com uma claquete"
+      },
+      "filmspoel": {
+        "a": "um rolo de filme",
+        "next": "bem ao lado de um rolo de filme",
+        "with": "com um rolo de filme"
+      },
+      "tapijt": {
+        "a": "um tapete",
+        "next": "bem ao lado de um tapete",
+        "with": "com um tapete"
+      },
+      "specerijen": {
+        "a": "um cesto de especiarias",
+        "next": "bem ao lado de um cesto de especiarias",
+        "with": "com um cesto de especiarias"
+      },
+      "kruik": {
+        "a": "um cântaro",
+        "next": "bem ao lado de um cântaro",
+        "with": "com um cântaro"
+      },
+      "zadel": {
+        "a": "uma sela de camelo",
+        "next": "bem ao lado de uma sela de camelo",
+        "with": "com uma sela de camelo"
+      },
+      "weegschaal": {
+        "a": "uma balança de latão",
+        "next": "bem ao lado de uma balança de latão",
+        "with": "com uma balança de latão"
+      },
+      "lessenaar": {
+        "a": "uma mesa de copista",
+        "next": "bem ao lado de uma mesa de copista",
+        "with": "com uma mesa de copista"
+      },
+      "kandelaar": {
+        "a": "um castiçal",
+        "next": "bem ao lado de um castiçal",
+        "with": "com um castiçal"
+      },
+      "bijenkorf": {
+        "a": "uma colmeia",
+        "next": "bem ao lado de uma colmeia",
+        "with": "com uma colmeia"
+      },
+      "vijzel": {
+        "a": "um pilão",
+        "next": "bem ao lado de um pilão",
+        "with": "com um pilão"
+      },
+      "zandloper": {
+        "a": "uma ampulheta",
+        "next": "bem ao lado de uma ampulheta",
+        "with": "com uma ampulheta"
+      },
+      "boei": {
+        "a": "uma boia salva-vidas",
+        "next": "bem ao lado de uma boia salva-vidas",
+        "with": "com uma boia salva-vidas"
+      },
+      "fuik": {
+        "a": "um covo de lagosta",
+        "next": "bem ao lado de um covo de lagosta",
+        "with": "com um covo de lagosta"
+      },
+      "misthoorn": {
+        "a": "uma buzina de nevoeiro",
+        "next": "bem ao lado de uma buzina de nevoeiro",
+        "with": "com uma buzina de nevoeiro"
+      },
+      "stormlamp": {
+        "a": "um lampião",
+        "next": "bem ao lado de um lampião",
+        "with": "com um lampião"
+      },
+      "verrekijker": {
+        "a": "uma luneta",
+        "next": "bem ao lado de uma luneta",
+        "with": "com uma luneta"
       }
     }
   }
