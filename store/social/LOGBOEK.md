@@ -212,4 +212,4 @@ eerste publicatie op zijn vroegst 6 oktober.
 - 20 okt 21:30: versie 1.3.1 (build 15) ingediend: direct van oefenzaak naar zaak 1, herinnering na de eerste drie zaken, reeks meldingen dag
   1-7, twee vrije dagen bij de eerste streak. Indienen gaf twee keer een serverfout van Apple (500); de derde poging lukte, WAITING_FOR_REVIEW.
 - 20 okt: Jaimy: "512" is geen goede haak. Weg uit de eindkaart van de video's en uit de bio-teksten in ACCOUNTS-KIT; nieuwe bio's:
-  NL "Kun jij de dader vinden? 🔍 Elke dag een nieuw raadsel. App: Crimson Ledger", EN "... A new mystery every day ...", ES "... Un misterio nuevo cada día ...".
+  NL "Kun jij de dader vinden? 🔍 Elke dag een nieuw raadsel. App: Crimson Ledger", EN "... A new mystery every day ...", ES "... Un caso nuevo cada día ...".
