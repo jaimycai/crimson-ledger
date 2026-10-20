@@ -70,3 +70,5 @@ EOF
   174,76) in `assets/portretten/`, vloeren en kaartachtergronden in `style.css`. 256 zaken in `docs/werelden/zaken-13-14.js` en
   `zaken-15-16.js` (seeds 141101+ tot 171101+), alle 256 bewezen. Engels voor thema's en campagne staat klaar (nog buiten de app).
   Volgende stap: inbouw en vertalingen, zoals bij 11-12.
+- 21 okt: aankopen `nl.crimsonledger.app.world.opgraving` (6825097935) en `.world.casino` (6825098062) aangemaakt op dezelfde
+  manier, READY_TO_SUBMIT, met reviewscreenshot.

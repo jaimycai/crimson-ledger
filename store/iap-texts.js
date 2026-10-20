@@ -1,4 +1,4 @@
-// Teksten van de in-app-aankopen (sinds 1.4 elf) voor de winkeltalen die in 1.2 bijkomen.
+// Teksten van de in-app-aankopen (sinds 1.4 dertien) voor de winkeltalen die in 1.2 bijkomen.
 // Namen en de omschrijving van een wereld komen uit de taalbestanden van de app (per taal nagelezen),
 // zodat de winkel dezelfde woorden gebruikt als het scherm. Alleen de drie omschrijvingen in OWN zijn
 // hier vertaald: de app heeft daar geen zin voor, alleen bevestigingen na een aankoop.
@@ -16,7 +16,7 @@ const LOCALES = {
   'it': 'it', 'ja': 'ja', 'ko': 'ko', 'mr-IN': 'mr', 'pt-BR': 'pt', 'pt-PT': 'pt', 'ru': 'ru', 'te-IN': 'te',
   'tr': 'tr', 'ur-PK': 'ur', 'vi': 'vi', 'zh-Hans': 'zh'
 };
-const WORLDS = ['hotel', 'ruimte', 'museum', 'trein', 'circus', 'skihut', 'hacienda', 'opera'];
+const WORLDS = ['hotel', 'ruimte', 'museum', 'trein', 'circus', 'skihut', 'hacienda', 'opera', 'opgraving', 'casino'];
 const WORLD_CASES = 64, WORLD_PARTS = 8, HINT_PACK = 10;
 
 // [Crimson Pass, 10 hints, bordthema's en lijsten]: "Alle werelden, onbeperkt hints en alle thema's." /

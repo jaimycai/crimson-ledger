@@ -155,6 +155,14 @@ const IAP_TEXT = {
   'nl.crimsonledger.app.world.opera': {
     'nl-NL': ['Opéra Lumière', '64 zaken in acht delen, eigen cast.'],
     'en-US': ['Opéra Lumière', '64 cases in eight parts, own cast.']
+  },
+  'nl.crimsonledger.app.world.opgraving': {
+    'nl-NL': ['Het Graf van Nefer-Ankh', '64 zaken in acht delen, eigen cast.'],
+    'en-US': ['The Tomb of Nefer-Ankh', '64 cases in eight parts, own cast.']
+  },
+  'nl.crimsonledger.app.world.casino': {
+    'nl-NL': ['Casino Azur', '64 zaken in acht delen, eigen cast.'],
+    'en-US': ['Casino Azur', '64 cases in eight parts, own cast.']
   }
 };
 
