@@ -82,3 +82,6 @@ EOF
   `.world.vuurtoren` (6825111505), READY_TO_SUBMIT. Winkeltekst 1.4 (beschrijving met 16 werelden en wat-is-nieuw) in 23 talen
   in `store/metadata/1.4.0.json`, elke beschrijving onder 4.000 tekens. Nog te doen: schermafbeeldingen, build, indienen
   zodra 1.3.1 door de review is.
+- 22 okt: winkelscreenshots 6,5" opnieuw gemaakt in 20 talen (`make-screenshots.js`, `make-store-cards.js`); kaartteksten
+  zonder zaakaantal als haak: "Zestien werelden, één kronkelpad / Van makkelijk naar moeilijk, van Luxor tot Hollywood" en
+  "Tweeëndertig onderscheidingen". Uploaden met `node store/asc-assets.js screenshots 1.4.0` zodra versie 1.4.0 bestaat.
