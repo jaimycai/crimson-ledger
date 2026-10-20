@@ -51,10 +51,18 @@
   .card details p { margin: 6px 0 0; line-height: 1.4; font-style: italic; }
   .short { font-size: 0.72rem; color: var(--text-light); display: block; margin-top: 2px; }
   .parts { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; counter-reset: deel; }
-  .parts li { background: var(--bg-card); border: 1px solid var(--border-light); border-radius: 10px; padding: 10px 12px 10px 46px; position: relative; counter-increment: deel; }
-  .parts li::before { content: counter(deel); position: absolute; left: 12px; top: 10px; width: 24px; height: 24px; border-radius: 50%; background: var(--accent); color: #FAF5EF; font-size: 0.8rem; font-weight: 700; display: grid; place-items: center; }
-  .parts b { font-family: 'Playfair Display', serif; font-size: 1rem; display: block; }
-  .parts span { font-size: 0.86rem; color: var(--text-secondary); }
+  .parts > li { background: var(--bg-card); border: 1px solid var(--border-light); border-radius: 10px; padding: 10px 12px 10px 46px; position: relative; counter-increment: deel; }
+  .parts > li::before { content: counter(deel); position: absolute; left: 12px; top: 10px; width: 24px; height: 24px; border-radius: 50%; background: var(--accent); color: #FAF5EF; font-size: 0.8rem; font-weight: 700; display: grid; place-items: center; }
+  .parts > li > b { font-family: 'Playfair Display', serif; font-size: 1rem; display: block; }
+  .parts > li > span { font-size: 0.86rem; color: var(--text-secondary); }
+  .cases { list-style: none; margin: 10px 0 0; padding: 0; display: grid; gap: 7px; }
+  .cases li { display: grid; grid-template-columns: 24px 1fr; gap: 2px 8px; font-size: 0.84rem; line-height: 1.35; }
+  .cases .it { font-size: 1.05rem; line-height: 1.2; grid-row: span 2; }
+  .cases .ct { font-weight: 650; color: var(--text-primary); }
+  .cases .ct small { font-weight: 600; font-size: 0.68rem; letter-spacing: 0.04em; text-transform: uppercase; margin-left: 6px; color: var(--text-light); }
+  .cases .ct small.meester { color: var(--accent); }
+  .cases .cs { color: var(--text-secondary); }
+  .brief { margin: 10px 0 0; font-size: 0.8rem; color: var(--text-light); font-style: italic; }
   .outro { font-family: 'Playfair Display', serif; font-style: italic; text-align: center; margin: 14px 8px 0; color: var(--text-secondary); }
   .style-ref { display: flex; gap: 12px; align-items: center; background: var(--bg-card); border: 1px solid var(--border-light); border-radius: 12px; padding: 12px; margin-top: 10px; }
   .style-ref img { width: 72px; height: 72px; border-radius: 50%; object-fit: cover; flex: none; }
@@ -70,10 +78,10 @@
     background: linear-gradient(rgba(122,62,28,0.24) 1px, transparent 1px) 0 0 / 50% 50%, linear-gradient(90deg, rgba(122,62,28,0.24) 1px, transparent 1px) 0 0 / 50% 50%, rgba(122,62,28,0.06);
   }
   .board-grid[data-floor="parket"] .bcell::before {
-    background: repeating-linear-gradient(45deg, rgba(60,30,10,0.13) 0 1px, transparent 1px 6px), rgba(255,255,255,0.3);
+    background: repeating-linear-gradient(45deg, rgba(60,30,10,0.09) 0 1px, transparent 1px 7px), rgba(255,255,255,0.28);
   }
   .board-grid[data-floor="parket"] .bcell.dark::before {
-    background: repeating-linear-gradient(-45deg, rgba(60,30,10,0.13) 0 1px, transparent 1px 6px), rgba(60,30,10,0.04);
+    background: repeating-linear-gradient(-45deg, rgba(60,30,10,0.09) 0 1px, transparent 1px 7px), rgba(60,30,10,0.04);
   }
 </style>
 </head>
@@ -88,7 +96,7 @@
     <h2 class="next-h">Na je ja</h2>
     <ol>
       <li>Acht portretten per wereld in de vaste gravurestijl. Eerst de prijs in credits, dan jouw ja.</li>
-      <li>64 zaken per wereld: titel, verhaaltje, bewijsstuk en een seed die de motor bewijst.</li>
+      <li>De 64 zaken per wereld staan hierboven; elke seed is door de motor bewezen (<code>bewijs.js</code>).</li>
       <li>Alle teksten in 19 talen, met de woordvormen voor kamers en meubels.</li>
       <li>Kaart, winkelaankoop, schermafbeeldingen en wat-is-nieuw.</li>
     </ol>
@@ -99,6 +107,7 @@
 <script src="../../grammar.js"></script>
 <script src="../../floorplan.js"></script>
 <script src="ontwerp.js"></script>
+<script src="zaken.js"></script>
 <script>
 (() => {
   const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -149,7 +158,7 @@
     const sec = document.createElement('section');
     sec.className = 'world'; sec.id = w.id;
     sec.innerHTML = `
-      <div class="banner" style="background:linear-gradient(135deg, ${w.map.accent}, ${w.map.accent}dd)">
+      <div class="banner" style="background:linear-gradient(135deg, ${w.map.accent}, ${w.map.accent}dd);border:2px solid ${w.map.ring}">
         <div class="icon">${w.icon}</div>
         <h2>${esc(w.title)}</h2>
         <p class="tag">${esc(w.tagline)}</p>
@@ -171,8 +180,10 @@
         <p class="who">${esc(s.who)}</p>
         <details><summary>Portretopdracht</summary><p>${esc(s.look)}</p></details></div>`).join('')}</div>
       <div class="style-ref"><img src="../../art/portretten/vandam-zonder-tekst.png" alt=""><p>De gezichtjes hierboven zijn tijdelijk. Elk portret wordt een gravure in deze stijl, zoals Van Dam en de andere werelden.</p></div>
-      <h3>Acht delen</h3>
-      <ol class="parts">${w.parts.map(([t, s]) => `<li><b>${esc(t)}</b><span>${esc(s)}</span></li>`).join('')}</ol>
+      <h3>Acht delen, 64 zaken</h3>
+      <ol class="parts">${ZAKEN.filter(ch => ch.theme === w.id).map(ch => `<li><b>${esc(ch.title.replace(/^Deel [IVX]+ · /, ''))}</b><span>${esc(ch.intro)}</span>
+        <ul class="cases">${ch.cases.map(c => { const [icon, ...name] = c.item.split(' '); return `<li><span class="it" title="${esc(name.join(' '))}">${icon}</span><span class="ct">${esc(c.title)}<small class="${c.difficulty}">${c.difficulty}</small></span><span class="cs">${esc(c.story)}</span></li>`; }).join('')}</ul>
+        <p class="brief">Van Dam: ${esc(ch.briefing)}</p></li>`).join('')}</ol>
       <p class="outro">${esc(w.outro)}</p>`;
     worldsEl.appendChild(sec);
   });

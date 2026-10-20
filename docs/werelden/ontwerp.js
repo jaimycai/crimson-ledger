@@ -67,17 +67,17 @@ window.ONTWERP = [
   {
     id: 'opera', unlock: 32, icon: '🎭', title: 'Opéra Lumière', short: 'Opera',
     era: 'a grand opera house in Paris on a premiere night in 1891',
-    map: { accent: '#6B1F3A', ring: '#F0D9DF' },
-    tagline: 'Premièreavond in Parijs. Het doek gaat op, en de directeur zit niet in zijn loge.',
-    intro: 'Opéra Lumière, Parijs, 1891. De première is uitverkocht. In de pauze ligt directeur Gaston Leclerc achter het toneel, onder het touwwerk.',
+    map: { accent: '#7A1430', ring: '#E8C77A' },
+    tagline: 'Rood fluweel, kristallen kroonluchters en een uitverkochte première. Alleen de directeur komt na de pauze niet terug.',
+    intro: 'Opéra Lumière, Parijs, 1891. Goud, kristal en rood fluweel tot in de nok, en de première is uitverkocht. In de pauze ligt directeur Gaston Leclerc achter het toneel, onder het touwwerk.',
     victimName: 'Directeur Gaston Leclerc', roomWord: 'ruimte', roomWordPlural: 'ruimtes', floor: 'parket',
     rooms: [
-      { name: 'Toneel', article: 'het', color: '#F0CE8E' }, { name: 'Coulisse', article: 'de', color: '#C9B79C' },
-      { name: 'Orkestbak', article: 'de', color: '#9FC8C8' }, { name: 'Kleedkamer', article: 'de', color: '#E8A798' },
-      { name: 'Foyer', article: 'de', color: '#BFD8B0' }, { name: 'Loge', article: 'de', color: '#D99AA8' },
-      { name: 'Rekwisietenkamer', article: 'de', color: '#D9B8A0' }, { name: 'Toneelkelder', article: 'de', color: '#A8BEE0' },
-      { name: 'Kostuumatelier', article: 'het', color: '#E3B7D6' }, { name: 'Directiekamer', article: 'de', color: '#B9AEDC' },
-      { name: 'Repetitiezaal', article: 'de', color: '#8FC5D8' }, { name: 'Trappenhuis', article: 'het', color: '#DCEBF0' }
+      { name: 'Toneel', article: 'het', color: '#F2C46D' }, { name: 'Coulisse', article: 'de', color: '#CDB89A' },
+      { name: 'Orkestbak', article: 'de', color: '#7FB3B0' }, { name: 'Kleedkamer', article: 'de', color: '#F0A6A0' },
+      { name: 'Foyer', article: 'de', color: '#9FCBA8' }, { name: 'Loge', article: 'de', color: '#D9737F' },
+      { name: 'Rekwisietenkamer', article: 'de', color: '#D9B48A' }, { name: 'Toneelkelder', article: 'de', color: '#93A9C9' },
+      { name: 'Kostuumatelier', article: 'het', color: '#E7A9CF' }, { name: 'Directiekamer', article: 'de', color: '#B3A1D6' },
+      { name: 'Repetitiezaal', article: 'de', color: '#8CC3DE' }, { name: 'Trappenhuis', article: 'het', color: '#EAD9B0' }
     ],
     furniture: [
       { id: 'paspop', nl: 'een paspop',
@@ -88,8 +88,8 @@ window.ONTWERP = [
         icon: '<g><path d="M29 24 L34 37" stroke="#7A5236" stroke-width="1.8" stroke-linecap="round"/><path d="M29 12 q7 -9 4 -11 q-2 6 -6 9z" fill="#B3261E"/><path d="M6 16 Q20 8 34 16 Q33 26 25 25 Q20 22 15 25 Q7 26 6 16z" fill="#F2F0EA" stroke="#3B2A1B" stroke-width="1.3" stroke-linejoin="round"/><path d="M8 14.5 Q20 7.5 32 14.5" fill="none" stroke="#C9A227" stroke-width="1.5"/><ellipse cx="14" cy="18" rx="3.2" ry="2" fill="#3B2A1B"/><ellipse cx="26" cy="18" rx="3.2" ry="2" fill="#3B2A1B"/></g>' },
       { id: 'boeket', nl: 'een boeket',
         icon: '<g><ellipse cx="10" cy="20" rx="3.2" ry="1.8" fill="#3F7D4E" transform="rotate(-30 10 20)"/><ellipse cx="30" cy="20" rx="3.2" ry="1.8" fill="#3F7D4E" transform="rotate(30 30 20)"/><path d="M13 21 L20 36 L27 21z" fill="#EDE6D6" stroke="#8A7A60" stroke-width="1.2" stroke-linejoin="round"/><path d="M16 28 h8" stroke="#B3261E" stroke-width="2.2"/><g stroke="#7A0F35" stroke-width="1"><circle cx="14" cy="17" r="4.5" fill="#C2185B"/><circle cx="26" cy="17" r="4.5" fill="#C2185B"/><circle cx="20" cy="12" r="5" fill="#D81B60"/></g><g fill="none" stroke="#7A0F35" stroke-width="0.9"><path d="M20 10 a2 2 0 1 1 -2 2"/><path d="M14 15.5 a1.6 1.6 0 1 1 -1.6 1.6"/><path d="M26 15.5 a1.6 1.6 0 1 1 -1.6 1.6"/></g></g>' },
-      { id: 'lessenaar', nl: 'een lessenaar',
-        icon: '<g><path d="M20 20 v11 M13 36 L20 31 L27 36" stroke="#2C2C2C" stroke-width="1.8" fill="none" stroke-linecap="round"/><path d="M8 7 h24 l-2 13 h-20z" fill="#2C2C2C" stroke="#111" stroke-width="1.2" stroke-linejoin="round"/><rect x="11.5" y="8.5" width="17" height="10" fill="#FAF5EF"/><path d="M13 11 h14 M13 13 h14 M13 15 h14 M13 17 h14" stroke="#8A7A60" stroke-width="0.5"/><circle cx="16" cy="15" r="1.1" fill="#2C1810"/><circle cx="20" cy="13" r="1.1" fill="#2C1810"/><circle cx="24" cy="16" r="1.1" fill="#2C1810"/><path d="M17.1 15 V11 M21.1 13 V9.6 M25.1 16 V12" stroke="#2C1810" stroke-width="0.6"/></g>' }
+      { id: 'toneelkijker', nl: 'een toneelkijker',
+        icon: '<g><path d="M31 30 L36 38" stroke="#C9A227" stroke-width="2.2" stroke-linecap="round"/><rect x="6" y="11" width="12" height="15" rx="3.5" fill="#F1E7D6" stroke="#7A5A1C" stroke-width="1.2"/><rect x="22" y="11" width="12" height="15" rx="3.5" fill="#F1E7D6" stroke="#7A5A1C" stroke-width="1.2"/><rect x="17.5" y="14" width="5" height="6" rx="1" fill="#C9A227" stroke="#7A5A1C" stroke-width="0.8"/><path d="M6.5 16 h11 M22.5 16 h11" stroke="#C9A227" stroke-width="1.6"/><circle cx="12" cy="28" r="5" fill="#3B4E6B" stroke="#C9A227" stroke-width="1.8"/><circle cx="28" cy="28" r="5" fill="#3B4E6B" stroke="#C9A227" stroke-width="1.8"/><path d="M9.8 26.6 a2.6 2.6 0 0 1 2.6 -2 M25.8 26.6 a2.6 2.6 0 0 1 2.6 -2" fill="none" stroke="#DCEBF0" stroke-width="1"/></g>' }
     ],
     suspects: [
       { label: 'Diva Colette', gender: 'f', color: '#C2185B', who: 'De sopraan, ster van de première',

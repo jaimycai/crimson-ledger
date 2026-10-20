@@ -39,3 +39,7 @@ EOF
 - 20 okt: ontwerpbladen Hacienda (wereld 9) en Opera (wereld 10) klaar in `docs/werelden/` (`ontwerp.js` met de gegevens,
   `ontwerpblad.html` toont ze met een echt bord uit de motor, `blad-*.jpg` voor de telefoon). Nieuw: tien meubeliconen en twee
   vloeren (`tegels`, `parket`). De motor maakt per wereld 48 van 48 zaken over alle vier niveaus. Wacht op Jaimy's ja.
+- 20 okt, later: Jaimy keurde beide werelden goed ("Opera mag iets aantrekkelijker": fluweelrood met goud, rijkere kamerkleuren,
+  toneelkijker in plaats van lessenaar, nieuwe tagline). 128 zaken staan in `docs/werelden/zaken.js` (vorm van `CAMPAIGN`,
+  seeds 101101+ en 111101+); `node docs/werelden/bewijs.js` bewijst ze alle 128. Ze gaan pas naar `campaign.js` en `themes.js`
+  samen met de vertalingen, zodat de tests groen blijven. Portretten: 1,5 credit per stuk, 24 voor 16 (saldo 270,76); wacht op ja.
