@@ -1,4 +1,4 @@
-// Portrait prompts for the 64 suspects (Higgsfield, gpt_image_2_5, high, 1k, 1:1), with Van Dam's
+// Portrait prompts for the suspects of every world (Higgsfield, gpt_image_2_5, high, 1k, 1:1), with Van Dam's
 // portrait (assets/vandam.jpg) as the only style reference. Keyed by the Dutch label in themes.js.
 //   node art/portretten/prompts.js <world>   prints the full prompts for one world as JSON
 const STYLE = 'Use the reference image only as a style guide; do not copy its man. Draw a new character in exactly that style: ' +
@@ -15,7 +15,9 @@ const ERA = {
   museum: 'a museum at night, present day',
   trein: 'a night train to Vienna in 1934',
   circus: 'a travelling circus in the 1920s',
-  skihut: 'a mountain hut in the Alps in winter'
+  skihut: 'a mountain hut in the Alps in winter',
+  hacienda: 'a tequila hacienda in Jalisco, Mexico, in 1952',
+  opera: 'a grand opera house in Paris on a premiere night in 1891'
 };
 
 const PEOPLE = {
@@ -98,6 +100,26 @@ const PEOPLE = {
     'Dokter Ingrid': 'a doctor, a woman in her fifties, glasses, grey bob, wool cardigan, stethoscope',
     'Jongen Kai': 'a boy of about twelve, knitted beanie, scarf, mittens, wide eyes',
     'Berggids Freya': 'a mountain guide, a woman in her forties, wool headband, weathered face, climbing rope over one shoulder'
+  },
+  hacienda: {
+    'Doña Inés': 'a proud widow in her fifties, black hair in a low bun with a tortoiseshell comb, black lace mantilla over the shoulders, small gold cross',
+    'Mariachi Rubén': 'a handsome mariachi singer in his thirties, thin moustache, charro jacket with silver buttons, wide bow tie, hat hanging on his back',
+    'Kokkin Lupita': 'a warm cook in her forties, braids pinned around her head, embroidered blouse, apron, rebozo shawl over one shoulder',
+    'Voorman Esteban': 'a weathered field foreman in his fifties, broad straw hat, grey stubble, work shirt with rolled sleeves, a coa harvesting tool over his shoulder',
+    'Schilderes Paloma': 'a bohemian painter in her thirties, flowers braided into dark hair, bold earrings, paint-stained smock, direct gaze',
+    'Neef Tomás': 'a slick young man in his twenties, oiled side-parted hair, sharp double-breasted suit, pencil moustache, cigarette case in hand',
+    'Notaris Guzmán': 'a fussy notary in his sixties, round spectacles, bald with grey fringe, three-piece suit, leather document case',
+    'Zuster Bárbara': 'a calm nun in her forties, simple dark habit and white wimple, wooden rosary, observant eyes'
+  },
+  opera: {
+    'Diva Colette': 'a glamorous opera diva in her thirties, piled-up curls with a jewelled tiara, off-shoulder velvet gown, fur stole, haughty look',
+    'Tenor Matteo': 'a dashing Italian tenor in his thirties, wavy hair, curled moustache, embroidered stage doublet with a ruff collar',
+    'Dirigent Armand': 'a severe conductor in his sixties, wild white hair, white tie and tailcoat, baton in hand, intense frown',
+    'Danseres Ninon': 'a young ballerina in her late teens, hair in a tight bun, tulle tutu bodice, ribbon at the neck, wide nervous eyes',
+    'Kostumière Eloise': 'a sharp seamstress in her forties, measuring tape around the neck, pins in her collar, high-necked blouse, pince-nez',
+    'Baron Viktor': 'a wealthy baron in his fifties, monocle, mutton-chop whiskers, opera cape over evening dress, silver-topped cane',
+    'Toneelmeester Hugo': 'a burly stagehand chief in his forties, flat cap, rolled shirtsleeves, braces, coil of rope on his shoulder, short beard',
+    'Recensente Simone': 'an elegant critic in her thirties, short dark hair under a small feathered hat, high-collared jacket, notebook and pencil, raised eyebrow'
   }
 };
 
