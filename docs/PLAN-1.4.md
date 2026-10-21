@@ -88,10 +88,9 @@ EOF
 - 22 okt: versie 1.4.0 (16) gebouwd en geüpload (`store/release-ios.sh`). Versie 1.4.0 aanmaken in App Store Connect kan nog
   niet: 1.3.1 (15) staat sinds 20 okt op WAITING_FOR_REVIEW ("You cannot create a new version of the App in the current state").
 
-## Indienen zodra 1.3.1 door de review is
-1. `node store/asc-release.js status` → 1.3.1 is READY_FOR_SALE (of afgewezen).
-2. `node store/asc-release.js prepare 1.4.0 16 store/metadata/1.4.0.json` (versie, build 16, wat-is-nieuw).
-3. `node store/asc-release.js metadata 1.4.0 store/metadata/1.4.0.json` (beschrijving in 23 talen).
-4. `node store/asc-assets.js screenshots 1.4.0` (kaarten uit `store/cards-65*`).
-5. `node store/asc.js submit` met de acht wereldaankopen (hacienda, opera, opgraving, casino, filmstudio, karavaan, abdij,
-   vuurtoren), dan `node store/asc-release.js submit 1.4.0`. Controleer daarna welke build eraan hangt.
+## Ingediend (22 okt)
+Op Jaimy's verzoek is de inzending van 1.3.1 (15) ingetrokken; die versie is in App Store Connect hernoemd naar 1.4.0 en kreeg
+build 16, dat ook de 1.3.1-wijzigingen bevat. Wat-is-nieuw van 1.4 noemt daarom ook de drie punten van 1.3.1
+(`store/metadata/1.4.0.json`). Beschrijving en wat-is-nieuw in 23 talen, 6,5"-screenshots in 23 talen. Aanvraag 4b7bbdf2 met
+versie 1.4.0 en de acht wereldaankopen staat sinds 22 okt op WAITING_FOR_REVIEW (`node store/asc.js submit --submit`; de al
+goedgekeurde aankopen weigert Apple in een nieuwe aanvraag, dat is goed).
