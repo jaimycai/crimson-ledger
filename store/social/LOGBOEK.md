@@ -217,10 +217,9 @@ eerste publicatie op zijn vroegst 6 oktober.
   NL "Kun jij de dader vinden? 🔍 Elke dag een nieuw raadsel. App: Crimson Ledger", EN "... A new mystery every day ...", ES "... Un caso nuevo cada día ...".
 - 21 okt 20:15 meting. ES (TikTok Studio, @crimsonledger.es): es/01 344, es/02 320, es/03 326 (2 likes), es/04 1, es/05 329, es/06 0 (17u),
   es/07 7 (15 min); 0 reacties, 0 volgers. EN (openbaar profiel, @crimsonledgergame): en/01 345, en/02 325, en/03 353, en/04 342, en/05 0 (19u),
-  en/06 0 (2u); 0 volgers, 0 likes. NL: w3-01 235 na 25u, w3-02 86 na 1u, week2c/12 0 na 8u. Patroon: per account haalt ongeveer elke
-  post 320-350 views, behalve posts die 's nachts Europese tijd live gaan óf vlak na een vorige post (es/04 20 okt 20:03, es/06 21 okt 03:01,
-  en/05 21 okt 01:03, nl-12 12:30): die blijven op 0-1. Oorzaak niet gemeten; te testen is één ding: het tijdstip. Kijkers ES waren op 20 okt
-  88,6% Spanje, dus de Mexicaanse nachtslots (00:00, 03:00 Amsterdam) vallen voor dat publiek midden in de nacht.
+  en/06 0 (2u); 0 volgers, 0 likes. NL: w3-01 235 na 25u, w3-02 86 na 1u, week2c/12 0 na 8u. Patroon: een post haalt 320-350 views
+  of blijft op 0-1; er is geen tussenin. Het tijdstip verklaart het niet (es/02 00:01 en es/03 03:01 haalden 320+, es/06 03:01 bleef op 0).
+  Oorzaak niet gemeten; geen verandering doorgevoerd.
   Buffer telt "Video Views" pas na dagen; voor views geldt TikTok Studio of het openbare profiel. De EN- en NL-bio noemen nog "512"
   (ACCOUNTS-KIT is op 20 okt aangepast, de profielen niet).
 - 21 okt 20:20-20:55: Buffer aangevuld tot 10 per kanaal (nagelezen, geen verschoven tijden). EN `en/11` t/m `16`: 23 okt 01:00, 18:00,
