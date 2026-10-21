@@ -23,13 +23,14 @@ eerste publicatie op zijn vroegst 6 oktober.
 | w2c-02 | week2c/02-c1-2 | A carrousel | gepland TikTok Studio | 11 okt 12:00 ("Geen beschrijving": tekst ontbreekt) | 1 na 78u (14 okt 17:51); 1 op 17 okt 22:00 | 0 | 0 | niet gemeten | niet gemeten | |
 | w2c-03 | week2c/03-c4-0 | A carrousel | gepland TikTok Studio | 11 okt 16:00 ("Voetsporen in het zand") | 1 na 74u (14 okt 17:51); 1 op 17 okt 22:00 | 0 | 0 | niet gemeten | niet gemeten | |
 | w2c-04 | week2c/04-c1-0 | A carrousel | gepland TikTok Studio | 11 okt 21:00 ("De verzegelde deur") | 1 na 69u (14 okt 17:51); 1 op 17 okt 22:00 | 0 | 0 | niet gemeten | niet gemeten | |
-| w3-01 | week2c/05-c2-1 | A carrousel | concept in Metricool 15 okt (di 20 okt 19:00, automatisch publiceren uit) | ingepland Metricool 17 okt 22:45 (di 20 okt 19:00; Publiek, muziek, Jouw merk) | | | | | | Thomas |
-| w3-02 | week2c/06-c3-2 | A carrousel | concept in Metricool 15 okt (wo 21 okt 19:00, automatisch publiceren uit) | ingepland Metricool 17 okt 22:45 (wo 21 okt 19:00; Publiek, muziek, Jouw merk) | | | | | | Stuurman Kwint |
+| w3-01 | week2c/05-c2-1 | A carrousel | concept in Metricool 15 okt (di 20 okt 19:00, automatisch publiceren uit) | ingepland Metricool 17 okt 22:45 (di 20 okt 19:00; Publiek, muziek, Jouw merk); live 20 okt 19:00 | 235 na 25u (21 okt 20:15, profielraster) | | | | | Thomas |
+| w3-02 | week2c/06-c3-2 | A carrousel | concept in Metricool 15 okt (wo 21 okt 19:00, automatisch publiceren uit) | ingepland Metricool 17 okt 22:45 (wo 21 okt 19:00; Publiek, muziek, Jouw merk); live 21 okt 19:04 | 86 na 1u (21 okt 20:15) | | | | | Stuurman Kwint |
 | w3-03 | week2c/07-c2-0 | A carrousel | concept in Metricool 15 okt (do 22 okt 19:00, automatisch publiceren uit) | ingepland Metricool 17 okt 22:45 (do 22 okt 19:00; Publiek, muziek, Jouw merk) | | | | | | Isabelle |
 | w3-04 | week2c/08-c3-3 | A carrousel | concept in Metricool 15 okt (vr 23 okt 19:00, automatisch publiceren uit) | ingepland Buffer 17 okt (vr 23 okt 19:00, automatisch; Metricool-concept blijft concept) | | | | | | Juffrouw Lark |
 | w3-05 | week2c/09-c4-4 | A carrousel | concept in Metricool 15 okt (za 24 okt 19:00, automatisch publiceren uit) | ingepland Buffer 17 okt (za 24 okt 19:00, automatisch; Metricool-concept blijft concept) | | | | | | Kanonnier Bo |
 | w3-06 | week2c/10-c3-1 | A carrousel | concept in Metricool 15 okt (zo 25 okt 19:00, automatisch publiceren uit) | ingepland Buffer 17 okt (zo 25 okt 19:00, automatisch; Metricool-concept blijft concept) | | | | | | Dokter Sal |
 | w3-07 | week2c/11-c1-3 | A carrousel | concept in Metricool 15 okt (ma 26 okt 19:00, automatisch publiceren uit) | ingepland Buffer 17 okt (ma 26 okt 19:00, automatisch; Metricool-concept blijft concept) | | | | | | Marcus |
+| nl-12 | week2c/12-c5-0 | A carrousel | ingepland Buffer 20 okt (wo 21 okt 12:30) | live 21 okt 12:30 | 0 na 8u (21 okt 20:15) | | | | | |
 
 ## Dagcijfers
 
@@ -47,6 +48,7 @@ eerste publicatie op zijn vroegst 6 oktober.
 | 14 okt | 0 (TikTok Studio 17:51; analytics 7 dagen: 798 videoviews, 9 profielweergaven, 1 like, 1 reactie, 0 gedeeld; 98,6% Voor jou, 0% zoeken) | niet gemeten (App Store Connect vraagt opnieuw inloggen; niet gedaan) | niet gemeten (idem) | niet gemeten (idem) | 52 (7 dagen; opens ios 28 / web 33, en 28 / nl 9 / de 7 / overige talen 17; 3 terug op dag 1, 1743 zaken gestart / 159 opgelost, 0 aankopen, 8 gedeeld; web-opens en overige talen waarschijnlijk taalcontrole en capture.js, niet spelers) |
 | 15 okt | 0 (TikTok Studio 23:40; analytics 7 dagen: 801 videoviews, 9 profielweergaven, 1 like, 1 reactie, 0 gedeeld; 98,6% Voor jou, 0% zoeken) | ongeveer 1.000 (App Store Connect toont "1K", 7 dagen t/m 14 okt; exact getal niet zichtbaar) | 86 (idem) | 28 eerste downloads (idem; conversie 3,88%) | 61 (7 dagen; opens ios 45 / web 35, en 34 / nl 11 / es 8 / de 7 / overige 15; 8 terug op dag 1, 1901 zaken gestart / 292 opgelost, 0 aankopen, 4 gedeeld; web-opens en hoge aantallen gestart waarschijnlijk taalcontrole en capture.js) |
 | 17 okt | 0 (TikTok Studio 22:00; analytics 7 dagen: 560 videoviews, 8 profielweergaven, 1 like, 1 reactie, 0 gedeeld; 98,8% Voor jou, 0% zoeken) | 2.040 ("2.04K", App Store Connect, 7 dagen t/m 16 okt) | 127 (idem) | 45 eerste downloads (idem; conversie 2,86%); 1 aankoop, opbrengst $1 | 80 (7 dagen; opens ios 70 / web 35, en 36 / nl 18 / es 12 / de 7 / overige 32; 9 terug op dag 1, 2011 zaken gestart / 381 opgelost, 1 aankoop, 4 gedeeld; web-opens en hoge aantallen gestart waarschijnlijk taalcontrole en capture.js) |
+| 21 okt | NL 0, EN 0, ES 0 (openbare profielen en TikTok Studio ES, 20:15) | niet gemeten (App Store Connect vraagt opnieuw inloggen; niet gedaan) | niet gemeten (idem) | niet gemeten (idem) | 88 (7 dagen; opens ios 118 / web 27; nl 33, en 32, es 24, ar 19, fr 16, ru 9; terug dag 1 22%, dag 7 3%; oefenzaak 56%, zaak 1 40%, zaak 10 16%; 1192 gestart / 509 opgelost, 1 aankoop, 42 keer om beoordeling gevraagd, 4 gedeeld) |
 
 ## Beslissingen
 
@@ -213,3 +215,14 @@ eerste publicatie op zijn vroegst 6 oktober.
   1-7, twee vrije dagen bij de eerste streak. Indienen gaf twee keer een serverfout van Apple (500); de derde poging lukte, WAITING_FOR_REVIEW.
 - 20 okt: Jaimy: "512" is geen goede haak. Weg uit de eindkaart van de video's en uit de bio-teksten in ACCOUNTS-KIT; nieuwe bio's:
   NL "Kun jij de dader vinden? 🔍 Elke dag een nieuw raadsel. App: Crimson Ledger", EN "... A new mystery every day ...", ES "... Un caso nuevo cada día ...".
+- 21 okt 20:15 meting. ES (TikTok Studio, @crimsonledger.es): es/01 344, es/02 320, es/03 326 (2 likes), es/04 1, es/05 329, es/06 0 (17u),
+  es/07 7 (15 min); 0 reacties, 0 volgers. EN (openbaar profiel, @crimsonledgergame): en/01 345, en/02 325, en/03 353, en/04 342, en/05 0 (19u),
+  en/06 0 (2u); 0 volgers, 0 likes. NL: w3-01 235 na 25u, w3-02 86 na 1u, week2c/12 0 na 8u. Patroon: per account haalt ongeveer elke
+  post 320-350 views, behalve posts die 's nachts Europese tijd live gaan óf vlak na een vorige post (es/04 20 okt 20:03, es/06 21 okt 03:01,
+  en/05 21 okt 01:03, nl-12 12:30): die blijven op 0-1. Oorzaak niet gemeten; te testen is één ding: het tijdstip. Kijkers ES waren op 20 okt
+  88,6% Spanje, dus de Mexicaanse nachtslots (00:00, 03:00 Amsterdam) vallen voor dat publiek midden in de nacht.
+  Buffer telt "Video Views" pas na dagen; voor views geldt TikTok Studio of het openbare profiel. De EN- en NL-bio noemen nog "512"
+  (ACCOUNTS-KIT is op 20 okt aangepast, de profielen niet).
+- 21 okt 20:20-20:55: Buffer aangevuld tot 10 per kanaal (nagelezen, geen verschoven tijden). EN `en/11` t/m `16`: 23 okt 01:00, 18:00,
+  22:00; 24 okt 01:00, 18:00, 22:00 (Amsterdam). ES `es/11` t/m `17`: 23 okt 00:00, 03:00, 20:00; 24 okt 00:00, 03:00, 20:00; 25 okt 00:00.
+  NL `week2c/18`: 27 okt 12:30. Voorraad daarna: EN `en/17` t/m `21`, ES `es/18` t/m `21`, NL `week2c/19` t/m `21`.
