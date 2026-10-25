@@ -16,6 +16,9 @@ const SAY = {
 };
 const VOICE = { nl: 'voicestudio', en: 'af_heart', es: 'ef_dora', fr: 'ff_siwis', it: 'if_sara', pt: 'pf_dora', hi: 'hf_alpha', ja: 'jf_alpha', zh: 'zf_xiaobei' };
 const LEAD = 0.3;   // must match LEAD in meelossen.html
+// VoiceStudio voice profiles (local ids on this Mac): one fixed narrator per language, so a new seed never changes
+// the speaker. NL "Crimson verteller NL" = 13 s of OmniVoice design (female, middle-aged), made 26-10-2026.
+const PROFILE = { nl: 'dc3f22ab' };
 const [zaak, taal, voice = VOICE[taal]] = process.argv.slice(2);
 if (!zaak || !taal || !voice) { console.error('gebruik: node stem.js <zaak> <taal> [stem]   (Kokoro-talen: ' + Object.keys(VOICE).join(' ') + ')'); process.exit(2); }
 const out = path.join(__dirname, '..', 'motion', zaak, 'stem-' + taal);
@@ -33,7 +36,7 @@ async function voicestudio(text, file, written) {
   let best = null;
   for (let seed = 7; seed < 15; seed++) {
     const res = await fetch('http://localhost:3900/v1/audio/speech', { method: 'POST', headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ model: 'omnivoice', input: text, voice: 'default', language: taal, response_format: 'wav', seed, instruct: 'female, middle-aged, moderate pitch' }) });
+      body: JSON.stringify({ model: 'omnivoice', input: text, voice: PROFILE[taal] || 'default', language: taal, response_format: 'wav', seed, ...(PROFILE[taal] ? {} : { instruct: 'female, middle-aged, moderate pitch' }) }) });
     if (!res.ok) throw new Error(`VoiceStudio ${res.status}: ${(await res.text()).slice(0, 200)}`);
     const buf = Buffer.from(await res.arrayBuffer());
     const form = new FormData(); form.append('file', new Blob([buf], { type: 'audio/wav' }), 'clip.wav'); form.append('language', taal); form.append('model', 'whisper-1');

@@ -198,7 +198,7 @@ const App = {
       y += BH;   // banner
       let num = 0;
       Campaign.chaptersFor(th.id).forEach(ch => {
-        const open = Campaign.chapterOpen(ch.key, themeOpen), chDone = Campaign.chapterDone(ch.key);
+        const open = Campaign.chapterOpen(ch.key, themeOpen || this.isSample(th.id, ch.part)), chDone = Campaign.chapterDone(ch.key);
         const solvedIn = ch.cases.filter((_, i) => Campaign.stars(ch.key, i) > 0).length;
         // elk deel is een eigen strook op de kaart, met eigen sfeer (dag, storm, feest, nacht …)
         const unit = { type: 'unit', chapter: ch.key, part: ch.part, open, top: y };
@@ -365,7 +365,7 @@ const App = {
     const stars = it.stars ? '★'.repeat(it.stars) + '☆'.repeat(3 - it.stars) : '☆☆☆';
     const locked = it.state === 'locked';
     const th = Themes.get(it.theme);
-    const lockText = this.isPaidLocked(th) && !it.archive ? AP_T`${th.title} hoort bij de Crimson Pass. Ontgrendel de wereld in de winkel, of speel hier de dagelijkse zaak.`
+    const lockText = this.isPaidLocked(th) && !it.archive && !this.isSample(th.id, (Campaign.chapter(it.chapter) || {}).part) ? AP_T`${th.title} hoort bij de Crimson Pass. Ontgrendel de wereld in de winkel, of speel hier de dagelijkse zaak.`
       : !this.themeUnlocked(th) && !it.archive ? AP_T`Los eerst ${th.unlock} zaken op (vrij spel of dagelijks) om ${th.title} te openen.`
       : it.archive ? (Campaign.chapterOpen(Campaign.ARCHIVE) ? AP_T('Los eerst het vorige dossier op.') : AP_T`Het archief opent na ${Campaign.ARCHIVE_UNLOCK} campagnezaken.`)
       : it.idx === 0 ? AP_T('Maak eerst het vorige deel af.') : AP_T`Los eerst zaak ${it.num - 1} op.`;
@@ -387,8 +387,8 @@ const App = {
   startCampaignCase(key, idx, direct = false) {
     const c = Campaign.caseAt(key, idx);
     if (!c) return this.showToast('⚠️', AP_T('Deze zaak kon niet geladen worden.'));
-    if (this.isPaidLocked(Themes.get(c.theme))) return this.openStore('world:' + c.theme);
     const ch = Campaign.chapter(key);
+    if (this.isPaidLocked(Themes.get(c.theme)) && !this.isSample(c.theme, ch && ch.part)) return this.openStore('world:' + c.theme);
     this.hideModal('chest-modal');
     const go = () => {
       if (!Board.start(c.difficulty, c.seed, false, c.theme, c)) return this.showToast('⚠️', AP_T('Deze zaak kon niet geladen worden.'));
@@ -864,6 +864,8 @@ const App = {
     return (t.unlock || 0) <= (Board.loadStats().solved || 0);
   },
   isPaidLocked(t) { return typeof Store !== 'undefined' && Store.isPaidWorld(t.id) && !Store.ownsWorld(t.id); },
+  // proeven: deel I van elke betaalde wereld is voor iedereen open; daarna de Pass of de wereld los
+  isSample(themeId, part) { return part === 1 && this.isPaidLocked(Themes.get(themeId)); },
 
   renderThemePicker() {
     const wrap = document.getElementById('theme-picker');
