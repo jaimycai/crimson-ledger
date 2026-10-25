@@ -397,7 +397,10 @@
     "Bijvoorbeeld: welke zaak je lastig vond, of wat je nog mist in het spel.": "যেমন: কোন কেস কঠিন লেগেছে, বা গেমে আর কী চান।",
     "Versturen": "পাঠান",
     "Bedankt! Je bericht is verstuurd.": "ধন্যবাদ! আপনার বার্তা পাঠানো হয়েছে।",
-    "Versturen lukt nu niet. Probeer het later opnieuw.": "এখন পাঠানো যাচ্ছে না। পরে আবার চেষ্টা করুন।"
+    "Versturen lukt nu niet. Probeer het later opnieuw.": "এখন পাঠানো যাচ্ছে না। পরে আবার চেষ্টা করুন।",
+    "{0} zit in de Crimson Pass. Of ontgrendel alleen deze wereld.": "{0} Crimson Pass-এর অংশ। অথবা শুধু এই জগৎটি খুলে নিন।",
+    "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "বোর্ডের থিম আর ছবির ফ্রেম Crimson Pass-এর অংশ। অথবা শুধু থিম আর ফ্রেমগুলো খুলে নিন।",
+    "Extra's": "এক্সট্রা"
   },
 
   data: {

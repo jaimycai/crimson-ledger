@@ -397,7 +397,10 @@
     "Bijvoorbeeld: welke zaak je lastig vond, of wat je nog mist in het spel.": "예: 어려웠던 사건, 게임에 있었으면 하는 것",
     "Versturen": "보내기",
     "Bedankt! Je bericht is verstuurd.": "고마워요! 메시지를 보냈어요.",
-    "Versturen lukt nu niet. Probeer het later opnieuw.": "지금은 보낼 수 없어요. 나중에 다시 시도해 주세요."
+    "Versturen lukt nu niet. Probeer het later opnieuw.": "지금은 보낼 수 없어요. 나중에 다시 시도해 주세요.",
+    "{0} zit in de Crimson Pass. Of ontgrendel alleen deze wereld.": "Crimson Pass에는 {0}도 포함돼 있어요. 이 월드만 잠금 해제할 수도 있어요.",
+    "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "보드 테마와 초상화 액자는 Crimson Pass에 포함돼 있어요. 테마와 액자만 잠금 해제할 수도 있어요.",
+    "Extra's": "아이템"
   },
 
   data: {

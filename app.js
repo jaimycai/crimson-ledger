@@ -509,8 +509,8 @@ const App = {
     const reason = this.storeReason, pass = Store.hasPass();
     const lead = $('store-lead');
     const leadText = reason === 'hint' ? AP_T`Je gratis hints voor vandaag zijn op (${Store.FREE_HINTS_PER_DAY} per dag). Morgen krijg je er weer ${Store.FREE_HINTS_PER_DAY}, of kies hieronder.`
-      : reason && reason.startsWith('world:') ? AP_T`${Themes.get(reason.slice(6)).title} hoort bij de Crimson Pass. Je kunt de wereld ook los kopen.`
-      : reason === 'cosmetics' ? AP_T('Bordthema\'s en portretlijsten horen bij de Crimson Pass, of koop ze los.') : '';
+      : reason && reason.startsWith('world:') ? AP_T`${Themes.get(reason.slice(6)).title} zit in de Crimson Pass. Of ontgrendel alleen deze wereld.`
+      : reason === 'cosmetics' ? AP_T('Bordthema\'s en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema\'s en lijsten.') : '';
     lead.textContent = leadText; lead.hidden = !leadText;
     const card = $('pass-card');
     card.classList.toggle('owned', pass);
@@ -519,7 +519,7 @@ const App = {
     const row = (icon, title, sub, productId, owned, hl, key) => `<div class="store-row${owned ? ' owned' : ''}${hl ? ' hl' : ''}">
       <span class="store-icon">${icon}</span><span class="store-text"><b>${title}</b><small>${sub}</small></span>
       <button type="button" class="btn ${owned ? 'btn-ghost' : 'btn-primary'}" data-product="${productId}" ${owned ? 'disabled' : ''}>${owned ? AP_T('✓ Van jou') : Store.price(productId)}</button></div>`;
-    let html = `<p class="store-head">${AP_T('Los te koop')}</p>`;
+    let html = `<p class="store-head">${AP_T('Extra\'s')}</p>`;
     html += row('💡', AP_T`${Store.HINT_PACK} hints`, pass ? AP_T('Met de Pass zijn hints onbeperkt.') : AP_T`Je hebt er nu ${Store.hintLabel()}. Elke dag krijg je ${Store.FREE_HINTS_PER_DAY} gratis.`, Store.IDS.hints, pass, reason === 'hint');
     html += row('🎨', AP_T('Bordthema\'s en lijsten'), AP_T('Nacht, sepia en kraftpapier; gouden, zilveren en crimson lijst.'), Store.IDS.cosmetics, Store.ownsCosmetics(), reason === 'cosmetics');
     html += `<p class="store-head">${AP_T('Werelden')}</p>`;

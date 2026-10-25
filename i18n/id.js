@@ -397,7 +397,10 @@
     "Bijvoorbeeld: welke zaak je lastig vond, of wat je nog mist in het spel.": "Misalnya: kasus mana yang sulit, atau apa yang ingin kamu lihat di game.",
     "Versturen": "Kirim",
     "Bedankt! Je bericht is verstuurd.": "Terima kasih! Pesanmu sudah terkirim.",
-    "Versturen lukt nu niet. Probeer het later opnieuw.": "Belum bisa mengirim sekarang. Coba lagi nanti."
+    "Versturen lukt nu niet. Probeer het later opnieuw.": "Belum bisa mengirim sekarang. Coba lagi nanti.",
+    "{0} zit in de Crimson Pass. Of ontgrendel alleen deze wereld.": "{0} termasuk dalam Crimson Pass. Atau buka dunia ini saja.",
+    "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "Tema papan dan bingkai potret termasuk dalam Crimson Pass. Atau buka tema dan bingkainya saja.",
+    "Extra's": "Ekstra"
   },
 
   data: {

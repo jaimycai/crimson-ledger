@@ -397,7 +397,10 @@
     "Bijvoorbeeld: welke zaak je lastig vond, of wat je nog mist in het spel.": "مثلًا: أي قضية وجدتها صعبة، أو ما الذي تتمنى إضافته إلى اللعبة.",
     "Versturen": "إرسال",
     "Bedankt! Je bericht is verstuurd.": "شكرًا! أُرسلت رسالتك.",
-    "Versturen lukt nu niet. Probeer het later opnieuw.": "تعذّر الإرسال الآن. حاول مرة أخرى لاحقًا."
+    "Versturen lukt nu niet. Probeer het later opnieuw.": "تعذّر الإرسال الآن. حاول مرة أخرى لاحقًا.",
+    "{0} zit in de Crimson Pass. Of ontgrendel alleen deze wereld.": "{0} جزء من Crimson Pass. أو افتح هذا العالم وحده.",
+    "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "سمات اللوحة وإطارات الصور جزء من Crimson Pass. أو افتح السمات والإطارات وحدها.",
+    "Extra's": "إضافات"
   },
 
   data: {

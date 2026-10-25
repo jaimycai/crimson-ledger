@@ -397,7 +397,10 @@
     "Bijvoorbeeld: welke zaak je lastig vond, of wat je nog mist in het spel.": "Zum Beispiel: welcher Fall dir schwerfiel oder was dir im Spiel noch fehlt.",
     "Versturen": "Senden",
     "Bedankt! Je bericht is verstuurd.": "Danke! Deine Nachricht ist verschickt.",
-    "Versturen lukt nu niet. Probeer het later opnieuw.": "Senden klappt gerade nicht. Versuch es später noch einmal."
+    "Versturen lukt nu niet. Probeer het later opnieuw.": "Senden klappt gerade nicht. Versuch es später noch einmal.",
+    "{0} zit in de Crimson Pass. Of ontgrendel alleen deze wereld.": "{0} gehört zum Crimson Pass. Oder schalte nur diese Welt frei.",
+    "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "Brettdesigns und Porträtrahmen gehören zum Crimson Pass. Oder schalte nur die Designs und Rahmen frei.",
+    "Extra's": "Extras"
   },
 
   data: {

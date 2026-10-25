@@ -397,7 +397,10 @@
     "Bijvoorbeeld: welke zaak je lastig vond, of wat je nog mist in het spel.": "مثلاً: کون سا کیس مشکل لگا، یا گیم میں اور کیا ہونا چاہیے۔",
     "Versturen": "بھیجیں",
     "Bedankt! Je bericht is verstuurd.": "شکریہ! آپ کا پیغام بھیج دیا گیا۔",
-    "Versturen lukt nu niet. Probeer het later opnieuw.": "ابھی بھیجا نہیں جا سکا۔ کچھ دیر بعد دوبارہ کوشش کریں۔"
+    "Versturen lukt nu niet. Probeer het later opnieuw.": "ابھی بھیجا نہیں جا سکا۔ کچھ دیر بعد دوبارہ کوشش کریں۔",
+    "{0} zit in de Crimson Pass. Of ontgrendel alleen deze wereld.": "{0} Crimson Pass میں شامل ہے۔ یا صرف یہ دنیا کھولیں۔",
+    "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "بورڈ تھیم اور پورٹریٹ فریم Crimson Pass میں شامل ہیں۔ یا صرف تھیم اور فریم کھولیں۔",
+    "Extra's": "ایکسٹرا"
   },
 
   data: {

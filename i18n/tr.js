@@ -397,7 +397,10 @@
     "Bijvoorbeeld: welke zaak je lastig vond, of wat je nog mist in het spel.": "Örneğin: hangi vakayı zor buldun ya da oyunda neyi görmek istersin.",
     "Versturen": "Gönder",
     "Bedankt! Je bericht is verstuurd.": "Teşekkürler! Mesajın gönderildi.",
-    "Versturen lukt nu niet. Probeer het later opnieuw.": "Şu anda gönderilemiyor. Daha sonra tekrar dene."
+    "Versturen lukt nu niet. Probeer het later opnieuw.": "Şu anda gönderilemiyor. Daha sonra tekrar dene.",
+    "{0} zit in de Crimson Pass. Of ontgrendel alleen deze wereld.": "{0}, Crimson Pass’e dahil. Ya da yalnızca bu dünyanın kilidini aç.",
+    "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "Tahta temaları ve portre çerçeveleri Crimson Pass’e dahil. Ya da yalnızca temaların ve çerçevelerin kilidini aç.",
+    "Extra's": "Ekstralar"
   },
 
   data: {

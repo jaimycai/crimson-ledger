@@ -397,7 +397,10 @@
     "Bijvoorbeeld: welke zaak je lastig vond, of wat je nog mist in het spel.": "例：難しかった事件、ゲームにほしいものなど",
     "Versturen": "送信",
     "Bedankt! Je bericht is verstuurd.": "ありがとうございます！メッセージを送信しました。",
-    "Versturen lukt nu niet. Probeer het later opnieuw.": "今は送信できません。しばらくしてからもう一度お試しください。"
+    "Versturen lukt nu niet. Probeer het later opnieuw.": "今は送信できません。しばらくしてからもう一度お試しください。",
+    "{0} zit in de Crimson Pass. Of ontgrendel alleen deze wereld.": "{0}はCrimson Passに含まれます。このワールドだけを解放することもできます。",
+    "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "盤面テーマと肖像フレームはCrimson Passに含まれます。テーマとフレームだけを解放することもできます。",
+    "Extra's": "アイテム"
   },
 
   data: {

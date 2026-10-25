@@ -397,7 +397,10 @@
     "Bijvoorbeeld: welke zaak je lastig vond, of wat je nog mist in het spel.": "Ví dụ: vụ án nào bạn thấy khó, hoặc bạn muốn trò chơi có thêm gì.",
     "Versturen": "Gửi",
     "Bedankt! Je bericht is verstuurd.": "Cảm ơn bạn! Tin nhắn đã được gửi.",
-    "Versturen lukt nu niet. Probeer het later opnieuw.": "Hiện chưa gửi được. Bạn thử lại sau nhé."
+    "Versturen lukt nu niet. Probeer het later opnieuw.": "Hiện chưa gửi được. Bạn thử lại sau nhé.",
+    "{0} zit in de Crimson Pass. Of ontgrendel alleen deze wereld.": "{0} thuộc Crimson Pass. Hoặc chỉ mở khóa thế giới này.",
+    "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "Giao diện bàn chơi và khung chân dung thuộc Crimson Pass. Hoặc chỉ mở khóa giao diện và khung.",
+    "Extra's": "Nội dung thêm"
   },
 
   data: {

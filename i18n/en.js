@@ -107,9 +107,9 @@
     '{0} is helemaal opgelost. Wat een speurder.': '{0} is completely solved. What a sleuth.', 'Goed werk, Rekruut. Dit is van jou.': 'Good work. This is yours.',
     // winkel
     'Je gratis hints voor vandaag zijn op ({0} per dag). Morgen krijg je er weer {1}, of kies hieronder.': 'Your free {0|one:hint|other:hints} for today {0|one:is|other:are} used up ({0} a day). Tomorrow you get {1} again, or choose below.',
-    '{0} hoort bij de Crimson Pass. Je kunt de wereld ook los kopen.': '{0} is part of the Crimson Pass. You can also buy the world separately.',
-    "Bordthema's en portretlijsten horen bij de Crimson Pass, of koop ze los.": 'Board themes and portrait frames come with the Crimson Pass, or you can buy them separately.',
-    '✓ Je hebt de Crimson Pass': '✓ You have the Crimson Pass', 'Crimson Pass · {0}': 'Crimson Pass · {0}', 'Los te koop': 'Sold separately', 'Werelden': 'Worlds',
+    '{0} zit in de Crimson Pass. Of ontgrendel alleen deze wereld.': '{0} is part of the Crimson Pass. Or unlock just this world.',
+    "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": 'Board themes and portrait frames are part of the Crimson Pass. Or unlock just the themes and frames.',
+    '✓ Je hebt de Crimson Pass': '✓ You have the Crimson Pass', 'Crimson Pass · {0}': 'Crimson Pass · {0}', "Extra's": 'Extras', 'Werelden': 'Worlds',
     '{0} hints': '{0} {0|one:hint|other:hints}', 'Met de Pass zijn hints onbeperkt.': 'With the Pass, hints are unlimited.', 'Je hebt er nu {0}. Elke dag krijg je {1} gratis.': 'You have {0} now. Every day you get {1} for free.',
     "Bordthema's en lijsten": 'Board themes and frames', 'Nacht, sepia en kraftpapier; gouden, zilveren en crimson lijst.': 'Night, sepia and kraft paper; gold, silver and crimson frames.',
     '{0} zaken in {1} delen · {2}': '{0} {0|one:case|other:cases} in {1} {1|one:part|other:parts} · {2}', '✓ Van jou': '✓ Yours',

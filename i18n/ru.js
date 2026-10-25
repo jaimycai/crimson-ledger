@@ -397,7 +397,10 @@
     "Bijvoorbeeld: welke zaak je lastig vond, of wat je nog mist in het spel.": "Например: какое дело показалось трудным или чего не хватает в игре.",
     "Versturen": "Отправить",
     "Bedankt! Je bericht is verstuurd.": "Спасибо! Сообщение отправлено.",
-    "Versturen lukt nu niet. Probeer het later opnieuw.": "Сейчас отправить не получается. Попробуйте позже."
+    "Versturen lukt nu niet. Probeer het later opnieuw.": "Сейчас отправить не получается. Попробуйте позже.",
+    "{0} zit in de Crimson Pass. Of ontgrendel alleen deze wereld.": "{0} входит в Crimson Pass. Или откройте только этот мир.",
+    "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "Темы поля и рамки портретов входят в Crimson Pass. Или откройте только темы и рамки.",
+    "Extra's": "Дополнительно"
   },
 
   data: {
