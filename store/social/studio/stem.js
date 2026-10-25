@@ -19,6 +19,7 @@ const LEAD = 0.3;   // must match LEAD in meelossen.html
 // VoiceStudio voice profiles (local ids on this Mac): one fixed narrator per language, so a new seed never changes
 // the speaker. NL "Crimson verteller NL" = 13 s of OmniVoice design (female, middle-aged), made 26-10-2026.
 const PROFILE = { nl: 'dc3f22ab' };
+const PITCH = { nl: 245 };   // median of that profile over 60 lines (toon.py); a line more than 15% off sounds like someone else
 const [zaak, taal, voice = VOICE[taal]] = process.argv.slice(2);
 if (!zaak || !taal || !voice) { console.error('gebruik: node stem.js <zaak> <taal> [stem]   (Kokoro-talen: ' + Object.keys(VOICE).join(' ') + ')'); process.exit(2); }
 const out = path.join(__dirname, '..', 'motion', zaak, 'stem-' + taal);
@@ -41,12 +42,15 @@ async function voicestudio(text, file, written) {
     const buf = Buffer.from(await res.arrayBuffer());
     const form = new FormData(); form.append('file', new Blob([buf], { type: 'audio/wav' }), 'clip.wav'); form.append('language', taal); form.append('model', 'whisper-1');
     const heard = ((await (await fetch('http://localhost:3900/v1/audio/transcriptions', { method: 'POST', body: form })).json()).text || '');
-    const score = match(written, heard);
-    if (!best || score > best.score) best = { buf, score, seed, heard };
+    const tmp = file + '.try.wav'; fs.writeFileSync(tmp, buf);
+    const hz = Number(execFileSync('python3', [path.join(__dirname, 'toon.py'), tmp], { encoding: 'utf8' }).trim()); fs.unlinkSync(tmp);
+    const inRange = !PITCH[taal] || Math.abs(hz - PITCH[taal]) / PITCH[taal] <= 0.15;
+    const score = match(written, heard) - (inRange ? 0 : 0.5);   // a different-sounding line never wins
+    if (!best || score > best.score) best = { buf, score, seed, heard, hz };
     if (score >= 0.8) break;
   }
   fs.writeFileSync(file, best.buf);
-  console.log(`        seed ${best.seed}, ${Math.round(best.score * 100)}% verstaan: ${best.heard.trim()}`);
+  console.log(`        seed ${best.seed}, ${best.hz} Hz, ${Math.round(best.score * 100)}% verstaan: ${best.heard.trim()}`);
   if (best.score < 0.6) console.log('        LET OP: zin slecht verstaanbaar');
   return (best.buf.length - 44) / 2 / 24000;   // 16-bit mono 24 kHz WAV
 }
