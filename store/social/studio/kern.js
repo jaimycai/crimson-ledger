@@ -5,6 +5,9 @@
 // window.COMP = { duration, scenes, cues, seek(t) } is what bord.js and render.js drive.
 const Studio = (() => {
   const q = new URLSearchParams(location.search);
+  // zaak and taal end up in script and image paths: only plain ids pass, anything else falls back to the default
+  const zaak = /^[a-z0-9-]{1,40}$/.test(q.get('zaak') || '') ? q.get('zaak') : 'c3-0';
+  const taal = /^[a-z]{2}$/.test(q.get('taal') || '') ? q.get('taal') : 'nl';
   const clamp = (v, a = 0, b = 1) => Math.max(a, Math.min(b, v));
   // progress of t through [a, a + d], eased; 0 before, 1 after
   const ease = {
@@ -39,5 +42,5 @@ const Studio = (() => {
 
   // which scene is on screen at t
   const sceneAt = (scenes, t) => scenes.reduce((cur, s) => (t >= s.t ? s : cur), scenes[0]);
-  return { start, clamp, ease, prog, mix, sceneAt, q };
+  return { start, clamp, ease, prog, mix, sceneAt, q, zaak, taal };
 })();

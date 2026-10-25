@@ -326,7 +326,8 @@ via een planner, op vaste tijden, op nieuwe accounts zonder volgers. Dat lijkt o
 **Besluiten (Jaimy, 25-10: "doe dit")**
 1. Buffer-wachtrijen van alle drie de kanalen staan op pauze (25 okt 22:30). Metricool heeft geen geplande posts, alleen concepten.
    Geen carrousels meer tot er een video-account draait.
-2. Accountstatus per account in de app bekijken (Jaimy). Overtreding: bezwaar maken. Niets: een week rust, dan video.
+2. Accountstatus per account in de app bekijken (Jaimy). Overtreding: bezwaar maken. Niets: meteen door met video; de planner
+   ligt al stil, en een eigen video met stem is de proef of het account nog bereik krijgt.
 3. Video in plaats van carrousel: "Los met mij op" (formaat A) met stem. Eén per dag per account, met de hand geplaatst via
    TikTok Studio of de app, niet via een planner. Tijdstip wisselt.
 4. Oude posts: **niet verwijderen.** Verwijderen is definitief, er is geen bewijs dat het bereik terugkomt, en veel posts tegelijk

@@ -92,11 +92,11 @@ document.write('<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[
 document.documentElement.style.setProperty('--serif', "'Zodiak', Georgia, serif");
 document.documentElement.style.setProperty('--sans', "'General Sans', sans-serif");
 </script>
-<script>document.write(`<script src="../motion/${Studio.q.get('zaak') || 'c3-0'}/zaak.js"><\/script>`);
+<script>document.write(`<script src="../motion/${Studio.zaak}/zaak.js"><\/script>`);
 // ?stem=1: scene lengths follow the recorded voice (stem.js writes motion/<zaak>/stem-<taal>/stem.js)
-if (Studio.q.get('stem')) document.write(`<script src="../motion/${Studio.q.get('zaak') || 'c3-0'}/stem-${Studio.q.get('taal') || 'nl'}/stem.js"><\/script>`);</script>
+if (Studio.q.get('stem')) document.write(`<script src="../motion/${Studio.zaak}/stem-${Studio.taal}/stem.js"><\/script>`);</script>
 <script>
-const Z = window.ZAAK, zaak = Studio.q.get('zaak') || 'c3-0', taal = Studio.q.get('taal') || 'nl';
+const Z = window.ZAAK, zaak = Studio.zaak, taal = Studio.taal;
 const $ = id => document.getElementById(id);
 const esc = s => String(s).replace(/[&<>]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
 $('planimg').src = `../motion/${zaak}/plan.png`;

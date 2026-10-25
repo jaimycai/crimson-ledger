@@ -113,9 +113,9 @@ const L = LETTERS[Studio.q.get('letter') || 'a'];   // default since 10-10-2026:
 if (L) { document.write(`<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=${L[2]}&display=block">`);
   document.documentElement.style.setProperty('--serif', `'${L[0]}', Georgia, serif`); document.documentElement.style.setProperty('--sans', `'${L[1]}', sans-serif`); }
 </script>
-<script>document.write(`<script src="../motion/${Studio.q.get('zaak') || 'c3-0'}/zaak.js"><\/script>`);</script>
+<script>document.write(`<script src="../motion/${Studio.zaak}/zaak.js"><\/script>`);</script>
 <script>
-const Z = window.ZAAK, zaak = Studio.q.get('zaak') || 'c3-0';
+const Z = window.ZAAK, zaak = Studio.zaak;
 const $ = id => document.getElementById(id);
 const esc = s => s.replace(/[&<>]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
 $('planimg').src = `../motion/${zaak}/plan.png`;
