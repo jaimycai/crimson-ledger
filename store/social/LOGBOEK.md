@@ -225,3 +225,15 @@ eerste publicatie op zijn vroegst 6 oktober.
 - 21 okt 20:20-20:55: Buffer aangevuld tot 10 per kanaal (nagelezen, geen verschoven tijden). EN `en/11` t/m `16`: 23 okt 01:00, 18:00,
   22:00; 24 okt 01:00, 18:00, 22:00 (Amsterdam). ES `es/11` t/m `17`: 23 okt 00:00, 03:00, 20:00; 24 okt 00:00, 03:00, 20:00; 25 okt 00:00.
   NL `week2c/18`: 27 okt 12:30. Voorraad daarna: EN `en/17` t/m `21`, ES `es/18` t/m `21`, NL `week2c/19` t/m `21`.
+- 25 okt 21:30-23:45: koerswissel (TIKTOK-PLAN §16). Meting: EN laatste 12 posts 0 views, ES laatste 10 posts 0, NL laatste 6 posts 0,
+  alle drie 0 volgers; alles op "Iedereen". Buffer-wachtrij NL, EN en ES op pauze (Pause Queue aan); Metricool heeft alleen concepten.
+  App Store Connect 11-24 okt: 8.989 vertoningen, 445 paginabezoeken, 110 downloads, 94% via zoeken.
+  Bio ES aangepast: "¿Encuentras al culpable? 🔍 Un caso nuevo cada día. Gratis: busca Crimson Ledger" (EN en NL: Jaimy, niet ingelogd).
+  Eerste video met stem (formaat A, Kokoro ef_dora, 45 s, `motion/c3-0-es/v2`) live op ES om 22:32 via TikTok Studio, met de hand:
+  AI-label aan, "Tu marca" aan, snelle controle "geen problemen". Om 23:20 nog 0 views.
+  Ingepland in TikTok Studio (eigen planner, geen Buffer): ES c80-0 "La puerta sellada" 26 okt 20:45, ES c6-0 "Medianoche" 27 okt 21:35,
+  elk met eigen omslag (beeld op 2,5 s, haak in beeld). Verder pas na de cijfers van 26 okt.
+  Klaar, nog niet geplaatst: EN c3-0 (v2), c88-0 (v2), c6-0, c80-0, c32-1, c48-0, c72-0 (v1); ES c88-0 (v2), c32-1, c48-0, c72-0 (v1).
+  Gevonden bij eigen controle en hersteld vóór plaatsing: EN las "Faites vos jeux" als "Fates Voss Jew" (nu "Place your bets"),
+  ES las "Jack" als "Hack" (nu "Yak"), ES "Fue Artillero Thorne" (nu "El culpable: ..."). NL via VoiceStudio: twee lege zinnen en een
+  ingeslikt "Sudoku"; stem.js schrijft nu elke NL-zin terug en neemt opnieuw op tot ≥80% verstaan.
