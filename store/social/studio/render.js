@@ -2,12 +2,15 @@
 // Every frame is the page frozen at t (COMP.seek), so the video matches the storyboard exactly.
 //   node store/social/studio/render.js raadsel.html?zaak=c3-0            -> motion/c3-0/v<N>/{video.mp4,review.html}
 //   node store/social/studio/render.js raadsel.html?zaak=c3-0 --snel     half size, for a quick look
+//   node store/social/studio/render.js "meelossen.html?zaak=c3-0-en&taal=en&stem=1"   with the voice from stem.js (music ducked under it)
 const puppeteer = require('puppeteer-core');
 const fs = require('fs'), path = require('path'), { spawn, execFileSync } = require('child_process');
 (async () => {
   const arg = process.argv[2] || 'raadsel.html?zaak=c3-0', snel = process.argv.includes('--snel');
   const [file, query = ''] = arg.split('?');
-  const zaak = new URLSearchParams(query).get('zaak') || 'c3-0';
+  const qs = new URLSearchParams(query), zaak = qs.get('zaak') || 'c3-0';
+  const voice = qs.get('stem') ? path.join(__dirname, '..', 'motion', zaak, 'stem-' + (qs.get('taal') || 'nl'), 'voice.wav') : null;
+  if (voice && !fs.existsSync(voice)) { console.error('geen stem: eerst node store/social/studio/stem.js ' + zaak + ' ' + qs.get('taal')); process.exit(2); }
   const base = path.join(__dirname, '..', 'motion', zaak);
   const nr = fs.existsSync(base) ? fs.readdirSync(base).filter(d => /^v\d+$/.test(d)).length + 1 : 1;
   const out = path.join(base, 'v' + nr); fs.mkdirSync(out, { recursive: true });
@@ -24,7 +27,7 @@ const fs = require('fs'), path = require('path'), { spawn, execFileSync } = requ
   execFileSync('python3', [path.join(__dirname, 'klank.py'), path.join(out, 'cues.json'), String(comp.duration), path.join(out, 'klank.wav')]);
 
   const ff = spawn('ffmpeg', ['-y', '-v', 'error', '-f', 'image2pipe', '-framerate', String(FPS), '-c:v', 'mjpeg', '-i', '-',
-    '-i', path.join(out, 'klank.wav'), '-af', 'loudnorm=I=-16:TP=-1.5:LRA=11', '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-crf', snel ? '26' : '18',
+    '-i', path.join(out, 'klank.wav'), ...(voice ? ['-i', voice, '-filter_complex', '[1:a]volume=0.32[m];[2:a]aresample=44100,volume=1.6[v];[m][v]amix=inputs=2:duration=first:normalize=0,loudnorm=I=-16:TP=-1.5:LRA=11[a]', '-map', '0:v', '-map', '[a]'] : ['-af', 'loudnorm=I=-16:TP=-1.5:LRA=11']), '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-crf', snel ? '26' : '18',
     '-preset', 'medium', '-c:a', 'aac', '-b:a', '160k', '-ar', '44100', '-shortest', '-movflags', '+faststart', path.join(out, 'video.mp4')], { stdio: ['pipe', 'inherit', 'inherit'] });
   const frames = Math.round(comp.duration * FPS);
   for (let f = 0; f < frames; f++) {

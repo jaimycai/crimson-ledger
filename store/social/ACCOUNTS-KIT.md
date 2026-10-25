@@ -46,3 +46,20 @@ Buffer en App Store Connect staan.
 - Koppelen aan Buffer doet Jaimy zelf, in het hoofdprofiel: Buffer › Connect Channel › TikTok. In het TikTok-venster dat dan
   opent ben je als het Nederlandse account ingelogd; kies daar inloggen met een ander account (het nieuwe e-mailadres).
   Of dat venster die keuze biedt, is niet nagekeken.
+
+## Instagram (Engels, 25-10-2026)
+
+Doel: een klikbare link naar de App Store vanuit het TikTok-profiel. TikTok laat een Instagram-account aan het profiel koppelen
+bij elk aantal volgers; een Instagram-bio mag wel een link hebben.
+
+| Veld | Waarde |
+|---|---|
+| E-mail | het Crimson-adres (niet @jaimycai, niet het persoonlijke Gmail) |
+| Gebruikersnaam | `crimsonledgergame` (reserve `crimsonledger.game`) |
+| Naam | Crimson Ledger · Crime Sudoku |
+| Bio (≤150) | Can YOU find the culprit? 🔍 A new mystery case every day. Free, no ads. 👇 |
+| Link | https://apps.apple.com/app/id6812534368 |
+| Foto | `store/social/tiktok-avatar.png` |
+| Accounttype | Professioneel › Maker › categorie "Videogame" |
+
+Daarna in TikTok (@crimsonledgergame) › Profiel bewerken › Instagram koppelen. Zeg in de chat welke gebruikersnaam het werd.

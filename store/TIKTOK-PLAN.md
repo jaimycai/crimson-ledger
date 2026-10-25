@@ -312,3 +312,34 @@ carrousel slot voor slot, zodat het verschil per account meetbaar blijft.
 Bio-link: een klikbare link onder 1.000 volgers kan alleen met een geverifieerd Business-account (KvK nodig). Business heeft alleen
 de Commercial Music Library; voor A en B maakt dat weinig uit (eigen stem en eigen muziek). Besluit aan Jaimy.
 Bronnen en de volledige lijst met posts: `social/onderzoek-2026-10-20.md`.
+
+## 16. Nieuwe koers na de stilstand (25 oktober 2026)
+
+**Wat er gebeurde.** Sinds 22-23 oktober krijgt geen enkele nieuwe post op de drie accounts nog views: EN de laatste 12 posts 0,
+ES de laatste 10 posts 0, NL de laatste 6 posts 0 (openbare profielen en TikTok Studio, 25 okt 21:30). Alle posts staan op
+"Iedereen". Daarvoor haalden carrousels 220-350 views. Volgers op elk account: 0. App Store Connect (11-24 okt): 94% van de
+downloads komt via zoeken in de App Store; TikTok leverde hoogstens een handvol.
+
+**Waarschijnlijke oorzaak** (niet gemeten; de accountstatus staat alleen in de app): drie carrousels per dag in één sjabloon,
+via een planner, op vaste tijden, op nieuwe accounts zonder volgers. Dat lijkt op spam of herhaalde inhoud.
+
+**Besluiten (Jaimy, 25-10: "doe dit")**
+1. Buffer-wachtrijen van alle drie de kanalen staan op pauze (25 okt 22:30). Metricool heeft geen geplande posts, alleen concepten.
+   Geen carrousels meer tot er een video-account draait.
+2. Accountstatus per account in de app bekijken (Jaimy). Overtreding: bezwaar maken. Niets: een week rust, dan video.
+3. Video in plaats van carrousel: "Los met mij op" (formaat A) met stem. Eén per dag per account, met de hand geplaatst via
+   TikTok Studio of de app, niet via een planner. Tijdstip wisselt.
+4. Oude posts: **niet verwijderen.** Verwijderen is definitief, er is geen bewijs dat het bereik terugkomt, en veel posts tegelijk
+   wissen kan zelf een signaal zijn. Wel: posts met 0 views op "Alleen ik" zetten zodra de eerste video's staan, zodat een
+   bezoeker van het profiel geen rij nullen ziet. Posts met views blijven openbaar. Terug te draaien.
+5. Haalt video na zeven dagen nog steeds 0 views, dan is het account verbrand: Jaimy maakt een nieuw account (eigen e-mailadres),
+   en we beginnen daar meteen met video, met de hand, één per dag.
+6. Pas een nieuwe taal als video werkt. Dan eerst Frans en Arabisch (Frankrijk 10 en Saoedi-Arabië 13 downloads zonder kanaal).
+7. Eén Instagram-account (Engels) voor de klikbare link vanuit het TikTok-profiel; aanmaken doet Jaimy.
+
+**Video-werkwijze.** Jaimy, 25-10: "je kan ze zelf maken en controleer en reflecteer de post als je ze bijna af hebt." Claude maakt
+de video's dus zonder te wachten op pins, en controleert zelf vóór plaatsing: ffprobe en contactblad (vakmanschap §1), loudness
+-16 LUFS, en een terugschrijving van de stem met faster-whisper (`~/.venvs/kokoro`) om te zien of elke zin verstaanbaar is.
+Stem: Kokoro via `studio/stem.js` (EN af_heart, ES ef_dora; ook fr, it, pt, hi, ja, zh). Kokoro kent geen Nederlands: NL wacht op
+VoiceStudio (staat in /Applications; eerste start en toestemming voor de modellen doet Jaimy).
+Eerste video's: zaak c3-0 ("The Still Sea" / "El mar en calma"), 41 en 45 s, `motion/c3-0-en/` en `motion/c3-0-es/`.
