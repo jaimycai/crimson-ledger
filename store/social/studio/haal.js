@@ -26,6 +26,8 @@ const LANG = process.env.LANG_CAPTURE || 'nl';
     await page.addStyleTag({ content: '#toast, #medal-toast, .toast { display: none !important }' });
     await wait(900);
     await page.evaluate(() => document.getElementById('btn-splash-start').click()); await wait(500);
+    // paid worlds open with the Pass (only in this capture, like make-screenshots.js)
+    await page.evaluate(() => { if (typeof Store !== 'undefined') Store.save({ pass: true, worlds: [], cosmetics: false }); });
     await page.evaluate((i, c) => App.startCampaignCase(Campaign.list()[c].key, i), idx, ch); await wait(500);
     for (const id of ['btn-part-go', 'btn-briefing-go', 'btn-newclue-ok']) { await page.evaluate(id => { const b = document.getElementById(id); if (b && b.offsetParent) b.click(); }, id); await wait(400); }
     const grid = await page.$('#board-grid');
