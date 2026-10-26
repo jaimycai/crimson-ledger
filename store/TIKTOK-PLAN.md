@@ -344,3 +344,12 @@ de video's dus zonder te wachten op pins, en controleert zelf vóór plaatsing: 
 Stem: Kokoro via `studio/stem.js` (EN af_heart, ES ef_dora; ook fr, it, pt, hi, ja, zh). Kokoro kent geen Nederlands: NL wacht op
 VoiceStudio (staat in /Applications; eerste start en toestemming voor de modellen doet Jaimy).
 Eerste video's: zaak c3-0 ("The Still Sea" / "El mar en calma"), 41 en 45 s, `motion/c3-0-en/` en `motion/c3-0-es/`.
+
+**Bijstelling 26 oktober 2026.**
+- Rust: op alle drie de accounts 72 uur niets plaatsen of inplannen, tot en met 29 okt 22:00 (Jaimy). Daarna één test per account;
+  100-300 views binnen een uur = account weer normaal, 0 = nieuw account.
+- Plaatsen gaat via Buffer, ook TikTok (Jaimy: "dat is het platform waar we alles op posten"). Reddit meldt dat planners en
+  browser-uploads op TikTok minder bereik kunnen geven (r/socialmedia aug 2025, r/SocialMediaMarketing mrt 2026, r/Tiktokhelp
+  aug 2025); tegenvoorbeelden bestaan. Het besluit staat; wij meten het effect per post.
+- Op 25 en 26 okt zijn drie video's via TikTok Studio (web) geplaatst of ingepland: alle drie 0 views. Inbox en video-analyse tonen
+  geen melding van uitsluiting (TikTok meldt die volgens zijn helpcentrum wel in inbox en profiel).
