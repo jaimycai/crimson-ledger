@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <!-- Sjabloon: build-web-daily.js vult het bord en de vensters uit index.html in en schrijft docs/play/index.html -->
+  <title>Crimson Ledger · Today's case</title>
+  <meta name="description" content="A free murder-mystery logic puzzle, a new case every day. Place the suspects on the floor plan and find who was alone with the victim.">
+  <meta name="theme-color" content="#8B2E1C">
+  <link rel="canonical" href="https://jaimycai.github.io/crimson-ledger/play/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Crimson Ledger">
+  <meta property="og:title" content="Crimson Ledger · Today's case">
+  <meta property="og:description" content="A new murder-mystery puzzle every day. Who was alone with the victim?">
+  <meta property="og:url" content="https://jaimycai.github.io/crimson-ledger/play/">
+  <meta property="og:image" content="https://jaimycai.github.io/crimson-ledger/play/icon-512.png">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="icon-192.png">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="dagzaak.css">
+  <!-- meting.js stuurt dan platform 'webdaily', zodat web en app apart geteld worden -->
+  <script>window.WEB_DAILY = true;</script>
+</head>
+<body class="webdaily">
+  <div id="app">
+
+    <!-- ═══════ DAGZAAK: THUIS ═══════ -->
+    <section id="screen-home" class="screen active">
+      <header class="wd-top">
+        <span class="wd-brand"><img class="wd-logo" src="icon-192.png" alt="" width="40" height="40"><span class="wd-name">Crimson Ledger</span></span>
+        <label class="wd-lang">
+          <span class="wd-lang-ico" aria-hidden="true">🌍</span>
+          <span class="wd-lang-code" id="wd-lang-code">EN</span>
+          <select id="wd-lang" aria-label="Language"></select>
+        </label>
+      </header>
+      <p class="wd-tagline" id="wd-tagline">Search. Reason. Unmask.</p>
+
+      <div class="home-card daily-card wd-daily" id="wd-daily">
+        <div class="wd-daily-head">
+          <span class="ribbon" id="wd-ribbon">Today's case</span>
+          <span class="wd-date" id="wd-date"></span>
+        </div>
+        <h1 class="wd-title" id="wd-title"></h1>
+        <p class="wd-world" id="wd-world"></p>
+        <p class="wd-hook" id="wd-hook"></p>
+        <div class="wd-play-box" id="wd-play-box">
+          <button type="button" class="btn btn-primary btn-block wd-play" id="wd-play">Play</button>
+          <p class="wd-first" id="wd-first" hidden><span id="wd-first-text"></span> <button type="button" class="wd-link" id="wd-skip">Skip</button></p>
+        </div>
+      </div>
+
+      <div class="wd-result" id="wd-home-result" hidden></div>
+
+      <div class="home-card wd-how" id="wd-how">
+        <span class="ribbon ribbon-gold" id="wd-how-title">How does it work?</span>
+        <ol class="wd-steps">
+          <li><span class="how-num">1</span><span id="wd-step1"></span></li>
+          <li><span class="how-num">2</span><span id="wd-step2"></span></li>
+          <li><span class="how-num">3</span><span id="wd-step3"></span></li>
+        </ol>
+        <p class="wd-rule" id="wd-rule"></p>
+      </div>
+
+      <footer class="wd-foot">
+        <p><b>Crimson Ledger</b> · <span id="wd-brandline">A new case every day</span></p>
+        <p>
+          <a href="https://apps.apple.com/app/id6812534368" data-appstore="3" target="_blank" rel="noopener">App Store ↗</a>
+          <span aria-hidden="true">·</span>
+          <a href="../privacy.html" id="wd-privacy">Privacy</a>
+          <span aria-hidden="true">·</span>
+          <button type="button" class="wd-link" id="wd-sound">🔊 Sound on</button>
+        </p>
+      </footer>
+    </section>
+
+    <!-- ═══════ BORD (uit index.html) ═══════ -->
+    <!-- @bord -->
+
+    <!-- ═══════ OPGELOST ═══════ -->
+    <section id="screen-results" class="screen wd-results">
+      <div class="confetti" id="confetti" aria-hidden="true"></div>
+      <div class="splash-badge wd-badge" id="wd-badge" hidden><img class="splash-icon" src="assets/vandam.jpg" alt=""></div>
+      <div class="results-header">
+        <h2 id="wd-headline"></h2>
+        <p class="results-verdict" id="wd-verdict"></p>
+      </div>
+      <p class="results-description" id="wd-desc"></p>
+      <button type="button" class="btn btn-primary btn-block" id="wd-to-daily" hidden></button>
+      <div class="wd-result" id="wd-result"></div>
+    </section>
+  </div>
+
+  <!-- ═══════ VENSTERS (uit index.html) ═══════ -->
+  <!-- @vensters -->
+
+  <span id="app-version" hidden>{{VERSIE}}</span>
+
+  <script src="avatars.js"></script>
+  <script src="story.js"></script>
+  <script src="themes.js"></script>
+  <script src="progress.js"></script>
+  <script src="mentor.js"></script>
+  <script src="meting.js"></script>
+  <script src="i18n.js"></script>
+  <script src="grammar.js"></script>
+  <script src="icons.js"></script>
+  <script src="sound.js"></script>
+  <script src="floorplan.js"></script>
+  <script src="board.js"></script>
+  <script src="gedeeld.js"></script>
+  <script src="teksten.js"></script>
+  <script src="dagzaak.js"></script>
+</body>
+</html>
