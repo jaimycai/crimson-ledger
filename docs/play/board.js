@@ -88,6 +88,11 @@ const Board = {
   showTutorialStep() {
     const step = this.TUTORIAL_STEPS[this.tutorialStep];
     if (!step) return;
+    // 1.5 metric: where in the practice case new players stop (40% did not reach case 1)
+    if (!this.tutSent) this.tutSent = new Set();
+    if (!this.tutSent.has(this.tutorialStep) && !App.storageGet('crimson-board-tutorial-done') && typeof Meting !== 'undefined') {
+      this.tutSent.add(this.tutorialStep); Meting.send('tut_step', '', this.tutorialStep + 1);
+    }
     document.getElementById('board-coach-step').textContent = BD_T`Stap ${this.tutorialStep + 1} van ${this.TUTORIAL_STEPS.length}`;
     document.getElementById('board-coach-text').textContent = step.text;
     this.hintRefs = step.cell ? { cells: [step.cell], clues: [this.tutorialStep] } : null;
@@ -98,6 +103,7 @@ const Board = {
   },
 
   skipTutorial() {
+    if (typeof Meting !== 'undefined') Meting.send('tut_skip', '', this.tutorialStep + 1);
     this.isTutorial = false;
     this.stopTimer();
     document.getElementById('board-coach').hidden = true;
@@ -128,8 +134,10 @@ const Board = {
       marks: new Map(), clueDone: new Set(), history: [], hintRefs: null,
       active: 0, mode: 'place', hintsUsed: 0, attempts: 0, solved: false, elapsed: 0, isTutorial: false, tutorialStep: 0, campaignCase,
       focusClue: null, newRank: null, okCount: 0, isWeekly: !!opts.weekly, weekly: opts.weekly || null, score: null, medalsWon: [],
-      dailyDoneBefore: App.storageGet('crimson-board-daily-done') === new Date().toDateString()
+      dailyDoneBefore: App.storageGet('crimson-board-daily-done') === new Date().toDateString(),
+      freeHint: false, stuckOffered: false, lastActionAt: Date.now(), hintEarned: false
     });
+    document.getElementById('btn-board-hint').classList.remove('pulse');
     this.elapsedBase = 0;
     const resumed = this.restoreResume();
     // één "Nieuw!"-uitleg per zaak, voor de eerste soort verklaring die de speler nog niet kent
@@ -209,6 +217,7 @@ const Board = {
     const tick = () => {
       this.elapsed = Math.floor((Date.now() - this.startTime) / 1000);
       el.textContent = this.formatTime(this.elapsed);
+      this.checkStuck();
     };
     tick();
     this.timerId = setInterval(tick, 1000);
@@ -603,7 +612,31 @@ const Board = {
   },
   cloneMarks() { const m = new Map(); this.marks.forEach((v, k) => m.set(k, new Set(v))); return m; },
 
+  // 1.5: in the first three cases of the Manor, a minute without any move turns the next hint into a free one, outside
+  // the day allowance (target: 90% of new players solve case 1; 40% used to stop before it)
+  STUCK_SECONDS: 60,
+  stuckEligible() {
+    const c = this.campaignCase;
+    if (!c || this.solved || this.isTutorial || this.stuckOffered || typeof Campaign === 'undefined') return false;
+    const first = Campaign.list()[0];
+    return !!first && c.chapter === first.key && c.idx < 3;
+  },
+  checkStuck() {
+    if (!this.stuckEligible() || Date.now() - (this.lastActionAt || Date.now()) < this.STUCK_SECONDS * 1000) return;
+    this.stuckOffered = true; this.freeHint = true;
+    document.getElementById('btn-board-hint').classList.add('pulse');
+    App.showToast('💡', BD_T('Vastgelopen? Je volgende hint is gratis.'));
+    if (typeof Meting !== 'undefined') Meting.send('stuck_hint', '', this.campaignCase.idx + 1);
+  },
+  // 1.5 metric: a case left without solving it (campaign: case number in its part; tutorial: the step)
+  countQuit() {
+    if (!this.puzzle || this.solved || typeof Meting === 'undefined') return;
+    if (this.isTutorial) return Meting.send('quit', 'tutorial', this.tutorialStep + 1);
+    Meting.send('quit', this.isDaily ? 'daily' : this.campaignCase ? 'campaign' : 'free', this.campaignCase ? this.campaignCase.idx + 1 : 0);
+  },
+
   after(keepHint = false) {
+    this.lastActionAt = Date.now();
     if (!keepHint) this.hintRefs = null;
     // een aanwijzing die net groen wordt, mag je horen
     const ok = this.puzzle.clues.filter(c => FloorPlan.holds(c, this.placements, this.puzzle) === true).length;
@@ -638,10 +671,12 @@ const Board = {
     if (this.solved) return;
     if (this.isTutorial) return this.showTutorialStep();
     // drie gratis per dag; daarna een hintpakket of de Crimson Pass
-    if (typeof Store !== 'undefined' && !Store.canHint()) return App.openStore('hint');
+    const free = this.freeHint;
+    if (!free && typeof Store !== 'undefined' && !Store.canHint()) return App.openStore('hint');
     const h = FloorPlan.hint(this.puzzle, this.placements);
     this.hintsUsed++;
-    if (typeof Store !== 'undefined') Store.useHint();
+    if (free) { this.freeHint = false; document.getElementById('btn-board-hint').classList.remove('pulse'); }
+    else if (typeof Store !== 'undefined') Store.useHint();
     if (typeof Meting !== 'undefined') Meting.send('hint');
     this.hintRefs = { cells: h.cells || [], clues: h.clues || [] };
     if (h.suspect !== undefined && h.suspect !== -1) this.active = h.suspect;
@@ -831,7 +866,11 @@ const Board = {
     this.chestKey = null;
     if (this.campaignCase) {
       const k = this.campaignCase.chapter;
-      Campaign.save(k, this.campaignCase.idx, Campaign.starsFor(this.hintsUsed, this.attempts));
+      const starsNow = Campaign.starsFor(this.hintsUsed, this.attempts), starsBefore = Campaign.stars(k, this.campaignCase.idx);
+      Campaign.save(k, this.campaignCase.idx, starsNow);
+      // 1.5: hints are earned by playing well (Supercell-style): +1 the first time a case gets three stars
+      this.hintEarned = starsNow === 3 && starsBefore < 3 && typeof Store !== 'undefined' && !Store.hasPass();
+      if (this.hintEarned) { Store.addHints(1); if (typeof Meting !== 'undefined') Meting.send('hint_earned'); }
       // deel af en de bewijskist nog dicht: die komt na de ceremonie
       if (k !== Campaign.ARCHIVE && Campaign.chapterDone(k) && !Campaign.chestOpened(k)) this.chestKey = k;
     }
@@ -861,6 +900,7 @@ const Board = {
     this.showResults();
     App.updateBoardStats();
     App.navigateTo('results');
+    if (this.hintEarned) App.showToast('💡', BD_T('+1 hint voor ★★★'));
     App.maybeAskReview({ weeklyClean: this.isWeekly && this.hintsUsed === 0, stars: Campaign.starsFor(this.hintsUsed, this.attempts) });
   },
   // medailles pas tonen als de ceremonie klaar is (of overgeslagen)
@@ -1057,30 +1097,24 @@ const Board = {
     setTimeout(() => { if (box.innerHTML === html) box.innerHTML = ''; }, 3200);
   },
 
+  // Spoiler-free result card with a link back (1.5). It used to draw the floor plan with every suspect, the victim and the
+  // culprit, which gave the case away to whoever saw it and pointed nowhere: a share could never become a download.
+  // Daily cases link to the free web daily (same case today, playable without installing); everything else to the store.
+  SHARE_PLAY_URL: 'https://jaimycai.github.io/crimson-ledger/play/',
+  SHARE_STORE_URL: 'https://apps.apple.com/app/id6812534368',
   shareText() {
-    const p = this.puzzle;
     const diff = DIFFICULTY[this.difficulty] || DIFFICULTY.gemiddeld;
-    const sq = ['🟥', '🟧', '🟨', '🟩', '🟦', '🟪', '🟫', '⬜', '⬛', '🟥', '🟧', '🟨'];
-    const byCell = new Map(p.solution.map((c, i) => [FloorPlan.key(c.x, c.y), i]));
-    const rows = [];
-    for (let y = 0; y < p.rows; y++) {
-      let line = '';
-      for (let x = 0; x < p.cols; x++) {
-        const k = FloorPlan.key(x, y);
-        if (p.victim.x === x && p.victim.y === y) line += '🩸';
-        else if (byCell.has(k)) line += byCell.get(k) === p.murderer ? '🔪' : '👤';
-        else line += sq[FloorPlan.roomOf(p.rooms, x, y).id % sq.length];
-      }
-      rows.push(line);
-    }
+    const stars = Campaign.starsFor(this.hintsUsed, this.attempts);
     const what = this.isWeekly ? BD_T` · Zaak van de week: ${this.weekly.title}`
       : this.campaignCase ? ` · ${this.campaignCase.chapter === Campaign.ARCHIVE ? '' : this.campaignCase.idx + 1 + '. '}${this.campaignCase.title}` : '';
     return [
       `${this.theme.icon} Crimson Ledger · ${this.theme.title}${this.isDaily ? BD_T` · Dag #${App.getDayNumber()}` : ''}${what}`,
-      `${diff.icon} ${diff.label} · ⏱ ${this.formatTime(this.elapsed)} · 💡 ${this.hintsUsed} · 🔁 ${this.attempts + 1}${this.score ? BD_T` · 🪙 ${this.score.total} punten` : ''}`,
-      '', ...rows, '',
-      this.isDaily && App.streak.count > 1 ? BD_T`🔥 ${App.streak.count} dagen streak!` : ''
-    ].filter(Boolean).join('\n');
+      `${'★'.repeat(stars)}${'☆'.repeat(3 - stars)} · ${diff.icon} ${diff.label} · ⏱ ${this.formatTime(this.elapsed)} · 💡 ${this.hintsUsed}`,
+      // one square per accusation: red for a wrong one, green for the culprit
+      '🟥'.repeat(this.attempts) + '🟩',
+      this.isDaily && App.streak.count > 1 ? BD_T`🔥 ${App.streak.count} dagen streak!` : '',
+      '', this.isDaily ? this.SHARE_PLAY_URL : this.SHARE_STORE_URL
+    ].filter((x, i, a) => x || (i > 0 && a[i - 1])).join('\n');
   },
 
   // ── Bord passend maken ────────────────────────────────────
