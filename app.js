@@ -99,7 +99,10 @@ const App = {
       let asked = [];
       try { asked = JSON.parse(this.storageGet('crimson-review-moments') || '[]'); } catch (e) { asked = []; }
       if (this.storageGet('crimson-review-asked') && !asked.includes('solved')) asked.push('solved');   // 1.1 vroeg al na zaak 3
-      if ((Board.loadStats().solved || 0) < 5 || (ctx.stars || 0) < 2) return;
+      // 1.5: ask earlier but only at a high point. From case 3 a ★★★ solve qualifies (only 21% of new players reached case 5,
+      // so most never saw the question); from case 5 two stars still do. iOS itself limits it to 3 prompts a year.
+      const solvedN = Board.loadStats().solved || 0, st = ctx.stars || 0;
+      if (solvedN < 3 || st < 2 || (solvedN < 5 && st < 3)) return;
       const moment = !asked.includes('solved') ? 'solved'
         : !asked.includes('weekclean') && ctx.weeklyClean ? 'weekclean'
         : !asked.includes('streak7') && this.streak && this.streak.count >= 7 ? 'streak7' : null;

@@ -44,9 +44,13 @@ const check = (c, m) => { if (c) console.log('ok  ', m); else { failures++; cons
   const moments = () => JSON.parse(window.localStorage.getItem('crimson-review-moments') || '[]');
   App.maybeAskReview({ stars: 1 });
   check(moments().length === 0, 'zaak met één ster: niet gevraagd');
-  App.storageSet('crimson-board-stats', '{"solved":4,"clean":2}');
+  // 1.5: from case 3 a three-star solve qualifies; below five cases two stars do not
+  App.storageSet('crimson-board-stats', '{"solved":2,"clean":2}');
   App.maybeAskReview({ stars: 3 });
-  check(moments().length === 0, 'vier zaken opgelost: nog niet gevraagd');
+  check(moments().length === 0, 'twee zaken opgelost: nog niet gevraagd');
+  App.storageSet('crimson-board-stats', '{"solved":4,"clean":2}');
+  App.maybeAskReview({ stars: 2 });
+  check(moments().length === 0, 'vier zaken en twee sterren: nog niet gevraagd');
   App.storageSet('crimson-board-stats', '{"solved":5,"clean":2}');
   App.maybeAskReview({ stars: 2 });
   check(moments().join() === 'solved', 'vijf zaken en twee sterren: gevraagd (' + moments().join() + ')');
