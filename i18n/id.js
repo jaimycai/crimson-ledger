@@ -400,7 +400,9 @@
     "Versturen lukt nu niet. Probeer het later opnieuw.": "Belum bisa mengirim sekarang. Coba lagi nanti.",
     "{0} zit in de Crimson Pass. Of ontgrendel alleen deze wereld.": "{0} termasuk dalam Crimson Pass. Atau buka dunia ini saja.",
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "Tema papan dan bingkai potret termasuk dalam Crimson Pass. Atau buka tema dan bingkainya saja.",
-    "Extra's": "Ekstra"
+    "Extra's": "Ekstra",
+    "+1 hint voor ★★★": "+1 hint untuk ★★★",
+    "Vastgelopen? Je volgende hint is gratis.": "Buntu? Hint berikutnya gratis."
   },
 
   data: {

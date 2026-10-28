@@ -400,7 +400,9 @@
     "Versturen lukt nu niet. Probeer het later opnieuw.": "今は送信できません。しばらくしてからもう一度お試しください。",
     "{0} zit in de Crimson Pass. Of ontgrendel alleen deze wereld.": "{0}はCrimson Passに含まれます。このワールドだけを解放することもできます。",
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "盤面テーマと肖像フレームはCrimson Passに含まれます。テーマとフレームだけを解放することもできます。",
-    "Extra's": "アイテム"
+    "Extra's": "アイテム",
+    "+1 hint voor ★★★": "★★★でヒント+1回",
+    "Vastgelopen? Je volgende hint is gratis.": "お困りですか？次のヒントは無料です。"
   },
 
   data: {

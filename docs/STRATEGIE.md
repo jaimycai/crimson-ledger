@@ -136,7 +136,17 @@ Doel: ≥10% van de webspelers tikt door naar de App Store; shares per speler me
 4. **Boekgolf**: het Murdoku-puzzelboek maakte de vraag; Enigmic reed die golf met advertenties. Wij
    rijden hem gratis: zoekwoorden staan al goed, de webdagzaak (spoor C) is deelbaar in boek-communities.
 
-## 7. Monetisatie: bewust parkeren
+## 7. Monetisatie: bewust parkeren, reclame vanaf 5.000-10.000 downloads
+
+**Besluit Jaimy (28-10-2026):** "zodat we bij 5/10k plus downloads ads gaan toevoegen; we moeten zsm snel veel downloads
+hebben." Dus: nu alles op groei; reclame komt erbij zodra het totaal aan downloads 5.000-10.000 haalt (ASC, alle landen).
+Wat dan mee moet in die versie (vooraf weten, want het raakt de winkel):
+- Alle winkelteksten en schermafbeeldingen noemen nu "geen reclame" / "No ads": die moeten in alle 23 talen aangepast.
+- App Privacy-label: advertentiegegevens en waarschijnlijk tracking (ATT-prompt) als het een netwerk als AdMob wordt.
+- Vorm die bij Enigmic werkt: reclame na een opgeloste zaak (niet tijdens), "reclame weg" als aankoop, hints verdienen via
+  een vrijwillige reclamevideo. De Crimson Pass haalt dan ook de reclame weg (meerwaarde voor bestaande kopers).
+- Tot die drempel blijft "geen reclame" het verkoopargument tegenover Enigmic.
+
 
 - Tot ≥100 nieuwe spelers/dag: geen nieuwe betaalmomenten, alleen frictie weg (hints verdienen,
   deel I gratis). De Pass blijft "alles meteen"; prijzen blijven staan.

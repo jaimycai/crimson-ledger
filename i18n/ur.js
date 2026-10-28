@@ -400,7 +400,9 @@
     "Versturen lukt nu niet. Probeer het later opnieuw.": "ابھی بھیجا نہیں جا سکا۔ کچھ دیر بعد دوبارہ کوشش کریں۔",
     "{0} zit in de Crimson Pass. Of ontgrendel alleen deze wereld.": "{0} Crimson Pass میں شامل ہے۔ یا صرف یہ دنیا کھولیں۔",
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "بورڈ تھیم اور پورٹریٹ فریم Crimson Pass میں شامل ہیں۔ یا صرف تھیم اور فریم کھولیں۔",
-    "Extra's": "ایکسٹرا"
+    "Extra's": "ایکسٹرا",
+    "+1 hint voor ★★★": "★★★ پر +1 اشارہ",
+    "Vastgelopen? Je volgende hint is gratis.": "مشکل ہو رہی ہے؟ اگلا اشارہ مفت ہے۔"
   },
 
   data: {

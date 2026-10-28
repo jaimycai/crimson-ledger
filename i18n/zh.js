@@ -400,7 +400,9 @@
     "Versturen lukt nu niet. Probeer het later opnieuw.": "现在无法发送，请稍后再试。",
     "{0} zit in de Crimson Pass. Of ontgrendel alleen deze wereld.": "{0}属于Crimson Pass。你也可以只解锁这个世界。",
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "平面图主题和头像框属于Crimson Pass。你也可以只解锁主题和头像框。",
-    "Extra's": "道具"
+    "Extra's": "道具",
+    "+1 hint voor ★★★": "★★★ 奖励 +1 次提示",
+    "Vastgelopen? Je volgende hint is gratis.": "卡住了？下一次提示免费。"
   },
 
   data: {

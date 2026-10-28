@@ -400,7 +400,9 @@
     "Versturen lukt nu niet. Probeer het later opnieuw.": "Şu anda gönderilemiyor. Daha sonra tekrar dene.",
     "{0} zit in de Crimson Pass. Of ontgrendel alleen deze wereld.": "{0}, Crimson Pass’e dahil. Ya da yalnızca bu dünyanın kilidini aç.",
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "Tahta temaları ve portre çerçeveleri Crimson Pass’e dahil. Ya da yalnızca temaların ve çerçevelerin kilidini aç.",
-    "Extra's": "Ekstralar"
+    "Extra's": "Ekstralar",
+    "+1 hint voor ★★★": "★★★ için +1 ipucu",
+    "Vastgelopen? Je volgende hint is gratis.": "Takıldın mı? Sonraki ipucun ücretsiz."
   },
 
   data: {

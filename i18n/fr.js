@@ -400,7 +400,9 @@
     "Versturen lukt nu niet. Probeer het later opnieuw.": "L’envoi ne marche pas pour l’instant. Réessaie plus tard.",
     "{0} zit in de Crimson Pass. Of ontgrendel alleen deze wereld.": "{0} fait partie du Crimson Pass. Ou débloque seulement ce monde.",
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "Les thèmes de plateau et les cadres de portrait font partie du Crimson Pass. Ou débloque seulement les thèmes et les cadres.",
-    "Extra's": "Extras"
+    "Extra's": "Extras",
+    "+1 hint voor ★★★": "+1 aide pour ★★★",
+    "Vastgelopen? Je volgende hint is gratis.": "Bloqué ? Ta prochaine aide est gratuite."
   },
 
   data: {

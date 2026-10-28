@@ -400,7 +400,9 @@
     "Versturen lukt nu niet. Probeer het later opnieuw.": "ఇప్పుడు పంపడం కుదరలేదు. కాసేపటి తర్వాత మళ్లీ ప్రయత్నించండి.",
     "{0} zit in de Crimson Pass. Of ontgrendel alleen deze wereld.": "{0} Crimson Passలో భాగం. లేదా ఈ ప్రపంచాన్ని మాత్రమే తెరవండి.",
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "బోర్డు థీమ్‌లు, చిత్రపు ఫ్రేములు Crimson Passలో ఉన్నాయి. లేదా థీమ్‌లు, ఫ్రేములు మాత్రమే తెరవండి.",
-    "Extra's": "ఎక్స్‌ట్రాలు"
+    "Extra's": "ఎక్స్‌ట్రాలు",
+    "+1 hint voor ★★★": "★★★ కోసం +1 సూచన",
+    "Vastgelopen? Je volgende hint is gratis.": "చిక్కుకుపోయారా? తదుపరి సూచన ఉచితం."
   },
 
   data: {

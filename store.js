@@ -83,6 +83,17 @@ const Store = {
     return false;
   },
   hintLabel() { const n = this.hintsLeft(); return n === Infinity ? '∞' : String(n); },
+  // 1.5: extra hints that are not bought (start gift, three stars) go in the same pool as bought ones
+  STARTER_HINTS: 10,
+  addHints(n) { this.set('crimson-hints', String(this.hintsBought() + n)); },
+  // every player (new or updating) gets the start gift once: new players need hints most, and the hint wall was the shop
+  // moment players hit most often (24× in two weeks) with no purchase at all
+  grantStarterHints() {
+    if (this.get('crimson-hints-starter')) return false;
+    this.set('crimson-hints-starter', '1');
+    if (!this.hasPass()) this.addHints(this.STARTER_HINTS);
+    return true;
+  },
 
   // ── Wat een aankoop oplevert ──────────────────────────────
   grant(productId) {

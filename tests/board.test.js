@@ -179,7 +179,8 @@ const active = () => document.querySelector('.screen.active').id;
     check(document.getElementById('hint-modal').classList.contains('active'), 'hintvenster opent');
     check(Board.placements.filter(Boolean).length === placedBefore, 'hint plaatst niemand');
     check(document.getElementById('hint-text').textContent.length > 10, 'hinttekst: ' + document.getElementById('hint-text').textContent);
-    check(document.getElementById('hint-badge').textContent === '2' && !document.getElementById('hint-badge').hidden, 'hintteller: na één hint nog twee gratis vandaag');
+    // 1.5: 3 free a day plus the start gift of 10 (Store.grantStarterHints) → 12 left after one hint
+    check(document.getElementById('hint-badge').textContent === '12' && !document.getElementById('hint-badge').hidden, 'hintteller: na één hint nog 2 gratis vandaag plus het startcadeau');
     check(document.querySelectorAll('#hint-clues .dclue, #hint-clues .hint-rule').length >= 1 && document.getElementById('hint-detail-text').textContent.length > 20 && /Sleep|Zet|Tik|Probeer|stipje/.test(document.getElementById('hint-action').textContent) && /Hint 1/.test(document.getElementById('hint-sub').textContent), 'hint in drie stappen: kijk naar, dat betekent, doe dit → ' + document.getElementById('hint-action').textContent);
     check(document.querySelectorAll('#board-grid .bcell.hinted').length >= 1, 'hint markeert kandidaatvakjes');
     App.hideModal('hint-modal');
@@ -247,7 +248,8 @@ const active = () => document.querySelector('.screen.active').id;
     check(document.getElementById('stat-hints').textContent === String(hintsSoFar), 'hints-stat klopt');
     check(document.getElementById('stat-attempts').textContent === '3', 'pogingen-stat = 3');
     const share = Board.shareText();
-    check(share.includes('Crimson Ledger · ' + Board.theme.title) && share.includes('🔪') && share.includes('🩸'), 'deeltekst met thema en kaart');
+    // 1.5: the share card gives nothing away (no culprit, victim or positions) and links back to the game
+    check(share.includes('Crimson Ledger · ' + Board.theme.title) && !share.includes('🔪') && !share.includes('🩸') && /https:\/\/\S+/.test(share) && share.includes('🟥🟥🟩'), 'deeltekst zonder spoiler, met pogingen en link');
     document.getElementById('btn-share').click(); await sleep(50);
     check(errors.length === 0, 'delen vanuit plattegrondzaak zonder eerder rasterspel geeft geen fout');
     check(document.getElementById('board-stats').textContent.includes('10 zaken opgelost'), 'voortgang bijgewerkt: ' + document.getElementById('board-stats').textContent);

@@ -400,7 +400,9 @@
     "Versturen lukt nu niet. Probeer het later opnieuw.": "Ora non è possibile inviare. Riprova più tardi.",
     "{0} zit in de Crimson Pass. Of ontgrendel alleen deze wereld.": "{0} fa parte del Crimson Pass. Oppure sblocca solo questo mondo.",
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "I temi del tabellone e le cornici dei ritratti fanno parte del Crimson Pass. Oppure sblocca solo temi e cornici.",
-    "Extra's": "Extra"
+    "Extra's": "Extra",
+    "+1 hint voor ★★★": "+1 aiuto per ★★★",
+    "Vastgelopen? Je volgende hint is gratis.": "Bloccato? Il tuo prossimo aiuto è gratis."
   },
 
   data: {

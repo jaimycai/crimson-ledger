@@ -400,7 +400,9 @@
     "Versturen lukt nu niet. Probeer het later opnieuw.": "지금은 보낼 수 없어요. 나중에 다시 시도해 주세요.",
     "{0} zit in de Crimson Pass. Of ontgrendel alleen deze wereld.": "Crimson Pass에는 {0}도 포함돼 있어요. 이 월드만 잠금 해제할 수도 있어요.",
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "보드 테마와 초상화 액자는 Crimson Pass에 포함돼 있어요. 테마와 액자만 잠금 해제할 수도 있어요.",
-    "Extra's": "아이템"
+    "Extra's": "아이템",
+    "+1 hint voor ★★★": "★★★ 보상: 힌트 +1개",
+    "Vastgelopen? Je volgende hint is gratis.": "막히셨나요? 다음 힌트는 무료예요."
   },
 
   data: {

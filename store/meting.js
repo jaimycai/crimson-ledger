@@ -30,6 +30,12 @@ const days = Number(process.argv[feedback ? 3 : 2]) || 30;
   for (const n of [1, 3, 5, 10]) console.log(`  spelers die zaak ${n} haalden:     ${sum(r => r.e === 'solved' && r.n === n)} (${pct(sum(r => r.e === 'solved' && r.n === n))})`);
   console.log(`Hints: ${sum(r => r.e === 'hint')}  Winkel geopend: ${sum(r => r.e === 'store_open')}  Aankopen: ${sum(r => r.e === 'purchase' && !r.a.startsWith('gift'))}  Cadeauwerelden: ${sum(r => r.e === 'purchase' && r.a.startsWith('gift'))}`);
   console.log(`Beoordeling gevraagd: ${sum(r => r.e === 'review_asked')}  Gedeeld: ${sum(r => r.e === 'share')}  Herinnering aangezet: ${sum(r => r.e === 'reminder_on')} (${pct(sum(r => r.e === 'reminder_on'))})`);
+  // 1.5: where new players stop in the practice case, and which cases they leave unsolved
+  const steps = [...new Set(rows.filter(r => r.e === 'tut_step').map(r => r.n))].sort((x, y) => x - y);
+  if (steps.length) console.log(`Oefenzaak per stap:             ${steps.map(n => `${n}: ${sum(r => r.e === 'tut_step' && r.n === n)}`).join('  ')}  · overgeslagen ${sum(r => r.e === 'tut_skip')}`);
+  const quits = rows.filter(r => r.e === 'quit').reduce((m, r) => (m[`${r.a}${r.n ? ' ' + r.n : ''}`] = (m[`${r.a}${r.n ? ' ' + r.n : ''}`] || 0) + r.c, m), {});
+  if (Object.keys(quits).length) console.log(`Verlaten zonder oplossing:      ${Object.entries(quits).sort((x, y) => y[1] - x[1]).slice(0, 8).map(([k, v]) => `${k}: ${v}`).join(', ')}`);
+  console.log(`Hints verdiend (★★★): ${sum(r => r.e === 'hint_earned')}  Gratis hint bij vastlopen: ${sum(r => r.e === 'stuck_hint')}  Webdagzaak → App Store: ${sum(r => r.e === 'cta')}`);
   const by = k => Object.entries(rows.filter(r => r.e === 'open').reduce((m, r) => (m[r[k]] = (m[r[k]] || 0) + r.c, m), {})).map(([a, b]) => `${a} ${b}`).join(', ');
   console.log(`Opens per platform: ${by('p') || '-'}   per taal: ${by('l') || '-'}`);
 })();

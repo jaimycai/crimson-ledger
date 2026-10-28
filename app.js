@@ -57,6 +57,7 @@ const App = {
     this.updateStreakDisplay();
     this.renderHome();
     this.scheduleReminder();
+    if (typeof Store !== 'undefined') Store.grantStarterHints();
     if (typeof Meting !== 'undefined') Meting.open();
   },
 
@@ -133,7 +134,7 @@ const App = {
       const done = this.storageGet('crimson-board-daily-done') === new Date().toDateString();
       launch(done ? 0 : this.getDailySeed() * 3 + 777, !done, Themes.forDay(this.getDayNumber()).id);
     });
-    document.getElementById('btn-board-back').addEventListener('click', () => { Board.stopTimer(); this.navigateTo('menu'); });
+    document.getElementById('btn-board-back').addEventListener('click', () => { Board.countQuit(); Board.stopTimer(); this.navigateTo('menu'); });
     this.updateBoardStats();
   },
 

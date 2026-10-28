@@ -400,7 +400,9 @@
     "Versturen lukt nu niet. Probeer het later opnieuw.": "अभी भेजा नहीं जा सका। थोड़ी देर बाद फिर कोशिश करें।",
     "{0} zit in de Crimson Pass. Of ontgrendel alleen deze wereld.": "{0} Crimson Pass में शामिल है। या सिर्फ़ यह दुनिया अनलॉक करें।",
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "बोर्ड थीम और पोर्ट्रेट फ़्रेम Crimson Pass में शामिल हैं। या सिर्फ़ थीम और फ़्रेम अनलॉक करें।",
-    "Extra's": "एक्स्ट्रा"
+    "Extra's": "एक्स्ट्रा",
+    "+1 hint voor ★★★": "★★★ पर +1 संकेत",
+    "Vastgelopen? Je volgende hint is gratis.": "मुश्किल हो रही है? अगला संकेत मुफ़्त है।"
   },
 
   data: {

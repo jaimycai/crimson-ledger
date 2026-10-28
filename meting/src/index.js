@@ -1,8 +1,11 @@
 // Anonymous counters for Crimson Ledger. The app posts an event name and a few
 // coarse dimensions; this Worker adds one to a counter. Nothing identifies a
 // player: no id, no IP, no user agent, and the day is the finest time unit.
-const EVENTS = new Set(['open', 'tutorial_done', 'start', 'solved', 'failed', 'hint', 'store_open', 'purchase', 'review_asked', 'share', 'reminder_on']);
-const PLATFORMS = new Set(['ios', 'android', 'web']);
+// 1.5: tut_step/tut_skip/quit (where new players drop out), hint_earned/stuck_hint (hint economy), cta (web daily → App Store)
+const EVENTS = new Set(['open', 'tutorial_done', 'start', 'solved', 'failed', 'hint', 'store_open', 'purchase', 'review_asked', 'share', 'reminder_on',
+  'tut_step', 'tut_skip', 'quit', 'hint_earned', 'stuck_hint', 'cta']);
+// webdaily: the free daily case on jaimycai.github.io/crimson-ledger/play/
+const PLATFORMS = new Set(['ios', 'android', 'web', 'webdaily']);
 // every language the app speaks (i18n.js I18n.LANGS)
 const LANGS = new Set(['nl', 'en', 'de', 'es', 'fr', 'id', 'it', 'pt', 'tr', 'vi', 'ru', 'ar', 'ur', 'hi', 'mr', 'bn', 'te', 'zh', 'ja', 'ko']);
 const clean = (s, max) => String(s == null ? '' : s).toLowerCase().replace(/[^a-z0-9_:.-]/g, '').slice(0, max);

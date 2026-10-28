@@ -400,7 +400,9 @@
     "Versturen lukt nu niet. Probeer het later opnieuw.": "Сейчас отправить не получается. Попробуйте позже.",
     "{0} zit in de Crimson Pass. Of ontgrendel alleen deze wereld.": "{0} входит в Crimson Pass. Или откройте только этот мир.",
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "Темы поля и рамки портретов входят в Crimson Pass. Или откройте только темы и рамки.",
-    "Extra's": "Дополнительно"
+    "Extra's": "Дополнительно",
+    "+1 hint voor ★★★": "+1 подсказка за ★★★",
+    "Vastgelopen? Je volgende hint is gratis.": "Застряли? Следующая подсказка бесплатно."
   },
 
   data: {

@@ -400,7 +400,9 @@
     "Versturen lukt nu niet. Probeer het later opnieuw.": "تعذّر الإرسال الآن. حاول مرة أخرى لاحقًا.",
     "{0} zit in de Crimson Pass. Of ontgrendel alleen deze wereld.": "{0} جزء من Crimson Pass. أو افتح هذا العالم وحده.",
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "سمات اللوحة وإطارات الصور جزء من Crimson Pass. أو افتح السمات والإطارات وحدها.",
-    "Extra's": "إضافات"
+    "Extra's": "إضافات",
+    "+1 hint voor ★★★": "+1 تلميح مقابل ★★★",
+    "Vastgelopen? Je volgende hint is gratis.": "علقت؟ تلميحك التالي مجاني."
   },
 
   data: {

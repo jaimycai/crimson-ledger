@@ -400,7 +400,9 @@
     "Versturen lukt nu niet. Probeer het later opnieuw.": "Hiện chưa gửi được. Bạn thử lại sau nhé.",
     "{0} zit in de Crimson Pass. Of ontgrendel alleen deze wereld.": "{0} thuộc Crimson Pass. Hoặc chỉ mở khóa thế giới này.",
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "Giao diện bàn chơi và khung chân dung thuộc Crimson Pass. Hoặc chỉ mở khóa giao diện và khung.",
-    "Extra's": "Nội dung thêm"
+    "Extra's": "Nội dung thêm",
+    "+1 hint voor ★★★": "+1 gợi ý nhờ ★★★",
+    "Vastgelopen? Je volgende hint is gratis.": "Bí rồi à? Gợi ý tiếp theo được miễn phí."
   },
 
   data: {
