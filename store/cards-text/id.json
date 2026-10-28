@@ -1,12 +1,11 @@
 [
-  ["04-verklaringen", "Temukan pelakunya.", "Setiap kasus punya satu solusi. Tanpa iklan."],
-  ["08-nieuw", "Delapan\ndunia baru", "Dari makam di Luxor hingga kasino di Monte Carlo."],
-  ["02-wereldkaart", "Enam belas dunia,\nsatu jalan berliku", "Dari mudah sampai sulit, dari Luxor sampai Hollywood."],
-  ["06-zaak-gesloten", "Kasus ditutup.", "Tanpa hint dan langsung benar: tiga bintang."],
-  ["01-thuis", "Kasus baru\nsetiap hari", "Misi harian, runtunan, dan kalender mingguan."],
-  ["05-beschuldiging", "Siapa yang hanya\nberdua dengan korban?", "Tunjuk pelakunya. Dia mengaku atau menyangkal."],
-  ["03-briefing", "Inspektur Van Dam\nmembimbingmu", "Arahan dulu, lalu hint dalam tiga langkah."],
-  ["07-vitrine", "32 medali\nuntuk diraih", "Plus etalase berisi barang bukti dari setiap kasus."],
-  ["09-circus", "Dari Kediaman Blackwood\nhingga Sirkus", "Setiap dunia punya latar, tokoh, dan kasusnya sendiri."],
-  ["10-hint", "Hint yang menjelaskan,\ntanpa membocorkan", "Van Dam menunjuk satu keterangan dan menjelaskan artinya."]
+  ["04-verklaringen", "Sudoku,\ntapi dengan\n*pembunuhan*", "Siapa yang berdua saja dengan korban?"],
+  ["05-beschuldiging", "Tunjuk\n*pelakunya*", "Satu solusi. Murni logika, tanpa tebakan."],
+  ["08-nieuw", "Kasus\n*tanpa akhir*", "1.024 kasus dan satu yang baru setiap hari. 128 gratis, tanpa iklan."],
+  ["06-zaak-gesloten", "Kasus\n*ditutup*", "Bintang untuk yang memecahkan tanpa hint, sekali coba."],
+  ["01-thuis", "Jaga\n*runtunanmu*", "Kasus harian, misi harian, dan mingguanmu sekilas pandang."],
+  ["10-hint", "Hint yang\n*menjelaskan*", "Bukan jawabannya: inspektur menunjuk pernyataannya."],
+  ["02-wereldkaart", "Dari Luxor ke\n*Hollywood*", "Tiap dunia punya zaman dan tempatnya, dari mudah ke sulit."],
+  ["09-circus", "Tiap dunia,\n*tersangka* baru", "Denah, tokoh, dan kasusnya sendiri."],
+  ["07-vitrine", "*32* medali\nmenantimu", "Dan lemari pajang berisi bukti dari tiap kasus."]
 ]

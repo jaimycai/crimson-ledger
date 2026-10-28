@@ -1,12 +1,11 @@
 [
-  ["04-verklaringen", "Find the culprit.", "Every case has one solution. No ads."],
-  ["08-nieuw", "Eight new\nworlds", "From a tomb in Luxor to a casino in Monte Carlo."],
-  ["02-wereldkaart", "Sixteen worlds,\none winding path", "From easy to hard, from Luxor to Hollywood."],
-  ["06-zaak-gesloten", "Case closed.", "Stars for solving without a hint, on the first try."],
-  ["01-thuis", "A new case\nevery day", "Daily quests, a streak and your week at a glance."],
-  ["05-beschuldiging", "Who was alone\nwith the victim?", "Name the culprit. They confess, or they deny it."],
-  ["03-briefing", "Inspector Van Dam\ngets you started", "A briefing first, hints in three steps."],
-  ["07-vitrine", "Thirty-two\nawards to earn", "And a cabinet with a piece of evidence from every case."],
-  ["09-circus", "From the Manor\nto the Circus", "Every world has its own setting, cast and cases."],
-  ["10-hint", "Hints that explain,\nnever spoil", "Van Dam points to a statement and shows what follows from it."]
+  ["04-verklaringen", "Sudoku,\nbut with\na *murder*", "Who was alone with the victim?"],
+  ["05-beschuldiging", "Name the\n*culprit*", "One solution. Pure logic, no guessing."],
+  ["08-nieuw", "*Endless*\ncases", "1,024 cases plus a new one every day. 128 free, no ads."],
+  ["06-zaak-gesloten", "Case\n*closed*", "Stars for solving without a hint, first try."],
+  ["01-thuis", "Keep your\n*streak* going", "A daily case, daily quests and your week at a glance."],
+  ["10-hint", "Hints that\n*explain*", "Never the answer: the inspector points to the statement."],
+  ["02-wereldkaart", "From Luxor\nto *Hollywood*", "Every world its own time and place, from easy to hard."],
+  ["09-circus", "Every world,\nnew *suspects*", "Its own floor plan, cast and cases."],
+  ["07-vitrine", "*32* awards\nto earn", "And a cabinet with evidence from every case."]
 ]

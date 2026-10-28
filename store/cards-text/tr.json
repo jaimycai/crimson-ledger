@@ -1,12 +1,11 @@
 [
-  ["04-verklaringen", "Faili bul.", "Her vakanın tek bir çözümü var. Reklam yok."],
-  ["08-nieuw", "Sekiz yeni\ndünya", "Luksor’daki bir mezardan Monte Carlo’daki bir kumarhaneye."],
-  ["02-wereldkaart", "On altı dünya,\nkıvrımlı tek bir yol", "Kolaydan zora, Luksor’dan Hollywood’a."],
-  ["06-zaak-gesloten", "Vaka kapandı.", "İpucusuz ve ilk denemede çözersen üç yıldız."],
-  ["01-thuis", "Her gün\nyeni bir vaka", "Günlük görevler, gün serisi ve haftan tek bakışta."],
-  ["05-beschuldiging", "Kurbanla yalnız\nkalan kimdi?", "Faili göster. Ya itiraf eder ya da inkâr eder."],
-  ["03-briefing", "Komiser Van Dam\nsana yol gösterir", "Önce bir brifing, sonra üç adımda ipuçları."],
-  ["07-vitrine", "Kazanılacak\notuz iki ödül", "Bir de vitrin: her vakadan bir kanıt."],
-  ["09-circus", "Malikâne’den\nSirk’e", "Her dünyanın kendi mekânı, kendi kadrosu, kendi vakaları var."],
-  ["10-hint", "İpuçları açıklar,\nçözümü söylemez", "Van Dam bir ifadeyi gösterir ve ondan ne çıktığını söyler."]
+  ["04-verklaringen", "Sudoku,\nama bir\n*cinayetle*", "Kurbanla yalnız kalan kimdi?"],
+  ["05-beschuldiging", "*Faili*\ngöster", "Tek çözüm. Saf mantık, tahmin yok."],
+  ["08-nieuw", "*Sonsuz*\nvaka", "1.024 vaka ve her gün yenisi. 128’i ücretsiz, reklam yok."],
+  ["06-zaak-gesloten", "Vaka\n*kapandı*", "İpucusuz ve ilk denemede çözene yıldız."],
+  ["01-thuis", "*Serini*\nkoru", "Günün vakası, günlük görevler ve haftan tek bakışta."],
+  ["10-hint", "*Açıklayan*\nipuçları", "Asla cevabı değil: müfettiş ifadeyi gösterir."],
+  ["02-wereldkaart", "Luksor’dan\n*Hollywood*’a", "Her dünyanın kendi dönemi ve yeri; kolaydan zora."],
+  ["09-circus", "Her dünyada\nyeni *şüpheliler*", "Kendi kat planı, karakterleri ve vakaları."],
+  ["07-vitrine", "Kazanılacak\n*32* madalya", "Ve her vakadan bir delilin durduğu vitrin."]
 ]

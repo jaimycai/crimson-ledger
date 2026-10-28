@@ -1,12 +1,11 @@
 [
-  ["04-verklaringen", "Finde den Täter.", "Jeder Fall hat genau eine Lösung. Keine Werbung."],
-  ["08-nieuw", "Acht neue\nWelten", "Vom Grab in Luxor bis zum Casino in Monte Carlo."],
-  ["02-wereldkaart", "Sechzehn Welten,\nein verschlungener Weg", "Von leicht bis schwer, von Luxor bis Hollywood."],
-  ["06-zaak-gesloten", "Fall abgeschlossen.", "Sterne fürs Lösen ohne Tipp und auf Anhieb."],
-  ["01-thuis", "Jeden Tag\nein neuer Fall", "Mit Wochenübersicht, Aufträgen und Serie."],
-  ["05-beschuldiging", "Wer war allein\nmit dem Opfer?", "Benenne den Täter. Er gesteht oder leugnet."],
-  ["03-briefing", "Inspektor Van Dam\nbringt dich auf die Spur", "Vorab ein Briefing, Tipps in drei Schritten."],
-  ["07-vitrine", "Zweiunddreißig\nMedaillen warten", "Und eine Vitrine mit einem Beweisstück pro Fall."],
-  ["09-circus", "Vom Herrenhaus\nbis zum Zirkus", "Jede Welt mit eigenem Schauplatz, eigenen Figuren, eigenen Fällen."],
-  ["10-hint", "Tipps, die erklären,\nnicht verraten", "Van Dam zeigt auf die Aussage und sagt, was daraus folgt."]
+  ["04-verklaringen", "Sudoku,\naber mit\neinem *Mord*", "Wer war allein mit dem Opfer?"],
+  ["05-beschuldiging", "Finde den\n*Täter*", "Eine Lösung. Reine Logik, kein Raten."],
+  ["08-nieuw", "*Endlos*\nermitteln", "1.024 Fälle und jeden Tag ein neuer. 128 gratis, keine Werbung."],
+  ["06-zaak-gesloten", "Fall\n*gelöst*", "Sterne für die Lösung ohne Tipp, im ersten Versuch."],
+  ["01-thuis", "Halte deine\n*Serie*", "Tagesfall, Tagesaufgaben und deine Woche auf einen Blick."],
+  ["10-hint", "Tipps, die\n*erklären*", "Nie die Antwort: Der Inspektor zeigt auf die Aussage."],
+  ["02-wereldkaart", "Von Luxor\nbis *Hollywood*", "Jede Welt mit eigener Zeit und eigenem Ort, von leicht bis schwer."],
+  ["09-circus", "Jede Welt,\nneue *Verdächtige*", "Eigener Grundriss, eigene Figuren, eigene Fälle."],
+  ["07-vitrine", "*32*\nAuszeichnungen", "Und eine Vitrine mit einem Beweisstück aus jedem Fall."]
 ]

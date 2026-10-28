@@ -7,7 +7,10 @@
 //   invoer  store/screenshots{-65}{-<taal>}/   (Nederlands zonder achtervoegsel)
 //   uitvoer store/cards{-65}{-<taal>}/
 // De teksten staan in store/cards-text/<taal>.json: een lijst van [schermafbeelding, kop, onderregel],
-// in de volgorde waarin ze in App Store Connect komen. "\n" in een kop is een vaste regelbreuk.
+// in de volgorde waarin ze in App Store Connect komen. "\n" in een kop is een vaste regelbreuk, *woord* kleurt rood.
+// Ontwerp sinds 28-10-2026 (store/CONVERSIE.md, Jaimy koos "optie A in een iPhone"): wat in een zoekresultaat op
+// postzegelformaat werkt, zoals bij de koplopers in het genre. Lichte achtergrond met een eigen kleur per plaat,
+// korte kop in een dikke schreefloze letter in hoofdletters, het hele scherm in een iPhone die onderaan uit beeld loopt.
 // Letters per taal zoals in de app (style.css: de @font-face-regels en het blok "Letters per schrift");
 // <html lang dir> per taal, rechts-naar-links voor Arabisch en Urdu. Een kop die niet in drie regels past,
 // of een woord dat breder is dan de plaat, krijgt stap voor stap een kleinere letter; past het dan nog niet,
@@ -54,8 +57,21 @@ const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(
 // regelafstand per schrift: Nastaliq en de Indiase schriften zijn hoger dan Latijn
 const LEADING = { ur: [1.7, 1.9], ar: [1.4, 1.6], hi: [1.35, 1.55], mr: [1.35, 1.55], bn: [1.35, 1.55], te: [1.4, 1.6], zh: [1.25, 1.5], ja: [1.25, 1.5], ko: [1.25, 1.5], vi: [1.22, 1.45] };
 
-const card = (code, src, head, sub, dark, fonts) => {
-  const [lhHead, lhSub] = LEADING[code] || [1.12, 1.4];
+// een eigen lichte kleur per plaat, in een vaste volgorde
+const BG = ['#FFF1DC', '#FDE4E1', '#E4EEFB', '#E5F1DF', '#EFE7F8'];
+const markHl = head => esc(head).replace(/\*([^*]+)\*/g, '<em>$1</em>');
+
+// iPhone 17 Pro (402 x 874 pt, Dynamic Island 126 x 37), geschaald naar de schermbreedte hier
+const SCREEN_W = 366;
+const pt = n => Math.round(n * SCREEN_W / 402);
+const STATUS = `<div class="status"><span class="time">9:41</span><span class="icons">
+  <svg width="18" height="12" viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg>
+  <svg width="16" height="12" viewBox="0 0 16 12"><path d="M8 2.6c2.3 0 4.4.9 6 2.4l1.2-1.3A10.4 10.4 0 0 0 8 .8 10.4 10.4 0 0 0 .8 3.7L2 5c1.6-1.5 3.7-2.4 6-2.4zm0 3.6c1.3 0 2.5.5 3.4 1.3l1.2-1.3A6.8 6.8 0 0 0 8 4.4c-1.8 0-3.4.7-4.6 1.8l1.2 1.3c.9-.8 2.1-1.3 3.4-1.3zM8 9.6l2.2-2.3a3.2 3.2 0 0 0-4.4 0z"/></svg>
+  <svg width="27" height="13" viewBox="0 0 27 13"><rect x=".5" y=".5" width="23" height="12" rx="3.8" fill="none" stroke="currentColor" opacity=".4"/><rect x="2" y="2" width="20" height="9" rx="2.5"/><path d="M25 4.5v4c.8-.3 1.3-1.1 1.3-2s-.5-1.7-1.3-2z" opacity=".45"/></svg>
+</span></div>`;
+
+const card = (code, src, head, sub, i, fonts) => {
+  const [lhHead, lhSub] = LEADING[code] || [1.02, 1.3];
   return `<!doctype html>
 <html lang="${code}" dir="${dirOf(code)}"><head><meta charset="utf-8">
 <style>
@@ -63,57 +79,58 @@ ${fonts}
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html, body { width: ${SIZE.w}px; height: ${SIZE.h}px; }
   body {
-    overflow: hidden;
+    overflow: hidden; background: ${BG[i % BG.length]};
     display: flex; flex-direction: column; align-items: center;
     -webkit-font-smoothing: antialiased;
-    background: ${dark
-      ? 'radial-gradient(120% 80% at 50% 0%, #33261d 0%, #201812 60%, #17110d 100%)'
-      : 'radial-gradient(120% 80% at 50% 0%, #fbf5ea 0%, #f2e8d4 55%, #e7d9bd 100%)'};
   }
-  /* vaste hoogte, zodat een kop van één, twee of drie regels het toestel
-     op alle platen even hoog laat staan */
+  /* vaste hoogte, zodat een kop van één, twee of drie regels het toestel op alle platen even hoog laat staan */
   .top {
-    height: 176px; width: 100%; flex: none;
+    height: 222px; width: 100%; flex: none; padding-top: 14px;
     display: flex; flex-direction: column; justify-content: center; align-items: center;
   }
   .top-in { width: 100%; display: flex; flex-direction: column; align-items: center; }
   .head {
-    font-family: var(--font-heading);
-    font-weight: 700; font-size: 30px; line-height: ${lhHead}; text-align: center;
-    color: ${dark ? '#f6e9cf' : '#8c2f2f'};
-    width: 100%; padding: 0 24px; white-space: pre-line; text-wrap: balance;
-    letter-spacing: .005em;
+    font-family: var(--font-body); font-weight: 900; font-size: 44px; line-height: ${lhHead};
+    letter-spacing: -.01em; text-transform: uppercase; text-align: center; color: #2a1a12;
+    width: 100%; padding: 0 22px; white-space: pre-line; text-wrap: balance;
   }
+  .head em { font-style: normal; color: #C43E26; }
   .sub {
-    font-family: var(--font-body);
-    font-size: 13.5px; line-height: ${lhSub}; text-align: center;
-    color: ${dark ? '#bda787' : '#6b5b48'};
-    width: 100%; margin-top: 10px; padding: 0 34px; text-wrap: balance;
+    font-family: var(--font-body); font-weight: 600; font-size: 16px; line-height: ${lhSub};
+    text-align: center; color: #5b4636; width: 100%; margin-top: 12px; padding: 0 30px; text-wrap: balance;
   }
   :lang(ko) .head, :lang(ko) .sub { word-break: keep-all; }
   :lang(ja) .head, :lang(ja) .sub, :lang(zh) .head, :lang(zh) .sub { line-break: strict; }
-  .rule { width: 46px; height: 2px; margin-top: 16px; background: #a8802c; opacity: .85; flex: none; }
-  .phone {
-    width: 340px; margin-top: 10px; flex: none;
-    border: 3px solid ${dark ? '#0d0a07' : '#2b2118'};
-    border-radius: 30px; overflow: hidden;
-    box-shadow: 0 18px 40px rgba(0,0,0,${dark ? '.55' : '.28'});
-    background: #fff;
+  .device {
+    position: relative; margin-top: 6px; width: ${SCREEN_W + 20}px; flex: none; padding: 3px; border-radius: 64px; direction: ltr;
+    background: linear-gradient(135deg, #d9d4cc 0%, #8a857e 18%, #efebe5 50%, #7d7871 82%, #cfcac2 100%);
+    box-shadow: 0 30px 60px rgba(60,30,10,.30), 0 6px 14px rgba(60,30,10,.18);
   }
-  .phone img { display: block; width: 100%; }
+  .bezel { background: #0b0b0c; border-radius: 61px; padding: 7px; }
+  .screen { position: relative; border-radius: 54px; overflow: hidden; background: #fff; height: ${pt(874)}px; }
+  .screen img { display: block; width: 100%; }
+  .island { position: absolute; top: 11px; left: 50%; transform: translateX(-50%); width: ${pt(126)}px; height: ${pt(37)}px; border-radius: 20px; background: #000; z-index: 3; }
+  .status { position: absolute; top: 0; left: 0; right: 0; height: 52px; display: flex; align-items: center; justify-content: space-between; padding: 4px 30px 0 40px; z-index: 2; color: #000; font-family: -apple-system, system-ui, sans-serif; }
+  .status .time { font-weight: 600; font-size: 16px; letter-spacing: -.01em; }
+  .status .icons { display: flex; gap: 6px; align-items: center; } .status svg { fill: currentColor; }
+  .btn { position: absolute; width: 4px; border-radius: 2px; left: -3px; background: linear-gradient(90deg, #6f6a64, #cfcac2); }
+  .btn.r { left: auto; right: -3px; background: linear-gradient(90deg, #cfcac2, #6f6a64); }
 </style></head>
 <body>
 <div class="top"><div class="top-in">
-  <div class="head">${esc(head)}</div>
+  <div class="head">${markHl(head)}</div>
   <div class="sub">${esc(sub)}</div>
-  <div class="rule"></div>
 </div></div>
-<div class="phone"><img src="${src}" alt=""></div>
+<div class="device">
+  <div class="btn" style="top:118px;height:30px"></div><div class="btn" style="top:172px;height:56px"></div><div class="btn" style="top:240px;height:56px"></div>
+  <div class="btn r" style="top:196px;height:86px"></div><div class="btn r" style="top:420px;height:52px"></div>
+  <div class="bezel"><div class="screen"><div class="island"></div>${STATUS}<img src="${src}" alt=""></div></div>
+</div>
 </body></html>`;
 };
 
 // Meet in de pagina en maak de letter kleiner tot alles past: kop hoogstens drie regels,
-// onderregel hoogstens drie, geen woord breder dan de plaat, alles binnen de vaste kopruimte
+// onderregel hoogstens twee, geen woord breder dan de plaat, alles binnen de vaste kopruimte
 // (met 10px lucht boven en onder: Arabische en Indiase letters steken boven hun regel uit).
 function fitInPage() {
   const top = document.querySelector('.top'), inner = document.querySelector('.top-in');
@@ -127,26 +144,26 @@ function fitInPage() {
     const range = document.createRange(); range.selectNodeContents(el);
     return [...range.getClientRects()].some(q => q.width && (q.left < L || q.right > R));
   };
-  let H = 30, S = 13.5;
-  const MIN_H = 18, MIN_S = 10.5;
+  let H = 44, S = 16;
+  const MIN_H = 24, MIN_S = 12;
   const state = () => {
     head.style.fontSize = H + 'px'; sub.style.fontSize = S + 'px';
     return { headLines: lines(head), subLines: lines(sub), headWide: wide(head), subWide: wide(sub), tall: inner.offsetHeight > top.clientHeight - 20 };
   };
   let s = state();
   for (let guard = 0; guard < 80; guard++) {
-    const headBad = s.headLines > 3 || s.headWide, subBad = s.subLines > 3 || s.subWide;
+    const headBad = s.headLines > 3 || s.headWide, subBad = s.subLines > 2 || s.subWide;
     if (!headBad && !subBad && !s.tall) break;
     if (headBad && H > MIN_H) H -= 1;
     else if (subBad && S > MIN_S) S -= 0.5;
-    else if (s.tall && H > 22) H -= 1;
+    else if (s.tall && H > 32) H -= 1;
     else if (s.tall && S > MIN_S) S -= 0.5;
     else if (s.tall && H > MIN_H) H -= 1;
     else break;
     s = state();
   }
-  const ok = s.headLines <= 3 && s.subLines <= 3 && !s.headWide && !s.subWide && !s.tall;
-  const img = document.querySelector('.phone img');
+  const ok = s.headLines <= 3 && s.subLines <= 2 && !s.headWide && !s.subWide && !s.tall;
+  const img = document.querySelector('.screen img');
   return { ...s, H, S, ok, imgOk: !!(img && img.complete && img.naturalWidth) };
 }
 
@@ -174,6 +191,8 @@ async function run(browser, code, fonts) {
     throw new Error(`${TEXT(code)}: verwacht een lijst van [schermafbeelding, kop, onderregel]`);
   }
   fs.mkdirSync(OUT(code), { recursive: true });
+  // oude platen weg: na een andere volgorde zouden ze met een andere naam blijven staan
+  for (const f of fs.readdirSync(OUT(code))) if (f.endsWith('.png')) fs.unlinkSync(path.join(OUT(code), f));
   const page = await browser.newPage();
   page.setDefaultTimeout(30000);
   await page.setViewport({ width: SIZE.w, height: SIZE.h, deviceScaleFactor: 3 });
@@ -193,7 +212,7 @@ async function run(browser, code, fonts) {
     const srcFile = path.join(SRC(code), `${name}.png`);
     if (!fs.existsSync(srcFile)) throw new Error(`${srcFile} ontbreekt: eerst node store/make-screenshots.js ${sizeArg} ${code}`);
     const src = 'data:image/png;base64,' + fs.readFileSync(srcFile).toString('base64');
-    html = card(code, src, head, sub, i % 2 === 1, fonts);
+    html = card(code, src, head, sub, i, fonts);
     await page.goto(CARD_URL, { waitUntil: 'networkidle0' });
     await page.evaluate(async () => { document.body.offsetHeight; await document.fonts.ready; });
     const fit = await page.evaluate(fitInPage);

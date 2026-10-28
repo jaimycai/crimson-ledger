@@ -1,12 +1,11 @@
 [
-  ["04-verklaringen", "Encontre o culpado.", "Cada caso tem uma única solução. Sem anúncios."],
-  ["08-nieuw", "Oito mundos\nnovos", "De uma tumba em Luxor a um cassino em Monte Carlo."],
-  ["02-wereldkaart", "Dezesseis mundos,\numa trilha sinuosa", "Do fácil ao difícil, de Luxor a Hollywood."],
-  ["06-zaak-gesloten", "Caso encerrado.", "Estrelas para quem resolve sem dica e de primeira."],
-  ["01-thuis", "Um caso novo\ntodo dia", "Missões diárias, sua sequência e a semana à vista."],
-  ["05-beschuldiging", "Quem estava a sós\ncom a vítima?", "Aponte o culpado. Ele confessa ou nega tudo."],
-  ["03-briefing", "Inspetor Van Dam\nmostra o caminho", "Instruções antes de cada caso, dicas em três passos."],
-  ["07-vitrine", "Trinta e duas\nmedalhas para conquistar", "E uma vitrine com uma prova para cada caso."],
-  ["09-circus", "Da Mansão\nao Circo", "Cada mundo tem seu cenário, seu elenco e seus casos."],
-  ["10-hint", "Dicas que explicam,\nsem dar a resposta", "Van Dam aponta o depoimento e diz o que dá para deduzir."]
+  ["04-verklaringen", "Sudoku,\nmas com um\n*assassinato*", "Quem estava a sós com a vítima?"],
+  ["05-beschuldiging", "Aponte o\n*culpado*", "Uma solução. Pura lógica, sem adivinhação."],
+  ["08-nieuw", "Casos\n*sem fim*", "1.024 casos e um novo todo dia. 128 grátis, sem anúncios."],
+  ["06-zaak-gesloten", "Caso\n*encerrado*", "Estrelas para quem resolve sem dica, de primeira."],
+  ["01-thuis", "Mantenha sua\n*sequência*", "Caso do dia, missões diárias e sua semana num relance."],
+  ["10-hint", "Dicas que\n*explicam*", "Nunca a resposta: o inspetor aponta o depoimento."],
+  ["02-wereldkaart", "De Luxor a\n*Hollywood*", "Cada mundo com sua época e seu lugar, do fácil ao difícil."],
+  ["09-circus", "Cada mundo,\nnovos *suspeitos*", "Planta, personagens e casos próprios."],
+  ["07-vitrine", "*32* medalhas\npara ganhar", "E uma vitrine com uma prova de cada caso."]
 ]

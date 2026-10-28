@@ -1,12 +1,11 @@
 [
-  ["04-verklaringen", "Trova il colpevole.", "Ogni caso ha una sola soluzione. Niente pubblicità."],
-  ["08-nieuw", "Otto nuovi\nmondi", "Dalla tomba di Luxor al casinò di Monte Carlo."],
-  ["02-wereldkaart", "Sedici mondi,\nun unico sentiero", "Dal facile al difficile, da Luxor a Hollywood."],
-  ["06-zaak-gesloten", "Caso chiuso.", "Stelle per chi risolve senza aiuti e al primo colpo."],
-  ["01-thuis", "Un nuovo caso\nogni giorno", "Sfide di oggi, la tua serie e la settimana a colpo d’occhio."],
-  ["05-beschuldiging", "Chi era solo\ncon la vittima?", "Indica il colpevole: confesserà, o negherà tutto."],
-  ["03-briefing", "L’ispettore Van Dam\nti mette sulla pista", "Prima un briefing, poi aiuti in tre passaggi."],
-  ["07-vitrine", "Trentadue medaglie\nda conquistare", "E una vetrina con una prova per ogni caso."],
-  ["09-circus", "Dalla villa\nal circo", "Ogni mondo ha i suoi luoghi, i suoi personaggi, i suoi casi."],
-  ["10-hint", "Aiuti che spiegano,\nsenza svelare", "Van Dam ti indica la dichiarazione e spiega cosa ne deriva."]
+  ["04-verklaringen", "Sudoku,\nma con un\n*omicidio*", "Chi era solo con la vittima?"],
+  ["05-beschuldiging", "Indica il\n*colpevole*", "Una soluzione. Pura logica, niente tentativi."],
+  ["08-nieuw", "Casi\n*infiniti*", "1.024 casi e uno nuovo ogni giorno. 128 gratis, niente pubblicità."],
+  ["06-zaak-gesloten", "Caso\n*chiuso*", "Stelle se lo risolvi senza aiuti, al primo colpo."],
+  ["01-thuis", "Non perdere\nla *serie*", "Caso del giorno, sfide quotidiane e la tua settimana in un colpo d’occhio."],
+  ["10-hint", "Aiuti che\n*spiegano*", "Mai la risposta: l’ispettore indica la dichiarazione."],
+  ["02-wereldkaart", "Da Luxor a\n*Hollywood*", "Ogni mondo ha la sua epoca e il suo luogo, dal facile al difficile."],
+  ["09-circus", "Ogni mondo,\nnuovi *sospettati*", "Pianta, personaggi e casi tutti suoi."],
+  ["07-vitrine", "*32* medaglie\nda vincere", "E una vetrina con una prova per ogni caso."]
 ]

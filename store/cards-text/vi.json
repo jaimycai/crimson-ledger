@@ -1,12 +1,11 @@
 [
-  ["04-verklaringen", "Tìm ra thủ phạm.", "Mỗi vụ án có một lời giải. Không quảng cáo."],
-  ["08-nieuw", "Tám thế giới\nhoàn toàn mới", "Từ lăng mộ ở Luxor đến sòng bạc ở Monte Carlo."],
-  ["02-wereldkaart", "Mười sáu thế giới,\nmột con đường quanh co", "Từ dễ đến khó, từ Luxor đến Hollywood."],
-  ["06-zaak-gesloten", "Vụ án khép lại.", "Nhận sao khi giải không cần gợi ý, đúng ngay lần đầu."],
-  ["01-thuis", "Mỗi ngày\nmột vụ án mới", "Có lịch tuần, nhiệm vụ và chuỗi ngày liên tiếp."],
-  ["05-beschuldiging", "Ai đã ở một mình\nvới nạn nhân?", "Chỉ ra hung thủ. Người đó sẽ nhận tội, hoặc chối phăng."],
-  ["03-briefing", "Thanh tra Van Dam\ndẫn dắt bạn", "Lời dặn trước mỗi vụ, gợi ý theo ba bước."],
-  ["07-vitrine", "32 huy chương\nchờ bạn giành lấy", "Và một tủ kính, mỗi vụ án một vật chứng."],
-  ["09-circus", "Từ Dinh thự\nđến Rạp xiếc", "Mỗi thế giới có nơi chốn, dàn nhân vật và vụ án riêng."],
-  ["10-hint", "Gợi ý để hiểu,\nkhông lộ đáp án", "Van Dam chỉ vào lời khai và nói rõ điều suy ra từ đó."]
+  ["04-verklaringen", "Sudoku,\nnhưng có\n*án mạng*", "Ai đã ở một mình với nạn nhân?"],
+  ["05-beschuldiging", "Chỉ ra\n*hung thủ*", "Một lời giải. Thuần logic, không đoán mò."],
+  ["08-nieuw", "Vụ án\n*bất tận*", "1.024 vụ án và mỗi ngày một vụ mới. 128 vụ miễn phí, không quảng cáo."],
+  ["06-zaak-gesloten", "Vụ án\n*khép lại*", "Sao cho người giải không cần gợi ý, ngay lần đầu."],
+  ["01-thuis", "Giữ\n*chuỗi ngày*", "Vụ án hằng ngày, nhiệm vụ ngày và tuần của bạn trong nháy mắt."],
+  ["10-hint", "Gợi ý biết\n*giải thích*", "Không bao giờ là đáp án: thanh tra chỉ ra lời khai."],
+  ["02-wereldkaart", "Từ Luxor\nđến *Hollywood*", "Mỗi thế giới một thời đại, một nơi chốn, từ dễ đến khó."],
+  ["09-circus", "Mỗi thế giới,\n*nghi phạm* mới", "Sơ đồ, nhân vật và vụ án riêng."],
+  ["07-vitrine", "*32*\nhuân chương", "Và tủ trưng bày bằng chứng từ mỗi vụ án."]
 ]
