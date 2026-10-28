@@ -22,7 +22,10 @@ import com.getcapacitor.PluginMethod;
 import com.getcapacitor.annotation.CapacitorPlugin;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 /**
  * In-app purchases through Google Play Billing. Same JavaScript surface as the
@@ -36,12 +39,15 @@ public class StorePlugin extends Plugin implements PurchasesUpdatedListener {
 
     private BillingClient client;
     private PluginCall pendingPurchase;
+    /** Purchase tokens already handed out, so a hint pack is never granted twice. */
+    private final Set<String> handled = Collections.synchronizedSet(new HashSet<>());
 
     @Override
     public void load() {
         client = BillingClient.newBuilder(getContext())
             .setListener(this)
             .enablePendingPurchases(PendingPurchasesParams.newBuilder().enableOneTimeProducts().build())
+            .enableAutoServiceReconnection()
             .build();
     }
 
@@ -65,12 +71,12 @@ public class StorePlugin extends Plugin implements PurchasesUpdatedListener {
         }
         if (wanted.isEmpty()) { done.onDetails(new ArrayList<>()); return; }
         QueryProductDetailsParams params = QueryProductDetailsParams.newBuilder().setProductList(wanted).build();
-        client.queryProductDetailsAsync(params, (result, details) -> {
+        client.queryProductDetailsAsync(params, (result, found) -> {
             if (result.getResponseCode() != BillingClient.BillingResponseCode.OK) {
                 call.reject("products: " + result.getDebugMessage());
                 return;
             }
-            done.onDetails(details);
+            done.onDetails(found.getProductDetailsList());
         });
     }
 
@@ -125,7 +131,13 @@ public class StorePlugin extends Plugin implements PurchasesUpdatedListener {
     public void onPurchasesUpdated(@NonNull BillingResult result, List<Purchase> purchases) {
         PluginCall call = pendingPurchase;
         pendingPurchase = null;
-        if (call == null) return;
+        if (call == null) {
+            // Outside the buy button: a redeemed promo code, or a pending payment that went through.
+            if (result.getResponseCode() == BillingClient.BillingResponseCode.OK && purchases != null) {
+                for (Purchase p : purchases) announceIfNew(p);
+            }
+            return;
+        }
         String id = call.getString("id");
         int code = result.getResponseCode();
         if (code == BillingClient.BillingResponseCode.USER_CANCELED) { resolveState(call, "cancelled", id); return; }
@@ -140,12 +152,40 @@ public class StorePlugin extends Plugin implements PurchasesUpdatedListener {
 
     /** Consumables are consumed so they can be bought again; the rest is acknowledged. */
     private void finish(Purchase p, String id, Runnable done) {
+        handled.add(p.getPurchaseToken());
         if (id.endsWith(CONSUMABLE_SUFFIX)) {
             client.consumeAsync(ConsumeParams.newBuilder().setPurchaseToken(p.getPurchaseToken()).build(), (r, token) -> done.run());
         } else if (!p.isAcknowledged()) {
             client.acknowledgePurchase(AcknowledgePurchaseParams.newBuilder().setPurchaseToken(p.getPurchaseToken()).build(), r -> done.run());
         } else {
             done.run();
+        }
+    }
+
+    /**
+     * Finishes a purchase nobody asked for in this session and tells store.js, which grants it
+     * (same "transaction" event as the iOS plugin). Each token only once.
+     */
+    private void announceIfNew(Purchase p) {
+        if (p.getPurchaseState() != Purchase.PurchaseState.PURCHASED || handled.contains(p.getPurchaseToken())) return;
+        // The buy button is still waiting for this product: onPurchasesUpdated hands it out.
+        PluginCall waiting = pendingPurchase;
+        if (waiting != null && p.getProducts().contains(waiting.getString("id"))) return;
+        for (String id : p.getProducts()) {
+            finish(p, id, () -> client.queryPurchasesAsync(
+                QueryPurchasesParams.newBuilder().setProductType(BillingClient.ProductType.INAPP).build(),
+                (r, all) -> {
+                    JSArray ids = new JSArray();
+                    for (Purchase q : all) {
+                        if (q.getPurchaseState() != Purchase.PurchaseState.PURCHASED) continue;
+                        for (String other : q.getProducts()) if (!other.endsWith(CONSUMABLE_SUFFIX)) ids.put(other);
+                    }
+                    JSObject data = new JSObject();
+                    data.put("id", id);
+                    data.put("revoked", false);
+                    data.put("ids", ids);
+                    notifyListeners("transaction", data);
+                }));
         }
     }
 
@@ -170,7 +210,8 @@ public class StorePlugin extends Plugin implements PurchasesUpdatedListener {
                 for (Purchase p : purchases) {
                     if (p.getPurchaseState() != Purchase.PurchaseState.PURCHASED) continue;
                     for (String id : p.getProducts()) {
-                        if (id.endsWith(CONSUMABLE_SUFFIX)) { finish(p, id, () -> { }); continue; }
+                        // A hint pack still here was never handed out (app closed mid-purchase, slow payment).
+                        if (id.endsWith(CONSUMABLE_SUFFIX)) { announceIfNew(p); continue; }
                         if (!p.isAcknowledged()) finish(p, id, () -> { });
                         ids.put(id);
                     }

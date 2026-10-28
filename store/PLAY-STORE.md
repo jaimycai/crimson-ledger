@@ -4,8 +4,13 @@
 
 ## Wat er klaar is
 
-- `android/`: Capacitor-project, pakketnaam `nl.crimsonledger.app`, versie 1.1 (versionCode 1).
+- `android/`: Capacitor-project, pakketnaam `nl.crimsonledger.app`, versie 1.4.1 (versionCode 5).
+- Doel-API 36 en Play Billing 8.3: beide eist Google sinds 31 augustus 2026 voor nieuwe apps
+  en updates (bijgewerkt 28 oktober).
 - Aankopen via Google Play Billing (`StorePlugin.java`), zelfde product-ID's als op iOS.
+  Aankopen buiten de koopknop (ingewisselde promocode, betaling die later doorkomt) gaan via
+  hetzelfde `transaction`-bericht naar `store.js` als op iOS; een hintpakket wordt per
+  aankooptoken maar één keer uitgedeeld.
 - Beoordelingsvraag via Google's eigen venster (`ReviewPlugin.java`).
 - Iconen en startscherm uit `resources/`.
 - Ondertekende bundel: `android/app/build/outputs/bundle/release/app-release.aab`.
@@ -26,6 +31,12 @@ Gradle 8.11 werkt niet met de Java 25 uit Android Studio; daarom JDK 21.
 Zonder deze twee bestanden kun je geen update meer uploaden. Google kan een verloren
 uploadsleutel laten vervangen (Play App Signing), maar dat kost dagen. Zet een kopie in je
 wachtwoordmanager of op een tweede schijf.
+
+## Stand 28 oktober
+
+Het ontwikkelaarsaccount bestaat (persoonlijk account). Open: toegang tot een Android-toestel
+laten verifiëren via de Play Console-app, daarna het telefoonnummer zodra Google de
+identiteitsdocumenten heeft goedgekeurd.
 
 ## Wat alleen jij kunt doen
 
