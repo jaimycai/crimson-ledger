@@ -18,6 +18,7 @@ async function list() {
 async function nominate(file, submit) {
   const spec = JSON.parse(fs.readFileSync(file, 'utf8'));
   const { name, type, description, publishStartDate, ...rest } = spec;
+  if (name.length > 60) return console.log(`STOP: name is ${name.length} characters, Apple allows 60`);
   const created = await api('POST', '/v1/nominations', { data: { type: 'nominations', attributes: { name, type, description, publishStartDate, submitted: false }, relationships: { relatedApps: { data: [{ type: 'apps', id: APP }] } } } });
   if (!created) return;
   const id = created.data.id;
