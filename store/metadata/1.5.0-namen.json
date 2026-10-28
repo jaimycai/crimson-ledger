@@ -1,0 +1,117 @@
+{
+  "nl-NL": {
+    "name": "Crimson Ledger: Moord Sudoku",
+    "subtitle": "Vind de dader, zonder reclame",
+    "keywords": "moordmysterie,detective,spel,puzzel,misdaad,raadsel,zaak,mysterie,offline,internet,wifi,moordsudoku"
+  },
+  "en-US": {
+    "name": "Crimson Ledger: Murder Sudoku",
+    "subtitle": "Mystery logic puzzles, no ads",
+    "keywords": "detective,whodunit,crime,games,clue,cozy,culprit,killer,case,solve,suspect,who,deduction,sleuth"
+  },
+  "en-GB": {
+    "name": "Crimson Ledger: Murder Sudoku",
+    "subtitle": "Mystery logic puzzles, no ads",
+    "keywords": "detective,whodunnit,crime,cosy,games,clue,culprit,killer,case,solve,suspect,sleuth,who,deduction"
+  },
+  "ar-SA": {
+    "name": "Crimson Ledger: سودوكو الجريمة",
+    "subtitle": "لعبة محقق: لغز قتل بلا إعلانات",
+    "keywords": "جريمة,قاتل,غموض,تحقيق,جنائي,بدون,نت,ذكاء,العاب,ألغاز,بوليسي,تحري,قضية,مشتبه,من,منطق,حل"
+  },
+  "bn-BD": {
+    "name": "Crimson Ledger: মার্ডার সুডোকু",
+    "subtitle": "গোয়েন্দা ধাঁধা, বিজ্ঞাপন নেই",
+    "keywords": "খুন,খুনি,খুনের,রহস্য,অপরাধী,কেস,তদন্ত,ডিটেকটিভ,সূত্র,বুদ্ধি,যুক্তি,গেম,খেলা,offline"
+  },
+  "de-DE": {
+    "name": "Crimson Ledger: Mord-Sudoku",
+    "subtitle": "Krimi-Rätsel ohne Werbung",
+    "keywords": "detektiv,mörder,mordfall,lösen,spiele,logik,täter,denkspiel,finde,wer,fälle,täglich,offline,internet"
+  },
+  "es-ES": {
+    "name": "Crimson Ledger: Sudoku Crimen",
+    "subtitle": "Resuelve asesinatos, detective",
+    "keywords": "asesinato,asesino,juego,misterio,culpable,resolver,sin,anuncios,caso,pista,sospechoso,quién,enigma"
+  },
+  "es-MX": {
+    "name": "Crimson Ledger: Sudoku Crimen",
+    "subtitle": "Resuelve asesinatos, detective",
+    "keywords": "asesinato,asesino,juego,juegos,misterio,culpable,resolver,sin,anuncios,internet,caso,pista,quién"
+  },
+  "fr-FR": {
+    "name": "Crimson Ledger: Sudoku Meurtre",
+    "subtitle": "Enquête criminelle, sans pub",
+    "keywords": "détective,jeu,policière,crime,coupable,mystère,tueur,déduction,logique,énigme,qui,indices,suspect"
+  },
+  "hi": {
+    "name": "Crimson Ledger: मर्डर सुडोकू",
+    "subtitle": "जासूसी पहेली, बिना विज्ञापन",
+    "keywords": "हत्या,कातिल,कौन,रहस्य,केस,खूनी,मिस्ट्री,डिटेक्टिव,सुराग,गुत्थी,गेम,खेल,दिमाग,तर्क,अपराध,ऑफलाइन"
+  },
+  "id": {
+    "name": "Crimson Ledger: Sudoku Misteri",
+    "subtitle": "Game detektif pembunuhan",
+    "keywords": "tanpa,iklan,logika,puzzle,pelaku,pembunuh,kasus,tersangka,offline,asah,otak,kriminal,cari,siapa"
+  },
+  "it": {
+    "name": "Crimson Ledger: Sudoku Omicidi",
+    "subtitle": "Detective senza pubblicità",
+    "keywords": "omicidio,delitto,giallo,assassino,colpevole,mistero,gioco,giochi,risolvi,indagine,logica,offline,chi"
+  },
+  "ja": {
+    "name": "Crimson Ledger: 殺人数独",
+    "subtitle": "犯人探しの推理ゲーム・広告なし",
+    "keywords": "ナンプレ,探偵,名探偵,謎解き,事件,ミステリー,マーダー,脳トレ,ロジック,パズル,手がかり,アリバイ,捜査,オフライン,暇つぶし,刑事,容疑者,無料"
+  },
+  "ko": {
+    "name": "Crimson Ledger: 살인 스도쿠",
+    "subtitle": "범인 찾기 추리 게임, 광고 없음",
+    "keywords": "탐정,명탐정,사건,용의자,범죄,형사,수사,수수께끼,미스터리,단서,알리바이,퍼즐,논리,두뇌,오프라인,매일,머더,무료"
+  },
+  "mr-IN": {
+    "name": "Crimson Ledger: मर्डर सुडोकू",
+    "subtitle": "गुप्तहेर कोडी, जाहिराती नाहीत",
+    "keywords": "खून,खुनी,रहस्य,कोण,गुन्हा,संशयित,डिटेक्टिव,सुगावा,गूढ,कोडे,तर्क,खेळ,केस,ऑफलाइन"
+  },
+  "pt-BR": {
+    "name": "Crimson Ledger: Sudoku Crime",
+    "subtitle": "Jogo de detetive: assassinato",
+    "keywords": "assassino,culpado,mistério,raciocínio,sem,anúncio,enigma,quem,matou,caso,pistas,lógica,offline"
+  },
+  "pt-PT": {
+    "name": "Crimson Ledger: Sudoku Crime",
+    "subtitle": "Jogo de detetive: assassinato",
+    "keywords": "homicídio,assassino,culpado,mistério,raciocínio,sem,anúncios,caso,pista,lógica,offline,resolver"
+  },
+  "ru": {
+    "name": "Crimson Ledger: Детектив",
+    "subtitle": "Судоку-убийство без рекламы",
+    "keywords": "кто,убийца,тайна,загадка,интернета,сыщик,логика,головоломки,расследование,игры,преступление,улики"
+  },
+  "te-IN": {
+    "name": "Crimson Ledger: మర్డర్ సుడోకు",
+    "subtitle": "డిటెక్టివ్ ఆట, ప్రకటనలు లేవు",
+    "keywords": "హత్య,హంతకుడు,దోషి,నేరం,మిస్టరీ,రహస్యం,లాజిక్,పజిల్స్,గేమ్,కేసు,తెలుగు"
+  },
+  "tr": {
+    "name": "Crimson Ledger: Cinayet Sudoku",
+    "subtitle": "Reklamsız dedektif oyunu",
+    "keywords": "katil,kim,gizem,polisiye,zeka,akıl,internetsiz,offline,şüpheli,bilmece,mantık,bulmaca,oyunları,suç"
+  },
+  "ur-PK": {
+    "name": "Crimson Ledger: مرڈر سوڈوکو",
+    "subtitle": "جاسوسی پہیلیاں، بغیر اشتہارات",
+    "keywords": "قتل,قاتل,مجرم,کون,سراغ,کیس,معمہ,منطقی,ڈیٹیکٹو,پہیلی,دماغی,کھیل,گیم,جرم,آف,لائن"
+  },
+  "vi": {
+    "name": "Crimson Ledger: Sudoku Thám Tử",
+    "subtitle": "Phá án mạng, không quảng cáo",
+    "keywords": "trinh,hung,thủ,bí,ẩn,giải,suy,luận,vụ,phạm,nghi,sát,nhân,tội,game,trò,chơi,offline,vui,logic,đố"
+  },
+  "zh-Hans": {
+    "name": "Crimson Ledger: 谋杀数独",
+    "subtitle": "找出凶手的侦探推理游戏·无广告",
+    "keywords": "嫌疑人,命案,凶案,杀人,刑侦,犯罪,悬疑,烧脑,探案,破案,线索,谜题,神探,益智,单机,离线,悬案,解谜,逻辑,九宫格,脑力"
+  }
+}
