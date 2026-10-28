@@ -129,6 +129,25 @@ const Store = {
     if (!P) return this.state();
     try { const r = await P.entitlements(); return this.applyEntitlements(r.ids || []); } catch (e) { return this.state(); }
   },
+  // Aankopen die buiten de koopknop om binnenkomen: een ingewisselde aanbiedingscode, Vragen om te kopen, een aankoop
+  // op een ander toestel. De native laag meldt ze (StorePlugin, Transaction.updates); bij terugkeer in de app kijken
+  // we nog eens, voor wie een code inwisselde terwijl de app op de achtergrond stond. Voor 1.5 zag de app een
+  // ingewisselde Pass pas na opnieuw openen. onChange krijgt { pass, hints }: wat er nieuw bij kwam.
+  listen(onChange) {
+    const P = this.plugin();
+    if (!P || this.listening) return;
+    this.listening = true;
+    const apply = (ids, hintsId) => {
+      const had = JSON.stringify(this.state()), hadPass = this.hasPass();
+      if (hintsId === this.IDS.hints) this.grant(hintsId);
+      const st = this.applyEntitlements(ids);
+      if (hintsId === this.IDS.hints || JSON.stringify(st) !== had) onChange({ pass: !!st.pass && !hadPass, hints: hintsId === this.IDS.hints });
+    };
+    try { P.addListener('transaction', d => apply((d && d.ids) || [], d && !d.revoked ? d.id : null)); } catch (e) { /* native laag zonder meldingen */ }
+    if (typeof document !== 'undefined' && document) document.addEventListener('visibilitychange', () => {
+      if (!document.hidden) P.entitlements().then(r => apply((r && r.ids) || [], null)).catch(() => {});
+    });
+  },
   // prijzen uit App Store Connect; onthouden zodat de winkel meteen iets toont
   async loadPrices() {
     const P = this.plugin();

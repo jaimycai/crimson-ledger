@@ -45,6 +45,22 @@ check(Store.mock() && Store.available(), 'nep-winkel aan (tests en browser)');
   check(Store.price(Store.IDS.pass) === '€\u00a04,99' && Store.price(Store.worldId('circus')) === '€\u00a01,99', 'vaste prijzen als App Store Connect niet bereikbaar is (harde spatie)');
   mem['crimson-store-prices'] = JSON.stringify({ [Store.IDS.pass]: '€ 5,49' });
   check(Store.price(Store.IDS.pass) === '€\u00a05,49', 'prijs uit App Store Connect gaat voor');
+  // 1.5: een ingewisselde aanbiedingscode terwijl de app open is (StorePlugin meldt "transaction")
+  {
+    let handler = null; const news = [];
+    global.window.Capacitor = { Plugins: { Store: { addListener: (ev, fn) => { if (ev === 'transaction') handler = fn; }, entitlements: async () => ({ ids: [] }) } } };
+    delete mem['crimson-store-mock'];
+    Store.save({ pass: false, worlds: [], cosmetics: false });
+    Store.listen(n => news.push(n));
+    handler({ id: Store.IDS.pass, revoked: false, ids: [Store.IDS.pass] });
+    check(Store.hasPass() && news.length === 1 && news[0].pass && !news[0].hints, 'ingewisselde Pass-code: meteen open, één keer gemeld als nieuw');
+    handler({ id: Store.IDS.pass, revoked: false, ids: [Store.IDS.pass] });
+    check(news.length === 1, 'dezelfde melding nog eens: niets nieuws');
+    const before = Store.hintsBought();
+    handler({ id: Store.IDS.hints, revoked: false, ids: [Store.IDS.pass] });
+    check(Store.hintsBought() === before + Store.HINT_PACK && news.length === 2 && news[1].hints, 'hintpakket via een code: hints erbij');
+    delete global.window.Capacitor;
+  }
   console.log(failures === 0 ? 'ALLE STORE CHECKS PASSED' : `${failures} FAILURES`);
   process.exit(failures ? 1 : 0);
 })();

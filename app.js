@@ -594,6 +594,15 @@ const App = {
     Store.applyLook();
     this.renderLook();
     Store.refresh().then(st => { if (st) this.onStoreChange(); });
+    // een ingewisselde code of een goedgekeurde aankoop terwijl de app open is: zelfde welkom als na de koopknop
+    Store.listen(news => {
+      if (news.pass) Progress.setFreezes(Progress.freezes() + 2);
+      if (news.pass || news.hints) {
+        Sound.play('win');
+        this.showToast('🎉', news.pass ? AP_T('Welkom bij de Crimson Pass: alles staat open.') : AP_T`${Store.HINT_PACK} hints erbij. Veel speurplezier!`);
+      }
+      this.onStoreChange();
+    });
   },
 
   // ══════════════════════════════════════════════════════════

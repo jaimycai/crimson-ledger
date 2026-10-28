@@ -17,6 +17,25 @@ public class StorePlugin: CAPPlugin, CAPBridgedPlugin {
         CAPPluginMethod(name: "entitlements", returnType: CAPPluginReturnPromise)
     ]
 
+    private var updates: Task<Void, Never>?
+
+    // Aankopen die buiten purchase() om binnenkomen: een ingewisselde aanbiedingscode, Vragen om te kopen,
+    // een aankoop op een ander toestel. Apple levert ze via Transaction.updates; zonder deze luisteraar bleven
+    // ze onafgemaakt en zag de app een ingewisselde Pass pas na opnieuw openen. Meldt "transaction" aan store.js.
+    override public func load() {
+        updates = Task { [weak self] in
+            for await result in Transaction.updates {
+                guard case .verified(let tx) = result else { continue }
+                await tx.finish()
+                guard let self = self else { return }
+                let ids = await self.currentEntitlements()
+                self.notifyListeners("transaction", data: ["id": tx.productID, "revoked": tx.revocationDate != nil, "ids": ids])
+            }
+        }
+    }
+
+    deinit { updates?.cancel() }
+
     // Prijzen en namen van de producten, zoals ze in App Store Connect staan.
     @objc func products(_ call: CAPPluginCall) {
         let ids = call.getArray("ids", String.self) ?? []

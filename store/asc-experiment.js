@@ -3,7 +3,7 @@
 //   node store/asc-experiment.js create <name> <traffic%> [locale...]  draft with one treatment: the cards in
 //                                                                      store/cards-65{-<language>}, for every locale of
 //                                                                      store/metadata/<live version>.json unless named
-//   node store/asc-experiment.js fill <experimentId>                   upload the cards again into an existing draft
+//   node store/asc-experiment.js fill <experimentId> [locale...]       upload the cards again into an existing draft
 //   node store/asc-experiment.js submit <experimentId>                 send the draft to App Review; Apple starts it
 //                                                                      after approval, and it runs until stopped
 //   node store/asc-experiment.js stop <experimentId>                   end a running test (the original stays)
@@ -54,11 +54,11 @@ async function fillLocalization(locId, locale) {
   console.log(locale.padEnd(8), short.padEnd(22), `deleted ${deleted}  uploaded ${ids.length}/${files.length}  processed ${ok}/${files.length}  order ${ordered ? 'set' : 'not set'}`);
 }
 
-async function fill(id) {
+async function fill(id, only) {
   const trs = await api('GET', `/v2/appStoreVersionExperiments/${id}/appStoreVersionExperimentTreatments`);
   for (const tr of (trs && trs.data) || []) {
     const locs = await api('GET', `/v1/appStoreVersionExperimentTreatments/${tr.id}/appStoreVersionExperimentTreatmentLocalizations?limit=50`);
-    for (const l of (locs && locs.data) || []) await fillLocalization(l.id, l.attributes.locale);
+    for (const l of (locs && locs.data) || []) if (!only.length || only.includes(l.attributes.locale)) await fillLocalization(l.id, l.attributes.locale);
   }
 }
 
@@ -91,10 +91,10 @@ async function stop(id) {
 }
 
 const [cmd, a, b, ...rest] = process.argv.slice(2);
-const usage = () => console.log('usage: list | create <name> <traffic%> [locale...] | fill <experimentId> | submit <experimentId> | stop <experimentId>');
+const usage = () => console.log('usage: list | create <name> <traffic%> [locale...] | fill <experimentId> [locale...] | submit <experimentId> | stop <experimentId>');
 if (cmd === 'list') list();
 else if (cmd === 'create' && a && Number(b) > 0) create(a, Number(b), rest);
-else if (cmd === 'fill' && a) fill(a);
+else if (cmd === 'fill' && a) fill(a, [b, ...rest].filter(Boolean));
 else if (cmd === 'submit' && a) submit(a);
 else if (cmd === 'stop' && a) stop(a);
 else usage();
