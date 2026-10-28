@@ -1,0 +1,56 @@
+// ============================================================
+// METING — anonieme tellers. De app stuurt alleen de naam van een
+// gebeurtenis en een paar grove kenmerken (platform, taal, versie,
+// een getal). Geen id, geen toestelkenmerk, geen account. Uit te
+// zetten in Instellingen; staat hij uit, dan gaat er niets weg.
+// ============================================================
+const Meting = {
+  URL: 'https://crimson-meting.spaarplan-data.workers.dev/e',
+  // de versie zoals de app hem toont (index.html #app-version); stond tot 1.3.1 vast op 1.1.3
+  version() {
+    try { const el = document.getElementById('app-version'); if (el && el.textContent.trim()) return el.textContent.trim(); } catch (e) { /* geen DOM */ }
+    return '?';
+  },
+  get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
+  set(k, v) { if (typeof App !== 'undefined') App.storageSet(k, v); else { try { localStorage.setItem(k, v); } catch (e) { /* privémodus */ } } },
+  on() { return this.get('crimson-meting') !== '0'; },
+  // De iOS-simulator zet 'CrimsonSimulator' in de user agent (MainViewController): testruns tellen niet mee.
+  test() { return typeof navigator !== 'undefined' && /CrimsonSimulator/.test(navigator.userAgent || ''); },
+  setOn(v) { this.set('crimson-meting', v ? '1' : '0'); },
+  platform() {
+    // de webdagzaak (docs/play/, build-web-daily.js) zet deze vlag vóór dit bestand laadt: apart geteld van de app
+    try { if (typeof window !== 'undefined' && window.WEB_DAILY === true) return 'webdaily'; } catch (e) { /* geen window */ }
+    try { const C = window.Capacitor; if (C && C.isNativePlatform && C.isNativePlatform()) return C.getPlatform() === 'android' ? 'android' : 'ios'; } catch (e) { /* web */ }
+    return 'web';
+  },
+  lang() { return typeof I18n !== 'undefined' && I18n.lang ? I18n.lang : 'nl'; },
+  day(d = new Date()) { return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`; },
+  // stuurt één teller; faalt stil (offline is normaal voor dit spel)
+  send(e, a = '', n = 0) {
+    if (!this.on() || this.test() || typeof fetch === 'undefined') return;
+    try {
+      fetch(this.URL, { method: 'POST', keepalive: true, headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ e, a: String(a), n: Number(n) || 0, p: this.platform(), l: this.lang(), v: this.version() }) }).catch(() => {});
+    } catch (err) { /* geen netwerk */ }
+  },
+  // Een bericht uit Instellingen → "Wat kan beter?". Gaat ook als de tellers uit staan: de speler stuurt het zelf.
+  // Alleen de tekst, het platform, de taal en de versie; de server bewaart geen IP-adres. Geeft true als het aankwam.
+  feedback(text) {
+    if (typeof fetch === 'undefined') return Promise.resolve(false);
+    if (this.test()) return Promise.resolve(true);
+    return fetch(this.URL.replace(/\/e$/, '/f'), { method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ t: String(text).slice(0, 1000), p: this.platform(), l: this.lang(), v: this.version() }) })
+      .then(r => r.ok, () => false);
+  },
+  // één keer per dag: hoeveel dagen na de eerste start komt iemand terug
+  open() {
+    const today = this.day();
+    let first = this.get('crimson-first-day');
+    if (!first) { first = today; this.set('crimson-first-day', first); }
+    if (this.get('crimson-meting-day') === today) return;
+    this.set('crimson-meting-day', today);
+    const dn = Math.max(0, Math.round((new Date(today) - new Date(first)) / 864e5));
+    this.send('open', '', Math.min(dn, 400));
+  }
+};
+if (typeof module !== 'undefined' && module.exports) module.exports = { Meting };

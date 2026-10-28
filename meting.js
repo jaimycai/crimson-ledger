@@ -18,6 +18,8 @@ const Meting = {
   test() { return typeof navigator !== 'undefined' && /CrimsonSimulator/.test(navigator.userAgent || ''); },
   setOn(v) { this.set('crimson-meting', v ? '1' : '0'); },
   platform() {
+    // de webdagzaak (docs/play/, build-web-daily.js) zet deze vlag vóór dit bestand laadt: apart geteld van de app
+    try { if (typeof window !== 'undefined' && window.WEB_DAILY === true) return 'webdaily'; } catch (e) { /* geen window */ }
     try { const C = window.Capacitor; if (C && C.isNativePlatform && C.isNativePlatform()) return C.getPlatform() === 'android' ? 'android' : 'ios'; } catch (e) { /* web */ }
     return 'web';
   },

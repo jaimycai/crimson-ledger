@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <!-- Sjabloon: build-web-daily.js vult het bord en de vensters uit index.html in en schrijft docs/play/index.html -->
+  <title>Crimson Ledger · Today's case</title>
+  <meta name="description" content="A free murder-mystery logic puzzle, a new case every day. Place the suspects on the floor plan and find who was alone with the victim.">
+  <meta name="theme-color" content="#8B2E1C">
+  <link rel="canonical" href="https://jaimycai.github.io/crimson-ledger/play/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Crimson Ledger">
+  <meta property="og:title" content="Crimson Ledger · Today's case">
+  <meta property="og:description" content="A new murder-mystery puzzle every day. Who was alone with the victim?">
+  <meta property="og:url" content="https://jaimycai.github.io/crimson-ledger/play/">
+  <meta property="og:image" content="https://jaimycai.github.io/crimson-ledger/play/icon-512.png">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="icon-192.png">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="stylesheet" href="style.css?v=c8fe6e2a">
+  <link rel="stylesheet" href="dagzaak.css?v=01cc9a81">
+  <!-- meting.js stuurt dan platform 'webdaily', zodat web en app apart geteld worden -->
+  <script>window.WEB_DAILY = true;</script>
+</head>
+<body class="webdaily">
+  <div id="app">
+
+    <!-- ═══════ DAGZAAK: THUIS ═══════ -->
+    <section id="screen-home" class="screen active">
+      <header class="wd-top">
+        <span class="wd-brand"><img class="wd-logo" src="icon-192.png" alt="" width="40" height="40"><span class="wd-name">Crimson Ledger</span></span>
+        <label class="wd-lang">
+          <span class="wd-lang-ico" aria-hidden="true">🌍</span>
+          <span class="wd-lang-code" id="wd-lang-code">EN</span>
+          <select id="wd-lang" aria-label="Language"></select>
+        </label>
+      </header>
+      <p class="wd-tagline" id="wd-tagline">Search. Reason. Unmask.</p>
+
+      <div class="home-card daily-card wd-daily" id="wd-daily">
+        <div class="wd-daily-head">
+          <span class="ribbon" id="wd-ribbon">Today's case</span>
+          <span class="wd-date" id="wd-date"></span>
+        </div>
+        <h1 class="wd-title" id="wd-title"></h1>
+        <p class="wd-world" id="wd-world"></p>
+        <p class="wd-hook" id="wd-hook"></p>
+        <div class="wd-play-box" id="wd-play-box">
+          <button type="button" class="btn btn-primary btn-block wd-play" id="wd-play">Play</button>
+          <p class="wd-first" id="wd-first" hidden><span id="wd-first-text"></span> <button type="button" class="wd-link" id="wd-skip">Skip</button></p>
+        </div>
+      </div>
+
+      <div class="wd-result" id="wd-home-result" hidden></div>
+
+      <div class="home-card wd-how" id="wd-how">
+        <span class="ribbon ribbon-gold" id="wd-how-title">How does it work?</span>
+        <ol class="wd-steps">
+          <li><span class="how-num">1</span><span id="wd-step1"></span></li>
+          <li><span class="how-num">2</span><span id="wd-step2"></span></li>
+          <li><span class="how-num">3</span><span id="wd-step3"></span></li>
+        </ol>
+        <p class="wd-rule" id="wd-rule"></p>
+      </div>
+
+      <footer class="wd-foot">
+        <p><b>Crimson Ledger</b> · <span id="wd-brandline">A new case every day</span></p>
+        <p>
+          <a href="https://apps.apple.com/app/id6812534368" data-appstore="3" target="_blank" rel="noopener">App Store ↗</a>
+          <span aria-hidden="true">·</span>
+          <a href="../privacy.html" id="wd-privacy">Privacy</a>
+          <span aria-hidden="true">·</span>
+          <button type="button" class="wd-link" id="wd-sound">🔊 Sound on</button>
+        </p>
+      </footer>
+    </section>
+
+    <!-- ═══════ BORD (uit index.html) ═══════ -->
+    <section id="screen-board" class="screen">
+      <div class="board-topbar">
+        <button class="back-btn back-btn-sm" id="btn-board-back">←</button>
+        <span class="board-timer" id="board-timer">00:00</span>
+        <span class="board-case" id="board-diff-tag"></span>
+      </div>
+      <p class="board-casetext" id="board-casetext"></p>
+      <div class="board-tip" id="board-tip" hidden="">
+        <span>Sleep een verdachte naar een vakje, of tik eerst de verdachte en dan het vakje. Alleen de moordenaar was in de kamer van het slachtoffer.</span>
+        <button type="button" id="btn-board-tip-close" aria-label="Sluiten">✕</button>
+      </div>
+      <div class="tutorial-coach board-coach" id="board-coach" hidden="">
+        <span class="tutorial-coach-icon"><i class="ico" data-icon="school"></i></span>
+        <div class="tutorial-coach-body">
+          <span class="tutorial-coach-step" id="board-coach-step">Stap 1 van 4</span>
+          <p class="tutorial-coach-text" id="board-coach-text"></p>
+        </div>
+        <button class="tutorial-coach-skip" id="btn-board-tutorial-skip" type="button">Overslaan</button>
+      </div>
+
+      <div class="board-stage">
+        <div class="board-grid" id="board-grid"></div>
+      </div>
+
+      <div class="board-suspects" id="board-suspects"></div>
+
+      <!-- Verklaringendek: één grote leesbare verklaring, swipen of tikken voor de volgende -->
+      <div class="clue-deck" id="clue-deck">
+        <div class="deck-nav">
+          <button type="button" class="deck-arrow" id="btn-clue-prev" aria-label="Vorige verklaring">‹</button>
+          <div class="deck-dots" id="clue-dots"></div>
+          <button type="button" class="deck-arrow" id="btn-clue-next" aria-label="Volgende verklaring">›</button>
+          <button type="button" class="deck-all" id="btn-clue-all">Alle</button>
+        </div>
+        <div class="deck-track" id="clue-track"></div>
+      </div>
+
+      <div class="board-tools">
+        <button type="button" class="tool active" id="btn-board-place">
+          <span class="tool-icon"><i class="ico" data-icon="user"></i></span><span class="tool-label">Plaats</span>
+        </button>
+        <button type="button" class="tool" id="btn-board-mark">
+          <span class="tool-icon"><i class="ico" data-icon="pencil"></i></span><span class="tool-label">Potlood</span>
+        </button>
+        <button type="button" class="tool" id="btn-board-erase">
+          <span class="tool-icon"><i class="ico" data-icon="eraser"></i></span><span class="tool-label">Gum</span>
+        </button>
+        <button type="button" class="tool" id="btn-board-undo">
+          <span class="tool-icon"><i class="ico" data-icon="arrow-back-up"></i></span><span class="tool-label">Terug</span>
+        </button>
+        <button type="button" class="tool" id="btn-board-hint">
+          <span class="tool-icon"><i class="ico" data-icon="bulb"></i><b class="tool-badge" id="hint-badge" hidden=""></b></span><span class="tool-label">Hint</span>
+        </button>
+        <button type="button" class="btn btn-primary board-check" id="btn-board-check" disabled="">Controleer</button>
+      </div>
+
+      <!-- Beschuldiging: op het bordscherm zelf, zodat de plattegrond zichtbaar blijft -->
+      <div class="board-accuse" id="board-accuse" hidden="">
+        <div class="accuse-scroll">
+          <h3 class="accuse-title">Wie heeft de moord gepleegd?</h3>
+          <p class="accuse-q" id="murder-question"></p>
+          <div class="murder-options" id="murder-options"></div>
+          <div class="accuse-reaction" id="murder-reaction" hidden=""></div>
+        </div>
+        <button type="button" class="btn btn-ghost btn-sm accuse-back" id="btn-accuse-back">← Terug naar het bord</button>
+      </div>
+    </section>
+
+    <!-- ═══════ OPGELOST ═══════ -->
+    <section id="screen-results" class="screen wd-results">
+      <div class="confetti" id="confetti" aria-hidden="true"></div>
+      <div class="splash-badge wd-badge" id="wd-badge" hidden><img class="splash-icon" src="assets/vandam.jpg" alt=""></div>
+      <div class="results-header">
+        <h2 id="wd-headline"></h2>
+        <p class="results-verdict" id="wd-verdict"></p>
+      </div>
+      <p class="results-description" id="wd-desc"></p>
+      <button type="button" class="btn btn-primary btn-block" id="wd-to-daily" hidden></button>
+      <div class="wd-result" id="wd-result"></div>
+    </section>
+  </div>
+
+  <!-- ═══════ VENSTERS (uit index.html) ═══════ -->
+  <div class="modal-overlay" id="hint-modal">
+    <div class="modal-content hint-sheet">
+      <div class="modal-handle"></div>
+      <div class="mentor-head">
+        <img class="mentor-img" src="assets/vandam.jpg" alt="">
+        <div><h3 class="mentor-name">Inspecteur Van Dam</h3><span class="mentor-sub" id="hint-sub">Hint</span></div>
+      </div>
+      <p class="hint-lead" id="hint-text"></p>
+      <div class="hint-step"><span class="hint-step-label">1 · Kijk naar</span><div class="hint-clues" id="hint-clues"></div></div>
+      <div class="hint-step" id="hint-detail"><span class="hint-step-label">2 · Dat betekent</span><p class="hint-meaning" id="hint-detail-text"></p></div>
+      <div class="hint-step"><span class="hint-step-label">3 · Doe dit</span><p class="hint-action" id="hint-action"></p></div>
+      <button class="btn btn-primary btn-block" id="btn-close-hint">Laat zien op het bord</button>
+    </div>
+  </div>
+
+<div class="modal-overlay" id="clue-modal">
+    <div class="modal-content clue-sheet">
+      <div class="modal-handle"></div>
+      <h3 class="clue-sheet-title">Alle verklaringen</h3>
+      <p class="clue-sheet-hint">Tik een verklaring om hem op het bord te bekijken.</p>
+      <div class="board-clues" id="board-clues"></div>
+      <button type="button" class="btn btn-secondary btn-block" id="btn-clue-close">Sluiten</button>
+    </div>
+  </div>
+
+<div class="modal-overlay" id="newclue-modal">
+    <div class="modal-content newclue-sheet" id="newclue-host"></div>
+  </div>
+
+<div class="clue-toast" id="toast">
+    <span class="clue-toast-icon" id="toast-icon">💡</span>
+    <span id="toast-text"></span>
+  </div>
+
+  <span id="app-version" hidden>1.4.1</span>
+
+  <script src="avatars.js?v=72016d23"></script>
+  <script src="story.js?v=cd0f37d1"></script>
+  <script src="themes.js?v=c84af16a"></script>
+  <script src="progress.js?v=b98c2b69"></script>
+  <script src="mentor.js?v=ecad228e"></script>
+  <script src="meting.js?v=dd34ef94"></script>
+  <script src="i18n.js?v=071047bb"></script>
+  <script src="grammar.js?v=8cd7ec1e"></script>
+  <script src="icons.js?v=57d0f876"></script>
+  <script src="sound.js?v=bb865427"></script>
+  <script src="floorplan.js?v=964e3e97"></script>
+  <script src="board.js?v=dd7113bd"></script>
+  <script src="gedeeld.js?v=5e19e603"></script>
+  <script src="teksten.js?v=b721be77"></script>
+  <script src="dagzaak.js?v=2da3b66a"></script>
+</body>
+</html>

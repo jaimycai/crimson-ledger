@@ -1,0 +1,118 @@
+/* ============================================================
+   DAGZAAK OP HET WEB — alleen wat de app (style.css) niet heeft.
+   Papierstand uit DESIGN.md: crème ondergrond, wijnrode inkt,
+   goud als randversiering. Mobiel eerst (390 px), op een groter
+   scherm dezelfde kolom van hooguit 480 px in het midden.
+   ============================================================ */
+
+body.webdaily { background: var(--bg-primary); }
+
+/* ── Thuis ── */
+#screen-home { gap: 14px; }
+.wd-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.wd-brand { display: inline-flex; align-items: center; gap: 10px; min-width: 0; }
+.wd-logo { width: 40px; height: 40px; border-radius: 50%; border: 2px solid var(--accent); object-fit: cover; flex: none; }
+.wd-name { font-family: 'Playfair Display', Georgia, serif; font-weight: 800; font-size: 1.55rem; color: var(--accent); letter-spacing: -0.02em; line-height: 1; white-space: nowrap; }
+.wd-lang {
+  position: relative; display: inline-flex; align-items: center; gap: 4px; flex: none;
+  border: 1.5px solid var(--border-light); background: var(--bg-card); border-radius: var(--radius-full);
+  padding: 0 12px 0 10px; height: 34px; color: var(--text-secondary); box-shadow: var(--shadow-sm);
+  font-size: 0.78rem; font-weight: 700; letter-spacing: 0.04em; cursor: pointer;
+}
+.wd-lang .ico { width: 16px; height: 16px; }
+.wd-lang-code::after { content: ''; display: inline-block; margin-inline-start: 6px; vertical-align: 2px;
+  border: 4px solid transparent; border-top-color: currentColor; border-bottom: 0; }
+/* de echte keuzelijst ligt onzichtbaar over de pil: het toestel toont zijn eigen lijst met alle 20 talen */
+.wd-lang select { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; cursor: pointer; font-size: 16px; }
+.wd-lang:focus-within { border-color: var(--accent); }
+.wd-tagline { font-family: var(--font-heading); font-style: italic; color: var(--text-secondary); font-size: 0.98rem; margin-top: -6px; }
+
+.wd-daily { padding: 18px 18px 16px; border-color: var(--gold-light); }
+.wd-daily::before {
+  content: ''; position: absolute; inset: 6px; border: 1px solid var(--border-light); border-radius: 11px; pointer-events: none;
+}
+.wd-daily-head { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
+.wd-daily-head .ribbon { background: var(--accent); color: var(--text-inverse); border-color: var(--accent); }
+.wd-date { font-size: 0.74rem; color: var(--text-light); font-variant-numeric: tabular-nums; }
+.wd-title { font-family: var(--font-heading); font-weight: 800; font-size: 1.9rem; line-height: 1.12; letter-spacing: -0.01em; color: var(--text-primary); margin: 2px 0 6px; }
+.wd-world { font-size: 0.86rem; color: var(--text-secondary); line-height: 1.45; }
+.wd-hook { font-family: var(--font-heading); font-style: italic; font-size: 0.95rem; color: var(--accent); line-height: 1.4; margin-top: 10px; }
+.wd-play-box { margin-top: 16px; position: relative; }
+.wd-play { font-size: 1.05rem; padding: 16px 28px; }
+.wd-first { margin-top: 10px; font-size: 0.8rem; color: var(--text-light); text-align: center; }
+.wd-link {
+  border: 0; background: none; padding: 2px 0; font: inherit; color: var(--accent); font-weight: 700; cursor: pointer;
+  text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px;
+}
+#wd-daily[hidden] { display: none; }
+
+/* ── Hoe werkt het ── */
+.wd-how { box-shadow: var(--shadow-sm); padding: 14px 16px; }
+.wd-how[hidden] { display: none; }
+.wd-steps { list-style: none; display: flex; flex-direction: column; gap: 8px; margin: 2px 0 10px; }
+.wd-steps li { display: flex; align-items: center; gap: 10px; font-weight: 600; font-size: 0.92rem; }
+.wd-steps .how-num { width: 26px; height: 26px; font-size: 0.8rem; flex: none; }
+.wd-rule { font-family: var(--font-heading); font-style: italic; font-size: 0.9rem; color: var(--text-secondary); line-height: 1.4;
+  padding-top: 10px; border-top: 1px dashed var(--border); }
+
+/* ── Resultaat: kaart, delen, App Store ── */
+.wd-result { display: flex; flex-direction: column; gap: 12px; width: 100%; }
+.wd-result[hidden] { display: none; }
+.wd-card {
+  position: relative; width: 100%; text-align: start;
+  background: var(--bg-card); border: 1.5px solid var(--gold-light); border-radius: 16px; padding: 16px 18px 14px;
+  box-shadow: var(--shadow-md);
+  background-image: repeating-linear-gradient(0deg, transparent 0 27px, rgba(184, 149, 92, 0.09) 27px 28px);
+}
+.wd-card-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.wd-card-brand { font-family: 'Playfair Display', Georgia, serif; font-weight: 800; color: var(--accent); font-size: 1rem; }
+.wd-card-day { font-size: 0.72rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gold); }
+.wd-card-title { font-family: var(--font-heading); font-weight: 800; font-size: 1.35rem; line-height: 1.2; margin: 6px 0 4px; }
+.wd-card-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.wd-card-stars { display: inline-flex; gap: 2px; }
+.wd-card-stars i { font-style: normal; font-size: 1.9rem; line-height: 1; color: var(--border); }
+.wd-card-stars i.on { color: var(--gold); }
+.wd-card-stamp {
+  border: 2.5px solid var(--success); color: var(--success); border-radius: 6px; padding: 3px 10px;
+  font-weight: 800; font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; transform: rotate(-6deg);
+  animation: wd-stamp 0.5s var(--ease-spring) both;
+}
+@keyframes wd-stamp { from { opacity: 0; transform: scale(2) rotate(-16deg); } to { opacity: 1; transform: rotate(-6deg); } }
+.wd-card-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 12px; padding-top: 10px; border-top: 1px dashed var(--border); }
+.wd-card-stats span { display: flex; flex-direction: column; gap: 1px; font-weight: 700; font-size: 1.05rem; font-variant-numeric: tabular-nums; }
+.wd-card-stats small { font-size: 0.64rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-light); }
+
+.wd-share { font-size: 0.95rem; }
+.wd-promo {
+  display: grid; grid-template-columns: 52px 1fr; align-items: center; gap: 10px 12px; text-align: start;
+  background: #FBF6EC; border: 1.5px solid var(--gold-light); border-radius: 16px; padding: 14px;
+}
+.wd-promo-icon { width: 52px; height: 52px; border-radius: 12px; box-shadow: var(--shadow-sm); }
+.wd-promo-text { display: flex; flex-direction: column; line-height: 1.25; }
+.wd-promo-text b { font-family: 'Playfair Display', Georgia, serif; font-size: 1.1rem; color: var(--accent); }
+.wd-promo-text span { font-size: 0.8rem; color: var(--text-secondary); }
+.wd-cta { grid-column: 1 / -1; font-size: 1rem; padding: 15px 18px; text-align: center; line-height: 1.25; }
+.wd-next { text-align: center; font-size: 0.8rem; color: var(--text-light); line-height: 1.5; }
+.wd-next b { display: block; color: var(--text-secondary); font-variant-numeric: tabular-nums; font-size: 0.9rem; }
+
+/* ── Na het oplossen ── */
+#screen-results.wd-results { gap: 14px; justify-content: center; }
+.wd-badge { width: 112px; height: 112px; margin: 0 auto 4px; flex: none; }
+.wd-badge[hidden] { display: none; }
+.wd-results .results-header h2 { font-size: 2.1rem; line-height: 1.1; }
+.wd-results .results-verdict { margin-top: 6px; }
+
+/* ── Voet ── */
+.wd-foot { margin-top: auto; padding-top: 14px; text-align: center; font-size: 0.74rem; color: var(--text-light); display: flex; flex-direction: column; gap: 4px; }
+.wd-foot b { font-family: 'Playfair Display', Georgia, serif; color: var(--text-secondary); }
+.wd-foot a { color: var(--text-secondary); text-decoration: none; display: inline-flex; align-items: center; gap: 3px; }
+.wd-foot a:hover { color: var(--accent); }
+.wd-foot .wd-link { color: var(--text-secondary); font-weight: 500; text-decoration: none; display: inline-flex; align-items: center; gap: 4px; }
+.wd-foot .ico { width: 13px; height: 13px; }
+.wd-foot p { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 4px 6px; }
+
+/* RTL (Arabisch, Urdu): de kaart en de rij lezen van rechts naar links */
+.wd-daily, .wd-how { text-align: start; }
+[dir="rtl"] .wd-card-stamp { transform: rotate(6deg); }
+[dir="rtl"] .wd-card-stamp { animation-name: wd-stamp-rtl; }
+@keyframes wd-stamp-rtl { from { opacity: 0; transform: scale(2) rotate(16deg); } to { opacity: 1; transform: rotate(6deg); } }
