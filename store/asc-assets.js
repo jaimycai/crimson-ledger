@@ -137,5 +137,7 @@ async function list(v) {
 
 const [cmd, v, ...rest] = process.argv.slice(2);
 const usage = () => console.log('usage: list <version> | screenshots <version> [storeLocale...] | previews <version> [delete]');
-if (!v) usage();
+module.exports = { upload, processed, cardsFor };
+if (require.main !== module) {}
+else if (!v) usage();
 else ({ list: () => list(v), screenshots: () => screenshots(v, rest), previews: () => previews(v, rest[0]) }[cmd] || usage)();
