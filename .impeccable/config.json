@@ -47,6 +47,11 @@
         ],
         "createdAt": "2026-10-20T19:47:54.931Z",
         "reason": "Claude: comes from the app's own style.css (DESIGN.md paper colour, .shelf, map glow) that this review page loads; the page draws none of it"
+      },
+      {
+        "rule": "overused-font",
+        "value": "roboto",
+        "createdAt": "2026-10-29T20:17:48.837Z"
       }
     ]
   }
