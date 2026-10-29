@@ -5,7 +5,7 @@
 ## Wat er klaar is
 
 - `android/`: Capacitor-project, pakketnaam `nl.crimsonledger.app`, versie 1.4.1 (versionCode 5).
-- Doel-API 36 en Play Billing 8.3: beide eist Google sinds 31 augustus 2026 voor nieuwe apps
+- Doel-API 36, minimale API 24 en Play Billing 8.3: Google eist ze voor nieuwe apps (minSdk 24 voor de automatische Play-beveiliging)
   en updates (bijgewerkt 28 oktober).
 - Aankopen via Google Play Billing (`StorePlugin.java`), zelfde product-ID's als op iOS.
   Aankopen buiten de koopknop (ingewisselde promocode, betaling die later doorkomt) gaan via
