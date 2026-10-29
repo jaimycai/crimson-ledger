@@ -50,12 +50,16 @@ Klaar:
 - Gesloten test "Alpha": 178 landen, testerslijst "Crimson Ledger testers" (nu twee eigen adressen),
   feedback naar jaimycai@gmail.com.
 
+Ook klaar (29-10, 21:25): contentclassificatie (PEGI 3, USK 6, ESRB 10+, Brazilië 14, Korea 15+,
+Saoedi-Arabië 16; geweld alleen genoemd, gokthema door Casino Azur, alcohol genoemd, digitale aankopen),
+bundel 5 (1.4.1) met minSdk 24 in de gesloten test, releasetekst en-US en nl-NL, en alle 38 wijzigingen
+ter beoordeling ingediend. Google beoordeelt meestal binnen 7 dagen.
+
 Open:
-- De contentclassificatie (IARC): het akkoord met de IARC-voorwaarden moet Jaimy zelf aanvinken.
-- De bundel uploaden in de release van de gesloten test. Hij is 12,5 MB; Claude's uploadtool
-  kan hoogstens 10 MB, dus Jaimy kiest het bestand zelf.
-- Daarna: in-app-producten (pas mogelijk na de eerste bundel), release ter beoordeling sturen.
-- Twaalf testers met een Android-toestel, veertien dagen aaneen aangemeld. Pas daarna mag productie.
+- Google Payments-verkopersaccount (bank- en belastinggegevens): pas daarna kunnen de 17 producten met
+  eenmalige betaling worden aangemaakt (Pass, 10 hints, thema's, 14 werelden; ID's zoals op iOS).
+- Twaalf testers met een Android-toestel, veertien dagen aaneen aangemeld via de testlink, die
+  verschijnt na goedkeuring onder Gesloten test › Testers. Pas daarna mag productie.
 
 Afbeeldingen opnieuw maken: `node store/make-store-cards.js play <talen>` (1080×1920, Android-toestel)
 en `node store/make-play-graphics.js <talen>` (banner 1024×500 en icoon 512).
