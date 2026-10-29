@@ -1,0 +1,105 @@
+[
+ {
+  "id": "nl.crimsonledger.app.pass",
+  "name": "Crimson Pass",
+  "description": "All worlds, unlimited hints and all board themes.",
+  "eur": 4.99
+ },
+ {
+  "id": "nl.crimsonledger.app.hints10",
+  "name": "10 hints",
+  "description": "Ten extra hints from Inspector Van Dam.",
+  "eur": 0.99,
+  "consumable": true
+ },
+ {
+  "id": "nl.crimsonledger.app.cosmetics",
+  "name": "Board themes and frames",
+  "description": "Three board themes and three frames.",
+  "eur": 1.99
+ },
+ {
+  "id": "nl.crimsonledger.app.world.hotel",
+  "name": "Grand Hotel Aurora",
+  "description": "64 cases in eight parts, own cast.",
+  "eur": 1.99
+ },
+ {
+  "id": "nl.crimsonledger.app.world.ruimte",
+  "name": "Station Orion",
+  "description": "64 cases in eight parts, own cast.",
+  "eur": 1.99
+ },
+ {
+  "id": "nl.crimsonledger.app.world.museum",
+  "name": "The Museum",
+  "description": "64 cases in eight parts, own cast.",
+  "eur": 1.99
+ },
+ {
+  "id": "nl.crimsonledger.app.world.trein",
+  "name": "The Night Train",
+  "description": "64 cases in eight parts, own cast.",
+  "eur": 1.99
+ },
+ {
+  "id": "nl.crimsonledger.app.world.circus",
+  "name": "The Circus",
+  "description": "64 cases in eight parts, own cast.",
+  "eur": 1.99
+ },
+ {
+  "id": "nl.crimsonledger.app.world.skihut",
+  "name": "The Ski Lodge",
+  "description": "64 cases in eight parts, own cast.",
+  "eur": 1.99
+ },
+ {
+  "id": "nl.crimsonledger.app.world.hacienda",
+  "name": "Hacienda San Isidro",
+  "description": "64 cases in eight parts, own cast.",
+  "eur": 1.99
+ },
+ {
+  "id": "nl.crimsonledger.app.world.opera",
+  "name": "Opéra Lumière",
+  "description": "64 cases in eight parts, own cast.",
+  "eur": 1.99
+ },
+ {
+  "id": "nl.crimsonledger.app.world.opgraving",
+  "name": "The Tomb of Nefer-Ankh",
+  "description": "64 cases in eight parts, own cast.",
+  "eur": 1.99
+ },
+ {
+  "id": "nl.crimsonledger.app.world.casino",
+  "name": "Casino Azur",
+  "description": "64 cases in eight parts, own cast.",
+  "eur": 1.99
+ },
+ {
+  "id": "nl.crimsonledger.app.world.filmstudio",
+  "name": "Paradise Pictures",
+  "description": "64 cases in eight parts, own cast.",
+  "eur": 1.99
+ },
+ {
+  "id": "nl.crimsonledger.app.world.karavaan",
+  "name": "The Caravanserai of Al-Nour",
+  "description": "64 cases in eight parts, own cast.",
+  "eur": 1.99
+ },
+ {
+  "id": "nl.crimsonledger.app.world.abdij",
+  "name": "The Abbey of Saint Aldric",
+  "description": "64 cases in eight parts, own cast.",
+  "eur": 1.99
+ },
+ {
+  "id": "nl.crimsonledger.app.world.vuurtoren",
+  "name": "Greycape Lighthouse",
+  "description": "64 cases in eight parts, own cast.",
+  "eur": 1.99
+ }
+]
