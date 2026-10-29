@@ -34,6 +34,12 @@ store/screenshots-65-*/
 store/cards-65-*/
 !store/screenshots-65-en/
 !store/cards-65-en/
+store/cards-play-*/
+!store/cards-play-en/
+# Google Play-banners per taal; opnieuw te maken met store/make-play-graphics.js
+store/play/feature-*.png
+!store/play/feature-en.png
+!store/play/feature-nl.png
 # bevat leveranciersnummer en een oude sleutel-ID: nooit in de openbare repo
 store/winkel.js
 art/portretten/vandam-zonder-tekst.png
