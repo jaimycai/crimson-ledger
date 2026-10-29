@@ -55,11 +55,18 @@ Saoedi-Arabië 16; geweld alleen genoemd, gokthema door Casino Azur, alcohol gen
 bundel 5 (1.4.1) met minSdk 24 in de gesloten test, releasetekst en-US en nl-NL, en alle 38 wijzigingen
 ter beoordeling ingediend. Google beoordeelt meestal binnen 7 dagen.
 
+Ook klaar (29-10, avond): betalingsprofiel "Jaimy Cai" gekoppeld en verkopersprofiel verzonden
+(Cai Enterprise, afschrift CRIMSON LEDGER), de 17 producten met eenmalige betaling actief met
+aankoopoptie `buy` (store/play/products.json). Basisprijzen 4,12 / 0,82 / 1,65 EUR zonder btw, zodat
+Nederland €4,99 / €0,99 / €1,99 betaalt zoals in de App Store; andere landen rekent Play om (VS $4,59
+voor de Pass, App Store $3,99). Gelijktrekken per markt kan later met een prijssjabloon. Google Groep
+crimson-ledger-testers hangt aan de gesloten test; de beoordeling is opnieuw gestart met de groep erin.
+
 Open:
-- Google Payments-verkopersaccount (bank- en belastinggegevens): pas daarna kunnen de 17 producten met
-  eenmalige betaling worden aangemaakt (Pass, 10 hints, thema's, 14 werelden; ID's zoals op iOS).
-- Twaalf testers met een Android-toestel, veertien dagen aaneen aangemeld via de testlink, die
-  verschijnt na goedkeuring onder Gesloten test › Testers. Pas daarna mag productie.
+- Testers werven via een ruilgroep (store/PLAY-TESTERS.md); de testlink werkt na goedkeuring.
+- Inschrijven voor 15% servicekosten (Play Console › Betalingsprofiel): voorwaarden, dus Jaimy.
+- Bankrekening en belastinggegevens in het Payments-centrum (Jaimy).
+- Productie aanvragen kan pas na 14 dagen met 12 testers; daarna beoordeelt Google nog.
 
 Afbeeldingen opnieuw maken: `node store/make-store-cards.js play <talen>` (1080×1920, Android-toestel)
 en `node store/make-play-graphics.js <talen>` (banner 1024×500 en icoon 512).
