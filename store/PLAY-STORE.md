@@ -32,11 +32,33 @@ Zonder deze twee bestanden kun je geen update meer uploaden. Google kan een verl
 uploadsleutel laten vervangen (Play App Signing), maar dat kost dagen. Zet een kopie in je
 wachtwoordmanager of op een tweede schijf.
 
-## Stand 28 oktober
+## Stand 29 oktober
 
-Het ontwikkelaarsaccount bestaat (persoonlijk account). Open: toegang tot een Android-toestel
-laten verifiëren via de Play Console-app, daarna het telefoonnummer zodra Google de
-identiteitsdocumenten heeft goedgekeurd.
+Account geverifieerd (toestel en telefoonnummer). De app bestaat in Play Console als
+"Crimson Ledger: Murder Sudoku" (app-ID 4974726224417293386, pakket `nl.crimsonledger.app`,
+standaardtaal en-US, Game, Puzzel, gratis).
+
+Klaar:
+- Alle verklaringen onder App-content behalve de contentclassificatie: privacybeleid, geen
+  advertenties, inloggegevens ("Nee": geen account, en de betaalde werelden voegen alleen zaken toe),
+  doelgroep 13+, data safety (app-interacties en feedbacktekst, optioneel, analyse, niet gedeeld),
+  geen advertentie-ID, geen overheids-, financiële of gezondheidsfuncties.
+- Winkelinstellingen: contact jaimycai@gmail.com, website jaimycai.github.io/crimson-ledger.
+- Winkelpagina in 23 talen: titel, korte en volledige beschrijving uit `store/play/listing.json`
+  (`node store/play-listing.js`), per taal een eigen banner en acht schermafbeeldingen in de
+  App Store-volgorde. en-GB gebruikt de Engelse afbeeldingen. Icoon en banner zijn als AI-beeld gelabeld.
+- Gesloten test "Alpha": 178 landen, testerslijst "Crimson Ledger testers" (nu twee eigen adressen),
+  feedback naar jaimycai@gmail.com.
+
+Open:
+- De contentclassificatie (IARC): het akkoord met de IARC-voorwaarden moet Jaimy zelf aanvinken.
+- De bundel uploaden in de release van de gesloten test. Hij is 12,5 MB; Claude's uploadtool
+  kan hoogstens 10 MB, dus Jaimy kiest het bestand zelf.
+- Daarna: in-app-producten (pas mogelijk na de eerste bundel), release ter beoordeling sturen.
+- Twaalf testers met een Android-toestel, veertien dagen aaneen aangemeld. Pas daarna mag productie.
+
+Afbeeldingen opnieuw maken: `node store/make-store-cards.js play <talen>` (1080×1920, Android-toestel)
+en `node store/make-play-graphics.js <talen>` (banner 1024×500 en icoon 512).
 
 ## Wat alleen jij kunt doen
 
