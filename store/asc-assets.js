@@ -1,6 +1,7 @@
 // Screenshots and app previews of an App Store version, per store localization.
 //   node store/asc-assets.js list <version>                          what each localization has now (reads only)
 //   node store/asc-assets.js screenshots <version> [storeLocale...]  replace the 6.5" screenshots (APP_IPHONE_65)
+//   node store/asc-assets.js screenshots <version> --ipad [...]      the same for the iPad 13" set (APP_IPAD_PRO_3GEN_129)
 //   node store/asc-assets.js previews <version>                      list the app preview videos
 //   node store/asc-assets.js previews <version> delete               delete every app preview video of that version
 // screenshots: the locales default to all of store/metadata/<version>.json (or, without that file, all localizations
@@ -40,9 +41,13 @@ async function findVersion(v) {
   return { ver, locs: Object.fromEntries(locs.data.map(l => [l.attributes.locale, l])) };
 }
 
+// iPhone 6.5" (APP_IPHONE_65) from store/cards-65[-lang]; with --ipad the iPad 12.9"/13" set (APP_IPAD_PRO_3GEN_129,
+// 2048×2732) from store/cards-ipad[-lang] (store/make-screenshots.js ipad + store/make-store-cards.js ipad).
+const IPAD = process.argv.includes('--ipad');
+const DISPLAY = IPAD ? 'APP_IPAD_PRO_3GEN_129' : 'APP_IPHONE_65';
 function cardsFor(locale) {
-  const lang = locale.split('-')[0];
-  return path.join(__dirname, lang === 'nl' ? 'cards-65' : `cards-65-${lang}`);
+  const lang = locale.split('-')[0], base = IPAD ? 'cards-ipad' : 'cards-65';
+  return path.join(__dirname, lang === 'nl' ? base : `${base}-${lang}`);
 }
 
 async function setsOf(locId) {
@@ -90,11 +95,11 @@ async function screenshots(v, only) {
     const files = fs.existsSync(dir) ? fs.readdirSync(dir).filter(f => f.endsWith('.png')).sort() : [];
     if (!files.length || files.length > 10) { console.log(locale.padEnd(8), `SKIP: ${short} has ${files.length} PNGs (needs 1 to 10), nothing deleted`); continue; }
     const sets = await setsOf(loc.id);
-    let set = sets.find(s => s.attributes.screenshotDisplayType === 'APP_IPHONE_65');
+    let set = sets.find(s => s.attributes.screenshotDisplayType === DISPLAY);
     if (!set) {
-      const r = await api('POST', '/v1/appScreenshotSets', { data: { type: 'appScreenshotSets', attributes: { screenshotDisplayType: 'APP_IPHONE_65' }, relationships: { appStoreVersionLocalization: { data: { type: 'appStoreVersionLocalizations', id: loc.id } } } } });
+      const r = await api('POST', '/v1/appScreenshotSets', { data: { type: 'appScreenshotSets', attributes: { screenshotDisplayType: DISPLAY }, relationships: { appStoreVersionLocalization: { data: { type: 'appStoreVersionLocalizations', id: loc.id } } } } });
       set = r && r.data;
-      if (!set) { console.log(locale.padEnd(8), 'FAIL: could not create the APP_IPHONE_65 set'); continue; }
+      if (!set) { console.log(locale.padEnd(8), `FAIL: could not create the ${DISPLAY} set`); continue; }
     }
     const old = await shotsOf(set.id);
     let deleted = 0;
@@ -104,7 +109,7 @@ async function screenshots(v, only) {
     const ok = await processed(ids, locale);
     // Upload order is normally the display order; this makes it certain.
     const ordered = ids.length ? await api('PATCH', `/v1/appScreenshotSets/${set.id}/relationships/appScreenshots`, { data: ids.map(id => ({ type: 'appScreenshots', id })) }) : null;
-    const others = sets.filter(s => s.attributes.screenshotDisplayType !== 'APP_IPHONE_65').map(s => s.attributes.screenshotDisplayType);
+    const others = sets.filter(s => s.attributes.screenshotDisplayType !== DISPLAY).map(s => s.attributes.screenshotDisplayType);
     console.log(locale.padEnd(8), short.padEnd(22), `deleted ${deleted}/${old.length}  uploaded ${ids.length}/${files.length}  processed ${ok}/${files.length}  order ${ordered ? 'set' : 'not set'}${others.length ? '  other sets still there: ' + others.join(', ') : ''}`);
   }
 }
@@ -136,8 +141,8 @@ async function list(v) {
 }
 
 const [cmd, v, ...rest] = process.argv.slice(2);
-const usage = () => console.log('usage: list <version> | screenshots <version> [storeLocale...] | previews <version> [delete]');
+const usage = () => console.log('usage: list <version> | screenshots <version> [--ipad] [storeLocale...] | previews <version> [delete]');
 module.exports = { upload, processed, cardsFor };
 if (require.main !== module) {}
 else if (!v) usage();
-else ({ list: () => list(v), screenshots: () => screenshots(v, rest), previews: () => previews(v, rest[0]) }[cmd] || usage)();
+else ({ list: () => list(v), screenshots: () => screenshots(v, rest.filter(a => a !== '--ipad')), previews: () => previews(v, rest[0]) }[cmd] || usage)();

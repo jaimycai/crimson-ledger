@@ -20,7 +20,8 @@ const wait = ms => new Promise(r => setTimeout(r, ms));
 const BASE = (process.env.SHOTS_BASE || 'http://127.0.0.1:8094').replace(/\/+$/, '');
 const SIZES = {
   '6.9': { w: 430, h: 932, suffix: '' },        // 1290×2796
-  '6.5': { w: 428, h: 926, suffix: '-65' }      // 1284×2778
+  '6.5': { w: 428, h: 926, suffix: '-65' },     // 1284×2778
+  'ipad': { w: 1024, h: 1366, suffix: '-ipad', scale: 2, sat: 24, sab: 20 }   // 2048×2732 (iPad 12,9"/13")
 };
 const [sizeArg = '6.9', ...codeArgs] = process.argv.slice(2);
 const SIZE = SIZES[sizeArg];
@@ -79,7 +80,7 @@ async function run(browser, lang) {
   const ctx = await browser.createBrowserContext();   // eigen opslag per taal
   const page = await ctx.newPage();
   page.setDefaultTimeout(30000);
-  await page.setViewport({ width: SIZE.w, height: SIZE.h, deviceScaleFactor: 3, isMobile: true, hasTouch: true });
+  await page.setViewport({ width: SIZE.w, height: SIZE.h, deviceScaleFactor: SIZE.scale || 3, isMobile: true, hasTouch: true });
   // niets naar buiten: 'CrimsonSimulator' in de user agent zet de tellers van meting.js uit (zoals in de
   // iOS-simulator), en verzoeken buiten de testserver worden afgebroken
   await page.setUserAgent((await browser.userAgent()) + ' CrimsonSimulator');
@@ -107,7 +108,7 @@ async function run(browser, lang) {
   await page.goto(`${BASE}/index.html`, { waitUntil: 'networkidle0' });
   const got = await page.evaluate(() => document.documentElement.lang);
   if (got !== lang) throw new Error(`${lang}: de app draait in "${got}" (taalbestand niet geladen?)`);
-  await page.addStyleTag({ content: ':root{--sat:59px;--sab:34px} #toast, #medal-toast { display: none !important }' });
+  await page.addStyleTag({ content: `:root{--sat:${SIZE.sat || 59}px;--sab:${SIZE.sab || 34}px} #toast, #medal-toast { display: none !important }` });
   await wait(1100);
   await page.evaluate(() => document.getElementById('btn-splash-start').click()); await wait(600);
   await page.evaluate(() => { const t = document.getElementById('toast'); if (t) t.classList.remove('show'); }); await wait(100);

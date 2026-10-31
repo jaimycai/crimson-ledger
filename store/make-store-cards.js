@@ -30,11 +30,13 @@ const BASE = (process.env.SHOTS_BASE || 'http://127.0.0.1:8094').replace(/\/+$/,
 const SIZES = {
   '6.9': { w: 430, h: 932, src: '', out: '', frame: 'iphone', top: 222, head: 44, sub: 16, screenW: 366 },
   '6.5': { w: 428, h: 926, src: '-65', out: '-65', frame: 'iphone', top: 222, head: 44, sub: 16, screenW: 366 },
-  'play': { w: 360, h: 640, src: '-65', out: '-play', frame: 'android', top: 190, head: 44, sub: 16, screenW: 290 }
+  'play': { w: 360, h: 640, src: '-65', out: '-play', frame: 'android', top: 190, head: 44, sub: 16, screenW: 290 },
+  // iPad 12,9"/13": 2048×2732 (store/make-screenshots.js ipad maakt de kale schermen)
+  'ipad': { w: 1024, h: 1366, src: '-ipad', out: '-ipad', frame: 'ipad', top: 300, head: 76, sub: 26, screenW: 760, scale: 2 }
 };
 const [sizeArg = '6.9', ...codeArgs] = process.argv.slice(2);
 const SIZE = SIZES[sizeArg];
-if (!SIZE) { console.error('gebruik: node store/make-store-cards.js <6.9|6.5|play> [talen...]   (standaard: nl en)'); process.exit(2); }
+if (!SIZE) { console.error('gebruik: node store/make-store-cards.js <6.9|6.5|play|ipad> [talen...]   (standaard: nl en)'); process.exit(2); }
 const CODES = codeArgs.length ? codeArgs : ['nl', 'en'];
 const tail = (suffix, code) => suffix + (code === 'nl' ? '' : '-' + code);
 const SRC = code => path.join(__dirname, `screenshots${tail(SIZE.src, code)}`);
@@ -112,7 +114,20 @@ const DEVICE_CSS = {
   .status-a .icons { display: flex; gap: 5px; align-items: center; } .status-a svg { fill: currentColor; }
   .btn.r { position: absolute; width: 3px; border-radius: 2px; right: -2px; background: linear-gradient(90deg, #575350, #2a2826); }`
 };
+DEVICE_CSS.ipad = `
+  .device {
+    position: relative; margin-top: 8px; width: ${SCREEN_W + 36}px; flex: none; padding: 3px; border-radius: 46px; direction: ltr;
+    background: linear-gradient(135deg, #d9d4cc 0%, #8a857e 18%, #efebe5 50%, #7d7871 82%, #cfcac2 100%);
+    box-shadow: 0 34px 70px rgba(60,30,10,.30), 0 8px 16px rgba(60,30,10,.18);
+  }
+  .bezel { background: #0b0b0c; border-radius: 43px; padding: 15px; }
+  .screen { position: relative; border-radius: 26px; overflow: hidden; background: #fff; height: ${Math.round(SCREEN_W * 2732 / 2048)}px; }
+  .screen img { display: block; width: 100%; }
+  .status { position: absolute; top: 0; left: 0; right: 0; height: 26px; display: flex; align-items: center; justify-content: space-between; padding: 2px 22px 0; z-index: 2; color: #000; font-family: -apple-system, system-ui, sans-serif; }
+  .status .time { font-weight: 600; font-size: 13px; }
+  .status .icons { display: flex; gap: 5px; align-items: center; } .status svg { fill: currentColor; }`;
 const DEVICE_HTML = {
+  ipad: src => `<div class="device"><div class="bezel"><div class="screen">${STATUS}<img src="${src}" alt=""></div></div></div>`,
   iphone: src => `<div class="device">
   <div class="btn" style="top:118px;height:30px"></div><div class="btn" style="top:172px;height:56px"></div><div class="btn" style="top:240px;height:56px"></div>
   <div class="btn r" style="top:196px;height:86px"></div><div class="btn r" style="top:420px;height:52px"></div>
@@ -181,8 +196,10 @@ function fitInPage() {
     const range = document.createRange(); range.selectNodeContents(el);
     return [...range.getClientRects()].some(q => q.width && (q.left < L || q.right > R));
   };
-  let H = 44, S = 16;
-  const MIN_H = 24, MIN_S = 12;
+  // start at the sizes of the plate (44/16 on a phone, larger on an iPad) and shrink in proportion
+  const H0 = parseFloat(getComputedStyle(head).fontSize), S0 = parseFloat(getComputedStyle(sub).fontSize);
+  let H = H0, S = S0;
+  const MIN_H = H0 * 24 / 44, MIN_S = S0 * 12 / 16;
   const state = () => {
     head.style.fontSize = H + 'px'; sub.style.fontSize = S + 'px';
     return { headLines: lines(head), subLines: lines(sub), headWide: wide(head), subWide: wide(sub), tall: inner.offsetHeight > top.clientHeight - 20 };
@@ -193,7 +210,7 @@ function fitInPage() {
     if (!headBad && !subBad && !s.tall) break;
     if (headBad && H > MIN_H) H -= 1;
     else if (subBad && S > MIN_S) S -= 0.5;
-    else if (s.tall && H > 32) H -= 1;
+    else if (s.tall && H > H0 * 32 / 44) H -= 1;
     else if (s.tall && S > MIN_S) S -= 0.5;
     else if (s.tall && H > MIN_H) H -= 1;
     else break;
@@ -232,7 +249,7 @@ async function run(browser, code, fonts) {
   for (const f of fs.readdirSync(OUT(code))) if (f.endsWith('.png')) fs.unlinkSync(path.join(OUT(code), f));
   const page = await browser.newPage();
   page.setDefaultTimeout(30000);
-  await page.setViewport({ width: SIZE.w, height: SIZE.h, deviceScaleFactor: 3 });
+  await page.setViewport({ width: SIZE.w, height: SIZE.h, deviceScaleFactor: SIZE.scale || 3 });
   // de plaat komt van dezelfde herkomst als de server, zodat de lettertypes zonder CORS laden;
   // de schermafbeelding gaat er als data-URL in, precies zoals hij op schijf staat
   let html = '';

@@ -3,6 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <script>
+    // iPad (1.5): the game is a 480px column. On a large screen the layout viewport gets narrower, so the column
+    // fills the screen instead of standing as a strip in the middle; it keeps at least 760 css px of height, so in
+    // landscape the board still fits (then the column simply stays phone-sized). Phones (and narrow iPad windows) keep
+    // device-width.
+    (function () {
+      var meta = document.querySelector('meta[name="viewport"]');
+      function fit() {
+        var vv = window.visualViewport, s = vv ? vv.scale : 1;
+        var pw = (vv ? vv.width : window.innerWidth) * s, ph = (vv ? vv.height : window.innerHeight) * s;
+        var want = pw < 500 ? 'width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover'
+          : 'width=' + Math.round(Math.min(pw, Math.max(520, pw * 760 / ph))) + ', user-scalable=no, viewport-fit=cover';
+        if (meta.content !== want) meta.content = want;
+        document.documentElement.classList.toggle('ipad', pw >= 500);
+      }
+      fit();
+      window.addEventListener('orientationchange', function () { setTimeout(fit, 250); });
+      window.addEventListener('resize', function () { clearTimeout(fit.t); fit.t = setTimeout(fit, 150); });
+    })();
+  </script>
   <title>Crimson Ledger — Speur. Redeneer. Ontmasker.</title>
   <meta name="description" content="Crimson Ledger is een moordmysterie-puzzelgame op een plattegrond. Speur naar aanwijzingen, redeneer wie waar stond en ontmasker de moordenaar.">
   <meta name="theme-color" content="#8B2E1C">
@@ -538,7 +558,7 @@
         <div class="settings-row"><span>Aankopen herstellen</span><button type="button" class="btn btn-ghost btn-sm" id="btn-restore">Herstellen</button></div>
         <div class="settings-row"><span>Alle voortgang wissen</span><button type="button" class="settings-danger" id="btn-reset-progress">Wissen</button></div>
       </div>
-      <p class="settings-version">Crimson Ledger <span id="app-version">1.4.1</span> · gemaakt in Nederland</p>
+      <p class="settings-version">Crimson Ledger <span id="app-version">1.5.0</span> · gemaakt in Nederland</p>
       <button class="btn btn-primary btn-block" id="btn-close-settings">Sluiten</button>
     </div>
   </div>
