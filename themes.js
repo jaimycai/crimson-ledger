@@ -607,10 +607,10 @@ const THEMES = [
       { label: 'Marconist Ole',             gender: 'm', color: '#B85C5C', style: { hair: 0, beard: true } },
       { label: 'Glaciologe Marina',         gender: 'f', color: '#5C8B5E', style: { hair: 1, hat: 'cap' } },
       { label: 'Dokter Kenji',              gender: 'm', color: '#C2185B', style: { hair: 3, glasses: true } },
-      { label: 'Meteorologe Ruth',          gender: 'f', color: '#B8955C', style: { hair: 4, glasses: true } },
+      { label: 'Meteorologe Nancy',         gender: 'f', color: '#B8955C', style: { hair: 4, glasses: true } },
       { label: 'Hondenmenner Rewi',         gender: 'm', color: '#8B5CB8', style: { hair: 0, hat: 'cap', skin: '#C68642' } },
       { label: 'Monteur Lieve',             gender: 'f', color: '#5C7AB8', style: { hair: 2, hat: 'bandana' } },
-      { label: 'Kok Mateo',                 gender: 'm', color: '#2C3E50', style: { hair: 3, moustache: true } },
+      { label: 'Kok Diego',                 gender: 'm', color: '#2C3E50', style: { hair: 3, moustache: true } },
       { label: 'Natuurkundige Hélène',      gender: 'f', color: '#D9A441', style: { hair: 1 } }
     ],
     outro: 'De zon staat weer boven het ijs. Het eerste vliegtuig brengt post, en neemt de dader mee naar huis.'
@@ -640,7 +640,7 @@ const THEMES = [
       { label: 'Gouvernante Mabel',         gender: 'f', color: '#8B5CB8', style: { hair: 2 } },
       { label: 'Luitenant Dmitri',          gender: 'm', color: '#5C7AB8', style: { hair: 0, moustache: true } },
       { label: 'Hofmeester Fjodor',         gender: 'm', color: '#2C3E50', style: { hair: 3, beard: true } },
-      { label: 'Fotografe Sofia',           gender: 'f', color: '#D9A441', style: { hair: 4 } }
+      { label: 'Fotografe Irina',           gender: 'f', color: '#D9A441', style: { hair: 4 } }
     ],
     outro: 'De kaarsen zijn uit en de nieuwe eeuw is begonnen. Het laatste geheim van de oude heb jij opgelost.'
   },
@@ -669,7 +669,7 @@ const THEMES = [
       { label: 'Chef Hamisi',               gender: 'm', color: '#8B5CB8', style: { hair: 0, beard: true, hat: 'cap', skin: '#8D5524' } },
       { label: 'Journaliste Amina',         gender: 'f', color: '#5C7AB8', style: { hair: 4, skin: '#8D5524' } },
       { label: 'Geluidsman Felix',          gender: 'm', color: '#2C3E50', style: { hair: 1 } },
-      { label: 'Biologe Hanne',             gender: 'f', color: '#D9A441', style: { hair: 2 } }
+      { label: 'Biologe Birgit',            gender: 'f', color: '#D9A441', style: { hair: 2 } }
     ],
     outro: 'De gnoes trekken verder en de lodge wordt stil. De laatste opname is van jou.'
   },
@@ -693,12 +693,12 @@ const THEMES = [
     suspects: [
       { label: 'Vrouwe Kang',               gender: 'f', color: '#B85C5C', style: { hair: 2 } },
       { label: 'Student Sang-u',            gender: 'm', color: '#5C8B5E', style: { hair: 0, hat: 'tophat' } },
-      { label: 'Geneesvrouw So-yeon',       gender: 'f', color: '#C2185B', style: { hair: 2, hat: 'cap' } },
+      { label: 'Geneesvrouw Ok-hwa',        gender: 'f', color: '#C2185B', style: { hair: 2, hat: 'cap' } },
       { label: 'Schilder Dae-ho',           gender: 'm', color: '#B8955C', style: { hair: 3, beard: true, hat: 'cap' } },
       { label: 'Borduurster Yeon-i',        gender: 'f', color: '#8B5CB8', style: { hair: 1 } },
       { label: 'Tolk Hak-su',               gender: 'm', color: '#5C7AB8', style: { hair: 0, glasses: true, hat: 'tophat' } },
-      { label: 'Kokkin Sun-i',              gender: 'f', color: '#2C3E50', style: { hair: 2, hat: 'bandana' } },
-      { label: 'Marskramer Deok-su',        gender: 'm', color: '#D9A441', style: { hair: 0, hat: 'cap' } }
+      { label: 'Kokkin Bok-sun',            gender: 'f', color: '#2C3E50', style: { hair: 2, hat: 'bandana' } },
+      { label: 'Marskramer Man-sik',        gender: 'm', color: '#D9A441', style: { hair: 0, hat: 'cap' } }
     ],
     outro: 'De maan staat weer vol boven de bergen. Het gedicht is af, en de laatste regel schreef jij.'
   }
