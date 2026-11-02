@@ -2,8 +2,9 @@
 // coarse dimensions; this Worker adds one to a counter. Nothing identifies a
 // player: no id, no IP, no user agent, and the day is the finest time unit.
 // 1.5: tut_step/tut_skip/quit (where new players drop out), hint_earned/stuck_hint (hint economy), cta (web daily → App Store)
+// 1.6: notif (a tap or button on a notification; a = "<kind>.<action>", e.g. "redder.later")
 const EVENTS = new Set(['open', 'tutorial_done', 'start', 'solved', 'failed', 'hint', 'store_open', 'purchase', 'review_asked', 'share', 'reminder_on',
-  'tut_step', 'tut_skip', 'quit', 'hint_earned', 'stuck_hint', 'cta']);
+  'tut_step', 'tut_skip', 'quit', 'hint_earned', 'stuck_hint', 'cta', 'notif']);
 // webdaily: the free daily case on jaimycai.github.io/crimson-ledger/play/
 const PLATFORMS = new Set(['ios', 'android', 'web', 'webdaily']);
 // every language the app speaks (i18n.js I18n.LANGS)
