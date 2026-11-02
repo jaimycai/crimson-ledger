@@ -54,3 +54,17 @@ Jaimy kiest; pas dan bouwen.
   meldingen), eerst als keuzepagina, dan in de app.
 - Gevonden fouten om mee te nemen: de herinnering zegt "18:30" maar plant een uur na de gewone speeltijd; vier van de
   vijf meldingen hebben dezelfde zin met "Crimson Ledger" als titel; goede en foute beschuldiging trillen hetzelfde.
+
+## Stand (2-3 november 2026)
+
+- 1.5 is nooit ingediend en gaat op in 1.6: de versie in App Store Connect heet nu 1.6.0 (`node store/asc-release.js rename`),
+  met de winkelteksten van 1.6 in 23 talen (`store/metadata/1.6.0/`, `check-1.6.js`), iPhone- en iPad-schermen en de video's.
+  De video's werden eerst geweigerd (ASSET_FAILED): Apple wil een geluidsspoor. Nu met een stil AAC-spoor (ffmpeg, beeld gekopieerd).
+- In de app: beweging (`motion.js`), Rive-vlam en grote Van Dam in de briefing (`rive-art.js`, `vendor/rive/`, `art/rive/`),
+  bord (kruisje, wegstrepen, zoom, "?"), "Zo zat het" en gemiste dagzaken, meldingen (Van Dam, streakredder 21:30, stoppen na
+  7 dagen), Live Activity (App ID en profiel via `store/asc-profile.js`), acht werelden 17-24 met 512 bewezen zaken, 64
+  portretten (117 credits) en vertalingen in 19 talen.
+- Acht aankopen `nl.crimsonledger.app.world.<id>` aangemaakt met `store/asc-iap-wereld.js` (€ 1,99, 175 landen, 23 talen,
+  reviewschermafbeelding); ze gaan mee met de review van 1.6.0.
+- Bij de release: `node build-web-daily.js` opnieuw draaien (de dagelijkse wereld wisselt nu over 24 werelden) en de
+  meting-worker deployen (nieuwe teller `notif`).
