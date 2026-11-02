@@ -1309,6 +1309,418 @@
           "Onderwijzeres Wilma": "Wilma",
           "Telegrafiste Fien": "Fien"
         }
+      },
+      "oceaanstomer": {
+        "title": "SS Halcyon",
+        "short": "Kapal Samudra",
+        "victimName": "Pemilik Kapal Ambrose Kingsley",
+        "roomWord": "ruangan",
+        "roomWordPlural": "ruangan",
+        "tagline": "Mei 1910. Lima hari menuju New York, komet Halley di atas dek, dan seorang pemilik kapal yang tak pernah sampai ke seberang.",
+        "intro": "SS Halcyon, Mei 1910, di tengah Samudra Atlantik. Di dek promenade semua orang memandangi komet Halley. Kecuali pemilik kapal Ambrose Kingsley: dia tergeletak di ruang merokok, di dekat cerutu yang masih membara.",
+        "outro": "Halcyon merapat di New York. Polisi sudah menunggu di dermaga, dan kamu tahu untuk siapa.",
+        "rooms": {
+          "Promenadedek": "Dek Promenade",
+          "Balzaal": "Ruang Dansa",
+          "Rookkamer": "Ruang Merokok",
+          "Eetzaal": "Ruang Makan",
+          "Suite": "Suite",
+          "Machinekamer": "Ruang Mesin",
+          "Brug": "Anjungan",
+          "Radiokamer": "Ruang Radio",
+          "Kombuis": "Dapur Kapal",
+          "Ruim": "Palka",
+          "Bibliotheek": "Perpustakaan",
+          "Serre": "Ruang Palem"
+        },
+        "furniture": {
+          "stuurrad": "kemudi kapal",
+          "scheepstelegraaf": "telegraf mesin",
+          "dekstoel": "kursi dek",
+          "scheepsbel": "lonceng kapal",
+          "hoedendoos": "kotak topi"
+        },
+        "suspects": {
+          "Kapitein Grant": "Kapten Grant",
+          "Stewardess Molly": "Pramugari Molly",
+          "Vliegenierster Solange": "Penerbang Solange",
+          "Professor Lund": "Profesor Lund",
+          "Suffragette Harriet": "Suffragette Harriet",
+          "Marconist Arthur": "Markonis Arthur",
+          "Hoofdmachinist Doyle": "Masinis Kepala Doyle",
+          "Hoedenmaakster Edna": "Pembuat Topi Edna"
+        },
+        "suspectShort": {
+          "Kapitein Grant": "Grant",
+          "Stewardess Molly": "Molly",
+          "Vliegenierster Solange": "Solange",
+          "Professor Lund": "Lund",
+          "Suffragette Harriet": "Harriet",
+          "Marconist Arthur": "Arthur",
+          "Hoofdmachinist Doyle": "Doyle",
+          "Hoedenmaakster Edna": "Edna"
+        }
+      },
+      "ryokan": {
+        "title": "Ryokan Tsukikage",
+        "short": "Ryokan",
+        "victimName": "Pemilik Ryokan Genzo Kurata",
+        "roomWord": "area",
+        "roomWordPlural": "area",
+        "tagline": "Kyoto, 1925. Bunga sakura di taman, air hangat di onsen, dan seorang pemilik ryokan yang tak sempat lagi meminum teh paginya.",
+        "intro": "Ryokan Tsukikage, di perbukitan dekat Kyoto, April 1925. Sakura sedang mekar dan semua kamar penuh. Pemilik ryokan Genzo Kurata tidak muncul untuk minum teh pagi. Dia tergeletak di rumah teh, di dekat mangkuk yang masih hangat.",
+        "outro": "Salju menyelimuti taman dan sumber air panas mengepul. Setiap tamu boleh pulang, kecuali satu.",
+        "rooms": {
+          "Gastenkamer": "Kamar Tamu",
+          "Onsen": "Onsen",
+          "Theehuis": "Rumah Teh",
+          "Tuin": "Taman",
+          "Keuken": "Dapur",
+          "Veranda": "Beranda",
+          "Hal": "Lobi",
+          "Eetzaal": "Ruang Makan",
+          "Bamboebos": "Hutan Bambu",
+          "Voorraadkamer": "Gudang",
+          "Steiger": "Dermaga",
+          "Wasruimte": "Ruang Cuci"
+        },
+        "furniture": {
+          "steenlantaarn": "lentera batu",
+          "tetsubin": "teko besi",
+          "byobu": "sekat lipat emas",
+          "bonsai": "bonsai",
+          "wagasa": "payung kertas",
+          "futon": "futon"
+        },
+        "suspects": {
+          "Gastvrouw Fumiko": "Nyonya Rumah Fumiko",
+          "Kok Takeshi": "Koki Takeshi",
+          "Theemeesteres Chiyo": "Master Teh Chiyo",
+          "Ingenieur Isamu": "Insinyur Isamu",
+          "Fotografe Sachiko": "Fotografer Sachiko",
+          "Tuinman Goro": "Tukang Kebun Goro",
+          "Plantkundige Evelyn": "Ahli Botani Evelyn",
+          "Prentmaker Hiroshi": "Pengukir Kayu Hiroshi"
+        },
+        "suspectShort": {
+          "Gastvrouw Fumiko": "Fumiko",
+          "Kok Takeshi": "Takeshi",
+          "Theemeesteres Chiyo": "Chiyo",
+          "Ingenieur Isamu": "Isamu",
+          "Fotografe Sachiko": "Sachiko",
+          "Tuinman Goro": "Goro",
+          "Plantkundige Evelyn": "Evelyn",
+          "Prentmaker Hiroshi": "Hiroshi"
+        }
+      },
+      "fazenda": {
+        "title": "Fazenda Boa Esperança",
+        "short": "Fazenda",
+        "victimName": "Juragan Kopi Augusto Valadares",
+        "roomWord": "area",
+        "roomWordPlural": "area",
+        "tagline": "Brasil, 1926. Buah kopi di lantai jemur, musik di beranda, dan seorang juragan kopi yang tak sempat lagi menghitung panennya.",
+        "intro": "Fazenda Boa Esperança, São Paulo, Juni 1926. Panen sudah selesai dan lantai jemur penuh buah kopi. Juragan kopi Augusto Valadares tidak muncul di pesta panen. Dia tergeletak di ruang sangrai, di antara karung-karung.",
+        "outro": "Lantai jemur sudah kosong dan pembukuan kembali cocok. Di beranda, musik terus mengalun.",
+        "rooms": {
+          "Droogvloer": "Lantai Jemur",
+          "Koffieveld": "Kebun Kopi",
+          "Pakhuis": "Gudang",
+          "Branderij": "Ruang Sangrai",
+          "Veranda": "Beranda",
+          "Kapel": "Kapel",
+          "Stal": "Kandang Kuda",
+          "Keuken": "Dapur",
+          "Eetkamer": "Ruang Makan",
+          "Salon": "Ruang Duduk",
+          "Studeerkamer": "Ruang Kerja",
+          "Serre": "Rumah Kaca"
+        },
+        "furniture": {
+          "koffiezak": "karung kopi",
+          "koffiemolen": "penggiling kopi",
+          "koffiestruik": "pohon kopi",
+          "papegaai": "burung nuri",
+          "schommelstoel": "kursi goyang"
+        },
+        "suspects": {
+          "Dona Celeste": "Dona Celeste",
+          "Rentmeester Joaquim": "Mandor Joaquim",
+          "Lerares Giulia": "Guru Giulia",
+          "Koffieproever Bento": "Pencicip Kopi Bento",
+          "Pianiste Zélia": "Pianis Zélia",
+          "Agronoom Hideo": "Agronom Hideo",
+          "Inkoper Mulder": "Pembeli Kopi Mulder",
+          "Dokter Lúcia": "Dokter Lúcia"
+        },
+        "suspectShort": {
+          "Dona Celeste": "Celeste",
+          "Rentmeester Joaquim": "Joaquim",
+          "Lerares Giulia": "Giulia",
+          "Koffieproever Bento": "Bento",
+          "Pianiste Zélia": "Zélia",
+          "Agronoom Hideo": "Hideo",
+          "Inkoper Mulder": "Mulder",
+          "Dokter Lúcia": "Lúcia"
+        }
+      },
+      "zeppelin": {
+        "title": "Kapal Udara Cirrus",
+        "short": "Zeppelin",
+        "victimName": "Perancang Anton Falk",
+        "roomWord": "ruangan",
+        "roomWordPlural": "ruangan",
+        "tagline": "1929. Tiga hari di atas samudra, tak seorang pun bisa turun, dan pembuat kapal udara itu tidak ikut mendarat.",
+        "intro": "Kapal udara Cirrus, Agustus 1929. Selama tiga hari kapal itu melayang di atas samudra, menuju Rio de Janeiro. Seusai makan malam, perancang Anton Falk tergeletak di ruang peta, dengan catatan rute masih di tangannya.",
+        "outro": "Kapal udara itu sudah tertambat di tiang. Rutenya benar, dan kini semua yang lain juga beres.",
+        "rooms": {
+          "Salon": "Ruang Santai",
+          "Eetzaal": "Ruang Makan",
+          "Slaapcabine": "Kabin Tidur",
+          "Kombuis": "Dapur Kapal",
+          "Bar": "Bar",
+          "Kaartenkamer": "Ruang Peta",
+          "Radiokamer": "Ruang Radio",
+          "Stuurgondel": "Gondola Kemudi",
+          "Motorgondel": "Gondola Mesin",
+          "Loopbrug": "Titian",
+          "Postkamer": "Ruang Pos",
+          "Uitkijkpost": "Pos Intai"
+        },
+        "furniture": {
+          "luchtschroef": "baling-baling",
+          "sextant": "sekstan",
+          "postzak": "karung pos",
+          "wereldbol": "bola dunia",
+          "schrijfmachine": "mesin tik"
+        },
+        "suspects": {
+          "Commandant Brandt": "Komandan Brandt",
+          "Verslaggeefster Daisy": "Wartawan Daisy",
+          "Navigator Mateus": "Navigator Mateus",
+          "Weerkundige Liv": "Ahli Cuaca Liv",
+          "Monteur Rudi": "Mekanik Rudi",
+          "Tennisster Josette": "Petenis Josette",
+          "Diplomaat Vidal": "Diplomat Vidal",
+          "Postmeesteres Elsbeth": "Kepala Pos Elsbeth"
+        },
+        "suspectShort": {
+          "Commandant Brandt": "Brandt",
+          "Verslaggeefster Daisy": "Daisy",
+          "Navigator Mateus": "Mateus",
+          "Weerkundige Liv": "Liv",
+          "Monteur Rudi": "Rudi",
+          "Tennisster Josette": "Josette",
+          "Diplomaat Vidal": "Vidal",
+          "Postmeesteres Elsbeth": "Elsbeth"
+        }
+      },
+      "poolstation": {
+        "title": "Stasiun Salib Selatan",
+        "short": "Stasiun Kutub",
+        "victimName": "Kepala Stasiun Gunnar Holm",
+        "roomWord": "ruangan",
+        "roomWordPlural": "ruangan",
+        "tagline": "Antarktika, 1958. Empat bulan malam kutub, delapan orang yang bertahan sepanjang musim dingin, dan seorang kepala stasiun yang tak sempat ikut pesta tengah musim dingin.",
+        "intro": "Stasiun Salib Selatan, Juni 1958. Ini tengah musim dingin di Antarktika: berminggu-minggu tanpa matahari, dan tak ada pesawat sampai musim semi. Di pesta tengah musim dingin, satu kursi tetap kosong. Kepala stasiun Gunnar Holm tergeletak di ruang radio, headphone masih terpasang.",
+        "outro": "Matahari kembali di atas es. Pesawat pertama membawa surat, dan membawa pulang si pelaku.",
+        "rooms": {
+          "Radiokamer": "Ruang Radio",
+          "Kennel": "Kandang Anjing",
+          "Laboratorium": "Laboratorium",
+          "Kantine": "Kantin",
+          "Slaapzaal": "Ruang Tidur",
+          "Machinekamer": "Ruang Mesin",
+          "Ziekenboeg": "Ruang Medis",
+          "Voorraadkamer": "Gudang",
+          "Werkplaats": "Bengkel",
+          "Weerhut": "Pondok Cuaca",
+          "Observatorium": "Observatorium",
+          "Sneeuwtunnel": "Terowongan"
+        },
+        "furniture": {
+          "zender": "pemancar radio",
+          "sledehond": "anjing kereta salju",
+          "weerballon": "balon cuaca",
+          "sneeuwrups": "kendaraan salju",
+          "microscoop": "mikroskop"
+        },
+        "suspects": {
+          "Marconist Ole": "Operator Radio Ole",
+          "Glaciologe Marina": "Glasiolog Marina",
+          "Dokter Kenji": "Dokter Kenji",
+          "Meteorologe Nancy": "Meteorolog Nancy",
+          "Hondenmenner Rewi": "Pawang Anjing Rewi",
+          "Monteur Lieve": "Mekanik Lieve",
+          "Kok Diego": "Koki Diego",
+          "Natuurkundige Hélène": "Fisikawan Hélène"
+        },
+        "suspectShort": {
+          "Marconist Ole": "Ole",
+          "Glaciologe Marina": "Marina",
+          "Dokter Kenji": "Kenji",
+          "Meteorologe Nancy": "Nancy",
+          "Hondenmenner Rewi": "Rewi",
+          "Monteur Lieve": "Lieve",
+          "Kok Diego": "Diego",
+          "Natuurkundige Hélène": "Hélène"
+        }
+      },
+      "winterpaleis": {
+        "title": "Istana Zvezdin",
+        "short": "Istana",
+        "victimName": "Count Andrei Zvezdin",
+        "roomWord": "ruangan",
+        "roomWordPlural": "ruangan",
+        "tagline": "Sankt-Peterburg, malam tahun baru 1899. Sungai Neva yang membeku, wals terakhir abad ini, dan seorang count yang tak sempat bersulang.",
+        "intro": "Istana Zvezdin, Sankt-Peterburg, malam tahun baru 1899. Sungai Neva membeku dan di ruang dansa orkes memainkan wals terakhir abad ini. Tengah malam nanti Count Andrei Zvezdin akan bersulang. Dia tergeletak di perpustakaan, gelasnya masih penuh.",
+        "outro": "Lilin-lilin sudah padam dan abad baru telah dimulai. Rahasia terakhir abad yang lama sudah kamu pecahkan.",
+        "rooms": {
+          "Balzaal": "Ruang Dansa",
+          "Bibliotheek": "Perpustakaan",
+          "Kapel": "Kapel",
+          "IJsbaan": "Gelanggang Es",
+          "Serre": "Rumah Kaca",
+          "Spiegelzaal": "Ruang Cermin",
+          "Rookkamer": "Ruang Merokok",
+          "Keuken": "Dapur",
+          "Trappenhuis": "Tangga Utama",
+          "Eetzaal": "Ruang Makan",
+          "Garderobe": "Ruang Mantel",
+          "Koetshuis": "Rumah Kereta"
+        },
+        "furniture": {
+          "balalaika": "balalaika",
+          "matroesjka": "boneka matryoshka",
+          "juwelenei": "telur permata",
+          "schaatsen": "sepasang sepatu seluncur",
+          "ijszwaan": "angsa es",
+          "kaviaar": "mangkuk kaviar"
+        },
+        "suspects": {
+          "Gravin Jelena": "Countess Yelena",
+          "Componist Sergej": "Komponis Sergei",
+          "Schaatsster Vera": "Peseluncur Vera",
+          "Goudsmid Pavel": "Pandai Emas Pavel",
+          "Gouvernante Mabel": "Pengasuh Mabel",
+          "Luitenant Dmitri": "Letnan Dmitri",
+          "Hofmeester Fjodor": "Kepala Pelayan Fyodor",
+          "Fotografe Irina": "Fotografer Irina"
+        },
+        "suspectShort": {
+          "Gravin Jelena": "Yelena",
+          "Componist Sergej": "Sergei",
+          "Schaatsster Vera": "Vera",
+          "Goudsmid Pavel": "Pavel",
+          "Gouvernante Mabel": "Mabel",
+          "Luitenant Dmitri": "Dmitri",
+          "Hofmeester Fjodor": "Fyodor",
+          "Fotografe Irina": "Irina"
+        }
+      },
+      "safarilodge": {
+        "title": "Twiga Lodge",
+        "short": "Safari",
+        "victimName": "Pembuat Film Rupert Vane",
+        "roomWord": "area",
+        "roomWordPlural": "area",
+        "tagline": "Kenya, 1974. Sejuta wildebeest di padang, lodge yang penuh tamu, dan seorang pembuat film yang tak sempat melihat rekaman terakhirnya.",
+        "intro": "Twiga Lodge, Maasai Mara, Agustus 1974. Migrasi besar sudah dimulai: sejuta wildebeest melintas di dekat lodge dan setiap tenda terisi. Seusai api unggun, pembuat film Rupert Vane tergeletak di kamar gelap, di antara gulungan-gulungan filmnya.",
+        "outro": "Wildebeest terus bergerak dan lodge menjadi sunyi. Rekaman terakhir adalah milikmu.",
+        "rooms": {
+          "Veranda": "Beranda",
+          "Waterpoel": "Kubangan",
+          "Kampvuur": "Api Unggun",
+          "Bar": "Bar",
+          "Slaaptent": "Tenda Tidur",
+          "Landingsbaan": "Landasan",
+          "Uitkijktoren": "Menara Pantau",
+          "Keuken": "Dapur",
+          "Donkere kamer": "Kamar Gelap",
+          "Kantoor": "Kantor",
+          "Garage": "Garasi",
+          "Eetzaal": "Ruang Makan"
+        },
+        "furniture": {
+          "safariwagen": "mobil safari",
+          "klamboe": "kelambu",
+          "windzak": "kantong angin",
+          "acacia": "pohon akasia",
+          "giraf": "jerapah kayu",
+          "sisalmand": "keranjang sisal"
+        },
+        "suspects": {
+          "Eigenares Wambui": "Pemilik Lodge Wambui",
+          "Gids Otieno": "Pemandu Otieno",
+          "Dierenarts Njeri": "Dokter Hewan Njeri",
+          "Piloot Kiprono": "Pilot Kiprono",
+          "Chef Hamisi": "Chef Hamisi",
+          "Journaliste Amina": "Jurnalis Amina",
+          "Geluidsman Felix": "Perekam Suara Felix",
+          "Biologe Birgit": "Ahli Biologi Birgit"
+        },
+        "suspectShort": {
+          "Eigenares Wambui": "Wambui",
+          "Gids Otieno": "Otieno",
+          "Dierenarts Njeri": "Njeri",
+          "Piloot Kiprono": "Kiprono",
+          "Chef Hamisi": "Hamisi",
+          "Journaliste Amina": "Amina",
+          "Geluidsman Felix": "Felix",
+          "Biologe Birgit": "Birgit"
+        }
+      },
+      "hanok": {
+        "title": "Hanok Dalbit",
+        "short": "Hanok",
+        "victimName": "Tuan Yun Jae-ho",
+        "roomWord": "area",
+        "roomWordPlural": "area",
+        "tagline": "Joseon, 1795. Bulan panen yang purnama, keluarga yang pulang ke rumah, dan seorang tuan rumah yang tak sempat menyelesaikan puisi terakhirnya.",
+        "intro": "Hanok Dalbit, di pegunungan Joseon, musim gugur 1795. Ini Chuseok: bulan panen sedang purnama dan seluruh keluarga ada di rumah. Seusai pesta bulan, Tuan Yun Jae-ho tergeletak di paviliun dekat kolam, di samping sebuah puisi tiga baris.",
+        "outro": "Bulan kembali purnama di atas pegunungan. Puisinya sudah selesai, dan baris terakhirnya kamu yang menulis.",
+        "rooms": {
+          "Binnenplaats": "Pelataran",
+          "Theekamer": "Ruang Teh",
+          "Keuken": "Dapur",
+          "Studeerkamer": "Ruang Kerja",
+          "Paviljoen": "Paviliun",
+          "Bibliotheek": "Perpustakaan",
+          "Gastenkamer": "Kamar Tamu",
+          "Kruidentuin": "Kebun Herbal",
+          "Poort": "Gerbang",
+          "Voorouderhal": "Balai Leluhur",
+          "Kruikenterras": "Teras Guci",
+          "Voorraadkamer": "Gudang"
+        },
+        "furniture": {
+          "gayageum": "gayageum",
+          "kimchipot": "guci kimchi",
+          "janggu": "gendang",
+          "maanvaas": "guci bulan",
+          "inktsteen": "batu tinta",
+          "theetafel": "meja teh"
+        },
+        "suspects": {
+          "Vrouwe Kang": "Nyonya Kang",
+          "Student Sang-u": "Pelajar Sang-u",
+          "Geneesvrouw Ok-hwa": "Tabib Ok-hwa",
+          "Schilder Dae-ho": "Pelukis Dae-ho",
+          "Borduurster Yeon-i": "Penyulam Yeon-i",
+          "Tolk Hak-su": "Juru Bahasa Hak-su",
+          "Kokkin Bok-sun": "Koki Bok-sun",
+          "Marskramer Man-sik": "Pedagang Keliling Man-sik"
+        },
+        "suspectShort": {
+          "Vrouwe Kang": "Kang",
+          "Student Sang-u": "Sang-u",
+          "Geneesvrouw Ok-hwa": "Ok-hwa",
+          "Schilder Dae-ho": "Dae-ho",
+          "Borduurster Yeon-i": "Yeon-i",
+          "Tolk Hak-su": "Hak-su",
+          "Kokkin Bok-sun": "Bok-sun",
+          "Marskramer Man-sik": "Man-sik"
+        }
       }
     },
     "daily": [
@@ -1439,6 +1851,54 @@
         "Lelaki dari Laut",
         "Halaman dari Buku Log",
         "Malam Terakhir di Tanjung Kelabu"
+      ],
+      "oceaanstomer": [
+        "Komet di Atas Dek",
+        "Telegram Tanpa Nama",
+        "Brankas Sang Purser",
+        "Malam Terakhir Sebelum New York"
+      ],
+      "ryokan": [
+        "Mangkuk Teh Berusia Tiga Ratus Tahun",
+        "Cahaya di Dekat Sumber Air Panas",
+        "Langkah Kaki di Tengah Hujan",
+        "Tamu Terakhir Tsukikage"
+      ],
+      "fazenda": [
+        "Karung yang Tak Pernah Tiba",
+        "Jejak di Antara Buah Kopi",
+        "Malam Embun Beku",
+        "Pesta Terakhir di Beranda"
+      ],
+      "zeppelin": [
+        "Amplop di Atas Samudra",
+        "Mesin yang Mati",
+        "Langkah Kaki di Titian",
+        "Putaran Terakhir di Atas Rio"
+      ],
+      "poolstation": [
+        "Kursi Kosong Tengah Musim Dingin",
+        "Tali di Tengah Badai",
+        "Inti Es yang Hancur",
+        "Malam Terakhir di Bawah Aurora"
+      ],
+      "winterpaleis": [
+        "Telur Permata yang Kosong",
+        "Jejak di Gelanggang Es",
+        "Bayangan Cermin yang Janggal",
+        "Wals Terakhir Abad Ini"
+      ],
+      "safarilodge": [
+        "Rekaman Terakhir",
+        "Sepatu di Dekat Kubangan",
+        "Balon yang Kelebihan Satu",
+        "Malam Migrasi Besar"
+      ],
+      "hanok": [
+        "Baris Keempat",
+        "Guci yang Rasanya Lain",
+        "Cahaya di Ruang Teh",
+        "Bulan Terakhir di Dalbit"
       ]
     },
     "medals": {
@@ -1569,6 +2029,38 @@
       "vuurtoren": [
         "Cahaya Menyala Lagi",
         "Selesaikan semua bagian Mercusuar Tanjung Kelabu"
+      ],
+      "oceaanstomer": [
+        "Berlabuh di New York",
+        "Selesaikan semua bagian SS Halcyon"
+      ],
+      "ryokan": [
+        "Sumber Air Masih Mengepul",
+        "Selesaikan semua bagian Ryokan Tsukikage"
+      ],
+      "fazenda": [
+        "Pembukuan Beres",
+        "Selesaikan semua bagian Fazenda Boa Esperança"
+      ],
+      "zeppelin": [
+        "Tertambat di Tiang",
+        "Selesaikan semua bagian Kapal Udara Cirrus"
+      ],
+      "poolstation": [
+        "Matahari Kembali",
+        "Selesaikan semua bagian Stasiun Salib Selatan"
+      ],
+      "winterpaleis": [
+        "Abad Baru",
+        "Selesaikan semua bagian Istana Zvezdin"
+      ],
+      "safarilodge": [
+        "Migrasi Berlanjut",
+        "Selesaikan semua bagian Twiga Lodge"
+      ],
+      "hanok": [
+        "Puisinya Selesai",
+        "Selesaikan semua bagian Hanok Dalbit"
       ]
     },
     "quests": {
@@ -7813,6 +8305,3078 @@
           "🔆 Lensa Fresnel"
         ]
       ]
+    ],
+    "oceaanstomer": [
+      "Bagian I · Komet Halley",
+      "SS Halcyon, Mei 1910, di tengah Samudra Atlantik. Di dek promenade semua orang memandangi komet Halley. Kecuali pemilik kapal Ambrose Kingsley: dia tergeletak di ruang merokok, di dekat cerutu yang masih membara.",
+      "Komet itu tenggelam di balik cakrawala. Masih empat hari lagi menuju New York, dan pelakunya ikut berlayar bersamamu.",
+      "Kapal itu panjang dan sempit, dengan tangga di antara dek-deknya. Mulailah dari orang yang menyebutkan di ruangan mana dia berada; “tepat di sebelah” kemudi kapal hanya berlaku untuk kotak yang persis di sampingnya, tidak pernah diagonal.",
+      [
+        [
+          "Komet",
+          "Pukul sepuluh, komet itu berada di atas kapal. Pukul sepuluh lewat sepuluh, pemilik kapal tergeletak di ruang merokok.",
+          "☄️ Peta bintang"
+        ],
+        [
+          "Cerutu",
+          "Cerutu di asbak masih membara. Pemilik kapal tak pernah merokok setelah makan malam.",
+          "🚬 Cerutu Havana"
+        ],
+        [
+          "Kapten Grant di Anjungan",
+          "Sepanjang malam dia berdiri di anjungan, katanya. Topinya tergeletak di ruang merokok.",
+          "🧢 Topi kapten"
+        ],
+        [
+          "Pramugari Molly Menghitung Kunci",
+          "Dia punya kunci setiap kabin. Di gantungannya kurang satu kunci.",
+          "🔑 Kunci kabin"
+        ],
+        [
+          "Dek Promenade",
+          "Dua ratus orang menengadah ke langit. Tak seorang pun melihat ke pintu ruang merokok.",
+          "🪑 Kursi dek"
+        ],
+        [
+          "Profesor Lund Memotret",
+          "Malam itu dia membuat dua belas foto komet. Di foto keenam juga tampak seseorang di dek.",
+          "📷 Pelat kaca"
+        ],
+        [
+          "Markonis Arthur Mendengarkan",
+          "Pukul sepuluh, dia duduk di ruang radio dengan headphone terpasang, katanya. Headphone itu tergantung di kaitnya.",
+          "🎧 Headphone"
+        ],
+        [
+          "Seusai Hidangan Penutup",
+          "Seusai hidangan penutup, pemilik kapal bilang dia lelah. Dia tidak pergi ke suitenya, tetapi ke ruang merokok.",
+          "🍽️ Menu makan malam"
+        ]
+      ]
+    ],
+    "oceaanstomer-2": [
+      "Bagian II · Telegram Terakhir",
+      "Tengah malam, sebuah telegram datang dari New York. Markonis Arthur mencatatnya, tetapi tak mau bilang untuk siapa. Lampu di ruang radio menyala sepanjang malam.",
+      "Telegram itu sudah ditemukan. Telegram itu bukan untuk pemilik kapal, dan itu mengubah segalanya.",
+      "Di ruang radio sang markonis mendengar semuanya, dan semua orang membicarakan orang lain. Keterangan tentang dua orang: tentukan dulu posisi salah satunya.",
+      [
+        [
+          "Tengah Malam",
+          "Tepat pukul dua belas, telegraf mulai berdetak. Pesannya panjang, untuk ukuran telegram.",
+          "📡 Antena"
+        ],
+        [
+          "Markonis Arthur Bungkam",
+          "Dia tak boleh bicara soal pesan, katanya. Dia mengatakannya tiga kali.",
+          "📻 Pesawat penerima"
+        ],
+        [
+          "Kertas Coretan",
+          "Di mejanya ada secarik kertas berisi kata-kata setengah jadi. Ada tulisan “terjual”, dan “New York”.",
+          "🗒️ Kertas coretan"
+        ],
+        [
+          "Pramugari Molly Membawa Teh",
+          "Pukul setengah satu, dia membawa teh ke ruang radio. Tak ada yang memesan teh.",
+          "🫖 Baki teh"
+        ],
+        [
+          "Sebuah Balasan",
+          "Pukul satu, sebuah pesan dikirim balik ke New York. Tak ada yang tahu siapa yang membayarnya.",
+          "💵 Uang kertas dolar"
+        ],
+        [
+          "Suffragette Harriet Menulis",
+          "Setiap malam dia menulis surat untuk saudara perempuannya. Semalam dia menulis dua.",
+          "✉️ Kertas surat"
+        ],
+        [
+          "Masinis Kepala Doyle Naik ke Atas",
+          "Dia tak pernah naik ke atas, katanya. Pukul dua, dia berdiri di depan pintu ruang radio.",
+          "🛢️ Kaleng oli"
+        ],
+        [
+          "Nama di Telegram",
+          "Telegram itu bukan untuk pemilik kapal. Telegram itu untuk seseorang yang tidak tercantum di daftar penumpang.",
+          "📜 Daftar penumpang"
+        ]
+      ]
+    ],
+    "oceaanstomer-3": [
+      "Bagian III · Meja Sang Kapten",
+      "Setiap malam dua belas tamu makan di meja kapten. Menunya sembilan hidangan. Malam ini, setelah sup, satu kursi kosong.",
+      "Hidangan terakhir tak pernah disajikan. Siapa pun yang berdiri setelah sup punya alasan, dan sekarang kamu tahu alasannya.",
+      "Di meja makan setiap orang punya tempat tetap, tetapi setelah sup semua orang berpencar. Orang yang bilang di mana dia TIDAK berada juga memberitahumu sesuatu: langsung coret ruangan itu.",
+      [
+        [
+          "Susunan Tempat Duduk",
+          "Setiap malam dua belas kursi yang sama. Malam ini seseorang menukar kartu nama di meja.",
+          "🏷️ Kartu nama meja"
+        ],
+        [
+          "Kapten Grant Mengangkat Gelas",
+          "Dia bersulang untuk pemilik kapal. Hanya dia yang tidak menghabiskan isi gelasnya.",
+          "🥂 Gelas sampanye"
+        ],
+        [
+          "Sup",
+          "Kaldu bening, seperti setiap malam. Satu mangkuk kembali ke dapur kapal tanpa disentuh.",
+          "🥣 Mangkuk sup"
+        ],
+        [
+          "Penerbang Solange Datang Terlambat",
+          "Dia masuk setelah sup. Sarung tangannya berbau oli mesin.",
+          "🧤 Sarung tangan kulit"
+        ],
+        [
+          "Profesor Lund Bicara soal Bintang",
+          "Selama satu jam dia bicara tentang komet. Tak ada yang mendengarkan, kecuali satu tamu.",
+          "🔭 Teleskop"
+        ],
+        [
+          "Kursi Kosong",
+          "Setelah sup, seseorang keluar mencari udara segar di dek. Padahal dek ada di arah sebaliknya.",
+          "🪑 Kursi kosong"
+        ],
+        [
+          "Pembuat Topi Edna Berganti Topi",
+          "Di meja makan dia memakai topi berhias bulu burung unta. Setelah sup, topinya sudah lain.",
+          "📌 Jarum topi"
+        ],
+        [
+          "Hidangan Penutup",
+          "Dua belas mangkuk es krim dibawa ke meja. Sebelas kembali kosong, dan satu berisi sebuah kunci.",
+          "🍨 Mangkuk es krim"
+        ]
+      ]
+    ],
+    "oceaanstomer-4": [
+      "Bagian IV · Kabut",
+      "Dua hari kabut tebal. Peluit uap berbunyi setiap menit dan tak ada yang bisa melihat lebih jauh dari pagar dek. Di tengah kabut, seseorang berjalan di dek padahal tak punya urusan di sana.",
+      "Kabut menghilang dan peluit uap terdiam. Apa yang terjadi di dalam kabut kini tercatat di buku catatanmu.",
+      "Di dalam kabut kamu bisa mendengar siapa yang berdiri di dekatmu, meski tak bisa melihatnya. Taruh dulu tersangka yang pilihannya paling sedikit; sisanya menyusul.",
+      [
+        [
+          "Peluit Uap",
+          "Satu tiupan panjang setiap menit. Pukul tiga, tiupannya dua kali.",
+          "📯 Peluit uap"
+        ],
+        [
+          "Pramugari Molly Tak Melihat Apa-apa",
+          "Dia berjalan di dek membawa lentera. Dia tak melihat apa-apa, katanya, tetapi dia mendengar sesuatu.",
+          "🏮 Lentera dek"
+        ],
+        [
+          "Lonceng Kapal",
+          "Saat berkabut, lonceng berbunyi setiap setengah jam. Pukul dua, lonceng itu diam.",
+          "🔔 Lonceng kapal"
+        ],
+        [
+          "Masinis Kepala Doyle Memperlambat Kapal",
+          "Saat berkabut, kapal berlayar pelan. Pukul tiga, kapal melambat lagi, tanpa perintah dari anjungan.",
+          "⚙️ Roda kendali"
+        ],
+        [
+          "Kapten Grant Tidak Tidur",
+          "Dua malam dia terjaga di anjungan. Pada malam kedua, orang lain yang berdiri di depan kemudi.",
+          "🧭 Kompas"
+        ],
+        [
+          "Jas di Pagar Dek",
+          "Saat matahari terbit, sebuah jas basah tersampir di pagar dek. Tak ada yang kehilangan jas.",
+          "🧥 Jas basah"
+        ],
+        [
+          "Penerbang Solange dan Kabut",
+          "Penerbang tidak terbang menembus kabut, katanya. Dia masuk dari dek dengan rambut basah.",
+          "🧣 Syal sutra"
+        ],
+        [
+          "Kapal Lain",
+          "Di tengah kabut, sebuah kapal lain lewat sangat dekat. Dari dek belakang, seseorang memberi isyarat dengan lampu.",
+          "🔦 Lampu isyarat"
+        ]
+      ]
+    ],
+    "oceaanstomer-5": [
+      "Bagian V · Kalung Mutiara",
+      "Kalung mutiara milik pemilik kapal tak lagi ada di brankas purser. Kalung itu milik mendiang istrinya. Kapal tak bisa singgah di mana pun, jadi kalung itu masih ada di kapal.",
+      "Kalung mutiara itu kembali di brankas, kurang satu butir. Butir yang satu itu menunjuk ke ruang merokok.",
+      "Setelah pencurian, semua orang bilang mereka sendirian. Mulailah dari orang yang bilang dia sendirian; itu sekaligus menutup satu ruangan bagi yang lain.",
+      [
+        [
+          "Brankas Purser",
+          "Brankas itu terkunci, seperti biasa. Namun kalung mutiaranya sudah tidak ada.",
+          "🔐 Pintu brankas"
+        ],
+        [
+          "Pramugari Molly dan Kuncinya",
+          "Hanya purser yang memegang kunci brankas. Molly tahu di mana dia menaruhnya pada malam hari.",
+          "🗝️ Kunci brankas"
+        ],
+        [
+          "Kotak Topi",
+          "Kotak topi muat satu topi. Kotak yang ini juga muat seuntai kalung mutiara.",
+          "👒 Kotak topi"
+        ],
+        [
+          "Pembuat Topi Edna Tahu Harganya",
+          "Dia menjual topi, katanya, bukan perhiasan. Tapi dia tahu persis harga sebutir mutiara.",
+          "🔍 Lup perhiasan"
+        ],
+        [
+          "Suffragette Harriet di Brankas",
+          "Hanya namanya yang tercatat di daftar brankas. Dia mengantar pamflet ke sana, katanya.",
+          "📄 Pamflet"
+        ],
+        [
+          "Sebutir Mutiara",
+          "Di bawah ranjang di suite ada sebutir mutiara. Kalungnya masih hilang.",
+          "⚪ Mutiara lepas"
+        ],
+        [
+          "Markonis Arthur Sudah Tahu",
+          "Pukul delapan, purser menemukan pencurian itu. Pukul tujuh, Arthur sudah mengabarkannya ke New York.",
+          "📨 Kawat"
+        ],
+        [
+          "Profesor Lund Menimbang",
+          "Dia menimbang setiap peti pelat kaca. Satu peti lebih berat daripada kemarin.",
+          "⚖️ Timbangan"
+        ]
+      ]
+    ],
+    "oceaanstomer-6": [
+      "Bagian VI · Pesta Dansa",
+      "Di ruang dansa orang berdansa wals sampai larut malam. Orkes memainkan Strauss dan semua orang memakai pakaian terbaik. Ada satu penari yang terus berganti pasangan.",
+      "Orkes berkemas dan ruang dansa kosong. Penari yang terus berganti pasangan itu kini tak berganti lagi.",
+      "Di pesta dansa semua orang berputar dan tak ada yang diam. Keterangannya makin pelit: gunakan pensil, coret kotak yang tidak mungkin, lalu lihat apa yang tersisa.",
+      [
+        [
+          "Wals Pertama",
+          "Orkes memainkan wals pertama untuk pemilik kapal. Tak ada yang tahu apakah itu pantas.",
+          "🎻 Biola"
+        ],
+        [
+          "Penerbang Solange Berdansa",
+          "Dia berdansa dengan kapten, dengan profesor, dan dengan markonis. Dia hanya mengobrol dengan markonis.",
+          "💃 Kartu dansa"
+        ],
+        [
+          "Buku Dansa",
+          "Setiap wanita punya buku dansa. Di satu buku, nama yang sama tertulis berulang kali, dengan tiga tulisan tangan.",
+          "📒 Buku dansa"
+        ],
+        [
+          "Kapten Grant Tidak Berdansa",
+          "Selama empat puluh tahun dia berdansa di setiap pesta. Malam ini dia duduk di dekat pintu sepanjang malam.",
+          "🎖️ Medali"
+        ],
+        [
+          "Masinis Kepala Doyle Berjas Ekor",
+          "Tak ada yang pernah melihatnya tanpa baju kerja. Malam ini dia memakai jas berekor yang pas di badannya.",
+          "🤵 Jas berekor"
+        ],
+        [
+          "Lampu Padam",
+          "Saat wals terakhir, lampu padam. Ketika menyala lagi, sarung tangan seseorang sudah berganti.",
+          "💡 Bola lampu"
+        ],
+        [
+          "Pramugari Molly Membereskan",
+          "Seusai pesta, dia menemukan botol sampanye kosong di balik tirai. Dan sebuah denah palka.",
+          "🍾 Botol sampanye"
+        ],
+        [
+          "Dansa Terakhir",
+          "Pukul tiga, masih ada satu pasangan yang berdansa. Si pria diam saja, si wanita menghitung langkah.",
+          "👠 Sepatu dansa"
+        ]
+      ]
+    ],
+    "oceaanstomer-7": [
+      "Bagian VII · Kelas Tiga",
+      "Di kelas tiga, lima ratus imigran berlayar menuju kehidupan baru. Mereka tidur berjajar panjang, dengan koper di bawah ranjang. Salah satu dari mereka melihat sesuatu pada malam komet itu.",
+      "Di kelas tiga orang kembali bernyanyi. Apa yang dilihat anak laki-laki itu kini tercatat di laporan Van Dam.",
+      "Papannya makin besar dan kapalnya makin penuh. Kalau laporan menyebut sebuah ruangan kosong, seluruh ruangan itu tercoret untuk semua orang.",
+      [
+        [
+          "Lima Ratus Ranjang",
+          "Di kelas tiga, lima ratus orang tidur di satu palka. Tak ada yang benar-benar tidur.",
+          "🛏️ Ranjang susun"
+        ],
+        [
+          "Saksi",
+          "Malam itu seorang anak laki-laki dari Napoli melihat seseorang menuruni tangga. Dia tak tahu siapa, tapi dia tahu sepatunya.",
+          "👞 Sepatu kulit mengilap"
+        ],
+        [
+          "Suffragette Harriet Mengajar",
+          "Dia mengajari para wanita di kelas tiga bahasa Inggris. Kalimat pertamanya: saya mau pengacara.",
+          "📚 Buku bacaan"
+        ],
+        [
+          "Pramugari Molly Membawa Selimut",
+          "Penumpang kelas satu tak pernah turun ke kelas tiga. Molly turun, setiap malam, dengan setumpuk selimut.",
+          "🧺 Keranjang selimut"
+        ],
+        [
+          "Satu Koper Kelebihan",
+          "Setiap imigran membawa satu koper. Di bawah satu ranjang ada dua.",
+          "🧳 Koper"
+        ],
+        [
+          "Masinis Kepala Doyle Kenal Tangga Itu",
+          "Dari ruang mesin ke kelas tiga hanya ada satu tangga besi. Hanya para juru api yang mengenalnya.",
+          "🪜 Tangga besi"
+        ],
+        [
+          "Markonis Arthur Mencari Seseorang",
+          "Di kelas tiga dia menanyakan seorang pria. Pria itu tidak ada di daftar.",
+          "📋 Daftar imigran"
+        ],
+        [
+          "Yang Dilihat Anak Itu",
+          "Dia melihat sepatu itu sekali lagi, di ruang makan. Dia menunjuknya, lalu terdiam.",
+          "🧢 Topi anak laki-laki"
+        ]
+      ]
+    ],
+    "oceaanstomer-8": [
+      "Bagian VIII · Lampu-lampu New York",
+      "Gedung-gedung New York mulai terlihat di cakrawala. Besok Halcyon merapat di dermaga. Satu malam lagi di kapal untuk menutup kasus ini.",
+      "Van Dam memakai topinya, turun paling akhir lewat tangga kapal, lalu menghilang di tengah keramaian dermaga. Halcyon merapat di New York. Polisi sudah menunggu di dermaga, dan kamu tahu untuk siapa.",
+      "Kasus-kasus terakhir, hampir semuanya di papan besar. Jangan terpaku pada yang paling sulit: taruh dulu yang lain, maka untuk yang terakhir sering hanya tersisa satu kotak.",
+      [
+        [
+          "Daratan Terlihat",
+          "Pukul enam, petugas pengintai melihat cahaya pertama Long Island. Semua orang mengemasi kopernya, satu penumpang justru membongkarnya.",
+          "🗽 Kartu pos"
+        ],
+        [
+          "Kapten Grant Menulis Laporan",
+          "Pelayaran terakhirnya, laporan terakhirnya. Tentang malam komet itu dia menulis satu baris.",
+          "📘 Jurnal kapal"
+        ],
+        [
+          "Penerbang Solange Ingin Turun",
+          "Dia ingin turun paling dulu, demi pertunjukan udara. Dokumennya atas nama orang lain.",
+          "🛂 Paspor"
+        ],
+        [
+          "Profesor Lund Mencuci Foto",
+          "Di kabinnya dia mencuci pelat kaca terakhir. Di balik jendela ruang merokok ada sebuah wajah.",
+          "🧪 Cairan pengembang"
+        ],
+        [
+          "Pembuat Topi Edna Berkemas",
+          "Dua belas kotak topi naik ke kapal di Southampton. Tiga belas yang turun.",
+          "🎀 Pita topi"
+        ],
+        [
+          "Markonis Arthur Mengirim Pesan Terakhir",
+          "Pesan terakhirnya ditujukan ke polisi pelabuhan. Dia mengirim satu nama.",
+          "⚡ Pemancar percikan"
+        ],
+        [
+          "Masinis Kepala Doyle Naik ke Dek",
+          "Di depan pelabuhan dia mematikan mesin. Untuk pertama kalinya dalam lima hari, dia naik ke dek pada siang hari.",
+          "🔧 Kunci pas"
+        ],
+        [
+          "Ruang Merokok",
+          "Semuanya bermula di ruang merokok. Di sana pula semuanya berakhir.",
+          "📦 Kotak cerutu"
+        ]
+      ]
+    ],
+    "ryokan": [
+      "Bagian I · Bunga Sakura",
+      "Ryokan Tsukikage, di perbukitan dekat Kyoto, April 1925. Sakura sedang mekar dan semua kamar penuh. Pemilik ryokan Genzo Kurata tidak muncul untuk minum teh pagi. Dia tergeletak di rumah teh, di dekat mangkuk yang masih hangat.",
+      "Kelopak bunga berguguran di atas lumut. Para tamu tetap tinggal sampai polisi dari Kyoto tiba.",
+      "Ryokan adalah labirin pintu geser dan lorong. Mulailah dari orang yang menyebutkan di area mana dia berada; “tepat di sebelah” lentera batu hanya berlaku untuk kotak yang persis di sampingnya, tidak pernah diagonal.",
+      [
+        [
+          "Teh Pagi",
+          "Setiap pagi pukul enam, pemilik ryokan minum teh di rumah teh. Pagi ini tehnya menjadi dingin.",
+          "🍵 Teh pagi"
+        ],
+        [
+          "Nyonya Rumah Fumiko Menemukannya",
+          "Dialah yang pertama menemukannya. Sandalnya sudah ada di depan pintu rumah teh.",
+          "🚪 Pintu geser"
+        ],
+        [
+          "Kelopak di Atas Tikar",
+          "Di atas tatami ada kelopak bunga sakura. Pohon itu berdiri di sisi lain taman.",
+          "🌸 Kelopak sakura"
+        ],
+        [
+          "Koki Takeshi Memasak",
+          "Dia sudah di dapur sejak pukul empat, katanya. Api di bawah nasi baru dinyalakan pukul setengah enam.",
+          "🍚 Panci nasi"
+        ],
+        [
+          "Lentera Batu",
+          "Lentera di taman menyala sepanjang malam. Semalam lentera itu padam pukul tiga.",
+          "🕯️ Puntung lilin"
+        ],
+        [
+          "Fotografer Sachiko Saat Fajar",
+          "Dia memotret bunga sakura pada cahaya pertama. Di fotonya, pintu rumah teh terbuka.",
+          "📷 Kamera lipat"
+        ],
+        [
+          "Buku Tamu",
+          "Setiap tamu menulis namanya di buku itu. Semalam ada yang menulis namanya dua kali.",
+          "📖 Buku tamu"
+        ],
+        [
+          "Insinyur Isamu Datang Terlalu Awal",
+          "Dia punya janji dengan pemilik ryokan pukul tujuh. Dia datang pukul setengah tujuh, membawa kontrak.",
+          "📃 Kontrak"
+        ]
+      ]
+    ],
+    "ryokan-2": [
+      "Bagian II · Upacara Minum Teh",
+      "Master Teh Chiyo mengadakan upacara untuk menghormati pemilik ryokan. Empat tamu berlutut di rumah teh. Setiap gerakan sudah ditentukan, tetapi tetap ada yang meletakkan mangkuk dengan cara yang salah.",
+      "Upacara selesai dan mangkuk-mangkuk sudah dicuci. Satu mangkuk berdiri salah sepanjang upacara, dan kamu tahu sebabnya.",
+      "Di rumah teh setiap orang berlutut di tempat yang tetap. Keterangan tentang dua orang: tentukan dulu posisi salah satunya.",
+      [
+        [
+          "Empat Tamu, Lima Mangkuk",
+          "Upacara itu untuk empat tamu. Ada lima mangkuk yang disiapkan.",
+          "🥣 Mangkuk kelima"
+        ],
+        [
+          "Master Teh Chiyo Mengocok Teh",
+          "Selama empat puluh tahun dia mengocok teh dengan kocokan yang sama. Hari ini dengan yang baru.",
+          "🎋 Kocokan bambu"
+        ],
+        [
+          "Teko Besi",
+          "Air mendidih di dalam teko besi. Seseorang mengisinya dengan air dari sumber air panas.",
+          "🫖 Teko besi"
+        ],
+        [
+          "Pengukir Kayu Hiroshi Membuat Sketsa",
+          "Dia membuat sketsa upacara itu. Di sketsanya ada seseorang yang tidak ada di dalam.",
+          "✏️ Buku sketsa"
+        ],
+        [
+          "Memutar Mangkuk",
+          "Sebelum minum, mangkuk diputar dua kali. Seorang tamu memutarnya tiga kali.",
+          "🏺 Mangkuk raku"
+        ],
+        [
+          "Ahli Botani Evelyn Tahu Aturannya",
+          "Katanya dia belum pernah melihat upacara minum teh. Dia berlutut tanpa ada yang mencontohkan.",
+          "👘 Kimono"
+        ],
+        [
+          "Kue Manis",
+          "Teh selalu disajikan dengan kue manis. Di satu piring kecil tidak ada kuenya.",
+          "🍡 Dango"
+        ],
+        [
+          "Nyonya Rumah Fumiko Tidak Menuang",
+          "Dua puluh tahun dia menuangkan air untuk pemilik ryokan. Pagi ini tidak, katanya, untuk pertama kalinya.",
+          "🫗 Kendi air"
+        ]
+      ]
+    ],
+    "ryokan-3": [
+      "Bagian III · Mangkuk Teh yang Berharga",
+      "Di ceruk kamar tamu ada mangkuk teh berusia tiga ratus tahun. Mangkuk itu kebanggaan ryokan. Pagi ini ceruknya kosong.",
+      "Mangkuk teh itu kembali di ceruknya, utuh dan bersih. Pemilik ryokan tak pernah mau menjualnya, dan ada yang tahu itu.",
+      "Semua orang tahu di mana mangkuk itu berada, dan semua orang menyebut di mana mereka sendiri TIDAK berada. Orang yang bilang di mana dia TIDAK berada juga memberitahumu sesuatu: langsung coret area itu.",
+      [
+        [
+          "Ceruk Kosong",
+          "Selama tiga ratus tahun mangkuk itu ada di ceruk. Pagi ini yang ada sekuntum bunga.",
+          "🌼 Bunga"
+        ],
+        [
+          "Nyonya Rumah Fumiko Membersihkan Debu",
+          "Setiap hari dia membersihkan debu di ceruk itu. Kemarin dia menyuruh seorang tamu melakukannya.",
+          "🪶 Kemoceng"
+        ],
+        [
+          "Kotak Berpita",
+          "Mangkuk itu disimpan dalam kotak kayu berpita. Kotaknya masih ada; pitanya diikat dengan cara lain.",
+          "📦 Kotak kayu"
+        ],
+        [
+          "Insinyur Isamu Menawar",
+          "Dia menawarkan uang yang sangat banyak untuk mangkuk itu. Pemilik ryokan menertawakannya.",
+          "💴 Uang kertas"
+        ],
+        [
+          "Fotografer Sachiko dan Mangkuk Itu",
+          "Untuk majalahnya dia memotret mangkuk itu. Di foto ada retakan yang sekarang sudah tidak ada.",
+          "🖼️ Cetakan foto"
+        ],
+        [
+          "Ahli Botani Evelyn Mengirim Paket",
+          "Dia mengirim bunga kering ke London. Paketnya berat, untuk ukuran bunga.",
+          "🗃️ Kotak herbarium"
+        ],
+        [
+          "Pengukir Kayu Hiroshi Meniru",
+          "Dia membuat cetakan dari benda-benda kuno. Di kamarnya ada balok kayu berbentuk mangkuk.",
+          "🪵 Balok kayu"
+        ],
+        [
+          "Dua Mangkuk",
+          "Di dapur ada dua mangkuk yang mirip. Salah satunya berusia tiga ratus tahun.",
+          "🔍 Kaca pembesar"
+        ]
+      ]
+    ],
+    "ryokan-4": [
+      "Bagian IV · Onsen",
+      "Air hangat dari sumber itu untuk para tamu. Tengah malam, gerbangnya ditutup. Tetapi pukul tiga dini hari masih ada cahaya di dekat sumber air panas.",
+      "Pagi hari sumber air panas kembali mengepul dengan tenang. Cahaya pukul tiga itu bukan kekeliruan.",
+      "Di dalam uap onsen kamu tak bisa melihat siapa pun dengan jelas, tetapi kamu bisa mendengar siapa yang duduk di dekatmu. Taruh dulu tersangka yang pilihannya paling sedikit; sisanya menyusul.",
+      [
+        [
+          "Cahaya Pukul Tiga",
+          "Sumber air panas ditutup tengah malam. Pukul tiga, sebuah lampu menyala.",
+          "🏮 Lampu kertas"
+        ],
+        [
+          "Tukang Kebun Goro Mengunci",
+          "Setiap malam dia menutup gerbang sumber air panas. Semalam gerbang itu sedikit terbuka.",
+          "⛓️ Rantai gerbang"
+        ],
+        [
+          "Bak Kayu",
+          "Di dekat sumber air ada sepuluh bak kayu, tertelungkup dengan rapi. Satu berdiri tegak, penuh air.",
+          "🪣 Bak kayu"
+        ],
+        [
+          "Koki Takeshi Tidak Berendam",
+          "Seusai kerja dia selalu berendam di sumber air panas. Semalam tidak, katanya; semalam dia lelah.",
+          "🍶 Botol sake"
+        ],
+        [
+          "Handuk Basah",
+          "Di ruang cuci ada tiga handuk basah. Hanya dua tamu yang berendam.",
+          "🧺 Handuk basah"
+        ],
+        [
+          "Insinyur Isamu Mengukur Air",
+          "Dia mengukur suhu sumber air panas, katanya. Untuk hotel pemandian di dekat stasiun baru.",
+          "🌡️ Termometer air"
+        ],
+        [
+          "Sebelah Geta",
+          "Di jalan setapak menuju sumber air ada sebelah sandal kayu. Pasangannya ada di dekat dermaga.",
+          "🩴 Sebelah geta"
+        ],
+        [
+          "Di Dalam Uap",
+          "Di dalam uap tak ada yang melihat siapa yang duduk di sana. Tetapi semua mendengar satu orang berdiri dan pergi.",
+          "🧼 Sabun batang"
+        ]
+      ]
+    ],
+    "ryokan-5": [
+      "Bagian V · Hutan Bambu",
+      "Di belakang ryokan ada hutan bambu. Di sana selalu terdengar gemeresik, bahkan saat tak ada angin. Insinyur Isamu ingin membangun jalur kereta api yang menembusnya.",
+      "Hutan bambu kembali bergemeresik seperti biasa. Tak akan ada jalur kereta yang menembusnya, dan peta sang insinyur sudah masuk tungku.",
+      "Di antara batang bambu kamu hanya bisa melihat orang yang berdiri persis di dekatmu. Mulailah dari orang yang bilang dia sendirian; itu sekaligus menutup satu area bagi yang lain.",
+      [
+        [
+          "Gemeresik Tanpa Angin",
+          "Di taman tidak ada angin sama sekali. Tetapi hutan bambu bergemeresik.",
+          "🎋 Batang bambu"
+        ],
+        [
+          "Insinyur Isamu Memasang Patok",
+          "Dengan patok-patok putih dia menandai jalur kereta. Pagi ini patok-patok itu bergeser satu meter.",
+          "📍 Patok ukur"
+        ],
+        [
+          "Tukang Kebun Goro Memangkas",
+          "Sudah lima puluh tahun dia memangkas bambu. Batang ini digergaji kemarin, dan bukan olehnya.",
+          "🪚 Gergaji"
+        ],
+        [
+          "Peta Jalur Kereta",
+          "Di peta, ryokan berdiri tepat di jalur kereta. Seseorang menggambar lingkaran merah di sekelilingnya.",
+          "🗺️ Peta"
+        ],
+        [
+          "Fotografer Sachiko Tersesat",
+          "Dia ingin memotret cahaya di antara batang bambu. Dia baru kembali setelah dua jam, tanpa foto.",
+          "🎞️ Rol film"
+        ],
+        [
+          "Jalan ke Dermaga",
+          "Sebuah jalan setapak sempit melintasi hutan menuju sungai. Lumut di jalan itu terinjak-injak.",
+          "🍃 Lumut terinjak"
+        ],
+        [
+          "Ahli Botani Evelyn Mengumpulkan",
+          "Dia mengumpulkan bambu untuk rumah kaca di London. Di kotak timahnya juga ada selembar kertas yang tergulung.",
+          "🫙 Kotak spesimen"
+        ],
+        [
+          "Pengukir Kayu Hiroshi Menggambar Hutan",
+          "Di cetakannya tentang hutan itu ada seseorang yang membawa payung kertas. Katanya, itu karangannya sendiri.",
+          "🌂 Payung kertas"
+        ]
+      ]
+    ],
+    "ryokan-6": [
+      "Bagian VI · Musim Hujan",
+      "Tiga minggu hujan. Tak ada yang keluar dan para tamu duduk berdesakan. Tetapi setiap pagi ada jejak kaki basah di lorong.",
+      "Hujan berhenti dan lorong-lorong mengering. Jejak kaki basah itu milik seseorang yang setiap malam berjalan ke dermaga.",
+      "Saat hujan, semua orang di dalam dan semua orang mengatakan hal yang hampir sama. Keterangannya makin pelit: gunakan pensil, coret kotak yang tidak mungkin, lalu lihat apa yang tersisa.",
+      [
+        [
+          "Tiga Minggu Hujan",
+          "Hujan turun sejak hari Selasa. Taman sudah menjadi kolam.",
+          "☔ Payung"
+        ],
+        [
+          "Jejak Kaki Basah",
+          "Setiap pagi ada jejak kaki basah di lorong. Jejak itu datang dari luar dan menuju dapur.",
+          "🧦 Kaus kaki basah"
+        ],
+        [
+          "Nyonya Rumah Fumiko Menghitung Payung",
+          "Di dekat pintu ada sepuluh payung kertas. Setiap pagi satu di antaranya basah.",
+          "🧮 Sempoa"
+        ],
+        [
+          "Koki Takeshi Mengeringkan Ikan",
+          "Saat hujan dia mengeringkan ikan di gudang. Kemarin di sana juga tergantung sebuah jas basah.",
+          "🐟 Ikan kering"
+        ],
+        [
+          "Ahli Botani Evelyn Menulis Surat",
+          "Setiap hari dia menulis surat ke London. Pos tidak berangkat, dan salah satu suratnya sudah dibuka.",
+          "✉️ Surat"
+        ],
+        [
+          "Futon di Lorong",
+          "Seorang tamu tidur di atas futon di lorong, karena kamarnya bocor. Kamarnya tidak bocor.",
+          "🛏️ Futon"
+        ],
+        [
+          "Insinyur Isamu Ingin Pergi",
+          "Kereta ke Kyoto tidak jalan dalam hujan seperti ini. Setiap hari dia bilang ingin pergi, dan dia tetap tinggal.",
+          "🎫 Tiket kereta"
+        ],
+        [
+          "Tukang Kebun Goro Menggali",
+          "Saat hujan dia menggali parit agar air mengalir pergi. Satu parit mengarah ke dermaga, padahal di sana tak semestinya ada parit.",
+          "⛏️ Beliung"
+        ]
+      ]
+    ],
+    "ryokan-7": [
+      "Bagian VII · Pesta Bulan",
+      "Musim gugur tiba dan bulan purnama. Para tamu duduk di beranda dengan kue beras dan sake. Semua orang memandang bulan di atas sungai, kecuali satu tamu.",
+      "Bulan tenggelam di balik pegunungan. Tamu yang tidak menengadah itu sedang memandangi rumah teh.",
+      "Papannya makin besar, tetapi malamnya terang. Kalau laporan menyebut sebuah area kosong, seluruh area itu tercoret untuk semua orang.",
+      [
+        [
+          "Perahu Tanpa Lampu",
+          "Pukul sembilan, bulan berada di atas sungai. Pukul sepuluh, sebuah perahu bersandar di dermaga, tanpa lampu.",
+          "🛶 Perahu dayung"
+        ],
+        [
+          "Lima Belas Kue",
+          "Lima belas kue beras di atas piring, sebagaimana mestinya. Yang ada empat belas.",
+          "🍘 Kue beras"
+        ],
+        [
+          "Master Teh Chiyo Menulis Puisi",
+          "Dia menulis puisi tentang bulan. Di dalamnya ada sesuatu yang hanya bisa diketahui pelaku.",
+          "🖌️ Kuas"
+        ],
+        [
+          "Pengukir Kayu Hiroshi Mengukir Bulan",
+          "Setiap tahun dia mengukir bulan di kayu. Tahun ini dia juga mengukir rumah teh, dengan cahaya di dalamnya.",
+          "🎨 Batu tinta"
+        ],
+        [
+          "Sake",
+          "Koki Takeshi menuangkan sake untuk semua orang. Satu cawan tetap penuh.",
+          "🍶 Cawan sake"
+        ],
+        [
+          "Nyonya Rumah Fumiko dan Kunci",
+          "Di pesta bulan dia memakai kimono terindahnya. Di lengan kimononya ada kunci rumah teh.",
+          "🗝️ Kunci rumah teh"
+        ],
+        [
+          "Fotografer Sachiko dan Bulan",
+          "Memotret bulan butuh satu menit penuh. Dalam satu menit itu, seseorang berjalan melintasi gambar.",
+          "📸 Foto bulan"
+        ],
+        [
+          "Yang Tidak Menengadah",
+          "Semua orang memandang bulan. Satu tamu sepanjang malam memandangi rumah teh yang gelap.",
+          "🌕 Bulan purnama"
+        ]
+      ]
+    ],
+    "ryokan-8": [
+      "Bagian VIII · Salju Pertama",
+      "Salju pertama turun di atas lumut dan lentera-lentera dinyalakan lebih awal. Besok jalan ke Kyoto ditutup. Satu malam lagi di ryokan, dengan tamu-tamu yang sama seperti di musim semi.",
+      "Van Dam melilitkan syalnya, membungkuk kepada nyonya rumah, lalu berjalan menembus salju ke stasiun. Salju menyelimuti taman dan sumber air panas mengepul. Setiap tamu boleh pulang, kecuali satu.",
+      "Kasus-kasus terakhir, hampir semuanya di papan besar. Jangan terpaku pada yang paling sulit: taruh dulu yang lain, maka untuk yang terakhir sering hanya tersisa satu kotak.",
+      [
+        [
+          "Salju di Atas Lumut",
+          "Tukang Kebun Goro menutupi lumut dengan jerami. Di bawah jerami ada sesuatu yang tidak tumbuh.",
+          "🌾 Jerami"
+        ],
+        [
+          "Kereta Terakhir",
+          "Besok kereta terakhir berangkat ke Kyoto. Ada delapan tamu dan tujuh tiket.",
+          "🚂 Jadwal kereta"
+        ],
+        [
+          "Koki Takeshi Memasak Perpisahan",
+          "Dia memasak makan malam terakhir tahun ini. Untuk satu tamu, dia memasak sesuatu yang berbeda.",
+          "🍲 Rebusan"
+        ],
+        [
+          "Ahli Botani Evelyn Berkemas",
+          "Dia membawa dua belas kantong benih ke London. Satu kantong berbunyi kalau diguncang.",
+          "🌱 Kantong benih"
+        ],
+        [
+          "Insinyur Isamu Menggambar Ulang",
+          "Di peta barunya, jalur kereta melewati sisi ryokan, bukan menembusnya. Dia sudah menggambarnya sejak musim semi.",
+          "📐 Penggaris segitiga"
+        ],
+        [
+          "Nyonya Rumah Fumiko Menutup Buku",
+          "Dia menutup buku tamu tahun ini. Di halaman pertama ada nama yang dia tulis sendiri.",
+          "📕 Daftar tamu"
+        ],
+        [
+          "Master Teh Chiyo Menyeduh Teh Terakhir",
+          "Upacara terakhir tahun ini, untuk semua tamu. Dia meletakkan mangkuk tua itu dan memperhatikan siapa yang tersentak.",
+          "🍵 Teh terakhir"
+        ],
+        [
+          "Rumah Teh",
+          "Semuanya bermula di rumah teh. Di sana pula semuanya berakhir.",
+          "🎐 Lonceng angin"
+        ]
+      ]
+    ],
+    "fazenda": [
+      "Bagian I · Pesta Panen",
+      "Fazenda Boa Esperança, São Paulo, Juni 1926. Panen sudah selesai dan lantai jemur penuh buah kopi. Juragan kopi Augusto Valadares tidak muncul di pesta panen. Dia tergeletak di ruang sangrai, di antara karung-karung.",
+      "Pesta dibatalkan. Para pemetik pulang, tetapi para tamu tetap di fazenda sampai polisi dari Campinas tiba.",
+      "Di fazenda, bangunan-bangunannya berjauhan, tetapi di pesta semua orang berkumpul. Mulailah dari orang yang menyebutkan di area mana dia berada; “tepat di sebelah” penggiling kopi hanya berlaku untuk kotak yang persis di sampingnya, tidak pernah diagonal.",
+      [
+        [
+          "Pesta Panen",
+          "Lantai jemur dihiasi lampu-lampu kecil. Sang juragan kopi dijadwalkan berpidato pukul delapan.",
+          "💡 Lampu hias"
+        ],
+        [
+          "Di Ruang Sangrai",
+          "Dia tergeletak di antara karung-karung, di dekat tungku yang panas. Tungku itu seharusnya sudah padam.",
+          "🔥 Tungku sangrai"
+        ],
+        [
+          "Dona Celeste Menunggu",
+          "Pukul delapan, dia sudah siap untuk pidato ayahnya. Pukul delapan lewat seperempat, dia pergi mencarinya.",
+          "📄 Naskah pidato"
+        ],
+        [
+          "Mandor Joaquim Membayar",
+          "Di pesta, para pemetik menerima upah mereka. Amplop-amplop upah sudah siap, kecuali satu.",
+          "💰 Amplop upah"
+        ],
+        [
+          "Burung Nuri",
+          "Burung nuri di beranda selalu meneriakkan nama majikannya. Malam ini dia meneriakkan nama lain.",
+          "🦜 Burung nuri"
+        ],
+        [
+          "Pianis Zélia Bermain",
+          "Sepanjang malam dia bermain di beranda, katanya. Pukul setengah delapan, piano itu berhenti.",
+          "🎹 Piano"
+        ],
+        [
+          "Pembeli Kopi Mulder Berhitung",
+          "Dia datang untuk membeli seluruh hasil panen. Di buku kecilnya harganya sudah tercatat, dari sebelum panen.",
+          "📒 Buku harga"
+        ],
+        [
+          "Guru Giulia dan Anak-anak",
+          "Pukul delapan, dia menidurkan anak-anak. Seorang anak bilang ada lampu menyala di ruang sangrai.",
+          "🖍️ Gambar anak"
+        ]
+      ]
+    ],
+    "fazenda-2": [
+      "Bagian II · Lantai Jemur",
+      "Di lantai jemur, buah kopi dijemur di bawah matahari dalam barisan panjang. Setiap hari buah itu dibalik dengan garu kayu. Semalam ada yang menyeret sesuatu hingga meninggalkan jejak di tengahnya.",
+      "Buah kopi kembali berbaris rapi. Jejak itu membentang dari lantai jemur ke gudang, lalu kembali lagi.",
+      "Di lantai jemur semua orang bekerja berbaris dan semua orang bisa melihat yang lain. Keterangan tentang dua orang: tentukan dulu posisi salah satunya.",
+      [
+        [
+          "Jejak",
+          "Ada jejak yang membelah barisan buah kopi. Jejak itu terlalu sempit untuk gerobak.",
+          "🛞 Roda gerobak sorong"
+        ],
+        [
+          "Garu Kayu",
+          "Di fazenda ada sepuluh garu. Yang bersandar di dinding hanya sembilan.",
+          "🧹 Garu kayu"
+        ],
+        [
+          "Mandor Joaquim Membalik Buah Kopi",
+          "Sudah tiga puluh tahun dia membalik buah kopi dari utara ke selatan. Kemarin ada yang membaliknya ke arah sebaliknya.",
+          "🧭 Mawar angin"
+        ],
+        [
+          "Agronom Hideo Mengukur",
+          "Setiap hari dia mengukur seberapa kering buah kopi itu. Kemarin dia mencatat angka yang mustahil.",
+          "📏 Pengukur kadar air"
+        ],
+        [
+          "Hujan Akan Turun",
+          "Kalau hujan, buah kopi harus dibawa masuk. Pukul dua, seseorang membunyikan lonceng, padahal langit cerah.",
+          "🔔 Lonceng tanda bahaya"
+        ],
+        [
+          "Pencicip Kopi Bento Mencicipi",
+          "Dia sudah mencicipi buah kopi selagi masih di lantai jemur. Katanya, barisan di dekat gudang rasanya lain.",
+          "🫘 Biji kopi"
+        ],
+        [
+          "Dokter Lúcia Datang Larut",
+          "Dia datang larut malam untuk seorang pemetik yang sakit. Tidak ada pemetik yang sakit.",
+          "🩺 Stetoskop"
+        ],
+        [
+          "Noda di Gagang Pintu",
+          "Di pintu gudang ada noda sari buah kopi segar. Di gagang pintunya juga.",
+          "🍒 Buah kopi"
+        ]
+      ]
+    ],
+    "fazenda-3": [
+      "Bagian III · Pesta Juni",
+      "Hari ini pesta São João. Di halaman api unggun menyala dan bendera-bendera kecil tergantung di mana-mana. Dalam dansa quadrille, ada satu penari yang kehilangan pasangan.",
+      "Api padam dan bendera-bendera kecil diturunkan dari talinya. Penari tanpa pasangan itu punya janji lain malam itu.",
+      "Semua orang berdiri melingkar di sekitar api, dan semua orang tahu di mana mereka TIDAK berdiri. Orang yang bilang di mana dia TIDAK berada juga memberitahumu sesuatu: langsung coret area itu.",
+      [
+        [
+          "Api Unggun",
+          "Pukul sembilan, api dinyalakan. Seseorang melemparkan setumpuk kertas ke dalamnya.",
+          "🔥 Api unggun"
+        ],
+        [
+          "Quadrille",
+          "Delapan pasangan menarikan quadrille. Di tengah tarian tinggal tujuh, dan satu penari sendirian.",
+          "🪗 Akordeon"
+        ],
+        [
+          "Guru Giulia Menggunting Bendera",
+          "Bersama anak-anak dia menggunting seratus bendera kecil. Satu bendera dibuat dari halaman buku kas.",
+          "✂️ Gunting"
+        ],
+        [
+          "Kue Jagung",
+          "Di pesta semua orang makan kue jagung. Di dapur ada satu kue yang tak boleh dipotong siapa pun.",
+          "🌽 Kue jagung"
+        ],
+        [
+          "Pianis Zélia Bernyanyi",
+          "Dia menyanyikan lagu São João, seperti setiap tahun. Tahun ini dia menyanyikan satu bait yang tak dikenal siapa pun.",
+          "🎼 Partitur"
+        ],
+        [
+          "Pembeli Kopi Mulder Tidak Menari",
+          "Dia tidak menari, katanya; dia orang Belanda. Tapi pukul sepuluh, kursinya di dekat api kosong.",
+          "👒 Topi jerami"
+        ],
+        [
+          "Lentera di Kebun",
+          "Saat kembang api, sebuah lentera bergerak melintasi kebun kopi. Tak ada yang masuk ke kebun pada malam hari.",
+          "🏮 Lentera"
+        ],
+        [
+          "Dona Celeste Menari Sendirian",
+          "Dia menarikan quadrille bersama sang mandor. Setelah putaran kedua, dia berdiri sendirian.",
+          "🎀 Pita rambut"
+        ]
+      ]
+    ],
+    "fazenda-4": [
+      "Bagian IV · Kereta Kopi",
+      "Tiga ratus karung kopi diangkut kereta ke pelabuhan Santos. Mandor Joaquim menghitungnya saat dimuat. Di pelabuhan yang tiba dua ratus sembilan puluh sembilan.",
+      "Kereta sudah kembali dan karung-karung sudah dihitung. Karung yang hilang itu tak pernah meninggalkan fazenda.",
+      "Saat memuat, semua orang berdiri berbaris di sepanjang gerbong. Taruh dulu tersangka yang pilihannya paling sedikit; sisanya menyusul.",
+      [
+        [
+          "Tiga Ratus Karung",
+          "Tiga ratus karung di surat muatan. Dua ratus sembilan puluh sembilan di pelabuhan.",
+          "🧾 Surat muatan"
+        ],
+        [
+          "Mandor Joaquim Menghitung",
+          "Dia menghitung setiap karung dengan satu garis kapur di gerbong. Ada tiga ratus garis.",
+          "✏️ Kapur tulis"
+        ],
+        [
+          "Peron",
+          "Kereta berhenti satu jam di peron fazenda. Selama satu jam itu, peron tak pernah kosong.",
+          "🪧 Papan stasiun"
+        ],
+        [
+          "Pembeli Kopi Mulder Ikut Berangkat",
+          "Dia ikut di gerbong terakhir, di antara karung-karung. Katanya dia ingin mencium aroma kopinya.",
+          "🧳 Tas perjalanan"
+        ],
+        [
+          "Cap yang Dicat Ulang",
+          "Setiap karung diberi cap fazenda. Di satu karung, cap lain dicat di atasnya.",
+          "🖌️ Kuas cap"
+        ],
+        [
+          "Agronom Hideo Mengirim Sampel",
+          "Dia mengirim sekantong buah kopi ke Campinas, untuk diteliti. Kantongnya besar, untuk ukuran sampel.",
+          "🧪 Kantong sampel"
+        ],
+        [
+          "Gudang Kosong",
+          "Setelah pemuatan, gudang kosong. Di pojok masih ada satu karung, di balik tumpukan goni.",
+          "📦 Karung goni"
+        ],
+        [
+          "Pencicip Kopi Bento di Santos",
+          "Di pelabuhan dia mencicipi setiap karung. Katanya, karungnya kelebihan satu, bukan kurang satu.",
+          "☕ Cangkir cicip"
+        ]
+      ]
+    ],
+    "fazenda-5": [
+      "Bagian V · Uji Cita Rasa",
+      "Di bursa kopi Santos, Pencicip Kopi Bento mencicipi setiap partai. Satu partai lebih baik daripada semua yang lain. Tak ada yang tahu dari pohon mana asalnya.",
+      "Partai itu laku dengan harga tertinggi tahun ini. Dari pohon mana asalnya, kini kamu juga tahu.",
+      "Di ruang cicip setiap orang berdiri sendiri di belakang barisan cangkirnya. Mulailah dari orang yang bilang dia sendirian; itu sekaligus menutup satu area bagi yang lain.",
+      [
+        [
+          "Cangkir Ketujuh",
+          "Seratus cangkir berbaris. Di cangkir ketujuh, sang pencicip tak berkata apa-apa lagi.",
+          "☕ Cangkir ketujuh"
+        ],
+        [
+          "Pencicip Kopi Bento Tidak Meludah",
+          "Dia menyeruput, mencicipi, lalu meludah, seratus kali sehari. Untuk partai ini dia tidak meludah.",
+          "🥄 Sendok perak"
+        ],
+        [
+          "Nomor di Karung",
+          "Setiap partai punya nomor. Nomor ini tidak ada di pembukuan fazenda.",
+          "🔢 Nomor partai"
+        ],
+        [
+          "Dona Celeste Mencarinya",
+          "Dia mencari nomor itu di buku kas. Halaman bulan Juli sudah disayat.",
+          "📕 Buku kas"
+        ],
+        [
+          "Pembeli Kopi Mulder Menawar",
+          "Dia menawar partai itu sebelum mencicipinya. Dia menawar dua kali lipat.",
+          "🔨 Palu lelang"
+        ],
+        [
+          "Agronom Hideo Mengenalinya",
+          "Satu teguk sudah cukup. Itu kopi dari pohon barunya, dan pohon itu belum pernah dipanen.",
+          "🌿 Pohon muda"
+        ],
+        [
+          "Pianis Zélia di Santos",
+          "Selama seminggu dia bermain di sebuah hotel di Santos. Hotelnya bersebelahan dengan bursa.",
+          "🗝️ Kunci hotel"
+        ],
+        [
+          "Satu Sampel Kelebihan",
+          "Ada sepuluh sampel yang datang dari fazenda. Di ruang cicip ada sebelas.",
+          "🫙 Stoples sampel"
+        ]
+      ]
+    ],
+    "fazenda-6": [
+      "Bagian VI · Embun Beku Malam",
+      "Satu malam embun beku bisa menghabiskan seluruh panen. Sang mandor menyalakan api-api kecil di kebun untuk melawan dingin. Semalam ada yang berjalan di antara pohon kopi membawa lentera.",
+      "Matahari terbit dan pohon-pohon kopi selamat, kecuali satu barisan. Barisan itu berada di dekat pohon baru milik Hideo.",
+      "Saat dingin semua orang merapat ke dekat api, dan tak ada yang memperhatikan orang lain. Keterangannya makin pelit: gunakan pensil, coret kotak yang tidak mungkin, lalu lihat apa yang tersisa.",
+      [
+        [
+          "Embun Beku Datang",
+          "Tengah malam, termometer di beranda turun di bawah nol. Di fazenda kopi, itu hampir tak pernah terjadi.",
+          "🌡️ Termometer"
+        ],
+        [
+          "Api di Kebun",
+          "Setiap sepuluh barisan ada satu api kecil. Satu api padam pukul dua.",
+          "🪵 Seikat ranting"
+        ],
+        [
+          "Mandor Joaquim Berjaga",
+          "Sepanjang malam dia berjalan menyusuri api-api itu, katanya. Sepatu botnya kering.",
+          "🥾 Sepatu bot berkuda"
+        ],
+        [
+          "Lentera di Antara Pohon Kopi",
+          "Pukul tiga, sebuah lentera bergerak melintasi kebun. Lentera itu tidak menuju api, tetapi ke rumah kaca.",
+          "🔦 Senter"
+        ],
+        [
+          "Dokter Lúcia Menginap",
+          "Karena embun beku, dia tak bisa pulang berkuda. Dia tidur di ruang duduk, katanya, dengan tas di bawah kepalanya.",
+          "💼 Tas dokter"
+        ],
+        [
+          "Buah Kopi Hitam",
+          "Buah kopi yang membeku jadi hitam. Di keranjang seorang pemetik ada buah kopi hitam dari sebelum embun beku.",
+          "🧺 Keranjang petik"
+        ],
+        [
+          "Guru Giulia Menyalakan Tungku Sekolah",
+          "Dia menyalakan tungku di sekolah, untuk anak-anak. Hari itu Minggu; tidak ada sekolah.",
+          "📚 Buku pelajaran"
+        ],
+        [
+          "Agronom Hideo Mencari Pohonnya",
+          "Saat fajar dia pergi ke pohon barunya. Yang tersisa hanya sebatang tongkat dengan label.",
+          "🏷️ Label tanaman"
+        ]
+      ]
+    ],
+    "fazenda-7": [
+      "Bagian VII · Pohon Baru",
+      "Agronom Hideo sedang membiakkan kopi yang tahan embun beku. Setelah malam embun beku, pohon terbaiknya lenyap. Ada yang menginginkan bijinya.",
+      "Pohon itu kembali di rumah kaca, dengan pagar di sekelilingnya. Bijinya tetap di fazenda.",
+      "Papannya makin besar dan fazendanya makin sepi. Kalau laporan menyebut sebuah area kosong, seluruh area itu tercoret untuk semua orang.",
+      [
+        [
+          "Lubang Kosong",
+          "Di tempat pohon itu berdiri kini ada lubang. Tanah di sekitarnya disapu rapi.",
+          "🕳️ Lubang tanam"
+        ],
+        [
+          "Buku Catatan Pembiakan",
+          "Dua belas tahun kerja tercatat dalam satu buku. Buku itu masih di rumah kaca, terbuka di halaman lain.",
+          "📓 Buku pembiakan"
+        ],
+        [
+          "Pembeli Kopi Mulder Punya Rumah Kaca",
+          "Perusahaannya punya rumah kaca di Amsterdam. Isinya hanya tulip, katanya.",
+          "🌷 Umbi tulip"
+        ],
+        [
+          "Kursi Goyang",
+          "Kursi di beranda kadang bergoyang sendiri. Semalam ada yang duduk di sana, dengan lumpur di sepatunya.",
+          "🪑 Kursi goyang"
+        ],
+        [
+          "Dona Celeste Membaca Surat Wasiat",
+          "Surat wasiat ayahnya mencantumkan semua yang ada di fazenda. Pohon baru itu juga, dengan pemilik yang lain.",
+          "📜 Surat wasiat"
+        ],
+        [
+          "Pencicip Kopi Bento Tahu Rasanya",
+          "Dia mencicipi kopi dari pohon itu di Santos. Hanya dia yang tahu rasanya, selain satu orang lagi.",
+          "🫖 Teko kopi"
+        ],
+        [
+          "Paket Pos",
+          "Di antara kiriman pos ke Santos ada sebuah paket kecil. Alamatnya sebuah rumah kaca di luar negeri.",
+          "📮 Paket kecil"
+        ],
+        [
+          "Burung Nuri Bicara",
+          "Burung nuri itu melihat pohonnya dibawa pergi. Sejak itu dia meneriakkan satu kata, terus-menerus.",
+          "🪶 Bulu merah"
+        ]
+      ]
+    ],
+    "fazenda-8": [
+      "Bagian VIII · Karung Terakhir",
+      "Panen sudah usai dan karung terakhir ditimbang. Sang pembeli melunasi tagihan dan para tamu mengemasi koper. Satu malam lagi penuh musik di beranda.",
+      "Van Dam menghabiskan kopinya, menyentuh topinya, lalu naik kereta ke Santos. Lantai jemur sudah kosong dan pembukuan kembali cocok. Di beranda, musik terus mengalun.",
+      "Kasus-kasus terakhir, hampir semuanya di papan besar. Jangan terpaku pada yang paling sulit: taruh dulu yang lain, maka untuk yang terakhir sering hanya tersisa satu kotak.",
+      [
+        [
+          "Timbangan",
+          "Enam puluh kilo per karung, seperti biasa. Karung terakhir beratnya enam puluh satu.",
+          "⚖️ Timbangan kopi"
+        ],
+        [
+          "Mandor Joaquim Menyerahkan Kunci",
+          "Setelah tiga puluh tahun, dia meletakkan kunci-kunci gudang di meja. Di gantungannya ada satu kunci kelebihan.",
+          "🔑 Seikat kunci"
+        ],
+        [
+          "Pembeli Kopi Mulder Melunasi",
+          "Dia membayar hasil panen dengan gulden. Dia membayar satu karung lebih banyak daripada yang ada.",
+          "🪙 Gulden"
+        ],
+        [
+          "Pianis Zélia Memainkan Lagu Terakhir",
+          "Dia memainkan choro yang dia tulis untuk sang juragan. Sang juragan tak pernah mendengarnya.",
+          "🎶 Choro"
+        ],
+        [
+          "Guru Giulia Berpamitan",
+          "Dia kembali ke kota. Dia meninggalkan sepucuk surat untuk anak-anak, untuk dibaca saat mereka dewasa.",
+          "💌 Surat perpisahan"
+        ],
+        [
+          "Dokter Lúcia Mencatatnya",
+          "Dia menuliskan apa yang dia lihat di ruang sangrai, pada malam pesta itu. Seharusnya dia langsung melakukannya, katanya.",
+          "📋 Laporan dokter"
+        ],
+        [
+          "Dona Celeste Membuka Buku",
+          "Dia membuka buku-buku kas di meja ruang makan. Untuk pertama kalinya setiap kolom cocok, kecuali satu.",
+          "📚 Buku-buku kas"
+        ],
+        [
+          "Ruang Sangrai",
+          "Semuanya bermula di ruang sangrai. Di sana pula semuanya berakhir.",
+          "🫘 Biji kopi sangrai"
+        ]
+      ]
+    ],
+    "zeppelin": [
+      "Bagian I · Di Atas Awan",
+      "Kapal udara Cirrus, Agustus 1929. Selama tiga hari kapal itu melayang di atas samudra, menuju Rio de Janeiro. Seusai makan malam, perancang Anton Falk tergeletak di ruang peta, dengan catatan rute masih di tangannya.",
+      "Kapal terus melaju di atas awan. Tak bisa berbalik dan tak ada yang bisa turun. Pelakunya ikut terbang bersamamu ke Rio.",
+      "Kapal udara itu panjang dan sempit, dengan satu lorong dari depan ke belakang. Mulailah dari orang yang menyebutkan di ruangan mana dia berada; “tepat di sebelah” bola dunia hanya berlaku untuk kotak yang persis di sampingnya, tidak pernah diagonal.",
+      [
+        [
+          "Seusai Makan Malam",
+          "Makan malam pukul tujuh, di atas awan. Pukul setengah sembilan, sang perancang tergeletak di ruang peta.",
+          "🍽️ Piring makan malam"
+        ],
+        [
+          "Rute di Tangannya",
+          "Di tangannya ada secarik kertas berisi rute. Itu bukan rute ke Rio.",
+          "🧾 Kertas rute"
+        ],
+        [
+          "Komandan Brandt di Gondola",
+          "Sepanjang malam dia berdiri di gondola kemudi, katanya. Dari gondola itu orang bisa langsung melihat ke ruang peta.",
+          "🔭 Teropong"
+        ],
+        [
+          "Navigator Mateus Berhitung",
+          "Setiap jam dia menghitung rute. Pukul delapan, dia menghitungnya dua kali, dengan hasil yang berbeda.",
+          "🧮 Mistar hitung"
+        ],
+        [
+          "Ahli Cuaca Liv Memandang ke Luar",
+          "Sepanjang malam dia mengamati awan, katanya. Pukul delapan, hari sudah gelap.",
+          "☁️ Buku awan"
+        ],
+        [
+          "Mesin Tik",
+          "Di ruang peta ada sebuah mesin tik. Masih ada selembar kertas di dalamnya, berisi satu kalimat.",
+          "📃 Kertas ketikan"
+        ],
+        [
+          "Petenis Josette Susah Tidur",
+          "Dia susah tidur di udara, katanya. Pukul delapan, dia sudah tidur, menurut pramugara.",
+          "🎾 Bola tenis"
+        ],
+        [
+          "Diplomat Vidal dan Sang Perancang",
+          "Mereka makan bersama dan membicarakan uang. Seusai hidangan penutup, hanya sang diplomat yang masih bicara.",
+          "💼 Tas kerja"
+        ]
+      ]
+    ],
+    "zeppelin-2": [
+      "Bagian II · Pos Udara",
+      "Di kapal ada lima puluh ribu surat untuk Amerika Selatan, dengan perangko khusus untuk para kolektor. Kepala Pos Elsbeth mengecapnya di ruang pos. Satu amplop sudah dibuka dengan uap.",
+      "Amplop itu sudah tertutup dan dicap lagi. Apa isinya, kepala pos tidak tahu, tetapi kamu tahu.",
+      "Di ruang pos setiap surat melewati dua pasang tangan. Keterangan tentang dua orang: tentukan dulu posisi salah satunya.",
+      [
+        [
+          "Lima Puluh Ribu Surat",
+          "Setiap surat mendapat cap pos kapal udara. Satu surat mendapat dua.",
+          "📮 Cap pos"
+        ],
+        [
+          "Kepala Pos Elsbeth Mengecap",
+          "Dia mengecap seratus surat per jam. Antara pukul sembilan dan sepuluh, tak satu pun dia cap.",
+          "🔖 Perangko"
+        ],
+        [
+          "Amplop yang Diuapi",
+          "Lemnya pernah basah lalu kering lagi. Itu terlihat dari kerutannya.",
+          "✉️ Amplop"
+        ],
+        [
+          "Ketel di Dapur Kapal",
+          "Untuk membuat uap, orang butuh ketel. Satu-satunya ketel di kapal ada di dapur kapal.",
+          "🫖 Ketel air"
+        ],
+        [
+          "Wartawan Daisy Mengirim Berita",
+          "Setiap hari dia mengirim berita ke korannya. Hari ini dia mengirim surat, untuk dirinya sendiri.",
+          "📰 Guntingan koran"
+        ],
+        [
+          "Perangko Langka",
+          "Di satu amplop ada perangko yang hanya ada sepuluh di dunia. Kemarin perangko itu belum ada di sana.",
+          "🔍 Lup"
+        ],
+        [
+          "Mekanik Rudi Membantu Mengangkut",
+          "Dia membantu mengangkut karung-karung pos ke ruang pos. Satu karung dia bawa ke gondola mesin.",
+          "🧵 Tali pengikat"
+        ],
+        [
+          "Diplomat Vidal Menunggu Surat",
+          "Dia tidak menerima surat di kapal, katanya. Di ruang pos ada surat atas namanya.",
+          "🔏 Segel lak"
+        ]
+      ]
+    ],
+    "zeppelin-3": [
+      "Bagian III · Angin Haluan",
+      "Angin haluan bertiup kencang di atas samudra. Kapal melaju setengah kecepatan dan perjalanan bertambah satu malam. Tak ada yang senang, kecuali satu penumpang.",
+      "Angin berbalik dan kapal mengejar jam-jam yang hilang. Penumpang yang senang dengan angin itu punya alasan.",
+      "Saat angin haluan semua orang tetap di dalam, tetapi tidak di ruangan yang sama. Orang yang bilang di mana dia TIDAK berada juga memberitahumu sesuatu: langsung coret ruangan itu.",
+      [
+        [
+          "Satu Malam Lebih Lama",
+          "Menurut jadwal, mereka mendarat hari Jumat. Menurut angin, hari Sabtu.",
+          "📅 Jadwal perjalanan"
+        ],
+        [
+          "Ahli Cuaca Liv Sudah Memperingatkan",
+          "Kemarin dia meramalkan angin haluan. Sang perancang tetap ingin rute ini.",
+          "🌬️ Peta angin"
+        ],
+        [
+          "Kapal Berguncang",
+          "Saat angin kencang, sebuah gelas terguling di ruang santai. Di bawahnya ada kunci kecil.",
+          "🗝️ Kunci kecil"
+        ],
+        [
+          "Navigator Mateus Memilih Rute",
+          "Dia memilih rute yang memutari angin. Rute itu sudah tertulis di kertas di tangan sang perancang.",
+          "🗺️ Peta udara"
+        ],
+        [
+          "Petenis Josette Mabuk Udara",
+          "Seharian dia berbaring di kabinnya, katanya. Pintunya terbuka dan kabinnya kosong.",
+          "🍋 Lemon"
+        ],
+        [
+          "Komandan Brandt Mengumpat",
+          "Dia tak pernah mengumpat, kata awak kapal. Dalam angin haluan ini dia mengumpat dalam tiga bahasa.",
+          "🧭 Kompas"
+        ],
+        [
+          "Bar Tetap Buka",
+          "Saat angin haluan, bar ditutup. Tapi semalam ada yang menuang dua gelas di sana.",
+          "🍸 Gelas koktail"
+        ],
+        [
+          "Senang dengan Angin",
+          "Semua orang ingin tiba di Rio tepat waktu. Satu penumpang bertanya apakah perjalanannya bisa lebih lama lagi.",
+          "⏳ Jam pasir"
+        ]
+      ]
+    ],
+    "zeppelin-4": [
+      "Bagian IV · Gondola Mesin",
+      "Kapal udara itu punya lima mesin, masing-masing di gondolanya sendiri di bawah lambung. Mekanik Rudi memanjat ke sana setiap hari. Malam ini satu mesin mati, dan sang mekanik tak tahu sebabnya.",
+      "Mesin itu berputar lagi. Ada sesuatu yang tak semestinya di saluran bahan bakar, dan kamu tahu siapa yang memasukkannya.",
+      "Di antara mesin-mesin kamu hanya bisa bergerak lurus ke depan atau lurus ke belakang. Taruh dulu tersangka yang pilihannya paling sedikit; sisanya menyusul.",
+      [
+        [
+          "Mesin Tiga",
+          "Pukul dua, mesin tiga mati. Kapal turun sepuluh meter.",
+          "⚙️ Roda gigi"
+        ],
+        [
+          "Mekanik Rudi Memanjat ke Luar",
+          "Dia menuruni tangga di tengah angin menuju gondola. Dia tak pernah pergi tanpa topinya; malam ini dia pergi tanpa topi.",
+          "🧢 Topi wol"
+        ],
+        [
+          "Saluran Bahan Bakar",
+          "Di dalam saluran ada gumpalan kertas. Di kertas itu ada angka-angka.",
+          "🛢️ Saluran bahan bakar"
+        ],
+        [
+          "Komandan Brandt Menurunkan Kapal",
+          "Dengan empat mesin, kapal harus terbang lebih rendah. Lebih rendah berarti lebih dekat ke laut.",
+          "🎚️ Altimeter"
+        ],
+        [
+          "Kepala Pos Elsbeth Mendengarnya",
+          "Bunyi mesin paling jelas terdengar dari ruang pos. Dia mendengar mesin tiga mati, dan sebuah pintu.",
+          "🚪 Pintu gondola"
+        ],
+        [
+          "Satu Kunci Pas Kelebihan",
+          "Di peti sang mekanik ada dua belas kunci pas. Di gondola ada yang ketiga belas.",
+          "🔧 Kunci pas"
+        ],
+        [
+          "Navigator Mateus Menghitung Ulang",
+          "Dengan empat mesin, mereka tiba di Rio sehari lebih lambat. Dia sudah menghitungnya sebelum mesin itu mati.",
+          "✏️ Pensil navigator"
+        ],
+        [
+          "Kertas di Saluran",
+          "Angka-angka di kertas itu adalah sebuah rute. Rute yang sama dengan yang ada di tangan sang perancang.",
+          "📄 Gumpalan kertas"
+        ]
+      ]
+    ],
+    "zeppelin-5": [
+      "Bagian V · Titian",
+      "Tinggi di dalam kapal, sebuah titian sempit membentang di antara kantong-kantong gas, dari hidung sampai ekor. Penumpang tak boleh naik ke sana. Di debu ada jejak kaki yang masih baru.",
+      "Titian itu kembali kosong dan debunya kembali rata. Jejak kaki itu membentang dari ruang pos ke pos intai.",
+      "Di titian tak ada yang bisa menyalip orang lain. Mulailah dari orang yang bilang dia sendirian; itu sekaligus menutup satu ruangan bagi yang lain.",
+      [
+        [
+          "Jejak Kaki Baru",
+          "Di titian ada lapisan debu halus. Di debu itu ada jejak sepatu kecil.",
+          "👞 Sepatu kecil"
+        ],
+        [
+          "Mekanik Rudi Melewatinya Setiap Hari",
+          "Setiap pagi dia berjalan dari hidung sampai ekor. Ukuran sepatunya empat puluh enam.",
+          "🥾 Sepatu kerja"
+        ],
+        [
+          "Pos Intai",
+          "Di puncak kapal ada tingkap menuju pos intai. Tingkap itu tidak dikunci.",
+          "🔓 Tingkap"
+        ],
+        [
+          "Petenis Josette Berlatih",
+          "Dia berlatih setiap hari, bahkan di udara. Katanya dia lompat tali di kabinnya.",
+          "🪢 Tali lompat"
+        ],
+        [
+          "Ahli Cuaca Liv Melepas Balon",
+          "Setiap pagi dia melepas balon cuaca dari pos intai. Pagi ini ada dua.",
+          "🎈 Balon cuaca"
+        ],
+        [
+          "Sarung Tangan di Antara Kantong Gas",
+          "Di antara kantong gas tergantung sebuah sarung tangan putih. Sarung tangan itu hanya pas untuk dua orang di kapal.",
+          "🧤 Sarung tangan putih"
+        ],
+        [
+          "Wartawan Daisy Ingin Memotret",
+          "Dia ingin memotret samudra dari atap. Komandan melarang, dan dia tetap pergi.",
+          "📸 Foto pers"
+        ],
+        [
+          "Dari Ruang Pos ke Atas",
+          "Dari ruang pos ada tangga ke titian. Di anak tangga paling atas ada tinta pos.",
+          "🖊️ Tinta pos"
+        ]
+      ]
+    ],
+    "zeppelin-6": [
+      "Bagian VI · Ramalan Cuaca",
+      "Setiap pagi Ahli Cuaca Liv menggambar peta cuaca. Menurut petanya, kabut akan datang di atas laut. Kabut itu datang tepat pada waktunya bagi seseorang.",
+      "Kabut menghilang dan kapal kembali ke rutenya. Siapa pun yang mengandalkan kabut tidak memperhitungkan kamu.",
+      "Dalam kabut kamu tak bisa melihat apa-apa dari jendela, jadi semua orang memperhatikan bagian dalam. Keterangannya makin pelit: gunakan pensil, coret kotak yang tidak mungkin, lalu lihat apa yang tersisa.",
+      [
+        [
+          "Peta Cuaca",
+          "Setiap pagi peta baru digantung di ruang santai. Pagi ini yang tergantung peta kemarin.",
+          "🌦️ Peta cuaca"
+        ],
+        [
+          "Kabut Pukul Sepuluh",
+          "Menurut peta, kabut mulai pukul sepuluh. Tepat pukul sepuluh, lampu di bar padam.",
+          "💡 Lampu bar"
+        ],
+        [
+          "Ahli Cuaca Liv Menggambar",
+          "Dia selalu menggambar garis-garisnya dengan warna biru. Di peta kemarin juga ada garis merah.",
+          "🖍️ Pensil merah"
+        ],
+        [
+          "Diplomat Vidal Bertanya soal Cuaca",
+          "Setiap pagi dia menanyakan cuaca. Hari ini dia bertanya pukul berapa kabut datang.",
+          "🕰️ Jam perjalanan"
+        ],
+        [
+          "Radio Diam",
+          "Dalam kabut, radio harus mengirim sinyal setiap seperempat jam. Antara pukul sepuluh dan sebelas, radio itu diam.",
+          "📻 Radio"
+        ],
+        [
+          "Navigator Mateus Terbang Buta",
+          "Dalam kabut dia terbang dengan kompas dan jam. Dia tahu di mana kapal berada, kecuali pada pukul setengah sebelas.",
+          "⏱️ Stopwatch"
+        ],
+        [
+          "Kepala Pos Elsbeth Mengunci",
+          "Saat berkabut dia mengunci ruang pos, karena lembap. Pukul sebelas, pintunya terbuka.",
+          "🔒 Gembok"
+        ],
+        [
+          "Lampu di Atas Air",
+          "Di bawah kapal, sebuah lampu berkedip di atas air. Dari pos intai, sebuah lampu berkedip membalas.",
+          "🔦 Lampu kedip"
+        ]
+      ]
+    ],
+    "zeppelin-7": [
+      "Bagian VII · Khatulistiwa",
+      "Di khatulistiwa semua orang dibaptis, seperti di setiap kapal. Komandan berdandan sebagai Neptunus dan semua orang diguyur seember air. Satu penumpang tidak ada.",
+      "Pembaptisan selesai dan semua orang sudah kering lagi. Penumpang yang tidak ada itu berada di ruang peta, dan sekarang kamu tahu apa yang dia cari.",
+      "Papannya makin besar dan kapalnya makin penuh. Kalau laporan menyebut sebuah ruangan kosong, seluruh ruangan itu tercoret untuk semua orang.",
+      [
+        [
+          "Neptunus di Kapal",
+          "Komandan Brandt memakai janggut dari tali dan mahkota dari karton. Dia menghitung para penumpang dan kurang satu.",
+          "👑 Mahkota karton"
+        ],
+        [
+          "Pembaptisan",
+          "Semua orang mendapat seember air dan sebuah piagam. Satu piagam tersisa.",
+          "📜 Piagam khatulistiwa"
+        ],
+        [
+          "Garis di Lantai",
+          "Navigator Mateus menggambar garis khatulistiwa dengan kapur di lantai ruang santai. Seseorang tidak melangkahinya, tetapi berjalan memutarinya.",
+          "📏 Garis kapur"
+        ],
+        [
+          "Petenis Josette Berdiri Paling Depan",
+          "Dia ingin dibaptis paling dulu. Dia berdiri paling depan, dengan handuk kering.",
+          "🧺 Handuk kering"
+        ],
+        [
+          "Wartawan Daisy Mencatat",
+          "Dia mencatat nama semua orang yang dibaptis. Satu nama dia coret lagi.",
+          "✒️ Pena tinta"
+        ],
+        [
+          "Mekanik Rudi Melewatkan Pembaptisan",
+          "Dia harus mengurus mesin tiga, katanya. Mesin tiga berjalan baik-baik saja.",
+          "🔩 Baut"
+        ],
+        [
+          "Bola Dunia",
+          "Selama pembaptisan, ruang peta tertutup. Sesudahnya, bola dunia tergeletak miring.",
+          "🌍 Bola dunia"
+        ],
+        [
+          "Diplomat Vidal dan Kontrak",
+          "Di tas kerjanya ada kontrak untuk sepuluh kapal udara. Kontrak itu ditandatangani sang perancang, setelah dia meninggal.",
+          "🖋️ Tanda tangan"
+        ]
+      ]
+    ],
+    "zeppelin-8": [
+      "Bagian VIII · Di Atas Teluk Rio",
+      "Gunung Pão de Açúcar mulai terlihat dan tiang tambat sudah menunggu. Kapal berputar sekali lagi di atas teluk sebelum mendarat. Satu malam lagi bersama penumpang yang sama seperti pada malam pertama.",
+      "Van Dam memakai topinya, memberi hormat kepada komandan, lalu turun paling akhir lewat tangga ke tiang tambat. Kapal udara itu sudah tertambat di tiang. Rutenya benar, dan kini semua yang lain juga beres.",
+      "Kasus-kasus terakhir, hampir semuanya di papan besar. Jangan terpaku pada yang paling sulit: taruh dulu yang lain, maka untuk yang terakhir sering hanya tersisa satu kotak.",
+      [
+        [
+          "Daratan Terlihat",
+          "Pukul lima, petugas pengintai melihat Gunung Pão de Açúcar. Pukul lima lewat sepuluh, dia juga melihat kapal polisi.",
+          "🚤 Kapal polisi"
+        ],
+        [
+          "Komandan Brandt Mendarat",
+          "Ini pendaratannya yang keseratus. Di buku lognya, ada satu baris kosong untuk perjalanan ini.",
+          "📘 Buku log"
+        ],
+        [
+          "Kepala Pos Elsbeth Menghitung Karung",
+          "Lima puluh ribu surat naik ke kapal. Yang turun lima puluh ribu satu.",
+          "📬 Kotak surat"
+        ],
+        [
+          "Navigator Mateus Pulang",
+          "Dia lahir di Rio dan menunjuk rumahnya dari ruang santai. Dia mengenal kota itu, dan polisi pelabuhannya.",
+          "🖼️ Foto rumah"
+        ],
+        [
+          "Ahli Cuaca Liv Menyerahkan Petanya",
+          "Dia menyerahkan semua peta cuacanya kepada komandan. Peta malam berkabut itu tidak ada.",
+          "🗂️ Map peta"
+        ],
+        [
+          "Petenis Josette Sudah Menang",
+          "Dia bertanding minggu depan, dan bilang dia sudah menang. Menang apa, dia tak bilang.",
+          "🏆 Piala"
+        ],
+        [
+          "Wartawan Daisy Mengetik Penutup",
+          "Berita terakhirnya sudah selesai, kecuali baris terakhir. Baris itu menunggumu.",
+          "🗞️ Koran pagi"
+        ],
+        [
+          "Ruang Peta",
+          "Semuanya bermula di ruang peta. Di sana pula semuanya berakhir.",
+          "📍 Jarum rute"
+        ]
+      ]
+    ],
+    "poolstation": [
+      "Bagian I · Pesta Tengah Musim Dingin",
+      "Stasiun Salib Selatan, 21 Juni 1958. Tengah musim dingin, malam terpanjang dalam setahun, dirayakan di setiap pangkalan. Lilin, kue dari kaleng, dan satu kursi kosong. Kepala stasiun tergeletak di ruang radio.",
+      "Pesta sudah usai dan lilin-lilin sudah habis terbakar. Di luar suhunya minus lima puluh, dan tak seorang pun bisa pergi.",
+      "Stasiun kutub itu kecil: beberapa barak dan sebuah terowongan di bawah salju. Mulailah dari orang yang menyebutkan di ruangan mana dia berada; “tepat di sebelah” anjing kereta salju hanya berlaku untuk kotak yang persis di sampingnya, tidak pernah diagonal.",
+      [
+        [
+          "Kursi Kosong",
+          "Delapan piring, sembilan kursi. Kursi kepala stasiun kosong sepanjang malam.",
+          "🪑 Kursi lipat"
+        ],
+        [
+          "Headphone",
+          "Headphone masih terpasang di kepalanya. Yang terdengar hanya desis.",
+          "🎧 Headphone"
+        ],
+        [
+          "Koki Diego Memotong Kue",
+          "Kue dari kaleng, dengan lilin-lilin kecil dari stearin. Satu potong sudah hilang sebelum dia mulai memotong.",
+          "🎂 Kue tengah musim dingin"
+        ],
+        [
+          "Operator Radio Ole Sedang Bertugas",
+          "Pukul delapan, dia seharusnya duduk di depan pemancar. Pukul delapan, dia duduk di meja makan, kata semua orang.",
+          "📋 Jadwal jaga"
+        ],
+        [
+          "Salam Tengah Musim Dingin",
+          "Di tengah musim dingin, semua pangkalan saling mengirim salam lewat radio. Pukul sembilan, masuk satu pesan yang bukan salam.",
+          "📝 Blok pesan"
+        ],
+        [
+          "Pawang Anjing Rewi Memberi Makan Anjing",
+          "Dia pergi ke kandang anjing pukul setengah sembilan. Anjing-anjing baru menggonggong pukul sembilan.",
+          "🍖 Makanan anjing"
+        ],
+        [
+          "Mekanik Lieve dan Lampu",
+          "Di tengah pesta, listrik padam selama tiga menit. Lieve saat itu sudah berdiri di dekat generator.",
+          "🔦 Senter"
+        ],
+        [
+          "Terowongan Salju",
+          "Sebuah terowongan di bawah salju menghubungkan semua barak. Di lapisan bunga es yang masih baru, jejak kaki hanya mengarah ke satu jurusan.",
+          "👣 Jejak di bunga es"
+        ]
+      ]
+    ],
+    "poolstation-2": [
+      "Bagian II · Sunyi Radio",
+      "Keesokan paginya Ole ingin menghubungi daratan. Pemancarnya diam. Seseorang telah mencabut sebuah tabung radio.",
+      "Pemancar darurat berderak dan daratan menjawab. Siapa yang mencabut tabung itu, kini kamu tahu. Apa yang ingin dikirim Holm, belum.",
+      "Di malam kutub, semua orang tahu di mana yang lain berada. Keterangan tentang dua orang: tentukan dulu posisi salah satunya.",
+      [
+        [
+          "Soket Kosong",
+          "Di dalam pemancar ada sembilan tabung. Pagi ini tinggal delapan.",
+          "💡 Tabung radio"
+        ],
+        [
+          "Operator Radio Ole Mencari",
+          "Dia punya tabung cadangan, katanya, di kotak di bawah ranjangnya. Kotak itu kosong.",
+          "📦 Kotak cadangan"
+        ],
+        [
+          "Mekanik Lieve Bisa Memperbaikinya",
+          "Dengan kawat dan sebuah lampu dari bengkel, dia merakit pemancar darurat. Dia sudah tahu tabung mana yang hilang sebelum melihatnya.",
+          "🔧 Solder"
+        ],
+        [
+          "Pesan Terakhir",
+          "Di blok pesan ada awal sebuah pesan dari Holm. Setelah tiga kata, pesan itu terputus.",
+          "✏️ Puntung pensil"
+        ],
+        [
+          "Dokter Kenji Menulis Laporan",
+          "Waktu kematian: antara pukul delapan dan sembilan. Pukul setengah sembilan, sang dokter sendiri berada di ruang medis, sendirian.",
+          "🩺 Stetoskop"
+        ],
+        [
+          "Meteorolog Nancy Mendengar Sesuatu",
+          "Pukul setengah sembilan, dia membaca termometer di pondok cuaca. Dia mendengar sandi Morse menembus dinding.",
+          "🌡️ Termometer"
+        ],
+        [
+          "Fisikawan Hélène Ikut Mendengarkan",
+          "Untuk pengukurannya, dia mendengarkan radio setiap malam. Malam itu dia mencatat frekuensi yang bukan milik daratan.",
+          "🗒️ Daftar frekuensi"
+        ],
+        [
+          "Tabung di Salju",
+          "Rewi menemukan tabung itu di dekat kandang anjing, setengah terkubur salju. Di dekatnya ada sarung tangan yang bukan miliknya.",
+          "🧤 Sarung tangan wol"
+        ]
+      ]
+    ],
+    "poolstation-3": [
+      "Bagian III · Badai Salju",
+      "Badai tiga hari menerjang pangkalan. Salju menderu begitu kencang sampai kamu tak bisa melihat tanganmu sendiri. Siapa pun yang keluar mengikuti tali. Satu tali sudah dilepas.",
+      "Badai mereda dan tali itu kembali tegang. Siapa pun yang melepasnya tidak ingin ada yang sampai ke pondok cuaca.",
+      "Dalam badai tak ada yang bisa melihat apa pun, tetapi semua orang tahu di mana mereka tidak berada. Orang yang bilang di mana dia TIDAK berada juga memberitahumu sesuatu: langsung coret ruangan itu.",
+      [
+        [
+          "Tali ke Pondok Cuaca",
+          "Di antara barak dan pondok cuaca terbentang seutas tali. Pagi ini tali itu tergeletak lepas di salju.",
+          "🪢 Tali pemandu"
+        ],
+        [
+          "Meteorolog Nancy Harus Keluar",
+          "Setiap tiga jam dia membaca alat ukur, badai atau tidak. Pukul tiga, dia baru kembali setelah satu jam, tanpa catatan.",
+          "📒 Buku cuaca"
+        ],
+        [
+          "Pawang Anjing Rewi Pergi Mencari",
+          "Dia keluar dengan dua anjing bertali. Dia kembali dengan tiga.",
+          "🐾 Tali anjing"
+        ],
+        [
+          "Koki Diego Mengambil Salju",
+          "Air adalah salju yang dicairkan. Dia mengambil embernya di tengah badai, dan lama tak kembali.",
+          "🪣 Ember salju"
+        ],
+        [
+          "Pengukur Angin",
+          "Pukul empat, pengukur angin di atap berhenti berputar. Membeku, kata Nancy. Ada kain yang membungkusnya.",
+          "🌀 Pengukur angin"
+        ],
+        [
+          "Mekanik Lieve dan Generator",
+          "Pada suhu minus enam puluh, generator tak boleh mati. Pukul lima, generator itu mati, dan Lieve sedang tidur.",
+          "⛽ Jeriken"
+        ],
+        [
+          "Dokter Kenji dan Radang Dingin",
+          "Dua orang masuk dengan pipi memutih. Menurut buku log, hanya satu orang yang keluar.",
+          "📓 Buku log"
+        ],
+        [
+          "Siapa yang Melepas Tali",
+          "Simpul tidak lepas begitu saja di tengah badai. Simpul ini dilepas dengan rapi, dengan sarung tangan terpasang.",
+          "🪝 Karabiner"
+        ]
+      ]
+    ],
+    "poolstation-4": [
+      "Bagian IV · Inti Es",
+      "Berbulan-bulan Glasiolog Marina mengebor es di bawah pangkalan. Inti esnya yang terbaik disimpan di terowongan salju, yang suhunya selalu minus tiga puluh. Pagi ini inti es itu hancur berkeping-keping. Bukan karena kebetulan.",
+      "Inti es itu kembali di terowongan, setiap kepingnya bernomor. Lapisan hitam di dalamnya ingin dikabarkan Holm lebih dulu daripada siapa pun.",
+      "Di laboratorium semua orang berdiri berdesakan, jadi perhatikan siapa yang berdiri tepat di sebelah siapa. Taruh dulu tersangka yang pilihannya paling sedikit; sisanya menyusul.",
+      [
+        [
+          "Sepuluh Ribu Tahun",
+          "Setiap sentimeter es adalah satu tahun. Inti es itu patah tepat di tahun yang dicari Marina.",
+          "🧊 Inti es"
+        ],
+        [
+          "Glasiolog Marina Menghitung",
+          "Dia menomori setiap keping dengan pensil lilin. Nomor empat belas hilang.",
+          "🖍️ Pensil lilin"
+        ],
+        [
+          "Bor",
+          "Bor es itu ada di bengkel. Di ujungnya ada es segar, padahal sudah seminggu Marina tidak mengebor.",
+          "🔩 Bor es"
+        ],
+        [
+          "Fisikawan Hélène Ingin Mengukur",
+          "Di dalam es ada debu dari tempat yang jauh. Hélène ingin mengukurnya, Marina ingin menggambarkannya sendiri lebih dulu.",
+          "🔬 Preparat"
+        ],
+        [
+          "Koki Diego Menyeduh Mate",
+          "Untuk matenya, dia mencairkan es dari terowongan. Dia tidak tahu es mana yang tua, katanya.",
+          "🧉 Labu mate"
+        ],
+        [
+          "Dokter Kenji dan Mikroskop",
+          "Di pangkalan hanya ada satu mikroskop. Malam itu Kenji duduk di depannya, untuk tes yang tak diminta siapa pun.",
+          "🧪 Tabung reaksi"
+        ],
+        [
+          "Buku Harian Holm",
+          "Di buku harian Holm, inti es itu disebut tiga kali. Sekali dengan tanda seru.",
+          "📔 Buku harian"
+        ],
+        [
+          "Isi Es Itu",
+          "Di bawah mikroskop: lapisan tipis berwarna hitam di dalam es. Holm yang pertama melihatnya.",
+          "🌋 Lapisan abu"
+        ]
+      ]
+    ],
+    "poolstation-5": [
+      "Bagian V · Aurora",
+      "Di tengah malam langit berubah hijau. Hélène memanggil semua orang keluar, karena aurora seperti ini hanya muncul beberapa kali dalam satu musim dingin. Semua orang menengadah, kecuali satu.",
+      "Cahaya hijau itu memudar. Banyak yang bisa terjadi dalam dua puluh menit, dan kini kamu tahu apa.",
+      "Di bawah aurora semua orang berdiri di luar dalam gelap dan hanya melihat dirinya sendiri. Mulailah dari orang yang bilang dia sendirian; itu sekaligus menutup satu ruangan bagi yang lain.",
+      [
+        [
+          "Cahaya Hijau",
+          "Pukul dua, langit berubah hijau. Di dalam tak ada yang melihatnya, karena tak ada orang di dalam, kata mereka.",
+          "📸 Foto aurora"
+        ],
+        [
+          "Fisikawan Hélène Mengukur",
+          "Dia mengukur berapa lama setiap kilatan berlangsung. Di antara dua pengukuran ada celah sepuluh menit.",
+          "⏱️ Stopwatch"
+        ],
+        [
+          "Kamera di Atap",
+          "Hélène memasang kamera di atap yang memotret setiap menit. Di satu foto ada lampu di dekat kandang anjing.",
+          "📷 Kamera langit"
+        ],
+        [
+          "Pawang Anjing Rewi Tidak Melihat",
+          "Semua orang berdiri di luar sambil mendongak. Rewi berdiri membelakangi langit.",
+          "🏮 Lentera badai"
+        ],
+        [
+          "Operator Radio Ole Mendengar Desis",
+          "Saat ada aurora, setiap radio berderak. Tapi Ole mendengar sebuah pesan, jelas sekali, dari dekat.",
+          "📡 Kawat antena"
+        ],
+        [
+          "Koki Diego Tetap di Dalam",
+          "Dia sudah sering melihat aurora, katanya. Ini musim dingin pertamanya di atas es.",
+          "🥘 Panci sup"
+        ],
+        [
+          "Meteorolog Nancy Mencatatnya",
+          "Di buku cuacanya tertulis: cerah, tak berangin, aurora. Dan pukul dua lewat sepuluh: pintu pondok cuaca terbuka.",
+          "🗝️ Kunci pondok cuaca"
+        ],
+        [
+          "Satu Orang Itu",
+          "Aurora berlangsung dua puluh menit. Cukup lama untuk berjalan ke ruang radio dan kembali.",
+          "🕰️ Jam kantin"
+        ]
+      ]
+    ],
+    "poolstation-6": [
+      "Bagian VI · Kereta Salju",
+      "Di depot, sepuluh mil jauhnya, tersimpan bahan bakar dan makanan untuk musim semi. Rewi pergi ke sana dengan kereta salju dan dua orang lainnya. Dua hari perjalanan pergi. Kereta salju itu kembali dengan muatan yang salah.",
+      "Peti-peti itu berdiri di gudang, capnya menghadap ke atas. Isinya sudah dicatat Holm di daftarnya.",
+      "Mulai dari sini hampir setiap kasus ada di papan besar sembilan kali sembilan. Gunakan pensil: coret kotak yang tidak mungkin, lalu lihat apa yang tersisa.",
+      [
+        [
+          "Sepuluh Mil",
+          "Depot itu sepuluh mil ke selatan. Saat berangkat kereta salju ringan; saat pulang seharusnya berat.",
+          "🛷 Kereta salju"
+        ],
+        [
+          "Pawang Anjing Rewi Memasang Tali Kekang",
+          "Tujuh anjing di depan kereta salju, seperti biasa. Anjing terbaik, Kaho, tetap tinggal di kandang.",
+          "🐕 Kaho, anjing pemimpin"
+        ],
+        [
+          "Daftar Depot",
+          "Menurut daftar, di depot ada empat puluh drum bahan bakar. Rewi menghitung tiga puluh enam.",
+          "🛢️ Drum bahan bakar"
+        ],
+        [
+          "Mekanik Lieve Ikut",
+          "Dia ikut untuk mengambil kendaraan salju, yang sejak musim gugur diparkir di depot. Mesinnya langsung menyala.",
+          "🔋 Aki"
+        ],
+        [
+          "Glasiolog Marina Ikut",
+          "Dia ingin mengebor es di perjalanan, katanya. Dia tidak membawa bor.",
+          "🎒 Ransel"
+        ],
+        [
+          "Kemah di Perjalanan",
+          "Mereka bermalam satu kali di tenda di atas es. Di sekeliling tenda ada empat pasang jejak. Mereka hanya bertiga.",
+          "⛺ Tenda kutub"
+        ],
+        [
+          "Muatan yang Salah",
+          "Di kereta salju tidak ada drum, tetapi peti-peti bercap stasiun. Peti-peti yang sudah setahun hilang.",
+          "📦 Peti bercap"
+        ],
+        [
+          "Dokter Kenji Menunggu",
+          "Dia menunggu di dekat kandang anjing sampai kereta salju kembali. Dia sudah tahu berapa peti yang akan ada di atasnya.",
+          "📋 Surat muatan"
+        ]
+      ]
+    ],
+    "poolstation-7": [
+      "Bagian VII · Balon Cuaca",
+      "Setiap pagi dan setiap malam Nancy melepas balon cuaca, dengan kotak kecil yang mengukur angin dan dingin. Dua kali sehari sebuah balon naik. Hari ini ada secarik kertas terikat padanya.",
+      "Balon itu sudah lama berada di atas awan. Kertasnya tidak: tiga kata itu ada padamu, dan kamu tahu siapa yang menulisnya.",
+      "Papannya makin besar dan malamnya makin pendek. Kalau laporan menyebut sebuah ruangan kosong, seluruh ruangan itu tercoret untuk semua orang.",
+      [
+        [
+          "Secarik Kertas",
+          "Nancy baru melihat kertas itu ketika balon sudah naik. Dia hanya sempat membaca tiga kata.",
+          "🎈 Balon cuaca"
+        ],
+        [
+          "Meteorolog Nancy Mengisi Balon",
+          "Dia sendiri yang mengisi setiap balon dengan hidrogen. Balon ini sudah terisi saat dia tiba di pondok cuaca.",
+          "⚗️ Tabung gas"
+        ],
+        [
+          "Kotak Kecil Itu Kembali",
+          "Biasanya sebuah sonde tak pernah terlihat lagi. Yang ini mendarat di dekat kandang anjing tiga hari kemudian.",
+          "📡 Radiosonde"
+        ],
+        [
+          "Operator Radio Ole Menangkap Sinyal",
+          "Sonde itu mengirim data suhu ke ruang radio. Malam itu Ole mencatat angka-angka yang bukan suhu.",
+          "🔢 Deretan angka"
+        ],
+        [
+          "Fisikawan Hélène Membaca Kodenya",
+          "Dia mengenal kode sonde itu, karena dia berhitung dengannya. Baru setelah dua hari dia mengatakan isinya.",
+          "📐 Mistar hitung"
+        ],
+        [
+          "Koki Diego dan Talinya",
+          "Tali di balon itu adalah tali dapur. Jenis yang dipakai Diego untuk mengikat daging panggang.",
+          "🧵 Tali dapur"
+        ],
+        [
+          "Mekanik Lieve dan Huruf Kapital",
+          "Di gambar kerjanya dia selalu menulis dengan huruf kapital. Kertas itu juga ditulis dengan huruf kapital.",
+          "📝 Gambar kerja"
+        ],
+        [
+          "Glasiolog Marina Menerjemahkan",
+          "Kertas itu ditulis dalam tiga bahasa, satu kata per bahasa. Hanya Marina yang menguasai ketiganya.",
+          "📖 Kamus"
+        ]
+      ]
+    ],
+    "poolstation-8": [
+      "Bagian VIII · Matahari Pertama",
+      "Akhir Agustus, seberkas cahaya muncul di atas cakrawala. Setelah empat bulan matahari kembali, begitu pula pesawat dari daratan. Satu malam lagi di bawah aurora, dengan wajah-wajah yang sama seperti di tengah musim dingin.",
+      "Van Dam turun paling akhir dari pesawat, menjabat tanganmu, dan sejenak memandang matahari. Matahari kembali di atas es. Pesawat pertama membawa surat, dan membawa pulang si pelaku.",
+      "Kasus-kasus terakhir, hampir semuanya di papan besar. Jangan terpaku pada yang paling sulit: taruh dulu yang lain, maka untuk yang terakhir sering hanya tersisa satu kotak.",
+      [
+        [
+          "Seberkas Cahaya",
+          "Pukul dua belas siang, cakrawala berwarna merah muda. Semua orang ada di luar. Satu jendela ruang radio berembun.",
+          "🪟 Jendela berembun"
+        ],
+        [
+          "Mekanik Lieve Membuat Landasan",
+          "Dengan kendaraan salju dia membuat landasan untuk pesawat. Di bawah salju ada kotak tabung radio yang kosong.",
+          "🧰 Kotak tabung"
+        ],
+        [
+          "Dokter Kenji Menulis Laporannya",
+          "Laporan untuk daratan, tentang sembilan orang dan satu musim dingin. Di bagian Holm tertulis: penyebab tidak diketahui. Dia sebenarnya tahu.",
+          "📄 Laporan medis"
+        ],
+        [
+          "Koki Diego Memasak yang Terakhir",
+          "Kaleng terakhir musim dingin ini berisi persik. Dia menyiapkan sembilan mangkuk kecil, karena kebiasaan.",
+          "🍑 Kaleng persik"
+        ],
+        [
+          "Pawang Anjing Rewi Berpamitan",
+          "Anjing-anjing tetap tinggal untuk regu berikutnya. Rewi hanya membawa Kaho, dan Kaho menggeram pada satu penumpang.",
+          "📿 Kalung anjing"
+        ],
+        [
+          "Fisikawan Hélène Berkemas",
+          "Empat bulan pengukuran muat dalam satu peti. Dia membukanya sekali lagi, untuk satu halaman.",
+          "📚 Buku pengukuran"
+        ],
+        [
+          "Pesawat",
+          "Pesawat mendarat dan pilotnya menyerahkan surat-surat. Ada surat untuk Holm, dari seseorang di pangkalan.",
+          "✉️ Surat pos udara"
+        ],
+        [
+          "Tengah Musim Dingin, Sekali Lagi",
+          "Semuanya bermula di ruang radio. Di sana Ole mengirim pesan yang tak pernah diselesaikan Holm.",
+          "📨 Pesan terakhir"
+        ]
+      ]
+    ],
+    "winterpaleis": [
+      "Bagian I · Wals Terakhir",
+      "Istana Zvezdin, malam tahun baru 1899. Di ruang dansa orkes memainkan wals terakhir abad ini. Tengah malam, gelas-gelas diangkat untuk abad yang baru. Sang count tidak ada.",
+      "Orkes terus bermain sampai pagi, karena tak ada yang berani menghentikannya. Siapa yang membawakan gelas untuk sang count, kamu sudah tahu.",
+      "Istana punya seratus pintu dan ruangan yang sama banyaknya. Mulailah dari orang yang menyebutkan di ruangan mana dia berada; “tepat di sebelah” telur permata hanya berlaku untuk kotak yang persis di sampingnya, tidak pernah diagonal.",
+      [
+        [
+          "Dua Belas Dentang",
+          "Jam berdentang dua belas kali dan dua ratus gelas terangkat. Satu gelas masih penuh di perpustakaan.",
+          "🥂 Gelas kristal"
+        ],
+        [
+          "Perpustakaan",
+          "Sang count duduk di kursi berlengan di dekat perapian. Buku di pangkuannya terbalik.",
+          "📕 Buku terbalik"
+        ],
+        [
+          "Kepala Pelayan Fyodor Menghitung Gelas",
+          "Pukul dua belas kurang seperempat, dia menyiapkan dua ratus gelas. Pukul dua belas, di ruang dansa tersisa 199.",
+          "🍾 Botol sampanye"
+        ],
+        [
+          "Komponis Sergei Memimpin Orkes",
+          "Wals barunya berdurasi tujuh menit. Di partiturnya ada pengulangan yang kemarin belum ada.",
+          "🎼 Partitur"
+        ],
+        [
+          "Countess Yelena Menyambut Tamu",
+          "Sepanjang malam dia berdiri di dekat tangga untuk menyambut para tamu. Pukul setengah dua belas, dia pergi selama sepuluh menit.",
+          "🪭 Kipas"
+        ],
+        [
+          "Letnan Dmitri Berdansa",
+          "Dia berdansa dengan setiap wanita di ruangan itu. Tapi tidak dengan tunangannya, yang berdiri sendirian di dekat cermin-cermin.",
+          "🧤 Sarung tangan putih"
+        ],
+        [
+          "Kilatan Cahaya",
+          "Pukul dua belas kurang lima, Irina menyalakan lampu kilat magnesiumnya. Di foto itu pintu perpustakaan sedikit terbuka.",
+          "📸 Pelat kaca"
+        ],
+        [
+          "Api Perapian",
+          "Api di perpustakaan masih menyala tinggi. Seseorang menambahkan kayu setelah pukul sebelas.",
+          "🪵 Kayu birch"
+        ]
+      ]
+    ],
+    "winterpaleis-2": [
+      "Bagian II · Telur Permata",
+      "Pandai Emas Pavel mengerjakan telur itu selama setahun, atas pesanan sang count. Tengah malam telur itu seharusnya terbuka, dengan kejutan untuk keluarga. Telur itu kosong.",
+      "Istana emas kecil itu kembali di dalam telur. Gemboknya menutup lagi, dan kamu tahu siapa yang membukanya.",
+      "Di pesta dansa semua orang membicarakan semua orang. Keterangan tentang dua orang: tentukan dulu posisi salah satunya.",
+      [
+        [
+          "Gembok Kecil",
+          "Telur itu dibuka dengan kunci sebesar butir beras. Kunci itu masih tertancap di lubangnya.",
+          "🗝️ Kunci emas kecil"
+        ],
+        [
+          "Pandai Emas Pavel Menjelaskan",
+          "Di dalam telur ada istana emas sebesar bidal. Dia tahu persis beratnya.",
+          "⚖️ Timbangan emas"
+        ],
+        [
+          "Lemari Kaca",
+          "Telur itu tersimpan di balik kaca di ruang cermin. Kacanya utuh dan kuncinya tertutup.",
+          "🔐 Kunci lemari kaca"
+        ],
+        [
+          "Pengasuh Mabel dan Anak-anak",
+          "Pukul sebelas, anak-anak boleh melihat telur itu. Kata Mabel, saat itu telurnya masih tertutup.",
+          "🎠 Kuda mainan"
+        ],
+        [
+          "Fotografer Irina Memotret Telur Itu",
+          "Di fotonya dari pukul sembilan, telur itu terbuka, dan kosong. Pukul sembilan, telur itu masih tertutup, kata Pavel.",
+          "🖼️ Cetakan foto"
+        ],
+        [
+          "Kepala Pelayan Fyodor Memegang Semua Kunci",
+          "Selama empat puluh tahun dia membawa kunci-kunci istana. Di gantungannya ada satu kunci yang tak cocok untuk pintu mana pun.",
+          "🔑 Gantungan kunci"
+        ],
+        [
+          "Serbuk Emas",
+          "Di karpet ruang mantel ada serbuk emas. Pavel memakainya untuk memoles.",
+          "✨ Serbuk emas"
+        ],
+        [
+          "Peseluncur Vera dan Mof Bulunya",
+          "Dia memakai mof bulu saat berseluncur. Di lapisan dalamnya ada sesuatu yang keras, sebesar bidal.",
+          "🦊 Mof bulu"
+        ]
+      ]
+    ],
+    "winterpaleis-3": [
+      "Bagian III · Gelanggang Es",
+      "Pada hari tahun baru, pesta berlanjut di luar. Obor-obor di sekeliling kolam yang membeku, musik di tepinya. Di atas es ada jejak tiga pasang sepatu seluncur.",
+      "Obor-obor padam. Dari tiga jejak di atas es itu, kini kamu tahu siapa yang membuat jejak ketiga.",
+      "Di atas es semua orang memperhatikan kakinya sendiri. Orang yang bilang di mana dia TIDAK berada juga memberitahumu sesuatu: langsung coret ruangan itu.",
+      [
+        [
+          "Tiga Jejak",
+          "Tengah malam, hanya Vera yang berseluncur, kata semua orang. Di atas es ada tiga jejak menuju ke tengah.",
+          "⛸️ Sepatu seluncur indah"
+        ],
+        [
+          "Peseluncur Vera Membawakan Programnya",
+          "Setiap malam dia membawakan program yang sama, dengan musik yang sama. Kemarin programnya satu menit lebih pendek.",
+          "🎵 Kotak musik"
+        ],
+        [
+          "Lubang di Es",
+          "Di tengah kolam ada lubang di es, supaya ikan mendapat udara. Ada sebuah obor mengambang di dalamnya.",
+          "🔥 Obor"
+        ],
+        [
+          "Letnan Dmitri Tak Bisa Berseluncur",
+          "Perwira pengawal yang tak bisa berseluncur, katanya. Sepatu seluncurnya baru diasah.",
+          "🪨 Batu asah"
+        ],
+        [
+          "Komponis Sergei di Tepi Kolam",
+          "Dia bermain biola di tepi kolam, dengan sarung tangan terpasang. Tak ada yang bermain biola dengan sarung tangan.",
+          "🎻 Biola"
+        ],
+        [
+          "Rumah Kereta",
+          "Di rumah kereta tergantung sepatu seluncur seluruh keluarga. Satu kaitnya kosong.",
+          "🪝 Kait kosong"
+        ],
+        [
+          "Pengasuh Mabel Berasal dari Inggris",
+          "Di Inggris tak ada yang berseluncur, katanya. Di atas es dia membuat angka tiga yang sempurna.",
+          "🧣 Syal wol"
+        ],
+        [
+          "Di Bawah Es",
+          "Lewat es yang bening kamu bisa melihat dasar kolam. Ada sesuatu yang berkilau di sana.",
+          "💍 Cincin stempel"
+        ]
+      ]
+    ],
+    "winterpaleis-4": [
+      "Bagian IV · Ruang Cermin",
+      "Seminggu kemudian sang countess mengadakan pesta dansa kedua, di ruang cermin, untuk menunjukkan bahwa keluarga ini tetap berjalan. Seratus cermin dan seratus tamu. Ada satu bayangan cermin yang janggal.",
+      "Cermin-cermin kembali tergantung lurus dan pintu di baliknya tertutup. Satu bayangan itu nyata, dan kamu tahu milik siapa.",
+      "Di ruang cermin setiap orang tampak dua kali, jadi perhatikan siapa yang berdiri tepat di sebelah siapa. Taruh dulu tersangka yang pilihannya paling sedikit; sisanya menyusul.",
+      [
+        [
+          "Seratus Cermin",
+          "Di ruang cermin kamu melihat setiap orang sepuluh kali. Seseorang melihat sang count di sebuah cermin, setelah tengah malam.",
+          "🪞 Cermin tangan"
+        ],
+        [
+          "Countess Yelena Berbaju Hitam",
+          "Dia mengenakan pakaian berkabung, sebagaimana mestinya. Di balik gaun hitam itu dia memakai gaun biru dari pesta dansa.",
+          "👗 Gaun pesta"
+        ],
+        [
+          "Bayangan Cermin",
+          "Di cermin tampak seorang pria berkumis di dekat pintu. Di dekat pintu tak ada siapa-siapa.",
+          "🎩 Topi tinggi"
+        ],
+        [
+          "Fotografer Irina dan Cermin-cermin",
+          "Cermin dan lampu kilat tak cocok, katanya. Tapi dia tetap memotret ruangan itu, dari balik tirai.",
+          "🎞️ Negatif"
+        ],
+        [
+          "Letnan Dmitri dan Tunangannya",
+          "Dia berdansa satu kali dengan tunangannya, yang pertama dalam seminggu. Sepanjang dansa dia memandangi cermin.",
+          "💐 Korsase"
+        ],
+        [
+          "Kepala Pelayan Fyodor Menggosok",
+          "Setiap pagi dia menggosok seratus cermin. Di satu cermin ada sidik jari, setinggi anak kecil.",
+          "🧽 Kain kulit"
+        ],
+        [
+          "Pintu di Balik Cermin",
+          "Di balik cermin kelima puluh ada pintu ke perpustakaan. Seseorang tahu tentang pintu itu.",
+          "🚪 Pintu cermin"
+        ],
+        [
+          "Komponis Sergei Memainkan Wals Itu Lagi",
+          "Di pesta dansa kedua dia memainkan wals yang sama. Saat pengulangan, sang countess memandang ke arah pintu.",
+          "📜 Kartu dansa"
+        ]
+      ]
+    ],
+    "winterpaleis-5": [
+      "Bagian V · Kereta Luncur",
+      "Pada bulan Februari seisi rumah berkereta di atas Sungai Neva yang membeku, dengan kereta luncur yang tali kekangnya bergiring-giring. Empat kereta luncur berangkat, tiga yang kembali.",
+      "Kereta luncur keempat kembali di rumah kereta dan giring-giringnya diam. Orang yang pulang berjalan kaki sudah bercerita kepadamu.",
+      "Di bawah selimut bulu tak ada yang melihat siapa yang duduk di sampingnya. Mulailah dari orang yang bilang dia sendirian; itu sekaligus menutup satu ruangan bagi yang lain.",
+      [
+        [
+          "Empat Kereta Luncur",
+          "Empat kereta luncur, empat kuda, dua belas orang di bawah selimut bulu. Yang tiba di istana tiga kereta luncur.",
+          "🔔 Giring-giring"
+        ],
+        [
+          "Kepala Pelayan Fyodor Mengatur Tempat Duduk",
+          "Selama empat puluh tahun dia menentukan siapa duduk di kereta luncur mana. Tahun ini dia menukar dua nama.",
+          "📃 Daftar tempat duduk"
+        ],
+        [
+          "Kereta Luncur Keempat",
+          "Keesokan paginya kereta luncur keempat berdiri di dekat rumah kereta, tanpa kuda. Selimutnya kering.",
+          "🐎 Tali kekang"
+        ],
+        [
+          "Peseluncur Vera Ikut Berseluncur",
+          "Sepanjang jalan dia berseluncur di samping kereta-kereta luncur. Di tengah jalan dia sudah mendahului semua orang.",
+          "🎀 Selempang merah"
+        ],
+        [
+          "Lubang di Sungai Neva",
+          "Di Sungai Neva para nelayan membuat lubang di es. Kereta luncur keempat melaju persis di dekat salah satunya, dan tak ada yang berteriak.",
+          "🎣 Tali pancing"
+        ],
+        [
+          "Pengasuh Mabel Menghitung",
+          "Di setiap perhentian dia menghitung anak-anak; itu tugasnya. Dia juga menghitung orang dewasa, dan kurang satu.",
+          "📒 Buku catatan"
+        ],
+        [
+          "Pandai Emas Pavel Tinggal di Rumah",
+          "Dia tidak ikut, dia harus bekerja. Meja kerjanya dingin saat kereta-kereta luncur kembali.",
+          "🛠️ Pahat ukir"
+        ],
+        [
+          "Siapa yang Naik Kereta Luncur Keempat",
+          "Dua orang berangkat dengan kereta luncur keempat. Salah satunya kembali berjalan kaki, dengan sepatu bot yang kering.",
+          "👢 Sepatu bot bulu"
+        ]
+      ]
+    ],
+    "winterpaleis-6": [
+      "Bagian VI · Surat Bersegel",
+      "Seorang kurir dari istana kaisar membawa surat untuk sang count, dengan segel lak merah. Seseorang sudah membacanya.",
+      "Surat itu kembali di laci, segelnya utuh. Orang yang pertama membacanya sudah lama tahu kalimat ketiganya.",
+      "Mulai dari sini hampir setiap kasus ada di papan besar sembilan kali sembilan. Gunakan pensil: coret kotak yang tidak mungkin, lalu lihat apa yang tersisa.",
+      [
+        [
+          "Lak Merah",
+          "Segel istana kaisar berwarna merah dan bundar. Di surat ini segelnya sudah dua kali dilelehkan.",
+          "🔴 Lak segel"
+        ],
+        [
+          "Kepala Pelayan Fyodor Menerima Kurir",
+          "Dari gerbang ke perpustakaan cukup lima menit berjalan kaki. Dengan surat itu dia butuh dua puluh menit.",
+          "✉️ Surat istana"
+        ],
+        [
+          "Countess Yelena Membacakan Surat",
+          "Dia membacakan surat itu untuk keluarga. Satu kalimat dia lewati.",
+          "👓 Lorgnet"
+        ],
+        [
+          "Ketel",
+          "Segel bisa dilepas dengan uap. Di dapur, ketel ada di atas api pukul tiga dini hari.",
+          "🫖 Samovar"
+        ],
+        [
+          "Letnan Dmitri Mengenali Segel Itu",
+          "Sebagai perwira, dia melihat surat dari istana kaisar setiap minggu. Dia tahu cara memasang kembali segel seperti itu.",
+          "🎖️ Medali"
+        ],
+        [
+          "Fotografer Irina di Kamar Gelap",
+          "Di kamar gelapnya ada pelat kaca yang digantung untuk dikeringkan. Di pelat itu tampak sebuah surat.",
+          "🧪 Cairan pengembang"
+        ],
+        [
+          "Komponis Sergei dan Istana Kaisar",
+          "Istana kaisar meminta sebuah wals untuk pesta dansa musim semi, kata surat itu. Sergei sudah tahu sejak seminggu yang lalu.",
+          "🎶 Wals musim semi"
+        ],
+        [
+          "Isi Surat Itu",
+          "Tiga kalimat, dengan tulisan tangan yang indah. Kalimat ketiga tentang warisan, dan seseorang sudah mengetahuinya.",
+          "🪶 Pena bulu angsa"
+        ]
+      ]
+    ],
+    "winterpaleis-7": [
+      "Bagian VII · Es Mencair",
+      "Pada bulan April es di Sungai Neva pecah. Bongkahan es sebesar rumah hanyut melewati istana menuju laut. Bersama bongkahan itu, sebuah rahasia muncul ke permukaan.",
+      "Sungai Neva kembali mengalir bebas ke laut. Apa yang disimpan es sepanjang musim dingin kini ada di mejamu.",
+      "Papannya makin besar dan keterangannya makin pelit. Kalau laporan menyebut sebuah ruangan kosong, seluruh ruangan itu tercoret untuk semua orang.",
+      [
+        [
+          "Es Pecah",
+          "Dengan dentuman seperti tembakan meriam, es itu pecah. Seisi rumah berlari ke tepi sungai.",
+          "🧊 Bongkahan es"
+        ],
+        [
+          "Cincin Stempel",
+          "Cincin dari kolam itu tidak muat di jari sang count. Cincin itu milik tangan yang lebih kecil.",
+          "📏 Pengukur cincin"
+        ],
+        [
+          "Pengasuh Mabel Menulis Surat ke Rumah",
+          "Setiap minggu dia menulis surat ke Inggris. Minggu ini dia menulis surat delapan halaman, lalu merobeknya.",
+          "📮 Perangko"
+        ],
+        [
+          "Rumah Kereta Kebanjiran",
+          "Air lelehan es naik sampai ke as kereta-kereta. Satu koper tidak mengapung; terlalu berat.",
+          "🧳 Koper"
+        ],
+        [
+          "Kepala Pelayan Fyodor Pensiun",
+          "Setelah empat puluh tahun dia ingin pulang ke desanya. Perjalanannya dibayar dengan emas.",
+          "🪙 Rubel emas"
+        ],
+        [
+          "Peseluncur Vera Pergi",
+          "Musim dingin depan dia berseluncur di Davos, dibiayai sang count. Padahal sang count pernah bilang dia tidak akan membayar.",
+          "🎫 Tiket kereta"
+        ],
+        [
+          "Pandai Emas Pavel dan Telur Kedua",
+          "Dia sudah mengerjakan telur kedua. Bentuknya persis sama dengan yang pertama, sampai ke gembok kecilnya.",
+          "🥚 Telur kedua"
+        ],
+        [
+          "Yang Muncul ke Permukaan",
+          "Di antara bongkahan es mengapung sebuah peti kecil milik sang count. Di dalamnya ada surat, masih kering.",
+          "🗃️ Peti kedap air"
+        ]
+      ]
+    ],
+    "winterpaleis-8": [
+      "Bagian VIII · Pesta Dansa Terakhir",
+      "Pada bulan Mei istana ditutup untuk musim panas dan keluarga pindah ke rumah peristirahatan. Satu wals lagi di bawah lampu-lampu gantung, dengan wajah-wajah yang sama seperti pada malam tahun baru.",
+      "Van Dam memakai topi bulunya, membungkuk kepada sang countess, lalu naik kereta kuda terakhir ke stasiun. Lilin-lilin sudah padam dan abad baru telah dimulai. Rahasia terakhir abad yang lama sudah kamu pecahkan.",
+      "Kasus-kasus terakhir, hampir semuanya di papan besar. Jangan terpaku pada yang paling sulit: taruh dulu yang lain, maka untuk yang terakhir sering hanya tersisa satu kotak.",
+      [
+        [
+          "Kain Penutup",
+          "Fyodor menutupi kursi-kursi dengan kain putih. Satu kursi di perpustakaan sudah tertutup kain sejak Januari.",
+          "🛋️ Kain penutup debu"
+        ],
+        [
+          "Countess Yelena Mewarisi Istana",
+          "Menurut surat dari istana kaisar, dialah yang mewarisi istana ini. Pada bulan Desember dia sudah memesan tirai dengan monogramnya sendiri.",
+          "🧵 Monogram"
+        ],
+        [
+          "Letnan Dmitri Menikah",
+          "Pernikahannya bulan Juni, di kapel istana. Dia meminta pastor memajukan tanggalnya.",
+          "💌 Undangan pernikahan"
+        ],
+        [
+          "Fotografer Irina Membuat Foto Bersama",
+          "Delapan orang di depan tangga, untuk majalah. Salah satunya tidak menatap lensa, tetapi ke arah perpustakaan.",
+          "🖼️ Foto bersama"
+        ],
+        [
+          "Komponis Sergei Menuntaskan Walsnya",
+          "Walsnya kini berjudul Malam Tahun Baru. Pengulangan dari bulan Januari sudah tidak ada.",
+          "🎹 Partitur baru"
+        ],
+        [
+          "Pandai Emas Pavel Mengemas Telur Itu",
+          "Telur itu ikut ke rumah peristirahatan, dalam peti berisi jerami. Pavel mengemasnya sendiri dan tak mau ada yang melihat.",
+          "📦 Peti jerami"
+        ],
+        [
+          "Pengasuh Mabel Berpamitan",
+          "Setelah enam tahun dia kembali ke Inggris. Anak-anak memberinya gambar malam tahun baru.",
+          "🖍️ Gambar anak"
+        ],
+        [
+          "Tengah Malam, Sekali Lagi",
+          "Jam berdentang dua belas kali, sama seperti pada malam tahun baru. Kali ini tak ada yang berdiri di dekat pintu perpustakaan.",
+          "🕰️ Jam lemari"
+        ]
+      ]
+    ],
+    "safarilodge": [
+      "Bagian I · Migrasi Besar",
+      "Twiga Lodge, Maasai Mara, Agustus 1974. Sejuta wildebeest melintas di dekat lodge, dan setiap tenda terisi. Seusai api unggun, pembuat film Rupert Vane tergeletak di kamar gelap, di antara gulungan-gulungan filmnya.",
+      "Api sudah padam dan wildebeest terus bergerak dalam gelap. Rol 40 masih hilang, tetapi kamu tahu siapa yang menutup pintu itu.",
+      "Lodge ini satu beranda panjang dengan tenda-tenda di sekelilingnya. Mulailah dari orang yang menyebutkan di area mana dia berada; “tepat di sebelah” pohon akasia hanya berlaku untuk kotak yang persis di sampingnya, tidak pernah diagonal.",
+      [
+        [
+          "Seusai Api Unggun",
+          "Pukul sepuluh, semua orang masih bernyanyi di dekat api. Pukul sebelas, satu kursi kosong, dan pintu kamar gelap tertutup.",
+          "🪵 Kayu bakar"
+        ],
+        [
+          "Kamar Gelap",
+          "Lampu merahnya masih menyala. Rol-rol film tersusun berurutan, kecuali satu.",
+          "🔴 Lampu merah"
+        ],
+        [
+          "Pemilik Lodge Wambui Mengetuk",
+          "Setiap malam dia mengetuk setiap pintu untuk mengucapkan selamat malam. Di kamar gelap tak ada yang menjawab.",
+          "🔑 Kunci induk"
+        ],
+        [
+          "Pemandu Otieno dan Perjalanan Terakhir",
+          "Siang itu dia mengantar si pembuat film ke sungai. Mereka kembali satu jam lebih lambat dari rencana.",
+          "🚙 Buku perjalanan"
+        ],
+        [
+          "Perekam Suara Felix Merekam Semuanya",
+          "Alat perekamnya menyala sepanjang malam di dekat api unggun. Pukul setengah sebelas, pitanya hening selama satu menit.",
+          "📼 Pita suara"
+        ],
+        [
+          "Chef Hamisi dan Kopi",
+          "Seusai makan dia membagikan kopi, dengan kayu manis. Cangkir si pembuat film masih utuh di kamar gelap.",
+          "☕ Cangkir kopi"
+        ],
+        [
+          "Rekaman Terakhir",
+          "Di papan klep tertulis: rol 40, take 12. Rol 40 tak ditemukan di mana pun.",
+          "🎬 Papan klep"
+        ],
+        [
+          "Ahli Biologi Birgit Pulang Larut",
+          "Dia baru kembali dari singa-singanya tengah malam. Mesin jipnya dingin.",
+          "📡 Antena pelacak"
+        ]
+      ]
+    ],
+    "safarilodge-2": [
+      "Bagian II · Negatif",
+      "Felix mencuci rol-rol yang memang ditinggalkan si pembuat film. Satu rol sudah jadi. Di bingkai terakhir ada seseorang yang seharusnya tidak ada di sana.",
+      "Negatif itu tergantung dijepit untuk dikeringkan. Siapa yang ada di foto itu, kini kamu tahu. Mengapa, belum.",
+      "Di beranda semua orang membicarakan semua orang. Keterangan tentang dua orang: tentukan dulu posisi salah satunya.",
+      [
+        [
+          "Rol 39",
+          "Rol 39 isinya wildebeest, wildebeest, dan wildebeest lagi. Di bingkai terakhir ada seorang manusia di dekat sungai.",
+          "🎞️ Rol film 39"
+        ],
+        [
+          "Perekam Suara Felix Mencuci Film",
+          "Sudah sepuluh tahun dia bekerja dengan si pembuat film. Dia tahu rol mana yang hilang tanpa menghitung.",
+          "🧪 Cairan pengembang"
+        ],
+        [
+          "Jurnalis Amina Ingin Satu Cetakan",
+          "Untuk korannya dia ingin satu foto migrasi. Dia meminta bingkai terakhir, bukan foto wildebeest.",
+          "📰 Guntingan koran"
+        ],
+        [
+          "Kaca Pembesar",
+          "Di bawah kaca pembesar, pria di foto itu kecil, tetapi topinya tidak. Di lodge, hanya satu orang yang memakai topi seperti itu.",
+          "🔍 Kaca pembesar"
+        ],
+        [
+          "Pemandu Otieno Kenal Tempat Itu",
+          "Dia mengenali tikungan sungai di foto itu. Turis tak pernah ke sana, katanya, hanya pemandu.",
+          "🗺️ Peta Mara"
+        ],
+        [
+          "Pilot Kiprono Terbang di Atasnya",
+          "Siang itu dia terbang rendah di atas sungai, untuk para tamu. Dia melihat jip yang tak semestinya ada di sana.",
+          "✈️ Buku log terbang"
+        ],
+        [
+          "Dokter Hewan Njeri Kenal Gerbang Itu",
+          "Di belakang pria itu ada gerbang cagar alam. Gerbang itu terkunci sejak minggu lalu, dan dialah yang memegang kuncinya.",
+          "🔒 Gembok"
+        ],
+        [
+          "Yang Seharusnya Tidak Ada",
+          "Di foto itu ada seseorang yang hari itu terbaring sakit, menurut pengakuannya sendiri. Di lodge tidak ada dokter.",
+          "📝 Surat sakit"
+        ]
+      ]
+    ],
+    "safarilodge-3": [
+      "Bagian III · Kubangan",
+      "Dari menara pantau terlihat kubangan. Pada malam hari semua hewan datang minum: gajah, zebra, seekor singa. Di lumpur juga ada jejak sepatu.",
+      "Hewan-hewan minum lagi dan lumpur mengering di bawah matahari. Jejak sepatu itu kini berakhir di mejamu.",
+      "Di kubangan semua orang memperhatikan hewan, bukan satu sama lain. Orang yang bilang di mana dia TIDAK berada juga memberitahumu sesuatu: langsung coret area itu.",
+      [
+        [
+          "Jejak Sepatu",
+          "Di lumpur ada jejak gajah, zebra, dan singa. Dan jejak sepatu, ukuran tiga puluh tujuh.",
+          "👞 Cetakan gips"
+        ],
+        [
+          "Ahli Biologi Birgit di Menara",
+          "Setiap malam dia menghitung singa di kubangan. Semalam dia menghitung tiga, dan sebuah senter.",
+          "🔦 Senter"
+        ],
+        [
+          "Pemandu Otieno Membaca Jejak",
+          "Dia membaca jejak seperti orang lain membaca koran. Jejak ini mengarah dari kubangan ke kamar gelap, katanya.",
+          "🐾 Buku jejak"
+        ],
+        [
+          "Lampu di Menara",
+          "Sebuah lampu di menara menerangi kubangan untuk para tamu. Pukul dua, lampu itu padam, lalu menyala lagi.",
+          "💡 Lampu menara"
+        ],
+        [
+          "Chef Hamisi Mengambil Air",
+          "Untuk dapur dia memompa air dari sumur, bukan dari kubangan. Tapi sepatu botnya penuh lumpur.",
+          "🥾 Sepatu bot karet"
+        ],
+        [
+          "Jurnalis Amina Merekam",
+          "Pada malam hari alat perekam kasetnya ada di menara. Terdengar seekor gajah, dan seorang wanita yang berkata: sekarang.",
+          "📼 Kaset"
+        ],
+        [
+          "Dokter Hewan Njeri Menunggu",
+          "Setiap malam seekor badak dengan pemancar di kakinya minum di sini. Semalam badak itu tidak datang.",
+          "📟 Pemancar"
+        ],
+        [
+          "Ukuran Tiga Puluh Tujuh",
+          "Di lodge ada tiga orang yang ukuran sepatunya tiga puluh tujuh. Salah satunya selalu bertelanjang kaki.",
+          "👟 Sepatu kanvas"
+        ]
+      ]
+    ],
+    "safarilodge-4": [
+      "Bagian IV · Musim Hujan Panjang",
+      "Setelah migrasi, hujan datang, lebih awal dan lebih deras daripada sebelumnya. Landasan tergenang. Tak ada yang bisa pergi, tak ada yang bisa masuk.",
+      "Hujan berhenti dan landasan mengering. Orang yang tak bisa masuk itu ternyata sudah ada di sini sejak awal.",
+      "Saat hujan semua orang duduk berdesakan di bawah satu atap, jadi perhatikan siapa yang berdiri tepat di sebelah siapa. Taruh dulu tersangka yang pilihannya paling sedikit; sisanya menyusul.",
+      [
+        [
+          "Landasan Tergenang",
+          "Dua hari hujan dan landasan menjadi danau. Pesawat berdiri di tengahnya, air setinggi roda.",
+          "📏 Tongkat pengukur"
+        ],
+        [
+          "Pilot Kiprono Tak Bisa Pergi",
+          "Dia harus ke Nairobi, katanya. Di tasnya sudah tergantung label untuk kota lain.",
+          "🏷️ Label bagasi"
+        ],
+        [
+          "Pemilik Lodge Wambui Menghubungi Nairobi",
+          "Lewat radio dia melaporkan ada delapan tamu yang terjebak. Jumlahnya sembilan.",
+          "📻 Pesawat radio"
+        ],
+        [
+          "Chef Hamisi Berhitung",
+          "Dengan hujan seperti ini, dia punya makanan untuk sepuluh hari. Setelah tiga hari, berasnya habis.",
+          "🍚 Karung beras"
+        ],
+        [
+          "Perekam Suara Felix dan Atap Bocor",
+          "Atap garasi bocor, persis di atas peti-peti film. Felix baru menaruhnya di sana kemarin.",
+          "🧳 Peti film"
+        ],
+        [
+          "Jurnalis Amina Menulis",
+          "Dia tak bisa mengirim tulisannya, jadi dia menulisnya ulang tiga kali. Versi ketiga tidak membahas wildebeest.",
+          "🗒️ Buku catatan"
+        ],
+        [
+          "Pemandu Otieno Tahu Jalan",
+          "Ada jalan melewati perbukitan, katanya, bahkan saat hujan. Dia baru tahu itu setelah tiga hari.",
+          "🧭 Kompas"
+        ],
+        [
+          "Tak Ada yang Masuk",
+          "Tak ada yang bisa masuk ke lodge. Tapi pada hari keempat ada jejak kaki baru menuju garasi, dari luar ke dalam.",
+          "☔ Payung"
+        ]
+      ]
+    ],
+    "safarilodge-5": [
+      "Bagian V · Naik Balon",
+      "Seorang pilot balon dari Nairobi menawarkan perjalanan untuk para tamu, tinggi di atas padang. Saat matahari terbit, balon itu naik. Balon itu mendarat dengan satu penumpang kelebihan.",
+      "Balon itu terlipat di garasi. Penumpang ketujuh punya nama, dan kamu sudah mencatatnya.",
+      "Di atas padang semua orang melihat segalanya, kecuali siapa yang berdiri di sampingnya. Mulailah dari orang yang bilang dia sendirian; itu sekaligus menutup satu area bagi yang lain.",
+      [
+        [
+          "Enam Tempat",
+          "Keranjangnya muat enam orang dan pilot balon. Setelah mendarat, yang turun tujuh orang.",
+          "🧺 Keranjang balon"
+        ],
+        [
+          "Pilot Kiprono Mengamati dari Darat",
+          "Seorang pilot tak suka terbang dengan orang lain di kemudi. Dia mengamati dari bawah, dengan teropong.",
+          "🔭 Teropong"
+        ],
+        [
+          "Ahli Biologi Birgit Mencari Singa-singanya",
+          "Dari atas kamu bisa melihat satu kawanan sekaligus. Dia melihat singanya kurang satu, dan jipnya kelebihan satu.",
+          "🦁 Peta kawanan"
+        ],
+        [
+          "Karung Pasir",
+          "Balon membawa karung pasir untuk turun. Yang tergantung empat, padahal seharusnya enam.",
+          "⏳ Karung pasir"
+        ],
+        [
+          "Pemilik Lodge Wambui Menghitung Tamu",
+          "Dia mendaftarkan enam tamu, enam nama di formulir. Nama ketujuh ditambahkan dengan pensil.",
+          "📋 Formulir pendaftaran"
+        ],
+        [
+          "Perekam Suara Felix Merekam Angin",
+          "Di atas padang hanya terdengar suara pembakar. Di pitanya terdengar suara yang bukan suara pilot balon.",
+          "🎙️ Mikrofon"
+        ],
+        [
+          "Chef Hamisi Menyiapkan Sarapan",
+          "Setelah mendarat ada sarapan di padang, untuk enam orang. Dia menyiapkan untuk tujuh.",
+          "🥐 Keranjang sarapan"
+        ],
+        [
+          "Penumpang Ketujuh",
+          "Semua orang melihat penumpang ketujuh turun. Tak ada yang melihatnya naik.",
+          "🎟️ Tiket terbang"
+        ]
+      ]
+    ],
+    "safarilodge-6": [
+      "Bagian VI · Dokter Terbang",
+      "Pada suatu siang tanpa angin, sebuah pesawat kecil mendarat di landasan, dengan palang merah di ekornya dan seorang dokter di dalamnya. Tak ada yang memanggilnya.",
+      "Pesawat kecil itu pergi dengan peti kosong. Orang yang memanggil dokter itu tidak melakukannya untuk orang sakit, dan kini kamu tahu.",
+      "Mulai dari sini hampir setiap kasus ada di papan besar sembilan kali sembilan. Gunakan pensil: coret kotak yang tidak mungkin, lalu lihat apa yang tersisa.",
+      [
+        [
+          "Palang Merah",
+          "Pesawat kecil itu datang dari Nairobi, membawa peti obat. Menurut radio, tak ada orang dari lodge yang meminta dokter.",
+          "💊 Peti obat"
+        ],
+        [
+          "Dokter Hewan Njeri Kenal Dokter Itu",
+          "Mereka kuliah bersama di Nairobi. Dia berpura-pura tak pernah melihatnya.",
+          "🎓 Foto angkatan"
+        ],
+        [
+          "Pilot Kiprono dan Panggilan Itu",
+          "Panggilan itu datang lewat radio di pesawat Kiprono. Pesawat itu terkunci sepanjang malam.",
+          "🎧 Headset pilot"
+        ],
+        [
+          "Pemandu Otieno Mengantar Dokter",
+          "Dokter itu ingin melihat kamar gelap. Tak ada dokter yang ingin melihat kamar gelap.",
+          "🚪 Gagang pintu"
+        ],
+        [
+          "Jurnalis Amina Mewawancarai",
+          "Dia bertanya kepada dokter siapa yang sakit. Dokter itu menyebut sebuah nama, dan itu nama si pembuat film.",
+          "📝 Catatan wawancara"
+        ],
+        [
+          "Chef Hamisi Membuat Teh",
+          "Di lodge semua orang minum teh dengan susu dan gula. Dokter itu meminumnya tanpa apa-apa, sama seperti satu orang di sini.",
+          "🫖 Teko teh"
+        ],
+        [
+          "Resep",
+          "Dokter itu meninggalkan resep atas nama lodge. Itu obat tidur, dan sudah habis.",
+          "📄 Resep"
+        ],
+        [
+          "Siapa yang Memanggilnya",
+          "Seseorang memanggil dokter itu dengan pemancar yang bukan milik lodge. Singa-singa Birgit memakai pemancar seperti itu.",
+          "📡 Kalung pemancar"
+        ]
+      ]
+    ],
+    "safarilodge-7": [
+      "Bagian VII · Hari Jamhuri",
+      "Hari ini 12 Desember, Hari Jamhuri. Pesta kemerdekaan: musik, daging panggang, dan seluruh lodge libur. Hampir seluruh lodge.",
+      "Band memainkan lagu terakhir dan bendera diturunkan. Siapa yang tidak ada di pesta, kini kamu tahu persis.",
+      "Papannya makin besar dan pestanya makin ramai. Kalau laporan menyebut sebuah area kosong, seluruh area itu tercoret untuk semua orang.",
+      [
+        [
+          "Bendera",
+          "Pukul dua belas siang bendera dikibarkan dan seluruh lodge menyanyikan lagu kebangsaan. Satu suara tidak terdengar.",
+          "🇰🇪 Bendera Kenya"
+        ],
+        [
+          "Chef Hamisi Memanggang",
+          "Sejak pukul enam seekor kambing berputar di pemanggang. Pukul sepuluh, pemanggangnya berhenti, dan Hamisi tidak ada.",
+          "🍖 Tusuk panggang"
+        ],
+        [
+          "Pemilik Lodge Wambui Berpidato",
+          "Sebelas tahun merdeka, dan sepuluh tahun Twiga Lodge. Dia berterima kasih kepada semua orang dengan menyebut nama mereka, kecuali satu.",
+          "📜 Naskah pidato"
+        ],
+        [
+          "Band dari Kisumu",
+          "Di beranda sebuah band memainkan benga. Pemain gitarnya kenal si pembuat film, dan si pembuat film kenal dia.",
+          "🎸 Gitar"
+        ],
+        [
+          "Pemandu Otieno Bertugas",
+          "Di hari libur harus ada yang menemani para tamu. Otieno menawarkan diri, untuk pertama kalinya dalam sepuluh tahun.",
+          "📅 Daftar jaga"
+        ],
+        [
+          "Ahli Biologi Birgit Ikut Merayakan",
+          "Di Denmark tidak ada Hari Jamhuri, katanya sambil tertawa. Dia ikut menyanyikan lagu kebangsaan, semua baitnya.",
+          "🎶 Lembar lagu"
+        ],
+        [
+          "Perekam Suara Felix Merekam Pesta",
+          "Dia merekam empat jam musik. Di tengahnya ada sepuluh menit hening, padahal band tak pernah berhenti.",
+          "🎚️ Perekam pita"
+        ],
+        [
+          "Hampir Seluruh Lodge",
+          "Seluruh lodge libur, dan semua orang ada di pesta. Tapi di buku garasi tercatat satu perjalanan pukul tiga.",
+          "🚙 Buku garasi"
+        ]
+      ]
+    ],
+    "safarilodge-8": [
+      "Bagian VIII · Selamat Tinggal, Padang",
+      "Bulan Maret lodge ditutup selama musim hujan panjang. Wildebeest sudah lama kembali ke selatan. Satu malam lagi di dekat api unggun, dengan wajah-wajah yang sama seperti bulan Agustus.",
+      "Van Dam naik paling akhir ke pesawat kecil menuju Nairobi dan melambai sekali ke arah beranda. Wildebeest terus bergerak dan lodge menjadi sunyi. Rekaman terakhir adalah milikmu.",
+      "Kasus-kasus terakhir, hampir semuanya di papan besar. Jangan terpaku pada yang paling sulit: taruh dulu yang lain, maka untuk yang terakhir sering hanya tersisa satu kotak.",
+      [
+        [
+          "Tenda Dibongkar",
+          "Setiap tenda digulung dan disimpan di garasi. Di tenda nomor enam ada rol film di bawah alas tenda.",
+          "⛺ Alas tenda"
+        ],
+        [
+          "Rol 40",
+          "Akhirnya: rol 40. Felix mencucinya di kamar gelap, tempat semuanya bermula.",
+          "🎞️ Rol film 40"
+        ],
+        [
+          "Pilot Kiprono Memilih",
+          "Penerbangan terakhir ke Nairobi punya empat kursi. Lima orang ingin ikut, dan dia sendiri yang memilih.",
+          "🎫 Kartu naik pesawat"
+        ],
+        [
+          "Dokter Hewan Njeri Menghitung Badak",
+          "Hitungannya kembali cocok: tujuh badak, tujuh pemancar. Di garasi dia menemukan pemancar kedelapan.",
+          "📟 Pemancar cadangan"
+        ],
+        [
+          "Jurnalis Amina Menyerahkan Tulisannya",
+          "Minggu depan reportasenya tentang migrasi terbit di koran. Tentang si pembuat film dia menulis satu kalimat. Kalimat itu benar.",
+          "📰 Cetak coba"
+        ],
+        [
+          "Perekam Suara Felix Menyelesaikan Film",
+          "Tanpa si pembuat film, Felix menyelesaikan filmnya. Dia tahu persis gambar mana yang harus menjadi yang terakhir.",
+          "✂️ Gunting film"
+        ],
+        [
+          "Pemilik Lodge Wambui Mengunci",
+          "Dia mengunci setiap pintu sendiri, seperti setiap malam. Di depan kamar gelap dia lama berdiri diam.",
+          "🔐 Seikat kunci"
+        ],
+        [
+          "Api Unggun Terakhir",
+          "Di sekeliling api semua orang bernyanyi sekali lagi. Satu kursi tetap kosong, seperti bulan Agustus, dan kini semua orang tahu sebabnya.",
+          "🔥 Bara api"
+        ]
+      ]
+    ],
+    "hanok": [
+      "Bagian I · Bulan Panen",
+      "Hanok Dalbit, musim gugur 1795. Ini Chuseok: bulan panen sedang purnama dan seluruh keluarga ada di rumah. Seusai pesta bulan, Tuan Yun Jae-ho tergeletak di paviliun dekat kolam, di samping sebuah puisi tiga baris.",
+      "Bulan tenggelam di balik pegunungan. Siapa yang duduk di samping sang tuan di paviliun, ada di daftarmu.",
+      "Hanok adalah rumah dengan pelataran-pelataran dan pintu-pintu geser. Mulailah dari orang yang menyebutkan di area mana dia berada; “tepat di sebelah” guci bulan hanya berlaku untuk kotak yang persis di sampingnya, tidak pernah diagonal.",
+      [
+        [
+          "Bulan Purnama",
+          "Saat Chuseok semua orang memandang bulan dan memanjatkan harapan. Sang tuan rumah memandang kolam.",
+          "🏮 Lentera kertas"
+        ],
+        [
+          "Paviliun",
+          "Dia duduk di atas bantalnya, kuas masih di tangannya. Tinta di gulungan itu sudah kering.",
+          "🖌️ Kuas"
+        ],
+        [
+          "Songpyeon",
+          "Bok-sun membuat seratus kue beras berbentuk bulan sabit. Di piringnya ada tiga, tak tersentuh.",
+          "🍡 Songpyeon"
+        ],
+        [
+          "Nyonya Kang dan Kunci-kunci",
+          "Dia memegang kunci setiap peti di rumah itu. Paviliun tidak berkunci, katanya.",
+          "🗝️ Kunci kuningan"
+        ],
+        [
+          "Pelajar Sang-u Membungkuk",
+          "Saat Chuseok, sang putra membungkuk kepada para leluhur. Dia membungkuk kurang satu kali.",
+          "🕯️ Batang dupa"
+        ],
+        [
+          "Tari Melingkar",
+          "Seusai makan, para perempuan menari bergandengan tangan dalam lingkaran di bawah bulan. Lingkarannya kurang satu tangan dari biasanya.",
+          "🌾 Ikatan padi"
+        ],
+        [
+          "Pelukis Dae-ho Melukis Pesta",
+          "Dia melukis keluarga di bawah bulan. Di sketsanya, sang tuan duduk di paviliun, dengan seseorang di sampingnya.",
+          "🖼️ Sketsa"
+        ],
+        [
+          "Tiga Baris",
+          "Sebuah puisi punya empat baris. Dia menulis tiga, dan baris keempat tak pernah dia tulis.",
+          "📜 Gulungan puisi"
+        ]
+      ]
+    ],
+    "hanok-2": [
+      "Bagian II · Puisi yang Belum Selesai",
+      "Tiga hari setelah pesta, gulungan puisi itu kembali ada di paviliun. Di gulungan itu ada tiga baris. Baris keempat ditulis orang lain.",
+      "Puisi itu sudah selesai, tetapi tidak oleh satu tangan. Siapa yang menulis baris keempat, kini kamu tahu.",
+      "Di hanok semua orang mendengar semuanya lewat kertas pintu. Keterangan tentang dua orang: tentukan dulu posisi salah satunya.",
+      [
+        [
+          "Baris Keempat",
+          "Baris keempat ditulis dengan tulisan tangan yang lain. Rimanya lebih bagus daripada tiga baris lainnya.",
+          "📃 Kertas beras"
+        ],
+        [
+          "Juru Bahasa Hak-su Membaca",
+          "Dia bisa membaca bahasa Tionghoa, Manchu, dan Korea. Dia membaca baris keempat itu dan tertawa.",
+          "📖 Daftar kata"
+        ],
+        [
+          "Batu Tinta",
+          "Di ruang kerja ada batu tinta milik sang tuan. Ada tinta baru yang digosok di atasnya, setelah dia meninggal.",
+          "⚫ Batang tinta"
+        ],
+        [
+          "Pelajar Sang-u Pandai Berpuisi",
+          "Untuk ujian dia menulis satu puisi setiap hari. Tulisan tangannya mirip tulisan ayahnya. Hampir.",
+          "📓 Buku latihan"
+        ],
+        [
+          "Penyulam Yeon-i dan Burung Bangau",
+          "Dia menyulam baris keempat di sekat lipatnya, di samping burung bangau. Dia sudah hafal baris itu.",
+          "🧵 Benang sutra"
+        ],
+        [
+          "Pelukis Dae-ho Membubuhkan Capnya",
+          "Setiap pelukis membubuhkan cap merah di samping karyanya. Di samping baris keempat ada setengah cap.",
+          "🔴 Cap merah"
+        ],
+        [
+          "Nyonya Kang Mengenalinya",
+          "Dia mengenal tulisan tangan setiap orang di rumah itu. Tulisan ini juga dia kenal, katanya, tetapi dia tak bilang milik siapa.",
+          "✉️ Surat lama"
+        ],
+        [
+          "Siapa yang Menyelesaikannya",
+          "Baris keempat bercerita tentang kolam. Hanya orang yang duduk di paviliun yang tahu bagaimana bulan terpantul di sana.",
+          "🪷 Daun teratai"
+        ]
+      ]
+    ],
+    "hanok-3": [
+      "Bagian III · Bulan Kimchi",
+      "Pada bulan November seluruh desa membantu membuat kimchi untuk musim dingin: ratusan kubis, garam, dan cabai merah, dan barisan guci di teras guci. Satu guci berisi sesuatu yang lain.",
+      "Guci-guci itu berdiri tertutup di teras dan kimchi mulai berfermentasi. Bungkusan dari guci terbesar kini ada padamu.",
+      "Saat membuat kimchi, setiap orang bekerja di tempat yang berbeda. Orang yang bilang di mana dia TIDAK berada juga memberitahumu sesuatu: langsung coret area itu.",
+      [
+        [
+          "Seratus Kubis",
+          "Seratus kubis sedang digarami di pelataran. Pagi harinya tinggal sembilan puluh sembilan.",
+          "🥬 Sawi putih"
+        ],
+        [
+          "Koki Bok-sun Mencicipi",
+          "Dia mencicipi setiap guci sebelum ditutup. Satu guci tak boleh dia cicipi, kata Nyonya Kang.",
+          "🥄 Sendok kayu"
+        ],
+        [
+          "Teras Guci",
+          "Dua puluh guci berjajar, yang terbesar paling belakang. Yang terbesar terlalu berat kalau hanya berisi kimchi.",
+          "🏺 Guci tanah liat"
+        ],
+        [
+          "Pedagang Keliling Man-sik Membawa Garam",
+          "Setiap tahun dia membawa garam dari pesisir. Tahun ini dia datang sehari terlalu cepat.",
+          "🧂 Karung garam"
+        ],
+        [
+          "Tabib Ok-hwa Ikut Membantu",
+          "Dia mengiris jahe dan bawang putih. Dia juga mengiris akar yang tak semestinya masuk ke kimchi.",
+          "🫚 Akar ginseng"
+        ],
+        [
+          "Tangan Merah",
+          "Cabai membuat tangan semua orang memerah. Satu orang tangannya bersih, padahal katanya dia membantu seharian.",
+          "🌶️ Cabai merah"
+        ],
+        [
+          "Pelukis Dae-ho Menggambar Pekerjaan Itu",
+          "Dia menggambar para perempuan yang bekerja, barisan demi barisan. Di gambarnya ada tujuh perempuan. Padahal yang ada enam.",
+          "📃 Gambar di atas hanji"
+        ],
+        [
+          "Di Dalam Satu Guci",
+          "Di guci terbesar, di bawah kubis, ada sebuah bungkusan terikat. Bungkusan itu kering, dan isinya sebuah buku.",
+          "📦 Bungkusan kertas minyak"
+        ]
+      ]
+    ],
+    "hanok-4": [
+      "Bagian IV · Ujian Negara",
+      "Pada musim dingin Sang-u berangkat ke Hanyang untuk ujian negara, seperti ayahnya tiga puluh tahun sebelumnya. Seisi rumah menunggu hasilnya. Seseorang sudah tahu soal-soalnya.",
+      "Sang-u lulus, dengan puisi ayahnya. Siapa yang memberinya soal itu, kini kamu tahu, dan dia juga tahu.",
+      "Di ruang kerja semua orang duduk berdesakan di depan buku, jadi perhatikan siapa yang berdiri tepat di sebelah siapa. Taruh dulu tersangka yang pilihannya paling sedikit; sisanya menyusul.",
+      [
+        [
+          "Ujian",
+          "Seribu peserta, satu soal, satu hari. Soalnya: sebuah puisi tentang bulan.",
+          "📚 Empat Kitab"
+        ],
+        [
+          "Pelajar Sang-u Berangkat",
+          "Dia membawa kuas, tinta, dan tiga pasang kaus kaki. Dan sebuah gulungan yang tak dia tunjukkan kepada siapa pun.",
+          "🧦 Kaus kaki katun"
+        ],
+        [
+          "Soal Ujian",
+          "Tulislah empat baris tentang kolam di bawah bulan purnama, begitu bunyi soalnya. Persis puisi sang tuan.",
+          "📋 Soal ujian"
+        ],
+        [
+          "Juru Bahasa Hak-su Kenal Seseorang",
+          "Dia kenal seorang pria di istana yang menuliskan soal-soal ujian. Dia baru bertemu dengannya sebulan lalu, katanya.",
+          "🏷️ Tanda istana"
+        ],
+        [
+          "Nyonya Kang Membayar",
+          "Perjalanan ke Hanyang mahal. Dia membayarnya dengan perak yang tidak berasal dari peti rumah tangga.",
+          "🪙 Koin perak"
+        ],
+        [
+          "Pedagang Keliling Man-sik Membawa Kabar",
+          "Di pasar dia mendengar hasilnya lebih dulu daripada keluarga. Dia baru menyampaikannya setelah tiga hari.",
+          "🧺 Keranjang dagangan"
+        ],
+        [
+          "Penyulam Yeon-i dan Gulungan Itu",
+          "Di sekat lipatnya ada puisi sang tuan. Seseorang menyalinnya, dengan baris keempat ditambahkan.",
+          "🪡 Jarum sulam"
+        ],
+        [
+          "Siapa yang Tahu Soalnya",
+          "Soal itu sudah ada di rumah, tiga bulan sebelum ujian. Hanya sang tuan yang tahu itu, dan satu orang lagi.",
+          "✉️ Surat dari Hanyang"
+        ]
+      ]
+    ],
+    "hanok-5": [
+      "Bagian V · Salju Pertama",
+      "Salju pertama turun di pegunungan dan menutup jalan setapak ke lembah. Tak ada yang bisa meninggalkan rumah. Di ruang teh, lampu menyala sepanjang malam.",
+      "Salju mencair dari jalan setapak. Siapa yang ada di ruang teh, dan bersama siapa, kini kamu tahu.",
+      "Saat bersalju semua orang tinggal di dalam, masing-masing di kamarnya sendiri. Mulailah dari orang yang bilang dia sendirian; itu sekaligus menutup satu area bagi yang lain.",
+      [
+        [
+          "Jalan Tertutup",
+          "Satu meter salju di jalan setapak ke lembah. Di salju di depan gerbang hanya ada satu jejak, menuju ke dalam.",
+          "🥿 Sandal jerami"
+        ],
+        [
+          "Koki Bok-sun Memanaskan Lantai",
+          "Di bawah lantai api menyala sepanjang malam, untuk menghangatkan. Di ruang teh lantainya dingin.",
+          "🔥 Api bawah lantai"
+        ],
+        [
+          "Cahaya di Ruang Teh",
+          "Sepanjang malam sebatang lilin menyala di ruang teh. Tengah malam, Yeon-i melihat dua bayangan di kertas pintu.",
+          "🕯️ Puntung lilin"
+        ],
+        [
+          "Tabib Ok-hwa Menginap",
+          "Karena salju dia tak bisa kembali ke lembah. Dia tidur di kamar tamu, katanya. Tempat tidurnya tak tersentuh.",
+          "🛏️ Selimut terlipat"
+        ],
+        [
+          "Teh",
+          "Dua mangkuk teh di ruang teh, satu kosong dan satu penuh. Yang penuh sudah dingin dan pahit.",
+          "🍵 Mangkuk teh"
+        ],
+        [
+          "Pelukis Dae-ho Melukis Salju",
+          "Dia melukis pegunungan yang tertutup salju. Di lukisannya ada cahaya di sebuah jendela yang tidak ada.",
+          "🏔️ Pemandangan bersalju"
+        ],
+        [
+          "Juru Bahasa Hak-su Membaca di Bawah Cahaya Lilin",
+          "Sepanjang malam dia membaca buku dari Peking. Buku itu tentang bintang-bintang, padahal dia memandangi salju.",
+          "🔭 Buku bintang"
+        ],
+        [
+          "Dua Bayangan",
+          "Bayangan yang satu menuang teh. Yang lain duduk diam, dan memakai topi.",
+          "👒 Topi bulu kuda"
+        ]
+      ]
+    ],
+    "hanok-6": [
+      "Bagian VI · Juru Bahasa dari Peking",
+      "Juru Bahasa Hak-su pulang dari rombongan utusan ke Peking, dengan gerobak penuh buku dan barang-barang aneh. Dia membawa kacamata, sebuah jam, dan sebuah rahasia.",
+      "Jam itu kembali berdentang dua belas kali, bukan tiga belas. Apa yang dibawa sang juru bahasa, sudah dia serahkan kepadamu.",
+      "Mulai dari sini hampir setiap kasus ada di papan besar sembilan kali sembilan. Gunakan pensil: coret kotak yang tidak mungkin, lalu lihat apa yang tersisa.",
+      [
+        [
+          "Jam",
+          "Jam dari Barat yang berdentang sendiri setiap jam. Malam pertama jam itu berdentang tiga belas kali.",
+          "🕰️ Jam Barat"
+        ],
+        [
+          "Juru Bahasa Hak-su Membongkar Barang",
+          "Buku, tinta, kacamata, dan sebuah jam. Di daftar perbatasan masih ada satu barang lagi, yang tidak dia bongkar.",
+          "📋 Daftar muatan"
+        ],
+        [
+          "Kacamata",
+          "Kacamata itu untuk sang tuan, kata Hak-su, untuk matanya. Sang tuan tak pernah meminta kacamata.",
+          "👓 Kacamata bundar"
+        ],
+        [
+          "Nyonya Kang dan Tagihannya",
+          "Dialah yang membayar semua yang dibeli rumah ini. Untuk jam itu dia tidak membayar apa pun, padahal jam itu mahal.",
+          "🧮 Sempoa"
+        ],
+        [
+          "Pelajar Sang-u Ingin ke Peking",
+          "Dia ingin ikut rombongan utusan berikutnya. Sudah sebulan dia diam-diam belajar bahasa Tionghoa.",
+          "📖 Buku bacaan Tionghoa"
+        ],
+        [
+          "Pedagang Keliling Man-sik Ingin Membeli",
+          "Untuk jam itu dia menawarkan garam setahun penuh. Hak-su menolak, tanpa menoleh.",
+          "💰 Kantong uang"
+        ],
+        [
+          "Tabib Ok-hwa dan Ginseng",
+          "Dari Peking juga datang ginseng, lebih baik daripada ginseng di sini. Satu bungkus bukan untuk keluarga.",
+          "🌿 Bungkusan herba"
+        ],
+        [
+          "Rahasia",
+          "Di dalam badan jam ada surat yang terlipat. Surat itu berbahasa Korea, tetapi ditulis di Peking.",
+          "✉️ Surat terlipat"
+        ]
+      ]
+    ],
+    "hanok-7": [
+      "Bagian VII · Seollal",
+      "Ini Seollal, tahun baru menurut kalender bulan. Keluarga memakai baju baru, membungkuk kepada para tetua, dan bermain yut di pelataran. Seseorang berbuat curang.",
+      "Batang-batang yut kembali ke kotaknya dan layang-layang sudah terbang pergi. Orang yang curang tak ikut bermain lagi.",
+      "Papannya makin besar dan rumahnya makin penuh. Kalau laporan menyebut sebuah area kosong, seluruh area itu tercoret untuk semua orang.",
+      [
+        [
+          "Sembah Tahun Baru",
+          "Pagi tahun baru, anak-anak membungkuk dalam-dalam kepada para tetua. Nyonya Kang menerima satu sembah lebih sedikit dari biasanya.",
+          "🍲 Semangkuk tteokguk"
+        ],
+        [
+          "Yut",
+          "Empat batang kayu dilempar ke udara. Tiga kali berturut-turut semuanya jatuh di sisi yang sama.",
+          "🎲 Batang yut"
+        ],
+        [
+          "Koki Bok-sun Menyendok",
+          "Dengan semangkuk tteokguk, umurmu bertambah satu tahun. Bok-sun mengisi sepuluh mangkuk untuk sembilan orang.",
+          "🥣 Mangkuk sup"
+        ],
+        [
+          "Layang-layang",
+          "Saat Seollal kamu menerbangkan layang-layang bertuliskan kekhawatiranmu, lalu memotong talinya. Di satu layang-layang tertulis sebuah nama.",
+          "🪁 Layang-layang"
+        ],
+        [
+          "Penyulam Yeon-i Bertunangan",
+          "Pada tahun baru dia mengetahui dengan siapa dia akan menikah: seorang pria dari Hanyang. Dia sudah tahu namanya sebelum ada yang menyebutkannya.",
+          "💍 Cincin kawin"
+        ],
+        [
+          "Pelukis Dae-ho Ikut Bermain",
+          "Untuk pertama kalinya dalam sepuluh tahun dia bermain yut, dan dia memenangkan semuanya. Batang-batangnya lebih berat di satu sisi.",
+          "🪵 Batang yang diberati"
+        ],
+        [
+          "Juru Bahasa Hak-su Menghitung Tahun",
+          "Di Peking tahunnya lain, katanya, dengan kalender yang lain. Tapi suratnya bertanggal menurut kalender di sini.",
+          "📅 Kalender bulan"
+        ],
+        [
+          "Seseorang Curang",
+          "Siapa pun yang curang dalam yut, pada akhirnya tetap kalah. Begitulah selalu kata sang tuan.",
+          "⚪ Bidak"
+        ]
+      ]
+    ],
+    "hanok-8": [
+      "Bagian VIII · Bunga di Pegunungan",
+      "Pada bulan April bunga azalea mewarnai pegunungan menjadi merah muda. Satu malam lagi minum teh di paviliun, dengan wajah-wajah yang sama seperti pada malam bulan panen.",
+      "Van Dam memakai topinya, membungkuk kepada Nyonya Kang, lalu berjalan menuruni lembah di antara bunga azalea. Bulan kembali purnama di atas pegunungan. Puisinya sudah selesai, dan baris terakhirnya kamu yang menulis.",
+      "Kasus-kasus terakhir, hampir semuanya di papan besar. Jangan terpaku pada yang paling sulit: taruh dulu yang lain, maka untuk yang terakhir sering hanya tersisa satu kotak.",
+      [
+        [
+          "Kue Azalea",
+          "Di musim semi orang membuat kue kecil dengan bunga azalea di atasnya. Satu kue hilang, dan kue itu ada di paviliun.",
+          "🌸 Kue azalea"
+        ],
+        [
+          "Nyonya Kang Membaca Gulungan",
+          "Dia membacakan puisi itu, keempat barisnya. Pada baris keempat suaranya tidak bergetar.",
+          "🎐 Lonceng angin"
+        ],
+        [
+          "Pelajar Sang-u Menjadi Pejabat",
+          "Dia mendapat jabatan di ibu kota, dengan puisi ayahnya sebagai bukti. Besok dia berangkat, sendirian.",
+          "📃 Surat pengangkatan"
+        ],
+        [
+          "Tabib Ok-hwa Membawa Herba",
+          "Setiap musim semi dia membawa herba untuk setahun penuh. Tahun ini dia membawa satu bungkus lebih sedikit, karena kurang satu orang.",
+          "🧺 Keranjang herba"
+        ],
+        [
+          "Pedagang Keliling Man-sik Kembali",
+          "Dia membawa barang dagangan dan kabar dari lembah. Kabar itu tentang rumah ini, dan kabar itu benar.",
+          "🎒 Rangka pikul"
+        ],
+        [
+          "Koki Bok-sun Membuka Guci Terakhir",
+          "Kimchi terakhir musim dingin ini. Di dasar guci tak ada apa-apa lagi, dan memang begitu seharusnya.",
+          "🏺 Guci kosong"
+        ],
+        [
+          "Pelukis Dae-ho Menyelesaikannya",
+          "Lukisan pesta bulannya sudah selesai. Di paviliun duduk sang tuan, dan tak ada siapa pun di sampingnya.",
+          "🖼️ Lukisan bulan"
+        ],
+        [
+          "Mangkuk Teh Terakhir",
+          "Semuanya bermula di paviliun dekat kolam. Bulan terpantul di air, persis seperti di baris keempat.",
+          "🫖 Teko seladon"
+        ]
+      ]
     ]
   },
 
@@ -7899,6 +11463,38 @@
         "rws": "ruangan"
       },
       "vuurtoren": {
+        "rw": "area",
+        "rws": "area"
+      },
+      "oceaanstomer": {
+        "rw": "ruangan",
+        "rws": "ruangan"
+      },
+      "ryokan": {
+        "rw": "area",
+        "rws": "area"
+      },
+      "fazenda": {
+        "rw": "area",
+        "rws": "area"
+      },
+      "zeppelin": {
+        "rw": "ruangan",
+        "rws": "ruangan"
+      },
+      "poolstation": {
+        "rw": "ruangan",
+        "rws": "ruangan"
+      },
+      "winterpaleis": {
+        "rw": "ruangan",
+        "rws": "ruangan"
+      },
+      "safarilodge": {
+        "rw": "area",
+        "rws": "area"
+      },
+      "hanok": {
         "rw": "area",
         "rws": "area"
       }
@@ -8812,6 +12408,406 @@
           "the": "Gudang",
           "in": "di Gudang"
         }
+      },
+      "oceaanstomer": {
+        "Promenadedek": {
+          "the": "Dek Promenade",
+          "in": "di Dek Promenade"
+        },
+        "Balzaal": {
+          "the": "Ruang Dansa",
+          "in": "di Ruang Dansa"
+        },
+        "Rookkamer": {
+          "the": "Ruang Merokok",
+          "in": "di Ruang Merokok"
+        },
+        "Eetzaal": {
+          "the": "Ruang Makan",
+          "in": "di Ruang Makan"
+        },
+        "Suite": {
+          "the": "Suite",
+          "in": "di Suite"
+        },
+        "Machinekamer": {
+          "the": "Ruang Mesin",
+          "in": "di Ruang Mesin"
+        },
+        "Brug": {
+          "the": "Anjungan",
+          "in": "di Anjungan"
+        },
+        "Radiokamer": {
+          "the": "Ruang Radio",
+          "in": "di Ruang Radio"
+        },
+        "Kombuis": {
+          "the": "Dapur Kapal",
+          "in": "di Dapur Kapal"
+        },
+        "Ruim": {
+          "the": "Palka",
+          "in": "di Palka"
+        },
+        "Bibliotheek": {
+          "the": "Perpustakaan",
+          "in": "di Perpustakaan"
+        },
+        "Serre": {
+          "the": "Ruang Palem",
+          "in": "di Ruang Palem"
+        }
+      },
+      "ryokan": {
+        "Gastenkamer": {
+          "the": "Kamar Tamu",
+          "in": "di Kamar Tamu"
+        },
+        "Onsen": {
+          "the": "Onsen",
+          "in": "di Onsen"
+        },
+        "Theehuis": {
+          "the": "Rumah Teh",
+          "in": "di Rumah Teh"
+        },
+        "Tuin": {
+          "the": "Taman",
+          "in": "di Taman"
+        },
+        "Keuken": {
+          "the": "Dapur",
+          "in": "di Dapur"
+        },
+        "Veranda": {
+          "the": "Beranda",
+          "in": "di Beranda"
+        },
+        "Hal": {
+          "the": "Lobi",
+          "in": "di Lobi"
+        },
+        "Eetzaal": {
+          "the": "Ruang Makan",
+          "in": "di Ruang Makan"
+        },
+        "Bamboebos": {
+          "the": "area Hutan Bambu",
+          "in": "di area Hutan Bambu"
+        },
+        "Voorraadkamer": {
+          "the": "Gudang",
+          "in": "di Gudang"
+        },
+        "Steiger": {
+          "the": "area Dermaga",
+          "in": "di area Dermaga"
+        },
+        "Wasruimte": {
+          "the": "Ruang Cuci",
+          "in": "di Ruang Cuci"
+        }
+      },
+      "fazenda": {
+        "Droogvloer": {
+          "the": "area Lantai Jemur",
+          "in": "di area Lantai Jemur"
+        },
+        "Koffieveld": {
+          "the": "area Kebun Kopi",
+          "in": "di area Kebun Kopi"
+        },
+        "Pakhuis": {
+          "the": "Gudang",
+          "in": "di Gudang"
+        },
+        "Branderij": {
+          "the": "Ruang Sangrai",
+          "in": "di Ruang Sangrai"
+        },
+        "Veranda": {
+          "the": "Beranda",
+          "in": "di Beranda"
+        },
+        "Kapel": {
+          "the": "Kapel",
+          "in": "di Kapel"
+        },
+        "Stal": {
+          "the": "Kandang Kuda",
+          "in": "di Kandang Kuda"
+        },
+        "Keuken": {
+          "the": "Dapur",
+          "in": "di Dapur"
+        },
+        "Eetkamer": {
+          "the": "Ruang Makan",
+          "in": "di Ruang Makan"
+        },
+        "Salon": {
+          "the": "Ruang Duduk",
+          "in": "di Ruang Duduk"
+        },
+        "Studeerkamer": {
+          "the": "Ruang Kerja",
+          "in": "di Ruang Kerja"
+        },
+        "Serre": {
+          "the": "Rumah Kaca",
+          "in": "di Rumah Kaca"
+        }
+      },
+      "zeppelin": {
+        "Salon": {
+          "the": "Ruang Santai",
+          "in": "di Ruang Santai"
+        },
+        "Eetzaal": {
+          "the": "Ruang Makan",
+          "in": "di Ruang Makan"
+        },
+        "Slaapcabine": {
+          "the": "Kabin Tidur",
+          "in": "di Kabin Tidur"
+        },
+        "Kombuis": {
+          "the": "Dapur Kapal",
+          "in": "di Dapur Kapal"
+        },
+        "Bar": {
+          "the": "Bar",
+          "in": "di Bar"
+        },
+        "Kaartenkamer": {
+          "the": "Ruang Peta",
+          "in": "di Ruang Peta"
+        },
+        "Radiokamer": {
+          "the": "Ruang Radio",
+          "in": "di Ruang Radio"
+        },
+        "Stuurgondel": {
+          "the": "Gondola Kemudi",
+          "in": "di Gondola Kemudi"
+        },
+        "Motorgondel": {
+          "the": "Gondola Mesin",
+          "in": "di Gondola Mesin"
+        },
+        "Loopbrug": {
+          "the": "Titian",
+          "in": "di Titian"
+        },
+        "Postkamer": {
+          "the": "Ruang Pos",
+          "in": "di Ruang Pos"
+        },
+        "Uitkijkpost": {
+          "the": "Pos Intai",
+          "in": "di Pos Intai"
+        }
+      },
+      "poolstation": {
+        "Radiokamer": {
+          "the": "Ruang Radio",
+          "in": "di Ruang Radio"
+        },
+        "Kennel": {
+          "the": "Kandang Anjing",
+          "in": "di Kandang Anjing"
+        },
+        "Laboratorium": {
+          "the": "Laboratorium",
+          "in": "di Laboratorium"
+        },
+        "Kantine": {
+          "the": "Kantin",
+          "in": "di Kantin"
+        },
+        "Slaapzaal": {
+          "the": "Ruang Tidur",
+          "in": "di Ruang Tidur"
+        },
+        "Machinekamer": {
+          "the": "Ruang Mesin",
+          "in": "di Ruang Mesin"
+        },
+        "Ziekenboeg": {
+          "the": "Ruang Medis",
+          "in": "di Ruang Medis"
+        },
+        "Voorraadkamer": {
+          "the": "Gudang",
+          "in": "di Gudang"
+        },
+        "Werkplaats": {
+          "the": "Bengkel",
+          "in": "di Bengkel"
+        },
+        "Weerhut": {
+          "the": "Pondok Cuaca",
+          "in": "di Pondok Cuaca"
+        },
+        "Observatorium": {
+          "the": "Observatorium",
+          "in": "di Observatorium"
+        },
+        "Sneeuwtunnel": {
+          "the": "Terowongan",
+          "in": "di Terowongan"
+        }
+      },
+      "winterpaleis": {
+        "Balzaal": {
+          "the": "Ruang Dansa",
+          "in": "di Ruang Dansa"
+        },
+        "Bibliotheek": {
+          "the": "Perpustakaan",
+          "in": "di Perpustakaan"
+        },
+        "Kapel": {
+          "the": "Kapel",
+          "in": "di Kapel"
+        },
+        "IJsbaan": {
+          "the": "area Gelanggang Es",
+          "in": "di area Gelanggang Es"
+        },
+        "Serre": {
+          "the": "Rumah Kaca",
+          "in": "di Rumah Kaca"
+        },
+        "Spiegelzaal": {
+          "the": "Ruang Cermin",
+          "in": "di Ruang Cermin"
+        },
+        "Rookkamer": {
+          "the": "Ruang Merokok",
+          "in": "di Ruang Merokok"
+        },
+        "Keuken": {
+          "the": "Dapur",
+          "in": "di Dapur"
+        },
+        "Trappenhuis": {
+          "the": "Tangga Utama",
+          "in": "di Tangga Utama"
+        },
+        "Eetzaal": {
+          "the": "Ruang Makan",
+          "in": "di Ruang Makan"
+        },
+        "Garderobe": {
+          "the": "Ruang Mantel",
+          "in": "di Ruang Mantel"
+        },
+        "Koetshuis": {
+          "the": "Rumah Kereta",
+          "in": "di Rumah Kereta"
+        }
+      },
+      "safarilodge": {
+        "Veranda": {
+          "the": "Beranda",
+          "in": "di Beranda"
+        },
+        "Waterpoel": {
+          "the": "area Kubangan",
+          "in": "di area Kubangan"
+        },
+        "Kampvuur": {
+          "the": "area Api Unggun",
+          "in": "di area Api Unggun"
+        },
+        "Bar": {
+          "the": "Bar",
+          "in": "di Bar"
+        },
+        "Slaaptent": {
+          "the": "Tenda Tidur",
+          "in": "di Tenda Tidur"
+        },
+        "Landingsbaan": {
+          "the": "area Landasan",
+          "in": "di area Landasan"
+        },
+        "Uitkijktoren": {
+          "the": "Menara Pantau",
+          "in": "di Menara Pantau"
+        },
+        "Keuken": {
+          "the": "Dapur",
+          "in": "di Dapur"
+        },
+        "Donkere kamer": {
+          "the": "Kamar Gelap",
+          "in": "di Kamar Gelap"
+        },
+        "Kantoor": {
+          "the": "Kantor",
+          "in": "di Kantor"
+        },
+        "Garage": {
+          "the": "Garasi",
+          "in": "di Garasi"
+        },
+        "Eetzaal": {
+          "the": "Ruang Makan",
+          "in": "di Ruang Makan"
+        }
+      },
+      "hanok": {
+        "Binnenplaats": {
+          "the": "Pelataran",
+          "in": "di Pelataran"
+        },
+        "Theekamer": {
+          "the": "Ruang Teh",
+          "in": "di Ruang Teh"
+        },
+        "Keuken": {
+          "the": "Dapur",
+          "in": "di Dapur"
+        },
+        "Studeerkamer": {
+          "the": "Ruang Kerja",
+          "in": "di Ruang Kerja"
+        },
+        "Paviljoen": {
+          "the": "Paviliun",
+          "in": "di Paviliun"
+        },
+        "Bibliotheek": {
+          "the": "Perpustakaan",
+          "in": "di Perpustakaan"
+        },
+        "Gastenkamer": {
+          "the": "Kamar Tamu",
+          "in": "di Kamar Tamu"
+        },
+        "Kruidentuin": {
+          "the": "Kebun Herbal",
+          "in": "di Kebun Herbal"
+        },
+        "Poort": {
+          "the": "area Gerbang",
+          "in": "di area Gerbang"
+        },
+        "Voorouderhal": {
+          "the": "Balai Leluhur",
+          "in": "di Balai Leluhur"
+        },
+        "Kruikenterras": {
+          "the": "area Teras Guci",
+          "in": "di area Teras Guci"
+        },
+        "Voorraadkamer": {
+          "the": "Gudang",
+          "in": "di Gudang"
+        }
       }
     },
     "furniture": {
@@ -9214,6 +13210,226 @@
         "a": "teropong",
         "next": "di sebelah teropong",
         "with": "dengan teropong"
+      },
+      "stuurrad": {
+        "a": "kemudi kapal",
+        "next": "di sebelah kemudi kapal",
+        "with": "dengan kemudi kapal"
+      },
+      "scheepstelegraaf": {
+        "a": "telegraf mesin",
+        "next": "di sebelah telegraf mesin",
+        "with": "dengan telegraf mesin"
+      },
+      "dekstoel": {
+        "a": "kursi dek",
+        "next": "di sebelah kursi dek",
+        "with": "dengan kursi dek"
+      },
+      "scheepsbel": {
+        "a": "lonceng kapal",
+        "next": "di sebelah lonceng kapal",
+        "with": "dengan lonceng kapal"
+      },
+      "hoedendoos": {
+        "a": "kotak topi",
+        "next": "di sebelah kotak topi",
+        "with": "dengan kotak topi"
+      },
+      "steenlantaarn": {
+        "a": "lentera batu",
+        "next": "di sebelah lentera batu",
+        "with": "dengan lentera batu"
+      },
+      "tetsubin": {
+        "a": "teko besi",
+        "next": "di sebelah teko besi",
+        "with": "dengan teko besi"
+      },
+      "byobu": {
+        "a": "sekat lipat emas",
+        "next": "di sebelah sekat lipat emas",
+        "with": "dengan sekat lipat emas"
+      },
+      "bonsai": {
+        "a": "bonsai",
+        "next": "di sebelah bonsai",
+        "with": "dengan bonsai"
+      },
+      "wagasa": {
+        "a": "payung kertas",
+        "next": "di sebelah payung kertas",
+        "with": "dengan payung kertas"
+      },
+      "futon": {
+        "a": "futon",
+        "next": "di sebelah futon",
+        "with": "dengan futon"
+      },
+      "koffiezak": {
+        "a": "karung kopi",
+        "next": "di sebelah karung kopi",
+        "with": "dengan karung kopi"
+      },
+      "koffiemolen": {
+        "a": "penggiling kopi",
+        "next": "di sebelah penggiling kopi",
+        "with": "dengan penggiling kopi"
+      },
+      "koffiestruik": {
+        "a": "pohon kopi",
+        "next": "di sebelah pohon kopi",
+        "with": "dengan pohon kopi"
+      },
+      "papegaai": {
+        "a": "burung nuri",
+        "next": "di sebelah burung nuri",
+        "with": "dengan burung nuri"
+      },
+      "schommelstoel": {
+        "a": "kursi goyang",
+        "next": "di sebelah kursi goyang",
+        "with": "dengan kursi goyang"
+      },
+      "luchtschroef": {
+        "a": "baling-baling",
+        "next": "di sebelah baling-baling",
+        "with": "dengan baling-baling"
+      },
+      "sextant": {
+        "a": "sekstan",
+        "next": "di sebelah sekstan",
+        "with": "dengan sekstan"
+      },
+      "postzak": {
+        "a": "karung pos",
+        "next": "di sebelah karung pos",
+        "with": "dengan karung pos"
+      },
+      "wereldbol": {
+        "a": "bola dunia",
+        "next": "di sebelah bola dunia",
+        "with": "dengan bola dunia"
+      },
+      "schrijfmachine": {
+        "a": "mesin tik",
+        "next": "di sebelah mesin tik",
+        "with": "dengan mesin tik"
+      },
+      "zender": {
+        "a": "pemancar radio",
+        "next": "di sebelah pemancar radio",
+        "with": "dengan pemancar radio"
+      },
+      "sledehond": {
+        "a": "anjing kereta salju",
+        "next": "di sebelah anjing kereta salju",
+        "with": "dengan anjing kereta salju"
+      },
+      "weerballon": {
+        "a": "balon cuaca",
+        "next": "di sebelah balon cuaca",
+        "with": "dengan balon cuaca"
+      },
+      "sneeuwrups": {
+        "a": "kendaraan salju",
+        "next": "di sebelah kendaraan salju",
+        "with": "dengan kendaraan salju"
+      },
+      "microscoop": {
+        "a": "mikroskop",
+        "next": "di sebelah mikroskop",
+        "with": "dengan mikroskop"
+      },
+      "balalaika": {
+        "a": "balalaika",
+        "next": "di sebelah balalaika",
+        "with": "dengan balalaika"
+      },
+      "matroesjka": {
+        "a": "boneka matryoshka",
+        "next": "di sebelah boneka matryoshka",
+        "with": "dengan boneka matryoshka"
+      },
+      "juwelenei": {
+        "a": "telur permata",
+        "next": "di sebelah telur permata",
+        "with": "dengan telur permata"
+      },
+      "schaatsen": {
+        "a": "sepasang sepatu seluncur",
+        "next": "di sebelah sepasang sepatu seluncur",
+        "with": "dengan sepasang sepatu seluncur"
+      },
+      "ijszwaan": {
+        "a": "angsa es",
+        "next": "di sebelah angsa es",
+        "with": "dengan angsa es"
+      },
+      "kaviaar": {
+        "a": "mangkuk kaviar",
+        "next": "di sebelah mangkuk kaviar",
+        "with": "dengan mangkuk kaviar"
+      },
+      "safariwagen": {
+        "a": "mobil safari",
+        "next": "di sebelah mobil safari",
+        "with": "dengan mobil safari"
+      },
+      "klamboe": {
+        "a": "kelambu",
+        "next": "di sebelah kelambu",
+        "with": "dengan kelambu"
+      },
+      "windzak": {
+        "a": "kantong angin",
+        "next": "di sebelah kantong angin",
+        "with": "dengan kantong angin"
+      },
+      "acacia": {
+        "a": "pohon akasia",
+        "next": "di sebelah pohon akasia",
+        "with": "dengan pohon akasia"
+      },
+      "giraf": {
+        "a": "jerapah kayu",
+        "next": "di sebelah jerapah kayu",
+        "with": "dengan jerapah kayu"
+      },
+      "sisalmand": {
+        "a": "keranjang sisal",
+        "next": "di sebelah keranjang sisal",
+        "with": "dengan keranjang sisal"
+      },
+      "gayageum": {
+        "a": "gayageum",
+        "next": "di sebelah gayageum",
+        "with": "dengan gayageum"
+      },
+      "kimchipot": {
+        "a": "guci kimchi",
+        "next": "di sebelah guci kimchi",
+        "with": "dengan guci kimchi"
+      },
+      "janggu": {
+        "a": "gendang",
+        "next": "di sebelah gendang",
+        "with": "dengan gendang"
+      },
+      "maanvaas": {
+        "a": "guci bulan",
+        "next": "di sebelah guci bulan",
+        "with": "dengan guci bulan"
+      },
+      "inktsteen": {
+        "a": "batu tinta",
+        "next": "di sebelah batu tinta",
+        "with": "dengan batu tinta"
+      },
+      "theetafel": {
+        "a": "meja teh",
+        "next": "di sebelah meja teh",
+        "with": "dengan meja teh"
       }
     }
   }
