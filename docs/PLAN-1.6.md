@@ -42,3 +42,15 @@ meesterniveau (9×9, vijf verdachten, eerlijk bewezen met `FloorPlan.stepwise`).
 Onderzoek loopt: `docs/onderzoek/DYNAMIC-ISLAND-2026-11.md` en `docs/onderzoek/MELDINGEN-ANIMATIES-2026-11.md`. Daarna
 een keuzepagina met echte voorbeelden (links en schermafbeeldingen) en onze eigen proefontwerpen in de stijl van het spel.
 Jaimy kiest; pas dan bouwen.
+
+## Keuze Jaimy, 2 november 2026 (keuzepagina https://claude.ai/artifact/MVFp74E7X29Q5KaDqKSsYn)
+
+- **Animaties**: Grootboek, Stempel, Bekentenis, Bord wordt kaart, Streakvlam, Hint na stilzitten, Laadscherm met
+  zinnetjes, Dynamic Island: dossier open.
+- **Meldingen**: streakredder om 21:30 met knoppen; rustig stoppen na 7 dagen niet spelen (met één afscheidsbericht).
+- **Werelden (8)**: Oceaanstomer, Ryokan, Koffiefazenda, Zeppelin, Poolstation, Winterpaleis, Safarilodge, Hanok in de bergen.
+- Jaimy daarna: "Kunnen we ook de animatie verbeteren? of iets in die trend?" → versie 2 van de acht animaties op
+  vakmanschapsniveau (aanloop, overshoot, uitloop, gelaagde deeltjes, haptiek op de klap, Liquid Glass voor eiland en
+  meldingen), eerst als keuzepagina, dan in de app.
+- Gevonden fouten om mee te nemen: de herinnering zegt "18:30" maar plant een uur na de gewone speeltijd; vier van de
+  vijf meldingen hebben dezelfde zin met "Crimson Ledger" als titel; goede en foute beschuldiging trillen hetzelfde.
