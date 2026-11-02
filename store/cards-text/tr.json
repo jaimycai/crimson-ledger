@@ -1,8 +1,8 @@
 [
   ["04-verklaringen", "Sudoku,\nama\n*cinayetli*", "Kurbanla yalnız kalan kimdi?"],
   ["05-beschuldiging", "*Katili*\nbul", "Tek çözüm. Saf mantık, tahmin yok."],
-  ["08-nieuw", "*240* vaka\nücretsiz", "Her dünyayı dene. Her gün yeni bir vaka, reklam yok."],
-  ["06-zaak-gesloten", "Vaka\n*kapandı*", "İpucusuz ve ilk denemede çözene yıldız."],
+  ["08-nieuw", "*Sonsuz*\nvaka", "Her gün yeni bir vaka ve hiç bitmeyen bir arşiv."],
+  ["06-zaak-gesloten", "Vaka\n*kapandı*", "İpucusuz ve tek seferde çözene yıldız."],
   ["01-thuis", "*Serini*\nkoru", "Günün vakası, günlük görevler ve haftan tek bakışta."],
   ["10-hint", "*Açıklayan*\nipuçları", "Cevabı söylemez. Üç yıldızlı her vaka bir ipucu kazandırır."],
   ["02-wereldkaart", "Luksor’dan\n*Hollywood*’a", "Her dünyanın kendi dönemi ve yeri; kolaydan zora."],
