@@ -421,6 +421,8 @@ const App = {
     document.getElementById('briefing-text').textContent = I18n.quote(b.text);
     Board.stopTimer();   // de klok loopt pas na "Aan de slag"
     this.showModal('briefing-modal');
+    // 1.6: Van Dam groot en levend (rive-art.js): hij praat zolang je leest, tot "Aan de slag" (hooguit 7 s)
+    if (typeof LiveMentor !== 'undefined') LiveMentor.show(document.getElementById('briefing-portrait'), b.text);
   },
   // Nieuw deel: kaart in de kleur van de wereld met draaiende stralen. Nieuwe
   // wereld (deel I): bovendien de banner van de kaart en de hele cast die één
@@ -2139,17 +2141,29 @@ const App = {
   },
 
   updateStreakDisplay() {
-    const n = this.streak.count;
-    document.getElementById('streak-title').innerHTML = `<span class="streak-flame">🔥</span> ${AP_T('{1} {0|one:dag|other:dagen} streak', n, `<span id="streak-count">${n}</span>`)}`;
+    const n = this.streak.count, title = document.getElementById('streak-title');
+    title.innerHTML = `<span class="streak-flame">🔥</span> ${AP_T('{1} {0|one:dag|other:dagen} streak', n, `<span id="streak-count">${n}</span>`)}`;
+    // 1.6: de levende Rive-vlam (rive-art.js) neemt de plek van het icoon over; brandt alleen als de streak leeft
+    if (typeof StreakFlame !== 'undefined') StreakFlame.render(title, this.streakAlive());
     this.renderWeek();
+  },
+  // leeft de streak nog: vandaag of gisteren gespeeld, of eergisteren met een vrije dag die het gat opvangt
+  streakAlive() {
+    const s = this.streak || {};
+    if (!s.count || !s.lastDate) return false;
+    const day = k => new Date(Date.now() - k * 86400000).toDateString();
+    if (s.lastDate === day(0) || s.lastDate === day(1)) return true;
+    return s.lastDate === day(2) && Progress.freezes() > 0;
   },
   // 1.6: the streak flame ignites on the home screen when the streak grew since the player last saw it
   streakIgnite() {
     const n = this.streak.count || 0, seen = this.storageGet('crimson-streak-seen');
     this.storageSet('crimson-streak-seen', String(n));
     if (seen === null || !(n > +seen) || typeof Motion === 'undefined') return;
-    Motion.flame(document.querySelector('#streak-title .streak-flame'), document.getElementById('streak-count'), +seen, n,
-      document.querySelector('#week-strip .wday.today'));
+    const count = document.getElementById('streak-count'), today = document.querySelector('#week-strip .wday.today');
+    // 1.6: met Rive ontsteekt de levende vlam; anders (beperkte beweging, geen Rive) de Web Animation op het icoon
+    if (typeof StreakFlame !== 'undefined' && StreakFlame.ignite(count, +seen, n, today)) return;
+    Motion.flame(document.querySelector('#streak-title .streak-flame'), count, +seen, n, today);
   },
 
   // ══════════════════════════════════════════════════════════
@@ -2229,7 +2243,10 @@ const App = {
   //  UI HULPMIDDELEN
   // ══════════════════════════════════════════════════════════
   showModal(id) { document.getElementById(id).classList.add('active'); },
-  hideModal(id) { document.getElementById(id).classList.remove('active'); },
+  hideModal(id) {
+    document.getElementById(id).classList.remove('active');
+    if (id === 'briefing-modal' && typeof LiveMentor !== 'undefined') LiveMentor.hide();
+  },
 
   showToast(icon, text) {
     document.getElementById('toast-icon').textContent = icon;
