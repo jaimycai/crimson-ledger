@@ -468,6 +468,239 @@ const THEMES = [
       { label: 'Telegrafiste Fien',         gender: 'f', color: '#D9A441', style: { hair: 2 } }
     ],
     outro: 'Het licht draait weer. Elke schipper ziet het, en jij weet wie het doofde.'
+  },
+  // ── 1.6: wereld 17-24 (ontwerp in docs/werelden/ontwerp-1.6a.js en ontwerp-1.6b.js) ──
+  {
+    id: 'oceaanstomer', unlock: 60, icon: '🚢', title: 'SS Halcyon', short: 'Oceaanstomer',
+    map: { accent: '#004048', ring: '#C9A227' }, tagline: 'Mei 1910. Vijf dagen tot New York, de komeet van Halley boven het dek, en een reder die de overkant niet haalt.',
+    intro: 'SS Halcyon, mei 1910, midden op de Atlantische Oceaan. Op het promenadedek kijkt iedereen naar de komeet van Halley. Alleen reder Ambrose Kingsley niet: hij ligt in de rookkamer, naast een sigaar die nog smeult.',
+    victimName: 'Reder Ambrose Kingsley', roomWord: 'ruimte', roomWordPlural: 'ruimtes', floor: 'teakdek',
+    rooms: [
+      { name: 'Promenadedek', article: 'het', color: '#8CC3DE' }, { name: 'Balzaal', article: 'de', color: '#E7A9CF' },
+      { name: 'Rookkamer', article: 'de', color: '#C9A27E' }, { name: 'Eetzaal', article: 'de', color: '#F2C46D' },
+      { name: 'Suite', article: 'de', color: '#B3A1D6' }, { name: 'Machinekamer', article: 'de', color: '#9AA5B1' },
+      { name: 'Brug', article: 'de', color: '#7FB3B0' }, { name: 'Radiokamer', article: 'de', color: '#D6E39A' },
+      { name: 'Kombuis', article: 'de', color: '#F0957A' }, { name: 'Ruim', article: 'het', color: '#DDD3C0' },
+      { name: 'Bibliotheek', article: 'de', color: '#C9677A' }, { name: 'Serre', article: 'de', color: '#9FCBA8' }
+    ],
+    furniture: [
+      { id: 'stuurrad', nl: 'een stuurrad' }, { id: 'scheepstelegraaf', nl: 'een scheepstelegraaf' }, { id: 'dekstoel', nl: 'een dekstoel' },
+      { id: 'scheepsbel', nl: 'een scheepsbel' }, { id: 'hoedendoos', nl: 'een hoedendoos' }
+    ],
+    suspects: [
+      { label: 'Kapitein Grant',           gender: 'm', color: '#B85C5C', style: { hair: 0, beard: true, hat: 'cap' } },
+      { label: 'Stewardess Molly',          gender: 'f', color: '#5C8B5E', style: { hair: 2 } },
+      { label: 'Vliegenierster Solange',    gender: 'f', color: '#C2185B', style: { hair: 4, hat: 'cap' } },
+      { label: 'Professor Lund',            gender: 'm', color: '#B8955C', style: { hair: 3, glasses: true } },
+      { label: 'Suffragette Harriet',       gender: 'f', color: '#8B5CB8', style: { hair: 1, hat: 'tophat' } },
+      { label: 'Marconist Arthur',          gender: 'm', color: '#5C7AB8', style: { hair: 0 } },
+      { label: 'Hoofdmachinist Doyle',      gender: 'm', color: '#2C3E50', style: { hair: 3, moustache: true } },
+      { label: 'Hoedenmaakster Edna',       gender: 'f', color: '#D9A441', style: { hair: 4, hat: 'tophat' } }
+    ],
+    outro: 'De Halcyon meert af in New York. Op de kade staat de politie te wachten, en jij weet voor wie.'
+  },
+  {
+    id: 'ryokan', unlock: 64, icon: '🏮', title: 'Ryokan Tsukikage', short: 'Ryokan',
+    map: { accent: '#5B2A4E', ring: '#E28AA5' }, tagline: 'Kyoto, 1925. Kersenbloesem in de tuin, warm water in de onsen, en een herbergier die zijn ochtendthee niet meer drinkt.',
+    intro: 'Ryokan Tsukikage, in de heuvels bij Kyoto, april 1925. De kersen bloeien en alle kamers zijn vol. Bij de ochtendthee ontbreekt herbergier Genzo Kurata. Hij ligt in het theehuis, naast een kom die nog warm is.',
+    victimName: 'Herbergier Genzo Kurata', roomWord: 'ruimte', roomWordPlural: 'ruimtes', floor: 'tatami',
+    rooms: [
+      { name: 'Gastenkamer', article: 'de', color: '#F2C46D' }, { name: 'Onsen', article: 'de', color: '#8CC3DE' },
+      { name: 'Theehuis', article: 'het', color: '#C9A27E' }, { name: 'Tuin', article: 'de', color: '#F0B8C8' },
+      { name: 'Keuken', article: 'de', color: '#7FB3B0' }, { name: 'Veranda', article: 'de', color: '#F0957A' },
+      { name: 'Hal', article: 'de', color: '#DDD3C0' }, { name: 'Eetzaal', article: 'de', color: '#D9737F' },
+      { name: 'Bamboebos', article: 'het', color: '#9FCBA8' }, { name: 'Voorraadkamer', article: 'de', color: '#D6E39A' },
+      { name: 'Steiger', article: 'de', color: '#9AA5B1' }, { name: 'Wasruimte', article: 'de', color: '#B3A1D6' }
+    ],
+    furniture: [
+      { id: 'steenlantaarn', nl: 'een stenen lantaarn' }, { id: 'tetsubin', nl: 'een ijzeren theepot' }, { id: 'byobu', nl: 'een gouden kamerscherm' },
+      { id: 'bonsai', nl: 'een bonsai' }, { id: 'wagasa', nl: 'een papieren parasol' }, { id: 'futon', nl: 'een futon' }
+    ],
+    suspects: [
+      { label: 'Gastvrouw Fumiko',          gender: 'f', color: '#B85C5C', style: { hair: 2 } },
+      { label: 'Kok Takeshi',               gender: 'm', color: '#5C8B5E', style: { hair: 0, hat: 'bandana' } },
+      { label: 'Theemeesteres Chiyo',       gender: 'f', color: '#C2185B', style: { hair: 2 } },
+      { label: 'Ingenieur Isamu',          gender: 'm', color: '#B8955C', style: { hair: 3, glasses: true } },
+      { label: 'Fotografe Sachiko',         gender: 'f', color: '#8B5CB8', style: { hair: 1, hat: 'cap' } },
+      { label: 'Tuinman Goro',              gender: 'm', color: '#5C7AB8', style: { hair: 0 } },
+      { label: 'Plantkundige Evelyn',       gender: 'f', color: '#2C3E50', style: { hair: 1, hat: 'tophat' } },
+      { label: 'Prentmaker Hiroshi',          gender: 'm', color: '#D9A441', style: { hair: 3 } }
+    ],
+    outro: 'De sneeuw dekt de tuin toe en de bron dampt. Elke gast mag naar huis, op één na.'
+  },
+  {
+    id: 'fazenda', unlock: 68, icon: '☕', title: 'Fazenda Boa Esperança', short: 'Koffiefazenda',
+    map: { accent: '#4A2C1A', ring: '#D9614A' }, tagline: 'Brazilië, 1926. Koffiebessen op de droogvloer, muziek op de veranda, en een koffiebaron die de oogst niet meer telt.',
+    intro: 'Fazenda Boa Esperança, São Paulo, juni 1926. De oogst is binnen en de droogvloer ligt vol koffiebessen. Op het oogstfeest ontbreekt koffiebaron Augusto Valadares. Hij ligt in de branderij, tussen de zakken.',
+    victimName: 'Koffiebaron Augusto Valadares', roomWord: 'ruimte', roomWordPlural: 'ruimtes', floor: 'cementtegels',
+    rooms: [
+      { name: 'Droogvloer', article: 'de', color: '#F0957A' }, { name: 'Koffieveld', article: 'het', color: '#8FC79A' },
+      { name: 'Pakhuis', article: 'het', color: '#DDD3C0' }, { name: 'Branderij', article: 'de', color: '#C49A7A' },
+      { name: 'Veranda', article: 'de', color: '#8CC3DE' }, { name: 'Kapel', article: 'de', color: '#E7A9CF' },
+      { name: 'Stal', article: 'de', color: '#D6E39A' }, { name: 'Keuken', article: 'de', color: '#7FB3B0' },
+      { name: 'Eetkamer', article: 'de', color: '#D9737F' }, { name: 'Salon', article: 'de', color: '#B3A1D6' },
+      { name: 'Studeerkamer', article: 'de', color: '#9AA5B1' }, { name: 'Serre', article: 'de', color: '#F2D36D' }
+    ],
+    furniture: [
+      { id: 'koffiezak', nl: 'een koffiezak' }, { id: 'koffiemolen', nl: 'een koffiemolen' }, { id: 'koffiestruik', nl: 'een koffiestruik' },
+      { id: 'papegaai', nl: 'een papegaai' }, { id: 'schommelstoel', nl: 'een schommelstoel' }
+    ],
+    suspects: [
+      { label: 'Dona Celeste',              gender: 'f', color: '#B85C5C', style: { hair: 1 } },
+      { label: 'Rentmeester Joaquim',       gender: 'm', color: '#5C8B5E', style: { hair: 0, moustache: true, hat: 'tophat' } },
+      { label: 'Lerares Giulia',            gender: 'f', color: '#C2185B', style: { hair: 2 } },
+      { label: 'Koffieproever Bento',       gender: 'm', color: '#B8955C', style: { hair: 3, moustache: true, skin: '#8D5524' } },
+      { label: 'Pianiste Zélia',            gender: 'f', color: '#8B5CB8', style: { hair: 4 } },
+      { label: 'Agronoom Hideo',            gender: 'm', color: '#5C7AB8', style: { hair: 0 } },
+      { label: 'Inkoper Mulder',            gender: 'm', color: '#2C3E50', style: { hair: 3, beard: true, hat: 'cap' } },
+      { label: 'Dokter Lúcia',              gender: 'f', color: '#D9A441', style: { hair: 1, hat: 'cap' } }
+    ],
+    outro: 'De droogvloer is leeg en de boeken kloppen weer. Op de veranda speelt de muziek verder.'
+  },
+  {
+    id: 'zeppelin', unlock: 72, icon: '☁️', title: 'Luchtschip Cirrus', short: 'Zeppelin',
+    map: { accent: '#665A80', ring: '#A9B8C8' }, tagline: '1929. Drie dagen boven de oceaan, niemand kan uitstappen, en de bouwer van het luchtschip landt niet mee.',
+    intro: 'Luchtschip Cirrus, augustus 1929. Drie dagen drijft het schip boven de oceaan, op weg naar Rio de Janeiro. Na het diner ligt constructeur Anton Falk in de kaartenkamer, met de koers nog in zijn hand.',
+    victimName: 'Constructeur Anton Falk', roomWord: 'ruimte', roomWordPlural: 'ruimtes', floor: 'aluminium',
+    rooms: [
+      { name: 'Salon', article: 'de', color: '#B3A1D6' }, { name: 'Eetzaal', article: 'de', color: '#F2C46D' },
+      { name: 'Slaapcabine', article: 'de', color: '#8CC3DE' }, { name: 'Kombuis', article: 'de', color: '#F0957A' },
+      { name: 'Bar', article: 'de', color: '#C9677A' }, { name: 'Kaartenkamer', article: 'de', color: '#C9A27E' },
+      { name: 'Radiokamer', article: 'de', color: '#D6E39A' }, { name: 'Stuurgondel', article: 'de', color: '#7FB3B0' },
+      { name: 'Motorgondel', article: 'de', color: '#9AA5B1' }, { name: 'Loopbrug', article: 'de', color: '#DDD3C0' },
+      { name: 'Postkamer', article: 'de', color: '#9FCBA8' }, { name: 'Uitkijkpost', article: 'de', color: '#E7A9CF' }
+    ],
+    furniture: [
+      { id: 'luchtschroef', nl: 'een propeller' }, { id: 'sextant', nl: 'een sextant' }, { id: 'postzak', nl: 'een postzak' },
+      { id: 'wereldbol', nl: 'een wereldbol' }, { id: 'schrijfmachine', nl: 'een schrijfmachine' }
+    ],
+    suspects: [
+      { label: 'Commandant Brandt',         gender: 'm', color: '#B85C5C', style: { hair: 0, beard: true, hat: 'cap' } },
+      { label: 'Verslaggeefster Daisy',     gender: 'f', color: '#5C8B5E', style: { hair: 1 } },
+      { label: 'Navigator Mateus',          gender: 'm', color: '#C2185B', style: { hair: 4 } },
+      { label: 'Weerkundige Liv',           gender: 'f', color: '#B8955C', style: { hair: 2, glasses: true } },
+      { label: 'Monteur Rudi',             gender: 'm', color: '#8B5CB8', style: { hair: 3, hat: 'cap' } },
+      { label: 'Tennisster Josette',        gender: 'f', color: '#5C7AB8', style: { hair: 1, hat: 'bandana' } },
+      { label: 'Diplomaat Vidal',          gender: 'm', color: '#2C3E50', style: { hair: 3, moustache: true } },
+      { label: 'Postmeesteres Elsbeth',     gender: 'f', color: '#D9A441', style: { hair: 2 } }
+    ],
+    outro: 'Het luchtschip ligt vast aan de mast. De koers klopte, en nu klopt de rest ook.'
+  },
+  {
+    id: 'poolstation', unlock: 76, icon: '🐧', title: 'Poolstation Zuiderkruis', short: 'Poolstation',
+    map: { accent: '#233A8C', ring: '#8FE3B9' }, tagline: 'Antarctica, 1958. Vier maanden poolnacht, acht overwinteraars, en een stationsleider die het midwinterfeest niet haalt.',
+    intro: 'Poolstation Zuiderkruis, juni 1958. Het is midwinter in Antarctica: al weken geen zon, en geen vliegtuig tot de lente. Tijdens het midwinterfeest blijft één stoel leeg. Stationsleider Gunnar Holm ligt in de radiokamer, de koptelefoon nog op.',
+    victimName: 'Stationsleider Gunnar Holm', roomWord: 'ruimte', roomWordPlural: 'ruimtes', floor: 'traanplaat',
+    rooms: [
+      { name: 'Radiokamer', article: 'de', color: '#F2C46D' }, { name: 'Kennel', article: 'de', color: '#F5E6B8' },
+      { name: 'Laboratorium', article: 'het', color: '#B6D5C9' }, { name: 'Kantine', article: 'de', color: '#E5B0A8' },
+      { name: 'Slaapzaal', article: 'de', color: '#B3A1D6' }, { name: 'Machinekamer', article: 'de', color: '#C9B79C' },
+      { name: 'Ziekenboeg', article: 'de', color: '#D9737F' }, { name: 'Voorraadkamer', article: 'de', color: '#E3B7D6' },
+      { name: 'Werkplaats', article: 'de', color: '#C7D9A0' }, { name: 'Weerhut', article: 'de', color: '#8CC3DE' },
+      { name: 'Observatorium', article: 'het', color: '#7FB3B0' }, { name: 'Sneeuwtunnel', article: 'de', color: '#DCEBF0' }
+    ],
+    furniture: [
+      { id: 'zender', nl: 'een radiotoestel' }, { id: 'sledehond', nl: 'een sledehond' }, { id: 'weerballon', nl: 'een weerballon' },
+      { id: 'sneeuwrups', nl: 'een sneeuwrups' }, { id: 'microscoop', nl: 'een microscoop' }
+    ],
+    suspects: [
+      { label: 'Marconist Ole',             gender: 'm', color: '#B85C5C', style: { hair: 0, beard: true } },
+      { label: 'Glaciologe Marina',         gender: 'f', color: '#5C8B5E', style: { hair: 1, hat: 'cap' } },
+      { label: 'Dokter Kenji',              gender: 'm', color: '#C2185B', style: { hair: 3, glasses: true } },
+      { label: 'Meteorologe Ruth',          gender: 'f', color: '#B8955C', style: { hair: 4, glasses: true } },
+      { label: 'Hondenmenner Rewi',         gender: 'm', color: '#8B5CB8', style: { hair: 0, hat: 'cap', skin: '#C68642' } },
+      { label: 'Monteur Lieve',             gender: 'f', color: '#5C7AB8', style: { hair: 2, hat: 'bandana' } },
+      { label: 'Kok Mateo',                 gender: 'm', color: '#2C3E50', style: { hair: 3, moustache: true } },
+      { label: 'Natuurkundige Hélène',      gender: 'f', color: '#D9A441', style: { hair: 1 } }
+    ],
+    outro: 'De zon staat weer boven het ijs. Het eerste vliegtuig brengt post, en neemt de dader mee naar huis.'
+  },
+  {
+    id: 'winterpaleis', unlock: 80, icon: '❄️', title: 'Paleis Zvezdin', short: 'Winterpaleis',
+    map: { accent: '#A03A6A', ring: '#E4ECF4' }, tagline: 'Sint-Petersburg, oudejaarsavond 1899. Een bevroren Neva, de laatste wals van de eeuw, en een graaf die zijn toost niet meer uitbrengt.',
+    intro: 'Paleis Zvezdin, Sint-Petersburg, oudejaarsavond 1899. De Neva ligt bevroren en in de balzaal speelt het orkest de laatste wals van de eeuw. Om middernacht zou graaf Andrej Zvezdin een toost uitbrengen. Hij ligt in de bibliotheek, het glas nog vol.',
+    victimName: 'Graaf Andrej Zvezdin', roomWord: 'kamer', roomWordPlural: 'kamers', floor: 'intarsia',
+    rooms: [
+      { name: 'Balzaal', article: 'de', color: '#F2C46D' }, { name: 'Bibliotheek', article: 'de', color: '#C9B79C' },
+      { name: 'Kapel', article: 'de', color: '#F5E6B8' }, { name: 'IJsbaan', article: 'de', color: '#DCEBF0' },
+      { name: 'Serre', article: 'de', color: '#C7D9A0' }, { name: 'Spiegelzaal', article: 'de', color: '#B3A1D6' },
+      { name: 'Rookkamer', article: 'de', color: '#F0A6A0' }, { name: 'Keuken', article: 'de', color: '#8FC5D8' },
+      { name: 'Trappenhuis', article: 'het', color: '#B6D5C9' }, { name: 'Eetzaal', article: 'de', color: '#D9737F' },
+      { name: 'Garderobe', article: 'de', color: '#E3B7D6' }, { name: 'Koetshuis', article: 'het', color: '#93A9C9' }
+    ],
+    furniture: [
+      { id: 'balalaika', nl: 'een balalaika' }, { id: 'matroesjka', nl: 'een matroesjka' }, { id: 'juwelenei', nl: 'een juwelenei' },
+      { id: 'schaatsen', nl: 'een paar schaatsen' }, { id: 'ijszwaan', nl: 'een ijszwaan' }, { id: 'kaviaar', nl: 'een kaviaarschaal' }
+    ],
+    suspects: [
+      { label: 'Gravin Jelena',             gender: 'f', color: '#B85C5C', style: { hair: 2 } },
+      { label: 'Componist Sergej',          gender: 'm', color: '#5C8B5E', style: { hair: 4, glasses: true } },
+      { label: 'Schaatsster Vera',          gender: 'f', color: '#C2185B', style: { hair: 1, hat: 'cap' } },
+      { label: 'Goudsmid Pavel',            gender: 'm', color: '#B8955C', style: { hair: 3, beard: true } },
+      { label: 'Gouvernante Mabel',         gender: 'f', color: '#8B5CB8', style: { hair: 2 } },
+      { label: 'Luitenant Dmitri',          gender: 'm', color: '#5C7AB8', style: { hair: 0, moustache: true } },
+      { label: 'Hofmeester Fjodor',         gender: 'm', color: '#2C3E50', style: { hair: 3, beard: true } },
+      { label: 'Fotografe Sofia',           gender: 'f', color: '#D9A441', style: { hair: 4 } }
+    ],
+    outro: 'De kaarsen zijn uit en de nieuwe eeuw is begonnen. Het laatste geheim van de oude heb jij opgelost.'
+  },
+  {
+    id: 'safarilodge', unlock: 84, icon: '🦒', title: 'Twiga Lodge', short: 'Safarilodge',
+    map: { accent: '#7A5A14', ring: '#F2A65A' }, tagline: 'Kenia, 1974. Een miljoen gnoes op de vlakte, een lodge vol gasten, en een filmer die zijn laatste opname niet meer ziet.',
+    intro: 'Twiga Lodge, Maasai Mara, augustus 1974. De grote trek is begonnen: een miljoen gnoes trekken langs de lodge en elke tent is bezet. Na het kampvuur ligt natuurfilmer Rupert Vane in de donkere kamer, tussen zijn filmrollen.',
+    victimName: 'Natuurfilmer Rupert Vane', roomWord: 'ruimte', roomWordPlural: 'ruimtes', floor: 'sisal',
+    rooms: [
+      { name: 'Veranda', article: 'de', color: '#F3B57A' }, { name: 'Waterpoel', article: 'de', color: '#8CC3DE' },
+      { name: 'Kampvuur', article: 'het', color: '#F2C46D' }, { name: 'Bar', article: 'de', color: '#D9737F' },
+      { name: 'Slaaptent', article: 'de', color: '#C9B79C' }, { name: 'Landingsbaan', article: 'de', color: '#E5B0A8' },
+      { name: 'Uitkijktoren', article: 'de', color: '#C7D9A0' }, { name: 'Keuken', article: 'de', color: '#7FB3B0' },
+      { name: 'Donkere kamer', article: 'de', color: '#B9AEDC' }, { name: 'Kantoor', article: 'het', color: '#DCEBF0' },
+      { name: 'Garage', article: 'de', color: '#B6D5C9' }, { name: 'Eetzaal', article: 'de', color: '#EBD7A6' }
+    ],
+    furniture: [
+      { id: 'safariwagen', nl: 'een safariwagen' }, { id: 'klamboe', nl: 'een klamboe' }, { id: 'windzak', nl: 'een windzak' },
+      { id: 'acacia', nl: 'een acacia' }, { id: 'giraf', nl: 'een houten giraf' }, { id: 'sisalmand', nl: 'een sisalmand' }
+    ],
+    suspects: [
+      { label: 'Eigenares Wambui',          gender: 'f', color: '#B85C5C', style: { hair: 4, hat: 'bandana', skin: '#8D5524' } },
+      { label: 'Gids Otieno',               gender: 'm', color: '#5C8B5E', style: { hair: 0, hat: 'cap', skin: '#8D5524' } },
+      { label: 'Dierenarts Njeri',          gender: 'f', color: '#C2185B', style: { hair: 3, skin: '#8D5524' } },
+      { label: 'Piloot Kiprono',            gender: 'm', color: '#B8955C', style: { hair: 3, skin: '#8D5524' } },
+      { label: 'Chef Hamisi',               gender: 'm', color: '#8B5CB8', style: { hair: 0, beard: true, hat: 'cap', skin: '#8D5524' } },
+      { label: 'Journaliste Amina',         gender: 'f', color: '#5C7AB8', style: { hair: 4, skin: '#8D5524' } },
+      { label: 'Geluidsman Felix',          gender: 'm', color: '#2C3E50', style: { hair: 1 } },
+      { label: 'Biologe Hanne',             gender: 'f', color: '#D9A441', style: { hair: 2 } }
+    ],
+    outro: 'De gnoes trekken verder en de lodge wordt stil. De laatste opname is van jou.'
+  },
+  {
+    id: 'hanok', unlock: 88, icon: '🌕', title: 'Hanok Dalbit', short: 'Hanok',
+    map: { accent: '#45745F', ring: '#F5E6B8' }, tagline: 'Joseon, 1795. Een volle oogstmaan, een familie die thuiskomt, en een heer des huizes die zijn laatste gedicht niet afmaakt.',
+    intro: 'Hanok Dalbit, in de bergen van Joseon, herfst 1795. Het is Chuseok: de oogstmaan is vol en de hele familie is thuis. Na het maanfeest ligt heer Yun Jae-ho in het paviljoen bij de vijver, naast een gedicht van drie regels.',
+    victimName: 'Heer Yun Jae-ho', roomWord: 'kamer', roomWordPlural: 'kamers', floor: 'hanji',
+    rooms: [
+      { name: 'Binnenplaats', article: 'de', color: '#EBD7A6' }, { name: 'Theekamer', article: 'de', color: '#C7D9A0' },
+      { name: 'Keuken', article: 'de', color: '#F3B57A' }, { name: 'Studeerkamer', article: 'de', color: '#B9AEDC' },
+      { name: 'Paviljoen', article: 'het', color: '#8CC3DE' }, { name: 'Bibliotheek', article: 'de', color: '#DCEBF0' },
+      { name: 'Gastenkamer', article: 'de', color: '#F0A6A0' }, { name: 'Kruidentuin', article: 'de', color: '#B6D5C9' },
+      { name: 'Poort', article: 'de', color: '#D9737F' }, { name: 'Voorouderhal', article: 'de', color: '#D0C9BD' },
+      { name: 'Kruikenterras', article: 'het', color: '#7FB3B0' }, { name: 'Voorraadkamer', article: 'de', color: '#E3B7D6' }
+    ],
+    furniture: [
+      { id: 'gayageum', nl: 'een gayageum' }, { id: 'kimchipot', nl: 'een kimchipot' }, { id: 'janggu', nl: 'een trom' },
+      { id: 'maanvaas', nl: 'een maanvaas' }, { id: 'inktsteen', nl: 'een inktsteen' }, { id: 'theetafel', nl: 'een theetafeltje' }
+    ],
+    suspects: [
+      { label: 'Vrouwe Kang',               gender: 'f', color: '#B85C5C', style: { hair: 2 } },
+      { label: 'Student Sang-u',            gender: 'm', color: '#5C8B5E', style: { hair: 0, hat: 'tophat' } },
+      { label: 'Geneesvrouw So-yeon',       gender: 'f', color: '#C2185B', style: { hair: 2, hat: 'cap' } },
+      { label: 'Schilder Dae-ho',           gender: 'm', color: '#B8955C', style: { hair: 3, beard: true, hat: 'cap' } },
+      { label: 'Borduurster Yeon-i',        gender: 'f', color: '#8B5CB8', style: { hair: 1 } },
+      { label: 'Tolk Hak-su',               gender: 'm', color: '#5C7AB8', style: { hair: 0, glasses: true, hat: 'tophat' } },
+      { label: 'Kokkin Sun-i',              gender: 'f', color: '#2C3E50', style: { hair: 2, hat: 'bandana' } },
+      { label: 'Marskramer Deok-su',        gender: 'm', color: '#D9A441', style: { hair: 0, hat: 'cap' } }
+    ],
+    outro: 'De maan staat weer vol boven de bergen. Het gedicht is af, en de laatste regel schreef jij.'
   }
 ];
 
@@ -486,6 +719,14 @@ const TITLES = new Set(['dr.', 'majoor', 'tante', 'kok', 'bootsman', 'stuurman',
   'karavaanleider', 'koopvrouw', 'tapijthandelaar', 'reizigster', 'theeschenker', 'sterrenkijker', 'bewaker', 'dichteres',
   'abt', 'broeder', 'novice', 'pelgrim', 'kruidenvrouw', 'verluchtster', 'kelderbroeder',
   'vuurtorenwachter', 'assistent', 'huishoudster', 'visser', 'loodsman', 'vogelkundige', 'schipbreukeling', 'onderwijzeres', 'telegrafiste',
+  'reder', 'kapitein', 'stewardess', 'vliegenierster', 'suffragette', 'marconist', 'hoofdmachinist', 'hoedenmaakster',
+  'herbergier', 'gastvrouw', 'theemeesteres', 'fotografe', 'tuinman', 'plantkundige', 'prentmaker',
+  'koffiebaron', 'dona', 'rentmeester', 'lerares', 'koffieproever', 'pianiste', 'agronoom', 'inkoper',
+  'constructeur', 'commandant', 'verslaggeefster', 'navigator', 'weerkundige', 'monteur', 'tennisster', 'diplomaat', 'postmeesteres',
+  'stationsleider', 'glaciologe', 'meteorologe', 'hondenmenner', 'natuurkundige',
+  'graaf', 'componist', 'schaatsster', 'goudsmid', 'gouvernante', 'luitenant', 'hofmeester',
+  'natuurfilmer', 'eigenares', 'journaliste', 'geluidsman', 'biologe',
+  'heer', 'vrouwe', 'student', 'geneesvrouw', 'schilder', 'borduurster', 'tolk', 'marskramer',
   // Engels
   'major', 'aunt', 'lady', 'mr.', 'cook', 'boatswain', 'helmsman', 'miss', 'gunner', 'cabin', 'boy', 'countess', 'doorman', 'mrs', 'dancer', 'pilot', 'engineer',
   'cadet', 'officer', 'biologist', 'guide', 'restorer', 'night', 'guard', 'art', 'dealer', 'intern', 'cleaner', 'baroness', 'magician', 'chess', 'master',
@@ -497,7 +738,15 @@ const TITLES = new Set(['dr.', 'majoor', 'tante', 'kok', 'bootsman', 'stuurman',
   'studio', 'boss', 'film', 'star', 'director', 'writer', 'make-up', 'stuntman', 'cameraman', 'agent', 'starlet',
   'caravan', 'leader', 'merchant', 'carpet', 'tea', 'server', 'stargazer', 'poet',
   'abbot', 'brother', 'novice', 'pilgrim', 'herb', 'woman', 'illuminator', 'cellarer',
-  'keeper', 'assistant', 'housekeeper', 'fisherman', 'ornithologist', 'castaway', 'schoolteacher', 'telegraphist']);
+  'keeper', 'assistant', 'housekeeper', 'fisherman', 'ornithologist', 'castaway', 'schoolteacher', 'telegraphist',
+  'shipowner', 'captain', 'aviatrix', 'wireless', 'operator', 'milliner',
+  'innkeeper', 'hostess', 'gardener', 'botanist', 'printmaker',
+  'coffee', 'overseer', 'teacher', 'taster', 'pianist', 'agronomist', 'buyer',
+  'designer', 'commander', 'reporter', 'meteorologist', 'mechanic', 'tennis', 'diplomat', 'postmistress',
+  'station', 'radio', 'glaciologist', 'dog', 'handler', 'physicist',
+  'count', 'composer', 'skater', 'goldsmith', 'governess', 'lieutenant',
+  'wildlife', 'filmmaker', 'sound', 'recordist',
+  'lord', 'healer', 'embroiderer', 'interpreter', 'peddler']);
 
 const PARTICLES = new Set(['von', 'van', 'de', 'der', 'den', 'du', 'la', 'le', 'di', 'da']);
 

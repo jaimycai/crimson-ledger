@@ -31,11 +31,20 @@ const WEEK_TITLES = {
   filmstudio: ['De film die niemand mocht zien', 'De stunt die misging', 'De stem op de geluidsband', 'De laatste scène van Gold'],
   karavaan: ['De saffraan van Al-Nour', 'De nacht van duizend sterren', 'Het tapijt met twee patronen', 'De laatste karavaan'],
   abdij:    ['Het boek zonder titel', 'De nacht van de stille klok', 'Het kruid dat niet genas', 'De laatste abt van Sint-Aldric'],
-  vuurtoren: ['Het licht dat uitging', 'De man uit zee', 'De bladzijde uit het logboek', 'De laatste nacht op Grauwkaap']
+  vuurtoren: ['Het licht dat uitging', 'De man uit zee', 'De bladzijde uit het logboek', 'De laatste nacht op Grauwkaap'],
+  oceaanstomer: ['De komeet boven het dek', 'Het telegram zonder naam', 'De kluis van de purser', 'De laatste nacht voor New York'],
+  ryokan:   ['De theekom van driehonderd jaar', 'Licht bij de bron', 'Voetstappen in de regen', 'De laatste gast van Tsukikage'],
+  fazenda:  ['De zak die niet aankwam', 'Het spoor door de bessen', 'De nacht van de vorst', 'Het laatste feest op de veranda'],
+  zeppelin: ['De envelop boven de oceaan', 'De motor die stilviel', 'Voetstappen op de loopbrug', 'De laatste ronde boven Rio'],
+  poolstation: ['De lege stoel van midwinter', 'Het touw in de storm', 'De ijskern in stukken', 'De laatste nacht onder het poollicht'],
+  winterpaleis: ['Het lege juwelenei', 'Sporen op de ijsbaan', 'Het spiegelbeeld dat niet klopte', 'De laatste wals van de eeuw'],
+  safarilodge: ['De laatste opname', 'Schoenen bij de waterpoel', 'De ballon met één te veel', 'De nacht van de grote trek'],
+  hanok:    ['De vierde regel', 'De pot die anders smaakte', 'Licht in de theekamer', 'De laatste maan van Dalbit']
 };
-// sinds 1.4 met Hacienda, Opera, Opgraving, Casino, Filmstudio, Karavaan, Abdij en Vuurtoren: de rotatie verschuift, daarom bewaart board.js een weekzaak per week én wereld
+// sinds 1.4 met Hacienda, Opera, Opgraving, Casino, Filmstudio, Karavaan, Abdij en Vuurtoren, sinds 1.6 met wereld 17-24: de rotatie
+// verschuift, daarom bewaart board.js een weekzaak per week én wereld
 const WEEK_THEMES = ['landhuis', 'piraten', 'hotel', 'ruimte', 'museum', 'trein', 'circus', 'skihut', 'hacienda', 'opera', 'opgraving', 'casino',
-  'filmstudio', 'karavaan', 'abdij', 'vuurtoren'];
+  'filmstudio', 'karavaan', 'abdij', 'vuurtoren', 'oceaanstomer', 'ryokan', 'fazenda', 'zeppelin', 'poolstation', 'winterpaleis', 'safarilodge', 'hanok'];
 
 const Progress = {
   // ── opslag (via App, zodat privémodus nooit crasht) ──
@@ -206,6 +215,14 @@ const Progress = {
     { id: 'karavaan',      icon: '🐫', title: 'De karavaan trekt verder', hint: 'Maak alle delen van Karavanserai Al-Nour af',             test: c => c.worldsDone.includes('karavaan') },
     { id: 'abdij',         icon: '⛪', title: 'De klok luidt',          hint: 'Maak alle delen van De Abdij van Sint-Aldric af',           test: c => c.worldsDone.includes('abdij') },
     { id: 'vuurtoren',     icon: '🌊', title: 'Het licht brandt weer',  hint: 'Maak alle delen van Vuurtoren Grauwkaap af',                test: c => c.worldsDone.includes('vuurtoren') },
+    { id: 'oceaanstomer',  icon: '🚢', title: 'Aangemeerd in New York', hint: 'Maak alle delen van SS Halcyon af',                         test: c => c.worldsDone.includes('oceaanstomer') },
+    { id: 'ryokan',        icon: '🏮', title: 'De bron dampt',          hint: 'Maak alle delen van Ryokan Tsukikage af',                   test: c => c.worldsDone.includes('ryokan') },
+    { id: 'fazenda',       icon: '☕', title: 'De boeken kloppen',      hint: 'Maak alle delen van Fazenda Boa Esperança af',              test: c => c.worldsDone.includes('fazenda') },
+    { id: 'zeppelin',      icon: '☁️', title: 'Vast aan de mast',       hint: 'Maak alle delen van Luchtschip Cirrus af',                  test: c => c.worldsDone.includes('zeppelin') },
+    { id: 'poolstation',   icon: '🐧', title: 'De zon komt terug',      hint: 'Maak alle delen van Poolstation Zuiderkruis af',            test: c => c.worldsDone.includes('poolstation') },
+    { id: 'winterpaleis',  icon: '❄️', title: 'De nieuwe eeuw',         hint: 'Maak alle delen van Paleis Zvezdin af',                     test: c => c.worldsDone.includes('winterpaleis') },
+    { id: 'safarilodge',   icon: '🦒', title: 'De trek gaat verder',    hint: 'Maak alle delen van Twiga Lodge af',                        test: c => c.worldsDone.includes('safarilodge') },
+    { id: 'hanok',         icon: '🌕', title: 'Het gedicht is af',      hint: 'Maak alle delen van Hanok Dalbit af',                       test: c => c.worldsDone.includes('hanok') },
     { id: 'opdrachten',    icon: '🎁', title: 'Alle opdrachten',       hint: 'Maak alle drie de opdrachten van een dag af',                test: c => !!c.questsAll },
     { id: 'vrije-dag',     icon: '🧊', title: 'Gered door een vrije dag', hint: 'Laat een vrije dag je streak redden',                     test: c => !!c.freezeUsed },
     { id: 'vlekkeloos',    icon: '⭐', title: 'Vlekkeloos',            hint: 'Haal tien keer drie sterren in de campagne',                 test: c => c.threeStars >= 10 },

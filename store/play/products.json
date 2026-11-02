@@ -101,5 +101,53 @@
   "name": "Greycape Lighthouse",
   "description": "64 cases in eight parts, own cast.",
   "eur": 1.99
+ },
+ {
+  "id": "nl.crimsonledger.app.world.oceaanstomer",
+  "name": "SS Halcyon",
+  "description": "64 cases in eight parts, own cast.",
+  "eur": 1.99
+ },
+ {
+  "id": "nl.crimsonledger.app.world.ryokan",
+  "name": "Ryokan Tsukikage",
+  "description": "64 cases in eight parts, own cast.",
+  "eur": 1.99
+ },
+ {
+  "id": "nl.crimsonledger.app.world.fazenda",
+  "name": "Fazenda Boa Esperança",
+  "description": "64 cases in eight parts, own cast.",
+  "eur": 1.99
+ },
+ {
+  "id": "nl.crimsonledger.app.world.zeppelin",
+  "name": "The Airship Cirrus",
+  "description": "64 cases in eight parts, own cast.",
+  "eur": 1.99
+ },
+ {
+  "id": "nl.crimsonledger.app.world.poolstation",
+  "name": "Southern Cross Station",
+  "description": "64 cases in eight parts, own cast.",
+  "eur": 1.99
+ },
+ {
+  "id": "nl.crimsonledger.app.world.winterpaleis",
+  "name": "The Zvezdin Palace",
+  "description": "64 cases in eight parts, own cast.",
+  "eur": 1.99
+ },
+ {
+  "id": "nl.crimsonledger.app.world.safarilodge",
+  "name": "Twiga Lodge",
+  "description": "64 cases in eight parts, own cast.",
+  "eur": 1.99
+ },
+ {
+  "id": "nl.crimsonledger.app.world.hanok",
+  "name": "Hanok Dalbit",
+  "description": "64 cases in eight parts, own cast.",
+  "eur": 1.99
  }
 ]
