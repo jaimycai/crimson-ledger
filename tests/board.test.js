@@ -352,8 +352,8 @@ const active = () => document.querySelector('.screen.active').id;
     check(document.querySelectorAll('#quest-list .quest').length === 3, 'opdrachten van vandaag: drie op het startscherm (' + [...document.querySelectorAll('#quest-list .quest-text')].map(e => e.firstChild.textContent).join(' / ') + ')');
     check(!document.getElementById('btn-next-case').hidden && /De verdwenen sleutel/.test(document.getElementById('btn-next-case').textContent) && !document.getElementById('btn-map').hidden, 'volgende-zaak-knop en "Naar de kaart"');
     check(window.Campaign.stars('landhuis', 0) === 3 && window.Campaign.isUnlocked('landhuis', 1), 'voortgang bewaard, zaak 2 open');
-    document.getElementById('btn-map').click(); await sleep(300);
-    check(active() === 'screen-campaign' && node('landhuis', 0).classList.contains('done') && node('landhuis', 0).querySelector('.mnode-stars').textContent === '★★★' && node('landhuis', 1).classList.contains('open') && document.getElementById('campaign-total').textContent === '★ 3/3072', 'kaart bijgewerkt: zaak 1 klaar met drie sterren, zaak 2 open');
+    document.getElementById('btn-map').click(); await sleep(900);   // de kaart met 24 werelden rendert in jsdom ~0,3 s
+    check(active() === 'screen-campaign' && node('landhuis', 0).classList.contains('done') && node('landhuis', 0).querySelector('.mnode-stars').textContent === '★★★' && node('landhuis', 1).classList.contains('open') && document.getElementById('campaign-total').textContent === '★ 3/4608', 'kaart bijgewerkt: zaak 1 klaar met drie sterren, zaak 2 open');
     document.getElementById('btn-map-play').click(); await sleep(300);
     check(active() === 'screen-board' && Board.campaignCase.idx === 1 && !document.getElementById('part-modal').classList.contains('active') && document.getElementById('briefing-modal').classList.contains('active'), 'grote knop start zaak 2 met briefing, zonder deel-splash');
     document.getElementById('btn-briefing-go').click();
@@ -382,7 +382,7 @@ const active = () => document.querySelector('.screen.active').id;
     check(!document.getElementById('btn-chest-next').hidden && /Deel II/.test(document.getElementById('btn-chest-next').textContent), 'knop naar Deel II');
     document.getElementById('chest-btn').click();
     check(window.Progress.points() === ptsBefore + Campaign.CHEST_POINTS, 'nog eens tikken geeft niets extra');
-    document.getElementById('btn-chest-map').click(); await sleep(350);
+    document.getElementById('btn-chest-map').click(); await sleep(900);
     check(document.querySelector('.mchest[data-chapter="landhuis"]').classList.contains('done') && !document.getElementById('chest-modal').classList.contains('active'), 'kist op de kaart staat open');
     // minigame spelen: Wie liegt?, drie rondes goed
     document.querySelector('.mmini[data-chapter="landhuis"]').click(); await sleep(350);
