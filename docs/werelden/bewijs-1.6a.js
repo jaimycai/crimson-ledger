@@ -1,12 +1,16 @@
-// Proves the four worlds of ontwerp-1.6a.js are playable before any case is written, the way the 1.4 sheets were checked
-// ("48 van 48 zaken over alle vier niveaus"): per world 12 seeds x 4 difficulties. Each case loads with the same retries as
-// Campaign.generateFor, has exactly one solution, the right difficulty and number of suspects, and a meester case is
-// solvable step by step without guessing (FloorPlan.stepwise). Plan 1.6 wants parts VI-VIII mostly meester, so it also
-// proves 24 extra meester seeds per world.
-// It also checks the sheet itself: 12 rooms with 12 distinct colours, furniture ids that are new everywhere (avatars.js,
-// ontwerp.js and the other 1.6 file), 8 suspects (4 f, 4 m, the usual colours, short names unique and not used in another
-// world), 8 parts with a one-sentence intro, and a map accent that stands apart from every other world.
-//   node docs/werelden/bewijs-1.6a.js            (about two minutes)
+// Proof for the four worlds of ontwerp-1.6a.js (Oceaanstomer, Ryokan, Koffiefazenda, Zeppelin) and their campaigns.
+// 1. The sheet: 12 rooms with 12 distinct colours, furniture ids that are new everywhere (avatars.js, ontwerp.js and the
+//    other 1.6 file), 8 suspects (4 f, 4 m, the usual colours, short names unique, each starting with a different letter
+//    and not used in another world), 8 parts with a one-sentence intro, and a map accent that stands apart.
+// 2. The 256 cases of campagne-1.6a.js, loaded exactly as Campaign.generateFor does (seed + k * 7919, up to 12 tries):
+//    exactly one solution, the right world, difficulty, board size and number of suspects, a meester case solvable step
+//    by step without guessing (FloorPlan.stepwise), every clue, the case text and the accuse/verdict lines rendered in
+//    Dutch without gaps, seeds unique and outside campaign.js and the archive; the chapter format (keys, parts, titles from
+//    the sheet, Van Dam at the end, difficulty order as tests/campaign.test.js wants) and the texts (no old names from
+//    tests/names.test.js, one or two sentences per story, an item with an icon, no title or item twice in a world).
+// 3. With ONTWERP=1 also the design proof from before the cases existed: per world 12 seeds x 4 levels + 24 extra meester.
+//   node docs/werelden/bewijs-1.6a.js                 (sheet + 256 cases, about a minute)
+//   ONTWERP=1 node docs/werelden/bewijs-1.6a.js       (plus the design proof, two minutes more)
 //   ALLEEN_BLAD=1 node docs/werelden/bewijs-1.6a.js   (only the sheet checks)
 const path = require('path');
 const ROOT = path.join(__dirname, '..', '..');
@@ -16,6 +20,11 @@ require('./ontwerp-1.6a.js');
 try { require('./ontwerp-1.6b.js'); } catch (e) { /* the other 1.6 file is optional */ }
 const { FloorPlan } = require(path.join(ROOT, 'floorplan.js'));
 const { THEMES } = require(path.join(ROOT, 'themes.js'));
+const { CAMPAIGN } = require(path.join(ROOT, 'campaign.js'));
+const { Grammar } = require(path.join(ROOT, 'grammar.js'));
+const { CAMPAGNE_16A } = require('./campagne-1.6a.js');
+let OTHER_CASES = [];
+try { OTHER_CASES = require('./campagne-1.6b.js').CAMPAGNE_16B || []; } catch (e) { /* the other 1.6 campaigns are optional */ }
 
 const MINE = window.ONTWERP_16A;
 const OTHER = window.ONTWERP_16B || [];
@@ -94,6 +103,7 @@ MINE.forEach((w, wi) => {
   if (w.suspects.map(s => s.color).join() !== SUSPECT_COLORS.join()) fail(w.id, 'verdachtenkleuren wijken af van de vaste acht');
   const shorts = w.suspects.map(s => { const p = s.label.split(/\s+/); while (p.length > 1 && w.titles.includes(p[0].toLowerCase())) p.shift(); return p.join(' '); });
   if (new Set(shorts).size !== 8) fail(w.id, `korte namen niet uniek: ${shorts.join(', ')}`);
+  if (new Set(shorts.map(n => n[0])).size !== 8) fail(w.id, `korte namen beginnen niet elk met een andere letter: ${shorts.join(', ')}`);
   w.suspects.forEach((s, i) => {
     if (!s.who || !s.look || !/^an? /.test(s.look)) fail(w.id, `verdachte ${s.label} mist who/look`);
     const last = s.label.split(/\s+/).slice(-1)[0].toLowerCase();
@@ -127,7 +137,7 @@ const prove = (w, seed, level) => {
   return { p, problems };
 };
 console.log('');
-if (!process.env.ALLEEN_BLAD) MINE.forEach((w, wi) => {
+if (process.env.ONTWERP && !process.env.ALLEEN_BLAD) MINE.forEach((w, wi) => {
   const rooms = new Set(), furn = new Set(), sus = new Set();
   const per = {};
   LEVELS.forEach(level => {
@@ -152,6 +162,83 @@ if (!process.env.ALLEEN_BLAD) MINE.forEach((w, wi) => {
   console.log(`${n === 48 ? 'ok  ' : 'FAIL'} ${w.id}: ${n}/48 (${LEVELS.map(l => `${l} ${per[l]}/12`).join(', ')}), extra meester ${extra}/24; ` +
     `op de borden: ${rooms.size}/12 kamers, ${furn.size}/${w.furniture.length} meubels, ${sus.size}/8 verdachten`);
 });
-console.log(`\n${ok}/${total} zaken bewezen, plus ${extraOk}/${extraTotal} extra meesterzaken (${((Date.now() - t0) / 1000).toFixed(1)}s)`);
+if (process.env.ONTWERP && !process.env.ALLEEN_BLAD)
+  console.log(`\nontwerp: ${ok}/${total} zaken bewezen, plus ${extraOk}/${extraTotal} extra meesterzaken (${((Date.now() - t0) / 1000).toFixed(1)}s)`);
+
+// ── the campaigns ──
+const ROMAN = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII'];
+const RANK = { makkelijk: 0, gemiddeld: 1, moeilijk: 2, meester: 3 };
+const OLD = (() => {   // the old names that tests/names.test.js forbids in campaign.js
+  const src = require('fs').readFileSync(path.join(ROOT, 'tests', 'names.test.js'), 'utf8');
+  return eval(src.match(/const OLD = (\[[\s\S]*?\]);/)[1]);
+})();
+const hasWord = (text, n) => new RegExp('(?<![\\p{L}])' + n.replace('.', '\\.') + '(?![\\p{L}])', 'u').test(text);
+const gap = t => typeof t !== 'string' || !t.trim() || /[{}]|undefined|null|NaN|\s{2}|^\s|\s$/.test(t);
+const sentences = t => (t.match(/[.!?](?=\s|$)/g) || []).length;
+const usedSeeds = new Set(CAMPAIGN.flatMap(ch => ch.cases.map(c => c.seed)));
+const otherSeeds = new Set(OTHER_CASES.flatMap(ch => ch.cases.map(c => c.seed)));
+const archiveSeed = seed => seed > 200000 && (seed - 200000) % 9973 === 0;
+const seenSeed = new Set();
+const t1 = Date.now();
+let cTotal = 0, cOk = 0;
+if (!process.env.ALLEEN_BLAD) {
+  console.log('');
+  MINE.forEach(w => {
+    const chs = CAMPAGNE_16A.filter(ch => ch.theme === w.id);
+    const count = { makkelijk: 0, gemiddeld: 0, moeilijk: 0, meester: 0 };
+    const titles = new Set(), items = new Set();
+    let okW = 0;
+    if (chs.length !== 8) fail(w.id, `${chs.length} delen in de campagne`);
+    chs.forEach((ch, p) => {
+      const where = `${ch.key}`;
+      if (ch.key !== (p === 0 ? w.id : `${w.id}-${p + 1}`) || ch.part !== p + 1) fail(where, `sleutel of deelnummer (${ch.key}, ${ch.part})`);
+      if (ch.title !== `Deel ${ROMAN[p]} · ${w.parts[p][0]}`) fail(where, `titel "${ch.title}" is niet de titel van het ontwerpblad`);
+      if (!ch.icon || gap(ch.intro) || gap(ch.outro) || gap(ch.briefing) || ch.briefing.length <= 40) fail(where, 'icoon, intro, outro of briefing ontbreekt of heeft een gat');
+      if (p === 0 && ch.intro !== w.intro) fail(where, 'deel I begint niet met de intro van de wereld');
+      if (p === 7 && (!ch.outro.startsWith('Van Dam ') || !ch.outro.endsWith(w.outro))) fail(where, 'het laatste deel eindigt niet met Van Dam en de outro van de wereld');
+      if (ch.cases.length !== 8) fail(where, `${ch.cases.length} zaken`);
+      const diffs = ch.cases.map(c => c.difficulty);
+      // tests/campaign.test.js: oplopend, eindigt op moeilijk of meester, deel I-VI begint met makkelijk
+      if (!(RANK[diffs[0]] <= RANK[diffs[7]] && RANK[diffs[7]] >= 2 && (ch.part > 6 || diffs[0] === 'makkelijk'))) fail(where, `moeilijkheid loopt niet op: ${diffs.join(' ')}`);
+      for (const text of [ch.intro, ch.outro, ch.briefing, ...ch.cases.flatMap(c => [c.title, c.story, c.item])])
+        for (const n of OLD) if (hasWord(text, n)) fail(where, `oude naam "${n}" in "${text}"`);
+      ch.cases.forEach((c, i) => {
+        cTotal++;
+        const problems = [];
+        if (gap(c.title) || gap(c.story) || !/^\S+ \S.*$/u.test(c.item || '') || gap(c.item)) problems.push('titel, verhaal of bewijsstuk heeft een gat');
+        if (![1, 2].includes(sentences(c.story)) || !/[.!?]$/.test(c.story)) problems.push(`verhaal heeft ${sentences(c.story)} zinnen`);
+        if (titles.has(c.title)) problems.push(`titel "${c.title}" staat al in deze wereld`);
+        if (items.has(c.item)) problems.push(`bewijsstuk "${c.item}" staat al in deze wereld`);
+        titles.add(c.title); items.add(c.item);
+        if (!(c.difficulty in RANK)) problems.push(`moeilijkheid ${c.difficulty}`); else count[c.difficulty]++;
+        if (!Number.isInteger(c.seed) || usedSeeds.has(c.seed) || otherSeeds.has(c.seed) || seenSeed.has(c.seed) || archiveSeed(c.seed)) problems.push(`seed ${c.seed} al in gebruik`);
+        seenSeed.add(c.seed);
+        // exactly as Campaign.generateFor: theme, then seed + k * 7919 for up to 12 tries
+        let pz = null;
+        for (let k = 0; k < 12 && !pz; k++) pz = FloorPlan.generate(c.seed + k * 7919, c.difficulty, w);
+        if (!pz) problems.push('geen puzzel');
+        else {
+          const cfg = FloorPlan.DIFF[c.difficulty];
+          const sols = FloorPlan.solve(pz, 3).length;
+          if (sols !== 1) problems.push(`${sols} oplossingen`);
+          if (pz.theme.id !== w.id || pz.difficulty !== c.difficulty) problems.push(`wereld ${pz.theme.id} / ${pz.difficulty}`);
+          if (pz.cols !== cfg.cols || pz.rows !== cfg.rows || pz.suspects.length !== cfg.suspects) problems.push(`${pz.cols}x${pz.rows}, ${pz.suspects.length} verdachten`);
+          if (c.difficulty === 'meester' && !FloorPlan.stepwise(pz).solved) problems.push('niet stap voor stap op te lossen');
+          const texts = [Grammar.caseText(pz), Grammar.text('board/rule', pz), Grammar.text('board/verdict', pz, { s: pz.murderer, room: pz.victim.roomId }),
+            ...pz.rooms.map(r => Grammar.text('board/accuse', pz, { room: r.id })),
+            ...pz.clues.flatMap(cl => [Grammar.statement(cl, pz).text, Grammar.clue(cl, pz), Grammar.explain(cl, pz)])];
+          const bad = texts.find(gap);
+          if (bad !== undefined) problems.push(`tekst met een gat: "${bad}"`);
+        }
+        if (problems.length) fail(where, `${i + 1} "${c.title}" (seed ${c.seed}): ${problems.join(', ')}`);
+        else { cOk++; okW++; }
+      });
+    });
+    console.log(`${okW === 64 ? 'ok  ' : 'FAIL'} ${w.id}: ${okW}/64 zaken bewezen; ${count.makkelijk} makkelijk, ${count.gemiddeld} gemiddeld, ` +
+      `${count.moeilijk} moeilijk, ${count.meester} meester`);
+  });
+  if (CAMPAGNE_16A.length !== 32) fail('campagne', `${CAMPAGNE_16A.length} delen, verwacht 32`);
+  console.log(`\ncampagne: ${cOk}/${cTotal} zaken bewezen (${((Date.now() - t1) / 1000).toFixed(1)}s)`);
+}
 console.log(failures ? `${failures} problemen` : 'Alles in orde.');
 process.exit(failures ? 1 : 0);

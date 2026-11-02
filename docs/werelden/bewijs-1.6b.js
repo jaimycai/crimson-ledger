@@ -1,23 +1,29 @@
-// Proves that the four worlds of ontwerp-1.6b.js are playable, the way the sheets of 1.4 were checked
-// ("De motor maakt per wereld 48 van 48 zaken over alle vier niveaus"):
-//   per world 12 seeds on each of the four levels, loaded with the same retries as Campaign.generateFor; each case has
-//   exactly one solution, the right difficulty and number of suspects, clue texts without gaps, and a meester case is
-//   solvable step by step (FloorPlan.stepwise).
-// Plus the sheet itself: 12 rooms with twelve distinct colours (closest pair in CIEDE2000), enough rooms for meester,
-// new furniture ids that clash with nothing in avatars.js, themes.js or ontwerp-1.6a.js, eight suspects with unique
-// colours and board names, eight parts, and a map colour that stays apart from the other 23 worlds.
+// Proves the four worlds of ontwerp-1.6b.js and their campaign (campagne-1.6b.js, 4 x 64 cases).
+// Campaign: every case loads exactly as Campaign.generateFor loads it (seed + k*7919, k < 12) with the theme of its world,
+// has exactly one solution, the right world, difficulty, board size and number of suspects, clue texts without gaps,
+// and a meester case is solvable step by step (FloorPlan.stepwise). Seeds are unique across campaign.js, this file and
+// campagne-1.6a.js (the other four worlds of 1.6, if it exists). Per part the rules of tests/campaign.test.js hold
+// (difficulty rises, parts I-VI start makkelijk, briefing, intro, outro, item with an icon).
+// Sheet: 12 rooms with twelve distinct colours (closest pair in CIEDE2000), enough rooms for meester, new furniture ids
+// that clash with nothing in avatars.js, themes.js or ontwerp-1.6a.js, eight suspects with unique colours and board
+// names, eight parts, and a map colour that stays apart from the other 23 worlds.
 //   node docs/werelden/bewijs-1.6b.js
 global.window = {};
 require('./ontwerp-1.6b.js');
 try { require('./ontwerp-1.6a.js'); } catch (e) { /* the other four worlds of 1.6, if their sheet exists */ }
+const { CAMPAGNE_16B } = require('./campagne-1.6b.js');
+let OTHER_CAMPAIGN = [];
+try { OTHER_CAMPAIGN = Object.values(require('./campagne-1.6a.js')).find(Array.isArray) || []; } catch (e) { /* not there yet */ }
 const { FloorPlan } = require('../../floorplan.js');
 const { THEMES } = require('../../themes.js');
+const { CAMPAIGN } = require('../../campaign.js');
 const { Avatars } = require('../../avatars.js');
 
 const WORLDS = window.ONTWERP_16B;
 const OTHERS_16 = window.ONTWERP_16A || [];
 const LEVELS = ['makkelijk', 'gemiddeld', 'moeilijk', 'meester'];
-const PER_LEVEL = 12;
+const ROMAN = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII'];
+const RANK = { makkelijk: 0, gemiddeld: 1, moeilijk: 2, meester: 3 };
 
 // ── colour distance (CIEDE2000) ─────────────────────────────
 function lab(hex) {
@@ -62,6 +68,7 @@ const otherMaps = [...THEMES, ...OTHERS_16].map(t => ({ id: t.id, accent: t.map.
 const boardName = label => { const p = label.split(/\s+/); return p.length > 1 ? p.slice(1).join(' ') : p[0]; };
 
 let failures = 0, totalCases = 0, okCases = 0;
+const usedSeeds = new Set([...CAMPAIGN, ...OTHER_CAMPAIGN].flatMap(ch => ch.cases.map(c => c.seed)));
 const fail = (w, msg) => { failures++; console.log(`  FAIL ${w}: ${msg}`); };
 const t0 = Date.now();
 const ownFurniture = new Set();
@@ -107,39 +114,55 @@ WORLDS.forEach((w, wi) => {
   if (mc.d < 8) fail(w.id, `kaartkleur ${w.map.accent} te dicht bij ${mc.id} (ΔE ${mc.d.toFixed(1)})`);
   console.log(`  kaartkleur ${w.map.accent}: dichtstbijzijnde wereld ${mc.id}, ΔE ${mc.d.toFixed(1)}`);
 
-  // engine: 12 seeds on each of the four levels
-  const base = (w.nr + 1) * 10000 + 1101;   // the seed range the cases of this world will get (wereld 9 → 101101)
+  // campaign: the eight parts of this world, every case as the app loads it
+  const chapters = CAMPAGNE_16B.filter(ch => ch.theme === w.id);
+  if (chapters.length !== 8) fail(w.id, `${chapters.length} delen in campagne-1.6b.js`);
+  const count = { makkelijk: 0, gemiddeld: 0, moeilijk: 0, meester: 0 };
   const line = [];
-  LEVELS.forEach((level, li) => {
+  chapters.forEach((ch, pi) => {
+    const k = pi === 0 ? w.id : `${w.id}-${pi + 1}`;
+    if (ch.key !== k || ch.part !== pi + 1) fail(w.id, `deel ${pi + 1}: sleutel ${ch.key}, part ${ch.part}`);
+    if (ch.title !== `Deel ${ROMAN[pi]} · ${w.parts[pi][0]}`) fail(ch.key, `titel "${ch.title}"`);
+    if (!ch.icon || !ch.intro || !ch.outro || !(ch.briefing && ch.briefing.length > 40)) fail(ch.key, 'icoon, intro, outro of briefing ontbreekt');
+    if (ch.cases.length !== 8) fail(ch.key, `${ch.cases.length} zaken`);
+    const diffs = ch.cases.map(c => c.difficulty);
+    const first = RANK[diffs[0]], last = RANK[diffs[diffs.length - 1]];
+    if (!(first <= last && last >= 2 && (ch.part > 6 || diffs[0] === 'makkelijk'))) fail(ch.key, `moeilijkheid loopt niet op: ${diffs.join(' ')}`);
     let ok = 0, ms = 0;
-    for (let i = 0; i < PER_LEVEL; i++) {
+    ch.cases.forEach((c, i) => {
       totalCases++;
-      const seed = base + li * 100 + i;
+      count[c.difficulty]++;
+      const problems = [];
+      if (!c.title || !c.story || !/^\S+ .+/.test(c.item || '') || !LEVELS.includes(c.difficulty)) problems.push('titel, verhaal, bewijsstuk of moeilijkheid');
+      if (usedSeeds.has(c.seed)) problems.push(`seed ${c.seed} al in gebruik`);
+      usedSeeds.add(c.seed);
       const t = Date.now();
       let p = null;
-      for (let k = 0; k < 12 && !p; k++) p = FloorPlan.generate(seed + k * 7919, level, w);
-      const problems = [];
+      for (let k2 = 0; k2 < 12 && !p; k2++) p = FloorPlan.generate(c.seed + k2 * 7919, c.difficulty, w);
       if (!p) problems.push('geen puzzel');
       else {
+        const cfg = FloorPlan.DIFF[c.difficulty];
         const sols = FloorPlan.solve(p, 3).length;
         if (sols !== 1) problems.push(`${sols} oplossingen`);
-        if (p.difficulty !== level) problems.push(`moeilijkheid ${p.difficulty}`);
-        if (p.suspects.length !== FloorPlan.DIFF[level].suspects) problems.push(`${p.suspects.length} verdachten`);
-        if (level === 'meester' && !FloorPlan.stepwise(p).solved) problems.push('niet stap voor stap op te lossen');
+        if (p.theme.id !== ch.theme) problems.push(`wereld ${p.theme.id}`);
+        if (p.difficulty !== c.difficulty) problems.push(`moeilijkheid ${p.difficulty}`);
+        if (p.cols !== cfg.cols || p.rows !== cfg.rows) problems.push(`bord ${p.cols}x${p.rows}`);
+        if (p.suspects.length !== cfg.suspects) problems.push(`${p.suspects.length} verdachten`);
+        if (c.difficulty === 'meester' && !FloorPlan.stepwise(p).solved) problems.push('niet stap voor stap op te lossen');
         const texts = [...p.clueTexts, p.caseText].join(' ');
         if (/undefined|NaN|\{|\}/.test(texts)) problems.push(`tekst met een gat: ${texts.slice(0, 120)}`);
       }
       ms += Date.now() - t;
-      if (problems.length) fail(w.id, `${level} seed ${seed}: ${problems.join(', ')}`); else ok++;
-    }
+      if (problems.length) fail(ch.key, `zaak ${i + 1} "${c.title}" (seed ${c.seed}): ${problems.join(', ')}`); else ok++;
+    });
     okCases += ok;
-    line.push(`${level} ${ok}/${PER_LEVEL} (${(ms / PER_LEVEL / 1000).toFixed(2)} s per zaak)`);
+    line.push(`${ROMAN[pi]} ${ok}/8`);
   });
-  console.log(`  motor: ${line.join(', ')}`);
-  // one example of what the player reads
-  const ex = FloorPlan.generate(base, 'gemiddeld', w);
-  if (ex) console.log(`  voorbeeld (gemiddeld): ${ex.clueTexts.slice(0, 3).join(' | ')}`);
+  const last = chapters[7];
+  if (last && !last.outro.endsWith(w.outro)) fail(w.id, 'het slot van deel VIII eindigt niet met de outro van de wereld');
+  console.log(`  campagne: ${line.join(', ')}`);
+  console.log(`  moeilijkheid: ${LEVELS.map(l => `${count[l]} ${l}`).join(', ')}`);
 });
 
-console.log(`\n${okCases}/${totalCases} zaken bewezen over ${WORLDS.length} werelden (${((Date.now() - t0) / 1000).toFixed(1)} s); ${failures} fout(en)`);
+console.log(`\n${okCases}/${totalCases} campagnezaken bewezen over ${WORLDS.length} werelden (${((Date.now() - t0) / 1000).toFixed(1)} s); ${failures} fout(en)`);
 process.exit(failures === 0 && okCases === totalCases ? 0 : 1);

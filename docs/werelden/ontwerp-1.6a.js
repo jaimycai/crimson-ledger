@@ -9,6 +9,9 @@
 // Promenadedek, Radiokamer, Onsen, Tuin, Bamboebos, Droogvloer, Koffieveld, Pakhuis, Branderij, Stuurgondel, Motorgondel,
 // Loopbrug, Postkamer, Uitkijkpost.
 // titles: the first words of the suspect and victim names that are a role, for TITLES in themes.js (short name on the board).
+// Within a world every short name starts with a different letter (tests/names.test.js); five names changed for that on
+// 2 November after Jaimy's yes: Harrow → Grant, Tetsuo → Isamu, Shiro → Hiroshi, Bruno → Rudi, Moreau → Vidal.
+// The campaigns are in campagne-1.6a.js; their seeds are proven against the order of rooms, furniture and suspects here.
 // floor: four new floor styles (teakdek, tatami, cementtegels, aluminium); the sheet shows them, style.css gets them later.
 window.ONTWERP_16A = [
   {
@@ -40,7 +43,7 @@ window.ONTWERP_16A = [
         icon: '<g><path d="M8 22 v10 a12 3.6 0 0 0 24 0 v-10" fill="#E7A9CF" stroke="#7A3A5C" stroke-width="1.2"/><path d="M12 24.7 v10.4 M16.5 25.4 v10.6 M23.5 25.4 v10.6 M28 24.7 v10.4" stroke="#FAF5EF" stroke-width="1.3"/><ellipse cx="20" cy="22" rx="12.6" ry="3.6" fill="#F3C6DF" stroke="#7A3A5C" stroke-width="1.2"/><ellipse cx="20" cy="17.6" rx="13.8" ry="3" fill="#3B4E6B" stroke="#1A1108" stroke-width="1.1"/><path d="M14 17.6 q0 -8 6 -8 q6 0 6 8z" fill="#4A6080" stroke="#1A1108" stroke-width="1.1"/><path d="M14.3 15 q5.7 1.8 11.4 0" fill="none" stroke="#B3261E" stroke-width="1.9"/><path d="M24 12.6 q7 -10 12.5 -7 q-5.5 0.4 -12.5 7z" fill="#FAF5EF" stroke="#8A7A60" stroke-width="0.8"/></g>' }
     ],
     suspects: [
-      { label: 'Kapitein Harrow', gender: 'm', color: '#B85C5C', who: 'Voert het bevel, dit is zijn laatste oversteek',
+      { label: 'Kapitein Grant', gender: 'm', color: '#B85C5C', who: 'Voert het bevel, dit is zijn laatste oversteek',
         look: 'a dignified ocean liner captain in his sixties, neat white beard, navy double-breasted uniform with gold braid on the sleeves, white-topped peaked cap' },
       { label: 'Stewardess Molly', gender: 'f', color: '#5C8B5E', who: 'Zorgt voor de hutten van de eerste klasse en kent elke sleutel',
         look: 'a brisk ship stewardess in her twenties, hair in a neat bun under a small white cap, starched white apron over a dark uniform dress, a ring of cabin keys' },
@@ -107,7 +110,7 @@ window.ONTWERP_16A = [
         look: 'a meticulous kaiseki chef in his forties, cropped hair, white cotton headband, white chef coat, holding a lacquered tray with small dishes' },
       { label: 'Theemeesteres Chiyo', gender: 'f', color: '#C2185B', who: 'Leidt de theeceremonie, al veertig jaar',
         look: 'a serene tea ceremony master in her sixties, grey hair in a low bun, subdued grey kimono, a bamboo tea whisk in her hands' },
-      { label: 'Ingenieur Tetsuo', gender: 'm', color: '#B8955C', who: 'Wil een spoorlijn door het bamboebos aanleggen',
+      { label: 'Ingenieur Isamu', gender: 'm', color: '#B8955C', who: 'Wil een spoorlijn door het bamboebos aanleggen',
         look: 'an ambitious railway engineer in his thirties, western three-piece suit, round wire glasses, slicked-back hair, rolled blueprints under his arm' },
       { label: 'Fotografe Sachiko', gender: 'f', color: '#8B5CB8', who: 'Fotografeert de bloesem voor een tijdschrift in Osaka',
         look: 'a modern young photographer in her twenties, short bobbed hair, cloche hat, drop-waist western dress, folding camera on a strap' },
@@ -115,7 +118,7 @@ window.ONTWERP_16A = [
         look: 'an elderly gardener in his sixties, cropped grey hair, indigo work jacket, straw sandals, a bamboo rake and pruning shears' },
       { label: 'Plantkundige Evelyn', gender: 'f', color: '#2C3E50', who: 'Kwam uit Engeland om de kersenbomen te bestuderen',
         look: 'an English botanist in her forties, sensible tweed jacket, wide-brimmed sun hat, magnifying glass, a sprig of cherry blossom pressed in a notebook' },
-      { label: 'Prentmaker Shiro', gender: 'm', color: '#D9A441', who: 'Snijdt houtsneden van Kyoto voor verzamelaars overzee',
+      { label: 'Prentmaker Hiroshi', gender: 'm', color: '#D9A441', who: 'Snijdt houtsneden van Kyoto voor verzamelaars overzee',
         look: 'a woodblock print artist in his forties, short cropped hair, dark work kimono with tied-back sleeves, carving tool in hand, a print of cherry blossoms' }
     ],
     titles: ['herbergier', 'gastvrouw', 'kok', 'theemeesteres', 'ingenieur', 'fotografe', 'tuinman', 'plantkundige', 'prentmaker'],
@@ -227,11 +230,11 @@ window.ONTWERP_16A = [
         look: 'a young Brazilian navigator in his twenties, dark curly hair, open-collared uniform shirt, a rolled chart under his arm, pencil behind his ear' },
       { label: 'Weerkundige Liv', gender: 'f', color: '#B8955C', who: 'Leest de wolken en kiest de koers',
         look: 'a Norwegian meteorologist in her thirties, fair hair pinned in a low knot, thick knitted cardigan, round spectacles, a brass barometer in her hands' },
-      { label: 'Monteur Bruno', gender: 'm', color: '#8B5CB8', who: 'Houdt de vijf motoren draaiend, buiten in de gondels',
+      { label: 'Monteur Rudi', gender: 'm', color: '#8B5CB8', who: 'Houdt de vijf motoren draaiend, buiten in de gondels',
         look: 'a cheerful engine mechanic in his thirties, woollen cap, grease on one cheek, overalls with rolled sleeves, a spanner in his hand' },
       { label: 'Tennisster Josette', gender: 'f', color: '#5C7AB8', who: 'Speelt volgende week een toernooi in Rio',
         look: 'a famous tennis champion in her twenties, bandeau headband over bobbed hair, white pleated tennis dress, cardigan over her shoulders, a wooden racket' },
-      { label: 'Diplomaat Moreau', gender: 'm', color: '#2C3E50', who: 'Wil namens zijn land tien luchtschepen kopen',
+      { label: 'Diplomaat Vidal', gender: 'm', color: '#2C3E50', who: 'Wil namens zijn land tien luchtschepen kopen',
         look: 'a polished French diplomat in his fifties, silver hair, waxed silver moustache, dark morning coat, a rosette in his lapel, leather document case' },
       { label: 'Postmeesteres Elsbeth', gender: 'f', color: '#D9A441', who: 'Bewaakt vijftigduizend brieven met zeldzame postzegels',
         look: 'a meticulous postmistress in her forties, hair in a tight bun, uniform jacket with brass buttons, an ink stamp in her hand, a sack of airmail beside her' }
