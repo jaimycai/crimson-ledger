@@ -402,7 +402,16 @@
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "盤面テーマと肖像フレームはCrimson Passに含まれます。テーマとフレームだけを解放することもできます。",
     "Extra's": "アイテム",
     "+1 hint voor ★★★": "★★★でヒント+1回",
-    "Vastgelopen? Je volgende hint is gratis.": "お困りですか？次のヒントは無料です。"
+    "Vastgelopen? Je volgende hint is gratis.": "お困りですか？次のヒントは無料です。",
+    "Zo zat het": "事件の真相",
+    "Van Dam legt uit hoe je de dader vond": "ヴァン・ダム警部が、犯人にたどり着いた筋道を解説します",
+    "3 · Dus": "3 · だから",
+    "Zo kon niemand anders bij het slachtoffer zijn.": "これで、ほかに被害者と一緒にいられた人はいなくなります。",
+    "Bewijsstuk in je vitrine": "陳列棚に加わった証拠品",
+    "Gemiste dagzaken": "見逃した日替わり事件",
+    "Telt als zaak, niet voor je streak": "解決数に入り、連続記録には入りません",
+    "Gemist": "見逃し",
+    "▶ Volgende gemiste dagzaak": "▶ 次の見逃した事件"
   },
 
   data: {

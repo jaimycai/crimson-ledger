@@ -402,7 +402,16 @@
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "Темы поля и рамки портретов входят в Crimson Pass. Или откройте только темы и рамки.",
     "Extra's": "Дополнительно",
     "+1 hint voor ★★★": "+1 подсказка за ★★★",
-    "Vastgelopen? Je volgende hint is gratis.": "Застряли? Следующая подсказка бесплатно."
+    "Vastgelopen? Je volgende hint is gratis.": "Застряли? Следующая подсказка бесплатно.",
+    "Zo zat het": "Как всё было",
+    "Van Dam legt uit hoe je de dader vond": "Ван Дам объясняет, как вы нашли убийцу",
+    "3 · Dus": "3 · Итак",
+    "Zo kon niemand anders bij het slachtoffer zijn.": "Так что больше никто не мог быть рядом с жертвой.",
+    "Bewijsstuk in je vitrine": "Улика в вашей витрине",
+    "Gemiste dagzaken": "Пропущенные дела дня",
+    "Telt als zaak, niet voor je streak": "Засчитывается как дело, но не для серии",
+    "Gemist": "Пропущено",
+    "▶ Volgende gemiste dagzaak": "▶ Следующее пропущенное дело"
   },
 
   data: {

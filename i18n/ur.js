@@ -402,7 +402,16 @@
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "بورڈ تھیم اور پورٹریٹ فریم Crimson Pass میں شامل ہیں۔ یا صرف تھیم اور فریم کھولیں۔",
     "Extra's": "ایکسٹرا",
     "+1 hint voor ★★★": "★★★ پر +1 اشارہ",
-    "Vastgelopen? Je volgende hint is gratis.": "مشکل ہو رہی ہے؟ اگلا اشارہ مفت ہے۔"
+    "Vastgelopen? Je volgende hint is gratis.": "مشکل ہو رہی ہے؟ اگلا اشارہ مفت ہے۔",
+    "Zo zat het": "یوں ہوا تھا",
+    "Van Dam legt uit hoe je de dader vond": "وین ڈیم بتاتے ہیں کہ آپ نے قاتل کو کیسے ڈھونڈا",
+    "3 · Dus": "3 · لہٰذا",
+    "Zo kon niemand anders bij het slachtoffer zijn.": "اس طرح مقتول کے ساتھ کوئی اور نہیں ہو سکتا تھا۔",
+    "Bewijsstuk in je vitrine": "آپ کے شوکیس میں ثبوت",
+    "Gemiste dagzaken": "چھوٹے ہوئے روزانہ کیس",
+    "Telt als zaak, niet voor je streak": "کیس میں گنا جاتا ہے، سلسلے میں نہیں",
+    "Gemist": "چھوٹ گیا",
+    "▶ Volgende gemiste dagzaak": "▶ اگلا چھوٹا ہوا روزانہ کیس"
   },
 
   data: {

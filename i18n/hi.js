@@ -402,7 +402,16 @@
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "बोर्ड थीम और पोर्ट्रेट फ़्रेम Crimson Pass में शामिल हैं। या सिर्फ़ थीम और फ़्रेम अनलॉक करें।",
     "Extra's": "एक्स्ट्रा",
     "+1 hint voor ★★★": "★★★ पर +1 संकेत",
-    "Vastgelopen? Je volgende hint is gratis.": "मुश्किल हो रही है? अगला संकेत मुफ़्त है।"
+    "Vastgelopen? Je volgende hint is gratis.": "मुश्किल हो रही है? अगला संकेत मुफ़्त है।",
+    "Zo zat het": "ऐसे हुआ था",
+    "Van Dam legt uit hoe je de dader vond": "वैन डैम बताते हैं कि आपने क़ातिल को कैसे पकड़ा",
+    "3 · Dus": "3 · इसलिए",
+    "Zo kon niemand anders bij het slachtoffer zijn.": "इस तरह पीड़ित के साथ कोई और नहीं हो सकता था।",
+    "Bewijsstuk in je vitrine": "आपके शोकेस में सबूत",
+    "Gemiste dagzaken": "छूटे हुए रोज़ के केस",
+    "Telt als zaak, niet voor je streak": "केस में गिना जाता है, स्ट्रीक में नहीं",
+    "Gemist": "छूटा हुआ",
+    "▶ Volgende gemiste dagzaak": "▶ अगला छूटा हुआ रोज़ का केस"
   },
 
   data: {

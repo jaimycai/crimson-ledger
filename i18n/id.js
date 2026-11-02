@@ -402,7 +402,16 @@
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "Tema papan dan bingkai potret termasuk dalam Crimson Pass. Atau buka tema dan bingkainya saja.",
     "Extra's": "Ekstra",
     "+1 hint voor ★★★": "+1 hint untuk ★★★",
-    "Vastgelopen? Je volgende hint is gratis.": "Buntu? Hint berikutnya gratis."
+    "Vastgelopen? Je volgende hint is gratis.": "Buntu? Hint berikutnya gratis.",
+    "Zo zat het": "Begini kejadiannya",
+    "Van Dam legt uit hoe je de dader vond": "Van Dam menjelaskan cara kamu menemukan pelakunya",
+    "3 · Dus": "3 · Jadi",
+    "Zo kon niemand anders bij het slachtoffer zijn.": "Dengan begitu, tak ada orang lain yang bisa bersama korban.",
+    "Bewijsstuk in je vitrine": "Barang bukti di etalasemu",
+    "Gemiste dagzaken": "Kasus harian yang terlewat",
+    "Telt als zaak, niet voor je streak": "Dihitung sebagai kasus, bukan untuk runtunanmu",
+    "Gemist": "Terlewat",
+    "▶ Volgende gemiste dagzaak": "▶ Kasus harian terlewat berikutnya"
   },
 
   data: {

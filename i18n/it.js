@@ -402,7 +402,16 @@
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "I temi del tabellone e le cornici dei ritratti fanno parte del Crimson Pass. Oppure sblocca solo temi e cornici.",
     "Extra's": "Extra",
     "+1 hint voor ★★★": "+1 aiuto per ★★★",
-    "Vastgelopen? Je volgende hint is gratis.": "Bloccato? Il tuo prossimo aiuto è gratis."
+    "Vastgelopen? Je volgende hint is gratis.": "Bloccato? Il tuo prossimo aiuto è gratis.",
+    "Zo zat het": "Com’è andata",
+    "Van Dam legt uit hoe je de dader vond": "Van Dam spiega come hai trovato il colpevole",
+    "3 · Dus": "3 · Quindi",
+    "Zo kon niemand anders bij het slachtoffer zijn.": "Così nessun altro poteva essere con la vittima.",
+    "Bewijsstuk in je vitrine": "Prova nella tua vetrina",
+    "Gemiste dagzaken": "Casi del giorno saltati",
+    "Telt als zaak, niet voor je streak": "Conta come caso, non per la tua serie",
+    "Gemist": "Saltato",
+    "▶ Volgende gemiste dagzaak": "▶ Prossimo caso del giorno saltato"
   },
 
   data: {

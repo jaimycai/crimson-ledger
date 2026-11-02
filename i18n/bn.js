@@ -402,7 +402,16 @@
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "বোর্ডের থিম আর ছবির ফ্রেম Crimson Pass-এর অংশ। অথবা শুধু থিম আর ফ্রেমগুলো খুলে নিন।",
     "Extra's": "এক্সট্রা",
     "+1 hint voor ★★★": "★★★-এর জন্য +1টি ইঙ্গিত",
-    "Vastgelopen? Je volgende hint is gratis.": "আটকে গেছেন? পরের ইঙ্গিতটি বিনামূল্যে।"
+    "Vastgelopen? Je volgende hint is gratis.": "আটকে গেছেন? পরের ইঙ্গিতটি বিনামূল্যে।",
+    "Zo zat het": "যেভাবে ঘটেছিল",
+    "Van Dam legt uit hoe je de dader vond": "আপনি খুনিকে কীভাবে খুঁজে পেলেন, ভান ডাম তা বুঝিয়ে বলছেন",
+    "3 · Dus": "3 · তাই",
+    "Zo kon niemand anders bij het slachtoffer zijn.": "এভাবে নিহতের সঙ্গে আর কেউ থাকতে পারতেন না।",
+    "Bewijsstuk in je vitrine": "আপনার শোকেসে প্রমাণ",
+    "Gemiste dagzaken": "বাদ পড়া দৈনিক কেস",
+    "Telt als zaak, niet voor je streak": "কেস হিসেবে গোনা হয়, ধারায় নয়",
+    "Gemist": "বাদ পড়েছে",
+    "▶ Volgende gemiste dagzaak": "▶ পরের বাদ পড়া দৈনিক কেস"
   },
 
   data: {

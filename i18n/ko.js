@@ -402,7 +402,16 @@
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "보드 테마와 초상화 액자는 Crimson Pass에 포함돼 있어요. 테마와 액자만 잠금 해제할 수도 있어요.",
     "Extra's": "아이템",
     "+1 hint voor ★★★": "★★★ 보상: 힌트 +1개",
-    "Vastgelopen? Je volgende hint is gratis.": "막히셨나요? 다음 힌트는 무료예요."
+    "Vastgelopen? Je volgende hint is gratis.": "막히셨나요? 다음 힌트는 무료예요.",
+    "Zo zat het": "사건의 전말",
+    "Van Dam legt uit hoe je de dader vond": "반 담 경감이 범인을 찾아낸 과정을 설명해요",
+    "3 · Dus": "3 · 그러므로",
+    "Zo kon niemand anders bij het slachtoffer zijn.": "이렇게 해서 다른 누구도 피해자와 함께 있을 수 없었어요.",
+    "Bewijsstuk in je vitrine": "진열장에 들어간 증거품",
+    "Gemiste dagzaken": "놓친 일일 사건",
+    "Telt als zaak, niet voor je streak": "사건으로는 세지만 연속 기록에는 안 들어가요",
+    "Gemist": "놓침",
+    "▶ Volgende gemiste dagzaak": "▶ 다음 놓친 일일 사건"
   },
 
   data: {

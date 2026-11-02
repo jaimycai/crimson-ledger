@@ -203,7 +203,13 @@
     '🧊 {0} {0|one:vrije dag|other:vrije dagen}': '🧊 {0} {0|one:freeze|other:freezes}',
     'Los nog {0} {0|one:zaak|other:zaken} op om {1} te openen. De dagelijkse zaak telt mee.': 'Solve {0} more {0|one:case|other:cases} to open {1}. The daily case counts.',
     'nog {0} {0|one:zaak|other:zaken} tot {1}': '{0} more {0|one:case|other:cases} until {1}',
-    '{0} {0|one:zaak|other:zaken} opgelost': '{0} {0|one:case|other:cases} solved'
+    '{0} {0|one:zaak|other:zaken} opgelost': '{0} {0|one:case|other:cases} solved',
+    // 1.6: "Zo zat het" na een zaak en gemiste dagzaken naspelen
+    'Zo zat het': 'How it happened', 'Van Dam legt uit hoe je de dader vond': 'Van Dam explains how you found the culprit',
+    '3 · Dus': '3 · So', 'Zo kon niemand anders bij het slachtoffer zijn.': 'Nobody else could have been with the victim.',
+    'Bewijsstuk in je vitrine': 'Evidence in your cabinet',
+    'Gemiste dagzaken': 'Missed daily cases', 'Telt als zaak, niet voor je streak': 'Counts as a case, not for your streak',
+    'Gemist': 'Missed', '▶ Volgende gemiste dagzaak': '▶ Next missed daily case'
   },
 
   data: {

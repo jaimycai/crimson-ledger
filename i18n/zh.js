@@ -402,7 +402,16 @@
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "平面图主题和头像框属于Crimson Pass。你也可以只解锁主题和头像框。",
     "Extra's": "道具",
     "+1 hint voor ★★★": "★★★ 奖励 +1 次提示",
-    "Vastgelopen? Je volgende hint is gratis.": "卡住了？下一次提示免费。"
+    "Vastgelopen? Je volgende hint is gratis.": "卡住了？下一次提示免费。",
+    "Zo zat het": "真相是这样的",
+    "Van Dam legt uit hoe je de dader vond": "范达姆讲解你是如何找出凶手的",
+    "3 · Dus": "3 · 所以",
+    "Zo kon niemand anders bij het slachtoffer zijn.": "这样一来，没有别人能和死者待在一起。",
+    "Bewijsstuk in je vitrine": "已收入陈列柜的证物",
+    "Gemiste dagzaken": "错过的每日案件",
+    "Telt als zaak, niet voor je streak": "算作破案，不计入连胜",
+    "Gemist": "错过",
+    "▶ Volgende gemiste dagzaak": "▶ 下一个错过的每日案件"
   },
 
   data: {

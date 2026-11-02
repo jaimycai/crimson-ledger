@@ -402,7 +402,16 @@
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "బోర్డు థీమ్‌లు, చిత్రపు ఫ్రేములు Crimson Passలో ఉన్నాయి. లేదా థీమ్‌లు, ఫ్రేములు మాత్రమే తెరవండి.",
     "Extra's": "ఎక్స్‌ట్రాలు",
     "+1 hint voor ★★★": "★★★ కోసం +1 సూచన",
-    "Vastgelopen? Je volgende hint is gratis.": "చిక్కుకుపోయారా? తదుపరి సూచన ఉచితం."
+    "Vastgelopen? Je volgende hint is gratis.": "చిక్కుకుపోయారా? తదుపరి సూచన ఉచితం.",
+    "Zo zat het": "జరిగింది ఇదీ",
+    "Van Dam legt uit hoe je de dader vond": "మీరు హంతకుడిని ఎలా పట్టుకున్నారో వాన్ డామ్ వివరిస్తారు",
+    "3 · Dus": "3 · కాబట్టి",
+    "Zo kon niemand anders bij het slachtoffer zijn.": "ఈ విధంగా బాధితుడితో వేరెవరూ ఉండలేరు.",
+    "Bewijsstuk in je vitrine": "మీ షోకేసులో సాక్ష్యం",
+    "Gemiste dagzaken": "తప్పిపోయిన రోజువారీ కేసులు",
+    "Telt als zaak, niet voor je streak": "కేసుగా లెక్కిస్తాం, స్ట్రీక్‌కు కాదు",
+    "Gemist": "తప్పిపోయింది",
+    "▶ Volgende gemiste dagzaak": "▶ తదుపరి తప్పిపోయిన రోజువారీ కేసు"
   },
 
   data: {

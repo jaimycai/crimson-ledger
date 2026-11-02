@@ -402,7 +402,16 @@
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "Tahta temaları ve portre çerçeveleri Crimson Pass’e dahil. Ya da yalnızca temaların ve çerçevelerin kilidini aç.",
     "Extra's": "Ekstralar",
     "+1 hint voor ★★★": "★★★ için +1 ipucu",
-    "Vastgelopen? Je volgende hint is gratis.": "Takıldın mı? Sonraki ipucun ücretsiz."
+    "Vastgelopen? Je volgende hint is gratis.": "Takıldın mı? Sonraki ipucun ücretsiz.",
+    "Zo zat het": "Olay böyle oldu",
+    "Van Dam legt uit hoe je de dader vond": "Van Dam faili nasıl bulduğunu anlatıyor",
+    "3 · Dus": "3 · Yani",
+    "Zo kon niemand anders bij het slachtoffer zijn.": "Böylece kurbanın yanında başka kimse olamazdı.",
+    "Bewijsstuk in je vitrine": "Vitrinine eklenen kanıt",
+    "Gemiste dagzaken": "Kaçırılan günlük vakalar",
+    "Telt als zaak, niet voor je streak": "Vaka sayılır, serine sayılmaz",
+    "Gemist": "Kaçırıldı",
+    "▶ Volgende gemiste dagzaak": "▶ Sıradaki kaçırılan vaka"
   },
 
   data: {

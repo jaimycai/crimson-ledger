@@ -402,7 +402,16 @@
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "Giao diện bàn chơi và khung chân dung thuộc Crimson Pass. Hoặc chỉ mở khóa giao diện và khung.",
     "Extra's": "Nội dung thêm",
     "+1 hint voor ★★★": "+1 gợi ý nhờ ★★★",
-    "Vastgelopen? Je volgende hint is gratis.": "Bí rồi à? Gợi ý tiếp theo được miễn phí."
+    "Vastgelopen? Je volgende hint is gratis.": "Bí rồi à? Gợi ý tiếp theo được miễn phí.",
+    "Zo zat het": "Sự thật là thế này",
+    "Van Dam legt uit hoe je de dader vond": "Van Dam giải thích cách bạn tìm ra hung thủ",
+    "3 · Dus": "3 · Vậy là",
+    "Zo kon niemand anders bij het slachtoffer zijn.": "Như thế, không ai khác có thể ở cùng nạn nhân.",
+    "Bewijsstuk in je vitrine": "Vật chứng trong tủ kính của bạn",
+    "Gemiste dagzaken": "Vụ án hằng ngày đã lỡ",
+    "Telt als zaak, niet voor je streak": "Tính là một vụ án, không tính vào chuỗi ngày",
+    "Gemist": "Đã lỡ",
+    "▶ Volgende gemiste dagzaak": "▶ Vụ án hằng ngày đã lỡ tiếp theo"
   },
 
   data: {

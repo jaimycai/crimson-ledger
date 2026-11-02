@@ -67,6 +67,8 @@ const active = () => document.querySelector('.screen.active').id;
     Board.stopTimer(); App.navigateTo('menu'); await sleep(300);
 
     check(Board.start('gemiddeld', 12345, false), 'plattegrondzaak start');
+    // 1.6: "Zo zat het" verklapt de dader, dus is er niets van zolang de zaak open is
+    check(document.getElementById('results-afloop').hidden && document.getElementById('afloop-body').innerHTML === '' && Board.renderAfloop() === '' && !Board.afloop, 'Zo zat het: verborgen en leeg zolang de zaak niet is opgelost');
 
     // ── Potlood: eerste keer een uitleg, daarna niet meer ──
     document.getElementById('toast').classList.remove('show');
@@ -245,6 +247,14 @@ const active = () => document.querySelector('.screen.active').id;
     check(!document.getElementById('btn-next-case').hidden && document.getElementById('btn-next-case').textContent.includes('Nog een zaak'), 'vrij spel biedt meteen een volgende zaak aan');
     check(document.getElementById('results-verdict').textContent.includes(p.suspects[p.murderer].label), 'verdict noemt de moordenaar');
     check(document.querySelectorAll('.results-solution-row').length === p.suspects.length, 'oplossing per verdachte');
+    // ── Zo zat het (1.6): ingeklapt, pas bij openen gevuld, noemt de echte dader ──
+    const af = document.getElementById('results-afloop'), afBody = document.getElementById('afloop-body');
+    check(!af.hidden && !af.open && afBody.innerHTML === '' && /Zo zat het/.test(af.querySelector('summary').textContent), 'Zo zat het: na het oplossen zichtbaar, ingeklapt, nog leeg');
+    af.open = true; af.dispatchEvent(new window.Event('toggle')); await sleep(20);
+    const afVerdict = afBody.querySelector('.afloop-verdict').textContent, dec = FloorPlan.decisive(p);
+    check(afVerdict.includes(p.suspects[p.murderer].label) && p.suspects.every((s, i) => i === p.murderer || !afVerdict.includes(s.label)), 'Zo zat het noemt de echte dader en niemand anders: ' + afVerdict);
+    check(afBody.querySelectorAll('.afloop-clue').length === dec.clues.length && dec.clues.length >= 1 && [...afBody.querySelectorAll('.hint-step-label')].map(e => e.textContent).join('|') === '1 · Kijk naar|2 · Dat betekent|3 · Dus' && /spelregel/.test(afBody.querySelector('.afloop-rule').textContent), `Zo zat het in drie stappen (${dec.route}, verklaring ${dec.clues.map(i => i + 1).join(', ')}): ` + afBody.querySelector('.hint-meaning').textContent.slice(0, 90));
+    check(dec.clues.every(i => afBody.textContent.includes(window.FloorPlan.statement(p.clues[i], p).text.replace(/\s+/g, ' ').slice(0, 12))) && !afBody.querySelector('.bclue-check, .bclue-state, .afloop-item'), 'de verklaringskaarten zijn die van de zaak; geen afvinkknop; vrij spel heeft geen bewijsstuk');
     check(document.getElementById('stat-hints').textContent === String(hintsSoFar), 'hints-stat klopt');
     check(document.getElementById('stat-attempts').textContent === '3', 'pogingen-stat = 3');
     const share = Board.shareText();
@@ -298,11 +308,47 @@ const active = () => document.querySelector('.screen.active').id;
     document.querySelector('.murder-opt[data-s="1"]').click(); await sleep(1100);
     check(active() === 'screen-results' && document.getElementById('results-headline').textContent === 'Goed gedaan!' && document.getElementById('results-panel').hidden, 'oefenzaak afgerond, zonder scorepaneel');
     check(App.storageGet('crimson-board-tutorial-done') === '1' && !Board.isTutorial, 'oefenzaak gemarkeerd als gedaan');
+    check(document.getElementById('results-afloop').hidden, 'oefenzaak: geen "Zo zat het"');
     check(/Naar de kaart/.test(document.getElementById('btn-play-again').textContent), 'na de oefenzaak: knop naar de kaart');
     document.getElementById('btn-play-again').click(); await sleep(300);
     check(active() === 'screen-campaign' && !!document.querySelector('.mnode.open .mnode-pin'), 'oefenzaak eindigt op de kaart bij zaak 1');
     document.getElementById('btn-campaign-back').click(); await sleep(300);
     check(Board.loadStats().solved === 12, 'oefenzaak telt niet mee als opgeloste zaak (blijft 12: 9 voorgeladen + vrij spel + dagelijks + weekzaak)');
+
+    // ── gemiste dagzaken naspelen (1.6): telt als zaak, raakt de streak niet ──
+    {
+      const P = window.Progress, now = new Date();
+      const ago = n => new Date(now.getFullYear(), now.getMonth(), now.getDate() - n, 12);
+      App.storageSet('crimson-first-day', P.dayKey(ago(10)));
+      // de streak brak gisteren: laatst gespeeld eergisteren, geen vrije dagen
+      App.streak = { count: 5, lastDate: ago(2).toDateString() }; App.storageSet('crimson-streak', JSON.stringify(App.streak)); P.setFreezes(0);
+      App.renderHome();
+      check(!document.getElementById('missed-row').hidden && document.querySelectorAll('#missed-list .missed-chip').length === 7 && /Telt als zaak, niet voor je streak/.test(document.getElementById('missed-row').textContent), 'thuisscherm: zeven gemiste dagzaken, met "telt niet voor je streak"');
+      check(document.querySelectorAll('#week-strip .wday.missed[data-missed]').length === P.week().filter(d => d.missed).length && !document.querySelector('#week-strip .wday.today.missed'), 'weekstrook: gemiste dagen van deze week gemarkeerd en aantikbaar, vandaag niet');
+      const yKey = P.dayKey(ago(1)), yDate = P.dateOf(yKey);
+      const streakBefore = JSON.stringify(App.streak), logBefore = P.dailyLog().join(), solvedBefore = Board.loadStats().solved, frBefore = P.freezes(), qAllBefore = P.questState().all;
+      document.querySelector(`#missed-list .missed-chip[data-missed="${yKey}"]`).click(); await sleep(300);
+      const ySeed = (yDate.getFullYear() * 10000 + (yDate.getMonth() + 1) * 100 + yDate.getDate()) * 3 + 777;
+      check(active() === 'screen-board' && !Board.isDaily && Board.missedDay && Board.missedDay.key === yKey && Board.seed === ySeed && Board.theme.id === window.Themes.forDay(App.getDayNumber(yDate)).id, 'gemiste dagzaak van gisteren: dezelfde seed en wereld als die dag');
+      check(/Gemist/.test(document.getElementById('board-diff-tag').textContent), 'het bord zegt dat het een gemiste zaak is: ' + document.getElementById('board-diff-tag').textContent);
+      const mp = Board.puzzle;
+      mp.solution.forEach((c, i) => { Board.placements[i] = { x: c.x, y: c.y }; }); Board.after();
+      document.getElementById('btn-board-check').click();
+      document.querySelector(`.murder-opt[data-s="${mp.murderer}"]`).click(); await sleep(1100);
+      Board.skipCeremony();
+      check(active() === 'screen-results' && Board.loadStats().solved === solvedBefore + 1 && Board.medalCtx().solved === solvedBefore + 1, 'gemiste dagzaak telt als opgeloste zaak (ook voor medailles)');
+      check(JSON.stringify(App.streak) === streakBefore && App.storageGet('crimson-streak') === streakBefore && P.dailyLog().join() === logBefore && P.freezes() === frBefore + (P.questState().all && !qAllBefore ? 1 : 0), 'gemiste dagzaak raakt de streak niet: geen herstel, geen vrije dag, dagelijks logboek gelijk');
+      check(!/Dagelijkse zaak/.test(document.getElementById('score-rows').textContent) && P.lateLog().includes(yKey) && document.querySelectorAll('#missed-list .missed-chip').length === 6, 'geen dagbonus; gisteren staat als nagespeeld, nog zes gemist');
+      check(document.querySelectorAll('#week-strip .wday.late').length === P.week().filter(d => d.late).length, 'weekstrook: nagespeelde dag apart gemarkeerd');
+      App.updateStreak();
+      check(App.streak.count === 1, 'de gebroken streak blijft gebroken: de echte dagzaak begint daarna weer bij 1');
+      const nb = document.getElementById('btn-next-case');
+      check(!nb.hidden && /Volgende gemiste dagzaak/.test(nb.textContent), 'resultaat: door naar de volgende gemiste dagzaak: ' + nb.textContent);
+      const nextKey = P.missedDays()[0].key;
+      nb.click(); await sleep(300);
+      check(active() === 'screen-board' && Board.missedDay && Board.missedDay.key === nextKey, 'de volgende gemiste dagzaak start: ' + nextKey);
+      Board.stopTimer(); App.navigateTo('menu'); await sleep(300);
+    }
 
     // ── campagne: één doorlopende wereldkaart ──
     document.getElementById('btn-campaign').click(); await sleep(300);
@@ -347,6 +393,8 @@ const active = () => document.querySelector('.screen.active').id;
     document.querySelector(`.murder-opt[data-s="${cp.murderer}"]`).click(); await sleep(1100);
     Board.skipCeremony();
     check(active() === 'screen-results' && [...document.querySelectorAll('.rstar')].map(s => s.textContent).join('') === '★★★', 'drie sterren zonder hint en in één keer');
+    document.getElementById('results-afloop').open = true; Board.renderAfloop();
+    check(/Bewijsstuk in je vitrine/.test(document.querySelector('#afloop-body .afloop-item').textContent) && /Wijnglas/.test(document.querySelector('#afloop-body .afloop-item b').textContent) && document.querySelector('#afloop-body .afloop-item-icon').textContent === '🍷' && document.querySelector('#afloop-body .afloop-verdict').textContent.includes(cp.suspects[cp.murderer].label), 'campagnezaak: Zo zat het met het bewijsstuk (🍷 Wijnglas) en de dader');
     // hierna: teaser van de volgende zaak en de voortgang van dit deel
     check(!document.getElementById('results-next').hidden && document.getElementById('results-next-title').textContent === '2. De verdwenen sleutel' && /butler/.test(document.getElementById('results-next-story').textContent) && /nog 7 zaken/.test(document.getElementById('results-next-bar').textContent), 'hierna: zaak 2 met verhaaltje en "nog 7 zaken" in deel I');
     check(document.querySelectorAll('#quest-list .quest').length === 3, 'opdrachten van vandaag: drie op het startscherm (' + [...document.querySelectorAll('#quest-list .quest-text')].map(e => e.firstChild.textContent).join(' / ') + ')');

@@ -518,7 +518,7 @@ const FloorPlan = (() => {
           if (set(cl.a, A.filter(a => B.some(b => binaryOk(cl, a, b, puzzle))))) changed = true;
           if (set(cl.b, cands[cl.b].filter(b => cands[cl.a].some(a => binaryOk(cl, a, b, puzzle))))) changed = true;
         }
-        if (cands.some(cs => !cs.length)) return { solved: false, steps };
+        if (cands.some(cs => !cs.length)) return { solved: false, steps, cands };
       }
       const singles = cands.map((cs, i) => (!done[i] && cs.length === 1 ? i : -1)).filter(i => i !== -1);
       if (!singles.length) break;
@@ -527,7 +527,58 @@ const FloorPlan = (() => {
       if (done.every(Boolean)) break;
     }
     const solved = cands.every((cs, i) => cs.length === 1 && cs[0].x === puzzle.solution[i].x && cs[0].y === puzzle.solution[i].y);
-    return { solved, steps };
+    return { solved, steps, cands };
+  }
+
+  // ── Zo zat het (1.6): de beslissende verklaringen ───────────
+  // Welke verklaringen zetten de dader, samen met de spelregel, alleen bij het slachtoffer? Gezocht met dezelfde
+  // eerlijke stappen als stepwise, maar op een deel van de verklaringen; wat daaruit volgt, klopt dus altijd.
+  //   direct  één of twee verklaringen dwingen de dader in de kamer van het slachtoffer (of houden bij drie
+  //           verdachten de andere twee eruit);
+  //   alibi   per andere verdachte één tot drie verklaringen die hem uit die kamer houden, samen hooguit zes;
+  //   dader   lukt geen van beide kort (de zaak vraagt een lange keten): wat er over de dader zelf werd gezegd.
+  // Geeft { route, clues: [index …] }. Verklapt de dader: alleen gebruiken nadat de zaak is opgelost.
+  function decisive(puzzle) {
+    const n = puzzle.suspects.length, m = puzzle.murderer, C = puzzle.clues.length, vroom = puzzle.victim.roomId;
+    const inV = c => roomAt(puzzle, c).id === vroom;
+    const mentions = (c, i) => c.s === i || c.a === i || c.b === i;
+    const memo = new Map();
+    const cands = S => {
+      const k = S.join(',');
+      if (!memo.has(k)) memo.set(k, stepwise({ ...puzzle, clues: S.map(i => puzzle.clues[i]) }).cands);
+      return memo.get(k);
+    };
+    const sets = k => {
+      const out = [];
+      (function rec(start, acc) {
+        if (acc.length === k) { out.push(acc.slice()); return; }
+        for (let i = start; i < C; i++) { acc.push(i); rec(i + 1, acc); acc.pop(); }
+      })(0, []);
+      return out;
+    };
+    const about = (S, i) => S.filter(x => mentions(puzzle.clues[x], i)).length;
+    for (const k of [1, 2]) {
+      const hits = sets(k).filter(S => { const cs = cands(S); return cs[m].length > 0 && cs[m].every(inV); });
+      if (hits.length) return { route: 'direct', clues: hits.sort((a, b) => about(b, m) - about(a, m))[0] };
+    }
+    const union = [];
+    let ok = true;
+    for (let i = 0; i < n && ok; i++) {
+      if (i === m) continue;
+      let pick = null;
+      for (let k = 1; k <= 3 && !pick; k++) {
+        const hits = sets(k).filter(S => !cands(S)[i].some(inV));
+        // liefst verklaringen die er al staan, dan zijn eigen verklaring
+        const overlap = S => S.filter(x => union.includes(x)).length;
+        if (hits.length) pick = hits.sort((a, b) => overlap(b) - overlap(a) || about(b, i) - about(a, i))[0];
+      }
+      if (!pick) ok = false;
+      else pick.forEach(x => { if (!union.includes(x)) union.push(x); });
+    }
+    if (ok && union.length && union.length <= 6) return { route: 'alibi', clues: union.sort((a, b) => a - b) };
+    // geen korte keten: wat er over de dader werd gezegd; zegt niemand iets over hem, dan de alibi's die er wel waren
+    const own = puzzle.clues.map((c, i) => i).filter(i => mentions(puzzle.clues[i], m)).slice(0, 2);
+    return { route: 'dader', clues: own.length ? own : union.length ? union.slice(0, 2).sort((a, b) => a - b) : [0] };
   }
 
   // ── Hint-engine: uitleggen, niet verklappen ─────────────────
@@ -590,7 +641,7 @@ const FloorPlan = (() => {
              detail: related.length ? FP_T('{1|one:Aanwijzing|other:Aanwijzingen} {0} {1|one:beperkt|other:beperken} de opties. Streep vakjes weg die er niet aan voldoen.', nrs, related.length) : FP_T('Gebruik de plaatsen van de anderen om verder te snoeien.') };
   }
 
-  return { generate, fromLayout, solve, candidates, stepwise, check, holds, hint, formatClue, statement, rng,
+  return { generate, fromLayout, solve, candidates, stepwise, decisive, check, holds, hint, formatClue, statement, rng,
            DIFF, FURNITURE, FURNITURE_NL, roomOf, cellsOf, isCorner, isEdge, posOf, key };
 })();
 

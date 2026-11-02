@@ -402,7 +402,16 @@
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "سمات اللوحة وإطارات الصور جزء من Crimson Pass. أو افتح السمات والإطارات وحدها.",
     "Extra's": "إضافات",
     "+1 hint voor ★★★": "+1 تلميح مقابل ★★★",
-    "Vastgelopen? Je volgende hint is gratis.": "علقت؟ تلميحك التالي مجاني."
+    "Vastgelopen? Je volgende hint is gratis.": "علقت؟ تلميحك التالي مجاني.",
+    "Zo zat het": "هكذا جرى الأمر",
+    "Van Dam legt uit hoe je de dader vond": "فان دام يشرح كيف وجدت القاتل",
+    "3 · Dus": "3 · إذن",
+    "Zo kon niemand anders bij het slachtoffer zijn.": "وبهذا لم يكن بوسع أي شخص آخر أن يكون مع الضحية.",
+    "Bewijsstuk in je vitrine": "دليل في خزانة عرضك",
+    "Gemiste dagzaken": "قضايا يومية فائتة",
+    "Telt als zaak, niet voor je streak": "تُحتسب قضية، لا تُحتسب لسلسلتك",
+    "Gemist": "فائتة",
+    "▶ Volgende gemiste dagzaak": "▶ القضية اليومية الفائتة التالية"
   },
 
   data: {

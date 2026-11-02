@@ -402,7 +402,16 @@
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "Brettdesigns und Porträtrahmen gehören zum Crimson Pass. Oder schalte nur die Designs und Rahmen frei.",
     "Extra's": "Extras",
     "+1 hint voor ★★★": "+1 Tipp für ★★★",
-    "Vastgelopen? Je volgende hint is gratis.": "Festgefahren? Dein nächster Tipp ist gratis."
+    "Vastgelopen? Je volgende hint is gratis.": "Festgefahren? Dein nächster Tipp ist gratis.",
+    "Zo zat het": "So war es",
+    "Van Dam legt uit hoe je de dader vond": "Van Dam erklärt, wie du den Täter gefunden hast",
+    "3 · Dus": "3 · Also",
+    "Zo kon niemand anders bij het slachtoffer zijn.": "Damit konnte niemand sonst beim Opfer sein.",
+    "Bewijsstuk in je vitrine": "Beweisstück in deiner Vitrine",
+    "Gemiste dagzaken": "Verpasste Tagesfälle",
+    "Telt als zaak, niet voor je streak": "Zählt als Fall, nicht für deine Serie",
+    "Gemist": "Verpasst",
+    "▶ Volgende gemiste dagzaak": "▶ Nächster verpasster Tagesfall"
   },
 
   data: {
