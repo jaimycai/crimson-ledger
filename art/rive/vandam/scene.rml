@@ -1,0 +1,1328 @@
+<Rive version="1" kind="fragment">
+<!-- GEGENEREERD door art/rive/tools/gen_vandam.py; niet met de hand bewerken. -->
+<Artboard defaultStateMachineId="0:114" viewModelId="0:115" viewModelInstanceId="0:116" styleId="0:5" width="512" height="512" name="VanDam" id="0:2">
+<LayoutComponentStyle name="Artboard Style" id="0:5"/>
+<Shape x="256" y="236" opacity="0" blendModeValue="softLight" name="Warmth" id="0:120">
+  <Ellipse width="356" height="356" originX="0.5" originY="0.5" name="Disc"/>
+  <Fill name="Glow"><RadialGradient startX="0" startY="-30" endX="190" endY="-30" name="G">
+    <GradientStop colorValue="FFF2C27A" position="0"/><GradientStop colorValue="CCD08A48" position="0.55"/><GradientStop colorValue="00B8955C" position="1"/>
+  </RadialGradient></Fill>
+</Shape>
+<RootBone x="256" y="256" length="12" name="Frame" id="0:101"/>
+<RootBone x="256" y="440" length="12" name="Body" id="0:102"/>
+<RootBone x="256" y="240" length="12" name="HeadIdle" id="0:103">
+<RootBone x="0" y="0" length="12" name="Head" id="0:104">
+<Node opacity="0" name="LidInk" id="0:113"><Shape x="-35" y="-76.8" name="InkL0"><PointsPath isClosed="false" name="P"><StraightVertex x="-9.5" y="0"/><CubicMirroredVertex x="0" y="1.6" rotation="0" distance="5.225"/><StraightVertex x="9.5" y="0"/></PointsPath><Stroke thickness="0.75" cap="round" name="S"><SolidColor colorValue="AA2C1810" name="C"/></Stroke></Shape><Shape x="-35" y="-74.1" name="InkL1"><PointsPath isClosed="false" name="P"><StraightVertex x="-10.5" y="0"/><CubicMirroredVertex x="0" y="2" rotation="0" distance="5.775"/><StraightVertex x="10.5" y="0"/></PointsPath><Stroke thickness="0.75" cap="round" name="S"><SolidColor colorValue="992C1810" name="C"/></Stroke></Shape><Shape x="-35" y="-71.6" name="InkL2"><PointsPath isClosed="false" name="P"><StraightVertex x="-11" y="0"/><CubicMirroredVertex x="0" y="1.8" rotation="0" distance="6.05"/><StraightVertex x="11" y="0"/></PointsPath><Stroke thickness="0.75" cap="round" name="S"><SolidColor colorValue="802C1810" name="C"/></Stroke></Shape><Shape x="26" y="-76.8" name="InkR0"><PointsPath isClosed="false" name="P"><StraightVertex x="-9.5" y="0"/><CubicMirroredVertex x="0" y="1.6" rotation="0" distance="5.225"/><StraightVertex x="9.5" y="0"/></PointsPath><Stroke thickness="0.75" cap="round" name="S"><SolidColor colorValue="AA2C1810" name="C"/></Stroke></Shape><Shape x="26" y="-74.1" name="InkR1"><PointsPath isClosed="false" name="P"><StraightVertex x="-10.5" y="0"/><CubicMirroredVertex x="0" y="2" rotation="0" distance="5.775"/><StraightVertex x="10.5" y="0"/></PointsPath><Stroke thickness="0.75" cap="round" name="S"><SolidColor colorValue="992C1810" name="C"/></Stroke></Shape><Shape x="26" y="-71.6" name="InkR2"><PointsPath isClosed="false" name="P"><StraightVertex x="-11" y="0"/><CubicMirroredVertex x="0" y="1.8" rotation="0" distance="6.05"/><StraightVertex x="11" y="0"/></PointsPath><Stroke thickness="0.75" cap="round" name="S"><SolidColor colorValue="802C1810" name="C"/></Stroke></Shape></Node>
+<RootBone x="-35" y="-85" length="12" name="BrowL" id="0:105"/>
+<RootBone x="29" y="-85" length="12" name="BrowR" id="0:106"/>
+<RootBone x="-35" y="-68.5" length="12" name="LidL" id="0:107">
+<RootBone x="0" y="0" length="12" name="LidLx" id="0:108"/>
+</RootBone>
+<RootBone x="26" y="-68.5" length="12" name="LidR" id="0:109">
+<RootBone x="0" y="0" length="12" name="LidRx" id="0:110"/>
+</RootBone>
+<RootBone x="0" y="-35" length="12" name="Cheeks" id="0:111"/>
+<RootBone x="2" y="-1" length="12" name="Jaw" id="0:112"/>
+</RootBone>
+</RootBone>
+<Image x="256" y="256" assetId="0:60" name="Portrait" id="0:136">
+<Mesh triangleIndexBytes="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4AbwBt8G4AbfBvAG7wbfBs4G4AbOBt8GzQaXBqMGogajBrAGogaEAoMC2wGDAtoB2wGHAtwB3QGHAq0FrAWHAoYC3AGGAocCrAXCBq4Grwa/At4F3QWJBogG/wWIBokGkgafBqAGrQaIBu4D/wWABvcFgQaABoEGigaJBoAGigaABokG/wX2BYAG/wWABvYF9wX2Be4F7wX3BfYF7wX3BfAF+AXwBfcF7wXaBbwC2wW8Av4BvQLbBbwCvQKdBqIEkgbABtMG0gb7AfoB0wHUAfsB0wHzAvQC/AL0ApgF/AKYBZMFmQWYBfQCkwWrBKoEmgSrBLoEqgTvA/oD/gXwA+8D3QP0BfwF8wX8BfQF/QXOBLcGtga4BKkEuQS4BKgEqQT6A5EGhwZWkAOFAaIDoQOZA94BigKJAt8BigLeAYoCrwWJArQFjgKPArQFjwK1BbQFswWOAo4CjQLhAeABjQKMAo0C4AHhAbMFjQKOAowCjQKyBY0CswWyBZcHjAeNB5cHjQeyBbMFlweyBbQFlwezBb0EywTKBMsEvQS+BNAGvQa+Br0G0AbPBsEEqQbABOMG0QbSBr8G0Qa+BtEGvwbSBtEG0Aa+BuIG4wbzBvIG4gbzBuIG0QbjBtEG4gbQBq8B0AHXBNABrwHYBLAC4wTkBN8E2ATRAe4E6AT5AbIC5gTnBMoCywLbAusE8wSwAusE5ASxAusEsALkBEJWhQFWQkFFQoUBWUWFATB8PiQ6eeUC0wLmAuMC5AL2AtIC5QLkAuUC0gLTAvME8gSwAtIF8QT9BPUB9AHOAfQB9QGtAvUB6QStAu0B7AHHAewB7QGgAqAC7QGhAu0BogKhAu0BxwHuAaIC7QHuAZcGxgWNBsUFxgWXBsYFxwWNBscFxgWhAsYFoAKhAsYFxQWgAuMF6gXMBc0F4wXMBcoFpAKlAsoFpQLLBcoF8gXJBaQCygXJBeoFygXLBcoF6gXyBekB6AHDAekBwwHEAeoB6QHEAZICkwK4BeQBkwKSAr4B4wHiAZEC4wGSAuQB4wG+AeMB5AGSApACjwLiAY8CkAK1BeMBkALiAZAC4wGRArcFkgK4BbcFkQKSApcCmAK9BbwFlwK9BcEB5wHmAecBlwLmAecBwQHCAecBmAKXAugB5wHCAZgC5wHoAZQC5QGVAuUB5gGVAuUBwAHmAZMC5QGUAuUBkwLkAeUB5AG/AcAB5QG/AboFlAKVArcGyQa2BqcGtAamBrkGzAbLBroGzAa5BswGugbNBvEG8AbgBvEG8gaBB/EGgQeAB/AG8QaAB7sGzgbNBroGuwbNBu4G3gbvBt4G3wbvBt8G3gbNBt4GzAbNBpgGowaXBpkGmAaPBo4GmAaXBpgGjgaPBqkFgwKEAqkFwgavBqEGqAWvBqgFqQWvBqkFqAWDAq0FiAKuBa4FiAKJAogChwLdAYcCiAKtBYgC3gGJAt4BiALdAasFhgKsBd4FgwbdBYMG+QXdBYMGggb5BYIGgwaMBoMG3gWMBt8FlgaMBt4F3wWMBsACvwKAAsAC3gW/AsAC3wXeBcACgALZAaIEkQSSBpEEiAaSBogGkQSGBKwGnwatBqwGwAa/BsAGrAatBqsGrAa/BpQGlQagBpQGnwaTBp8GlAagBpQGkwaKBpQGiwaVBosGlAaKBvkDiAaGBPkD7gOIBu4D+QPtA/kD+APtA4QD+wL8AvsC+gLyAvsC8wL8AvMC+wLyAoUDhAP8AqYDnQPmBZ0DlAPmBYUDiwOEA9kFuwLaBbsCvALaBbsCugL9AboCuwLZBf4BuwL9AbwCuwL+AfEF2gXbBfAF8QX4BfEF+QX4BdwF8QXbBfEF3AX5BegF5wWiBecF6AXvBegF8AXvBaoGnQarBp0GqgacBqoGqwa+BqoGvQapBr0Gqga+BqoGwQScBsEEqgapBp8GngaTBpMGngaSBp4GnQaSBp0GngarBqwGngafBp4GrAarBuQG9AbjBuQG4wbSBtMG5AbSBsEG0wbABsEGwAatBq4GwQatBsIGwQauBvwB1AHVAfwB+wHUAfsB/AG4AvwB1QH9AboC/AH9AdQFhgW2AtUF1AW2AtQFkQWGBdQFzwKRBbcC1QW2AvoBtwK2AvsBtwL6AbcC+wG4ApsEqwSaBLoEuwTIBKsEuwS6BNwD7wP+Be8D3APdA94D8APdA8sD3gPdA94DywPMA7cDpwO4A6cDtwPtBZ4DpwPtBZ0F4QWcBeEFnQXkBeMF4QXkBeEFzQWcBeEF4wXNBbcD9QXtBfUF9AXsBfUF7AXtBfUFtwP+Bf0F9QX+BfQF9QX9BWdqmQSYBGeZBM4EzwS3Bs8ExATFBMQEzwTOBMIEqAa0BKgGwgS2BsIEzgS2BqgEpwSXBNIExwTIBLoExwS5BMcEugTIBLMEpwabBqMEswSbBrMEqAanBqgGswS0BJoGkQabBpoGmwamBocEkQb6A/0D8gP+A/sD7wPwA+8D+wP6A/wD+wPwA/sD/AOIBPsDhwT6A4cE+wOIBHFu5wPMA7oDzQO6A7sDzQOIA5ADjwOIA48DQMEDwAOYAb8DwAPSA3+hA5cBjwewBbEFigKwBa8FsAWPB4MHrwWwBYMHlgeXB7QFlge1BZUHlge0BbUFjAeWB4sHiweWB5UHlweWB4wHqQbNBMAEzQS/BMAEywTVBMoE1QTLBNYEuwbVBNYE1QS7BroG0gTTBLkG0wS6BrkG0wTSBMgEsQTBBMAE0AHdBNcE3QTQAdgErwLjBLAC8gSvArACrwLyBPEE2wTaBM8B4QTSAfkB6AThBPkBsAHhBNEB0gHhBLAB7QToBO4EsgL2BPUE7ASyAvUE5gTsBLECsgLsBOYEywKPBcwC7AT0BLEC9ATsBPUE9ATrBLEC6wT0BPME+gLxAvIC8QLeAt8C8QLfAvIC8QLwAt4CkgH6AoIDkgHxAvoC8QKSAfAC8ALdAt4CzQLdAswC3QLNAt4CjwXNAswCzQKPBZAFzwLgAt8C3wLgAvIC4ALzAvIChwFZW1mHAUXcAssCzALLAtwC2wLdAtwCzALaAsoC2wLtAtoC2wLaAu0C7ALtAo8BjgHsAu0CjgHTAtQC5gKGA4cDjQOHA44DjQM6PHl8PD73AuUCgAHlAvcC5ALkAvcC9gL3Av8C9gL/AvcCgAHiAtAC4wLQAuICkgXQApIF0AXRBdAC0AXBAtAC0QXCAtICwQLSAsIC0wKHBcICwQKIBcIChwX8BNIF/QTSBfAE8QSvAvAE6gTwBK8C8QT8BPAE0gXsBesF5AXjBesF6gXrBeMF5AXqBesF8wX0BesF7AXrBfQF8wW2BZACkQKQArYFtQW3BbYFkQK2BbcFlAe1BbYFlQe2BZQHlQfmAZYClQKXApYC5gG8BZYClwKEB7wFvQW8BYQHhQf3BoQHvQW7BbwFhQe7BboFlQK7BZYCvAWWArsFlQK5BboFkQe5BZMClAKTArkFuAW6BbkFlALJBsgGtgb5BoYHhQeGB/kG+gb7BvoG6wajBrEGsAa0BrMGpgazBsYGxQbGBrMGtAaoBrUGpwa1BqgGtga1BrQGpwbIBrUGtgb9Bu4G/gb9Bu0G7gbhBuIG8gbxBuEG8gbhBvEG4AbQBuEGzwbPBuEG4AbiBuEG0Aa8Br0GzwbOBrwGzwa7BrwGzga9BrwGqQa8BrsG1gTNBLwG1gS8Bs0EqQbMBt0GywbeBt0GzAbtBt0G7gbdBt4G7gaqBakFhAKpBaoFwgaWBqcFoQanBagFoQbfBacFlgaDAoIC2gGoBYICgwKnBYICqAXaAYIC2QHUBqsFrAXBBtQG0wbUBsEGwgbUBqoFqwWqBdQGwgb4A4QE9wOYBaAF/AKgBYUD/AKLA4oDhAP2BckD7gXuA8kD/wXJA/YF/wWlA50DpgOdA6UDnAOiA4YBmAGGAaIDmQOQA4YBmQNWhgGQA5kBwQOYAYYBmQGYAegD6QN06QP1A3T2A+sD9wP1A4EEdPEF6QXaBekF8QXwBegF6QXwBekF6AXiBdkF6QXiBekF2QXaBeQG9Qb0BvQG9QauBfUGrQWuBZsFmgXXBbkC1wW4AvwBuQK4ArkCmwXXBbkC/AG6AtcF1gW4ArcC1gXVBdYFtwK4AtYFmgWZBZoF1gXXBZsEcJwEcHOcBK0ErAScBJsErASrBKwEmwScBKwEuwSrBLsEyQTIBMkE0wTIBIwDngPtBYwDhgONA4YDjAOkBZ0FngXkBaQFngWfBdwDygPdA8oDywPdA7cDygP+BcoD3AP+BcsDygO4A8oDtwO4A2RnmASMBGSXBGSYBJcEZIAEY4AEZIwEiwSWBJUEjASWBIsElgSMBJcEpwSWBJcEtQTCBLQEpQS1BLQEpQSUBJUEuAS3BKgEpwS3BLYEtwSnBKgEtwS4BMUEtwTEBLYExAS3BMUEuATGBMUExgS4BLkExwTGBLkEpASlBLQEpASzBKMEswSkBLQEpASUBKUEkAaZBo8GmgaQBpEGkAaaBpkGkAaGBocGhgaQBo8GkQaQBocGkgSHBIgEkgSjBJsGkQaSBJsGhwSSBJEG8QP8A/AD8QP9A/wD/QPxA/ID3gPxA/ADlgF/lwF/lgF9ugOqA7sDqgOrA7sDqwOqA5QB5QPkA9IDaOQD5QNigAT0A4AEYmPiA2L0A2LiA+MD4APzA/ID8gPzA/4DzgPgA80DuwPOA80D5gPUA+cDbuYD5wM/gANAgAOIA0CAAz+EAYgDpQWQA5ADpQWFAaUFWYUBrwOhA6IDrwPAA78DrwOiA5gBwAOvA5gBvgOuA78D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+QTuBPkEtALuBJEB7wLwAu8C3QLwAu8C3ALdAu8CkQGQAesC2QLsAuoC6wL5AusCjgH5AusC7AKOAYsFxwLGAsYCxwLXAscCiwWMBccCjAXIApoCwAW/BbAGwwbDBbEGwwawBp0CngLDBZ4CnQLrAZ0C6gHrAZsC6QHqAcAFmwLBBZsCmgLpAZsCwAWaAqADlgOXA5YDlQONA44DlgONA5cDlgOOA58DpwOeA5UDnwOeA58DlgOgA5YDnwOVA5EFhQWGBYUF+QSGBe4C7wKQAe4CkAGPAe0C7gKPAe4C7QLbAtwC7gLbAu8C7gLcAtgC6gLXAusC2ALZAtgC6wLqAtkC2ALIAtgCxwLIAscC2ALXAuYG1gbnBsAF5ga/BfYG5gbnBuYG9ga/BcMGwgXDBcIFwwbBBcIFnQLDBcMG1QbBBeYG1QbWBtUGwAXBBdUG5gbABUpMR0xKTUhKR0tKSExJR0lER0RJRkmIAUZJiQGIAUlMiQFPTE1PUFJQT01PUosBiQFPiwFMT4kBV5oDjQGaA1eRA1eMAZEDX4oBXV9hjAGMAWGRA2GJA5EDiQNhggNhYIIDqAOgA6kDqAOfA6ADnwOoA6cDpwOoA7gDuQOoA6kDqAO5A7gDnQKcAuoBwgWcAp0CnALCBcEFnAKbAuoBmwKcAsEF1gbEBsUGxAbVBsMG1QbEBtYGsgbEBrEGxAayBsUGxAbDBrEGV1SMAVRfjAFSVY0BVVeNAYoBTl1OS11KTk1OSktTVFdVU1dUU1BQU1JTVVJRTooBUVRQUVBNTlFNUYoBX1RRX5UFnQWUBZ0FnAWUBTmCATuBAYIBOeUCgQGAAYEB5QLmAqEFmgWiBZoFoQWZBT0/QD49QPYE9wSDBYIF9gSDBYEF9gSCBfYEgQX1BIEF9AT1BPQEgQWABVpdW11aXDw5Ozw6OTw9Pj08O/wEiAWHBfwEhwX7BKEFoAWZBaAFmAWZBZ4FnQWVBZ4FlQWWBWdmampmaWZkY2RmZz2DAT8/gwGEAYIBgwE7gwE9O9wE4wTbBOME3ATkBN4E3wTnBOYE3gTnBI8FhAWQBYQFjwWDBY4FggWDBY8FjgWDBY0FgQWCBY4FjQWCBVpYjwGPAViOAVhaW1lYW/8E9ASABfQE/wTzBDeBATmBATeAAZcFngWWBZ4FlwWfBe8E/AT7BO8E8AT8BJoFowWiBZsFowWaBWZlaWVoaWVmY2JlY+cCggGBAecCgQHmAlqQAVyQAVqPAfIE/gTxBPEE/gT9BP8E/gTzBP4E8gTzBDo4OTg3OXVycXVxdHV2c3J1c2xqaWxtapEBYF5gkQGSAZABkQFckQFeXIEFjAWABY0FjAWBBYsF/gT/BP4EiwWKBYsF/wSABYwFiwWABfwEiQWIBYkF/AT9BP4EiQX9BIkF/gSKBWxvbW1vcHJvcW9ucW9yc3Bvc2tvbG9rbmhraWtsaYMB6AKEAegC6QKEAegCgwGCAecC6AKCAV9dXF5fXIQFhQWQBZAFhQWRBfgEhQWEBfkEhQX4BGBhXmFfXg==" name="Mesh" id="0:137">
+<ContourMeshVertex x="-256" y="-256" u="0" v="0"><Weight values="255" indices="1"/></ContourMeshVertex>
+<ContourMeshVertex x="-192" y="-256" u="0.125" v="0"><Weight values="255" indices="1"/></ContourMeshVertex>
+<ContourMeshVertex x="-128" y="-256" u="0.25" v="0"><Weight values="255" indices="1"/></ContourMeshVertex>
+<ContourMeshVertex x="-64" y="-256" u="0.375" v="0"><Weight values="255" indices="1"/></ContourMeshVertex>
+<ContourMeshVertex x="0" y="-256" u="0.5" v="0"><Weight values="255" indices="1"/></ContourMeshVertex>
+<ContourMeshVertex x="64" y="-256" u="0.625" v="0"><Weight values="255" indices="1"/></ContourMeshVertex>
+<ContourMeshVertex x="128" y="-256" u="0.75" v="0"><Weight values="255" indices="1"/></ContourMeshVertex>
+<ContourMeshVertex x="192" y="-256" u="0.875" v="0"><Weight values="255" indices="1"/></ContourMeshVertex>
+<ContourMeshVertex x="256" y="-256" u="1" v="0"><Weight values="255" indices="1"/></ContourMeshVertex>
+<ContourMeshVertex x="256" y="-192" u="1" v="0.125"><Weight values="255" indices="1"/></ContourMeshVertex>
+<ContourMeshVertex x="256" y="-128" u="1" v="0.25"><Weight values="255" indices="1"/></ContourMeshVertex>
+<ContourMeshVertex x="256" y="-64" u="1" v="0.375"><Weight values="255" indices="1"/></ContourMeshVertex>
+<ContourMeshVertex x="256" y="0" u="1" v="0.5"><Weight values="255" indices="1"/></ContourMeshVertex>
+<ContourMeshVertex x="256" y="64" u="1" v="0.625"><Weight values="255" indices="1"/></ContourMeshVertex>
+<ContourMeshVertex x="256" y="128" u="1" v="0.75"><Weight values="255" indices="1"/></ContourMeshVertex>
+<ContourMeshVertex x="256" y="192" u="1" v="0.875"><Weight values="255" indices="1"/></ContourMeshVertex>
+<ContourMeshVertex x="256" y="256" u="1" v="1"><Weight values="255" indices="1"/></ContourMeshVertex>
+<ContourMeshVertex x="192" y="256" u="0.875" v="1"><Weight values="255" indices="1"/></ContourMeshVertex>
+<ContourMeshVertex x="128" y="256" u="0.75" v="1"><Weight values="255" indices="1"/></ContourMeshVertex>
+<ContourMeshVertex x="64" y="256" u="0.625" v="1"><Weight values="255" indices="1"/></ContourMeshVertex>
+<ContourMeshVertex x="0" y="256" u="0.5" v="1"><Weight values="255" indices="1"/></ContourMeshVertex>
+<ContourMeshVertex x="-64" y="256" u="0.375" v="1"><Weight values="255" indices="1"/></ContourMeshVertex>
+<ContourMeshVertex x="-128" y="256" u="0.25" v="1"><Weight values="255" indices="1"/></ContourMeshVertex>
+<ContourMeshVertex x="-192" y="256" u="0.125" v="1"><Weight values="255" indices="1"/></ContourMeshVertex>
+<ContourMeshVertex x="-256" y="256" u="0" v="1"><Weight values="255" indices="1"/></ContourMeshVertex>
+<ContourMeshVertex x="-256" y="192" u="0" v="0.875"><Weight values="255" indices="1"/></ContourMeshVertex>
+<ContourMeshVertex x="-256" y="128" u="0" v="0.75"><Weight values="255" indices="1"/></ContourMeshVertex>
+<ContourMeshVertex x="-256" y="64" u="0" v="0.625"><Weight values="255" indices="1"/></ContourMeshVertex>
+<ContourMeshVertex x="-256" y="0" u="0" v="0.5"><Weight values="255" indices="1"/></ContourMeshVertex>
+<ContourMeshVertex x="-256" y="-64" u="0" v="0.375"><Weight values="255" indices="1"/></ContourMeshVertex>
+<ContourMeshVertex x="-256" y="-128" u="0" v="0.25"><Weight values="255" indices="1"/></ContourMeshVertex>
+<ContourMeshVertex x="-256" y="-192" u="0" v="0.125"><Weight values="255" indices="1"/></ContourMeshVertex>
+<MeshVertex x="-46.5" y="-88.8608" u="0.4092" v="0.3264"><Weight values="255" indices="6"/></MeshVertex>
+<MeshVertex x="-46.5" y="-91.1608" u="0.4092" v="0.322"><Weight values="6630" indices="774"/></MeshVertex>
+<MeshVertex x="-46.5" y="-86.0235" u="0.4092" v="0.332"><Weight values="255" indices="6"/></MeshVertex>
+<MeshVertex x="-43.5" y="-90.0128" u="0.415" v="0.3242"><Weight values="255" indices="6"/></MeshVertex>
+<MeshVertex x="-43.5" y="-92.3128" u="0.415" v="0.3197"><Weight values="6630" indices="774"/></MeshVertex>
+<MeshVertex x="-43.5" y="-85.3323" u="0.415" v="0.3333"><Weight values="255" indices="6"/></MeshVertex>
+<MeshVertex x="-39" y="-91.0928" u="0.4238" v="0.3221"><Weight values="255" indices="6"/></MeshVertex>
+<MeshVertex x="-39" y="-93.3928" u="0.4238" v="0.3176"><Weight values="6630" indices="774"/></MeshVertex>
+<MeshVertex x="-39" y="-84.6843" u="0.4238" v="0.3346"><Weight values="255" indices="6"/></MeshVertex>
+<MeshVertex x="-35" y="-91.4" u="0.4316" v="0.3215"><Weight values="255" indices="6"/></MeshVertex>
+<MeshVertex x="-35" y="-93.7" u="0.4316" v="0.317"><Weight values="6630" indices="774"/></MeshVertex>
+<MeshVertex x="-35" y="-84.5" u="0.4316" v="0.335"><Weight values="255" indices="6"/></MeshVertex>
+<MeshVertex x="-31" y="-91.0928" u="0.4395" v="0.3221"><Weight values="255" indices="6"/></MeshVertex>
+<MeshVertex x="-31" y="-93.3928" u="0.4395" v="0.3176"><Weight values="6630" indices="774"/></MeshVertex>
+<MeshVertex x="-31" y="-84.6843" u="0.4395" v="0.3346"><Weight values="255" indices="6"/></MeshVertex>
+<MeshVertex x="-26.5" y="-90.0128" u="0.4482" v="0.3242"><Weight values="255" indices="6"/></MeshVertex>
+<MeshVertex x="-26.5" y="-92.3128" u="0.4482" v="0.3197"><Weight values="6630" indices="774"/></MeshVertex>
+<MeshVertex x="-26.5" y="-85.3323" u="0.4482" v="0.3333"><Weight values="255" indices="6"/></MeshVertex>
+<MeshVertex x="-23.5" y="-88.8608" u="0.4541" v="0.3264"><Weight values="255" indices="6"/></MeshVertex>
+<MeshVertex x="-23.5" y="-91.1608" u="0.4541" v="0.322"><Weight values="6630" indices="774"/></MeshVertex>
+<MeshVertex x="-23.5" y="-86.0235" u="0.4541" v="0.332"><Weight values="255" indices="6"/></MeshVertex>
+<MeshVertex x="-48.5" y="-87.45" u="0.4053" v="0.3292"><Weight values="255" indices="6"/></MeshVertex>
+<MeshVertex x="-21.5" y="-87.45" u="0.458" v="0.3292"><Weight values="255" indices="6"/></MeshVertex>
+<MeshVertex x="-53" y="-104.5" u="0.3965" v="0.2959"><Weight values="255" indices="4"/></MeshVertex>
+<MeshVertex x="-53" y="-98.5" u="0.3965" v="0.3076"><Weight values="255" indices="4"/></MeshVertex>
+<MeshVertex x="-44" y="-104.5" u="0.4141" v="0.2959"><Weight values="255" indices="4"/></MeshVertex>
+<MeshVertex x="-44" y="-98.5" u="0.4141" v="0.3076"><Weight values="255" indices="4"/></MeshVertex>
+<MeshVertex x="-35" y="-104.5" u="0.4316" v="0.2959"><Weight values="255" indices="4"/></MeshVertex>
+<MeshVertex x="-35" y="-98.5" u="0.4316" v="0.3076"><Weight values="255" indices="4"/></MeshVertex>
+<MeshVertex x="-26" y="-104.5" u="0.4492" v="0.2959"><Weight values="255" indices="4"/></MeshVertex>
+<MeshVertex x="-26" y="-98.5" u="0.4492" v="0.3076"><Weight values="255" indices="4"/></MeshVertex>
+<MeshVertex x="-17" y="-104.5" u="0.4668" v="0.2959"><Weight values="255" indices="4"/></MeshVertex>
+<MeshVertex x="-17" y="-98.5" u="0.4668" v="0.3076"><Weight values="255" indices="4"/></MeshVertex>
+<MeshVertex x="14.5" y="-89.2448" u="0.5283" v="0.3257"><Weight values="255" indices="7"/></MeshVertex>
+<MeshVertex x="14.5" y="-91.5448" u="0.5283" v="0.3212"><Weight values="6630" indices="775"/></MeshVertex>
+<MeshVertex x="14.5" y="-86.1531" u="0.5283" v="0.3317"><Weight values="255" indices="7"/></MeshVertex>
+<MeshVertex x="17.5" y="-90.4948" u="0.5342" v="0.3233"><Weight values="255" indices="7"/></MeshVertex>
+<MeshVertex x="17.5" y="-92.7948" u="0.5342" v="0.3188"><Weight values="6630" indices="775"/></MeshVertex>
+<MeshVertex x="17.5" y="-85.4031" u="0.5342" v="0.3332"><Weight values="255" indices="7"/></MeshVertex>
+<MeshVertex x="22" y="-91.6667" u="0.543" v="0.321"><Weight values="255" indices="7"/></MeshVertex>
+<MeshVertex x="22" y="-93.9667" u="0.543" v="0.3165"><Weight values="6630" indices="775"/></MeshVertex>
+<MeshVertex x="22" y="-84.7" u="0.543" v="0.3346"><Weight values="255" indices="7"/></MeshVertex>
+<MeshVertex x="26" y="-92" u="0.5508" v="0.3203"><Weight values="255" indices="7"/></MeshVertex>
+<MeshVertex x="26" y="-94.3" u="0.5508" v="0.3158"><Weight values="6630" indices="775"/></MeshVertex>
+<MeshVertex x="26" y="-84.5" u="0.5508" v="0.335"><Weight values="255" indices="7"/></MeshVertex>
+<MeshVertex x="30" y="-91.6667" u="0.5586" v="0.321"><Weight values="255" indices="7"/></MeshVertex>
+<MeshVertex x="30" y="-93.9667" u="0.5586" v="0.3165"><Weight values="6630" indices="775"/></MeshVertex>
+<MeshVertex x="30" y="-84.7" u="0.5586" v="0.3346"><Weight values="255" indices="7"/></MeshVertex>
+<MeshVertex x="34.5" y="-90.4948" u="0.5674" v="0.3233"><Weight values="255" indices="7"/></MeshVertex>
+<MeshVertex x="34.5" y="-92.7948" u="0.5674" v="0.3188"><Weight values="6630" indices="775"/></MeshVertex>
+<MeshVertex x="34.5" y="-85.4031" u="0.5674" v="0.3332"><Weight values="255" indices="7"/></MeshVertex>
+<MeshVertex x="37.5" y="-89.2448" u="0.5732" v="0.3257"><Weight values="255" indices="7"/></MeshVertex>
+<MeshVertex x="37.5" y="-91.5448" u="0.5732" v="0.3212"><Weight values="6630" indices="775"/></MeshVertex>
+<MeshVertex x="37.5" y="-86.1531" u="0.5732" v="0.3317"><Weight values="255" indices="7"/></MeshVertex>
+<MeshVertex x="12.5" y="-87.75" u="0.5244" v="0.3286"><Weight values="255" indices="7"/></MeshVertex>
+<MeshVertex x="39.5" y="-87.75" u="0.5771" v="0.3286"><Weight values="255" indices="7"/></MeshVertex>
+<MeshVertex x="11" y="-104.5" u="0.5215" v="0.2959"><Weight values="255" indices="5"/></MeshVertex>
+<MeshVertex x="11" y="-98.5" u="0.5215" v="0.3076"><Weight values="255" indices="5"/></MeshVertex>
+<MeshVertex x="20" y="-104.5" u="0.5391" v="0.2959"><Weight values="255" indices="5"/></MeshVertex>
+<MeshVertex x="20" y="-98.5" u="0.5391" v="0.3076"><Weight values="255" indices="5"/></MeshVertex>
+<MeshVertex x="29" y="-104.5" u="0.5566" v="0.2959"><Weight values="255" indices="5"/></MeshVertex>
+<MeshVertex x="29" y="-98.5" u="0.5566" v="0.3076"><Weight values="255" indices="5"/></MeshVertex>
+<MeshVertex x="38" y="-104.5" u="0.5742" v="0.2959"><Weight values="255" indices="5"/></MeshVertex>
+<MeshVertex x="38" y="-98.5" u="0.5742" v="0.3076"><Weight values="255" indices="5"/></MeshVertex>
+<MeshVertex x="47" y="-104.5" u="0.5918" v="0.2959"><Weight values="255" indices="5"/></MeshVertex>
+<MeshVertex x="47" y="-98.5" u="0.5918" v="0.3076"><Weight values="255" indices="5"/></MeshVertex>
+<MeshVertex x="-20" y="-22.5" u="0.4609" v="0.4561"><Weight values="9945" indices="2307"/></MeshVertex>
+<MeshVertex x="-20" y="-17" u="0.4609" v="0.4668"><Weight values="29580" indices="777"/></MeshVertex>
+<MeshVertex x="-20" y="-12" u="0.4609" v="0.4766"><Weight values="255" indices="9"/></MeshVertex>
+<MeshVertex x="-12" y="-22.5" u="0.4766" v="0.4561"><Weight values="9945" indices="2307"/></MeshVertex>
+<MeshVertex x="-12" y="-17" u="0.4766" v="0.4668"><Weight values="29580" indices="777"/></MeshVertex>
+<MeshVertex x="-12" y="-12" u="0.4766" v="0.4766"><Weight values="255" indices="9"/></MeshVertex>
+<MeshVertex x="-4" y="-22.5" u="0.4922" v="0.4561"><Weight values="9945" indices="2307"/></MeshVertex>
+<MeshVertex x="-4" y="-17" u="0.4922" v="0.4668"><Weight values="29580" indices="777"/></MeshVertex>
+<MeshVertex x="-4" y="-12" u="0.4922" v="0.4766"><Weight values="255" indices="9"/></MeshVertex>
+<MeshVertex x="4" y="-22.5" u="0.5078" v="0.4561"><Weight values="9945" indices="2307"/></MeshVertex>
+<MeshVertex x="4" y="-17" u="0.5078" v="0.4668"><Weight values="29580" indices="777"/></MeshVertex>
+<MeshVertex x="4" y="-12" u="0.5078" v="0.4766"><Weight values="255" indices="9"/></MeshVertex>
+<MeshVertex x="12" y="-22.5" u="0.5234" v="0.4561"><Weight values="9945" indices="2307"/></MeshVertex>
+<MeshVertex x="12" y="-17" u="0.5234" v="0.4668"><Weight values="29580" indices="777"/></MeshVertex>
+<MeshVertex x="12" y="-12" u="0.5234" v="0.4766"><Weight values="255" indices="9"/></MeshVertex>
+<MeshVertex x="20" y="-22.5" u="0.5391" v="0.4561"><Weight values="9945" indices="2307"/></MeshVertex>
+<MeshVertex x="20" y="-17" u="0.5391" v="0.4668"><Weight values="29580" indices="777"/></MeshVertex>
+<MeshVertex x="20" y="-12" u="0.5391" v="0.4766"><Weight values="255" indices="9"/></MeshVertex>
+<MeshVertex x="28" y="-22.5" u="0.5547" v="0.4561"><Weight values="9945" indices="2307"/></MeshVertex>
+<MeshVertex x="28" y="-17" u="0.5547" v="0.4668"><Weight values="29580" indices="777"/></MeshVertex>
+<MeshVertex x="28" y="-12" u="0.5547" v="0.4766"><Weight values="255" indices="9"/></MeshVertex>
+<MeshVertex x="-50" y="-93.12" u="0.4023" v="0.3181"><Weight values="9945" indices="1027"/></MeshVertex>
+<MeshVertex x="-50" y="-77" u="0.4023" v="0.3496"><Weight values="2054535" indices="395267"/></MeshVertex>
+<MeshVertex x="-42" y="-95.3728" u="0.418" v="0.3137"><Weight values="9945" indices="1027"/></MeshVertex>
+<MeshVertex x="-42" y="-77.5333" u="0.418" v="0.3486"><Weight values="2054535" indices="395267"/></MeshVertex>
+<MeshVertex x="-35" y="-78" u="0.4316" v="0.3477"><Weight values="2054535" indices="395267"/></MeshVertex>
+<MeshVertex x="-28" y="-95.3728" u="0.4453" v="0.3137"><Weight values="9945" indices="1027"/></MeshVertex>
+<MeshVertex x="-28" y="-77.5333" u="0.4453" v="0.3486"><Weight values="2054535" indices="395267"/></MeshVertex>
+<MeshVertex x="-20" y="-93.12" u="0.4609" v="0.3181"><Weight values="9945" indices="1027"/></MeshVertex>
+<MeshVertex x="-20" y="-77" u="0.4609" v="0.3496"><Weight values="2054535" indices="395267"/></MeshVertex>
+<MeshVertex x="-53" y="-113" u="0.3965" v="0.2793"><Weight values="22950" indices="1027"/></MeshVertex>
+<MeshVertex x="-44" y="-113" u="0.4141" v="0.2793"><Weight values="22950" indices="1027"/></MeshVertex>
+<MeshVertex x="-35" y="-113" u="0.4316" v="0.2793"><Weight values="22950" indices="1027"/></MeshVertex>
+<MeshVertex x="-26" y="-113" u="0.4492" v="0.2793"><Weight values="22950" indices="1027"/></MeshVertex>
+<MeshVertex x="-17" y="-113" u="0.4668" v="0.2793"><Weight values="22950" indices="1027"/></MeshVertex>
+<MeshVertex x="11" y="-93.475" u="0.5215" v="0.3174"><Weight values="9945" indices="1283"/></MeshVertex>
+<MeshVertex x="11" y="-77" u="0.5215" v="0.3496"><Weight values="2054535" indices="460803"/></MeshVertex>
+<MeshVertex x="19" y="-95.9194" u="0.5371" v="0.3127"><Weight values="9945" indices="1283"/></MeshVertex>
+<MeshVertex x="19" y="-77.5333" u="0.5371" v="0.3486"><Weight values="2054535" indices="460803"/></MeshVertex>
+<MeshVertex x="26" y="-78" u="0.5508" v="0.3477"><Weight values="2054535" indices="460803"/></MeshVertex>
+<MeshVertex x="33" y="-95.9194" u="0.5645" v="0.3127"><Weight values="9945" indices="1283"/></MeshVertex>
+<MeshVertex x="33" y="-77.5333" u="0.5645" v="0.3486"><Weight values="2054535" indices="460803"/></MeshVertex>
+<MeshVertex x="41" y="-93.475" u="0.5801" v="0.3174"><Weight values="9945" indices="1283"/></MeshVertex>
+<MeshVertex x="41" y="-77" u="0.5801" v="0.3496"><Weight values="2054535" indices="460803"/></MeshVertex>
+<MeshVertex x="11" y="-113" u="0.5215" v="0.2793"><Weight values="22950" indices="1283"/></MeshVertex>
+<MeshVertex x="20" y="-113" u="0.5391" v="0.2793"><Weight values="22950" indices="1283"/></MeshVertex>
+<MeshVertex x="29" y="-113" u="0.5566" v="0.2793"><Weight values="22950" indices="1283"/></MeshVertex>
+<MeshVertex x="38" y="-113" u="0.5742" v="0.2793"><Weight values="22950" indices="1283"/></MeshVertex>
+<MeshVertex x="47" y="-113" u="0.5918" v="0.2793"><Weight values="22950" indices="1283"/></MeshVertex>
+<MeshVertex x="-55" y="-68" u="0.3926" v="0.3672"><Weight values="255" indices="8"/></MeshVertex>
+<MeshVertex x="-45" y="-68" u="0.4121" v="0.3672"><Weight values="255" indices="8"/></MeshVertex>
+<MeshVertex x="-35" y="-68" u="0.4316" v="0.3672"><Weight values="255" indices="8"/></MeshVertex>
+<MeshVertex x="-25" y="-68" u="0.4512" v="0.3672"><Weight values="17595" indices="776"/></MeshVertex>
+<MeshVertex x="-15" y="-68" u="0.4707" v="0.3672"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="6" y="-68" u="0.5117" v="0.3672"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="16" y="-68" u="0.5312" v="0.3672"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="26" y="-68" u="0.5508" v="0.3672"><Weight values="24225" indices="776"/></MeshVertex>
+<MeshVertex x="36" y="-68" u="0.5703" v="0.3672"><Weight values="255" indices="8"/></MeshVertex>
+<MeshVertex x="46" y="-68" u="0.5898" v="0.3672"><Weight values="255" indices="8"/></MeshVertex>
+<MeshVertex x="248" y="-2" u="0.9844" v="0.4961"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="239.5496" y="62.1871" u="0.9679" v="0.6215"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="214.7743" y="122" u="0.9195" v="0.7383"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="175.3625" y="173.3625" u="0.8425" v="0.8386"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="124" y="212.7743" u="0.7422" v="0.9156"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="64.1871" y="237.5496" u="0.6254" v="0.964"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="0" y="246" u="0.5" v="0.9805"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-64.1871" y="237.5496" u="0.3746" v="0.964"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-124" y="212.7743" u="0.2578" v="0.9156"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-175.3625" y="173.3625" u="0.1575" v="0.8386"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-214.7743" y="122" u="0.0805" v="0.7383"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-239.5496" y="62.1871" u="0.0321" v="0.6215"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-248" y="-2" u="0.0156" v="0.4961"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-239.5496" y="-66.1871" u="0.0321" v="0.3707"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-214.7743" y="-126" u="0.0805" v="0.2539"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-175.3625" y="-177.3625" u="0.1575" v="0.1536"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-124" y="-216.7743" u="0.2578" v="0.0766"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-64.1871" y="-241.5496" u="0.3746" v="0.0282"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="0" y="-250" u="0.5" v="0.0117"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="64.1871" y="-241.5496" u="0.6254" v="0.0282"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="124" y="-216.7743" u="0.7422" v="0.0766"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="175.3625" y="-177.3625" u="0.8425" v="0.1536"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="214.7743" y="-126" u="0.9195" v="0.2539"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="239.5496" y="-66.1871" u="0.9679" v="0.3707"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="228" y="-2" u="0.9453" v="0.4961"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="224.5362" y="37.5918" u="0.9385" v="0.5734"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="214.2499" y="75.9806" u="0.9185" v="0.6484"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="197.4538" y="112" u="0.8857" v="0.7188"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="174.6581" y="144.5556" u="0.8411" v="0.7823"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="146.5556" y="172.6581" u="0.7862" v="0.8372"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="114" y="195.4538" u="0.7227" v="0.8817"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="77.9806" y="212.2499" u="0.6523" v="0.9146"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="39.5918" y="222.5362" u="0.5773" v="0.9346"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="0" y="226" u="0.5" v="0.9414"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-39.5918" y="222.5362" u="0.4227" v="0.9346"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-77.9806" y="212.2499" u="0.3477" v="0.9146"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-114" y="195.4538" u="0.2773" v="0.8817"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-146.5556" y="172.6581" u="0.2138" v="0.8372"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-174.6581" y="144.5556" u="0.1589" v="0.7823"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-197.4538" y="112" u="0.1143" v="0.7188"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-214.2499" y="75.9806" u="0.0815" v="0.6484"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-224.5362" y="37.5918" u="0.0615" v="0.5734"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-228" y="-2" u="0.0547" v="0.4961"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-224.5362" y="-41.5918" u="0.0615" v="0.4188"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-214.2499" y="-79.9806" u="0.0815" v="0.3438"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-197.4538" y="-116" u="0.1143" v="0.2734"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-174.6581" y="-148.5556" u="0.1589" v="0.2099"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-146.5556" y="-176.6581" u="0.2138" v="0.155"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-114" y="-199.4538" u="0.2773" v="0.1104"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-77.9806" y="-216.2499" u="0.3477" v="0.0776"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-39.5918" y="-226.5362" u="0.4227" v="0.0575"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="0" y="-230" u="0.5" v="0.0508"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="39.5918" y="-226.5362" u="0.5773" v="0.0575"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="77.9806" y="-216.2499" u="0.6523" v="0.0776"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="114" y="-199.4538" u="0.7227" v="0.1104"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="146.5556" y="-176.6581" u="0.7862" v="0.155"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="174.6581" y="-148.5556" u="0.8411" v="0.2099"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="197.4538" y="-116" u="0.8857" v="0.2734"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="214.2499" y="-79.9806" u="0.9185" v="0.3438"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="224.5362" y="-41.5918" u="0.9385" v="0.4188"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="206" y="-2" u="0.9023" v="0.4961"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="203.4638" y="30.2255" u="0.8974" v="0.559"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="195.9176" y="61.6575" u="0.8827" v="0.6204"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="183.5473" y="91.522" u="0.8585" v="0.6788"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="166.6575" y="119.0838" u="0.8255" v="0.7326"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="145.664" y="143.664" u="0.7845" v="0.7806"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="121.0838" y="164.6575" u="0.7365" v="0.8216"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="93.522" y="181.5473" u="0.6827" v="0.8546"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="63.6575" y="193.9176" u="0.6243" v="0.8787"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="32.2255" y="201.4638" u="0.5629" v="0.8935"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="0" y="204" u="0.5" v="0.8984"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-32.2255" y="201.4638" u="0.4371" v="0.8935"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-63.6575" y="193.9176" u="0.3757" v="0.8787"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-93.522" y="181.5473" u="0.3173" v="0.8546"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-121.0838" y="164.6575" u="0.2635" v="0.8216"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-145.664" y="143.664" u="0.2155" v="0.7806"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-166.6575" y="119.0838" u="0.1745" v="0.7326"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-183.5473" y="91.522" u="0.1415" v="0.6788"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-195.9176" y="61.6575" u="0.1173" v="0.6204"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-203.4638" y="30.2255" u="0.1026" v="0.559"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-206" y="-2" u="0.0977" v="0.4961"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-203.4638" y="-34.2255" u="0.1026" v="0.4332"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-195.9176" y="-65.6575" u="0.1173" v="0.3718"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-183.5473" y="-95.522" u="0.1415" v="0.3134"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-166.6575" y="-123.0838" u="0.1745" v="0.2596"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-145.664" y="-147.664" u="0.2155" v="0.2116"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-121.0838" y="-168.6575" u="0.2635" v="0.1706"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-93.522" y="-185.5473" u="0.3173" v="0.1376"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-63.6575" y="-197.9176" u="0.3757" v="0.1134"><Weight values="15300" indices="769"/></MeshVertex>
+<MeshVertex x="-32.2255" y="-205.4638" u="0.4371" v="0.0987"><Weight values="22950" indices="259"/></MeshVertex>
+<MeshVertex x="0" y="-208" u="0.5" v="0.0938"><Weight values="25500" indices="259"/></MeshVertex>
+<MeshVertex x="32.2255" y="-205.4638" u="0.5629" v="0.0987"><Weight values="22950" indices="259"/></MeshVertex>
+<MeshVertex x="63.6575" y="-197.9176" u="0.6243" v="0.1134"><Weight values="15300" indices="769"/></MeshVertex>
+<MeshVertex x="93.522" y="-185.5473" u="0.6827" v="0.1376"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="121.0838" y="-168.6575" u="0.7365" v="0.1706"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="145.664" y="-147.664" u="0.7845" v="0.2116"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="166.6575" y="-123.0838" u="0.8255" v="0.2596"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="183.5473" y="-95.522" u="0.8585" v="0.3134"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="195.9176" y="-65.6575" u="0.8827" v="0.3718"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="203.4638" y="-34.2255" u="0.8974" v="0.4332"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="190" y="-2" u="0.8711" v="0.4961"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="189.0851" y="16.6233" u="0.8693" v="0.5325"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="186.3492" y="35.0672" u="0.864" v="0.5685"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="181.8187" y="53.1541" u="0.8551" v="0.6038"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="175.5371" y="70.7099" u="0.8428" v="0.6381"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="167.565" y="87.5654" u="0.8273" v="0.671"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="157.9792" y="103.5583" u="0.8086" v="0.7023"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="146.872" y="118.5347" u="0.7869" v="0.7315"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="134.3503" y="132.3503" u="0.7624" v="0.7585"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="120.5347" y="144.872" u="0.7354" v="0.783"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="105.5583" y="155.9792" u="0.7062" v="0.8046"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="89.5654" y="165.565" u="0.6749" v="0.8234"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="72.7099" y="173.5371" u="0.642" v="0.8389"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="55.1541" y="179.8187" u="0.6077" v="0.8512"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="37.0672" y="184.3492" u="0.5724" v="0.8601"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="18.6233" y="187.0851" u="0.5364" v="0.8654"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="0" y="188" u="0.5" v="0.8672"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-18.6233" y="187.0851" u="0.4636" v="0.8654"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-37.0672" y="184.3492" u="0.4276" v="0.8601"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-55.1541" y="179.8187" u="0.3923" v="0.8512"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-72.7099" y="173.5371" u="0.358" v="0.8389"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-89.5654" y="165.565" u="0.3251" v="0.8234"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-105.5583" y="155.9792" u="0.2938" v="0.8046"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-120.5347" y="144.872" u="0.2646" v="0.783"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-134.3503" y="132.3503" u="0.2376" v="0.7585"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-146.872" y="118.5347" u="0.2131" v="0.7315"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-157.9792" y="103.5583" u="0.1914" v="0.7023"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-167.565" y="87.5654" u="0.1727" v="0.671"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-175.5371" y="70.7099" u="0.1572" v="0.6381"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-181.8187" y="53.1541" u="0.1449" v="0.6038"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-186.3492" y="35.0672" u="0.136" v="0.5685"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-189.0851" y="16.6233" u="0.1307" v="0.5325"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-190" y="-2" u="0.1289" v="0.4961"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-189.0851" y="-20.6233" u="0.1307" v="0.4597"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-186.3492" y="-39.0672" u="0.136" v="0.4237"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-181.8187" y="-57.1541" u="0.1449" v="0.3884"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-175.5371" y="-74.7099" u="0.1572" v="0.3541"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-167.565" y="-91.5654" u="0.1727" v="0.3212"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-157.9792" y="-107.5583" u="0.1914" v="0.2899"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-146.872" y="-122.5347" u="0.2131" v="0.2607"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-134.3503" y="-136.3503" u="0.2376" v="0.2337"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-120.5347" y="-148.872" u="0.2646" v="0.2092"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-105.5583" y="-159.9792" u="0.2938" v="0.1875"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-89.5654" y="-169.565" u="0.3251" v="0.1688"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-72.7099" y="-177.5371" u="0.358" v="0.1532"><Weight values="18105" indices="769"/></MeshVertex>
+<MeshVertex x="-55.1541" y="-183.8187" u="0.3923" v="0.141"><Weight values="2550" indices="259"/></MeshVertex>
+<MeshVertex x="-37.0672" y="-188.3492" u="0.4276" v="0.1321"><Weight values="5610" indices="259"/></MeshVertex>
+<MeshVertex x="-18.6233" y="-191.0851" u="0.4636" v="0.1268"><Weight values="8160" indices="259"/></MeshVertex>
+<MeshVertex x="0" y="-192" u="0.5" v="0.125"><Weight values="8925" indices="259"/></MeshVertex>
+<MeshVertex x="18.6233" y="-191.0851" u="0.5364" v="0.1268"><Weight values="8160" indices="259"/></MeshVertex>
+<MeshVertex x="37.0672" y="-188.3492" u="0.5724" v="0.1321"><Weight values="5610" indices="259"/></MeshVertex>
+<MeshVertex x="55.1541" y="-183.8187" u="0.6077" v="0.141"><Weight values="2550" indices="259"/></MeshVertex>
+<MeshVertex x="72.7099" y="-177.5371" u="0.642" v="0.1532"><Weight values="18105" indices="769"/></MeshVertex>
+<MeshVertex x="89.5654" y="-169.565" u="0.6749" v="0.1688"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="105.5583" y="-159.9792" u="0.7062" v="0.1875"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="120.5347" y="-148.872" u="0.7354" v="0.2092"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="134.3503" y="-136.3503" u="0.7624" v="0.2337"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="146.872" y="-122.5347" u="0.7869" v="0.2607"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="157.9792" y="-107.5583" u="0.8086" v="0.2899"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="167.565" y="-91.5654" u="0.8273" v="0.3212"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="175.5371" y="-74.7099" u="0.8428" v="0.3541"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="181.8187" y="-57.1541" u="0.8551" v="0.3884"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="186.3492" y="-39.0672" u="0.864" v="0.4237"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="189.0851" y="-20.6233" u="0.8693" v="0.4597"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-62" y="-144" u="0.3789" v="0.2188"><Weight values="30345" indices="259"/></MeshVertex>
+<MeshVertex x="-53" y="-144" u="0.3965" v="0.2188"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-44" y="-144" u="0.4141" v="0.2188"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-35" y="-144" u="0.4316" v="0.2188"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-26" y="-144" u="0.4492" v="0.2188"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-17" y="-144" u="0.4668" v="0.2188"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-8" y="-144" u="0.4844" v="0.2188"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="1" y="-144" u="0.502" v="0.2188"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="10" y="-144" u="0.5195" v="0.2188"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="19" y="-144" u="0.5371" v="0.2188"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="28" y="-144" u="0.5547" v="0.2188"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="37" y="-144" u="0.5723" v="0.2188"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="46" y="-144" u="0.5898" v="0.2188"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="55" y="-144" u="0.6074" v="0.2188"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="64" y="-144" u="0.625" v="0.2188"><Weight values="15810" indices="769"/></MeshVertex>
+<MeshVertex x="-75.5" y="-135" u="0.3525" v="0.2363"><Weight values="23205" indices="259"/></MeshVertex>
+<MeshVertex x="-66.5" y="-135" u="0.3701" v="0.2363"><Weight values="8160" indices="259"/></MeshVertex>
+<MeshVertex x="-57.5" y="-135" u="0.3877" v="0.2363"><Weight values="1275" indices="259"/></MeshVertex>
+<MeshVertex x="-48.5" y="-135" u="0.4053" v="0.2363"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-39.5" y="-135" u="0.4229" v="0.2363"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-30.5" y="-135" u="0.4404" v="0.2363"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-21.5" y="-135" u="0.458" v="0.2363"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-12.5" y="-135" u="0.4756" v="0.2363"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-3.5" y="-135" u="0.4932" v="0.2363"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="5.5" y="-135" u="0.5107" v="0.2363"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="14.5" y="-135" u="0.5283" v="0.2363"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="23.5" y="-135" u="0.5459" v="0.2363"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="32.5" y="-135" u="0.5635" v="0.2363"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="41.5" y="-135" u="0.5811" v="0.2363"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="50.5" y="-135" u="0.5986" v="0.2363"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="59.5" y="-135" u="0.6162" v="0.2363"><Weight values="3570" indices="259"/></MeshVertex>
+<MeshVertex x="68.5" y="-135" u="0.6338" v="0.2363"><Weight values="14025" indices="259"/></MeshVertex>
+<MeshVertex x="77.5" y="-135" u="0.6514" v="0.2363"><Weight values="31875" indices="259"/></MeshVertex>
+<MeshVertex x="-80" y="-126" u="0.3438" v="0.2539"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-71" y="-126" u="0.3613" v="0.2539"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-62" y="-126" u="0.3789" v="0.2539"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-53" y="-126" u="0.3965" v="0.2539"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-44" y="-126" u="0.4141" v="0.2539"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-35" y="-126" u="0.4316" v="0.2539"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-26" y="-126" u="0.4492" v="0.2539"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-17" y="-126" u="0.4668" v="0.2539"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-8" y="-126" u="0.4844" v="0.2539"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="1" y="-126" u="0.502" v="0.2539"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="10" y="-126" u="0.5195" v="0.2539"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="19" y="-126" u="0.5371" v="0.2539"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="28" y="-126" u="0.5547" v="0.2539"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="37" y="-126" u="0.5723" v="0.2539"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="46" y="-126" u="0.5898" v="0.2539"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="55" y="-126" u="0.6074" v="0.2539"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="64" y="-126" u="0.625" v="0.2539"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="73" y="-126" u="0.6426" v="0.2539"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="82" y="-126" u="0.6602" v="0.2539"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-75.5" y="-117" u="0.3525" v="0.2715"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-66.5" y="-117" u="0.3701" v="0.2715"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-57.5" y="-117" u="0.3877" v="0.2715"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-12.5" y="-117" u="0.4756" v="0.2715"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-3.5" y="-117" u="0.4932" v="0.2715"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="59.5" y="-117" u="0.6162" v="0.2715"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="68.5" y="-117" u="0.6338" v="0.2715"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="77.5" y="-117" u="0.6514" v="0.2715"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-80" y="-108" u="0.3438" v="0.2891"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-71" y="-108" u="0.3613" v="0.2891"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-62" y="-108" u="0.3789" v="0.2891"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-8" y="-108" u="0.4844" v="0.2891"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="1" y="-108" u="0.502" v="0.2891"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="55" y="-108" u="0.6074" v="0.2891"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="64" y="-108" u="0.625" v="0.2891"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="73" y="-108" u="0.6426" v="0.2891"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="82" y="-108" u="0.6602" v="0.2891"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-75.5" y="-99" u="0.3525" v="0.3066"><Weight values="2550" indices="259"/></MeshVertex>
+<MeshVertex x="-66.5" y="-99" u="0.3701" v="0.3066"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-3.5" y="-99" u="0.4932" v="0.3066"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="59.5" y="-99" u="0.6162" v="0.3066"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="68.5" y="-99" u="0.6338" v="0.3066"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="77.5" y="-99" u="0.6514" v="0.3066"><Weight values="7140" indices="259"/></MeshVertex>
+<MeshVertex x="-80" y="-90" u="0.3438" v="0.3242"><Weight values="13005" indices="769"/></MeshVertex>
+<MeshVertex x="-71" y="-90" u="0.3613" v="0.3242"><Weight values="10965" indices="259"/></MeshVertex>
+<MeshVertex x="-62" y="-90" u="0.3789" v="0.3242"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-8" y="-90" u="0.4844" v="0.3242"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="1" y="-90" u="0.502" v="0.3242"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="55" y="-90" u="0.6074" v="0.3242"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="64" y="-90" u="0.625" v="0.3242"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="73" y="-90" u="0.6426" v="0.3242"><Weight values="10965" indices="259"/></MeshVertex>
+<MeshVertex x="82" y="-90" u="0.6602" v="0.3242"><Weight values="13005" indices="769"/></MeshVertex>
+<MeshVertex x="-75.5" y="-81" u="0.3525" v="0.3418"><Weight values="14535" indices="259"/></MeshVertex>
+<MeshVertex x="-66.5" y="-81" u="0.3701" v="0.3418"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-57.5" y="-81" u="0.3877" v="0.3418"><Weight values="510" indices="2051"/></MeshVertex>
+<MeshVertex x="-12.5" y="-81" u="0.4756" v="0.3418"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-3.5" y="-81" u="0.4932" v="0.3418"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="50.5" y="-81" u="0.5986" v="0.3418"><Weight values="13260" indices="2051"/></MeshVertex>
+<MeshVertex x="59.5" y="-81" u="0.6162" v="0.3418"><Weight values="510" indices="2051"/></MeshVertex>
+<MeshVertex x="68.5" y="-81" u="0.6338" v="0.3418"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="77.5" y="-81" u="0.6514" v="0.3418"><Weight values="14535" indices="259"/></MeshVertex>
+<MeshVertex x="-80" y="-72" u="0.3438" v="0.3594"><Weight values="23970" indices="259"/></MeshVertex>
+<MeshVertex x="-71" y="-72" u="0.3613" v="0.3594"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-62" y="-72" u="0.3789" v="0.3594"><Weight values="22185" indices="2051"/></MeshVertex>
+<MeshVertex x="-8" y="-72" u="0.4844" v="0.3594"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="1" y="-72" u="0.502" v="0.3594"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="55" y="-72" u="0.6074" v="0.3594"><Weight values="2805" indices="776"/></MeshVertex>
+<MeshVertex x="64" y="-72" u="0.625" v="0.3594"><Weight values="22185" indices="2051"/></MeshVertex>
+<MeshVertex x="73" y="-72" u="0.6426" v="0.3594"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="82" y="-72" u="0.6602" v="0.3594"><Weight values="23970" indices="259"/></MeshVertex>
+<MeshVertex x="-75.5" y="-63" u="0.3525" v="0.377"><Weight values="1275" indices="259"/></MeshVertex>
+<MeshVertex x="-66.5" y="-63" u="0.3701" v="0.377"><Weight values="19890" indices="2051"/></MeshVertex>
+<MeshVertex x="-57.5" y="-63" u="0.3877" v="0.377"><Weight values="255" indices="8"/></MeshVertex>
+<MeshVertex x="-48.5" y="-63" u="0.4053" v="0.377"><Weight values="255" indices="8"/></MeshVertex>
+<MeshVertex x="-39.5" y="-63" u="0.4229" v="0.377"><Weight values="255" indices="8"/></MeshVertex>
+<MeshVertex x="-30.5" y="-63" u="0.4404" v="0.377"><Weight values="255" indices="8"/></MeshVertex>
+<MeshVertex x="-21.5" y="-63" u="0.458" v="0.377"><Weight values="29835" indices="776"/></MeshVertex>
+<MeshVertex x="-12.5" y="-63" u="0.4756" v="0.377"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-3.5" y="-63" u="0.4932" v="0.377"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="23.5" y="-63" u="0.5459" v="0.377"><Weight values="29835" indices="776"/></MeshVertex>
+<MeshVertex x="32.5" y="-63" u="0.5635" v="0.377"><Weight values="255" indices="8"/></MeshVertex>
+<MeshVertex x="41.5" y="-63" u="0.5811" v="0.377"><Weight values="255" indices="8"/></MeshVertex>
+<MeshVertex x="50.5" y="-63" u="0.5986" v="0.377"><Weight values="255" indices="8"/></MeshVertex>
+<MeshVertex x="59.5" y="-63" u="0.6162" v="0.377"><Weight values="255" indices="8"/></MeshVertex>
+<MeshVertex x="68.5" y="-63" u="0.6338" v="0.377"><Weight values="19890" indices="2051"/></MeshVertex>
+<MeshVertex x="77.5" y="-63" u="0.6514" v="0.377"><Weight values="1275" indices="259"/></MeshVertex>
+<MeshVertex x="-80" y="-54" u="0.3438" v="0.3945"><Weight values="12750" indices="259"/></MeshVertex>
+<MeshVertex x="-71" y="-54" u="0.3613" v="0.3945"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-62" y="-54" u="0.3789" v="0.3945"><Weight values="24225" indices="776"/></MeshVertex>
+<MeshVertex x="-53" y="-54" u="0.3965" v="0.3945"><Weight values="255" indices="8"/></MeshVertex>
+<MeshVertex x="-44" y="-54" u="0.4141" v="0.3945"><Weight values="255" indices="8"/></MeshVertex>
+<MeshVertex x="-35" y="-54" u="0.4316" v="0.3945"><Weight values="255" indices="8"/></MeshVertex>
+<MeshVertex x="-26" y="-54" u="0.4492" v="0.3945"><Weight values="11730" indices="776"/></MeshVertex>
+<MeshVertex x="-17" y="-54" u="0.4668" v="0.3945"><Weight values="765" indices="2051"/></MeshVertex>
+<MeshVertex x="-8" y="-54" u="0.4844" v="0.3945"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="1" y="-54" u="0.502" v="0.3945"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="10" y="-54" u="0.5195" v="0.3945"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="19" y="-54" u="0.5371" v="0.3945"><Weight values="765" indices="2051"/></MeshVertex>
+<MeshVertex x="28" y="-54" u="0.5547" v="0.3945"><Weight values="11730" indices="776"/></MeshVertex>
+<MeshVertex x="37" y="-54" u="0.5723" v="0.3945"><Weight values="255" indices="8"/></MeshVertex>
+<MeshVertex x="46" y="-54" u="0.5898" v="0.3945"><Weight values="255" indices="8"/></MeshVertex>
+<MeshVertex x="55" y="-54" u="0.6074" v="0.3945"><Weight values="255" indices="8"/></MeshVertex>
+<MeshVertex x="64" y="-54" u="0.625" v="0.3945"><Weight values="24225" indices="776"/></MeshVertex>
+<MeshVertex x="73" y="-54" u="0.6426" v="0.3945"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="82" y="-54" u="0.6602" v="0.3945"><Weight values="12750" indices="259"/></MeshVertex>
+<MeshVertex x="-75.5" y="-45" u="0.3525" v="0.4121"><Weight values="510" indices="259"/></MeshVertex>
+<MeshVertex x="-66.5" y="-45" u="0.3701" v="0.4121"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-57.5" y="-45" u="0.3877" v="0.4121"><Weight values="15810" indices="2051"/></MeshVertex>
+<MeshVertex x="-48.5" y="-45" u="0.4053" v="0.4121"><Weight values="21930" indices="776"/></MeshVertex>
+<MeshVertex x="-39.5" y="-45" u="0.4229" v="0.4121"><Weight values="18870" indices="776"/></MeshVertex>
+<MeshVertex x="-30.5" y="-45" u="0.4404" v="0.4121"><Weight values="23460" indices="2051"/></MeshVertex>
+<MeshVertex x="-21.5" y="-45" u="0.458" v="0.4121"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-12.5" y="-45" u="0.4756" v="0.4121"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-3.5" y="-45" u="0.4932" v="0.4121"><Weight values="510" indices="2307"/></MeshVertex>
+<MeshVertex x="5.5" y="-45" u="0.5107" v="0.4121"><Weight values="765" indices="2307"/></MeshVertex>
+<MeshVertex x="14.5" y="-45" u="0.5283" v="0.4121"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="23.5" y="-45" u="0.5459" v="0.4121"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="32.5" y="-45" u="0.5635" v="0.4121"><Weight values="23460" indices="2051"/></MeshVertex>
+<MeshVertex x="41.5" y="-45" u="0.5811" v="0.4121"><Weight values="18870" indices="776"/></MeshVertex>
+<MeshVertex x="50.5" y="-45" u="0.5986" v="0.4121"><Weight values="21930" indices="776"/></MeshVertex>
+<MeshVertex x="59.5" y="-45" u="0.6162" v="0.4121"><Weight values="15810" indices="2051"/></MeshVertex>
+<MeshVertex x="68.5" y="-45" u="0.6338" v="0.4121"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="77.5" y="-45" u="0.6514" v="0.4121"><Weight values="510" indices="259"/></MeshVertex>
+<MeshVertex x="-80" y="-36" u="0.3438" v="0.4297"><Weight values="18105" indices="259"/></MeshVertex>
+<MeshVertex x="-71" y="-36" u="0.3613" v="0.4297"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-62" y="-36" u="0.3789" v="0.4297"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-53" y="-36" u="0.3965" v="0.4297"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-44" y="-36" u="0.4141" v="0.4297"><Weight values="14025" indices="2051"/></MeshVertex>
+<MeshVertex x="-35" y="-36" u="0.4316" v="0.4297"><Weight values="282285" indices="590600"/></MeshVertex>
+<MeshVertex x="-26" y="-36" u="0.4492" v="0.4297"><Weight values="2055810" indices="591875"/></MeshVertex>
+<MeshVertex x="-17" y="-36" u="0.4668" v="0.4297"><Weight values="8160" indices="2307"/></MeshVertex>
+<MeshVertex x="-8" y="-36" u="0.4844" v="0.4297"><Weight values="8160" indices="2307"/></MeshVertex>
+<MeshVertex x="1" y="-36" u="0.502" v="0.4297"><Weight values="8160" indices="2307"/></MeshVertex>
+<MeshVertex x="10" y="-36" u="0.5195" v="0.4297"><Weight values="8160" indices="2307"/></MeshVertex>
+<MeshVertex x="19" y="-36" u="0.5371" v="0.4297"><Weight values="8160" indices="2307"/></MeshVertex>
+<MeshVertex x="28" y="-36" u="0.5547" v="0.4297"><Weight values="2040765" indices="591875"/></MeshVertex>
+<MeshVertex x="37" y="-36" u="0.5723" v="0.4297"><Weight values="1001130" indices="590600"/></MeshVertex>
+<MeshVertex x="46" y="-36" u="0.5898" v="0.4297"><Weight values="29070" indices="2051"/></MeshVertex>
+<MeshVertex x="55" y="-36" u="0.6074" v="0.4297"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="64" y="-36" u="0.625" v="0.4297"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="73" y="-36" u="0.6426" v="0.4297"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="82" y="-36" u="0.6602" v="0.4297"><Weight values="18105" indices="259"/></MeshVertex>
+<MeshVertex x="-75.5" y="-27" u="0.3525" v="0.4473"><Weight values="7395" indices="259"/></MeshVertex>
+<MeshVertex x="-66.5" y="-27" u="0.3701" v="0.4473"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-57.5" y="-27" u="0.3877" v="0.4473"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-48.5" y="-27" u="0.4053" v="0.4473"><Weight values="18360" indices="776"/></MeshVertex>
+<MeshVertex x="-39.5" y="-27" u="0.4229" v="0.4473"><Weight values="255" indices="8"/></MeshVertex>
+<MeshVertex x="-30.5" y="-27" u="0.4404" v="0.4473"><Weight values="4080" indices="2312"/></MeshVertex>
+<MeshVertex x="41.5" y="-27" u="0.5811" v="0.4473"><Weight values="255" indices="8"/></MeshVertex>
+<MeshVertex x="50.5" y="-27" u="0.5986" v="0.4473"><Weight values="255" indices="8"/></MeshVertex>
+<MeshVertex x="59.5" y="-27" u="0.6162" v="0.4473"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="68.5" y="-27" u="0.6338" v="0.4473"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="77.5" y="-27" u="0.6514" v="0.4473"><Weight values="7395" indices="259"/></MeshVertex>
+<MeshVertex x="-80" y="-18" u="0.3438" v="0.4648"><Weight values="23715" indices="769"/></MeshVertex>
+<MeshVertex x="-71" y="-18" u="0.3613" v="0.4648"><Weight values="3060" indices="259"/></MeshVertex>
+<MeshVertex x="-62" y="-18" u="0.3789" v="0.4648"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-53" y="-18" u="0.3965" v="0.4648"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-44" y="-18" u="0.4141" v="0.4648"><Weight values="11475" indices="776"/></MeshVertex>
+<MeshVertex x="-35" y="-18" u="0.4316" v="0.4648"><Weight values="255" indices="8"/></MeshVertex>
+<MeshVertex x="-26" y="-18" u="0.4492" v="0.4648"><Weight values="2805" indices="776"/></MeshVertex>
+<MeshVertex x="37" y="-18" u="0.5723" v="0.4648"><Weight values="255" indices="8"/></MeshVertex>
+<MeshVertex x="46" y="-18" u="0.5898" v="0.4648"><Weight values="1020" indices="776"/></MeshVertex>
+<MeshVertex x="55" y="-18" u="0.6074" v="0.4648"><Weight values="6120" indices="2051"/></MeshVertex>
+<MeshVertex x="64" y="-18" u="0.625" v="0.4648"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="73" y="-18" u="0.6426" v="0.4648"><Weight values="3060" indices="259"/></MeshVertex>
+<MeshVertex x="82" y="-18" u="0.6602" v="0.4648"><Weight values="23715" indices="769"/></MeshVertex>
+<MeshVertex x="-75.5" y="-9" u="0.3525" v="0.4824"><Weight values="27285" indices="769"/></MeshVertex>
+<MeshVertex x="-66.5" y="-9" u="0.3701" v="0.4824"><Weight values="2295" indices="259"/></MeshVertex>
+<MeshVertex x="-57.5" y="-9" u="0.3877" v="0.4824"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-48.5" y="-9" u="0.4053" v="0.4824"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-39.5" y="-9" u="0.4229" v="0.4824"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-30.5" y="-9" u="0.4404" v="0.4824"><Weight values="4080" indices="2307"/></MeshVertex>
+<MeshVertex x="41.5" y="-9" u="0.5811" v="0.4824"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="50.5" y="-9" u="0.5986" v="0.4824"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="59.5" y="-9" u="0.6162" v="0.4824"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="68.5" y="-9" u="0.6338" v="0.4824"><Weight values="2295" indices="259"/></MeshVertex>
+<MeshVertex x="77.5" y="-9" u="0.6514" v="0.4824"><Weight values="27285" indices="769"/></MeshVertex>
+<MeshVertex x="-71" y="0" u="0.3613" v="0.5"><Weight values="25245" indices="769"/></MeshVertex>
+<MeshVertex x="-62" y="0" u="0.3789" v="0.5"><Weight values="4590" indices="259"/></MeshVertex>
+<MeshVertex x="-53" y="0" u="0.3965" v="0.5"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-44" y="0" u="0.4141" v="0.5"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-35" y="0" u="0.4316" v="0.5"><Weight values="21165" indices="777"/></MeshVertex>
+<MeshVertex x="-26" y="0" u="0.4492" v="0.5"><Weight values="255" indices="9"/></MeshVertex>
+<MeshVertex x="-17" y="0" u="0.4668" v="0.5"><Weight values="255" indices="9"/></MeshVertex>
+<MeshVertex x="-8" y="0" u="0.4844" v="0.5"><Weight values="255" indices="9"/></MeshVertex>
+<MeshVertex x="1" y="0" u="0.502" v="0.5"><Weight values="255" indices="9"/></MeshVertex>
+<MeshVertex x="10" y="0" u="0.5195" v="0.5"><Weight values="255" indices="9"/></MeshVertex>
+<MeshVertex x="19" y="0" u="0.5371" v="0.5"><Weight values="255" indices="9"/></MeshVertex>
+<MeshVertex x="28" y="0" u="0.5547" v="0.5"><Weight values="255" indices="9"/></MeshVertex>
+<MeshVertex x="37" y="0" u="0.5723" v="0.5"><Weight values="21165" indices="777"/></MeshVertex>
+<MeshVertex x="46" y="0" u="0.5898" v="0.5"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="55" y="0" u="0.6074" v="0.5"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="64" y="0" u="0.625" v="0.5"><Weight values="4590" indices="259"/></MeshVertex>
+<MeshVertex x="73" y="0" u="0.6426" v="0.5"><Weight values="25245" indices="769"/></MeshVertex>
+<MeshVertex x="-66.5" y="9" u="0.3701" v="0.5176"><Weight values="4542315" indices="197121"/></MeshVertex>
+<MeshVertex x="-57.5" y="9" u="0.3877" v="0.5176"><Weight values="1382865" indices="66051"/></MeshVertex>
+<MeshVertex x="-48.5" y="9" u="0.4053" v="0.5176"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-39.5" y="9" u="0.4229" v="0.5176"><Weight values="24225" indices="2307"/></MeshVertex>
+<MeshVertex x="-30.5" y="9" u="0.4404" v="0.5176"><Weight values="255" indices="9"/></MeshVertex>
+<MeshVertex x="-21.5" y="9" u="0.458" v="0.5176"><Weight values="255" indices="9"/></MeshVertex>
+<MeshVertex x="-12.5" y="9" u="0.4756" v="0.5176"><Weight values="255" indices="9"/></MeshVertex>
+<MeshVertex x="-3.5" y="9" u="0.4932" v="0.5176"><Weight values="255" indices="9"/></MeshVertex>
+<MeshVertex x="5.5" y="9" u="0.5107" v="0.5176"><Weight values="255" indices="9"/></MeshVertex>
+<MeshVertex x="14.5" y="9" u="0.5283" v="0.5176"><Weight values="255" indices="9"/></MeshVertex>
+<MeshVertex x="23.5" y="9" u="0.5459" v="0.5176"><Weight values="255" indices="9"/></MeshVertex>
+<MeshVertex x="32.5" y="9" u="0.5635" v="0.5176"><Weight values="255" indices="9"/></MeshVertex>
+<MeshVertex x="41.5" y="9" u="0.5811" v="0.5176"><Weight values="24225" indices="2307"/></MeshVertex>
+<MeshVertex x="50.5" y="9" u="0.5986" v="0.5176"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="59.5" y="9" u="0.6162" v="0.5176"><Weight values="1513680" indices="66051"/></MeshVertex>
+<MeshVertex x="68.5" y="9" u="0.6338" v="0.5176"><Weight values="4541295" indices="197121"/></MeshVertex>
+<MeshVertex x="-62" y="18" u="0.3789" v="0.5352"><Weight values="465885" indices="66306"/></MeshVertex>
+<MeshVertex x="-53" y="18" u="0.3965" v="0.5352"><Weight values="27795" indices="515"/></MeshVertex>
+<MeshVertex x="-44" y="18" u="0.4141" v="0.5352"><Weight values="2550" indices="515"/></MeshVertex>
+<MeshVertex x="-35" y="18" u="0.4316" v="0.5352"><Weight values="4590" indices="2307"/></MeshVertex>
+<MeshVertex x="-26" y="18" u="0.4492" v="0.5352"><Weight values="19125" indices="777"/></MeshVertex>
+<MeshVertex x="-17" y="18" u="0.4668" v="0.5352"><Weight values="255" indices="9"/></MeshVertex>
+<MeshVertex x="-8" y="18" u="0.4844" v="0.5352"><Weight values="255" indices="9"/></MeshVertex>
+<MeshVertex x="1" y="18" u="0.502" v="0.5352"><Weight values="255" indices="9"/></MeshVertex>
+<MeshVertex x="10" y="18" u="0.5195" v="0.5352"><Weight values="255" indices="9"/></MeshVertex>
+<MeshVertex x="19" y="18" u="0.5371" v="0.5352"><Weight values="255" indices="9"/></MeshVertex>
+<MeshVertex x="28" y="18" u="0.5547" v="0.5352"><Weight values="19125" indices="777"/></MeshVertex>
+<MeshVertex x="37" y="18" u="0.5723" v="0.5352"><Weight values="4590" indices="2307"/></MeshVertex>
+<MeshVertex x="46" y="18" u="0.5898" v="0.5352"><Weight values="2550" indices="515"/></MeshVertex>
+<MeshVertex x="55" y="18" u="0.6074" v="0.5352"><Weight values="27540" indices="515"/></MeshVertex>
+<MeshVertex x="64" y="18" u="0.625" v="0.5352"><Weight values="596955" indices="66306"/></MeshVertex>
+<MeshVertex x="-48.5" y="27" u="0.4053" v="0.5527"><Weight values="15810" indices="770"/></MeshVertex>
+<MeshVertex x="-39.5" y="27" u="0.4229" v="0.5527"><Weight values="19890" indices="515"/></MeshVertex>
+<MeshVertex x="-30.5" y="27" u="0.4404" v="0.5527"><Weight values="1530" indices="515"/></MeshVertex>
+<MeshVertex x="-21.5" y="27" u="0.458" v="0.5527"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-12.5" y="27" u="0.4756" v="0.5527"><Weight values="11220" indices="2307"/></MeshVertex>
+<MeshVertex x="-3.5" y="27" u="0.4932" v="0.5527"><Weight values="22950" indices="2307"/></MeshVertex>
+<MeshVertex x="5.5" y="27" u="0.5107" v="0.5527"><Weight values="22950" indices="2307"/></MeshVertex>
+<MeshVertex x="14.5" y="27" u="0.5283" v="0.5527"><Weight values="11220" indices="2307"/></MeshVertex>
+<MeshVertex x="23.5" y="27" u="0.5459" v="0.5527"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="32.5" y="27" u="0.5635" v="0.5527"><Weight values="1530" indices="515"/></MeshVertex>
+<MeshVertex x="41.5" y="27" u="0.5811" v="0.5527"><Weight values="19890" indices="515"/></MeshVertex>
+<MeshVertex x="50.5" y="27" u="0.5986" v="0.5527"><Weight values="15810" indices="770"/></MeshVertex>
+<MeshVertex x="-35" y="36" u="0.4316" v="0.5703"><Weight values="13260" indices="770"/></MeshVertex>
+<MeshVertex x="-26" y="36" u="0.4492" v="0.5703"><Weight values="32385" indices="515"/></MeshVertex>
+<MeshVertex x="-17" y="36" u="0.4668" v="0.5703"><Weight values="17850" indices="515"/></MeshVertex>
+<MeshVertex x="-8" y="36" u="0.4844" v="0.5703"><Weight values="10455" indices="515"/></MeshVertex>
+<MeshVertex x="1" y="36" u="0.502" v="0.5703"><Weight values="8415" indices="515"/></MeshVertex>
+<MeshVertex x="10" y="36" u="0.5195" v="0.5703"><Weight values="10455" indices="515"/></MeshVertex>
+<MeshVertex x="19" y="36" u="0.5371" v="0.5703"><Weight values="17850" indices="515"/></MeshVertex>
+<MeshVertex x="28" y="36" u="0.5547" v="0.5703"><Weight values="32385" indices="515"/></MeshVertex>
+<MeshVertex x="37" y="36" u="0.5723" v="0.5703"><Weight values="13260" indices="770"/></MeshVertex>
+<MeshVertex x="-12" y="-226" u="0.4766" v="0.0586"><Weight values="5865" indices="769"/></MeshVertex>
+<MeshVertex x="12" y="-226" u="0.5234" v="0.0586"><Weight values="5865" indices="769"/></MeshVertex>
+<MeshVertex x="-48" y="-214" u="0.4062" v="0.082"><Weight values="3315" indices="769"/></MeshVertex>
+<MeshVertex x="-36" y="-214" u="0.4297" v="0.082"><Weight values="31365" indices="259"/></MeshVertex>
+<MeshVertex x="-24" y="-214" u="0.4531" v="0.082"><Weight values="30855" indices="259"/></MeshVertex>
+<MeshVertex x="-12" y="-214" u="0.4766" v="0.082"><Weight values="30855" indices="259"/></MeshVertex>
+<MeshVertex x="0" y="-214" u="0.5" v="0.082"><Weight values="30855" indices="259"/></MeshVertex>
+<MeshVertex x="12" y="-214" u="0.5234" v="0.082"><Weight values="30855" indices="259"/></MeshVertex>
+<MeshVertex x="24" y="-214" u="0.5469" v="0.082"><Weight values="30855" indices="259"/></MeshVertex>
+<MeshVertex x="36" y="-214" u="0.5703" v="0.082"><Weight values="31365" indices="259"/></MeshVertex>
+<MeshVertex x="48" y="-214" u="0.5938" v="0.082"><Weight values="3315" indices="769"/></MeshVertex>
+<MeshVertex x="-48" y="-202" u="0.4062" v="0.1055"><Weight values="19125" indices="259"/></MeshVertex>
+<MeshVertex x="-24" y="-202" u="0.4531" v="0.1055"><Weight values="19125" indices="259"/></MeshVertex>
+<MeshVertex x="-12" y="-202" u="0.4766" v="0.1055"><Weight values="19125" indices="259"/></MeshVertex>
+<MeshVertex x="0" y="-202" u="0.5" v="0.1055"><Weight values="19125" indices="259"/></MeshVertex>
+<MeshVertex x="12" y="-202" u="0.5234" v="0.1055"><Weight values="19125" indices="259"/></MeshVertex>
+<MeshVertex x="24" y="-202" u="0.5469" v="0.1055"><Weight values="19125" indices="259"/></MeshVertex>
+<MeshVertex x="48" y="-202" u="0.5938" v="0.1055"><Weight values="19125" indices="259"/></MeshVertex>
+<MeshVertex x="-60" y="-190" u="0.3828" v="0.1289"><Weight values="7140" indices="259"/></MeshVertex>
+<MeshVertex x="-48" y="-190" u="0.4062" v="0.1289"><Weight values="7140" indices="259"/></MeshVertex>
+<MeshVertex x="-12" y="-190" u="0.4766" v="0.1289"><Weight values="7140" indices="259"/></MeshVertex>
+<MeshVertex x="12" y="-190" u="0.5234" v="0.1289"><Weight values="7140" indices="259"/></MeshVertex>
+<MeshVertex x="48" y="-190" u="0.5938" v="0.1289"><Weight values="7140" indices="259"/></MeshVertex>
+<MeshVertex x="60" y="-190" u="0.6172" v="0.1289"><Weight values="7140" indices="259"/></MeshVertex>
+<MeshVertex x="-60" y="-178" u="0.3828" v="0.1523"><Weight values="510" indices="259"/></MeshVertex>
+<MeshVertex x="-48" y="-178" u="0.4062" v="0.1523"><Weight values="510" indices="259"/></MeshVertex>
+<MeshVertex x="-36" y="-178" u="0.4297" v="0.1523"><Weight values="510" indices="259"/></MeshVertex>
+<MeshVertex x="-24" y="-178" u="0.4531" v="0.1523"><Weight values="510" indices="259"/></MeshVertex>
+<MeshVertex x="-12" y="-178" u="0.4766" v="0.1523"><Weight values="510" indices="259"/></MeshVertex>
+<MeshVertex x="0" y="-178" u="0.5" v="0.1523"><Weight values="510" indices="259"/></MeshVertex>
+<MeshVertex x="12" y="-178" u="0.5234" v="0.1523"><Weight values="510" indices="259"/></MeshVertex>
+<MeshVertex x="24" y="-178" u="0.5469" v="0.1523"><Weight values="510" indices="259"/></MeshVertex>
+<MeshVertex x="36" y="-178" u="0.5703" v="0.1523"><Weight values="510" indices="259"/></MeshVertex>
+<MeshVertex x="48" y="-178" u="0.5938" v="0.1523"><Weight values="510" indices="259"/></MeshVertex>
+<MeshVertex x="60" y="-178" u="0.6172" v="0.1523"><Weight values="510" indices="259"/></MeshVertex>
+<MeshVertex x="-72" y="-166" u="0.3594" v="0.1758"><Weight values="29070" indices="769"/></MeshVertex>
+<MeshVertex x="-60" y="-166" u="0.3828" v="0.1758"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-48" y="-166" u="0.4062" v="0.1758"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-36" y="-166" u="0.4297" v="0.1758"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-24" y="-166" u="0.4531" v="0.1758"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-12" y="-166" u="0.4766" v="0.1758"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="0" y="-166" u="0.5" v="0.1758"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="12" y="-166" u="0.5234" v="0.1758"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="24" y="-166" u="0.5469" v="0.1758"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="36" y="-166" u="0.5703" v="0.1758"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="48" y="-166" u="0.5938" v="0.1758"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="60" y="-166" u="0.6172" v="0.1758"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="72" y="-166" u="0.6406" v="0.1758"><Weight values="29070" indices="769"/></MeshVertex>
+<MeshVertex x="-60" y="-154" u="0.3828" v="0.1992"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-48" y="-154" u="0.4062" v="0.1992"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-36" y="-154" u="0.4297" v="0.1992"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-24" y="-154" u="0.4531" v="0.1992"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-12" y="-154" u="0.4766" v="0.1992"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="0" y="-154" u="0.5" v="0.1992"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="12" y="-154" u="0.5234" v="0.1992"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="24" y="-154" u="0.5469" v="0.1992"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="36" y="-154" u="0.5703" v="0.1992"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="48" y="-154" u="0.5938" v="0.1992"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="60" y="-154" u="0.6172" v="0.1992"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-92" y="-134" u="0.3203" v="0.2383"><Weight values="15555" indices="769"/></MeshVertex>
+<MeshVertex x="88" y="-134" u="0.6719" v="0.2383"><Weight values="20655" indices="769"/></MeshVertex>
+<MeshVertex x="-128" y="-122" u="0.25" v="0.2617"><Weight values="12750" indices="769"/></MeshVertex>
+<MeshVertex x="-116" y="-122" u="0.2734" v="0.2617"><Weight values="2040" indices="259"/></MeshVertex>
+<MeshVertex x="-104" y="-122" u="0.2969" v="0.2617"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-92" y="-122" u="0.3203" v="0.2617"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="88" y="-122" u="0.6719" v="0.2617"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="100" y="-122" u="0.6953" v="0.2617"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="112" y="-122" u="0.7188" v="0.2617"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="124" y="-122" u="0.7422" v="0.2617"><Weight values="21675" indices="769"/></MeshVertex>
+<MeshVertex x="-128" y="-110" u="0.25" v="0.2852"><Weight values="12750" indices="769"/></MeshVertex>
+<MeshVertex x="-116" y="-110" u="0.2734" v="0.2852"><Weight values="2040" indices="259"/></MeshVertex>
+<MeshVertex x="-104" y="-110" u="0.2969" v="0.2852"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="-92" y="-110" u="0.3203" v="0.2852"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="88" y="-110" u="0.6719" v="0.2852"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="100" y="-110" u="0.6953" v="0.2852"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="112" y="-110" u="0.7188" v="0.2852"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="124" y="-110" u="0.7422" v="0.2852"><Weight values="21675" indices="769"/></MeshVertex>
+<MeshVertex x="-92" y="-98" u="0.3203" v="0.3086"><Weight values="15555" indices="769"/></MeshVertex>
+<MeshVertex x="4" y="-98" u="0.5078" v="0.3086"><Weight values="19890" indices="1283"/></MeshVertex>
+<MeshVertex x="88" y="-98" u="0.6719" v="0.3086"><Weight values="20655" indices="769"/></MeshVertex>
+<MeshVertex x="175.788" y="6.6359" u="0.8433" v="0.513"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="174.0951" y="23.8246" u="0.84" v="0.5465"><Weight values="2805" indices="513"/></MeshVertex>
+<MeshVertex x="170.7255" y="40.7645" u="0.8334" v="0.5796"><Weight values="9435" indices="513"/></MeshVertex>
+<MeshVertex x="165.7118" y="57.2926" u="0.8237" v="0.6119"><Weight values="9435" indices="513"/></MeshVertex>
+<MeshVertex x="159.1021" y="73.2497" u="0.8107" v="0.6431"><Weight values="9435" indices="513"/></MeshVertex>
+<MeshVertex x="150.9602" y="88.4821" u="0.7948" v="0.6728"><Weight values="9435" indices="513"/></MeshVertex>
+<MeshVertex x="141.3645" y="102.8431" u="0.7761" v="0.7009"><Weight values="9435" indices="513"/></MeshVertex>
+<MeshVertex x="130.4074" y="116.1944" u="0.7547" v="0.7269"><Weight values="9435" indices="513"/></MeshVertex>
+<MeshVertex x="118.1944" y="128.4074" u="0.7308" v="0.7508"><Weight values="9435" indices="513"/></MeshVertex>
+<MeshVertex x="104.8431" y="139.3645" u="0.7048" v="0.7722"><Weight values="9435" indices="513"/></MeshVertex>
+<MeshVertex x="90.4821" y="148.9602" u="0.6767" v="0.7909"><Weight values="9435" indices="513"/></MeshVertex>
+<MeshVertex x="75.2497" y="157.1021" u="0.647" v="0.8068"><Weight values="9435" indices="513"/></MeshVertex>
+<MeshVertex x="59.2926" y="163.7118" u="0.6158" v="0.8197"><Weight values="9435" indices="513"/></MeshVertex>
+<MeshVertex x="42.7645" y="168.7255" u="0.5835" v="0.8295"><Weight values="9435" indices="513"/></MeshVertex>
+<MeshVertex x="25.8246" y="172.0951" u="0.5504" v="0.8361"><Weight values="9435" indices="513"/></MeshVertex>
+<MeshVertex x="8.6359" y="173.788" u="0.5169" v="0.8394"><Weight values="9435" indices="513"/></MeshVertex>
+<MeshVertex x="-8.6359" y="173.788" u="0.4831" v="0.8394"><Weight values="9435" indices="513"/></MeshVertex>
+<MeshVertex x="-25.8246" y="172.0951" u="0.4496" v="0.8361"><Weight values="9435" indices="513"/></MeshVertex>
+<MeshVertex x="-42.7645" y="168.7255" u="0.4165" v="0.8295"><Weight values="9435" indices="513"/></MeshVertex>
+<MeshVertex x="-59.2926" y="163.7118" u="0.3842" v="0.8197"><Weight values="9435" indices="513"/></MeshVertex>
+<MeshVertex x="-75.2497" y="157.1021" u="0.353" v="0.8068"><Weight values="9435" indices="513"/></MeshVertex>
+<MeshVertex x="-90.4821" y="148.9602" u="0.3233" v="0.7909"><Weight values="9435" indices="513"/></MeshVertex>
+<MeshVertex x="-104.8431" y="139.3645" u="0.2952" v="0.7722"><Weight values="9435" indices="513"/></MeshVertex>
+<MeshVertex x="-118.1944" y="128.4074" u="0.2692" v="0.7508"><Weight values="9435" indices="513"/></MeshVertex>
+<MeshVertex x="-130.4074" y="116.1944" u="0.2453" v="0.7269"><Weight values="9435" indices="513"/></MeshVertex>
+<MeshVertex x="-141.3645" y="102.8431" u="0.2239" v="0.7009"><Weight values="9435" indices="513"/></MeshVertex>
+<MeshVertex x="-150.9602" y="88.4821" u="0.2052" v="0.6728"><Weight values="9435" indices="513"/></MeshVertex>
+<MeshVertex x="-159.1021" y="73.2497" u="0.1893" v="0.6431"><Weight values="9435" indices="513"/></MeshVertex>
+<MeshVertex x="-165.7118" y="57.2926" u="0.1763" v="0.6119"><Weight values="9435" indices="513"/></MeshVertex>
+<MeshVertex x="-170.7255" y="40.7645" u="0.1666" v="0.5796"><Weight values="9435" indices="513"/></MeshVertex>
+<MeshVertex x="-174.0951" y="23.8246" u="0.16" v="0.5465"><Weight values="2805" indices="513"/></MeshVertex>
+<MeshVertex x="-175.788" y="6.6359" u="0.1567" v="0.513"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-175.788" y="-10.6359" u="0.1567" v="0.4792"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-174.0951" y="-27.8246" u="0.16" v="0.4457"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-170.7255" y="-44.7645" u="0.1666" v="0.4126"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-165.7118" y="-61.2926" u="0.1763" v="0.3803"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-159.1021" y="-77.2497" u="0.1893" v="0.3491"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-150.9602" y="-92.4821" u="0.2052" v="0.3194"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-141.3645" y="-106.8431" u="0.2239" v="0.2913"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-118.1944" y="-132.4074" u="0.2692" v="0.2414"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-104.8431" y="-143.3645" u="0.2952" v="0.22"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-90.4821" y="-152.9602" u="0.3233" v="0.2012"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-75.2497" y="-161.1021" u="0.353" v="0.1853"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-42.7645" y="-172.7255" u="0.4165" v="0.1626"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="42.7645" y="-172.7255" u="0.5835" v="0.1626"><Weight values="255" indices="3"/></MeshVertex>
+<MeshVertex x="75.2497" y="-161.1021" u="0.647" v="0.1853"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="90.4821" y="-152.9602" u="0.6767" v="0.2012"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="104.8431" y="-143.3645" u="0.7048" v="0.22"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="118.1944" y="-132.4074" u="0.7308" v="0.2414"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="130.4074" y="-120.1944" u="0.7547" v="0.2652"><Weight values="4335" indices="769"/></MeshVertex>
+<MeshVertex x="141.3645" y="-106.8431" u="0.7761" v="0.2913"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="150.9602" y="-92.4821" u="0.7948" v="0.3194"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="159.1021" y="-77.2497" u="0.8107" v="0.3491"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="165.7118" y="-61.2926" u="0.8237" v="0.3803"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="170.7255" y="-44.7645" u="0.8334" v="0.4126"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="174.0951" y="-27.8246" u="0.84" v="0.4457"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="175.788" y="-10.6359" u="0.8433" v="0.4792"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="96" y="-138" u="0.6875" v="0.2305"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-125" y="-104" u="0.2559" v="0.2969"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="130" y="-104" u="0.7539" v="0.2969"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-133.5" y="-87" u="0.2393" v="0.3301"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-116.5" y="-87" u="0.2725" v="0.3301"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-99.5" y="-87" u="0.3057" v="0.3301"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="87.5" y="-87" u="0.6709" v="0.3301"><Weight values="1020" indices="769"/></MeshVertex>
+<MeshVertex x="104.5" y="-87" u="0.7041" v="0.3301"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="121.5" y="-87" u="0.7373" v="0.3301"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="138.5" y="-87" u="0.7705" v="0.3301"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-142" y="-70" u="0.2227" v="0.3633"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-125" y="-70" u="0.2559" v="0.3633"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-108" y="-70" u="0.2891" v="0.3633"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-91" y="-70" u="0.3223" v="0.3633"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="96" y="-70" u="0.6875" v="0.3633"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="113" y="-70" u="0.7207" v="0.3633"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="130" y="-70" u="0.7539" v="0.3633"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="147" y="-70" u="0.7871" v="0.3633"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-150.5" y="-53" u="0.2061" v="0.3965"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-133.5" y="-53" u="0.2393" v="0.3965"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-116.5" y="-53" u="0.2725" v="0.3965"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-99.5" y="-53" u="0.3057" v="0.3965"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="104.5" y="-53" u="0.7041" v="0.3965"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="121.5" y="-53" u="0.7373" v="0.3965"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="138.5" y="-53" u="0.7705" v="0.3965"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="155.5" y="-53" u="0.8037" v="0.3965"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-159" y="-36" u="0.1895" v="0.4297"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-142" y="-36" u="0.2227" v="0.4297"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-125" y="-36" u="0.2559" v="0.4297"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-108" y="-36" u="0.2891" v="0.4297"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-91" y="-36" u="0.3223" v="0.4297"><Weight values="765" indices="769"/></MeshVertex>
+<MeshVertex x="96" y="-36" u="0.6875" v="0.4297"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="113" y="-36" u="0.7207" v="0.4297"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="130" y="-36" u="0.7539" v="0.4297"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="147" y="-36" u="0.7871" v="0.4297"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="164" y="-36" u="0.8203" v="0.4297"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-150.5" y="-19" u="0.2061" v="0.4629"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-133.5" y="-19" u="0.2393" v="0.4629"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-116.5" y="-19" u="0.2725" v="0.4629"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-99.5" y="-19" u="0.3057" v="0.4629"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="87.5" y="-19" u="0.6709" v="0.4629"><Weight values="3570" indices="769"/></MeshVertex>
+<MeshVertex x="104.5" y="-19" u="0.7041" v="0.4629"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="121.5" y="-19" u="0.7373" v="0.4629"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="138.5" y="-19" u="0.7705" v="0.4629"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="155.5" y="-19" u="0.8037" v="0.4629"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-159" y="-2" u="0.1895" v="0.4961"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-142" y="-2" u="0.2227" v="0.4961"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-125" y="-2" u="0.2559" v="0.4961"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-108" y="-2" u="0.2891" v="0.4961"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-91" y="-2" u="0.3223" v="0.4961"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="96" y="-2" u="0.6875" v="0.4961"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="113" y="-2" u="0.7207" v="0.4961"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="130" y="-2" u="0.7539" v="0.4961"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="147" y="-2" u="0.7871" v="0.4961"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="164" y="-2" u="0.8203" v="0.4961"><Weight values="255" indices="1"/></MeshVertex>
+<MeshVertex x="-150.5" y="15" u="0.2061" v="0.5293"><Weight values="2040" indices="513"/></MeshVertex>
+<MeshVertex x="-133.5" y="15" u="0.2393" v="0.5293"><Weight values="8670" indices="513"/></MeshVertex>
+<MeshVertex x="-116.5" y="15" u="0.2725" v="0.5293"><Weight values="18870" indices="513"/></MeshVertex>
+<MeshVertex x="-99.5" y="15" u="0.3057" v="0.5293"><Weight values="30600" indices="513"/></MeshVertex>
+<MeshVertex x="-82.5" y="15" u="0.3389" v="0.5293"><Weight values="22695" indices="258"/></MeshVertex>
+<MeshVertex x="70.5" y="15" u="0.6377" v="0.5293"><Weight values="145605" indices="196866"/></MeshVertex>
+<MeshVertex x="87.5" y="15" u="0.6709" v="0.5293"><Weight values="26265" indices="258"/></MeshVertex>
+<MeshVertex x="104.5" y="15" u="0.7041" v="0.5293"><Weight values="27030" indices="513"/></MeshVertex>
+<MeshVertex x="121.5" y="15" u="0.7373" v="0.5293"><Weight values="15555" indices="513"/></MeshVertex>
+<MeshVertex x="138.5" y="15" u="0.7705" v="0.5293"><Weight values="6375" indices="513"/></MeshVertex>
+<MeshVertex x="155.5" y="15" u="0.8037" v="0.5293"><Weight values="1020" indices="513"/></MeshVertex>
+<MeshVertex x="-159" y="32" u="0.1895" v="0.5625"><Weight values="8925" indices="258"/></MeshVertex>
+<MeshVertex x="-142" y="32" u="0.2227" v="0.5625"><Weight values="1020" indices="258"/></MeshVertex>
+<MeshVertex x="-125" y="32" u="0.2559" v="0.5625"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="-108" y="32" u="0.2891" v="0.5625"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="-91" y="32" u="0.3223" v="0.5625"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="-74" y="32" u="0.3555" v="0.5625"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="-57" y="32" u="0.3887" v="0.5625"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="62" y="32" u="0.6211" v="0.5625"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="79" y="32" u="0.6543" v="0.5625"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="96" y="32" u="0.6875" v="0.5625"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="113" y="32" u="0.7207" v="0.5625"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="130" y="32" u="0.7539" v="0.5625"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="147" y="32" u="0.7871" v="0.5625"><Weight values="2040" indices="258"/></MeshVertex>
+<MeshVertex x="164" y="32" u="0.8203" v="0.5625"><Weight values="25245" indices="258"/></MeshVertex>
+<MeshVertex x="-150.5" y="49" u="0.2061" v="0.5957"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="-133.5" y="49" u="0.2393" v="0.5957"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="-116.5" y="49" u="0.2725" v="0.5957"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="-99.5" y="49" u="0.3057" v="0.5957"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="-82.5" y="49" u="0.3389" v="0.5957"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="-65.5" y="49" u="0.3721" v="0.5957"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="-48.5" y="49" u="0.4053" v="0.5957"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="-31.5" y="49" u="0.4385" v="0.5957"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="-14.5" y="49" u="0.4717" v="0.5957"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="2.5" y="49" u="0.5049" v="0.5957"><Weight values="765" indices="770"/></MeshVertex>
+<MeshVertex x="19.5" y="49" u="0.5381" v="0.5957"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="36.5" y="49" u="0.5713" v="0.5957"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="53.5" y="49" u="0.6045" v="0.5957"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="70.5" y="49" u="0.6377" v="0.5957"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="87.5" y="49" u="0.6709" v="0.5957"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="104.5" y="49" u="0.7041" v="0.5957"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="121.5" y="49" u="0.7373" v="0.5957"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="138.5" y="49" u="0.7705" v="0.5957"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="155.5" y="49" u="0.8037" v="0.5957"><Weight values="5355" indices="258"/></MeshVertex>
+<MeshVertex x="-142" y="66" u="0.2227" v="0.6289"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="-125" y="66" u="0.2559" v="0.6289"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="-108" y="66" u="0.2891" v="0.6289"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="-91" y="66" u="0.3223" v="0.6289"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="-74" y="66" u="0.3555" v="0.6289"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="-57" y="66" u="0.3887" v="0.6289"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="-40" y="66" u="0.4219" v="0.6289"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="-23" y="66" u="0.4551" v="0.6289"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="-6" y="66" u="0.4883" v="0.6289"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="11" y="66" u="0.5215" v="0.6289"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="28" y="66" u="0.5547" v="0.6289"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="45" y="66" u="0.5879" v="0.6289"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="62" y="66" u="0.6211" v="0.6289"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="79" y="66" u="0.6543" v="0.6289"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="96" y="66" u="0.6875" v="0.6289"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="113" y="66" u="0.7207" v="0.6289"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="130" y="66" u="0.7539" v="0.6289"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="147" y="66" u="0.7871" v="0.6289"><Weight values="1785" indices="258"/></MeshVertex>
+<MeshVertex x="-133.5" y="83" u="0.2393" v="0.6621"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="-116.5" y="83" u="0.2725" v="0.6621"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="-99.5" y="83" u="0.3057" v="0.6621"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="-82.5" y="83" u="0.3389" v="0.6621"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="-65.5" y="83" u="0.3721" v="0.6621"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="-48.5" y="83" u="0.4053" v="0.6621"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="-31.5" y="83" u="0.4385" v="0.6621"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="-14.5" y="83" u="0.4717" v="0.6621"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="2.5" y="83" u="0.5049" v="0.6621"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="19.5" y="83" u="0.5381" v="0.6621"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="36.5" y="83" u="0.5713" v="0.6621"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="53.5" y="83" u="0.6045" v="0.6621"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="70.5" y="83" u="0.6377" v="0.6621"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="87.5" y="83" u="0.6709" v="0.6621"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="104.5" y="83" u="0.7041" v="0.6621"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="121.5" y="83" u="0.7373" v="0.6621"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="138.5" y="83" u="0.7705" v="0.6621"><Weight values="2805" indices="258"/></MeshVertex>
+<MeshVertex x="-125" y="100" u="0.2559" v="0.6953"><Weight values="1020" indices="258"/></MeshVertex>
+<MeshVertex x="-108" y="100" u="0.2891" v="0.6953"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="-91" y="100" u="0.3223" v="0.6953"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="-74" y="100" u="0.3555" v="0.6953"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="-57" y="100" u="0.3887" v="0.6953"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="-40" y="100" u="0.4219" v="0.6953"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="-23" y="100" u="0.4551" v="0.6953"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="-6" y="100" u="0.4883" v="0.6953"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="11" y="100" u="0.5215" v="0.6953"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="28" y="100" u="0.5547" v="0.6953"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="45" y="100" u="0.5879" v="0.6953"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="62" y="100" u="0.6211" v="0.6953"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="79" y="100" u="0.6543" v="0.6953"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="96" y="100" u="0.6875" v="0.6953"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="113" y="100" u="0.7207" v="0.6953"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="130" y="100" u="0.7539" v="0.6953"><Weight values="10455" indices="258"/></MeshVertex>
+<MeshVertex x="-116.5" y="117" u="0.2725" v="0.7285"><Weight values="15300" indices="258"/></MeshVertex>
+<MeshVertex x="-99.5" y="117" u="0.3057" v="0.7285"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="-82.5" y="117" u="0.3389" v="0.7285"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="-65.5" y="117" u="0.3721" v="0.7285"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="-48.5" y="117" u="0.4053" v="0.7285"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="-31.5" y="117" u="0.4385" v="0.7285"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="-14.5" y="117" u="0.4717" v="0.7285"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="2.5" y="117" u="0.5049" v="0.7285"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="19.5" y="117" u="0.5381" v="0.7285"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="36.5" y="117" u="0.5713" v="0.7285"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="53.5" y="117" u="0.6045" v="0.7285"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="70.5" y="117" u="0.6377" v="0.7285"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="87.5" y="117" u="0.6709" v="0.7285"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="104.5" y="117" u="0.7041" v="0.7285"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="-91" y="134" u="0.3223" v="0.7617"><Weight values="5355" indices="258"/></MeshVertex>
+<MeshVertex x="-74" y="134" u="0.3555" v="0.7617"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="-57" y="134" u="0.3887" v="0.7617"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="-40" y="134" u="0.4219" v="0.7617"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="-23" y="134" u="0.4551" v="0.7617"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="-6" y="134" u="0.4883" v="0.7617"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="11" y="134" u="0.5215" v="0.7617"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="28" y="134" u="0.5547" v="0.7617"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="45" y="134" u="0.5879" v="0.7617"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="62" y="134" u="0.6211" v="0.7617"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="79" y="134" u="0.6543" v="0.7617"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="96" y="134" u="0.6875" v="0.7617"><Weight values="15045" indices="258"/></MeshVertex>
+<MeshVertex x="-65.5" y="151" u="0.3721" v="0.7949"><Weight values="14790" indices="258"/></MeshVertex>
+<MeshVertex x="-48.5" y="151" u="0.4053" v="0.7949"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="-31.5" y="151" u="0.4385" v="0.7949"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="-14.5" y="151" u="0.4717" v="0.7949"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="2.5" y="151" u="0.5049" v="0.7949"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="19.5" y="151" u="0.5381" v="0.7949"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="36.5" y="151" u="0.5713" v="0.7949"><Weight values="255" indices="2"/></MeshVertex>
+<MeshVertex x="53.5" y="151" u="0.6045" v="0.7949"><Weight values="2040" indices="258"/></MeshVertex>
+<Skin tx="256" ty="256" name="Skin">
+<Tendon boneId="0:101" tx="256" ty="256" name="Frame"/>
+<Tendon boneId="0:102" tx="256" ty="440" name="Body"/>
+<Tendon boneId="0:104" tx="256" ty="240" name="Head"/>
+<Tendon boneId="0:105" tx="221" ty="155" name="BrowL"/>
+<Tendon boneId="0:106" tx="285" ty="155" name="BrowR"/>
+<Tendon boneId="0:108" tx="221" ty="171.5" name="LidLx"/>
+<Tendon boneId="0:110" tx="282" ty="171.5" name="LidRx"/>
+<Tendon boneId="0:111" tx="256" ty="205" name="Cheeks"/>
+<Tendon boneId="0:112" tx="258" ty="239" name="Jaw"/>
+</Skin>
+</Mesh>
+</Image>
+<StateMachine name="Van Dam" id="0:114">
+<StateMachineLayer name="Idle" id="0:133">
+  <AnyState x="400" y="-100"/><ExitState x="560" y="-100"/>
+  <EntryState x="0" y="0"><StateTransition stateToId="0:127"/></EntryState>
+  <AnimationState x="200" y="0" animationId="0:121" id="0:127"/>
+</StateMachineLayer>
+<StateMachineLayer name="React" id="0:134">
+  <AnyState x="200" y="-160">
+    <StateTransition stateToId="0:129" duration="120"><TransitionViewModelCondition><TransitionPropertyViewModelComparator><BindablePropertyTrigger><DataBindContext sourcePathIds="0:115-0:117" propertyKey="686"/></BindablePropertyTrigger></TransitionPropertyViewModelComparator><TransitionValueTriggerComparator/></TransitionViewModelCondition></StateTransition>
+    <StateTransition stateToId="0:130" duration="160"><TransitionViewModelCondition><TransitionPropertyViewModelComparator><BindablePropertyTrigger><DataBindContext sourcePathIds="0:115-0:118" propertyKey="686"/></BindablePropertyTrigger></TransitionPropertyViewModelComparator><TransitionValueTriggerComparator/></TransitionViewModelCondition></StateTransition>
+  </AnyState>
+  <ExitState x="560" y="-160"/>
+  <EntryState x="0" y="0"><StateTransition stateToId="0:128"/></EntryState>
+  <AnimationState x="200" y="0" animationId="0:122" id="0:128"/>
+  <AnimationState x="420" y="-60" animationId="0:123" reset="true" id="0:129">
+    <StateTransition stateToId="0:128" duration="200" enableExitTime="true" exitTimeIsPercetange="true" exitTime="100"/>
+  </AnimationState>
+  <AnimationState x="420" y="80" animationId="0:124" reset="true" id="0:130">
+    <StateTransition stateToId="0:128" duration="250" enableExitTime="true" exitTimeIsPercetange="true" exitTime="100"/>
+  </AnimationState>
+</StateMachineLayer>
+<StateMachineLayer name="Talk" id="0:135">
+  <AnyState x="400" y="-100"/><ExitState x="560" y="-100"/>
+  <EntryState x="0" y="0"><StateTransition stateToId="0:131"/></EntryState>
+  <AnimationState x="200" y="0" animationId="0:125" id="0:131">
+    <StateTransition stateToId="0:132" duration="150"><TransitionViewModelCondition><TransitionPropertyViewModelComparator><BindablePropertyBoolean><DataBindContext sourcePathIds="0:115-0:119" propertyKey="634"/></BindablePropertyBoolean></TransitionPropertyViewModelComparator><TransitionValueBooleanComparator value="true"/></TransitionViewModelCondition></StateTransition>
+  </AnimationState>
+  <AnimationState x="200" y="140" animationId="0:126" id="0:132">
+    <StateTransition stateToId="0:131" duration="250"><TransitionViewModelCondition><TransitionPropertyViewModelComparator><BindablePropertyBoolean><DataBindContext sourcePathIds="0:115-0:119" propertyKey="634"/></BindablePropertyBoolean></TransitionPropertyViewModelComparator><TransitionValueBooleanComparator value="false"/></TransitionViewModelCondition></StateTransition>
+  </AnimationState>
+</StateMachineLayer>
+</StateMachine>
+<LinearAnimation loopValue="loop" duration="480" name="idle" id="0:121">
+<KeyedObject objectId="0:102">
+<KeyedProperty property="scaleY">
+<KeyFrameDouble value="1" frame="0" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="1.012" frame="120" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="1" frame="240" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="1.012" frame="360" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="1" frame="480" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+</KeyedProperty>
+<KeyedProperty property="scaleX">
+<KeyFrameDouble value="1" frame="0" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="1.004" frame="120" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="1" frame="240" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="1.004" frame="360" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="1" frame="480" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+</KeyedProperty>
+</KeyedObject>
+<KeyedObject objectId="0:103">
+<KeyedProperty property="y">
+<KeyFrameDouble value="240" frame="0" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="238.4" frame="120" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="240" frame="240" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="238.4" frame="360" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="240" frame="480" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+</KeyedProperty>
+<KeyedProperty property="x">
+<KeyFrameDouble value="256" frame="0" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="257.8" frame="190" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="254.6" frame="350" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="256" frame="480" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+</KeyedProperty>
+<KeyedProperty property="rotation">
+<KeyFrameDouble value="0" frame="0" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="0.014" frame="170" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="-0.011" frame="340" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="0" frame="480" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+</KeyedProperty>
+</KeyedObject>
+<KeyedObject objectId="0:107">
+<KeyedProperty property="scaleY">
+<KeyFrameDouble value="1" frame="0" interpolationType="hold"/>
+<KeyFrameDouble value="1" frame="146" interpolationType="cubic"><CubicEaseInterpolator x1="0.5" y1="0" x2="1" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="0.05" frame="151" interpolationType="hold"/>
+<KeyFrameDouble value="0.05" frame="153" interpolationType="cubic"><CubicEaseInterpolator x1="0" y1="0" x2="0.3" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="1" frame="161" interpolationType="hold"/>
+<KeyFrameDouble value="1" frame="396" interpolationType="cubic"><CubicEaseInterpolator x1="0.5" y1="0" x2="1" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="0.05" frame="401" interpolationType="hold"/>
+<KeyFrameDouble value="0.05" frame="403" interpolationType="cubic"><CubicEaseInterpolator x1="0" y1="0" x2="0.3" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="1" frame="411" interpolationType="hold"/>
+<KeyFrameDouble value="1" frame="480" interpolationType="hold"/>
+</KeyedProperty>
+</KeyedObject>
+<KeyedObject objectId="0:109">
+<KeyedProperty property="scaleY">
+<KeyFrameDouble value="1" frame="0" interpolationType="hold"/>
+<KeyFrameDouble value="1" frame="146" interpolationType="cubic"><CubicEaseInterpolator x1="0.5" y1="0" x2="1" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="0.05" frame="151" interpolationType="hold"/>
+<KeyFrameDouble value="0.05" frame="153" interpolationType="cubic"><CubicEaseInterpolator x1="0" y1="0" x2="0.3" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="1" frame="161" interpolationType="hold"/>
+<KeyFrameDouble value="1" frame="396" interpolationType="cubic"><CubicEaseInterpolator x1="0.5" y1="0" x2="1" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="0.05" frame="401" interpolationType="hold"/>
+<KeyFrameDouble value="0.05" frame="403" interpolationType="cubic"><CubicEaseInterpolator x1="0" y1="0" x2="0.3" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="1" frame="411" interpolationType="hold"/>
+<KeyFrameDouble value="1" frame="480" interpolationType="hold"/>
+</KeyedProperty>
+</KeyedObject>
+<KeyedObject objectId="0:113">
+<KeyedProperty property="opacity">
+<KeyFrameDouble value="0" frame="0" interpolationType="hold"/>
+<KeyFrameDouble value="0" frame="149" interpolationType="linear"/>
+<KeyFrameDouble value="1" frame="151" interpolationType="hold"/>
+<KeyFrameDouble value="1" frame="153" interpolationType="linear"/>
+<KeyFrameDouble value="0" frame="155" interpolationType="hold"/>
+<KeyFrameDouble value="0" frame="399" interpolationType="linear"/>
+<KeyFrameDouble value="1" frame="401" interpolationType="hold"/>
+<KeyFrameDouble value="1" frame="403" interpolationType="linear"/>
+<KeyFrameDouble value="0" frame="405" interpolationType="hold"/>
+<KeyFrameDouble value="0" frame="480" interpolationType="hold"/>
+</KeyedProperty>
+</KeyedObject>
+</LinearAnimation>
+<LinearAnimation duration="1" name="rest" id="0:122">
+<KeyedObject objectId="0:104">
+<KeyedProperty property="x">
+<KeyFrameDouble value="0" frame="0" interpolationType="hold"/>
+</KeyedProperty>
+<KeyedProperty property="y">
+<KeyFrameDouble value="0" frame="0" interpolationType="hold"/>
+</KeyedProperty>
+<KeyedProperty property="rotation">
+<KeyFrameDouble value="0" frame="0" interpolationType="hold"/>
+</KeyedProperty>
+<KeyedProperty property="scaleY">
+<KeyFrameDouble value="1" frame="0" interpolationType="hold"/>
+</KeyedProperty>
+</KeyedObject>
+<KeyedObject objectId="0:105">
+<KeyedProperty property="y">
+<KeyFrameDouble value="-85" frame="0" interpolationType="hold"/>
+</KeyedProperty>
+</KeyedObject>
+<KeyedObject objectId="0:106">
+<KeyedProperty property="y">
+<KeyFrameDouble value="-85" frame="0" interpolationType="hold"/>
+</KeyedProperty>
+</KeyedObject>
+<KeyedObject objectId="0:108">
+<KeyedProperty property="scaleY">
+<KeyFrameDouble value="1" frame="0" interpolationType="hold"/>
+</KeyedProperty>
+</KeyedObject>
+<KeyedObject objectId="0:110">
+<KeyedProperty property="scaleY">
+<KeyFrameDouble value="1" frame="0" interpolationType="hold"/>
+</KeyedProperty>
+</KeyedObject>
+<KeyedObject objectId="0:111">
+<KeyedProperty property="y">
+<KeyFrameDouble value="-35" frame="0" interpolationType="hold"/>
+</KeyedProperty>
+<KeyedProperty property="scaleX">
+<KeyFrameDouble value="1" frame="0" interpolationType="hold"/>
+</KeyedProperty>
+</KeyedObject>
+<KeyedObject objectId="0:120">
+<KeyedProperty property="opacity">
+<KeyFrameDouble value="0" frame="0" interpolationType="hold"/>
+</KeyedProperty>
+</KeyedObject>
+</LinearAnimation>
+<LinearAnimation duration="96" name="happy" id="0:123">
+<KeyedObject objectId="0:104">
+<KeyedProperty property="x">
+<KeyFrameDouble value="0" frame="0" interpolationType="hold"/>
+</KeyedProperty>
+<KeyedProperty property="y">
+<KeyFrameDouble value="0" frame="0" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="4.2" frame="10" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="-0.8" frame="22" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="2.8" frame="34" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="0" frame="48" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="0" frame="96" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+</KeyedProperty>
+<KeyedProperty property="rotation">
+<KeyFrameDouble value="0" frame="0" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="-0.012" frame="10" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="0.008" frame="34" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="0" frame="60" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="0" frame="96" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+</KeyedProperty>
+<KeyedProperty property="scaleY">
+<KeyFrameDouble value="1" frame="0" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="0.992" frame="10" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="1.002" frame="22" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="0.995" frame="34" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="1" frame="48" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="1" frame="96" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+</KeyedProperty>
+</KeyedObject>
+<KeyedObject objectId="0:105">
+<KeyedProperty property="y">
+<KeyFrameDouble value="-85" frame="0" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="-87" frame="14" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="-87" frame="64" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="-85" frame="92" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+</KeyedProperty>
+</KeyedObject>
+<KeyedObject objectId="0:106">
+<KeyedProperty property="y">
+<KeyFrameDouble value="-85" frame="0" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="-87" frame="14" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="-87" frame="64" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="-85" frame="92" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+</KeyedProperty>
+</KeyedObject>
+<KeyedObject objectId="0:108">
+<KeyedProperty property="scaleY">
+<KeyFrameDouble value="1" frame="0" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="0.66" frame="14" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="0.66" frame="64" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="1" frame="92" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+</KeyedProperty>
+</KeyedObject>
+<KeyedObject objectId="0:110">
+<KeyedProperty property="scaleY">
+<KeyFrameDouble value="1" frame="0" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="0.66" frame="14" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="0.66" frame="64" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="1" frame="92" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+</KeyedProperty>
+</KeyedObject>
+<KeyedObject objectId="0:111">
+<KeyedProperty property="y">
+<KeyFrameDouble value="-35" frame="0" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="-39" frame="14" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="-39" frame="64" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="-35" frame="92" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+</KeyedProperty>
+<KeyedProperty property="scaleX">
+<KeyFrameDouble value="1" frame="0" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="1.04" frame="14" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="1.04" frame="64" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="1" frame="92" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+</KeyedProperty>
+</KeyedObject>
+<KeyedObject objectId="0:120">
+<KeyedProperty property="opacity">
+<KeyFrameDouble value="0" frame="0" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="0.55" frame="18" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="0.4" frame="64" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="0" frame="96" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+</KeyedProperty>
+</KeyedObject>
+</LinearAnimation>
+<LinearAnimation duration="132" name="hmm" id="0:124">
+<KeyedObject objectId="0:104">
+<KeyedProperty property="x">
+<KeyFrameDouble value="0" frame="0" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="-2.5" frame="22" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="-2.5" frame="104" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="0" frame="130" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+</KeyedProperty>
+<KeyedProperty property="y">
+<KeyFrameDouble value="0" frame="0" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="1" frame="22" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="1" frame="104" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="0" frame="130" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+</KeyedProperty>
+<KeyedProperty property="rotation">
+<KeyFrameDouble value="0" frame="0" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="0.042" frame="22" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="0.042" frame="104" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="0" frame="130" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+</KeyedProperty>
+<KeyedProperty property="scaleY">
+<KeyFrameDouble value="1" frame="0" interpolationType="hold"/>
+</KeyedProperty>
+</KeyedObject>
+<KeyedObject objectId="0:105">
+<KeyedProperty property="y">
+<KeyFrameDouble value="-85" frame="0" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="-83" frame="18" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="-83" frame="104" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="-85" frame="126" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+</KeyedProperty>
+</KeyedObject>
+<KeyedObject objectId="0:106">
+<KeyedProperty property="y">
+<KeyFrameDouble value="-85" frame="0" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="-92" frame="14" interpolationType="cubic"><CubicEaseInterpolator x1="0.34" y1="1.56" x2="0.64" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="-91" frame="34" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="-91" frame="104" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="-85" frame="126" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+</KeyedProperty>
+</KeyedObject>
+<KeyedObject objectId="0:108">
+<KeyedProperty property="scaleY">
+<KeyFrameDouble value="1" frame="0" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="0.6" frame="18" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="0.6" frame="104" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="1" frame="126" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+</KeyedProperty>
+</KeyedObject>
+<KeyedObject objectId="0:110">
+<KeyedProperty property="scaleY">
+<KeyFrameDouble value="1" frame="0" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="1.1" frame="14" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="1.1" frame="104" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="1" frame="126" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+</KeyedProperty>
+</KeyedObject>
+<KeyedObject objectId="0:111">
+<KeyedProperty property="y">
+<KeyFrameDouble value="-35" frame="0" interpolationType="hold"/>
+</KeyedProperty>
+<KeyedProperty property="scaleX">
+<KeyFrameDouble value="1" frame="0" interpolationType="hold"/>
+</KeyedProperty>
+</KeyedObject>
+<KeyedObject objectId="0:120">
+<KeyedProperty property="opacity">
+<KeyFrameDouble value="0" frame="0" interpolationType="hold"/>
+</KeyedProperty>
+</KeyedObject>
+</LinearAnimation>
+<LinearAnimation duration="1" name="quiet" id="0:125">
+<KeyedObject objectId="0:112">
+<KeyedProperty property="y">
+<KeyFrameDouble value="-1" frame="0" interpolationType="hold"/>
+</KeyedProperty>
+<KeyedProperty property="scaleY">
+<KeyFrameDouble value="1" frame="0" interpolationType="hold"/>
+</KeyedProperty>
+</KeyedObject>
+</LinearAnimation>
+<LinearAnimation loopValue="loop" duration="84" name="talk" id="0:126">
+<KeyedObject objectId="0:112">
+<KeyedProperty property="y">
+<KeyFrameDouble value="-1" frame="0" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="3.2" frame="6" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="0" frame="11" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="2.2" frame="18" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="-0.8" frame="24" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="4" frame="33" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="0.2" frame="40" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="2.4" frame="47" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="-1" frame="54" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="3.4" frame="63" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="-0.2" frame="71" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="1.4" frame="78" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="-1" frame="84" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+</KeyedProperty>
+<KeyedProperty property="scaleY">
+<KeyFrameDouble value="1" frame="0" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="1.04" frame="33" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="1" frame="47" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="1.03" frame="63" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+<KeyFrameDouble value="1" frame="84" interpolationType="cubic"><CubicEaseInterpolator x1="0.45" y1="0" x2="0.55" y2="1"/></KeyFrameDouble>
+</KeyedProperty>
+</KeyedObject>
+</LinearAnimation>
+</Artboard>
+<ImageAsset file="../../../assets/vandam.jpg" width="512" height="512" name="vandam" id="0:60"/>
+<ViewModel defaultInstanceId="0:116" name="VanDam" id="0:115">
+  <ViewModelPropertyTrigger name="happy" id="0:117"/>
+  <ViewModelPropertyTrigger name="hmm" id="0:118"/>
+  <ViewModelPropertyBoolean name="talk" id="0:119"/>
+  <ViewModelInstance exports="true" name="Default" id="0:116">
+    <ViewModelInstanceTrigger viewModelPropertyId="0:117"/>
+    <ViewModelInstanceTrigger viewModelPropertyId="0:118"/>
+    <ViewModelInstanceBoolean propertyValue="false" viewModelPropertyId="0:119"/>
+  </ViewModelInstance>
+</ViewModel>
+</Rive>
