@@ -76,6 +76,11 @@
           <span class="streak-note" id="streak-note">Speel vandaag om je streak te houden</span>
         </div>
         <div class="week-strip" id="week-strip"></div>
+        <!-- gemiste dagzaken van de afgelopen zeven dagen (1.6) -->
+        <div class="missed-row" id="missed-row" hidden>
+          <div class="missed-head"><span class="missed-label">Gemiste dagzaken</span><span class="missed-note">Telt als zaak, niet voor je streak</span></div>
+          <div class="missed-list" id="missed-list"></div>
+        </div>
       </div>
 
       <div class="home-card quest-card" id="menu-quests">
@@ -381,6 +386,16 @@
       <div class="results-ledger" id="results-ledger" hidden></div>
       <div class="mentor-remark" id="results-mentor" hidden></div>
       <p class="results-description" id="results-description"></p>
+
+      <!-- Zo zat het (1.6): de beslissende verklaringen en het bewijsstuk; pas na het oplossen gevuld, bij openen -->
+      <details class="results-afloop" id="results-afloop" hidden>
+        <summary class="afloop-summary">
+          <img src="assets/vandam-sketch.jpg" alt="">
+          <span class="afloop-head"><span class="afloop-title">Zo zat het</span><span class="afloop-sub">Van Dam legt uit hoe je de dader vond</span></span>
+          <span class="afloop-chev" aria-hidden="true">›</span>
+        </summary>
+        <div class="afloop-body" id="afloop-body"></div>
+      </details>
 
       <!-- Oplossing -->
       <div class="results-solution" id="results-solution"></div>

@@ -140,8 +140,14 @@ const App = {
     document.getElementById('btn-board-start').addEventListener('click', () => launch(0, false));
     document.getElementById('btn-board-daily').addEventListener('click', () => {
       const done = this.storageGet('crimson-board-daily-done') === new Date().toDateString();
-      launch(done ? 0 : this.getDailySeed() * 3 + 777, !done, Themes.forDay(this.getDayNumber()).id);
+      const today = this.dailyCase();
+      launch(done ? 0 : today.seed, !done, today.theme);
     });
+    // gemiste dagzaken (1.6): een tik op een dag in de weekstrook of op een kaartje eronder
+    const missed = e => { const b = e.target.closest('[data-missed]'); if (b) this.startMissedDaily(b.dataset.missed); };
+    ['week-strip', 'missed-list'].forEach(id => { const el = document.getElementById(id); if (el) el.addEventListener('click', missed); });
+    const strip = document.getElementById('week-strip');
+    if (strip) strip.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); missed(e); } });
     document.getElementById('btn-board-back').addEventListener('click', () => { Board.countQuit(); Board.stopTimer(); this.liveCase('leave'); this.navigateTo('menu'); });
     this.updateBoardStats();
   },
@@ -661,7 +667,9 @@ const App = {
     const strip = document.getElementById('week-strip');
     if (!strip) return;
     const days = Progress.week();
-    strip.innerHTML = days.map((d, i) => `<span class="wday${d.played ? ' played' : ''}${d.today ? ' today' : ''}${d.future ? ' future' : ''}${d.reward ? ' reward' : ''}"><i>${d.played ? '✓' : d.reward ? '🏅' : firstLetter(d.label, i)}</i>${d.label}</span>`).join('');
+    // gemist (1.6): stippellijn, tik = alsnog spelen; laat gespeeld: goud vinkje, telt niet voor de streak
+    strip.innerHTML = days.map((d, i) => `<span class="wday${d.played ? ' played' : ''}${d.late ? ' late' : ''}${d.missed ? ' missed' : ''}${d.today ? ' today' : ''}${d.future ? ' future' : ''}${d.reward ? ' reward' : ''}"${d.missed ? ` data-missed="${d.key}" role="button" tabindex="0" aria-label="${d.label} · ${AP_T('Gemist')}"` : ''}><i>${d.played || d.late ? '✓' : d.reward ? '🏅' : firstLetter(d.label, i)}</i>${d.label}</span>`).join('');
+    this.renderMissed();
     const note = document.getElementById('streak-note');
     const today = days.find(d => d.today);
     const playedToday = !!(today && today.played);
@@ -682,6 +690,32 @@ const App = {
     }
     this.renderQuests();
   },
+  // ── Gemiste dagzaken (1.6) ────────────────────────────────
+  // Onder de weekstrook: de dagzaken van de afgelopen zeven dagen die je miste, met de wereld van die dag.
+  // Naspelen telt als opgeloste zaak en voor medailles, niet voor de streak (zie Progress.missedDays).
+  renderMissed() {
+    const row = document.getElementById('missed-row'), list = document.getElementById('missed-list');
+    if (!row || !list || !Progress.missedDays) return;
+    const missed = Progress.missedDays();
+    row.hidden = !missed.length;
+    const locale = typeof I18n !== 'undefined' ? I18n.locale() : 'nl-NL';
+    list.innerHTML = missed.map(m => {
+      const c = this.dailyCase(m.date), th = Themes.get(c.theme);
+      let day = m.key;
+      try { day = m.date.toLocaleDateString(locale, { weekday: 'short', day: 'numeric' }); } catch (e) { /* oude browser */ }
+      return `<button type="button" class="missed-chip" data-missed="${m.key}" aria-label="${day} · ${th.title} · ${AP_T('Gemist')}"><span class="missed-world">${th.icon}</span><span class="missed-day">${day}</span></button>`;
+    }).join('');
+  },
+  startMissedDaily(key) {
+    const m = Progress.missedDays().find(x => x.key === key);
+    if (!m) { this.renderHome(); return false; }
+    const c = this.dailyCase(m.date);
+    const ok = Board.start('gemiddeld', c.seed, false, c.theme, null, { missed: { key, dayNo: c.dayNo, title: c.title } });
+    if (ok) this.navigateTo('board');
+    else this.showToast('⚠️', AP_T('Kon geen plattegrond genereren, probeer opnieuw.'));
+    return ok;
+  },
+
   // opdrachten van vandaag op het startscherm
   renderQuests() {
     const list = document.getElementById('quest-list');
@@ -1905,7 +1939,7 @@ const App = {
     document.getElementById('btn-next-case').hidden = true;
     document.getElementById('results-stars').hidden = true;
     document.getElementById('btn-remind').hidden = true;
-    ['results-panel', 'results-mentor', 'btn-map'].forEach(id => { document.getElementById(id).hidden = true; });
+    ['results-panel', 'results-mentor', 'btn-map', 'results-afloop'].forEach(id => { const el = document.getElementById(id); if (el) el.hidden = true; });
     document.getElementById('confetti').innerHTML = '';
     document.getElementById('results-stamp').classList.remove('pending');
 
@@ -1992,8 +2026,8 @@ const App = {
   // ══════════════════════════════════════════════════════════
   //  DAGELIJKSE ZAAK & STREAK
   // ══════════════════════════════════════════════════════════
-  getDailySeed() {
-    const now = new Date();
+  // now: een andere dag (gemiste dagzaak naspelen), anders vandaag
+  getDailySeed(now = new Date()) {
     return now.getFullYear() * 10000 + (now.getMonth() + 1) * 100 + now.getDate();
   },
 
@@ -2001,6 +2035,11 @@ const App = {
     // Dagen sinds 1 jan 2026 (een ander tijdstip meegeven kan: de meldingen noemen de zaak van die dag)
     const start = new Date(2026, 0, 1);
     return Math.floor((now - start) / 86400000) + 1;
+  },
+  // de dagzaak van een dag: dezelfde seed, wereld en titel als die dag (zie btn-board-daily)
+  dailyCase(now = new Date()) {
+    const dayNo = this.getDayNumber(now);
+    return { seed: this.getDailySeed(now) * 3 + 777, dayNo, theme: Themes.forDay(dayNo).id, title: Progress.dailyTitle(dayNo) };
   },
 
   updateDailyDate() {

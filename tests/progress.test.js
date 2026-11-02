@@ -92,5 +92,45 @@ check(Progress.usualHour() === null, 'zonder speeldata geen gewoon speeluur');
 [19, 19, 8, 19, 12].forEach(h => { const d = new Date(); d.setHours(h); Progress.logPlayHour(d); });
 check(Progress.usualHour() === 19, 'gewone speeltijd = het uur dat het vaakst voorkomt');
 
+// ── Gemiste dagzaken (1.6) ──
+// zondag 13 sep 2026; de dagzaken van 7, 8 en 9 t/m 13 sep staan al in het logboek (hierboven)
+const sun = new Date(2026, 8, 20, 10);   // een week later: 13 t/m 19 sep is de afgelopen week
+store['crimson-first-day'] = '2026-09-15';
+let missed = Progress.missedDays(sun);
+check(missed.map(m => m.key).join() === '2026-09-15,2026-09-16,2026-09-17,2026-09-18,2026-09-19', 'gemist: alleen de afgelopen zeven dagen, niet vóór de eerste dag in de app, niet vandaag: ' + missed.map(m => m.key).join(', '));
+store['crimson-first-day'] = '2026-01-01';
+missed = Progress.missedDays(sun);
+check(missed.length === 6 && missed[0].key === '2026-09-14' && !missed.some(m => m.key === '2026-09-13'), 'een gespeelde dag (13 sep) telt niet als gemist; nooit meer dan zeven dagen terug');
+check(missed.every(m => m.date.getHours() === 12), 'de datum van een gemiste dag staat op 12 uur (zomertijd verschuift de dag nooit)');
+const logBefore = Progress.dailyLog().join(), weekBefore = Progress.weekFull(new Date(2026, 8, 16));
+Progress.logLate('2026-09-16');
+check(Progress.dailyLog().join() === logBefore && Progress.lateLog().includes('2026-09-16') && Progress.missedDays(sun).length === 5, 'naspelen: eigen logboek, het dagelijkse logboek (streak, volle week) blijft gelijk');
+const wk = Progress.week(new Date(2026, 8, 18, 12));
+check(wk[2].late && !wk[2].played && wk[1].missed && !wk[1].late && !wk[4].missed && Progress.weekFull(new Date(2026, 8, 16)) === weekBefore, 'weekstrook: nagespeelde dag apart (geen vinkje voor de streak), gemiste dag aangegeven');
+
+// ── Zo zat het (1.6): de beslissende verklaringen kloppen echt ──
+// direct: met alleen die verklaringen moet de dader in de kamer van het slachtoffer staan;
+// alibi: met alleen die verklaringen kan niemand anders daar staan. Altijd de echte dader, nooit leeg.
+{
+  let n = 0, good = 0;
+  const routes = {};
+  for (const diff of ['makkelijk', 'gemiddeld', 'moeilijk', 'meester']) for (let s = 1; s <= 12; s++) {
+    const q = FloorPlan.generate(4000 + s * 131, diff, Themes.get(['landhuis', 'piraten', 'hotel', 'trein'][s % 4]));
+    if (!q) continue;
+    n++;
+    const d = FloorPlan.decisive(q);
+    routes[d.route] = (routes[d.route] || 0) + 1;
+    const cands = FloorPlan.stepwise({ ...q, clues: d.clues.map(i => q.clues[i]) }).cands;
+    const inV = c => FloorPlan.roomOf(q.rooms, c.x, c.y).id === q.victim.roomId;
+    const about = c => [c.s, c.a, c.b].includes(q.murderer);
+    const okRoute = d.route === 'direct' ? cands[q.murderer].every(inV)
+      : d.route === 'alibi' ? cands.every((cs, i) => i === q.murderer || !cs.some(inV))
+      : (d.clues.every(i => about(q.clues[i])) || !q.clues.some(about));
+    const sizeOk = d.clues.length >= 1 && d.clues.length <= (d.route === 'alibi' ? 6 : 2) && d.clues.every(i => q.clues[i]);
+    if (okRoute && sizeOk && cands[q.murderer].some(c => c.x === q.solution[q.murderer].x && c.y === q.solution[q.murderer].y)) good++;
+  }
+  check(n >= 40 && good === n, `Zo zat het: in ${good} van ${n} zaken zetten de gekozen verklaringen echt de dader alleen bij het slachtoffer (${Object.entries(routes).map(e => e.join(' ')).join(', ')})`);
+}
+
 console.log(failures === 0 ? 'ALLE PROGRESS CHECKS PASSED' : `${failures} FAILURES`);
 process.exit(failures === 0 ? 0 : 1);

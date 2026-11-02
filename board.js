@@ -35,6 +35,8 @@ const Board = {
   rankInfo: null,     // rang voor/na, voor de rangbalk op het resultaatscherm
   isWeekly: false,    // zaak van de week
   weekly: null,
+  missedDay: null,    // gemiste dagzaak die alsnog wordt gespeeld (1.6): { key, dayNo, title, date }
+  afloop: null,       // "Zo zat het" van de laatst opgeloste zaak (pas na het oplossen berekend)
   newIntro: null,     // "Nieuw!"-uitleg bij een nog niet geziene soort verklaring
   score: null,        // { rows, total } van de laatste zaak
   medalsWon: [],
@@ -67,8 +69,9 @@ const Board = {
       puzzle, theme, difficulty: 'tutorial', seed: 0, isDaily: false, isTutorial: true, tutorialStep: 0, campaignCase: null,
       placements: new Array(2).fill(null), marks: new Map(), crosses: new Map(), clueDone: new Set(), history: [], hintRefs: null,
       active: 0, mode: 'place', hintsUsed: 0, attempts: 0, solved: false, elapsed: 0, focusClue: null, newRank: null, okCount: 0,
-      isWeekly: false, weekly: null, newIntro: null, score: null, medalsWon: []
+      isWeekly: false, weekly: null, missedDay: null, afloop: null, newIntro: null, score: null, medalsWon: []
     });
+    this.prepareAfloop();
     document.getElementById('board-diff-tag').textContent = BD_T('🎓 Oefenzaak');
     document.getElementById('board-casetext').textContent = `${theme.icon} ${puzzle.caseText}`;
     const grid = document.getElementById('board-grid');
@@ -129,7 +132,7 @@ const Board = {
     const base = seed || (Date.now() % 1000000);
     for (let i = 0; i < 12 && !puzzle; i++) puzzle = FloorPlan.generate(base + i * 7919, difficultyId, theme);
     if (!puzzle) return false;
-    if (typeof Meting !== 'undefined' && !opts.tutorial) Meting.send('start', isDaily ? 'daily' : campaignCase ? 'campaign' : 'free', (this.loadStats().solved || 0));
+    if (typeof Meting !== 'undefined' && !opts.tutorial) Meting.send('start', isDaily ? 'daily' : campaignCase ? 'campaign' : opts.missed ? 'missed' : 'free', (this.loadStats().solved || 0));
 
     Object.assign(this, {
       puzzle, theme, difficulty: difficultyId, seed: base, isDaily,
@@ -137,10 +140,12 @@ const Board = {
       marks: new Map(), crosses: new Map(), clueDone: new Set(), history: [], hintRefs: null, lastCell: null,
       active: 0, mode: 'place', hintsUsed: 0, attempts: 0, solved: false, elapsed: 0, isTutorial: false, tutorialStep: 0, campaignCase,
       focusClue: null, newRank: null, okCount: 0, isWeekly: !!opts.weekly, weekly: opts.weekly || null, score: null, medalsWon: [],
+      missedDay: !isDaily && opts.missed ? opts.missed : null, afloop: null,
       dailyDoneBefore: App.storageGet('crimson-board-daily-done') === new Date().toDateString(),
       freeHint: false, stuckOffered: false, lastActionAt: Date.now(), hintEarned: false
     });
     document.getElementById('btn-board-hint').classList.remove('pulse');
+    this.prepareAfloop();   // "Zo zat het" van een vorige zaak weg; deze verschijnt pas na het oplossen
     this.elapsedBase = 0;
     const resumed = this.restoreResume();
     // één "Nieuw!"-uitleg per zaak, voor de eerste soort verklaring die de speler nog niet kent
@@ -155,7 +160,8 @@ const Board = {
     const diff = DIFFICULTY[difficultyId] || DIFFICULTY.gemiddeld;
     document.getElementById('board-diff-tag').textContent = campaignCase
       ? (campaignCase.chapter === Campaign.ARCHIVE ? `📁 ${campaignCase.title}` : `📖 ${campaignCase.idx + 1}. ${campaignCase.title}`)
-      : this.isWeekly ? BD_T`🗓️ Week ${this.weekly.week}` : (isDaily ? '📅 ' : '') + diff.label;
+      : this.isWeekly ? BD_T`🗓️ Week ${this.weekly.week}`
+      : this.missedDay ? `📅 ${this.missedDayLabel()} · ${BD_T('Gemist')}` : (isDaily ? '📅 ' : '') + diff.label;
     const L = (typeof I18n !== 'undefined' ? I18n : { joinSentences: (...p) => p.filter(Boolean).join(' '), asSentence: t => (t ? t + '.' : '') });
     const lead = campaignCase ? campaignCase.story : this.isWeekly ? L.asSentence(this.weekly.title) : '';
     document.getElementById('board-casetext').textContent = `${theme.icon} ${L.joinSentences(lead, puzzle.caseText)}`;
@@ -190,6 +196,7 @@ const Board = {
     if (this.campaignCase) return `c:${this.campaignCase.chapter}:${this.campaignCase.idx}`;
     if (this.isWeekly && this.weekly) return `w:${this.weekly.key}:${this.weekly.theme}`;
     if (this.isDaily) return `d:${new Date().toDateString()}`;
+    if (this.missedDay) return `m:${this.missedDay.key}`;
     return null;
   },
   saveResume() {
@@ -218,6 +225,13 @@ const Board = {
     return this.placements.some(Boolean) || this.marks.size > 0 || this.crosses.size > 0;
   },
   clearResume() { App.storageSet(this.RESUME_KEY, ''); },
+  // "di 27 okt" in de taal van de speler
+  missedDayLabel() {
+    const m = this.missedDay;
+    if (!m) return '';
+    try { return Progress.dateOf(m.key).toLocaleDateString(typeof I18n !== 'undefined' ? I18n.locale() : 'nl-NL', { weekday: 'short', day: 'numeric', month: 'short' }); }
+    catch (e) { return m.key; }
+  },
 
   startTimer() {
     clearInterval(this.timerId);
@@ -958,7 +972,7 @@ const Board = {
     const before = App.rankFor(solvedBefore);
     this.saveStats();
     const solvedAfter = this.loadStats().solved || 0;
-    if (typeof Meting !== 'undefined') Meting.send('solved', this.isDaily ? 'daily' : this.campaignCase ? 'campaign' : 'free', solvedAfter);
+    if (typeof Meting !== 'undefined') Meting.send('solved', this.isDaily ? 'daily' : this.campaignCase ? 'campaign' : this.missedDay ? 'missed' : 'free', solvedAfter);
     const after = App.rankFor(solvedAfter);
     this.newRank = after.title !== before.title ? after.title : null;
     this.rankInfo = { before, after, solvedBefore, solvedAfter };
@@ -978,6 +992,8 @@ const Board = {
       App.storageSet('crimson-board-daily-done', new Date().toDateString());
       App.scheduleReminder();
     }
+    // gemiste dagzaak: telt als zaak en voor medailles, maar raakt de streak niet (eigen logboek, geen daily-log)
+    if (this.missedDay) Progress.logLate(this.missedDay.key);
     // punten, zaak van de week, onderscheidingen
     this.score = Progress.score({
       difficulty: this.difficulty, elapsed: this.elapsed, hintsUsed: this.hintsUsed, attempts: this.attempts,
@@ -1147,6 +1163,12 @@ const Board = {
         $('results-next-bar').innerHTML = `<span>${ch.title}</span><i><b style="width:${Math.round(done / ch.cases.length * 100)}%"></b></i><span>${left === 0 ? BD_T('af!') : left === 1 ? BD_T('nog 1 zaak') : BD_T`nog ${left} zaken`}</span>`;
         teaser.hidden = false;
       }
+    } else if (!this.isTutorial && this.missedDay && Progress.missedDays().length) {
+      // gemiste dagzaak: de volgende gemiste dag ligt klaar
+      const nextMissed = Progress.missedDays()[0];
+      nextBtn.hidden = false;
+      nextBtn.textContent = BD_T('▶ Volgende gemiste dagzaak');
+      nextBtn.onclick = () => App.startMissedDaily(nextMissed.key);
     } else if (!this.isTutorial) {
       // vrij spel, dagelijkse zaak of zaak van de week: meteen door kunnen
       nextBtn.hidden = false;
@@ -1162,12 +1184,61 @@ const Board = {
       nextBtn.hidden = !c0 || Campaign.stars(first.key, 0) > 0;
       if (c0) { nextBtn.textContent = BD_T`▶ Volgende zaak: ${c0.title}`; nextBtn.onclick = () => App.startCampaignCase(first.key, 0, true); }
     } else { nextBtn.hidden = true; }
+    this.prepareAfloop();
     $('stat-time').textContent = this.formatTime(this.elapsed);
     $('stat-difficulty').textContent = (DIFFICULTY[this.difficulty] || DIFFICULTY.gemiddeld).label;
     $('stat-hints').textContent = this.hintsUsed;
     $('stat-attempts').textContent = this.attempts + 1;
     this.renderLedger();
     if (this.isTutorial) this.revealAll(); else this.ceremony();
+  },
+
+  // ── Zo zat het (1.6) ──────────────────────────────────────
+  // Na het oplossen: de beslissende verklaringen (FloorPlan.decisive) in de drie stappen van de hint: kijk naar
+  // (de verklaringskaarten), dat betekent (Grammar.explain) en dus (de spelregel en het oordeel). Dezelfde
+  // bouwstenen als de hint, dus in elke taal al goed. Plus het bewijsstuk van een campagnezaak.
+  // Ingeklapt; de inhoud wordt pas gebouwd als de speler hem opent, en nooit voordat de zaak is opgelost.
+  prepareAfloop() {
+    const box = document.getElementById('results-afloop'), body = document.getElementById('afloop-body');
+    if (!box || !body) return;
+    body.innerHTML = '';
+    box.open = false;
+    box.hidden = !(this.solved && !this.isTutorial && this.puzzle);
+    if (!box.dataset.bound) {
+      box.dataset.bound = '1';
+      box.addEventListener('toggle', () => { if (box.open) this.renderAfloop(); });
+    }
+  },
+  renderAfloop() {
+    const body = document.getElementById('afloop-body');
+    if (!body) return '';
+    if (!this.solved || this.isTutorial || !this.puzzle) { body.innerHTML = ''; return ''; }
+    const p = this.puzzle;
+    if (!this.afloop) this.afloop = FloorPlan.decisive(p);
+    const d = this.afloop;
+    const L = typeof I18n !== 'undefined' ? I18n : { joinSentences: (...x) => x.filter(Boolean).join(' ') };
+    const step = (label, html) => `<div class="hint-step afloop-step"><span class="hint-step-label">${label}</span>${html}</div>`;
+    const esc = t => String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;');
+    let html = step(BD_T('1 · Kijk naar'), `<div class="hint-clues afloop-clues">${d.clues.map(i => this.clueCard(i, 'dclue afloop-clue')).join('')}</div>`);
+    // twee verklaringen of minder: wat ze betekenen; bij een rij alibi's één zin over wat ze samen zeggen
+    const meaning = d.clues.length <= 2 ? L.joinSentences(...d.clues.map(i => Mentor.explain(p.clues[i], p)))
+                                        : BD_T('Zo kon niemand anders bij het slachtoffer zijn.');
+    html += step(BD_T('2 · Dat betekent'), `<p class="hint-meaning">${esc(meaning)}</p>`);
+    const m = p.suspects[p.murderer], q = p.rooms.find(x => x.id === p.victim.roomId);
+    html += step(BD_T('3 · Dus'),
+      `<p class="afloop-rule">${esc(Grammar.text('board/rule', p))}</p><p class="afloop-verdict">${esc(Grammar.text('board/verdict', p, { s: Grammar.who(m), room: q.id }))}</p>`);
+    // het bewijsstuk van een campagnezaak (staat nu in de vitrine)
+    const item = this.campaignCase && this.campaignCase.item;
+    if (item) {
+      const sp = item.indexOf(' ');
+      html += `<div class="afloop-item"><span class="afloop-item-icon">${esc(sp > 0 ? item.slice(0, sp) : '📦')}</span>` +
+              `<span class="afloop-item-text"><span class="afloop-item-label">${BD_T('Bewijsstuk in je vitrine')}</span><b>${esc(sp > 0 ? item.slice(sp + 1) : item)}</b></span></div>`;
+    }
+    body.innerHTML = html;
+    // kaarten zoals in de hint, zonder afvinken, status of doorstreping
+    body.querySelectorAll('.bclue-check, .bclue-state').forEach(el => el.remove());
+    body.querySelectorAll('.afloop-clue').forEach(el => el.classList.remove('done'));
+    return body.textContent;
   },
 
   // ── Ceremonie: stempel → sterren → score telt op → rang. Tik = overslaan. ──
@@ -1254,7 +1325,7 @@ const Board = {
     const what = this.isWeekly ? BD_T` · Zaak van de week: ${this.weekly.title}`
       : this.campaignCase ? ` · ${this.campaignCase.chapter === Campaign.ARCHIVE ? '' : this.campaignCase.idx + 1 + '. '}${this.campaignCase.title}` : '';
     return [
-      `${this.theme.icon} Crimson Ledger · ${this.theme.title}${this.isDaily ? BD_T` · Dag #${App.getDayNumber()}` : ''}${what}`,
+      `${this.theme.icon} Crimson Ledger · ${this.theme.title}${this.isDaily ? BD_T` · Dag #${App.getDayNumber()}` : this.missedDay ? BD_T` · Dag #${this.missedDay.dayNo}` : ''}${what}`,
       `${'★'.repeat(stars)}${'☆'.repeat(3 - stars)} · ${diff.icon} ${diff.label} · ⏱ ${this.formatTime(this.elapsed)} · 💡 ${this.hintsUsed}`,
       // one square per accusation: red for a wrong one, green for the culprit
       '🟥'.repeat(this.attempts) + '🟩',

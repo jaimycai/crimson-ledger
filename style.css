@@ -2700,3 +2700,56 @@ html.ipad .board-topbar, html.ipad .map-topbar { padding-top: calc(30px + var(--
 .splash-status { position: absolute; left: -20px; right: -20px; top: calc(50% + 12px); margin: 0; text-align: center;
   font-size: 0.78rem; color: var(--text-secondary); transition: opacity 0.3s var(--ease-out); }
 #screen-splash.loaded .splash-status { opacity: 0; }
+
+/* ── Zo zat het (1.6): de afloop van Van Dam op het resultaatscherm, ingeklapt ── */
+.results-afloop { width: 100%; background: var(--bg-card); border: 1.5px solid var(--gold-light); border-radius: 14px; text-align: start; transition: opacity 0.35s var(--ease-out); }
+.results-afloop[hidden] { display: none; }
+/* verschijnt samen met de opmerking van Van Dam als de ceremonie klaar is */
+.mentor-remark.pending ~ .results-afloop { opacity: 0; }
+.afloop-summary { display: flex; align-items: center; gap: 10px; padding: 10px 14px; cursor: pointer; list-style: none; -webkit-tap-highlight-color: transparent; }
+.afloop-summary::-webkit-details-marker { display: none; }
+.afloop-summary img { width: 36px; height: 36px; border-radius: 50%; border: 1.5px solid var(--gold); object-fit: cover; flex: none; }
+.afloop-head { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 1px; }
+.afloop-title { font-family: var(--font-heading); font-size: 1.05rem; font-weight: 700; color: var(--accent); line-height: 1.2; }
+.afloop-sub { font-size: 0.78rem; color: var(--text-light); line-height: 1.3; }
+.afloop-chev { flex: none; font-size: 1.4rem; line-height: 1; color: var(--accent); transition: transform 0.25s var(--ease-out); }
+.results-afloop[open] .afloop-chev { transform: rotate(90deg); }
+/* › spiegelt in rechts-naar-links vanzelf tot ‹; open wijst hij omlaag */
+[dir="rtl"] .results-afloop[open] .afloop-chev { transform: rotate(-90deg); }
+.afloop-body { padding: 0 12px 12px; border-top: 1px solid var(--divider); }
+.afloop-step { margin: 10px 0 0; gap: 5px; }
+/* verklaringen als compacte regels: portret, naam en de zin, zonder tekstballon */
+.afloop-clues { gap: 4px; }
+.afloop-clues .afloop-clue { min-height: 0; padding: 6px 8px; gap: 8px; align-items: center; box-shadow: none; border-width: 1px; border-color: var(--border-light); background: var(--bg-card); }
+.afloop-clues .afloop-clue .bclue-ava { width: 30px; height: 30px; border-width: 1.5px; }
+.afloop-clues .afloop-clue .bclue-pair { margin-top: 0; }
+.afloop-clues .afloop-clue .bclue-pair .bclue-ava { width: 24px; height: 24px; }
+.afloop-clues .afloop-clue .bclue-num { margin-top: 0; }
+.afloop-clues .afloop-clue .bclue-name { font-size: 0.74rem; color: var(--text-secondary); }
+.afloop-clues .afloop-clue .bclue-text { margin-top: 0; padding: 0; background: none; border-radius: 0; font-size: 0.86rem; line-height: 1.35; }
+.afloop-step .hint-meaning { font-size: 0.86rem; line-height: 1.45; }
+.afloop-rule { font-size: 0.8rem; line-height: 1.4; color: var(--text-secondary); margin: 0; }
+.afloop-verdict { font-size: 0.92rem; font-weight: 700; line-height: 1.4; color: var(--accent); margin: 2px 0 0; padding: 7px 10px; border-inline-start: 3px solid var(--accent); background: var(--accent-subtle); border-radius: 0 10px 10px 0; }
+[dir="rtl"] .afloop-verdict { border-radius: 10px 0 0 10px; }
+.afloop-item { display: flex; align-items: center; gap: 10px; margin-top: 12px; padding: 8px 12px; border: 1.5px dashed var(--gold); border-radius: 12px; background: #FBF6EC; }
+.afloop-item-icon { font-size: 1.6rem; line-height: 1; flex: none; }
+.afloop-item-text { display: flex; flex-direction: column; min-width: 0; }
+.afloop-item-label { font-size: 0.7rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: #8A6A33; }
+.afloop-item-text b { font-family: var(--font-heading); font-size: 1rem; color: var(--text-primary); }
+@media (prefers-reduced-motion: reduce) { .results-afloop, .afloop-chev { transition: none; } }
+
+/* ── Gemiste dagzaken (1.6): stippellijn in de weekstrook, kaartjes eronder ── */
+.wday.missed { cursor: pointer; color: var(--accent); }
+.wday.missed i { border-style: dashed; border-color: var(--accent); color: var(--accent); background: var(--accent-subtle); }
+.wday.late i { background: #FBF3E2; border-color: var(--gold); border-style: dashed; color: #8A6A33; }
+.missed-row { margin-top: 12px; padding-top: 10px; border-top: 1px dashed var(--border); }
+.missed-row[hidden] { display: none; }
+.missed-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 2px 8px; }
+.missed-label { font-size: 0.8rem; font-weight: 800; color: var(--accent); }
+.missed-note { font-size: 0.72rem; color: var(--text-light); }
+.missed-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.missed-chip { display: inline-flex; align-items: center; gap: 5px; min-height: 36px; padding: 4px 10px 4px 7px; border: 1.5px dashed var(--accent); border-radius: 999px;
+  background: var(--accent-subtle); color: var(--accent); font: inherit; font-size: 0.8rem; font-weight: 700; cursor: pointer; -webkit-tap-highlight-color: transparent; }
+.missed-chip:active { transform: scale(0.96); }
+.missed-world { font-size: 1rem; line-height: 1; }
+.missed-day { white-space: nowrap; }
