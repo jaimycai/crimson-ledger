@@ -1758,15 +1758,21 @@ const App = {
   shareAny(text) {
     if (!text) return;
     if (typeof Meting !== 'undefined') Meting.send('share');
-    const viaShare = () => navigator.share
-      ? navigator.share({ text }).catch(() => {})
+    // Eerst het deelvenster (WhatsApp, Berichten …): in de app via @capacitor/share, op het web via navigator.share.
+    // Het klembord is alleen de terugval; voorheen kwam dat eerst en ging het deelvenster in de app nooit open.
+    // Wie het venster zelf sluit, krijgt geen melding.
+    const C = window.Capacitor;
+    const native = C && C.isNativePlatform && C.isNativePlatform() && C.Plugins && C.Plugins.Share;
+    const cancelled = e => /cancel|abort/i.test(`${e && e.name} ${e && e.message}`);
+    const viaShare = () => native ? native.share({ text })
+      : navigator.share ? navigator.share({ text })
       : Promise.reject(new Error('no share'));
     const viaClipboard = () => navigator.clipboard
       ? navigator.clipboard.writeText(text).then(() => this.showToast('📋', AP_T('Resultaat gekopieerd naar klembord!')))
       : Promise.reject(new Error('no clipboard'));
 
-    viaClipboard()
-      .catch(viaShare)
+    viaShare()
+      .catch(e => cancelled(e) ? null : viaClipboard())
       .catch(() => this.showToast('⚠️', AP_T('Delen wordt niet ondersteund in deze browser.')));
   },
 

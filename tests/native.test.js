@@ -18,7 +18,8 @@ const mock = `<script>
       remove: async ({ key }) => { delete window.__native[key]; }
     },
     SplashScreen: { hide: async () => { window.__splashHidden++; } },
-    InAppReview: { requestReview: async () => {} }
+    InAppReview: { requestReview: async () => {} },
+    Share: { share: async ({ text }) => { window.__shared = (window.__shared || []).concat(text); if (window.__shareCancel) throw new Error('Share canceled'); } }
   } };
 </script>`;
 html = html.replace('<head>', '<head><script>Object.defineProperty(navigator, "language", { value: "nl-NL", configurable: true });</script>').replace(/<link[^>]+>/g, '').replace('<body>', '<body>' + mock).replace('</body>', '<script>window.App = App; window.Board = Board;</script></body>');
@@ -64,6 +65,12 @@ const check = (c, m) => { if (c) console.log('ok  ', m); else { failures++; cons
   check(moments().join() === 'solved,weekclean,streak7', 'zeven dagen op rij: gevraagd');
   App.maybeAskReview({ weeklyClean: true, stars: 3 });
   check(moments().length === 3, 'daarna niet meer');
+  // delen: in de app opent het deelvenster (niet eerst het klembord); annuleren geeft geen melding
+  App.shareAny('Zaak 7 gesloten'); await sleep(30);
+  check((window.__shared || []).join() === 'Zaak 7 gesloten', 'delen opent het deelvenster van de app');
+  window.__shareCancel = true; App.shareAny('nog eens'); await sleep(30);
+  check(!document.getElementById('toast').classList.contains('show') || !/Delen wordt niet/.test(document.getElementById('toast-text').textContent), 'deelvenster gesloten: geen foutmelding');
+  window.__shareCancel = false;
   App.resetProgress(); await sleep(20);
   check(Object.keys(window.__native).filter(k => k.startsWith('crimson-')).length === 0 && !window.localStorage.getItem('crimson-board-stats'), 'wissen wist localStorage én native opslag');
   check(errors.length === 0, 'geen JS-fouten: ' + errors.join(' | '));
