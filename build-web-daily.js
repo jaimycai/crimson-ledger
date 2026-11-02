@@ -16,7 +16,7 @@ const ASSETS = ['fonts', 'portretten', 'vandam.jpg', 'vandam-sketch.jpg'];
 const WEB_FILES = ['dagzaak.js', 'dagzaak.css', 'teksten.js'];
 // stukken uit index.html die de pagina letterlijk overneemt, zodat het bord gelijk blijft aan de app
 const BOARD_PARTS = ['screen-board'];
-const MODAL_PARTS = ['hint-modal', 'clue-modal', 'newclue-modal', 'toast'];
+const MODAL_PARTS = ['hint-modal', 'clue-modal', 'newclue-modal', 'help-modal', 'toast'];
 
 const hash = file => crypto.createHash('sha1').update(fs.readFileSync(file)).digest('hex').slice(0, 8);
 

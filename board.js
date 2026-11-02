@@ -9,11 +9,13 @@ const Board = {
   puzzle: null,
   placements: null,   // array per verdachte: {x,y} | null
   marks: null,        // "x,y" -> Set(suspectIndex)
+  crosses: null,      // 1.6: kruisjes, "x,y" -> Set(suspectIndex): deze verdachte stond hier niet
   clueDone: null,     // aanwijzingen die de speler heeft afgevinkt
   history: null,
   hintRefs: null,     // {cells, clues} van de laatste hint
   active: 0,
-  mode: 'place',      // place | mark | erase
+  mode: 'place',      // place | mark | cross | erase
+  zoom: 1,            // 1.6: 1 = het hele bord; groter = ingezoomd (alleen borden vanaf 8×8)
   startTime: 0,
   timerId: null,
   elapsed: 0,
@@ -63,7 +65,7 @@ const Board = {
     const puzzle = FloorPlan.fromLayout({ ...this.TUTORIAL, suspects, theme });
     Object.assign(this, {
       puzzle, theme, difficulty: 'tutorial', seed: 0, isDaily: false, isTutorial: true, tutorialStep: 0, campaignCase: null,
-      placements: new Array(2).fill(null), marks: new Map(), clueDone: new Set(), history: [], hintRefs: null,
+      placements: new Array(2).fill(null), marks: new Map(), crosses: new Map(), clueDone: new Set(), history: [], hintRefs: null,
       active: 0, mode: 'place', hintsUsed: 0, attempts: 0, solved: false, elapsed: 0, focusClue: null, newRank: null, okCount: 0,
       isWeekly: false, weekly: null, newIntro: null, score: null, medalsWon: []
     });
@@ -78,6 +80,7 @@ const Board = {
     this.renderIntro();
     document.getElementById('board-coach').hidden = false;
     document.getElementById('btn-board-hint').disabled = true;
+    this.resetZoom();
     this.renderBoard(); this.renderSuspects(); this.renderClues();
     this.fitBoard();
     this.showTutorialStep();
@@ -131,7 +134,7 @@ const Board = {
     Object.assign(this, {
       puzzle, theme, difficulty: difficultyId, seed: base, isDaily,
       placements: new Array(puzzle.suspects.length).fill(null),
-      marks: new Map(), clueDone: new Set(), history: [], hintRefs: null,
+      marks: new Map(), crosses: new Map(), clueDone: new Set(), history: [], hintRefs: null, lastCell: null,
       active: 0, mode: 'place', hintsUsed: 0, attempts: 0, solved: false, elapsed: 0, isTutorial: false, tutorialStep: 0, campaignCase,
       focusClue: null, newRank: null, okCount: 0, isWeekly: !!opts.weekly, weekly: opts.weekly || null, score: null, medalsWon: [],
       dailyDoneBefore: App.storageGet('crimson-board-daily-done') === new Date().toDateString(),
@@ -142,6 +145,8 @@ const Board = {
     const resumed = this.restoreResume();
     // één "Nieuw!"-uitleg per zaak, voor de eerste soort verklaring die de speler nog niet kent
     this.newIntro = typeof Mentor !== 'undefined' ? Mentor.introFor(puzzle.clues.map(c => c.kind), this.introsSeen()) : null;
+    // meester (1.6): de eerste keer ook de kaart over lege rijen en kolommen
+    if (!this.newIntro && difficultyId === 'meester' && !this.introsSeen().includes(this.EMPTY_LINES_ID)) this.newIntro = this.emptyLinesCard();
     this.endAccuse();
     this.deckIdx = 0;
     document.getElementById('board-coach').hidden = true;
@@ -161,6 +166,7 @@ const Board = {
     const tip = document.getElementById('board-tip');
     tip.hidden = !!App.storageGet('crimson-board-tip-seen');
 
+    this.resetZoom();
     this.renderBoard();
     this.renderSuspects();
     this.renderClues();
@@ -190,7 +196,8 @@ const Board = {
     const id = this.resumeId();
     if (!id || this.solved) return;
     const marks = [...this.marks].map(([k, s]) => [k, [...s]]);
-    App.storageSet(this.RESUME_KEY, JSON.stringify({ id, seed: this.seed, placements: this.placements, marks,
+    const crosses = [...this.crosses].map(([k, s]) => [k, [...s]]);
+    App.storageSet(this.RESUME_KEY, JSON.stringify({ id, seed: this.seed, placements: this.placements, marks, crosses,
       done: [...this.clueDone], elapsed: this.elapsed || 0, hints: this.hintsUsed, attempts: this.attempts }));
   },
   restoreResume() {
@@ -201,12 +208,14 @@ const Board = {
     if (!s || s.id !== id || s.seed !== this.seed || !Array.isArray(s.placements) || s.placements.length !== this.placements.length) return false;
     const n = this.puzzle.cols, m = this.puzzle.rows;
     this.placements = s.placements.map(c => (c && Number.isInteger(c.x) && c.x >= 0 && c.x < n && c.y >= 0 && c.y < m ? { x: c.x, y: c.y } : null));
-    this.marks = new Map((s.marks || []).filter(e => Array.isArray(e) && Array.isArray(e[1])).map(([k, v]) => [k, new Set(v)]));
+    const sets = list => new Map((list || []).filter(e => Array.isArray(e) && Array.isArray(e[1])).map(([k, v]) => [k, new Set(v)]));
+    this.marks = sets(s.marks);
+    this.crosses = sets(s.crosses);
     this.clueDone = new Set((s.done || []).filter(i => Number.isInteger(i)));
     this.hintsUsed = s.hints || 0;
     this.attempts = s.attempts || 0;
     this.elapsedBase = Math.max(0, s.elapsed || 0);
-    return this.placements.some(Boolean) || this.marks.size > 0;
+    return this.placements.some(Boolean) || this.marks.size > 0 || this.crosses.size > 0;
   },
   clearResume() { App.storageSet(this.RESUME_KEY, ''); },
 
@@ -252,11 +261,30 @@ const Board = {
       const left = ((Math.min(...xs) + Math.max(...xs) + 1) / 2 / p.cols) * 100;
       const top = ((maxY + 1) / p.rows) * 100;
       const span = ((Math.max(...xs) - Math.min(...xs) + 1) / p.cols) * 100;
-      html += `<span class="room-label" data-w="${span}" style="left:${left}%;top:${top}%">${room.name}</span>`;
+      html += `<span class="room-label" data-w="${span}" data-home="${maxY}:${Math.min(...xs)}:${Math.max(...xs)}" data-runs="${this.labelRuns(room).map(r => r.join(':')).join(';')}" style="left:${left}%;top:${top}%">${room.name}</span>`;
     });
     grid.innerHTML = html;
     this.fitLabels(grid);
     grid.querySelectorAll('.bcell').forEach(c => c.addEventListener('click', () => { if (!this.dragDone) this.onCell(+c.dataset.x, +c.dataset.y); }));
+  },
+
+  // Plekken voor een kamernaam (1.6): stukken rij zonder meubel of slachtoffer, van de onderste rij naar boven,
+  // per rij het langste stuk eerst, als [y, x0, x1]. fitLabels kiest het eerste stuk waar de naam op past, zodat
+  // een kamernaam geen meubel bedekt (vooral als je inzoomt: dan zijn de vakjes groot en past hij bijna altijd).
+  labelRuns(room) {
+    const p = this.puzzle, key = FloorPlan.key, mine = new Set(room.list.map(c => key(c.x, c.y)));
+    const free = (x, y) => mine.has(key(x, y)) && !p.furniture.has(key(x, y)) && !(p.victim.x === x && p.victim.y === y);
+    const runs = [];
+    [...new Set(room.list.map(c => c.y))].sort((a, b) => b - a).forEach(y => {
+      const row = [];
+      for (let x = 0, x0 = null; x <= p.cols; x++) {
+        const ok = x < p.cols && free(x, y);
+        if (ok && x0 === null) x0 = x;
+        if (!ok && x0 !== null) { row.push([y, x0, x - 1]); x0 = null; }
+      }
+      runs.push(...row.sort((a, b) => (b[2] - b[1]) - (a[2] - a[1])));
+    });
+    return runs;
   },
 
   // ── Verdachtenkiezer ──────────────────────────────────────
@@ -498,6 +526,8 @@ const Board = {
       const cell = c && document.querySelector(`#board-grid .bcell[data-x="${c.x}"][data-y="${c.y}"]`);
       if (cell) cell.classList.add('lit-sus');
     });
+    // ingezoomd: de kamer van de verklaring in beeld schuiven
+    if (this.zoom > 1 && room) this.centerOn(room.list);
     this.buzz(8);
     this.focusTimer = setTimeout(() => this.clearFocus(), 2600);
   },
@@ -528,6 +558,7 @@ const Board = {
     // spelregel live: twee verdachten in de kamer van het slachtoffer = conflict
     const inVictimRoom = this.placements.filter(c => c && FloorPlan.roomOf(p.rooms, c.x, c.y).id === p.victim.roomId);
     const conflict = new Set(inVictimRoom.length > 1 ? inVictimRoom.map(c => FloorPlan.key(c.x, c.y)) : []);
+    const auto = this.autoCrosses();
 
     document.querySelectorAll('#board-grid .bcell').forEach(el => {
       const x = +el.dataset.x, y = +el.dataset.y, k = FloorPlan.key(x, y);
@@ -538,6 +569,12 @@ const Board = {
       if (isVictim) inner += `<span class="bvictim">${Avatars.victim()}</span>`;
       if (who !== undefined) inner += `<span class="bsus">${Avatars.suspect(p.suspects[who], who)}</span><span class="bname" style="--sc:${p.suspects[who].color}">${Themes.shortName(p.suspects[who].label)}</span>`;
       if (marked && marked.size) inner += '<span class="bmarks">' + [...marked].map(i => `<i style="background:${p.suspects[i].color}"></i>`).join('') + '</span>';
+      // kruisjes: eigen kruisjes vol, automatisch weggestreept (rij en kolom van wie al staat) licht
+      const own = this.crosses.get(k), struck = auto.get(k);
+      if (who === undefined && !furn && !isVictim && ((own && own.size) || (struck && struck.size))) {
+        const ids = [...new Set([...(own || []), ...(struck || [])])].sort((a, b) => a - b);
+        inner += '<span class="bx">' + ids.map(i => `<i class="${own && own.has(i) ? 'own' : 'auto'}" style="--c:${p.suspects[i].color}"></i>`).join('') + '</span>';
+      }
       el.innerHTML = inner;
       el.classList.toggle('has-sus', who !== undefined);
       el.classList.toggle('occupied', !!furn || isVictim);
@@ -557,22 +594,32 @@ const Board = {
     }
     const p = this.puzzle, k = FloorPlan.key(x, y);
     const occupant = this.placements.findIndex(c => c && c.x === x && c.y === y);
-    const snap = () => ({ placements: this.placements.slice(), marks: this.cloneMarks() });
+    const snap = () => this.snap();
+    this.lastCell = { x, y };
 
     if (this.mode === 'erase') {
-      if (occupant === -1 && !this.marks.has(k)) return;
+      if (occupant === -1 && !this.marks.has(k) && !this.crosses.has(k)) return;
       this.history.push(snap());
       if (occupant !== -1) this.placements[occupant] = null;
       this.marks.delete(k);
+      this.crosses.delete(k);
       return this.after();
     }
     if (p.furniture.has(k) || (p.victim.x === x && p.victim.y === y)) return this.peek(x, y);
 
-    if (this.mode === 'mark') {
+    // potlood (stipje: kan hier staan) en kruisje (staat hier niet) sluiten elkaar per verdachte uit
+    if (this.mode === 'mark' || this.mode === 'cross') {
+      if (this.mode === 'cross' && occupant !== -1) return this.flash(x, y);   // hier staat al iemand
       this.history.push(snap());
-      const set = this.marks.get(k) || new Set();
-      set.has(this.active) ? set.delete(this.active) : set.add(this.active);
-      set.size ? this.marks.set(k, set) : this.marks.delete(k);
+      const [mine, other] = this.mode === 'mark' ? [this.marks, this.crosses] : [this.crosses, this.marks];
+      const set = mine.get(k) || new Set();
+      if (set.has(this.active)) set.delete(this.active);
+      else {
+        set.add(this.active);
+        const o = other.get(k);
+        if (o) { o.delete(this.active); if (!o.size) other.delete(k); }
+      }
+      set.size ? mine.set(k, set) : mine.delete(k);
       Sound.play('mark');
       return this.after();
     }
@@ -610,7 +657,31 @@ const Board = {
       setTimeout(() => s.remove(), 600);
     }
   },
-  cloneMarks() { const m = new Map(); this.marks.forEach((v, k) => m.set(k, new Set(v))); return m; },
+  cloneMarks(src = this.marks) { const m = new Map(); src.forEach((v, k) => m.set(k, new Set(v))); return m; },
+  // één stap voor Terug: plaatsingen, stipjes en kruisjes
+  snap() { return { placements: this.placements.slice(), marks: this.cloneMarks(), crosses: this.cloneMarks(this.crosses) }; },
+  // Rij en kolom automatisch wegstrepen (1.6, instelling, standaard aan): wie op het bord staat, krijgt een licht
+  // kruisje op de andere vrije vakjes van zijn rij en kolom. Alleen weergave: het volgt de plaatsingen (dus ook
+  // Terug), wordt niet bewaard en is geen spelregel.
+  AUTOSTRIKE_KEY: 'crimson-autostrike',
+  autoStrikeOn() { return App.storageGet(this.AUTOSTRIKE_KEY) !== '0'; },
+  autoCrosses() {
+    const p = this.puzzle, out = new Map();
+    if (!p || this.isTutorial || !this.autoStrikeOn()) return out;
+    const taken = new Set(this.placements.filter(Boolean).map(c => FloorPlan.key(c.x, c.y)));
+    const add = (x, y, i) => {
+      const k = FloorPlan.key(x, y);
+      if (taken.has(k) || p.furniture.has(k) || (p.victim.x === x && p.victim.y === y)) return;
+      if (!out.has(k)) out.set(k, new Set());
+      out.get(k).add(i);
+    };
+    this.placements.forEach((c, i) => {
+      if (!c) return;
+      for (let x = 0; x < p.cols; x++) add(x, c.y, i);
+      for (let y = 0; y < p.rows; y++) add(c.x, y, i);
+    });
+    return out;
+  },
 
   // 1.5: in the first three cases of the Manor, a minute without any move turns the next hint into a free one, outside
   // the day allowance (target: 90% of new players solve case 1; 40% used to stop before it)
@@ -663,6 +734,7 @@ const Board = {
     if (!prev) return;
     this.placements = prev.placements;
     this.marks = prev.marks;
+    this.crosses = prev.crosses || new Map();
     this.after();
   },
 
@@ -679,6 +751,7 @@ const Board = {
     else if (typeof Store !== 'undefined') Store.useHint();
     if (typeof Meting !== 'undefined') Meting.send('hint');
     this.hintRefs = { cells: h.cells || [], clues: h.clues || [] };
+    if (this.zoom > 1 && this.hintRefs.cells.length) this.centerOn(this.hintRefs.cells);   // ingezoomd: de vakjes van de hint in beeld
     if (h.suspect !== undefined && h.suspect !== -1) this.active = h.suspect;
     this.after(true);
     const p = this.puzzle, $ = id => document.getElementById(id);
@@ -709,7 +782,7 @@ const Board = {
     // alles staat en elke aanwijzing klopt: de knop trekt de aandacht
     checkBtn.classList.toggle('ready', all && !this.solved && this.puzzle.clues.every(c => FloorPlan.holds(c, this.placements, this.puzzle) === true));
     document.getElementById('btn-board-undo').disabled = this.history.length === 0;
-    ['place', 'mark', 'erase'].forEach(m => document.getElementById('btn-board-' + m).classList.toggle('active', this.mode === m));
+    ['place', 'mark', 'cross', 'erase'].forEach(m => { const b = document.getElementById('btn-board-' + m); if (b) b.classList.toggle('active', this.mode === m); });
     // hoeveel hints je nog hebt (∞ met de Pass)
     const badge = document.getElementById('hint-badge');
     if (badge && typeof Store !== 'undefined') {
@@ -723,6 +796,10 @@ const Board = {
     if (m === 'mark' && this.mode !== 'mark' && !App.storageGet('crimson-pencil-tip-seen')) {
       App.storageSet('crimson-pencil-tip-seen', '1');
       App.showToast('✏️', BD_T('Potlood: zet een stipje op vakjes waar iemand zou kúnnen staan. Met Plaats zet je iemand echt neer, met Gum haal je het weer weg.'));
+    }
+    if (m === 'cross' && this.mode !== 'cross' && !App.storageGet('crimson-cross-tip-seen')) {
+      App.storageSet('crimson-cross-tip-seen', '1');
+      App.showToast('✖️', BD_T('Kruisje: tik een vakje waar de gekozen verdachte niet kan staan. Nog eens tikken haalt het kruisje weg.'));
     }
     this.mode = m;
     this.updateTools();
@@ -775,6 +852,7 @@ const Board = {
     // geen venster over het bord: het paneel komt onderin, de plattegrond blijft
     // zichtbaar en de kamer van het slachtoffer licht op
     this.accusing = true;
+    this.resetZoom();
     document.getElementById('screen-board').classList.add('accusing');
     const panel = document.getElementById('board-accuse');
     panel.hidden = false; panel.scrollTop = 0;
@@ -1128,8 +1206,11 @@ const Board = {
     if (h <= 0 || w <= 0) return;   // scherm nog niet in beeld
     const ratio = this.puzzle.cols / this.puzzle.rows;
     const width = Math.floor(Math.max(160, Math.min(w, 460, h * ratio)));
+    this.baseW = width; this.baseH = Math.floor(width / ratio);
+    this.updateBoardActs();
+    if (this.zoom > 1) { this.zoomTo(this.zoom, this.viewAnchor()); this.fitToolLabels(); return; }   // ingezoomd: hetzelfde stuk in beeld
     grid.style.width = `${width}px`;
-    grid.style.height = `${Math.floor(width / ratio)}px`;
+    grid.style.height = `${this.baseH}px`;
     this.fitLabels(grid);
     this.fitToolLabels();
     this.fitNames();
@@ -1172,8 +1253,22 @@ const Board = {
     const gw = grid && grid.clientWidth;
     if (!gw || typeof getComputedStyle === 'undefined') return;
     const labels = [...grid.querySelectorAll('.room-label')];
+    const cols = +grid.style.getPropertyValue('--cols') || 0, rows = +grid.style.getPropertyValue('--rows') || 0;
     labels.forEach(el => {
       el.classList.remove('wrap', 'clip'); el.style.fontSize = ''; el.style.maxWidth = '';
+      // 1.6: op het eerste stuk rij zonder meubel waar de naam helemaal op past; anders midden op de onderste rij.
+      // Het hele bord: alleen de onderste rij (daar zoekt het oog de naam); ingezoomd mag hij een rij hoger.
+      if (el.dataset.home && cols && rows) {
+        const homeY = +el.dataset.home.split(':')[0];
+        const runs = (el.dataset.runs || '').split(';').filter(Boolean).map(r => r.split(':').map(Number)).filter(r => this.zoom > 1 || r[0] === homeY);
+        // past hij nergens: ingezoomd het breedste vrije stuk (daar wordt hij kleiner of gaat hij over twee regels)
+        const fit = runs.find(([, x0, x1]) => el.offsetWidth <= gw * (x1 - x0 + 1) / cols + 2) ||
+          (this.zoom > 1 && runs.length ? runs.reduce((a, b) => (b[2] - b[1] > a[2] - a[1] ? b : a)) : null);
+        const [y, x0, x1] = fit || el.dataset.home.split(':').map(Number);
+        el.style.left = `${((x0 + x1 + 1) / 2 / cols) * 100}%`;
+        el.style.top = `${((y + 1) / rows) * 100}%`;
+        el.dataset.w = ((x1 - x0 + 1) / cols) * 100;
+      }
       const max = gw * (+el.dataset.w || 100) / 100 + 4;
       if (el.offsetWidth <= max) return;
       el.style.fontSize = `${Math.max(7, parseFloat(getComputedStyle(el).fontSize) * 0.85)}px`;
@@ -1207,6 +1302,207 @@ const Board = {
     window.addEventListener('orientationchange', fit);
   },
 
+  // ── Inzoomen (1.6) ────────────────────────────────────────
+  // Borden vanaf 8×8 zijn op een kleine telefoon klein (9×9 op 320 px: vakjes van 22 px). De vergrootknop in de
+  // bovenbalk zoomt in rond het laatst aangetikte vakje; knijpen (aanraking) of ctrl/trackpad + scrollen (muis)
+  // zoomt traploos. Ingezoomd verschuif je het bord door te slepen vanaf een vakje zonder verdachte (een
+  // verdachte slepen verplaatst hem, zoals altijd) of met het scrollwiel. Eén tik op de knop: weer het hele bord.
+  // Het bord wordt echt groter opgemaakt (geen schaal), dus kamernamen, naamkaartjes en stipjes houden hun
+  // maat terwijl de vakjes groeien: ze bedekken minder, en fitLabels zet een kamernaam naast de meubels.
+  ZOOM_MAX: 3,
+  canZoom() { const p = this.puzzle; return !!p && !this.isTutorial && !this.accusing && Math.max(p.cols, p.rows) >= 8; },
+  // de stand van de vergrootknop: vakjes van zo'n 48 px, minstens 1,6× en hoogstens 2,6×
+  zoomTarget() { return Math.max(1.6, Math.min(2.6, 48 / ((this.baseW || 300) / this.puzzle.cols))); },
+  stageEl() { return typeof document !== 'undefined' ? document.querySelector('#screen-board .board-stage') : null; },
+  resetZoom() {
+    this.zoom = 1; this.pan = null;
+    const stage = this.stageEl(), grid = typeof document !== 'undefined' && document.getElementById('board-grid');
+    if (stage) stage.classList.remove('zoomed');
+    if (grid) grid.style.transform = '';
+    this.updateBoardActs();
+  },
+  // z: zoomfactor; anchor: het punt van het bord (fx, fy als deel van breedte en hoogte) dat op plek sx, sy van het
+  // podium moet komen. live: tijdens knijpen, dan nog niet alle labels opnieuw passen.
+  zoomTo(z, anchor, live = false) {
+    const stage = this.stageEl(), grid = document.getElementById('board-grid');
+    if (!stage || !grid || !this.puzzle || !this.baseW) return;
+    z = Math.min(this.ZOOM_MAX, Math.max(1, z || 1));
+    if (z < 1.05 || !this.canZoom()) { const was = this.zoom > 1; this.resetZoom(); if (was) this.fitBoard(); return; }
+    const cw = stage.clientWidth, ch = stage.clientHeight;
+    const a = anchor || { fx: 0.5, fy: 0.5, sx: cw / 2, sy: ch / 2 };
+    this.zoom = z;
+    stage.classList.add('zoomed');
+    grid.style.width = `${this.baseW * z}px`;
+    grid.style.height = `${this.baseH * z}px`;
+    this.panTo(a.sx - a.fx * this.baseW * z, a.sy - a.fy * this.baseH * z);
+    if (!live) { this.fitLabels(grid); this.fitNames(); }
+    this.updateBoardActs();
+  },
+  // verschuiven, maar nooit verder dan de rand van het bord; past het in een richting, dan in het midden
+  panTo(x, y) {
+    const stage = this.stageEl(), grid = document.getElementById('board-grid');
+    if (!stage || !grid || this.zoom <= 1) return;
+    const cw = stage.clientWidth, ch = stage.clientHeight, gw = this.baseW * this.zoom, gh = this.baseH * this.zoom;
+    x = gw <= cw ? (cw - gw) / 2 : Math.min(0, Math.max(cw - gw, x));
+    y = gh <= ch ? (ch - gh) / 2 : Math.min(0, Math.max(ch - gh, y));
+    this.pan = { x, y };
+    grid.style.transform = `translate(${x}px, ${y}px)`;
+  },
+  // ingezoomd: deze vakjes (hun midden) midden in beeld
+  centerOn(cells) {
+    const stage = this.stageEl(), p = this.puzzle;
+    if (!stage || !p || this.zoom <= 1 || !cells || !cells.length) return;
+    const fx = cells.reduce((a, c) => a + c.x + 0.5, 0) / cells.length / p.cols, fy = cells.reduce((a, c) => a + c.y + 0.5, 0) / cells.length / p.rows;
+    this.panTo(stage.clientWidth / 2 - fx * this.baseW * this.zoom, stage.clientHeight / 2 - fy * this.baseH * this.zoom);
+  },
+  // het punt van het bord dat nu midden in beeld staat (om na een draai of nieuwe maat daar te blijven)
+  viewAnchor() {
+    const stage = this.stageEl();
+    if (!stage || !this.pan || this.zoom <= 1) return null;
+    const cw = stage.clientWidth, ch = stage.clientHeight, gw = this.baseW * this.zoom, gh = this.baseH * this.zoom;
+    return { fx: Math.min(1, Math.max(0, (cw / 2 - this.pan.x) / gw)), fy: Math.min(1, Math.max(0, (ch / 2 - this.pan.y) / gh)), sx: cw / 2, sy: ch / 2 };
+  },
+  toggleZoom() {
+    if (this.zoom > 1) { this.resetZoom(); this.fitBoard(); return; }
+    if (!this.canZoom()) return;
+    const p = this.puzzle, stage = this.stageEl();
+    const c = this.lastCell || (this.hintRefs && this.hintRefs.cells && this.hintRefs.cells[0]) || null;
+    const at = c ? { fx: (c.x + 0.5) / p.cols, fy: (c.y + 0.5) / p.rows } : { fx: 0.5, fy: 0.5 };
+    this.zoomTo(this.zoomTarget(), { ...at, sx: stage.clientWidth / 2, sy: stage.clientHeight / 2 });
+    this.buzz(8);
+  },
+  // knoppen in de bovenbalk: vergrootglas alleen bij grote borden, "?" niet in de oefenzaak
+  updateBoardActs() {
+    if (typeof document === 'undefined') return;
+    const help = document.getElementById('btn-board-help');
+    if (help) help.hidden = !!this.isTutorial;
+    const b = document.getElementById('btn-board-zoom');
+    if (!b) return;
+    const on = this.zoom > 1;
+    b.hidden = !on && !this.canZoom();
+    if (b.dataset.on === String(on)) return;
+    b.dataset.on = String(on);
+    b.classList.toggle('on', on);
+    if (typeof Icons !== 'undefined') b.innerHTML = Icons.html(on ? 'zoom-out' : 'zoom-in');
+    b.setAttribute('aria-label', on ? BD_T('Heel bord') : BD_T('Inzoomen'));
+  },
+  // na slepen of knijpen geen tik op het vakje eronder
+  swallowClick() { this.dragDone = true; setTimeout(() => { this.dragDone = false; }, 0); },
+  bindZoom() {
+    const stage = this.stageEl(), grid = document.getElementById('board-grid');
+    if (!stage || !grid) return;
+    const pts = new Map();
+    let pinch = null, pan = null, raf = 0, job = null;
+    const frame = fn => { job = fn; if (!raf) raf = requestAnimationFrame(() => { raf = 0; const f = job; job = null; if (f) f(); }); };
+    const local = (x, y) => { const r = stage.getBoundingClientRect(); return { sx: x - r.left, sy: y - r.top }; };
+    const onBoard = (x, y) => { const g = grid.getBoundingClientRect(); return { fx: (x - g.left) / g.width, fy: (y - g.top) / g.height }; };
+    stage.addEventListener('pointerdown', e => {
+      if (e.pointerType === 'mouse' && e.button > 0) return;
+      if (e.isPrimary) pts.clear();   // een nieuwe eerste vinger (of muis): wat er nog stond is blijven hangen
+      pts.set(e.pointerId, { x: e.clientX, y: e.clientY });
+      if (pts.size === 2 && e.pointerType !== 'mouse' && this.canZoom()) {
+        const [a, b] = [...pts.values()];
+        if (this.cancelDrag) this.cancelDrag();
+        pinch = { d0: Math.hypot(a.x - b.x, a.y - b.y) || 1, z0: this.zoom, ...onBoard((a.x + b.x) / 2, (a.y + b.y) / 2) };
+        pan = null;
+        return;
+      }
+      if (pts.size === 1 && this.zoom > 1 && this.pan && !(this.isDragging && this.isDragging())) {
+        pan = { id: e.pointerId, x0: e.clientX, y0: e.clientY, px: this.pan.x, py: this.pan.y, moved: false };
+      }
+    });
+    document.addEventListener('pointermove', e => {
+      if (!pts.has(e.pointerId)) return;
+      pts.set(e.pointerId, { x: e.clientX, y: e.clientY });
+      if (pinch && pts.size >= 2) {
+        const [a, b] = [...pts.values()], P = pinch;
+        const z = P.z0 * Math.hypot(a.x - b.x, a.y - b.y) / P.d0;
+        const at = { fx: P.fx, fy: P.fy, ...local((a.x + b.x) / 2, (a.y + b.y) / 2) };
+        frame(() => this.zoomTo(z, at, true));
+        return;
+      }
+      if (pan && e.pointerId === pan.id) {
+        const P = pan, dx = e.clientX - P.x0, dy = e.clientY - P.y0;
+        if (!P.moved && Math.hypot(dx, dy) < 6) return;
+        P.moved = true;
+        frame(() => this.panTo(P.px + dx, P.py + dy));
+      }
+    }, { passive: true });
+    const end = e => {
+      if (!pts.has(e.pointerId)) return;
+      pts.delete(e.pointerId);
+      if (pinch) {
+        if (pts.size >= 2) return;
+        pinch = null;
+        this.swallowClick();
+        frame(() => {
+          if (this.zoom < 1.15) { if (this.zoom > 1) { this.resetZoom(); this.fitBoard(); } }
+          else { this.fitLabels(grid); this.fitNames(); }
+        });
+        return;
+      }
+      if (pan && e.pointerId === pan.id) { if (pan.moved) this.swallowClick(); pan = null; }
+    };
+    document.addEventListener('pointerup', end);
+    document.addEventListener('pointercancel', end);
+    // muis en trackpad: ctrl + scrollen (zo meldt de trackpad ook knijpen) zoomt, gewoon scrollen verschuift
+    let settle = null;
+    stage.addEventListener('wheel', e => {
+      if (e.ctrlKey && this.canZoom()) {
+        e.preventDefault();
+        const step = Math.max(-50, Math.min(50, e.deltaY));   // een muiswiel geeft grote stappen, een trackpad kleine
+        this.zoomTo(this.zoom * Math.exp(-step * 0.01), { ...onBoard(e.clientX, e.clientY), ...local(e.clientX, e.clientY) }, true);
+        clearTimeout(settle);
+        settle = setTimeout(() => { if (this.zoom > 1) { this.fitLabels(grid); this.fitNames(); } }, 160);
+      } else if (this.zoom > 1 && this.pan) {
+        e.preventDefault();
+        this.panTo(this.pan.x - e.deltaX, this.pan.y - e.deltaY);
+      }
+    }, { passive: false });
+  },
+
+  // ── Uitleg op aanvraag (1.6) ──────────────────────────────
+  // De "?" in de bovenbalk toont alle uitlegkaarten opnieuw (dezelfde als de "Nieuw in dit deel"-kaarten):
+  // eerst de soorten die in deze zaak voorkomen, dan de rest. Bij meester eerst een kaart over lege rijen en
+  // kolommen. De klok staat stil zolang je leest.
+  EMPTY_LINES_ID: 'leeg-rijen',
+  emptyLinesCard() {
+    return {
+      id: this.EMPTY_LINES_ID, kinds: [], title: BD_T('Lege rijen en kolommen'),
+      text: BD_T('Op dit bord zijn er meer rijen en kolommen dan verdachten. Veel rijen en kolommen blijven dus leeg, en twee verdachten mogen best op dezelfde rij of in dezelfde kolom staan. Alleen de verklaringen tellen.'),
+      svg: '<svg viewBox="0 0 60 60"><rect x="2" y="2" width="56" height="56" fill="#F3EDE3" stroke="#1A1108" stroke-width="3"/><path d="M13.2 2v56M24.4 2v56M35.6 2v56M46.8 2v56M2 13.2h56M2 24.4h56M2 35.6h56M2 46.8h56" stroke="#1A1108" stroke-opacity="0.2"/><rect x="3.5" y="24.4" width="53" height="11.2" fill="#8B2E1C" opacity="0.18"/><circle cx="18.8" cy="30" r="4.5" fill="#B85C5C" stroke="#1A1108" stroke-width="1.5"/><circle cx="41.2" cy="30" r="4.5" fill="#5C7AB8" stroke="#1A1108" stroke-width="1.5"/><circle cx="30" cy="52.4" r="4.5" fill="#5C8B5E" stroke="#1A1108" stroke-width="1.5"/></svg>'
+    };
+  },
+  helpCards() {
+    const p = this.puzzle, kinds = new Set(p ? p.clues.map(c => c.kind) : []);
+    const intros = typeof Mentor !== 'undefined' ? Mentor.INTROS : [];
+    const here = i => i.kinds.some(k => kinds.has(k));
+    return [
+      ...(this.difficulty === 'meester' && !this.isTutorial ? [{ ...this.emptyLinesCard(), here: true }] : []),
+      ...intros.filter(here).map(i => ({ ...i, here: true })),
+      ...intros.filter(i => !here(i))
+    ];
+  },
+  openHelp() {
+    const host = document.getElementById('help-cards');
+    if (!host || !this.puzzle) return;
+    host.innerHTML = this.helpCards().map(c => `<div class="help-card${c.here ? ' here' : ''}" data-help="${c.id}">
+        <span class="newclue-pic">${c.svg}</span>
+        <div class="help-card-body"><h4>${c.title}</h4>${c.here ? `<span class="help-here">${BD_T('In deze zaak')}</span>` : ''}<p>${c.text}</p></div>
+      </div>`).join('');
+    this.helpPaused = !!this.timerId && !this.solved;
+    if (this.helpPaused) this.stopTimer();
+    App.showModal('help-modal');
+    const sheet = host.closest('.modal-content');
+    if (sheet) sheet.scrollTop = 0;
+  },
+  closeHelp() {
+    App.hideModal('help-modal');
+    if (!this.helpPaused) return;
+    this.helpPaused = false;
+    if (!this.solved && this.puzzle) { this.elapsedBase = this.elapsed || 0; this.startTimer(); }
+  },
+
   // ── Slepen: een verdachte van de balk of van het bord naar een vakje ──
   // Tikken blijft werken (eerst de verdachte, dan het vakje); slepen is
   // directer. Een geplaatste verdachte sleep je naar een ander vakje, op een
@@ -1215,6 +1511,15 @@ const Board = {
     const grid = document.getElementById('board-grid'), strip = document.getElementById('board-suspects');
     if (!grid || !strip) return;
     let d = null;
+    // voor inzoomen (bindZoom): sleept er iemand, en een tweede vinger breekt het slepen af
+    this.isDragging = () => !!d;
+    this.cancelDrag = () => {
+      if (!d) return;
+      if (d.ghost) d.ghost.remove();
+      d.src.classList.remove('dragging');
+      this.markDrop(null);
+      d = null;
+    };
     const begin = (e, s, from, src) => {
       if (this.solved || this.accusing || (e.button && e.button > 0)) return;
       d = { s, from, src, id: e.pointerId, x0: e.clientX, y0: e.clientY, moved: false, ghost: null };
@@ -1290,9 +1595,10 @@ const Board = {
     if (from && from.x === x && from.y === y) return false;
     if (!this.canDrop(s, x, y, from)) { this.flash(x, y); Sound.play('error'); return false; }
     const occupant = this.placements.findIndex(c => c && c.x === x && c.y === y);
-    this.history.push({ placements: this.placements.slice(), marks: this.cloneMarks() });
+    this.history.push(this.snap());
     if (occupant !== -1 && occupant !== s) this.placements[occupant] = from;   // van plek wisselen
     this.placements[s] = { x, y };
+    this.lastCell = { x, y };
     this.buzz(12);
     Sound.play('place');
     this.sparks(x, y);
@@ -1305,7 +1611,7 @@ const Board = {
   },
   liftSuspect(s) {
     if (this.solved || !this.placements[s]) return false;
-    this.history.push({ placements: this.placements.slice(), marks: this.cloneMarks() });
+    this.history.push(this.snap());
     this.placements[s] = null;
     this.active = s;
     this.buzz(8);
@@ -1346,6 +1652,19 @@ const Board = {
     document.getElementById('btn-board-place').addEventListener('click', () => this.setMode('place'));
     document.getElementById('btn-board-mark').addEventListener('click',  () => this.setMode('mark'));
     document.getElementById('btn-board-erase').addEventListener('click', () => this.setMode('erase'));
+    // 1.6 (ook in de webdagzaak, die een deel van index.html overneemt: daarom elk element eerst opzoeken)
+    const on = (id, fn) => { const el = document.getElementById(id); if (el) el.addEventListener('click', fn); };
+    on('btn-board-cross', () => this.setMode('cross'));
+    on('btn-board-zoom', () => this.toggleZoom());
+    on('btn-board-help', () => this.openHelp());
+    on('btn-help-close', () => this.closeHelp());
+    // instelling: rij en kolom automatisch wegstrepen (standaard aan)
+    const chkX = document.getElementById('chk-autostrike');
+    if (chkX) {
+      chkX.checked = this.autoStrikeOn();
+      chkX.addEventListener('change', () => { App.storageSet(this.AUTOSTRIKE_KEY, chkX.checked ? '1' : '0'); if (this.puzzle) this.renderCells(); });
+    }
+    this.bindZoom();
     document.getElementById('btn-board-undo').addEventListener('click',  () => this.undo());
     document.getElementById('btn-board-hint').addEventListener('click',  () => this.hint());
     document.getElementById('btn-board-check').addEventListener('click', () => this.check());
