@@ -1309,6 +1309,418 @@
           "Onderwijzeres Wilma": "Wilma",
           "Telegrafiste Fien": "Fien"
         }
+      },
+      "oceaanstomer": {
+        "title": "SS Halcyon",
+        "short": "Okyanus",
+        "victimName": "Armatör Ambrose Kingsley",
+        "roomWord": "alan",
+        "roomWordPlural": "alanlar",
+        "tagline": "Mayıs 1910. New York’a beş gün, güvertenin üstünde Halley kuyruklu yıldızı ve karşı kıyıya hiç varamayan bir armatör.",
+        "intro": "SS Halcyon, Mayıs 1910, Atlas Okyanusu’nun ortası. Gezinti güvertesinde herkes Halley kuyruklu yıldızını izliyor. Armatör Ambrose Kingsley hariç: o, sigara odasında, hâlâ için için yanan bir puronun yanında yatıyor.",
+        "outro": "Halcyon New York’ta rıhtıma yanaşıyor. Rıhtımda polis bekliyor ve kimi beklediğini sen biliyorsun.",
+        "rooms": {
+          "Promenadedek": "Güverte",
+          "Balzaal": "Balo Salonu",
+          "Rookkamer": "Sigara Odası",
+          "Eetzaal": "Yemek Salonu",
+          "Suite": "Süit",
+          "Machinekamer": "Makine Odası",
+          "Brug": "Köprü",
+          "Radiokamer": "Telsiz Odası",
+          "Kombuis": "Kuzine",
+          "Ruim": "Ambar",
+          "Bibliotheek": "Kütüphane",
+          "Serre": "Kış Bahçesi"
+        },
+        "furniture": {
+          "stuurrad": "dümen çarkı",
+          "scheepstelegraaf": "makine telgrafı",
+          "dekstoel": "şezlong",
+          "scheepsbel": "gemi çanı",
+          "hoedendoos": "şapka kutusu"
+        },
+        "suspects": {
+          "Kapitein Grant": "Kaptan Grant",
+          "Stewardess Molly": "Kamarot Molly",
+          "Vliegenierster Solange": "Havacı Solange",
+          "Professor Lund": "Profesör Lund",
+          "Suffragette Harriet": "Süfrajet Harriet",
+          "Marconist Arthur": "Telsizci Arthur",
+          "Hoofdmachinist Doyle": "Başmakinist Doyle",
+          "Hoedenmaakster Edna": "Şapkacı Edna"
+        },
+        "suspectShort": {
+          "Kapitein Grant": "Grant",
+          "Stewardess Molly": "Molly",
+          "Vliegenierster Solange": "Solange",
+          "Professor Lund": "Lund",
+          "Suffragette Harriet": "Harriet",
+          "Marconist Arthur": "Arthur",
+          "Hoofdmachinist Doyle": "Doyle",
+          "Hoedenmaakster Edna": "Edna"
+        }
+      },
+      "ryokan": {
+        "title": "Ryokan Tsukikage",
+        "short": "Ryokan",
+        "victimName": "Hancı Genzo Kurata",
+        "roomWord": "alan",
+        "roomWordPlural": "alanlar",
+        "tagline": "Kyoto, 1925. Bahçede kiraz çiçekleri, kaplıcada sıcak su ve sabah çayını bir daha içemeyecek bir hancı.",
+        "intro": "Ryokan Tsukikage, Kyoto yakınlarındaki tepelerde, Nisan 1925. Kirazlar çiçek açmış, bütün odalar dolu. Hancı Genzo Kurata sabah çayına gelmiyor. Çay evinde, hâlâ sıcak bir kâsenin yanında yatıyor.",
+        "outro": "Kar bahçeyi örtüyor, kaplıca tütüyor. Her konuk evine dönebilir, biri hariç.",
+        "rooms": {
+          "Gastenkamer": "Konuk Odası",
+          "Onsen": "Kaplıca",
+          "Theehuis": "Çay Evi",
+          "Tuin": "Bahçe",
+          "Keuken": "Mutfak",
+          "Veranda": "Veranda",
+          "Hal": "Giriş Holü",
+          "Eetzaal": "Yemek Salonu",
+          "Bamboebos": "Bambu Korusu",
+          "Voorraadkamer": "Kiler",
+          "Steiger": "İskele",
+          "Wasruimte": "Yıkanma Odası"
+        },
+        "furniture": {
+          "steenlantaarn": "taş fener",
+          "tetsubin": "demir demlik",
+          "byobu": "altın paravan",
+          "bonsai": "bonsai",
+          "wagasa": "kâğıt şemsiye",
+          "futon": "futon"
+        },
+        "suspects": {
+          "Gastvrouw Fumiko": "Ev Sahibesi Fumiko",
+          "Kok Takeshi": "Aşçı Takeshi",
+          "Theemeesteres Chiyo": "Çay Ustası Chiyo",
+          "Ingenieur Isamu": "Mühendis Isamu",
+          "Fotografe Sachiko": "Fotoğrafçı Sachiko",
+          "Tuinman Goro": "Bahçıvan Goro",
+          "Plantkundige Evelyn": "Botanikçi Evelyn",
+          "Prentmaker Hiroshi": "Gravürcü Hiroshi"
+        },
+        "suspectShort": {
+          "Gastvrouw Fumiko": "Fumiko",
+          "Kok Takeshi": "Takeshi",
+          "Theemeesteres Chiyo": "Chiyo",
+          "Ingenieur Isamu": "Isamu",
+          "Fotografe Sachiko": "Sachiko",
+          "Tuinman Goro": "Goro",
+          "Plantkundige Evelyn": "Evelyn",
+          "Prentmaker Hiroshi": "Hiroshi"
+        }
+      },
+      "fazenda": {
+        "title": "Fazenda Boa Esperança",
+        "short": "Fazenda",
+        "victimName": "Kahve Baronu Augusto Valadares",
+        "roomWord": "alan",
+        "roomWordPlural": "alanlar",
+        "tagline": "Brezilya, 1926. Kurutma yerinde kahve meyveleri, verandada müzik ve hasadı bir daha sayamayacak bir kahve baronu.",
+        "intro": "Fazenda Boa Esperança, São Paulo, Haziran 1926. Hasat kaldırıldı, kurutma yeri kahve meyveleriyle dolu. Kahve baronu Augusto Valadares hasat şenliğine gelmiyor. Kavurmahanede, çuvalların arasında yatıyor.",
+        "outro": "Kurutma yeri boş, hesaplar yeniden tutuyor. Verandada müzik çalmaya devam ediyor.",
+        "rooms": {
+          "Droogvloer": "Kurutma Yeri",
+          "Koffieveld": "Kahve Tarlası",
+          "Pakhuis": "Depo",
+          "Branderij": "Kavurmahane",
+          "Veranda": "Veranda",
+          "Kapel": "Şapel",
+          "Stal": "Ahır",
+          "Keuken": "Mutfak",
+          "Eetkamer": "Yemek Odası",
+          "Salon": "Salon",
+          "Studeerkamer": "Çalışma Odası",
+          "Serre": "Sera"
+        },
+        "furniture": {
+          "koffiezak": "kahve çuvalı",
+          "koffiemolen": "kahve değirmeni",
+          "koffiestruik": "kahve fidanı",
+          "papegaai": "papağan",
+          "schommelstoel": "sallanan sandalye"
+        },
+        "suspects": {
+          "Dona Celeste": "Dona Celeste",
+          "Rentmeester Joaquim": "Vekilharç Joaquim",
+          "Lerares Giulia": "Öğretmen Giulia",
+          "Koffieproever Bento": "Tadımcı Bento",
+          "Pianiste Zélia": "Piyanist Zélia",
+          "Agronoom Hideo": "Agronom Hideo",
+          "Inkoper Mulder": "Tüccar Mulder",
+          "Dokter Lúcia": "Doktor Lúcia"
+        },
+        "suspectShort": {
+          "Dona Celeste": "Celeste",
+          "Rentmeester Joaquim": "Joaquim",
+          "Lerares Giulia": "Giulia",
+          "Koffieproever Bento": "Bento",
+          "Pianiste Zélia": "Zélia",
+          "Agronoom Hideo": "Hideo",
+          "Inkoper Mulder": "Mulder",
+          "Dokter Lúcia": "Lúcia"
+        }
+      },
+      "zeppelin": {
+        "title": "Cirrus Zeplini",
+        "short": "Zeplin",
+        "victimName": "Tasarımcı Anton Falk",
+        "roomWord": "alan",
+        "roomWordPlural": "alanlar",
+        "tagline": "1929. Okyanusun üstünde üç gün, kimse inemiyor ve zeplini yapan adam onunla birlikte yere inmiyor.",
+        "intro": "Cirrus Zeplini, Ağustos 1929. Zeplin üç gündür okyanusun üstünde süzülüyor, Rio de Janeiro yolunda. Akşam yemeğinden sonra tasarımcı Anton Falk harita odasında yatıyor, rota hâlâ elinde.",
+        "outro": "Zeplin direğe bağlandı. Rota doğruydu, artık gerisi de doğru.",
+        "rooms": {
+          "Salon": "Salon",
+          "Eetzaal": "Yemek Salonu",
+          "Slaapcabine": "Uyku Kabini",
+          "Kombuis": "Kuzine",
+          "Bar": "Bar",
+          "Kaartenkamer": "Harita Odası",
+          "Radiokamer": "Telsiz Odası",
+          "Stuurgondel": "Dümen Gondolu",
+          "Motorgondel": "Motor Gondolu",
+          "Loopbrug": "Dar Geçit",
+          "Postkamer": "Posta Odası",
+          "Uitkijkpost": "Gözcü Yeri"
+        },
+        "furniture": {
+          "luchtschroef": "pervane",
+          "sextant": "sekstant",
+          "postzak": "posta çuvalı",
+          "wereldbol": "dünya küresi",
+          "schrijfmachine": "daktilo"
+        },
+        "suspects": {
+          "Commandant Brandt": "Komutan Brandt",
+          "Verslaggeefster Daisy": "Muhabir Daisy",
+          "Navigator Mateus": "Navigatör Mateus",
+          "Weerkundige Liv": "Meteorolog Liv",
+          "Monteur Rudi": "Tamirci Rudi",
+          "Tennisster Josette": "Tenisçi Josette",
+          "Diplomaat Vidal": "Diplomat Vidal",
+          "Postmeesteres Elsbeth": "Posta Memuru Elsbeth"
+        },
+        "suspectShort": {
+          "Commandant Brandt": "Brandt",
+          "Verslaggeefster Daisy": "Daisy",
+          "Navigator Mateus": "Mateus",
+          "Weerkundige Liv": "Liv",
+          "Monteur Rudi": "Rudi",
+          "Tennisster Josette": "Josette",
+          "Diplomaat Vidal": "Vidal",
+          "Postmeesteres Elsbeth": "Elsbeth"
+        }
+      },
+      "poolstation": {
+        "title": "Güney Haçı İstasyonu",
+        "short": "Kutup",
+        "victimName": "İstasyon Şefi Gunnar Holm",
+        "roomWord": "alan",
+        "roomWordPlural": "alanlar",
+        "tagline": "Antarktika, 1958. Dört ay süren kutup gecesi, kışı buzda geçiren sekiz kişi ve kış ortası şölenine hiç varamayan bir istasyon şefi.",
+        "intro": "Güney Haçı İstasyonu, Haziran 1958. Antarktika’da kış ortası: haftalardır güneş yok, ilkbahara kadar uçak da yok. Kış ortası şöleninde bir sandalye boş kalıyor. İstasyon şefi Gunnar Holm telsiz odasında yatıyor, kulaklığı hâlâ başında.",
+        "outro": "Güneş yeniden buzun üstünde. İlk uçak postayı getiriyor ve faili evine götürüyor.",
+        "rooms": {
+          "Radiokamer": "Telsiz Odası",
+          "Kennel": "Köpek Barınağı",
+          "Laboratorium": "Laboratuvar",
+          "Kantine": "Kantin",
+          "Slaapzaal": "Yatakhane",
+          "Machinekamer": "Makine Odası",
+          "Ziekenboeg": "Revir",
+          "Voorraadkamer": "Kiler",
+          "Werkplaats": "Atölye",
+          "Weerhut": "Hava Kulübesi",
+          "Observatorium": "Gözlemevi",
+          "Sneeuwtunnel": "Kar Tüneli"
+        },
+        "furniture": {
+          "zender": "telsiz cihazı",
+          "sledehond": "kızak köpeği",
+          "weerballon": "meteoroloji balonu",
+          "sneeuwrups": "ratrak",
+          "microscoop": "mikroskop"
+        },
+        "suspects": {
+          "Marconist Ole": "Telsizci Ole",
+          "Glaciologe Marina": "Buzulbilimci Marina",
+          "Dokter Kenji": "Doktor Kenji",
+          "Meteorologe Nancy": "Meteorolog Nancy",
+          "Hondenmenner Rewi": "Kızakçı Rewi",
+          "Monteur Lieve": "Tamirci Lieve",
+          "Kok Diego": "Aşçı Diego",
+          "Natuurkundige Hélène": "Fizikçi Hélène"
+        },
+        "suspectShort": {
+          "Marconist Ole": "Ole",
+          "Glaciologe Marina": "Marina",
+          "Dokter Kenji": "Kenji",
+          "Meteorologe Nancy": "Nancy",
+          "Hondenmenner Rewi": "Rewi",
+          "Monteur Lieve": "Lieve",
+          "Kok Diego": "Diego",
+          "Natuurkundige Hélène": "Hélène"
+        }
+      },
+      "winterpaleis": {
+        "title": "Zvezdin Sarayı",
+        "short": "Kış Sarayı",
+        "victimName": "Kont Andrey Zvezdin",
+        "roomWord": "oda",
+        "roomWordPlural": "odalar",
+        "tagline": "Sankt Peterburg, 1899’un son gecesi. Donmuş bir Neva, yüzyılın son valsi ve kadeh kaldıracağı anı göremeyen bir kont.",
+        "intro": "Zvezdin Sarayı, Sankt Peterburg, 1899’un son gecesi. Neva donmuş, balo salonunda orkestra yüzyılın son valsini çalıyor. Gece yarısı Kont Andrey Zvezdin kadeh kaldıracaktı. Kütüphanede yatıyor, kadehi hâlâ dolu.",
+        "outro": "Mumlar söndü, yeni yüzyıl başladı. Eskisinin son sırrını sen çözdün.",
+        "rooms": {
+          "Balzaal": "Balo Salonu",
+          "Bibliotheek": "Kütüphane",
+          "Kapel": "Şapel",
+          "IJsbaan": "Buz Pisti",
+          "Serre": "Kış Bahçesi",
+          "Spiegelzaal": "Aynalı Salon",
+          "Rookkamer": "Sigara Odası",
+          "Keuken": "Mutfak",
+          "Trappenhuis": "Büyük Merdiven",
+          "Eetzaal": "Yemek Salonu",
+          "Garderobe": "Vestiyer",
+          "Koetshuis": "Arabalık"
+        },
+        "furniture": {
+          "balalaika": "balalayka",
+          "matroesjka": "matruşka",
+          "juwelenei": "mücevherli yumurta",
+          "schaatsen": "paten",
+          "ijszwaan": "buzdan kuğu",
+          "kaviaar": "havyar kâsesi"
+        },
+        "suspects": {
+          "Gravin Jelena": "Kontes Yelena",
+          "Componist Sergej": "Besteci Sergey",
+          "Schaatsster Vera": "Patinajcı Vera",
+          "Goudsmid Pavel": "Kuyumcu Pavel",
+          "Gouvernante Mabel": "Mürebbiye Mabel",
+          "Luitenant Dmitri": "Teğmen Dmitri",
+          "Hofmeester Fjodor": "Kâhya Fyodor",
+          "Fotografe Irina": "Fotoğrafçı İrina"
+        },
+        "suspectShort": {
+          "Gravin Jelena": "Yelena",
+          "Componist Sergej": "Sergey",
+          "Schaatsster Vera": "Vera",
+          "Goudsmid Pavel": "Pavel",
+          "Gouvernante Mabel": "Mabel",
+          "Luitenant Dmitri": "Dmitri",
+          "Hofmeester Fjodor": "Fyodor",
+          "Fotografe Irina": "İrina"
+        }
+      },
+      "safarilodge": {
+        "title": "Twiga Lodge",
+        "short": "Safari",
+        "victimName": "Belgeselci Rupert Vane",
+        "roomWord": "alan",
+        "roomWordPlural": "alanlar",
+        "tagline": "Kenya, 1974. Ovada bir milyon antilop, konuklarla dolu bir kamp ve son çekimini göremeyecek bir belgeselci.",
+        "intro": "Twiga Lodge, Maasai Mara, Ağustos 1974. Büyük göç başladı: bir milyon antilop kampın önünden geçiyor ve bütün çadırlar dolu. Ateş başındaki geceden sonra belgeselci Rupert Vane karanlık odada, film makaralarının arasında yatıyor.",
+        "outro": "Antiloplar yollarına devam ediyor, kamp sessizleşiyor. Son çekim senin.",
+        "rooms": {
+          "Veranda": "Veranda",
+          "Waterpoel": "Gölet Kıyısı",
+          "Kampvuur": "Ateş Başı",
+          "Bar": "Bar",
+          "Slaaptent": "Uyku Çadırı",
+          "Landingsbaan": "Uçak Pisti",
+          "Uitkijktoren": "Gözcü Kulesi",
+          "Keuken": "Mutfak",
+          "Donkere kamer": "Karanlık Oda",
+          "Kantoor": "Ofis",
+          "Garage": "Garaj",
+          "Eetzaal": "Yemek Salonu"
+        },
+        "furniture": {
+          "safariwagen": "safari cipi",
+          "klamboe": "cibinlik",
+          "windzak": "rüzgâr tulumu",
+          "acacia": "akasya",
+          "giraf": "ahşap zürafa",
+          "sisalmand": "sisal sepet"
+        },
+        "suspects": {
+          "Eigenares Wambui": "Kamp Sahibi Wambui",
+          "Gids Otieno": "Rehber Otieno",
+          "Dierenarts Njeri": "Veteriner Njeri",
+          "Piloot Kiprono": "Pilot Kiprono",
+          "Chef Hamisi": "Şef Hamisi",
+          "Journaliste Amina": "Gazeteci Amina",
+          "Geluidsman Felix": "Sesçi Felix",
+          "Biologe Birgit": "Biyolog Birgit"
+        },
+        "suspectShort": {
+          "Eigenares Wambui": "Wambui",
+          "Gids Otieno": "Otieno",
+          "Dierenarts Njeri": "Njeri",
+          "Piloot Kiprono": "Kiprono",
+          "Chef Hamisi": "Hamisi",
+          "Journaliste Amina": "Amina",
+          "Geluidsman Felix": "Felix",
+          "Biologe Birgit": "Birgit"
+        }
+      },
+      "hanok": {
+        "title": "Hanok Dalbit",
+        "short": "Hanok",
+        "victimName": "Yun Jae-ho Bey",
+        "roomWord": "oda",
+        "roomWordPlural": "odalar",
+        "tagline": "Joseon, 1795. Dolunay olmuş bir hasat ayı, eve dönen bir aile ve son şiirini bitiremeyen bir ev efendisi.",
+        "intro": "Hanok Dalbit, Joseon dağlarında, 1795 sonbaharı. Chuseok geldi: hasat ayı dolunay, bütün aile evde. Ay şenliğinden sonra Yun Jae-ho Bey göletin yanındaki köşkte yatıyor, üç dizelik bir şiirin yanında.",
+        "outro": "Ay yeniden dağların üstünde, dolunay. Şiir tamamlandı ve son dizeyi sen yazdın.",
+        "rooms": {
+          "Binnenplaats": "Avlu",
+          "Theekamer": "Çay Odası",
+          "Keuken": "Mutfak",
+          "Studeerkamer": "Çalışma Odası",
+          "Paviljoen": "Köşk",
+          "Bibliotheek": "Kütüphane",
+          "Gastenkamer": "Konuk Odası",
+          "Kruidentuin": "Ot Bahçesi",
+          "Poort": "Ana Kapı",
+          "Voorouderhal": "Atalar Odası",
+          "Kruikenterras": "Küp Terası",
+          "Voorraadkamer": "Kiler"
+        },
+        "furniture": {
+          "gayageum": "gayageum",
+          "kimchipot": "kimchi küpü",
+          "janggu": "davul",
+          "maanvaas": "ay vazosu",
+          "inktsteen": "mürekkep taşı",
+          "theetafel": "çay masası"
+        },
+        "suspects": {
+          "Vrouwe Kang": "Kang Hanım",
+          "Student Sang-u": "Öğrenci Sang-u",
+          "Geneesvrouw Ok-hwa": "Şifacı Ok-hwa",
+          "Schilder Dae-ho": "Ressam Dae-ho",
+          "Borduurster Yeon-i": "Nakışçı Yeon-i",
+          "Tolk Hak-su": "Tercüman Hak-su",
+          "Kokkin Bok-sun": "Aşçı Bok-sun",
+          "Marskramer Man-sik": "Çerçi Man-sik"
+        },
+        "suspectShort": {
+          "Vrouwe Kang": "Kang",
+          "Student Sang-u": "Sang-u",
+          "Geneesvrouw Ok-hwa": "Ok-hwa",
+          "Schilder Dae-ho": "Dae-ho",
+          "Borduurster Yeon-i": "Yeon-i",
+          "Tolk Hak-su": "Hak-su",
+          "Kokkin Bok-sun": "Bok-sun",
+          "Marskramer Man-sik": "Man-sik"
+        }
       }
     },
     "daily": [
@@ -1439,6 +1851,54 @@
         "Denizden Gelen Adam",
         "Defterden Koparılan Sayfa",
         "Griburun’da Son Gece"
+      ],
+      "oceaanstomer": [
+        "Güvertenin Üstündeki Kuyruklu Yıldız",
+        "İsimsiz Telgraf",
+        "Gemi Kâtibinin Kasası",
+        "New York’tan Önceki Son Gece"
+      ],
+      "ryokan": [
+        "Üç Yüz Yıllık Çay Kâsesi",
+        "Kaplıcanın Başında Işık",
+        "Yağmurda Ayak Sesleri",
+        "Tsukikage’nin Son Konuğu"
+      ],
+      "fazenda": [
+        "Hiç Varmayan Çuval",
+        "Meyvelerin Arasındaki İz",
+        "Don Gecesi",
+        "Verandadaki Son Şenlik"
+      ],
+      "zeppelin": [
+        "Okyanusun Üstündeki Zarf",
+        "Duran Motor",
+        "Dar Geçitte Ayak Sesleri",
+        "Rio Üzerinde Son Tur"
+      ],
+      "poolstation": [
+        "Kış Ortasında Boş Sandalye",
+        "Fırtınadaki Halat",
+        "Paramparça Buz Karotu",
+        "Kutup Işıklarının Altında Son Gece"
+      ],
+      "winterpaleis": [
+        "Boş Mücevherli Yumurta",
+        "Buz Pistindeki İzler",
+        "Yanlış Yansıma",
+        "Yüzyılın Son Valsi"
+      ],
+      "safarilodge": [
+        "Son Çekim",
+        "Gölet Kıyısında Ayakkabılar",
+        "Bir Kişi Fazlasıyla İnen Balon",
+        "Büyük Göç Gecesi"
+      ],
+      "hanok": [
+        "Dördüncü Dize",
+        "Tadı Farklı Olan Küp",
+        "Çay Odasında Işık",
+        "Dalbit’in Son Ayı"
       ]
     },
     "medals": {
@@ -1569,6 +2029,38 @@
       "vuurtoren": [
         "Işık Yeniden Yanıyor",
         "Griburun Feneri dünyasındaki bütün bölümleri bitir"
+      ],
+      "oceaanstomer": [
+        "New York’a Yanaştı",
+        "SS Halcyon dünyasındaki bütün bölümleri bitir"
+      ],
+      "ryokan": [
+        "Kaplıca Hâlâ Tütüyor",
+        "Ryokan Tsukikage dünyasındaki bütün bölümleri bitir"
+      ],
+      "fazenda": [
+        "Hesaplar Tutuyor",
+        "Fazenda Boa Esperança dünyasındaki bütün bölümleri bitir"
+      ],
+      "zeppelin": [
+        "Direğe Bağlandı",
+        "Cirrus Zeplini dünyasındaki bütün bölümleri bitir"
+      ],
+      "poolstation": [
+        "Güneş Geri Dönüyor",
+        "Güney Haçı İstasyonu dünyasındaki bütün bölümleri bitir"
+      ],
+      "winterpaleis": [
+        "Yeni Yüzyıl",
+        "Zvezdin Sarayı dünyasındaki bütün bölümleri bitir"
+      ],
+      "safarilodge": [
+        "Göç Sürüyor",
+        "Twiga Lodge dünyasındaki bütün bölümleri bitir"
+      ],
+      "hanok": [
+        "Şiir Tamamlandı",
+        "Hanok Dalbit dünyasındaki bütün bölümleri bitir"
       ]
     },
     "quests": {
@@ -7813,6 +8305,3078 @@
           "🔆 Fresnel merceği"
         ]
       ]
+    ],
+    "oceaanstomer": [
+      "Bölüm I · Halley Kuyruklu Yıldızı",
+      "SS Halcyon, Mayıs 1910, Atlas Okyanusu’nun ortası. Gezinti güvertesinde herkes Halley kuyruklu yıldızını izliyor. Armatör Ambrose Kingsley hariç: o, sigara odasında, hâlâ için için yanan bir puronun yanında yatıyor.",
+      "Kuyruklu yıldız ufkun ardına iniyor. New York’a dört gün var ve fail de bu gemide yol alıyor.",
+      "Bir gemi uzun ve dardır, güverteler arasında merdivenler vardır. Hangi alanda olduğunu söyleyenle başla. Dümen çarkının “hemen yanında” yalnızca tam yanındaki kare demek, asla çapraz değil.",
+      [
+        [
+          "Kuyruklu Yıldız",
+          "Saat onda kuyruklu yıldız geminin tam üstündeydi. Onu on geçe armatör sigara odasında yatıyordu.",
+          "☄️ Yıldız haritası"
+        ],
+        [
+          "Puro",
+          "Kül tablasındaki puro hâlâ için için yanıyordu. Armatör akşam yemeğinden sonra asla puro içmezdi.",
+          "🚬 Havana purosu"
+        ],
+        [
+          "Kaptan Grant Köprüde",
+          "Bütün akşam kaptan köprüsünde durduğunu söylüyor. Şapkası sigara odasındaydı.",
+          "🧢 Kaptan şapkası"
+        ],
+        [
+          "Kamarot Molly Anahtarları Sayıyor",
+          "Her kamaranın bir anahtarı onda. Halkasında bir anahtar eksik.",
+          "🔑 Kamara anahtarı"
+        ],
+        [
+          "Gezinti Güvertesi",
+          "İki yüz kişi yukarı bakıyordu. Sigara odasının kapısına bakan kimse yoktu.",
+          "🪑 Şezlong"
+        ],
+        [
+          "Profesör Lund Fotoğraf Çekiyor",
+          "O akşam kuyruklu yıldızın on iki fotoğrafını çekti. Altıncısında güvertede biri daha görünüyor.",
+          "📷 Cam negatif"
+        ],
+        [
+          "Telsizci Arthur Dinliyor",
+          "Saat onda kulaklığı başında telsiz odasında oturduğunu söylüyor. Kulaklık askıda asılıydı.",
+          "🎧 Kulaklık"
+        ],
+        [
+          "Tatlıdan Sonra",
+          "Tatlıdan sonra armatör yorgun olduğunu söyledi. Süitine değil, sigara odasına gitti.",
+          "🍽️ Menü kartı"
+        ]
+      ]
+    ],
+    "oceaanstomer-2": [
+      "Bölüm II · Son Telgraf",
+      "Gece yarısı New York’tan bir telgraf geliyor. Telsizci Arthur onu kâğıda geçiriyor ama kime geldiğini söylemiyor. Telsiz odasında bütün gece ışık yanıyor.",
+      "Telgraf bulundu. Armatör için değildi ve bu her şeyi değiştiriyor.",
+      "Telsiz odasında telsizci her şeyi duyar ve herkes başkasından söz eder. İki kişiyle ilgili bir ifadeyi çözmek için önce ikisinden birinin yerini kesinleştir.",
+      [
+        [
+          "Gece Yarısı",
+          "Saat tam on ikide telgraf tıkırdamaya başladı. Bir telgrafa göre mesaj uzundu.",
+          "📡 Anten"
+        ],
+        [
+          "Telsizci Arthur Susuyor",
+          "Mesajlar hakkında hiçbir şey söyleyemeyeceğini söylüyor. Bunu üç kez söylüyor.",
+          "📻 Telsiz alıcısı"
+        ],
+        [
+          "Karalama Kâğıdı",
+          "Masasında yarım kelimelerle dolu bir karalama kâğıdı vardı. Üstünde “satıldı” ve “New York” yazıyordu.",
+          "🗒️ Karalama kâğıdı"
+        ],
+        [
+          "Kamarot Molly Çay Getiriyor",
+          "Saat yarımda telsiz odasına çay götürdü. Kimse çay istememişti.",
+          "🫖 Çay tepsisi"
+        ],
+        [
+          "Bir Cevap",
+          "Saat birde New York’a bir mesaj gitti. Parasını kimin ödediğini kimse bilmiyor.",
+          "💵 Dolar banknotu"
+        ],
+        [
+          "Süfrajet Harriet Mektup Yazıyor",
+          "Her akşam kız kardeşine bir mektup yazar. Dün gece iki mektup yazdı.",
+          "✉️ Mektup kâğıdı"
+        ],
+        [
+          "Başmakinist Doyle Yukarı Çıkıyor",
+          "Hiç yukarı çıkmadığını söylüyor. Saat ikide telsiz odasının kapısındaydı.",
+          "🛢️ Yağdanlık"
+        ],
+        [
+          "Telgraftaki İsim",
+          "Telgraf armatör için değildi. Yolcu listesinde adı olmayan biri içindi.",
+          "📜 Yolcu listesi"
+        ]
+      ]
+    ],
+    "oceaanstomer-3": [
+      "Bölüm III · Kaptanın Masası",
+      "Her akşam kaptanın masasında on iki konuk yemek yer. Menü dokuz çeşittir. Bu akşam çorbadan sonra bir sandalye boş.",
+      "Son çeşit hiç servis edilmiyor. Çorbadan sonra kalkanın bir nedeni vardı ve artık sen de biliyorsun.",
+      "Masada herkesin belli bir yeri vardır, ama çorbadan sonra herkes bir yere dağılır. Nerede OLMADIĞINI söyleyen de sana bir şey anlatır: o alanı hemen ele.",
+      [
+        [
+          "Oturma Düzeni",
+          "Her akşam aynı on iki sandalye. Bu akşam biri isim kartlarının yerini değiştirmişti.",
+          "🏷️ İsim kartı"
+        ],
+        [
+          "Kaptan Grant Kadeh Kaldırıyor",
+          "Armatörün şerefine içiyor. Kadehini bitirmeyen tek kişi o.",
+          "🥂 Şampanya kadehi"
+        ],
+        [
+          "Çorba",
+          "Her akşamki gibi berrak bir et suyu. Bir kâse kuzineye el sürülmeden geri döndü.",
+          "🥣 Çorba kâsesi"
+        ],
+        [
+          "Havacı Solange Geç Kalıyor",
+          "İçeri çorbadan sonra girdi. Eldivenleri makine yağı kokuyordu.",
+          "🧤 Deri eldiven"
+        ],
+        [
+          "Profesör Lund Yıldızları Anlatıyor",
+          "Bir saat boyunca kuyruklu yıldızdan söz etti. Bir konuk dışında kimse dinlemedi.",
+          "🔭 Teleskop"
+        ],
+        [
+          "Boş Sandalye",
+          "Çorbadan sonra biri hava almak için güverteye çıktı. Güverte öbür yönde.",
+          "🪑 Boş sandalye"
+        ],
+        [
+          "Şapkacı Edna Şapka Değiştiriyor",
+          "Masada devekuşu tüylü bir şapka takıyordu. Çorbadan sonra başka bir şapka taktı.",
+          "📌 Şapka iğnesi"
+        ],
+        [
+          "Tatlı",
+          "Masaya on iki kup dondurma gitti. On biri boş döndü, biri de içinde bir anahtarla.",
+          "🍨 Kup dondurma"
+        ]
+      ]
+    ],
+    "oceaanstomer-4": [
+      "Bölüm IV · Sis",
+      "İki gündür yoğun sis var. Gemi düdüğü her dakika ötüyor ve kimse küpeşteden ötesini göremiyor. Siste, güvertede orada işi olmayan biri dolaşıyor.",
+      "Sis dağılıyor, gemi düdüğü susuyor. Siste olanlar artık senin not defterinde.",
+      "Siste yanında kimin durduğunu, onu görmesen de duyarsın. Önce en az seçeneği olan şüpheliyi yerleştir; gerisi arkasından gelir.",
+      [
+        [
+          "Gemi Düdüğü",
+          "Her dakika uzun bir düdük. Saat üçte iki düdük öttü.",
+          "📯 Gemi düdüğü"
+        ],
+        [
+          "Kamarot Molly Hiçbir Şey Görmüyor",
+          "Elinde bir fenerle güvertede dolaştı. Hiçbir şey görmediğini söylüyor, ama bir şey duymuş.",
+          "🏮 Güverte feneri"
+        ],
+        [
+          "Gemi Çanı",
+          "Siste çan her yarım saatte bir çalınır. Saat ikide sessiz kaldı.",
+          "🔔 Gemi çanı"
+        ],
+        [
+          "Başmakinist Doyle Hızı Düşürüyor",
+          "Siste gemi yavaş gider. Saat üçte, köprüden emir gelmeden daha da yavaşladı.",
+          "⚙️ Ayar çarkı"
+        ],
+        [
+          "Kaptan Grant Uyumuyor",
+          "İki gece boyunca kaptan köprüsünde uyanık kaldı. İkinci gece dümen çarkının başında başka biri duruyordu.",
+          "🧭 Pusula"
+        ],
+        [
+          "Küpeştede Bir Palto",
+          "Gün doğarken küpeştede ıslak bir palto asılıydı. Paltosu eksik olan kimse yok.",
+          "🧥 Islak palto"
+        ],
+        [
+          "Havacı Solange ve Sis",
+          "Bir havacının sise girmeyeceğini söylüyor. Güverteden saçları ıslak döndü.",
+          "🧣 İpek atkı"
+        ],
+        [
+          "Başka Bir Gemi",
+          "Siste başka bir gemi hemen yakından geçti. Kıç güvertesinden biri bir lambayla işaret verdi.",
+          "🔦 İşaret lambası"
+        ]
+      ]
+    ],
+    "oceaanstomer-5": [
+      "Bölüm V · İnci Kolye",
+      "Armatörün inci kolyesi artık gemi kâtibinin kasasında değil. Kolye rahmetli karısınındı. Gemi hiçbir limana yanaşamıyor, yani kolye hâlâ gemide.",
+      "İnci kolye kasaya geri döndü, bir inci hariç. O tek inci sigara odasını gösteriyor.",
+      "Bir hırsızlıktan sonra herkes yalnız olduğunu söyler. Yalnız olduğunu söyleyenle başla: bu, bütün bir alanı tek seferde boşaltır.",
+      [
+        [
+          "Gemi Kâtibinin Kasası",
+          "Kasa her zamanki gibi kilitliydi. Yine de inci kolye yoktu.",
+          "🔐 Kasa kapısı"
+        ],
+        [
+          "Kamarot Molly ve Anahtar",
+          "Kasanın anahtarı yalnızca gemi kâtibinde. Molly onun anahtarı geceleri nereye koyduğunu biliyor.",
+          "🗝️ Kasa anahtarı"
+        ],
+        [
+          "Şapka Kutusu",
+          "Bir şapka kutusuna bir şapka sığar. Bu kutuya bir inci kolye de sığmış.",
+          "👒 Şapka kutusu"
+        ],
+        [
+          "Şapkacı Edna Fiyatı Biliyor",
+          "Mücevher değil, şapka sattığını söylüyor. Yine de bir incinin kaç para ettiğini tam olarak biliyor.",
+          "🔍 Kuyumcu lupu"
+        ],
+        [
+          "Süfrajet Harriet Kasanın Başında",
+          "Kasa listesinde adı geçen tek kişi oydu. Oraya broşür götürdüğünü söylüyor.",
+          "📄 Broşür"
+        ],
+        [
+          "Tek Bir İnci",
+          "Süitteki yatağın altında tek bir inci vardı. Kolye hâlâ kayıp.",
+          "⚪ Tek inci"
+        ],
+        [
+          "Telsizci Arthur Zaten Biliyor",
+          "Gemi kâtibi hırsızlığı saat sekizde fark etti. Arthur bunu saat yedide New York’a telgrafla bildirmişti bile.",
+          "📨 Telgraf mesajı"
+        ],
+        [
+          "Profesör Lund Tartıyor",
+          "Cam negatif dolu her sandığı tartar. Sandıklardan biri dünden daha ağır.",
+          "⚖️ Terazi"
+        ]
+      ]
+    ],
+    "oceaanstomer-6": [
+      "Bölüm VI · Balo",
+      "Balo salonunda gece yarısını çoktan geçene kadar vals yapılıyor. Orkestra Strauss çalıyor, herkes en güzel giysilerini giymiş. Bir dansçı sürekli eş değiştiriyor.",
+      "Orkestra çalgılarını topluyor, balo salonu boş. Sürekli eş değiştiren dansçı artık değiştirmiyor.",
+      "Baloda herkes döner durur, kimse yerinde durmaz. İfadeler cimrileşiyor: kalemi kullan, olamayacak kareleri ele ve geriye ne kaldığına bak.",
+      [
+        [
+          "İlk Vals",
+          "Orkestra ilk valsi armatör için çalıyor. Bunun yakışık alıp almadığını kimse bilmiyor.",
+          "🎻 Keman"
+        ],
+        [
+          "Havacı Solange Dans Ediyor",
+          "Kaptanla, profesörle ve telsizciyle dans ediyor. Yalnızca telsizciyle konuşuyor.",
+          "💃 Dans kartı"
+        ],
+        [
+          "Dans Defteri",
+          "Her hanımın bir dans defteri vardır. Defterlerden birinde hep aynı isim yazılı, üç farklı el yazısıyla.",
+          "📒 Dans defteri"
+        ],
+        [
+          "Kaptan Grant Dans Etmiyor",
+          "Kırk yıl boyunca her baloda dans etti. Bu akşam bütün gece kapının yanında oturdu.",
+          "🎖️ Madalya"
+        ],
+        [
+          "Başmakinist Doyle Frakla",
+          "Onu tulumsuz gören olmamıştı. Bu akşam üstüne tam oturan bir frak giydi.",
+          "🤵 Frak"
+        ],
+        [
+          "Işıklar Sönüyor",
+          "Son vals sırasında ışıklar söndü. Yeniden yandığında birinin elinde başka eldivenler vardı.",
+          "💡 Ampul"
+        ],
+        [
+          "Kamarot Molly Ortalığı Topluyor",
+          "Balodan sonra perdenin arkasında boş bir şampanya şişesi buldu. Bir de ambarın planını.",
+          "🍾 Şampanya şişesi"
+        ],
+        [
+          "Son Dans",
+          "Saat üçte hâlâ bir çift dans ediyordu. Adam hiçbir şey söylemedi, kadın adımları saydı.",
+          "👠 Dans ayakkabısı"
+        ]
+      ]
+    ],
+    "oceaanstomer-7": [
+      "Bölüm VII · Üçüncü Mevki",
+      "Üçüncü mevkide beş yüz göçmen yeni bir hayata doğru yol alıyor. Uzun sıralar hâlinde, bavulları ranzalarının altında uyuyorlar. İçlerinden biri kuyruklu yıldız gecesi bir şey gördü.",
+      "Üçüncü mevkide yeniden şarkı söyleniyor. Çocuğun gördükleri artık Van Dam’ın raporunda.",
+      "Tahta büyüyor, gemi doluyor. Rapora göre bir alan boşsa, o alanın tamamı herkes için elenir.",
+      [
+        [
+          "Beş Yüz Ranza",
+          "Üçüncü mevkide beş yüz kişi tek bir ambarda uyuyor. Kimse gerçekten uyumuyor.",
+          "🛏️ Ranza"
+        ],
+        [
+          "Tanık",
+          "Napolili bir çocuk o gece birinin merdivenden indiğini gördü. Kim olduğunu bilmiyor, ama hangi ayakkabılar olduğunu biliyor.",
+          "👞 Rugan ayakkabı"
+        ],
+        [
+          "Süfrajet Harriet Ders Veriyor",
+          "Üçüncü mevkideki kadınlara İngilizce öğretiyor. İlk cümle: Bir avukat istiyorum.",
+          "📚 Okuma kitabı"
+        ],
+        [
+          "Kamarot Molly Battaniye Getiriyor",
+          "Birinci mevki hiç üçüncü mevkiye inmez. Molly iner, her gece, bir yığın battaniyeyle.",
+          "🧺 Battaniye sepeti"
+        ],
+        [
+          "Fazladan Bir Bavul",
+          "Her göçmenin bir bavulu var. Ranzalardan birinin altında iki bavul vardı.",
+          "🧳 Bavul"
+        ],
+        [
+          "Başmakinist Doyle Merdiveni Biliyor",
+          "Makine odasından üçüncü mevkiye tek bir demir merdiven iner. Onu yalnızca ateşçiler bilir.",
+          "🪜 Demir merdiven"
+        ],
+        [
+          "Telsizci Arthur Birini Soruyor",
+          "Üçüncü mevkide bir adamı sordu. O adam listede yok.",
+          "📋 Göçmen listesi"
+        ],
+        [
+          "Çocuğun Gördüğü",
+          "Ayakkabıları bir kez daha, yemek salonunda gördü. Onları gösterdi, sonra sustu.",
+          "🧢 Çocuk kasketi"
+        ]
+      ]
+    ],
+    "oceaanstomer-8": [
+      "Bölüm VIII · New York’un Işıkları",
+      "New York’un silueti görünüyor. Yarın Halcyon rıhtıma yanaşacak. Davayı kapatmak için gemide bir gece daha var.",
+      "Van Dam şapkasını takıyor, geminin iskelesinden en son o iniyor ve rıhtımdaki kalabalığın arasında kayboluyor. Halcyon New York’ta rıhtıma yanaşıyor. Rıhtımda polis bekliyor ve kimi beklediğini sen biliyorsun.",
+      "Son vakalar, neredeyse hepsi büyük tahtada. En zor olana takılıp kalma: önce diğerlerini yerleştir, sonuncuya çoğu zaman tek bir kare kalır.",
+      [
+        [
+          "Kara Göründü",
+          "Saat altıda gözcü Long Island’ın ilk ışığını görüyor. Herkes bavullarını topluyor, bir yolcu ise bavullarını boşaltıyor.",
+          "🗽 Kartpostal"
+        ],
+        [
+          "Kaptan Grant Raporunu Yazıyor",
+          "Son yolculuğu, son raporu. Kuyruklu yıldız gecesi hakkında tek bir satır yazdı.",
+          "📘 Seyir defteri"
+        ],
+        [
+          "Havacı Solange Karaya Çıkmak İstiyor",
+          "Hava gösterisi için gemiden ilk o inmek istiyor. Evrakı başka bir isme düzenlenmiş.",
+          "🛂 Pasaport"
+        ],
+        [
+          "Profesör Lund Fotoğraf Banyo Ediyor",
+          "Kamarasında son cam negatifi banyo ediyor. Sigara odasının penceresinin ardında bir yüz var.",
+          "🧪 Banyo leğeni"
+        ],
+        [
+          "Şapkacı Edna Eşyalarını Topluyor",
+          "Southampton’da gemiye on iki şapka kutusu bindi. Gemiden on üç tane iniyor.",
+          "🎀 Şapka kurdelesi"
+        ],
+        [
+          "Telsizci Arthur Son Telgrafını Çekiyor",
+          "Son telgrafı liman polisine gidiyor. Tek bir isim gönderiyor.",
+          "⚡ Kıvılcım vericisi"
+        ],
+        [
+          "Başmakinist Doyle Güverteye Çıkıyor",
+          "Limanın önünde makineleri durduruyor. Beş gündür ilk kez gün ışığında güverteye çıkıyor.",
+          "🔧 İngiliz anahtarı"
+        ],
+        [
+          "Sigara Odası",
+          "Her şey sigara odasında başladı. Yine orada bitiyor.",
+          "📦 Puro kutusu"
+        ]
+      ]
+    ],
+    "ryokan": [
+      "Bölüm I · Kiraz Çiçekleri",
+      "Ryokan Tsukikage, Kyoto yakınlarındaki tepelerde, Nisan 1925. Kirazlar çiçek açmış, bütün odalar dolu. Hancı Genzo Kurata sabah çayına gelmiyor. Çay evinde, hâlâ sıcak bir kâsenin yanında yatıyor.",
+      "Çiçekler yosunun üstüne düşüyor. Konuklar Kyoto’dan polis gelene kadar kalıyor.",
+      "Bir ryokan sürgülü kapılardan ve koridorlardan oluşan bir labirenttir. Hangi alanda olduğunu söyleyenle başla. Taş fenerin “hemen yanında” yalnızca tam yanındaki kare demek, asla çapraz değil.",
+      [
+        [
+          "Sabah Çayı",
+          "Hancı her sabah saat altıda çay evinde çay içer. Bu sabah çay soğudu.",
+          "🍵 Sabah çayı"
+        ],
+        [
+          "Ev Sahibesi Fumiko Onu Buluyor",
+          "Onu ilk o buldu. Terlikleri çoktan çay evinin kapısında duruyordu.",
+          "🚪 Sürgülü kapı"
+        ],
+        [
+          "Hasırda Çiçek",
+          "Tatamide kiraz çiçeği yaprakları vardı. O ağaç bahçenin öbür ucunda.",
+          "🌸 Kiraz çiçeği yaprağı"
+        ],
+        [
+          "Aşçı Takeshi Yemek Pişiriyor",
+          "Saat dörtten beri mutfakta olduğunu söylüyor. Pirincin altındaki ateş ancak beş buçukta yakıldı.",
+          "🍚 Pirinç tenceresi"
+        ],
+        [
+          "Taş Fener",
+          "Bahçedeki fener bütün gece yanar. Dün gece saat üçte söndü.",
+          "🕯️ Mum parçası"
+        ],
+        [
+          "Fotoğrafçı Sachiko Gün Doğarken",
+          "Çiçekleri ilk ışıkta fotoğrafladı. Fotoğrafında çay evinin kapısı açık.",
+          "📷 Körüklü makine"
+        ],
+        [
+          "Konuk Defteri",
+          "Her konuk adını deftere yazar. Dün akşam biri adını iki kez yazdı.",
+          "📖 Konuk defteri"
+        ],
+        [
+          "Mühendis Isamu Erken Geliyor",
+          "Saat yedide hancıyla randevusu vardı. Elinde bir sözleşmeyle altı buçukta geldi.",
+          "📃 Sözleşme"
+        ]
+      ]
+    ],
+    "ryokan-2": [
+      "Bölüm II · Çay Töreni",
+      "Çay Ustası Chiyo hancının anısına bir tören düzenliyor. Çay evinde dört konuk diz çöküyor. Her hareket önceden belli, yine de biri kâseyi yanlış koyuyor.",
+      "Tören bitti, kâseler yıkandı. Bir kâse baştan sona yanlış duruyordu ve nedenini sen biliyorsun.",
+      "Çay evinde herkesin belli bir yeri vardır ve herkes diz çöker. İki kişiyle ilgili bir ifadeyi çözmek için önce ikisinden birinin yerini kesinleştir.",
+      [
+        [
+          "Dört Konuk, Beş Kâse",
+          "Törende dört konuk var. Hazırda beş kâse duruyordu.",
+          "🥣 Beşinci kâse"
+        ],
+        [
+          "Çay Ustası Chiyo Çayı Çırpıyor",
+          "Kırk yıldır çayı aynı çırpıcıyla çırpıyor. Bugün yenisiyle.",
+          "🎋 Bambu çırpıcı"
+        ],
+        [
+          "Demir Demlik",
+          "Su demir demlikte kaynıyor. Biri onu kaplıcanın suyuyla doldurmuş.",
+          "🫖 Demir demlik"
+        ],
+        [
+          "Gravürcü Hiroshi Eskiz Yapıyor",
+          "Törenin bir eskizini çizdi. Eskizinde içeride olmayan biri oturuyor.",
+          "✏️ Eskiz defteri"
+        ],
+        [
+          "Kâseyi Çevirmek",
+          "İçmeden önce kâse iki kez çevrilir. Bir konuk onu üç kez çevirdi.",
+          "🏺 Raku kâsesi"
+        ],
+        [
+          "Botanikçi Evelyn Kuralları Biliyor",
+          "Daha önce hiç tören görmediğini söylüyor. Kimse göstermeden diz çöktü.",
+          "👘 Kimono"
+        ],
+        [
+          "Tatlı",
+          "Çayın yanında bir tatlı olur. Tabaklardan birinde tatlı yoktu.",
+          "🍡 Dango"
+        ],
+        [
+          "Ev Sahibesi Fumiko Su Koymuyor",
+          "Yirmi yıl boyunca hancının suyunu o koydu. Bu sabah koymadığını söylüyor, ilk kez.",
+          "🫗 Su ibriği"
+        ]
+      ]
+    ],
+    "ryokan-3": [
+      "Bölüm III · Değerli Çay Kâsesi",
+      "Konuk odasının nişinde üç yüz yıllık bir çay kâsesi dururdu. Ryokanın gururudur. Bu sabah niş boş.",
+      "Çay kâsesi yeniden nişte, sağlam ve temiz. Hancı onu asla satmak istemedi ve biri bunu biliyordu.",
+      "Kâsenin nerede durduğunu herkes bilir ve herkes kendisinin nerede olmadığını söyler. Nerede OLMADIĞINI söyleyen de sana bir şey anlatır: o alanı hemen ele.",
+      [
+        [
+          "Boş Niş",
+          "Üç yüz yıl boyunca kâse nişte durdu. Bu sabah orada bir çiçek duruyordu.",
+          "🌼 Çiçek"
+        ],
+        [
+          "Ev Sahibesi Fumiko Toz Alıyor",
+          "Nişin tozunu her gün alır. Dün bunu bir konuğa yaptırdı.",
+          "🪶 Tüy toz alıcı"
+        ],
+        [
+          "Kurdeleli Kutu",
+          "Kâse, kurdeleli tahta bir kutuda saklanır. Kutu hâlâ yerinde, kurdele başka türlü bağlanmış.",
+          "📦 Tahta kutu"
+        ],
+        [
+          "Mühendis Isamu Teklif Veriyor",
+          "Kâse için hancıya bir servet teklif etti. Hancı ona güldü.",
+          "💴 Banknot"
+        ],
+        [
+          "Fotoğrafçı Sachiko ve Kâse",
+          "Dergisi için kâsenin fotoğrafını çekti. Fotoğrafta kâsede bir çatlak var, şimdi yok.",
+          "🖼️ Fotoğraf baskısı"
+        ],
+        [
+          "Botanikçi Evelyn Paket Gönderiyor",
+          "Londra’ya kurutulmuş çiçek gönderiyor. Çiçeğe göre paketi ağır.",
+          "🗃️ Herbaryum kutusu"
+        ],
+        [
+          "Gravürcü Hiroshi Kopya Yapıyor",
+          "Eski eşyaların baskılarını yapar. Odasında kâse biçiminde bir ahşap kalıp duruyor.",
+          "🪵 Ahşap kalıp"
+        ],
+        [
+          "İki Kâse",
+          "Mutfakta birbirine benzeyen iki kâse duruyor. Biri üç yüz yaşında.",
+          "🔍 Büyüteç"
+        ]
+      ]
+    ],
+    "ryokan-4": [
+      "Bölüm IV · Kaplıca",
+      "Kaplıcanın sıcak suyu konuklar içindir. Gece yarısı bahçe kapısı kapanır. Ama gece saat üçte kaplıcanın başında hâlâ bir ışık yanıyor.",
+      "Kaplıca sabah yeniden sessizce tütüyor. Saat üçteki ışık bir yanlışlık değildi.",
+      "Kaplıcanın buharında kimseyi iyi göremezsin, ama yanında kimin oturduğunu duyarsın. Önce en az seçeneği olan şüpheliyi yerleştir; gerisi arkasından gelir.",
+      [
+        [
+          "Saat Üçte Işık",
+          "Kaplıca gece yarısı kapanır. Saat üçte bir lamba yanıyordu.",
+          "🏮 Kâğıt lamba"
+        ],
+        [
+          "Bahçıvan Goro Kapıyı Kilitliyor",
+          "Her akşam kaplıcanın bahçe kapısını kapatır. Dün gece kapı aralıktı.",
+          "⛓️ Kapı zinciri"
+        ],
+        [
+          "Tahta Kovalar",
+          "Kaplıcanın başında on tahta kova durur, düzgünce ters çevrilmiş. Biri dik duruyordu, suyla dolu.",
+          "🪣 Tahta kova"
+        ],
+        [
+          "Aşçı Takeshi Suya Girmiyor",
+          "İşten sonra hep kaplıcaya girer. Dün gece girmediğini söylüyor, dün gece yorgunmuş.",
+          "🍶 Sake şişesi"
+        ],
+        [
+          "Islak Havlular",
+          "Yıkanma odasında üç ıslak havlu vardı. Kaplıcaya yalnızca iki konuk girmişti.",
+          "🧺 Islak havlular"
+        ],
+        [
+          "Mühendis Isamu Suyu Ölçüyor",
+          "Kaplıcanın sıcaklığını ölçtüğünü söylüyor. Yeni istasyonun yanına yapılacak bir kaplıca oteli için.",
+          "🌡️ Banyo termometresi"
+        ],
+        [
+          "Tek Geta",
+          "Kaplıcaya giden yolda tek bir tahta takunya vardı. Öteki iskelenin yanındaydı.",
+          "🩴 Tek geta"
+        ],
+        [
+          "Buharın İçinde",
+          "Buharda orada kimin oturduğunu kimse görmedi. Ama herkes birinin kalkıp gittiğini duydu.",
+          "🧼 Kalıp sabun"
+        ]
+      ]
+    ],
+    "ryokan-5": [
+      "Bölüm V · Bambu Korusu",
+      "Ryokanın arkasında bir bambu korusu var. Orada rüzgâr olmasa da hep bir hışırtı vardır. Mühendis Isamu korunun içinden bir demiryolu geçirmek istiyor.",
+      "Bambu korusu yine her zamanki gibi hışırdıyor. İçinden demiryolu geçmeyecek, mühendisin haritası da sobada.",
+      "Bambuların arasında yalnızca hemen yanında duranı görürsün. Yalnız olduğunu söyleyenle başla: bu, bütün bir alanı tek seferde boşaltır.",
+      [
+        [
+          "Rüzgârsız Hışırtı",
+          "Bahçede rüzgâr yoktu. Yine de bambu korusu hışırdıyordu.",
+          "🎋 Bambu sapı"
+        ],
+        [
+          "Mühendis Isamu Kazık Çakıyor",
+          "Demiryolunun güzergâhını beyaz kazıklarla işaretledi. Bu sabah kazıklar bir metre ötedeydi.",
+          "📍 Ölçüm kazığı"
+        ],
+        [
+          "Bahçıvan Goro Budama Yapıyor",
+          "Elli yıldır bambuları budar. Bu sap dün kesilmiş, hem de onun tarafından değil.",
+          "🪚 Testere"
+        ],
+        [
+          "Demiryolu Haritası",
+          "Haritada ryokan tam yolun ortasında. Biri onun çevresine kırmızı bir daire çizmiş.",
+          "🗺️ Harita"
+        ],
+        [
+          "Fotoğrafçı Sachiko Kayboluyor",
+          "Sapların arasındaki ışığı fotoğraflamak istedi. Ancak iki saat sonra döndü, tek bir fotoğraf olmadan.",
+          "🎞️ Film rulosu"
+        ],
+        [
+          "İskeleye Giden Yol",
+          "Korunun içinden nehre dar bir patika iner. Patikadaki yosun ezilmiş.",
+          "🍃 Ezilmiş yosun"
+        ],
+        [
+          "Botanikçi Evelyn Örnek Topluyor",
+          "Londra’daki bir sera için bambu topluyor. Kutusunda bir de rulo yapılmış bir kâğıt var.",
+          "🫙 Botanik kutusu"
+        ],
+        [
+          "Gravürcü Hiroshi Koruyu Çiziyor",
+          "Koruyu gösteren baskısında elinde şemsiye olan biri var. Onu kendisinin uydurduğunu söylüyor.",
+          "🌂 Kâğıt şemsiye"
+        ]
+      ]
+    ],
+    "ryokan-6": [
+      "Bölüm VI · Yağmur Mevsimi",
+      "Üç hafta yağmur. Kimse dışarı çıkmıyor, konuklar iç içe oturuyor. Yine de her sabah koridorda ıslak ayak izleri var.",
+      "Yağmur diniyor, koridorlar kuruyor. Islak ayak izleri her gece iskeleye yürüyen birine aitti.",
+      "Yağmur yağınca herkes içeride oturur ve herkes neredeyse aynı şeyi söyler. İfadeler cimrileşiyor: kalemi kullan, olamayacak kareleri ele ve geriye ne kaldığına bak.",
+      [
+        [
+          "Üç Hafta Yağmur",
+          "Salıdan beri yağmur yağıyor. Bahçe bir gölete döndü.",
+          "☔ Şemsiye"
+        ],
+        [
+          "Islak Ayak İzleri",
+          "Her sabah koridorda ıslak ayak izleri oluyor. Dışarıdan gelip mutfağa gidiyorlar.",
+          "🧦 Islak çoraplar"
+        ],
+        [
+          "Ev Sahibesi Fumiko Şemsiyeleri Sayıyor",
+          "Kapının yanında on kâğıt şemsiye durur. Her sabah biri ıslak.",
+          "🧮 Abaküs"
+        ],
+        [
+          "Aşçı Takeshi Balık Kurutuyor",
+          "Yağmurda balığı kilerde kurutur. Dün orada ıslak bir palto da asılıydı.",
+          "🐟 Kuru balık"
+        ],
+        [
+          "Botanikçi Evelyn Mektup Yazıyor",
+          "Her gün Londra’ya yazıyor. Posta gitmiyor ve mektuplarından biri açılmış.",
+          "✉️ Mektup"
+        ],
+        [
+          "Koridordaki Futon",
+          "Bir konuk, odası su aldığı için koridorda bir futonda uyudu. Odası su almıyordu.",
+          "🛏️ Futon"
+        ],
+        [
+          "Mühendis Isamu Gitmek İstiyor",
+          "Bu yağmurda Kyoto treni çalışmıyor. Her gün gitmek istediğini söylüyor ve kalıyor.",
+          "🎫 Tren bileti"
+        ],
+        [
+          "Bahçıvan Goro Hendek Kazıyor",
+          "Yağmurda suyun akması için hendekler kazar. Hendeklerden biri iskeleye gidiyor, oraya hendek gerekmez.",
+          "⛏️ Kazma"
+        ]
+      ]
+    ],
+    "ryokan-7": [
+      "Bölüm VII · Ay Şenliği",
+      "Sonbahar geldi, ay dolunay. Konuklar verandada pirinç kurabiyeleri ve sakeyle oturuyor. Herkes nehrin üstündeki aya bakıyor, bir konuk hariç.",
+      "Ay dağların ardına iniyor. Yukarı bakmayan konuk çay evine bakıyordu.",
+      "Tahta büyüyor ama gece aydınlık. Rapora göre bir alan boşsa, o alanın tamamı herkes için elenir.",
+      [
+        [
+          "Işıksız Bir Kayık",
+          "Saat dokuzda ay nehrin üstündeydi. Saat onda iskelenin yanında ışıksız bir kayık vardı.",
+          "🛶 Kayık"
+        ],
+        [
+          "On Beş Kurabiye",
+          "Usulüne uygun olarak bir tabakta on beş pirinç kurabiyesi. On dört tane vardı.",
+          "🍘 Pirinç kurabiyesi"
+        ],
+        [
+          "Çay Ustası Chiyo Şiir Yazıyor",
+          "Ay üzerine bir şiir yazdı. İçinde yalnızca failin bilebileceği bir şey var.",
+          "🖌️ Fırça"
+        ],
+        [
+          "Gravürcü Hiroshi Ayı Oyuyor",
+          "Her yıl ayı tahtaya oyar. Bu yıl çay evini de oydu, içinde bir ışıkla.",
+          "🎨 Mürekkep taşı"
+        ],
+        [
+          "Sake",
+          "Aşçı Takeshi herkese sake koydu. Bir fincan dolu kaldı.",
+          "🍶 Sake fincanı"
+        ],
+        [
+          "Ev Sahibesi Fumiko ve Anahtar",
+          "Ay şenliğinde en güzel kimonosunu giyer. Yeninde çay evinin anahtarı var.",
+          "🗝️ Çay evi anahtarı"
+        ],
+        [
+          "Fotoğrafçı Sachiko ve Ay",
+          "Ayın fotoğrafını çekmek tam bir dakika sürer. O dakikada biri kareden geçti.",
+          "📸 Ay fotoğrafı"
+        ],
+        [
+          "Yukarı Bakmayan",
+          "Herkes aya bakıyordu. Bir konuk bütün akşam karanlık çay evine baktı.",
+          "🌕 Dolunay"
+        ]
+      ]
+    ],
+    "ryokan-8": [
+      "Bölüm VIII · İlk Kar",
+      "İlk kar yosunun üstüne yağıyor, fenerler erkenden yakılıyor. Yarın Kyoto yolları kapanacak. Ryokanda bir akşam daha, ilkbahardaki konuklarla.",
+      "Van Dam atkısını bağlıyor, ev sahibesinin önünde eğiliyor ve karda istasyona yürüyor. Kar bahçeyi örtüyor, kaplıca tütüyor. Her konuk evine dönebilir, biri hariç.",
+      "Son vakalar, neredeyse hepsi büyük tahtada. En zor olana takılıp kalma: önce diğerlerini yerleştir, sonuncuya çoğu zaman tek bir kare kalır.",
+      [
+        [
+          "Yosunda Kar",
+          "Bahçıvan Goro yosunu samanla örttü. Samanın altında büyümeyen bir şey vardı.",
+          "🌾 Saman"
+        ],
+        [
+          "Son Tren",
+          "Yarın Kyoto’ya son tren kalkıyor. Sekiz konuk, yedi bilet var.",
+          "🚂 Tren tarifesi"
+        ],
+        [
+          "Aşçı Takeshi Veda Yemeği Pişiriyor",
+          "Yılın son akşam yemeğini pişiriyor. Bir konuk için başka bir şey pişiriyor.",
+          "🍲 Güveç"
+        ],
+        [
+          "Botanikçi Evelyn Eşyalarını Topluyor",
+          "Londra’ya on iki paket tohum götürüyor. Paketlerden biri tıngırdıyor.",
+          "🌱 Tohum paketi"
+        ],
+        [
+          "Mühendis Isamu Yeniden Çiziyor",
+          "Yeni haritasında demiryolu ryokanın içinden değil, yanından geçiyor. Bunu daha ilkbaharda çizmişti.",
+          "📐 Gönye"
+        ],
+        [
+          "Ev Sahibesi Fumiko Defteri Kapatıyor",
+          "Bu yılın konuk defterini kapatıyor. İlk sayfada kendi eliyle yazdığı bir isim var.",
+          "📕 Konuk kütüğü"
+        ],
+        [
+          "Çay Ustası Chiyo Son Çayı Hazırlıyor",
+          "Yılın son töreni, bütün konuklar için. Eski kâseyi yere koyuyor ve kimin irkildiğine bakıyor.",
+          "🍵 Son çay"
+        ],
+        [
+          "Çay Evi",
+          "Her şey çay evinde başladı. Yine orada bitiyor.",
+          "🎐 Rüzgâr çanı"
+        ]
+      ]
+    ],
+    "fazenda": [
+      "Bölüm I · Hasat Şenliği",
+      "Fazenda Boa Esperança, São Paulo, Haziran 1926. Hasat kaldırıldı, kurutma yeri kahve meyveleriyle dolu. Kahve baronu Augusto Valadares hasat şenliğine gelmiyor. Kavurmahanede, çuvalların arasında yatıyor.",
+      "Şenlik iptal. Toplayıcılar evlerine dönüyor, ama konuklar Campinas’tan polis gelene kadar fazendada kalıyor.",
+      "Bir fazendada binalar birbirinden uzaktır, ama şenlikte herkes bir arada durur. Hangi alanda olduğunu söyleyenle başla. Kahve değirmeninin “hemen yanında” yalnızca tam yanındaki kare demek, asla çapraz değil.",
+      [
+        [
+          "Hasat Şenliği",
+          "Kurutma yeri baştan başa ışıklarla süslü. Kahve baronu saat sekizde bir konuşma yapacaktı.",
+          "💡 Süs lambası"
+        ],
+        [
+          "Kavurmahanede",
+          "Çuvalların arasında, fırının sıcağında yatıyordu. Fırının sönmüş olması gerekiyordu.",
+          "🔥 Kavurma fırını"
+        ],
+        [
+          "Dona Celeste Bekliyor",
+          "Saat sekizde babasının konuşması için hazırdı. Sekizi çeyrek geçe onu aramaya gitti.",
+          "📄 Konuşma metni"
+        ],
+        [
+          "Vekilharç Joaquim Ödeme Yapıyor",
+          "Şenlikte toplayıcılar ücretlerini alır. Ücret zarfları hazırdı, biri hariç.",
+          "💰 Ücret zarfı"
+        ],
+        [
+          "Papağan",
+          "Verandadaki papağan hep patronun adını bağırır. Bu akşam başka bir isim bağırdı.",
+          "🦜 Papağan"
+        ],
+        [
+          "Piyanist Zélia Piyano Çalıyor",
+          "Bütün akşam verandada çaldığını söylüyor. Saat yedi buçukta piyano sustu.",
+          "🎹 Piyano"
+        ],
+        [
+          "Tüccar Mulder Hesap Yapıyor",
+          "Bütün hasadı satın almaya geldi. Defterinde fiyat zaten yazılı, hem de hasattan öncesinden.",
+          "📒 Fiyat defteri"
+        ],
+        [
+          "Öğretmen Giulia ve Çocuklar",
+          "Çocukları saat sekizde yatırdı. Çocuklardan biri kavurmahanede ışık yandığını söyledi.",
+          "🖍️ Çocuk resmi"
+        ]
+      ]
+    ],
+    "fazenda-2": [
+      "Bölüm II · Kurutma Yeri",
+      "Kurutma yerinde kahve meyveleri uzun sıralar hâlinde güneşte yatıyor. Her gün tahta tırmıklarla çevriliyorlar. Dün gece biri aralarından bir iz çekmiş.",
+      "Meyveler yeniden sıra sıra. İz kurutma yerinden depoya gidiyor, sonra geri dönüyordu.",
+      "Kurutma yerinde herkes sıralar hâlinde çalışır ve herkes ötekileri görür. İki kişiyle ilgili bir ifadeyi çözmek için önce ikisinden birinin yerini kesinleştir.",
+      [
+        [
+          "İz",
+          "Meyvelerin tam ortasından bir iz geçiyordu. Bir yük arabası için fazla dardı.",
+          "🛞 El arabası tekerleği"
+        ],
+        [
+          "Tahta Tırmıklar",
+          "Fazendada on tırmık var. Dokuzu duvara dayalı duruyordu.",
+          "🧹 Tahta tırmık"
+        ],
+        [
+          "Vekilharç Joaquim Meyveleri Çeviriyor",
+          "Otuz yıldır meyveleri kuzeyden güneye çevirir. Dün biri onları ters yönde çevirmiş.",
+          "🧭 Rüzgârgülü"
+        ],
+        [
+          "Agronom Hideo Ölçüm Yapıyor",
+          "Meyvelerin ne kadar kuruduğunu her gün ölçer. Dün olamayacak bir sayı yazdı.",
+          "📏 Nem ölçer"
+        ],
+        [
+          "Yağmur Geliyor",
+          "Yağmurda meyveler içeri alınmalı. Saat ikide, açık bir gökyüzünün altında biri çanı çaldı.",
+          "🔔 Alarm çanı"
+        ],
+        [
+          "Tadımcı Bento Tadına Bakıyor",
+          "Meyvelerin tadına daha kurutma yerindeyken bakar. Deponun yanındaki sıranın tadının farklı olduğunu söylüyor.",
+          "🫘 Kahve çekirdekleri"
+        ],
+        [
+          "Doktor Lúcia Geç Geliyor",
+          "Akşam geç saatte hasta bir toplayıcı için geldi. Hasta bir toplayıcı yoktu.",
+          "🩺 Stetoskop"
+        ],
+        [
+          "Kapı Kolunda Meyve Suyu",
+          "Deponun kapısında taze meyvelerin suyu vardı. Kapı kolunda da.",
+          "🍒 Kahve meyvesi"
+        ]
+      ]
+    ],
+    "fazenda-3": [
+      "Bölüm III · Haziran Şenliği",
+      "São João şenliği. Çiftlikte bir şenlik ateşi yanıyor, her yerde küçük bayraklar asılı. Kadrilde bir dansçının eşi yok.",
+      "Ateş sönüyor, bayraklar ipten iniyor. Eşi olmayan dansçının o gece başka bir randevusu vardı.",
+      "Ateşin çevresinde herkes bir halka hâlinde durur ve herkes nerede durmadığını bilir. Nerede OLMADIĞINI söyleyen de sana bir şey anlatır: o alanı hemen ele.",
+      [
+        [
+          "Şenlik Ateşi",
+          "Ateş saat dokuzda yakıldı. Biri içine bir deste kâğıt attı.",
+          "🔥 Şenlik ateşi"
+        ],
+        [
+          "Kadril",
+          "Kadrili sekiz çift oynar. Yarısında yedi çift kaldı, bir dansçı da tek başına.",
+          "🪗 Akordeon"
+        ],
+        [
+          "Öğretmen Giulia Bayrak Kesiyor",
+          "Çocuklarla birlikte yüz küçük bayrak kesti. Bayraklardan biri bir kasa defterinin sayfasından yapılmış.",
+          "✂️ Makas"
+        ],
+        [
+          "Mısır Keki",
+          "Şenlikte herkes mısır keki yer. Mutfakta kimsenin kesmesine izin verilmeyen bir kek duruyordu.",
+          "🌽 Mısır keki"
+        ],
+        [
+          "Piyanist Zélia Şarkı Söylüyor",
+          "Her yıl olduğu gibi São João şarkısını söylüyor. Bu yıl kimsenin bilmediği bir kıta söyledi.",
+          "🎼 Nota kâğıdı"
+        ],
+        [
+          "Tüccar Mulder Dans Etmiyor",
+          "Dans etmediğini söylüyor, Hollandalıymış. Yine de saat onda ateşin yanındaki sandalyesi boştu.",
+          "👒 Hasır şapka"
+        ],
+        [
+          "Tarlada Bir Fener",
+          "Havai fişekler sırasında kahve tarlasında bir fener dolaşıyordu. Geceleri kimse tarlaya girmez.",
+          "🏮 Fener"
+        ],
+        [
+          "Dona Celeste Tek Başına Dans Ediyor",
+          "Kadrili vekilharçla oynadı. İkinci turdan sonra tek başına kaldı.",
+          "🎀 Saç kurdelesi"
+        ]
+      ]
+    ],
+    "fazenda-4": [
+      "Bölüm IV · Kahve Treni",
+      "Üç yüz çuval kahve trenle Santos limanına gidiyor. Vekilharç Joaquim yüklenirken onları sayıyor. Limana iki yüz doksan dokuz çuval varıyor.",
+      "Tren döndü, çuvallar sayıldı. Eksik çuval fazendadan hiç çıkmamıştı.",
+      "Yükleme sırasında herkes vagonlar boyunca bir sıra hâlinde durur. Önce en az seçeneği olan şüpheliyi yerleştir; gerisi arkasından gelir.",
+      [
+        [
+          "Üç Yüz Çuval",
+          "Konşimentoda üç yüz çuval. Limanda iki yüz doksan dokuz.",
+          "🧾 Konşimento"
+        ],
+        [
+          "Vekilharç Joaquim Çuvalları Sayıyor",
+          "Her çuval için vagona tebeşirle bir çizgi çekti. Üç yüz çizgi var.",
+          "✏️ Tebeşir"
+        ],
+        [
+          "Peron",
+          "Tren fazendanın peronunda bir saat bekledi. O bir saat boyunca peron hiç boş kalmadı.",
+          "🪧 İstasyon tabelası"
+        ],
+        [
+          "Tüccar Mulder Trenle Gidiyor",
+          "Son vagonda, çuvalların arasında yolculuk ediyor. Kahveyi koklamak istediğini söylüyor.",
+          "🧳 Yol çantası"
+        ],
+        [
+          "Üstü Boyanmış Bir Damga",
+          "Her çuvalda fazendanın damgası var. Bir çuvalda damganın üstüne başka bir damga boyanmış.",
+          "🖌️ Damga fırçası"
+        ],
+        [
+          "Agronom Hideo Numune Gönderiyor",
+          "Analiz için Campinas’a bir torba meyve gönderiyor. Bir numuneye göre torba büyük.",
+          "🧪 Numune torbası"
+        ],
+        [
+          "Boş Depo",
+          "Yüklemeden sonra depo boş. Köşede, bir jüt yığınının arkasında hâlâ bir çuval duruyor.",
+          "📦 Jüt çuval"
+        ],
+        [
+          "Tadımcı Bento Santos’ta",
+          "Limanda her çuvalın tadına bakıyor. Bir çuvalın eksik değil, fazla olduğunu söylüyor.",
+          "☕ Tadım fincanı"
+        ]
+      ]
+    ],
+    "fazenda-5": [
+      "Bölüm V · Tadım",
+      "Santos kahve borsasında Tadımcı Bento her partinin tadına bakıyor. Partilerden biri ötekilerin hepsinden iyi. Hangi fidandan geldiğini kimse bilmiyor.",
+      "Parti yılın en yüksek fiyatına satılıyor. Hangi fidandan geldiğini artık sen de biliyorsun.",
+      "Tadım odasında herkes kendi fincan sırasının arkasında tek başına durur. Yalnız olduğunu söyleyenle başla: bu, bütün bir alanı tek seferde boşaltır.",
+      [
+        [
+          "Yedinci Fincan",
+          "Sırada yüz fincan. Yedinci fincanda tadımcı bir daha hiçbir şey söylemedi.",
+          "☕ Yedinci fincan"
+        ],
+        [
+          "Tadımcı Bento Tükürmüyor",
+          "Günde yüz kez höpürdetir, tadar ve tükürür. Bu partide tükürmedi.",
+          "🥄 Gümüş kaşık"
+        ],
+        [
+          "Çuvaldaki Numara",
+          "Her partinin bir numarası var. Bu numara fazendanın defterlerinde yok.",
+          "🔢 Parti numarası"
+        ],
+        [
+          "Dona Celeste Kayıtlara Bakıyor",
+          "Numarayı kasa defterlerinde arıyor. Temmuz sayfası kesilip çıkarılmış.",
+          "📕 Kasa defteri"
+        ],
+        [
+          "Tüccar Mulder Teklif Veriyor",
+          "Partiye tadına bakmadan teklif verdi. İki katını teklif etti.",
+          "🔨 Mezat çekici"
+        ],
+        [
+          "Agronom Hideo Onu Tanıyor",
+          "Bir yudum yetti. Yeni fidanının kahvesiydi ve o fidan henüz hiç ürün vermedi.",
+          "🌿 Genç fidan"
+        ],
+        [
+          "Piyanist Zélia Santos’ta",
+          "Bir hafta boyunca Santos’taki bir otelde piyano çalıyor. Oteli borsanın hemen yanında.",
+          "🗝️ Otel anahtarı"
+        ],
+        [
+          "Fazladan Bir Numune",
+          "Fazendadan on numune geldi. Tadım odasında on bir tane duruyor.",
+          "🫙 Numune kavanozu"
+        ]
+      ]
+    ],
+    "fazenda-6": [
+      "Bölüm VI · Gece Donu",
+      "Tek bir donlu gece bütün bir hasada mal olabilir. Vekilharç soğuğa karşı tarlada küçük ateşler yaktırıyor. Dün gece biri elinde bir fenerle fidanların arasında yürüdü.",
+      "Güneş doğuyor, fidanlar kurtuldu, bir sıra hariç. O sıra, agronomun yeni fidanının yanındaydı.",
+      "Soğukta herkes bir ateşin başına sokulur ve kimse ötekine dikkat etmez. İfadeler cimrileşiyor: kalemi kullan, olamayacak kareleri ele ve geriye ne kaldığına bak.",
+      [
+        [
+          "Don Geliyor",
+          "Gece yarısı verandadaki termometre sıfırın altına düştü. Bir kahve fazendasında bu neredeyse hiç olmaz.",
+          "🌡️ Termometre"
+        ],
+        [
+          "Tarlada Ateşler",
+          "Her on sırada bir küçük ateş yanar. Ateşlerden biri saat ikide söndü.",
+          "🪵 Çalı demeti"
+        ],
+        [
+          "Vekilharç Joaquim Nöbet Tutuyor",
+          "Bütün gece ateşlerin arasında dolaştığını söylüyor. Çizmeleri kupkuru.",
+          "🥾 Binici çizmesi"
+        ],
+        [
+          "Fidanların Arasında Fener",
+          "Saat üçte tarlada bir fener dolaşıyordu. Ateşlere değil, seraya gitti.",
+          "🔦 El feneri"
+        ],
+        [
+          "Doktor Lúcia Geceyi Burada Geçiriyor",
+          "Don yüzünden atıyla dönemedi. Salonda, çantası başının altında uyuduğunu söylüyor.",
+          "💼 Doktor çantası"
+        ],
+        [
+          "Kararmış Meyveler",
+          "Donan meyveler kararır. Bir toplayıcının sepetinde dondan önce kararmış meyveler vardı.",
+          "🧺 Toplama sepeti"
+        ],
+        [
+          "Öğretmen Giulia Okulu Isıtıyor",
+          "Çocuklar için okuldaki sobayı yaktı. Günlerden pazardı, okul yoktu.",
+          "📚 Ders kitapları"
+        ],
+        [
+          "Agronom Hideo Fidanını Arıyor",
+          "Gün doğarken yeni fidanına gitti. Geriye yalnızca etiketli bir çubuk kalmıştı.",
+          "🏷️ Bitki etiketi"
+        ]
+      ]
+    ],
+    "fazenda-7": [
+      "Bölüm VII · Yeni Fidan",
+      "Agronom Hideo dona dayanıklı bir kahve türü yetiştiriyor. Don gecesinden sonra en iyi fidanı ortadan kayboldu. Biri tohumu ele geçirmek istiyor.",
+      "Fidan yeniden serada, çevresinde bir çitle. Tohum fazendada kalıyor.",
+      "Tahta büyüyor, fazenda sessizleşiyor. Rapora göre bir alan boşsa, o alanın tamamı herkes için elenir.",
+      [
+        [
+          "Boş Bir Çukur",
+          "Fidanın durduğu yerde bir çukur var. Çevresindeki toprak özenle süpürülmüş.",
+          "🕳️ Fidan çukuru"
+        ],
+        [
+          "Yetiştirme Defteri",
+          "On iki yıllık emek tek bir defterde. Defter hâlâ seradaydı, başka bir sayfası açık hâlde.",
+          "📓 Yetiştirme defteri"
+        ],
+        [
+          "Tüccar Mulder ve Sera",
+          "Firmasının Amsterdam’da bir serası var. Orada yalnızca lale olduğunu söylüyor.",
+          "🌷 Lale soğanı"
+        ],
+        [
+          "Sallanan Sandalye",
+          "Verandadaki sandalye bazen kendi kendine sallanır. Dün gece içinde biri oturdu, ayakkabıları çamurluydu.",
+          "🪑 Sallanan sandalye"
+        ],
+        [
+          "Dona Celeste Vasiyeti Okuyor",
+          "Babasının vasiyeti fazendadaki her şeyi sayıyor. Yeni fidanı da, başka bir sahibin adıyla.",
+          "📜 Vasiyetname"
+        ],
+        [
+          "Tadımcı Bento Tadı Biliyor",
+          "Fidanın kahvesini Santos’ta tattı. Ondan başka tadını bilen yalnızca bir kişi var.",
+          "🫖 Kahve ibriği"
+        ],
+        [
+          "Postada Bir Paket",
+          "Santos’a gidecek postanın arasında küçük bir paket var. Adres yurt dışındaki bir sera.",
+          "📮 Küçük paket"
+        ],
+        [
+          "Papağan Konuşuyor",
+          "Papağan fidanın götürüldüğünü gördü. O günden beri tek bir kelimeyi bağırıp duruyor.",
+          "🪶 Kırmızı tüy"
+        ]
+      ]
+    ],
+    "fazenda-8": [
+      "Bölüm VIII · Son Çuval",
+      "Hasat bitti, son çuval tartılıyor. Tüccar hesabı kapatıyor, konuklar bavullarını topluyor. Verandada bir akşam daha müzik.",
+      "Van Dam fincanını bitiriyor, şapkasına dokunuyor ve Santos trenine biniyor. Kurutma yeri boş, hesaplar yeniden tutuyor. Verandada müzik çalmaya devam ediyor.",
+      "Son vakalar, neredeyse hepsi büyük tahtada. En zor olana takılıp kalma: önce diğerlerini yerleştir, sonuncuya çoğu zaman tek bir kare kalır.",
+      [
+        [
+          "Kantar",
+          "Her zamanki gibi çuval başına altmış kilo. Son çuval altmış bir kilo geliyor.",
+          "⚖️ Kahve kantarı"
+        ],
+        [
+          "Vekilharç Joaquim Anahtarları Teslim Ediyor",
+          "Otuz yıl sonra deponun anahtarlarını masaya bırakıyor. Halkada bir anahtar fazla.",
+          "🔑 Anahtar destesi"
+        ],
+        [
+          "Tüccar Mulder Hesabı Kapatıyor",
+          "Hasadın parasını gulden ile ödüyor. Var olandan bir çuval fazlasının parasını ödüyor.",
+          "🪙 Gulden"
+        ],
+        [
+          "Piyanist Zélia Son Şarkıyı Çalıyor",
+          "Baron için bestelediği bir choro çalıyor. Baron onu hiç duymadı.",
+          "🎶 Choro"
+        ],
+        [
+          "Öğretmen Giulia Vedalaşıyor",
+          "Şehre dönüyor. Çocuklara, büyüdüklerinde okumaları için bir mektup bırakıyor.",
+          "💌 Veda mektubu"
+        ],
+        [
+          "Doktor Lúcia Yazıya Döküyor",
+          "Şenlik gecesi kavurmahanede gördüklerini yazıyor. Bunu hemen yapması gerektiğini söylüyor.",
+          "📋 Doktor raporu"
+        ],
+        [
+          "Dona Celeste Defterleri Açıyor",
+          "Kasa defterlerini yemek odasındaki masaya açıyor. İlk kez her sütun tutuyor, biri hariç.",
+          "📚 Kasa defterleri"
+        ],
+        [
+          "Kavurmahane",
+          "Her şey kavurmahanede başladı. Yine orada bitiyor.",
+          "🫘 Kavrulmuş çekirdekler"
+        ]
+      ]
+    ],
+    "zeppelin": [
+      "Bölüm I · Bulutların Üstünde",
+      "Cirrus Zeplini, Ağustos 1929. Zeplin üç gündür okyanusun üstünde süzülüyor, Rio de Janeiro yolunda. Akşam yemeğinden sonra tasarımcı Anton Falk harita odasında yatıyor, rota hâlâ elinde.",
+      "Zeplin bulutların üstünde yoluna devam ediyor. Geri dönemez, kimse de inemez. Fail de seninle birlikte Rio’ya uçuyor.",
+      "Bir zeplin uzun ve dardır, baştan kıça tek bir koridoru vardır. Hangi alanda olduğunu söyleyenle başla. Dünya küresinin “hemen yanında” yalnızca tam yanındaki kare demek, asla çapraz değil.",
+      [
+        [
+          "Akşam Yemeğinden Sonra",
+          "Akşam yemeği saat yedideydi, bulutların üstünde. Sekiz buçukta tasarımcı harita odasında yatıyordu.",
+          "🍽️ Yemek tabağı"
+        ],
+        [
+          "Elindeki Rota",
+          "Elinde üstüne bir rota yazılmış bir kâğıt şerit vardı. Rio’ya giden rota değildi.",
+          "🧾 Rota şeridi"
+        ],
+        [
+          "Komutan Brandt Gondolda",
+          "Bütün akşam dümen gondolunda durduğunu söylüyor. Gondoldan harita odasının içi dosdoğru görünür.",
+          "🔭 Dürbün"
+        ],
+        [
+          "Navigatör Mateus Hesap Yapıyor",
+          "Rotayı her saat yeniden hesaplar. Saat sekizde iki kez hesapladı, farklı bir sonuçla.",
+          "🧮 Hesap cetveli"
+        ],
+        [
+          "Meteorolog Liv Dışarı Bakıyor",
+          "Bütün akşam bulutlara baktığını söylüyor. Saat sekizde hava çoktan kararmıştı.",
+          "☁️ Bulut atlası"
+        ],
+        [
+          "Daktilo",
+          "Harita odasında bir daktilo var. İçinde hâlâ tek cümle yazılmış bir kâğıt vardı.",
+          "📃 Daktilo kâğıdı"
+        ],
+        [
+          "Tenisçi Josette Kötü Uyuyor",
+          "Havada kötü uyuduğunu söylüyor. Kamarotun dediğine göre saat sekizde çoktan uyumuştu.",
+          "🎾 Tenis topu"
+        ],
+        [
+          "Diplomat Vidal ve Tasarımcı",
+          "Birlikte yemek yediler ve paradan konuştular. Tatlıdan sonra yalnızca diplomat konuşuyordu.",
+          "💼 Evrak çantası"
+        ]
+      ]
+    ],
+    "zeppelin-2": [
+      "Bölüm II · Hava Postası",
+      "Zeplinde Güney Amerika’ya gidecek elli bin mektup var, koleksiyoncular için özel pullarla. Posta Memuru Elsbeth onları posta odasında damgalıyor. Zarflardan biri buharla açılmış.",
+      "Zarf yeniden kapatılıp damgalandı. İçinde ne olduğunu posta memuru bilmiyor, ama sen biliyorsun.",
+      "Posta odasında her mektup iki elden geçer. İki kişiyle ilgili bir ifadeyi çözmek için önce ikisinden birinin yerini kesinleştir.",
+      [
+        [
+          "Elli Bin Mektup",
+          "Her mektuba zeplinin posta damgası vurulur. Bir mektuba iki tane vurulmuş.",
+          "📮 Posta damgası"
+        ],
+        [
+          "Posta Memuru Elsbeth Damga Vuruyor",
+          "Saatte yüz mektup damgalar. Dokuzla on arasında tek bir mektup bile damgalamadı.",
+          "🔖 Pul"
+        ],
+        [
+          "Buharla Açılmış Zarf",
+          "Yapıştırıcı ıslanmış, sonra yeniden kurumuş. Kırışıklıklardan belli.",
+          "✉️ Zarf"
+        ],
+        [
+          "Kuzinedeki Çaydanlık",
+          "Buhar için bir çaydanlık gerekir. Zeplindeki tek çaydanlık kuzinede.",
+          "🫖 Çaydanlık"
+        ],
+        [
+          "Muhabir Daisy Haber Gönderiyor",
+          "Her gün gazetesine bir haber gönderir. Bugün bir mektup gönderdi, kendine.",
+          "📰 Gazete kupürü"
+        ],
+        [
+          "Nadir Bir Pul",
+          "Zarflardan birinde dünyada yalnızca on tane olan bir pul var. Dün o pul zarfta yoktu.",
+          "🔍 Pul büyüteci"
+        ],
+        [
+          "Tamirci Rudi Yük Taşıyor",
+          "Posta çuvallarını posta odasına taşımaya yardım etti. Çuvallardan birini motor gondoluna taşıdı.",
+          "🧵 İp"
+        ],
+        [
+          "Diplomat Vidal Mektup Bekliyor",
+          "Zeplinde hiç mektup almadığını söylüyor. Posta odasında onun adına bir mektup duruyor.",
+          "🔏 Mühür mumu"
+        ]
+      ]
+    ],
+    "zeppelin-3": [
+      "Bölüm III · Karşı Rüzgâr",
+      "Okyanusun üstünde sert bir karşı rüzgâr. Zeplin yarı hızla gidiyor, yolculuk bir gece uzuyor. Bir yolcu dışında kimse bundan memnun değil.",
+      "Rüzgâr dönüyor, zeplin kaybettiği saatleri telafi ediyor. Rüzgârdan memnun olan yolcunun bunun için bir nedeni vardı.",
+      "Karşı rüzgârda herkes içeride kalır, ama aynı alanda değil. Nerede OLMADIĞINI söyleyen de sana bir şey anlatır: o alanı hemen ele.",
+      [
+        [
+          "Bir Gece Daha",
+          "Tarifeye göre cuma inecekler. Rüzgâra göre cumartesi.",
+          "📅 Yolculuk programı"
+        ],
+        [
+          "Meteorolog Liv Uyarmıştı",
+          "Dün karşı rüzgâr olacağını söyledi. Tasarımcı yine de bu rotayı istedi.",
+          "🌬️ Rüzgâr haritası"
+        ],
+        [
+          "Zeplin Sallanıyor",
+          "Bir rüzgâr darbesinde salonda bir bardak devrildi. Altında küçük bir anahtar vardı.",
+          "🗝️ Küçük anahtar"
+        ],
+        [
+          "Navigatör Mateus Rota Seçiyor",
+          "Rüzgârın çevresinden dolaşan bir rota seçti. O rota tasarımcının elindeki şeritte zaten yazılıydı.",
+          "🗺️ Hava haritası"
+        ],
+        [
+          "Tenisçi Josette Rahatsız",
+          "Bütün gün kabininde yattığını söylüyor. Kapı açıktı, kabin boştu.",
+          "🍋 Limon"
+        ],
+        [
+          "Komutan Brandt Küfrediyor",
+          "Mürettebata göre hiç küfretmez. Bu karşı rüzgârda üç dilde küfretti.",
+          "🧭 Pusula"
+        ],
+        [
+          "Bar Açık Kalıyor",
+          "Karşı rüzgârda bar kapanır. Dün gece biri yine de orada iki kadeh doldurdu.",
+          "🍸 Kokteyl kadehi"
+        ],
+        [
+          "Rüzgârdan Memnun",
+          "Herkes Rio’ya zamanında varmak istiyor. Bir yolcu, yolculuğun daha da uzayıp uzayamayacağını sordu.",
+          "⏳ Kum saati"
+        ]
+      ]
+    ],
+    "zeppelin-4": [
+      "Bölüm IV · Motor Gondolu",
+      "Zeplinin beş motoru var, her biri gövdenin altında kendi gondolunda. Tamirci Rudi her gün onlara tırmanıyor. Bu gece biri duruyor ve tamirci nedenini bilmiyor.",
+      "Motor yeniden çalışıyor. Yakıt borusunda orada olmaması gereken bir şey vardı ve onu kimin koyduğunu sen biliyorsun.",
+      "Motorların arasında yalnızca dümdüz ileri ya da dümdüz geri gidebilirsin. Önce en az seçeneği olan şüpheliyi yerleştir; gerisi arkasından gelir.",
+      [
+        [
+          "Üç Numaralı Motor",
+          "Saat ikide üç numaralı motor durdu. Zeplin on metre alçaldı.",
+          "⚙️ Dişli çark"
+        ],
+        [
+          "Tamirci Rudi Dışarı Tırmanıyor",
+          "Rüzgârın içinde bir merdivenle gondola iner. Beresiz hiç gitmez, bu gece gitti.",
+          "🧢 Yün bere"
+        ],
+        [
+          "Yakıt Borusu",
+          "Boruya tıkıştırılmış bir kâğıt vardı. Kâğıtta rakamlar var.",
+          "🛢️ Yakıt borusu"
+        ],
+        [
+          "Komutan Brandt İrtifayı Düşürüyor",
+          "Dört motorla zeplin daha alçaktan uçmak zorunda. Daha alçak, denize daha yakın demek.",
+          "🎚️ Altimetre"
+        ],
+        [
+          "Posta Memuru Elsbeth Duyuyor",
+          "Motorlar en iyi posta odasından duyulur. Üç numaralı motorun durduğunu duydu, bir de bir kapıyı.",
+          "🚪 Gondol kapısı"
+        ],
+        [
+          "Fazladan Bir Anahtar",
+          "Tamircinin sandığında on iki İngiliz anahtarı var. Gondolda on üçüncüsü duruyordu.",
+          "🔧 İngiliz anahtarı"
+        ],
+        [
+          "Navigatör Mateus Yeniden Hesaplıyor",
+          "Dört motorla Rio’ya bir gün geç varacaklar. Bunu motor durmadan önce hesaplamıştı.",
+          "✏️ Hesap kalemi"
+        ],
+        [
+          "Borudaki Kâğıt",
+          "Kâğıttaki rakamlar bir rota. Tasarımcının elindeki rotanın aynısı.",
+          "📄 Kâğıt tıkaç"
+        ]
+      ]
+    ],
+    "zeppelin-5": [
+      "Bölüm V · Dar Geçit",
+      "Zeplinin yukarısında, gaz hücrelerinin arasından burundan kuyruğa dar bir geçit uzanır. Yolcuların oraya çıkması yasak. Tozda taze ayak izleri var.",
+      "Dar geçit yeniden boş, toz yeniden pürüzsüz. Ayak izleri posta odasından gözcü yerine gidiyordu.",
+      "Dar geçitte kimse kimsenin yanından geçemez. Yalnız olduğunu söyleyenle başla: bu, bütün bir alanı tek seferde boşaltır.",
+      [
+        [
+          "Taze Ayak İzleri",
+          "Dar geçitte ince bir toz tabakası var. İçinde küçük ayakkabıların izleri duruyor.",
+          "👞 Küçük ayakkabı"
+        ],
+        [
+          "Tamirci Rudi Her Gün Oradan Geçiyor",
+          "Her sabah burundan kuyruğa yürür. Ayakkabı numarası kırk altı.",
+          "🥾 İş botu"
+        ],
+        [
+          "Gözcü Yeri",
+          "Zeplinin tepesinde gözcü yerine açılan bir kapak var. Kapak kilitli değildi.",
+          "🔓 Kapak"
+        ],
+        [
+          "Tenisçi Josette Antrenman Yapıyor",
+          "Havada bile her gün antrenman yapar. Kabininde ip atladığını söylüyor.",
+          "🪢 Atlama ipi"
+        ],
+        [
+          "Meteorolog Liv Balon Uçuruyor",
+          "Her sabah gözcü yerinden bir meteoroloji balonu bırakır. Bu sabah iki taneydi.",
+          "🎈 Meteoroloji balonu"
+        ],
+        [
+          "Gaz Hücrelerinin Arasında Bir Eldiven",
+          "Gaz hücrelerinin arasında beyaz bir eldiven asılıydı. Zeplinde yalnızca iki kişinin eline uyuyor.",
+          "🧤 Beyaz eldiven"
+        ],
+        [
+          "Muhabir Daisy Fotoğraf İstiyor",
+          "Çatıdan okyanusun fotoğrafını çekmek istedi. Komutan hayır dedi, o yine de gitti.",
+          "📸 Basın fotoğrafı"
+        ],
+        [
+          "Posta Odasından Yukarı",
+          "Posta odasından dar geçide bir merdiven çıkar. En üst basamakta posta mürekkebi var.",
+          "🖊️ Posta mürekkebi"
+        ]
+      ]
+    ],
+    "zeppelin-6": [
+      "Bölüm VI · Hava Raporu",
+      "Meteorolog Liv her sabah bir hava haritası çiziyor. Haritasına göre denizin üstüne sis geliyor. O sis biri için tam zamanında geliyor.",
+      "Sis dağılıyor, zeplin yeniden rotasında. Sise bel bağlayan, seni hesaba katmamıştı.",
+      "Siste pencerelerden hiçbir şey görünmez, o yüzden herkes içeriye bakar. İfadeler cimrileşiyor: kalemi kullan, olamayacak kareleri ele ve geriye ne kaldığına bak.",
+      [
+        [
+          "Hava Haritası",
+          "Her sabah salona yeni bir harita asılır. Bu sabah dünkü harita asılıydı.",
+          "🌦️ Hava haritası"
+        ],
+        [
+          "Saat Onda Sis",
+          "Haritaya göre sis saat onda başlıyor. Tam saat onda bardaki ışık söndü.",
+          "💡 Bar lambası"
+        ],
+        [
+          "Meteorolog Liv Harita Çiziyor",
+          "Çizgilerini hep maviyle çizer. Dünkü haritada kırmızı çizgiler de var.",
+          "🖍️ Kırmızı kalem"
+        ],
+        [
+          "Diplomat Vidal Havayı Soruyor",
+          "Her sabah havayı sorar. Bugün sisin saat kaçta geleceğini sordu.",
+          "🕰️ Yol saati"
+        ],
+        [
+          "Telsiz Susuyor",
+          "Siste telsiz her çeyrek saatte bir sinyal vermeli. Onla on bir arasında vermedi.",
+          "📻 Telsiz"
+        ],
+        [
+          "Navigatör Mateus Kör Uçuş Yapıyor",
+          "Siste pusulayla ve saatle uçar. Zeplinin nerede olduğunu biliyor, on buçuk hariç.",
+          "⏱️ Kronometre"
+        ],
+        [
+          "Posta Memuru Elsbeth Kapıyı Kilitliyor",
+          "Siste nemden korumak için posta odasını kilitler. Saat on birde kapı açıktı.",
+          "🔒 Asma kilit"
+        ],
+        [
+          "Suyun Üstünde Bir Lamba",
+          "Zeplinin altında, suyun üstünde bir lamba yanıp söndü. Gözcü yerinden bir lamba karşılık verdi.",
+          "🔦 İşaret lambası"
+        ]
+      ]
+    ],
+    "zeppelin-7": [
+      "Bölüm VII · Ekvator",
+      "Ekvatorda, her gemide olduğu gibi, herkes vaftiz edilir. Komutan Neptün kılığına giriyor ve herkesin başından bir kova su dökülüyor. Bir yolcu eksik.",
+      "Vaftiz bitti, herkes yeniden kuru. Eksik yolcu harita odasındaydı ve artık neyi aradığını biliyorsun.",
+      "Tahta büyüyor, zeplin doluyor. Rapora göre bir alan boşsa, o alanın tamamı herkes için elenir.",
+      [
+        [
+          "Zeplinde Neptün",
+          "Komutan Brandt ipten bir sakal ve kartondan bir taç takıyor. Yolcuları sayıyor, biri eksik çıkıyor.",
+          "👑 Karton taç"
+        ],
+        [
+          "Vaftiz",
+          "Herkese bir kova su ve bir belge veriliyor. Bir belge arttı.",
+          "📜 Vaftiz belgesi"
+        ],
+        [
+          "Yerdeki Çizgi",
+          "Navigatör Mateus ekvatoru salonun zeminine tebeşirle çizdi. Biri çizginin üstünden atlamadı, çevresinden dolaştı.",
+          "📏 Tebeşir çizgisi"
+        ],
+        [
+          "Tenisçi Josette En Önde",
+          "İlk vaftiz edilen o olmak istedi. Elinde kuru bir havluyla en önde duruyordu.",
+          "🧺 Kuru havlu"
+        ],
+        [
+          "Muhabir Daisy Not Alıyor",
+          "Vaftiz edilen herkesin adını yazdı. İsimlerden birinin üstünü yeniden çizdi.",
+          "✒️ Dolma kalem"
+        ],
+        [
+          "Tamirci Rudi Vaftizi Kaçırıyor",
+          "Üç numaralı motora bakması gerektiğini söylüyor. Üç numaralı motor gayet iyi çalışıyordu.",
+          "🔩 Cıvata"
+        ],
+        [
+          "Dünya Küresi",
+          "Vaftiz sırasında harita odası kapalıydı. Sonra dünya küresi yan yatmış duruyordu.",
+          "🌍 Dünya küresi"
+        ],
+        [
+          "Diplomat Vidal ve Sözleşme",
+          "Evrak çantasında on zeplinlik bir sözleşme var. Tasarımcı tarafından, ölümünden sonra imzalanmış.",
+          "🖋️ İmza"
+        ]
+      ]
+    ],
+    "zeppelin-8": [
+      "Bölüm VIII · Rio Körfezinin Üstünde",
+      "Şekerkülahı Dağı görünüyor, iniş direği bekliyor. Zeplin inmeden önce körfezin üstünde bir tur daha atıyor. İlk gecedeki yolcularla bir akşam daha.",
+      "Van Dam şapkasını takıyor, komutanı selamlıyor ve direğe inen merdivenden en son o iniyor. Zeplin direğe bağlandı. Rota doğruydu, artık gerisi de doğru.",
+      "Son vakalar, neredeyse hepsi büyük tahtada. En zor olana takılıp kalma: önce diğerlerini yerleştir, sonuncuya çoğu zaman tek bir kare kalır.",
+      [
+        [
+          "Kara Göründü",
+          "Saat beşte gözcü Şekerkülahı Dağı’nı görüyor. Beşi on geçe bir polis teknesi de görüyor.",
+          "🚤 Polis teknesi"
+        ],
+        [
+          "Komutan Brandt İniş Yapıyor",
+          "Bu onun yüzüncü inişi. Seyir defterinde bu yolculuğa ait bir satır boş.",
+          "📘 Seyir defteri"
+        ],
+        [
+          "Posta Memuru Elsbeth Çuvalları Sayıyor",
+          "Zepline elli bin mektup bindi. Zeplinden elli bin bir mektup iniyor.",
+          "📬 Posta kutusu"
+        ],
+        [
+          "Navigatör Mateus Evinde",
+          "Rio’da doğdu, salondan evini gösteriyor. Şehri de, liman polisini de tanıyor.",
+          "🖼️ Evin fotoğrafı"
+        ],
+        [
+          "Meteorolog Liv Haritalarını Teslim Ediyor",
+          "Bütün hava haritalarını komutana veriyor. Sis gecesinin haritası aralarında yok.",
+          "🗂️ Harita dosyası"
+        ],
+        [
+          "Tenisçi Josette Çoktan Kazandı",
+          "Gelecek hafta oynayacak ve çoktan kazandığını söylüyor. Neyi kazandığını söylemiyor.",
+          "🏆 Kupa"
+        ],
+        [
+          "Muhabir Daisy Sonu Yazıyor",
+          "Son haberi hazır, son satırı hariç. O satır seni bekliyor.",
+          "🗞️ Sabah gazetesi"
+        ],
+        [
+          "Harita Odası",
+          "Her şey harita odasında başladı. Yine orada bitiyor.",
+          "📍 Rota iğnesi"
+        ]
+      ]
+    ],
+    "poolstation": [
+      "Bölüm I · Kış Ortası Şöleni",
+      "Güney Haçı İstasyonu, 21 Haziran 1958. Kış ortası, yılın en uzun gecesi, her üste bir bayramdır. Mumlar, konserveden bir pasta ve boş bir sandalye. İstasyon şefi telsiz odasında yatıyor.",
+      "Şölen bitti, mumlar eridi. Dışarıda eksi elli derece ve kimse gidemiyor.",
+      "Bir kutup istasyonu küçüktür: birkaç baraka ve karın altında bir tünel. Hangi alanda olduğunu söyleyenle başla. Kızak köpeğinin “hemen yanında” yalnızca tam yanındaki kare demek, asla çapraz değil.",
+      [
+        [
+          "Boş Sandalye",
+          "Sekiz tabak, dokuz sandalye. İstasyon şefinin sandalyesi bütün akşam boş kaldı.",
+          "🪑 Katlanır sandalye"
+        ],
+        [
+          "Kulaklık",
+          "Kulaklık hâlâ başındaydı. İçinden yalnızca cızırtı geliyordu.",
+          "🎧 Kulaklık"
+        ],
+        [
+          "Aşçı Diego Pastayı Kesiyor",
+          "Konserveden bir pasta, stearin mumlarla. O kesmeye başlamadan bir dilim çoktan yoktu.",
+          "🎂 Kış ortası pastası"
+        ],
+        [
+          "Telsizci Ole Nöbetteydi",
+          "Saat sekizde telsizin başında olması gerekiyordu. Herkese göre saat sekizde masada oturuyordu.",
+          "📋 Nöbet çizelgesi"
+        ],
+        [
+          "Kış Ortası Selamları",
+          "Kış ortasında bütün üsler birbirine telsizle selam yollar. Saat dokuzda selam olmayan bir mesaj geldi.",
+          "📝 Telsiz bloknotu"
+        ],
+        [
+          "Kızakçı Rewi Köpekleri Besliyor",
+          "Sekiz buçukta köpek barınağına gitti. Köpekler ancak saat dokuzda havladı.",
+          "🍖 Köpek maması"
+        ],
+        [
+          "Tamirci Lieve ve Işıklar",
+          "Şölenin ortasında elektrik üç dakika kesildi. Lieve o sırada jeneratörün yanında duruyordu bile.",
+          "🔦 El feneri"
+        ],
+        [
+          "Kar Tüneli",
+          "Karın altındaki bir tünel bütün barakaları birbirine bağlar. Taze kırağıdaki ayak izleri yalnızca tek yöne gidiyordu.",
+          "👣 Kırağıda izler"
+        ]
+      ]
+    ],
+    "poolstation-2": [
+      "Bölüm II · Telsiz Sessizliği",
+      "Ertesi sabah Ole ana karayla bağlantı kurmak istiyor. Telsiz susuyor. Biri içinden bir radyo lambası sökmüş.",
+      "Acil durum telsizi cızırdıyor, ana kara cevap veriyor. Lambayı kimin söktüğünü artık biliyorsun. Holm’un ne göndermek istediğini ise henüz bilmiyorsun.",
+      "Kutup gecesinde herkes, herkesin nerede olduğunu bilir. İki kişiyle ilgili bir ifadeyi çözmek için önce ikisinden birinin yerini kesinleştir.",
+      [
+        [
+          "Boş Duy",
+          "Telsizde dokuz lamba var. Bu sabah sekiz taneydi.",
+          "💡 Radyo lambası"
+        ],
+        [
+          "Telsizci Ole Yedek Arıyor",
+          "Yatağının altındaki bir sandıkta yedek lambaları olduğunu söylüyor. Sandık boş.",
+          "📦 Yedek sandığı"
+        ],
+        [
+          "Tamirci Lieve Onarabilir",
+          "Atölyeden aldığı tel ve bir lambayla bir acil durum telsizi yapıyor. Bakmadan önce hangi lambanın eksik olduğunu biliyordu.",
+          "🔧 Havya"
+        ],
+        [
+          "Son Mesaj",
+          "Telsiz bloknotunda Holm’un bir mesajının başı yazılı. Üç kelimeden sonra kesiliyor.",
+          "✏️ Kalem parçası"
+        ],
+        [
+          "Doktor Kenji Raporu Yazıyor",
+          "Ölüm saati: sekizle dokuz arası. Sekiz buçukta doktorun kendisi revirdeydi, tek başına.",
+          "🩺 Stetoskop"
+        ],
+        [
+          "Meteorolog Nancy Bir Şey Duydu",
+          "Sekiz buçukta hava kulübesinde termometreleri okuyordu. Duvarın öbür yanından mors sesleri duydu.",
+          "🌡️ Termometre"
+        ],
+        [
+          "Fizikçi Hélène Telsizi Dinliyor",
+          "Ölçümleri için her gece telsizi dinler. O akşam ana karaya ait olmayan bir frekans not etti.",
+          "🗒️ Frekans listesi"
+        ],
+        [
+          "Kardaki Lamba",
+          "Rewi lambayı köpek barınağının yanında, yarısı karın içinde buldu. Yanında ona ait olmayan bir eldiven duruyordu.",
+          "🧤 Yün eldiven"
+        ]
+      ]
+    ],
+    "poolstation-3": [
+      "Bölüm III · Kar Fırtınası",
+      "Üç gün süren bir fırtına üssün üstünden geçiyor. Kar öyle sert savruluyor ki kendi elini göremiyorsun. Dışarı çıkan halatı izler. Halatlardan biri çözülmüş.",
+      "Fırtına diniyor, halat yeniden gergin. Onu çözen, kimsenin hava kulübesine varmasını istemiyordu.",
+      "Fırtınada kimse bir şey görmez, ama herkes nerede olmadığını bilir. Nerede OLMADIĞINI söyleyen de sana bir şey anlatır: o alanı hemen ele.",
+      [
+        [
+          "Hava Kulübesine Giden Halat",
+          "Baraka ile hava kulübesi arasında bir halat gerilidir. Bu sabah karın içinde gevşek yatıyordu.",
+          "🪢 Kılavuz halat"
+        ],
+        [
+          "Meteorolog Nancy Dışarı Çıkmak Zorunda",
+          "Fırtına olsa da her üç saatte bir aletleri okur. Saat üçte ancak bir saat sonra döndü, ölçüm almadan.",
+          "📒 Hava defteri"
+        ],
+        [
+          "Kızakçı Rewi Aramaya Çıkıyor",
+          "Tasmalı iki köpekle dışarı çıktı. Üç köpekle döndü.",
+          "🐾 Köpek tasması"
+        ],
+        [
+          "Aşçı Diego Kar Getiriyor",
+          "Su, erittiğin kardır. Kovalarını fırtınanın ortasında doldurdu ve uzun süre dışarıda kaldı.",
+          "🪣 Kar kovası"
+        ],
+        [
+          "Rüzgârölçer",
+          "Çatıdaki rüzgârölçer saat dörtte durdu. Donmuş, diyor Nancy. Etrafına bir bez sarılmıştı.",
+          "🌀 Rüzgârölçer"
+        ],
+        [
+          "Tamirci Lieve ve Jeneratör",
+          "Eksi altmış derecede jeneratör durmamalı. Saat beşte durmuştu, Lieve de uyuyordu.",
+          "⛽ Benzin bidonu"
+        ],
+        [
+          "Doktor Kenji ve Soğuk Yanığı",
+          "İki kişi yanakları bembeyaz içeri girdi. Nöbet defterine göre dışarıda yalnızca biri vardı.",
+          "📓 Nöbet defteri"
+        ],
+        [
+          "Halatı Kim Çözdü",
+          "Bir düğüm fırtınada kendiliğinden çözülmez. Bu düğüm eldivenli ellerle özenle çözülmüştü.",
+          "🪝 Karabina"
+        ]
+      ]
+    ],
+    "poolstation-4": [
+      "Bölüm IV · Buz Karotu",
+      "Buzulbilimci Marina aylardır üssün altındaki buzu deliyor. En iyi karotu, her zaman eksi otuz derece olan kar tünelinde duruyor. Bu sabah paramparça. Kaza değil.",
+      "Karot yeniden tünelde, her parçası numaralı. İçindeki kara katmanı ilk bildiren Holm olmak istiyordu.",
+      "Laboratuvarda herkes iç içe durur, o yüzden kimin kimin hemen yanında durduğuna dikkat et. Önce en az seçeneği olan şüpheliyi yerleştir; gerisi arkasından gelir.",
+      [
+        [
+          "On Bin Yıl",
+          "Her santimetre buz bir yıl demek. Karot tam da buzulbilimcinin aradığı yılda kırıldı.",
+          "🧊 Buz karotu"
+        ],
+        [
+          "Buzulbilimci Marina Parçaları Sayıyor",
+          "Her parçayı yağlı kalemle numaralandırır. On dört numara eksik.",
+          "🖍️ Yağlı kalem"
+        ],
+        [
+          "Matkap",
+          "Buz matkabı atölyede duruyor. Ucunda taze buz var, oysa Marina bir haftadır delmedi.",
+          "🔩 Buz matkabı"
+        ],
+        [
+          "Fizikçi Hélène Ölçmek İstiyor",
+          "Buzda çok uzaklardan gelmiş toz zerreleri var. Hélène onları ölçmek istiyor, Marina ise önce kendisi tanımlamak istiyor.",
+          "🔬 Preparat"
+        ],
+        [
+          "Aşçı Diego Mate Hazırlıyor",
+          "Matesi için tünelden aldığı buzu eritiyor. Hangi buzun eski olduğunu bilmediğini söylüyor.",
+          "🧉 Mate kabı"
+        ],
+        [
+          "Doktor Kenji ve Mikroskop",
+          "Üste tek bir mikroskop var. O gece Kenji, kimsenin istemediği bir test için onun başındaydı.",
+          "🧪 Deney tüpü"
+        ],
+        [
+          "Holm’un Günlüğü",
+          "Holm’un günlüğünde karot üç kez geçiyor. Biri ünlem işaretiyle.",
+          "📔 Günlük"
+        ],
+        [
+          "Buzun İçindeki",
+          "Mikroskobun altında: buzun içinde ince, kara bir katman. Onu ilk gören Holm’du.",
+          "🌋 Kül katmanı"
+        ]
+      ]
+    ],
+    "poolstation-5": [
+      "Bölüm V · Kutup Işıkları",
+      "Gecenin ortasında gökyüzü yeşile boyanıyor. Hélène herkesi dışarı çağırıyor, çünkü böyle kutup ışıkları bir kışta ancak birkaç kez görülür. Herkes yukarı bakıyor, biri hariç.",
+      "Yeşil ışık sönüyor. Yirmi dakikada çok şey olabilir ve artık ne olduğunu biliyorsun.",
+      "Kutup ışıklarında herkes karanlıkta dışarıda durur ve yalnızca kendini görür. Yalnız olduğunu söyleyenle başla: bu, bütün bir alanı tek seferde boşaltır.",
+      [
+        [
+          "Yeşil Işık",
+          "Saat ikide gökyüzü yeşile boyandı. İçeride kimse görmedi, çünkü içeride kimse yoktu, diyorlar.",
+          "📸 Kutup ışığı fotoğrafı"
+        ],
+        [
+          "Fizikçi Hélène Ölçüm Yapıyor",
+          "Her parlamanın ne kadar sürdüğünü ölçer. İki ölçüm arasında on dakikalık bir boşluk var.",
+          "⏱️ Kronometre"
+        ],
+        [
+          "Çatıdaki Fotoğraf Makinesi",
+          "Hélène çatıya her dakika bir fotoğraf çeken bir makine koydu. Fotoğraflardan birinde köpek barınağının yanında bir lamba var.",
+          "📷 Gökyüzü kamerası"
+        ],
+        [
+          "Kızakçı Rewi Bakmıyor",
+          "Herkes dışarıda başını kaldırmış duruyordu. Rewi sırtını gökyüzüne dönmüştü.",
+          "🏮 Fırtına feneri"
+        ],
+        [
+          "Telsizci Ole Cızırtı Duyuyor",
+          "Kutup ışıklarında her telsiz cızırdar. Yine de Ole çok yakından gelen, çok net bir mesaj duydu.",
+          "📡 Anten teli"
+        ],
+        [
+          "Aşçı Diego İçeride Kalıyor",
+          "Kutup ışıklarını çok kez gördüğünü söylüyor. Bu onun buzdaki ilk kışı.",
+          "🥘 Çorba tenceresi"
+        ],
+        [
+          "Meteorolog Nancy Not Alıyor",
+          "Hava defterinde şöyle yazıyor: açık, rüzgârsız, kutup ışıkları. Ve ikiyi on geçe: hava kulübesinin kapısı açık.",
+          "🗝️ Hava kulübesinin anahtarı"
+        ],
+        [
+          "O Tek Kişi",
+          "Kutup ışıkları yirmi dakika sürer. Telsiz odasına gidip dönmeye yeter.",
+          "🕰️ Kantin saati"
+        ]
+      ]
+    ],
+    "poolstation-6": [
+      "Bölüm VI · Köpek Kızağı",
+      "On mil ötedeki depoda ilkbahar için yakıt ve yiyecek var. Rewi kızakla ve iki kişiyle oraya gidiyor. Gidişi iki gün. Kızak yanlış yükle dönüyor.",
+      "Sandıklar kilerde, damgaları yukarı bakıyor. İçlerinde ne olduğunu Holm zaten listesine yazmıştı.",
+      "Buradan sonra neredeyse her vaka dokuza dokuzluk büyük tahtada. Kalemi kullan: olamayacak kareleri ele ve geriye ne kaldığına bak.",
+      [
+        [
+          "On Mil",
+          "Depo on mil güneyde. Giderken kızak hafiftir, dönüşte ağır olmalı.",
+          "🛷 Köpek kızağı"
+        ],
+        [
+          "Kızakçı Rewi Köpekleri Kızağa Koşuyor",
+          "Her zamanki gibi kızağın önünde yedi köpek. En iyi köpek Kaho barınakta kaldı.",
+          "🐕 Önder köpek Kaho"
+        ],
+        [
+          "Deponun Listesi",
+          "Listeye göre depoda kırk varil yakıt var. Rewi otuz altı tane saydı.",
+          "🛢️ Yakıt varili"
+        ],
+        [
+          "Tamirci Lieve de Geliyor",
+          "Sonbahardan beri depoda duran ratrağı almaya geldi. Ratrak ilk denemede çalıştı.",
+          "🔋 Akü"
+        ],
+        [
+          "Buzulbilimci Marina da Geliyor",
+          "Yolda buz delmek istediğini söylüyor. Yanına matkap almadı.",
+          "🎒 Sırt çantası"
+        ],
+        [
+          "Yoldaki Kamp",
+          "Bir geceyi buzun üstünde, çadırda geçirdiler. Çadırın çevresinde dört çift iz vardı. Onlar üç kişiydi.",
+          "⛺ Kutup çadırı"
+        ],
+        [
+          "Yanlış Yük",
+          "Kızakta varil değil, istasyonun damgasını taşıyan sandıklar vardı. Bir yıldır kayıp olan sandıklar.",
+          "📦 Damgalı sandık"
+        ],
+        [
+          "Doktor Kenji Bekliyor",
+          "Kızak dönene kadar köpek barınağının yanında bekledi. Kızakta kaç sandık olacağını zaten biliyordu.",
+          "📋 Konşimento"
+        ]
+      ]
+    ],
+    "poolstation-7": [
+      "Bölüm VII · Meteoroloji Balonu",
+      "Nancy her sabah ve her akşam, rüzgârı ve soğuğu ölçen küçük bir kutuyla birlikte bir meteoroloji balonu uçurur. Günde iki kez bir balon yükselir. Bugün balona bir not bağlanmıştı.",
+      "Balon çoktan bulutların üstünde. Not ise değil: üç kelime sende ve onları kimin yazdığını biliyorsun.",
+      "Tahta büyüyor, gece kısalıyor. Rapora göre bir alan boşsa, o alanın tamamı herkes için elenir.",
+      [
+        [
+          "Not",
+          "Nancy notu ancak balon yükselirken gördü. Üç kelimeyi güçbela okuyabildi.",
+          "🎈 Meteoroloji balonu"
+        ],
+        [
+          "Meteorolog Nancy Balonu Dolduruyor",
+          "Her balonu kendisi hidrojenle doldurur. Bu balon, o hava kulübesine geldiğinde çoktan doluydu.",
+          "⚗️ Gaz tüpü"
+        ],
+        [
+          "Kutu Geri Dönüyor",
+          "Bir sondayı genellikle bir daha görmezsin. Bu sonda üç gün sonra köpek barınağının yanına düştü.",
+          "📡 Radyosonda"
+        ],
+        [
+          "Telsizci Ole Sinyali Yakalıyor",
+          "Sonda soğuğu telsiz odasına bildirir. O gece Ole sıcaklık olmayan sayılar yazdı.",
+          "🔢 Sayı dizisi"
+        ],
+        [
+          "Fizikçi Hélène Şifreyi Okuyor",
+          "Sondanın şifresini bilir, çünkü onunla hesap yapar. Ne yazdığını ancak iki gün sonra söyledi.",
+          "📐 Hesap cetveli"
+        ],
+        [
+          "Aşçı Diego ve İp",
+          "Balondaki ip mutfak ipi. Aşçının eti bağladığı türden.",
+          "🧵 Mutfak ipi"
+        ],
+        [
+          "Tamirci Lieve ve Büyük Harfler",
+          "Çizimlerine hep büyük harflerle yazar. Not da büyük harflerle yazılmıştı.",
+          "📝 İş çizimi"
+        ],
+        [
+          "Buzulbilimci Marina Notu Çeviriyor",
+          "Not üç dilde yazılmıştı, her dilde bir kelime. Üç dili de konuşan tek kişi Marina.",
+          "📖 Sözlük"
+        ]
+      ]
+    ],
+    "poolstation-8": [
+      "Bölüm VIII · İlk Güneş",
+      "Ağustos sonunda ufkun üstünde bir ışık şeridi beliriyor. Dört ay sonra güneş geri dönüyor, ana karadan uçak da. Kutup ışıklarının altında bir gece daha, kış ortasındaki yüzlerle.",
+      "Van Dam uçaktan en son iniyor, elini sıkıyor ve bir an güneşe bakıyor. Güneş yeniden buzun üstünde. İlk uçak postayı getiriyor ve faili evine götürüyor.",
+      "Son vakalar, neredeyse hepsi büyük tahtada. En zor olana takılıp kalma: önce diğerlerini yerleştir, sonuncuya çoğu zaman tek bir kare kalır.",
+      [
+        [
+          "Işık Şeridi",
+          "Öğlen saat on ikide ufuk pembeye dönüyor. Herkes dışarıda. Telsiz odasının bir penceresi buğulu.",
+          "🪟 Buğulu pencere"
+        ],
+        [
+          "Tamirci Lieve Pisti Açıyor",
+          "Ratrakla uçak için bir pist açıyor. Karın altında radyo lambalarının boş kutusu vardı.",
+          "🧰 Lamba kutusu"
+        ],
+        [
+          "Doktor Kenji Raporunu Yazıyor",
+          "Ana kara için bir rapor: dokuz kişi, bir kış. Holm’un yanında şöyle yazıyor: nedeni bilinmiyor. Oysa o biliyor.",
+          "📄 Tıbbi rapor"
+        ],
+        [
+          "Aşçı Diego Sonuncuyu Pişiriyor",
+          "Kışın son konservesi şeftali. Alışkanlıktan dokuz kâse koydu.",
+          "🍑 Şeftali konservesi"
+        ],
+        [
+          "Kızakçı Rewi Vedalaşıyor",
+          "Köpekler bir sonraki ekip için kalıyor. Rewi yalnızca Kaho’yu götürüyor ve Kaho bir yolcuya hırlıyor.",
+          "📿 Köpek künyesi"
+        ],
+        [
+          "Fizikçi Hélène Eşyalarını Topluyor",
+          "Dört aylık ölçüm tek bir sandığa sığıyor. Sandığı bir sayfa için bir kez daha açtı.",
+          "📚 Ölçüm defterleri"
+        ],
+        [
+          "Uçak",
+          "Uçak iniyor, pilot postayı teslim ediyor. Aralarında üsteki birinden Holm’a yazılmış bir mektup var.",
+          "✉️ Uçak postası mektubu"
+        ],
+        [
+          "Bir Kez Daha Kış Ortası",
+          "Her şey telsiz odasında başladı. Ole orada, Holm’un hiç bitiremediği mesajı gönderiyor.",
+          "📨 Son mesaj"
+        ]
+      ]
+    ],
+    "winterpaleis": [
+      "Bölüm I · Son Vals",
+      "Zvezdin Sarayı, 1899’un son gecesi. Balo salonunda orkestra yüzyılın son valsini çalıyor. Gece yarısı yeni yüzyıl için kadehler kalkıyor. Kont aralarında yok.",
+      "Orkestra sabaha kadar çalmayı sürdürüyor, çünkü kimse onu durdurmaya cesaret edemiyor. Konta kadehini kimin götürdüğünü zaten biliyorsun.",
+      "Bir sarayın yüz kapısı ve bir o kadar odası vardır. Hangi odada olduğunu söyleyenle başla. Mücevherli yumurtanın “hemen yanında” yalnızca tam yanındaki kare demek, asla çapraz değil.",
+      [
+        [
+          "On İki Vuruş",
+          "Saat on ikiyi vurdu ve iki yüz kadeh havaya kalktı. Kütüphanede bir kadeh hâlâ dolu duruyordu.",
+          "🥂 Kristal kadeh"
+        ],
+        [
+          "Kütüphane",
+          "Kont şöminenin yanındaki koltuğunda oturuyordu. Kucağındaki kitap ters duruyordu.",
+          "📕 Ters kitap"
+        ],
+        [
+          "Kâhya Fyodor Kadehleri Sayıyor",
+          "On ikiye çeyrek kala iki yüz kadeh hazırladı. Saat on ikide balo salonunda 199 kadeh kalmıştı.",
+          "🍾 Şampanya şişesi"
+        ],
+        [
+          "Besteci Sergey Orkestrayı Yönetiyor",
+          "Yeni valsi yedi dakika sürüyor. Partisyonda dün olmayan bir tekrar var.",
+          "🎼 Partisyon"
+        ],
+        [
+          "Kontes Yelena Konuk Karşılıyor",
+          "Bütün akşam konukları karşılamak için merdivenin başında durdu. On bir buçukta on dakika ortadan kayboldu.",
+          "🪭 Yelpaze"
+        ],
+        [
+          "Teğmen Dmitri Dans Ediyor",
+          "Salondaki her hanımla dans etti. Aynaların yanında tek başına duran nişanlısıyla etmedi.",
+          "🧤 Beyaz eldiven"
+        ],
+        [
+          "Flaş",
+          "On ikiye beş kala İrina magnezyum flaşını patlattı. Fotoğrafta kütüphanenin kapısı aralık.",
+          "📸 Cam negatif"
+        ],
+        [
+          "Şömine Ateşi",
+          "Kütüphanedeki ateş hâlâ harıl harıl yanıyordu. Biri saat on birden sonra üstüne odun atmıştı.",
+          "🪵 Huş odunu"
+        ]
+      ]
+    ],
+    "winterpaleis-2": [
+      "Bölüm II · Mücevherli Yumurta",
+      "Kuyumcu Pavel, kontun siparişiyle yumurta üzerinde bir yıl çalıştı. Yumurta gece yarısı, aileye bir sürprizle açılacaktı. İçi boş.",
+      "Altın saraycık yeniden yumurtanın içinde. Küçük kilit kapanıyor ve onu kimin açtığını biliyorsun.",
+      "Baloda herkes herkes hakkında konuşur. İki kişiyle ilgili bir ifadeyi çözmek için önce ikisinden birinin yerini kesinleştir.",
+      [
+        [
+          "Küçük Kilit",
+          "Yumurta bir pirinç tanesi büyüklüğünde bir anahtarla açılır. Anahtar hâlâ kilidin üstündeydi.",
+          "🗝️ Altın anahtarcık"
+        ],
+        [
+          "Kuyumcu Pavel Anlatıyor",
+          "Yumurtanın içinde yüksük büyüklüğünde altın bir saray vardı. Ağırlığını tam olarak biliyor.",
+          "⚖️ Kuyumcu terazisi"
+        ],
+        [
+          "Vitrin",
+          "Yumurta aynalı salonda, cam altında duruyordu. Cam sağlam, kilit kapalı.",
+          "🔐 Vitrin kilidi"
+        ],
+        [
+          "Mürebbiye Mabel ve Çocuklar",
+          "Çocukların yumurtayı saat on birde görmesine izin verildi. Mabel o sırada yumurtanın hâlâ kapalı olduğunu söylüyor.",
+          "🎠 Oyuncak at"
+        ],
+        [
+          "Fotoğrafçı İrina Yumurtayı Çekti",
+          "Saat dokuzda çektiği fotoğrafta yumurta açık ve boş. Pavel saat dokuzda hâlâ kapalı olduğunu söylüyor.",
+          "🖼️ Fotoğraf baskısı"
+        ],
+        [
+          "Kâhya Fyodor Bütün Anahtarları Taşıyor",
+          "Kırk yıldır sarayın anahtarlarını taşıyor. Halkasında hiçbir kapıya uymayan bir anahtar var.",
+          "🔑 Anahtar halkası"
+        ],
+        [
+          "Altın Tozu",
+          "Vestiyerdeki halının üstünde altın tozu var. Pavel cilalamak için bunu kullanır.",
+          "✨ Altın tozu"
+        ],
+        [
+          "Patinajcı Vera ve Manşon",
+          "Paten yaparken kürk bir manşon takıyordu. Astarının içinde yüksük büyüklüğünde sert bir şey vardı.",
+          "🦊 Kürk manşon"
+        ]
+      ]
+    ],
+    "winterpaleis-3": [
+      "Bölüm III · Buz Pisti",
+      "Yılbaşı günü eğlence dışarıda sürüyor. Donmuş göletin çevresinde meşaleler, kıyıda müzik. Buzun üstünde üç çift patenin izi var.",
+      "Meşaleler sönüyor. Buzdaki üç izden üçüncüsünü kimin çizdiğini artık biliyorsun.",
+      "Buzun üstünde herkes kendi ayaklarına bakar. Nerede OLMADIĞINI söyleyen de sana bir şey anlatır: o odayı hemen ele.",
+      [
+        [
+          "Üç İz",
+          "Herkese göre gece yarısı yalnızca Vera paten yapıyordu. Buzda ortaya doğru giden üç iz vardı.",
+          "⛸️ Artistik paten"
+        ],
+        [
+          "Patinajcı Vera Programını Sergiliyor",
+          "Her gece aynı müzikle aynı programı sergiler. Dün programı bir dakika kısa sürdü.",
+          "🎵 Müzik kutusu"
+        ],
+        [
+          "Buzdaki Delik",
+          "Göletin ortasında, balıklar hava alsın diye bir delik var. İçinde bir meşale yüzüyordu.",
+          "🔥 Meşale"
+        ],
+        [
+          "Teğmen Dmitri Paten Yapamıyor",
+          "Paten yapamayan bir muhafız subayı olduğunu söylüyor. Patenleri yeni bilenmiş.",
+          "🪨 Bileği taşı"
+        ],
+        [
+          "Besteci Sergey Kıyıda",
+          "Kıyıda, eldivenlerini çıkarmadan keman çaldı. Eldivenle kimse keman çalamaz.",
+          "🎻 Keman"
+        ],
+        [
+          "Arabalık",
+          "Arabalıkta bütün ailenin patenleri asılıdır. Askılardan biri boş.",
+          "🪝 Boş askı"
+        ],
+        [
+          "Mürebbiye Mabel İngiltere’den Geliyor",
+          "İngiltere’de kimse paten yapmaz, diyor. Buzda kusursuz bir üç figürü çizdi.",
+          "🧣 Yün atkı"
+        ],
+        [
+          "Buzun Altında",
+          "Berrak buzun içinden göletin dibi görünüyor. Orada parlayan bir şey var.",
+          "💍 Mühür yüzüğü"
+        ]
+      ]
+    ],
+    "winterpaleis-4": [
+      "Bölüm IV · Aynalı Salon",
+      "Bir hafta sonra kontes, evin yaşamaya devam ettiğini göstermek için aynalı salonda ikinci bir balo veriyor. Yüz ayna ve yüz konuk. Bir yansıma yanlış.",
+      "Aynalar yeniden düz asılı, arkalarındaki kapı kapalı. Bir yansıma gerçekti ve kimin olduğunu biliyorsun.",
+      "Aynalı salonda herkes iki kez görünür, o yüzden kimin kimin hemen yanında durduğuna dikkat et. Önce en az seçeneği olan şüpheliyi yerleştir; gerisi arkasından gelir.",
+      [
+        [
+          "Yüz Ayna",
+          "Aynalı salonda herkesi on kez görürsün. Biri, gece yarısından sonra bir aynada kontu gördü.",
+          "🪞 El aynası"
+        ],
+        [
+          "Kontes Yelena Siyahlar İçinde",
+          "Usule uygun olarak yas tutuyor. Siyah elbisenin altında balodaki mavi elbiseyi giyiyor.",
+          "👗 Balo elbisesi"
+        ],
+        [
+          "Yansıma",
+          "Aynada, kapının yanında bıyıklı bir adam duruyordu. Kapının yanında kimse yoktu.",
+          "🎩 Silindir şapka"
+        ],
+        [
+          "Fotoğrafçı İrina ve Aynalar",
+          "Aynayla flaş bir araya gelmez, diyor. Yine de salonu bir perdenin arkasından fotoğrafladı.",
+          "🎞️ Negatif"
+        ],
+        [
+          "Teğmen Dmitri ve Nişanlısı",
+          "Bir haftadır ilk kez nişanlısıyla bir dans etti. Dans boyunca gözü aynadaydı.",
+          "💐 Yaka çiçeği"
+        ],
+        [
+          "Kâhya Fyodor Aynaları Siliyor",
+          "Her sabah yüz aynayı siler. Birinde, bir çocuğun boyu hizasında bir parmak izi vardı.",
+          "🧽 Güderi"
+        ],
+        [
+          "Aynanın Arkasındaki Kapı",
+          "Ellinci aynanın arkasında kütüphaneye açılan bir kapı var. Biri bunu biliyordu.",
+          "🚪 Aynalı kapı"
+        ],
+        [
+          "Besteci Sergey Valsi Yeniden Çalıyor",
+          "İkinci baloda aynı valsi çalıyor. Tekrar kısmında kontes kapıya bakıyor.",
+          "📜 Dans kartı"
+        ]
+      ]
+    ],
+    "winterpaleis-5": [
+      "Bölüm V · Kızak Gezisi",
+      "Şubatta bütün ev halkı, koşum takımlarında çıngıraklar olan atlı kızaklarla donmuş Neva’nın üstünde gezintiye çıkıyor. Dört kızak yola çıkıyor, üçü geri dönüyor.",
+      "Dördüncü kızak yeniden arabalıkta, çıngıraklar sessiz. Yaya dönen kişi sana anlattı.",
+      "Kürk örtülerin altında kimse yanında kimin oturduğunu görmez. Yalnız olduğunu söyleyenle başla: bu, bütün bir odayı tek seferde boşaltır.",
+      [
+        [
+          "Dört Kızak",
+          "Dört kızak, dört at, kürk örtülerin altında on iki kişi. Saraya üç kızak döndü.",
+          "🔔 Kızak çıngırağı"
+        ],
+        [
+          "Kâhya Fyodor Yerleri Belirliyor",
+          "Kırk yıldır kimin hangi kızakta oturacağına o karar verir. Bu yıl iki ismin yerini değiştirdi.",
+          "📃 Oturma listesi"
+        ],
+        [
+          "Dördüncü Kızak",
+          "Ertesi sabah dördüncü kızak arabalığın önünde duruyor, atsız. Örtüler kuru.",
+          "🐎 Koşum takımı"
+        ],
+        [
+          "Patinajcı Vera Yanlarında Kayıyor",
+          "Bütün yol boyunca kızakların yanında kaydı. Yarı yolda herkesin önündeydi.",
+          "🎀 Kırmızı kuşak"
+        ],
+        [
+          "Neva’daki Delik",
+          "Balıkçılar Neva’nın buzunda delikler açar. Dördüncü kızak birinin hemen yanından geçti ve kimse bağırmadı.",
+          "🎣 Olta"
+        ],
+        [
+          "Mürebbiye Mabel Sayım Yapıyor",
+          "Her durakta çocukları sayar, işi budur. Büyükleri de saydı ve biri eksik çıktı.",
+          "📒 Not defteri"
+        ],
+        [
+          "Kuyumcu Pavel Evde Kalıyor",
+          "Gelmedi, çalışması gerekiyordu. Kızaklar döndüğünde tezgâhı soğuktu.",
+          "🛠️ Oyma kalemi"
+        ],
+        [
+          "Dördüncü Kızakta Kim Vardı",
+          "İki kişi dördüncü kızakla gitti. Biri yaya döndü, çizmeleri kuruydu.",
+          "👢 Kürk çizme"
+        ]
+      ]
+    ],
+    "winterpaleis-6": [
+      "Bölüm VI · Mühürlü Mektup",
+      "Çarlık sarayından bir ulak, kont için kırmızı mühür mumuyla mühürlenmiş bir mektup getiriyor. Biri onu çoktan okumuş.",
+      "Mektup yeniden çekmecede, mühür sağlam. Onu ilk okuyan, üçüncü cümleyi çoktandır biliyordu.",
+      "Buradan sonra neredeyse her vaka dokuza dokuzluk büyük tahtada. Kalemi kullan: olamayacak kareleri ele ve geriye ne kaldığına bak.",
+      [
+        [
+          "Kırmızı Mum",
+          "İmparatorluk mührü kırmızı ve yuvarlaktır. Bu mektupta iki kez eritilmiş.",
+          "🔴 Mühür mumu"
+        ],
+        [
+          "Kâhya Fyodor Ulağı Karşılıyor",
+          "Avlu kapısından kütüphaneye yürüyerek beş dakika. Mektupla birlikte yirmi dakikada vardı.",
+          "✉️ İmparatorluk mektubu"
+        ],
+        [
+          "Kontes Yelena Yüksek Sesle Okuyor",
+          "Mektubu aileye yüksek sesle okuyor. Bir cümleyi atlıyor.",
+          "👓 Lorgnon"
+        ],
+        [
+          "Semaver",
+          "Mühür buharla gevşer. Mutfaktaki semaver gecenin üçünde yanıyordu.",
+          "🫖 Semaver"
+        ],
+        [
+          "Teğmen Dmitri Mührü Tanıyor",
+          "Bir subay olarak her hafta çarlık sarayından mektuplar görür. Böyle bir mührün nasıl yeniden basılacağını biliyor.",
+          "🎖️ Madalya"
+        ],
+        [
+          "Fotoğrafçı İrina Karanlık Odada",
+          "Karanlık odasında kurumaya bırakılmış bir cam negatif asılı. Üstünde bir mektup var.",
+          "🧪 Revelatör"
+        ],
+        [
+          "Besteci Sergey ve Çarlık Sarayı",
+          "Mektuba göre çarlık sarayı bahar balosu için bir vals istiyor. Sergey bunu bir haftadır biliyordu.",
+          "🎶 Bahar valsi"
+        ],
+        [
+          "Mektupta Ne Yazıyordu",
+          "Zarif bir el yazısıyla üç cümle. Üçüncüsü mirasla ilgiliydi ve biri o cümleyi zaten biliyordu.",
+          "🪶 Kaz tüyü kalem"
+        ]
+      ]
+    ],
+    "winterpaleis-7": [
+      "Bölüm VII · Buz Çözülüyor",
+      "Nisanda Neva’nın buzu kırılıyor. Ev büyüklüğünde buz kütleleri sarayın önünden denize sürükleniyor. Buz kütleleriyle birlikte bir sır su yüzüne çıkıyor.",
+      "Neva yeniden özgürce denize akıyor. Buzun bütün kış sakladığı şey artık senin masanda.",
+      "Tahta büyüyor, ifadeler cimrileşiyor. Rapora göre bir oda boşsa, o odanın tamamı herkes için elenir.",
+      [
+        [
+          "Buz Kırılıyor",
+          "Top atışı gibi bir gürültüyle buz kırılıyor. Bütün ev halkı rıhtıma koşuyor.",
+          "🧊 Buz kütlesi"
+        ],
+        [
+          "Mühür Yüzüğü",
+          "Göletten çıkan yüzük konta olmuyor. Daha küçük bir ele ait.",
+          "📏 Yüzük ölçer"
+        ],
+        [
+          "Mürebbiye Mabel Eve Mektup Yazıyor",
+          "Her hafta İngiltere’ye yazar. Bu hafta sekiz sayfalık bir mektup yazdı ve yırttı.",
+          "📮 Posta pulu"
+        ],
+        [
+          "Arabalığı Su Basıyor",
+          "Erime suyu arabaların dingillerine kadar çıkıyor. Bavullardan biri yüzmüyor, çok ağır.",
+          "🧳 Bavul"
+        ],
+        [
+          "Kâhya Fyodor Emekli Oluyor",
+          "Kırk yıldan sonra köyüne dönmek istiyor. Yolculuğunun parası altınla ödenmiş.",
+          "🪙 Altın ruble"
+        ],
+        [
+          "Patinajcı Vera Yola Çıkıyor",
+          "Gelecek kış, parasını kontun ödediği Davos’ta paten yapacak. Kont para vermeyeceğini söylemişti.",
+          "🎫 Tren bileti"
+        ],
+        [
+          "Kuyumcu Pavel ve İkinci Yumurta",
+          "Şimdiden ikinci bir yumurta üzerinde çalışıyor. Küçük kilidine kadar birincinin tıpatıp aynısı.",
+          "🥚 İkinci yumurta"
+        ],
+        [
+          "Su Yüzüne Çıkan",
+          "Buz kütlelerinin arasında kontun küçük bir sandığı yüzüyor. İçinde hâlâ kuru bir mektup var.",
+          "🗃️ Su geçirmez sandık"
+        ]
+      ]
+    ],
+    "winterpaleis-8": [
+      "Bölüm VIII · Son Balo",
+      "Mayısta saray yaz için kapanıyor, aile sayfiye evine taşınıyor. Avizelerin altında bir vals daha, yılbaşı gecesindeki yüzlerle.",
+      "Van Dam kürk şapkasını takıyor, kontesin önünde eğiliyor ve istasyona giden son arabaya biniyor. Mumlar söndü, yeni yüzyıl başladı. Eskisinin son sırrını sen çözdün.",
+      "Son vakalar, neredeyse hepsi büyük tahtada. En zor olana takılıp kalma: önce diğerlerini yerleştir, sonuncuya çoğu zaman tek bir kare kalır.",
+      [
+        [
+          "Örtüler",
+          "Fyodor koltukların üstüne beyaz örtüler seriyor. Kütüphanedeki bir koltuğun üstünde ocaktan beri bir örtü var.",
+          "🛋️ Toz örtüsü"
+        ],
+        [
+          "Kontes Yelena Sarayı Alıyor",
+          "Çarlık sarayının mektubuna göre sarayı o miras alıyor. Aralık ayında kendi monogramıyla perdeler ısmarlamıştı bile.",
+          "🧵 Monogram"
+        ],
+        [
+          "Teğmen Dmitri Evleniyor",
+          "Düğün haziranda, sarayın şapelinde. Papazdan tarihi öne almasını istedi.",
+          "💌 Düğün davetiyesi"
+        ],
+        [
+          "Fotoğrafçı İrina Toplu Fotoğrafı Çekiyor",
+          "Dergi için merdivenin önünde sekiz kişi. İçlerinden biri objektife değil, kütüphaneye bakıyor.",
+          "🖼️ Toplu fotoğraf"
+        ],
+        [
+          "Besteci Sergey Bitiriyor",
+          "Valsinin adı artık Yılbaşı Gecesi. Ocaktaki tekrar artık içinde yok.",
+          "🎹 Yeni partisyon"
+        ],
+        [
+          "Kuyumcu Pavel Yumurtayı Paketliyor",
+          "Yumurta, saman dolu bir sandıkta sayfiye evine gidiyor. Pavel onu kendisi paketliyor ve kimsenin bakmasını istemiyor.",
+          "📦 Saman sandığı"
+        ],
+        [
+          "Mürebbiye Mabel Vedalaşıyor",
+          "Altı yıl sonra İngiltere’ye dönüyor. Çocuklar ona yılbaşı gecesini gösteren bir resim veriyor.",
+          "🖍️ Çocuk resmi"
+        ],
+        [
+          "Bir Kez Daha Gece Yarısı",
+          "Saat on ikiyi vuruyor, tıpkı yılbaşı gecesi olduğu gibi. Bu kez kütüphanenin kapısında kimse yok.",
+          "🕰️ Ayaklı saat"
+        ]
+      ]
+    ],
+    "safarilodge": [
+      "Bölüm I · Büyük Göç",
+      "Twiga Lodge, Maasai Mara, Ağustos 1974. Bir milyon antilop kampın önünden geçiyor ve bütün çadırlar dolu. Ateş başındaki geceden sonra belgeselci Rupert Vane karanlık odada, film makaralarının arasında yatıyor.",
+      "Ateş söndü, antiloplar karanlıkta yollarına devam ediyor. 40 numaralı makara hâlâ kayıp, ama kapıyı kimin kapattığını biliyorsun.",
+      "Bir safari kampı, çevresi çadırlarla dolu uzun bir verandadır. Hangi alanda olduğunu söyleyenle başla. Akasyanın “hemen yanında” yalnızca tam yanındaki kare demek, asla çapraz değil.",
+      [
+        [
+          "Ateş Başından Sonra",
+          "Saat onda herkes hâlâ ateşin başında şarkı söylüyordu. Saat on birde bir sandalye boştu, karanlık odanın kapısı da kapalı.",
+          "🪵 Odun"
+        ],
+        [
+          "Karanlık Oda",
+          "Kırmızı lamba hâlâ yanıyordu. Film makaraları sırayla dizilmişti, biri hariç.",
+          "🔴 Kırmızı lamba"
+        ],
+        [
+          "Kamp Sahibi Wambui Kapıyı Çalıyor",
+          "Her akşam iyi geceler dilemek için her kapıyı çalar. Karanlık odadan cevap gelmedi.",
+          "🔑 Ana anahtar"
+        ],
+        [
+          "Rehber Otieno ve Son Gezinti",
+          "O öğleden sonra belgeselciyi arabayla nehre götürdü. Plandan bir saat geç döndüler.",
+          "🚙 Gezi defteri"
+        ],
+        [
+          "Sesçi Felix Her Şeyi Kaydediyor",
+          "Teybi bütün akşam ateşin başında çalıştı. Saat on buçukta bant bir dakika sessiz.",
+          "📼 Ses bandı"
+        ],
+        [
+          "Şef Hamisi ve Kahve",
+          "Yemekten sonra tarçınlı kahve dağıtır. Belgeselcinin fincanı karanlık odada el sürülmeden duruyordu.",
+          "☕ Kahve fincanı"
+        ],
+        [
+          "Son Çekim",
+          "Klakette şu yazıyor: makara 40, çekim 12. 40 numaralı makara hiçbir yerde yok.",
+          "🎬 Klaket"
+        ],
+        [
+          "Biyolog Birgit Geç Dönüyor",
+          "Aslanlarının yanından ancak gece yarısı döndü. Cipinin motoru soğuktu.",
+          "📡 İzleme anteni"
+        ]
+      ]
+    ],
+    "safarilodge-2": [
+      "Bölüm II · Negatif",
+      "Felix, belgeselcinin geride bıraktığı makaraları banyo ediyor. Bir film makarası hazır. Son karede orada olmaması gereken biri var.",
+      "Negatif bir mandala asılı kuruyor. Fotoğrafta kimin olduğunu artık biliyorsun. Nedenini henüz bilmiyorsun.",
+      "Verandada herkes herkes hakkında konuşur. İki kişiyle ilgili bir ifadeyi çözmek için önce ikisinden birinin yerini kesinleştir.",
+      [
+        [
+          "39 Numaralı Makara",
+          "39 numaralı makara antilop, antilop ve yine antilop. Son karede nehrin kıyısında bir insan var.",
+          "🎞️ 39 numaralı makara"
+        ],
+        [
+          "Sesçi Felix Filmi Banyo Ediyor",
+          "On yıldır belgeselciyle çalışıyor. Hangi makaranın eksik olduğunu saymadan biliyor.",
+          "🧪 Banyo leğeni"
+        ],
+        [
+          "Gazeteci Amina Baskı İstiyor",
+          "Gazetesi için göçün tek bir fotoğrafını istiyor. Antilop değil, son kareyi istedi.",
+          "📰 Gazete kupürü"
+        ],
+        [
+          "Büyüteç",
+          "Büyütecin altında fotoğraftaki adam küçük, ama şapkası değil. Kampta böyle bir şapkayı yalnızca bir kişi takıyor.",
+          "🔍 Büyüteç"
+        ],
+        [
+          "Rehber Otieno Yeri Tanıyor",
+          "Fotoğraftaki nehir dönemecini tanıyor. Oraya turist gitmez, diyor, yalnızca rehberler gider.",
+          "🗺️ Mara haritası"
+        ],
+        [
+          "Pilot Kiprono Üstünden Uçtu",
+          "O öğleden sonra konuklar için nehrin üstünden alçaktan uçtu. Orada işi olmayan bir cip gördü.",
+          "✈️ Uçuş defteri"
+        ],
+        [
+          "Veteriner Njeri Çiti Tanıyor",
+          "Adamın arkasında rezervin bir çiti var. O kapı geçen haftadan beri kilitli ve anahtar onda.",
+          "🔒 Asma kilit"
+        ],
+        [
+          "Orada Olmaması Gereken",
+          "Fotoğrafta, kendi söylediğine göre o gün hasta yatan biri var. Kampta doktor yok.",
+          "📝 Hasta raporu"
+        ]
+      ]
+    ],
+    "safarilodge-3": [
+      "Bölüm III · Gölet",
+      "Gözcü kulesinden göleti görürsün. Gece her şey su içmeye gelir: filler, zebralar, bir aslan. Çamurda ayakkabı izleri de var.",
+      "Hayvanlar yeniden su içiyor, çamur güneşte kuruyor. Ayakkabının izi artık senin masana kadar uzanıyor.",
+      "Gölet kıyısında herkes birbirine değil, hayvanlara bakar. Nerede OLMADIĞINI söyleyen de sana bir şey anlatır: o alanı hemen ele.",
+      [
+        [
+          "Ayakkabı İzleri",
+          "Çamurda fil, zebra ve aslan izleri var. Bir de otuz yedi numara bir ayakkabının izi.",
+          "👞 Alçı kalıp"
+        ],
+        [
+          "Biyolog Birgit Kulede",
+          "Her gece göletteki aslanları sayar. Dün gece üç aslan ve bir el feneri saydı.",
+          "🔦 El feneri"
+        ],
+        [
+          "Rehber Otieno İz Okuyor",
+          "İzleri başkalarının gazete okuduğu gibi okur. Bu izin göletten karanlık odaya gittiğini söylüyor.",
+          "🐾 İz kitabı"
+        ],
+        [
+          "Kuledeki Lamba",
+          "Kuledeki bir lamba konuklar için göleti aydınlatır. Saat ikide söndü ve yeniden yandı.",
+          "💡 Kule lambası"
+        ],
+        [
+          "Şef Hamisi Su Getiriyor",
+          "Mutfak için suyu göletten değil, kuyudan pompalar. Yine de çizmeleri çamur içindeydi.",
+          "🥾 Lastik çizme"
+        ],
+        [
+          "Gazeteci Amina Kayıt Yapıyor",
+          "Teybi gece kulenin üstündeydi. Bir fil duyuluyor, bir de “şimdi” diyen bir kadın.",
+          "📼 Kaset"
+        ],
+        [
+          "Veteriner Njeri Bekliyor",
+          "Her gece bacağında verici olan bir gergedan burada su içer. Dün gece gelmedi.",
+          "📟 Verici"
+        ],
+        [
+          "Otuz Yedi Numara",
+          "Kampta üç kişinin ayakkabı numarası otuz yedi. İçlerinden biri hep yalınayak dolaşır.",
+          "👟 Bez ayakkabı"
+        ]
+      ]
+    ],
+    "safarilodge-4": [
+      "Bölüm IV · Uzun Yağmurlar",
+      "Göçün ardından yağmurlar geliyor, her zamankinden erken ve sert. Uçak pistini su basmış. Kimse gidemiyor, kimse gelemiyor.",
+      "Yağmur diniyor, pist kuruyor. İçeri giremeyen kişi baştan beri buradaydı.",
+      "Yağmurda herkes tek bir çatının altında iç içe oturur, o yüzden kimin kimin hemen yanında durduğuna dikkat et. Önce en az seçeneği olan şüpheliyi yerleştir; gerisi arkasından gelir.",
+      [
+        [
+          "Pisti Su Bastı",
+          "İki gün yağmur ve pist bir göle döndü. Uçak tam ortasında, su tekerleklerine kadar.",
+          "📏 Su seviye çubuğu"
+        ],
+        [
+          "Pilot Kiprono Gidemiyor",
+          "Nairobi’ye gitmesi gerektiğini söylüyor. Çantasında başka bir şehrin etiketi bile asılı.",
+          "🏷️ Bagaj etiketi"
+        ],
+        [
+          "Kamp Sahibi Wambui Nairobi’ye Haber Veriyor",
+          "Telsizle sekiz konuğun mahsur kaldığını bildiriyor. Dokuz kişiler.",
+          "📻 Telsiz"
+        ],
+        [
+          "Şef Hamisi Hesap Yapıyor",
+          "Bu yağmurda on günlük yiyeceği var. Üç gün sonra pirinç bitti.",
+          "🍚 Pirinç çuvalı"
+        ],
+        [
+          "Sesçi Felix ve Sızıntı",
+          "Garajın çatısı film sandıklarının tam üstünden su sızdırıyor. Felix onları oraya daha dün koydu.",
+          "🧳 Film sandığı"
+        ],
+        [
+          "Gazeteci Amina Yazıyor",
+          "Yazısını gönderemiyor, bu yüzden üç kez baştan yazıyor. Üçüncü taslak antiloplarla ilgili değil.",
+          "🗒️ Not defteri"
+        ],
+        [
+          "Rehber Otieno Bir Yol Biliyor",
+          "Tepelerin üstünden bir yol olduğunu söylüyor, yağmurda bile. Bu yol aklına ancak üç gün sonra geldi.",
+          "🧭 Pusula"
+        ],
+        [
+          "Kimse Giremiyor",
+          "Kampa kimse giremezdi. Yine de dördüncü gün garaja, dışarıdan içeri doğru taze ayak izleri gidiyordu.",
+          "☔ Şemsiye"
+        ]
+      ]
+    ],
+    "safarilodge-5": [
+      "Bölüm V · Balon Uçuşu",
+      "Nairobi’den bir balon pilotu konuklara ovanın çok yukarısında bir uçuş öneriyor. Gün doğarken balon yükseliyor. İndiğinde bir yolcu fazla.",
+      "Balon katlanmış, garajda yatıyor. Yedinci yolcunun bir adı var ve sen onu yazdın.",
+      "Ovanın üstünde herkes her şeyi görür, yanında duranı hariç. Yalnız olduğunu söyleyenle başla: bu, bütün bir alanı tek seferde boşaltır.",
+      [
+        [
+          "Altı Kişilik Yer",
+          "Sepete altı kişi ve balon pilotu sığar. İnişten sonra yedi kişi indi.",
+          "🧺 Balon sepeti"
+        ],
+        [
+          "Pilot Kiprono Yerden İzliyor",
+          "Bir pilot başkasının uçurduğu bir şeye binmeyi sevmez. Aşağıdan, dürbünle izledi.",
+          "🔭 Dürbün"
+        ],
+        [
+          "Biyolog Birgit Aslanlarını Arıyor",
+          "Yukarıdan bütün bir sürüyü bir arada görürsün. Bir aslan eksik, bir cip fazla gördü.",
+          "🦁 Sürü haritası"
+        ],
+        [
+          "Kum Torbaları",
+          "Bir balon, alçalmak için kum torbaları taşır. Dört torba asılıydı, altı olmalıydı.",
+          "⏳ Kum torbası"
+        ],
+        [
+          "Kamp Sahibi Wambui Konukları Sayıyor",
+          "Altı konuk yazdı, formda altı isim. Yedinci isim kurşun kalemle eklenmiş.",
+          "📋 Kayıt formu"
+        ],
+        [
+          "Sesçi Felix Rüzgârı Kaydediyor",
+          "Ovanın üstünde yalnızca brülörün sesi duyulur. Bandında balon pilotuna ait olmayan bir ses var.",
+          "🎙️ Mikrofon"
+        ],
+        [
+          "Şef Hamisi Kahvaltıyı Hazırlıyor",
+          "İnişten sonra ovada altı kişilik bir kahvaltı var. Yedi kişilik hazırlamıştı.",
+          "🥐 Kahvaltı sepeti"
+        ],
+        [
+          "Yedinci Yolcu",
+          "Herkes yedinci yolcunun indiğini gördü. Bindiğini kimse görmedi.",
+          "🎟️ Uçuş bileti"
+        ]
+      ]
+    ],
+    "safarilodge-6": [
+      "Bölüm VI · Uçan Doktor",
+      "Rüzgârsız bir öğleden sonra piste, kuyruğunda kırmızı haç olan küçük bir uçak iniyor, içinde bir doktorla. Kimse çağırmamıştı.",
+      "Küçük uçak boş bir sandıkla kalkıyor. Doktoru çağıran, bunu bir hasta için yapmadı ve artık bunu biliyorsun.",
+      "Buradan sonra neredeyse her vaka dokuza dokuzluk büyük tahtada. Kalemi kullan: olamayacak kareleri ele ve geriye ne kaldığına bak.",
+      [
+        [
+          "Kırmızı Haç",
+          "Küçük uçak bir ilaç sandığıyla Nairobi’den geliyor. Telsize göre kamptan kimse aramamıştı.",
+          "💊 İlaç sandığı"
+        ],
+        [
+          "Veteriner Njeri Doktoru Tanıyor",
+          "Nairobi’de birlikte okudular. Onu hiç görmemiş gibi davrandı.",
+          "🎓 Sınıf fotoğrafı"
+        ],
+        [
+          "Pilot Kiprono ve Çağrı",
+          "Çağrı, pilotun uçağındaki telsizden gelmişti. O uçak bütün gece kilitliydi.",
+          "🎧 Pilot kulaklığı"
+        ],
+        [
+          "Rehber Otieno Doktoru Gezdiriyor",
+          "Doktor karanlık odayı görmek istedi. Hiçbir doktor karanlık odayı görmek istemez.",
+          "🚪 Kapı kolu"
+        ],
+        [
+          "Gazeteci Amina Röportaj Yapıyor",
+          "Doktora kimin hasta olduğunu sordu. Doktor bir isim söyledi: belgeselcinin adı.",
+          "📝 Röportaj notları"
+        ],
+        [
+          "Şef Hamisi Çay Demliyor",
+          "Kampta herkes çayı sütlü ve şekerli içer. Doktor sade içti, buradaki bir kişi gibi.",
+          "🫖 Demlik"
+        ],
+        [
+          "Reçete",
+          "Doktor kamp adına bir reçete bıraktı. Bir uyku ilacı ve çoktan bitmiş.",
+          "📄 Reçete"
+        ],
+        [
+          "Onu Kim Çağırdı",
+          "Biri doktoru kampa ait olmayan bir vericiyle çağırdı. Biyoloğun aslanları da böyle bir verici takıyor.",
+          "📡 Tasma vericisi"
+        ]
+      ]
+    ],
+    "safarilodge-7": [
+      "Bölüm VII · Jamhuri Günü",
+      "12 Aralık, Jamhuri Günü. Bağımsızlık bayramı: müzik, kızarmış et ve bütün kamp izinli. Neredeyse bütün kamp.",
+      "Grup son şarkıyı çalıyor, bayrak iniyor. Bayramda kimin olmadığını artık tam olarak biliyorsun.",
+      "Tahta büyüyor, bayram kalabalıklaşıyor. Rapora göre bir alan boşsa, o alanın tamamı herkes için elenir.",
+      [
+        [
+          "Bayrak",
+          "Öğlen bayrak göndere çekiliyor ve bütün kamp milli marşı söylüyor. Bir ses eksikti.",
+          "🇰🇪 Kenya bayrağı"
+        ],
+        [
+          "Şef Hamisi Et Çeviriyor",
+          "Saat altıdan beri bir keçi şişte dönüyor. Saat onda şiş durmuştu ve Hamisi ortada yoktu.",
+          "🍖 Şiş"
+        ],
+        [
+          "Kamp Sahibi Wambui Konuşma Yapıyor",
+          "On bir yıllık bağımsızlık ve on yıllık Twiga Lodge. Herkese tek tek adıyla teşekkür etti, biri hariç.",
+          "📜 Konuşma metni"
+        ],
+        [
+          "Kisumu’dan Gelen Grup",
+          "Verandada bir grup benga çalıyor. Gitarist belgeselciyi tanıyordu, belgeselci de onu.",
+          "🎸 Gitar"
+        ],
+        [
+          "Rehber Otieno Nöbette",
+          "Bayram günü birinin konukların yanında kalması gerekir. On yılda ilk kez Otieno gönüllü oldu.",
+          "📅 Nöbet listesi"
+        ],
+        [
+          "Biyolog Birgit de Kutluyor",
+          "Danimarka’da Jamhuri Günü yok, diyor gülerek. Milli marşı bütün kıtalarıyla söyledi.",
+          "🎶 Şarkı sözleri"
+        ],
+        [
+          "Sesçi Felix Bayramı Kaydediyor",
+          "Dört saatlik müzik kaydetti. Ortasında on dakikalık bir sessizlik var, oysa grup hiç durmadı.",
+          "🎚️ Teyp"
+        ],
+        [
+          "Neredeyse Bütün Kamp",
+          "Bütün kamp izinliydi ve herkes bayramdaydı. Yine de garaj defterinde saat üçte bir yolculuk yazılı.",
+          "🚙 Garaj defteri"
+        ]
+      ]
+    ],
+    "safarilodge-8": [
+      "Bölüm VIII · Ovaya Veda",
+      "Martta kamp uzun yağmurlar için kapanıyor. Antiloplar çoktan güneye döndü. Ateş başında bir akşam daha, ağustostaki yüzlerle.",
+      "Van Dam Nairobi’ye giden küçük uçağa en son biniyor ve verandaya bir kez el sallıyor. Antiloplar yollarına devam ediyor, kamp sessizleşiyor. Son çekim senin.",
+      "Son vakalar, neredeyse hepsi büyük tahtada. En zor olana takılıp kalma: önce diğerlerini yerleştir, sonuncuya çoğu zaman tek bir kare kalır.",
+      [
+        [
+          "Çadırlar Toplanıyor",
+          "Her çadır sarılıp garaja konuyor. Altı numaralı çadırda, yer brandasının altında bir film makarası var.",
+          "⛺ Yer brandası"
+        ],
+        [
+          "40 Numaralı Makara",
+          "Sonunda: 40 numaralı makara. Felix onu her şeyin başladığı karanlık odada banyo ediyor.",
+          "🎞️ 40 numaralı makara"
+        ],
+        [
+          "Pilot Kiprono Seçiyor",
+          "Nairobi’ye son uçuşta dört koltuk var. Beş kişi gitmek istedi ve kimin gideceğini kendisi seçti.",
+          "🎫 Biniş kartı"
+        ],
+        [
+          "Veteriner Njeri Gergedanları Sayıyor",
+          "Sayımı yeniden tutuyor: yedi gergedan, yedi verici. Garajda sekizinci bir verici buldu.",
+          "📟 Yedek verici"
+        ],
+        [
+          "Gazeteci Amina Yazısını Teslim Ediyor",
+          "Gelecek hafta göç üzerine röportajı gazetede çıkacak. Belgeselci hakkında tek bir cümle yazıyor. O cümle doğru.",
+          "📰 Baskı provası"
+        ],
+        [
+          "Sesçi Felix Filmi Bitiriyor",
+          "Belgeselci olmadan filmi Felix bitiriyor. Son karenin hangisi olması gerektiğini tam olarak biliyor.",
+          "✂️ Film makası"
+        ],
+        [
+          "Kamp Sahibi Wambui Kapıları Kilitliyor",
+          "Her akşam olduğu gibi bütün kapıları kendisi kilitliyor. Karanlık odanın önünde uzun süre duruyor.",
+          "🔐 Anahtar destesi"
+        ],
+        [
+          "Son Kamp Ateşi",
+          "Ateşin çevresinde herkes son bir kez şarkı söylüyor. Ağustostaki gibi bir sandalye boş kalıyor ve artık herkes nedenini biliyor.",
+          "🔥 Kor"
+        ]
+      ]
+    ],
+    "hanok": [
+      "Bölüm I · Hasat Ayı",
+      "Hanok Dalbit, 1795 sonbaharı. Chuseok geldi: hasat ayı dolunay, bütün aile evde. Ay şenliğinden sonra Yun Jae-ho Bey göletin yanındaki köşkte yatıyor, üç dizelik bir şiirin yanında.",
+      "Ay dağların ardına iniyor. Köşkte efendinin yanında kimin oturduğu senin listende.",
+      "Bir hanok, avlulardan ve sürgülü kapılardan oluşan bir evdir. Hangi odada olduğunu söyleyenle başla. Ay vazosunun “hemen yanında” yalnızca tam yanındaki kare demek, asla çapraz değil.",
+      [
+        [
+          "Dolunay",
+          "Chuseok’ta herkes aya bakar ve bir dilek tutar. Evin efendisi ise gölete bakıyordu.",
+          "🏮 Kâğıt fener"
+        ],
+        [
+          "Köşk",
+          "Minderinin üstünde oturuyordu, fırça hâlâ elinde. Rulodaki mürekkep kurumuştu.",
+          "🖌️ Fırça"
+        ],
+        [
+          "Songpyeon",
+          "Bok-sun yarım ay biçiminde yüz pirinç keki yaptı. Efendinin tabağında üç tane duruyordu, el sürülmemiş.",
+          "🍡 Songpyeon"
+        ],
+        [
+          "Kang Hanım ve Anahtarlar",
+          "Evdeki her sandığın anahtarı onda. Köşkün kilidi yok, diyor.",
+          "🗝️ Bakır anahtar"
+        ],
+        [
+          "Öğrenci Sang-u Eğiliyor",
+          "Chuseok’ta oğul atalarının önünde eğilir. Bir kez eksik eğildi.",
+          "🕯️ Tütsü çubuğu"
+        ],
+        [
+          "Halka Dansı",
+          "Yemekten sonra kadınlar ayın altında el ele tutuşup halka olur. Halka her zamankinden bir el küçüktü.",
+          "🌾 Pirinç demeti"
+        ],
+        [
+          "Ressam Dae-ho Şenliği Resmediyor",
+          "Aileyi ayın altında resmediyor. Eskizinde efendi köşkte oturuyor, yanında biriyle.",
+          "🖼️ Eskiz"
+        ],
+        [
+          "Üç Dize",
+          "Bir şiir dört dizedir. Üç dize yazdı, dördüncüyü hiç yazmadı.",
+          "📜 Şiir rulosu"
+        ]
+      ]
+    ],
+    "hanok-2": [
+      "Bölüm II · Bitmemiş Şiir",
+      "Şenlikten üç gün sonra şiir rulosu yeniden köşkte. Ruloda üç dize var. Dördüncüyü başka biri yazmış.",
+      "Şiir tamamlandı, ama tek bir elden çıkmadı. Dördüncü dizeyi kimin yazdığını artık biliyorsun.",
+      "Bir hanokta herkes kapıların kâğıdından her şeyi duyar. İki kişiyle ilgili bir ifadeyi çözmek için önce ikisinden birinin yerini kesinleştir.",
+      [
+        [
+          "Dördüncü Dize",
+          "Dördüncü dize başka bir el yazısıyla yazılmış. Öbür üçünden daha iyi kafiyeli.",
+          "📃 Pirinç kâğıdı"
+        ],
+        [
+          "Tercüman Hak-su Okuyor",
+          "Çince, Mançuca ve Korece okur. Dördüncü dizeyi okudu ve güldü.",
+          "📖 Sözcük listesi"
+        ],
+        [
+          "Mürekkep Taşı",
+          "Efendinin mürekkep taşı çalışma odasında duruyor. Ölümünden sonra üstünde taze mürekkep ezilmiş.",
+          "⚫ Mürekkep çubuğu"
+        ],
+        [
+          "Öğrenci Sang-u Şiir Yazabiliyor",
+          "Sınav için her gün bir şiir yazar. El yazısı babasınınkine benziyor. Neredeyse.",
+          "📓 Alıştırma defteri"
+        ],
+        [
+          "Nakışçı Yeon-i ve Turna",
+          "Dördüncü dizeyi paravanına, turnanın yanına işliyor. Ezbere biliyordu.",
+          "🧵 İpek iplik"
+        ],
+        [
+          "Ressam Dae-ho Mührünü Basıyor",
+          "Her ressam eserinin yanına kırmızı bir mühür basar. Dördüncü dizenin yanında yarım bir mühür var.",
+          "🔴 Kırmızı mühür"
+        ],
+        [
+          "Kang Hanım El Yazısını Tanıyor",
+          "Evdeki herkesin el yazısını bilir. Bunu da tanıdığını söylüyor, ama kimin olduğunu söylemiyor.",
+          "✉️ Eski mektup"
+        ],
+        [
+          "Şiiri Kim Bitirdi",
+          "Dördüncü dize göletle ilgili. Ayın suda nasıl durduğunu yalnızca köşkte oturan bilebilirdi.",
+          "🪷 Nilüfer yaprağı"
+        ]
+      ]
+    ],
+    "hanok-3": [
+      "Bölüm III · Kimchi Ayı",
+      "Kasımda bütün köy kış için kimchi yapmaya yardım ediyor: yüzlerce lahana, tuz, kırmızı biber ve küp terasında sıra sıra küpler. Küplerden birinde başka bir şey var.",
+      "Küpler terasta kapalı duruyor, kimchi mayalanmaya başlıyor. En büyük küpten çıkan paket artık sende.",
+      "Kimchi yapılırken herkes başka bir yerde çalışır. Nerede OLMADIĞINI söyleyen de sana bir şey anlatır: o odayı hemen ele.",
+      [
+        [
+          "Yüz Lahana",
+          "Avluda yüz lahana tuzlanmak için yatıyor. Sabah doksan dokuz taneydi.",
+          "🥬 Çin lahanası"
+        ],
+        [
+          "Aşçı Bok-sun Tadına Bakıyor",
+          "Her küpün tadına kapatılmadan önce bakar. Kang Hanım bir küpün tadına bakmasına izin vermedi.",
+          "🥄 Tahta kaşık"
+        ],
+        [
+          "Küp Terası",
+          "Bir sırada yirmi küp, en büyüğü en arkada. En büyüğü yalnızca kimchi için fazla ağır.",
+          "🏺 Toprak küp"
+        ],
+        [
+          "Çerçi Man-sik Tuz Getiriyor",
+          "Her yıl kıyıdan tuzu o getirir. Bu yıl bir gün erken geldi.",
+          "🧂 Tuz çuvalı"
+        ],
+        [
+          "Şifacı Ok-hwa Yardım Ediyor",
+          "Zencefili ve sarımsağı doğruyor. Kimchiye girmeyen bir kök de doğruyor.",
+          "🫚 Ginseng kökü"
+        ],
+        [
+          "Kırmızı Eller",
+          "Biberden herkesin elleri kızarır. Bir kişinin elleri temizdi ve bütün gün yardım ettiğini söyledi.",
+          "🌶️ Kırmızı biber"
+        ],
+        [
+          "Ressam Dae-ho İşi Çiziyor",
+          "Çalışan kadınları sıra sıra çiziyor. Çiziminde yedi kadın var. Altı kişiydiler.",
+          "📃 Hanji üstüne çizim"
+        ],
+        [
+          "Bir Küpte",
+          "En büyük küpte, lahananın altında bağlanmış bir paket var. Kuru ve bir kitap.",
+          "📦 Yağlı kâğıda sarılı paket"
+        ]
+      ]
+    ],
+    "hanok-4": [
+      "Bölüm IV · Devlet Sınavı",
+      "Kışın Sang-u, otuz yıl önce babasının yaptığı gibi devlet sınavı için Hanyang’a gidiyor. Bütün ev sonucu bekliyor. Biri soruları önceden biliyordu.",
+      "Sang-u babasının şiiriyle sınavı geçti. Soruyu ona kimin verdiğini artık sen de biliyorsun, o da biliyor.",
+      "Çalışma odasında herkes kitapların başında iç içe oturur, o yüzden kimin kimin hemen yanında durduğuna dikkat et. Önce en az seçeneği olan şüpheliyi yerleştir; gerisi arkasından gelir.",
+      [
+        [
+          "Sınav",
+          "Bin aday, tek konu, tek gün. Konu ay üzerine bir şiirdi.",
+          "📚 Dört Kitap"
+        ],
+        [
+          "Öğrenci Sang-u Yola Çıkıyor",
+          "Yanına bir fırça, mürekkep ve üç çift çorap aldı. Bir de kimseye göstermediği bir rulo.",
+          "🧦 Pamuk çorap"
+        ],
+        [
+          "Soru",
+          "Soru şuydu: dolunayda bir gölet üzerine dört dize yaz. Tıpkı efendinin şiiri.",
+          "📋 Sınav sorusu"
+        ],
+        [
+          "Tercüman Hak-su Birini Tanıyor",
+          "Sarayda soruları yazan bir adamı tanıyor. Onu daha bir ay önce gördüğünü söylüyor.",
+          "🏷️ Saray nişanı"
+        ],
+        [
+          "Kang Hanım Ödeme Yapıyor",
+          "Hanyang’a yolculuk pahalıdır. Parasını evin sandığından çıkmamış gümüşle ödedi.",
+          "🪙 Gümüş sikke"
+        ],
+        [
+          "Çerçi Man-sik Haber Getiriyor",
+          "Pazarda sonucu aileden önce duydu. Ancak üç gün sonra söyledi.",
+          "🧺 Mal sepeti"
+        ],
+        [
+          "Nakışçı Yeon-i ve Rulo",
+          "Paravanında efendinin şiiri var. Biri onu dördüncü dizesiyle birlikte kopyalamış.",
+          "🪡 Nakış iğnesi"
+        ],
+        [
+          "Soruları Kim Biliyordu",
+          "Soru, sınavdan üç ay önce evdeydi. Bunu yalnızca efendi biliyordu, bir de bir kişi daha.",
+          "✉️ Hanyang’dan mektup"
+        ]
+      ]
+    ],
+    "hanok-5": [
+      "Bölüm V · İlk Kar",
+      "İlk kar dağlara yağıyor ve vadiye inen yolu kapatıyor. Kimse evden çıkamıyor. Çay odasında bütün gece ışık yanıyor.",
+      "Kar yoldan eriyor. Çay odasında kimin, kiminle oturduğunu artık biliyorsun.",
+      "Karda herkes içeride, kendi odasında kalır. Yalnız olduğunu söyleyenle başla: bu, bütün bir odayı tek seferde boşaltır.",
+      [
+        [
+          "Yol Kapalı",
+          "Vadiye giden yolda bir metre kar. Ana kapının önündeki karda içeri doğru tek bir iz var.",
+          "🥿 Saman sandalet"
+        ],
+        [
+          "Aşçı Bok-sun Döşemeyi Isıtıyor",
+          "Isınmak için döşemenin altında bütün gece bir ateş yanar. Çay odasında döşeme soğuktu.",
+          "🔥 Döşeme ateşi"
+        ],
+        [
+          "Çay Odasındaki Işık",
+          "Bütün gece çay odasında bir mum yandı. Gece yarısı Yeon-i kâğıdın üstünde iki gölge gördü.",
+          "🕯️ Mum parçası"
+        ],
+        [
+          "Şifacı Ok-hwa Kalıyor",
+          "Kar yüzünden vadiye dönemiyor. Konuk odasında uyuduğunu söylüyor. Yatağında kimse yatmamıştı.",
+          "🛏️ Katlanmış yorgan"
+        ],
+        [
+          "Çay",
+          "Çay odasında iki kâse çay, biri boş, biri dolu. Dolu olan soğuk ve acı.",
+          "🍵 Çay kâsesi"
+        ],
+        [
+          "Ressam Dae-ho Karı Resmediyor",
+          "Karla örtülü dağları resmediyor. Resminde var olmayan bir pencerede ışık yanıyor.",
+          "🏔️ Karlı manzara"
+        ],
+        [
+          "Tercüman Hak-su Mum Işığında Okuyor",
+          "Bütün gece Pekin’den gelen bir kitap okudu. Kitap yıldızlarla ilgili, oysa o kara bakıyordu.",
+          "🔭 Yıldız kitabı"
+        ],
+        [
+          "İki Gölge",
+          "Gölgelerden biri çay koydu. Öteki kıpırdamadan oturdu ve başında bir şapka vardı.",
+          "👒 At kılı şapka"
+        ]
+      ]
+    ],
+    "hanok-6": [
+      "Bölüm VI · Pekin’den Dönen Tercüman",
+      "Tercüman Hak-su, Pekin’e giden elçilikten bir araba dolusu kitap ve tuhaf şeyle dönüyor. Bir gözlük, bir saat ve bir sır getiriyor.",
+      "Saat yeniden on iki kez çalıyor, on üç değil. Tercümanın getirdiğini o artık sana verdi.",
+      "Buradan sonra neredeyse her vaka dokuza dokuzluk büyük tahtada. Kalemi kullan: olamayacak kareleri ele ve geriye ne kaldığına bak.",
+      [
+        [
+          "Saat",
+          "Batı’dan gelen, saatleri kendi çalan bir saat. İlk gece on üç kez çaldı.",
+          "🕰️ Batı saati"
+        ],
+        [
+          "Tercüman Hak-su Eşyalarını Açıyor",
+          "Kitaplar, mürekkep, bir gözlük ve bir saat. Sınırdaki listede açmadığı bir şey daha yazılı.",
+          "📋 Yük listesi"
+        ],
+        [
+          "Gözlük",
+          "Gözlük efendi için, diyor Hak-su, gözleri için. Efendi hiç gözlük istememişti.",
+          "👓 Yuvarlak gözlük"
+        ],
+        [
+          "Kang Hanım ve Hesap",
+          "Evin aldığı her şeyi o öder. Saat için hiçbir şey ödemedi ve saat pahalıydı.",
+          "🧮 Abaküs"
+        ],
+        [
+          "Öğrenci Sang-u Pekin’e Gitmek İstiyor",
+          "Bir sonraki elçilikle gitmek istiyor. Bir aydır gizlice Çince öğreniyor.",
+          "📖 Çince okuma kitabı"
+        ],
+        [
+          "Çerçi Man-sik Satın Almak İstiyor",
+          "Saat için bütün bir yıllık tuz teklif etti. Hak-su bakmadan hayır dedi.",
+          "💰 Kese"
+        ],
+        [
+          "Şifacı Ok-hwa ve Ginseng",
+          "Pekin’den buradakinden daha iyi ginseng de geldi. Paketlerden biri aile için değil.",
+          "🌿 Ot paketi"
+        ],
+        [
+          "Sır",
+          "Saatin kasasının içinde katlanmış bir mektup var. Korece yazılmış, ama Pekin’de.",
+          "✉️ Katlanmış mektup"
+        ]
+      ]
+    ],
+    "hanok-7": [
+      "Bölüm VII · Seollal",
+      "Seollal geldi, ay takvimine göre yılbaşı. Aile yeni giysiler giyiyor, büyüklerin önünde eğiliyor ve avluda yut oynuyor. Biri hile yapıyor.",
+      "Çubuklar yeniden kutularında, uçurtmalar gitti. Hile yapan artık oynamıyor.",
+      "Tahta büyüyor, ev doluyor. Rapora göre bir oda boşsa, o odanın tamamı herkes için elenir.",
+      [
+        [
+          "Yeni Yıl Selamı",
+          "Yeni yıl sabahı çocuklar büyüklerin önünde yerlere kadar eğilir. Kang Hanım her zamankinden bir selam eksik aldı.",
+          "🍲 Bir kâse tteokguk"
+        ],
+        [
+          "Yut",
+          "Havada dört çubuk. Üst üste üç kez aynı yüzleri üstüne düşüyorlar.",
+          "🎲 Yut çubukları"
+        ],
+        [
+          "Aşçı Bok-sun Yemek Dağıtıyor",
+          "Bir kâse tteokguk insanı bir yaş büyütür. Bok-sun dokuz kişiye on kâse doldurdu.",
+          "🥣 Çorba kâsesi"
+        ],
+        [
+          "Uçurtma",
+          "Seollal’da dertlerini yazdığın bir uçurtma uçurur ve ipini kesersin. Uçurtmalardan birinde bir isim yazılıydı.",
+          "🪁 Uçurtma"
+        ],
+        [
+          "Nakışçı Yeon-i Nişanlanıyor",
+          "Yeni yılda kiminle evleneceğini öğreniyor: Hanyang’dan bir adam. Adamın adını kimse söylemeden biliyordu.",
+          "💍 Nişan yüzükleri"
+        ],
+        [
+          "Ressam Dae-ho da Oynuyor",
+          "On yıldır ilk kez yut oynuyor ve her şeyi kazanıyor. Çubuklarının bir yüzü daha ağır.",
+          "🪵 Ağırlaştırılmış çubuk"
+        ],
+        [
+          "Tercüman Hak-su Yılları Sayıyor",
+          "Pekin’de başka bir takvimle başka bir yıl olduğunu söylüyor. Yine de mektubunda buranın tarihi yazılıydı.",
+          "📅 Ay takvimi"
+        ],
+        [
+          "Biri Hile Yapıyor",
+          "Yutta hile yapan sonunda yine kaybeder. Efendi hep böyle derdi.",
+          "⚪ Oyun taşı"
+        ]
+      ]
+    ],
+    "hanok-8": [
+      "Bölüm VIII · Dağlarda Çiçek",
+      "Nisanda açelyalar dağları pembeye boyuyor. Köşkte bir akşam daha çay, hasat ayı gecesindeki yüzlerle.",
+      "Van Dam şapkasını takıyor, evin hanımının önünde eğiliyor ve açelyaların arasından vadiye iniyor. Ay yeniden dağların üstünde, dolunay. Şiir tamamlandı ve son dizeyi sen yazdın.",
+      "Son vakalar, neredeyse hepsi büyük tahtada. En zor olana takılıp kalma: önce diğerlerini yerleştir, sonuncuya çoğu zaman tek bir kare kalır.",
+      [
+        [
+          "Açelyalı Kekler",
+          "İlkbaharda üstüne açelya çiçeği konan küçük kekler yapılır. Biri eksikti ve köşkte duruyordu.",
+          "🌸 Açelyalı kek"
+        ],
+        [
+          "Kang Hanım Ruloyu Okuyor",
+          "Şiiri yüksek sesle okuyor, dört dizenin dördünü de. Dördüncüde sesi titremiyor.",
+          "🎐 Rüzgâr çanı"
+        ],
+        [
+          "Öğrenci Sang-u Memur Oluyor",
+          "Başkentte bir görev alıyor; kanıt olarak elinde babasının şiiri var. Yarın yola çıkıyor, tek başına.",
+          "📃 Atama mektubu"
+        ],
+        [
+          "Şifacı Ok-hwa Ot Getiriyor",
+          "Her ilkbaharda bütün yıl için ot getirir. Bu yıl bir eksik getirdi, bir adam eksik olduğu için.",
+          "🧺 Ot sepeti"
+        ],
+        [
+          "Çerçi Man-sik Geri Geliyor",
+          "Vadiden mal ve haber getiriyor. Haber bu evle ilgili ve doğru.",
+          "🎒 Sırt küfesi"
+        ],
+        [
+          "Aşçı Bok-sun Son Küpü Açıyor",
+          "Kışın son kimchisi. Küpün dibinde artık hiçbir şey yok ve bu iyi.",
+          "🏺 Boş küp"
+        ],
+        [
+          "Ressam Dae-ho Resmi Bitiriyor",
+          "Ay şenliği resmi bitti. Köşkte efendi oturuyor ve yanında kimse yok.",
+          "🖼️ Ay resmi"
+        ],
+        [
+          "Son Kâse Çay",
+          "Her şey göletin yanındaki köşkte başladı. Ay suyun içinde duruyor, tıpkı dördüncü dizedeki gibi.",
+          "🫖 Seladon demlik"
+        ]
+      ]
     ]
   },
 
@@ -9736,6 +13300,886 @@
           "In": "Kilerde",
           "WasI": "Kilerdeydim"
         }
+      },
+      "oceaanstomer": {
+        "Promenadedek": {
+          "the": "güverte",
+          "in": "güvertede",
+          "gen": "güvertenin",
+          "was": "güvertedeydi",
+          "wasI": "güvertedeydim",
+          "In": "Güvertede",
+          "WasI": "Güvertedeydim"
+        },
+        "Balzaal": {
+          "the": "balo salonu",
+          "in": "balo salonunda",
+          "gen": "balo salonunun",
+          "was": "balo salonundaydı",
+          "wasI": "balo salonundaydım",
+          "In": "Balo salonunda",
+          "WasI": "Balo salonundaydım"
+        },
+        "Rookkamer": {
+          "the": "sigara odası",
+          "in": "sigara odasında",
+          "gen": "sigara odasının",
+          "was": "sigara odasındaydı",
+          "wasI": "sigara odasındaydım",
+          "In": "Sigara odasında",
+          "WasI": "Sigara odasındaydım"
+        },
+        "Eetzaal": {
+          "the": "yemek salonu",
+          "in": "yemek salonunda",
+          "gen": "yemek salonunun",
+          "was": "yemek salonundaydı",
+          "wasI": "yemek salonundaydım",
+          "In": "Yemek salonunda",
+          "WasI": "Yemek salonundaydım"
+        },
+        "Suite": {
+          "the": "süit",
+          "in": "süitte",
+          "gen": "süitin",
+          "was": "süitteydi",
+          "wasI": "süitteydim",
+          "In": "Süitte",
+          "WasI": "Süitteydim"
+        },
+        "Machinekamer": {
+          "the": "makine odası",
+          "in": "makine odasında",
+          "gen": "makine odasının",
+          "was": "makine odasındaydı",
+          "wasI": "makine odasındaydım",
+          "In": "Makine odasında",
+          "WasI": "Makine odasındaydım"
+        },
+        "Brug": {
+          "the": "kaptan köprüsü",
+          "in": "kaptan köprüsünde",
+          "gen": "kaptan köprüsünün",
+          "was": "kaptan köprüsündeydi",
+          "wasI": "kaptan köprüsündeydim",
+          "In": "Kaptan köprüsünde",
+          "WasI": "Kaptan köprüsündeydim"
+        },
+        "Radiokamer": {
+          "the": "telsiz odası",
+          "in": "telsiz odasında",
+          "gen": "telsiz odasının",
+          "was": "telsiz odasındaydı",
+          "wasI": "telsiz odasındaydım",
+          "In": "Telsiz odasında",
+          "WasI": "Telsiz odasındaydım"
+        },
+        "Kombuis": {
+          "the": "kuzine",
+          "in": "kuzinede",
+          "gen": "kuzinenin",
+          "was": "kuzinedeydi",
+          "wasI": "kuzinedeydim",
+          "In": "Kuzinede",
+          "WasI": "Kuzinedeydim"
+        },
+        "Ruim": {
+          "the": "ambar",
+          "in": "ambarda",
+          "gen": "ambarın",
+          "was": "ambardaydı",
+          "wasI": "ambardaydım",
+          "In": "Ambarda",
+          "WasI": "Ambardaydım"
+        },
+        "Bibliotheek": {
+          "the": "kütüphane",
+          "in": "kütüphanede",
+          "gen": "kütüphanenin",
+          "was": "kütüphanedeydi",
+          "wasI": "kütüphanedeydim",
+          "In": "Kütüphanede",
+          "WasI": "Kütüphanedeydim"
+        },
+        "Serre": {
+          "the": "kış bahçesi",
+          "in": "kış bahçesinde",
+          "gen": "kış bahçesinin",
+          "was": "kış bahçesindeydi",
+          "wasI": "kış bahçesindeydim",
+          "In": "Kış bahçesinde",
+          "WasI": "Kış bahçesindeydim"
+        }
+      },
+      "ryokan": {
+        "Gastenkamer": {
+          "the": "konuk odası",
+          "in": "konuk odasında",
+          "gen": "konuk odasının",
+          "was": "konuk odasındaydı",
+          "wasI": "konuk odasındaydım",
+          "In": "Konuk odasında",
+          "WasI": "Konuk odasındaydım"
+        },
+        "Onsen": {
+          "the": "kaplıca",
+          "in": "kaplıcada",
+          "gen": "kaplıcanın",
+          "was": "kaplıcadaydı",
+          "wasI": "kaplıcadaydım",
+          "In": "Kaplıcada",
+          "WasI": "Kaplıcadaydım"
+        },
+        "Theehuis": {
+          "the": "çay evi",
+          "in": "çay evinde",
+          "gen": "çay evinin",
+          "was": "çay evindeydi",
+          "wasI": "çay evindeydim",
+          "In": "Çay evinde",
+          "WasI": "Çay evindeydim"
+        },
+        "Tuin": {
+          "the": "bahçe",
+          "in": "bahçede",
+          "gen": "bahçenin",
+          "was": "bahçedeydi",
+          "wasI": "bahçedeydim",
+          "In": "Bahçede",
+          "WasI": "Bahçedeydim"
+        },
+        "Keuken": {
+          "the": "mutfak",
+          "in": "mutfakta",
+          "gen": "mutfağın",
+          "was": "mutfaktaydı",
+          "wasI": "mutfaktaydım",
+          "In": "Mutfakta",
+          "WasI": "Mutfaktaydım"
+        },
+        "Veranda": {
+          "the": "veranda",
+          "in": "verandada",
+          "gen": "verandanın",
+          "was": "verandadaydı",
+          "wasI": "verandadaydım",
+          "In": "Verandada",
+          "WasI": "Verandadaydım"
+        },
+        "Hal": {
+          "the": "giriş holü",
+          "in": "giriş holünde",
+          "gen": "giriş holünün",
+          "was": "giriş holündeydi",
+          "wasI": "giriş holündeydim",
+          "In": "Giriş holünde",
+          "WasI": "Giriş holündeydim"
+        },
+        "Eetzaal": {
+          "the": "yemek salonu",
+          "in": "yemek salonunda",
+          "gen": "yemek salonunun",
+          "was": "yemek salonundaydı",
+          "wasI": "yemek salonundaydım",
+          "In": "Yemek salonunda",
+          "WasI": "Yemek salonundaydım"
+        },
+        "Bamboebos": {
+          "the": "bambu korusu",
+          "in": "bambu korusunda",
+          "gen": "bambu korusunun",
+          "was": "bambu korusundaydı",
+          "wasI": "bambu korusundaydım",
+          "In": "Bambu korusunda",
+          "WasI": "Bambu korusundaydım"
+        },
+        "Voorraadkamer": {
+          "the": "kiler",
+          "in": "kilerde",
+          "gen": "kilerin",
+          "was": "kilerdeydi",
+          "wasI": "kilerdeydim",
+          "In": "Kilerde",
+          "WasI": "Kilerdeydim"
+        },
+        "Steiger": {
+          "the": "iskele",
+          "in": "iskelede",
+          "gen": "iskelenin",
+          "was": "iskeledeydi",
+          "wasI": "iskeledeydim",
+          "In": "İskelede",
+          "WasI": "İskeledeydim"
+        },
+        "Wasruimte": {
+          "the": "yıkanma odası",
+          "in": "yıkanma odasında",
+          "gen": "yıkanma odasının",
+          "was": "yıkanma odasındaydı",
+          "wasI": "yıkanma odasındaydım",
+          "In": "Yıkanma odasında",
+          "WasI": "Yıkanma odasındaydım"
+        }
+      },
+      "fazenda": {
+        "Droogvloer": {
+          "the": "kurutma yeri",
+          "in": "kurutma yerinde",
+          "gen": "kurutma yerinin",
+          "was": "kurutma yerindeydi",
+          "wasI": "kurutma yerindeydim",
+          "In": "Kurutma yerinde",
+          "WasI": "Kurutma yerindeydim"
+        },
+        "Koffieveld": {
+          "the": "kahve tarlası",
+          "in": "kahve tarlasında",
+          "gen": "kahve tarlasının",
+          "was": "kahve tarlasındaydı",
+          "wasI": "kahve tarlasındaydım",
+          "In": "Kahve tarlasında",
+          "WasI": "Kahve tarlasındaydım"
+        },
+        "Pakhuis": {
+          "the": "depo",
+          "in": "depoda",
+          "gen": "deponun",
+          "was": "depodaydı",
+          "wasI": "depodaydım",
+          "In": "Depoda",
+          "WasI": "Depodaydım"
+        },
+        "Branderij": {
+          "the": "kavurmahane",
+          "in": "kavurmahanede",
+          "gen": "kavurmahanenin",
+          "was": "kavurmahanedeydi",
+          "wasI": "kavurmahanedeydim",
+          "In": "Kavurmahanede",
+          "WasI": "Kavurmahanedeydim"
+        },
+        "Veranda": {
+          "the": "veranda",
+          "in": "verandada",
+          "gen": "verandanın",
+          "was": "verandadaydı",
+          "wasI": "verandadaydım",
+          "In": "Verandada",
+          "WasI": "Verandadaydım"
+        },
+        "Kapel": {
+          "the": "şapel",
+          "in": "şapelde",
+          "gen": "şapelin",
+          "was": "şapeldeydi",
+          "wasI": "şapeldeydim",
+          "In": "Şapelde",
+          "WasI": "Şapeldeydim"
+        },
+        "Stal": {
+          "the": "ahır",
+          "in": "ahırda",
+          "gen": "ahırın",
+          "was": "ahırdaydı",
+          "wasI": "ahırdaydım",
+          "In": "Ahırda",
+          "WasI": "Ahırdaydım"
+        },
+        "Keuken": {
+          "the": "mutfak",
+          "in": "mutfakta",
+          "gen": "mutfağın",
+          "was": "mutfaktaydı",
+          "wasI": "mutfaktaydım",
+          "In": "Mutfakta",
+          "WasI": "Mutfaktaydım"
+        },
+        "Eetkamer": {
+          "the": "yemek odası",
+          "in": "yemek odasında",
+          "gen": "yemek odasının",
+          "was": "yemek odasındaydı",
+          "wasI": "yemek odasındaydım",
+          "In": "Yemek odasında",
+          "WasI": "Yemek odasındaydım"
+        },
+        "Salon": {
+          "the": "salon",
+          "in": "salonda",
+          "gen": "salonun",
+          "was": "salondaydı",
+          "wasI": "salondaydım",
+          "In": "Salonda",
+          "WasI": "Salondaydım"
+        },
+        "Studeerkamer": {
+          "the": "çalışma odası",
+          "in": "çalışma odasında",
+          "gen": "çalışma odasının",
+          "was": "çalışma odasındaydı",
+          "wasI": "çalışma odasındaydım",
+          "In": "Çalışma odasında",
+          "WasI": "Çalışma odasındaydım"
+        },
+        "Serre": {
+          "the": "sera",
+          "in": "serada",
+          "gen": "seranın",
+          "was": "seradaydı",
+          "wasI": "seradaydım",
+          "In": "Serada",
+          "WasI": "Seradaydım"
+        }
+      },
+      "zeppelin": {
+        "Salon": {
+          "the": "salon",
+          "in": "salonda",
+          "gen": "salonun",
+          "was": "salondaydı",
+          "wasI": "salondaydım",
+          "In": "Salonda",
+          "WasI": "Salondaydım"
+        },
+        "Eetzaal": {
+          "the": "yemek salonu",
+          "in": "yemek salonunda",
+          "gen": "yemek salonunun",
+          "was": "yemek salonundaydı",
+          "wasI": "yemek salonundaydım",
+          "In": "Yemek salonunda",
+          "WasI": "Yemek salonundaydım"
+        },
+        "Slaapcabine": {
+          "the": "uyku kabini",
+          "in": "uyku kabininde",
+          "gen": "uyku kabininin",
+          "was": "uyku kabinindeydi",
+          "wasI": "uyku kabinindeydim",
+          "In": "Uyku kabininde",
+          "WasI": "Uyku kabinindeydim"
+        },
+        "Kombuis": {
+          "the": "kuzine",
+          "in": "kuzinede",
+          "gen": "kuzinenin",
+          "was": "kuzinedeydi",
+          "wasI": "kuzinedeydim",
+          "In": "Kuzinede",
+          "WasI": "Kuzinedeydim"
+        },
+        "Bar": {
+          "the": "bar",
+          "in": "barda",
+          "gen": "barın",
+          "was": "bardaydı",
+          "wasI": "bardaydım",
+          "In": "Barda",
+          "WasI": "Bardaydım"
+        },
+        "Kaartenkamer": {
+          "the": "harita odası",
+          "in": "harita odasında",
+          "gen": "harita odasının",
+          "was": "harita odasındaydı",
+          "wasI": "harita odasındaydım",
+          "In": "Harita odasında",
+          "WasI": "Harita odasındaydım"
+        },
+        "Radiokamer": {
+          "the": "telsiz odası",
+          "in": "telsiz odasında",
+          "gen": "telsiz odasının",
+          "was": "telsiz odasındaydı",
+          "wasI": "telsiz odasındaydım",
+          "In": "Telsiz odasında",
+          "WasI": "Telsiz odasındaydım"
+        },
+        "Stuurgondel": {
+          "the": "dümen gondolu",
+          "in": "dümen gondolunda",
+          "gen": "dümen gondolunun",
+          "was": "dümen gondolundaydı",
+          "wasI": "dümen gondolundaydım",
+          "In": "Dümen gondolunda",
+          "WasI": "Dümen gondolundaydım"
+        },
+        "Motorgondel": {
+          "the": "motor gondolu",
+          "in": "motor gondolunda",
+          "gen": "motor gondolunun",
+          "was": "motor gondolundaydı",
+          "wasI": "motor gondolundaydım",
+          "In": "Motor gondolunda",
+          "WasI": "Motor gondolundaydım"
+        },
+        "Loopbrug": {
+          "the": "dar geçit",
+          "in": "dar geçitte",
+          "gen": "dar geçidin",
+          "was": "dar geçitteydi",
+          "wasI": "dar geçitteydim",
+          "In": "Dar geçitte",
+          "WasI": "Dar geçitteydim"
+        },
+        "Postkamer": {
+          "the": "posta odası",
+          "in": "posta odasında",
+          "gen": "posta odasının",
+          "was": "posta odasındaydı",
+          "wasI": "posta odasındaydım",
+          "In": "Posta odasında",
+          "WasI": "Posta odasındaydım"
+        },
+        "Uitkijkpost": {
+          "the": "gözcü yeri",
+          "in": "gözcü yerinde",
+          "gen": "gözcü yerinin",
+          "was": "gözcü yerindeydi",
+          "wasI": "gözcü yerindeydim",
+          "In": "Gözcü yerinde",
+          "WasI": "Gözcü yerindeydim"
+        }
+      },
+      "poolstation": {
+        "Radiokamer": {
+          "the": "telsiz odası",
+          "in": "telsiz odasında",
+          "gen": "telsiz odasının",
+          "was": "telsiz odasındaydı",
+          "wasI": "telsiz odasındaydım",
+          "In": "Telsiz odasında",
+          "WasI": "Telsiz odasındaydım"
+        },
+        "Kennel": {
+          "the": "köpek barınağı",
+          "in": "köpek barınağında",
+          "gen": "köpek barınağının",
+          "was": "köpek barınağındaydı",
+          "wasI": "köpek barınağındaydım",
+          "In": "Köpek barınağında",
+          "WasI": "Köpek barınağındaydım"
+        },
+        "Laboratorium": {
+          "the": "laboratuvar",
+          "in": "laboratuvarda",
+          "gen": "laboratuvarın",
+          "was": "laboratuvardaydı",
+          "wasI": "laboratuvardaydım",
+          "In": "Laboratuvarda",
+          "WasI": "Laboratuvardaydım"
+        },
+        "Kantine": {
+          "the": "kantin",
+          "in": "kantinde",
+          "gen": "kantinin",
+          "was": "kantindeydi",
+          "wasI": "kantindeydim",
+          "In": "Kantinde",
+          "WasI": "Kantindeydim"
+        },
+        "Slaapzaal": {
+          "the": "yatakhane",
+          "in": "yatakhanede",
+          "gen": "yatakhanenin",
+          "was": "yatakhanedeydi",
+          "wasI": "yatakhanedeydim",
+          "In": "Yatakhanede",
+          "WasI": "Yatakhanedeydim"
+        },
+        "Machinekamer": {
+          "the": "makine odası",
+          "in": "makine odasında",
+          "gen": "makine odasının",
+          "was": "makine odasındaydı",
+          "wasI": "makine odasındaydım",
+          "In": "Makine odasında",
+          "WasI": "Makine odasındaydım"
+        },
+        "Ziekenboeg": {
+          "the": "revir",
+          "in": "revirde",
+          "gen": "revirin",
+          "was": "revirdeydi",
+          "wasI": "revirdeydim",
+          "In": "Revirde",
+          "WasI": "Revirdeydim"
+        },
+        "Voorraadkamer": {
+          "the": "kiler",
+          "in": "kilerde",
+          "gen": "kilerin",
+          "was": "kilerdeydi",
+          "wasI": "kilerdeydim",
+          "In": "Kilerde",
+          "WasI": "Kilerdeydim"
+        },
+        "Werkplaats": {
+          "the": "atölye",
+          "in": "atölyede",
+          "gen": "atölyenin",
+          "was": "atölyedeydi",
+          "wasI": "atölyedeydim",
+          "In": "Atölyede",
+          "WasI": "Atölyedeydim"
+        },
+        "Weerhut": {
+          "the": "hava kulübesi",
+          "in": "hava kulübesinde",
+          "gen": "hava kulübesinin",
+          "was": "hava kulübesindeydi",
+          "wasI": "hava kulübesindeydim",
+          "In": "Hava kulübesinde",
+          "WasI": "Hava kulübesindeydim"
+        },
+        "Observatorium": {
+          "the": "gözlemevi",
+          "in": "gözlemevinde",
+          "gen": "gözlemevinin",
+          "was": "gözlemevindeydi",
+          "wasI": "gözlemevindeydim",
+          "In": "Gözlemevinde",
+          "WasI": "Gözlemevindeydim"
+        },
+        "Sneeuwtunnel": {
+          "the": "kar tüneli",
+          "in": "kar tünelinde",
+          "gen": "kar tünelinin",
+          "was": "kar tünelindeydi",
+          "wasI": "kar tünelindeydim",
+          "In": "Kar tünelinde",
+          "WasI": "Kar tünelindeydim"
+        }
+      },
+      "winterpaleis": {
+        "Balzaal": {
+          "the": "balo salonu",
+          "in": "balo salonunda",
+          "gen": "balo salonunun",
+          "was": "balo salonundaydı",
+          "wasI": "balo salonundaydım",
+          "In": "Balo salonunda",
+          "WasI": "Balo salonundaydım"
+        },
+        "Bibliotheek": {
+          "the": "kütüphane",
+          "in": "kütüphanede",
+          "gen": "kütüphanenin",
+          "was": "kütüphanedeydi",
+          "wasI": "kütüphanedeydim",
+          "In": "Kütüphanede",
+          "WasI": "Kütüphanedeydim"
+        },
+        "Kapel": {
+          "the": "şapel",
+          "in": "şapelde",
+          "gen": "şapelin",
+          "was": "şapeldeydi",
+          "wasI": "şapeldeydim",
+          "In": "Şapelde",
+          "WasI": "Şapeldeydim"
+        },
+        "IJsbaan": {
+          "the": "buz pisti",
+          "in": "buz pistinde",
+          "gen": "buz pistinin",
+          "was": "buz pistindeydi",
+          "wasI": "buz pistindeydim",
+          "In": "Buz pistinde",
+          "WasI": "Buz pistindeydim"
+        },
+        "Serre": {
+          "the": "kış bahçesi",
+          "in": "kış bahçesinde",
+          "gen": "kış bahçesinin",
+          "was": "kış bahçesindeydi",
+          "wasI": "kış bahçesindeydim",
+          "In": "Kış bahçesinde",
+          "WasI": "Kış bahçesindeydim"
+        },
+        "Spiegelzaal": {
+          "the": "aynalı salon",
+          "in": "aynalı salonda",
+          "gen": "aynalı salonun",
+          "was": "aynalı salondaydı",
+          "wasI": "aynalı salondaydım",
+          "In": "Aynalı salonda",
+          "WasI": "Aynalı salondaydım"
+        },
+        "Rookkamer": {
+          "the": "sigara odası",
+          "in": "sigara odasında",
+          "gen": "sigara odasının",
+          "was": "sigara odasındaydı",
+          "wasI": "sigara odasındaydım",
+          "In": "Sigara odasında",
+          "WasI": "Sigara odasındaydım"
+        },
+        "Keuken": {
+          "the": "mutfak",
+          "in": "mutfakta",
+          "gen": "mutfağın",
+          "was": "mutfaktaydı",
+          "wasI": "mutfaktaydım",
+          "In": "Mutfakta",
+          "WasI": "Mutfaktaydım"
+        },
+        "Trappenhuis": {
+          "the": "büyük merdiven",
+          "in": "büyük merdivende",
+          "gen": "büyük merdivenin",
+          "was": "büyük merdivendeydi",
+          "wasI": "büyük merdivendeydim",
+          "In": "Büyük merdivende",
+          "WasI": "Büyük merdivendeydim"
+        },
+        "Eetzaal": {
+          "the": "yemek salonu",
+          "in": "yemek salonunda",
+          "gen": "yemek salonunun",
+          "was": "yemek salonundaydı",
+          "wasI": "yemek salonundaydım",
+          "In": "Yemek salonunda",
+          "WasI": "Yemek salonundaydım"
+        },
+        "Garderobe": {
+          "the": "vestiyer",
+          "in": "vestiyerde",
+          "gen": "vestiyerin",
+          "was": "vestiyerdeydi",
+          "wasI": "vestiyerdeydim",
+          "In": "Vestiyerde",
+          "WasI": "Vestiyerdeydim"
+        },
+        "Koetshuis": {
+          "the": "arabalık",
+          "in": "arabalıkta",
+          "gen": "arabalığın",
+          "was": "arabalıktaydı",
+          "wasI": "arabalıktaydım",
+          "In": "Arabalıkta",
+          "WasI": "Arabalıktaydım"
+        }
+      },
+      "safarilodge": {
+        "Veranda": {
+          "the": "veranda",
+          "in": "verandada",
+          "gen": "verandanın",
+          "was": "verandadaydı",
+          "wasI": "verandadaydım",
+          "In": "Verandada",
+          "WasI": "Verandadaydım"
+        },
+        "Waterpoel": {
+          "the": "gölet kıyısı",
+          "in": "gölet kıyısında",
+          "gen": "gölet kıyısının",
+          "was": "gölet kıyısındaydı",
+          "wasI": "gölet kıyısındaydım",
+          "In": "Gölet kıyısında",
+          "WasI": "Gölet kıyısındaydım"
+        },
+        "Kampvuur": {
+          "the": "ateş başı",
+          "in": "ateş başında",
+          "gen": "ateş başının",
+          "was": "ateş başındaydı",
+          "wasI": "ateş başındaydım",
+          "In": "Ateş başında",
+          "WasI": "Ateş başındaydım"
+        },
+        "Bar": {
+          "the": "bar",
+          "in": "barda",
+          "gen": "barın",
+          "was": "bardaydı",
+          "wasI": "bardaydım",
+          "In": "Barda",
+          "WasI": "Bardaydım"
+        },
+        "Slaaptent": {
+          "the": "uyku çadırı",
+          "in": "uyku çadırında",
+          "gen": "uyku çadırının",
+          "was": "uyku çadırındaydı",
+          "wasI": "uyku çadırındaydım",
+          "In": "Uyku çadırında",
+          "WasI": "Uyku çadırındaydım"
+        },
+        "Landingsbaan": {
+          "the": "uçak pisti",
+          "in": "uçak pistinde",
+          "gen": "uçak pistinin",
+          "was": "uçak pistindeydi",
+          "wasI": "uçak pistindeydim",
+          "In": "Uçak pistinde",
+          "WasI": "Uçak pistindeydim"
+        },
+        "Uitkijktoren": {
+          "the": "gözcü kulesi",
+          "in": "gözcü kulesinde",
+          "gen": "gözcü kulesinin",
+          "was": "gözcü kulesindeydi",
+          "wasI": "gözcü kulesindeydim",
+          "In": "Gözcü kulesinde",
+          "WasI": "Gözcü kulesindeydim"
+        },
+        "Keuken": {
+          "the": "mutfak",
+          "in": "mutfakta",
+          "gen": "mutfağın",
+          "was": "mutfaktaydı",
+          "wasI": "mutfaktaydım",
+          "In": "Mutfakta",
+          "WasI": "Mutfaktaydım"
+        },
+        "Donkere kamer": {
+          "the": "karanlık oda",
+          "in": "karanlık odada",
+          "gen": "karanlık odanın",
+          "was": "karanlık odadaydı",
+          "wasI": "karanlık odadaydım",
+          "In": "Karanlık odada",
+          "WasI": "Karanlık odadaydım"
+        },
+        "Kantoor": {
+          "the": "ofis",
+          "in": "ofiste",
+          "gen": "ofisin",
+          "was": "ofisteydi",
+          "wasI": "ofisteydim",
+          "In": "Ofiste",
+          "WasI": "Ofisteydim"
+        },
+        "Garage": {
+          "the": "garaj",
+          "in": "garajda",
+          "gen": "garajın",
+          "was": "garajdaydı",
+          "wasI": "garajdaydım",
+          "In": "Garajda",
+          "WasI": "Garajdaydım"
+        },
+        "Eetzaal": {
+          "the": "yemek salonu",
+          "in": "yemek salonunda",
+          "gen": "yemek salonunun",
+          "was": "yemek salonundaydı",
+          "wasI": "yemek salonundaydım",
+          "In": "Yemek salonunda",
+          "WasI": "Yemek salonundaydım"
+        }
+      },
+      "hanok": {
+        "Binnenplaats": {
+          "the": "avlu",
+          "in": "avluda",
+          "gen": "avlunun",
+          "was": "avludaydı",
+          "wasI": "avludaydım",
+          "In": "Avluda",
+          "WasI": "Avludaydım"
+        },
+        "Theekamer": {
+          "the": "çay odası",
+          "in": "çay odasında",
+          "gen": "çay odasının",
+          "was": "çay odasındaydı",
+          "wasI": "çay odasındaydım",
+          "In": "Çay odasında",
+          "WasI": "Çay odasındaydım"
+        },
+        "Keuken": {
+          "the": "mutfak",
+          "in": "mutfakta",
+          "gen": "mutfağın",
+          "was": "mutfaktaydı",
+          "wasI": "mutfaktaydım",
+          "In": "Mutfakta",
+          "WasI": "Mutfaktaydım"
+        },
+        "Studeerkamer": {
+          "the": "çalışma odası",
+          "in": "çalışma odasında",
+          "gen": "çalışma odasının",
+          "was": "çalışma odasındaydı",
+          "wasI": "çalışma odasındaydım",
+          "In": "Çalışma odasında",
+          "WasI": "Çalışma odasındaydım"
+        },
+        "Paviljoen": {
+          "the": "köşk",
+          "in": "köşkte",
+          "gen": "köşkün",
+          "was": "köşkteydi",
+          "wasI": "köşkteydim",
+          "In": "Köşkte",
+          "WasI": "Köşkteydim"
+        },
+        "Bibliotheek": {
+          "the": "kütüphane",
+          "in": "kütüphanede",
+          "gen": "kütüphanenin",
+          "was": "kütüphanedeydi",
+          "wasI": "kütüphanedeydim",
+          "In": "Kütüphanede",
+          "WasI": "Kütüphanedeydim"
+        },
+        "Gastenkamer": {
+          "the": "konuk odası",
+          "in": "konuk odasında",
+          "gen": "konuk odasının",
+          "was": "konuk odasındaydı",
+          "wasI": "konuk odasındaydım",
+          "In": "Konuk odasında",
+          "WasI": "Konuk odasındaydım"
+        },
+        "Kruidentuin": {
+          "the": "ot bahçesi",
+          "in": "ot bahçesinde",
+          "gen": "ot bahçesinin",
+          "was": "ot bahçesindeydi",
+          "wasI": "ot bahçesindeydim",
+          "In": "Ot bahçesinde",
+          "WasI": "Ot bahçesindeydim"
+        },
+        "Poort": {
+          "the": "ana kapı alanı",
+          "in": "ana kapıda",
+          "gen": "ana kapının",
+          "was": "ana kapıdaydı",
+          "wasI": "ana kapıdaydım",
+          "In": "Ana kapıda",
+          "WasI": "Ana kapıdaydım"
+        },
+        "Voorouderhal": {
+          "the": "atalar odası",
+          "in": "atalar odasında",
+          "gen": "atalar odasının",
+          "was": "atalar odasındaydı",
+          "wasI": "atalar odasındaydım",
+          "In": "Atalar odasında",
+          "WasI": "Atalar odasındaydım"
+        },
+        "Kruikenterras": {
+          "the": "küp terası",
+          "in": "küp terasında",
+          "gen": "küp terasının",
+          "was": "küp terasındaydı",
+          "wasI": "küp terasındaydım",
+          "In": "Küp terasında",
+          "WasI": "Küp terasındaydım"
+        },
+        "Voorraadkamer": {
+          "the": "kiler",
+          "in": "kilerde",
+          "gen": "kilerin",
+          "was": "kilerdeydi",
+          "wasI": "kilerdeydim",
+          "In": "Kilerde",
+          "WasI": "Kilerdeydim"
+        }
       }
     },
     "furniture": {
@@ -10378,6 +14822,358 @@
         "bare": "teleskop",
         "next": "bir teleskobun yanında",
         "with": "teleskoplu"
+      },
+      "stuurrad": {
+        "a": "bir dümen çarkı",
+        "gen": "bir dümen çarkının",
+        "Gen": "Bir dümen çarkının",
+        "bare": "dümen çarkı",
+        "next": "bir dümen çarkının yanında",
+        "with": "dümen çarklı"
+      },
+      "scheepstelegraaf": {
+        "a": "bir makine telgrafı",
+        "gen": "bir makine telgrafının",
+        "Gen": "Bir makine telgrafının",
+        "bare": "makine telgrafı",
+        "next": "bir makine telgrafının yanında",
+        "with": "makine telgraflı"
+      },
+      "dekstoel": {
+        "a": "bir şezlong",
+        "gen": "bir şezlongun",
+        "Gen": "Bir şezlongun",
+        "bare": "şezlong",
+        "next": "bir şezlongun yanında",
+        "with": "şezlonglu"
+      },
+      "scheepsbel": {
+        "a": "bir gemi çanı",
+        "gen": "bir gemi çanının",
+        "Gen": "Bir gemi çanının",
+        "bare": "gemi çanı",
+        "next": "bir gemi çanının yanında",
+        "with": "gemi çanlı"
+      },
+      "hoedendoos": {
+        "a": "bir şapka kutusu",
+        "gen": "bir şapka kutusunun",
+        "Gen": "Bir şapka kutusunun",
+        "bare": "şapka kutusu",
+        "next": "bir şapka kutusunun yanında",
+        "with": "şapka kutulu"
+      },
+      "steenlantaarn": {
+        "a": "bir taş fener",
+        "gen": "bir taş fenerin",
+        "Gen": "Bir taş fenerin",
+        "bare": "taş fener",
+        "next": "bir taş fenerin yanında",
+        "with": "taş fenerli"
+      },
+      "tetsubin": {
+        "a": "bir demir demlik",
+        "gen": "bir demir demliğin",
+        "Gen": "Bir demir demliğin",
+        "bare": "demir demlik",
+        "next": "bir demir demliğin yanında",
+        "with": "demir demlikli"
+      },
+      "byobu": {
+        "a": "bir altın paravan",
+        "gen": "bir altın paravanın",
+        "Gen": "Bir altın paravanın",
+        "bare": "altın paravan",
+        "next": "bir altın paravanın yanında",
+        "with": "altın paravanlı"
+      },
+      "bonsai": {
+        "a": "bir bonsai",
+        "gen": "bir bonsainin",
+        "Gen": "Bir bonsainin",
+        "bare": "bonsai",
+        "next": "bir bonsainin yanında",
+        "with": "bonsaili"
+      },
+      "wagasa": {
+        "a": "bir kâğıt şemsiye",
+        "gen": "bir kâğıt şemsiyenin",
+        "Gen": "Bir kâğıt şemsiyenin",
+        "bare": "kâğıt şemsiye",
+        "next": "bir kâğıt şemsiyenin yanında",
+        "with": "kâğıt şemsiyeli"
+      },
+      "futon": {
+        "a": "bir futon",
+        "gen": "bir futonun",
+        "Gen": "Bir futonun",
+        "bare": "futon",
+        "next": "bir futonun yanında",
+        "with": "futonlu"
+      },
+      "koffiezak": {
+        "a": "bir kahve çuvalı",
+        "gen": "bir kahve çuvalının",
+        "Gen": "Bir kahve çuvalının",
+        "bare": "kahve çuvalı",
+        "next": "bir kahve çuvalının yanında",
+        "with": "kahve çuvallı"
+      },
+      "koffiemolen": {
+        "a": "bir kahve değirmeni",
+        "gen": "bir kahve değirmeninin",
+        "Gen": "Bir kahve değirmeninin",
+        "bare": "kahve değirmeni",
+        "next": "bir kahve değirmeninin yanında",
+        "with": "kahve değirmenli"
+      },
+      "koffiestruik": {
+        "a": "bir kahve fidanı",
+        "gen": "bir kahve fidanının",
+        "Gen": "Bir kahve fidanının",
+        "bare": "kahve fidanı",
+        "next": "bir kahve fidanının yanında",
+        "with": "kahve fidanlı"
+      },
+      "papegaai": {
+        "a": "bir papağan",
+        "gen": "bir papağanın",
+        "Gen": "Bir papağanın",
+        "bare": "papağan",
+        "next": "bir papağanın yanında",
+        "with": "papağanlı"
+      },
+      "schommelstoel": {
+        "a": "bir sallanan sandalye",
+        "gen": "bir sallanan sandalyenin",
+        "Gen": "Bir sallanan sandalyenin",
+        "bare": "sallanan sandalye",
+        "next": "bir sallanan sandalyenin yanında",
+        "with": "sallanan sandalyeli"
+      },
+      "luchtschroef": {
+        "a": "bir pervane",
+        "gen": "bir pervanenin",
+        "Gen": "Bir pervanenin",
+        "bare": "pervane",
+        "next": "bir pervanenin yanında",
+        "with": "pervaneli"
+      },
+      "sextant": {
+        "a": "bir sekstant",
+        "gen": "bir sekstantın",
+        "Gen": "Bir sekstantın",
+        "bare": "sekstant",
+        "next": "bir sekstantın yanında",
+        "with": "sekstantlı"
+      },
+      "postzak": {
+        "a": "bir posta çuvalı",
+        "gen": "bir posta çuvalının",
+        "Gen": "Bir posta çuvalının",
+        "bare": "posta çuvalı",
+        "next": "bir posta çuvalının yanında",
+        "with": "posta çuvallı"
+      },
+      "wereldbol": {
+        "a": "bir dünya küresi",
+        "gen": "bir dünya küresinin",
+        "Gen": "Bir dünya küresinin",
+        "bare": "dünya küresi",
+        "next": "bir dünya küresinin yanında",
+        "with": "dünya küreli"
+      },
+      "schrijfmachine": {
+        "a": "bir daktilo",
+        "gen": "bir daktilonun",
+        "Gen": "Bir daktilonun",
+        "bare": "daktilo",
+        "next": "bir daktilonun yanında",
+        "with": "daktilolu"
+      },
+      "zender": {
+        "a": "bir telsiz cihazı",
+        "gen": "bir telsiz cihazının",
+        "Gen": "Bir telsiz cihazının",
+        "bare": "telsiz cihazı",
+        "next": "bir telsiz cihazının yanında",
+        "with": "telsiz cihazlı"
+      },
+      "sledehond": {
+        "a": "bir kızak köpeği",
+        "gen": "bir kızak köpeğinin",
+        "Gen": "Bir kızak köpeğinin",
+        "bare": "kızak köpeği",
+        "next": "bir kızak köpeğinin yanında",
+        "with": "kızak köpekli"
+      },
+      "weerballon": {
+        "a": "bir meteoroloji balonu",
+        "gen": "bir meteoroloji balonunun",
+        "Gen": "Bir meteoroloji balonunun",
+        "bare": "meteoroloji balonu",
+        "next": "bir meteoroloji balonunun yanında",
+        "with": "meteoroloji balonlu"
+      },
+      "sneeuwrups": {
+        "a": "bir ratrak",
+        "gen": "bir ratrağın",
+        "Gen": "Bir ratrağın",
+        "bare": "ratrak",
+        "next": "bir ratrağın yanında",
+        "with": "ratraklı"
+      },
+      "microscoop": {
+        "a": "bir mikroskop",
+        "gen": "bir mikroskobun",
+        "Gen": "Bir mikroskobun",
+        "bare": "mikroskop",
+        "next": "bir mikroskobun yanında",
+        "with": "mikroskoplu"
+      },
+      "balalaika": {
+        "a": "bir balalayka",
+        "gen": "bir balalaykanın",
+        "Gen": "Bir balalaykanın",
+        "bare": "balalayka",
+        "next": "bir balalaykanın yanında",
+        "with": "balalaykalı"
+      },
+      "matroesjka": {
+        "a": "bir matruşka",
+        "gen": "bir matruşkanın",
+        "Gen": "Bir matruşkanın",
+        "bare": "matruşka",
+        "next": "bir matruşkanın yanında",
+        "with": "matruşkalı"
+      },
+      "juwelenei": {
+        "a": "mücevherli bir yumurta",
+        "gen": "mücevherli bir yumurtanın",
+        "Gen": "Mücevherli bir yumurtanın",
+        "bare": "mücevherli yumurta",
+        "next": "mücevherli bir yumurtanın yanında",
+        "with": "mücevherli yumurtalı"
+      },
+      "schaatsen": {
+        "a": "bir çift paten",
+        "gen": "bir çift patenin",
+        "Gen": "Bir çift patenin",
+        "bare": "paten",
+        "next": "bir çift patenin yanında",
+        "with": "patenli"
+      },
+      "ijszwaan": {
+        "a": "buzdan bir kuğu",
+        "gen": "buzdan bir kuğunun",
+        "Gen": "Buzdan bir kuğunun",
+        "bare": "buzdan kuğu",
+        "next": "buzdan bir kuğunun yanında",
+        "with": "buzdan kuğulu"
+      },
+      "kaviaar": {
+        "a": "bir havyar kâsesi",
+        "gen": "bir havyar kâsesinin",
+        "Gen": "Bir havyar kâsesinin",
+        "bare": "havyar kâsesi",
+        "next": "bir havyar kâsesinin yanında",
+        "with": "havyar kâseli"
+      },
+      "safariwagen": {
+        "a": "bir safari cipi",
+        "gen": "bir safari cipinin",
+        "Gen": "Bir safari cipinin",
+        "bare": "safari cipi",
+        "next": "bir safari cipinin yanında",
+        "with": "safari cipli"
+      },
+      "klamboe": {
+        "a": "bir cibinlik",
+        "gen": "bir cibinliğin",
+        "Gen": "Bir cibinliğin",
+        "bare": "cibinlik",
+        "next": "bir cibinliğin yanında",
+        "with": "cibinlikli"
+      },
+      "windzak": {
+        "a": "bir rüzgâr tulumu",
+        "gen": "bir rüzgâr tulumunun",
+        "Gen": "Bir rüzgâr tulumunun",
+        "bare": "rüzgâr tulumu",
+        "next": "bir rüzgâr tulumunun yanında",
+        "with": "rüzgâr tulumlu"
+      },
+      "acacia": {
+        "a": "bir akasya",
+        "gen": "bir akasyanın",
+        "Gen": "Bir akasyanın",
+        "bare": "akasya",
+        "next": "bir akasyanın yanında",
+        "with": "akasyalı"
+      },
+      "giraf": {
+        "a": "ahşap bir zürafa",
+        "gen": "ahşap bir zürafanın",
+        "Gen": "Ahşap bir zürafanın",
+        "bare": "ahşap zürafa",
+        "next": "ahşap bir zürafanın yanında",
+        "with": "ahşap zürafalı"
+      },
+      "sisalmand": {
+        "a": "bir sisal sepet",
+        "gen": "bir sisal sepetin",
+        "Gen": "Bir sisal sepetin",
+        "bare": "sisal sepet",
+        "next": "bir sisal sepetin yanında",
+        "with": "sisal sepetli"
+      },
+      "gayageum": {
+        "a": "bir gayageum",
+        "gen": "bir gayageumun",
+        "Gen": "Bir gayageumun",
+        "bare": "gayageum",
+        "next": "bir gayageumun yanında",
+        "with": "gayageumlu"
+      },
+      "kimchipot": {
+        "a": "bir kimchi küpü",
+        "gen": "bir kimchi küpünün",
+        "Gen": "Bir kimchi küpünün",
+        "bare": "kimchi küpü",
+        "next": "bir kimchi küpünün yanında",
+        "with": "kimchi küplü"
+      },
+      "janggu": {
+        "a": "bir davul",
+        "gen": "bir davulun",
+        "Gen": "Bir davulun",
+        "bare": "davul",
+        "next": "bir davulun yanında",
+        "with": "davullu"
+      },
+      "maanvaas": {
+        "a": "bir ay vazosu",
+        "gen": "bir ay vazosunun",
+        "Gen": "Bir ay vazosunun",
+        "bare": "ay vazosu",
+        "next": "bir ay vazosunun yanında",
+        "with": "ay vazolu"
+      },
+      "inktsteen": {
+        "a": "bir mürekkep taşı",
+        "gen": "bir mürekkep taşının",
+        "Gen": "Bir mürekkep taşının",
+        "bare": "mürekkep taşı",
+        "next": "bir mürekkep taşının yanında",
+        "with": "mürekkep taşlı"
+      },
+      "theetafel": {
+        "a": "bir çay masası",
+        "gen": "bir çay masasının",
+        "Gen": "Bir çay masasının",
+        "bare": "çay masası",
+        "next": "bir çay masasının yanında",
+        "with": "çay masalı"
       }
     },
     "roomWords": {
@@ -10572,6 +15368,102 @@
         "was": "alandaydı",
         "wasI": "alandaydım",
         "wasThey": "alandaydılar"
+      },
+      "oceaanstomer": {
+        "rw": "alan",
+        "rws": "alanlar",
+        "in": "alanda",
+        "gen": "alanın",
+        "acc": "alanı",
+        "dat": "alana",
+        "pluralIn": "alanlarda",
+        "was": "alandaydı",
+        "wasI": "alandaydım",
+        "wasThey": "alandaydılar"
+      },
+      "ryokan": {
+        "rw": "alan",
+        "rws": "alanlar",
+        "in": "alanda",
+        "gen": "alanın",
+        "acc": "alanı",
+        "dat": "alana",
+        "pluralIn": "alanlarda",
+        "was": "alandaydı",
+        "wasI": "alandaydım",
+        "wasThey": "alandaydılar"
+      },
+      "fazenda": {
+        "rw": "alan",
+        "rws": "alanlar",
+        "in": "alanda",
+        "gen": "alanın",
+        "acc": "alanı",
+        "dat": "alana",
+        "pluralIn": "alanlarda",
+        "was": "alandaydı",
+        "wasI": "alandaydım",
+        "wasThey": "alandaydılar"
+      },
+      "zeppelin": {
+        "rw": "alan",
+        "rws": "alanlar",
+        "in": "alanda",
+        "gen": "alanın",
+        "acc": "alanı",
+        "dat": "alana",
+        "pluralIn": "alanlarda",
+        "was": "alandaydı",
+        "wasI": "alandaydım",
+        "wasThey": "alandaydılar"
+      },
+      "poolstation": {
+        "rw": "alan",
+        "rws": "alanlar",
+        "in": "alanda",
+        "gen": "alanın",
+        "acc": "alanı",
+        "dat": "alana",
+        "pluralIn": "alanlarda",
+        "was": "alandaydı",
+        "wasI": "alandaydım",
+        "wasThey": "alandaydılar"
+      },
+      "winterpaleis": {
+        "rw": "oda",
+        "rws": "odalar",
+        "in": "odada",
+        "gen": "odanın",
+        "acc": "odayı",
+        "dat": "odaya",
+        "pluralIn": "odalarda",
+        "was": "odadaydı",
+        "wasI": "odadaydım",
+        "wasThey": "odadaydılar"
+      },
+      "safarilodge": {
+        "rw": "alan",
+        "rws": "alanlar",
+        "in": "alanda",
+        "gen": "alanın",
+        "acc": "alanı",
+        "dat": "alana",
+        "pluralIn": "alanlarda",
+        "was": "alandaydı",
+        "wasI": "alandaydım",
+        "wasThey": "alandaydılar"
+      },
+      "hanok": {
+        "rw": "oda",
+        "rws": "odalar",
+        "in": "odada",
+        "gen": "odanın",
+        "acc": "odayı",
+        "dat": "odaya",
+        "pluralIn": "odalarda",
+        "was": "odadaydı",
+        "wasI": "odadaydım",
+        "wasThey": "odadaydılar"
       }
     }
   }
