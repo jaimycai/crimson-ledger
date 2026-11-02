@@ -4,6 +4,7 @@
 //   node store/asc-release.js prepare <version> <build> [notes.json]   the same, then wait for that build and attach it
 //   node store/asc-release.js submit <version>                         submit that version for review
 //   node store/asc-release.js cancel                                   withdraw the submission waiting for review
+//   node store/asc-release.js rename <from> <to>                       renumber a version that is not submitted yet
 //   node store/asc-release.js metadata <version> <metadata.json>      store texts per locale (see below)
 //   node store/asc-release.js primary <locale>                        the language shown to everyone else
 //   node store/asc-release.js subcategory <id>                        second game subcategory, e.g. GAMES_BOARD
@@ -156,6 +157,15 @@ async function primary(locale) {
   console.log('primary locale:', r ? r.data.attributes.primaryLocale : 'failed');
 }
 
+// A version still being prepared keeps its texts, screenshots and previews when it gets a new number (1.5.0 became
+// 1.6.0 on 2 November 2026: 1.5 was never submitted and went into 1.6).
+async function rename(from, to) {
+  const x = await version(from);
+  if (!x) return console.log('no version', from);
+  const r = await api('PATCH', `/v1/appStoreVersions/${x.v.id}`, { data: { type: 'appStoreVersions', id: x.v.id, attributes: { versionString: to } } });
+  console.log(r ? `version ${from} is now ${r.data.attributes.versionString} (${r.data.attributes.appStoreState})` : 'rename failed');
+}
+
 const [cmd, a, b, c] = process.argv.slice(2);
 // prepare takes the build number and the notes file in either order; the build number is the one made of digits.
 function prepareArgs() {
@@ -163,4 +173,4 @@ function prepareArgs() {
   const build = rest.find(x => /^\d+(\.\d+)*$/.test(x));
   return prepare(a, build, rest.find(x => x !== build));
 }
-({ status, prepare: () => a ? prepareArgs() : console.log('usage: prepare <version> [build] [notes.json]'), submit: () => submit(a), cancel, metadata: () => metadata(a, b), primary: () => primary(a), subcategory: () => subcategory(a) }[cmd] || (() => console.log('usage: status | prepare <version> [build] [notes.json] | submit <version> | cancel | metadata <version> <metadata.json> | primary <locale> | subcategory <id>')))();
+({ status, prepare: () => a ? prepareArgs() : console.log('usage: prepare <version> [build] [notes.json]'), submit: () => submit(a), cancel, metadata: () => metadata(a, b), primary: () => primary(a), subcategory: () => subcategory(a), rename: () => rename(a, b) }[cmd] || (() => console.log('usage: status | prepare <version> [build] [notes.json] | submit <version> | cancel | metadata <version> <metadata.json> | primary <locale> | subcategory <id> | rename <from> <to>')))();
