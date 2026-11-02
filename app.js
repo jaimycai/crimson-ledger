@@ -57,6 +57,7 @@ const App = {
     this.updateStreakDisplay();
     this.renderHome();
     this.scheduleReminder();
+    this.bindNotifications();
     if (typeof Store !== 'undefined') Store.grantStarterHints();
     if (typeof Meting !== 'undefined') Meting.open();
   },
@@ -748,8 +749,63 @@ const App = {
   },
 
   // ══════════════════════════════════════════════════════════
-  //  DAGELIJKSE HERINNERING (alleen in de iOS-app, lokale melding)
+  //  MELDINGEN (alleen in de app: lokale meldingen, @capacitor/local-notifications 7)
+  //  Het hele plan wordt opnieuw gezet bij elke opening (start en terugkeer uit de achtergrond), na de dagzaak
+  //  en na "Over een uur": eerst alles annuleren, dan plannen. Van Dam is de afzender (titel), nooit de appnaam.
+  //   dag       op het herinneringsuur (gewone speeluur + 1, anders 18:30): vandaag als de dagzaak nog open
+  //             staat, en 1, 2 en 5 dagen na de laatste opening; na 3 dagen een rustige "terug"-tekst
+  //   redder    21:30 op elke avond waarop een streak van 2+ dagen nog te houden is en de dagzaak nog open
+  //             staat, met "Speel nu" en "Over een uur"; vervalt zodra de dagzaak is opgelost
+  //   later     de redder nog één keer, een uur na "Over een uur" (één keer per avond)
+  //   afscheid  7 dagen na de laatste opening precies één bericht; daarna niets tot de speler terugkomt
+  // Teksten wisselen per dag (NOTIFY_TEXTS) en noemen de zaak van die dag; geen schuldgevoel, geen verliesdreiging.
   // ══════════════════════════════════════════════════════════
+  NOTIFY: {
+    IDS: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],   // alles wat we ooit plannen (1-5 was de reeks tot en met 1.5)
+    DAY_IDS: 1,           // dag d na vandaag: id 1 + d (d = 0..6); het afscheid op dag 7 is id 8
+    RESCUE_IDS: 11,       // redder op dag d: id 11 + d (d = 0..2)
+    LATER_ID: 14,
+    REMIND_DAYS: [0, 1, 2, 3, 5], FAREWELL_DAY: 7,
+    RESCUE_AT: [21, 30], LATER_MIN: 60,
+    // een gewone herinnering die later valt dan 19:30 wijkt op een redderavond voor de redder
+    QUIET_BEFORE_RESCUE: 120,
+    IMAGE: 'res:///assets/vandam.jpg',   // Van Dam als afbeelding (iOS kopieert een bijlage uit de app-bundel)
+    THREAD: 'crimson-dossier'
+  },
+  // Teksten per soort. Elke variant is een eigen AP_T-sjabloon, zodat de vertaalroute ze vindt.
+  NOTIFY_TEXTS: {
+    dag: [
+      (title, world) => AP_T`De zaak van vandaag heet “${title}”. Een paar minuten, meer vraag ik niet.`,
+      (title, world) => AP_T`Nieuw dossier: “${title}”. Plaats delict: ${world}.`,
+      (title, world) => AP_T`“${title}” ligt klaar. Een handvol verdachten, één waarheid. Kijk je even mee?`,
+      (title, world) => AP_T`De koffie staat klaar, het dossier ook: “${title}”.`,
+      (title, world) => AP_T`Ik heb een zaak voor je: “${title}”. De vraag is kort: wie was waar?`,
+      (title, world) => AP_T`${world} · “${title}”. Ik ben benieuwd wat jij ziet.`
+    ],
+    terug: [
+      title => AP_T`Het archief loopt niet weg. Vandaag ligt “${title}” klaar, als je zin hebt.`,
+      title => AP_T`Een rustige dag op het bureau. “${title}” wacht geduldig op een frisse blik.`,
+      title => AP_T`Geen haast. Als het uitkomt: “${title}” ligt bovenop de stapel.`,
+      title => AP_T`Ik heb je dossierkast netjes bijgehouden. Bovenop vandaag: “${title}”.`,
+      title => AP_T`Voor een kort moment tussendoor: “${title}”. Drie minuten en een kop thee.`
+    ],
+    redder: [
+      (n, title) => AP_T`Je streak staat op ${n} dagen. De zaak van vandaag ligt nog open: “${title}”.`,
+      (n, title) => AP_T`${n} dagen op rij. Eén zaak vanavond en het worden er ${n + 1}.`,
+      (n, title) => AP_T`Nog een kort verhoor voor het slapengaan? “${title}” houdt je streak van ${n} dagen heel.`,
+      (n, title) => AP_T`🔥 ${n} dagen. Het vuur brandt nog; één zaak houdt het aan.`,
+      (n, title) => AP_T`Om middernacht sluit het dossier van vandaag. Tijd genoeg voor “${title}” en dag ${n + 1} van je streak.`,
+      (n, title) => AP_T`Rustig avondwerk: “${title}”. Daarmee komt je streak op ${n + 1} dagen.`
+    ],
+    later: [
+      (n, title) => AP_T`Het uur is om. “${title}” ligt nog op je bureau.`,
+      (n, title) => AP_T`Zoals afgesproken: “${title}”. Daarna laat ik je met rust.`,
+      (n, title) => AP_T`Een uur later, zelfde dossier: “${title}”. Je streak van ${n} dagen wacht.`,
+      (n, title) => AP_T`Hier ben ik weer. Eén zaak, en je streak gaat naar ${n + 1} dagen.`,
+      (n, title) => AP_T`Afspraak is afspraak: “${title}”, nog vóór middernacht.`
+    ],
+    afscheid: [() => AP_T('De dossiers wachten op je. Ik stuur je geen herinneringen meer.')]
+  },
   notif() {
     try { const P = window.Capacitor && window.Capacitor.Plugins; return (P && P.LocalNotifications) || null; } catch (e) { return null; }
   },
@@ -759,7 +815,7 @@ const App = {
     if (!LN) return false;
     if (!on) {
       this.storageSet('crimson-reminder', '0');
-      try { await LN.cancel({ notifications: [1, 2, 3, 4, 5].map(id => ({ id })) }); } catch (e) { /* niets gepland */ }
+      try { await LN.cancel({ notifications: this.NOTIFY.IDS.map(id => ({ id })) }); } catch (e) { /* niets gepland */ }
       return false;
     }
     try {
@@ -769,31 +825,139 @@ const App = {
     this.storageSet('crimson-reminder', '1');
     if (typeof Meting !== 'undefined') Meting.send('reminder_on');
     await this.scheduleReminder();
+    this.renderReminderLabel();
     return true;
   },
-  // Eén melding, elke keer opnieuw gepland: vandaag 18:30 als de dagelijkse zaak nog open staat, anders morgen.
-  async scheduleReminder() {
+  // het uur van de gewone herinnering: een uur ná je gebruikelijke speeluur (tussen 9 en 21 uur), anders 18:30
+  reminderTime() {
+    const usual = Progress.usualHour();
+    return usual === null ? { h: 18, m: 30 } : { h: Math.min(21, Math.max(9, usual + 1)), m: 0 };
+  },
+  // een tijdstip zoals de taal het schrijft ("19:00", "7:00 PM", "오후 7:00" …)
+  clock(t) {
+    const d = t instanceof Date ? t : new Date(2026, 0, 1, t.h, t.m);
+    try { return d.toLocaleTimeString(typeof I18n !== 'undefined' ? I18n.locale() : 'nl-NL', { hour: 'numeric', minute: '2-digit' }); }
+    catch (e) { return `${String(d.getHours()).padStart(2, '0')}:${String(d.getMinutes()).padStart(2, '0')}`; }
+  },
+  renderReminderLabel() {
+    const el = document.getElementById('reminder-label');
+    if (el) el.textContent = AP_T`🔔 Dagelijkse herinnering (${this.clock(this.reminderTime())})`;
+  },
+  // Het plan vanaf `now`: een lijst meldingen voor LocalNotifications.schedule (leeg als herinneringen uit staan).
+  // Zonder bijwerkingen, zodat de test elk tijdstip kan nabootsen.
+  reminderPlan(now = new Date()) {
+    if (!this.reminderEnabled()) return [];
+    const N = this.NOTIFY, X = this.NOTIFY_TEXTS;
+    const on = (d, h, m) => { const x = new Date(now); x.setDate(x.getDate() + d); x.setHours(h, m, 0, 0); return x; };
+    const soon = now.getTime() + 60000;   // iOS bezorgt een melding in het verleden meteen: nooit plannen
+    const doneToday = this.storageGet('crimson-board-daily-done') === now.toDateString();
+    // de streak is op dag d (vanaf vandaag) nog te houden als je die dag speelt: de laatste dag was de dag ervoor,
+    // of twee dagen ervoor met een vrije dag op voorraad (die vult het gat, zie updateStreak)
+    const streak = (this.streak && this.streak.count) || 0, freezes = Progress.freezes();
+    let lastOff = null;
+    for (let k = 0; k >= -2 && this.streak && this.streak.lastDate; k--) if (on(k, 12, 0).toDateString() === this.streak.lastDate) { lastOff = k; break; }
+    const savable = d => streak >= 2 && lastOff !== null && (d - lastOff === 1 || (d - lastOff === 2 && freezes > 0));
+    const pick = (list, n) => list[((n % list.length) + list.length) % list.length];
+    const caseOn = at => { const n = this.getDayNumber(at), th = Themes.forDay(n); return { n, title: Progress.dailyTitle(n), world: `${th.icon} ${th.title}` }; };
+    const name = AP_T('Inspecteur Van Dam');
+    const plan = [];
+    const add = (id, kind, at, body) => {
+      if (at.getTime() < soon) return;
+      const n = { id, title: name, body, schedule: { at, allowWhileIdle: true }, threadIdentifier: N.THREAD, summaryArgument: name,
+        actionTypeId: kind === 'redder' ? 'crimson-redder' : kind === 'later' ? 'crimson-later' : 'crimson-dossier',
+        extra: { kind, day: Progress.dayKey(at), open: kind === 'afscheid' ? 'home' : 'daily' } };
+      if (kind === 'redder' || kind === 'later' || kind === 'afscheid') n.attachments = [{ id: 'vandam', url: N.IMAGE }];
+      plan.push(n);
+    };
+    const [rh, rm] = N.RESCUE_AT, t = this.reminderTime();
+    const rescueDays = [0, 1, 2].filter(d => savable(d) && !(d === 0 && doneToday));
+    for (const d of rescueDays) { const at = on(d, rh, rm), c = caseOn(at); add(N.RESCUE_IDS + d, 'redder', at, pick(X.redder, c.n)(streak, c.title)); }
+    for (const d of N.REMIND_DAYS) {
+      if (d === 0 && doneToday) continue;
+      if (rescueDays.includes(d) && (rh * 60 + rm) - (t.h * 60 + t.m) < N.QUIET_BEFORE_RESCUE) continue;
+      const at = on(d, t.h, t.m), c = caseOn(at);
+      add(N.DAY_IDS + d, d === 3 ? 'terug' : 'dag', at, d === 3 ? pick(X.terug, c.n)(c.title) : pick(X.dag, c.n)(c.title, c.world));
+    }
+    // "Over een uur": alleen vandaag, alleen zolang de dagzaak open staat
+    let later = null;
+    try { later = JSON.parse(this.storageGet('crimson-notif-later') || 'null'); } catch (e) { later = null; }
+    if (later && later.day === Progress.dayKey(now) && !doneToday && savable(0)) {
+      const at = new Date(later.at), c = caseOn(at);
+      add(N.LATER_ID, 'later', at, pick(X.later, c.n)(streak, c.title));
+    }
+    add(N.DAY_IDS + N.FAREWELL_DAY, 'afscheid', on(N.FAREWELL_DAY, t.h, t.m), X.afscheid[0]());
+    return plan.sort((a, b) => a.schedule.at - b.schedule.at);
+  },
+  // Plant alles opnieuw. Aanroepen lopen achter elkaar (annuleren en plannen mogen niet door elkaar heen).
+  scheduleReminder(now) {
+    this.notifyQueue = (this.notifyQueue || Promise.resolve()).then(() => this.replanNotifications(now || new Date())).catch(() => {});
+    return this.notifyQueue;
+  },
+  async replanNotifications(now) {
     const LN = this.notif();
     if (!LN || !this.reminderEnabled()) return;
-    const doneToday = this.storageGet('crimson-board-daily-done') === new Date().toDateString();
-    // een uur ná het tijdstip waarop je meestal speelt (dan ben je kennelijk niet geweest); anders 18:30
-    const usual = Progress.usualHour();
-    const at = new Date();
-    if (usual === null) at.setHours(18, 30, 0, 0); else at.setHours(Math.min(21, Math.max(9, usual + 1)), 0, 0, 0);
-    if (doneToday || at <= new Date()) at.setDate(at.getDate() + 1);
-    const streak = this.streak.count || 0, freezes = Progress.freezes();
-    const body = streak > 1
-      ? (freezes ? AP_T`Je dagelijkse zaak wacht. Houd je streak van ${streak} dagen vast.` : AP_T`Je streak van ${streak} dagen loopt vanavond af. Eén zaak is genoeg.`)
-      : AP_T('Er ligt een nieuwe zaak op je bureau. Wie was alleen met het slachtoffer?');
-    // Not one reminder but a short series (days 1, 2, 3, 5 and 7 from the next one), all replanned at every open: a player who
-    // skips a day still gets a nudge, and it stops after a week (Duolingo: days 3-4 decide whether someone comes back).
-    const later = AP_T('Er ligt een nieuwe zaak op je bureau. Wie was alleen met het slachtoffer?');
-    const plan = [0, 1, 2, 4, 6].map((d, i) => { const when = new Date(at); when.setDate(when.getDate() + d);
-      return { id: i + 1, title: 'Crimson Ledger', body: i === 0 ? body : later, schedule: { at: when, allowWhileIdle: true } }; });
+    const N = this.NOTIFY, plan = this.reminderPlan(now);
+    try { await LN.cancel({ notifications: N.IDS.map(id => ({ id })) }); } catch (e) { /* niets gepland */ }
+    // dagzaak opgelost: een redder die al in het meldingencentrum staat, klopt niet meer
+    if (this.storageGet('crimson-board-daily-done') === now.toDateString() && LN.removeDeliveredNotifications) {
+      try { await LN.removeDeliveredNotifications({ notifications: [11, 12, 13, 14].map(id => ({ id })) }); } catch (e) { /* niets bezorgd */ }
+    }
+    // Eerst de gewone, dan die met een afbeelding: lukt de bijlage niet (bestand ontbreekt), dan zonder afbeelding.
+    const plain = plan.filter(n => !n.attachments), rich = plan.filter(n => n.attachments);
+    try { if (plain.length) await LN.schedule({ notifications: plain }); } catch (e) { /* geen meldingen beschikbaar */ }
+    if (!rich.length) return;
+    try { await LN.schedule({ notifications: rich }); }
+    catch (e) {
+      try { await LN.schedule({ notifications: rich.map(n => { const { attachments, ...rest } = n; return rest; }) }); } catch (e2) { /* geen meldingen beschikbaar */ }
+    }
+  },
+  // Knoppen en het tikken op een melding. Beide knoppen openen de app: een knop die de app niet opent, komt bij een
+  // gesloten app (UIScene, Capacitor start de webview dan niet) nooit in JavaScript aan, en dan zou "Over een uur"
+  // stilletjes niets doen.
+  bindNotifications() {
+    const LN = this.notif();
+    if (!LN) return;
+    const hidden = AP_T('Een bericht van Inspecteur Van Dam');
+    const play = { id: 'play', title: AP_T('Speel nu'), foreground: true };
     try {
-      await LN.cancel({ notifications: plan.map(p => ({ id: p.id })) }).catch(() => {});
-      await LN.schedule({ notifications: plan });
-    } catch (e) { /* geen meldingen beschikbaar */ }
+      const r = LN.registerActionTypes({ types: [
+        { id: 'crimson-redder', actions: [play, { id: 'later', title: AP_T('Over een uur'), foreground: true }], iosHiddenPreviewsBodyPlaceholder: hidden },
+        { id: 'crimson-later', actions: [play], iosHiddenPreviewsBodyPlaceholder: hidden },
+        { id: 'crimson-dossier', actions: [], iosHiddenPreviewsBodyPlaceholder: hidden }
+      ] });
+      if (r && r.catch) r.catch(() => {});
+      const l = LN.addListener('localNotificationActionPerformed', a => this.onNotificationAction(a));
+      if (l && l.catch) l.catch(() => {});
+    } catch (e) { /* geen meldingen */ }
+    // terug uit de achtergrond telt als opening: het plan (en de grens van 7 dagen) schuift mee
+    document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') this.scheduleReminder(); });
+  },
+  onNotificationAction(a, now = new Date()) {
+    const x = (a && a.notification && a.notification.extra) || {};
+    if (!x.kind) return;   // niet van ons
+    if (typeof Meting !== 'undefined') Meting.send('notif', `${x.kind}.${a.actionId}`);
+    if (a.actionId === 'dismiss' || x.day !== Progress.dayKey(now)) return;   // een melding van een andere dag: alleen de app openen
+    if (a.actionId === 'later') { this.snoozeRescue(now); return; }
+    if (x.open === 'daily') this.openDailyFromNotification(now);
+  },
+  // "Over een uur": de redder komt nog één keer, een uur later. Zelfde dag, en per avond maar één keer.
+  snoozeRescue(now = new Date()) {
+    if (this.storageGet('crimson-board-daily-done') === now.toDateString()) return;
+    const today = Progress.dayKey(now), at = new Date(now.getTime() + this.NOTIFY.LATER_MIN * 60000);
+    if (Progress.dayKey(at) !== today) { this.showToast('🌙', AP_T('Over een uur is het al morgen. De zaak van vandaag staat nog klaar.')); return; }
+    let prev = null;
+    try { prev = JSON.parse(this.storageGet('crimson-notif-later') || 'null'); } catch (e) { prev = null; }
+    const when = prev && prev.day === today ? new Date(prev.at) : at;
+    this.storageSet('crimson-notif-later', JSON.stringify({ day: today, at: when.getTime() }));
+    this.scheduleReminder(now);
+    this.showToast('🔔', AP_T`Goed. Om ${this.clock(when)} meld ik me nog één keer.`);
+  },
+  // "Speel nu" of tikken: meteen de dagzaak, behalve midden in een andere zaak of vóór de oefenzaak
+  openDailyFromNotification(now = new Date()) {
+    if (!this.storageGet('crimson-board-tutorial-done') || this.currentScreen === 'board') return;
+    if (this.storageGet('crimson-board-daily-done') === now.toDateString()) return;
+    const btn = document.getElementById('btn-board-daily');
+    if (btn) btn.click();
   },
 
   // ══════════════════════════════════════════════════════════
@@ -846,11 +1010,13 @@ const App = {
     if (row && chk) {
       row.hidden = !this.notif();
       chk.checked = this.reminderEnabled();
+      this.renderReminderLabel();
+      btn.addEventListener('click', () => this.renderReminderLabel());   // het uur volgt je speeltijd: bij openen bijwerken
       chk.addEventListener('change', async () => { chk.checked = await this.setReminder(chk.checked); });
     }
     const rb = document.getElementById('btn-remind');
     if (rb) rb.addEventListener('click', async () => {
-      if (await this.setReminder(true)) { rb.hidden = true; this.showToast('🔔', AP_T('Ingesteld: elke dag om 18:30 een herinnering.')); }
+      if (await this.setReminder(true)) { rb.hidden = true; this.showToast('🔔', AP_T`Ingesteld: elke dag om ${this.clock(this.reminderTime())} een herinnering.`); }
     });
   },
 
@@ -1824,10 +1990,9 @@ const App = {
     return now.getFullYear() * 10000 + (now.getMonth() + 1) * 100 + now.getDate();
   },
 
-  getDayNumber() {
-    // Dagen sinds 1 jan 2026
+  getDayNumber(now = new Date()) {
+    // Dagen sinds 1 jan 2026 (een ander tijdstip meegeven kan: de meldingen noemen de zaak van die dag)
     const start = new Date(2026, 0, 1);
-    const now = new Date();
     return Math.floor((now - start) / 86400000) + 1;
   },
 
