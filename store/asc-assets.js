@@ -4,6 +4,7 @@
 //   node store/asc-assets.js screenshots <version> --ipad [...]      the same for the iPad 13" set (APP_IPAD_PRO_3GEN_129)
 //   node store/asc-assets.js previews <version>                      list the app preview videos
 //   node store/asc-assets.js previews <version> delete               delete every app preview video of that version
+//   node store/asc-assets.js previews <version> upload [locales]     upload store/previews/crimson-ledger-<lang>-886x1920.mp4 (IPHONE_65)
 // screenshots: the locales default to all of store/metadata/<version>.json (or, without that file, all localizations
 // the version has). Each locale gets the cards of its app language: nl-NL from store/cards-65, every other locale from
 // store/cards-65-<language> (en-US and en-GB → -en, es-ES and es-MX → -es, pt-BR and pt-PT → -pt, zh-Hans → -zh,
@@ -130,6 +131,43 @@ async function previews(v, mode) {
   console.log(mode === 'delete' ? `deleted ${deleted} of ${total} app previews` : `${total} app previews (add "delete" to remove them all)`);
 }
 
+// Uploads store/previews/crimson-ledger-<lang>-886x1920.mp4 as the iPhone 6.5" app preview of each store locale
+// (store/make-preview.js + store/encode-preview.swift). Replaces what the IPHONE_65 preview set had; the poster frame
+// is taken at one second, when the board is already on screen.
+async function previewsUpload(v, only) {
+  const found = await findVersion(v); if (!found) return;
+  const metaFile = path.join(__dirname, 'metadata', `${v}.json`);
+  const locales = only.length ? only : fs.existsSync(metaFile) ? Object.keys(JSON.parse(fs.readFileSync(metaFile, 'utf8'))) : Object.keys(found.locs);
+  for (const locale of locales) {
+    const loc = found.locs[locale];
+    const lang = locale.split('-')[0];
+    const file = path.join(__dirname, 'previews', `crimson-ledger-${lang}-886x1920.mp4`);
+    if (!loc) { console.log(locale.padEnd(8), 'SKIP: no such localization'); continue; }
+    if (!fs.existsSync(file)) { console.log(locale.padEnd(8), 'SKIP:', path.basename(file), 'missing'); continue; }
+    const sets = await previewSetsOf(loc.id);
+    let set = sets.find(s => s.attributes.previewType === 'IPHONE_65');
+    if (!set) {
+      const r = await api('POST', '/v1/appPreviewSets', { data: { type: 'appPreviewSets', attributes: { previewType: 'IPHONE_65' }, relationships: { appStoreVersionLocalization: { data: { type: 'appStoreVersionLocalizations', id: loc.id } } } } });
+      set = r && r.data;
+      if (!set) { console.log(locale.padEnd(8), 'FAIL: could not create the IPHONE_65 preview set'); continue; }
+    }
+    let deleted = 0;
+    for (const p of await previewsOf(set.id)) if (await api('DELETE', `/v1/appPreviews/${p.id}`)) deleted++;
+    const id = await upload('appPreviews', set.id, file, { mimeType: 'video/mp4', previewFrameTimeCode: '00:00:01:00' });
+    let state = 'UPLOAD FAILED';
+    if (id) {
+      for (let i = 0; i < 120; i++) {
+        const r = await api('GET', `/v1/appPreviews/${id}?fields[appPreviews]=assetDeliveryState,videoDeliveryState`);
+        const a = r && r.data.attributes;
+        state = (a && ((a.videoDeliveryState && a.videoDeliveryState.state) || (a.assetDeliveryState && a.assetDeliveryState.state))) || 'UNKNOWN';
+        if (['COMPLETE', 'FAILED'].includes(state)) { if (state === 'FAILED') console.log(locale, JSON.stringify(a).slice(0, 300)); break; }
+        await wait(10000);
+      }
+    }
+    console.log(locale.padEnd(8), path.basename(file).padEnd(36), `deleted ${deleted}  ${state}`);
+  }
+}
+
 async function list(v) {
   const found = await findVersion(v); if (!found) return;
   for (const [locale, loc] of Object.entries(found.locs)) {
@@ -141,8 +179,8 @@ async function list(v) {
 }
 
 const [cmd, v, ...rest] = process.argv.slice(2);
-const usage = () => console.log('usage: list <version> | screenshots <version> [--ipad] [storeLocale...] | previews <version> [delete]');
+const usage = () => console.log('usage: list <version> | screenshots <version> [--ipad] [storeLocale...] | previews <version> [delete | upload [storeLocale...]]');
 module.exports = { upload, processed, cardsFor };
 if (require.main !== module) {}
 else if (!v) usage();
-else ({ list: () => list(v), screenshots: () => screenshots(v, rest.filter(a => a !== '--ipad')), previews: () => previews(v, rest[0]) }[cmd] || usage)();
+else ({ list: () => list(v), screenshots: () => screenshots(v, rest.filter(a => a !== '--ipad')), previews: () => rest[0] === 'upload' ? previewsUpload(v, rest.slice(1)) : previews(v, rest[0]) }[cmd] || usage)();

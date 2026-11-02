@@ -10,6 +10,8 @@ const BRANDS = /murdle|cluedo|clue\b|enigmic|tiny crimes|murdoku|mysteryic|murdo
 const NOT_IN_TITLE = /\b(free|gratis|gratuit|kostenlos|grátis|gratuito|ücretsiz|бесплатн|#1|best\b|beste\b)/i;
 // 240 in Western, Arabic-Indic, Extended Arabic-Indic (Urdu), Devanagari, Bengali and Telugu digits
 const N240 = /240|٢٤٠|۲۴۰|२४०|২৪০|౨౪౦/;
+// gratis en proberen, per taal (afschrikwoorden voor promotietekst, wat is er nieuw en de onderschriften)
+const FREE = /free|gratis|gratuit|kostenlos|grátis|gratuito|ücretsiz|бесплатн|مجان|مفت|मुफ़्त|मुफ्त|मोफत|ফ্রি|বিনামূল্যে|ఉచిత|無料|무료|免费|miễn phí|probeer|try |prova|prueba|experimente|essaie|teste |coba|dene|попробуй|جرّب|آزمائیں|आज़माएँ|खेळून पाहा|খেলে দেখুন|ఆడి చూడండి|お試し|체험|试玩|chơi thử/i;
 const APP_LANG = { 'nl-NL': 'nl', 'en-US': 'en', 'en-GB': 'en', 'de-DE': 'de', 'fr-FR': 'fr', 'es-ES': 'es', 'es-MX': 'es',
   'pt-BR': 'pt', 'pt-PT': 'pt', it: 'it', ja: 'ja', ko: 'ko', 'zh-Hans': 'zh', ru: 'ru', tr: 'tr', id: 'id', vi: 'vi',
   'ar-SA': 'ar', 'ur-PK': 'ur', hi: 'hi', 'mr-IN': 'mr', 'bn-BD': 'bn', 'te-IN': 'te' };
@@ -40,8 +42,14 @@ for (const f of files) {
   const dupT = kws.filter(k => titleWords.has(k));
   if (dupT.length) fail(loc, `zoekwoorden die al in naam/ondertitel staan: ${dupT.join(', ')}`);
   const seen = new Set(); for (const k of kws) { if (seen.has(k)) fail(loc, `zoekwoord dubbel: ${k}`); seen.add(k); }
-  for (const k of ['description', 'whatsNew']) if (!N240.test(t[k] || '')) fail(loc, `${k} noemt de 240 gratis zaken niet`);
-  if (!N240.test(t.promotionalText || '')) console.log(`let op ${loc}: promotietekst noemt 240 niet`);
+  // Jaimy, 2-11: niets wat afschrikt. Geen aantal gratis zaken, geen gratis/proberen in de haak; Apple weigert ★.
+  for (const k of ['name', 'subtitle', 'promotionalText', 'description', 'whatsNew']) {
+    if (N240.test(t[k] || '')) fail(loc, `${k} noemt 240 (geen aantal gratis zaken)`);
+    if (/[★☆]/.test(t[k] || '')) fail(loc, `${k} bevat ★ of ☆ (Apple weigert die)`);
+  }
+  for (const k of ['promotionalText', 'whatsNew']) if (FREE.test(t[k] || '')) fail(loc, `${k} noemt gratis/proberen`);
+  const freeInDesc = (String(t.description || '').match(new RegExp(FREE.source, 'gi')) || []).length;
+  if (freeInDesc > 1) fail(loc, `beschrijving noemt gratis ${freeInDesc} keer (hooguit één keer, neutraal, in de laatste alinea)`);
   if (/\b(buy|koop|kaufen|acheter|comprar|comprare|satın)\b/i.test(t.promotionalText + ' ' + t.whatsNew)) fail(loc, 'promotietekst of wat-is-nieuw zegt "kopen"');
 
   const lang = APP_LANG[loc];
@@ -49,8 +57,10 @@ for (const f of files) {
   let cards;
   try { cards = JSON.parse(fs.readFileSync(path.join(CARDS, lang + '.json'), 'utf8')); } catch (e) { fail(loc, `cards-text/${lang}.json ontbreekt`); continue; }
   if (cards.map(r => r[0]).join() !== ORDER.join()) fail(loc, `cards-text/${lang}.json: bestanden of volgorde wijken af van nl`);
-  const nieuw = cards.find(r => r[0] === '08-nieuw');
-  if (!nieuw || !N240.test(nieuw.join(' '))) fail(loc, `cards-text/${lang}.json: beeld 08-nieuw noemt 240 niet`);
+  for (const r of cards) {
+    const txt = r.slice(1).join(' ');
+    if (N240.test(txt) || FREE.test(txt)) fail(loc, `cards-text/${lang}.json: beeld ${r[0]} noemt gratis/proberen of 240`);
+  }
   if (!bad) console.log(`ok    ${loc}  ${t.name} | ${t.subtitle}`);
 }
 console.log(bad ? `${bad} FOUT(EN)` : 'ALLES IN ORDE');

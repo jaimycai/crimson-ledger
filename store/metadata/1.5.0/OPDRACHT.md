@@ -92,3 +92,27 @@ Schrijf niets anders, commit niets, draai geen App Store Connect-scripts.
 
 Per winkeltaal: de naam en ondertitel, de promotietekst, de kop van beeld 1-3, wat je veranderde ten opzichte van het
 voorstel en waarom (met de zoekresultaten die je zag), en twijfels die een moedertaalspreker zou moeten nakijken.
+
+## Bijstelling Jaimy, 2 november 2026 (gaat vóór alles hierboven)
+
+"geen free try 240 cases dat schrikt af. alles wat afschrikt niet erin zetten. net zoals een listing voor werkende
+producten of apps moeten wij dat ook gaan doen. graag oneindig veel cases en een filmpje erin"
+
+Dus, in elke taal:
+- **Weg**: "gratis proberen", "240 (gratis) zaken", "128 gratis", "probeer elke wereld", en elk ander woord voor gratis,
+  proberen, proefversie of aankoop in de **promotietekst**, **wat is er nieuw** en de **onderschriften**. Geen getal van
+  gratis zaken, nergens.
+- **Beschrijving**: verkoopt het spel zoals een sterke listing van een goed lopend spel. Gratis/aankoop staat hooguit
+  één keer, neutraal, in de laatste alinea (zoals grote spellen: "gratis te downloaden; de Crimson Pass opent alles in
+  één keer, geen abonnement"). Nergens anders.
+- **Kernboodschap**: eindeloos veel zaken. Elke dag een nieuwe zaak, een archief dat nooit opraakt, zestien werelden,
+  elke zaak eerlijk met één oplossing, hints die uitleggen, geen reclame. "1.024 zaken" mag in de beschrijving, maar
+  de haak (promotietekst, beeld 3) is **eindeloos**, niet een getal.
+- **Beeld 3 (`08-nieuw`)**: kop "Eindeloos veel zaken" (in jouw taal, kort en krachtig, accent op "eindeloos"),
+  onderregel in de geest van "Elke dag een nieuwe zaak, en een archief dat nooit opraakt." Geen getal, geen gratis.
+- **Wat is er nieuw**: als evenement; de nieuwe dingen positief, zonder gratis: alle zestien werelden staan open
+  (begin in elke wereld meteen aan deel I), hints verdienen met drie sterren, hulp van Van Dam als je vastzit, je
+  resultaat delen zonder iets te verklappen, nu ook op de iPad, kleine verbeteringen.
+- **Tekens die Apple weigert**: geen ★ of ☆ (Apple weigert ze in beschrijving en wat is er nieuw). Schrijf "drie sterren".
+  Vermijd ook andere symbolen en emoji in de App Store-teksten.
+- Naam, ondertitel en zoekwoorden blijven zoals je ze had, tenzij er "gratis/free" in staat.
