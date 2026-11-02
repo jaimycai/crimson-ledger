@@ -1469,6 +1469,498 @@
           "Onderwijzeres Wilma": "cô giáo Wilma",
           "Telegrafiste Fien": "điện báo viên Fien"
         }
+      },
+      "oceaanstomer": {
+        "title": "SS Halcyon",
+        "short": "Tàu biển",
+        "victimName": "Chủ tàu Ambrose Kingsley",
+        "roomWord": "khu vực",
+        "roomWordPlural": "khu vực",
+        "tagline": "Tháng 5 năm 1910. Năm ngày nữa tới New York, sao chổi Halley trên boong, và một chủ tàu không bao giờ tới được bờ bên kia.",
+        "intro": "SS Halcyon, tháng 5 năm 1910, giữa Đại Tây Dương. Trên boong đi dạo, ai cũng đang ngắm sao chổi Halley. Trừ chủ tàu Ambrose Kingsley: ông nằm trong phòng xì gà, bên một điếu xì gà vẫn còn cháy âm ỉ.",
+        "outro": "Halcyon cập cảng New York. Cảnh sát đang chờ trên bến, và bạn biết họ chờ ai.",
+        "rooms": {
+          "Promenadedek": "Boong đi dạo",
+          "Balzaal": "Phòng dạ vũ",
+          "Rookkamer": "Phòng xì gà",
+          "Eetzaal": "Phòng ăn",
+          "Suite": "Phòng suite",
+          "Machinekamer": "Phòng máy",
+          "Brug": "Đài chỉ huy",
+          "Radiokamer": "Phòng vô tuyến",
+          "Kombuis": "Bếp tàu",
+          "Ruim": "Khoang hàng",
+          "Bibliotheek": "Thư viện",
+          "Serre": "Sảnh cây cọ"
+        },
+        "furniture": {
+          "stuurrad": "bánh lái",
+          "scheepstelegraaf": "máy truyền lệnh",
+          "dekstoel": "ghế xếp",
+          "scheepsbel": "chuông tàu",
+          "hoedendoos": "hộp mũ"
+        },
+        "suspects": {
+          "Kapitein Grant": "Thuyền trưởng Grant",
+          "Stewardess Molly": "Tiếp viên Molly",
+          "Vliegenierster Solange": "Nữ phi công Solange",
+          "Professor Lund": "Giáo sư Lund",
+          "Suffragette Harriet": "Nhà nữ quyền Harriet",
+          "Marconist Arthur": "Điện báo viên Arthur",
+          "Hoofdmachinist Doyle": "Máy trưởng Doyle",
+          "Hoedenmaakster Edna": "Thợ làm mũ Edna"
+        },
+        "suspectShort": {
+          "Kapitein Grant": "Grant",
+          "Stewardess Molly": "Molly",
+          "Vliegenierster Solange": "Solange",
+          "Professor Lund": "Lund",
+          "Suffragette Harriet": "Harriet",
+          "Marconist Arthur": "Arthur",
+          "Hoofdmachinist Doyle": "Doyle",
+          "Hoedenmaakster Edna": "Edna"
+        },
+        "suspectRef": {
+          "Kapitein Grant": "thuyền trưởng Grant",
+          "Stewardess Molly": "tiếp viên Molly",
+          "Vliegenierster Solange": "nữ phi công Solange",
+          "Professor Lund": "giáo sư Lund",
+          "Suffragette Harriet": "nhà nữ quyền Harriet",
+          "Marconist Arthur": "điện báo viên Arthur",
+          "Hoofdmachinist Doyle": "máy trưởng Doyle",
+          "Hoedenmaakster Edna": "thợ làm mũ Edna"
+        }
+      },
+      "ryokan": {
+        "title": "Ryokan Tsukikage",
+        "short": "Ryokan",
+        "victimName": "Chủ quán Genzo Kurata",
+        "roomWord": "khu vực",
+        "roomWordPlural": "khu vực",
+        "tagline": "Kyoto, 1925. Hoa anh đào trong vườn, nước nóng dưới suối, và một ông chủ quán không bao giờ uống trà sáng nữa.",
+        "intro": "Ryokan Tsukikage, trên những ngọn đồi gần Kyoto, tháng 4 năm 1925. Hoa anh đào đang nở và mọi phòng đều kín khách. Chủ quán Genzo Kurata không đến uống trà sáng. Ông nằm trong trà thất, bên một chiếc chén vẫn còn ấm.",
+        "outro": "Tuyết phủ kín khu vườn và suối nước nóng bốc hơi. Mọi vị khách đều được về nhà, trừ một người.",
+        "rooms": {
+          "Gastenkamer": "Phòng nghỉ",
+          "Onsen": "Suối nước nóng",
+          "Theehuis": "Trà thất",
+          "Tuin": "Khu vườn",
+          "Keuken": "Nhà bếp",
+          "Veranda": "Hiên nhà",
+          "Hal": "Sảnh",
+          "Eetzaal": "Phòng ăn",
+          "Bamboebos": "Rừng tre",
+          "Voorraadkamer": "Kho dự trữ",
+          "Steiger": "Bến thuyền",
+          "Wasruimte": "Phòng tắm"
+        },
+        "furniture": {
+          "steenlantaarn": "đèn lồng đá",
+          "tetsubin": "ấm sắt",
+          "byobu": "bình phong vàng",
+          "bonsai": "chậu bonsai",
+          "wagasa": "ô giấy",
+          "futon": "nệm futon"
+        },
+        "suspects": {
+          "Gastvrouw Fumiko": "Nữ quản lý Fumiko",
+          "Kok Takeshi": "Đầu bếp Takeshi",
+          "Theemeesteres Chiyo": "Trà sư Chiyo",
+          "Ingenieur Isamu": "Kỹ sư Isamu",
+          "Fotografe Sachiko": "Nhiếp ảnh gia Sachiko",
+          "Tuinman Goro": "Người làm vườn Goro",
+          "Plantkundige Evelyn": "Nhà thực vật học Evelyn",
+          "Prentmaker Hiroshi": "Thợ khắc gỗ Hiroshi"
+        },
+        "suspectShort": {
+          "Gastvrouw Fumiko": "Fumiko",
+          "Kok Takeshi": "Takeshi",
+          "Theemeesteres Chiyo": "Chiyo",
+          "Ingenieur Isamu": "Isamu",
+          "Fotografe Sachiko": "Sachiko",
+          "Tuinman Goro": "Goro",
+          "Plantkundige Evelyn": "Evelyn",
+          "Prentmaker Hiroshi": "Hiroshi"
+        },
+        "suspectRef": {
+          "Gastvrouw Fumiko": "nữ quản lý Fumiko",
+          "Kok Takeshi": "đầu bếp Takeshi",
+          "Theemeesteres Chiyo": "trà sư Chiyo",
+          "Ingenieur Isamu": "kỹ sư Isamu",
+          "Fotografe Sachiko": "nhiếp ảnh gia Sachiko",
+          "Tuinman Goro": "người làm vườn Goro",
+          "Plantkundige Evelyn": "nhà thực vật học Evelyn",
+          "Prentmaker Hiroshi": "thợ khắc gỗ Hiroshi"
+        }
+      },
+      "fazenda": {
+        "title": "Đồn điền Boa Esperança",
+        "short": "Đồn điền",
+        "victimName": "Ông trùm cà phê Augusto Valadares",
+        "roomWord": "khu vực",
+        "roomWordPlural": "khu vực",
+        "tagline": "Brazil, 1926. Quả cà phê trên sân phơi, tiếng nhạc trên hiên nhà, và một ông trùm cà phê không bao giờ đếm vụ mùa nữa.",
+        "intro": "Đồn điền Boa Esperança, São Paulo, tháng 6 năm 1926. Vụ thu hoạch đã xong và sân phơi đầy quả cà phê. Ông trùm cà phê Augusto Valadares không đến dự tiệc mừng vụ mùa. Ông nằm trong xưởng rang, giữa những bao cà phê.",
+        "outro": "Sân phơi đã trống và sổ sách lại khớp. Trên hiên nhà, tiếng nhạc vẫn vang lên.",
+        "rooms": {
+          "Droogvloer": "Sân phơi",
+          "Koffieveld": "Vườn cà phê",
+          "Pakhuis": "Nhà kho",
+          "Branderij": "Xưởng rang",
+          "Veranda": "Hiên nhà",
+          "Kapel": "Nhà nguyện",
+          "Stal": "Chuồng ngựa",
+          "Keuken": "Nhà bếp",
+          "Eetkamer": "Phòng ăn",
+          "Salon": "Phòng khách",
+          "Studeerkamer": "Thư phòng",
+          "Serre": "Nhà kính"
+        },
+        "furniture": {
+          "koffiezak": "bao cà phê",
+          "koffiemolen": "cối xay cà phê",
+          "koffiestruik": "cây cà phê",
+          "papegaai": "vẹt",
+          "schommelstoel": "ghế bập bênh"
+        },
+        "suspects": {
+          "Dona Celeste": "Dona Celeste",
+          "Rentmeester Joaquim": "Quản lý Joaquim",
+          "Lerares Giulia": "Cô giáo Giulia",
+          "Koffieproever Bento": "Người nếm cà phê Bento",
+          "Pianiste Zélia": "Nghệ sĩ piano Zélia",
+          "Agronoom Hideo": "Nhà nông học Hideo",
+          "Inkoper Mulder": "Người thu mua Mulder",
+          "Dokter Lúcia": "Bác sĩ Lúcia"
+        },
+        "suspectShort": {
+          "Dona Celeste": "Celeste",
+          "Rentmeester Joaquim": "Joaquim",
+          "Lerares Giulia": "Giulia",
+          "Koffieproever Bento": "Bento",
+          "Pianiste Zélia": "Zélia",
+          "Agronoom Hideo": "Hideo",
+          "Inkoper Mulder": "Mulder",
+          "Dokter Lúcia": "Lúcia"
+        },
+        "suspectRef": {
+          "Dona Celeste": "Dona Celeste",
+          "Rentmeester Joaquim": "quản lý Joaquim",
+          "Lerares Giulia": "cô giáo Giulia",
+          "Koffieproever Bento": "người nếm cà phê Bento",
+          "Pianiste Zélia": "nghệ sĩ piano Zélia",
+          "Agronoom Hideo": "nhà nông học Hideo",
+          "Inkoper Mulder": "người thu mua Mulder",
+          "Dokter Lúcia": "bác sĩ Lúcia"
+        }
+      },
+      "zeppelin": {
+        "title": "Khí cầu Cirrus",
+        "short": "Khí cầu",
+        "victimName": "Nhà thiết kế Anton Falk",
+        "roomWord": "khu vực",
+        "roomWordPlural": "khu vực",
+        "tagline": "1929. Ba ngày bay trên đại dương, không ai có thể rời tàu, và người đã chế tạo khí cầu không hạ cánh cùng nó.",
+        "intro": "Khí cầu Cirrus, tháng 8 năm 1929. Suốt ba ngày, con tàu trôi trên đại dương, hướng về Rio de Janeiro. Sau bữa tối, nhà thiết kế Anton Falk nằm trong phòng bản đồ, tay vẫn cầm tờ lộ trình bay.",
+        "outro": "Khí cầu đã neo vào cột. Lộ trình bay không sai, và giờ phần còn lại cũng đã sáng tỏ.",
+        "rooms": {
+          "Salon": "Phòng khách",
+          "Eetzaal": "Phòng ăn",
+          "Slaapcabine": "Cabin ngủ",
+          "Kombuis": "Bếp tàu",
+          "Bar": "Quán bar",
+          "Kaartenkamer": "Phòng bản đồ",
+          "Radiokamer": "Phòng vô tuyến",
+          "Stuurgondel": "Khoang lái",
+          "Motorgondel": "Khoang động cơ",
+          "Loopbrug": "Lối đi hẹp",
+          "Postkamer": "Phòng thư",
+          "Uitkijkpost": "Chòi canh"
+        },
+        "furniture": {
+          "luchtschroef": "cánh quạt",
+          "sextant": "kính lục phân",
+          "postzak": "túi thư",
+          "wereldbol": "quả địa cầu",
+          "schrijfmachine": "máy đánh chữ"
+        },
+        "suspects": {
+          "Commandant Brandt": "Chỉ huy Brandt",
+          "Verslaggeefster Daisy": "Phóng viên Daisy",
+          "Navigator Mateus": "Hoa tiêu Mateus",
+          "Weerkundige Liv": "Nhà khí tượng Liv",
+          "Monteur Rudi": "Thợ máy Rudi",
+          "Tennisster Josette": "Tay vợt Josette",
+          "Diplomaat Vidal": "Nhà ngoại giao Vidal",
+          "Postmeesteres Elsbeth": "Trưởng bưu cục Elsbeth"
+        },
+        "suspectShort": {
+          "Commandant Brandt": "Brandt",
+          "Verslaggeefster Daisy": "Daisy",
+          "Navigator Mateus": "Mateus",
+          "Weerkundige Liv": "Liv",
+          "Monteur Rudi": "Rudi",
+          "Tennisster Josette": "Josette",
+          "Diplomaat Vidal": "Vidal",
+          "Postmeesteres Elsbeth": "Elsbeth"
+        },
+        "suspectRef": {
+          "Commandant Brandt": "chỉ huy Brandt",
+          "Verslaggeefster Daisy": "phóng viên Daisy",
+          "Navigator Mateus": "hoa tiêu Mateus",
+          "Weerkundige Liv": "nhà khí tượng Liv",
+          "Monteur Rudi": "thợ máy Rudi",
+          "Tennisster Josette": "tay vợt Josette",
+          "Diplomaat Vidal": "nhà ngoại giao Vidal",
+          "Postmeesteres Elsbeth": "trưởng bưu cục Elsbeth"
+        }
+      },
+      "poolstation": {
+        "title": "Trạm Nam Thập Tự",
+        "short": "Nam Cực",
+        "victimName": "Trạm trưởng Gunnar Holm",
+        "roomWord": "khu vực",
+        "roomWordPlural": "khu vực",
+        "tagline": "Nam Cực, 1958. Bốn tháng đêm địa cực, tám người trú đông, và một trạm trưởng không kịp dự tiệc giữa đông.",
+        "intro": "Trạm Nam Thập Tự, tháng 6 năm 1958. Nam Cực đang giữa mùa đông: đã nhiều tuần không có mặt trời, và sẽ không có máy bay nào cho đến mùa xuân. Trong bữa tiệc giữa đông, có một chiếc ghế bỏ trống. Trạm trưởng Gunnar Holm nằm trong phòng vô tuyến, tai vẫn đeo tai nghe.",
+        "outro": "Mặt trời lại lên trên mặt băng. Chiếc máy bay đầu tiên mang thư tới, và đưa thủ phạm về nhà.",
+        "rooms": {
+          "Radiokamer": "Phòng vô tuyến",
+          "Kennel": "Chuồng chó",
+          "Laboratorium": "Phòng thí nghiệm",
+          "Kantine": "Nhà ăn",
+          "Slaapzaal": "Phòng ngủ",
+          "Machinekamer": "Phòng máy phát",
+          "Ziekenboeg": "Phòng y tế",
+          "Voorraadkamer": "Kho dự trữ",
+          "Werkplaats": "Xưởng",
+          "Weerhut": "Chòi khí tượng",
+          "Observatorium": "Đài quan sát",
+          "Sneeuwtunnel": "Đường hầm tuyết"
+        },
+        "furniture": {
+          "zender": "điện đài",
+          "sledehond": "chó kéo xe",
+          "weerballon": "bóng thám không",
+          "sneeuwrups": "xe bánh xích",
+          "microscoop": "kính hiển vi"
+        },
+        "suspects": {
+          "Marconist Ole": "Điện báo viên Ole",
+          "Glaciologe Marina": "Nhà băng hà học Marina",
+          "Dokter Kenji": "Bác sĩ Kenji",
+          "Meteorologe Nancy": "Nhà khí tượng Nancy",
+          "Hondenmenner Rewi": "Người chăn chó Rewi",
+          "Monteur Lieve": "Thợ máy Lieve",
+          "Kok Diego": "Đầu bếp Diego",
+          "Natuurkundige Hélène": "Nhà vật lý Hélène"
+        },
+        "suspectShort": {
+          "Marconist Ole": "Ole",
+          "Glaciologe Marina": "Marina",
+          "Dokter Kenji": "Kenji",
+          "Meteorologe Nancy": "Nancy",
+          "Hondenmenner Rewi": "Rewi",
+          "Monteur Lieve": "Lieve",
+          "Kok Diego": "Diego",
+          "Natuurkundige Hélène": "Hélène"
+        },
+        "suspectRef": {
+          "Marconist Ole": "điện báo viên Ole",
+          "Glaciologe Marina": "nhà băng hà học Marina",
+          "Dokter Kenji": "bác sĩ Kenji",
+          "Meteorologe Nancy": "nhà khí tượng Nancy",
+          "Hondenmenner Rewi": "người chăn chó Rewi",
+          "Monteur Lieve": "thợ máy Lieve",
+          "Kok Diego": "đầu bếp Diego",
+          "Natuurkundige Hélène": "nhà vật lý Hélène"
+        }
+      },
+      "winterpaleis": {
+        "title": "Cung điện Zvezdin",
+        "short": "Cung điện",
+        "victimName": "Bá tước Andrei Zvezdin",
+        "roomWord": "phòng",
+        "roomWordPlural": "phòng",
+        "tagline": "Sankt-Peterburg, đêm giao thừa năm 1899. Sông Neva đóng băng, điệu valse cuối cùng của thế kỷ, và một bá tước không kịp nâng ly chúc mừng.",
+        "intro": "Cung điện Zvezdin, Sankt-Peterburg, đêm giao thừa năm 1899. Sông Neva đã đóng băng và trong phòng dạ vũ, dàn nhạc chơi điệu valse cuối cùng của thế kỷ. Lúc nửa đêm, bá tước Andrei Zvezdin sẽ nâng ly chúc mừng. Ông nằm trong thư viện, ly rượu vẫn còn đầy.",
+        "outro": "Nến đã tắt và thế kỷ mới đã bắt đầu. Bí mật cuối cùng của thế kỷ cũ đã được bạn giải đáp.",
+        "rooms": {
+          "Balzaal": "Phòng dạ vũ",
+          "Bibliotheek": "Thư viện",
+          "Kapel": "Nhà nguyện",
+          "IJsbaan": "Sân băng",
+          "Serre": "Nhà kính",
+          "Spiegelzaal": "Sảnh gương",
+          "Rookkamer": "Phòng xì gà",
+          "Keuken": "Nhà bếp",
+          "Trappenhuis": "Cầu thang",
+          "Eetzaal": "Phòng ăn",
+          "Garderobe": "Phòng gửi đồ",
+          "Koetshuis": "Nhà xe ngựa"
+        },
+        "furniture": {
+          "balalaika": "đàn balalaika",
+          "matroesjka": "búp bê matryoshka",
+          "juwelenei": "trứng nạm ngọc",
+          "schaatsen": "giày trượt băng",
+          "ijszwaan": "thiên nga băng",
+          "kaviaar": "bát trứng cá muối"
+        },
+        "suspects": {
+          "Gravin Jelena": "Nữ bá tước Yelena",
+          "Componist Sergej": "Nhà soạn nhạc Sergei",
+          "Schaatsster Vera": "Nghệ sĩ trượt băng Vera",
+          "Goudsmid Pavel": "Thợ kim hoàn Pavel",
+          "Gouvernante Mabel": "Gia sư Mabel",
+          "Luitenant Dmitri": "Trung úy Dmitri",
+          "Hofmeester Fjodor": "Quản gia Fyodor",
+          "Fotografe Irina": "Nhiếp ảnh gia Irina"
+        },
+        "suspectShort": {
+          "Gravin Jelena": "Yelena",
+          "Componist Sergej": "Sergei",
+          "Schaatsster Vera": "Vera",
+          "Goudsmid Pavel": "Pavel",
+          "Gouvernante Mabel": "Mabel",
+          "Luitenant Dmitri": "Dmitri",
+          "Hofmeester Fjodor": "Fyodor",
+          "Fotografe Irina": "Irina"
+        },
+        "suspectRef": {
+          "Gravin Jelena": "nữ bá tước Yelena",
+          "Componist Sergej": "nhà soạn nhạc Sergei",
+          "Schaatsster Vera": "nghệ sĩ trượt băng Vera",
+          "Goudsmid Pavel": "thợ kim hoàn Pavel",
+          "Gouvernante Mabel": "gia sư Mabel",
+          "Luitenant Dmitri": "trung úy Dmitri",
+          "Hofmeester Fjodor": "quản gia Fyodor",
+          "Fotografe Irina": "nhiếp ảnh gia Irina"
+        }
+      },
+      "safarilodge": {
+        "title": "Twiga Lodge",
+        "short": "Safari",
+        "victimName": "Nhà làm phim Rupert Vane",
+        "roomWord": "khu vực",
+        "roomWordPlural": "khu vực",
+        "tagline": "Kenya, 1974. Một triệu con linh dương đầu bò trên đồng cỏ, một khu nghỉ kín khách, và một nhà làm phim không bao giờ được thấy cảnh quay cuối cùng.",
+        "intro": "Twiga Lodge, Maasai Mara, tháng 8 năm 1974. Cuộc đại di cư đã bắt đầu: một triệu con linh dương đầu bò đi ngang qua khu nghỉ và lều nào cũng kín khách. Sau buổi lửa trại, nhà làm phim thiên nhiên Rupert Vane nằm trong phòng tối, giữa những cuộn phim của mình.",
+        "outro": "Đàn linh dương đầu bò đi tiếp và khu nghỉ trở nên yên ắng. Cảnh quay cuối cùng là của bạn.",
+        "rooms": {
+          "Veranda": "Hiên nhà",
+          "Waterpoel": "Hố nước",
+          "Kampvuur": "Lửa trại",
+          "Bar": "Quán bar",
+          "Slaaptent": "Lều ngủ",
+          "Landingsbaan": "Đường băng",
+          "Uitkijktoren": "Tháp quan sát",
+          "Keuken": "Nhà bếp",
+          "Donkere kamer": "Phòng tối",
+          "Kantoor": "Văn phòng",
+          "Garage": "Nhà xe",
+          "Eetzaal": "Phòng ăn"
+        },
+        "furniture": {
+          "safariwagen": "xe safari",
+          "klamboe": "màn chống muỗi",
+          "windzak": "túi gió",
+          "acacia": "cây keo",
+          "giraf": "hươu cao cổ gỗ",
+          "sisalmand": "giỏ sisal"
+        },
+        "suspects": {
+          "Eigenares Wambui": "Bà chủ Wambui",
+          "Gids Otieno": "Hướng dẫn viên Otieno",
+          "Dierenarts Njeri": "Bác sĩ thú y Njeri",
+          "Piloot Kiprono": "Phi công Kiprono",
+          "Chef Hamisi": "Bếp trưởng Hamisi",
+          "Journaliste Amina": "Nhà báo Amina",
+          "Geluidsman Felix": "Người thu âm Felix",
+          "Biologe Birgit": "Nhà sinh vật học Birgit"
+        },
+        "suspectShort": {
+          "Eigenares Wambui": "Wambui",
+          "Gids Otieno": "Otieno",
+          "Dierenarts Njeri": "Njeri",
+          "Piloot Kiprono": "Kiprono",
+          "Chef Hamisi": "Hamisi",
+          "Journaliste Amina": "Amina",
+          "Geluidsman Felix": "Felix",
+          "Biologe Birgit": "Birgit"
+        },
+        "suspectRef": {
+          "Eigenares Wambui": "bà chủ Wambui",
+          "Gids Otieno": "hướng dẫn viên Otieno",
+          "Dierenarts Njeri": "bác sĩ thú y Njeri",
+          "Piloot Kiprono": "phi công Kiprono",
+          "Chef Hamisi": "bếp trưởng Hamisi",
+          "Journaliste Amina": "nhà báo Amina",
+          "Geluidsman Felix": "người thu âm Felix",
+          "Biologe Birgit": "nhà sinh vật học Birgit"
+        }
+      },
+      "hanok": {
+        "title": "Hanok Dalbit",
+        "short": "Hanok",
+        "victimName": "Lão gia Yun Jae-ho",
+        "roomWord": "phòng",
+        "roomWordPlural": "phòng",
+        "tagline": "Joseon, 1795. Trăng rằm mùa gặt, một gia đình đoàn tụ, và một lão gia không bao giờ viết xong bài thơ cuối cùng.",
+        "intro": "Hanok Dalbit, trong vùng núi Joseon, mùa thu năm 1795. Đang là Chuseok: trăng rằm mùa gặt tròn đầy và cả gia đình đều ở nhà. Sau lễ hội trăng, lão gia Yun Jae-ho nằm trong thủy tạ bên ao, cạnh một bài thơ ba câu.",
+        "outro": "Trăng lại tròn trên núi. Bài thơ đã trọn, và câu cuối cùng là do bạn viết.",
+        "rooms": {
+          "Binnenplaats": "Sân trong",
+          "Theekamer": "Phòng trà",
+          "Keuken": "Nhà bếp",
+          "Studeerkamer": "Thư phòng",
+          "Paviljoen": "Thủy tạ",
+          "Bibliotheek": "Thư viện",
+          "Gastenkamer": "Phòng nghỉ",
+          "Kruidentuin": "Vườn thuốc",
+          "Poort": "Cổng",
+          "Voorouderhal": "Từ đường",
+          "Kruikenterras": "Thềm chum",
+          "Voorraadkamer": "Kho dự trữ"
+        },
+        "furniture": {
+          "gayageum": "đàn gayageum",
+          "kimchipot": "chum kim chi",
+          "janggu": "trống janggu",
+          "maanvaas": "bình mặt trăng",
+          "inktsteen": "nghiên mực",
+          "theetafel": "bàn trà"
+        },
+        "suspects": {
+          "Vrouwe Kang": "Phu nhân Kang",
+          "Student Sang-u": "Thư sinh Sang-u",
+          "Geneesvrouw Ok-hwa": "Y nữ Ok-hwa",
+          "Schilder Dae-ho": "Họa sĩ Dae-ho",
+          "Borduurster Yeon-i": "Thợ thêu Yeon-i",
+          "Tolk Hak-su": "Dịch quan Hak-su",
+          "Kokkin Bok-sun": "Đầu bếp Bok-sun",
+          "Marskramer Man-sik": "Người bán rong Man-sik"
+        },
+        "suspectShort": {
+          "Vrouwe Kang": "Kang",
+          "Student Sang-u": "Sang-u",
+          "Geneesvrouw Ok-hwa": "Ok-hwa",
+          "Schilder Dae-ho": "Dae-ho",
+          "Borduurster Yeon-i": "Yeon-i",
+          "Tolk Hak-su": "Hak-su",
+          "Kokkin Bok-sun": "Bok-sun",
+          "Marskramer Man-sik": "Man-sik"
+        },
+        "suspectRef": {
+          "Vrouwe Kang": "phu nhân Kang",
+          "Student Sang-u": "thư sinh Sang-u",
+          "Geneesvrouw Ok-hwa": "y nữ Ok-hwa",
+          "Schilder Dae-ho": "họa sĩ Dae-ho",
+          "Borduurster Yeon-i": "thợ thêu Yeon-i",
+          "Tolk Hak-su": "dịch quan Hak-su",
+          "Kokkin Bok-sun": "đầu bếp Bok-sun",
+          "Marskramer Man-sik": "người bán rong Man-sik"
+        }
       }
     },
     "daily": [
@@ -1599,6 +2091,54 @@
         "Người đàn ông từ biển",
         "Trang giấy từ sổ nhật ký",
         "Đêm cuối cùng trên đảo Greycape"
+      ],
+      "oceaanstomer": [
+        "Sao chổi trên boong",
+        "Bức điện không tên",
+        "Két sắt của thủ quỹ",
+        "Đêm cuối trước New York"
+      ],
+      "ryokan": [
+        "Chiếc chén trà ba trăm năm tuổi",
+        "Ánh đèn bên suối",
+        "Tiếng bước chân trong mưa",
+        "Vị khách cuối cùng của Tsukikage"
+      ],
+      "fazenda": [
+        "Bao cà phê không bao giờ tới",
+        "Dấu vết giữa những quả cà phê",
+        "Đêm sương giá",
+        "Bữa tiệc cuối cùng trên hiên nhà"
+      ],
+      "zeppelin": [
+        "Phong bì trên đại dương",
+        "Động cơ chết máy",
+        "Bước chân trên lối đi hẹp",
+        "Vòng bay cuối cùng trên Rio"
+      ],
+      "poolstation": [
+        "Chiếc ghế trống giữa mùa đông",
+        "Sợi dây trong bão tuyết",
+        "Lõi băng vỡ vụn",
+        "Đêm cuối dưới cực quang"
+      ],
+      "winterpaleis": [
+        "Quả trứng nạm ngọc trống rỗng",
+        "Dấu vết trên sân băng",
+        "Hình phản chiếu sai",
+        "Điệu valse cuối cùng của thế kỷ"
+      ],
+      "safarilodge": [
+        "Cảnh quay cuối cùng",
+        "Dấu giày bên hố nước",
+        "Khinh khí cầu thừa một người",
+        "Đêm đại di cư"
+      ],
+      "hanok": [
+        "Câu thơ thứ tư",
+        "Chum kim chi khác vị",
+        "Ánh đèn trong phòng trà",
+        "Vầng trăng cuối cùng ở Dalbit"
       ]
     },
     "medals": {
@@ -1729,6 +2269,38 @@
       "vuurtoren": [
         "Ngọn đèn lại sáng",
         "Hoàn thành mọi phần của Hải đăng Greycape"
+      ],
+      "oceaanstomer": [
+        "Cập bến New York",
+        "Hoàn thành mọi phần của SS Halcyon"
+      ],
+      "ryokan": [
+        "Suối vẫn bốc hơi",
+        "Hoàn thành mọi phần của Ryokan Tsukikage"
+      ],
+      "fazenda": [
+        "Sổ sách đã khớp",
+        "Hoàn thành mọi phần của Đồn điền Boa Esperança"
+      ],
+      "zeppelin": [
+        "Neo vào cột",
+        "Hoàn thành mọi phần của Khí cầu Cirrus"
+      ],
+      "poolstation": [
+        "Mặt trời trở lại",
+        "Hoàn thành mọi phần của Trạm Nam Thập Tự"
+      ],
+      "winterpaleis": [
+        "Thế kỷ mới",
+        "Hoàn thành mọi phần của Cung điện Zvezdin"
+      ],
+      "safarilodge": [
+        "Đàn thú lại lên đường",
+        "Hoàn thành mọi phần của Twiga Lodge"
+      ],
+      "hanok": [
+        "Bài thơ đã trọn",
+        "Hoàn thành mọi phần của Hanok Dalbit"
       ]
     },
     "quests": {
@@ -7973,6 +8545,3078 @@
           "🔆 Thấu kính Fresnel"
         ]
       ]
+    ],
+    "oceaanstomer": [
+      "Phần I · Sao chổi Halley",
+      "SS Halcyon, tháng 5 năm 1910, giữa Đại Tây Dương. Trên boong đi dạo, ai cũng đang ngắm sao chổi Halley. Trừ chủ tàu Ambrose Kingsley: ông nằm trong phòng xì gà, bên một điếu xì gà vẫn còn cháy âm ỉ.",
+      "Sao chổi khuất dần sau đường chân trời. Còn bốn ngày nữa mới tới New York, và thủ phạm đang ở trên tàu cùng bạn.",
+      "Con tàu dài và hẹp, với những cầu thang nối các tầng boong. Hãy bắt đầu với người nói rõ mình ở khu vực nào; “ngay cạnh” bánh lái chỉ tính ô sát bên, không bao giờ tính ô chéo.",
+      [
+        [
+          "Sao chổi",
+          "Lúc mười giờ, sao chổi ở ngay trên con tàu. Lúc mười giờ mười phút, chủ tàu nằm trong phòng xì gà.",
+          "☄️ Bản đồ sao"
+        ],
+        [
+          "Điếu xì gà",
+          "Điếu xì gà trong gạt tàn vẫn còn cháy âm ỉ. Chủ tàu không bao giờ hút thuốc sau bữa tối.",
+          "🚬 Xì gà Havana"
+        ],
+        [
+          "Thuyền trưởng Grant trên đài chỉ huy",
+          "Ông nói mình đứng trên đài chỉ huy suốt buổi tối. Chiếc mũ của ông lại nằm trong phòng xì gà.",
+          "🧢 Mũ thuyền trưởng"
+        ],
+        [
+          "Tiếp viên Molly đếm chìa khóa",
+          "Cô giữ chìa khóa của mọi cabin. Chùm chìa khóa của cô thiếu một chiếc.",
+          "🔑 Chìa khóa cabin"
+        ],
+        [
+          "Boong đi dạo",
+          "Hai trăm người đang ngước nhìn lên trời. Không ai nhìn về phía cửa phòng xì gà.",
+          "🪑 Ghế xếp"
+        ],
+        [
+          "Giáo sư Lund chụp ảnh",
+          "Tối hôm đó, ông chụp mười hai bức ảnh sao chổi. Bức thứ sáu còn có một người trên boong.",
+          "📷 Tấm kính ảnh"
+        ],
+        [
+          "Điện báo viên Arthur nghe đài",
+          "Anh nói lúc mười giờ mình đang đeo tai nghe trong phòng vô tuyến. Chiếc tai nghe lại treo trên móc.",
+          "🎧 Tai nghe"
+        ],
+        [
+          "Sau món tráng miệng",
+          "Sau món tráng miệng, chủ tàu nói mình mệt. Ông không về phòng suite, mà đi tới phòng xì gà.",
+          "🍽️ Thực đơn bữa tối"
+        ]
+      ]
+    ],
+    "oceaanstomer-2": [
+      "Phần II · Bức điện cuối cùng",
+      "Lúc nửa đêm, một bức điện từ New York gửi tới. Điện báo viên Arthur chép lại, nhưng không chịu nói nó gửi cho ai. Đèn trong phòng vô tuyến sáng suốt đêm.",
+      "Bức điện đã được tìm thấy. Nó không gửi cho chủ tàu, và điều đó thay đổi mọi thứ.",
+      "Trong phòng vô tuyến, điện báo viên nghe thấy mọi thứ, còn ai cũng nói về người khác. Lời khai về hai người: hãy xác định vị trí của một trong hai người trước.",
+      [
+        [
+          "Nửa đêm",
+          "Đúng mười hai giờ, máy điện báo bắt đầu kêu tích tắc. Đó là một bức điện dài bất thường.",
+          "📡 Ăng-ten"
+        ],
+        [
+          "Điện báo viên Arthur im lặng",
+          "Anh nói mình không được tiết lộ gì về các bức điện. Anh nói điều đó ba lần.",
+          "📻 Máy thu"
+        ],
+        [
+          "Mẩu giấy",
+          "Trên bàn anh có một mẩu giấy với những chữ viết dở. Trên đó có chữ “đã bán”, và chữ “New York”.",
+          "🗒️ Mẩu giấy"
+        ],
+        [
+          "Tiếp viên Molly mang trà tới",
+          "Lúc mười hai giờ rưỡi, cô mang trà tới phòng vô tuyến. Không ai gọi trà cả.",
+          "🫖 Khay trà"
+        ],
+        [
+          "Một bức điện trả lời",
+          "Lúc một giờ, một bức điện được gửi ngược về New York. Không ai biết ai đã trả tiền cho nó.",
+          "💵 Tờ đô la"
+        ],
+        [
+          "Nhà nữ quyền Harriet viết thư",
+          "Tối nào bà cũng viết một lá thư cho em gái. Đêm qua bà viết hai lá.",
+          "✉️ Giấy viết thư"
+        ],
+        [
+          "Máy trưởng Doyle đi lên",
+          "Ông nói mình không bao giờ lên trên. Lúc hai giờ, ông đứng ở cửa phòng vô tuyến.",
+          "🛢️ Bình dầu máy"
+        ],
+        [
+          "Cái tên trên bức điện",
+          "Bức điện không gửi cho chủ tàu. Nó gửi cho một người không có trong danh sách hành khách.",
+          "📜 Danh sách hành khách"
+        ]
+      ]
+    ],
+    "oceaanstomer-3": [
+      "Phần III · Bàn của thuyền trưởng",
+      "Tối nào cũng có mười hai vị khách dùng bữa ở bàn của thuyền trưởng. Thực đơn có chín món. Tối nay, sau món súp, có một chiếc ghế trống.",
+      "Món cuối cùng không bao giờ được dọn ra. Người đứng dậy sau món súp có lý do của mình, và giờ bạn biết lý do đó.",
+      "Ở bàn ăn, ai cũng có chỗ ngồi cố định, nhưng sau món súp thì ai cũng đi lại. Người nói mình KHÔNG ở đâu cũng cho bạn biết điều gì đó: hãy gạch bỏ khu vực đó ngay.",
+      [
+        [
+          "Sơ đồ chỗ ngồi",
+          "Tối nào cũng là mười hai chiếc ghế ấy. Tối nay có người đã đổi chỗ các tấm thẻ tên.",
+          "🏷️ Thẻ tên"
+        ],
+        [
+          "Thuyền trưởng Grant nâng ly",
+          "Ông nâng ly chúc chủ tàu. Ông là người duy nhất không uống cạn ly.",
+          "🥂 Ly sâm panh"
+        ],
+        [
+          "Món súp",
+          "Súp consommé trong, như mọi tối. Có một bát được mang về bếp tàu, vẫn còn nguyên.",
+          "🥣 Bát súp"
+        ],
+        [
+          "Nữ phi công Solange đến muộn",
+          "Cô đến sau món súp. Đôi găng tay của cô có mùi dầu máy.",
+          "🧤 Găng tay da"
+        ],
+        [
+          "Giáo sư Lund nói về các vì sao",
+          "Ông nói về sao chổi suốt một tiếng. Không ai nghe, trừ một vị khách.",
+          "🔭 Kính thiên văn"
+        ],
+        [
+          "Chiếc ghế trống",
+          "Sau món súp, có người ra boong hít thở không khí. Nhưng boong tàu ở hướng ngược lại.",
+          "🪑 Ghế trống"
+        ],
+        [
+          "Thợ làm mũ Edna đổi mũ",
+          "Lúc ngồi vào bàn, cô đội một chiếc mũ cắm lông đà điểu. Sau món súp, cô đội một chiếc khác.",
+          "📌 Ghim cài mũ"
+        ],
+        [
+          "Món tráng miệng",
+          "Mười hai cốc kem được mang ra bàn. Mười một cốc quay về trống rỗng, còn một cốc có chiếc chìa khóa bên trong.",
+          "🍨 Cốc kem"
+        ]
+      ]
+    ],
+    "oceaanstomer-4": [
+      "Phần IV · Sương mù",
+      "Hai ngày sương mù dày đặc. Còi hơi kêu mỗi phút một lần và không ai nhìn thấy gì quá lan can. Trong sương mù, có người đang đi lại trên boong, ở nơi mình không có việc gì.",
+      "Sương tan và còi hơi im bặt. Những gì xảy ra trong sương mù giờ đã nằm trong sổ tay của bạn.",
+      "Trong sương mù, bạn nghe được ai đang đứng cạnh mình, dù không nhìn thấy họ. Hãy đặt nghi phạm có ít lựa chọn nhất trước; phần còn lại sẽ theo sau.",
+      [
+        [
+          "Còi hơi",
+          "Mỗi phút một hồi còi dài. Lúc ba giờ, có hai hồi.",
+          "📯 Còi hơi"
+        ],
+        [
+          "Tiếp viên Molly không thấy gì",
+          "Cô cầm đèn đi dọc boong. Cô nói mình không thấy gì, nhưng có nghe thấy một tiếng động.",
+          "🏮 Đèn boong"
+        ],
+        [
+          "Chuông tàu",
+          "Khi có sương mù, chuông tàu reo mỗi nửa tiếng. Lúc hai giờ, nó im lặng.",
+          "🔔 Chuông tàu"
+        ],
+        [
+          "Máy trưởng Doyle giảm tốc",
+          "Khi có sương mù, tàu chạy chậm. Lúc ba giờ, tàu còn chạy chậm hơn nữa, dù đài chỉ huy không ra lệnh.",
+          "⚙️ Vô lăng điều tốc"
+        ],
+        [
+          "Thuyền trưởng Grant không ngủ",
+          "Suốt hai đêm, ông thức trên đài chỉ huy. Đêm thứ hai, có người khác đứng ở bánh lái.",
+          "🧭 La bàn"
+        ],
+        [
+          "Chiếc áo khoác trên lan can",
+          "Lúc bình minh, một chiếc áo khoác ướt vắt trên lan can. Không ai bị mất áo khoác cả.",
+          "🧥 Áo khoác ướt"
+        ],
+        [
+          "Nữ phi công Solange và sương mù",
+          "Cô nói phi công không bao giờ bay vào sương mù. Cô từ ngoài boong đi vào, tóc ướt sũng.",
+          "🧣 Khăn lụa"
+        ],
+        [
+          "Một con tàu khác",
+          "Trong sương mù, một con tàu khác đi ngang qua rất gần. Từ boong đuôi, có người đánh tín hiệu bằng đèn.",
+          "🔦 Đèn tín hiệu"
+        ]
+      ]
+    ],
+    "oceaanstomer-5": [
+      "Phần V · Chuỗi ngọc trai",
+      "Chuỗi ngọc trai của chủ tàu không còn trong két sắt của thủ quỹ. Nó từng thuộc về người vợ quá cố của ông. Tàu không thể ghé cảng nào, nên chuỗi ngọc vẫn còn trên tàu.",
+      "Chuỗi ngọc trai đã trở lại két sắt, chỉ thiếu một viên. Viên ngọc đó chỉ về phía phòng xì gà.",
+      "Sau một vụ trộm, ai cũng nói mình ở một mình. Hãy bắt đầu với người nói không ai ở cùng khu vực với mình: mọi người khác bị loại khỏi khu vực đó ngay lập tức.",
+      [
+        [
+          "Két sắt của thủ quỹ",
+          "Két sắt vẫn khóa, như mọi khi. Vậy mà chuỗi ngọc trai đã biến mất.",
+          "🔐 Cửa két sắt"
+        ],
+        [
+          "Tiếp viên Molly và chiếc chìa khóa",
+          "Chỉ thủ quỹ có chìa khóa két sắt. Molly biết ban đêm ông cất nó ở đâu.",
+          "🗝️ Chìa khóa két"
+        ],
+        [
+          "Hộp mũ",
+          "Hộp mũ thì đựng mũ. Chiếc hộp này còn đựng cả một chuỗi ngọc trai.",
+          "👒 Hộp mũ"
+        ],
+        [
+          "Thợ làm mũ Edna biết giá",
+          "Cô nói mình bán mũ, không bán trang sức. Vậy mà cô biết chính xác một viên ngọc trai giá bao nhiêu.",
+          "🔍 Kính lúp kim hoàn"
+        ],
+        [
+          "Nhà nữ quyền Harriet ở két sắt",
+          "Bà là người duy nhất có tên trong danh sách gửi đồ vào két. Bà nói mình mang truyền đơn đến cất.",
+          "📄 Truyền đơn"
+        ],
+        [
+          "Một viên ngọc",
+          "Dưới giường trong phòng suite có một viên ngọc trai. Chuỗi ngọc thì vẫn chưa thấy đâu.",
+          "⚪ Viên ngọc rời"
+        ],
+        [
+          "Điện báo viên Arthur đã biết trước",
+          "Lúc tám giờ, thủ quỹ phát hiện vụ trộm. Lúc bảy giờ, Arthur đã đánh điện báo tin đó về New York.",
+          "📨 Bức điện"
+        ],
+        [
+          "Giáo sư Lund cân hàng",
+          "Ông cân từng thùng kính ảnh. Có một thùng nặng hơn hôm qua.",
+          "⚖️ Cái cân"
+        ]
+      ]
+    ],
+    "oceaanstomer-6": [
+      "Phần VI · Dạ vũ",
+      "Trong phòng dạ vũ, người ta nhảy valse đến tận khuya. Dàn nhạc chơi nhạc Strauss và ai cũng diện bộ đẹp nhất. Có một người cứ liên tục đổi bạn nhảy.",
+      "Dàn nhạc thu dọn nhạc cụ và phòng dạ vũ trống trơn. Người cứ đổi bạn nhảy giờ không đổi nữa.",
+      "Ở buổi dạ vũ, ai cũng xoay tròn và không ai đứng yên. Lời khai ngày càng dè sẻn: hãy dùng bút chì, gạch bỏ những ô không phù hợp, rồi xem còn lại gì.",
+      [
+        [
+          "Điệu valse đầu tiên",
+          "Dàn nhạc chơi điệu valse đầu tiên dành cho chủ tàu. Không ai biết làm vậy có phải phép không.",
+          "🎻 Vĩ cầm"
+        ],
+        [
+          "Nữ phi công Solange khiêu vũ",
+          "Cô nhảy với thuyền trưởng, giáo sư và điện báo viên. Cô chỉ nói chuyện với điện báo viên.",
+          "💃 Thẻ khiêu vũ"
+        ],
+        [
+          "Sổ khiêu vũ",
+          "Quý bà nào cũng có một cuốn sổ khiêu vũ. Một cuốn ghi đi ghi lại cùng một cái tên, bằng ba nét chữ khác nhau.",
+          "📒 Sổ khiêu vũ"
+        ],
+        [
+          "Thuyền trưởng Grant không khiêu vũ",
+          "Suốt bốn mươi năm, ông khiêu vũ ở mọi buổi dạ vũ. Tối nay, ông ngồi cạnh cửa suốt buổi.",
+          "🎖️ Huân chương"
+        ],
+        [
+          "Máy trưởng Doyle mặc đuôi tôm",
+          "Chưa ai từng thấy ông mặc gì khác ngoài bộ đồ bảo hộ. Tối nay, ông mặc một bộ lễ phục đuôi tôm vừa như in.",
+          "🤵 Áo đuôi tôm"
+        ],
+        [
+          "Đèn tắt",
+          "Trong điệu valse cuối cùng, đèn tắt. Khi đèn sáng lại, có người đã đeo một đôi găng tay khác.",
+          "💡 Bóng đèn"
+        ],
+        [
+          "Tiếp viên Molly dọn dẹp",
+          "Sau buổi dạ vũ, cô tìm thấy một chai sâm panh rỗng sau tấm rèm. Và một bản vẽ khoang hàng.",
+          "🍾 Chai sâm panh"
+        ],
+        [
+          "Điệu nhảy cuối cùng",
+          "Lúc ba giờ, vẫn còn một cặp đang nhảy. Người đàn ông im lặng; người phụ nữ đếm từng bước.",
+          "👠 Giày khiêu vũ"
+        ]
+      ]
+    ],
+    "oceaanstomer-7": [
+      "Phần VII · Khoang hạng ba",
+      "Trong khoang hạng ba, năm trăm người di cư đang đi tới một cuộc đời mới. Họ ngủ thành những dãy dài, vali để dưới giường. Một người trong số họ đã thấy điều gì đó vào đêm có sao chổi.",
+      "Ở khoang hạng ba, người ta lại cất tiếng hát. Điều cậu bé đã thấy giờ nằm trong báo cáo của Van Dam.",
+      "Bàn chơi lớn hơn, còn con tàu thì đông hơn. Nếu báo cáo nói một khu vực bỏ trống, thì cả khu vực đó bị loại đối với mọi người.",
+      [
+        [
+          "Năm trăm chiếc giường",
+          "Ở khoang hạng ba, năm trăm người ngủ chung một khoang. Không ai thật sự ngủ được.",
+          "🛏️ Giường tầng"
+        ],
+        [
+          "Nhân chứng",
+          "Một cậu bé từ Napoli thấy có người đi xuống cầu thang đêm đó. Cậu không biết đó là ai, nhưng biết đó là đôi giày nào.",
+          "👞 Giày da bóng"
+        ],
+        [
+          "Nhà nữ quyền Harriet dạy học",
+          "Bà dạy tiếng Anh cho những người phụ nữ ở khoang hạng ba. Câu đầu tiên là: Tôi muốn có luật sư.",
+          "📚 Sách vỡ lòng"
+        ],
+        [
+          "Tiếp viên Molly mang chăn xuống",
+          "Khách hạng nhất không bao giờ xuống khoang hạng ba. Molly thì có, đêm nào cũng xuống, với một chồng chăn.",
+          "🧺 Giỏ chăn"
+        ],
+        [
+          "Thừa một chiếc vali",
+          "Mỗi người di cư có một chiếc vali. Dưới một chiếc giường lại có hai.",
+          "🧳 Vali"
+        ],
+        [
+          "Máy trưởng Doyle biết cầu thang",
+          "Có một cầu thang sắt chạy từ phòng máy lên khoang hạng ba. Chỉ thợ đốt lò mới biết nó.",
+          "🪜 Cầu thang sắt"
+        ],
+        [
+          "Điện báo viên Arthur tìm người",
+          "Anh dò hỏi ở khoang hạng ba về một người đàn ông. Người đó không có trong danh sách.",
+          "📋 Danh sách người di cư"
+        ],
+        [
+          "Điều cậu bé đã thấy",
+          "Cậu lại thấy đôi giày ấy một lần nữa, trong phòng ăn. Cậu chỉ tay vào nó, rồi im bặt.",
+          "🧢 Mũ của cậu bé"
+        ]
+      ]
+    ],
+    "oceaanstomer-8": [
+      "Phần VIII · Ánh đèn New York",
+      "Đường chân trời New York hiện ra. Ngày mai Halcyon sẽ cập bến. Còn một đêm nữa trên tàu để khép lại vụ án.",
+      "Van Dam đội mũ, là người cuối cùng xuống cầu thang tàu rồi biến mất vào đám đông trên bến. Halcyon cập cảng New York. Cảnh sát đang chờ trên bến, và bạn biết họ chờ ai.",
+      "Những vụ án cuối cùng, gần như đều trên bàn chơi lớn. Đừng sa lầy vào người khó nhất: hãy đặt những người khác trước, khi đó người cuối cùng thường chỉ còn đúng một ô.",
+      [
+        [
+          "Đã thấy đất liền",
+          "Lúc sáu giờ, người canh gác thấy ánh đèn đầu tiên của Long Island. Ai cũng xếp đồ vào rương; chỉ một hành khách lấy đồ ra.",
+          "🗽 Bưu thiếp"
+        ],
+        [
+          "Thuyền trưởng Grant viết báo cáo",
+          "Chuyến vượt biển cuối cùng, bản báo cáo cuối cùng của ông. Về đêm có sao chổi, ông chỉ viết một dòng.",
+          "📘 Nhật ký hải trình"
+        ],
+        [
+          "Nữ phi công Solange muốn lên bờ",
+          "Cô muốn là người đầu tiên lên bờ, để kịp buổi trình diễn bay. Giấy tờ của cô mang một cái tên khác.",
+          "🛂 Hộ chiếu"
+        ],
+        [
+          "Giáo sư Lund tráng ảnh",
+          "Trong cabin, ông tráng tấm kính ảnh cuối cùng. Sau cửa sổ phòng xì gà có một khuôn mặt.",
+          "🧪 Thuốc tráng ảnh"
+        ],
+        [
+          "Thợ làm mũ Edna xếp đồ",
+          "Mười hai hộp mũ được mang lên tàu ở Southampton. Mười ba hộp sẽ được mang lên bờ.",
+          "🎀 Ruy băng mũ"
+        ],
+        [
+          "Điện báo viên Arthur kết thúc ca trực",
+          "Bức điện cuối cùng của anh gửi cho cảnh sát cảng. Anh chỉ gửi một cái tên.",
+          "⚡ Máy phát tia lửa"
+        ],
+        [
+          "Máy trưởng Doyle lên boong",
+          "Trước cửa cảng, ông cho dừng máy. Lần đầu tiên sau năm ngày, ông lên boong giữa ban ngày.",
+          "🔧 Cờ lê"
+        ],
+        [
+          "Phòng xì gà",
+          "Nơi mọi chuyện bắt đầu, trong phòng xì gà. Cũng là nơi mọi chuyện kết thúc.",
+          "📦 Hộp xì gà"
+        ]
+      ]
+    ],
+    "ryokan": [
+      "Phần I · Hoa anh đào",
+      "Ryokan Tsukikage, trên những ngọn đồi gần Kyoto, tháng 4 năm 1925. Hoa anh đào đang nở và mọi phòng đều kín khách. Chủ quán Genzo Kurata không đến uống trà sáng. Ông nằm trong trà thất, bên một chiếc chén vẫn còn ấm.",
+      "Cánh hoa rơi trên lớp rêu. Khách trọ ở lại cho đến khi cảnh sát từ Kyoto tới.",
+      "Ryokan là một mê cung những cửa trượt và hành lang. Hãy bắt đầu với người nói rõ mình ở khu vực nào; “ngay cạnh” đèn lồng đá chỉ tính ô sát bên, không bao giờ tính ô chéo.",
+      [
+        [
+          "Trà sáng",
+          "Sáng nào chủ quán cũng uống trà trong trà thất lúc sáu giờ. Sáng nay, trà đã nguội.",
+          "🍵 Trà sáng"
+        ],
+        [
+          "Nữ quản lý Fumiko tìm thấy ông",
+          "Bà là người đầu tiên tìm thấy ông. Đôi dép của bà đã đặt sẵn trước cửa trà thất.",
+          "🚪 Cửa trượt"
+        ],
+        [
+          "Hoa trên chiếu",
+          "Trên chiếu tatami có những cánh hoa anh đào. Cây anh đào ấy ở tận phía bên kia khu vườn.",
+          "🌸 Cánh hoa anh đào"
+        ],
+        [
+          "Đầu bếp Takeshi nấu ăn",
+          "Ông nói mình ở trong nhà bếp từ bốn giờ. Lửa dưới nồi cơm đến năm giờ rưỡi mới được nhóm.",
+          "🍚 Nồi cơm"
+        ],
+        [
+          "Đèn lồng đá",
+          "Chiếc đèn lồng trong vườn cháy suốt đêm. Đêm qua, nó tắt lúc ba giờ.",
+          "🕯️ Mẩu nến"
+        ],
+        [
+          "Nhiếp ảnh gia Sachiko lúc bình minh",
+          "Cô chụp hoa anh đào lúc trời vừa hửng sáng. Trong ảnh của cô, cửa trà thất đang mở.",
+          "📷 Máy ảnh xếp"
+        ],
+        [
+          "Sổ khách",
+          "Vị khách nào cũng ghi tên vào sổ. Đêm qua, có người đã ghi tên mình hai lần.",
+          "📖 Sổ khách"
+        ],
+        [
+          "Kỹ sư Isamu đến sớm",
+          "Anh có hẹn với chủ quán lúc bảy giờ. Anh đến lúc sáu giờ rưỡi, mang theo một bản hợp đồng.",
+          "📃 Hợp đồng"
+        ]
+      ]
+    ],
+    "ryokan-2": [
+      "Phần II · Trà đạo",
+      "Trà sư Chiyo tổ chức một buổi trà đạo để tưởng nhớ chủ quán. Bốn vị khách quỳ trong trà thất. Mọi động tác đều có phép tắc, vậy mà có người đặt chén sai chỗ.",
+      "Buổi trà đạo đã xong và chén đã được rửa sạch. Có một chiếc chén đặt sai suốt từ đầu, và bạn biết vì sao.",
+      "Trong trà thất, ai cũng có chỗ quỳ cố định. Lời khai về hai người: hãy xác định vị trí của một trong hai người trước.",
+      [
+        [
+          "Bốn vị khách, năm chiếc chén",
+          "Buổi trà đạo có bốn vị khách. Vậy mà có năm chiếc chén được bày ra.",
+          "🥣 Chiếc chén thứ năm"
+        ],
+        [
+          "Trà sư Chiyo đánh trà",
+          "Suốt bốn mươi năm, bà đánh trà bằng cùng một chiếc chổi tre. Hôm nay bà dùng một chiếc mới.",
+          "🎋 Chổi đánh trà"
+        ],
+        [
+          "Ấm sắt",
+          "Nước sôi trong chiếc ấm sắt. Có người đã đổ vào đó nước lấy từ suối nước nóng.",
+          "🫖 Ấm sắt"
+        ],
+        [
+          "Thợ khắc gỗ Hiroshi vẽ phác",
+          "Ông vẽ phác buổi trà đạo. Bức phác họa có một người không hề ở bên trong.",
+          "✏️ Sổ phác họa"
+        ],
+        [
+          "Xoay chén",
+          "Trước khi uống, phải xoay chén hai lần. Một vị khách đã xoay ba lần.",
+          "🏺 Chén raku"
+        ],
+        [
+          "Nhà thực vật học Evelyn biết phép tắc",
+          "Bà nói mình chưa từng dự một buổi trà đạo nào. Vậy mà bà quỳ đúng tư thế mà không cần ai chỉ.",
+          "👘 Kimono"
+        ],
+        [
+          "Bánh ngọt",
+          "Uống trà phải kèm một chiếc bánh ngọt. Có một chiếc đĩa nhỏ không có bánh.",
+          "🍡 Bánh dango"
+        ],
+        [
+          "Nữ quản lý Fumiko không rót nước",
+          "Suốt hai mươi năm, bà rót nước cho chủ quán. Bà nói sáng nay, lần đầu tiên, bà không rót.",
+          "🫗 Bình nước"
+        ]
+      ]
+    ],
+    "ryokan-3": [
+      "Phần III · Chiếc chén trà quý",
+      "Trong hốc tường của phòng nghỉ có một chiếc chén trà ba trăm năm tuổi. Đó là niềm tự hào của ryokan. Sáng nay, hốc tường trống trơn.",
+      "Chiếc chén trà đã trở về hốc tường, nguyên vẹn và sạch sẽ. Chủ quán chưa bao giờ muốn bán nó, và có người biết điều đó.",
+      "Ai cũng biết chiếc chén từng đặt ở đâu, và ai cũng nói mình KHÔNG ở đâu. Người nói mình KHÔNG ở đâu cũng cho bạn biết điều gì đó: hãy gạch bỏ khu vực đó ngay.",
+      [
+        [
+          "Hốc tường trống",
+          "Suốt ba trăm năm, chiếc chén nằm trong hốc tường. Sáng nay, ở đó chỉ có một bông hoa.",
+          "🌼 Bông hoa"
+        ],
+        [
+          "Nữ quản lý Fumiko phủi bụi",
+          "Ngày nào bà cũng phủi bụi hốc tường. Hôm qua, bà để một vị khách làm việc đó.",
+          "🪶 Chổi lông"
+        ],
+        [
+          "Chiếc hộp có dây buộc",
+          "Chiếc chén được cất trong một chiếc hộp gỗ buộc dây. Hộp vẫn còn đó; dây thì được thắt theo kiểu khác.",
+          "📦 Hộp gỗ"
+        ],
+        [
+          "Kỹ sư Isamu ra giá",
+          "Anh muốn trả cho chủ quán cả một gia tài để mua chiếc chén. Chủ quán đã cười vào mặt anh.",
+          "💴 Tờ tiền yên"
+        ],
+        [
+          "Nhiếp ảnh gia Sachiko và chiếc chén",
+          "Cô chụp chiếc chén cho tạp chí của mình. Trong ảnh, chiếc chén có một vết nứt mà giờ không còn nữa.",
+          "🖼️ Bản in ảnh"
+        ],
+        [
+          "Nhà thực vật học Evelyn gửi bưu kiện",
+          "Bà gửi hoa khô về London. Bưu kiện của bà nặng một cách lạ, nếu chỉ đựng hoa.",
+          "🗃️ Hộp tiêu bản"
+        ],
+        [
+          "Thợ khắc gỗ Hiroshi sao chép",
+          "Ông làm tranh in về những đồ vật cổ. Trong phòng ông có một bản khắc gỗ hình chiếc chén.",
+          "🪵 Bản khắc gỗ"
+        ],
+        [
+          "Hai chiếc chén",
+          "Trong nhà bếp có hai chiếc chén giống hệt nhau. Một trong hai chiếc đã ba trăm năm tuổi.",
+          "🔍 Kính lúp"
+        ]
+      ]
+    ],
+    "ryokan-4": [
+      "Phần IV · Suối nước nóng",
+      "Nước nóng của suối dành cho khách trọ. Lúc nửa đêm, cổng đóng lại. Vậy mà lúc ba giờ sáng, bên suối vẫn có một ngọn đèn sáng.",
+      "Sáng ra, suối lại lặng lẽ bốc hơi. Ngọn đèn lúc ba giờ không phải là nhầm lẫn.",
+      "Trong hơi nước của suối nóng, bạn không thấy rõ ai, nhưng nghe được ai đang ngồi cạnh mình. Hãy đặt nghi phạm có ít lựa chọn nhất trước; phần còn lại sẽ theo sau.",
+      [
+        [
+          "Ngọn đèn lúc ba giờ",
+          "Suối đóng cửa lúc nửa đêm. Lúc ba giờ, có một ngọn đèn đang cháy.",
+          "🏮 Đèn giấy"
+        ],
+        [
+          "Người làm vườn Goro khóa cổng",
+          "Tối nào ông cũng đóng cổng ra suối. Đêm qua, cổng khép hờ.",
+          "⛓️ Xích cổng"
+        ],
+        [
+          "Những chậu gỗ",
+          "Bên suối có mười chậu gỗ, úp ngay ngắn. Một chậu lại dựng ngửa, đầy nước.",
+          "🪣 Chậu gỗ"
+        ],
+        [
+          "Đầu bếp Takeshi không ngâm suối",
+          "Xong việc, ông luôn ngâm mình trong suối. Ông nói đêm qua thì không; đêm qua ông mệt.",
+          "🍶 Bình sake"
+        ],
+        [
+          "Khăn ướt",
+          "Trong phòng tắm có ba chiếc khăn ướt. Chỉ có hai vị khách đã xuống suối.",
+          "🧺 Khăn ướt"
+        ],
+        [
+          "Kỹ sư Isamu đo nước",
+          "Anh nói mình đang đo nhiệt độ của suối. Để xây một khách sạn suối khoáng cạnh nhà ga mới.",
+          "🌡️ Nhiệt kế nước tắm"
+        ],
+        [
+          "Một chiếc guốc",
+          "Trên lối đi ra suối có một chiếc guốc gỗ. Chiếc còn lại nằm cạnh bến thuyền.",
+          "🩴 Chiếc guốc geta"
+        ],
+        [
+          "Trong hơi nước",
+          "Trong hơi nước, không ai thấy ai đang ngồi đó. Nhưng ai cũng nghe thấy một người đứng dậy và bỏ đi.",
+          "🧼 Bánh xà phòng"
+        ]
+      ]
+    ],
+    "ryokan-5": [
+      "Phần V · Rừng tre",
+      "Phía sau ryokan là một rừng tre. Ở đó lúc nào cũng xào xạc, kể cả khi không có gió. Kỹ sư Isamu muốn làm một tuyến đường sắt xuyên qua nó.",
+      "Rừng tre lại xào xạc như thường. Sẽ không có đường sắt nào chạy qua đó, và tấm bản đồ của kỹ sư đã nằm trong lò.",
+      "Giữa những thân tre, bạn chỉ thấy người đứng ngay cạnh mình. Hãy bắt đầu với người nói không ai ở cùng khu vực với mình: mọi người khác bị loại khỏi khu vực đó ngay lập tức.",
+      [
+        [
+          "Xào xạc không gió",
+          "Trong vườn không có gió. Vậy mà rừng tre vẫn xào xạc.",
+          "🎋 Thân tre"
+        ],
+        [
+          "Kỹ sư Isamu cắm cọc",
+          "Anh cắm những chiếc cọc trắng để đánh dấu tuyến đường sắt. Sáng nay, chúng đã dịch xa thêm một mét.",
+          "📍 Cọc trắc địa"
+        ],
+        [
+          "Người làm vườn Goro tỉa tre",
+          "Ông đã tỉa tre suốt năm mươi năm. Thân tre này bị cưa hôm qua, và không phải do ông.",
+          "🪚 Cái cưa"
+        ],
+        [
+          "Bản đồ đường sắt",
+          "Trên bản đồ, ryokan nằm chắn ngay giữa đường. Có người đã khoanh một vòng đỏ quanh nó.",
+          "🗺️ Bản đồ"
+        ],
+        [
+          "Nhiếp ảnh gia Sachiko bị lạc",
+          "Cô muốn chụp ánh sáng giữa những thân tre. Hai tiếng sau cô mới quay về, không có tấm ảnh nào.",
+          "🎞️ Cuộn phim"
+        ],
+        [
+          "Lối ra bến thuyền",
+          "Một lối mòn hẹp chạy xuyên rừng tre ra tới sông. Rêu trên lối đi bị giẫm nát.",
+          "🍃 Rêu bị giẫm"
+        ],
+        [
+          "Nhà thực vật học Evelyn sưu tầm",
+          "Bà sưu tầm tre cho một nhà kính ở London. Trong hộp thiếc của bà còn có một tờ giấy cuộn tròn.",
+          "🫙 Hộp thiếc"
+        ],
+        [
+          "Thợ khắc gỗ Hiroshi vẽ rừng tre",
+          "Bức tranh in rừng tre của ông có một người cầm ô giấy. Ông nói đó là chi tiết mình tự nghĩ ra.",
+          "🌂 Ô giấy"
+        ]
+      ]
+    ],
+    "ryokan-6": [
+      "Phần VI · Mùa mưa",
+      "Ba tuần mưa. Không ai ra ngoài và khách trọ ngồi sát bên nhau. Vậy mà sáng nào hành lang cũng có dấu chân ướt.",
+      "Mưa tạnh và hành lang đã khô. Những dấu chân ướt là của một người đêm nào cũng đi ra bến thuyền.",
+      "Khi trời mưa, ai cũng ngồi trong nhà và ai cũng nói gần như cùng một điều. Lời khai ngày càng dè sẻn: hãy dùng bút chì, gạch bỏ những ô không phù hợp, rồi xem còn lại gì.",
+      [
+        [
+          "Ba tuần mưa",
+          "Trời mưa từ hôm thứ Ba. Khu vườn đã thành một cái ao.",
+          "☔ Chiếc ô"
+        ],
+        [
+          "Dấu chân ướt",
+          "Sáng nào hành lang cũng có dấu chân ướt. Chúng từ ngoài vào và đi tới nhà bếp.",
+          "🧦 Tất ướt"
+        ],
+        [
+          "Nữ quản lý Fumiko đếm ô",
+          "Cạnh cửa có mười chiếc ô giấy. Sáng nào cũng có một chiếc bị ướt.",
+          "🧮 Bàn tính"
+        ],
+        [
+          "Đầu bếp Takeshi phơi cá",
+          "Khi trời mưa, ông phơi cá trong kho dự trữ. Hôm qua, ở đó còn treo một chiếc áo khoác ướt.",
+          "🐟 Cá khô"
+        ],
+        [
+          "Nhà thực vật học Evelyn viết thư",
+          "Ngày nào bà cũng viết thư về London. Thư không được gửi đi, và một lá thư của bà đã bị bóc.",
+          "✉️ Lá thư"
+        ],
+        [
+          "Tấm nệm futon ngoài hành lang",
+          "Một vị khách ngủ trên nệm futon ngoài hành lang, vì phòng của ông bị dột. Phòng của ông không hề dột.",
+          "🛏️ Nệm futon"
+        ],
+        [
+          "Kỹ sư Isamu muốn đi",
+          "Mưa thế này, tàu đi Kyoto không chạy. Ngày nào anh cũng nói muốn đi, rồi lại ở lại.",
+          "🎫 Vé tàu"
+        ],
+        [
+          "Người làm vườn Goro đào rãnh",
+          "Khi trời mưa, ông đào rãnh cho nước thoát đi. Có một rãnh chạy ra bến thuyền, nơi không nên có rãnh nào.",
+          "⛏️ Cuốc chim"
+        ]
+      ]
+    ],
+    "ryokan-7": [
+      "Phần VII · Lễ ngắm trăng",
+      "Trời đã vào thu và trăng tròn. Khách trọ ngồi trên hiên với bánh gạo và rượu sake. Ai cũng ngắm trăng trên sông, trừ một vị khách.",
+      "Trăng lặn sau núi. Vị khách không ngước lên nhìn trăng đã dõi theo trà thất.",
+      "Bàn chơi lớn hơn, nhưng đêm nay sáng trăng. Nếu báo cáo nói một khu vực bỏ trống, thì cả khu vực đó bị loại đối với mọi người.",
+      [
+        [
+          "Con thuyền không đèn",
+          "Lúc chín giờ, trăng ở trên sông. Lúc mười giờ, có một con thuyền đậu ở bến, không thắp đèn.",
+          "🛶 Thuyền chèo"
+        ],
+        [
+          "Mười lăm chiếc bánh",
+          "Mười lăm chiếc bánh gạo trên đĩa, đúng như lệ. Chỉ còn mười bốn chiếc.",
+          "🍘 Bánh gạo"
+        ],
+        [
+          "Trà sư Chiyo làm thơ",
+          "Bà làm một bài thơ về trăng. Trong đó có một điều chỉ thủ phạm mới có thể biết.",
+          "🖌️ Bút lông"
+        ],
+        [
+          "Thợ khắc gỗ Hiroshi khắc trăng",
+          "Năm nào ông cũng khắc mặt trăng lên gỗ. Năm nay ông khắc cả trà thất, bên trong có ánh đèn.",
+          "🎨 Nghiên mực"
+        ],
+        [
+          "Rượu sake",
+          "Đầu bếp Takeshi rót sake cho mọi người. Có một chén vẫn còn đầy.",
+          "🍶 Chén sake"
+        ],
+        [
+          "Nữ quản lý Fumiko và chiếc chìa khóa",
+          "Ngày lễ ngắm trăng, bà mặc bộ kimono đẹp nhất. Trong tay áo là chìa khóa trà thất.",
+          "🗝️ Chìa khóa trà thất"
+        ],
+        [
+          "Nhiếp ảnh gia Sachiko và mặt trăng",
+          "Chụp một bức ảnh trăng mất trọn một phút. Trong phút ấy, có người đi ngang qua khung hình.",
+          "📸 Ảnh mặt trăng"
+        ],
+        [
+          "Người không ngước lên",
+          "Ai cũng ngắm trăng. Có một vị khách nhìn trà thất tối om suốt buổi tối.",
+          "🌕 Trăng rằm"
+        ]
+      ]
+    ],
+    "ryokan-8": [
+      "Phần VIII · Tuyết đầu mùa",
+      "Tuyết đầu mùa rơi trên rêu và đèn lồng được thắp sớm. Ngày mai, đường đi Kyoto sẽ đóng. Còn một buổi tối nữa ở ryokan, với những vị khách như hồi mùa xuân.",
+      "Van Dam thắt khăn quàng, cúi chào bà quản lý rồi đi qua tuyết ra ga. Tuyết phủ kín khu vườn và suối nước nóng bốc hơi. Mọi vị khách đều được về nhà, trừ một người.",
+      "Những vụ án cuối cùng, gần như đều trên bàn chơi lớn. Đừng sa lầy vào người khó nhất: hãy đặt những người khác trước, khi đó người cuối cùng thường chỉ còn đúng một ô.",
+      [
+        [
+          "Tuyết trên rêu",
+          "Người làm vườn Goro phủ rơm lên rêu. Dưới lớp rơm có một thứ không mọc lên từ đất.",
+          "🌾 Rơm"
+        ],
+        [
+          "Chuyến tàu cuối cùng",
+          "Ngày mai có chuyến tàu cuối cùng đi Kyoto. Có tám vị khách và bảy tấm vé.",
+          "🚂 Lịch tàu chạy"
+        ],
+        [
+          "Đầu bếp Takeshi nấu bữa chia tay",
+          "Ông nấu bữa tối cuối cùng của năm. Riêng với một vị khách, ông nấu món khác.",
+          "🍲 Món hầm"
+        ],
+        [
+          "Nhà thực vật học Evelyn xếp đồ",
+          "Bà mang mười hai gói hạt giống về London. Có một gói kêu lạch cạch.",
+          "🌱 Gói hạt giống"
+        ],
+        [
+          "Kỹ sư Isamu vẽ lại",
+          "Trên tấm bản đồ mới của anh, đường sắt chạy vòng qua ryokan chứ không xuyên qua. Anh đã vẽ lại từ hồi mùa xuân.",
+          "📐 Ê-ke"
+        ],
+        [
+          "Nữ quản lý Fumiko gấp sổ",
+          "Bà gấp cuốn sổ khách của năm nay lại. Trang đầu tiên có một cái tên do chính bà ghi vào.",
+          "📕 Sổ đăng ký khách"
+        ],
+        [
+          "Trà sư Chiyo pha chén trà cuối",
+          "Buổi trà đạo cuối cùng của năm, dành cho mọi vị khách. Bà đặt chiếc chén cổ xuống và quan sát xem ai giật mình.",
+          "🍵 Chén trà cuối"
+        ],
+        [
+          "Trà thất",
+          "Nơi mọi chuyện bắt đầu, trong trà thất. Cũng là nơi mọi chuyện kết thúc.",
+          "🎐 Chuông gió"
+        ]
+      ]
+    ],
+    "fazenda": [
+      "Phần I · Tiệc mừng vụ mùa",
+      "Đồn điền Boa Esperança, São Paulo, tháng 6 năm 1926. Vụ thu hoạch đã xong và sân phơi đầy quả cà phê. Ông trùm cà phê Augusto Valadares không đến dự tiệc mừng vụ mùa. Ông nằm trong xưởng rang, giữa những bao cà phê.",
+      "Bữa tiệc bị hủy. Người hái cà phê về nhà, nhưng các vị khách ở lại đồn điền cho đến khi cảnh sát từ Campinas tới.",
+      "Ở đồn điền, các ngôi nhà nằm cách xa nhau, nhưng trong bữa tiệc thì ai cũng đứng gần nhau. Hãy bắt đầu với người nói rõ mình ở khu vực nào; “ngay cạnh” cối xay cà phê chỉ tính ô sát bên, không bao giờ tính ô chéo.",
+      [
+        [
+          "Tiệc mừng vụ mùa",
+          "Sân phơi được giăng đèn. Ông trùm cà phê sẽ phát biểu lúc tám giờ.",
+          "💡 Đèn trang trí"
+        ],
+        [
+          "Trong xưởng rang",
+          "Ông nằm giữa những bao cà phê, trong hơi nóng của lò rang. Lẽ ra lò đã phải tắt.",
+          "🔥 Lò rang"
+        ],
+        [
+          "Dona Celeste chờ đợi",
+          "Lúc tám giờ, cô đã sẵn sàng nghe cha phát biểu. Lúc tám giờ mười lăm, cô đi tìm ông.",
+          "📄 Bài phát biểu"
+        ],
+        [
+          "Quản lý Joaquim trả lương",
+          "Trong bữa tiệc, người hái cà phê được nhận lương. Các phong bì lương đã để sẵn, chỉ thiếu một phong bì.",
+          "💰 Phong bì lương"
+        ],
+        [
+          "Con vẹt",
+          "Con vẹt trên hiên nhà lúc nào cũng gọi tên ông chủ. Tối nay, nó gọi một cái tên khác.",
+          "🦜 Con vẹt"
+        ],
+        [
+          "Nghệ sĩ piano Zélia biểu diễn",
+          "Cô nói mình chơi đàn trên hiên nhà suốt buổi tối. Lúc bảy giờ rưỡi, tiếng đàn im bặt.",
+          "🎹 Đàn piano"
+        ],
+        [
+          "Người thu mua Mulder tính toán",
+          "Ông đến để mua cả vụ mùa. Trong sổ tay của ông đã có sẵn giá, từ trước khi thu hoạch.",
+          "📒 Sổ ghi giá"
+        ],
+        [
+          "Cô giáo Giulia và lũ trẻ",
+          "Cô cho lũ trẻ đi ngủ lúc tám giờ. Một đứa nói trong xưởng rang có ánh đèn.",
+          "🖍️ Tranh vẽ của trẻ"
+        ]
+      ]
+    ],
+    "fazenda-2": [
+      "Phần II · Sân phơi",
+      "Trên sân phơi, quả cà phê được trải thành những hàng dài dưới nắng. Ngày nào chúng cũng được đảo bằng cào gỗ. Đêm qua, có người đã kéo một vệt xuyên qua chúng.",
+      "Quả cà phê lại nằm thẳng hàng. Vệt kéo chạy từ sân phơi tới nhà kho, rồi quay lại.",
+      "Trên sân phơi, ai cũng làm việc theo hàng và ai cũng nhìn thấy người khác. Lời khai về hai người: hãy xác định vị trí của một trong hai người trước.",
+      [
+        [
+          "Vệt kéo",
+          "Có một vệt chạy xuyên qua đám quả cà phê. Nó quá hẹp để là vết xe bò.",
+          "🛞 Bánh xe cút kít"
+        ],
+        [
+          "Những chiếc cào gỗ",
+          "Đồn điền có mười chiếc cào. Chín chiếc dựng sát tường.",
+          "🧹 Cào gỗ"
+        ],
+        [
+          "Quản lý Joaquim đảo cà phê",
+          "Suốt ba mươi năm, ông đảo quả cà phê từ bắc xuống nam. Hôm qua, có người đã đảo theo chiều ngược lại.",
+          "🧭 Hoa gió"
+        ],
+        [
+          "Nhà nông học Hideo đo độ ẩm",
+          "Ngày nào anh cũng đo xem quả cà phê đã khô đến đâu. Hôm qua anh ghi một con số không thể đúng.",
+          "📏 Máy đo độ ẩm"
+        ],
+        [
+          "Sắp có mưa",
+          "Khi trời mưa, phải đưa quả cà phê vào trong. Lúc hai giờ, có người rung chuông, dưới bầu trời quang đãng.",
+          "🔔 Chuông báo động"
+        ],
+        [
+          "Người nếm cà phê Bento nếm thử",
+          "Ông nếm quả cà phê khi chúng còn trên sân phơi. Ông nói hàng cạnh nhà kho có vị khác.",
+          "🫘 Hạt cà phê"
+        ],
+        [
+          "Bác sĩ Lúcia đến muộn",
+          "Bà đến vào lúc tối muộn, để khám cho một người hái cà phê bị ốm. Không có người hái cà phê nào bị ốm cả.",
+          "🩺 Ống nghe"
+        ],
+        [
+          "Nước quả trên tay nắm",
+          "Trên cửa nhà kho có nước của quả cà phê tươi. Trên tay nắm cửa cũng có.",
+          "🍒 Quả cà phê"
+        ]
+      ]
+    ],
+    "fazenda-3": [
+      "Phần III · Lễ hội tháng Sáu",
+      "Hôm nay là lễ Thánh João. Một đống lửa lớn cháy giữa sân và cờ nhỏ treo khắp nơi. Trong điệu quadrille, có một người nhảy thiếu bạn nhảy.",
+      "Đống lửa tàn và những lá cờ nhỏ được gỡ khỏi dây. Người nhảy thiếu bạn nhảy đêm ấy còn có một cuộc hẹn khác.",
+      "Quanh đống lửa, mọi người đứng thành vòng tròn, và ai cũng biết mình KHÔNG đứng ở đâu. Người nói mình KHÔNG ở đâu cũng cho bạn biết điều gì đó: hãy gạch bỏ khu vực đó ngay.",
+      [
+        [
+          "Đống lửa",
+          "Lúc chín giờ, lửa được nhóm lên. Có người ném cả một xấp giấy vào đó.",
+          "🔥 Đống lửa"
+        ],
+        [
+          "Điệu quadrille",
+          "Tám cặp cùng nhảy quadrille. Đến giữa chừng chỉ còn bảy cặp, và một người nhảy đứng một mình.",
+          "🪗 Đàn accordion"
+        ],
+        [
+          "Cô giáo Giulia cắt cờ",
+          "Cô cùng lũ trẻ cắt một trăm lá cờ nhỏ. Có một lá được cắt từ một trang sổ kế toán.",
+          "✂️ Cây kéo"
+        ],
+        [
+          "Bánh ngô",
+          "Trong lễ hội, ai cũng ăn bánh ngô. Trong nhà bếp có một chiếc bánh không ai được phép cắt.",
+          "🌽 Bánh ngô"
+        ],
+        [
+          "Nghệ sĩ piano Zélia hát",
+          "Năm nào cô cũng hát bài ca Thánh João. Năm nay cô hát một đoạn không ai biết.",
+          "🎼 Bản nhạc"
+        ],
+        [
+          "Người thu mua Mulder không khiêu vũ",
+          "Ông nói mình không khiêu vũ; ông là người Hà Lan. Vậy mà lúc mười giờ, ghế của ông cạnh đống lửa đã trống.",
+          "👒 Mũ rơm"
+        ],
+        [
+          "Chiếc đèn lồng trong vườn cà phê",
+          "Trong lúc bắn pháo hoa, một chiếc đèn lồng di chuyển qua vườn cà phê. Ban đêm không ai vào vườn cả.",
+          "🏮 Đèn lồng"
+        ],
+        [
+          "Dona Celeste nhảy một mình",
+          "Cô nhảy quadrille với quản lý. Sau vòng thứ hai, cô đứng một mình.",
+          "🎀 Ruy băng buộc tóc"
+        ]
+      ]
+    ],
+    "fazenda-4": [
+      "Phần IV · Chuyến tàu cà phê",
+      "Ba trăm bao cà phê được chở bằng tàu hỏa tới cảng Santos. Quản lý Joaquim đếm từng bao khi chất lên toa. Đến cảng, chỉ có hai trăm chín mươi chín bao.",
+      "Đoàn tàu đã quay về và các bao đã được đếm. Bao cà phê bị thiếu chưa bao giờ rời khỏi đồn điền.",
+      "Khi chất hàng, mọi người đứng thành hàng dọc theo các toa. Hãy đặt nghi phạm có ít lựa chọn nhất trước; phần còn lại sẽ theo sau.",
+      [
+        [
+          "Ba trăm bao",
+          "Vận đơn ghi ba trăm bao. Ở cảng có hai trăm chín mươi chín bao.",
+          "🧾 Vận đơn"
+        ],
+        [
+          "Quản lý Joaquim đếm",
+          "Ông đếm từng bao bằng một vạch phấn trên toa. Có đúng ba trăm vạch.",
+          "✏️ Phấn"
+        ],
+        [
+          "Sân ga",
+          "Đoàn tàu đỗ ở sân ga của đồn điền một tiếng. Suốt tiếng đó, sân ga chưa lúc nào vắng người.",
+          "🪧 Biển ga"
+        ],
+        [
+          "Người thu mua Mulder đi cùng",
+          "Ông ngồi ở toa cuối cùng, giữa những bao cà phê. Ông nói mình muốn ngửi mùi cà phê.",
+          "🧳 Túi du lịch"
+        ],
+        [
+          "Dấu bị sơn đè",
+          "Bao nào cũng mang dấu của đồn điền. Trên một bao, có một dấu khác được sơn đè lên.",
+          "🖌️ Cọ kẻ dấu"
+        ],
+        [
+          "Nhà nông học Hideo gửi mẫu",
+          "Anh gửi một túi quả cà phê tới Campinas để kiểm nghiệm. Cái túi to bất thường, nếu chỉ là mẫu thử.",
+          "🧪 Túi mẫu"
+        ],
+        [
+          "Nhà kho trống",
+          "Sau khi chất hàng, nhà kho trống trơn. Trong góc vẫn còn một bao, sau một đống bao tải đay.",
+          "📦 Bao tải đay"
+        ],
+        [
+          "Người nếm cà phê Bento ở Santos",
+          "Ở cảng, ông nếm thử từng bao. Ông nói có thừa một bao, chứ không phải thiếu.",
+          "☕ Tách nếm"
+        ]
+      ]
+    ],
+    "fazenda-5": [
+      "Phần V · Buổi nếm thử",
+      "Ở sàn giao dịch cà phê tại Santos, người nếm cà phê Bento nếm thử từng lô hàng. Có một lô ngon hơn tất cả các lô khác. Không ai biết nó từ cây nào.",
+      "Lô hàng được bán với giá cao nhất năm. Nó từ cây nào, giờ bạn cũng đã biết.",
+      "Trong phòng nếm, mỗi người đứng một mình sau hàng tách của mình. Hãy bắt đầu với người nói không ai ở cùng khu vực với mình: mọi người khác bị loại khỏi khu vực đó ngay lập tức.",
+      [
+        [
+          "Tách số bảy",
+          "Một trăm chiếc tách xếp thành hàng. Đến tách số bảy, người nếm không nói gì nữa.",
+          "☕ Tách số bảy"
+        ],
+        [
+          "Người nếm cà phê Bento không nhổ",
+          "Ông húp, nếm rồi nhổ ra, một trăm lần mỗi ngày. Với lô này, ông không nhổ.",
+          "🥄 Thìa bạc"
+        ],
+        [
+          "Con số trên bao",
+          "Lô nào cũng có một con số. Con số này không có trong sổ sách của đồn điền.",
+          "🔢 Số lô"
+        ],
+        [
+          "Dona Celeste tra sổ",
+          "Cô tra con số trong sổ kế toán. Trang tháng Bảy đã bị cắt mất.",
+          "📕 Sổ kế toán"
+        ],
+        [
+          "Người thu mua Mulder trả giá",
+          "Ông trả giá cho lô hàng trước khi nếm thử. Ông trả gấp đôi.",
+          "🔨 Búa đấu giá"
+        ],
+        [
+          "Nhà nông học Hideo nhận ra",
+          "Chỉ một ngụm là đủ. Đó là cà phê từ cây mới của anh, mà cây ấy chưa từng cho thu hoạch.",
+          "🌿 Cây non"
+        ],
+        [
+          "Nghệ sĩ piano Zélia ở Santos",
+          "Cô biểu diễn một tuần ở một khách sạn tại Santos. Khách sạn của cô nằm ngay cạnh sàn giao dịch.",
+          "🗝️ Chìa khóa khách sạn"
+        ],
+        [
+          "Thừa một mẫu thử",
+          "Đồn điền gửi đi mười mẫu. Trong phòng nếm có mười một mẫu.",
+          "🫙 Lọ mẫu"
+        ]
+      ]
+    ],
+    "fazenda-6": [
+      "Phần VI · Sương giá đêm",
+      "Chỉ một đêm sương giá cũng có thể làm mất cả vụ mùa. Quản lý cho đốt những đống lửa nhỏ trong vườn để chống lạnh. Đêm qua, có người cầm đèn đi giữa những cây cà phê.",
+      "Mặt trời lên và các cây cà phê đã được cứu, chỉ trừ một hàng. Hàng ấy nằm cạnh cây mới của Hideo.",
+      "Trong giá lạnh, ai cũng co ro bên một đống lửa, và không ai để ý đến ai. Lời khai ngày càng dè sẻn: hãy dùng bút chì, gạch bỏ những ô không phù hợp, rồi xem còn lại gì.",
+      [
+        [
+          "Sắp có sương giá",
+          "Lúc nửa đêm, nhiệt kế trên hiên nhà tụt xuống dưới không độ. Ở một đồn điền cà phê, chuyện đó gần như không bao giờ xảy ra.",
+          "🌡️ Nhiệt kế"
+        ],
+        [
+          "Lửa trong vườn",
+          "Cứ mười hàng cây lại có một đống lửa nhỏ. Lúc hai giờ, một đống lửa tắt.",
+          "🪵 Bó củi"
+        ],
+        [
+          "Quản lý Joaquim canh đêm",
+          "Ông nói mình đi dọc các đống lửa suốt đêm. Đôi ủng của ông vẫn khô.",
+          "🥾 Ủng cưỡi ngựa"
+        ],
+        [
+          "Chiếc đèn giữa những cây cà phê",
+          "Lúc ba giờ, một chiếc đèn di chuyển qua vườn. Nó không đi tới các đống lửa, mà tới nhà kính.",
+          "🔦 Đèn pin"
+        ],
+        [
+          "Bác sĩ Lúcia ở lại qua đêm",
+          "Vì sương giá, bà không thể cưỡi ngựa về nhà. Bà nói mình ngủ trong phòng khách, gối đầu lên túi đồ nghề.",
+          "💼 Túi bác sĩ"
+        ],
+        [
+          "Quả cà phê đen",
+          "Quả cà phê bị đóng băng sẽ chuyển sang màu đen. Trong giỏ của một người hái cà phê có những quả đen từ trước khi có sương giá.",
+          "🧺 Giỏ hái"
+        ],
+        [
+          "Cô giáo Giulia sưởi ấm trường học",
+          "Cô nhóm lò sưởi trong trường, cho lũ trẻ. Hôm đó là Chủ nhật; trường không có buổi học nào.",
+          "📚 Sách giáo khoa"
+        ],
+        [
+          "Nhà nông học Hideo tìm cây của mình",
+          "Lúc bình minh, anh đi tới cây mới của mình. Chỉ còn lại một chiếc que có gắn nhãn.",
+          "🏷️ Nhãn cây"
+        ]
+      ]
+    ],
+    "fazenda-7": [
+      "Phần VII · Cây cà phê mới",
+      "Nhà nông học Hideo đang lai tạo một giống cà phê chịu được sương giá. Sau đêm sương giá, cây tốt nhất của anh đã biến mất. Có người muốn có hạt giống.",
+      "Cây cà phê đã trở về nhà kính, có hàng rào bao quanh. Hạt giống sẽ ở lại đồn điền.",
+      "Bàn chơi lớn hơn, còn đồn điền thì vắng hơn. Nếu báo cáo nói một khu vực bỏ trống, thì cả khu vực đó bị loại đối với mọi người.",
+      [
+        [
+          "Một cái hố trống",
+          "Chỗ cái cây từng đứng giờ là một cái hố. Đất xung quanh được quét sạch gọn gàng.",
+          "🕳️ Hố trồng cây"
+        ],
+        [
+          "Sổ lai tạo",
+          "Mười hai năm làm việc nằm trong một cuốn sổ. Nó vẫn nằm trong nhà kính, nhưng mở ở một trang khác.",
+          "📓 Sổ lai tạo"
+        ],
+        [
+          "Người thu mua Mulder có nhà kính",
+          "Công ty của ông có một nhà kính ở Amsterdam. Ông nói trong đó chỉ có hoa tulip.",
+          "🌷 Củ tulip"
+        ],
+        [
+          "Ghế bập bênh",
+          "Trên hiên nhà, chiếc ghế đôi khi tự bập bênh. Đêm qua, có người đã ngồi đó, giày dính bùn.",
+          "🪑 Ghế bập bênh"
+        ],
+        [
+          "Dona Celeste đọc di chúc",
+          "Di chúc của cha cô liệt kê mọi thứ trong đồn điền. Cả cây cà phê mới cũng có, với một chủ sở hữu khác.",
+          "📜 Di chúc"
+        ],
+        [
+          "Người nếm cà phê Bento biết vị",
+          "Ông đã nếm cà phê từ cây ấy ở Santos. Ngoài ông, chỉ có một người nữa biết vị của nó.",
+          "🫖 Bình cà phê"
+        ],
+        [
+          "Bưu kiện trong thư từ",
+          "Trong số thư gửi đi Santos có một bưu kiện nhỏ. Địa chỉ là một nhà kính ở nước ngoài.",
+          "📮 Bưu kiện nhỏ"
+        ],
+        [
+          "Con vẹt lên tiếng",
+          "Con vẹt đã thấy cái cây bị mang đi. Từ đó, nó cứ gọi đi gọi lại một từ.",
+          "🪶 Lông đỏ"
+        ]
+      ]
+    ],
+    "fazenda-8": [
+      "Phần VIII · Bao cà phê cuối cùng",
+      "Vụ thu hoạch đã xong và bao cà phê cuối cùng được cân. Người thu mua thanh toán và các vị khách xếp hành lý. Còn một buổi tối âm nhạc nữa trên hiên nhà.",
+      "Van Dam uống cạn tách cà phê, chạm tay vào vành mũ rồi lên tàu đi Santos. Sân phơi đã trống và sổ sách lại khớp. Trên hiên nhà, tiếng nhạc vẫn vang lên.",
+      "Những vụ án cuối cùng, gần như đều trên bàn chơi lớn. Đừng sa lầy vào người khó nhất: hãy đặt những người khác trước, khi đó người cuối cùng thường chỉ còn đúng một ô.",
+      [
+        [
+          "Cái cân",
+          "Mỗi bao sáu mươi ký, như mọi khi. Bao cuối cùng nặng sáu mươi mốt ký.",
+          "⚖️ Cân cà phê"
+        ],
+        [
+          "Quản lý Joaquim giao chìa khóa",
+          "Sau ba mươi năm, ông đặt chùm chìa khóa nhà kho lên bàn. Chùm chìa khóa thừa một chiếc.",
+          "🔑 Chùm chìa khóa"
+        ],
+        [
+          "Người thu mua Mulder thanh toán",
+          "Ông trả tiền vụ mùa bằng đồng guilder. Ông trả cho nhiều hơn số bao thực có một bao.",
+          "🪙 Đồng guilder"
+        ],
+        [
+          "Nghệ sĩ piano Zélia chơi bản cuối",
+          "Cô chơi một bản choro mình viết tặng ông trùm. Ông chưa bao giờ được nghe nó.",
+          "🎶 Bản choro"
+        ],
+        [
+          "Cô giáo Giulia chia tay",
+          "Cô sắp trở về thành phố. Cô để lại cho lũ trẻ một lá thư, để đọc khi chúng lớn lên.",
+          "💌 Thư chia tay"
+        ],
+        [
+          "Bác sĩ Lúcia ghi lại",
+          "Bà ghi lại những gì mình đã thấy trong xưởng rang vào đêm tiệc. Bà nói lẽ ra phải ghi ngay từ hôm đó.",
+          "📋 Biên bản của bác sĩ"
+        ],
+        [
+          "Dona Celeste mở sổ sách",
+          "Cô mở các cuốn sổ kế toán trên bàn phòng ăn. Lần đầu tiên mọi cột số đều khớp, chỉ trừ một cột.",
+          "📚 Sổ sách kế toán"
+        ],
+        [
+          "Xưởng rang",
+          "Nơi mọi chuyện bắt đầu, trong xưởng rang. Cũng là nơi mọi chuyện kết thúc.",
+          "🫘 Cà phê rang"
+        ]
+      ]
+    ],
+    "zeppelin": [
+      "Phần I · Trên những tầng mây",
+      "Khí cầu Cirrus, tháng 8 năm 1929. Suốt ba ngày, con tàu trôi trên đại dương, hướng về Rio de Janeiro. Sau bữa tối, nhà thiết kế Anton Falk nằm trong phòng bản đồ, tay vẫn cầm tờ lộ trình bay.",
+      "Con tàu tiếp tục bay trên những tầng mây. Nó không thể quay lại và không ai có thể rời tàu. Thủ phạm đang bay cùng bạn tới Rio.",
+      "Khí cầu dài và hẹp, chỉ có một hành lang chạy từ mũi đến đuôi. Hãy bắt đầu với người nói rõ mình ở khu vực nào; “ngay cạnh” quả địa cầu chỉ tính ô sát bên, không bao giờ tính ô chéo.",
+      [
+        [
+          "Sau bữa tối",
+          "Bữa tối diễn ra lúc bảy giờ, trên những tầng mây. Lúc tám giờ rưỡi, nhà thiết kế nằm trong phòng bản đồ.",
+          "🍽️ Đĩa ăn"
+        ],
+        [
+          "Lộ trình trong tay",
+          "Trong tay ông là một mảnh giấy ghi lộ trình bay. Đó không phải lộ trình tới Rio.",
+          "🧾 Mảnh giấy lộ trình"
+        ],
+        [
+          "Chỉ huy Brandt trong khoang lái",
+          "Ông nói mình ở trong khoang lái suốt buổi tối. Từ khoang lái có thể nhìn thẳng vào phòng bản đồ.",
+          "🔭 Ống nhòm"
+        ],
+        [
+          "Hoa tiêu Mateus tính toán",
+          "Cứ mỗi giờ, anh lại tính lộ trình. Lúc tám giờ, anh tính hai lần, ra hai đáp số khác nhau.",
+          "🧮 Thước loga"
+        ],
+        [
+          "Nhà khí tượng Liv nhìn ra ngoài",
+          "Cô nói mình ngắm mây suốt buổi tối. Lúc tám giờ, trời đã tối rồi.",
+          "☁️ Sổ tay mây"
+        ],
+        [
+          "Máy đánh chữ",
+          "Trong phòng bản đồ có một chiếc máy đánh chữ. Trong máy vẫn còn một tờ giấy, có một câu.",
+          "📃 Trang đánh máy"
+        ],
+        [
+          "Tay vợt Josette khó ngủ",
+          "Cô nói mình khó ngủ khi ở trên không. Theo lời người phục vụ, lúc tám giờ cô đã ngủ rồi.",
+          "🎾 Bóng quần vợt"
+        ],
+        [
+          "Nhà ngoại giao Vidal và nhà thiết kế",
+          "Hai người ăn tối cùng nhau và bàn chuyện tiền bạc. Sau món tráng miệng, chỉ còn nhà ngoại giao nói.",
+          "💼 Cặp tài liệu"
+        ]
+      ]
+    ],
+    "zeppelin-2": [
+      "Phần II · Thư hàng không",
+      "Trên tàu có năm mươi nghìn lá thư gửi Nam Mỹ, dán tem đặc biệt dành cho nhà sưu tầm. Trưởng bưu cục Elsbeth đóng dấu chúng trong phòng thư. Có một phong bì đã bị hơ hơi nước để bóc ra.",
+      "Phong bì đã được dán và đóng dấu lại. Bên trong có gì, trưởng bưu cục không biết, nhưng bạn thì biết.",
+      "Trong phòng thư, mỗi lá thư đều qua tay hai người. Lời khai về hai người: hãy xác định vị trí của một trong hai người trước.",
+      [
+        [
+          "Năm mươi nghìn lá thư",
+          "Lá thư nào cũng được đóng dấu bưu điện của khí cầu. Có một lá bị đóng hai dấu.",
+          "📮 Dấu bưu điện"
+        ],
+        [
+          "Trưởng bưu cục Elsbeth đóng dấu",
+          "Mỗi giờ bà đóng dấu một trăm lá thư. Từ chín đến mười giờ, bà không đóng lá nào.",
+          "🔖 Con dấu"
+        ],
+        [
+          "Phong bì bị hơ hơi nước",
+          "Hồ dán đã bị ướt rồi khô lại. Nhìn những nếp nhăn là biết.",
+          "✉️ Phong bì"
+        ],
+        [
+          "Ấm đun nước trong bếp tàu",
+          "Muốn có hơi nước thì cần một chiếc ấm. Bếp tàu có chiếc ấm duy nhất trên khí cầu.",
+          "🫖 Ấm đun nước"
+        ],
+        [
+          "Phóng viên Daisy gửi bài",
+          "Ngày nào cô cũng gửi một bài về tòa soạn. Hôm nay cô gửi một lá thư, cho chính mình.",
+          "📰 Mẩu báo"
+        ],
+        [
+          "Một con tem hiếm",
+          "Một phong bì dán con tem mà cả thế giới chỉ có mười con. Hôm qua, nó chưa có trên phong bì.",
+          "🔍 Kính lúp"
+        ],
+        [
+          "Thợ máy Rudi giúp khuân",
+          "Anh giúp khuân các túi thư tới phòng thư. Có một túi anh khuân tới khoang động cơ.",
+          "🧵 Dây buộc"
+        ],
+        [
+          "Nhà ngoại giao Vidal chờ thư",
+          "Ông nói mình không nhận thư nào khi ở trên tàu. Trong phòng thư có một lá thư mang tên ông.",
+          "🔏 Dấu niêm phong"
+        ]
+      ]
+    ],
+    "zeppelin-3": [
+      "Phần III · Gió ngược",
+      "Gió ngược mạnh trên đại dương. Con tàu chỉ bay được nửa tốc độ và chuyến đi kéo dài thêm một đêm. Không ai vui, trừ một hành khách.",
+      "Gió đổi chiều và con tàu bù lại những giờ đã mất. Hành khách vui vì gió ngược có lý do để vui.",
+      "Khi gió ngược, ai cũng ở trong tàu, nhưng không ở cùng một khu vực. Người nói mình KHÔNG ở đâu cũng cho bạn biết điều gì đó: hãy gạch bỏ khu vực đó ngay.",
+      [
+        [
+          "Thêm một đêm",
+          "Theo lịch trình, họ hạ cánh vào thứ Sáu. Theo gió, là thứ Bảy.",
+          "📅 Lịch trình"
+        ],
+        [
+          "Nhà khí tượng Liv đã cảnh báo",
+          "Hôm qua cô đã dự báo có gió ngược. Nhà thiết kế vẫn muốn bay theo lộ trình này.",
+          "🌬️ Bản đồ gió"
+        ],
+        [
+          "Con tàu rung lắc",
+          "Trong một cơn gió giật, một chiếc ly đổ trong phòng khách. Dưới ly có một chiếc chìa khóa nhỏ.",
+          "🗝️ Chìa khóa nhỏ"
+        ],
+        [
+          "Hoa tiêu Mateus chọn lộ trình",
+          "Anh chọn một lộ trình vòng tránh gió. Lộ trình ấy đã có sẵn trên mảnh giấy trong tay nhà thiết kế.",
+          "🗺️ Bản đồ hàng không"
+        ],
+        [
+          "Tay vợt Josette bị say",
+          "Cô nói mình nằm trong cabin cả ngày. Cửa cabin mở và bên trong không có ai.",
+          "🍋 Quả chanh"
+        ],
+        [
+          "Chỉ huy Brandt chửi thề",
+          "Thủy thủ đoàn nói ông không bao giờ chửi thề. Trong cơn gió ngược này, ông chửi bằng ba thứ tiếng.",
+          "🧭 La bàn"
+        ],
+        [
+          "Quầy bar vẫn mở",
+          "Khi gió ngược, quầy bar đóng cửa. Vậy mà đêm qua vẫn có người rót hai ly ở đó.",
+          "🍸 Ly cocktail"
+        ],
+        [
+          "Vui vì gió",
+          "Ai cũng muốn tới Rio đúng giờ. Có một hành khách hỏi liệu chuyến đi có thể kéo dài hơn nữa không.",
+          "⏳ Đồng hồ cát"
+        ]
+      ]
+    ],
+    "zeppelin-4": [
+      "Phần IV · Khoang động cơ",
+      "Khí cầu có năm động cơ, mỗi động cơ nằm trong một khoang riêng bên dưới thân tàu. Ngày nào thợ máy Rudi cũng trèo ra đó. Đêm nay, một động cơ ngừng chạy, và thợ máy không biết vì sao.",
+      "Động cơ đã chạy lại. Trong ống dẫn nhiên liệu có một thứ không nên có, và bạn biết ai đã đặt nó vào đó.",
+      "Giữa các động cơ, bạn chỉ có thể đi thẳng lên trước hoặc thẳng về sau. Hãy đặt nghi phạm có ít lựa chọn nhất trước; phần còn lại sẽ theo sau.",
+      [
+        [
+          "Động cơ số ba",
+          "Lúc hai giờ, động cơ số ba ngừng chạy. Con tàu tụt xuống mười mét.",
+          "⚙️ Bánh răng"
+        ],
+        [
+          "Thợ máy Rudi trèo ra ngoài",
+          "Anh leo xuống một chiếc thang trong gió để tới khoang động cơ. Anh không bao giờ đi mà thiếu mũ len; đêm nay thì có.",
+          "🧢 Mũ len"
+        ],
+        [
+          "Ống dẫn nhiên liệu",
+          "Trong ống có một nắm giấy vo tròn. Trên giấy có những con số.",
+          "🛢️ Ống nhiên liệu"
+        ],
+        [
+          "Chỉ huy Brandt hạ độ cao",
+          "Với bốn động cơ, con tàu phải bay thấp hơn. Thấp hơn nghĩa là gần mặt biển hơn.",
+          "🎚️ Cao độ kế"
+        ],
+        [
+          "Trưởng bưu cục Elsbeth nghe thấy",
+          "Ở phòng thư nghe tiếng động cơ rõ nhất. Bà nghe thấy động cơ số ba ngừng chạy, và tiếng một cánh cửa.",
+          "🚪 Cửa khoang động cơ"
+        ],
+        [
+          "Thừa một chiếc cờ lê",
+          "Hộp đồ nghề của thợ máy có mười hai chiếc cờ lê. Chiếc thứ mười ba nằm trong khoang động cơ.",
+          "🔧 Cờ lê"
+        ],
+        [
+          "Hoa tiêu Mateus tính lại",
+          "Với bốn động cơ, họ sẽ tới Rio muộn một ngày. Anh đã tính ra điều đó trước khi động cơ ngừng chạy.",
+          "✏️ Bút chì"
+        ],
+        [
+          "Tờ giấy trong ống",
+          "Những con số trên giấy là một lộ trình. Cùng lộ trình với mảnh giấy trong tay nhà thiết kế.",
+          "📄 Nắm giấy"
+        ]
+      ]
+    ],
+    "zeppelin-5": [
+      "Phần V · Lối đi hẹp",
+      "Trên cao trong thân tàu, một lối đi hẹp chạy giữa các túi khí, từ mũi đến đuôi. Hành khách không được phép lên đó. Trong lớp bụi có những dấu chân mới.",
+      "Lối đi hẹp lại vắng người và lớp bụi lại phẳng lì. Những dấu chân chạy từ phòng thư lên chòi canh.",
+      "Trên lối đi hẹp, không ai có thể vượt qua ai. Hãy bắt đầu với người nói không ai ở cùng khu vực với mình: mọi người khác bị loại khỏi khu vực đó ngay lập tức.",
+      [
+        [
+          "Dấu chân mới",
+          "Lối đi hẹp phủ một lớp bụi mịn. Trên đó có dấu chân của một đôi giày nhỏ.",
+          "👞 Giày nhỏ"
+        ],
+        [
+          "Thợ máy Rudi đi tuần mỗi ngày",
+          "Sáng nào anh cũng đi từ mũi đến đuôi. Anh đi giày cỡ bốn mươi sáu.",
+          "🥾 Giày bảo hộ"
+        ],
+        [
+          "Chòi canh",
+          "Trên nóc con tàu có một cửa sập dẫn lên chòi canh. Cửa sập không khóa.",
+          "🔓 Cửa sập"
+        ],
+        [
+          "Tay vợt Josette tập luyện",
+          "Ngày nào cô cũng tập, kể cả khi ở trên không. Cô nói mình nhảy dây trong cabin.",
+          "🪢 Dây nhảy"
+        ],
+        [
+          "Nhà khí tượng Liv thả bóng thám không",
+          "Sáng nào cô cũng thả một quả bóng thám không từ chòi canh. Sáng nay có hai quả.",
+          "🎈 Bóng thám không"
+        ],
+        [
+          "Chiếc găng tay giữa các túi khí",
+          "Một chiếc găng tay trắng mắc giữa các túi khí. Trên tàu chỉ có hai người đeo vừa nó.",
+          "🧤 Găng tay trắng"
+        ],
+        [
+          "Phóng viên Daisy muốn chụp ảnh",
+          "Cô muốn chụp đại dương từ trên nóc. Chỉ huy không cho, và cô vẫn cứ đi.",
+          "📸 Ảnh báo chí"
+        ],
+        [
+          "Từ phòng thư đi lên",
+          "Một chiếc thang chạy từ phòng thư lên lối đi hẹp. Bậc trên cùng dính mực bưu điện.",
+          "🖊️ Mực bưu điện"
+        ]
+      ]
+    ],
+    "zeppelin-6": [
+      "Phần VI · Bản tin thời tiết",
+      "Sáng nào nhà khí tượng Liv cũng vẽ một bản đồ thời tiết. Theo bản đồ của cô, sương mù đang kéo đến trên biển. Màn sương ấy đến vừa kịp lúc với một người.",
+      "Sương tan và con tàu đã trở lại đúng hướng. Kẻ trông chờ vào màn sương đã không tính đến bạn.",
+      "Trong sương mù, nhìn qua cửa sổ chẳng thấy gì, nên ai cũng nhìn vào bên trong. Lời khai ngày càng dè sẻn: hãy dùng bút chì, gạch bỏ những ô không phù hợp, rồi xem còn lại gì.",
+      [
+        [
+          "Bản đồ thời tiết",
+          "Sáng nào phòng khách cũng treo một bản đồ mới. Sáng nay, treo ở đó là bản đồ của hôm qua.",
+          "🌦️ Bản đồ thời tiết"
+        ],
+        [
+          "Sương mù lúc mười giờ",
+          "Theo bản đồ, sương mù bắt đầu lúc mười giờ. Đúng mười giờ, đèn trong quầy bar tắt.",
+          "💡 Đèn quầy bar"
+        ],
+        [
+          "Nhà khí tượng Liv vẽ",
+          "Cô luôn vẽ các đường bằng màu xanh. Bản đồ hôm qua có cả những đường màu đỏ.",
+          "🖍️ Bút chì đỏ"
+        ],
+        [
+          "Nhà ngoại giao Vidal hỏi thời tiết",
+          "Sáng nào ông cũng hỏi về thời tiết. Hôm nay ông hỏi mấy giờ thì sương mù tới.",
+          "🕰️ Đồng hồ du lịch"
+        ],
+        [
+          "Điện đài im lặng",
+          "Khi có sương mù, điện đài phải phát tín hiệu mười lăm phút một lần. Từ mười đến mười một giờ, nó không phát.",
+          "📻 Điện đài"
+        ],
+        [
+          "Hoa tiêu Mateus bay mù",
+          "Trong sương mù, anh bay theo la bàn và đồng hồ. Anh biết con tàu đã ở đâu, trừ lúc mười giờ rưỡi.",
+          "⏱️ Đồng hồ bấm giờ"
+        ],
+        [
+          "Trưởng bưu cục Elsbeth khóa cửa",
+          "Khi có sương mù, bà khóa phòng thư để tránh ẩm. Lúc mười một giờ, cửa đang mở.",
+          "🔒 Ổ khóa móc"
+        ],
+        [
+          "Ngọn đèn trên mặt nước",
+          "Bên dưới con tàu, một ngọn đèn nhấp nháy trên mặt nước. Từ chòi canh, một ngọn đèn nhấp nháy đáp lại.",
+          "🔦 Đèn tín hiệu"
+        ]
+      ]
+    ],
+    "zeppelin-7": [
+      "Phần VII · Đường xích đạo",
+      "Khi qua xích đạo, ai cũng phải chịu lễ rửa tội, như trên mọi con tàu. Chỉ huy hóa trang thành thần Neptune và ai cũng bị dội một xô nước lên đầu. Có một hành khách vắng mặt.",
+      "Lễ đã xong và mọi người đã khô ráo. Hành khách vắng mặt đã ở trong phòng bản đồ, và giờ bạn biết người đó tìm gì.",
+      "Bàn chơi lớn hơn, còn con tàu thì đông hơn. Nếu báo cáo nói một khu vực bỏ trống, thì cả khu vực đó bị loại đối với mọi người.",
+      [
+        [
+          "Neptune trên tàu",
+          "Chỉ huy Brandt đeo bộ râu bằng dây thừng và chiếc vương miện bằng bìa. Ông đếm hành khách và thấy thiếu một người.",
+          "👑 Vương miện bìa"
+        ],
+        [
+          "Lễ rửa tội",
+          "Ai cũng nhận một xô nước và một tấm giấy chứng nhận. Còn thừa một tấm giấy chứng nhận.",
+          "📜 Giấy chứng nhận qua xích đạo"
+        ],
+        [
+          "Đường kẻ trên sàn",
+          "Hoa tiêu Mateus vẽ đường xích đạo bằng phấn trên sàn phòng khách. Có người không bước qua nó, mà đi vòng quanh.",
+          "📏 Vạch phấn"
+        ],
+        [
+          "Tay vợt Josette đứng đầu hàng",
+          "Cô muốn được rửa tội đầu tiên. Cô đứng đầu hàng, với một chiếc khăn khô.",
+          "🧺 Khăn khô"
+        ],
+        [
+          "Phóng viên Daisy ghi chép",
+          "Cô ghi lại tên của tất cả những người được rửa tội. Rồi cô gạch đi một cái tên.",
+          "✒️ Bút máy"
+        ],
+        [
+          "Thợ máy Rudi bỏ lỡ buổi lễ",
+          "Anh nói mình phải kiểm tra động cơ số ba. Động cơ số ba vẫn chạy tốt.",
+          "🔩 Bu lông"
+        ],
+        [
+          "Quả địa cầu",
+          "Trong lúc làm lễ, phòng bản đồ đóng cửa. Sau đó, quả địa cầu nằm nghiêng sang một bên.",
+          "🌍 Quả địa cầu"
+        ],
+        [
+          "Nhà ngoại giao Vidal và bản hợp đồng",
+          "Trong cặp của ông có một bản hợp đồng mua mười chiếc khí cầu. Nó được nhà thiết kế ký, sau khi ông ấy đã chết.",
+          "🖋️ Chữ ký"
+        ]
+      ]
+    ],
+    "zeppelin-8": [
+      "Phần VIII · Trên vịnh Rio",
+      "Núi Pão de Açúcar hiện ra và cột neo đang chờ sẵn. Con tàu bay thêm một vòng trên vịnh trước khi hạ cánh. Còn một buổi tối nữa với những hành khách như đêm đầu tiên.",
+      "Van Dam đội mũ, chào chỉ huy rồi là người cuối cùng bước xuống cầu thang ở cột neo. Khí cầu đã neo vào cột. Lộ trình bay không sai, và giờ phần còn lại cũng đã sáng tỏ.",
+      "Những vụ án cuối cùng, gần như đều trên bàn chơi lớn. Đừng sa lầy vào người khó nhất: hãy đặt những người khác trước, khi đó người cuối cùng thường chỉ còn đúng một ô.",
+      [
+        [
+          "Đã thấy đất liền",
+          "Lúc năm giờ, người canh gác thấy núi Pão de Açúcar. Lúc năm giờ mười phút, anh ta thấy cả một chiếc xuồng cảnh sát.",
+          "🚤 Xuồng cảnh sát"
+        ],
+        [
+          "Chỉ huy Brandt hạ cánh",
+          "Đây là lần hạ cánh thứ một trăm của ông. Trong nhật ký bay, dòng về chuyến đi này còn để trống.",
+          "📘 Nhật ký bay"
+        ],
+        [
+          "Trưởng bưu cục Elsbeth đếm túi thư",
+          "Năm mươi nghìn lá thư được mang lên tàu. Năm mươi nghìn lẻ một lá sẽ được mang xuống.",
+          "📬 Hộp thư"
+        ],
+        [
+          "Hoa tiêu Mateus về nhà",
+          "Anh sinh ra ở Rio và từ phòng khách chỉ cho mọi người xem nhà mình. Anh biết thành phố này, và cả cảnh sát cảng.",
+          "🖼️ Ảnh ngôi nhà"
+        ],
+        [
+          "Nhà khí tượng Liv nộp bản đồ",
+          "Cô giao toàn bộ bản đồ thời tiết cho chỉ huy. Bản đồ của đêm sương mù không có trong số đó.",
+          "🗂️ Tập bản đồ"
+        ],
+        [
+          "Tay vợt Josette đã thắng",
+          "Tuần sau cô mới thi đấu, nhưng cô nói mình đã thắng rồi. Thắng cái gì, cô không nói.",
+          "🏆 Cúp"
+        ],
+        [
+          "Phóng viên Daisy viết đoạn kết",
+          "Bài cuối cùng của cô đã xong, chỉ còn thiếu dòng cuối. Dòng đó đang chờ bạn.",
+          "🗞️ Báo sáng"
+        ],
+        [
+          "Phòng bản đồ",
+          "Nơi mọi chuyện bắt đầu, trong phòng bản đồ. Cũng là nơi mọi chuyện kết thúc.",
+          "📍 Ghim lộ trình"
+        ]
+      ]
+    ],
+    "poolstation": [
+      "Phần I · Tiệc giữa đông",
+      "Trạm Nam Thập Tự, ngày 21 tháng 6 năm 1958. Giữa đông, đêm dài nhất trong năm, là ngày lễ ở mọi trạm. Nến, một chiếc bánh làm từ đồ hộp và một chiếc ghế trống. Trạm trưởng nằm trong phòng vô tuyến.",
+      "Bữa tiệc đã tàn và nến đã cháy hết. Bên ngoài lạnh âm năm mươi độ, và không ai có thể rời đi.",
+      "Trạm vùng cực rất nhỏ: vài căn nhà gỗ và một đường hầm dưới tuyết. Hãy bắt đầu với người nói rõ mình ở khu vực nào; “ngay cạnh” chó kéo xe chỉ tính ô sát bên, không bao giờ tính ô chéo.",
+      [
+        [
+          "Chiếc ghế trống",
+          "Tám chiếc đĩa, chín chiếc ghế. Ghế của trạm trưởng bỏ trống suốt buổi tối.",
+          "🪑 Ghế xếp"
+        ],
+        [
+          "Tai nghe",
+          "Ông vẫn đeo tai nghe. Trong đó chỉ có tiếng rè rè.",
+          "🎧 Tai nghe"
+        ],
+        [
+          "Đầu bếp Diego cắt bánh",
+          "Một chiếc bánh làm từ đồ hộp, cắm những cây nến nhỏ. Một miếng đã mất trước khi ông bắt đầu cắt.",
+          "🎂 Bánh giữa đông"
+        ],
+        [
+          "Điện báo viên Ole trực ca",
+          "Lúc tám giờ, anh phải có mặt ở máy phát. Ai cũng nói lúc tám giờ anh đang ngồi ở bàn tiệc.",
+          "📋 Lịch trực"
+        ],
+        [
+          "Lời chúc giữa đông",
+          "Giữa đông, trạm nào cũng gửi lời chúc qua điện đài cho các trạm khác. Lúc chín giờ, có một bức điện đến mà không phải lời chúc.",
+          "📝 Sổ ghi điện"
+        ],
+        [
+          "Người chăn chó Rewi cho chó ăn",
+          "Anh ra chuồng chó lúc tám giờ rưỡi. Đến chín giờ lũ chó mới sủa.",
+          "🍖 Thức ăn cho chó"
+        ],
+        [
+          "Thợ máy Lieve và ánh đèn",
+          "Giữa bữa tiệc, điện mất trong ba phút. Lieve đã đứng sẵn cạnh máy phát điện.",
+          "🔦 Đèn pin"
+        ],
+        [
+          "Đường hầm tuyết",
+          "Một đường hầm dưới tuyết nối tất cả các căn nhà. Trên lớp sương giá mới, dấu chân chỉ đi theo một chiều.",
+          "👣 Dấu chân trên sương giá"
+        ]
+      ]
+    ],
+    "poolstation-2": [
+      "Phần II · Điện đài im lặng",
+      "Sáng hôm sau, Ole muốn gọi về đất liền. Máy phát im lặng. Có người đã tháo mất một bóng đèn điện tử.",
+      "Máy phát khẩn cấp kêu rè rè và đất liền trả lời. Ai đã lấy bóng đèn, giờ bạn đã biết. Holm định gửi điều gì, thì chưa.",
+      "Trong đêm địa cực, ai cũng biết người khác đã ở đâu. Lời khai về hai người: hãy xác định vị trí của một trong hai người trước.",
+      [
+        [
+          "Đế cắm trống",
+          "Máy phát có chín bóng đèn điện tử. Sáng nay chỉ còn tám.",
+          "💡 Bóng đèn điện tử"
+        ],
+        [
+          "Điện báo viên Ole tìm kiếm",
+          "Anh nói mình có bóng dự phòng, trong một chiếc hộp dưới giường. Chiếc hộp trống không.",
+          "📦 Hộp phụ tùng"
+        ],
+        [
+          "Thợ máy Lieve sửa được",
+          "Với dây điện và một bóng đèn từ xưởng, cô lắp được một máy phát khẩn cấp. Cô đã biết thiếu bóng nào trước cả khi nhìn.",
+          "🔧 Mỏ hàn"
+        ],
+        [
+          "Bức điện cuối cùng",
+          "Sổ ghi điện có phần đầu một bức điện của Holm. Được ba chữ thì dừng.",
+          "✏️ Mẩu bút chì"
+        ],
+        [
+          "Bác sĩ Kenji viết báo cáo",
+          "Thời điểm tử vong: từ tám đến chín giờ. Lúc tám giờ rưỡi, chính bác sĩ ở một mình trong phòng y tế.",
+          "🩺 Ống nghe"
+        ],
+        [
+          "Nhà khí tượng Nancy nghe thấy",
+          "Lúc tám giờ rưỡi, cô đang đọc nhiệt kế trong chòi khí tượng. Cô nghe thấy tiếng mã Morse qua vách.",
+          "🌡️ Nhiệt kế"
+        ],
+        [
+          "Nhà vật lý Hélène nghe trộm",
+          "Đêm nào cô cũng nghe điện đài để phục vụ việc đo đạc. Tối hôm đó, cô ghi lại một tần số không phải của đất liền.",
+          "🗒️ Danh sách tần số"
+        ],
+        [
+          "Bóng đèn trong tuyết",
+          "Rewi tìm thấy bóng đèn cạnh chuồng chó, bị tuyết vùi một nửa. Bên cạnh có một chiếc găng tay len không phải của anh.",
+          "🧤 Găng tay len"
+        ]
+      ]
+    ],
+    "poolstation-3": [
+      "Phần III · Bão tuyết",
+      "Một cơn bão kéo dài ba ngày quét qua trạm. Tuyết quất mạnh đến mức không nhìn thấy cả bàn tay mình. Ai ra ngoài đều phải bám theo sợi dây. Có một sợi dây đã bị tháo ra.",
+      "Cơn bão lặng dần và sợi dây lại căng. Kẻ tháo nó ra không muốn ai tới được chòi khí tượng.",
+      "Trong bão, không ai nhìn thấy gì, nhưng ai cũng biết mình KHÔNG ở đâu. Người nói mình KHÔNG ở đâu cũng cho bạn biết điều gì đó: hãy gạch bỏ khu vực đó ngay.",
+      [
+        [
+          "Sợi dây ra chòi khí tượng",
+          "Một sợi dây nối căn nhà với chòi khí tượng. Sáng nay nó nằm lỏng trên tuyết.",
+          "🪢 Dây dẫn đường"
+        ],
+        [
+          "Nhà khí tượng Nancy phải ra ngoài",
+          "Cứ ba tiếng cô lại đọc các thiết bị, bão hay không cũng vậy. Lúc ba giờ, một tiếng sau cô mới quay về, không có số liệu nào.",
+          "📒 Sổ khí tượng"
+        ],
+        [
+          "Người chăn chó Rewi đi tìm",
+          "Anh ra ngoài với hai con chó có dây dắt. Anh quay về với ba con.",
+          "🐾 Dây dắt chó"
+        ],
+        [
+          "Đầu bếp Diego đi lấy tuyết",
+          "Nước là tuyết đem đun chảy. Ông đi lấy tuyết đầy xô giữa cơn bão, và đi rất lâu.",
+          "🪣 Xô tuyết"
+        ],
+        [
+          "Máy đo gió",
+          "Lúc bốn giờ, máy đo gió trên mái đứng yên. Nancy nói nó bị đóng băng. Có một mảnh vải quấn quanh nó.",
+          "🌀 Máy đo gió"
+        ],
+        [
+          "Thợ máy Lieve và máy phát điện",
+          "Ở âm sáu mươi độ, máy phát điện không được ngừng. Lúc năm giờ, nó đã ngừng, còn Lieve thì đang ngủ.",
+          "⛽ Can xăng"
+        ],
+        [
+          "Bác sĩ Kenji và vết bỏng lạnh",
+          "Có hai người vào với đôi má trắng bệch. Theo nhật ký trực, chỉ một người đã ra ngoài.",
+          "📓 Nhật ký trực"
+        ],
+        [
+          "Ai đã tháo dây",
+          "Một nút thắt không tự tuột ra trong bão. Nút này được tháo gọn gàng, bằng tay đeo găng.",
+          "🪝 Móc khóa"
+        ]
+      ]
+    ],
+    "poolstation-4": [
+      "Phần IV · Lõi băng",
+      "Nhiều tháng nay, nhà băng hà học Marina khoan vào lớp băng dưới trạm. Lõi băng quý nhất của bà nằm trong đường hầm tuyết, nơi lúc nào cũng âm ba mươi độ. Sáng nay nó vỡ thành từng mảnh. Không phải do tai nạn.",
+      "Lõi băng đã trở lại đường hầm, mảnh nào cũng được đánh số. Holm muốn là người đầu tiên công bố lớp đen trong đó.",
+      "Trong phòng thí nghiệm, mọi người đứng sát nhau, nên hãy để ý xem ai đứng ngay cạnh ai. Hãy đặt nghi phạm có ít lựa chọn nhất trước; phần còn lại sẽ theo sau.",
+      [
+        [
+          "Mười nghìn năm",
+          "Mỗi xăng-ti-mét băng là một năm. Lõi băng gãy đúng ở năm mà Marina đang tìm.",
+          "🧊 Lõi băng"
+        ],
+        [
+          "Nhà băng hà học Marina đếm",
+          "Bà đánh số từng mảnh bằng bút sáp. Thiếu mảnh số mười bốn.",
+          "🖍️ Bút sáp"
+        ],
+        [
+          "Mũi khoan",
+          "Máy khoan băng để trong xưởng. Đầu mũi khoan có băng mới, mà Marina đã một tuần không khoan.",
+          "🔩 Máy khoan băng"
+        ],
+        [
+          "Nhà vật lý Hélène muốn đo",
+          "Trong băng có bụi từ những nơi rất xa. Hélène muốn đo nó; Marina muốn tự mình mô tả trước.",
+          "🔬 Lam kính"
+        ],
+        [
+          "Đầu bếp Diego pha mate",
+          "Để pha mate, ông đun chảy băng lấy từ đường hầm. Ông nói mình không biết băng nào là băng cổ.",
+          "🧉 Bình mate"
+        ],
+        [
+          "Bác sĩ Kenji và kính hiển vi",
+          "Cả trạm chỉ có một chiếc kính hiển vi. Đêm đó Kenji ngồi bên nó, làm một xét nghiệm không ai yêu cầu.",
+          "🧪 Ống nghiệm"
+        ],
+        [
+          "Nhật ký của Holm",
+          "Nhật ký của Holm nhắc đến lõi băng ba lần. Một lần có dấu chấm than.",
+          "📔 Nhật ký"
+        ],
+        [
+          "Thứ nằm trong băng",
+          "Dưới kính hiển vi: một lớp đen mỏng trong băng. Holm đã thấy nó trước tiên.",
+          "🌋 Lớp tro"
+        ]
+      ]
+    ],
+    "poolstation-5": [
+      "Phần V · Cực quang",
+      "Giữa đêm, bầu trời chuyển sang màu xanh lục. Hélène gọi mọi người ra ngoài, vì cực quang như thế này mỗi mùa đông chỉ có vài lần. Ai cũng ngước nhìn lên, trừ một người.",
+      "Ánh sáng xanh nhạt dần. Hai mươi phút đủ để xảy ra nhiều chuyện, và giờ bạn biết chuyện gì đã xảy ra.",
+      "Dưới cực quang, mọi người đứng ngoài trời tối và chỉ thấy chính mình. Hãy bắt đầu với người nói không ai ở cùng khu vực với mình: mọi người khác bị loại khỏi khu vực đó ngay lập tức.",
+      [
+        [
+          "Ánh sáng xanh",
+          "Lúc hai giờ, bầu trời chuyển xanh. Không ai ở trong nhà thấy cả, vì họ nói không có ai ở trong nhà.",
+          "📸 Ảnh cực quang"
+        ],
+        [
+          "Nhà vật lý Hélène đo đạc",
+          "Cô bấm giờ xem mỗi đợt sáng kéo dài bao lâu. Giữa hai lần đo có một khoảng trống mười phút.",
+          "⏱️ Đồng hồ bấm giờ"
+        ],
+        [
+          "Máy ảnh trên mái",
+          "Hélène đặt trên mái một chiếc máy ảnh cứ mỗi phút chụp một tấm. Một tấm có ánh đèn cạnh chuồng chó.",
+          "📷 Máy ảnh bầu trời"
+        ],
+        [
+          "Người chăn chó Rewi không nhìn",
+          "Ai cũng đứng ngoài trời, ngửa đầu lên. Rewi thì đứng quay lưng về phía bầu trời.",
+          "🏮 Đèn bão"
+        ],
+        [
+          "Điện báo viên Ole nghe tiếng rè",
+          "Dưới cực quang, điện đài nào cũng kêu rè rè. Vậy mà Ole vẫn nghe được một bức điện, rất rõ, từ rất gần.",
+          "📡 Dây ăng-ten"
+        ],
+        [
+          "Đầu bếp Diego ở trong nhà",
+          "Ông nói mình đã thấy cực quang nhiều lần rồi. Đây là mùa đông đầu tiên của ông trên băng.",
+          "🥘 Nồi súp"
+        ],
+        [
+          "Nhà khí tượng Nancy ghi lại",
+          "Sổ khí tượng của cô ghi: trời quang, lặng gió, cực quang. Và lúc hai giờ mười phút: cửa chòi khí tượng mở.",
+          "🗝️ Chìa khóa chòi khí tượng"
+        ],
+        [
+          "Một người ấy",
+          "Cực quang kéo dài hai mươi phút. Đủ lâu để đi tới phòng vô tuyến rồi quay lại.",
+          "🕰️ Đồng hồ nhà ăn"
+        ]
+      ]
+    ],
+    "poolstation-6": [
+      "Phần VI · Xe chó kéo",
+      "Ở kho dự phòng cách mười dặm có nhiên liệu và thực phẩm cho mùa xuân. Rewi cùng hai người nữa đi xe chó kéo tới đó. Hai ngày đi về. Chiếc xe trở về với số hàng không đúng.",
+      "Những thùng hàng đã nằm trong kho dự trữ, mặt có con dấu hướng lên trên. Bên trong có gì, Holm đã ghi sẵn trong danh sách của ông.",
+      "Từ đây, gần như vụ án nào cũng nằm trên bàn chơi lớn chín nhân chín ô. Hãy dùng bút chì: gạch bỏ những ô không phù hợp, rồi xem còn lại gì.",
+      [
+        [
+          "Mười dặm",
+          "Kho dự phòng nằm cách mười dặm về phía nam. Lúc đi xe nhẹ; lúc về lẽ ra phải nặng.",
+          "🛷 Xe chó kéo"
+        ],
+        [
+          "Người chăn chó Rewi thắng xe",
+          "Bảy con chó kéo xe, như mọi khi. Con chó giỏi nhất, Kaho, ở lại trong chuồng.",
+          "🐕 Chó đầu đàn Kaho"
+        ],
+        [
+          "Danh sách kho",
+          "Theo danh sách, kho có bốn mươi thùng nhiên liệu. Rewi đếm được ba mươi sáu.",
+          "🛢️ Thùng nhiên liệu"
+        ],
+        [
+          "Thợ máy Lieve đi cùng",
+          "Cô đi để lấy chiếc xe bánh xích đã để ở kho từ mùa thu. Nó nổ máy ngay lần đầu.",
+          "🔋 Ắc quy"
+        ],
+        [
+          "Nhà băng hà học Marina đi cùng",
+          "Bà nói mình muốn khoan băng dọc đường. Bà không mang theo máy khoan.",
+          "🎒 Ba lô"
+        ],
+        [
+          "Trại dọc đường",
+          "Họ ngủ một đêm trong lều trên băng. Quanh lều có bốn hàng dấu chân. Họ chỉ có ba người.",
+          "⛺ Lều vùng cực"
+        ],
+        [
+          "Số hàng không đúng",
+          "Trên xe không có thùng nhiên liệu nào, mà là những thùng gỗ có con dấu của trạm. Những thùng đã mất tích từ một năm nay.",
+          "📦 Thùng có con dấu"
+        ],
+        [
+          "Bác sĩ Kenji chờ đợi",
+          "Anh chờ ở chuồng chó cho đến khi xe quay về. Anh đã biết trước trên xe sẽ có bao nhiêu thùng.",
+          "📋 Vận đơn"
+        ]
+      ]
+    ],
+    "poolstation-7": [
+      "Phần VII · Bóng thám không",
+      "Sáng nào và tối nào Nancy cũng thả một quả bóng thám không, mang theo một chiếc hộp nhỏ đo gió và độ lạnh. Mỗi ngày hai lần, một quả bóng bay lên. Hôm nay có một mẩu giấy buộc vào nó.",
+      "Quả bóng đã bay lên trên mây từ lâu. Mẩu giấy thì không: bạn có đủ ba chữ, và bạn biết ai đã viết chúng.",
+      "Bàn chơi lớn hơn, còn đêm thì ngắn lại. Nếu báo cáo nói một khu vực bỏ trống, thì cả khu vực đó bị loại đối với mọi người.",
+      [
+        [
+          "Mẩu giấy",
+          "Đến khi quả bóng đã bay lên, Nancy mới thấy mẩu giấy. Cô chỉ kịp đọc được ba chữ.",
+          "🎈 Bóng thám không"
+        ],
+        [
+          "Nhà khí tượng Nancy bơm bóng",
+          "Cô tự tay bơm khí hydro vào từng quả bóng. Quả này đã căng sẵn khi cô tới chòi khí tượng.",
+          "⚗️ Bình khí"
+        ],
+        [
+          "Chiếc hộp quay về",
+          "Thường thì không bao giờ thấy lại máy thám không. Chiếc này rơi xuống cạnh chuồng chó ba ngày sau.",
+          "📡 Máy thám không"
+        ],
+        [
+          "Điện báo viên Ole bắt được tín hiệu",
+          "Máy thám không truyền số đo độ lạnh về phòng vô tuyến. Đêm đó Ole ghi lại những con số không phải nhiệt độ.",
+          "🔢 Dãy số"
+        ],
+        [
+          "Nhà vật lý Hélène đọc mật mã",
+          "Cô biết mật mã của máy thám không, vì cô dùng nó để tính toán. Hai ngày sau cô mới nói nó viết gì.",
+          "📐 Thước loga"
+        ],
+        [
+          "Đầu bếp Diego và sợi dây",
+          "Sợi dây buộc quả bóng là dây bếp. Loại dây Diego dùng để buộc thịt quay.",
+          "🧵 Dây bếp"
+        ],
+        [
+          "Thợ máy Lieve và chữ in hoa",
+          "Trên bản vẽ của mình, cô luôn viết chữ in hoa. Mẩu giấy cũng viết bằng chữ in hoa.",
+          "📝 Bản vẽ kỹ thuật"
+        ],
+        [
+          "Nhà băng hà học Marina dịch",
+          "Mẩu giấy được viết bằng ba thứ tiếng, mỗi thứ tiếng một chữ. Chỉ Marina nói được cả ba.",
+          "📖 Từ điển"
+        ]
+      ]
+    ],
+    "poolstation-8": [
+      "Phần VIII · Mặt trời đầu tiên",
+      "Cuối tháng Tám, một viền sáng hiện lên trên đường chân trời. Sau bốn tháng, mặt trời trở lại, và máy bay từ đất liền cũng vậy. Còn một đêm nữa dưới cực quang, với những gương mặt như hồi giữa đông.",
+      "Van Dam là người cuối cùng bước ra khỏi máy bay, bắt tay bạn rồi nhìn mặt trời một lúc. Mặt trời lại lên trên mặt băng. Chiếc máy bay đầu tiên mang thư tới, và đưa thủ phạm về nhà.",
+      "Những vụ án cuối cùng, gần như đều trên bàn chơi lớn. Đừng sa lầy vào người khó nhất: hãy đặt những người khác trước, khi đó người cuối cùng thường chỉ còn đúng một ô.",
+      [
+        [
+          "Viền sáng",
+          "Giữa trưa, đường chân trời ửng hồng. Ai cũng ra ngoài. Một ô cửa sổ của phòng vô tuyến bị mờ hơi nước.",
+          "🪟 Cửa sổ mờ hơi nước"
+        ],
+        [
+          "Thợ máy Lieve dọn đường băng",
+          "Cô dùng xe bánh xích dọn một đường băng cho máy bay. Dưới tuyết là chiếc hộp đựng bóng đèn điện tử, đã trống không.",
+          "🧰 Hộp bóng đèn"
+        ],
+        [
+          "Bác sĩ Kenji viết báo cáo",
+          "Một bản báo cáo gửi đất liền, về chín con người và một mùa đông. Cạnh tên Holm ghi: không rõ nguyên nhân. Anh thì biết.",
+          "📄 Báo cáo y tế"
+        ],
+        [
+          "Đầu bếp Diego nấu nốt phần còn lại",
+          "Hộp đồ ăn cuối cùng của mùa đông là đào ngâm. Ông bày ra chín chiếc bát, theo thói quen.",
+          "🍑 Hộp đào"
+        ],
+        [
+          "Người chăn chó Rewi chia tay",
+          "Lũ chó ở lại cho đội sau. Rewi chỉ mang theo Kaho, và Kaho gầm gừ với một hành khách.",
+          "📿 Thẻ tên chó"
+        ],
+        [
+          "Nhà vật lý Hélène xếp đồ",
+          "Bốn tháng đo đạc vừa trong một chiếc thùng. Cô mở nó ra thêm một lần, vì một trang giấy.",
+          "📚 Sổ ghi chép"
+        ],
+        [
+          "Máy bay",
+          "Máy bay hạ cánh và phi công trao thư. Có một lá thư gửi Holm, từ một người trong trạm.",
+          "✉️ Thư máy bay"
+        ],
+        [
+          "Giữa đông, một lần nữa",
+          "Nơi mọi chuyện bắt đầu, trong phòng vô tuyến. Ở đó, Ole gửi đi bức điện mà Holm chưa bao giờ viết xong.",
+          "📨 Bức điện cuối cùng"
+        ]
+      ]
+    ],
+    "winterpaleis": [
+      "Phần I · Điệu valse cuối cùng",
+      "Cung điện Zvezdin, đêm giao thừa năm 1899. Trong phòng dạ vũ, dàn nhạc chơi điệu valse cuối cùng của thế kỷ. Lúc nửa đêm, mọi người nâng ly chào thế kỷ mới. Bá tước không có mặt.",
+      "Dàn nhạc chơi tiếp đến sáng, vì không ai dám bảo họ dừng. Ai đã mang ly rượu đến cho bá tước, bạn đã biết.",
+      "Cung điện có cả trăm cánh cửa và cũng ngần ấy căn phòng. Hãy bắt đầu với người nói rõ mình ở phòng nào; “ngay cạnh” quả trứng nạm ngọc chỉ tính ô sát bên, không bao giờ tính ô chéo.",
+      [
+        [
+          "Mười hai tiếng chuông",
+          "Đồng hồ điểm mười hai tiếng và hai trăm chiếc ly cùng nâng lên. Một chiếc ly vẫn nằm nguyên trong thư viện.",
+          "🥂 Ly pha lê"
+        ],
+        [
+          "Thư viện",
+          "Bá tước ngồi trong ghế bành cạnh lò sưởi. Cuốn sách trên đùi ông nằm lộn ngược.",
+          "📕 Cuốn sách lộn ngược"
+        ],
+        [
+          "Quản gia Fyodor đếm ly",
+          "Lúc mười một giờ bốn mươi lăm, ông bày ra hai trăm chiếc ly. Lúc mười hai giờ, trong phòng dạ vũ còn 199 chiếc.",
+          "🍾 Chai sâm panh"
+        ],
+        [
+          "Nhà soạn nhạc Sergei chỉ huy",
+          "Điệu valse mới của anh dài bảy phút. Bản tổng phổ có một đoạn nhắc lại mà hôm qua chưa có.",
+          "🎼 Tổng phổ"
+        ],
+        [
+          "Nữ bá tước Yelena đón khách",
+          "Suốt buổi tối, bà đứng cạnh cầu thang để chào khách. Lúc mười một giờ rưỡi, bà biến mất mười phút.",
+          "🪭 Quạt"
+        ],
+        [
+          "Trung úy Dmitri khiêu vũ",
+          "Anh nhảy với mọi quý bà trong phòng. Trừ vị hôn thê của mình, người đứng một mình cạnh những tấm gương.",
+          "🧤 Găng tay trắng"
+        ],
+        [
+          "Ánh đèn flash",
+          "Lúc mười hai giờ kém năm, Irina bấm đèn flash magie. Trong ảnh, cửa thư viện khép hờ.",
+          "📸 Tấm kính ảnh"
+        ],
+        [
+          "Lò sưởi",
+          "Lửa trong lò sưởi thư viện vẫn cháy to. Có người đã cho thêm củi sau mười một giờ.",
+          "🪵 Củi bạch dương"
+        ]
+      ]
+    ],
+    "winterpaleis-2": [
+      "Phần II · Quả trứng nạm ngọc",
+      "Thợ kim hoàn Pavel đã làm quả trứng suốt một năm, theo đặt hàng của bá tước. Lúc nửa đêm nó sẽ mở ra, với một bất ngờ dành cho gia đình. Bên trong trống rỗng.",
+      "Tòa cung điện nhỏ bằng vàng đã trở lại trong quả trứng. Chiếc khóa tí hon kêu tách, và bạn biết ai đã mở nó.",
+      "Ở buổi dạ vũ, ai cũng nói về người khác. Lời khai về hai người: hãy xác định vị trí của một trong hai người trước.",
+      [
+        [
+          "Chiếc khóa tí hon",
+          "Quả trứng mở bằng một chiếc chìa khóa không lớn hơn hạt gạo. Chìa khóa vẫn cắm trong ổ.",
+          "🗝️ Chìa khóa vàng"
+        ],
+        [
+          "Thợ kim hoàn Pavel giải thích",
+          "Bên trong quả trứng là một tòa cung điện bằng vàng, to bằng chiếc đê khâu. Ông biết chính xác nó nặng bao nhiêu.",
+          "⚖️ Cân vàng"
+        ],
+        [
+          "Tủ kính",
+          "Quả trứng đặt dưới lồng kính trong sảnh gương. Kính còn nguyên và khóa vẫn đóng.",
+          "🔐 Khóa tủ kính"
+        ],
+        [
+          "Gia sư Mabel và lũ trẻ",
+          "Lũ trẻ được xem quả trứng lúc mười một giờ. Mabel nói lúc đó nó vẫn còn đóng.",
+          "🎠 Ngựa gỗ"
+        ],
+        [
+          "Nhiếp ảnh gia Irina chụp quả trứng",
+          "Trong bức ảnh chụp lúc chín giờ của cô, quả trứng đang mở, và trống rỗng. Pavel nói lúc chín giờ nó vẫn còn đóng.",
+          "🖼️ Bản in ảnh"
+        ],
+        [
+          "Quản gia Fyodor giữ mọi chìa khóa",
+          "Suốt bốn mươi năm, ông giữ chìa khóa của cung điện. Trên chùm chìa khóa của ông có một chiếc không vừa cửa nào.",
+          "🔑 Chùm chìa khóa"
+        ],
+        [
+          "Bụi vàng",
+          "Trên tấm thảm trong phòng gửi đồ có bụi vàng. Pavel dùng nó để đánh bóng.",
+          "✨ Bụi vàng"
+        ],
+        [
+          "Nghệ sĩ trượt băng Vera và chiếc bao tay",
+          "Lúc trượt băng, cô mang một chiếc bao tay lông thú. Trong lớp lót có một vật cứng, to bằng chiếc đê khâu.",
+          "🦊 Bao tay lông thú"
+        ]
+      ]
+    ],
+    "winterpaleis-3": [
+      "Phần III · Sân băng",
+      "Ngày đầu năm mới, bữa tiệc chuyển ra ngoài trời. Đuốc cháy quanh mặt ao đóng băng, nhạc vang trên bờ. Trên băng có vết của ba đôi giày trượt.",
+      "Đuốc đã tắt. Trong ba vệt trượt trên băng, giờ bạn biết ai đã để lại vệt thứ ba.",
+      "Trên băng, ai cũng nhìn xuống chân mình. Người nói mình KHÔNG ở đâu cũng cho bạn biết điều gì đó: hãy gạch bỏ phòng đó ngay.",
+      [
+        [
+          "Ba vệt trượt",
+          "Ai cũng nói lúc nửa đêm chỉ có Vera trượt băng. Trên băng có ba vệt dẫn ra giữa ao.",
+          "⛸️ Giày trượt nghệ thuật"
+        ],
+        [
+          "Nghệ sĩ trượt băng Vera trình diễn",
+          "Đêm nào cô cũng trượt cùng một bài, theo cùng một bản nhạc. Hôm qua cô trượt ngắn đi một phút.",
+          "🎵 Hộp nhạc"
+        ],
+        [
+          "Lỗ thủng trên băng",
+          "Giữa ao có một lỗ thủng trên băng để cá thở. Có một ngọn đuốc nổi trong đó.",
+          "🔥 Ngọn đuốc"
+        ],
+        [
+          "Trung úy Dmitri không biết trượt băng",
+          "Anh nói mình là một sĩ quan cận vệ không biết trượt băng. Đôi giày trượt của anh vừa mới được mài.",
+          "🪨 Đá mài"
+        ],
+        [
+          "Nhà soạn nhạc Sergei trên bờ",
+          "Anh kéo vĩ cầm trên bờ, tay vẫn đeo găng. Không ai kéo vĩ cầm mà đeo găng cả.",
+          "🎻 Vĩ cầm"
+        ],
+        [
+          "Nhà xe ngựa",
+          "Giày trượt của cả gia đình treo trong nhà xe ngựa. Có một cái móc trống.",
+          "🪝 Móc trống"
+        ],
+        [
+          "Gia sư Mabel đến từ nước Anh",
+          "Cô nói ở Anh không ai trượt băng. Trên băng, cô trượt một hình số ba hoàn hảo.",
+          "🧣 Khăn len"
+        ],
+        [
+          "Dưới lớp băng",
+          "Qua lớp băng trong, có thể nhìn thấy đáy ao. Có thứ gì đó đang lấp lánh dưới ấy.",
+          "💍 Nhẫn ấn"
+        ]
+      ]
+    ],
+    "winterpaleis-4": [
+      "Phần IV · Sảnh gương",
+      "Một tuần sau, nữ bá tước tổ chức buổi dạ vũ thứ hai, trong sảnh gương, để cho thấy gia đình vẫn tiếp tục. Một trăm tấm gương và một trăm vị khách. Có một hình phản chiếu không đúng.",
+      "Những tấm gương lại treo ngay ngắn và cánh cửa phía sau đã đóng. Có một hình phản chiếu là thật, và bạn biết đó là của ai.",
+      "Trong sảnh gương, ai cũng xuất hiện hai lần, nên hãy để ý xem ai đứng ngay cạnh ai. Hãy đặt nghi phạm có ít lựa chọn nhất trước; phần còn lại sẽ theo sau.",
+      [
+        [
+          "Một trăm tấm gương",
+          "Trong sảnh gương, bạn thấy mỗi người mười lần. Có người đã thấy bá tước trong một tấm gương, sau nửa đêm.",
+          "🪞 Gương cầm tay"
+        ],
+        [
+          "Nữ bá tước Yelena mặc đồ đen",
+          "Bà để tang, đúng như phép tắc. Bên dưới chiếc váy đen là chiếc váy xanh của buổi dạ vũ.",
+          "👗 Váy dạ hội"
+        ],
+        [
+          "Hình phản chiếu",
+          "Trong gương có một người đàn ông để ria đứng cạnh cửa. Không ai đứng cạnh cửa cả.",
+          "🎩 Mũ chóp cao"
+        ],
+        [
+          "Nhiếp ảnh gia Irina và những tấm gương",
+          "Cô nói gương và đèn flash không hợp nhau. Vậy mà cô vẫn chụp cả sảnh, từ sau một tấm rèm.",
+          "🎞️ Phim âm bản"
+        ],
+        [
+          "Trung úy Dmitri và vị hôn thê",
+          "Anh nhảy một điệu với vị hôn thê, lần đầu tiên sau một tuần. Suốt điệu nhảy, anh nhìn vào tấm gương.",
+          "💐 Hoa cài áo"
+        ],
+        [
+          "Quản gia Fyodor đánh bóng",
+          "Sáng nào ông cũng đánh bóng một trăm tấm gương. Một tấm có dấu vân tay, ở độ cao của một đứa trẻ.",
+          "🧽 Da sơn dương"
+        ],
+        [
+          "Cánh cửa sau tấm gương",
+          "Sau tấm gương thứ năm mươi là một cánh cửa dẫn vào thư viện. Có người đã biết điều đó.",
+          "🚪 Cửa gương"
+        ],
+        [
+          "Nhà soạn nhạc Sergei chơi lại điệu valse",
+          "Ở buổi dạ vũ thứ hai, anh chơi lại đúng điệu valse ấy. Đến đoạn nhắc lại, nữ bá tước nhìn ra cửa.",
+          "📜 Thẻ khiêu vũ"
+        ]
+      ]
+    ],
+    "winterpaleis-5": [
+      "Phần V · Đi xe trượt tuyết",
+      "Tháng Hai, cả nhà đi xe trượt tuyết trên mặt sông Neva đóng băng, ngựa đeo chuông leng keng. Bốn chiếc xe đi, ba chiếc trở về.",
+      "Chiếc xe thứ tư đã về lại nhà xe ngựa và những chiếc chuông đã lặng im. Người trở về bằng đôi chân đã nói cho bạn biết.",
+      "Dưới những tấm chăn lông, không ai thấy ai ngồi cạnh mình. Hãy bắt đầu với người nói không ai ở cùng phòng với mình: mọi người khác bị loại khỏi phòng đó ngay lập tức.",
+      [
+        [
+          "Bốn chiếc xe",
+          "Bốn chiếc xe trượt, bốn con ngựa, mười hai người dưới chăn lông. Ba chiếc xe về tới cung điện.",
+          "🔔 Chuông xe trượt"
+        ],
+        [
+          "Quản gia Fyodor xếp chỗ",
+          "Suốt bốn mươi năm, ông quyết định ai ngồi xe nào. Năm nay ông đổi chỗ hai cái tên.",
+          "📃 Danh sách chỗ ngồi"
+        ],
+        [
+          "Chiếc xe thứ tư",
+          "Sáng hôm sau, chiếc xe thứ tư đứng cạnh nhà xe ngựa, không có ngựa. Những tấm chăn khô ráo.",
+          "🐎 Bộ yên cương"
+        ],
+        [
+          "Nghệ sĩ trượt băng Vera trượt theo",
+          "Cô trượt băng bên cạnh các xe suốt quãng đường. Đến nửa đường, cô đã vượt lên trước tất cả.",
+          "🎀 Dải lụa đỏ"
+        ],
+        [
+          "Lỗ băng trên sông Neva",
+          "Ngư dân khoét lỗ trên mặt băng sông Neva. Chiếc xe thứ tư chạy sát ngay một lỗ, và không ai hét lên.",
+          "🎣 Dây câu"
+        ],
+        [
+          "Gia sư Mabel đếm người",
+          "Ở mỗi chặng dừng, cô đếm lũ trẻ; đó là việc của cô. Cô đếm cả người lớn, và thấy thiếu một người.",
+          "📒 Sổ tay"
+        ],
+        [
+          "Thợ kim hoàn Pavel ở nhà",
+          "Ông không đi; ông còn việc phải làm. Khi các xe trở về, bàn làm việc của ông đã nguội lạnh.",
+          "🛠️ Dụng cụ chạm khắc"
+        ],
+        [
+          "Ai đã ngồi chiếc xe thứ tư",
+          "Hai người lên chiếc xe thứ tư. Một trong hai người trở về bằng đôi chân, giày vẫn khô.",
+          "👢 Ủng lông"
+        ]
+      ]
+    ],
+    "winterpaleis-6": [
+      "Phần VI · Lá thư niêm phong",
+      "Một người đưa thư của triều đình mang tới một lá thư cho bá tước, niêm phong bằng sáp đỏ. Đã có người đọc nó trước.",
+      "Lá thư đã trở về ngăn kéo, dấu niêm phong còn nguyên. Người đọc nó đầu tiên đã biết câu thứ ba từ lâu.",
+      "Từ đây, gần như vụ án nào cũng nằm trên bàn chơi lớn chín nhân chín ô. Hãy dùng bút chì: gạch bỏ những ô không phù hợp, rồi xem còn lại gì.",
+      [
+        [
+          "Sáp đỏ",
+          "Dấu niêm phong của triều đình màu đỏ và tròn. Trên lá thư này, nó đã bị nung chảy hai lần.",
+          "🔴 Sáp niêm phong"
+        ],
+        [
+          "Quản gia Fyodor nhận thư",
+          "Từ cổng tới thư viện mất năm phút đi bộ. Mang theo lá thư, ông đi mất hai mươi phút.",
+          "✉️ Thư triều đình"
+        ],
+        [
+          "Nữ bá tước Yelena đọc to",
+          "Bà đọc to lá thư cho cả nhà nghe. Bà bỏ qua một câu.",
+          "👓 Kính cầm tay"
+        ],
+        [
+          "Ấm nước",
+          "Hơi nước làm bong dấu niêm phong. Lúc ba giờ sáng, ấm nước trong nhà bếp vẫn đang đun trên lửa.",
+          "🫖 Ấm samovar"
+        ],
+        [
+          "Trung úy Dmitri biết dấu niêm phong",
+          "Là sĩ quan, tuần nào anh cũng thấy thư của triều đình. Anh biết cách đóng lại một dấu niêm phong như thế.",
+          "🎖️ Huân chương"
+        ],
+        [
+          "Nhiếp ảnh gia Irina trong phòng tối",
+          "Trong phòng tối của cô, một tấm kính ảnh đang treo cho khô. Trên đó là một lá thư.",
+          "🧪 Thuốc hiện hình"
+        ],
+        [
+          "Nhà soạn nhạc Sergei và triều đình",
+          "Lá thư viết rằng triều đình đặt một điệu valse cho buổi dạ vũ mùa xuân. Sergei đã biết từ một tuần trước.",
+          "🎶 Điệu valse mùa xuân"
+        ],
+        [
+          "Nội dung lá thư",
+          "Ba câu, nét chữ thanh nhã. Câu thứ ba nói về quyền thừa kế, và đã có người biết trước điều đó.",
+          "🪶 Bút lông ngỗng"
+        ]
+      ]
+    ],
+    "winterpaleis-7": [
+      "Phần VII · Băng tan",
+      "Tháng Tư, băng trên sông Neva vỡ ra. Những tảng băng to như căn nhà trôi qua cung điện ra biển. Cùng với các tảng băng, một bí mật nổi lên.",
+      "Sông Neva lại chảy thông ra biển. Thứ mà lớp băng giữ kín suốt mùa đông giờ nằm trên bàn của bạn.",
+      "Bàn chơi lớn hơn, còn lời khai thì ít đi. Nếu báo cáo nói một phòng bỏ trống, thì cả phòng đó bị loại đối với mọi người.",
+      [
+        [
+          "Băng vỡ",
+          "Băng vỡ với một tiếng nổ như đại bác. Cả nhà chạy ra bến sông.",
+          "🧊 Tảng băng"
+        ],
+        [
+          "Chiếc nhẫn ấn",
+          "Chiếc nhẫn dưới đáy ao không vừa tay bá tước. Nó là của một bàn tay nhỏ hơn.",
+          "📏 Thước đo nhẫn"
+        ],
+        [
+          "Gia sư Mabel viết thư về nhà",
+          "Tuần nào cô cũng viết thư về Anh. Tuần này cô viết một lá thư dài tám trang, rồi xé đi.",
+          "📮 Con tem"
+        ],
+        [
+          "Nhà xe ngựa bị ngập",
+          "Nước băng tan dâng tới trục bánh những cỗ xe. Có một chiếc vali không nổi; nó quá nặng.",
+          "🧳 Vali"
+        ],
+        [
+          "Quản gia Fyodor nghỉ hưu",
+          "Sau bốn mươi năm, ông muốn về làng. Chuyến đi của ông được trả bằng vàng.",
+          "🪙 Đồng rúp vàng"
+        ],
+        [
+          "Nghệ sĩ trượt băng Vera ra đi",
+          "Mùa đông tới cô sẽ trượt băng ở Davos, do bá tước trả tiền. Bá tước đã từng nói ông sẽ không trả.",
+          "🎫 Vé tàu"
+        ],
+        [
+          "Thợ kim hoàn Pavel và quả trứng thứ hai",
+          "Ông đã bắt tay làm quả trứng thứ hai. Nó giống hệt quả thứ nhất, đến cả chiếc khóa tí hon.",
+          "🥚 Quả trứng thứ hai"
+        ],
+        [
+          "Thứ nổi lên",
+          "Giữa những tảng băng có một chiếc hòm nhỏ của bá tước trôi theo. Bên trong có một lá thư, vẫn còn khô.",
+          "🗃️ Hòm chống nước"
+        ]
+      ]
+    ],
+    "winterpaleis-8": [
+      "Phần VIII · Buổi dạ vũ cuối cùng",
+      "Tháng Năm, cung điện đóng cửa qua mùa hè và gia đình chuyển về nhà nghỉ ở thôn quê. Còn một điệu valse nữa dưới những chùm đèn pha lê, với những gương mặt như đêm giao thừa.",
+      "Van Dam đội mũ lông, cúi chào nữ bá tước rồi bước lên cỗ xe cuối cùng ra ga. Nến đã tắt và thế kỷ mới đã bắt đầu. Bí mật cuối cùng của thế kỷ cũ đã được bạn giải đáp.",
+      "Những vụ án cuối cùng, gần như đều trên bàn chơi lớn. Đừng sa lầy vào người khó nhất: hãy đặt những người khác trước, khi đó người cuối cùng thường chỉ còn đúng một ô.",
+      [
+        [
+          "Những tấm vải phủ",
+          "Fyodor phủ vải trắng lên những chiếc ghế. Có một chiếc ghế trong thư viện đã được phủ từ tháng Giêng.",
+          "🛋️ Vải phủ ghế"
+        ],
+        [
+          "Nữ bá tước Yelena có được cung điện",
+          "Theo lá thư của triều đình, bà thừa kế cung điện. Từ tháng Mười Hai, bà đã đặt may rèm thêu chữ lồng của mình.",
+          "🧵 Chữ lồng"
+        ],
+        [
+          "Trung úy Dmitri kết hôn",
+          "Đám cưới diễn ra vào tháng Sáu, trong nhà nguyện của cung điện. Anh đã xin cha xứ dời ngày cưới sớm hơn.",
+          "💌 Thiệp cưới"
+        ],
+        [
+          "Nhiếp ảnh gia Irina chụp ảnh tập thể",
+          "Tám người đứng trước cầu thang, để chụp cho tạp chí. Một người không nhìn vào ống kính, mà nhìn về phía thư viện.",
+          "🖼️ Ảnh tập thể"
+        ],
+        [
+          "Nhà soạn nhạc Sergei hoàn thành",
+          "Điệu valse của anh giờ mang tên Đêm giao thừa. Đoạn nhắc lại từ tháng Giêng không còn trong đó nữa.",
+          "🎹 Tổng phổ mới"
+        ],
+        [
+          "Thợ kim hoàn Pavel đóng gói quả trứng",
+          "Quả trứng được chuyển về nhà nghỉ ở thôn quê, trong một thùng rơm. Pavel tự tay đóng gói và không để ai xem.",
+          "📦 Thùng rơm"
+        ],
+        [
+          "Gia sư Mabel chia tay",
+          "Sau sáu năm, cô trở về Anh. Lũ trẻ tặng cô một bức vẽ đêm giao thừa.",
+          "🖍️ Tranh vẽ của trẻ"
+        ],
+        [
+          "Nửa đêm, một lần nữa",
+          "Đồng hồ điểm mười hai tiếng, như đêm giao thừa. Lần này, không ai đứng ở cửa thư viện.",
+          "🕰️ Đồng hồ quả lắc"
+        ]
+      ]
+    ],
+    "safarilodge": [
+      "Phần I · Cuộc đại di cư",
+      "Twiga Lodge, Maasai Mara, tháng 8 năm 1974. Một triệu con linh dương đầu bò đi ngang qua khu nghỉ, và lều nào cũng kín khách. Sau buổi lửa trại, nhà làm phim thiên nhiên Rupert Vane nằm trong phòng tối, giữa những cuộn phim của mình.",
+      "Lửa đã tắt và đàn linh dương đầu bò vẫn đi tiếp trong bóng tối. Cuộn 40 vẫn chưa thấy đâu, nhưng bạn biết ai đã đóng cánh cửa.",
+      "Khu nghỉ là một dãy hiên dài với các lều bao quanh. Hãy bắt đầu với người nói rõ mình ở khu vực nào; “ngay cạnh” cây keo chỉ tính ô sát bên, không bao giờ tính ô chéo.",
+      [
+        [
+          "Sau buổi lửa trại",
+          "Lúc mười giờ, mọi người vẫn còn hát bên đống lửa. Lúc mười một giờ, có một chiếc ghế trống, và cửa phòng tối đã đóng.",
+          "🪵 Củi"
+        ],
+        [
+          "Phòng tối",
+          "Đèn đỏ vẫn còn sáng. Các cuộn phim được xếp ngay ngắn, chỉ thiếu một cuộn.",
+          "🔴 Đèn an toàn đỏ"
+        ],
+        [
+          "Bà chủ Wambui gõ cửa",
+          "Tối nào bà cũng gõ từng cánh cửa để chúc ngủ ngon. Ở phòng tối, không ai trả lời.",
+          "🔑 Chìa khóa vạn năng"
+        ],
+        [
+          "Hướng dẫn viên Otieno và chuyến đi cuối cùng",
+          "Chiều hôm đó, anh chở nhà làm phim ra sông. Họ về muộn hơn dự định một tiếng.",
+          "🚙 Sổ hành trình xe"
+        ],
+        [
+          "Người thu âm Felix thu mọi thứ",
+          "Máy ghi âm của anh chạy suốt buổi tối bên lửa trại. Lúc mười giờ rưỡi, băng im lặng mất một phút.",
+          "📼 Băng ghi âm"
+        ],
+        [
+          "Bếp trưởng Hamisi và cà phê",
+          "Sau bữa tối, ông mang cà phê quế đi mời mọi người. Tách cà phê của nhà làm phim vẫn còn nguyên trong phòng tối.",
+          "☕ Tách cà phê"
+        ],
+        [
+          "Lần quay cuối",
+          "Bảng clapper ghi: cuộn 40, lần quay 12. Cuộn 40 không thấy ở đâu cả.",
+          "🎬 Bảng clapper"
+        ],
+        [
+          "Nhà sinh vật học Birgit về muộn",
+          "Đến nửa đêm cô mới đi xem sư tử về. Động cơ xe jeep của cô đã nguội.",
+          "📡 Ăng-ten định vị"
+        ]
+      ]
+    ],
+    "safarilodge-2": [
+      "Phần II · Phim âm bản",
+      "Felix tráng những cuộn phim mà nhà làm phim còn để lại. Một cuộn đã xong. Khung hình cuối cùng có một người lẽ ra không ở đó.",
+      "Tấm phim âm bản đang được kẹp phơi cho khô. Ai có trong ảnh, giờ bạn đã biết. Vì sao, thì chưa.",
+      "Trên hiên, ai cũng nói về người khác. Lời khai về hai người: hãy xác định vị trí của một trong hai người trước.",
+      [
+        [
+          "Cuộn 39",
+          "Cuộn 39 toàn là linh dương đầu bò, linh dương đầu bò và linh dương đầu bò. Khung hình cuối cùng có một người bên bờ sông.",
+          "🎞️ Cuộn phim 39"
+        ],
+        [
+          "Người thu âm Felix tráng phim",
+          "Anh đã làm việc với nhà làm phim mười năm. Anh biết thiếu cuộn nào mà không cần đếm.",
+          "🧪 Thuốc tráng phim"
+        ],
+        [
+          "Nhà báo Amina muốn một bản in",
+          "Cô muốn một bức ảnh về cuộc di cư cho tờ báo của mình. Cô xin khung hình cuối, chứ không phải ảnh linh dương đầu bò.",
+          "📰 Mẩu báo"
+        ],
+        [
+          "Kính lúp",
+          "Dưới kính lúp, người đàn ông trong ảnh rất nhỏ, nhưng chiếc mũ thì không. Cả khu nghỉ chỉ có một người đội chiếc mũ như thế.",
+          "🔍 Kính lúp"
+        ],
+        [
+          "Hướng dẫn viên Otieno biết chỗ đó",
+          "Anh nhận ra khúc quanh của dòng sông trong ảnh. Anh nói khách du lịch không bao giờ tới đó, chỉ có hướng dẫn viên.",
+          "🗺️ Bản đồ Mara"
+        ],
+        [
+          "Phi công Kiprono bay ngang qua",
+          "Chiều hôm đó, anh bay thấp trên dòng sông cho khách xem. Anh thấy một chiếc xe jeep lẽ ra không có mặt ở đó.",
+          "✈️ Nhật ký bay"
+        ],
+        [
+          "Bác sĩ thú y Njeri biết hàng rào",
+          "Phía sau người đàn ông là hàng rào của khu bảo tồn. Cánh cổng ấy đã khóa từ tuần trước, và cô giữ chìa khóa.",
+          "🔒 Ổ khóa móc"
+        ],
+        [
+          "Người lẽ ra không ở đó",
+          "Bức ảnh có một người mà theo lời chính họ, hôm đó ốm nằm trên giường. Khu nghỉ không có bác sĩ.",
+          "📝 Giấy xin nghỉ ốm"
+        ]
+      ]
+    ],
+    "safarilodge-3": [
+      "Phần III · Hố nước",
+      "Từ tháp quan sát có thể nhìn thấy hố nước. Ban đêm, muôn loài đến đó uống nước: voi, ngựa vằn, một con sư tử. Trong bùn còn có cả dấu giày.",
+      "Muông thú lại đến uống nước và bùn khô dưới nắng. Dấu giày giờ dẫn thẳng tới bàn làm việc của bạn.",
+      "Ở hố nước, ai cũng nhìn muông thú, chứ không nhìn nhau. Người nói mình KHÔNG ở đâu cũng cho bạn biết điều gì đó: hãy gạch bỏ khu vực đó ngay.",
+      [
+        [
+          "Dấu giày",
+          "Trong bùn có dấu chân voi, ngựa vằn và sư tử. Và dấu một chiếc giày, cỡ ba mươi bảy.",
+          "👞 Khuôn thạch cao"
+        ],
+        [
+          "Nhà sinh vật học Birgit trên tháp",
+          "Đêm nào cô cũng đếm sư tử ở hố nước. Đêm qua cô đếm được ba con, và một chiếc đèn pin.",
+          "🔦 Đèn pin"
+        ],
+        [
+          "Hướng dẫn viên Otieno đọc dấu vết",
+          "Anh đọc dấu vết như người khác đọc báo. Anh nói dấu vết này chạy từ hố nước tới phòng tối.",
+          "🐾 Sổ tay dấu vết"
+        ],
+        [
+          "Ngọn đèn trên tháp",
+          "Một ngọn đèn trên tháp chiếu sáng hố nước cho khách xem. Lúc hai giờ, nó tắt, rồi lại sáng.",
+          "💡 Đèn tháp"
+        ],
+        [
+          "Bếp trưởng Hamisi lấy nước",
+          "Ông bơm nước cho nhà bếp từ giếng, không phải từ hố nước. Vậy mà ủng của ông đầy bùn.",
+          "🥾 Ủng cao su"
+        ],
+        [
+          "Nhà báo Amina thu âm",
+          "Ban đêm, máy cát-xét của cô đặt trên tháp. Trong băng có tiếng voi, và tiếng một người phụ nữ nói: ngay bây giờ.",
+          "📼 Băng cát-xét"
+        ],
+        [
+          "Bác sĩ thú y Njeri chờ đợi",
+          "Đêm nào cũng có một con tê giác đeo máy phát ở chân đến đây uống nước. Đêm qua nó không đến.",
+          "📟 Máy phát tín hiệu"
+        ],
+        [
+          "Cỡ ba mươi bảy",
+          "Ở khu nghỉ có ba người đi giày cỡ ba mươi bảy. Một trong số họ lúc nào cũng đi chân trần.",
+          "👟 Giày vải"
+        ]
+      ]
+    ],
+    "safarilodge-4": [
+      "Phần IV · Mùa mưa dài",
+      "Sau cuộc di cư là mùa mưa, sớm hơn và nặng hạt hơn bao giờ hết. Đường băng bị ngập. Không ai ra được, không ai vào được.",
+      "Mưa tạnh và đường băng khô lại. Người không vào được thì vẫn ở đây từ đầu.",
+      "Khi mưa, mọi người ngồi sát nhau dưới cùng một mái nhà, nên hãy để ý xem ai đứng ngay cạnh ai. Hãy đặt nghi phạm có ít lựa chọn nhất trước; phần còn lại sẽ theo sau.",
+      [
+        [
+          "Đường băng bị ngập",
+          "Hai ngày mưa và đường băng đã thành một cái hồ. Chiếc máy bay đứng ở giữa, nước ngập tới bánh.",
+          "📏 Thước đo mực nước"
+        ],
+        [
+          "Phi công Kiprono không đi được",
+          "Anh nói mình phải tới Nairobi. Túi của anh đã đeo sẵn thẻ hành lý ghi một thành phố khác.",
+          "🏷️ Thẻ hành lý"
+        ],
+        [
+          "Bà chủ Wambui gọi về Nairobi",
+          "Qua điện đài, bà báo có tám vị khách bị kẹt lại. Thực ra có chín người.",
+          "📻 Điện đài"
+        ],
+        [
+          "Bếp trưởng Hamisi tính toán",
+          "Với trận mưa này, ông có đủ thức ăn cho mười ngày. Sau ba ngày, gạo đã hết.",
+          "🍚 Bao gạo"
+        ],
+        [
+          "Người thu âm Felix và chỗ dột",
+          "Mái nhà xe bị dột, ngay phía trên các hộp phim. Felix chỉ mới để chúng ở đó từ hôm qua.",
+          "🧳 Hộp đựng phim"
+        ],
+        [
+          "Nhà báo Amina viết bài",
+          "Không gửi được bài, nên cô viết lại ba lần. Bản thứ ba không nói về linh dương đầu bò.",
+          "🗒️ Sổ ghi chép"
+        ],
+        [
+          "Hướng dẫn viên Otieno biết đường",
+          "Anh nói có một con đường vượt qua đồi, kể cả khi mưa. Ba ngày sau anh mới nhớ ra điều đó.",
+          "🧭 La bàn"
+        ],
+        [
+          "Không ai vào được",
+          "Không ai có thể vào khu nghỉ. Vậy mà sang ngày thứ tư, có những dấu chân mới dẫn tới nhà xe, từ ngoài vào trong.",
+          "☔ Chiếc ô"
+        ]
+      ]
+    ],
+    "safarilodge-5": [
+      "Phần V · Chuyến bay khinh khí cầu",
+      "Một người lái khinh khí cầu từ Nairobi mời khách một chuyến bay, cao trên đồng cỏ. Lúc bình minh, khinh khí cầu bay lên. Khi hạ cánh, nó thừa một hành khách.",
+      "Khinh khí cầu đã được gấp gọn trong nhà xe. Hành khách thứ bảy có một cái tên, và bạn đã ghi nó lại.",
+      "Trên đồng cỏ, ai cũng thấy mọi thứ, trừ người đứng cạnh mình. Hãy bắt đầu với người nói không ai ở cùng khu vực với mình: mọi người khác bị loại khỏi khu vực đó ngay lập tức.",
+      [
+        [
+          "Sáu chỗ",
+          "Giỏ khinh khí cầu chở được sáu người và người lái. Sau khi hạ cánh, có bảy người bước ra.",
+          "🧺 Giỏ khinh khí cầu"
+        ],
+        [
+          "Phi công Kiprono đứng dưới đất",
+          "Phi công không thích bay khi người khác cầm lái. Anh đứng dưới quan sát, qua ống nhòm.",
+          "🔭 Ống nhòm"
+        ],
+        [
+          "Nhà sinh vật học Birgit tìm sư tử",
+          "Từ trên cao có thể thấy cả một bầy cùng lúc. Cô thấy thiếu một con sư tử, và thừa một chiếc xe jeep.",
+          "🦁 Bản đồ bầy sư tử"
+        ],
+        [
+          "Những bao cát",
+          "Khinh khí cầu mang theo bao cát để hạ độ cao. Có bốn bao treo ở đó; lẽ ra phải là sáu.",
+          "⏳ Bao cát"
+        ],
+        [
+          "Bà chủ Wambui đếm khách",
+          "Bà ghi danh sáu vị khách, sáu cái tên trên tờ đăng ký. Cái tên thứ bảy được viết thêm bằng bút chì.",
+          "📋 Phiếu đăng ký"
+        ],
+        [
+          "Người thu âm Felix thu tiếng gió",
+          "Trên đồng cỏ, chỉ nghe thấy tiếng đầu đốt. Trong băng của anh có một giọng nói không phải của người lái.",
+          "🎙️ Micro"
+        ],
+        [
+          "Bếp trưởng Hamisi chuẩn bị bữa sáng",
+          "Sau khi hạ cánh có bữa sáng trên đồng cỏ, cho sáu người. Ông đã chuẩn bị cho bảy người.",
+          "🥐 Giỏ bữa sáng"
+        ],
+        [
+          "Hành khách thứ bảy",
+          "Ai cũng thấy hành khách thứ bảy bước ra. Không ai thấy người đó bước vào.",
+          "🎟️ Vé bay"
+        ]
+      ]
+    ],
+    "safarilodge-6": [
+      "Phần VI · Bác sĩ bay",
+      "Vào một buổi chiều lặng gió, một chiếc máy bay nhỏ hạ cánh xuống đường băng, đuôi có dấu chữ thập đỏ, trên máy bay có một bác sĩ. Không ai gọi ông ta đến.",
+      "Chiếc máy bay nhỏ cất cánh với một chiếc hộp rỗng. Người gọi bác sĩ không gọi vì ai bị ốm cả, và giờ bạn đã biết.",
+      "Từ đây, gần như vụ án nào cũng nằm trên bàn chơi lớn chín nhân chín ô. Hãy dùng bút chì: gạch bỏ những ô không phù hợp, rồi xem còn lại gì.",
+      [
+        [
+          "Chữ thập đỏ",
+          "Chiếc máy bay nhỏ bay từ Nairobi tới, mang theo một hộp thuốc. Theo điện đài, không ai ở khu nghỉ đã gọi.",
+          "💊 Hộp thuốc"
+        ],
+        [
+          "Bác sĩ thú y Njeri biết vị bác sĩ",
+          "Hai người từng học cùng nhau ở Nairobi. Cô làm như chưa từng gặp ông ta bao giờ.",
+          "🎓 Ảnh lớp học"
+        ],
+        [
+          "Phi công Kiprono và cuộc gọi",
+          "Cuộc gọi đến qua điện đài trên máy bay của Kiprono. Chiếc máy bay ấy đã khóa suốt đêm.",
+          "🎧 Tai nghe phi công"
+        ],
+        [
+          "Hướng dẫn viên Otieno dẫn bác sĩ đi xem",
+          "Vị bác sĩ muốn xem phòng tối. Không bác sĩ nào lại đòi xem phòng tối.",
+          "🚪 Tay nắm cửa"
+        ],
+        [
+          "Nhà báo Amina phỏng vấn",
+          "Cô hỏi vị bác sĩ ai bị ốm. Ông ta đưa ra một cái tên, và đó là tên của nhà làm phim.",
+          "📝 Ghi chép phỏng vấn"
+        ],
+        [
+          "Bếp trưởng Hamisi pha trà",
+          "Ở khu nghỉ, ai cũng uống trà với sữa và đường. Vị bác sĩ uống trà không, giống hệt một người ở đây.",
+          "🫖 Ấm trà"
+        ],
+        [
+          "Đơn thuốc",
+          "Vị bác sĩ để lại một đơn thuốc mang tên khu nghỉ. Đó là thuốc ngủ, và đã hết sạch.",
+          "📄 Đơn thuốc"
+        ],
+        [
+          "Ai đã gọi ông ta",
+          "Có người gọi bác sĩ bằng một máy phát không phải của khu nghỉ. Những con sư tử của Birgit đeo một chiếc giống hệt.",
+          "📡 Vòng cổ phát tín hiệu"
+        ]
+      ]
+    ],
+    "safarilodge-7": [
+      "Phần VII · Ngày Jamhuri",
+      "Hôm nay là 12 tháng 12, Ngày Jamhuri. Ngày lễ độc lập: âm nhạc, thịt nướng và cả khu nghỉ được nghỉ làm. Gần như cả khu nghỉ.",
+      "Ban nhạc chơi bài cuối cùng và lá cờ được hạ xuống. Ai không có mặt ở bữa tiệc, giờ bạn biết rõ.",
+      "Bàn chơi lớn hơn, còn bữa tiệc thì ồn ào hơn. Nếu báo cáo nói một khu vực bỏ trống, thì cả khu vực đó bị loại đối với mọi người.",
+      [
+        [
+          "Lá cờ",
+          "Giữa trưa, lá cờ được kéo lên và cả khu nghỉ hát quốc ca. Thiếu mất một giọng hát.",
+          "🇰🇪 Cờ Kenya"
+        ],
+        [
+          "Bếp trưởng Hamisi nướng thịt",
+          "Từ sáu giờ, một con dê quay trên xiên. Lúc mười giờ, xiên đứng yên, và Hamisi không còn ở đó.",
+          "🍖 Xiên nướng"
+        ],
+        [
+          "Bà chủ Wambui phát biểu",
+          "Mười một năm độc lập, và mười năm Twiga Lodge. Bà cảm ơn từng người, gọi đích danh, trừ một người.",
+          "📜 Bài phát biểu"
+        ],
+        [
+          "Ban nhạc từ Kisumu",
+          "Trên hiên, một ban nhạc chơi benga. Tay guitar quen nhà làm phim, và nhà làm phim cũng quen anh ta.",
+          "🎸 Đàn guitar"
+        ],
+        [
+          "Hướng dẫn viên Otieno trực",
+          "Ngày lễ phải có người ở lại với khách. Otieno tình nguyện, lần đầu tiên sau mười năm.",
+          "📅 Lịch trực"
+        ],
+        [
+          "Nhà sinh vật học Birgit cùng vui",
+          "Cô cười nói ở Đan Mạch không có Ngày Jamhuri. Vậy mà cô hát theo quốc ca, đủ mọi đoạn.",
+          "🎶 Tờ lời bài hát"
+        ],
+        [
+          "Người thu âm Felix ghi lại bữa tiệc",
+          "Anh ghi bốn tiếng nhạc. Ở giữa có mười phút im lặng, trong khi ban nhạc không hề ngừng chơi.",
+          "🎚️ Máy ghi âm"
+        ],
+        [
+          "Gần như cả khu nghỉ",
+          "Cả khu nghỉ được nghỉ làm, và ai cũng có mặt ở bữa tiệc. Vậy mà sổ nhà xe ghi một chuyến xe lúc ba giờ.",
+          "🚙 Sổ nhà xe"
+        ]
+      ]
+    ],
+    "safarilodge-8": [
+      "Phần VIII · Từ biệt đồng cỏ",
+      "Tháng Ba, khu nghỉ đóng cửa vì mùa mưa dài. Đàn linh dương đầu bò đã về phương nam từ lâu. Còn một buổi tối nữa bên lửa trại, với những gương mặt như hồi tháng Tám.",
+      "Van Dam là người cuối cùng lên chiếc máy bay nhỏ đi Nairobi và vẫy tay một lần về phía hiên nhà. Đàn linh dương đầu bò đi tiếp và khu nghỉ trở nên yên ắng. Cảnh quay cuối cùng là của bạn.",
+      "Những vụ án cuối cùng, gần như đều trên bàn chơi lớn. Đừng sa lầy vào người khó nhất: hãy đặt những người khác trước, khi đó người cuối cùng thường chỉ còn đúng một ô.",
+      [
+        [
+          "Hạ lều",
+          "Lều nào cũng được cuộn lại và cất vào nhà xe. Trong lều số sáu, có một cuộn phim nằm dưới tấm bạt lót.",
+          "⛺ Tấm bạt lót"
+        ],
+        [
+          "Cuộn 40",
+          "Cuối cùng cũng tìm thấy: cuộn 40. Felix tráng nó trong phòng tối, nơi mọi chuyện bắt đầu.",
+          "🎞️ Cuộn phim 40"
+        ],
+        [
+          "Phi công Kiprono chọn người",
+          "Chuyến bay cuối cùng đi Nairobi có bốn chỗ. Năm người muốn đi, và anh chọn chính mình.",
+          "🎫 Thẻ lên máy bay"
+        ],
+        [
+          "Bác sĩ thú y Njeri đếm tê giác",
+          "Con số của cô lại khớp: bảy con tê giác, bảy máy phát. Trong nhà xe, cô tìm thấy máy phát thứ tám.",
+          "📟 Máy phát dự phòng"
+        ],
+        [
+          "Nhà báo Amina gửi bài",
+          "Tuần sau, phóng sự về cuộc di cư của cô sẽ lên báo. Về nhà làm phim, cô viết một câu. Câu đó là sự thật.",
+          "📰 Bản in thử"
+        ],
+        [
+          "Người thu âm Felix hoàn thành bộ phim",
+          "Không có nhà làm phim, Felix làm nốt bộ phim. Anh biết chính xác cảnh quay nào phải là cảnh cuối.",
+          "✂️ Kéo cắt phim"
+        ],
+        [
+          "Bà chủ Wambui khóa cửa",
+          "Bà tự tay khóa từng cánh cửa, như mọi tối. Đến phòng tối, bà đứng lặng rất lâu.",
+          "🔐 Chùm chìa khóa"
+        ],
+        [
+          "Buổi lửa trại cuối cùng",
+          "Quanh đống lửa, mọi người hát thêm một lần nữa. Có một chiếc ghế bỏ trống, như hồi tháng Tám, và giờ ai cũng biết vì sao.",
+          "🔥 Than hồng"
+        ]
+      ]
+    ],
+    "hanok": [
+      "Phần I · Trăng mùa gặt",
+      "Hanok Dalbit, mùa thu năm 1795. Đang là Chuseok: trăng rằm mùa gặt tròn đầy và cả gia đình đều ở nhà. Sau lễ hội trăng, lão gia Yun Jae-ho nằm trong thủy tạ bên ao, cạnh một bài thơ ba câu.",
+      "Trăng lặn sau núi. Người đã ngồi cạnh lão gia trong thủy tạ có tên trong danh sách của bạn.",
+      "Hanok là một ngôi nhà của những khoảng sân và cửa trượt. Hãy bắt đầu với người nói rõ mình ở phòng nào; “ngay cạnh” bình mặt trăng chỉ tính ô sát bên, không bao giờ tính ô chéo.",
+      [
+        [
+          "Trăng rằm",
+          "Vào Chuseok, ai cũng ngắm trăng và ước một điều. Lão gia thì nhìn xuống ao.",
+          "🏮 Đèn lồng giấy"
+        ],
+        [
+          "Thủy tạ",
+          "Ông ngồi trên tấm nệm, tay vẫn cầm bút lông. Mực trên cuộn giấy đã khô.",
+          "🖌️ Bút lông"
+        ],
+        [
+          "Bánh songpyeon",
+          "Bok-sun làm một trăm chiếc bánh gạo hình bán nguyệt. Ba chiếc nằm trên đĩa của ông, chưa ai động tới.",
+          "🍡 Bánh songpyeon"
+        ],
+        [
+          "Phu nhân Kang và chùm chìa khóa",
+          "Bà giữ chìa khóa của mọi chiếc rương trong nhà. Bà nói thủy tạ không có khóa.",
+          "🗝️ Chìa khóa đồng"
+        ],
+        [
+          "Thư sinh Sang-u cúi lạy",
+          "Vào Chuseok, con trai cúi lạy tổ tiên. Cậu đã lạy thiếu một lạy.",
+          "🕯️ Nén hương"
+        ],
+        [
+          "Điệu múa vòng tròn",
+          "Sau bữa ăn, phụ nữ nắm tay nhau múa thành vòng tròn dưới trăng. Vòng tròn ít hơn thường lệ một bàn tay.",
+          "🌾 Bó lúa"
+        ],
+        [
+          "Họa sĩ Dae-ho vẽ lễ hội",
+          "Ông vẽ cả gia đình dưới trăng. Trong bản phác, lão gia ngồi trong thủy tạ, có một người ngồi bên cạnh.",
+          "🖼️ Bản phác họa"
+        ],
+        [
+          "Ba câu thơ",
+          "Một bài thơ có bốn câu. Ông viết ba câu, và không bao giờ viết câu thứ tư.",
+          "📜 Cuộn thơ"
+        ]
+      ]
+    ],
+    "hanok-2": [
+      "Phần II · Bài thơ dang dở",
+      "Ba ngày sau lễ hội, cuộn thơ lại nằm trong thủy tạ. Trên đó có ba câu. Người khác đã viết câu thứ tư.",
+      "Bài thơ đã trọn, nhưng không phải do một bàn tay. Ai đã viết câu thứ tư, giờ bạn đã biết.",
+      "Trong hanok, ai cũng nghe thấy mọi thứ qua lớp giấy dán cửa. Lời khai về hai người: hãy xác định vị trí của một trong hai người trước.",
+      [
+        [
+          "Câu thứ tư",
+          "Câu thứ tư viết bằng một nét chữ khác. Nó vần hơn ba câu kia.",
+          "📃 Giấy hanji"
+        ],
+        [
+          "Dịch quan Hak-su đọc",
+          "Ông đọc được chữ Hán, chữ Mãn và chữ Hàn. Ông đọc câu thứ tư rồi bật cười.",
+          "📖 Bảng từ vựng"
+        ],
+        [
+          "Nghiên mực",
+          "Nghiên mực của lão gia nằm trong thư phòng. Có người đã mài mực mới trên đó, sau khi ông chết.",
+          "⚫ Thỏi mực"
+        ],
+        [
+          "Thư sinh Sang-u biết làm thơ",
+          "Để đi thi, ngày nào cậu cũng làm một bài thơ. Nét chữ của cậu giống của cha. Gần như vậy.",
+          "📓 Vở tập viết"
+        ],
+        [
+          "Thợ thêu Yeon-i và con hạc",
+          "Cô thêu câu thứ tư lên tấm bình phong của mình, cạnh con hạc. Cô đã thuộc lòng câu thơ.",
+          "🧵 Chỉ lụa"
+        ],
+        [
+          "Họa sĩ Dae-ho đóng ấn",
+          "Họa sĩ nào cũng đóng một con ấn đỏ cạnh tác phẩm của mình. Cạnh câu thứ tư có nửa con ấn.",
+          "🔴 Ấn đỏ"
+        ],
+        [
+          "Phu nhân Kang nhận ra",
+          "Bà biết nét chữ của mọi người trong nhà. Bà nói bà cũng nhận ra nét chữ này, nhưng không nói là của ai.",
+          "✉️ Lá thư cũ"
+        ],
+        [
+          "Ai đã viết nốt",
+          "Câu thứ tư nói về mặt ao. Chỉ người đã ngồi trong thủy tạ mới biết vầng trăng nằm trong ao ra sao.",
+          "🪷 Lá sen"
+        ]
+      ]
+    ],
+    "hanok-3": [
+      "Phần III · Tháng muối kim chi",
+      "Tháng Mười Một, cả làng giúp muối kim chi cho mùa đông: hàng trăm cây cải thảo, muối và ớt đỏ, cùng những hàng chum trên thềm chum. Có một chiếc chum chứa thứ khác.",
+      "Những chiếc chum đã được đậy kín trên thềm và kim chi bắt đầu lên men. Gói đồ trong chiếc chum lớn nhất giờ nằm trong tay bạn.",
+      "Khi muối kim chi, mỗi người làm việc ở một nơi. Người nói mình KHÔNG ở đâu cũng cho bạn biết điều gì đó: hãy gạch bỏ phòng đó ngay.",
+      [
+        [
+          "Một trăm cây cải",
+          "Một trăm cây cải thảo nằm ngâm muối trong sân. Sáng ra chỉ còn chín mươi chín cây.",
+          "🥬 Cải thảo"
+        ],
+        [
+          "Đầu bếp Bok-sun nếm thử",
+          "Bà nếm từng chum trước khi đậy kín. Có một chum phu nhân Kang không cho bà nếm.",
+          "🥄 Thìa gỗ"
+        ],
+        [
+          "Thềm chum",
+          "Hai mươi chiếc chum xếp thành hàng, chum lớn nhất ở phía sau. Chum lớn nhất quá nặng để chỉ chứa kim chi.",
+          "🏺 Chum đất nung"
+        ],
+        [
+          "Người bán rong Man-sik mang muối tới",
+          "Năm nào anh cũng mang muối từ vùng biển lên. Năm nay anh đến sớm một ngày.",
+          "🧂 Bao muối"
+        ],
+        [
+          "Y nữ Ok-hwa phụ một tay",
+          "Cô thái gừng và tỏi. Cô thái cả một thứ rễ không có trong kim chi.",
+          "🫚 Củ nhân sâm"
+        ],
+        [
+          "Những bàn tay đỏ",
+          "Ớt làm tay ai cũng đỏ. Có một người tay vẫn sạch, mà lại nói mình đã giúp cả ngày.",
+          "🌶️ Ớt đỏ"
+        ],
+        [
+          "Họa sĩ Dae-ho vẽ cảnh làm việc",
+          "Ông vẽ những người phụ nữ đang làm việc, hàng này nối hàng kia. Bức vẽ có bảy người phụ nữ. Thực ra chỉ có sáu.",
+          "📃 Tranh vẽ trên giấy hanji"
+        ],
+        [
+          "Trong một chiếc chum",
+          "Trong chiếc chum lớn nhất, dưới lớp cải, có một gói đồ buộc kín. Nó khô ráo, và đó là một cuốn sách.",
+          "📦 Gói giấy dầu"
+        ]
+      ]
+    ],
+    "hanok-4": [
+      "Phần IV · Kỳ thi khoa cử",
+      "Mùa đông, Sang-u lên Hanyang dự kỳ thi khoa cử, đúng như cha cậu ba mươi năm trước. Cả nhà chờ kết quả. Đã có người biết trước đề thi.",
+      "Sang-u đã đỗ, với bài thơ của cha mình. Ai đã cho cậu biết đề thi, giờ bạn đã biết, và cậu cũng vậy.",
+      "Trong thư phòng, mọi người ngồi sát nhau bên sách vở, nên hãy để ý xem ai đứng ngay cạnh ai. Hãy đặt nghi phạm có ít lựa chọn nhất trước; phần còn lại sẽ theo sau.",
+      [
+        [
+          "Kỳ thi",
+          "Một nghìn sĩ tử, một đề, một ngày. Đề thi là một bài thơ về trăng.",
+          "📚 Tứ thư"
+        ],
+        [
+          "Thư sinh Sang-u lên đường",
+          "Cậu mang theo bút lông, mực và ba đôi tất. Cùng một cuộn giấy không cho ai xem.",
+          "🧦 Tất vải"
+        ],
+        [
+          "Đề thi",
+          "Đề thi yêu cầu: viết bốn câu về mặt ao dưới trăng rằm. Đúng là bài thơ của lão gia.",
+          "📋 Đề thi"
+        ],
+        [
+          "Dịch quan Hak-su quen một người",
+          "Ông quen một người trong triều chuyên chép đề thi. Ông nói mới gặp người đó một tháng trước.",
+          "🏷️ Thẻ bài triều đình"
+        ],
+        [
+          "Phu nhân Kang trả tiền",
+          "Một chuyến đi Hanyang tốn kém lắm. Bà trả bằng bạc không lấy từ rương của gia đình.",
+          "🪙 Đồng bạc"
+        ],
+        [
+          "Người bán rong Man-sik mang tin về",
+          "Ở chợ, anh nghe được kết quả trước cả gia đình. Ba ngày sau anh mới báo cho họ.",
+          "🧺 Gánh hàng"
+        ],
+        [
+          "Thợ thêu Yeon-i và cuộn thơ",
+          "Trên tấm bình phong của cô có bài thơ của lão gia. Có người đã chép lại nó, thêm cả câu thứ tư.",
+          "🪡 Kim thêu"
+        ],
+        [
+          "Ai đã biết đề thi",
+          "Đề thi đã có trong nhà từ ba tháng trước kỳ thi. Chỉ lão gia biết điều đó, và một người nữa.",
+          "✉️ Thư từ Hanyang"
+        ]
+      ]
+    ],
+    "hanok-5": [
+      "Phần V · Tuyết đầu mùa",
+      "Tuyết đầu mùa rơi trên núi và chặn lối xuống thung lũng. Không ai có thể rời khỏi nhà. Trong phòng trà, có một ngọn đèn cháy suốt đêm.",
+      "Tuyết trên lối đi đã tan. Ai đã ngồi trong phòng trà, và ngồi với ai, giờ bạn đã biết.",
+      "Khi tuyết rơi, ai cũng ở trong nhà, mỗi người một phòng. Hãy bắt đầu với người nói không ai ở cùng phòng với mình: mọi người khác bị loại khỏi phòng đó ngay lập tức.",
+      [
+        [
+          "Lối đi bị chặn",
+          "Lối xuống thung lũng phủ tuyết dày một mét. Trên tuyết trước cổng chỉ có một hàng dấu chân, đi vào.",
+          "🥿 Dép rơm"
+        ],
+        [
+          "Đầu bếp Bok-sun đốt sàn",
+          "Lửa cháy dưới sàn nhà suốt đêm để sưởi ấm. Trong phòng trà, sàn lại lạnh.",
+          "🔥 Lửa sưởi sàn"
+        ],
+        [
+          "Ánh đèn trong phòng trà",
+          "Một ngọn nến cháy trong phòng trà suốt đêm. Lúc nửa đêm, Yeon-i thấy hai cái bóng trên giấy dán cửa.",
+          "🕯️ Mẩu nến"
+        ],
+        [
+          "Y nữ Ok-hwa ở lại",
+          "Vì tuyết, cô không thể về thung lũng. Cô nói mình ngủ trong phòng nghỉ. Chăn đệm của cô không hề bị động tới.",
+          "🛏️ Chăn gấp"
+        ],
+        [
+          "Trà",
+          "Hai bát trà trong phòng trà, một bát cạn và một bát đầy. Bát đầy đã nguội và đắng.",
+          "🍵 Bát trà"
+        ],
+        [
+          "Họa sĩ Dae-ho vẽ tuyết",
+          "Ông vẽ núi non dưới tuyết. Trong tranh của ông, có ánh đèn trong một ô cửa sổ không hề tồn tại.",
+          "🏔️ Tranh cảnh tuyết"
+        ],
+        [
+          "Dịch quan Hak-su đọc sách bên nến",
+          "Ông đọc một cuốn sách từ Bắc Kinh suốt đêm. Sách nói về các vì sao, còn ông thì nhìn tuyết.",
+          "🔭 Sách thiên văn"
+        ],
+        [
+          "Hai cái bóng",
+          "Một bóng rót trà. Bóng kia ngồi yên, và đội mũ.",
+          "👒 Mũ lông đuôi ngựa"
+        ]
+      ]
+    ],
+    "hanok-6": [
+      "Phần VI · Dịch quan từ Bắc Kinh",
+      "Dịch quan Hak-su trở về từ chuyến đi sứ Bắc Kinh, với một xe đầy sách và những món đồ lạ. Ông mang về một cặp kính, một chiếc đồng hồ và một bí mật.",
+      "Đồng hồ lại điểm mười hai tiếng, chứ không phải mười ba. Những gì dịch quan mang về, ông đã trao cho bạn.",
+      "Từ đây, gần như vụ án nào cũng nằm trên bàn chơi lớn chín nhân chín ô. Hãy dùng bút chì: gạch bỏ những ô không phù hợp, rồi xem còn lại gì.",
+      [
+        [
+          "Chiếc đồng hồ",
+          "Một chiếc đồng hồ phương Tây tự điểm giờ. Đêm đầu tiên, nó điểm mười ba tiếng.",
+          "🕰️ Đồng hồ phương Tây"
+        ],
+        [
+          "Dịch quan Hak-su dỡ đồ",
+          "Sách, mực, kính và một chiếc đồng hồ. Danh sách ở biên giới còn ghi thêm một thứ, mà ông không dỡ ra.",
+          "📋 Danh sách hàng"
+        ],
+        [
+          "Cặp kính",
+          "Hak-su nói cặp kính là cho lão gia, cho đôi mắt của ông. Lão gia chưa bao giờ xin kính.",
+          "👓 Kính tròn"
+        ],
+        [
+          "Phu nhân Kang và hóa đơn",
+          "Bà trả tiền mọi thứ trong nhà mua. Chiếc đồng hồ bà không trả đồng nào, mà nó lại đắt.",
+          "🧮 Bàn tính"
+        ],
+        [
+          "Thư sinh Sang-u muốn đi Bắc Kinh",
+          "Cậu muốn theo đoàn sứ lần sau. Suốt một tháng nay cậu lén học tiếng Hán.",
+          "📖 Sách học tiếng Hán"
+        ],
+        [
+          "Người bán rong Man-sik muốn mua",
+          "Anh trả cả một năm muối để mua chiếc đồng hồ. Hak-su từ chối, không thèm nhìn.",
+          "💰 Túi tiền"
+        ],
+        [
+          "Y nữ Ok-hwa và nhân sâm",
+          "Nhân sâm cũng từ Bắc Kinh mang về, tốt hơn loại ở đây. Có một gói không phải dành cho gia đình.",
+          "🌿 Gói thảo dược"
+        ],
+        [
+          "Bí mật",
+          "Trong vỏ đồng hồ có một lá thư gấp. Thư viết bằng tiếng Hàn, nhưng được viết ở Bắc Kinh.",
+          "✉️ Lá thư gấp"
+        ]
+      ]
+    ],
+    "hanok-7": [
+      "Phần VII · Seollal",
+      "Hôm nay là Seollal, Tết âm lịch. Cả nhà mặc quần áo mới, cúi lạy người lớn và chơi yut trong sân. Có người đang ăn gian.",
+      "Những que yut đã về lại hộp và những cánh diều đã bay mất. Kẻ ăn gian giờ không còn chơi nữa.",
+      "Bàn chơi lớn hơn, còn ngôi nhà thì đông hơn. Nếu báo cáo nói một phòng bỏ trống, thì cả phòng đó bị loại đối với mọi người.",
+      [
+        [
+          "Lạy năm mới",
+          "Sáng mùng một, lũ trẻ cúi lạy thật sâu trước người lớn. Phu nhân Kang nhận ít hơn thường lệ một lạy.",
+          "🍲 Bát tteokguk"
+        ],
+        [
+          "Yut",
+          "Bốn que tung lên không. Ba lần liền, chúng rơi xuống cùng một mặt.",
+          "🎲 Que yut"
+        ],
+        [
+          "Đầu bếp Bok-sun dọn món",
+          "Ăn một bát tteokguk là thêm một tuổi. Bok-sun múc mười bát cho chín người.",
+          "🥣 Bát canh"
+        ],
+        [
+          "Cánh diều",
+          "Vào Seollal, người ta thả diều mang theo những lo âu, rồi cắt dây. Có một cánh diều mang một cái tên.",
+          "🪁 Cánh diều"
+        ],
+        [
+          "Thợ thêu Yeon-i đính hôn",
+          "Năm mới, cô biết mình sẽ lấy ai: một người ở Hanyang. Cô đã biết tên anh ta trước khi có ai nói ra.",
+          "💍 Nhẫn cưới"
+        ],
+        [
+          "Họa sĩ Dae-ho vào cuộc chơi",
+          "Lần đầu tiên sau mười năm, ông chơi yut, và thắng tất cả. Que của ông nặng hơn ở một bên.",
+          "🪵 Que gắn chì"
+        ],
+        [
+          "Dịch quan Hak-su tính năm",
+          "Ông nói ở Bắc Kinh là một năm khác, theo một lịch khác. Vậy mà thư của ông lại ghi ngày theo lịch ở đây.",
+          "📅 Lịch âm"
+        ],
+        [
+          "Có người ăn gian",
+          "Ăn gian khi chơi yut thì cuối cùng vẫn thua. Lão gia vẫn luôn nói vậy.",
+          "⚪ Quân cờ"
+        ]
+      ]
+    ],
+    "hanok-8": [
+      "Phần VIII · Hoa nở trên núi",
+      "Tháng Tư, hoa đỗ quyên nhuộm hồng núi non. Còn một buổi tối uống trà nữa trong thủy tạ, với những gương mặt như đêm trăng mùa gặt.",
+      "Van Dam đội mũ, cúi chào phu nhân Kang rồi đi xuống thung lũng giữa những khóm đỗ quyên. Trăng lại tròn trên núi. Bài thơ đã trọn, và câu cuối cùng là do bạn viết.",
+      "Những vụ án cuối cùng, gần như đều trên bàn chơi lớn. Đừng sa lầy vào người khó nhất: hãy đặt những người khác trước, khi đó người cuối cùng thường chỉ còn đúng một ô.",
+      [
+        [
+          "Bánh hoa đỗ quyên",
+          "Mùa xuân, người ta làm những chiếc bánh nhỏ đặt một bông đỗ quyên lên trên. Thiếu một chiếc, và nó nằm trong thủy tạ.",
+          "🌸 Bánh hoa đỗ quyên"
+        ],
+        [
+          "Phu nhân Kang đọc cuộn thơ",
+          "Bà đọc to bài thơ, đủ cả bốn câu. Đến câu thứ tư, giọng bà không hề run.",
+          "🎐 Chuông gió"
+        ],
+        [
+          "Thư sinh Sang-u ra làm quan",
+          "Cậu được bổ nhiệm một chức ở kinh thành, với bài thơ của cha làm bằng chứng. Ngày mai cậu đi, một mình.",
+          "📃 Chiếu bổ nhiệm"
+        ],
+        [
+          "Y nữ Ok-hwa mang thảo dược tới",
+          "Mùa xuân nào cô cũng mang thảo dược cho cả năm. Năm nay cô mang bớt một phần, vì bớt một người.",
+          "🧺 Giỏ thảo dược"
+        ],
+        [
+          "Người bán rong Man-sik trở lại",
+          "Anh mang hàng hóa và tin tức từ thung lũng lên. Tin tức là về ngôi nhà này, và đó là sự thật.",
+          "🎒 Gùi hàng"
+        ],
+        [
+          "Đầu bếp Bok-sun mở chum cuối cùng",
+          "Mẻ kim chi cuối cùng của mùa đông. Dưới đáy chum không còn gì, và như thế là tốt.",
+          "🏺 Chum rỗng"
+        ],
+        [
+          "Họa sĩ Dae-ho hoàn thành",
+          "Bức tranh lễ hội trăng của ông đã xong. Trong thủy tạ, lão gia ngồi một mình, không có ai bên cạnh.",
+          "🖼️ Tranh trăng"
+        ],
+        [
+          "Bát trà cuối cùng",
+          "Nơi mọi chuyện bắt đầu, trong thủy tạ bên ao. Vầng trăng nằm trong nước, đúng như câu thơ thứ tư.",
+          "🫖 Ấm trà men ngọc"
+        ]
+      ]
     ]
   },
 
@@ -8061,6 +11705,38 @@
       "vuurtoren": {
         "rw": "khu vực",
         "rws": "khu vực"
+      },
+      "oceaanstomer": {
+        "rw": "khu vực",
+        "rws": "khu vực"
+      },
+      "ryokan": {
+        "rw": "khu vực",
+        "rws": "khu vực"
+      },
+      "fazenda": {
+        "rw": "khu vực",
+        "rws": "khu vực"
+      },
+      "zeppelin": {
+        "rw": "khu vực",
+        "rws": "khu vực"
+      },
+      "poolstation": {
+        "rw": "khu vực",
+        "rws": "khu vực"
+      },
+      "winterpaleis": {
+        "rw": "phòng",
+        "rws": "phòng"
+      },
+      "safarilodge": {
+        "rw": "khu vực",
+        "rws": "khu vực"
+      },
+      "hanok": {
+        "rw": "phòng",
+        "rws": "phòng"
       }
     },
     "furniture": {
@@ -8303,6 +11979,138 @@
       },
       "verrekijker": {
         "a": "một chiếc kính viễn vọng"
+      },
+      "stuurrad": {
+        "a": "một chiếc bánh lái"
+      },
+      "scheepstelegraaf": {
+        "a": "một chiếc máy truyền lệnh"
+      },
+      "dekstoel": {
+        "a": "một chiếc ghế xếp"
+      },
+      "scheepsbel": {
+        "a": "một chiếc chuông tàu"
+      },
+      "hoedendoos": {
+        "a": "một chiếc hộp mũ"
+      },
+      "steenlantaarn": {
+        "a": "một chiếc đèn lồng đá"
+      },
+      "tetsubin": {
+        "a": "một chiếc ấm sắt"
+      },
+      "byobu": {
+        "a": "một bức bình phong vàng"
+      },
+      "bonsai": {
+        "a": "một chậu bonsai"
+      },
+      "wagasa": {
+        "a": "một chiếc ô giấy"
+      },
+      "futon": {
+        "a": "một tấm nệm futon"
+      },
+      "koffiezak": {
+        "a": "một bao cà phê"
+      },
+      "koffiemolen": {
+        "a": "một chiếc cối xay cà phê"
+      },
+      "koffiestruik": {
+        "a": "một cây cà phê"
+      },
+      "papegaai": {
+        "a": "một con vẹt"
+      },
+      "schommelstoel": {
+        "a": "một chiếc ghế bập bênh"
+      },
+      "luchtschroef": {
+        "a": "một chiếc cánh quạt"
+      },
+      "sextant": {
+        "a": "một chiếc kính lục phân"
+      },
+      "postzak": {
+        "a": "một chiếc túi thư"
+      },
+      "wereldbol": {
+        "a": "một quả địa cầu"
+      },
+      "schrijfmachine": {
+        "a": "một chiếc máy đánh chữ"
+      },
+      "zender": {
+        "a": "một chiếc điện đài"
+      },
+      "sledehond": {
+        "a": "một con chó kéo xe"
+      },
+      "weerballon": {
+        "a": "một quả bóng thám không"
+      },
+      "sneeuwrups": {
+        "a": "một chiếc xe bánh xích"
+      },
+      "microscoop": {
+        "a": "một chiếc kính hiển vi"
+      },
+      "balalaika": {
+        "a": "một cây đàn balalaika"
+      },
+      "matroesjka": {
+        "a": "một con búp bê matryoshka"
+      },
+      "juwelenei": {
+        "a": "một quả trứng nạm ngọc"
+      },
+      "schaatsen": {
+        "a": "một đôi giày trượt băng"
+      },
+      "ijszwaan": {
+        "a": "một bức tượng thiên nga băng"
+      },
+      "kaviaar": {
+        "a": "một bát trứng cá muối"
+      },
+      "safariwagen": {
+        "a": "một chiếc xe safari"
+      },
+      "klamboe": {
+        "a": "một chiếc màn chống muỗi"
+      },
+      "windzak": {
+        "a": "một chiếc túi gió"
+      },
+      "acacia": {
+        "a": "một cây keo"
+      },
+      "giraf": {
+        "a": "một con hươu cao cổ gỗ"
+      },
+      "sisalmand": {
+        "a": "một chiếc giỏ sisal"
+      },
+      "gayageum": {
+        "a": "một cây đàn gayageum"
+      },
+      "kimchipot": {
+        "a": "một chiếc chum kim chi"
+      },
+      "janggu": {
+        "a": "một chiếc trống janggu"
+      },
+      "maanvaas": {
+        "a": "một chiếc bình mặt trăng"
+      },
+      "inktsteen": {
+        "a": "một chiếc nghiên mực"
+      },
+      "theetafel": {
+        "a": "một chiếc bàn trà"
       }
     },
     "templates": {
@@ -9041,6 +12849,325 @@
         },
         "Werkplaats": {
           "the": "xưởng"
+        },
+        "Voorraadkamer": {
+          "the": "kho dự trữ"
+        }
+      },
+      "oceaanstomer": {
+        "Promenadedek": {
+          "the": "boong đi dạo",
+          "in": "trên boong đi dạo"
+        },
+        "Balzaal": {
+          "the": "phòng dạ vũ"
+        },
+        "Rookkamer": {
+          "the": "phòng xì gà"
+        },
+        "Eetzaal": {
+          "the": "phòng ăn"
+        },
+        "Suite": {
+          "the": "phòng suite"
+        },
+        "Machinekamer": {
+          "the": "phòng máy"
+        },
+        "Brug": {
+          "the": "đài chỉ huy",
+          "in": "trên đài chỉ huy"
+        },
+        "Radiokamer": {
+          "the": "phòng vô tuyến"
+        },
+        "Kombuis": {
+          "the": "bếp tàu"
+        },
+        "Ruim": {
+          "the": "khoang hàng"
+        },
+        "Bibliotheek": {
+          "the": "thư viện"
+        },
+        "Serre": {
+          "the": "sảnh cây cọ"
+        }
+      },
+      "ryokan": {
+        "Gastenkamer": {
+          "the": "phòng nghỉ"
+        },
+        "Onsen": {
+          "the": "khu suối nước nóng"
+        },
+        "Theehuis": {
+          "the": "trà thất"
+        },
+        "Tuin": {
+          "the": "khu vườn"
+        },
+        "Keuken": {
+          "the": "nhà bếp"
+        },
+        "Veranda": {
+          "the": "hiên nhà",
+          "in": "trên hiên nhà"
+        },
+        "Hal": {
+          "the": "sảnh"
+        },
+        "Eetzaal": {
+          "the": "phòng ăn"
+        },
+        "Bamboebos": {
+          "the": "rừng tre"
+        },
+        "Voorraadkamer": {
+          "the": "kho dự trữ"
+        },
+        "Steiger": {
+          "the": "bến thuyền",
+          "in": "trên bến thuyền"
+        },
+        "Wasruimte": {
+          "the": "phòng tắm"
+        }
+      },
+      "fazenda": {
+        "Droogvloer": {
+          "the": "sân phơi",
+          "in": "trên sân phơi"
+        },
+        "Koffieveld": {
+          "the": "vườn cà phê"
+        },
+        "Pakhuis": {
+          "the": "nhà kho"
+        },
+        "Branderij": {
+          "the": "xưởng rang"
+        },
+        "Veranda": {
+          "the": "hiên nhà",
+          "in": "trên hiên nhà"
+        },
+        "Kapel": {
+          "the": "nhà nguyện"
+        },
+        "Stal": {
+          "the": "chuồng ngựa"
+        },
+        "Keuken": {
+          "the": "nhà bếp"
+        },
+        "Eetkamer": {
+          "the": "phòng ăn"
+        },
+        "Salon": {
+          "the": "phòng khách"
+        },
+        "Studeerkamer": {
+          "the": "thư phòng"
+        },
+        "Serre": {
+          "the": "nhà kính"
+        }
+      },
+      "zeppelin": {
+        "Salon": {
+          "the": "phòng khách"
+        },
+        "Eetzaal": {
+          "the": "phòng ăn"
+        },
+        "Slaapcabine": {
+          "the": "cabin ngủ"
+        },
+        "Kombuis": {
+          "the": "bếp tàu"
+        },
+        "Bar": {
+          "the": "quán bar"
+        },
+        "Kaartenkamer": {
+          "the": "phòng bản đồ"
+        },
+        "Radiokamer": {
+          "the": "phòng vô tuyến"
+        },
+        "Stuurgondel": {
+          "the": "khoang lái"
+        },
+        "Motorgondel": {
+          "the": "khoang động cơ"
+        },
+        "Loopbrug": {
+          "the": "lối đi hẹp",
+          "in": "trên lối đi hẹp"
+        },
+        "Postkamer": {
+          "the": "phòng thư"
+        },
+        "Uitkijkpost": {
+          "the": "chòi canh",
+          "in": "trên chòi canh"
+        }
+      },
+      "poolstation": {
+        "Radiokamer": {
+          "the": "phòng vô tuyến"
+        },
+        "Kennel": {
+          "the": "chuồng chó"
+        },
+        "Laboratorium": {
+          "the": "phòng thí nghiệm"
+        },
+        "Kantine": {
+          "the": "nhà ăn"
+        },
+        "Slaapzaal": {
+          "the": "phòng ngủ"
+        },
+        "Machinekamer": {
+          "the": "phòng máy phát"
+        },
+        "Ziekenboeg": {
+          "the": "phòng y tế"
+        },
+        "Voorraadkamer": {
+          "the": "kho dự trữ"
+        },
+        "Werkplaats": {
+          "the": "xưởng"
+        },
+        "Weerhut": {
+          "the": "chòi khí tượng"
+        },
+        "Observatorium": {
+          "the": "đài quan sát"
+        },
+        "Sneeuwtunnel": {
+          "the": "đường hầm tuyết"
+        }
+      },
+      "winterpaleis": {
+        "Balzaal": {
+          "the": "phòng dạ vũ"
+        },
+        "Bibliotheek": {
+          "the": "thư viện"
+        },
+        "Kapel": {
+          "the": "nhà nguyện"
+        },
+        "IJsbaan": {
+          "the": "sân băng",
+          "in": "trên sân băng"
+        },
+        "Serre": {
+          "the": "nhà kính"
+        },
+        "Spiegelzaal": {
+          "the": "sảnh gương"
+        },
+        "Rookkamer": {
+          "the": "phòng xì gà"
+        },
+        "Keuken": {
+          "the": "nhà bếp"
+        },
+        "Trappenhuis": {
+          "the": "cầu thang",
+          "in": "trên cầu thang"
+        },
+        "Eetzaal": {
+          "the": "phòng ăn"
+        },
+        "Garderobe": {
+          "the": "phòng gửi đồ"
+        },
+        "Koetshuis": {
+          "the": "nhà xe ngựa"
+        }
+      },
+      "safarilodge": {
+        "Veranda": {
+          "the": "hiên nhà",
+          "in": "trên hiên nhà"
+        },
+        "Waterpoel": {
+          "the": "khu hố nước"
+        },
+        "Kampvuur": {
+          "the": "khu lửa trại"
+        },
+        "Bar": {
+          "the": "quán bar"
+        },
+        "Slaaptent": {
+          "the": "lều ngủ"
+        },
+        "Landingsbaan": {
+          "the": "đường băng",
+          "in": "trên đường băng"
+        },
+        "Uitkijktoren": {
+          "the": "tháp quan sát",
+          "in": "trên tháp quan sát"
+        },
+        "Keuken": {
+          "the": "nhà bếp"
+        },
+        "Donkere kamer": {
+          "the": "phòng tối"
+        },
+        "Kantoor": {
+          "the": "văn phòng"
+        },
+        "Garage": {
+          "the": "nhà xe"
+        },
+        "Eetzaal": {
+          "the": "phòng ăn"
+        }
+      },
+      "hanok": {
+        "Binnenplaats": {
+          "the": "sân trong",
+          "in": "trong sân"
+        },
+        "Theekamer": {
+          "the": "phòng trà"
+        },
+        "Keuken": {
+          "the": "nhà bếp"
+        },
+        "Studeerkamer": {
+          "the": "thư phòng"
+        },
+        "Paviljoen": {
+          "the": "thủy tạ"
+        },
+        "Bibliotheek": {
+          "the": "thư viện"
+        },
+        "Gastenkamer": {
+          "the": "phòng nghỉ"
+        },
+        "Kruidentuin": {
+          "the": "vườn thuốc"
+        },
+        "Poort": {
+          "the": "khu cổng"
+        },
+        "Voorouderhal": {
+          "the": "từ đường"
+        },
+        "Kruikenterras": {
+          "the": "thềm chum",
+          "in": "trên thềm chum"
         },
         "Voorraadkamer": {
           "the": "kho dự trữ"
