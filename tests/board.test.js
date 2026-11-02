@@ -140,6 +140,81 @@ const active = () => document.querySelector('.screen.active').id;
     Board.undo(); Board.undo(); Board.undo(); Board.undo();
     check(Board.placements.every(c => !c) && Board.history.length === 0, 'vier keer Terug: bord weer leeg');
 
+    // ── 1.6 Kruisje (uitsluiten): per verdachte, nog eens tikken haalt het weg, Terug, Gum, tussenstand ──
+    {
+      const freeCells = [];
+      for (let y = 0; y < p.rows; y++) for (let x = 0; x < p.cols; x++) {
+        if (!p.furniture.has(FloorPlan.key(x, y)) && !(p.victim.x === x && p.victim.y === y)) freeCells.push({ x, y });
+      }
+      const [c1, c2, c3] = freeCells.slice(-3);
+      const k1 = FloorPlan.key(c1.x, c1.y);
+      const xs = (x, y, cls) => cellAt(x, y).querySelectorAll('.bx i' + (cls ? '.' + cls : '')).length;
+      document.getElementById('toast').classList.remove('show');
+      document.getElementById('btn-board-cross').click();
+      check(Board.mode === 'cross' && document.getElementById('btn-board-cross').classList.contains('active') && /Kruisje/.test(document.getElementById('toast-text').textContent), 'Kruisje: vierde stand naast Plaats, Potlood en Gum, eerste keer met uitleg');
+      Board.active = 0;
+      cellAt(c1.x, c1.y).click();
+      check(Board.crosses.get(k1) && Board.crosses.get(k1).has(0) && xs(c1.x, c1.y, 'own') === 1 && !Board.placements[0], 'tik zet een kruisje voor de gekozen verdachte, niemand geplaatst');
+      Board.active = 1; cellAt(c1.x, c1.y).click();
+      check(Board.crosses.get(k1).size === 2 && xs(c1.x, c1.y, 'own') === 2, 'tweede verdachte: eigen kruisje in eigen kleur op hetzelfde vakje');
+      cellAt(c1.x, c1.y).click();
+      check(Board.crosses.get(k1).size === 1 && !Board.crosses.get(k1).has(1), 'nog eens tikken haalt het kruisje weg');
+      // potlood en kruisje sluiten elkaar per verdachte uit
+      Board.active = 0;
+      Board.setMode('mark'); cellAt(c2.x, c2.y).click();
+      Board.setMode('cross'); cellAt(c2.x, c2.y).click();
+      check(!Board.marks.has(FloorPlan.key(c2.x, c2.y)) && Board.crosses.get(FloorPlan.key(c2.x, c2.y)).has(0), 'kruisje vervangt het stipje van dezelfde verdachte');
+      // kruisjes tellen niet als zet: geen poging, geen plaatsing, de hint kijkt er niet naar
+      check(Board.attempts === 0 && Board.placements.every(c => !c) && Board.history.length === 5, 'kruisjes tellen niet als poging of plaatsing; elke tik is één stap voor Terug');
+      document.getElementById('btn-board-undo').click();
+      check(!Board.crosses.has(FloorPlan.key(c2.x, c2.y)) && Board.marks.get(FloorPlan.key(c2.x, c2.y)).has(0), 'Terug haalt het kruisje weg en zet het stipje terug');
+      // tussenstand: kruisjes worden bewaard en komen terug
+      Board.isDaily = true; Board.saveResume();
+      const saved = JSON.parse(App.storageGet(Board.RESUME_KEY));
+      check(Array.isArray(saved.crosses) && saved.crosses.some(([k, v]) => k === k1 && v.includes(0)), 'tussenstand bewaart de kruisjes');
+      Board.crosses = new Map(); Board.restoreResume();
+      check(Board.crosses.get(k1) && Board.crosses.get(k1).has(0), 'verder waar je was: kruisjes terug');
+      Board.isDaily = false; Board.clearResume();
+      // Gum haalt kruisjes weg
+      Board.setMode('erase'); cellAt(c1.x, c1.y).click();
+      check(!Board.crosses.has(k1) && xs(c1.x, c1.y) === 0, 'Gum haalt de kruisjes van een vakje weg');
+      // op een bezet vakje: geen kruisje
+      Board.setMode('place'); Board.active = 0; cellAt(c3.x, c3.y).click();
+      Board.setMode('cross'); Board.active = 1; cellAt(c3.x, c3.y).click();
+      check(!Board.crosses.has(FloorPlan.key(c3.x, c3.y)), 'geen kruisje op een vakje waar al iemand staat');
+
+      // ── 1.6 Rij en kolom automatisch wegstrepen (instelling, standaard aan; alleen weergave) ──
+      const line = freeCells.filter(c => (c.x === c3.x) !== (c.y === c3.y));
+      check(Board.autoStrikeOn() && document.getElementById('chk-autostrike').checked, 'wegstrepen staat standaard aan');
+      check(line.every(c => cellAt(c.x, c.y).querySelector('.bx i.auto')) && document.querySelectorAll('#board-grid .bx i.auto').length === line.length, `na plaatsen: een licht kruisje op de ${line.length} vrije vakjes van rij en kolom`);
+      check(!cellAt(c3.x, c3.y).querySelector('.bx') && !Board.crosses.size, 'niet op het vakje zelf, en niet bewaard als eigen kruisje');
+      const chk = document.getElementById('chk-autostrike');
+      chk.checked = false; chk.dispatchEvent(new window.Event('change'));
+      check(App.storageGet('crimson-autostrike') === '0' && document.querySelectorAll('#board-grid .bx i.auto').length === 0, 'instelling uit: geen automatische kruisjes');
+      chk.checked = true; chk.dispatchEvent(new window.Event('change'));
+      check(document.querySelectorAll('#board-grid .bx i.auto').length === line.length, 'instelling weer aan: ze zijn terug');
+      Board.undo();
+      check(!Board.placements[0] && document.querySelectorAll('#board-grid .bx i.auto').length === 0, 'Terug na plaatsen: de lichte kruisjes gaan mee');
+      check(FloorPlan.hint(p, Board.placements).type !== 'mistake' && Board.attempts === 0, 'de hint en de fouttelling kijken niet naar kruisjes');
+      // terug naar een leeg bord voor de rest van de test
+      Board.crosses = new Map(); Board.marks = new Map(); Board.history = []; Board.placements = Board.placements.map(() => null);
+      Board.setMode('place'); Board.active = 0; Board.after();
+      check(document.querySelectorAll('#board-grid .bx').length === 0 && Board.history.length === 0, 'bord weer leeg');
+      // geen vergrootknop bij een bord kleiner dan 8×8
+      check(document.getElementById('btn-board-zoom').hidden && !document.getElementById('btn-board-help').hidden, '7×7: geen vergrootknop, wel de "?"');
+      // "?": alle uitlegkaarten opnieuw, eerst wat in deze zaak voorkomt; de klok staat stil zolang je leest
+      Board.startTimer();
+      document.getElementById('btn-board-help').click();
+      const cards = [...document.querySelectorAll('#help-cards .help-card')];
+      const kindsHere = new Set(p.clues.map(c => c.kind));
+      const hereCount = window.Mentor.INTROS.filter(i => i.kinds.some(k => kindsHere.has(k))).length;
+      check(document.getElementById('help-modal').classList.contains('active') && cards.length === window.Mentor.INTROS.length && cards.slice(0, hereCount).every(c => c.classList.contains('here')) && !cards.some(c => c.dataset.help === 'leeg-rijen'), `"?" toont de ${cards.length} uitlegkaarten, de ${hereCount} van deze zaak eerst (geen meesterkaart bij gemiddeld)`);
+      check(Board.timerId === null, 'klok staat stil zolang de uitleg open is');
+      Board.elapsed = 75;
+      document.getElementById('btn-help-close').click();
+      check(!document.getElementById('help-modal').classList.contains('active') && Board.timerId !== null && Board.elapsed === 75, 'Sluiten: klok loopt verder waar hij was');
+    }
+
     // ── slachtoffervakje weigert, maar vertelt wie het is ──
     Board.active = 0;
     cellAt(p.victim.x, p.victim.y).click();
@@ -270,6 +345,40 @@ const active = () => document.querySelector('.screen.active').id;
     check(document.querySelectorAll('#week-strip .wday.played').length === 1 && document.querySelector('#week-strip .wday.today').classList.contains('played'), 'weekstrook: vandaag afgevinkt');
     check(/Dagelijkse zaak/.test(document.getElementById('score-rows').textContent) && document.getElementById('daily-bonus').textContent.includes('opgelost') && document.getElementById('btn-board-daily').textContent === 'Nog een zaak', 'dagelijkse bonus geteld, kaart toont opgelost');
 
+    // ── 1.6 meester (9×9): kaart over lege rijen en kolommen, vergrootknop, inzoomen en terug, "?" ──
+    {
+      const seenBefore = App.storageGet('crimson-newclue-seen');
+      App.storageSet('crimson-newclue-seen', JSON.stringify(window.Mentor.INTROS.map(i => i.id)));
+      Board.start('meester', 4604, false, 'landhuis');
+      check(Board.newIntro && Board.newIntro.id === 'leeg-rijen' && document.getElementById('newclue-modal').classList.contains('active') && /Lege rijen en kolommen/.test(document.getElementById('newclue').textContent), 'eerste meesterzaak: één keer de kaart over lege rijen en kolommen');
+      document.getElementById('btn-newclue-ok').click();
+      Board.start('meester', 4604, false, 'landhuis');
+      check(!Board.newIntro && !document.getElementById('newclue-modal').classList.contains('active'), 'daarna niet meer vanzelf');
+      const zb = document.getElementById('btn-board-zoom');
+      check(!zb.hidden && /Inzoomen/.test(zb.getAttribute('aria-label')) && Board.zoom === 1, '9×9: vergrootknop in de bovenbalk');
+      Board.baseW = Board.baseH = 270;   // jsdom heeft geen opmaak: de maat die fitBoard anders meet
+      Board.lastCell = { x: 7, y: 7 };
+      zb.click();
+      const stage = document.querySelector('#screen-board .board-stage'), grid = document.getElementById('board-grid');
+      check(Board.zoom >= 1.6 && stage.classList.contains('zoomed') && Math.abs(parseFloat(grid.style.width) - 270 * Board.zoom) < 0.01 && /Heel bord/.test(zb.getAttribute('aria-label')) && zb.classList.contains('on'), `inzoomen: het bord wordt ${Board.zoom.toFixed(1)}× zo groot opgemaakt`);
+      check(/translate\(/.test(grid.style.transform), 'ingezoomd: het bord schuift met een transform');
+      zb.click();
+      check(Board.zoom === 1 && !stage.classList.contains('zoomed') && grid.style.transform === '', 'één tik: weer het hele bord');
+      Board.zoomTo(2.4);
+      check(Board.zoom === 2.4 && stage.classList.contains('zoomed'), 'traploos zoomen (knijpen, trackpad)');
+      Board.zoomTo(1.02);
+      check(Board.zoom === 1 && !stage.classList.contains('zoomed'), 'bijna 1×: terug naar het hele bord');
+      Board.zoomTo(2);
+      Board.start('meester', 4604, false, 'landhuis');
+      check(Board.zoom === 1 && !stage.classList.contains('zoomed'), 'nieuwe zaak begint met het hele bord');
+      document.getElementById('btn-board-help').click();
+      const first = document.querySelector('#help-cards .help-card');
+      check(first && first.dataset.help === 'leeg-rijen' && first.classList.contains('here') && document.querySelectorAll('#help-cards .help-card').length === window.Mentor.INTROS.length + 1, 'meester: "?" begint met de kaart over lege rijen en kolommen');
+      document.getElementById('btn-help-close').click();
+      Board.stopTimer();
+      App.storageSet('crimson-newclue-seen', JSON.stringify([...JSON.parse(seenBefore || '[]'), 'leeg-rijen']));
+    }
+
     // ── zaak van de week ──
     document.getElementById('btn-play-again').click(); await sleep(300);
     document.getElementById('btn-week').click(); await sleep(300);
@@ -352,7 +461,8 @@ const active = () => document.querySelector('.screen.active').id;
     check(document.querySelectorAll('#quest-list .quest').length === 3, 'opdrachten van vandaag: drie op het startscherm (' + [...document.querySelectorAll('#quest-list .quest-text')].map(e => e.firstChild.textContent).join(' / ') + ')');
     check(!document.getElementById('btn-next-case').hidden && /De verdwenen sleutel/.test(document.getElementById('btn-next-case').textContent) && !document.getElementById('btn-map').hidden, 'volgende-zaak-knop en "Naar de kaart"');
     check(window.Campaign.stars('landhuis', 0) === 3 && window.Campaign.isUnlocked('landhuis', 1), 'voortgang bewaard, zaak 2 open');
-    document.getElementById('btn-map').click(); await sleep(300);
+    // de kaart (1024 knopen) opbouwen duurt in jsdom soms langer dan de 250 ms van navigateTo: ruim wachten
+    document.getElementById('btn-map').click(); await sleep(800);
     check(active() === 'screen-campaign' && node('landhuis', 0).classList.contains('done') && node('landhuis', 0).querySelector('.mnode-stars').textContent === '★★★' && node('landhuis', 1).classList.contains('open') && document.getElementById('campaign-total').textContent === '★ 3/3072', 'kaart bijgewerkt: zaak 1 klaar met drie sterren, zaak 2 open');
     document.getElementById('btn-map-play').click(); await sleep(300);
     check(active() === 'screen-board' && Board.campaignCase.idx === 1 && !document.getElementById('part-modal').classList.contains('active') && document.getElementById('briefing-modal').classList.contains('active'), 'grote knop start zaak 2 met briefing, zonder deel-splash');

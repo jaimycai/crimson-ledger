@@ -270,6 +270,10 @@
       <div class="board-topbar">
         <button class="back-btn back-btn-sm" id="btn-board-back">←</button>
         <span class="board-timer" id="board-timer">00:00</span>
+        <div class="board-acts">
+          <button type="button" class="board-act board-help" id="btn-board-help" aria-label="Uitleg van de verklaringen">?</button>
+          <button type="button" class="board-act" id="btn-board-zoom" aria-label="Inzoomen" hidden><i class="ico" data-icon="zoom-in"></i></button>
+        </div>
         <span class="board-case" id="board-diff-tag"></span>
       </div>
       <p class="board-casetext" id="board-casetext"></p>
@@ -309,6 +313,9 @@
         </button>
         <button type="button" class="tool" id="btn-board-mark">
           <span class="tool-icon"><i class="ico" data-icon="pencil"></i></span><span class="tool-label">Potlood</span>
+        </button>
+        <button type="button" class="tool" id="btn-board-cross">
+          <span class="tool-icon"><i class="ico" data-icon="x"></i></span><span class="tool-label">Kruisje</span>
         </button>
         <button type="button" class="tool" id="btn-board-erase">
           <span class="tool-icon"><i class="ico" data-icon="eraser"></i></span><span class="tool-label">Gum</span>
@@ -477,6 +484,16 @@
     </div>
   </div>
 
+  <!-- ═══════ UITLEG OP AANVRAAG (1.6): de "?" op het bord toont alle uitlegkaarten opnieuw ═══════ -->
+  <div class="modal-overlay" id="help-modal">
+    <div class="modal-content help-sheet">
+      <div class="modal-handle"></div>
+      <h3 class="clue-sheet-title">Zo lees je de verklaringen</h3>
+      <div class="help-cards" id="help-cards"></div>
+      <button type="button" class="btn btn-secondary btn-block" id="btn-help-close">Sluiten</button>
+    </div>
+  </div>
+
   <!-- ═══════ NIEUW IN DIT DEEL: uitleg van een nieuwe soort verklaring ═══════ -->
   <div class="modal-overlay" id="newclue-modal">
     <div class="modal-content newclue-sheet" id="newclue-host"></div>
@@ -549,6 +566,7 @@
         <div class="settings-row"><span>Hulp</span><a href="https://jaimycai.github.io/crimson-ledger/support.html" target="_blank" rel="noopener">Support ↗</a></div>
         <div class="settings-row"><span>💬 Wat kan beter?</span><button type="button" id="btn-feedback">Schrijf ons</button></div>
         <div class="settings-row"><span>⏱️ Klok tijdens een zaak</span><label class="switch"><input type="checkbox" id="chk-timer"><i></i></label></div>
+        <div class="settings-row"><span>✖️ Rij en kolom automatisch wegstrepen</span><label class="switch"><input type="checkbox" id="chk-autostrike" checked><i></i></label></div>
         <div class="settings-row"><span>📊 Anonieme statistieken</span><label class="switch"><input type="checkbox" id="chk-meting"><i></i></label></div>
         <div class="settings-row" id="settings-reminder" hidden><span>🔔 Dagelijkse herinnering (18:30)</span><label class="switch"><input type="checkbox" id="chk-reminder"><i></i></label></div>
         <div class="settings-row settings-col" id="settings-look">
