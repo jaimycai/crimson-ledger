@@ -23,7 +23,15 @@ const ERA = {
   filmstudio: 'a Hollywood film studio in 1931',
   karavaan: 'a caravanserai at a desert oasis on the old spice route, around 1900',
   abdij: 'a medieval abbey in the mountains in the winter of 1327',
-  vuurtoren: 'a lighthouse island off a stormy coast in 1900'
+  vuurtoren: 'a lighthouse island off a stormy coast in 1900',
+  oceaanstomer: 'a luxury ocean liner crossing the Atlantic from Southampton to New York in May 1910, the month of Halley\'s comet',
+  ryokan: 'a traditional Japanese ryokan inn with its own hot spring in the wooded hills outside Kyoto, during the cherry blossom season of 1925',
+  fazenda: 'a coffee plantation estate in the green hills of São Paulo state, Brazil, at harvest time in 1926',
+  zeppelin: 'a luxury passenger airship drifting above the Atlantic Ocean on its way to Rio de Janeiro in the summer of 1929',
+  poolstation: 'an international research station in Antarctica during the polar night of 1958',
+  winterpaleis: 'a nobleman\'s palace on the frozen Neva in Saint Petersburg on New Year\'s Eve 1899',
+  safarilodge: 'a Kenyan-owned safari lodge in the Maasai Mara during the great migration of 1974',
+  hanok: 'a scholar\'s hanok in the mountains of Joseon Korea at the Chuseok harvest moon festival of 1795'
 };
 
 const PEOPLE = {
@@ -186,6 +194,86 @@ const PEOPLE = {
     'Schipbreukeling Lev': 'a shipwreck survivor in his thirties, wet tousled hair, torn shirt, a blanket around his shoulders',
     'Onderwijzeres Wilma': 'the island schoolteacher in her forties, hair in a tight bun, high-collared blouse, spectacles on a chain',
     'Telegrafiste Fien': 'a young telegraph operator in her twenties, short curls, waistcoat, sleeve garters, a telegraph key in front of her'
+  },
+  oceaanstomer: {
+    'Kapitein Grant': 'a dignified ocean liner captain in his sixties, neat white beard, navy double-breasted uniform with gold braid on the sleeves, white-topped peaked cap',
+    'Stewardess Molly': 'a brisk ship stewardess in her twenties, hair in a neat bun under a small white cap, starched white apron over a dark uniform dress, a ring of cabin keys',
+    'Vliegenierster Solange': 'a daring French aviatrix in her thirties, short dark curls, leather flying cap with goggles pushed up, fitted leather coat, long silk scarf',
+    'Professor Lund': 'a Swedish astronomer in his fifties, unruly grey hair, round spectacles, rumpled tweed suit, a brass telescope under his arm',
+    'Suffragette Harriet': 'an English suffragette and writer in her forties, large hat, purple white and green sash across her chest, high-collared blouse, a bundle of pamphlets',
+    'Marconist Arthur': 'a young wireless operator in his twenties, neatly parted hair, headphones over his ears, waistcoat, pencil behind his ear, a message form in his hand',
+    'Hoofdmachinist Doyle': 'a broad-shouldered chief engineer in his fifties, thick sideburns, soot on one cheek, officer jacket over a boiler suit, an oil can in his hand',
+    'Hoedenmaakster Edna': 'a stylish milliner in her thirties, enormous Edwardian hat with ostrich feathers, lace blouse, hat pins in her lapel, a striped hatbox'
+  },
+  ryokan: {
+    'Gastvrouw Fumiko': 'a gracious ryokan hostess in her fifties, hair in a neat traditional chignon with a lacquered comb, plum-coloured kimono with a dark obi, hands folded, attentive eyes',
+    'Kok Takeshi': 'a meticulous kaiseki chef in his forties, cropped hair, white cotton headband, white chef coat, holding a lacquered tray with small dishes',
+    'Theemeesteres Chiyo': 'a serene tea ceremony master in her sixties, grey hair in a low bun, subdued grey kimono, a bamboo tea whisk in her hands',
+    'Ingenieur Isamu': 'an ambitious railway engineer, a Japanese man in his thirties, western three-piece suit, round wire glasses, slicked-back hair, rolled blueprints under his arm',
+    'Fotografe Sachiko': 'a modern photographer, a young Japanese woman in her twenties, short bobbed hair, cloche hat, drop-waist western dress, folding camera on a strap',
+    'Tuinman Goro': 'an elderly gardener in his sixties, cropped grey hair, indigo work jacket, straw sandals, a bamboo rake and pruning shears',
+    'Plantkundige Evelyn': 'an English botanist in her forties, sensible tweed jacket, wide-brimmed sun hat, magnifying glass, a sprig of cherry blossom pressed in a notebook',
+    'Prentmaker Hiroshi': 'a woodblock print artist in his forties, short cropped hair, dark work kimono with tied-back sleeves, carving tool in hand, a print of cherry blossoms'
+  },
+  fazenda: {
+    'Dona Celeste': 'a sharp-eyed Brazilian woman in her thirties, wavy bobbed hair, cream drop-waist dress, pearl earrings, a leather ledger under her arm',
+    'Rentmeester Joaquim': 'a weathered estate manager in his fifties, wide-brimmed felt hat, grey moustache, riding boots, a pocket watch on a chain',
+    'Lerares Giulia': 'a warm schoolteacher in her twenties, dark hair in a loose knot, white blouse with a cameo brooch, a stack of slates under her arm',
+    'Koffieproever Bento': 'a distinguished Afro-Brazilian coffee taster in his fifties, short grey hair, neat moustache, white linen suit, a silver tasting spoon and a small cup',
+    'Pianiste Zélia': 'a lively Brazilian pianist in her thirties, sleek finger-waved hair, beaded evening dress, long necklace, sheet music in her hand',
+    'Agronoom Hideo': 'a thoughtful Japanese-Brazilian agronomist in his thirties, short neat hair, rolled shirtsleeves, khaki trousers with braces, a coffee seedling in a small pot',
+    'Inkoper Mulder': 'a Dutch coffee buyer in his forties, light linen suit, straw boater hat, trimmed blond beard, a notebook full of prices',
+    'Dokter Lúcia': 'a country doctor in her forties, practical riding skirt and jacket, hair pinned under a small hat, leather medical bag, stethoscope around her neck'
+  },
+  zeppelin: {
+    'Commandant Brandt': 'an airship commander in his fifties, trimmed grey beard, dark uniform jacket, white peaked cap, binoculars around his neck',
+    'Verslaggeefster Daisy': 'an adventurous newspaper reporter in her thirties, sleek dark bob, tailored tweed suit, aviator scarf, a fountain pen and notebook',
+    'Navigator Mateus': 'a young Brazilian navigator in his twenties, dark curly hair, open-collared uniform shirt, a rolled chart under his arm, pencil behind his ear',
+    'Weerkundige Liv': 'a Norwegian meteorologist in her thirties, fair hair pinned in a low knot, thick knitted cardigan, round spectacles, a brass barometer in her hands',
+    'Monteur Rudi': 'a cheerful engine mechanic in his thirties, woollen cap, grease on one cheek, overalls with rolled sleeves, a spanner in his hand',
+    'Tennisster Josette': 'a famous tennis champion in her twenties, bandeau headband over bobbed hair, white pleated tennis dress, cardigan over her shoulders, a wooden racket',
+    'Diplomaat Vidal': 'a polished French diplomat in his fifties, silver hair, waxed silver moustache, dark morning coat, a rosette in his lapel, leather document case',
+    'Postmeesteres Elsbeth': 'a meticulous postmistress in her forties, hair in a tight bun, uniform jacket with brass buttons, an ink stamp in her hand, a sack of airmail beside her'
+  },
+  poolstation: {
+    'Marconist Ole': 'a Norwegian radio operator in his thirties, short blond beard, Fair Isle knitted sweater, headphones around his neck, pencil behind his ear',
+    'Glaciologe Marina': 'a Soviet glaciologist in her forties, short practical hair, plain fur ushanka hat with the flaps tied up, quilted padded jacket, a long cylinder of ice core in gloved hands. No political symbols anywhere: no star or badge on the hat, no flags, no hammer and sickle',
+    'Dokter Kenji': 'a Japanese expedition doctor in his thirties, round wire glasses, neat side-parted hair, white coat over a thick wool turtleneck, stethoscope',
+    'Meteorologe Ruth': 'an American meteorologist in her thirties, short curls, horn-rimmed glasses, red parka with a fur-trimmed hood down, clipboard with weather charts',
+    'Hondenmenner Rewi': 'a Maori dog handler from New Zealand in his twenties, broad warm smile, woollen beanie, windproof anorak, sealskin mittens, a dog harness over his shoulder',
+    'Monteur Lieve': 'a Belgian mechanic in her thirties, hair tied back under a knitted cap, oil-stained overalls over a wool sweater, a large spanner in hand',
+    'Kok Mateo': 'an Argentine cook in his forties, thick dark moustache, white apron over a checked flannel shirt, rolled sleeves, a ladle in hand',
+    'Natuurkundige Hélène': 'a French physicist in her thirties, dark bob, polo-neck sweater under a duffle coat, a notebook full of aurora sketches and a small brass instrument'
+  },
+  winterpaleis: {
+    'Gravin Jelena': 'an elegant Russian countess in her forties, dark hair in a high chignon with a diamond aigrette, pale blue silk ball gown, long white gloves, pearl necklace',
+    'Componist Sergej': 'a young Russian composer in his twenties, unruly dark hair, pince-nez, velvet jacket with a loose cravat, sheet music under his arm',
+    'Schaatsster Vera': 'a figure skater in her twenties, braid pinned under a fur toque, fitted velvet skating jacket with braided frogging, white skates slung over her shoulder',
+    'Goudsmid Pavel': 'a meticulous goldsmith in his fifties, grey goatee, jeweller\'s loupe pushed up on his forehead, dark frock coat, a small velvet box in his hands',
+    'Gouvernante Mabel': 'an English governess in her thirties, hair in a neat bun, high-necked grey dress with a cameo brooch, a small book in hand, alert eyes',
+    'Luitenant Dmitri': 'a dashing guards officer in his thirties, waxed moustache, white dress uniform with gold epaulettes and a sash, plumed helmet under his arm',
+    'Hofmeester Fjodor': 'a dignified major-domo in his sixties, white side whiskers, dark livery with silver buttons, white gloves, a heavy ring of keys',
+    'Fotografe Sofia': 'a modern woman photographer in her thirties, short wavy hair, tailored jacket with a high collar, a wooden plate camera with a flash pan'
+  },
+  safarilodge: {
+    'Eigenares Wambui': 'a Kenyan lodge owner in her fifties, colourful kitenge headwrap, tailored khaki safari dress, reading glasses on a beaded chain, a warm but shrewd gaze',
+    'Gids Otieno': 'a Kenyan safari guide in his thirties, khaki shirt with a lodge badge, wide-brimmed bush hat, binoculars around his neck, easy smile',
+    'Dierenarts Njeri': 'a Kenyan wildlife vet in her thirties, short natural hair, khaki field shirt with rolled sleeves, stethoscope, a leather vet bag',
+    'Piloot Kiprono': 'a Kenyan bush pilot in his thirties, aviator sunglasses pushed up on his forehead, short-sleeved pilot shirt with epaulettes, headset around his neck',
+    'Chef Hamisi': 'a Kenyan chef from the Swahili coast in his forties, embroidered kofia cap, white chef\'s jacket, neatly trimmed beard, a wooden spoon in hand',
+    'Journaliste Amina': 'a Kenyan newspaper journalist in her twenties, big rounded afro, round sunglasses, patterned 1970s blouse, notebook and a portable cassette recorder',
+    'Geluidsman Felix': 'a German sound recordist in his thirties, long hair and sideburns, headphones, khaki vest with many pockets, a reel-to-reel tape recorder on a strap',
+    'Biologe Hanne': 'a Danish lion researcher in her thirties, sun-bleached ponytail, freckles, faded field shirt, a notebook and a radio-tracking antenna'
+  },
+  hanok: {
+    'Vrouwe Kang': 'a dignified Joseon noblewoman in her fifties, hair in a low chignon with a long silver binyeo hairpin, jade-green jeogori jacket and deep blue chima skirt, a ring of household keys',
+    'Student Sang-u': 'a young Joseon scholar of about twenty, black horsehair gat hat, white dopo robe, a bound book of classics, earnest face',
+    'Geneesvrouw So-yeon': 'a Joseon woman physician in her thirties, hair in a neat chignon under a black garima headpiece, plain indigo hanbok, a cloth roll of needles and a herb pouch',
+    'Schilder Dae-ho': 'a genre painter in his forties, wispy beard, soft black cap, grey robe spattered with ink, brushes in a bamboo holder',
+    'Borduurster Yeon-i': 'a young woman of about nineteen, long single braid with a red daenggi ribbon, rose-pink jeogori and white chima, an embroidery hoop with a crane design',
+    'Tolk Hak-su': 'a court interpreter in his forties, black gat hat, blue official robe, round spectacles from Beijing, a small wooden box of books',
+    'Kokkin Sun-i': 'a sturdy head cook in her fifties, hair wrapped in a white cloth, sleeves tied back, apron over a plain hanbok, a large wooden ladle',
+    'Marskramer Deok-su': 'a cheerful travelling peddler in his thirties, round bamboo hat with white cotton tufts, short jacket and wide trousers, a wooden A-frame pack on his back'
   }
 };
 
