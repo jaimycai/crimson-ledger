@@ -1,11 +1,12 @@
 import UIKit
 import Capacitor
 
-// Eigen view controller zodat de lokale plugins (ReviewPlugin, StorePlugin) bij de bridge worden aangemeld.
+// Eigen view controller zodat de lokale plugins (ReviewPlugin, StorePlugin, LiveActivityPlugin) bij de bridge worden aangemeld.
 class MainViewController: CAPBridgeViewController {
     override open func capacitorDidLoad() {
         bridge?.registerPluginInstance(ReviewPlugin())
         bridge?.registerPluginInstance(StorePlugin())
+        bridge?.registerPluginInstance(LiveActivityPlugin())
     }
 
     // In de simulator krijgt de webview een merkje in de user agent. meting.js stuurt dan niets,

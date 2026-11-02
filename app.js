@@ -142,7 +142,7 @@ const App = {
       const done = this.storageGet('crimson-board-daily-done') === new Date().toDateString();
       launch(done ? 0 : this.getDailySeed() * 3 + 777, !done, Themes.forDay(this.getDayNumber()).id);
     });
-    document.getElementById('btn-board-back').addEventListener('click', () => { Board.countQuit(); Board.stopTimer(); this.navigateTo('menu'); });
+    document.getElementById('btn-board-back').addEventListener('click', () => { Board.countQuit(); Board.stopTimer(); this.liveCase('leave'); this.navigateTo('menu'); });
     this.updateBoardStats();
   },
 
@@ -1004,6 +1004,13 @@ const App = {
     const chkT = document.getElementById('chk-timer');
     if (chkT) { chkT.checked = this.storageGet('crimson-timer-off') !== '1';
       chkT.addEventListener('change', () => { this.storageSet('crimson-timer-off', chkT.checked ? '0' : '1'); this.applyTimerPref(); }); }
+    // Live Activity tijdens een zaak (1.6): standaard aan, alleen in de iOS-app vanaf iOS 16.2
+    const liveRow = document.getElementById('settings-live'), chkL = document.getElementById('chk-live'), LA = this.liveActivity();
+    if (liveRow && chkL && LA) {
+      LA.isAvailable().then(r => { liveRow.hidden = !(r && r.available); }).catch(() => {});
+      chkL.checked = this.liveActivityOn();
+      chkL.addEventListener('change', () => { this.storageSet('crimson-live-activity', chkL.checked ? '1' : '0'); this.liveCase(chkL.checked ? 'clock' : 'leave'); });
+    }
     const chkM = document.getElementById('chk-meting');
     if (chkM && typeof Meting !== 'undefined') { chkM.checked = Meting.on(); chkM.addEventListener('change', () => Meting.setOn(chkM.checked)); }
     const row = document.getElementById('settings-reminder'), chk = document.getElementById('chk-reminder');
@@ -2104,6 +2111,48 @@ const App = {
     if (seen === null || !(n > +seen) || typeof Motion === 'undefined') return;
     Motion.flame(document.querySelector('#streak-title .streak-flame'), document.getElementById('streak-count'), +seen, n,
       document.querySelector('#week-strip .wday.today'));
+  },
+
+  // ══════════════════════════════════════════════════════════
+  //  LIVE ACTIVITY (1.6, alleen in de iOS-app)
+  // ══════════════════════════════════════════════════════════
+  // De lopende zaak (campagne, dagelijkse zaak, zaak van de week) op het toegangsscherm en in het Dynamic Island:
+  // ios/App/App/LiveActivityPlugin.swift en ios/App/CrimsonLiveActivity. De klok loopt daar vanzelf; de app stuurt
+  // alleen iets als de klok start, als het aantal geplaatste verdachten verandert en aan het eind. Teksten gaan vertaald mee.
+  liveActivity() {
+    try { const C = window.Capacitor; return (C && C.isNativePlatform && C.isNativePlatform() && C.getPlatform && C.getPlatform() === 'ios' && C.Plugins && C.Plugins.LiveActivity) || null; } catch (e) { return null; }
+  },
+  liveActivityOn() { return this.storageGet('crimson-live-activity') !== '0'; },
+  // event: clock (Board.startTimer) | progress (Board.after) | solved (Board.finish) | leave (terug naar het menu)
+  liveCase(event) {
+    const LA = this.liveActivity(), B = typeof Board !== 'undefined' ? Board : null;
+    if (!LA || !B) return;
+    const id = B.puzzle ? B.resumeId() : null, cur = this.live;
+    if (event === 'solved' || event === 'leave') {
+      if (!cur) return;
+      this.live = null;
+      const t = B.formatTime(B.elapsed || 0), solved = event === 'solved' && cur.id === id;
+      LA.end(solved ? { solved, timeText: t, resultText: AP_T`Opgelost in ${t}` } : { solved: false }).catch(() => {});
+      return;
+    }
+    if (!id || B.solved || !this.liveActivityOn()) return;
+    const placed = B.placements.filter(Boolean).length, total = B.placements.length, startedAt = B.startTime;
+    const state = { placed, total, startedAt, showClock: this.storageGet('crimson-timer-off') !== '1', progressText: AP_T`${placed} van ${total} verdachten geplaatst` };
+    if (cur && cur.id === id) {
+      if (cur.placed === placed && Math.abs(cur.startedAt - startedAt) < 1500) return;
+      Object.assign(cur, { placed, startedAt });
+      LA.update(state).catch(() => {});
+      return;
+    }
+    if (event !== 'clock') return;   // een zaak begint met de klok
+    const c = B.campaignCase, th = B.theme || {}, archive = !!c && typeof Campaign !== 'undefined' && c.chapter === Campaign.ARCHIVE;
+    this.live = { id, placed, startedAt };
+    LA.start(Object.assign({
+      id, kind: c ? (archive ? 'archive' : 'campaign') : B.isWeekly ? 'weekly' : 'daily',
+      label: c ? (archive ? AP_T('Archief') : AP_T`Zaak ${c.idx + 1}`) : B.isWeekly ? AP_T`Week ${B.weekly.week}` : AP_T('Vandaag'),
+      title: c ? c.title : B.isWeekly ? B.weekly.title : Progress.dailyTitle(this.getDayNumber()), world: th.title || '', icon: th.icon || '',
+      tapText: AP_T('Tik om verder te spelen'), closedText: AP_T('Zaak gesloten')
+    }, state)).then(r => { if (!r || !r.started) this.live = null; }).catch(() => { this.live = null; });
   },
 
   // ══════════════════════════════════════════════════════════

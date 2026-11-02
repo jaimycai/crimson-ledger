@@ -230,6 +230,7 @@ const Board = {
     };
     tick();
     this.timerId = setInterval(tick, 1000);
+    if (App.liveCase) App.liveCase('clock');   // Live Activity (1.6): start, or follow the restarted clock
   },
   stopTimer() { clearInterval(this.timerId); this.timerId = null; },
   formatTime(s) { return `${String(Math.floor(s / 60)).padStart(2, '0')}:${String(s % 60).padStart(2, '0')}`; },
@@ -725,6 +726,7 @@ const Board = {
     this.renderClues();
     this.updateTools();
     this.saveResume();
+    if (App.liveCase) App.liveCase('progress');
   },
 
   flash(x, y) {
@@ -937,6 +939,7 @@ const Board = {
     this.solved = true;
     this.clearResume();
     this.stopTimer();
+    if (App.liveCase) App.liveCase('solved');
     document.getElementById('board-grid').classList.add('solved');
     this.updateTools();
     if (this.isTutorial) {
