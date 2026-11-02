@@ -239,10 +239,10 @@ const PEOPLE = {
     'Marconist Ole': 'a Norwegian radio operator in his thirties, short blond beard, Fair Isle knitted sweater, headphones around his neck, pencil behind his ear',
     'Glaciologe Marina': 'a Soviet glaciologist in her forties, short practical hair, plain fur ushanka hat with the flaps tied up, quilted padded jacket, a long cylinder of ice core in gloved hands. No political symbols anywhere: no star or badge on the hat, no flags, no hammer and sickle',
     'Dokter Kenji': 'a Japanese expedition doctor in his thirties, round wire glasses, neat side-parted hair, white coat over a thick wool turtleneck, stethoscope',
-    'Meteorologe Ruth': 'an American meteorologist in her thirties, short curls, horn-rimmed glasses, red parka with a fur-trimmed hood down, clipboard with weather charts',
+    'Meteorologe Nancy': 'an American meteorologist in her thirties, short curls, horn-rimmed glasses, red parka with a fur-trimmed hood down, clipboard with weather charts',
     'Hondenmenner Rewi': 'a Maori dog handler from New Zealand in his twenties, broad warm smile, woollen beanie, windproof anorak, sealskin mittens, a dog harness over his shoulder',
     'Monteur Lieve': 'a Belgian mechanic in her thirties, hair tied back under a knitted cap, oil-stained overalls over a wool sweater, a large spanner in hand',
-    'Kok Mateo': 'an Argentine cook in his forties, thick dark moustache, white apron over a checked flannel shirt, rolled sleeves, a ladle in hand',
+    'Kok Diego': 'an Argentine cook in his forties, thick dark moustache, white apron over a checked flannel shirt, rolled sleeves, a ladle in hand',
     'Natuurkundige Hélène': 'a French physicist in her thirties, dark bob, polo-neck sweater under a duffle coat, a notebook full of aurora sketches and a small brass instrument'
   },
   winterpaleis: {
@@ -253,7 +253,7 @@ const PEOPLE = {
     'Gouvernante Mabel': 'an English governess in her thirties, hair in a neat bun, high-necked grey dress with a cameo brooch, a small book in hand, alert eyes',
     'Luitenant Dmitri': 'a dashing guards officer in his thirties, waxed moustache, white dress uniform with gold epaulettes and a sash, plumed helmet under his arm',
     'Hofmeester Fjodor': 'a dignified major-domo in his sixties, white side whiskers, dark livery with silver buttons, white gloves, a heavy ring of keys',
-    'Fotografe Sofia': 'a modern woman photographer in her thirties, short wavy hair, tailored jacket with a high collar, a wooden plate camera with a flash pan'
+    'Fotografe Irina': 'a modern woman photographer in her thirties, short wavy hair, tailored jacket with a high collar, a wooden plate camera with a flash pan'
   },
   safarilodge: {
     'Eigenares Wambui': 'a Kenyan lodge owner in her fifties, colourful kitenge headwrap, tailored khaki safari dress, reading glasses on a beaded chain, a warm but shrewd gaze',
@@ -263,17 +263,17 @@ const PEOPLE = {
     'Chef Hamisi': 'a Kenyan chef from the Swahili coast in his forties, embroidered kofia cap, white chef\'s jacket, neatly trimmed beard, a wooden spoon in hand',
     'Journaliste Amina': 'a Kenyan newspaper journalist in her twenties, big rounded afro, round sunglasses, patterned 1970s blouse, notebook and a portable cassette recorder',
     'Geluidsman Felix': 'a German sound recordist in his thirties, long hair and sideburns, headphones, khaki vest with many pockets, a reel-to-reel tape recorder on a strap',
-    'Biologe Hanne': 'a Danish lion researcher in her thirties, sun-bleached ponytail, freckles, faded field shirt, a notebook and a radio-tracking antenna'
+    'Biologe Birgit': 'a Danish lion researcher in her thirties, sun-bleached ponytail, freckles, faded field shirt, a notebook and a radio-tracking antenna'
   },
   hanok: {
     'Vrouwe Kang': 'a dignified Joseon noblewoman in her fifties, hair in a low chignon with a long silver binyeo hairpin, jade-green jeogori jacket and deep blue chima skirt, a ring of household keys',
     'Student Sang-u': 'a young Joseon scholar of about twenty, black horsehair gat hat, white dopo robe, a bound book of classics, earnest face',
-    'Geneesvrouw So-yeon': 'a Joseon woman physician in her thirties, hair in a neat chignon under a black garima headpiece, plain indigo hanbok, a cloth roll of needles and a herb pouch',
+    'Geneesvrouw Ok-hwa': 'a Joseon woman physician in her thirties, hair in a neat chignon under a black garima headpiece, plain indigo hanbok, a cloth roll of needles and a herb pouch',
     'Schilder Dae-ho': 'a genre painter in his forties, wispy beard, soft black cap, grey robe spattered with ink, brushes in a bamboo holder',
     'Borduurster Yeon-i': 'a young woman of about nineteen, long single braid with a red daenggi ribbon, rose-pink jeogori and white chima, an embroidery hoop with a crane design',
     'Tolk Hak-su': 'a court interpreter in his forties, black gat hat, blue official robe, round spectacles from Beijing, a small wooden box of books',
-    'Kokkin Sun-i': 'a sturdy head cook in her fifties, hair wrapped in a white cloth, sleeves tied back, apron over a plain hanbok, a large wooden ladle',
-    'Marskramer Deok-su': 'a cheerful travelling peddler in his thirties, round bamboo hat with white cotton tufts, short jacket and wide trousers, a wooden A-frame pack on his back'
+    'Kokkin Bok-sun': 'a sturdy head cook in her fifties, hair wrapped in a white cloth, sleeves tied back, apron over a plain hanbok, a large wooden ladle',
+    'Marskramer Man-sik': 'a cheerful travelling peddler in his thirties, round bamboo hat with white cotton tufts, short jacket and wide trousers, a wooden A-frame pack on his back'
   }
 };
 

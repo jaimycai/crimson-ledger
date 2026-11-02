@@ -14,7 +14,7 @@ const CAMPAGNE_16B = [
     cases: [
     { title: 'De lege stoel', story: 'Acht borden, negen stoelen. De stoel van de stationsleider bleef de hele avond leeg.', item: '🪑 Klapstoel', difficulty: 'makkelijk', seed: 221101 },
     { title: 'De koptelefoon', story: 'Hij had de koptelefoon nog op. Er kwam alleen geruis uit.', item: '🎧 Koptelefoon', difficulty: 'makkelijk', seed: 221198 },
-    { title: 'Kok Mateo snijdt de taart', story: 'Een taart uit blik, met kaarsjes van stearine. Eén stuk was al weg voordat hij ging snijden.', item: '🎂 Midwintertaart', difficulty: 'makkelijk', seed: 221295 },
+    { title: 'Kok Diego snijdt de taart', story: 'Een taart uit blik, met kaarsjes van stearine. Eén stuk was al weg voordat hij ging snijden.', item: '🎂 Midwintertaart', difficulty: 'makkelijk', seed: 221295 },
     { title: 'Marconist Ole had dienst', story: 'Om acht uur moest hij bij de zender zitten. Om acht uur zat hij aan tafel, zeggen ze allemaal.', item: '📋 Dienstrooster', difficulty: 'gemiddeld', seed: 221392 },
     { title: 'Midwintergroeten', story: 'Op midwinter seinen alle basissen elkaar de groeten. Om negen uur kwam er één bericht binnen dat geen groet was.', item: '📝 Seinblok', difficulty: 'gemiddeld', seed: 221489 },
     { title: 'Hondenmenner Rewi voert de honden', story: 'Hij ging om half negen naar de kennel. De honden blaften pas om negen uur.', item: '🍖 Hondenvoer', difficulty: 'gemiddeld', seed: 221586 },
@@ -31,7 +31,7 @@ const CAMPAGNE_16B = [
     { title: 'Monteur Lieve kan het maken', story: 'Met draad en een lamp uit de werkplaats bouwt ze een noodzender. Ze wist al welke buis ontbrak voordat ze keek.', item: '🔧 Soldeerbout', difficulty: 'gemiddeld', seed: 222295 },
     { title: 'Het laatste bericht', story: 'In het seinblok staat het begin van een bericht van Holm. Na drie woorden houdt het op.', item: '✏️ Potloodstompje', difficulty: 'gemiddeld', seed: 222392 },
     { title: 'Dokter Kenji schrijft het rapport', story: 'Tijd van overlijden: tussen acht en negen. Om half negen zat de dokter zelf in de ziekenboeg, alleen.', item: '🩺 Stethoscoop', difficulty: 'moeilijk', seed: 222489 },
-    { title: 'Meteorologe Ruth hoorde iets', story: 'Om half negen las ze de thermometers af in de weerhut. Ze hoorde morse door de muur.', item: '🌡️ Thermometer', difficulty: 'moeilijk', seed: 222586 },
+    { title: 'Meteorologe Nancy hoorde iets', story: 'Om half negen las ze de thermometers af in de weerhut. Ze hoorde morse door de muur.', item: '🌡️ Thermometer', difficulty: 'moeilijk', seed: 222586 },
     { title: 'Natuurkundige Hélène luistert mee', story: 'Voor haar metingen luistert ze elke nacht naar de radio. Die avond noteerde ze een frequentie die niet van de wal is.', item: '🗒️ Frequentielijst', difficulty: 'moeilijk', seed: 222683 },
     { title: 'De buis in de sneeuw', story: 'Rewi vond de buis bij de kennel, half in de sneeuw. Ernaast lag een want die niet van hem is.', item: '🧤 Wollen want', difficulty: 'moeilijk', seed: 222780 }
   ]},
@@ -41,10 +41,10 @@ const CAMPAGNE_16B = [
     briefing: 'In de storm ziet niemand iets, maar iedereen weet waar hij niet was. Wie zegt waar hij níét was, vertelt je ook iets: streep die ruimte meteen weg.',
     cases: [
     { title: 'Het touw naar de weerhut', story: 'Tussen de barak en de weerhut hangt een touw. Vanochtend lag het los in de sneeuw.', item: '🪢 Geleidetouw', difficulty: 'makkelijk', seed: 223101 },
-    { title: 'Meteorologe Ruth moet naar buiten', story: 'Elke drie uur leest ze de meters af, ook in de storm. Om drie uur kwam ze pas na een uur terug, zonder aflezing.', item: '📒 Weerboek', difficulty: 'gemiddeld', seed: 223198 },
+    { title: 'Meteorologe Nancy moet naar buiten', story: 'Elke drie uur leest ze de meters af, ook in de storm. Om drie uur kwam ze pas na een uur terug, zonder aflezing.', item: '📒 Weerboek', difficulty: 'gemiddeld', seed: 223198 },
     { title: 'Hondenmenner Rewi gaat zoeken', story: 'Hij ging naar buiten met twee honden aan de lijn. Hij kwam terug met drie.', item: '🐾 Hondenlijn', difficulty: 'gemiddeld', seed: 223295 },
-    { title: 'Kok Mateo haalt sneeuw', story: 'Water is sneeuw die je smelt. Hij haalde zijn emmers midden in de storm, en bleef lang weg.', item: '🪣 Sneeuwemmer', difficulty: 'moeilijk', seed: 223392 },
-    { title: 'De windmeter', story: 'De windmeter op het dak stond om vier uur stil. Bevroren, zegt Ruth. Er zat een doek omheen.', item: '🌀 Windmeter', difficulty: 'gemiddeld', seed: 223489 },
+    { title: 'Kok Diego haalt sneeuw', story: 'Water is sneeuw die je smelt. Hij haalde zijn emmers midden in de storm, en bleef lang weg.', item: '🪣 Sneeuwemmer', difficulty: 'moeilijk', seed: 223392 },
+    { title: 'De windmeter', story: 'De windmeter op het dak stond om vier uur stil. Bevroren, zegt Nancy. Er zat een doek omheen.', item: '🌀 Windmeter', difficulty: 'gemiddeld', seed: 223489 },
     { title: 'Monteur Lieve en de generator', story: 'Bij min zestig mag de generator niet stilvallen. Om vijf uur stond hij stil, en Lieve sliep.', item: '⛽ Jerrycan', difficulty: 'moeilijk', seed: 223586 },
     { title: 'Dokter Kenji en de bevriezing', story: 'Twee mensen kwamen met witte wangen binnen. Volgens het logboek was er maar één buiten geweest.', item: '📓 Logboek', difficulty: 'moeilijk', seed: 223683 },
     { title: 'Wie het touw losmaakte', story: 'Een knoop gaat in een storm niet zomaar los. Deze was netjes losgemaakt, met handschoenen aan.', item: '🪝 Karabijnhaak', difficulty: 'meester', seed: 223780 }
@@ -58,7 +58,7 @@ const CAMPAGNE_16B = [
     { title: 'Glaciologe Marina telt', story: 'Ze nummert elk stuk met een vetpotlood. Nummer veertien ontbreekt.', item: '🖍️ Vetpotlood', difficulty: 'gemiddeld', seed: 224198 },
     { title: 'De boor', story: 'De ijsboor staat in de werkplaats. Er zit vers ijs aan de punt, en Marina boorde al een week niet.', item: '🔩 IJsboor', difficulty: 'moeilijk', seed: 224295 },
     { title: 'Natuurkundige Hélène meet mee', story: 'In het ijs zitten stofjes van ver weg. Hélène wil ze meten, Marina wil ze eerst zelf beschrijven.', item: '🔬 Preparaat', difficulty: 'gemiddeld', seed: 224392 },
-    { title: 'Kok Mateo zet mate', story: 'Voor zijn mate smelt hij ijs uit de tunnel. Hij weet niet welk ijs oud is, zegt hij.', item: '🧉 Matebeker', difficulty: 'moeilijk', seed: 224489 },
+    { title: 'Kok Diego zet mate', story: 'Voor zijn mate smelt hij ijs uit de tunnel. Hij weet niet welk ijs oud is, zegt hij.', item: '🧉 Matebeker', difficulty: 'moeilijk', seed: 224489 },
     { title: 'Dokter Kenji en de microscoop', story: 'Er is maar één microscoop op de basis. Kenji zat er die nacht achter, voor een test die niemand had gevraagd.', item: '🧪 Reageerbuis', difficulty: 'moeilijk', seed: 224586 },
     { title: 'Het dagboek van Holm', story: 'In het dagboek van Holm staat de kern drie keer. Eén keer met een uitroepteken.', item: '📔 Dagboek', difficulty: 'meester', seed: 224683 },
     { title: 'Wat in het ijs zat', story: 'Onder de microscoop: een dun zwart laagje in het ijs. Holm had het als eerste gezien.', item: '🌋 Aslaagje', difficulty: 'meester', seed: 224780 }
@@ -73,8 +73,8 @@ const CAMPAGNE_16B = [
     { title: 'De camera op het dak', story: 'Hélène zette een camera op het dak die elke minuut een foto maakt. Op één foto staat een lamp bij de kennel.', item: '📷 Luchtcamera', difficulty: 'moeilijk', seed: 225295 },
     { title: 'Hondenmenner Rewi kijkt niet', story: 'Iedereen stond buiten met het hoofd in de nek. Rewi stond met zijn rug naar de hemel.', item: '🏮 Stormlantaarn', difficulty: 'moeilijk', seed: 225392 },
     { title: 'Marconist Ole hoort ruis', story: 'Bij poollicht kraakt elke radio. Toch hoorde Ole een bericht, heel duidelijk, van dichtbij.', item: '📡 Antennedraad', difficulty: 'meester', seed: 225489 },
-    { title: 'Kok Mateo blijft binnen', story: 'Hij heeft het poollicht al vaak gezien, zegt hij. Dit is zijn eerste winter op het ijs.', item: '🥘 Soeppan', difficulty: 'moeilijk', seed: 225586 },
-    { title: 'Meteorologe Ruth schrijft het op', story: 'In haar weerboek staat: helder, windstil, poollicht. En om tien over twee: deur weerhut open.', item: '🗝️ Sleutel van de weerhut', difficulty: 'moeilijk', seed: 225683 },
+    { title: 'Kok Diego blijft binnen', story: 'Hij heeft het poollicht al vaak gezien, zegt hij. Dit is zijn eerste winter op het ijs.', item: '🥘 Soeppan', difficulty: 'moeilijk', seed: 225586 },
+    { title: 'Meteorologe Nancy schrijft het op', story: 'In haar weerboek staat: helder, windstil, poollicht. En om tien over twee: deur weerhut open.', item: '🗝️ Sleutel van de weerhut', difficulty: 'moeilijk', seed: 225683 },
     { title: 'Die ene', story: 'Een poollicht duurt twintig minuten. Dat is lang genoeg om naar de radiokamer te lopen en terug.', item: '🕰️ Kantineklok', difficulty: 'meester', seed: 225780 }
   ]},
   { key: 'poolstation-6', theme: 'poolstation', part: 6, icon: '🛷', title: 'Deel VI · De hondenslee',
@@ -92,16 +92,16 @@ const CAMPAGNE_16B = [
     { title: 'Dokter Kenji wacht', story: 'Hij wachtte bij de kennel tot de slee terugkwam. Hij wist al hoeveel kisten erop zouden liggen.', item: '📋 Vrachtbrief', difficulty: 'meester', seed: 226780 }
   ]},
   { key: 'poolstation-7', theme: 'poolstation', part: 7, icon: '🎈', title: 'Deel VII · De weerballon',
-    intro: 'Elke ochtend en elke avond laat Ruth een weerballon op, met een kastje dat de wind en de kou meet. Twee keer per dag gaat er een ballon op. Vandaag hing er een briefje aan.',
+    intro: 'Elke ochtend en elke avond laat Nancy een weerballon op, met een kastje dat de wind en de kou meet. Twee keer per dag gaat er een ballon op. Vandaag hing er een briefje aan.',
     outro: 'De ballon is allang boven de wolken. Het briefje niet: jij hebt de drie woorden, en je weet wie ze schreef.',
     briefing: 'Het bord wordt groter en de nacht korter. Staat in het rapport dat een ruimte leeg was, dan valt die hele ruimte af voor iedereen.',
     cases: [
-    { title: 'Het briefje', story: 'Ruth zag het briefje pas toen de ballon al opsteeg. Ze kon nog net drie woorden lezen.', item: '🎈 Weerballon', difficulty: 'moeilijk', seed: 227101 },
-    { title: 'Meteorologe Ruth vult de ballon', story: 'Ze vult elke ballon zelf met waterstof. Deze was al gevuld toen ze in de weerhut kwam.', item: '⚗️ Gasfles', difficulty: 'meester', seed: 227198 },
+    { title: 'Het briefje', story: 'Nancy zag het briefje pas toen de ballon al opsteeg. Ze kon nog net drie woorden lezen.', item: '🎈 Weerballon', difficulty: 'moeilijk', seed: 227101 },
+    { title: 'Meteorologe Nancy vult de ballon', story: 'Ze vult elke ballon zelf met waterstof. Deze was al gevuld toen ze in de weerhut kwam.', item: '⚗️ Gasfles', difficulty: 'meester', seed: 227198 },
     { title: 'Het kastje komt terug', story: 'Meestal zie je een sonde nooit terug. Deze landde drie dagen later bij de kennel.', item: '📡 Radiosonde', difficulty: 'meester', seed: 227295 },
     { title: 'Marconist Ole vangt het signaal', story: 'De sonde seint de kou naar de radiokamer. Ole schreef die nacht cijfers op die geen temperaturen zijn.', item: '🔢 Cijferreeks', difficulty: 'moeilijk', seed: 227392 },
     { title: 'Natuurkundige Hélène leest de code', story: 'Ze kent de code van de sonde, want ze rekent ermee. Pas na twee dagen zei ze wat er stond.', item: '📐 Rekenliniaal', difficulty: 'meester', seed: 227489 },
-    { title: 'Kok Mateo en het touw', story: 'Het touw aan de ballon is keukentouw. Het soort waarmee Mateo het vlees opbindt.', item: '🧵 Keukentouw', difficulty: 'meester', seed: 227586 },
+    { title: 'Kok Diego en het touw', story: 'Het touw aan de ballon is keukentouw. Het soort waarmee Diego het vlees opbindt.', item: '🧵 Keukentouw', difficulty: 'meester', seed: 227586 },
     { title: 'Monteur Lieve en de blokletters', story: 'Ze schrijft op haar tekeningen altijd in blokletters. Het briefje stond ook in blokletters.', item: '📝 Werktekening', difficulty: 'meester', seed: 227683 },
     { title: 'Glaciologe Marina vertaalt', story: 'Het briefje was in drie talen geschreven, één woord per taal. Alleen Marina spreekt ze alle drie.', item: '📖 Woordenboek', difficulty: 'meester', seed: 227780 }
   ]},
@@ -113,7 +113,7 @@ const CAMPAGNE_16B = [
     { title: 'De rand van licht', story: "Om twaalf uur 's middags kleurt de horizon roze. Iedereen staat buiten. Eén raam van de radiokamer is beslagen.", item: '🪟 Beslagen raam', difficulty: 'moeilijk', seed: 228101 },
     { title: 'Monteur Lieve maakt de baan', story: 'Met de sneeuwrups maakt ze een baan voor het vliegtuig. Onder de sneeuw lag de lege kist van de radiobuizen.', item: '🧰 Buizenkist', difficulty: 'meester', seed: 228198 },
     { title: 'Dokter Kenji schrijft zijn verslag', story: 'Een verslag voor de wal, over negen mensen en één winter. Bij Holm staat: oorzaak onbekend. Hij weet hem wel.', item: '📄 Medisch verslag', difficulty: 'meester', seed: 228295 },
-    { title: 'Kok Mateo kookt het laatste', story: 'Het laatste blik van de winter is perziken. Hij zette negen schaaltjes neer, uit gewoonte.', item: '🍑 Blik perziken', difficulty: 'meester', seed: 228392 },
+    { title: 'Kok Diego kookt het laatste', story: 'Het laatste blik van de winter is perziken. Hij zette negen schaaltjes neer, uit gewoonte.', item: '🍑 Blik perziken', difficulty: 'meester', seed: 228392 },
     { title: 'Hondenmenner Rewi neemt afscheid', story: 'De honden blijven voor de volgende ploeg. Rewi neemt alleen Kaho mee, en Kaho gromt naar één passagier.', item: '📿 Hondenpenning', difficulty: 'moeilijk', seed: 228489 },
     { title: 'Natuurkundige Hélène pakt in', story: 'Vier maanden metingen passen in één kist. Ze opende hem nog één keer, voor één bladzijde.', item: '📚 Meetboeken', difficulty: 'meester', seed: 228586 },
     { title: 'Het vliegtuig', story: 'Het vliegtuig landt en de piloot geeft de post af. Er is een brief bij voor Holm, van iemand op de basis.', item: '✉️ Luchtpostbrief', difficulty: 'meester', seed: 228683 },
@@ -132,7 +132,7 @@ const CAMPAGNE_16B = [
     { title: 'Componist Sergej dirigeert', story: 'Zijn nieuwe wals duurt zeven minuten. Op de partituur staat een herhaling die er gisteren nog niet stond.', item: '🎼 Partituur', difficulty: 'gemiddeld', seed: 231392 },
     { title: 'Gravin Jelena ontvangt', story: 'Ze stond de hele avond bij de trap om de gasten te begroeten. Om half twaalf was ze tien minuten weg.', item: '🪭 Waaier', difficulty: 'gemiddeld', seed: 231489 },
     { title: 'Luitenant Dmitri danst', story: 'Hij danste met elke dame in de zaal. Niet met zijn verloofde, die alleen bij de spiegels stond.', item: '🧤 Witte handschoen', difficulty: 'gemiddeld', seed: 231586 },
-    { title: 'De flits', story: 'Om vijf voor twaalf ontstak Sofia haar magnesiumflits. Op de foto staat de deur van de bibliotheek op een kier.', item: '📸 Glasplaat', difficulty: 'moeilijk', seed: 231683 },
+    { title: 'De flits', story: 'Om vijf voor twaalf ontstak Irina haar magnesiumflits. Op de foto staat de deur van de bibliotheek op een kier.', item: '📸 Glasplaat', difficulty: 'moeilijk', seed: 231683 },
     { title: 'Het haardvuur', story: 'Het vuur in de bibliotheek brandde nog hoog. Iemand had er na elf uur nog hout op gelegd.', item: '🪵 Berkenhout', difficulty: 'moeilijk', seed: 231780 }
   ]},
   { key: 'winterpaleis-2', theme: 'winterpaleis', part: 2, icon: '🥚', title: 'Deel II · Het juwelenei',
@@ -144,7 +144,7 @@ const CAMPAGNE_16B = [
     { title: 'Goudsmid Pavel legt het uit', story: 'In het ei zat een gouden paleis, zo groot als een vingerhoed. Hij weet precies hoe zwaar het is.', item: '⚖️ Goudweegschaal', difficulty: 'gemiddeld', seed: 232198 },
     { title: 'De vitrine', story: 'Het ei stond onder glas in de spiegelzaal. Het glas is heel en het slot zit dicht.', item: '🔐 Vitrineslot', difficulty: 'gemiddeld', seed: 232295 },
     { title: 'Gouvernante Mabel en de kinderen', story: 'De kinderen mochten het ei om elf uur zien. Mabel zegt dat het toen nog dicht was.', item: '🎠 Speelgoedpaardje', difficulty: 'gemiddeld', seed: 232392 },
-    { title: 'Fotografe Sofia fotografeerde het ei', story: 'Op haar foto van negen uur is het ei open, en leeg. Om negen uur was het nog dicht, zegt Pavel.', item: '🖼️ Afdruk', difficulty: 'moeilijk', seed: 232489 },
+    { title: 'Fotografe Irina fotografeerde het ei', story: 'Op haar foto van negen uur is het ei open, en leeg. Om negen uur was het nog dicht, zegt Pavel.', item: '🖼️ Afdruk', difficulty: 'moeilijk', seed: 232489 },
     { title: 'Hofmeester Fjodor heeft alle sleutels', story: 'Veertig jaar draagt hij de sleutels van het paleis. Aan zijn ring hangt er één die in geen enkele deur past.', item: '🔑 Sleutelring', difficulty: 'moeilijk', seed: 232586 },
     { title: 'Het goudstof', story: 'Op het tapijt in de garderobe ligt goudstof. Pavel gebruikt dat om te polijsten.', item: '✨ Goudstof', difficulty: 'moeilijk', seed: 232683 },
     { title: 'Schaatsster Vera en de mof', story: 'Ze droeg een bontmof bij het schaatsen. In de voering zat iets hards, zo groot als een vingerhoed.', item: '🦊 Bontmof', difficulty: 'moeilijk', seed: 232780 }
@@ -171,7 +171,7 @@ const CAMPAGNE_16B = [
     { title: 'Honderd spiegels', story: 'In de spiegelzaal zie je iedereen tien keer. Iemand zag de graaf in een spiegel, na middernacht.', item: '🪞 Handspiegel', difficulty: 'makkelijk', seed: 234101 },
     { title: 'Gravin Jelena in het zwart', story: 'Ze draagt rouw, zoals het hoort. Onder de zwarte jurk draagt ze de blauwe van het bal.', item: '👗 Baljurk', difficulty: 'gemiddeld', seed: 234198 },
     { title: 'Het spiegelbeeld', story: 'In de spiegel stond een man met een snor bij de deur. Bij de deur stond niemand.', item: '🎩 Hoge hoed', difficulty: 'moeilijk', seed: 234295 },
-    { title: 'Fotografe Sofia en de spiegels', story: 'Spiegels en een flits gaan niet samen, zegt ze. Toch fotografeerde ze de zaal, van achter een gordijn.', item: '🎞️ Negatief', difficulty: 'gemiddeld', seed: 234392 },
+    { title: 'Fotografe Irina en de spiegels', story: 'Spiegels en een flits gaan niet samen, zegt ze. Toch fotografeerde ze de zaal, van achter een gordijn.', item: '🎞️ Negatief', difficulty: 'gemiddeld', seed: 234392 },
     { title: 'Luitenant Dmitri en zijn verloofde', story: 'Hij danste één dans met zijn verloofde, de eerste in een week. De hele dans keek hij in de spiegel.', item: '💐 Corsage', difficulty: 'moeilijk', seed: 234489 },
     { title: 'Hofmeester Fjodor poetst', story: 'Elke ochtend poetst hij honderd spiegels. Op één zat een vingerafdruk, op de hoogte van een kind.', item: '🧽 Zeemleer', difficulty: 'moeilijk', seed: 234586 },
     { title: 'De deur achter de spiegel', story: 'Achter de vijftigste spiegel zit een deur naar de bibliotheek. Iemand kende hem.', item: '🚪 Spiegeldeur', difficulty: 'meester', seed: 234683 },
@@ -201,7 +201,7 @@ const CAMPAGNE_16B = [
     { title: 'Gravin Jelena leest voor', story: 'Ze leest de brief voor aan de familie. Eén zin slaat ze over.', item: '👓 Lorgnet', difficulty: 'meester', seed: 236295 },
     { title: 'De ketel', story: "Een zegel krijg je los met stoom. In de keuken stond de ketel om drie uur 's nachts op het vuur.", item: '🫖 Samovar', difficulty: 'moeilijk', seed: 236392 },
     { title: 'Luitenant Dmitri kent het zegel', story: 'Als officier ziet hij elke week brieven van het hof. Hij weet hoe je zo een zegel opnieuw zet.', item: '🎖️ Medaille', difficulty: 'meester', seed: 236489 },
-    { title: 'Fotografe Sofia in de donkere kamer', story: 'In haar donkere kamer hangt een glasplaat te drogen. Er staat een brief op.', item: '🧪 Ontwikkelaar', difficulty: 'meester', seed: 236586 },
+    { title: 'Fotografe Irina in de donkere kamer', story: 'In haar donkere kamer hangt een glasplaat te drogen. Er staat een brief op.', item: '🧪 Ontwikkelaar', difficulty: 'meester', seed: 236586 },
     { title: 'Componist Sergej en het hof', story: 'Het hof vraagt een wals voor het voorjaarsbal, staat in de brief. Sergej wist dat al een week.', item: '🎶 Voorjaarswals', difficulty: 'meester', seed: 236683 },
     { title: 'Wat er stond', story: 'Drie zinnen, in sierlijk schrift. De derde zin ging over de erfenis, en die zin kende iemand al.', item: '🪶 Ganzenveer', difficulty: 'meester', seed: 236780 }
   ]},
@@ -227,7 +227,7 @@ const CAMPAGNE_16B = [
     { title: 'De hoezen', story: 'Fjodor trekt witte hoezen over de stoelen. Over één stoel in de bibliotheek ligt al een hoes, sinds januari.', item: '🛋️ Stofhoes', difficulty: 'moeilijk', seed: 238101 },
     { title: 'Gravin Jelena krijgt het paleis', story: 'Volgens de brief van het hof erft zij het paleis. In december bestelde ze al gordijnen met haar eigen monogram.', item: '🧵 Monogram', difficulty: 'meester', seed: 238198 },
     { title: 'Luitenant Dmitri trouwt', story: 'In juni is de bruiloft, in de kapel van het paleis. Hij vroeg de priester om de datum te vervroegen.', item: '💌 Trouwkaart', difficulty: 'meester', seed: 238295 },
-    { title: 'Fotografe Sofia maakt de groepsfoto', story: 'Acht mensen voor de trap, voor het tijdschrift. Eén van hen kijkt niet in de lens, maar naar de bibliotheek.', item: '🖼️ Groepsfoto', difficulty: 'meester', seed: 238392 },
+    { title: 'Fotografe Irina maakt de groepsfoto', story: 'Acht mensen voor de trap, voor het tijdschrift. Eén van hen kijkt niet in de lens, maar naar de bibliotheek.', item: '🖼️ Groepsfoto', difficulty: 'meester', seed: 238392 },
     { title: 'Componist Sergej speelt af', story: 'Zijn wals heet nu Oudejaarsavond. De herhaling van januari staat er niet meer in.', item: '🎹 Nieuwe partituur', difficulty: 'moeilijk', seed: 238489 },
     { title: 'Goudsmid Pavel pakt het ei in', story: 'Het ei gaat mee naar het buitenhuis, in een kist met stro. Pavel pakt het zelf in en wil niet dat iemand kijkt.', item: '📦 Strokist', difficulty: 'meester', seed: 238586 },
     { title: 'Gouvernante Mabel neemt afscheid', story: 'Na zes jaar gaat ze terug naar Engeland. De kinderen geven haar een tekening van oudejaarsavond.', item: '🖍️ Kindertekening', difficulty: 'meester', seed: 238683 },
@@ -247,7 +247,7 @@ const CAMPAGNE_16B = [
     { title: 'Geluidsman Felix neemt alles op', story: 'Zijn bandrecorder stond de hele avond aan bij het kampvuur. Om half elf is de band een minuut stil.', item: '📼 Geluidsband', difficulty: 'gemiddeld', seed: 241489 },
     { title: 'Chef Hamisi en de koffie', story: 'Na het eten brengt hij koffie rond, met kaneel. De kop van de filmer stond onaangeroerd in de donkere kamer.', item: '☕ Koffiekop', difficulty: 'gemiddeld', seed: 241586 },
     { title: 'De laatste opname', story: 'Op de klapper staat: rol 40, opname 12. Rol 40 is nergens te vinden.', item: '🎬 Klapper', difficulty: 'moeilijk', seed: 241683 },
-    { title: 'Biologe Hanne komt laat', story: 'Ze kwam pas om middernacht terug van haar leeuwen. De motor van haar jeep was koud.', item: '📡 Peilantenne', difficulty: 'moeilijk', seed: 241780 }
+    { title: 'Biologe Birgit komt laat', story: 'Ze kwam pas om middernacht terug van haar leeuwen. De motor van haar jeep was koud.', item: '📡 Peilantenne', difficulty: 'moeilijk', seed: 241780 }
   ]},
   { key: 'safarilodge-2', theme: 'safarilodge', part: 2, icon: '🎞️', title: 'Deel II · Het negatief',
     intro: 'Felix ontwikkelt de rollen die de filmer wel achterliet. Eén filmrol is klaar. Op de laatste foto staat iemand die er niet hoort.',
@@ -269,7 +269,7 @@ const CAMPAGNE_16B = [
     briefing: 'Bij de waterpoel kijkt iedereen naar de dieren, niet naar elkaar. Wie zegt waar hij níét was, vertelt je ook iets: streep die ruimte meteen weg.',
     cases: [
     { title: 'Schoenafdrukken', story: 'In de modder staan sporen van olifant, zebra en leeuw. En van een schoen, maat zevenendertig.', item: '👞 Gipsafdruk', difficulty: 'makkelijk', seed: 243101 },
-    { title: 'Biologe Hanne in de toren', story: 'Elke nacht telt ze de leeuwen bij de poel. Vannacht telde ze er drie, en een zaklamp.', item: '🔦 Zaklamp', difficulty: 'gemiddeld', seed: 243198 },
+    { title: 'Biologe Birgit in de toren', story: 'Elke nacht telt ze de leeuwen bij de poel. Vannacht telde ze er drie, en een zaklamp.', item: '🔦 Zaklamp', difficulty: 'gemiddeld', seed: 243198 },
     { title: 'Gids Otieno leest sporen', story: 'Hij leest sporen zoals een ander de krant. Dit spoor liep van de poel naar de donkere kamer, zegt hij.', item: '🐾 Sporenboek', difficulty: 'gemiddeld', seed: 243295 },
     { title: 'De lamp op de toren', story: 'Een lamp op de toren verlicht de poel voor de gasten. Om twee uur ging hij uit, en weer aan.', item: '💡 Lamp op de toren', difficulty: 'moeilijk', seed: 243392 },
     { title: 'Chef Hamisi haalt water', story: 'Voor de keuken pompt hij water uit de put, niet uit de poel. Zijn laarzen zaten toch vol modder.', item: '🥾 Rubberlaars', difficulty: 'gemiddeld', seed: 243489 },
@@ -298,7 +298,7 @@ const CAMPAGNE_16B = [
     cases: [
     { title: 'Zes plaatsen', story: 'In de mand passen zes mensen en de ballonvaarder. Na de landing stapten er zeven uit.', item: '🧺 Ballonmand', difficulty: 'makkelijk', seed: 245101 },
     { title: 'Piloot Kiprono kijkt vanaf de grond', story: 'Een piloot vliegt niet graag mee met een ander. Hij keek van onderaf, met een verrekijker.', item: '🔭 Verrekijker', difficulty: 'gemiddeld', seed: 245198 },
-    { title: 'Biologe Hanne zoekt haar leeuwen', story: 'Van boven zie je een hele troep tegelijk. Ze zag één leeuw te weinig, en één jeep te veel.', item: '🦁 Troepkaart', difficulty: 'moeilijk', seed: 245295 },
+    { title: 'Biologe Birgit zoekt haar leeuwen', story: 'Van boven zie je een hele troep tegelijk. Ze zag één leeuw te weinig, en één jeep te veel.', item: '🦁 Troepkaart', difficulty: 'moeilijk', seed: 245295 },
     { title: 'De zandzakken', story: 'Een ballon heeft zandzakken om te dalen. Er hingen er vier, het moesten er zes zijn.', item: '⏳ Zandzak', difficulty: 'moeilijk', seed: 245392 },
     { title: 'Eigenares Wambui telt de gasten', story: 'Ze schreef zes gasten in, zes namen op het formulier. De zevende naam staat er in potlood bij.', item: '📋 Inschrijfformulier', difficulty: 'meester', seed: 245489 },
     { title: 'Geluidsman Felix neemt de wind op', story: 'Boven de vlakte hoor je alleen de brander. Op zijn band hoor je een stem die niet van de ballonvaarder is.', item: '🎙️ Microfoon', difficulty: 'moeilijk', seed: 245586 },
@@ -317,7 +317,7 @@ const CAMPAGNE_16B = [
     { title: 'Journaliste Amina interviewt', story: 'Ze vroeg de dokter wie er ziek was. Hij noemde een naam, en het was de naam van de filmer.', item: '📝 Interviewnotities', difficulty: 'meester', seed: 246489 },
     { title: 'Chef Hamisi zet thee', story: 'Op de lodge drinkt iedereen thee met melk en suiker. De dokter dronk hem zwart, net als één iemand hier.', item: '🫖 Theepot', difficulty: 'meester', seed: 246586 },
     { title: 'Het recept', story: 'De dokter liet een recept achter op naam van de lodge. Het is een slaapmiddel, en het is al op.', item: '📄 Recept', difficulty: 'meester', seed: 246683 },
-    { title: 'Wie hem riep', story: 'Iemand riep de dokter op met een zender die niet van de lodge is. De leeuwen van Hanne dragen er zo een.', item: '📡 Halsbandzender', difficulty: 'meester', seed: 246780 }
+    { title: 'Wie hem riep', story: 'Iemand riep de dokter op met een zender die niet van de lodge is. De leeuwen van Birgit dragen er zo een.', item: '📡 Halsbandzender', difficulty: 'meester', seed: 246780 }
   ]},
   { key: 'safarilodge-7', theme: 'safarilodge', part: 7, icon: '🎉', title: 'Deel VII · Jamhuri-dag',
     intro: 'Het is 12 december, Jamhuri-dag. Feest voor de onafhankelijkheid: muziek, geroosterd vlees en de hele lodge vrij. Bijna de hele lodge.',
@@ -329,7 +329,7 @@ const CAMPAGNE_16B = [
     { title: 'Eigenares Wambui houdt een toespraak', story: 'Elf jaar onafhankelijk, en tien jaar Twiga Lodge. Ze bedankte iedereen bij naam, op één na.', item: '📜 Toespraak', difficulty: 'meester', seed: 247295 },
     { title: 'De band uit Kisumu', story: 'Op de veranda speelt een band benga. De gitarist kende de filmer, en de filmer kende hem.', item: '🎸 Gitaar', difficulty: 'moeilijk', seed: 247392 },
     { title: 'Gids Otieno heeft dienst', story: 'Op een feestdag moet er iemand bij de gasten blijven. Otieno bood het zelf aan, voor het eerst in tien jaar.', item: '📅 Dienstlijst', difficulty: 'meester', seed: 247489 },
-    { title: 'Biologe Hanne viert mee', story: 'In Denemarken is er geen Jamhuri-dag, zegt ze lachend. Ze zong het volkslied mee, alle coupletten.', item: '🎶 Liedblad', difficulty: 'meester', seed: 247586 },
+    { title: 'Biologe Birgit viert mee', story: 'In Denemarken is er geen Jamhuri-dag, zegt ze lachend. Ze zong het volkslied mee, alle coupletten.', item: '🎶 Liedblad', difficulty: 'meester', seed: 247586 },
     { title: 'Geluidsman Felix neemt het feest op', story: 'Hij nam vier uur muziek op. In het midden zit tien minuten stilte, en de band stopte nooit.', item: '🎚️ Bandrecorder', difficulty: 'meester', seed: 247683 },
     { title: 'Bijna de hele lodge', story: 'De hele lodge had vrij, en iedereen was op het feest. In het garageboek staat toch een rit om drie uur.', item: '🚙 Garageboek', difficulty: 'meester', seed: 247780 }
   ]},
@@ -356,7 +356,7 @@ const CAMPAGNE_16B = [
     cases: [
     { title: 'De volle maan', story: 'Op Chuseok kijkt iedereen naar de maan en doet een wens. De heer des huizes keek naar de vijver.', item: '🏮 Papieren lantaarn', difficulty: 'makkelijk', seed: 251101 },
     { title: 'Het paviljoen', story: 'Hij zat op zijn kussen, met het penseel nog in zijn hand. De inkt op de rol was droog.', item: '🖌️ Penseel', difficulty: 'makkelijk', seed: 251198 },
-    { title: 'Songpyeon', story: 'Sun-i maakte honderd rijstkoekjes in de vorm van een halve maan. Op zijn bord lagen er drie, onaangeroerd.', item: '🍡 Songpyeon', difficulty: 'makkelijk', seed: 251295 },
+    { title: 'Songpyeon', story: 'Bok-sun maakte honderd rijstkoekjes in de vorm van een halve maan. Op zijn bord lagen er drie, onaangeroerd.', item: '🍡 Songpyeon', difficulty: 'makkelijk', seed: 251295 },
     { title: 'Vrouwe Kang en de sleutels', story: 'Zij heeft de sleutels van elke kist in huis. Het paviljoen heeft geen slot, zegt ze.', item: '🗝️ Koperen sleutel', difficulty: 'gemiddeld', seed: 251392 },
     { title: 'Student Sang-u buigt', story: 'Op Chuseok buigt de zoon voor de voorouders. Hij boog één keer te weinig.', item: '🕯️ Wierookstokje', difficulty: 'gemiddeld', seed: 251489 },
     { title: 'De kringdans', story: 'Na het eten dansen de vrouwen hand in hand in een kring onder de maan. De kring was één hand kleiner dan anders.', item: '🌾 Rijstschoof', difficulty: 'gemiddeld', seed: 251586 },
@@ -383,10 +383,10 @@ const CAMPAGNE_16B = [
     briefing: 'Bij het kimchi maken werkt iedereen ergens anders. Wie zegt waar hij níét was, vertelt je ook iets: streep die kamer meteen weg.',
     cases: [
     { title: 'Honderd kolen', story: "Honderd kolen liggen te zouten op de binnenplaats. 's Ochtends lagen er negenennegentig.", item: '🥬 Chinese kool', difficulty: 'makkelijk', seed: 253101 },
-    { title: 'Kokkin Sun-i proeft', story: 'Ze proeft elke pot voordat hij dichtgaat. Eén pot mocht ze niet proeven, zei vrouwe Kang.', item: '🥄 Houten lepel', difficulty: 'gemiddeld', seed: 253198 },
+    { title: 'Kokkin Bok-sun proeft', story: 'Ze proeft elke pot voordat hij dichtgaat. Eén pot mocht ze niet proeven, zei vrouwe Kang.', item: '🥄 Houten lepel', difficulty: 'gemiddeld', seed: 253198 },
     { title: 'Het kruikenterras', story: 'Twintig potten op een rij, de grootste achteraan. De grootste is te zwaar voor alleen kimchi.', item: '🏺 Aarden pot', difficulty: 'gemiddeld', seed: 253295 },
-    { title: 'Marskramer Deok-su brengt zout', story: 'Elk jaar brengt hij het zout van de kust. Dit jaar kwam hij een dag te vroeg.', item: '🧂 Zoutzak', difficulty: 'moeilijk', seed: 253392 },
-    { title: 'Geneesvrouw So-yeon helpt mee', story: 'Ze snijdt de gember en de knoflook. Ze snijdt ook een wortel die niet in kimchi hoort.', item: '🫚 Ginsengwortel', difficulty: 'gemiddeld', seed: 253489 },
+    { title: 'Marskramer Man-sik brengt zout', story: 'Elk jaar brengt hij het zout van de kust. Dit jaar kwam hij een dag te vroeg.', item: '🧂 Zoutzak', difficulty: 'moeilijk', seed: 253392 },
+    { title: 'Geneesvrouw Ok-hwa helpt mee', story: 'Ze snijdt de gember en de knoflook. Ze snijdt ook een wortel die niet in kimchi hoort.', item: '🫚 Ginsengwortel', difficulty: 'gemiddeld', seed: 253489 },
     { title: 'De rode handen', story: 'Van de peper krijgt iedereen rode handen. Eén iemand had schone handen, en zei de hele dag te hebben geholpen.', item: '🌶️ Rode peper', difficulty: 'moeilijk', seed: 253586 },
     { title: 'Schilder Dae-ho tekent het werk', story: 'Hij tekent de vrouwen aan het werk, rij na rij. Op zijn tekening staan zeven vrouwen. Er waren er zes.', item: '📃 Tekening op hanji', difficulty: 'moeilijk', seed: 253683 },
     { title: 'In één pot', story: 'In de grootste pot, onder de kool, zit een dichtgebonden pakje. Het is droog, en het is een boek.', item: '📦 Pakje in oliepapier', difficulty: 'meester', seed: 253780 }
@@ -401,7 +401,7 @@ const CAMPAGNE_16B = [
     { title: 'De vraag', story: 'Schrijf vier regels over een vijver bij volle maan, was de vraag. Precies het gedicht van de heer.', item: '📋 Examenvraag', difficulty: 'moeilijk', seed: 254295 },
     { title: 'Tolk Hak-su kent iemand', story: 'Hij kent een man aan het hof die de vragen opschrijft. Hij zag hem een maand geleden nog, zegt hij.', item: '🏷️ Hofpenning', difficulty: 'gemiddeld', seed: 254392 },
     { title: 'Vrouwe Kang betaalt', story: 'Een reis naar Hanyang kost veel. Ze betaalde hem met zilver dat niet uit de huiskist kwam.', item: '🪙 Zilveren munt', difficulty: 'moeilijk', seed: 254489 },
-    { title: 'Marskramer Deok-su brengt nieuws', story: 'Op de markt hoorde hij de uitslag eerder dan de familie. Hij vertelde het pas na drie dagen.', item: '🧺 Mand met waren', difficulty: 'moeilijk', seed: 254586 },
+    { title: 'Marskramer Man-sik brengt nieuws', story: 'Op de markt hoorde hij de uitslag eerder dan de familie. Hij vertelde het pas na drie dagen.', item: '🧺 Mand met waren', difficulty: 'moeilijk', seed: 254586 },
     { title: 'Borduurster Yeon-i en de rol', story: 'Op haar scherm staat het gedicht van de heer. Iemand schreef het over, met de vierde regel erbij.', item: '🪡 Borduurnaald', difficulty: 'meester', seed: 254683 },
     { title: 'Wie de vragen kende', story: 'De vraag lag al in het huis, drie maanden voor het examen. Alleen de heer wist dat, en nog één.', item: '✉️ Brief uit Hanyang', difficulty: 'meester', seed: 254780 }
   ]},
@@ -411,9 +411,9 @@ const CAMPAGNE_16B = [
     briefing: 'In de sneeuw blijft iedereen binnen, ieder in zijn eigen kamer. Begin bij wie zegt alleen te zijn geweest: dat ruimt meteen een hele kamer op.',
     cases: [
     { title: 'Het pad is dicht', story: 'Een meter sneeuw op het pad naar het dal. In de sneeuw voor de poort staat één spoor, naar binnen.', item: '🥿 Strosandaal', difficulty: 'makkelijk', seed: 255101 },
-    { title: 'Kokkin Sun-i stookt de vloer', story: 'Onder de vloer brandt de hele nacht een vuur, voor de warmte. In de theekamer was de vloer koud.', item: '🔥 Vloervuur', difficulty: 'gemiddeld', seed: 255198 },
+    { title: 'Kokkin Bok-sun stookt de vloer', story: 'Onder de vloer brandt de hele nacht een vuur, voor de warmte. In de theekamer was de vloer koud.', item: '🔥 Vloervuur', difficulty: 'gemiddeld', seed: 255198 },
     { title: 'Het licht in de theekamer', story: 'De hele nacht brandde er een kaars in de theekamer. Om middernacht zag Yeon-i twee schaduwen op het papier.', item: '🕯️ Kaarsstompje', difficulty: 'moeilijk', seed: 255295 },
-    { title: 'Geneesvrouw So-yeon blijft', story: 'Door de sneeuw kan ze niet terug naar het dal. Ze sliep in de gastenkamer, zegt ze. Haar bed was niet beslapen.', item: '🛏️ Opgevouwen deken', difficulty: 'moeilijk', seed: 255392 },
+    { title: 'Geneesvrouw Ok-hwa blijft', story: 'Door de sneeuw kan ze niet terug naar het dal. Ze sliep in de gastenkamer, zegt ze. Haar bed was niet beslapen.', item: '🛏️ Opgevouwen deken', difficulty: 'moeilijk', seed: 255392 },
     { title: 'De thee', story: 'Twee kommen thee in de theekamer, één leeg en één vol. De volle is koud en bitter.', item: '🍵 Theekom', difficulty: 'meester', seed: 255489 },
     { title: 'Schilder Dae-ho schildert de sneeuw', story: 'Hij schildert de bergen onder de sneeuw. Op zijn schilderij brandt licht in een raam dat er niet is.', item: '🏔️ Sneeuwlandschap', difficulty: 'moeilijk', seed: 255586 },
     { title: 'Tolk Hak-su leest bij kaarslicht', story: 'Hij las de hele nacht een boek uit Peking. Het boek gaat over sterren, en hij keek naar de sneeuw.', item: '🔭 Sterrenboek', difficulty: 'moeilijk', seed: 255683 },
@@ -429,8 +429,8 @@ const CAMPAGNE_16B = [
     { title: 'De bril', story: 'De bril is voor de heer, zegt Hak-su, voor zijn ogen. De heer had nooit om een bril gevraagd.', item: '👓 Ronde bril', difficulty: 'meester', seed: 256295 },
     { title: 'Vrouwe Kang en de rekening', story: 'Zij betaalt alles wat het huis koopt. Voor de klok betaalde ze niets, en hij was duur.', item: '🧮 Telraam', difficulty: 'moeilijk', seed: 256392 },
     { title: 'Student Sang-u wil naar Peking', story: 'Hij wil mee met het volgende gezantschap. Al een maand leert hij in het geheim Chinees.', item: '📖 Chinees leesboek', difficulty: 'meester', seed: 256489 },
-    { title: 'Marskramer Deok-su wil kopen', story: 'Hij bood voor de klok een heel jaar zout. Hak-su zei nee, zonder te kijken.', item: '💰 Buidel', difficulty: 'meester', seed: 256586 },
-    { title: 'Geneesvrouw So-yeon en de ginseng', story: 'Uit Peking kwam ook ginseng mee, beter dan die van hier. Eén pakje is niet voor de familie.', item: '🌿 Pakje kruiden', difficulty: 'meester', seed: 256683 },
+    { title: 'Marskramer Man-sik wil kopen', story: 'Hij bood voor de klok een heel jaar zout. Hak-su zei nee, zonder te kijken.', item: '💰 Buidel', difficulty: 'meester', seed: 256586 },
+    { title: 'Geneesvrouw Ok-hwa en de ginseng', story: 'Uit Peking kwam ook ginseng mee, beter dan die van hier. Eén pakje is niet voor de familie.', item: '🌿 Pakje kruiden', difficulty: 'meester', seed: 256683 },
     { title: 'Het geheim', story: 'In de kast van de klok zit een opgevouwen brief. Hij is in het Koreaans, maar geschreven in Peking.', item: '✉️ Opgevouwen brief', difficulty: 'meester', seed: 256780 }
   ]},
   { key: 'hanok-7', theme: 'hanok', part: 7, icon: '🪁', title: 'Deel VII · Seollal',
@@ -440,7 +440,7 @@ const CAMPAGNE_16B = [
     cases: [
     { title: 'De nieuwjaarsbuiging', story: 'Op nieuwjaarsochtend buigen de kinderen diep voor de ouderen. Vrouwe Kang kreeg één buiging minder dan anders.', item: '🍲 Kom tteokguk', difficulty: 'moeilijk', seed: 257101 },
     { title: 'Yut', story: 'Vier stokjes in de lucht. Drie keer achter elkaar vallen ze op dezelfde kant.', item: '🎲 Yutstokjes', difficulty: 'meester', seed: 257198 },
-    { title: 'Kokkin Sun-i schept op', story: 'Met een kom tteokguk word je een jaar ouder. Sun-i schepte tien kommen voor negen mensen.', item: '🥣 Soepkom', difficulty: 'meester', seed: 257295 },
+    { title: 'Kokkin Bok-sun schept op', story: 'Met een kom tteokguk word je een jaar ouder. Bok-sun schepte tien kommen voor negen mensen.', item: '🥣 Soepkom', difficulty: 'meester', seed: 257295 },
     { title: 'De vlieger', story: 'Op Seollal laat je een vlieger op met je zorgen erop, en knip je het touw door. Op één vlieger stond een naam.', item: '🪁 Vlieger', difficulty: 'moeilijk', seed: 257392 },
     { title: 'Borduurster Yeon-i is verloofd', story: 'Op nieuwjaar hoort ze met wie ze trouwt: een man uit Hanyang. Ze wist zijn naam al voordat iemand hem zei.', item: '💍 Trouwringen', difficulty: 'meester', seed: 257489 },
     { title: 'Schilder Dae-ho speelt mee', story: 'Voor het eerst in tien jaar speelt hij yut, en hij wint alles. Zijn stokjes zijn aan één kant zwaarder.', item: '🪵 Verzwaard stokje', difficulty: 'meester', seed: 257586 },
@@ -455,9 +455,9 @@ const CAMPAGNE_16B = [
     { title: 'Azaleakoekjes', story: 'In de lente bak je koekjes met een azaleabloem erop. Er was er één te weinig, en die lag in het paviljoen.', item: '🌸 Azaleakoekje', difficulty: 'moeilijk', seed: 258101 },
     { title: 'Vrouwe Kang leest de rol', story: 'Ze leest het gedicht hardop, alle vier de regels. Bij de vierde trilt haar stem niet.', item: '🎐 Windklokje', difficulty: 'meester', seed: 258198 },
     { title: 'Student Sang-u wordt ambtenaar', story: 'Hij krijgt een post in de hoofdstad, met het gedicht van zijn vader als bewijs. Morgen vertrekt hij, alleen.', item: '📃 Aanstellingsbrief', difficulty: 'meester', seed: 258295 },
-    { title: 'Geneesvrouw So-yeon brengt kruiden', story: 'Elk voorjaar brengt ze kruiden voor het hele jaar. Dit jaar bracht ze er één minder, voor één man minder.', item: '🧺 Kruidenmand', difficulty: 'meester', seed: 258392 },
-    { title: 'Marskramer Deok-su komt terug', story: 'Hij brengt waren en nieuws uit het dal. Het nieuws gaat over dit huis, en het klopt.', item: '🎒 Draagrek', difficulty: 'moeilijk', seed: 258489 },
-    { title: 'Kokkin Sun-i opent de laatste pot', story: 'De laatste kimchi van de winter. Onder in de pot ligt niets meer, en dat is goed.', item: '🏺 Lege pot', difficulty: 'meester', seed: 258586 },
+    { title: 'Geneesvrouw Ok-hwa brengt kruiden', story: 'Elk voorjaar brengt ze kruiden voor het hele jaar. Dit jaar bracht ze er één minder, voor één man minder.', item: '🧺 Kruidenmand', difficulty: 'meester', seed: 258392 },
+    { title: 'Marskramer Man-sik komt terug', story: 'Hij brengt waren en nieuws uit het dal. Het nieuws gaat over dit huis, en het klopt.', item: '🎒 Draagrek', difficulty: 'moeilijk', seed: 258489 },
+    { title: 'Kokkin Bok-sun opent de laatste pot', story: 'De laatste kimchi van de winter. Onder in de pot ligt niets meer, en dat is goed.', item: '🏺 Lege pot', difficulty: 'meester', seed: 258586 },
     { title: 'Schilder Dae-ho maakt het af', story: 'Zijn schilderij van het maanfeest is klaar. In het paviljoen zit de heer, en niemand naast hem.', item: '🖼️ Maanschilderij', difficulty: 'meester', seed: 258683 },
     { title: 'De laatste kom thee', story: 'Waar het begon, in het paviljoen bij de vijver. De maan ligt in het water, precies zoals in de vierde regel.', item: '🫖 Celadon theepot', difficulty: 'meester', seed: 258780 }
   ]}

@@ -56,13 +56,13 @@ window.ONTWERP_16B = [
         look: 'a Soviet glaciologist in her forties, short practical hair, fur ushanka hat with the flaps tied up, quilted padded jacket, a long cylinder of ice core in gloved hands' },
       { label: 'Dokter Kenji', gender: 'm', color: '#C2185B', who: 'Arts van de Japanse expeditie, verzorgt mensen én honden',
         look: 'a Japanese expedition doctor in his thirties, round wire glasses, neat side-parted hair, white coat over a thick wool turtleneck, stethoscope' },
-      { label: 'Meteorologe Ruth', gender: 'f', color: '#B8955C', who: 'Amerikaanse weervrouw, laat twee keer per dag een ballon op',
+      { label: 'Meteorologe Nancy', gender: 'f', color: '#B8955C', who: 'Amerikaanse weervrouw, laat twee keer per dag een ballon op',
         look: 'an American meteorologist in her thirties, short curls, horn-rimmed glasses, red parka with a fur-trimmed hood down, clipboard with weather charts' },
       { label: 'Hondenmenner Rewi', gender: 'm', color: '#8B5CB8', who: 'Komt uit Nieuw-Zeeland en kent elke hond bij naam',
         look: 'a Maori dog handler from New Zealand in his twenties, broad warm smile, woollen beanie, windproof anorak, sealskin mittens, a dog harness over his shoulder' },
       { label: 'Monteur Lieve', gender: 'f', color: '#5C7AB8', who: 'Belgische mecanicien, houdt de generator en de sneeuwrups aan de praat',
         look: 'a Belgian mechanic in her thirties, hair tied back under a knitted cap, oil-stained overalls over a wool sweater, a large spanner in hand' },
-      { label: 'Kok Mateo', gender: 'm', color: '#2C3E50', who: 'Argentijnse kok, tovert van blikken en sneeuw een feestmaal',
+      { label: 'Kok Diego', gender: 'm', color: '#2C3E50', who: 'Argentijnse kok, tovert van blikken en sneeuw een feestmaal',
         look: 'an Argentine cook in his forties, thick dark moustache, white apron over a checked flannel shirt, rolled sleeves, a ladle in hand' },
       { label: 'Natuurkundige Hélène', gender: 'f', color: '#D9A441', who: 'Franse onderzoekster, meet elke nacht het poollicht',
         look: 'a French physicist in her thirties, dark bob, polo-neck sweater under a duffle coat, a notebook full of aurora sketches and a small brass instrument' }
@@ -128,7 +128,7 @@ window.ONTWERP_16B = [
         look: 'a dashing guards officer in his thirties, waxed moustache, white dress uniform with gold epaulettes and a sash, plumed helmet under his arm' },
       { label: 'Hofmeester Fjodor', gender: 'm', color: '#2C3E50', who: 'Leidt al veertig jaar het personeel van het paleis',
         look: 'a dignified major-domo in his sixties, white side whiskers, dark livery with silver buttons, white gloves, a heavy ring of keys' },
-      { label: 'Fotografe Sofia', gender: 'f', color: '#D9A441', who: 'Fotografeert het bal voor een tijdschrift, met magnesiumflits',
+      { label: 'Fotografe Irina', gender: 'f', color: '#D9A441', who: 'Fotografeert het bal voor een tijdschrift, met magnesiumflits',
         look: 'a modern woman photographer in her thirties, short wavy hair, tailored jacket with a high collar, a wooden plate camera with a flash pan' }
     ],
     parts: [
@@ -192,7 +192,7 @@ window.ONTWERP_16B = [
         look: 'a Kenyan newspaper journalist in her twenties, big rounded afro, round sunglasses, patterned 1970s blouse, notebook and a portable cassette recorder' },
       { label: 'Geluidsman Felix', gender: 'm', color: '#2C3E50', who: 'Neemt voor de film de geluiden van de savanne op',
         look: 'a German sound recordist in his thirties, long hair and sideburns, headphones, khaki vest with many pockets, a reel-to-reel tape recorder on a strap' },
-      { label: 'Biologe Hanne', gender: 'f', color: '#D9A441', who: 'Deense onderzoekster, volgt al twee jaar dezelfde leeuwen',
+      { label: 'Biologe Birgit', gender: 'f', color: '#D9A441', who: 'Deense onderzoekster, volgt al twee jaar dezelfde leeuwen',
         look: 'a Danish lion researcher in her thirties, sun-bleached ponytail, freckles, faded field shirt, a notebook and a radio-tracking antenna' }
     ],
     parts: [
@@ -246,7 +246,7 @@ window.ONTWERP_16B = [
         look: 'a dignified Joseon noblewoman in her fifties, hair in a low chignon with a long silver binyeo hairpin, jade-green jeogori jacket and deep blue chima skirt, a ring of household keys' },
       { label: 'Student Sang-u', gender: 'm', color: '#5C8B5E', who: 'Zoon des huizes, studeert voor het staatsexamen',
         look: 'a young Joseon scholar of about twenty, black horsehair gat hat, white dopo robe, a bound book of classics, earnest face' },
-      { label: 'Geneesvrouw So-yeon', gender: 'f', color: '#C2185B', who: 'Komt uit het dal met kruiden en acupunctuurnaalden',
+      { label: 'Geneesvrouw Ok-hwa', gender: 'f', color: '#C2185B', who: 'Komt uit het dal met kruiden en acupunctuurnaalden',
         look: 'a Joseon woman physician in her thirties, hair in a neat chignon under a black garima headpiece, plain indigo hanbok, a cloth roll of needles and a herb pouch' },
       { label: 'Schilder Dae-ho', gender: 'm', color: '#B8955C', who: 'Schildert het maanfeest voor de familie',
         look: 'a genre painter in his forties, wispy beard, soft black cap, grey robe spattered with ink, brushes in a bamboo holder' },
@@ -254,9 +254,9 @@ window.ONTWERP_16B = [
         look: 'a young woman of about nineteen, long single braid with a red daenggi ribbon, rose-pink jeogori and white chima, an embroidery hoop with a crane design' },
       { label: 'Tolk Hak-su', gender: 'm', color: '#5C7AB8', who: 'Net terug van het gezantschap naar Peking',
         look: 'a court interpreter in his forties, black gat hat, blue official robe, round spectacles from Beijing, a small wooden box of books' },
-      { label: 'Kokkin Sun-i', gender: 'f', color: '#2C3E50', who: 'Leidt de keuken en weet wat er in elke pot zit',
+      { label: 'Kokkin Bok-sun', gender: 'f', color: '#2C3E50', who: 'Leidt de keuken en weet wat er in elke pot zit',
         look: 'a sturdy head cook in her fifties, hair wrapped in a white cloth, sleeves tied back, apron over a plain hanbok, a large wooden ladle' },
-      { label: 'Marskramer Deok-su', gender: 'm', color: '#D9A441', who: 'Trekt langs de dorpen met waren en nieuws',
+      { label: 'Marskramer Man-sik', gender: 'm', color: '#D9A441', who: 'Trekt langs de dorpen met waren en nieuws',
         look: 'a cheerful travelling peddler in his thirties, round bamboo hat with white cotton tufts, short jacket and wide trousers, a wooden A-frame pack on his back' }
     ],
     parts: [
