@@ -402,7 +402,16 @@
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "బోర్డు థీమ్‌లు, చిత్రపు ఫ్రేములు Crimson Passలో ఉన్నాయి. లేదా థీమ్‌లు, ఫ్రేములు మాత్రమే తెరవండి.",
     "Extra's": "ఎక్స్‌ట్రాలు",
     "+1 hint voor ★★★": "★★★ కోసం +1 సూచన",
-    "Vastgelopen? Je volgende hint is gratis.": "చిక్కుకుపోయారా? తదుపరి సూచన ఉచితం."
+    "Vastgelopen? Je volgende hint is gratis.": "చిక్కుకుపోయారా? తదుపరి సూచన ఉచితం.",
+    "🔍 Live Activity tijdens een zaak": "🔍 కేసు ఆడేటప్పుడు లైవ్ యాక్టివిటీ",
+    "Zaak {0}": "కేసు {0}",
+    "Week {0}": "వారం {0}",
+    "Vandaag": "ఈరోజు",
+    "Archief": "ఆర్కైవ్",
+    "{0} van {1} verdachten geplaatst": "{1} మందిలో {0} అనుమానితులను ఉంచారు",
+    "Tik om verder te spelen": "ఆట కొనసాగించడానికి ట్యాప్ చేయండి",
+    "Zaak gesloten": "కేసు ముగిసింది",
+    "Opgelost in {0}": "{0}లో ఛేదించారు"
   },
 
   data: {

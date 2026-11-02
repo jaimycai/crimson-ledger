@@ -623,3 +623,101 @@ Map: `/private/tmp/claude-501/-Users-jaimycai/4b665c0e-1f47-4ec1-80b1-80218956e1
 
 Niet gelukt: Behance (paginafout) en apppage.net (botcontrole; niet omzeild). Nummer 31 ontbreekt daarom.
 Cookievensters zijn waar mogelijk geweigerd ("Reject all", "Do not consent").
+
+---
+
+## Bouw 1.6
+
+Gebouwd op 2 november 2026: **DI-1 "dossier open" met de eindstand van DI-2** (één Live Activity, twee toestanden).
+DI-3, DI-4 en DI-5 zijn niet gebouwd.
+
+### Wat er is
+
+| Onderdeel | Bestand |
+|---|---|
+| Widget Extension `CrimsonLiveActivity` (SwiftUI, ActivityKit, deployment target iOS 16.1, bundle-ID `nl.crimsonledger.app.LiveActivity`) | `ios/App/CrimsonLiveActivity/CrimsonLiveActivity.swift`, `Info.plist` |
+| Gedeeld model (in beide targets): vaste teksten + `ContentState` (fase, geplaatst/totaal, voortgangszin, start van de klok, klok aan/uit, eindtijd) | `ios/App/CrimsonLiveActivity/CaseActivityAttributes.swift` |
+| Eigen Capacitor-brug `LiveActivity` (`isAvailable`, `start`, `update`, `end`), aangemeld in `MainViewController` | `ios/App/App/LiveActivityPlugin.swift` |
+| `NSSupportsLiveActivities = YES` in de app; de app zelf blijft op iOS 15.0 (ActivityKit wordt zwak gelinkt, gecontroleerd met `otool` in Debug en Release) | `ios/App/App/Info.plist` |
+| JS: `App.liveCase(event)` met de vertaalde teksten; dunne aanroepen in `Board.startTimer` (klok), `Board.after` (aantal geplaatst), `Board.finish` (opgelost) en de terugknop (verlaten) | `app.js`, `board.js` |
+| Instelling "🔍 Live Activity tijdens een zaak" (standaard aan; alleen zichtbaar in de iOS-app vanaf iOS 16.2) | `index.html`, `app.js` |
+| Teksten: Nederlands in de code, Engels in `i18n/en.js`, 18 talen in `i18n/.work/<code>/ui.16d.js` (ook in de gedeelde `.work` van de hoofdmap gezet) | `i18n/*.js` |
+| Test: projectinstellingen, start/update/end, instelling, web en Android doen niets, Duits vertaald | `tests/live-activity.test.js` (in `npm test`) |
+
+### Gedrag
+
+- **Welke zaken:** campagne (label "Zaak 7", of "Archief"), dagelijkse zaak ("Vandaag", titel van de dag) en zaak van de
+  week ("Week 45"). Niet: vrij spel en de oefenzaak (`Board.resumeId()` is daar leeg).
+- **Start:** ActivityKit start alleen terwijl de app op de voorgrond is, dus de activiteit wordt aangevraagd zodra de klok
+  van de zaak start. iOS toont de activiteit van een app niet in het eiland zolang die app open is: de speler ziet hem pas
+  als de app naar de achtergrond gaat of het scherm op slot gaat. Geen alert, geen geluid.
+- **Klok:** `Text(timerInterval:)` vanaf `Board.startTime` (wandklok), dus precies dezelfde tijd als in de app zonder één
+  update. Na "Aan de slag" (briefing) en "Begrepen" (nieuwe verklaring) start de klok in de app opnieuw; dan schuift de
+  start van de activiteit mee (één update). In de rustige stand (klok uit) staat er "3/5" in plaats van de klok.
+- **Updates:** alleen als het aantal geplaatste verdachten verandert (plaatsen, weghalen, terug), zonder alert.
+- **Einde:** opgelost → "Zaak gesloten", "Opgelost in 08:41", nog **20 minuten** op het toegangsscherm (het eiland is dan
+  meteen leeg). Dat gebeurt alleen als de app tijdens de zaak echt op de achtergrond is geweest; wie een zaak in één keer
+  in de app oplost, krijgt geen kaart achteraf. Terug naar het menu of de instelling uitzetten → meteen weg. Hooguit
+  **8 uur**: iOS beëindigt een activiteit dan zelf (de staleDate staat ook op 8 uur). Bij een koude start van de app worden overgebleven activiteiten beëindigd
+  (de app opent dan op het menu, niet in de zaak).
+- **Tik op de activiteit:** opent de app; de zaak staat er nog (bewezen in de simulator: zelfde bord, zelfde klok).
+
+### Ontwerp
+
+Eiland altijd zwart; toegangsscherm een donkere, licht doorzichtige kaart (`#140B08` op 82 %) zodat de achtergrond erdoor
+schemert en de crèmekleurige tekst in licht én donker leesbaar blijft. Goud `#B8955C` voor balk en ring, licht goud
+`#D4B074` voor de klok, karmijn `#8B2E1C` voor het wereldrondje en de stempel. Titel in Playfair Display: de extensie
+neemt hetzelfde bestand mee als de app (`assets/fonts/PlayfairDisplay-normal.woff2`, onveranderd, via `UIAppFonts`) en
+vraagt gewicht 700 op de wght-as; lukt dat niet, dan de systeemserif.
+
+- Compact: vergrootglas + "Vandaag"/"Zaak 7" links, de klok rechts.
+- Minimaal: ring met het deel van de verdachten dat staat (een waarde, geen logo), vergrootglas in het midden.
+- Uitgeklapt: wereldicoon in een karmijn rondje, titel en wereld, klok rechts, onder de balk "3 van 4 verdachten
+  geplaatst" en "Tik om verder te spelen".
+- Toegangsscherm: "Vandaag · Grand Hotel Aurora", titel, klok, balk, voortgang. Eindstand: zegel, eindtijd groot,
+  stempel "ZAAK GESLOTEN" en "Opgelost in 02:01".
+- iOS 27, eiland liggend: links alleen de ring, rechts niets (`isDynamicIslandLimitedInWidth`, achter
+  `#if compiler(>=6.4)` en `#available(iOS 27)`).
+
+Schermafbeeldingen (iPhone 17 Pro-simulator, iOS 26.5, Nederlands, dagelijkse zaak van 2 november):
+`docs/shots/live-activity-1.6/01-eiland-compact.jpg`, `02-eiland-uitgeklapt.jpg`, `03-toegangsscherm.jpg`,
+`04-toegangsscherm-zaak-gesloten.jpg`.
+
+### Wat de App Store-build nog nodig heeft
+
+De simulator bouwt en draait zonder iets extra. Voor `store/release-ios.sh` (archive met automatische ondertekening,
+export met `store/build/ExportOptions-manual.plist`) is nodig:
+
+1. **Nieuwe App ID** in developer.apple.com › Identifiers: expliciet, `nl.crimsonledger.app.LiveActivity`, naam
+   bijvoorbeeld "Crimson Ledger Live Activity". Geen capabilities aanvinken: lokale Live Activities vragen geen
+   entitlement (geen push, geen App Group). De App ID van de app zelf hoeft niet te veranderen.
+   (De archive-stap met `-allowProvisioningUpdates` en de API-sleutel kan de ID en een ontwikkelprofiel ook zelf
+   aanmaken; het App Store-profiel voor de export niet.)
+2. **Provisioning profile** van het type App Store Connect voor die App ID, met hetzelfde Apple Distribution-certificaat
+   als nu, bijvoorbeeld "Crimson Ledger Live Activity App Store". Downloaden of laten ophalen met
+   `-allowProvisioningUpdates`.
+3. **`store/build/ExportOptions-manual.plist` uitbreiden** (niet gedaan, store/ is niet aangeraakt): in
+   `provisioningProfiles` een tweede regel naast die van de app:
+   ```xml
+   <key>nl.crimsonledger.app.LiveActivity</key><string>Crimson Ledger Live Activity App Store</string>
+   ```
+   Zonder die regel faalt de export met "No profiles for 'nl.crimsonledger.app.LiveActivity' were found".
+4. **Versienummers:** `MARKETING_VERSION` en `CURRENT_PROJECT_VERSION` staan nu vier keer in `project.pbxproj` (Debug en
+   Release van app én extensie) en moeten altijd samen omhoog; anders weigert App Store Connect de upload ("CFBundleVersion
+   of the app extension must match"). `tests/live-activity.test.js` faalt als ze uiteenlopen. Het script leest met
+   `grep -m1` nog steeds die van de app.
+5. **Xcode Cloud:** `ci_post_clone.sh` hoeft niet te veranderen (de extensie heeft geen pods). Met cloudondertekening
+   maakt Xcode Cloud het profiel zelf, mits de App ID bestaat of mag worden aangemaakt.
+6. **Op een echte iPhone testen** voor indienen: Always-On, StandBy, de toestemmingsvraag van iOS ("Wil je live
+   activiteiten van Crimson Ledger blijven toestaan?", verscheen in de simulator bij de eerste keer op slot) en de Apple
+   Watch Smart Stack.
+
+### Niet af of niet getest
+
+- Niet op een echt toestel getest; alleen de iOS 26.5-simulator (iOS 27-runtime ontbreekt hier), dus de liggende
+  iOS 27-weergave is gecompileerd maar niet bekeken. De minimale weergave (twee activiteiten tegelijk) is niet in beeld
+  gebracht.
+- Tijdens de briefing en de uitleg van een nieuwe verklaring staat de klok in de app stil, maar die van de activiteit
+  niet; na "Aan de slag"/"Begrepen" klopt hij weer. Pauzeren kan met `Text(timerInterval:pauseTime:)` als dat nodig is.
+- Geen deeplink: een tik opent de app waar hij was. Na een koude start is de activiteit al weg.
+- Geen eigen weergave voor CarPlay/Watch (`.supplementalActivityFamilies([.small])`); iOS gebruikt dan compact.

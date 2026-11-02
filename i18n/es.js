@@ -402,7 +402,16 @@
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "Los temas de tablero y los marcos de retrato forman parte del Crimson Pass. O desbloquea solo los temas y los marcos.",
     "Extra's": "Extras",
     "+1 hint voor ★★★": "+1 pista por ★★★",
-    "Vastgelopen? Je volgende hint is gratis.": "¿Atascado? Tu próxima pista es gratis."
+    "Vastgelopen? Je volgende hint is gratis.": "¿Atascado? Tu próxima pista es gratis.",
+    "🔍 Live Activity tijdens een zaak": "🔍 Actividad en vivo en los casos",
+    "Zaak {0}": "Caso {0}",
+    "Week {0}": "Semana {0}",
+    "Vandaag": "Hoy",
+    "Archief": "Archivo",
+    "{0} van {1} verdachten geplaatst": "{0} de {1} sospechosos colocados",
+    "Tik om verder te spelen": "Toca para seguir jugando",
+    "Zaak gesloten": "Caso cerrado",
+    "Opgelost in {0}": "Resuelto en {0}"
   },
 
   data: {

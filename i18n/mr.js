@@ -402,7 +402,16 @@
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "पट-थीम आणि पोर्ट्रेट फ्रेम Crimson Pass मध्ये समाविष्ट आहेत. किंवा फक्त थीम आणि फ्रेम अनलॉक करा.",
     "Extra's": "अतिरिक्त",
     "+1 hint voor ★★★": "★★★ साठी +1 संकेत",
-    "Vastgelopen? Je volgende hint is gratis.": "अडचण येतेय? पुढचा संकेत मोफत आहे."
+    "Vastgelopen? Je volgende hint is gratis.": "अडचण येतेय? पुढचा संकेत मोफत आहे.",
+    "🔍 Live Activity tijdens een zaak": "🔍 प्रकरणादरम्यान लाइव्ह ॲक्टिव्हिटी",
+    "Zaak {0}": "प्रकरण {0}",
+    "Week {0}": "आठवडा {0}",
+    "Vandaag": "आज",
+    "Archief": "अभिलेखागार",
+    "{0} van {1} verdachten geplaatst": "{1} पैकी {0} संशयित ठेवले",
+    "Tik om verder te spelen": "खेळ सुरू ठेवण्यासाठी टॅप करा",
+    "Zaak gesloten": "प्रकरण बंद",
+    "Opgelost in {0}": "{0} मध्ये सुटले"
   },
 
   data: {

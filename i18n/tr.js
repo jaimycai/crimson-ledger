@@ -402,7 +402,16 @@
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "Tahta temaları ve portre çerçeveleri Crimson Pass’e dahil. Ya da yalnızca temaların ve çerçevelerin kilidini aç.",
     "Extra's": "Ekstralar",
     "+1 hint voor ★★★": "★★★ için +1 ipucu",
-    "Vastgelopen? Je volgende hint is gratis.": "Takıldın mı? Sonraki ipucun ücretsiz."
+    "Vastgelopen? Je volgende hint is gratis.": "Takıldın mı? Sonraki ipucun ücretsiz.",
+    "🔍 Live Activity tijdens een zaak": "🔍 Vaka sırasında Canlı Etkinlik",
+    "Zaak {0}": "Vaka {0}",
+    "Week {0}": "Hafta {0}",
+    "Vandaag": "Bugün",
+    "Archief": "Arşiv",
+    "{0} van {1} verdachten geplaatst": "{1} şüpheliden {0} yerleştirildi",
+    "Tik om verder te spelen": "Oynamaya devam etmek için dokun",
+    "Zaak gesloten": "Vaka kapandı",
+    "Opgelost in {0}": "{0} sürede çözüldü"
   },
 
   data: {

@@ -402,7 +402,16 @@
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "سمات اللوحة وإطارات الصور جزء من Crimson Pass. أو افتح السمات والإطارات وحدها.",
     "Extra's": "إضافات",
     "+1 hint voor ★★★": "+1 تلميح مقابل ★★★",
-    "Vastgelopen? Je volgende hint is gratis.": "علقت؟ تلميحك التالي مجاني."
+    "Vastgelopen? Je volgende hint is gratis.": "علقت؟ تلميحك التالي مجاني.",
+    "🔍 Live Activity tijdens een zaak": "🔍 النشاط المباشر أثناء القضية",
+    "Zaak {0}": "القضية {0}",
+    "Week {0}": "الأسبوع {0}",
+    "Vandaag": "اليوم",
+    "Archief": "الأرشيف",
+    "{0} van {1} verdachten geplaatst": "المشتبه بهم في أماكنهم: {0} من {1}",
+    "Tik om verder te spelen": "اضغط لمتابعة اللعب",
+    "Zaak gesloten": "أُغلقت القضية",
+    "Opgelost in {0}": "حُلّت في {0}"
   },
 
   data: {

@@ -402,7 +402,16 @@
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "盤面テーマと肖像フレームはCrimson Passに含まれます。テーマとフレームだけを解放することもできます。",
     "Extra's": "アイテム",
     "+1 hint voor ★★★": "★★★でヒント+1回",
-    "Vastgelopen? Je volgende hint is gratis.": "お困りですか？次のヒントは無料です。"
+    "Vastgelopen? Je volgende hint is gratis.": "お困りですか？次のヒントは無料です。",
+    "🔍 Live Activity tijdens een zaak": "🔍 事件中のライブアクティビティ",
+    "Zaak {0}": "事件{0}",
+    "Week {0}": "第{0}週",
+    "Vandaag": "今日",
+    "Archief": "アーカイブ",
+    "{0} van {1} verdachten geplaatst": "容疑者{1}人中{0}人を配置",
+    "Tik om verder te spelen": "タップして続きをプレイ",
+    "Zaak gesloten": "事件終結",
+    "Opgelost in {0}": "{0}で解決"
   },
 
   data: {

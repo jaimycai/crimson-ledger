@@ -402,7 +402,16 @@
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "보드 테마와 초상화 액자는 Crimson Pass에 포함돼 있어요. 테마와 액자만 잠금 해제할 수도 있어요.",
     "Extra's": "아이템",
     "+1 hint voor ★★★": "★★★ 보상: 힌트 +1개",
-    "Vastgelopen? Je volgende hint is gratis.": "막히셨나요? 다음 힌트는 무료예요."
+    "Vastgelopen? Je volgende hint is gratis.": "막히셨나요? 다음 힌트는 무료예요.",
+    "🔍 Live Activity tijdens een zaak": "🔍 사건 중 실시간 현황",
+    "Zaak {0}": "사건 {0}",
+    "Week {0}": "{0}주차",
+    "Vandaag": "오늘",
+    "Archief": "기록 보관소",
+    "{0} van {1} verdachten geplaatst": "용의자 {1}명 중 {0}명 배치",
+    "Tik om verder te spelen": "탭하여 계속 플레이",
+    "Zaak gesloten": "사건 종결",
+    "Opgelost in {0}": "{0} 만에 해결"
   },
 
   data: {

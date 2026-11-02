@@ -402,7 +402,16 @@
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "I temi del tabellone e le cornici dei ritratti fanno parte del Crimson Pass. Oppure sblocca solo temi e cornici.",
     "Extra's": "Extra",
     "+1 hint voor ★★★": "+1 aiuto per ★★★",
-    "Vastgelopen? Je volgende hint is gratis.": "Bloccato? Il tuo prossimo aiuto è gratis."
+    "Vastgelopen? Je volgende hint is gratis.": "Bloccato? Il tuo prossimo aiuto è gratis.",
+    "🔍 Live Activity tijdens een zaak": "🔍 Attività in tempo reale nei casi",
+    "Zaak {0}": "Caso {0}",
+    "Week {0}": "Settimana {0}",
+    "Vandaag": "Oggi",
+    "Archief": "Archivio",
+    "{0} van {1} verdachten geplaatst": "{0} {0|one:sospettato piazzato|other:sospettati piazzati} su {1}",
+    "Tik om verder te spelen": "Tocca per continuare a giocare",
+    "Zaak gesloten": "Caso chiuso",
+    "Opgelost in {0}": "Risolto in {0}"
   },
 
   data: {

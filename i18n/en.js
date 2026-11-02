@@ -203,7 +203,12 @@
     '🧊 {0} {0|one:vrije dag|other:vrije dagen}': '🧊 {0} {0|one:freeze|other:freezes}',
     'Los nog {0} {0|one:zaak|other:zaken} op om {1} te openen. De dagelijkse zaak telt mee.': 'Solve {0} more {0|one:case|other:cases} to open {1}. The daily case counts.',
     'nog {0} {0|one:zaak|other:zaken} tot {1}': '{0} more {0|one:case|other:cases} until {1}',
-    '{0} {0|one:zaak|other:zaken} opgelost': '{0} {0|one:case|other:cases} solved'
+    '{0} {0|one:zaak|other:zaken} opgelost': '{0} {0|one:case|other:cases} solved',
+    // 1.6: Live Activity (Lock Screen and Dynamic Island); the short labels sit next to the camera, keep them short
+    '🔍 Live Activity tijdens een zaak': '🔍 Live Activity during a case',
+    'Zaak {0}': 'Case {0}', 'Week {0}': 'Week {0}', 'Vandaag': 'Today', 'Archief': 'Archive',
+    '{0} van {1} verdachten geplaatst': '{0} of {1} suspects placed', 'Tik om verder te spelen': 'Tap to keep playing',
+    'Zaak gesloten': 'Case closed', 'Opgelost in {0}': 'Solved in {0}'
   },
 
   data: {

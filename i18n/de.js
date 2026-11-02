@@ -402,7 +402,16 @@
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "Brettdesigns und Porträtrahmen gehören zum Crimson Pass. Oder schalte nur die Designs und Rahmen frei.",
     "Extra's": "Extras",
     "+1 hint voor ★★★": "+1 Tipp für ★★★",
-    "Vastgelopen? Je volgende hint is gratis.": "Festgefahren? Dein nächster Tipp ist gratis."
+    "Vastgelopen? Je volgende hint is gratis.": "Festgefahren? Dein nächster Tipp ist gratis.",
+    "🔍 Live Activity tijdens een zaak": "🔍 Live-Aktivität im Fall",
+    "Zaak {0}": "Fall {0}",
+    "Week {0}": "Woche {0}",
+    "Vandaag": "Heute",
+    "Archief": "Archiv",
+    "{0} van {1} verdachten geplaatst": "{0} von {1} Verdächtigen platziert",
+    "Tik om verder te spelen": "Tippen, um weiterzuspielen",
+    "Zaak gesloten": "Fall abgeschlossen",
+    "Opgelost in {0}": "Gelöst in {0}"
   },
 
   data: {

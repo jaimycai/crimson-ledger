@@ -402,7 +402,16 @@
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "平面图主题和头像框属于Crimson Pass。你也可以只解锁主题和头像框。",
     "Extra's": "道具",
     "+1 hint voor ★★★": "★★★ 奖励 +1 次提示",
-    "Vastgelopen? Je volgende hint is gratis.": "卡住了？下一次提示免费。"
+    "Vastgelopen? Je volgende hint is gratis.": "卡住了？下一次提示免费。",
+    "🔍 Live Activity tijdens een zaak": "🔍 破案时显示实时活动",
+    "Zaak {0}": "案件{0}",
+    "Week {0}": "第{0}周",
+    "Vandaag": "今日",
+    "Archief": "档案库",
+    "{0} van {1} verdachten geplaatst": "已安置{0}/{1}名嫌疑人",
+    "Tik om verder te spelen": "轻点继续游戏",
+    "Zaak gesloten": "结案",
+    "Opgelost in {0}": "用时{0}破案"
   },
 
   data: {

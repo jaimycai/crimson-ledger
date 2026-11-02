@@ -402,7 +402,16 @@
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "বোর্ডের থিম আর ছবির ফ্রেম Crimson Pass-এর অংশ। অথবা শুধু থিম আর ফ্রেমগুলো খুলে নিন।",
     "Extra's": "এক্সট্রা",
     "+1 hint voor ★★★": "★★★-এর জন্য +1টি ইঙ্গিত",
-    "Vastgelopen? Je volgende hint is gratis.": "আটকে গেছেন? পরের ইঙ্গিতটি বিনামূল্যে।"
+    "Vastgelopen? Je volgende hint is gratis.": "আটকে গেছেন? পরের ইঙ্গিতটি বিনামূল্যে।",
+    "🔍 Live Activity tijdens een zaak": "🔍 কেস চলাকালীন লাইভ অ্যাক্টিভিটি",
+    "Zaak {0}": "কেস {0}",
+    "Week {0}": "সপ্তাহ {0}",
+    "Vandaag": "আজ",
+    "Archief": "মহাফেজখানা",
+    "{0} van {1} verdachten geplaatst": "{1} জনের মধ্যে {0} জন সন্দেহভাজন বসানো হয়েছে",
+    "Tik om verder te spelen": "খেলা চালিয়ে যেতে ট্যাপ করুন",
+    "Zaak gesloten": "কেস বন্ধ",
+    "Opgelost in {0}": "সমাধানের সময়: {0}"
   },
 
   data: {

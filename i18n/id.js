@@ -402,7 +402,16 @@
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "Tema papan dan bingkai potret termasuk dalam Crimson Pass. Atau buka tema dan bingkainya saja.",
     "Extra's": "Ekstra",
     "+1 hint voor ★★★": "+1 hint untuk ★★★",
-    "Vastgelopen? Je volgende hint is gratis.": "Buntu? Hint berikutnya gratis."
+    "Vastgelopen? Je volgende hint is gratis.": "Buntu? Hint berikutnya gratis.",
+    "🔍 Live Activity tijdens een zaak": "🔍 Aktivitas Langsung selama kasus",
+    "Zaak {0}": "Kasus {0}",
+    "Week {0}": "Minggu {0}",
+    "Vandaag": "Hari ini",
+    "Archief": "Arsip",
+    "{0} van {1} verdachten geplaatst": "{0} dari {1} tersangka ditempatkan",
+    "Tik om verder te spelen": "Ketuk untuk lanjut bermain",
+    "Zaak gesloten": "Kasus ditutup",
+    "Opgelost in {0}": "Terungkap dalam {0}"
   },
 
   data: {

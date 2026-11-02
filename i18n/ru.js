@@ -402,7 +402,16 @@
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "Темы поля и рамки портретов входят в Crimson Pass. Или откройте только темы и рамки.",
     "Extra's": "Дополнительно",
     "+1 hint voor ★★★": "+1 подсказка за ★★★",
-    "Vastgelopen? Je volgende hint is gratis.": "Застряли? Следующая подсказка бесплатно."
+    "Vastgelopen? Je volgende hint is gratis.": "Застряли? Следующая подсказка бесплатно.",
+    "🔍 Live Activity tijdens een zaak": "🔍 Live Activity во время дела",
+    "Zaak {0}": "Дело {0}",
+    "Week {0}": "Неделя {0}",
+    "Vandaag": "Сегодня",
+    "Archief": "Архив",
+    "{0} van {1} verdachten geplaatst": "Расставлено {0} из {1} подозреваемых",
+    "Tik om verder te spelen": "Нажмите, чтобы продолжить",
+    "Zaak gesloten": "Дело закрыто",
+    "Opgelost in {0}": "Раскрыто за {0}"
   },
 
   data: {

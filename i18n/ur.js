@@ -402,7 +402,16 @@
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "بورڈ تھیم اور پورٹریٹ فریم Crimson Pass میں شامل ہیں۔ یا صرف تھیم اور فریم کھولیں۔",
     "Extra's": "ایکسٹرا",
     "+1 hint voor ★★★": "★★★ پر +1 اشارہ",
-    "Vastgelopen? Je volgende hint is gratis.": "مشکل ہو رہی ہے؟ اگلا اشارہ مفت ہے۔"
+    "Vastgelopen? Je volgende hint is gratis.": "مشکل ہو رہی ہے؟ اگلا اشارہ مفت ہے۔",
+    "🔍 Live Activity tijdens een zaak": "🔍 کیس کے دوران لائیو ایکٹیویٹی",
+    "Zaak {0}": "کیس {0}",
+    "Week {0}": "ہفتہ {0}",
+    "Vandaag": "آج",
+    "Archief": "ریکارڈ روم",
+    "{0} van {1} verdachten geplaatst": "{1} میں سے {0} مشتبہ افراد رکھے گئے",
+    "Tik om verder te spelen": "کھیل جاری رکھنے کے لیے ٹیپ کریں",
+    "Zaak gesloten": "کیس بند",
+    "Opgelost in {0}": "{0} میں حل ہوا"
   },
 
   data: {
