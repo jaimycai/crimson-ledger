@@ -1,10 +1,10 @@
 [
-  ["04-verklaringen", "Sudoku,\nama bir\n*cinayetle*", "Kurbanla yalnız kalan kimdi?"],
-  ["05-beschuldiging", "*Faili*\ngöster", "Tek çözüm. Saf mantık, tahmin yok."],
-  ["08-nieuw", "*Sonsuz*\nvaka", "1.024 vaka ve her gün yenisi. 128’i ücretsiz, reklam yok."],
+  ["04-verklaringen", "Sudoku,\nama\n*cinayetli*", "Kurbanla yalnız kalan kimdi?"],
+  ["05-beschuldiging", "*Katili*\nbul", "Tek çözüm. Saf mantık, tahmin yok."],
+  ["08-nieuw", "*240* vaka\nücretsiz", "Her dünyayı dene. Her gün yeni bir vaka, reklam yok."],
   ["06-zaak-gesloten", "Vaka\n*kapandı*", "İpucusuz ve ilk denemede çözene yıldız."],
   ["01-thuis", "*Serini*\nkoru", "Günün vakası, günlük görevler ve haftan tek bakışta."],
-  ["10-hint", "*Açıklayan*\nipuçları", "Asla cevabı değil: müfettiş ifadeyi gösterir."],
+  ["10-hint", "*Açıklayan*\nipuçları", "Cevabı söylemez. Üç yıldızlı her vaka bir ipucu kazandırır."],
   ["02-wereldkaart", "Luksor’dan\n*Hollywood*’a", "Her dünyanın kendi dönemi ve yeri; kolaydan zora."],
   ["09-circus", "Her dünyada\nyeni *şüpheliler*", "Kendi kat planı, karakterleri ve vakaları."],
   ["07-vitrine", "Kazanılacak\n*32* madalya", "Ve her vakadan bir delilin durduğu vitrin."]

@@ -1,10 +1,10 @@
 [
   ["04-verklaringen", "Sudoku,\nnhưng có\n*án mạng*", "Ai đã ở một mình với nạn nhân?"],
   ["05-beschuldiging", "Chỉ ra\n*hung thủ*", "Một lời giải. Thuần logic, không đoán mò."],
-  ["08-nieuw", "Vụ án\n*bất tận*", "1.024 vụ án và mỗi ngày một vụ mới. 128 vụ miễn phí, không quảng cáo."],
+  ["08-nieuw", "*240* vụ án\nmiễn phí", "Chơi thử mọi thế giới. Mỗi ngày một vụ mới, không quảng cáo."],
   ["06-zaak-gesloten", "Vụ án\n*khép lại*", "Sao cho người giải không cần gợi ý, ngay lần đầu."],
   ["01-thuis", "Giữ\n*chuỗi ngày*", "Vụ án hằng ngày, nhiệm vụ ngày và tuần của bạn trong nháy mắt."],
-  ["10-hint", "Gợi ý biết\n*giải thích*", "Không bao giờ là đáp án: thanh tra chỉ ra lời khai."],
+  ["10-hint", "Gợi ý biết\n*giải thích*", "Không bao giờ là đáp án. Mỗi vụ ba sao tặng thêm một gợi ý."],
   ["02-wereldkaart", "Từ Luxor\nđến *Hollywood*", "Mỗi thế giới một thời đại, một nơi chốn, từ dễ đến khó."],
   ["09-circus", "Mỗi thế giới,\n*nghi phạm* mới", "Sơ đồ, nhân vật và vụ án riêng."],
   ["07-vitrine", "*32*\nhuân chương", "Và tủ trưng bày bằng chứng từ mỗi vụ án."]
