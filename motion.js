@@ -245,10 +245,12 @@ const Motion = {
   },
 
   // ── 5. De streakvlam: de grijze vlam zuigt in, ontbrandt met een ring en vonken, het getal rolt door. ──
-  flame(flameEl, countEl, from, to, today) {
-    if (!this.ok || !flameEl) return;
+  //    opts.rive: de vlam zelf (inzuigen, ring, vonken) komt uit het Rive-bestand (rive-art.js); hier dan alleen
+  //    de trillingen, het doorrollende getal en de dag in de weekstrook, op de maat van de Rive-ontbranding.
+  flame(flameEl, countEl, from, to, today, opts = {}) {
+    if (!this.ok || (!flameEl && !opts.rive)) return;
     this.haptic('light');
-    this.play(flameEl, [
+    if (!opts.rive) this.play(flameEl, [
       { transform: 'scale(1)', color: '#A89C92' },
       { transform: 'scale(.8)', color: '#A89C92', offset: 0.25 },
       { transform: 'scale(1.32)', color: '#F2A33A', offset: 0.38 },
@@ -259,6 +261,7 @@ const Motion = {
     ], { duration: 1300, easing: 'ease-in-out' });
     setTimeout(() => {
       this.haptic('success');
+      if (opts.rive) return;
       const ring = document.createElement('span');
       ring.className = 'mo-ring';
       flameEl.appendChild(ring);
@@ -266,7 +269,7 @@ const Motion = {
       if (a) a.onfinish = () => ring.remove(); else ring.remove();
       const [x, y] = this.center(flameEl);
       this.burst(x, y - 4, { n: 34, a0: 4.1, a1: 5.3, v0: 2, v1: 6, s0: 1.2, s1: 3, grav: -0.05, drag: 0.97, fade: 0.016, cols: ['#F7C66A', '#EE7A27', '#FFE7A3'], shape: 'spark' });
-    }, 330);
+    }, opts.rive ? 270 : 330);
     if (countEl && from !== to) {
       countEl.textContent = from;
       setTimeout(() => {

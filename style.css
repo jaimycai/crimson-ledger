@@ -2205,6 +2205,14 @@ input, textarea { -webkit-user-select: text; user-select: text; }
 .briefing { text-align: left; }
 .mentor-head { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
 .mentor-img { width: 72px; height: 72px; border-radius: 50%; border: 2.5px solid var(--gold); object-fit: cover; box-shadow: var(--shadow-md); flex: none; }
+/* 1.6: Van Dam groot in de briefing, levend met Rive (rive-art.js); zonder Rive de foto eronder.
+   120 px op een 320-scherm, 168 px op een iPad. */
+.briefing .mentor-head { flex-direction: column; text-align: center; gap: 10px; }
+.mentor-live { position: relative; width: clamp(120px, 38vw, 168px); aspect-ratio: 1 / 1; flex: none; border-radius: 50%;
+  border: 2.5px solid var(--gold); box-shadow: var(--shadow-md); overflow: hidden; background: var(--bg-secondary); }
+.mentor-live .mentor-img { display: block; width: 100%; height: 100%; border: 0; border-radius: 0; box-shadow: none; }
+.mentor-live .rive-canvas { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; transition: opacity 0.3s var(--ease-out); }
+.mentor-live.rive-on .rive-canvas { opacity: 1; }
 .mentor-name { font-size: 1.35rem; }
 .mentor-sub { font-size: 0.8rem; color: var(--gold); font-weight: 700; display: block; }
 .mentor-quote { font-size: 0.95rem; line-height: 1.55; color: var(--text-primary); margin-bottom: 18px; }
@@ -2739,6 +2747,15 @@ html.ipad .board-topbar, html.ipad .map-topbar { padding-top: calc(30px + var(--
 .lg-nib { position: absolute; left: 0; top: 0; width: 18px; height: 18px; opacity: 0; pointer-events: none; }
 /* streakvlam */
 .streak-flame { position: relative; display: inline-block; transform-origin: 50% 85%; color: #D9631E; }
+/* 1.6: grijs als de streak niet leeft (ook het icoon, dus ook bij beperkte beweging) */
+.streak-flame.unlit { color: #A89C92; }
+/* 1.6: de levende Rive-vlam (rive-art.js). Het canvas is groter dan het icoon zodat de ontbranding (ring, vonken)
+   ruimte heeft: het steekt boven en opzij uit. De zichtbare vlam (60% van de hoogte, voet op 11%) valt zo precies
+   over het icoon (1.2em, vertical-align -0.22em); tikken gaan erdoor. */
+.streak-flame .rive-canvas { position: absolute; left: 50%; bottom: 0; width: 1.65em; height: 2.05em; transform: translateX(-50%);
+  pointer-events: none; opacity: 0; transition: opacity 0.3s var(--ease-out); }
+.streak-flame.rive-on .rive-canvas { opacity: 1; }
+.streak-flame.rive-on > .ico { visibility: hidden; }
 #streak-count { display: inline-block; }
 .mo-ring { position: absolute; left: 50%; top: 55%; width: 34px; height: 34px; margin: -17px 0 0 -17px; border-radius: 50%;
   border: 3px solid #F2A33A; opacity: 0; pointer-events: none; }
