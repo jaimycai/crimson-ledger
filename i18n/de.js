@@ -402,7 +402,17 @@
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "Brettdesigns und Porträtrahmen gehören zum Crimson Pass. Oder schalte nur die Designs und Rahmen frei.",
     "Extra's": "Extras",
     "+1 hint voor ★★★": "+1 Tipp für ★★★",
-    "Vastgelopen? Je volgende hint is gratis.": "Festgefahren? Dein nächster Tipp ist gratis."
+    "Vastgelopen? Je volgende hint is gratis.": "Festgefahren? Dein nächster Tipp ist gratis.",
+    "Kruisje": "Kreuz",
+    "Kruisje: tik een vakje waar de gekozen verdachte niet kan staan. Nog eens tikken haalt het kruisje weg.": "Kreuz: Tippe auf ein Feld, auf dem der gewählte Verdächtige nicht stehen kann. Noch einmal tippen nimmt das Kreuz wieder weg.",
+    "Heel bord": "Ganzes Brett",
+    "Inzoomen": "Vergrößern",
+    "Lege rijen en kolommen": "Leere Reihen und Spalten",
+    "Op dit bord zijn er meer rijen en kolommen dan verdachten. Veel rijen en kolommen blijven dus leeg, en twee verdachten mogen best op dezelfde rij of in dezelfde kolom staan. Alleen de verklaringen tellen.": "Dieses Brett hat mehr Reihen und Spalten als Verdächtige. Viele Reihen und Spalten bleiben also leer, und zwei Verdächtige dürfen ruhig in derselben Reihe oder Spalte stehen. Es zählen nur die Aussagen.",
+    "In deze zaak": "In diesem Fall",
+    "Uitleg van de verklaringen": "Erklärung der Aussagen",
+    "Zo lees je de verklaringen": "So liest du die Aussagen",
+    "✖️ Rij en kolom automatisch wegstrepen": "✖️ Reihe und Spalte automatisch streichen"
   },
 
   data: {

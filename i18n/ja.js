@@ -402,7 +402,17 @@
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "盤面テーマと肖像フレームはCrimson Passに含まれます。テーマとフレームだけを解放することもできます。",
     "Extra's": "アイテム",
     "+1 hint voor ★★★": "★★★でヒント+1回",
-    "Vastgelopen? Je volgende hint is gratis.": "お困りですか？次のヒントは無料です。"
+    "Vastgelopen? Je volgende hint is gratis.": "お困りですか？次のヒントは無料です。",
+    "Kruisje": "バツ",
+    "Kruisje: tik een vakje waar de gekozen verdachte niet kan staan. Nog eens tikken haalt het kruisje weg.": "バツ：選んだ容疑者がいられないマスをタップします。もう一度タップするとバツが消えます。",
+    "Heel bord": "盤面全体",
+    "Inzoomen": "拡大",
+    "Lege rijen en kolommen": "空いている横の列と縦の列",
+    "Op dit bord zijn er meer rijen en kolommen dan verdachten. Veel rijen en kolommen blijven dus leeg, en twee verdachten mogen best op dezelfde rij of in dezelfde kolom staan. Alleen de verklaringen tellen.": "この盤面は、容疑者の数より横の列と縦の列のほうが多くなっています。そのため空いたままの列がたくさんあり、2人の容疑者が同じ横の列や同じ縦の列にいることもあります。決め手になるのは証言だけです。",
+    "In deze zaak": "この事件で登場",
+    "Uitleg van de verklaringen": "証言の説明",
+    "Zo lees je de verklaringen": "証言の読み方",
+    "✖️ Rij en kolom automatisch wegstrepen": "✖️ 横の列と縦の列を自動でバツ"
   },
 
   data: {

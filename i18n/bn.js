@@ -402,7 +402,17 @@
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "বোর্ডের থিম আর ছবির ফ্রেম Crimson Pass-এর অংশ। অথবা শুধু থিম আর ফ্রেমগুলো খুলে নিন।",
     "Extra's": "এক্সট্রা",
     "+1 hint voor ★★★": "★★★-এর জন্য +1টি ইঙ্গিত",
-    "Vastgelopen? Je volgende hint is gratis.": "আটকে গেছেন? পরের ইঙ্গিতটি বিনামূল্যে।"
+    "Vastgelopen? Je volgende hint is gratis.": "আটকে গেছেন? পরের ইঙ্গিতটি বিনামূল্যে।",
+    "Kruisje": "ক্রস",
+    "Kruisje: tik een vakje waar de gekozen verdachte niet kan staan. Nog eens tikken haalt het kruisje weg.": "ক্রস: বেছে নেওয়া সন্দেহভাজন যে খোপে থাকতে পারেন না, সেখানে ট্যাপ করুন। আবার ট্যাপ করলে ক্রস উঠে যাবে।",
+    "Heel bord": "পুরো বোর্ড",
+    "Inzoomen": "বড় করুন",
+    "Lege rijen en kolommen": "ফাঁকা সারি আর কলাম",
+    "Op dit bord zijn er meer rijen en kolommen dan verdachten. Veel rijen en kolommen blijven dus leeg, en twee verdachten mogen best op dezelfde rij of in dezelfde kolom staan. Alleen de verklaringen tellen.": "এই বোর্ডে সন্দেহভাজনের চেয়ে সারি আর কলাম বেশি। তাই অনেক সারি আর কলাম ফাঁকা থাকে, আর দুজন সন্দেহভাজন একই সারিতে বা একই কলামেও থাকতে পারেন। শুধু বয়ানই আসল।",
+    "In deze zaak": "এই কেসে",
+    "Uitleg van de verklaringen": "বয়ানের ব্যাখ্যা",
+    "Zo lees je de verklaringen": "বয়ান কীভাবে পড়বেন",
+    "✖️ Rij en kolom automatisch wegstrepen": "✖️ সারি আর কলাম নিজে থেকে কেটে দিন"
   },
 
   data: {

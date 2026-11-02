@@ -402,7 +402,17 @@
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "Темы поля и рамки портретов входят в Crimson Pass. Или откройте только темы и рамки.",
     "Extra's": "Дополнительно",
     "+1 hint voor ★★★": "+1 подсказка за ★★★",
-    "Vastgelopen? Je volgende hint is gratis.": "Застряли? Следующая подсказка бесплатно."
+    "Vastgelopen? Je volgende hint is gratis.": "Застряли? Следующая подсказка бесплатно.",
+    "Kruisje": "Крестик",
+    "Kruisje: tik een vakje waar de gekozen verdachte niet kan staan. Nog eens tikken haalt het kruisje weg.": "Крестик: нажмите на клетку, где выбранный подозреваемый стоять не может. Нажмите ещё раз, чтобы убрать крестик.",
+    "Heel bord": "Всё поле",
+    "Inzoomen": "Увеличить",
+    "Lege rijen en kolommen": "Пустые ряды и столбцы",
+    "Op dit bord zijn er meer rijen en kolommen dan verdachten. Veel rijen en kolommen blijven dus leeg, en twee verdachten mogen best op dezelfde rij of in dezelfde kolom staan. Alleen de verklaringen tellen.": "На этом поле рядов и столбцов больше, чем подозреваемых. Поэтому многие ряды и столбцы остаются пустыми, а двое подозреваемых вполне могут стоять в одном ряду или в одном столбце. Важны только показания.",
+    "In deze zaak": "В этом деле",
+    "Uitleg van de verklaringen": "Объяснение показаний",
+    "Zo lees je de verklaringen": "Как читать показания",
+    "✖️ Rij en kolom automatisch wegstrepen": "✖️ Вычёркивать ряд и столбец автоматически"
   },
 
   data: {

@@ -402,7 +402,17 @@
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "Tema papan dan bingkai potret termasuk dalam Crimson Pass. Atau buka tema dan bingkainya saja.",
     "Extra's": "Ekstra",
     "+1 hint voor ★★★": "+1 hint untuk ★★★",
-    "Vastgelopen? Je volgende hint is gratis.": "Buntu? Hint berikutnya gratis."
+    "Vastgelopen? Je volgende hint is gratis.": "Buntu? Hint berikutnya gratis.",
+    "Kruisje": "Silang",
+    "Kruisje: tik een vakje waar de gekozen verdachte niet kan staan. Nog eens tikken haalt het kruisje weg.": "Silang: ketuk kotak tempat tersangka yang dipilih tidak mungkin berdiri. Ketuk lagi untuk menghapus tanda silangnya.",
+    "Heel bord": "Seluruh papan",
+    "Inzoomen": "Perbesar",
+    "Lege rijen en kolommen": "Baris dan kolom kosong",
+    "Op dit bord zijn er meer rijen en kolommen dan verdachten. Veel rijen en kolommen blijven dus leeg, en twee verdachten mogen best op dezelfde rij of in dezelfde kolom staan. Alleen de verklaringen tellen.": "Papan ini punya lebih banyak baris dan kolom daripada tersangka. Jadi banyak baris dan kolom tetap kosong, dan dua tersangka boleh saja berada di baris atau kolom yang sama. Yang menentukan hanya keterangan.",
+    "In deze zaak": "Di kasus ini",
+    "Uitleg van de verklaringen": "Penjelasan keterangan",
+    "Zo lees je de verklaringen": "Cara membaca keterangan",
+    "✖️ Rij en kolom automatisch wegstrepen": "✖️ Coret baris dan kolom otomatis"
   },
 
   data: {

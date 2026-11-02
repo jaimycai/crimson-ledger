@@ -402,7 +402,17 @@
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "سمات اللوحة وإطارات الصور جزء من Crimson Pass. أو افتح السمات والإطارات وحدها.",
     "Extra's": "إضافات",
     "+1 hint voor ★★★": "+1 تلميح مقابل ★★★",
-    "Vastgelopen? Je volgende hint is gratis.": "علقت؟ تلميحك التالي مجاني."
+    "Vastgelopen? Je volgende hint is gratis.": "علقت؟ تلميحك التالي مجاني.",
+    "Kruisje": "شطب",
+    "Kruisje: tik een vakje waar de gekozen verdachte niet kan staan. Nog eens tikken haalt het kruisje weg.": "شطب: انقر على خانة لا يمكن أن يقف فيها المشتبه به المختار. انقر مرة أخرى لإزالة العلامة.",
+    "Heel bord": "اللوحة كاملة",
+    "Inzoomen": "تكبير",
+    "Lege rijen en kolommen": "صفوف وأعمدة فارغة",
+    "Op dit bord zijn er meer rijen en kolommen dan verdachten. Veel rijen en kolommen blijven dus leeg, en twee verdachten mogen best op dezelfde rij of in dezelfde kolom staan. Alleen de verklaringen tellen.": "في هذه اللوحة صفوف وأعمدة أكثر من المشتبه بهم. لذلك تبقى صفوف وأعمدة كثيرة فارغة، ويمكن لاثنين من المشتبه بهم أن يقفا في الصف نفسه أو في العمود نفسه. الإفادات وحدها هي ما يُحتسب.",
+    "In deze zaak": "في هذه القضية",
+    "Uitleg van de verklaringen": "شرح الإفادات",
+    "Zo lees je de verklaringen": "كيف تقرأ الإفادات",
+    "✖️ Rij en kolom automatisch wegstrepen": "✖️ شطب الصف والعمود تلقائيًا"
   },
 
   data: {

@@ -157,6 +157,13 @@
     '✓ Klopt': '✓ Fits', '✗ Klopt niet': "✗ Doesn't fit",
     'Hint {0} · deze zaak levert nu maximaal ★★ op': 'Hint {0} · this case now earns at most ★★', 
     'Potlood: zet een stipje op vakjes waar iemand zou kúnnen staan. Met Plaats zet je iemand echt neer, met Gum haal je het weer weg.': 'Pencil: put a dot on squares where someone could stand. Place puts someone down for real; Eraser takes it away again.',
+    // 1.6: the board — Cross (rule out), cross off row and column, zoom, the "?" sheet, the master card on empty rows
+    'Kruisje': 'Cross', 'Kruisje: tik een vakje waar de gekozen verdachte niet kan staan. Nog eens tikken haalt het kruisje weg.': 'Cross: tap a square where the selected suspect cannot stand. Tap it again to remove the cross.',
+    '✖️ Rij en kolom automatisch wegstrepen': '✖️ Cross off row and column automatically',
+    'Inzoomen': 'Zoom in', 'Heel bord': 'Whole board',
+    'Uitleg van de verklaringen': 'How the statements work', 'Zo lees je de verklaringen': 'How to read the statements', 'In deze zaak': 'In this case',
+    'Lege rijen en kolommen': 'Empty rows and columns',
+    'Op dit bord zijn er meer rijen en kolommen dan verdachten. Veel rijen en kolommen blijven dus leeg, en twee verdachten mogen best op dezelfde rij of in dezelfde kolom staan. Alleen de verklaringen tellen.': 'This board has more rows and columns than suspects. So many rows and columns stay empty, and two suspects may well be in the same row or column. Only the statements count.',
     'Bijna! Nog één verdachte staat verkeerd. {0} van de {1} staan al goed.': 'Almost! One suspect is still in the wrong place. {0} of the {1} {0|one:is|other:are} already right.',
     '{0} verdachten staan verkeerd, {1} staan goed. Gebruik een hint als je vastzit.': '{0} {0|one:suspect is|other:suspects are} in the wrong place, {1} {1|one:is|other:are} right. Use a hint if you are stuck.',
     'Goed gedaan!': 'Well done!', 

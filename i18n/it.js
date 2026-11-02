@@ -402,7 +402,17 @@
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "I temi del tabellone e le cornici dei ritratti fanno parte del Crimson Pass. Oppure sblocca solo temi e cornici.",
     "Extra's": "Extra",
     "+1 hint voor ★★★": "+1 aiuto per ★★★",
-    "Vastgelopen? Je volgende hint is gratis.": "Bloccato? Il tuo prossimo aiuto è gratis."
+    "Vastgelopen? Je volgende hint is gratis.": "Bloccato? Il tuo prossimo aiuto è gratis.",
+    "Kruisje": "Croce",
+    "Kruisje: tik een vakje waar de gekozen verdachte niet kan staan. Nog eens tikken haalt het kruisje weg.": "Croce: tocca una casella dove il sospettato scelto non può stare. Toccala di nuovo per togliere la croce.",
+    "Heel bord": "Tabellone intero",
+    "Inzoomen": "Ingrandisci",
+    "Lege rijen en kolommen": "Righe e colonne vuote",
+    "Op dit bord zijn er meer rijen en kolommen dan verdachten. Veel rijen en kolommen blijven dus leeg, en twee verdachten mogen best op dezelfde rij of in dezelfde kolom staan. Alleen de verklaringen tellen.": "Questo tabellone ha più righe e colonne che sospettati. Molte righe e colonne restano quindi vuote, e due sospettati possono benissimo stare sulla stessa riga o nella stessa colonna. Contano solo le dichiarazioni.",
+    "In deze zaak": "In questo caso",
+    "Uitleg van de verklaringen": "Spiegazione delle dichiarazioni",
+    "Zo lees je de verklaringen": "Come leggere le dichiarazioni",
+    "✖️ Rij en kolom automatisch wegstrepen": "✖️ Barra riga e colonna in automatico"
   },
 
   data: {

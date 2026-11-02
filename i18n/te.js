@@ -402,7 +402,17 @@
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "బోర్డు థీమ్‌లు, చిత్రపు ఫ్రేములు Crimson Passలో ఉన్నాయి. లేదా థీమ్‌లు, ఫ్రేములు మాత్రమే తెరవండి.",
     "Extra's": "ఎక్స్‌ట్రాలు",
     "+1 hint voor ★★★": "★★★ కోసం +1 సూచన",
-    "Vastgelopen? Je volgende hint is gratis.": "చిక్కుకుపోయారా? తదుపరి సూచన ఉచితం."
+    "Vastgelopen? Je volgende hint is gratis.": "చిక్కుకుపోయారా? తదుపరి సూచన ఉచితం.",
+    "Kruisje": "ఇంటూ",
+    "Kruisje: tik een vakje waar de gekozen verdachte niet kan staan. Nog eens tikken haalt het kruisje weg.": "ఇంటూ: ఎంచుకున్న వ్యక్తి ఉండలేని గడిని నొక్కండి. మళ్లీ నొక్కితే ఇంటూ గుర్తు పోతుంది.",
+    "Heel bord": "పూర్తి బోర్డు",
+    "Inzoomen": "జూమ్ చేయండి",
+    "Lege rijen en kolommen": "ఖాళీ అడ్డు, నిలువు వరుసలు",
+    "Op dit bord zijn er meer rijen en kolommen dan verdachten. Veel rijen en kolommen blijven dus leeg, en twee verdachten mogen best op dezelfde rij of in dezelfde kolom staan. Alleen de verklaringen tellen.": "ఈ బోర్డులో అనుమానితుల కంటే అడ్డు, నిలువు వరుసలు ఎక్కువ. కాబట్టి చాలా వరుసలు ఖాళీగా ఉంటాయి, ఇద్దరు అనుమానితులు ఒకే అడ్డు వరుసలో లేదా ఒకే నిలువు వరుసలో కూడా ఉండవచ్చు. వాంగ్మూలాలు మాత్రమే లెక్కలోకి వస్తాయి.",
+    "In deze zaak": "ఈ కేసులో",
+    "Uitleg van de verklaringen": "వాంగ్మూలాల వివరణ",
+    "Zo lees je de verklaringen": "వాంగ్మూలాలను ఎలా చదవాలి",
+    "✖️ Rij en kolom automatisch wegstrepen": "✖️ అడ్డు, నిలువు వరుసలను ఆటోమేటిక్‌గా కొట్టివేయడం"
   },
 
   data: {

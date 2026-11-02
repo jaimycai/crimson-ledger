@@ -402,7 +402,17 @@
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "पट-थीम आणि पोर्ट्रेट फ्रेम Crimson Pass मध्ये समाविष्ट आहेत. किंवा फक्त थीम आणि फ्रेम अनलॉक करा.",
     "Extra's": "अतिरिक्त",
     "+1 hint voor ★★★": "★★★ साठी +1 संकेत",
-    "Vastgelopen? Je volgende hint is gratis.": "अडचण येतेय? पुढचा संकेत मोफत आहे."
+    "Vastgelopen? Je volgende hint is gratis.": "अडचण येतेय? पुढचा संकेत मोफत आहे.",
+    "Kruisje": "फुली",
+    "Kruisje: tik een vakje waar de gekozen verdachte niet kan staan. Nog eens tikken haalt het kruisje weg.": "फुली: निवडलेला संशयित जिथे उभा राहू शकत नाही, त्या चौकोनावर टॅप करा. पुन्हा टॅप केल्यास फुली निघून जाते.",
+    "Heel bord": "संपूर्ण पट",
+    "Inzoomen": "मोठे करा",
+    "Lege rijen en kolommen": "रिकाम्या ओळी आणि स्तंभ",
+    "Op dit bord zijn er meer rijen en kolommen dan verdachten. Veel rijen en kolommen blijven dus leeg, en twee verdachten mogen best op dezelfde rij of in dezelfde kolom staan. Alleen de verklaringen tellen.": "या पटावर संशयितांपेक्षा ओळी आणि स्तंभ जास्त आहेत. त्यामुळे अनेक ओळी आणि स्तंभ रिकामे राहतात, आणि दोन संशयित एकाच ओळीत किंवा एकाच स्तंभातही असू शकतात. फक्त जबाब महत्त्वाचे आहेत.",
+    "In deze zaak": "या प्रकरणात",
+    "Uitleg van de verklaringen": "जबाबांचे स्पष्टीकरण",
+    "Zo lees je de verklaringen": "जबाब कसे वाचावेत",
+    "✖️ Rij en kolom automatisch wegstrepen": "✖️ ओळ आणि स्तंभावर आपोआप फुली"
   },
 
   data: {

@@ -402,7 +402,17 @@
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "Tahta temaları ve portre çerçeveleri Crimson Pass’e dahil. Ya da yalnızca temaların ve çerçevelerin kilidini aç.",
     "Extra's": "Ekstralar",
     "+1 hint voor ★★★": "★★★ için +1 ipucu",
-    "Vastgelopen? Je volgende hint is gratis.": "Takıldın mı? Sonraki ipucun ücretsiz."
+    "Vastgelopen? Je volgende hint is gratis.": "Takıldın mı? Sonraki ipucun ücretsiz.",
+    "Kruisje": "Çarpı",
+    "Kruisje: tik een vakje waar de gekozen verdachte niet kan staan. Nog eens tikken haalt het kruisje weg.": "Çarpı: seçili şüphelinin duramayacağı bir kareye dokun. Tekrar dokunursan çarpı kalkar.",
+    "Heel bord": "Tüm tahta",
+    "Inzoomen": "Yakınlaştır",
+    "Lege rijen en kolommen": "Boş satırlar ve sütunlar",
+    "Op dit bord zijn er meer rijen en kolommen dan verdachten. Veel rijen en kolommen blijven dus leeg, en twee verdachten mogen best op dezelfde rij of in dezelfde kolom staan. Alleen de verklaringen tellen.": "Bu tahtada şüpheliden çok satır ve sütun var. Bu yüzden birçok satır ve sütun boş kalır ve iki şüpheli aynı satırda ya da aynı sütunda da durabilir. Yalnızca ifadeler önemlidir.",
+    "In deze zaak": "Bu vakada",
+    "Uitleg van de verklaringen": "İfadelerin açıklaması",
+    "Zo lees je de verklaringen": "İfadeler nasıl okunur",
+    "✖️ Rij en kolom automatisch wegstrepen": "✖️ Satır ve sütuna otomatik çarpı koy"
   },
 
   data: {

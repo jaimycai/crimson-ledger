@@ -402,7 +402,17 @@
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "平面图主题和头像框属于Crimson Pass。你也可以只解锁主题和头像框。",
     "Extra's": "道具",
     "+1 hint voor ★★★": "★★★ 奖励 +1 次提示",
-    "Vastgelopen? Je volgende hint is gratis.": "卡住了？下一次提示免费。"
+    "Vastgelopen? Je volgende hint is gratis.": "卡住了？下一次提示免费。",
+    "Kruisje": "打叉",
+    "Kruisje: tik een vakje waar de gekozen verdachte niet kan staan. Nog eens tikken haalt het kruisje weg.": "打叉：点一下所选嫌疑人不可能站的格子。再点一次可以去掉叉号。",
+    "Heel bord": "整张平面图",
+    "Inzoomen": "放大",
+    "Lege rijen en kolommen": "空行和空列",
+    "Op dit bord zijn er meer rijen en kolommen dan verdachten. Veel rijen en kolommen blijven dus leeg, en twee verdachten mogen best op dezelfde rij of in dezelfde kolom staan. Alleen de verklaringen tellen.": "这张平面图的行和列比嫌疑人多。所以很多行和列是空的，两名嫌疑人也完全可以在同一行或同一列。只有证词说了算。",
+    "In deze zaak": "本案出现",
+    "Uitleg van de verklaringen": "证词说明",
+    "Zo lees je de verklaringen": "怎样读证词",
+    "✖️ Rij en kolom automatisch wegstrepen": "✖️ 自动划掉同行同列"
   },
 
   data: {

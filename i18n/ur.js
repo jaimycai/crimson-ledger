@@ -402,7 +402,17 @@
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "بورڈ تھیم اور پورٹریٹ فریم Crimson Pass میں شامل ہیں۔ یا صرف تھیم اور فریم کھولیں۔",
     "Extra's": "ایکسٹرا",
     "+1 hint voor ★★★": "★★★ پر +1 اشارہ",
-    "Vastgelopen? Je volgende hint is gratis.": "مشکل ہو رہی ہے؟ اگلا اشارہ مفت ہے۔"
+    "Vastgelopen? Je volgende hint is gratis.": "مشکل ہو رہی ہے؟ اگلا اشارہ مفت ہے۔",
+    "Kruisje": "کراس",
+    "Kruisje: tik een vakje waar de gekozen verdachte niet kan staan. Nog eens tikken haalt het kruisje weg.": "کراس: اس خانے پر ٹیپ کریں جہاں منتخب مشتبہ کھڑا نہیں ہو سکتا۔ دوبارہ ٹیپ کرنے سے کراس ہٹ جاتا ہے۔",
+    "Heel bord": "پورا بورڈ",
+    "Inzoomen": "بڑا کریں",
+    "Lege rijen en kolommen": "خالی قطاریں اور کالم",
+    "Op dit bord zijn er meer rijen en kolommen dan verdachten. Veel rijen en kolommen blijven dus leeg, en twee verdachten mogen best op dezelfde rij of in dezelfde kolom staan. Alleen de verklaringen tellen.": "اس بورڈ پر قطاریں اور کالم مشتبہ افراد سے زیادہ ہیں۔ اس لیے بہت سی قطاریں اور کالم خالی رہتے ہیں، اور دو مشتبہ ایک ہی قطار یا ایک ہی کالم میں بھی ہو سکتے ہیں۔ صرف بیانات اہم ہیں۔",
+    "In deze zaak": "اس کیس میں",
+    "Uitleg van de verklaringen": "بیانات کی وضاحت",
+    "Zo lees je de verklaringen": "بیانات کیسے پڑھیں",
+    "✖️ Rij en kolom automatisch wegstrepen": "✖️ قطار اور کالم خود بخود کاٹیں"
   },
 
   data: {

@@ -402,7 +402,17 @@
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "보드 테마와 초상화 액자는 Crimson Pass에 포함돼 있어요. 테마와 액자만 잠금 해제할 수도 있어요.",
     "Extra's": "아이템",
     "+1 hint voor ★★★": "★★★ 보상: 힌트 +1개",
-    "Vastgelopen? Je volgende hint is gratis.": "막히셨나요? 다음 힌트는 무료예요."
+    "Vastgelopen? Je volgende hint is gratis.": "막히셨나요? 다음 힌트는 무료예요.",
+    "Kruisje": "X 표시",
+    "Kruisje: tik een vakje waar de gekozen verdachte niet kan staan. Nog eens tikken haalt het kruisje weg.": "X 표시: 선택한 용의자가 있을 수 없는 칸을 탭해요. 다시 탭하면 X가 지워져요.",
+    "Heel bord": "보드 전체",
+    "Inzoomen": "확대",
+    "Lege rijen en kolommen": "빈 가로줄과 세로줄",
+    "Op dit bord zijn er meer rijen en kolommen dan verdachten. Veel rijen en kolommen blijven dus leeg, en twee verdachten mogen best op dezelfde rij of in dezelfde kolom staan. Alleen de verklaringen tellen.": "이 보드는 용의자보다 가로줄과 세로줄이 더 많아요. 그래서 비어 있는 줄이 많고, 두 용의자가 같은 가로줄이나 같은 세로줄에 있어도 돼요. 중요한 건 진술뿐이에요.",
+    "In deze zaak": "이번 사건",
+    "Uitleg van de verklaringen": "진술 설명",
+    "Zo lees je de verklaringen": "진술 읽는 법",
+    "✖️ Rij en kolom automatisch wegstrepen": "✖️ 가로줄과 세로줄 자동 X 표시"
   },
 
   data: {

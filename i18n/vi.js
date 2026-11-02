@@ -402,7 +402,17 @@
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "Giao diện bàn chơi và khung chân dung thuộc Crimson Pass. Hoặc chỉ mở khóa giao diện và khung.",
     "Extra's": "Nội dung thêm",
     "+1 hint voor ★★★": "+1 gợi ý nhờ ★★★",
-    "Vastgelopen? Je volgende hint is gratis.": "Bí rồi à? Gợi ý tiếp theo được miễn phí."
+    "Vastgelopen? Je volgende hint is gratis.": "Bí rồi à? Gợi ý tiếp theo được miễn phí.",
+    "Kruisje": "Dấu X",
+    "Kruisje: tik een vakje waar de gekozen verdachte niet kan staan. Nog eens tikken haalt het kruisje weg.": "Dấu X: chạm vào ô mà nghi phạm đang chọn không thể đứng. Chạm lại để bỏ dấu X.",
+    "Heel bord": "Cả bàn chơi",
+    "Inzoomen": "Phóng to",
+    "Lege rijen en kolommen": "Hàng và cột trống",
+    "Op dit bord zijn er meer rijen en kolommen dan verdachten. Veel rijen en kolommen blijven dus leeg, en twee verdachten mogen best op dezelfde rij of in dezelfde kolom staan. Alleen de verklaringen tellen.": "Bàn chơi này có nhiều hàng và cột hơn số nghi phạm. Vì vậy nhiều hàng và cột sẽ trống, và hai nghi phạm hoàn toàn có thể ở cùng một hàng hoặc cùng một cột. Chỉ lời khai mới quyết định.",
+    "In deze zaak": "Trong vụ này",
+    "Uitleg van de verklaringen": "Giải thích các lời khai",
+    "Zo lees je de verklaringen": "Cách đọc lời khai",
+    "✖️ Rij en kolom automatisch wegstrepen": "✖️ Tự động gạch hàng và cột"
   },
 
   data: {
