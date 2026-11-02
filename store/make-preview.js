@@ -11,6 +11,9 @@ const path = require('path');
 const ROOT = process.argv[2] || '/tmp/crimson-preview';
 const LANGS = process.argv.slice(3).length ? process.argv.slice(3) : ['nl', 'en'];
 const BASE = (process.env.SHOTS_BASE || 'http://127.0.0.1:8094').replace(/\/+$/, '');
+// what this records goes to the App Store: only a local server serving this repo
+{ const u = new URL(BASE);
+  if (u.protocol !== 'http:' || !['127.0.0.1', 'localhost', '[::1]'].includes(u.hostname)) { console.error(`SHOTS_BASE moet een lokale server zijn (http://127.0.0.1:<poort>), niet ${BASE}`); process.exit(2); } }
 const wait = ms => new Promise(r => setTimeout(r, ms));
 
 async function run(lang) {
