@@ -1,22 +1,28 @@
 // Writes the source file the translators work from: Dutch (source) and English (reference) side by side for new worlds.
 //   node docs/werelden/maak-bron.js <world> [<world> ...]     → docs/werelden/bron-<world>-<world>.json
+//   node docs/werelden/maak-bron.js --naam 1.6 <world> [...]  → docs/werelden/bron-1.6.json
 // The worlds must already be in themes.js, campaign.js, progress.js and i18n/en.js. "who" and "look" come from ontwerp.js
-// and are background for the translator only.
+// (or ontwerp-1.6a.js / ontwerp-1.6b.js, by position) and are background for the translator only.
 const fs = require('fs'), path = require('path');
 const ROOT = path.join(__dirname, '..', '..');
 global.window = {};
 require('./ontwerp.js');
+require('./ontwerp-1.6a.js');
+require('./ontwerp-1.6b.js');
+const DESIGNS = [...window.ONTWERP, ...window.ONTWERP_16A, ...window.ONTWERP_16B];
 const { THEMES } = require(path.join(ROOT, 'themes.js'));
 const { CAMPAIGN } = require(path.join(ROOT, 'campaign.js'));
 const { WEEK_TITLES, Progress } = require(path.join(ROOT, 'progress.js'));
 require(path.join(ROOT, 'i18n', 'en.js'));
 const EN = globalThis.LANG_PACKS.en;
 
-const ids = process.argv.slice(2);
+const args = process.argv.slice(2), at = args.indexOf('--naam');
+const naam = at >= 0 ? args.splice(at, 2)[1] : null;
+const ids = args;
 if (!ids.length) { console.error('gebruik: node docs/werelden/maak-bron.js <wereld> [...]'); process.exit(2); }
 const out = { note: 'Dutch is the source, English the reference translation. Suspect "who" and "look" are background for the translator only.', worlds: {} };
 for (const id of ids) {
-  const t = THEMES.find(x => x.id === id), e = EN.data.themes[id], d = window.ONTWERP.find(x => x.id === id);
+  const t = THEMES.find(x => x.id === id), e = EN.data.themes[id], d = DESIGNS.find(x => x.id === id);
   if (!t || !e || !d) throw new Error(`${id}: not in themes.js, en.js or ontwerp.js`);
   const pick = o => ({ title: o.title, short: o.short, victimName: o.victimName, roomWord: o.roomWord, roomWordPlural: o.roomWordPlural, tagline: o.tagline, intro: o.intro, outro: o.outro });
   out.worlds[id] = {
@@ -34,6 +40,6 @@ for (const id of ids) {
     })
   };
 }
-const file = path.join(__dirname, `bron-${ids.join('-')}.json`);
+const file = path.join(__dirname, `bron-${naam || ids.join('-')}.json`);
 fs.writeFileSync(file, JSON.stringify(out, null, 1));
 console.log(path.relative(ROOT, file), fs.statSync(file).size, 'bytes');
