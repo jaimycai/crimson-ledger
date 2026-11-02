@@ -402,7 +402,14 @@
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "盤面テーマと肖像フレームはCrimson Passに含まれます。テーマとフレームだけを解放することもできます。",
     "Extra's": "アイテム",
     "+1 hint voor ★★★": "★★★でヒント+1回",
-    "Vastgelopen? Je volgende hint is gratis.": "お困りですか？次のヒントは無料です。"
+    "Vastgelopen? Je volgende hint is gratis.": "お困りですか？次のヒントは無料です。",
+    "Jij was het!": "犯人はあなただ！",
+    "Grootboek": "事件台帳",
+    "Kijk eens goed naar deze verklaring. Je volgende hint is gratis.": "この証言をよく見てください。次のヒントは無料です。",
+    "Dossiers ordenen…": "調書を整理中…",
+    "Verdachten ondervragen…": "容疑者を取り調べ中…",
+    "Plattegrond tekenen…": "見取り図を作成中…",
+    "Van Dam zet koffie…": "ヴァン・ダム警部がコーヒーをいれています…"
   },
 
   data: {

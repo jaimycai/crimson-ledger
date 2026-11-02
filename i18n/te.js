@@ -402,7 +402,14 @@
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "బోర్డు థీమ్‌లు, చిత్రపు ఫ్రేములు Crimson Passలో ఉన్నాయి. లేదా థీమ్‌లు, ఫ్రేములు మాత్రమే తెరవండి.",
     "Extra's": "ఎక్స్‌ట్రాలు",
     "+1 hint voor ★★★": "★★★ కోసం +1 సూచన",
-    "Vastgelopen? Je volgende hint is gratis.": "చిక్కుకుపోయారా? తదుపరి సూచన ఉచితం."
+    "Vastgelopen? Je volgende hint is gratis.": "చిక్కుకుపోయారా? తదుపరి సూచన ఉచితం.",
+    "Jij was het!": "నువ్వే చేశావు!",
+    "Grootboek": "కేసుల పుస్తకం",
+    "Kijk eens goed naar deze verklaring. Je volgende hint is gratis.": "ఈ వాంగ్మూలాన్ని జాగ్రత్తగా చూడండి. తదుపరి సూచన ఉచితం.",
+    "Dossiers ordenen…": "ఫైళ్లను సర్దుతున్నాం…",
+    "Verdachten ondervragen…": "అనుమానితులను విచారిస్తున్నాం…",
+    "Plattegrond tekenen…": "ప్లాన్ గీస్తున్నాం…",
+    "Van Dam zet koffie…": "ఇన్‌స్పెక్టర్ వాన్ డామ్ కాఫీ చేస్తున్నారు…"
   },
 
   data: {

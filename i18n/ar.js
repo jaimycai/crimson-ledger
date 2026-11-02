@@ -402,7 +402,14 @@
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "سمات اللوحة وإطارات الصور جزء من Crimson Pass. أو افتح السمات والإطارات وحدها.",
     "Extra's": "إضافات",
     "+1 hint voor ★★★": "+1 تلميح مقابل ★★★",
-    "Vastgelopen? Je volgende hint is gratis.": "علقت؟ تلميحك التالي مجاني."
+    "Vastgelopen? Je volgende hint is gratis.": "علقت؟ تلميحك التالي مجاني.",
+    "Jij was het!": "أنت الفاعل!",
+    "Grootboek": "السجلّ",
+    "Kijk eens goed naar deze verklaring. Je volgende hint is gratis.": "انظر جيدًا إلى هذه الإفادة. تلميحك التالي مجاني.",
+    "Dossiers ordenen…": "ترتيب الملفات…",
+    "Verdachten ondervragen…": "استجواب المشتبه بهم…",
+    "Plattegrond tekenen…": "رسم المخطط…",
+    "Van Dam zet koffie…": "المفتش فان دام يُعدّ القهوة…"
   },
 
   data: {

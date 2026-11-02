@@ -2601,3 +2601,47 @@ button, select, input, textarea { font-family: inherit; }
    button clear of them. The class is set by the viewport script in index.html. */
 html.ipad .screen { padding-top: calc(44px + var(--sat)); }
 html.ipad .board-topbar, html.ipad .map-topbar { padding-top: calc(30px + var(--sat)); }
+
+/* ── Beweging 1.6 (motion.js): stempel, bekentenis, bord wordt kaart, grootboek, streakvlam, Van Dam na stilzitten
+   en het laadscherm. Wat hier staat, is ook het eindbeeld zonder beweging. ── */
+.mo-fx { position: fixed; inset: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: 9000; }
+/* bekentenis: het licht valt weg rond de dader, "Jij was het!" slaat erop */
+.mo-vig { position: fixed; inset: 0; pointer-events: none; z-index: 8000; opacity: 0;
+  background: radial-gradient(circle at var(--x) var(--y), rgba(16, 8, 4, 0) 0, rgba(16, 8, 4, 0) 70px, rgba(16, 8, 4, .62) 190px); }
+.mo-accuse { position: fixed; z-index: 8001; pointer-events: none; transform: translate(-50%, -50%) rotate(-4deg); white-space: nowrap;
+  font-family: var(--font-heading); font-weight: 900; font-size: 1.3rem; color: #fff; background: var(--accent); padding: 4px 12px;
+  border: 3px solid #fff; border-radius: 6px; box-shadow: 0 8px 20px rgba(0, 0, 0, .35); }
+.accuse-ava.mo-cracked { position: relative; }
+.mo-crack { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+.mo-crack path { fill: none; stroke: #2C1810; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 120; stroke-dashoffset: 0; }
+/* grootboek op de uitslag: gelinieerd papier, de nieuwe regel schrijft zich */
+.results-ledger { position: relative; width: 100%; margin-top: 12px; padding: 10px 14px 12px; border-radius: 12px; text-align: start;
+  background: #FBF5E6 repeating-linear-gradient(transparent 0 25px, rgba(139, 46, 28, .1) 25px 26px); background-position: 0 6px;
+  border: 1px solid #E2D3B0; box-shadow: var(--shadow-sm); color: #2C1810; font-size: 0.86rem; }
+.lg-head { font-size: 0.7rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); margin-bottom: 2px; }
+.lg-row { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; line-height: 26px; }
+.lg-case { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-family: var(--font-heading); font-style: italic; }
+.lg-who { flex: none; display: inline-block; transform: rotate(-2deg); font-weight: 900; letter-spacing: 0.04em; text-transform: uppercase; color: var(--accent); }
+.lg-row.pending { opacity: 1; transform: none; }
+.lg-row.pending > span { opacity: 0; }
+.lg-sum { height: 5px; margin-top: 4px; border-top: 1.5px solid #2C1810; border-bottom: 1.5px solid #2C1810; }
+.lg-nib { position: absolute; left: 0; top: 0; width: 18px; height: 18px; opacity: 0; pointer-events: none; }
+/* streakvlam */
+.streak-flame { position: relative; display: inline-block; transform-origin: 50% 85%; color: #D9631E; }
+#streak-count { display: inline-block; }
+.mo-ring { position: absolute; left: 50%; top: 55%; width: 34px; height: 34px; margin: -17px 0 0 -17px; border-radius: 50%;
+  border: 3px solid #F2A33A; opacity: 0; pointer-events: none; }
+/* Van Dam na stilzitten: de rest dimt, de verklaring komt omhoog */
+.clue-deck { position: relative; }
+#screen-board .board-stage, #screen-board .board-suspects { transition: opacity 0.45s var(--ease-out); }
+#screen-board.mo-stuck .board-stage, #screen-board.mo-stuck .board-suspects { opacity: 0.45; }
+.dclue.mo-lift { position: relative; z-index: 2; transform: translateY(-5px) scale(1.03); box-shadow: 0 14px 30px rgba(0, 0, 0, .28), 0 0 0 3px var(--gold);
+  transition: transform 0.45s var(--ease-spring), box-shadow 0.45s var(--ease-out); }
+.mo-tip { position: absolute; left: 12px; right: 12px; bottom: calc(100% + 8px); z-index: 5; display: flex; align-items: center; gap: 8px;
+  padding: 8px 10px; border-radius: 12px; background: var(--bg-card); border: 2px solid var(--gold); box-shadow: var(--shadow-lg);
+  font-size: 0.85rem; font-weight: 600; color: var(--text-primary); }
+.mo-tip img { flex: none; width: 34px; height: 34px; border-radius: 50%; object-fit: cover; }
+/* laadscherm: zinnetjes onder de balk */
+.splash-status { position: absolute; left: -20px; right: -20px; top: calc(50% + 12px); margin: 0; text-align: center;
+  font-size: 0.78rem; color: var(--text-secondary); transition: opacity 0.3s var(--ease-out); }
+#screen-splash.loaded .splash-status { opacity: 0; }

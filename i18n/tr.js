@@ -402,7 +402,14 @@
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "Tahta temaları ve portre çerçeveleri Crimson Pass’e dahil. Ya da yalnızca temaların ve çerçevelerin kilidini aç.",
     "Extra's": "Ekstralar",
     "+1 hint voor ★★★": "★★★ için +1 ipucu",
-    "Vastgelopen? Je volgende hint is gratis.": "Takıldın mı? Sonraki ipucun ücretsiz."
+    "Vastgelopen? Je volgende hint is gratis.": "Takıldın mı? Sonraki ipucun ücretsiz.",
+    "Jij was het!": "Katil sensin!",
+    "Grootboek": "Dava defteri",
+    "Kijk eens goed naar deze verklaring. Je volgende hint is gratis.": "Bu ifadeye iyi bak. Sonraki ipucun ücretsiz.",
+    "Dossiers ordenen…": "Dosyalar düzenleniyor…",
+    "Verdachten ondervragen…": "Şüpheliler sorgulanıyor…",
+    "Plattegrond tekenen…": "Kat planı çiziliyor…",
+    "Van Dam zet koffie…": "Komiser Van Dam kahve yapıyor…"
   },
 
   data: {

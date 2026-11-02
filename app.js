@@ -74,8 +74,12 @@ const App = {
     const loaded = document.readyState === 'complete' ? Promise.resolve() : new Promise(r => window.addEventListener('load', r, { once: true }));
     fonts.then(() => set(70));
     loaded.then(() => set(85));
+    // 1.6: short lines under the bar while it loads
+    const stopLines = typeof Motion !== 'undefined' ? Motion.lines(document.getElementById('splash-status'),
+      [AP_T('Dossiers ordenen…'), AP_T('Verdachten ondervragen…'), AP_T('Plattegrond tekenen…'), AP_T('Van Dam zet koffie…')]) : () => {};
     const done = () => {
       if (screen.classList.contains('loaded')) return;
+      stopLines();
       set(100);
       const btn = document.getElementById('btn-splash-start');
       if (btn && this.storageGet('crimson-board-tutorial-done')) btn.textContent = AP_T('Verder');
@@ -1007,6 +1011,7 @@ const App = {
       this.currentScreen = screenId;
       // het bord kan pas passend gemaakt worden als het scherm in beeld is
       if (screenId === 'board' && typeof Board !== 'undefined') Board.fitBoard();
+      if (screenId === 'menu') this.streakIgnite();
     }, 250);
   },
 
@@ -1924,8 +1929,16 @@ const App = {
 
   updateStreakDisplay() {
     const n = this.streak.count;
-    document.getElementById('streak-title').innerHTML = `🔥 ${AP_T('{1} {0|one:dag|other:dagen} streak', n, `<span id="streak-count">${n}</span>`)}`;
+    document.getElementById('streak-title').innerHTML = `<span class="streak-flame">🔥</span> ${AP_T('{1} {0|one:dag|other:dagen} streak', n, `<span id="streak-count">${n}</span>`)}`;
     this.renderWeek();
+  },
+  // 1.6: the streak flame ignites on the home screen when the streak grew since the player last saw it
+  streakIgnite() {
+    const n = this.streak.count || 0, seen = this.storageGet('crimson-streak-seen');
+    this.storageSet('crimson-streak-seen', String(n));
+    if (seen === null || !(n > +seen) || typeof Motion === 'undefined') return;
+    Motion.flame(document.querySelector('#streak-title .streak-flame'), document.getElementById('streak-count'), +seen, n,
+      document.querySelector('#week-strip .wday.today'));
   },
 
   // ══════════════════════════════════════════════════════════

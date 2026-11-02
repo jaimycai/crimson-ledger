@@ -402,7 +402,14 @@
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "Tema papan dan bingkai potret termasuk dalam Crimson Pass. Atau buka tema dan bingkainya saja.",
     "Extra's": "Ekstra",
     "+1 hint voor ★★★": "+1 hint untuk ★★★",
-    "Vastgelopen? Je volgende hint is gratis.": "Buntu? Hint berikutnya gratis."
+    "Vastgelopen? Je volgende hint is gratis.": "Buntu? Hint berikutnya gratis.",
+    "Jij was het!": "Kamu pelakunya!",
+    "Grootboek": "Buku kasus",
+    "Kijk eens goed naar deze verklaring. Je volgende hint is gratis.": "Perhatikan keterangan ini baik-baik. Hint berikutnya gratis.",
+    "Dossiers ordenen…": "Menyusun berkas…",
+    "Verdachten ondervragen…": "Menginterogasi tersangka…",
+    "Plattegrond tekenen…": "Menggambar denah…",
+    "Van Dam zet koffie…": "Inspektur Van Dam membuat kopi…"
   },
 
   data: {

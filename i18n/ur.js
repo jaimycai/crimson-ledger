@@ -402,7 +402,14 @@
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "بورڈ تھیم اور پورٹریٹ فریم Crimson Pass میں شامل ہیں۔ یا صرف تھیم اور فریم کھولیں۔",
     "Extra's": "ایکسٹرا",
     "+1 hint voor ★★★": "★★★ پر +1 اشارہ",
-    "Vastgelopen? Je volgende hint is gratis.": "مشکل ہو رہی ہے؟ اگلا اشارہ مفت ہے۔"
+    "Vastgelopen? Je volgende hint is gratis.": "مشکل ہو رہی ہے؟ اگلا اشارہ مفت ہے۔",
+    "Jij was het!": "تم ہی تھے!",
+    "Grootboek": "مقدموں کا رجسٹر",
+    "Kijk eens goed naar deze verklaring. Je volgende hint is gratis.": "اس بیان کو غور سے دیکھیں۔ اگلا اشارہ مفت ہے۔",
+    "Dossiers ordenen…": "فائلیں ترتیب دی جا رہی ہیں…",
+    "Verdachten ondervragen…": "مشتبہ افراد سے پوچھ گچھ ہو رہی ہے…",
+    "Plattegrond tekenen…": "نقشہ بنایا جا رہا ہے…",
+    "Van Dam zet koffie…": "انسپکٹر وین ڈیم کافی بنا رہے ہیں…"
   },
 
   data: {

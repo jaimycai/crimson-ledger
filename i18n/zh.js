@@ -402,7 +402,14 @@
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "平面图主题和头像框属于Crimson Pass。你也可以只解锁主题和头像框。",
     "Extra's": "道具",
     "+1 hint voor ★★★": "★★★ 奖励 +1 次提示",
-    "Vastgelopen? Je volgende hint is gratis.": "卡住了？下一次提示免费。"
+    "Vastgelopen? Je volgende hint is gratis.": "卡住了？下一次提示免费。",
+    "Jij was het!": "就是你！",
+    "Grootboek": "案件账簿",
+    "Kijk eens goed naar deze verklaring. Je volgende hint is gratis.": "仔细看看这条证词。下一次提示免费。",
+    "Dossiers ordenen…": "正在整理卷宗…",
+    "Verdachten ondervragen…": "正在审问嫌疑人…",
+    "Plattegrond tekenen…": "正在绘制平面图…",
+    "Van Dam zet koffie…": "范达姆探长正在煮咖啡…"
   },
 
   data: {

@@ -402,7 +402,14 @@
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "I temi del tabellone e le cornici dei ritratti fanno parte del Crimson Pass. Oppure sblocca solo temi e cornici.",
     "Extra's": "Extra",
     "+1 hint voor ★★★": "+1 aiuto per ★★★",
-    "Vastgelopen? Je volgende hint is gratis.": "Bloccato? Il tuo prossimo aiuto è gratis."
+    "Vastgelopen? Je volgende hint is gratis.": "Bloccato? Il tuo prossimo aiuto è gratis.",
+    "Jij was het!": "Sei stato tu!",
+    "Grootboek": "Registro",
+    "Kijk eens goed naar deze verklaring. Je volgende hint is gratis.": "Guarda bene questa dichiarazione. Il tuo prossimo aiuto è gratis.",
+    "Dossiers ordenen…": "Riordino i fascicoli…",
+    "Verdachten ondervragen…": "Interrogo i sospettati…",
+    "Plattegrond tekenen…": "Disegno la pianta…",
+    "Van Dam zet koffie…": "L’ispettore Van Dam prepara il caffè…"
   },
 
   data: {

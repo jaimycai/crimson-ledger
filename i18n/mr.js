@@ -402,7 +402,14 @@
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "पट-थीम आणि पोर्ट्रेट फ्रेम Crimson Pass मध्ये समाविष्ट आहेत. किंवा फक्त थीम आणि फ्रेम अनलॉक करा.",
     "Extra's": "अतिरिक्त",
     "+1 hint voor ★★★": "★★★ साठी +1 संकेत",
-    "Vastgelopen? Je volgende hint is gratis.": "अडचण येतेय? पुढचा संकेत मोफत आहे."
+    "Vastgelopen? Je volgende hint is gratis.": "अडचण येतेय? पुढचा संकेत मोफत आहे.",
+    "Jij was het!": "तूच होतास!",
+    "Grootboek": "केस वही",
+    "Kijk eens goed naar deze verklaring. Je volgende hint is gratis.": "हा जबाब नीट पाहा. पुढचा संकेत मोफत आहे.",
+    "Dossiers ordenen…": "फाइल्स लावत आहोत…",
+    "Verdachten ondervragen…": "संशयितांची चौकशी सुरू आहे…",
+    "Plattegrond tekenen…": "नकाशा काढत आहोत…",
+    "Van Dam zet koffie…": "निरीक्षक व्हॅन डॅम कॉफी करत आहेत…"
   },
 
   data: {

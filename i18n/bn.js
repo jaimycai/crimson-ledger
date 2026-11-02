@@ -402,7 +402,14 @@
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "বোর্ডের থিম আর ছবির ফ্রেম Crimson Pass-এর অংশ। অথবা শুধু থিম আর ফ্রেমগুলো খুলে নিন।",
     "Extra's": "এক্সট্রা",
     "+1 hint voor ★★★": "★★★-এর জন্য +1টি ইঙ্গিত",
-    "Vastgelopen? Je volgende hint is gratis.": "আটকে গেছেন? পরের ইঙ্গিতটি বিনামূল্যে।"
+    "Vastgelopen? Je volgende hint is gratis.": "আটকে গেছেন? পরের ইঙ্গিতটি বিনামূল্যে।",
+    "Jij was het!": "তুমিই করেছ!",
+    "Grootboek": "মামলার খাতা",
+    "Kijk eens goed naar deze verklaring. Je volgende hint is gratis.": "এই বয়ানটি ভালো করে দেখুন। পরের ইঙ্গিতটি বিনামূল্যে।",
+    "Dossiers ordenen…": "নথি সাজানো হচ্ছে…",
+    "Verdachten ondervragen…": "সন্দেহভাজনদের জিজ্ঞাসাবাদ চলছে…",
+    "Plattegrond tekenen…": "নকশা আঁকা হচ্ছে…",
+    "Van Dam zet koffie…": "ইন্সপেক্টর ভান ডাম কফি বানাচ্ছেন…"
   },
 
   data: {

@@ -625,7 +625,13 @@ const Board = {
     if (!this.stuckEligible() || Date.now() - (this.lastActionAt || Date.now()) < this.STUCK_SECONDS * 1000) return;
     this.stuckOffered = true; this.freeHint = true;
     document.getElementById('btn-board-hint').classList.add('pulse');
-    App.showToast('💡', BD_T('Vastgelopen? Je volgende hint is gratis.'));
+    // 1.6: Van Dam points at the statement the hint would use; the rest dims until the next move
+    const h = FloorPlan.hint(this.puzzle, this.placements), ci = h && h.clues && h.clues.length ? h.clues[0] : -1;
+    if (ci >= 0) { this.deckIdx = ci; this.renderDeck(); }
+    const card = ci >= 0 ? document.querySelector('#clue-track > *') : null;
+    const shown = card && typeof Motion !== 'undefined'
+      && Motion.stuck(document.getElementById('screen-board'), card, document.getElementById('clue-deck'), Mentor.img, BD_T('Kijk eens goed naar deze verklaring. Je volgende hint is gratis.'));
+    if (!shown) App.showToast('💡', BD_T('Vastgelopen? Je volgende hint is gratis.'));
     if (typeof Meting !== 'undefined') Meting.send('stuck_hint', '', this.campaignCase.idx + 1);
   },
   // 1.5 metric: a case left without solving it (campaign: case number in its part; tutorial: the step)
@@ -637,6 +643,7 @@ const Board = {
 
   after(keepHint = false) {
     this.lastActionAt = Date.now();
+    if (typeof Motion !== 'undefined') Motion.stuckClear();
     if (!keepHint) this.hintRefs = null;
     // een aanwijzing die net groen wordt, mag je horen
     const ok = this.puzzle.clues.filter(c => FloorPlan.holds(c, this.placements, this.puzzle) === true).length;
@@ -790,7 +797,8 @@ const Board = {
   },
   // "Terug naar het bord": even de verklaringen nalezen, daarna opnieuw Controleer
   cancelAccuse() {
-    clearTimeout(this.finishTimer);
+    clearTimeout(this.finishTimer); this.finishTimer = null;
+    if (typeof Motion !== 'undefined') Motion.confessEnd();
     this.endAccuse();
     this.fitBoard();
     if (this.puzzle) this.renderCells();
@@ -803,7 +811,7 @@ const Board = {
     const bubble = (cls, text) => {
       react.hidden = false;
       react.className = `accuse-reaction ${cls}`;
-      react.innerHTML = `<span class="accuse-ava-sm">${Avatars.suspect(s, i)}</span><span><b>${s.label}:</b> ${I18n.quote(text)}</span>`;
+      react.innerHTML = `<span class="accuse-ava-sm">${Avatars.suspect(s, i)}</span><span><b>${s.label}:</b> <span class="react-q">${I18n.quote(text)}</span></span>`;
       if (react.scrollIntoView) react.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
     };
     if (i !== this.puzzle.murderer) {
@@ -812,16 +820,26 @@ const Board = {
       setTimeout(() => btn.classList.remove('shake'), 300);
       bubble('wrong', Mentor.reaction(false, this.attempts + i));
       Sound.play('error');
-      this.buzz(30);
+      if (typeof Motion !== 'undefined') Motion.haptic('error'); else this.buzz(30);
       return;
     }
     document.querySelectorAll('.murder-opt').forEach(b => { b.disabled = true; });
     btn.classList.add('guilty');
     bubble('right', Mentor.reaction(true, this.attempts + i));
     Sound.play('clue');
-    this.buzz(12);
     clearTimeout(this.finishTimer);
-    this.finishTimer = setTimeout(() => { this.endAccuse(); this.finish(); }, 700);
+    // 1.6: the confession plays first (about two seconds); a tap anywhere skips it
+    const show = typeof Motion !== 'undefined' ? Motion.confess(btn, react, BD_T('Jij was het!')) : 0;
+    if (!show) this.buzz(12);
+    const token = this.finishTimer = setTimeout(() => end(), show || 700);
+    const skip = () => { if (this.finishTimer === token) end(); else document.removeEventListener('pointerdown', skip, true); };
+    const end = () => {
+      clearTimeout(token); this.finishTimer = null;
+      document.removeEventListener('pointerdown', skip, true);
+      if (typeof Motion !== 'undefined') Motion.confessEnd();
+      this.endAccuse(); this.finish();
+    };
+    if (show) setTimeout(() => { if (this.finishTimer === token) document.addEventListener('pointerdown', skip, true); }, 250);
   },
 
   medalCtx() {
@@ -897,11 +915,49 @@ const Board = {
     this.medalsWon = Progress.checkMedals(this.medalCtx());
     this.medalsShown = false;
     App.mode = 'board';
-    this.showResults();
-    App.updateBoardStats();
-    App.navigateTo('results');
-    if (this.hintEarned) App.showToast('💡', BD_T('+1 hint voor ★★★'));
-    App.maybeAskReview({ weeklyClean: this.isWeekly && this.hintsUsed === 0, stars: Campaign.starsFor(this.hintsUsed, this.attempts) });
+    this.writeLedger();
+    // 1.6: a wave of gold over the rooms, then the board folds away into the result
+    const go = () => {
+      this.showResults();
+      App.updateBoardStats();
+      App.navigateTo('results');
+      if (this.hintEarned) App.showToast('💡', BD_T('+1 hint voor ★★★'));
+      App.maybeAskReview({ weeklyClean: this.isWeekly && this.hintsUsed === 0, stars: Campaign.starsFor(this.hintsUsed, this.attempts) });
+    };
+    if (typeof Motion !== 'undefined') Motion.boardOut(document.getElementById('board-grid'), go); else go();
+  },
+  // 1.6 ledger: the culprit of every solved campaign case, so the results screen can write the part's ledger
+  LEDGER_KEY: 'crimson-ledger-book',
+  ledgerBook() { try { return JSON.parse(App.storageGet(this.LEDGER_KEY) || '{}'); } catch (e) { return {}; } },
+  writeLedger() {
+    const c = this.campaignCase;
+    if (!c || c.chapter === Campaign.ARCHIVE) return;
+    const book = this.ledgerBook();
+    book[Campaign.id(c.chapter, c.idx)] = this.puzzle.suspects[this.puzzle.murderer].label;
+    App.storageSet(this.LEDGER_KEY, JSON.stringify(book));
+  },
+  // the last three solved cases of this part, the new one last; it writes itself during the ceremony
+  renderLedger() {
+    const box = document.getElementById('results-ledger');
+    if (!box) return;
+    const c = this.campaignCase, ch = c && c.chapter !== Campaign.ARCHIVE ? Campaign.chapter(c.chapter) : null;
+    box.hidden = !ch || this.isTutorial;
+    box.textContent = '';
+    if (box.hidden) return;
+    const book = this.ledgerBook(), rows = [];
+    for (let i = c.idx; i >= 0 && rows.length < 3; i--) {
+      const k = Campaign.id(c.chapter, i);
+      if (book[k] && ch.cases[i]) rows.unshift({ title: `${i + 1}. ${ch.cases[i].title}`, who: book[k], now: i === c.idx });
+    }
+    const el = (tag, cls, text) => { const e = document.createElement(tag); e.className = cls; if (text) e.textContent = text; return e; };
+    box.appendChild(el('div', 'lg-head', `${BD_T('Grootboek')} · ${ch.title}`));
+    rows.forEach(r => {
+      const row = el('div', `lg-row${r.now ? ' now' : ''}${r.now && typeof Motion !== 'undefined' && Motion.ok ? ' pending' : ''}`);
+      row.append(el('span', 'lg-case', r.title), el('span', 'lg-who', r.who));
+      box.appendChild(row);
+    });
+    if (Campaign.chapterDone(c.chapter)) box.appendChild(el('div', 'lg-sum'));
+    box.insertAdjacentHTML('beforeend', '<svg class="lg-nib" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21l3-9 9-9 6 6-9 9z" fill="#2C1810"/><path d="M3 21l5-5" stroke="#B8955C" stroke-width="1.5"/></svg>');
   },
   // medailles pas tonen als de ceremonie klaar is (of overgeslagen)
   flushMedals() {
@@ -1029,6 +1085,7 @@ const Board = {
     $('stat-difficulty').textContent = (DIFFICULTY[this.difficulty] || DIFFICULTY.gemiddeld).label;
     $('stat-hints').textContent = this.hintsUsed;
     $('stat-attempts').textContent = this.attempts + 1;
+    this.renderLedger();
     if (this.isTutorial) this.revealAll(); else this.ceremony();
   },
 
@@ -1038,15 +1095,21 @@ const Board = {
     const screen = $('screen-results');
     const T = (fn, ms) => this.cerTimers.push(setTimeout(fn, ms));
     const show = el => { if (el) el.classList.remove('pending'); };
+    // 1.6: the stamp rises first and lands STAMP_HIT ms later; everything after it moves along
+    const M = typeof Motion !== 'undefined' && Motion.ok ? Motion : null, L = M ? M.STAMP_HIT : 0;
+    if (M) T(() => M.stamp($('results-stamp')), 80);
     T(() => {
-      show($('results-stamp')); screen.classList.add('shake-paper'); this.confetti();
-      Sound.play('stamp'); this.buzz(30);
+      if (!M) show($('results-stamp'));
+      screen.classList.add('shake-paper'); this.confetti();
+      Sound.play('stamp');
+      if (M) M.impact($('results-stamp'), $('results-panel')); else this.buzz(30);
       T(() => screen.classList.remove('shake-paper'), 450);
-    }, 80);
-    document.querySelectorAll('#results-stars .rstar').forEach((el, i) => T(() => { show(el); if (!el.classList.contains('off')) Sound.play('star'); }, 520 + i * 190));
+    }, 80 + L);
+    document.querySelectorAll('#results-stars .rstar').forEach((el, i) => T(() => { show(el); if (!el.classList.contains('off')) Sound.play('star'); }, 520 + L + i * 190));
     const rows = [...document.querySelectorAll('#score-rows .score-row')];
-    rows.forEach((r, i) => T(() => { show(r); const b = r.querySelector('b'); this.countUp(b, +b.dataset.v, 260, i === 0 ? '' : '+'); }, 1080 + i * 170));
-    const tRows = 1080 + rows.length * 170;
+    rows.forEach((r, i) => T(() => { show(r); const b = r.querySelector('b'); this.countUp(b, +b.dataset.v, 260, i === 0 ? '' : '+'); }, 1080 + L + i * 170));
+    const tRows = 1080 + L + rows.length * 170;
+    T(() => { if (typeof Motion !== 'undefined') Motion.ledgerWrite($('results-ledger')); }, tRows + 160);
     T(() => { show($('score-total-row')); this.countUp($('score-total'), +$('score-total').dataset.v, 520, '', '', n => BD_T`${n} punten`); }, tRows);
     T(() => {
       show($('results-rank'));
@@ -1075,6 +1138,7 @@ const Board = {
   },
   revealAll() {
     const screen = document.getElementById('screen-results');
+    if (typeof Motion !== 'undefined') Motion.finish(screen);
     screen.classList.remove('shake-paper');
     screen.querySelectorAll('.pending').forEach(el => el.classList.remove('pending'));
     document.querySelectorAll('#score-rows .score-row b').forEach((b, i) => { b.textContent = (i === 0 ? '' : '+') + b.dataset.v; });
@@ -1084,6 +1148,7 @@ const Board = {
     if (bar) bar.style.width = bar.dataset.to + '%';
   },
   confetti() {
+    if (typeof Motion !== 'undefined' && Motion.confetti()) return;   // 1.6: paper that flutters down
     const box = document.getElementById('confetti');
     if (!box) return;
     const colors = ['#B8955C', '#D4B074', '#8B2E1C', '#A8432E', '#2E7D32', '#FFFFFF'];

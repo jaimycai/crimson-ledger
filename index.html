@@ -44,6 +44,7 @@
       <p class="splash-subtitle">Een moordmysterie logic-puzzel</p>
       <div class="splash-action">
         <div class="splash-load" id="splash-load" role="progressbar" aria-label="Laden"><i></i></div>
+        <p class="splash-status" id="splash-status" aria-hidden="true"></p>
         <button id="btn-splash-start" class="btn btn-primary btn-block splash-reveal">Begin</button>
       </div>
       <span class="splash-footer splash-reveal">Elke puzzel ontmaskert een moordenaar</span>
@@ -370,6 +371,7 @@
         <div class="results-rank pending" id="results-rank"></div>
       </div>
 
+      <div class="results-ledger" id="results-ledger" hidden></div>
       <div class="mentor-remark" id="results-mentor" hidden></div>
       <p class="results-description" id="results-description"></p>
 
@@ -612,6 +614,7 @@
   <script src="sound.js"></script>
   <script src="floorplan.js"></script>
   <script src="logic-engine.js"></script>
+  <script src="motion.js"></script>
   <script src="board.js"></script>
   <script src="app.js"></script>
 </body>

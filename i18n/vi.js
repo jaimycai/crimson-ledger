@@ -402,7 +402,14 @@
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "Giao diện bàn chơi và khung chân dung thuộc Crimson Pass. Hoặc chỉ mở khóa giao diện và khung.",
     "Extra's": "Nội dung thêm",
     "+1 hint voor ★★★": "+1 gợi ý nhờ ★★★",
-    "Vastgelopen? Je volgende hint is gratis.": "Bí rồi à? Gợi ý tiếp theo được miễn phí."
+    "Vastgelopen? Je volgende hint is gratis.": "Bí rồi à? Gợi ý tiếp theo được miễn phí.",
+    "Jij was het!": "Chính là bạn!",
+    "Grootboek": "Sổ vụ án",
+    "Kijk eens goed naar deze verklaring. Je volgende hint is gratis.": "Hãy xem kỹ lời khai này. Gợi ý tiếp theo được miễn phí.",
+    "Dossiers ordenen…": "Đang sắp xếp hồ sơ…",
+    "Verdachten ondervragen…": "Đang thẩm vấn nghi phạm…",
+    "Plattegrond tekenen…": "Đang vẽ sơ đồ…",
+    "Van Dam zet koffie…": "Thanh tra Van Dam đang pha cà phê…"
   },
 
   data: {

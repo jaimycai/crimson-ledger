@@ -402,7 +402,14 @@
     "Bordthema's en portretlijsten zitten in de Crimson Pass. Of ontgrendel alleen de thema's en lijsten.": "Les thèmes de plateau et les cadres de portrait font partie du Crimson Pass. Ou débloque seulement les thèmes et les cadres.",
     "Extra's": "Extras",
     "+1 hint voor ★★★": "+1 aide pour ★★★",
-    "Vastgelopen? Je volgende hint is gratis.": "Bloqué ? Ta prochaine aide est gratuite."
+    "Vastgelopen? Je volgende hint is gratis.": "Bloqué ? Ta prochaine aide est gratuite.",
+    "Jij was het!": "C’était toi !",
+    "Grootboek": "Registre",
+    "Kijk eens goed naar deze verklaring. Je volgende hint is gratis.": "Regarde bien cette déclaration. Ta prochaine aide est gratuite.",
+    "Dossiers ordenen…": "Classement des dossiers…",
+    "Verdachten ondervragen…": "Interrogatoire des suspects…",
+    "Plattegrond tekenen…": "Tracé du plan…",
+    "Van Dam zet koffie…": "L’inspecteur Van Dam fait du café…"
   },
 
   data: {
