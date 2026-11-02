@@ -1309,6 +1309,418 @@
           "Onderwijzeres Wilma": "Wilma",
           "Telegrafiste Fien": "Fien"
         }
+      },
+      "oceaanstomer": {
+        "title": "SS Halcyon",
+        "short": "Paquebot",
+        "victimName": "L’armateur Ambrose Kingsley",
+        "roomWord": "zone",
+        "roomWordPlural": "zones",
+        "tagline": "Mai 1910. Cinq jours jusqu’à New York, la comète de Halley au-dessus du pont, et un armateur qui n’arrivera jamais de l’autre côté.",
+        "intro": "Le SS Halcyon, mai 1910, en plein Atlantique. Sur le pont-promenade, tout le monde regarde la comète de Halley. Tout le monde, sauf l’armateur Ambrose Kingsley : il gît dans le fumoir, à côté d’un cigare qui se consume encore.",
+        "outro": "Le Halcyon accoste à New York. Sur le quai, la police attend, et toi, tu sais qui.",
+        "rooms": {
+          "Promenadedek": "Promenade",
+          "Balzaal": "Salle de bal",
+          "Rookkamer": "Fumoir",
+          "Eetzaal": "Salle à manger",
+          "Suite": "Suite",
+          "Machinekamer": "Machines",
+          "Brug": "Passerelle",
+          "Radiokamer": "Salle radio",
+          "Kombuis": "Coquerie",
+          "Ruim": "Cale",
+          "Bibliotheek": "Bibliothèque",
+          "Serre": "Jardin d’hiver"
+        },
+        "furniture": {
+          "stuurrad": "une roue de gouvernail",
+          "scheepstelegraaf": "un transmetteur d’ordres",
+          "dekstoel": "un transat",
+          "scheepsbel": "une cloche de bord",
+          "hoedendoos": "un carton à chapeau"
+        },
+        "suspects": {
+          "Kapitein Grant": "Capitaine Grant",
+          "Stewardess Molly": "Femme de chambre Molly",
+          "Vliegenierster Solange": "Aviatrice Solange",
+          "Professor Lund": "Professeur Lund",
+          "Suffragette Harriet": "Suffragette Harriet",
+          "Marconist Arthur": "Opérateur radio Arthur",
+          "Hoofdmachinist Doyle": "Chef mécanicien Doyle",
+          "Hoedenmaakster Edna": "Modiste Edna"
+        },
+        "suspectShort": {
+          "Kapitein Grant": "Grant",
+          "Stewardess Molly": "Molly",
+          "Vliegenierster Solange": "Solange",
+          "Professor Lund": "Lund",
+          "Suffragette Harriet": "Harriet",
+          "Marconist Arthur": "Arthur",
+          "Hoofdmachinist Doyle": "Doyle",
+          "Hoedenmaakster Edna": "Edna"
+        }
+      },
+      "ryokan": {
+        "title": "Ryokan Tsukikage",
+        "short": "Ryokan",
+        "victimName": "L’aubergiste Genzo Kurata",
+        "roomWord": "zone",
+        "roomWordPlural": "zones",
+        "tagline": "Kyoto, 1925. Des cerisiers en fleur dans le jardin, de l’eau chaude dans l’onsen, et un aubergiste qui ne boira plus son thé du matin.",
+        "intro": "Le ryokan Tsukikage, dans les collines près de Kyoto, avril 1925. Les cerisiers sont en fleur et toutes les chambres sont prises. L’aubergiste Genzo Kurata ne vient pas au thé du matin. Il gît dans le pavillon de thé, à côté d’un bol encore tiède.",
+        "outro": "La neige recouvre le jardin et la source fume. Chaque voyageur peut rentrer chez lui, sauf un.",
+        "rooms": {
+          "Gastenkamer": "Chambre",
+          "Onsen": "Onsen",
+          "Theehuis": "Pavillon",
+          "Tuin": "Jardin",
+          "Keuken": "Cuisine",
+          "Veranda": "Véranda",
+          "Hal": "Entrée",
+          "Eetzaal": "Salle à manger",
+          "Bamboebos": "Bambouseraie",
+          "Voorraadkamer": "Réserve",
+          "Steiger": "Ponton",
+          "Wasruimte": "Salle d’eau"
+        },
+        "furniture": {
+          "steenlantaarn": "une lanterne de pierre",
+          "tetsubin": "une théière en fonte",
+          "byobu": "un paravent doré",
+          "bonsai": "un bonsaï",
+          "wagasa": "une ombrelle en papier",
+          "futon": "un futon"
+        },
+        "suspects": {
+          "Gastvrouw Fumiko": "Hôtesse Fumiko",
+          "Kok Takeshi": "Cuisinier Takeshi",
+          "Theemeesteres Chiyo": "Maîtresse de thé Chiyo",
+          "Ingenieur Isamu": "Ingénieur Isamu",
+          "Fotografe Sachiko": "Photographe Sachiko",
+          "Tuinman Goro": "Jardinier Goro",
+          "Plantkundige Evelyn": "Botaniste Evelyn",
+          "Prentmaker Hiroshi": "Graveur Hiroshi"
+        },
+        "suspectShort": {
+          "Gastvrouw Fumiko": "Fumiko",
+          "Kok Takeshi": "Takeshi",
+          "Theemeesteres Chiyo": "Chiyo",
+          "Ingenieur Isamu": "Isamu",
+          "Fotografe Sachiko": "Sachiko",
+          "Tuinman Goro": "Goro",
+          "Plantkundige Evelyn": "Evelyn",
+          "Prentmaker Hiroshi": "Hiroshi"
+        }
+      },
+      "fazenda": {
+        "title": "Fazenda Boa Esperança",
+        "short": "Fazenda",
+        "victimName": "Le baron du café Augusto Valadares",
+        "roomWord": "zone",
+        "roomWordPlural": "zones",
+        "tagline": "Brésil, 1926. Des cerises de café sur l’aire de séchage, de la musique sous la véranda, et un baron du café qui ne comptera plus sa récolte.",
+        "intro": "La fazenda Boa Esperança, São Paulo, juin 1926. La récolte est rentrée et l’aire de séchage est couverte de cerises de café. À la fête de la récolte, le baron du café Augusto Valadares manque à l’appel. Il gît dans la brûlerie, entre les sacs.",
+        "outro": "L’aire de séchage est vide et les comptes sont de nouveau justes. Sous la véranda, la musique continue.",
+        "rooms": {
+          "Droogvloer": "Séchoir",
+          "Koffieveld": "Champ de café",
+          "Pakhuis": "Entrepôt",
+          "Branderij": "Brûlerie",
+          "Veranda": "Véranda",
+          "Kapel": "Chapelle",
+          "Stal": "Écurie",
+          "Keuken": "Cuisine",
+          "Eetkamer": "Salle à manger",
+          "Salon": "Salon",
+          "Studeerkamer": "Bureau",
+          "Serre": "Serre"
+        },
+        "furniture": {
+          "koffiezak": "un sac de café",
+          "koffiemolen": "un moulin à café",
+          "koffiestruik": "un caféier",
+          "papegaai": "un perroquet",
+          "schommelstoel": "un fauteuil à bascule"
+        },
+        "suspects": {
+          "Dona Celeste": "Dona Celeste",
+          "Rentmeester Joaquim": "Régisseur Joaquim",
+          "Lerares Giulia": "Institutrice Giulia",
+          "Koffieproever Bento": "Dégustateur Bento",
+          "Pianiste Zélia": "Pianiste Zélia",
+          "Agronoom Hideo": "Agronome Hideo",
+          "Inkoper Mulder": "Acheteur Mulder",
+          "Dokter Lúcia": "Docteure Lúcia"
+        },
+        "suspectShort": {
+          "Dona Celeste": "Celeste",
+          "Rentmeester Joaquim": "Joaquim",
+          "Lerares Giulia": "Giulia",
+          "Koffieproever Bento": "Bento",
+          "Pianiste Zélia": "Zélia",
+          "Agronoom Hideo": "Hideo",
+          "Inkoper Mulder": "Mulder",
+          "Dokter Lúcia": "Lúcia"
+        }
+      },
+      "zeppelin": {
+        "title": "Le Dirigeable Cirrus",
+        "short": "Dirigeable",
+        "victimName": "Le constructeur Anton Falk",
+        "roomWord": "zone",
+        "roomWordPlural": "zones",
+        "tagline": "1929. Trois jours au-dessus de l’océan, personne ne peut descendre, et l’homme qui a construit le dirigeable n’atterrira pas avec lui.",
+        "intro": "Le dirigeable Cirrus, août 1929. Pendant trois jours, il dérive au-dessus de l’océan, en route vers Rio de Janeiro. Après le dîner, le constructeur Anton Falk gît dans la salle des cartes, le cap à suivre encore dans la main.",
+        "outro": "Le dirigeable est amarré au mât. Le cap était juste, et maintenant, le reste aussi.",
+        "rooms": {
+          "Salon": "Salon",
+          "Eetzaal": "Salle à manger",
+          "Slaapcabine": "Cabine",
+          "Kombuis": "Cuisine",
+          "Bar": "Bar",
+          "Kaartenkamer": "Salle des cartes",
+          "Radiokamer": "Salle radio",
+          "Stuurgondel": "Timonerie",
+          "Motorgondel": "Nacelle moteur",
+          "Loopbrug": "Coursive",
+          "Postkamer": "Courrier",
+          "Uitkijkpost": "Vigie"
+        },
+        "furniture": {
+          "luchtschroef": "une hélice",
+          "sextant": "un sextant",
+          "postzak": "un sac postal",
+          "wereldbol": "un globe terrestre",
+          "schrijfmachine": "une machine à écrire"
+        },
+        "suspects": {
+          "Commandant Brandt": "Commandant Brandt",
+          "Verslaggeefster Daisy": "Reporter Daisy",
+          "Navigator Mateus": "Navigateur Mateus",
+          "Weerkundige Liv": "Météorologue Liv",
+          "Monteur Rudi": "Mécanicien Rudi",
+          "Tennisster Josette": "Championne Josette",
+          "Diplomaat Vidal": "Diplomate Vidal",
+          "Postmeesteres Elsbeth": "Receveuse Elsbeth"
+        },
+        "suspectShort": {
+          "Commandant Brandt": "Brandt",
+          "Verslaggeefster Daisy": "Daisy",
+          "Navigator Mateus": "Mateus",
+          "Weerkundige Liv": "Liv",
+          "Monteur Rudi": "Rudi",
+          "Tennisster Josette": "Josette",
+          "Diplomaat Vidal": "Vidal",
+          "Postmeesteres Elsbeth": "Elsbeth"
+        }
+      },
+      "poolstation": {
+        "title": "Station Croix-du-Sud",
+        "short": "Base polaire",
+        "victimName": "Le chef de station Gunnar Holm",
+        "roomWord": "zone",
+        "roomWordPlural": "zones",
+        "tagline": "Antarctique, 1958. Quatre mois de nuit polaire, huit hivernants, et un chef de station qui ne verra pas la fête de la mi-hiver.",
+        "intro": "La station Croix-du-Sud, juin 1958. C’est la mi-hiver en Antarctique : des semaines sans soleil, et pas d’avion avant le printemps. À la fête de la mi-hiver, une chaise reste vide. Le chef de station Gunnar Holm gît dans la salle radio, le casque encore sur les oreilles.",
+        "outro": "Le soleil est revenu au-dessus de la glace. Le premier avion apporte le courrier, et ramène le coupable chez lui.",
+        "rooms": {
+          "Radiokamer": "Salle radio",
+          "Kennel": "Chenil",
+          "Laboratorium": "Laboratoire",
+          "Kantine": "Cantine",
+          "Slaapzaal": "Dortoir",
+          "Machinekamer": "Machinerie",
+          "Ziekenboeg": "Infirmerie",
+          "Voorraadkamer": "Réserve",
+          "Werkplaats": "Atelier",
+          "Weerhut": "Abri météo",
+          "Observatorium": "Observatoire",
+          "Sneeuwtunnel": "Tunnel"
+        },
+        "furniture": {
+          "zender": "un poste radio",
+          "sledehond": "un chien de traîneau",
+          "weerballon": "un ballon-sonde",
+          "sneeuwrups": "une chenillette",
+          "microscoop": "un microscope"
+        },
+        "suspects": {
+          "Marconist Ole": "Opérateur radio Ole",
+          "Glaciologe Marina": "Glaciologue Marina",
+          "Dokter Kenji": "Docteur Kenji",
+          "Meteorologe Nancy": "Météorologue Nancy",
+          "Hondenmenner Rewi": "Musher Rewi",
+          "Monteur Lieve": "Mécanicienne Lieve",
+          "Kok Diego": "Cuisinier Diego",
+          "Natuurkundige Hélène": "Physicienne Hélène"
+        },
+        "suspectShort": {
+          "Marconist Ole": "Ole",
+          "Glaciologe Marina": "Marina",
+          "Dokter Kenji": "Kenji",
+          "Meteorologe Nancy": "Nancy",
+          "Hondenmenner Rewi": "Rewi",
+          "Monteur Lieve": "Lieve",
+          "Kok Diego": "Diego",
+          "Natuurkundige Hélène": "Hélène"
+        }
+      },
+      "winterpaleis": {
+        "title": "Le Palais Zvezdine",
+        "short": "Palais",
+        "victimName": "Le comte Andreï Zvezdine",
+        "roomWord": "pièce",
+        "roomWordPlural": "pièces",
+        "tagline": "Saint-Pétersbourg, réveillon de 1899. Une Neva gelée, la dernière valse du siècle, et un comte qui ne portera jamais son toast.",
+        "intro": "Le palais Zvezdine, Saint-Pétersbourg, réveillon du Nouvel An 1899. La Neva est gelée et, dans la salle de bal, l’orchestre joue la dernière valse du siècle. À minuit, le comte Andreï Zvezdine devait porter un toast. Il gît dans la bibliothèque, son verre encore plein.",
+        "outro": "Les bougies sont éteintes et le nouveau siècle a commencé. Le dernier secret de l’ancien, c’est toi qui l’as résolu.",
+        "rooms": {
+          "Balzaal": "Salle de bal",
+          "Bibliotheek": "Bibliothèque",
+          "Kapel": "Chapelle",
+          "IJsbaan": "Patinoire",
+          "Serre": "Jardin d’hiver",
+          "Spiegelzaal": "Miroirs",
+          "Rookkamer": "Fumoir",
+          "Keuken": "Cuisine",
+          "Trappenhuis": "Escalier",
+          "Eetzaal": "Salle à manger",
+          "Garderobe": "Vestiaire",
+          "Koetshuis": "Remise"
+        },
+        "furniture": {
+          "balalaika": "une balalaïka",
+          "matroesjka": "une matriochka",
+          "juwelenei": "un œuf de joaillerie",
+          "schaatsen": "une paire de patins",
+          "ijszwaan": "un cygne de glace",
+          "kaviaar": "une coupe de caviar"
+        },
+        "suspects": {
+          "Gravin Jelena": "Comtesse Elena",
+          "Componist Sergej": "Compositeur Sergueï",
+          "Schaatsster Vera": "Patineuse Véra",
+          "Goudsmid Pavel": "Orfèvre Pavel",
+          "Gouvernante Mabel": "Gouvernante Mabel",
+          "Luitenant Dmitri": "Lieutenant Dmitri",
+          "Hofmeester Fjodor": "Majordome Fiodor",
+          "Fotografe Irina": "Photographe Irina"
+        },
+        "suspectShort": {
+          "Gravin Jelena": "Elena",
+          "Componist Sergej": "Sergueï",
+          "Schaatsster Vera": "Véra",
+          "Goudsmid Pavel": "Pavel",
+          "Gouvernante Mabel": "Mabel",
+          "Luitenant Dmitri": "Dmitri",
+          "Hofmeester Fjodor": "Fiodor",
+          "Fotografe Irina": "Irina"
+        }
+      },
+      "safarilodge": {
+        "title": "Twiga Lodge",
+        "short": "Safari",
+        "victimName": "Le cinéaste animalier Rupert Vane",
+        "roomWord": "zone",
+        "roomWordPlural": "zones",
+        "tagline": "Kenya, 1974. Un million de gnous dans la plaine, un lodge complet, et un cinéaste qui ne verra jamais sa dernière prise.",
+        "intro": "Twiga Lodge, Masaï Mara, août 1974. La grande migration a commencé : un million de gnous passent devant le lodge et toutes les tentes sont occupées. Après le feu de camp, le cinéaste animalier Rupert Vane gît dans la chambre noire, parmi ses bobines.",
+        "outro": "Les gnous poursuivent leur route et le lodge retrouve le silence. La dernière prise est à toi.",
+        "rooms": {
+          "Veranda": "Véranda",
+          "Waterpoel": "Point d’eau",
+          "Kampvuur": "Feu de camp",
+          "Bar": "Bar",
+          "Slaaptent": "Tente",
+          "Landingsbaan": "Piste",
+          "Uitkijktoren": "Tour de guet",
+          "Keuken": "Cuisine",
+          "Donkere kamer": "Chambre noire",
+          "Kantoor": "Bureau",
+          "Garage": "Garage",
+          "Eetzaal": "Salle à manger"
+        },
+        "furniture": {
+          "safariwagen": "une jeep de safari",
+          "klamboe": "une moustiquaire",
+          "windzak": "une manche à air",
+          "acacia": "un acacia",
+          "giraf": "une girafe en bois",
+          "sisalmand": "un panier en sisal"
+        },
+        "suspects": {
+          "Eigenares Wambui": "Propriétaire Wambui",
+          "Gids Otieno": "Guide Otieno",
+          "Dierenarts Njeri": "Vétérinaire Njeri",
+          "Piloot Kiprono": "Pilote Kiprono",
+          "Chef Hamisi": "Chef Hamisi",
+          "Journaliste Amina": "Journaliste Amina",
+          "Geluidsman Felix": "Ingénieur du son Felix",
+          "Biologe Birgit": "Biologiste Birgit"
+        },
+        "suspectShort": {
+          "Eigenares Wambui": "Wambui",
+          "Gids Otieno": "Otieno",
+          "Dierenarts Njeri": "Njeri",
+          "Piloot Kiprono": "Kiprono",
+          "Chef Hamisi": "Hamisi",
+          "Journaliste Amina": "Amina",
+          "Geluidsman Felix": "Felix",
+          "Biologe Birgit": "Birgit"
+        }
+      },
+      "hanok": {
+        "title": "Hanok Dalbit",
+        "short": "Hanok",
+        "victimName": "Le seigneur Yun Jae-ho",
+        "roomWord": "pièce",
+        "roomWordPlural": "pièces",
+        "tagline": "Joseon, 1795. Une pleine lune des moissons, une famille qui rentre à la maison, et un maître de maison qui n’achèvera jamais son dernier poème.",
+        "intro": "Le hanok Dalbit, dans les montagnes de Joseon, automne 1795. C’est Chuseok : la lune des moissons est pleine et toute la famille est rentrée. Après la fête de la lune, le seigneur Yun Jae-ho gît dans le pavillon près de l’étang, à côté d’un poème de trois vers.",
+        "outro": "La lune est de nouveau pleine au-dessus des montagnes. Le poème est achevé, et c’est toi qui en as écrit le dernier vers.",
+        "rooms": {
+          "Binnenplaats": "Cour",
+          "Theekamer": "Salle de thé",
+          "Keuken": "Cuisine",
+          "Studeerkamer": "Bureau",
+          "Paviljoen": "Pavillon",
+          "Bibliotheek": "Bibliothèque",
+          "Gastenkamer": "Chambre",
+          "Kruidentuin": "Jardin",
+          "Poort": "Porche",
+          "Voorouderhal": "Ancêtres",
+          "Kruikenterras": "Jarres",
+          "Voorraadkamer": "Réserve"
+        },
+        "furniture": {
+          "gayageum": "un gayageum",
+          "kimchipot": "une jarre à kimchi",
+          "janggu": "un tambour",
+          "maanvaas": "une jarre de lune",
+          "inktsteen": "une pierre à encre",
+          "theetafel": "une table à thé"
+        },
+        "suspects": {
+          "Vrouwe Kang": "Dame Kang",
+          "Student Sang-u": "Étudiant Sang-u",
+          "Geneesvrouw Ok-hwa": "Guérisseuse Ok-hwa",
+          "Schilder Dae-ho": "Peintre Dae-ho",
+          "Borduurster Yeon-i": "Brodeuse Yeon-i",
+          "Tolk Hak-su": "Interprète Hak-su",
+          "Kokkin Bok-sun": "Cuisinière Bok-sun",
+          "Marskramer Man-sik": "Colporteur Man-sik"
+        },
+        "suspectShort": {
+          "Vrouwe Kang": "Kang",
+          "Student Sang-u": "Sang-u",
+          "Geneesvrouw Ok-hwa": "Ok-hwa",
+          "Schilder Dae-ho": "Dae-ho",
+          "Borduurster Yeon-i": "Yeon-i",
+          "Tolk Hak-su": "Hak-su",
+          "Kokkin Bok-sun": "Bok-sun",
+          "Marskramer Man-sik": "Man-sik"
+        }
       }
     },
     "daily": [
@@ -1439,6 +1851,54 @@
         "L’homme venu de la mer",
         "La page du registre",
         "La dernière nuit à Cap-Gris"
+      ],
+      "oceaanstomer": [
+        "La comète au-dessus du pont",
+        "Le télégramme sans nom",
+        "Le coffre du commissaire de bord",
+        "La dernière nuit avant New York"
+      ],
+      "ryokan": [
+        "Le bol de trois cents ans",
+        "Une lumière près de la source",
+        "Des pas sous la pluie",
+        "Le dernier voyageur de Tsukikage"
+      ],
+      "fazenda": [
+        "Le sac qui n’est jamais arrivé",
+        "La trace dans les cerises",
+        "La nuit du gel",
+        "La dernière fête sous la véranda"
+      ],
+      "zeppelin": [
+        "L’enveloppe au-dessus de l’océan",
+        "Le moteur qui s’est tu",
+        "Des pas dans la coursive",
+        "Le dernier tour au-dessus de Rio"
+      ],
+      "poolstation": [
+        "La chaise vide de la mi-hiver",
+        "La corde dans la tempête",
+        "La carotte de glace en morceaux",
+        "La dernière nuit sous l’aurore australe"
+      ],
+      "winterpaleis": [
+        "L’œuf vide",
+        "Des traces sur la patinoire",
+        "Le reflet qui n’allait pas",
+        "La dernière valse du siècle"
+      ],
+      "safarilodge": [
+        "La dernière prise",
+        "Des chaussures au point d’eau",
+        "La montgolfière avec un passager de trop",
+        "La nuit de la grande migration"
+      ],
+      "hanok": [
+        "Le quatrième vers",
+        "La jarre qui avait un autre goût",
+        "Une lumière dans la salle de thé",
+        "La dernière lune de Dalbit"
       ]
     },
     "medals": {
@@ -1569,6 +2029,38 @@
       "vuurtoren": [
         "Le phare se rallume",
         "Termine tous les chapitres du Phare de Cap-Gris"
+      ],
+      "oceaanstomer": [
+        "À quai à New York",
+        "Termine tous les chapitres du SS Halcyon"
+      ],
+      "ryokan": [
+        "La source fume encore",
+        "Termine tous les chapitres du Ryokan Tsukikage"
+      ],
+      "fazenda": [
+        "Les comptes sont justes",
+        "Termine tous les chapitres de la Fazenda Boa Esperança"
+      ],
+      "zeppelin": [
+        "Amarré au mât",
+        "Termine tous les chapitres du Dirigeable Cirrus"
+      ],
+      "poolstation": [
+        "Le soleil revient",
+        "Termine tous les chapitres de la Station Croix-du-Sud"
+      ],
+      "winterpaleis": [
+        "Le nouveau siècle",
+        "Termine tous les chapitres du Palais Zvezdine"
+      ],
+      "safarilodge": [
+        "La migration continue",
+        "Termine tous les chapitres de Twiga Lodge"
+      ],
+      "hanok": [
+        "Le poème est achevé",
+        "Termine tous les chapitres du Hanok Dalbit"
       ]
     },
     "quests": {
@@ -7813,6 +8305,3078 @@
           "🔆 Lentille de Fresnel"
         ]
       ]
+    ],
+    "oceaanstomer": [
+      "Chapitre I · La comète de Halley",
+      "Le SS Halcyon, mai 1910, en plein Atlantique. Sur le pont-promenade, tout le monde regarde la comète de Halley. Tout le monde, sauf l’armateur Ambrose Kingsley : il gît dans le fumoir, à côté d’un cigare qui se consume encore.",
+      "La comète descend sous l’horizon. Il reste quatre jours jusqu’à New York, et le coupable navigue avec toi.",
+      "Un navire est long et étroit, avec des escaliers entre les ponts. Commence par qui dit dans quelle zone il était ; « juste à côté » de la roue de gouvernail, c’est seulement une case qui la touche par un côté, jamais en diagonale.",
+      [
+        [
+          "La comète",
+          "À dix heures, la comète était au-dessus du navire. À dix heures dix, l’armateur gisait dans le fumoir.",
+          "☄️ Carte du ciel"
+        ],
+        [
+          "Le cigare",
+          "Le cigare dans le cendrier se consumait encore. L’armateur ne fumait jamais après le dîner.",
+          "🚬 Havane"
+        ],
+        [
+          "Le capitaine Grant sur la passerelle",
+          "Il était sur la passerelle toute la soirée, dit-il. Sa casquette était dans le fumoir.",
+          "🧢 Casquette de capitaine"
+        ],
+        [
+          "La femme de chambre Molly compte les clés",
+          "Elle a une clé de chaque cabine. Il en manque une à son anneau.",
+          "🔑 Clé de cabine"
+        ],
+        [
+          "Le pont-promenade",
+          "Deux cents personnes regardaient en l’air. Personne ne regardait la porte du fumoir.",
+          "🪑 Transat"
+        ],
+        [
+          "Le professeur Lund photographie",
+          "Ce soir-là, il a pris douze photos de la comète. Sur la sixième, on voit aussi quelqu’un sur le pont.",
+          "📷 Plaque de verre"
+        ],
+        [
+          "L’opérateur radio Arthur écoute",
+          "À dix heures, il était dans la salle radio avec son casque, dit-il. Le casque pendait à son crochet.",
+          "🎧 Casque d’écoute"
+        ],
+        [
+          "Après le dessert",
+          "Après le dessert, l’armateur a dit qu’il était fatigué. Il n’est pas allé dans sa suite, mais au fumoir.",
+          "🍽️ Menu du dîner"
+        ]
+      ]
+    ],
+    "oceaanstomer-2": [
+      "Chapitre II · Le dernier télégramme",
+      "À minuit, un télégramme arrive de New York. L’opérateur radio Arthur le note, mais ne dit pas pour qui il est. Dans la salle radio, la lumière reste allumée toute la nuit.",
+      "Le télégramme est retrouvé. Il n’était pas pour l’armateur, et cela change tout.",
+      "Dans la salle radio, l’opérateur entend tout, et chacun parle d’un autre. Déclarations sur deux personnes : fixe d’abord l’une des deux.",
+      [
+        [
+          "Minuit",
+          "À minuit pile, le télégraphe s’est mis à cliqueter. Le message était long, pour un télégramme.",
+          "📡 Antenne"
+        ],
+        [
+          "L’opérateur radio Arthur se tait",
+          "Il n’a le droit de rien dire sur les messages, dit-il. Il le dit trois fois.",
+          "📻 Récepteur"
+        ],
+        [
+          "Le bout de papier",
+          "Sur son bureau, il y avait un bout de papier couvert de mots à moitié écrits. On y lisait « vendu », et « New York ».",
+          "🗒️ Bout de papier"
+        ],
+        [
+          "La femme de chambre Molly apporte du thé",
+          "À minuit et demi, elle a apporté du thé dans la salle radio. Personne n’avait commandé de thé.",
+          "🫖 Plateau à thé"
+        ],
+        [
+          "Une réponse",
+          "À une heure, un message est reparti vers New York. Personne ne sait qui l’a payé.",
+          "💵 Billet d’un dollar"
+        ],
+        [
+          "La suffragette Harriet écrit",
+          "Chaque soir, elle écrit une lettre à sa sœur. Cette nuit, elle en a écrit deux.",
+          "✉️ Papier à lettres"
+        ],
+        [
+          "Le chef mécanicien Doyle monte",
+          "Il ne monte jamais, dit-il. À deux heures, il était devant la porte de la salle radio.",
+          "🛢️ Burette d’huile"
+        ],
+        [
+          "Le nom sur le télégramme",
+          "Le télégramme n’était pas pour l’armateur. Il était pour quelqu’un qui ne figure pas sur la liste des passagers.",
+          "📜 Liste des passagers"
+        ]
+      ]
+    ],
+    "oceaanstomer-3": [
+      "Chapitre III · La table du capitaine",
+      "Chaque soir, douze invités dînent à la table du capitaine. Le menu compte neuf plats. Ce soir, après le potage, une chaise est vide.",
+      "Le dernier plat n’est jamais servi. Celui qui s’est levé après le potage avait une raison, et maintenant, tu la connais.",
+      "À table, chacun a sa place, mais après le potage, tout le monde s’en va. Qui dit où il n’était pas t’apprend quelque chose, lui aussi : raye tout de suite cette zone.",
+      [
+        [
+          "Le plan de table",
+          "Les mêmes douze chaises chaque soir. Ce soir, quelqu’un avait échangé les marque-places.",
+          "🏷️ Marque-place"
+        ],
+        [
+          "Le capitaine Grant lève son verre",
+          "Il boit à la santé de l’armateur. Il est le seul à ne pas vider son verre.",
+          "🥂 Coupe de champagne"
+        ],
+        [
+          "Le potage",
+          "Un consommé, comme chaque soir. Un bol est retourné à la coquerie sans avoir été touché.",
+          "🥣 Bol à soupe"
+        ],
+        [
+          "L’aviatrice Solange arrive en retard",
+          "Elle est entrée après le potage. Ses gants sentaient l’huile de moteur.",
+          "🧤 Gant de cuir"
+        ],
+        [
+          "Le professeur Lund parle des étoiles",
+          "Il a parlé de la comète pendant une heure. Personne n’écoutait, sauf un invité.",
+          "🔭 Télescope"
+        ],
+        [
+          "La chaise vide",
+          "Après le potage, quelqu’un est allé prendre l’air sur le pont. Le pont est de l’autre côté.",
+          "🪑 Chaise vide"
+        ],
+        [
+          "La modiste Edna change de chapeau",
+          "À table, elle portait un chapeau à plumes d’autruche. Après le potage, elle en portait un autre.",
+          "📌 Épingle à chapeau"
+        ],
+        [
+          "Le dessert",
+          "Douze coupes de glace sont parties vers la table. Onze sont revenues vides, et une avec une clé dedans.",
+          "🍨 Coupe de glace"
+        ]
+      ]
+    ],
+    "oceaanstomer-4": [
+      "Chapitre IV · Le brouillard",
+      "Deux jours de brouillard épais. La sirène retentit chaque minute, et personne ne voit plus loin que le bastingage. Dans le brouillard, quelqu’un marche sur le pont alors qu’il n’a rien à y faire.",
+      "Le brouillard se lève et la sirène se tait. Ce qui s’est passé dans le brouillard est maintenant dans ton carnet.",
+      "Dans le brouillard, tu entends qui est à côté de toi, même si tu ne le vois pas. Place d’abord le suspect qui a le moins de cases possibles ; le reste suit.",
+      [
+        [
+          "La sirène",
+          "Un long coup chaque minute. À trois heures, il y en a eu deux.",
+          "📯 Sirène à vapeur"
+        ],
+        [
+          "La femme de chambre Molly ne voit rien",
+          "Elle a fait le tour du pont avec une lanterne. Elle n’a rien vu, dit-elle, mais elle a entendu quelque chose.",
+          "🏮 Lanterne de pont"
+        ],
+        [
+          "La cloche de bord",
+          "Dans le brouillard, la cloche sonne toutes les demi-heures. À deux heures, elle est restée muette.",
+          "🔔 Cloche de bord"
+        ],
+        [
+          "Le chef mécanicien Doyle ralentit",
+          "Dans le brouillard, le navire avance lentement. À trois heures, il a ralenti encore, sans ordre de la passerelle.",
+          "⚙️ Volant de réglage"
+        ],
+        [
+          "Le capitaine Grant ne dort pas",
+          "Deux nuits durant, il est resté éveillé sur la passerelle. La deuxième nuit, quelqu’un d’autre tenait la barre.",
+          "🧭 Compas"
+        ],
+        [
+          "Un manteau sur le bastingage",
+          "Au lever du soleil, un manteau mouillé pendait sur le bastingage. Il ne manque de manteau à personne.",
+          "🧥 Manteau mouillé"
+        ],
+        [
+          "L’aviatrice Solange et le brouillard",
+          "Un aviateur ne s’aventure pas dans le brouillard, dit-elle. Elle est rentrée du pont les cheveux mouillés.",
+          "🧣 Écharpe de soie"
+        ],
+        [
+          "Un autre navire",
+          "Dans le brouillard, un autre navire est passé tout près. Depuis le pont arrière, quelqu’un a fait des signaux avec une lampe.",
+          "🔦 Lampe à signaux"
+        ]
+      ]
+    ],
+    "oceaanstomer-5": [
+      "Chapitre V · Le collier de perles",
+      "Le collier de perles de l’armateur n’est plus dans le coffre du commissaire de bord. Il appartenait à sa défunte épouse. Le navire ne peut faire escale nulle part : le collier est donc toujours à bord.",
+      "Le collier est de retour dans le coffre, à une perle près. Cette perle-là mène au fumoir.",
+      "Après un vol, chacun prétend avoir été seul. Commence par qui dit avoir été seul : ça écarte d’un coup tous les autres de sa zone.",
+      [
+        [
+          "Le coffre du commissaire de bord",
+          "Le coffre était fermé à clé, comme toujours. Le collier n’y était pourtant plus.",
+          "🔐 Porte du coffre"
+        ],
+        [
+          "La femme de chambre Molly et la clé",
+          "Seul le commissaire de bord a la clé du coffre. Molly sait où il la range la nuit.",
+          "🗝️ Clé du coffre"
+        ],
+        [
+          "Le carton à chapeau",
+          "Un carton à chapeau contient un chapeau. Celui-ci contient aussi un collier de perles.",
+          "👒 Carton à chapeau"
+        ],
+        [
+          "La modiste Edna connaît le prix",
+          "Elle vend des chapeaux, dit-elle, pas des bijoux. Pourtant, elle sait exactement ce que vaut une perle.",
+          "🔍 Loupe de bijoutier"
+        ],
+        [
+          "La suffragette Harriet au coffre",
+          "Elle était la seule inscrite sur la liste du coffre. Elle y apportait des tracts, dit-elle.",
+          "📄 Tract"
+        ],
+        [
+          "Une perle",
+          "Sous le lit de la suite, il y avait une perle. Le collier, lui, a toujours disparu.",
+          "⚪ Perle seule"
+        ],
+        [
+          "L’opérateur radio Arthur est déjà au courant",
+          "À huit heures, le commissaire de bord a découvert le vol. À sept heures, Arthur l’avait déjà câblé à New York.",
+          "📨 Radiogramme"
+        ],
+        [
+          "Le professeur Lund pèse",
+          "Il pèse chaque caisse de plaques de verre. Une caisse est plus lourde qu’hier.",
+          "⚖️ Balance"
+        ]
+      ]
+    ],
+    "oceaanstomer-6": [
+      "Chapitre VI · Le bal",
+      "Dans la salle de bal, on valse jusque tard dans la nuit. L’orchestre joue du Strauss et chacun porte ses plus beaux habits. Un danseur change sans cesse de partenaire.",
+      "L’orchestre range ses instruments et la salle de bal est vide. Le danseur qui changeait sans cesse de partenaire n’en change plus.",
+      "Au bal, tout le monde tourne et personne ne reste en place. Les déclarations se font plus rares : sers-toi du Crayon, écarte les cases impossibles et regarde ce qui reste.",
+      [
+        [
+          "La première valse",
+          "L’orchestre joue la première valse pour l’armateur. Personne ne sait si c’est convenable.",
+          "🎻 Violon"
+        ],
+        [
+          "L’aviatrice Solange danse",
+          "Elle danse avec le capitaine, le professeur et l’opérateur radio. Elle ne parle qu’à l’opérateur radio.",
+          "💃 Carte de bal"
+        ],
+        [
+          "Le carnet de bal",
+          "Chaque dame a un carnet de bal. Dans l’un d’eux, le même nom revient sans cesse, de trois écritures différentes.",
+          "📒 Carnet de bal"
+        ],
+        [
+          "Le capitaine Grant ne danse pas",
+          "Pendant quarante ans, il a dansé à chaque bal. Ce soir, il est resté assis près de la porte toute la soirée.",
+          "🎖️ Médaille"
+        ],
+        [
+          "Le chef mécanicien Doyle en habit",
+          "Personne ne l’avait jamais vu sans son bleu de travail. Ce soir, il portait un habit à queue-de-pie, à sa taille.",
+          "🤵 Queue-de-pie"
+        ],
+        [
+          "La lumière s’éteint",
+          "Pendant la dernière valse, la lumière s’est éteinte. Quand elle s’est rallumée, quelqu’un portait d’autres gants.",
+          "💡 Ampoule"
+        ],
+        [
+          "La femme de chambre Molly range",
+          "Après le bal, elle a trouvé derrière le rideau une bouteille de champagne vide. Et un plan de la cale.",
+          "🍾 Bouteille de champagne"
+        ],
+        [
+          "La dernière danse",
+          "À trois heures, un couple dansait encore. Lui ne disait rien, elle comptait les pas.",
+          "👠 Escarpin de bal"
+        ]
+      ]
+    ],
+    "oceaanstomer-7": [
+      "Chapitre VII · L’entrepont",
+      "Dans l’entrepont, cinq cents émigrants partent vers une nouvelle vie. Ils dorment en longues rangées, la valise sous la couchette. L’un d’eux a vu quelque chose la nuit de la comète.",
+      "Dans l’entrepont, on chante de nouveau. Ce que le garçon a vu figure maintenant dans le rapport de Van Dam.",
+      "Le plateau s’agrandit et le navire se remplit. Si le rapport dit qu’une zone était vide, toute cette zone est exclue pour tout le monde.",
+      [
+        [
+          "Cinq cents couchettes",
+          "Dans l’entrepont, cinq cents personnes dorment dans un seul grand espace. Personne ne dort vraiment.",
+          "🛏️ Couchette"
+        ],
+        [
+          "Le témoin",
+          "Un garçon de Naples a vu quelqu’un descendre l’escalier cette nuit-là. Il ne sait pas qui, mais il sait quelles chaussures.",
+          "👞 Chaussure vernie"
+        ],
+        [
+          "La suffragette Harriet donne des leçons",
+          "Elle apprend l’anglais aux femmes de l’entrepont. La première phrase est : je veux un avocat.",
+          "📚 Abécédaire"
+        ],
+        [
+          "La femme de chambre Molly apporte des couvertures",
+          "La première classe ne descend jamais dans l’entrepont. Molly, si, chaque nuit, avec une pile de couvertures.",
+          "🧺 Panier de couvertures"
+        ],
+        [
+          "Une valise de trop",
+          "Chaque émigrant a une valise. Sous une couchette, il y en avait deux.",
+          "🧳 Valise"
+        ],
+        [
+          "Le chef mécanicien Doyle connaît l’escalier",
+          "Un seul escalier de fer relie la salle des machines à l’entrepont. Seuls les chauffeurs le connaissent.",
+          "🪜 Escalier de fer"
+        ],
+        [
+          "L’opérateur radio Arthur cherche quelqu’un",
+          "Il a demandé un homme dans l’entrepont. Cet homme n’est pas sur la liste.",
+          "📋 Liste des émigrants"
+        ],
+        [
+          "Ce que le garçon a vu",
+          "Il a revu les chaussures, dans la salle à manger. Il les a montrées du doigt, puis il s’est tu.",
+          "🧢 Casquette de gamin"
+        ]
+      ]
+    ],
+    "oceaanstomer-8": [
+      "Chapitre VIII · Les lumières de New York",
+      "Les gratte-ciel de New York apparaissent à l’horizon. Demain, le Halcyon accoste au quai. Encore une nuit à bord pour clore l’affaire.",
+      "Van Dam met son chapeau, quitte le navire le dernier et disparaît dans la foule du quai. Le Halcyon accoste à New York. Sur le quai, la police attend, et toi, tu sais qui.",
+      "Les dernières affaires, presque toutes sur le grand plateau. Ne bloque pas sur le suspect le plus difficile : place d’abord les autres, et il ne reste souvent qu’une case pour le dernier.",
+      [
+        [
+          "Terre en vue",
+          "À six heures, l’homme de vigie aperçoit la première lumière de Long Island. Tout le monde fait ses malles ; un passager défait les siennes.",
+          "🗽 Carte postale"
+        ],
+        [
+          "Le capitaine Grant rédige son rapport",
+          "Sa dernière traversée, son dernier rapport. Sur la nuit de la comète, il a écrit une ligne.",
+          "📘 Journal de bord"
+        ],
+        [
+          "L’aviatrice Solange veut débarquer",
+          "Elle veut débarquer la première, pour le meeting aérien. Ses papiers sont à un autre nom.",
+          "🛂 Passeport"
+        ],
+        [
+          "Le professeur Lund développe",
+          "Dans sa cabine, il développe la dernière plaque de verre. Derrière la fenêtre du fumoir, il y a un visage.",
+          "🧪 Bain de développement"
+        ],
+        [
+          "La modiste Edna fait ses bagages",
+          "Douze cartons à chapeau sont montés à bord à Southampton. Treize vont débarquer.",
+          "🎀 Ruban de chapeau"
+        ],
+        [
+          "L’opérateur radio Arthur termine",
+          "Son dernier message part vers la police du port. Il transmet un seul nom.",
+          "⚡ Émetteur à étincelles"
+        ],
+        [
+          "Le chef mécanicien Doyle monte sur le pont",
+          "Devant le port, il arrête les machines. Pour la première fois en cinq jours, il monte sur le pont en plein jour.",
+          "🔧 Clé plate"
+        ],
+        [
+          "Le fumoir",
+          "Là où tout a commencé, dans le fumoir. C’est là que tout se termine.",
+          "📦 Boîte à cigares"
+        ]
+      ]
+    ],
+    "ryokan": [
+      "Chapitre I · Cerisiers en fleur",
+      "Le ryokan Tsukikage, dans les collines près de Kyoto, avril 1925. Les cerisiers sont en fleur et toutes les chambres sont prises. L’aubergiste Genzo Kurata ne vient pas au thé du matin. Il gît dans le pavillon de thé, à côté d’un bol encore tiède.",
+      "Les pétales tombent sur la mousse. Les voyageurs restent jusqu’à l’arrivée de la police de Kyoto.",
+      "Un ryokan est un dédale de portes coulissantes et de couloirs. Commence par qui dit dans quelle zone il était ; « juste à côté » de la lanterne de pierre, c’est seulement une case qui la touche par un côté, jamais en diagonale.",
+      [
+        [
+          "Le thé du matin",
+          "Chaque matin à six heures, l’aubergiste boit son thé dans le pavillon de thé. Ce matin, le thé a refroidi.",
+          "🍵 Thé du matin"
+        ],
+        [
+          "L’hôtesse Fumiko le découvre",
+          "C’est elle qui l’a trouvé la première. Ses chaussons étaient déjà devant la porte du pavillon.",
+          "🚪 Porte coulissante"
+        ],
+        [
+          "Des pétales sur le tatami",
+          "Sur le tatami, il y avait des pétales de cerisier. Cet arbre se trouve de l’autre côté du jardin.",
+          "🌸 Pétale de cerisier"
+        ],
+        [
+          "Le cuisinier Takeshi cuisine",
+          "Il était à la cuisine dès quatre heures, dit-il. Le feu sous le riz n’a été allumé qu’à cinq heures et demie.",
+          "🍚 Marmite à riz"
+        ],
+        [
+          "La lanterne de pierre",
+          "La lanterne du jardin brûle toute la nuit. Cette nuit, elle s’est éteinte à trois heures.",
+          "🕯️ Bout de bougie"
+        ],
+        [
+          "La photographe Sachiko au lever du soleil",
+          "Elle a photographié les fleurs aux premières lueurs. Sur sa photo, la porte du pavillon est ouverte.",
+          "📷 Appareil pliant"
+        ],
+        [
+          "Le livre d’or",
+          "Chaque voyageur écrit son nom dans le livre. Hier soir, quelqu’un a écrit le sien deux fois.",
+          "📖 Livre d’or"
+        ],
+        [
+          "L’ingénieur Isamu est en avance",
+          "Il avait rendez-vous avec l’aubergiste à sept heures. Il est arrivé à six heures et demie, avec un contrat.",
+          "📃 Contrat"
+        ]
+      ]
+    ],
+    "ryokan-2": [
+      "Chapitre II · La cérémonie du thé",
+      "La maîtresse de thé Chiyo célèbre une cérémonie en l’honneur de l’aubergiste. Quatre invités sont à genoux dans le pavillon. Chaque geste est fixé, et pourtant quelqu’un pose le bol de travers.",
+      "La cérémonie est finie et les bols sont lavés. Un bol n’était pas à sa place depuis le début, et tu sais pourquoi.",
+      "Dans le pavillon de thé, chacun a sa place, à genoux. Déclarations sur deux personnes : fixe d’abord l’une des deux.",
+      [
+        [
+          "Quatre invités, cinq bols",
+          "La cérémonie compte quatre invités. Cinq bols étaient prêts.",
+          "🥣 Cinquième bol"
+        ],
+        [
+          "La maîtresse de thé Chiyo fouette le thé",
+          "Depuis quarante ans, elle fouette le thé avec le même fouet. Aujourd’hui, avec un neuf.",
+          "🎋 Fouet en bambou"
+        ],
+        [
+          "La théière en fonte",
+          "L’eau bout dans la théière en fonte. Quelqu’un l’a remplie avec l’eau de la source chaude.",
+          "🫖 Théière en fonte"
+        ],
+        [
+          "Le graveur Hiroshi esquisse",
+          "Il a fait un croquis de la cérémonie. Sur son croquis, il y a quelqu’un qui n’était pas à l’intérieur.",
+          "✏️ Carnet de croquis"
+        ],
+        [
+          "Le bol qu’on tourne",
+          "On tourne le bol deux fois avant de boire. Un invité l’a tourné trois fois.",
+          "🏺 Bol raku"
+        ],
+        [
+          "La botaniste Evelyn connaît les règles",
+          "Elle dit n’avoir jamais vu de cérémonie. Elle s’est agenouillée sans que personne ne lui montre comment.",
+          "👘 Kimono"
+        ],
+        [
+          "La douceur",
+          "Le thé s’accompagne d’une douceur. Une petite assiette n’en avait pas.",
+          "🍡 Dango"
+        ],
+        [
+          "L’hôtesse Fumiko ne sert pas",
+          "Pendant vingt ans, elle a versé l’eau pour l’aubergiste. Pas ce matin, dit-elle, pour la première fois.",
+          "🫗 Cruche à eau"
+        ]
+      ]
+    ],
+    "ryokan-3": [
+      "Chapitre III · Le précieux bol à thé",
+      "Dans l’alcôve de la chambre se trouvait un bol à thé vieux de trois cents ans. C’est la fierté du ryokan. Ce matin, l’alcôve est vide.",
+      "Le bol à thé est de retour dans l’alcôve, intact et propre. L’aubergiste n’avait jamais voulu le vendre, et quelqu’un le savait.",
+      "Tout le monde sait où était le bol, et chacun dit où il n’était pas. Qui dit où il n’était pas t’apprend quelque chose, lui aussi : raye tout de suite cette zone.",
+      [
+        [
+          "L’alcôve vide",
+          "Pendant trois cents ans, le bol est resté dans l’alcôve. Ce matin, il y avait une fleur à sa place.",
+          "🌼 Fleur"
+        ],
+        [
+          "L’hôtesse Fumiko fait la poussière",
+          "Elle époussette l’alcôve tous les jours. Hier, elle a laissé un voyageur le faire.",
+          "🪶 Plumeau"
+        ],
+        [
+          "La boîte au ruban",
+          "Le bol vit dans une boîte en bois fermée par un ruban. La boîte est toujours là ; le ruban n’est pas noué pareil.",
+          "📦 Boîte en bois"
+        ],
+        [
+          "L’ingénieur Isamu fait une offre",
+          "Il a offert une fortune à l’aubergiste pour le bol. L’aubergiste lui a ri au nez.",
+          "💴 Billet de banque"
+        ],
+        [
+          "La photographe Sachiko et le bol",
+          "Pour son magazine, elle a photographié le bol. Sur la photo, il a une fêlure qui n’y est plus.",
+          "🖼️ Tirage"
+        ],
+        [
+          "La botaniste Evelyn envoie un colis",
+          "Elle envoie des fleurs séchées à Londres. Son colis est lourd, pour des fleurs.",
+          "🗃️ Boîte d’herbier"
+        ],
+        [
+          "Le graveur Hiroshi copie",
+          "Il fait des estampes de choses anciennes. Dans sa chambre, il y a un bloc de bois en forme de bol.",
+          "🪵 Bloc de bois"
+        ],
+        [
+          "Deux bols",
+          "Dans la cuisine, il y a deux bols qui se ressemblent. L’un d’eux a trois cents ans.",
+          "🔍 Loupe"
+        ]
+      ]
+    ],
+    "ryokan-4": [
+      "Chapitre IV · L’onsen",
+      "L’eau chaude de la source est réservée aux voyageurs. À minuit, le portail se ferme. Mais à trois heures du matin, une lumière brûle encore près de la source.",
+      "Au matin, la source fume de nouveau en silence. La lumière de trois heures n’était pas une erreur.",
+      "Dans la vapeur de l’onsen, tu ne vois personne nettement, mais tu entends qui est assis à côté de toi. Place d’abord le suspect qui a le moins de cases possibles ; le reste suit.",
+      [
+        [
+          "Une lumière à trois heures",
+          "La source ferme à minuit. À trois heures, une lampe brûlait.",
+          "🏮 Lampe en papier"
+        ],
+        [
+          "Le jardinier Goro ferme",
+          "Chaque soir, il ferme le portail de la source. Cette nuit, il était entrouvert.",
+          "⛓️ Chaîne du portail"
+        ],
+        [
+          "Les baquets en bois",
+          "Près de la source, dix baquets en bois sont rangés à l’envers. L’un d’eux était à l’endroit, plein d’eau.",
+          "🪣 Baquet en bois"
+        ],
+        [
+          "Le cuisinier Takeshi ne se baigne pas",
+          "Après le travail, il va toujours dans la source. Pas cette nuit, dit-il : cette nuit, il était fatigué.",
+          "🍶 Flacon de saké"
+        ],
+        [
+          "Des serviettes mouillées",
+          "Dans la salle d’eau, il y avait trois serviettes mouillées. Seuls deux voyageurs s’étaient baignés dans la source.",
+          "🧺 Serviettes mouillées"
+        ],
+        [
+          "L’ingénieur Isamu mesure l’eau",
+          "Il mesure la chaleur de la source, dit-il. Pour un hôtel thermal près de la nouvelle gare.",
+          "🌡️ Thermomètre de bain"
+        ],
+        [
+          "Une geta",
+          "Sur le chemin de la source, il y avait une sandale de bois. L’autre était près du ponton.",
+          "🩴 Geta dépareillée"
+        ],
+        [
+          "Dans la vapeur",
+          "Dans la vapeur, personne ne voyait qui était là. Mais tout le monde a entendu quelqu’un se lever et partir.",
+          "🧼 Savon"
+        ]
+      ]
+    ],
+    "ryokan-5": [
+      "Chapitre V · La bambouseraie",
+      "Derrière le ryokan s’étend une bambouseraie. Ça bruisse toujours, même quand il n’y a pas de vent. L’ingénieur Isamu veut y faire passer une voie ferrée.",
+      "La bambouseraie bruisse de nouveau comme avant. Aucune voie ferrée ne la traversera, et la carte de l’ingénieur est dans le poêle.",
+      "Entre les tiges, tu ne vois que ceux qui sont tout près de toi. Commence par qui dit avoir été seul : ça écarte d’un coup tous les autres de sa zone.",
+      [
+        [
+          "Un bruissement sans vent",
+          "Il n’y avait pas de vent dans le jardin. Dans la bambouseraie, pourtant, ça bruissait.",
+          "🎋 Tige de bambou"
+        ],
+        [
+          "L’ingénieur Isamu plante des jalons",
+          "Avec des jalons blancs, il a tracé le parcours de la voie ferrée. Ce matin, ils étaient un mètre plus loin.",
+          "📍 Jalon"
+        ],
+        [
+          "Le jardinier Goro taille",
+          "Il taille les bambous depuis cinquante ans. Cette tige a été sciée hier, et pas par lui.",
+          "🪚 Scie"
+        ],
+        [
+          "La carte de la voie ferrée",
+          "Sur la carte, le ryokan est juste sur le chemin. Quelqu’un l’a entouré d’un cercle rouge.",
+          "🗺️ Carte"
+        ],
+        [
+          "La photographe Sachiko se perd",
+          "Elle voulait photographier la lumière entre les tiges. Elle n’est revenue qu’au bout de deux heures, sans aucune photo.",
+          "🎞️ Pellicule"
+        ],
+        [
+          "Le sentier du ponton",
+          "Un sentier étroit traverse la bambouseraie jusqu’à la rivière. La mousse du sentier est piétinée.",
+          "🍃 Mousse piétinée"
+        ],
+        [
+          "La botaniste Evelyn récolte",
+          "Elle récolte du bambou pour une serre de Londres. Dans sa boîte, il y a aussi une feuille de papier roulée.",
+          "🫙 Boîte à herboriser"
+        ],
+        [
+          "Le graveur Hiroshi dessine la bambouseraie",
+          "Sur son estampe de la bambouseraie, il y a quelqu’un avec une ombrelle. Il dit qu’il l’a inventé.",
+          "🌂 Ombrelle en papier"
+        ]
+      ]
+    ],
+    "ryokan-6": [
+      "Chapitre VI · La saison des pluies",
+      "Trois semaines de pluie. Personne ne sort et les voyageurs vivent les uns sur les autres. Pourtant, chaque matin, il y a des traces de pas mouillées dans le couloir.",
+      "La pluie cesse et les couloirs sèchent. Les traces de pas mouillées étaient celles de quelqu’un qui allait au ponton chaque nuit.",
+      "Quand il pleut, tout le monde reste à l’intérieur et dit à peu près la même chose. Les déclarations se font plus rares : sers-toi du Crayon, écarte les cases impossibles et regarde ce qui reste.",
+      [
+        [
+          "Trois semaines de pluie",
+          "Il pleut depuis mardi. Le jardin est un étang.",
+          "☔ Parapluie"
+        ],
+        [
+          "Des pas mouillés",
+          "Chaque matin, il y a des traces de pas mouillées dans le couloir. Elles viennent du dehors et vont à la cuisine.",
+          "🧦 Chaussettes mouillées"
+        ],
+        [
+          "L’hôtesse Fumiko compte les ombrelles",
+          "Près de la porte, il y a dix ombrelles en papier. Chaque matin, l’une d’elles est mouillée.",
+          "🧮 Boulier"
+        ],
+        [
+          "Le cuisinier Takeshi fait sécher du poisson",
+          "Quand il pleut, il fait sécher le poisson dans la réserve. Hier, un manteau mouillé y pendait aussi.",
+          "🐟 Poisson séché"
+        ],
+        [
+          "La botaniste Evelyn écrit des lettres",
+          "Elle écrit à Londres tous les jours. Le courrier ne part pas, et l’une de ses lettres a été ouverte.",
+          "✉️ Lettre"
+        ],
+        [
+          "Le futon dans le couloir",
+          "Un voyageur a dormi sur un futon dans le couloir, parce qu’il pleuvait dans sa chambre. Il ne pleuvait pas dans sa chambre.",
+          "🛏️ Futon"
+        ],
+        [
+          "L’ingénieur Isamu veut partir",
+          "Le train pour Kyoto ne circule pas sous cette pluie. Chaque jour, il dit qu’il veut partir, et il reste.",
+          "🎫 Billet de train"
+        ],
+        [
+          "Le jardinier Goro creuse",
+          "Quand il pleut, il creuse des rigoles pour que l’eau s’écoule. Une rigole mène au ponton, et aucune rigole n’a rien à faire là.",
+          "⛏️ Pioche"
+        ]
+      ]
+    ],
+    "ryokan-7": [
+      "Chapitre VII · La fête de la lune",
+      "C’est l’automne et la lune est pleine. Les voyageurs sont assis sous la véranda avec des galettes de riz et du saké. Tout le monde regarde la lune au-dessus de la rivière, sauf un voyageur.",
+      "La lune descend derrière les montagnes. Le voyageur qui ne levait pas les yeux regardait le pavillon de thé.",
+      "Le plateau s’agrandit, mais la nuit est claire. Si le rapport dit qu’une zone était vide, toute cette zone est exclue pour tout le monde.",
+      [
+        [
+          "Une barque sans lumière",
+          "À neuf heures, la lune était au-dessus de la rivière. À dix heures, une barque était amarrée au ponton, sans lumière.",
+          "🛶 Barque"
+        ],
+        [
+          "Quinze galettes",
+          "Quinze galettes de riz sur un plat, comme il se doit. Il y en avait quatorze.",
+          "🍘 Galette de riz"
+        ],
+        [
+          "La maîtresse de thé Chiyo écrit un poème",
+          "Elle a écrit un poème sur la lune. Il dit une chose que seul le coupable pouvait savoir.",
+          "🖌️ Pinceau"
+        ],
+        [
+          "Le graveur Hiroshi grave la lune",
+          "Chaque année, il grave la lune dans le bois. Cette année, il a aussi gravé le pavillon de thé, avec une lumière à l’intérieur.",
+          "🎨 Pierre à encre"
+        ],
+        [
+          "Le saké",
+          "Le cuisinier Takeshi a servi du saké à tout le monde. Une coupe est restée pleine.",
+          "🍶 Coupe de saké"
+        ],
+        [
+          "L’hôtesse Fumiko et la clé",
+          "Pour la fête de la lune, elle porte son plus beau kimono. Dans sa manche, il y a la clé du pavillon de thé.",
+          "🗝️ Clé du pavillon"
+        ],
+        [
+          "La photographe Sachiko et la lune",
+          "Une photo de la lune demande une minute entière. Pendant cette minute, quelqu’un est passé dans le champ.",
+          "📸 Photo de la lune"
+        ],
+        [
+          "Celui qui ne levait pas les yeux",
+          "Tout le monde regardait la lune. Un voyageur a regardé toute la soirée le pavillon de thé plongé dans le noir.",
+          "🌕 Pleine lune"
+        ]
+      ]
+    ],
+    "ryokan-8": [
+      "Chapitre VIII · La première neige",
+      "La première neige tombe sur la mousse et les lanternes s’allument tôt. Demain, les routes de Kyoto seront fermées. Encore une soirée au ryokan, avec les mêmes voyageurs qu’au printemps.",
+      "Van Dam noue son écharpe, s’incline devant l’hôtesse et part vers la gare à pied, dans la neige. La neige recouvre le jardin et la source fume. Chaque voyageur peut rentrer chez lui, sauf un.",
+      "Les dernières affaires, presque toutes sur le grand plateau. Ne bloque pas sur le suspect le plus difficile : place d’abord les autres, et il ne reste souvent qu’une case pour le dernier.",
+      [
+        [
+          "De la neige sur la mousse",
+          "Le jardinier Goro a couvert la mousse de paille. Sous la paille, il y avait quelque chose qui ne pousse pas.",
+          "🌾 Paille"
+        ],
+        [
+          "Le dernier train",
+          "Demain part le dernier train pour Kyoto. Il y a huit voyageurs et sept billets.",
+          "🚂 Horaires"
+        ],
+        [
+          "Le cuisinier Takeshi prépare le repas d’adieu",
+          "Il prépare le dernier dîner de l’année. Pour un voyageur, il cuisine autre chose.",
+          "🍲 Ragoût"
+        ],
+        [
+          "La botaniste Evelyn fait ses bagages",
+          "Elle emporte douze sachets de graines à Londres. Un sachet cliquette.",
+          "🌱 Sachet de graines"
+        ],
+        [
+          "L’ingénieur Isamu redessine",
+          "Sur sa nouvelle carte, la voie ferrée longe le ryokan au lieu de le traverser. Il l’a dessinée dès le printemps.",
+          "📐 Équerre"
+        ],
+        [
+          "L’hôtesse Fumiko ferme le livre",
+          "Elle ferme le livre d’or de l’année. Sur la première page, il y a un nom qu’elle a écrit elle-même.",
+          "📕 Registre des voyageurs"
+        ],
+        [
+          "La maîtresse de thé Chiyo prépare le dernier thé",
+          "La dernière cérémonie de l’année, pour tous les voyageurs. Elle pose le vieux bol et regarde qui sursaute.",
+          "🍵 Dernier thé"
+        ],
+        [
+          "Le pavillon de thé",
+          "Là où tout a commencé, dans le pavillon de thé. C’est là que tout se termine.",
+          "🎐 Clochette à vent"
+        ]
+      ]
+    ],
+    "fazenda": [
+      "Chapitre I · La fête de la récolte",
+      "La fazenda Boa Esperança, São Paulo, juin 1926. La récolte est rentrée et l’aire de séchage est couverte de cerises de café. À la fête de la récolte, le baron du café Augusto Valadares manque à l’appel. Il gît dans la brûlerie, entre les sacs.",
+      "La fête est annulée. Les cueilleurs rentrent chez eux, mais les invités restent à la fazenda jusqu’à l’arrivée de la police de Campinas.",
+      "Dans une fazenda, les bâtiments sont loin les uns des autres, mais à la fête, tout le monde est ensemble. Commence par qui dit dans quelle zone il était ; « juste à côté » du moulin à café, c’est seulement une case qui le touche par un côté, jamais en diagonale.",
+      [
+        [
+          "La fête de la récolte",
+          "L’aire de séchage est couverte de lampions. Le baron du café devait faire un discours à huit heures.",
+          "💡 Lampion"
+        ],
+        [
+          "Dans la brûlerie",
+          "Il gisait entre les sacs, dans la chaleur du four. Le four aurait dû être éteint.",
+          "🔥 Four à torréfier"
+        ],
+        [
+          "Dona Celeste attend",
+          "À huit heures, elle attendait le discours de son père. À huit heures et quart, elle est partie le chercher.",
+          "📄 Discours"
+        ],
+        [
+          "Le régisseur Joaquim paie",
+          "À la fête, les cueilleurs touchent leur salaire. Les enveloppes de paie étaient prêtes, sauf une.",
+          "💰 Enveloppe de paie"
+        ],
+        [
+          "Le perroquet",
+          "Le perroquet de la véranda crie toujours le nom du patron. Ce soir, il a crié un autre nom.",
+          "🦜 Perroquet"
+        ],
+        [
+          "La pianiste Zélia joue",
+          "Elle a joué toute la soirée sous la véranda, dit-elle. À sept heures et demie, le piano s’est tu.",
+          "🎹 Piano"
+        ],
+        [
+          "L’acheteur Mulder calcule",
+          "Il est venu acheter toute la récolte. Dans son carnet, le prix est déjà noté, d’avant la récolte.",
+          "📒 Carnet de prix"
+        ],
+        [
+          "L’institutrice Giulia et les enfants",
+          "Elle a couché les enfants à huit heures. Un enfant a dit qu’il y avait de la lumière dans la brûlerie.",
+          "🖍️ Dessin d’enfant"
+        ]
+      ]
+    ],
+    "fazenda-2": [
+      "Chapitre II · L’aire de séchage",
+      "Sur l’aire de séchage, les cerises sont étalées en longues rangées au soleil. Chaque jour, on les retourne avec des râteaux en bois. Cette nuit, quelqu’un y a laissé une trace en plein dedans.",
+      "Les cerises sont de nouveau en rangées. La trace allait de l’aire de séchage à l’entrepôt, et retour.",
+      "Sur l’aire de séchage, tout le monde travaille en rangées et chacun voit les autres. Déclarations sur deux personnes : fixe d’abord l’une des deux.",
+      [
+        [
+          "La trace",
+          "Une trace traversait les cerises de part en part. Elle était trop étroite pour une charrette.",
+          "🛞 Roue de brouette"
+        ],
+        [
+          "Les râteaux en bois",
+          "Il y a dix râteaux à la fazenda. Neuf étaient appuyés contre le mur.",
+          "🧹 Râteau en bois"
+        ],
+        [
+          "Le régisseur Joaquim retourne les cerises",
+          "Depuis trente ans, il retourne les cerises du nord vers le sud. Hier, quelqu’un les a retournées dans l’autre sens.",
+          "🧭 Rose des vents"
+        ],
+        [
+          "L’agronome Hideo mesure",
+          "Chaque jour, il mesure si les cerises sont sèches. Hier, il a noté un chiffre impossible.",
+          "📏 Hygromètre"
+        ],
+        [
+          "La pluie arrive",
+          "Quand il pleut, il faut rentrer les cerises. À deux heures, quelqu’un a sonné la cloche, sous un ciel dégagé.",
+          "🔔 Cloche d’alarme"
+        ],
+        [
+          "Le dégustateur Bento goûte",
+          "Il goûte les cerises dès l’aire de séchage. Il dit que la rangée près de l’entrepôt n’a pas le même goût.",
+          "🫘 Grains de café"
+        ],
+        [
+          "La docteure Lúcia arrive tard",
+          "Elle est venue tard le soir pour un cueilleur malade. Il n’y avait pas de cueilleur malade.",
+          "🩺 Stéthoscope"
+        ],
+        [
+          "Du jus sur la poignée",
+          "Sur la porte de l’entrepôt, il y avait du jus de cerises fraîches. Sur la poignée aussi.",
+          "🍒 Cerise de café"
+        ]
+      ]
+    ],
+    "fazenda-3": [
+      "Chapitre III · La fête de juin",
+      "C’est la fête de São João. Dans la cour brûle un feu de joie, et des fanions pendent partout. Pendant le quadrille, un danseur se retrouve sans partenaire.",
+      "Le feu s’éteint et les fanions sont décrochés. Le danseur sans partenaire avait un autre rendez-vous cette nuit-là.",
+      "Autour du feu, tout le monde forme un cercle, et chacun sait où il n’était pas. Qui dit où il n’était pas t’apprend quelque chose, lui aussi : raye tout de suite cette zone.",
+      [
+        [
+          "Le feu de joie",
+          "À neuf heures, on a allumé le feu. Quelqu’un y a jeté une pile de papiers.",
+          "🔥 Feu de joie"
+        ],
+        [
+          "Le quadrille",
+          "Huit couples dansent le quadrille. À mi-parcours, il n’en restait que sept, et un danseur seul.",
+          "🪗 Accordéon"
+        ],
+        [
+          "L’institutrice Giulia découpe des fanions",
+          "Avec les enfants, elle a découpé cent fanions. L’un d’eux est fait d’une page de livre de comptes.",
+          "✂️ Ciseaux"
+        ],
+        [
+          "Le gâteau de maïs",
+          "À la fête, tout le monde mange du gâteau de maïs. Dans la cuisine, il y avait un gâteau que personne n’avait le droit d’entamer.",
+          "🌽 Gâteau de maïs"
+        ],
+        [
+          "La pianiste Zélia chante",
+          "Elle chante la chanson de São João, comme chaque année. Cette année, elle a chanté un couplet que personne ne connaissait.",
+          "🎼 Partition"
+        ],
+        [
+          "L’acheteur Mulder ne danse pas",
+          "Il ne danse pas, dit-il : il est hollandais. Pourtant, à dix heures, sa chaise près du feu était vide.",
+          "👒 Chapeau de paille"
+        ],
+        [
+          "Une lanterne dans le champ",
+          "Pendant le feu d’artifice, une lanterne a traversé le champ de café. Personne ne va dans le champ la nuit.",
+          "🏮 Lanterne"
+        ],
+        [
+          "Dona Celeste danse seule",
+          "Elle a dansé le quadrille avec le régisseur. Après la deuxième figure, elle s’est retrouvée seule.",
+          "🎀 Ruban à cheveux"
+        ]
+      ]
+    ],
+    "fazenda-4": [
+      "Chapitre IV · Le train du café",
+      "Trois cents sacs de café partent en train pour le port de Santos. Le régisseur Joaquim les compte au chargement. Au port, il en arrive deux cent quatre-vingt-dix-neuf.",
+      "Le train est revenu et les sacs sont comptés. Le sac manquant n’a jamais quitté la fazenda.",
+      "Au chargement, tout le monde se tient en ligne le long des wagons. Place d’abord le suspect qui a le moins de cases possibles ; le reste suit.",
+      [
+        [
+          "Trois cents sacs",
+          "Trois cents sacs sur la lettre de voiture. Deux cent quatre-vingt-dix-neuf au port.",
+          "🧾 Lettre de voiture"
+        ],
+        [
+          "Le régisseur Joaquim compte",
+          "Il a compté chaque sac d’un trait de craie sur le wagon. Il y a trois cents traits.",
+          "✏️ Craie"
+        ],
+        [
+          "Le quai",
+          "Le train est resté une heure au quai de la fazenda. Pendant cette heure, le quai n’a jamais été vide.",
+          "🪧 Panneau de gare"
+        ],
+        [
+          "L’acheteur Mulder voyage avec les sacs",
+          "Il voyage dans le dernier wagon, entre les sacs. Il dit qu’il veut sentir le café.",
+          "🧳 Sac de voyage"
+        ],
+        [
+          "Une marque repeinte",
+          "Chaque sac porte la marque de la fazenda. Sur un sac, une autre marque a été peinte par-dessus.",
+          "🖌️ Pinceau à marquer"
+        ],
+        [
+          "L’agronome Hideo envoie un échantillon",
+          "Il envoie un petit sac de cerises à Campinas, pour analyse. Le sac est gros, pour un échantillon.",
+          "🧪 Sac d’échantillon"
+        ],
+        [
+          "L’entrepôt vide",
+          "Après le chargement, l’entrepôt est vide. Dans le coin, il reste un sac, derrière une pile de jute.",
+          "📦 Sac de jute"
+        ],
+        [
+          "Le dégustateur Bento à Santos",
+          "Au port, il goûte chaque sac. Il dit qu’il y a un sac de trop, pas un de moins.",
+          "☕ Tasse de dégustation"
+        ]
+      ]
+    ],
+    "fazenda-5": [
+      "Chapitre V · La dégustation",
+      "À la bourse du café de Santos, le dégustateur Bento goûte chaque lot. Un lot est meilleur que tous les autres. Personne ne sait de quel caféier il vient.",
+      "Le lot obtient le meilleur prix de l’année. De quel caféier il vient, toi aussi, tu le sais maintenant.",
+      "Dans la salle de dégustation, chacun est seul derrière sa rangée de tasses. Commence par qui dit avoir été seul : ça écarte d’un coup tous les autres de sa zone.",
+      [
+        [
+          "La tasse sept",
+          "Cent tasses alignées. À la tasse sept, le dégustateur n’a plus rien dit.",
+          "☕ Tasse sept"
+        ],
+        [
+          "Le dégustateur Bento ne recrache pas",
+          "Il aspire, goûte et recrache, cent fois par jour. Avec ce lot, il n’a pas recraché.",
+          "🥄 Cuillère en argent"
+        ],
+        [
+          "Le numéro sur le sac",
+          "Chaque lot a un numéro. Ce numéro ne figure pas dans les livres de la fazenda.",
+          "🔢 Numéro de lot"
+        ],
+        [
+          "Dona Celeste vérifie",
+          "Elle cherche le numéro dans les livres de comptes. La page de juillet a été découpée.",
+          "📕 Livre de comptes"
+        ],
+        [
+          "L’acheteur Mulder fait une offre",
+          "Il a fait une offre sur le lot avant de l’avoir goûté. Il a offert le double.",
+          "🔨 Marteau d’enchères"
+        ],
+        [
+          "L’agronome Hideo le reconnaît",
+          "Une gorgée a suffi. C’était le café de son nouveau caféier, qui n’a encore jamais donné de récolte.",
+          "🌿 Jeune caféier"
+        ],
+        [
+          "La pianiste Zélia à Santos",
+          "Elle joue une semaine dans un hôtel de Santos. Son hôtel est à côté de la bourse.",
+          "🗝️ Clé d’hôtel"
+        ],
+        [
+          "Un échantillon de trop",
+          "Dix échantillons sont venus de la fazenda. Il y en a onze dans la salle de dégustation.",
+          "🫙 Bocal à échantillon"
+        ]
+      ]
+    ],
+    "fazenda-6": [
+      "Chapitre VI · Le gel nocturne",
+      "Une seule nuit de gel peut coûter toute une récolte. Le régisseur fait allumer de petits feux dans le champ contre le froid. Cette nuit, quelqu’un s’est promené entre les caféiers avec une lanterne.",
+      "Le soleil se lève et les caféiers sont sauvés, sauf une rangée. Cette rangée était près du nouveau caféier de Hideo.",
+      "Dans le froid, chacun se serre près d’un feu, et personne ne fait attention aux autres. Les déclarations se font plus rares : sers-toi du Crayon, écarte les cases impossibles et regarde ce qui reste.",
+      [
+        [
+          "Le gel arrive",
+          "À minuit, le thermomètre de la véranda est descendu sous zéro. Dans une fazenda de café, ça n’arrive presque jamais.",
+          "🌡️ Thermomètre"
+        ],
+        [
+          "Des feux dans le champ",
+          "Toutes les dix rangées brûle un petit feu. L’un d’eux s’est éteint à deux heures.",
+          "🪵 Fagot"
+        ],
+        [
+          "Le régisseur Joaquim veille",
+          "Il a longé les feux toute la nuit, dit-il. Ses bottes sont sèches.",
+          "🥾 Bottes d’équitation"
+        ],
+        [
+          "La lanterne entre les caféiers",
+          "À trois heures, une lanterne a traversé le champ. Elle n’est pas allée vers les feux, mais vers la serre.",
+          "🔦 Lampe de poche"
+        ],
+        [
+          "La docteure Lúcia reste dormir",
+          "À cause du gel, elle n’a pas pu rentrer à cheval. Elle a dormi dans le salon, dit-elle, sa sacoche sous la tête.",
+          "💼 Sacoche de médecin"
+        ],
+        [
+          "Des cerises noires",
+          "Les cerises gelées deviennent noires. Dans le panier d’un cueilleur, il y avait des cerises noires d’avant le gel.",
+          "🧺 Panier de cueillette"
+        ],
+        [
+          "L’institutrice Giulia chauffe l’école",
+          "Elle a allumé le poêle de l’école, pour les enfants. C’était dimanche ; il n’y avait pas classe.",
+          "📚 Livres d’école"
+        ],
+        [
+          "L’agronome Hideo cherche son caféier",
+          "Au lever du soleil, il est allé voir son nouveau caféier. Il ne restait qu’un bâton avec une étiquette.",
+          "🏷️ Étiquette de plant"
+        ]
+      ]
+    ],
+    "fazenda-7": [
+      "Chapitre VII · Le nouveau caféier",
+      "L’agronome Hideo crée une variété de café qui résiste au gel. Après la nuit de gel, son meilleur caféier a disparu. Quelqu’un veut les graines.",
+      "Le caféier est de retour dans la serre, entouré d’une clôture. Les graines restent à la fazenda.",
+      "Le plateau s’agrandit et la fazenda se tait. Si le rapport dit qu’une zone était vide, toute cette zone est exclue pour tout le monde.",
+      [
+        [
+          "Un trou vide",
+          "Là où était le caféier, il y a un trou. La terre autour a été soigneusement balayée.",
+          "🕳️ Trou de plantation"
+        ],
+        [
+          "Le cahier de sélection",
+          "Douze ans de travail tiennent dans un cahier. Il était encore dans la serre, ouvert à une autre page.",
+          "📓 Cahier de sélection"
+        ],
+        [
+          "L’acheteur Mulder a une serre",
+          "Sa firme a une serre à Amsterdam. Il n’y a que des tulipes, dit-il.",
+          "🌷 Bulbe de tulipe"
+        ],
+        [
+          "Le fauteuil à bascule",
+          "Sous la véranda, le fauteuil se balance parfois tout seul. Cette nuit, quelqu’un était assis dedans, de la boue aux chaussures.",
+          "🪑 Fauteuil à bascule"
+        ],
+        [
+          "Dona Celeste lit le testament",
+          "Le testament de son père énumère tout ce qui se trouve à la fazenda. Le nouveau caféier aussi, avec un autre propriétaire.",
+          "📜 Testament"
+        ],
+        [
+          "Le dégustateur Bento connaît le goût",
+          "Il a goûté le café de ce caféier à Santos. À part lui, une seule personne sait quel goût il a.",
+          "🫖 Cafetière"
+        ],
+        [
+          "Un paquet par la poste",
+          "Avec le courrier pour Santos, il y a un petit paquet. L’adresse est celle d’une serre à l’étranger.",
+          "📮 Petit paquet"
+        ],
+        [
+          "Le perroquet parle",
+          "Le perroquet a vu le caféier partir. Depuis, il répète un seul mot, encore et encore.",
+          "🪶 Plume rouge"
+        ]
+      ]
+    ],
+    "fazenda-8": [
+      "Chapitre VIII · Le dernier sac",
+      "La récolte est finie et on pèse le dernier sac. L’acheteur règle la facture et les invités font leurs valises. Encore une soirée de musique sous la véranda.",
+      "Van Dam vide sa tasse, touche le bord de son chapeau et monte dans le train pour Santos. L’aire de séchage est vide et les comptes sont de nouveau justes. Sous la véranda, la musique continue.",
+      "Les dernières affaires, presque toutes sur le grand plateau. Ne bloque pas sur le suspect le plus difficile : place d’abord les autres, et il ne reste souvent qu’une case pour le dernier.",
+      [
+        [
+          "La balance",
+          "Soixante kilos par sac, comme toujours. Le dernier sac pèse soixante et un.",
+          "⚖️ Balance à café"
+        ],
+        [
+          "Le régisseur Joaquim rend les clés",
+          "Après trente ans, il pose les clés de l’entrepôt sur la table. Il y a une clé de trop à l’anneau.",
+          "🔑 Trousseau de clés"
+        ],
+        [
+          "L’acheteur Mulder règle la note",
+          "Il paie la récolte en florins. Il paie un sac de plus qu’il n’y en a.",
+          "🪙 Florin"
+        ],
+        [
+          "La pianiste Zélia joue la dernière chanson",
+          "Elle joue un choro qu’elle a écrit pour le baron. Il ne l’a jamais entendu.",
+          "🎶 Choro"
+        ],
+        [
+          "L’institutrice Giulia fait ses adieux",
+          "Elle retourne en ville. Elle laisse une lettre aux enfants, pour quand ils seront grands.",
+          "💌 Lettre d’adieu"
+        ],
+        [
+          "La docteure Lúcia met tout par écrit",
+          "Elle écrit ce qu’elle a vu dans la brûlerie, la nuit de la fête. Elle aurait dû le faire tout de suite, dit-elle.",
+          "📋 Rapport médical"
+        ],
+        [
+          "Dona Celeste ouvre les livres",
+          "Elle ouvre les livres de comptes sur la table de la salle à manger. Pour la première fois, chaque colonne tombe juste, sauf une.",
+          "📚 Livres de comptes"
+        ],
+        [
+          "La brûlerie",
+          "Là où tout a commencé, dans la brûlerie. C’est là que tout se termine.",
+          "🫘 Grains torréfiés"
+        ]
+      ]
+    ],
+    "zeppelin": [
+      "Chapitre I · Au-dessus des nuages",
+      "Le dirigeable Cirrus, août 1929. Pendant trois jours, il dérive au-dessus de l’océan, en route vers Rio de Janeiro. Après le dîner, le constructeur Anton Falk gît dans la salle des cartes, le cap à suivre encore dans la main.",
+      "Le dirigeable poursuit sa route au-dessus des nuages. Impossible de faire demi-tour, impossible de descendre. Le coupable vole avec toi jusqu’à Rio.",
+      "Un dirigeable est long et étroit, avec un seul couloir de l’avant à l’arrière. Commence par qui dit dans quelle zone il était ; « juste à côté » du globe terrestre, c’est seulement une case qui le touche par un côté, jamais en diagonale.",
+      [
+        [
+          "Après le dîner",
+          "Le dîner était servi à sept heures, au-dessus des nuages. À huit heures et demie, le constructeur gisait dans la salle des cartes.",
+          "🍽️ Assiette"
+        ],
+        [
+          "Le cap dans sa main",
+          "Dans sa main, il tenait une bande de papier avec un cap. Ce n’était pas le cap de Rio.",
+          "🧾 Bande de papier"
+        ],
+        [
+          "Le commandant Brandt dans la timonerie",
+          "Il était dans la timonerie toute la soirée, dit-il. Depuis la timonerie, on voit directement dans la salle des cartes.",
+          "🔭 Jumelles"
+        ],
+        [
+          "Le navigateur Mateus calcule",
+          "Chaque heure, il calcule le cap. À huit heures, il l’a calculé deux fois, avec un autre résultat.",
+          "🧮 Règle à calcul"
+        ],
+        [
+          "La météorologue Liv regarde dehors",
+          "Elle a regardé les nuages toute la soirée, dit-elle. À huit heures, il faisait déjà nuit.",
+          "☁️ Atlas des nuages"
+        ],
+        [
+          "La machine à écrire",
+          "Dans la salle des cartes, il y a une machine à écrire. Une feuille était encore dedans, avec une seule phrase.",
+          "📃 Feuille tapée"
+        ],
+        [
+          "La championne Josette dort mal",
+          "Elle dort mal en l’air, dit-elle. À huit heures, elle dormait déjà, d’après le steward.",
+          "🎾 Balle de tennis"
+        ],
+        [
+          "Le diplomate Vidal et le constructeur",
+          "Ils ont dîné ensemble et parlé d’argent. Après le dessert, seul le diplomate parlait encore.",
+          "💼 Serviette en cuir"
+        ]
+      ]
+    ],
+    "zeppelin-2": [
+      "Chapitre II · La poste aérienne",
+      "À bord, il y a cinquante mille lettres pour l’Amérique du Sud, avec des timbres spéciaux pour les collectionneurs. La receveuse Elsbeth les oblitère dans la salle du courrier. Une enveloppe a été ouverte à la vapeur.",
+      "L’enveloppe est refermée et oblitérée. Ce qu’il y avait dedans, la receveuse l’ignore, mais toi, tu le sais.",
+      "Dans la salle du courrier, chaque lettre passe entre deux paires de mains. Déclarations sur deux personnes : fixe d’abord l’une des deux.",
+      [
+        [
+          "Cinquante mille lettres",
+          "Chaque lettre reçoit le cachet du dirigeable. Une lettre en a reçu deux.",
+          "📮 Cachet de la poste"
+        ],
+        [
+          "La receveuse Elsbeth oblitère",
+          "Elle oblitère cent lettres à l’heure. Entre neuf et dix heures, elle n’en a pas oblitéré une seule.",
+          "🔖 Timbre"
+        ],
+        [
+          "L’enveloppe ouverte à la vapeur",
+          "La colle a été mouillée, puis elle a séché. Ça se voit aux plis.",
+          "✉️ Enveloppe"
+        ],
+        [
+          "La bouilloire de la cuisine",
+          "Pour la vapeur, il faut une bouilloire. La cuisine a la seule bouilloire du bord.",
+          "🫖 Bouilloire"
+        ],
+        [
+          "La reporter Daisy envoie un article",
+          "Chaque jour, elle envoie un article à son journal. Aujourd’hui, elle a envoyé une lettre, à elle-même.",
+          "📰 Coupure de presse"
+        ],
+        [
+          "Un timbre rare",
+          "Une enveloppe porte un timbre qui n’existe qu’en dix exemplaires. Hier, il n’y était pas encore.",
+          "🔍 Loupe"
+        ],
+        [
+          "Le mécanicien Rudi aide à porter",
+          "Il a aidé à porter les sacs postaux jusqu’à la salle du courrier. Il en a porté un jusqu’à la nacelle moteur.",
+          "🧵 Ficelle"
+        ],
+        [
+          "Le diplomate Vidal attend du courrier",
+          "Il ne reçoit pas de courrier à bord, dit-il. Dans la salle du courrier, il y a une lettre à son nom.",
+          "🔏 Cachet de cire"
+        ]
+      ]
+    ],
+    "zeppelin-3": [
+      "Chapitre III · Vent contraire",
+      "Un fort vent contraire au-dessus de l’océan. Le dirigeable avance deux fois moins vite et le voyage dure une nuit de plus. Personne n’en est content, sauf un passager.",
+      "Le vent tourne et le dirigeable rattrape les heures perdues. Le passager que le vent arrangeait avait ses raisons.",
+      "Par vent contraire, tout le monde reste à l’intérieur, mais pas dans la même zone. Qui dit où il n’était pas t’apprend quelque chose, lui aussi : raye tout de suite cette zone.",
+      [
+        [
+          "Une nuit de plus",
+          "D’après l’horaire, ils atterrissent vendredi. D’après le vent, samedi.",
+          "📅 Itinéraire"
+        ],
+        [
+          "La météorologue Liv avait prévenu",
+          "Hier, elle a annoncé un vent contraire. Le constructeur a quand même voulu ce cap.",
+          "🌬️ Carte des vents"
+        ],
+        [
+          "Le dirigeable tremble",
+          "Sous une rafale, un verre s’est renversé dans le salon. Dessous, il y avait une petite clé.",
+          "🗝️ Petite clé"
+        ],
+        [
+          "Le navigateur Mateus choisit un cap",
+          "Il a choisi un cap qui contourne le vent. Ce cap figurait déjà sur la bande que tenait le constructeur.",
+          "🗺️ Carte aérienne"
+        ],
+        [
+          "La championne Josette a le mal de l’air",
+          "Elle est restée couchée dans sa cabine toute la journée, dit-elle. La porte était ouverte et la cabine vide.",
+          "🍋 Citron"
+        ],
+        [
+          "Le commandant Brandt jure",
+          "Il ne jure jamais, dit l’équipage. Par ce vent contraire, il a juré en trois langues.",
+          "🧭 Compas"
+        ],
+        [
+          "Le bar reste ouvert",
+          "Par vent contraire, le bar ferme. Cette nuit, quelqu’un y a quand même servi deux verres.",
+          "🍸 Verre à cocktail"
+        ],
+        [
+          "Content du vent",
+          "Tout le monde veut arriver à l’heure à Rio. Un passager a demandé si le voyage pouvait durer encore plus longtemps.",
+          "⏳ Sablier"
+        ]
+      ]
+    ],
+    "zeppelin-4": [
+      "Chapitre IV · La nacelle moteur",
+      "Le dirigeable a cinq moteurs, chacun dans sa propre nacelle sous la coque. Le mécanicien Rudi va les voir tous les jours. Cette nuit, l’un d’eux s’arrête, et le mécanicien ne sait pas pourquoi.",
+      "Le moteur tourne de nouveau. Dans la conduite de carburant, il y avait quelque chose qui n’avait rien à y faire, et tu sais qui l’y a mis.",
+      "Entre les moteurs, on ne peut aller que tout droit vers l’avant ou tout droit vers l’arrière. Place d’abord le suspect qui a le moins de cases possibles ; le reste suit.",
+      [
+        [
+          "Le moteur trois",
+          "À deux heures, le moteur trois s’est arrêté. Le dirigeable a perdu dix mètres.",
+          "⚙️ Roue dentée"
+        ],
+        [
+          "Le mécanicien Rudi sort",
+          "Il descend une échelle dans le vent jusqu’à la nacelle. Il ne sort jamais sans son bonnet ; cette nuit, si.",
+          "🧢 Bonnet de laine"
+        ],
+        [
+          "La conduite de carburant",
+          "Dans la conduite, il y avait une boulette de papier. Sur le papier, il y a des chiffres.",
+          "🛢️ Conduite de carburant"
+        ],
+        [
+          "Le commandant Brandt fait descendre",
+          "Avec quatre moteurs, le dirigeable doit voler plus bas. Plus bas, c’est plus près de la mer.",
+          "🎚️ Altimètre"
+        ],
+        [
+          "La receveuse Elsbeth l’entend",
+          "C’est dans la salle du courrier qu’on entend le mieux les moteurs. Elle a entendu le moteur trois s’arrêter, et une porte.",
+          "🚪 Porte de nacelle"
+        ],
+        [
+          "Une clé de trop",
+          "La caisse du mécanicien contient douze clés plates. Dans la nacelle, il y en avait une treizième.",
+          "🔧 Clé plate"
+        ],
+        [
+          "Le navigateur Mateus refait ses calculs",
+          "Avec quatre moteurs, ils atteindront Rio un jour plus tard. Il l’avait calculé avant que le moteur s’arrête.",
+          "✏️ Porte-mine"
+        ],
+        [
+          "Le papier dans la conduite",
+          "Les chiffres sur le papier sont un cap. Le même cap que dans la main du constructeur.",
+          "📄 Boulette de papier"
+        ]
+      ]
+    ],
+    "zeppelin-5": [
+      "Chapitre V · La coursive",
+      "Tout en haut du dirigeable, une coursive étroite passe entre les ballonnets, du nez à la queue. Les passagers n’ont pas le droit d’y monter. Dans la poussière, il y a des traces de pas fraîches.",
+      "La coursive est de nouveau vide et la poussière lisse. Les traces de pas allaient de la salle du courrier à la vigie.",
+      "Dans la coursive, impossible de se croiser. Commence par qui dit avoir été seul : ça écarte d’un coup tous les autres de sa zone.",
+      [
+        [
+          "Des traces fraîches",
+          "Une fine couche de poussière couvre la coursive. On y voit les traces de petites chaussures.",
+          "👞 Petite chaussure"
+        ],
+        [
+          "Le mécanicien Rudi y passe tous les jours",
+          "Chaque matin, il la parcourt du nez à la queue. Il chausse du quarante-six.",
+          "🥾 Brodequin"
+        ],
+        [
+          "La vigie",
+          "Sur le dessus du dirigeable, il y a une trappe qui mène à la vigie. La trappe n’était pas verrouillée.",
+          "🔓 Trappe"
+        ],
+        [
+          "La championne Josette s’entraîne",
+          "Elle s’entraîne tous les jours, même en l’air. Elle dit qu’elle saute à la corde dans sa cabine.",
+          "🪢 Corde à sauter"
+        ],
+        [
+          "La météorologue Liv lâche un ballon",
+          "Chaque matin, elle lâche un ballon-sonde depuis la vigie. Ce matin, il y en avait deux.",
+          "🎈 Ballon-sonde"
+        ],
+        [
+          "Un gant entre les ballonnets",
+          "Entre les ballonnets pendait un gant blanc. Il ne va qu’à deux personnes à bord.",
+          "🧤 Gant blanc"
+        ],
+        [
+          "La reporter Daisy veut une photo",
+          "Elle voulait une photo de l’océan, depuis le toit. Le commandant a dit non, et elle y est allée quand même.",
+          "📸 Photo de presse"
+        ],
+        [
+          "De la salle du courrier vers le haut",
+          "Une échelle monte de la salle du courrier jusqu’à la coursive. Sur le dernier barreau, il y a de l’encre à tampon.",
+          "🖊️ Encre à tampon"
+        ]
+      ]
+    ],
+    "zeppelin-6": [
+      "Chapitre VI · Le bulletin météo",
+      "Chaque matin, la météorologue Liv dessine une carte météo. D’après sa carte, du brouillard arrive sur la mer. Ce brouillard tombe à pic pour quelqu’un.",
+      "Le brouillard se lève et le dirigeable reprend son cap. Celui qui comptait sur le brouillard n’avait pas compté sur toi.",
+      "Dans le brouillard, on ne voit rien par les hublots, alors tout le monde regarde à l’intérieur. Les déclarations se font plus rares : sers-toi du Crayon, écarte les cases impossibles et regarde ce qui reste.",
+      [
+        [
+          "La carte météo",
+          "Chaque matin, une nouvelle carte est affichée dans le salon. Ce matin, c’était celle d’hier.",
+          "🌦️ Carte météo"
+        ],
+        [
+          "Brouillard à dix heures",
+          "D’après la carte, le brouillard commence à dix heures. À dix heures pile, la lumière du bar s’est éteinte.",
+          "💡 Lampe du bar"
+        ],
+        [
+          "La météorologue Liv dessine",
+          "Elle trace toujours ses lignes en bleu. Sur la carte d’hier, il y a aussi des lignes rouges.",
+          "🖍️ Crayon rouge"
+        ],
+        [
+          "Le diplomate Vidal demande la météo",
+          "Chaque matin, il demande le temps qu’il fera. Aujourd’hui, il a demandé à quelle heure arriverait le brouillard.",
+          "🕰️ Pendulette de voyage"
+        ],
+        [
+          "La radio se tait",
+          "Dans le brouillard, la radio doit émettre tous les quarts d’heure. Entre dix et onze heures, elle n’a rien émis.",
+          "📻 Radio"
+        ],
+        [
+          "Le navigateur Mateus vole à l’aveugle",
+          "Dans le brouillard, il vole au compas et à la montre. Il sait où était le dirigeable, sauf à dix heures et demie.",
+          "⏱️ Chronomètre"
+        ],
+        [
+          "La receveuse Elsbeth ferme à clé",
+          "Par brouillard, elle ferme la salle du courrier à clé, à cause de l’humidité. À onze heures, la porte était ouverte.",
+          "🔒 Cadenas"
+        ],
+        [
+          "Une lampe sur l’eau",
+          "Sous le dirigeable, une lampe clignotait sur l’eau. Depuis la vigie, une autre lui a répondu.",
+          "🔦 Lampe à éclats"
+        ]
+      ]
+    ],
+    "zeppelin-7": [
+      "Chapitre VII · L’équateur",
+      "À l’équateur, tout le monde est baptisé, comme sur tous les navires. Le commandant se déguise en Neptune et chacun reçoit un seau d’eau sur la tête. Un passager manque.",
+      "Le baptême est terminé et tout le monde est sec. Le passager absent était dans la salle des cartes, et maintenant, tu sais ce qu’il cherchait.",
+      "Le plateau s’agrandit et le dirigeable se remplit. Si le rapport dit qu’une zone était vide, toute cette zone est exclue pour tout le monde.",
+      [
+        [
+          "Neptune à bord",
+          "Le commandant Brandt porte une barbe en corde et une couronne en carton. Il compte les passagers et en trouve un de moins.",
+          "👑 Couronne en carton"
+        ],
+        [
+          "Le baptême",
+          "Chacun reçoit un seau d’eau et un certificat. Il est resté un certificat.",
+          "📜 Certificat de baptême"
+        ],
+        [
+          "La ligne sur le sol",
+          "Le navigateur Mateus a tracé l’équateur à la craie sur le sol du salon. Quelqu’un ne l’a pas enjambée : il en a fait le tour.",
+          "📏 Ligne de craie"
+        ],
+        [
+          "La championne Josette au premier rang",
+          "Elle voulait être baptisée la première. Elle était au premier rang, avec une serviette sèche.",
+          "🧺 Serviette sèche"
+        ],
+        [
+          "La reporter Daisy note tout",
+          "Elle a noté les noms de tous les baptisés. Elle a rayé un nom.",
+          "✒️ Stylo-plume"
+        ],
+        [
+          "Le mécanicien Rudi manque le baptême",
+          "Il devait aller voir le moteur trois, dit-il. Le moteur trois tournait parfaitement.",
+          "🔩 Boulon"
+        ],
+        [
+          "Le globe terrestre",
+          "Pendant le baptême, la salle des cartes était fermée. Après, le globe était couché sur le côté.",
+          "🌍 Globe terrestre"
+        ],
+        [
+          "Le diplomate Vidal et le contrat",
+          "Dans sa serviette, il y a un contrat pour dix dirigeables. Il a été signé par le constructeur, après sa mort.",
+          "🖋️ Signature"
+        ]
+      ]
+    ],
+    "zeppelin-8": [
+      "Chapitre VIII · Au-dessus de la baie de Rio",
+      "Le Pain de Sucre apparaît et le mât d’amarrage attend. Le dirigeable fait encore un tour au-dessus de la baie avant d’atterrir. Encore une soirée avec les mêmes passagers que la première nuit.",
+      "Van Dam met son chapeau, salue le commandant et descend le dernier l’escalier jusqu’au mât. Le dirigeable est amarré au mât. Le cap était juste, et maintenant, le reste aussi.",
+      "Les dernières affaires, presque toutes sur le grand plateau. Ne bloque pas sur le suspect le plus difficile : place d’abord les autres, et il ne reste souvent qu’une case pour le dernier.",
+      [
+        [
+          "Terre en vue",
+          "À cinq heures, l’homme de vigie aperçoit le Pain de Sucre. À cinq heures dix, il voit aussi un bateau de police.",
+          "🚤 Bateau de police"
+        ],
+        [
+          "Le commandant Brandt atterrit",
+          "C’est son centième atterrissage. Dans son journal de bord, une ligne de ce voyage est restée vide.",
+          "📘 Journal de bord"
+        ],
+        [
+          "La receveuse Elsbeth compte les sacs",
+          "Cinquante mille lettres sont montées à bord. Cinquante mille et une vont descendre.",
+          "📬 Boîte aux lettres"
+        ],
+        [
+          "Le navigateur Mateus rentre chez lui",
+          "Il est né à Rio et montre sa maison depuis le salon. Il connaît la ville, et la police du port.",
+          "🖼️ Photo de chez lui"
+        ],
+        [
+          "La météorologue Liv rend ses cartes",
+          "Elle remet toutes ses cartes météo au commandant. Celle de la nuit du brouillard n’y est pas.",
+          "🗂️ Chemise à cartes"
+        ],
+        [
+          "La championne Josette a déjà gagné",
+          "Elle joue la semaine prochaine, et dit qu’elle a déjà gagné. Gagné quoi, elle ne le dit pas.",
+          "🏆 Coupe"
+        ],
+        [
+          "La reporter Daisy tape la fin",
+          "Son dernier article est prêt, sauf la dernière ligne. Cette ligne t’attend.",
+          "🗞️ Journal du matin"
+        ],
+        [
+          "La salle des cartes",
+          "Là où tout a commencé, dans la salle des cartes. C’est là que tout se termine.",
+          "📍 Épingle de cap"
+        ]
+      ]
+    ],
+    "poolstation": [
+      "Chapitre I · La fête de la mi-hiver",
+      "La station Croix-du-Sud, 21 juin 1958. La mi-hiver, la nuit la plus longue de l’année, est une fête sur toutes les bases. Des bougies, un gâteau en conserve et une chaise vide. Le chef de station gît dans la salle radio.",
+      "La fête est finie et les bougies sont consumées. Dehors, il fait moins cinquante, et personne ne peut partir.",
+      "Une station polaire, c’est petit : quelques baraques et un tunnel sous la neige. Commence par qui dit dans quelle zone il était ; « juste à côté » du chien de traîneau, c’est seulement une case qui le touche par un côté, jamais en diagonale.",
+      [
+        [
+          "La chaise vide",
+          "Huit assiettes, neuf chaises. La chaise du chef de station est restée vide toute la soirée.",
+          "🪑 Chaise pliante"
+        ],
+        [
+          "Le casque",
+          "Il avait encore le casque sur les oreilles. Il n’en sortait que du grésillement.",
+          "🎧 Casque"
+        ],
+        [
+          "Le cuisinier Diego coupe le gâteau",
+          "Un gâteau en conserve, avec de petites bougies de stéarine. Une part avait disparu avant qu’il commence à couper.",
+          "🎂 Gâteau de la mi-hiver"
+        ],
+        [
+          "L’opérateur radio Ole était de service",
+          "À huit heures, il devait être au poste radio. À huit heures, il était à table, disent-ils tous.",
+          "📋 Tableau de service"
+        ],
+        [
+          "Les vœux de la mi-hiver",
+          "À la mi-hiver, toutes les bases s’envoient leurs vœux par radio. À neuf heures, il est arrivé un message qui n’était pas un vœu.",
+          "📝 Bloc de messages"
+        ],
+        [
+          "Le musher Rewi nourrit les chiens",
+          "Il est allé au chenil à huit heures et demie. Les chiens n’ont aboyé qu’à neuf heures.",
+          "🍖 Pâtée"
+        ],
+        [
+          "La mécanicienne Lieve et la lumière",
+          "En pleine fête, le courant a sauté pendant trois minutes. Lieve était déjà à côté du groupe électrogène.",
+          "🔦 Lampe de poche"
+        ],
+        [
+          "Le tunnel sous la neige",
+          "Un tunnel sous la neige relie toutes les baraques. Dans le givre frais, les traces de pas n’allaient que dans un sens.",
+          "👣 Traces dans le givre"
+        ]
+      ]
+    ],
+    "poolstation-2": [
+      "Chapitre II · Silence radio",
+      "Le lendemain matin, Ole veut appeler le monde extérieur. Le poste se tait. Quelqu’un en a retiré une lampe.",
+      "Le poste de secours grésille et le monde extérieur répond. Qui a retiré la lampe, tu le sais maintenant. Ce que Holm voulait transmettre, pas encore.",
+      "Dans la nuit polaire, chacun sait où étaient les autres. Déclarations sur deux personnes : fixe d’abord l’une des deux.",
+      [
+        [
+          "La douille vide",
+          "Le poste compte neuf lampes. Ce matin, il y en avait huit.",
+          "💡 Lampe radio"
+        ],
+        [
+          "L’opérateur radio Ole cherche",
+          "Il a des lampes de rechange, dit-il, dans une caisse sous son lit. La caisse est vide.",
+          "📦 Caisse de rechange"
+        ],
+        [
+          "La mécanicienne Lieve sait réparer",
+          "Avec du fil et une lampe de l’atelier, elle monte un poste de secours. Elle savait quelle lampe manquait avant même de regarder.",
+          "🔧 Fer à souder"
+        ],
+        [
+          "Le dernier message",
+          "Sur le bloc de messages, il y a le début d’un message de Holm. Après trois mots, il s’arrête.",
+          "✏️ Bout de crayon"
+        ],
+        [
+          "Le docteur Kenji rédige le rapport",
+          "Heure du décès : entre huit et neuf heures. À huit heures et demie, le docteur était lui-même à l’infirmerie, seul.",
+          "🩺 Stéthoscope"
+        ],
+        [
+          "La météorologue Nancy a entendu quelque chose",
+          "À huit heures et demie, elle relevait les thermomètres dans l’abri météo. Elle a entendu du morse à travers le mur.",
+          "🌡️ Thermomètre"
+        ],
+        [
+          "La physicienne Hélène écoute aussi",
+          "Pour ses mesures, elle écoute la radio chaque nuit. Ce soir-là, elle a noté une fréquence qui ne venait pas du monde extérieur.",
+          "🗒️ Liste de fréquences"
+        ],
+        [
+          "La lampe dans la neige",
+          "Rewi a trouvé la lampe près du chenil, à moitié dans la neige. À côté, il y avait une moufle qui n’est pas à lui.",
+          "🧤 Moufle en laine"
+        ]
+      ]
+    ],
+    "poolstation-3": [
+      "Chapitre III · Le blizzard",
+      "Une tempête de trois jours balaie la base. La neige souffle si fort qu’on ne voit pas sa propre main. Qui sort suit la corde. Une corde a été détachée.",
+      "La tempête retombe et la corde est de nouveau tendue. Celui qui l’a détachée ne voulait pas qu’on atteigne l’abri météo.",
+      "Dans la tempête, personne ne voit rien, mais chacun sait où il n’était pas. Qui dit où il n’était pas t’apprend quelque chose, lui aussi : raye tout de suite cette zone.",
+      [
+        [
+          "La corde de l’abri météo",
+          "Une corde est tendue entre la baraque et l’abri météo. Ce matin, elle traînait dans la neige.",
+          "🪢 Corde-guide"
+        ],
+        [
+          "La météorologue Nancy doit sortir",
+          "Toutes les trois heures, elle relève les instruments, tempête ou pas. À trois heures, elle n’est revenue qu’au bout d’une heure, sans relevé.",
+          "📒 Cahier météo"
+        ],
+        [
+          "Le musher Rewi part à la recherche",
+          "Il est sorti avec deux chiens en laisse. Il est revenu avec trois.",
+          "🐾 Laisse"
+        ],
+        [
+          "Le cuisinier Diego va chercher de la neige",
+          "L’eau, c’est de la neige qu’on fait fondre. Il est allé remplir ses seaux en pleine tempête, et il est resté longtemps dehors.",
+          "🪣 Seau à neige"
+        ],
+        [
+          "L’anémomètre",
+          "À quatre heures, l’anémomètre sur le toit s’est arrêté. Gelé, dit Nancy. Il y avait un chiffon enroulé autour.",
+          "🌀 Anémomètre"
+        ],
+        [
+          "La mécanicienne Lieve et le groupe électrogène",
+          "Par moins soixante, le groupe électrogène ne doit pas s’arrêter. À cinq heures, il était arrêté, et Lieve dormait.",
+          "⛽ Jerrican"
+        ],
+        [
+          "Le docteur Kenji et les gelures",
+          "Deux personnes sont rentrées les joues blanches. D’après le journal de bord, une seule était sortie.",
+          "📓 Journal de bord"
+        ],
+        [
+          "Qui a détaché la corde",
+          "Un nœud ne se défait pas tout seul dans une tempête. Celui-ci avait été défait proprement, avec des gants.",
+          "🪝 Mousqueton"
+        ]
+      ]
+    ],
+    "poolstation-4": [
+      "Chapitre IV · La carotte de glace",
+      "Depuis des mois, la glaciologue Marina fore la glace sous la base. Sa meilleure carotte est rangée dans le tunnel, où il fait toujours moins trente. Ce matin, elle est en morceaux. Pas par accident.",
+      "La carotte est de retour dans le tunnel, chaque morceau numéroté. La fine couche noire qu’elle contient, Holm voulait être le premier à l’annoncer.",
+      "Dans le laboratoire, tout le monde est serré, alors regarde bien qui était juste à côté de qui. Place d’abord le suspect qui a le moins de cases possibles ; le reste suit.",
+      [
+        [
+          "Dix mille ans",
+          "Chaque centimètre de glace est une année. La carotte s’est brisée exactement à l’année que cherchait Marina.",
+          "🧊 Carotte de glace"
+        ],
+        [
+          "La glaciologue Marina compte",
+          "Elle numérote chaque morceau au crayon gras. Le numéro quatorze manque.",
+          "🖍️ Crayon gras"
+        ],
+        [
+          "La foreuse",
+          "La foreuse à glace est dans l’atelier. Il y a de la glace fraîche sur la pointe, et Marina n’a pas foré depuis une semaine.",
+          "🔩 Foreuse à glace"
+        ],
+        [
+          "La physicienne Hélène veut mesurer",
+          "La glace contient des poussières venues de loin. Hélène veut les mesurer ; Marina veut d’abord les décrire elle-même.",
+          "🔬 Lame de microscope"
+        ],
+        [
+          "Le cuisinier Diego prépare le maté",
+          "Pour son maté, il fait fondre de la glace du tunnel. Il ne sait pas quelle glace est ancienne, dit-il.",
+          "🧉 Calebasse à maté"
+        ],
+        [
+          "Le docteur Kenji et le microscope",
+          "Il n’y a qu’un microscope sur la base. Kenji y était cette nuit-là, pour une analyse que personne n’avait demandée.",
+          "🧪 Éprouvette"
+        ],
+        [
+          "Le journal de Holm",
+          "Dans le journal de Holm, la carotte apparaît trois fois. Une fois avec un point d’exclamation.",
+          "📔 Journal intime"
+        ],
+        [
+          "Ce qu’il y avait dans la glace",
+          "Au microscope : une fine couche noire dans la glace. Holm l’avait vue le premier.",
+          "🌋 Couche de cendres"
+        ]
+      ]
+    ],
+    "poolstation-5": [
+      "Chapitre V · L’aurore australe",
+      "En pleine nuit, le ciel devient vert. Hélène appelle tout le monde dehors, car une aurore pareille, on n’en voit que quelques-unes par hiver. Tout le monde lève les yeux, sauf une personne.",
+      "La lumière verte s’éteint. En vingt minutes, il peut se passer beaucoup de choses, et tu sais maintenant lesquelles.",
+      "Sous l’aurore, tout le monde est dehors dans le noir et ne voit que soi-même. Commence par qui dit avoir été seul : ça écarte d’un coup tous les autres de sa zone.",
+      [
+        [
+          "Lumière verte",
+          "À deux heures, le ciel est devenu vert. À l’intérieur, personne ne l’a vu, car il n’y avait personne à l’intérieur, disent-ils.",
+          "📸 Photo d’aurore"
+        ],
+        [
+          "La physicienne Hélène mesure",
+          "Elle mesure la durée de chaque éclat. Entre deux mesures, il y a un trou de dix minutes.",
+          "⏱️ Chronomètre"
+        ],
+        [
+          "L’appareil sur le toit",
+          "Hélène a installé sur le toit un appareil qui prend une photo par minute. Sur l’une d’elles, on voit une lampe près du chenil.",
+          "📷 Caméra du ciel"
+        ],
+        [
+          "Le musher Rewi ne regarde pas",
+          "Tout le monde était dehors, la tête renversée en arrière. Rewi tournait le dos au ciel.",
+          "🏮 Lampe-tempête"
+        ],
+        [
+          "L’opérateur radio Ole entend des parasites",
+          "Sous l’aurore, toutes les radios grésillent. Pourtant, Ole a entendu un message, très net, tout proche.",
+          "📡 Fil d’antenne"
+        ],
+        [
+          "Le cuisinier Diego reste à l’intérieur",
+          "Il a souvent vu des aurores, dit-il. C’est son premier hiver sur la glace.",
+          "🥘 Marmite à soupe"
+        ],
+        [
+          "La météorologue Nancy le note",
+          "Dans son cahier météo : ciel clair, pas de vent, aurore. Et à deux heures dix : porte de l’abri météo ouverte.",
+          "🗝️ Clé de l’abri météo"
+        ],
+        [
+          "Cette personne-là",
+          "Une aurore dure vingt minutes. C’est assez pour aller à la salle radio et revenir.",
+          "🕰️ Horloge de la cantine"
+        ]
+      ]
+    ],
+    "poolstation-6": [
+      "Chapitre VI · Le traîneau à chiens",
+      "Au dépôt, à dix milles de là, il y a du carburant et des vivres pour le printemps. Rewi y va avec le traîneau et deux autres. Deux jours de route à l’aller. Le traîneau revient avec le mauvais chargement.",
+      "Les caisses sont dans la réserve, le tampon vers le haut. Ce qu’il y avait dedans, Holm l’avait déjà mis sur sa liste.",
+      "À partir d’ici, presque toutes les affaires se jouent sur le grand plateau de neuf cases sur neuf. Sers-toi du Crayon : écarte les cases impossibles et regarde ce qui reste.",
+      [
+        [
+          "Dix milles",
+          "Le dépôt est à dix milles au sud. À l’aller, le traîneau est léger ; au retour, il devrait être lourd.",
+          "🛷 Traîneau à chiens"
+        ],
+        [
+          "Le musher Rewi attelle",
+          "Sept chiens devant le traîneau, comme toujours. Le meilleur chien, Kaho, est resté au chenil.",
+          "🐕 Kaho, chien de tête"
+        ],
+        [
+          "La liste du dépôt",
+          "D’après la liste, le dépôt contient quarante fûts de carburant. Rewi en a compté trente-six.",
+          "🛢️ Fût de carburant"
+        ],
+        [
+          "La mécanicienne Lieve les accompagne",
+          "Elle est venue récupérer la chenillette, restée au dépôt depuis l’automne. Elle a démarré du premier coup.",
+          "🔋 Batterie"
+        ],
+        [
+          "La glaciologue Marina les accompagne",
+          "Elle voulait forer de la glace en chemin, dit-elle. Elle n’a pas emporté de foreuse.",
+          "🎒 Sac à dos"
+        ],
+        [
+          "Le camp en chemin",
+          "Ils ont passé une nuit sous la tente, sur la glace. Autour de la tente, il y avait quatre paires de traces. Ils étaient trois.",
+          "⛺ Tente polaire"
+        ],
+        [
+          "Le mauvais chargement",
+          "Sur le traîneau, pas de fûts, mais des caisses au tampon de la station. Des caisses disparues depuis un an.",
+          "📦 Caisse tamponnée"
+        ],
+        [
+          "Le docteur Kenji attend",
+          "Il a attendu au chenil le retour du traîneau. Il savait déjà combien de caisses il y aurait dessus.",
+          "📋 Lettre de voiture"
+        ]
+      ]
+    ],
+    "poolstation-7": [
+      "Chapitre VII · Le ballon-sonde",
+      "Chaque matin et chaque soir, Nancy lâche un ballon-sonde, avec un petit boîtier qui mesure le vent et le froid. Deux fois par jour, un ballon s’envole. Aujourd’hui, un billet y était attaché.",
+      "Le ballon est depuis longtemps au-dessus des nuages. Le billet, non : tu as les trois mots, et tu sais qui les a écrits.",
+      "Le plateau s’agrandit et la nuit raccourcit. Si le rapport dit qu’une zone était vide, toute cette zone est exclue pour tout le monde.",
+      [
+        [
+          "Le billet",
+          "Nancy n’a vu le billet qu’au moment où le ballon s’élevait déjà. Elle a tout juste pu lire trois mots.",
+          "🎈 Ballon-sonde"
+        ],
+        [
+          "La météorologue Nancy gonfle le ballon",
+          "Elle gonfle elle-même chaque ballon à l’hydrogène. Celui-ci était déjà gonflé quand elle est arrivée à l’abri météo.",
+          "⚗️ Bouteille de gaz"
+        ],
+        [
+          "Le boîtier revient",
+          "D’habitude, on ne revoit jamais une sonde. Celle-ci est retombée près du chenil trois jours plus tard.",
+          "📡 Radiosonde"
+        ],
+        [
+          "L’opérateur radio Ole capte le signal",
+          "La sonde transmet le froid à la salle radio. Cette nuit-là, Ole a noté des chiffres qui ne sont pas des températures.",
+          "🔢 Suite de chiffres"
+        ],
+        [
+          "La physicienne Hélène lit le code",
+          "Elle connaît le code de la sonde, car elle calcule avec. Ce n’est qu’au bout de deux jours qu’elle a dit ce qu’il disait.",
+          "📐 Règle à calcul"
+        ],
+        [
+          "Le cuisinier Diego et la ficelle",
+          "La ficelle du ballon est de la ficelle de cuisine. Celle avec laquelle Diego ficelle ses rôtis.",
+          "🧵 Ficelle de cuisine"
+        ],
+        [
+          "La mécanicienne Lieve et les capitales",
+          "Sur ses plans, elle écrit toujours en capitales. Le billet aussi était en capitales.",
+          "📝 Plan d’atelier"
+        ],
+        [
+          "La glaciologue Marina traduit",
+          "Le billet était écrit en trois langues, un mot par langue. Seule Marina parle les trois.",
+          "📖 Dictionnaire"
+        ]
+      ]
+    ],
+    "poolstation-8": [
+      "Chapitre VIII · Le premier soleil",
+      "Fin août, une frange de lumière apparaît au-dessus de l’horizon. Après quatre mois, le soleil revient, et avec lui l’avion du monde extérieur. Encore une nuit sous l’aurore, avec les mêmes visages qu’à la mi-hiver.",
+      "Van Dam descend le dernier de l’avion, te serre la main et regarde un instant le soleil. Le soleil est revenu au-dessus de la glace. Le premier avion apporte le courrier, et ramène le coupable chez lui.",
+      "Les dernières affaires, presque toutes sur le grand plateau. Ne bloque pas sur le suspect le plus difficile : place d’abord les autres, et il ne reste souvent qu’une case pour le dernier.",
+      [
+        [
+          "La frange de lumière",
+          "À midi, l’horizon devient rose. Tout le monde est dehors. Une fenêtre de la salle radio est embuée.",
+          "🪟 Fenêtre embuée"
+        ],
+        [
+          "La mécanicienne Lieve trace la piste",
+          "Avec la chenillette, elle trace une piste pour l’avion. Sous la neige, il y avait la caisse vide des lampes radio.",
+          "🧰 Caisse à lampes"
+        ],
+        [
+          "Le docteur Kenji rédige son rapport",
+          "Un rapport pour le monde extérieur, sur neuf personnes et un hiver. À côté du nom de Holm : cause inconnue. Lui la connaît.",
+          "📄 Rapport médical"
+        ],
+        [
+          "Le cuisinier Diego cuisine les dernières provisions",
+          "La dernière boîte de l’hiver, ce sont des pêches. Il a posé neuf coupelles, par habitude.",
+          "🍑 Boîte de pêches"
+        ],
+        [
+          "Le musher Rewi fait ses adieux",
+          "Les chiens restent pour l’équipe suivante. Rewi n’emmène que Kaho, et Kaho grogne contre un passager.",
+          "📿 Médaille de chien"
+        ],
+        [
+          "La physicienne Hélène fait ses bagages",
+          "Quatre mois de mesures tiennent dans une caisse. Elle l’a rouverte une fois, pour une seule page.",
+          "📚 Carnets de mesures"
+        ],
+        [
+          "L’avion",
+          "L’avion atterrit et le pilote remet le courrier. Il y a une lettre pour Holm, de quelqu’un de la base.",
+          "✉️ Lettre par avion"
+        ],
+        [
+          "La mi-hiver, une dernière fois",
+          "Là où tout a commencé, dans la salle radio. C’est là qu’Ole transmet le message que Holm n’a jamais terminé.",
+          "📨 Dernier message"
+        ]
+      ]
+    ],
+    "winterpaleis": [
+      "Chapitre I · La dernière valse",
+      "Le palais Zvezdine, réveillon de 1899. Dans la salle de bal, l’orchestre joue la dernière valse du siècle. À minuit, on lève les verres au nouveau siècle. Le comte n’est pas là.",
+      "L’orchestre joue jusqu’au matin, car personne n’ose l’arrêter. Qui a apporté son verre au comte, tu le sais déjà.",
+      "Un palais a cent portes et autant de pièces. Commence par qui dit dans quelle pièce il était ; « juste à côté » de l’œuf de joaillerie, c’est seulement une case qui le touche par un côté, jamais en diagonale.",
+      [
+        [
+          "Douze coups",
+          "L’horloge a sonné les douze coups et deux cents verres se sont levés. Un verre était encore plein dans la bibliothèque.",
+          "🥂 Verre de cristal"
+        ],
+        [
+          "La bibliothèque",
+          "Le comte était assis dans son fauteuil, près de la cheminée. Le livre sur ses genoux était à l’envers.",
+          "📕 Livre à l’envers"
+        ],
+        [
+          "Le majordome Fiodor compte les verres",
+          "À minuit moins le quart, il a préparé deux cents verres. À minuit, il en restait 199 dans la salle de bal.",
+          "🍾 Bouteille de champagne"
+        ],
+        [
+          "Le compositeur Sergueï dirige",
+          "Sa nouvelle valse dure sept minutes. Sur la partition, il y a une reprise qui n’y était pas hier.",
+          "🎼 Partition"
+        ],
+        [
+          "La comtesse Elena reçoit",
+          "Toute la soirée, elle s’est tenue près de l’escalier pour accueillir les invités. À onze heures et demie, elle a disparu dix minutes.",
+          "🪭 Éventail"
+        ],
+        [
+          "Le lieutenant Dmitri danse",
+          "Il a dansé avec toutes les dames de la salle. Pas avec sa fiancée, restée seule près des miroirs.",
+          "🧤 Gant blanc"
+        ],
+        [
+          "Le flash",
+          "À minuit moins cinq, Irina a déclenché son flash au magnésium. Sur la photo, la porte de la bibliothèque est entrouverte.",
+          "📸 Plaque de verre"
+        ],
+        [
+          "Le feu de cheminée",
+          "Dans la bibliothèque, le feu flambait encore haut. Quelqu’un y avait remis du bois après onze heures.",
+          "🪵 Bûches de bouleau"
+        ]
+      ]
+    ],
+    "winterpaleis-2": [
+      "Chapitre II · L’œuf de joaillerie",
+      "L’orfèvre Pavel a travaillé un an sur l’œuf, sur commande du comte. À minuit, il devait s’ouvrir, avec une surprise pour la famille. Il est vide.",
+      "Le petit palais d’or est de retour dans l’œuf. La minuscule serrure se referme, et tu sais qui l’a ouverte.",
+      "Au bal, tout le monde parle de tout le monde. Déclarations sur deux personnes : fixe d’abord l’une des deux.",
+      [
+        [
+          "La minuscule serrure",
+          "L’œuf s’ouvre avec une clé pas plus grosse qu’un grain de riz. La clé était encore dans la serrure.",
+          "🗝️ Clé en or"
+        ],
+        [
+          "L’orfèvre Pavel explique",
+          "Dans l’œuf, il y avait un palais d’or grand comme un dé à coudre. Il sait exactement combien il pèse.",
+          "⚖️ Trébuchet"
+        ],
+        [
+          "La vitrine",
+          "L’œuf était sous verre, dans la salle des miroirs. Le verre est intact et la serrure fermée.",
+          "🔐 Serrure de vitrine"
+        ],
+        [
+          "La gouvernante Mabel et les enfants",
+          "Les enfants avaient le droit de voir l’œuf à onze heures. Mabel dit qu’il était encore fermé.",
+          "🎠 Cheval de bois"
+        ],
+        [
+          "La photographe Irina a photographié l’œuf",
+          "Sur sa photo de neuf heures, l’œuf est ouvert, et vide. À neuf heures, il était encore fermé, dit Pavel.",
+          "🖼️ Tirage"
+        ],
+        [
+          "Le majordome Fiodor a toutes les clés",
+          "Depuis quarante ans, il porte les clés du palais. À son anneau, il y en a une qui n’ouvre aucune porte.",
+          "🔑 Anneau de clés"
+        ],
+        [
+          "La poudre d’or",
+          "Sur le tapis du vestiaire, il y a de la poudre d’or. Pavel s’en sert pour polir.",
+          "✨ Poudre d’or"
+        ],
+        [
+          "La patineuse Véra et le manchon",
+          "Elle portait un manchon de fourrure pour patiner. Dans la doublure, il y avait quelque chose de dur, grand comme un dé à coudre.",
+          "🦊 Manchon de fourrure"
+        ]
+      ]
+    ],
+    "winterpaleis-3": [
+      "Chapitre III · La patinoire",
+      "Le jour de l’An, la fête continue dehors. Des torches autour de l’étang gelé, de la musique sur la rive. Sur la glace, il y a les traces de trois paires de patins.",
+      "Les torches s’éteignent. Des trois traces sur la glace, tu sais maintenant qui a tracé la troisième.",
+      "Sur la glace, chacun regarde ses propres pieds. Qui dit où il n’était pas t’apprend quelque chose, lui aussi : raye tout de suite cette pièce.",
+      [
+        [
+          "Trois traces",
+          "À minuit, seule Véra patinait, dit tout le monde. Sur la glace, trois traces menaient jusqu’au centre.",
+          "⛸️ Patin artistique"
+        ],
+        [
+          "La patineuse Véra fait son programme",
+          "Chaque nuit, elle patine le même programme, sur la même musique. Hier, elle l’a patiné une minute plus court.",
+          "🎵 Boîte à musique"
+        ],
+        [
+          "Le trou dans la glace",
+          "Au centre de l’étang, il y a un trou dans la glace, pour que les poissons respirent. Une torche flottait dedans.",
+          "🔥 Torche"
+        ],
+        [
+          "Le lieutenant Dmitri ne sait pas patiner",
+          "Un officier de la garde qui ne sait pas patiner, dit-il. Ses patins viennent d’être aiguisés.",
+          "🪨 Pierre à aiguiser"
+        ],
+        [
+          "Le compositeur Sergueï sur la rive",
+          "Il jouait du violon sur la rive, avec ses gants. On ne joue pas du violon avec des gants.",
+          "🎻 Violon"
+        ],
+        [
+          "La remise",
+          "Dans la remise sont accrochés les patins de toute la famille. Un crochet est vide.",
+          "🪝 Crochet vide"
+        ],
+        [
+          "La gouvernante Mabel vient d’Angleterre",
+          "En Angleterre, personne ne patine, dit-elle. Sur la glace, elle a tracé un trois parfait.",
+          "🧣 Écharpe de laine"
+        ],
+        [
+          "Sous la glace",
+          "À travers la glace claire, on voit le fond de l’étang. Quelque chose y brille.",
+          "💍 Chevalière"
+        ]
+      ]
+    ],
+    "winterpaleis-4": [
+      "Chapitre IV · La salle des miroirs",
+      "Une semaine plus tard, la comtesse donne un second bal, dans la salle des miroirs, pour montrer que la maison continue. Cent miroirs et cent invités. Un reflet ne colle pas.",
+      "Les miroirs sont de nouveau droits et la porte derrière eux est fermée. Un reflet était bien réel, et tu sais de qui.",
+      "Dans la salle des miroirs, chacun apparaît deux fois, alors regarde bien qui était juste à côté de qui. Place d’abord le suspect qui a le moins de cases possibles ; le reste suit.",
+      [
+        [
+          "Cent miroirs",
+          "Dans la salle des miroirs, on voit chacun dix fois. Quelqu’un a vu le comte dans un miroir, après minuit.",
+          "🪞 Miroir à main"
+        ],
+        [
+          "La comtesse Elena en noir",
+          "Elle porte le deuil, comme il se doit. Sous la robe noire, elle porte la bleue du bal.",
+          "👗 Robe de bal"
+        ],
+        [
+          "Le reflet",
+          "Dans le miroir, un homme à moustache se tenait près de la porte. Près de la porte, il n’y avait personne.",
+          "🎩 Haut-de-forme"
+        ],
+        [
+          "La photographe Irina et les miroirs",
+          "Les miroirs et le flash ne vont pas ensemble, dit-elle. Pourtant, elle a photographié la salle, de derrière un rideau.",
+          "🎞️ Négatif"
+        ],
+        [
+          "Le lieutenant Dmitri et sa fiancée",
+          "Il a dansé une danse avec sa fiancée, la première depuis une semaine. Pendant toute la danse, il a regardé le miroir.",
+          "💐 Bouquet de corsage"
+        ],
+        [
+          "Le majordome Fiodor fait briller",
+          "Chaque matin, il fait briller cent miroirs. Sur l’un d’eux, il y avait une empreinte de doigt, à hauteur d’enfant.",
+          "🧽 Peau de chamois"
+        ],
+        [
+          "La porte derrière le miroir",
+          "Derrière le cinquantième miroir, il y a une porte qui mène à la bibliothèque. Quelqu’un la connaissait.",
+          "🚪 Porte-miroir"
+        ],
+        [
+          "Le compositeur Sergueï rejoue la valse",
+          "Au second bal, il joue la même valse. À la reprise, la comtesse regarde la porte.",
+          "📜 Carnet de bal"
+        ]
+      ]
+    ],
+    "winterpaleis-5": [
+      "Chapitre V · La promenade en traîneau",
+      "En février, toute la maison part sur la Neva gelée, dans des traîneaux aux harnais garnis de clochettes. Quatre traîneaux partent, trois reviennent.",
+      "Le quatrième traîneau est de retour dans la remise et les clochettes se taisent. Celui qui est rentré à pied te l’a raconté.",
+      "Sous les couvertures de fourrure, personne ne voit qui est assis à côté de lui. Commence par qui dit avoir été seul : ça écarte d’un coup tous les autres de sa pièce.",
+      [
+        [
+          "Quatre traîneaux",
+          "Quatre traîneaux, quatre chevaux, douze personnes sous des fourrures. Au palais, trois traîneaux sont arrivés.",
+          "🔔 Clochette de traîneau"
+        ],
+        [
+          "Le majordome Fiodor place tout le monde",
+          "Depuis quarante ans, il décide qui monte dans quel traîneau. Cette année, il a échangé deux noms.",
+          "📃 Plan des places"
+        ],
+        [
+          "Le quatrième traîneau",
+          "Le lendemain matin, le quatrième traîneau est devant la remise, sans cheval. Les couvertures sont sèches.",
+          "🐎 Harnais"
+        ],
+        [
+          "La patineuse Véra suit en patins",
+          "Elle a patiné à côté des traîneaux tout le long. À mi-chemin, elle était devant tout le monde.",
+          "🎀 Écharpe rouge"
+        ],
+        [
+          "Le trou dans la Neva",
+          "Sur la Neva, les pêcheurs creusent des trous dans la glace. Le quatrième traîneau est passé juste à côté de l’un d’eux, et personne n’a crié.",
+          "🎣 Ligne de pêche"
+        ],
+        [
+          "La gouvernante Mabel compte",
+          "À chaque arrêt, elle compte les enfants : c’est son travail. Elle a aussi compté les adultes, et il en manquait un.",
+          "📒 Carnet"
+        ],
+        [
+          "L’orfèvre Pavel reste à la maison",
+          "Il n’est pas venu, il avait du travail. Son établi était froid quand les traîneaux sont rentrés.",
+          "🛠️ Burin de graveur"
+        ],
+        [
+          "Qui était dans le quatrième traîneau",
+          "Deux personnes sont parties dans le quatrième traîneau. L’une d’elles est revenue à pied, les bottes sèches.",
+          "👢 Botte fourrée"
+        ]
+      ]
+    ],
+    "winterpaleis-6": [
+      "Chapitre VI · La lettre scellée",
+      "Un messager de la cour apporte une lettre pour le comte, scellée de cire rouge. Quelqu’un l’a déjà lue.",
+      "La lettre est de retour dans le tiroir, le sceau intact. Celui qui l’a lue le premier connaissait la troisième phrase depuis longtemps.",
+      "À partir d’ici, presque toutes les affaires se jouent sur le grand plateau de neuf cases sur neuf. Sers-toi du Crayon : écarte les cases impossibles et regarde ce qui reste.",
+      [
+        [
+          "Cire rouge",
+          "Le sceau de la cour est rouge et rond. Sur cette lettre, il a été fondu deux fois.",
+          "🔴 Cire à cacheter"
+        ],
+        [
+          "Le majordome Fiodor reçoit le messager",
+          "Du portail à la bibliothèque, il y a cinq minutes à pied. Avec la lettre, il en a mis vingt.",
+          "✉️ Lettre de la cour"
+        ],
+        [
+          "La comtesse Elena lit à voix haute",
+          "Elle lit la lettre à la famille. Elle saute une phrase.",
+          "👓 Face-à-main"
+        ],
+        [
+          "La bouilloire",
+          "La vapeur décolle un sceau. Dans la cuisine, la bouilloire était sur le feu à trois heures du matin.",
+          "🫖 Samovar"
+        ],
+        [
+          "Le lieutenant Dmitri connaît le sceau",
+          "Comme officier, il voit chaque semaine des lettres de la cour. Il sait comment reposer un sceau pareil.",
+          "🎖️ Médaille"
+        ],
+        [
+          "La photographe Irina dans la chambre noire",
+          "Dans sa chambre noire, une plaque de verre sèche. On y voit une lettre.",
+          "🧪 Révélateur"
+        ],
+        [
+          "Le compositeur Sergueï et la cour",
+          "La cour demande une valse pour le bal du printemps, dit la lettre. Sergueï le savait depuis une semaine.",
+          "🎶 Valse du printemps"
+        ],
+        [
+          "Ce qu’elle disait",
+          "Trois phrases, d’une belle écriture. La troisième parlait de l’héritage, et quelqu’un la connaissait déjà.",
+          "🪶 Plume d’oie"
+        ]
+      ]
+    ],
+    "winterpaleis-7": [
+      "Chapitre VII · La débâcle",
+      "En avril, la glace se rompt sur la Neva. Des blocs grands comme des maisons dérivent devant le palais vers la mer. Avec eux, un secret remonte à la surface.",
+      "La Neva coule de nouveau librement vers la mer. Ce que la glace a gardé tout l’hiver est maintenant sur ta table.",
+      "Le plateau s’agrandit et les déclarations se font plus rares. Si le rapport dit qu’une pièce était vide, toute cette pièce est exclue pour tout le monde.",
+      [
+        [
+          "La glace se rompt",
+          "Dans un fracas de coup de canon, la glace se rompt. Toute la maison court au quai.",
+          "🧊 Bloc de glace"
+        ],
+        [
+          "La chevalière",
+          "La bague de l’étang ne va pas au comte. Elle appartient à une main plus petite.",
+          "📏 Baguier"
+        ],
+        [
+          "La gouvernante Mabel écrit chez elle",
+          "Chaque semaine, elle écrit en Angleterre. Cette semaine, elle a écrit une lettre de huit pages, puis l’a déchirée.",
+          "📮 Timbre"
+        ],
+        [
+          "La remise est inondée",
+          "L’eau de fonte monte jusqu’aux essieux des voitures. Une malle ne flotte pas : elle est trop lourde.",
+          "🧳 Malle"
+        ],
+        [
+          "Le majordome Fiodor prend sa retraite",
+          "Après quarante ans, il veut rentrer dans son village. Son voyage est payé en or.",
+          "🪙 Rouble d’or"
+        ],
+        [
+          "La patineuse Véra s’en va",
+          "L’hiver prochain, elle patinera à Davos, aux frais du comte. Le comte avait dit qu’il ne paierait pas.",
+          "🎫 Billet de train"
+        ],
+        [
+          "L’orfèvre Pavel et le second œuf",
+          "Il travaille déjà à un second œuf. Il ressemble exactement au premier, jusqu’à la minuscule serrure.",
+          "🥚 Second œuf"
+        ],
+        [
+          "Ce qui remonte",
+          "Entre les blocs de glace dérive un coffret du comte. Dedans, une lettre, encore sèche.",
+          "🗃️ Coffret étanche"
+        ]
+      ]
+    ],
+    "winterpaleis-8": [
+      "Chapitre VIII · Le dernier bal",
+      "En mai, le palais ferme pour l’été et la famille part pour sa maison de campagne. Encore une valse sous les lustres, avec les mêmes visages qu’au réveillon.",
+      "Van Dam met sa toque de fourrure, s’incline devant la comtesse et monte dans la dernière voiture pour la gare. Les bougies sont éteintes et le nouveau siècle a commencé. Le dernier secret de l’ancien, c’est toi qui l’as résolu.",
+      "Les dernières affaires, presque toutes sur le grand plateau. Ne bloque pas sur le suspect le plus difficile : place d’abord les autres, et il ne reste souvent qu’une case pour le dernier.",
+      [
+        [
+          "Les housses",
+          "Fiodor met des housses blanches sur les fauteuils. Dans la bibliothèque, un fauteuil est sous sa housse depuis janvier.",
+          "🛋️ Housse"
+        ],
+        [
+          "La comtesse Elena hérite du palais",
+          "D’après la lettre de la cour, c’est elle qui hérite du palais. En décembre, elle avait déjà commandé des rideaux à son propre monogramme.",
+          "🧵 Monogramme"
+        ],
+        [
+          "Le lieutenant Dmitri se marie",
+          "Le mariage est en juin, dans la chapelle du palais. Il a demandé au prêtre d’avancer la date.",
+          "💌 Faire-part"
+        ],
+        [
+          "La photographe Irina fait la photo de groupe",
+          "Huit personnes devant l’escalier, pour le magazine. L’une d’elles ne regarde pas l’objectif, mais la bibliothèque.",
+          "🖼️ Photo de groupe"
+        ],
+        [
+          "Le compositeur Sergueï termine",
+          "Sa valse s’appelle maintenant Réveillon. La reprise de janvier n’y est plus.",
+          "🎹 Nouvelle partition"
+        ],
+        [
+          "L’orfèvre Pavel emballe l’œuf",
+          "L’œuf part à la campagne, dans une caisse pleine de paille. Pavel l’emballe lui-même et ne laisse personne regarder.",
+          "📦 Caisse de paille"
+        ],
+        [
+          "La gouvernante Mabel fait ses adieux",
+          "Après six ans, elle rentre en Angleterre. Les enfants lui offrent un dessin du réveillon.",
+          "🖍️ Dessin d’enfant"
+        ],
+        [
+          "Minuit, une dernière fois",
+          "L’horloge sonne minuit, comme au réveillon. Cette fois, personne ne se tient près de la porte de la bibliothèque.",
+          "🕰️ Horloge de parquet"
+        ]
+      ]
+    ],
+    "safarilodge": [
+      "Chapitre I · La grande migration",
+      "Twiga Lodge, Masaï Mara, août 1974. Un million de gnous passent devant le lodge, et toutes les tentes sont occupées. Après le feu de camp, le cinéaste animalier Rupert Vane gît dans la chambre noire, parmi ses bobines.",
+      "Le feu est éteint et les gnous poursuivent leur route dans le noir. La bobine 40 a toujours disparu, mais toi, tu sais qui a fermé la porte.",
+      "Un lodge, c’est une longue véranda entourée de tentes. Commence par qui dit dans quelle zone il était ; « juste à côté » de l’acacia, c’est seulement une case qui le touche par un côté, jamais en diagonale.",
+      [
+        [
+          "Après le feu de camp",
+          "À dix heures, tout le monde chantait encore autour du feu. À onze heures, une chaise était vide, et la porte de la chambre noire fermée.",
+          "🪵 Bois de feu"
+        ],
+        [
+          "La chambre noire",
+          "La lampe rouge était encore allumée. Les bobines étaient rangées dans l’ordre, sauf une.",
+          "🔴 Lampe inactinique"
+        ],
+        [
+          "La propriétaire Wambui frappe",
+          "Chaque soir, elle frappe à chaque porte pour souhaiter bonne nuit. À la chambre noire, personne n’a répondu.",
+          "🔑 Passe-partout"
+        ],
+        [
+          "Le guide Otieno et la dernière sortie",
+          "Cet après-midi-là, il a conduit le cinéaste jusqu’à la rivière. Ils sont rentrés une heure plus tard que prévu.",
+          "🚙 Carnet de sorties"
+        ],
+        [
+          "L’ingénieur du son Felix enregistre tout",
+          "Son magnétophone a tourné toute la soirée près du feu de camp. À dix heures et demie, la bande se tait pendant une minute.",
+          "📼 Bande sonore"
+        ],
+        [
+          "Le chef Hamisi et le café",
+          "Après le dîner, il sert le café, à la cannelle. La tasse du cinéaste était intacte dans la chambre noire.",
+          "☕ Tasse à café"
+        ],
+        [
+          "La dernière prise",
+          "Sur le clap, on lit : bobine 40, prise 12. La bobine 40 est introuvable.",
+          "🎬 Clap"
+        ],
+        [
+          "La biologiste Birgit rentre tard",
+          "Elle n’est revenue de ses lions qu’à minuit. Le moteur de sa jeep était froid.",
+          "📡 Antenne de repérage"
+        ]
+      ]
+    ],
+    "safarilodge-2": [
+      "Chapitre II · Le négatif",
+      "Felix développe les bobines que le cinéaste a laissées. Une bobine est prête. Sur la dernière image, il y a quelqu’un qui n’a rien à faire là.",
+      "Le négatif sèche, suspendu à une pince à linge. Qui est sur la photo, tu le sais maintenant. Pourquoi, pas encore.",
+      "Sous la véranda, tout le monde parle de tout le monde. Déclarations sur deux personnes : fixe d’abord l’une des deux.",
+      [
+        [
+          "La bobine 39",
+          "La bobine 39, ce sont des gnous, des gnous et encore des gnous. Sur la dernière image, il y a quelqu’un près de la rivière.",
+          "🎞️ Bobine 39"
+        ],
+        [
+          "L’ingénieur du son Felix développe",
+          "Il travaille avec le cinéaste depuis dix ans. Il sait quelle bobine manque sans compter.",
+          "🧪 Bain de développement"
+        ],
+        [
+          "La journaliste Amina veut un tirage",
+          "Pour son journal, elle veut une photo de la migration. Elle a demandé la dernière image, pas un gnou.",
+          "📰 Coupure de presse"
+        ],
+        [
+          "La loupe",
+          "Sous la loupe, l’homme sur la photo est petit, mais pas son chapeau. Une seule personne au lodge porte un chapeau comme celui-là.",
+          "🔍 Loupe"
+        ],
+        [
+          "Le guide Otieno connaît l’endroit",
+          "Il reconnaît le méandre de la rivière sur la photo. Aucun touriste n’y va, dit-il, seulement les guides.",
+          "🗺️ Carte du Mara"
+        ],
+        [
+          "Le pilote Kiprono a survolé l’endroit",
+          "Cet après-midi-là, il a volé bas au-dessus de la rivière, pour les clients. Il a vu une jeep qui n’avait rien à faire là.",
+          "✈️ Carnet de vol"
+        ],
+        [
+          "La vétérinaire Njeri connaît la clôture",
+          "Derrière l’homme, il y a une clôture de la réserve. Ce portail est fermé à clé depuis la semaine dernière, et c’est elle qui a la clé.",
+          "🔒 Cadenas"
+        ],
+        [
+          "Celui qui n’avait rien à faire là",
+          "Sur la photo, il y a quelqu’un qui était malade au lit ce jour-là, à l’en croire. Il n’y a pas de médecin au lodge.",
+          "📝 Avis de maladie"
+        ]
+      ]
+    ],
+    "safarilodge-3": [
+      "Chapitre III · Le point d’eau",
+      "Depuis la tour de guet, on voit le point d’eau. La nuit, tout le monde vient boire : des éléphants, des zèbres, un lion. Dans la boue, il y a aussi des empreintes de chaussures.",
+      "Les animaux reviennent boire et la boue sèche au soleil. La piste de la chaussure mène maintenant jusqu’à ton bureau.",
+      "Au point d’eau, tout le monde regarde les animaux, pas les autres. Qui dit où il n’était pas t’apprend quelque chose, lui aussi : raye tout de suite cette zone.",
+      [
+        [
+          "Des empreintes de chaussures",
+          "Dans la boue, il y a des traces d’éléphant, de zèbre et de lion. Et d’une chaussure, pointure trente-sept.",
+          "👞 Moulage en plâtre"
+        ],
+        [
+          "La biologiste Birgit dans la tour",
+          "Chaque nuit, elle compte les lions au point d’eau. Cette nuit, elle en a compté trois, et une lampe de poche.",
+          "🔦 Lampe de poche"
+        ],
+        [
+          "Le guide Otieno lit les traces",
+          "Il lit les traces comme d’autres lisent le journal. Cette piste allait du point d’eau à la chambre noire, dit-il.",
+          "🐾 Guide des traces"
+        ],
+        [
+          "La lampe sur la tour",
+          "Une lampe sur la tour éclaire le point d’eau pour les clients. À deux heures, elle s’est éteinte, puis rallumée.",
+          "💡 Lampe de la tour"
+        ],
+        [
+          "Le chef Hamisi va chercher de l’eau",
+          "Pour la cuisine, il pompe l’eau du puits, pas celle du point d’eau. Pourtant, ses bottes étaient pleines de boue.",
+          "🥾 Botte en caoutchouc"
+        ],
+        [
+          "La journaliste Amina enregistre",
+          "La nuit, son magnétophone à cassettes était posé sur la tour. On entend un éléphant, et une femme qui dit : maintenant.",
+          "📼 Cassette"
+        ],
+        [
+          "La vétérinaire Njeri attend",
+          "Chaque nuit, un rhinocéros avec un émetteur à la patte vient boire ici. Cette nuit, il n’est pas venu.",
+          "📟 Émetteur"
+        ],
+        [
+          "Pointure trente-sept",
+          "Au lodge, trois personnes chaussent du trente-sept. L’une d’elles marche toujours pieds nus.",
+          "👟 Chaussure en toile"
+        ]
+      ]
+    ],
+    "safarilodge-4": [
+      "Chapitre IV · Les longues pluies",
+      "Après la migration viennent les pluies, plus tôt et plus fortes que jamais. La piste d’atterrissage est inondée. Personne ne peut partir, personne ne peut arriver.",
+      "La pluie cesse et la piste sèche. Celui qui ne pouvait pas arriver était là depuis le début.",
+      "Sous la pluie, tout le monde est serré sous un même toit, alors regarde bien qui était juste à côté de qui. Place d’abord le suspect qui a le moins de cases possibles ; le reste suit.",
+      [
+        [
+          "La piste est inondée",
+          "Deux jours de pluie, et la piste est un lac. L’avion est planté là, de l’eau jusqu’aux roues.",
+          "📏 Jauge"
+        ],
+        [
+          "Le pilote Kiprono ne peut pas partir",
+          "Il doit aller à Nairobi, dit-il. Son sac porte déjà une étiquette pour une autre ville.",
+          "🏷️ Étiquette de bagage"
+        ],
+        [
+          "La propriétaire Wambui appelle Nairobi",
+          "Par la radio, elle signale huit clients bloqués. Ils sont neuf.",
+          "📻 Émetteur-récepteur"
+        ],
+        [
+          "Le chef Hamisi fait ses comptes",
+          "Avec cette pluie, il a de quoi nourrir tout le monde pendant dix jours. Au bout de trois jours, il n’y a plus de riz.",
+          "🍚 Sac de riz"
+        ],
+        [
+          "L’ingénieur du son Felix et la fuite",
+          "Le toit du garage fuit, juste au-dessus des caisses de film. Felix les y a posées pas plus tard qu’hier.",
+          "🧳 Caisse de film"
+        ],
+        [
+          "La journaliste Amina écrit",
+          "Elle ne peut pas envoyer son article, alors elle le réécrit trois fois. La troisième version ne parle pas de gnous.",
+          "🗒️ Bloc-notes"
+        ],
+        [
+          "Le guide Otieno connaît un chemin",
+          "Il y a une route par les collines, dit-il, même sous la pluie. Il ne l’a su qu’au bout de trois jours.",
+          "🧭 Boussole"
+        ],
+        [
+          "Personne n’arrive",
+          "Personne ne pouvait arriver au lodge. Pourtant, le quatrième jour, des traces fraîches menaient au garage, de l’extérieur vers l’intérieur.",
+          "☔ Parapluie"
+        ]
+      ]
+    ],
+    "safarilodge-5": [
+      "Chapitre V · Le vol en montgolfière",
+      "Un aérostier de Nairobi propose aux clients un vol, haut au-dessus de la plaine. Au lever du soleil, la montgolfière s’élève. Elle atterrit avec un passager de trop.",
+      "La montgolfière est pliée dans le garage. Le septième passager a un nom, et tu l’as noté.",
+      "Au-dessus de la plaine, chacun voit tout, sauf qui est à côté de lui. Commence par qui dit avoir été seul : ça écarte d’un coup tous les autres de sa zone.",
+      [
+        [
+          "Six places",
+          "La nacelle peut porter six personnes et l’aérostier. Après l’atterrissage, sept en sont descendues.",
+          "🧺 Nacelle"
+        ],
+        [
+          "Le pilote Kiprono regarde depuis le sol",
+          "Un pilote n’aime pas voler quand c’est un autre qui pilote. Il a regardé d’en bas, aux jumelles.",
+          "🔭 Jumelles"
+        ],
+        [
+          "La biologiste Birgit cherche ses lions",
+          "D’en haut, on voit toute une troupe d’un coup. Elle a vu un lion de moins, et une jeep de trop.",
+          "🦁 Carte de la troupe"
+        ],
+        [
+          "Les sacs de sable",
+          "Une montgolfière emporte des sacs de sable pour descendre. Il y en avait quatre ; il en fallait six.",
+          "⏳ Sac de sable"
+        ],
+        [
+          "La propriétaire Wambui compte les clients",
+          "Elle a inscrit six clients, six noms sur le formulaire. Le septième nom est ajouté au crayon.",
+          "📋 Formulaire d’inscription"
+        ],
+        [
+          "L’ingénieur du son Felix enregistre le vent",
+          "Au-dessus de la plaine, on n’entend que le brûleur. Sur sa bande, on entend une voix qui n’est pas celle de l’aérostier.",
+          "🎙️ Micro"
+        ],
+        [
+          "Le chef Hamisi prépare le petit-déjeuner",
+          "Après l’atterrissage, il y a un petit-déjeuner dans la plaine, pour six. Il avait préparé pour sept.",
+          "🥐 Panier du petit-déjeuner"
+        ],
+        [
+          "Le septième passager",
+          "Tout le monde a vu le septième passager descendre. Personne ne l’a vu monter.",
+          "🎟️ Billet de vol"
+        ]
+      ]
+    ],
+    "safarilodge-6": [
+      "Chapitre VI · Le médecin volant",
+      "Par un après-midi sans vent, un petit avion se pose sur la piste, une croix rouge sur la queue et un médecin à bord. Personne ne l’avait appelé.",
+      "Le petit avion repart avec une caisse vide. Celui qui a appelé le médecin ne l’a pas fait pour un malade, et maintenant, tu le sais.",
+      "À partir d’ici, presque toutes les affaires se jouent sur le grand plateau de neuf cases sur neuf. Sers-toi du Crayon : écarte les cases impossibles et regarde ce qui reste.",
+      [
+        [
+          "La croix rouge",
+          "Le petit avion vient de Nairobi, avec une caisse de médicaments. D’après la radio, personne au lodge n’avait appelé.",
+          "💊 Caisse de médicaments"
+        ],
+        [
+          "La vétérinaire Njeri connaît le médecin",
+          "Ils ont fait leurs études ensemble à Nairobi. Elle a fait comme si elle ne l’avait jamais vu.",
+          "🎓 Photo de promotion"
+        ],
+        [
+          "Le pilote Kiprono et l’appel",
+          "L’appel est passé par la radio de l’avion de Kiprono. Cet avion était fermé à clé toute la nuit.",
+          "🎧 Casque d’aviateur"
+        ],
+        [
+          "Le guide Otieno fait visiter",
+          "Le médecin voulait voir la chambre noire. Aucun médecin ne demande à voir une chambre noire.",
+          "🚪 Poignée de porte"
+        ],
+        [
+          "La journaliste Amina l’interroge",
+          "Elle a demandé au médecin qui était malade. Il a donné un nom : celui du cinéaste.",
+          "📝 Notes d’entretien"
+        ],
+        [
+          "Le chef Hamisi fait du thé",
+          "Au lodge, tout le monde boit le thé avec du lait et du sucre. Le médecin l’a bu noir, comme une seule personne ici.",
+          "🫖 Théière"
+        ],
+        [
+          "L’ordonnance",
+          "Le médecin a laissé une ordonnance au nom du lodge. C’est un somnifère, et il n’en reste plus.",
+          "📄 Ordonnance"
+        ],
+        [
+          "Qui l’a appelé",
+          "Quelqu’un a appelé le médecin avec un émetteur qui n’appartient pas au lodge. Les lions de Birgit en portent un pareil.",
+          "📡 Collier émetteur"
+        ]
+      ]
+    ],
+    "safarilodge-7": [
+      "Chapitre VII · Jamhuri Day",
+      "C’est le 12 décembre, Jamhuri Day. La fête de l’indépendance : de la musique, de la viande grillée et tout le lodge en congé. Presque tout le lodge.",
+      "L’orchestre joue le dernier morceau et le drapeau redescend. Qui n’était pas à la fête, tu le sais maintenant exactement.",
+      "Le plateau s’agrandit et la fête s’anime. Si le rapport dit qu’une zone était vide, toute cette zone est exclue pour tout le monde.",
+      [
+        [
+          "Le drapeau",
+          "À midi, on hisse le drapeau et tout le lodge chante l’hymne national. Il manquait une voix.",
+          "🇰🇪 Drapeau du Kenya"
+        ],
+        [
+          "Le chef Hamisi fait griller",
+          "Depuis six heures, une chèvre tourne à la broche. À dix heures, la broche s’est arrêtée, et Hamisi avait disparu.",
+          "🍖 Broche"
+        ],
+        [
+          "La propriétaire Wambui fait un discours",
+          "Onze ans d’indépendance, et dix ans de Twiga Lodge. Elle a remercié chacun par son nom, sauf une personne.",
+          "📜 Discours"
+        ],
+        [
+          "L’orchestre de Kisumu",
+          "Sous la véranda, un orchestre joue du benga. Le guitariste connaissait le cinéaste, et le cinéaste le connaissait.",
+          "🎸 Guitare"
+        ],
+        [
+          "Le guide Otieno est de service",
+          "Un jour de fête, quelqu’un doit rester avec les clients. Otieno s’est proposé lui-même, pour la première fois en dix ans.",
+          "📅 Tableau de service"
+        ],
+        [
+          "La biologiste Birgit fait la fête",
+          "Il n’y a pas de Jamhuri Day au Danemark, dit-elle en riant. Elle a chanté l’hymne avec les autres, tous les couplets.",
+          "🎶 Feuille de chants"
+        ],
+        [
+          "L’ingénieur du son Felix enregistre la fête",
+          "Il a enregistré quatre heures de musique. Vers la moitié, il y a dix minutes de silence, et l’orchestre ne s’est jamais arrêté.",
+          "🎚️ Magnétophone"
+        ],
+        [
+          "Presque tout le lodge",
+          "Tout le lodge était en congé, et tout le monde était à la fête. Pourtant, le registre du garage note une sortie à trois heures.",
+          "🚙 Registre du garage"
+        ]
+      ]
+    ],
+    "safarilodge-8": [
+      "Chapitre VIII · Adieu à la plaine",
+      "En mars, le lodge ferme pour les longues pluies. Les gnous sont repartis vers le sud depuis longtemps. Encore une soirée autour du feu de camp, avec les mêmes visages qu’en août.",
+      "Van Dam monte le dernier dans le petit avion pour Nairobi et fait un seul signe de la main vers la véranda. Les gnous poursuivent leur route et le lodge retrouve le silence. La dernière prise est à toi.",
+      "Les dernières affaires, presque toutes sur le grand plateau. Ne bloque pas sur le suspect le plus difficile : place d’abord les autres, et il ne reste souvent qu’une case pour le dernier.",
+      [
+        [
+          "On replie les tentes",
+          "Chaque tente est roulée et rangée dans le garage. Dans la tente six, une bobine est cachée sous le tapis de sol.",
+          "⛺ Tapis de sol"
+        ],
+        [
+          "La bobine 40",
+          "Enfin : la bobine 40. Felix la développe dans la chambre noire, là où tout a commencé.",
+          "🎞️ Bobine 40"
+        ],
+        [
+          "Le pilote Kiprono choisit",
+          "Le dernier vol pour Nairobi a quatre places. Cinq personnes voulaient partir, et c’est lui qui a choisi.",
+          "🎫 Carte d’embarquement"
+        ],
+        [
+          "La vétérinaire Njeri compte les rhinocéros",
+          "Son comptage tombe de nouveau juste : sept rhinocéros, sept émetteurs. Dans le garage, elle a trouvé un huitième émetteur.",
+          "📟 Émetteur de rechange"
+        ],
+        [
+          "La journaliste Amina rend son article",
+          "La semaine prochaine, son reportage sur la migration paraît dans le journal. Sur le cinéaste, elle écrit une phrase. Elle est vraie.",
+          "📰 Épreuve"
+        ],
+        [
+          "L’ingénieur du son Felix termine le film",
+          "Sans le cinéaste, Felix termine le film. Il sait exactement quelle image doit être la dernière.",
+          "✂️ Ciseaux de monteur"
+        ],
+        [
+          "La propriétaire Wambui ferme à clé",
+          "Elle ferme chaque porte elle-même, comme chaque soir. Devant la chambre noire, elle reste longtemps immobile.",
+          "🔐 Trousseau de clés"
+        ],
+        [
+          "Le dernier feu de camp",
+          "Autour du feu, tout le monde chante une dernière fois. Une chaise reste vide, comme en août, et maintenant, tout le monde sait pourquoi.",
+          "🔥 Braises"
+        ]
+      ]
+    ],
+    "hanok": [
+      "Chapitre I · La lune des moissons",
+      "Le hanok Dalbit, automne 1795. C’est Chuseok : la lune des moissons est pleine et toute la famille est rentrée. Après la fête de la lune, le seigneur Yun Jae-ho gît dans le pavillon près de l’étang, à côté d’un poème de trois vers.",
+      "La lune descend derrière les montagnes. Celui qui était assis à côté du seigneur dans le pavillon figure sur ta liste.",
+      "Un hanok est une maison de cours et de portes coulissantes. Commence par qui dit dans quelle pièce il était ; « juste à côté » de la jarre de lune, c’est seulement une case qui la touche par un côté, jamais en diagonale.",
+      [
+        [
+          "La pleine lune",
+          "À Chuseok, tout le monde regarde la lune et fait un vœu. Le maître de maison, lui, regardait l’étang.",
+          "🏮 Lanterne en papier"
+        ],
+        [
+          "Le pavillon",
+          "Il était assis sur son coussin, le pinceau encore à la main. L’encre sur le rouleau était sèche.",
+          "🖌️ Pinceau"
+        ],
+        [
+          "Les songpyeon",
+          "Bok-sun a fait cent gâteaux de riz en forme de demi-lune. Dans son assiette, il y en avait trois, intacts.",
+          "🍡 Songpyeon"
+        ],
+        [
+          "Dame Kang et les clés",
+          "Elle a les clés de chaque coffre de la maison. Le pavillon n’a pas de serrure, dit-elle.",
+          "🗝️ Clé en laiton"
+        ],
+        [
+          "L’étudiant Sang-u s’incline",
+          "À Chuseok, le fils s’incline devant les ancêtres. Il s’est incliné une fois de moins.",
+          "🕯️ Bâton d’encens"
+        ],
+        [
+          "La ronde",
+          "Après le repas, les femmes dansent en ronde sous la lune, main dans la main. La ronde avait une main de moins que d’habitude.",
+          "🌾 Gerbe de riz"
+        ],
+        [
+          "Le peintre Dae-ho peint la fête",
+          "Il peint la famille sous la lune. Sur son esquisse, le seigneur est assis dans le pavillon, avec quelqu’un à côté de lui.",
+          "🖼️ Esquisse"
+        ],
+        [
+          "Trois vers",
+          "Un poème a quatre vers. Il en a écrit trois, et jamais le quatrième.",
+          "📜 Rouleau du poème"
+        ]
+      ]
+    ],
+    "hanok-2": [
+      "Chapitre II · Le poème inachevé",
+      "Trois jours après la fête, le rouleau du poème est de retour dans le pavillon. Il porte trois vers. Le quatrième, quelqu’un d’autre l’a écrit.",
+      "Le poème est achevé, mais pas d’une seule main. Qui a écrit le quatrième vers, tu le sais maintenant.",
+      "Dans un hanok, on entend tout à travers le papier des portes. Déclarations sur deux personnes : fixe d’abord l’une des deux.",
+      [
+        [
+          "Le quatrième vers",
+          "Le quatrième vers est d’une autre écriture. Il rime mieux que les trois autres.",
+          "📃 Papier de riz"
+        ],
+        [
+          "L’interprète Hak-su lit",
+          "Il lit le chinois, le mandchou et le coréen. Il a lu le quatrième vers et il a ri.",
+          "📖 Lexique"
+        ],
+        [
+          "La pierre à encre",
+          "Dans le bureau, il y a la pierre à encre du seigneur. Quelqu’un y a broyé de l’encre fraîche, après sa mort.",
+          "⚫ Bâton d’encre"
+        ],
+        [
+          "L’étudiant Sang-u sait écrire des poèmes",
+          "Pour l’examen, il écrit un poème chaque jour. Son écriture ressemble à celle de son père. Presque.",
+          "📓 Cahier d’exercices"
+        ],
+        [
+          "La brodeuse Yeon-i et la grue",
+          "Elle brode le quatrième vers sur son paravent, à côté de la grue. Elle le connaissait par cœur.",
+          "🧵 Fil de soie"
+        ],
+        [
+          "Le peintre Dae-ho appose son sceau",
+          "Chaque peintre appose un sceau rouge à côté de son œuvre. À côté du quatrième vers, il y a un demi-sceau.",
+          "🔴 Sceau rouge"
+        ],
+        [
+          "Dame Kang la reconnaît",
+          "Elle connaît l’écriture de tout le monde dans la maison. Celle-ci aussi, dit-elle, mais elle ne dit pas de qui.",
+          "✉️ Vieille lettre"
+        ],
+        [
+          "Qui l’a achevé",
+          "Le quatrième vers parle de l’étang. Seul quelqu’un qui était assis dans le pavillon savait comment la lune s’y reflétait.",
+          "🪷 Feuille de lotus"
+        ]
+      ]
+    ],
+    "hanok-3": [
+      "Chapitre III · Le mois du kimchi",
+      "En novembre, tout le village aide à préparer le kimchi pour l’hiver : des centaines de choux, du sel et du piment rouge, et des rangées de jarres sur la terrasse des jarres. Une jarre contient autre chose.",
+      "Les jarres sont fermées sur la terrasse et le kimchi commence à fermenter. Le paquet de la plus grande jarre est maintenant entre tes mains.",
+      "Quand on prépare le kimchi, chacun travaille ailleurs. Qui dit où il n’était pas t’apprend quelque chose, lui aussi : raye tout de suite cette pièce.",
+      [
+        [
+          "Cent choux",
+          "Cent choux salent dans la cour. Le matin, il y en avait quatre-vingt-dix-neuf.",
+          "🥬 Chou chinois"
+        ],
+        [
+          "La cuisinière Bok-sun goûte",
+          "Elle goûte chaque jarre avant qu’on la ferme. Il y en a une qu’elle n’avait pas le droit de goûter, a dit Dame Kang.",
+          "🥄 Cuillère en bois"
+        ],
+        [
+          "La terrasse des jarres",
+          "Vingt jarres alignées, la plus grande au fond. La plus grande est trop lourde pour ne contenir que du kimchi.",
+          "🏺 Jarre en terre"
+        ],
+        [
+          "Le colporteur Man-sik apporte le sel",
+          "Chaque année, il apporte le sel de la côte. Cette année, il est arrivé un jour trop tôt.",
+          "🧂 Sac de sel"
+        ],
+        [
+          "La guérisseuse Ok-hwa donne un coup de main",
+          "Elle coupe le gingembre et l’ail. Elle coupe aussi une racine qui n’a rien à faire dans le kimchi.",
+          "🫚 Racine de ginseng"
+        ],
+        [
+          "Les mains rouges",
+          "Le piment rougit les mains de tout le monde. Une personne avait les mains propres, et disait avoir aidé toute la journée.",
+          "🌶️ Piment rouge"
+        ],
+        [
+          "Le peintre Dae-ho dessine le travail",
+          "Il dessine les femmes au travail, rangée après rangée. Sur son dessin, il y a sept femmes. Elles étaient six.",
+          "📃 Dessin sur hanji"
+        ],
+        [
+          "Dans une jarre",
+          "Dans la plus grande jarre, sous le chou, il y a un paquet ficelé. Il est sec, et c’est un livre.",
+          "📦 Paquet de papier huilé"
+        ]
+      ]
+    ],
+    "hanok-4": [
+      "Chapitre IV · L’examen d’État",
+      "En hiver, Sang-u part à Hanyang pour l’examen d’État, comme son père trente ans plus tôt. Toute la maison attend le résultat. Quelqu’un connaissait déjà les questions.",
+      "Sang-u est reçu, avec le poème de son père. Qui lui a donné la question, tu le sais maintenant, et lui aussi.",
+      "Dans le bureau, tout le monde est serré au-dessus des livres, alors regarde bien qui était juste à côté de qui. Place d’abord le suspect qui a le moins de cases possibles ; le reste suit.",
+      [
+        [
+          "L’examen",
+          "Mille candidats, un sujet, une journée. Le sujet était un poème sur la lune.",
+          "📚 Les Quatre Livres"
+        ],
+        [
+          "L’étudiant Sang-u part",
+          "Il a emporté un pinceau, de l’encre et trois paires de chaussettes. Et un rouleau qu’il n’a montré à personne.",
+          "🧦 Chaussettes de coton"
+        ],
+        [
+          "La question",
+          "« Écris quatre vers sur un étang sous la pleine lune », disait la question. Exactement le poème du seigneur.",
+          "📋 Sujet d’examen"
+        ],
+        [
+          "L’interprète Hak-su connaît quelqu’un",
+          "Il connaît un homme à la cour qui rédige les questions. Il l’a encore vu il y a un mois, dit-il.",
+          "🏷️ Jeton de la cour"
+        ],
+        [
+          "Dame Kang paie",
+          "Un voyage à Hanyang coûte cher. Elle l’a payé avec de l’argent qui ne venait pas du coffre de la maison.",
+          "🪙 Pièce d’argent"
+        ],
+        [
+          "Le colporteur Man-sik apporte des nouvelles",
+          "Au marché, il a appris le résultat avant la famille. Il ne l’a dit qu’au bout de trois jours.",
+          "🧺 Panier de marchandises"
+        ],
+        [
+          "La brodeuse Yeon-i et le rouleau",
+          "Sur son paravent, il y a le poème du seigneur. Quelqu’un l’a recopié, en ajoutant le quatrième vers.",
+          "🪡 Aiguille à broder"
+        ],
+        [
+          "Qui connaissait les questions",
+          "La question était déjà dans la maison, trois mois avant l’examen. Seul le seigneur le savait, et une autre personne.",
+          "✉️ Lettre de Hanyang"
+        ]
+      ]
+    ],
+    "hanok-5": [
+      "Chapitre V · La première neige",
+      "La première neige tombe sur les montagnes et ferme le chemin de la vallée. Personne ne peut quitter la maison. Dans la salle de thé, une lumière brûle toute la nuit.",
+      "La neige fond sur le chemin. Qui était dans la salle de thé, et avec qui, tu le sais maintenant.",
+      "Sous la neige, tout le monde reste à l’intérieur, chacun dans sa pièce. Commence par qui dit avoir été seul : ça écarte d’un coup tous les autres de sa pièce.",
+      [
+        [
+          "Le chemin est fermé",
+          "Un mètre de neige sur le chemin de la vallée. Dans la neige, devant le porche, une seule trace, vers l’intérieur.",
+          "🥿 Sandale de paille"
+        ],
+        [
+          "La cuisinière Bok-sun chauffe le sol",
+          "Sous le plancher, un feu brûle toute la nuit, pour la chaleur. Dans la salle de thé, le sol était froid.",
+          "🔥 Feu sous le plancher"
+        ],
+        [
+          "La lumière dans la salle de thé",
+          "Toute la nuit, une bougie a brûlé dans la salle de thé. À minuit, Yeon-i a vu deux ombres sur le papier.",
+          "🕯️ Bout de bougie"
+        ],
+        [
+          "La guérisseuse Ok-hwa reste",
+          "À cause de la neige, elle ne peut pas redescendre dans la vallée. Elle a dormi dans la chambre d’amis, dit-elle. Son lit n’était pas défait.",
+          "🛏️ Couverture pliée"
+        ],
+        [
+          "Le thé",
+          "Deux bols de thé dans la salle de thé, l’un vide, l’autre plein. Le plein est froid et amer.",
+          "🍵 Bol à thé"
+        ],
+        [
+          "Le peintre Dae-ho peint la neige",
+          "Il peint les montagnes sous la neige. Sur son tableau, une lumière brûle à une fenêtre qui n’existe pas.",
+          "🏔️ Paysage de neige"
+        ],
+        [
+          "L’interprète Hak-su lit à la bougie",
+          "Il a lu toute la nuit un livre de Pékin. Le livre parle des étoiles, et il regardait la neige.",
+          "🔭 Livre d’astronomie"
+        ],
+        [
+          "Deux ombres",
+          "L’une des ombres servait le thé. L’autre restait immobile, et portait un chapeau.",
+          "👒 Chapeau en crin"
+        ]
+      ]
+    ],
+    "hanok-6": [
+      "Chapitre VI · L’interprète de Pékin",
+      "L’interprète Hak-su rentre de l’ambassade à Pékin, avec une charrette pleine de livres et d’objets étranges. Il rapporte des lunettes, une horloge et un secret.",
+      "L’horloge sonne de nouveau douze coups, pas treize. Ce que l’interprète a rapporté, il te l’a remis.",
+      "À partir d’ici, presque toutes les affaires se jouent sur le grand plateau de neuf cases sur neuf. Sers-toi du Crayon : écarte les cases impossibles et regarde ce qui reste.",
+      [
+        [
+          "L’horloge",
+          "Une horloge d’Occident, qui sonne les heures toute seule. La première nuit, elle a sonné treize coups.",
+          "🕰️ Horloge occidentale"
+        ],
+        [
+          "L’interprète Hak-su déballe",
+          "Des livres, de l’encre, des lunettes et une horloge. La liste de la frontière mentionne encore une chose, qu’il n’a pas déballée.",
+          "📋 Liste de chargement"
+        ],
+        [
+          "Les lunettes",
+          "Les lunettes sont pour le seigneur, dit Hak-su, pour ses yeux. Le seigneur n’avait jamais demandé de lunettes.",
+          "👓 Lunettes rondes"
+        ],
+        [
+          "Dame Kang et la note",
+          "Elle paie tout ce que la maison achète. Pour l’horloge, elle n’a rien payé, et elle coûtait cher.",
+          "🧮 Boulier"
+        ],
+        [
+          "L’étudiant Sang-u veut aller à Pékin",
+          "Il veut partir avec la prochaine ambassade. Depuis un mois, il apprend le chinois en secret.",
+          "📖 Manuel de chinois"
+        ],
+        [
+          "Le colporteur Man-sik veut acheter",
+          "Il a offert une année entière de sel pour l’horloge. Hak-su a dit non, sans regarder.",
+          "💰 Bourse"
+        ],
+        [
+          "La guérisseuse Ok-hwa et le ginseng",
+          "Du ginseng est aussi venu de Pékin, meilleur que celui d’ici. Un paquet n’est pas pour la famille.",
+          "🌿 Paquet d’herbes"
+        ],
+        [
+          "Le secret",
+          "Dans le boîtier de l’horloge, il y a une lettre pliée. Elle est en coréen, mais elle a été écrite à Pékin.",
+          "✉️ Lettre pliée"
+        ]
+      ]
+    ],
+    "hanok-7": [
+      "Chapitre VII · Seollal",
+      "C’est Seollal, le Nouvel An lunaire. La famille porte des habits neufs, s’incline devant les aînés et joue au yut dans la cour. Quelqu’un triche.",
+      "Les bâtonnets sont rangés dans leur boîte et les cerfs-volants sont partis. Celui qui trichait ne joue plus.",
+      "Le plateau s’agrandit et la maison se remplit. Si le rapport dit qu’une pièce était vide, toute cette pièce est exclue pour tout le monde.",
+      [
+        [
+          "Le salut du Nouvel An",
+          "Le matin du Nouvel An, les enfants s’inclinent profondément devant les aînés. Dame Kang a reçu un salut de moins que d’habitude.",
+          "🍲 Bol de tteokguk"
+        ],
+        [
+          "Le yut",
+          "Quatre bâtonnets en l’air. Trois fois de suite, ils retombent du même côté.",
+          "🎲 Bâtonnets de yut"
+        ],
+        [
+          "La cuisinière Bok-sun sert",
+          "Un bol de tteokguk te fait vieillir d’un an. Bok-sun a servi dix bols pour neuf personnes.",
+          "🥣 Bol à soupe"
+        ],
+        [
+          "Le cerf-volant",
+          "À Seollal, on fait voler un cerf-volant chargé de ses soucis, puis on coupe la ficelle. Sur un cerf-volant, il y avait un nom.",
+          "🪁 Cerf-volant"
+        ],
+        [
+          "La brodeuse Yeon-i est fiancée",
+          "Au Nouvel An, elle apprend qui elle va épouser : un homme de Hanyang. Elle connaissait son nom avant que quiconque le prononce.",
+          "💍 Alliances"
+        ],
+        [
+          "Le peintre Dae-ho joue aussi",
+          "Pour la première fois en dix ans, il joue au yut, et il gagne tout. Ses bâtonnets sont plus lourds d’un côté.",
+          "🪵 Bâtonnet lesté"
+        ],
+        [
+          "L’interprète Hak-su compte les années",
+          "À Pékin, ce n’est pas la même année, dit-il : le calendrier est différent. Pourtant, sa lettre portait la date d’ici.",
+          "📅 Calendrier lunaire"
+        ],
+        [
+          "Quelqu’un triche",
+          "Qui triche au yut finit quand même par perdre. C’est ce que disait toujours le seigneur.",
+          "⚪ Pion"
+        ]
+      ]
+    ],
+    "hanok-8": [
+      "Chapitre VIII · Fleurs dans la montagne",
+      "En avril, les azalées teintent les montagnes de rose. Encore une soirée de thé dans le pavillon, avec les mêmes visages que le soir de la lune des moissons.",
+      "Van Dam met son chapeau, s’incline devant Dame Kang et descend vers la vallée entre les azalées. La lune est de nouveau pleine au-dessus des montagnes. Le poème est achevé, et c’est toi qui en as écrit le dernier vers.",
+      "Les dernières affaires, presque toutes sur le grand plateau. Ne bloque pas sur le suspect le plus difficile : place d’abord les autres, et il ne reste souvent qu’une case pour le dernier.",
+      [
+        [
+          "Les galettes aux azalées",
+          "Au printemps, on fait de petites galettes avec une fleur d’azalée dessus. Il en manquait une, et elle était dans le pavillon.",
+          "🌸 Galette aux azalées"
+        ],
+        [
+          "Dame Kang lit le rouleau",
+          "Elle lit le poème à voix haute, les quatre vers. Au quatrième, sa voix ne tremble pas.",
+          "🎐 Carillon à vent"
+        ],
+        [
+          "L’étudiant Sang-u devient fonctionnaire",
+          "Il obtient un poste dans la capitale, avec le poème de son père pour preuve. Demain, il part, seul.",
+          "📃 Lettre de nomination"
+        ],
+        [
+          "La guérisseuse Ok-hwa apporte des herbes",
+          "Chaque printemps, elle apporte des herbes pour toute l’année. Cette année, elle en a apporté une de moins, pour un homme de moins.",
+          "🧺 Panier d’herbes"
+        ],
+        [
+          "Le colporteur Man-sik revient",
+          "Il apporte des marchandises et des nouvelles de la vallée. Les nouvelles parlent de cette maison, et elles sont vraies.",
+          "🎒 Hotte de portage"
+        ],
+        [
+          "La cuisinière Bok-sun ouvre la dernière jarre",
+          "Le dernier kimchi de l’hiver. Au fond de la jarre, il n’y a plus rien, et c’est très bien ainsi.",
+          "🏺 Jarre vide"
+        ],
+        [
+          "Le peintre Dae-ho termine",
+          "Son tableau de la fête de la lune est fini. Dans le pavillon, le seigneur est assis, et personne à côté de lui.",
+          "🖼️ Tableau de la lune"
+        ],
+        [
+          "Le dernier bol de thé",
+          "Là où tout a commencé, dans le pavillon près de l’étang. La lune se reflète dans l’eau, exactement comme dans le quatrième vers.",
+          "🫖 Théière en céladon"
+        ]
+      ]
     ]
   },
 
@@ -7965,6 +11529,70 @@
         "le": "la zone",
         "un": "une zone",
         "ce": "cette zone"
+      },
+      "oceaanstomer": {
+        "rw": "zone",
+        "rws": "zones",
+        "gender": "f",
+        "le": "la zone",
+        "un": "une zone",
+        "ce": "cette zone"
+      },
+      "ryokan": {
+        "rw": "zone",
+        "rws": "zones",
+        "gender": "f",
+        "le": "la zone",
+        "un": "une zone",
+        "ce": "cette zone"
+      },
+      "fazenda": {
+        "rw": "zone",
+        "rws": "zones",
+        "gender": "f",
+        "le": "la zone",
+        "un": "une zone",
+        "ce": "cette zone"
+      },
+      "zeppelin": {
+        "rw": "zone",
+        "rws": "zones",
+        "gender": "f",
+        "le": "la zone",
+        "un": "une zone",
+        "ce": "cette zone"
+      },
+      "poolstation": {
+        "rw": "zone",
+        "rws": "zones",
+        "gender": "f",
+        "le": "la zone",
+        "un": "une zone",
+        "ce": "cette zone"
+      },
+      "winterpaleis": {
+        "rw": "pièce",
+        "rws": "pièces",
+        "gender": "f",
+        "le": "la pièce",
+        "un": "une pièce",
+        "ce": "cette pièce"
+      },
+      "safarilodge": {
+        "rw": "zone",
+        "rws": "zones",
+        "gender": "f",
+        "le": "la zone",
+        "un": "une zone",
+        "ce": "cette zone"
+      },
+      "hanok": {
+        "rw": "pièce",
+        "rws": "pièces",
+        "gender": "f",
+        "le": "la pièce",
+        "un": "une pièce",
+        "ce": "cette pièce"
       }
     },
     "templates": {
@@ -8876,6 +12504,406 @@
           "the": "la réserve",
           "in": "dans la réserve"
         }
+      },
+      "oceaanstomer": {
+        "Promenadedek": {
+          "the": "le pont-promenade",
+          "in": "sur le pont-promenade"
+        },
+        "Balzaal": {
+          "the": "la salle de bal",
+          "in": "dans la salle de bal"
+        },
+        "Rookkamer": {
+          "the": "le fumoir",
+          "in": "dans le fumoir"
+        },
+        "Eetzaal": {
+          "the": "la salle à manger",
+          "in": "dans la salle à manger"
+        },
+        "Suite": {
+          "the": "la suite",
+          "in": "dans la suite"
+        },
+        "Machinekamer": {
+          "the": "la salle des machines",
+          "in": "dans la salle des machines"
+        },
+        "Brug": {
+          "the": "la passerelle",
+          "in": "sur la passerelle"
+        },
+        "Radiokamer": {
+          "the": "la salle radio",
+          "in": "dans la salle radio"
+        },
+        "Kombuis": {
+          "the": "la coquerie",
+          "in": "dans la coquerie"
+        },
+        "Ruim": {
+          "the": "la cale",
+          "in": "dans la cale"
+        },
+        "Bibliotheek": {
+          "the": "la bibliothèque",
+          "in": "dans la bibliothèque"
+        },
+        "Serre": {
+          "the": "le jardin d’hiver",
+          "in": "dans le jardin d’hiver"
+        }
+      },
+      "ryokan": {
+        "Gastenkamer": {
+          "the": "la chambre",
+          "in": "dans la chambre"
+        },
+        "Onsen": {
+          "the": "l’onsen",
+          "in": "dans l’onsen"
+        },
+        "Theehuis": {
+          "the": "le pavillon de thé",
+          "in": "dans le pavillon de thé"
+        },
+        "Tuin": {
+          "the": "le jardin",
+          "in": "dans le jardin"
+        },
+        "Keuken": {
+          "the": "la cuisine",
+          "in": "dans la cuisine"
+        },
+        "Veranda": {
+          "the": "la véranda",
+          "in": "sous la véranda"
+        },
+        "Hal": {
+          "the": "l’entrée",
+          "in": "dans l’entrée"
+        },
+        "Eetzaal": {
+          "the": "la salle à manger",
+          "in": "dans la salle à manger"
+        },
+        "Bamboebos": {
+          "the": "la bambouseraie",
+          "in": "dans la bambouseraie"
+        },
+        "Voorraadkamer": {
+          "the": "la réserve",
+          "in": "dans la réserve"
+        },
+        "Steiger": {
+          "the": "le ponton",
+          "in": "sur le ponton"
+        },
+        "Wasruimte": {
+          "the": "la salle d’eau",
+          "in": "dans la salle d’eau"
+        }
+      },
+      "fazenda": {
+        "Droogvloer": {
+          "the": "l’aire de séchage",
+          "in": "sur l’aire de séchage"
+        },
+        "Koffieveld": {
+          "the": "le champ de café",
+          "in": "dans le champ de café"
+        },
+        "Pakhuis": {
+          "the": "l’entrepôt",
+          "in": "dans l’entrepôt"
+        },
+        "Branderij": {
+          "the": "la brûlerie",
+          "in": "dans la brûlerie"
+        },
+        "Veranda": {
+          "the": "la véranda",
+          "in": "sous la véranda"
+        },
+        "Kapel": {
+          "the": "la chapelle",
+          "in": "dans la chapelle"
+        },
+        "Stal": {
+          "the": "l’écurie",
+          "in": "dans l’écurie"
+        },
+        "Keuken": {
+          "the": "la cuisine",
+          "in": "dans la cuisine"
+        },
+        "Eetkamer": {
+          "the": "la salle à manger",
+          "in": "dans la salle à manger"
+        },
+        "Salon": {
+          "the": "le salon",
+          "in": "dans le salon"
+        },
+        "Studeerkamer": {
+          "the": "le bureau",
+          "in": "dans le bureau"
+        },
+        "Serre": {
+          "the": "la serre",
+          "in": "dans la serre"
+        }
+      },
+      "zeppelin": {
+        "Salon": {
+          "the": "le salon",
+          "in": "dans le salon"
+        },
+        "Eetzaal": {
+          "the": "la salle à manger",
+          "in": "dans la salle à manger"
+        },
+        "Slaapcabine": {
+          "the": "la cabine",
+          "in": "dans la cabine"
+        },
+        "Kombuis": {
+          "the": "la cuisine",
+          "in": "dans la cuisine"
+        },
+        "Bar": {
+          "the": "le bar",
+          "in": "au bar"
+        },
+        "Kaartenkamer": {
+          "the": "la salle des cartes",
+          "in": "dans la salle des cartes"
+        },
+        "Radiokamer": {
+          "the": "la salle radio",
+          "in": "dans la salle radio"
+        },
+        "Stuurgondel": {
+          "the": "la timonerie",
+          "in": "dans la timonerie"
+        },
+        "Motorgondel": {
+          "the": "la nacelle moteur",
+          "in": "dans la nacelle moteur"
+        },
+        "Loopbrug": {
+          "the": "la coursive",
+          "in": "dans la coursive"
+        },
+        "Postkamer": {
+          "the": "la salle du courrier",
+          "in": "dans la salle du courrier"
+        },
+        "Uitkijkpost": {
+          "the": "la vigie",
+          "in": "à la vigie"
+        }
+      },
+      "poolstation": {
+        "Radiokamer": {
+          "the": "la salle radio",
+          "in": "dans la salle radio"
+        },
+        "Kennel": {
+          "the": "le chenil",
+          "in": "dans le chenil"
+        },
+        "Laboratorium": {
+          "the": "le laboratoire",
+          "in": "dans le laboratoire"
+        },
+        "Kantine": {
+          "the": "la cantine",
+          "in": "à la cantine"
+        },
+        "Slaapzaal": {
+          "the": "le dortoir",
+          "in": "dans le dortoir"
+        },
+        "Machinekamer": {
+          "the": "la machinerie",
+          "in": "dans la machinerie"
+        },
+        "Ziekenboeg": {
+          "the": "l’infirmerie",
+          "in": "à l’infirmerie"
+        },
+        "Voorraadkamer": {
+          "the": "la réserve",
+          "in": "dans la réserve"
+        },
+        "Werkplaats": {
+          "the": "l’atelier",
+          "in": "dans l’atelier"
+        },
+        "Weerhut": {
+          "the": "l’abri météo",
+          "in": "dans l’abri météo"
+        },
+        "Observatorium": {
+          "the": "l’observatoire",
+          "in": "dans l’observatoire"
+        },
+        "Sneeuwtunnel": {
+          "the": "le tunnel sous la neige",
+          "in": "dans le tunnel sous la neige"
+        }
+      },
+      "winterpaleis": {
+        "Balzaal": {
+          "the": "la salle de bal",
+          "in": "dans la salle de bal"
+        },
+        "Bibliotheek": {
+          "the": "la bibliothèque",
+          "in": "dans la bibliothèque"
+        },
+        "Kapel": {
+          "the": "la chapelle",
+          "in": "dans la chapelle"
+        },
+        "IJsbaan": {
+          "the": "la patinoire",
+          "in": "sur la patinoire"
+        },
+        "Serre": {
+          "the": "le jardin d’hiver",
+          "in": "dans le jardin d’hiver"
+        },
+        "Spiegelzaal": {
+          "the": "la salle des miroirs",
+          "in": "dans la salle des miroirs"
+        },
+        "Rookkamer": {
+          "the": "le fumoir",
+          "in": "dans le fumoir"
+        },
+        "Keuken": {
+          "the": "la cuisine",
+          "in": "dans la cuisine"
+        },
+        "Trappenhuis": {
+          "the": "le grand escalier",
+          "in": "dans le grand escalier"
+        },
+        "Eetzaal": {
+          "the": "la salle à manger",
+          "in": "dans la salle à manger"
+        },
+        "Garderobe": {
+          "the": "le vestiaire",
+          "in": "au vestiaire"
+        },
+        "Koetshuis": {
+          "the": "la remise",
+          "in": "dans la remise"
+        }
+      },
+      "safarilodge": {
+        "Veranda": {
+          "the": "la véranda",
+          "in": "sous la véranda"
+        },
+        "Waterpoel": {
+          "the": "le point d’eau",
+          "in": "au point d’eau"
+        },
+        "Kampvuur": {
+          "the": "le feu de camp",
+          "in": "près du feu de camp"
+        },
+        "Bar": {
+          "the": "le bar",
+          "in": "au bar"
+        },
+        "Slaaptent": {
+          "the": "la tente",
+          "in": "dans la tente"
+        },
+        "Landingsbaan": {
+          "the": "la piste d’atterrissage",
+          "in": "sur la piste d’atterrissage"
+        },
+        "Uitkijktoren": {
+          "the": "la tour de guet",
+          "in": "dans la tour de guet"
+        },
+        "Keuken": {
+          "the": "la cuisine",
+          "in": "dans la cuisine"
+        },
+        "Donkere kamer": {
+          "the": "la chambre noire",
+          "in": "dans la chambre noire"
+        },
+        "Kantoor": {
+          "the": "le bureau",
+          "in": "dans le bureau"
+        },
+        "Garage": {
+          "the": "le garage",
+          "in": "dans le garage"
+        },
+        "Eetzaal": {
+          "the": "la salle à manger",
+          "in": "dans la salle à manger"
+        }
+      },
+      "hanok": {
+        "Binnenplaats": {
+          "the": "la cour",
+          "in": "dans la cour"
+        },
+        "Theekamer": {
+          "the": "la salle de thé",
+          "in": "dans la salle de thé"
+        },
+        "Keuken": {
+          "the": "la cuisine",
+          "in": "dans la cuisine"
+        },
+        "Studeerkamer": {
+          "the": "le bureau",
+          "in": "dans le bureau"
+        },
+        "Paviljoen": {
+          "the": "le pavillon",
+          "in": "dans le pavillon"
+        },
+        "Bibliotheek": {
+          "the": "la bibliothèque",
+          "in": "dans la bibliothèque"
+        },
+        "Gastenkamer": {
+          "the": "la chambre d’amis",
+          "in": "dans la chambre d’amis"
+        },
+        "Kruidentuin": {
+          "the": "le jardin des simples",
+          "in": "dans le jardin des simples"
+        },
+        "Poort": {
+          "the": "le porche",
+          "in": "sous le porche"
+        },
+        "Voorouderhal": {
+          "the": "la salle des ancêtres",
+          "in": "dans la salle des ancêtres"
+        },
+        "Kruikenterras": {
+          "the": "la terrasse des jarres",
+          "in": "sur la terrasse des jarres"
+        },
+        "Voorraadkamer": {
+          "the": "la réserve",
+          "in": "dans la réserve"
+        }
       }
     },
     "furniture": {
@@ -9278,6 +13306,226 @@
         "a": "une longue-vue",
         "next": "à côté d’une longue-vue",
         "with": "avec une longue-vue"
+      },
+      "stuurrad": {
+        "a": "une roue de gouvernail",
+        "next": "à côté d’une roue de gouvernail",
+        "with": "avec une roue de gouvernail"
+      },
+      "scheepstelegraaf": {
+        "a": "un transmetteur d’ordres",
+        "next": "à côté d’un transmetteur d’ordres",
+        "with": "avec un transmetteur d’ordres"
+      },
+      "dekstoel": {
+        "a": "un transat",
+        "next": "à côté d’un transat",
+        "with": "avec un transat"
+      },
+      "scheepsbel": {
+        "a": "une cloche de bord",
+        "next": "à côté d’une cloche de bord",
+        "with": "avec une cloche de bord"
+      },
+      "hoedendoos": {
+        "a": "un carton à chapeau",
+        "next": "à côté d’un carton à chapeau",
+        "with": "avec un carton à chapeau"
+      },
+      "steenlantaarn": {
+        "a": "une lanterne de pierre",
+        "next": "à côté d’une lanterne de pierre",
+        "with": "avec une lanterne de pierre"
+      },
+      "tetsubin": {
+        "a": "une théière en fonte",
+        "next": "à côté d’une théière en fonte",
+        "with": "avec une théière en fonte"
+      },
+      "byobu": {
+        "a": "un paravent doré",
+        "next": "à côté d’un paravent doré",
+        "with": "avec un paravent doré"
+      },
+      "bonsai": {
+        "a": "un bonsaï",
+        "next": "à côté d’un bonsaï",
+        "with": "avec un bonsaï"
+      },
+      "wagasa": {
+        "a": "une ombrelle en papier",
+        "next": "à côté d’une ombrelle en papier",
+        "with": "avec une ombrelle en papier"
+      },
+      "futon": {
+        "a": "un futon",
+        "next": "à côté d’un futon",
+        "with": "avec un futon"
+      },
+      "koffiezak": {
+        "a": "un sac de café",
+        "next": "à côté d’un sac de café",
+        "with": "avec un sac de café"
+      },
+      "koffiemolen": {
+        "a": "un moulin à café",
+        "next": "à côté d’un moulin à café",
+        "with": "avec un moulin à café"
+      },
+      "koffiestruik": {
+        "a": "un caféier",
+        "next": "à côté d’un caféier",
+        "with": "avec un caféier"
+      },
+      "papegaai": {
+        "a": "un perroquet",
+        "next": "à côté d’un perroquet",
+        "with": "avec un perroquet"
+      },
+      "schommelstoel": {
+        "a": "un fauteuil à bascule",
+        "next": "à côté d’un fauteuil à bascule",
+        "with": "avec un fauteuil à bascule"
+      },
+      "luchtschroef": {
+        "a": "une hélice",
+        "next": "à côté d’une hélice",
+        "with": "avec une hélice"
+      },
+      "sextant": {
+        "a": "un sextant",
+        "next": "à côté d’un sextant",
+        "with": "avec un sextant"
+      },
+      "postzak": {
+        "a": "un sac postal",
+        "next": "à côté d’un sac postal",
+        "with": "avec un sac postal"
+      },
+      "wereldbol": {
+        "a": "un globe terrestre",
+        "next": "à côté d’un globe terrestre",
+        "with": "avec un globe terrestre"
+      },
+      "schrijfmachine": {
+        "a": "une machine à écrire",
+        "next": "à côté d’une machine à écrire",
+        "with": "avec une machine à écrire"
+      },
+      "zender": {
+        "a": "un poste radio",
+        "next": "à côté d’un poste radio",
+        "with": "avec un poste radio"
+      },
+      "sledehond": {
+        "a": "un chien de traîneau",
+        "next": "à côté d’un chien de traîneau",
+        "with": "avec un chien de traîneau"
+      },
+      "weerballon": {
+        "a": "un ballon-sonde",
+        "next": "à côté d’un ballon-sonde",
+        "with": "avec un ballon-sonde"
+      },
+      "sneeuwrups": {
+        "a": "une chenillette",
+        "next": "à côté d’une chenillette",
+        "with": "avec une chenillette"
+      },
+      "microscoop": {
+        "a": "un microscope",
+        "next": "à côté d’un microscope",
+        "with": "avec un microscope"
+      },
+      "balalaika": {
+        "a": "une balalaïka",
+        "next": "à côté d’une balalaïka",
+        "with": "avec une balalaïka"
+      },
+      "matroesjka": {
+        "a": "une matriochka",
+        "next": "à côté d’une matriochka",
+        "with": "avec une matriochka"
+      },
+      "juwelenei": {
+        "a": "un œuf de joaillerie",
+        "next": "à côté d’un œuf de joaillerie",
+        "with": "avec un œuf de joaillerie"
+      },
+      "schaatsen": {
+        "a": "une paire de patins",
+        "next": "à côté d’une paire de patins",
+        "with": "avec une paire de patins"
+      },
+      "ijszwaan": {
+        "a": "un cygne de glace",
+        "next": "à côté d’un cygne de glace",
+        "with": "avec un cygne de glace"
+      },
+      "kaviaar": {
+        "a": "une coupe de caviar",
+        "next": "à côté d’une coupe de caviar",
+        "with": "avec une coupe de caviar"
+      },
+      "safariwagen": {
+        "a": "une jeep de safari",
+        "next": "à côté d’une jeep de safari",
+        "with": "avec une jeep de safari"
+      },
+      "klamboe": {
+        "a": "une moustiquaire",
+        "next": "à côté d’une moustiquaire",
+        "with": "avec une moustiquaire"
+      },
+      "windzak": {
+        "a": "une manche à air",
+        "next": "à côté d’une manche à air",
+        "with": "avec une manche à air"
+      },
+      "acacia": {
+        "a": "un acacia",
+        "next": "à côté d’un acacia",
+        "with": "avec un acacia"
+      },
+      "giraf": {
+        "a": "une girafe en bois",
+        "next": "à côté d’une girafe en bois",
+        "with": "avec une girafe en bois"
+      },
+      "sisalmand": {
+        "a": "un panier en sisal",
+        "next": "à côté d’un panier en sisal",
+        "with": "avec un panier en sisal"
+      },
+      "gayageum": {
+        "a": "un gayageum",
+        "next": "à côté d’un gayageum",
+        "with": "avec un gayageum"
+      },
+      "kimchipot": {
+        "a": "une jarre à kimchi",
+        "next": "à côté d’une jarre à kimchi",
+        "with": "avec une jarre à kimchi"
+      },
+      "janggu": {
+        "a": "un tambour",
+        "next": "à côté d’un tambour",
+        "with": "avec un tambour"
+      },
+      "maanvaas": {
+        "a": "une jarre de lune",
+        "next": "à côté d’une jarre de lune",
+        "with": "avec une jarre de lune"
+      },
+      "inktsteen": {
+        "a": "une pierre à encre",
+        "next": "à côté d’une pierre à encre",
+        "with": "avec une pierre à encre"
+      },
+      "theetafel": {
+        "a": "une table à thé",
+        "next": "à côté d’une table à thé",
+        "with": "avec une table à thé"
       }
     }
   }
