@@ -179,6 +179,38 @@ const IAP_TEXT = {
   'nl.crimsonledger.app.world.vuurtoren': {
     'nl-NL': ['Vuurtoren Grauwkaap', '64 zaken in acht delen, eigen cast.'],
     'en-US': ['Greycape Lighthouse', '64 cases in eight parts, own cast.']
+  },
+  'nl.crimsonledger.app.world.oceaanstomer': {
+    'nl-NL': ['SS Halcyon', '64 zaken in acht delen, eigen cast.'],
+    'en-US': ['SS Halcyon', '64 cases in eight parts, own cast.']
+  },
+  'nl.crimsonledger.app.world.ryokan': {
+    'nl-NL': ['Ryokan Tsukikage', '64 zaken in acht delen, eigen cast.'],
+    'en-US': ['Ryokan Tsukikage', '64 cases in eight parts, own cast.']
+  },
+  'nl.crimsonledger.app.world.fazenda': {
+    'nl-NL': ['Fazenda Boa Esperança', '64 zaken in acht delen, eigen cast.'],
+    'en-US': ['Fazenda Boa Esperança', '64 cases in eight parts, own cast.']
+  },
+  'nl.crimsonledger.app.world.zeppelin': {
+    'nl-NL': ['Luchtschip Cirrus', '64 zaken in acht delen, eigen cast.'],
+    'en-US': ['The Airship Cirrus', '64 cases in eight parts, own cast.']
+  },
+  'nl.crimsonledger.app.world.poolstation': {
+    'nl-NL': ['Poolstation Zuiderkruis', '64 zaken in acht delen, eigen cast.'],
+    'en-US': ['Southern Cross Station', '64 cases in eight parts, own cast.']
+  },
+  'nl.crimsonledger.app.world.winterpaleis': {
+    'nl-NL': ['Paleis Zvezdin', '64 zaken in acht delen, eigen cast.'],
+    'en-US': ['The Zvezdin Palace', '64 cases in eight parts, own cast.']
+  },
+  'nl.crimsonledger.app.world.safarilodge': {
+    'nl-NL': ['Twiga Lodge', '64 zaken in acht delen, eigen cast.'],
+    'en-US': ['Twiga Lodge', '64 cases in eight parts, own cast.']
+  },
+  'nl.crimsonledger.app.world.hanok': {
+    'nl-NL': ['Hanok Dalbit', '64 zaken in acht delen, eigen cast.'],
+    'en-US': ['Hanok Dalbit', '64 cases in eight parts, own cast.']
   }
 };
 

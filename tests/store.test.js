@@ -10,7 +10,7 @@ global.Themes = Themes; global.Progress = Progress; global.Store = Store;
 global.window = {}; global.document = undefined;
 
 check(Store.ownsWorld('landhuis') && Store.ownsWorld('piraten') && !Store.ownsWorld('hotel') && !Store.ownsWorld('skihut'), 'gratis: landhuis en piratenschip; de rest hoort bij de Pass of een pakket');
-check(Store.paidWorlds().length === 14 && Store.allIds().length === 17, 'veertien betaalde werelden, zeventien producten');
+check(Store.paidWorlds().length === 22 && Store.allIds().length === 25, 'tweeëntwintig betaalde werelden, vijfentwintig producten');
 check(!Store.available() && !Store.mock(), 'zonder app en zonder nep-winkel: niet te koop');
 check(Store.hintsLeft() === 3 && Store.canHint() && Store.hintLabel() === '3', 'drie gratis hints per dag');
 Store.useHint(); Store.useHint(); Store.useHint();

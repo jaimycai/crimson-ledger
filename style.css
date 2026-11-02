@@ -1723,6 +1723,54 @@ body.tutorial-mode #btn-share { display: none; }
 .board-grid[data-floor="kasseien"] .bcell.dark::before {
   background: radial-gradient(ellipse 45% 40% at 70% 30%, rgba(255, 255, 255, 0.30) 0 60%, transparent 63%), radial-gradient(ellipse 45% 40% at 25% 74%, rgba(255, 255, 255, 0.30) 0 60%, transparent 63%), rgba(60, 50, 40, 0.10);
 }
+.board-grid[data-floor="teakdek"] .bcell::before {
+  background: repeating-linear-gradient(180deg, rgba(30, 20, 10, 0.34) 0 1px, transparent 1px 20%), rgba(255, 240, 215, 0.34);
+}
+.board-grid[data-floor="teakdek"] .bcell.dark::before {
+  background: repeating-linear-gradient(180deg, rgba(30, 20, 10, 0.34) 0 1px, transparent 1px 20%), rgba(90, 55, 20, 0.08);
+}
+.board-grid[data-floor="tatami"] .bcell::before {
+  background: linear-gradient(rgba(38, 48, 32, 0.5) 0 2px, transparent 2px calc(100% - 2px), rgba(38, 48, 32, 0.5) calc(100% - 2px)), repeating-linear-gradient(90deg, rgba(110, 120, 50, 0.16) 0 1px, transparent 1px 3px), rgba(245, 238, 200, 0.36);
+}
+.board-grid[data-floor="tatami"] .bcell.dark::before {
+  background: linear-gradient(90deg, rgba(38, 48, 32, 0.5) 0 2px, transparent 2px calc(100% - 2px), rgba(38, 48, 32, 0.5) calc(100% - 2px)), repeating-linear-gradient(180deg, rgba(110, 120, 50, 0.16) 0 1px, transparent 1px 3px), rgba(110, 120, 50, 0.05);
+}
+.board-grid[data-floor="cementtegels"] .bcell::before {
+  background: radial-gradient(circle at 50% 50%, rgba(200, 150, 40, 0.45) 0 8%, transparent 9%), radial-gradient(circle at 50% 32%, rgba(160, 60, 40, 0.22) 0 13%, transparent 14%), radial-gradient(circle at 68% 50%, rgba(160, 60, 40, 0.22) 0 13%, transparent 14%), radial-gradient(circle at 50% 68%, rgba(160, 60, 40, 0.22) 0 13%, transparent 14%), radial-gradient(circle at 32% 50%, rgba(160, 60, 40, 0.22) 0 13%, transparent 14%), radial-gradient(circle at 0 0, rgba(25, 75, 95, 0.14) 0 20%, transparent 21%), radial-gradient(circle at 100% 0, rgba(25, 75, 95, 0.14) 0 20%, transparent 21%), radial-gradient(circle at 0 100%, rgba(25, 75, 95, 0.14) 0 20%, transparent 21%), radial-gradient(circle at 100% 100%, rgba(25, 75, 95, 0.14) 0 20%, transparent 21%), rgba(255, 250, 240, 0.4);
+}
+.board-grid[data-floor="cementtegels"] .bcell.dark::before {
+  background: radial-gradient(circle at 50% 50%, rgba(200, 150, 40, 0.45) 0 8%, transparent 9%), radial-gradient(circle at 50% 32%, rgba(160, 60, 40, 0.22) 0 13%, transparent 14%), radial-gradient(circle at 68% 50%, rgba(160, 60, 40, 0.22) 0 13%, transparent 14%), radial-gradient(circle at 50% 68%, rgba(160, 60, 40, 0.22) 0 13%, transparent 14%), radial-gradient(circle at 32% 50%, rgba(160, 60, 40, 0.22) 0 13%, transparent 14%), radial-gradient(circle at 0 0, rgba(25, 75, 95, 0.14) 0 20%, transparent 21%), radial-gradient(circle at 100% 0, rgba(25, 75, 95, 0.14) 0 20%, transparent 21%), radial-gradient(circle at 0 100%, rgba(25, 75, 95, 0.14) 0 20%, transparent 21%), radial-gradient(circle at 100% 100%, rgba(25, 75, 95, 0.14) 0 20%, transparent 21%), rgba(0, 0, 0, 0.03);
+}
+.board-grid[data-floor="aluminium"] .bcell::before {
+  background: radial-gradient(circle, rgba(70, 80, 92, 0.5) 0 0.9px, transparent 1.4px) 2px 2px / 6px 6px repeat-x, radial-gradient(circle, rgba(70, 80, 92, 0.5) 0 0.9px, transparent 1.4px) 2px calc(50% + 3px) / 6px 6px repeat-x, linear-gradient(rgba(70, 80, 92, 0.3) 1px, transparent 1px) 0 50% / 100% 50% no-repeat, linear-gradient(135deg, rgba(255, 255, 255, 0.55), rgba(225, 232, 240, 0.25));
+}
+.board-grid[data-floor="aluminium"] .bcell.dark::before {
+  background: radial-gradient(circle, rgba(70, 80, 92, 0.5) 0 0.9px, transparent 1.4px) 2px 2px / 6px 6px repeat-x, radial-gradient(circle, rgba(70, 80, 92, 0.5) 0 0.9px, transparent 1.4px) 2px calc(50% + 3px) / 6px 6px repeat-x, linear-gradient(rgba(70, 80, 92, 0.3) 1px, transparent 1px) 0 50% / 100% 50% no-repeat, linear-gradient(135deg, rgba(255, 255, 255, 0.22), rgba(60, 70, 85, 0.06));
+}
+.board-grid[data-floor="traanplaat"] .bcell::before {
+  background: radial-gradient(2.6px 0.9px at 50% 50%, rgba(70, 90, 110, 0.17) 0 70%, transparent 100%) 0 0 / 10px 10px, radial-gradient(2.6px 0.9px at 50% 50%, rgba(70, 90, 110, 0.17) 0 70%, transparent 100%) 5px 5px / 10px 10px, radial-gradient(0.9px 2.6px at 50% 50%, rgba(70, 90, 110, 0.17) 0 70%, transparent 100%) 5px 0 / 10px 10px, radial-gradient(0.9px 2.6px at 50% 50%, rgba(70, 90, 110, 0.17) 0 70%, transparent 100%) 0 5px / 10px 10px, rgba(255, 255, 255, 0.34);
+}
+.board-grid[data-floor="traanplaat"] .bcell.dark::before {
+  background: radial-gradient(2.6px 0.9px at 50% 50%, rgba(70, 90, 110, 0.17) 0 70%, transparent 100%) 0 0 / 10px 10px, radial-gradient(2.6px 0.9px at 50% 50%, rgba(70, 90, 110, 0.17) 0 70%, transparent 100%) 5px 5px / 10px 10px, radial-gradient(0.9px 2.6px at 50% 50%, rgba(70, 90, 110, 0.17) 0 70%, transparent 100%) 5px 0 / 10px 10px, radial-gradient(0.9px 2.6px at 50% 50%, rgba(70, 90, 110, 0.17) 0 70%, transparent 100%) 0 5px / 10px 10px, rgba(20, 40, 60, 0.05);
+}
+.board-grid[data-floor="intarsia"] .bcell::before {
+  background: repeating-linear-gradient(90deg, rgba(90, 50, 20, 0.10) 0 1px, transparent 1px 25%), rgba(255, 255, 255, 0.30);
+}
+.board-grid[data-floor="intarsia"] .bcell.dark::before {
+  background: linear-gradient(rgba(255, 255, 255, 0.20), rgba(255, 255, 255, 0.20)) center / 60% 60% no-repeat, linear-gradient(rgba(90, 50, 20, 0.08), rgba(90, 50, 20, 0.08)) center / 68% 68% no-repeat, rgba(90, 50, 20, 0.04);
+}
+.board-grid[data-floor="sisal"] .bcell::before {
+  background: repeating-linear-gradient(0deg, rgba(122, 82, 54, 0.10) 0 1.5px, transparent 1.5px 4px), rgba(255, 240, 215, 0.32);
+}
+.board-grid[data-floor="sisal"] .bcell.dark::before {
+  background: repeating-linear-gradient(90deg, rgba(122, 82, 54, 0.10) 0 1.5px, transparent 1.5px 4px), rgba(122, 82, 54, 0.05);
+}
+.board-grid[data-floor="hanji"] .bcell::before {
+  background: linear-gradient(rgba(150, 105, 40, 0.22) 1px, transparent 1px) 0 0 / 50% 50%, linear-gradient(rgba(150, 105, 40, 0.12) 1px, transparent 1px) 0 2.5px / 50% 50%, linear-gradient(90deg, rgba(150, 105, 40, 0.22) 1px, transparent 1px) 0 0 / 50% 50%, linear-gradient(90deg, rgba(150, 105, 40, 0.12) 1px, transparent 1px) 2.5px 0 / 50% 50%, linear-gradient(135deg, rgba(255, 244, 214, 0.42), rgba(255, 255, 255, 0.12));
+}
+.board-grid[data-floor="hanji"] .bcell.dark::before {
+  background: linear-gradient(rgba(150, 105, 40, 0.22) 1px, transparent 1px) 0 0 / 50% 50%, linear-gradient(rgba(150, 105, 40, 0.12) 1px, transparent 1px) 0 2.5px / 50% 50%, linear-gradient(90deg, rgba(150, 105, 40, 0.22) 1px, transparent 1px) 0 0 / 50% 50%, linear-gradient(90deg, rgba(150, 105, 40, 0.12) 1px, transparent 1px) 2.5px 0 / 50% 50%, rgba(150, 105, 40, 0.07);
+}
 .board-grid[data-floor="grid"] .bcell.dark::before {
   background:
     linear-gradient(rgba(255,255,255,0.3) 1px, transparent 1px) 0 0 / 100% 50%,
@@ -1958,6 +2006,14 @@ input, textarea { -webkit-user-select: text; user-select: text; }
 .map-karavaan { background: linear-gradient(45deg, rgba(14, 110, 115, 0.08) 25%, transparent 25% 75%, rgba(14, 110, 115, 0.08) 75%) 0 0 / 28px 28px, #F6ECDC; }
 .map-abdij    { background: linear-gradient(rgba(61, 74, 46, 0.08) 1px, transparent 1px) 0 0 / 100% 30px, linear-gradient(90deg, rgba(61, 74, 46, 0.08) 1px, transparent 1px) 15px 0 / 30px 60px, #EEF0EA; }
 .map-vuurtoren { background: repeating-linear-gradient(170deg, rgba(42, 77, 105, 0.07) 0 2px, transparent 2px 14px), #E8EEF2; }
+.map-oceaanstomer { background: repeating-linear-gradient(180deg, rgba(0, 64, 72, 0.08) 0 1.5px, transparent 1.5px 18px), linear-gradient(90deg, rgba(201, 162, 39, 0.10) 1px, transparent 1px) 0 0 / 90px 100%, #EAF1EF; }
+.map-ryokan   { background: linear-gradient(rgba(91, 42, 78, 0.07) 1px, transparent 1px) 0 0 / 60px 30px, linear-gradient(90deg, rgba(91, 42, 78, 0.07) 1px, transparent 1px) 0 0 / 60px 30px, radial-gradient(circle, rgba(226, 138, 165, 0.32) 0 2px, transparent 3px) 15px 15px / 60px 60px, #F6EEF0; }
+.map-fazenda  { background: radial-gradient(circle, rgba(217, 97, 74, 0.20) 0 2px, transparent 3px) 0 0 / 24px 24px, radial-gradient(circle, rgba(74, 44, 26, 0.12) 0 1.5px, transparent 2.5px) 12px 12px / 24px 24px, #F5EDE2; }
+.map-zeppelin { background: radial-gradient(circle, rgba(102, 90, 128, 0.18) 0 1.2px, transparent 2px) 0 0 / 16px 32px, linear-gradient(rgba(102, 90, 128, 0.07) 1px, transparent 1px) 0 0 / 100% 32px, #EEEFF4; }
+.map-poolstation { background: radial-gradient(circle, rgba(255, 255, 255, 0.95) 0 2px, transparent 3px) 0 0 / 30px 30px, repeating-linear-gradient(160deg, rgba(143, 227, 185, 0.12) 0 10px, transparent 10px 40px), #E8EEF6; }
+.map-winterpaleis { background: repeating-linear-gradient(45deg, rgba(160, 58, 106, 0.06) 0 1px, transparent 1px 16px), repeating-linear-gradient(-45deg, rgba(160, 58, 106, 0.06) 0 1px, transparent 1px 16px), radial-gradient(circle, rgba(255, 255, 255, 0.9) 0 1.5px, transparent 2.5px) 8px 8px / 32px 32px, #F4EDF1; }
+.map-safarilodge { background: repeating-linear-gradient(0deg, rgba(122, 90, 20, 0.07) 0 2px, transparent 2px 9px), repeating-linear-gradient(90deg, rgba(242, 166, 90, 0.10) 0 2px, transparent 2px 9px), #F6EBD8; }
+.map-hanok    { background: linear-gradient(rgba(69, 116, 95, 0.09) 1px, transparent 1px) 0 0 / 34px 34px, linear-gradient(90deg, rgba(69, 116, 95, 0.09) 1px, transparent 1px) 0 0 / 34px 34px, #F4F0E4; }
 .map-archief  { background: repeating-linear-gradient(180deg, rgba(44, 24, 16, 0.05) 0 1px, transparent 1px 22px), #F3EDE3; }
 .map-world.locked .mapart, .map-world.locked .mapprop { filter: grayscale(0.7); opacity: 0.7; }
 .map-banner { position: relative; aspect-ratio: 393 / 200; overflow: hidden; border-bottom: 2px solid #1A1108; }
