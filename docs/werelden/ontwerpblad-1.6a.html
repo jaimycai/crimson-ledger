@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ontwerpblad 1.6a</title>
+<!-- Design sheet for four worlds of 1.6 (Oceaanstomer, Ryokan, Koffiefazenda, Zeppelin). Data: ontwerp-1.6a.js; proof: bewijs-1.6a.js.
+     Copy of ontwerpblad.html; board, avatars and floor plan come from the app itself. ?w=<id> shows one world. -->
+<link rel="stylesheet" href="../../style.css">
+<style>
+  body { background: var(--bg-primary); color: var(--text-primary); margin: 0; font-family: 'Inter', system-ui, sans-serif; }
+  .sheet { max-width: 760px; margin: 0 auto; padding: 20px 16px 64px; }
+  .eyebrow { font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); font-weight: 700; margin: 0; }
+  h1 { font-family: 'Playfair Display', serif; font-size: 2rem; line-height: 1.1; margin: 6px 0 8px; }
+  .lead { color: var(--text-secondary); margin: 0 0 18px; font-size: 0.98rem; }
+  .jump { display: flex; gap: 8px; position: sticky; top: 0; z-index: 5; background: var(--bg-primary); padding: 8px 0; border-bottom: 1px solid var(--border-light); }
+  .jump a { flex: 1; text-align: center; padding: 9px 10px; border: 1.5px solid var(--border); border-radius: 999px; color: var(--text-primary); text-decoration: none; font-weight: 600; font-size: 0.9rem; background: var(--bg-card); }
+  .world { padding-top: 28px; scroll-margin-top: 56px; }
+  .banner { border-radius: 14px; padding: 18px 18px 16px; color: #FAF5EF; position: relative; overflow: hidden; }
+  .banner .icon { font-size: 2rem; line-height: 1; }
+  .banner h2 { color: #FAF5EF; font-family: 'Playfair Display', serif; font-size: 1.75rem; margin: 6px 0 4px; line-height: 1.1; }
+  .banner .tag { font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.02rem; margin: 0; opacity: 0.95; }
+  .banner .meta { font-size: 0.78rem; opacity: 0.85; margin-top: 10px; display: flex; flex-wrap: wrap; gap: 6px 14px; }
+  .ringdot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; vertical-align: -1px; margin-right: 4px; border: 1px solid rgba(255,255,255,0.6); }
+  h3 { font-family: 'Playfair Display', serif; font-size: 1.2rem; margin: 26px 0 10px; }
+  .intro { background: var(--bg-card); border: 1px solid var(--border-light); border-radius: 12px; padding: 14px 16px; margin-top: 14px; }
+  .intro p { margin: 0; line-height: 1.5; }
+  .intro .victim { margin-top: 10px; font-size: 0.86rem; color: var(--text-secondary); display: flex; align-items: center; gap: 8px; }
+  .intro .victim .av { width: 26px; height: 26px; background: #1A1108; border-radius: 6px; }
+  .boardwrap { background: var(--bg-card); border: 1px solid var(--border-light); border-radius: 12px; padding: 14px; }
+  .boardwrap .board-grid { width: min(100%, 420px); }
+  .boardwrap .cap { font-size: 0.8rem; color: var(--text-light); margin: 10px 0 0; text-align: center; }
+  .boardwrap .bcell { cursor: default; }
+  .rooms { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; }
+  .room { display: flex; align-items: center; gap: 10px; background: var(--bg-card); border: 1px solid var(--border-light); border-radius: 10px; padding: 8px 10px; font-size: 0.9rem; }
+  .room i { width: 26px; height: 26px; border-radius: 6px; border: 1px solid rgba(0,0,0,0.18); flex: none; }
+  .room span { min-width: 0; overflow-wrap: anywhere; hyphens: auto; }
+  .room small { color: var(--text-light); font-size: 0.74rem; display: block; }
+  .room.reuse small::after { content: ' · al vertaald'; }
+  .furn { display: grid; grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 8px; }
+  .furn div { background: var(--bg-card); border: 1px solid var(--border-light); border-radius: 10px; padding: 10px 4px 8px; text-align: center; font-size: 0.78rem; min-width: 0; }
+  .furn svg { width: 46px; height: 46px; display: block; margin: 0 auto 4px; }
+  .sus { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; }
+  .card { background: var(--bg-card); border: 1px solid var(--border-light); border-radius: 10px; padding: 10px 10px 10px; }
+  .card .top { display: flex; gap: 8px; align-items: center; }
+  .card .ava { width: 40px; height: 40px; border-radius: 50%; overflow: hidden; background: var(--sc); flex: none; outline: 1.5px solid var(--sc); outline-offset: 2px; }
+  .card .ava svg, .card .ava img { width: 100%; height: 100%; display: block; }
+  .card b { display: block; font-size: 0.88rem; line-height: 1.2; }
+  .card .who { font-size: 0.8rem; color: var(--text-secondary); margin: 8px 0 0; line-height: 1.35; }
+  .card details { margin-top: 8px; font-size: 0.76rem; color: var(--text-light); }
+  .card summary { cursor: pointer; color: var(--accent); font-weight: 600; }
+  .card details p { margin: 6px 0 0; line-height: 1.4; font-style: italic; }
+  .short { font-size: 0.72rem; color: var(--text-light); display: block; margin-top: 2px; }
+  .parts { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; counter-reset: deel; }
+  .parts > li { background: var(--bg-card); border: 1px solid var(--border-light); border-radius: 10px; padding: 10px 12px 10px 46px; position: relative; counter-increment: deel; }
+  .parts > li::before { content: counter(deel); position: absolute; left: 12px; top: 10px; width: 24px; height: 24px; border-radius: 50%; background: var(--accent); color: #FAF5EF; font-size: 0.8rem; font-weight: 700; display: grid; place-items: center; }
+  .parts > li > b { font-family: 'Playfair Display', serif; font-size: 1rem; display: block; }
+  .parts > li > span { font-size: 0.86rem; color: var(--text-secondary); }
+  .cases { list-style: none; margin: 10px 0 0; padding: 0; display: grid; gap: 7px; }
+  .cases li { display: grid; grid-template-columns: 24px 1fr; gap: 2px 8px; font-size: 0.84rem; line-height: 1.35; }
+  .cases .it { font-size: 1.05rem; line-height: 1.2; grid-row: span 2; }
+  .cases .ct { font-weight: 650; color: var(--text-primary); }
+  .cases .ct small { font-weight: 600; font-size: 0.68rem; letter-spacing: 0.04em; text-transform: uppercase; margin-left: 6px; color: var(--text-light); }
+  .cases .ct small.meester { color: var(--accent); }
+  .cases .cs { color: var(--text-secondary); }
+  .brief { margin: 10px 0 0; font-size: 0.8rem; color: var(--text-light); font-style: italic; }
+  .outro { font-family: 'Playfair Display', serif; font-style: italic; text-align: center; margin: 14px 8px 0; color: var(--text-secondary); }
+  .style-ref { display: flex; gap: 12px; align-items: center; background: var(--bg-card); border: 1px solid var(--border-light); border-radius: 12px; padding: 12px; margin-top: 10px; }
+  .style-ref img { width: 72px; height: 72px; border-radius: 50%; object-fit: cover; flex: none; }
+  .style-ref p { margin: 0; font-size: 0.86rem; color: var(--text-secondary); line-height: 1.4; }
+  .next { margin-top: 40px; background: var(--bg-secondary); border-radius: 14px; padding: 16px 18px; }
+  .next-h { font-family: 'Playfair Display', serif; font-size: 1.2rem; margin: 0 0 10px; }
+  .next ol { margin: 0; padding-left: 20px; line-height: 1.55; font-size: 0.92rem; }
+  /* new floor styles, also go into style.css */
+  .board-grid[data-floor="tegels"] .bcell::before {
+    background: linear-gradient(rgba(122,62,28,0.24) 1px, transparent 1px) 0 0 / 50% 50%, linear-gradient(90deg, rgba(122,62,28,0.24) 1px, transparent 1px) 0 0 / 50% 50%, rgba(255,236,214,0.32);
+  }
+  .board-grid[data-floor="tegels"] .bcell.dark::before {
+    background: linear-gradient(rgba(122,62,28,0.24) 1px, transparent 1px) 0 0 / 50% 50%, linear-gradient(90deg, rgba(122,62,28,0.24) 1px, transparent 1px) 0 0 / 50% 50%, rgba(122,62,28,0.06);
+  }
+  .board-grid[data-floor="parket"] .bcell::before {
+    background: repeating-linear-gradient(45deg, rgba(60,30,10,0.09) 0 1px, transparent 1px 7px), rgba(255,255,255,0.28);
+  }
+  .board-grid[data-floor="parket"] .bcell.dark::before {
+    background: repeating-linear-gradient(-45deg, rgba(60,30,10,0.09) 0 1px, transparent 1px 7px), rgba(60,30,10,0.04);
+  }
+  .board-grid[data-floor="zandsteen"] .bcell::before {
+    background: linear-gradient(rgba(122, 82, 54, 0.22) 1px, transparent 1px) 0 0 / 100% 50%, linear-gradient(90deg, rgba(122, 82, 54, 0.18) 1px, transparent 1px) 0 0 / 50% 100%, rgba(255, 238, 205, 0.32);
+  }
+  .board-grid[data-floor="zandsteen"] .bcell.dark::before {
+    background: linear-gradient(rgba(122, 82, 54, 0.22) 1px, transparent 1px) 0 0 / 100% 50%, linear-gradient(90deg, rgba(122, 82, 54, 0.18) 1px, transparent 1px) 25% 0 / 50% 100%, rgba(122, 82, 54, 0.05);
+  }
+  .board-grid[data-floor="ruiten"] .bcell::before {
+    background: repeating-linear-gradient(45deg, rgba(201, 162, 39, 0.22) 0 1px, transparent 1px 9px), repeating-linear-gradient(-45deg, rgba(201, 162, 39, 0.22) 0 1px, transparent 1px 9px), rgba(255, 255, 255, 0.3);
+  }
+  .board-grid[data-floor="ruiten"] .bcell.dark::before {
+    background: repeating-linear-gradient(45deg, rgba(201, 162, 39, 0.22) 0 1px, transparent 1px 9px), repeating-linear-gradient(-45deg, rgba(201, 162, 39, 0.22) 0 1px, transparent 1px 9px), rgba(0, 0, 0, 0.04);
+  }
+  /* new floor styles of 1.6a, also go into style.css after Jaimy's yes */
+  .board-grid[data-floor="teakdek"] .bcell::before {
+    background: repeating-linear-gradient(180deg, rgba(30, 20, 10, 0.34) 0 1px, transparent 1px 20%), rgba(255, 240, 215, 0.34);
+  }
+  .board-grid[data-floor="teakdek"] .bcell.dark::before {
+    background: repeating-linear-gradient(180deg, rgba(30, 20, 10, 0.34) 0 1px, transparent 1px 20%), rgba(90, 55, 20, 0.08);
+  }
+  .board-grid[data-floor="tatami"] .bcell::before {
+    background: linear-gradient(rgba(38, 48, 32, 0.5) 0 2px, transparent 2px calc(100% - 2px), rgba(38, 48, 32, 0.5) calc(100% - 2px)),
+      repeating-linear-gradient(90deg, rgba(110, 120, 50, 0.16) 0 1px, transparent 1px 3px), rgba(245, 238, 200, 0.36);
+  }
+  .board-grid[data-floor="tatami"] .bcell.dark::before {
+    background: linear-gradient(90deg, rgba(38, 48, 32, 0.5) 0 2px, transparent 2px calc(100% - 2px), rgba(38, 48, 32, 0.5) calc(100% - 2px)),
+      repeating-linear-gradient(180deg, rgba(110, 120, 50, 0.16) 0 1px, transparent 1px 3px), rgba(110, 120, 50, 0.05);
+  }
+  .board-grid[data-floor="cementtegels"] .bcell::before {
+    background: radial-gradient(circle at 50% 50%, rgba(200, 150, 40, 0.45) 0 8%, transparent 9%),
+      radial-gradient(circle at 50% 32%, rgba(160, 60, 40, 0.22) 0 13%, transparent 14%), radial-gradient(circle at 68% 50%, rgba(160, 60, 40, 0.22) 0 13%, transparent 14%),
+      radial-gradient(circle at 50% 68%, rgba(160, 60, 40, 0.22) 0 13%, transparent 14%), radial-gradient(circle at 32% 50%, rgba(160, 60, 40, 0.22) 0 13%, transparent 14%),
+      radial-gradient(circle at 0 0, rgba(25, 75, 95, 0.14) 0 20%, transparent 21%), radial-gradient(circle at 100% 0, rgba(25, 75, 95, 0.14) 0 20%, transparent 21%),
+      radial-gradient(circle at 0 100%, rgba(25, 75, 95, 0.14) 0 20%, transparent 21%), radial-gradient(circle at 100% 100%, rgba(25, 75, 95, 0.14) 0 20%, transparent 21%),
+      rgba(255, 250, 240, 0.4);
+  }
+  .board-grid[data-floor="cementtegels"] .bcell.dark::before {
+    background: radial-gradient(circle at 50% 50%, rgba(200, 150, 40, 0.45) 0 8%, transparent 9%),
+      radial-gradient(circle at 50% 32%, rgba(160, 60, 40, 0.22) 0 13%, transparent 14%), radial-gradient(circle at 68% 50%, rgba(160, 60, 40, 0.22) 0 13%, transparent 14%),
+      radial-gradient(circle at 50% 68%, rgba(160, 60, 40, 0.22) 0 13%, transparent 14%), radial-gradient(circle at 32% 50%, rgba(160, 60, 40, 0.22) 0 13%, transparent 14%),
+      radial-gradient(circle at 0 0, rgba(25, 75, 95, 0.14) 0 20%, transparent 21%), radial-gradient(circle at 100% 0, rgba(25, 75, 95, 0.14) 0 20%, transparent 21%),
+      radial-gradient(circle at 0 100%, rgba(25, 75, 95, 0.14) 0 20%, transparent 21%), radial-gradient(circle at 100% 100%, rgba(25, 75, 95, 0.14) 0 20%, transparent 21%),
+      rgba(0, 0, 0, 0.03);
+  }
+  .board-grid[data-floor="aluminium"] .bcell::before {
+    background: radial-gradient(circle, rgba(70, 80, 92, 0.5) 0 0.9px, transparent 1.4px) 2px 2px / 6px 6px repeat-x,
+      radial-gradient(circle, rgba(70, 80, 92, 0.5) 0 0.9px, transparent 1.4px) 2px calc(50% + 3px) / 6px 6px repeat-x,
+      linear-gradient(rgba(70, 80, 92, 0.3) 1px, transparent 1px) 0 50% / 100% 50% no-repeat,
+      linear-gradient(135deg, rgba(255, 255, 255, 0.55), rgba(225, 232, 240, 0.25));
+  }
+  .board-grid[data-floor="aluminium"] .bcell.dark::before {
+    background: radial-gradient(circle, rgba(70, 80, 92, 0.5) 0 0.9px, transparent 1.4px) 2px 2px / 6px 6px repeat-x,
+      radial-gradient(circle, rgba(70, 80, 92, 0.5) 0 0.9px, transparent 1.4px) 2px calc(50% + 3px) / 6px 6px repeat-x,
+      linear-gradient(rgba(70, 80, 92, 0.3) 1px, transparent 1px) 0 50% / 100% 50% no-repeat,
+      linear-gradient(135deg, rgba(255, 255, 255, 0.22), rgba(60, 70, 85, 0.06));
+  }
+  .card b { overflow-wrap: anywhere; hyphens: auto; -webkit-hyphens: auto; }
+  .eraline { display: block; margin-top: 6px; font-size: 0.76rem; color: var(--text-light); font-style: italic; }
+</style>
+</head>
+<body>
+<main class="sheet">
+  <p class="eyebrow">Crimson Ledger · ontwerpblad 1.6</p>
+  <h1 id="kop">Nieuwe werelden</h1>
+  <p class="lead" id="lead">Kijk per wereld en zeg ja, of wat anders moet.</p>
+  <nav class="jump" id="jump"></nav>
+  <div id="worlds"></div>
+  <section class="next">
+    <h2 class="next-h">Wat er per wereld gebeurt</h2>
+    <ol>
+      <li>Acht portretten in de vaste gravurestijl, 1,5 credit per stuk, pas na jouw ja.</li>
+      <li>64 zaken: titel, verhaaltje, bewijsstuk en een seed die de motor bewijst.</li>
+      <li>Alle teksten in 19 talen: per taal een vertaler en een tweede lezer.</li>
+      <li>Kaart, aankoop in App Store Connect, schermafbeeldingen en wat-is-nieuw.</li>
+    </ol>
+  </section>
+</main>
+<script src="../../avatars.js"></script>
+<script src="../../themes.js"></script>
+<script src="../../grammar.js"></script>
+<script src="../../floorplan.js"></script>
+<script src="ontwerp-1.6a.js"></script>
+<script>
+(() => {
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  // furniture icons of the new worlds are not in avatars.js yet: draw them from the sheet
+  const ICONS = {};
+  ONTWERP_16A.forEach(w => w.furniture.forEach(f => { ICONS[f.id] = f.icon; }));
+  const furnSvg = id => ICONS[id] ? `<svg viewBox="0 0 40 40" class="av av-furn" aria-hidden="true">${ICONS[id]}</svg>` : Avatars.furniture(id);
+  // titles of the new worlds, until they are added to TITLES in themes.js
+  const NEW_TITLES = new Set(ONTWERP_16A.flatMap(w => w.titles));
+  const shortName = label => { const p = label.split(/\s+/); while (p.length > 1 && NEW_TITLES.has(p[0].toLowerCase())) p.shift(); return Themes.shortName(p.join(' ')); };
+  const COUNT = ['nul', 'een', 'twee', 'drie', 'vier', 'vijf', 'zes', 'zeven', 'acht'];
+  const cap = s => s.charAt(0).toUpperCase() + s.slice(1);
+  // ?w=<id> shows one world (for the JPG per world), otherwise all four
+  const only = new URLSearchParams(location.search).get('w');
+  const shown = ONTWERP_16A.filter(w => !only || w.id === only);
+  document.getElementById('kop').textContent = shown.length === 1 ? shown[0].title : `${cap(COUNT[shown.length])} nieuwe werelden`;
+  document.getElementById('lead').textContent = `Wereld ${shown.map(w => w.nr).join(', ').replace(/, (\d+)$/, ' en $1')} van de acht nieuwe in 1.6. Kijk per wereld en zeg ja, of wat anders moet.`;
+  // room names that already exist in a released world are translated in all languages
+  const known = new Set(THEMES.flatMap(t => t.rooms.map(r => r.name)));
+  // a fixed seed per world, so the sheet always shows the same case (chosen so that every kind of furniture is on it)
+  const SEEDS = { oceaanstomer: 1934, ryokan: 1919, fazenda: 1934, zeppelin: 1934 };
+
+  const boardHtml = p => {
+    const roomAt = (x, y) => FloorPlan.roomOf(p.rooms, x, y);
+    const at = new Map(p.solution.map((c, i) => [FloorPlan.key(c.x, c.y), i]));
+    let html = '';
+    for (let y = 0; y < p.rows; y++) for (let x = 0; x < p.cols; x++) {
+      const room = roomAt(x, y), k = FloorPlan.key(x, y), edges = [];
+      if (!roomAt(x, y - 1) || roomAt(x, y - 1).id !== room.id) edges.push('wt');
+      if (!roomAt(x, y + 1) || roomAt(x, y + 1).id !== room.id) edges.push('wb');
+      if (!roomAt(x - 1, y) || roomAt(x - 1, y).id !== room.id) edges.push('wl');
+      if (!roomAt(x + 1, y) || roomAt(x + 1, y).id !== room.id) edges.push('wr');
+      const furn = p.furniture.get(k), who = at.get(k), isV = p.victim.x === x && p.victim.y === y;
+      let inner = '';
+      if (furn) inner += `<span class="bfurn">${furnSvg(furn)}</span>`;
+      if (isV) inner += `<span class="bvictim">${Avatars.victim()}</span>`;
+      if (who !== undefined) inner += `<span class="bsus">${Avatars.suspect(p.suspects[who], who)}</span><span class="bname" style="--sc:${p.suspects[who].color}">${esc(shortName(p.suspects[who].label))}</span>`;
+      html += `<div class="bcell${(x + y) % 2 === 0 ? ' dark' : ''} ${edges.join(' ')}${who !== undefined ? ' has-sus' : ''}${furn || isV ? ' occupied' : ''}" style="--room:${room.color}">${inner}</div>`;
+    }
+    p.rooms.forEach(room => {
+      const maxY = Math.max(...room.list.map(c => c.y));
+      const xs = room.list.filter(c => c.y === maxY).map(c => c.x);
+      const left = ((Math.min(...xs) + Math.max(...xs) + 1) / 2 / p.cols) * 100;
+      html += `<span class="room-label" style="left:${left}%;top:${((maxY + 1) / p.rows) * 100}%">${esc(room.name)}</span>`;
+    });
+    return html;
+  };
+
+  const worldsEl = document.getElementById('worlds');
+  document.getElementById('jump').innerHTML = shown.map(w => `<a href="#${w.id}">${w.icon} ${esc(w.short)}</a>`).join('');
+  shown.forEach(w => {
+    const hasPortraits = false, chapters = [];
+    const theme = { ...w, suspects: w.suspects.map((s, i) => ({ ...s, style: { hair: i % 5 }, portrait: hasPortraits ? `../../assets/portretten/${w.id}-${i}.webp` : undefined })) };
+    const p = FloorPlan.generate(SEEDS[w.id], 'gemiddeld', theme);
+    const sec = document.createElement('section');
+    sec.className = 'world'; sec.id = w.id;
+    sec.innerHTML = `
+      <div class="banner" style="background:linear-gradient(135deg, ${w.map.accent}, ${w.map.accent}dd);border:2px solid ${w.map.ring}">
+        <div class="icon">${w.icon}</div>
+        <h2>${esc(w.title)}</h2>
+        <p class="tag">${esc(w.tagline)}</p>
+        <div class="meta"><span>Korte naam: ${esc(w.short)}</span><span>Opent na ${w.unlock} zaken</span>
+          <span><i class="ringdot" style="background:${w.map.accent}"></i>${w.map.accent}</span><span><i class="ringdot" style="background:${w.map.ring}"></i>${w.map.ring}</span></div>
+      </div>
+      <div class="intro"><p>${esc(w.intro)}</p>
+        <div class="victim">${Avatars.victim()}<span>Slachtoffer: <b>${esc(w.victimName)}</b></span></div></div>
+      <h3>Zo ziet een zaak eruit</h3>
+      <div class="boardwrap"><div class="board-grid" data-floor="${w.floor}" style="--cols:${p.cols};--rows:${p.rows}">${boardHtml(p)}</div>
+        <p class="cap">Echt bord uit de motor, gemiddeld, met de oplossing ingevuld. Vloer: ${esc(w.floorNote || w.floor)} (nieuw).</p></div>
+      <h3>Twaalf ruimtes <small style="font: 500 0.78rem Inter, system-ui, sans-serif; color: var(--text-light)">${w.rooms.filter(r => known.has(r.name)).length} al vertaald</small></h3>
+      <div class="rooms">${w.rooms.map(r => `<div class="room${known.has(r.name) ? ' reuse' : ''}"><i style="background:${r.color}"></i><span>${esc(r.name)}<small>${r.article} ${esc(r.name.toLowerCase())}</small></span></div>`).join('')}</div>
+      <h3>${cap(COUNT[w.furniture.length])} nieuwe meubels</h3>
+      <div class="furn">${w.furniture.map(f => `<div>${furnSvg(f.id)}${esc(f.nl.replace(/^een /, ''))}</div>`).join('')}</div>
+      <h3>Acht verdachten</h3>
+      <div class="sus">${theme.suspects.map((s, i) => `<div class="card" style="--sc:${s.color}">
+        <div class="top"><span class="ava">${Avatars.suspect(s, i)}</span><span><b>${esc(s.label)}</b><span class="short">${esc(shortName(s.label))} · ${s.gender === 'f' ? 'v' : 'm'}</span></span></div>
+        <p class="who">${esc(s.who)}</p>
+        <details><summary>Portretopdracht</summary><p>${esc(s.look)}</p></details></div>`).join('')}</div>
+      <div class="style-ref"><img src="../../art/portretten/vandam-zonder-tekst.png" alt=""><p>${hasPortraits ? 'Gravures in de vaste stijl, met het portret van Van Dam als enige stijlreferentie.' : 'De gezichtjes hierboven zijn tijdelijk. Elk portret wordt een gravure in deze stijl, zoals Van Dam en de andere werelden.'}<span class="eraline">Wereld voor de portretten: ${esc(w.era)}</span></p></div>
+      <h3>${chapters.length ? 'Acht delen, 64 zaken' : 'Acht delen'}</h3>
+      <ol class="parts">${chapters.length ? chapters.map(ch => `<li><b>${esc(ch.title.replace(/^Deel [IVX]+ · /, ''))}</b><span>${esc(ch.intro)}</span>
+        <ul class="cases">${ch.cases.map(c => { const [icon, ...name] = c.item.split(' '); return `<li><span class="it" title="${esc(name.join(' '))}">${icon}</span><span class="ct">${esc(c.title)}<small class="${c.difficulty}">${c.difficulty}</small></span><span class="cs">${esc(c.story)}</span></li>`; }).join('')}</ul>
+        <p class="brief">Van Dam: ${esc(ch.briefing)}</p></li>`).join('') : w.parts.map(([t, s]) => `<li><b>${esc(t)}</b><span>${esc(s)}</span></li>`).join('')}</ol>
+      <p class="outro">${esc(w.outro)}</p>`;
+    worldsEl.appendChild(sec);
+  });
+})();
+</script>
+</body>
+</html>
