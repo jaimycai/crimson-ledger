@@ -237,3 +237,7 @@ eerste publicatie op zijn vroegst 6 oktober.
   Gevonden bij eigen controle en hersteld vóór plaatsing: EN las "Faites vos jeux" als "Fates Voss Jew" (nu "Place your bets"),
   ES las "Jack" als "Hack" (nu "Yak"), ES "Fue Artillero Thorne" (nu "El culpable: ..."). NL via VoiceStudio: twee lege zinnen en een
   ingeslikt "Sudoku"; stem.js schrijft nu elke NL-zin terug en neemt opnieuw op tot ≥80% verstaan.
+- 2 nov 19:25-19:50: video's "Los met mij op" in Buffer ingepland (opdracht Jaimy 2 nov, BUFFER-NOV.md): 17 van 18. NL 6 (3 nov 19:10, 4 nov 18:40,
+  5 nov 19:35, 6 nov 20:05, 7 nov 12:20, 8 nov 19:50), EN 7 (4 nov 01:10, 5 nov 00:40, 6 nov 01:35, 7 nov 02:05, 8 nov 00:20, 9 nov 01:50,
+  10 nov 01:15), ES 4 (3 nov 21:15, 4 nov 20:40, 5 nov 21:50, 6 nov 20:25), alles Amsterdam-tijd, AI-label aan, omslag = beeld op 3 s.
+  NL c72-0 (9 nov 18:55) niet: Free-limiet 10, vier oude mislukte carrousels (22-27 okt) tellen mee. Wachtrijen NL, EN, ES hervat; nagelezen, niets verschoven.
