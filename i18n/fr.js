@@ -2168,8 +2168,8 @@
     ],
     "mentorName": "Inspecteur Van Dam",
     "boardTutorial": [
-      "Déclaration 1 : Clementine était dans le salon, dans un coin. Trois coins sont occupés par des meubles, il en reste donc un. Fais glisser Clementine sur la case qui s’allume, ou touche-la.",
-      "Déclaration 2 : Hargrove se tenait juste à côté d’une plante. Une seule case à côté de la plante est libre. Fais-y glisser Hargrove, ou touche-la.",
+      "Touche la case qui s’allume. Clementine était dans un coin du salon, et c’est le seul coin libre.",
+      "Touche la case qui s’allume. Hargrove se tenait à côté de la plante, et c’est la seule case libre à côté.",
       "Tout le monde est à sa place. Touche Vérifier.",
       "La règle : seul le meurtrier était dans la pièce de la victime. Hargrove est dans la cuisine — choisis Hargrove."
     ]

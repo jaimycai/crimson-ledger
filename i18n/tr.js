@@ -2168,8 +2168,8 @@
     ],
     "mentorName": "Komiser Van Dam",
     "boardTutorial": [
-      "1. ifade: Leydi Clementine salonda, bir köşede duruyordu. Üç köşeyi eşyalar kaplıyor, geriye bir tane kalıyor. Clementine için parlayan kare bu: onu oraya sürükle ya da kareye dokun.",
-      "2. ifade: Bay Hargrove bir bitkinin hemen yanında duruyordu. Bitkinin yanında yalnızca bir kare boş. Hargrove için o kare: onu oraya sürükle ya da kareye dokun.",
+      "Parlayan kareye dokun. Leydi Clementine salonda bir köşedeydi ve boş kalan tek köşe bu.",
+      "Parlayan kareye dokun. Bay Hargrove bitkinin yanında duruyordu ve bitkinin yanındaki tek boş kare bu.",
       "Herkes yerinde. Kontrol Et düğmesine dokun.",
       "Kural: kurbanın bulunduğu odada yalnızca katil vardı. Hargrove mutfakta; seçimin Hargrove olsun."
     ]

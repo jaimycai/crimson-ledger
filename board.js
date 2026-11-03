@@ -54,9 +54,10 @@ const Board = {
     murderer: 1,
     clues: [{ kind: 'room-pos', s: 0, room: 0, pos: 'hoek' }, { kind: 'next-to', s: 1, furniture: 'plant' }]
   },
+  // 1.6 (EERSTE-MINUUT-EN-2026-11.md §5c): steps 1-2 say what to do first, then the one-line reason; dragging still works
   TUTORIAL_STEPS: [
-    { suspect: 0, cell: { x: 0, y: 0 }, text: 'Aanwijzing 1: Lady Clementine was in de Woonkamer, in een hoek. Drie hoeken zijn bezet door meubels, dus blijft er één over. Sleep Clementine naar het oplichtende vakje, of tik erop.' },
-    { suspect: 1, cell: { x: 3, y: 3 }, text: 'Aanwijzing 2: Meneer Hargrove stond direct naast een plant. Naast de plant is maar één vakje vrij. Sleep Hargrove erheen, of tik erop.' },
+    { suspect: 0, cell: { x: 0, y: 0 }, text: 'Tik op het oplichtende vakje. Lady Clementine was in een hoek van de Woonkamer, en dit is de enige vrije hoek.' },
+    { suspect: 1, cell: { x: 3, y: 3 }, text: 'Tik op het oplichtende vakje. Meneer Hargrove stond naast de plant, en dit is het enige vrije vakje ernaast.' },
     { action: 'check', text: 'Iedereen staat op zijn plek. Tik op Controleer.' },
     { action: 'murder', text: 'De spelregel: alleen de moordenaar was in de kamer van het slachtoffer. Hargrove staat in de Keuken — kies Hargrove.' }
   ],

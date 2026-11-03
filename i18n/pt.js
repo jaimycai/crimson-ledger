@@ -2408,8 +2408,8 @@
     ],
     "mentorName": "Inspetor Van Dam",
     "boardTutorial": [
-      "Depoimento 1: a Lady Clementine estava na Sala de Estar, num canto. Três cantos estão ocupados por objetos, então sobra um. Arraste a Clementine até o quadrado que brilha, ou toque nele.",
-      "Depoimento 2: o Sr. Hargrove estava bem ao lado de uma planta. Só um quadrado bem ao lado da planta está livre. Arraste o Hargrove até lá, ou toque nesse quadrado.",
+      "Toque no quadrado que brilha. A Lady Clementine estava num canto da Sala de Estar, e este é o único canto livre.",
+      "Toque no quadrado que brilha. O Sr. Hargrove estava ao lado da planta, e este é o único quadrado livre ao lado dela.",
       "Todos estão no lugar. Toque em Verificar.",
       "A regra: só o assassino estava no cômodo da vítima. O Hargrove está na Cozinha — escolha o Hargrove."
     ]

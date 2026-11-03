@@ -615,8 +615,8 @@
     ],
     mentorName: 'Inspector Van Dam',
     boardTutorial: [
-      'Statement 1: Lady Clementine was in the Living Room, in a corner. Three corners are taken by furniture, so one is left. Drag Clementine to the glowing square, or tap it.',
-      'Statement 2: Mr. Hargrove stood directly next to a plant. Only one square next to the plant is free. Drag Hargrove there, or tap it.',
+      'Tap the glowing square. Lady Clementine was in a corner of the Living Room, and this is the only free one.',
+      'Tap the glowing square. Mr. Hargrove stood next to the plant, and this is the only free square beside it.',
       'Everyone is in place. Tap Check.',
       'The rule: only the murderer was in the victim\'s room. Hargrove is in the Kitchen — choose Hargrove.'
     ]

@@ -2171,8 +2171,8 @@
     ],
     "mentorName": "Inspektor Van Dam",
     "boardTutorial": [
-      "Aussage 1: Lady Clementine war im Wohnzimmer, in einer Ecke. Drei Ecken sind von Möbeln belegt, also bleibt eine übrig. Ziehe Clementine auf das leuchtende Feld oder tippe es an.",
-      "Aussage 2: Herr Hargrove stand direkt neben einer Pflanze. Neben der Pflanze ist nur ein Feld frei. Ziehe Hargrove dorthin oder tippe es an.",
+      "Tippe auf das leuchtende Feld. Lady Clementine war in einer Ecke des Wohnzimmers, und das ist die einzige freie Ecke.",
+      "Tippe auf das leuchtende Feld. Herr Hargrove stand neben der Pflanze, und das ist das einzige freie Feld daneben.",
       "Alle stehen an ihrem Platz. Tippe auf Prüfen.",
       "Die Regel: Nur der Mörder war im Raum des Opfers. Hargrove steht in der Küche — wähle Hargrove."
     ]

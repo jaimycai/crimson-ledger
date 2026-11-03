@@ -2408,8 +2408,8 @@
     ],
     "mentorName": "Thanh tra Van Dam",
     "boardTutorial": [
-      "Lời khai 1: quý bà Clementine ở trong phòng khách, đứng ở một góc. Ba góc đã có đồ đạc chiếm chỗ, nên chỉ còn một. Kéo Clementine vào ô đang sáng, hoặc chạm vào ô đó.",
-      "Lời khai 2: ông Hargrove đứng ngay cạnh một chậu cây. Cạnh chậu cây chỉ còn một ô trống. Kéo Hargrove vào đó, hoặc chạm vào ô đó.",
+      "Chạm vào ô đang sáng. Quý bà Clementine ở một góc phòng khách, và đây là góc trống duy nhất.",
+      "Chạm vào ô đang sáng. Ông Hargrove đứng cạnh chậu cây, và đây là ô trống duy nhất bên cạnh nó.",
       "Mọi người đã vào đúng chỗ. Chạm vào Kiểm tra.",
       "Luật chơi: chỉ có hung thủ ở trong phòng của nạn nhân. Hargrove đang ở trong nhà bếp — hãy chọn Hargrove."
     ]

@@ -2408,8 +2408,8 @@
     ],
     "mentorName": "Inspector Van Dam",
     "boardTutorial": [
-      "Declaración 1: Lady Clementine estaba en el salón, en una esquina. Tres esquinas están ocupadas por muebles, así que solo queda una. Arrastra a Clementine a la casilla que brilla, o tócala.",
-      "Declaración 2: Mr. Hargrove estaba justo al lado de una planta. Al lado de la planta solo queda una casilla libre. Arrastra a Hargrove hasta allí, o tócala.",
+      "Toca la casilla que brilla. Lady Clementine estaba en una esquina del salón, y esta es la única esquina libre.",
+      "Toca la casilla que brilla. Mr. Hargrove estaba al lado de la planta, y esta es la única casilla libre a su lado.",
       "Todos están en su lugar. Toca Comprobar.",
       "La regla: solo el asesino estaba en la habitación de la víctima. Hargrove está en la cocina — elige a Hargrove."
     ]

@@ -2168,8 +2168,8 @@
     ],
     "mentorName": "Inspektur Van Dam",
     "boardTutorial": [
-      "Keterangan 1: Lady Clementine berada di Ruang Tamu, di sudut. Tiga sudut sudah ditempati perabot, jadi tinggal satu. Seret Clementine ke kotak yang menyala, atau ketuk kotak itu.",
-      "Keterangan 2: Tuan Hargrove berdiri tepat di sebelah tanaman. Hanya satu kotak di sebelah tanaman itu yang kosong. Seret Hargrove ke sana, atau ketuk kotak itu.",
+      "Ketuk kotak yang menyala. Lady Clementine berada di sudut Ruang Tamu, dan ini satu-satunya sudut yang kosong.",
+      "Ketuk kotak yang menyala. Tuan Hargrove berdiri di sebelah tanaman, dan ini satu-satunya kotak kosong di sebelahnya.",
       "Semua sudah di tempatnya. Ketuk Periksa.",
       "Aturannya: hanya pembunuh yang berada di ruangan korban. Hargrove ada di Dapur — pilih Hargrove."
     ]

@@ -2408,8 +2408,8 @@
     ],
     "mentorName": "Ispettore Van Dam",
     "boardTutorial": [
-      "Dichiarazione 1: Clementine era in salotto, in un angolo. Tre angoli sono occupati da oggetti, quindi ne resta uno. Trascina Clementine sulla casella illuminata, oppure toccala.",
-      "Dichiarazione 2: Hargrove era proprio accanto a una pianta. Accanto alla pianta c’è una sola casella libera. Trascina lì Hargrove, oppure toccala.",
+      "Tocca la casella illuminata. Clementine era in un angolo del salotto, e questo è l’unico angolo libero.",
+      "Tocca la casella illuminata. Hargrove era accanto alla pianta, e questa è l’unica casella libera lì accanto.",
       "Sono tutti al loro posto. Tocca Verifica.",
       "La regola: solo l’assassino era nella stanza della vittima. Hargrove è in cucina — scegli Hargrove."
     ]
