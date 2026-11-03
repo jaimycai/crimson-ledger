@@ -18,6 +18,7 @@ public class StorePlugin: CAPPlugin, CAPBridgedPlugin {
     ]
 
     private var updates: Task<Void, Never>?
+    private var intents: Task<Void, Never>?
 
     // Aankopen die buiten purchase() om binnenkomen: een ingewisselde aanbiedingscode, Vragen om te kopen,
     // een aankoop op een ander toestel. Apple levert ze via Transaction.updates; zonder deze luisteraar bleven
@@ -32,9 +33,23 @@ public class StorePlugin: CAPPlugin, CAPBridgedPlugin {
                 self.notifyListeners("transaction", data: ["id": tx.productID, "revoked": tx.revocationDate != nil, "ids": ids])
             }
         }
+        // 1.6: a purchase started on the App Store product page (the promoted Crimson Pass) arrives as a PurchaseIntent;
+        // buy it here and report it the same way, so the app unlocks the Pass without a restart.
+        if #available(iOS 16.4, *) {
+            intents = Task { [weak self] in
+                for await intent in PurchaseIntent.intents {
+                    guard let self = self else { return }
+                    if let r = try? await intent.product.purchase(), case .success(.verified(let tx)) = r {
+                        await tx.finish()
+                        let ids = await self.currentEntitlements()
+                        self.notifyListeners("transaction", data: ["id": tx.productID, "revoked": false, "ids": ids])
+                    }
+                }
+            }
+        }
     }
 
-    deinit { updates?.cancel() }
+    deinit { updates?.cancel(); intents?.cancel() }
 
     // Prijzen en namen van de producten, zoals ze in App Store Connect staan.
     @objc func products(_ call: CAPPluginCall) {
