@@ -97,6 +97,12 @@ public class StorePlugin extends Plugin implements PurchasesUpdatedListener {
                 o.put("title", p.getName());
                 o.put("description", p.getDescription());
                 o.put("price", offer != null ? offer.getFormattedPrice() : "");
+                // 1.6: the price as a number with its currency, so the shop can add up the separate worlds
+                if (offer != null) {
+                    o.put("value", offer.getPriceAmountMicros() / 1_000_000.0);
+                    o.put("currency", offer.getPriceCurrencyCode());
+                    o.put("locale", java.util.Locale.getDefault().toLanguageTag());
+                }
                 o.put("type", p.getProductId().endsWith(CONSUMABLE_SUFFIX) ? "consumable" : "nonconsumable");
                 list.put(o);
             }

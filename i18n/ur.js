@@ -467,7 +467,21 @@
     "Dossiers ordenen…": "فائلیں ترتیب دی جا رہی ہیں…",
     "Verdachten ondervragen…": "مشتبہ افراد سے پوچھ گچھ ہو رہی ہے…",
     "Plattegrond tekenen…": "نقشہ بنایا جا رہا ہے…",
-    "Van Dam zet koffie…": "انسپکٹر وین ڈیم کافی بنا رہے ہیں…"
+    "Van Dam zet koffie…": "انسپکٹر وین ڈیم کافی بنا رہے ہیں…",
+    "Los je eerste zaak op": "اپنا پہلا کیس حل کریں",
+    "Oefenzaak": "مشقی کیس",
+    "Oefenzaak ✓ · nog {0} {0|one:zaak|other:zaken} tot de bewijskist": "مشقی کیس ✓ · ثبوتوں کے صندوق تک {0} کیس باقی",
+    "Je gratis hints voor vandaag zijn op. Morgen krijg je er weer {0}. Los een campagnezaak op met drie sterren en je verdient er één.": "آج کے مفت اشارے ختم ہو گئے۔ کل پھر {0} ملیں گے۔ مہم کا کوئی کیس تین ستاروں کے ساتھ حل کریں تو ایک اشارہ کمائیں۔",
+    "{0} werelden, {1} zaken": "{0} دنیائیں، {1} کیس",
+    "{0} {0|one:zaak|other:zaken}": "{0} کیس",
+    "{0} werelden los: {1}": "{0} دنیائیں الگ الگ: {1}",
+    "Open alles · {0}": "سب کچھ کھولیں · {0}",
+    "Open alles": "سب کچھ کھولیں",
+    "Niet nu": "ابھی نہیں",
+    "Je hebt {0} opgelost. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "آپ نے {0} حل کر لیا۔ آگے مزید {1} {1|one:باب|other:ابواب} اور {2} کیس ہیں۔",
+    "{0} staat al open. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "{0} پہلے سے کھلا ہے۔ آگے مزید {1} {1|one:باب|other:ابواب} اور {2} کیس ہیں۔",
+    "🧊 Twee keer je streak redden als je een dag mist": "🧊 کوئی دن رہ جائے تو دو بار اپنا سلسلہ بچائیں",
+    "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "ایپ اسٹور اکاؤنٹ کے ذریعے ایک بار کی خریداری، کوئی سبسکرپشن نہیں۔ ہر دنیا کا باب اول، حویلی، قزاقوں کا جہاز، روزانہ کیس، ہفتے کا کیس اور ریکارڈ روم ہمیشہ مفت رہیں گے۔"
   },
 
   data: {

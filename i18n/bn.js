@@ -467,7 +467,21 @@
     "Dossiers ordenen…": "নথি সাজানো হচ্ছে…",
     "Verdachten ondervragen…": "সন্দেহভাজনদের জিজ্ঞাসাবাদ চলছে…",
     "Plattegrond tekenen…": "নকশা আঁকা হচ্ছে…",
-    "Van Dam zet koffie…": "ইন্সপেক্টর ভান ডাম কফি বানাচ্ছেন…"
+    "Van Dam zet koffie…": "ইন্সপেক্টর ভান ডাম কফি বানাচ্ছেন…",
+    "Los je eerste zaak op": "আপনার প্রথম কেসের সমাধান করুন",
+    "Oefenzaak": "অনুশীলনী কেস",
+    "Oefenzaak ✓ · nog {0} {0|one:zaak|other:zaken} tot de bewijskist": "অনুশীলনী কেস ✓ · প্রমাণের সিন্দুক পর্যন্ত আর {0}টি কেস",
+    "Je gratis hints voor vandaag zijn op. Morgen krijg je er weer {0}. Los een campagnezaak op met drie sterren en je verdient er één.": "আজকের বিনামূল্যের ইঙ্গিত শেষ। কাল আবার {0}টি পাবেন। অভিযানের কোনো কেস তিন তারায় সমাধান করলে একটি ইঙ্গিত পাবেন।",
+    "{0} werelden, {1} zaken": "{0}টি জগৎ, {1}টি কেস",
+    "{0} {0|one:zaak|other:zaken}": "{0}টি কেস",
+    "{0} werelden los: {1}": "{0}টি জগৎ আলাদাভাবে: {1}",
+    "Open alles · {0}": "সব খুলুন · {0}",
+    "Open alles": "সব খুলুন",
+    "Niet nu": "এখন নয়",
+    "Je hebt {0} opgelost. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "আপনি {0} শেষ করেছেন। এরপর আরও {1}টি পর্ব আর {2}টি কেস অপেক্ষা করছে।",
+    "{0} staat al open. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "{0} আগেই খোলা। এরপর আরও {1}টি পর্ব আর {2}টি কেস অপেক্ষা করছে।",
+    "🧊 Twee keer je streak redden als je een dag mist": "🧊 কোনো দিন বাদ পড়লে দুবার আপনার ধারা বাঁচান",
+    "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "অ্যাপ স্টোরের অ্যাকাউন্ট দিয়ে এককালীন কেনাকাটা, কোনো সাবস্ক্রিপশন নেই। প্রতিটি জগতের প্রথম পর্ব, বাগানবাড়ি, জলদস্যুর জাহাজ, দৈনিক কেস, সপ্তাহের কেস আর মহাফেজখানা সবসময় বিনামূল্যে।"
   },
 
   data: {

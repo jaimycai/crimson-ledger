@@ -467,7 +467,21 @@
     "Dossiers ordenen…": "फाइल्स लावत आहोत…",
     "Verdachten ondervragen…": "संशयितांची चौकशी सुरू आहे…",
     "Plattegrond tekenen…": "नकाशा काढत आहोत…",
-    "Van Dam zet koffie…": "निरीक्षक व्हॅन डॅम कॉफी करत आहेत…"
+    "Van Dam zet koffie…": "निरीक्षक व्हॅन डॅम कॉफी करत आहेत…",
+    "Los je eerste zaak op": "तुमचे पहिले प्रकरण सोडवा",
+    "Oefenzaak": "सराव प्रकरण",
+    "Oefenzaak ✓ · nog {0} {0|one:zaak|other:zaken} tot de bewijskist": "सराव प्रकरण ✓ · पुरावा-पेटीपर्यंत आणखी {0} {0|one:प्रकरण|other:प्रकरणे}",
+    "Je gratis hints voor vandaag zijn op. Morgen krijg je er weer {0}. Los een campagnezaak op met drie sterren en je verdient er één.": "आजचे तुमचे मोफत संकेत संपले. उद्या पुन्हा {0} मिळतील. मोहिमेतील एखादे प्रकरण तीन ताऱ्यांसह सोडवा आणि एक संकेत मिळवा.",
+    "{0} werelden, {1} zaken": "{0} जग, {1} प्रकरणे",
+    "{0} {0|one:zaak|other:zaken}": "{0} {0|one:प्रकरण|other:प्रकरणे}",
+    "{0} werelden los: {1}": "{0} जग स्वतंत्रपणे: {1}",
+    "Open alles · {0}": "सर्व काही उघडा · {0}",
+    "Open alles": "सर्व काही उघडा",
+    "Niet nu": "आत्ता नको",
+    "Je hebt {0} opgelost. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "तुम्ही {0} पूर्ण केला. पुढे आणखी {1} भाग आणि {2} प्रकरणे वाट पाहत आहेत.",
+    "{0} staat al open. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "{0} आधीच खुला आहे. पुढे आणखी {1} भाग आणि {2} प्रकरणे वाट पाहत आहेत.",
+    "🧊 Twee keer je streak redden als je een dag mist": "🧊 एखादा दिवस चुकला तर दोनदा तुमची मालिका वाचवा",
+    "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "ॲप स्टोअरमधील तुमच्या खात्यातून एकदाच खरेदी, सदस्यता नाही. प्रत्येक जगाचा भाग I, हवेली, चाच्यांचे जहाज, दैनिक प्रकरण, आठवड्याचे प्रकरण आणि अभिलेखागार नेहमी मोफत राहतात."
   },
 
   data: {

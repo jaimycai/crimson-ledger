@@ -467,7 +467,21 @@
     "Dossiers ordenen…": "調書を整理中…",
     "Verdachten ondervragen…": "容疑者を取り調べ中…",
     "Plattegrond tekenen…": "見取り図を作成中…",
-    "Van Dam zet koffie…": "ヴァン・ダム警部がコーヒーをいれています…"
+    "Van Dam zet koffie…": "ヴァン・ダム警部がコーヒーをいれています…",
+    "Los je eerste zaak op": "最初の事件を解こう",
+    "Oefenzaak": "練習事件",
+    "Oefenzaak ✓ · nog {0} {0|one:zaak|other:zaken} tot de bewijskist": "練習事件 ✓ · 証拠箱まで残り{0}件",
+    "Je gratis hints voor vandaag zijn op. Morgen krijg je er weer {0}. Los een campagnezaak op met drie sterren en je verdient er één.": "今日の無料ヒントを使い切りました。明日また{0}回もらえます。キャンペーンの事件を★3つで解決すると、ヒントが1回もらえます。",
+    "{0} werelden, {1} zaken": "{0}ワールド・{1}件の事件",
+    "{0} {0|one:zaak|other:zaken}": "{0}件",
+    "{0} werelden los: {1}": "{0}ワールドを個別に：{1}",
+    "Open alles · {0}": "すべて解放 · {0}",
+    "Open alles": "すべて解放",
+    "Niet nu": "今はしない",
+    "Je hebt {0} opgelost. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "{0}を解決しました。この先に{1}章・{2}件の事件が待っています。",
+    "{0} staat al open. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "{0}はもう遊べます。この先に{1}章・{2}件の事件が待っています。",
+    "🧊 Twee keer je streak redden als je een dag mist": "🧊 1日休んでも、連続記録を2回守れる",
+    "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "アプリストアのアカウントでの買い切り購入です。サブスクリプションではありません。各ワールドの第1章、洋館、海賊船、日替わり事件、今週の事件、アーカイブはずっと無料です。"
   },
 
   data: {

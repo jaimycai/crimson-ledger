@@ -467,7 +467,21 @@
     "Dossiers ordenen…": "Раскладываем дела…",
     "Verdachten ondervragen…": "Допрашиваем подозреваемых…",
     "Plattegrond tekenen…": "Чертим план…",
-    "Van Dam zet koffie…": "Инспектор Ван Дам варит кофе…"
+    "Van Dam zet koffie…": "Инспектор Ван Дам варит кофе…",
+    "Los je eerste zaak op": "Раскройте первое дело",
+    "Oefenzaak": "Учебное дело",
+    "Oefenzaak ✓ · nog {0} {0|one:zaak|other:zaken} tot de bewijskist": "Учебное дело ✓ · ещё {0} {0|one:дело|few:дела|many:дел|other:дела} до сундука с уликами",
+    "Je gratis hints voor vandaag zijn op. Morgen krijg je er weer {0}. Los een campagnezaak op met drie sterren en je verdient er één.": "Бесплатные подсказки на сегодня закончились. Завтра вы снова получите {0}. Раскройте дело кампании на три звезды — и заработаете одну.",
+    "{0} werelden, {1} zaken": "{0} {0|one:мир|few:мира|many:миров|other:мира}, {1} {1|one:дело|few:дела|many:дел|other:дела}",
+    "{0} {0|one:zaak|other:zaken}": "{0} {0|one:дело|few:дела|many:дел|other:дела}",
+    "{0} werelden los: {1}": "{0} {0|one:мир|few:мира|many:миров|other:мира} по отдельности: {1}",
+    "Open alles · {0}": "Открыть всё · {0}",
+    "Open alles": "Открыть всё",
+    "Niet nu": "Не сейчас",
+    "Je hebt {0} opgelost. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "Вы прошли {0}. Дальше ещё {1} {1|one:часть|few:части|many:частей|other:части} и {2} {2|one:дело|few:дела|many:дел|other:дела}.",
+    "{0} staat al open. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "{0} уже открыта. Дальше ещё {1} {1|one:часть|few:части|many:частей|other:части} и {2} {2|one:дело|few:дела|many:дел|other:дела}.",
+    "🧊 Twee keer je streak redden als je een dag mist": "🧊 Дважды спасти серию, если пропустите день",
+    "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "Разовые покупки через ваш аккаунт в магазине приложений, без подписки. Часть I каждого мира, «Поместье», «Пиратский корабль», дело дня, дело недели и архив всегда бесплатны."
   },
 
   data: {

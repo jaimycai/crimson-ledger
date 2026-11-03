@@ -467,7 +467,21 @@
     "Dossiers ordenen…": "Akten werden sortiert…",
     "Verdachten ondervragen…": "Verdächtige werden verhört…",
     "Plattegrond tekenen…": "Grundriss wird gezeichnet…",
-    "Van Dam zet koffie…": "Inspektor Van Dam kocht Kaffee…"
+    "Van Dam zet koffie…": "Inspektor Van Dam kocht Kaffee…",
+    "Los je eerste zaak op": "Löse deinen ersten Fall",
+    "Oefenzaak": "Übungsfall",
+    "Oefenzaak ✓ · nog {0} {0|one:zaak|other:zaken} tot de bewijskist": "Übungsfall ✓ · noch {0} {0|one:Fall|other:Fälle} bis zur Beweiskiste",
+    "Je gratis hints voor vandaag zijn op. Morgen krijg je er weer {0}. Los een campagnezaak op met drie sterren en je verdient er één.": "Deine kostenlosen Tipps für heute sind aufgebraucht. Morgen bekommst du wieder {0}. Löse einen Kampagnenfall mit drei Sternen, dann verdienst du dir einen.",
+    "{0} werelden, {1} zaken": "{0} Welten, {1} Fälle",
+    "{0} {0|one:zaak|other:zaken}": "{0} {0|one:Fall|other:Fälle}",
+    "{0} werelden los: {1}": "{0} Welten einzeln: {1}",
+    "Open alles · {0}": "Alles freischalten · {0}",
+    "Open alles": "Alles freischalten",
+    "Niet nu": "Jetzt nicht",
+    "Je hebt {0} opgelost. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "Du hast {0} gelöst. Danach warten noch {1} {1|one:Teil|other:Teile} mit {2} {2|one:Fall|other:Fällen}.",
+    "{0} staat al open. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "{0} ist schon offen. Danach warten noch {1} {1|one:Teil|other:Teile} mit {2} {2|one:Fall|other:Fällen}.",
+    "🧊 Twee keer je streak redden als je een dag mist": "🧊 Zweimal deine Serie retten, wenn du einen Tag verpasst",
+    "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "Einmalkäufe über dein Konto im App Store, kein Abo. Teil I jeder Welt, das Herrenhaus, das Piratenschiff, der Tagesfall, der Fall der Woche und das Archiv bleiben immer kostenlos."
   },
 
   data: {

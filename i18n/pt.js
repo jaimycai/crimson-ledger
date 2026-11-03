@@ -467,7 +467,21 @@
     "Dossiers ordenen…": "Organizando os arquivos…",
     "Verdachten ondervragen…": "Interrogando os suspeitos…",
     "Plattegrond tekenen…": "Desenhando a planta…",
-    "Van Dam zet koffie…": "O inspetor Van Dam está passando um café…"
+    "Van Dam zet koffie…": "O inspetor Van Dam está passando um café…",
+    "Los je eerste zaak op": "Resolva seu primeiro caso",
+    "Oefenzaak": "Caso de treino",
+    "Oefenzaak ✓ · nog {0} {0|one:zaak|other:zaken} tot de bewijskist": "Caso de treino ✓ · {0|zero:faltam|one:falta|other:faltam} {0} {0|zero:casos|one:caso|other:casos} até o baú de provas",
+    "Je gratis hints voor vandaag zijn op. Morgen krijg je er weer {0}. Los een campagnezaak op met drie sterren en je verdient er één.": "Suas dicas grátis de hoje acabaram. Amanhã você ganha mais {0}. Resolva um caso da campanha com três estrelas e ganhe uma.",
+    "{0} werelden, {1} zaken": "{0} mundos, {1} casos",
+    "{0} {0|one:zaak|other:zaken}": "{0} {0|zero:casos|one:caso|other:casos}",
+    "{0} werelden los: {1}": "{0} mundos separados: {1}",
+    "Open alles · {0}": "Liberar tudo · {0}",
+    "Open alles": "Liberar tudo",
+    "Niet nu": "Agora não",
+    "Je hebt {0} opgelost. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "Você resolveu a {0}. A seguir: mais {1} {1|zero:partes|one:parte|other:partes} com {2} {2|zero:casos|one:caso|other:casos}.",
+    "{0} staat al open. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "A {0} já está aberta. A seguir: mais {1} {1|zero:partes|one:parte|other:partes} com {2} {2|zero:casos|one:caso|other:casos}.",
+    "🧊 Twee keer je streak redden als je een dag mist": "🧊 Salve sua sequência duas vezes quando perder um dia",
+    "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "Compras únicas pela sua conta da loja de apps, sem assinatura. A parte I de cada mundo, a Mansão, o Navio Pirata, o caso do dia, o caso da semana e o arquivo são sempre gratuitos."
   },
 
   data: {

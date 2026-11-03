@@ -51,6 +51,8 @@ const active = () => document.querySelector('.screen.active').id;
     document.querySelector('.theme-card[data-theme="hotel"]').click();
     check(document.getElementById('store-modal').classList.contains('active') && /Crimson Pass/.test(txt('store-lead')) && !DUTCH.test(txt('store-lead')), 'winkel Engels: ' + txt('store-lead'));
     check([...document.querySelectorAll('#store-rows .store-row')].length === 24 && ![...document.querySelectorAll('#store-rows')].some(r => DUTCH.test(r.textContent)), 'winkelrijen Engels');
+    // 1.6: the Pass screen in English (behind the door, anchor, CTA, escape)
+    check(/Part I is already open\. Next: 7 more parts with 56 cases\./.test(txt('store-door')) && txt('pass-anchor') === '22 worlds separately: €43.78' && txt('btn-buy-pass') === 'Unlock everything · €4.99' && txt('btn-close-store') === 'Not now' && /Save your streak twice/.test(txt('pass-card')) && /Part I of every world/.test(document.querySelector('.store-small').textContent) && !DUTCH.test(txt('pass-card')), 'Pass-scherm Engels: ' + txt('store-door').replace(/\s+/g, ' ').trim() + ' | ' + txt('pass-anchor') + ' | ' + txt('btn-buy-pass'));
     App.hideModal('store-modal');
 
     // ── een zaak spelen ──

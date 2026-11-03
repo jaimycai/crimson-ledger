@@ -250,7 +250,22 @@
     '3 · Dus': '3 · So', 'Zo kon niemand anders bij het slachtoffer zijn.': 'Nobody else could have been with the victim.',
     'Bewijsstuk in je vitrine': 'Evidence in your cabinet',
     'Gemiste dagzaken': 'Missed daily cases', 'Telt als zaak, niet voor je streak': 'Counts as a case, not for your streak',
-    'Gemist': 'Missed', '▶ Volgende gemiste dagzaak': '▶ Next missed daily case'
+    'Gemist': 'Missed', '▶ Volgende gemiste dagzaak': '▶ Next missed daily case',
+    // 1.6: marketing review (paywall, onboarding): the Crimson Pass screen shows what is behind the door, the start button
+    // says what happens, and the practice case is the first step on the path. No word for buying or for murder here.
+    'Los je eerste zaak op': 'Solve your first case',
+    'Oefenzaak': 'Practice case',
+    'Oefenzaak ✓ · nog {0} {0|one:zaak|other:zaken} tot de bewijskist': 'Practice case ✓ · {0} more {0|one:case|other:cases} to the evidence chest',
+    'Je gratis hints voor vandaag zijn op. Morgen krijg je er weer {0}. Los een campagnezaak op met drie sterren en je verdient er één.': 'Your free hints for today are used up. Tomorrow you get {0} again. Solve a campaign case with three stars and you earn one.',
+    '{0} werelden, {1} zaken': '{0} worlds, {1} cases',
+    '{0} {0|one:zaak|other:zaken}': '{0} {0|one:case|other:cases}',
+    '{0} werelden los: {1}': '{0} worlds separately: {1}',
+    'Open alles · {0}': 'Unlock everything · {0}', 'Open alles': 'Unlock everything',
+    'Niet nu': 'Not now',
+    'Je hebt {0} opgelost. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.': 'You solved {0}. Next: {1} more {1|one:part|other:parts} with {2} {2|one:case|other:cases}.',
+    '{0} staat al open. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.': '{0} is already open. Next: {1} more {1|one:part|other:parts} with {2} {2|one:case|other:cases}.',
+    '🧊 Twee keer je streak redden als je een dag mist': '🧊 Save your streak twice when you miss a day',
+    'Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.': 'One-off purchases through your app store account, no subscription. Part I of every world, the Manor, the Pirate Ship, the daily case, the case of the week and the archive always stay free.'
   },
 
   data: {

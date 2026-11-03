@@ -467,7 +467,21 @@
     "Dossiers ordenen…": "Ordenando expedientes…",
     "Verdachten ondervragen…": "Interrogando a los sospechosos…",
     "Plattegrond tekenen…": "Dibujando el plano…",
-    "Van Dam zet koffie…": "El inspector Van Dam prepara café…"
+    "Van Dam zet koffie…": "El inspector Van Dam prepara café…",
+    "Los je eerste zaak op": "Resuelve tu primer caso",
+    "Oefenzaak": "Caso de práctica",
+    "Oefenzaak ✓ · nog {0} {0|one:zaak|other:zaken} tot de bewijskist": "Caso de práctica ✓ · {0} {0|one:caso|other:casos} más hasta el cofre de pruebas",
+    "Je gratis hints voor vandaag zijn op. Morgen krijg je er weer {0}. Los een campagnezaak op met drie sterren en je verdient er één.": "Ya has usado tus pistas gratis de hoy. Mañana vuelves a tener {0}. Resuelve un caso de la campaña con tres estrellas y ganarás una.",
+    "{0} werelden, {1} zaken": "{0} mundos, {1} casos",
+    "{0} {0|one:zaak|other:zaken}": "{0} {0|one:caso|other:casos}",
+    "{0} werelden los: {1}": "{0} mundos por separado: {1}",
+    "Open alles · {0}": "Desbloquear todo · {0}",
+    "Open alles": "Desbloquear todo",
+    "Niet nu": "Ahora no",
+    "Je hebt {0} opgelost. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "Has resuelto la {0}. Después te esperan {1} {1|one:parte|other:partes} más con {2} {2|one:caso|other:casos}.",
+    "{0} staat al open. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "La {0} ya está abierta. Después te esperan {1} {1|one:parte|other:partes} más con {2} {2|one:caso|other:casos}.",
+    "🧊 Twee keer je streak redden als je een dag mist": "🧊 Salva tu racha dos veces si te saltas un día",
+    "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "Compras únicas con la cuenta de tu tienda de apps, sin suscripción. La parte I de cada mundo, la mansión, el barco pirata, el caso diario, el caso de la semana y el archivo son siempre gratis."
   },
 
   data: {

@@ -467,7 +467,21 @@
     "Dossiers ordenen…": "ترتيب الملفات…",
     "Verdachten ondervragen…": "استجواب المشتبه بهم…",
     "Plattegrond tekenen…": "رسم المخطط…",
-    "Van Dam zet koffie…": "المفتش فان دام يُعدّ القهوة…"
+    "Van Dam zet koffie…": "المفتش فان دام يُعدّ القهوة…",
+    "Los je eerste zaak op": "حلّ قضيتك الأولى",
+    "Oefenzaak": "قضية تدريبية",
+    "Oefenzaak ✓ · nog {0} {0|one:zaak|other:zaken} tot de bewijskist": "قضية تدريبية ✓ · بقيت {0} {0|zero:قضية|one:قضية|two:من القضايا|few:قضايا|many:قضية|other:قضية} حتى صندوق الأدلة",
+    "Je gratis hints voor vandaag zijn op. Morgen krijg je er weer {0}. Los een campagnezaak op met drie sterren en je verdient er één.": "نفدت تلميحاتك المجانية لهذا اليوم. غدًا تحصل على {0} من جديد. حلّ قضية من الحملة بثلاث نجوم لتربح تلميحًا.",
+    "{0} werelden, {1} zaken": "العوالم: {0}، القضايا: {1}",
+    "{0} {0|one:zaak|other:zaken}": "{0} {0|zero:قضية|one:قضية|two:من القضايا|few:قضايا|many:قضية|other:قضية}",
+    "{0} werelden los: {1}": "{0} {0|zero:عالم|one:عالم|two:من العوالم|few:عوالم|many:عالمًا|other:عالم} كلٌّ على حدة: {1}",
+    "Open alles · {0}": "افتح كل شيء · {0}",
+    "Open alles": "افتح كل شيء",
+    "Niet nu": "ليس الآن",
+    "Je hebt {0} opgelost. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "أنهيت {0}. أمامك بعده {1} {1|zero:جزء|one:جزء|two:من الأجزاء|few:أجزاء|many:جزءًا|other:جزء} و{2} {2|zero:قضية|one:قضية|two:من القضايا|few:قضايا|many:قضية|other:قضية}.",
+    "{0} staat al open. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "{0} مفتوح بالفعل. أمامك بعده {1} {1|zero:جزء|one:جزء|two:من الأجزاء|few:أجزاء|many:جزءًا|other:جزء} و{2} {2|zero:قضية|one:قضية|two:من القضايا|few:قضايا|many:قضية|other:قضية}.",
+    "🧊 Twee keer je streak redden als je een dag mist": "🧊 أنقذ سلسلتك مرتين إذا فاتك يوم",
+    "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "مشتريات لمرة واحدة عبر حسابك في متجر التطبيقات، بلا اشتراك. الجزء الأول من كل عالم والقصر الريفي وسفينة القراصنة والقضية اليومية وقضية الأسبوع والأرشيف مجانية دائمًا."
   },
 
   data: {

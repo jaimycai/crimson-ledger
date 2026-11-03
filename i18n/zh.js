@@ -467,7 +467,21 @@
     "Dossiers ordenen…": "正在整理卷宗…",
     "Verdachten ondervragen…": "正在审问嫌疑人…",
     "Plattegrond tekenen…": "正在绘制平面图…",
-    "Van Dam zet koffie…": "范达姆探长正在煮咖啡…"
+    "Van Dam zet koffie…": "范达姆探长正在煮咖啡…",
+    "Los je eerste zaak op": "破解你的第一个案件",
+    "Oefenzaak": "练习案件",
+    "Oefenzaak ✓ · nog {0} {0|one:zaak|other:zaken} tot de bewijskist": "练习案件 ✓ · 再破{0}个案件就能打开证物箱",
+    "Je gratis hints voor vandaag zijn op. Morgen krijg je er weer {0}. Los een campagnezaak op met drie sterren en je verdient er één.": "今天的免费提示用完了。明天会再给你{0}次。用三星破解一个主线案件，就能赢得一次提示。",
+    "{0} werelden, {1} zaken": "{0}个世界，{1}个案件",
+    "{0} {0|one:zaak|other:zaken}": "{0}个案件",
+    "{0} werelden los: {1}": "{0}个世界单独解锁：{1}",
+    "Open alles · {0}": "解锁全部 · {0}",
+    "Open alles": "解锁全部",
+    "Niet nu": "以后再说",
+    "Je hebt {0} opgelost. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "你已破解{0}。接下来还有{1}章、{2}个案件。",
+    "{0} staat al open. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "{0}已开放。接下来还有{1}章、{2}个案件。",
+    "🧊 Twee keer je streak redden als je een dag mist": "🧊 漏玩一天时，两次保住你的连胜",
+    "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "通过你的应用商店账户一次性购买，不是订阅。每个世界的第一章、庄园、海盗船、每日案件、每周案件和档案库永远免费。"
   },
 
   data: {

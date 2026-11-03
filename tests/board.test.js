@@ -5,7 +5,7 @@ const { JSDOM, VirtualConsole } = loadJsdom();
 const DIR = path.join(__dirname, '..');
 let html = fs.readFileSync(path.join(DIR, 'index.html'), 'utf8');
 html = html.replace(/<script src="([^"]+)"><\/script>/g, (_, src) => `<script>${fs.readFileSync(path.join(DIR, src), 'utf8')}</script>`);
-html = html.replace('<head>', '<head><script>localStorage.setItem("crimson-lang", "nl");</script>').replace(/<link[^>]+>/g, '').replace('</body>', '<script>window.App = App; window.Board = Board; window.FloorPlan = FloorPlan; window.Themes = Themes; window.Campaign = Campaign; window.Progress = Progress; window.Mentor = Mentor; window.MiniGame = MiniGame; window.Store = Store;</script></body>');
+html = html.replace('<head>', '<head><script>localStorage.setItem("crimson-lang", "nl");</script>').replace(/<link[^>]+>/g, '').replace('</body>', '<script>window.App = App; window.Board = Board; window.FloorPlan = FloorPlan; window.Themes = Themes; window.Campaign = Campaign; window.Progress = Progress; window.Mentor = Mentor; window.MiniGame = MiniGame; window.Store = Store; window.Meting = Meting;</script></body>');
 const errors = [];
 const vc = new VirtualConsole(); vc.on('jsdomError', e => errors.push(String(e.message || e)));
 const dom = new JSDOM(html, { runScripts: 'dangerously', pretendToBeVisual: true, url: 'http://localhost:8080/', virtualConsole: vc });
@@ -49,6 +49,29 @@ const active = () => document.querySelector('.screen.active').id;
     check(document.querySelectorAll('.theme-card.locked').length === 22 && !document.querySelector('.theme-card[data-theme="piraten"]').classList.contains('locked') && /Crimson Pass/.test(document.querySelector('.theme-card[data-theme="hotel"] .theme-lock').textContent), 'na 9 zaken: landhuis en piratenschip open, de zes betaalde werelden dicht met "Crimson Pass"');
     document.querySelector('.theme-card[data-theme="hotel"]').click();
     check(document.getElementById('store-modal').classList.contains('active') && /Grand Hotel Aurora/.test(document.getElementById('store-lead').textContent) && document.querySelectorAll('#store-rows .store-row').length === 24, 'tik op een betaalde wereld opent de winkel met die wereld in de kop en acht rijen');
+    // 1.6 (paywalls review): what is behind the door, the worlds in the Pass, the anchor, "Open alles" and "Niet nu"
+    {
+      const door = document.getElementById('store-door'), txt = id => document.getElementById(id).textContent;
+      check(!door.hidden && !!door.querySelector('.store-door-art .mapart') && door.querySelectorAll('.store-door-cast img[src*="portretten/hotel-"]').length === 6 && /Grand Hotel Aurora/.test(door.textContent) && /Deel I staat al open\. Daarna wachten nog 7 delen met 56 zaken\./.test(door.textContent), 'dichte wereld: banner, zes verdachten en wat er na deel I wacht: ' + door.querySelector('.store-door-text span').textContent);
+      const tiles = [...document.querySelectorAll('#pass-worlds .pass-tile')];
+      check(tiles.length === 22 && tiles[0].classList.contains('hl') && /Hotel/.test(tiles[0].textContent) && tiles.every(t => !!t.querySelector('.mapart') && /64 zaken/.test(t.textContent)) && txt('pass-worlds').includes('22 werelden, 1408 zaken'), 'Pass-kaart toont alle 22 werelden met banner en zaken, deze wereld voorop');
+      check(!document.getElementById('pass-anchor').hidden && txt('pass-anchor') === '22 werelden los: €\u00a043,78' && txt('btn-buy-pass') === 'Open alles · €\u00a04,99', 'anker naast de knop: ' + txt('pass-anchor') + ' | ' + txt('btn-buy-pass'));
+      check(/streak redden als je een dag mist/.test(document.getElementById('pass-card').textContent) && /Deel I van elke wereld/.test(document.querySelector('.store-small').textContent) && txt('btn-close-store') === 'Niet nu', '"vrije dagen" in gewone woorden, onderregel met deel I, ontsnapping "Niet nu"');
+      const first = document.querySelector('#store-rows .store-row');
+      check(first.classList.contains('hl') && /Grand Hotel Aurora/.test(first.textContent) && first.querySelector('[data-product]').dataset.product === window.Store.worldId('hotel'), 'de wereld los staat meteen onder de Pass');
+      App.openStore('hint');
+      check(document.getElementById('store-door').hidden && /drie sterren en je verdient er één/.test(txt('store-lead')), 'hintmelding noemt hints verdienen met drie sterren: ' + txt('store-lead'));
+      // purchase flow in the mock store: cancel, then the Pass
+      const sent = []; const realSend = window.Meting.send; window.Meting.send = (e, a) => sent.push(`${e}:${a || ''}`);
+      App.storageSet('crimson-store-mock', 'cancel');
+      document.getElementById('btn-buy-pass').click(); await sleep(30);
+      check(!window.Store.hasPass() && sent.join(' ') === 'buy_tap:pass buy_cancel:pass', 'nep-winkel: Pass-knop, aankoopvenster dicht zonder aankoop (' + sent.join(' ') + ')');
+      App.storageSet('crimson-store-mock', '1');
+      document.getElementById('btn-buy-pass').click(); await sleep(30);
+      check(window.Store.hasPass() && sent.slice(2).join(' ') === 'buy_tap:pass purchase:pass' && /Je hebt de Crimson Pass/.test(txt('btn-buy-pass')) && document.getElementById('pass-worlds').hidden && document.getElementById('pass-anchor').hidden && txt('btn-close-store') === 'Sluiten', 'nep-winkel: Pass gekocht, kaart toont bezit en de knop heet weer Sluiten');
+      window.Meting.send = realSend;
+      window.Store.save({ pass: false, worlds: [], cosmetics: false }); window.Progress.setFreezes(0); App.storageSet('crimson-store-mock', '0');
+    }
     App.hideModal('store-modal');
     App.storageSet('crimson-store-mock', '1');
     await App.buy(window.Store.IDS.pass); App.renderThemePicker();
@@ -335,6 +358,8 @@ const active = () => document.querySelector('.screen.active').id;
     const share = Board.shareText();
     // 1.5: the share card gives nothing away (no culprit, victim or positions) and links back to the game
     check(share.includes('Crimson Ledger · ' + Board.theme.title) && !share.includes('🔪') && !share.includes('🩸') && /https:\/\/\S+/.test(share) && share.includes('🟥🟥🟩'), 'deeltekst zonder spoiler, met pogingen en link');
+    // 1.6: the App Store link carries a campaign token per channel
+    check(share.trim().split('\n').pop() === 'https://apps.apple.com/app/id6812534368?ct=share-case&mt=8' && Board.storeLink('x') === 'https://apps.apple.com/app/id6812534368?ct=x&mt=8' && Board.playLink('share-daily') === 'https://jaimycai.github.io/crimson-ledger/play/?ct=share-daily', 'deellink met campagnetoken: ' + share.trim().split('\n').pop());
     document.getElementById('btn-share').click(); await sleep(50);
     check(errors.length === 0, 'delen vanuit plattegrondzaak zonder eerder rasterspel geeft geen fout');
     check(document.getElementById('board-stats').textContent.includes('10 zaken opgelost'), 'voortgang bijgewerkt: ' + document.getElementById('board-stats').textContent);
@@ -464,6 +489,11 @@ const active = () => document.querySelector('.screen.active').id;
     check(active() === 'screen-campaign', 'wereldkaart opent');
     check(document.querySelectorAll('.map-world').length === 25 && document.querySelectorAll('.map-banner').length === 24 && document.querySelectorAll('.map-banner .mapart').length === 24, 'één pad: acht werelden met een getekende banner, dan het archief');
     check(document.querySelectorAll('.mnode').length === 1538 && document.querySelectorAll('.msign').length === 193, `1536 zaken + 2 dossiers, 193 wegwijzers (${document.querySelectorAll('.mnode').length} knopen)`);
+    // 1.6 (onboarding review, endowed progress): the practice case is the first step on the path, already ticked off
+    {
+      const pr = document.querySelectorAll('.mpractice'), first = document.querySelector('.mnode[data-chapter="landhuis"][data-idx="0"]');
+      check(pr.length === 1 && pr[0].closest('.map-landhuis') && pr[0].classList.contains('done') && pr[0].getAttribute('aria-label') === 'Oefenzaak ✓' && /Oefenzaak/.test(pr[0].textContent) && parseFloat(pr[0].style.top) < parseFloat(first.style.top), 'oefenzaak staat afgevinkt als eerste stap op het pad van het Landhuis');
+    }
     check(document.querySelectorAll('.world-tab').length === 24 && document.querySelectorAll('.world-tab small').length === 22 && /Pass/.test(document.querySelector('.world-tab[data-theme="trein"] small').textContent) && document.querySelectorAll('.map-buy').length === 22, 'vierentwintig werelden in de kiezer; tweeëntwintig betaalde werelden dicht met een Pass-knop op de banner');
     check(document.getElementById('campaign-total').textContent === '★ 0/4608', 'sterrenteller over de hele campagne');
     const node = (ch, i) => document.querySelector(`.mnode[data-chapter="${ch}"][data-idx="${i}"]`);
@@ -515,7 +545,9 @@ const active = () => document.querySelector('.screen.active').id;
     check(active() === 'screen-board' && Board.campaignCase.idx === 1 && !document.getElementById('part-modal').classList.contains('active') && document.getElementById('briefing-modal').classList.contains('active'), 'grote knop start zaak 2 met briefing, zonder deel-splash');
     document.getElementById('btn-briefing-go').click();
     Board.stopTimer(); App.navigateTo('menu'); await sleep(300);
-    check(document.getElementById('campaign-progress').textContent.startsWith('1 van 1536') && document.getElementById('campaign-next').textContent === 'Deel I · Zaak 2', 'menu toont campagnevoortgang en de volgende zaak');
+    // 1.6 (endowed progress): during part I the card counts from the ticked-off practice case towards the evidence chest
+    check(document.getElementById('campaign-progress').textContent === 'Oefenzaak ✓ · nog 7 zaken tot de bewijskist' && document.getElementById('campaign-next').textContent === 'Deel I · Zaak 2', 'menu toont de voortgang vanaf de oefenzaak en de volgende zaak: ' + document.getElementById('campaign-progress').textContent);
+    check(!document.getElementById('campaign-steps').hidden && document.querySelectorAll('#campaign-steps i').length === 9 && document.querySelectorAll('#campaign-steps i.on').length === 2 && document.querySelector('#campaign-steps i').classList.contains('practice'), 'negen stapjes: oefenzaak en zaak 1 gezet');
 
     // ── vitrine & bureau ──
     document.getElementById('btn-awards').click(); await sleep(300);

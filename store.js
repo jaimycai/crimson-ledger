@@ -121,7 +121,8 @@ const Store = {
 
   // ── Verbinding met Apple (of de nep-winkel) ──────────────
   plugin() { try { const P = window.Capacitor && window.Capacitor.Plugins; return (P && P.Store) || null; } catch (e) { return null; } },
-  mock() { return !this.plugin() && this.get('crimson-store-mock') === '1'; },
+  // '1' = every purchase succeeds; 'cancel' = the purchase sheet is closed without buying (to test that path)
+  mock() { return !this.plugin() && ['1', 'cancel'].includes(this.get('crimson-store-mock')); },
   available() { return !!this.plugin() || this.mock(); },
   allIds() { return [this.IDS.pass, this.IDS.hints, this.IDS.cosmetics, ...this.paidWorlds().map(w => this.worldId(w))]; },
   async refresh() {
@@ -154,12 +155,47 @@ const Store = {
     if (!P) return this.json('crimson-store-prices', {});
     try {
       const r = await P.products({ ids: this.allIds() });
-      const map = {};
-      (r.products || []).forEach(p => { map[p.id] = p.price; });
+      const map = {}, values = {};
+      (r.products || []).forEach(p => {
+        map[p.id] = p.price;
+        // 1.6: the native layer also sends the price as a number with its currency and format, for the anchor below
+        if (typeof p.value === 'number' && isFinite(p.value) && p.currency) values[p.id] = { v: p.value, c: String(p.currency), l: String(p.locale || '') };
+      });
       this.set('crimson-store-prices', JSON.stringify(map));
+      this.set('crimson-store-values', JSON.stringify(values));
       return map;
     } catch (e) { return this.json('crimson-store-prices', {}); }
   },
+  // A price as a number: { v, c (currency), l (format locale) }. Without App Store prices (web, simulator) the fixed euro
+  // price that price() shows too; null for a store price that came without a number (then no sum rather than a wrong one).
+  value(productId) {
+    const v = this.json('crimson-store-values', {})[productId];
+    if (v && typeof v.v === 'number' && isFinite(v.v) && v.c) return v;
+    if (this.json('crimson-store-prices', {})[productId]) return null;
+    const p = productId === this.IDS.pass ? this.PRICES.pass : productId === this.IDS.hints ? this.PRICES.hints : productId === this.IDS.cosmetics ? this.PRICES.cosmetics : this.PRICES.world;
+    return { v: parseFloat(p.replace(/[^0-9,]/g, '').replace(',', '.')), c: 'EUR', l: '' };
+  },
+  // an amount in the format the App Store uses for this country (its locale), else the language of the app
+  money(amount, currency, locale) {
+    const loc = String(locale || '').split('@')[0].replace(/_/g, '-') || (typeof I18n !== 'undefined' ? I18n.locale() : 'nl-NL');
+    try { return new Intl.NumberFormat(loc, { style: 'currency', currency }).format(amount).replace(/ /g, ' '); }
+    catch (e) { try { return new Intl.NumberFormat('en', { style: 'currency', currency }).format(amount).replace(/ /g, ' '); } catch (e2) { return null; } }
+  },
+  // 1.6, the anchor on the Pass card: the worlds you do not own yet, one by one ("22 werelden los: € 43,78"), from the
+  // store's own prices per country. Null when a price is unknown, the currencies differ, or the sum is not above the Pass.
+  worldsApart() {
+    const ids = this.paidWorlds().filter(w => !this.ownsWorld(w)).map(w => this.worldId(w));
+    const pass = this.value(this.IDS.pass);
+    if (ids.length < 2 || !pass) return null;
+    const vals = ids.map(id => this.value(id));
+    if (vals.some(v => !v || v.c !== pass.c)) return null;
+    const total = Math.round(vals.reduce((n, v) => n + v.v, 0) * 100) / 100;
+    if (!(total > pass.v)) return null;
+    const text = this.money(total, pass.c, pass.l);
+    return text ? { count: ids.length, total: text } : null;
+  },
+  // the short name of a product for the counters: pass, hints10, cosmetics, world.<id> (same as the purchase event)
+  label(productId) { return String(productId).split('.').slice(3).join('.'); },
   // De prijs zoals de App Store hem geeft, met een harde spatie zodat valuta en bedrag nooit uit elkaar breken.
   // Zonder App Store (web, simulator) de vaste europrijs in de schrijfwijze van de taal.
   price(productId) {
@@ -174,7 +210,10 @@ const Store = {
   },
   // koopt één product; geeft { ok, state } terug
   async buy(productId) {
-    if (this.mock()) { this.grant(productId); return { ok: true, state: 'purchased' }; }
+    if (this.mock()) {
+      if (this.get('crimson-store-mock') === 'cancel') return { ok: false, state: 'cancelled' };
+      this.grant(productId); return { ok: true, state: 'purchased' };
+    }
     const P = this.plugin();
     if (!P) return { ok: false, state: 'unavailable' };
     try {
