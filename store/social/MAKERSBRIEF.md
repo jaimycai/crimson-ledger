@@ -120,10 +120,10 @@ staat in de brief en we kijken na of het in de post staat. Vraag de zwaarste vor
 
 Geen juridisch advies; bij twijfel over een land de makers zelf vragen welke vorm zij gebruiken.
 
-## 6. Eerste berichten in MAKERS.md bijwerken vóór verzending
+## 6. Eerste berichten in MAKERS.md bijgewerkt (3 november 2026)
 
 De berichten in `MAKERS.md` §2 (28 oktober) botsen met afspraken van 2 en 3 november: ze noemen een aantal gratis zaken
-("128 casos grátis" enz.) en het puzzelboek als vergelijking. Vervang in elk bericht de zin met het boek en het aantal door:
+("128 casos grátis" enz.) en het puzzelboek als vergelijking. Op 3-11 is in elk bericht de zin met het boek en het aantal vervangen door:
 
 | Taal | Vervangende zin |
 |---|---|

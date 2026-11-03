@@ -28,7 +28,7 @@ Bij YouTube is dat het land van het kanaal. De post is steeds van de afgelopen 3
 | 12 | ES | es | TikTok | [@pastory_booklover](https://www.tiktok.com/@pastory_booklover) | 1.958 | 05-10: puzzelboek "La mansión Graywood", raadsels per kamer ([post](https://www.tiktok.com/@pastory_booklover/video/7693090974381264150)) | pastorycasas@gmail.com | BookTok uit Huelva die in juli de Enigmic-app uitlegde en nu puzzelboeken laat zien. |
 | 13 | MX | es | TikTok | [@pamsi.av](https://www.tiktok.com/@pamsi.av) | 31,4K | 01-10: raadt "el cuaderno de MURDOKU" aan ([post](https://www.tiktok.com/@pamsi.av/video/7691514110130867464)) | hola@mtfagency.com.mx (bureau) | Boeken- en lifestylemaker uit Mérida die Murdoku aanraadde aan "fans de los sudokus y los misterios". Het contact loopt via een bureau. |
 | 14 | MX | es | YouTube (lange video) | [CocoWhispers](https://www.youtube.com/@cocowhispers) | 62,9K abonnees | 28-09: "ASMR Español: Resolviendo un Murdoku", 25 min, 12K views ([video](https://youtu.be/jltvQ4klsb4)) | Instagram @cocowhispers (DM); geen openbaar e-mailadres | Mexicaans ASMR-kanaal dat rustig een zaak oplost, en dat past bij een spel zonder tijdsdruk. Het is een lange video, geen Short. |
-| 15 | FR | fr | TikTok | [@familypop61](https://www.tiktok.com/@familypop61) | 2.516 | 27-10: begint de enquête "La meurtrière n'est pas Noëlle" ([post](https://www.tiktok.com/@familypop61/video/7701427974574230816)) | Familypop@outlook.fr | Post elke dag over speurneus- en puzzelboeken, en uitgevers sturen haar al exemplaren. |
+| 15 | FR | fr | TikTok | [@familypop61](https://www.tiktok.com/@familypop61) | 2.516 | 27-10: begint een kerstenquête uit een puzzelboek ([post](https://www.tiktok.com/@familypop61/video/7701427974574230816)) | Familypop@outlook.fr | Post elke dag over speurneus- en puzzelboeken, en uitgevers sturen haar al exemplaren. |
 
 **Reserves** (zelfde controle, 28-10). Elk valt om één reden buiten de vijftien.
 
@@ -47,45 +47,47 @@ De zoek- en hashtagpagina's van TikTok gaven een botcontrole; die zijn niet gebr
 (afgelopen maand), YouTube-zoeken (deze maand), de lijst uit `onderzoek-2026-10-20-posts.txt`, en de openbare profiel- en
 postpagina's van TikTok en YouTube.
 
-## 2. Berichten (hoogstens 90 woorden)
+## 2. Berichten (hoogstens 95 woorden)
 
 Persoonlijk maken: vul tussen [ ] de naam in en de post die je zag. Verstuur vanaf het eigen account van Crimson Ledger, niet
 vanaf @jaimycai. In het eerste bericht staan geen link en geen code, en we vragen eerst of ze de code willen. Zo raakt er geen code
 verloren en lijkt het bericht minder op spam.
 
-**pt-BR** (84 woorden)
+**pt-BR** (87 woorden)
 > Oi, [nome]! Vi seu vídeo [do Enigmático] e curti muito. Eu faço sozinho, aqui da Holanda, o Crimson Ledger: um jogo de lógica
-> para iPhone e iPad em que você acha o culpado numa planta baixa, no estilo do Murdoku. São 128 casos grátis, sem anúncios.
+> para iPhone e iPad em que você acha o culpado numa planta baixa. Um caso novo todo dia, casos sem fim e nenhum anúncio entre eles.
 > Queria te dar de presente um código do Crimson Pass (todos os mundos e dicas ilimitadas). Sem compromisso e sem roteiro. Se um
 > dia postar, só peço que diga que foi um presente. Posso te mandar o código?
 
-**it** (87 woorden)
+**it** (94 woorden)
 > Ciao [nome]! Ho visto il tuo video [su Murdoku 2] e mi è piaciuto tanto. Sono uno sviluppatore indipendente olandese e creo da
-> solo Crimson Ledger: un gioco di logica per iPhone e iPad in cui trovi il colpevole su una piantina, nello stile di Murdoku.
-> 128 casi gratis, nessuna pubblicità. Vorrei regalarti un codice per il Crimson Pass (tutti i mondi e aiuti illimitati).
+> solo Crimson Ledger: un gioco di logica per iPhone e iPad in cui trovi il colpevole su una piantina. Un caso nuovo ogni giorno,
+> casi senza fine e nessuna pubblicità tra un caso e l'altro. Vorrei regalarti un codice per il Crimson Pass (tutti i mondi e aiuti illimitati).
 > Nessun obbligo, nessun copione. Se un giorno ne parli, ti chiedo solo di dire che è un regalo. Ti mando il codice?
 
-**es** (87 woorden; voor Spanje en Mexico)
+**es** (91 woorden; voor Spanje en Mexico)
 > ¡Hola, [nombre]! Vi tu publicación sobre [Murdoku] y me encantó. Soy un desarrollador independiente de los Países Bajos y hago
-> yo solo Crimson Ledger: un juego de lógica para iPhone y iPad en el que encuentras al culpable en un plano, al estilo de
-> Murdoku. 128 casos gratis, sin anuncios. Me gustaría regalarte un código del Crimson Pass (todos los mundos y pistas
+> yo solo Crimson Ledger: un juego de lógica para iPhone y iPad en el que encuentras al culpable en un plano. Un caso nuevo cada
+> día, casos sin fin y ningún anuncio entre ellos. Me gustaría regalarte un código del Crimson Pass (todos los mundos y pistas
 > ilimitadas). Sin compromiso y sin guion. Si algún día lo publicas, solo te pido que digas que fue un regalo. ¿Te mando el código?
 
-**fr** (87 woorden)
+**fr** (95 woorden)
 > Bonjour [prénom] ! J'ai vu ta vidéo sur [l'enquête de Noël] et j'ai adoré. Je suis un développeur indépendant aux Pays-Bas et
-> je crée seul Crimson Ledger : un jeu de logique pour iPhone et iPad où l'on trouve le coupable sur un plan, dans l'esprit de
-> Murdoku. 128 affaires gratuites, sans pub. J'aimerais t'offrir un code Crimson Pass (tous les mondes et aides illimitées).
+> je crée seul Crimson Ledger : un jeu de logique pour iPhone et iPad où l'on trouve le coupable sur un plan. Une nouvelle affaire
+> chaque jour, des affaires sans fin et aucune pub entre elles. J'aimerais t'offrir un code Crimson Pass (tous les mondes et aides illimitées).
 > Aucune obligation, aucun script. Si un jour tu en parles, je te demande seulement de préciser que c'était un cadeau. Je t'envoie
 > le code ?
 
-**en** (88 woorden)
+**en** (90 woorden)
 > Hi [name]! I saw your video on [Murdoku] and loved it. I'm an independent developer in the Netherlands and make Crimson Ledger
-> on my own: a logic game for iPhone and iPad where you find the culprit on a floor plan, in the spirit of Murdoku. 128 free
-> cases, no ads. I'd like to give you a Crimson Pass code as a gift (all worlds, unlimited hints). No obligation, no script. If
+> on my own: a logic game for iPhone and iPad where you find the culprit on a floor plan. A new case every day, endless cases
+> and no ads between them. I'd like to give you a Crimson Pass code as a gift (all worlds, unlimited hints). No obligation, no script. If
 > you ever post about it, please mention it was a gift. Shall I send the code?
 
-De woordkeuze volgt TIKTOK-PLAN §13: culpado, colpevole, culpable, coupable en culprit, en nergens een woord voor moord of
-kopen. "Murdoku" staat er alleen in als vergelijking, omdat deze makers het boek kennen.
+De woordkeuze volgt TIKTOK-PLAN §13 en de lijst "Nooit" van `.agents/product-marketing.md`: culpado, colpevole, culpable,
+coupable en culprit, nergens een woord uit die lijst of voor kopen. Sinds 3-11-2026 (zie `MAKERSBRIEF.md` §6) zonder aantal
+gratis zaken en zonder het puzzelboek als vergelijking; de haak is eindeloos veel zaken en elke dag een nieuwe. Alleen de
+opening mag de post van de maker zelf noemen (tussen [ ]).
 
 Als iemand ja zegt, stuur dan de code, de inwissellink en de App Store-link (https://apps.apple.com/app/id6812534368), met
 één zin erbij: "Open de app daarna opnieuw; dan staat de Pass aan." Wie na 7 dagen niet reageert, krijgt hoogstens één
