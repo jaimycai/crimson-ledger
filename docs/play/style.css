@@ -1233,6 +1233,21 @@ body.tutorial-mode #btn-share { display: none; }
   margin-left: auto;
   text-align: right;
 }
+/* 1.6: "?" (uitleg) en het vergrootglas (grote borden) tussen klok en zaaknaam */
+.board-acts { display: flex; gap: 6px; margin-left: auto; flex: none; }
+.board-acts + .board-case { margin-left: 0; min-width: 0; }
+.board-act {
+  width: 30px; height: 30px; flex: none; padding: 0;
+  display: flex; align-items: center; justify-content: center;
+  border: 1.5px solid var(--border); border-radius: var(--radius-sm);
+  background: var(--bg-card); color: var(--text-primary); cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.board-act[hidden] { display: none; }
+.board-act .ico { width: 18px; height: 18px; vertical-align: 0; }
+.board-help { font-family: var(--font-heading); font-size: 1rem; font-weight: 700; line-height: 1; }
+.board-act.on { background: var(--accent-subtle); border-color: var(--accent); color: var(--accent); }
+.board-act:active { background: var(--accent-subtle); }
 
 /* ── Het bord ──────────────────────────────────────────────── */
 /* Het bord vult wat er overblijft: de balk staat altijd precies op de onderrand */
@@ -1244,7 +1259,11 @@ body.tutorial-mode #btn-share { display: none; }
   justify-content: center;
   padding: 8px 12px;
   background: var(--bg-secondary);
+  touch-action: pan-y;
 }
+/* ingezoomd (1.6, Board.zoomTo): het podium knipt af, het bord staat linksboven en schuift met een transform */
+.board-stage.zoomed { position: relative; overflow: hidden; touch-action: none; }
+#screen-board .board-stage.zoomed .board-grid { position: absolute; left: 0; top: 0; max-width: none; margin: 0; will-change: transform; }
 .board-grid {
   position: relative;
   display: grid;
@@ -1337,6 +1356,26 @@ body.tutorial-mode #btn-share { display: none; }
   border-radius: 50%;
   border: 1px solid rgba(0,0,0,0.45);
 }
+/* kruisjes (1.6): "deze verdachte stond hier niet", in de kleur van de verdachte; licht = automatisch weggestreept */
+.bx {
+  position: absolute;
+  inset: 14% 8% 24%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  gap: 1px;
+  pointer-events: none;
+}
+.bx i { position: relative; width: 38%; max-width: 13px; aspect-ratio: 1; }
+.bx i::before, .bx i::after {
+  content: ''; position: absolute; left: 50%; top: -8%; width: 2px; height: 116%; margin-left: -1px;
+  border-radius: 1px; background: var(--c, #1A1108); transform: rotate(45deg);
+  box-shadow: 0 0 0 0.5px rgba(255, 255, 255, 0.7);
+}
+.bx i::after { transform: rotate(-45deg); }
+.bx i.auto { opacity: 0.38; }
+.bx i.auto::before, .bx i.auto::after { width: 1.5px; margin-left: -0.75px; box-shadow: none; }
 
 .bcell.shake  { animation: shake 0.3s ease-in-out; }
 .bcell.hinted { outline: 3px solid var(--gold); outline-offset: -3px; }
@@ -1470,6 +1509,10 @@ body.tutorial-mode #btn-share { display: none; }
 .tool-label { font-size: 0.58rem; font-weight: 600; max-width: 100%; white-space: nowrap; }
 .board-tools .tool { min-width: 0; }   /* een lang label maakt de knop niet breder; Board.fitToolLabels verkleint het */
 .board-check { flex: 1.4; padding: 10px 8px; font-size: 0.8rem; }
+@media (max-width: 360px) {
+  .board-tools { gap: 2px; padding-left: 6px; padding-right: 6px; }
+  .board-check { padding: 10px 6px; font-size: 0.74rem; }
+}
 
 @media (min-width: 520px) {
   .board-grid { max-width: 520px; }
@@ -1679,6 +1722,54 @@ body.tutorial-mode #btn-share { display: none; }
 }
 .board-grid[data-floor="kasseien"] .bcell.dark::before {
   background: radial-gradient(ellipse 45% 40% at 70% 30%, rgba(255, 255, 255, 0.30) 0 60%, transparent 63%), radial-gradient(ellipse 45% 40% at 25% 74%, rgba(255, 255, 255, 0.30) 0 60%, transparent 63%), rgba(60, 50, 40, 0.10);
+}
+.board-grid[data-floor="teakdek"] .bcell::before {
+  background: repeating-linear-gradient(180deg, rgba(30, 20, 10, 0.34) 0 1px, transparent 1px 20%), rgba(255, 240, 215, 0.34);
+}
+.board-grid[data-floor="teakdek"] .bcell.dark::before {
+  background: repeating-linear-gradient(180deg, rgba(30, 20, 10, 0.34) 0 1px, transparent 1px 20%), rgba(90, 55, 20, 0.08);
+}
+.board-grid[data-floor="tatami"] .bcell::before {
+  background: linear-gradient(rgba(38, 48, 32, 0.5) 0 2px, transparent 2px calc(100% - 2px), rgba(38, 48, 32, 0.5) calc(100% - 2px)), repeating-linear-gradient(90deg, rgba(110, 120, 50, 0.16) 0 1px, transparent 1px 3px), rgba(245, 238, 200, 0.36);
+}
+.board-grid[data-floor="tatami"] .bcell.dark::before {
+  background: linear-gradient(90deg, rgba(38, 48, 32, 0.5) 0 2px, transparent 2px calc(100% - 2px), rgba(38, 48, 32, 0.5) calc(100% - 2px)), repeating-linear-gradient(180deg, rgba(110, 120, 50, 0.16) 0 1px, transparent 1px 3px), rgba(110, 120, 50, 0.05);
+}
+.board-grid[data-floor="cementtegels"] .bcell::before {
+  background: radial-gradient(circle at 50% 50%, rgba(200, 150, 40, 0.45) 0 8%, transparent 9%), radial-gradient(circle at 50% 32%, rgba(160, 60, 40, 0.22) 0 13%, transparent 14%), radial-gradient(circle at 68% 50%, rgba(160, 60, 40, 0.22) 0 13%, transparent 14%), radial-gradient(circle at 50% 68%, rgba(160, 60, 40, 0.22) 0 13%, transparent 14%), radial-gradient(circle at 32% 50%, rgba(160, 60, 40, 0.22) 0 13%, transparent 14%), radial-gradient(circle at 0 0, rgba(25, 75, 95, 0.14) 0 20%, transparent 21%), radial-gradient(circle at 100% 0, rgba(25, 75, 95, 0.14) 0 20%, transparent 21%), radial-gradient(circle at 0 100%, rgba(25, 75, 95, 0.14) 0 20%, transparent 21%), radial-gradient(circle at 100% 100%, rgba(25, 75, 95, 0.14) 0 20%, transparent 21%), rgba(255, 250, 240, 0.4);
+}
+.board-grid[data-floor="cementtegels"] .bcell.dark::before {
+  background: radial-gradient(circle at 50% 50%, rgba(200, 150, 40, 0.45) 0 8%, transparent 9%), radial-gradient(circle at 50% 32%, rgba(160, 60, 40, 0.22) 0 13%, transparent 14%), radial-gradient(circle at 68% 50%, rgba(160, 60, 40, 0.22) 0 13%, transparent 14%), radial-gradient(circle at 50% 68%, rgba(160, 60, 40, 0.22) 0 13%, transparent 14%), radial-gradient(circle at 32% 50%, rgba(160, 60, 40, 0.22) 0 13%, transparent 14%), radial-gradient(circle at 0 0, rgba(25, 75, 95, 0.14) 0 20%, transparent 21%), radial-gradient(circle at 100% 0, rgba(25, 75, 95, 0.14) 0 20%, transparent 21%), radial-gradient(circle at 0 100%, rgba(25, 75, 95, 0.14) 0 20%, transparent 21%), radial-gradient(circle at 100% 100%, rgba(25, 75, 95, 0.14) 0 20%, transparent 21%), rgba(0, 0, 0, 0.03);
+}
+.board-grid[data-floor="aluminium"] .bcell::before {
+  background: radial-gradient(circle, rgba(70, 80, 92, 0.5) 0 0.9px, transparent 1.4px) 2px 2px / 6px 6px repeat-x, radial-gradient(circle, rgba(70, 80, 92, 0.5) 0 0.9px, transparent 1.4px) 2px calc(50% + 3px) / 6px 6px repeat-x, linear-gradient(rgba(70, 80, 92, 0.3) 1px, transparent 1px) 0 50% / 100% 50% no-repeat, linear-gradient(135deg, rgba(255, 255, 255, 0.55), rgba(225, 232, 240, 0.25));
+}
+.board-grid[data-floor="aluminium"] .bcell.dark::before {
+  background: radial-gradient(circle, rgba(70, 80, 92, 0.5) 0 0.9px, transparent 1.4px) 2px 2px / 6px 6px repeat-x, radial-gradient(circle, rgba(70, 80, 92, 0.5) 0 0.9px, transparent 1.4px) 2px calc(50% + 3px) / 6px 6px repeat-x, linear-gradient(rgba(70, 80, 92, 0.3) 1px, transparent 1px) 0 50% / 100% 50% no-repeat, linear-gradient(135deg, rgba(255, 255, 255, 0.22), rgba(60, 70, 85, 0.06));
+}
+.board-grid[data-floor="traanplaat"] .bcell::before {
+  background: radial-gradient(2.6px 0.9px at 50% 50%, rgba(70, 90, 110, 0.17) 0 70%, transparent 100%) 0 0 / 10px 10px, radial-gradient(2.6px 0.9px at 50% 50%, rgba(70, 90, 110, 0.17) 0 70%, transparent 100%) 5px 5px / 10px 10px, radial-gradient(0.9px 2.6px at 50% 50%, rgba(70, 90, 110, 0.17) 0 70%, transparent 100%) 5px 0 / 10px 10px, radial-gradient(0.9px 2.6px at 50% 50%, rgba(70, 90, 110, 0.17) 0 70%, transparent 100%) 0 5px / 10px 10px, rgba(255, 255, 255, 0.34);
+}
+.board-grid[data-floor="traanplaat"] .bcell.dark::before {
+  background: radial-gradient(2.6px 0.9px at 50% 50%, rgba(70, 90, 110, 0.17) 0 70%, transparent 100%) 0 0 / 10px 10px, radial-gradient(2.6px 0.9px at 50% 50%, rgba(70, 90, 110, 0.17) 0 70%, transparent 100%) 5px 5px / 10px 10px, radial-gradient(0.9px 2.6px at 50% 50%, rgba(70, 90, 110, 0.17) 0 70%, transparent 100%) 5px 0 / 10px 10px, radial-gradient(0.9px 2.6px at 50% 50%, rgba(70, 90, 110, 0.17) 0 70%, transparent 100%) 0 5px / 10px 10px, rgba(20, 40, 60, 0.05);
+}
+.board-grid[data-floor="intarsia"] .bcell::before {
+  background: repeating-linear-gradient(90deg, rgba(90, 50, 20, 0.10) 0 1px, transparent 1px 25%), rgba(255, 255, 255, 0.30);
+}
+.board-grid[data-floor="intarsia"] .bcell.dark::before {
+  background: linear-gradient(rgba(255, 255, 255, 0.20), rgba(255, 255, 255, 0.20)) center / 60% 60% no-repeat, linear-gradient(rgba(90, 50, 20, 0.08), rgba(90, 50, 20, 0.08)) center / 68% 68% no-repeat, rgba(90, 50, 20, 0.04);
+}
+.board-grid[data-floor="sisal"] .bcell::before {
+  background: repeating-linear-gradient(0deg, rgba(122, 82, 54, 0.10) 0 1.5px, transparent 1.5px 4px), rgba(255, 240, 215, 0.32);
+}
+.board-grid[data-floor="sisal"] .bcell.dark::before {
+  background: repeating-linear-gradient(90deg, rgba(122, 82, 54, 0.10) 0 1.5px, transparent 1.5px 4px), rgba(122, 82, 54, 0.05);
+}
+.board-grid[data-floor="hanji"] .bcell::before {
+  background: linear-gradient(rgba(150, 105, 40, 0.22) 1px, transparent 1px) 0 0 / 50% 50%, linear-gradient(rgba(150, 105, 40, 0.12) 1px, transparent 1px) 0 2.5px / 50% 50%, linear-gradient(90deg, rgba(150, 105, 40, 0.22) 1px, transparent 1px) 0 0 / 50% 50%, linear-gradient(90deg, rgba(150, 105, 40, 0.12) 1px, transparent 1px) 2.5px 0 / 50% 50%, linear-gradient(135deg, rgba(255, 244, 214, 0.42), rgba(255, 255, 255, 0.12));
+}
+.board-grid[data-floor="hanji"] .bcell.dark::before {
+  background: linear-gradient(rgba(150, 105, 40, 0.22) 1px, transparent 1px) 0 0 / 50% 50%, linear-gradient(rgba(150, 105, 40, 0.12) 1px, transparent 1px) 0 2.5px / 50% 50%, linear-gradient(90deg, rgba(150, 105, 40, 0.22) 1px, transparent 1px) 0 0 / 50% 50%, linear-gradient(90deg, rgba(150, 105, 40, 0.12) 1px, transparent 1px) 2.5px 0 / 50% 50%, rgba(150, 105, 40, 0.07);
 }
 .board-grid[data-floor="grid"] .bcell.dark::before {
   background:
@@ -1915,6 +2006,14 @@ input, textarea { -webkit-user-select: text; user-select: text; }
 .map-karavaan { background: linear-gradient(45deg, rgba(14, 110, 115, 0.08) 25%, transparent 25% 75%, rgba(14, 110, 115, 0.08) 75%) 0 0 / 28px 28px, #F6ECDC; }
 .map-abdij    { background: linear-gradient(rgba(61, 74, 46, 0.08) 1px, transparent 1px) 0 0 / 100% 30px, linear-gradient(90deg, rgba(61, 74, 46, 0.08) 1px, transparent 1px) 15px 0 / 30px 60px, #EEF0EA; }
 .map-vuurtoren { background: repeating-linear-gradient(170deg, rgba(42, 77, 105, 0.07) 0 2px, transparent 2px 14px), #E8EEF2; }
+.map-oceaanstomer { background: repeating-linear-gradient(180deg, rgba(0, 64, 72, 0.08) 0 1.5px, transparent 1.5px 18px), linear-gradient(90deg, rgba(201, 162, 39, 0.10) 1px, transparent 1px) 0 0 / 90px 100%, #EAF1EF; }
+.map-ryokan   { background: linear-gradient(rgba(91, 42, 78, 0.07) 1px, transparent 1px) 0 0 / 60px 30px, linear-gradient(90deg, rgba(91, 42, 78, 0.07) 1px, transparent 1px) 0 0 / 60px 30px, radial-gradient(circle, rgba(226, 138, 165, 0.32) 0 2px, transparent 3px) 15px 15px / 60px 60px, #F6EEF0; }
+.map-fazenda  { background: radial-gradient(circle, rgba(217, 97, 74, 0.20) 0 2px, transparent 3px) 0 0 / 24px 24px, radial-gradient(circle, rgba(74, 44, 26, 0.12) 0 1.5px, transparent 2.5px) 12px 12px / 24px 24px, #F5EDE2; }
+.map-zeppelin { background: radial-gradient(circle, rgba(102, 90, 128, 0.18) 0 1.2px, transparent 2px) 0 0 / 16px 32px, linear-gradient(rgba(102, 90, 128, 0.07) 1px, transparent 1px) 0 0 / 100% 32px, #EEEFF4; }
+.map-poolstation { background: radial-gradient(circle, rgba(255, 255, 255, 0.95) 0 2px, transparent 3px) 0 0 / 30px 30px, repeating-linear-gradient(160deg, rgba(143, 227, 185, 0.12) 0 10px, transparent 10px 40px), #E8EEF6; }
+.map-winterpaleis { background: repeating-linear-gradient(45deg, rgba(160, 58, 106, 0.06) 0 1px, transparent 1px 16px), repeating-linear-gradient(-45deg, rgba(160, 58, 106, 0.06) 0 1px, transparent 1px 16px), radial-gradient(circle, rgba(255, 255, 255, 0.9) 0 1.5px, transparent 2.5px) 8px 8px / 32px 32px, #F4EDF1; }
+.map-safarilodge { background: repeating-linear-gradient(0deg, rgba(122, 90, 20, 0.07) 0 2px, transparent 2px 9px), repeating-linear-gradient(90deg, rgba(242, 166, 90, 0.10) 0 2px, transparent 2px 9px), #F6EBD8; }
+.map-hanok    { background: linear-gradient(rgba(69, 116, 95, 0.09) 1px, transparent 1px) 0 0 / 34px 34px, linear-gradient(90deg, rgba(69, 116, 95, 0.09) 1px, transparent 1px) 0 0 / 34px 34px, #F4F0E4; }
 .map-archief  { background: repeating-linear-gradient(180deg, rgba(44, 24, 16, 0.05) 0 1px, transparent 1px 22px), #F3EDE3; }
 .map-world.locked .mapart, .map-world.locked .mapprop { filter: grayscale(0.7); opacity: 0.7; }
 .map-banner { position: relative; aspect-ratio: 393 / 200; overflow: hidden; border-bottom: 2px solid #1A1108; }
@@ -2106,6 +2205,14 @@ input, textarea { -webkit-user-select: text; user-select: text; }
 .briefing { text-align: left; }
 .mentor-head { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
 .mentor-img { width: 72px; height: 72px; border-radius: 50%; border: 2.5px solid var(--gold); object-fit: cover; box-shadow: var(--shadow-md); flex: none; }
+/* 1.6: Van Dam groot in de briefing, levend met Rive (rive-art.js); zonder Rive de foto eronder.
+   120 px op een 320-scherm, 168 px op een iPad. */
+.briefing .mentor-head { flex-direction: column; text-align: center; gap: 10px; }
+.mentor-live { position: relative; width: clamp(120px, 38vw, 168px); aspect-ratio: 1 / 1; flex: none; border-radius: 50%;
+  border: 2.5px solid var(--gold); box-shadow: var(--shadow-md); overflow: hidden; background: var(--bg-secondary); }
+.mentor-live .mentor-img { display: block; width: 100%; height: 100%; border: 0; border-radius: 0; box-shadow: none; }
+.mentor-live .rive-canvas { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; transition: opacity 0.3s var(--ease-out); }
+.mentor-live.rive-on .rive-canvas { opacity: 1; }
 .mentor-name { font-size: 1.35rem; }
 .mentor-sub { font-size: 0.8rem; color: var(--gold); font-weight: 700; display: block; }
 .mentor-quote { font-size: 0.95rem; line-height: 1.55; color: var(--text-primary); margin-bottom: 18px; }
@@ -2290,6 +2397,18 @@ input, textarea { -webkit-user-select: text; user-select: text; }
 .bcell.drop-ok  { outline: 3px dashed var(--success); outline-offset: -3px; }
 .bcell.drop-ok::before  { background: rgba(255, 255, 255, 0.72); }
 .bcell.drop-bad { outline: 3px dashed var(--error); outline-offset: -3px; }
+
+/* ── Uitleg op aanvraag (1.6): alle uitlegkaarten onder elkaar ── */
+.help-sheet { padding-top: 14px; max-height: 84dvh; }
+.help-cards { display: flex; flex-direction: column; gap: 8px; margin: 8px 0 14px; }
+.help-card { display: flex; gap: 12px; align-items: flex-start; padding: 10px; border: 1.5px solid var(--border-light); border-radius: var(--radius-md); background: var(--bg-card); }
+.help-card.here { border-color: var(--gold-light); background: #FFFBF0; }
+.help-card .newclue-pic { width: 52px; height: 52px; flex: none; }
+.help-card .newclue-pic svg { width: 100%; height: 100%; display: block; }
+.help-card-body { min-width: 0; }
+.help-card h4 { font-family: var(--font-heading); font-size: 1rem; margin: 0 0 2px; color: var(--text-primary); }
+.help-card p { font-size: 0.84rem; line-height: 1.4; color: var(--text-secondary); margin: 0; }
+.help-here { display: inline-block; margin: 0 0 4px; padding: 1px 7px; border-radius: var(--radius-full); background: var(--gold-light); color: #5A4220; font-size: 0.62rem; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; }
 
 /* ── "Nieuw in dit deel": voorbeeld uit de zaak zelf ───────── */
 .newclue-ex { margin: -6px 0 14px; padding: 10px 12px; border-left: 3px solid var(--gold); background: var(--bg-secondary); border-radius: 0 10px 10px 0; font-size: 0.9rem; line-height: 1.45; color: var(--text-primary); }
@@ -2596,3 +2715,114 @@ button, select, input, textarea { font-family: inherit; }
 #btn-board-hint.pulse { animation: hint-pulse 1.2s ease-in-out infinite; }
 @keyframes hint-pulse { 0%, 100% { box-shadow: 0 0 0 0 rgba(201, 162, 39, 0); } 50% { box-shadow: 0 0 0 8px rgba(201, 162, 39, .45); } }
 @media (prefers-reduced-motion: reduce) { #btn-board-hint.pulse { animation: none; outline: 3px solid rgba(201, 162, 39, .8); } }
+
+/* ── iPad (1.5) ── the window controls (•••) sit in the top-left corner of every iPad window; keep the back
+   button clear of them. The class is set by the viewport script in index.html. */
+html.ipad .screen { padding-top: calc(44px + var(--sat)); }
+html.ipad .board-topbar, html.ipad .map-topbar { padding-top: calc(30px + var(--sat)); }
+
+/* ── Beweging 1.6 (motion.js): stempel, bekentenis, bord wordt kaart, grootboek, streakvlam, Van Dam na stilzitten
+   en het laadscherm. Wat hier staat, is ook het eindbeeld zonder beweging. ── */
+.mo-fx { position: fixed; inset: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: 9000; }
+/* bekentenis: het licht valt weg rond de dader, "Jij was het!" slaat erop */
+.mo-vig { position: fixed; inset: 0; pointer-events: none; z-index: 8000; opacity: 0;
+  background: radial-gradient(circle at var(--x) var(--y), rgba(16, 8, 4, 0) 0, rgba(16, 8, 4, 0) 70px, rgba(16, 8, 4, .62) 190px); }
+.mo-accuse { position: fixed; z-index: 8001; pointer-events: none; transform: translate(-50%, -50%) rotate(-4deg); white-space: nowrap;
+  font-family: var(--font-heading); font-weight: 900; font-size: 1.3rem; color: #fff; background: var(--accent); padding: 4px 12px;
+  border: 3px solid #fff; border-radius: 6px; box-shadow: 0 8px 20px rgba(0, 0, 0, .35); }
+.accuse-ava.mo-cracked { position: relative; }
+.mo-crack { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+.mo-crack path { fill: none; stroke: #2C1810; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 120; stroke-dashoffset: 0; }
+/* grootboek op de uitslag: gelinieerd papier, de nieuwe regel schrijft zich */
+.results-ledger { position: relative; width: 100%; margin-top: 12px; padding: 10px 14px 12px; border-radius: 12px; text-align: start;
+  background: #FBF5E6 repeating-linear-gradient(transparent 0 25px, rgba(139, 46, 28, .1) 25px 26px); background-position: 0 6px;
+  border: 1px solid #E2D3B0; box-shadow: var(--shadow-sm); color: #2C1810; font-size: 0.86rem; }
+.lg-head { font-size: 0.7rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); margin-bottom: 2px; }
+.lg-row { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; line-height: 26px; }
+.lg-case { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-family: var(--font-heading); font-style: italic; }
+.lg-who { flex: none; display: inline-block; transform: rotate(-2deg); font-weight: 900; letter-spacing: 0.04em; text-transform: uppercase; color: var(--accent); }
+.lg-row.pending { opacity: 1; transform: none; }
+.lg-row.pending > span { opacity: 0; }
+.lg-sum { height: 5px; margin-top: 4px; border-top: 1.5px solid #2C1810; border-bottom: 1.5px solid #2C1810; }
+.lg-nib { position: absolute; left: 0; top: 0; width: 18px; height: 18px; opacity: 0; pointer-events: none; }
+/* streakvlam */
+.streak-flame { position: relative; display: inline-block; transform-origin: 50% 85%; color: #D9631E; }
+/* 1.6: grijs als de streak niet leeft (ook het icoon, dus ook bij beperkte beweging) */
+.streak-flame.unlit { color: #A89C92; }
+/* 1.6: de levende Rive-vlam (rive-art.js). Het canvas is groter dan het icoon zodat de ontbranding (ring, vonken)
+   ruimte heeft: het steekt boven en opzij uit. De zichtbare vlam (60% van de hoogte, voet op 11%) valt zo precies
+   over het icoon (1.2em, vertical-align -0.22em); tikken gaan erdoor. */
+.streak-flame .rive-canvas { position: absolute; left: 50%; bottom: 0; width: 1.65em; height: 2.05em; transform: translateX(-50%);
+  pointer-events: none; opacity: 0; transition: opacity 0.3s var(--ease-out); }
+.streak-flame.rive-on .rive-canvas { opacity: 1; }
+.streak-flame.rive-on > .ico { visibility: hidden; }
+#streak-count { display: inline-block; }
+.mo-ring { position: absolute; left: 50%; top: 55%; width: 34px; height: 34px; margin: -17px 0 0 -17px; border-radius: 50%;
+  border: 3px solid #F2A33A; opacity: 0; pointer-events: none; }
+/* Van Dam na stilzitten: de rest dimt, de verklaring komt omhoog */
+.clue-deck { position: relative; }
+#screen-board .board-stage, #screen-board .board-suspects { transition: opacity 0.45s var(--ease-out); }
+#screen-board.mo-stuck .board-stage, #screen-board.mo-stuck .board-suspects { opacity: 0.45; }
+.dclue.mo-lift { position: relative; z-index: 2; transform: translateY(-5px) scale(1.03); box-shadow: 0 14px 30px rgba(0, 0, 0, .28), 0 0 0 3px var(--gold);
+  transition: transform 0.45s var(--ease-spring), box-shadow 0.45s var(--ease-out); }
+.mo-tip { position: absolute; left: 12px; right: 12px; bottom: calc(100% + 8px); z-index: 5; display: flex; align-items: center; gap: 8px;
+  padding: 8px 10px; border-radius: 12px; background: var(--bg-card); border: 2px solid var(--gold); box-shadow: var(--shadow-lg);
+  font-size: 0.85rem; font-weight: 600; color: var(--text-primary); }
+.mo-tip img { flex: none; width: 34px; height: 34px; border-radius: 50%; object-fit: cover; }
+/* laadscherm: zinnetjes onder de balk */
+.splash-status { position: absolute; left: -20px; right: -20px; top: calc(50% + 12px); margin: 0; text-align: center;
+  font-size: 0.78rem; color: var(--text-secondary); transition: opacity 0.3s var(--ease-out); }
+#screen-splash.loaded .splash-status { opacity: 0; }
+
+/* ── Zo zat het (1.6): de afloop van Van Dam op het resultaatscherm, ingeklapt ── */
+.results-afloop { width: 100%; background: var(--bg-card); border: 1.5px solid var(--gold-light); border-radius: 14px; text-align: start; transition: opacity 0.35s var(--ease-out); }
+.results-afloop[hidden] { display: none; }
+/* verschijnt samen met de opmerking van Van Dam als de ceremonie klaar is */
+.mentor-remark.pending ~ .results-afloop { opacity: 0; }
+.afloop-summary { display: flex; align-items: center; gap: 10px; padding: 10px 14px; cursor: pointer; list-style: none; -webkit-tap-highlight-color: transparent; }
+.afloop-summary::-webkit-details-marker { display: none; }
+.afloop-summary img { width: 36px; height: 36px; border-radius: 50%; border: 1.5px solid var(--gold); object-fit: cover; flex: none; }
+.afloop-head { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 1px; }
+.afloop-title { font-family: var(--font-heading); font-size: 1.05rem; font-weight: 700; color: var(--accent); line-height: 1.2; }
+.afloop-sub { font-size: 0.78rem; color: var(--text-light); line-height: 1.3; }
+.afloop-chev { flex: none; font-size: 1.4rem; line-height: 1; color: var(--accent); transition: transform 0.25s var(--ease-out); }
+.results-afloop[open] .afloop-chev { transform: rotate(90deg); }
+/* › spiegelt in rechts-naar-links vanzelf tot ‹; open wijst hij omlaag */
+[dir="rtl"] .results-afloop[open] .afloop-chev { transform: rotate(-90deg); }
+.afloop-body { padding: 0 12px 12px; border-top: 1px solid var(--divider); }
+.afloop-step { margin: 10px 0 0; gap: 5px; }
+/* verklaringen als compacte regels: portret, naam en de zin, zonder tekstballon */
+.afloop-clues { gap: 4px; }
+.afloop-clues .afloop-clue { min-height: 0; padding: 6px 8px; gap: 8px; align-items: center; box-shadow: none; border-width: 1px; border-color: var(--border-light); background: var(--bg-card); }
+.afloop-clues .afloop-clue .bclue-ava { width: 30px; height: 30px; border-width: 1.5px; }
+.afloop-clues .afloop-clue .bclue-pair { margin-top: 0; }
+.afloop-clues .afloop-clue .bclue-pair .bclue-ava { width: 24px; height: 24px; }
+.afloop-clues .afloop-clue .bclue-num { margin-top: 0; }
+.afloop-clues .afloop-clue .bclue-name { font-size: 0.74rem; color: var(--text-secondary); }
+.afloop-clues .afloop-clue .bclue-text { margin-top: 0; padding: 0; background: none; border-radius: 0; font-size: 0.86rem; line-height: 1.35; }
+.afloop-step .hint-meaning { font-size: 0.86rem; line-height: 1.45; }
+.afloop-rule { font-size: 0.8rem; line-height: 1.4; color: var(--text-secondary); margin: 0; }
+.afloop-verdict { font-size: 0.92rem; font-weight: 700; line-height: 1.4; color: var(--accent); margin: 2px 0 0; padding: 7px 10px; border-inline-start: 3px solid var(--accent); background: var(--accent-subtle); border-radius: 0 10px 10px 0; }
+[dir="rtl"] .afloop-verdict { border-radius: 10px 0 0 10px; }
+.afloop-item { display: flex; align-items: center; gap: 10px; margin-top: 12px; padding: 8px 12px; border: 1.5px dashed var(--gold); border-radius: 12px; background: #FBF6EC; }
+.afloop-item-icon { font-size: 1.6rem; line-height: 1; flex: none; }
+.afloop-item-text { display: flex; flex-direction: column; min-width: 0; }
+.afloop-item-label { font-size: 0.7rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: #8A6A33; }
+.afloop-item-text b { font-family: var(--font-heading); font-size: 1rem; color: var(--text-primary); }
+@media (prefers-reduced-motion: reduce) { .results-afloop, .afloop-chev { transition: none; } }
+
+/* ── Gemiste dagzaken (1.6): stippellijn in de weekstrook, kaartjes eronder ── */
+.wday.missed { cursor: pointer; color: var(--accent); }
+.wday.missed i { border-style: dashed; border-color: var(--accent); color: var(--accent); background: var(--accent-subtle); }
+.wday.late i { background: #FBF3E2; border-color: var(--gold); border-style: dashed; color: #8A6A33; }
+.missed-row { margin-top: 12px; padding-top: 10px; border-top: 1px dashed var(--border); }
+.missed-row[hidden] { display: none; }
+.missed-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 2px 8px; }
+.missed-label { font-size: 0.8rem; font-weight: 800; color: var(--accent); }
+.missed-note { font-size: 0.72rem; color: var(--text-light); }
+.missed-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.missed-chip { display: inline-flex; align-items: center; gap: 5px; min-height: 36px; padding: 4px 10px 4px 7px; border: 1.5px dashed var(--accent); border-radius: 999px;
+  background: var(--accent-subtle); color: var(--accent); font: inherit; font-size: 0.8rem; font-weight: 700; cursor: pointer; -webkit-tap-highlight-color: transparent; }
+.missed-chip:active { transform: scale(0.96); }
+.missed-world { font-size: 1rem; line-height: 1; }
+.missed-day { white-space: nowrap; }

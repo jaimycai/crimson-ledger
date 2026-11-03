@@ -31,11 +31,20 @@ const WEEK_TITLES = {
   filmstudio: ['De film die niemand mocht zien', 'De stunt die misging', 'De stem op de geluidsband', 'De laatste scène van Gold'],
   karavaan: ['De saffraan van Al-Nour', 'De nacht van duizend sterren', 'Het tapijt met twee patronen', 'De laatste karavaan'],
   abdij:    ['Het boek zonder titel', 'De nacht van de stille klok', 'Het kruid dat niet genas', 'De laatste abt van Sint-Aldric'],
-  vuurtoren: ['Het licht dat uitging', 'De man uit zee', 'De bladzijde uit het logboek', 'De laatste nacht op Grauwkaap']
+  vuurtoren: ['Het licht dat uitging', 'De man uit zee', 'De bladzijde uit het logboek', 'De laatste nacht op Grauwkaap'],
+  oceaanstomer: ['De komeet boven het dek', 'Het telegram zonder naam', 'De kluis van de purser', 'De laatste nacht voor New York'],
+  ryokan:   ['De theekom van driehonderd jaar', 'Licht bij de bron', 'Voetstappen in de regen', 'De laatste gast van Tsukikage'],
+  fazenda:  ['De zak die niet aankwam', 'Het spoor door de bessen', 'De nacht van de vorst', 'Het laatste feest op de veranda'],
+  zeppelin: ['De envelop boven de oceaan', 'De motor die stilviel', 'Voetstappen op de loopbrug', 'De laatste ronde boven Rio'],
+  poolstation: ['De lege stoel van midwinter', 'Het touw in de storm', 'De ijskern in stukken', 'De laatste nacht onder het poollicht'],
+  winterpaleis: ['Het lege juwelenei', 'Sporen op de ijsbaan', 'Het spiegelbeeld dat niet klopte', 'De laatste wals van de eeuw'],
+  safarilodge: ['De laatste opname', 'Schoenen bij de waterpoel', 'De ballon met één te veel', 'De nacht van de grote trek'],
+  hanok:    ['De vierde regel', 'De pot die anders smaakte', 'Licht in de theekamer', 'De laatste maan van Dalbit']
 };
-// sinds 1.4 met Hacienda, Opera, Opgraving, Casino, Filmstudio, Karavaan, Abdij en Vuurtoren: de rotatie verschuift, daarom bewaart board.js een weekzaak per week én wereld
+// sinds 1.4 met Hacienda, Opera, Opgraving, Casino, Filmstudio, Karavaan, Abdij en Vuurtoren, sinds 1.6 met wereld 17-24: de rotatie
+// verschuift, daarom bewaart board.js een weekzaak per week én wereld
 const WEEK_THEMES = ['landhuis', 'piraten', 'hotel', 'ruimte', 'museum', 'trein', 'circus', 'skihut', 'hacienda', 'opera', 'opgraving', 'casino',
-  'filmstudio', 'karavaan', 'abdij', 'vuurtoren'];
+  'filmstudio', 'karavaan', 'abdij', 'vuurtoren', 'oceaanstomer', 'ryokan', 'fazenda', 'zeppelin', 'poolstation', 'winterpaleis', 'safarilodge', 'hanok'];
 
 const Progress = {
   // ── opslag (via App, zodat privémodus nooit crasht) ──
@@ -75,13 +84,41 @@ const Progress = {
     const monday = new Date(now); monday.setHours(0, 0, 0, 0);
     monday.setDate(monday.getDate() - ((monday.getDay() + 6) % 7));
     const today = this.dayKey(now);
+    // gemist = nog na te spelen (zie missedDays); laat = alsnog gespeeld, telt niet als gespeeld voor de streak
+    const late = new Set(this.lateLog()), missed = new Set(this.missedDays(now).map(m => m.key));
     return PG_T('Ma,Di,Wo,Do,Vr,Za,Zo').split(',').map((label, i) => {
       const d = new Date(monday); d.setDate(monday.getDate() + i);
       const key = this.dayKey(d);
-      return { label, key, played: log.has(key), today: key === today, future: key > today, reward: i === 6 };
+      return { label, key, played: log.has(key), today: key === today, future: key > today, reward: i === 6,
+               missed: missed.has(key), late: !log.has(key) && late.has(key) };
     });
   },
   weekFull(now = new Date()) { return this.week(now).every(d => d.played); },
+
+  // ── Gemiste dagzaken naspelen (1.6) ────────────────────────
+  // De dagzaken van de afgelopen zeven dagen die je niet speelde, met dezelfde seed als die dag. Ze tellen als
+  // opgeloste zaak en voor medailles, maar staan in een eigen logboek: niet in crimson-daily-log, dus geen streak,
+  // geen vrije dag, geen volle week. Pas vanaf de dag dat je de app voor het eerst opende (crimson-first-day).
+  MISSED_DAYS: 7,
+  lateLog() { return this.json('crimson-daily-late', []); },
+  logLate(key) {
+    const log = this.lateLog();
+    if (key && !log.includes(key)) { log.push(key); this.set('crimson-daily-late', JSON.stringify(log.slice(-60))); }
+    return log;
+  },
+  // 'JJJJ-MM-DD' → die dag om twaalf uur 's middags (zo valt een zomertijdwissel nooit op de verkeerde dag)
+  dateOf(key) { const [y, m, d] = String(key).split('-').map(Number); return new Date(y, (m || 1) - 1, d || 1, 12); },
+  missedDays(now = new Date()) {
+    const played = new Set(this.dailyLog()), late = new Set(this.lateLog());
+    const first = this.get('crimson-first-day') || this.dayKey(now);
+    const out = [];
+    for (let i = this.MISSED_DAYS; i >= 1; i--) {
+      const d = new Date(now.getFullYear(), now.getMonth(), now.getDate() - i, 12);
+      const key = this.dayKey(d);
+      if (key >= first && !played.has(key) && !late.has(key)) out.push({ key, date: d });
+    }
+    return out;
+  },
   dailyTitle(dayNumber) { return DAILY_TITLES[((dayNumber % DAILY_TITLES.length) + DAILY_TITLES.length) % DAILY_TITLES.length]; },
 
   // ── Zaak van de week (ISO-week, vaste seed, moeilijk) ──────
@@ -206,6 +243,14 @@ const Progress = {
     { id: 'karavaan',      icon: '🐫', title: 'De karavaan trekt verder', hint: 'Maak alle delen van Karavanserai Al-Nour af',             test: c => c.worldsDone.includes('karavaan') },
     { id: 'abdij',         icon: '⛪', title: 'De klok luidt',          hint: 'Maak alle delen van De Abdij van Sint-Aldric af',           test: c => c.worldsDone.includes('abdij') },
     { id: 'vuurtoren',     icon: '🌊', title: 'Het licht brandt weer',  hint: 'Maak alle delen van Vuurtoren Grauwkaap af',                test: c => c.worldsDone.includes('vuurtoren') },
+    { id: 'oceaanstomer',  icon: '🚢', title: 'Aangemeerd in New York', hint: 'Maak alle delen van SS Halcyon af',                         test: c => c.worldsDone.includes('oceaanstomer') },
+    { id: 'ryokan',        icon: '🏮', title: 'De bron dampt',          hint: 'Maak alle delen van Ryokan Tsukikage af',                   test: c => c.worldsDone.includes('ryokan') },
+    { id: 'fazenda',       icon: '☕', title: 'De boeken kloppen',      hint: 'Maak alle delen van Fazenda Boa Esperança af',              test: c => c.worldsDone.includes('fazenda') },
+    { id: 'zeppelin',      icon: '☁️', title: 'Vast aan de mast',       hint: 'Maak alle delen van Luchtschip Cirrus af',                  test: c => c.worldsDone.includes('zeppelin') },
+    { id: 'poolstation',   icon: '🐧', title: 'De zon komt terug',      hint: 'Maak alle delen van Poolstation Zuiderkruis af',            test: c => c.worldsDone.includes('poolstation') },
+    { id: 'winterpaleis',  icon: '❄️', title: 'De nieuwe eeuw',         hint: 'Maak alle delen van Paleis Zvezdin af',                     test: c => c.worldsDone.includes('winterpaleis') },
+    { id: 'safarilodge',   icon: '🦒', title: 'De trek gaat verder',    hint: 'Maak alle delen van Twiga Lodge af',                        test: c => c.worldsDone.includes('safarilodge') },
+    { id: 'hanok',         icon: '🌕', title: 'Het gedicht is af',      hint: 'Maak alle delen van Hanok Dalbit af',                       test: c => c.worldsDone.includes('hanok') },
     { id: 'opdrachten',    icon: '🎁', title: 'Alle opdrachten',       hint: 'Maak alle drie de opdrachten van een dag af',                test: c => !!c.questsAll },
     { id: 'vrije-dag',     icon: '🧊', title: 'Gered door een vrije dag', hint: 'Laat een vrije dag je streak redden',                     test: c => !!c.freezeUsed },
     { id: 'vlekkeloos',    icon: '⭐', title: 'Vlekkeloos',            hint: 'Haal tien keer drie sterren in de campagne',                 test: c => c.threeStars >= 10 },

@@ -17,7 +17,7 @@
   <meta name="twitter:card" content="summary">
   <link rel="icon" href="icon-192.png">
   <link rel="apple-touch-icon" href="icon-192.png">
-  <link rel="stylesheet" href="style.css?v=35f40720">
+  <link rel="stylesheet" href="style.css?v=f29ab130">
   <link rel="stylesheet" href="dagzaak.css?v=01cc9a81">
   <!-- meting.js stuurt dan platform 'webdaily', zodat web en app apart geteld worden -->
   <script>window.WEB_DAILY = true;</script>
@@ -80,6 +80,10 @@
       <div class="board-topbar">
         <button class="back-btn back-btn-sm" id="btn-board-back">←</button>
         <span class="board-timer" id="board-timer">00:00</span>
+        <div class="board-acts">
+          <button type="button" class="board-act board-help" id="btn-board-help" aria-label="Uitleg van de verklaringen">?</button>
+          <button type="button" class="board-act" id="btn-board-zoom" aria-label="Inzoomen" hidden=""><i class="ico" data-icon="zoom-in"></i></button>
+        </div>
         <span class="board-case" id="board-diff-tag"></span>
       </div>
       <p class="board-casetext" id="board-casetext"></p>
@@ -119,6 +123,9 @@
         </button>
         <button type="button" class="tool" id="btn-board-mark">
           <span class="tool-icon"><i class="ico" data-icon="pencil"></i></span><span class="tool-label">Potlood</span>
+        </button>
+        <button type="button" class="tool" id="btn-board-cross">
+          <span class="tool-icon"><i class="ico" data-icon="x"></i></span><span class="tool-label">Kruisje</span>
         </button>
         <button type="button" class="tool" id="btn-board-erase">
           <span class="tool-icon"><i class="ico" data-icon="eraser"></i></span><span class="tool-label">Gum</span>
@@ -188,26 +195,35 @@
     <div class="modal-content newclue-sheet" id="newclue-host"></div>
   </div>
 
+<div class="modal-overlay" id="help-modal">
+    <div class="modal-content help-sheet">
+      <div class="modal-handle"></div>
+      <h3 class="clue-sheet-title">Zo lees je de verklaringen</h3>
+      <div class="help-cards" id="help-cards"></div>
+      <button type="button" class="btn btn-secondary btn-block" id="btn-help-close">Sluiten</button>
+    </div>
+  </div>
+
 <div class="clue-toast" id="toast">
     <span class="clue-toast-icon" id="toast-icon">💡</span>
     <span id="toast-text"></span>
   </div>
 
-  <span id="app-version" hidden>1.4.1</span>
+  <span id="app-version" hidden>1.6.0</span>
 
-  <script src="avatars.js?v=72016d23"></script>
+  <script src="avatars.js?v=e8f263c8"></script>
   <script src="story.js?v=cd0f37d1"></script>
-  <script src="themes.js?v=c84af16a"></script>
-  <script src="progress.js?v=b98c2b69"></script>
+  <script src="themes.js?v=93f1c37a"></script>
+  <script src="progress.js?v=d4d50053"></script>
   <script src="mentor.js?v=ecad228e"></script>
   <script src="meting.js?v=dd34ef94"></script>
   <script src="i18n.js?v=071047bb"></script>
   <script src="grammar.js?v=8cd7ec1e"></script>
-  <script src="icons.js?v=57d0f876"></script>
+  <script src="icons.js?v=fcd45b09"></script>
   <script src="sound.js?v=bb865427"></script>
-  <script src="floorplan.js?v=964e3e97"></script>
-  <script src="board.js?v=afba11cc"></script>
-  <script src="gedeeld.js?v=5e19e603"></script>
+  <script src="floorplan.js?v=b72ab68e"></script>
+  <script src="board.js?v=569e310b"></script>
+  <script src="gedeeld.js?v=470dbf0d"></script>
   <script src="teksten.js?v=b721be77"></script>
   <script src="dagzaak.js?v=2da3b66a"></script>
 </body>

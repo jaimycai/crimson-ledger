@@ -67,7 +67,10 @@ const ICONS = {
   'volume': '<path d="M15 8a5 5 0 0 1 0 8m2.7-11a9 9 0 0 1 0 14M6 15H4a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1h2l3.5-4.5A.8.8 0 0 1 11 5v14a.8.8 0 0 1-1.5.5z"/>',
   'volume-off': '<path d="M15 8a5 5 0 0 1 1.912 4.934m-1.377 2.602A5 5 0 0 1 15 16m2.7-11a9 9 0 0 1 2.362 11.086m-1.676 2.299A9 9 0 0 1 17.7 19M9.069 5.054L9.5 4.5A.8.8 0 0 1 11 5v2m0 4v8a.8.8 0 0 1-1.5.5L6 15H4a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1h2l1.294-1.664M3 3l18 18"/>',
   'world': '<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0-18 0m.6-3h16.8M3.6 15h16.8"/><path d="M11.5 3a17 17 0 0 0 0 18m1-18a17 17 0 0 1 0 18"/></g>',
-  'x': '<path d="M18 6L6 18M6 6l12 12"/>'
+  'x': '<path d="M18 6L6 18M6 6l12 12"/>',
+  // 1.6: inzoomen op het bord en terug naar het hele bord
+  'zoom-in': '<path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0-14 0m4 0h6m-3-3v6m11 8l-6-6"/>',
+  'zoom-out': '<path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0-14 0m4 0h6m8 11l-6-6"/>'
 };
 
 const Icons = {
@@ -78,7 +81,7 @@ const Icons = {
     '🎨': 'palette', '🛒': 'shopping-cart', '🧊': 'snowflake', '🔥': 'flame', '🎓': 'school', '🔒': 'lock', '🎁': 'gift',
     '📅': 'calendar', '🗓': 'calendar', '📁': 'folder', '✨': 'sparkles', '🏆': 'trophy', '📖': 'book', '🔁': 'repeat',
     '👁': 'eye', '▶': 'player-play', '✓': 'check', '↗': 'external-link', '←': 'arrow-left', '→': 'arrow-right', '🎖': 'award',
-    '⏱': 'clock', '🔍': 'search', '⚙': 'settings', '✅': 'check', '💬': 'message-circle'
+    '⏱': 'clock', '🔍': 'search', '⚙': 'settings', '✅': 'check', '💬': 'message-circle', '✖': 'x'
   },
   // waar emoji inhoud zijn en blijven
   KEEP: '.medal-icon, .medal-toast-icon, .theme-icon, .part-icon, .ev, .vitrine, .chest-items, .bclue-text, .dclue, .board-grid, .mini-grid, .story, .briefing-text, .results-solution, .map-art, select, option, textarea, input, svg, .classic, #screen-classic',
