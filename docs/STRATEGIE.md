@@ -147,6 +147,28 @@ Wat dan mee moet in die versie (vooraf weten, want het raakt de winkel):
   een vrijwillige reclamevideo. De Crimson Pass haalt dan ook de reclame weg (meerwaarde voor bestaande kopers).
 - Tot die drempel blijft "geen reclame" het verkoopargument tegenover Enigmic.
 
+### 7.1 Voorstel: de vorm van de reclame — besluit Jaimy
+
+*Voorstel van 3-11-2026 (MARKETINGSKILLS-2026-11 §4.4 en §5 #9; skills `pricing` en `customer-research`). Nog niet
+besloten en niet gebouwd. Het vervangt de regel "reclame na een opgeloste zaak, zoals Enigmic" hierboven zodra Jaimy kiest.*
+
+Waarom anders dan Enigmic: van 47 recente Enigmic-reviews met 3 sterren of minder gaan er 19 over reclame na elke puzzel
+(langer dan de puzzel zelf, € 5,99 om weg te halen). Wat Enigmic omzet geeft, kost daar beoordelingen, en beoordelingen
+zijn ons grootste gat in de winkel (ASO-scorekaart: 1 van 10).
+
+| # | Regel | Waarom |
+|---|---|---|
+| 1 | **Eerst alleen vrijwillig:** een reclamevideo die de speler zelf kiest, voor een extra hint (en eventueel een streakredder). Geen gedwongen reclame in de eerste versie met reclame. | Beloont wie wil kijken; straft niemand. Meet eerst wat het oplevert |
+| 2 | **Komt er toch gedwongen reclame:** hooguit één per drie opgeloste zaken én hooguit één per tien minuten, alleen na een opgeloste zaak, nooit tijdens een zaak, nooit na een foute beschuldiging of een opgegeven zaak, en nooit langer dan 15 seconden of met een sluitknop na 5 seconden. | Frequentielimiet houdt het speelplezier heel; na een fout voelt reclame als straf |
+| 3 | **Nooit in het begin:** geen enkele reclame in de oefenzaak, de eerste tien opgeloste zaken en de eerste drie dagen na de eerste start. | Het aha-moment ligt bij zaak 1 tot ~6 (`docs/onderzoek/AHA-2026-11.md`); daar mag niets tussen komen |
+| 4 | **De Crimson Pass haalt alle gedwongen reclame weg,** ook voor wie de Pass al eerder kocht. Vrijwillige video's blijven als keuze. Geen aparte aankoop "reclame weg" naast de Pass. | Eén heldere belofte; meerwaarde voor bestaande kopers; geen extra prijspunt om te leren |
+| 5 | **Nooit in de dagzaak en de zaak van de week vóór het oplossen,** en nooit in de webdagzaak. | Dat zijn de deel- en terugkommomenten |
+| 6 | **Eerlijk in de winkel:** in dezelfde versie alle 23 winkelteksten van "geen reclame" naar "geen reclame tijdens een zaak" (of wat dan klopt), het privacylabel bijwerken, en de ATT-vraag alleen als het netwerk tracking nodig heeft (liever een netwerk of instelling zonder tracking). | Apple 2.3 (kloppende metadata); de huidige belofte mag niet blijven staan |
+| 7 | **Meten vóór uitbreiden:** per dag het aantal getoonde en gekozen video's, en D1/D7 en beoordelingen in de twee weken voor en na. Daalt D7 of het gemiddelde cijfer merkbaar, dan terug naar regel 1. | Reclame mag de groei niet opeten waarvoor ze dient |
+
+**Beslispunten voor Jaimy:** (a) akkoord met regel 1-7, of alleen regel 1 (alleen vrijwillig); (b) de drempel blijft
+5.000-10.000 downloads in totaal; (c) de positionering tot die tijd blijft "geen reclame tussen de zaken". Na de keuze
+pas de tabel hierboven aan en schrap de Enigmic-regel.
 
 - Tot ≥100 nieuwe spelers/dag: geen nieuwe betaalmomenten, alleen frictie weg (hints verdienen,
   deel I gratis). De Pass blijft "alles meteen"; prijzen blijven staan.
