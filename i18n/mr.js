@@ -481,7 +481,9 @@
     "Je hebt {0} opgelost. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "तुम्ही {0} पूर्ण केला. पुढे आणखी {1} भाग आणि {2} प्रकरणे वाट पाहत आहेत.",
     "{0} staat al open. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "{0} आधीच खुला आहे. पुढे आणखी {1} भाग आणि {2} प्रकरणे वाट पाहत आहेत.",
     "🧊 Twee keer je streak redden als je een dag mist": "🧊 एखादा दिवस चुकला तर दोनदा तुमची मालिका वाचवा",
-    "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "ॲप स्टोअरमधील तुमच्या खात्यातून एकदाच खरेदी, सदस्यता नाही. प्रत्येक जगाचा भाग I, हवेली, चाच्यांचे जहाज, दैनिक प्रकरण, आठवड्याचे प्रकरण आणि अभिलेखागार नेहमी मोफत राहतात."
+    "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "ॲप स्टोअरमधील तुमच्या खात्यातून एकदाच खरेदी, सदस्यता नाही. प्रत्येक जगाचा भाग I, हवेली, चाच्यांचे जहाज, दैनिक प्रकरण, आठवड्याचे प्रकरण आणि अभिलेखागार नेहमी मोफत राहतात.",
+    "Een logische detectivepuzzel": "एक गुप्तहेर तर्कशुद्ध कोडे",
+    "Elke puzzel ontmaskert een dader": "प्रत्येक कोडे एका गुन्हेगाराचा पर्दाफाश करते"
   },
 
   data: {

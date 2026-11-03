@@ -481,7 +481,9 @@
     "Je hebt {0} opgelost. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "{0}{0|c:을|v:를} 해결했어요. 앞으로 {1}개 장과 사건 {2}건이 기다리고 있어요.",
     "{0} staat al open. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "{0}{0|c:은|v:는} 이미 열려 있어요. 앞으로 {1}개 장과 사건 {2}건이 기다리고 있어요.",
     "🧊 Twee keer je streak redden als je een dag mist": "🧊 하루를 놓쳐도 연속 기록을 두 번 지켜요",
-    "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "앱 스토어 계정으로 하는 일회성 구매이며, 구독이 아니에요. 모든 월드의 제1장, 저택, 해적선, 일일 사건, 주간 사건, 기록 보관소는 언제나 무료예요."
+    "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "앱 스토어 계정으로 하는 일회성 구매이며, 구독이 아니에요. 모든 월드의 제1장, 저택, 해적선, 일일 사건, 주간 사건, 기록 보관소는 언제나 무료예요.",
+    "Een logische detectivepuzzel": "탐정 논리 퍼즐",
+    "Elke puzzel ontmaskert een dader": "퍼즐마다 범인의 정체가 드러난다"
   },
 
   data: {

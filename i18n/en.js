@@ -15,7 +15,7 @@
     // titel en startscherm
     'Crimson Ledger — Speur. Redeneer. Ontmasker.': 'Crimson Ledger — Search. Reason. Unmask.',
     'Speur. Redeneer. Ontmasker.': 'Search. Reason. Unmask.',
-    'Een moordmysterie logic-puzzel': 'A murder-mystery logic puzzle',
+    'Een moordmysterie logic-puzzel': 'A murder-mystery logic puzzle', 'Een logische detectivepuzzel': 'A detective logic puzzle', 'Elke puzzel ontmaskert een dader': 'Every puzzle unmasks a culprit',
     'Begin': 'Start', 'Verder': 'Continue', 'Laden': 'Loading',
     'Elke puzzel ontmaskert een moordenaar': 'Every puzzle unmasks a murderer',
     // startscherm

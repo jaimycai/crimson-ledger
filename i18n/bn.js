@@ -481,7 +481,9 @@
     "Je hebt {0} opgelost. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "আপনি {0} শেষ করেছেন। এরপর আরও {1}টি পর্ব আর {2}টি কেস অপেক্ষা করছে।",
     "{0} staat al open. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "{0} আগেই খোলা। এরপর আরও {1}টি পর্ব আর {2}টি কেস অপেক্ষা করছে।",
     "🧊 Twee keer je streak redden als je een dag mist": "🧊 কোনো দিন বাদ পড়লে দুবার আপনার ধারা বাঁচান",
-    "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "অ্যাপ স্টোরের অ্যাকাউন্ট দিয়ে এককালীন কেনাকাটা, কোনো সাবস্ক্রিপশন নেই। প্রতিটি জগতের প্রথম পর্ব, বাগানবাড়ি, জলদস্যুর জাহাজ, দৈনিক কেস, সপ্তাহের কেস আর মহাফেজখানা সবসময় বিনামূল্যে।"
+    "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "অ্যাপ স্টোরের অ্যাকাউন্ট দিয়ে এককালীন কেনাকাটা, কোনো সাবস্ক্রিপশন নেই। প্রতিটি জগতের প্রথম পর্ব, বাগানবাড়ি, জলদস্যুর জাহাজ, দৈনিক কেস, সপ্তাহের কেস আর মহাফেজখানা সবসময় বিনামূল্যে।",
+    "Een logische detectivepuzzel": "একটি গোয়েন্দা যুক্তির ধাঁধা",
+    "Elke puzzel ontmaskert een dader": "প্রতিটি ধাঁধা একজন অপরাধীকে উন্মোচন করে"
   },
 
   data: {

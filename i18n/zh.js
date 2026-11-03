@@ -481,7 +481,9 @@
     "Je hebt {0} opgelost. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "你已破解{0}。接下来还有{1}章、{2}个案件。",
     "{0} staat al open. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "{0}已开放。接下来还有{1}章、{2}个案件。",
     "🧊 Twee keer je streak redden als je een dag mist": "🧊 漏玩一天时，两次保住你的连胜",
-    "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "通过你的应用商店账户一次性购买，不是订阅。每个世界的第一章、庄园、海盗船、每日案件、每周案件和档案库永远免费。"
+    "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "通过你的应用商店账户一次性购买，不是订阅。每个世界的第一章、庄园、海盗船、每日案件、每周案件和档案库永远免费。",
+    "Een logische detectivepuzzel": "侦探逻辑谜题",
+    "Elke puzzel ontmaskert een dader": "每道谜题都揭露一名犯人"
   },
 
   data: {

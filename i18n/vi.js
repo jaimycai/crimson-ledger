@@ -481,7 +481,9 @@
     "Je hebt {0} opgelost. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "Bạn đã giải xong {0}. Tiếp theo còn {1} phần với {2} vụ án.",
     "{0} staat al open. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "{0} đã mở sẵn. Tiếp theo còn {1} phần với {2} vụ án.",
     "🧊 Twee keer je streak redden als je een dag mist": "🧊 Giữ chuỗi ngày hai lần khi bạn lỡ một ngày",
-    "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "Mua một lần qua tài khoản cửa hàng ứng dụng của bạn, không phải gói đăng ký. Phần I của mọi thế giới, Dinh thự, Tàu cướp biển, vụ án hằng ngày, vụ án hằng tuần và kho hồ sơ luôn miễn phí."
+    "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "Mua một lần qua tài khoản cửa hàng ứng dụng của bạn, không phải gói đăng ký. Phần I của mọi thế giới, Dinh thự, Tàu cướp biển, vụ án hằng ngày, vụ án hằng tuần và kho hồ sơ luôn miễn phí.",
+    "Een logische detectivepuzzel": "Trò đố logic trinh thám",
+    "Elke puzzel ontmaskert een dader": "Mỗi câu đố vạch mặt một thủ phạm"
   },
 
   data: {

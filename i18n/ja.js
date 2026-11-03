@@ -481,7 +481,9 @@
     "Je hebt {0} opgelost. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "{0}を解決しました。この先に{1}章・{2}件の事件が待っています。",
     "{0} staat al open. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "{0}はもう遊べます。この先に{1}章・{2}件の事件が待っています。",
     "🧊 Twee keer je streak redden als je een dag mist": "🧊 1日休んでも、連続記録を2回守れる",
-    "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "アプリストアのアカウントでの買い切り購入です。サブスクリプションではありません。各ワールドの第1章、洋館、海賊船、日替わり事件、今週の事件、アーカイブはずっと無料です。"
+    "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "アプリストアのアカウントでの買い切り購入です。サブスクリプションではありません。各ワールドの第1章、洋館、海賊船、日替わり事件、今週の事件、アーカイブはずっと無料です。",
+    "Een logische detectivepuzzel": "探偵ロジックパズル",
+    "Elke puzzel ontmaskert een dader": "パズルを解くたび、犯人の正体が暴かれる"
   },
 
   data: {

@@ -481,7 +481,9 @@
     "Je hebt {0} opgelost. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "Kamu sudah memecahkan {0}. Setelah itu masih ada {1} bagian lagi dengan {2} kasus.",
     "{0} staat al open. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "{0} sudah terbuka. Setelah itu masih ada {1} bagian lagi dengan {2} kasus.",
     "🧊 Twee keer je streak redden als je een dag mist": "🧊 Selamatkan runtunanmu dua kali saat kamu melewatkan sehari",
-    "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "Pembelian satu kali lewat akun toko aplikasimu, bukan langganan. Bagian I dari setiap dunia, Kediaman Blackwood, Kapal Bajak Laut, kasus harian, kasus mingguan, dan arsip selalu gratis."
+    "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "Pembelian satu kali lewat akun toko aplikasimu, bukan langganan. Bagian I dari setiap dunia, Kediaman Blackwood, Kapal Bajak Laut, kasus harian, kasus mingguan, dan arsip selalu gratis.",
+    "Een logische detectivepuzzel": "Teka-teki logika detektif",
+    "Elke puzzel ontmaskert een dader": "Setiap teka-teki membongkar pelakunya"
   },
 
   data: {

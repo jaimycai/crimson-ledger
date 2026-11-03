@@ -481,7 +481,9 @@
     "Je hebt {0} opgelost. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "Вы прошли {0}. Дальше ещё {1} {1|one:часть|few:части|many:частей|other:части} и {2} {2|one:дело|few:дела|many:дел|other:дела}.",
     "{0} staat al open. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "{0} уже открыта. Дальше ещё {1} {1|one:часть|few:части|many:частей|other:части} и {2} {2|one:дело|few:дела|many:дел|other:дела}.",
     "🧊 Twee keer je streak redden als je een dag mist": "🧊 Дважды спасти серию, если пропустите день",
-    "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "Разовые покупки через ваш аккаунт в магазине приложений, без подписки. Часть I каждого мира, «Поместье», «Пиратский корабль», дело дня, дело недели и архив всегда бесплатны."
+    "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "Разовые покупки через ваш аккаунт в магазине приложений, без подписки. Часть I каждого мира, «Поместье», «Пиратский корабль», дело дня, дело недели и архив всегда бесплатны.",
+    "Een logische detectivepuzzel": "Детективная логическая головоломка",
+    "Elke puzzel ontmaskert een dader": "Каждая головоломка разоблачает виновного"
   },
 
   data: {

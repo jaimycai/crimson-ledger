@@ -481,7 +481,9 @@
     "Je hebt {0} opgelost. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "أنهيت {0}. أمامك بعده {1} {1|zero:جزء|one:جزء|two:من الأجزاء|few:أجزاء|many:جزءًا|other:جزء} و{2} {2|zero:قضية|one:قضية|two:من القضايا|few:قضايا|many:قضية|other:قضية}.",
     "{0} staat al open. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "{0} مفتوح بالفعل. أمامك بعده {1} {1|zero:جزء|one:جزء|two:من الأجزاء|few:أجزاء|many:جزءًا|other:جزء} و{2} {2|zero:قضية|one:قضية|two:من القضايا|few:قضايا|many:قضية|other:قضية}.",
     "🧊 Twee keer je streak redden als je een dag mist": "🧊 أنقذ سلسلتك مرتين إذا فاتك يوم",
-    "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "مشتريات لمرة واحدة عبر حسابك في متجر التطبيقات، بلا اشتراك. الجزء الأول من كل عالم والقصر الريفي وسفينة القراصنة والقضية اليومية وقضية الأسبوع والأرشيف مجانية دائمًا."
+    "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "مشتريات لمرة واحدة عبر حسابك في متجر التطبيقات، بلا اشتراك. الجزء الأول من كل عالم والقصر الريفي وسفينة القراصنة والقضية اليومية وقضية الأسبوع والأرشيف مجانية دائمًا.",
+    "Een logische detectivepuzzel": "لغز منطقي بوليسي",
+    "Elke puzzel ontmaskert een dader": "كل لغز يكشف الجاني"
   },
 
   data: {

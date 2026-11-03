@@ -481,7 +481,9 @@
     "Je hebt {0} opgelost. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "Has resuelto la {0}. Después te esperan {1} {1|one:parte|other:partes} más con {2} {2|one:caso|other:casos}.",
     "{0} staat al open. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "La {0} ya está abierta. Después te esperan {1} {1|one:parte|other:partes} más con {2} {2|one:caso|other:casos}.",
     "🧊 Twee keer je streak redden als je een dag mist": "🧊 Salva tu racha dos veces si te saltas un día",
-    "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "Compras únicas con la cuenta de tu tienda de apps, sin suscripción. La parte I de cada mundo, la mansión, el barco pirata, el caso diario, el caso de la semana y el archivo son siempre gratis."
+    "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "Compras únicas con la cuenta de tu tienda de apps, sin suscripción. La parte I de cada mundo, la mansión, el barco pirata, el caso diario, el caso de la semana y el archivo son siempre gratis.",
+    "Een logische detectivepuzzel": "Un rompecabezas lógico de detectives",
+    "Elke puzzel ontmaskert een dader": "Cada puzle desenmascara a un culpable"
   },
 
   data: {

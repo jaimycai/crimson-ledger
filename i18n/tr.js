@@ -481,7 +481,9 @@
     "Je hebt {0} opgelost. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "{0} çözüldü. Sırada {2} vakalık {1} bölüm daha var.",
     "{0} staat al open. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "{0} zaten açık. Sırada {2} vakalık {1} bölüm daha var.",
     "🧊 Twee keer je streak redden als je een dag mist": "🧊 Bir gün kaçırırsan serini iki kez kurtar",
-    "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "Uygulama mağazası hesabınla tek seferlik satın alımlar, abonelik yok. Her dünyanın I. bölümü, Malikâne, Korsan Gemisi, günlük vaka, haftanın vakası ve arşiv her zaman ücretsiz kalır."
+    "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "Uygulama mağazası hesabınla tek seferlik satın alımlar, abonelik yok. Her dünyanın I. bölümü, Malikâne, Korsan Gemisi, günlük vaka, haftanın vakası ve arşiv her zaman ücretsiz kalır.",
+    "Een logische detectivepuzzel": "Bir dedektif mantık bulmacası",
+    "Elke puzzel ontmaskert een dader": "Her bulmaca bir suçluyu ortaya çıkarır"
   },
 
   data: {

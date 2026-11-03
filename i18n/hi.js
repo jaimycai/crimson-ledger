@@ -481,7 +481,9 @@
     "Je hebt {0} opgelost. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "आपने {0} पूरा कर लिया। अब आगे {1} भाग और {2} केस आपका इंतज़ार कर रहे हैं।",
     "{0} staat al open. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "{0} पहले से खुला है। उसके बाद {1} भाग और {2} केस आपका इंतज़ार कर रहे हैं।",
     "🧊 Twee keer je streak redden als je een dag mist": "🧊 कोई दिन छूटे तो दो बार अपनी स्ट्रीक बचाएँ",
-    "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "ऐप स्टोर में आपके खाते से एक बार की ख़रीदारी, कोई सब्सक्रिप्शन नहीं। हर दुनिया का भाग 1, हवेली, जहाज़, रोज़ का केस, हफ़्ते का केस और आर्काइव हमेशा मुफ़्त रहेंगे।"
+    "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "ऐप स्टोर में आपके खाते से एक बार की ख़रीदारी, कोई सब्सक्रिप्शन नहीं। हर दुनिया का भाग 1, हवेली, जहाज़, रोज़ का केस, हफ़्ते का केस और आर्काइव हमेशा मुफ़्त रहेंगे।",
+    "Een logische detectivepuzzel": "एक जासूसी तर्क पहेली",
+    "Elke puzzel ontmaskert een dader": "हर पहेली एक अपराधी को बेनकाब करती है"
   },
 
   data: {

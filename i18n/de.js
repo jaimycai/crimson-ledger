@@ -481,7 +481,9 @@
     "Je hebt {0} opgelost. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "Du hast {0} gelöst. Danach warten noch {1} {1|one:Teil|other:Teile} mit {2} {2|one:Fall|other:Fällen}.",
     "{0} staat al open. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "{0} ist schon offen. Danach warten noch {1} {1|one:Teil|other:Teile} mit {2} {2|one:Fall|other:Fällen}.",
     "🧊 Twee keer je streak redden als je een dag mist": "🧊 Zweimal deine Serie retten, wenn du einen Tag verpasst",
-    "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "Einmalkäufe über dein Konto im App Store, kein Abo. Teil I jeder Welt, das Herrenhaus, das Piratenschiff, der Tagesfall, der Fall der Woche und das Archiv bleiben immer kostenlos."
+    "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "Einmalkäufe über dein Konto im App Store, kein Abo. Teil I jeder Welt, das Herrenhaus, das Piratenschiff, der Tagesfall, der Fall der Woche und das Archiv bleiben immer kostenlos.",
+    "Een logische detectivepuzzel": "Ein Detektiv-Logikrätsel",
+    "Elke puzzel ontmaskert een dader": "Jedes Rätsel entlarvt einen Täter"
   },
 
   data: {
