@@ -27,7 +27,7 @@ mijn vrije tijd een Nederlandse app van: Crimson Ledger: Vind de dader. Elke zaa
 paar verdachten en hun verklaringen ("ik stond naast een plant", "ik was links van Marcus"). Wie alleen was
 met het slachtoffer, is de dader. 96 zaken zijn gratis, zonder advertenties en zonder abonnement.
 
-App Store: https://apps.apple.com/nl/app/id6812534368
+App Store: https://apps.apple.com/app/id6812534368?ct=press&mt=8
 Persmap met schermafbeeldingen: [link]
 
 Ik geef je graag een code voor alle zaken. Vragen beantwoord ik graag.

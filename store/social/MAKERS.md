@@ -87,7 +87,7 @@ verloren en lijkt het bericht minder op spam.
 De woordkeuze volgt TIKTOK-PLAN §13: culpado, colpevole, culpable, coupable en culprit, en nergens een woord voor moord of
 kopen. "Murdoku" staat er alleen in als vergelijking, omdat deze makers het boek kennen.
 
-Als iemand ja zegt, stuur dan de code, de inwissellink en de App Store-link (https://apps.apple.com/app/id6812534368), met
+Als iemand ja zegt, stuur dan de code, de inwissellink en de App Store-link (https://apps.apple.com/app/id6812534368?ct=makers&mt=8), met
 één zin erbij: "Open de app daarna opnieuw; dan staat de Pass aan." Wie na 7 dagen niet reageert, krijgt hoogstens één
 herinnering. Vraag nooit om een beoordeling in ruil voor de code: beloning voor beoordelingen mag niet (GROEI §3 #3).
 

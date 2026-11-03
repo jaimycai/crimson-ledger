@@ -49,6 +49,14 @@ const info = build(OUT);
   const html = fs.readFileSync(path.join(OUT, 'index.html'), 'utf8');
   check(/id="screen-board"/.test(html) && /id="hint-modal"/.test(html) && /window\.WEB_DAILY = true/.test(html), 'bouw: bord en hintvenster uit index.html, vlag voor de meting');
   check(/src="board\.js\?v=[0-9a-f]{8}"/.test(html), 'bouw: scripts met inhoudscode (?v=) tegen een oude cache');
+  // 1.6 (referrals review): Smart App Banner, a large link preview, and preview text without a word for murder
+  check(/<meta name="apple-itunes-app" content="app-id=6812534368">/.test(html), 'bouw: Smart App Banner voor Safari op iPhone');
+  check(/<meta name="twitter:card" content="summary_large_image">/.test(html) && /property="og:image" content="https:\/\/jaimycai\.github\.io\/crimson-ledger\/play\/og-image\.png"/.test(html) && /og:image:width" content="1200"/.test(html) && /og:image:height" content="630"/.test(html), 'bouw: grote linkvoorvertoning (og:image 1200×630, summary_large_image)');
+  const png = fs.readFileSync(path.join(OUT, 'og-image.png'));
+  check(png.readUInt32BE(16) === 1200 && png.readUInt32BE(20) === 630, `bouw: og-image.png is ${png.readUInt32BE(16)}×${png.readUInt32BE(20)}`);
+  const meta = [...html.matchAll(/<meta (?:name|property)="(?:description|og:[a-z:]+|twitter:[a-z]+)" content="([^"]*)"/g)].map(m => m[1]).join(' ');
+  check(!/murder|moord|kill/i.test(meta) && /every day/.test(meta), 'bouw: voorvertoning zonder woord voor moord, met elke dag een nieuwe zaak');
+  check(/href="https:\/\/apps\.apple\.com\/app\/id6812534368\?ct=webdaily-cta&amp;mt=8"/.test(html), 'bouw: App Store-link onderaan met campagnetoken');
 }
 
 // ── een pagina in jsdom met alle scripts ingevoegd ──
@@ -111,11 +119,11 @@ const caseOf = B => JSON.stringify({ seed: B.seed, theme: B.theme.id, diff: B.di
   const card = $('wd-result').textContent;
   check(card.includes(app.w.Progress.dailyTitle(dayNo)) && /Dag #\d+/.test(card), 'web: kaart met zaaknaam en dagnummer');
   const share = w.WebDaily.shareText(r);
-  check(share.split('\n').length === 4 && share.includes('https://jaimycai.github.io/crimson-ledger/play/') && share.includes(`Dag #${dayNo}`), 'web: deeltekst met dag, zaaknaam en link');
+  check(share.split('\n').length === 4 && share.includes('https://jaimycai.github.io/crimson-ledger/play/?ct=webdaily-share') && share.includes(`Dag #${dayNo}`), 'web: deeltekst met dag, zaaknaam en link (campagnetoken webdaily-share)');
   const p = B.puzzle, names = p.suspects.map(s => s.label), rooms = p.rooms.map(x => x.name);
   check(!/[🔪🩸👤🟥🟧🟨🟩🟦🟪🟫]/u.test(share) && !names.some(n => share.includes(n)) && !rooms.some(n => share.includes(n)), 'web: deeltekst zonder plattegrond, namen of kamers (geen spoiler)');
   const cta = w.document.querySelector('#wd-result .wd-cta');
-  check(cta && cta.getAttribute('href') === 'https://apps.apple.com/app/id6812534368' && cta.target === '_blank', 'web: één knop naar de App Store');
+  check(cta && cta.getAttribute('href') === 'https://apps.apple.com/app/id6812534368?ct=webdaily-cta&mt=8' && cta.target === '_blank', 'web: één knop naar de App Store, met campagnetoken: ' + (cta && cta.getAttribute('href')));
   cta.addEventListener('click', e => e.preventDefault());
   cta.click();
 
@@ -135,7 +143,15 @@ const caseOf = B => JSON.stringify({ seed: B.seed, theme: B.theme.id, diff: B.di
   check(again.w.document.querySelector('#wd-home-result .wd-cta').textContent.trim() === 'Play 128 cases free in the app', 'web (en): App Store-knop in het Engels');
   check(/Day #\d+/.test(again.w.WebDaily.shareText(r)), 'web (en): deeltekst in het Engels');
 
-  const errs = [...app.errors, ...web.errors, ...again.errors].filter(e => !/Not implemented: (window\.scrollTo|HTMLMediaElement)/.test(e));
+  // 1.6: a visitor from the app's daily share (?ct=share-daily) counts as 'share' and takes the token on to the App Store
+  const viaApp = load(path.join(OUT, 'index.html'), OUT, { lang: 'nl', url: 'http://localhost:8099/play/?ct=share-daily', before: sent + `localStorage.setItem("crimson-webdaily-result", ${JSON.stringify(JSON.stringify(r))});` });
+  await sleep(80);
+  const cta3 = viaApp.w.document.querySelector('#wd-home-result .wd-cta'), foot = viaApp.w.document.querySelector('.wd-foot [data-appstore]');
+  check(cta3 && cta3.getAttribute('href') === 'https://apps.apple.com/app/id6812534368?ct=share-daily&mt=8' && foot.getAttribute('href') === cta3.getAttribute('href') && viaApp.w.location.search === '', 'web via een deellink uit de app: App Store-links dragen ct=share-daily, adresbalk schoon');
+  check(viaApp.w.__sent.some(e => e.e === 'open' && e.a === 'share'), 'web via een deellink uit de app: open telt als share');
+  viaApp.dom.window.close();
+
+  const errs = [...app.errors, ...web.errors, ...again.errors, ...viaApp.errors].filter(e => !/Not implemented: (window\.scrollTo|HTMLMediaElement)/.test(e));
   check(errs.length === 0, `geen fouten in de console${errs.length ? ': ' + errs.slice(0, 3).join(' | ') : ''}`);
   app.dom.window.close(); again.dom.window.close();
   fs.rmSync(OUT, { recursive: true, force: true });

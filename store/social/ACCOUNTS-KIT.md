@@ -58,7 +58,7 @@ bij elk aantal volgers; een Instagram-bio mag wel een link hebben.
 | Gebruikersnaam | `crimsonledgergame` (reserve `crimsonledger.game`) |
 | Naam | Crimson Ledger · Crime Sudoku |
 | Bio (≤150) | Can YOU find the culprit? 🔍 A new mystery case every day. Free, no ads. 👇 |
-| Link | https://apps.apple.com/app/id6812534368 |
+| Link | https://apps.apple.com/app/id6812534368?ct=instagram-bio&mt=8 (campagnetoken, 1.6; zet `pt=<provider token>&` ervoor zodra die bekend is, zie `STORE_PT` in board.js) |
 | Foto | `store/social/tiktok-avatar.png` |
 | Accounttype | Professioneel › Maker › categorie "Videogame" |
 
