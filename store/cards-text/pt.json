@@ -1,11 +1,11 @@
 [
-  ["04-verklaringen", "Sudoku,\nmas com um\n*assassinato*", "Quem estava a sós com a vítima?"],
+  ["04-verklaringen", "Sudoku,\nmas com um\n*mistério*", "Quem estava a sós com a vítima?"],
   ["05-beschuldiging", "Aponte o\n*culpado*", "Uma só solução. Pura lógica, sem palpites."],
-  ["08-nieuw", "Casos\n*sem fim*", "Um caso novo todos os dias e um arquivo que nunca acaba."],
+  ["02-wereldkaart", "Casos\n*sem fim*", "Um caso novo todos os dias e um arquivo que nunca acaba."],
   ["06-zaak-gesloten", "Caso\n*encerrado*", "Estrelas para quem resolve sem dicas e sem errar."],
   ["01-thuis", "Mantenha a sua\n*sequência*", "Caso do dia, missões diárias e a sua semana de relance."],
   ["10-hint", "Dicas que\n*explicam*", "Nunca a resposta. E cada caso com três estrelas rende mais uma."],
-  ["02-wereldkaart", "De Luxor a\n*Hollywood*", "Cada mundo com a sua época e o seu lugar, do fácil ao difícil."],
+  ["08-nieuw", "De Luxor a\n*Hollywood*", "Cada mundo com a sua época e o seu lugar, do fácil ao difícil."],
   ["09-circus", "Cada mundo,\nnovos *suspeitos*", "Planta, personagens e casos próprios."],
   ["07-vitrine", "*32* medalhas\npara ganhar", "E uma vitrine com uma peça de cada caso."]
 ]

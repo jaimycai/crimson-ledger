@@ -1,11 +1,11 @@
 [
-  ["04-verklaringen", "Sudoku,\nmaar met\neen *moord*", "Wie was alleen met het slachtoffer?"],
+  ["04-verklaringen", "Sudoku,\nmaar met\neen *mysterie*", "Wie was alleen met het slachtoffer?"],
   ["05-beschuldiging", "Wijs de\n*dader* aan", "Eén oplossing. Puur logica, geen gokwerk."],
-  ["08-nieuw", "*Eindeloos*\nveel zaken", "Elke dag een nieuwe zaak, en een archief dat nooit opraakt."],
+  ["02-wereldkaart", "*Eindeloos*\nveel zaken", "Elke dag een nieuwe zaak, en een archief dat nooit opraakt."],
   ["06-zaak-gesloten", "Zaak\n*gesloten*", "Sterren voor wie het zonder hint in één keer doet."],
   ["01-thuis", "Houd je\n*streak* vast", "Dagzaak, dagopdrachten en je week in één oogopslag."],
   ["10-hint", "Hints die\n*uitleggen*", "Nooit het antwoord. Elke zaak met drie sterren levert een hint op."],
-  ["02-wereldkaart", "Van Luxor\ntot *Hollywood*", "Elke wereld een eigen tijd en plek, van makkelijk naar moeilijk."],
+  ["08-nieuw", "Van Luxor\ntot *Hollywood*", "Elke wereld een eigen tijd en plek, van makkelijk naar moeilijk."],
   ["09-circus", "Elke wereld\neigen *verdachten*", "Eigen plattegrond, eigen personages, eigen zaken."],
   ["07-vitrine", "*32*\nonderscheidingen", "En een vitrine met een bewijsstuk per zaak."]
 ]

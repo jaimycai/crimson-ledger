@@ -1,11 +1,11 @@
 [
-  ["04-verklaringen", "Sudoku,\nmais avec\nun *meurtre*", "Qui était seul avec la victime ?"],
+  ["04-verklaringen", "Sudoku,\nmais avec\nun *mystère*", "Qui était seul avec la victime ?"],
   ["05-beschuldiging", "Démasque\nle *coupable*", "Une solution. Pure logique, zéro hasard."],
-  ["08-nieuw", "Des affaires\n*à l’infini*", "Une nouvelle affaire chaque jour. Des archives sans fin."],
+  ["02-wereldkaart", "Des affaires\n*à l’infini*", "Une nouvelle affaire chaque jour. Des archives sans fin."],
   ["06-zaak-gesloten", "Affaire\n*classée*", "Des étoiles pour une solution sans aide, du premier coup."],
   ["01-thuis", "Garde ta\n*série*", "Affaire du jour, défis quotidiens et ta semaine d’un coup d’œil."],
   ["10-hint", "Des aides qui\n*expliquent*", "Jamais la réponse. Une aide en plus par affaire à trois étoiles."],
-  ["02-wereldkaart", "De Louxor\nà *Hollywood*", "Chaque monde a son époque et son lieu, du facile au difficile."],
+  ["08-nieuw", "De Louxor\nà *Hollywood*", "Chaque monde a son époque et son lieu, du facile au difficile."],
   ["09-circus", "Chaque monde,\nde nouveaux *suspects*", "Son plan, ses personnages, ses affaires."],
   ["07-vitrine", "*32* médailles\nà gagner", "Et une vitrine avec une preuve de chaque affaire."]
 ]

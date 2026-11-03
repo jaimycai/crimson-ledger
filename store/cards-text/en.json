@@ -1,11 +1,11 @@
 [
-  ["04-verklaringen", "Sudoku,\nbut with\na *murder*", "Who was alone with the victim?"],
+  ["04-verklaringen", "Sudoku,\nbut with\na *mystery*", "Who was alone with the victim?"],
   ["05-beschuldiging", "Name the\n*culprit*", "One solution. Pure logic, no guessing."],
-  ["08-nieuw", "*Endless*\ncases", "A new case every day, and an archive that never runs out."],
+  ["02-wereldkaart", "*Endless*\ncases", "A new case every day, and an archive that never runs out."],
   ["06-zaak-gesloten", "Case\n*closed*", "Stars for solving it in one go, without a hint."],
   ["01-thuis", "Keep your\n*streak* going", "A daily case, daily quests and your week at a glance."],
   ["10-hint", "Hints that\n*explain*", "Never the answer: the inspector points to the statement."],
-  ["02-wereldkaart", "From Luxor\nto *Hollywood*", "Every world its own time and place, from easy to hard."],
+  ["08-nieuw", "From Luxor\nto *Hollywood*", "Every world its own time and place, from easy to hard."],
   ["09-circus", "Every world,\nnew *suspects*", "Its own floor plan, cast and cases."],
   ["07-vitrine", "*32* awards\nto earn", "And a cabinet with evidence from every case."]
 ]

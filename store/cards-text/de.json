@@ -1,11 +1,11 @@
 [
-  ["04-verklaringen", "Sudoku,\naber mit\n*Mord*", "Wer war allein mit dem Opfer?"],
+  ["04-verklaringen", "Sudoku,\naber mit\n*Verdächtigen*", "Wer war allein mit dem Opfer?"],
   ["05-beschuldiging", "Finde den\n*Täter*", "Eine Lösung. Reine Logik, kein Raten."],
-  ["08-nieuw", "*Endlos*\nviele Fälle", "Jeden Tag ein neuer Fall. Ein Archiv, das nie leer wird."],
+  ["02-wereldkaart", "*Endlos*\nviele Fälle", "Jeden Tag ein neuer Fall. Ein Archiv, das nie leer wird."],
   ["06-zaak-gesloten", "Fall\n*gelöst*", "Sterne, wenn du ohne Tipp auf Anhieb richtig liegst."],
   ["01-thuis", "Halte deine\n*Serie*", "Tagesfall, Tagesaufgaben und deine Woche auf einen Blick."],
   ["10-hint", "Tipps, die\n*erklären*", "Nie die Lösung. Jeder Fall mit drei Sternen bringt einen Tipp."],
-  ["02-wereldkaart", "Von Luxor\nbis *Hollywood*", "Jede Welt mit eigener Zeit und eigenem Ort, von leicht bis schwer."],
+  ["08-nieuw", "Von Luxor\nbis *Hollywood*", "Jede Welt mit eigener Zeit und eigenem Ort, von leicht bis schwer."],
   ["09-circus", "Jede Welt,\nneue *Verdächtige*", "Eigener Grundriss, eigene Figuren, eigene Fälle."],
   ["07-vitrine", "*32*\nMedaillen", "Und eine Vitrine mit einem Beweisstück aus jedem Fall."]
 ]

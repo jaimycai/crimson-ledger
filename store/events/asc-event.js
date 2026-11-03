@@ -2,7 +2,10 @@
 // language, the same wordless card (1920x1080) and details image (1080x1920) for every language, then review. Event images take only uploaded: true (no checksum, unlike app screenshots).
 //   node store/events/asc-event.js store/events/zaak-van-de-week.json            create as draft
 //   node store/events/asc-event.js store/events/zaak-van-de-week.json --submit   also submit for review
+//   node store/events/asc-event.js submit <eventId>                              submit an existing draft on its own
 //   node store/events/asc-event.js list
+// A spec may name its own art: "art": { "card": "<png next to the spec>", "details": "<png>" }; without it the
+// Case of the Week pair (event-card.png, event-details.png) is used.
 const fs = require('fs'); const path = require('path');
 const { api, wait, APP } = require('../asc-api');
 
@@ -34,7 +37,9 @@ async function create(file, submit) {
   // Apple creates the primary-locale localization with the event; fill that one and add the rest.
   const have = await api('GET', `/v1/appEvents/${id}/localizations?limit=50`);
   const byLocale = Object.fromEntries(((have && have.data) || []).map(l => [l.attributes.locale, l.id]));
-  const art = { EVENT_CARD: path.join(__dirname, 'event-card.png'), EVENT_DETAILS_PAGE: path.join(__dirname, 'event-details.png') };
+  const dir = path.dirname(path.resolve(file)), own = s.art || {};
+  const art = { EVENT_CARD: own.card ? path.join(dir, own.card) : path.join(__dirname, 'event-card.png'),
+    EVENT_DETAILS_PAGE: own.details ? path.join(dir, own.details) : path.join(__dirname, 'event-details.png') };
   let ok = 0;
   for (const [locale, [name, shortDescription, longDescription]] of Object.entries(s.locales)) {
     let locId = byLocale[locale];
@@ -47,8 +52,14 @@ async function create(file, submit) {
     console.log(locale, shots ? 'toegevoegd' : 'MISLUKT (beeld)'); if (shots) ok++;
   }
   console.log(ok, 'van', Object.keys(s.locales).length, 'talen compleet');
-  if (!submit) return console.log('event DRAFT; run again with --submit on a new spec, or submit in App Store Connect');
+  if (!submit) return console.log(`event DRAFT; submit with: node store/events/asc-event.js submit ${id}`);
   await wait(20000);   // Apple processes the images before the event can go to review
+  await submitEvent(id);
+}
+
+// An event-only review submission. Apple allows one with items only next to one with an app version; without a
+// version in it, the items are reviewed together with the latest version of the platform.
+async function submitEvent(id) {
   const sub = await api('POST', '/v1/reviewSubmissions', { data: { type: 'reviewSubmissions', attributes: { platform: 'IOS' }, relationships: { app: { data: { type: 'apps', id: APP } } } } });
   if (!sub) return;
   const item = await api('POST', '/v1/reviewSubmissionItems', { data: { type: 'reviewSubmissionItems', relationships: { reviewSubmission: { data: { type: 'reviewSubmissions', id: sub.data.id } }, appEvent: { data: { type: 'appEvents', id } } } } });
@@ -59,8 +70,11 @@ async function create(file, submit) {
 
 async function list() {
   const r = await api('GET', `/v1/apps/${APP}/appEvents?limit=20`);
-  for (const e of (r && r.data) || []) console.log(e.id.slice(0, 8), e.attributes.referenceName, '|', e.attributes.eventState, '|', JSON.stringify(e.attributes.territorySchedules[0] && { start: e.attributes.territorySchedules[0].eventStart, end: e.attributes.territorySchedules[0].eventEnd }));
+  for (const e of (r && r.data) || []) console.log(e.id, e.attributes.referenceName, '|', e.attributes.eventState, '|', JSON.stringify(e.attributes.territorySchedules[0] && { start: e.attributes.territorySchedules[0].eventStart, end: e.attributes.territorySchedules[0].eventEnd }));
 }
 
 const [arg, flag] = process.argv.slice(2);
-if (arg === 'list') list(); else if (arg) create(arg, flag === '--submit'); else console.log('usage: list | <spec.json> [--submit]');
+if (arg === 'list') list();
+else if (arg === 'submit' && flag) submitEvent(flag);
+else if (arg) create(arg, flag === '--submit');
+else console.log('usage: list | <spec.json> [--submit] | submit <eventId>');
