@@ -70,3 +70,6 @@ Jaimy kiest; pas dan bouwen.
   meting-worker deployen (nieuwe teller `notif`).
 - 3 november 2026, ~00:40: A/B-test "Bold iPhone cards" gestopt; 1.6.0 (20) met de acht wereldaankopen ingediend
   (`node store/asc.js submit --submit`), status WAITING_FOR_REVIEW. Volgende video's: meteen met stil geluidsspoor coderen.
+- 3 november 2026, ochtend: teruggetrokken (DEVELOPER_REJECTED) om de moordwoorden uit alle winkelteksten te halen en
+  alle marketingpunten (docs/onderzoek/MARKETINGSKILLS-2026-11.md §5) in 1.6 te verwerken. Middag: 1.6.0 (21) opnieuw
+  ingediend met de acht wereldaankopen en de uitgelichte Crimson Pass; 414 schermafbeeldingen en 23 video's verwerkt.
