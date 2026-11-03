@@ -34,6 +34,9 @@ const check = (cond, msg) => { if (cond) console.log('ok  ', msg); else { failur
   check(active() === 'screen-splash', 'splash screen active');
 
   // ── Eerste bezoek: splash → bord-oefenzaak ──
+  // 1.6 (onboarding review): the first-run button says what happens; returning players keep "Verder"
+  await sleep(1000);
+  check(document.getElementById('screen-splash').classList.contains('loaded') && document.getElementById('btn-splash-start').textContent === 'Los je eerste zaak op', 'first visit: start button reads "Los je eerste zaak op": ' + document.getElementById('btn-splash-start').textContent);
   click('btn-splash-start'); await sleep(350);
   check(active() === 'screen-board' && window.Board.isTutorial, 'first visit: splash goes straight to the board tutorial');
   check(!document.getElementById('board-coach').hidden, 'board coach visible');

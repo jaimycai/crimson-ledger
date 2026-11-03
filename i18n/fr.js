@@ -467,7 +467,21 @@
     "Dossiers ordenen…": "Classement des dossiers…",
     "Verdachten ondervragen…": "Interrogatoire des suspects…",
     "Plattegrond tekenen…": "Tracé du plan…",
-    "Van Dam zet koffie…": "L’inspecteur Van Dam fait du café…"
+    "Van Dam zet koffie…": "L’inspecteur Van Dam fait du café…",
+    "Los je eerste zaak op": "Résous ta première affaire",
+    "Oefenzaak": "Entraînement",
+    "Oefenzaak ✓ · nog {0} {0|one:zaak|other:zaken} tot de bewijskist": "Entraînement ✓ · encore {0} {0|one:affaire|other:affaires} avant le coffre",
+    "Je gratis hints voor vandaag zijn op. Morgen krijg je er weer {0}. Los een campagnezaak op met drie sterren en je verdient er één.": "Tes aides gratuites du jour sont épuisées. Demain, tu en auras de nouveau {0}. Résous une affaire de la campagne avec trois étoiles et tu en gagnes une.",
+    "{0} werelden, {1} zaken": "{0} mondes, {1} affaires",
+    "{0} {0|one:zaak|other:zaken}": "{0} {0|one:affaire|other:affaires}",
+    "{0} werelden los: {1}": "{0} mondes à l’unité : {1}",
+    "Open alles · {0}": "Tout débloquer · {0}",
+    "Open alles": "Tout débloquer",
+    "Niet nu": "Pas maintenant",
+    "Je hebt {0} opgelost. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "Tu as résolu le {0}. Ensuite, encore {1} {1|one:chapitre|other:chapitres} avec {2} {2|one:affaire|other:affaires}.",
+    "{0} staat al open. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "Le {0} est déjà ouvert. Ensuite, encore {1} {1|one:chapitre|other:chapitres} avec {2} {2|one:affaire|other:affaires}.",
+    "🧊 Twee keer je streak redden als je een dag mist": "🧊 Sauve ta série deux fois si tu rates un jour",
+    "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "Achats uniques via ton compte sur la boutique d’applications, sans abonnement. Le chapitre I de chaque monde, le Manoir, le Navire pirate, l’affaire du jour, l’affaire de la semaine et les archives restent toujours gratuits."
   },
 
   data: {
@@ -2154,8 +2168,8 @@
     ],
     "mentorName": "Inspecteur Van Dam",
     "boardTutorial": [
-      "Déclaration 1 : Clementine était dans le salon, dans un coin. Trois coins sont occupés par des meubles, il en reste donc un. Fais glisser Clementine sur la case qui s’allume, ou touche-la.",
-      "Déclaration 2 : Hargrove se tenait juste à côté d’une plante. Une seule case à côté de la plante est libre. Fais-y glisser Hargrove, ou touche-la.",
+      "Touche la case qui s’allume. Clementine était dans un coin du salon, et c’est le seul coin libre.",
+      "Touche la case qui s’allume. Hargrove se tenait à côté de la plante, et c’est la seule case libre à côté.",
       "Tout le monde est à sa place. Touche Vérifier.",
       "La règle : seul le meurtrier était dans la pièce de la victime. Hargrove est dans la cuisine — choisis Hargrove."
     ]

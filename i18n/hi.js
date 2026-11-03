@@ -467,7 +467,21 @@
     "Dossiers ordenen…": "फ़ाइलें सजाई जा रही हैं…",
     "Verdachten ondervragen…": "संदिग्धों से पूछताछ हो रही है…",
     "Plattegrond tekenen…": "नक्शा बनाया जा रहा है…",
-    "Van Dam zet koffie…": "इंस्पेक्टर वैन डैम कॉफ़ी बना रहे हैं…"
+    "Van Dam zet koffie…": "इंस्पेक्टर वैन डैम कॉफ़ी बना रहे हैं…",
+    "Los je eerste zaak op": "अपना पहला केस सुलझाएँ",
+    "Oefenzaak": "अभ्यास केस",
+    "Oefenzaak ✓ · nog {0} {0|one:zaak|other:zaken} tot de bewijskist": "अभ्यास केस ✓ · सबूतों के संदूक तक {0} केस और",
+    "Je gratis hints voor vandaag zijn op. Morgen krijg je er weer {0}. Los een campagnezaak op met drie sterren en je verdient er één.": "आज के आपके मुफ़्त संकेत ख़त्म हो गए। कल फिर {0} मिलेंगे। अभियान का कोई केस तीन सितारों के साथ सुलझाएँ और एक संकेत कमाएँ।",
+    "{0} werelden, {1} zaken": "{0} दुनियाएँ, {1} केस",
+    "{0} {0|one:zaak|other:zaken}": "{0} केस",
+    "{0} werelden los: {1}": "{0} दुनियाएँ अलग-अलग: {1}",
+    "Open alles · {0}": "सब कुछ खोलें · {0}",
+    "Open alles": "सब कुछ खोलें",
+    "Niet nu": "अभी नहीं",
+    "Je hebt {0} opgelost. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "आपने {0} पूरा कर लिया। अब आगे {1} भाग और {2} केस आपका इंतज़ार कर रहे हैं।",
+    "{0} staat al open. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "{0} पहले से खुला है। उसके बाद {1} भाग और {2} केस आपका इंतज़ार कर रहे हैं।",
+    "🧊 Twee keer je streak redden als je een dag mist": "🧊 कोई दिन छूटे तो दो बार अपनी स्ट्रीक बचाएँ",
+    "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "ऐप स्टोर में आपके खाते से एक बार की ख़रीदारी, कोई सब्सक्रिप्शन नहीं। हर दुनिया का भाग 1, हवेली, जहाज़, रोज़ का केस, हफ़्ते का केस और आर्काइव हमेशा मुफ़्त रहेंगे।"
   },
 
   data: {
@@ -2154,8 +2168,8 @@
     ],
     "mentorName": "इंस्पेक्टर वैन डैम",
     "boardTutorial": [
-      "सुराग 1: लेडी क्लेमेंटाइन बैठक में थी, एक कोने में। तीन कोनों पर फ़र्नीचर है, तो बस एक बचता है। क्लेमेंटाइन को चमकते ख़ाने तक खींचें, या उस पर टैप करें।",
-      "सुराग 2: मिस्टर हारग्रोव एक पौधे से सटे ख़ाने में खड़ा था। पौधे से सटा बस एक ख़ाना ख़ाली है। हारग्रोव को वहाँ खींचें, या उस पर टैप करें।",
+      "चमकते ख़ाने पर टैप करें। लेडी क्लेमेंटाइन बैठक के एक कोने में थी, और बस यही कोना ख़ाली है।",
+      "चमकते ख़ाने पर टैप करें। मिस्टर हारग्रोव पौधे से सटे ख़ाने में खड़ा था, और उसके पास बस यही ख़ाना ख़ाली है।",
       "सब अपनी जगह पर हैं। जाँचें पर टैप करें।",
       "नियम: पीड़ित वाले कमरे में सिर्फ़ क़ातिल था। हारग्रोव रसोई में है — हारग्रोव को चुनें।"
     ]

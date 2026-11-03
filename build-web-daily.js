@@ -13,7 +13,8 @@ const APP_SCRIPTS = ['avatars.js', 'story.js', 'themes.js', 'progress.js', 'ment
   'icons.js', 'sound.js', 'floorplan.js', 'board.js'];
 const APP_FILES = ['style.css', 'icon-192.png', 'icon-512.png'];
 const ASSETS = ['fonts', 'portretten', 'vandam.jpg', 'vandam-sketch.jpg'];
-const WEB_FILES = ['dagzaak.js', 'dagzaak.css', 'teksten.js'];
+// og-image.png: the 1200×630 link preview (made by web-daily/make-og-image.js)
+const WEB_FILES = ['dagzaak.js', 'dagzaak.css', 'teksten.js', 'og-image.png'];
 // stukken uit index.html die de pagina letterlijk overneemt, zodat het bord gelijk blijft aan de app
 const BOARD_PARTS = ['screen-board'];
 const MODAL_PARTS = ['hint-modal', 'clue-modal', 'newclue-modal', 'help-modal', 'toast'];

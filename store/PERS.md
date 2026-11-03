@@ -33,7 +33,7 @@ Onderwerp: Nederlandse puzzelapp Crimson Ledger krijgt acht nieuwe werelden, nog
 >
 > Gratis te downloaden; de Crimson Pass (eenmalig € 4,99) opent alles. Ik stuur je graag een code.
 >
-> App Store: https://apps.apple.com/nl/app/id6812534368
+> App Store: https://apps.apple.com/nl/app/id6812534368?ct=press
 > Persmap: [link]
 >
 > Groet,
@@ -55,7 +55,7 @@ Subject: Crimson Ledger, a sudoku with suspects, adds eight new worlds and still
 >
 > Free to download; the Crimson Pass (a one-time purchase) opens everything. I'd be glad to send you a code.
 >
-> App Store: https://apps.apple.com/app/id6812534368
+> App Store: https://apps.apple.com/app/id6812534368?ct=press
 > Press kit: [press kit link]
 >
 > Best,
@@ -96,7 +96,7 @@ Monte Carlo, een vuurtoren in de storm en meer.
 
 | Wat | Waar |
 |---|---|
-| App Store | https://apps.apple.com/app/id6812534368 (Nederland: https://apps.apple.com/nl/app/id6812534368) |
+| App Store | https://apps.apple.com/app/id6812534368?ct=press (Nederland: https://apps.apple.com/nl/app/id6812534368?ct=press) |
 | Dagzaak in de browser | https://jaimycai.github.io/crimson-ledger/play/ |
 | Website en support | https://jaimycai.github.io/crimson-ledger/ en https://jaimycai.github.io/crimson-ledger/support.html |
 | Icoon (1024 px) | https://github.com/jaimycai/crimson-ledger/blob/main/icon-1024.png |

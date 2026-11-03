@@ -467,7 +467,21 @@
     "Dossiers ordenen…": "Dosyalar düzenleniyor…",
     "Verdachten ondervragen…": "Şüpheliler sorgulanıyor…",
     "Plattegrond tekenen…": "Kat planı çiziliyor…",
-    "Van Dam zet koffie…": "Komiser Van Dam kahve yapıyor…"
+    "Van Dam zet koffie…": "Komiser Van Dam kahve yapıyor…",
+    "Los je eerste zaak op": "İlk vakanı çöz",
+    "Oefenzaak": "Alıştırma vakası",
+    "Oefenzaak ✓ · nog {0} {0|one:zaak|other:zaken} tot de bewijskist": "Alıştırma vakası ✓ · kanıt sandığına {0} vaka kaldı",
+    "Je gratis hints voor vandaag zijn op. Morgen krijg je er weer {0}. Los een campagnezaak op met drie sterren en je verdient er één.": "Bugünkü ücretsiz ipuçların bitti. Yarın yine {0} ipucu alırsın. Bir kampanya vakasını üç yıldızla çözersen bir ipucu kazanırsın.",
+    "{0} werelden, {1} zaken": "{0} dünya, {1} vaka",
+    "{0} {0|one:zaak|other:zaken}": "{0} vaka",
+    "{0} werelden los: {1}": "{0} dünya tek tek: {1}",
+    "Open alles · {0}": "Hepsini aç · {0}",
+    "Open alles": "Hepsini aç",
+    "Niet nu": "Şimdi değil",
+    "Je hebt {0} opgelost. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "{0} çözüldü. Sırada {2} vakalık {1} bölüm daha var.",
+    "{0} staat al open. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "{0} zaten açık. Sırada {2} vakalık {1} bölüm daha var.",
+    "🧊 Twee keer je streak redden als je een dag mist": "🧊 Bir gün kaçırırsan serini iki kez kurtar",
+    "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "Uygulama mağazası hesabınla tek seferlik satın alımlar, abonelik yok. Her dünyanın I. bölümü, Malikâne, Korsan Gemisi, günlük vaka, haftanın vakası ve arşiv her zaman ücretsiz kalır."
   },
 
   data: {
@@ -2154,8 +2168,8 @@
     ],
     "mentorName": "Komiser Van Dam",
     "boardTutorial": [
-      "1. ifade: Leydi Clementine salonda, bir köşede duruyordu. Üç köşeyi eşyalar kaplıyor, geriye bir tane kalıyor. Clementine için parlayan kare bu: onu oraya sürükle ya da kareye dokun.",
-      "2. ifade: Bay Hargrove bir bitkinin hemen yanında duruyordu. Bitkinin yanında yalnızca bir kare boş. Hargrove için o kare: onu oraya sürükle ya da kareye dokun.",
+      "Parlayan kareye dokun. Leydi Clementine salonda bir köşedeydi ve boş kalan tek köşe bu.",
+      "Parlayan kareye dokun. Bay Hargrove bitkinin yanında duruyordu ve bitkinin yanındaki tek boş kare bu.",
       "Herkes yerinde. Kontrol Et düğmesine dokun.",
       "Kural: kurbanın bulunduğu odada yalnızca katil vardı. Hargrove mutfakta; seçimin Hargrove olsun."
     ]

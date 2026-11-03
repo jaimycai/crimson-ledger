@@ -23,6 +23,16 @@ Meting.setOn(false);
 Meting.send('open', '', 0);
 check(sent.length === 1, 'uitgezet in Instellingen: er gaat niets weg');
 
+// 1.6: the worker refuses unknown events (400); the app sends buy_tap, buy_cancel and share_done
+{
+  const src = require('fs').readFileSync(require('path').join(__dirname, '..', 'meting', 'src', 'index.js'), 'utf8');
+  const events = (src.match(/const EVENTS = new Set\((\[[^\]]*\])\)/) || [, '[]'])[1].match(/'([a-z_]+)'/g).map(x => x.slice(1, -1));
+  check(['buy_tap', 'buy_cancel', 'share_done', 'store_open', 'purchase', 'share'].every(e => events.includes(e)) && events.every(e => e.length <= 20), 'tellerdienst kent buy_tap, buy_cancel en share_done (naam hooguit 20 tekens)');
+  const app = require('fs').readFileSync(require('path').join(__dirname, '..', 'app.js'), 'utf8');
+  const used = [...new Set([...app.matchAll(/Meting\.send\('([a-z_]+)'/g), ...app.matchAll(/count\('([a-z_]+)'/g)].map(m => m[1]))];
+  check(used.every(e => events.includes(e)), 'elke teller die app.js stuurt, kent de tellerdienst: ' + used.filter(e => !events.includes(e)).join(' '));
+}
+
 (async () => {
   const ok = await Meting.feedback('  Zaak 12 is te moeilijk  ');
   check(ok && sent.length === 2 && urls[1].endsWith('/f') && sent[1].t === '  Zaak 12 is te moeilijk  ' && sent[1].v === '1.3.0' && !('e' in sent[1]),

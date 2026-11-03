@@ -2607,6 +2607,50 @@ input, textarea { -webkit-user-select: text; user-select: text; }
 .store-row.owned .btn { background: var(--success-bg); color: var(--success); border: 1.5px solid var(--success); box-shadow: none; }
 .store-small { font-size: 0.7rem; color: var(--text-light); line-height: 1.4; text-align: center; margin: 4px 0 8px; }
 .store-head { font-size: 0.66rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); margin: 6px 0 0; }
+/* 1.6: wat er achter de deur zit (dichte wereld) en de werelden in de Pass */
+.store-door { border: 1.5px solid #1A1108; border-radius: 16px; overflow: hidden; background: var(--bg-card); margin-bottom: 10px; box-shadow: var(--shadow-md); }
+.store-door[hidden] { display: none; }
+.store-door-art { position: relative; aspect-ratio: 393 / 170; overflow: hidden; border-bottom: 1.5px solid #1A1108; }
+.store-door-art .mapart { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.store-door-cast { position: absolute; inset-inline-start: 10px; bottom: 8px; display: flex; }
+.store-door-cast img { width: 38px; height: 38px; border-radius: 50%; object-fit: cover; border: 2px solid #FAF5EF; background: #F3EDE3; box-shadow: var(--shadow-sm); }
+.store-door-cast img + img { margin-inline-start: -10px; }
+.store-door-text { display: flex; flex-direction: column; gap: 2px; padding: 9px 12px 11px; }
+.store-door-text b { font-family: var(--font-heading); font-size: 1.15rem; line-height: 1.25; }
+.store-door-text span { font-size: 0.84rem; color: var(--text-secondary); line-height: 1.4; }
+.pass-worlds { margin: 0 -16px 10px; }
+.pass-worlds[hidden] { display: none; }
+.pass-worlds-cap { margin: 0 16px 6px; font-size: 0.8rem; font-weight: 700; color: #F2DFC2; }
+.pass-strip { display: flex; gap: 8px; overflow-x: auto; padding: 2px 16px 4px; scroll-padding-inline: 16px; scroll-snap-type: x proximity; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+.pass-strip::-webkit-scrollbar { display: none; }
+.pass-tile { flex: 0 0 104px; scroll-snap-align: start; display: flex; flex-direction: column; gap: 1px; min-width: 0; }
+.pass-tile-art { position: relative; aspect-ratio: 393 / 220; border-radius: 9px; overflow: hidden; border: 1.5px solid rgba(250, 245, 239, 0.55); margin-bottom: 4px; }
+.pass-tile-art .mapart { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.pass-tile.hl .pass-tile-art { border-color: var(--gold-light); box-shadow: 0 0 0 2px var(--gold-light); }
+.pass-tile b { font-size: 0.74rem; line-height: 1.25; color: #fff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.pass-tile small { font-size: 0.7rem; color: #E8D2B4; }
+.pass-tile.owned small { color: #A9D3A6; }
+.pass-anchor { margin: -4px 0 8px; text-align: center; font-size: 0.8rem; color: #E8D2B4; }
+.pass-anchor[hidden] { display: none; }
+.store-door:not([hidden]) + .store-lead { font-size: 0.86rem; font-weight: 600; }
+/* "Niet nu" blijft rechtsboven in beeld, ook halverwege de lange lijst; een tik naast het blad sluit ook */
+.store-later { position: sticky; top: -6px; z-index: 3; display: block; width: max-content; margin: -14px 0 8px auto; padding: 6px 12px; border-radius: 999px;
+  border: 1.5px solid var(--border-light); background: rgba(255, 255, 255, 0.94); font: inherit; font-size: 0.8rem; font-weight: 700; color: var(--text-secondary); cursor: pointer; box-shadow: var(--shadow-sm); }
+.store-later[hidden] { display: none; }
+/* 1.6: de oefenzaak als eerste, al afgevinkte stap op het pad, en de stappen naar de eerste bewijskist thuis */
+.mpractice {
+  position: absolute; width: 46px; height: 46px; margin: -23px 0 0 -23px; border-radius: 50%;
+  border: 3px solid #7DAE7A; background: #F3F8F1; color: #2E7D32; font: inherit; font-size: 1.2rem; font-weight: 900;
+  box-shadow: var(--shadow-md); cursor: pointer; display: flex; align-items: center; justify-content: center; -webkit-tap-highlight-color: transparent;
+}
+.mpractice.open { border-color: var(--wr, var(--gold)); background: #fff; }
+.mpractice .mnode-stars { border-color: #7DAE7A; color: #2E7D32; font-size: 0.72rem; letter-spacing: 0; font-weight: 700; }
+.nav-steps { display: flex; gap: 4px; margin-top: 5px; }
+.nav-steps[hidden] { display: none; }
+.nav-steps i { width: 14px; height: 14px; border-radius: 50%; border: 1.5px solid var(--border); background: var(--bg-secondary); font-style: normal; font-size: 0.55rem; font-weight: 900; line-height: 11px; text-align: center; color: #fff; }
+.nav-steps i.on { background: var(--gold); border-color: var(--gold); }
+.nav-steps i.practice { background: #4E8B4A; border-color: #4E8B4A; }
+.nav-steps i.practice::after { content: '✓'; }
 .tool-icon { position: relative; }
 .tool-badge { position: absolute; top: -6px; right: -12px; min-width: 16px; height: 16px; padding: 0 4px; border-radius: 8px; background: var(--gold); color: #fff; font-size: 0.58rem; font-weight: 800; font-style: normal; line-height: 16px; text-align: center; box-shadow: 0 0 0 1.5px #fff; }
 .tool-badge[hidden] { display: none; }

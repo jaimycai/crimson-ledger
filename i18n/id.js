@@ -467,7 +467,21 @@
     "Dossiers ordenen…": "Menyusun berkas…",
     "Verdachten ondervragen…": "Menginterogasi tersangka…",
     "Plattegrond tekenen…": "Menggambar denah…",
-    "Van Dam zet koffie…": "Inspektur Van Dam membuat kopi…"
+    "Van Dam zet koffie…": "Inspektur Van Dam membuat kopi…",
+    "Los je eerste zaak op": "Pecahkan kasus pertamamu",
+    "Oefenzaak": "Kasus latihan",
+    "Oefenzaak ✓ · nog {0} {0|one:zaak|other:zaken} tot de bewijskist": "Kasus latihan ✓ · {0} kasus lagi sampai peti bukti",
+    "Je gratis hints voor vandaag zijn op. Morgen krijg je er weer {0}. Los een campagnezaak op met drie sterren en je verdient er één.": "Hint gratismu untuk hari ini sudah habis. Besok kamu dapat {0} lagi. Pecahkan kasus kampanye dengan tiga bintang dan kamu mendapat satu hint.",
+    "{0} werelden, {1} zaken": "{0} dunia, {1} kasus",
+    "{0} {0|one:zaak|other:zaken}": "{0} kasus",
+    "{0} werelden los: {1}": "{0} dunia secara terpisah: {1}",
+    "Open alles · {0}": "Buka semuanya · {0}",
+    "Open alles": "Buka semuanya",
+    "Niet nu": "Nanti saja",
+    "Je hebt {0} opgelost. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "Kamu sudah memecahkan {0}. Setelah itu masih ada {1} bagian lagi dengan {2} kasus.",
+    "{0} staat al open. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "{0} sudah terbuka. Setelah itu masih ada {1} bagian lagi dengan {2} kasus.",
+    "🧊 Twee keer je streak redden als je een dag mist": "🧊 Selamatkan runtunanmu dua kali saat kamu melewatkan sehari",
+    "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "Pembelian satu kali lewat akun toko aplikasimu, bukan langganan. Bagian I dari setiap dunia, Kediaman Blackwood, Kapal Bajak Laut, kasus harian, kasus mingguan, dan arsip selalu gratis."
   },
 
   data: {
@@ -2154,8 +2168,8 @@
     ],
     "mentorName": "Inspektur Van Dam",
     "boardTutorial": [
-      "Keterangan 1: Lady Clementine berada di Ruang Tamu, di sudut. Tiga sudut sudah ditempati perabot, jadi tinggal satu. Seret Clementine ke kotak yang menyala, atau ketuk kotak itu.",
-      "Keterangan 2: Tuan Hargrove berdiri tepat di sebelah tanaman. Hanya satu kotak di sebelah tanaman itu yang kosong. Seret Hargrove ke sana, atau ketuk kotak itu.",
+      "Ketuk kotak yang menyala. Lady Clementine berada di sudut Ruang Tamu, dan ini satu-satunya sudut yang kosong.",
+      "Ketuk kotak yang menyala. Tuan Hargrove berdiri di sebelah tanaman, dan ini satu-satunya kotak kosong di sebelahnya.",
       "Semua sudah di tempatnya. Ketuk Periksa.",
       "Aturannya: hanya pembunuh yang berada di ruangan korban. Hargrove ada di Dapur — pilih Hargrove."
     ]

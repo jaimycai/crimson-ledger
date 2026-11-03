@@ -54,9 +54,10 @@ const Board = {
     murderer: 1,
     clues: [{ kind: 'room-pos', s: 0, room: 0, pos: 'hoek' }, { kind: 'next-to', s: 1, furniture: 'plant' }]
   },
+  // 1.6 (EERSTE-MINUUT-EN-2026-11.md §5c): steps 1-2 say what to do first, then the one-line reason; dragging still works
   TUTORIAL_STEPS: [
-    { suspect: 0, cell: { x: 0, y: 0 }, text: 'Aanwijzing 1: Lady Clementine was in de Woonkamer, in een hoek. Drie hoeken zijn bezet door meubels, dus blijft er één over. Sleep Clementine naar het oplichtende vakje, of tik erop.' },
-    { suspect: 1, cell: { x: 3, y: 3 }, text: 'Aanwijzing 2: Meneer Hargrove stond direct naast een plant. Naast de plant is maar één vakje vrij. Sleep Hargrove erheen, of tik erop.' },
+    { suspect: 0, cell: { x: 0, y: 0 }, text: 'Tik op het oplichtende vakje. Lady Clementine was in een hoek van de Woonkamer, en dit is de enige vrije hoek.' },
+    { suspect: 1, cell: { x: 3, y: 3 }, text: 'Tik op het oplichtende vakje. Meneer Hargrove stond naast de plant, en dit is het enige vrije vakje ernaast.' },
     { action: 'check', text: 'Iedereen staat op zijn plek. Tik op Controleer.' },
     { action: 'murder', text: 'De spelregel: alleen de moordenaar was in de kamer van het slachtoffer. Hargrove staat in de Keuken — kies Hargrove.' }
   ],
@@ -1319,6 +1320,14 @@ const Board = {
   // Daily cases link to the free web daily (same case today, playable without installing); everything else to the store.
   SHARE_PLAY_URL: 'https://jaimycai.github.io/crimson-ledger/play/',
   SHARE_STORE_URL: 'https://apps.apple.com/app/id6812534368',
+  // App Store campaign links (1.6): ct names the channel, so App Store Connect (App Analytics, Sources → Campaigns) counts
+  // the downloads per channel: share-case, share-week, share-daily (the web daily passes its own ct on to the App Store),
+  // webdaily-cta, webdaily-share. Apple attributes a campaign only together with the provider token (pt) of the
+  // account; it is not in this repo yet. Copy it from App Analytics → Campaigns → "Generate a campaign link" into
+  // STORE_PT and every link carries it. Without pt the links work as before.
+  STORE_PT: '',
+  storeLink(ct) { return `${this.SHARE_STORE_URL}?${this.STORE_PT ? `pt=${this.STORE_PT}&` : ''}ct=${ct}&mt=8`; },
+  playLink(ct) { return `${this.SHARE_PLAY_URL}?ct=${ct}`; },
   shareText() {
     const diff = DIFFICULTY[this.difficulty] || DIFFICULTY.gemiddeld;
     const stars = Campaign.starsFor(this.hintsUsed, this.attempts);
@@ -1330,7 +1339,7 @@ const Board = {
       // one square per accusation: red for a wrong one, green for the culprit
       '🟥'.repeat(this.attempts) + '🟩',
       this.isDaily && App.streak.count > 1 ? BD_T`🔥 ${App.streak.count} dagen streak!` : '',
-      '', this.isDaily ? this.SHARE_PLAY_URL : this.SHARE_STORE_URL
+      '', this.isDaily ? this.playLink('share-daily') : this.storeLink(this.isWeekly ? 'share-week' : this.missedDay ? 'share-daily' : 'share-case')
     ].filter((x, i, a) => x || (i > 0 && a[i - 1])).join('\n');
   },
 

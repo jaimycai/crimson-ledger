@@ -10,6 +10,7 @@ html = html.replace(/<script src="([^"]+)"><\/script>/g, (_, src) => `<script>${
 const mock = `<script>
   window.__native = { 'crimson-board-stats': '{"solved":5,"clean":2}', 'crimson-streak': '{"count":2,"lastDate":"x"}', 'crimson-board-tutorial-done': '1' };
   window.__splashHidden = 0;
+  window.__sent = []; window.fetch = (u, o) => { window.__sent.push(JSON.parse(o.body)); return Promise.resolve({ ok: true }); };
   window.Capacitor = { isNativePlatform: () => true, Plugins: {
     Preferences: {
       keys: async () => ({ keys: Object.keys(window.__native) }),
@@ -19,10 +20,10 @@ const mock = `<script>
     },
     SplashScreen: { hide: async () => { window.__splashHidden++; } },
     InAppReview: { requestReview: async () => {} },
-    Share: { share: async ({ text }) => { window.__shared = (window.__shared || []).concat(text); if (window.__shareCancel) throw new Error('Share canceled'); } }
+    Share: { share: async ({ text }) => { window.__shared = (window.__shared || []).concat(text); if (window.__shareCancel) throw new Error('Share canceled'); return { activityType: window.__shareTarget || '' }; } }
   } };
 </script>`;
-html = html.replace('<head>', '<head><script>Object.defineProperty(navigator, "language", { value: "nl-NL", configurable: true });</script>').replace(/<link[^>]+>/g, '').replace('<body>', '<body>' + mock).replace('</body>', '<script>window.App = App; window.Board = Board;</script></body>');
+html = html.replace('<head>', '<head><script>Object.defineProperty(navigator, "language", { value: "nl-NL", configurable: true });</script>').replace(/<link[^>]+>/g, '').replace('<body>', '<body>' + mock).replace('</body>', '<script>window.App = App; window.Board = Board; window.Store = Store;</script></body>');
 const errors = [];
 const vc = new VirtualConsole(); vc.on('jsdomError', e => errors.push(String(e.message || e)));
 const dom = new JSDOM(html, { runScripts: 'dangerously', pretendToBeVisual: true, url: 'http://localhost:8080/', virtualConsole: vc });
@@ -71,6 +72,19 @@ const check = (c, m) => { if (c) console.log('ok  ', m); else { failures++; cons
   window.__shareCancel = true; App.shareAny('nog eens'); await sleep(30);
   check(!document.getElementById('toast').classList.contains('show') || !/Delen wordt niet/.test(document.getElementById('toast-text').textContent), 'deelvenster gesloten: geen foutmelding');
   window.__shareCancel = false;
+  // 1.6: share_done only when the sheet really shared (not on cancel), with the kind of app it went to
+  const sent = e => window.__sent.filter(x => x.e === e);
+  check(sent('share').length === 2 && sent('share_done').length === 1, 'tik op delen telt als share, alleen echt delen als share_done (annuleren niet)');
+  window.__shareTarget = 'net.whatsapp.WhatsApp.ShareExtension'; App.shareAny('Zaak 8'); await sleep(30);
+  window.__shareTarget = 'com.apple.UIKit.activity.Message'; App.shareAny('Zaak 9'); await sleep(30);
+  check(sent('share_done').map(x => x.a).join() === ',whatsapp,messages', 'share_done met het soort app: ' + sent('share_done').map(x => x.a).join());
+  // 1.6: buy_tap and buy_cancel next to purchase (mock store: 'cancel' closes the sheet without buying)
+  App.storageSet('crimson-store-mock', 'cancel');
+  await App.buy(window.Store.IDS.pass);
+  App.storageSet('crimson-store-mock', '1');
+  await App.buy(window.Store.worldId('hotel'));
+  const buys = window.__sent.filter(x => /^buy_|^purchase$/.test(x.e)).map(x => `${x.e}:${x.a}`).join(' ');
+  check(buys === 'buy_tap:pass buy_cancel:pass buy_tap:world.hotel purchase:world.hotel' && !window.Store.hasPass() && window.Store.ownsWorld('hotel'), 'aankooptellers: ' + buys);
   App.resetProgress(); await sleep(20);
   check(Object.keys(window.__native).filter(k => k.startsWith('crimson-')).length === 0 && !window.localStorage.getItem('crimson-board-stats'), 'wissen wist localStorage én native opslag');
   check(errors.length === 0, 'geen JS-fouten: ' + errors.join(' | '));

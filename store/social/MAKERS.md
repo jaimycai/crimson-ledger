@@ -89,7 +89,7 @@ coupable en culprit, nergens een woord uit die lijst of voor kopen. Sinds 3-11-2
 gratis zaken en zonder het puzzelboek als vergelijking; de haak is eindeloos veel zaken en elke dag een nieuwe. Alleen de
 opening mag de post van de maker zelf noemen (tussen [ ]).
 
-Als iemand ja zegt, stuur dan de code, de inwissellink en de App Store-link (https://apps.apple.com/app/id6812534368), met
+Als iemand ja zegt, stuur dan de code, de inwissellink en de App Store-link (https://apps.apple.com/app/id6812534368?ct=makers&mt=8), met
 één zin erbij: "Open de app daarna opnieuw; dan staat de Pass aan." Wie na 7 dagen niet reageert, krijgt hoogstens één
 herinnering. Vraag nooit om een beoordeling in ruil voor de code: beloning voor beoordelingen mag niet (GROEI §3 #3).
 

@@ -57,8 +57,13 @@ public class StorePlugin: CAPPlugin, CAPBridgedPlugin {
         Task {
             do {
                 let products = try await Product.products(for: ids)
+                // value/currency/locale (1.6): the price as a number, so the shop can add up the separate worlds
+                // ("22 werelden los") in the same format as displayPrice
                 let list: [[String: Any]] = products.map { p in
                     ["id": p.id, "title": p.displayName, "description": p.description, "price": p.displayPrice,
+                     "value": NSDecimalNumber(decimal: p.price).doubleValue,
+                     "currency": p.priceFormatStyle.currencyCode,
+                     "locale": p.priceFormatStyle.locale.identifier,
                      "type": p.type == .consumable ? "consumable" : "nonconsumable"]
                 }
                 call.resolve(["products": list])

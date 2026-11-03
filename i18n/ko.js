@@ -467,7 +467,21 @@
     "Dossiers ordenen…": "사건 파일 정리 중…",
     "Verdachten ondervragen…": "용의자 심문 중…",
     "Plattegrond tekenen…": "평면도 그리는 중…",
-    "Van Dam zet koffie…": "반 담 경감이 커피를 내리는 중…"
+    "Van Dam zet koffie…": "반 담 경감이 커피를 내리는 중…",
+    "Los je eerste zaak op": "첫 사건을 해결하세요",
+    "Oefenzaak": "연습 사건",
+    "Oefenzaak ✓ · nog {0} {0|one:zaak|other:zaken} tot de bewijskist": "연습 사건 ✓ · 증거 상자까지 {0}건 남음",
+    "Je gratis hints voor vandaag zijn op. Morgen krijg je er weer {0}. Los een campagnezaak op met drie sterren en je verdient er één.": "오늘의 무료 힌트를 다 썼어요. 내일 다시 {0}개를 받을 수 있어요. 캠페인 사건을 별 세 개로 해결하면 힌트를 하나 얻어요.",
+    "{0} werelden, {1} zaken": "월드 {0}개, 사건 {1}건",
+    "{0} {0|one:zaak|other:zaken}": "사건 {0}건",
+    "{0} werelden los: {1}": "월드 {0}개 따로: {1}",
+    "Open alles · {0}": "모두 잠금 해제 · {0}",
+    "Open alles": "모두 잠금 해제",
+    "Niet nu": "나중에",
+    "Je hebt {0} opgelost. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "{0}{0|c:을|v:를} 해결했어요. 앞으로 {1}개 장과 사건 {2}건이 기다리고 있어요.",
+    "{0} staat al open. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "{0}{0|c:은|v:는} 이미 열려 있어요. 앞으로 {1}개 장과 사건 {2}건이 기다리고 있어요.",
+    "🧊 Twee keer je streak redden als je een dag mist": "🧊 하루를 놓쳐도 연속 기록을 두 번 지켜요",
+    "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "앱 스토어 계정으로 하는 일회성 구매이며, 구독이 아니에요. 모든 월드의 제1장, 저택, 해적선, 일일 사건, 주간 사건, 기록 보관소는 언제나 무료예요."
   },
 
   data: {
@@ -2154,8 +2168,8 @@
     ],
     "mentorName": "반 담 경감",
     "boardTutorial": [
-      "진술 1: 레이디 클레멘타인은 거실 구석에 있었어요. 구석 세 곳은 가구가 차지하고 있으니, 남은 곳은 하나예요. 클레멘타인을 빛나는 칸으로 끌어다 놓거나, 그 칸을 탭하세요.",
-      "진술 2: 하그로브 씨는 화분 바로 옆에 있었어요. 화분 옆 칸 중 비어 있는 칸은 하나뿐이에요. 하그로브를 그 칸으로 끌어다 놓거나, 그 칸을 탭하세요.",
+      "빛나는 칸을 탭하세요. 레이디 클레멘타인은 거실 구석에 있었고, 비어 있는 구석은 여기뿐이에요.",
+      "빛나는 칸을 탭하세요. 하그로브 씨는 화분 옆에 있었고, 그 옆에서 비어 있는 칸은 여기뿐이에요.",
       "모두 제자리에 놓였어요. 확인을 누르세요.",
       "규칙: 피해자가 있던 방에는 범인만 있었어요. 하그로브는 부엌에 있어요 — 하그로브를 고르세요."
     ]

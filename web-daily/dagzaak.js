@@ -7,7 +7,8 @@
 // winkel, punten, rangen of meldingen. Na het oplossen: een
 // spoilervrije kaart om te delen en één knop naar de App Store.
 // ============================================================
-const APP_STORE_URL = 'https://apps.apple.com/app/id6812534368';
+// App Store links carry a campaign token (ct, 1.6) via Board.storeLink: the channel the visitor came in through
+// (?ct=share-daily from the app's daily share, ?ct=webdaily-share from a share on this page), else webdaily-cta.
 const SHARE_URL = 'https://jaimycai.github.io/crimson-ledger/play/';
 const RESULT_KEY = 'crimson-webdaily-result';
 // meting: alleen deze gebeurtenissen gaan naar crimson-meting (platform 'webdaily')
@@ -42,7 +43,8 @@ const App = {
 };
 
 const WebDaily = {
-  via: 'direct',     // 'share' als de bezoeker via een gedeelde link kwam (?s=1)
+  via: 'direct',     // 'share' als de bezoeker via een gedeelde link kwam (?ct=share-… of het oude ?s=1)
+  ct: '',            // campagnetoken uit de link waarmee de bezoeker kwam; gaat mee naar de App Store
   playing: null,     // { n, day } van de dagzaak die nu op het bord ligt
   clock: null,
 
@@ -58,8 +60,10 @@ const WebDaily = {
 
   init() {
     try {
-      const q = new URLSearchParams(location.search);
-      if (q.has('s')) { this.via = 'share'; history.replaceState(null, '', location.pathname); }
+      const q = new URLSearchParams(location.search), ct = String(q.get('ct') || '').toLowerCase();
+      if (/^[a-z0-9-]{1,40}$/.test(ct)) this.ct = ct;
+      if (q.has('s') || /share/.test(this.ct)) this.via = 'share';
+      if (q.has('s') || q.has('ct')) history.replaceState(null, '', location.pathname);
     } catch (e) { /* oude browser */ }
     const send = Meting.send.bind(Meting);
     Meting.send = (e, a = '', n = 0) => { if (WEB_EVENTS.has(e)) send(e, e === 'open' && !a ? this.via : a, n); };
@@ -189,9 +193,10 @@ const WebDaily = {
     this.$('wd-privacy').textContent = T('Privacy');
     this.$('wd-first-text').textContent = WT('practice');
     this.$('wd-skip').textContent = T('Overslaan');
-    document.querySelectorAll('[data-appstore]').forEach(a => { a.href = APP_STORE_URL; });
+    document.querySelectorAll('[data-appstore]').forEach(a => { a.href = this.storeUrl(); });
     this.soundLabel();
   },
+  storeUrl() { return Board.storeLink(this.ct || 'webdaily-cta'); },
   soundLabel() { this.$('wd-sound').textContent = Sound.enabled ? T('🔊 Geluid aan') : T('🔇 Geluid uit'); },
 
   renderHome() {
@@ -222,7 +227,7 @@ const WebDaily = {
       `Crimson Ledger · ${this.dayLabel(r.n)}`,
       `${th.icon} ${Progress.dailyTitle(r.n)}`,
       `${'⭐'.repeat(s)}${'☆'.repeat(3 - s)} ⏱️ ${Board.formatTime(r.t)} · 💡 ${r.h} · 🔁 ${r.a + 1}`,
-      `${SHARE_URL}?s=1`
+      `${SHARE_URL}?ct=webdaily-share`
     ].join('\n');
   },
   // place: 1 = net opgelost, 2 = thuis (vandaag al opgelost); gaat als getal mee met de klik naar de App Store
@@ -248,7 +253,7 @@ const WebDaily = {
       <div class="wd-promo">
         <img class="wd-promo-icon" src="icon-192.png" alt="" width="52" height="52">
         <div class="wd-promo-text"><b>Crimson Ledger</b><span>${esc(WT('ctaSub'))}</span></div>
-        <a class="btn btn-primary btn-block wd-cta" href="${APP_STORE_URL}" data-appstore="${place}" target="_blank" rel="noopener">${esc(WT('cta'))}</a>
+        <a class="btn btn-primary btn-block wd-cta" href="${esc(this.storeUrl())}" data-appstore="${place}" target="_blank" rel="noopener">${esc(WT('cta'))}</a>
       </div>
       <p class="wd-next"><span>${esc(T('Vandaag gespeeld. Tot morgen!'))}</span> <b class="wd-count"></b></p>`;
     box.querySelector('.wd-share').addEventListener('click', () => this.share(r));

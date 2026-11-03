@@ -3,8 +3,10 @@
 // player: no id, no IP, no user agent, and the day is the finest time unit.
 // 1.5: tut_step/tut_skip/quit (where new players drop out), hint_earned/stuck_hint (hint economy), cta (web daily → App Store)
 // 1.6: notif (a tap or button on a notification; a = "<kind>.<action>", e.g. "redder.later")
+// 1.6: buy_tap (a price button in the shop; a = product, e.g. "pass" or "world.hotel"), buy_cancel (the purchase sheet
+//      closed without buying; same a), share_done (the share sheet completed; a = kind of target app, e.g. "whatsapp")
 const EVENTS = new Set(['open', 'tutorial_done', 'start', 'solved', 'failed', 'hint', 'store_open', 'purchase', 'review_asked', 'share', 'reminder_on',
-  'tut_step', 'tut_skip', 'quit', 'hint_earned', 'stuck_hint', 'cta', 'notif']);
+  'tut_step', 'tut_skip', 'quit', 'hint_earned', 'stuck_hint', 'cta', 'notif', 'buy_tap', 'buy_cancel', 'share_done']);
 // webdaily: the free daily case on jaimycai.github.io/crimson-ledger/play/
 const PLATFORMS = new Set(['ios', 'android', 'web', 'webdaily']);
 // every language the app speaks (i18n.js I18n.LANGS)

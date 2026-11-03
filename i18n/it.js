@@ -467,7 +467,21 @@
     "Dossiers ordenen…": "Riordino i fascicoli…",
     "Verdachten ondervragen…": "Interrogo i sospettati…",
     "Plattegrond tekenen…": "Disegno la pianta…",
-    "Van Dam zet koffie…": "L’ispettore Van Dam prepara il caffè…"
+    "Van Dam zet koffie…": "L’ispettore Van Dam prepara il caffè…",
+    "Los je eerste zaak op": "Risolvi il tuo primo caso",
+    "Oefenzaak": "Caso di prova",
+    "Oefenzaak ✓ · nog {0} {0|one:zaak|other:zaken} tot de bewijskist": "Caso di prova ✓ · ancora {0} {0|one:caso|other:casi} fino allo scrigno",
+    "Je gratis hints voor vandaag zijn op. Morgen krijg je er weer {0}. Los een campagnezaak op met drie sterren en je verdient er één.": "Hai finito gli aiuti gratuiti di oggi. Domani ne ricevi di nuovo {0}. Risolvi un caso della campagna con tre stelle e ne guadagni uno.",
+    "{0} werelden, {1} zaken": "{0} mondi, {1} casi",
+    "{0} {0|one:zaak|other:zaken}": "{0} {0|one:caso|other:casi}",
+    "{0} werelden los: {1}": "{0} mondi singolarmente: {1}",
+    "Open alles · {0}": "Sblocca tutto · {0}",
+    "Open alles": "Sblocca tutto",
+    "Niet nu": "Non ora",
+    "Je hebt {0} opgelost. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "Hai risolto la {0}. Poi ti aspettano ancora {1} {1|one:parte|other:parti} con {2} {2|one:caso|other:casi}.",
+    "{0} staat al open. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "La {0} è già aperta. Poi ti aspettano ancora {1} {1|one:parte|other:parti} con {2} {2|one:caso|other:casi}.",
+    "🧊 Twee keer je streak redden als je een dag mist": "🧊 Salva la tua serie due volte se salti un giorno",
+    "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "Acquisti una tantum tramite il tuo account dello store, nessun abbonamento. La parte I di ogni mondo, la villa, la nave pirata, il caso del giorno, il caso della settimana e l’archivio restano sempre gratis."
   },
 
   data: {
@@ -2394,8 +2408,8 @@
     ],
     "mentorName": "Ispettore Van Dam",
     "boardTutorial": [
-      "Dichiarazione 1: Clementine era in salotto, in un angolo. Tre angoli sono occupati da oggetti, quindi ne resta uno. Trascina Clementine sulla casella illuminata, oppure toccala.",
-      "Dichiarazione 2: Hargrove era proprio accanto a una pianta. Accanto alla pianta c’è una sola casella libera. Trascina lì Hargrove, oppure toccala.",
+      "Tocca la casella illuminata. Clementine era in un angolo del salotto, e questo è l’unico angolo libero.",
+      "Tocca la casella illuminata. Hargrove era accanto alla pianta, e questa è l’unica casella libera lì accanto.",
       "Sono tutti al loro posto. Tocca Verifica.",
       "La regola: solo l’assassino era nella stanza della vittima. Hargrove è in cucina — scegli Hargrove."
     ]

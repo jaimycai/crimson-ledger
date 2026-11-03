@@ -467,7 +467,21 @@
     "Dossiers ordenen…": "Đang sắp xếp hồ sơ…",
     "Verdachten ondervragen…": "Đang thẩm vấn nghi phạm…",
     "Plattegrond tekenen…": "Đang vẽ sơ đồ…",
-    "Van Dam zet koffie…": "Thanh tra Van Dam đang pha cà phê…"
+    "Van Dam zet koffie…": "Thanh tra Van Dam đang pha cà phê…",
+    "Los je eerste zaak op": "Phá vụ án đầu tiên",
+    "Oefenzaak": "Luyện tập",
+    "Oefenzaak ✓ · nog {0} {0|one:zaak|other:zaken} tot de bewijskist": "Luyện tập ✓ · còn {0} vụ án nữa là tới rương bằng chứng",
+    "Je gratis hints voor vandaag zijn op. Morgen krijg je er weer {0}. Los een campagnezaak op met drie sterren en je verdient er één.": "Bạn đã dùng hết gợi ý miễn phí hôm nay. Ngày mai bạn lại có {0}. Giải một vụ án chiến dịch với ba sao để nhận thêm một gợi ý.",
+    "{0} werelden, {1} zaken": "{0} thế giới, {1} vụ án",
+    "{0} {0|one:zaak|other:zaken}": "{0} vụ án",
+    "{0} werelden los: {1}": "{0} thế giới riêng lẻ: {1}",
+    "Open alles · {0}": "Mở tất cả · {0}",
+    "Open alles": "Mở tất cả",
+    "Niet nu": "Để sau",
+    "Je hebt {0} opgelost. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "Bạn đã giải xong {0}. Tiếp theo còn {1} phần với {2} vụ án.",
+    "{0} staat al open. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "{0} đã mở sẵn. Tiếp theo còn {1} phần với {2} vụ án.",
+    "🧊 Twee keer je streak redden als je een dag mist": "🧊 Giữ chuỗi ngày hai lần khi bạn lỡ một ngày",
+    "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "Mua một lần qua tài khoản cửa hàng ứng dụng của bạn, không phải gói đăng ký. Phần I của mọi thế giới, Dinh thự, Tàu cướp biển, vụ án hằng ngày, vụ án hằng tuần và kho hồ sơ luôn miễn phí."
   },
 
   data: {
@@ -2394,8 +2408,8 @@
     ],
     "mentorName": "Thanh tra Van Dam",
     "boardTutorial": [
-      "Lời khai 1: quý bà Clementine ở trong phòng khách, đứng ở một góc. Ba góc đã có đồ đạc chiếm chỗ, nên chỉ còn một. Kéo Clementine vào ô đang sáng, hoặc chạm vào ô đó.",
-      "Lời khai 2: ông Hargrove đứng ngay cạnh một chậu cây. Cạnh chậu cây chỉ còn một ô trống. Kéo Hargrove vào đó, hoặc chạm vào ô đó.",
+      "Chạm vào ô đang sáng. Quý bà Clementine ở một góc phòng khách, và đây là góc trống duy nhất.",
+      "Chạm vào ô đang sáng. Ông Hargrove đứng cạnh chậu cây, và đây là ô trống duy nhất bên cạnh nó.",
       "Mọi người đã vào đúng chỗ. Chạm vào Kiểm tra.",
       "Luật chơi: chỉ có hung thủ ở trong phòng của nạn nhân. Hargrove đang ở trong nhà bếp — hãy chọn Hargrove."
     ]

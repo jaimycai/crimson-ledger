@@ -467,7 +467,21 @@
     "Dossiers ordenen…": "فائلیں ترتیب دی جا رہی ہیں…",
     "Verdachten ondervragen…": "مشتبہ افراد سے پوچھ گچھ ہو رہی ہے…",
     "Plattegrond tekenen…": "نقشہ بنایا جا رہا ہے…",
-    "Van Dam zet koffie…": "انسپکٹر وین ڈیم کافی بنا رہے ہیں…"
+    "Van Dam zet koffie…": "انسپکٹر وین ڈیم کافی بنا رہے ہیں…",
+    "Los je eerste zaak op": "اپنا پہلا کیس حل کریں",
+    "Oefenzaak": "مشقی کیس",
+    "Oefenzaak ✓ · nog {0} {0|one:zaak|other:zaken} tot de bewijskist": "مشقی کیس ✓ · ثبوتوں کے صندوق تک {0} کیس باقی",
+    "Je gratis hints voor vandaag zijn op. Morgen krijg je er weer {0}. Los een campagnezaak op met drie sterren en je verdient er één.": "آج کے مفت اشارے ختم ہو گئے۔ کل پھر {0} ملیں گے۔ مہم کا کوئی کیس تین ستاروں کے ساتھ حل کریں تو ایک اشارہ کمائیں۔",
+    "{0} werelden, {1} zaken": "{0} دنیائیں، {1} کیس",
+    "{0} {0|one:zaak|other:zaken}": "{0} کیس",
+    "{0} werelden los: {1}": "{0} دنیائیں الگ الگ: {1}",
+    "Open alles · {0}": "سب کچھ کھولیں · {0}",
+    "Open alles": "سب کچھ کھولیں",
+    "Niet nu": "ابھی نہیں",
+    "Je hebt {0} opgelost. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "آپ نے {0} حل کر لیا۔ آگے مزید {1} {1|one:باب|other:ابواب} اور {2} کیس ہیں۔",
+    "{0} staat al open. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.": "{0} پہلے سے کھلا ہے۔ آگے مزید {1} {1|one:باب|other:ابواب} اور {2} کیس ہیں۔",
+    "🧊 Twee keer je streak redden als je een dag mist": "🧊 کوئی دن رہ جائے تو دو بار اپنا سلسلہ بچائیں",
+    "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "ایپ اسٹور اکاؤنٹ کے ذریعے ایک بار کی خریداری، کوئی سبسکرپشن نہیں۔ ہر دنیا کا باب اول، حویلی، قزاقوں کا جہاز، روزانہ کیس، ہفتے کا کیس اور ریکارڈ روم ہمیشہ مفت رہیں گے۔"
   },
 
   data: {
@@ -2154,8 +2168,8 @@
     ],
     "mentorName": "انسپکٹر وین ڈیم",
     "boardTutorial": [
-      "بیان 1: لیڈی کلیمنٹائن بیٹھک میں، ایک کونے میں تھی۔ تین کونوں میں فرنیچر ہے، اس لیے ایک ہی بچتا ہے۔ کلیمنٹائن کو کھینچ کر چمکتے ہوئے خانے پر لے جائیں، یا اس خانے پر ٹیپ کریں۔",
-      "بیان 2: مسٹر ہارگروو ایک پودے کے بالکل ساتھ کھڑا تھا۔ پودے کے ساتھ صرف ایک خانہ خالی ہے۔ ہارگروو کو کھینچ کر وہاں لے جائیں، یا اس خانے پر ٹیپ کریں۔",
+      "چمکتے ہوئے خانے پر ٹیپ کریں۔ لیڈی کلیمنٹائن بیٹھک کے ایک کونے میں تھی، اور یہی واحد خالی کونا ہے۔",
+      "چمکتے ہوئے خانے پر ٹیپ کریں۔ مسٹر ہارگروو پودے کے ساتھ کھڑا تھا، اور اس کے ساتھ یہی واحد خالی خانہ ہے۔",
       "سب اپنی جگہ پر ہیں۔ ”جانچیں“ پر ٹیپ کریں۔",
       "اصول: مقتول کے کمرے میں صرف قاتل تھا۔ ہارگروو باورچی خانے میں ہے — ہارگروو کو چنیں۔"
     ]
