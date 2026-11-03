@@ -1319,6 +1319,14 @@ const Board = {
   // Daily cases link to the free web daily (same case today, playable without installing); everything else to the store.
   SHARE_PLAY_URL: 'https://jaimycai.github.io/crimson-ledger/play/',
   SHARE_STORE_URL: 'https://apps.apple.com/app/id6812534368',
+  // App Store campaign links (1.6): ct names the channel, so App Store Connect (App Analytics, Sources → Campaigns) counts
+  // the downloads per channel: share-case, share-week, share-daily (the web daily passes its own ct on to the App Store),
+  // webdaily-cta, webdaily-share. Apple attributes a campaign only together with the provider token (pt) of the
+  // account; it is not in this repo yet. Copy it from App Analytics → Campaigns → "Generate a campaign link" into
+  // STORE_PT and every link carries it. Without pt the links work as before.
+  STORE_PT: '',
+  storeLink(ct) { return `${this.SHARE_STORE_URL}?${this.STORE_PT ? `pt=${this.STORE_PT}&` : ''}ct=${ct}&mt=8`; },
+  playLink(ct) { return `${this.SHARE_PLAY_URL}?ct=${ct}`; },
   shareText() {
     const diff = DIFFICULTY[this.difficulty] || DIFFICULTY.gemiddeld;
     const stars = Campaign.starsFor(this.hintsUsed, this.attempts);
@@ -1330,7 +1338,7 @@ const Board = {
       // one square per accusation: red for a wrong one, green for the culprit
       '🟥'.repeat(this.attempts) + '🟩',
       this.isDaily && App.streak.count > 1 ? BD_T`🔥 ${App.streak.count} dagen streak!` : '',
-      '', this.isDaily ? this.SHARE_PLAY_URL : this.SHARE_STORE_URL
+      '', this.isDaily ? this.playLink('share-daily') : this.storeLink(this.isWeekly ? 'share-week' : this.missedDay ? 'share-daily' : 'share-case')
     ].filter((x, i, a) => x || (i > 0 && a[i - 1])).join('\n');
   },
 
