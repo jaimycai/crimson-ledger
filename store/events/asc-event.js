@@ -3,6 +3,8 @@
 //   node store/events/asc-event.js store/events/zaak-van-de-week.json            create as draft
 //   node store/events/asc-event.js store/events/zaak-van-de-week.json --submit   also submit for review
 //   node store/events/asc-event.js submit <eventId>                              submit an existing draft on its own
+//   node store/events/asc-event.js update <eventId> <spec.json> [--submit]      rewrite name/short/long per locale of
+//                                                                                an existing event (images and dates stay)
 //   node store/events/asc-event.js list
 // A spec may name its own art: "art": { "card": "<png next to the spec>", "details": "<png>" }; without it the
 // Case of the Week pair (event-card.png, event-details.png) is used.
@@ -68,6 +70,26 @@ async function submitEvent(id) {
   console.log('review submission', sub.data.id, done ? done.data.attributes.state : 'not submitted');
 }
 
+// New texts for an event that already exists (e.g. a published one): PATCH every localization in the spec, keep the
+// images and the schedule, then (with --submit) send it to review again. Apple may refuse edits in some event states;
+// the FAIL line then shows why.
+async function update(id, file, submit) {
+  const s = JSON.parse(fs.readFileSync(file, 'utf8'));
+  const e = await api('GET', `/v1/appEvents/${id}`); if (!e) return;
+  console.log('event', id, e.data.attributes.referenceName, e.data.attributes.eventState);
+  const have = await api('GET', `/v1/appEvents/${id}/localizations?limit=50`);
+  const byLocale = Object.fromEntries(((have && have.data) || []).map(l => [l.attributes.locale, l.id]));
+  let ok = 0;
+  for (const [locale, [name, shortDescription, longDescription]] of Object.entries(s.locales)) {
+    const locId = byLocale[locale];
+    if (!locId) { console.log(locale, 'MISSING on the event'); continue; }
+    const r = await api('PATCH', `/v1/appEventLocalizations/${locId}`, { data: { type: 'appEventLocalizations', id: locId, attributes: { name, shortDescription, longDescription } } });
+    console.log(locale, r ? 'updated' : 'NOT updated'); if (r) ok++;
+  }
+  console.log(ok, 'of', Object.keys(s.locales).length, 'locales updated');
+  if (submit && ok) await submitEvent(id);
+}
+
 async function list() {
   const r = await api('GET', `/v1/apps/${APP}/appEvents?limit=20`);
   for (const e of (r && r.data) || []) console.log(e.id, e.attributes.referenceName, '|', e.attributes.eventState, '|', JSON.stringify(e.attributes.territorySchedules[0] && { start: e.attributes.territorySchedules[0].eventStart, end: e.attributes.territorySchedules[0].eventEnd }));
@@ -76,5 +98,6 @@ async function list() {
 const [arg, flag] = process.argv.slice(2);
 if (arg === 'list') list();
 else if (arg === 'submit' && flag) submitEvent(flag);
+else if (arg === 'update' && flag && process.argv[4]) update(flag, process.argv[4], process.argv.includes('--submit'));
 else if (arg) create(arg, flag === '--submit');
-else console.log('usage: list | <spec.json> [--submit] | submit <eventId>');
+else console.log('usage: list | <spec.json> [--submit] | submit <eventId> | update <eventId> <spec.json> [--submit]');
