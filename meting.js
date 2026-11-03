@@ -14,8 +14,13 @@ const Meting = {
   get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
   set(k, v) { if (typeof App !== 'undefined') App.storageSet(k, v); else { try { localStorage.setItem(k, v); } catch (e) { /* privémodus */ } } },
   on() { return this.get('crimson-meting') !== '0'; },
-  // De iOS-simulator zet 'CrimsonSimulator' in de user agent (MainViewController): testruns tellen niet mee.
-  test() { return typeof navigator !== 'undefined' && /CrimsonSimulator/.test(navigator.userAgent || ''); },
+  // De iOS-simulator zet 'CrimsonSimulator' in de user agent (MainViewController), TestFlight en App Review sinds 1.6
+  // 'CrimsonSandbox': testruns en Apples eigen toestellen tellen niet mee.
+  test() { return typeof navigator !== 'undefined' && /Crimson(Simulator|Sandbox)/.test(navigator.userAgent || ''); },
+  // de regio uit de taalinstelling (en-US → US), alleen op de eerste dag: zo zien we wie "Engels" speelt
+  region() {
+    try { const loc = (navigator.languages && navigator.languages[0]) || navigator.language || ''; const m = loc.match(/[-_]([A-Za-z]{2}|\d{3})(?![A-Za-z])/); return m ? m[1].toUpperCase() : ''; } catch (e) { return ''; }
+  },
   setOn(v) { this.set('crimson-meting', v ? '1' : '0'); },
   platform() {
     // de webdagzaak (docs/play/, build-web-daily.js) zet deze vlag vóór dit bestand laadt: apart geteld van de app
@@ -50,7 +55,9 @@ const Meting = {
     if (this.get('crimson-meting-day') === today) return;
     this.set('crimson-meting-day', today);
     const dn = Math.max(0, Math.round((new Date(today) - new Date(first)) / 864e5));
-    this.send('open', '', Math.min(dn, 400));
+    // in de app op dag 0 de regio; de webdagzaak vult zelf in hoe de bezoeker kwam (direct of via delen)
+    const native = /^(ios|android)$/.test(this.platform());
+    this.send('open', dn === 0 && native ? this.region() : '', Math.min(dn, 400));
   }
 };
 if (typeof module !== 'undefined' && module.exports) module.exports = { Meting };
