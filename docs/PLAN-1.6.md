@@ -68,3 +68,5 @@ Jaimy kiest; pas dan bouwen.
   reviewschermafbeelding); ze gaan mee met de review van 1.6.0.
 - Bij de release: `node build-web-daily.js` opnieuw draaien (de dagelijkse wereld wisselt nu over 24 werelden) en de
   meting-worker deployen (nieuwe teller `notif`).
+- 3 november 2026, ~00:40: A/B-test "Bold iPhone cards" gestopt; 1.6.0 (20) met de acht wereldaankopen ingediend
+  (`node store/asc.js submit --submit`), status WAITING_FOR_REVIEW. Volgende video's: meteen met stil geluidsspoor coderen.
