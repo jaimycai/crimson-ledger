@@ -1,8 +1,71 @@
 {
-  "nl-NL": {
-    "promotionalText": "Elke dag een nieuwe zaak. Speur, redeneer en vind de dader, met pure logica en zonder gokwerk. Het Landhuis en Het Piratenschip zijn gratis."
-  },
-  "en-US": {
-    "promotionalText": "A new case every day. Search, reason and find the culprit, with pure logic and no guessing. The Manor and The Pirate Ship are free to play."
-  }
+ "ar-SA": {
+  "promotionalText": "متعة لا تنتهي، وقضية جديدة كل يوم. لا إعلانات بين القضايا. تلميحات تشرح الطريق ولا تكشف الحل."
+ },
+ "bn-BD": {
+  "promotionalText": "অফুরন্ত মজা, আর রোজ একটি নতুন কেস। এক কেস থেকে আরেক কেসের মাঝে কোনো বিজ্ঞাপন নেই। ইঙ্গিত পথ বোঝায়, উত্তর কখনো বলে দেয় না।"
+ },
+ "de-DE": {
+  "promotionalText": "Endloser Rätselspaß, jeden Tag ein neuer Fall. Keine Werbung zwischen den Fällen. Tipps, die erklären und nie verraten."
+ },
+ "en-GB": {
+  "promotionalText": "Endless puzzle fun, with a new case every day. No ads between cases. Hints that explain, never spoil."
+ },
+ "en-US": {
+  "promotionalText": "Endless puzzle fun, with a new case every day. No ads between cases. Hints that explain, never spoil."
+ },
+ "es-ES": {
+  "promotionalText": "Diversión sin fin: un caso nuevo cada día y un archivo que nunca se acaba. Sin anuncios entre casos. Pistas que te explican el camino, nunca la solución."
+ },
+ "es-MX": {
+  "promotionalText": "Diversión sin fin: un caso nuevo cada día y un archivo que nunca se acaba. Sin anuncios entre casos. Pistas que te explican el camino, nunca la solución."
+ },
+ "fr-FR": {
+  "promotionalText": "Du plaisir sans fin, avec une nouvelle affaire chaque jour. Pas de pub entre les affaires. Des aides qui expliquent, sans jamais tout dévoiler."
+ },
+ "hi": {
+  "promotionalText": "बेहिसाब मज़ा, और रोज़ एक नया केस। केसों के बीच कोई विज्ञापन नहीं। संकेत रास्ता समझाते हैं, जवाब कभी नहीं बताते।"
+ },
+ "id": {
+  "promotionalText": "Keseruan tanpa akhir, kasus baru setiap hari. Tanpa iklan di antara kasus. Petunjuk yang menjelaskan, tidak pernah membocorkan."
+ },
+ "it": {
+  "promotionalText": "Divertimento infinito, con un caso nuovo ogni giorno. Niente pubblicità tra un caso e l’altro. Aiuti che spiegano, senza mai svelare la soluzione."
+ },
+ "ja": {
+  "promotionalText": "毎日新しい事件が届き、楽しさは尽きることがありません。事件と事件のあいだに広告は出ません。ヒントは考え方を教えてくれて、答えは明かしません。"
+ },
+ "ko": {
+  "promotionalText": "매일 새 사건이 도착하고, 재미는 끝이 없어요. 사건과 사건 사이에 광고가 없어요. 힌트는 생각하는 길을 알려 줄 뿐, 답은 알려 주지 않아요."
+ },
+ "mr-IN": {
+  "promotionalText": "अमर्याद मजा, आणि रोज एक नवे प्रकरण. प्रकरणांच्या मध्ये जाहिराती नाहीत. संकेत मार्ग समजावतात, उत्तर कधीच सांगत नाहीत."
+ },
+ "nl-NL": {
+  "promotionalText": "Eindeloos veel speelplezier, elke dag een nieuwe zaak. Geen reclame tussen zaken. Hints die uitleggen, nooit verklappen."
+ },
+ "pt-BR": {
+  "promotionalText": "Diversão sem fim: um caso novo todo dia e um arquivo que nunca acaba. Sem anúncios entre os casos. Dicas que explicam, sem entregar a resposta."
+ },
+ "pt-PT": {
+  "promotionalText": "Diversão sem fim: um caso novo todos os dias e um arquivo que nunca acaba. Sem anúncios entre casos. Dicas que explicam, sem revelar a resposta."
+ },
+ "ru": {
+  "promotionalText": "Бесконечное удовольствие: новое дело каждый день. Без рекламы между делами. Подсказки объясняют, но не раскрывают ответ."
+ },
+ "te-IN": {
+  "promotionalText": "అంతులేని వినోదం, రోజూ ఒక కొత్త కేసు. కేసుల మధ్య ప్రకటనలు లేవు. సూచనలు దారి చూపిస్తాయి, జవాబు ఎప్పుడూ చెప్పవు."
+ },
+ "tr": {
+  "promotionalText": "Bitmeyen bulmaca keyfi, her gün yeni bir vaka. Vakalar arasında reklam yok. İpuçları açıklar, asla çözümü söylemez."
+ },
+ "ur-PK": {
+  "promotionalText": "بے انتہا مزہ، اور ہر روز ایک نیا کیس۔ کیسوں کے بیچ کوئی اشتہار نہیں۔ اشارے راستہ سمجھاتے ہیں، جواب کبھی نہیں بتاتے۔"
+ },
+ "vi": {
+  "promotionalText": "Niềm vui bất tận, mỗi ngày một vụ án mới. Không quảng cáo giữa các vụ án. Gợi ý chỉ giải thích, không bao giờ tiết lộ đáp án."
+ },
+ "zh-Hans": {
+  "promotionalText": "每天都有新案件，乐趣源源不断。案件之间没有广告。提示只讲思路，绝不剧透答案。"
+ }
 }
