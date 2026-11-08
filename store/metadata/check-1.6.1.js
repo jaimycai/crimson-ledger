@@ -79,14 +79,15 @@ for (const f of files) {
     const n = [...t[k]].length;
     if (n > max) fail(loc, `${k} is ${n} tekens (max ${max})`);
   }
-  if (!t.name || !t.name.startsWith('Crimson Ledger')) fail(loc, 'naam begint niet met "Crimson Ledger"');
+  // Jaimy, 8 november 2026: genre vooraan, merk achteraan ("Mystery Sudoku: Crimson Ledger"). Een zoeker leest eerst wat
+  // het spel is; het onbekende merk vooraan kostte doortikken (store/CONVERSIE.md, "Conversie per land").
+  if (!t.name || !t.name.endsWith(': Crimson Ledger') || t.name === ': Crimson Ledger') fail(loc, 'naam is niet "<genre>: Crimson Ledger"');
   for (const k of ['name', 'subtitle']) if (NOT_IN_TITLE.test(t[k] || '')) fail(loc, `${k} bevat een woord dat Apple weigert (gratis/beste/#1)`);
   const kw = String(t.keywords || '');
   if (/,\s/.test(kw)) fail(loc, 'zoekwoorden: spatie na een komma');
-  // Besluit Jaimy, 4 november 2026: 'murder' en 'murdoku' mogen alleen in het onzichtbare trefwoordveld van en-US en en-GB
-  // (docs/onderzoek/ZOEKWOORDEN-2026-11.md §4 en §7); nergens anders, en niet in naam, ondertitel, beschrijving of schermen.
-  const kwAllowed = ['en-US', 'en-GB'].includes(loc) ? kw.split(',').filter(w => !['murder', 'murdoku'].includes(w.trim().toLowerCase())).join(',') : kw;
-  if (BRANDS.test(kwAllowed) || BRANDS.test(t.name || '') || BRANDS.test(t.subtitle || '')) fail(loc, 'merknaam van een ander');
+  // Jaimy, 8 november 2026: geen 'murder' in welke taal dan ook, ook niet in het onzichtbare trefwoordveld van en-US en
+  // en-GB. Dat vervangt het besluit van 4 november; 'murdoku' (merk van een ander) gaat er daarom ook uit.
+  if (BRANDS.test(kw) || BRANDS.test(t.name || '') || BRANDS.test(t.subtitle || '')) fail(loc, 'merknaam van een ander');
   const titleWords = new Set(words(`${t.name} ${t.subtitle}`));
   const kws = kw.split(',').map(s => s.trim().toLowerCase()).filter(Boolean);
   const dupT = kws.filter(k => titleWords.has(k));
@@ -105,7 +106,7 @@ for (const f of files) {
   if (/\b(buy|koop|kaufen|acheter|comprar|comprare|satın)\b/i.test(t.promotionalText + ' ' + t.whatsNew)) fail(loc, 'promotietekst of wat-is-nieuw zegt "kopen"');
   // Jaimy, 3-11: nergens een moordwoord
   for (const k of Object.keys(LIMIT)) {
-    const hits = murderWords(k === 'keywords' && ['en-US', 'en-GB'].includes(loc) ? t[k].split(',').filter(w => w.trim().toLowerCase() !== 'murder').join(',') : t[k]);
+    const hits = murderWords(t[k]);
     if (hits.length) fail(loc, `${k} bevat een moordwoord: ${[...new Set(hits)].join(', ')}`);
   }
   if (loc === 'vi') {

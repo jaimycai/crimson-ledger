@@ -205,3 +205,25 @@ Saoedi-Arabië 3.209 en 103 (3,2%).
 | 4 | Optioneel: kleine Apple Ads-campagne (Search Match) in JP en VS | De enige bron die laat zien op welke zoektermen we echt verschijnen. Kost geld; keuze van Jaimy |
 
 A/B-test "Bold iPhone cards" (punt 3) op 8-11: origineel 2,23%, nieuw 2,42% (+8,41%), volgens Apple nog niet beslist.
+
+### Wat een zoeker ziet, en wat er in 1.6.1 veranderde (8-11)
+
+Apple-benchmark (puzzelapps, gratis met aankopen, week 19-25 okt): onze conversie 1,26%, mediaan 1,34%, bovenste kwart
+2,85%. Het zoekresultaat op ware grootte naast Enigmic, Tiny Crimes en Motive liet drie dingen zien:
+
+1. **Het eerste vak was een kale schermopname.** Elke taal had een preview-video. Apple zet die in het zoekresultaat
+   vooraan en speelt hem af. Vanaf seconde 0 een vol bord met piepkleine tekst, zonder kop en zonder "sudoku". Door de
+   video viel ook beeld 3 uit het zoekresultaat (Apple toont video plus beeld 1 en 2).
+2. **Onze koppen zijn kleiner en ons bord drukker** dan bij de concurrenten, die in alle drie de vakken een grote kop en
+   een eenvoudig rooster met grote portretten tonen.
+3. **De naam begon met een merk dat niemand kent.** Een zoeker las eerst "Crimson Ledger" en pas daarna het genre.
+
+Besluit Jaimy, 8-11, mee in 1.6.1 (build 22, zelfde code als 1.6.0, ingediend 8-11):
+- Preview-video's uit alle 23 talen. Het zoekresultaat toont nu de drie kaarten met kop. De video's staan nog in
+  `store/previews/`.
+- Genre vooraan, merk achteraan: "Mystery Sudoku: Crimson Ledger", "ナンプレ×謎解き: Crimson Ledger", enzovoort.
+  `check-1.6.1.js` eist nu die vorm.
+- Geen "murder" in welke taal dan ook, ook niet in het onzichtbare trefwoordveld; "murdoku" (merk van een ander) ook weg.
+
+Volgende stappen: A/B-test (PPO) zodra 1.6.1 live is; nieuwe kaarten met een kop van ongeveer 25% van de hoogte en een
+eenvoudig, ingezoomd bord; een video v2 die in de eerste 2 seconden de kop toont, pas daarna testen tegen geen video.
