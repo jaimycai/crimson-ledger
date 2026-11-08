@@ -50,7 +50,7 @@ Dat het in elke taal zo is, komt door punt 1 en 3: de namen per taal kozen we op
 | 2 | **Nieuwe eerste drie schermafbeeldingen** | Dikke schreefloze kop, 2-4 woorden, lichte achtergrond, bord ingezoomd zodat rooster en portretten het beeld vullen. Beeld 1: "Sudoku + moord" in de taal van de winkel; beeld 2: één verklaring groot met het bord; beeld 3: "Zaak gesloten" met sterren. Eerst twee richtingen laten zien (vakmanschap: referenties eerst), dan alle talen. | **klaar 28-10**: Jaimy koos A "in een iPhone"; alle negen beelden in die stijl, 20 talen, `store/make-store-cards.js`. Beeld 3 werd "Eindeloos puzzelen" (Jaimy: "16 werelden klinkt niet aantrekkelijk"). Mee in 1.5 |
 | 3 | **A/B-test van de winkelpagina (Product Page Optimization)** | Oude tegen nieuwe schermafbeeldingen, zonder nieuwe build. Levert de echte conversie per variant. Ruimer dan eerst gepland: alle 23 winkeltalen, 50% van het verkeer, zodat er sneller genoeg gegevens zijn. | ingediend 29-10, wacht op Apple; alle 23 talen 9/9 verwerkt. Stand: `node store/asc-experiment.js list` |
 | 4 | **Eerder om een beoordeling vragen** | Nu pas na 5 zaken; maar 21% haalt die. Ook vragen na de eerste ★★★ vanaf zaak 3, nooit na een fout. Apple staat 3 vragen per jaar toe. | 1.5 · **klaar** (`668f671`) |
-| 5 | **Conversie per land meten** | App Store Connect: vertoningen, paginaweergaven en downloads per land en per bron, plus de vergelijking met de branche. De sessie in Chrome is verlopen; na opnieuw inloggen haal ik het op. | zodra Jaimy inlogt |
+| 5 | **Conversie per land meten** | App Store Connect: vertoningen, paginaweergaven en downloads per land en per bron, plus de vergelijking met de branche. | **gemeten 8-11**: zie "Conversie per land" onderaan. Opnieuw rond 19-11 (14 dagen na 1.6.0) |
 
 ### Voorstel naam en ondertitel (30 tekens max)
 
@@ -134,3 +134,74 @@ hoogstens 100/100 (de-DE, it). Geen zoekwoord herhaalt een woord uit naam of ond
 merknamen van anderen (Murdle, Cluedo, Enigmic, Murdoku en "Mordoku" staan er niet in).
 
 **Meten na 1.5**: dezelfde termen als in de kolom Bron, 7 en 14 dagen na goedkeuring (GROEI §4).
+
+## Conversie per land (gemeten 8-11-2026)
+
+Uitwerking van punt 5. Vraag Jaimy: "We hebben veel vertoningen maar weinig downloads. De meeste downloads komen uit NL,
+terwijl we veel meer vertoningen uit andere landen krijgen. Komt het door de landingspagina of door ongebruikelijke woorden?
+Japan heeft bijvoorbeeld veel vertoningen maar amper downloads."
+
+**Hoe gemeten.** App Store Connect Analytics, 9 oktober t/m 7 november 2026 (30 dagen), per land en per bron. Opgehaald in
+de ingelogde Chrome-tab met `POST /analytics/api/v1/data/timeseries` (measures `impressionsTotal`, `pageViewCount`,
+`units`, `redownloads`; group `storefront` of `source`). Zoekposities dezelfde dag via de iTunes-zoek-API (`limit=200`).
+
+### Totaal
+
+21.409 vertoningen, 904 paginaweergaven, 224 eerste downloads. Conversie volgens App Store Connect: 1,4% (daggemiddelde).
+Buiten NL komt 97 tot 100% van de vertoningen uit App Store-zoeken.
+
+### Per land
+
+| Land | Vertoningen | Paginaweergaven | Downloads | Vertoning → pagina | Pagina → download |
+|---|---|---|---|---|---|
+| VS | 3.663 | 105 | 26 | 2,9% | 25% |
+| Saoedi-Arabië | 3.215 | 103 | 21 | 3,2% | 20% |
+| Japan | 2.348 | 63 | 6 | 2,7% | 10% |
+| Brazilië | 1.246 | 26 | 7 | 2,1% | 27% |
+| Turkije | 1.148 | 17 | 4 | 1,5% | 24% |
+| Rusland | 1.139 | 38 | 12 | 3,3% | 32% |
+| Mexico | 1.065 | 45 | 9 | 4,2% | 20% |
+| Frankrijk | 783 | 28 | 16 | 3,6% | 57% |
+| Colombia | 617 | 29 | 14 | 4,7% | 48% |
+| **Nederland** | 567 | 161 | 30 | **28,4%** | 19% |
+| Duitsland | 499 | 19 | 8 | 3,8% | 42% |
+| Spanje | 409 | 43 | 12 | 10,5% | 28% |
+| Italië | 275 | 29 | 9 | 10,5% | 31% |
+| **Alles behalve NL** | 20.842 | 743 | 194 | **3,6%** | **26%** |
+
+Alleen via zoeken: NL 503 vertoningen en 121 paginaweergaven (24%), Japan 2.317 en 52 (2,2%), VS 3.611 en 76 (2,1%),
+Saoedi-Arabië 3.209 en 103 (3,2%).
+
+### Wat het zegt
+
+1. **Het verlies zit niet op de winkelpagina.** Wie de pagina opent, downloadt buiten NL vaker (26%) dan in NL (19%). De
+   pagina en de vertalingen zijn dus niet de oorzaak.
+2. **Het verlies zit in de lijst met zoekresultaten.** Buiten NL tikt 2 tot 4% door op ons, in NL 28%. Dat gebeurt voordat
+   iemand de pagina ziet.
+3. **Nederlanders zoeken ons bij naam.** Op "crimson ledger" staan we op plek 1. Die zoekers komen via TikTok NL en
+   bekenden, en tikken bijna altijd door.
+4. **In de andere landen komen de vertoningen uit brede zoektermen, waarop we laag staan.** Wie "sudoku" of "数独" zoekt,
+   wil meestal een gewone sudoku en scrollt langs ons heen. Apple telt een vertoning al na 1 seconde in beeld.
+5. **Beoordelingen tellen per land.** NL heeft 6 beoordelingen (4,7★). In elk ander land staat er 0, naast concurrenten met
+   honderden tot duizenden.
+
+### Japan
+
+- Zoekposities op 8-11 (live 1.6.0, naam 数独×謎解き): 数独 plek 76 van 189; ナンプレ, 謎解き, 推理, 推理ゲーム en 探偵
+  niet in de top 190; 犯人探し 40. Op combinaties wel hoog: 数独 犯人 plek 3, mystery sudoku 3, 謎解き 数独 7, crime
+  sudoku 18.
+- De Japanse beschrijving en het eerste beeld ("数独で解くミステリー") lezen natuurlijk. De woorden zijn niet de oorzaak.
+- Japanse zoekers gebruiken vaker ナンプレ dan 数独, en 数独 is een merk van Nikoli. Het voorstel ナンプレ×謎解き staat in
+  `docs/onderzoek/ZOEKWOORDEN-2026-11.md` §6.
+- Pagina → download is in Japan het laagst (10%), maar op 63 paginaweergaven is dat geen betrouwbaar getal.
+
+### Wat dit verandert
+
+| # | Wat | Waarom |
+|---|---|---|
+| 1 | Zoekwoorden van 1.6.1 en ナンプレ×謎解き mee met de volgende versie | Hoger op nichetermen, waar wie zoekt ook ons spel wil |
+| 2 | Beoordelingen per land volgen | De vraag na de eerste ★★★ zit in 1.5; 0 beoordelingen is buiten NL het zwakste punt in het zoekresultaat |
+| 3 | Opnieuw meten rond 19-11, 14 dagen na 1.6.0 | 1.6.0 staat sinds 5-11 live; bijna alle cijfers hierboven horen bij oudere versies |
+| 4 | Optioneel: kleine Apple Ads-campagne (Search Match) in JP en VS | De enige bron die laat zien op welke zoektermen we echt verschijnen. Kost geld; keuze van Jaimy |
+
+A/B-test "Bold iPhone cards" (punt 3) op 8-11: origineel 2,23%, nieuw 2,42% (+8,41%), volgens Apple nog niet beslist.
