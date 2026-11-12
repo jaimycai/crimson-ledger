@@ -241,3 +241,7 @@ eerste publicatie op zijn vroegst 6 oktober.
   5 nov 19:35, 6 nov 20:05, 7 nov 12:20, 8 nov 19:50), EN 7 (4 nov 01:10, 5 nov 00:40, 6 nov 01:35, 7 nov 02:05, 8 nov 00:20, 9 nov 01:50,
   10 nov 01:15), ES 4 (3 nov 21:15, 4 nov 20:40, 5 nov 21:50, 6 nov 20:25), alles Amsterdam-tijd, AI-label aan, omslag = beeld op 3 s.
   NL c72-0 (9 nov 18:55) niet: Free-limiet 10, vier oude mislukte carrousels (22-27 okt) tellen mee. Wachtrijen NL, EN, ES hervat; nagelezen, niets verschoven.
+- 12 nov: meting openbare profielen. NL @crimsonledger.app: laatste 6 video's 0 weergaven, 0 volgers. EN @crimsonledgergame: laatste
+  7 video's 0, 0 volgers. ES @crimsonledger.es: laatste 7 video's 0, 0 volgers. Ook de video's van 3-10 nov via Buffer: 0. Drie weken na
+  de pauze van 25 okt is geen account hersteld. Jaimy (12 nov): Buffer-wachtrijen NL, EN en ES op pauze (Pause Queue aan, nagelezen);
+  routes: makers met cadeaucode, YouTube Shorts + Instagram Reels via Buffer, nieuwe TikTok-accounts die Jaimy aanmaakt.
