@@ -10,3 +10,7 @@ fs.cpSync('vendor', 'www/vendor', { recursive: true });
 fs.mkdirSync('www/i18n');
 for (const f of fs.readdirSync('i18n')) if (f.endsWith('.js')) fs.copyFileSync(path.join('i18n', f), path.join('www/i18n', f));
 console.log(`www/: ${FILES.length} bestanden + assets/ + vendor/ + i18n/`);
+// De widget "Zaak van vandaag" (iOS) kan het JavaScript niet draaien: build-widget.js rekent de dagzaken van de komende
+// 400 dagen vooruit met dezelfde code, in alle talen, naar ios/App/CrimsonLiveActivity/DailyCases.json (niet in git).
+const widget = require('./build-widget.js').build();
+console.log(`widget: ${widget.data.days.length} dagen (${widget.data.first} t/m ${widget.last}), ${Object.keys(widget.data.langs).length} talen`);
