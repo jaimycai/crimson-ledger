@@ -2143,8 +2143,10 @@ const App = {
 
   getDayNumber(now = new Date()) {
     // Dagen sinds 1 jan 2026 (een ander tijdstip meegeven kan: de meldingen noemen de zaak van die dag)
-    const start = new Date(2026, 0, 1);
-    return Math.floor((now - start) / 86400000) + 1;
+    // 1.7: count calendar days, not 24-hour blocks. With 24-hour blocks, summer time made 00:00-01:00 still
+    // show yesterday's world and title while the seed (getDailySeed) and the widget were already on today.
+    const day = Date.UTC(now.getFullYear(), now.getMonth(), now.getDate());
+    return Math.round((day - Date.UTC(2026, 0, 1)) / 86400000) + 1;
   },
   // de dagzaak van een dag: dezelfde seed, wereld en titel als die dag (zie btn-board-daily)
   dailyCase(now = new Date()) {
