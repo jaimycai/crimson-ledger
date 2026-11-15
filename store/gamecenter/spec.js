@@ -81,7 +81,7 @@ function spec() {
       scoreRangeStart: 0, scoreRangeEnd: 100000000 }),
     // a recurring leaderboard: a new one every day at 00:00 UTC; the time is in seconds, lower is better
     board('daily_time', { referenceName: 'Snelste dagelijkse zaak (daily_time)', defaultFormatter: 'ELAPSED_TIME_SECOND', submissionType: 'BEST_SCORE', scoreSortType: 'ASC',
-      scoreRangeStart: 1, scoreRangeEnd: 86400, recurrenceStartDate: '2026-11-17T00:00:00.000Z', recurrenceDuration: 'P1D', recurrenceRule: 'FREQ=DAILY;INTERVAL=1' })
+      scoreRangeStart: 1, scoreRangeEnd: 86400, recurrenceStartDate: '2026-11-17T00:00:00.000Z', recurrenceDuration: 'PT24H', recurrenceRule: 'FREQ=DAILY;INTERVAL=1' })
   ];
   return { locales: Object.keys(LOCALES), achievements, leaderboards };
 }

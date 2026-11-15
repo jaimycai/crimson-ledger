@@ -132,7 +132,7 @@ async function createAchievement(detail, a) {
 }
 async function createLeaderboard(detail, l) {
   const attributes = { referenceName: l.referenceName, vendorIdentifier: l.id, defaultFormatter: l.defaultFormatter, submissionType: l.submissionType,
-    scoreSortType: l.scoreSortType, scoreRangeStart: l.scoreRangeStart, scoreRangeEnd: l.scoreRangeEnd };
+    scoreSortType: l.scoreSortType, scoreRangeStart: String(l.scoreRangeStart), scoreRangeEnd: String(l.scoreRangeEnd) };   // Apple wants the range as strings
   if (l.recurrenceRule) {
     // the first day must lie ahead: the next midnight (UTC) if the spec's date has passed
     const next = new Date(); next.setUTCHours(24, 0, 0, 0);
