@@ -43,6 +43,20 @@ check(JSON.stringify(keysFor({ solved: 10, threeStars: 1, masterSolved: 1, strea
 check(keysFor({ solved: 500 }).filter(k => k.startsWith('solved_')).length === 4, '500 solved: all four case counters');
 check(GameCenter.BOARDS.points === 'crimson.points' && GameCenter.BOARDS.daily_time === 'crimson.daily_time', 'leaderboards crimson.points and crimson.daily_time');
 
+// ── hardening: only known ids reach GameKit, scores stay in the declared ranges ──
+const swiftIds = [...new Set(swift.match(/"crimson\.[a-z0-9_.]+"/g).map(x => x.slice(1, -1)))].sort();
+check(JSON.stringify(swiftIds) === JSON.stringify([...ids, ...Object.values(GameCenter.BOARDS)].sort()), `Swift: the hard-coded ids are exactly the 36 achievements and 2 leaderboards (${swiftIds.length})`);
+check(/achievementIDs\.contains\(id\) else \{ call\.reject/.test(swift) && /leaderboardRanges\[id\] else \{ call\.reject/.test(swift), 'Swift: an unknown achievement or leaderboard id is rejected');
+check(/"crimson\.points": 0\.\.\.100_000_000/.test(swift) && /"crimson\.daily_time": 1\.\.\.86_400/.test(swift) && /min\(Double\(range\.upperBound\), raw\)/.test(swift) && /raw\.isFinite, raw >= Double\(range\.lowerBound\)/.test(swift)
+  && /percent\.isFinite \? min\(100, max\(0, percent\)\)/.test(swift), 'Swift: value clamped to the range (too high lowered, too low or not finite refused), percent to 0..100');
+const C = (b, v) => GameCenter.clampScore(b, v);
+check(C('points', NaN) === null && C('points', Infinity) === null && C('points', -Infinity) === null && C('points', '95') === null && C('points', undefined) === null,
+  'score: NaN, infinite, text and missing values are dropped');
+check(C('points', 12.6) === 13 && C('points', 2e9) === 100000000 && C('points', -5) === null && C('points', 0) === null, 'points: rounded, lowered to 100 000 000, negative and 0 dropped');
+check(C('daily_time', 95.5) === 96 && C('daily_time', 90000) === 86400 && C('daily_time', 0) === null && C('daily_time', 0.4) === null && C('daily_time', -3) === null,
+  'daily time: rounded, lowered to 86 400 s, below 1 s dropped (not raised to a record)');
+check(C('bogus', 5) === null, 'unknown leaderboard: dropped');
+
 // ── no-op outside the iOS app (node itself has no window) ──
 (async () => {
   check(GameCenter.native() === null && await GameCenter.achieve('first_case') === false && await GameCenter.score('points', 10) === false, 'node: no plugin, achieve and score do nothing');
@@ -52,6 +66,7 @@ check(GameCenter.BOARDS.points === 'crimson.points' && GameCenter.BOARDS.daily_t
   const s = spec();
   check(JSON.stringify(s.achievements.map(a => a.id)) === JSON.stringify(ids), 'spec: the same 36 ids in the same order as gamecenter.js');
   check(JSON.stringify(s.leaderboards.map(l => l.id).sort()) === JSON.stringify(Object.values(GameCenter.BOARDS).sort()), 'spec: the two leaderboards of gamecenter.js');
+  check(s.leaderboards.every(l => JSON.stringify([l.scoreRangeStart, l.scoreRangeEnd]) === JSON.stringify(GameCenter.RANGES[l.key])), 'spec: the score ranges in App Store Connect are the ranges the app clamps to');
   const problems = specCheck(s);
   check(problems.length === 0, 'spec: texts in all 23 store languages, lengths, points, no murder words' + (problems.length ? ': ' + problems.slice(0, 8).join(' | ') : ''));
 
@@ -129,6 +144,35 @@ check(GameCenter.BOARDS.points === 'crimson.points' && GameCenter.BOARDS.daily_t
     await solve(window, document); await sleep(50);
     const a10 = calls('achievement').filter(x => x.id === 'crimson.solved_10');
     check(a10.length === 1 && a10[0].banner === true && calls('achievement').length === 2, 'tenth case: crimson.solved_10 once, with Apple\'s banner');
+
+    // bad ids and values never reach the bridge; values out of range arrive clamped
+    const GC = window.GameCenter, nA = calls('achievement').length, nS = calls('score').length;
+    const r = await Promise.all([GC.achieve('bogus'), GC.achieve(null), GC.achieve('crimson.first_case'), GC.achieve('__proto__'),
+      GC.score('bogus', 5), GC.score('points', NaN), GC.score('points', Infinity), GC.score('daily_time', -1), GC.score('daily_time', 0)]);
+    check(r.every(x => x === false) && calls('achievement').length === nA && calls('score').length === nS, 'unknown ids, NaN, infinite and too-low values: nothing sent to the plugin');
+    await GC.score('points', 2e9); await GC.score('daily_time', 99999);
+    const last = calls('score').slice(-2);
+    check(last[0].leaderboardId === 'crimson.points' && last[0].value === 100000000 && last[1].leaderboardId === 'crimson.daily_time' && last[1].value === 86400, 'too-high values arrive lowered to the top of the range');
+
+    // the stored daily time for a later sign-in: dropped when stale, not a whole number in range, or today's case is not solved
+    const today = window.Progress.dayKey(), solvedToday = window.App.storageGet('crimson-board-daily-done');
+    const replay = (entry, done) => {
+      window.App.storageSet('crimson-gc-daily', typeof entry === 'string' ? entry : JSON.stringify(entry));
+      window.App.storageSet('crimson-board-daily-done', done ? solvedToday : '');
+      const got = GC.pendingDaily();
+      return { got, kept: !!window.App.storageGet('crimson-gc-daily') };
+    };
+    const bad = [[{ day: '2026-01-01', value: 95 }, true, 'a stale day'], [{ day: today, value: 12.5 }, true, 'a fraction'], [{ day: today, value: '95' }, true, 'text'],
+      [{ day: today, value: 0 }, true, '0 s'], [{ day: today, value: 999999 }, true, 'too long'], [{ day: today, value: 95 }, false, 'today not solved'], ['{nope', true, 'broken JSON'], [null, true, 'null']];
+    const dropped = bad.filter(([e, done]) => { const x = replay(e, done); return x.got === null && !x.kept; }).map(b => b[2]);
+    check(dropped.length === bad.length, 'stored daily time dropped for: ' + dropped.join(', '));
+    const good = replay({ day: today, value: 95 }, true);
+    check(good.got && good.got.value === 95 && good.kept, 'a valid stored daily time of today is kept for the sign-in');
+    window.App.storageSet('crimson-gc-daily', JSON.stringify({ day: '2026-01-01', value: 3 }));
+    const nDay = calls('score').filter(x => x.leaderboardId === 'crimson.daily_time').length;
+    GC.catchUp(); await sleep(20);
+    check(calls('score').filter(x => x.leaderboardId === 'crimson.daily_time').length === nDay && !window.App.storageGet('crimson-gc-daily'), 'a stale stored time is not sent at the sign-in, and is removed');
+    window.App.storageSet('crimson-board-daily-done', solvedToday);
     check(errors.length === 0, 'no JS errors: ' + errors.join(' | '));
   }
   {

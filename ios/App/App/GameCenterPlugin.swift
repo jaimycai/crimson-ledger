@@ -23,6 +23,25 @@ public class GameCenterPlugin: CAPPlugin, CAPBridgedPlugin {
         CAPPluginMethod(name: "showDashboard", returnType: CAPPluginReturnPromise)
     ]
 
+    // Only the ids that exist in App Store Connect (store/gamecenter/spec.js; tests/gamecenter.test.js checks that both
+    // lists match). Anything else from the web view is refused before it reaches GameKit.
+    static let achievementIDs: Set<String> = [
+        "crimson.first_case", "crimson.first_three_stars", "crimson.first_part",
+        "crimson.world.landhuis", "crimson.world.piraten", "crimson.world.hotel", "crimson.world.ruimte", "crimson.world.museum",
+        "crimson.world.trein", "crimson.world.circus", "crimson.world.skihut", "crimson.world.hacienda", "crimson.world.opera",
+        "crimson.world.opgraving", "crimson.world.casino", "crimson.world.filmstudio", "crimson.world.karavaan", "crimson.world.abdij",
+        "crimson.world.vuurtoren", "crimson.world.oceaanstomer", "crimson.world.ryokan", "crimson.world.fazenda", "crimson.world.zeppelin",
+        "crimson.world.poolstation", "crimson.world.winterpaleis", "crimson.world.safarilodge", "crimson.world.hanok",
+        "crimson.streak_3", "crimson.streak_7", "crimson.streak_30",
+        "crimson.solved_10", "crimson.solved_50", "crimson.solved_100", "crimson.solved_500",
+        "crimson.first_master", "crimson.case_of_week"
+    ]
+    // each leaderboard with the score range declared in App Store Connect: total points, and the daily case in seconds
+    static let leaderboardRanges: [String: ClosedRange<Int>] = [
+        "crimson.points": 0...100_000_000,
+        "crimson.daily_time": 1...86_400
+    ]
+
     private var handlerSet = false
     private var mayPresent = false
     private var signInSheet: UIViewController?
@@ -80,10 +99,11 @@ public class GameCenterPlugin: CAPPlugin, CAPBridgedPlugin {
 
     // reportAchievement({ id, percent = 100, banner = true }). banner false: the game shows its own medal for it.
     @objc func reportAchievement(_ call: CAPPluginCall) {
-        guard let id = call.getString("id"), !id.isEmpty else { call.reject("id ontbreekt"); return }
+        guard let id = call.getString("id"), Self.achievementIDs.contains(id) else { call.reject("onbekende prestatie"); return }
         guard GKLocalPlayer.local.isAuthenticated else { call.resolve(["ok": false, "reason": "not-authenticated"]); return }
         let achievement = GKAchievement(identifier: id)
-        achievement.percentComplete = min(100, max(0, call.getDouble("percent") ?? 100))
+        let percent = call.getDouble("percent") ?? 100
+        achievement.percentComplete = percent.isFinite ? min(100, max(0, percent)) : 0
         achievement.showsCompletionBanner = call.getBool("banner") ?? true
         GKAchievement.report([achievement]) { error in
             if let error = error { call.resolve(["ok": false, "reason": error.localizedDescription]) } else { call.resolve(["ok": true]) }
@@ -91,9 +111,12 @@ public class GameCenterPlugin: CAPPlugin, CAPBridgedPlugin {
     }
 
     // submitScore({ leaderboardId, value }). Game Center keeps the best score per the leaderboard's own sort order.
+    // A value above the range is lowered to the top of it; one below the range is refused rather than raised, because
+    // raising a too-short daily time to 1 second would post the best possible time.
     @objc func submitScore(_ call: CAPPluginCall) {
-        guard let id = call.getString("leaderboardId"), !id.isEmpty else { call.reject("leaderboardId ontbreekt"); return }
-        guard let value = call.getInt("value") else { call.reject("value ontbreekt"); return }
+        guard let id = call.getString("leaderboardId"), let range = Self.leaderboardRanges[id] else { call.reject("onbekende ranglijst"); return }
+        guard let raw = call.getDouble("value"), raw.isFinite, raw >= Double(range.lowerBound) else { call.reject("score buiten bereik"); return }
+        let value = Int(min(Double(range.upperBound), raw).rounded())   // clamp as a Double first: Int(1e300) would trap
         guard GKLocalPlayer.local.isAuthenticated else { call.resolve(["ok": false, "reason": "not-authenticated"]); return }
         GKLeaderboard.submitScore(value, context: 0, player: GKLocalPlayer.local, leaderboardIDs: [id]) { error in
             if let error = error { call.resolve(["ok": false, "reason": error.localizedDescription]) } else { call.resolve(["ok": true]) }

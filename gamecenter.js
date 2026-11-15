@@ -18,6 +18,8 @@ const GameCenter = {
   ASKED_KEY: 'crimson-gc-asked',
   DAILY_KEY: 'crimson-gc-daily',
   BOARDS: { points: 'crimson.points', daily_time: 'crimson.daily_time' },
+  // the score range of each leaderboard as declared in App Store Connect (store/gamecenter/spec.js, GameCenterPlugin.swift)
+  RANGES: { points: [0, 100000000], daily_time: [1, 86400] },
   // de 24 werelden in vaste volgorde: de ids staan voor altijd in App Store Connect
   WORLDS: ['landhuis', 'piraten', 'hotel', 'ruimte', 'museum', 'trein', 'circus', 'skihut', 'hacienda', 'opera', 'opgraving', 'casino',
     'filmstudio', 'karavaan', 'abdij', 'vuurtoren', 'oceaanstomer', 'ryokan', 'fazenda', 'zeppelin', 'poolstation', 'winterpaleis', 'safarilodge', 'hanok'],
@@ -62,8 +64,8 @@ const GameCenter = {
   },
 
   achieve(key, banner = true) {
-    const P = this.native(), a = this.list().find(x => x.key === key);
-    if (!P || !a || !this.authed || this.inflight.has(key) || this.sent().includes(key)) return Promise.resolve(false);
+    const P = this.native(), a = typeof key === 'string' ? this.list().find(x => x.key === key) : null;
+    if (!P || !a || !a.id.startsWith(this.PREFIX) || !this.authed || this.inflight.has(key) || this.sent().includes(key)) return Promise.resolve(false);
     this.inflight.add(key);
     // via Promise.resolve: also an exception inside the bridge becomes a quiet false, never a break in Board.finish
     return Promise.resolve().then(() => P.reportAchievement({ id: a.id, percent: 100, banner })).then(r => {
@@ -74,9 +76,17 @@ const GameCenter = {
       return true;
     }, () => { this.inflight.delete(key); return false; });
   },
+  // a score as Game Center may get it: a whole number in the board's range, or null. Above the range: the top of it.
+  // Below it: nothing (raising a too-short daily time to 1 second would post the best time there is); 0 points is no score yet.
+  clampScore(board, value) {
+    const r = this.RANGES[board];
+    if (!r || typeof value !== 'number' || !Number.isFinite(value)) return null;
+    const v = Math.min(r[1], Math.round(value));
+    return v < r[0] || (board === 'points' && v === 0) ? null : v;
+  },
   score(board, value) {
-    const P = this.native(), id = this.BOARDS[board], v = Math.round(+value);
-    if (!P || !id || !this.authed || !isFinite(v) || v <= 0) return Promise.resolve(false);   // 0 is no score yet
+    const P = this.native(), id = this.BOARDS[board], v = this.clampScore(board, value);
+    if (!P || !id || !this.authed || v === null) return Promise.resolve(false);
     if (board === 'points' && this.lastPoints === v) return Promise.resolve(true);
     if (board === 'points') this.lastPoints = v;
     const done = ok => { if (!ok && board === 'points' && this.lastPoints === v) this.lastPoints = null; return ok; };
@@ -92,9 +102,11 @@ const GameCenter = {
   report(b) {
     const today = typeof Progress !== 'undefined' ? Progress.dayKey() : '';
     if (b && b.isDaily && !b.dailyDoneBefore && b.elapsed > 0) {
-      const t = Math.round(b.elapsed);
-      this.set(this.DAILY_KEY, JSON.stringify({ day: today, value: t }));   // vangnet: ook als de speler zich pas later aanmeldt
-      this.score('daily_time', t).then(ok => { if (ok) this.set(this.DAILY_KEY, ''); });
+      const t = this.clampScore('daily_time', b.elapsed);
+      if (t !== null) {
+        this.set(this.DAILY_KEY, JSON.stringify({ day: today, value: t }));   // vangnet: ook als de speler zich pas later aanmeldt
+        this.score('daily_time', t).then(ok => { if (ok) this.set(this.DAILY_KEY, ''); });
+      }
     }
     if (!this.authed) return;
     const medals = this.list().filter(a => a.medal).map(a => a.key);
@@ -109,9 +121,21 @@ const GameCenter = {
   catchUp() {
     this.earned(this.ctx()).forEach(k => this.achieve(k, false));
     if (typeof Progress !== 'undefined') this.score('points', Progress.points());
+    const d = this.pendingDaily();
+    if (d) this.score('daily_time', d.value).then(ok => { if (ok) this.set(this.DAILY_KEY, ''); });
+  },
+  // the daily time kept for a later sign-in: only today's, a whole number of seconds in range, and only if the stats
+  // say today's daily case is solved. Anything else is thrown away.
+  pendingDaily() {
+    const raw = this.get(this.DAILY_KEY);
+    if (!raw) return null;
     let d = null;
-    try { d = JSON.parse(this.get(this.DAILY_KEY) || 'null'); } catch (e) { d = null; }
-    if (d && typeof Progress !== 'undefined' && d.day === Progress.dayKey()) this.score('daily_time', d.value).then(ok => { if (ok) this.set(this.DAILY_KEY, ''); });
+    try { d = JSON.parse(raw); } catch (e) { d = null; }
+    const r = this.RANGES.daily_time, today = typeof Progress !== 'undefined' ? Progress.dayKey() : null;
+    const ok = d && typeof d === 'object' && Number.isInteger(d.value) && d.value >= r[0] && d.value <= r[1] && today && d.day === today
+      && this.get('crimson-board-daily-done') === new Date().toDateString();
+    if (!ok) { this.set(this.DAILY_KEY, ''); return null; }
+    return d;
   },
 
   // App.init. Apple's aanmeldvenster hooguit één keer, en niet in de allereerste sessie (dan eerst de oefenzaak).
