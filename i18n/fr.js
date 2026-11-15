@@ -493,7 +493,9 @@
     "Ik heb de zaak van vandaag opgelost: {0} in {1}.": "J’ai résolu l’affaire du jour : {0} en {1}.",
     "Lukt het jou ook? Speel hem gratis in je browser:": "Et toi, tu la résous ? Joue-la gratuitement dans ton navigateur :",
     "Je bent uitgedaagd: speel de zaak van vandaag": "On te lance un défi : joue l’affaire du jour",
-    "Startersversie": "Version débutant"
+    "Startersversie": "Version débutant",
+    "🏆 Game Center": "🏆 Game Center",
+    "Openen": "Ouvrir"
   },
 
   data: {

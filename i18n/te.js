@@ -493,7 +493,9 @@
     "Ik heb de zaak van vandaag opgelost: {0} in {1}.": "ఈరోజు కేసును {1}లో ఛేదించాను: {0}",
     "Lukt het jou ook? Speel hem gratis in je browser:": "మీరూ చేయగలరా? బ్రౌజర్‌లో ఉచితంగా ఆడండి:",
     "Je bent uitgedaagd: speel de zaak van vandaag": "మీకు సవాలు వచ్చింది: ఈరోజు కేసు ఆడండి",
-    "Startersversie": "ప్రారంభ వెర్షన్"
+    "Startersversie": "ప్రారంభ వెర్షన్",
+    "🏆 Game Center": "🏆 Game Center",
+    "Openen": "తెరవండి"
   },
 
   data: {

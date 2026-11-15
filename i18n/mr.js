@@ -493,7 +493,9 @@
     "Ik heb de zaak van vandaag opgelost: {0} in {1}.": "मी आजचे प्रकरण {1} मध्ये सोडवले: {0}",
     "Lukt het jou ook? Speel hem gratis in je browser:": "तुम्हालाही जमेल का? ब्राउझरमध्ये मोफत खेळा:",
     "Je bent uitgedaagd: speel de zaak van vandaag": "तुम्हाला आव्हान मिळाले आहे: आजचे प्रकरण खेळा",
-    "Startersversie": "नवशिक्या आवृत्ती"
+    "Startersversie": "नवशिक्या आवृत्ती",
+    "🏆 Game Center": "🏆 Game Center",
+    "Openen": "उघडा"
   },
 
   data: {

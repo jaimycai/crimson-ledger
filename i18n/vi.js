@@ -493,7 +493,9 @@
     "Ik heb de zaak van vandaag opgelost: {0} in {1}.": "Tôi đã phá vụ án hôm nay: {0} trong {1}.",
     "Lukt het jou ook? Speel hem gratis in je browser:": "Bạn có làm được không? Chơi miễn phí ngay trên trình duyệt:",
     "Je bent uitgedaagd: speel de zaak van vandaag": "Bạn được thách đấu: chơi vụ án hôm nay",
-    "Startersversie": "Bản cho người mới"
+    "Startersversie": "Bản cho người mới",
+    "🏆 Game Center": "🏆 Game Center",
+    "Openen": "Mở"
   },
 
   data: {

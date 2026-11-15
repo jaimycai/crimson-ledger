@@ -493,7 +493,9 @@
     "Ik heb de zaak van vandaag opgelost: {0} in {1}.": "今日の事件を{1}で解決しました：{0}",
     "Lukt het jou ook? Speel hem gratis in je browser:": "あなたも解けるかな？ブラウザで無料で遊べます：",
     "Je bent uitgedaagd: speel de zaak van vandaag": "挑戦状が届きました：今日の事件を解いてみよう",
-    "Startersversie": "ビギナー版"
+    "Startersversie": "ビギナー版",
+    "🏆 Game Center": "🏆 Game Center",
+    "Openen": "開く"
   },
 
   data: {

@@ -493,7 +493,9 @@
     "Ik heb de zaak van vandaag opgelost: {0} in {1}.": "오늘의 사건을 {1} 만에 해결했어: {0}",
     "Lukt het jou ook? Speel hem gratis in je browser:": "너도 풀 수 있어? 브라우저에서 무료로 해 봐:",
     "Je bent uitgedaagd: speel de zaak van vandaag": "도전장이 도착했어요: 오늘의 사건을 플레이하세요",
-    "Startersversie": "입문자 버전"
+    "Startersversie": "입문자 버전",
+    "🏆 Game Center": "🏆 Game Center",
+    "Openen": "열기"
   },
 
   data: {

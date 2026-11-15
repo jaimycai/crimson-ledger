@@ -8,7 +8,7 @@
 	<key>signingCertificate</key><string>Apple Distribution</string>
 	<key>provisioningProfiles</key>
 	<dict>
-		<key>nl.crimsonledger.app</key><string>Crimson Ledger App Store</string>
+		<key>nl.crimsonledger.app</key><string>Crimson Ledger App Store GC</string>
 		<key>nl.crimsonledger.app.LiveActivity</key><string>Crimson Ledger Live Activity App Store</string>
 	</dict>
 	<key>teamID</key><string>8388P9U3X3</string>

@@ -493,7 +493,9 @@
     "Ik heb de zaak van vandaag opgelost: {0} in {1}.": "আজকের কেসটি {1}-এ সমাধান করেছি: {0}",
     "Lukt het jou ook? Speel hem gratis in je browser:": "আপনিও পারবেন? ব্রাউজারে বিনামূল্যে খেলুন:",
     "Je bent uitgedaagd: speel de zaak van vandaag": "আপনাকে চ্যালেঞ্জ করা হয়েছে: আজকের কেসটি খেলুন",
-    "Startersversie": "নতুনদের সংস্করণ"
+    "Startersversie": "নতুনদের সংস্করণ",
+    "🏆 Game Center": "🏆 Game Center",
+    "Openen": "খুলুন"
   },
 
   data: {

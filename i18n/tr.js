@@ -493,7 +493,9 @@
     "Ik heb de zaak van vandaag opgelost: {0} in {1}.": "Bugünün vakasını {1} sürede çözdüm: {0}",
     "Lukt het jou ook? Speel hem gratis in je browser:": "Sen de çözebilir misin? Tarayıcında ücretsiz oyna:",
     "Je bent uitgedaagd: speel de zaak van vandaag": "Sana meydan okundu: bugünün vakasını oyna",
-    "Startersversie": "Başlangıç sürümü"
+    "Startersversie": "Başlangıç sürümü",
+    "🏆 Game Center": "🏆 Game Center",
+    "Openen": "Aç"
   },
 
   data: {

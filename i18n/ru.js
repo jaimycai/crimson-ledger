@@ -493,7 +493,9 @@
     "Ik heb de zaak van vandaag opgelost: {0} in {1}.": "Дело дня раскрыто: {0} за {1}.",
     "Lukt het jou ook? Speel hem gratis in je browser:": "А ты сможешь? Играй бесплатно в браузере:",
     "Je bent uitgedaagd: speel de zaak van vandaag": "Вам бросили вызов: сыграйте в дело дня",
-    "Startersversie": "Версия для новичков"
+    "Startersversie": "Версия для новичков",
+    "🏆 Game Center": "🏆 Game Center",
+    "Openen": "Открыть"
   },
 
   data: {

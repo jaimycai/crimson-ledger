@@ -493,7 +493,9 @@
     "Ik heb de zaak van vandaag opgelost: {0} in {1}.": "我用时{1}破解了今日案件：{0}",
     "Lukt het jou ook? Speel hem gratis in je browser:": "你也能做到吗？在浏览器里免费玩：",
     "Je bent uitgedaagd: speel de zaak van vandaag": "有人向你发起挑战：来玩今日案件",
-    "Startersversie": "新手版"
+    "Startersversie": "新手版",
+    "🏆 Game Center": "🏆 Game Center",
+    "Openen": "打开"
   },
 
   data: {
