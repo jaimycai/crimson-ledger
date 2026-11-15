@@ -483,7 +483,17 @@
     "🧊 Twee keer je streak redden als je een dag mist": "🧊 أنقذ سلسلتك مرتين إذا فاتك يوم",
     "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "مشتريات لمرة واحدة عبر حسابك في متجر التطبيقات، بلا اشتراك. الجزء الأول من كل عالم والقصر الريفي وسفينة القراصنة والقضية اليومية وقضية الأسبوع والأرشيف مجانية دائمًا.",
     "Een logische detectivepuzzel": "لغز منطقي بوليسي",
-    "Elke puzzel ontmaskert een dader": "كل لغز يكشف الجاني"
+    "Elke puzzel ontmaskert een dader": "كل لغز يكشف الجاني",
+    "Zal ik je morgen een seintje geven als de nieuwe zaak klaarligt?": "هل أنبّهك غدًا عندما تصبح القضية الجديدة جاهزة؟",
+    "Rond {0}. Uitzetten kan altijd in Instellingen.": "نحو الساعة {0}. يمكنك إيقافه في أي وقت من الإعدادات.",
+    "Ja, graag": "نعم، من فضلك",
+    "Zet Lady Clementine op het oplichtende vakje.": "ضع الليدي كليمنتاين على الخانة المضيئة.",
+    "De enige vrije hoek van de Woonkamer.": "الزاوية الفارغة الوحيدة في غرفة المعيشة.",
+    "🎯 Daag een vriend uit": "🎯 تحدَّ صديقًا",
+    "Ik heb de zaak van vandaag opgelost: {0} in {1}.": "حللتُ قضية اليوم: {0} في {1}.",
+    "Lukt het jou ook? Speel hem gratis in je browser:": "هل تستطيع أنت أيضًا؟ العبها مجانًا في متصفحك:",
+    "Je bent uitgedaagd: speel de zaak van vandaag": "لقد تحدّاك صديق: العب قضية اليوم",
+    "Startersversie": "نسخة المبتدئين"
   },
 
   data: {

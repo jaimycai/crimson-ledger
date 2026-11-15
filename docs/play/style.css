@@ -2870,3 +2870,35 @@ html.ipad .board-topbar, html.ipad .map-topbar { padding-top: calc(30px + var(--
 .missed-chip:active { transform: scale(0.96); }
 .missed-world { font-size: 1rem; line-height: 1; }
 .missed-day { white-space: nowrap; }
+
+/* ── 1.7: groei (herinnering vragen, oefenzaak stap 1, vriend uitdagen, startersversie) ── */
+/* Oefenzaak stap 1: één korte zin, de reden klein eronder */
+.board-coach.has-why .tutorial-coach-text { font-weight: 700; line-height: 1.35; }
+.tutorial-coach-why { font-size: 0.8125rem; line-height: 1.4; color: var(--text-light); margin-top: 3px; }
+/* De hand die het voordoet (Board.showHand): vingertop op het punt, de verdachte zweeft erboven zoals bij echt slepen */
+.tut-demo { position: fixed; inset: 0; pointer-events: none; z-index: 95; }
+.tut-demo .tut-ghost { width: 56px; height: 56px; left: -28px; top: -64px; border-width: 2.5px; opacity: 0; }
+.tut-hand { position: fixed; left: 0; top: 0; width: 48px; height: 48px; z-index: 1001; transform: translate(-1000px, -1000px);
+  transform-origin: 40% 15%; filter: drop-shadow(0 3px 4px rgba(44, 24, 16, 0.35)); will-change: transform, opacity; font-size: 40px; line-height: 1; }
+.tut-hand svg { display: block; width: 100%; height: 100%; overflow: visible; }
+.tut-hand-halo path { stroke: #fff; stroke-width: 5.5px; fill: #fff; stroke-linecap: round; stroke-linejoin: round; }
+.tut-hand-ink path { stroke: var(--text-primary); stroke-width: 1.9px; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+/* Resultaat van de dagzaak: "Daag een vriend uit" staat direct onder de volgende zaak */
+.btn-challenge { background: var(--bg-card); color: var(--accent); border-color: var(--accent); font-weight: 700; }
+.btn-challenge:hover { background: var(--accent-subtle); }
+/* Dagzaak in de eerste week */
+.ribbon-starter { background: #FBF6EC; color: var(--accent); border-color: var(--gold-light); margin-inline-start: 4px; }
+/* Het vel van Van Dam over de herinnering */
+.remind-sheet .mentor-head { margin-bottom: 10px; }
+.remind-sheet .mentor-quote { margin-bottom: 6px; }
+.remind-note { font-size: 0.8125rem; line-height: 1.4; color: var(--text-light); margin-bottom: 16px; }
+.remind-sheet .btn + .btn { margin-top: 6px; }
+/* Oefenzaak (alle stappen): "Overslaan" op de regel van het staplabel, zodat de uitleg de hele breedte krijgt en de
+   reden in stap 1 op één regel past (375 px); de coach wordt lager en het bord groter */
+.board-coach { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 2px 10px; align-items: start; }
+.board-coach .tutorial-coach-icon { grid-row: 1 / span 3; }
+.board-coach .tutorial-coach-body { display: contents; }
+.board-coach .tutorial-coach-step { grid-column: 2; grid-row: 1; align-self: center; margin-bottom: 0; }
+.board-coach .tutorial-coach-skip { grid-column: 3; grid-row: 1; align-self: center; }
+.board-coach .tutorial-coach-text, .board-coach .tutorial-coach-why { grid-column: 2 / 4; }
+.board-coach .tutorial-coach-text { margin-top: 2px; }

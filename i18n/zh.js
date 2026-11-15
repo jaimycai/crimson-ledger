@@ -483,7 +483,17 @@
     "🧊 Twee keer je streak redden als je een dag mist": "🧊 漏玩一天时，两次保住你的连胜",
     "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "通过你的应用商店账户一次性购买，不是订阅。每个世界的第一章、庄园、海盗船、每日案件、每周案件和档案库永远免费。",
     "Een logische detectivepuzzel": "侦探逻辑谜题",
-    "Elke puzzel ontmaskert een dader": "每道谜题都揭露一名犯人"
+    "Elke puzzel ontmaskert een dader": "每道谜题都揭露一名犯人",
+    "Zal ik je morgen een seintje geven als de nieuwe zaak klaarligt?": "明天新案件准备好时，要我提醒你吗？",
+    "Rond {0}. Uitzetten kan altijd in Instellingen.": "大约在{0}。随时可以在设置里关闭。",
+    "Ja, graag": "好的，提醒我",
+    "Zet Lady Clementine op het oplichtende vakje.": "把克莱门汀夫人放到发光的格子上。",
+    "De enige vrije hoek van de Woonkamer.": "客厅里唯一空着的角落。",
+    "🎯 Daag een vriend uit": "🎯 挑战好友",
+    "Ik heb de zaak van vandaag opgelost: {0} in {1}.": "我用时{1}破解了今日案件：{0}",
+    "Lukt het jou ook? Speel hem gratis in je browser:": "你也能做到吗？在浏览器里免费玩：",
+    "Je bent uitgedaagd: speel de zaak van vandaag": "有人向你发起挑战：来玩今日案件",
+    "Startersversie": "新手版"
   },
 
   data: {

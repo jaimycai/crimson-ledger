@@ -483,7 +483,17 @@
     "🧊 Twee keer je streak redden als je een dag mist": "🧊 کوئی دن رہ جائے تو دو بار اپنا سلسلہ بچائیں",
     "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "ایپ اسٹور اکاؤنٹ کے ذریعے ایک بار کی خریداری، کوئی سبسکرپشن نہیں۔ ہر دنیا کا باب اول، حویلی، قزاقوں کا جہاز، روزانہ کیس، ہفتے کا کیس اور ریکارڈ روم ہمیشہ مفت رہیں گے۔",
     "Een logische detectivepuzzel": "ایک جاسوسی منطقی پہیلی",
-    "Elke puzzel ontmaskert een dader": "ہر پہیلی ایک مجرم کو بے نقاب کرتی ہے"
+    "Elke puzzel ontmaskert een dader": "ہر پہیلی ایک مجرم کو بے نقاب کرتی ہے",
+    "Zal ik je morgen een seintje geven als de nieuwe zaak klaarligt?": "کیا میں کل آپ کو بتا دوں جب نیا کیس تیار ہو؟",
+    "Rond {0}. Uitzetten kan altijd in Instellingen.": "تقریباً {0} پر۔ آپ اسے کبھی بھی ترتیبات میں بند کر سکتے ہیں۔",
+    "Ja, graag": "جی ہاں، ضرور",
+    "Zet Lady Clementine op het oplichtende vakje.": "لیڈی کلیمنٹائن کو چمکتے ہوئے خانے پر رکھیں۔",
+    "De enige vrije hoek van de Woonkamer.": "بیٹھک کا واحد خالی کونا۔",
+    "🎯 Daag een vriend uit": "🎯 کسی دوست کو چیلنج کریں",
+    "Ik heb de zaak van vandaag opgelost: {0} in {1}.": "میں نے آج کا کیس {1} میں حل کر لیا: {0}",
+    "Lukt het jou ook? Speel hem gratis in je browser:": "کیا آپ بھی کر سکتے ہیں؟ براؤزر میں مفت کھیلیں:",
+    "Je bent uitgedaagd: speel de zaak van vandaag": "آپ کو چیلنج ملا ہے: آج کا کیس کھیلیں",
+    "Startersversie": "ابتدائی ورژن"
   },
 
   data: {

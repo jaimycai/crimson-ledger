@@ -483,7 +483,17 @@
     "🧊 Twee keer je streak redden als je een dag mist": "🧊 एखादा दिवस चुकला तर दोनदा तुमची मालिका वाचवा",
     "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "ॲप स्टोअरमधील तुमच्या खात्यातून एकदाच खरेदी, सदस्यता नाही. प्रत्येक जगाचा भाग I, हवेली, चाच्यांचे जहाज, दैनिक प्रकरण, आठवड्याचे प्रकरण आणि अभिलेखागार नेहमी मोफत राहतात.",
     "Een logische detectivepuzzel": "एक गुप्तहेर तर्कशुद्ध कोडे",
-    "Elke puzzel ontmaskert een dader": "प्रत्येक कोडे एका गुन्हेगाराचा पर्दाफाश करते"
+    "Elke puzzel ontmaskert een dader": "प्रत्येक कोडे एका गुन्हेगाराचा पर्दाफाश करते",
+    "Zal ik je morgen een seintje geven als de nieuwe zaak klaarligt?": "नवीन प्रकरण तयार झाल्यावर उद्या तुम्हाला कळवू का?",
+    "Rond {0}. Uitzetten kan altijd in Instellingen.": "साधारण {0} ला. सेटिंग्जमध्ये हे कधीही बंद करता येते.",
+    "Ja, graag": "हो, नक्की",
+    "Zet Lady Clementine op het oplichtende vakje.": "लेडी क्लेमेंटाइनला चमकणाऱ्या चौकोनावर ठेवा.",
+    "De enige vrije hoek van de Woonkamer.": "दिवाणखान्यातील एकमेव मोकळा कोपरा.",
+    "🎯 Daag een vriend uit": "🎯 मित्राला आव्हान द्या",
+    "Ik heb de zaak van vandaag opgelost: {0} in {1}.": "मी आजचे प्रकरण {1} मध्ये सोडवले: {0}",
+    "Lukt het jou ook? Speel hem gratis in je browser:": "तुम्हालाही जमेल का? ब्राउझरमध्ये मोफत खेळा:",
+    "Je bent uitgedaagd: speel de zaak van vandaag": "तुम्हाला आव्हान मिळाले आहे: आजचे प्रकरण खेळा",
+    "Startersversie": "नवशिक्या आवृत्ती"
   },
 
   data: {

@@ -368,14 +368,44 @@ const active = () => document.querySelector('.screen.active').id;
     // ── dagelijkse zaak → streak ──
     document.getElementById('btn-play-again').click(); await sleep(300);
     check(active() === 'screen-menu', 'terug naar menu');
+    // 1.7: in de eerste week (crimson-first-day is vandaag, gezet door Meting.open) de startersversie van de dagzaak
+    check(App.storageGet('crimson-first-day') === window.Progress.dayKey() && !document.getElementById('daily-starter').hidden && document.getElementById('daily-starter').textContent === 'Startersversie', 'eerste week: label "Startersversie" op de dagkaart');
     document.getElementById('btn-board-daily').click(); await sleep(300);
     check(active() === 'screen-board' && Board.isDaily, 'dagelijkse plattegrondzaak gestart');
     check(Board.theme.id === window.Themes.forDay(App.getDayNumber()).id, 'dagelijkse zaak gebruikt het thema van vandaag: ' + Board.theme.title);
+    {
+      const dc = App.dailyCase(), now = new Date(), seedToday = (now.getFullYear() * 10000 + (now.getMonth() + 1) * 100 + now.getDate()) * 3 + 777;
+      check(dc.starter && dc.difficulty === 'makkelijk' && Board.difficulty === 'makkelijk' && Board.starter && Board.seed === seedToday && dc.seed === seedToday,
+        'startersversie: dezelfde seed als de gewone dagzaak, op Makkelijk');
+      check(/Startersversie/.test(document.getElementById('board-diff-tag').textContent), 'het bord zegt Startersversie: ' + document.getElementById('board-diff-tag').textContent);
+    }
     const d = Board.puzzle;
     d.solution.forEach((c, i) => { Board.placements[i] = { x: c.x, y: c.y }; }); Board.after();
     document.getElementById('btn-board-check').click();
     document.querySelector(`.murder-opt[data-s="${d.murderer}"]`).click(); await sleep(1100);
     check(document.getElementById('streak-count').textContent === '1', 'streak = 1 na dagelijkse zaak');
+    check(App.storageGet('crimson-board-daily-done') === new Date().toDateString() && window.Progress.dailyLog().includes(window.Progress.dayKey()), 'de startersversie telt als de dagzaak van vandaag (gedaan, in het dagboek)');
+    // 1.7: "Daag een vriend uit" na de dagzaak, met een spoilervrije regel en de link naar de webdagzaak
+    {
+      const chb = document.getElementById('btn-challenge'), shb = document.getElementById('btn-share');
+      const order = [...document.querySelectorAll('.results-footer > button')].filter(b => !b.hidden).map(b => b.id);
+      check(!chb.hidden && /Daag een vriend uit/.test(chb.textContent) && order.indexOf('btn-challenge') === order.indexOf('btn-next-case') + 1 && shb.classList.contains('btn-ghost'),
+        'dagzaak: "Daag een vriend uit" direct onder de volgende zaak, "Deel resultaat" een tree lager: ' + order.join(' > '));
+      const ct = Board.challengeText(), lines = ct.split('\n');
+      check(lines.length === 4 && /Dag #\d+/.test(lines[0]) && lines[1] === `Ik heb de zaak van vandaag opgelost: ★★★ in ${Board.formatTime(Board.elapsed)}.` && lines[3] === 'https://jaimycai.github.io/crimson-ledger/play/?ct=challenge-daily',
+        'uitdaging: dag, sterren en tijd, en de link met ct=challenge-daily: ' + ct.replace(/\n/g, ' | '));
+      check(!d.suspects.some(s => ct.includes(s.label)) && !d.rooms.some(r => ct.includes(r.name)) && !/moord|🔪|🟥|🟩/i.test(ct), 'uitdaging zonder namen, kamers, plattegrond of moordwoord');
+      chb.click(); await sleep(30);
+      check(errors.length === 0, 'tik op "Daag een vriend uit" zonder fout');
+    }
+    // 1.7: de grens van de eerste week (zeven dagen: dag 0 t/m 6)
+    {
+      const P = window.Progress, now = new Date(), ago = n => P.dayKey(new Date(now.getFullYear(), now.getMonth(), now.getDate() - n, 12));
+      const at = n => { App.storageSet('crimson-first-day', ago(n)); return App.dailyCase(); };
+      check(at(6).starter && at(6).difficulty === 'makkelijk' && !at(7).starter && at(7).difficulty === 'gemiddeld' && !at(30).starter, 'eerste week: dag 6 nog Makkelijk, vanaf dag 7 Gemiddeld');
+      check(App.dailyCase(new Date(now.getFullYear(), now.getMonth(), now.getDate() - 3, 12)).starter === false && App.dailyCase(new Date(now.getFullYear(), now.getMonth(), now.getDate() - 30, 12)).starter, 'een gemiste dag telt naar zijn eigen datum (dertig dagen geleden was dag 0 t/m 6)');
+      App.storageSet('crimson-first-day', ago(0));
+    }
     check(document.getElementById('board-daily-date').textContent.includes('opgelost'), 'menu toont: vandaag opgelost');
     check(document.querySelectorAll('#week-strip .wday.played').length === 1 && document.querySelector('#week-strip .wday.today').classList.contains('played'), 'weekstrook: vandaag afgevinkt');
     check(/Dagelijkse zaak/.test(document.getElementById('score-rows').textContent) && document.getElementById('daily-bonus').textContent.includes('opgelost') && document.getElementById('btn-board-daily').textContent === 'Nog een zaak', 'dagelijkse bonus geteld, kaart toont opgelost');
@@ -430,11 +460,31 @@ const active = () => document.querySelector('.screen.active').id;
     document.getElementById('btn-tutorial').click(); await sleep(300);
     check(active() === 'screen-board' && Board.isTutorial && !document.getElementById('board-coach').hidden, 'oefenzaak start met coach');
     check(document.getElementById('board-coach-step').textContent === 'Stap 1 van 4', 'stap 1');
+    // 1.7: stap 1 is één korte zin, de reden staat er klein onder, en een hand doet het voor
+    {
+      const why = document.getElementById('board-coach-why');
+      check(document.getElementById('board-coach-text').textContent === 'Zet Lady Clementine op het oplichtende vakje.' && !why.hidden &&
+        why.textContent === 'De enige vrije hoek van de Woonkamer.' && document.getElementById('board-coach').classList.contains('has-why'),
+        'stap 1: één korte zin, de reden eronder');
+      // jsdom meet niets en kan niet animeren: met een nepmaat staat de hand stil op het vakje (zoals bij "Beperk beweging")
+      const realRect = window.Element.prototype.getBoundingClientRect;
+      window.Element.prototype.getBoundingClientRect = () => ({ left: 40, top: 300, width: 40, height: 40, right: 80, bottom: 340 });
+      Board.showHand(0); await sleep(40);
+      const demo = document.querySelector('.tut-demo'), hand = demo && demo.querySelector('.tut-hand');
+      check(!!demo && demo.getAttribute('aria-hidden') === 'true' && !!hand.querySelector('svg .tut-hand-ink path') && /translate\(/.test(hand.style.transform) && demo.querySelector('.tut-ghost').hidden,
+        'zonder animatie: de hand wijst stil naar het vakje, zonder zwevende verdachte (' + (hand && hand.style.transform) + ')');
+      document.body.dispatchEvent(new window.Event('pointerdown', { bubbles: true }));
+      check(!document.querySelector('.tut-demo') && !!Board.handT, 'eerste aanraking: de hand gaat weg en komt na een tijdje terug');
+      window.Element.prototype.getBoundingClientRect = realRect;
+      check(cellAt(0, 0).classList.contains('hinted') && Board.TUTORIAL_STEPS[0].cell.x === 0 && Board.TUTORIAL_STEPS[0].cell.y === 0 && Board.active === 0, 'stap 1: hetzelfde doelvakje en dezelfde verdachte');
+    }
     cellAt(1, 1).click();
     check(!Board.placements[0] && Board.tutorialStep === 0, 'verkeerd vakje wordt genegeerd');
     check(cellAt(0, 0).classList.contains('hinted'), 'doelvakje licht op');
     cellAt(0, 0).click();
     check(!!Board.placements[0] && Board.tutorialStep === 1 && Board.active === 1, 'stap 1 klaar, Hargrove geselecteerd');
+    check(!document.querySelector('.tut-demo') && !Board.handT && document.getElementById('board-coach-why').hidden && !document.getElementById('board-coach').classList.contains('has-why') &&
+      /Meneer Hargrove stond naast de plant/.test(document.getElementById('board-coach-text').textContent), 'stap 2: geen hand meer, de tekst zoals voorheen');
     cellAt(3, 3).click();
     check(Board.tutorialStep === 2 && /Controleer/.test(document.getElementById('board-coach-text').textContent), 'stap 2 klaar → controleer');
     document.getElementById('btn-board-check').click();

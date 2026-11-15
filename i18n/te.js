@@ -483,7 +483,17 @@
     "🧊 Twee keer je streak redden als je een dag mist": "🧊 ఒక రోజు ఆడకపోతే రెండుసార్లు మీ స్ట్రీక్‌ను కాపాడండి",
     "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "యాప్ స్టోర్‌లోని మీ ఖాతా ద్వారా ఒక్కసారి కొనుగోళ్లు, చందా లేదు. ప్రతి ప్రపంచంలోని భాగం 1, భవంతి, సముద్రపు దొంగల ఓడ, రోజువారీ కేసు, వారపు కేసు, ఆర్కైవ్ ఎప్పటికీ ఉచితమే.",
     "Een logische detectivepuzzel": "ఒక డిటెక్టివ్ లాజిక్ పజిల్",
-    "Elke puzzel ontmaskert een dader": "ప్రతి పజిల్ ఒక దోషిని బయటపెడుతుంది"
+    "Elke puzzel ontmaskert een dader": "ప్రతి పజిల్ ఒక దోషిని బయటపెడుతుంది",
+    "Zal ik je morgen een seintje geven als de nieuwe zaak klaarligt?": "కొత్త కేసు సిద్ధమైనప్పుడు రేపు మీకు గుర్తు చేయనా?",
+    "Rond {0}. Uitzetten kan altijd in Instellingen.": "దాదాపు {0}కి. సెట్టింగ్‌లలో ఎప్పుడైనా ఆఫ్ చేయవచ్చు.",
+    "Ja, graag": "సరే, తప్పకుండా",
+    "Zet Lady Clementine op het oplichtende vakje.": "లేడీ క్లెమెంటైన్‌ను వెలుగుతున్న గడిలో పెట్టండి.",
+    "De enige vrije hoek van de Woonkamer.": "హాలులో ఖాళీగా ఉన్న ఒకే ఒక మూల.",
+    "🎯 Daag een vriend uit": "🎯 స్నేహితుడికి సవాలు విసరండి",
+    "Ik heb de zaak van vandaag opgelost: {0} in {1}.": "ఈరోజు కేసును {1}లో ఛేదించాను: {0}",
+    "Lukt het jou ook? Speel hem gratis in je browser:": "మీరూ చేయగలరా? బ్రౌజర్‌లో ఉచితంగా ఆడండి:",
+    "Je bent uitgedaagd: speel de zaak van vandaag": "మీకు సవాలు వచ్చింది: ఈరోజు కేసు ఆడండి",
+    "Startersversie": "ప్రారంభ వెర్షన్"
   },
 
   data: {

@@ -82,6 +82,13 @@ const check = (c, m) => { if (c) console.log('ok  ', m); else { failures++; cons
   window.__shareTarget = 'net.whatsapp.WhatsApp.ShareExtension'; App.shareAny('Zaak 8'); await sleep(30);
   window.__shareTarget = 'com.apple.UIKit.activity.Message'; App.shareAny('Zaak 9'); await sleep(30);
   check(sent('share_done').map(x => x.a).join() === ',whatsapp,messages', 'share_done met het soort app: ' + sent('share_done').map(x => x.a).join());
+  // 1.7: "Daag een vriend uit" deelt via hetzelfde venster; share telt de tik met a = challenge, share_done met de app erachter
+  window.__shareTarget = 'net.whatsapp.WhatsApp.ShareExtension'; App.shareAny('uitdaging', 'challenge'); await sleep(30);
+  window.__shareCancel = true; App.shareAny('uitdaging', 'challenge'); await sleep(30); window.__shareCancel = false;
+  check(sent('share').slice(-2).map(x => x.a).join() === 'challenge,challenge' && sent('share_done').slice(-1)[0].a === 'challenge.whatsapp' && sent('share_done').length === 4 && window.__shared.slice(-1)[0] === 'uitdaging',
+    'uitdaging: twee tikken (a = challenge), één keer echt gedeeld (challenge.whatsapp)');
+  // 1.7: zonder LocalNotifications vraagt Van Dam niets, en de beoordeling gaat gewoon door
+  check(App.maybeAskReminder({ stars: 3 }) === false && !document.getElementById('remind-modal').classList.contains('active'), 'zonder meldingen: geen vraag over de herinnering');
   // 1.6: buy_tap and buy_cancel next to purchase (mock store: 'cancel' closes the sheet without buying)
   App.storageSet('crimson-store-mock', 'cancel');
   await App.buy(window.Store.IDS.pass);

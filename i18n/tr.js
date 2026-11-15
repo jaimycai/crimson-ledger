@@ -483,7 +483,17 @@
     "🧊 Twee keer je streak redden als je een dag mist": "🧊 Bir gün kaçırırsan serini iki kez kurtar",
     "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "Uygulama mağazası hesabınla tek seferlik satın alımlar, abonelik yok. Her dünyanın I. bölümü, Malikâne, Korsan Gemisi, günlük vaka, haftanın vakası ve arşiv her zaman ücretsiz kalır.",
     "Een logische detectivepuzzel": "Bir dedektif mantık bulmacası",
-    "Elke puzzel ontmaskert een dader": "Her bulmaca bir suçluyu ortaya çıkarır"
+    "Elke puzzel ontmaskert een dader": "Her bulmaca bir suçluyu ortaya çıkarır",
+    "Zal ik je morgen een seintje geven als de nieuwe zaak klaarligt?": "Yarın yeni vaka hazır olunca sana haber vereyim mi?",
+    "Rond {0}. Uitzetten kan altijd in Instellingen.": "Saat {0} civarında. İstediğin zaman Ayarlar’dan kapatabilirsin.",
+    "Ja, graag": "Evet, lütfen",
+    "Zet Lady Clementine op het oplichtende vakje.": "Leydi Clementine’i parlayan kareye koy.",
+    "De enige vrije hoek van de Woonkamer.": "Salondaki tek boş köşe.",
+    "🎯 Daag een vriend uit": "🎯 Bir arkadaşına meydan oku",
+    "Ik heb de zaak van vandaag opgelost: {0} in {1}.": "Bugünün vakasını {1} sürede çözdüm: {0}",
+    "Lukt het jou ook? Speel hem gratis in je browser:": "Sen de çözebilir misin? Tarayıcında ücretsiz oyna:",
+    "Je bent uitgedaagd: speel de zaak van vandaag": "Sana meydan okundu: bugünün vakasını oyna",
+    "Startersversie": "Başlangıç sürümü"
   },
 
   data: {

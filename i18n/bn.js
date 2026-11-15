@@ -483,7 +483,17 @@
     "🧊 Twee keer je streak redden als je een dag mist": "🧊 কোনো দিন বাদ পড়লে দুবার আপনার ধারা বাঁচান",
     "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "অ্যাপ স্টোরের অ্যাকাউন্ট দিয়ে এককালীন কেনাকাটা, কোনো সাবস্ক্রিপশন নেই। প্রতিটি জগতের প্রথম পর্ব, বাগানবাড়ি, জলদস্যুর জাহাজ, দৈনিক কেস, সপ্তাহের কেস আর মহাফেজখানা সবসময় বিনামূল্যে।",
     "Een logische detectivepuzzel": "একটি গোয়েন্দা যুক্তির ধাঁধা",
-    "Elke puzzel ontmaskert een dader": "প্রতিটি ধাঁধা একজন অপরাধীকে উন্মোচন করে"
+    "Elke puzzel ontmaskert een dader": "প্রতিটি ধাঁধা একজন অপরাধীকে উন্মোচন করে",
+    "Zal ik je morgen een seintje geven als de nieuwe zaak klaarligt?": "নতুন কেস তৈরি হলে কাল কি আপনাকে জানিয়ে দেব?",
+    "Rond {0}. Uitzetten kan altijd in Instellingen.": "মোটামুটি {0}-এ। সেটিংস থেকে যেকোনো সময় বন্ধ করতে পারবেন।",
+    "Ja, graag": "হ্যাঁ, অবশ্যই",
+    "Zet Lady Clementine op het oplichtende vakje.": "লেডি ক্লেমেন্টাইনকে উজ্জ্বল খোপটিতে রাখুন।",
+    "De enige vrije hoek van de Woonkamer.": "বসার ঘরের একমাত্র খালি কোণ।",
+    "🎯 Daag een vriend uit": "🎯 বন্ধুকে চ্যালেঞ্জ করুন",
+    "Ik heb de zaak van vandaag opgelost: {0} in {1}.": "আজকের কেসটি {1}-এ সমাধান করেছি: {0}",
+    "Lukt het jou ook? Speel hem gratis in je browser:": "আপনিও পারবেন? ব্রাউজারে বিনামূল্যে খেলুন:",
+    "Je bent uitgedaagd: speel de zaak van vandaag": "আপনাকে চ্যালেঞ্জ করা হয়েছে: আজকের কেসটি খেলুন",
+    "Startersversie": "নতুনদের সংস্করণ"
   },
 
   data: {

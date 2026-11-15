@@ -99,6 +99,7 @@ const App = {
   // REVIEW_GAP_CASES zaken meer. Of iemand beoordeelde, ziet de app niet; Apple toont het venster hooguit drie keer per 365
   // dagen en niet meer aan wie al een beoordeling gaf. Altijd direct na een goede zaak (minstens twee sterren); een
   // herhaling alleen op een hoogtepunt: ★★★, een zaak van de week zonder hint of zeven dagen op rij.
+  // 1.7: nooit na dezelfde zaak als Van Dams vraag over de herinnering (maybeAskReminder gaat voor, zie Board.finish).
   REVIEW_GAP_DAYS: 7,
   REVIEW_GAP_CASES: 5,
   REVIEW_MAX: 3,
@@ -143,16 +144,17 @@ const App = {
     Board.bind();
     this.selectedTheme = this.storageGet('crimson-theme') || 'landhuis';
     this.renderThemePicker();
-    const launch = (seed, daily, themeId) => {
-      const diff = daily ? 'gemiddeld' : (this.selectedDifficulty || 'gemiddeld');
-      if (Board.start(diff, seed, daily, themeId || this.selectedTheme)) this.navigateTo('board');
+    // de dagzaak: het niveau komt uit dailyCase (eerste week Makkelijk, daarna Gemiddeld)
+    const launch = (seed, daily, themeId, today = null) => {
+      const diff = daily ? (today ? today.difficulty : 'gemiddeld') : (this.selectedDifficulty || 'gemiddeld');
+      if (Board.start(diff, seed, daily, themeId || this.selectedTheme, null, { starter: !!(daily && today && today.starter) })) this.navigateTo('board');
       else this.showToast('⚠️', AP_T('Kon geen plattegrond genereren, probeer opnieuw.'));
     };
     document.getElementById('btn-board-start').addEventListener('click', () => launch(0, false));
     document.getElementById('btn-board-daily').addEventListener('click', () => {
       const done = this.storageGet('crimson-board-daily-done') === new Date().toDateString();
       const today = this.dailyCase();
-      launch(done ? 0 : today.seed, !done, today.theme);
+      launch(done ? 0 : today.seed, !done, today.theme, done ? null : today);
     });
     // gemiste dagzaken (1.6): een tik op een dag in de weekstrook of op een kaartje eronder
     const missed = e => { const b = e.target.closest('[data-missed]'); if (b) this.startMissedDaily(b.dataset.missed); };
@@ -724,6 +726,8 @@ const App = {
     set('daily-text', AP_T`${theme.icon} ${theme.title}. ${theme.tagline}`);
     set('daily-bonus', done ? AP_T('✓ Vandaag opgelost') : AP_T`🪙 +${Progress.DAILY_BONUS} punten`);
     set('btn-board-daily', done ? AP_T('Nog een zaak') : AP_T('Speel'));
+    const starter = document.getElementById('daily-starter');
+    if (starter) starter.hidden = done || !this.dailyCase().starter;   // 1.7: eerste week, makkelijkere dagzaak
     this.renderWeek();
     const w = Progress.weekly(), wdone = Progress.weekDone(), wt = Themes.get(w.theme);
     set('week-title', w.title);
@@ -793,8 +797,8 @@ const App = {
   startMissedDaily(key) {
     const m = Progress.missedDays().find(x => x.key === key);
     if (!m) { this.renderHome(); return false; }
-    const c = this.dailyCase(m.date);
-    const ok = Board.start('gemiddeld', c.seed, false, c.theme, null, { missed: { key, dayNo: c.dayNo, title: c.title } });
+    const c = this.dailyCase(m.date);   // een gemiste dag uit je eerste week: ook dan de startersversie van die dag
+    const ok = Board.start(c.difficulty, c.seed, false, c.theme, null, { missed: { key, dayNo: c.dayNo, title: c.title } });
     if (ok) this.navigateTo('board');
     else this.showToast('⚠️', AP_T('Kon geen plattegrond genereren, probeer opnieuw.'));
     return ok;
@@ -938,6 +942,7 @@ const App = {
     }
     try {
       const perm = await LN.requestPermissions();
+      this.notifPerm = perm && perm.display;
       if (perm.display !== 'granted') { this.showToast('🔕', AP_T('Meldingen staan uit. Zet ze aan bij Instellingen › Crimson Ledger.')); return false; }
     } catch (e) { return false; }
     this.storageSet('crimson-reminder', '1');
@@ -945,6 +950,62 @@ const App = {
     await this.scheduleReminder();
     this.renderReminderLabel();
     return true;
+  },
+  // ── Herinnering vragen (1.7) ──────────────────────────────
+  // Meting 1-14 november 2026: 1% van de nieuwe spelers zette de herinnering aan; de enige ingang was een knop onder het
+  // resultaat. Nu vraagt Van Dam het zelf, na de eerste goed opgeloste zaak (minstens twee sterren, niet de oefenzaak), en
+  // pas bij "Ja, graag" komt de vraag van iOS. "Niet nu": nog één keer na minstens REMIND_ASK_GAP_DAYS dagen en
+  // REMIND_ASK_GAP_CASES zaken meer, daarna nooit. Nooit na dezelfde zaak als de vraag om een beoordeling: deze vraag gaat
+  // voor, de beoordeling (maybeAskReview) wacht dan op een latere zaak. Teller reminder_ask: a = shown/yes/no, n = de hoeveelste vraag.
+  REMIND_ASK_KEY: 'crimson-remind-ask',
+  REMIND_ASK_GAP_DAYS: 3,
+  REMIND_ASK_GAP_CASES: 5,
+  REMIND_ASK_MAX: 2,
+  remindAskDue: null,
+  remindAskState() {
+    try { const s = JSON.parse(this.storageGet(this.REMIND_ASK_KEY) || 'null'); if (s && typeof s === 'object') return s; } catch (e) { /* kapot: opnieuw */ }
+    return { n: 0 };
+  },
+  // Na het oplossen (Board.finish): true als Van Dam na deze zaak vraagt; het vel zelf komt na de ceremonie (showReminderAsk)
+  maybeAskReminder(ctx = {}, now = Date.now()) {
+    this.remindAskDue = null;
+    if (ctx.tutorial || (ctx.stars || 0) < 2 || !this.notif() || this.reminderEnabled() || this.notifPerm === 'denied') return false;
+    const st = this.remindAskState(), n = st.n || 0, solvedN = Board.loadStats().solved || 0;
+    if (st.a === 'yes' || n >= this.REMIND_ASK_MAX) return false;
+    if (n && (now - (st.t || 0) < this.REMIND_ASK_GAP_DAYS * 864e5 || solvedN - (st.s || 0) < this.REMIND_ASK_GAP_CASES)) return false;
+    this.remindAskDue = { n: n + 1, t: now, s: solvedN };
+    return true;
+  },
+  // Board.flushMedals roept dit aan als de ceremonie klaar is; alleen nog op het resultaatscherm en zonder ander venster
+  // (de bewijskist gaat voor). Pas hier telt de vraag als gesteld.
+  showReminderAsk() {
+    const due = this.remindAskDue;
+    this.remindAskDue = null;
+    if (!due || this.currentScreen !== 'results' || document.querySelector('.modal-overlay.active')) return false;
+    this.storageSet(this.REMIND_ASK_KEY, JSON.stringify({ n: due.n, t: due.t, s: due.s, a: 'shown' }));
+    if (typeof Meting !== 'undefined') Meting.send('reminder_ask', 'shown', due.n);
+    const note = document.getElementById('remind-note');
+    if (note) note.textContent = AP_T`Rond ${this.clock(this.reminderTime())}. Uitzetten kan altijd in Instellingen.`;
+    this.showModal('remind-modal');
+    const yes = document.getElementById('btn-remind-yes');
+    if (yes && yes.focus) try { yes.focus({ preventScroll: true }); } catch (e) { /* oude webview */ }
+    return true;
+  },
+  async answerReminderAsk(yes) {
+    const modal = document.getElementById('remind-modal');
+    if (!modal || !modal.classList.contains('active')) return false;
+    this.hideModal('remind-modal');
+    const st = this.remindAskState();
+    this.storageSet(this.REMIND_ASK_KEY, JSON.stringify({ ...st, a: yes ? 'yes' : 'no' }));
+    if (typeof Meting !== 'undefined') Meting.send('reminder_ask', yes ? 'yes' : 'no', st.n || 1);
+    const rb = document.getElementById('btn-remind');
+    if (!yes) { if (rb) rb.hidden = true; return false; }   // "Niet nu": op dit scherm ook de knop niet meer
+    const on = await this.setReminder(true);   // nu pas de vraag van iOS
+    if (on) {
+      if (rb) rb.hidden = true;
+      this.showToast('🔔', AP_T`Ingesteld: elke dag om ${this.clock(this.reminderTime())} een herinnering.`);
+    }
+    return on;
   },
   // het uur van de gewone herinnering: een uur ná je gebruikelijke speeluur (tussen 9 en 21 uur), anders 18:30
   reminderTime() {
@@ -1046,6 +1107,9 @@ const App = {
       if (r && r.catch) r.catch(() => {});
       const l = LN.addListener('localNotificationActionPerformed', a => this.onNotificationAction(a));
       if (l && l.catch) l.catch(() => {});
+      // 1.7: zei iemand al nee tegen iOS, dan vraagt Van Dam het niet (iOS toont zijn vraag maar één keer)
+      const p = LN.checkPermissions && LN.checkPermissions();
+      if (p && p.then) p.then(r => { this.notifPerm = r && r.display; }, () => {});
     } catch (e) { /* geen meldingen */ }
     // terug uit de achtergrond telt als opening: het plan (en de grens van 7 dagen) schuift mee
     document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') this.scheduleReminder(); });
@@ -1158,6 +1222,13 @@ const App = {
     if (rb) rb.addEventListener('click', async () => {
       if (await this.setReminder(true)) { rb.hidden = true; this.showToast('🔔', AP_T`Ingesteld: elke dag om ${this.clock(this.reminderTime())} een herinnering.`); }
     });
+    // 1.7: het vel van Van Dam na de eerste goede zaak; naast het vel tikken telt als "Niet nu"
+    const rm = document.getElementById('remind-modal');
+    if (rm) {
+      document.getElementById('btn-remind-yes').addEventListener('click', () => this.answerReminderAsk(true));
+      document.getElementById('btn-remind-no').addEventListener('click', () => this.answerReminderAsk(false));
+      rm.addEventListener('click', e => { if (e.target === rm) this.answerReminderAsk(false); });
+    }
   },
 
   resetProgress() {
@@ -1402,6 +1473,9 @@ const App = {
     document.getElementById('btn-share').addEventListener('click', () => {
       this.shareResult();
     });
+    // 1.7: na de dagzaak een vriend uitdagen (zelfde deelvenster, telt als share en share_done met a = challenge)
+    const ch = document.getElementById('btn-challenge');
+    if (ch) ch.addEventListener('click', () => this.shareAny(Board.challengeText(), 'challenge'));
   },
 
   // ══════════════════════════════════════════════════════════
@@ -2038,7 +2112,9 @@ const App = {
     document.getElementById('btn-next-case').hidden = true;
     document.getElementById('results-stars').hidden = true;
     document.getElementById('btn-remind').hidden = true;
-    ['results-panel', 'results-mentor', 'btn-map', 'results-afloop'].forEach(id => { const el = document.getElementById(id); if (el) el.hidden = true; });
+    ['results-panel', 'results-mentor', 'btn-map', 'results-afloop', 'btn-challenge'].forEach(id => { const el = document.getElementById(id); if (el) el.hidden = true; });
+    const shareBtn = document.getElementById('btn-share');
+    shareBtn.classList.remove('btn-ghost'); shareBtn.classList.add('btn-secondary');
     document.getElementById('confetti').innerHTML = '';
     document.getElementById('results-stamp').classList.remove('pending');
 
@@ -2066,9 +2142,11 @@ const App = {
 
     this.shareAny(text);
   },
-  shareAny(text) {
+  // kind (1.7): '' of 'challenge' (Daag een vriend uit); share telt de tik (a = kind), share_done het echte delen
+  // (a = soort app, bij een uitdaging "challenge.<soort app>")
+  shareAny(text, kind = '') {
     if (!text) return;
-    if (typeof Meting !== 'undefined') Meting.send('share');
+    if (typeof Meting !== 'undefined') Meting.send('share', kind);
     // Eerst het deelvenster (WhatsApp, Berichten …): in de app via @capacitor/share, op het web via navigator.share.
     // Het klembord is alleen de terugval; voorheen kwam dat eerst en ging het deelvenster in de app nooit open.
     // Wie het venster zelf sluit, krijgt geen melding.
@@ -2084,7 +2162,7 @@ const App = {
 
     // 1.6: share_done when the sheet really shared (the tap alone is 'share'), with the kind of app it went to
     viaShare()
-      .then(r => { if (typeof Meting !== 'undefined') Meting.send('share_done', this.shareVia(r)); },
+      .then(r => { const via = this.shareVia(r); if (typeof Meting !== 'undefined') Meting.send('share_done', kind ? [kind, via].filter(Boolean).join('.') : via); },
         e => cancelled(e) ? null : viaClipboard())
       .catch(() => this.showToast('⚠️', AP_T('Delen wordt niet ondersteund in deze browser.')));
   },
@@ -2148,10 +2226,22 @@ const App = {
     const day = Date.UTC(now.getFullYear(), now.getMonth(), now.getDate());
     return Math.round((day - Date.UTC(2026, 0, 1)) / 86400000) + 1;
   },
-  // de dagzaak van een dag: dezelfde seed, wereld en titel als die dag (zie btn-board-daily)
+  // De dagzaak van een dag: dezelfde seed, wereld en titel als die dag (zie btn-board-daily). Sinds 1.7 (Jaimy, 15 november
+  // 2026: "Bouw 1 t/m 6"): valt die dag in je eerste week, dan dezelfde seed op Makkelijk in plaats van Gemiddeld, met het
+  // label Startersversie. Streak, dagboek en bonus werken precies zoals bij elke dagzaak. De webdagzaak blijft Gemiddeld.
+  STARTER_DAYS: 7,
+  // de dag van `now` ligt minder dan STARTER_DAYS dagen na de eerste start (crimson-first-day, gezet door Meting.open;
+  // nog niet gezet = vandaag is de eerste dag)
+  starterDay(now = new Date()) {
+    const first = this.storageGet('crimson-first-day') || Progress.dayKey(new Date());
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(first)) return false;
+    const d = Math.round((new Date(now.getFullYear(), now.getMonth(), now.getDate(), 12) - Progress.dateOf(first)) / 864e5);
+    return d >= 0 && d < this.STARTER_DAYS;
+  },
   dailyCase(now = new Date()) {
-    const dayNo = this.getDayNumber(now);
-    return { seed: this.getDailySeed(now) * 3 + 777, dayNo, theme: Themes.forDay(dayNo).id, title: Progress.dailyTitle(dayNo) };
+    const dayNo = this.getDayNumber(now), starter = this.starterDay(now);
+    return { seed: this.getDailySeed(now) * 3 + 777, dayNo, theme: Themes.forDay(dayNo).id, title: Progress.dailyTitle(dayNo),
+      starter, difficulty: starter ? 'makkelijk' : 'gemiddeld' };
   },
 
   updateDailyDate() {

@@ -41,6 +41,9 @@ const check = (cond, msg) => { if (cond) console.log('ok  ', msg); else { failur
   check(active() === 'screen-board' && window.Board.isTutorial, 'first visit: splash goes straight to the board tutorial');
   check(!document.getElementById('board-coach').hidden, 'board coach visible');
   check(document.getElementById('board-coach-step').textContent === 'Stap 1 van 4', 'board step 1');
+  // 1.7: step 1 is one short sentence with the reason below it, and a hand shows the move (Board.showHand)
+  check(document.getElementById('board-coach-text').textContent === 'Zet Lady Clementine op het oplichtende vakje.' && !document.getElementById('board-coach-why').hidden && !!window.Board.handT,
+    'board step 1: one short sentence, the reason below it, the demo hand is on its way');
   const bcell = (x, y) => document.querySelector(`#board-grid .bcell[data-x="${x}"][data-y="${y}"]`);
   bcell(1, 1).click();
   check(!window.Board.placements[0] && window.Board.tutorialStep === 0, 'tap on a non-highlighted board cell is ignored');
@@ -65,6 +68,8 @@ const check = (cond, msg) => { if (cond) console.log('ok  ', msg); else { failur
   check(active() === 'screen-board' && window.Board.isTutorial, 'board tutorial replay from menu');
   click('btn-board-tutorial-skip'); await sleep(350);
   check(active() === 'screen-menu' && !window.Board.isTutorial, 'skip returns to menu');
+  await sleep(900);
+  check(!document.querySelector('.tut-demo') && !window.Board.handT, 'skip: the demo hand is gone and does not come back');
 
   // ── Klassiek raster: oefenzaak via het klassieke menu ──
   click('btn-grid-tutorial'); await sleep(350);

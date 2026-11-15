@@ -4,7 +4,8 @@
 // language. Also checks the fixed text in index.html that I18n.translateDom replaces. Prints the missing keys.
 const fs = require('fs'), path = require('path'), vm = require('vm');
 const DIR = path.join(__dirname, '..');
-const FILES = ['app.js', 'board.js', 'floorplan.js', 'mentor.js', 'minigame.js', 'progress.js', 'store.js', 'campaign.js', 'story.js', 'themes.js', 'avatars.js', 'mapart.js'];
+// 1.7: also the web daily (web-daily/dagzaak.js): its T('…') calls use the app's ui dictionary (WT() has its own texts)
+const FILES = ['app.js', 'board.js', 'floorplan.js', 'mentor.js', 'minigame.js', 'progress.js', 'store.js', 'campaign.js', 'story.js', 'themes.js', 'avatars.js', 'mapart.js', 'web-daily/dagzaak.js'];
 
 // Reads a template literal that starts at src[i] === '`'; returns its static parts and the index after it.
 function readTemplate(src, i) {
