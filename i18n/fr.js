@@ -483,7 +483,17 @@
     "🧊 Twee keer je streak redden als je een dag mist": "🧊 Sauve ta série deux fois si tu rates un jour",
     "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "Achats uniques via ton compte sur la boutique d’applications, sans abonnement. Le chapitre I de chaque monde, le Manoir, le Navire pirate, l’affaire du jour, l’affaire de la semaine et les archives restent toujours gratuits.",
     "Een logische detectivepuzzel": "Un puzzle logique de détective",
-    "Elke puzzel ontmaskert een dader": "Chaque puzzle démasque un coupable"
+    "Elke puzzel ontmaskert een dader": "Chaque puzzle démasque un coupable",
+    "Zal ik je morgen een seintje geven als de nieuwe zaak klaarligt?": "Je te fais signe demain quand la nouvelle affaire sera prête ?",
+    "Rond {0}. Uitzetten kan altijd in Instellingen.": "Vers {0}. Tu peux le désactiver à tout moment dans les Réglages.",
+    "Ja, graag": "Oui, volontiers",
+    "Zet Lady Clementine op het oplichtende vakje.": "Place Clementine sur la case qui s’allume.",
+    "De enige vrije hoek van de Woonkamer.": "Le seul coin libre du salon.",
+    "🎯 Daag een vriend uit": "🎯 Défie un ami",
+    "Ik heb de zaak van vandaag opgelost: {0} in {1}.": "J’ai résolu l’affaire du jour : {0} en {1}.",
+    "Lukt het jou ook? Speel hem gratis in je browser:": "Et toi, tu la résous ? Joue-la gratuitement dans ton navigateur :",
+    "Je bent uitgedaagd: speel de zaak van vandaag": "On te lance un défi : joue l’affaire du jour",
+    "Startersversie": "Version débutant"
   },
 
   data: {

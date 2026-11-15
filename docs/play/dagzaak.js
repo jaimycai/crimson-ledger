@@ -9,6 +9,9 @@
 // ============================================================
 // App Store links carry a campaign token (ct, 1.6) via Board.storeLink: the channel the visitor came in through
 // (?ct=share-daily from the app's daily share, ?ct=webdaily-share from a share on this page), else webdaily-cta.
+// 1.7: ?ct=challenge-daily comes from "Daag een vriend uit" in the app. The page then says "Je bent uitgedaagd" above
+// today's case and above the board, open counts as 'challenge', and after solving the App Store card carries that token.
+const CHALLENGE_CT = 'challenge-daily';
 const SHARE_URL = 'https://jaimycai.github.io/crimson-ledger/play/';
 const RESULT_KEY = 'crimson-webdaily-result';
 // meting: alleen deze gebeurtenissen gaan naar crimson-meting (platform 'webdaily')
@@ -63,6 +66,7 @@ const WebDaily = {
       const q = new URLSearchParams(location.search), ct = String(q.get('ct') || '').toLowerCase();
       if (/^[a-z0-9-]{1,40}$/.test(ct)) this.ct = ct;
       if (q.has('s') || /share/.test(this.ct)) this.via = 'share';
+      if (this.ct === CHALLENGE_CT) this.via = 'challenge';
       if (q.has('s') || q.has('ct')) history.replaceState(null, '', location.pathname);
     } catch (e) { /* oude browser */ }
     const send = Meting.send.bind(Meting);
@@ -120,15 +124,18 @@ const WebDaily = {
 
   startTutorial() {
     Board.startTutorial();
+    this.$('wd-challenge-board').hidden = true;   // de oefenzaak heeft de coach; de uitdaging staat boven de echte zaak
     Meting.send('start', 'tutorial', 0);
     this.go('board');
   },
+  challenged() { return this.via === 'challenge'; },
   // precies zoals de app (App.bindBoard, knop "Speel" bij de dagelijkse zaak): gemiddeld, seed = datum × 3 + 777,
   // de wereld van de dag. Zo ligt op het web dezelfde zaak als in de app op die datum.
   startDaily() {
     if (this.result()) { this.go('home'); return; }
     const d = this.today();
     this.playing = { n: d.n, day: d.day };
+    this.$('wd-challenge-board').hidden = !this.challenged();
     if (Board.start('gemiddeld', App.getDailySeed() * 3 + 777, true, d.theme.id)) this.go('board');
     else App.showToast('⚠️', T('Kon geen plattegrond genereren, probeer opnieuw.'));
   },
@@ -193,6 +200,22 @@ const WebDaily = {
     this.$('wd-privacy').textContent = T('Privacy');
     this.$('wd-first-text').textContent = WT('practice');
     this.$('wd-skip').textContent = T('Overslaan');
+    // 1.7: uitgedaagd via de app (?ct=challenge-daily): boven de zaak van vandaag en boven het bord. Het bord komt uit
+    // index.html, dus de regel erboven zet deze pagina er zelf in.
+    const ch = T('Je bent uitgedaagd: speel de zaak van vandaag');
+    const ico = typeof Icons !== 'undefined' ? Icons.html('target') : '';
+    this.$('wd-challenge').innerHTML = `${ico}<span></span>`;
+    this.$('wd-challenge').querySelector('span').textContent = ch;
+    if (!this.$('wd-challenge-board')) {
+      const p = document.createElement('p');
+      p.className = 'wd-challenge wd-challenge-board';
+      p.id = 'wd-challenge-board';
+      p.hidden = true;
+      p.innerHTML = `${ico}<span></span>`;
+      p.querySelector('span').textContent = ch;
+      const stage = document.querySelector('#screen-board .board-stage');
+      stage.parentNode.insertBefore(p, stage);
+    }
     document.querySelectorAll('[data-appstore]').forEach(a => { a.href = this.storeUrl(); });
     this.soundLabel();
   },
@@ -210,6 +233,7 @@ const WebDaily = {
     this.$('wd-hook').textContent = T('Er ligt een nieuwe zaak op je bureau. Wie was alleen met het slachtoffer?');
     // vandaag al opgelost: de kaart met het resultaat neemt de plaats van de zaak in
     this.$('wd-daily').hidden = !!r;
+    this.$('wd-challenge').hidden = !!r || !this.challenged();
     const first = !r && !App.storageGet('crimson-board-tutorial-done') && !this.resumable();
     this.$('wd-play').textContent = this.resumable() ? T('Verder') : T('Speel');
     this.$('wd-first').hidden = !first;

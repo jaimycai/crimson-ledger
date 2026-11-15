@@ -203,7 +203,8 @@ const I18n = {
     // rangen, niveaus, oefenzaak
     if (typeof App !== 'undefined' && App.RANKS) App.RANKS.forEach(r => { if (DATA.ranks[r[1]]) r[1] = DATA.ranks[r[1]]; });
     if (typeof DIFFICULTY !== 'undefined') Object.keys(DATA.difficulty).forEach(k => { if (DIFFICULTY[k]) DIFFICULTY[k].label = DATA.difficulty[k]; });
-    if (typeof Board !== 'undefined' && Board.TUTORIAL_STEPS) Board.TUTORIAL_STEPS.forEach((s, i) => { if (DATA.boardTutorial[i]) s.text = DATA.boardTutorial[i]; });
+    // stap 1 (1.7) vertaalt zichzelf via de ui-teksten (say); de andere stappen komen uit data.boardTutorial
+    if (typeof Board !== 'undefined' && Board.TUTORIAL_STEPS) Board.TUTORIAL_STEPS.forEach((s, i) => { if (DATA.boardTutorial[i] && !s.say) s.text = DATA.boardTutorial[i]; });
     if (typeof Board !== 'undefined' && Board.TUTORIAL) Board.TUTORIAL.rooms.forEach(r => { r.key = r.key || r.name; const n = DATA.themes.landhuis.rooms[r.key]; if (n) r.name = n; r.article = article; });
   }
 };

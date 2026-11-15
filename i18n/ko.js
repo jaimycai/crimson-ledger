@@ -483,7 +483,17 @@
     "🧊 Twee keer je streak redden als je een dag mist": "🧊 하루를 놓쳐도 연속 기록을 두 번 지켜요",
     "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "앱 스토어 계정으로 하는 일회성 구매이며, 구독이 아니에요. 모든 월드의 제1장, 저택, 해적선, 일일 사건, 주간 사건, 기록 보관소는 언제나 무료예요.",
     "Een logische detectivepuzzel": "탐정 논리 퍼즐",
-    "Elke puzzel ontmaskert een dader": "퍼즐마다 범인의 정체가 드러난다"
+    "Elke puzzel ontmaskert een dader": "퍼즐마다 범인의 정체가 드러난다",
+    "Zal ik je morgen een seintje geven als de nieuwe zaak klaarligt?": "내일 새 사건이 준비되면 알려 드릴까요?",
+    "Rond {0}. Uitzetten kan altijd in Instellingen.": "{0}쯤 알려 드려요. 설정에서 언제든 끌 수 있어요.",
+    "Ja, graag": "네, 좋아요",
+    "Zet Lady Clementine op het oplichtende vakje.": "레이디 클레멘타인을 빛나는 칸에 놓으세요.",
+    "De enige vrije hoek van de Woonkamer.": "거실에서 비어 있는 유일한 구석이에요.",
+    "🎯 Daag een vriend uit": "🎯 친구에게 도전장 보내기",
+    "Ik heb de zaak van vandaag opgelost: {0} in {1}.": "오늘의 사건을 {1} 만에 해결했어: {0}",
+    "Lukt het jou ook? Speel hem gratis in je browser:": "너도 풀 수 있어? 브라우저에서 무료로 해 봐:",
+    "Je bent uitgedaagd: speel de zaak van vandaag": "도전장이 도착했어요: 오늘의 사건을 플레이하세요",
+    "Startersversie": "입문자 버전"
   },
 
   data: {

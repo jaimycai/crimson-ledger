@@ -483,7 +483,17 @@
     "🧊 Twee keer je streak redden als je een dag mist": "🧊 Giữ chuỗi ngày hai lần khi bạn lỡ một ngày",
     "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "Mua một lần qua tài khoản cửa hàng ứng dụng của bạn, không phải gói đăng ký. Phần I của mọi thế giới, Dinh thự, Tàu cướp biển, vụ án hằng ngày, vụ án hằng tuần và kho hồ sơ luôn miễn phí.",
     "Een logische detectivepuzzel": "Trò đố logic trinh thám",
-    "Elke puzzel ontmaskert een dader": "Mỗi câu đố vạch mặt một thủ phạm"
+    "Elke puzzel ontmaskert een dader": "Mỗi câu đố vạch mặt một thủ phạm",
+    "Zal ik je morgen een seintje geven als de nieuwe zaak klaarligt?": "Ngày mai tôi nhắc bạn khi vụ án mới sẵn sàng nhé?",
+    "Rond {0}. Uitzetten kan altijd in Instellingen.": "Khoảng {0}. Bạn có thể tắt bất cứ lúc nào trong Cài đặt.",
+    "Ja, graag": "Có, cảm ơn",
+    "Zet Lady Clementine op het oplichtende vakje.": "Đặt Quý bà Clementine vào ô đang sáng.",
+    "De enige vrije hoek van de Woonkamer.": "Góc trống duy nhất của phòng khách.",
+    "🎯 Daag een vriend uit": "🎯 Thách đấu bạn bè",
+    "Ik heb de zaak van vandaag opgelost: {0} in {1}.": "Tôi đã phá vụ án hôm nay: {0} trong {1}.",
+    "Lukt het jou ook? Speel hem gratis in je browser:": "Bạn có làm được không? Chơi miễn phí ngay trên trình duyệt:",
+    "Je bent uitgedaagd: speel de zaak van vandaag": "Bạn được thách đấu: chơi vụ án hôm nay",
+    "Startersversie": "Bản cho người mới"
   },
 
   data: {

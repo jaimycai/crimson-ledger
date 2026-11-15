@@ -483,7 +483,17 @@
     "🧊 Twee keer je streak redden als je een dag mist": "🧊 Selamatkan runtunanmu dua kali saat kamu melewatkan sehari",
     "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "Pembelian satu kali lewat akun toko aplikasimu, bukan langganan. Bagian I dari setiap dunia, Kediaman Blackwood, Kapal Bajak Laut, kasus harian, kasus mingguan, dan arsip selalu gratis.",
     "Een logische detectivepuzzel": "Teka-teki logika detektif",
-    "Elke puzzel ontmaskert een dader": "Setiap teka-teki membongkar pelakunya"
+    "Elke puzzel ontmaskert een dader": "Setiap teka-teki membongkar pelakunya",
+    "Zal ik je morgen een seintje geven als de nieuwe zaak klaarligt?": "Mau kuingatkan besok saat kasus baru sudah siap?",
+    "Rond {0}. Uitzetten kan altijd in Instellingen.": "Sekitar pukul {0}. Bisa dimatikan kapan saja di Pengaturan.",
+    "Ja, graag": "Ya, boleh",
+    "Zet Lady Clementine op het oplichtende vakje.": "Taruh Lady Clementine di kotak yang menyala.",
+    "De enige vrije hoek van de Woonkamer.": "Satu-satunya sudut kosong di Ruang Tamu.",
+    "🎯 Daag een vriend uit": "🎯 Tantang teman",
+    "Ik heb de zaak van vandaag opgelost: {0} in {1}.": "Aku sudah memecahkan kasus hari ini: {0} dalam {1}.",
+    "Lukt het jou ook? Speel hem gratis in je browser:": "Kamu bisa juga? Mainkan gratis di browser:",
+    "Je bent uitgedaagd: speel de zaak van vandaag": "Kamu ditantang: mainkan kasus hari ini",
+    "Startersversie": "Versi pemula"
   },
 
   data: {

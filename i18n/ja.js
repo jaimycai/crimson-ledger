@@ -483,7 +483,17 @@
     "🧊 Twee keer je streak redden als je een dag mist": "🧊 1日休んでも、連続記録を2回守れる",
     "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "アプリストアのアカウントでの買い切り購入です。サブスクリプションではありません。各ワールドの第1章、洋館、海賊船、日替わり事件、今週の事件、アーカイブはずっと無料です。",
     "Een logische detectivepuzzel": "探偵ロジックパズル",
-    "Elke puzzel ontmaskert een dader": "パズルを解くたび、犯人の正体が暴かれる"
+    "Elke puzzel ontmaskert een dader": "パズルを解くたび、犯人の正体が暴かれる",
+    "Zal ik je morgen een seintje geven als de nieuwe zaak klaarligt?": "明日、新しい事件が届いたらお知らせしましょうか？",
+    "Rond {0}. Uitzetten kan altijd in Instellingen.": "{0}ごろにお知らせします。設定からいつでもオフにできます。",
+    "Ja, graag": "はい、お願いします",
+    "Zet Lady Clementine op het oplichtende vakje.": "レディ・クレメンタインを光っているマスに置いてください。",
+    "De enige vrije hoek van de Woonkamer.": "居間で空いている隅はここだけです。",
+    "🎯 Daag een vriend uit": "🎯 友だちに挑戦状を送る",
+    "Ik heb de zaak van vandaag opgelost: {0} in {1}.": "今日の事件を{1}で解決しました：{0}",
+    "Lukt het jou ook? Speel hem gratis in je browser:": "あなたも解けるかな？ブラウザで無料で遊べます：",
+    "Je bent uitgedaagd: speel de zaak van vandaag": "挑戦状が届きました：今日の事件を解いてみよう",
+    "Startersversie": "ビギナー版"
   },
 
   data: {
