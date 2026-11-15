@@ -92,28 +92,37 @@ const App = {
     const minWait = new Promise(r => setTimeout(r, 900));
     Promise.race([Promise.all([fonts, loaded, minWait]), new Promise(r => setTimeout(r, 2500))]).then(done, done);
   },
-  // Vraagt om een beoordeling (eigen ReviewPlugin in ios/App/App, SKStoreReviewController) op drie hoogtepunten,
-  // elk hooguit één keer: vijf opgeloste zaken, een zaak van de week zonder hint en zeven dagen op rij. Nooit vóór de
-  // vijfde zaak en alleen direct na een zaak met minstens twee sterren (zonder hint of in één keer), zodat de vraag
-  // komt op een goed moment voor wie het spel al kent; het oordeel zelf vragen we niet. Apple bepaalt of het venster
-  // verschijnt (hooguit drie keer per jaar). Wie iets mist, heeft de knop "Wat kan beter?" in de instellingen.
+  // Vraagt om een beoordeling (eigen ReviewPlugin in ios/App/App, SKStoreReviewController). Sinds 1.6.2 (Jaimy, 15 november
+  // 2026: "een review vragen na game 2 al, en als ze geen review geven het later nog een keer vragen zoals andere apps"):
+  // de eerste keer na de tweede opgeloste zaak, daarna nog twee keer, telkens pas na minstens REVIEW_GAP_DAYS dagen en
+  // REVIEW_GAP_CASES zaken meer. Of iemand beoordeelde, ziet de app niet; Apple toont het venster hooguit drie keer per 365
+  // dagen en niet meer aan wie al een beoordeling gaf. Altijd direct na een goede zaak (minstens twee sterren); een
+  // herhaling alleen op een hoogtepunt: ★★★, een zaak van de week zonder hint of zeven dagen op rij.
+  REVIEW_GAP_DAYS: 7,
+  REVIEW_GAP_CASES: 5,
+  REVIEW_MAX: 3,
   maybeAskReview(ctx = {}) {
     try {
       const C = window.Capacitor;
       const P = C && ((C.Plugins && C.Plugins.InAppReview) || (typeof C.registerPlugin === 'function' && C.registerPlugin('InAppReview')));
       if (!P || !C.isNativePlatform || !C.isNativePlatform()) return;
-      let asked = [];
-      try { asked = JSON.parse(this.storageGet('crimson-review-moments') || '[]'); } catch (e) { asked = []; }
-      if (this.storageGet('crimson-review-asked') && !asked.includes('solved')) asked.push('solved');   // 1.1 vroeg al na zaak 3
-      // 1.5: ask earlier but only at a high point. From case 3 a ★★★ solve qualifies (only 21% of new players reached case 5,
-      // so most never saw the question); from case 5 two stars still do. iOS itself limits it to 3 prompts a year.
-      const solvedN = Board.loadStats().solved || 0, st = ctx.stars || 0;
-      if (solvedN < 3 || st < 2 || (solvedN < 5 && st < 3)) return;
-      const moment = !asked.includes('solved') ? 'solved'
-        : !asked.includes('weekclean') && ctx.weeklyClean ? 'weekclean'
-        : !asked.includes('streak7') && this.streak && this.streak.count >= 7 ? 'streak7' : null;
+      let asks = [];
+      try { asks = JSON.parse(this.storageGet('crimson-review-asks') || '[]'); } catch (e) { asks = []; }
+      if (!asks.length) {   // tot 1.6.1 bewaarde de app alleen de momenten: tel ze mee als vragen van lang geleden
+        let old = [];
+        try { old = JSON.parse(this.storageGet('crimson-review-moments') || '[]'); } catch (e) { old = []; }
+        if (this.storageGet('crimson-review-asked') && !old.includes('solved')) old.push('solved');
+        asks = old.map(m => ({ m, t: 0, n: 0 }));
+      }
+      const solvedN = Board.loadStats().solved || 0, st = ctx.stars || 0, now = Date.now();
+      if (solvedN < 2 || st < 2) return;
+      if (asks.filter(a => now - a.t < 365 * 864e5).length >= this.REVIEW_MAX) return;
+      const last = asks[asks.length - 1];
+      if (last && (now - last.t < this.REVIEW_GAP_DAYS * 864e5 || solvedN - last.n < this.REVIEW_GAP_CASES)) return;
+      const moment = !last ? 'case2' : ctx.weeklyClean ? 'weekclean' : this.streak && this.streak.count >= 7 ? 'streak7' : st >= 3 ? 'again' : null;
       if (!moment) return;
-      this.storageSet('crimson-review-moments', JSON.stringify([...asked, moment]));
+      asks.push({ m: moment, t: now, n: solvedN });
+      this.storageSet('crimson-review-asks', JSON.stringify(asks.slice(-10)));
       if (typeof Meting !== 'undefined') Meting.send('review_asked', moment);
       setTimeout(() => { P.requestReview().catch(() => {}); }, 3500);
     } catch (e) { /* niet beschikbaar */ }

@@ -42,30 +42,34 @@ const check = (c, m) => { if (c) console.log('ok  ', m); else { failures++; cons
   check(!('niet-van-ons' in window.__native), 'alleen crimson-sleutels worden gespiegeld');
   await sleep(1000);
   check(document.getElementById('screen-splash').classList.contains('loaded') && document.getElementById('btn-splash-start').textContent === 'Verder' && window.__splashHidden === 1, 'na het laden: knop "Verder" (er is voortgang) en de native splash is verborgen');
-  // beoordeling vragen: drie hoogtepunten, elk hooguit één keer, vanaf vijf zaken en alleen na twee of drie sterren
-  const moments = () => JSON.parse(window.localStorage.getItem('crimson-review-moments') || '[]');
-  App.maybeAskReview({ stars: 1 });
-  check(moments().length === 0, 'zaak met één ster: niet gevraagd');
-  // 1.5: from case 3 a three-star solve qualifies; below five cases two stars do not
-  App.storageSet('crimson-board-stats', '{"solved":2,"clean":2}');
-  App.maybeAskReview({ stars: 3 });
-  check(moments().length === 0, 'twee zaken opgelost: nog niet gevraagd');
-  App.storageSet('crimson-board-stats', '{"solved":4,"clean":2}');
+  // beoordeling vragen (1.6.2): eerst na de tweede zaak, daarna nog twee keer na 7 dagen en 5 zaken meer, op een hoogtepunt
+  const asks = () => JSON.parse(window.localStorage.getItem('crimson-review-asks') || '[]');
+  const moments = () => asks().map(a => a.m).join();
+  const ago = days => { const a = asks(); a[a.length - 1].t = Date.now() - days * 864e5; window.localStorage.setItem('crimson-review-asks', JSON.stringify(a)); };
+  const solved = n => App.storageSet('crimson-board-stats', JSON.stringify({ solved: n, clean: 2 }));
+  window.localStorage.removeItem('crimson-review-moments');
+  solved(1); App.maybeAskReview({ stars: 3 });
+  check(moments() === '', 'één zaak opgelost: nog niet gevraagd');
+  solved(2); App.maybeAskReview({ stars: 1 });
+  check(moments() === '', 'tweede zaak met één ster: niet gevraagd');
   App.maybeAskReview({ stars: 2 });
-  check(moments().length === 0, 'vier zaken en twee sterren: nog niet gevraagd');
-  App.storageSet('crimson-board-stats', '{"solved":5,"clean":2}');
-  App.maybeAskReview({ stars: 2 });
-  check(moments().join() === 'solved', 'vijf zaken en twee sterren: gevraagd (' + moments().join() + ')');
+  check(moments() === 'case2', 'tweede zaak met twee sterren: gevraagd (' + moments() + ')');
+  solved(9); App.maybeAskReview({ stars: 3 });
+  check(moments() === 'case2', 'zelfde week: niet opnieuw gevraagd');
+  ago(8); solved(5); App.maybeAskReview({ stars: 3 });
+  check(moments() === 'case2', 'na 8 dagen maar 3 zaken meer: niet gevraagd');
+  solved(7); App.maybeAskReview({ stars: 2 });
+  check(moments() === 'case2', 'na 8 dagen en 5 zaken meer, maar geen hoogtepunt: niet gevraagd');
   App.maybeAskReview({ stars: 3 });
-  check(moments().join() === 'solved', 'nog een zaak opgelost: niet opnieuw gevraagd');
-  App.maybeAskReview({ weeklyClean: true, stars: 2 });
-  check(moments().join() === 'solved,weekclean', 'zaak van de week zonder hint: gevraagd');
-  App.streak.count = 7; App.maybeAskReview({ stars: 1 });
-  check(moments().join() === 'solved,weekclean', 'zeven dagen op rij maar één ster: niet gevraagd');
+  check(moments() === 'case2,again', 'na 8 dagen en 5 zaken meer, met drie sterren: opnieuw gevraagd');
+  ago(10); solved(12); App.maybeAskReview({ weeklyClean: true, stars: 2 });
+  check(moments() === 'case2,again,weekclean', 'derde keer: zaak van de week zonder hint');
+  ago(30); solved(30); App.maybeAskReview({ stars: 3 });
+  check(asks().length === 3, 'hooguit drie keer per jaar');
+  window.localStorage.removeItem('crimson-review-asks');
+  window.localStorage.setItem('crimson-review-moments', '["solved","weekclean","streak7"]');
   App.maybeAskReview({ stars: 3 });
-  check(moments().join() === 'solved,weekclean,streak7', 'zeven dagen op rij: gevraagd');
-  App.maybeAskReview({ weeklyClean: true, stars: 3 });
-  check(moments().length === 3, 'daarna niet meer');
+  check(moments() === 'solved,weekclean,streak7,again', 'oudere versie vroeg al drie keer, lang geleden: opnieuw gevraagd');
   // delen: in de app opent het deelvenster (niet eerst het klembord); annuleren geeft geen melding
   App.shareAny('Zaak 7 gesloten'); await sleep(30);
   check((window.__shared || []).join() === 'Zaak 7 gesloten', 'delen opent het deelvenster van de app');
