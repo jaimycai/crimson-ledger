@@ -48,3 +48,5 @@ art/logo/ruw/
 art/logo/urls.txt
 art/logo/blad.html
 art/logo/referenties.html
+# de dagzaken voor de widget "Zaak van vandaag": gemaakt door build-www.js (build-widget.js) bij elke bouw
+ios/App/CrimsonLiveActivity/DailyCases.json

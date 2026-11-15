@@ -721,3 +721,90 @@ export met `store/build/ExportOptions-manual.plist`) is nodig:
   niet; na "Aan de slag"/"Begrepen" klopt hij weer. Pauzeren kan met `Text(timerInterval:pauseTime:)` als dat nodig is.
 - Geen deeplink: een tik opent de app waar hij was. Na een koude start is de activiteit al weg.
 - Geen eigen weergave voor CarPlay/Watch (`.supplementalActivityFamilies([.small])`); iOS gebruikt dan compact.
+
+## Widget "Zaak van vandaag" (15-11-2026)
+
+Gebouwd op 15 november 2026 op verzoek van Jaimy ("Bouw 1 t/m 6 en maak het volledig af"). Een gewone widget voor het
+beginscherm en het toegangsscherm, in dezelfde extensie als de Live Activity: **geen nieuwe App ID, geen nieuw
+profiel, geen App Group**.
+
+### Wat hij toont
+
+| Maat | Inhoud |
+|---|---|
+| Klein (beginscherm, StandBy) | zegel van de wereld in de kaartkleuren, 🔥 streak, titel in Playfair, wereld, "Speel de zaak van vandaag" |
+| Middel | banier van de wereld, datum ("ZONDAG 15 NOVEMBER"), streak, titel, wereld, knop "Speel de zaak van vandaag" |
+| Toegangsscherm (rechthoekig) | 🔍 wereld en 🔥 streak, titel, "Speel de zaak van vandaag" |
+
+- Opgelost vandaag: in plaats van de oproep een gouden zegel met "Vandaag opgelost" (middel: "Morgen een nieuwe zaak").
+- De streak staat er alleen als hij nog leeft, met dezelfde regel als `App.streakAlive` (vandaag of gisteren gespeeld,
+  of eergisteren met een vrije dag). Zonder streak blijft alleen de zaak staan.
+- Papier in licht, de kluis van de Live Activity in donker. Taal: die van de app (Instellingen › taal), anders die van
+  het toestel, zoals `I18n.detect`. Arabisch en Urdu van rechts naar links.
+- **Tik** opent `crimsonledger://daily`: de app opent de dagzaak, met dezelfde regels als een tik op de melding (niet
+  midden in een andere zaak, niet als de dagzaak al is opgelost). Werkt ook bij een koude start.
+
+### Hoe de gegevens vers blijven
+
+De widget kan het JavaScript van het spel niet draaien. `build-widget.js` rekent daarom bij elke bouw met de code van
+de app zelf (`App.dailyCase`, `Themes`, `Progress`, de taalbestanden) de dagzaken uit van **twee dagen terug tot 400
+dagen vooruit**, in alle 20 talen, naar `ios/App/CrimsonLiveActivity/DailyCases.json` (45 kB, niet in git).
+`build-www.js` roept het aan, dus `npm run build`, `npm run ios`, `store/release-ios.sh` en Xcode Cloud
+(`ci_post_clone.sh`) maken het bestand altijd opnieuw. Na de laatste dag telt de widget zelf door met dezelfde
+rotatie (wereld = dag % 24, titel = dag % 30); de bouw zet `rotation` alleen op true als elke dag in de tabel die regel
+volgt. Zonder bestand toont de widget alleen "Today's case".
+
+Vaste teksten (naam en beschrijving in de widgetgalerij, de oproep, "Vandaag opgelost", "Morgen een nieuwe zaak", de
+voorleestekst van de streak) staan in `WIDGET_TEKST` in `build-widget.js`, Nederlands als bron, 19 vertalingen met de
+woorden van de taalbestanden (zaak/Fall/caso/affaire/дело/事件), geen woord voor moord.
+
+### Streak zonder App Group
+
+De app en de extensie delen één sleutelhangeritem (`WidgetSharedState.swift`, in beide targets) via
+`keychain-access-groups` = `$(AppIdentifierPrefix)nl.crimsonledger.shared` in `App/App.entitlements` en
+`CrimsonLiveActivity/CrimsonLiveActivity.entitlements`. Daarvoor hoeft er niets bij Apple te veranderen: elk profiel
+van het team staat `8388P9U3X3.*` al toe (nagekeken in "Crimson Ledger App Store" en "Crimson Ledger Live Activity App
+Store"). `DailyWidgetPlugin.swift` leest bij het starten van de app en bij elke keer dat hij naar de achtergrond gaat
+`crimson-streak`, `crimson-freezes`, `crimson-board-daily-done` en `crimson-lang` uit Capacitor Preferences (die zet
+`App.storageSet` er al in), schrijft het item alleen als er iets veranderde en vraagt de widget dan opnieuw te laden.
+Het JavaScript hoeft daarvoor niets te doen; in `app.js` staat alleen `App.bindWidget` voor de tik.
+
+### Bestanden
+
+| Onderdeel | Bestand |
+|---|---|
+| Widget, tijdlijn (nu en elke middernacht), weergaven | `ios/App/CrimsonLiveActivity/DailyCaseWidget.swift` (in de `WidgetBundle` van `CrimsonLiveActivity.swift`) |
+| Gedeelde stand en dagen als `yyyy-MM-dd` (Gregoriaans, ook op een toestel met een andere kalender) | `ios/App/CrimsonLiveActivity/WidgetSharedState.swift` |
+| Tik en streak aan de kant van de app | `ios/App/App/DailyWidgetPlugin.swift`, aangemeld in `MainViewController.swift`; URL-schema `crimsonledger` in `App/Info.plist` |
+| Gegevens | `build-widget.js` → `DailyCases.json` (bron van de extensie) |
+| Test | `tests/widget.test.js` (in `npm test`) |
+
+### Nagekeken
+
+- `xcodebuild` voor de simulator (iOS 26.5, iPhone 17 Pro) zonder fouten of waarschuwingen in de nieuwe code; de app
+  blijft op iOS 15.0 (ActivityKit nog zwak gelinkt), de extensie op 16.1.
+- In de simulator met een UI-test via SpringBoard toegevoegd: klein en middel op het beginscherm (Nederlands en Engels,
+  licht en donker, opgelost) en de rechthoekige op het toegangsscherm. De streak en de taal kwamen via de sleutelhanger
+  van de app. Een tik op de widget (koude
+  start) en `crimsonledger://daily` met de app op de achtergrond openen allebei de dagzaak.
+- Release-archive zoals `store/release-ios.sh` (automatisch ondertekend met de profielen op deze Mac) en een export met
+  `store/build/ExportOptions-manual.plist` (bestemming `export` in plaats van `upload`): beide gelukt. In de .ipa dragen
+  de app ("Crimson Ledger App Store") en de extensie ("Crimson Ledger Live Activity App Store") allebei de gedeelde
+  sleutelhangergroep. Niet geüpload.
+
+Schermafbeeldingen in `docs/shots/widget-zaak-van-vandaag/`: `01`–`06` het beginscherm in de simulator, `07` de
+galerij, `08` de dagzaak na een tik, `09` het toegangsscherm, `weergave-*` de weergaven los, `alle-talen-middel.jpg`
+alle 20 talen.
+
+### Niet af of niet getest
+
+- Niet op een echt toestel (alleen de iOS 26.5-simulator; geen iOS 27-runtime hier). De getinte en heldere weergave
+  van iOS 18/26 alleen gecompileerd (`widgetAccentable`), niet bekeken. StandBy niet bekeken.
+- De upload naar App Store Connect niet gedaan. Voor de volgende versie hoeft `release-ios.sh` niet te veranderen.
+- Gevonden in de app (niet aangepast): `App.getDayNumber` rekent met 24-uursblokken vanaf 1 januari om middernacht,
+  dus tijdens zomertijd geeft de app tussen 00:00 en 01:00 nog de titel en wereld van gisteren (de seed is wel van
+  vandaag). De widget toont om middernacht meteen de zaak van de nieuwe dag. Oplossen in de app: rekenen vanaf 12 uur
+  's middags of met `Math.round`.
+- Meting kent geen eigen gebeurtenis voor de widget: een tik telt als `notif` met `widget.daily`.
+- Duolingo zag de meeste winst als de widget na een les wordt aangeboden (RETENTIE-ONDERZOEK-2026-10-20). Een
+  uitnodiging in de app om de widget toe te voegen is niet gebouwd.

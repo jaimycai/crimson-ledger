@@ -52,6 +52,7 @@ De engine-tests bewijzen voor honderden gegenereerde puzzels én alle 96 campagn
 | `tests/` | `engine`, `floorplan`, `campaign`, `progress`, `e2e`, `board` |
 | `privacy.html`, `support.html` | privacyverklaring en supportpagina (vereist voor de App Store) |
 | `ios/`, `capacitor.config.json`, `build-www.js` | native iOS-app via Capacitor: `npm run ios` (vereist Xcode) |
+| `build-widget.js` | gegevens van de iOS-widget "Zaak van vandaag" (400 dagen vooruit, 20 talen); draait in `build-www.js` |
 | `store/` | App Store-metadata, indien-checklist en schermafbeeldingen (1290×2796) |
 
 ## Regels

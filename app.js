@@ -58,6 +58,7 @@ const App = {
     this.renderHome();
     this.scheduleReminder();
     this.bindNotifications();
+    this.bindWidget();
     if (typeof Store !== 'undefined') Store.grantStarterHints();
     if (typeof Meting !== 'undefined') Meting.open();
   },
@@ -1075,6 +1076,21 @@ const App = {
     if (this.storageGet('crimson-board-daily-done') === now.toDateString()) return;
     const btn = document.getElementById('btn-board-daily');
     if (btn) btn.click();
+  },
+  // De widget "Zaak van vandaag" (iOS, ios/App/CrimsonLiveActivity/DailyCaseWidget.swift) opent crimsonledger://daily;
+  // DailyWidgetPlugin.swift meldt dat als 'open', ook bij een koude start. Dan dezelfde regels als een tik op de melding.
+  // Meting telt het als notif "widget.daily": de teller kent geen eigen gebeurtenis voor de widget.
+  bindWidget() {
+    try {
+      const C = window.Capacitor, W = C && C.Plugins && C.Plugins.DailyWidget;
+      if (!W || typeof W.addListener !== 'function') return;
+      const l = W.addListener('open', x => {
+        if (!x || x.route !== 'daily') return;
+        if (typeof Meting !== 'undefined') Meting.send('notif', 'widget.daily');
+        this.openDailyFromNotification();
+      });
+      if (l && l.catch) l.catch(() => {});
+    } catch (e) { /* geen widget */ }
   },
 
   // ══════════════════════════════════════════════════════════
