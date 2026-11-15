@@ -9,11 +9,14 @@ import CoreText
 // The island is always black; the Lock Screen card is a dark, slightly see-through ledger card so the wallpaper
 // shows through (glass) and the cream text stays readable in light and dark.
 // Apple ignores animation modifiers here: the clock ticks by itself and an update fades/rolls with the system timing.
+// Since November 2026 the same extension also carries the Home Screen widget "Zaak van vandaag" (DailyCaseWidget.swift),
+// so it needs no App ID or provisioning profile of its own.
 
 @main
 struct CrimsonLiveActivityBundle: WidgetBundle {
     var body: some Widget {
         CaseLiveActivity()
+        DailyCaseWidget()
     }
 }
 
