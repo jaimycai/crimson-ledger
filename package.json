@@ -1,6 +1,6 @@
 {
   "name": "crimson-ledger",
-  "version": "1.6.2",
+  "version": "1.7.0",
   "private": true,
   "description": "Crimson Ledger — moordmysterie-puzzels op een plattegrond (Nederlands)",
   "scripts": {
