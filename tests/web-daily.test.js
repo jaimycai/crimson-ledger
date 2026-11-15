@@ -3,6 +3,7 @@
 const fs = require('fs');
 const os = require('os');
 const path = require('path');
+const vm = require('vm');
 const { JSDOM, VirtualConsole } = require('jsdom');
 const DIR = path.join(__dirname, '..');
 let failures = 0;
@@ -81,13 +82,23 @@ const caseOf = B => JSON.stringify({ seed: B.seed, theme: B.theme.id, diff: B.di
   clues: B.puzzle.clues, victim: B.puzzle.victim });
 
 (async () => {
-  // de app: oefenzaak al gedaan, dan "Speel" bij de dagelijkse zaak (App.bindBoard)
-  const app = load(path.join(DIR, 'index.html'), DIR, { lang: 'nl', url: 'http://localhost:8080/', before: 'localStorage.setItem("crimson-board-tutorial-done", "1");' });
+  // de app: oefenzaak al gedaan, eerste start een maand geleden (dus geen startersversie), dan "Speel" bij de dagelijkse zaak
+  const monthAgo = (() => { const d = new Date(); d.setDate(d.getDate() - 30); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`; })();
+  const app = load(path.join(DIR, 'index.html'), DIR, { lang: 'nl', url: 'http://localhost:8080/', before: `localStorage.setItem("crimson-board-tutorial-done", "1"); localStorage.setItem("crimson-first-day", "${monthAgo}");` });
   await sleep(80);
   app.w.document.getElementById('btn-board-daily').click();
   await sleep(50);
   const appCase = caseOf(app.w.Board);
-  check(app.w.Board.isDaily, 'app: de dagelijkse zaak ligt op het bord');
+  check(app.w.Board.isDaily && app.w.Board.difficulty === 'gemiddeld' && !app.w.Board.starter, 'app: de dagelijkse zaak ligt op het bord (Gemiddeld, na de eerste week)');
+  // 1.7: in de eerste week speelt de app dezelfde seed en wereld op Makkelijk; het web blijft Gemiddeld
+  const fresh = load(path.join(DIR, 'index.html'), DIR, { lang: 'nl', url: 'http://localhost:8080/', before: 'localStorage.setItem("crimson-board-tutorial-done", "1");' });
+  await sleep(80);
+  fresh.w.document.getElementById('btn-board-daily').click();
+  await sleep(50);
+  const FB = fresh.w.Board;
+  check(FB.isDaily && FB.starter && FB.difficulty === 'makkelijk' && FB.seed === app.w.Board.seed && FB.theme.id === app.w.Board.theme.id && caseOf(FB) !== appCase,
+    'app in de eerste week: startersversie met dezelfde seed en wereld, een andere (makkelijkere) zaak');
+  fresh.dom.window.close();
 
   // het web, zelfde moment: eerste bezoek via een gedeelde link
   const sent = 'window.__sent = []; window.fetch = (u, o) => { window.__sent.push(JSON.parse(o.body)); return Promise.resolve({ ok: true }); };';
@@ -151,7 +162,54 @@ const caseOf = B => JSON.stringify({ seed: B.seed, theme: B.theme.id, diff: B.di
   check(viaApp.w.__sent.some(e => e.e === 'open' && e.a === 'share'), 'web via een deellink uit de app: open telt als share');
   viaApp.dom.window.close();
 
-  const errs = [...app.errors, ...web.errors, ...again.errors, ...viaApp.errors].filter(e => !/Not implemented: (window\.scrollTo|HTMLMediaElement)/.test(e));
+  // 1.7: uitgedaagd via "Daag een vriend uit" (?ct=challenge-daily): de regel boven de zaak en boven het bord, open telt als
+  // challenge, na het oplossen de App Store-kaart met dat token
+  const ch = load(path.join(OUT, 'index.html'), OUT, { lang: 'nl', url: 'http://localhost:8099/play/?ct=challenge-daily', before: sent });
+  await sleep(80);
+  const $c = id => ch.w.document.getElementById(id), CB = ch.w.Board;
+  const banner = $c('wd-challenge'), onBoard = $c('wd-challenge-board');
+  check(!banner.hidden && banner.textContent.trim() === 'Je bent uitgedaagd: speel de zaak van vandaag' && !!banner.querySelector('svg.ico') &&
+    banner.compareDocumentPosition($c('wd-daily')) & ch.w.Node.DOCUMENT_POSITION_FOLLOWING, 'uitgedaagd: de regel staat boven de zaak van vandaag');
+  check(ch.w.location.search === '' && ch.w.__sent.some(e => e.e === 'open' && e.a === 'challenge'), 'uitgedaagd: adresbalk schoon, open telt als challenge');
+  check(!!onBoard && onBoard.hidden && onBoard.nextElementSibling === ch.w.document.querySelector('#screen-board .board-stage'), 'de regel boven het bord staat klaar, nog verborgen');
+  $c('wd-play').click(); await sleep(300);
+  check(CB.isTutorial && onBoard.hidden, 'eerst de oefenzaak (eerste bezoek): daar geen regel, de coach praat');
+  $c('btn-board-back').click(); await sleep(300);
+  $c('wd-skip').click(); await sleep(300);
+  check(CB.isDaily && !CB.isTutorial && !onBoard.hidden && /Je bent uitgedaagd/.test(onBoard.textContent) && caseOf(CB) === appCase, 'de zaak van vandaag (dezelfde als in de app), met de regel boven het bord');
+  CB.puzzle.solution.forEach((c, i) => { CB.placements[i] = { x: c.x, y: c.y }; });
+  CB.after();
+  $c('btn-board-check').click();
+  ch.w.document.querySelector(`.murder-opt[data-s="${CB.puzzle.murderer}"]`).click();
+  await sleep(1300);
+  const cta4 = ch.w.document.querySelector('#wd-result .wd-cta');
+  check(ch.w.document.querySelector('.screen.active').id === 'screen-results' && cta4 && cta4.getAttribute('href') === 'https://apps.apple.com/app/id6812534368?ct=challenge-daily&mt=8',
+    'opgelost: de App Store-kaart, met ct=challenge-daily: ' + (cta4 && cta4.getAttribute('href')));
+  ch.w.WebDaily.renderHome();
+  check(banner.hidden && $c('wd-daily').hidden, 'thuis na het oplossen: geen uitdaging meer, de kaart met het resultaat');
+  const chEn = load(path.join(OUT, 'index.html'), OUT, { lang: 'ar', url: 'http://localhost:8099/play/?ct=challenge-daily', before: sent });
+  await sleep(80);
+  check(chEn.w.document.getElementById('wd-challenge').textContent.trim() === 'لقد تحدّاك صديق: العب قضية اليوم', 'uitgedaagd (ar): de regel in de taal van de bezoeker');
+  ch.dom.window.close(); chEn.dom.window.close();
+
+  // 1.7: de deeltekst van de uitdaging en de regel op het web: in geen enkele taal een woord voor moord (store/metadata/check-1.6.js)
+  {
+    const src = fs.readFileSync(path.join(DIR, 'store', 'metadata', 'check-1.6.js'), 'utf8');
+    const ctx = { require, __dirname: path.join(DIR, 'store', 'metadata'), console };
+    vm.runInNewContext(src.slice(0, src.indexOf('const want')) + '\nglobalThis.__mw = murderWords;', Object.assign(ctx, { globalThis: ctx }));
+    const KEYS = ['🎯 Daag een vriend uit', 'Ik heb de zaak van vandaag opgelost: {0} in {1}.', 'Lukt het jou ook? Speel hem gratis in je browser:',
+      'Je bent uitgedaagd: speel de zaak van vandaag', 'Zal ik je morgen een seintje geven als de nieuwe zaak klaarligt?', 'Startersversie'];
+    const hits = [];
+    for (const f of fs.readdirSync(path.join(DIR, 'i18n')).filter(f => /^[a-z]{2}\.js$/.test(f))) {
+      const c2 = {}; c2.globalThis = c2;
+      vm.runInNewContext(fs.readFileSync(path.join(DIR, 'i18n', f), 'utf8'), c2);
+      const ui = Object.values(c2.LANG_PACKS)[0].ui;
+      for (const k of [...KEYS, ...KEYS.map(k => ui[k])]) { const w = ctx.__mw(k || ''); if (w.length) hits.push(`${f}: ${w.join(',')}`); }
+    }
+    check(hits.length === 0 && ctx.__mw('moordenaar').length === 1, 'deeltekst en uitdaging: geen moordwoord in 20 talen' + (hits.length ? ' (' + hits.join(' | ') + ')' : ''));
+  }
+
+  const errs = [...app.errors, ...fresh.errors, ...web.errors, ...again.errors, ...viaApp.errors, ...ch.errors, ...chEn.errors].filter(e => !/Not implemented: (window\.scrollTo|HTMLMediaElement)/.test(e));
   check(errs.length === 0, `geen fouten in de console${errs.length ? ': ' + errs.slice(0, 3).join(' | ') : ''}`);
   app.dom.window.close(); again.dom.window.close();
   fs.rmSync(OUT, { recursive: true, force: true });

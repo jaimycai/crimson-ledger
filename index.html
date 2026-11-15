@@ -60,6 +60,7 @@
 
       <div class="home-card daily-card">
         <span class="ribbon">Dagelijkse zaak</span>
+        <span class="ribbon ribbon-starter" id="daily-starter" hidden>Startersversie</span>
         <h3 class="home-card-title" id="daily-title">Zaak van vandaag</h3>
         <p class="home-card-text" id="daily-text"></p>
         <div class="home-card-row">
@@ -292,6 +293,7 @@
         <div class="tutorial-coach-body">
           <span class="tutorial-coach-step" id="board-coach-step">Stap 1 van 4</span>
           <p class="tutorial-coach-text" id="board-coach-text"></p>
+          <p class="tutorial-coach-why" id="board-coach-why" hidden></p>
         </div>
         <button class="tutorial-coach-skip" id="btn-board-tutorial-skip" type="button">Overslaan</button>
       </div>
@@ -418,6 +420,8 @@
 
       <div class="results-footer">
         <button class="btn btn-primary btn-block" id="btn-next-case" hidden>▶ Volgende zaak</button>
+        <!-- 1.7: na de dagzaak een vriend uitdagen voor dezelfde zaak op het web (gratis, zonder app) -->
+        <button class="btn btn-secondary btn-block btn-challenge" id="btn-challenge" hidden>🎯 Daag een vriend uit</button>
         <button class="btn btn-secondary btn-block" id="btn-remind" hidden>🔔 Herinner me morgen aan de dagelijkse zaak</button>
         <button class="btn btn-secondary btn-block" id="btn-share">📤 Deel resultaat</button>
         <button class="btn btn-ghost btn-block" id="btn-map" hidden>🗺️ Naar de kaart</button>
@@ -525,6 +529,21 @@
       </div>
       <p class="mentor-quote" id="briefing-text"></p>
       <button class="btn btn-primary btn-block" id="btn-briefing-go">Aan de slag</button>
+    </div>
+  </div>
+
+  <!-- ═══════ HERINNERING (1.7): Van Dam vraagt het zelf, na de eerste goede zaak; pas bij "Ja, graag" vraagt iOS ═══════ -->
+  <div class="modal-overlay" id="remind-modal">
+    <div class="modal-content remind-sheet" role="dialog" aria-modal="true" aria-labelledby="remind-name" aria-describedby="remind-text">
+      <div class="modal-handle"></div>
+      <div class="mentor-head">
+        <img class="mentor-img" src="assets/vandam.jpg" alt="">
+        <div><h3 class="mentor-name" id="remind-name">Inspecteur Van Dam</h3><span class="mentor-sub">Dagelijkse zaak</span></div>
+      </div>
+      <p class="mentor-quote" id="remind-text">Zal ik je morgen een seintje geven als de nieuwe zaak klaarligt?</p>
+      <p class="remind-note" id="remind-note"></p>
+      <button type="button" class="btn btn-primary btn-block" id="btn-remind-yes">Ja, graag</button>
+      <button type="button" class="btn btn-ghost btn-block" id="btn-remind-no">Niet nu</button>
     </div>
   </div>
 

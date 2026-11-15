@@ -54,9 +54,12 @@ const Board = {
     murderer: 1,
     clues: [{ kind: 'room-pos', s: 0, room: 0, pos: 'hoek' }, { kind: 'next-to', s: 1, furniture: 'plant' }]
   },
-  // 1.6 (EERSTE-MINUUT-EN-2026-11.md §5c): steps 1-2 say what to do first, then the one-line reason; dragging still works
+  // 1.6 (EERSTE-MINUUT-EN-2026-11.md §5c): steps 1-2 say what to do first, then the one-line reason; dragging still works.
+  // 1.7 (meting 1-14 november: 27% stopte tussen stap 1 en 2): stap 1 is één korte zin, de reden staat er klein onder, en
+  // een hand doet het voor (showHand). Die teksten komen uit de ui-vertalingen (say), stap 2-4 nog uit data.boardTutorial.
   TUTORIAL_STEPS: [
-    { suspect: 0, cell: { x: 0, y: 0 }, text: 'Tik op het oplichtende vakje. Lady Clementine was in een hoek van de Woonkamer, en dit is de enige vrije hoek.' },
+    { suspect: 0, cell: { x: 0, y: 0 }, hand: true,
+      say: () => [BD_T('Zet Lady Clementine op het oplichtende vakje.'), BD_T('De enige vrije hoek van de Woonkamer.')] },
     { suspect: 1, cell: { x: 3, y: 3 }, text: 'Tik op het oplichtende vakje. Meneer Hargrove stond naast de plant, en dit is het enige vrije vakje ernaast.' },
     { action: 'check', text: 'Iedereen staat op zijn plek. Tik op Controleer.' },
     { action: 'murder', text: 'De spelregel: alleen de moordenaar was in de kamer van het slachtoffer. Hargrove staat in de Keuken — kies Hargrove.' }
@@ -70,7 +73,7 @@ const Board = {
       puzzle, theme, difficulty: 'tutorial', seed: 0, isDaily: false, isTutorial: true, tutorialStep: 0, campaignCase: null,
       placements: new Array(2).fill(null), marks: new Map(), crosses: new Map(), clueDone: new Set(), history: [], hintRefs: null,
       active: 0, mode: 'place', hintsUsed: 0, attempts: 0, solved: false, elapsed: 0, focusClue: null, newRank: null, okCount: 0,
-      isWeekly: false, weekly: null, missedDay: null, afloop: null, newIntro: null, score: null, medalsWon: []
+      isWeekly: false, weekly: null, missedDay: null, afloop: null, newIntro: null, score: null, medalsWon: [], starter: false
     });
     this.prepareAfloop();
     document.getElementById('board-diff-tag').textContent = BD_T('🎓 Oefenzaak');
@@ -101,16 +104,122 @@ const Board = {
       this.tutSent.add(this.tutorialStep); Meting.send('tut_step', '', this.tutorialStep + 1);
     }
     document.getElementById('board-coach-step').textContent = BD_T`Stap ${this.tutorialStep + 1} van ${this.TUTORIAL_STEPS.length}`;
-    document.getElementById('board-coach-text').textContent = step.text;
+    const [text, why] = step.say ? step.say() : [step.text, ''];
+    document.getElementById('board-coach-text').textContent = text;
+    const whyEl = document.getElementById('board-coach-why');
+    if (whyEl) { whyEl.textContent = why; whyEl.hidden = !why; }
+    document.getElementById('board-coach').classList.toggle('has-why', !!why);
     this.hintRefs = step.cell ? { cells: [step.cell], clues: [this.tutorialStep] } : null;
     if (step.suspect !== undefined) this.active = step.suspect;
     // het dek volgt de uitleg: de verklaring waar de stap over gaat staat vooraan
     if (step.cell && this.tutorialStep < this.puzzle.clues.length) this.deckIdx = this.tutorialStep;
     this.after(true);
+    if (step.hand) this.showHand(); else this.stopHand();
+  },
+
+  // ── De hand in stap 1 (1.7) ───────────────────────────────
+  // Een hand pakt de gekozen verdachte uit de balk en zet hem op het oplichtende vakje: één keer duidelijk, daarna zachter,
+  // tot de speler zelf iets aanraakt. Blijft de stap daarna open, dan komt hij na HAND_IDLE ms terug. Met "Beperk beweging"
+  // of zonder element.animate (oude webview, jsdom) staat de hand stil op het vakje. Alleen beeld: de stap, het vakje en
+  // tikken of slepen werken precies zoals zonder hand. Zelfde gebaar als echt slepen: de verdachte zweeft boven de vinger
+  // (.drag-ghost) en zakt bij het loslaten in het vakje.
+  HAND_FIRST: 700, HAND_MS: 2600, HAND_PAUSE: 2600, HAND_IDLE: 5000, HAND_SOFT: 0.55,
+  handEl: null, handT: null, handTok: 0,
+  handMotion() {
+    try {
+      if (typeof Element === 'undefined' || typeof Element.prototype.animate !== 'function') return false;
+      return !(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+    } catch (e) { return false; }
+  },
+  handOn() {
+    const st = this.isTutorial && !this.solved && this.TUTORIAL_STEPS[this.tutorialStep];
+    return !!(st && st.hand) && (typeof App === 'undefined' || !App.currentScreen || App.currentScreen === 'board');
+  },
+  showHand(delay = this.HAND_FIRST) {
+    this.stopHand();
+    const tok = this.handTok;
+    if (!this.handListen) {
+      // eerste aanraking: de hand gaat weg; zolang de stap open blijft, komt hij na HAND_IDLE terug
+      this.handListen = () => { if (this.handEl || this.handT) this.showHand(this.HAND_IDLE); };
+      document.addEventListener('pointerdown', this.handListen, true);
+    }
+    this.handT = setTimeout(() => this.handCycle(tok, 0, 0), delay);
+  },
+  stopHand() {
+    this.handTok++;
+    clearTimeout(this.handT); this.handT = null;
+    if (this.handEl) { this.handEl.getAnimations && this.handEl.getAnimations({ subtree: true }).forEach(a => a.cancel()); this.handEl.remove(); }
+    this.handEl = null;
+  },
+  handCycle(tok, round, tries) {
+    if (tok !== this.handTok) return;
+    this.handT = null;
+    if (!this.handOn()) { if (this.isTutorial && !this.solved && typeof App !== 'undefined' && App.currentScreen !== 'board' && tries < 12) this.handT = setTimeout(() => this.handCycle(tok, round, tries + 1), 300); else this.stopHand(); return; }
+    if (this.isDragging && this.isDragging()) { this.handT = setTimeout(() => this.handCycle(tok, round, tries), this.HAND_IDLE); return; }
+    const step = this.TUTORIAL_STEPS[this.tutorialStep];
+    const cell = document.querySelector(`#board-grid .bcell[data-x="${step.cell.x}"][data-y="${step.cell.y}"]`);
+    const chip = document.querySelector(`#board-suspects .sus-chip[data-s="${step.suspect}"]`);
+    if (!cell) return;
+    const mid = el => { const r = el.getBoundingClientRect(); return { x: r.left + r.width / 2, y: r.top + r.height / 2, w: r.width }; };
+    const to = mid(cell), fromEl = chip && (chip.querySelector('.sus-ava') || chip), from = fromEl ? mid(fromEl) : to;
+    // het scherm schuift nog in beeld: even wachten
+    if (!to.w && tries < 12) { this.handT = setTimeout(() => this.handCycle(tok, round, tries + 1), 300); return; }
+    if (!this.handEl) {
+      const body = typeof ICONS !== 'undefined' && ICONS['hand-finger'];
+      const el = document.createElement('div');
+      el.className = 'tut-demo';
+      el.setAttribute('aria-hidden', 'true');
+      el.innerHTML = `<div class="drag-ghost tut-ghost">${Avatars.suspect(this.puzzle.suspects[step.suspect], step.suspect)}</div>` +
+        `<div class="tut-hand">${body ? `<svg viewBox="0 0 24 24"><g class="tut-hand-halo">${body}</g><g class="tut-hand-ink">${body}</g></svg>` : '👆'}</div>`;
+      document.body.appendChild(el);
+      this.handEl = el;
+    }
+    const hand = this.handEl.querySelector('.tut-hand'), ghost = this.handEl.querySelector('.tut-ghost');
+    // de vingertop (9,5 / 3,5 van 24) op het punt; de hand zelf eronder
+    const HX = 0.40 * hand.offsetWidth || 19, HY = 0.15 * hand.offsetHeight || 7;
+    const at = (p, dx = 0, dy = 0, s = 1) => `translate(${Math.round(p.x - HX + dx)}px, ${Math.round(p.y - HY + dy)}px) scale(${s})`;
+    if (!this.handMotion()) {   // stil: de hand wijst naar het vakje
+      hand.style.transform = at(to, 4, 6);
+      hand.style.opacity = '0.92';
+      ghost.hidden = true;
+      return;
+    }
+    [hand, ghost].forEach(el => el.getAnimations().forEach(a => a.cancel()));   // de vorige ronde (fill: both) eraf
+    // een flauwe boog boven de rechte lijn: blijft boven het bord, nooit over de uitleg erboven
+    const peak = round === 0 ? 1 : this.HAND_SOFT, arc = { x: (from.x + to.x) / 2, y: (from.y + to.y) / 2 - 24 };
+    const g = (p, dy = 0, s = 1) => `translate(${Math.round(p.x)}px, ${Math.round(p.y + dy)}px) scale(${s})`;
+    const opts = { duration: this.HAND_MS, easing: 'linear', fill: 'both' };
+    const anims = [
+      hand.animate([
+        { offset: 0, transform: at(from, 0, 22), opacity: 0 },
+        { offset: 0.1, transform: at(from), opacity: peak, easing: 'ease-out' },
+        { offset: 0.2, transform: at(from, 0, 2, 0.86), opacity: peak, easing: 'ease-in-out' },
+        { offset: 0.44, transform: at(arc, 0, 2, 0.86), opacity: peak, easing: 'ease-in-out' },
+        { offset: 0.66, transform: at(to, 0, 2, 0.86), opacity: peak, easing: 'ease-out' },
+        { offset: 0.76, transform: at(to), opacity: peak, easing: 'ease-in' },
+        { offset: 0.9, transform: at(to, 8, 14), opacity: peak },
+        { offset: 1, transform: at(to, 10, 18), opacity: 0 }
+      ], opts),
+      ghost.animate([
+        { offset: 0, transform: g(from, 0, 0.5), opacity: 0 },
+        { offset: 0.14, transform: g(from, 0, 0.5), opacity: 0 },
+        { offset: 0.22, transform: g(from, 0, 0.86), opacity: 0.95 * peak, easing: 'ease-in-out' },
+        { offset: 0.44, transform: g(arc, 0, 0.86), opacity: 0.95 * peak, easing: 'ease-in-out' },
+        { offset: 0.66, transform: g(to, 0, 0.86), opacity: 0.95 * peak, easing: 'ease-in' },
+        { offset: 0.76, transform: g(to, 36, 0.45), opacity: 0 },
+        { offset: 1, transform: g(to, 36, 0.45), opacity: 0 }
+      ], opts)
+    ];
+    ghost.hidden = false;
+    anims[0].onfinish = () => {
+      if (tok !== this.handTok) return;
+      this.handT = setTimeout(() => this.handCycle(tok, round + 1, 0), this.HAND_PAUSE + (round ? 800 : 0));
+    };
   },
 
   skipTutorial() {
     if (typeof Meting !== 'undefined') Meting.send('tut_skip', '', this.tutorialStep + 1);
+    this.stopHand();
     this.isTutorial = false;
     this.stopTimer();
     document.getElementById('board-coach').hidden = true;
@@ -128,6 +237,7 @@ const Board = {
 
   // ── Starten ───────────────────────────────────────────────
   start(difficultyId, seed, isDaily = false, themeId, campaignCase = null, opts = {}) {
+    this.stopHand();
     const theme = Themes.get(themeId);
     let puzzle = null;
     const base = seed || (Date.now() % 1000000);
@@ -141,7 +251,7 @@ const Board = {
       marks: new Map(), crosses: new Map(), clueDone: new Set(), history: [], hintRefs: null, lastCell: null,
       active: 0, mode: 'place', hintsUsed: 0, attempts: 0, solved: false, elapsed: 0, isTutorial: false, tutorialStep: 0, campaignCase,
       focusClue: null, newRank: null, okCount: 0, isWeekly: !!opts.weekly, weekly: opts.weekly || null, score: null, medalsWon: [],
-      missedDay: !isDaily && opts.missed ? opts.missed : null, afloop: null,
+      missedDay: !isDaily && opts.missed ? opts.missed : null, afloop: null, starter: !!(isDaily && opts.starter),
       dailyDoneBefore: App.storageGet('crimson-board-daily-done') === new Date().toDateString(),
       freeHint: false, stuckOffered: false, lastActionAt: Date.now(), hintEarned: false
     });
@@ -162,7 +272,8 @@ const Board = {
     document.getElementById('board-diff-tag').textContent = campaignCase
       ? (campaignCase.chapter === Campaign.ARCHIVE ? `📁 ${campaignCase.title}` : `📖 ${campaignCase.idx + 1}. ${campaignCase.title}`)
       : this.isWeekly ? BD_T`🗓️ Week ${this.weekly.week}`
-      : this.missedDay ? `📅 ${this.missedDayLabel()} · ${BD_T('Gemist')}` : (isDaily ? '📅 ' : '') + diff.label;
+      : this.missedDay ? `📅 ${this.missedDayLabel()} · ${BD_T('Gemist')}`
+      : (isDaily ? '📅 ' : '') + (this.starter ? BD_T('Startersversie') : diff.label);   // 1.7: dagzaak in de eerste week
     const L = (typeof I18n !== 'undefined' ? I18n : { joinSentences: (...p) => p.filter(Boolean).join(' '), asSentence: t => (t ? t + '.' : '') });
     const lead = campaignCase ? campaignCase.story : this.isWeekly ? L.asSentence(this.weekly.title) : '';
     document.getElementById('board-casetext').textContent = `${theme.icon} ${L.joinSentences(lead, puzzle.caseText)}`;
@@ -1020,7 +1131,9 @@ const Board = {
       App.updateBoardStats();
       App.navigateTo('results');
       if (this.hintEarned) App.showToast('💡', BD_T('+1 hint voor ★★★'));
-      App.maybeAskReview({ weeklyClean: this.isWeekly && this.hintsUsed === 0, stars: Campaign.starsFor(this.hintsUsed, this.attempts) });
+      // 1.7: na één zaak hooguit één vraag. Eerst de herinnering (Van Dam, na de ceremonie), de beoordeling bij een latere zaak.
+      const st = Campaign.starsFor(this.hintsUsed, this.attempts);
+      if (!(App.maybeAskReminder && App.maybeAskReminder({ stars: st }))) App.maybeAskReview({ weeklyClean: this.isWeekly && this.hintsUsed === 0, stars: st });
     };
     if (typeof Motion !== 'undefined') Motion.boardOut(document.getElementById('board-grid'), go); else go();
   },
@@ -1068,7 +1181,12 @@ const Board = {
     this.questsDone = [];
     // laatste zaak van een deel: de bewijskist, het grote moment
     if (this.chestKey && App.showChest) { const k = this.chestKey; this.chestKey = null; setTimeout(() => App.showChest(k), 900); }
+    // 1.7: daarna, als het zo is afgesproken (App.maybeAskReminder), het vel van Van Dam over de herinnering
+    if (App.remindAskDue && App.showReminderAsk) setTimeout(() => App.showReminderAsk(), this.remindAskDelay());
   },
+  REMIND_ASK_DELAY: 1400,         // ms na de ceremonie: eerst de opdrachten, dan het vel
+  REMIND_ASK_AFTER_MEDAL: 3200,   // per medaille (hooguit twee): pas als die melding weg is (App.pumpMedals, 2,8 s + 0,4 s)
+  remindAskDelay() { const m = Math.min(2, (this.medalsWon || []).length); return m ? m * this.REMIND_ASK_AFTER_MEDAL : this.REMIND_ASK_DELAY; },
 
   // ── Voortgang ─────────────────────────────────────────────
   loadStats() {
@@ -1105,6 +1223,10 @@ const Board = {
     const remindBtn = $('btn-remind');
     const earlySolve = !this.isDaily && (this.loadStats().solved || 0) <= 3;
     if (remindBtn) remindBtn.hidden = !((this.isDaily || earlySolve) && !this.isTutorial && App.notif() && !App.reminderEnabled());
+    // 1.7: na de dagzaak "Daag een vriend uit" direct onder de volgende zaak; "Deel resultaat" schuift dan een tree terug
+    const daily = this.isDaily && !this.isTutorial, chBtn = $('btn-challenge'), shareBtn = $('btn-share');
+    if (chBtn) chBtn.hidden = !daily;
+    if (shareBtn && chBtn) { shareBtn.classList.toggle('btn-ghost', daily); shareBtn.classList.toggle('btn-secondary', !daily); }
 
     // scorepaneel: stempel, sterren, punten, rang; en de opmerking van Van Dam
     const panel = $('results-panel'), mentor = $('results-mentor');
@@ -1174,7 +1296,7 @@ const Board = {
       // vrij spel, dagelijkse zaak of zaak van de week: meteen door kunnen
       nextBtn.hidden = false;
       nextBtn.textContent = BD_T`▶ Nog een zaak · ${this.theme.title}`;
-      const diff = this.isDaily ? 'gemiddeld' : this.isWeekly ? 'meester' : this.difficulty, themeId = this.theme.id;
+      const diff = this.isDaily ? (this.starter ? 'makkelijk' : 'gemiddeld') : this.isWeekly ? 'meester' : this.difficulty, themeId = this.theme.id;
       nextBtn.onclick = () => {
         if (Board.start(diff, 0, false, themeId)) App.navigateTo('board');
         else App.showToast('⚠️', BD_T('Kon geen plattegrond genereren, probeer opnieuw.'));
@@ -1341,6 +1463,18 @@ const Board = {
       this.isDaily && App.streak.count > 1 ? BD_T`🔥 ${App.streak.count} dagen streak!` : '',
       '', this.isDaily ? this.playLink('share-daily') : this.storeLink(this.isWeekly ? 'share-week' : this.missedDay ? 'share-daily' : 'share-case')
     ].filter((x, i, a) => x || (i > 0 && a[i - 1])).join('\n');
+  },
+
+  // 1.7 "Daag een vriend uit" na de dagzaak: sterren en tijd, geen plattegrond, namen of kamers, en de link naar de gratis
+  // webdagzaak van vandaag (ct=challenge-daily: de webpagina zegt dan "Je bent uitgedaagd"). Geen woord voor moord.
+  challengeText() {
+    const stars = Campaign.starsFor(this.hintsUsed, this.attempts);
+    return [
+      `🔍 Crimson Ledger${BD_T` · Dag #${App.getDayNumber()}`}`,
+      BD_T`Ik heb de zaak van vandaag opgelost: ${'★'.repeat(stars) + '☆'.repeat(3 - stars)} in ${this.formatTime(this.elapsed)}.`,
+      BD_T('Lukt het jou ook? Speel hem gratis in je browser:'),
+      this.playLink('challenge-daily')
+    ].join('\n');
   },
 
   // ── Bord passend maken ────────────────────────────────────

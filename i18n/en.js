@@ -265,7 +265,20 @@
     'Je hebt {0} opgelost. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.': 'You solved {0}. Next: {1} more {1|one:part|other:parts} with {2} {2|one:case|other:cases}.',
     '{0} staat al open. Daarna wachten nog {1} {1|one:deel|other:delen} met {2} {2|one:zaak|other:zaken}.': '{0} is already open. Next: {1} more {1|one:part|other:parts} with {2} {2|one:case|other:cases}.',
     '🧊 Twee keer je streak redden als je een dag mist': '🧊 Save your streak twice when you miss a day',
-    'Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.': 'One-off purchases through your app store account, no subscription. Part I of every world, the Manor, the Pirate Ship, the daily case, the case of the week and the archive always stay free.'
+    'Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.': 'One-off purchases through your app store account, no subscription. Part I of every world, the Manor, the Pirate Ship, the daily case, the case of the week and the archive always stay free.',
+    // 1.7: growth (Jaimy, 15 Nov 2026). Van Dam asks about the reminder after the first good case; practice step 1 in one
+    // short line with the reason below it; "Challenge a friend" after the daily case (share text: no word for murder);
+    // the web daily when opened from a challenge; an easier daily case in the first week.
+    'Zal ik je morgen een seintje geven als de nieuwe zaak klaarligt?': 'Shall I give you a nudge tomorrow when the new case is ready?',
+    'Rond {0}. Uitzetten kan altijd in Instellingen.': 'Around {0}. You can turn it off any time in Settings.',
+    'Ja, graag': 'Yes, please',
+    'Zet Lady Clementine op het oplichtende vakje.': 'Put Lady Clementine on the glowing square.',
+    'De enige vrije hoek van de Woonkamer.': 'The only free corner of the Living Room.',
+    '🎯 Daag een vriend uit': '🎯 Challenge a friend',
+    'Ik heb de zaak van vandaag opgelost: {0} in {1}.': 'I solved today\'s case: {0} in {1}.',
+    'Lukt het jou ook? Speel hem gratis in je browser:': 'Can you crack it too? Play it free in your browser:',
+    'Je bent uitgedaagd: speel de zaak van vandaag': 'You\'ve been challenged: play today\'s case',
+    'Startersversie': 'Starter version'
   },
 
   data: {

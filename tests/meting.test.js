@@ -28,9 +28,10 @@ check(sent.length === 1, 'uitgezet in Instellingen: er gaat niets weg');
   const src = require('fs').readFileSync(require('path').join(__dirname, '..', 'meting', 'src', 'index.js'), 'utf8');
   const events = (src.match(/const EVENTS = new Set\((\[[^\]]*\])\)/) || [, '[]'])[1].match(/'([a-z_]+)'/g).map(x => x.slice(1, -1));
   check(['buy_tap', 'buy_cancel', 'share_done', 'store_open', 'purchase', 'share'].every(e => events.includes(e)) && events.every(e => e.length <= 20), 'tellerdienst kent buy_tap, buy_cancel en share_done (naam hooguit 20 tekens)');
-  const app = require('fs').readFileSync(require('path').join(__dirname, '..', 'app.js'), 'utf8');
+  // 1.7: board.js too (tut_step, quit, …), and reminder_ask (Van Dam asks about the reminder)
+  const app = ['app.js', 'board.js'].map(f => require('fs').readFileSync(require('path').join(__dirname, '..', f), 'utf8')).join('\n');
   const used = [...new Set([...app.matchAll(/Meting\.send\('([a-z_]+)'/g), ...app.matchAll(/count\('([a-z_]+)'/g)].map(m => m[1]))];
-  check(used.every(e => events.includes(e)), 'elke teller die app.js stuurt, kent de tellerdienst: ' + used.filter(e => !events.includes(e)).join(' '));
+  check(used.includes('reminder_ask') && used.includes('tut_step') && used.every(e => events.includes(e)), 'elke teller die app.js en board.js sturen, kent de tellerdienst: ' + used.filter(e => !events.includes(e)).join(' '));
 }
 
 (async () => {

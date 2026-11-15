@@ -33,6 +33,20 @@ const days = Number(process.argv[feedback ? 3 : 2]) || 30;
   // 1.5: where new players stop in the practice case, and which cases they leave unsolved
   const steps = [...new Set(rows.filter(r => r.e === 'tut_step').map(r => r.n))].sort((x, y) => x - y);
   if (steps.length) console.log(`Oefenzaak per stap:             ${steps.map(n => `${n}: ${sum(r => r.e === 'tut_step' && r.n === n)}`).join('  ')}  · overgeslagen ${sum(r => r.e === 'tut_skip')}`);
+  // 1.7: the same steps per app version (iOS and Android only), so a change to step 1 (the hand) can be compared with
+  // the version before it: the share of players who reached step 1 that also reached step 2, 3 and 4
+  const app = r => r.p === 'ios' || r.p === 'android';
+  const versions = [...new Set(rows.filter(r => r.e === 'tut_step' && app(r)).map(r => r.v))].sort((a, b) => a.localeCompare(b, 'en', { numeric: true }));
+  for (const v of versions) {
+    const at = n => sum(r => r.e === 'tut_step' && app(r) && r.v === v && r.n === n), s1 = at(1);
+    console.log(`  versie ${v.padEnd(7)} stap 1-4: ${[1, 2, 3, 4].map(at).join(' / ')}` + (s1 ? `  (${[2, 3, 4].map(n => `${n}: ${Math.round(100 * at(n) / s1)}%`).join(', ')} van stap 1)` : '') +
+      `  · overgeslagen ${sum(r => r.e === 'tut_skip' && app(r) && r.v === v)}`);
+  }
+  // 1.7: Van Dam asks about the reminder (a = shown/yes/no) and "Daag een vriend uit" after the daily case
+  const ask = a => sum(r => r.e === 'reminder_ask' && r.a === a);
+  if (ask('shown')) console.log(`Herinnering gevraagd:           ${ask('shown')} (ja ${ask('yes')}, nu niet ${ask('no')})`);
+  const ch = sum(r => r.e === 'share' && r.a === 'challenge'), chDone = sum(r => r.e === 'share_done' && /^challenge/.test(r.a));
+  if (ch) console.log(`Vriend uitgedaagd:              ${ch} keer getikt, ${chDone} keer gedeeld · webdagzaak geopend via een uitdaging: ${sum(r => r.e === 'open' && r.p === 'webdaily' && r.a === 'challenge')}`);
   const quits = rows.filter(r => r.e === 'quit').reduce((m, r) => (m[`${r.a}${r.n ? ' ' + r.n : ''}`] = (m[`${r.a}${r.n ? ' ' + r.n : ''}`] || 0) + r.c, m), {});
   if (Object.keys(quits).length) console.log(`Verlaten zonder oplossing:      ${Object.entries(quits).sort((x, y) => y[1] - x[1]).slice(0, 8).map(([k, v]) => `${k}: ${v}`).join(', ')}`);
   console.log(`Hints verdiend (★★★): ${sum(r => r.e === 'hint_earned')}  Gratis hint bij vastlopen: ${sum(r => r.e === 'stuck_hint')}  Webdagzaak → App Store: ${sum(r => r.e === 'cta')}`);

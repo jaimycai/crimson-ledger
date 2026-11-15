@@ -1,7 +1,8 @@
 // Meldingen (1.6): met een nep-LocalNotifications nagaan wat de app plant en annuleert.
 // Van Dam als afzender, teksten die wisselen en de zaak van die dag noemen, de streakredder om 21:30 met knoppen
 // (alleen bij een streak van 2+ en een open dagzaak, weg zodra de dagzaak is opgelost), "Over een uur" één keer,
-// en na 7 dagen zonder openen precies één afscheid en daarna niets.
+// en na 7 dagen zonder openen precies één afscheid en daarna niets. 1.7: Van Dam vraagt na de eerste goede zaak zelf of hij
+// een seintje mag geven (pas bij "Ja, graag" de vraag van iOS), nooit na dezelfde zaak als de vraag om een beoordeling.
 //   node tests/notifications.test.js
 const fs = require('fs'), path = require('path');
 function loadJsdom() { try { return require('jsdom'); } catch (e) {} return require('/Users/jaimycai/Documents/Claude/CrimsonLedger/app/node_modules/jsdom'); }
@@ -13,12 +14,14 @@ const check = (c, m) => { if (c) console.log('ok  ', m); else { failures++; cons
 
 // nep-Capacitor: LocalNotifications houdt bij wat er gepland, geannuleerd en opgeruimd wordt
 const MOCK = `<script>
-  window.__ln = { calls: [], pending: new Map(), types: null, listeners: {}, perm: 'granted', failRich: false };
+  window.__ln = { calls: [], pending: new Map(), types: null, listeners: {}, perm: 'granted', failRich: false, reqs: 0, reviews: 0 };
   const L = window.__ln;
+  window.__sent = []; window.fetch = (u, o) => { window.__sent.push(JSON.parse(o.body)); return Promise.resolve({ ok: true }); };
   window.Capacitor = { isNativePlatform: () => true, Plugins: {
     SplashScreen: { hide: async () => {} },
+    InAppReview: { requestReview: async () => { L.reviews++; } },
     LocalNotifications: {
-      requestPermissions: async () => ({ display: L.perm }),
+      requestPermissions: async () => { L.reqs++; return { display: L.perm }; },
       checkPermissions: async () => ({ display: L.perm }),
       schedule: async ({ notifications }) => {
         L.calls.push(['schedule', notifications.map(n => n.id)]);
@@ -228,6 +231,73 @@ function boot(lang) {
   check(new Set(all).size === all.length, 'alle teksten verschillen');
   check(!all.some(t => /moord|killer|je mist|mis je|verlies|Crimson Ledger/i.test(t)), 'geen schuldgevoel, verlies of moordwoorden');
   check(errors.length === 0, 'geen JS-fouten: ' + errors.join(' | '));
+
+  // ── 1.7: Van Dam vraagt naar de herinnering, na de eerste goede zaak; nooit samen met de vraag om een beoordeling ──
+  {
+    const nb = boot('nl'); await sleep(150);
+    const W = nb.window, A = W.App, B = W.Board, doc = W.document, LL = W.__ln;
+    LL.perm = 'prompt'; A.notifPerm = 'prompt';
+    const asks = () => W.__sent.filter(e => e.e === 'reminder_ask').map(e => `${e.a}:${e.n}`).join(' ');
+    const reviews = () => W.__sent.filter(e => e.e === 'review_asked').map(e => e.a).join(' ');
+    const sheet = () => doc.getElementById('remind-modal').classList.contains('active');
+    let seed = 7000;
+    // een vrije zaak oplossen langs de echte weg: finish → resultaat → ceremonie (overgeslagen) → het vel na REMIND_ASK_DELAY
+    const solve = async (hints, attempts) => {
+      B.start('makkelijk', seed += 13, false, 'landhuis'); A.navigateTo('board'); await sleep(300);
+      doc.querySelectorAll('.modal-overlay.active').forEach(m => m.classList.remove('active'));   // "Nieuw!"-uitleg dicht
+      B.hintsUsed = hints; B.attempts = attempts;
+      B.finish(); await sleep(320);
+      B.skipCeremony(); await sleep(B.remindAskDelay() + 120);
+    };
+    check(A.notif() && !A.reminderEnabled() && A.remindAskState().n === 0 && !sheet(), 'begin: meldingen beschikbaar, herinnering uit, nog niets gevraagd');
+    await solve(1, 1);
+    check(B.loadStats().solved === 1 && !sheet() && asks() === '' && reviews() === '', 'eerste zaak met één ster: geen vraag');
+    await solve(0, 0);
+    check(sheet() && asks() === 'shown:1' && LL.reqs === 0, 'eerste goede zaak (★★★): het vel van Van Dam, iOS vraagt nog niets');
+    check(reviews() === '' && LL.reviews === 0, 'na dezelfde zaak geen vraag om een beoordeling');
+    check(/Zal ik je morgen een seintje geven als de nieuwe zaak klaarligt\?/.test(doc.getElementById('remind-text').textContent) &&
+      /^Rond \d{1,2}:\d{2}\. Uitzetten kan altijd in Instellingen\.$/.test(doc.getElementById('remind-note').textContent) &&
+      doc.getElementById('btn-remind-yes').textContent === 'Ja, graag' && doc.getElementById('btn-remind-no').textContent === 'Niet nu',
+      'het vel: vraag, tijdstip, "Ja, graag" en "Niet nu": ' + doc.getElementById('remind-note').textContent);
+    doc.getElementById('btn-remind-no').click(); await sleep(30);
+    check(!sheet() && asks() === 'shown:1 no:1' && LL.reqs === 0 && !A.reminderEnabled() && A.remindAskState().a === 'no', '"Niet nu": dicht, geen vraag van iOS, herinnering blijft uit');
+    await solve(0, 0);
+    check(!sheet() && asks() === 'shown:1 no:1' && reviews() === 'case2', 'volgende goede zaak: niet opnieuw gevraagd, nu wel de beoordeling');
+    // nog één keer na drie dagen en vijf zaken meer
+    const st = A.remindAskState(), solvedAt = st.s;
+    const setSolved = n => A.storageSet('crimson-board-stats', JSON.stringify({ ...B.loadStats(), solved: n }));
+    setSolved(solvedAt + 6);
+    check(!A.maybeAskReminder({ stars: 3 }, st.t + 2.5 * 864e5), 'na 2,5 dagen (ook met zes zaken meer): nog niet');
+    setSolved(solvedAt + 4);
+    check(!A.maybeAskReminder({ stars: 3 }, st.t + 4 * 864e5), 'na vier dagen maar vier zaken meer: nog niet');
+    check(!A.maybeAskReminder({ stars: 1 }, st.t + 4 * 864e5), 'een zaak met één ster: niet');
+    A.storageSet(A.REMIND_ASK_KEY, JSON.stringify({ ...st, t: st.t - 4 * 864e5 }));
+    setSolved(solvedAt + 4);
+    LL.reviews = 0; const reviewsBefore = reviews();
+    await solve(0, 0);
+    check(sheet() && asks() === 'shown:1 no:1 shown:2' && reviews() === reviewsBefore, 'drie dagen en vijf zaken later: de tweede en laatste vraag, weer zonder beoordeling ernaast');
+    LL.perm = 'granted';   // de speler zegt ja in het venster van iOS
+    doc.getElementById('btn-remind-yes').click(); await sleep(60); await (A.notifyQueue || Promise.resolve());
+    check(!sheet() && LL.reqs === 1 && A.reminderEnabled() && asks() === 'shown:1 no:1 shown:2 yes:2' && W.__sent.some(e => e.e === 'reminder_on'),
+      '"Ja, graag": pas dan de vraag van iOS, herinnering aan, reminder_on geteld');
+    check(doc.getElementById('btn-remind').hidden && /Ingesteld: elke dag om/.test(doc.getElementById('toast-text').textContent) && LL.pending.size > 0, 'bevestiging en de meldingen staan gepland');
+    A.storageSet('crimson-reminder', '0');
+    check(!A.maybeAskReminder({ stars: 3 }, Date.now() + 30 * 864e5), 'na "ja": nooit meer gevraagd (ook als de herinnering later uit staat)');
+    A.storageSet(A.REMIND_ASK_KEY, JSON.stringify({ n: 2, t: 0, s: 0, a: 'no' }));
+    check(!A.maybeAskReminder({ stars: 3 }, Date.now()), 'twee keer "Niet nu": nooit meer');
+    A.storageSet(A.REMIND_ASK_KEY, JSON.stringify({ n: 0 })); A.notifPerm = 'denied';
+    check(!A.maybeAskReminder({ stars: 3 }, Date.now()), 'eerder nee gezegd tegen iOS: Van Dam vraagt het niet');
+    A.notifPerm = 'prompt';
+    check(A.maybeAskReminder({ stars: 2 }, Date.now()) && !A.maybeAskReminder({ stars: 2, tutorial: true }, Date.now()), 'twee sterren telt als goed; de oefenzaak nooit');
+    // naast het vel tikken telt als "Niet nu"
+    A.currentScreen = 'results'; A.maybeAskReminder({ stars: 3 }, Date.now()); A.showReminderAsk();
+    const n0 = asks().split(' ').length;
+    doc.getElementById('remind-modal').dispatchEvent(new W.Event('click', { bubbles: true }));
+    await sleep(20);
+    check(!sheet() && asks().split(' ').length === n0 + 1 && / no:1$/.test(asks()), 'naast het vel tikken: dicht, telt als "Niet nu"');
+    check(nb.errors.length === 0, '1.7 herinnering: geen JS-fouten ' + nb.errors.join(' | '));
+    nb.window.close();
+  }
 
   // ── andere talen: Engels en Russisch (meervoud) ──
   const en = boot('en'); await sleep(150);
