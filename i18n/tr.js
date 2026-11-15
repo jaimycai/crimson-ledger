@@ -483,7 +483,9 @@
     "🧊 Twee keer je streak redden als je een dag mist": "🧊 Bir gün kaçırırsan serini iki kez kurtar",
     "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "Uygulama mağazası hesabınla tek seferlik satın alımlar, abonelik yok. Her dünyanın I. bölümü, Malikâne, Korsan Gemisi, günlük vaka, haftanın vakası ve arşiv her zaman ücretsiz kalır.",
     "Een logische detectivepuzzel": "Bir dedektif mantık bulmacası",
-    "Elke puzzel ontmaskert een dader": "Her bulmaca bir suçluyu ortaya çıkarır"
+    "Elke puzzel ontmaskert een dader": "Her bulmaca bir suçluyu ortaya çıkarır",
+    "🏆 Game Center": "🏆 Game Center",
+    "Openen": "Aç"
   },
 
   data: {

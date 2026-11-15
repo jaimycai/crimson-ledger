@@ -483,7 +483,9 @@
     "🧊 Twee keer je streak redden als je een dag mist": "🧊 Дважды спасти серию, если пропустите день",
     "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "Разовые покупки через ваш аккаунт в магазине приложений, без подписки. Часть I каждого мира, «Поместье», «Пиратский корабль», дело дня, дело недели и архив всегда бесплатны.",
     "Een logische detectivepuzzel": "Детективная логическая головоломка",
-    "Elke puzzel ontmaskert een dader": "Каждая головоломка разоблачает виновного"
+    "Elke puzzel ontmaskert een dader": "Каждая головоломка разоблачает виновного",
+    "🏆 Game Center": "🏆 Game Center",
+    "Openen": "Открыть"
   },
 
   data: {

@@ -483,7 +483,9 @@
     "🧊 Twee keer je streak redden als je een dag mist": "🧊 Giữ chuỗi ngày hai lần khi bạn lỡ một ngày",
     "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "Mua một lần qua tài khoản cửa hàng ứng dụng của bạn, không phải gói đăng ký. Phần I của mọi thế giới, Dinh thự, Tàu cướp biển, vụ án hằng ngày, vụ án hằng tuần và kho hồ sơ luôn miễn phí.",
     "Een logische detectivepuzzel": "Trò đố logic trinh thám",
-    "Elke puzzel ontmaskert een dader": "Mỗi câu đố vạch mặt một thủ phạm"
+    "Elke puzzel ontmaskert een dader": "Mỗi câu đố vạch mặt một thủ phạm",
+    "🏆 Game Center": "🏆 Game Center",
+    "Openen": "Mở"
   },
 
   data: {

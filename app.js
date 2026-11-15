@@ -58,6 +58,7 @@ const App = {
     this.renderHome();
     this.scheduleReminder();
     this.bindNotifications();
+    if (typeof GameCenter !== 'undefined') GameCenter.init();   // Game Center (gamecenter.js, alleen de iOS-app)
     if (typeof Store !== 'undefined') Store.grantStarterHints();
     if (typeof Meting !== 'undefined') Meting.open();
   },

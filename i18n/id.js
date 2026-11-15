@@ -483,7 +483,9 @@
     "🧊 Twee keer je streak redden als je een dag mist": "🧊 Selamatkan runtunanmu dua kali saat kamu melewatkan sehari",
     "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "Pembelian satu kali lewat akun toko aplikasimu, bukan langganan. Bagian I dari setiap dunia, Kediaman Blackwood, Kapal Bajak Laut, kasus harian, kasus mingguan, dan arsip selalu gratis.",
     "Een logische detectivepuzzel": "Teka-teki logika detektif",
-    "Elke puzzel ontmaskert een dader": "Setiap teka-teki membongkar pelakunya"
+    "Elke puzzel ontmaskert een dader": "Setiap teka-teki membongkar pelakunya",
+    "🏆 Game Center": "🏆 Game Center",
+    "Openen": "Buka"
   },
 
   data: {

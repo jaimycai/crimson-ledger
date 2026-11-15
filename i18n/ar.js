@@ -483,7 +483,9 @@
     "🧊 Twee keer je streak redden als je een dag mist": "🧊 أنقذ سلسلتك مرتين إذا فاتك يوم",
     "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "مشتريات لمرة واحدة عبر حسابك في متجر التطبيقات، بلا اشتراك. الجزء الأول من كل عالم والقصر الريفي وسفينة القراصنة والقضية اليومية وقضية الأسبوع والأرشيف مجانية دائمًا.",
     "Een logische detectivepuzzel": "لغز منطقي بوليسي",
-    "Elke puzzel ontmaskert een dader": "كل لغز يكشف الجاني"
+    "Elke puzzel ontmaskert een dader": "كل لغز يكشف الجاني",
+    "🏆 Game Center": "🏆 Game Center",
+    "Openen": "فتح"
   },
 
   data: {

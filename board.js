@@ -1011,6 +1011,7 @@ const Board = {
     bump('campaign', !!this.campaignCase && this.campaignCase.chapter !== Campaign.ARCHIVE); bump('firsttry', this.attempts === 0); bump('threestar', stars === 3);
     Progress.logPlayHour();
     this.medalsWon = Progress.checkMedals(this.medalCtx());
+    if (typeof GameCenter !== 'undefined') GameCenter.solved(this);   // prestaties en ranglijsten (alleen de iOS-app)
     this.medalsShown = false;
     App.mode = 'board';
     this.writeLedger();

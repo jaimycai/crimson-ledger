@@ -483,7 +483,9 @@
     "🧊 Twee keer je streak redden als je een dag mist": "🧊 ఒక రోజు ఆడకపోతే రెండుసార్లు మీ స్ట్రీక్‌ను కాపాడండి",
     "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "యాప్ స్టోర్‌లోని మీ ఖాతా ద్వారా ఒక్కసారి కొనుగోళ్లు, చందా లేదు. ప్రతి ప్రపంచంలోని భాగం 1, భవంతి, సముద్రపు దొంగల ఓడ, రోజువారీ కేసు, వారపు కేసు, ఆర్కైవ్ ఎప్పటికీ ఉచితమే.",
     "Een logische detectivepuzzel": "ఒక డిటెక్టివ్ లాజిక్ పజిల్",
-    "Elke puzzel ontmaskert een dader": "ప్రతి పజిల్ ఒక దోషిని బయటపెడుతుంది"
+    "Elke puzzel ontmaskert een dader": "ప్రతి పజిల్ ఒక దోషిని బయటపెడుతుంది",
+    "🏆 Game Center": "🏆 Game Center",
+    "Openen": "తెరవండి"
   },
 
   data: {

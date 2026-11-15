@@ -483,7 +483,9 @@
     "🧊 Twee keer je streak redden als je een dag mist": "🧊 하루를 놓쳐도 연속 기록을 두 번 지켜요",
     "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "앱 스토어 계정으로 하는 일회성 구매이며, 구독이 아니에요. 모든 월드의 제1장, 저택, 해적선, 일일 사건, 주간 사건, 기록 보관소는 언제나 무료예요.",
     "Een logische detectivepuzzel": "탐정 논리 퍼즐",
-    "Elke puzzel ontmaskert een dader": "퍼즐마다 범인의 정체가 드러난다"
+    "Elke puzzel ontmaskert een dader": "퍼즐마다 범인의 정체가 드러난다",
+    "🏆 Game Center": "🏆 Game Center",
+    "Openen": "열기"
   },
 
   data: {

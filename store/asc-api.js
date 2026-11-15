@@ -19,4 +19,4 @@ async function api(method, p, body) {
   return j || {};
 }
 const wait = ms => new Promise(r => setTimeout(r, ms));
-module.exports = { api, wait, APP };
+module.exports = { api, wait, APP, token };

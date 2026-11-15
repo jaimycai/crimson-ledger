@@ -483,7 +483,9 @@
     "🧊 Twee keer je streak redden als je een dag mist": "🧊 Salve sua sequência duas vezes quando perder um dia",
     "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "Compras únicas pela sua conta da loja de apps, sem assinatura. A parte I de cada mundo, a Mansão, o Navio Pirata, o caso do dia, o caso da semana e o arquivo são sempre gratuitos.",
     "Een logische detectivepuzzel": "Um quebra-cabeça lógico de detetive",
-    "Elke puzzel ontmaskert een dader": "Cada quebra-cabeça desmascara um culpado"
+    "Elke puzzel ontmaskert een dader": "Cada quebra-cabeça desmascara um culpado",
+    "🏆 Game Center": "🏆 Game Center",
+    "Openen": "Abrir"
   },
 
   data: {

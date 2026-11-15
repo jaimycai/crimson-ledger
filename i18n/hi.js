@@ -483,7 +483,9 @@
     "🧊 Twee keer je streak redden als je een dag mist": "🧊 कोई दिन छूटे तो दो बार अपनी स्ट्रीक बचाएँ",
     "Eenmalige aankopen via je account in de appwinkel, geen abonnement. Deel I van elke wereld, Landhuis, Piratenschip, de dagelijkse zaak, de zaak van de week en het archief blijven altijd gratis.": "ऐप स्टोर में आपके खाते से एक बार की ख़रीदारी, कोई सब्सक्रिप्शन नहीं। हर दुनिया का भाग 1, हवेली, जहाज़, रोज़ का केस, हफ़्ते का केस और आर्काइव हमेशा मुफ़्त रहेंगे।",
     "Een logische detectivepuzzel": "एक जासूसी तर्क पहेली",
-    "Elke puzzel ontmaskert een dader": "हर पहेली एक अपराधी को बेनकाब करती है"
+    "Elke puzzel ontmaskert een dader": "हर पहेली एक अपराधी को बेनकाब करती है",
+    "🏆 Game Center": "🏆 Game Center",
+    "Openen": "खोलें"
   },
 
   data: {
