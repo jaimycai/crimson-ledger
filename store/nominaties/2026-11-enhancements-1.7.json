@@ -1,0 +1,12 @@
+{
+  "name": "Crimson Ledger 1.7: Game Center, widgets, friend challenges",
+  "type": "APP_ENHANCEMENTS",
+  "description": "Crimson Ledger is a cozy detective logic puzzle by an independent developer in the Netherlands. Each case is a floor plan with suspects, rooms and furniture. Players place every suspect from their statements and name the one culprit. Our own engine proves that every case has exactly one solution, so it is pure logic, never guessing. Version 1.7 makes the daily case part of the player's day. Game Center brings two leaderboards (the fastest time on today's daily case, and total points) and 36 achievements, including one for each of the 24 worlds. Widgets on the Home Screen and Lock Screen show today's case and the streak. 'Challenge a friend' sends today's case with your time. New players get a gentler daily case in their first week, and a moving hand shows the first move of the practice case. 24 worlds, from an ocean liner under Halley's comet to a research station in Antarctica. Fully localized in 20 languages in the game and 23 on the store. No ads, plays offline.",
+  "publishStartDate": "2026-12-07T00:00:00Z",
+  "deviceFamilies": ["IPHONE", "IPAD"],
+  "locales": ["en-US", "en-GB", "nl-NL", "ar-SA", "bn-BD", "de-DE", "es-ES", "es-MX", "fr-FR", "hi", "id", "it", "ja", "ko", "mr-IN", "pt-BR", "pt-PT", "ru", "te-IN", "tr", "ur-PK", "vi", "zh-Hans"],
+  "hasInAppEvents": true,
+  "launchInSelectMarketsFirst": false,
+  "preOrderEnabled": false,
+  "notes": "Version 1.7.0 is live since 17 November 2026; it is the first version with Game Center, so the app now appears in Apple's Games app with leaderboards and achievements. The In-App Event 'Case of the Week' runs from 25 November to 24 December. Single developer in the Netherlands, no paid user acquisition. Our largest audiences by store impressions are Japan, the United States, Saudi Arabia and Russia."
+}
