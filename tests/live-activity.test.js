@@ -16,6 +16,11 @@ const versions = [...pbx.matchAll(/MARKETING_VERSION = ([^;]+);/g)].map(m => m[1
 const builds = [...pbx.matchAll(/CURRENT_PROJECT_VERSION = ([^;]+);/g)].map(m => m[1]);
 check(versions.length === 4 && new Set(versions).size === 1, `app and extension share one version (${versions.join(', ')}); bump all four together`);
 check(builds.length === 4 && new Set(builds).size === 1, `app and extension share one build number (${builds.join(', ')}); bump all four together`);
+// 1.7: Settings and the measurement (meting.js reads #app-version) showed 1.6.2 in the 1.7.0 build; the label, package.json
+// and the Xcode version must match (build-www.js also writes package.json's version into www/index.html)
+const label = (fs.readFileSync(path.join(DIR, 'index.html'), 'utf8').match(/<span id="app-version">([^<]*)<\/span>/) || [])[1];
+const pkgVersion = JSON.parse(fs.readFileSync(path.join(DIR, 'package.json'), 'utf8')).version;
+check(label === versions[0] && pkgVersion === versions[0], `version label in Settings (${label}), package.json (${pkgVersion}) and Xcode (${versions[0]}) match`);
 check(/PRODUCT_BUNDLE_IDENTIFIER = nl\.crimsonledger\.app\.LiveActivity;/.test(pbx) && /com\.apple\.product-type\.app-extension/.test(pbx)
   && /CrimsonLiveActivity\.appex in Embed Foundation Extensions/.test(pbx), 'widget extension nl.crimsonledger.app.LiveActivity is embedded in the app');
 check(/LiveActivityPlugin\.swift in Sources/.test(pbx) && (pbx.match(/CaseActivityAttributes\.swift in Sources/g) || []).length === 4, 'plugin in the app, the shared attributes in both targets');

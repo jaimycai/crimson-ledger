@@ -4,6 +4,9 @@ const FILES = ['index.html', 'style.css', 'app.js', 'motion.js', 'rive-art.js', 
   'campaign.js', 'progress.js', 'mentor.js', 'mapart.js', 'minigame.js', 'store.js', 'meting.js', 'i18n.js', 'grammar.js', 'icons.js', 'sound.js', 'avatars.js', 'manifest.json', 'sw.js', 'icon-192.png', 'icon-512.png', 'privacy.html', 'support.html'];
 fs.rmSync('www', { recursive: true, force: true }); fs.mkdirSync('www');
 for (const f of FILES) fs.copyFileSync(f, path.join('www', f));
+// 1.7: the version in Settings, which meting.js also reports, comes from package.json (it stood on 1.6.2 in 1.7.0)
+const VERSION = require('./package.json').version, IX = path.join('www', 'index.html');
+fs.writeFileSync(IX, fs.readFileSync(IX, 'utf8').replace(/(<span id="app-version">)[^<]*(<\/span>)/, `$1${VERSION}$2`));
 fs.cpSync('assets', 'www/assets', { recursive: true });
 // 1.6: de Rive-runtime (canvas-lite, MIT) voor de levende vlam en Van Dam; assets/rive/ gaat al mee met assets/
 fs.cpSync('vendor', 'www/vendor', { recursive: true });
