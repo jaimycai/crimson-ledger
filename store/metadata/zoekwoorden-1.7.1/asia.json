@@ -1,0 +1,27 @@
+{
+  "ja": {
+    "keywords": "探偵,容疑者,数独,パズル,ロジック,論理的思考,事件簿,解決,手がかり,捜査,刑事,証言,脳トレ,ミステリー,サスペンス,頭の体操,オフライン,誰,当て,毎日,難しい,犯罪,暇つぶし,名探偵",
+    "subtitle_suggestion": "探偵の推理パズル・容疑者から犯人探し・広告なし",
+    "why": "Japanese search splits compounds and joins words across name, subtitle and keywords, so this field (written for the current subtitle) drops compounds like 推理パズル and adds real, weakly contested words (論理的思考, 事件簿, 誰, 当て, 毎日, 難しい) while keeping 探偵 and 容疑者 (#12 today); the suggested subtitle moves 探偵, パズル and 容疑者 into the heavier field, and if it is taken, use keyword variant B from docs/onderzoek/zoekwoorden-1.7.1/asia.md instead."
+  },
+  "ko": {
+    "keywords": "추리게임,논리퍼즐,추리퍼즐,추리퀴즈,두뇌퍼즐,수수께끼,범죄,사건,미스터리,명탐정,용의자,단서,증거,수사,형사,오프라인,매일,알리바이,크라임,논리,퍼즐",
+    "subtitle_suggestion": null,
+    "why": "Korean search splits compounds (탐정퍼즐 found us with 탐정 and 퍼즐 in separate fields), so the field drops 탐정게임 and 논리게임 that other words already cover, keeps the most-typed compounds as cheap insurance, keeps 명탐정 and 범죄 (we rank #3 on 명탐정 스도쿠 and #7 on 범죄 스도쿠) and adds 추리퍼즐 and 크라임."
+  },
+  "zh-Hans": {
+    "keywords": "探案,刑侦,犯罪,悬疑,烧脑,线索,谜题,神探,益智游戏,离线,逻辑推理,逻辑思维,九宫格,脑力,嫌疑人,证词,智力,休闲,悬案,每日,不在场证明,侦探游戏,推理游戏,谜案",
+    "subtitle_suggestion": null,
+    "why": "zh-Hans only counts in Singapore and the US (not in Taiwan or Hong Kong) and we reach no top 12 there even on our own name, so this is a small tidy-up: add the compounds 逻辑推理, 逻辑思维 and 益智游戏 that Chinese search does not split, and drop 密室 (escape-room genre)."
+  },
+  "vi": {
+    "keywords": "trinh,logic,trò,chơi,câu,đố,giải,suy,luận,bí,ẩn,điều,tra,offline,vụ,phạm,tội,tư,duy,tìm,manh,mối",
+    "subtitle_suggestion": null,
+    "why": "Vietnamese is matched word by word, so the field swaps the giant-dominated trí tuệ and the unsearched nghi for tư duy (tư duy logic is the #1 suggestion, 8 of its top 10 under 100 ratings) and tìm manh mối, and keeps the words that give us #1 to #4 on sudoku thám tử, sudoku trinh thám and sudoku bí ẩn."
+  },
+  "id": {
+    "keywords": "teka,teki,logika,offline,tanpa,iklan,kasus,kriminal,investigasi,penyelidikan,pelaku,permainan",
+    "subtitle_suggestion": null,
+    "why": "Adds investigasi, penyelidikan and permainan (game investigasi and penyelidikan are #1 suggestions and their top 10s hold apps with 0 to 2 ratings) and drops tebak, siapa, tersangka, petunjuk and puzzle, which are off-topic in the hints, not searched, or already covered by en-GB."
+  }
+}

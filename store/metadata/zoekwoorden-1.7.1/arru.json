@@ -1,0 +1,42 @@
+{
+  "ar-SA": {
+    "keywords": "جنائي,تحقيق,لعبة,العاب,غموض,جريمة,لغز,قضية,بدون,نت,انترنت,تفكير,منطقي,تحري",
+    "subtitle_suggestion": "ألغاز تحقيق جنائي بلا إعلانات",
+    "why": "Keeps every word behind our four top-10 terms in Saudi Arabia (لعبة محقق #4, العاب غموض #5, لعبه محقق جنائي #6, تحقيق جنائي #10), drops forms Apple already folds into the name and subtitle (محقق = المحقق, الغاز = ألغاز, الجريمة = جريمة) plus مشتبه (no hint), and adds قضية (hint 2/8, 9 of the top 10 under 100 ratings), منطقي and تحري; if you take the subtitle suggestion, replace تحقيق,جنائي in this field with ذكاء."
+  },
+  "ru": {
+    "keywords": "игра,детективные,расследование,сыщик,дедукция,следователь,улики,тайна,головоломки,интернета,загадки",
+    "subtitle_suggestion": null,
+    "why": "Adds игра, which our text lacks (the category does not count as a word), so that детективные игры (hint 3/7, 6 of the top 10 under 100 ratings, we are #122) and seven other real game/investigation phrases can match fully, adds дедукция and следователь (hinted, 7 of 10 under 100 ratings), and drops логические, взрослых and кто, whose phrases are held by apps with 10,000 to 145,000 ratings."
+  },
+  "tr": {
+    "keywords": "vaka,polisiye,suç,suçlu,bulma,dedektiflik,internetsiz,türkçe,gizemli,çözme,mantık,bulmaca,kim,ipucu",
+    "subtitle_suggestion": null,
+    "why": "Turkish suffixes are now stemmed on both sides, so oyunları is already covered by oyunu in the subtitle, and zeka and akıl (top 10 led by 136,000 ratings) make room for dedektiflik (dedektiflik oyunu: hint, 9 of 10 under 100 ratings; -lik is not stemmed) and ipucu, while the words behind suçlu bulma oyunu (#6 today) stay."
+  },
+  "hi": {
+    "keywords": "logical,reasoning,games,find,culprit,investigation,crime,riddle,jasoos,jasoosi,paheli,hindi",
+    "subtitle_suggestion": null,
+    "why": "India reads only the Latin words of this field (jasoos and paheli find us; रहस्य, सुराग and मुजरिम never do, also with the store in Hindi), so the Devanagari keywords go and the field carries India phrases that en-GB cannot complete: logical reasoning games (8 of the top 10 under 100 ratings, none with the words in the name), find the culprit (10 of 10 under 100) and investigation games."
+  },
+  "bn-BD": {
+    "keywords": "detective,goyenda,dhadha,bangla,bengali,অপরাধী,তদন্ত,সূত্র,যুক্তি,কেস,ডিটেকটিভ,মগজ,খেলা",
+    "subtitle_suggestion": null,
+    "why": "Unchanged: Bangladesh has no App Store and India does not index this field ('crimson ledger goyenda' finds nothing, also with the store in Bengali), so no keyword here can move a rank; re-test after 1.7.1."
+  },
+  "mr-IN": {
+    "keywords": "logical,reasoning,detective,marathi,गुन्हेगार,संशयित,सुगावा,गूढ,तर्क,डिटेक्टिव,प्रकरण,मेंदू,खेळ",
+    "subtitle_suggestion": null,
+    "why": "Unchanged: India does not index this field ('crimson ledger reasoning' finds nothing, also with the store in Marathi), so no keyword here can move a rank; logical and reasoning moved to hi, where India does read them."
+  },
+  "te-IN": {
+    "keywords": "mind,iq,riddle,detective,thriller,telugu,దోషి,నేరం,రహస్యం,లాజిక్,పజిల్,కేసు,తెలివి",
+    "subtitle_suggestion": null,
+    "why": "Kept as in 1.6.1 except క్లూ (the word clue), dropped to respect the no-Clue rule: India does not index this field ('crimson ledger thriller' finds nothing, also with the store in Telugu), so no keyword here can move a rank; re-test after 1.7.1."
+  },
+  "ur-PK": {
+    "keywords": "sudoku,mystery,detective,offline,logic,puzzle,brain,crime,whodunnit,riddle,investigation,suspect",
+    "subtitle_suggestion": null,
+    "why": "Unchanged: neither Pakistan nor India indexes this localization (investigation, riddle and even the name word جاسوسی find nothing, also with the store in Urdu), so Pakistan reads only en-GB and no keyword here can move a rank."
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "es-ES": {
+    "keywords": "culpable,sospechoso,crimen,misterio,sin,anuncios,resolver,caso,investigación,criminal,pista,lógico",
+    "subtitle_suggestion": null,
+    "why": "Keeps the two words that already put us in the real top 10 next to the name (\"sudoku culpable\" #3, \"sudoku sospechosos\" #9) and the hinted phrases (sudoku crimen, sudoku sin anuncios, resolver casos, pistas sudoku), drops conexión and rompecabezas whose top 10 are apps with 10,000+ ratings, and adds investigación, criminal and lógico for \"sudoku investigación\", \"sudoku criminal\" and \"acertijos lógicos\", where all ten top apps have under 100 ratings."
+  },
+  "es-MX": {
+    "keywords": "culpable,sospechoso,crimen,misterio,sin,anuncios,resolver,caso,investigación,criminal,pista,lógico",
+    "subtitle_suggestion": null,
+    "why": "Same field as Spain because the evidence is the same (\"sudoku culpable\" #2, \"sudoku sospechosos\" #4, \"resolver casos\" hint 4/1, \"juegos de investigación\" hint 13/1, \"resolver crimen\" hint 6/1 in Argentina); es-MX also serves Colombia, Argentina and the United States, and internet is dropped because \"sudoku sin internet\" is held by apps with 18,000 to 163,000 ratings."
+  },
+  "pt-BR": {
+    "keywords": "crime,criminal,caso,resolver,mistério,charadas,culpado,suspeito,investigação,dicas,pista,lógica",
+    "subtitle_suggestion": null,
+    "why": "Keeps the words that already reach the real top 12 with the name (\"sudoku charadas\" #8, \"sudoku culpado\" #9, \"sudoku investigação\" #10, \"sudoku suspeito\" #12), drops raciocínio and offline whose top 10 are apps with 12,000 to 260,000 ratings, and adds criminal, resolver and dicas for the hinted \"caso criminal\" (4/2), \"resolver casos criminais\" (4/7) and \"sudoku com dicas\" (8/5, only 8 results, all under 100 ratings)."
+  },
+  "pt-PT": {
+    "keywords": "crime,criminal,caso,resolver,mistério,charadas,culpado,suspeito,investigação,lógica",
+    "subtitle_suggestion": null,
+    "why": "Same core as Brazil (\"sudoku culpado\" #9 and \"sudoku charadas\" #10 here too, \"resolver crimes\" is hint 5/1 in Portugal); puzzle, detective, quebra, cabeças, raciocínio and offline are dropped because en-GB already covers the English words and the rest have top 10s of apps with thousands of ratings, and the room is left free because no further Portuguese term passed the hint-or-competitor-name test."
+  },
+  "fr-FR": {
+    "keywords": "mystère,policière,criminelle,coupable,qui,est,le,crime,énigme,suspect,hors,ligne,logique",
+    "subtitle_suggestion": null,
+    "why": "Keeps the four words that already rank next to the name (\"sudoku coupable\" #4, \"sudoku criminel\" #6, \"sudoku mystère\" #7, \"sudoku policier\" #9), drops casse, tête and réflexion whose top 10 are apps with 2,000 to 172,000 ratings, and adds est and le for the hint \"qui est le coupable\" (8/2, 11 results; \"qui coupable\" already has us #6 of 7) and suspect (hint 7/3)."
+  },
+  "de-DE": {
+    "keywords": "krimi,detektiv,täter,fälle,lösen,ermittler,verdächtige,kriminalfälle,logik,spiele",
+    "subtitle_suggestion": null,
+    "why": "Drops denkspiele, knobelspiele, gehirnjogging, logikrätsel and offline (none of their top 10s has an app under 100 ratings next to the leaders, and we are not in their top 12), keeps the words behind \"sudoku täter\" (#12) and \"fälle lösen\" (hint 4/10), and adds ermittler (hint 9/1; \"sudoku ermittler\" has 10 of 10 under 100 ratings), verdächtige, kriminalfälle (name word of two on-topic competitors; \"sudoku kriminalfall\" has 7 results, all under 100) and spiele for \"detektiv spiele\" (hint 3/1)."
+  },
+  "it": {
+    "keywords": "giallo,investigatore,colpevole,crimine,detective,indizi,indagine,enigmi,irrisolti,gioco",
+    "subtitle_suggestion": null,
+    "why": "Keeps the words that already put us in the real top 10 next to the name (\"sudoku colpevole\" #4, \"sudoku investigatore\" #5, \"giallo sudoku\" #7, \"sudoku giallo\" #8, \"sudoku crimine\" #10), drops rompicapo, logica, indovinelli and offline whose top 10 are led by apps with 30,000 to 110,000 ratings, and adds indagine (hint \"giochi di indagine\" 8/1; \"sudoku indagine\" 10 of 10 under 100), irrisolti (\"casi irrisolti\": 9 results, all under 100, a competitor's name) and gioco (hint \"gioco investigativo\" 13/1)."
+  },
+  "nl-NL": {
+    "keywords": "dader,mysterie,misdaad,zaak,spel,spelletjes,puzzel,raadsel,vind,verdachte,denksport",
+    "subtitle_suggestion": null,
+    "why": "Keeps the words that rank next to the name (\"sudoku dader\" #4, \"mysterie sudoku\" #4, \"sudoku zaak\" #9) and behind the weak hinted phrases \"detective spel\" and \"detective spelletjes\" (7 and 9 of the top 10 under 100 ratings), drops hersentraining, logische and offline (no more than 2 of 10 under 100 ratings, and en-GB already carries offline), and adds vind for \"vind de dader\" (3 results, our #1 term when it was the name) and verdachte for \"sudoku verdachte\" (10 of 10 under 100)."
+  }
+}

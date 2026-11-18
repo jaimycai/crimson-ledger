@@ -1,0 +1,12 @@
+{
+  "en-US": {
+    "keywords": "whodunnit,whodunit,culprit,find,deduction,crime,investigation,solving,solve,case,cozy,daily,grid",
+    "subtitle_suggestion": null,
+    "why": "The US is the only target store that reads en-US, and its genre top 10s are the strongest, so the field keeps the words whose US top 10 is weak and on topic (culprit, find the culprit, whodunnit/whodunit, deduction, mystery case, crime puzzle) and drops games, adults, variants and offline, whose phrases are held by apps with tens of thousands to millions of ratings."
+  },
+  "en-GB": {
+    "keywords": "whodunnit,culprit,find,deduction,crime,investigation,solving,solve,case,cozy,daily,grid,offline,cosy",
+    "subtitle_suggestion": null,
+    "why": "en-GB is what the UK, Canada, Australia and India show and index (plus about 170 other stores), and there the top 10 for whodunnit, culprit, find the culprit, mystery case, crime puzzle, investigation and solve crime is mostly apps under 100 ratings, so those words replace games, brain, adults and variants."
+  }
+}
