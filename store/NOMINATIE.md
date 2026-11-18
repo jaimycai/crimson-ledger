@@ -24,11 +24,12 @@ De velden staan ook in `store/nominaties/2026-10-enhancements.json`; een volgend
   2026; 1.1.1 (store language fix) follows. Strongest in the Netherlands and Belgium (Dutch), also fully
   playable in English.
 
-## Nominatie 1.7 (klaargezet 18 november 2026, wacht op akkoord van Jaimy)
+## Nominatie 1.7 (ingediend 18 november 2026, a7fc67ca, met Jaimy's akkoord)
 
 Spec: `store/nominaties/2026-11-enhancements-1.7.json` (App Enhancements, publicatie 7 december 2026, iPhone en iPad,
 23 talen, met In-App Event). Zonder moordwoorden en zonder "gratis" (gecontroleerd met de regels van
 `store/metadata/check-1.6.js`). Indienen na akkoord: `node store/asc-nominatie.js store/nominaties/2026-11-enhancements-1.7.json --submit`.
 
-Let op: de nominatie voor 1.5 (9c93e931, publicatie 23 november) staat nog op SUBMITTED. Die noemt 1.5 (opgegaan in 1.6)
-en het woord "murder-mystery"; archiveren kan alleen na Jaimy's akkoord.
+De nominatie voor 1.5 (9c93e931, publicatie 23 november; noemde 1.5 en "murder-mystery") is op 18 november
+gearchiveerd, ook met Jaimy's akkoord (PATCH `attributes.archived: true` geeft state ARCHIVED). Eerste PATCH met alle
+velden gaf weer een 500; het script ging veld voor veld verder en alle velden staan erin.
